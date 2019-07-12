@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * https://www.algolia.com/doc/api-reference/api-methods/batch/?language=javascript#response
   */
 trait BatchTask extends js.Object {
   var objectIDs: js.Array[java.lang.String]

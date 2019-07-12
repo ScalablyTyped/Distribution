@@ -6,13 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * Base class for a factory that can create a component dynamically.
+  * Instantiate a factory for a given type of component with `resolveComponentFactory()`.
+  * Use the resulting `ComponentFactory.create()` method to create a component of that type.
+  *
+  * @see [Dynamic Components](guide/dynamic-component-loader)
+  *
   * @publicApi
   */
 @JSImport("@angular/core", "ComponentFactory")
 @js.native
 abstract class ComponentFactory[C] () extends js.Object {
   /**
-    * The component's type
+    * The type of component the factory will create.
     */
   val componentType: Type[_] = js.native
   /**

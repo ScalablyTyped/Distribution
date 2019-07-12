@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "overlayscrollbars"
-version := "1.7-dt-20190418Z-9b560c"
+version := "1.8-dt-20190711Z-58de5d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -921,6 +921,29 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def describeServiceActionExecutionParameters(): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionExecutionParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeServiceActionExecutionParameters(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeServiceActionExecutionParametersOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionExecutionParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def describeServiceActionExecutionParameters(params: DescribeServiceActionExecutionParametersInput): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionExecutionParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeServiceActionExecutionParameters(
+    params: DescribeServiceActionExecutionParametersInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeServiceActionExecutionParametersOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionExecutionParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Gets information about the specified TagOption.
     */
   def describeTagOption(): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native

@@ -13,7 +13,7 @@ abstract class ComponentRef[C] () extends js.Object {
     */
   val changeDetectorRef: ChangeDetectorRef = js.native
   /**
-    * The component type.
+    * The type of this component (as created by a `ComponentFactory` class).
     */
   val componentType: Type[_] = js.native
   /**

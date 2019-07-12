@@ -11,7 +11,7 @@ trait TestEventPatternRequest extends js.Object {
     */
   var Event: String
   /**
-    * The event pattern. For more information, see Events and Event Patterns in the Amazon CloudWatch Events User Guide.
+    * The event pattern. For more information, see Event Patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: awsDashSdkLib.clientsCloudwatcheventsMod.EventPattern
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "podcast"
-version := "v0.1.0-dt-20190322Z-56b9ac"
+version := "1.1-dt-20190710Z-5e2dad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

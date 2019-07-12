@@ -38,7 +38,8 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
     * The following example creates a component with two data-bound properties,
     * specified by the `inputs` value.
     *
-    * <code-example path="core/ts/metadata/directives.ts" region="component-input">
+    * <code-example path="core/ts/metadata/directives.ts" region="component-input"
+    * linenums="false">
     * </code-example>
     *
     *
@@ -47,14 +48,15 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
     * The following example shows two event emitters that emit on an interval. One
     * emits an output every second, while the other emits every five seconds.
     *
-    * {@example core/ts/metadata/directives.ts region='component-output-interval'}
+    * {@example core/ts/metadata/directives.ts region='component-output-interval
+    * linenums="false"}
     *
     * ### Injecting a class with a view provider
     *
     * The following simple example injects a class into a component
     * using the view provider specified in component metadata:
     *
-    * ```
+    * ```ts
     * class Greeter {
     *    greet(name:string) {
     *      return 'Hello ' + name + '!';
@@ -95,13 +97,13 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
     * * Trims all whitespaces at the beginning and the end of a template.
     * * Removes whitespace-only text nodes. For example,
     *
-    * ```
+    * ```html
     * <button>Action 1</button>  <button>Action 2</button>
     * ```
     *
     * becomes:
     *
-    * ```
+    * ```html
     * <button>Action 1</button><button>Action 2</button>
     * ```
     *

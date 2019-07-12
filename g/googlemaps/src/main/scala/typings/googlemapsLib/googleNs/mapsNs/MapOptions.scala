@@ -115,6 +115,13 @@ trait MapOptions extends js.Object {
     * in the v3.22 Map Controls}.
     */
   var panControlOptions: js.UndefOr[PanControlOptions] = js.undefined
+  /** 
+    * Defines a boundary that restricts the area of the map accessible to users.
+    * When set, a user can only pan and zoom while the camera view stays inside the
+    * limits of the boundary.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.restriction Maps JavaScript API}
+    */
+  var restriction: js.UndefOr[MapRestriction] = js.undefined
   /** The enabled/disabled state of the Rotate control. */
   var rotateControl: js.UndefOr[scala.Boolean] = js.undefined
   /** The display options for the Rotate control. */
@@ -200,6 +207,7 @@ object MapOptions {
     noClear: js.UndefOr[scala.Boolean] = js.undefined,
     panControl: js.UndefOr[scala.Boolean] = js.undefined,
     panControlOptions: PanControlOptions = null,
+    restriction: MapRestriction = null,
     rotateControl: js.UndefOr[scala.Boolean] = js.undefined,
     rotateControlOptions: RotateControlOptions = null,
     scaleControl: js.UndefOr[scala.Boolean] = js.undefined,
@@ -237,6 +245,7 @@ object MapOptions {
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
+    if (restriction != null) __obj.updateDynamic("restriction")(restriction)
     if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)
     if (rotateControlOptions != null) __obj.updateDynamic("rotateControlOptions")(rotateControlOptions)
     if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl)

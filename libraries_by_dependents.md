@@ -742,6 +742,7 @@
 | 306 | [reactstrap](./r/reactstrap) | React Bootstrap 4 components
 | 306 | [vue-i18n](./v/vue-i18n) | Internationalization plugin for Vue.js
 | 305 | [react-jss](./r/react-jss) | JSS integration with React
+| 305 | [schema-utils](./s/schema-utils) | webpack Validation Utils
 | 305 | [statuses](./s/statuses) | HTTP status utility
 | 305 | [toml](./t/toml) | TOML parser for Node.js (parses TOML spec v0.4.0)
 | 304 | [ansi-styles](./a/ansi-styles) | ANSI escape codes for styling strings in the termi
@@ -2586,6 +2587,7 @@
 | 42 | [feather-icons](./f/feather-icons) | Simply beautiful open source icons
 | 42 | [find-process](./f/find-process) | find process info by port/pid/name etc.
 | 42 | [getenv](./g/getenv) | Get and typecast environment variables.
+| 42 | [ghost-storage-base](./g/ghost-storage-base) | Base storage adapter.
 | 42 | [graphql-playground-middle](./g/graphql-playground-middleware-express) | GraphQL IDE for better development workflows (Grap
 | 42 | [is-docker](./i/is-docker) | Check if the process is running inside a Docker co
 | 42 | [is-dotfile](./i/is-dotfile) | Return true if a file path is (or has) a dotfile. 
@@ -3370,6 +3372,7 @@
 | 21 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
 | 21 | [jquery-mask-plugin](./j/jquery-mask-plugin) | A jQuery Plugin to make masks on form fields and h
 | 21 | [koa-sslify](./k/koa-sslify) | Enforces HTTPS for node.js koa projects
+| 21 | [lines-and-columns](./l/lines-and-columns) | Maps lines and columns to character offsets and ba
 | 21 | [lodash_dot_repeat](./l/lodash_dot_repeat) | The lodash method _.repeat exported as a module.
 | 21 | [lodash_dot_sumby](./l/lodash_dot_sumby) | The lodash method _.sumBy exported as a module.
 | 21 | [logrotate-stream](./l/logrotate-stream) | Pipe log data to a stream, fuggetabout rotation
@@ -3777,7 +3780,6 @@
 | 14 | [dts-dom](./d/dts-dom) | DOM for TypeScript Declaration Files
 | 14 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio
 | 14 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
-| 14 | [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al
 | 14 | [ffprobe-static](./f/ffprobe-static) | Static binaries for ffprobe.
 | 14 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK
 | 14 | [generate-changelog](./g/generate-changelog) | Generate a changelog from git commits.
@@ -4445,6 +4447,8 @@
 | 7 | [countries-and-timezones](./c/countries-and-timezones) | Minimalistic library to work with countries and ti
 | 7 | [create-html-element](./c/create-html-element) | Create a HTML element string
 | 7 | [datatables_dot_net-autofi](./d/datatables_dot_net-autofill) | AutoFill for DataTables
+| 7 | [datatables_dot_net-fixedc](./d/datatables_dot_net-fixedcolumns) | FixedColumns for DataTables
+| 7 | [datatables_dot_net-keytab](./d/datatables_dot_net-keytable) | KeyTable for DataTables
 | 7 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables
 | 7 | [datatables_dot_net-rowreo](./d/datatables_dot_net-rowreorder) | RowReorder for DataTables
 | 7 | [deindent](./d/deindent) | ES6 template string helper for deindentation
@@ -4568,6 +4572,7 @@
 | 7 | [windows-1251](./w/windows-1251) | A robust windows-1251 encoder/decoder written in J
 | 7 | [wink-tokenizer](./w/wink-tokenizer) | Multilingual tokenizer that automatically tags eac
 | 7 | [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a
+| 7 | [wordpress__viewport](./w/wordpress__viewport) | Viewport module for WordPress.
 | 7 | [x-ray-crawler](./x/x-ray-crawler) | x-ray's crawler
 | 6 | [amazon-product-api](./a/amazon-product-api) | Amazon Product Advertising API client
 | 6 | [angular-tooltips](./a/angular-tooltips) | Angular.js tooltips module.
@@ -4714,6 +4719,7 @@
 | 6 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs
 | 6 | [web-resource-inliner](./w/web-resource-inliner) | Inlines img, script and link tags into the same fi
 | 6 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress.
+| 6 | [wordpress__deprecated](./w/wordpress__deprecated) | Deprecation utility for WordPress.
 | 6 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress.
 | 6 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API.
 | 6 | [wtfnode](./w/wtfnode) | Utility to help find out why Node isn't exiting
@@ -4753,6 +4759,7 @@
 | 5 | [expectations](./e/expectations) | jasmine-style 'expect' calls for mocha and other t
 | 5 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 5 | [extract-stack](./e/extract-stack) | Extract the actual stack of an error
+| 5 | [file-selector](./f/file-selector) | Convert DataTransfer object to a list of File obje
 | 5 | [fluent](./f/fluent) | Localization library for expressive translations.
 | 5 | [focus-within](./f/focus-within) | Style elements when they are focused or contain a 
 | 5 | [gl-react-native](./g/gl-react-native) | OpenGL bindings for react-native to implement comp
@@ -4884,6 +4891,7 @@
 | 5 | [websequencediagrams](./w/websequencediagrams) | Interface to websequencediagrams.com
 | 5 | [which-pm](./w/which-pm) | Detects what package manager was used for installa
 | 5 | [winjs](./w/winjs) | WinJS is a set of JavaScript toolkits that allow d
+| 5 | [wordpress__date](./w/wordpress__date) | Date module for WordPress.
 | 5 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress.
 | 5 | [xtuc__long](./x/xtuc__long) | A Long class for representing a 64-bit two's-compl
 | 5 | [yog-log](./y/yog-log) | yog logger
@@ -5061,7 +5069,9 @@
 | 4 | [webpack-dotenv-plugin](./w/webpack-dotenv-plugin) | Use dotenv with webpack.
 | 4 | [wonder-frp](./w/wonder-frp) | * Wonder-FRP Wonder-FRP is a functional reactive p
 | 4 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an
+| 4 | [wordpress__block-library](./w/wordpress__block-library) | Block library for the WordPress editor.
 | 4 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
+| 4 | [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress.
 | 4 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t
 | 4 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files.
 | 4 | [xsd-schema-validator](./x/xsd-schema-validator) | A (XSD) schema validator for nodejs
@@ -5304,7 +5314,10 @@
 | 3 | [webpack-watched-glob-entr](./w/webpack-watched-glob-entries-plugin) | Webpack plugin to glob directories for entry files
 | 3 | [webscopeio__react-textare](./w/webscopeio__react-textarea-autocomplete) | Offers autocomplete over textarea in style of GitH
 | 3 | [windows-release](./w/windows-release) | Get the name of a Windows version from the release
+| 3 | [wordpress__escape-html](./w/wordpress__escape-html) | Escape HTML utils.
 | 3 | [wordpress__notices](./w/wordpress__notices) | State management for notices.
+| 3 | [wordpress__token-list](./w/wordpress__token-list) | Constructable, plain JavaScript DOMTokenList imple
+| 3 | [wordpress__wordcount](./w/wordpress__wordcount) | WordPress word count utility.
 | 3 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 3 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
 | 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
@@ -5432,6 +5445,7 @@
 | 2 | [js-url](./j/js-url) | A simple, lightweight url parser for JavaScript (~
 | 2 | [js_dot_spec](./j/js_dot_spec) | clojure.spec for Javascript
 | 2 | [json-rpc-random-id](./j/json-rpc-random-id) | Generates an id useable in json rpc payloads.
+| 2 | [jsqubits](./j/jsqubits) | Quantum computation simulation JavaScript library
 | 2 | [jsrp](./j/jsrp) | JavaScript SRP implementation
 | 2 | [karma-viewport](./k/karma-viewport) | A Karma plugin for testing responsive features and
 | 2 | [kii-cloud-sdk](./k/kii-cloud-sdk) | This is the Kii Cloud SDK
@@ -5569,6 +5583,7 @@
 | 2 | [schema-registry](./s/schema-registry) | json & avro schema registry
 | 2 | [sdbm](./s/sdbm) | SDBM non-cryptographic hash function
 | 2 | [semantic-ui-form](./s/semantic-ui-form) | Single component release of form
+| 2 | [service-worker-mock](./s/service-worker-mock) | Service Worker Mock ========================= A mo
 | 2 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 2 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 2 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
@@ -5616,6 +5631,7 @@
 | 2 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML
 | 2 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP
 | 2 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
+| 2 | [wordpress__redux-routine](./w/wordpress__redux-routine) | Redux middleware for generator coroutines.
 | 2 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress.
 | 2 | [write-file-atomically](./w/write-file-atomically) | Promisified version of write-file-atomic
 | 2 | [xadesjs](./x/xadesjs) | A pure Typescript/Javascript implementation of XAd
@@ -5628,6 +5644,7 @@
 | 2 | [zui](./z/zui) | 一个基于 Bootstrap 深度定制开源前端实践方案，帮助你快速构建现代跨屏应用。
 | 1 | [activedirectory2](./a/activedirectory2) | ActiveDirectory is an ldapjs client for authN (aut
 | 1 | [alexa-voice-service](./a/alexa-voice-service) | Alexa Voice Service wrapper for the browser.
+| 1 | [alks-node](./a/alks-node) | Node client for ALKS
 | 1 | [all-keys](./a/all-keys) | Get all property keys of an object including non-e
 | 1 | [amplifier](./a/amplifier) | Use the awesome AmplifyJs v1.1.2 library as a Node
 | 1 | [angular-clipboard](./a/angular-clipboard) | Copy to clipboard with AngularJS directive, withou
@@ -5700,6 +5717,7 @@
 | 1 | [dom-loaded](./d/dom-loaded) | Check when the DOM is loaded like DOMContentLoaded
 | 1 | [dotdir-regex](./d/dotdir-regex) | Regex for matching dot-directories, like .git/
 | 1 | [dotfile-regex](./d/dotfile-regex) | Regular expresson for matching dotfiles.
+| 1 | [duckduckgo-images-api](./d/duckduckgo-images-api) | DuckDuckGo image-search api for node
 | 1 | [durandal](./d/durandal) | Durandal is a cross-device, cross-platform client 
 | 1 | [dv](./d/dv) | DocumentVision is a node.js library for processing
 | 1 | [dwt](./d/dwt) | Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanni
@@ -6049,6 +6067,7 @@
 | 1 | [word2vector](./w/word2vector) | a word2vector interface for nodejs
 | 1 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP
 | 1 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack
+| 1 | [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue.
 | 1 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads
 | 1 | [wry__equality](./w/wry__equality) | Structural equality checking for JavaScript values
 | 1 | [xdomain](./x/xdomain) | A pure JavaScript CORS alternative
@@ -6333,6 +6352,7 @@
 | 0 | [knockout-transformations](./k/knockout-transformations) | Live transform methods for Knockout observable arr
 | 0 | [knockstrap](./k/knockstrap) | Knockout bindings to Twitter Bootstrap 3
 | 0 | [ko_dot_plus](./k/ko_dot_plus) | Awesome extensions to KnockoutJS
+| 0 | [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh
 | 0 | [konami_dot_js](./k/konami_dot_js) | A small bit of JavaScript that recognizes the Kona
 | 0 | [lambda-phi](./l/lambda-phi) | Typescript framework for AWS API Gateway and Lambd
 | 0 | [ldap-filters](./l/ldap-filters) | Library for generating, parsing, and evaluating LD
@@ -6344,6 +6364,7 @@
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
 | 0 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
+| 0 | [libra-core](./l/libra-core) | Library for Crypto
 | 0 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
 | 0 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work wit
 | 0 | [linqsharp](./l/linqsharp) | Linq methods based on .NET
@@ -6596,6 +6617,7 @@
 | 0 | [stream-csv-as-json](./s/stream-csv-as-json) | Streams CSV files.
 | 0 | [stripe-checkout](./s/stripe-checkout) | standalone stripe checkout handler
 | 0 | [succinct](./s/succinct) | -
+| 0 | [sudokus](./s/sudokus) | A JavaScript utility to solve sudokus.
 | 0 | [sunrise-sunset-js](./s/sunrise-sunset-js) | Sunrise and sunset time calculation for given coor
 | 0 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th
 | 0 | [swagger-express-validator](./s/swagger-express-validator) | Validation middleware that validates request/respo
@@ -6610,6 +6632,7 @@
 | 0 | [timelinejs](./t/timelinejs) | A Storytelling Timeline built in JavaScript.
 | 0 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0 | [timezonecomplete](./t/timezonecomplete) | DateTime, TimeZone, Duration and Period library ai
+| 0 | [timezoned-date](./t/timezoned-date) | Constructors and objects behave exactly like built
 | 0 | [tinajs__tina](./t/tinajs__tina) | A light and progressive Wechat-Mini Program Framew
 | 0 | [tinajs__tina-redux](./t/tinajs__tina-redux) | Tina.js bindings for Redux
 | 0 | [tiny-slider-react](./t/tiny-slider-react) | wrapper tiny-slider plugin for react

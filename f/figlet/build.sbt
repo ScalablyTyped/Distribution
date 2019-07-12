@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "figlet"
-version := "1.2-dt-20180731Z-8a8f4e"
+version := "1.2-dt-20190710Z-8a8f4e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

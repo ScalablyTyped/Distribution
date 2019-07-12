@@ -13,8 +13,6 @@ trait JQuery extends _Coordinates {
     filter: js.Function2[/* element */ stdLib.Element, /* instance */ OverlayScrollbars, scala.Boolean]
   ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def overlayScrollbars(options: Options): JQuery = js.native
-  def overlayScrollbars(options: Options, extensions: java.lang.String): JQuery = js.native
-  def overlayScrollbars(options: Options, extensions: js.Array[java.lang.String]): JQuery = js.native
-  def overlayScrollbars(options: Options, extensions: org.scalablytyped.runtime.StringDictionary[js.Object]): JQuery = js.native
+  def overlayScrollbars(options: Options, extensions: Extensions): JQuery = js.native
 }
 

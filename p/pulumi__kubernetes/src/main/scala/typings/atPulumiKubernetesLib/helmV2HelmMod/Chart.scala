@@ -22,6 +22,15 @@ class Chart protected ()
   def parseTemplate(
     yamlStream: java.lang.String,
     transformations: js.UndefOr[scala.Nothing],
+    resourcePrefix: js.UndefOr[scala.Nothing],
+    dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
+  ): atPulumiPulumiLib.outputMod.Output[
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
+  ] = js.native
+  def parseTemplate(
+    yamlStream: java.lang.String,
+    transformations: js.UndefOr[scala.Nothing],
+    resourcePrefix: java.lang.String,
     dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
   ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
@@ -35,6 +44,21 @@ class Chart protected ()
         scala.Unit
       ]
     ],
+    resourcePrefix: js.UndefOr[scala.Nothing],
+    dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
+  ): atPulumiPulumiLib.outputMod.Output[
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
+  ] = js.native
+  def parseTemplate(
+    yamlStream: java.lang.String,
+    transformations: js.Array[
+      js.Function2[
+        /* o */ _, 
+        /* opts */ atPulumiPulumiLib.resourceMod.CustomResourceOptions, 
+        scala.Unit
+      ]
+    ],
+    resourcePrefix: java.lang.String,
     dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
   ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]

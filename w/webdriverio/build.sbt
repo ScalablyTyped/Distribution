@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriverio"
-version := "5.11.0-5b9e64"
+version := "5.11.2-f06c0c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

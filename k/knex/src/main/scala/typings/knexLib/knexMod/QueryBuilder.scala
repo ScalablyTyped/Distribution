@@ -19,8 +19,10 @@ trait QueryBuilder[TRecord /* <: js.Object */, TResult]
   def forShare(tableNames: js.Array[java.lang.String]): QueryBuilder[TRecord, TResult] = js.native
   def forUpdate(tableNames: java.lang.String*): QueryBuilder[TRecord, TResult] = js.native
   def forUpdate(tableNames: js.Array[java.lang.String]): QueryBuilder[TRecord, TResult] = js.native
+  def noWait(): QueryBuilder[TRecord, TResult] = js.native
   def on(event: java.lang.String, callback: js.Function): QueryBuilder[TRecord, TResult] = js.native
   def queryContext(context: js.Any): QueryBuilder[TRecord, TResult] = js.native
+  def skipLocked(): QueryBuilder[TRecord, TResult] = js.native
   def toSQL(): Sql = js.native
 }
 

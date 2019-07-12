@@ -76,7 +76,7 @@ package object esTypesMod {
   type Receiver[TEvent /* <: EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, scala.Unit], scala.Unit]
   type SendExpr[TContext, TEvent /* <: EventObject */] = js.Function2[/* context */ TContext, /* event */ TEvent, OmniEvent[TEvent]]
   type Sender[TEvent /* <: EventObject */] = js.Function1[/* event */ Event[TEvent], scala.Unit]
-  type ServiceConfig[TContext] = java.lang.String | (StateMachine[js.Any, js.Any, js.Any]) | (InvokeCreator[TContext, stdLib.Partial[TContext]])
+  type ServiceConfig[TContext] = java.lang.String | (StateMachine[js.Any, js.Any, js.Any]) | (InvokeCreator[TContext, js.Any])
   type SingleOrArray[T] = js.Array[T] | T
   type StandardMachineConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] = CompoundStateNodeConfig[TContext, TStateSchema, TEvent]
   type StateKey = java.lang.String | (xstateLib.esStateMod.State[js.Any, EventObject])

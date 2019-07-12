@@ -749,6 +749,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class EventBridge ()
+    extends awsDashSdkLib.awsDashSdkMod.EventBridge {
+    def this(options: awsDashSdkLib.clientsEventbridgeMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class FMS ()
     extends awsDashSdkLib.awsDashSdkMod.FMS {
     def this(options: awsDashSdkLib.clientsFmsMod.ClientConfiguration) = this()

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-file
 
-Typings are for version 6.0.1
+Typings are for version 6.0.2
 
 ## Library description:
 Cordova File Plugin

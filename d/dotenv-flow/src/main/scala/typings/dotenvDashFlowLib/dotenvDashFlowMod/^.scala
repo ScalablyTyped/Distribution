@@ -8,12 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("dotenv-flow", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val load: js.Function1[/* options */ js.UndefOr[DotenvConfigOptions], DotenvConfigOutput] = js.native
-  def config(): DotenvConfigOutput = js.native
-  def config(options: DotenvConfigOptions): DotenvConfigOutput = js.native
-  def parse(src: java.lang.String): DotenvParseOutput = js.native
-  def parse(src: java.lang.String, options: DotenvParseOptions): DotenvParseOutput = js.native
-  def parse(src: nodeLib.Buffer): DotenvParseOutput = js.native
-  def parse(src: nodeLib.Buffer, options: DotenvParseOptions): DotenvParseOutput = js.native
+  def config(): DotenvLoadOutput = js.native
+  def config(options: DotenvConfigOptions): DotenvLoadOutput = js.native
+  def listDotenvFiles(dirname: java.lang.String): js.Array[java.lang.String] = js.native
+  def listDotenvFiles(dirname: java.lang.String, options: DotenvListFilesOptions): js.Array[java.lang.String] = js.native
+  def load(filenames: java.lang.String): DotenvLoadOutput = js.native
+  def load(filenames: java.lang.String, options: DotenvReadFileOptions): DotenvLoadOutput = js.native
+  def load(filenames: js.Array[java.lang.String]): DotenvLoadOutput = js.native
+  def load(filenames: js.Array[java.lang.String], options: DotenvReadFileOptions): DotenvLoadOutput = js.native
+  def parse(filenames: java.lang.String): DotenvParseOutput = js.native
+  def parse(filenames: java.lang.String, options: DotenvReadFileOptions): DotenvParseOutput = js.native
+  def parse(filenames: js.Array[java.lang.String]): DotenvParseOutput = js.native
+  def parse(filenames: js.Array[java.lang.String], options: DotenvReadFileOptions): DotenvParseOutput = js.native
+  def unload(filenames: java.lang.String): scala.Unit = js.native
+  def unload(filenames: java.lang.String, options: DotenvReadFileOptions): scala.Unit = js.native
+  def unload(filenames: js.Array[java.lang.String]): scala.Unit = js.native
+  def unload(filenames: js.Array[java.lang.String], options: DotenvReadFileOptions): scala.Unit = js.native
 }
 

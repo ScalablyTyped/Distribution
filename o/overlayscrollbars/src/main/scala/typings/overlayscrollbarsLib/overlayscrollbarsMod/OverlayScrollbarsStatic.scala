@@ -16,26 +16,14 @@ trait OverlayScrollbarsStatic extends js.Object {
     filter: js.Function2[/* element */ stdLib.Element, /* instance */ OverlayScrollbars, scala.Boolean]
   ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: js.Array[stdLib.Element], options: Options): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(elements: js.Array[stdLib.Element], options: Options, extensions: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(elements: js.Array[stdLib.Element], options: Options, extensions: js.Array[java.lang.String]): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(
-    elements: js.Array[stdLib.Element],
-    options: Options,
-    extensions: org.scalablytyped.runtime.StringDictionary[js.Object]
-  ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
+  def apply(elements: js.Array[stdLib.Element], options: Options, extensions: Extensions): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: JQuery, filter: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(
     elements: JQuery,
     filter: js.Function2[/* element */ stdLib.Element, /* instance */ OverlayScrollbars, scala.Boolean]
   ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: JQuery, options: Options): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(elements: JQuery, options: Options, extensions: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(elements: JQuery, options: Options, extensions: js.Array[java.lang.String]): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(
-    elements: JQuery,
-    options: Options,
-    extensions: org.scalablytyped.runtime.StringDictionary[js.Object]
-  ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
+  def apply(elements: JQuery, options: Options, extensions: Extensions): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: stdLib.NodeListOf[stdLib.Element]): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: stdLib.NodeListOf[stdLib.Element], filter: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(
@@ -43,35 +31,13 @@ trait OverlayScrollbarsStatic extends js.Object {
     filter: js.Function2[/* element */ stdLib.Element, /* instance */ OverlayScrollbars, scala.Boolean]
   ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(elements: stdLib.NodeListOf[stdLib.Element], options: Options): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(elements: stdLib.NodeListOf[stdLib.Element], options: Options, extensions: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(
-    elements: stdLib.NodeListOf[stdLib.Element],
-    options: Options,
-    extensions: js.Array[java.lang.String]
-  ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
-  def apply(
-    elements: stdLib.NodeListOf[stdLib.Element],
-    options: Options,
-    extensions: org.scalablytyped.runtime.StringDictionary[js.Object]
-  ): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
+  def apply(elements: stdLib.NodeListOf[stdLib.Element], options: Options, extensions: Extensions): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def apply(element: stdLib.Element): js.UndefOr[OverlayScrollbars] = js.native
   def apply(element: stdLib.Element, options: Options): OverlayScrollbars = js.native
-  def apply(element: stdLib.Element, options: Options, extensions: java.lang.String): OverlayScrollbars = js.native
-  def apply(element: stdLib.Element, options: Options, extensions: js.Array[java.lang.String]): OverlayScrollbars = js.native
-  def apply(
-    element: stdLib.Element,
-    options: Options,
-    extensions: org.scalablytyped.runtime.StringDictionary[js.Object]
-  ): OverlayScrollbars = js.native
+  def apply(element: stdLib.Element, options: Options, extensions: Extensions): OverlayScrollbars = js.native
   def apply(element: stdLib.HTMLElement): js.UndefOr[OverlayScrollbars] = js.native
   def apply(element: stdLib.HTMLElement, options: Options): OverlayScrollbars = js.native
-  def apply(element: stdLib.HTMLElement, options: Options, extensions: java.lang.String): OverlayScrollbars = js.native
-  def apply(element: stdLib.HTMLElement, options: Options, extensions: js.Array[java.lang.String]): OverlayScrollbars = js.native
-  def apply(
-    element: stdLib.HTMLElement,
-    options: Options,
-    extensions: org.scalablytyped.runtime.StringDictionary[js.Object]
-  ): OverlayScrollbars = js.native
+  def apply(element: stdLib.HTMLElement, options: Options, extensions: Extensions): OverlayScrollbars = js.native
   def defaultOptions(): Options = js.native
   def defaultOptions(newDefaultOptions: Options): scala.Unit = js.native
   def extension(): overlayscrollbarsLib.Anon_Index = js.native

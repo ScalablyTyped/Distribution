@@ -87,6 +87,7 @@ object MapProps {
     onZoomChanged: mapEventHandler = null,
     panControl: js.UndefOr[scala.Boolean] = js.undefined,
     panControlOptions: googlemapsLib.googleNs.mapsNs.PanControlOptions = null,
+    restriction: googlemapsLib.googleNs.mapsNs.MapRestriction = null,
     rotateControl: js.UndefOr[scala.Boolean] = js.undefined,
     rotateControlOptions: googlemapsLib.googleNs.mapsNs.RotateControlOptions = null,
     scaleControl: js.UndefOr[scala.Boolean] = js.undefined,
@@ -149,6 +150,7 @@ object MapProps {
     if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(onZoomChanged)
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
+    if (restriction != null) __obj.updateDynamic("restriction")(restriction)
     if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)
     if (rotateControlOptions != null) __obj.updateDynamic("rotateControlOptions")(rotateControlOptions)
     if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl)

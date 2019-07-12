@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__geo"
-version := "0.59.1-e249d7"
+version := "0.59.2-d39f66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

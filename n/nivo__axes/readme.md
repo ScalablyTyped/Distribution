@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__axes
 
-Typings are for version 0.59.1
+Typings are for version 0.59.2
 
 
 

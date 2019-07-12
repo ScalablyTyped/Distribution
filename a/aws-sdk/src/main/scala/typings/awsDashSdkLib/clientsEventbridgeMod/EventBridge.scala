@@ -1,0 +1,647 @@
+package typings
+package awsDashSdkLib.clientsEventbridgeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait EventBridge
+  extends awsDashSdkLib.libServiceMod.Service {
+  @JSName("config")
+  var config_EventBridge: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
+  /**
+    * Activates a partner event source that has been deactivated. Once activated, your matching event bus will start receiving events from the event source.  This operation is performed by AWS customers, not by SaaS partners. 
+    */
+  def activateEventSource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def activateEventSource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Activates a partner event source that has been deactivated. Once activated, your matching event bus will start receiving events from the event source.  This operation is performed by AWS customers, not by SaaS partners. 
+    */
+  def activateEventSource(params: ActivateEventSourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def activateEventSource(
+    params: ActivateEventSourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a new event bus within your account. This can be a custom event bus which you can use to receive events from your own custom applications and services, or it can be a partner event bus which can be matched to a partner event source.  This operation is used by AWS customers, not by SaaS partners. 
+    */
+  def createEventBus(): awsDashSdkLib.libRequestMod.Request[CreateEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createEventBus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateEventBusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a new event bus within your account. This can be a custom event bus which you can use to receive events from your own custom applications and services, or it can be a partner event bus which can be matched to a partner event source.  This operation is used by AWS customers, not by SaaS partners. 
+    */
+  def createEventBus(params: CreateEventBusRequest): awsDashSdkLib.libRequestMod.Request[CreateEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createEventBus(
+    params: CreateEventBusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateEventBusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Called by an SaaS partner to create a partner event source.  This operation is not used by AWS customers.  Each partner event source can be used by one AWS account to create a matching partner event bus in that AWS account. A SaaS partner must create one partner event source for each AWS account that wants to receive those event types.  A partner event source creates events based on resources in the SaaS partner's service or application. An AWS account that creates a partner event bus that matches the partner event source can use that event bus to receive events from the partner, and then process them using AWS Events rules and targets. Partner event source names follow this format:  aws.partner/partner_name/event_namespace/event_name      partner_name is determined during partner registration and identifies the partner to AWS customers.   For event_namespace, we recommend that partners use a string that identifies the AWS customer within the partner's system. This should not be the customer's AWS account ID.    event_name is determined by the partner, and should uniquely identify an event-generating resource within the partner system. This should help AWS customers decide whether to create an event bus to receive these events.  
+    */
+  def createPartnerEventSource(): awsDashSdkLib.libRequestMod.Request[CreatePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createPartnerEventSource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreatePartnerEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreatePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Called by an SaaS partner to create a partner event source.  This operation is not used by AWS customers.  Each partner event source can be used by one AWS account to create a matching partner event bus in that AWS account. A SaaS partner must create one partner event source for each AWS account that wants to receive those event types.  A partner event source creates events based on resources in the SaaS partner's service or application. An AWS account that creates a partner event bus that matches the partner event source can use that event bus to receive events from the partner, and then process them using AWS Events rules and targets. Partner event source names follow this format:  aws.partner/partner_name/event_namespace/event_name      partner_name is determined during partner registration and identifies the partner to AWS customers.   For event_namespace, we recommend that partners use a string that identifies the AWS customer within the partner's system. This should not be the customer's AWS account ID.    event_name is determined by the partner, and should uniquely identify an event-generating resource within the partner system. This should help AWS customers decide whether to create an event bus to receive these events.  
+    */
+  def createPartnerEventSource(params: CreatePartnerEventSourceRequest): awsDashSdkLib.libRequestMod.Request[CreatePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createPartnerEventSource(
+    params: CreatePartnerEventSourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreatePartnerEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreatePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An AWS customer uses this operation to temporarily stop receiving events from the specified partner event source. The matching event bus isn't deleted.  When you deactivate a partner event source, the source goes into PENDING state. If it remains in PENDING state for more than two weeks, it's deleted. To activate a deactivated partner event source, use ActivateEventSource.
+    */
+  def deactivateEventSource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deactivateEventSource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An AWS customer uses this operation to temporarily stop receiving events from the specified partner event source. The matching event bus isn't deleted.  When you deactivate a partner event source, the source goes into PENDING state. If it remains in PENDING state for more than two weeks, it's deleted. To activate a deactivated partner event source, use ActivateEventSource.
+    */
+  def deactivateEventSource(params: DeactivateEventSourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deactivateEventSource(
+    params: DeactivateEventSourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified custom event bus or partner event bus. All rules associated with this event bus are also deleted. You can't delete your account's default event bus.  This operation is performed by AWS customers, not by SaaS partners. 
+    */
+  def deleteEventBus(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteEventBus(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified custom event bus or partner event bus. All rules associated with this event bus are also deleted. You can't delete your account's default event bus.  This operation is performed by AWS customers, not by SaaS partners. 
+    */
+  def deleteEventBus(params: DeleteEventBusRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteEventBus(
+    params: DeleteEventBusRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This operation is used by SaaS partners to delete a partner event source. AWS customers don't use this operation. When you delete an event source, the status of the corresponding partner event bus in the AWS customer account becomes DELETED.
+    */
+  def deletePartnerEventSource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePartnerEventSource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This operation is used by SaaS partners to delete a partner event source. AWS customers don't use this operation. When you delete an event source, the status of the corresponding partner event bus in the AWS customer account becomes DELETED.
+    */
+  def deletePartnerEventSource(params: DeletePartnerEventSourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePartnerEventSource(
+    params: DeletePartnerEventSourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified rule. Before you can delete the rule, you must remove all targets, using RemoveTargets. When you delete a rule, incoming events might continue to match to the deleted rule. Allow a short period of time for changes to take effect. Managed rules are rules created and managed by another AWS service on your behalf. These rules are created by those other AWS services to support functionality in those services. You can delete these rules using the Force option, but you should do so only if you're sure that the other service isn't still using that rule.
+    */
+  def deleteRule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteRule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified rule. Before you can delete the rule, you must remove all targets, using RemoveTargets. When you delete a rule, incoming events might continue to match to the deleted rule. Allow a short period of time for changes to take effect. Managed rules are rules created and managed by another AWS service on your behalf. These rules are created by those other AWS services to support functionality in those services. You can delete these rules using the Force option, but you should do so only if you're sure that the other service isn't still using that rule.
+    */
+  def deleteRule(params: DeleteRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteRule(
+    params: DeleteRuleRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Displays details about an event bus in your account. This can include the external AWS accounts that are permitted to write events to your default event bus, and the associated policy. For custom event buses and partner event buses, it displays the name, ARN, policy, state, and creation time.  To enable your account to receive events from other accounts on its default event bus, use PutPermission. For more information about partner event buses, see CreateEventBus.
+    */
+  def describeEventBus(): awsDashSdkLib.libRequestMod.Request[DescribeEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeEventBus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeEventBusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Displays details about an event bus in your account. This can include the external AWS accounts that are permitted to write events to your default event bus, and the associated policy. For custom event buses and partner event buses, it displays the name, ARN, policy, state, and creation time.  To enable your account to receive events from other accounts on its default event bus, use PutPermission. For more information about partner event buses, see CreateEventBus.
+    */
+  def describeEventBus(params: DescribeEventBusRequest): awsDashSdkLib.libRequestMod.Request[DescribeEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeEventBus(
+    params: DescribeEventBusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeEventBusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventBusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This operation lists details about a partner event source that is shared with your account.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def describeEventSource(): awsDashSdkLib.libRequestMod.Request[DescribeEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeEventSource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This operation lists details about a partner event source that is shared with your account.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def describeEventSource(params: DescribeEventSourceRequest): awsDashSdkLib.libRequestMod.Request[DescribeEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeEventSource(
+    params: DescribeEventSourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to list details about a partner event source that they have created.  AWS customers do not use this operation. Instead, AWS customers can use DescribeEventSource to see details about a partner event source that is shared with them. 
+    */
+  def describePartnerEventSource(): awsDashSdkLib.libRequestMod.Request[DescribePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describePartnerEventSource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribePartnerEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to list details about a partner event source that they have created.  AWS customers do not use this operation. Instead, AWS customers can use DescribeEventSource to see details about a partner event source that is shared with them. 
+    */
+  def describePartnerEventSource(params: DescribePartnerEventSourceRequest): awsDashSdkLib.libRequestMod.Request[DescribePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describePartnerEventSource(
+    params: DescribePartnerEventSourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribePartnerEventSourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribePartnerEventSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes the specified rule.  DescribeRule doesn't list the targets of a rule. To see the targets associated with a rule, use ListTargetsByRule.
+    */
+  def describeRule(): awsDashSdkLib.libRequestMod.Request[DescribeRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes the specified rule.  DescribeRule doesn't list the targets of a rule. To see the targets associated with a rule, use ListTargetsByRule.
+    */
+  def describeRule(params: DescribeRuleRequest): awsDashSdkLib.libRequestMod.Request[DescribeRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeRule(
+    params: DescribeRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disables the specified rule. A disabled rule won't match any events and won't self-trigger if it has a schedule expression. When you disable a rule, incoming events might continue to match to the disabled rule. Allow a short period of time for changes to take effect.
+    */
+  def disableRule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableRule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disables the specified rule. A disabled rule won't match any events and won't self-trigger if it has a schedule expression. When you disable a rule, incoming events might continue to match to the disabled rule. Allow a short period of time for changes to take effect.
+    */
+  def disableRule(params: DisableRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableRule(
+    params: DisableRuleRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Enables the specified rule. If the rule doesn't exist, the operation fails. When you enable a rule, incoming events might not immediately start matching to a newly enabled rule. Allow a short period of time for changes to take effect.
+    */
+  def enableRule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableRule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Enables the specified rule. If the rule doesn't exist, the operation fails. When you enable a rule, incoming events might not immediately start matching to a newly enabled rule. Allow a short period of time for changes to take effect.
+    */
+  def enableRule(params: EnableRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableRule(
+    params: EnableRuleRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists all the event buses in your account, including the default event bus, custom event buses, and partner event buses.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def listEventBuses(): awsDashSdkLib.libRequestMod.Request[ListEventBusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listEventBuses(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListEventBusesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListEventBusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists all the event buses in your account, including the default event bus, custom event buses, and partner event buses.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def listEventBuses(params: ListEventBusesRequest): awsDashSdkLib.libRequestMod.Request[ListEventBusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listEventBuses(
+    params: ListEventBusesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListEventBusesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListEventBusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * You can use this to see all the partner event sources that have been shared with your AWS account. For more information about partner event sources, see CreateEventBus.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def listEventSources(): awsDashSdkLib.libRequestMod.Request[ListEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listEventSources(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListEventSourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * You can use this to see all the partner event sources that have been shared with your AWS account. For more information about partner event sources, see CreateEventBus.  This operation is run by AWS customers, not by SaaS partners. 
+    */
+  def listEventSources(params: ListEventSourcesRequest): awsDashSdkLib.libRequestMod.Request[ListEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listEventSources(
+    params: ListEventSourcesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListEventSourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to display the AWS account ID that a particular partner event source name is associated with.  This operation is used by SaaS partners, not by AWS customers. 
+    */
+  def listPartnerEventSourceAccounts(): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourceAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listPartnerEventSourceAccounts(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListPartnerEventSourceAccountsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourceAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to display the AWS account ID that a particular partner event source name is associated with.  This operation is used by SaaS partners, not by AWS customers. 
+    */
+  def listPartnerEventSourceAccounts(params: ListPartnerEventSourceAccountsRequest): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourceAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listPartnerEventSourceAccounts(
+    params: ListPartnerEventSourceAccountsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListPartnerEventSourceAccountsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourceAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to list all the partner event source names that they have created.  This operation is not used by AWS customers. 
+    */
+  def listPartnerEventSources(): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listPartnerEventSources(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListPartnerEventSourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * An SaaS partner can use this operation to list all the partner event source names that they have created.  This operation is not used by AWS customers. 
+    */
+  def listPartnerEventSources(params: ListPartnerEventSourcesRequest): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listPartnerEventSources(
+    params: ListPartnerEventSourcesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListPartnerEventSourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListPartnerEventSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the rules for the specified target. You can see which rules can invoke a specific target in your account.
+    */
+  def listRuleNamesByTarget(): awsDashSdkLib.libRequestMod.Request[ListRuleNamesByTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listRuleNamesByTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListRuleNamesByTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListRuleNamesByTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the rules for the specified target. You can see which rules can invoke a specific target in your account.
+    */
+  def listRuleNamesByTarget(params: ListRuleNamesByTargetRequest): awsDashSdkLib.libRequestMod.Request[ListRuleNamesByTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listRuleNamesByTarget(
+    params: ListRuleNamesByTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListRuleNamesByTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListRuleNamesByTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists your EventBridge rules. You can either list all the rules or provide a prefix to match to the rule names.  ListRules doesn't list the targets of a rule. To see the targets associated with a rule, use ListTargetsByRule.
+    */
+  def listRules(): awsDashSdkLib.libRequestMod.Request[ListRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listRules(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListRulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists your EventBridge rules. You can either list all the rules or provide a prefix to match to the rule names.  ListRules doesn't list the targets of a rule. To see the targets associated with a rule, use ListTargetsByRule.
+    */
+  def listRules(params: ListRulesRequest): awsDashSdkLib.libRequestMod.Request[ListRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listRules(
+    params: ListRulesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListRulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Displays the tags associated with an EventBridge resource. In EventBridge, rules can be tagged.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Displays the tags associated with an EventBridge resource. In EventBridge, rules can be tagged.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the targets assigned to the specified rule.
+    */
+  def listTargetsByRule(): awsDashSdkLib.libRequestMod.Request[ListTargetsByRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTargetsByRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTargetsByRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsByRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the targets assigned to the specified rule.
+    */
+  def listTargetsByRule(params: ListTargetsByRuleRequest): awsDashSdkLib.libRequestMod.Request[ListTargetsByRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTargetsByRule(
+    params: ListTargetsByRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTargetsByRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsByRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Sends custom events to EventBridge so that they can be matched to rules. These events can be from your custom applications and services.
+    */
+  def putEvents(): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putEvents(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutEventsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Sends custom events to EventBridge so that they can be matched to rules. These events can be from your custom applications and services.
+    */
+  def putEvents(params: PutEventsRequest): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putEvents(
+    params: PutEventsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutEventsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This is used by SaaS partners to write events to a customer's partner event bus.  AWS customers do not use this operation. Instead, AWS customers can use PutEvents to write custom events from their own applications to an event bus. 
+    */
+  def putPartnerEvents(): awsDashSdkLib.libRequestMod.Request[PutPartnerEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putPartnerEvents(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutPartnerEventsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutPartnerEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * This is used by SaaS partners to write events to a customer's partner event bus.  AWS customers do not use this operation. Instead, AWS customers can use PutEvents to write custom events from their own applications to an event bus. 
+    */
+  def putPartnerEvents(params: PutPartnerEventsRequest): awsDashSdkLib.libRequestMod.Request[PutPartnerEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putPartnerEvents(
+    params: PutPartnerEventsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutPartnerEventsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutPartnerEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Running PutPermission permits the specified AWS account or AWS organization to put events to the specified event bus. Rules in your account are triggered by these events arriving to an event bus in your account.  For another account to send events to your account, that external account must have a rule with your account's event bus as a target. To enable multiple AWS accounts to put events to an event bus, run PutPermission once for each of these accounts. Or, if all the accounts are members of the same AWS organization, you can run PutPermission once specifying Principal as "*" and specifying the AWS organization ID in Condition, to grant permissions to all accounts in that organization. If you grant permissions using an organization, then accounts in that organization must specify a RoleArn with proper permissions when they use PutTarget to add your account's event bus as a target. For more information, see Sending and Receiving Events Between AWS Accounts in the Amazon EventBridge User Guide. The permission policy on an event bus can't exceed 10 KB in size.
+    */
+  def putPermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putPermission(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Running PutPermission permits the specified AWS account or AWS organization to put events to the specified event bus. Rules in your account are triggered by these events arriving to an event bus in your account.  For another account to send events to your account, that external account must have a rule with your account's event bus as a target. To enable multiple AWS accounts to put events to an event bus, run PutPermission once for each of these accounts. Or, if all the accounts are members of the same AWS organization, you can run PutPermission once specifying Principal as "*" and specifying the AWS organization ID in Condition, to grant permissions to all accounts in that organization. If you grant permissions using an organization, then accounts in that organization must specify a RoleArn with proper permissions when they use PutTarget to add your account's event bus as a target. For more information, see Sending and Receiving Events Between AWS Accounts in the Amazon EventBridge User Guide. The permission policy on an event bus can't exceed 10 KB in size.
+    */
+  def putPermission(params: PutPermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putPermission(
+    params: PutPermissionRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates or updates the specified rule. Rules are enabled by default or based on value of the state. You can disable a rule using DisableRule. A single rule watches for events from a single event bus. Events generated by AWS services go to your account's default event bus. Events generated by SaaS partner services or applications go to the matching partner event bus. If you have custom applications or services, you can specify whether their events go to your default event bus or a custom event bus that you have created. For more information, see CreateEventBus. If you're updating an existing rule, the rule is replaced with what you specify in this PutRule command. If you omit arguments in PutRule, the old values for those arguments aren't kept. Instead, they're replaced with null values. When you create or update a rule, incoming events might not immediately start matching to new or updated rules. Allow a short period of time for changes to take effect. A rule must contain at least an EventPattern or ScheduleExpression. Rules with EventPatterns are triggered when a matching event is observed. Rules with ScheduleExpressions self-trigger based on the given schedule. A rule can have both an EventPattern and a ScheduleExpression, in which case the rule triggers on matching events as well as on a schedule. When you initially create a rule, you can optionally assign one or more tags to the rule. Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only rules with certain tag values. To use the PutRule operation and assign tags, you must have both the events:PutRule and events:TagResource permissions. If you are updating an existing rule, any tags you specify in the PutRule operation are ignored. To update the tags of an existing rule, use TagResource and UntagResource. Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, EventBridge uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event that you want to match. In EventBridge, you could create rules that lead to infinite loops, where a rule is fired repeatedly. For example, a rule might detect that ACLs have changed on an S3 bucket, and trigger software to change them to the desired state. If you don't write the rule carefully, the subsequent change to the ACLs fires the rule again, creating an infinite loop. To prevent this, write the rules so that the triggered actions don't refire the same rule. For example, your rule could fire only if ACLs are found to be in a bad state, instead of after any change.  An infinite loop can quickly cause higher than expected charges. We recommend that you use budgeting, which alerts you when charges exceed your specified limit. For more information, see Managing Your Costs with Budgets.
+    */
+  def putRule(): awsDashSdkLib.libRequestMod.Request[PutRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putRule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PutRuleResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[PutRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates or updates the specified rule. Rules are enabled by default or based on value of the state. You can disable a rule using DisableRule. A single rule watches for events from a single event bus. Events generated by AWS services go to your account's default event bus. Events generated by SaaS partner services or applications go to the matching partner event bus. If you have custom applications or services, you can specify whether their events go to your default event bus or a custom event bus that you have created. For more information, see CreateEventBus. If you're updating an existing rule, the rule is replaced with what you specify in this PutRule command. If you omit arguments in PutRule, the old values for those arguments aren't kept. Instead, they're replaced with null values. When you create or update a rule, incoming events might not immediately start matching to new or updated rules. Allow a short period of time for changes to take effect. A rule must contain at least an EventPattern or ScheduleExpression. Rules with EventPatterns are triggered when a matching event is observed. Rules with ScheduleExpressions self-trigger based on the given schedule. A rule can have both an EventPattern and a ScheduleExpression, in which case the rule triggers on matching events as well as on a schedule. When you initially create a rule, you can optionally assign one or more tags to the rule. Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only rules with certain tag values. To use the PutRule operation and assign tags, you must have both the events:PutRule and events:TagResource permissions. If you are updating an existing rule, any tags you specify in the PutRule operation are ignored. To update the tags of an existing rule, use TagResource and UntagResource. Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, EventBridge uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event that you want to match. In EventBridge, you could create rules that lead to infinite loops, where a rule is fired repeatedly. For example, a rule might detect that ACLs have changed on an S3 bucket, and trigger software to change them to the desired state. If you don't write the rule carefully, the subsequent change to the ACLs fires the rule again, creating an infinite loop. To prevent this, write the rules so that the triggered actions don't refire the same rule. For example, your rule could fire only if ACLs are found to be in a bad state, instead of after any change.  An infinite loop can quickly cause higher than expected charges. We recommend that you use budgeting, which alerts you when charges exceed your specified limit. For more information, see Managing Your Costs with Budgets.
+    */
+  def putRule(params: PutRuleRequest): awsDashSdkLib.libRequestMod.Request[PutRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putRule(
+    params: PutRuleRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PutRuleResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[PutRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds the specified targets to the specified rule, or updates the targets if they're already associated with the rule. Targets are the resources that are invoked when a rule is triggered. You can configure the following as targets in EventBridge:   EC2 instances   SSM Run Command   SSM Automation   AWS Lambda functions   Data streams in Amazon Kinesis Data Streams   Data delivery streams in Amazon Kinesis Data Firehose   Amazon ECS tasks   AWS Step Functions state machines   AWS Batch jobs   AWS CodeBuild projects   Pipelines in AWS CodePipeline   Amazon Inspector assessment templates   Amazon SNS topics   Amazon SQS queues, including FIFO queues   The default event bus of another AWS account   Creating rules with built-in targets is supported only on the AWS Management Console. The built-in targets are EC2 CreateSnapshot API call, EC2 RebootInstances API call, EC2 StopInstances API call, and EC2 TerminateInstances API call.  For some target types, PutTargets provides target-specific parameters. If the target is a Kinesis data stream, you can optionally specify which shard the event goes to by using the KinesisParameters argument. To invoke a command on multiple EC2 instances with one rule, you can use the RunCommandParameters field. To be able to make API calls against the resources that you own, Amazon EventBridge needs the appropriate permissions. For AWS Lambda and Amazon SNS resources, EventBridge relies on resource-based policies. For EC2 instances, Kinesis data streams, and AWS Step Functions state machines, EventBridge relies on IAM roles that you specify in the RoleARN argument in PutTargets. For more information, see Authentication and Access Control in the Amazon EventBridge User Guide. If another AWS account is in the same Region and has granted you permission (using PutPermission), you can send events to that account. Set that account's event bus as a target of the rules in your account. To send the matched events to the other account, specify that account's event bus as the Arn value when you run PutTargets. If your account sends events to another account, your account is charged for each sent event. Each event sent to another account is charged as a custom event. The account receiving the event isn't charged. For more information, see Amazon EventBridge Pricing. If you're setting an event bus in another account as the target and that account granted permission to your account through an organization instead of directly by the account ID, you must specify a RoleArn with proper permissions in the Target structure. For more information, see Sending and Receiving Events Between AWS Accounts in the Amazon EventBridge User Guide. For more information about enabling cross-account events, see PutPermission.  Input, InputPath, and InputTransformer are mutually exclusive and optional parameters of a target. When a rule is triggered due to a matched event:   If none of the following arguments are specified for a target, the entire event is passed to the target in JSON format (unless the target is Amazon EC2 Run Command or Amazon ECS task, in which case nothing from the event is passed to the target).   If Input is specified in the form of valid JSON, then the matched event is overridden with this constant.   If InputPath is specified in the form of JSONPath (for example, $.detail), only the part of the event specified in the path is passed to the target (for example, only the detail part of the event is passed).   If InputTransformer is specified, one or more specified JSONPaths are extracted from the event and used as values in a template that you specify as the input to the target.   When you specify InputPath or InputTransformer, you must use JSON dot notation, not bracket notation. When you add targets to a rule and the associated rule triggers soon after, new or updated targets might not be immediately invoked. Allow a short period of time for changes to take effect. This action can partially fail if too many requests are made at the same time. If that happens, FailedEntryCount is nonzero in the response, and each entry in FailedEntries provides the ID of the failed target and the error code.
+    */
+  def putTargets(): awsDashSdkLib.libRequestMod.Request[PutTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds the specified targets to the specified rule, or updates the targets if they're already associated with the rule. Targets are the resources that are invoked when a rule is triggered. You can configure the following as targets in EventBridge:   EC2 instances   SSM Run Command   SSM Automation   AWS Lambda functions   Data streams in Amazon Kinesis Data Streams   Data delivery streams in Amazon Kinesis Data Firehose   Amazon ECS tasks   AWS Step Functions state machines   AWS Batch jobs   AWS CodeBuild projects   Pipelines in AWS CodePipeline   Amazon Inspector assessment templates   Amazon SNS topics   Amazon SQS queues, including FIFO queues   The default event bus of another AWS account   Creating rules with built-in targets is supported only on the AWS Management Console. The built-in targets are EC2 CreateSnapshot API call, EC2 RebootInstances API call, EC2 StopInstances API call, and EC2 TerminateInstances API call.  For some target types, PutTargets provides target-specific parameters. If the target is a Kinesis data stream, you can optionally specify which shard the event goes to by using the KinesisParameters argument. To invoke a command on multiple EC2 instances with one rule, you can use the RunCommandParameters field. To be able to make API calls against the resources that you own, Amazon EventBridge needs the appropriate permissions. For AWS Lambda and Amazon SNS resources, EventBridge relies on resource-based policies. For EC2 instances, Kinesis data streams, and AWS Step Functions state machines, EventBridge relies on IAM roles that you specify in the RoleARN argument in PutTargets. For more information, see Authentication and Access Control in the Amazon EventBridge User Guide. If another AWS account is in the same Region and has granted you permission (using PutPermission), you can send events to that account. Set that account's event bus as a target of the rules in your account. To send the matched events to the other account, specify that account's event bus as the Arn value when you run PutTargets. If your account sends events to another account, your account is charged for each sent event. Each event sent to another account is charged as a custom event. The account receiving the event isn't charged. For more information, see Amazon EventBridge Pricing. If you're setting an event bus in another account as the target and that account granted permission to your account through an organization instead of directly by the account ID, you must specify a RoleArn with proper permissions in the Target structure. For more information, see Sending and Receiving Events Between AWS Accounts in the Amazon EventBridge User Guide. For more information about enabling cross-account events, see PutPermission.  Input, InputPath, and InputTransformer are mutually exclusive and optional parameters of a target. When a rule is triggered due to a matched event:   If none of the following arguments are specified for a target, the entire event is passed to the target in JSON format (unless the target is Amazon EC2 Run Command or Amazon ECS task, in which case nothing from the event is passed to the target).   If Input is specified in the form of valid JSON, then the matched event is overridden with this constant.   If InputPath is specified in the form of JSONPath (for example, $.detail), only the part of the event specified in the path is passed to the target (for example, only the detail part of the event is passed).   If InputTransformer is specified, one or more specified JSONPaths are extracted from the event and used as values in a template that you specify as the input to the target.   When you specify InputPath or InputTransformer, you must use JSON dot notation, not bracket notation. When you add targets to a rule and the associated rule triggers soon after, new or updated targets might not be immediately invoked. Allow a short period of time for changes to take effect. This action can partially fail if too many requests are made at the same time. If that happens, FailedEntryCount is nonzero in the response, and each entry in FailedEntries provides the ID of the failed target and the error code.
+    */
+  def putTargets(params: PutTargetsRequest): awsDashSdkLib.libRequestMod.Request[PutTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putTargets(
+    params: PutTargetsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Revokes the permission of another AWS account to be able to put events to the specified event bus. Specify the account to revoke by the StatementId value that you associated with the account when you granted it permission with PutPermission. You can find the StatementId by using DescribeEventBus.
+    */
+  def removePermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def removePermission(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Revokes the permission of another AWS account to be able to put events to the specified event bus. Specify the account to revoke by the StatementId value that you associated with the account when you granted it permission with PutPermission. You can find the StatementId by using DescribeEventBus.
+    */
+  def removePermission(params: RemovePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def removePermission(
+    params: RemovePermissionRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes the specified targets from the specified rule. When the rule is triggered, those targets are no longer be invoked. When you remove a target, when the associated rule triggers, removed targets might continue to be invoked. Allow a short period of time for changes to take effect. This action can partially fail if too many requests are made at the same time. If that happens, FailedEntryCount is non-zero in the response and each entry in FailedEntries provides the ID of the failed target and the error code.
+    */
+  def removeTargets(): awsDashSdkLib.libRequestMod.Request[RemoveTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def removeTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RemoveTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RemoveTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes the specified targets from the specified rule. When the rule is triggered, those targets are no longer be invoked. When you remove a target, when the associated rule triggers, removed targets might continue to be invoked. Allow a short period of time for changes to take effect. This action can partially fail if too many requests are made at the same time. If that happens, FailedEntryCount is non-zero in the response and each entry in FailedEntries provides the ID of the failed target and the error code.
+    */
+  def removeTargets(params: RemoveTargetsRequest): awsDashSdkLib.libRequestMod.Request[RemoveTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def removeTargets(
+    params: RemoveTargetsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RemoveTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RemoveTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Assigns one or more tags (key-value pairs) to the specified EventBridge resource. Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values. In EventBridge, rules can be tagged. Tags don't have any semantic meaning to AWS and are interpreted strictly as strings of characters. You can use the TagResource action with a rule that already has tags. If you specify a new tag key for the rule, this tag is appended to the list of tags associated with the rule. If you specify a tag key that is already associated with the rule, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Assigns one or more tags (key-value pairs) to the specified EventBridge resource. Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values. In EventBridge, rules can be tagged. Tags don't have any semantic meaning to AWS and are interpreted strictly as strings of characters. You can use the TagResource action with a rule that already has tags. If you specify a new tag key for the rule, this tag is appended to the list of tags associated with the rule. If you specify a tag key that is already associated with the rule, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource.
+    */
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Tests whether the specified event pattern matches the provided event. Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, EventBridge uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event that you want to match.
+    */
+  def testEventPattern(): awsDashSdkLib.libRequestMod.Request[TestEventPatternResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def testEventPattern(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TestEventPatternResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TestEventPatternResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Tests whether the specified event pattern matches the provided event. Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, EventBridge uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event that you want to match.
+    */
+  def testEventPattern(params: TestEventPatternRequest): awsDashSdkLib.libRequestMod.Request[TestEventPatternResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def testEventPattern(
+    params: TestEventPatternRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TestEventPatternResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TestEventPatternResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes one or more tags from the specified EventBridge resource. In EventBridge, rules can be tagged.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes one or more tags from the specified EventBridge resource. In EventBridge, rules can be tagged.
+    */
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+}
+

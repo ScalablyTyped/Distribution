@@ -9,7 +9,14 @@ import scala.scalajs.js.annotation._
   * iOS-only parameters that specify the anchor element location and arrow direction
   * of the popover when selecting images from an iPad's library or album.
   */
-trait CameraPopoverOptions extends js.Object {
+@JSGlobal("CameraPopoverOptions")
+@js.native
+class CameraPopoverOptions () extends js.Object {
+  def this(x: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double, arrowDir: scala.Double) = this()
   /**
     * Direction the arrow on the popover should point. Defined in Camera.PopoverArrowDirection
     * Matches iOS UIPopoverArrowDirection constants.
@@ -19,25 +26,12 @@ trait CameraPopoverOptions extends js.Object {
     *      ARROW_RIGHT : 8,
     *      ARROW_ANY : 15
     */
-  var arrowDir: scala.Double
-  var height: scala.Double
-  var width: scala.Double
-  var x: scala.Double
-  var y: scala.Double
-}
-
-object CameraPopoverOptions {
-  @scala.inline
-  def apply(
-    arrowDir: scala.Double,
-    height: scala.Double,
-    width: scala.Double,
-    x: scala.Double,
-    y: scala.Double
-  ): CameraPopoverOptions = {
-    val __obj = js.Dynamic.literal(arrowDir = arrowDir, height = height, width = width, x = x, y = y)
-  
-    __obj.asInstanceOf[CameraPopoverOptions]
-  }
+  var arrowDir: scala.Double = js.native
+  var height: scala.Double = js.native
+  var popoverHeight: scala.Double = js.native
+  var popoverWidth: scala.Double = js.native
+  var width: scala.Double = js.native
+  var x: scala.Double = js.native
+  var y: scala.Double = js.native
 }
 

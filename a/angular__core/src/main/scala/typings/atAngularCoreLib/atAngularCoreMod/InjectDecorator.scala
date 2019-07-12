@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait InjectDecorator
   extends org.scalablytyped.runtime.Instantiable1[/* token */ js.Any, Inject] {
   /**
-    * A parameter decorator on a dependency parameter of a class constructor
+    * Parameter decorator on a dependency parameter of a class constructor
     * that specifies a custom provider of the dependency.
     *
     * Learn more in the ["Dependency Injection Guide"](guide/dependency-injection).
@@ -22,7 +22,7 @@ trait InjectDecorator
     * parameter as the provider.
     *
     * <code-example path="core/di/ts/metadata_spec.ts"
-    * region="InjectWithoutDecorator"></code-example>
+    * region="InjectWithoutDecorator"  linenums="false"></code-example>
     */
   def apply(token: js.Any): js.Any = js.native
 }

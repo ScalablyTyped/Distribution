@@ -15,7 +15,11 @@ trait DescribeRuleResponse extends js.Object {
     */
   var Description: js.UndefOr[RuleDescription] = js.undefined
   /**
-    * The event pattern. For more information, see Events and Event Patterns in the Amazon CloudWatch Events User Guide.
+    * The event bus associated with the rule.
+    */
+  var EventBusName: js.UndefOr[EventBusName] = js.undefined
+  /**
+    * The event pattern. For more information, see Event Patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: js.UndefOr[EventPattern] = js.undefined
   /**
@@ -31,7 +35,7 @@ trait DescribeRuleResponse extends js.Object {
     */
   var RoleArn: js.UndefOr[RoleArn] = js.undefined
   /**
-    * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".
+    * The scheduling expression: for example, "cron(0 20 * * ? *)" or "rate(5 minutes)".
     */
   var ScheduleExpression: js.UndefOr[ScheduleExpression] = js.undefined
   /**
@@ -45,6 +49,7 @@ object DescribeRuleResponse {
   def apply(
     Arn: RuleArn = null,
     Description: RuleDescription = null,
+    EventBusName: EventBusName = null,
     EventPattern: EventPattern = null,
     ManagedBy: ManagedBy = null,
     Name: RuleName = null,
@@ -55,6 +60,7 @@ object DescribeRuleResponse {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
     if (EventPattern != null) __obj.updateDynamic("EventPattern")(EventPattern)
     if (ManagedBy != null) __obj.updateDynamic("ManagedBy")(ManagedBy)
     if (Name != null) __obj.updateDynamic("Name")(Name)

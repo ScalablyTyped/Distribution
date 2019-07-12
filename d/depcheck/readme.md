@@ -1,7 +1,7 @@
 
 # Scala.js typings for depcheck
 
-Typings are for version 0.6
+Typings are for version 0.8
 
 ## Library description:
 Check dependencies in your node module
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for depcheck 0.6
+// Type definitions for depcheck 0.8
 // Project: https://github.com/depcheck/depcheck
 // Definitions by: ark120202 <https://github.com/ark120202>
+//                 jrnail23 <https://github.com/jrnail23>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

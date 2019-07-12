@@ -33,9 +33,10 @@ trait FileWriter extends FileSaver {
     * @param size The size to which the length of the file is to be adjusted, measured in bytes.
     */
   def truncate(size: scala.Double): scala.Unit = js.native
+  def write(data: java.lang.String): scala.Unit = js.native
   /**
     * Write the supplied data to the file at position.
-    * @param {Blob} data The blob to write.
+    * @param {Blob|string} data The blob to write.
     */
   def write(data: stdLib.Blob): scala.Unit = js.native
 }

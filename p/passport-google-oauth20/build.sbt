@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-google-oauth20"
-version := "2.0-dt-20190606Z-5c7ad0"
+version := "2.0-dt-20190710Z-f4186b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

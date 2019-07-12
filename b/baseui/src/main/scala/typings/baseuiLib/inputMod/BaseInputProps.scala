@@ -20,12 +20,12 @@ trait BaseInputProps[T] extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.Ref[T]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[T], _]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FormEventHandler[T], _]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[T], _]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
-  var onKeyPress: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[T]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[T]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[T]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[T]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[T]] = js.undefined
   var overrides: js.UndefOr[BaseInputOverrides] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var positive: js.UndefOr[scala.Boolean] = js.undefined
@@ -53,12 +53,12 @@ object BaseInputProps {
     id: java.lang.String = null,
     inputRef: reactLib.reactMod.Ref[T] = null,
     name: java.lang.String = null,
-    onBlur: /* e */ reactLib.reactMod.FocusEventHandler[T] => _ = null,
-    onChange: /* e */ reactLib.reactMod.FormEventHandler[T] => _ = null,
-    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[T] => _ = null,
-    onKeyDown: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
-    onKeyPress: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
-    onKeyUp: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[T] = null,
+    onChange: reactLib.reactMod.FormEventHandler[T] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[T] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[T] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[T] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[T] = null,
     overrides: BaseInputOverrides = null,
     placeholder: java.lang.String = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -81,12 +81,12 @@ object BaseInputProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)

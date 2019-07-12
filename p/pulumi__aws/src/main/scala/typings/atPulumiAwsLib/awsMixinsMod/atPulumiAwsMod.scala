@@ -190,6 +190,8 @@ object atPulumiAwsMod extends js.Object {
         /* envPrefix */ java.lang.String, 
         awsDashSdkLib.awsDashSdkMod.EnvironmentCredentials
       ] = js.native
+    var EventBridge: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.EventBridge] = js.native
+    val EventBridgeNs: atPulumiAwsLib.TypeofEventBridge = js.native
     val EventListenersNs: atPulumiAwsLib.TypeofEventListeners = js.native
     var FMS: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.FMS] = js.native
     val FMSNs: atPulumiAwsLib.TypeofFMS = js.native

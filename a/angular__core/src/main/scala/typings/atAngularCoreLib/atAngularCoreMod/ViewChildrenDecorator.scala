@@ -17,28 +17,28 @@ trait ViewChildrenDecorator
       ViewChildren
     ] {
   /**
-    * Configures a view query.
+    * Parameter decorator that configures a view query.
     *
-    * You can use ViewChildren to get the `QueryList` of elements or directives from the
-    * view DOM. Any time a child element is added, removed, or moved, the query list will be updated,
+    * Use to get the `QueryList` of elements or directives from the view DOM.
+    * Any time a child element is added, removed, or moved, the query list will be updated,
     * and the changes observable of the query list will emit a new value.
     *
     * View queries are set before the `ngAfterViewInit` callback is called.
     *
     * **Metadata Properties**:
     *
-    * * **selector** - the directive type or the name used for querying.
-    * * **read** - read a different token from the queried elements.
+    * * **selector** - The directive type or the name used for querying.
+    * * **read** - True to read a different token from the queried elements.
     *
     * @usageNotes
     *
-    * ### Example
+    * {@example core/di/ts/viewChildren/view_children_howto.ts region='HowTo'
+    * linenums="false"}
     *
-    * {@example core/di/ts/viewChildren/view_children_howto.ts region='HowTo'}
+    * ### Another example
     *
-    * ### Example
-    *
-    * {@example core/di/ts/viewChildren/view_children_example.ts region='Component'}
+    * {@example core/di/ts/viewChildren/view_children_example.ts region='Component'
+    * linenums="false"}
     *
     * @Annotation
     */

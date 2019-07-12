@@ -47,7 +47,7 @@ trait GlacierJobDescription extends js.Object {
     */
   var JobDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * An opaque string that identifies an Amazon Glacier job.
+    * An opaque string that identifies an Amazon S3 Glacier job.
     */
   var JobId: js.UndefOr[java.lang.String] = js.undefined
   /**

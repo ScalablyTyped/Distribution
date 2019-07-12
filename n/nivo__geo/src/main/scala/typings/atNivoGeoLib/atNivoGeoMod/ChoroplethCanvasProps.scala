@@ -13,6 +13,7 @@ object ChoroplethCanvasProps {
   @scala.inline
   def apply(
     data: js.Array[_],
+    domain: js.Array[scala.Double],
     features: js.Array[_],
     borderColor: java.lang.String | (FeatureAccessor[ChoroplethBoundFeature, scala.Double]) = null,
     borderWidth: scala.Double | (FeatureAccessor[ChoroplethBoundFeature, scala.Double]) = null,
@@ -40,7 +41,7 @@ object ChoroplethCanvasProps {
     value: java.lang.String | (FeatureAccessor[_, scala.Double]) = null,
     valueFormat: java.lang.String | (FeatureAccessor[_, java.lang.String | scala.Double]) = null
   ): ChoroplethCanvasProps = {
-    val __obj = js.Dynamic.literal(data = data, features = features)
+    val __obj = js.Dynamic.literal(data = data, domain = domain, features = features)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

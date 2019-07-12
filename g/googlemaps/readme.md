@@ -1,7 +1,7 @@
 
 # Scala.js typings for googlemaps
 
-Typings are for version 3.36
+Typings are for version 3.37
 
 ## Library description:
 A simple way to query the Google Maps API from Node.js
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Google Maps JavaScript API 3.36
+// Type definitions for Google Maps JavaScript API 3.37
 // Project: https://developers.google.com/maps/
 // Definitions by:  Folia A/S <http://www.folia.dk>,
 //                  Chris Wrench <https://github.com/cgwrench>,
@@ -50,6 +50,7 @@ These comments are from the typescript definitions and might be useful:
 //                  Michael Gauthier <https://github.com/gauthierm>
 //                  Colin Doig <https://github.com/captain-igloo>
 //                  Dmitry Demensky <https://github.com/demensky>
+//                  Vladimir Dashukevich <https://github.com/life777>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.7
 /*

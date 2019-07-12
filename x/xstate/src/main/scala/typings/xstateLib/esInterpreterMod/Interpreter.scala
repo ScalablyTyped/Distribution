@@ -23,7 +23,10 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
   var attachDev: js.Any = js.native
   var batch: js.Any = js.native
   var cancel: js.Any = js.native
-  var children: js.Any = js.native
+  var children: stdLib.Map[
+    java.lang.String | scala.Double, 
+    xstateLib.esActorMod.Actor[_, xstateLib.esTypesMod.EventObject]
+  ] = js.native
   /**
     * The clock that is responsible for setting and clearing timeouts, such as delayed events and transitions.
     */

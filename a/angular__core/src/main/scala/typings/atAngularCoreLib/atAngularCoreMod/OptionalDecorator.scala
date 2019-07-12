@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait OptionalDecorator
   extends org.scalablytyped.runtime.Instantiable0[Optional] {
   /**
-    * A parameter decorator to be used on constructor parameters,
+    * Parameter decorator to be used on constructor parameters,
     * which marks the parameter as being an optional dependency.
     * The DI framework provides null if the dependency is not found.
     *
@@ -22,7 +22,8 @@ trait OptionalDecorator
     *
     * The following code allows the possibility of a null result:
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Optional"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Optional"
+    *  linenums="false"></code-example>
     *
     */
   def apply(): js.Any = js.native

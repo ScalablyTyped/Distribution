@@ -28,19 +28,23 @@ trait Client extends js.Object {
     * Query on multiple index
     * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
     */
-  def search[T](queries: js.Array[algoliasearchLib.Anon_IndexNameParamsQuery]): js.Promise[MultiResponse[T]] = js.native
+  def search[T](queries: js.Array[algoliasearchLib.Anon_IndexName]): js.Promise[algoliasearchLib.algoliasearchMod.MultiResponse[T]] = js.native
   /**
     * Query on multiple index
     * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
     */
   def search[T](
-    queries: js.Array[algoliasearchLib.Anon_IndexNameParamsQuery],
-    cb: js.Function2[/* err */ stdLib.Error, /* res */ MultiResponse[T], scala.Unit]
+    queries: js.Array[algoliasearchLib.Anon_IndexName],
+    cb: js.Function2[
+      /* err */ stdLib.Error, 
+      /* res */ algoliasearchLib.algoliasearchMod.MultiResponse[T], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Query for facet values of a specific facet
     */
-  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexNameParamsParameters]): js.Promise[js.Array[algoliasearchLib.liteMod.SearchForFacetValuesNs.Response]] = js.native
+  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexNameParams]): js.Promise[js.Array[algoliasearchLib.algoliasearchMod.SearchForFacetValuesNs.Response]] = js.native
   /**
     * Add a header to be sent with all upcoming requests
     */

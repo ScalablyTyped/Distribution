@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * https://www.algolia.com/doc/api-reference/api-methods/move-index/?language=javascript#response
-  * https://www.algolia.com/doc/api-reference/api-methods/copy-index/?language=javascript#response
   */
 trait UpdateIndexTask extends js.Object {
   var taskID: scala.Double

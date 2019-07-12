@@ -35,7 +35,9 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var playground: js.UndefOr[apolloDashServerDashCoreLib.distPlaygroundMod.PlaygroundConfig] = js.undefined
   var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
-  var resolvers: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]] = js.undefined
+  var resolvers: js.UndefOr[
+    (graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]) | (js.Array[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]])
+  ] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
   var schemaDirectives: js.UndefOr[
     stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.TypeofClassSchemaDirectiveVisitor]
@@ -70,7 +72,7 @@ object Config {
     persistedQueries: apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
     playground: apolloDashServerDashCoreLib.distPlaygroundMod.PlaygroundConfig = null,
     plugins: js.Array[PluginDefinition] = null,
-    resolvers: graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _] = null,
+    resolvers: (graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]) | (js.Array[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]]) = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null,
     schemaDirectives: stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.TypeofClassSchemaDirectiveVisitor] = null,
     subscriptions: stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
@@ -90,7 +92,7 @@ object Config {
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])
     if (playground != null) __obj.updateDynamic("playground")(playground.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives)
     if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * https://www.algolia.com/doc/api-reference/api-methods/add-objects/?language=javascript#response
   */
 trait MultiObjectTask extends js.Object {
   var objectIDs: js.Array[java.lang.String]

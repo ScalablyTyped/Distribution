@@ -30,11 +30,11 @@ package object webdriverioLib {
   // Element commands that should be wrapper with Promise
   type ElementPromise = stdLib.Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
-    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
+    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR | webdriverioLib.webdriverioLibStrings.selector | webdriverioLib.webdriverioLibStrings.elementId
   ]
   // Element commands that should not be wrapper with promise
   type ElementStatic = stdLib.Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
-    webdriverioLib.webdriverioLibStrings.addCommand
+    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.selector | webdriverioLib.webdriverioLibStrings.elementId
   ]
 }

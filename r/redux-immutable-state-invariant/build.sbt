@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-immutable-state-invariant"
-version := "2.1-dt-20190605Z-d63e6d"
+version := "2.1-dt-20190605Z-1a8b80"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.3-d7698e",
+  "org.scalablytyped" %%% "redux" % "4.0.4-d7698e",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

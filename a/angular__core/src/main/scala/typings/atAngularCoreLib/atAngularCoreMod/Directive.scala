@@ -11,9 +11,7 @@ trait Directive extends js.Object {
     *
     * @usageNotes
     *
-    * ### Simple Example
-    *
-    * ```
+    * ```ts
     * @Directive({
     *   selector: 'child-dir',
     *   exportAs: 'child'
@@ -65,9 +63,8 @@ trait Directive extends js.Object {
     * - `bindingProperty` specifies the DOM property where the value is read from.
     *
     * When `bindingProperty` is not provided, it is assumed to be equal to `directiveProperty`.
-    * @usageNotes
     *
-    * ### Example
+    * @usageNotes
     *
     * The following example creates a component with two data-bound properties.
     *
@@ -108,8 +105,6 @@ trait Directive extends js.Object {
     * - `bindingProperty` specifies the DOM property the event handler is attached to.
     *
     * @usageNotes
-    *
-    * ### Example
     *
     * ```typescript
     * @Component({
@@ -152,12 +147,10 @@ trait Directive extends js.Object {
     *
     * @usageNotes
     *
-    * ### Example
-    *
     * The following example shows how queries are defined
     * and when their results are available in lifecycle hooks:
     *
-    * ```
+    * ```ts
     * @Component({
     *   selector: 'someDir',
     *   queries: {

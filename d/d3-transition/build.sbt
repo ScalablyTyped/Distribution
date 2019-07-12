@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "d3-transition"
-version := "1.1-dt-20190212Z-1a6f4b"
+version := "1.1-dt-20190212Z-2e351b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190212Z-2307af",
+  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-2307af",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

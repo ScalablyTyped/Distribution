@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-errors"
-version := "2.3.0-e1bd83"
+version := "2.3.1-e1bd83"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

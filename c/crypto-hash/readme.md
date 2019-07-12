@@ -1,7 +1,7 @@
 
 # Scala.js typings for crypto-hash
 
-Typings are for version 1.2.1
+Typings are for version 1.2.2
 
 ## Library description:
 Tiny hashing module that uses the native crypto API in Node.js and the browser

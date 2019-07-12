@@ -7,15 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait DotenvConfigOptions extends js.Object {
   /**
-    * You may specify a custom path if your file containing environment variables is located elsewhere.
+    * Default node environment to use if `process.env.NODE_ENV` is not present.
     */
-  var cwd: js.UndefOr[java.lang.String] = js.undefined
+  var default_node_env: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * You may specify the encoding of your file containing environment variables.
+    * Encoding for reading the `.env*` files.
     */
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * In some cases the original "dotenv" library can be used by one of the dependent npm modules. Use to fix this.
+    * Node environment (development/test/production/etc,.).
+    */
+  var node_env: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Path to `.env*` files directory.
+    */
+  var path: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * In some cases the original "dotenv" library can be used by one of the dependent npm modules.
+    * It causes calling the original `dotenv.config()` that loads the `.env` file from your project before you can call `dotenv-flow.config()`.
+    *
+    * Such cases breaks `.env*` files priority because the previously loaded environment variables are treated as shell-defined thus having the higher priority.
+    *
+    * Setting the `purge_dotenv` option to `true` can gracefully fix this issue.
     */
   var purge_dotenv: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -23,13 +36,17 @@ trait DotenvConfigOptions extends js.Object {
 object DotenvConfigOptions {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    default_node_env: java.lang.String = null,
     encoding: java.lang.String = null,
+    node_env: java.lang.String = null,
+    path: java.lang.String = null,
     purge_dotenv: js.UndefOr[scala.Boolean] = js.undefined
   ): DotenvConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (default_node_env != null) __obj.updateDynamic("default_node_env")(default_node_env)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (node_env != null) __obj.updateDynamic("node_env")(node_env)
+    if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv)
     __obj.asInstanceOf[DotenvConfigOptions]
   }

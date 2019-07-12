@@ -13,7 +13,7 @@ trait CredentialData extends js.Object {
     * The credential’s identifier. This might be a GUID, username, or email
     * address, for instance.
     */
-  var id: java.lang.String
+  val id: java.lang.String
 }
 
 object CredentialData {

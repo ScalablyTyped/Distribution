@@ -11,7 +11,7 @@ trait PartListElement extends js.Object {
     */
   var RangeInBytes: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The SHA256 tree hash value that Amazon Glacier calculated for the part. This field is never null.
+    * The SHA256 tree hash value that Amazon S3 Glacier calculated for the part. This field is never null.
     */
   var SHA256TreeHash: js.UndefOr[java.lang.String] = js.undefined
 }

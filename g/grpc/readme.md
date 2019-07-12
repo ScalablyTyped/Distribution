@@ -1,7 +1,7 @@
 
 # Scala.js typings for grpc
 
-Typings are for version 1.22.0
+Typings are for version 1.22.2
 
 ## Library description:
 gRPC Library for Node

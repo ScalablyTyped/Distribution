@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet"
-version := "1.4-dt-20190417Z-eb714c"
+version := "1.4-dt-20190711Z-34fce4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

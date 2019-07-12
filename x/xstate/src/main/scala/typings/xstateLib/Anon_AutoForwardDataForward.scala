@@ -51,13 +51,13 @@ trait Anon_AutoForwardDataForward[TContext, TEvent /* <: xstateLib.libTypesMod.E
   /**
     * The source of the machine to be invoked, or the machine itself.
     */
-  var src: java.lang.String | (xstateLib.libTypesMod.StateMachine[_, _, _]) | (xstateLib.libTypesMod.InvokeCreator[_, TContext])
+  var src: java.lang.String | (xstateLib.libTypesMod.StateMachine[_, _, _]) | (xstateLib.libTypesMod.InvokeCreator[_, _])
 }
 
 object Anon_AutoForwardDataForward {
   @scala.inline
   def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
-    src: java.lang.String | (xstateLib.libTypesMod.StateMachine[_, _, _]) | (xstateLib.libTypesMod.InvokeCreator[_, TContext]),
+    src: java.lang.String | (xstateLib.libTypesMod.StateMachine[_, _, _]) | (xstateLib.libTypesMod.InvokeCreator[_, _]),
     autoForward: js.UndefOr[scala.Boolean] = js.undefined,
     data: (xstateLib.libTypesMod.Mapper[TContext, TEvent]) | (xstateLib.libTypesMod.PropertyMapper[TContext, TEvent]) = null,
     forward: js.UndefOr[scala.Boolean] = js.undefined,

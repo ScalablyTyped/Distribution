@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-jwt
 
-Typings are for version 3.5.1
+Typings are for version 3.6.0
 
 ## Library description:
 Koa JWT authentication middleware.

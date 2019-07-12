@@ -14,20 +14,20 @@ object ^ extends js.Object {
   def convertToView(page: js.Any): ViewController | scala.Null = js.native
   def convertToView(
     page: js.Any,
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<null> */ js.Any
   ): ViewController | scala.Null = js.native
   def convertToViews(pages: js.Array[_]): js.Array[ViewController] = js.native
   def matches(view: js.UndefOr[scala.Nothing], id: java.lang.String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ scala.Boolean = js.native
   def matches(
     view: js.UndefOr[scala.Nothing],
     id: java.lang.String,
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<null> */ js.Any
   ): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ scala.Boolean = js.native
   def matches(view: ViewController, id: java.lang.String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ scala.Boolean = js.native
   def matches(
     view: ViewController,
     id: java.lang.String,
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<null> */ js.Any
   ): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ scala.Boolean = js.native
 }
 

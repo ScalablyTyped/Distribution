@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "braintree"
-version := "2.16-dt-20190521Z-f63637"
+version := "2.16-dt-20190710Z-c3b705"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

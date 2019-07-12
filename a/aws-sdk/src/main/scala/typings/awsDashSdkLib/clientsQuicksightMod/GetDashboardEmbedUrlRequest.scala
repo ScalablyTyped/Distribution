@@ -30,6 +30,10 @@ trait GetDashboardEmbedUrlRequest extends js.Object {
     * Remove the undo/redo button on embedded dashboard. The default is FALSE, which enables the undo/redo button.
     */
   var UndoRedoDisabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The Amazon QuickSight user's ARN, for use with QUICKSIGHT identity type. You can use this for any of the following:   Amazon QuickSight users in your account (readers, authors, or admins)   AD users   Invited non-federated users   Federated IAM users   Federated IAM role-based sessions  
+    */
+  var UserArn: js.UndefOr[Arn] = js.undefined
 }
 
 object GetDashboardEmbedUrlRequest {
@@ -40,12 +44,14 @@ object GetDashboardEmbedUrlRequest {
     IdentityType: IdentityType,
     ResetDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     SessionLifetimeInMinutes: js.UndefOr[SessionLifetimeInMinutes] = js.undefined,
-    UndoRedoDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    UndoRedoDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    UserArn: Arn = null
   ): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, DashboardId = DashboardId, IdentityType = IdentityType.asInstanceOf[js.Any])
     if (!js.isUndefined(ResetDisabled)) __obj.updateDynamic("ResetDisabled")(ResetDisabled)
     if (!js.isUndefined(SessionLifetimeInMinutes)) __obj.updateDynamic("SessionLifetimeInMinutes")(SessionLifetimeInMinutes)
     if (!js.isUndefined(UndoRedoDisabled)) __obj.updateDynamic("UndoRedoDisabled")(UndoRedoDisabled)
+    if (UserArn != null) __obj.updateDynamic("UserArn")(UserArn)
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]
   }
 }

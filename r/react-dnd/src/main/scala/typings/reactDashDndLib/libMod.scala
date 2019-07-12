@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd/lib", JSImport.Namespace)
 @js.native
 object libMod extends js.Object {
-  val DndContext: reactLib.reactMod.Context[reactDashDndLib.libCommonDndContextMod.DndContext] = js.native
+  val DndContext: reactLib.reactMod.Context[reactDashDndLib.libCommonDndContextMod.DndContextType] = js.native
   val DndProvider: reactLib.reactMod.FC[reactDashDndLib.libCommonDndProviderMod.DndProviderProps[js.Any, js.Any]] = js.native
   val DragPreviewImage: reactLib.reactMod.FC[reactDashDndLib.libCommonDragPreviewImageMod.DragPreviewImageProps] = js.native
   def DragLayer[RequiredProps, CollectedProps](

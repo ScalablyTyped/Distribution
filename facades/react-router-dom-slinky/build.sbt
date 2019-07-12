@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-dom-slinky-facade"
-version := "201907081111-cbd167"
+version := "201907120330-be4be5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

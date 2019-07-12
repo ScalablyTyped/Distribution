@@ -2085,6 +2085,22 @@ trait WebTwain extends js.Object {
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ scala.Double, /* errorString */ java.lang.String, scala.Unit]
   ): scala.Boolean = js.native
   /**
+    * Converts the image ID of an image to its index.
+    * [Version] Added in v15.0
+    * @method WebTwain#ImageIDToIndex
+    * @param {number} sImageID specifies the imageID.
+    * @return {number}
+    */
+  def ImageIDToIndex(sImageID: scala.Double): scala.Double = js.native
+  /**
+    * Converts the index of an image to its image ID.
+    * [Version] Added in v15.0
+    * @method WebTwain#IndexToImageID
+    * @param {number} sImageIndex specifies the index.
+    * @return {number}
+    */
+  def IndexToImageID(sImageIndex: scala.Double): scala.Double = js.native
+  /**
     * [Deprecated.] Detects whether an image is blank.
     * @method WebTwain#IsBlankImage
     * @param {number} sImageIndex specifies the index of image in buffer. The index is 0-based.
@@ -2724,9 +2740,22 @@ trait WebTwain extends js.Object {
   /**
     * Shows the GUI of Image Editor.
     * @method WebTwain#ShowImageEditor
+    * @param {string} elEditorDIV Specifies a DIV by its ID to put the editor in
+    * @param {number} width Specifies the width of the DIV
+    * @param {number} height Specifies the height of the DIV
+    * @param {boolean} bHideToolBar Specifies whether to show the toolbar or not 
     * @return {boolean}
     */
   def ShowImageEditor(): scala.Boolean = js.native
+  def ShowImageEditor(elEditorDIV: java.lang.String): scala.Boolean = js.native
+  def ShowImageEditor(elEditorDIV: java.lang.String, width: scala.Double): scala.Boolean = js.native
+  def ShowImageEditor(elEditorDIV: java.lang.String, width: scala.Double, height: scala.Double): scala.Boolean = js.native
+  def ShowImageEditor(
+    elEditorDIV: java.lang.String,
+    width: scala.Double,
+    height: scala.Double,
+    bHideToolBar: scala.Boolean
+  ): scala.Boolean = js.native
   /**
     * [Deprecated.] Shows the GUI of Image Editor with custom settings.
     * @method WebTwain#ShowImageEditorEx
@@ -2738,9 +2767,6 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ShowImageEditorEx(x: scala.Double, y: scala.Double, cx: scala.Double, cy: scala.Double, nCmdShow: scala.Double): scala.Boolean = js.native
-  /*ingored    
-    SourceNameItems
-    */
   /**
     * Switchs two images of specified indices in buffer.
     * @method WebTwain#SwitchImage
@@ -2757,5 +2783,15 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def UnregisterEvent(name: java.lang.String, evt: js.Object): scala.Boolean = js.native
+  /*ingored    
+    SourceNameItems
+    */
+  /**
+    * Shows the GUI of Image Editor.
+    * @method WebTwain#startScan
+    * @return {Promise}
+    * @param {any} scanSetup Specifies how images are scanned and outputed
+    */
+  def startScan(scanSetup: js.Any): js.Promise[_] = js.native
 }
 

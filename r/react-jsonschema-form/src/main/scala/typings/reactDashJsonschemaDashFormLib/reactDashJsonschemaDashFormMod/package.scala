@@ -12,5 +12,9 @@ package object reactDashJsonschemaDashFormMod {
   type FormValidation = FieldValidation with org.scalablytyped.runtime.StringDictionary[FieldValidation]
   type ISubmitEvent[T] = IChangeEvent[T]
   type IdSchema = FieldId with org.scalablytyped.runtime.StringDictionary[FieldId]
+  type ThemeProps[T] = stdLib.Omit[
+    FormProps[T], 
+    reactDashJsonschemaDashFormLib.reactDashJsonschemaDashFormLibStrings.schema
+  ]
   type Widget = reactLib.reactMod.StatelessComponent[WidgetProps] | (reactLib.reactMod.ComponentClass[WidgetProps, reactLib.reactMod.ComponentState])
 }

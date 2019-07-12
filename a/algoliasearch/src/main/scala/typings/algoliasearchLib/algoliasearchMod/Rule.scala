@@ -25,7 +25,6 @@ trait Rule extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
     * ObjectID of the synonym
-    * https://github.com/algolia/algoliasearch-client-js#save-synonym---savesynonym
     */
   var objectID: java.lang.String
 }

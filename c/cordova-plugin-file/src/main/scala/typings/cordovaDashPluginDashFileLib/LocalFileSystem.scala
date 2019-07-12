@@ -19,8 +19,8 @@ object LocalFileSystem extends js.Object {
   sealed trait TEMPORARY
     extends cordovaDashPluginDashFileLib.LocalFileSystem
   
-  /* 0 */ val PERSISTENT: PERSISTENT with scala.Double = js.native
-  /* 1 */ val TEMPORARY: TEMPORARY with scala.Double = js.native
+  /* 1 */ val PERSISTENT: PERSISTENT with scala.Double = js.native
+  /* 0 */ val TEMPORARY: TEMPORARY with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[cordovaDashPluginDashFileLib.LocalFileSystem with scala.Double] = js.native
 }

@@ -10,8 +10,11 @@ trait dwtEnv extends js.Object {
   var ActiveXVersion: java.lang.String
   var AutoLoad: scala.Boolean
   var Containers: js.Array[Container]
+  var CustomizableDisplayInfo: js.Any
   var Debug: scala.Boolean
   var DynamicContainers: js.Array[java.lang.String]
+  var IfAddMD5InUploadHeader: scala.Boolean
+  var IfConfineMaskWithinTheViewer: scala.Boolean
   var IfInstallDWTModuleWithZIP: scala.Boolean
   var IfUseActiveXForIE10Plus: scala.Boolean
   /*ignored
@@ -61,10 +64,13 @@ object dwtEnv {
     CloseDialog: () => scala.Unit,
     Containers: js.Array[Container],
     CreateDWTObject: (java.lang.String, js.Function1[/* dwtObject */ WebTwain, scala.Unit], js.Function1[/* repeated */ js.Any, scala.Unit]) => scala.Unit,
+    CustomizableDisplayInfo: js.Any,
     Debug: scala.Boolean,
     DeleteDWTObject: java.lang.String => scala.Unit,
     DynamicContainers: js.Array[java.lang.String],
     GetWebTwain: java.lang.String => WebTwain,
+    IfAddMD5InUploadHeader: scala.Boolean,
+    IfConfineMaskWithinTheViewer: scala.Boolean,
     IfInstallDWTModuleWithZIP: scala.Boolean,
     IfUseActiveXForIE10Plus: scala.Boolean,
     JSVersion: java.lang.String,
@@ -84,7 +90,7 @@ object dwtEnv {
     initQueue: js.Array[_],
     inited: scala.Boolean
   ): dwtEnv = {
-    val __obj = js.Dynamic.literal(ActiveXInstallWithCAB = ActiveXInstallWithCAB, ActiveXVersion = ActiveXVersion, AutoLoad = AutoLoad, CloseDialog = js.Any.fromFunction0(CloseDialog), Containers = Containers, CreateDWTObject = js.Any.fromFunction3(CreateDWTObject), Debug = Debug, DeleteDWTObject = js.Any.fromFunction1(DeleteDWTObject), DynamicContainers = DynamicContainers, GetWebTwain = js.Any.fromFunction1(GetWebTwain), IfInstallDWTModuleWithZIP = IfInstallDWTModuleWithZIP, IfUseActiveXForIE10Plus = IfUseActiveXForIE10Plus, JSVersion = JSVersion, Load = js.Any.fromFunction0(Load), OnWebTwainPostExecute = js.Any.fromFunction0(OnWebTwainPostExecute), OnWebTwainPreExecute = js.Any.fromFunction0(OnWebTwainPreExecute), PluginVersion = PluginVersion, ProductKey = ProductKey, RegisterEvent = js.Any.fromFunction2(RegisterEvent), RemoveAllAuthorizations = js.Any.fromFunction0(RemoveAllAuthorizations), ResourcesPath = ResourcesPath, ServerVersionInfo = ServerVersionInfo, ShowDialog = js.Any.fromFunction5(ShowDialog), Trial = Trial, Unload = js.Any.fromFunction0(Unload), UseDefaultInstallUI = UseDefaultInstallUI, initQueue = initQueue, inited = inited)
+    val __obj = js.Dynamic.literal(ActiveXInstallWithCAB = ActiveXInstallWithCAB, ActiveXVersion = ActiveXVersion, AutoLoad = AutoLoad, CloseDialog = js.Any.fromFunction0(CloseDialog), Containers = Containers, CreateDWTObject = js.Any.fromFunction3(CreateDWTObject), CustomizableDisplayInfo = CustomizableDisplayInfo, Debug = Debug, DeleteDWTObject = js.Any.fromFunction1(DeleteDWTObject), DynamicContainers = DynamicContainers, GetWebTwain = js.Any.fromFunction1(GetWebTwain), IfAddMD5InUploadHeader = IfAddMD5InUploadHeader, IfConfineMaskWithinTheViewer = IfConfineMaskWithinTheViewer, IfInstallDWTModuleWithZIP = IfInstallDWTModuleWithZIP, IfUseActiveXForIE10Plus = IfUseActiveXForIE10Plus, JSVersion = JSVersion, Load = js.Any.fromFunction0(Load), OnWebTwainPostExecute = js.Any.fromFunction0(OnWebTwainPostExecute), OnWebTwainPreExecute = js.Any.fromFunction0(OnWebTwainPreExecute), PluginVersion = PluginVersion, ProductKey = ProductKey, RegisterEvent = js.Any.fromFunction2(RegisterEvent), RemoveAllAuthorizations = js.Any.fromFunction0(RemoveAllAuthorizations), ResourcesPath = ResourcesPath, ServerVersionInfo = ServerVersionInfo, ShowDialog = js.Any.fromFunction5(ShowDialog), Trial = Trial, Unload = js.Any.fromFunction0(Unload), UseDefaultInstallUI = UseDefaultInstallUI, initQueue = initQueue, inited = inited)
   
     __obj.asInstanceOf[dwtEnv]
   }

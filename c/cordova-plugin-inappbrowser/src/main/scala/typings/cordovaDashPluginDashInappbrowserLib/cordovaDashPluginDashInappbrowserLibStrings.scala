@@ -7,32 +7,20 @@ import scala.scalajs.js.annotation._
 
 object cordovaDashPluginDashInappbrowserLibStrings {
   @js.native
-  sealed trait _blank extends js.Object
+  sealed trait exit extends channel
   
   @js.native
-  sealed trait _self extends js.Object
+  sealed trait loaderror extends channel
   
   @js.native
-  sealed trait _system extends js.Object
+  sealed trait loadstart extends channel
   
   @js.native
-  sealed trait exit extends js.Object
+  sealed trait loadstop extends channel
   
   @js.native
-  sealed trait loaderror extends js.Object
+  sealed trait message extends channel
   
-  @js.native
-  sealed trait loadstart extends js.Object
-  
-  @js.native
-  sealed trait loadstop extends js.Object
-  
-  @scala.inline
-  def _blank: _blank = "_blank".asInstanceOf[_blank]
-  @scala.inline
-  def _self: _self = "_self".asInstanceOf[_self]
-  @scala.inline
-  def _system: _system = "_system".asInstanceOf[_system]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
   @scala.inline
@@ -41,5 +29,7 @@ object cordovaDashPluginDashInappbrowserLibStrings {
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
   def loadstop: loadstop = "loadstop".asInstanceOf[loadstop]
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
 }
 

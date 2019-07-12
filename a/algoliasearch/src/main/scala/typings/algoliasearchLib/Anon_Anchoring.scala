@@ -20,7 +20,6 @@ trait Anon_Anchoring extends js.Object {
   var context: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Query pattern
-    * syntax: https://www.algolia.com/doc/rest-api/query-rules/?language=php#query-pattern-syntax
     */
   var pattern: java.lang.String
 }

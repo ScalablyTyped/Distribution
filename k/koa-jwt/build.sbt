@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-jwt"
-version := "3.5.1-852c9c"
+version := "3.6.0-cbe81f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

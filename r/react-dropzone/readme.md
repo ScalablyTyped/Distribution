@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dropzone
 
-Typings are for version 4.2.3
+Typings are for version 10.1.5
 
 ## Library description:
 Simple HTML5 drag-drop zone with React.js
@@ -24,29 +24,11 @@ Simple HTML5 drag-drop zone with React.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-dropzone 4.2.3
-// Project: https://github.com/okonet/react-dropzone
-// Definitions by: Mathieu Larouche Dube <https://github.com/matdube>,
-//                 Ivo Jesus <https://github.com/LynxEyes>,
-//                 Luís Rodrigues <https://github.com/goblindegook>,
-//                 Ben Bayard <https://github.com/benbayard>,
-//                 Karol Janyst <https://github.com/LKay>,
-//                 Andris Causs <https://github.com/codeaid>,
-//                 Juraj Husar <https://github.com/jurosh>,
-//                 Monroe Ekilah <https://github.com/ekilah>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -18,39 +18,5 @@ trait Window extends js.Object {
   def open(url: java.lang.String): InAppBrowser = js.native
   def open(url: java.lang.String, target: java.lang.String): InAppBrowser = js.native
   def open(url: java.lang.String, target: java.lang.String, options: java.lang.String): InAppBrowser = js.native
-  def open(url: java.lang.String, target: java.lang.String, options: java.lang.String, replace: scala.Boolean): InAppBrowser = js.native
-  @JSName("open")
-  def open_blank(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._blank
-  ): InAppBrowser = js.native
-  @JSName("open")
-  def open_blank(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._blank,
-    options: java.lang.String
-  ): InAppBrowser = js.native
-  @JSName("open")
-  def open_self(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._self
-  ): InAppBrowser = js.native
-  @JSName("open")
-  def open_self(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._self,
-    options: java.lang.String
-  ): InAppBrowser = js.native
-  @JSName("open")
-  def open_system(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._system
-  ): InAppBrowser = js.native
-  @JSName("open")
-  def open_system(
-    url: java.lang.String,
-    target: cordovaDashPluginDashInappbrowserLib.cordovaDashPluginDashInappbrowserLibStrings._system,
-    options: java.lang.String
-  ): InAppBrowser = js.native
 }
 

@@ -70,6 +70,12 @@ package object clientsServicecatalogMod {
     - java.lang.String
   */
   type EvaluationType = _EvaluationType | java.lang.String
+  type ExecutionParameterKey = java.lang.String
+  type ExecutionParameterMap = org.scalablytyped.runtime.StringDictionary[ExecutionParameterValueList]
+  type ExecutionParameterType = java.lang.String
+  type ExecutionParameterValue = java.lang.String
+  type ExecutionParameterValueList = js.Array[ExecutionParameterValue]
+  type ExecutionParameters = js.Array[ExecutionParameter]
   type FailedServiceActionAssociations = js.Array[FailedServiceActionAssociation]
   type HasDefaultPath = scala.Boolean
   type Id = java.lang.String

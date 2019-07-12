@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CompleteMultipartUploadInput extends js.Object {
   /**
-    * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID.
+    * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID.
     */
   var accountId: java.lang.String
   /**
@@ -15,7 +15,7 @@ trait CompleteMultipartUploadInput extends js.Object {
     */
   var archiveSize: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The SHA256 tree hash of the entire archive. It is the tree hash of SHA256 tree hash of the individual parts. If the value you specify in the request does not match the SHA256 tree hash of the final assembled archive as computed by Amazon Glacier, Amazon Glacier returns an error and the request fails.
+    * The SHA256 tree hash of the entire archive. It is the tree hash of SHA256 tree hash of the individual parts. If the value you specify in the request does not match the SHA256 tree hash of the final assembled archive as computed by Amazon S3 Glacier (Glacier), Glacier returns an error and the request fails.
     */
   var checksum: js.UndefOr[java.lang.String] = js.undefined
   /**

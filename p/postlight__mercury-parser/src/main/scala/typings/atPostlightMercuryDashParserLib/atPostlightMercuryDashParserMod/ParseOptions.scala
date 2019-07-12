@@ -10,7 +10,7 @@ trait ParseOptions extends js.Object {
     atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.html | atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.markdown | atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.text
   ] = js.undefined
   var headers: js.UndefOr[js.Object] = js.undefined
-  var html: js.UndefOr[java.lang.String] = js.undefined
+  var html: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
 }
 
 object ParseOptions {
@@ -18,12 +18,12 @@ object ParseOptions {
   def apply(
     contentType: atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.html | atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.markdown | atPostlightMercuryDashParserLib.atPostlightMercuryDashParserLibStrings.text = null,
     headers: js.Object = null,
-    html: java.lang.String = null
+    html: java.lang.String | nodeLib.Buffer = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "wouter"
-version := "2.0-dt-20190621Z-4dafee"
+version := "2.0-dt-20190710Z-81debb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
+  "org.scalablytyped" %%% "preact" % "8.4.2-83b6b4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")

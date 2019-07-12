@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/jaredhanson/passport-google-oauth2
 // Definitions by: Yasunori Ohoka <https://github.com/yasupeke>
 //                 Eduard Zintz <https://github.com/ezintz>
+//                 Tan Nguyen <https://github.com/ngtan>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

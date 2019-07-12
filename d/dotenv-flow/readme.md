@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-flow
 
-Typings are for version 0.2
+Typings are for version 3.0
 
 ## Library description:
 Loads environment variables from `.env.[development|test|production][.local]` files
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for dotenv-flow 0.2
+// Type definitions for dotenv-flow 3.0
 // Project: https://github.com/kerimdzhanov/dotenv-flow
 // Definitions by: Vincent Langlet <https://github.com/vincentlanglet>
+//                 Dan Kerimdzhanov <https://github.com/kerimdzhanov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

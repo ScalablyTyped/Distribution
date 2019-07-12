@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jaeger-client"
-version := "3.15-dt-20190528Z-845e62"
+version := "3.15-dt-20190711Z-d9de61"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

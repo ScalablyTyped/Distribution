@@ -14,14 +14,14 @@ class Strategy protected ()
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 
       /* profile */ Profile, 
-      /* done */ passportDashOauth2Lib.passportDashOauth2Mod.VerifyCallback, 
+      /* done */ VerifyCallback, 
       scala.Unit
     ]) = this()
   def this(options: StrategyOptions, verify: js.Function4[
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 
       /* profile */ Profile, 
-      /* done */ passportDashOauth2Lib.passportDashOauth2Mod.VerifyCallback, 
+      /* done */ VerifyCallback, 
       scala.Unit
     ]) = this()
 }

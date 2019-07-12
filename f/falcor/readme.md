@@ -1,7 +1,7 @@
 
 # Scala.js typings for falcor
 
-Typings are for version 0.1
+Typings are for version 2.0
 
 ## Library description:
 A JavaScript library for efficient data fetching.
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for falcor 0.1
-// Project: http://netflix.github.io/falcor/, https://github.com/netflix/falcor
-// Definitions by: Quramy <https://github.com/Quramy>
+// Type definitions for falcor 2.0
+// Project: https://netflix.github.io/falcor/, https://github.com/netflix/falcor
+// Definitions by: Quramy <https://github.com/Quramy>, LukeRielley <https://github.com/lukerielley>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
+// TypeScript Version: 2.4
 
 ```
 

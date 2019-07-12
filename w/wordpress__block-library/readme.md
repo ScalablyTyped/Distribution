@@ -1,0 +1,55 @@
+
+# Scala.js typings for wordpress__block-library
+
+Typings are for version 2.6
+
+## Library description:
+Block library for the WordPress editor.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @wordpress/block-library |
+| Keywords           | wordpress, blocks |
+| # releases         | 39 |
+| # dependents       | 4 |
+| # downloads        | 51759 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/block-library/README.md)
+- [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
+- [Npm](https://www.npmjs.com/package/%40wordpress%2Fblock-library)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Type definitions for @wordpress/block-library 2.6
+// Project: https://github.com/WordPress/gutenberg/tree/master/packages/block-library/README.md
+// Definitions by: Derek Sifford <https://github.com/dsifford>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 3.5
+/**
+ * Function to register core blocks provided by the block editor.
+ *
+ * @example
+ * ```js
+ * import { registerCoreBlocks } from '@wordpress/block-library';
+ *
+ * registerCoreBlocks();
+ * ```
+ */
+
+```
+

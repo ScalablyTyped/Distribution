@@ -1,7 +1,7 @@
 
 # Scala.js typings for loadable__component
 
-Typings are for version 5.9
+Typings are for version 5.10
 
 ## Library description:
 React code splitting made easy.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @loadable/component 5.9
+// Type definitions for @loadable/component 5.10
 // Project: https://github.com/smooth-code/loadable-components
 // Definitions by: Martynas Kadiša <https://github.com/martynaskadisa>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

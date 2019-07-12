@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-env
 
-Typings are for version 1.13
+Typings are for version 1.14
 
 ## Library description:
 read variables from a .env.js file and make them available to webpack as globals
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for webpack (module API) 1.13
+// Type definitions for webpack (module API) 1.14
 // Project: https://github.com/webpack/webpack
 // Definitions by: use-strict <https://github.com/use-strict>
 //                 rhonsby <https://github.com/rhonsby>

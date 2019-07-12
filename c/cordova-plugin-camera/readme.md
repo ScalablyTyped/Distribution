@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-camera
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 Cordova Camera Plugin

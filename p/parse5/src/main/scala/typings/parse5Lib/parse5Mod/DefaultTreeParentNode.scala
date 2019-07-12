@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultTreeParentNode extends js.Object {
+trait DefaultTreeParentNode extends DefaultTreeNode {
   /**
     * Child nodes.
     */
@@ -14,8 +14,8 @@ trait DefaultTreeParentNode extends js.Object {
 
 object DefaultTreeParentNode {
   @scala.inline
-  def apply(childNodes: js.Array[DefaultTreeNode]): DefaultTreeParentNode = {
-    val __obj = js.Dynamic.literal(childNodes = childNodes)
+  def apply(childNodes: js.Array[DefaultTreeNode], nodeName: java.lang.String): DefaultTreeParentNode = {
+    val __obj = js.Dynamic.literal(childNodes = childNodes, nodeName = nodeName)
   
     __obj.asInstanceOf[DefaultTreeParentNode]
   }

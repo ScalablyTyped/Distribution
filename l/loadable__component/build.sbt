@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loadable__component"
-version := "5.9-dt-20190503Z-98b22b"
+version := "5.10-dt-20190711Z-2b81c7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

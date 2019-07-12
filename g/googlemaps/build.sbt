@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "googlemaps"
-version := "3.36-dt-20190710Z-6729c9"
+version := "3.37-dt-20190710Z-96d324"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

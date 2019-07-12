@@ -13,7 +13,7 @@ trait TypeDecorator extends js.Object {
   def apply(target: js.Object, propertyKey: js.Symbol): scala.Unit = js.native
   def apply(target: js.Object, propertyKey: js.Symbol, parameterIndex: scala.Double): scala.Unit = js.native
   /**
-    * Invoke as ES7 decorator.
+    * Invoke as decorator.
     */
   def apply[T /* <: Type[_] */](`type`: T): T = js.native
 }

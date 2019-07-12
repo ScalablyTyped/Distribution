@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "realm"
-version := "2.29.0-942672"
+version := "2.29.1-942672"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

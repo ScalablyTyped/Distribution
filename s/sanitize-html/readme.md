@@ -45,7 +45,9 @@ These comments are from the typescript definitions and might be useful:
 //                 A penguin <https://github.com/sirMerr>
 //                 Johan Davidsson <https://github.com/johandavidson>
 //                 Jianrong Yu <https://github.com/YuJianrong>
+//                 GP <https://github.com/paambaati>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.2
 
 ```
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for formik
 
-Typings are for version 1.5.7
+Typings are for version 1.5.8
 
 ## Library description:
 Forms in React, without tears

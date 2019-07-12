@@ -10,7 +10,7 @@ trait Fn_LoadFnOptions extends js.Object {
   def apply[T](loadFn: js.Function1[/* props */ js.Object, js.Promise[T]]): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
   def apply[T](
     loadFn: js.Function1[/* props */ js.Object, js.Promise[T]],
-    options: atLoadableComponentLib.atLoadableComponentMod.Options
+    options: atLoadableComponentLib.atLoadableComponentMod.Options[_]
   ): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
 }
 

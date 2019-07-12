@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListTagsForResourceResponse extends js.Object {
   /**
-    * The list of tag keys and values associated with the rule you specified
+    * The list of tag keys and values associated with the rule that you specified.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

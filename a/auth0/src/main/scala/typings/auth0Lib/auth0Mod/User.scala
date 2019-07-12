@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait User[A, U] extends js.Object {
-  var app_metadata: A
+  var app_metadata: js.UndefOr[A] = js.undefined
   var blocked: js.UndefOr[scala.Boolean] = js.undefined
   var created_at: js.UndefOr[java.lang.String] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined
@@ -25,15 +25,14 @@ trait User[A, U] extends js.Object {
   var picture: js.UndefOr[java.lang.String] = js.undefined
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
   var user_id: js.UndefOr[java.lang.String] = js.undefined
-  var user_metadata: U
+  var user_metadata: js.UndefOr[U] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object User {
   @scala.inline
   def apply[A, U](
-    app_metadata: A,
-    user_metadata: U,
+    app_metadata: A = null,
     blocked: js.UndefOr[scala.Boolean] = js.undefined,
     created_at: java.lang.String = null,
     email: java.lang.String = null,
@@ -52,9 +51,11 @@ object User {
     picture: java.lang.String = null,
     updated_at: java.lang.String = null,
     user_id: java.lang.String = null,
+    user_metadata: U = null,
     username: java.lang.String = null
   ): User[A, U] = {
-    val __obj = js.Dynamic.literal(app_metadata = app_metadata.asInstanceOf[js.Any], user_metadata = user_metadata.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata.asInstanceOf[js.Any])
     if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (email != null) __obj.updateDynamic("email")(email)
@@ -73,6 +74,7 @@ object User {
     if (picture != null) __obj.updateDynamic("picture")(picture)
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
     if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    if (user_metadata != null) __obj.updateDynamic("user_metadata")(user_metadata.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[User[A, U]]
   }

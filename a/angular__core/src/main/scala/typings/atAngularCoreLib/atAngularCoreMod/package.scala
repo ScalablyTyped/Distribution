@@ -218,7 +218,7 @@ package object atAngularCoreMod {
   type PipeTypesOrFactory = js.Function0[atAngularCoreLib.DirectiveTypeList] | atAngularCoreLib.DirectiveTypeList
   type Predicate[T] = js.Function1[/* value */ T, scala.Boolean]
   /**
-    * Describes a function that is used to process provider list (for example in case of provider
+    * Describes a function that is used to process provider lists (such as provider
     * overrides).
     */
   type ProcessProvidersFunction = js.Function1[/* providers */ js.Array[Provider], js.Array[Provider]]

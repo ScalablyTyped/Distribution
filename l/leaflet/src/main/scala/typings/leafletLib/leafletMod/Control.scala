@@ -20,3 +20,10 @@ class Control () extends Class {
   def setPosition(position: ControlPosition): this.type = js.native
 }
 
+/* static members */
+@JSImport("leaflet", "Control")
+@js.native
+object Control extends js.Object {
+  def extend[T /* <: js.Object */](props: T): leafletLib.Anon_ArgsAny[T] with leafletLib.Anon_Attribution = js.native
+}
+

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-inappbrowser"
-version := "3.0.0-8cef29"
+version := "3.1.0-6f6a6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

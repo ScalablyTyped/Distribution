@@ -5,21 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Configures the `Injector` to return a value by invoking a `useFactory` function.
-  *
-  * For more details, see the ["Dependency Injection Guide"](guide/dependency-injection).
-  *
-  * @usageNotes
-  * ### Example
-  *
-  * {@example core/di/ts/provider_spec.ts region='FactorySansProvider'}
-  *
-  * @publicApi
-  */
 trait FactorySansProvider extends InjectableProvider {
   /**
-    * A list of `token`s which need to be resolved by the injector. The list of values is then
+    * A list of `token`s to be resolved by the injector. The list of values is then
     * used as arguments to the `useFactory` function.
     */
   var deps: js.UndefOr[js.Array[_]] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InitiateMultipartUploadOutput extends js.Object {
   /**
-    * The relative URI path of the multipart upload ID Amazon Glacier created.
+    * The relative URI path of the multipart upload ID Amazon S3 Glacier created.
     */
   var location: js.UndefOr[java.lang.String] = js.undefined
   /**

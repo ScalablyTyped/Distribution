@@ -51,6 +51,7 @@ object LineSvgProps {
     pointSize: scala.Int | scala.Double = null,
     sliceTooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNode = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
+    tooltip: TooltipProp = null,
     tooltipFormat: TooltipFormatter | java.lang.String = null,
     useMesh: js.UndefOr[scala.Boolean] = js.undefined,
     xFormat: java.lang.String | DataFormatter = null,
@@ -92,6 +93,7 @@ object LineSvgProps {
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
     if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1(sliceTooltip))
     if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(useMesh)) __obj.updateDynamic("useMesh")(useMesh)
     if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat.asInstanceOf[js.Any])

@@ -40,6 +40,7 @@ trait LineProps extends js.Object {
   var pointSize: js.UndefOr[scala.Double] = js.undefined
   var sliceTooltip: js.UndefOr[js.Function1[/* data */ LineSliceData, reactLib.reactMod.ReactNode]] = js.undefined
   var theme: js.UndefOr[atNivoCoreLib.atNivoCoreMod.Theme] = js.undefined
+  var tooltip: js.UndefOr[TooltipProp] = js.undefined
   var tooltipFormat: js.UndefOr[TooltipFormatter | java.lang.String] = js.undefined
   var xFormat: js.UndefOr[java.lang.String | DataFormatter] = js.undefined
   var xScale: js.UndefOr[atNivoScalesLib.atNivoScalesMod.Scale] = js.undefined
@@ -80,6 +81,7 @@ object LineProps {
     pointSize: scala.Int | scala.Double = null,
     sliceTooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNode = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
+    tooltip: TooltipProp = null,
     tooltipFormat: TooltipFormatter | java.lang.String = null,
     xFormat: java.lang.String | DataFormatter = null,
     xScale: atNivoScalesLib.atNivoScalesMod.Scale = null,
@@ -116,6 +118,7 @@ object LineProps {
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
     if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1(sliceTooltip))
     if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
     if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat.asInstanceOf[js.Any])
     if (xScale != null) __obj.updateDynamic("xScale")(xScale)

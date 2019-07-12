@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "falcor-json-graph"
-version := "1.1.7-dt-20190322Z-e169dc"
+version := "1.1.7-dt-20190711Z-e169dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

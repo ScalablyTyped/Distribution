@@ -11,7 +11,7 @@ trait DescribeVaultOutput extends js.Object {
     */
   var CreationDate: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The Universal Coordinated Time (UTC) date when Amazon Glacier completed the last vault inventory. This value should be a string in the ISO 8601 date format, for example 2012-03-20T17:03:43.221Z.
+    * The Universal Coordinated Time (UTC) date when Amazon S3 Glacier completed the last vault inventory. This value should be a string in the ISO 8601 date format, for example 2012-03-20T17:03:43.221Z.
     */
   var LastInventoryDate: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -12,8 +12,9 @@ trait DirectiveDecorator
   */
 org.scalablytyped.runtime.Instantiable1[/* obj */ Directive, Directive] {
   /**
-    * Marks a class as an Angular directive. You can define your own
-    * directives to attach custom behavior to elements in the DOM.
+    * Decorator that marks a class as an Angular directive.
+    * You can define your own directives to attach custom behavior to elements in the DOM.
+    *
     * The options provide configuration metadata that determines
     * how the directive should be processed, instantiated and used at
     * runtime.
@@ -25,7 +26,7 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Directive, Directive] {
     * @usageNotes
     * To define a directive, mark the class with the decorator and provide metadata.
     *
-    * ```
+    * ```ts
     * import {Directive} from '@angular/core';
     *
     * @Directive({
@@ -46,7 +47,7 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Directive, Directive] {
     * a directive imported from another module.
     * List the directive class in the `declarations` field of an NgModule.
     *
-    * ```
+    * ```ts
     * declarations: [
     *  AppComponent,
     *  MyDirective

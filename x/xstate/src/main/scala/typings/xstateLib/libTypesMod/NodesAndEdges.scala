@@ -13,9 +13,7 @@ trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends js.Object {
       /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
     ]
   ]
-  var nodes: js.Array[
-    xstateLib.libStateNodeMod.StateNode[DefaultContext, _, OmniEventObject[EventObject]]
-  ]
+  var nodes: js.Array[xstateLib.libStateNodeMod.StateNode[_, _, OmniEventObject[EventObject]]]
 }
 
 object NodesAndEdges {
@@ -28,9 +26,7 @@ object NodesAndEdges {
         /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
       ]
     ],
-    nodes: js.Array[
-      xstateLib.libStateNodeMod.StateNode[DefaultContext, _, OmniEventObject[EventObject]]
-    ]
+    nodes: js.Array[xstateLib.libStateNodeMod.StateNode[_, _, OmniEventObject[EventObject]]]
   ): NodesAndEdges[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(edges = edges, nodes = nodes)
   

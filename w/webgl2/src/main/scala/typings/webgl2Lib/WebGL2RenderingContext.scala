@@ -3099,7 +3099,6 @@ object WebGL2RenderingContext
   val STENCIL_CLEAR_VALUE: scala.Double = js.native
   val STENCIL_FAIL: scala.Double = js.native
   val STENCIL_FUNC: scala.Double = js.native
-  val STENCIL_INDEX: scala.Double = js.native
   val STENCIL_INDEX8: scala.Double = js.native
   val STENCIL_PASS_DEPTH_FAIL: scala.Double = js.native
   val STENCIL_PASS_DEPTH_PASS: scala.Double = js.native

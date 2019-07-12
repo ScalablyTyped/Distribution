@@ -15,10 +15,6 @@ trait DefaultTreeElement extends DefaultTreeParentNode {
     */
   var namespaceURI: java.lang.String
   /**
-    * The name of the node. Equals to element {@link tagName}.
-    */
-  var nodeName: java.lang.String
-  /**
     * Parent node.
     */
   var parentNode: DefaultTreeParentNode

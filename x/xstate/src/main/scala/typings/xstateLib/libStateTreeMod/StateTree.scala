@@ -8,33 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("xstate/lib/StateTree", "StateTree")
 @js.native
 class StateTree protected () extends js.Object {
-  def this(stateNode: xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]) = this()
-  def this(stateNode: xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ], stateValue: xstateLib.libTypesMod.StateValue) = this()
-  def this(stateNode: xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions) = this()
-  def this(stateNode: xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions, parent: StateTree) = this()
+  def this(stateNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]) = this()
+  def this(stateNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]], stateValue: xstateLib.libTypesMod.StateValue) = this()
+  def this(stateNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions) = this()
+  def this(stateNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions, parent: StateTree) = this()
   val absolute: StateTree = js.native
   val atomicNodes: js.Array[
-    xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
+    xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]
   ] = js.native
   val done: scala.Boolean = js.native
   var isResolved: scala.Boolean = js.native
@@ -45,47 +25,27 @@ class StateTree protected () extends js.Object {
   var reentryNodes: js.Any = js.native
   val resolved: StateTree = js.native
   var root: StateTree = js.native
-  var stateNode: xstateLib.libStateNodeMod.StateNode[
-    xstateLib.libTypesMod.DefaultContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
+  var stateNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]] = js.native
   var stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue] = js.native
   val value: xstateLib.libTypesMod.StateValue = js.native
   def addReentryNode(
-    reentryNode: xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
+    reentryNode: xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]
   ): scala.Unit = js.native
   def combine(tree: StateTree): StateTree = js.native
   def getDoneData[TContext](context: TContext, event: xstateLib.libTypesMod.EventObject): js.Any = js.native
   def getDoneEvents(): js.Array[xstateLib.libTypesMod.EventObject] = js.native
   def getDoneEvents(
     entryStateNodes: stdLib.Set[
-      xstateLib.libStateNodeMod.StateNode[
-        xstateLib.libTypesMod.DefaultContext, 
-        _, 
-        xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-      ]
+      xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]
     ]
   ): js.Array[xstateLib.libTypesMod.EventObject] = js.native
   def getEntryExitStates(): xstateLib.libTypesMod.EntryExitStateArrays[_] = js.native
   def getEntryExitStates(prevTree: StateTree): xstateLib.libTypesMod.EntryExitStateArrays[_] = js.native
   def getEntryStates(): js.Array[
-    xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
+    xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]
   ] = js.native
   def getExitStates(): js.Array[
-    xstateLib.libStateNodeMod.StateNode[
-      xstateLib.libTypesMod.DefaultContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
+    xstateLib.libStateNodeMod.StateNode[_, _, xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]]
   ] = js.native
   def matches(parentValue: xstateLib.libTypesMod.StateValue): scala.Boolean = js.native
 }

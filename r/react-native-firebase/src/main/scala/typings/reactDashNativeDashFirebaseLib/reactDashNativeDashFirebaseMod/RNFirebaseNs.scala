@@ -2861,7 +2861,7 @@ object RNFirebaseNs extends js.Object {
     
     trait StorageStatics extends js.Object {
       var Native: js.UndefOr[reactDashNativeDashFirebaseLib.Anon_CACHESDIRECTORYPATH] = js.undefined
-      var TaskEvent: TaskState
+      var TaskEvent: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.storageNs.TaskEvent
       var TaskState: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.storageNs.TaskState
     }
     

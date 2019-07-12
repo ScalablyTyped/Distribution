@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-dnd-touch-backend"
-version := "0.4-dt-20180803Z-6a6881"
+version := "0.4-dt-20180803Z-42f63e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dnd-core" % "9.0.0-058116",
+  "org.scalablytyped" %%% "dnd-core" % "9.3.2-058116",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

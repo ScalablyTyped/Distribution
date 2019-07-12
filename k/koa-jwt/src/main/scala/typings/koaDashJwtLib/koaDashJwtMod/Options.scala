@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var algorithms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var audience: js.UndefOr[java.lang.String] = js.undefined
+  var audience: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var cookie: js.UndefOr[java.lang.String] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var getToken: js.UndefOr[
@@ -33,7 +33,7 @@ object Options {
   def apply(
     secret: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer | SecretLoader,
     algorithms: js.Array[java.lang.String] = null,
-    audience: java.lang.String = null,
+    audience: java.lang.String | js.Array[java.lang.String] = null,
     cookie: java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     getToken: (/* ctx */ koaLib.koaMod.Context, Options) => java.lang.String = null,
@@ -45,7 +45,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction2(getToken))

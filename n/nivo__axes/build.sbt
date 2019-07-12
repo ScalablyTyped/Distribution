@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__axes"
-version := "0.59.1-4a555a"
+version := "0.59.2-4a555a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

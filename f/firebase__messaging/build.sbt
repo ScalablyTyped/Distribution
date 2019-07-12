@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging"
-version := "0.4.3-649223"
+version := "0.4.4-649223"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

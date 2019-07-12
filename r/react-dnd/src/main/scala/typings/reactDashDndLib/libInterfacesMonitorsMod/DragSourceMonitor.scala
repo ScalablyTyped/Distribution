@@ -21,12 +21,12 @@ trait DragSourceMonitor
   /**
     * Returns the last recorded { x, y } client offset of the pointer while a drag operation is in progress. Returns null if no item is being dragged.
     */
-  def getClientOffset(): dndDashCoreLib.libInterfacesMod.XYCoord | scala.Null = js.native
+  def getClientOffset(): XYCoord | scala.Null = js.native
   /**
     * Returns the { x, y } difference between the last recorded client offset of the pointer and the client offset when the current drag operation has started.
     * Returns null if no item is being dragged.
     */
-  def getDifferenceFromInitialOffset(): dndDashCoreLib.libInterfacesMod.XYCoord | scala.Null = js.native
+  def getDifferenceFromInitialOffset(): XYCoord | scala.Null = js.native
   /**
     * Returns a plain object representing the last recorded drop result. The drop targets may optionally specify it by returning an object from their
     * drop() methods. When a chain of drop() is dispatched for the nested targets, bottom up, any parent that explicitly returns its own result from drop()
@@ -36,12 +36,12 @@ trait DragSourceMonitor
   /**
     * Returns the { x, y } client offset of the pointer at the time when the current drag operation has started. Returns null if no item is being dragged.
     */
-  def getInitialClientOffset(): dndDashCoreLib.libInterfacesMod.XYCoord | scala.Null = js.native
+  def getInitialClientOffset(): XYCoord | scala.Null = js.native
   /**
     * Returns the { x, y } client offset of the drag source component's root DOM node at the time when the current drag operation has started.
     * Returns null if no item is being dragged.
     */
-  def getInitialSourceClientOffset(): dndDashCoreLib.libInterfacesMod.XYCoord | scala.Null = js.native
+  def getInitialSourceClientOffset(): XYCoord | scala.Null = js.native
   /**
     * Returns a plain object representing the currently dragged item. Every drag source must specify it by returning an object from its beginDrag() method.
     * Returns null if no item is being dragged.
@@ -55,7 +55,7 @@ trait DragSourceMonitor
     * Returns the projected { x, y } client offset of the drag source component's root DOM node, based on its position at the time when the current drag operation has
     * started, and the movement difference. Returns null if no item is being dragged.
     */
-  def getSourceClientOffset(): dndDashCoreLib.libInterfacesMod.XYCoord | scala.Null = js.native
+  def getSourceClientOffset(): XYCoord | scala.Null = js.native
   /**
     *  Returns true if a drag operation is in progress, and either the owner initiated the drag, or its isDragging() is defined and returns true.
     */

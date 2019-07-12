@@ -53,6 +53,6 @@ class Metadata () extends js.Object {
     *   These options only have any effect when passed at the beginning of
     *   a client request.
     */
-  def setOptions(options: MetadataOptions): js.Any = js.native
+  def setOptions(options: MetadataOptions): scala.Unit = js.native
 }
 

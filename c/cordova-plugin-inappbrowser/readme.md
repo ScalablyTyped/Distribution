@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-inappbrowser
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Cordova InAppBrowser Plugin
@@ -39,9 +39,10 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/apache/cordova-plugin-inappbrowser
 // Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// 
+//
 // Copyright (c) Microsoft Open Technologies Inc
 // Licensed under the MIT license.
+// TypeScript Version: 2.3
 
 ```
 

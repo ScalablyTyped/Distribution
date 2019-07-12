@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Entry extends js.Object {
   /** The file system on which the entry resides. */
-  var fileSystem: FileSystem = js.native
+  var filesystem: FileSystem = js.native
   /** The full absolute path from the root to the entry. */
   var fullPath: java.lang.String = js.native
   /** Entry is a directory. */

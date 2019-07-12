@@ -78,6 +78,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var elbv2: js.UndefOr[awsDashSdkLib.clientsElbv2Mod.ClientConfiguration] = js.native
   var emr: js.UndefOr[awsDashSdkLib.clientsEmrMod.ClientConfiguration] = js.native
   var es: js.UndefOr[awsDashSdkLib.clientsEsMod.ClientConfiguration] = js.native
+  var eventbridge: js.UndefOr[awsDashSdkLib.clientsEventbridgeMod.ClientConfiguration] = js.native
   var firehose: js.UndefOr[awsDashSdkLib.clientsFirehoseMod.ClientConfiguration] = js.native
   var fms: js.UndefOr[awsDashSdkLib.clientsFmsMod.ClientConfiguration] = js.native
   var fsx: js.UndefOr[awsDashSdkLib.clientsFsxMod.ClientConfiguration] = js.native

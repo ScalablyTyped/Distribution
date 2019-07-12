@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait PutTargetsRequest extends js.Object {
   /**
+    * The name of the event bus associated with the rule. If you omit this, the default event bus is used.
+    */
+  var EventBusName: js.UndefOr[EventBusName] = js.undefined
+  /**
     * The name of the rule.
     */
   var Rule: RuleName
@@ -18,9 +22,9 @@ trait PutTargetsRequest extends js.Object {
 
 object PutTargetsRequest {
   @scala.inline
-  def apply(Rule: RuleName, Targets: TargetList): PutTargetsRequest = {
+  def apply(Rule: RuleName, Targets: TargetList, EventBusName: EventBusName = null): PutTargetsRequest = {
     val __obj = js.Dynamic.literal(Rule = Rule, Targets = Targets)
-  
+    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
     __obj.asInstanceOf[PutTargetsRequest]
   }
 }

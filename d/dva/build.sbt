@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dva"
-version := "2.4.1-eb2e1f"
+version := "2.4.1-8b908d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-d34049",
   "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20190613Z-2215da",
-  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-a4b67e",
-  "org.scalablytyped" %%% "redux" % "4.0.3-d7698e",
+  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-9b0933",
+  "org.scalablytyped" %%% "redux" % "4.0.4-d7698e",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

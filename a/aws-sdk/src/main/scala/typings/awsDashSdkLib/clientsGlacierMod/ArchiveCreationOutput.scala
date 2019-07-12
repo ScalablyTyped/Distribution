@@ -11,7 +11,7 @@ trait ArchiveCreationOutput extends js.Object {
     */
   var archiveId: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The checksum of the archive computed by Amazon Glacier.
+    * The checksum of the archive computed by Amazon S3 Glacier.
     */
   var checksum: js.UndefOr[java.lang.String] = js.undefined
   /**

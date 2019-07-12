@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-alice-carousel"
-version := "1.15-dt-20190628Z-f5da40"
+version := "1.15-dt-20190711Z-ef8d0f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

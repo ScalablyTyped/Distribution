@@ -31,7 +31,7 @@ trait JobParameters extends js.Object {
     */
   var RetrievalByteRange: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The Amazon SNS topic ARN to which Amazon Glacier sends a notification when the job is completed and the output is ready for you to download. The specified topic publishes the notification to its subscribers. The SNS topic must exist.
+    * The Amazon SNS topic ARN to which Amazon S3 Glacier sends a notification when the job is completed and the output is ready for you to download. The specified topic publishes the notification to its subscribers. The SNS topic must exist.
     */
   var SNSTopic: js.UndefOr[java.lang.String] = js.undefined
   /**

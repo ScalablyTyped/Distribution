@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-plugin-base"
-version := "0.5.7-e1085e"
+version := "0.5.8-e1085e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UntagResourceRequest extends js.Object {
   /**
-    * The ARN of the CloudWatch Events rule from which you are removing tags.
+    * The ARN of the rule that you're removing tags from.
     */
   var ResourceARN: Arn
   /**

@@ -24,6 +24,7 @@ package object overlayscrollbarsMod {
     scala.Unit
   ]
   type Easing = js.UndefOr[java.lang.String | scala.Null]
+  type Extensions = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[js.Object]
   type Margin = scala.Double | scala.Boolean
   type OverflowAmountChangedCallback = js.ThisFunction1[
     /* this */ OverlayScrollbars, 

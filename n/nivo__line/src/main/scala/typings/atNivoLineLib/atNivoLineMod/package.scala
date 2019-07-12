@@ -11,4 +11,5 @@ package object atNivoLineMod {
   type LineCustomLayer = js.Function1[/* props */ LineCustomLayerProps, reactLib.reactMod.ReactNode]
   type LineValue = java.lang.String | scala.Double | stdLib.Date
   type TooltipFormatter = js.Function1[/* value */ LineValue, reactLib.reactMod.ReactNode]
+  type TooltipProp = reactLib.reactMod.FC[LineTooltipProps]
 }

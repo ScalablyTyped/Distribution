@@ -13,4 +13,10 @@ package object passportDashGoogleDashOauth20Mod {
       passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.authorizationURL | passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.tokenURL
     ]
   ]
+  type VerifyCallback = js.Function3[
+    /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
+    /* user */ js.UndefOr[js.Any], 
+    /* info */ js.UndefOr[js.Any], 
+    scala.Unit
+  ]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for podcast
 
-Typings are for version v0.1.0
+Typings are for version 1.1
 
 ## Library description:
 Podcast RSS feed generator. A really simple API to add Podcast-RSS feeds to any project.
@@ -35,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for podcast v0.1.0
+// Type definitions for podcast 1.1
 // Project: https://github.com/maxnowack/node-podcast
 // Definitions by: Niklas Mollenhauer <https://github.com/nikeee>
+//                 Malo Bourgon <https://github.com/malob>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

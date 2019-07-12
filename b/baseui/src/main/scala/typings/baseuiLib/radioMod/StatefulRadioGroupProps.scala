@@ -10,9 +10,7 @@ trait StatefulRadioGroupProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
-  ] = js.undefined
+  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement]] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
 }
 
@@ -23,7 +21,7 @@ object StatefulRadioGroupProps {
     children: reactLib.reactMod.ReactNode = null,
     initialState: State = null,
     name: java.lang.String = null,
-    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] = null,
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulRadioGroupProps = {
     val __obj = js.Dynamic.literal()
@@ -31,7 +29,7 @@ object StatefulRadioGroupProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     __obj.asInstanceOf[StatefulRadioGroupProps]
   }

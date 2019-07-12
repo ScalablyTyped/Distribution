@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TagResourceRequest extends js.Object {
   /**
-    * The ARN of the CloudWatch Events rule that you're adding tags to.
+    * The ARN of the rule that you're adding tags to.
     */
   var ResourceARN: Arn
   /**

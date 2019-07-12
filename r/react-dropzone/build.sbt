@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-dropzone"
-version := "4.2.3-dt-20190322Z-4bcde6"
+version := "10.1.5-80bce6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
+  "org.scalablytyped" %%% "file-selector" % "0.1.12-f35f10",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")

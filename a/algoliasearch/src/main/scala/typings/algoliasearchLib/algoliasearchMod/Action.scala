@@ -11,12 +11,10 @@ import scala.scalajs.js.annotation._
 trait Action extends js.Object {
   /**
     * Type of the batch action
-    * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
     */
   var action: algoliasearchLib.algoliasearchLibStrings.addObject | algoliasearchLib.algoliasearchLibStrings.updateObject | algoliasearchLib.algoliasearchLibStrings.partialUpdateObject | algoliasearchLib.algoliasearchLibStrings.partialUpdateObjectNoCreate | algoliasearchLib.algoliasearchLibStrings.deleteObject | algoliasearchLib.algoliasearchLibStrings.delete | algoliasearchLib.algoliasearchLibStrings.clear
   /**
     * Name of the index where the bact will be performed
-    * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
     */
   var indexName: java.lang.String
 }

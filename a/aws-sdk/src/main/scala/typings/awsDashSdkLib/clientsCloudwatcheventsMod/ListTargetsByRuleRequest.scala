@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ListTargetsByRuleRequest extends js.Object {
   /**
+    * The event bus associated with the rule. If you omit this, the default event bus is used.
+    */
+  var EventBusName: js.UndefOr[EventBusName] = js.undefined
+  /**
     * The maximum number of results to return.
     */
   var Limit: js.UndefOr[LimitMax100] = js.undefined
@@ -22,8 +26,14 @@ trait ListTargetsByRuleRequest extends js.Object {
 
 object ListTargetsByRuleRequest {
   @scala.inline
-  def apply(Rule: RuleName, Limit: js.UndefOr[LimitMax100] = js.undefined, NextToken: NextToken = null): ListTargetsByRuleRequest = {
+  def apply(
+    Rule: RuleName,
+    EventBusName: EventBusName = null,
+    Limit: js.UndefOr[LimitMax100] = js.undefined,
+    NextToken: NextToken = null
+  ): ListTargetsByRuleRequest = {
     val __obj = js.Dynamic.literal(Rule = Rule)
+    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
     if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListTargetsByRuleRequest]

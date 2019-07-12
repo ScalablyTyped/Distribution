@@ -40,7 +40,7 @@ trait Options[QueueType /* <: pDashQueueLib.distQueueMod.Queue[QueueOptions] */,
   val queueClass: js.UndefOr[org.scalablytyped.runtime.Instantiable0[QueueType]] = js.undefined
   /**
     Whether or not a timeout is considered an exception.
-    @default true
+    @default false
     */
   var throwOnTimeout: js.UndefOr[scala.Boolean] = js.undefined
   /**

@@ -183,6 +183,10 @@ trait GridProps[T] extends js.Object {
     */
   var rowGetter: js.Array[T] | (js.Function1[/* rowIdx */ scala.Double, T])
   /**
+    * A react component to customize how the grouping header row is rendered
+    */
+  var rowGroupRenderer: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
+  /**
     * The height of each individual row in pixels.
     * @default 35
     */
@@ -271,6 +275,7 @@ object GridProps {
     onRowSelect: /* rows */ js.Array[T] => scala.Unit = null,
     onRowUpdated: /* e */ RowUpdateEvent[T] => scala.Unit = null,
     rowActionsCell: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
+    rowGroupRenderer: reactLib.reactMod.ComponentType[js.Object] = null,
     rowHeight: scala.Int | scala.Double = null,
     rowKey: java.lang.String = null,
     rowRenderer: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
@@ -311,6 +316,7 @@ object GridProps {
     if (onRowSelect != null) __obj.updateDynamic("onRowSelect")(js.Any.fromFunction1(onRowSelect))
     if (onRowUpdated != null) __obj.updateDynamic("onRowUpdated")(js.Any.fromFunction1(onRowUpdated))
     if (rowActionsCell != null) __obj.updateDynamic("rowActionsCell")(rowActionsCell.asInstanceOf[js.Any])
+    if (rowGroupRenderer != null) __obj.updateDynamic("rowGroupRenderer")(rowGroupRenderer.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
     if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer.asInstanceOf[js.Any])

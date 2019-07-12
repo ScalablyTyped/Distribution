@@ -9,7 +9,8 @@ trait DefaultTreeDocumentFragment extends DefaultTreeParentNode {
   /**
     * The name of the node.
     */
-  var nodeName: parse5Lib.parse5LibStrings.`#document-fragment`
+  @JSName("nodeName")
+  var nodeName_DefaultTreeDocumentFragment: parse5Lib.parse5LibStrings.`#document-fragment`
 }
 
 object DefaultTreeDocumentFragment {

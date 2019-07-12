@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait OverrideObject[T] extends js.Object {
   var component: js.UndefOr[reactLib.reactMod.ComponentType[T]] = js.undefined
   var props: js.UndefOr[js.Object] = js.undefined
-  var style: js.UndefOr[StyleOverride] = js.undefined
+  var style: js.UndefOr[StyleOverride[T]] = js.undefined
 }
 
 object OverrideObject {
@@ -16,7 +16,7 @@ object OverrideObject {
   def apply[T](
     component: reactLib.reactMod.ComponentType[T] = null,
     props: js.Object = null,
-    style: StyleOverride = null
+    style: StyleOverride[T] = null
   ): OverrideObject[T] = {
     val __obj = js.Dynamic.literal()
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

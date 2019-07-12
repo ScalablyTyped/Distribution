@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dev-utils"
-version := "9.0-dt-20190506Z-1a51dc"
+version := "9.0-dt-20190506Z-267f03"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-a00acf",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-8dc4d2",
   "org.scalablytyped" %%% "webpack" % "4.4-dt-20190624Z-f83397",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190524Z-1c320e")
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190710Z-20a163")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

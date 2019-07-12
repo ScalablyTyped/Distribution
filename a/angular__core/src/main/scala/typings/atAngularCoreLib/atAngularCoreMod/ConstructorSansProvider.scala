@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConstructorSansProvider extends InjectableProvider {
   /**
-    * A list of `token`s which need to be resolved by the injector. The list of values is then
-    * used as arguments to the `useClass` constructor.
+    * A list of `token`s to be resolved by the injector.
     */
   var deps: js.UndefOr[js.Array[_]] = js.undefined
 }

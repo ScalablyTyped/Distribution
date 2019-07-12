@@ -18,7 +18,7 @@ trait Fn_LoadFn extends js.Object {
       /* props */ T, 
       js.Promise[atLoadableComponentLib.atLoadableComponentMod.DefaultComponent[T]]
     ],
-    options: atLoadableComponentLib.atLoadableComponentMod.Options
+    options: atLoadableComponentLib.atLoadableComponentMod.Options[T]
   ): atLoadableComponentLib.atLoadableComponentMod.LoadableComponent[T] = js.native
 }
 

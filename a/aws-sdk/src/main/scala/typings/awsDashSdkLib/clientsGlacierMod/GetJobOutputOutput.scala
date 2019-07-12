@@ -23,7 +23,7 @@ trait GetJobOutputOutput extends js.Object {
     */
   var checksum: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The range of bytes returned by Amazon Glacier. If only partial output is downloaded, the response provides the range of bytes Amazon Glacier returned. For example, bytes 0-1048575/8388608 returns the first 1 MB from 8 MB.
+    * The range of bytes returned by Amazon S3 Glacier. If only partial output is downloaded, the response provides the range of bytes Amazon S3 Glacier returned. For example, bytes 0-1048575/8388608 returns the first 1 MB from 8 MB.
     */
   var contentRange: js.UndefOr[java.lang.String] = js.undefined
   /**

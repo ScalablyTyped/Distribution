@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nivo__scatterplot"
-version := "0.59.1-a8e764"
+version := "0.59.2-32a22b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "nivo__axes" % "0.59.1-4a555a",
+  "org.scalablytyped" %%% "nivo__axes" % "0.59.2-4a555a",
   "org.scalablytyped" %%% "nivo__colors" % "0.59.0-f66f0a",
   "org.scalablytyped" %%% "nivo__core" % "0.59.1-f86bd4",
   "org.scalablytyped" %%% "nivo__legends" % "0.59.1-4ae99c",

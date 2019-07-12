@@ -13,7 +13,8 @@ trait DefaultTreeDocument extends DefaultTreeParentNode {
   /**
     * The name of the node.
     */
-  var nodeName: parse5Lib.parse5LibStrings.`#document`
+  @JSName("nodeName")
+  var nodeName_DefaultTreeDocument: parse5Lib.parse5LibStrings.`#document`
 }
 
 object DefaultTreeDocument {

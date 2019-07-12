@@ -17,33 +17,34 @@ trait ContentChildrenDecorator
       Query
     ] {
   /**
-    * Configures a content query.
+    * Parameter decorator that configures a content query.
     *
-    * You can use ContentChildren to get the `QueryList` of elements or directives from the
-    * content DOM. Any time a child element is added, removed, or moved, the query list will be
+    * Use to get the `QueryList` of elements or directives from the content DOM.
+    * Any time a child element is added, removed, or moved, the query list will be
     * updated, and the changes observable of the query list will emit a new value.
     *
     * Content queries are set before the `ngAfterContentInit` callback is called.
     *
     * **Metadata Properties**:
     *
-    * * **selector** - the directive type or the name used for querying.
-    * * **descendants** - include only direct children or all descendants.
-    * * **read** - read a different token from the queried elements.
+    * * **selector** - The directive type or the name used for querying.
+    * * **descendants** - True to include all descendants, otherwise include only direct children.
+    * * **read** - True to read a different token from the queried elements.
     *
     * @usageNotes
-    * ### Basic Example
     *
     * Here is a simple demonstration of how the `ContentChildren` decorator can be used.
     *
-    * {@example core/di/ts/contentChildren/content_children_howto.ts region='HowTo'}
+    * {@example core/di/ts/contentChildren/content_children_howto.ts region='HowTo'
+    * linenums="false"}
     *
-    * ### Tab-pane Example
+    * ### Tab-pane example
     *
     * Here is a slightly more realistic example that shows how `ContentChildren` decorators
     * can be used to implement a tab pane component.
     *
-    * {@example core/di/ts/contentChildren/content_children_example.ts region='Component'}
+    * {@example core/di/ts/contentChildren/content_children_example.ts region='Component'
+    * linenums="false"}
     *
     * @Annotation
     */

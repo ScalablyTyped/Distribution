@@ -364,7 +364,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2015-10-07`
-    extends awsDashSdkLib.clientsCloudwatcheventsMod._apiVersion
+    extends awsDashSdkLib.clientsEventbridgeMod._apiVersion
+       with awsDashSdkLib.clientsCloudwatcheventsMod._apiVersion
   
   @js.native
   sealed trait `2015-11-01`
@@ -1040,6 +1041,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._DomainStatusType
        with awsDashSdkLib.clientsIotMod._DynamicGroupStatus
        with awsDashSdkLib.clientsXrayMod._EncryptionStatus
+       with awsDashSdkLib.clientsEventbridgeMod._EventSourceState
+       with awsDashSdkLib.clientsCloudwatcheventsMod._EventSourceState
        with awsDashSdkLib.clientsWorklinkMod._FleetStatus
        with awsDashSdkLib.clientsGameliftMod._FleetStatus
        with awsDashSdkLib.clientsGameliftMod._GameSessionStatus
@@ -5933,6 +5936,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsClouddirectoryMod._DirectoryState
        with awsDashSdkLib.clientsWorkmailMod._EntityState
        with awsDashSdkLib.clientsMachinelearningMod._EntityStatus
+       with awsDashSdkLib.clientsEventbridgeMod._EventSourceState
+       with awsDashSdkLib.clientsCloudwatcheventsMod._EventSourceState
        with awsDashSdkLib.clientsWorklinkMod._FleetStatus
        with awsDashSdkLib.clientsCloudhsmv2Mod._HsmState
        with awsDashSdkLib.clientsMedialiveMod._InputSecurityGroupState
@@ -6359,6 +6364,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._AccelerationMode
        with awsDashSdkLib.clientsServicecatalogMod._AccessStatus
        with awsDashSdkLib.clientsMediaconvertMod._AntiAlias
+       with awsDashSdkLib.clientsEventbridgeMod._AssignPublicIp
        with awsDashSdkLib.clientsEcsMod._AssignPublicIp
        with awsDashSdkLib.clientsCloudwatcheventsMod._AssignPublicIp
        with awsDashSdkLib.clientsShieldMod._AutoRenew
@@ -6447,6 +6453,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._PointInTimeRecoveryStatus
        with awsDashSdkLib.clientsMediaconvertMod._ProresSlowPal
        with awsDashSdkLib.clientsWorkspacesMod._ReconnectEnum
+       with awsDashSdkLib.clientsEventbridgeMod._RuleState
        with awsDashSdkLib.clientsCloudwatcheventsMod._RuleState
        with awsDashSdkLib.clientsGlueMod._S3EncryptionMode
        with awsDashSdkLib.clientsDynamodbMod._SSEStatus
@@ -7305,6 +7312,7 @@ object awsDashSdkLibStrings {
   sealed trait EC2
     extends awsDashSdkLib.clientsBatchMod._CRType
        with awsDashSdkLib.clientsEcsMod._Compatibility
+       with awsDashSdkLib.clientsEventbridgeMod._LaunchType
        with awsDashSdkLib.clientsEcsMod._LaunchType
        with awsDashSdkLib.clientsCloudwatcheventsMod._LaunchType
   
@@ -7513,6 +7521,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._AccelerationMode
        with awsDashSdkLib.clientsServicecatalogMod._AccessStatus
        with awsDashSdkLib.clientsMediaconvertMod._AntiAlias
+       with awsDashSdkLib.clientsEventbridgeMod._AssignPublicIp
        with awsDashSdkLib.clientsEcsMod._AssignPublicIp
        with awsDashSdkLib.clientsCloudwatcheventsMod._AssignPublicIp
        with awsDashSdkLib.clientsShieldMod._AutoRenew
@@ -7590,6 +7599,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsOrganizationsMod._PolicyTypeStatus
        with awsDashSdkLib.clientsMediaconvertMod._ProresSlowPal
        with awsDashSdkLib.clientsWorkspacesMod._ReconnectEnum
+       with awsDashSdkLib.clientsEventbridgeMod._RuleState
        with awsDashSdkLib.clientsCloudwatcheventsMod._RuleState
        with awsDashSdkLib.clientsDynamodbMod._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
@@ -8471,6 +8481,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FARGATE
     extends awsDashSdkLib.clientsEcsMod._Compatibility
+       with awsDashSdkLib.clientsEventbridgeMod._LaunchType
        with awsDashSdkLib.clientsEcsMod._LaunchType
        with awsDashSdkLib.clientsCloudwatcheventsMod._LaunchType
   
@@ -15393,6 +15404,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAlexaforbusinessMod._EnablementTypeFilter
        with awsDashSdkLib.clientsAlexaforbusinessMod._EnrollmentStatus
        with awsDashSdkLib.clientsMachinelearningMod._EntityStatus
+       with awsDashSdkLib.clientsEventbridgeMod._EventSourceState
+       with awsDashSdkLib.clientsCloudwatcheventsMod._EventSourceState
        with awsDashSdkLib.clientsDevicefarmMod._ExecutionResult
        with awsDashSdkLib.clientsDevicefarmMod._ExecutionStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
@@ -25854,6 +25867,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCloudtrailMod._apiVersion
        with awsDashSdkLib.clientsCloudsearchMod._apiVersion
        with awsDashSdkLib.clientsFmsMod._apiVersion
+       with awsDashSdkLib.clientsEventbridgeMod._apiVersion
        with awsDashSdkLib.clientsMediapackageMod._apiVersion
        with awsDashSdkLib.clientsPinpointemailMod._apiVersion
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod._apiVersion

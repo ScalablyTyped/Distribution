@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SelfDecorator
   extends org.scalablytyped.runtime.Instantiable0[Self] {
   /**
-    * A parameter decorator to be used on constructor parameters,
+    * Parameter decorator to be used on constructor parameters,
     * which tells the DI framework to start dependency resolution from the local injector.
     *
     * Resolution works upward through the injector hierarchy, so the children
@@ -21,7 +21,8 @@ trait SelfDecorator
     * by the local injector when instantiating the class itself, but not
     * when instantiating a child.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Self"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Self"
+    *  linenums="false"></code-example>
     *
     *
     * @see `SkipSelf`

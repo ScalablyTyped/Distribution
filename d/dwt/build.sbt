@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dwt"
-version := "15.0-dt-20190628Z-cad737"
+version := "15.0-dt-20190711Z-f80dfb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

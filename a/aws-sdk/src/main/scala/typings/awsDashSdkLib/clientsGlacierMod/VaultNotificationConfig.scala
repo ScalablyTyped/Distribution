@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait VaultNotificationConfig extends js.Object {
   /**
-    * A list of one or more events for which Amazon Glacier will send a notification to the specified Amazon SNS topic.
+    * A list of one or more events for which Amazon S3 Glacier will send a notification to the specified Amazon SNS topic.
     */
   var Events: js.UndefOr[NotificationEventList] = js.undefined
   /**

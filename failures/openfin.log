@@ -6,8 +6,8 @@
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
-[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript, file => ../api/events/emitterMap.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript, file => ../_v2/transport/transport.d.ts] 
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
@@ -35,6 +35,7 @@
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript, file => ../_v2/api/fin.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
@@ -95,6 +96,8 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, application, applicationOption)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/base.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, base))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, base)) [id => openfin, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/browserview/browserview.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, browserview, browserview))) [id => openfin, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, browserview, browserview)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/clipboard/clipboard.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, clipboard, clipboard))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, clipboard, clipboard)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/clipboard/write-request.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, clipboard, write-request))) [id => openfin, phase => typescript] 
@@ -305,6 +308,7 @@
 [info ] InlineConstEnum.scala:21 Inlining const enum type openfin.openfin/_v2/api/global-hotkey.nonHotkeyEvents.UNREGISTERED => 'unregistered' [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/globalHotkey) / TsDeclInterface(GlobalHotkeyEvents) / TsMemberIndex() / TsTypeRef() / TsTypeRef())] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/external-process) / TsDeclInterface(LaunchExternalProcessListener))] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibrarySimple(openfin), TsIdentModule(None,List(openfin, _v2, api, window, windowOption)), TsIdentSimple(WindowOption))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/windowOption) / TsDeclTypeAlias(WindowOptionDiff) / TsTypeObject() / TsMemberTypeMapped() / TsTypeKeyOf())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclInterface(BrowserViewCreationOptions) / TsMemberProperty(bounds) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Html) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/clipboard/write-request) / TsDeclInterface(WriteAnyRequestType) / TsMemberProperty(data) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Host) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsDeclInterface(WindowAuthRequestedEvent) / TsMemberProperty(authInfo) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AppUuid) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsDeclInterface(WindowGroupChanged) / TsMemberProperty(sourceGroup) / TsTypeRef() / TsTypeObject())] 
@@ -416,9 +420,9 @@
 [E]       not found: type Type
 [E]       L10:   type SystemEvents = openfinLib.underscoreV2ApiEventsWindowMod.PropagatedWindowEvents[openfinLib.openfinLibStrings.system] with openfinLib.underscoreV2ApiEventsApplicationMod.PropagatedApplicationEvents[openfinLib.openfinLibStrings.system] with openfinLib.openfinLibStrings.SystemEvents with (SystemEventMapping[openfinLib.openfinLibStrings.system, Type])
 [E]                                                                                                                                                                                                                                                                                                                                                                          ^
-[E] [E10] src/main/scala/typings/openfinLib/underscoreV2ApiEventsExternalWindowMod/package.scala:11:139
+[E] [E10] src/main/scala/typings/openfinLib/underscoreV2ApiEventsExternalWindowMod/package.scala:15:139
 [E]       not found: type Type
-[E]       L11:     */ openfinLib.openfinLibStrings.ExternalWindowEvents with (ExternalWindowEventMapping[openfinLib.openfinLibStrings.`external-window`, Type])
+[E]       L15:     */ openfinLib.openfinLibStrings.ExternalWindowEvents with (ExternalWindowEventMapping[openfinLib.openfinLibStrings.`external-window`, Type])
 [E]                                                                                                                                                      ^
 [E] [E9] src/main/scala/typings/openfinLib/underscoreV2ApiEventsApplicationMod/package.scala:12:112
 [E]      not found: type Type
@@ -466,7 +470,7 @@
 [E] src/main/scala/typings/openfinLib/underscoreV2ApiBaseMod/EmitterBase.scala: L69 [E8], L74 [E7], L75 [E6], L304 [E5], L305 [E4], L309 [E3]
 [E] src/main/scala/typings/openfinLib/underscoreV2ApiEventsWindowMod/package.scala: L11 [E1], L15 [E12]
 [E] src/main/scala/typings/openfinLib/underscoreV2ApiEventsSystemMod/package.scala: L10 [E11]
-[E] src/main/scala/typings/openfinLib/underscoreV2ApiEventsExternalWindowMod/package.scala: L11 [E10]
+[E] src/main/scala/typings/openfinLib/underscoreV2ApiEventsExternalWindowMod/package.scala: L15 [E10]
 [E] Failed to compile 'openfin'
  [id => openfin, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 

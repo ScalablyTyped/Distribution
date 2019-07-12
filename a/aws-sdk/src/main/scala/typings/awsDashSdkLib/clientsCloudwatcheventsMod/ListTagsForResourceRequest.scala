@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListTagsForResourceRequest extends js.Object {
   /**
-    * The ARN of the CloudWatch Events rule for which you want to view tags.
+    * The ARN of the rule for which you want to view tags.
     */
   var ResourceARN: Arn
 }

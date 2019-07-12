@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jspdf"
-version := "1.3-dt-20190405Z-9985d9"
+version := "1.3-dt-20190711Z-b83274"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

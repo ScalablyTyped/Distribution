@@ -15,6 +15,7 @@ trait ValidatedResponse[T] extends js.Object {
   var message: java.lang.String
   var params: stdLib.Record[java.lang.String, _]
   var paymentMethod: PaymentMethod
+  var paymentMethodNonce: PaymentMethodNonce
   var settlementBatchSumary: SettlementBatchSummary
   var subscription: Subscription
   var success: scala.Boolean
@@ -35,12 +36,13 @@ object ValidatedResponse {
     message: java.lang.String,
     params: stdLib.Record[java.lang.String, _],
     paymentMethod: PaymentMethod,
+    paymentMethodNonce: PaymentMethodNonce,
     settlementBatchSumary: SettlementBatchSummary,
     subscription: Subscription,
     success: scala.Boolean,
     transaction: Transaction
   ): ValidatedResponse[T] = {
-    val __obj = js.Dynamic.literal(address = address, clientToken = clientToken, creditCard = creditCard, customer = customer, dispute = dispute, errors = js.Any.fromFunction0(errors), merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
+    val __obj = js.Dynamic.literal(address = address, clientToken = clientToken, creditCard = creditCard, customer = customer, dispute = dispute, errors = js.Any.fromFunction0(errors), merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, paymentMethodNonce = paymentMethodNonce, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
   
     __obj.asInstanceOf[ValidatedResponse[T]]
   }

@@ -82,6 +82,7 @@
 | [ali-app](./a/ali-app) | ali npm | npm, ali |
 | [ali-oss](./a/ali-oss) | aliyun oss(object storage service) node client | oss, client, file, aliyun |
 | [align-text](./a/align-text) | Align the text in a string. | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
+| [alks-node](./a/alks-node) | Node client for ALKS | alks |
 | [all-keys](./a/all-keys) | Get all property keys of an object including non-e | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
 | [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd | npm, registry, packages, names, list, words, filter, search, offline |
 | [allure-js-commons](./a/allure-js-commons) | Common helper for writing plugins to allure-framew | - |
@@ -1135,7 +1136,9 @@
 | [datatables_dot_net-autofi](./d/datatables_dot_net-autofill) | AutoFill for DataTables | autofill, excel, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-button](./d/datatables_dot_net-buttons) | Buttons for DataTables | buttons, excel, pdf, csv, column visibility, print, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-colreo](./d/datatables_dot_net-colreorder) | ColReorder for DataTables | reorder, DataTables, jQuery, table, DataTables |
+| [datatables_dot_net-fixedc](./d/datatables_dot_net-fixedcolumns) | FixedColumns for DataTables | fixed columns, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-fixedh](./d/datatables_dot_net-fixedheader) | FixedHeader for DataTables | fixed headers, sticky, DataTables, jQuery, table, DataTables |
+| [datatables_dot_net-keytab](./d/datatables_dot_net-keytable) | KeyTable for DataTables | spreadsheet, excel, keyboard, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables | row grouping, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-rowreo](./d/datatables_dot_net-rowreorder) | RowReorder for DataTables | row reordering, DataTables, jQuery, table, DataTables |
 | [datatables_dot_net-scroll](./d/datatables_dot_net-scroller) | Scroller for DataTables | virtual scrolling, DataTables, jQuery, table, DataTables |
@@ -1333,6 +1336,7 @@
 | [dts-bundle](./d/dts-bundle) | Export TypeScript .d.ts files as an external modul | typescript, definition, bundle, export, d.ts |
 | [dts-dom](./d/dts-dom) | DOM for TypeScript Declaration Files | - |
 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co | - |
+| [duckduckgo-images-api](./d/duckduckgo-images-api) | DuckDuckGo image-search api for node | node, javascript, duckduckgo, image, image-search, api |
 | [duplexer2](./d/duplexer2) | Like duplexer but using streams3 | duplex, duplexer, stream, stream3, join, combine |
 | [duplexer3](./d/duplexer3) | Like duplexer but using streams3 | duplex, duplexer, stream, stream3, join, combine |
 | [duplexify](./d/duplexify) | Turn a writable and readable stream into a streams | duplex, streams2, streams, stream, writable, readable, async |
@@ -1656,7 +1660,6 @@
 | [falcor-express](./f/falcor-express) | A falcor server for express. | - |
 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in | Falcor, Browser |
 | [falcor-json-graph](./f/falcor-json-graph) | A set of factory functions for creating JSON Graph | falcorjs, Observable, JSON, JSON Graph |
-| [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al | Falcor, Router, Netflix, falcorjs |
 | [famous](./f/famous) | Famous Engine ================= | - |
 | [fancy-log](./f/fancy-log) | Log things, prefixed with a timestamp. | console.log, log, logger, logging, pretty, timestamp |
 | [fancybox](./f/fancybox) | fancyBox is a tool that offers a nice and elegant  | fancybox, fancy, box, lightbox |
@@ -1721,6 +1724,7 @@
 | [figures](./f/figures) | Unicode symbols with Windows CMD fallbacks | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback |
 | [file-exists](./f/file-exists) | Check if filepath exists and is a file | file, exists, fs, isfile, is-file |
 | [file-saver](./f/file-saver) | An HTML5 saveAs() FileSaver implementation | filesaver, saveas, blob |
+| [file-selector](./f/file-selector) | Convert DataTransfer object to a list of File obje | drag-and-drop, html5, file-api, DataTransfer, File |
 | [file-type](./f/file-type) | Detect the file type of a Buffer/Uint8Array/ArrayB | mime, file, type, archive, image, img, pic, picture, flash, photo, video, detect, check, is, exif, exe, binary, buffer, uint8array, jpg, png, gif, webp, flif, cr2, tif, bmp, jxr, psd, zip, tar, rar, gz, bz2, 7z, dmg, mp4, m4v, mid, mkv, webm, mov, avi, mpg, mp2, mp3, m4a, ogg, opus, flac, wav, amr, pdf, epub, mobi, swf, rtf, woff, woff2, eot, ttf, otf, ico, flv, ps, xz, sqlite, xpi, cab, deb, ar, rpm, Z, lz, msi, mxf, mts, wasm, webassembly, blend, bpg, docx, pptx, xlsx, 3gp, jp2, jpm, jpx, mj2, aif, odt, ods, odp, xml, heic, wma, ics, glb, pcap |
 | [file-uri-to-path](./f/file-uri-to-path) | Convert a file: URI to a file path | file, uri, convert, path |
 | [file-url](./f/file-url) | Convert a file path to a file url: unicorn.jpg → f | file, url, uri, path, scheme, slash |
@@ -2092,6 +2096,7 @@
 | [gfc](./g/gfc) | Simple way to initialize a new git repository in a | add, commit, first, first-commit, git, git-add, git-commit, git-init, init |
 | [gh-pages](./g/gh-pages) | Publish to a gh-pages branch on GitHub (or any oth | git, gh-pages, github |
 | [ghauth](./g/ghauth) | Create and load persistent GitHub authentication t | github, auth, frozenpizza |
+| [ghost-storage-base](./g/ghost-storage-base) | Base storage adapter. | ghost, storage, adapter |
 | [gifffer](./g/gifffer) | JavaScript library that prevents the autoplaying o | gif, player |
 | [gijgo](./g/gijgo) | Gijgo is a set of free open source javascript cont | jquery-plugin, jquery, gijgo, javascript, plugin, grid, datagrid, table, dialog, modal, draggable, droppable, tree, treeview, editor, wysiwyg, checkbox, datepicker, timepicker, datetimepicker, dropdown, slider, angular, bootstrap |
 | [giphy-api](./g/giphy-api) | JavaScript module for the giphy.com API that suppo | giphy, gif, api |
@@ -3076,6 +3081,7 @@
 | [jspdf](./j/jspdf) | PDF Document creation from JavaScript | pdf |
 | [jsplumb](./j/jsplumb) | Visual connectivity for webapps | javascript, svg, visual, connectivity |
 | [jsqrcode](./j/jsqrcode) | a node port of Lazar Laszlo's jsqrcode qr code dec | qr, code, qrcode, jsqrcode, decode, decoder, read, reader |
+| [jsqubits](./j/jsqubits) | Quantum computation simulation JavaScript library | quantum |
 | [jsrender](./j/jsrender) | Best-of-breed templating in browser or on Node.js  | jsrender, node, express, hapi, browserify, templates, template, jquery-plugin, ecosystem:jquery |
 | [jsreport-core](./j/jsreport-core) | javascript based business reporting | report, business, javascript |
 | [jsreport-html-embedded-in](./j/jsreport-html-embedded-in-docx) | jsreport recipe embedding output html into the doc | jsreport, docx |
@@ -3207,6 +3213,7 @@
 | [koa-convert](./k/koa-convert) | convert koa legacy generator-based middleware to p | koa, middleware, convert |
 | [koa-cors](./k/koa-cors) | CORS middleware for Koa | cors, koa, koajs |
 | [koa-csrf](./k/koa-csrf) | CSRF tokens for Koa | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
+| [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh | koa, router, decorator, es6, es7, koa-router |
 | [koa-etag](./k/koa-etag) | ETag support for koa | koa, middleware, cache, caching, etag, file, static, sendfile |
 | [koa-favicon](./k/koa-favicon) | favicon bounce middleware for koa | koa, middleware, favicon |
 | [koa-generic-session](./k/koa-generic-session) | koa generic session store by memory, redis or othe | koa, middleware, session |
@@ -3336,6 +3343,7 @@
 | [leven](./l/leven) | Measure the difference between two strings using t | leven, levenshtein, distance, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
 | [levenshtein](./l/levenshtein) | Javascript implementation of the L-diggity. | - |
 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq | postgres, libpq |
+| [libra-core](./l/libra-core) | Library for Crypto | libra, library, crypto, facebook |
 | [libsodium-wrappers](./l/libsodium-wrappers) | The Sodium cryptographic library compiled to pure  | crypto, sodium, libsodium, nacl, chacha20, poly1305, curve25519, ed25519, blake2, siphash, argon2, ecc |
 | [libsodium-wrappers-sumo](./l/libsodium-wrappers-sumo) | The Sodium cryptographic library compiled to pure  | crypto, sodium, libsodium, nacl, chacha20, poly1305, curve25519, ed25519, blake2, siphash, argon2, ecc |
 | [libxmljs](./l/libxmljs) | libxml bindings for v8 javascript engine | - |
@@ -3351,6 +3359,7 @@
 | [line-column-path](./l/line-column-path) | Parse and stringify file paths with line and colum | file, filepath, line, column, path, editor, position, parse, stringify, parsing, decode, encode, format |
 | [line-reader](./l/line-reader) | Asynchronous, buffered, line-by-line file/stream r | file, line, reader, scanner |
 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o | - |
+| [lines-and-columns](./l/lines-and-columns) | Maps lines and columns to character offsets and ba | lines, columns, parser |
 | [lingui__core](./l/lingui__core) | I18n tools for javascript | i18n, i10n, i9n, internationalization, localization, translation |
 | [lingui__macro](./l/lingui__macro) | Macro for generating messages in ICU MessageFormat | babel-plugin-macros |
 | [lingui__react](./l/lingui__react) | React components for translations | react, component, i18n, internationalization, i9n, translation, icu, messageformat |
@@ -5852,6 +5861,7 @@
 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment. | react |
 | [scheduler](./s/scheduler) | Cooperative scheduler for the browser environment. | react |
 | [schema-registry](./s/schema-registry) | json & avro schema registry | schema, registry, avro, json, rest, kafka, living, version, etl, avsc, ajv, format, type |
+| [schema-utils](./s/schema-utils) | webpack Validation Utils | - |
 | [schwifty](./s/schwifty) | A hapi plugin integrating Objection ORM | hapi, plugin, objection, database, orm |
 | [scoped-http-client](./s/scoped-http-client) | http client request wrapper | - |
 | [scoped-regex](./s/scoped-regex) | Regular expression for matching scoped npm package | scoped, npm, package, name, regex, regexp, regular, expression |
@@ -5941,6 +5951,7 @@
 | [server](./s/server) | A modern and powerful server for Node.js | - |
 | [server-destroy](./s/server-destroy) | Enable destroying a server, and all currently open | - |
 | [serverless](./s/serverless) | Serverless Framework - Build web, mobile and IoT a | serverless, serverless framework, serverless applications, serverless modules, api gateway, lambda, aws, aws lambda, amazon, amazon web services, azure, azure functions, google cloud functions, apache open whisk, iot, internet of things, serverless.com |
+| [service-worker-mock](./s/service-worker-mock) | Service Worker Mock ========================= A mo | service-workers, service, workers, testing, mock |
 | [servicenow](./s/servicenow) | Wrapper library to ServiceNow's JSON/REST plugin | - |
 | [servicenow-london](./s/servicenow-london) | - | - |
 | [session-file-store](./s/session-file-store) | Session file store is a provision for storing sess | session, file, store, express, connect |
@@ -6311,6 +6322,7 @@
 | [subtitle](./s/subtitle) | Parse and manipulate SRT (SubRip) | subtitle, webvtt, srt, captions, subrip, parser, stringify |
 | [succinct](./s/succinct) | - | - |
 | [sudo-block](./s/sudo-block) | Block users from running your app with root permis | sudo, root, user, permissions, uid, block, prevent, stop |
+| [sudokus](./s/sudokus) | A JavaScript utility to solve sudokus. | sudoku, puzzle, solver |
 | [sugar](./s/sugar) | A Javascript utility library for working with nati | sugar, sugarjs, functional, browser, utility, util, date, time, polyfill |
 | [sugar-core](./s/sugar-core) | Core module for the Sugar Javascript utility libra | sugar, sugarjs, functional, browser, utility, util |
 | [suitescript](./s/suitescript) | - | - |
@@ -6478,6 +6490,7 @@
 | [timer-machine](./t/timer-machine) | A lightweight, pause-able timer class | timer, time, pause, stopwatch |
 | [timezone-js](./t/timezone-js) | JavaScript timezone library based on Olson timezon | - |
 | [timezonecomplete](./t/timezonecomplete) | DateTime, TimeZone, Duration and Period library ai | Date, time zone, timezone, period, duration, timezonejs, date arithmetic, date math |
+| [timezoned-date](./t/timezoned-date) | Constructors and objects behave exactly like built | date, isomorphic, jsdom, mock, monkeypatch, server-side-rendering, timezone, tz, utc |
 | [timing-safe-equal](./t/timing-safe-equal) | timing safe equals, but for the browser | timing |
 | [timm](./t/timm) | Immutability helpers with fast reads and acceptabl | immutability |
 | [timsort](./t/timsort) | TimSort: Fast Sorting for Node.js | sort, compare, TimSort, algorithm, python, performance |
@@ -6988,15 +7001,19 @@
 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests. | wordpress, rest-api, fetch |
 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an | wordpress, autop |
 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress. | wordpress, blob |
+| [wordpress__block-library](./w/wordpress__block-library) | Block library for the WordPress editor. | wordpress, blocks |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP | wordpress, block, parser |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t | wordpress, webpack, webpack-plugin |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
+| [wordpress__date](./w/wordpress__date) | Date module for WordPress. | wordpress, date |
 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack | wordpress, webpack, dependency |
+| [wordpress__deprecated](./w/wordpress__deprecated) | Deprecation utility for WordPress. | wordpress, deprecated |
 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress. | wordpress, dom, utils |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
+| [wordpress__escape-html](./w/wordpress__escape-html) | Escape HTML utils. | wordpress |
 | [wordpress__hooks](./w/wordpress__hooks) | WordPress hooks library. | wordpress, hooks |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
@@ -7004,9 +7021,15 @@
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
 | [wordpress__notices](./w/wordpress__notices) | State management for notices. | wordpress, notices |
+| [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress. | wordpress, nux |
+| [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue. | wordpress, browser, async |
+| [wordpress__redux-routine](./w/wordpress__redux-routine) | Redux middleware for generator coroutines. | wordpress, redux, middleware, coroutine |
 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API. | wordpress, rich-text |
 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress. | wordpress, shortcode |
+| [wordpress__token-list](./w/wordpress__token-list) | Constructable, plain JavaScript DOMTokenList imple | domtokenlist |
 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |
+| [wordpress__viewport](./w/wordpress__viewport) | Viewport module for WordPress. | wordpress, viewport |
+| [wordpress__wordcount](./w/wordpress__wordcount) | WordPress word count utility. | wordpress, wordcount |
 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz | - |
 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta | word, wrap, rule, format, column |
 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the  | workbox, workboxjs, service worker, sw |

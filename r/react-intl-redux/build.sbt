@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20190322Z-67cf6c"
+version := "v0.1.0-dt-20190322Z-2095b0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "react-intl" % "2.3-dt-20190604Z-ceaf9d",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190627Z-b4c18e",
-  "org.scalablytyped" %%% "redux" % "4.0.3-d7698e",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190627Z-6cc120",
+  "org.scalablytyped" %%% "redux" % "4.0.4-d7698e",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

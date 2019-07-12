@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-signalr-hub"
-version := "v1.5.0-dt-20190322Z-56ba25"
+version := "v1.5.0-dt-20190322Z-6b9767"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190624Z-b9b940",
-  "org.scalablytyped" %%% "signalr" % "2.2.0-dt-20190322Z-69ca43",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190711Z-b9b940",
+  "org.scalablytyped" %%% "signalr" % "2.2.0-dt-20190322Z-98a0ca",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-c53ffb",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

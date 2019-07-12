@@ -14,6 +14,7 @@ trait ExecuteProvisionedProductServiceActionInput extends js.Object {
     * An idempotency token that uniquely identifies the execute request.
     */
   var ExecuteToken: IdempotencyToken
+  var Parameters: js.UndefOr[ExecutionParameterMap] = js.undefined
   /**
     * The identifier of the provisioned product.
     */
@@ -30,10 +31,12 @@ object ExecuteProvisionedProductServiceActionInput {
     ExecuteToken: IdempotencyToken,
     ProvisionedProductId: Id,
     ServiceActionId: Id,
-    AcceptLanguage: AcceptLanguage = null
+    AcceptLanguage: AcceptLanguage = null,
+    Parameters: ExecutionParameterMap = null
   ): ExecuteProvisionedProductServiceActionInput = {
     val __obj = js.Dynamic.literal(ExecuteToken = ExecuteToken, ProvisionedProductId = ProvisionedProductId, ServiceActionId = ServiceActionId)
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
+    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     __obj.asInstanceOf[ExecuteProvisionedProductServiceActionInput]
   }
 }

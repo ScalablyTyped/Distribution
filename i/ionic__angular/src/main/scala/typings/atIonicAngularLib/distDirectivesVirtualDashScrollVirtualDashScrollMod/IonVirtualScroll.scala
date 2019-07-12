@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/directives/virtual-scroll/virtual-scroll", "IonVirtualScroll")
 @js.native
 class IonVirtualScroll protected () extends js.Object {
-  def this(zone: atAngularCoreLib.atAngularCoreMod.NgZone, iterableDiffers: atAngularCoreLib.atAngularCoreMod.IterableDiffers, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(z: atAngularCoreLib.atAngularCoreMod.NgZone, iterableDiffers: atAngularCoreLib.atAngularCoreMod.IterableDiffers, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   /**
     * The approximate width of each footer template's cell.
     * This dimension is used to help determine how many cells should
@@ -96,7 +96,7 @@ class IonVirtualScroll protected () extends js.Object {
     */
   @JSName("trackBy")
   var trackBy_Original: atAngularCoreLib.atAngularCoreMod.TrackByFunction[_] = js.native
-  var zone: js.Any = js.native
+  var z: js.Any = js.native
   /**
     * This method marks the tail the items array as dirty, so they can be re-rendered.  It's equivalent to calling:  ```js    * virtualScroll.checkRange(lastItemLen, items.length - lastItemLen);    * ```
     */

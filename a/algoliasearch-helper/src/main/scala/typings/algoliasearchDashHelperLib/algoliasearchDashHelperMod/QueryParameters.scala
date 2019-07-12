@@ -209,6 +209,7 @@ object QueryParameters {
     replaceSynonymsInHighlight: js.UndefOr[scala.Boolean] = js.undefined,
     restrictHighlightAndSnippetArrays: js.UndefOr[scala.Boolean] = js.undefined,
     restrictSearchableAttributes: js.Array[java.lang.String] = null,
+    ruleContexts: js.Array[java.lang.String] = null,
     snippetEllipsisText: java.lang.String = null,
     sortFacetValuesBy: algoliasearchLib.algoliasearchLibStrings.count | algoliasearchLib.algoliasearchLibStrings.alpha = null,
     synonyms: js.UndefOr[scala.Boolean] = js.undefined,
@@ -277,6 +278,7 @@ object QueryParameters {
     if (!js.isUndefined(replaceSynonymsInHighlight)) __obj.updateDynamic("replaceSynonymsInHighlight")(replaceSynonymsInHighlight)
     if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays)
     if (restrictSearchableAttributes != null) __obj.updateDynamic("restrictSearchableAttributes")(restrictSearchableAttributes)
+    if (ruleContexts != null) __obj.updateDynamic("ruleContexts")(ruleContexts)
     if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText)
     if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
     if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms)

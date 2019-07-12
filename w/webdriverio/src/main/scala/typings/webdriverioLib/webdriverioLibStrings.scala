@@ -22,10 +22,16 @@ object webdriverioLibStrings {
   sealed trait addCommand extends js.Object
   
   @js.native
+  sealed trait elementId extends js.Object
+  
+  @js.native
   sealed trait options extends js.Object
   
   @js.native
   sealed trait overwriteCommand extends js.Object
+  
+  @js.native
+  sealed trait selector extends js.Object
   
   @scala.inline
   def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]
@@ -38,8 +44,12 @@ object webdriverioLibStrings {
   @scala.inline
   def addCommand: addCommand = "addCommand".asInstanceOf[addCommand]
   @scala.inline
+  def elementId: elementId = "elementId".asInstanceOf[elementId]
+  @scala.inline
   def options: options = "options".asInstanceOf[options]
   @scala.inline
   def overwriteCommand: overwriteCommand = "overwriteCommand".asInstanceOf[overwriteCommand]
+  @scala.inline
+  def selector: selector = "selector".asInstanceOf[selector]
 }
 

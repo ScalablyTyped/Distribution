@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object webappsecDashCredentialDashManagementLibStrings {
   @js.native
-  sealed trait ble extends AuthenticatorTransport
+  sealed trait ble extends js.Object
   
   @js.native
-  sealed trait `cross-platform` extends AuthenticatorAttachment
+  sealed trait `cross-platform` extends js.Object
   
   @js.native
-  sealed trait direct extends AttestationConveyancePreference
+  sealed trait direct extends js.Object
   
   @js.native
-  sealed trait discouraged extends UserVerificationRequirement
+  sealed trait discouraged extends js.Object
   
   @js.native
   sealed trait federated extends js.Object
   
   @js.native
-  sealed trait indirect extends AttestationConveyancePreference
+  sealed trait indirect extends js.Object
   
   @js.native
-  sealed trait internal extends AuthenticatorTransport
+  sealed trait internal extends js.Object
   
   @js.native
-  sealed trait nfc extends AuthenticatorTransport
+  sealed trait nfc extends js.Object
   
   @js.native
-  sealed trait none extends AttestationConveyancePreference
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait optional extends js.Object
@@ -40,22 +40,22 @@ object webappsecDashCredentialDashManagementLibStrings {
   sealed trait password extends js.Object
   
   @js.native
-  sealed trait platform extends AuthenticatorAttachment
+  sealed trait platform extends js.Object
   
   @js.native
-  sealed trait preferred extends UserVerificationRequirement
+  sealed trait preferred extends js.Object
   
   @js.native
   sealed trait `public-key` extends js.Object
   
   @js.native
-  sealed trait required extends UserVerificationRequirement
+  sealed trait required extends js.Object
   
   @js.native
   sealed trait silent extends js.Object
   
   @js.native
-  sealed trait usb extends AuthenticatorTransport
+  sealed trait usb extends js.Object
   
   @scala.inline
   def ble: ble = "ble".asInstanceOf[ble]

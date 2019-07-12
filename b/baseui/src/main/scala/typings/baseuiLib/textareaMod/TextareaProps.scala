@@ -23,12 +23,12 @@ object TextareaProps {
     id: java.lang.String = null,
     inputRef: reactLib.reactMod.Ref[stdLib.HTMLTextAreaElement] = null,
     name: java.lang.String = null,
-    onBlur: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
-    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
-    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
-    onKeyDown: /* e */ reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
-    onKeyPress: /* e */ reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
-    onKeyUp: /* e */ reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] => _ = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] = null,
     overrides: baseuiLib.inputMod.BaseInputOverrides = null,
     placeholder: java.lang.String = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,12 +51,12 @@ object TextareaProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)

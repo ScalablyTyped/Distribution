@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UploadMultipartPartOutput extends js.Object {
   /**
-    * The SHA256 tree hash that Amazon Glacier computed for the uploaded part.
+    * The SHA256 tree hash that Amazon S3 Glacier computed for the uploaded part.
     */
   var checksum: js.UndefOr[java.lang.String] = js.undefined
 }

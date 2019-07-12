@@ -76,6 +76,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var elbv2: js.UndefOr[awsDashSdkLib.clientsElbv2Mod.apiVersion] = js.undefined
   var emr: js.UndefOr[awsDashSdkLib.clientsEmrMod.apiVersion] = js.undefined
   var es: js.UndefOr[awsDashSdkLib.clientsEsMod.apiVersion] = js.undefined
+  var eventbridge: js.UndefOr[awsDashSdkLib.clientsEventbridgeMod.apiVersion] = js.undefined
   var firehose: js.UndefOr[awsDashSdkLib.clientsFirehoseMod.apiVersion] = js.undefined
   var fms: js.UndefOr[awsDashSdkLib.clientsFmsMod.apiVersion] = js.undefined
   var fsx: js.UndefOr[awsDashSdkLib.clientsFsxMod.apiVersion] = js.undefined
@@ -266,6 +267,7 @@ object ConfigurationServiceApiVersions {
     elbv2: awsDashSdkLib.clientsElbv2Mod.apiVersion = null,
     emr: awsDashSdkLib.clientsEmrMod.apiVersion = null,
     es: awsDashSdkLib.clientsEsMod.apiVersion = null,
+    eventbridge: awsDashSdkLib.clientsEventbridgeMod.apiVersion = null,
     firehose: awsDashSdkLib.clientsFirehoseMod.apiVersion = null,
     fms: awsDashSdkLib.clientsFmsMod.apiVersion = null,
     fsx: awsDashSdkLib.clientsFsxMod.apiVersion = null,
@@ -453,6 +455,7 @@ object ConfigurationServiceApiVersions {
     if (elbv2 != null) __obj.updateDynamic("elbv2")(elbv2.asInstanceOf[js.Any])
     if (emr != null) __obj.updateDynamic("emr")(emr.asInstanceOf[js.Any])
     if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
+    if (eventbridge != null) __obj.updateDynamic("eventbridge")(eventbridge.asInstanceOf[js.Any])
     if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
     if (fms != null) __obj.updateDynamic("fms")(fms.asInstanceOf[js.Any])
     if (fsx != null) __obj.updateDynamic("fsx")(fsx.asInstanceOf[js.Any])
