@@ -38,6 +38,22 @@ package object clientsEsMod {
     - awsDashSdkLib.awsDashSdkLibStrings.m4DOT2xlargeDOTelasticsearch
     - awsDashSdkLib.awsDashSdkLibStrings.m4DOT4xlargeDOTelasticsearch
     - awsDashSdkLib.awsDashSdkLibStrings.m4DOT10xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOTlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOTxlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOT2xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOT4xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOT12xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOTlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOTxlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOT2xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOT4xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOT12xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOTlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOTxlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT2xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT4xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT9xlargeDOTelasticsearch
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT18xlargeDOTelasticsearch
     - awsDashSdkLib.awsDashSdkLibStrings.t2DOTmicroDOTelasticsearch
     - awsDashSdkLib.awsDashSdkLibStrings.t2DOTsmallDOTelasticsearch
     - awsDashSdkLib.awsDashSdkLibStrings.t2DOTmediumDOTelasticsearch

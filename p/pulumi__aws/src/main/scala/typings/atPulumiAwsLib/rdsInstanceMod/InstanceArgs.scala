@@ -258,7 +258,9 @@ trait InstanceArgs extends js.Object {
     * purpose SSD), or "io1" (provisioned IOPS SSD). The default is "io1" if `iops` is
     * specified, "gp2" if not.
     */
-  val storageType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val storageType: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsStorageTypeMod.StorageType]
+  ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -332,7 +334,7 @@ object InstanceArgs {
     skipFinalSnapshot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     snapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     storageEncrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    storageType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    storageType: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsStorageTypeMod.StorageType] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     timezone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

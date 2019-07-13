@@ -58,9 +58,6 @@ trait ClusterInstanceState extends js.Object {
     * The database engine version.
     */
   val engineVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The Instance identifier
-    */
   val identifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

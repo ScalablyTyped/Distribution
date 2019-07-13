@@ -12,9 +12,6 @@ trait ClusterArgs extends js.Object {
     * `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
     */
   val applyImmediately: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
-  /**
-    * The availability zone of the instance
-    */
   val availabilityZones: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
@@ -26,9 +23,6 @@ trait ClusterArgs extends js.Object {
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
-  /**
-    * The RDS Cluster Identifier
-    */
   val clusterIdentifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

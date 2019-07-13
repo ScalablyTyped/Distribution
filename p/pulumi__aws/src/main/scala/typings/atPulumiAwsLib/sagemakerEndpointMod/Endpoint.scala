@@ -26,9 +26,6 @@ class Endpoint protected ()
     * The name of the endpoint configuration to use.
     */
   val endpointConfigName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The name of the endpoint.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.

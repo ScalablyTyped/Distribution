@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserPolicyArgs extends js.Object {
-  /**
-    * The name of the policy (always set).
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

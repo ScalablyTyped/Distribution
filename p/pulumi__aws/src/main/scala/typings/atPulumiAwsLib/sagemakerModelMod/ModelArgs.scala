@@ -24,9 +24,6 @@ trait ModelArgs extends js.Object {
     * A role that SageMaker can assume to access model artifacts and docker images for deployment.
     */
   val executionRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  /**
-    * The name of the model.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.

@@ -91,9 +91,6 @@ trait FunctionState extends js.Object {
     * The object version containing the function's deployment package. Conflicts with `filename`.
     */
   val s3ObjectVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * Base64-encoded representation of raw SHA-256 sum of the zip file, provided either via `filename` or `s3_*` parameters.
-    */
   val sourceCodeHash: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The size in bytes of the function .zip file.

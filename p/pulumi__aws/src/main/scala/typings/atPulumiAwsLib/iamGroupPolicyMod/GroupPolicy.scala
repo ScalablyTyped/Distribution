@@ -22,18 +22,12 @@ class GroupPolicy protected ()
     * The IAM group to attach to the policy.
     */
   val group: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The name of the policy.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The policy document attached to the group.
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

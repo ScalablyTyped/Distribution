@@ -9,18 +9,29 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val BaseProvider: reactLib.reactMod.FC[BaseProviderProps] = js.native
-  val DarkTheme: baseuiLib.Theme = js.native
-  val DarkThemeMove: baseuiLib.Theme = js.native
-  val LightTheme: baseuiLib.Theme = js.native
-  val LightThemeMove: baseuiLib.Theme = js.native
+  val DarkTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
+  val DarkThemeMove: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
+  val LightTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
+  val LightThemeMove: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
   val LocaleProvider: reactLib.reactMod.FC[LocaleProviderProps] = js.native
   val ThemeProvider: reactLib.reactMod.FC[ThemeProviderProps] = js.native
-  val lightThemePrimitives: baseuiLib.ThemePrimitives = js.native
-  def createTheme(primitives: baseuiLib.ThemePrimitives): baseuiLib.Theme = js.native
-  def createTheme(primitives: baseuiLib.ThemePrimitives, overrides: js.Object): baseuiLib.Theme = js.native
-  def mergeOverrides[T](): baseuiLib.Overrides[T] = js.native
-  def mergeOverrides[T](target: baseuiLib.Overrides[T]): baseuiLib.Overrides[T] = js.native
-  def mergeOverrides[T](target: baseuiLib.Overrides[T], source: baseuiLib.Overrides[T]): baseuiLib.Overrides[T] = js.native
+  val darkThemePrimitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any = js.native
+  val lightThemePrimitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any = js.native
+  def createTheme(
+    primitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any
+  ): js.Any = js.native
+  def createTheme(
+    primitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any,
+    overrides: js.Object
+  ): js.Any = js.native
+  def mergeOverrides[T](): js.Any = js.native
+  def mergeOverrides[T](
+    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Overrides<T> */ js.Any
+  ): js.Any = js.native
+  def mergeOverrides[T](
+    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Overrides<T> */ js.Any,
+    source: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Overrides<T> */ js.Any
+  ): js.Any = js.native
   def styled[P /* <: js.Object */, C /* <: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.FunctionComponent[_] */](
     component: C,
     styledFn: js.Function1[

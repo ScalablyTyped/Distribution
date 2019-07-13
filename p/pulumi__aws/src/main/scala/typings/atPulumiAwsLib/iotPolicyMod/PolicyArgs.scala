@@ -10,9 +10,6 @@ trait PolicyArgs extends js.Object {
     * The name of the policy.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The policy document.
-    */
   val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

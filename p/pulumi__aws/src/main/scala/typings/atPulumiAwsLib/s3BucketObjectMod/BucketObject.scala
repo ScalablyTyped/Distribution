@@ -54,9 +54,6 @@ class BucketObject protected ()
     * A standard MIME type describing the format of the object data, e.g. application/octet-stream. All Valid MIME Types are valid for this input.
     */
   val contentType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * the ETag generated for the object (an MD5 sum of the object content). For plaintext objects or objects encrypted with an AWS-managed key, the hash is an MD5 digest of the object data. For objects encrypted with a KMS key or objects created by either the Multipart Upload or Part Copy operation, the hash is not an MD5 digest, regardless of the method of encryption. More information on possible values can be found on [Common Response Headers](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html).
-    */
   val etag: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the object once it is in the bucket.

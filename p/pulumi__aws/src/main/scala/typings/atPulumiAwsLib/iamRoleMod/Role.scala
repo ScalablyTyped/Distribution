@@ -42,9 +42,6 @@ class Role protected ()
     * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
     */
   val maxSessionDuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
-  /**
-    * The name of the role.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

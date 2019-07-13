@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-format-cache
 
-Typings are for version 4.0.1
+Typings are for version 4.1.0
 
 ## Library description:
 A memoizer factory for Intl format constructors.

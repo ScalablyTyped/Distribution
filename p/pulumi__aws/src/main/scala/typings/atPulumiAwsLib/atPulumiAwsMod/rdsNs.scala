@@ -688,6 +688,14 @@ object rdsNs extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/snapshot.Snapshot */ scala.Boolean = js.native
   }
   
+  @JSName("StorageTypes")
+  @js.native
+  object StorageTypesNs extends js.Object {
+    val GP2: atPulumiAwsLib.rdsStorageTypeMod.StorageType = js.native
+    val Io1: atPulumiAwsLib.rdsStorageTypeMod.StorageType = js.native
+    val Standard: atPulumiAwsLib.rdsStorageTypeMod.StorageType = js.native
+  }
+  
   /* static members */
   @js.native
   object SubnetGroup extends js.Object {

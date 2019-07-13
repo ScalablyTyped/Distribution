@@ -14,9 +14,6 @@ trait SecurityConfigurationState extends js.Object {
     * Date the Security Configuration was created
     */
   val creationDate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The Name of the EMR Security Configuration
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

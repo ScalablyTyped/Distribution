@@ -58,6 +58,10 @@ class Instance protected ()
   val publicIpAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   val ramSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * launch script to configure server with additional user data
     */
   val userData: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

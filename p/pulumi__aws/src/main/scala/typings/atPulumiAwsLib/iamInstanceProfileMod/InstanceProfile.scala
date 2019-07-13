@@ -27,9 +27,6 @@ class InstanceProfile protected ()
     * The creation timestamp of the instance profile.
     */
   val createDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The instance profile's name.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -43,9 +40,6 @@ class InstanceProfile protected ()
     * The role name to include in the profile.
     */
   val role: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The list of roles assigned to the instance profile. (**Deprecated**)
-    */
   val roles: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The [unique ID][1] assigned by AWS.

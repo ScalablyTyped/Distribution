@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_CtxImpl extends js.Object {
   var ctxImpl: zipkinLib.zipkinMod.Context[zipkinLib.zipkinMod.TraceId]
+  var defaultTags: js.UndefOr[js.Object] = js.undefined
   var localEndpoint: js.UndefOr[zipkinLib.zipkinMod.modelNs.Endpoint] = js.undefined
   var localServiceName: js.UndefOr[java.lang.String] = js.undefined
   var log: js.UndefOr[stdLib.Console] = js.undefined
@@ -21,6 +22,7 @@ object Anon_CtxImpl {
   def apply(
     ctxImpl: zipkinLib.zipkinMod.Context[zipkinLib.zipkinMod.TraceId],
     recorder: zipkinLib.zipkinMod.Recorder,
+    defaultTags: js.Object = null,
     localEndpoint: zipkinLib.zipkinMod.modelNs.Endpoint = null,
     localServiceName: java.lang.String = null,
     log: stdLib.Console = null,
@@ -29,6 +31,7 @@ object Anon_CtxImpl {
     traceId128Bit: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CtxImpl = {
     val __obj = js.Dynamic.literal(ctxImpl = ctxImpl, recorder = recorder)
+    if (defaultTags != null) __obj.updateDynamic("defaultTags")(defaultTags)
     if (localEndpoint != null) __obj.updateDynamic("localEndpoint")(localEndpoint)
     if (localServiceName != null) __obj.updateDynamic("localServiceName")(localServiceName)
     if (log != null) __obj.updateDynamic("log")(log)

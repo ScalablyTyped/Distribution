@@ -14,7 +14,7 @@ trait ProjectState extends js.Object {
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
   val artifacts: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocation]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocationName]
   ] = js.undefined
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
@@ -44,6 +44,10 @@ trait ProjectState extends js.Object {
     * Information about the project's build environment. Environment blocks are documented below.
     */
   val environment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CertificateComputeType]] = js.undefined
+  /**
+    * Configuration for the builds to store log data to CloudWatch or S3.
+    */
+  val logsConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLogsS3Logs]] = js.undefined
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
@@ -92,7 +96,7 @@ object ProjectState {
   @scala.inline
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    artifacts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocation] = null,
+    artifacts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocationName] = null,
     badgeEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     badgeUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     buildTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
@@ -100,6 +104,7 @@ object ProjectState {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     encryptionKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     environment: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CertificateComputeType] = null,
+    logsConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLogsS3Logs] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     secondaryArtifacts: atPulumiPulumiLib.outputMod.Input[
       js.Array[
@@ -126,6 +131,7 @@ object ProjectState {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])

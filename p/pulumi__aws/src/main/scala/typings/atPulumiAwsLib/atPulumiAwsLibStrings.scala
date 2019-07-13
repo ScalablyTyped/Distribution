@@ -896,6 +896,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
+  sealed trait gp2
+    extends atPulumiAwsLib.rdsStorageTypeMod.StorageType
+  
+  @js.native
   sealed trait h1DOT16xlarge
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
@@ -946,6 +950,10 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait icmp
     extends atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
+  
+  @js.native
+  sealed trait io1
+    extends atPulumiAwsLib.rdsStorageTypeMod.StorageType
   
   @js.native
   sealed trait ipv4
@@ -1350,6 +1358,10 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait stack
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait standard
+    extends atPulumiAwsLib.rdsStorageTypeMod.StorageType
   
   @js.native
   sealed trait syslog
@@ -1960,6 +1972,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
   @scala.inline
+  def gp2: gp2 = "gp2".asInstanceOf[gp2]
+  @scala.inline
   def h1DOT16xlarge: h1DOT16xlarge = "h1.16xlarge".asInstanceOf[h1DOT16xlarge]
   @scala.inline
   def h1DOT2xlarge: h1DOT2xlarge = "h1.2xlarge".asInstanceOf[h1DOT2xlarge]
@@ -1985,6 +1999,8 @@ object atPulumiAwsLibStrings {
   def i3DOTxlarge: i3DOTxlarge = "i3.xlarge".asInstanceOf[i3DOTxlarge]
   @scala.inline
   def icmp: icmp = "icmp".asInstanceOf[icmp]
+  @scala.inline
+  def io1: io1 = "io1".asInstanceOf[io1]
   @scala.inline
   def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
   @scala.inline
@@ -2187,6 +2203,8 @@ object atPulumiAwsLibStrings {
   def spread: spread = "spread".asInstanceOf[spread]
   @scala.inline
   def stack: stack = "stack".asInstanceOf[stack]
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
   @scala.inline

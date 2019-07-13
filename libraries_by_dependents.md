@@ -2423,7 +2423,6 @@
 | 49 | [lodash_dot_startswith](./l/lodash_dot_startswith) | The lodash method _.startsWith exported as a modul
 | 49 | [loggly](./l/loggly) | A client implementation for Loggly cloud Logging-a
 | 49 | [material__list](./m/material__list) | The Material Components for the web list component
-| 49 | [maxmind](./m/maxmind) | IP lookup using Maxmind databases
 | 49 | [moment-jalaali](./m/moment-jalaali) | Jalaali (Jalali, Persian, Khorshidi, Shamsi) calen
 | 49 | [ngeohash](./n/ngeohash) | geohash library for nodejs
 | 49 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel
@@ -4297,6 +4296,7 @@
 | 9 | [shrink-ray](./s/shrink-ray) | Node.js compression middleware with brotli and zop
 | 9 | [simple-mock](./s/simple-mock) | Super simple stubs and spies with 1-step sandbox r
 | 9 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat
+| 9 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
 | 9 | [traverson](./t/traverson) | Hypermedia API/HATEOAS client for Node.js and the 
 | 9 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f
 | 9 | [unused-filename](./u/unused-filename) | Get an unused filename by appending a number if it
@@ -4684,6 +4684,7 @@
 | 6 | [react-native-material-ui](./r/react-native-material-ui) | React Native Material Design Components
 | 6 | [react-native-modal-dropdo](./r/react-native-modal-dropdown) | A react-native dropdown component for both iOS and
 | 6 | [react-native-star-rating](./r/react-native-star-rating) | A React Native component for generating and displa
+| 6 | [react-range](./r/react-range) | Range input. Slides in all directions.
 | 6 | [react-webcam](./r/react-webcam) | React webcam component
 | 6 | [reactable](./r/reactable) | Fast, flexible, simple data tables in React
 | 6 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j
@@ -4732,6 +4733,7 @@
 | 5 | [atlaskit__layer](./a/atlaskit__layer) | A React layer component responsible for the positi
 | 5 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
 | 5 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
+| 5 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones
 | 5 | [b_](./b/b_) | BEM class name generator
 | 5 | [backbone_dot_localstorage](./b/backbone_dot_localstorage) | -
 | 5 | [bip21](./b/bip21) | A BIP21 compatible URL encoding utility library
@@ -5246,6 +5248,7 @@
 | 3 | [react-google-places-sugge](./r/react-google-places-suggest) | React component to select geolocated suggestion fr
 | 3 | [react-instantsearch-core](./r/react-instantsearch-core) | ⚡ Lightning-fast search for React, by Algolia
 | 3 | [react-mailchimp-subscribe](./r/react-mailchimp-subscribe) | react-mailchimp-subscribe React component
+| 3 | [react-movable](./r/react-movable) | Drag and drop lists.
 | 3 | [react-native-elevated-vie](./r/react-native-elevated-view) | Cross platform solution to elevation for React Nat
 | 3 | [react-native-ratings](./r/react-native-ratings) | The standard Ratings component for React Native
 | 3 | [react-native-svg-uri](./r/react-native-svg-uri) | Render an SVG Image from an URL

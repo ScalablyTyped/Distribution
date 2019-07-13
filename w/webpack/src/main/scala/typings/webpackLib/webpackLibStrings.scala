@@ -215,6 +215,9 @@ object webpackLibStrings {
     extends webpackLib.webpackMod.LibraryTarget
   
   @js.native
+  sealed trait hashed extends js.Object
+  
+  @js.native
   sealed trait hex extends js.Object
   
   @js.native
@@ -269,6 +272,12 @@ object webpackLibStrings {
   sealed trait multiple extends js.Object
   
   @js.native
+  sealed trait named extends js.Object
+  
+  @js.native
+  sealed trait natural extends js.Object
+  
+  @js.native
   sealed trait node extends js.Object
   
   @js.native
@@ -299,6 +308,9 @@ object webpackLibStrings {
   sealed trait single extends js.Object
   
   @js.native
+  sealed trait size extends js.Object
+  
+  @js.native
   sealed trait `source-map`
     extends webpackLib.webpackMod.OptionsNs._Devtool
   
@@ -308,6 +320,9 @@ object webpackLibStrings {
   @js.native
   sealed trait `this`
     extends webpackLib.webpackMod.LibraryTarget
+  
+  @js.native
+  sealed trait `total-size` extends js.Object
   
   @js.native
   sealed trait umd
@@ -448,6 +463,8 @@ object webpackLibStrings {
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline
+  def hashed: hashed = "hashed".asInstanceOf[hashed]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
   def `hidden-source-map`: `hidden-source-map` = "hidden-source-map".asInstanceOf[`hidden-source-map`]
@@ -480,6 +497,10 @@ object webpackLibStrings {
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
+  def named: named = "named".asInstanceOf[named]
+  @scala.inline
+  def natural: natural = "natural".asInstanceOf[natural]
+  @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
   def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
@@ -498,11 +519,15 @@ object webpackLibStrings {
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline
+  def size: size = "size".asInstanceOf[size]
+  @scala.inline
   def `source-map`: `source-map` = "source-map".asInstanceOf[`source-map`]
   @scala.inline
   def `text/javascript`: `text/javascript` = "text/javascript".asInstanceOf[`text/javascript`]
   @scala.inline
   def `this`: `this` = "this".asInstanceOf[`this`]
+  @scala.inline
+  def `total-size`: `total-size` = "total-size".asInstanceOf[`total-size`]
   @scala.inline
   def umd: umd = "umd".asInstanceOf[umd]
   @scala.inline

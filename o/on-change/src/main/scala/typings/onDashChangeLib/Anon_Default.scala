@@ -11,6 +11,7 @@ trait Anon_Default extends js.Object {
   	Watch an object or array for changes. It works recursively, so it will even detect if you modify a deep property like `obj.a.b[0].c = true`.
   	@param object - Object to watch for changes.
   	@param onChange - Function that gets called anytime the object changes.
+  	@param [options]
   	@returns A version of `object` that is watched. It's the exact same object, just with some `Proxy` traps.
   	@example
   	```
@@ -63,6 +64,13 @@ trait Anon_Default extends js.Object {
   	//=> 'path: "a.b.0.c"'
   	//=> 'value: true'
   	//=> 'previousValue: false'
+  	// Access the original object
+  	onChange.target(watchedObject).foo = false;
+  	// Callback isn't called
+  	// Unsubscribe
+  	onChange.unsubscribe(watchedObject);
+  	watchedObject.foo = 'bar';
+  	// Callback isn't called
   	```
   	*/
   def apply[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
@@ -86,5 +94,21 @@ trait Anon_Default extends js.Object {
     ],
     options: onDashChangeLib.onDashChangeMod.Options
   ): ObjectType = js.native
+  /**
+  	 * Returns the original unwatched object.
+  	 *
+  	 * @param object - Object that is already being watched for changes.
+  	 *
+  	 * @returns The original unwatched object.
+  	 */
+  def target(`object`: js.Object): js.Object = js.native
+  /**
+  	 * Cancels all future callbacks on a watched object and returns the original unwatched object.
+  	 *
+  	 * @param object - Object that is already being watched for changes.
+  	 *
+  	 * @returns The original unwatched object.
+  	 */
+  def unsubscribe(`object`: js.Object): js.Object = js.native
 }
 

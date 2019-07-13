@@ -30,9 +30,6 @@ class Policy protected ()
     * The name of the policy.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The policy document.
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

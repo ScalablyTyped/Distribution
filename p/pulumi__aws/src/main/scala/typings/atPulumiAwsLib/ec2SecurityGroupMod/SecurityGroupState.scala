@@ -10,9 +10,6 @@ trait SecurityGroupState extends js.Object {
     * The ARN of the security group
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The description of the security group
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Can be specified multiple times for each
@@ -34,9 +31,6 @@ trait SecurityGroupState extends js.Object {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CidrBlocksDescription]]
     ]
   ] = js.undefined
-  /**
-    * The name of the security group
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

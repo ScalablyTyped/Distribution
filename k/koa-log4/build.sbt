@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-log4"
-version := "2.3-dt-20190331Z-193d51"
+version := "2.3-dt-20190331Z-ab523f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-271e7b",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-2a0caf",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-1188af",
-  "org.scalablytyped" %%% "log4js" % "4.5.0-8f9f1c",
+  "org.scalablytyped" %%% "log4js" % "4.5.1-8f9f1c",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-1c84be",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-f16918",

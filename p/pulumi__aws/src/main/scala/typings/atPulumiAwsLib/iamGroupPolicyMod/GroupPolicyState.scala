@@ -10,18 +10,12 @@ trait GroupPolicyState extends js.Object {
     * The IAM group to attach to the policy.
     */
   val group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the policy.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The policy document attached to the group.
-    */
   val policy: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
   ] = js.undefined

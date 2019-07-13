@@ -81,6 +81,12 @@ object stripeLibStrings {
   sealed trait all extends js.Object
   
   @js.native
+  sealed trait amex extends js.Object
+  
+  @js.native
+  sealed trait amex_express_checkout extends js.Object
+  
+  @js.native
   sealed trait android_pay extends js.Object
   
   @js.native
@@ -236,7 +242,13 @@ object stripeLibStrings {
   sealed trait declined_by_network extends js.Object
   
   @js.native
+  sealed trait diner extends js.Object
+  
+  @js.native
   sealed trait discount extends js.Object
+  
+  @js.native
+  sealed trait discover extends js.Object
   
   @js.native
   sealed trait dispute extends js.Object
@@ -341,6 +353,9 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.productsNs.ProductType
   
   @js.native
+  sealed trait google_pay extends js.Object
+  
+  @js.native
   sealed trait graduated extends js.Object
   
   @js.native
@@ -423,7 +438,13 @@ object stripeLibStrings {
   sealed trait ja extends js.Object
   
   @js.native
+  sealed trait jcb extends js.Object
+  
+  @js.native
   sealed trait jpg extends js.Object
+  
+  @js.native
+  sealed trait klarna extends js.Object
   
   @js.native
   sealed trait last_during_period extends js.Object
@@ -460,6 +481,12 @@ object stripeLibStrings {
   
   @js.native
   sealed trait manual_review extends js.Object
+  
+  @js.native
+  sealed trait mastercard extends js.Object
+  
+  @js.native
+  sealed trait masterpass extends js.Object
   
   @js.native
   sealed trait max extends js.Object
@@ -693,6 +720,9 @@ object stripeLibStrings {
   sealed trait safe extends js.Object
   
   @js.native
+  sealed trait samsung_pay extends js.Object
+  
+  @js.native
   sealed trait saturday extends js.Object
   
   @js.native
@@ -821,6 +851,9 @@ object stripeLibStrings {
   sealed trait under_review extends js.Object
   
   @js.native
+  sealed trait unionpay extends js.Object
+  
+  @js.native
   sealed trait unknown extends js.Object
   
   @js.native
@@ -856,6 +889,12 @@ object stripeLibStrings {
   
   @js.native
   sealed trait verified extends js.Object
+  
+  @js.native
+  sealed trait visa extends js.Object
+  
+  @js.native
+  sealed trait visa_checkout extends js.Object
   
   @js.native
   sealed trait void extends js.Object
@@ -943,6 +982,10 @@ object stripeLibStrings {
   def alipay_account: alipay_account = "alipay_account".asInstanceOf[alipay_account]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def amex: amex = "amex".asInstanceOf[amex]
+  @scala.inline
+  def amex_express_checkout: amex_express_checkout = "amex_express_checkout".asInstanceOf[amex_express_checkout]
   @scala.inline
   def android_pay: android_pay = "android_pay".asInstanceOf[android_pay]
   @scala.inline
@@ -1038,7 +1081,11 @@ object stripeLibStrings {
   @scala.inline
   def declined_by_network: declined_by_network = "declined_by_network".asInstanceOf[declined_by_network]
   @scala.inline
+  def diner: diner = "diner".asInstanceOf[diner]
+  @scala.inline
   def discount: discount = "discount".asInstanceOf[discount]
+  @scala.inline
+  def discover: discover = "discover".asInstanceOf[discover]
   @scala.inline
   def dispute: dispute = "dispute".asInstanceOf[dispute]
   @scala.inline
@@ -1102,6 +1149,8 @@ object stripeLibStrings {
   @scala.inline
   def good: good = "good".asInstanceOf[good]
   @scala.inline
+  def google_pay: google_pay = "google_pay".asInstanceOf[google_pay]
+  @scala.inline
   def graduated: graduated = "graduated".asInstanceOf[graduated]
   @scala.inline
   def ideal: ideal = "ideal".asInstanceOf[ideal]
@@ -1150,7 +1199,11 @@ object stripeLibStrings {
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
   @scala.inline
+  def jcb: jcb = "jcb".asInstanceOf[jcb]
+  @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
+  @scala.inline
+  def klarna: klarna = "klarna".asInstanceOf[klarna]
   @scala.inline
   def last_during_period: last_during_period = "last_during_period".asInstanceOf[last_during_period]
   @scala.inline
@@ -1175,6 +1228,10 @@ object stripeLibStrings {
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def manual_review: manual_review = "manual_review".asInstanceOf[manual_review]
+  @scala.inline
+  def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
+  @scala.inline
+  def masterpass: masterpass = "masterpass".asInstanceOf[masterpass]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
@@ -1324,6 +1381,8 @@ object stripeLibStrings {
   @scala.inline
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline
+  def samsung_pay: samsung_pay = "samsung_pay".asInstanceOf[samsung_pay]
+  @scala.inline
   def saturday: saturday = "saturday".asInstanceOf[saturday]
   @scala.inline
   def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
@@ -1406,6 +1465,8 @@ object stripeLibStrings {
   @scala.inline
   def under_review: under_review = "under_review".asInstanceOf[under_review]
   @scala.inline
+  def unionpay: unionpay = "unionpay".asInstanceOf[unionpay]
+  @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline
   def unpaid: unpaid = "unpaid".asInstanceOf[unpaid]
@@ -1429,6 +1490,10 @@ object stripeLibStrings {
   def verification_failed: verification_failed = "verification_failed".asInstanceOf[verification_failed]
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
+  @scala.inline
+  def visa: visa = "visa".asInstanceOf[visa]
+  @scala.inline
+  def visa_checkout: visa_checkout = "visa_checkout".asInstanceOf[visa_checkout]
   @scala.inline
   def void: void = "void".asInstanceOf[void]
   @scala.inline

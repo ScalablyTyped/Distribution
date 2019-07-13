@@ -23,6 +23,10 @@ trait AccountArgs extends js.Object {
     */
   val parentId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val roleName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object AccountArgs {
@@ -32,13 +36,15 @@ object AccountArgs {
     iamUserAccessToBilling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     parentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): AccountArgs = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     if (iamUserAccessToBilling != null) __obj.updateDynamic("iamUserAccessToBilling")(iamUserAccessToBilling.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountArgs]
   }
 }

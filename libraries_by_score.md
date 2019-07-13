@@ -1767,7 +1767,6 @@
 | 0.7272775192851237 | [parse-torrent](./p/parse-torrent) | Parse a torrent identifier (magnet uri, .torrent f
 | 0.7272429825430154 | [bigi](./b/bigi) | Big integers.
 | 0.7272379066638832 | [jest-dev-server](./j/jest-dev-server) | Starts a server before your Jest tests and tears i
-| 0.7271493123735925 | [maxmind](./m/maxmind) | IP lookup using Maxmind databases
 | 0.7271463402362016 | [microrouter](./m/microrouter) | 🚉 A tiny and functional router for ZEIT's Micro
 | 0.7271448014299904 | [cryptiles](./c/cryptiles) | General purpose crypto utilities
 | 0.7270092852103833 | [command-line-commands](./c/command-line-commands) | Add a git-like command interface to your app.
@@ -1901,6 +1900,7 @@
 | 0.7207028264136734 | [sparkpost](./s/sparkpost) | A Node.js wrapper for interfacing with your favori
 | 0.7206292430131584 | [gulp-stylus](./g/gulp-stylus) | Stylus plugin for gulp
 | 0.7205718666262453 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep
+| 0.7204799741758404 | [react-movable](./r/react-movable) | Drag and drop lists.
 | 0.7203655213909139 | [debounce-promise](./d/debounce-promise) | Create a debounced version of a promise returning 
 | 0.7203096527547181 | [blob-util](./b/blob-util) | Utilities for working with Blob objects in the bro
 | 0.720302715474587 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations
@@ -2200,6 +2200,7 @@
 | 0.7050917033716824 | [get-urls](./g/get-urls) | Get all URLs in a string
 | 0.7050749224196015 | [semaphore](./s/semaphore) | semaphore for node
 | 0.7050385199145632 | [subscriptions-transport-w](./s/subscriptions-transport-ws) | A websocket transport for GraphQL subscriptions
+| 0.7050323216817425 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
 | 0.7050318168125207 | [x2js](./x/x2js) | Transforms between XML string and JavaScript objec
 | 0.7050210178360012 | [react-request](./r/react-request) | Declarative HTTP requests with React.
 | 0.704941961340109 | [receptacle](./r/receptacle) | In memory cache lru cache with ttl support.
@@ -2484,6 +2485,7 @@
 | 0.6915029706136508 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given s
 | 0.691501472696143 | [leaflet_dot_pm](./l/leaflet_dot_pm) | A Leaflet Plugin For Editing Geometry Layers in Le
 | 0.6914976073725445 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components
+| 0.6914476130386953 | [react-range](./r/react-range) | Range input. Slides in all directions.
 | 0.691416102648011 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views
 | 0.6913752844722203 | [inquirer-npm-name](./i/inquirer-npm-name) | Helper function using inquirer to validate a value
 | 0.691295405892692 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io
@@ -3706,6 +3708,7 @@
 | 0.6321912966764394 | [punycode](./p/punycode) | A robust Punycode converter that fully complies to
 | 0.6321874117985578 | [knockstrap](./k/knockstrap) | Knockout bindings to Twitter Bootstrap 3
 | 0.6320188707684222 | [gh-pages](./g/gh-pages) | Publish to a gh-pages branch on GitHub (or any oth
+| 0.6319982429964777 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones
 | 0.6319364490566735 | [react-native-swiper](./r/react-native-swiper) | Swiper component for React Native.
 | 0.6318851208041756 | [handsontable](./h/handsontable) | Handsontable is a JavaScript Spreadsheet Component
 | 0.6317833227123634 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for 

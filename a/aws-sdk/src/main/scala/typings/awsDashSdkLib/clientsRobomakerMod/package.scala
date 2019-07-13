@@ -75,6 +75,7 @@ package object clientsRobomakerMod {
   type LastUpdatedAt = stdLib.Date
   type MaxResults = scala.Double
   type Name = java.lang.String
+  type NonEmptyString = java.lang.String
   type PaginationToken = java.lang.String
   type Path = java.lang.String
   type PercentDone = scala.Double
@@ -97,7 +98,12 @@ package object clientsRobomakerMod {
   type RobotDeploymentStep = _RobotDeploymentStep | java.lang.String
   type RobotDeploymentSummary = js.Array[RobotDeployment]
   type RobotSoftwareSuiteType = awsDashSdkLib.awsDashSdkLibStrings.ROS | java.lang.String
-  type RobotSoftwareSuiteVersionType = awsDashSdkLib.awsDashSdkLibStrings.Kinetic | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Kinetic
+    - awsDashSdkLib.awsDashSdkLibStrings.Melodic
+    - java.lang.String
+  */
+  type RobotSoftwareSuiteVersionType = _RobotSoftwareSuiteVersionType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Available
     - awsDashSdkLib.awsDashSdkLibStrings.Registered
@@ -113,7 +119,7 @@ package object clientsRobomakerMod {
   type S3Bucket = java.lang.String
   type S3Etag = java.lang.String
   type S3Key = java.lang.String
-  type SecurityGroups = js.Array[GenericString]
+  type SecurityGroups = js.Array[NonEmptyString]
   type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[Name]
   type SimulationApplicationSummaries = js.Array[SimulationApplicationSummary]
@@ -159,7 +165,7 @@ package object clientsRobomakerMod {
   type SimulationTimeMillis = scala.Double
   type SourceConfigs = js.Array[SourceConfig]
   type Sources = js.Array[Source]
-  type Subnets = js.Array[GenericString]
+  type Subnets = js.Array[NonEmptyString]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagMap = org.scalablytyped.runtime.StringDictionary[TagValue]

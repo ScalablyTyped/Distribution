@@ -42,6 +42,10 @@ class VirtualRouter protected ()
     * The virtual router specification to apply.
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Listener] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

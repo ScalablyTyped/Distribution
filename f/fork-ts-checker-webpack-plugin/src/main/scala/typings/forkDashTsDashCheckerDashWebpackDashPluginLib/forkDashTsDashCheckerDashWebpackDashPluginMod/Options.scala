@@ -10,6 +10,11 @@ trait Options extends js.Object {
   var checkSyntacticErrors: scala.Boolean
   var colors: scala.Boolean
   var compilerOptions: js.Object
+  var eslint: js.UndefOr[
+    forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true`
+  ] = js.undefined
+  /** Options to supply to eslint https://eslint.org/docs/1.0.0/developer-guide/nodejs-api#cliengine */
+  var eslintOptions: js.Object
   var formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | Formatter
   var formatterOptions: js.Any
   var ignoreDiagnostics: js.Array[scala.Double]
@@ -23,7 +28,9 @@ trait Options extends js.Object {
   var resolveTypeReferenceDirectiveModule: java.lang.String
   var silent: scala.Boolean
   var tsconfig: java.lang.String
-  var tslint: java.lang.String | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true`
+  var tslint: js.UndefOr[
+    java.lang.String | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true`
+  ] = js.undefined
   var tslintAutoFix: scala.Boolean
   var typescript: java.lang.String
   var useTypescriptIncrementalApi: scala.Boolean
@@ -39,6 +46,7 @@ object Options {
     checkSyntacticErrors: scala.Boolean,
     colors: scala.Boolean,
     compilerOptions: js.Object,
+    eslintOptions: js.Object,
     formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | Formatter,
     formatterOptions: js.Any,
     ignoreDiagnostics: js.Array[scala.Double],
@@ -52,16 +60,18 @@ object Options {
     resolveTypeReferenceDirectiveModule: java.lang.String,
     silent: scala.Boolean,
     tsconfig: java.lang.String,
-    tslint: java.lang.String | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true`,
     tslintAutoFix: scala.Boolean,
     typescript: java.lang.String,
     useTypescriptIncrementalApi: scala.Boolean,
     vue: scala.Boolean,
     watch: java.lang.String | js.Array[java.lang.String],
-    workers: scala.Double
+    workers: scala.Double,
+    eslint: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true` = null,
+    tslint: java.lang.String | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true` = null
   ): Options = {
-    val __obj = js.Dynamic.literal(async = async, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilerOptions = compilerOptions, formatter = formatter.asInstanceOf[js.Any], formatterOptions = formatterOptions, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, logger = logger, measureCompilationTime = measureCompilationTime, memoryLimit = memoryLimit, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, tsconfig = tsconfig, tslint = tslint.asInstanceOf[js.Any], tslintAutoFix = tslintAutoFix, typescript = typescript, useTypescriptIncrementalApi = useTypescriptIncrementalApi, vue = vue, watch = watch.asInstanceOf[js.Any], workers = workers)
-  
+    val __obj = js.Dynamic.literal(async = async, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilerOptions = compilerOptions, eslintOptions = eslintOptions, formatter = formatter.asInstanceOf[js.Any], formatterOptions = formatterOptions, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, logger = logger, measureCompilationTime = measureCompilationTime, memoryLimit = memoryLimit, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, typescript = typescript, useTypescriptIncrementalApi = useTypescriptIncrementalApi, vue = vue, watch = watch.asInstanceOf[js.Any], workers = workers)
+    if (eslint != null) __obj.updateDynamic("eslint")(eslint)
+    if (tslint != null) __obj.updateDynamic("tslint")(tslint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -21,5 +21,6 @@ object ^ extends js.Object {
   def isTimeElement(el: intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.TimeElement */ scala.Boolean = js.native
   def parse(input: java.lang.String): js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement] = js.native
   def parse(input: java.lang.String, opts: ParseOptions): js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement] = js.native
+  def printAST(ast: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement]): java.lang.String = js.native
 }
 

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 trait ForkTsCheckerWebpackPlugin extends js.Object {
   var async: js.Any
-  var cancellationToken: js.UndefOr[js.Any] = js.undefined
+  var cancellationToken: js.Any
   var checkDone: js.Any
   var checkSyntacticErrors: js.Any
   var colors: js.Any
@@ -27,8 +27,11 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var createNoopEmitCallback: js.Any
   var diagnostics: js.Any
   var doneCallback: js.Any
-  var elapsed: js.UndefOr[js.Any] = js.undefined
+  var elapsed: js.Any
   var emitCallback: js.Any
+  var eslint: js.Any
+  var eslintOptions: js.Any
+  var eslintVersion: js.Any
   var formatter: js.Any
   var handleServiceExit: js.Any
   var handleServiceMessage: js.Any
@@ -58,19 +61,21 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var silent: js.Any
   var spawnService: js.Any
   var startAt: js.Any
-  var started: js.UndefOr[js.Any] = js.undefined
+  var started: js.Any
   var tsconfig: js.Any
-  var tsconfigPath: js.UndefOr[js.Any] = js.undefined
-  var tslint: js.UndefOr[js.Any] = js.undefined
+  var tsconfigPath: js.Any
+  var tslint: js.Any
   var tslintAutoFix: js.Any
-  var tslintPath: js.UndefOr[js.Any] = js.undefined
+  var tslintPath: js.Any
   var tslintVersion: js.Any
   var typescript: js.Any
   var typescriptPath: js.Any
   var typescriptVersion: js.Any
   var useColors: js.Any
   var useTypescriptIncrementalApi: js.Any
-  var validateVersions: js.Any
+  var validateEslint: js.Any
+  var validateTslint: js.Any
+  var validateTypeScript: js.Any
   var vue: js.Any
   var watch: js.Any
   var watchPaths: js.Any
@@ -84,6 +89,7 @@ object ForkTsCheckerWebpackPlugin {
   def apply(
     apply: js.Any => scala.Unit,
     async: js.Any,
+    cancellationToken: js.Any,
     checkDone: js.Any,
     checkSyntacticErrors: js.Any,
     colors: js.Any,
@@ -96,7 +102,11 @@ object ForkTsCheckerWebpackPlugin {
     createNoopEmitCallback: js.Any,
     diagnostics: js.Any,
     doneCallback: js.Any,
+    elapsed: js.Any,
     emitCallback: js.Any,
+    eslint: js.Any,
+    eslintOptions: js.Any,
+    eslintVersion: js.Any,
     formatter: js.Any,
     handleServiceExit: js.Any,
     handleServiceMessage: js.Any,
@@ -124,37 +134,31 @@ object ForkTsCheckerWebpackPlugin {
     silent: js.Any,
     spawnService: js.Any,
     startAt: js.Any,
+    started: js.Any,
     tsconfig: js.Any,
+    tsconfigPath: js.Any,
+    tslint: js.Any,
     tslintAutoFix: js.Any,
+    tslintPath: js.Any,
     tslintVersion: js.Any,
     typescript: js.Any,
     typescriptPath: js.Any,
     typescriptVersion: js.Any,
     useColors: js.Any,
     useTypescriptIncrementalApi: js.Any,
-    validateVersions: js.Any,
+    validateEslint: js.Any,
+    validateTslint: js.Any,
+    validateTypeScript: js.Any,
     vue: js.Any,
     watch: js.Any,
     watchPaths: js.Any,
     workersNumber: js.Any,
-    cancellationToken: js.Any = null,
-    elapsed: js.Any = null,
     service: js.Any = null,
-    serviceRpc: workerDashRpcLib.workerDashRpcMod.RpcProvider = null,
-    started: js.Any = null,
-    tsconfigPath: js.Any = null,
-    tslint: js.Any = null,
-    tslintPath: js.Any = null
+    serviceRpc: workerDashRpcLib.workerDashRpcMod.RpcProvider = null
   ): ForkTsCheckerWebpackPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, emitCallback = emitCallback, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, spawnService = spawnService, startAt = startAt, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateVersions = validateVersions, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
-    if (cancellationToken != null) __obj.updateDynamic("cancellationToken")(cancellationToken)
-    if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, cancellationToken = cancellationToken, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, elapsed = elapsed, emitCallback = emitCallback, eslint = eslint, eslintOptions = eslintOptions, eslintVersion = eslintVersion, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, spawnService = spawnService, startAt = startAt, started = started, tsconfig = tsconfig, tsconfigPath = tsconfigPath, tslint = tslint, tslintAutoFix = tslintAutoFix, tslintPath = tslintPath, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateEslint = validateEslint, validateTslint = validateTslint, validateTypeScript = validateTypeScript, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
     if (service != null) __obj.updateDynamic("service")(service)
     if (serviceRpc != null) __obj.updateDynamic("serviceRpc")(serviceRpc)
-    if (started != null) __obj.updateDynamic("started")(started)
-    if (tsconfigPath != null) __obj.updateDynamic("tsconfigPath")(tsconfigPath)
-    if (tslint != null) __obj.updateDynamic("tslint")(tslint)
-    if (tslintPath != null) __obj.updateDynamic("tslintPath")(tslintPath)
     __obj.asInstanceOf[ForkTsCheckerWebpackPlugin]
   }
 }

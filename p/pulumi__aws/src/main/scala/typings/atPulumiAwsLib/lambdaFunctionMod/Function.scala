@@ -104,9 +104,6 @@ class Function protected ()
     * The object version containing the function's deployment package. Conflicts with `filename`.
     */
   val s3ObjectVersion: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * Base64-encoded representation of raw SHA-256 sum of the zip file, provided either via `filename` or `s3_*` parameters.
-    */
   val sourceCodeHash: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size in bytes of the function .zip file.

@@ -45,6 +45,10 @@ trait UpdateApiResponse extends js.Object {
     */
   var RouteSelectionExpression: js.UndefOr[SelectionExpression] = js.undefined
   /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+  /**
     * A version identifier for the API.
     */
   var Version: js.UndefOr[StringWithLengthBetween1And64] = js.undefined
@@ -67,6 +71,7 @@ object UpdateApiResponse {
     Name: StringWithLengthBetween1And128 = null,
     ProtocolType: ProtocolType = null,
     RouteSelectionExpression: SelectionExpression = null,
+    Tags: Tags = null,
     Version: StringWithLengthBetween1And64 = null,
     Warnings: __listOf__string = null
   ): UpdateApiResponse = {
@@ -80,6 +85,7 @@ object UpdateApiResponse {
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (ProtocolType != null) __obj.updateDynamic("ProtocolType")(ProtocolType.asInstanceOf[js.Any])
     if (RouteSelectionExpression != null) __obj.updateDynamic("RouteSelectionExpression")(RouteSelectionExpression)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (Version != null) __obj.updateDynamic("Version")(Version)
     if (Warnings != null) __obj.updateDynamic("Warnings")(Warnings)
     __obj.asInstanceOf[UpdateApiResponse]

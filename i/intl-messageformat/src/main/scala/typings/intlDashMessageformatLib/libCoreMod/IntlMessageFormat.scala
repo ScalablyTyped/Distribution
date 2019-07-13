@@ -35,6 +35,8 @@ class IntlMessageFormat protected () extends js.Object {
       js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
     ]
   ): java.lang.String = js.native
+  def formatToParts(): js.Array[MessageFormatPart] = js.native
+  def formatToParts(values: stdLib.Record[java.lang.String, _]): js.Array[MessageFormatPart] = js.native
   def getAst(): js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement] = js.native
   def resolvedOptions(): intlDashMessageformatLib.Anon_Locale = js.native
 }

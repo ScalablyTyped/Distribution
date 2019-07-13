@@ -57,9 +57,6 @@ trait LaunchConfigurationArgs extends js.Object {
     * The key name that should be used for the instance.
     */
   val keyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the launch configuration.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

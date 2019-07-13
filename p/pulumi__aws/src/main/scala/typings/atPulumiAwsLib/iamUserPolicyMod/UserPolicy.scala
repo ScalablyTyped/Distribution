@@ -18,9 +18,6 @@ class UserPolicy protected ()
     */
   def this(name: java.lang.String, args: UserPolicyArgs) = this()
   def this(name: java.lang.String, args: UserPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The name of the policy (always set).
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

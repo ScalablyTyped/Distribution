@@ -26,9 +26,6 @@ class EndpointConfiguration protected ()
     * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
     */
   val kmsKeyArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The name of the endpoint configuration.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Fields are documented below.

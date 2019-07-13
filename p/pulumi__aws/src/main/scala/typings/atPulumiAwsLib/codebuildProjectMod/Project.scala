@@ -55,6 +55,10 @@ class Project protected ()
     */
   val environment: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Certificate] = js.native
   /**
+    * Configuration for the builds to store log data to CloudWatch or S3.
+    */
+  val logsConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLogs]] = js.native
+  /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

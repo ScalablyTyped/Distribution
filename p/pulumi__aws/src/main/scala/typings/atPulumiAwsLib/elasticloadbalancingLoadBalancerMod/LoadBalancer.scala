@@ -66,9 +66,6 @@ class LoadBalancer protected ()
     * A list of listener blocks. Listeners documented below.
     */
   val listeners: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_InstancePortInstanceProtocol]] = js.native
-  /**
-    * The name of the ELB
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

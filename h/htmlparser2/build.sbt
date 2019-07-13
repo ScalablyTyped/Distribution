@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "htmlparser2"
-version := "v3.10.x-dt-20190326Z-b29a3f"
+version := "v3.10.x-dt-20190712Z-48f8dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

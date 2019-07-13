@@ -10,9 +10,6 @@ trait SecurityConfigurationArgs extends js.Object {
     * A JSON formatted Security Configuration
     */
   val configuration: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  /**
-    * The Name of the EMR Security Configuration
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

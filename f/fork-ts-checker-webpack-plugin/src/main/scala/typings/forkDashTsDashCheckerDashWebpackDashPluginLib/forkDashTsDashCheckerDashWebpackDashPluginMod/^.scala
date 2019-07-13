@@ -19,6 +19,8 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var async: js.Any = js.native
   /* CompleteClass */
+  override var cancellationToken: js.Any = js.native
+  /* CompleteClass */
   override var checkDone: js.Any = js.native
   /* CompleteClass */
   override var checkSyntacticErrors: js.Any = js.native
@@ -43,7 +45,15 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var doneCallback: js.Any = js.native
   /* CompleteClass */
+  override var elapsed: js.Any = js.native
+  /* CompleteClass */
   override var emitCallback: js.Any = js.native
+  /* CompleteClass */
+  override var eslint: js.Any = js.native
+  /* CompleteClass */
+  override var eslintOptions: js.Any = js.native
+  /* CompleteClass */
+  override var eslintVersion: js.Any = js.native
   /* CompleteClass */
   override var formatter: js.Any = js.native
   /* CompleteClass */
@@ -99,9 +109,17 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var startAt: js.Any = js.native
   /* CompleteClass */
+  override var started: js.Any = js.native
+  /* CompleteClass */
   override var tsconfig: js.Any = js.native
   /* CompleteClass */
+  override var tsconfigPath: js.Any = js.native
+  /* CompleteClass */
+  override var tslint: js.Any = js.native
+  /* CompleteClass */
   override var tslintAutoFix: js.Any = js.native
+  /* CompleteClass */
+  override var tslintPath: js.Any = js.native
   /* CompleteClass */
   override var tslintVersion: js.Any = js.native
   /* CompleteClass */
@@ -115,7 +133,11 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var useTypescriptIncrementalApi: js.Any = js.native
   /* CompleteClass */
-  override var validateVersions: js.Any = js.native
+  override var validateEslint: js.Any = js.native
+  /* CompleteClass */
+  override var validateTslint: js.Any = js.native
+  /* CompleteClass */
+  override var validateTypeScript: js.Any = js.native
   /* CompleteClass */
   override var vue: js.Any = js.native
   /* CompleteClass */

@@ -26,9 +26,6 @@ class Policy protected ()
     * Description of the IAM policy.
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The name of the policy.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -39,9 +36,6 @@ class Policy protected ()
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
   val path: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The policy document.
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

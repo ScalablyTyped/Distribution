@@ -42,6 +42,10 @@ class Account protected ()
   val parentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   val roleName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

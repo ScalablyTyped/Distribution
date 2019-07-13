@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("htmlparser2", "Parser")
 @js.native
 class Parser protected () extends js.Object {
-  def this(handler: domhandlerLib.domhandlerMod.DomHandler) = this()
-  def this(handler: domhandlerLib.domhandlerMod.DomHandler, options: ParserOptions) = this()
+  def this(handler: stdLib.Partial[domhandlerLib.domhandlerMod.DomHandler]) = this()
+  def this(handler: stdLib.Partial[domhandlerLib.domhandlerMod.DomHandler], options: ParserOptions) = this()
   /***
     * alias for backwards compat
     */

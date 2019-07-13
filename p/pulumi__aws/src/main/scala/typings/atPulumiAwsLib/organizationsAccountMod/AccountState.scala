@@ -30,6 +30,10 @@ trait AccountState extends js.Object {
   val parentId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val roleName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object AccountState {
@@ -43,7 +47,8 @@ object AccountState {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     parentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): AccountState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object AccountState {
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountState]
   }
 }

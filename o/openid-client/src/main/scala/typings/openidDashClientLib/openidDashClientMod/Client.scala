@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Client () extends js.Object {
   def this(metadata: ClientMetadata) = this()
   val metadata: ClientMetadata = js.native
+  var static: js.Any = js.native
   def authorizationUrl(): java.lang.String = js.native
   def authorizationUrl(parameters: AuthorizationUrlParameters): java.lang.String = js.native
   def callback(redirectUri: java.lang.String, parameters: js.Object): js.Promise[TokenSet] = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__scales"
-version := "0.59.1-8bfc3f"
+version := "0.59.3-137d55"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

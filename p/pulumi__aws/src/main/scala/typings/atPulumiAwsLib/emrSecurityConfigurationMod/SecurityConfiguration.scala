@@ -26,9 +26,6 @@ class SecurityConfiguration protected ()
     * Date the Security Configuration was created
     */
   val creationDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The Name of the EMR Security Configuration
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

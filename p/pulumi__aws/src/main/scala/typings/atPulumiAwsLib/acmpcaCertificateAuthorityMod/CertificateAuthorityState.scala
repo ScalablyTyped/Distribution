@@ -63,7 +63,7 @@ trait CertificateAuthorityState extends js.Object {
     */
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
   /**
-    * The type of the certificate authority. Currently, this must be `SUBORDINATE`.
+    * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
     */
   val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }

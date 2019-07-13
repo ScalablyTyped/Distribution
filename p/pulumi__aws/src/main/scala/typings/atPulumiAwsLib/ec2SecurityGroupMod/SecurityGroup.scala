@@ -23,9 +23,6 @@ class SecurityGroup protected ()
     * The ARN of the security group
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the security group
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Can be specified multiple times for each
@@ -39,9 +36,6 @@ class SecurityGroup protected ()
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
-  /**
-    * The name of the security group
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

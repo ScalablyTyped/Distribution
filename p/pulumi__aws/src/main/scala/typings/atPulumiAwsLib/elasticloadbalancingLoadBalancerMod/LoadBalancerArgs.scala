@@ -58,9 +58,6 @@ trait LoadBalancerArgs extends js.Object {
       atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_InstancePortInstanceProtocolLbPort]
     ]
   ]
-  /**
-    * The name of the ELB
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

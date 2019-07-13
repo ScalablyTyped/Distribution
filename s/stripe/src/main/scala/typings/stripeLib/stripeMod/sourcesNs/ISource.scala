@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ISource
   extends stripeLib.stripeMod.IResourceObject
      with stripeLib.stripeMod.IStripeSource {
-  var ach_credit_transfer: js.UndefOr[stripeLib.Anon_Accountnumber] = js.undefined
+  var ach_credit_transfer: js.UndefOr[stripeLib.Anon_AccountnumberBankname] = js.undefined
   var amount: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var card: js.UndefOr[stripeLib.stripeMod.ICardHashInfo] = js.undefined
   var client_secret: java.lang.String
@@ -45,7 +45,7 @@ object ISource {
     status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.chargeable | stripeLib.stripeLibStrings.consumed | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.pending,
     `type`: stripeLib.stripeLibStrings.ach_credit_transfer | stripeLib.stripeLibStrings.ach_debit | stripeLib.stripeLibStrings.alipay | stripeLib.stripeLibStrings.bancontact | stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.card_present | stripeLib.stripeLibStrings.eps | stripeLib.stripeLibStrings.giropay | stripeLib.stripeLibStrings.ideal | stripeLib.stripeLibStrings.multibanco | stripeLib.stripeLibStrings.p24 | stripeLib.stripeLibStrings.sepa_debit | stripeLib.stripeLibStrings.sofort | stripeLib.stripeLibStrings.three_d_secure | stripeLib.stripeLibStrings.wechat,
     usage: stripeLib.stripeLibStrings.reusable | stripeLib.stripeLibStrings.single_use,
-    ach_credit_transfer: stripeLib.Anon_Accountnumber = null,
+    ach_credit_transfer: stripeLib.Anon_AccountnumberBankname = null,
     amount: scala.Int | scala.Double = null,
     card: stripeLib.stripeMod.ICardHashInfo = null,
     code_verification: stripeLib.Anon_Attemptsremaining = null,

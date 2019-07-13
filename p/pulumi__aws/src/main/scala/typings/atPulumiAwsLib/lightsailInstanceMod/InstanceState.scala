@@ -46,6 +46,10 @@ trait InstanceState extends js.Object {
   val publicIpAddress: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val ramSize: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * launch script to configure server with additional user data
     */
   val userData: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -68,6 +72,7 @@ object InstanceState {
     privateIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     publicIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ramSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): InstanceState = {
@@ -85,6 +90,7 @@ object InstanceState {
     if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
     if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress.asInstanceOf[js.Any])
     if (ramSize != null) __obj.updateDynamic("ramSize")(ramSize.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceState]

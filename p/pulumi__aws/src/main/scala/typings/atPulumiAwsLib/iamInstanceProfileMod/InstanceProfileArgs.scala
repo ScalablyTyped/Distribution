@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InstanceProfileArgs extends js.Object {
-  /**
-    * The instance profile's name.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -24,9 +21,6 @@ trait InstanceProfileArgs extends js.Object {
   val role: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamRoleMod.Role]
   ] = js.undefined
-  /**
-    * The list of roles assigned to the instance profile. (**Deprecated**)
-    */
   val roles: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       js.Array[

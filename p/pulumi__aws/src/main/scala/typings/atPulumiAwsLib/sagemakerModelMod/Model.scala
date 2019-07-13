@@ -34,9 +34,6 @@ class Model protected ()
     * A role that SageMaker can assume to access model artifacts and docker images for deployment.
     */
   val executionRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The name of the model.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.

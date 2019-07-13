@@ -101,6 +101,9 @@ class Table protected ()
   /**
     * Creates a new subscription to events fired from this Table to the handler provided,
     * along with options to control the behavior of the subscription.
+    *
+    * In order to receive events the [Table] must have been created with the `streamEnabled: true`
+    * value as well as an appropriate `streamViewType`.
     */
   def onEvent(
     name: java.lang.String,

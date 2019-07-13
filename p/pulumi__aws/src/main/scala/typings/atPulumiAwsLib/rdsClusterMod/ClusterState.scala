@@ -16,9 +16,6 @@ trait ClusterState extends js.Object {
     * Amazon Resource Name (ARN) of cluster
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The availability zone of the instance
-    */
   val availabilityZones: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
@@ -30,9 +27,6 @@ trait ClusterState extends js.Object {
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
-  /**
-    * The RDS Cluster Identifier
-    */
   val clusterIdentifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

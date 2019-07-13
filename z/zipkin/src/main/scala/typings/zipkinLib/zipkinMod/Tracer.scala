@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tracer protected () extends js.Object {
   def this(args: zipkinLib.Anon_CtxImpl) = this()
+  /** Returns the current trace ID or a sentinel value indicating its absence. */
   var id: TraceId = js.native
+  /** Creates a child of the current trace ID or a new root span. */
   def createChildId(): TraceId = js.native
   def createRootId(): TraceId = js.native
   def createRootId(isSampled: zipkinLib.zipkinMod.optionNs.IOption[scala.Boolean]): TraceId = js.native

@@ -95,9 +95,6 @@ trait GroupState extends js.Object {
   val mixedInstancesPolicy: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_InstancesDistributionLaunchTemplate]
   ] = js.undefined
-  /**
-    * The name of the autoscale group
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

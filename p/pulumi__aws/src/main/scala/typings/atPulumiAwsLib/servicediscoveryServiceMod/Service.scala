@@ -16,6 +16,7 @@ class Service protected ()
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: ServiceArgs) = this()
   def this(name: java.lang.String, args: ServiceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
@@ -29,7 +30,7 @@ class Service protected ()
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_DnsRecords] = js.native
+  val dnsConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DnsRecords]] = js.native
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
@@ -42,6 +43,10 @@ class Service protected ()
     * The name of the service.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The ID of the namespace to use for DNS configuration.
+    */
+  val namespaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

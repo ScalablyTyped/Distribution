@@ -70,9 +70,6 @@ class ClusterInstance protected ()
     * The database engine version.
     */
   val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The Instance identifier
-    */
   val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

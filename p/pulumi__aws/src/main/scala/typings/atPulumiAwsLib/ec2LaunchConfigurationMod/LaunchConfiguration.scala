@@ -57,9 +57,6 @@ class LaunchConfiguration protected ()
     * The key name that should be used for the instance.
     */
   val keyName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The name of the launch configuration.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

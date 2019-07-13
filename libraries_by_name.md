@@ -381,6 +381,7 @@
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
+| [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones | aws, amazon, regions, availability, zones, azs, global, infrastructure |
 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript | api, amazon, aws, ec2, simpledb, s3, sqs, ses, sns, route53, rds, elasticache, cloudfront, fps, cloudformation, cloudwatch, dynamodb, iam, swf, autoscaling, cloudsearch, elb, loadbalancing, emr, mapreduce, importexport, storagegateway, workflow, ebs, vpc, beanstalk, glacier, kinesis, cloudtrail, waf |
 | [aws-serverless-express](./a/aws-serverless-express) | This library enables you to utilize AWS Lambda and | aws, serverless, api, gateway, lambda, express |
 | [aws4](./a/aws4) | Signs and prepares requests using AWS Signature Ve | amazon, aws, signature, s3, ec2, autoscaling, cloudformation, elasticloadbalancing, elb, elasticbeanstalk, cloudsearch, dynamodb, kinesis, lambda, glacier, sqs, sns, iam, sts, ses, swf, storagegateway, datapipeline, directconnect, redshift, opsworks, rds, monitoring, cloudtrail, cloudfront, codedeploy, elasticache, elasticmapreduce, elastictranscoder, emr, cloudwatch, mobileanalytics, cognitoidentity, cognitosync, cognito, containerservice, ecs, appstream, keymanagementservice, kms, config, cloudhsm, route53, route53domains, logs |
@@ -3834,7 +3835,6 @@
 | [mathjax](./m/mathjax) | Beautiful math in all browsers. MathJax is an open | math, svg, mathml, tex, latex, asciimath, browser, browser-only |
 | [mathjs](./m/mathjs) | Math.js is an extensive math library for JavaScrip | math, mathematics, functions, numeric, algebra, parser, expression, number, bignumber, complex, fraction, matrix, unit |
 | [matter-js](./m/matter-js) | a 2D rigid body physics engine for the web | javascript, canvas, html5, physics, physics engine, game engine, rigid body physics |
-| [maxmind](./m/maxmind) | IP lookup using Maxmind databases | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup, ip base, geocode, timezone, asn |
 | [mcrypt](./m/mcrypt) | MCrypt bindings | mcrypt, crypto |
 | [mcustomscrollbar](./m/mcustomscrollbar) | - | - |
 | [md5](./m/md5) | js function for hashing messages with MD5 | - |
@@ -5238,6 +5238,7 @@
 | [react-motion-loop](./r/react-motion-loop) | Looping animation for react-motion Spring | component, react-component, react |
 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion. | react, component, slider, carousel |
 | [react-motion-ui-pack](./r/react-motion-ui-pack) | Addon component wrappers for common UI transitions | react, component, react-component, ui, motion, transition, animation |
+| [react-movable](./r/react-movable) | Drag and drop lists. | react, react-dom, react-component, sortable, reorder, reorderable, drag, drop, list, table, drag and drop, dnd, movable |
 | [react-move](./r/react-move) | Beautiful, data-driven animations for React. | react-move, resonance, d3, svg, react, charts, graphs, animation, transitions, interpolation |
 | [react-multi-ref](./r/react-multi-ref) | Utility for keeping references to multiple React e | react, ref |
 | [react-native](./r/react-native) | A framework for building native apps using React | - |
@@ -5380,6 +5381,7 @@
 | [react-props-decorators](./r/react-props-decorators) | Define props of React components by ES7 decorators | - |
 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we | react, qr, qrcode, qrreader |
 | [react-radio-group](./r/react-radio-group) | Better radio buttons. | facebook, react, radio, radio-group, component, react-component |
+| [react-range](./r/react-range) | Range input. Slides in all directions. | react, react-dom, react-component, range, slider, interval |
 | [react-rangeslider](./r/react-rangeslider) | A lightweight react component that acts as a HTML5 | rangeslider, range-slider, react-rangeslider, input, range, react, slider |
 | [react-recaptcha](./r/react-recaptcha) | A react.js reCAPTCHA for Google | react, react-component, reCAPTCHA, component |
 | [react-reconciler](./r/react-reconciler) | React package for creating custom renderers. | react |
@@ -6489,6 +6491,7 @@
 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | [timer-machine](./t/timer-machine) | A lightweight, pause-able timer class | timer, time, pause, stopwatch |
 | [timezone-js](./t/timezone-js) | JavaScript timezone library based on Olson timezon | - |
+| [timezone-support](./t/timezone-support) | Lightweight time zone support for your application | timezone, tzdata, convert, offset, date, time |
 | [timezonecomplete](./t/timezonecomplete) | DateTime, TimeZone, Duration and Period library ai | Date, time zone, timezone, period, duration, timezonejs, date arithmetic, date math |
 | [timezoned-date](./t/timezoned-date) | Constructors and objects behave exactly like built | date, isomorphic, jsdom, mock, monkeypatch, server-side-rendering, timezone, tz, utc |
 | [timing-safe-equal](./t/timing-safe-equal) | timing safe equals, but for the browser | timing |

@@ -29,9 +29,6 @@ class Cluster protected ()
     * Amazon Resource Name (ARN) of cluster
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The availability zone of the instance
-    */
   val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The target backtrack window, in seconds. Only available for `aurora` engine currently. To disable backtracking, set this value to `0`. Defaults to `0`. Must be between `0` and `259200` (72 hours)
@@ -41,9 +38,6 @@ class Cluster protected ()
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
-  /**
-    * The RDS Cluster Identifier
-    */
   val clusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

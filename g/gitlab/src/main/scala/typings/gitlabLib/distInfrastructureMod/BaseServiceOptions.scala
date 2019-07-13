@@ -15,7 +15,7 @@ trait BaseServiceOptions extends Sudo {
   var requester: js.UndefOr[Requester] = js.undefined
   var token: js.UndefOr[java.lang.String] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
-  var version: js.UndefOr[java.lang.String] = js.undefined
+  var version: js.UndefOr[gitlabLib.gitlabLibStrings.v3 | gitlabLib.gitlabLibStrings.v4] = js.undefined
 }
 
 object BaseServiceOptions {
@@ -31,7 +31,7 @@ object BaseServiceOptions {
     sudo: java.lang.String | scala.Double = null,
     token: java.lang.String = null,
     url: java.lang.String = null,
-    version: java.lang.String = null
+    version: gitlabLib.gitlabLibStrings.v3 | gitlabLib.gitlabLibStrings.v4 = null
   ): BaseServiceOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize)
@@ -44,7 +44,7 @@ object BaseServiceOptions {
     if (sudo != null) __obj.updateDynamic("sudo")(sudo.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token)
     if (url != null) __obj.updateDynamic("url")(url)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseServiceOptions]
   }
 }

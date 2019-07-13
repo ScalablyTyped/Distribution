@@ -18,18 +18,12 @@ class RolePolicy protected ()
     */
   def this(name: java.lang.String, args: RolePolicyArgs) = this()
   def this(name: java.lang.String, args: RolePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The name of the policy.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The policy document attached to the role.
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IAM role to attach to the policy.

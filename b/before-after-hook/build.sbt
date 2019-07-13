@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "before-after-hook"
-version := "2.0.1-e318bd"
+version := "2.1.0-1d3432"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

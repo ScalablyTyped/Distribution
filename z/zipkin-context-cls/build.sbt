@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "zipkin-context-cls"
-version := "0.11-dt-20190225Z-2ecefe"
+version := "0.11-dt-20190225Z-cf464b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "zipkin" % "0.18.4-d06123")
+  "org.scalablytyped" %%% "zipkin" % "0.18.5-8a5936")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,18 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("before-after-hook", JSImport.Namespace)
 @js.native
-class ^ () extends HookCollection
-
-@JSImport("before-after-hook", JSImport.Namespace)
-@js.native
 object ^ extends js.Object {
-  /**
-    * Creates a hook collection
-    */
-  var Collection: beforeDashAfterDashHookLib.Anon_HookCollection = js.native
-  /**
-    * Creates a nameless hook that allows passing down typings for the options
-    */
-  var Singular: beforeDashAfterDashHookLib.Anon_HookSingular = js.native
+  val Collection: beforeDashAfterDashHookLib.beforeDashAfterDashHookMod.Collection = js.native
+  val Hook: beforeDashAfterDashHookLib.beforeDashAfterDashHookMod.Hook = js.native
+  val Singular: beforeDashAfterDashHookLib.beforeDashAfterDashHookMod.Singular = js.native
+  val default: Hook = js.native
 }
 

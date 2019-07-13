@@ -6,18 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RolePolicyState extends js.Object {
-  /**
-    * The name of the policy.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The policy document attached to the role.
-    */
   val policy: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
   ] = js.undefined

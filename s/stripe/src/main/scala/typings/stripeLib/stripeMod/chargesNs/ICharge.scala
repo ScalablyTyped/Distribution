@@ -108,6 +108,18 @@ trait ICharge
     */
   var paid: scala.Boolean
   /**
+    * ID of the PaymentIntent associated with this charge, if one exists.
+    */
+  var payment_intent: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * ID of the payment method used in this charge.
+    */
+  var payment_method: java.lang.String
+  /**
+    * Details about the payment method at the time of the transaction.
+    */
+  var payment_method_details: IPaymentMethodDetails
+  /**
     * This is the email address that the receipt for this charge was sent to.
     */
   var receipt_email: java.lang.String | scala.Null
@@ -187,6 +199,8 @@ object ICharge {
     metadata: stripeLib.stripeMod.IMetadata,
     `object`: stripeLib.stripeLibStrings.charge,
     paid: scala.Boolean,
+    payment_method: java.lang.String,
+    payment_method_details: IPaymentMethodDetails,
     receipt_url: java.lang.String,
     refunded: scala.Boolean,
     refunds: IChargeRefunds,
@@ -204,6 +218,7 @@ object ICharge {
     on_behalf_of: java.lang.String = null,
     order: java.lang.String | stripeLib.stripeMod.ordersNs.IOrder = null,
     outcome: IOutcome = null,
+    payment_intent: java.lang.String = null,
     receipt_email: java.lang.String = null,
     receipt_number: java.lang.String = null,
     review: java.lang.String | stripeLib.stripeMod.reviewsNs.IReview = null,
@@ -213,7 +228,7 @@ object ICharge {
     transfer: java.lang.String | stripeLib.stripeMod.transfersNs.ITransfer = null,
     transfer_group: java.lang.String = null
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, payment_method = payment_method, payment_method_details = payment_method_details, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
@@ -227,6 +242,7 @@ object ICharge {
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number)
     if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])

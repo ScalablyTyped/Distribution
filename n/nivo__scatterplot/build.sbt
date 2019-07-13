@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__scatterplot"
-version := "0.59.2-32a22b"
+version := "0.59.3-32a22b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

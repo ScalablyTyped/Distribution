@@ -71,7 +71,7 @@ class CertificateAuthority protected ()
     */
   val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
-    * The type of the certificate authority. Currently, this must be `SUBORDINATE`.
+    * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
     */
   val `type`: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }

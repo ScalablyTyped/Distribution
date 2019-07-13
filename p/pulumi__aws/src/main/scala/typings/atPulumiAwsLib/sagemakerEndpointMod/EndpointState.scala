@@ -14,9 +14,6 @@ trait EndpointState extends js.Object {
     * The name of the endpoint configuration to use.
     */
   val endpointConfigName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the endpoint.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

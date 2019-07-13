@@ -87,9 +87,6 @@ class Group protected ()
     * Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
     */
   val mixedInstancesPolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InstancesDistribution]] = js.native
-  /**
-    * The name of the autoscale group
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

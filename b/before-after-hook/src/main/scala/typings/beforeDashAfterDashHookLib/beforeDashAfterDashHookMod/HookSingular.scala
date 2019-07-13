@@ -6,70 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HookSingular[T] extends js.Object {
+trait HookSingular[O, R, E] extends js.Object {
   /**
-    * Invoke before and after hooks without options
+    * Invoke before and after hooks
     */
-  def apply(
-    method: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): js.Promise[T] = js.native
+  def apply(hookMethod: HookMethod[O, R]): js.Promise[R] = js.native
+  def apply(hookMethod: HookMethod[O, R], options: O): js.Promise[R] = js.native
   /**
-    * Invoke before and after hooks with options
+    * Add `after` hook
     */
-  def apply(
-    method: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ],
-    options: T
-  ): js.Promise[T] = js.native
+  def after(afterHook: AfterHook[O, R]): scala.Unit = js.native
   /**
-    * Add after hook. Returns `UnnamedHook` instance for chaining.
+    * Add `before` hook
     */
-  def after(
-    afterFn: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): HookSingular[T] = js.native
+  def before(beforeHook: BeforeHook[O]): scala.Unit = js.native
   /**
-    * Add before hook. Returns `UnnamedHook` instance for chaining.
+    * Add `error` hook
     */
-  def before(
-    beforeFn: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): HookSingular[T] = js.native
+  def error(errorHook: ErrorHook[O, E]): scala.Unit = js.native
   /**
-    * Add error hook. Returns `UnnamedHook` instance for chaining.
+    * Remove added hook
     */
-  def error(
-    errorFn: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): HookSingular[T] = js.native
+  def remove(hook: AnyHook[O, R, E]): scala.Unit = js.native
   /**
-    * Removes hook. Returns `UnnamedHook` instance for chaining.
+    * Add `wrap` hook
     */
-  def remove(
-    beforeHookMethod: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): HookSingular[T] = js.native
-  /**
-    * Add wrap hook. Returns `UnnamedHook` instance for chaining.
-    */
-  def wrap(
-    wrapFn: js.Function1[
-      /* options */ T, 
-      scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
-  ): HookSingular[T] = js.native
+  def wrap(wrapHook: WrapHook[O, R]): scala.Unit = js.native
 }
 

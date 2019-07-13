@@ -12036,7 +12036,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsFirehoseMod._DeliveryStreamType
   
   @js.native
-  sealed trait Kinetic extends js.Object
+  sealed trait Kinetic
+    extends awsDashSdkLib.clientsRobomakerMod._RobotSoftwareSuiteVersionType
   
   @js.native
   sealed trait KmsDataKeyReusePeriodSeconds
@@ -13658,6 +13659,10 @@ object awsDashSdkLibStrings {
   sealed trait `Megabytes/Second`
     extends awsDashSdkLib.clientsLightsailMod._MetricUnit
        with awsDashSdkLib.clientsCloudwatchMod._StandardUnit
+  
+  @js.native
+  sealed trait Melodic
+    extends awsDashSdkLib.clientsRobomakerMod._RobotSoftwareSuiteVersionType
   
   @js.native
   sealed trait MemcachedMemory
@@ -23466,6 +23471,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait c5DOT18xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait c5DOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -23474,16 +23483,32 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait c5DOT2xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait c5DOT4xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait c5DOT4xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait c5DOT9xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait c5DOT9xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait c5DOTlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait c5DOTlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait c5DOTmetal
@@ -23492,6 +23517,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait c5DOTxlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait c5DOTxlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait c5dDOT18xlarge
@@ -26274,6 +26303,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5DOT12xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait m5DOT16xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -26286,8 +26319,16 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5DOT2xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait m5DOT4xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait m5DOT4xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait m5DOT8xlarge
@@ -26298,12 +26339,20 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5DOTlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait m5DOTmetal
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
   sealed trait m5DOTxlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait m5DOTxlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait m5aDOT12xlarge
@@ -27555,6 +27604,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5DOT12xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait r5DOT16xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -27567,8 +27620,16 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5DOT2xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait r5DOT4xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait r5DOT4xlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait r5DOT8xlarge
@@ -27579,12 +27640,20 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5DOTlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
+  
+  @js.native
   sealed trait r5DOTmetal
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
   sealed trait r5DOTxlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait r5DOTxlargeDOTelasticsearch
+    extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
   sealed trait r5aDOT12xlarge
@@ -34838,6 +34907,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `Megabytes/Second`: `Megabytes/Second` = "Megabytes/Second".asInstanceOf[`Megabytes/Second`]
   @scala.inline
+  def Melodic: Melodic = "Melodic".asInstanceOf[Melodic]
+  @scala.inline
   def MemcachedMemory: MemcachedMemory = "MemcachedMemory".asInstanceOf[MemcachedMemory]
   @scala.inline
   def MessageDeduplicationId: MessageDeduplicationId = "MessageDeduplicationId".asInstanceOf[MessageDeduplicationId]
@@ -38964,19 +39035,31 @@ object awsDashSdkLibStrings {
   @scala.inline
   def c5DOT18xlarge: c5DOT18xlarge = "c5.18xlarge".asInstanceOf[c5DOT18xlarge]
   @scala.inline
+  def c5DOT18xlargeDOTelasticsearch: c5DOT18xlargeDOTelasticsearch = "c5.18xlarge.elasticsearch".asInstanceOf[c5DOT18xlargeDOTelasticsearch]
+  @scala.inline
   def c5DOT24xlarge: c5DOT24xlarge = "c5.24xlarge".asInstanceOf[c5DOT24xlarge]
   @scala.inline
   def c5DOT2xlarge: c5DOT2xlarge = "c5.2xlarge".asInstanceOf[c5DOT2xlarge]
   @scala.inline
+  def c5DOT2xlargeDOTelasticsearch: c5DOT2xlargeDOTelasticsearch = "c5.2xlarge.elasticsearch".asInstanceOf[c5DOT2xlargeDOTelasticsearch]
+  @scala.inline
   def c5DOT4xlarge: c5DOT4xlarge = "c5.4xlarge".asInstanceOf[c5DOT4xlarge]
+  @scala.inline
+  def c5DOT4xlargeDOTelasticsearch: c5DOT4xlargeDOTelasticsearch = "c5.4xlarge.elasticsearch".asInstanceOf[c5DOT4xlargeDOTelasticsearch]
   @scala.inline
   def c5DOT9xlarge: c5DOT9xlarge = "c5.9xlarge".asInstanceOf[c5DOT9xlarge]
   @scala.inline
+  def c5DOT9xlargeDOTelasticsearch: c5DOT9xlargeDOTelasticsearch = "c5.9xlarge.elasticsearch".asInstanceOf[c5DOT9xlargeDOTelasticsearch]
+  @scala.inline
   def c5DOTlarge: c5DOTlarge = "c5.large".asInstanceOf[c5DOTlarge]
+  @scala.inline
+  def c5DOTlargeDOTelasticsearch: c5DOTlargeDOTelasticsearch = "c5.large.elasticsearch".asInstanceOf[c5DOTlargeDOTelasticsearch]
   @scala.inline
   def c5DOTmetal: c5DOTmetal = "c5.metal".asInstanceOf[c5DOTmetal]
   @scala.inline
   def c5DOTxlarge: c5DOTxlarge = "c5.xlarge".asInstanceOf[c5DOTxlarge]
+  @scala.inline
+  def c5DOTxlargeDOTelasticsearch: c5DOTxlargeDOTelasticsearch = "c5.xlarge.elasticsearch".asInstanceOf[c5DOTxlargeDOTelasticsearch]
   @scala.inline
   def c5dDOT18xlarge: c5dDOT18xlarge = "c5d.18xlarge".asInstanceOf[c5dDOT18xlarge]
   @scala.inline
@@ -40162,21 +40245,31 @@ object awsDashSdkLibStrings {
   @scala.inline
   def m5DOT12xlarge: m5DOT12xlarge = "m5.12xlarge".asInstanceOf[m5DOT12xlarge]
   @scala.inline
+  def m5DOT12xlargeDOTelasticsearch: m5DOT12xlargeDOTelasticsearch = "m5.12xlarge.elasticsearch".asInstanceOf[m5DOT12xlargeDOTelasticsearch]
+  @scala.inline
   def m5DOT16xlarge: m5DOT16xlarge = "m5.16xlarge".asInstanceOf[m5DOT16xlarge]
   @scala.inline
   def m5DOT24xlarge: m5DOT24xlarge = "m5.24xlarge".asInstanceOf[m5DOT24xlarge]
   @scala.inline
   def m5DOT2xlarge: m5DOT2xlarge = "m5.2xlarge".asInstanceOf[m5DOT2xlarge]
   @scala.inline
+  def m5DOT2xlargeDOTelasticsearch: m5DOT2xlargeDOTelasticsearch = "m5.2xlarge.elasticsearch".asInstanceOf[m5DOT2xlargeDOTelasticsearch]
+  @scala.inline
   def m5DOT4xlarge: m5DOT4xlarge = "m5.4xlarge".asInstanceOf[m5DOT4xlarge]
+  @scala.inline
+  def m5DOT4xlargeDOTelasticsearch: m5DOT4xlargeDOTelasticsearch = "m5.4xlarge.elasticsearch".asInstanceOf[m5DOT4xlargeDOTelasticsearch]
   @scala.inline
   def m5DOT8xlarge: m5DOT8xlarge = "m5.8xlarge".asInstanceOf[m5DOT8xlarge]
   @scala.inline
   def m5DOTlarge: m5DOTlarge = "m5.large".asInstanceOf[m5DOTlarge]
   @scala.inline
+  def m5DOTlargeDOTelasticsearch: m5DOTlargeDOTelasticsearch = "m5.large.elasticsearch".asInstanceOf[m5DOTlargeDOTelasticsearch]
+  @scala.inline
   def m5DOTmetal: m5DOTmetal = "m5.metal".asInstanceOf[m5DOTmetal]
   @scala.inline
   def m5DOTxlarge: m5DOTxlarge = "m5.xlarge".asInstanceOf[m5DOTxlarge]
+  @scala.inline
+  def m5DOTxlargeDOTelasticsearch: m5DOTxlargeDOTelasticsearch = "m5.xlarge.elasticsearch".asInstanceOf[m5DOTxlargeDOTelasticsearch]
   @scala.inline
   def m5aDOT12xlarge: m5aDOT12xlarge = "m5a.12xlarge".asInstanceOf[m5aDOT12xlarge]
   @scala.inline
@@ -40714,21 +40807,31 @@ object awsDashSdkLibStrings {
   @scala.inline
   def r5DOT12xlarge: r5DOT12xlarge = "r5.12xlarge".asInstanceOf[r5DOT12xlarge]
   @scala.inline
+  def r5DOT12xlargeDOTelasticsearch: r5DOT12xlargeDOTelasticsearch = "r5.12xlarge.elasticsearch".asInstanceOf[r5DOT12xlargeDOTelasticsearch]
+  @scala.inline
   def r5DOT16xlarge: r5DOT16xlarge = "r5.16xlarge".asInstanceOf[r5DOT16xlarge]
   @scala.inline
   def r5DOT24xlarge: r5DOT24xlarge = "r5.24xlarge".asInstanceOf[r5DOT24xlarge]
   @scala.inline
   def r5DOT2xlarge: r5DOT2xlarge = "r5.2xlarge".asInstanceOf[r5DOT2xlarge]
   @scala.inline
+  def r5DOT2xlargeDOTelasticsearch: r5DOT2xlargeDOTelasticsearch = "r5.2xlarge.elasticsearch".asInstanceOf[r5DOT2xlargeDOTelasticsearch]
+  @scala.inline
   def r5DOT4xlarge: r5DOT4xlarge = "r5.4xlarge".asInstanceOf[r5DOT4xlarge]
+  @scala.inline
+  def r5DOT4xlargeDOTelasticsearch: r5DOT4xlargeDOTelasticsearch = "r5.4xlarge.elasticsearch".asInstanceOf[r5DOT4xlargeDOTelasticsearch]
   @scala.inline
   def r5DOT8xlarge: r5DOT8xlarge = "r5.8xlarge".asInstanceOf[r5DOT8xlarge]
   @scala.inline
   def r5DOTlarge: r5DOTlarge = "r5.large".asInstanceOf[r5DOTlarge]
   @scala.inline
+  def r5DOTlargeDOTelasticsearch: r5DOTlargeDOTelasticsearch = "r5.large.elasticsearch".asInstanceOf[r5DOTlargeDOTelasticsearch]
+  @scala.inline
   def r5DOTmetal: r5DOTmetal = "r5.metal".asInstanceOf[r5DOTmetal]
   @scala.inline
   def r5DOTxlarge: r5DOTxlarge = "r5.xlarge".asInstanceOf[r5DOTxlarge]
+  @scala.inline
+  def r5DOTxlargeDOTelasticsearch: r5DOTxlargeDOTelasticsearch = "r5.xlarge.elasticsearch".asInstanceOf[r5DOTxlargeDOTelasticsearch]
   @scala.inline
   def r5aDOT12xlarge: r5aDOT12xlarge = "r5a.12xlarge".asInstanceOf[r5aDOT12xlarge]
   @scala.inline

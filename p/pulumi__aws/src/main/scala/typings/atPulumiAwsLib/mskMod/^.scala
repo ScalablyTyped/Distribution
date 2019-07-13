@@ -13,5 +13,10 @@ object ^ extends js.Object {
     args: atPulumiAwsLib.mskGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.mskGetClusterMod.GetClusterResult] = js.native
+  def getConfiguration(args: atPulumiAwsLib.mskGetConfigurationMod.GetConfigurationArgs): js.Promise[atPulumiAwsLib.mskGetConfigurationMod.GetConfigurationResult] = js.native
+  def getConfiguration(
+    args: atPulumiAwsLib.mskGetConfigurationMod.GetConfigurationArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.mskGetConfigurationMod.GetConfigurationResult] = js.native
 }
 

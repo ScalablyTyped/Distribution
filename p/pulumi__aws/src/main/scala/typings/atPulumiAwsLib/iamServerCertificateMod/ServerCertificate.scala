@@ -33,9 +33,6 @@ class ServerCertificate protected ()
     * of the chain.
     */
   val certificateChain: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The name of the Server Certificate
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified

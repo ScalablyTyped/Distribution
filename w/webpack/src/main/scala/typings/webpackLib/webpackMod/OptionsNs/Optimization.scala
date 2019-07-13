@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Optimization extends js.Object {
+  /** Tells webpack which algorithm to use when choosing chunk ids. Default false. */
+  var chunkIds: js.UndefOr[
+    scala.Boolean | webpackLib.webpackLibStrings.natural | webpackLib.webpackLibStrings.named | webpackLib.webpackLibStrings.size | webpackLib.webpackLibStrings.`total-size`
+  ] = js.undefined
   /** Tries to find segments of the module graph which can be safely concatenated into a single module. Depends on optimization.providedExports and optimization.usedExports. */
   var concatenateModules: js.UndefOr[scala.Boolean] = js.undefined
   /** Chunks which are subsets of other chunks are determined and flagged in a way that subsets don’t have to be loaded when the bigger chunk has been loaded. */
@@ -16,6 +20,10 @@ trait Optimization extends js.Object {
   var minimize: js.UndefOr[scala.Boolean] = js.undefined
   /** Minimizer(s) to use for minimizing the output */
   var minimizer: js.UndefOr[js.Array[webpackLib.webpackMod.Plugin | tapableLib.tapableMod.TapableNs.Plugin]] = js.undefined
+  /** Tells webpack which algorithm to use when choosing module ids. Default false. */
+  var moduleIds: js.UndefOr[
+    scala.Boolean | webpackLib.webpackLibStrings.natural | webpackLib.webpackLibStrings.named | webpackLib.webpackLibStrings.hashed | webpackLib.webpackLibStrings.size | webpackLib.webpackLibStrings.`total-size`
+  ] = js.undefined
   /** Instead of numeric ids, give chunks readable names for better debugging. */
   var namedChunks: js.UndefOr[scala.Boolean] = js.undefined
   /** Instead of numeric ids, give modules readable names for better debugging. */
@@ -60,11 +68,13 @@ trait Optimization extends js.Object {
 object Optimization {
   @scala.inline
   def apply(
+    chunkIds: scala.Boolean | webpackLib.webpackLibStrings.natural | webpackLib.webpackLibStrings.named | webpackLib.webpackLibStrings.size | webpackLib.webpackLibStrings.`total-size` = null,
     concatenateModules: js.UndefOr[scala.Boolean] = js.undefined,
     flagIncludedChunks: js.UndefOr[scala.Boolean] = js.undefined,
     mergeDuplicateChunks: js.UndefOr[scala.Boolean] = js.undefined,
     minimize: js.UndefOr[scala.Boolean] = js.undefined,
     minimizer: js.Array[webpackLib.webpackMod.Plugin | tapableLib.tapableMod.TapableNs.Plugin] = null,
+    moduleIds: scala.Boolean | webpackLib.webpackLibStrings.natural | webpackLib.webpackLibStrings.named | webpackLib.webpackLibStrings.hashed | webpackLib.webpackLibStrings.size | webpackLib.webpackLibStrings.`total-size` = null,
     namedChunks: js.UndefOr[scala.Boolean] = js.undefined,
     namedModules: js.UndefOr[scala.Boolean] = js.undefined,
     noEmitOnErrors: js.UndefOr[scala.Boolean] = js.undefined,
@@ -80,11 +90,13 @@ object Optimization {
     usedExports: js.UndefOr[scala.Boolean] = js.undefined
   ): Optimization = {
     val __obj = js.Dynamic.literal()
+    if (chunkIds != null) __obj.updateDynamic("chunkIds")(chunkIds.asInstanceOf[js.Any])
     if (!js.isUndefined(concatenateModules)) __obj.updateDynamic("concatenateModules")(concatenateModules)
     if (!js.isUndefined(flagIncludedChunks)) __obj.updateDynamic("flagIncludedChunks")(flagIncludedChunks)
     if (!js.isUndefined(mergeDuplicateChunks)) __obj.updateDynamic("mergeDuplicateChunks")(mergeDuplicateChunks)
     if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
     if (minimizer != null) __obj.updateDynamic("minimizer")(minimizer)
+    if (moduleIds != null) __obj.updateDynamic("moduleIds")(moduleIds.asInstanceOf[js.Any])
     if (!js.isUndefined(namedChunks)) __obj.updateDynamic("namedChunks")(namedChunks)
     if (!js.isUndefined(namedModules)) __obj.updateDynamic("namedModules")(namedModules)
     if (!js.isUndefined(noEmitOnErrors)) __obj.updateDynamic("noEmitOnErrors")(noEmitOnErrors)

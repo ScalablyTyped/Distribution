@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "octokit__request"
-version := "5.0.0-4c8551"
+version := "5.0.1-4c8551"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

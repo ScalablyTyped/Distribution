@@ -40,7 +40,9 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: James Roland Cabresos <https://github.com/staticfunction>
 //                 Linus Unnebäck <https://github.com/LinusU>
 //                 Johan Davidsson <https://github.com/johandavidson>
+//                 GP <https://github.com/paambaati>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.2
 
 ```
 
