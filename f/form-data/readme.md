@@ -1,7 +1,7 @@
 
 # Scala.js typings for form-data
 
-Typings are for version 2.2
+Typings are for version 2.5.0
 
 ## Library description:
 A library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.
@@ -24,7 +24,7 @@ A library to create readable "multipart/form-data" streams. Can be used to submi
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,14 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for form-data 2.2
-// Project: https://github.com/form-data/form-data
 // Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>
 //                 Leon Yu <https://github.com/leonyu>
 //                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-// Imported from: https://github.com/soywiz/typescript-node-definitions/form-data.d.ts
+//                 Maple Miao <https://github.com/mapleeit>
 
 ```
 

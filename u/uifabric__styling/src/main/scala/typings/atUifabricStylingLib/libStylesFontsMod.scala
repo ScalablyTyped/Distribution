@@ -52,10 +52,12 @@ object libStylesFontsMod extends js.Object {
   @js.native
   object LocalizedFontFamiliesNs extends js.Object {
     val Arabic: java.lang.String = js.native
+    val Armenian: java.lang.String = js.native
     val ChineseSimplified: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteMicrosoft Yahei UI_quote, Verdana, Simsun` = js.native
     val ChineseTraditional: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteMicrosoft Jhenghei UI_quote, Pmingliu` = js.native
     val Cyrillic: java.lang.String = js.native
     val EastEuropean: java.lang.String = js.native
+    val Georgian: java.lang.String = js.native
     val Greek: java.lang.String = js.native
     val Hebrew: java.lang.String = js.native
     val Hindi: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteNirmala UI_quote` = js.native
@@ -71,8 +73,10 @@ object libStylesFontsMod extends js.Object {
   @js.native
   object LocalizedFontNamesNs extends js.Object {
     val Arabic: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Arabic)` = js.native
+    val Armenian: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Armenian)` = js.native
     val Cyrillic: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Cyrillic)` = js.native
     val EastEuropean: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (East European)` = js.native
+    val Georgian: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Georgian)` = js.native
     val Greek: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Greek)` = js.native
     val Hebrew: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Hebrew)` = js.native
     val Selawik: atUifabricStylingLib.atUifabricStylingLibStrings.`Selawik Web` = js.native

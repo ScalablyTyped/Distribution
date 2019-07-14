@@ -46,10 +46,16 @@ object atUifabricStylingLibStrings {
   sealed trait `Segoe UI Web (Arabic)` extends js.Object
   
   @js.native
+  sealed trait `Segoe UI Web (Armenian)` extends js.Object
+  
+  @js.native
   sealed trait `Segoe UI Web (Cyrillic)` extends js.Object
   
   @js.native
   sealed trait `Segoe UI Web (East European)` extends js.Object
+  
+  @js.native
+  sealed trait `Segoe UI Web (Georgian)` extends js.Object
   
   @js.native
   sealed trait `Segoe UI Web (Greek)` extends js.Object
@@ -127,9 +133,13 @@ object atUifabricStylingLibStrings {
   @scala.inline
   def `Segoe UI Web (Arabic)`: `Segoe UI Web (Arabic)` = "Segoe UI Web (Arabic)".asInstanceOf[`Segoe UI Web (Arabic)`]
   @scala.inline
+  def `Segoe UI Web (Armenian)`: `Segoe UI Web (Armenian)` = "Segoe UI Web (Armenian)".asInstanceOf[`Segoe UI Web (Armenian)`]
+  @scala.inline
   def `Segoe UI Web (Cyrillic)`: `Segoe UI Web (Cyrillic)` = "Segoe UI Web (Cyrillic)".asInstanceOf[`Segoe UI Web (Cyrillic)`]
   @scala.inline
   def `Segoe UI Web (East European)`: `Segoe UI Web (East European)` = "Segoe UI Web (East European)".asInstanceOf[`Segoe UI Web (East European)`]
+  @scala.inline
+  def `Segoe UI Web (Georgian)`: `Segoe UI Web (Georgian)` = "Segoe UI Web (Georgian)".asInstanceOf[`Segoe UI Web (Georgian)`]
   @scala.inline
   def `Segoe UI Web (Greek)`: `Segoe UI Web (Greek)` = "Segoe UI Web (Greek)".asInstanceOf[`Segoe UI Web (Greek)`]
   @scala.inline

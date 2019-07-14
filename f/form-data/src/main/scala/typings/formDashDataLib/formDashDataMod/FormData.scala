@@ -12,6 +12,7 @@ trait FormData
   def append(key: java.lang.String, value: js.Any, options: AppendOptions): scala.Unit = js.native
   def append(key: java.lang.String, value: js.Any, options: java.lang.String): scala.Unit = js.native
   def getBoundary(): java.lang.String = js.native
+  def getBuffer(): nodeLib.Buffer = js.native
   def getHeaders(): Headers = js.native
   def getLength(callback: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* length */ scala.Double, scala.Unit]): scala.Unit = js.native
   def getLengthSync(): scala.Double = js.native

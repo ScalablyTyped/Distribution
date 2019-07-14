@@ -12,7 +12,7 @@ trait CollapsePanelProps extends js.Object {
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var header: reactLib.reactMod.ReactNode
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var key: java.lang.String
+  var key: java.lang.String | scala.Double
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -22,7 +22,7 @@ object CollapsePanelProps {
   @scala.inline
   def apply(
     header: reactLib.reactMod.ReactNode,
-    key: java.lang.String,
+    key: java.lang.String | scala.Double,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     extra: reactLib.reactMod.ReactNode = null,
@@ -32,7 +32,7 @@ object CollapsePanelProps {
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null
   ): CollapsePanelProps = {
-    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])

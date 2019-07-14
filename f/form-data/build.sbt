@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "form-data"
-version := "2.2-dt-20181119Z-93aa93"
+version := "2.5.0-218ade"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

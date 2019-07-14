@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait CollapseProps extends js.Object {
   /** 手风琴效果 */
   var accordion: js.UndefOr[scala.Boolean] = js.undefined
-  var activeKey: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+  var activeKey: js.UndefOr[(js.Array[java.lang.String | scala.Double]) | java.lang.String | scala.Double] = js.undefined
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var defaultActiveKey: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var defaultActiveKey: js.UndefOr[(js.Array[java.lang.String | scala.Double]) | java.lang.String | scala.Double] = js.undefined
   var destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined
   var expandIcon: js.UndefOr[js.Function1[/* panelProps */ PanelProps, reactLib.reactMod.ReactNode]] = js.undefined
   var expandIconPosition: js.UndefOr[ExpandIconPosition] = js.undefined
@@ -26,10 +26,10 @@ object CollapseProps {
   @scala.inline
   def apply(
     accordion: js.UndefOr[scala.Boolean] = js.undefined,
-    activeKey: js.Array[java.lang.String] | java.lang.String = null,
+    activeKey: (js.Array[java.lang.String | scala.Double]) | java.lang.String | scala.Double = null,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    defaultActiveKey: js.Array[java.lang.String] = null,
+    defaultActiveKey: (js.Array[java.lang.String | scala.Double]) | java.lang.String | scala.Double = null,
     destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined,
     expandIcon: /* panelProps */ PanelProps => reactLib.reactMod.ReactNode = null,
     expandIconPosition: ExpandIconPosition = null,
@@ -42,7 +42,7 @@ object CollapseProps {
     if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey.asInstanceOf[js.Any])
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
+    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyInactivePanel)) __obj.updateDynamic("destroyInactivePanel")(destroyInactivePanel)
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (expandIconPosition != null) __obj.updateDynamic("expandIconPosition")(expandIconPosition)

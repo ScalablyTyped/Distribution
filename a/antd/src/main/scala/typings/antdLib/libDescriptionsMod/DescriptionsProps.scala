@@ -16,7 +16,7 @@ trait DescriptionsProps extends js.Object {
     antdLib.antdLibStrings.middle | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default
   ] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object DescriptionsProps {
@@ -30,7 +30,7 @@ object DescriptionsProps {
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.middle | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,
-    title: java.lang.String = null
+    title: reactLib.reactMod.ReactNode = null
   ): DescriptionsProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
@@ -41,7 +41,7 @@ object DescriptionsProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptionsProps]
   }
 }
