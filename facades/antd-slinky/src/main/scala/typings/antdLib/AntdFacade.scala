@@ -136,6 +136,8 @@ object AntdFacade extends antdLibProps {
   @inline def NotificationArgsProps = typings.antdLib.esNotificationMod.ArgsProps
   type NotificationArgsProps = typings.antdLib.esNotificationMod.ArgsProps
 
+  val antdStrings: typings.antdLib.antdLibStrings.type = typings.antdLib.antdLibStrings
+  
   /**
    * This is an example of something a bit more complicated than just rewriting component types, and which a manually
    *  written facade. Given an implementation of a component which has a `form` prop which is to be prefilled,
