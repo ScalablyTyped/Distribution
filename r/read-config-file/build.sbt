@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "3.2.2-c812d9"
+version := "3.2.2-b9fb30"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.1-ce49f2",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-ce49f2",
   "org.scalablytyped" %%% "dotenv" % "6.1-dt-20190329Z-df32af",
   "org.scalablytyped" %%% "lazy-val" % "1.0.4-0819b0",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",

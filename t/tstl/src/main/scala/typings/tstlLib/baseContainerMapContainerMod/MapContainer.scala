@@ -51,10 +51,6 @@ abstract class MapContainer[Key, T, Unique /* <: scala.Boolean */, Source /* <: 
   /**
     * @hidden
     */
-  /* protected */ def _Get_iterator_type(): js.Any = js.native
-  /**
-    * @hidden
-    */
   /* protected */ def _Handle_erase(first: IteratorT, last: IteratorT): scala.Unit = js.native
   /**
     * @hidden
