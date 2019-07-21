@@ -11,8 +11,8 @@ trait Anon_Context[TContext] extends js.Object {
   var parsedQuery: js.UndefOr[graphqlLib.languageAstMod.DocumentNode] = js.undefined
   var queryString: js.UndefOr[java.lang.String] = js.undefined
   var request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request
-  var requestContext: apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.WithRequired[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
+  var requestContext: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.WithRequired[
+    apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLRequestContext[TContext], 
     apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.queryHash
   ]
   var variables: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
@@ -23,8 +23,8 @@ object Anon_Context {
   def apply[TContext](
     context: TContext,
     request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request,
-    requestContext: apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.WithRequired[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
+    requestContext: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.WithRequired[
+      apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLRequestContext[TContext], 
       apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.queryHash
     ],
     extensions: stdLib.Record[java.lang.String, _] = null,

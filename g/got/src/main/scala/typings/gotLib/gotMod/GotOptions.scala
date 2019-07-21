@@ -14,7 +14,9 @@ trait GotOptions[E /* <: java.lang.String | scala.Null */] extends InternalReque
   var decompress: js.UndefOr[scala.Boolean] = js.undefined
   var encoding: js.UndefOr[E] = js.undefined
   var followRedirect: js.UndefOr[scala.Boolean] = js.undefined
-  var query: js.UndefOr[java.lang.String | js.Object] = js.undefined
+  var query: js.UndefOr[
+    (stdLib.Record[java.lang.String, _]) | nodeLib.urlMod.URLSearchParams | java.lang.String
+  ] = js.undefined
   var retry: js.UndefOr[scala.Double | RetryOptions] = js.undefined
   var throwHttpErrors: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("timeout")
@@ -58,7 +60,7 @@ object GotOptions {
     pfx: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer | js.Object]) = null,
     port: scala.Double | java.lang.String = null,
     protocol: java.lang.String = null,
-    query: java.lang.String | js.Object = null,
+    query: (stdLib.Record[java.lang.String, _]) | nodeLib.urlMod.URLSearchParams | java.lang.String = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
     retry: scala.Double | RetryOptions = null,
     secureOptions: scala.Int | scala.Double = null,

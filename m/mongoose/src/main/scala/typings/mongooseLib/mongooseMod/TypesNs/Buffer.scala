@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Buffer
-  extends nodeLib.Anon_Alloc {
+  extends nodeLib.TypeofClassBuffer {
   /**
     * Copies the buffer.
     * Buffer#copy does not mark target as modified so you must copy

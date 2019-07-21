@@ -12,6 +12,7 @@ trait Anchor
   var inkNode: js.Any = js.native
   var links: js.Any = js.native
   var prefixCls: js.UndefOr[js.Any] = js.native
+  var scrollContainer: js.Any = js.native
   var scrollEvent: js.Any = js.native
   @JSName("state")
   var state_Anchor: antdLib.Anon_ActiveLink = js.native

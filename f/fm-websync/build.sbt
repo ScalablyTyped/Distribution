@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fm-websync"
-version := "3.0-dt-20180214Z-b0f7fa"
+version := "3.0-dt-20190717Z-b0f7fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

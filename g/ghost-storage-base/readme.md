@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/TryGhost/Ghost-Storage-Base
 // Definitions by: Demian <https://github.com/thde>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.7
 
 ```
 

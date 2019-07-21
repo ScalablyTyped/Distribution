@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-virtualized"
-version := "9.21-dt-20190528Z-7ee866"
+version := "9.21-dt-20190718Z-6e2ca3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

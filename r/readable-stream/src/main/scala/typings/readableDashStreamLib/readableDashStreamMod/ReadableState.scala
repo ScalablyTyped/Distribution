@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ReadableState extends js.Object {
   var awaitDrain: scala.Double
   var buffer: BufferList[_]
-  var decoder: nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder | scala.Null
+  var decoder: nodeLib.stringUnderscoreDecoderMod.StringDecoder | scala.Null
   var defaultEncoding: java.lang.String
   var destroyed: scala.Boolean
   var emittedReadable: scala.Boolean
@@ -52,7 +52,7 @@ object ReadableState {
     readingMore: scala.Boolean,
     resumeScheduled: scala.Boolean,
     sync: scala.Boolean,
-    decoder: nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder = null,
+    decoder: nodeLib.stringUnderscoreDecoderMod.StringDecoder = null,
     encoding: java.lang.String = null
   ): ReadableState = {
     val __obj = js.Dynamic.literal(awaitDrain = awaitDrain, buffer = buffer, defaultEncoding = defaultEncoding, destroyed = destroyed, emittedReadable = emittedReadable, endEmitted = endEmitted, ended = ended, flowing = flowing, highWaterMark = highWaterMark, length = length, needReadable = needReadable, objectMode = objectMode, pipes = pipes, pipesCount = pipesCount, readableListening = readableListening, reading = reading, readingMore = readingMore, resumeScheduled = resumeScheduled, sync = sync)

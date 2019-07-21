@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-differ
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Create an array with values that are present in the first input array but not additional ones
@@ -36,19 +36,20 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * Create an array with values that are present in the first array but not additional ones.
- *
- * @param array - The array to compare against.
- * @param values - The arrays with values to be excluded.
- * @returns A new array of filtered values.
- *
- * @example
- *
- * import arrayDiffer from 'array-differ';
- *
- * arrayDiffer([2, 3, 4], [3, 50]);
- * //=> [2, 4]
- */
+Create an array with values that are present in the first array but not additional ones.
+
+@param array - The array to compare against.
+@param values - The arrays with values to be excluded.
+@returns A new array of filtered values.
+
+@example
+```
+import arrayDiffer = require('array-differ');
+
+arrayDiffer([2, 3, 4], [3, 50]);
+//=> [2, 4]
+```
+*/
 
 ```
 

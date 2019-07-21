@@ -293,9 +293,9 @@ trait BN extends js.Object {
   /**
     * @description convert to an instance of `type`, which must behave like an Array
     */
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: Endianness): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: Endianness, length: scala.Double): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.TypeofClassBuffer): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.TypeofClassBuffer, endian: Endianness): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.TypeofClassBuffer, endian: Endianness, length: scala.Double): nodeLib.Buffer = js.native
   def toArrayLike(ArrayType: js.Array[_]): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: Endianness): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: Endianness, length: scala.Double): js.Array[_] = js.native

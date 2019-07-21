@@ -1,7 +1,7 @@
 
 # Scala.js typings for prettier
 
-Typings are for version 1.16
+Typings are for version 1.18
 
 ## Library description:
 Prettier is an opinionated code formatter
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for prettier 1.16
+// Type definitions for prettier 1.18
 // Project: https://github.com/prettier/prettier, https://prettier.io
-// Definitions by: Ika <https://github.com/ikatyang>
-//                 Ifiok Jr. <https://github.com/ifiokjr>
+// Definitions by: Ika <https://github.com/ikatyang>,
+//                 Ifiok Jr. <https://github.com/ifiokjr>,
+//                 Florian Keller <https://github.com/ffflorian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

@@ -182,90 +182,48 @@ trait Typeofpromises extends js.Object {
     * @param position The offset from the beginning of the file from which data should be read. If
     * `null`, data will be read from the current position.
     */
-  def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  def read[TBuffer /* <: stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Double,
     length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Double,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Null,
     length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Null,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: stdLib.Uint8Array */](
     handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
+    buffer: TBuffer,
     offset: scala.Null,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
-  def read(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -407,100 +365,6 @@ trait Typeofpromises extends js.Object {
   def utimes(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
   def utimes(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
   /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
-    * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
-    * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
-    * @param handle A `FileHandle`.
-    * @param buffer The buffer that the data will be written to.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Double,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(
-    handle: nodeLib.fsMod.promisesNs.FileHandle,
-    buffer: stdLib.Uint8Array,
-    offset: scala.Null,
-    length: scala.Null,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  /**
     * Asynchronously writes `string` to the file referenced by the supplied `FileHandle`.
     * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
     * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
@@ -523,6 +387,58 @@ trait Typeofpromises extends js.Object {
     position: scala.Null,
     encoding: java.lang.String
   ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
+    * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
+    * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
+    * @param handle A `FileHandle`.
+    * @param buffer The buffer that the data will be written to.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
+    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
+    */
+  def write[TBuffer /* <: stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Double,
+    length: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Double,
+    length: scala.Null,
+    position: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Null,
+    length: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Null,
+    length: scala.Double,
+    position: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: stdLib.Uint8Array */](
+    handle: nodeLib.fsMod.promisesNs.FileHandle,
+    buffer: TBuffer,
+    offset: scala.Null,
+    length: scala.Null,
+    position: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).

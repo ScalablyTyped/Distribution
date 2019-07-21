@@ -12,7 +12,10 @@ trait DeepOptions extends Options {
 
 object DeepOptions {
   @scala.inline
-  def apply(deep: mapDashObjLib.mapDashObjLibNumbers.`true`, target: js.Object = null): DeepOptions = {
+  def apply(
+    deep: mapDashObjLib.mapDashObjLibNumbers.`true`,
+    target: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): DeepOptions = {
     val __obj = js.Dynamic.literal(deep = deep)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[DeepOptions]

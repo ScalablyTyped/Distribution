@@ -332,13 +332,9 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     pad: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreLibStrings.valid,
     depthwise: scala.Boolean
   ): atTensorflowTfjsDashCoreLib.distOpsConvUnderscoreUtilMod.Conv3DInfo = js.native
+  def computeDefaultPad(inputShape: js.Tuple2[scala.Double, scala.Double], fieldSize: scala.Double, stride: scala.Double): scala.Double = js.native
   def computeDefaultPad(
-    inputShape: js.Tuple3[scala.Double, scala.Double, scala.Double],
-    fieldSize: scala.Double,
-    stride: scala.Double
-  ): scala.Double = js.native
-  def computeDefaultPad(
-    inputShape: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    inputShape: js.Tuple2[scala.Double, scala.Double],
     fieldSize: scala.Double,
     stride: scala.Double,
     dilation: scala.Double

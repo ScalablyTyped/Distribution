@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wepy-redux"
-version := "1.7-dt-20181019Z-b8cdb0"
+version := "1.7-dt-20190717Z-b8cdb0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

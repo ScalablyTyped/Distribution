@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 package object mongooseMod {
   type CastError = mongooseLib.mongooseMod.ErrorNs.CastError
   type ClientSession = mongodbLib.mongodbMod.ClientSession
+  type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P] extends std.Array<infer U>? std.Array<object> : T[P] extends object? object : T[P]}
+    */ mongooseLib.mongooseLibStrings.DeepPartial with js.Any
   type HookAsyncCallback[T] = js.ThisFunction3[
     /* this */ T, 
     /* next */ HookNextFunction, 
@@ -29,7 +32,7 @@ package object mongooseMod {
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
     */
-  type NativeBuffer = nodeLib.Anon_Alloc
+  type NativeBuffer = nodeLib.TypeofClassBuffer
   type NativeDate = stdLib.DateConstructor
   type NativeError = stdLib.ErrorConstructor
   /*

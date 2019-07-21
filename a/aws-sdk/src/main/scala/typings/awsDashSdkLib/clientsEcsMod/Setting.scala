@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Setting extends js.Object {
   /**
-    * The account resource name.
+    * The Amazon ECS resource name.
     */
   var name: js.UndefOr[SettingName] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait Setting extends js.Object {
     */
   var principalArn: js.UndefOr[String] = js.undefined
   /**
-    * The current account setting for the resource name. If enabled, the resource receives the new Amazon Resource Name (ARN) and resource identifier (ID) format. If disabled, the resource receives the old Amazon Resource Name (ARN) and resource identifier (ID) format.
+    * Whether the account setting is enabled or disabled for the specified resource.
     */
   var value: js.UndefOr[String] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofread extends js.Object {
-  def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
   /**
     * @param fd A file descriptor.
     * @param buffer The buffer that the data will be written to.
@@ -17,19 +17,11 @@ trait Typeofread extends js.Object {
     */
   def __promisify__(
     fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
-  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadDataView] = js.native
-  def __promisify__(
-    fd: scala.Double,
     buffer: stdLib.DataView,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesReadDataView] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
   def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadFloat32Array] = js.native
   def __promisify__(
     fd: scala.Double,

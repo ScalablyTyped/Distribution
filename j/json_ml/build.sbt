@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "json_ml"
-version := "0.0-dt-20181205Z-b88a81"
+version := "0.0-dt-20181205Z-1fb099"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-6b4a6e",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-3dda37",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

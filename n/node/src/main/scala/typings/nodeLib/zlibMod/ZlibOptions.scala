@@ -11,9 +11,7 @@ trait ZlibOptions extends js.Object {
     */
   var chunkSize: js.UndefOr[scala.Double] = js.undefined
    // compression only
-  var dictionary: js.UndefOr[
-    nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer
-  ] = js.undefined
+  var dictionary: js.UndefOr[nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer] = js.undefined
   /**
     * @default constants.Z_FINISH
     */
@@ -34,7 +32,7 @@ object ZlibOptions {
   @scala.inline
   def apply(
     chunkSize: scala.Int | scala.Double = null,
-    dictionary: nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
+    dictionary: nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
     finishFlush: scala.Int | scala.Double = null,
     flush: scala.Int | scala.Double = null,
     level: scala.Int | scala.Double = null,

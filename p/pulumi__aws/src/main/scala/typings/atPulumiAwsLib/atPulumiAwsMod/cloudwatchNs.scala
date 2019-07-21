@@ -197,11 +197,11 @@ object cloudwatchNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchMetricAlarmMod.MetricAlarmArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getLogGroup(args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] = js.native
+  def getLogGroup(args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] with atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult = js.native
   def getLogGroup(
     args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] with atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult = js.native
   def onSchedule(
     name: java.lang.String,
     schedule: java.lang.String,

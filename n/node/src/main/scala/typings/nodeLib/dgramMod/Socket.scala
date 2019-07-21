@@ -122,30 +122,6 @@ class Socket ()
     address: java.lang.String,
     callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* bytes */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
-  def send(msg: nodeLib.Buffer, offset: scala.Double, length: scala.Double, port: scala.Double): scala.Unit = js.native
-  def send(
-    msg: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double,
-    port: scala.Double,
-    address: java.lang.String
-  ): scala.Unit = js.native
-  def send(
-    msg: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double,
-    port: scala.Double,
-    address: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* bytes */ scala.Double, scala.Unit]
-  ): scala.Unit = js.native
-  def send(msg: nodeLib.Buffer, port: scala.Double): scala.Unit = js.native
-  def send(msg: nodeLib.Buffer, port: scala.Double, address: java.lang.String): scala.Unit = js.native
-  def send(
-    msg: nodeLib.Buffer,
-    port: scala.Double,
-    address: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* bytes */ scala.Double, scala.Unit]
-  ): scala.Unit = js.native
   def send(msg: stdLib.Uint8Array, offset: scala.Double, length: scala.Double, port: scala.Double): scala.Unit = js.native
   def send(
     msg: stdLib.Uint8Array,

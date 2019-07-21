@@ -59,6 +59,10 @@ object atMaterialDashUiLabLibStrings {
   sealed trait date extends js.Object
   
   @js.native
+  sealed trait decimal
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
   sealed trait descending extends js.Object
   
   @js.native
@@ -81,6 +85,10 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
+  sealed trait disabled
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
   sealed trait down extends js.Object
   
   @js.native
@@ -97,6 +105,10 @@ object atMaterialDashUiLabLibStrings {
   sealed trait flat extends js.Object
   
   @js.native
+  sealed trait focusVisible
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
   sealed trait grammar extends js.Object
   
   @js.native
@@ -107,7 +119,28 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait icon
-    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+       with atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
+  
+  @js.native
+  sealed trait iconActive
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
+  sealed trait iconEmpty
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
+  sealed trait iconFilled
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
+  sealed trait iconFocus
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
+  sealed trait iconHover
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
   
   @js.native
   sealed trait iconOpen
@@ -122,7 +155,8 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait label
-    extends atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+       with atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
   sealed trait large extends js.Object
@@ -193,7 +227,15 @@ object atMaterialDashUiLabLibStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait pristine
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
   sealed trait raised extends js.Object
+  
+  @js.native
+  sealed trait readOnly
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
   
   @js.native
   sealed trait removals extends js.Object
@@ -212,7 +254,8 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait root
-    extends atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+       with atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
        with atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
        with atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
        with atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
@@ -221,6 +264,14 @@ object atMaterialDashUiLabLibStrings {
   sealed trait selected
     extends atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
        with atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
+  
+  @js.native
+  sealed trait sizeLarge
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
+  @js.native
+  sealed trait sizeSmall
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
   
   @js.native
   sealed trait small extends js.Object
@@ -258,6 +309,10 @@ object atMaterialDashUiLabLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @js.native
+  sealed trait visuallyhidden
+    extends atMaterialDashUiLabLib.ratingRatingMod.RatingClassKey
+  
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
   @scala.inline
@@ -291,6 +346,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
@@ -303,6 +360,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def directionUp: directionUp = "directionUp".asInstanceOf[directionUp]
   @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
@@ -313,6 +372,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
   @scala.inline
+  def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
+  @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
@@ -320,6 +381,16 @@ object atMaterialDashUiLabLibStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
+  def iconActive: iconActive = "iconActive".asInstanceOf[iconActive]
+  @scala.inline
+  def iconEmpty: iconEmpty = "iconEmpty".asInstanceOf[iconEmpty]
+  @scala.inline
+  def iconFilled: iconFilled = "iconFilled".asInstanceOf[iconFilled]
+  @scala.inline
+  def iconFocus: iconFocus = "iconFocus".asInstanceOf[iconFocus]
+  @scala.inline
+  def iconHover: iconHover = "iconHover".asInstanceOf[iconHover]
   @scala.inline
   def iconOpen: iconOpen = "iconOpen".asInstanceOf[iconOpen]
   @scala.inline
@@ -373,7 +444,11 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def pristine: pristine = "pristine".asInstanceOf[pristine]
+  @scala.inline
   def raised: raised = "raised".asInstanceOf[raised]
+  @scala.inline
+  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
@@ -388,6 +463,10 @@ object atMaterialDashUiLabLibStrings {
   def root: root = "root".asInstanceOf[root]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
+  def sizeLarge: sizeLarge = "sizeLarge".asInstanceOf[sizeLarge]
+  @scala.inline
+  def sizeSmall: sizeSmall = "sizeSmall".asInstanceOf[sizeSmall]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
@@ -412,5 +491,7 @@ object atMaterialDashUiLabLibStrings {
   def up: up = "up".asInstanceOf[up]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
+  def visuallyhidden: visuallyhidden = "visuallyhidden".asInstanceOf[visuallyhidden]
 }
 

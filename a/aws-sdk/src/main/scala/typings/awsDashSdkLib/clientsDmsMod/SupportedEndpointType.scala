@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SupportedEndpointType extends js.Object {
   /**
-    * The type of endpoint.
+    * The type of endpoint. Valid values are source and target.
     */
   var EndpointType: js.UndefOr[ReplicationEndpointTypeValue] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait SupportedEndpointType extends js.Object {
     */
   var EngineDisplayName: js.UndefOr[String] = js.undefined
   /**
-    * The database engine name. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
+    * The database engine name. Valid values, depending on the EndpointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
     */
   var EngineName: js.UndefOr[String] = js.undefined
   /**

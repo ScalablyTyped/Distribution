@@ -51,16 +51,16 @@ object cloudformationNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloudformationStackSetInstanceMod.StackSetInstanceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getExport(args: atPulumiAwsLib.cloudformationGetExportMod.GetExportArgs): js.Promise[atPulumiAwsLib.cloudformationGetExportMod.GetExportResult] = js.native
+  def getExport(args: atPulumiAwsLib.cloudformationGetExportMod.GetExportArgs): js.Promise[atPulumiAwsLib.cloudformationGetExportMod.GetExportResult] with atPulumiAwsLib.cloudformationGetExportMod.GetExportResult = js.native
   def getExport(
     args: atPulumiAwsLib.cloudformationGetExportMod.GetExportArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudformationGetExportMod.GetExportResult] = js.native
-  def getStack(args: atPulumiAwsLib.cloudformationGetStackMod.GetStackArgs): js.Promise[atPulumiAwsLib.cloudformationGetStackMod.GetStackResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudformationGetExportMod.GetExportResult] with atPulumiAwsLib.cloudformationGetExportMod.GetExportResult = js.native
+  def getStack(args: atPulumiAwsLib.cloudformationGetStackMod.GetStackArgs): js.Promise[atPulumiAwsLib.cloudformationGetStackMod.GetStackResult] with atPulumiAwsLib.cloudformationGetStackMod.GetStackResult = js.native
   def getStack(
     args: atPulumiAwsLib.cloudformationGetStackMod.GetStackArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudformationGetStackMod.GetStackResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudformationGetStackMod.GetStackResult] with atPulumiAwsLib.cloudformationGetStackMod.GetStackResult = js.native
   /* static members */
   @js.native
   object Stack extends js.Object {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSortableDashTreeMod {
-  type NodeRenderer = reactLib.reactMod.ComponentClass[NodeRendererProps, reactLib.reactMod.ComponentState]
-  type PlaceholderRenderer = reactLib.reactMod.ComponentClass[PlaceholderRendererProps, reactLib.reactMod.ComponentState]
-  type TreeRenderer = reactLib.reactMod.ComponentClass[TreeRendererProps, reactLib.reactMod.ComponentState]
+  type NodeRenderer = reactLib.reactMod.ComponentType[NodeRendererProps]
+  type PlaceholderRenderer = reactLib.reactMod.ComponentType[PlaceholderRendererProps]
+  type TreeRenderer = reactLib.reactMod.ComponentType[TreeRendererProps]
 }

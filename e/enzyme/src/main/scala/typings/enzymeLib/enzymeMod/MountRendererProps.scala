@@ -18,6 +18,17 @@ trait MountRendererProps extends js.Object {
     * Context to be passed into the component
     */
   var context: js.UndefOr[js.Object] = js.undefined
+  /**
+    * A component that will render as a parent of the node.
+    * It can be used to provide context to the `node`, among other things.
+    * See the [getWrappingComponent() docs](https://airbnb.io/enzyme/docs/api/ShallowWrapper/getWrappingComponent.html) for an example.
+    * **Note**: `wrappingComponent` must render its children.
+    */
+  var wrappingComponent: js.UndefOr[ComponentType[_]] = js.undefined
+  /**
+    * Initial props to pass to the `wrappingComponent` if it is specified.
+    */
+  var wrappingComponentProps: js.UndefOr[js.Object] = js.undefined
 }
 
 object MountRendererProps {
@@ -25,12 +36,16 @@ object MountRendererProps {
   def apply(
     attachTo: stdLib.HTMLElement = null,
     childContextTypes: js.Object = null,
-    context: js.Object = null
+    context: js.Object = null,
+    wrappingComponent: ComponentType[_] = null,
+    wrappingComponentProps: js.Object = null
   ): MountRendererProps = {
     val __obj = js.Dynamic.literal()
     if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
     if (childContextTypes != null) __obj.updateDynamic("childContextTypes")(childContextTypes)
     if (context != null) __obj.updateDynamic("context")(context)
+    if (wrappingComponent != null) __obj.updateDynamic("wrappingComponent")(wrappingComponent.asInstanceOf[js.Any])
+    if (wrappingComponentProps != null) __obj.updateDynamic("wrappingComponentProps")(wrappingComponentProps)
     __obj.asInstanceOf[MountRendererProps]
   }
 }

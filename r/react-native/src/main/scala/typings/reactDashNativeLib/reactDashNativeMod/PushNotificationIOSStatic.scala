@@ -92,7 +92,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * This method returns a promise that resolves to either the notification
     * object if the app was launched by a push notification, or `null` otherwise.
     */
-  def getInitialNotification(): js.Promise[PushNotification] = js.native
+  def getInitialNotification(): js.Promise[PushNotification | scala.Null] = js.native
   /**
     * Gets the local notifications that are currently scheduled.
     */

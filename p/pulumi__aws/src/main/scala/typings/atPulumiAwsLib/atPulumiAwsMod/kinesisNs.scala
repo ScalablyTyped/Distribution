@@ -58,11 +58,11 @@ object kinesisNs extends js.Object {
     def this(name: java.lang.String, stream: atPulumiAwsLib.kinesisKinesisMixinsMod.kinesisStreamMod.Stream, handler: atPulumiAwsLib.kinesisKinesisMixinsMod.StreamEventHandler, args: atPulumiAwsLib.kinesisKinesisMixinsMod.StreamEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }
   
-  def getStream(args: atPulumiAwsLib.kinesisGetStreamMod.GetStreamArgs): js.Promise[atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult] = js.native
+  def getStream(args: atPulumiAwsLib.kinesisGetStreamMod.GetStreamArgs): js.Promise[atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult] with atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult = js.native
   def getStream(
     args: atPulumiAwsLib.kinesisGetStreamMod.GetStreamArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult] = js.native
+  ): js.Promise[atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult] with atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult = js.native
   /* static members */
   @js.native
   object AnalyticsApplication extends js.Object {

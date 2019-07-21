@@ -172,7 +172,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createFile")
   var createFile_Original: Anon_EndpointParamsPromiseReposCreateFileParams = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    * Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *
@@ -198,7 +198,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createHook")
   var createHook_Original: Anon_EndpointParamsPromiseReposCreateHookParams = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    * Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *
@@ -228,6 +228,20 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("createStatus")
   var createStatus_Original: Anon_EndpointParamsPromiseReposCreateStatusParams = js.native
+  /**
+    * Creates a new repository using a repository template. Use the `repo` route parameter to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
+    *
+    * \`
+    */
+  @JSName("createUsingTemplate")
+  var createUsingTemplate_Original: Anon_EndpointParamsPromiseReposCreateUsingTemplateParams = js.native
   @JSName("declineInvitation")
   var declineInvitation_Original: Anon_EndpointParamsPromiseReposDeclineInvitationParams = js.native
   @JSName("deleteCommitComment")
@@ -612,12 +626,12 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listDownloads")
   var listDownloads_Original: Anon_EndpointParamsPromiseReposListDownloadsParams = js.native
   /**
-    * List repositories for the specified org.
+    * Lists repositories for the specified organization.
     */
   @JSName("listForOrg")
   var listForOrg_Original: Anon_EndpointParamsPromiseReposListForOrgParams = js.native
   /**
-    * List public repositories for the specified user.
+    * Lists public repositories for the specified user.
     */
   @JSName("listForUser")
   var listForUser_Original: Anon_EndpointParamsAnyResponsePromiseReposListForUserParams = js.native
@@ -662,7 +676,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listProtectedBranchUserRestrictions")
   var listProtectedBranchUserRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposListProtectedBranchUserRestrictionsParams = js.native
   /**
-    * This provides a dump of every public repository, in the order that they were created.
+    * Lists all public repositories in the order that they were created.
     *
     * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
     */
@@ -694,7 +708,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listTopics")
   var listTopics_Original: Anon_EndpointParamsPromiseReposListTopicsParams = js.native
   /**
-    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
+    * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
@@ -1127,7 +1141,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateFileResponse]
   ] = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    * Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *
@@ -1165,7 +1179,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateHookResponse]
   ] = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    * Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *
@@ -1210,6 +1224,24 @@ trait Anon_AcceptInvitation extends js.Object {
   ] = js.native
   def createStatus(params: atOctokitRestLib.atOctokitRestMod.ReposCreateStatusParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateStatusResponse]
+  ] = js.native
+  /**
+    * Creates a new repository using a repository template. Use the `repo` route parameter to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
+    *
+    * \`
+    */
+  def createUsingTemplate(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateUsingTemplateResponse]
+  ] = js.native
+  def createUsingTemplate(params: atOctokitRestLib.atOctokitRestMod.ReposCreateUsingTemplateParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateUsingTemplateResponse]
   ] = js.native
   def declineInvitation(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeclineInvitationResponse]
@@ -1723,7 +1755,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetViewsResponse]
   ] = js.native
   /**
-    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
+    * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
@@ -1853,7 +1885,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListDownloadsResponse]
   ] = js.native
   /**
-    * List repositories for the specified org.
+    * Lists repositories for the specified organization.
     */
   def listForOrg(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListForOrgResponse]
@@ -1862,7 +1894,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListForOrgResponse]
   ] = js.native
   /**
-    * List public repositories for the specified user.
+    * Lists public repositories for the specified user.
     */
   def listForUser(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listForUser(params: atOctokitRestLib.atOctokitRestMod.ReposListForUserParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -1945,7 +1977,7 @@ trait Anon_AcceptInvitation extends js.Object {
   def listProtectedBranchUserRestrictions(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listProtectedBranchUserRestrictions(params: atOctokitRestLib.atOctokitRestMod.ReposListProtectedBranchUserRestrictionsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * This provides a dump of every public repository, in the order that they were created.
+    * Lists all public repositories in the order that they were created.
     *
     * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
     */

@@ -11,6 +11,10 @@ trait ResourceOptions extends js.Object {
     */
   var aliases: js.UndefOr[js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]]] = js.undefined
   /**
+    * An optional customTimeouts configuration block.
+    */
+  var customTimeouts: js.UndefOr[CustomTimeouts] = js.undefined
+  /**
     * An optional additional explicit dependencies on other resources.
     */
   var dependsOn: js.UndefOr[
@@ -52,6 +56,7 @@ object ResourceOptions {
   @scala.inline
   def apply(
     aliases: js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]] = null,
+    customTimeouts: CustomTimeouts = null,
     dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
@@ -62,6 +67,7 @@ object ResourceOptions {
   ): ResourceOptions = {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)

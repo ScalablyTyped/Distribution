@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/tinajs/tina-redux
 // Definitions by: Jiayu Liu <https://github.com/Jimexist>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/tinajs__tina-redux
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

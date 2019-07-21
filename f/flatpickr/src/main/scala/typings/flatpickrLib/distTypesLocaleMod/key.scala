@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
   - flatpickrLib.flatpickrLibStrings.is
   - flatpickrLib.flatpickrLibStrings.it
   - flatpickrLib.flatpickrLibStrings.ja
+  - flatpickrLib.flatpickrLibStrings.ka
   - flatpickrLib.flatpickrLibStrings.ko
   - flatpickrLib.flatpickrLibStrings.km
   - flatpickrLib.flatpickrLibStrings.kz

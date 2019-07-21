@@ -55,6 +55,9 @@ object electronLibStrings {
   sealed trait activateSelection extends js.Object
   
   @js.native
+  sealed trait active extends js.Object
+  
+  @js.native
   sealed trait `active-border` extends js.Object
   
   @js.native
@@ -98,9 +101,6 @@ object electronLibStrings {
   
   @js.native
   sealed trait `appearance-based` extends js.Object
-  
-  @js.native
-  sealed trait `appearance-changed` extends js.Object
   
   @js.native
   sealed trait array extends js.Object
@@ -604,6 +604,9 @@ object electronLibStrings {
   sealed trait hotlight extends js.Object
   
   @js.native
+  sealed trait idle extends js.Object
+  
+  @js.native
   sealed trait image extends js.Object
   
   @js.native
@@ -713,6 +716,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `lock-screen` extends js.Object
+  
+  @js.native
+  sealed trait locked extends js.Object
   
   @js.native
   sealed trait login extends js.Object
@@ -1518,6 +1524,8 @@ object electronLibStrings {
   @scala.inline
   def activateSelection: activateSelection = "activateSelection".asInstanceOf[activateSelection]
   @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def `active-border`: `active-border` = "active-border".asInstanceOf[`active-border`]
   @scala.inline
   def `active-caption`: `active-caption` = "active-caption".asInstanceOf[`active-caption`]
@@ -1547,8 +1555,6 @@ object electronLibStrings {
   def appMenu: appMenu = "appMenu".asInstanceOf[appMenu]
   @scala.inline
   def `appearance-based`: `appearance-based` = "appearance-based".asInstanceOf[`appearance-based`]
-  @scala.inline
-  def `appearance-changed`: `appearance-changed` = "appearance-changed".asInstanceOf[`appearance-changed`]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline
@@ -1884,6 +1890,8 @@ object electronLibStrings {
   @scala.inline
   def hotlight: hotlight = "hotlight".asInstanceOf[hotlight]
   @scala.inline
+  def idle: idle = "idle".asInstanceOf[idle]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def `inactive-border`: `inactive-border` = "inactive-border".asInstanceOf[`inactive-border`]
@@ -1957,6 +1965,8 @@ object electronLibStrings {
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
   def `lock-screen`: `lock-screen` = "lock-screen".asInstanceOf[`lock-screen`]
+  @scala.inline
+  def locked: locked = "locked".asInstanceOf[locked]
   @scala.inline
   def login: login = "login".asInstanceOf[login]
   @scala.inline

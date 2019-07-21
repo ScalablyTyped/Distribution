@@ -16,6 +16,7 @@ trait ReposCreateInOrgEndpoint extends js.Object {
   var has_projects: js.UndefOr[scala.Boolean] = js.undefined
   var has_wiki: js.UndefOr[scala.Boolean] = js.undefined
   var homepage: js.UndefOr[java.lang.String] = js.undefined
+  var is_template: js.UndefOr[scala.Boolean] = js.undefined
   var license_template: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
   var org: java.lang.String
@@ -38,6 +39,7 @@ object ReposCreateInOrgEndpoint {
     has_projects: js.UndefOr[scala.Boolean] = js.undefined,
     has_wiki: js.UndefOr[scala.Boolean] = js.undefined,
     homepage: java.lang.String = null,
+    is_template: js.UndefOr[scala.Boolean] = js.undefined,
     license_template: java.lang.String = null,
     `private`: js.UndefOr[scala.Boolean] = js.undefined,
     team_id: scala.Int | scala.Double = null
@@ -53,6 +55,7 @@ object ReposCreateInOrgEndpoint {
     if (!js.isUndefined(has_projects)) __obj.updateDynamic("has_projects")(has_projects)
     if (!js.isUndefined(has_wiki)) __obj.updateDynamic("has_wiki")(has_wiki)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (!js.isUndefined(is_template)) __obj.updateDynamic("is_template")(is_template)
     if (license_template != null) __obj.updateDynamic("license_template")(license_template)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     if (team_id != null) __obj.updateDynamic("team_id")(team_id.asInstanceOf[js.Any])

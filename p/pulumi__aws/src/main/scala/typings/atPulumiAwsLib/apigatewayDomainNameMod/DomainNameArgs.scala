@@ -51,6 +51,10 @@ trait DomainNameArgs extends js.Object {
     * `certificate_private_key`.
     */
   val regionalCertificateName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+    */
+  val securityPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object DomainNameArgs {
@@ -64,7 +68,8 @@ object DomainNameArgs {
     certificatePrivateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     endpointConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypesInput] = null,
     regionalCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    regionalCertificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    regionalCertificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DomainNameArgs = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
@@ -75,6 +80,7 @@ object DomainNameArgs {
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
     if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
     if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
+    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainNameArgs]
   }
 }

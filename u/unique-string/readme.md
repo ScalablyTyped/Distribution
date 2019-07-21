@@ -1,7 +1,7 @@
 
 # Scala.js typings for unique-string
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Generate a unique random string
@@ -24,7 +24,7 @@ Generate a unique random string
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,19 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for unique-string 1.0
-// Project: https://github.com/sindresorhus/unique-string#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Generate a unique random string.
+
+@returns A 32 character unique string. Matches the length of MD5, which is [unique enough](https://stackoverflow.com/a/2444336/64949) for non-crypto purposes.
+
+@example
+```
+import uniqueString = require('unique-string');
+
+uniqueString();
+//=> 'b4de2a49c8ffa3fbee04446f045483b2'
+```
+*/
 
 ```
 

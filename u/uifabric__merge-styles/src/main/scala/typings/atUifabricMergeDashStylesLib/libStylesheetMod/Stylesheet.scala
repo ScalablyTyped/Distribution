@@ -13,6 +13,7 @@ class Stylesheet () extends js.Object {
   var _config: js.Any = js.native
   var _counter: js.Any = js.native
   var _createStyleElement: js.Any = js.native
+  var _findPlaceholderStyleTag: js.Any = js.native
   var _getStyleElement: js.Any = js.native
   var _keyToClassName: js.Any = js.native
   var _lastStyleElement: js.UndefOr[js.Any] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for restore-cursor
 
-Typings are for version 2.0
+Typings are for version 3.1.0
 
 ## Library description:
 Gracefully restore the CLI cursor on exit
@@ -24,7 +24,7 @@ Gracefully restore the CLI cursor on exit
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,16 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for restore-cursor 2.0
-// Project: https://github.com/sindresorhus/restore-cursor#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Gracefully restore the CLI cursor on exit.
+
+@example
+```
+import restoreCursor = require('restore-cursor');
+
+restoreCursor();
+```
+*/
 
 ```
 

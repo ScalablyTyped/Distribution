@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-better-password"
-version := "1.0-dt-20190212Z-812b01"
+version := "1.0-dt-20190717Z-812b01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

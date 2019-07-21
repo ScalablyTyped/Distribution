@@ -35,11 +35,11 @@ trait ModifyEndpointMessage extends js.Object {
     */
   var EndpointIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * The type of endpoint.
+    * The type of endpoint. Valid values are source and target.
     */
   var EndpointType: js.UndefOr[ReplicationEndpointTypeValue] = js.undefined
   /**
-    * The type of engine for the endpoint. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
+    * The type of engine for the endpoint. Valid values, depending on the EndpointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
     */
   var EngineName: js.UndefOr[String] = js.undefined
   /**
@@ -80,7 +80,7 @@ trait ModifyEndpointMessage extends js.Object {
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * The SSL mode to be used. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.
+    * The SSL mode used to connect to the endpoint. The default value is none.
     */
   var SslMode: js.UndefOr[DmsSslModeValue] = js.undefined
   /**

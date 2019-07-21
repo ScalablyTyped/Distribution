@@ -198,6 +198,16 @@ object wafregionalNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalXssMatchSetMod.XssMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getRule(args: atPulumiAwsLib.wafregionalGetRuleMod.GetRuleArgs): js.Promise[atPulumiAwsLib.wafregionalGetRuleMod.GetRuleResult] with atPulumiAwsLib.wafregionalGetRuleMod.GetRuleResult = js.native
+  def getRule(
+    args: atPulumiAwsLib.wafregionalGetRuleMod.GetRuleArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.wafregionalGetRuleMod.GetRuleResult] with atPulumiAwsLib.wafregionalGetRuleMod.GetRuleResult = js.native
+  def getWebAcl(args: atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclArgs): js.Promise[atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclResult] with atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclResult = js.native
+  def getWebAcl(
+    args: atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclResult] with atPulumiAwsLib.wafregionalGetWebAclMod.GetWebAclResult = js.native
   /* static members */
   @js.native
   object ByteMatchSet extends js.Object {

@@ -35,11 +35,13 @@ object CustomResourceGetOptions {
     aliases: js.Array[
       atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.URN | atPulumiPulumiLib.resourceMod.Alias]
     ] = null,
+    customTimeouts: atPulumiPulumiLib.resourceMod.CustomTimeouts = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
     dependsOn: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource]] | atPulumiPulumiLib.resourceMod.Resource
     ] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
+    `import`: atPulumiPulumiLib.resourceMod.ID = null,
     parent: atPulumiPulumiLib.resourceMod.Resource = null,
     protect: js.UndefOr[scala.Boolean] = js.undefined,
     provider: atPulumiPulumiLib.resourceMod.ProviderResource = null,
@@ -48,9 +50,11 @@ object CustomResourceGetOptions {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts)
     if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
+    if (`import` != null) __obj.updateDynamic("import")(`import`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)

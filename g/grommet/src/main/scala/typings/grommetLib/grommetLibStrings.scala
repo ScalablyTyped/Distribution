@@ -905,6 +905,9 @@ object grommetLibStrings {
   sealed trait size extends js.Object
   
   @js.native
+  sealed trait slide extends js.Object
+  
+  @js.native
   sealed trait slideDown extends js.Object
   
   @js.native
@@ -1614,6 +1617,8 @@ object grommetLibStrings {
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   @scala.inline
   def size: size = "size".asInstanceOf[size]
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
   def slideDown: slideDown = "slideDown".asInstanceOf[slideDown]
   @scala.inline

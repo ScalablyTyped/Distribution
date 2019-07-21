@@ -23,7 +23,9 @@ trait ModalProps extends js.Object {
   var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 强制渲染 Modal*/
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[js.Function1[/* instance */ reactLib.reactMod.ReactInstance, stdLib.HTMLElement]] = js.undefined
+  var getContainer: js.UndefOr[
+    java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false` | scala.Null
+  ] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   /** 点击蒙层是否允许关闭*/
@@ -77,7 +79,7 @@ object ModalProps {
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     footer: reactLib.reactMod.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: /* instance */ reactLib.reactMod.ReactInstance => stdLib.HTMLElement = null,
+    getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false` = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -110,7 +112,7 @@ object ModalProps {
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)

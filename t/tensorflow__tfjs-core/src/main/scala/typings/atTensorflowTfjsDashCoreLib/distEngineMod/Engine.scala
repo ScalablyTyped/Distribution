@@ -180,7 +180,7 @@ class Engine protected ()
   def write(
     destBackend: atTensorflowTfjsDashCoreLib.distBackendsBackendMod.KernelBackend,
     dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId,
-    values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues
+    values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues
   ): scala.Unit = js.native
 }
 

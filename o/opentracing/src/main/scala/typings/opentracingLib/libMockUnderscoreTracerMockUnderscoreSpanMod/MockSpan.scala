@@ -11,6 +11,7 @@ class MockSpan protected ()
   extends opentracingLib.libMod.Span {
   def this(tracer: opentracingLib.libMockUnderscoreTracerMockUnderscoreTracerMod.default) = this()
   var _finishMs: scala.Double = js.native
+  var _generateUUID: js.Any = js.native
   var _logs: js.Any = js.native
   var _mockTracer: js.Any = js.native
   var _operationName: js.Any = js.native
@@ -18,7 +19,6 @@ class MockSpan protected ()
   var _startStack: js.UndefOr[java.lang.String] = js.native
   var _tags: js.Any = js.native
   var _uuid: js.Any = js.native
-  /* private */ def _generateUUID(): js.Any = js.native
   def addReference(ref: opentracingLib.libReferenceMod.default): scala.Unit = js.native
   /**
     * Returns a simplified object better for console.log()'ing.

@@ -19,11 +19,11 @@ trait Event extends js.Object {
     */
   var Message: js.UndefOr[String] = js.undefined
   /**
-    *  The identifier of the event source. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it cannot end with a hyphen or contain two consecutive hyphens.  Constraints:replication instance, endpoint, migration task
+    *  The identifier of an event source.
     */
   var SourceIdentifier: js.UndefOr[String] = js.undefined
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | endpoint | migration-task
+    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | endpoint | replication-task
     */
   var SourceType: js.UndefOr[SourceType] = js.undefined
 }

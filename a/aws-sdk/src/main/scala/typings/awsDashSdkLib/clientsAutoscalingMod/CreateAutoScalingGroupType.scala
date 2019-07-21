@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateAutoScalingGroupType extends js.Object {
   /**
-    * The name of the Auto Scaling group. This name must be unique within the scope of your AWS account.
+    * The name of the Auto Scaling group. This name must be unique per Region per account.
     */
   var AutoScalingGroupName: XmlStringMaxLen255
   /**
@@ -19,7 +19,7 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var DefaultCooldown: js.UndefOr[Cooldown] = js.undefined
   /**
-    * The number of EC2 instances that should be running in the group. This number must be greater than or equal to the minimum size of the group and less than or equal to the maximum size of the group. If you do not specify a desired capacity, the default is the minimum size of the group.
+    * The number of Amazon EC2 instances that the Auto Scaling group attempts to maintain. This number must be greater than or equal to the minimum size of the group and less than or equal to the maximum size of the group. If you do not specify a desired capacity, the default is the minimum size of the group.
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   /**
@@ -31,15 +31,15 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
   /**
-    * The ID of the instance used to create a launch configuration for the group. This parameter, a launch configuration, a launch template, or a mixed instances policy must be specified. When you specify an ID of an instance, Amazon EC2 Auto Scaling creates a new launch configuration and associates it with the group. This launch configuration derives its attributes from the specified instance, except for the block device mapping. For more information, see Create an Auto Scaling Group Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
+    * The ID of the instance used to create a launch configuration for the group. When you specify an ID of an instance, Amazon EC2 Auto Scaling creates a new launch configuration and associates it with the group. This launch configuration derives its attributes from the specified instance, except for the block device mapping. For more information, see Create an Auto Scaling Group Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide. You must specify one of the following parameters in your request: LaunchConfigurationName, LaunchTemplate, InstanceId, or MixedInstancesPolicy.
     */
   var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
   /**
-    * The name of the launch configuration. This parameter, a launch template, a mixed instances policy, or an EC2 instance must be specified. For more information, see Creating an Auto Scaling Group Using a Launch Configuration in the Amazon EC2 Auto Scaling User Guide.
+    * The name of the launch configuration. For more information, see Creating an Auto Scaling Group Using a Launch Configuration in the Amazon EC2 Auto Scaling User Guide. If you do not specify LaunchConfigurationName, you must specify one of the following parameters: InstanceId, LaunchTemplate, or MixedInstancesPolicy.
     */
   var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
   /**
-    * The launch template to use to launch instances. This parameter, a launch configuration, a mixed instances policy, or an EC2 instance must be specified. For more information, see Creating an Auto Scaling Group Using a Launch Template in the Amazon EC2 Auto Scaling User Guide.
+    * The launch template to use to launch instances. For more information, see Creating an Auto Scaling Group Using a Launch Template in the Amazon EC2 Auto Scaling User Guide. If you do not specify LaunchTemplate, you must specify one of the following parameters: InstanceId, LaunchConfigurationName, or MixedInstancesPolicy.
     */
   var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var LifecycleHookSpecificationList: js.UndefOr[LifecycleHookSpecifications] = js.undefined
   /**
-    * One or more Classic Load Balancers. To specify an Application Load Balancer or a Network Load Balancer, use TargetGroupARNs instead. For more information, see Using a Load Balancer With an Auto Scaling Group in the Amazon EC2 Auto Scaling User Guide.
+    * A list of Classic Load Balancers associated with this Auto Scaling group. For Application Load Balancers and Network Load Balancers, specify a list of target groups using the TargetGroupARNs property instead. For more information, see Using a Load Balancer with an Auto Scaling Group in the Amazon EC2 Auto Scaling User Guide.
     */
   var LoadBalancerNames: js.UndefOr[LoadBalancerNames] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var MinSize: AutoScalingGroupMinSize
   /**
-    * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified. For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
+    * An embedded object that specifies a mixed instances policy. The required parameters must be specified. If optional parameters are unspecified, their default values are used. The policy includes parameters that not only define the distribution of On-Demand Instances and Spot Instances, the maximum price to pay for Spot instances, and how the Auto Scaling group allocates instance types to fulfill On-Demand and Spot capacity, but also the parameters that specify the instance configuration information—the launch template and instance types. For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide. You must specify one of the following parameters in your request: LaunchConfigurationName, LaunchTemplate, InstanceId, or MixedInstancesPolicy.
     */
   var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var Tags: js.UndefOr[Tags] = js.undefined
   /**
-    * The Amazon Resource Names (ARN) of the target groups.
+    * The Amazon Resource Names (ARN) of the target groups to associate with the Auto Scaling group. Instances are registered as targets in a target group, and traffic is routed to the target group. For more information, see Using a Load Balancer with an Auto Scaling Group in the Amazon EC2 Auto Scaling User Guide.
     */
   var TargetGroupARNs: js.UndefOr[TargetGroupARNs] = js.undefined
   /**

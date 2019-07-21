@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-timeout"
-version := "1.1-dt-20180806Z-1f52f8"
+version := "1.1-dt-20180806Z-4ee1e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")

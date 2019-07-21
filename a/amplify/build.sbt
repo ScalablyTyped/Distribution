@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amplify"
-version := "1.1-dt-20180214Z-df83cf"
+version := "1.1-dt-20190717Z-df83cf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

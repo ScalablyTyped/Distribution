@@ -1,7 +1,7 @@
 
 # Scala.js typings for ion-rangeslider
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Cool, comfortable and easily customizable range slider with many options and skin support
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ion-rangeslider 2.2
+// Type definitions for ion-rangeslider 2.3
 // Project: https://github.com/IonDen/ion.rangeSlider/, http://ionden.com/a/plugins/ion.rangeslider/en.html
 // Definitions by: Karel van de Plassche <https://github.com/Karel-van-de-Plassche>
+//                 JamesJGoodwin <https://github.com/JamesJGoodwin>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 // API documentation: http://ionden.com/a/plugins/ion.rangeSlider/en.html

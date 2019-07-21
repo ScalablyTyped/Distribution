@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class MockTracer ()
   extends opentracingLib.libMod.Tracer {
+  var _allocSpan: js.Any = js.native
   var _spans: js.Any = js.native
-  /* private */ def _allocSpan(): js.Any = js.native
   /* protected */ def _extract(format: js.Any, carrier: js.Any): scala.Nothing = js.native
   /* protected */ def _inject(
-    span: opentracingLib.libMockUnderscoreTracerMockUnderscoreSpanMod.default,
+    span: opentracingLib.libMockUnderscoreTracerMockUnderscoreContextMod.default,
     format: js.Any,
     carrier: js.Any
   ): scala.Nothing = js.native

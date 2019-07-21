@@ -46,6 +46,8 @@ trait EmscriptenModule extends js.Object {
   def Pointer_stringify(ptr: scala.Double, length: scala.Double): java.lang.String = js.native
   def UTF16ToString(ptr: scala.Double): java.lang.String = js.native
   def UTF32ToString(ptr: scala.Double): java.lang.String = js.native
+  def UTF8ToString(ptr: scala.Double): java.lang.String = js.native
+  def UTF8ToString(ptr: scala.Double, length: scala.Double): java.lang.String = js.native
   def _free(ptr: scala.Double): scala.Unit = js.native
   def _malloc(size: scala.Double): scala.Double = js.native
   def addOnExit(cb: js.Function0[_]): scala.Unit = js.native

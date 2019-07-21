@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("recharts", "ResponsiveContainer")
 @js.native
 class ResponsiveContainer ()
-  extends reactLib.reactMod.Component[ResponsiveContainerProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ResponsiveContainerProps, ContainerSize, js.Any]
 

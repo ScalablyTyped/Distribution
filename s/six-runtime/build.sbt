@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "six-runtime"
-version := "0.1-dt-20180702Z-9ffde3"
+version := "0.1-dt-20190717Z-9ffde3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

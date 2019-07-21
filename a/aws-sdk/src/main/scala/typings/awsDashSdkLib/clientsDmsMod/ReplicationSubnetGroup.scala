@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReplicationSubnetGroup extends js.Object {
   /**
-    * The description of the replication subnet group.
+    * A description for the replication subnet group.
     */
   var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.undefined
   /**

@@ -140,6 +140,9 @@ package object clientsConfigserviceMod {
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_SUCCESSFUL
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_IN_PROGRESS
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_SUCCESSFUL
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS
@@ -173,6 +176,9 @@ package object clientsConfigserviceMod {
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_SUCCESSFUL
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_IN_PROGRESS
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_SUCCESSFUL
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS

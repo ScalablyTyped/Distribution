@@ -12,6 +12,7 @@ object ^ extends js.Object {
   def graphql(query: stdLib.TemplateStringsArray): scala.Unit = js.native
   def navigateTo(to: java.lang.String): scala.Unit = js.native
   def parsePath(path: java.lang.String): atReachRouterLib.atReachRouterMod.WindowLocation = js.native
+  def prefetchPathname(path: java.lang.String): scala.Unit = js.native
   def push(to: java.lang.String): scala.Unit = js.native
   def replace(to: java.lang.String): scala.Unit = js.native
   def useStaticQuery[TData](query: js.Any): TData = js.native

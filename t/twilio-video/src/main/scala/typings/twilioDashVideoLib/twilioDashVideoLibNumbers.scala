@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation._
 
 object twilioDashVideoLibNumbers {
   @js.native
+  sealed trait `0`
+    extends twilioDashVideoLib.twilioDashVideoMod.NetworkQualityVerbosity
+  
+  @js.native
+  sealed trait `1`
+    extends twilioDashVideoLib.twilioDashVideoMod.NetworkQualityVerbosity
+  
+  @js.native
+  sealed trait `2`
+    extends twilioDashVideoLib.twilioDashVideoMod.NetworkQualityVerbosity
+  
+  @js.native
   sealed trait `20102` extends js.Object
   
   @js.native
@@ -23,6 +35,10 @@ object twilioDashVideoLibNumbers {
   
   @js.native
   sealed trait `20107` extends js.Object
+  
+  @js.native
+  sealed trait `3`
+    extends twilioDashVideoLib.twilioDashVideoMod.NetworkQualityVerbosity
   
   @js.native
   sealed trait `53000` extends js.Object
@@ -157,6 +173,12 @@ object twilioDashVideoLibNumbers {
   sealed trait `53501` extends js.Object
   
   @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
   def `20102`: `20102` = 20102.asInstanceOf[`20102`]
   @scala.inline
   def `20103`: `20103` = 20103.asInstanceOf[`20103`]
@@ -168,6 +190,8 @@ object twilioDashVideoLibNumbers {
   def `20106`: `20106` = 20106.asInstanceOf[`20106`]
   @scala.inline
   def `20107`: `20107` = 20107.asInstanceOf[`20107`]
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline
   def `53000`: `53000` = 53000.asInstanceOf[`53000`]
   @scala.inline

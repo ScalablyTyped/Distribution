@@ -58,10 +58,6 @@ class Http2ServerResponse protected ()
   def end(data: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(data: java.lang.String, encoding: java.lang.String): scala.Unit = js.native
   def end(data: java.lang.String, encoding: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def end(data: nodeLib.Buffer): scala.Unit = js.native
-  def end(data: nodeLib.Buffer, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def end(data: nodeLib.Buffer, encoding: java.lang.String): scala.Unit = js.native
-  def end(data: nodeLib.Buffer, encoding: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(data: stdLib.Uint8Array): scala.Unit = js.native
   def end(data: stdLib.Uint8Array, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(data: stdLib.Uint8Array, encoding: java.lang.String): scala.Unit = js.native
@@ -153,14 +149,6 @@ class Http2ServerResponse protected ()
   def write(chunk: java.lang.String, encoding: java.lang.String): scala.Boolean = js.native
   def write(
     chunk: java.lang.String,
-    encoding: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
-  ): scala.Boolean = js.native
-  def write(chunk: nodeLib.Buffer): scala.Boolean = js.native
-  def write(chunk: nodeLib.Buffer, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
-  def write(chunk: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
-  def write(
-    chunk: nodeLib.Buffer,
     encoding: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Boolean = js.native

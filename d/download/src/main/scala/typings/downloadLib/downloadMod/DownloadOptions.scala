@@ -76,7 +76,7 @@ object DownloadOptions {
     port: scala.Double | java.lang.String = null,
     protocol: java.lang.String = null,
     proxy: java.lang.String = null,
-    query: java.lang.String | js.Object = null,
+    query: (stdLib.Record[java.lang.String, _]) | nodeLib.urlMod.URLSearchParams | java.lang.String = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
     retry: scala.Double | gotLib.gotMod.RetryOptions = null,
     secureOptions: scala.Int | scala.Double = null,

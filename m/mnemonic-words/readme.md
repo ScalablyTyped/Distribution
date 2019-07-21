@@ -1,7 +1,7 @@
 
 # Scala.js typings for mnemonic-words
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 List of words for making random mnemonic sentences
@@ -24,7 +24,7 @@ List of words for making random mnemonic sentences
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,17 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mnemonic-words 1.0
-// Project: https://github.com/sindresorhus/mnemonic-words#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+List of words for making random mnemonic sentences.
+
+@example
+```
+import mnemonicWords = require('mnemonic-words');
+
+console.log(mnemonicWords);
+//=> ['abandon', 'ability', …]
+```
+*/
 
 ```
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rsmq-worker"
-version := "0.3.5-dt-20190322Z-d2eb1a"
+version := "0.3.5-dt-20190322Z-ecd1f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-f05ed6",
-  "org.scalablytyped" %%% "rsmq" % "0.3.16-dt-20190322Z-2170bb",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-b668c5",
+  "org.scalablytyped" %%% "rsmq" % "0.3.16-dt-20190322Z-5dd288",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

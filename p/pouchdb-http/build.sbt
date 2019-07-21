@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pouchdb-http"
-version := "6.1-dt-20190212Z-e6656e"
+version := "6.1-dt-20190717Z-e6656e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

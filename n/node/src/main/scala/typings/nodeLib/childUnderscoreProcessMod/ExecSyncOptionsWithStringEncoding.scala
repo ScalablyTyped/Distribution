@@ -17,7 +17,7 @@ object ExecSyncOptionsWithStringEncoding {
     cwd: java.lang.String = null,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     gid: scala.Int | scala.Double = null,
-    input: java.lang.String | nodeLib.Buffer | stdLib.Uint8Array = null,
+    input: java.lang.String | stdLib.Uint8Array = null,
     killSignal: java.lang.String | scala.Double = null,
     maxBuffer: scala.Int | scala.Double = null,
     shell: java.lang.String = null,

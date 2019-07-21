@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-jcrop"
-version := "2.0-dt-20180214Z-6e68cb"
+version := "2.0-dt-20190717Z-6e68cb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

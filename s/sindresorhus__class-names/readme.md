@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__class-names
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 Conditionally join CSS class names together - Especially useful with React
@@ -24,7 +24,7 @@ Conditionally join CSS class names together - Especially useful with React
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,52 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @sindresorhus/class-names 1.0
-// Project: https://github.com/sindresorhus/class-names
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Conditionally join CSS class names together.
+
+@param input - Accepts a combination of strings and objects. When an object, only object keys with truthy values are included. Anything else is ignored.
+
+@example
+```
+import classNames = require('@sindresorhus/class-names');
+
+classNames('unicorn', 'rainbow');
+//=> 'unicorn rainbow'
+
+classNames({awesome: true, foo: false}, 'unicorn', {rainbow: false});
+//=> 'awesome unicorn'
+
+classNames('unicorn', null, undefined, 0, 1, {foo: null});
+//=> 'unicorn'
+
+const buttonType = 'main';
+classNames({[`button-${buttonType}`]: true});
+//=> 'button-main'
+
+
+const Button = props => {
+	console.log(props);
+	// {
+	// 	type: 'success',
+	// 	small: true
+	// }
+
+	const buttonClass = classNames(
+		'button',
+		{
+			[`button-${props.type}`]: props.type,
+			'button-block': props.block,
+			'button-small': props.small
+		}
+	);
+
+	console.log(buttonClass);
+	//=> 'button button-success button-small'
+
+	return <button className={buttonClass}>…</button>;
+};
+```
+*/
 
 ```
 

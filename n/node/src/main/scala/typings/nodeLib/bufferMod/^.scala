@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val INSPECT_MAX_BYTES: scala.Double = js.native
-  def transcode(source: nodeLib.Buffer, fromEnc: TranscodeEncoding, toEnc: TranscodeEncoding): nodeLib.Buffer = js.native
+  val kMaxLength: scala.Double = js.native
+  val kStringMaxLength: scala.Double = js.native
   def transcode(source: stdLib.Uint8Array, fromEnc: TranscodeEncoding, toEnc: TranscodeEncoding): nodeLib.Buffer = js.native
 }
 

@@ -34,6 +34,10 @@ class NamedQuery protected ()
     * The text of the query itself. In other words, all query statements. Maximum length of 262144.
     */
   val query: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The workgroup to which the query belongs. Defaults to `primary`
+    */
+  val workgroup: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

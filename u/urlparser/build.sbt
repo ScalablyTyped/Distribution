@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "urlparser"
-version := "0.2-dt-20180216Z-b4b587"
+version := "0.2-dt-20190717Z-b4b587"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

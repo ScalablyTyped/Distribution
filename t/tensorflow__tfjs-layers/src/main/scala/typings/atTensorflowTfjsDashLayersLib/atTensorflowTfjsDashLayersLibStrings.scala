@@ -7,7 +7,19 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashLayersLibStrings {
   @js.native
-  sealed trait `1DOT2DOT2` extends js.Object
+  sealed trait `1DOT2DOT3` extends js.Object
+  
+  @js.native
+  sealed trait AdadeltaOptimizer extends js.Object
+  
+  @js.native
+  sealed trait AdagradOptimizer extends js.Object
+  
+  @js.native
+  sealed trait AdamOptimizer extends js.Object
+  
+  @js.native
+  sealed trait AdamaxOptimizer extends js.Object
   
   @js.native
   sealed trait Constant extends js.Object
@@ -25,6 +37,9 @@ object atTensorflowTfjsDashLayersLibStrings {
   sealed trait MinMaxNorm extends js.Object
   
   @js.native
+  sealed trait MomentumOptimizer extends js.Object
+  
+  @js.native
   sealed trait NonNeg extends js.Object
   
   @js.native
@@ -37,10 +52,16 @@ object atTensorflowTfjsDashLayersLibStrings {
   sealed trait PyJson extends js.Object
   
   @js.native
+  sealed trait RMSPropOptimizer extends js.Object
+  
+  @js.native
   sealed trait RandomNormal extends js.Object
   
   @js.native
   sealed trait RandomUniform extends js.Object
+  
+  @js.native
+  sealed trait SGDOptimizer extends js.Object
   
   @js.native
   sealed trait TruncatedNormal extends js.Object
@@ -75,6 +96,12 @@ object atTensorflowTfjsDashLayersLibStrings {
     extends atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatCommonMod.DataType
   
   @js.native
+  sealed trait categorical_crossentropy extends js.Object
+  
+  @js.native
+  sealed trait categorical_hinge extends js.Object
+  
+  @js.native
   sealed trait causal
     extends atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatCommonMod.PaddingMode
   
@@ -105,6 +132,9 @@ object atTensorflowTfjsDashLayersLibStrings {
   @js.native
   sealed trait constant
     extends atTensorflowTfjsDashLayersLib.distInitializersMod._InitializerIdentifier
+  
+  @js.native
+  sealed trait cosine_proximity extends js.Object
   
   @js.native
   sealed trait elu
@@ -166,12 +196,18 @@ object atTensorflowTfjsDashLayersLibStrings {
     extends atTensorflowTfjsDashLayersLib.distInitializersMod._InitializerIdentifier
   
   @js.native
+  sealed trait hinge extends js.Object
+  
+  @js.native
   sealed trait identity
     extends atTensorflowTfjsDashLayersLib.distInitializersMod._InitializerIdentifier
   
   @js.native
   sealed trait int32
     extends atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatCommonMod.DataType
+  
+  @js.native
+  sealed trait kullback_leibler_divergence extends js.Object
   
   @js.native
   sealed trait l1l2 extends js.Object
@@ -192,12 +228,27 @@ object atTensorflowTfjsDashLayersLibStrings {
   sealed trait logSoftmax extends js.Object
   
   @js.native
+  sealed trait logcosh extends js.Object
+  
+  @js.native
   sealed trait max
     extends atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatCommonMod.PoolMode
   
   @js.native
   sealed trait maxNorm
     extends atTensorflowTfjsDashLayersLib.distConstraintsMod._ConstraintIdentifier
+  
+  @js.native
+  sealed trait mean_absolute_error extends js.Object
+  
+  @js.native
+  sealed trait mean_absolute_percentage_error extends js.Object
+  
+  @js.native
+  sealed trait mean_squared_error extends js.Object
+  
+  @js.native
+  sealed trait mean_squared_logarithmic_error extends js.Object
   
   @js.native
   sealed trait min extends js.Object
@@ -230,6 +281,9 @@ object atTensorflowTfjsDashLayersLibStrings {
   @js.native
   sealed trait orthogonal
     extends atTensorflowTfjsDashLayersLib.distInitializersMod._InitializerIdentifier
+  
+  @js.native
+  sealed trait poisson extends js.Object
   
   @js.native
   sealed trait randomNormal
@@ -270,6 +324,12 @@ object atTensorflowTfjsDashLayersLibStrings {
   @js.native
   sealed trait softsign
     extends atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatActivationUnderscoreConfigMod.ActivationIdentifier
+  
+  @js.native
+  sealed trait sparse_categorical_crossentropy extends js.Object
+  
+  @js.native
+  sealed trait squared_hinge extends js.Object
   
   @js.native
   sealed trait string
@@ -317,7 +377,15 @@ object atTensorflowTfjsDashLayersLibStrings {
     extends atTensorflowTfjsDashLayersLib.distInitializersMod._InitializerIdentifier
   
   @scala.inline
-  def `1DOT2DOT2`: `1DOT2DOT2` = "1.2.2".asInstanceOf[`1DOT2DOT2`]
+  def `1DOT2DOT3`: `1DOT2DOT3` = "1.2.3".asInstanceOf[`1DOT2DOT3`]
+  @scala.inline
+  def AdadeltaOptimizer: AdadeltaOptimizer = "AdadeltaOptimizer".asInstanceOf[AdadeltaOptimizer]
+  @scala.inline
+  def AdagradOptimizer: AdagradOptimizer = "AdagradOptimizer".asInstanceOf[AdagradOptimizer]
+  @scala.inline
+  def AdamOptimizer: AdamOptimizer = "AdamOptimizer".asInstanceOf[AdamOptimizer]
+  @scala.inline
+  def AdamaxOptimizer: AdamaxOptimizer = "AdamaxOptimizer".asInstanceOf[AdamaxOptimizer]
   @scala.inline
   def Constant: Constant = "Constant".asInstanceOf[Constant]
   @scala.inline
@@ -329,6 +397,8 @@ object atTensorflowTfjsDashLayersLibStrings {
   @scala.inline
   def MinMaxNorm: MinMaxNorm = "MinMaxNorm".asInstanceOf[MinMaxNorm]
   @scala.inline
+  def MomentumOptimizer: MomentumOptimizer = "MomentumOptimizer".asInstanceOf[MomentumOptimizer]
+  @scala.inline
   def NonNeg: NonNeg = "NonNeg".asInstanceOf[NonNeg]
   @scala.inline
   def Ones: Ones = "Ones".asInstanceOf[Ones]
@@ -337,9 +407,13 @@ object atTensorflowTfjsDashLayersLibStrings {
   @scala.inline
   def PyJson: PyJson = "PyJson".asInstanceOf[PyJson]
   @scala.inline
+  def RMSPropOptimizer: RMSPropOptimizer = "RMSPropOptimizer".asInstanceOf[RMSPropOptimizer]
+  @scala.inline
   def RandomNormal: RandomNormal = "RandomNormal".asInstanceOf[RandomNormal]
   @scala.inline
   def RandomUniform: RandomUniform = "RandomUniform".asInstanceOf[RandomUniform]
+  @scala.inline
+  def SGDOptimizer: SGDOptimizer = "SGDOptimizer".asInstanceOf[SGDOptimizer]
   @scala.inline
   def TruncatedNormal: TruncatedNormal = "TruncatedNormal".asInstanceOf[TruncatedNormal]
   @scala.inline
@@ -359,6 +433,10 @@ object atTensorflowTfjsDashLayersLibStrings {
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
+  def categorical_crossentropy: categorical_crossentropy = "categorical_crossentropy".asInstanceOf[categorical_crossentropy]
+  @scala.inline
+  def categorical_hinge: categorical_hinge = "categorical_hinge".asInstanceOf[categorical_hinge]
+  @scala.inline
   def causal: causal = "causal".asInstanceOf[causal]
   @scala.inline
   def channelsFirst: channelsFirst = "channelsFirst".asInstanceOf[channelsFirst]
@@ -374,6 +452,8 @@ object atTensorflowTfjsDashLayersLibStrings {
   def concat: concat = "concat".asInstanceOf[concat]
   @scala.inline
   def constant: constant = "constant".asInstanceOf[constant]
+  @scala.inline
+  def cosine_proximity: cosine_proximity = "cosine_proximity".asInstanceOf[cosine_proximity]
   @scala.inline
   def elu: elu = "elu".asInstanceOf[elu]
   @scala.inline
@@ -405,9 +485,13 @@ object atTensorflowTfjsDashLayersLibStrings {
   @scala.inline
   def heUniform: heUniform = "heUniform".asInstanceOf[heUniform]
   @scala.inline
+  def hinge: hinge = "hinge".asInstanceOf[hinge]
+  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
+  @scala.inline
+  def kullback_leibler_divergence: kullback_leibler_divergence = "kullback_leibler_divergence".asInstanceOf[kullback_leibler_divergence]
   @scala.inline
   def l1l2: l1l2 = "l1l2".asInstanceOf[l1l2]
   @scala.inline
@@ -419,9 +503,19 @@ object atTensorflowTfjsDashLayersLibStrings {
   @scala.inline
   def logSoftmax: logSoftmax = "logSoftmax".asInstanceOf[logSoftmax]
   @scala.inline
+  def logcosh: logcosh = "logcosh".asInstanceOf[logcosh]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
   def maxNorm: maxNorm = "maxNorm".asInstanceOf[maxNorm]
+  @scala.inline
+  def mean_absolute_error: mean_absolute_error = "mean_absolute_error".asInstanceOf[mean_absolute_error]
+  @scala.inline
+  def mean_absolute_percentage_error: mean_absolute_percentage_error = "mean_absolute_percentage_error".asInstanceOf[mean_absolute_percentage_error]
+  @scala.inline
+  def mean_squared_error: mean_squared_error = "mean_squared_error".asInstanceOf[mean_squared_error]
+  @scala.inline
+  def mean_squared_logarithmic_error: mean_squared_logarithmic_error = "mean_squared_logarithmic_error".asInstanceOf[mean_squared_logarithmic_error]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
@@ -438,6 +532,8 @@ object atTensorflowTfjsDashLayersLibStrings {
   def ones: ones = "ones".asInstanceOf[ones]
   @scala.inline
   def orthogonal: orthogonal = "orthogonal".asInstanceOf[orthogonal]
+  @scala.inline
+  def poisson: poisson = "poisson".asInstanceOf[poisson]
   @scala.inline
   def randomNormal: randomNormal = "randomNormal".asInstanceOf[randomNormal]
   @scala.inline
@@ -458,6 +554,10 @@ object atTensorflowTfjsDashLayersLibStrings {
   def softplus: softplus = "softplus".asInstanceOf[softplus]
   @scala.inline
   def softsign: softsign = "softsign".asInstanceOf[softsign]
+  @scala.inline
+  def sparse_categorical_crossentropy: sparse_categorical_crossentropy = "sparse_categorical_crossentropy".asInstanceOf[sparse_categorical_crossentropy]
+  @scala.inline
+  def squared_hinge: squared_hinge = "squared_hinge".asInstanceOf[squared_hinge]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

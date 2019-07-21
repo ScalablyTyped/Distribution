@@ -184,6 +184,13 @@ object wafNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.wafXssMatchSetMod.XssMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getRule(args: atPulumiAwsLib.wafGetRuleMod.GetRuleArgs): js.Promise[atPulumiAwsLib.wafGetRuleMod.GetRuleResult] with atPulumiAwsLib.wafGetRuleMod.GetRuleResult = js.native
+  def getRule(args: atPulumiAwsLib.wafGetRuleMod.GetRuleArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.wafGetRuleMod.GetRuleResult] with atPulumiAwsLib.wafGetRuleMod.GetRuleResult = js.native
+  def getWebAcl(args: atPulumiAwsLib.wafGetWebAclMod.GetWebAclArgs): js.Promise[atPulumiAwsLib.wafGetWebAclMod.GetWebAclResult] with atPulumiAwsLib.wafGetWebAclMod.GetWebAclResult = js.native
+  def getWebAcl(
+    args: atPulumiAwsLib.wafGetWebAclMod.GetWebAclArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.wafGetWebAclMod.GetWebAclResult] with atPulumiAwsLib.wafGetWebAclMod.GetWebAclResult = js.native
   /* static members */
   @js.native
   object ByteMatchSet extends js.Object {

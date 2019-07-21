@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fuzzyset"
-version := "1.0-dt-20190212Z-b3e100"
+version := "1.0-dt-20190717Z-b3e100"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

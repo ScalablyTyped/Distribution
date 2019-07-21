@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg
 
-Typings are for version 4.0
+Typings are for version 5.2.0
 
 ## Library description:
 Read a package.json file
@@ -24,21 +24,11 @@ Read a package.json file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for read-pkg 4.0
-// Project: https://github.com/sindresorhus/read-pkg
-// Definitions by: Jeff Dickey <https://github.com/jdxcode>, Richard Smith <https://github.com/arichardsmith>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

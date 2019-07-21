@@ -136,17 +136,17 @@ object route53Ns extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getDelegationSet(args: atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetArgs): js.Promise[atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult] = js.native
+  def getDelegationSet(args: atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetArgs): js.Promise[atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult] with atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult = js.native
   def getDelegationSet(
     args: atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult] = js.native
-  def getZone(): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] = js.native
-  def getZone(args: atPulumiAwsLib.route53GetZoneMod.GetZoneArgs): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] = js.native
+  ): js.Promise[atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult] with atPulumiAwsLib.route53GetDelegationSetMod.GetDelegationSetResult = js.native
+  def getZone(): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] with atPulumiAwsLib.route53GetZoneMod.GetZoneResult = js.native
+  def getZone(args: atPulumiAwsLib.route53GetZoneMod.GetZoneArgs): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] with atPulumiAwsLib.route53GetZoneMod.GetZoneResult = js.native
   def getZone(
     args: atPulumiAwsLib.route53GetZoneMod.GetZoneArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] = js.native
+  ): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] with atPulumiAwsLib.route53GetZoneMod.GetZoneResult = js.native
   /* static members */
   @js.native
   object DelegationSet extends js.Object {

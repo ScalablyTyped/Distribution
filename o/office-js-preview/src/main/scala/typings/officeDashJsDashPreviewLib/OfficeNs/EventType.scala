@@ -14,6 +14,8 @@ sealed trait EventType extends js.Object
   * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
   * `Office.EventType.ViewSelectionChanged` event types.
   * 
+  * Only task pane add-ins for Outlook support Mailbox API set event types.
+  * 
   * @remarks
   * 
   * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
@@ -33,7 +35,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when any date or time of the selected appointment or series is changed in Outlook.
+    * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -42,7 +44,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when an attachment is added to or removed from an item.
+    * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
     * 
     * [Api set: Mailbox Preview]
     * 
@@ -100,7 +102,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when the appointment location is changed in Outlook.
+    * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
     * 
     * [Api set: Mailbox Preview]
     */
@@ -109,7 +111,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
+    * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
     * 
     * [Api set: Mailbox 1.5]
     */
@@ -139,7 +141,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when the OfficeTheme is changed in Outlook.
+    * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
     * 
     * [Api set: Mailbox Preview]
     * 
@@ -150,7 +152,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
+    * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -159,7 +161,7 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
-    * Triggers when the recurrence pattern of the selected series is changed in Outlook.
+    * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
     * 
     * [Api set: Mailbox 1.7]
     */

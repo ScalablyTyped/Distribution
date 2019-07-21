@@ -61,14 +61,14 @@ object ^ extends js.Object {
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop
   ): ArrowFunctionExpression = js.native
   def assignmentExpression(operator: java.lang.String, left: LVal, right: Expression): AssignmentExpression = js.native
-  def assignmentPattern(left: Identifier | ObjectPattern | ArrayPattern, right: Expression): AssignmentPattern = js.native
+  def assignmentPattern(left: Identifier | ObjectPattern | ArrayPattern | MemberExpression, right: Expression): AssignmentPattern = js.native
   def assignmentPattern(
-    left: Identifier | ObjectPattern | ArrayPattern,
+    left: Identifier | ObjectPattern | ArrayPattern | MemberExpression,
     right: Expression,
     decorators: js.Array[Decorator]
   ): AssignmentPattern = js.native
   def assignmentPattern(
-    left: Identifier | ObjectPattern | ArrayPattern,
+    left: Identifier | ObjectPattern | ArrayPattern | MemberExpression,
     right: Expression,
     decorators: js.Array[Decorator],
     typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop
@@ -3724,8 +3724,8 @@ object ^ extends js.Object {
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral): TaggedTemplateExpression = js.native
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral, typeParameters: TSTypeParameterInstantiation): TaggedTemplateExpression = js.native
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral, typeParameters: TypeParameterInstantiation): TaggedTemplateExpression = js.native
-  def templateElement(value: js.Any): TemplateElement = js.native
-  def templateElement(value: js.Any, tail: scala.Boolean): TemplateElement = js.native
+  def templateElement(value: atBabelTypesLib.Anon_Cooked): TemplateElement = js.native
+  def templateElement(value: atBabelTypesLib.Anon_Cooked, tail: scala.Boolean): TemplateElement = js.native
   def templateLiteral(quasis: js.Array[TemplateElement], expressions: js.Array[Expression]): TemplateLiteral = js.native
   def thisExpression(): ThisExpression = js.native
   def thisTypeAnnotation(): ThisTypeAnnotation = js.native

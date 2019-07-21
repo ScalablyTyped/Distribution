@@ -88,8 +88,8 @@ object snsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.snsTopicSubscriptionMod.TopicSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] = js.native
-  def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] = js.native
+  def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] with atPulumiAwsLib.snsGetTopicMod.GetTopicResult = js.native
+  def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] with atPulumiAwsLib.snsGetTopicMod.GetTopicResult = js.native
   /* static members */
   @js.native
   object PlatformApplication extends js.Object {

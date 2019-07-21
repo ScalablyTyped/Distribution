@@ -19,7 +19,7 @@ trait ModifyEventSubscriptionMessage extends js.Object {
     */
   var SnsTopicArn: js.UndefOr[String] = js.undefined
   /**
-    *  The type of AWS DMS resource that generates the events you want to subscribe to.  Valid values: replication-instance | migration-task
+    *  The type of AWS DMS resource that generates the events you want to subscribe to.  Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
   /**

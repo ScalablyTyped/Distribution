@@ -22,7 +22,7 @@ object ^ extends js.Object {
   def convertStreams_node(obj: js.Object, streaming: openpgpLib.openpgpLibStrings.node, keys: js.Array[_]): js.Object = js.native
   @JSName("convertStreams")
   def convertStreams_web(obj: js.Object, streaming: openpgpLib.openpgpLibStrings.web, keys: js.Array[_]): js.Object = js.native
-  def decrypt(options: (DecryptOptions with (openpgpLib.Anon_Binary | openpgpLib.Anon_Format)) | DecryptOptions): js.Promise[DecryptOptions with openpgpLib.Anon_DataNodeStream] = js.native
+  def decrypt(options: (DecryptOptions with (openpgpLib.Anon_Binary | openpgpLib.Anon_Format)) | DecryptOptions): js.Promise[DecryptResult with openpgpLib.Anon_DataNodeStream] = js.native
   def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: java.lang.String): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
   def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: js.Array[_]): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
   def decryptSessionKeys(message: openpgpLib.openpgpMod.messageNs.Message): js.Promise[js.UndefOr[js.Array[openpgpLib.Anon_Algorithm]]] = js.native

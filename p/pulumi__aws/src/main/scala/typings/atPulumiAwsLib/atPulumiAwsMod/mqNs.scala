@@ -36,9 +36,9 @@ object mqNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.mqConfigurationMod.ConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getBroker(): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
-  def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
-  def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
+  def getBroker(): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] with atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult = js.native
+  def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] with atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult = js.native
+  def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] with atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult = js.native
   /* static members */
   @js.native
   object Broker extends js.Object {

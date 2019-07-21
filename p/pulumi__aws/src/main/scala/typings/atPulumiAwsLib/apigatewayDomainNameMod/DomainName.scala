@@ -85,6 +85,10 @@ class DomainName protected ()
     * The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
     */
   val regionalZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+    */
+  val securityPolicy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

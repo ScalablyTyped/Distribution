@@ -11,7 +11,7 @@ trait DescribeEventCategoriesMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | migration-task
+    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
 }

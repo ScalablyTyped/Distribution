@@ -15,19 +15,19 @@ trait ScheduledUpdateGroupAction extends js.Object {
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   /**
-    * The date and time that the action is scheduled to end. 
+    * The date and time in UTC for the recurring schedule to end. For example, "2019-06-01T00:00:00Z". 
     */
   var EndTime: js.UndefOr[TimestampType] = js.undefined
   /**
-    * The maximum size of the group.
+    * The maximum number of instances in the Auto Scaling group.
     */
   var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined
   /**
-    * The minimum size of the group.
+    * The minimum number of instances in the Auto Scaling group.
     */
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   /**
-    * The recurring schedule for the action.
+    * The recurring schedule for the action, in Unix cron syntax format.  When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
     */
   var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait ScheduledUpdateGroupAction extends js.Object {
     */
   var ScheduledActionName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The date and time that the action is scheduled to begin.  When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
+    * The date and time in UTC for this action to start. For example, "2019-06-01T00:00:00Z". 
     */
   var StartTime: js.UndefOr[TimestampType] = js.undefined
   /**

@@ -44,15 +44,15 @@ trait ShallowRendererProps extends js.Object {
   var suspenseFallback: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * A component that will render as a parent of the node.
-    * It can be used to provide context to the node, among other things.
-    * See https://airbnb.io/enzyme/docs/api/ShallowWrapper/getWrappingComponent.html
-    * Note: wrappingComponent must render its children.
+    * It can be used to provide context to the `node`, among other things.
+    * See the [getWrappingComponent() docs](https://airbnb.io/enzyme/docs/api/ShallowWrapper/getWrappingComponent.html) for an example.
+    * **Note**: `wrappingComponent` must render its children.
     */
   var wrappingComponent: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Initial props to pass to the wrappingComponent if it is specified.
+    * Initial props to pass to the `wrappingComponent` if it is specified.
     */
-  var wrappingComponentProps: js.UndefOr[js.Any] = js.undefined
+  var wrappingComponentProps: js.UndefOr[js.Object] = js.undefined
 }
 
 object ShallowRendererProps {
@@ -70,7 +70,7 @@ object ShallowRendererProps {
     supportPrevContextArgumentOfComponentDidUpdate: js.UndefOr[scala.Boolean] = js.undefined,
     suspenseFallback: js.UndefOr[scala.Boolean] = js.undefined,
     wrappingComponent: ComponentType[_] = null,
-    wrappingComponentProps: js.Any = null
+    wrappingComponentProps: js.Object = null
   ): ShallowRendererProps = {
     val __obj = js.Dynamic.literal()
     if (PROVIDER_VALUES != null) __obj.updateDynamic("PROVIDER_VALUES")(PROVIDER_VALUES)

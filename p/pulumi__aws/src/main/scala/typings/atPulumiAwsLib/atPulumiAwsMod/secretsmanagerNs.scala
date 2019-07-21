@@ -37,17 +37,17 @@ object secretsmanagerNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.secretsmanagerSecretVersionMod.SecretVersionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getSecret(): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] = js.native
-  def getSecret(args: atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretArgs): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] = js.native
+  def getSecret(): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] with atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult = js.native
+  def getSecret(args: atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretArgs): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] with atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult = js.native
   def getSecret(
     args: atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] = js.native
-  def getSecretVersion(args: atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionArgs): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult] with atPulumiAwsLib.secretsmanagerGetSecretMod.GetSecretResult = js.native
+  def getSecretVersion(args: atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionArgs): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult] with atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult = js.native
   def getSecretVersion(
     args: atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult] with atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult = js.native
   /* static members */
   @js.native
   object Secret extends js.Object {

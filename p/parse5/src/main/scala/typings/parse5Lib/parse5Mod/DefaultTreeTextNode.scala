@@ -5,16 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultTreeTextNode extends DefaultTreeNode {
+trait DefaultTreeTextNode extends DefaultTreeChildNode {
   /**
     * The name of the node.
     */
   @JSName("nodeName")
   var nodeName_DefaultTreeTextNode: parse5Lib.parse5LibStrings.`#text`
-  /**
-    * Parent node.
-    */
-  var parentNode: DefaultTreeParentNode
   /**
     * Text node source code location info. Available if location info is enabled via {@link ParserOptions}.
     */

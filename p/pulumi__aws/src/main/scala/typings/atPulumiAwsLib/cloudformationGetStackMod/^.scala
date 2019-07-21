@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudformation/getStack", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = js.native
-  def getStack(args: GetStackArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetStackResult] = js.native
+  def getStack(args: GetStackArgs): js.Promise[GetStackResult] with GetStackResult = js.native
+  def getStack(args: GetStackArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetStackResult] with GetStackResult = js.native
 }
 

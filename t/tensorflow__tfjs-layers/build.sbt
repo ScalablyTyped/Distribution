@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-layers"
-version := "1.2.2-9119e7"
+version := "1.2.3-475491"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.2.2-ccfb8d",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.2.3-fecdf1",
   "org.scalablytyped" %%% "webgl2" % "0.0-unknown-dt-20190711Z-742ad4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

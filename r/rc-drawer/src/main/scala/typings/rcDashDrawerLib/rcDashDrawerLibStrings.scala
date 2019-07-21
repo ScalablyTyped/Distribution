@@ -8,19 +8,23 @@ import scala.scalajs.js.annotation._
 object rcDashDrawerLibStrings {
   @js.native
   sealed trait bottom
-    extends rcDashDrawerLib.rcDashDrawerMod.IPlacement
+    extends rcDashDrawerLib.libIDrawerPropTypesMod.IPlacement
+       with rcDashDrawerLib.esIDrawerPropTypesMod.IPlacement
   
   @js.native
   sealed trait left
-    extends rcDashDrawerLib.rcDashDrawerMod.IPlacement
+    extends rcDashDrawerLib.libIDrawerPropTypesMod.IPlacement
+       with rcDashDrawerLib.esIDrawerPropTypesMod.IPlacement
   
   @js.native
   sealed trait right
-    extends rcDashDrawerLib.rcDashDrawerMod.IPlacement
+    extends rcDashDrawerLib.libIDrawerPropTypesMod.IPlacement
+       with rcDashDrawerLib.esIDrawerPropTypesMod.IPlacement
   
   @js.native
   sealed trait top
-    extends rcDashDrawerLib.rcDashDrawerMod.IPlacement
+    extends rcDashDrawerLib.libIDrawerPropTypesMod.IPlacement
+       with rcDashDrawerLib.esIDrawerPropTypesMod.IPlacement
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

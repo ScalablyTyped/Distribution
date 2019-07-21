@@ -14,7 +14,9 @@ class Base () extends js.Object {
   val isLoadingFromJson: scala.Boolean = js.native
   var isLoadingFromJsonValue: scala.Boolean = js.native
   var onPropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /* protected */ def AddLocStringToUsedLocales(locStr: LocalizableString, locales: js.Array[java.lang.String]): scala.Unit = js.native
   /* protected */ def IsPropertyEmpty(value: js.Any): scala.Boolean = js.native
+  def addUsedLocales(locales: js.Array[java.lang.String]): scala.Unit = js.native
   def createCustomLocalizableObj(name: java.lang.String): scala.Unit = js.native
   /* protected */ def createItemValues(name: java.lang.String): js.Array[_] = js.native
   /* protected */ def createLocalizableString(name: java.lang.String, owner: ILocalizableOwner): LocalizableString = js.native

@@ -11,7 +11,7 @@ trait MaintenanceWindowTaskState extends js.Object {
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Documented below.
+    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
     */
   val loggingInfo: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefixS3Region]
@@ -24,13 +24,16 @@ trait MaintenanceWindowTaskState extends js.Object {
     * The maximum number of errors allowed before this task stops being scheduled.
     */
   val maxErrors: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The parameter name.
+    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
     */
   val priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
-    * The role that should be assumed when executing the task.
+    * The IAM service role to assume during task execution.
     */
   val serviceRoleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -44,7 +47,13 @@ trait MaintenanceWindowTaskState extends js.Object {
     */
   val taskArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * A structure containing information about parameters required by the particular `task_arn`. Documented below.
+    * The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+    */
+  val taskInvocationParameters: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutomationParametersLambdaParameters]
+  ] = js.undefined
+  /**
+    * A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
     */
   val taskParameters: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]]
@@ -71,6 +80,7 @@ object MaintenanceWindowTaskState {
     serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     targets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]] = null,
     taskArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    taskInvocationParameters: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutomationParametersLambdaParameters] = null,
     taskParameters: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]] = null,
     taskType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     windowId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
@@ -85,6 +95,7 @@ object MaintenanceWindowTaskState {
     if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
+    if (taskInvocationParameters != null) __obj.updateDynamic("taskInvocationParameters")(taskInvocationParameters.asInstanceOf[js.Any])
     if (taskParameters != null) __obj.updateDynamic("taskParameters")(taskParameters.asInstanceOf[js.Any])
     if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])

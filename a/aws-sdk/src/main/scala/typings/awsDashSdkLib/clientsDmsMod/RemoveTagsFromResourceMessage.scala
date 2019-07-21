@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RemoveTagsFromResourceMessage extends js.Object {
   /**
-    * &gt;The Amazon Resource Name (ARN) of the AWS DMS resource the tag is to be removed from.
+    * An AWS DMS resource from which you want to remove tag(s). The value for this parameter is an Amazon Resource Name (ARN).
     */
   var ResourceArn: String
   /**

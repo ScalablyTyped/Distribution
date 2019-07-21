@@ -22,11 +22,11 @@ object curNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.curReportDefinitionMod.ReportDefinitionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getReportDefinition(args: atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionArgs): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] = js.native
+  def getReportDefinition(args: atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionArgs): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] with atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult = js.native
   def getReportDefinition(
     args: atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] with atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult = js.native
   /* static members */
   @js.native
   object ReportDefinition extends js.Object {

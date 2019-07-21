@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Script protected () extends js.Object {
   def this(code: java.lang.String) = this()
   def this(code: java.lang.String, options: ScriptOptions) = this()
+  def createCachedData(): nodeLib.Buffer = js.native
   def runInContext(contextifiedSandbox: Context): js.Any = js.native
   def runInContext(contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(): js.Any = js.native

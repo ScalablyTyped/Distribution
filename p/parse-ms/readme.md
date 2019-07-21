@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-ms
 
-Typings are for version 1.0
+Typings are for version 2.1.0
 
 ## Library description:
 Parse milliseconds into an object
@@ -24,21 +24,11 @@ Parse milliseconds into an object
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parse-ms 1.0
-// Project: https://github.com/sindresorhus/parse-ms#readme
-// Definitions by: Giles Roadnight <https://github.com/Roaders>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

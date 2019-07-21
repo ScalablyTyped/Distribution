@@ -31,6 +31,10 @@ trait Cluster extends js.Object {
     */
   var runningTasksCount: js.UndefOr[Integer] = js.undefined
   /**
+    * The settings for the cluster. This parameter indicates whether CloudWatch Container Insights is enabled or disabled for a cluster.
+    */
+  var settings: js.UndefOr[ClusterSettings] = js.undefined
+  /**
     * Additional information about your clusters that are separated by launch type, including:   runningEC2TasksCount   RunningFargateTasksCount   pendingEC2TasksCount   pendingFargateTasksCount   activeEC2ServiceCount   activeFargateServiceCount   drainingEC2ServiceCount   drainingFargateServiceCount  
     */
   var statistics: js.UndefOr[Statistics] = js.undefined
@@ -53,6 +57,7 @@ object Cluster {
     pendingTasksCount: js.UndefOr[Integer] = js.undefined,
     registeredContainerInstancesCount: js.UndefOr[Integer] = js.undefined,
     runningTasksCount: js.UndefOr[Integer] = js.undefined,
+    settings: ClusterSettings = null,
     statistics: Statistics = null,
     status: String = null,
     tags: Tags = null
@@ -64,6 +69,7 @@ object Cluster {
     if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount)
     if (!js.isUndefined(registeredContainerInstancesCount)) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount)
     if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (status != null) __obj.updateDynamic("status")(status)
     if (tags != null) __obj.updateDynamic("tags")(tags)

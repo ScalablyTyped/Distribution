@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-html-parser"
-version := "2.0-dt-20190426Z-e143c3"
+version := "2.0-dt-20190717Z-d933cb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
+  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-9b11f7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")

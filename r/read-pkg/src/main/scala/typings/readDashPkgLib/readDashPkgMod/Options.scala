@@ -7,17 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-    * Current working directory
-    *
-    * @default process.cwd()
-    */
-  var cwd: js.UndefOr[java.lang.String] = js.undefined
+  		Current working directory.
+  		@default process.cwd()
+  		*/
+  val cwd: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * [Normalize](https://github.com/npm/normalize-package-data#what-normalization-currently-entails) the package data.
-    *
-    * @default true
-    */
-  var normalize: js.UndefOr[scala.Boolean] = js.undefined
+  		[Normalize](https://github.com/npm/normalize-package-data#what-normalization-currently-entails) the package data.
+  		@default true
+  		*/
+  val normalize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

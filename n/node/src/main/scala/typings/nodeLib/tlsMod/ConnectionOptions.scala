@@ -28,7 +28,7 @@ trait ConnectionOptions
 object ConnectionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[java.lang.String | stdLib.Uint8Array]) | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* ctx */ SecureContext, scala.Unit]) => scala.Unit = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,

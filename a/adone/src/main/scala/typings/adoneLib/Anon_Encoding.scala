@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_Encoding
-  extends org.scalablytyped.runtime.Instantiable0[nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder]
-     with org.scalablytyped.runtime.Instantiable1[
-      /* encoding */ java.lang.String, 
-      nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder
-    ]
+trait Anon_Encoding extends js.Object {
+  var encoding: scala.Null
+}
+
+object Anon_Encoding {
+  @scala.inline
+  def apply(encoding: scala.Null): Anon_Encoding = {
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
+    __obj.asInstanceOf[Anon_Encoding]
+  }
+}
 

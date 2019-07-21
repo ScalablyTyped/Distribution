@@ -36,11 +36,11 @@ object cloudhsmv2Ns extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloudhsmv2HsmMod.HsmArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCluster(args: atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult] = js.native
+  def getCluster(args: atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult] with atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult = js.native
   def getCluster(
     args: atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult] with atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

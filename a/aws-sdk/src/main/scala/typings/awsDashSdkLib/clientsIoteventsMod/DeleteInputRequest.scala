@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteInputRequest extends js.Object {
   /**
-    * The name of the input to be deleted.
+    * The name of the input to delete.
     */
   var inputName: InputName
 }

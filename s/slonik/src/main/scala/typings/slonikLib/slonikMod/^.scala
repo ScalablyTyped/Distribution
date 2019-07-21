@@ -20,6 +20,8 @@ object ^ extends js.Object {
   ): DatabasePoolType = js.native
   def createQueryNormalizationInterceptor(): InterceptorType = js.native
   def createQueryNormalizationInterceptor(configuration: slonikLib.Anon_StripComments): InterceptorType = js.native
+  def createSqlTag(): SqlTaggedTemplateType = js.native
+  def createSqlTag(configuration: SqlTagConfigurationType): SqlTaggedTemplateType = js.native
   def createTimestampTypeParser(): TypeParserType[scala.Double | scala.Null] = js.native
   def createTimestampWithTimeZoneTypeParser(): TypeParserType[scala.Double | scala.Null] = js.native
   def createTypeParserPreset(): js.Array[TypeParserType[_]] = js.native

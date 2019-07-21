@@ -1,7 +1,7 @@
 
 # Scala.js typings for jdenticon
 
-Typings are for version 1.3.2
+Typings are for version 2.2.0
 
 ## Library description:
 Javascript identicon generator
@@ -24,21 +24,11 @@ Javascript identicon generator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Jdenticon 1.3.2
-// Project: http://jdenticon.com/
-// Definitions by: Martin Thorsen Ranang <https://github.com/mtr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

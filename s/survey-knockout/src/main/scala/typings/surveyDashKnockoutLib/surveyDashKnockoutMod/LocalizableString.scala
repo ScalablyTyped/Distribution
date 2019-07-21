@@ -23,6 +23,7 @@ class LocalizableString protected () extends js.Object {
   def equals(obj: js.Any): scala.Boolean = js.native
   def getJson(): js.Any = js.native
   def getLocaleText(loc: java.lang.String): java.lang.String = js.native
+  def getLocales(): js.Array[java.lang.String] = js.native
   def hasNonDefaultText(): scala.Boolean = js.native
   def onChanged(): scala.Unit = js.native
   /* protected */ def onCreating(): scala.Unit = js.native

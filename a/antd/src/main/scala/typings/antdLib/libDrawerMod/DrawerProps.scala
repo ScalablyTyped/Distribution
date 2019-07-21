@@ -11,7 +11,9 @@ trait DrawerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[java.lang.String | stdLib.HTMLElement | getContainerFunc] = js.undefined
+  var getContainer: js.UndefOr[
+    java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false`
+  ] = js.undefined
   var handler: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,7 +40,7 @@ object DrawerProps {
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc = null,
+    getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false` = null,
     handler: reactLib.reactMod.ReactNode = null,
     height: scala.Double | java.lang.String = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,

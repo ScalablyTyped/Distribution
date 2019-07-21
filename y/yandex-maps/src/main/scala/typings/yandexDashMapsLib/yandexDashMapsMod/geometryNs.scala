@@ -15,10 +15,46 @@ object geometryNs extends js.Object {
     def this(coordinates: js.Array[js.Array[scala.Double]], options: yandexDashMapsLib.Anon_CoordRendering) = this()
     /* CompleteClass */
     override var events: yandexDashMapsLib.yandexDashMapsMod.IEventManager = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: js.Object): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: yandexDashMapsLib.yandexDashMapsMod.IEvent): this.type = js.native
+    def freeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
     /* CompleteClass */
     override def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
+    def getParent(): js.Object | scala.Null = js.native
     /* CompleteClass */
     override def getType(): java.lang.String = js.native
+    def group(): yandexDashMapsLib.yandexDashMapsMod.IEventGroup = js.native
+    def isFrozen(): scala.Boolean = js.native
     def remove(
       types: java.lang.String,
       callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
@@ -49,7 +85,9 @@ object geometryNs extends js.Object {
       context: js.Object,
       priority: scala.Double
     ): this.type = js.native
+    def setParent(): this.type = js.native
     def setParent(parent: yandexDashMapsLib.yandexDashMapsMod.IEventManager): this.type = js.native
+    def unfreeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
   }
   
   @js.native
@@ -74,10 +112,50 @@ object geometryNs extends js.Object {
     def this(coordinates: js.Array[js.Array[js.Array[scala.Double]]], fillRule: yandexDashMapsLib.yandexDashMapsLibStrings.nonZero, options: js.Object) = this()
     /* CompleteClass */
     override var events: yandexDashMapsLib.yandexDashMapsMod.IEventManager = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+     //tslint:disable-line function-name
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: js.Object): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: yandexDashMapsLib.yandexDashMapsMod.IEvent): this.type = js.native
+    def freeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
     /* CompleteClass */
     override def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
+    def getParent(): js.Object | scala.Null = js.native
     /* CompleteClass */
     override def getType(): java.lang.String = js.native
+    def group(): yandexDashMapsLib.yandexDashMapsMod.IEventGroup = js.native
+    def isFrozen(): scala.Boolean = js.native
+    def setParent(): this.type = js.native
+    def setParent(parent: js.Object): this.type = js.native
+    def unfreeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
   }
   
   /* static members */
@@ -104,10 +182,60 @@ object geometryNs extends js.Object {
       extends yandexDashMapsLib.yandexDashMapsMod.IBaseLineStringGeometry {
       /* CompleteClass */
       override var events: yandexDashMapsLib.yandexDashMapsMod.IEventManager = js.native
+      def add(
+        types: java.lang.String,
+        callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
+      ): this.type = js.native
+      def add(
+        types: java.lang.String,
+        callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+        context: js.Object
+      ): this.type = js.native
+      def add(
+        types: java.lang.String,
+        callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+        context: js.Object,
+        priority: scala.Double
+      ): this.type = js.native
+      def add(
+        types: js.Array[js.Array[java.lang.String] | java.lang.String],
+        callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit]
+      ): this.type = js.native
+      def add(
+        types: js.Array[js.Array[java.lang.String] | java.lang.String],
+        callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+        context: js.Object
+      ): this.type = js.native
+      def add(
+        types: js.Array[js.Array[java.lang.String] | java.lang.String],
+        callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+        context: js.Object,
+        priority: scala.Double
+      ): this.type = js.native
+      def fire(`type`: java.lang.String, eventobject: js.Object): this.type = js.native
+      def fire(`type`: java.lang.String, eventobject: yandexDashMapsLib.yandexDashMapsMod.IEvent): this.type = js.native
+      def freeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
+      /* CompleteClass */
+      override def get(index: scala.Double): js.Array[scala.Double] = js.native
       /* CompleteClass */
       override def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
       /* CompleteClass */
+      override def getChildGeometry(index: scala.Double): yandexDashMapsLib.yandexDashMapsMod.IPointGeometryAccess = js.native
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[scala.Double]): js.Object = js.native
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[scala.Double]] = js.native
+      /* CompleteClass */
+      override def getLength(): scala.Double = js.native
+      def getParent(): js.Object | scala.Null = js.native
+      /* CompleteClass */
       override def getType(): java.lang.String = js.native
+      def group(): yandexDashMapsLib.yandexDashMapsMod.IEventGroup = js.native
+      /* CompleteClass */
+      override def insert(index: scala.Double, coordinates: js.Array[js.Array[scala.Double]]): yandexDashMapsLib.yandexDashMapsMod.ILineStringGeometryAccess = js.native
+      def isFrozen(): scala.Boolean = js.native
+      /* CompleteClass */
+      override def remove(index: scala.Double): js.Array[scala.Double] = js.native
       def remove(
         types: java.lang.String,
         callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
@@ -138,7 +266,15 @@ object geometryNs extends js.Object {
         context: js.Object,
         priority: scala.Double
       ): this.type = js.native
+      /* CompleteClass */
+      override def set(index: scala.Double, coordinates: js.Array[scala.Double]): yandexDashMapsLib.yandexDashMapsMod.ILineStringGeometryAccess = js.native
+      /* CompleteClass */
+      override def setCoordinates(coordinates: js.Array[scala.Double]): yandexDashMapsLib.yandexDashMapsMod.ILineStringGeometryAccess = js.native
+      def setParent(): this.type = js.native
       def setParent(parent: yandexDashMapsLib.yandexDashMapsMod.IEventManager): this.type = js.native
+      /* CompleteClass */
+      override def splice(index: scala.Double, length: scala.Double): js.Array[js.Array[scala.Double]] = js.native
+      def unfreeze(): yandexDashMapsLib.yandexDashMapsMod.IFreezable = js.native
     }
     
     @js.native

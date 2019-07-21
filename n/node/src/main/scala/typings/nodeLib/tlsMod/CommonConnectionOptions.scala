@@ -10,9 +10,7 @@ trait CommonConnectionOptions extends js.Object {
     * An array of strings or a Buffer naming possible ALPN protocols.
     * (Protocols should be ordered by their priority.)
     */
-  var ALPNProtocols: js.UndefOr[
-    (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array
-  ] = js.undefined
+  var ALPNProtocols: js.UndefOr[(js.Array[java.lang.String | stdLib.Uint8Array]) | stdLib.Uint8Array] = js.undefined
   /**
     * SNICallback(servername, cb) <Function> A function that will be
     * called if the client supports SNI TLS extension. Two arguments
@@ -57,7 +55,7 @@ trait CommonConnectionOptions extends js.Object {
 object CommonConnectionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[java.lang.String | stdLib.Uint8Array]) | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* ctx */ SecureContext, scala.Unit]) => scala.Unit = null,
     enableTrace: js.UndefOr[scala.Boolean] = js.undefined,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,

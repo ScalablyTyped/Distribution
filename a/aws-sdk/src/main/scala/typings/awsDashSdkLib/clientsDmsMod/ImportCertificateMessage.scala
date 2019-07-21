@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ImportCertificateMessage extends js.Object {
   /**
-    * The customer-assigned name of the certificate. Valid characters are A-z and 0-9.
+    * A customer-assigned name for the certificate. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
     */
   var CertificateIdentifier: String
   /**
-    * The contents of the .pem X.509 certificate file for the certificate.
+    * The contents of a .pem file, which contains an X.509 certificate.
     */
   var CertificatePem: js.UndefOr[String] = js.undefined
   /**
-    * The location of the imported Oracle Wallet certificate for use with SSL.
+    * The location of an imported Oracle Wallet certificate for use with SSL.
     */
   var CertificateWallet: js.UndefOr[CertificateWallet] = js.undefined
   /**

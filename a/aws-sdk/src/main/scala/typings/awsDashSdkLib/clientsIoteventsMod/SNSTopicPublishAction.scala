@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SNSTopicPublishAction extends js.Object {
   /**
-    * The ARN of the Amazon SNS target to which the message is sent.
+    * The ARN of the Amazon SNS target where the message is sent.
     */
   var targetArn: AmazonResourceName
 }

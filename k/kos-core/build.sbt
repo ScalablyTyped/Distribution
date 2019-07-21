@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kos-core"
-version := "0.6-dt-20190528Z-445ec4"
+version := "0.6-dt-20190717Z-445ec4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

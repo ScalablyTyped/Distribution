@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__set-version"
-version := "7.0.0-5efec9"
+version := "7.0.1-5efec9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

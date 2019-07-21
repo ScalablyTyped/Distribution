@@ -31,6 +31,10 @@ class Container protected ()
     * The name of the container. Must contain alphanumeric characters or underscores.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -25,6 +25,8 @@ class LayersModel protected ()
   var collectedTrainableWeights: js.Any = js.native
   var feedLossFns: js.Any = js.native
   var feedOutputShapes: js.Any = js.native
+  var getLossIdentifiers: js.Any = js.native
+  var getMetricIdentifiers: js.Any = js.native
   var history: atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.History = js.native
   var isOptimizerOwned: scala.Boolean = js.native
   var isTraining: scala.Boolean = js.native
@@ -518,8 +520,12 @@ class LayersModel protected ()
     * @returns A `NamedTensorMap` mapping original weight names (i.e.,
     *   non-uniqueified weight names) to their values.
     */
-  /* protected */ def getNamedWeights(): atTensorflowTfjsDashCoreLib.distTensorUnderscoreTypesMod.NamedTensorMap = js.native
-  /* protected */ def getNamedWeights(config: atTensorflowTfjsDashCoreLib.distIoTypesMod.SaveConfig): atTensorflowTfjsDashCoreLib.distTensorUnderscoreTypesMod.NamedTensorMap = js.native
+  /* protected */ def getNamedWeights(): js.Array[atTensorflowTfjsDashCoreLib.distTensorUnderscoreTypesMod.NamedTensor] = js.native
+  /* protected */ def getNamedWeights(config: atTensorflowTfjsDashCoreLib.distIoTypesMod.SaveConfig): js.Array[atTensorflowTfjsDashCoreLib.distTensorUnderscoreTypesMod.NamedTensor] = js.native
+  /* protected */ def getTrainingConfig(): atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatTrainingUnderscoreConfigMod.TrainingConfig = js.native
+  def loadTrainingConfig(
+    trainingConfig: atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatTrainingUnderscoreConfigMod.TrainingConfig
+  ): scala.Unit = js.native
   /**
     * Creates a function that performs the following actions:
     *
@@ -701,7 +707,7 @@ class LayersModel protected ()
     * ```
     *
     * Example 4. Send  `model`'s topology and weights to an HTTP server.
-    * See the documentation of `tf.io.browserHTTPRequest` for more details
+    * See the documentation of `tf.io.http` for more details
     * including specifying request parameters and implementation of the
     * server.
     *
@@ -729,12 +735,155 @@ class LayersModel protected ()
   def save(handlerOrURL: java.lang.String): js.Promise[atTensorflowTfjsDashCoreLib.distIoTypesMod.SaveResult] = js.native
   def save(handlerOrURL: java.lang.String, config: atTensorflowTfjsDashCoreLib.distIoTypesMod.SaveConfig): js.Promise[atTensorflowTfjsDashCoreLib.distIoTypesMod.SaveResult] = js.native
   /* protected */ def standardizeUserData(
+    x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ])
+  ): js.Promise[
+    js.Tuple3[
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserData(
+    x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    sampleWeight: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ])
+  ): js.Promise[
+    js.Tuple3[
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserData(
+    x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    sampleWeight: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    classWeight: atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap
+  ): js.Promise[
+    js.Tuple3[
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserData(
+    x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    sampleWeight: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    classWeight: atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap,
+    checkBatchAxis: scala.Boolean
+  ): js.Promise[
+    js.Tuple3[
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserData(
+    x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    sampleWeight: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | (js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]) | (org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]),
+    classWeight: atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap,
+    checkBatchAxis: scala.Boolean,
+    batchSize: scala.Double
+  ): js.Promise[
+    js.Tuple3[
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ], 
+      js.Array[
+        atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+      ]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -742,14 +891,11 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -757,15 +903,12 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -773,15 +916,12 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -789,16 +929,13 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -806,17 +943,14 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -824,15 +958,12 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -840,16 +971,13 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -857,17 +985,14 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     y: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -875,180 +1000,12 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
-    checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
-    checkBatchAxis: scala.Boolean,
-    batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    checkBatchAxis: scala.Boolean,
-    batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: org.scalablytyped.runtime.StringDictionary[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: org.scalablytyped.runtime.StringDictionary[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    y: org.scalablytyped.runtime.StringDictionary[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ],
-    checkBatchAxis: scala.Boolean,
-    batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ]
-  ] = js.native
-  /* protected */ def standardizeUserData(
-    x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1056,16 +1013,13 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
-    x: org.scalablytyped.runtime.StringDictionary[
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1073,17 +1027,14 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
-    x: org.scalablytyped.runtime.StringDictionary[
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1091,17 +1042,152 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    checkBatchAxis: scala.Boolean
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    checkBatchAxis: scala.Boolean,
+    batchSize: scala.Double
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    checkBatchAxis: scala.Boolean
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    checkBatchAxis: scala.Boolean,
+    batchSize: scala.Double
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
+    checkBatchAxis: scala.Boolean
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
+    x: org.scalablytyped.runtime.StringDictionary[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ],
+    y: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
+    checkBatchAxis: scala.Boolean,
+    batchSize: scala.Double
+  ): js.Tuple2[
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ], 
+    js.Array[
+      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
+    ]
+  ] = js.native
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     y: js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1109,7 +1195,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
@@ -1117,10 +1203,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1128,7 +1211,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
@@ -1137,10 +1220,7 @@ class LayersModel protected ()
     ],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1148,17 +1228,14 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     y: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1166,7 +1243,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
@@ -1174,10 +1251,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
     checkBatchAxis: scala.Boolean
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 
@@ -1185,7 +1259,7 @@ class LayersModel protected ()
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ]
   ] = js.native
-  /* protected */ def standardizeUserData(
+  /* protected */ def standardizeUserDataXY(
     x: org.scalablytyped.runtime.StringDictionary[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ],
@@ -1194,10 +1268,7 @@ class LayersModel protected ()
     ],
     checkBatchAxis: scala.Boolean,
     batchSize: scala.Double
-  ): js.Tuple3[
-    js.Array[
-      atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
-    ], 
+  ): js.Tuple2[
     js.Array[
       atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
     ], 

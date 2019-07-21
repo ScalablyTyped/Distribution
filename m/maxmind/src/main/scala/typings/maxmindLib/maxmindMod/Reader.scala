@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class Reader[T /* <: maxmindLib.libReaderResponseMod.Response */] protected ()
   extends maxmindLib.libReaderMod.default[T] {
   def this(db: nodeLib.Buffer) = this()
-  def this(db: nodeLib.Buffer, opts: js.Object) = this()
+  def this(db: nodeLib.Buffer, opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenOpts */ js.Any) = this()
 }
 

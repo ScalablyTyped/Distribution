@@ -21,7 +21,7 @@ object utilNs extends js.Object {
     shapeB: js.Array[scala.Double],
     errorMessagePrefix: java.lang.String
   ): scala.Unit = js.native
-  def bytesFromStringArray(arr: js.Array[java.lang.String]): scala.Double = js.native
+  def bytesFromStringArray(arr: js.Array[stdLib.Uint8Array]): scala.Double = js.native
   def bytesPerElement(dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): scala.Double = js.native
   @JSName("checkComputationForErrors")
   def checkComputationForErrors_bool(
@@ -101,28 +101,48 @@ object utilNs extends js.Object {
   def clamp(min: scala.Double, x: scala.Double, max: scala.Double): scala.Double = js.native
   def computeStrides(shape: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def createShuffledIndices(n: scala.Double): stdLib.Uint32Array = js.native
+  def decodeString(bytes: stdLib.Uint8Array): java.lang.String = js.native
+  def decodeString(bytes: stdLib.Uint8Array, encoding: java.lang.String): java.lang.String = js.native
   def distSquared(
     a: atTensorflowTfjsDashCoreLib.distTypesMod.FlatVector,
     b: atTensorflowTfjsDashCoreLib.distTypesMod.FlatVector
   ): scala.Double = js.native
+  def encodeString(s: java.lang.String): stdLib.Uint8Array = js.native
+  def encodeString(s: java.lang.String, encoding: java.lang.String): stdLib.Uint8Array = js.native
   def fetch(path: java.lang.String): js.Promise[stdLib.Response] = js.native
   def fetch(path: java.lang.String, requestInits: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
   def flatten(arr: java.lang.String): js.Array[java.lang.String] = js.native
   def flatten(arr: java.lang.String, result: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def flatten(arr: java.lang.String, result: js.Array[java.lang.String], skipTypedArray: scala.Boolean): js.Array[java.lang.String] = js.native
   def flatten(arr: js.Promise[scala.Double]): js.Array[js.Promise[scala.Double]] = js.native
   def flatten(arr: js.Promise[scala.Double], result: js.Array[js.Promise[scala.Double]]): js.Array[js.Promise[scala.Double]] = js.native
+  def flatten(
+    arr: js.Promise[scala.Double],
+    result: js.Array[js.Promise[scala.Double]],
+    skipTypedArray: scala.Boolean
+  ): js.Array[js.Promise[scala.Double]] = js.native
   def flatten(arr: scala.Boolean): js.Array[scala.Boolean] = js.native
   def flatten(arr: scala.Boolean, result: js.Array[scala.Boolean]): js.Array[scala.Boolean] = js.native
+  def flatten(arr: scala.Boolean, result: js.Array[scala.Boolean], skipTypedArray: scala.Boolean): js.Array[scala.Boolean] = js.native
   def flatten(arr: scala.Double): js.Array[scala.Double] = js.native
   def flatten(arr: scala.Double, result: js.Array[scala.Double]): js.Array[scala.Double] = js.native
+  def flatten(arr: scala.Double, result: js.Array[scala.Double], skipTypedArray: scala.Boolean): js.Array[scala.Double] = js.native
   def flatten(arr: stdLib.Float32Array): js.Array[stdLib.Float32Array] = js.native
   def flatten(arr: stdLib.Float32Array, result: js.Array[stdLib.Float32Array]): js.Array[stdLib.Float32Array] = js.native
+  def flatten(arr: stdLib.Float32Array, result: js.Array[stdLib.Float32Array], skipTypedArray: scala.Boolean): js.Array[stdLib.Float32Array] = js.native
   def flatten(arr: stdLib.Int32Array): js.Array[stdLib.Int32Array] = js.native
   def flatten(arr: stdLib.Int32Array, result: js.Array[stdLib.Int32Array]): js.Array[stdLib.Int32Array] = js.native
+  def flatten(arr: stdLib.Int32Array, result: js.Array[stdLib.Int32Array], skipTypedArray: scala.Boolean): js.Array[stdLib.Int32Array] = js.native
   def flatten(arr: stdLib.Uint8Array): js.Array[stdLib.Uint8Array] = js.native
   def flatten(arr: stdLib.Uint8Array, result: js.Array[stdLib.Uint8Array]): js.Array[stdLib.Uint8Array] = js.native
+  def flatten(arr: stdLib.Uint8Array, result: js.Array[stdLib.Uint8Array], skipTypedArray: scala.Boolean): js.Array[stdLib.Uint8Array] = js.native
   def flatten[T /* <: scala.Double | scala.Boolean | java.lang.String | js.Promise[scala.Double] | atTensorflowTfjsDashCoreLib.distTypesMod.TypedArray */](arr: atTensorflowTfjsDashCoreLib.distTypesMod.RecursiveArray[T]): js.Array[T] = js.native
   def flatten[T /* <: scala.Double | scala.Boolean | java.lang.String | js.Promise[scala.Double] | atTensorflowTfjsDashCoreLib.distTypesMod.TypedArray */](arr: atTensorflowTfjsDashCoreLib.distTypesMod.RecursiveArray[T], result: js.Array[T]): js.Array[T] = js.native
+  def flatten[T /* <: scala.Double | scala.Boolean | java.lang.String | js.Promise[scala.Double] | atTensorflowTfjsDashCoreLib.distTypesMod.TypedArray */](
+    arr: atTensorflowTfjsDashCoreLib.distTypesMod.RecursiveArray[T],
+    result: js.Array[T],
+    skipTypedArray: scala.Boolean
+  ): js.Array[T] = js.native
   @JSName("getArrayFromDType")
   def getArrayFromDType_bool(dtype: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.bool, size: scala.Double): stdLib.Uint8Array = js.native
   @JSName("getArrayFromDType")

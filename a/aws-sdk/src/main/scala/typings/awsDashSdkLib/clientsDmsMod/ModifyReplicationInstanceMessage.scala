@@ -11,7 +11,7 @@ trait ModifyReplicationInstanceMessage extends js.Object {
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * Indicates that major version upgrades are allowed. Changing this parameter does not result in an outage and the change is asynchronously applied as soon as possible. Constraints: This parameter must be set to true when specifying a value for the EngineVersion parameter that is a different major version than the replication instance's current version.
+    * Indicates that major version upgrades are allowed. Changing this parameter does not result in an outage, and the change is asynchronously applied as soon as possible. This parameter must be set to true when specifying a value for the EngineVersion parameter that is a different major version than the replication instance's current version.
     */
   var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait ModifyReplicationInstanceMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
+    *  Specifies whether the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**

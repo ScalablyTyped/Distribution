@@ -12,6 +12,7 @@ package object clientsIoteventsMod {
   type Attributes = js.Array[Attribute]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Condition = java.lang.String
+  type DeliveryStreamName = java.lang.String
   type DetectorDebugOptions = js.Array[DetectorDebugOption]
   type DetectorModelArn = java.lang.String
   type DetectorModelDescription = java.lang.String
@@ -32,6 +33,7 @@ package object clientsIoteventsMod {
   type DetectorModelVersionSummaries = js.Array[DetectorModelVersionSummary]
   type EventName = java.lang.String
   type Events = js.Array[Event]
+  type FirehoseSeparator = java.lang.String
   type InputArn = java.lang.String
   type InputDescription = java.lang.String
   type InputName = java.lang.String
@@ -56,6 +58,7 @@ package object clientsIoteventsMod {
   type MQTTTopic = java.lang.String
   type MaxResults = scala.Double
   type NextToken = java.lang.String
+  type QueueUrl = java.lang.String
   type Seconds = scala.Double
   type StateName = java.lang.String
   type States = js.Array[State]
@@ -66,6 +69,7 @@ package object clientsIoteventsMod {
   type TimerName = java.lang.String
   type Timestamp = stdLib.Date
   type TransitionEvents = js.Array[TransitionEvent]
+  type UseBase64 = scala.Boolean
   type VariableName = java.lang.String
   type VariableValue = java.lang.String
   /* Rewritten from type alias, can be one of: 

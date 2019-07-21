@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("term-size", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): TermSize = js.native
+  /**
+  Reliably get the terminal window size.
+  @example
+  ```
+  import terminalSize = require('term-size');
+  terminalSize();
+  //=> {columns: 143, rows: 24}
+  ```
+  */
+  def apply(): Size = js.native
 }
 

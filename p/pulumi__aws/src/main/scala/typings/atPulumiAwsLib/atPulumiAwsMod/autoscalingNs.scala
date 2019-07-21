@@ -106,11 +106,11 @@ object autoscalingNs extends js.Object {
   var InstanceTerminateNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
   var OneMinuteMetricsGranularity: atPulumiAwsLib.autoscalingMetricsMod.MetricsGranularity = js.native
   var TestNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
-  def getGroup(args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] = js.native
+  def getGroup(args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] with atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult = js.native
   def getGroup(
     args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] with atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult = js.native
   /* static members */
   @js.native
   object Attachment extends js.Object {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jwplayer"
-version := "8.2-dt-20190130Z-0767d7"
+version := "8.2-dt-20190717Z-0767d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

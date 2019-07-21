@@ -66,34 +66,6 @@ object Decoration extends js.Object {
     * called when the widget is actually drawn in a view, but you can
     * also directly pass a DOM node. getPos can be used to find the
     * widget's current document position.
-    *
-    * @param spec These options are supported:
-    * @param spec.side Controls which side of the document position
-    * this widget is associated with. When negative, it is drawn before
-    * a cursor at its position, and content inserted at that position
-    * ends up after the widget. When zero (the default) or positive, the
-    * widget is drawn after the cursor and content inserted there ends
-    * up before the widget.
-    *
-    * When there are multiple widgets at a given position, their side
-    * values determine the order in which they appear. Those with lower
-    * values appear first. The ordering of widgets with the same side
-    * value is unspecified.
-    *
-    * When marks is null, side also determines the marks that the widget
-    * is wrapped in—those of the node before when negative, those of
-    * the node after when positive.
-    * @param spec.marks The precise set of marks to draw around the widget.
-    * @param spec.stopEvent Can be used to control which DOM events, when
-    * they bubble out of this widget, the editor view should ignore.
-    * @param spec.key When comparing decorations of this type (in order to
-    * decide whether it needs to be redrawn), ProseMirror will by default
-    * compare the widget DOM node by identity. If you pass a key, that key
-    * will be compared instead, which can be useful when you generate
-    * decorations on the fly and don't want to store and reuse DOM nodes.
-    * Make sure that any widgets with the same key are interchangeable—if
-    * widgets differ in, for example, the behavior of some event handler,
-    * they should get different keys.
     */
   def widget(
     pos: scala.Double,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentracing
 
-Typings are for version 0.14.3
+Typings are for version 0.14.4
 
 ## Library description:
 [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] [![NPM Published Version][npm-img]][npm] ![Node Version][node-img]

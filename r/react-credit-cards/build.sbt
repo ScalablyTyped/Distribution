@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-credit-cards"
-version := "0.8-dt-20190306Z-40238e"
+version := "0.8-dt-20190717Z-40238e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

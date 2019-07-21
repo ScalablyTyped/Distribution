@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NodeGroup extends js.Object {
   /**
-    * The identifier for the node group (shard). A Redis (cluster mode disabled) replication group contains only 1 node group; therefore, the node group ID is 0001. A Redis (cluster mode enabled) replication group contains 1 to 15 node groups numbered 0001 to 0015. Optionally, the user can provide the id for a node group. 
+    * The identifier for the node group (shard). A Redis (cluster mode disabled) replication group contains only 1 node group; therefore, the node group ID is 0001. A Redis (cluster mode enabled) replication group contains 1 to 90 node groups numbered 0001 to 0090. Optionally, the user can provide the id for a node group. 
     */
   var NodeGroupId: js.UndefOr[String] = js.undefined
   /**

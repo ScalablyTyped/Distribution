@@ -362,6 +362,9 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait `ap-northeast-1`
     extends atPulumiAwsLib.regionMod.Region
   
@@ -844,6 +847,9 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.regionMod.Region
   
   @js.native
+  sealed trait expire extends js.Object
+  
+  @js.native
   sealed trait f1DOT16xlarge
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
@@ -950,6 +956,9 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait icmp
     extends atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
+  
+  @js.native
+  sealed trait imageCountMoreThan extends js.Object
   
   @js.native
   sealed trait io1
@@ -1348,6 +1357,9 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
+  sealed trait sinceImagePushed extends js.Object
+  
+  @js.native
   sealed trait splunk
     extends atPulumiAwsLib.ecsContainerMod.LogDriver
   
@@ -1424,6 +1436,9 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
+  sealed trait tagged extends js.Object
+  
+  @js.native
   sealed trait tcp
     extends atPulumiAwsLib.ecsContainerMod.Protocol
        with atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
@@ -1444,6 +1459,9 @@ object atPulumiAwsLibStrings {
   sealed trait udp
     extends atPulumiAwsLib.ecsContainerMod.Protocol
        with atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
+  
+  @js.native
+  sealed trait untagged extends js.Object
   
   @js.native
   sealed trait `us-east-1`
@@ -1704,6 +1722,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   @scala.inline
   def `ap-northeast-2`: `ap-northeast-2` = "ap-northeast-2".asInstanceOf[`ap-northeast-2`]
@@ -1946,6 +1966,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def `eu-west-3`: `eu-west-3` = "eu-west-3".asInstanceOf[`eu-west-3`]
   @scala.inline
+  def expire: expire = "expire".asInstanceOf[expire]
+  @scala.inline
   def f1DOT16xlarge: f1DOT16xlarge = "f1.16xlarge".asInstanceOf[f1DOT16xlarge]
   @scala.inline
   def f1DOT2xlarge: f1DOT2xlarge = "f1.2xlarge".asInstanceOf[f1DOT2xlarge]
@@ -1999,6 +2021,8 @@ object atPulumiAwsLibStrings {
   def i3DOTxlarge: i3DOTxlarge = "i3.xlarge".asInstanceOf[i3DOTxlarge]
   @scala.inline
   def icmp: icmp = "icmp".asInstanceOf[icmp]
+  @scala.inline
+  def imageCountMoreThan: imageCountMoreThan = "imageCountMoreThan".asInstanceOf[imageCountMoreThan]
   @scala.inline
   def io1: io1 = "io1".asInstanceOf[io1]
   @scala.inline
@@ -2198,6 +2222,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def sigpending: sigpending = "sigpending".asInstanceOf[sigpending]
   @scala.inline
+  def sinceImagePushed: sinceImagePushed = "sinceImagePushed".asInstanceOf[sinceImagePushed]
+  @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
   @scala.inline
   def spread: spread = "spread".asInstanceOf[spread]
@@ -2236,6 +2262,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def t3DOTxlarge: t3DOTxlarge = "t3.xlarge".asInstanceOf[t3DOTxlarge]
   @scala.inline
+  def tagged: tagged = "tagged".asInstanceOf[tagged]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
   @scala.inline
   def `u-12tb1DOTmetal`: `u-12tb1DOTmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1DOTmetal`]
@@ -2245,6 +2273,8 @@ object atPulumiAwsLibStrings {
   def `u-9tb1DOTmetal`: `u-9tb1DOTmetal` = "u-9tb1.metal".asInstanceOf[`u-9tb1DOTmetal`]
   @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
+  @scala.inline
+  def untagged: untagged = "untagged".asInstanceOf[untagged]
   @scala.inline
   def `us-east-1`: `us-east-1` = "us-east-1".asInstanceOf[`us-east-1`]
   @scala.inline

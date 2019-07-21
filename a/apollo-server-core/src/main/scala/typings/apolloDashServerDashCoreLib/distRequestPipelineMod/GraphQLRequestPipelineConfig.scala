@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   var cacheControl: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
   var documentStore: js.UndefOr[
     apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode]
   ] = js.undefined
   var executor: js.UndefOr[
-    apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]]
+    apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]]
   ] = js.undefined
   var extensions: js.UndefOr[
     js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
   var fieldResolver: js.UndefOr[
@@ -45,21 +43,21 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   ] = js.undefined
   var schema: graphqlLib.graphqlMod.GraphQLSchema
   var tracing: js.UndefOr[scala.Boolean] = js.undefined
-  var validationRules: js.UndefOr[js.Array[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.ValidationRule]] = js.undefined
+  var validationRules: js.UndefOr[
+    js.Array[apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.ValidationRule]
+  ] = js.undefined
 }
 
 object GraphQLRequestPipelineConfig {
   @scala.inline
   def apply[TContext](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
     dataSources: () => DataSources[TContext] = null,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
-    executor: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
+    executor: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
     extensions: js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
     formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = null,
@@ -71,7 +69,7 @@ object GraphQLRequestPipelineConfig {
     ] = null,
     rootValue: (js.Function1[/* document */ graphqlLib.languageAstMod.DocumentNode, _]) | js.Any = null,
     tracing: js.UndefOr[scala.Boolean] = js.undefined,
-    validationRules: js.Array[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.ValidationRule] = null
+    validationRules: js.Array[apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.ValidationRule] = null
   ): GraphQLRequestPipelineConfig[TContext] = {
     val __obj = js.Dynamic.literal(schema = schema)
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)

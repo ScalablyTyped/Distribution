@@ -51,8 +51,9 @@ trait LoaderContext extends js.Object {
     */
   var loaderIndex: scala.Double = js.native
   /**
-    * loaders = [{request: string, path: string, query: string, module: function}]
     * An array of all the loaders. It is writeable in the pitch phase.
+    * loaders = [{request: string, path: string, query: string, module: function}]
+    *
     * In the example:
     * [
     *   { request: "/abc/loader1.js?xyz",
@@ -72,6 +73,10 @@ trait LoaderContext extends js.Object {
     * Should the result be minimized.
     */
   var minimize: scala.Boolean = js.native
+  /**
+    * Which mode is webpack running.
+    */
+  var mode: webpackLib.webpackLibStrings.production | webpackLib.webpackLibStrings.development | webpackLib.webpackLibStrings.none = js.native
   /**
     *  A string or any object. The query of the request for the current loader.
     */

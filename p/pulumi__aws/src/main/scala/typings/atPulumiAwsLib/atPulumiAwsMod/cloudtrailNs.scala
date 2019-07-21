@@ -22,12 +22,12 @@ object cloudtrailNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloudtrailTrailMod.TrailArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getServiceAccount(): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] = js.native
-  def getServiceAccount(args: atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountArgs): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] = js.native
+  def getServiceAccount(): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult = js.native
+  def getServiceAccount(args: atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountArgs): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult = js.native
   def getServiceAccount(
     args: atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult = js.native
   /* static members */
   @js.native
   object Trail extends js.Object {

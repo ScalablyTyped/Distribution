@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IDevTools
   extends org.scalablytyped.runtime.Instantiable0[reactLib.reactMod.Global.JSXNs.ElementClass] {
-  def instrument(): js.Any = js.native
+  def instrument(): reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object] = js.native
 }
 

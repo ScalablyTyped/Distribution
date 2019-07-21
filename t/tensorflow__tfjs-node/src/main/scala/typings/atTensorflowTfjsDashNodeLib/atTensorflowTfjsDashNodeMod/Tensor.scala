@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Tensor[R /* <: atTensorflowTfjsDashCoreLib.distTypesMod.Rank */] protected ()
   extends atTensorflowTfjsLib.atTensorflowTfjsMod.Tensor[R] {
   protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues, dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues, dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId, backend: atTensorflowTfjsDashCoreLib.distTensorMod.Backend) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues, dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues, dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId, backend: atTensorflowTfjsDashCoreLib.distTensorMod.Backend) = this()
 }
 
 /* static members */

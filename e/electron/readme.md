@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron
 
-Typings are for version 5.0.6
+Typings are for version 5.0.7
 
 ## Library description:
 Build cross platform desktop apps with JavaScript, HTML, and CSS
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Electron 5.0.6
+// Type definitions for Electron 5.0.7
 // Project: http://electronjs.org/
 // Definitions by: The Electron Team <https://github.com/electron/electron>
 // Definitions: https://github.com/electron/electron-typescript-definitions

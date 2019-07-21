@@ -1,7 +1,7 @@
 
 # Scala.js typings for algoliasearch
 
-Typings are for version 3.30.1
+Typings are for version 3.30.2
 
 ## Library description:
 AlgoliaSearch API JavaScript client
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for algoliasearch-client-js 3.30.1
+// Type definitions for algoliasearch-client-js 3.30.2
 // Project: https://github.com/algolia/algoliasearch-client-js
 // Definitions by: Baptiste Coquelle <https://github.com/cbaptiste>
 //                 Haroen Viaene <https://github.com/haroenv>
@@ -45,8 +45,10 @@ These comments are from the typescript definitions and might be useful:
 //                 Antoine Rousseau <https://github.com/antoinerousseau>
 //                 Luca Pasquale <https://github.com/lucapasquale>
 //                 Alexandre Deve <https://github.com/adeve>
+//                 Dan Grayson <https://github.com/dan-grayson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
+// Type definitions for algoliasearch-client-js 3.30.1
 //                 Claas Brüggemann <https://github.com/ClaasBrueggemann>
 
 ```

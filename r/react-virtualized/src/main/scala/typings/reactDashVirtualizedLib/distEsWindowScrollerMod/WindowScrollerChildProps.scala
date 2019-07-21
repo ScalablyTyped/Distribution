@@ -5,28 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowScrollerChildProps extends js.Object {
-  var height: scala.Double
-  var isScrolling: scala.Boolean
-  var scrollLeft: scala.Double
-  var scrollTop: scala.Double
-  var width: scala.Double
-  def onChildScroll(params: reactDashVirtualizedLib.Anon_ScrollTop): scala.Unit
-}
-
-object WindowScrollerChildProps {
-  @scala.inline
-  def apply(
-    height: scala.Double,
-    isScrolling: scala.Boolean,
-    onChildScroll: reactDashVirtualizedLib.Anon_ScrollTop => scala.Unit,
-    scrollLeft: scala.Double,
-    scrollTop: scala.Double,
-    width: scala.Double
-  ): WindowScrollerChildProps = {
-    val __obj = js.Dynamic.literal(height = height, isScrolling = isScrolling, onChildScroll = js.Any.fromFunction1(onChildScroll), scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
-  
-    __obj.asInstanceOf[WindowScrollerChildProps]
-  }
+  var height: scala.Double = js.native
+  var isScrolling: scala.Boolean = js.native
+  var scrollLeft: scala.Double = js.native
+  var scrollTop: scala.Double = js.native
+  var width: scala.Double = js.native
+  def onChildScroll(params: reactDashVirtualizedLib.Anon_ScrollTop): scala.Unit = js.native
+  def registerChild(): scala.Unit = js.native
+  def registerChild(element: reactLib.reactMod.ReactElement): scala.Unit = js.native
 }
 

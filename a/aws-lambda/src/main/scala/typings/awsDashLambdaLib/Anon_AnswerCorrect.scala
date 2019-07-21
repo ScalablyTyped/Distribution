@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Anon_AnswerCorrect extends js.Object {
   var answerCorrect: js.UndefOr[scala.Boolean] = js.undefined
   var autoConfirmUser: js.UndefOr[scala.Boolean] = js.undefined
+  var autoVerifyEmail: js.UndefOr[scala.Boolean] = js.undefined
+  var autoVerifyPhone: js.UndefOr[scala.Boolean] = js.undefined
   var challengeMetadata: js.UndefOr[java.lang.String] = js.undefined
   var challengeName: js.UndefOr[java.lang.String] = js.undefined
   var claimsOverrideDetails: js.UndefOr[Anon_ClaimsToAddOrOverride] = js.undefined
@@ -36,6 +38,8 @@ object Anon_AnswerCorrect {
   def apply(
     answerCorrect: js.UndefOr[scala.Boolean] = js.undefined,
     autoConfirmUser: js.UndefOr[scala.Boolean] = js.undefined,
+    autoVerifyEmail: js.UndefOr[scala.Boolean] = js.undefined,
+    autoVerifyPhone: js.UndefOr[scala.Boolean] = js.undefined,
     challengeMetadata: java.lang.String = null,
     challengeName: java.lang.String = null,
     claimsOverrideDetails: Anon_ClaimsToAddOrOverride = null,
@@ -57,6 +61,8 @@ object Anon_AnswerCorrect {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(answerCorrect)) __obj.updateDynamic("answerCorrect")(answerCorrect)
     if (!js.isUndefined(autoConfirmUser)) __obj.updateDynamic("autoConfirmUser")(autoConfirmUser)
+    if (!js.isUndefined(autoVerifyEmail)) __obj.updateDynamic("autoVerifyEmail")(autoVerifyEmail)
+    if (!js.isUndefined(autoVerifyPhone)) __obj.updateDynamic("autoVerifyPhone")(autoVerifyPhone)
     if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata)
     if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName)
     if (claimsOverrideDetails != null) __obj.updateDynamic("claimsOverrideDetails")(claimsOverrideDetails)

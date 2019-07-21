@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait RepoUrlOptions extends BaseOptions {
   /**
-    * The full URL to the repo.
-    */
-  var repoUrl: java.lang.String
+  		The full URL to the repo.
+  		*/
+  val repoUrl: java.lang.String
 }
 
 object RepoUrlOptions {

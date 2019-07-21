@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object tsDashMockitoMod extends js.Object {
   def anyFunction(): js.Any = js.native
   def anyNumber(): js.Any = js.native
-  def anyOfClass[T](expectedClass: tsDashMockitoLib.Anon_Args[T]): js.Any = js.native
+  def anyOfClass[T](expectedClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Any = js.native
   def anyString(): js.Any = js.native
   def anything(): js.Any = js.native
   def between(min: scala.Double, max: scala.Double): js.Any = js.native
@@ -69,8 +69,8 @@ object tsDashMockitoMod extends js.Object {
   def instance[T](mockedValue: T): T = js.native
   def `match`(expectedValue: java.lang.String): js.Any = js.native
   def `match`(expectedValue: stdLib.RegExp): js.Any = js.native
-  def mock[T](clazz: js.Function with js.Object): T = js.native
-  def mock[T](clazz: tsDashMockitoLib.Anon_Args[T]): T = js.native
+  def mock[T](): T = js.native
+  def mock[T](clazz: js.Any): T = js.native
   def notNull(): js.Any = js.native
   def objectContaining(expectedValue: js.Object): js.Any = js.native
   def reset[T](mockedValue: T): scala.Unit = js.native
@@ -78,8 +78,8 @@ object tsDashMockitoMod extends js.Object {
   def spy[T](instanceToSpy: T): T = js.native
   def strictEqual(expectedValue: js.Any): js.Any = js.native
   def verify[T](method: T): tsDashMockitoLib.libMethodStubVerificatorMod.MethodStubVerificator[T] = js.native
-  def when[T](method: T): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[T, scala.Unit, scala.Unit] = js.native
-  def when[T](method: js.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[js.Promise[T], T, _] = js.native
+  def when[T](method: T): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[T, scala.Unit, stdLib.Error] = js.native
+  def when[T](method: js.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[js.Promise[T], T, stdLib.Error] = js.native
   @js.native
   object default extends js.Object {
     @JSName("anyFunction")
@@ -87,7 +87,7 @@ object tsDashMockitoMod extends js.Object {
     @JSName("anyNumber")
     var anyNumber_Original: js.Function0[_] = js.native
     @JSName("anyOfClass")
-    var anyOfClass_Original: tsDashMockitoLib.Fn_ExpectedClass = js.native
+    var anyOfClass_Original: tsDashMockitoLib.Fn_Args = js.native
     @JSName("anyString")
     var anyString_Original: js.Function0[_] = js.native
     @JSName("anything")
@@ -119,10 +119,10 @@ object tsDashMockitoMod extends js.Object {
     @JSName("verify")
     var verify_Original: tsDashMockitoLib.Fn_Method = js.native
     @JSName("when")
-    var when_Original: tsDashMockitoLib.Fn_MethodAny = js.native
+    var when_Original: tsDashMockitoLib.Fn_MethodError = js.native
     def anyFunction(): js.Any = js.native
     def anyNumber(): js.Any = js.native
-    def anyOfClass[T](expectedClass: tsDashMockitoLib.Anon_Args[T]): js.Any = js.native
+    def anyOfClass[T](expectedClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Any = js.native
     def anyString(): js.Any = js.native
     def anything(): js.Any = js.native
     def between(min: scala.Double, max: scala.Double): js.Any = js.native
@@ -181,8 +181,8 @@ object tsDashMockitoMod extends js.Object {
     def instance[T](mockedValue: T): T = js.native
     def `match`(expectedValue: java.lang.String): js.Any = js.native
     def `match`(expectedValue: stdLib.RegExp): js.Any = js.native
-    def mock[T](clazz: js.Function with js.Object): T = js.native
-    def mock[T](clazz: tsDashMockitoLib.Anon_Args[T]): T = js.native
+    def mock[T](): T = js.native
+    def mock[T](clazz: js.Any): T = js.native
     def notNull(): js.Any = js.native
     def objectContaining(expectedValue: js.Object): js.Any = js.native
     def reset[T](mockedValue: T): scala.Unit = js.native
@@ -190,8 +190,8 @@ object tsDashMockitoMod extends js.Object {
     def spy[T](instanceToSpy: T): T = js.native
     def strictEqual(expectedValue: js.Any): js.Any = js.native
     def verify[T](method: T): tsDashMockitoLib.libMethodStubVerificatorMod.MethodStubVerificator[T] = js.native
-    def when[T](method: T): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[T, scala.Unit, scala.Unit] = js.native
-    def when[T](method: js.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[js.Promise[T], T, _] = js.native
+    def when[T](method: T): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[T, scala.Unit, stdLib.Error] = js.native
+    def when[T](method: js.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[js.Promise[T], T, stdLib.Error] = js.native
   }
   
 }

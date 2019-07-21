@@ -92,17 +92,17 @@ object redshiftNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.redshiftSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCluster(args: atPulumiAwsLib.redshiftGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult] = js.native
+  def getCluster(args: atPulumiAwsLib.redshiftGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult] with atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult = js.native
   def getCluster(
     args: atPulumiAwsLib.redshiftGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult] = js.native
-  def getServiceAccount(): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] = js.native
-  def getServiceAccount(args: atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountArgs): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] = js.native
+  ): js.Promise[atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult] with atPulumiAwsLib.redshiftGetClusterMod.GetClusterResult = js.native
+  def getServiceAccount(): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult = js.native
+  def getServiceAccount(args: atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountArgs): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult = js.native
   def getServiceAccount(
     args: atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] = js.native
+  ): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] with atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

@@ -106,11 +106,11 @@ object storagegatewayNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayWorkingStorageMod.WorkingStorageArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getLocalDisk(args: atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskArgs): js.Promise[atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult] = js.native
+  def getLocalDisk(args: atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskArgs): js.Promise[atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult] with atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult = js.native
   def getLocalDisk(
     args: atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult] = js.native
+  ): js.Promise[atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult] with atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult = js.native
   /* static members */
   @js.native
   object Cache extends js.Object {

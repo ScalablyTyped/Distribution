@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "styled-theming"
-version := "2.2-dt-20190627Z-f6edb7"
+version := "2.2-dt-20190627Z-055cae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190705Z-45b073",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190717Z-4b0893",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190710Z-3d36d9")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190710Z-6c01d8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

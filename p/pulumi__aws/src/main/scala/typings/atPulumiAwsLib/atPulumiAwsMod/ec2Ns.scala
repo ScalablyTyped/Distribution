@@ -1027,137 +1027,137 @@ object ec2Ns extends js.Object {
   val Z1dInstance6XLarge: atPulumiAwsLib.ec2InstanceTypeMod.InstanceType = js.native
   val Z1dInstanceLarge: atPulumiAwsLib.ec2InstanceTypeMod.InstanceType = js.native
   val Z1dInstanceXLarge: atPulumiAwsLib.ec2InstanceTypeMod.InstanceType = js.native
-  def getCustomerGateway(): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] = js.native
-  def getCustomerGateway(args: atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] = js.native
+  def getCustomerGateway(): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] with atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult = js.native
+  def getCustomerGateway(args: atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] with atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult = js.native
   def getCustomerGateway(
     args: atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] = js.native
-  def getInstance(): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] = js.native
-  def getInstance(args: atPulumiAwsLib.ec2GetInstanceMod.GetInstanceArgs): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult] with atPulumiAwsLib.ec2GetCustomerGatewayMod.GetCustomerGatewayResult = js.native
+  def getInstance(): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] with atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult = js.native
+  def getInstance(args: atPulumiAwsLib.ec2GetInstanceMod.GetInstanceArgs): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] with atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult = js.native
   def getInstance(
     args: atPulumiAwsLib.ec2GetInstanceMod.GetInstanceArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] = js.native
-  def getInstances(): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] = js.native
-  def getInstances(args: atPulumiAwsLib.ec2GetInstancesMod.GetInstancesArgs): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult] with atPulumiAwsLib.ec2GetInstanceMod.GetInstanceResult = js.native
+  def getInstances(): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] with atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult = js.native
+  def getInstances(args: atPulumiAwsLib.ec2GetInstancesMod.GetInstancesArgs): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] with atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult = js.native
   def getInstances(
     args: atPulumiAwsLib.ec2GetInstancesMod.GetInstancesArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] = js.native
-  def getInternetGateway(): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] = js.native
-  def getInternetGateway(args: atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult] with atPulumiAwsLib.ec2GetInstancesMod.GetInstancesResult = js.native
+  def getInternetGateway(): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] with atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult = js.native
+  def getInternetGateway(args: atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] with atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult = js.native
   def getInternetGateway(
     args: atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] = js.native
-  def getLaunchConfiguration(args: atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationArgs): js.Promise[atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult] with atPulumiAwsLib.ec2GetInternetGatewayMod.GetInternetGatewayResult = js.native
+  def getLaunchConfiguration(args: atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationArgs): js.Promise[atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult] with atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult = js.native
   def getLaunchConfiguration(
     args: atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult] = js.native
-  def getLaunchTemplate(args: atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateArgs): js.Promise[atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult] with atPulumiAwsLib.ec2GetLaunchConfigurationMod.GetLaunchConfigurationResult = js.native
+  def getLaunchTemplate(args: atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateArgs): js.Promise[atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult] with atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult = js.native
   def getLaunchTemplate(
     args: atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult] = js.native
-  def getNatGateway(): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] = js.native
-  def getNatGateway(args: atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult] with atPulumiAwsLib.ec2GetLaunchTemplateMod.GetLaunchTemplateResult = js.native
+  def getNatGateway(): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] with atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult = js.native
+  def getNatGateway(args: atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] with atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult = js.native
   def getNatGateway(
     args: atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] = js.native
-  def getNetworkAcls(): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] = js.native
-  def getNetworkAcls(args: atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult] with atPulumiAwsLib.ec2GetNatGatewayMod.GetNatGatewayResult = js.native
+  def getNetworkAcls(): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] with atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult = js.native
+  def getNetworkAcls(args: atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] with atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult = js.native
   def getNetworkAcls(
     args: atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] = js.native
-  def getNetworkInterface(): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] = js.native
-  def getNetworkInterface(args: atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult] with atPulumiAwsLib.ec2GetNetworkAclsMod.GetNetworkAclsResult = js.native
+  def getNetworkInterface(): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] with atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult = js.native
+  def getNetworkInterface(args: atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] with atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult = js.native
   def getNetworkInterface(
     args: atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] = js.native
-  def getNetworkInterfaces(): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] = js.native
-  def getNetworkInterfaces(args: atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult] with atPulumiAwsLib.ec2GetNetworkInterfaceMod.GetNetworkInterfaceResult = js.native
+  def getNetworkInterfaces(): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] with atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult = js.native
+  def getNetworkInterfaces(args: atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesArgs): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] with atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult = js.native
   def getNetworkInterfaces(
     args: atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] = js.native
-  def getRoute(args: atPulumiAwsLib.ec2GetRouteMod.GetRouteArgs): js.Promise[atPulumiAwsLib.ec2GetRouteMod.GetRouteResult] = js.native
-  def getRoute(args: atPulumiAwsLib.ec2GetRouteMod.GetRouteArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetRouteMod.GetRouteResult] = js.native
-  def getRouteTable(): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] = js.native
-  def getRouteTable(args: atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult] with atPulumiAwsLib.ec2GetNetworkInterfacesMod.GetNetworkInterfacesResult = js.native
+  def getRoute(args: atPulumiAwsLib.ec2GetRouteMod.GetRouteArgs): js.Promise[atPulumiAwsLib.ec2GetRouteMod.GetRouteResult] with atPulumiAwsLib.ec2GetRouteMod.GetRouteResult = js.native
+  def getRoute(args: atPulumiAwsLib.ec2GetRouteMod.GetRouteArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetRouteMod.GetRouteResult] with atPulumiAwsLib.ec2GetRouteMod.GetRouteResult = js.native
+  def getRouteTable(): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult = js.native
+  def getRouteTable(args: atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult = js.native
   def getRouteTable(
     args: atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] = js.native
-  def getRouteTables(): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] = js.native
-  def getRouteTables(args: atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesArgs): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2GetRouteTableMod.GetRouteTableResult = js.native
+  def getRouteTables(): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] with atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult = js.native
+  def getRouteTables(args: atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesArgs): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] with atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult = js.native
   def getRouteTables(
     args: atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] = js.native
-  def getSecurityGroup(): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] = js.native
-  def getSecurityGroup(args: atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupArgs): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult] with atPulumiAwsLib.ec2GetRouteTablesMod.GetRouteTablesResult = js.native
+  def getSecurityGroup(): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] with atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult = js.native
+  def getSecurityGroup(args: atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupArgs): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] with atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult = js.native
   def getSecurityGroup(
     args: atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] = js.native
-  def getSecurityGroups(): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] = js.native
-  def getSecurityGroups(args: atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsArgs): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult] with atPulumiAwsLib.ec2GetSecurityGroupMod.GetSecurityGroupResult = js.native
+  def getSecurityGroups(): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] with atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult = js.native
+  def getSecurityGroups(args: atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsArgs): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] with atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult = js.native
   def getSecurityGroups(
     args: atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] = js.native
-  def getSubnet(): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] = js.native
-  def getSubnet(args: atPulumiAwsLib.ec2GetSubnetMod.GetSubnetArgs): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult] with atPulumiAwsLib.ec2GetSecurityGroupsMod.GetSecurityGroupsResult = js.native
+  def getSubnet(): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] with atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult = js.native
+  def getSubnet(args: atPulumiAwsLib.ec2GetSubnetMod.GetSubnetArgs): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] with atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult = js.native
   def getSubnet(
     args: atPulumiAwsLib.ec2GetSubnetMod.GetSubnetArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] = js.native
-  def getSubnetIds(args: atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsArgs): js.Promise[atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult] with atPulumiAwsLib.ec2GetSubnetMod.GetSubnetResult = js.native
+  def getSubnetIds(args: atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsArgs): js.Promise[atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult] with atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult = js.native
   def getSubnetIds(
     args: atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult] = js.native
-  def getVpc(): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] = js.native
-  def getVpc(args: atPulumiAwsLib.ec2GetVpcMod.GetVpcArgs): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] = js.native
-  def getVpc(args: atPulumiAwsLib.ec2GetVpcMod.GetVpcArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] = js.native
-  def getVpcDhcpOptions(): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] = js.native
-  def getVpcDhcpOptions(args: atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsArgs): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult] with atPulumiAwsLib.ec2GetSubnetIdsMod.GetSubnetIdsResult = js.native
+  def getVpc(): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] with atPulumiAwsLib.ec2GetVpcMod.GetVpcResult = js.native
+  def getVpc(args: atPulumiAwsLib.ec2GetVpcMod.GetVpcArgs): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] with atPulumiAwsLib.ec2GetVpcMod.GetVpcResult = js.native
+  def getVpc(args: atPulumiAwsLib.ec2GetVpcMod.GetVpcArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetVpcMod.GetVpcResult] with atPulumiAwsLib.ec2GetVpcMod.GetVpcResult = js.native
+  def getVpcDhcpOptions(): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] with atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult = js.native
+  def getVpcDhcpOptions(args: atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsArgs): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] with atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult = js.native
   def getVpcDhcpOptions(
     args: atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] = js.native
-  def getVpcEndpoint(): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] = js.native
-  def getVpcEndpoint(args: atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointArgs): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult] with atPulumiAwsLib.ec2GetVpcDhcpOptionsMod.GetVpcDhcpOptionsResult = js.native
+  def getVpcEndpoint(): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] with atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult = js.native
+  def getVpcEndpoint(args: atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointArgs): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] with atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult = js.native
   def getVpcEndpoint(
     args: atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] = js.native
-  def getVpcEndpointService(): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] = js.native
-  def getVpcEndpointService(args: atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceArgs): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult] with atPulumiAwsLib.ec2GetVpcEndpointMod.GetVpcEndpointResult = js.native
+  def getVpcEndpointService(): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] with atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult = js.native
+  def getVpcEndpointService(args: atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceArgs): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] with atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult = js.native
   def getVpcEndpointService(
     args: atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] = js.native
-  def getVpcPeeringConnection(): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] = js.native
-  def getVpcPeeringConnection(args: atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionArgs): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult] with atPulumiAwsLib.ec2GetVpcEndpointServiceMod.GetVpcEndpointServiceResult = js.native
+  def getVpcPeeringConnection(): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] with atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult = js.native
+  def getVpcPeeringConnection(args: atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionArgs): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] with atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult = js.native
   def getVpcPeeringConnection(
     args: atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] = js.native
-  def getVpcs(): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] = js.native
-  def getVpcs(args: atPulumiAwsLib.ec2GetVpcsMod.GetVpcsArgs): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] = js.native
-  def getVpcs(args: atPulumiAwsLib.ec2GetVpcsMod.GetVpcsArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] = js.native
-  def getVpnGateway(): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] = js.native
-  def getVpnGateway(args: atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult] with atPulumiAwsLib.ec2GetVpcPeeringConnectionMod.GetVpcPeeringConnectionResult = js.native
+  def getVpcs(): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] with atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult = js.native
+  def getVpcs(args: atPulumiAwsLib.ec2GetVpcsMod.GetVpcsArgs): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] with atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult = js.native
+  def getVpcs(args: atPulumiAwsLib.ec2GetVpcsMod.GetVpcsArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult] with atPulumiAwsLib.ec2GetVpcsMod.GetVpcsResult = js.native
+  def getVpnGateway(): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] with atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult = js.native
+  def getVpnGateway(args: atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayArgs): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] with atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult = js.native
   def getVpnGateway(
     args: atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] with atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult = js.native
   /* static members */
   @js.native
   object Ami extends js.Object {

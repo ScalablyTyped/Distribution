@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csrf"
-version := "1.3-dt-20180214Z-569b0d"
+version := "1.3-dt-20190717Z-569b0d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

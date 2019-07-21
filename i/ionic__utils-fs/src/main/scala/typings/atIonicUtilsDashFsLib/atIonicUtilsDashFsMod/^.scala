@@ -1184,14 +1184,6 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Double
   ): js.Promise[fsDashExtraLib.fsDashExtraMod.ReadResult] = js.native
-  /**
-    * Asynchronously reads data from the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param buffer The buffer that the data will be written to.
-    * @param offset The offset in the buffer at which to start writing.
-    * @param length The number of bytes to read.
-    * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
-    */
   def read(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -1199,7 +1191,7 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* bytesRead */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
@@ -1212,12 +1204,20 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Null,
     callback: js.Function3[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* bytesRead */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  /**
+    * Asynchronously reads data from the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param buffer The buffer that the data will be written to.
+    * @param offset The offset in the buffer at which to start writing.
+    * @param length The number of bytes to read.
+    * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
+    */
   def read(
     fd: scala.Double,
     buffer: stdLib.DataView,
@@ -2745,129 +2745,14 @@ object ^ extends js.Object {
     options: atIonicUtilsDashFsLib.atIonicUtilsDashFsLibStrings.buffer,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    */
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: js.UndefOr[scala.Double | scala.Null],
-    length: js.UndefOr[scala.Double | scala.Null],
-    position: js.UndefOr[scala.Double | scala.Null],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    */
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
   def write(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.WriteResult] = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    */
   def write(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     callback: js.Function3[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* written */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
@@ -2906,65 +2791,10 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Null,
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    */
   def write(
     fd: scala.Double,
     buffer: stdLib.DataView,
@@ -2998,6 +2828,13 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
+    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
+    */
   def write(
     fd: scala.Double,
     buffer: stdLib.DataView,
@@ -3035,6 +2872,11 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    */
   def write(
     fd: scala.Double,
     buffer: stdLib.DataView,
@@ -3058,6 +2900,12 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
+    */
   def write(
     fd: scala.Double,
     buffer: stdLib.DataView,

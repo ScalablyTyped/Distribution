@@ -52,6 +52,8 @@ class AggregationCursor[T] ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#toArray */
   def toArray(): js.Promise[js.Array[T]] = js.native
   def toArray(callback: MongoCallback[js.Array[T]]): scala.Unit = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#unshift */
+  def unshift(stream: nodeLib.Buffer): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#unwind */
   def unwind[U](field: java.lang.String): AggregationCursor[U] = js.native
 }

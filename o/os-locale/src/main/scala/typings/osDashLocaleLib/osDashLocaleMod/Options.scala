@@ -6,7 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var spawn: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Set to `false` to avoid spawning subprocesses and instead only resolve the locale from environment variables.
+  		@default true
+  		*/
+  val spawn: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

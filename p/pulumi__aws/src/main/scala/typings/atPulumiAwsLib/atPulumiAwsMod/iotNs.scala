@@ -122,12 +122,12 @@ object iotNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.iotTopicRuleMod.TopicRuleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getEndpoint(): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
-  def getEndpoint(args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
+  def getEndpoint(): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
+  def getEndpoint(args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
   def getEndpoint(
     args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
   /* static members */
   @js.native
   object Certificate extends js.Object {

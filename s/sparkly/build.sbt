@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sparkly"
-version := "3.1-dt-20180214Z-bb64af"
+version := "5.0.0-88305f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

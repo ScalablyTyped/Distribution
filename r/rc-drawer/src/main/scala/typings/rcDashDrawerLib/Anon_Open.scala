@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Open extends js.Object {
-  var open: scala.Boolean
-  var target: stdLib.HTMLElement
+  var open: js.UndefOr[scala.Boolean] = js.undefined
+  var prevProps: rcDashDrawerLib.esIDrawerPropTypesMod.IDrawerProps
 }
 
 object Anon_Open {
   @scala.inline
-  def apply(open: scala.Boolean, target: stdLib.HTMLElement): Anon_Open = {
-    val __obj = js.Dynamic.literal(open = open, target = target)
-  
+  def apply(
+    prevProps: rcDashDrawerLib.esIDrawerPropTypesMod.IDrawerProps,
+    open: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Open = {
+    val __obj = js.Dynamic.literal(prevProps = prevProps)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     __obj.asInstanceOf[Anon_Open]
   }
 }

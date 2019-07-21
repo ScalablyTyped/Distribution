@@ -12,7 +12,9 @@ trait ModalFuncProps extends js.Object {
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var getContainer: js.UndefOr[js.Function1[/* instance */ reactLib.reactMod.ReactInstance, stdLib.HTMLElement]] = js.undefined
+  var getContainer: js.UndefOr[
+    java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false` | scala.Null
+  ] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconType: js.UndefOr[java.lang.String] = js.undefined
@@ -46,7 +48,7 @@ object ModalFuncProps {
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     content: reactLib.reactMod.ReactNode = null,
-    getContainer: /* instance */ reactLib.reactMod.ReactInstance => stdLib.HTMLElement = null,
+    getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc | antdLib.antdLibNumbers.`false` = null,
     icon: reactLib.reactMod.ReactNode = null,
     iconClassName: java.lang.String = null,
     iconType: java.lang.String = null,
@@ -77,7 +79,7 @@ object ModalFuncProps {
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
     if (iconType != null) __obj.updateDynamic("iconType")(iconType)

@@ -27,7 +27,7 @@ trait CreateDetectorModelRequest extends js.Object {
     */
   var roleArn: AmazonResourceName
   /**
-    * Metadata which can be used to manage the detector model.
+    * Metadata that can be used to manage the detector model.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

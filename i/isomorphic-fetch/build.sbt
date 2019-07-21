@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "isomorphic-fetch"
-version := "0.0-dt-20190212Z-70dff4"
+version := "0.0-dt-20190717Z-70dff4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

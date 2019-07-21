@@ -228,6 +228,9 @@ object flatpickrLibStrings {
   sealed trait dl extends js.Object
   
   @js.native
+  sealed trait dropdown extends js.Object
+  
+  @js.native
   sealed trait dt extends js.Object
   
   @js.native
@@ -380,6 +383,10 @@ object flatpickrLibStrings {
   
   @js.native
   sealed trait ja
+    extends flatpickrLib.distTypesLocaleMod.key
+  
+  @js.native
+  sealed trait ka
     extends flatpickrLib.distTypesLocaleMod.key
   
   @js.native
@@ -648,6 +655,9 @@ object flatpickrLibStrings {
     extends flatpickrLib.distTypesLocaleMod.key
   
   @js.native
+  sealed trait static extends js.Object
+  
+  @js.native
   sealed trait strong extends js.Object
   
   @js.native
@@ -875,6 +885,8 @@ object flatpickrLibStrings {
   @scala.inline
   def dl: dl = "dl".asInstanceOf[dl]
   @scala.inline
+  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  @scala.inline
   def dt: dt = "dt".asInstanceOf[dt]
   @scala.inline
   def em: em = "em".asInstanceOf[em]
@@ -964,6 +976,8 @@ object flatpickrLibStrings {
   def j: j = "j".asInstanceOf[j]
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
+  @scala.inline
+  def ka: ka = "ka".asInstanceOf[ka]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline
@@ -1116,6 +1130,8 @@ object flatpickrLibStrings {
   def sq: sq = "sq".asInstanceOf[sq]
   @scala.inline
   def sr: sr = "sr".asInstanceOf[sr]
+  @scala.inline
+  def static: static = "static".asInstanceOf[static]
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline

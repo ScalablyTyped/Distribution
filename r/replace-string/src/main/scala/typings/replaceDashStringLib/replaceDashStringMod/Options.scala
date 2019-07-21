@@ -6,7 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var fromIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
+  		Index at which to start replacing.
+  		@default 0
+  		*/
+  val fromIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Options {

@@ -6,7 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Color extends js.Object {
+  /**
+    * Specifies the lightness range of colored shapes of an icon. The range is expressed as an array
+    * containing two numbers, representing the minimum and maximum lightness in the range [0.0, 1.0].
+    */
   var color: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  /**
+    * Specifies the lightness range of grayscale shapes of an icon. The range is expressed as an array
+    * containing two numbers, representing the minimum and maximum lightness in the range [0.0, 1.0].
+    */
   var grayscale: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 

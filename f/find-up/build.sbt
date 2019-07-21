@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "find-up"
-version := "2.1-dt-20180214Z-94823d"
+version := "4.1.0-cae0ff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "locate-path" % "5.0.0-737338",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

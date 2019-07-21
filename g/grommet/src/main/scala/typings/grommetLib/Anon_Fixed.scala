@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Fixed extends js.Object {
   var fixed: js.UndefOr[java.lang.String] = js.undefined
   var length: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
-  var options: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var options: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var regexp: js.UndefOr[js.Object] = js.undefined
 }
@@ -18,7 +18,7 @@ object Anon_Fixed {
   def apply(
     fixed: java.lang.String = null,
     length: scala.Double | js.Array[scala.Double] = null,
-    options: js.Array[java.lang.String] = null,
+    options: js.Array[scala.Double | java.lang.String] = null,
     placeholder: java.lang.String = null,
     regexp: js.Object = null
   ): Anon_Fixed = {

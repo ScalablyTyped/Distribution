@@ -15,7 +15,7 @@ trait UpdateDetectorModelRequest extends js.Object {
     */
   var detectorModelDescription: js.UndefOr[DetectorModelDescription] = js.undefined
   /**
-    * The name of the detector model to be updated.
+    * The name of the detector model that is updated.
     */
   var detectorModelName: DetectorModelName
   /**

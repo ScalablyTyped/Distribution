@@ -20,7 +20,7 @@ object Input extends js.Object {
   var Password: antdLib.TypeofClassPassword = js.native
   var Search: antdLib.TypeofClassSearch = js.native
   var TextArea: org.scalablytyped.runtime.Instantiable0[antdLib.esInputTextAreaMod.default] = js.native
-  var defaultProps: antdLib.Anon_DisabledType = js.native
+  var defaultProps: antdLib.Anon_Type = js.native
   var propTypes: antdLib.Anon_AddonAfter = js.native
   def getDerivedStateFromProps(nextProps: antdLib.esInputInputMod.InputProps): antdLib.Anon_ValueArray | scala.Null = js.native
 }

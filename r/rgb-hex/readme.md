@@ -1,7 +1,7 @@
 
 # Scala.js typings for rgb-hex
 
-Typings are for version 2.1
+Typings are for version 3.0.0
 
 ## Library description:
 Convert RGB(A) color to HEX
@@ -24,7 +24,7 @@ Convert RGB(A) color to HEX
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,29 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for rgb-hex 2.1
-// Project: https://github.com/sindresorhus/rgb-hex#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Convert RGB(A) color to HEX.
+
+@example
+```
+import rgbHex = require('rgb-hex');
+
+rgbHex(65, 131, 196);
+//=> '4183c4'
+
+rgbHex('rgb(40, 42, 54)');
+//=> '282a36'
+
+rgbHex(65, 131, 196, 0.2);
+//=> '4183c433'
+
+rgbHex(40, 42, 54, '75%');
+//=> '282a36bf'
+
+rgbHex('rgba(40, 42, 54, 75%)');
+//=> '282a36bf'
+```
+*/
 
 ```
 

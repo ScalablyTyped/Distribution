@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iot", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getEndpoint(): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
-  def getEndpoint(args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
+  def getEndpoint(): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
+  def getEndpoint(args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
   def getEndpoint(
     args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] with atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult = js.native
 }
 

@@ -40,6 +40,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Daniela Yassuda <https://github.com/danielasy>
 //                 Elias Chaaya <https://github.com/chaaya>
 //                 Søren Englund <https://github.com/englund0110>
+//                 Jonathan Guo <https://github.com/JonathanGuo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

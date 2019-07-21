@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 object execaLibStrings {
   @js.native
   sealed trait ignore
-    extends execaLib.execaMod._StdIOOption
+    extends execaLib.execaMod._StdioOption
   
   @js.native
   sealed trait inherit
-    extends execaLib.execaMod._StdIOOption
+    extends execaLib.execaMod._StdioOption
   
   @js.native
   sealed trait ipc
-    extends execaLib.execaMod._StdIOOption
+    extends execaLib.execaMod._StdioOption
   
   @js.native
   sealed trait pipe
-    extends execaLib.execaMod._StdIOOption
+    extends execaLib.execaMod._StdioOption
   
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]

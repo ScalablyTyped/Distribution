@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("array-differ", JSImport.Namespace)
 @js.native
 object arrayDashDifferMod extends js.Object {
-  def default[T](array: stdLib.ArrayLike[T], values: stdLib.ArrayLike[T]*): js.Array[T] = js.native
+  def apply[ValueType](array: js.Array[ValueType], values: js.Array[ValueType]*): js.Array[ValueType] = js.native
 }
 

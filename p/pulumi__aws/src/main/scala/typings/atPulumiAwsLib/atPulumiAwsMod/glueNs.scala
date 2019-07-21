@@ -122,11 +122,11 @@ object glueNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.glueTriggerMod.TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getScript(args: atPulumiAwsLib.glueGetScriptMod.GetScriptArgs): js.Promise[atPulumiAwsLib.glueGetScriptMod.GetScriptResult] = js.native
+  def getScript(args: atPulumiAwsLib.glueGetScriptMod.GetScriptArgs): js.Promise[atPulumiAwsLib.glueGetScriptMod.GetScriptResult] with atPulumiAwsLib.glueGetScriptMod.GetScriptResult = js.native
   def getScript(
     args: atPulumiAwsLib.glueGetScriptMod.GetScriptArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.glueGetScriptMod.GetScriptResult] = js.native
+  ): js.Promise[atPulumiAwsLib.glueGetScriptMod.GetScriptResult] with atPulumiAwsLib.glueGetScriptMod.GetScriptResult = js.native
   /* static members */
   @js.native
   object CatalogDatabase extends js.Object {

@@ -15,7 +15,7 @@ trait DescribeEventsMessage extends js.Object {
     */
   var EndTime: js.UndefOr[TStamp] = js.undefined
   /**
-    * A list of event categories for a source type that you want to subscribe to.
+    * A list of event categories for the source type that you've chosen.
     */
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   /**
@@ -31,11 +31,11 @@ trait DescribeEventsMessage extends js.Object {
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    *  The identifier of the event source. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens. It cannot end with a hyphen or contain two consecutive hyphens. 
+    *  The identifier of an event source.
     */
   var SourceIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * The type of AWS DMS resource that generates events. Valid values: replication-instance | migration-task
+    * The type of AWS DMS resource that generates events. Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[SourceType] = js.undefined
   /**

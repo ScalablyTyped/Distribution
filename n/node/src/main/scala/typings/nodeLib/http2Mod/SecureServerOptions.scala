@@ -13,7 +13,7 @@ trait SecureServerOptions extends SecureServerSessionOptions {
 object SecureServerOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[java.lang.String | stdLib.Uint8Array]) | stdLib.Uint8Array = null,
     Http1IncomingMessage: org.scalablytyped.runtime.Instantiable1[/* socket */ nodeLib.netMod.Socket, nodeLib.httpMod.IncomingMessage] = null,
     Http1ServerResponse: org.scalablytyped.runtime.Instantiable1[/* req */ nodeLib.httpMod.IncomingMessage, nodeLib.httpMod.ServerResponse] = null,
     Http2ServerRequest: org.scalablytyped.runtime.Instantiable0[Http2ServerRequest] = null,

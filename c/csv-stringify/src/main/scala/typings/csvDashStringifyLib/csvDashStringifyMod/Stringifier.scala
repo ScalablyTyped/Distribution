@@ -12,6 +12,7 @@ trait Stringifier
     buffer: java.lang.String,
     cb: js.Function2[/* error */ js.UndefOr[stdLib.Error], /* output */ java.lang.String, scala.Unit]
   ): scala.Boolean = js.native
+  def write(buffer: nodeLib.Buffer): scala.Boolean = js.native
   def write(
     buffer: nodeLib.Buffer,
     cb: js.Function2[/* error */ js.UndefOr[stdLib.Error], /* output */ java.lang.String, scala.Unit]

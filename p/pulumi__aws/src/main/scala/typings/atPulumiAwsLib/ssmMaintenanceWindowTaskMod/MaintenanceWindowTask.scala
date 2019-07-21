@@ -23,7 +23,7 @@ class MaintenanceWindowTask protected ()
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Documented below.
+    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
     */
   val loggingInfo: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefix]] = js.native
   /**
@@ -34,13 +34,16 @@ class MaintenanceWindowTask protected ()
     * The maximum number of errors allowed before this task stops being scheduled.
     */
   val maxErrors: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The parameter name.
+    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
     */
   val priority: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * The role that should be assumed when executing the task.
+    * The IAM service role to assume during task execution.
     */
   val serviceRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -52,7 +55,11 @@ class MaintenanceWindowTask protected ()
     */
   val taskArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A structure containing information about parameters required by the particular `task_arn`. Documented below.
+    * The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+    */
+  val taskInvocationParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutomationParameters]] = js.native
+  /**
+    * A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
     */
   val taskParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]]] = js.native
   /**

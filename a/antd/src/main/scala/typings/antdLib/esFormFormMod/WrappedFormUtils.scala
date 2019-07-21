@@ -30,6 +30,7 @@ trait WrappedFormUtils[V] extends js.Object {
   def setFields(obj: js.Object): scala.Unit = js.native
   /** 设置一组输入控件的值 */
   def setFieldsValue(obj: js.Object): scala.Unit = js.native
+  def setFieldsValue(obj: js.Object, callback: js.Function): scala.Unit = js.native
   def validateFields(): scala.Unit = js.native
   def validateFields(callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFields(fieldNames: js.Array[java.lang.String]): scala.Unit = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pupa"
-version := "1.0-dt-20180214Z-b72471"
+version := "2.0.0-b84911"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

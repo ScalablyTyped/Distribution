@@ -253,9 +253,11 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * Allows you to pass custom rendering and behavior logic for nodes
     * and marks. Should map node and mark names to constructor
     * functions that produce a [`NodeView`](#view.NodeView) object
-    * implementing the node's display behavior. `getPos` is a function
-    * that can be called to get the node's current position, which can
-    * be useful when creating transactions to update it.
+    * implementing the node's display behavior. For nodes, the third
+    * argument `getPos` is a function that can be called to get the
+    * node's current position, which can be useful when creating
+    * transactions to update it. For marks, the third argument is a
+    * boolean that indicates whether the mark's content is inline.
     *
     * `decorations` is an array of node or inline decorations that are
     * active around the node. They are automatically drawn in the
@@ -278,13 +280,13 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * Determines the extra space (in pixels) that is left above or
     * below the cursor when it is scrolled into view. Defaults to 5.
     */
-  var scrollMargin: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  var scrollMargin: js.UndefOr[scala.Double | prosemirrorDashViewLib.Anon_BottomLeft | scala.Null] = js.undefined
   /**
     * Determines the distance (in pixels) between the cursor and the
     * end of the visible viewport at which point, when scrolling the
     * cursor into view, scrolling takes place. Defaults to 0.
     */
-  var scrollThreshold: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  var scrollThreshold: js.UndefOr[scala.Double | prosemirrorDashViewLib.Anon_BottomLeft | scala.Null] = js.undefined
   /**
     * Can be used to transform pasted content before it is applied to
     * the document.
@@ -345,8 +347,8 @@ object EditorProps {
         NodeView[S]
       ]
     ] = null,
-    scrollMargin: scala.Int | scala.Double = null,
-    scrollThreshold: scala.Int | scala.Double = null,
+    scrollMargin: scala.Double | prosemirrorDashViewLib.Anon_BottomLeft = null,
+    scrollThreshold: scala.Double | prosemirrorDashViewLib.Anon_BottomLeft = null,
     transformPasted: /* p */ prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] => prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] = null,
     transformPastedHTML: /* html */ java.lang.String => java.lang.String = null,
     transformPastedText: /* text */ java.lang.String => java.lang.String = null

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular__forms"
-version := "8.1.1-7ac509"
+version := "8.1.2-6ff1af"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__core" % "8.1.1-d73b9e",
+  "org.scalablytyped" %%% "angular__core" % "8.1.2-3733ee",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-4ab268",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

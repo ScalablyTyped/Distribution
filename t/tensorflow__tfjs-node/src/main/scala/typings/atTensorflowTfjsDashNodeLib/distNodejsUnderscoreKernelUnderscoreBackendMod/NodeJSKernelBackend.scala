@@ -296,9 +296,6 @@ class NodeJSKernelBackend protected ()
   def where(
     condition: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank]
   ): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor2D = js.native
-  def write(dataId: js.Object, values: stdLib.Float32Array): scala.Unit = js.native
-  def write(dataId: js.Object, values: stdLib.Int32Array): scala.Unit = js.native
-  def write(dataId: js.Object, values: stdLib.Uint8Array): scala.Unit = js.native
   def writeScalarSummary(
     resourceHandle: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
     step: scala.Double,

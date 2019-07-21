@@ -8,7 +8,22 @@ import scala.scalajs.js.annotation._
 @JSImport("strip-json-comments", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(input: java.lang.String, opts: StripJsonOptions): java.lang.String = js.native
+  /**
+  Strip comments from JSON. Lets you use comments in your JSON files!
+  It will replace single-line comments `//` and multi-line comments `/ **\/` with whitespace. This allows JSON error positions to remain as close as possible to the original source.
+  @param jsonString - Accepts a string with JSON.
+  @returns A JSON string without comments.
+  @example
+  ```
+  const json = `{
+  	// Rainbows
+  	"unicorn": "cake"
+  }`;
+  JSON.parse(stripJsonComments(json));
+  //=> {unicorn: 'cake'}
+  ```
+  */
+  def apply(jsonString: java.lang.String): java.lang.String = js.native
+  def apply(jsonString: java.lang.String, options: Options): java.lang.String = js.native
 }
 

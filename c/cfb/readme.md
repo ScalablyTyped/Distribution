@@ -1,7 +1,7 @@
 
 # Scala.js typings for cfb
 
-Typings are for version 1.1.1
+Typings are for version 1.1.2
 
 ## Library description:
 Compound File Binary File Format extractor

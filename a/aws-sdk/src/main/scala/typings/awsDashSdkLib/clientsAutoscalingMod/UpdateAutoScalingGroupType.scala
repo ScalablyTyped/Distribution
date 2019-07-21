@@ -15,7 +15,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var AvailabilityZones: js.UndefOr[AvailabilityZones] = js.undefined
   /**
-    * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default value is 300. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
+    * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default value is 300. This cooldown period is not used when a scaling-specific cooldown is specified. Cooldown periods are not supported for target tracking scaling policies, step scaling policies, or scheduled scaling. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
     */
   var DefaultCooldown: js.UndefOr[Cooldown] = js.undefined
   /**
@@ -31,11 +31,11 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
   /**
-    * The name of the launch configuration. If you specify this parameter, you can't specify a launch template or a mixed instances policy.
+    * The name of the launch configuration. If you specify LaunchConfigurationName in your update request, you can't specify LaunchTemplate or MixedInstancesPolicy.  To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. 
     */
   var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
   /**
-    * The launch template and version to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a mixed instances policy.
+    * The launch template and version to use to specify the updates. If you specify LaunchTemplate in your update request, you can't specify LaunchConfigurationName or MixedInstancesPolicy.
     */
   var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   /**
-    * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template.  For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
+    * An embedded object that specifies a mixed instances policy. In your call to UpdateAutoScalingGroup, you can make changes to the policy that is specified. All optional parameters are left unchanged if not specified. For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
     */
   var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
   /**
@@ -67,7 +67,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var TerminationPolicies: js.UndefOr[TerminationPolicies] = js.undefined
   /**
-    * A comma-separated list of subnet IDs, if you are launching into a VPC. If you specify VPCZoneIdentifier with AvailabilityZones, the subnets that you specify for this parameter must reside in those Availability Zones.
+    * A comma-separated list of subnet IDs for virtual private cloud (VPC). If you specify VPCZoneIdentifier with AvailabilityZones, the subnets that you specify for this parameter must reside in those Availability Zones.
     */
   var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
 }

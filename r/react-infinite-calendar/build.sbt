@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-infinite-calendar"
-version := "2.3-dt-20181127Z-593590"
+version := "2.3-dt-20190718Z-17643f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

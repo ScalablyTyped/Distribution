@@ -11,6 +11,11 @@ trait StripePaymentRequest extends js.Object {
   @JSName("on")
   def on_cancel(event: stripeDashV3Lib.stripeDashV3LibStrings.cancel, handler: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
+  def on_paymentmethod(
+    event: stripeDashV3Lib.stripeDashV3LibStrings.paymentmethod,
+    handler: js.Function1[/* response */ StripePaymentMethodPaymentResponse, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
   def on_shippingaddresschange(
     event: stripeDashV3Lib.stripeDashV3LibStrings.shippingaddresschange,
     handler: js.Function1[/* response */ stripeDashV3Lib.Anon_Options, scala.Unit]

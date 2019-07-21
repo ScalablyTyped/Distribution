@@ -7,13 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SystemPreferences extends EventEmitter {
-  def addListener(
-    event: electronLib.electronLibStrings.`appearance-changed`,
-    listener: js.Function1[
-      /* newAppearance */ electronLib.electronLibStrings.dark | electronLib.electronLibStrings.light, 
-      scala.Unit
-    ]
-  ): this.type = js.native
   @JSName("addListener")
   def addListener_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,
@@ -127,17 +120,6 @@ trait SystemPreferences extends EventEmitter {
   def isInvertedColorScheme(): scala.Boolean = js.native
   def isSwipeTrackingFromScrollEventsEnabled(): scala.Boolean = js.native
   def isTrustedAccessibilityClient(prompt: scala.Boolean): scala.Boolean = js.native
-  /**
-    * NOTE: This event is only emitted after you have called
-    * startAppLevelAppearanceTrackingOS
-    */
-  def on(
-    event: electronLib.electronLibStrings.`appearance-changed`,
-    listener: js.Function1[
-      /* newAppearance */ electronLib.electronLibStrings.dark | electronLib.electronLibStrings.light, 
-      scala.Unit
-    ]
-  ): this.type = js.native
   // Docs: http://electronjs.org/docs/api/system-preferences
   @JSName("on")
   def on_accentcolorchanged(
@@ -158,13 +140,6 @@ trait SystemPreferences extends EventEmitter {
   def on_invertedcolorschemechanged(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
-  ): this.type = js.native
-  def once(
-    event: electronLib.electronLibStrings.`appearance-changed`,
-    listener: js.Function1[
-      /* newAppearance */ electronLib.electronLibStrings.dark | electronLib.electronLibStrings.light, 
-      scala.Unit
-    ]
   ): this.type = js.native
   @JSName("once")
   def once_accentcolorchanged(
@@ -206,13 +181,6 @@ trait SystemPreferences extends EventEmitter {
     * Add the specified defaults to your application's NSUserDefaults.
     */
   def registerDefaults(defaults: js.Any): scala.Unit = js.native
-  def removeListener(
-    event: electronLib.electronLibStrings.`appearance-changed`,
-    listener: js.Function1[
-      /* newAppearance */ electronLib.electronLibStrings.dark | electronLib.electronLibStrings.light, 
-      scala.Unit
-    ]
-  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,

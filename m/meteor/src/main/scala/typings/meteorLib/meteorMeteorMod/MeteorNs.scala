@@ -181,13 +181,13 @@ object MeteorNs extends js.Object {
   def apply[Result /* <: meteorLib.EJSONable | (js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]) | meteorLib.EJSONableProperty */](
     name: java.lang.String,
     args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
-    options: meteorLib.Anon_ErrorOnResultReceived[Result]
+    options: meteorLib.Anon_ErrorOnResultReceivedResult[Result]
   ): js.Any = js.native
   @JSName("apply")
   def apply[Result /* <: meteorLib.EJSONable | (js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]) | meteorLib.EJSONableProperty */](
     name: java.lang.String,
     args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
-    options: meteorLib.Anon_ErrorOnResultReceived[Result],
+    options: meteorLib.Anon_ErrorOnResultReceivedResult[Result],
     asyncCallback: js.Function2[
       /* error */ js.UndefOr[meteorLib.global_Error | Error], 
       /* result */ js.UndefOr[Result], 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__cloud
 
-Typings are for version 0.18.0
+Typings are for version 0.18.1
 
 ## Library description:
 A highly productive, cloud neutral programming model.

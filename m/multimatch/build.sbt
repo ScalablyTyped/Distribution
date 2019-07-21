@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multimatch"
-version := "2.1-dt-20181215Z-2f6f0a"
+version := "4.0.0-0868dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

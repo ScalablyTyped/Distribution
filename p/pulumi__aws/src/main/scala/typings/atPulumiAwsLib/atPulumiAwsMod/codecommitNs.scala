@@ -36,11 +36,11 @@ object codecommitNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.codecommitTriggerMod.TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getRepository(args: atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryArgs): js.Promise[atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult] = js.native
+  def getRepository(args: atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryArgs): js.Promise[atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult] with atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult = js.native
   def getRepository(
     args: atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult] = js.native
+  ): js.Promise[atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult] with atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult = js.native
   /* static members */
   @js.native
   object Repository extends js.Object {

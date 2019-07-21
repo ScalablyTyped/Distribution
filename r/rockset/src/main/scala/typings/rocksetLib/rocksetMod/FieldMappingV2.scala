@@ -1,0 +1,31 @@
+package typings
+package rocksetLib.rocksetMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FieldMappingV2 extends js.Object {
+  // A List of InputField for this mapping
+  var input_fields: js.UndefOr[js.Array[InputField]] = js.undefined
+  // A user specified string that is a name for this mapping
+  var name: js.UndefOr[java.lang.String] = js.undefined
+  // An OutputField for this mapping
+  var output_field: js.UndefOr[OutputField] = js.undefined
+}
+
+object FieldMappingV2 {
+  @scala.inline
+  def apply(
+    input_fields: js.Array[InputField] = null,
+    name: java.lang.String = null,
+    output_field: OutputField = null
+  ): FieldMappingV2 = {
+    val __obj = js.Dynamic.literal()
+    if (input_fields != null) __obj.updateDynamic("input_fields")(input_fields)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (output_field != null) __obj.updateDynamic("output_field")(output_field)
+    __obj.asInstanceOf[FieldMappingV2]
+  }
+}
+

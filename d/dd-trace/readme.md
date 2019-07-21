@@ -1,7 +1,7 @@
 
 # Scala.js typings for dd-trace
 
-Typings are for version 0.13.0
+Typings are for version 0.13.1
 
 ## Library description:
 Datadog APM tracing client for JavaScript

@@ -31,7 +31,7 @@ trait EventSubscription extends js.Object {
     */
   var SourceIdsList: js.UndefOr[SourceIdsList] = js.undefined
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | migration-task
+    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
   /**

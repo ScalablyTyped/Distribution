@@ -22,6 +22,8 @@ trait Locale extends js.Object {
     scala.Double
   ]
   var firstDayOfWeek: scala.Double
+  var hourAriaLabel: java.lang.String
+  var minuteAriaLabel: java.lang.String
   var months: flatpickrLib.Anon_LonghandShorthand
   var rangeSeparator: java.lang.String
   var scrollTitle: java.lang.String
@@ -52,6 +54,8 @@ object Locale {
       scala.Double
     ],
     firstDayOfWeek: scala.Double,
+    hourAriaLabel: java.lang.String,
+    minuteAriaLabel: java.lang.String,
     months: flatpickrLib.Anon_LonghandShorthand,
     ordinal: scala.Double => java.lang.String,
     rangeSeparator: java.lang.String,
@@ -62,7 +66,7 @@ object Locale {
     weekdays: flatpickrLib.Anon_Longhand,
     yearAriaLabel: java.lang.String
   ): Locale = {
-    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, months = months, ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, time_24hr = time_24hr, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
+    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, hourAriaLabel = hourAriaLabel, minuteAriaLabel = minuteAriaLabel, months = months, ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, time_24hr = time_24hr, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
   
     __obj.asInstanceOf[Locale]
   }

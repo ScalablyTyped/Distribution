@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "dynamodb"
-version := "1.2-dt-20190515Z-17686d"
+version := "1.2-dt-20190515Z-476b56"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-c546f9",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-7b67b4",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-332cbb",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

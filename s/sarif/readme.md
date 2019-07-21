@@ -23,7 +23,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 /**
- * Static Analysis Results Format (SARIF) Version 2.1.0-rtm.1 JSON Schema: a standard format for the output of static
+ * Static Analysis Results Format (SARIF) Version 2.1.0-rtm.4 JSON Schema: a standard format for the output of static
  * analysis tools.
  */
 

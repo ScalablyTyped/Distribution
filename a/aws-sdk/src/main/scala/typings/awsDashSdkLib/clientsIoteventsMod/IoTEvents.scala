@@ -103,7 +103,7 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
+    * Describes a detector model. If the "version" parameter is not specified, information about the latest version is returned.
     */
   def describeDetectorModel(): awsDashSdkLib.libRequestMod.Request[DescribeDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDetectorModel(
@@ -114,7 +114,7 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
+    * Describes a detector model. If the "version" parameter is not specified, information about the latest version is returned.
     */
   def describeDetectorModel(params: DescribeDetectorModelRequest): awsDashSdkLib.libRequestMod.Request[DescribeDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDetectorModel(
@@ -264,14 +264,14 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets or updates the AWS IoT Events logging options. Note that if you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
+    * Sets or updates the AWS IoT Events logging options. If you update the value of any "loggingOptions" field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the "roleArn" field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
     */
   def putLoggingOptions(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putLoggingOptions(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets or updates the AWS IoT Events logging options. Note that if you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
+    * Sets or updates the AWS IoT Events logging options. If you update the value of any "loggingOptions" field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the "roleArn" field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
     */
   def putLoggingOptions(params: PutLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putLoggingOptions(
@@ -279,7 +279,7 @@ trait IoTEvents
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Add to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -290,7 +290,7 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Add to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
     */
   def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -325,7 +325,7 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a detector model. Detectors (instances) spawned by the previous version will be deleted and re-created as new inputs arrive.
+    * Updates a detector model. Detectors (instances) spawned by the previous version are deleted and then re-created as new inputs arrive.
     */
   def updateDetectorModel(): awsDashSdkLib.libRequestMod.Request[UpdateDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDetectorModel(
@@ -336,7 +336,7 @@ trait IoTEvents
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a detector model. Detectors (instances) spawned by the previous version will be deleted and re-created as new inputs arrive.
+    * Updates a detector model. Detectors (instances) spawned by the previous version are deleted and then re-created as new inputs arrive.
     */
   def updateDetectorModel(params: UpdateDetectorModelRequest): awsDashSdkLib.libRequestMod.Request[UpdateDetectorModelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDetectorModel(

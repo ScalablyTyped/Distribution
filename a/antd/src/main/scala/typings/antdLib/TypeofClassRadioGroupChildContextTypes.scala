@@ -12,7 +12,7 @@ trait TypeofClassRadioGroupChildContextTypes
       antdLib.libRadioGroupMod.default
     ] {
   var childContextTypes: Anon_RadioGroup = js.native
-  var defaultProps: Anon_ButtonStyleDisabled = js.native
+  var defaultProps: Anon_ButtonStyleRadioGroupButtonStyle = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): Anon_ValueAny | scala.Null = js.native
 }
 

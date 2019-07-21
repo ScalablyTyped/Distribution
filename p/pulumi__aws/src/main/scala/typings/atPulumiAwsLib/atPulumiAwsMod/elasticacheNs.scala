@@ -79,16 +79,16 @@ object elasticacheNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.elasticacheSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCluster(args: atPulumiAwsLib.elasticacheGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult] = js.native
+  def getCluster(args: atPulumiAwsLib.elasticacheGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult] with atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult = js.native
   def getCluster(
     args: atPulumiAwsLib.elasticacheGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult] = js.native
-  def getReplicationGroup(args: atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupArgs): js.Promise[atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult] with atPulumiAwsLib.elasticacheGetClusterMod.GetClusterResult = js.native
+  def getReplicationGroup(args: atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupArgs): js.Promise[atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult] with atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult = js.native
   def getReplicationGroup(
     args: atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult] with atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "enzyme-adapter-react-15"
-version := "1.0-dt-20190219Z-5b6e95"
+version := "1.0-dt-20190219Z-534b21"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-6b4a6e",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-3dda37",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190709Z-0edae3",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-698429",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")

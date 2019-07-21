@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rsvp", "EventTarget")
 @js.native
-class EventTarget ()
+class EventTargetCls ()
   extends rsvpLib.rsvpMod.RSVPNs.EventTarget
 
 @JSImport("rsvp", "EventTarget")

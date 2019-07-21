@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hookrouter"
-version := "2.2-dt-20190517Z-fc0ef1"
+version := "2.2-dt-20190717Z-fc0ef1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

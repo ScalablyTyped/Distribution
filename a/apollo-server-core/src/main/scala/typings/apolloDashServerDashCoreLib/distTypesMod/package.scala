@@ -13,9 +13,11 @@ package object distTypesMod {
   type Context[T] = T
   type ContextFunction[FunctionParams, ProducedContext] = js.Function1[
     /* context */ FunctionParams, 
-    apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.ValueOrPromise[Context[ProducedContext]]
+    apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.ValueOrPromise[Context[ProducedContext]]
   ]
   type PluginDefinition = apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin | (js.Function0[
     apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
   ])
+  type SchemaChangeCallback = js.Function1[/* schema */ graphqlLib.graphqlMod.GraphQLSchema, scala.Unit]
+  type Unsubscriber = js.Function0[scala.Unit]
 }

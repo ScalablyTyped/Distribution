@@ -17,7 +17,7 @@ trait ConnectOptions extends js.Object {
   var maxAudioBitRate: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var maxVideoBitRate: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  var networkQuality: js.UndefOr[scala.Boolean] = js.undefined
+  var networkQuality: js.UndefOr[scala.Boolean | NetworkQualityConfiguration] = js.undefined
   var preferredAudioCodecs: js.UndefOr[js.Array[AudioCodec]] = js.undefined
   var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings]] = js.undefined
   var tracks: js.UndefOr[js.Array[LocalTrack | stdLib.MediaStreamTrack]] = js.undefined
@@ -38,7 +38,7 @@ object ConnectOptions {
     maxAudioBitRate: scala.Int | scala.Double = null,
     maxVideoBitRate: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    networkQuality: js.UndefOr[scala.Boolean] = js.undefined,
+    networkQuality: scala.Boolean | NetworkQualityConfiguration = null,
     preferredAudioCodecs: js.Array[AudioCodec] = null,
     preferredVideoCodecs: js.Array[VideoCodec | VideoCodecSettings] = null,
     tracks: js.Array[LocalTrack | stdLib.MediaStreamTrack] = null,
@@ -56,7 +56,7 @@ object ConnectOptions {
     if (maxAudioBitRate != null) __obj.updateDynamic("maxAudioBitRate")(maxAudioBitRate.asInstanceOf[js.Any])
     if (maxVideoBitRate != null) __obj.updateDynamic("maxVideoBitRate")(maxVideoBitRate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(networkQuality)) __obj.updateDynamic("networkQuality")(networkQuality)
+    if (networkQuality != null) __obj.updateDynamic("networkQuality")(networkQuality.asInstanceOf[js.Any])
     if (preferredAudioCodecs != null) __obj.updateDynamic("preferredAudioCodecs")(preferredAudioCodecs)
     if (preferredVideoCodecs != null) __obj.updateDynamic("preferredVideoCodecs")(preferredVideoCodecs)
     if (tracks != null) __obj.updateDynamic("tracks")(tracks)

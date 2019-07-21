@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 BendingBender <https://github.com/BendingBender>
 //                 ErikSchierboom <https://github.com/ErikSchierboom>
 //                 Peter Morlion <https://github.com/petermorlion>
+//                 Don Jayamanne <https://github.com/DonJayamanne>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 

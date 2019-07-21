@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation._
     */
   var data: js.UndefOr[
     js.Array[
-      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
+      scala.Double | scala.Null | (js.Tuple2[scala.Double | java.lang.String, scala.Double | scala.Null]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ]
   ] = js.undefined
   /**
@@ -148,7 +148,7 @@ object PyramidChartSeriesOptions {
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
     data: js.Array[
-      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
+      scala.Double | scala.Null | (js.Tuple2[scala.Double | java.lang.String, scala.Double | scala.Null]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ] = null,
     dataLabels: PieDataLabels = null,
     depth: scala.Int | scala.Double = null,

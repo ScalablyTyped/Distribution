@@ -109,38 +109,38 @@ object ec2transitgatewayNs extends js.Object {
   
   def getDirectConnectGatewayAttachment(
     args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs
-  ): js.Promise[
+  ): (js.Promise[
     atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
-  ] = js.native
+  ]) with atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult = js.native
   def getDirectConnectGatewayAttachment(
     args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[
+  ): (js.Promise[
     atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
-  ] = js.native
-  def getRouteTable(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
-  def getRouteTable(args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
+  ]) with atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult = js.native
+  def getRouteTable(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult = js.native
+  def getRouteTable(args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult = js.native
   def getRouteTable(
     args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
-  def getTransitGateway(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] = js.native
-  def getTransitGateway(args: atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] with atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult = js.native
+  def getTransitGateway(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] with atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult = js.native
+  def getTransitGateway(args: atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] with atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult = js.native
   def getTransitGateway(
     args: atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] = js.native
-  def getVpcAttachment(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] = js.native
-  def getVpcAttachment(args: atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult] with atPulumiAwsLib.ec2transitgatewayGetTransitGatewayMod.GetTransitGatewayResult = js.native
+  def getVpcAttachment(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] with atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult = js.native
+  def getVpcAttachment(args: atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] with atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult = js.native
   def getVpcAttachment(
     args: atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] = js.native
-  def getVpnAttachment(args: atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] with atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult = js.native
+  def getVpnAttachment(args: atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] with atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult = js.native
   def getVpnAttachment(
     args: atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] = js.native
+  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] with atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult = js.native
   /* static members */
   @js.native
   object Route extends js.Object {

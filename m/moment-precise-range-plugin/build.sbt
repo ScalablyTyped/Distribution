@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-precise-range-plugin"
-version := "0.2-dt-20190207Z-f9621e"
+version := "0.2-dt-20190717Z-f9621e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

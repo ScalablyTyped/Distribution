@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoJSON extends _Coordinate {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- haversineLib.haversineMod._ParamType because Already inherited */ trait GeoJSON extends _Coordinate {
   var geometry: haversineLib.Anon_Coordinates
 }
 

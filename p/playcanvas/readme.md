@@ -17,7 +17,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for playcanvas 0.221
+// Type definitions for non-npm package playcanvas 0.221
 // Project: https://github.com/playcanvas/engine
 // Definitions by: Philippe Vaillancourt <https://github.com/Neoflash1979>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

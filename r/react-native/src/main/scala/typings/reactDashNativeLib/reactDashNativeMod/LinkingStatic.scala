@@ -28,6 +28,10 @@ trait LinkingStatic extends EventEmitter {
     */
   def getInitialURL(): js.Promise[java.lang.String | scala.Null] = js.native
   /**
+    * Open the Settings app and displays the app’s custom settings, if it has any.
+    */
+  def openSettings(): js.Promise[scala.Unit] = js.native
+  /**
     * Try to open the given url with any of the installed apps.
     * You can use other URLs, like a location (e.g. "geo:37.484847,-122.148386"), a contact, or any other URL that can be opened with the installed apps.
     * NOTE: This method will fail if the system doesn't know how to open the specified URL. If you're passing in a non-http(s) URL, it's best to check {@code canOpenURL} first.

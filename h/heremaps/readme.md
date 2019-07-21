@@ -22,6 +22,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Joshua Efiong <https://github.com/Josh-ES>
 //                 Bernd Hacker <https://github.com/denyo>
 //                 Ferdinand Armbruster <https://github.com/fx88>
+//                 Vladimir Dashukevich <https://github.com/life777>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 

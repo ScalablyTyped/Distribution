@@ -15,6 +15,13 @@ trait ModelArtifactsInfo extends js.Object {
     */
   var modelTopologyBytes: js.UndefOr[scala.Double] = js.undefined
   /**
+    * TODO (cais,yassogba) consider removing GraphDef as GraphDefs now
+    * come in a JSON format and none of our IOHandlers support a non json
+    * format. We could conder replacing this with 'Binary' if we want to
+    * allow future handlers to save to non json formats (though they will
+    * probably want more information than 'Binary').
+    * Type of the model topology
+    *
     * Type of the model topology
     *
     * Possible values:

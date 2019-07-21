@@ -18,7 +18,7 @@ object SpawnSyncOptionsWithStringEncoding {
     cwd: java.lang.String = null,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     gid: scala.Int | scala.Double = null,
-    input: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView = null,
+    input: java.lang.String | nodeLib.NodeJSNs.TypedArray | stdLib.DataView = null,
     killSignal: java.lang.String | scala.Double = null,
     maxBuffer: scala.Int | scala.Double = null,
     shell: scala.Boolean | java.lang.String = null,

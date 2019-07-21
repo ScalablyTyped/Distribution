@@ -11,11 +11,11 @@ trait CreateReplicationInstanceMessage extends js.Object {
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window. Default: true 
+    * Indicates whether minor engine upgrades will be applied automatically to the replication instance during the maintenance window. This parameter defaults to true. Default: true 
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The EC2 Availability Zone that the replication instance will be created in. Default: A random, system-chosen Availability Zone in the endpoint's region.  Example: us-east-1d 
+    * The AWS Availability Zone where the replication instance will be created. The default value is a random, system-chosen Availability Zone in the endpoint's AWS Region, for example: us-east-1d 
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
@@ -27,15 +27,15 @@ trait CreateReplicationInstanceMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An AWS KMS key identifier that is used to encrypt the data on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
+    *  Specifies whether the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).  Format: ddd:hh24:mi-ddd:hh24:mi  Default: A 30-minute window selected at random from an 8-hour block of time per region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun Constraints: Minimum 30-minute window.
+    * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).  Format: ddd:hh24:mi-ddd:hh24:mi  Default: A 30-minute window selected at random from an 8-hour block of time per AWS Region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun Constraints: Minimum 30-minute window.
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait CreateReplicationInstanceMessage extends js.Object {
     */
   var ReplicationSubnetGroupIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * Tags to be associated with the replication instance.
+    * One or more tags to be assigned to the replication instance.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**

@@ -10,15 +10,20 @@ trait InjectableDecorator
   extends org.scalablytyped.runtime.Instantiable1[/* options */ atAngularCoreLib.Anon_ProvidedIn with InjectableProvider, Injectable]
      with org.scalablytyped.runtime.Instantiable0[Injectable] {
   /**
-    * Decorator that marks a class as available to `Injector` for creation.
+    * Decorator that marks a class as available to be
+    * provided and injected as a dependency.
     *
     * @see [Introduction to Services and DI](guide/architecture-services)
     * @see [Dependency Injection Guide](guide/dependency-injection)
     *
     * @usageNotes
     *
-    * The following example shows how service classes are properly marked as
-    * injectable.
+    * Marking a class with `@Injectable` ensures that the compiler
+    * will generate the necessary metadata to create the class's
+    * dependencies when the class is injected.
+    *
+    * The following example shows how a service class is properly
+    *  marked so that a supporting service can be injected upon creation.
     *
     * <code-example path="core/di/ts/metadata_spec.ts" region="Injectable"
     *  linenums="false"></code-example>

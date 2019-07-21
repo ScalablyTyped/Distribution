@@ -43,36 +43,6 @@ object eventNs extends js.Object {
       context: js.Object,
       priority: scala.Double
     ): this.type = js.native
-    def remove(
-      types: java.lang.String,
-      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
-    ): this.type = js.native
-    def remove(
-      types: java.lang.String,
-      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
-      context: js.Object
-    ): this.type = js.native
-    def remove(
-      types: java.lang.String,
-      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
-      context: js.Object,
-      priority: scala.Double
-    ): this.type = js.native
-    def remove(
-      types: js.Array[js.Array[java.lang.String] | java.lang.String],
-      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit]
-    ): this.type = js.native
-    def remove(
-      types: js.Array[js.Array[java.lang.String] | java.lang.String],
-      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
-      context: js.Object
-    ): this.type = js.native
-    def remove(
-      types: js.Array[js.Array[java.lang.String] | java.lang.String],
-      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
-      context: js.Object,
-      priority: scala.Double
-    ): this.type = js.native
     def setParent(parent: yandexDashMapsLib.yandexDashMapsMod.IEventManager): this.type = js.native
   }
   

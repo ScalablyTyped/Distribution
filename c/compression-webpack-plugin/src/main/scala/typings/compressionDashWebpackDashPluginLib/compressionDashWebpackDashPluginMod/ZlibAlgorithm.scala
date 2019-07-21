@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.deflate
   - compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.deflateRaw
   - compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.gzip
+  - compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.brotliCompress
 */
 trait ZlibAlgorithm extends js.Object
 

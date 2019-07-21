@@ -74,7 +74,7 @@ trait IndividualSeriesOptions extends js.Object {
     */
   var data: js.UndefOr[
     js.Array[
-      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
+      scala.Double | scala.Null | (js.Tuple2[scala.Double | java.lang.String, scala.Double | scala.Null]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ]
   ] = js.undefined
   /**
@@ -158,7 +158,7 @@ object IndividualSeriesOptions {
     crisp: js.UndefOr[scala.Boolean] = js.undefined,
     cursor: java.lang.String = null,
     data: js.Array[
-      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
+      scala.Double | scala.Null | (js.Tuple2[scala.Double | java.lang.String, scala.Double | scala.Null]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ] = null,
     description: java.lang.String = null,
     id: java.lang.String = null,

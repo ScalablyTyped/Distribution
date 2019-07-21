@@ -38,7 +38,6 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for ramda 0.26
 // Project: https://github.com/donnut/typescript-ramda, https://ramdajs.com
 // Definitions by: Erwin Poeze <https://github.com/donnut>
-//                 Tycho Grouwstra <https://github.com/tycho01>
 //                 Matt DeKrey <https://github.com/mdekrey>
 //                 Matt Dziuban <https://github.com/mrdziuban>
 //                 Stephen King <https://github.com/sbking>

@@ -45,6 +45,7 @@ trait IssuesListForOrgResponseItemRepository extends js.Object {
   var hooks_url: java.lang.String
   var html_url: java.lang.String
   var id: scala.Double
+  var is_template: scala.Boolean
   var issue_comment_url: java.lang.String
   var issue_events_url: java.lang.String
   var issues_url: java.lang.String
@@ -77,6 +78,7 @@ trait IssuesListForOrgResponseItemRepository extends js.Object {
   var svn_url: java.lang.String
   var tags_url: java.lang.String
   var teams_url: java.lang.String
+  var template_repository: scala.Null
   var topics: js.Array[java.lang.String]
   var trees_url: java.lang.String
   var updated_at: java.lang.String
@@ -126,6 +128,7 @@ object IssuesListForOrgResponseItemRepository {
     hooks_url: java.lang.String,
     html_url: java.lang.String,
     id: scala.Double,
+    is_template: scala.Boolean,
     issue_comment_url: java.lang.String,
     issue_events_url: java.lang.String,
     issues_url: java.lang.String,
@@ -158,13 +161,14 @@ object IssuesListForOrgResponseItemRepository {
     svn_url: java.lang.String,
     tags_url: java.lang.String,
     teams_url: java.lang.String,
+    template_repository: scala.Null,
     topics: js.Array[java.lang.String],
     trees_url: java.lang.String,
     updated_at: java.lang.String,
     url: java.lang.String,
     watchers_count: scala.Double
   ): IssuesListForOrgResponseItemRepository = {
-    val __obj = js.Dynamic.literal(allow_merge_commit = allow_merge_commit, allow_rebase_merge = allow_rebase_merge, allow_squash_merge = allow_squash_merge, archive_url = archive_url, archived = archived, assignees_url = assignees_url, blobs_url = blobs_url, branches_url = branches_url, clone_url = clone_url, collaborators_url = collaborators_url, comments_url = comments_url, commits_url = commits_url, compare_url = compare_url, contents_url = contents_url, contributors_url = contributors_url, created_at = created_at, default_branch = default_branch, deployments_url = deployments_url, description = description, disabled = disabled, downloads_url = downloads_url, events_url = events_url, fork = fork, forks_count = forks_count, forks_url = forks_url, full_name = full_name, git_commits_url = git_commits_url, git_refs_url = git_refs_url, git_tags_url = git_tags_url, git_url = git_url, has_downloads = has_downloads, has_issues = has_issues, has_pages = has_pages, has_projects = has_projects, has_wiki = has_wiki, homepage = homepage, hooks_url = hooks_url, html_url = html_url, id = id, issue_comment_url = issue_comment_url, issue_events_url = issue_events_url, issues_url = issues_url, keys_url = keys_url, labels_url = labels_url, language = language, languages_url = languages_url, merges_url = merges_url, milestones_url = milestones_url, mirror_url = mirror_url, name = name, network_count = network_count, node_id = node_id, notifications_url = notifications_url, open_issues_count = open_issues_count, owner = owner, permissions = permissions, pulls_url = pulls_url, pushed_at = pushed_at, releases_url = releases_url, size = size, ssh_url = ssh_url, stargazers_count = stargazers_count, stargazers_url = stargazers_url, statuses_url = statuses_url, subscribers_count = subscribers_count, subscribers_url = subscribers_url, subscription_url = subscription_url, svn_url = svn_url, tags_url = tags_url, teams_url = teams_url, topics = topics, trees_url = trees_url, updated_at = updated_at, url = url, watchers_count = watchers_count)
+    val __obj = js.Dynamic.literal(allow_merge_commit = allow_merge_commit, allow_rebase_merge = allow_rebase_merge, allow_squash_merge = allow_squash_merge, archive_url = archive_url, archived = archived, assignees_url = assignees_url, blobs_url = blobs_url, branches_url = branches_url, clone_url = clone_url, collaborators_url = collaborators_url, comments_url = comments_url, commits_url = commits_url, compare_url = compare_url, contents_url = contents_url, contributors_url = contributors_url, created_at = created_at, default_branch = default_branch, deployments_url = deployments_url, description = description, disabled = disabled, downloads_url = downloads_url, events_url = events_url, fork = fork, forks_count = forks_count, forks_url = forks_url, full_name = full_name, git_commits_url = git_commits_url, git_refs_url = git_refs_url, git_tags_url = git_tags_url, git_url = git_url, has_downloads = has_downloads, has_issues = has_issues, has_pages = has_pages, has_projects = has_projects, has_wiki = has_wiki, homepage = homepage, hooks_url = hooks_url, html_url = html_url, id = id, is_template = is_template, issue_comment_url = issue_comment_url, issue_events_url = issue_events_url, issues_url = issues_url, keys_url = keys_url, labels_url = labels_url, language = language, languages_url = languages_url, merges_url = merges_url, milestones_url = milestones_url, mirror_url = mirror_url, name = name, network_count = network_count, node_id = node_id, notifications_url = notifications_url, open_issues_count = open_issues_count, owner = owner, permissions = permissions, pulls_url = pulls_url, pushed_at = pushed_at, releases_url = releases_url, size = size, ssh_url = ssh_url, stargazers_count = stargazers_count, stargazers_url = stargazers_url, statuses_url = statuses_url, subscribers_count = subscribers_count, subscribers_url = subscribers_url, subscription_url = subscription_url, svn_url = svn_url, tags_url = tags_url, teams_url = teams_url, template_repository = template_repository, topics = topics, trees_url = trees_url, updated_at = updated_at, url = url, watchers_count = watchers_count)
     __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[IssuesListForOrgResponseItemRepository]
   }

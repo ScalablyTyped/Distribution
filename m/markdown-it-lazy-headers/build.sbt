@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "markdown-it-lazy-headers"
-version := "0.13-dt-20181102Z-1c8154"
+version := "0.13-dt-20190717Z-1c8154"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

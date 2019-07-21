@@ -32,8 +32,8 @@ object ThemeTreeProps {
   ): ThemeTreeProps = {
     val __obj = js.Dynamic.literal()
     if (innerStyle != null) __obj.updateDynamic("innerStyle")(innerStyle)
-    if (nodeContentRenderer != null) __obj.updateDynamic("nodeContentRenderer")(nodeContentRenderer)
-    if (placeholderRenderer != null) __obj.updateDynamic("placeholderRenderer")(placeholderRenderer)
+    if (nodeContentRenderer != null) __obj.updateDynamic("nodeContentRenderer")(nodeContentRenderer.asInstanceOf[js.Any])
+    if (placeholderRenderer != null) __obj.updateDynamic("placeholderRenderer")(placeholderRenderer.asInstanceOf[js.Any])
     if (reactVirtualizedListProps != null) __obj.updateDynamic("reactVirtualizedListProps")(reactVirtualizedListProps)
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (scaffoldBlockPxWidth != null) __obj.updateDynamic("scaffoldBlockPxWidth")(scaffoldBlockPxWidth.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-fixedcolumns"
-version := "3.2-dt-20190711Z-fe8626"
+version := "3.2-dt-20190718Z-6a5e37"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

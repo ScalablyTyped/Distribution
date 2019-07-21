@@ -1,7 +1,7 @@
 
 # Scala.js typings for ua-string
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get the user agent of a recent Chrome version to pretend to be a browser in network requests
@@ -24,7 +24,7 @@ Get the user agent of a recent Chrome version to pretend to be a browser in netw
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,21 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ua-string 2.0
-// Project: https://github.com/sindresorhus/ua-string#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get the [user agent](https://en.wikipedia.org/wiki/User_agent) of a recent Chrome version to pretend to be a browser in network requests.
+
+@example
+```
+import got = require('got');
+import userAgentString = require('ua-string');
+
+got('sindresorhus.com', {
+	headers: {
+		'user-agent': userAgentString
+	}
+});
+```
+*/
 
 ```
 

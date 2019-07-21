@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-bytes
 
-Typings are for version 5.1
+Typings are for version 5.2.0
 
 ## Library description:
 Convert bytes to a human readable string: 1337 → 1.34 kB
@@ -24,22 +24,11 @@ Convert bytes to a human readable string: 1337 → 1.34 kB
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pretty-bytes 5.1
-// Project: https://github.com/sindresorhus/pretty-bytes
-// Definitions by: York Yao <https://github.com/plantain-00>
-//                 Daniela Yassuda <https://github.com/danielasy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

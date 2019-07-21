@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Content extends js.Object {
-  var content: java.lang.String
+  var content: js.UndefOr[java.lang.String] = js.undefined
   var contentDigest: java.lang.String
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var mediaType: java.lang.String
-  var owner: java.lang.String
+  var mediaType: js.UndefOr[java.lang.String] = js.undefined
   var `type`: java.lang.String
 }
 
 object Anon_Content {
   @scala.inline
   def apply(
-    content: java.lang.String,
     contentDigest: java.lang.String,
-    mediaType: java.lang.String,
-    owner: java.lang.String,
     `type`: java.lang.String,
-    description: java.lang.String = null
+    content: java.lang.String = null,
+    description: java.lang.String = null,
+    mediaType: java.lang.String = null
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(content = content, contentDigest = contentDigest, mediaType = mediaType, owner = owner)
+    val __obj = js.Dynamic.literal(contentDigest = contentDigest)
     __obj.updateDynamic("type")(`type`)
+    if (content != null) __obj.updateDynamic("content")(content)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
     __obj.asInstanceOf[Anon_Content]
   }
 }

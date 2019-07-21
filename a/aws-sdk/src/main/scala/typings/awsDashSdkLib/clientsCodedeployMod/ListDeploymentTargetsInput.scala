@@ -15,7 +15,7 @@ trait ListDeploymentTargetsInput extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    *  A key used to filter the returned targets. 
+    *  A key used to filter the returned targets. The two valid values are:    TargetStatus - A TargetStatus filter string can be Failed, InProgress, Pending, Ready, Skipped, Succeeded, or Unknown.     ServerInstanceLabel - A ServerInstanceLabel filter string can be Blue or Green.   
     */
   var targetFilters: js.UndefOr[TargetFilters] = js.undefined
 }

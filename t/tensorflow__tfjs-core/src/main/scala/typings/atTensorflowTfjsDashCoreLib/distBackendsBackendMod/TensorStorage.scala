@@ -14,8 +14,8 @@ trait TensorStorage extends js.Object {
   def fromPixels(pixels: stdLib.HTMLVideoElement, numChannels: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor3D = js.native
   def fromPixels(pixels: stdLib.ImageData, numChannels: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor3D = js.native
   def memory(): atTensorflowTfjsDashCoreLib.Anon_Unreliable = js.native
-  def read(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): js.Promise[atTensorflowTfjsDashCoreLib.distTypesMod.DataValues] = js.native
-  def readSync(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): atTensorflowTfjsDashCoreLib.distTypesMod.DataValues = js.native
+  def read(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): js.Promise[atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues] = js.native
+  def readSync(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues = js.native
   def register(
     dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId,
     shape: js.Array[scala.Double],
@@ -23,7 +23,7 @@ trait TensorStorage extends js.Object {
   ): scala.Unit = js.native
   def write(
     dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId,
-    values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues
+    values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues
   ): scala.Unit = js.native
 }
 

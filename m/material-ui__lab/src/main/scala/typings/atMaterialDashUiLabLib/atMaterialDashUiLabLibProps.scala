@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait atMaterialDashUiLabLibProps {
   @scala.inline
+  def RatingProps: atMaterialDashUiLabLib.ratingRatingMod.RatingProps.type = atMaterialDashUiLabLib.ratingRatingMod.RatingProps
+  type RatingProps = atMaterialDashUiLabLib.ratingRatingMod.RatingProps
+  @scala.inline
   def SpeedDialProps: atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps.type = atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps
   type SpeedDialProps = atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps
   @scala.inline

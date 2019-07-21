@@ -1,7 +1,7 @@
 
 # Scala.js typings for slonik
 
-Typings are for version 16.16
+Typings are for version 18.2
 
 ## Library description:
 A PostgreSQL client with strict types, detail logging and assertions.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for slonik 16.16
+// Type definitions for slonik 18.2
 // Project: https://github.com/gajus/slonik#readme
 // Definitions by: Sebastian Sebald <https://github.com/sebald>
 //                 Misha Kaletsky <https://github.com/mmkal>

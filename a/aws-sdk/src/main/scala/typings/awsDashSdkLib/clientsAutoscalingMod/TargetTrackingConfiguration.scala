@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait TargetTrackingConfiguration extends js.Object {
   /**
-    * A customized metric. You can specify either a predefined metric or a customized metric.
+    * A customized metric. You must specify either a predefined metric or a customized metric.
     */
   var CustomizedMetricSpecification: js.UndefOr[CustomizedMetricSpecification] = js.undefined
   /**
-    * Indicates whether scaling in by the target tracking scaling policy is disabled. If scaling in is disabled, the target tracking scaling policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking scaling policy can remove instances from the Auto Scaling group. The default is disabled.
+    * Indicates whether scaling in by the target tracking scaling policy is disabled. If scaling in is disabled, the target tracking scaling policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking scaling policy can remove instances from the Auto Scaling group. The default is false.
     */
   var DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined
   /**
-    * A predefined metric. You can specify either a predefined metric or a customized metric.
+    * A predefined metric. You must specify either a predefined metric or a customized metric.
     */
   var PredefinedMetricSpecification: js.UndefOr[PredefinedMetricSpecification] = js.undefined
   /**

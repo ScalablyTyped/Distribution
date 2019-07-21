@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object MongoNs {
   type ArraysOrEach[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? meteor.Mongo.OnlyArrays<T[P]> | {  $each  :T[P]}}
+  {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each  :T[P]}}
     */ meteorLib.meteorLibStrings.ArraysOrEach with js.Any
   type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ElementsOf[T] = /* import warning: ImportType.apply c Unsupported type mapping: 

@@ -10,7 +10,9 @@ trait Anon_Axes extends js.Object {
   var categories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var classes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var colors: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor]
+    org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
+    ]
   ] = js.undefined
   var columns: js.UndefOr[js.Array[c3Lib.c3Mod.PrimitiveArray]] = js.undefined
   var done: js.UndefOr[js.Function0[_]] = js.undefined
@@ -31,7 +33,9 @@ object Anon_Axes {
     axes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     categories: js.Array[java.lang.String] = null,
     classes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    colors: org.scalablytyped.runtime.StringDictionary[java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor] = null,
+    colors: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
+    ] = null,
     columns: js.Array[c3Lib.c3Mod.PrimitiveArray] = null,
     done: () => _ = null,
     json: js.Object = null,

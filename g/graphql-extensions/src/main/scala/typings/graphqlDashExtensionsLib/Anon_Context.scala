@@ -16,7 +16,7 @@ trait Anon_Context[TContext] extends js.Object {
     apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
     graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
   ]
-  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
+  var requestContext: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLRequestContext[TContext]
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object Anon_Context {
       apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
       graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
     ],
-    requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext],
+    requestContext: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLRequestContext[TContext],
     operationName: java.lang.String = null,
     parsedQuery: graphqlLib.languageAstMod.DocumentNode = null,
     persistedQueryHit: js.UndefOr[scala.Boolean] = js.undefined,

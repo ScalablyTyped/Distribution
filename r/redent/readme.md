@@ -1,7 +1,7 @@
 
 # Scala.js typings for redent
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Strip redundant indentation and indent the string
@@ -24,21 +24,11 @@ Strip redundant indentation and indent the string
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redent 2.0
-// Project: https://github.com/sindresorhus/redent#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

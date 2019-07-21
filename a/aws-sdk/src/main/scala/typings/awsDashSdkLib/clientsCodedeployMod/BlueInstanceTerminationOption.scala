@@ -11,7 +11,7 @@ trait BlueInstanceTerminationOption extends js.Object {
     */
   var action: js.UndefOr[InstanceAction] = js.undefined
   /**
-    * The number of minutes to wait after a successful blue/green deployment before terminating instances from the original environment. The maximum setting is 2880 minutes (2 days).
+    * For an Amazon EC2 deployment, the number of minutes to wait after a successful blue/green deployment before terminating instances from the original environment.  For an Amazon ECS deployment, the number of minutes before deleting the original (blue) task set. During an Amazon ECS deployment, CodeDeploy shifts traffic from the original (blue) task set to a replacement (green) task set.   The maximum setting is 2880 minutes (2 days). 
     */
   var terminationWaitTimeInMinutes: js.UndefOr[Duration] = js.undefined
 }

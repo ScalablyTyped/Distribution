@@ -107,7 +107,7 @@ trait QueryParameters extends js.Object {
     * Filter the query by a set of facets.
     * Default: []
     */
-  var facetFilters: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
+  var facetFilters: js.UndefOr[js.Array[java.lang.String | js.Array[java.lang.String]]] = js.undefined
   /**
     * Force faceting to be applied after de-duplication (via the Distinct setting).
     * When using the distinct setting in combination with faceting, facet counts may be higher than expected.
@@ -324,7 +324,7 @@ object QueryParameters {
     disableTypoToleranceOnAttributes: js.Array[java.lang.String] = null,
     distinct: scala.Double | scala.Boolean = null,
     exactOnSingleWordQuery: algoliasearchLib.algoliasearchLibStrings.attribute | algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.word = null,
-    facetFilters: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
+    facetFilters: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
     facetingAfterDistinct: js.UndefOr[scala.Boolean] = js.undefined,
     facets: js.Array[java.lang.String] = null,
     filters: java.lang.String = null,

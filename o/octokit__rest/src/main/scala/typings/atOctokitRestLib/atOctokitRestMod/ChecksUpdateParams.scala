@@ -12,7 +12,7 @@ trait ChecksUpdateParams extends js.Object {
   var actions: js.UndefOr[js.Array[ChecksUpdateParamsActions]] = js.undefined
   var check_run_id: scala.Double
   /**
-    * **Required if you provide `conclusion`**. The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    * The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
   var completed_at: js.UndefOr[java.lang.String] = js.undefined
   /**

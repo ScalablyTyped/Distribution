@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rn-fetch-blob"
-version := "1.2-dt-20190227Z-5682e8"
+version := "1.2-dt-20190717Z-5682e8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

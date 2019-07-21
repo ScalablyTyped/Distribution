@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "open-editor"
-version := "1.2-dt-20181218Z-8f083e"
+version := "2.0.1-9bd27c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "line-column-path" % "1.0-dt-20181214Z-34ee3e",
+  "org.scalablytyped" %%% "line-column-path" % "2.0.0-64a75a",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

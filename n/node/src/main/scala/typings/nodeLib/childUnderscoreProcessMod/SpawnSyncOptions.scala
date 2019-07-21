@@ -9,9 +9,7 @@ trait SpawnSyncOptions extends CommonOptions {
   var argv0: js.UndefOr[java.lang.String] = js.undefined
   var encoding: js.UndefOr[java.lang.String] = js.undefined
    // Not specified in the docs
-  var input: js.UndefOr[
-    java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView
-  ] = js.undefined
+  var input: js.UndefOr[java.lang.String | nodeLib.NodeJSNs.TypedArray | stdLib.DataView] = js.undefined
   var killSignal: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var maxBuffer: js.UndefOr[scala.Double] = js.undefined
   var shell: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
@@ -27,7 +25,7 @@ object SpawnSyncOptions {
     encoding: java.lang.String = null,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     gid: scala.Int | scala.Double = null,
-    input: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView = null,
+    input: java.lang.String | nodeLib.NodeJSNs.TypedArray | stdLib.DataView = null,
     killSignal: java.lang.String | scala.Double = null,
     maxBuffer: scala.Int | scala.Double = null,
     shell: scala.Boolean | java.lang.String = null,

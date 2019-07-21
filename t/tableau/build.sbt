@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tableau"
-version := "2.2-dt-20190212Z-4973cd"
+version := "2.2-dt-20190717Z-4973cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

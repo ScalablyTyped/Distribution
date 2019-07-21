@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nedb-logger"
-version := "1.8-dt-20180214Z-f83470"
+version := "1.8-dt-20190717Z-f83470"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

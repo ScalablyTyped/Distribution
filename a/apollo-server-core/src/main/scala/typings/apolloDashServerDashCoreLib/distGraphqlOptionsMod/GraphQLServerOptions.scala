@@ -10,7 +10,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
     apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   ] = js.undefined
   var cacheControl: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
@@ -19,13 +19,11 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
     apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode]
   ] = js.undefined
   var executor: js.UndefOr[
-    apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]]
+    apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]]
   ] = js.undefined
   var extensions: js.UndefOr[
     js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
   var fieldResolver: js.UndefOr[
@@ -45,6 +43,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
     ]
   ] = js.undefined
+  var reporting: js.UndefOr[scala.Boolean] = js.undefined
   var rootValue: js.UndefOr[
     (js.Function1[/* parsedQuery */ graphqlLib.languageAstMod.DocumentNode, TRootValue]) | TRootValue
   ] = js.undefined
@@ -58,16 +57,14 @@ object GraphQLServerOptions {
   def apply[TContext, TRootValue](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String] = null,
-    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
     context: TContext | js.Function0[scala.Nothing] = null,
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
-    executor: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
+    executor: apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
     extensions: js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
     formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = null,
@@ -77,6 +74,7 @@ object GraphQLServerOptions {
     plugins: js.Array[
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
     ] = null,
+    reporting: js.UndefOr[scala.Boolean] = js.undefined,
     rootValue: (js.Function1[/* parsedQuery */ graphqlLib.languageAstMod.DocumentNode, TRootValue]) | TRootValue = null,
     tracing: js.UndefOr[scala.Boolean] = js.undefined,
     validationRules: js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]] = null
@@ -96,6 +94,7 @@ object GraphQLServerOptions {
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions)
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(reporting)) __obj.updateDynamic("reporting")(reporting)
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing)
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)

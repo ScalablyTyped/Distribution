@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ebs/getSnapshot", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getSnapshot(): js.Promise[GetSnapshotResult] = js.native
-  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = js.native
-  def getSnapshot(args: GetSnapshotArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  def getSnapshot(): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
+  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
+  def getSnapshot(args: GetSnapshotArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
 }
 

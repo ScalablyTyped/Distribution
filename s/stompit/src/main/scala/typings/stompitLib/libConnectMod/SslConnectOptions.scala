@@ -17,7 +17,7 @@ object SslConnectOptions {
   @scala.inline
   def apply(
     ssl: stompitLib.stompitLibNumbers.`true`,
-    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[java.lang.String | stdLib.Uint8Array]) | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
       /* ctx */ nodeLib.tlsMod.SecureContext, 

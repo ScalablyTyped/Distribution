@@ -50,6 +50,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kosaku Kurino <https://github.com/kousaku-maron>
 //                 Leon Ng <https://github.com/iflp>
 //                 Dave Vedder <https://github.com/veddermatic>
+//                 Konstantin Azizov <https://github.com/g07cha>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

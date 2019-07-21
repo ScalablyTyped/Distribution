@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__component-compiler-utils
 
-Typings are for version 2.6.0
+Typings are for version 3.0.0
 
 ## Library description:
 Lower level utilities for compiling Vue single file components

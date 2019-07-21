@@ -30,21 +30,21 @@ object ^ extends js.Object {
     handler: atPulumiAwsLib.lambdaLambdaMixinsMod.EventHandler[E, R],
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): atPulumiAwsLib.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
-  def getFunction(args: atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionArgs): js.Promise[atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult] = js.native
+  def getFunction(args: atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionArgs): js.Promise[atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult] with atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult = js.native
   def getFunction(
     args: atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult] = js.native
-  def getInvocation(args: atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationArgs): js.Promise[atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult] = js.native
+  ): js.Promise[atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult] with atPulumiAwsLib.lambdaGetFunctionMod.GetFunctionResult = js.native
+  def getInvocation(args: atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationArgs): js.Promise[atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult] with atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult = js.native
   def getInvocation(
     args: atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult] = js.native
-  def getLayerVersion(args: atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionArgs): js.Promise[atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult] with atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult = js.native
+  def getLayerVersion(args: atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionArgs): js.Promise[atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult] with atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult = js.native
   def getLayerVersion(
     args: atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult] = js.native
+  ): js.Promise[atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult] with atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult = js.native
   def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ scala.Boolean = js.native
 }
 

@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object listrLibStrings {
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends listrLib.listrMod.ListrRendererValue[js.Any]
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends listrLib.listrMod.ListrRendererValue[js.Any]
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait verbose
+    extends listrLib.listrMod.ListrRendererValue[js.Any]
   
   @scala.inline
   def default: default = "default".asInstanceOf[default]

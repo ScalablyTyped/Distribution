@@ -129,6 +129,9 @@ object meteorLibStrings {
        with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
+  sealed trait `sha-256` extends js.Object
+  
+  @js.native
   sealed trait string
     extends meteorLib.MongoNs.BsonType
        with meteorLib.mongoMod.MongoNs.BsonType
@@ -205,6 +208,8 @@ object meteorLibStrings {
   def offline: offline = "offline".asInstanceOf[offline]
   @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
+  @scala.inline
+  def `sha-256`: `sha-256` = "sha-256".asInstanceOf[`sha-256`]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-installed-globally
 
-Typings are for version 0.1
+Typings are for version 0.2.0
 
 ## Library description:
 Check if your package was installed globally
@@ -24,7 +24,7 @@ Check if your package was installed globally
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,22 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-installed-globally 0.1
-// Project: https://github.com/sindresorhus/is-installed-globally#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if your package was installed globally.
+
+@example
+```
+import isInstalledGlobally = require('is-installed-globally');
+
+// With `npm install your-package`
+console.log(isInstalledGlobally);
+//=> false
+
+// With `npm install --global your-package`
+console.log(isInstalledGlobally);
+//=> true
+```
+*/
 
 ```
 

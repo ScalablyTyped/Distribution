@@ -6,6 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageGalleryItem extends js.Object {
+  var bulletClass: js.UndefOr[java.lang.String] = js.undefined
+  var bulletOnClick: js.UndefOr[
+    js.Function1[
+      /* hasItemItemIndexCurrentIndex */ reactDashImageDashGalleryLib.Anon_CurrentIndex, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var original: js.UndefOr[java.lang.String] = js.undefined
   var originalAlt: js.UndefOr[java.lang.String] = js.undefined
@@ -25,6 +32,8 @@ trait ReactImageGalleryItem extends js.Object {
 object ReactImageGalleryItem {
   @scala.inline
   def apply(
+    bulletClass: java.lang.String = null,
+    bulletOnClick: /* hasItemItemIndexCurrentIndex */ reactDashImageDashGalleryLib.Anon_CurrentIndex => scala.Unit = null,
     description: java.lang.String = null,
     original: java.lang.String = null,
     originalAlt: java.lang.String = null,
@@ -41,6 +50,8 @@ object ReactImageGalleryItem {
     thumbnailTitle: java.lang.String = null
   ): ReactImageGalleryItem = {
     val __obj = js.Dynamic.literal()
+    if (bulletClass != null) __obj.updateDynamic("bulletClass")(bulletClass)
+    if (bulletOnClick != null) __obj.updateDynamic("bulletOnClick")(js.Any.fromFunction1(bulletOnClick))
     if (description != null) __obj.updateDynamic("description")(description)
     if (original != null) __obj.updateDynamic("original")(original)
     if (originalAlt != null) __obj.updateDynamic("originalAlt")(originalAlt)

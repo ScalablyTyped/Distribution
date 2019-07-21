@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mnemonic-words"
-version := "1.0-dt-20190113Z-081e93"
+version := "1.1.0-081e93"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

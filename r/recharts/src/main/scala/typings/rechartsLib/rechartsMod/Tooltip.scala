@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("recharts", "Tooltip")
 @js.native
 class Tooltip ()
-  extends reactLib.reactMod.Component[TooltipProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[TooltipProps, BoxSize, js.Any]
 

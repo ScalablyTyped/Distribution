@@ -759,6 +759,7 @@ trait Routes extends js.Object {
   var `POST /repos/:owner/:repo/releases`: js.Tuple2[ReposCreateReleaseEndpoint, ReposCreateReleaseRequestOptions]
   var `POST /repos/:owner/:repo/statuses/:sha`: js.Tuple2[ReposCreateStatusEndpoint, ReposCreateStatusRequestOptions]
   var `POST /repos/:owner/:repo/transfer`: js.Tuple2[ReposTransferEndpoint, ReposTransferRequestOptions]
+  var `POST /repos/:template_owner/:template_repo/generate`: js.Tuple2[ReposCreateUsingTemplateEndpoint, ReposCreateUsingTemplateRequestOptions]
   var `POST /scim/v2/organizations/:org/Users`: js.Tuple2[
     ScimProvisionAndInviteUsersEndpoint | ScimProvisionInviteUsersEndpoint, 
     ScimProvisionAndInviteUsersRequestOptions | ScimProvisionInviteUsersRequestOptions

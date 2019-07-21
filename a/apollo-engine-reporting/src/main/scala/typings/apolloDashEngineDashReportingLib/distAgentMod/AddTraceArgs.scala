@@ -10,6 +10,7 @@ trait AddTraceArgs extends js.Object {
   var operationName: java.lang.String
   var queryHash: java.lang.String
   var queryString: js.UndefOr[java.lang.String] = js.undefined
+  var schemaHash: java.lang.String
   var trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace
 }
 
@@ -18,11 +19,12 @@ object AddTraceArgs {
   def apply(
     operationName: java.lang.String,
     queryHash: java.lang.String,
+    schemaHash: java.lang.String,
     trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace,
     documentAST: graphqlLib.languageAstMod.DocumentNode = null,
     queryString: java.lang.String = null
   ): AddTraceArgs = {
-    val __obj = js.Dynamic.literal(operationName = operationName, queryHash = queryHash, trace = trace)
+    val __obj = js.Dynamic.literal(operationName = operationName, queryHash = queryHash, schemaHash = schemaHash, trace = trace)
     if (documentAST != null) __obj.updateDynamic("documentAST")(documentAST)
     if (queryString != null) __obj.updateDynamic("queryString")(queryString)
     __obj.asInstanceOf[AddTraceArgs]

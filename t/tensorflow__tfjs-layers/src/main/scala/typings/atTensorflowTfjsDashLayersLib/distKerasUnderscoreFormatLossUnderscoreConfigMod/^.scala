@@ -1,0 +1,15 @@
+package typings
+package atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatLossUnderscoreConfigMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tensorflow/tfjs-layers/dist/keras_format/loss_config", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val lossOptions: js.Array[
+    atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.mean_squared_error | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.mean_absolute_error | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.mean_absolute_percentage_error | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.mean_squared_logarithmic_error | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.squared_hinge | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.hinge | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.categorical_hinge | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.logcosh | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.categorical_crossentropy | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.sparse_categorical_crossentropy | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.kullback_leibler_divergence | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.poisson | atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.cosine_proximity
+  ] = js.native
+}
+

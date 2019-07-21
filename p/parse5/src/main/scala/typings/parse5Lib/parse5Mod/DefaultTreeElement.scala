@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultTreeElement extends DefaultTreeParentNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- parse5Lib.parse5Mod.DefaultTreeParentNode because var conflicts: nodeName. Inlined childNodes */ trait DefaultTreeElement extends DefaultTreeChildNode {
   /**
     * List of element attributes.
     */
   var attrs: js.Array[Attribute]
   /**
+    * Child nodes.
+    */
+  var childNodes: js.Array[DefaultTreeNode]
+  /**
     * Element namespace.
     */
   var namespaceURI: java.lang.String
-  /**
-    * Parent node.
-    */
-  var parentNode: DefaultTreeParentNode
   /**
     * Element source code location info. Available if location info is enabled via {@link ParserOptions}.
     */

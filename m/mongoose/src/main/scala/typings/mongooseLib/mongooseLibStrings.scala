@@ -10,6 +10,9 @@ object mongooseLibStrings {
   sealed trait CastError extends js.Object
   
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait DivergentArrayError extends js.Object
   
   @js.native
@@ -170,6 +173,8 @@ object mongooseLibStrings {
   
   @scala.inline
   def CastError: CastError = "CastError".asInstanceOf[CastError]
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def DivergentArrayError: DivergentArrayError = "DivergentArrayError".asInstanceOf[DivergentArrayError]
   @scala.inline

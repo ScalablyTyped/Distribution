@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semver-regex"
-version := "2.0-dt-20190115Z-0b558c"
+version := "3.1.0-0b558c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

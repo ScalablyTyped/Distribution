@@ -19,6 +19,7 @@ package object restifyMod {
     java.lang.String | nodeLib.Buffer | scala.Null
   ]
   type Formatters = org.scalablytyped.runtime.StringDictionary[Formatter]
+  type Next = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
   type RequestHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ Next, js.Any]
   type RequestHandlerType = RequestHandler | js.Array[RequestHandler]
 }

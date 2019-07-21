@@ -11,7 +11,7 @@ trait EntityRecognizerMetadata extends js.Object {
     */
   var EntityTypes: js.UndefOr[EntityRecognizerMetadataEntityTypesList] = js.undefined
   /**
-    *  Detailed information about the accuracy of an entity recognizer.
+    * Detailed information about the accuracy of an entity recognizer.
     */
   var EvaluationMetrics: js.UndefOr[EntityRecognizerEvaluationMetrics] = js.undefined
   /**

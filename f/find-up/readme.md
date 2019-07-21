@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-up
 
-Typings are for version 2.1
+Typings are for version 4.1.0
 
 ## Library description:
 Find a file or directory by walking up parent directories
@@ -24,21 +24,11 @@ Find a file or directory by walking up parent directories
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for find-up 2.1
-// Project: https://github.com/sindresorhus/find-up#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

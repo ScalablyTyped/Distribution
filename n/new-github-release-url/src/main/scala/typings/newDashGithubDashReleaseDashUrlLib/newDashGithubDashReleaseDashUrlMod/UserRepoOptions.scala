@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait UserRepoOptions extends BaseOptions {
   /**
-    * GitHub repo.
-    */
-  var repo: java.lang.String
+  		GitHub repo.
+  		*/
+  val repo: java.lang.String
   /**
-    * GitHub username or organization.
-    */
-  var user: java.lang.String
+  		GitHub username or organization.
+  		*/
+  val user: java.lang.String
 }
 
 object UserRepoOptions {

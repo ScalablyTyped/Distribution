@@ -39,11 +39,6 @@ abstract class Container protected ()
   var outputNames: js.Array[java.lang.String] = js.native
   var outputs: js.Array[atTensorflowTfjsDashLayersLib.distEngineTopologyMod.SymbolicTensor] = js.native
   /**
-    * Util shared between different serialization methods.
-    * @returns LayersModel config with Keras version information added.
-    */
-  var updatedConfig: js.Any = js.native
-  /**
     * Retrieves a layer based on either its name (unique) or index.
     *
     * Indices are based on order of horizontal graph traversal (bottom-up).
@@ -139,6 +134,11 @@ abstract class Container protected ()
   def toJSON(): java.lang.String | atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatTypesMod.PyJsonDict = js.native
   def toJSON(unused: js.Any): java.lang.String | atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatTypesMod.PyJsonDict = js.native
   def toJSON(unused: js.Any, returnString: scala.Boolean): java.lang.String | atTensorflowTfjsDashLayersLib.distKerasUnderscoreFormatTypesMod.PyJsonDict = js.native
+  /**
+    * Util shared between different serialization methods.
+    * @returns LayersModel config with Keras version information added.
+    */
+  /* protected */ def updatedConfig(): atTensorflowTfjsDashCoreLib.distSerializationMod.ConfigDict = js.native
 }
 
 /* static members */

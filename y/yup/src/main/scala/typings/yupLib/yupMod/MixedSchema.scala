@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MixedSchema[T] extends Schema[T] {
+  def concat[U](schema: MixedSchema[U]): MixedSchema[T | U] = js.native
   def notRequired(): MixedSchema[js.UndefOr[T]] = js.native
   def nullable(): MixedSchema[T | scala.Null] = js.native
   def nullable(isNullable: scala.Boolean): MixedSchema[T] = js.native

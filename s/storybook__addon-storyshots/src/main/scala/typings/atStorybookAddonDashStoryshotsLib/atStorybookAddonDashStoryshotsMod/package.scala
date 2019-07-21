@@ -12,6 +12,11 @@ package object atStorybookAddonDashStoryshotsMod {
     /* options */ js.UndefOr[SnapshotOptions], 
     js.UndefOr[scala.Unit | js.Promise[scala.Unit]]
   ]
+  type SnapshotOptions = SnapshotOptionsObject | SnapshotOptionsFn
+  type SnapshotOptionsFn = js.Function1[
+    /* story */ atStorybookReactLib.atStorybookReactMod.StoryObject, 
+    SnapshotOptionsObject
+  ]
   type Test = js.Function1[
     /* options */ atStorybookAddonDashStoryshotsLib.Anon_Context, 
     js.UndefOr[scala.Unit | js.Promise[scala.Unit]]

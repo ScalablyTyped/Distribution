@@ -1,7 +1,7 @@
 
 # Scala.js typings for trouter
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 🐟 A fast, small-but-mighty, familiar ~fish~ router
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for trouter 3.0
+// Type definitions for trouter 3.1
 // Project: https://github.com/lukeed/trouter
 // Definitions by: Markus Lanz <https://github.com/stahlstift>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

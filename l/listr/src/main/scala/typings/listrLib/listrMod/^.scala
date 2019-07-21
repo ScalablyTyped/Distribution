@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("listr", JSImport.Namespace)
 @js.native
-class ^ () extends Listr {
-  def this(options: ListrOptions) = this()
-  def this(tasks: js.Array[ListrTask]) = this()
-  def this(tasks: js.Array[ListrTask], options: ListrOptions) = this()
+class ^[Ctx] () extends Listr[Ctx] {
+  def this(options: ListrOptions[Ctx]) = this()
+  def this(tasks: js.Array[ListrTask[Ctx]]) = this()
+  def this(tasks: js.Array[ListrTask[Ctx]], options: ListrOptions[Ctx]) = this()
 }
 

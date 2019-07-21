@@ -16,6 +16,39 @@ object optionNs extends js.Object {
     def this(options: js.Object, parent: yandexDashMapsLib.yandexDashMapsMod.IOptionManager, name: java.lang.String) = this()
     /* CompleteClass */
     override var events: yandexDashMapsLib.yandexDashMapsMod.IEventManager = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: java.lang.String,
+      callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit]
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object
+    ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[java.lang.String] | java.lang.String],
+      callback: js.Function1[yandexDashMapsLib.yandexDashMapsMod.IEvent | js.Object, scala.Unit],
+      context: js.Object,
+      priority: scala.Double
+    ): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: js.Object): this.type = js.native
+    def fire(`type`: java.lang.String, eventobject: yandexDashMapsLib.yandexDashMapsMod.IEvent): this.type = js.native
+    def group(): yandexDashMapsLib.yandexDashMapsMod.IEventGroup = js.native
     def remove(
       types: java.lang.String,
       callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.yandexDashMapsMod.IEvent, scala.Unit]

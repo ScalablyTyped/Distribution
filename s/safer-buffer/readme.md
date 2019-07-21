@@ -1,0 +1,44 @@
+
+# Scala.js typings for safer-buffer
+
+Typings are for version 2.1
+
+## Library description:
+Modern Buffer API polyfill without footguns
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | safer-buffer |
+| Keywords           | - |
+| # releases         | 9 |
+| # dependents       | 34 |
+| # downloads        | 417229480 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/ChALkeR/safer-buffer#readme)
+- [Bugs](https://github.com/ChALkeR/safer-buffer/issues)
+- [Repository](https://github.com/ChALkeR/safer-buffer)
+- [Npm](https://www.npmjs.com/package/safer-buffer)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Type definitions for safer-buffer 2.1
+// Project: https://github.com/ChALkeR/safer-buffer#readme
+// Definitions by: Florian Keller <https://github.com/ffflorian>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
+```
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DivIconOptions extends BaseIconOptions {
   var bgPos: js.UndefOr[PointExpression] = js.undefined
-  var html: js.UndefOr[java.lang.String | leafletLib.leafletLibNumbers.`false`] = js.undefined
+  var html: js.UndefOr[java.lang.String | stdLib.HTMLElement | leafletLib.leafletLibNumbers.`false`] = js.undefined
 }
 
 object DivIconOptions {
@@ -16,7 +16,7 @@ object DivIconOptions {
     attribution: java.lang.String = null,
     bgPos: PointExpression = null,
     className: java.lang.String = null,
-    html: java.lang.String | leafletLib.leafletLibNumbers.`false` = null,
+    html: java.lang.String | stdLib.HTMLElement | leafletLib.leafletLibNumbers.`false` = null,
     iconAnchor: PointExpression = null,
     iconRetinaUrl: java.lang.String = null,
     iconSize: PointExpression = null,

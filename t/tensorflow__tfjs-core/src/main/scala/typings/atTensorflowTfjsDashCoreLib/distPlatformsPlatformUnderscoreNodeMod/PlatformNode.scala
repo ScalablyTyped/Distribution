@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PlatformNode ()
   extends atTensorflowTfjsDashCoreLib.distPlatformsPlatformMod.Platform {
-  var textDecoder: js.Any = js.native
   var textEncoder: js.Any = js.native
+  var util: js.Any = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for baseui
 
-Typings are for version 8.5.1
+Typings are for version 8.8.0
 
 ## Library description:
 A React Component library implementing the Base design language

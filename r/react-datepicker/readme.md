@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-datepicker
 
-Typings are for version 2.3
+Typings are for version 2.8
 
 ## Library description:
 A simple and reusable datepicker component for React
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-datepicker 2.3
+// Type definitions for react-datepicker 2.8
 // Project: https://github.com/Hacker0x01/react-datepicker
 // Definitions by: Rajab Shakirov <https://github.com/radziksh>,
 //                 Andrey Balokha <https://github.com/andrewBalekha>,
@@ -48,6 +48,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Jake Boone <https://github.com/jakeboone02>
 //                 Roman Nuritdinov <https://github.com/Ky6uk>
 //                 Avi Klaiman <https://github.com/aviklai>
+//                 Naoki Sekiguchi <https://github.com/seckie>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

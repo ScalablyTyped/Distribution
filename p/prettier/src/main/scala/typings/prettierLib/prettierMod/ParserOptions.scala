@@ -29,6 +29,7 @@ object ParserOptions {
     plugins: js.Array[java.lang.String | Plugin],
     printWidth: scala.Double,
     proseWrap: scala.Boolean | prettierLib.prettierLibStrings.always | prettierLib.prettierLibStrings.never | prettierLib.prettierLibStrings.preserve,
+    quoteProps: prettierLib.prettierLibStrings.`as-needed` | prettierLib.prettierLibStrings.consistent | prettierLib.prettierLibStrings.preserve,
     rangeEnd: scala.Double,
     rangeStart: scala.Double,
     requirePragma: scala.Boolean,
@@ -38,7 +39,7 @@ object ParserOptions {
     trailingComma: prettierLib.prettierLibStrings.none | prettierLib.prettierLibStrings.es5 | prettierLib.prettierLibStrings.all,
     useTabs: scala.Boolean
   ): ParserOptions = {
-    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing, endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath, htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma, jsxBracketSameLine = jsxBracketSameLine, jsxSingleQuote = jsxSingleQuote, locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), originalText = originalText, parser = parser.asInstanceOf[js.Any], plugins = plugins, printWidth = printWidth, proseWrap = proseWrap.asInstanceOf[js.Any], rangeEnd = rangeEnd, rangeStart = rangeStart, requirePragma = requirePragma, semi = semi, singleQuote = singleQuote, tabWidth = tabWidth, trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs)
+    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing, endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath, htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma, jsxBracketSameLine = jsxBracketSameLine, jsxSingleQuote = jsxSingleQuote, locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), originalText = originalText, parser = parser.asInstanceOf[js.Any], plugins = plugins, printWidth = printWidth, proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd, rangeStart = rangeStart, requirePragma = requirePragma, semi = semi, singleQuote = singleQuote, tabWidth = tabWidth, trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs)
   
     __obj.asInstanceOf[ParserOptions]
   }

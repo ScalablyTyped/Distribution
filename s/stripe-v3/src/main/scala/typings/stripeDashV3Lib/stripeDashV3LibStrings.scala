@@ -380,6 +380,9 @@ object stripeDashV3LibStrings {
   sealed trait payment_method extends js.Object
   
   @js.native
+  sealed trait paymentmethod extends js.Object
+  
+  @js.native
   sealed trait pending extends js.Object
   
   @js.native
@@ -779,6 +782,8 @@ object stripeDashV3LibStrings {
   def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
   @scala.inline
   def payment_method: payment_method = "payment_method".asInstanceOf[payment_method]
+  @scala.inline
+  def paymentmethod: paymentmethod = "paymentmethod".asInstanceOf[paymentmethod]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline

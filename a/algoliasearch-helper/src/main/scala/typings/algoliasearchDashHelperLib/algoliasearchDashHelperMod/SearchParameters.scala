@@ -23,6 +23,8 @@ class SearchParameters () extends QueryParameters {
   var exactOnSingleWordQuery_SearchParameters: js.UndefOr[
     algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.none | algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.attribute | algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.word
   ] = js.native
+  @JSName("facetFilters")
+  var facetFilters_SearchParameters: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.native
   @JSName("facetsExcludes")
   var facetsExcludes_SearchParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.native
   @JSName("facetsRefinements")

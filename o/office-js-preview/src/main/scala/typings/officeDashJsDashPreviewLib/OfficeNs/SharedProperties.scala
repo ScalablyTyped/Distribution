@@ -28,9 +28,18 @@ trait SharedProperties extends js.Object {
     */
   var owner: java.lang.String
   /**
-    * The remote REST URL related to the owner’s mailbox.
+    * The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
+    * 
+    * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
-  var restUrl: java.lang.String
+  var targetMailbox: java.lang.String
+  /**
+    * The REST API's base URL (currently https://outlook.office.com/api).
+    * Use with targetMailbox to construct REST operation's URL.
+    * 
+    * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+    */
+  var targetRestUrl: java.lang.String
 }
 
 object SharedProperties {
@@ -38,9 +47,10 @@ object SharedProperties {
   def apply(
     delegatePermissions: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions,
     owner: java.lang.String,
-    restUrl: java.lang.String
+    targetMailbox: java.lang.String,
+    targetRestUrl: java.lang.String
   ): SharedProperties = {
-    val __obj = js.Dynamic.literal(delegatePermissions = delegatePermissions, owner = owner, restUrl = restUrl)
+    val __obj = js.Dynamic.literal(delegatePermissions = delegatePermissions, owner = owner, targetMailbox = targetMailbox, targetRestUrl = targetRestUrl)
   
     __obj.asInstanceOf[SharedProperties]
   }

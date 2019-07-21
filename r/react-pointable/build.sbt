@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-pointable"
-version := "1.2-dt-20180806Z-c3c3c9"
+version := "1.2-dt-20190717Z-c3c3c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

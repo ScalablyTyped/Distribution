@@ -47,6 +47,10 @@ trait ReposCreateForAuthenticatedUserParams extends js.Object {
     */
   var homepage: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Either `true` to make this repo available as a template repository or `false` to prevent it.
+    */
+  var is_template: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Choose an [open source license template](https://choosealicense.com/) that best suits your needs, and then use the [license keyword](https://help.github.com/articles/licensing-a-repository/#searching-github-by-license-type) as the `license_template` string. For example, "mit" or "mpl-2.0".
     */
   var license_template: js.UndefOr[java.lang.String] = js.undefined
@@ -78,6 +82,7 @@ object ReposCreateForAuthenticatedUserParams {
     has_projects: js.UndefOr[scala.Boolean] = js.undefined,
     has_wiki: js.UndefOr[scala.Boolean] = js.undefined,
     homepage: java.lang.String = null,
+    is_template: js.UndefOr[scala.Boolean] = js.undefined,
     license_template: java.lang.String = null,
     `private`: js.UndefOr[scala.Boolean] = js.undefined,
     team_id: scala.Int | scala.Double = null
@@ -93,6 +98,7 @@ object ReposCreateForAuthenticatedUserParams {
     if (!js.isUndefined(has_projects)) __obj.updateDynamic("has_projects")(has_projects)
     if (!js.isUndefined(has_wiki)) __obj.updateDynamic("has_wiki")(has_wiki)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (!js.isUndefined(is_template)) __obj.updateDynamic("is_template")(is_template)
     if (license_template != null) __obj.updateDynamic("license_template")(license_template)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     if (team_id != null) __obj.updateDynamic("team_id")(team_id.asInstanceOf[js.Any])

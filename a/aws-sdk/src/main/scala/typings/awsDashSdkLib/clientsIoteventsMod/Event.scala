@@ -11,7 +11,7 @@ trait Event extends js.Object {
     */
   var actions: js.UndefOr[Actions] = js.undefined
   /**
-    * [Optional] The Boolean expression that when TRUE causes the actions to be performed. If not present, the actions are performed (=TRUE); if the expression result is not a Boolean value the actions are NOT performed (=FALSE).
+    * [Optional] The Boolean expression that when TRUE causes the "actions" to be performed. If not present, the actions are performed (=TRUE); if the expression result is not a Boolean value, the actions are NOT performed (=FALSE).
     */
   var condition: js.UndefOr[Condition] = js.undefined
   /**

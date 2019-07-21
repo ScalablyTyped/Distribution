@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "global-dirs"
-version := "0.1-dt-20181212Z-262085"
+version := "1.0.0-7673f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

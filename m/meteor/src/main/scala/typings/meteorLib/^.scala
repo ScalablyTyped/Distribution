@@ -11,6 +11,7 @@ object ^ extends js.Object {
   var MailComposer: MailComposerStatic = js.native
   var ReactiveVar: ReactiveVarStatic = js.native
   var Template: TemplateStatic = js.native
+  var console: stdLib.Console = js.native
   def check(value: js.Any, pattern: js.Any): scala.Unit = js.native
   def execFileAsync(command: java.lang.String): js.Any = js.native
   def execFileAsync(command: java.lang.String, args: js.Array[_]): js.Any = js.native

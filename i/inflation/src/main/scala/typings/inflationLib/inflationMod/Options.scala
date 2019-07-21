@@ -19,7 +19,7 @@ object Options {
   @scala.inline
   def apply(
     chunkSize: scala.Int | scala.Double = null,
-    dictionary: nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
+    dictionary: nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
     finishFlush: scala.Int | scala.Double = null,
     flush: scala.Int | scala.Double = null,
     gzip: inflationLib.inflationLibStrings.deflate | inflationLib.inflationLibStrings.gzip | inflationLib.inflationLibStrings.identity = null,

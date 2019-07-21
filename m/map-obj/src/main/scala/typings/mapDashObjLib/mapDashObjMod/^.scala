@@ -8,13 +8,28 @@ import scala.scalajs.js.annotation._
 @JSImport("map-obj", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[O /* <: js.Object */, T /* <: java.lang.String */](source: O, mapper: Mapper[O, T, _], options: DeepOptions): js.Object = js.native
-  def apply[O /* <: js.Object */, T /* <: java.lang.String */, U](source: O, mapper: Mapper[O, T, U]): /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in T ]: U}
+  def apply[SourceObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */, MappedObjectKeyType /* <: java.lang.String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType]
+  ): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in MappedObjectKeyType ]: MappedObjectValueType}
     */ mapDashObjLib.mapDashObjLibStrings.`_backtick^_backtick` with js.Any = js.native
-  def apply[O /* <: js.Object */, T /* <: java.lang.String */, U](source: O, mapper: Mapper[O, T, U], options: Options): /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in T ]: U}
+  def apply[SourceObjectType /* <: js.Object */, MappedObjectKeyType /* <: java.lang.String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: DeepOptions
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def apply[SourceObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */, MappedObjectKeyType /* <: java.lang.String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: Options
+  ): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in MappedObjectKeyType ]: MappedObjectValueType}
     */ mapDashObjLib.mapDashObjLibStrings.`_backtick^_backtick` with js.Any = js.native
-  def apply[O /* <: js.Object */, O2 /* <: js.Object */, T /* <: java.lang.String */, U](source: O, mapper: Mapper[O, T, U], options: TargetOptions[O2]): O2 with mapDashObjLib.mapDashObjLibStrings.`_backtick^_backtick` with js.Any = js.native
+  def apply[SourceObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */, TargetObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */, MappedObjectKeyType /* <: java.lang.String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: TargetOptions[TargetObjectType]
+  ): TargetObjectType with mapDashObjLib.mapDashObjLibStrings.`_backtick^_backtick` with js.Any = js.native
 }
 

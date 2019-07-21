@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait OnInputLifecycle extends js.Object {
   /**
-    * Specifies the actions performed when the condition evaluates to TRUE.
+    * Specifies the actions performed when the "condition" evaluates to TRUE.
     */
   var events: js.UndefOr[Events] = js.undefined
   /**
-    * Specifies the actions performed and the next state entered when a condition evaluates to TRUE.
+    * Specifies the actions performed, and the next state entered, when a "condition" evaluates to TRUE.
     */
   var transitionEvents: js.UndefOr[TransitionEvents] = js.undefined
 }

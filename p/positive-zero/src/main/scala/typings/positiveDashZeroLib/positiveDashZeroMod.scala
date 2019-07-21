@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("positive-zero", JSImport.Namespace)
 @js.native
 object positiveDashZeroMod extends js.Object {
-  def apply(input: scala.Double): scala.Boolean = js.native
+  def apply(number: scala.Double): scala.Boolean = js.native
 }
 

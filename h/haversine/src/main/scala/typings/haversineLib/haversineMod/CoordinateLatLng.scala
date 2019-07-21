@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CoordinateLatLng extends _Coordinate {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- haversineLib.haversineMod._ParamType because Already inherited */ trait CoordinateLatLng extends _Coordinate {
   var lat: scala.Double
   var lng: scala.Double
 }

@@ -12,8 +12,8 @@ object ^ extends js.Object {
   def processGraphQLRequest[TContext](
     config: GraphQLRequestPipelineConfig[TContext],
     requestContext: Mutable[
-      apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
+      apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLRequestContext[TContext]
     ]
-  ): js.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
+  ): js.Promise[apolloDashServerDashTypesLib.apolloDashServerDashTypesMod.GraphQLResponse] = js.native
 }
 

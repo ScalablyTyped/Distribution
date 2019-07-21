@@ -1,6 +1,7 @@
 
 # Scala.js typings for strip-json-comments
 
+Typings are for version 3.0.1
 
 ## Library description:
 Strip comments from JSON. Lets you use comments in your JSON files!
@@ -23,21 +24,11 @@ Strip comments from JSON. Lets you use comments in your JSON files!
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for strip-json-comments
-// Project: https://github.com/sindresorhus/strip-json-comments
-// Definitions by: Dylan R. E. Moonfire <https://github.com/dmoonfire>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

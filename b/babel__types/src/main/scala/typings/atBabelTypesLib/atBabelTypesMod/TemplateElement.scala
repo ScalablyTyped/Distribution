@@ -11,7 +11,7 @@ trait TemplateElement
   var tail: scala.Boolean
   @JSName("type")
   var type_TemplateElement: atBabelTypesLib.atBabelTypesLibStrings.TemplateElement
-  var value: js.Any
+  var value: atBabelTypesLib.Anon_Cooked
 }
 
 object TemplateElement {
@@ -19,7 +19,7 @@ object TemplateElement {
   def apply(
     tail: scala.Boolean,
     `type`: atBabelTypesLib.atBabelTypesLibStrings.TemplateElement,
-    value: js.Any,
+    value: atBabelTypesLib.Anon_Cooked,
     end: scala.Int | scala.Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,

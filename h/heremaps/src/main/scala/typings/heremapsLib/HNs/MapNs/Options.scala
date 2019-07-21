@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * @property margin {number=} - The size in pixel of the supplemental area to render for each side of the map
   * @property padding {H.map.ViewPort.Padding=} - The padding in pixels for each side of the map
   * @property fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or padding has been changed, default is true
+  * @property noWrap {boolean=} - Indicates whether to wrap the world on longitude axes. When set to true, only one world will be rendered. Default is false, multiple worlds are rendered.
   */
 trait Options extends js.Object {
   var autoColor: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,6 +32,7 @@ trait Options extends js.Object {
   var imprint: js.UndefOr[heremapsLib.HNs.mapNs.ImprintNs.Options] = js.undefined
   var layers: js.UndefOr[js.Array[heremapsLib.HNs.mapNs.layerNs.Layer]] = js.undefined
   var margin: js.UndefOr[scala.Double] = js.undefined
+  var noWrap: js.UndefOr[scala.Boolean] = js.undefined
   var padding: js.UndefOr[heremapsLib.HNs.mapNs.ViewPortNs.Padding] = js.undefined
   var pixelRatio: js.UndefOr[scala.Double] = js.undefined
   var renderBaseBackground: js.UndefOr[BackgroundRange] = js.undefined
@@ -48,6 +50,7 @@ object Options {
     imprint: heremapsLib.HNs.mapNs.ImprintNs.Options = null,
     layers: js.Array[heremapsLib.HNs.mapNs.layerNs.Layer] = null,
     margin: scala.Int | scala.Double = null,
+    noWrap: js.UndefOr[scala.Boolean] = js.undefined,
     padding: heremapsLib.HNs.mapNs.ViewPortNs.Padding = null,
     pixelRatio: scala.Int | scala.Double = null,
     renderBaseBackground: BackgroundRange = null,
@@ -62,6 +65,7 @@ object Options {
     if (imprint != null) __obj.updateDynamic("imprint")(imprint)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWrap)) __obj.updateDynamic("noWrap")(noWrap)
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
     if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground)

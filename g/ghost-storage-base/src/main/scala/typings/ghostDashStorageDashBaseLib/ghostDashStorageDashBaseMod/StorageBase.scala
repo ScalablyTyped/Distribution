@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ghost-storage-base", "StorageBase")
 @js.native
-abstract class StorageBase () extends js.Object {
+trait StorageBase extends js.Object {
   def delete(fileName: java.lang.String): js.Promise[scala.Boolean] = js.native
   def delete(fileName: java.lang.String, targetDir: java.lang.String): js.Promise[scala.Boolean] = js.native
   def exists(fileName: java.lang.String): js.Promise[scala.Boolean] = js.native

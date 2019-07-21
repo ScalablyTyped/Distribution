@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var editor: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		Name, command, or binary path of the editor.
+  		Default: [Auto-detected](https://github.com/sindresorhus/env-editor).
+  		__Only use this option if you really have to.__ Can be useful if you want to force a specific editor or implement your own auto-detection.
+  		*/
+  val editor: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Options {

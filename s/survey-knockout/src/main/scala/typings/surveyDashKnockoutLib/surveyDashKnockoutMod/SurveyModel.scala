@@ -93,8 +93,10 @@ class SurveyModel ()
   var currentPageNo: scala.Double = js.native
   /**
     * An object that stores the survey results/data. You may set it directly as { 'question name': questionValue, ... }
+    * Note: If you are setting the data after creatig the survey, you may need to set the currentPageNo to 0, if you are using visibleIf properties for questions/pages/panels to ensure that you are starting from the first page.
     * @see setValue
     * @see getValue
+    * @see currentPageNo
     */
   var data: js.Any = js.native
   /**
@@ -1207,6 +1209,10 @@ class SurveyModel ()
   override def getTextProcessor(): ITextProcessor = js.native
   /* protected */ def getUnbindValue(value: js.Any): js.Any = js.native
   def getUpdatedQuestionTitle(question: IQuestion, title: java.lang.String): java.lang.String = js.native
+  /**
+    * Return the array of locales that used in the current survey
+    */
+  def getUsedLocales(): js.Array[java.lang.String] = js.native
   /* CompleteClass */
   override def getValue(name: java.lang.String): js.Any = js.native
   /**

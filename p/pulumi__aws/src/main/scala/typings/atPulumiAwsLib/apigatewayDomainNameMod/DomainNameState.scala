@@ -73,6 +73,10 @@ trait DomainNameState extends js.Object {
     * The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
     */
   val regionalZoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+    */
+  val securityPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object DomainNameState {
@@ -91,7 +95,8 @@ object DomainNameState {
     regionalCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     regionalCertificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     regionalDomainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    regionalZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    regionalZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DomainNameState = {
     val __obj = js.Dynamic.literal()
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
@@ -108,6 +113,7 @@ object DomainNameState {
     if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
     if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName.asInstanceOf[js.Any])
     if (regionalZoneId != null) __obj.updateDynamic("regionalZoneId")(regionalZoneId.asInstanceOf[js.Any])
+    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainNameState]
   }
 }

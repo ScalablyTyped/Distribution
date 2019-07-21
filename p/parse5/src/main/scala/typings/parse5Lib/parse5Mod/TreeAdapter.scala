@@ -108,7 +108,7 @@ trait TreeAdapter extends js.Object {
     *
     * @param node - Node.
     */
-  def getParentNode(node: Node): ParentNode
+  def getParentNode(node: ChildNode): ParentNode
   /**
     * Returns the given element's tag name.
     *
@@ -223,7 +223,7 @@ object TreeAdapter {
     getDocumentTypeNodeSystemId: DocumentType => java.lang.String,
     getFirstChild: ParentNode => Node,
     getNamespaceURI: Element => java.lang.String,
-    getParentNode: Node => ParentNode,
+    getParentNode: ChildNode => ParentNode,
     getTagName: Element => java.lang.String,
     getTemplateContent: Element => DocumentFragment,
     getTextNodeContent: TextNode => java.lang.String,

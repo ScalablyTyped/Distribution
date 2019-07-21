@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object readDashPkgMod {
-  type Package = normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.Package
+  type NormalizedPackageJson = PackageJson with normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.Package
+  type PackageJson = typeDashFestLib.sourcePackageDashJsonMod.PackageJson
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "term-size"
-version := "1.2-dt-20181215Z-de7002"
+version := "2.1.0-984dbf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

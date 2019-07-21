@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("recharts", "Legend")
 @js.native
 class Legend ()
-  extends reactLib.reactMod.Component[LegendProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[LegendProps, BoxSize, js.Any]
 

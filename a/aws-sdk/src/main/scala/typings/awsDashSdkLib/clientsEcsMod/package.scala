@@ -37,6 +37,8 @@ package object clientsEcsMod {
   */
   type ClusterField = _ClusterField | java.lang.String
   type ClusterFieldList = js.Array[ClusterField]
+  type ClusterSettingName = awsDashSdkLib.awsDashSdkLibStrings.containerInsights | java.lang.String
+  type ClusterSettings = js.Array[ClusterSetting]
   type Clusters = js.Array[Cluster]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.EC2
@@ -212,6 +214,7 @@ package object clientsEcsMod {
     - awsDashSdkLib.awsDashSdkLibStrings.taskLongArnFormat
     - awsDashSdkLib.awsDashSdkLibStrings.containerInstanceLongArnFormat
     - awsDashSdkLib.awsDashSdkLibStrings.awsvpcTrunking
+    - awsDashSdkLib.awsDashSdkLibStrings.containerInsights
     - java.lang.String
   */
   type SettingName = _SettingName | java.lang.String

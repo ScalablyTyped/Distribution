@@ -15,7 +15,7 @@ trait ExecutePolicyType extends js.Object {
     */
   var BreachThreshold: js.UndefOr[MetricScale] = js.undefined
   /**
-    * Indicates whether Amazon EC2 Auto Scaling waits for the cooldown period to complete before executing the policy. This parameter is not supported if the policy type is StepScaling. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
+    * Indicates whether Amazon EC2 Auto Scaling waits for the cooldown period to complete before executing the policy. This parameter is not supported if the policy type is StepScaling or TargetTrackingScaling. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
     */
   var HonorCooldown: js.UndefOr[HonorCooldown] = js.undefined
   /**

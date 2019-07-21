@@ -5,22 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SyncOptions extends CommonOptions {
+trait SyncOptions[EncodingType] extends CommonOptions[EncodingType] {
   /**
-    * Write some input to the `stdin` of your binary.
-    * Streams are not allowed when using the synchronous methods.
-    */
-  var input: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
+  		Write some input to the `stdin` of your binary.
+  		*/
+  val input: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
 }
 
 object SyncOptions {
   @scala.inline
-  def apply(
+  def apply[EncodingType](
     argv0: java.lang.String = null,
+    buffer: js.UndefOr[scala.Boolean] = js.undefined,
     cleanup: js.UndefOr[scala.Boolean] = js.undefined,
     cwd: java.lang.String = null,
     detached: js.UndefOr[scala.Boolean] = js.undefined,
-    encoding: java.lang.String = null,
+    encoding: EncodingType = null,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     extendEnv: js.UndefOr[scala.Boolean] = js.undefined,
     gid: scala.Int | scala.Double = null,
@@ -31,21 +31,22 @@ object SyncOptions {
     preferLocal: js.UndefOr[scala.Boolean] = js.undefined,
     reject: js.UndefOr[scala.Boolean] = js.undefined,
     shell: scala.Boolean | java.lang.String = null,
-    stderr: StdIOOption = null,
-    stdin: StdIOOption = null,
-    stdio: execaLib.execaLibStrings.pipe | execaLib.execaLibStrings.ignore | execaLib.execaLibStrings.inherit | js.Array[StdIOOption] = null,
-    stdout: StdIOOption = null,
-    stripEof: js.UndefOr[scala.Boolean] = js.undefined,
+    stderr: StdioOption = null,
+    stdin: StdioOption = null,
+    stdio: execaLib.execaLibStrings.pipe | execaLib.execaLibStrings.ignore | execaLib.execaLibStrings.inherit | js.Array[StdioOption] = null,
+    stdout: StdioOption = null,
+    stripFinalNewline: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
     uid: scala.Int | scala.Double = null,
     windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
-  ): SyncOptions = {
+  ): SyncOptions[EncodingType] = {
     val __obj = js.Dynamic.literal()
     if (argv0 != null) __obj.updateDynamic("argv0")(argv0)
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
     if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env)
     if (!js.isUndefined(extendEnv)) __obj.updateDynamic("extendEnv")(extendEnv)
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
@@ -60,11 +61,11 @@ object SyncOptions {
     if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripEof)) __obj.updateDynamic("stripEof")(stripEof)
+    if (!js.isUndefined(stripFinalNewline)) __obj.updateDynamic("stripFinalNewline")(stripFinalNewline)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments)
-    __obj.asInstanceOf[SyncOptions]
+    __obj.asInstanceOf[SyncOptions[EncodingType]]
   }
 }
 

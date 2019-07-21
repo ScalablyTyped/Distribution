@@ -121,11 +121,11 @@ object cognitoNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomainArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getUserPools(args: atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsArgs): js.Promise[atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult] = js.native
+  def getUserPools(args: atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsArgs): js.Promise[atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult] with atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult = js.native
   def getUserPools(
     args: atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult] with atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult = js.native
   /* static members */
   @js.native
   object IdentityPool extends js.Object {

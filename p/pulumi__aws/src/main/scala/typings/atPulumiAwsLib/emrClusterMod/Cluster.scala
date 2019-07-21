@@ -119,7 +119,7 @@ class Cluster protected ()
     */
   val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
-    * Switch on/off termination protection (default is off)
+    * Switch on/off termination protection (default is `false`, except when using multiple master nodes). Before attempting to destroy the resource when termination protection is enabled, this configuration must be applied with its value set to `false`.
     */
   val terminationProtection: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**

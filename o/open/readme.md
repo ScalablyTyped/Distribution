@@ -1,7 +1,7 @@
 
 # Scala.js typings for open
 
-Typings are for version 6.1
+Typings are for version 6.4.0
 
 ## Library description:
 Open stuff like URLs, files, executables. Cross-platform.
@@ -24,25 +24,11 @@ Open stuff like URLs, files, executables. Cross-platform.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for open 6.1
-// Project: https://github.com/sindresorhus/open
-// Definitions by: Shinnosuke Watanabe <https://github.com/shinnn>,
-//                 Maxime LUCE <https://github.com/SomaticIT>,
-//                 Tommy Lent <https://github.com/tlent>,
-//                 Florian Keller <https://github.com/ffflorian>,
-//                 Sun Knudsen <https://github.com/sunknudsen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -13,5 +13,6 @@ package object slateDashReactMod {
     /* next */ js.Function0[js.Any], 
     js.Any
   ]
+  type OnChangeFn = js.Function1[/* change */ OnChangeParam, js.Any]
   type RenderAttributes = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

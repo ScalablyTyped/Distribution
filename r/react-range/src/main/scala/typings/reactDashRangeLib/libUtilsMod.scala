@@ -30,6 +30,24 @@ object libUtilsMod extends js.Object {
   def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def translate(element: stdLib.Element, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def translateThumbs(elements: js.Array[stdLib.Element], offsets: reactDashRangeLib.libTypesMod.TThumbOffsets): scala.Unit = js.native
+  def useThumbOverlap(
+    rangeRef: reactDashRangeLib.libRangeMod.default,
+    values: js.Array[scala.Double],
+    index: scala.Double
+  ): js.Array[java.lang.String | reactLib.reactMod.CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: reactDashRangeLib.libRangeMod.default,
+    values: js.Array[scala.Double],
+    index: scala.Double,
+    separator: java.lang.String
+  ): js.Array[java.lang.String | reactLib.reactMod.CSSProperties] = js.native
+  def useThumbOverlap(rangeRef: scala.Null, values: js.Array[scala.Double], index: scala.Double): js.Array[java.lang.String | reactLib.reactMod.CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: scala.Null,
+    values: js.Array[scala.Double],
+    index: scala.Double,
+    separator: java.lang.String
+  ): js.Array[java.lang.String | reactLib.reactMod.CSSProperties] = js.native
   def voidFn(): scala.Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yandex-maps"
-version := "2.1-dt-20190506Z-b77bb2"
+version := "2.1-dt-20190719Z-d7bf8e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

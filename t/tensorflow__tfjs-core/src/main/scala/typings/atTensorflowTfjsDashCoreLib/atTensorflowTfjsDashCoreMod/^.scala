@@ -347,7 +347,7 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_core: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreLibStrings.`1DOT2DOT2` = js.native
+  val version_core: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreLibStrings.`1DOT2DOT3` = js.native
   val whereAsync: js.Function1[
     /* condition */ atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | atTensorflowTfjsDashCoreLib.distTypesMod.TensorLike, 
     js.Promise[atTensorflowTfjsDashCoreLib.distTensorMod.Tensor2D]
@@ -728,6 +728,8 @@ object ^ extends js.Object {
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def scalar(value: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
   def scalar(value: scala.Double, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
+  def scalar(value: stdLib.Uint8Array): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
+  def scalar(value: stdLib.Uint8Array, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
   def setBackend(backendName: java.lang.String): js.Promise[scala.Boolean] = js.native
   def setPlatform(
     platformName: java.lang.String,
@@ -753,7 +755,8 @@ object ^ extends js.Object {
     * ```
     *
     * @param values The values of the tensor. Can be nested array of numbers,
-    *     or a flat array, or a `TypedArray`.
+    *     or a flat array, or a `TypedArray`. If the values are strings,
+    *     they will be encoded as utf-8 and kept as `Uint8Array[]`.
     * @param shape The shape of the tensor. Optional. If not provided,
     *   it is inferred from `values`.
     * @param dtype The data type.

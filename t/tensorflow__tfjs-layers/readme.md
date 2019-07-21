@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-layers
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 TensorFlow layers API in JavaScript
@@ -57,6 +57,9 @@ These comments are from the typescript definitions and might be useful:
  * List of all known activation names.
  */
 /** @docalias (null | number)[] */
+/**
+ * List of all known loss names.
+ */
 /**
  * A value within the JSON-serialized form of a serializable object.
  *

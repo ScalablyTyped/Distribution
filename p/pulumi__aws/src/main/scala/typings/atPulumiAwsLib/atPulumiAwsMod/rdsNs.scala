@@ -212,34 +212,34 @@ object rdsNs extends js.Object {
   var ParallelQueryEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
   var ProvisionedEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
   var ServerlessEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
-  def getCluster(args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] = js.native
+  def getCluster(args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] with atPulumiAwsLib.rdsGetClusterMod.GetClusterResult = js.native
   def getCluster(
     args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] = js.native
-  def getClusterSnapshot(): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] = js.native
-  def getClusterSnapshot(args: atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotArgs): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] = js.native
+  ): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] with atPulumiAwsLib.rdsGetClusterMod.GetClusterResult = js.native
+  def getClusterSnapshot(): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] with atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult = js.native
+  def getClusterSnapshot(args: atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotArgs): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] with atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult = js.native
   def getClusterSnapshot(
     args: atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] = js.native
-  def getEventCategories(): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] = js.native
-  def getEventCategories(args: atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesArgs): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] = js.native
+  ): js.Promise[atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult] with atPulumiAwsLib.rdsGetClusterSnapshotMod.GetClusterSnapshotResult = js.native
+  def getEventCategories(): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] with atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult = js.native
+  def getEventCategories(args: atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesArgs): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] with atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult = js.native
   def getEventCategories(
     args: atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] = js.native
-  def getInstance(args: atPulumiAwsLib.rdsGetInstanceMod.GetInstanceArgs): js.Promise[atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult] = js.native
+  ): js.Promise[atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult] with atPulumiAwsLib.rdsGetEventCategoriesMod.GetEventCategoriesResult = js.native
+  def getInstance(args: atPulumiAwsLib.rdsGetInstanceMod.GetInstanceArgs): js.Promise[atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult] with atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult = js.native
   def getInstance(
     args: atPulumiAwsLib.rdsGetInstanceMod.GetInstanceArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult] = js.native
-  def getSnapshot(): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] = js.native
-  def getSnapshot(args: atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotArgs): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] = js.native
+  ): js.Promise[atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult] with atPulumiAwsLib.rdsGetInstanceMod.GetInstanceResult = js.native
+  def getSnapshot(): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] with atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult = js.native
+  def getSnapshot(args: atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotArgs): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] with atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult = js.native
   def getSnapshot(
     args: atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] = js.native
+  ): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] with atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

@@ -74,6 +74,23 @@ trait PowerMonitor extends EventEmitter {
   def once_suspend(event: electronLib.electronLibStrings.suspend, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_unlockscreen(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
+  /**
+    * Calculate the system idle state. idleThreshold is the amount of time (in
+    * seconds) before considered idle. callback will be called synchronously on some
+    * systems and with an idleState argument that describes the system's state. locked
+    * is available on supported systems only.
+    */
+  def querySystemIdleState(
+    idleThreshold: scala.Double,
+    callback: js.Function1[
+      /* idleState */ electronLib.electronLibStrings.active | electronLib.electronLibStrings.idle | electronLib.electronLibStrings.locked | electronLib.electronLibStrings.unknown, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Calculate system idle time in seconds.
+    */
+  def querySystemIdleTime(callback: js.Function1[/* idleTime */ scala.Double, scala.Unit]): scala.Unit = js.native
   @JSName("removeListener")
   def removeListener_lockscreen(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")

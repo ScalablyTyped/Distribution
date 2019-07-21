@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait SupportOption extends js.Object {
   var array: js.UndefOr[scala.Boolean] = js.undefined
+  var category: java.lang.String
   var choices: js.UndefOr[js.Array[SupportOptionChoice]] = js.undefined
-  var default: SupportOptionValue
+  var default: SupportOptionValue | js.Array[SupportOptionDefault]
   var deprecated: js.UndefOr[java.lang.String] = js.undefined
   var description: java.lang.String
   var oppositeDescription: js.UndefOr[java.lang.String] = js.undefined
@@ -21,7 +22,8 @@ trait SupportOption extends js.Object {
 object SupportOption {
   @scala.inline
   def apply(
-    default: SupportOptionValue,
+    category: java.lang.String,
+    default: SupportOptionValue | js.Array[SupportOptionDefault],
     description: java.lang.String,
     `type`: prettierLib.prettierLibStrings.int | prettierLib.prettierLibStrings.boolean | prettierLib.prettierLibStrings.choice | prettierLib.prettierLibStrings.path,
     array: js.UndefOr[scala.Boolean] = js.undefined,
@@ -32,7 +34,7 @@ object SupportOption {
     redirect: SupportOptionRedirect = null,
     since: java.lang.String = null
   ): SupportOption = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description)
+    val __obj = js.Dynamic.literal(category = category, default = default.asInstanceOf[js.Any], description = description)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
     if (choices != null) __obj.updateDynamic("choices")(choices)

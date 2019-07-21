@@ -82,7 +82,6 @@ These comments are from the typescript definitions and might be useful:
 //                 Wilco Bakker <https://github.com/WilcoBakker>
 //                 wwwy3y3 <https://github.com/wwwy3y3>
 //                 Zane Hannan AU <https://github.com/ZaneHannanAU>
-//                 Jeremie Rodriguez <https://github.com/jeremiergz>
 //                 Samuel Ainsworth <https://github.com/samuela>
 //                 Kyle Uehlein <https://github.com/kuehlein>
 //                 Jordi Oliveras Rovira <https://github.com/j-oliveras>

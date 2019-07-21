@@ -22,11 +22,11 @@ object acmpcaNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.acmpcaCertificateAuthorityMod.CertificateAuthorityArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCertificateAuthority(args: atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityArgs): js.Promise[atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult] = js.native
+  def getCertificateAuthority(args: atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityArgs): js.Promise[atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult] with atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult = js.native
   def getCertificateAuthority(
     args: atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult] = js.native
+  ): js.Promise[atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult] with atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult = js.native
   /* static members */
   @js.native
   object CertificateAuthority extends js.Object {

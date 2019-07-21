@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object DDPNs extends js.Object {
   trait DDPStatic extends js.Object {
     @JSName("apply")
-    def apply(method: java.lang.String, parameters: js.Any*): scala.Unit
-    def call(method: java.lang.String, parameters: js.Any*): scala.Unit
+    def apply(method: java.lang.String, parameters: js.Any*): js.Any
+    def call(method: java.lang.String, parameters: js.Any*): js.Any
     def disconnect(): scala.Unit
     def methods(IMeteorMethodsDictionary: js.Any): js.Any
     def onReconnect(): scala.Unit

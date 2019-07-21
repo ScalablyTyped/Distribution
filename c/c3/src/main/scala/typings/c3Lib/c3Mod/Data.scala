@@ -24,7 +24,7 @@ trait Data extends js.Object {
     js.Function2[
       /* color */ java.lang.String, 
       /* d */ js.Any, 
-      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
     ]
   ] = js.undefined
   /**
@@ -32,7 +32,10 @@ trait Data extends js.Object {
     */
   var colors: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[
-      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | (js.Function1[/* d */ js.Any, java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor])
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor | (js.Function1[
+        /* d */ js.Any, 
+        java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
+      ])
     ]
   ] = js.undefined
   /*
@@ -159,9 +162,12 @@ object Data {
   def apply(
     axes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     classes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    color: (/* color */ java.lang.String, /* d */ js.Any) => java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor = null,
+    color: (/* color */ java.lang.String, /* d */ js.Any) => java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor = null,
     colors: org.scalablytyped.runtime.StringDictionary[
-      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | (js.Function1[/* d */ js.Any, java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor])
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor | (js.Function1[
+        /* d */ js.Any, 
+        java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
+      ])
     ] = null,
     columns: js.Array[PrimitiveArray] = null,
     empty: c3Lib.Anon_Label = null,

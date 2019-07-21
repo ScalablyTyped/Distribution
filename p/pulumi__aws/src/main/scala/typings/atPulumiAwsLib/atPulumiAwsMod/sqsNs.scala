@@ -45,8 +45,8 @@ object sqsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.sqsQueuePolicyMod.QueuePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] = js.native
-  def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] = js.native
+  def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] with atPulumiAwsLib.sqsGetQueueMod.GetQueueResult = js.native
+  def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] with atPulumiAwsLib.sqsGetQueueMod.GetQueueResult = js.native
   /* static members */
   @js.native
   object Queue extends js.Object {

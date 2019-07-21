@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultTreeCommentNode extends DefaultTreeNode {
+trait DefaultTreeCommentNode extends DefaultTreeChildNode {
   /**
     * Comment text.
     */
@@ -15,10 +15,6 @@ trait DefaultTreeCommentNode extends DefaultTreeNode {
     */
   @JSName("nodeName")
   var nodeName_DefaultTreeCommentNode: parse5Lib.parse5LibStrings.`#comment`
-  /**
-    * Parent node.
-    */
-  var parentNode: DefaultTreeParentNode
   /**
     * Comment source code location info. Available if location info is enabled via {@link ParserOptions}.
     */

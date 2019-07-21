@@ -22,6 +22,10 @@ trait NamedQueryState extends js.Object {
     * The text of the query itself. In other words, all query statements. Maximum length of 262144.
     */
   val query: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The workgroup to which the query belongs. Defaults to `primary`
+    */
+  val workgroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object NamedQueryState {
@@ -30,13 +34,15 @@ object NamedQueryState {
     database: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    query: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    query: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    workgroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): NamedQueryState = {
     val __obj = js.Dynamic.literal()
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (workgroup != null) __obj.updateDynamic("workgroup")(workgroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedQueryState]
   }
 }

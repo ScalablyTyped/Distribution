@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait EventCategoryGroup extends js.Object {
   /**
-    *  A list of event categories for a SourceType that you want to subscribe to. 
+    *  A list of event categories from a source type that you've chosen.
     */
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | migration-task
+    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
 }

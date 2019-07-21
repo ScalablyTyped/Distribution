@@ -16,10 +16,10 @@ class Upload protected ()
   val baseURI: js.Any = js.native
   var bucket: java.lang.String = js.native
   var bufferStream: js.UndefOr[js.Any] = js.native
+  var cacheKey: java.lang.String = js.native
   var configStore: configstoreLib.configstoreMod.^ = js.native
   var contentLength: scala.Double | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.`*` = js.native
   var continueUploading: js.Any = js.native
-  var deleteConfig: js.Any = js.native
   var encryption: js.UndefOr[Encryption] = js.native
   var file: java.lang.String = js.native
   var generation: js.UndefOr[scala.Double] = js.native
@@ -54,5 +54,6 @@ class Upload protected ()
   def createURI(): js.Promise[java.lang.String] = js.native
   def createURI(callback: CreateUriCallback): scala.Unit = js.native
   /* protected */ def createURIAsync(): js.Promise[java.lang.String] = js.native
+  def deleteConfig(): scala.Unit = js.native
 }
 

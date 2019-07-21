@@ -123,6 +123,8 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def scalar(value: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
   def scalar(value: scala.Double, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
+  def scalar(value: stdLib.Uint8Array): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
+  def scalar(value: stdLib.Uint8Array, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): atTensorflowTfjsDashCoreLib.distTensorMod.Scalar = js.native
   /**
     * Creates a `tf.Tensor` with the provided values, shape and dtype.
     *
@@ -143,7 +145,8 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
     * ```
     *
     * @param values The values of the tensor. Can be nested array of numbers,
-    *     or a flat array, or a `TypedArray`.
+    *     or a flat array, or a `TypedArray`. If the values are strings,
+    *     they will be encoded as utf-8 and kept as `Uint8Array[]`.
     * @param shape The shape of the tensor. Optional. If not provided,
     *   it is inferred from `values`.
     * @param dtype The data type.

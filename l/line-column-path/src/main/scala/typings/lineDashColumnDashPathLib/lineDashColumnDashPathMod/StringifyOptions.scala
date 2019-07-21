@@ -6,8 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StringifyOptions extends js.Object {
+  /**
+  	Output the column.
+  	Setting this to `false` will result in `unicorn.js:8` instead of `unicorn.js:8:14`.
+  	@default true
+  	*/
   var column: js.UndefOr[scala.Boolean] = js.undefined
-  var file: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	Output the file path.
+  	Setting this to `false` will result in `8:18` instead of `unicorn.js:8:14`.
+  	@default true
+  	*/
+  val file: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object StringifyOptions {

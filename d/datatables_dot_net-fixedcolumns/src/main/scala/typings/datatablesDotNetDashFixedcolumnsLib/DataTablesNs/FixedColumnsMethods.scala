@@ -30,12 +30,12 @@ object FixedColumnsMethods {
   @scala.inline
   def apply(
     cellIndex: () => CellIndex,
-    fixedColumns: FixedColumnsMethodsModel,
+    fixedColumns: () => FixedColumnsMethods,
     relayout: () => Api,
     rowIndex: () => scala.Double,
     update: () => Api
   ): FixedColumnsMethods = {
-    val __obj = js.Dynamic.literal(cellIndex = js.Any.fromFunction0(cellIndex), fixedColumns = fixedColumns, relayout = js.Any.fromFunction0(relayout), rowIndex = js.Any.fromFunction0(rowIndex), update = js.Any.fromFunction0(update))
+    val __obj = js.Dynamic.literal(cellIndex = js.Any.fromFunction0(cellIndex), fixedColumns = js.Any.fromFunction0(fixedColumns), relayout = js.Any.fromFunction0(relayout), rowIndex = js.Any.fromFunction0(rowIndex), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[FixedColumnsMethods]
   }

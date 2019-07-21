@@ -16,12 +16,12 @@ object ^ extends js.Object {
   var PrivateAcl: atPulumiAwsLib.s3CannedAclMod.CannedAcl = js.native
   var PublicReadAcl: atPulumiAwsLib.s3CannedAclMod.CannedAcl = js.native
   var PublicReadWriteAcl: atPulumiAwsLib.s3CannedAclMod.CannedAcl = js.native
-  def getBucket(args: atPulumiAwsLib.s3GetBucketMod.GetBucketArgs): js.Promise[atPulumiAwsLib.s3GetBucketMod.GetBucketResult] = js.native
-  def getBucket(args: atPulumiAwsLib.s3GetBucketMod.GetBucketArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.s3GetBucketMod.GetBucketResult] = js.native
-  def getBucketObject(args: atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectArgs): js.Promise[atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult] = js.native
+  def getBucket(args: atPulumiAwsLib.s3GetBucketMod.GetBucketArgs): js.Promise[atPulumiAwsLib.s3GetBucketMod.GetBucketResult] with atPulumiAwsLib.s3GetBucketMod.GetBucketResult = js.native
+  def getBucket(args: atPulumiAwsLib.s3GetBucketMod.GetBucketArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.s3GetBucketMod.GetBucketResult] with atPulumiAwsLib.s3GetBucketMod.GetBucketResult = js.native
+  def getBucketObject(args: atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectArgs): js.Promise[atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult] with atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult = js.native
   def getBucketObject(
     args: atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult] = js.native
+  ): js.Promise[atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult] with atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult = js.native
 }
 

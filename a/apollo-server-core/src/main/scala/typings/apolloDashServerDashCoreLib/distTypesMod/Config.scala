@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'executor' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache' ]: apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<object>, any>[P]} */ trait Config extends js.Object {
   var cacheControl: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
   ] = js.undefined
   var context: js.UndefOr[Context[js.Object] | (ContextFunction[_, js.Object])] = js.undefined
   var engine: js.UndefOr[
@@ -16,11 +16,10 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var extensions: js.UndefOr[
     js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
+  var gateway: js.UndefOr[GraphQLService] = js.undefined
   var introspection: js.UndefOr[scala.Boolean] = js.undefined
   var mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined
   var mocks: js.UndefOr[scala.Boolean | graphqlDashToolsLib.distInterfacesMod.IMocks] = js.undefined
@@ -54,14 +53,13 @@ import scala.scalajs.js.annotation._
 object Config {
   @scala.inline
   def apply(
-    cacheControl: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean = null,
     context: Context[js.Object] | (ContextFunction[_, js.Object]) = null,
     engine: scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]] = null,
     extensions: js.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ] = null,
+    gateway: GraphQLService = null,
     introspection: js.UndefOr[scala.Boolean] = js.undefined,
     mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined,
     mocks: scala.Boolean | graphqlDashToolsLib.distInterfacesMod.IMocks = null,
@@ -84,6 +82,7 @@ object Config {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (gateway != null) __obj.updateDynamic("gateway")(gateway)
     if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection)
     if (!js.isUndefined(mockEntireSchema)) __obj.updateDynamic("mockEntireSchema")(mockEntireSchema)
     if (mocks != null) __obj.updateDynamic("mocks")(mocks.asInstanceOf[js.Any])

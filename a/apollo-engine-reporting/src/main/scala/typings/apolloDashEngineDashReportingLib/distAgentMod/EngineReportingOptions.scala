@@ -36,7 +36,9 @@ trait EngineReportingOptions[TContext] extends js.Object {
     ]
   ] = js.undefined
   var schemaTag: js.UndefOr[java.lang.String] = js.undefined
+  var sendHeaders: js.UndefOr[SendValuesBaseOptions] = js.undefined
   var sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
+  var sendVariableValues: js.UndefOr[VariableValueOptions] = js.undefined
 }
 
 object EngineReportingOptions {
@@ -59,7 +61,9 @@ object EngineReportingOptions {
     requestAgent: apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false` = null,
     rewriteError: /* err */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.graphqlMod.GraphQLError | scala.Null = null,
     schemaTag: java.lang.String = null,
-    sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    sendHeaders: SendValuesBaseOptions = null,
+    sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    sendVariableValues: VariableValueOptions = null
   ): EngineReportingOptions[TContext] = {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
@@ -79,7 +83,9 @@ object EngineReportingOptions {
     if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
     if (rewriteError != null) __obj.updateDynamic("rewriteError")(js.Any.fromFunction1(rewriteError))
     if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag)
+    if (sendHeaders != null) __obj.updateDynamic("sendHeaders")(sendHeaders)
     if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately)
+    if (sendVariableValues != null) __obj.updateDynamic("sendVariableValues")(sendVariableValues)
     __obj.asInstanceOf[EngineReportingOptions[TContext]]
   }
 }

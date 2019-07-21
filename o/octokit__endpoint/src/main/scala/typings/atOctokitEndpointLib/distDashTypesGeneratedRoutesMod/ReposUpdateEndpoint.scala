@@ -16,6 +16,7 @@ trait ReposUpdateEndpoint extends js.Object {
   var has_projects: js.UndefOr[scala.Boolean] = js.undefined
   var has_wiki: js.UndefOr[scala.Boolean] = js.undefined
   var homepage: js.UndefOr[java.lang.String] = js.undefined
+  var is_template: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
   var owner: java.lang.String
   var `private`: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,6 +39,7 @@ object ReposUpdateEndpoint {
     has_projects: js.UndefOr[scala.Boolean] = js.undefined,
     has_wiki: js.UndefOr[scala.Boolean] = js.undefined,
     homepage: java.lang.String = null,
+    is_template: js.UndefOr[scala.Boolean] = js.undefined,
     `private`: js.UndefOr[scala.Boolean] = js.undefined
   ): ReposUpdateEndpoint = {
     val __obj = js.Dynamic.literal(name = name, owner = owner, repo = repo)
@@ -51,6 +53,7 @@ object ReposUpdateEndpoint {
     if (!js.isUndefined(has_projects)) __obj.updateDynamic("has_projects")(has_projects)
     if (!js.isUndefined(has_wiki)) __obj.updateDynamic("has_wiki")(has_wiki)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (!js.isUndefined(is_template)) __obj.updateDynamic("is_template")(is_template)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[ReposUpdateEndpoint]
   }

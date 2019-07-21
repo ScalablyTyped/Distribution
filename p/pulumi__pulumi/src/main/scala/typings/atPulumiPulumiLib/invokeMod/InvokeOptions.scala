@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait InvokeOptions extends js.Object {
   /**
+    * Invoke this function asynchronously.  If 'true' is passed in here, then an invoked function
+    * will only supply the `Promise<>` side of its result.
+    */
+  var async: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * An optional parent to use for default options for this invoke (e.g. the default provider to use).
     */
   var parent: js.UndefOr[atPulumiPulumiLib.resourceMod.Resource] = js.undefined
@@ -25,11 +30,13 @@ trait InvokeOptions extends js.Object {
 object InvokeOptions {
   @scala.inline
   def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
     parent: atPulumiPulumiLib.resourceMod.Resource = null,
     provider: atPulumiPulumiLib.resourceMod.ProviderResource = null,
     version: java.lang.String = null
   ): InvokeOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (provider != null) __obj.updateDynamic("provider")(provider)
     if (version != null) __obj.updateDynamic("version")(version)

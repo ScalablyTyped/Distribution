@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tagsinput"
-version := "3.19-dt-20190708Z-3e7b27"
+version := "3.19-dt-20190716Z-7817c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,7 @@ trait TextureData extends js.Object {
   var texShape: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   var texture: js.UndefOr[stdLib.WebGLTexture] = js.undefined
   var usage: js.UndefOr[TextureUsage] = js.undefined
-  var values: js.UndefOr[atTensorflowTfjsDashCoreLib.distTypesMod.DataValues] = js.undefined
+  var values: js.UndefOr[atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues] = js.undefined
 }
 
 object TextureData {
@@ -29,7 +29,7 @@ object TextureData {
     texShape: js.Tuple2[scala.Double, scala.Double] = null,
     texture: stdLib.WebGLTexture = null,
     usage: TextureUsage = null,
-    values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues = null
+    values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues = null
   ): TextureData = {
     val __obj = js.Dynamic.literal(dtype = dtype, shape = shape)
     if (complexTensors != null) __obj.updateDynamic("complexTensors")(complexTensors)

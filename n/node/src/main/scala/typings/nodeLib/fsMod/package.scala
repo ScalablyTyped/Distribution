@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fsMod {
-  type BinaryData = nodeLib.Buffer | stdLib.DataView | nodeLib.NodeJSNs.TypedArray
+  type BinaryData = stdLib.DataView | nodeLib.NodeJSNs.TypedArray
   /**
     * Valid types for path values in "fs".
     */

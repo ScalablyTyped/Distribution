@@ -31,12 +31,19 @@ trait ModelFitArgs extends js.Object {
     ]) | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs
   ] = js.undefined
   /**
-    * Optional dictionary mapping class indices (integers) to
+    * Optional object mapping class indices (integers) to
     * a weight (float) to apply to the model's loss for the samples from this
     * class during training. This can be useful to tell the model to "pay more
     * attention" to samples from an under-represented class.
+    *
+    * If the model has multiple outputs, a class weight can be specified for
+    * each of the outputs by setting this field an array of weight object
+    * or a object that maps model output names (e.g., `model.outputNames[0]`)
+    * to weight objects.
     */
-  var classWeight: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var classWeight: js.UndefOr[
+    atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap
+  ] = js.undefined
   /** The number of times to iterate over the training data arrays. */
   var epochs: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -150,7 +157,7 @@ object ModelFitArgs {
     callbacks: (js.Array[
       atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.BaseCallback | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs
     ]) | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs = null,
-    classWeight: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    classWeight: atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap = null,
     epochs: scala.Int | scala.Double = null,
     initialEpoch: scala.Int | scala.Double = null,
     sampleWeight: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] = null,
@@ -182,7 +189,7 @@ object ModelFitArgs {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight)
+    if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
     if (epochs != null) __obj.updateDynamic("epochs")(epochs.asInstanceOf[js.Any])
     if (initialEpoch != null) __obj.updateDynamic("initialEpoch")(initialEpoch.asInstanceOf[js.Any])
     if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight)

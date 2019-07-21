@@ -47,6 +47,10 @@ trait ReposUpdateParams extends js.Object {
     */
   var homepage: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Either `true` to make this repo available as a template repository or `false` to prevent it.
+    */
+  var is_template: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The name of the repository.
     */
   var name: java.lang.String
@@ -75,6 +79,7 @@ object ReposUpdateParams {
     has_projects: js.UndefOr[scala.Boolean] = js.undefined,
     has_wiki: js.UndefOr[scala.Boolean] = js.undefined,
     homepage: java.lang.String = null,
+    is_template: js.UndefOr[scala.Boolean] = js.undefined,
     `private`: js.UndefOr[scala.Boolean] = js.undefined
   ): ReposUpdateParams = {
     val __obj = js.Dynamic.literal(name = name, owner = owner, repo = repo)
@@ -88,6 +93,7 @@ object ReposUpdateParams {
     if (!js.isUndefined(has_projects)) __obj.updateDynamic("has_projects")(has_projects)
     if (!js.isUndefined(has_wiki)) __obj.updateDynamic("has_wiki")(has_wiki)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (!js.isUndefined(is_template)) __obj.updateDynamic("is_template")(is_template)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[ReposUpdateParams]
   }

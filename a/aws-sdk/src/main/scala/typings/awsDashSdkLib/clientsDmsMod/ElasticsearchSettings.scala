@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ElasticsearchSettings extends js.Object {
   /**
-    * The endpoint for the ElasticSearch cluster.
+    * The endpoint for the Elasticsearch cluster.
     */
   var EndpointUri: String
   /**

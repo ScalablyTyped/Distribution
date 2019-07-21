@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MixedInstancesPolicy extends js.Object {
   /**
-    * The instances distribution to use.  If you leave this parameter unspecified when creating the group, the default values are used.
+    * The instances distribution to use. If you leave this parameter unspecified when creating a mixed instances policy, the default values are used.
     */
   var InstancesDistribution: js.UndefOr[InstancesDistribution] = js.undefined
   /**
-    * The launch template and overrides. This parameter is required when creating an Auto Scaling group with a mixed instances policy, but is not required when updating the group.
+    * The launch template and instance types (overrides). This parameter must be specified when creating a mixed instances policy.
     */
   var LaunchTemplate: js.UndefOr[LaunchTemplate] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver-truncate
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Truncate a semver version: `1.2.3` → `1.2.0`
@@ -24,7 +24,7 @@ Truncate a semver version: `1.2.3` → `1.2.0`
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,26 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for semver-truncate 1.1
-// Project: https://github.com/sindresorhus/semver-truncate#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Truncate a semver version: `1.2.3` → `1.2.0`.
+
+@param version - Semver version.
+@param type - Version type to truncate to.
+
+@example
+```
+import semverTruncate = require('semver-truncate');
+
+semverTruncate('1.2.3-foo', 'patch');
+//=> '1.2.3'
+
+semverTruncate('1.2.3', 'minor');
+//=> '1.2.0'
+
+semverTruncate('1.2.3', 'major');
+//=> '1.0.0'
+```
+*/
 
 ```
 

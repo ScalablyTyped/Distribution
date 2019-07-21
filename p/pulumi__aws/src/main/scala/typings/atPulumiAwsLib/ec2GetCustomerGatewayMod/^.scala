@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/getCustomerGateway", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] = js.native
-  def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] = js.native
-  def getCustomerGateway(args: GetCustomerGatewayArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetCustomerGatewayResult] = js.native
+  def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] with GetCustomerGatewayResult = js.native
+  def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] with GetCustomerGatewayResult = js.native
+  def getCustomerGateway(args: GetCustomerGatewayArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetCustomerGatewayResult] with GetCustomerGatewayResult = js.native
 }
 

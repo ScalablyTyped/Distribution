@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
      with Pattern
      with PatternLike {
   var decorators: js.Array[Decorator] | scala.Null
-  var left: Identifier | ObjectPattern | ArrayPattern
+  var left: Identifier | ObjectPattern | ArrayPattern | MemberExpression
   var right: Expression
   var typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop | scala.Null
   @JSName("type")
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 object AssignmentPattern {
   @scala.inline
   def apply(
-    left: Identifier | ObjectPattern | ArrayPattern,
+    left: Identifier | ObjectPattern | ArrayPattern | MemberExpression,
     right: Expression,
     `type`: atBabelTypesLib.atBabelTypesLibStrings.AssignmentPattern,
     decorators: js.Array[Decorator] = null,

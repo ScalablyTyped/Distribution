@@ -74,6 +74,17 @@ object TraceNs extends js.Object {
     def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.INode) = this()
   }
   
+  /** Represents a QueryPlanNode. */
+  @js.native
+  /**
+    * Constructs a new QueryPlanNode.
+    * @param [properties] Properties to set
+    */
+  class QueryPlanNode ()
+    extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode {
+    def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode) = this()
+  }
+  
   /* static members */
   @js.native
   object CachePolicy extends js.Object {
@@ -670,6 +681,574 @@ object TraceNs extends js.Object {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object QueryPlanNode extends js.Object {
+    /**
+      * Creates a new QueryPlanNode instance using the specified properties.
+      * @param [properties] Properties to set
+      * @returns QueryPlanNode instance
+      */
+    def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    def create(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    /**
+      * Decodes a QueryPlanNode message from the specified reader or buffer.
+      * @param reader Reader or buffer to decode from
+      * @param [length] Message length if known beforehand
+      * @returns QueryPlanNode
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    /**
+      * Decodes a QueryPlanNode message from the specified reader or buffer, length delimited.
+      * @param reader Reader or buffer to decode from
+      * @returns QueryPlanNode
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    /**
+      * Encodes the specified QueryPlanNode message. Does not implicitly {@link Trace.QueryPlanNode.verify|verify} messages.
+      * @param message QueryPlanNode message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    def encode(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode): protobufjsLib.protobufjsMod.Writer = js.native
+    def encode(
+      message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode,
+      writer: protobufjsLib.protobufjsMod.Writer
+    ): protobufjsLib.protobufjsMod.Writer = js.native
+    /**
+      * Encodes the specified QueryPlanNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.verify|verify} messages.
+      * @param message QueryPlanNode message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    def encodeDelimited(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode): protobufjsLib.protobufjsMod.Writer = js.native
+    def encodeDelimited(
+      message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode,
+      writer: protobufjsLib.protobufjsMod.Writer
+    ): protobufjsLib.protobufjsMod.Writer = js.native
+    /**
+      * Creates a QueryPlanNode message from a plain object. Also converts values to their respective internal types.
+      * @param object Plain object
+      * @returns QueryPlanNode
+      */
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode = js.native
+    /**
+      * Creates a plain object from a QueryPlanNode message. Also converts values to other types if specified.
+      * @param message QueryPlanNode
+      * @param [options] Conversion options
+      * @returns Plain object
+      */
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(
+      message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNode,
+      options: protobufjsLib.protobufjsMod.IConversionOptions
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+    /**
+      * Verifies a QueryPlanNode message.
+      * @param message Plain object to verify
+      * @returns `null` if valid, otherwise the reason why it is not
+      */
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  }
+  
+  @JSName("QueryPlanNode")
+  @js.native
+  object QueryPlanNodeNs extends js.Object {
+    /** Represents a FetchNode. */
+    @js.native
+    /**
+      * Constructs a new FetchNode.
+      * @param [properties] Properties to set
+      */
+    class FetchNode ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode {
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode) = this()
+    }
+    
+    /** Represents a FlattenNode. */
+    @js.native
+    /**
+      * Constructs a new FlattenNode.
+      * @param [properties] Properties to set
+      */
+    class FlattenNode ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode {
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode) = this()
+    }
+    
+    /** Represents a ParallelNode. */
+    @js.native
+    /**
+      * Constructs a new ParallelNode.
+      * @param [properties] Properties to set
+      */
+    class ParallelNode ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode {
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode) = this()
+    }
+    
+    /** Represents a ResponsePathElement. */
+    @js.native
+    /**
+      * Constructs a new ResponsePathElement.
+      * @param [properties] Properties to set
+      */
+    class ResponsePathElement ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement {
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement) = this()
+    }
+    
+    /** Represents a SequenceNode. */
+    @js.native
+    /**
+      * Constructs a new SequenceNode.
+      * @param [properties] Properties to set
+      */
+    class SequenceNode ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode {
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode) = this()
+    }
+    
+    /* static members */
+    @js.native
+    object FetchNode extends js.Object {
+      /**
+        * Creates a new FetchNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns FetchNode instance
+        */
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      def create(
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      /**
+        * Decodes a FetchNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns FetchNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      /**
+        * Decodes a FetchNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns FetchNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      /**
+        * Encodes the specified FetchNode message. Does not implicitly {@link Trace.QueryPlanNode.FetchNode.verify|verify} messages.
+        * @param message FetchNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Encodes the specified FetchNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.FetchNode.verify|verify} messages.
+        * @param message FetchNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFetchNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Creates a FetchNode message from a plain object. Also converts values to their respective internal types.
+        * @param object Plain object
+        * @returns FetchNode
+        */
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode = js.native
+      /**
+        * Creates a plain object from a FetchNode message. Also converts values to other types if specified.
+        * @param message FetchNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FetchNode,
+        options: protobufjsLib.protobufjsMod.IConversionOptions
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      /**
+        * Verifies a FetchNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    }
+    
+    /* static members */
+    @js.native
+    object FlattenNode extends js.Object {
+      /**
+        * Creates a new FlattenNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns FlattenNode instance
+        */
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      def create(
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      /**
+        * Decodes a FlattenNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns FlattenNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      /**
+        * Decodes a FlattenNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns FlattenNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      /**
+        * Encodes the specified FlattenNode message. Does not implicitly {@link Trace.QueryPlanNode.FlattenNode.verify|verify} messages.
+        * @param message FlattenNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Encodes the specified FlattenNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.FlattenNode.verify|verify} messages.
+        * @param message FlattenNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IFlattenNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Creates a FlattenNode message from a plain object. Also converts values to their respective internal types.
+        * @param object Plain object
+        * @returns FlattenNode
+        */
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode = js.native
+      /**
+        * Creates a plain object from a FlattenNode message. Also converts values to other types if specified.
+        * @param message FlattenNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.FlattenNode,
+        options: protobufjsLib.protobufjsMod.IConversionOptions
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      /**
+        * Verifies a FlattenNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    }
+    
+    /* static members */
+    @js.native
+    object ParallelNode extends js.Object {
+      /**
+        * Creates a new ParallelNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns ParallelNode instance
+        */
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      def create(
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      /**
+        * Decodes a ParallelNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns ParallelNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      /**
+        * Decodes a ParallelNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns ParallelNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      /**
+        * Encodes the specified ParallelNode message. Does not implicitly {@link Trace.QueryPlanNode.ParallelNode.verify|verify} messages.
+        * @param message ParallelNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Encodes the specified ParallelNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ParallelNode.verify|verify} messages.
+        * @param message ParallelNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IParallelNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Creates a ParallelNode message from a plain object. Also converts values to their respective internal types.
+        * @param object Plain object
+        * @returns ParallelNode
+        */
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode = js.native
+      /**
+        * Creates a plain object from a ParallelNode message. Also converts values to other types if specified.
+        * @param message ParallelNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ParallelNode,
+        options: protobufjsLib.protobufjsMod.IConversionOptions
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      /**
+        * Verifies a ParallelNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    }
+    
+    /* static members */
+    @js.native
+    object ResponsePathElement extends js.Object {
+      /**
+        * Creates a new ResponsePathElement instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns ResponsePathElement instance
+        */
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      def create(
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      /**
+        * Decodes a ResponsePathElement message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns ResponsePathElement
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      /**
+        * Decodes a ResponsePathElement message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns ResponsePathElement
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      /**
+        * Encodes the specified ResponsePathElement message. Does not implicitly {@link Trace.QueryPlanNode.ResponsePathElement.verify|verify} messages.
+        * @param message ResponsePathElement message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Encodes the specified ResponsePathElement message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ResponsePathElement.verify|verify} messages.
+        * @param message ResponsePathElement message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.IResponsePathElement,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Creates a ResponsePathElement message from a plain object. Also converts values to their respective internal types.
+        * @param object Plain object
+        * @returns ResponsePathElement
+        */
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement = js.native
+      /**
+        * Creates a plain object from a ResponsePathElement message. Also converts values to other types if specified.
+        * @param message ResponsePathElement
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ResponsePathElement,
+        options: protobufjsLib.protobufjsMod.IConversionOptions
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      /**
+        * Verifies a ResponsePathElement message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    }
+    
+    /* static members */
+    @js.native
+    object SequenceNode extends js.Object {
+      /**
+        * Creates a new SequenceNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns SequenceNode instance
+        */
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      def create(
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      /**
+        * Decodes a SequenceNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns SequenceNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      /**
+        * Decodes a SequenceNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns SequenceNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      /**
+        * Encodes the specified SequenceNode message. Does not implicitly {@link Trace.QueryPlanNode.SequenceNode.verify|verify} messages.
+        * @param message SequenceNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encode(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Encodes the specified SequenceNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.SequenceNode.verify|verify} messages.
+        * @param message SequenceNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      def encodeDelimited(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.ISequenceNode,
+        writer: protobufjsLib.protobufjsMod.Writer
+      ): protobufjsLib.protobufjsMod.Writer = js.native
+      /**
+        * Creates a SequenceNode message from a plain object. Also converts values to their respective internal types.
+        * @param object Plain object
+        * @returns SequenceNode
+        */
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode = js.native
+      /**
+        * Creates a plain object from a SequenceNode message. Also converts values to other types if specified.
+        * @param message SequenceNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.QueryPlanNodeNs.SequenceNode,
+        options: protobufjsLib.protobufjsMod.IConversionOptions
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+      /**
+        * Verifies a SequenceNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    }
+    
   }
   
 }

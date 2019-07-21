@@ -24,6 +24,8 @@ trait CustomLocale extends js.Object {
     ]
   ] = js.undefined
   var firstDayOfWeek: js.UndefOr[scala.Double] = js.undefined
+  var hourAriaLabel: js.UndefOr[java.lang.String] = js.undefined
+  var minuteAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   var months: flatpickrLib.Anon_LonghandShorthand
   var ordinal: js.UndefOr[js.Function1[/* nth */ scala.Double, java.lang.String]] = js.undefined
   var rangeSeparator: js.UndefOr[java.lang.String] = js.undefined
@@ -56,6 +58,8 @@ object CustomLocale {
       scala.Double
     ] = null,
     firstDayOfWeek: scala.Int | scala.Double = null,
+    hourAriaLabel: java.lang.String = null,
+    minuteAriaLabel: java.lang.String = null,
     ordinal: /* nth */ scala.Double => java.lang.String = null,
     rangeSeparator: java.lang.String = null,
     scrollTitle: java.lang.String = null,
@@ -68,6 +72,8 @@ object CustomLocale {
     if (amPM != null) __obj.updateDynamic("amPM")(amPM)
     if (daysInMonth != null) __obj.updateDynamic("daysInMonth")(daysInMonth)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (hourAriaLabel != null) __obj.updateDynamic("hourAriaLabel")(hourAriaLabel)
+    if (minuteAriaLabel != null) __obj.updateDynamic("minuteAriaLabel")(minuteAriaLabel)
     if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
     if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator)
     if (scrollTitle != null) __obj.updateDynamic("scrollTitle")(scrollTitle)

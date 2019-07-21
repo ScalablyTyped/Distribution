@@ -15,7 +15,7 @@ trait LoggingOptions extends js.Object {
     */
   var enabled: LoggingEnabled
   /**
-    * The logging level. Currently, only "ERROR" is supported.
+    * The logging level.
     */
   var level: LoggingLevel
   /**

@@ -12,7 +12,8 @@ trait DirectEditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.
     * make sure this ends up calling the view's
     * [`updateState`](#view.EditorView.updateState) method with a new
     * state that has the transaction
-    * [applied](#state.EditorState.apply).
+    * [applied](#state.EditorState.apply). The callback will be bound to have
+    * the view instance as its `this` binding.
     */
   var dispatchTransaction: js.UndefOr[
     (js.Function1[
@@ -67,8 +68,8 @@ object DirectEditorProps {
         NodeView[S]
       ]
     ] = null,
-    scrollMargin: scala.Int | scala.Double = null,
-    scrollThreshold: scala.Int | scala.Double = null,
+    scrollMargin: scala.Double | prosemirrorDashViewLib.Anon_BottomLeft = null,
+    scrollThreshold: scala.Double | prosemirrorDashViewLib.Anon_BottomLeft = null,
     transformPasted: /* p */ prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] => prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] = null,
     transformPastedHTML: /* html */ java.lang.String => java.lang.String = null,
     transformPastedText: /* text */ java.lang.String => java.lang.String = null

@@ -1,7 +1,7 @@
 
 # Scala.js typings for execa
 
-Typings are for version 0.9
+Typings are for version 2.0.3
 
 ## Library description:
 A better `child_process`
@@ -24,25 +24,11 @@ A better `child_process`
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for execa 0.9
-// Project: https://github.com/sindresorhus/execa#readme
-// Definitions by: Douglas Duteil <https://github.com/douglasduteil>
-//                 BendingBender <https://github.com/BendingBender>
-//                 Borek Bernard <https://github.com/borekb>
-//                 Mick Dekkers <https://github.com/mickdekkers>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

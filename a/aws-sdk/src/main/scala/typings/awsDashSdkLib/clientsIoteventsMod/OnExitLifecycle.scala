@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OnExitLifecycle extends js.Object {
   /**
-    * Specifies the actions that are performed when the state is exited and the condition is TRUE.
+    * Specifies the "actions" that are performed when the state is exited and the "condition" is TRUE.
     */
   var events: js.UndefOr[Events] = js.undefined
 }

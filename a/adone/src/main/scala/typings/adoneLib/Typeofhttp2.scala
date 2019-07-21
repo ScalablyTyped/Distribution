@@ -112,7 +112,6 @@ trait Typeofhttp2 extends js.Object {
   ): nodeLib.http2Mod.Http2Server = js.native
   def getDefaultSettings(): nodeLib.http2Mod.Settings = js.native
   def getPackedSettings(settings: nodeLib.http2Mod.Settings): nodeLib.Buffer = js.native
-  def getUnpackedSettings(buf: nodeLib.Buffer): nodeLib.http2Mod.Settings = js.native
   def getUnpackedSettings(buf: stdLib.Uint8Array): nodeLib.http2Mod.Settings = js.native
 }
 

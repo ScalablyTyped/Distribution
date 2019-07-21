@@ -22,6 +22,9 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var height: js.UndefOr[
     scala.Double | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.auto
   ] = js.undefined
+  var interpolateSelection: js.UndefOr[
+    js.Function2[/* date */ stdLib.Date, /* selected */ js.Array[stdLib.Date], js.Array[stdLib.Date]]
+  ] = js.undefined
   var locale: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_0] = js.undefined
   var max: js.UndefOr[DateType] = js.undefined
   var maxDate: js.UndefOr[DateType] = js.undefined
@@ -54,6 +57,7 @@ object ReactInfiniteCalendarProps {
     display: reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.days | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.years = null,
     displayOptions: reactDashInfiniteDashCalendarLib.Anon_HideYearsOnSelect = null,
     height: scala.Double | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.auto = null,
+    interpolateSelection: (/* date */ stdLib.Date, /* selected */ js.Array[stdLib.Date]) => js.Array[stdLib.Date] = null,
     locale: reactDashInfiniteDashCalendarLib.Anon_0 = null,
     max: DateType = null,
     maxDate: DateType = null,
@@ -77,6 +81,7 @@ object ReactInfiniteCalendarProps {
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interpolateSelection != null) __obj.updateDynamic("interpolateSelection")(js.Any.fromFunction2(interpolateSelection))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])

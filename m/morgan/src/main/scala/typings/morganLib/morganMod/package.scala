@@ -10,7 +10,7 @@ package object morganMod {
     /* tokens */ TokenIndexer, 
     /* req */ expressLib.expressMod.Request, 
     /* res */ expressLib.expressMod.Response, 
-    java.lang.String
+    js.UndefOr[java.lang.String | scala.Null]
   ]
   type TokenCallbackFn = js.Function3[
     /* req */ expressLib.expressMod.Request, 

@@ -25,7 +25,9 @@ trait Anon_AxesColors extends js.Object {
     */
   def colors(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def colors(
-    colors: org.scalablytyped.runtime.StringDictionary[java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor]
+    colors: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | d3DashColorLib.d3DashColorMod.HSLColor
+    ]
   ): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
     * Get and set names of the data loaded in the chart.

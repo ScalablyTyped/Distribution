@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var seed: java.lang.String | scala.Double
+  /**
+  		[Initialization seed.](https://en.wikipedia.org/wiki/Random_seed) Multiple instances of `Randoma` with the same seed will generate the same random numbers.
+  		*/
+  val seed: java.lang.String | scala.Double
 }
 
 object Options {

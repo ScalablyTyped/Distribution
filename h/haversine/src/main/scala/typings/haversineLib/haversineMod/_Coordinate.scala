@@ -5,5 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _Coordinate extends js.Object
+trait _Coordinate
+  extends _ParamType[js.Any]
 

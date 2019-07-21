@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rsvp", "Promise")
 @js.native
-class Promise[T] protected ()
+class PromiseCls[T] protected ()
   extends rsvpLib.rsvpMod.RSVPNs.Promise[T] {
   def this(executor: js.Function2[
       /* resolve */ js.Function1[

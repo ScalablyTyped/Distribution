@@ -190,11 +190,11 @@ object directconnectNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.directconnectPublicVirtualInterfaceMod.PublicVirtualInterfaceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getGateway(args: atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayArgs): js.Promise[atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult] = js.native
+  def getGateway(args: atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayArgs): js.Promise[atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult] with atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult = js.native
   def getGateway(
     args: atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult] = js.native
+  ): js.Promise[atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult] with atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult = js.native
   /* static members */
   @js.native
   object BgpPeer extends js.Object {

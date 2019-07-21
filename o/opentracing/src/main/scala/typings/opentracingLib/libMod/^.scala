@@ -15,6 +15,7 @@ object ^ extends js.Object {
   val REFERENCE_FOLLOWS_FROM: opentracingLib.opentracingLibStrings.follows_from = js.native
   def childOf(spanContext: opentracingLib.libSpanMod.default): opentracingLib.libReferenceMod.default = js.native
   def childOf(spanContext: opentracingLib.libSpanUnderscoreContextMod.default): opentracingLib.libReferenceMod.default = js.native
+  def followsFrom(spanContext: opentracingLib.libSpanMod.default): opentracingLib.libReferenceMod.default = js.native
   def followsFrom(spanContext: opentracingLib.libSpanUnderscoreContextMod.default): opentracingLib.libReferenceMod.default = js.native
   def globalTracer(): opentracingLib.libTracerMod.default = js.native
   def initGlobalTracer(tracer: opentracingLib.libTracerMod.default): scala.Unit = js.native

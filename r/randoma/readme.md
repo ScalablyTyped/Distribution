@@ -1,7 +1,7 @@
 
 # Scala.js typings for randoma
 
-Typings are for version 1.2
+Typings are for version 1.3.0
 
 ## Library description:
 User-friendly pseudorandom number generator (PRNG)
@@ -24,22 +24,11 @@ User-friendly pseudorandom number generator (PRNG)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for randoma 1.2
-// Project: https://github.com/sindresorhus/randoma#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -47,7 +47,7 @@ trait ScalingPolicy extends js.Object {
     */
   var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The policy type. The valid values are SimpleScaling and StepScaling.
+    * The policy type. The valid values are SimpleScaling, StepScaling, and TargetTrackingScaling.
     */
   var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.undefined
   /**

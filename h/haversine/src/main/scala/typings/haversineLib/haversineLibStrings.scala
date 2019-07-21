@@ -31,6 +31,9 @@ object haversineLibStrings {
   sealed trait `{lat,lng}` extends js.Object
   
   @js.native
+  sealed trait `{lat,lon}` extends js.Object
+  
+  @js.native
   sealed trait `{lon,lat}` extends js.Object
   
   @scala.inline
@@ -49,6 +52,8 @@ object haversineLibStrings {
   def nmi: nmi = "nmi".asInstanceOf[nmi]
   @scala.inline
   def `{lat,lng}`: `{lat,lng}` = "{lat,lng}".asInstanceOf[`{lat,lng}`]
+  @scala.inline
+  def `{lat,lon}`: `{lat,lon}` = "{lat,lon}".asInstanceOf[`{lat,lon}`]
   @scala.inline
   def `{lon,lat}`: `{lon,lat}` = "{lon,lat}".asInstanceOf[`{lon,lat}`]
 }

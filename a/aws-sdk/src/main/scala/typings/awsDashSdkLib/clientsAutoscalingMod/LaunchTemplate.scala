@@ -11,7 +11,7 @@ trait LaunchTemplate extends js.Object {
     */
   var LaunchTemplateSpecification: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   /**
-    * Any parameters that you specify override the same parameters in the launch template. Currently, the only supported override is instance type.  You must specify between 2 and 20 overrides.
+    * Any parameters that you specify override the same parameters in the launch template. Currently, the only supported override is instance type. You must specify between 2 and 20 overrides.
     */
   var Overrides: js.UndefOr[Overrides] = js.undefined
 }

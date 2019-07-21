@@ -35,6 +35,8 @@ trait EggAppConfig
     * customLoader config
     */
   var customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig] = js.native
+  /** custom logger of egg */
+  var customLogger: org.scalablytyped.runtime.StringDictionary[eggDashLoggerLib.eggDashLoggerMod.EggLoggerOptions] = js.native
   var development: eggLib.Anon_FastReady = js.native
   /**
     * It will ignore special keys when dumpConfig
@@ -85,7 +87,7 @@ trait EggAppConfig
     * @property {Object} coreLogger - custom config of coreLogger
     * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to true
     */
-  var logger: eggLib.Anon_AgentLogName = js.native
+  var logger: EggLoggerConfig = js.native
   var middleware: js.Array[java.lang.String] = js.native
   /**
     * The name of the application

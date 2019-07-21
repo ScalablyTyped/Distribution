@@ -74,6 +74,9 @@ trait IonRangeSliderOptions extends js.Object {
   var prettify_separator: js.UndefOr[java.lang.String] = js.undefined
       // Traverse extra CSS-classes to sliders container [Default: —]
   var scope: js.UndefOr[js.Any] = js.undefined
+  var skin: js.UndefOr[
+    ionDashRangesliderLib.ionDashRangesliderLibStrings.flat | ionDashRangesliderLib.ionDashRangesliderLibStrings.big | ionDashRangesliderLib.ionDashRangesliderLibStrings.modern | ionDashRangesliderLib.ionDashRangesliderLibStrings.round | ionDashRangesliderLib.ionDashRangesliderLibStrings.sharp | ionDashRangesliderLib.ionDashRangesliderLibStrings.square
+  ] = js.undefined
       // Set start position for right handle [Default: max]
   var step: js.UndefOr[scala.Double] = js.undefined
       // Set start position for left handle (or for single handle) [Default: min]
@@ -86,6 +89,7 @@ trait IonRangeSliderOptions extends js.Object {
   var to_min: js.UndefOr[scala.Double] = js.undefined
       // Set maximum limit for right handle [Default: max]
   var to_shadow: js.UndefOr[scala.Boolean] = js.undefined
+   // Set slider theme [Default: flat]
   var `type`: js.UndefOr[java.lang.String] = js.undefined
      // Allow user to drag whole range. Only for **double** type [Default: false]
   var values: js.UndefOr[js.Array[_]] = js.undefined
@@ -130,6 +134,7 @@ object IonRangeSliderOptions {
     prettify_enabled: js.UndefOr[scala.Boolean] = js.undefined,
     prettify_separator: java.lang.String = null,
     scope: js.Any = null,
+    skin: ionDashRangesliderLib.ionDashRangesliderLibStrings.flat | ionDashRangesliderLib.ionDashRangesliderLibStrings.big | ionDashRangesliderLib.ionDashRangesliderLibStrings.modern | ionDashRangesliderLib.ionDashRangesliderLibStrings.round | ionDashRangesliderLib.ionDashRangesliderLibStrings.sharp | ionDashRangesliderLib.ionDashRangesliderLibStrings.square = null,
     step: scala.Int | scala.Double = null,
     to: scala.Int | scala.Double = null,
     to_fixed: js.UndefOr[scala.Boolean] = js.undefined,
@@ -175,6 +180,7 @@ object IonRangeSliderOptions {
     if (!js.isUndefined(prettify_enabled)) __obj.updateDynamic("prettify_enabled")(prettify_enabled)
     if (prettify_separator != null) __obj.updateDynamic("prettify_separator")(prettify_separator)
     if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (!js.isUndefined(to_fixed)) __obj.updateDynamic("to_fixed")(to_fixed)

@@ -344,6 +344,7 @@ class Bucket protected ()
   def notification(id: java.lang.String): atGoogleDashCloudStorageLib.buildSrcNotificationMod.Notification = js.native
   def removeRetentionPeriod(): js.Promise[SetBucketMetadataResponse] = js.native
   def removeRetentionPeriod(callback: SetBucketMetadataCallback): scala.Unit = js.native
+  def setLabels(labels: Labels): js.Promise[SetLabelsResponse] = js.native
   def setLabels(labels: Labels, callback: SetLabelsCallback): scala.Unit = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions): js.Promise[SetLabelsResponse] = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions, callback: SetLabelsCallback): scala.Unit = js.native

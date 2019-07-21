@@ -11,6 +11,7 @@ trait Anon_DedicatedMasterCount extends js.Object {
   var dedicatedMasterType: js.UndefOr[java.lang.String] = js.undefined
   var instanceCount: js.UndefOr[scala.Double] = js.undefined
   var instanceType: js.UndefOr[java.lang.String] = js.undefined
+  var zoneAwarenessConfig: js.UndefOr[Anon_AvailabilityZoneCount] = js.undefined
   var zoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -22,6 +23,7 @@ object Anon_DedicatedMasterCount {
     dedicatedMasterType: java.lang.String = null,
     instanceCount: scala.Int | scala.Double = null,
     instanceType: java.lang.String = null,
+    zoneAwarenessConfig: Anon_AvailabilityZoneCount = null,
     zoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DedicatedMasterCount = {
     val __obj = js.Dynamic.literal()
@@ -30,6 +32,7 @@ object Anon_DedicatedMasterCount {
     if (dedicatedMasterType != null) __obj.updateDynamic("dedicatedMasterType")(dedicatedMasterType)
     if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType)
+    if (zoneAwarenessConfig != null) __obj.updateDynamic("zoneAwarenessConfig")(zoneAwarenessConfig)
     if (!js.isUndefined(zoneAwarenessEnabled)) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled)
     __obj.asInstanceOf[Anon_DedicatedMasterCount]
   }

@@ -52,6 +52,10 @@ trait ITrace extends js.Object {
   var persistedQueryHit: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   /** Trace persistedQueryRegister */
   var persistedQueryRegister: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
+  /** Trace queryPlan */
+  var queryPlan: js.UndefOr[
+    apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode | scala.Null
+  ] = js.undefined
   /** Trace registeredOperation */
   var registeredOperation: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   /** Trace root */
@@ -86,6 +90,7 @@ object ITrace {
     originReportedStartTime: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp = null,
     persistedQueryHit: js.UndefOr[scala.Boolean] = js.undefined,
     persistedQueryRegister: js.UndefOr[scala.Boolean] = js.undefined,
+    queryPlan: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.IQueryPlanNode = null,
     registeredOperation: js.UndefOr[scala.Boolean] = js.undefined,
     root: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.INode = null,
     signature: java.lang.String = null,
@@ -109,6 +114,7 @@ object ITrace {
     if (originReportedStartTime != null) __obj.updateDynamic("originReportedStartTime")(originReportedStartTime)
     if (!js.isUndefined(persistedQueryHit)) __obj.updateDynamic("persistedQueryHit")(persistedQueryHit)
     if (!js.isUndefined(persistedQueryRegister)) __obj.updateDynamic("persistedQueryRegister")(persistedQueryRegister)
+    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan)
     if (!js.isUndefined(registeredOperation)) __obj.updateDynamic("registeredOperation")(registeredOperation)
     if (root != null) __obj.updateDynamic("root")(root)
     if (signature != null) __obj.updateDynamic("signature")(signature)

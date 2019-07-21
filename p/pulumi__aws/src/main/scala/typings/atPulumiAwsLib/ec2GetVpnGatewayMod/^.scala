@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/getVpnGateway", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getVpnGateway(): js.Promise[GetVpnGatewayResult] = js.native
-  def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] = js.native
-  def getVpnGateway(args: GetVpnGatewayArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetVpnGatewayResult] = js.native
+  def getVpnGateway(): js.Promise[GetVpnGatewayResult] with GetVpnGatewayResult = js.native
+  def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] with GetVpnGatewayResult = js.native
+  def getVpnGateway(args: GetVpnGatewayArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetVpnGatewayResult] with GetVpnGatewayResult = js.native
 }
 

@@ -9,11 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Match utility function which supports multiple pattern globbing.
-    *
-    * @param paths paths to match against.
-    * @param patterns globbing patterns to use. e.g. `[*, "!cake"]`.
-    */
+  Extends [`minimatch.match()`](https://github.com/isaacs/minimatch#minimatchmatchlist-pattern-options) with support for multiple patterns.
+  @param paths - Paths to match against.
+  @param patterns - Globbing patterns to use. For example: `['*', '!cake']`. See supported [`minimatch` patterns](https://github.com/isaacs/minimatch#usage).
+  @returns The matching paths.
+  @example
+  ```
+  import multimatch = require('multimatch');
+  multimatch(['unicorn', 'cake', 'rainbows'], ['*', '!cake']);
+  //=> ['unicorn', 'rainbows']
+  ```
+  */
   def apply(
     paths: java.lang.String | js.Array[java.lang.String],
     patterns: java.lang.String | js.Array[java.lang.String]
@@ -21,7 +27,7 @@ object ^ extends js.Object {
   def apply(
     paths: java.lang.String | js.Array[java.lang.String],
     patterns: java.lang.String | js.Array[java.lang.String],
-    options: MultimatchOptions
+    options: Options
   ): js.Array[java.lang.String] = js.native
 }
 

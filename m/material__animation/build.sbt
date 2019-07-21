@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__animation"
-version := "0.35-dt-20190213Z-8c38dc"
+version := "0.35-dt-20190717Z-8c38dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

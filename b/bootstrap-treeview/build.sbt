@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-treeview"
-version := "1.20-dt-20180214Z-09ac0b"
+version := "1.20-dt-20190717Z-09ac0b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

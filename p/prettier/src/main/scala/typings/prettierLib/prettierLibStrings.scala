@@ -26,6 +26,9 @@ object prettierLibStrings {
     extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
+  sealed trait `as-needed` extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -54,6 +57,9 @@ object prettierLibStrings {
   
   @js.native
   sealed trait concat extends js.Object
+  
+  @js.native
+  sealed trait consistent extends js.Object
   
   @js.native
   sealed trait cr extends js.Object
@@ -185,6 +191,8 @@ object prettierLibStrings {
   @scala.inline
   def angular: angular = "angular".asInstanceOf[angular]
   @scala.inline
+  def `as-needed`: `as-needed` = "as-needed".asInstanceOf[`as-needed`]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def avoid: avoid = "avoid".asInstanceOf[avoid]
@@ -202,6 +210,8 @@ object prettierLibStrings {
   def choice: choice = "choice".asInstanceOf[choice]
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
+  @scala.inline
+  def consistent: consistent = "consistent".asInstanceOf[consistent]
   @scala.inline
   def cr: cr = "cr".asInstanceOf[cr]
   @scala.inline

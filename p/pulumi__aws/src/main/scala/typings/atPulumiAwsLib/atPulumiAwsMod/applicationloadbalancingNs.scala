@@ -98,24 +98,24 @@ object applicationloadbalancingNs extends js.Object {
   val Dualstack: atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType = js.native
   val Ipv4: atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType = js.native
   val NetworkLoadBalancer: atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType = js.native
-  def getListener(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] = js.native
-  def getListener(args: atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] = js.native
+  def getListener(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] with atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult = js.native
+  def getListener(args: atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] with atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult = js.native
   def getListener(
     args: atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] = js.native
-  def getLoadBalancer(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] = js.native
-  def getLoadBalancer(args: atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] = js.native
+  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] with atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult = js.native
+  def getLoadBalancer(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] with atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult = js.native
+  def getLoadBalancer(args: atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] with atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult = js.native
   def getLoadBalancer(
     args: atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] = js.native
-  def getTargetGroup(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
-  def getTargetGroup(args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult] with atPulumiAwsLib.applicationloadbalancingGetLoadBalancerMod.GetLoadBalancerResult = js.native
+  def getTargetGroup(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] with atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult = js.native
+  def getTargetGroup(args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] with atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult = js.native
   def getTargetGroup(
     args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] with atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult = js.native
   /* static members */
   @js.native
   object Listener extends js.Object {

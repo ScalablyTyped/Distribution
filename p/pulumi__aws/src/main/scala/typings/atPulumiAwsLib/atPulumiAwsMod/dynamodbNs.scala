@@ -57,11 +57,11 @@ object dynamodbNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.dynamodbTableItemMod.TableItemArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getTable(args: atPulumiAwsLib.dynamodbGetTableMod.GetTableArgs): js.Promise[atPulumiAwsLib.dynamodbGetTableMod.GetTableResult] = js.native
+  def getTable(args: atPulumiAwsLib.dynamodbGetTableMod.GetTableArgs): js.Promise[atPulumiAwsLib.dynamodbGetTableMod.GetTableResult] with atPulumiAwsLib.dynamodbGetTableMod.GetTableResult = js.native
   def getTable(
     args: atPulumiAwsLib.dynamodbGetTableMod.GetTableArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.dynamodbGetTableMod.GetTableResult] = js.native
+  ): js.Promise[atPulumiAwsLib.dynamodbGetTableMod.GetTableResult] with atPulumiAwsLib.dynamodbGetTableMod.GetTableResult = js.native
   /* static members */
   @js.native
   object GlobalTable extends js.Object {

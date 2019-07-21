@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait LayerProps extends js.Object {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
+  var animation: js.UndefOr[
+    grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.slide | grommetLib.grommetLibStrings.fadeIn | scala.Boolean
+  ] = js.undefined
   var full: js.UndefOr[
     scala.Boolean | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.horizontal
   ] = js.undefined
@@ -27,6 +30,7 @@ object LayerProps {
   @scala.inline
   def apply(
     animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.slide | grommetLib.grommetLibStrings.fadeIn | scala.Boolean = null,
     full: scala.Boolean | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.horizontal = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.Anon_BottomHorizontal | java.lang.String = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,6 +42,7 @@ object LayerProps {
   ): LayerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)

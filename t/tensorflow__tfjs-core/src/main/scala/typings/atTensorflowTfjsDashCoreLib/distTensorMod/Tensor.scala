@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tensor[R /* <: atTensorflowTfjsDashCoreLib.distTypesMod.Rank */] protected () extends js.Object {
   protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues, dataId: DataId) = this()
-  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues, dataId: DataId, backend: Backend) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues, dataId: DataId) = this()
+  protected def this(shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any, dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType, values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues, dataId: DataId, backend: Backend) = this()
   /**
     * Id of the bucket holding the data for this tensor. Multiple arrays can
     * point to the same bucket (e.g. when calling array.reshape()).
@@ -213,6 +213,8 @@ class Tensor[R /* <: atTensorflowTfjsDashCoreLib.distTypesMod.Rank */] protected
   /** Returns a `tf.TensorBuffer` that holds the underlying data. */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def bufferSync(): TensorBuffer[R, atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreLibStrings.float32] = js.native
+  /** Returns the underlying bytes of the tensor's data. */
+  def bytes(): js.Promise[js.Array[stdLib.Uint8Array] | stdLib.Uint8Array] = js.native
   def cast[T /* <: this.type */](dtype: atTensorflowTfjsDashCoreLib.distTypesMod.DataType): T = js.native
   def ceil[T /* <: Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] */](`this`: T): T = js.native
   def clipByValue(min: scala.Double, max: scala.Double): Tensor[R] = js.native

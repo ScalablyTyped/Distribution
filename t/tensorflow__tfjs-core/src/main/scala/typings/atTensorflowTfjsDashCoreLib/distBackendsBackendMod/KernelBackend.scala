@@ -356,9 +356,9 @@ class KernelBackend ()
     axes: js.Array[scala.Double]
   ): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] = js.native
   /* InferMemberOverrides */
-  override def read(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): js.Promise[atTensorflowTfjsDashCoreLib.distTypesMod.DataValues] = js.native
+  override def read(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): js.Promise[atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues] = js.native
   /* InferMemberOverrides */
-  override def readSync(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): atTensorflowTfjsDashCoreLib.distTypesMod.DataValues = js.native
+  override def readSync(dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId): atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues = js.native
   def real[T /* <: atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] */](input: T): T = js.native
   def realDivide(
     a: atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank],
@@ -466,7 +466,7 @@ class KernelBackend ()
   /* InferMemberOverrides */
   override def write(
     dataId: atTensorflowTfjsDashCoreLib.distTensorMod.DataId,
-    values: atTensorflowTfjsDashCoreLib.distTypesMod.DataValues
+    values: atTensorflowTfjsDashCoreLib.distTypesMod.BackendValues
   ): scala.Unit = js.native
   def zerosLike[R /* <: atTensorflowTfjsDashCoreLib.distTypesMod.Rank */](x: atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[R]): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[R] = js.native
 }

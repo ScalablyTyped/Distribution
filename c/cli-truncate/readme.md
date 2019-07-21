@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-truncate
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Truncate a string to a specific width in the terminal
@@ -24,21 +24,11 @@ Truncate a string to a specific width in the terminal
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cli-truncate 1.1
-// Project: https://github.com/sindresorhus/cli-truncate
-// Definitions by: Daniel Byrne <https://github.com/danwbyrne>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

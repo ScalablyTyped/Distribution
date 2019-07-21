@@ -20,6 +20,10 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     */
   def this(place: stdLib.Node, props: DirectEditorProps[S]) = this()
   /**
+    * Holds true when a composition is active.
+    */
+  var composing: scala.Boolean = js.native
+  /**
     * An editable DOM node containing the document. (You probably
     * should not directly interfere with its content.)
     */
@@ -147,8 +151,8 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   /**
     * Given a pair of viewport coordinates, return the document
     * position that corresponds to them. May return null if the given
-    * coordinates aren't inside of the visible editor. When an object
-    * is returned, its `pos` property is the position nearest to the
+    * coordinates aren't inside of the editor. When an object is
+    * returned, its `pos` property is the position nearest to the
     * coordinates, and its `inside` property holds the position of the
     * inner node that the position falls inside of, or -1 if it is at
     * the top level, not in any node.

@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for react-html-parser 2.0
 // Project: https://github.com/wrakky/react-html-parser#readme
 // Definitions by: Spencer Elliott <https://github.com/elliottsj>
+//                 Wooram Jun <https://github.com/chatoo2412>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

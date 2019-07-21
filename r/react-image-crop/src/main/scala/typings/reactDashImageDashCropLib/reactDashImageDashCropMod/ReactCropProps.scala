@@ -21,7 +21,7 @@ trait ReactCropProps extends js.Object {
   var maxWidth: js.UndefOr[scala.Double] = js.undefined
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
-  var onComplete: js.UndefOr[js.Function1[/* crop */ Crop, scala.Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function2[/* crop */ Crop, /* percentCrop */ PercentCrop, scala.Unit]] = js.undefined
   var onDragEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onDragStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onImageError: js.UndefOr[
@@ -35,13 +35,13 @@ trait ReactCropProps extends js.Object {
   var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   var src: java.lang.String
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  def onChange(crop: Crop): scala.Unit
+  def onChange(crop: Crop, percentCrop: PercentCrop): scala.Unit
 }
 
 object ReactCropProps {
   @scala.inline
   def apply(
-    onChange: Crop => scala.Unit,
+    onChange: (Crop, PercentCrop) => scala.Unit,
     src: java.lang.String,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
@@ -56,7 +56,7 @@ object ReactCropProps {
     maxWidth: scala.Int | scala.Double = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    onComplete: /* crop */ Crop => scala.Unit = null,
+    onComplete: (/* crop */ Crop, /* percentCrop */ PercentCrop) => scala.Unit = null,
     onDragEnd: () => scala.Unit = null,
     onDragStart: () => scala.Unit = null,
     onImageError: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
@@ -65,7 +65,7 @@ object ReactCropProps {
     renderSelectionAddon: /* state */ js.Any => reactLib.reactMod.ReactNode = null,
     style: reactLib.reactMod.CSSProperties = null
   ): ReactCropProps = {
-    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), src = src)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (crop != null) __obj.updateDynamic("crop")(crop)
@@ -79,7 +79,7 @@ object ReactCropProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction0(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))

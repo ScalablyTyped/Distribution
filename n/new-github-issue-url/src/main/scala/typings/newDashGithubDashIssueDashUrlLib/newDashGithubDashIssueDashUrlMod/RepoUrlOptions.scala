@@ -5,11 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RepoUrlOptions extends BaseOptions {
+trait RepoUrlOptions
+  extends CommonOptions
+     with Options {
   /**
-    * The full URL to the repo.
-    */
-  var repoUrl: java.lang.String
+  		The full URL to the repo.
+  		*/
+  val repoUrl: java.lang.String
 }
 
 object RepoUrlOptions {

@@ -35,7 +35,7 @@ trait Endpoint extends js.Object {
     */
   var EndpointIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * The type of endpoint.
+    * The type of endpoint. Valid values are source and target.
     */
   var EndpointType: js.UndefOr[ReplicationEndpointTypeValue] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait Endpoint extends js.Object {
     */
   var EngineDisplayName: js.UndefOr[String] = js.undefined
   /**
-    * The database engine name. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
+    * The database engine name. Valid values, depending on the EndpointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
     */
   var EngineName: js.UndefOr[String] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait Endpoint extends js.Object {
     */
   var KinesisSettings: js.UndefOr[KinesisSettings] = js.undefined
   /**
-    * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An AWS KMS key identifier that is used to encrypt the connection parameters for the endpoint. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -75,7 +75,7 @@ trait Endpoint extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * Settings for the Amazon Redshift endpoint
+    * Settings for the Amazon Redshift endpoint.
     */
   var RedshiftSettings: js.UndefOr[RedshiftSettings] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Endpoint extends js.Object {
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * The SSL mode used to connect to the endpoint. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.
+    * The SSL mode used to connect to the endpoint. The default value is none.
     */
   var SslMode: js.UndefOr[DmsSslModeValue] = js.undefined
   /**

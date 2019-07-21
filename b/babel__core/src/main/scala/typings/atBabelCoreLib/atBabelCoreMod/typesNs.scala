@@ -430,6 +430,33 @@ object typesNs extends js.Object {
     typeAnnotation: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
   def assignmentPattern(
+    left: atBabelTypesLib.atBabelTypesMod.MemberExpression,
+    right: atBabelTypesLib.atBabelTypesMod.Expression
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def assignmentPattern(
+    left: atBabelTypesLib.atBabelTypesMod.MemberExpression,
+    right: atBabelTypesLib.atBabelTypesMod.Expression,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def assignmentPattern(
+    left: atBabelTypesLib.atBabelTypesMod.MemberExpression,
+    right: atBabelTypesLib.atBabelTypesMod.Expression,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    typeAnnotation: atBabelTypesLib.atBabelTypesMod.Noop
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def assignmentPattern(
+    left: atBabelTypesLib.atBabelTypesMod.MemberExpression,
+    right: atBabelTypesLib.atBabelTypesMod.Expression,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    typeAnnotation: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def assignmentPattern(
+    left: atBabelTypesLib.atBabelTypesMod.MemberExpression,
+    right: atBabelTypesLib.atBabelTypesMod.Expression,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    typeAnnotation: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def assignmentPattern(
     left: atBabelTypesLib.atBabelTypesMod.ObjectPattern,
     right: atBabelTypesLib.atBabelTypesMod.Expression
   ): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
@@ -6400,8 +6427,8 @@ object typesNs extends js.Object {
     quasi: atBabelTypesLib.atBabelTypesMod.TemplateLiteral,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression = js.native
-  def templateElement(value: js.Any): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
-  def templateElement(value: js.Any, tail: scala.Boolean): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def templateElement(value: atBabelTypesLib.Anon_Cooked): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def templateElement(value: atBabelTypesLib.Anon_Cooked, tail: scala.Boolean): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
   def templateLiteral(
     quasis: js.Array[atBabelTypesLib.atBabelTypesMod.TemplateElement],
     expressions: js.Array[atBabelTypesLib.atBabelTypesMod.Expression]

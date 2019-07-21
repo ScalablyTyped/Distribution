@@ -19,7 +19,7 @@ trait EntityRecognizerInputDataConfig extends js.Object {
     */
   var EntityList: js.UndefOr[EntityRecognizerEntityList] = js.undefined
   /**
-    * The entity types in the input data for an entity recognizer.
+    * The entity types in the input data for an entity recognizer. A maximum of 12 entity types can be used at one time to train an entity recognizer.
     */
   var EntityTypes: EntityTypesList
 }

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ObjectSchema[T /* <: js.UndefOr[js.Object | scala.Null] */] extends Schema[T] {
   def camelCase(): ObjectSchema[T] = js.native
+  def concat[U /* <: js.Object */](schema: ObjectSchema[U]): ObjectSchema[T with U] = js.native
   def constantCase(): ObjectSchema[T] = js.native
   def from(fromKey: java.lang.String, toKey: java.lang.String): ObjectSchema[T] = js.native
   def from(fromKey: java.lang.String, toKey: java.lang.String, alias: scala.Boolean): ObjectSchema[T] = js.native

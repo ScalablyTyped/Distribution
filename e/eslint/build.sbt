@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "eslint"
-version := "4.16-dt-20190128Z-553c18"
+version := "4.16-dt-20190128Z-d96ac4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-f5e4db",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190212Z-dda583",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-dda583",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

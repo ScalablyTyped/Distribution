@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "reconnect-core"
-version := "1.3-dt-20190212Z-c69fe3"
+version := "1.3-dt-20190212Z-75a792"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "backoff" % "2.5-dt-20180214Z-05ea5a",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "backoff" % "2.5-dt-20180214Z-277586",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

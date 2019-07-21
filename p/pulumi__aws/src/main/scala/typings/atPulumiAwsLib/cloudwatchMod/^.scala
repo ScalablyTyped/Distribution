@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getLogGroup(args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] = js.native
+  def getLogGroup(args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] with atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult = js.native
   def getLogGroup(
     args: atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] = js.native
+  ): js.Promise[atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult] with atPulumiAwsLib.cloudwatchGetLogGroupMod.GetLogGroupResult = js.native
   def onSchedule(
     name: java.lang.String,
     schedule: java.lang.String,

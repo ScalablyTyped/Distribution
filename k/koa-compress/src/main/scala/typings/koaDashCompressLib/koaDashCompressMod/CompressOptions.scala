@@ -21,7 +21,7 @@ object CompressOptions {
   @scala.inline
   def apply(
     chunkSize: scala.Int | scala.Double = null,
-    dictionary: nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
+    dictionary: nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
     filter: /* content_type */ java.lang.String => scala.Boolean = null,
     finishFlush: scala.Int | scala.Double = null,
     flush: scala.Int | scala.Double = null,

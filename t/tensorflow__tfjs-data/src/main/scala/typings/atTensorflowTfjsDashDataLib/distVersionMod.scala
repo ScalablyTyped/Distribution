@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-data/dist/version", JSImport.Namespace)
 @js.native
 object distVersionMod extends js.Object {
-  val version: atTensorflowTfjsDashDataLib.atTensorflowTfjsDashDataLibStrings.`1DOT2DOT2` = js.native
+  val version: atTensorflowTfjsDashDataLib.atTensorflowTfjsDashDataLibStrings.`1DOT2DOT3` = js.native
 }
 

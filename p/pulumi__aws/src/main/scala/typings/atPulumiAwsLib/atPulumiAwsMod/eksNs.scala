@@ -22,16 +22,16 @@ object eksNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.eksClusterMod.ClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCluster(args: atPulumiAwsLib.eksGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] = js.native
+  def getCluster(args: atPulumiAwsLib.eksGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] with atPulumiAwsLib.eksGetClusterMod.GetClusterResult = js.native
   def getCluster(
     args: atPulumiAwsLib.eksGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] = js.native
-  def getClusterAuth(args: atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthArgs): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] = js.native
+  ): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] with atPulumiAwsLib.eksGetClusterMod.GetClusterResult = js.native
+  def getClusterAuth(args: atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthArgs): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] with atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult = js.native
   def getClusterAuth(
     args: atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] = js.native
+  ): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] with atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-write
 
-Typings are for version 3.3
+Typings are for version 4.0.0
 
 ## Library description:
 Write string/buffer/stream to a random temp file
@@ -24,21 +24,11 @@ Write string/buffer/stream to a random temp file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for temp-write 3.3
-// Project: https://github.com/sindresorhus/temp-write#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

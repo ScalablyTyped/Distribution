@@ -21429,6 +21429,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UPDATE_FAILED
     extends awsDashSdkLib.clientsMedialiveMod._ChannelState
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
   
   @js.native
@@ -21442,7 +21444,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UPDATE_IN_PROGRESS
     extends awsDashSdkLib.clientsCloudhsmv2Mod._ClusterState
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
        with awsDashSdkLib.clientsWorkspacesMod._ModificationStateEnum
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
        with awsDashSdkLib.clientsCloudformationMod._StackStatus
   
@@ -21473,6 +21477,11 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UPDATE_SERVICE
     extends awsDashSdkLib.clientsServicediscoveryMod._OperationType
+  
+  @js.native
+  sealed trait UPDATE_SUCCESSFUL
+    extends awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
   
   @js.native
   sealed trait UPDATING
@@ -23286,6 +23295,9 @@ object awsDashSdkLibStrings {
   sealed trait batchPredictionAvailable extends js.Object
   
   @js.native
+  sealed trait beta extends js.Object
+  
+  @js.native
   sealed trait bg
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
   
@@ -23806,6 +23818,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `container-instance` extends js.Object
+  
+  @js.native
+  sealed trait containerInsights
+    extends awsDashSdkLib.clientsEcsMod._SettingName
   
   @js.native
   sealed trait containerInstanceLongArnFormat
@@ -38195,6 +38211,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def UPDATE_SERVICE: UPDATE_SERVICE = "UPDATE_SERVICE".asInstanceOf[UPDATE_SERVICE]
   @scala.inline
+  def UPDATE_SUCCESSFUL: UPDATE_SUCCESSFUL = "UPDATE_SUCCESSFUL".asInstanceOf[UPDATE_SUCCESSFUL]
+  @scala.inline
   def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
   @scala.inline
   def UPDATING_AGENT: UPDATING_AGENT = "UPDATING_AGENT".asInstanceOf[UPDATING_AGENT]
@@ -38951,6 +38969,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def batchPredictionAvailable: batchPredictionAvailable = "batchPredictionAvailable".asInstanceOf[batchPredictionAvailable]
   @scala.inline
+  def beta: beta = "beta".asInstanceOf[beta]
+  @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
   @scala.inline
   def big5: big5 = "big5".asInstanceOf[big5]
@@ -39196,6 +39216,8 @@ object awsDashSdkLibStrings {
   def container: container = "container".asInstanceOf[container]
   @scala.inline
   def `container-instance`: `container-instance` = "container-instance".asInstanceOf[`container-instance`]
+  @scala.inline
+  def containerInsights: containerInsights = "containerInsights".asInstanceOf[containerInsights]
   @scala.inline
   def containerInstanceLongArnFormat: containerInstanceLongArnFormat = "containerInstanceLongArnFormat".asInstanceOf[containerInstanceLongArnFormat]
   @scala.inline

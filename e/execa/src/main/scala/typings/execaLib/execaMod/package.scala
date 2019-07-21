@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object execaMod {
-  type ExecaChildProcess = nodeLib.childUnderscoreProcessMod.ChildProcess with ExecaChildPromise with js.Promise[ExecaReturns]
-  type ExecaError = stdLib.Error with ExecaReturns
+  type ExecaChildProcess[StdoutErrorType] = nodeLib.childUnderscoreProcessMod.ChildProcess with ExecaChildPromise[StdoutErrorType] with js.Promise[ExecaReturnValue[StdoutErrorType]]
+  type ExecaSyncReturnValue[StdoutErrorType] = ExecaReturnBase[StdoutErrorType]
   /* Rewritten from type alias, can be one of: 
     - execaLib.execaLibStrings.pipe
     - execaLib.execaLibStrings.ipc
@@ -15,9 +15,8 @@ package object execaMod {
     - execaLib.execaLibStrings.inherit
     - nodeLib.streamMod.Stream
     - scala.Double
-    - scala.Null
     - `js.undefined`
     - scala.Nothing
   */
-  type StdIOOption = js.UndefOr[_StdIOOption | nodeLib.streamMod.Stream | scala.Double | scala.Null]
+  type StdioOption = js.UndefOr[_StdioOption | nodeLib.streamMod.Stream | scala.Double]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ErrorOnResultReceived[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends js.Object {
   var onResultReceived: js.UndefOr[
     js.Function2[
-      /* error */ js.UndefOr[global_Error | meteorLib.meteorMeteorMod.MeteorNs.Error], 
+      /* error */ js.UndefOr[global_Error | meteorLib.MeteorNs.Error], 
       /* result */ js.UndefOr[Result], 
       scala.Unit
     ]
@@ -22,7 +22,7 @@ trait Anon_ErrorOnResultReceived[Result /* <: EJSONable | (js.Array[EJSONable | 
 object Anon_ErrorOnResultReceived {
   @scala.inline
   def apply[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](
-    onResultReceived: (/* error */ js.UndefOr[global_Error | meteorLib.meteorMeteorMod.MeteorNs.Error], /* result */ js.UndefOr[Result]) => scala.Unit = null,
+    onResultReceived: (/* error */ js.UndefOr[global_Error | meteorLib.MeteorNs.Error], /* result */ js.UndefOr[Result]) => scala.Unit = null,
     returnStubValue: js.UndefOr[scala.Boolean] = js.undefined,
     throwStubExceptions: js.UndefOr[scala.Boolean] = js.undefined,
     wait: js.UndefOr[scala.Boolean] = js.undefined

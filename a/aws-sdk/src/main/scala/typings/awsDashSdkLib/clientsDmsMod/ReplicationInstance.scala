@@ -35,11 +35,11 @@ trait ReplicationInstance extends js.Object {
     */
   var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
   /**
-    * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An AWS KMS key identifier that is used to encrypt the data on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
+    *  Specifies whether the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
     */
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait ReplicationInstance extends js.Object {
     */
   var ReplicationInstancePrivateIpAddress: js.UndefOr[String] = js.undefined
   /**
-    * The private IP address of the replication instance.
+    * One or more private IP addresses for the replication instance.
     */
   var ReplicationInstancePrivateIpAddresses: js.UndefOr[ReplicationInstancePrivateIpAddressList] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait ReplicationInstance extends js.Object {
     */
   var ReplicationInstancePublicIpAddress: js.UndefOr[String] = js.undefined
   /**
-    * The public IP address of the replication instance.
+    * One or more public IP addresses for the replication instance.
     */
   var ReplicationInstancePublicIpAddresses: js.UndefOr[ReplicationInstancePublicIpAddressList] = js.undefined
   /**

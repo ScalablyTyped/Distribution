@@ -19,8 +19,6 @@ trait Anon_Create extends js.Object {
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
     *
-    * To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
-    *
     * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */
   @JSName("create")
@@ -90,8 +88,6 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
-    *
-    * To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
     *
     * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */

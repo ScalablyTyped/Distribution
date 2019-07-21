@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es6-weak-map"
-version := "1.2-dt-20180214Z-8a0a44"
+version := "1.2-dt-20190717Z-8a0a44"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

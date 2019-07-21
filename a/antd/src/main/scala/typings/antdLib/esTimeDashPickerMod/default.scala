@@ -15,7 +15,7 @@ class default protected () extends TimePicker {
 @JSImport("antd/es/time-picker", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_AlignDisabled = js.native
+  var defaultProps: antdLib.Anon_AlignDisabledHours = js.native
   def getDerivedStateFromProps(nextProps: antdLib.esTimeDashPickerMod.TimePickerProps): antdLib.Anon_ValueMoment | scala.Null = js.native
 }
 

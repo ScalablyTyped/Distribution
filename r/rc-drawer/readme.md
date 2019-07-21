@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-drawer
 
-Typings are for version 1.10.1
+Typings are for version 2.0.2
 
 ## Library description:
 drawer component for react
@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rc-drawer 1.9
-// Project: https://github.com/react-component/drawer
-// Definitions by: jljsj33 <https://github.com/jljsj33>
-// Definitions: https://github.com/react-component/drawer
-
-```
 

@@ -17,7 +17,9 @@ trait IDialogPropTypes extends js.Object {
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
+  var getContainer: js.UndefOr[
+    IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | rcDashDialogLib.rcDashDialogLibNumbers.`false`
+  ] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
@@ -56,7 +58,7 @@ object IDialogPropTypes {
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     footer: reactLib.reactMod.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: () => stdLib.HTMLElement = null,
+    getContainer: IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | rcDashDialogLib.rcDashDialogLibNumbers.`false` = null,
     height: scala.Int | scala.Double = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
@@ -90,7 +92,7 @@ object IDialogPropTypes {
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)

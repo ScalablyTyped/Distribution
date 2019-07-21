@@ -41,6 +41,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ian Howe <https://github.com/ianhowe76>
 //                 Alex Bjørlig <https://github.com/dauledk>
 //                 Dan Rumney <https://github.com/dancrumb>
+//                 Peter <https://github.com/pwrnrd>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

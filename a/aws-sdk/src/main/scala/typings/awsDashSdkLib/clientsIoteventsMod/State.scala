@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait State extends js.Object {
   /**
-    * When entering this state, perform these actions if the condition is TRUE.
+    * When entering this state, perform these "actions" if the "condition" is TRUE.
     */
   var onEnter: js.UndefOr[OnEnterLifecycle] = js.undefined
   /**
-    * When exiting this state, perform these actions if the specified condition is TRUE.
+    * When exiting this state, perform these "actions" if the specified "condition" is TRUE.
     */
   var onExit: js.UndefOr[OnExitLifecycle] = js.undefined
   /**
-    * When an input is received and the condition is TRUE, perform the specified actions.
+    * When an input is received and the "condition" is TRUE, perform the specified "actions".
     */
   var onInput: js.UndefOr[OnInputLifecycle] = js.undefined
   /**

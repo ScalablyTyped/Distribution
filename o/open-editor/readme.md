@@ -1,7 +1,7 @@
 
 # Scala.js typings for open-editor
 
-Typings are for version 1.2
+Typings are for version 2.0.1
 
 ## Library description:
 Open files in your editor at a specific line and column
@@ -24,22 +24,11 @@ Open files in your editor at a specific line and column
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for open-editor 1.2
-// Project: https://github.com/sindresorhus/open-editor#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

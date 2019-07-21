@@ -14,7 +14,7 @@ object RenderInlineProps {
   def apply(
     attributes: RenderAttributes,
     children: reactLib.reactMod.ReactNode,
-    editor: slateLib.slateMod.Editor,
+    editor: Editor,
     isFocused: scala.Boolean,
     isSelected: scala.Boolean,
     key: java.lang.String,

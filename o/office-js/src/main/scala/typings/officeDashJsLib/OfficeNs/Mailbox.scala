@@ -125,7 +125,7 @@ trait Mailbox extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Adds an event handler for a supported event.
+    * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
     * Currently, the only supported event type is `Office.EventType.ItemChanged`.
     * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
@@ -550,7 +550,7 @@ trait Mailbox extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Removes the event handlers for a supported event type.
+    * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
     * Currently, the only supported event type is `Office.EventType.ItemChanged`.
     * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.

@@ -162,7 +162,7 @@ object QueryParameters {
     distinct: scala.Double | scala.Boolean = null,
     enableExactOnSingleWordQuery: js.UndefOr[scala.Boolean] = js.undefined,
     exactOnSingleWordQuery: algoliasearchLib.algoliasearchLibStrings.attribute | algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.word = null,
-    facetFilters: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
+    facetFilters: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
     facetingAfterDistinct: js.UndefOr[scala.Boolean] = js.undefined,
     facets: js.Array[java.lang.String] = null,
     facetsExcludes: org.scalablytyped.runtime.StringDictionary[

@@ -19,35 +19,35 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var CdcStopPosition: js.UndefOr[String] = js.undefined
   /**
-    * The migration type.
+    * The migration type. Valid values: full-load | cdc | full-load-and-cdc 
     */
   var MigrationType: MigrationTypeValue
   /**
-    * The Amazon Resource Name (ARN) of the replication instance.
+    * The Amazon Resource Name (ARN) of a replication instance.
     */
   var ReplicationInstanceArn: String
   /**
-    * The replication task identifier. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
+    * An identifier for the replication task. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ReplicationTaskIdentifier: String
   /**
-    * Settings for the task, such as target metadata settings. For a complete list of task settings, see Task Settings for AWS Database Migration Service Tasks in the AWS Database Migration User Guide. 
+    * Overall settings for the task, in JSON format. For more information, see Task Settings in the AWS Database Migration User Guide. 
     */
   var ReplicationTaskSettings: js.UndefOr[String] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
+    * An Amazon Resource Name (ARN) that uniquely identifies the source endpoint.
     */
   var SourceEndpointArn: String
   /**
-    * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with "file://". When working with the DMS API, provide the JSON as the parameter value. For example, --table-mappings file://mappingfile.json
+    * The table mappings for the task, in JSON format. For more information, see Table Mapping in the AWS Database Migration User Guide. 
     */
   var TableMappings: String
   /**
-    * Tags to be added to the replication instance.
+    * One or more tags to be assigned to the replication task.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
+    * An Amazon Resource Name (ARN) that uniquely identifies the target endpoint.
     */
   var TargetEndpointArn: String
 }

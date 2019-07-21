@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetZoneArgs extends js.Object {
-  val callerReference: js.UndefOr[java.lang.String] = js.undefined
-  val comment: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The Hosted Zone name of the desired Hosted Zone.
     */
@@ -35,8 +33,6 @@ trait GetZoneArgs extends js.Object {
 object GetZoneArgs {
   @scala.inline
   def apply(
-    callerReference: java.lang.String = null,
-    comment: java.lang.String = null,
     name: java.lang.String = null,
     privateZone: js.UndefOr[scala.Boolean] = js.undefined,
     resourceRecordSetCount: scala.Int | scala.Double = null,
@@ -45,8 +41,6 @@ object GetZoneArgs {
     zoneId: java.lang.String = null
   ): GetZoneArgs = {
     val __obj = js.Dynamic.literal()
-    if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone)
     if (resourceRecordSetCount != null) __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount.asInstanceOf[js.Any])

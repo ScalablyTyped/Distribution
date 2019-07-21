@@ -37,11 +37,11 @@ object acmNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.acmCertificateValidationMod.CertificateValidationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getCertificate(args: atPulumiAwsLib.acmGetCertificateMod.GetCertificateArgs): js.Promise[atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult] = js.native
+  def getCertificate(args: atPulumiAwsLib.acmGetCertificateMod.GetCertificateArgs): js.Promise[atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult] with atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult = js.native
   def getCertificate(
     args: atPulumiAwsLib.acmGetCertificateMod.GetCertificateArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult] = js.native
+  ): js.Promise[atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult] with atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult = js.native
   /* static members */
   @js.native
   object Certificate extends js.Object {

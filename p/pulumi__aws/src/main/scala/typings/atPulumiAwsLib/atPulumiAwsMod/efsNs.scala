@@ -37,17 +37,17 @@ object efsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.efsMountTargetMod.MountTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getFileSystem(): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] = js.native
-  def getFileSystem(args: atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemArgs): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] = js.native
+  def getFileSystem(): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] with atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult = js.native
+  def getFileSystem(args: atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemArgs): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] with atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult = js.native
   def getFileSystem(
     args: atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] = js.native
-  def getMountTarget(args: atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetArgs): js.Promise[atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult] = js.native
+  ): js.Promise[atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult] with atPulumiAwsLib.efsGetFileSystemMod.GetFileSystemResult = js.native
+  def getMountTarget(args: atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetArgs): js.Promise[atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult] with atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult = js.native
   def getMountTarget(
     args: atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult] = js.native
+  ): js.Promise[atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult] with atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult = js.native
   /* static members */
   @js.native
   object FileSystem extends js.Object {

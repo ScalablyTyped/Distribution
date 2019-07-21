@@ -14,19 +14,5 @@ object stringUnderscoreDecoderNs extends js.Object {
     def this(encoding: java.lang.String) = this()
   }
   
-  @js.native
-  class StringDecoderCls ()
-    extends nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder {
-    def this(encoding: java.lang.String) = this()
-  }
-  
-  @js.native
-  object StringDecoder
-    extends org.scalablytyped.runtime.Instantiable0[nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder]
-       with org.scalablytyped.runtime.Instantiable1[
-          /* encoding */ java.lang.String, 
-          nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder
-        ]
-  
 }
 

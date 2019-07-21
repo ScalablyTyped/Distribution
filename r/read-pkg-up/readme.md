@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg-up
 
-Typings are for version 3.0
+Typings are for version 6.0.0
 
 ## Library description:
 Read the closest package.json file
@@ -24,22 +24,11 @@ Read the closest package.json file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for read-pkg-up 3.0
-// Project: https://github.com/sindresorhus/read-pkg-up
-// Definitions by: Louis Orleans <https://github.com/dudeofawesome>
-//                 Jeff Dickey <https://github.com/jdxcode>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

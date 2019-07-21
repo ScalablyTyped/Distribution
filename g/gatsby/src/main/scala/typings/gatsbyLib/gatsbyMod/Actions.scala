@@ -18,17 +18,17 @@ trait Actions extends js.Object {
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id): scala.Unit = js.native
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id, plugin: ActionPlugin): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createNode */
-  def createNode(node: Node): scala.Unit = js.native
-  def createNode(node: Node, plugin: ActionPlugin): scala.Unit = js.native
-  def createNode(node: Node, plugin: ActionPlugin, options: ActionOptions): scala.Unit = js.native
+  def createNode(node: NodeInput): scala.Unit = js.native
+  def createNode(node: NodeInput, plugin: ActionPlugin): scala.Unit = js.native
+  def createNode(node: NodeInput, plugin: ActionPlugin, options: ActionOptions): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createNodeField */
   def createNodeField(args: gatsbyLib.Anon_FieldName): scala.Unit = js.native
   def createNodeField(args: gatsbyLib.Anon_FieldName, plugin: ActionPlugin): scala.Unit = js.native
   def createNodeField(args: gatsbyLib.Anon_FieldName, plugin: ActionPlugin, options: ActionOptions): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createPage */
-  def createPage(args: gatsbyLib.Anon_ComponentContext): scala.Unit = js.native
-  def createPage(args: gatsbyLib.Anon_ComponentContext, plugin: ActionPlugin): scala.Unit = js.native
-  def createPage(args: gatsbyLib.Anon_ComponentContext, plugin: ActionPlugin, option: ActionOptions): scala.Unit = js.native
+  def createPage[TContext](args: gatsbyLib.Anon_ComponentContext[TContext]): scala.Unit = js.native
+  def createPage[TContext](args: gatsbyLib.Anon_ComponentContext[TContext], plugin: ActionPlugin): scala.Unit = js.native
+  def createPage[TContext](args: gatsbyLib.Anon_ComponentContext[TContext], plugin: ActionPlugin, option: ActionOptions): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createParentChildLink */
   def createParentChildLink(args: gatsbyLib.Anon_Child): scala.Unit = js.native
   def createParentChildLink(args: gatsbyLib.Anon_Child, plugin: ActionPlugin): scala.Unit = js.native

@@ -9,44 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Buffer protected ()
   extends nodeLib.Buffer {
-  def this(arrayBuffer: nodeLib.SharedArrayBuffer) = this()
-  /**
-    * Produces a Buffer backed by the same allocated memory as
-    * the given {ArrayBuffer}/{SharedArrayBuffer}.
-    *
-    *
-    * @param arrayBuffer The ArrayBuffer with which to share memory.
-    * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
-    */
-  def this(arrayBuffer: stdLib.ArrayBuffer) = this()
-  /**
-    * Allocates a new buffer containing the given {array} of octets.
-    *
-    * @param array The octets to store.
-    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-    */
-  def this(array: js.Array[_]) = this()
-  /**
-    * Allocates a new buffer containing the given {array} of octets.
-    *
-    * @param array The octets to store.
-    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-    */
-  def this(array: stdLib.Uint8Array) = this()
-  /**
-    * Copies the passed {buffer} data onto a new {Buffer} instance.
-    *
-    * @param buffer The buffer to copy.
-    * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
-    */
-  def this(buffer: nodeLib.Buffer) = this()
-  /**
-    * Allocates a new buffer of {size} octets.
-    *
-    * @param size count of octets to allocate.
-    * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
-    */
-  def this(size: scala.Double) = this()
   /**
     * Allocates a new buffer containing the given {str}.
     *
@@ -61,44 +23,8 @@ class Buffer protected ()
 @JSImport("buffer", "Buffer")
 @js.native
 object Buffer
-  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ nodeLib.BufferEncoding, nodeLib.Buffer]
-     with /**
-  * Allocates a new buffer containing the given {str}.
-  *
-  * @param str String to store in buffer.
-  * @param encoding encoding to use, optional.  Default is 'utf8'
-  * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
-  */
-/**
-  * Allocates a new buffer of {size} octets.
-  *
-  * @param size count of octets to allocate.
-  * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
-  */
-/**
-  * Allocates a new buffer containing the given {array} of octets.
-  *
-  * @param array The octets to store.
-  * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-  */
-/**
-  * Produces a Buffer backed by the same allocated memory as
-  * the given {ArrayBuffer}/{SharedArrayBuffer}.
-  *
-  *
-  * @param arrayBuffer The ArrayBuffer with which to share memory.
-  * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
-  */
-/**
-  * Copies the passed {buffer} data onto a new {Buffer} instance.
-  *
-  * @param buffer The buffer to copy.
-  * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
-  */
-org.scalablytyped.runtime.Instantiable1[
-      (/* array */ js.Array[js.Any]) | (/* arrayBuffer */ stdLib.ArrayBuffer) | (/* buffer */ nodeLib.Buffer) | (/* size */ scala.Double) | (/* arrayBuffer */ nodeLib.SharedArrayBuffer) | (/* str */ java.lang.String) | (/* array */ stdLib.Uint8Array), 
-      nodeLib.Buffer
-    ] {
+  extends org.scalablytyped.runtime.Instantiable1[/* str */ java.lang.String, nodeLib.Buffer]
+     with org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ nodeLib.BufferEncoding, nodeLib.Buffer] {
   /**
     * This is the number of bytes used to determine the size of pre-allocated, internal Buffer instances used for pooling. This value may be modified.
     */

@@ -17,9 +17,9 @@ object angularMod extends js.Object {
   def button(name: java.lang.String, handler: js.Function0[_], groupId: java.lang.String): scala.Unit = js.native
   def color(name: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def color(name: java.lang.String, value: java.lang.String, groupId: java.lang.String): java.lang.String = js.native
-  def date(name: java.lang.String): stdLib.Date = js.native
-  def date(name: java.lang.String, value: stdLib.Date): stdLib.Date = js.native
-  def date(name: java.lang.String, value: stdLib.Date, groupId: java.lang.String): stdLib.Date = js.native
+  def date(name: java.lang.String): scala.Double = js.native
+  def date(name: java.lang.String, value: stdLib.Date): scala.Double = js.native
+  def date(name: java.lang.String, value: stdLib.Date, groupId: java.lang.String): scala.Double = js.native
   def files(label: java.lang.String, accept: java.lang.String, defaultValue: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def knob[T](
     name: java.lang.String,

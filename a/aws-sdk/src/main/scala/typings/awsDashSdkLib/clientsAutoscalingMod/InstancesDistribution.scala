@@ -23,7 +23,7 @@ trait InstancesDistribution extends js.Object {
     */
   var SpotAllocationStrategy: js.UndefOr[XmlString] = js.undefined
   /**
-    * The number of Spot pools to use to allocate your Spot capacity. The Spot pools are determined from the different instance types in the Overrides array of LaunchTemplate.  The range is 1–20 and the default is 2. 
+    * The number of Spot pools to use to allocate your Spot capacity. The Spot pools are determined from the different instance types in the Overrides array of LaunchTemplate. The range is 1–20. The default value is 2.
     */
   var SpotInstancePools: js.UndefOr[SpotInstancePools] = js.undefined
   /**

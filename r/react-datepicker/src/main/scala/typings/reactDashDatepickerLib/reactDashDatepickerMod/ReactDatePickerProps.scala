@@ -44,7 +44,9 @@ trait ReactDatePickerProps extends js.Object {
   var `inline`: js.UndefOr[scala.Boolean] = js.native
   var inlineFocusSelectedMonth: js.UndefOr[scala.Boolean] = js.native
   var isClearable: js.UndefOr[scala.Boolean] = js.native
-  var locale: js.UndefOr[java.lang.String] = js.native
+  var locale: js.UndefOr[
+    java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Locale */ js.Any)
+  ] = js.native
   var maxDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var maxTime: js.UndefOr[stdLib.Date] = js.native
   var minDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
@@ -120,6 +122,7 @@ trait ReactDatePickerProps extends js.Object {
   var showMonthDropdown: js.UndefOr[scala.Boolean] = js.native
   var showMonthYearDropdown: js.UndefOr[scala.Boolean] = js.native
   var showMonthYearPicker: js.UndefOr[scala.Boolean] = js.native
+  var showTimeInput: js.UndefOr[scala.Boolean] = js.native
   var showTimeSelect: js.UndefOr[scala.Boolean] = js.native
   var showTimeSelectOnly: js.UndefOr[scala.Boolean] = js.native
   var showWeekNumbers: js.UndefOr[scala.Boolean] = js.native

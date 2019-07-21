@@ -130,7 +130,7 @@ trait DataPoint extends js.Object {
   /**
     * The y value of the point.
     */
-  var y: js.UndefOr[scala.Double] = js.undefined
+  var y: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /**
     * The size value for each bubble. The bubbles' diameters are computed based on the z, and controlled by series
     * options like minSize, maxSize, sizeBy, zMin and zMax.

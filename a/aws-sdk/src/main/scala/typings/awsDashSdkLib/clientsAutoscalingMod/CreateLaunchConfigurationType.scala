@@ -27,7 +27,7 @@ trait CreateLaunchConfigurationType extends js.Object {
     */
   var EbsOptimized: js.UndefOr[EbsOptimized] = js.undefined
   /**
-    * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. EC2 instances launched with an IAM role automatically have AWS security credentials available. You can use IAM roles with Amazon EC2 Auto Scaling to automatically enable applications running on your EC2 instances to securely access other AWS resources. For more information, see Use an IAM Role for Applications That Run on Amazon EC2 Instances in the Amazon EC2 Auto Scaling User Guide.
+    * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. EC2 instances launched with an IAM role automatically have AWS security credentials available. You can use IAM roles with Amazon EC2 Auto Scaling to automatically enable applications running on your EC2 instances to securely access other AWS resources. For more information, see IAM Role for Applications That Run on Amazon EC2 Instances in the Amazon EC2 Auto Scaling User Guide.
     */
   var IamInstanceProfile: js.UndefOr[XmlStringMaxLen1600] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait CreateLaunchConfigurationType extends js.Object {
     */
   var ImageId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The ID of the instance to use to create the launch configuration. The new launch configuration derives attributes from the instance, except for the block device mapping. If you do not specify InstanceId, you must specify both ImageId and InstanceType. To create a launch configuration with a block device mapping or override any other instance attributes, specify them as part of the same request. For more information, see Create a Launch Configuration Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
+    * The ID of the instance to use to create the launch configuration. The new launch configuration derives attributes from the instance, except for the block device mapping. To create a launch configuration with a block device mapping or override any other instance attributes, specify them as part of the same request. For more information, see Create a Launch Configuration Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide. If you do not specify InstanceId, you must specify both ImageId and InstanceType.
     */
   var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait CreateLaunchConfigurationType extends js.Object {
     */
   var InstanceMonitoring: js.UndefOr[InstanceMonitoring] = js.undefined
   /**
-    * The instance type of the EC2 instance. If you do not specify InstanceId, you must specify InstanceType. For information about available instance types, see Available Instance Types in the Amazon EC2 User Guide for Linux Instances. 
+    * The instance type of the EC2 instance. For information about available instance types, see Available Instance Types in the Amazon EC2 User Guide for Linux Instances.  If you do not specify InstanceId, you must specify InstanceType.
     */
   var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
@@ -55,11 +55,11 @@ trait CreateLaunchConfigurationType extends js.Object {
     */
   var KeyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The name of the launch configuration. This name must be unique within the scope of your AWS account.
+    * The name of the launch configuration. This name must be unique per Region per account.
     */
   var LaunchConfigurationName: XmlStringMaxLen255
   /**
-    * The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware and can only be launched into a VPC. To launch Dedicated Instances into a shared tenancy VPC (a VPC with the instance placement tenancy attribute set to default), you must set the value of this parameter to dedicated. If you specify this parameter, be sure to specify at least one subnet when you create your group. For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide. Valid values: default | dedicated 
+    * The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware and can only be launched into a VPC. To launch Dedicated Instances into a shared tenancy VPC (a VPC with the instance placement tenancy attribute set to default), you must set the value of this parameter to dedicated. If you specify PlacementTenancy, be sure to specify at least one subnet when you create your group. For more information, see Instance Placement Tenancy in the Amazon EC2 Auto Scaling User Guide. Valid values: default | dedicated 
     */
   var PlacementTenancy: js.UndefOr[XmlStringMaxLen64] = js.undefined
   /**

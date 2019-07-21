@@ -108,7 +108,7 @@ trait Item extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Adds an event handler for a supported event.
+    * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     * 
     * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
     * `Office.EventType.RecurrenceChanged`.
@@ -297,7 +297,7 @@ trait Item extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Removes the event handlers for a supported event type.
+    * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     * 
     * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
     * `Office.EventType.RecurrenceChanged`.

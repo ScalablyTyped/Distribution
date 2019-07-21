@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", JSImport.Namespace)
 @js.native
 object distIoIoUnderscoreUtilsMod extends js.Object {
-  val STRING_DELIMITER: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreLibStrings.BACKSLASHu0000 = js.native
   def arrayBufferToBase64String(buffer: stdLib.ArrayBuffer): java.lang.String = js.native
   def base64StringToArrayBuffer(str: java.lang.String): stdLib.ArrayBuffer = js.native
   def basename(path: java.lang.String): java.lang.String = js.native

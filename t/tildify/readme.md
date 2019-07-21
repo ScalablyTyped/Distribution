@@ -1,7 +1,7 @@
 
 # Scala.js typings for tildify
 
-Typings are for version 1.2
+Typings are for version 2.0.0
 
 ## Library description:
 Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`
@@ -24,7 +24,7 @@ Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,17 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for tildify 1.2
-// Project: https://github.com/sindresorhus/tildify#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`.
+
+@example
+```
+import tildify = require('tildify');
+
+tildify('/Users/sindresorhus/dev');
+//=> '~/dev'
+```
+*/
 
 ```
 

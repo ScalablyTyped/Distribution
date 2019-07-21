@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/lab", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val Rating: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.ratingRatingMod.RatingProps] = js.native
   val SpeedDial: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps] = js.native
   val SpeedDialAction: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps] = js.native
   val SpeedDialIcon: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = js.native

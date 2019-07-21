@@ -40,7 +40,9 @@ trait SelectProps extends js.Object {
   var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object]
+  var options: js.Array[
+    java.lang.String | scala.Boolean | scala.Double | reactLib.reactMod.Global.JSXNs.Element | js.Object
+  ]
   var placeholder: js.UndefOr[
     java.lang.String | reactLib.reactMod.ReactNode | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined
@@ -61,7 +63,9 @@ trait SelectProps extends js.Object {
 object SelectProps {
   @scala.inline
   def apply(
-    options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object],
+    options: js.Array[
+      java.lang.String | scala.Boolean | scala.Double | reactLib.reactMod.Global.JSXNs.Element | js.Object
+    ],
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
     children: /* repeated */ js.Any => _ = null,

@@ -45,6 +45,7 @@ trait ParsedOptions extends js.Object {
   var minTime: js.UndefOr[stdLib.Date] = js.undefined
   var minuteIncrement: scala.Double
   var mode: flatpickrLib.flatpickrLibStrings.single | flatpickrLib.flatpickrLibStrings.multiple | flatpickrLib.flatpickrLibStrings.range | flatpickrLib.flatpickrLibStrings.time
+  var monthSelectorType: java.lang.String
   var nextArrow: java.lang.String
   var noCalendar: scala.Boolean
   var now: stdLib.Date
@@ -108,6 +109,7 @@ object ParsedOptions {
     locale: flatpickrLib.distTypesLocaleMod.key | flatpickrLib.distTypesLocaleMod.CustomLocale,
     minuteIncrement: scala.Double,
     mode: flatpickrLib.flatpickrLibStrings.single | flatpickrLib.flatpickrLibStrings.multiple | flatpickrLib.flatpickrLibStrings.range | flatpickrLib.flatpickrLibStrings.time,
+    monthSelectorType: java.lang.String,
     nextArrow: java.lang.String,
     noCalendar: scala.Boolean,
     now: stdLib.Date,
@@ -146,7 +148,7 @@ object ParsedOptions {
     parseDate: (/* date */ java.lang.String, /* format */ java.lang.String) => stdLib.Date = null,
     positionElement: stdLib.HTMLElement = null
   ): ParsedOptions = {
-    val __obj = js.Dynamic.literal(_disable = _disable, _enable = _enable, allowInput = allowInput, altFormat = altFormat, altInput = altInput, altInputClass = altInputClass, animate = animate, ariaDateFormat = ariaDateFormat, clickOpens = clickOpens, closeOnSelect = closeOnSelect, conjunction = conjunction, dateFormat = dateFormat, defaultHour = defaultHour, defaultMinute = defaultMinute, defaultSeconds = defaultSeconds, disable = disable, disableMobile = disableMobile, enable = enable, enableSeconds = enableSeconds, enableTime = enableTime, errorHandler = js.Any.fromFunction1(errorHandler), getWeek = js.Any.fromFunction1(getWeek), hourIncrement = hourIncrement, ignoredFocusElements = ignoredFocusElements, locale = locale.asInstanceOf[js.Any], minuteIncrement = minuteIncrement, mode = mode.asInstanceOf[js.Any], nextArrow = nextArrow, noCalendar = noCalendar, now = now, onChange = onChange, onClose = onClose, onDayCreate = onDayCreate, onDestroy = onDestroy, onKeyDown = onKeyDown, onMonthChange = onMonthChange, onOpen = onOpen, onParseConfig = onParseConfig, onPreCalendarPosition = onPreCalendarPosition, onReady = onReady, onValueUpdate = onValueUpdate, onYearChange = onYearChange, plugins = plugins, position = position.asInstanceOf[js.Any], prevArrow = prevArrow, shorthandCurrentMonth = shorthandCurrentMonth, showMonths = showMonths, static = static, time_24hr = time_24hr, weekNumbers = weekNumbers, wrap = wrap)
+    val __obj = js.Dynamic.literal(_disable = _disable, _enable = _enable, allowInput = allowInput, altFormat = altFormat, altInput = altInput, altInputClass = altInputClass, animate = animate, ariaDateFormat = ariaDateFormat, clickOpens = clickOpens, closeOnSelect = closeOnSelect, conjunction = conjunction, dateFormat = dateFormat, defaultHour = defaultHour, defaultMinute = defaultMinute, defaultSeconds = defaultSeconds, disable = disable, disableMobile = disableMobile, enable = enable, enableSeconds = enableSeconds, enableTime = enableTime, errorHandler = js.Any.fromFunction1(errorHandler), getWeek = js.Any.fromFunction1(getWeek), hourIncrement = hourIncrement, ignoredFocusElements = ignoredFocusElements, locale = locale.asInstanceOf[js.Any], minuteIncrement = minuteIncrement, mode = mode.asInstanceOf[js.Any], monthSelectorType = monthSelectorType, nextArrow = nextArrow, noCalendar = noCalendar, now = now, onChange = onChange, onClose = onClose, onDayCreate = onDayCreate, onDestroy = onDestroy, onKeyDown = onKeyDown, onMonthChange = onMonthChange, onOpen = onOpen, onParseConfig = onParseConfig, onPreCalendarPosition = onPreCalendarPosition, onReady = onReady, onValueUpdate = onValueUpdate, onYearChange = onYearChange, plugins = plugins, position = position.asInstanceOf[js.Any], prevArrow = prevArrow, shorthandCurrentMonth = shorthandCurrentMonth, showMonths = showMonths, static = static, time_24hr = time_24hr, weekNumbers = weekNumbers, wrap = wrap)
     __obj.updateDynamic("inline")(`inline`)
     if (_maxDate != null) __obj.updateDynamic("_maxDate")(_maxDate)
     if (_maxTime != null) __obj.updateDynamic("_maxTime")(_maxTime)

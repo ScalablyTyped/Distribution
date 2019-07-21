@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dropzone
 
-Typings are for version 10.1.5
+Typings are for version 10.1.6
 
 ## Library description:
 Simple HTML5 drag-drop zone with React.js

@@ -101,6 +101,7 @@ package object clientsDmsMod {
     - java.lang.String
   */
   type RefreshSchemasStatusTypeValue = _RefreshSchemasStatusTypeValue | java.lang.String
+  type ReleaseStatusValues = awsDashSdkLib.awsDashSdkLibStrings.beta | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`data-reload`
     - awsDashSdkLib.awsDashSdkLibStrings.`validate-only`

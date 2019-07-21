@@ -1,7 +1,7 @@
 
 # Scala.js typings for park-miller
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 Park-Miller pseudorandom number generator (PRNG)
@@ -24,21 +24,11 @@ Park-Miller pseudorandom number generator (PRNG)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for park-miller 1.0
-// Project: https://github.com/sindresorhus/park-miller#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

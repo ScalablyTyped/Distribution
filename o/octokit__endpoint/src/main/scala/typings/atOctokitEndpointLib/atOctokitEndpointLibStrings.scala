@@ -1413,6 +1413,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `POST /repos/:owner/:repo/transfer` extends js.Object
   
   @js.native
+  sealed trait `POST /repos/:template_owner/:template_repo/generate` extends js.Object
+  
+  @js.native
   sealed trait `POST /scim/v2/organizations/:org/Users` extends js.Object
   
   @js.native
@@ -2509,6 +2512,8 @@ object atOctokitEndpointLibStrings {
   def `POST /repos/:owner/:repo/statuses/:sha`: `POST /repos/:owner/:repo/statuses/:sha` = "POST /repos/:owner/:repo/statuses/:sha".asInstanceOf[`POST /repos/:owner/:repo/statuses/:sha`]
   @scala.inline
   def `POST /repos/:owner/:repo/transfer`: `POST /repos/:owner/:repo/transfer` = "POST /repos/:owner/:repo/transfer".asInstanceOf[`POST /repos/:owner/:repo/transfer`]
+  @scala.inline
+  def `POST /repos/:template_owner/:template_repo/generate`: `POST /repos/:template_owner/:template_repo/generate` = "POST /repos/:template_owner/:template_repo/generate".asInstanceOf[`POST /repos/:template_owner/:template_repo/generate`]
   @scala.inline
   def `POST /scim/v2/organizations/:org/Users`: `POST /scim/v2/organizations/:org/Users` = "POST /scim/v2/organizations/:org/Users".asInstanceOf[`POST /scim/v2/organizations/:org/Users`]
   @scala.inline

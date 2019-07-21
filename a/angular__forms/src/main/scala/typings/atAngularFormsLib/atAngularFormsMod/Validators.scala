@@ -20,6 +20,9 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * merged error maps of the validators if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def compose(): scala.Null = js.native
   def compose(validators: js.Array[js.UndefOr[atAngularFormsLib.atAngularFormsMod.ValidatorFn | scala.Null]]): atAngularFormsLib.atAngularFormsMod.ValidatorFn | scala.Null = js.native
@@ -30,6 +33,9 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * merged error objects of the async validators if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def composeAsync(validators: js.Array[atAngularFormsLib.atAngularFormsMod.AsyncValidatorFn | scala.Null]): atAngularFormsLib.atAngularFormsMod.AsyncValidatorFn | scala.Null = js.native
   /**
@@ -48,6 +54,8 @@ object Validators extends js.Object {
     *
     * @returns An error map with the `email` property
     * if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
     *
     */
   def email(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
@@ -68,6 +76,8 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * `max` property if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
     *
     */
   def max(max: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
@@ -93,6 +103,9 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * `maxlength` property if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def maxLength(maxLength: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
@@ -112,6 +125,8 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * `min` property if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
     *
     */
   def min(min: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
@@ -137,22 +152,23 @@ object Validators extends js.Object {
     *
     * @returns A validator function that returns an error map with the
     * `minlength` if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def minLength(minLength: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that performs no operation.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def nullValidator(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
   /**
     * @description
     * Validator that requires the control's value to match a regex pattern. This validator is also
     * provided by default if you use the HTML5 `pattern` attribute.
-    *
-    * Note that if a Regexp is provided, the Regexp is used as is to test the values. On the other
-    * hand, if a string is passed, the `^` character is prepended and the `$` character is
-    * appended to the provided string (if not already present), and the resulting regular
-    * expression is used to test the values.
     *
     * @usageNotes
     *
@@ -168,8 +184,16 @@ object Validators extends js.Object {
     * <input pattern="[a-zA-Z ]*">
     * ```
     *
+    * @param pattern A regular expression to be used as is to test the values, or a string.
+    * If a string is passed, the `^` character is prepended and the `$` character is
+    * appended to the provided string (if not already present), and the resulting regular
+    * expression is used to test the values.
+    *
     * @returns A validator function that returns an error map with the
     * `pattern` property if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def pattern(pattern: java.lang.String): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   def pattern(pattern: stdLib.RegExp): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
@@ -190,6 +214,8 @@ object Validators extends js.Object {
     * @returns An error map with the `required` property
     * if the validation check fails, otherwise `null`.
     *
+    * @see `updateValueAndValidity()`
+    *
     */
   def required(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
   /**
@@ -209,6 +235,9 @@ object Validators extends js.Object {
     *
     * @returns An error map that contains the `required` property
     * set to `true` if the validation check fails, otherwise `null`.
+    *
+    * @see `updateValueAndValidity()`
+    *
     */
   def requiredTrue(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
 }

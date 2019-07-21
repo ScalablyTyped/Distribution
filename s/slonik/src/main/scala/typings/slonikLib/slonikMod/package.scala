@@ -14,6 +14,7 @@ package object slonikMod {
   type DatabasePoolType = CommonQueryMethodsType with slonikLib.Anon_Connect
   type DatabaseTransactionConnectionType = CommonQueryMethodsType with slonikLib.Anon_Handler
   type IdentifierListMemberType = js.Array[java.lang.String] | slonikLib.Anon_Alias
+  type IdentifierNormalizerType = js.Function1[/* identifierName */ java.lang.String, java.lang.String]
   type LoggerType = js.Function1[/* repeated */ java.lang.String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]
   type NamedAssignmentType = stdLib.Record[java.lang.String, ValueExpressionType]

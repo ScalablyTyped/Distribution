@@ -15,11 +15,11 @@ trait CreateReplicationSubnetGroupMessage extends js.Object {
     */
   var ReplicationSubnetGroupIdentifier: String
   /**
-    * The EC2 subnet IDs for the subnet group.
+    * One or more subnet IDs to be assigned to the subnet group.
     */
   var SubnetIds: SubnetIdentifierList
   /**
-    * The tag to be assigned to the subnet group.
+    * One or more tags to be assigned to the subnet group.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

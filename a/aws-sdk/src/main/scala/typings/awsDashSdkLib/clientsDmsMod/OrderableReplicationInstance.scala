@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OrderableReplicationInstance extends js.Object {
   /**
-    * List of availability zones for this replication instance.
+    * List of Availability Zones for this replication instance.
     */
   var AvailabilityZones: js.UndefOr[AvailabilityZonesList] = js.undefined
   /**
@@ -31,6 +31,10 @@ trait OrderableReplicationInstance extends js.Object {
     */
   var MinAllocatedStorage: js.UndefOr[Integer] = js.undefined
   /**
+    * The value returned when the specified EngineVersion of the replication instance is in Beta or test mode. This indicates some features might not work as expected.  AWS DMS supports ReleaseStatus in versions 3.1.4 and later. 
+    */
+  var ReleaseStatus: js.UndefOr[ReleaseStatusValues] = js.undefined
+  /**
     * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
@@ -49,6 +53,7 @@ object OrderableReplicationInstance {
     IncludedAllocatedStorage: js.UndefOr[Integer] = js.undefined,
     MaxAllocatedStorage: js.UndefOr[Integer] = js.undefined,
     MinAllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    ReleaseStatus: ReleaseStatusValues = null,
     ReplicationInstanceClass: String = null,
     StorageType: String = null
   ): OrderableReplicationInstance = {
@@ -59,6 +64,7 @@ object OrderableReplicationInstance {
     if (!js.isUndefined(IncludedAllocatedStorage)) __obj.updateDynamic("IncludedAllocatedStorage")(IncludedAllocatedStorage)
     if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage)
     if (!js.isUndefined(MinAllocatedStorage)) __obj.updateDynamic("MinAllocatedStorage")(MinAllocatedStorage)
+    if (ReleaseStatus != null) __obj.updateDynamic("ReleaseStatus")(ReleaseStatus.asInstanceOf[js.Any])
     if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass)
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)
     __obj.asInstanceOf[OrderableReplicationInstance]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tinajs__tina-redux"
-version := "1.4-dt-20180730Z-d1768e"
+version := "1.4-dt-20190717Z-d1768e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

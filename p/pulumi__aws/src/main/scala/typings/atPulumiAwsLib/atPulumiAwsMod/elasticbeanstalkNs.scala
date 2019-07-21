@@ -65,22 +65,22 @@ object elasticbeanstalkNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.elasticbeanstalkEnvironmentMod.EnvironmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getApplication(args: atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] = js.native
+  def getApplication(args: atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] with atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult = js.native
   def getApplication(
     args: atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] = js.native
-  def getHostedZone(): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] = js.native
-  def getHostedZone(args: atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] = js.native
+  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] with atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult = js.native
+  def getHostedZone(): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] with atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult = js.native
+  def getHostedZone(args: atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] with atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult = js.native
   def getHostedZone(
     args: atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] = js.native
-  def getSolutionStack(args: atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult] = js.native
+  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] with atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult = js.native
+  def getSolutionStack(args: atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult] with atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult = js.native
   def getSolutionStack(
     args: atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult] = js.native
+  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult] with atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult = js.native
   /* static members */
   @js.native
   object Application extends js.Object {

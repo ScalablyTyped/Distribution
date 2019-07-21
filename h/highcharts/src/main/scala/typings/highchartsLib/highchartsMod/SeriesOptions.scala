@@ -257,7 +257,7 @@ object SeriesOptions {
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
     data: js.Array[
-      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
+      scala.Double | scala.Null | (js.Tuple2[scala.Double | java.lang.String, scala.Double | scala.Null]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ] = null,
     dataLabels: DataLabels | js.Array[DataLabels] = null,
     description: java.lang.String = null,

@@ -12,7 +12,7 @@ trait Global extends js.Object {
   var Array_Original: stdLib.ArrayConstructor = js.native
   @JSName("Boolean")
   var Boolean_Original: stdLib.BooleanConstructor = js.native
-  var Buffer: nodeLib.Anon_Alloc = js.native
+  var Buffer: nodeLib.TypeofClassBuffer = js.native
   var DataView: stdLib.DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: stdLib.DateConstructor = js.native

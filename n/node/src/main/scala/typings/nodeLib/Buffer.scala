@@ -5,12 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Raw data is stored in instances of the Buffer class.
+  * A Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.  A Buffer cannot be resized.
+  * Valid string encodings: 'ascii'|'utf8'|'utf16le'|'ucs2'(alias of 'utf16le')|'base64'|'binary'(deprecated)|'hex'
+  */
+@JSGlobal("Buffer")
 @js.native
-trait Buffer
+class Buffer protected ()
   extends stdLib.Uint8Array
      with nodeLib.cryptoMod._KeyLike
      with nodeLib.fsMod._PathLike {
-  var constructor: Anon_Alloc = js.native
+  def this(arrayBuffer: SharedArrayBuffer) = this()
+  /**
+    * Produces a Buffer backed by the same allocated memory as
+    * the given {ArrayBuffer}/{SharedArrayBuffer}.
+    *
+    *
+    * @param arrayBuffer The ArrayBuffer with which to share memory.
+    * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
+    */
+  def this(arrayBuffer: stdLib.ArrayBuffer) = this()
+  /**
+    * Allocates a new buffer containing the given {array} of octets.
+    *
+    * @param array The octets to store.
+    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
+    */
+  def this(array: js.Array[_]) = this()
+  /**
+    * Allocates a new buffer containing the given {array} of octets.
+    *
+    * @param array The octets to store.
+    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
+    */
+  def this(array: stdLib.Uint8Array) = this()
+  /**
+    * Copies the passed {buffer} data onto a new {Buffer} instance.
+    *
+    * @param buffer The buffer to copy.
+    * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
+    */
+  def this(buffer: Buffer) = this()
+  /**
+    * Allocates a new buffer of {size} octets.
+    *
+    * @param size count of octets to allocate.
+    * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
+    */
+  def this(size: scala.Double) = this()
+  /**
+    * Allocates a new buffer containing the given {str}.
+    *
+    * @param str String to store in buffer.
+    * @param encoding encoding to use, optional.  Default is 'utf8'
+    * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
+    */
+  def this(str: java.lang.String) = this()
+  def this(str: java.lang.String, encoding: BufferEncoding) = this()
+  var constructor: TypeofClassBuffer = js.native
   def compare(otherBuffer: stdLib.Uint8Array): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double, targetEnd: scala.Double): scala.Double = js.native
@@ -37,9 +90,15 @@ trait Buffer
     sourceEnd: scala.Double
   ): scala.Double = js.native
   def equals(otherBuffer: stdLib.Uint8Array): scala.Boolean = js.native
-  def fill(value: js.Any): this.type = js.native
-  def fill(value: js.Any, offset: scala.Double): this.type = js.native
-  def fill(value: js.Any, offset: scala.Double, end: scala.Double): this.type = js.native
+  def fill(value: java.lang.String): this.type = js.native
+  def fill(value: java.lang.String, offset: scala.Double): this.type = js.native
+  def fill(value: java.lang.String, offset: scala.Double, end: scala.Double): this.type = js.native
+  def fill(value: java.lang.String, offset: scala.Double, end: scala.Double, encoding: BufferEncoding): this.type = js.native
+  def fill(value: scala.Double, offset: scala.Double, end: scala.Double, encoding: BufferEncoding): this.type = js.native
+  def fill(value: stdLib.Uint8Array): this.type = js.native
+  def fill(value: stdLib.Uint8Array, offset: scala.Double): this.type = js.native
+  def fill(value: stdLib.Uint8Array, offset: scala.Double, end: scala.Double): this.type = js.native
+  def fill(value: stdLib.Uint8Array, offset: scala.Double, end: scala.Double, encoding: BufferEncoding): this.type = js.native
   def includes(value: java.lang.String): scala.Boolean = js.native
   def includes(value: java.lang.String, byteOffset: scala.Double): scala.Boolean = js.native
   def includes(value: java.lang.String, byteOffset: scala.Double, encoding: BufferEncoding): scala.Boolean = js.native
@@ -121,104 +180,10 @@ trait Buffer
   def writeUIntLE(value: scala.Double, offset: scala.Double, byteLength: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Buffer")
 @js.native
-class BufferCls protected () extends Buffer {
-  def this(arrayBuffer: SharedArrayBuffer) = this()
-  /**
-    * Produces a Buffer backed by the same allocated memory as
-    * the given {ArrayBuffer}/{SharedArrayBuffer}.
-    *
-    *
-    * @param arrayBuffer The ArrayBuffer with which to share memory.
-    * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
-    */
-  def this(arrayBuffer: stdLib.ArrayBuffer) = this()
-  /**
-    * Allocates a new buffer containing the given {array} of octets.
-    *
-    * @param array The octets to store.
-    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-    */
-  def this(array: js.Array[_]) = this()
-  /**
-    * Allocates a new buffer containing the given {array} of octets.
-    *
-    * @param array The octets to store.
-    * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-    */
-  def this(array: stdLib.Uint8Array) = this()
-  /**
-    * Copies the passed {buffer} data onto a new {Buffer} instance.
-    *
-    * @param buffer The buffer to copy.
-    * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
-    */
-  def this(buffer: Buffer) = this()
-  /**
-    * Allocates a new buffer of {size} octets.
-    *
-    * @param size count of octets to allocate.
-    * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
-    */
-  def this(size: scala.Double) = this()
-  /**
-    * Allocates a new buffer containing the given {str}.
-    *
-    * @param str String to store in buffer.
-    * @param encoding encoding to use, optional.  Default is 'utf8'
-    * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
-    */
-  def this(str: java.lang.String) = this()
-  def this(str: java.lang.String, encoding: BufferEncoding) = this()
-}
-
-/**
-  * Raw data is stored in instances of the Buffer class.
-  * A Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.  A Buffer cannot be resized.
-  * Valid string encodings: 'ascii'|'utf8'|'utf16le'|'ucs2'(alias of 'utf16le')|'base64'|'binary'(deprecated)|'hex'
-  */
-@JSGlobal("Buffer")
-@js.native
-object Buffer
-  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ BufferEncoding, Buffer]
-     with /**
-  * Allocates a new buffer containing the given {str}.
-  *
-  * @param str String to store in buffer.
-  * @param encoding encoding to use, optional.  Default is 'utf8'
-  * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
-  */
-/**
-  * Allocates a new buffer of {size} octets.
-  *
-  * @param size count of octets to allocate.
-  * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
-  */
-/**
-  * Allocates a new buffer containing the given {array} of octets.
-  *
-  * @param array The octets to store.
-  * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
-  */
-/**
-  * Produces a Buffer backed by the same allocated memory as
-  * the given {ArrayBuffer}/{SharedArrayBuffer}.
-  *
-  *
-  * @param arrayBuffer The ArrayBuffer with which to share memory.
-  * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
-  */
-/**
-  * Copies the passed {buffer} data onto a new {Buffer} instance.
-  *
-  * @param buffer The buffer to copy.
-  * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
-  */
-org.scalablytyped.runtime.Instantiable1[
-      (/* array */ js.Array[js.Any]) | (/* arrayBuffer */ stdLib.ArrayBuffer) | (/* buffer */ Buffer) | (/* size */ scala.Double) | (/* arrayBuffer */ SharedArrayBuffer) | (/* str */ java.lang.String) | (/* array */ stdLib.Uint8Array), 
-      Buffer
-    ] {
+object Buffer extends js.Object {
   /**
     * This is the number of bytes used to determine the size of pre-allocated, internal Buffer instances used for pooling. This value may be modified.
     */

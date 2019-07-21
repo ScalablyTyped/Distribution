@@ -35,6 +35,20 @@ trait ModelFitDatasetArgs[T] extends js.Object {
     ]) | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs
   ] = js.undefined
   /**
+    * Optional object mapping class indices (integers) to
+    * a weight (float) to apply to the model's loss for the samples from this
+    * class during training. This can be useful to tell the model to "pay more
+    * attention" to samples from an under-represented class.
+    *
+    * If the model has multiple outputs, a class weight can be specified for
+    * each of the outputs by setting this field an array of weight object
+    * or a object that maps model output names (e.g., `model.outputNames[0]`)
+    * to weight objects.
+    */
+  var classWeight: js.UndefOr[
+    atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap
+  ] = js.undefined
+  /**
     * The number of times to iterate over the training dataset.
     *
     * An integer.
@@ -140,6 +154,7 @@ object ModelFitDatasetArgs {
     callbacks: (js.Array[
       atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.BaseCallback | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs
     ]) | atTensorflowTfjsDashLayersLib.distBaseUnderscoreCallbacksMod.CustomCallbackArgs = null,
+    classWeight: atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight | js.Array[atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeight] | atTensorflowTfjsDashLayersLib.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap = null,
     initialEpoch: scala.Int | scala.Double = null,
     validationBatchSize: scala.Int | scala.Double = null,
     validationBatches: scala.Int | scala.Double = null,
@@ -157,6 +172,7 @@ object ModelFitDatasetArgs {
     val __obj = js.Dynamic.literal(epochs = epochs)
     if (batchesPerEpoch != null) __obj.updateDynamic("batchesPerEpoch")(batchesPerEpoch.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
     if (initialEpoch != null) __obj.updateDynamic("initialEpoch")(initialEpoch.asInstanceOf[js.Any])
     if (validationBatchSize != null) __obj.updateDynamic("validationBatchSize")(validationBatchSize.asInstanceOf[js.Any])
     if (validationBatches != null) __obj.updateDynamic("validationBatches")(validationBatches.asInstanceOf[js.Any])

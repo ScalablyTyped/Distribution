@@ -19,7 +19,7 @@ trait DescribePendingMaintenanceActionsMessage extends js.Object {
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * The ARN of the replication instance.
+    * The Amazon Resource Name (ARN) of the replication instance.
     */
   var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
 }

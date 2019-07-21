@@ -1,7 +1,7 @@
 
 # Scala.js typings for untildify
 
-Typings are for version 3.0
+Typings are for version 4.0.0
 
 ## Library description:
 Convert a tilde path to an absolute path: ~/dev => /Users/sindresorhus/dev
@@ -24,7 +24,7 @@ Convert a tilde path to an absolute path: ~/dev => /Users/sindresorhus/dev
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,17 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for untildify 3.0
-// Project: https://github.com/sindresorhus/untildify#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Convert a tilde path to an absolute path: `~/dev` → `/Users/sindresorhus/dev`.
+
+@example
+```
+import untildify = require('untildify');
+
+untildify('~/dev');
+//=> '/Users/sindresorhus/dev'
+```
+*/
 
 ```
 

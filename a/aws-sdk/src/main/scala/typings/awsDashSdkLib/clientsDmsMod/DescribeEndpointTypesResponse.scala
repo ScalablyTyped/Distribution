@@ -11,7 +11,7 @@ trait DescribeEndpointTypesResponse extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.undefined
   /**
-    * The type of endpoints that are supported.
+    * The types of endpoints that are supported.
     */
   var SupportedEndpointTypes: js.UndefOr[SupportedEndpointTypeList] = js.undefined
 }

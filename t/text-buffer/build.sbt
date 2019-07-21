@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "text-buffer"
-version := "13.x-dt-20180214Z-f98a2c"
+version := "13.x-dt-20180214Z-a77306"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "event-kit" % "2.4-dt-20180316Z-5edf75",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
-  "org.scalablytyped" %%% "pathwatcher" % "8.x-dt-20190212Z-774e21",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
+  "org.scalablytyped" %%% "pathwatcher" % "8.x-dt-20190212Z-c4572c",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

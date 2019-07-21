@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-dir
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Get the real path of the system temp directory
@@ -24,7 +24,7 @@ Get the real path of the system temp directory
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,21 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for temp-dir 1.0
-// Project: https://github.com/sindresorhus/temp-dir#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get the real path of the system temp directory.
+
+@example
+```
+import * as os from 'os';
+import tempDirectory = require('temp-dir');
+
+console.log(tempDirectory);
+//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T'
+
+console.log(os.tmpdir());
+//=> '/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T' // <= Symlink
+```
+*/
 
 ```
 

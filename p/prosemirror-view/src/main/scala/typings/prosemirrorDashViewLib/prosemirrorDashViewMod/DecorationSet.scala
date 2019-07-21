@@ -20,7 +20,7 @@ class DecorationSet[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
     * boundaries) and match the given predicate on their spec. When
     * `start` and `end` are omitted, all decorations in the set are
     * considered. When `predicate` isn't given, all decorations are
-    * asssumed to match.
+    * assumed to match.
     */
   def find(): js.Array[Decoration] = js.native
   def find(start: scala.Double): js.Array[Decoration] = js.native

@@ -15,7 +15,7 @@ trait CreateEndpointMessage extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
-    * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
+    * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.   Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
     */
   var DmsTransferSettings: js.UndefOr[DmsTransferSettings] = js.undefined
   /**
@@ -31,11 +31,11 @@ trait CreateEndpointMessage extends js.Object {
     */
   var EndpointIdentifier: String
   /**
-    * The type of endpoint.
+    * The type of endpoint. Valid values are source and target.
     */
   var EndpointType: ReplicationEndpointTypeValue
   /**
-    * The type of engine for the endpoint. Valid values, depending on the EndPointType value, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
+    * The type of engine for the endpoint. Valid values, depending on the EndpointType value, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
     */
   var EngineName: String
   /**
@@ -43,7 +43,7 @@ trait CreateEndpointMessage extends js.Object {
     */
   var ExternalTableDefinition: js.UndefOr[String] = js.undefined
   /**
-    * Additional attributes associated with the connection.
+    * Additional attributes associated with the connection. Each attribute is specified as a name-value pair associated by an equal sign (=). Multiple attributes are separated by a semicolon (;) with no additional white space. For information on the attributes available for connecting your source or target endpoint, see Working with AWS DMS Endpoints in the AWS Database Migration Service User Guide. 
     */
   var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait CreateEndpointMessage extends js.Object {
     */
   var KinesisSettings: js.UndefOr[KinesisSettings] = js.undefined
   /**
-    * The AWS KMS key identifier to use to encrypt the connection parameters. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An AWS KMS key identifier that is used to encrypt the connection parameters for the endpoint. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -80,11 +80,11 @@ trait CreateEndpointMessage extends js.Object {
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * The Secure Sockets Layer (SSL) mode to use for the SSL connection. The SSL mode can be one of four values: none, require, verify-ca, verify-full. The default value is none.
+    * The Secure Sockets Layer (SSL) mode to use for the SSL connection. The default is none 
     */
   var SslMode: js.UndefOr[DmsSslModeValue] = js.undefined
   /**
-    * Tags to be added to the endpoint.
+    * One or more tags to be assigned to the endpoint.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**

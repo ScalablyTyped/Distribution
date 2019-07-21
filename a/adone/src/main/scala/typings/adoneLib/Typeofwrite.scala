@@ -15,26 +15,16 @@ trait Typeofwrite extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
   def __promisify__(fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def __promisify__(
-    fd: scala.Double,
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
-  def __promisify__(fd: scala.Double, buffer: stdLib.DataView): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
-  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
-  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+  def __promisify__(fd: scala.Double, buffer: stdLib.DataView): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+  def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
   def __promisify__(
     fd: scala.Double,
     buffer: stdLib.DataView,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
   def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
   def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
   def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native

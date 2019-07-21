@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "winston-syslog"
-version := "2.0-dt-20190212Z-23ac9b"
+version := "2.0-dt-20190212Z-9ff9d8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-a35f4f",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-e130a7")
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-a58ff8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

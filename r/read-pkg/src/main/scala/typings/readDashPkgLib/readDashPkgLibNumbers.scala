@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object readDashPkgLibNumbers {
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `true` extends js.Object
   
   @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

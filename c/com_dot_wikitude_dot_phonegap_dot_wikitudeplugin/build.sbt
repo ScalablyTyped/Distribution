@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "com_dot_wikitude_dot_phonegap_dot_wikitudeplugin"
-version := "7.2-dt-20190212Z-3875ee"
+version := "7.2-dt-20190717Z-3875ee"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

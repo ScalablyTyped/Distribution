@@ -42,8 +42,14 @@ object ^ extends js.Object {
   def defineSupportCode(consumer: SupportCodeConsumer): scala.Unit = js.native
   def getSupportCodeFns(): js.Array[SupportCodeConsumer] = js.native
   def setDefaultTimeout(time: scala.Double): scala.Unit = js.native
-  def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit]): scala.Unit = js.native
-  def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit], options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setDefinitionFunctionWrapper(fn: js.Function1[/* fn */ js.Function0[scala.Unit], js.Function1[/* repeated */ _, _]]): scala.Unit = js.native
+  def setDefinitionFunctionWrapper(
+    fn: js.Function2[
+      /* fn */ js.Function0[scala.Unit], 
+      /* options */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
+      js.Function1[/* repeated */ _, _]
+    ]
+  ): scala.Unit = js.native
   def setWorldConstructor(world: js.Object): scala.Unit = js.native
   def setWorldConstructor(world: js.ThisFunction1[/* this */ World, /* init */ cucumberLib.Anon_Attach, scala.Unit]): scala.Unit = js.native
 }

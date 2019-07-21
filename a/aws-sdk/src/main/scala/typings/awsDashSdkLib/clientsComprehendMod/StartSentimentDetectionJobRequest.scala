@@ -23,7 +23,7 @@ trait StartSentimentDetectionJobRequest extends js.Object {
     */
   var JobName: js.UndefOr[JobName] = js.undefined
   /**
-    * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
+    * The language of the input documents. You can specify any of the primary languages supported by Amazon Comprehend: German ("de"), English ("en"), Spanish ("es"), French ("fr"), Italian ("it"), or Portuguese ("pt"). All documents must be in the same language.
     */
   var LanguageCode: awsDashSdkLib.clientsComprehendMod.LanguageCode
   /**

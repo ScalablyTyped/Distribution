@@ -51,8 +51,8 @@ object inspectorNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.inspectorResourceGroupMod.ResourceGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  def getRulesPackages(): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] = js.native
-  def getRulesPackages(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] = js.native
+  def getRulesPackages(): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] with atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult = js.native
+  def getRulesPackages(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] with atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult = js.native
   /* static members */
   @js.native
   object AssessmentTarget extends js.Object {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateResolversArgs extends ParentSpanPluginArgs {
   var createResolvers: js.Function
-  var schema: js.Object
+  var intermediateSchema: js.Object
   var traceId: gatsbyLib.gatsbyLibStrings.`initial-createResolvers`
 }
 
@@ -26,16 +26,16 @@ object CreateResolversArgs {
     getNodes: js.Function,
     getNodesByType: js.Function,
     hasNodeChanged: js.Function,
+    intermediateSchema: js.Object,
     loadNodeContent: js.Function,
     parentSpan: js.Object,
     pathPrefix: java.lang.String,
     reporter: Reporter,
-    schema: js.Object,
     store: Store,
     traceId: gatsbyLib.gatsbyLibStrings.`initial-createResolvers`,
     tracing: Tracing
   ): CreateResolversArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, createResolvers = createResolvers, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, schema = schema, store = store, traceId = traceId, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, createResolvers = createResolvers, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, intermediateSchema = intermediateSchema, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, traceId = traceId, tracing = tracing)
   
     __obj.asInstanceOf[CreateResolversArgs]
   }

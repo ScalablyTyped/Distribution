@@ -53,11 +53,6 @@ trait ViewChildDecorator
     * {@example core/di/ts/viewChild/view_child_howto.ts region='HowTo'
     * linenums="false"}
     *
-    * ### Example 3
-    *
-    * {@example core/di/ts/viewChild/view_child_example.ts region='Component'
-    * linenums="false"}
-    *
     * @Annotation
     */
   def apply(selector: Type[_], opts: atAngularCoreLib.Anon_Read): js.Any = js.native

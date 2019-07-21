@@ -167,10 +167,18 @@ abstract class AbstractControl () extends js.Object {
   val valueChanges: rxjsLib.rxjsMod.Observable[_] = js.native
   /**
     * Empties out the async validator list.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
     */
   def clearAsyncValidators(): scala.Unit = js.native
   /**
     * Empties out the sync validator list.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
     */
   def clearValidators(): scala.Unit = js.native
   /**
@@ -397,6 +405,10 @@ abstract class AbstractControl () extends js.Object {
   /**
     * Sets the async validators that are active on this control. Calling this
     * overwrites any existing async validators.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
     */
   def setAsyncValidators(newValidator: AsyncValidatorFn): scala.Unit = js.native
   def setAsyncValidators(newValidator: js.Array[AsyncValidatorFn]): scala.Unit = js.native
@@ -435,6 +447,10 @@ abstract class AbstractControl () extends js.Object {
   /**
     * Sets the synchronous validators that are active on this control.  Calling
     * this overwrites any existing sync validators.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
     */
   def setValidators(newValidator: ValidatorFn): scala.Unit = js.native
   def setValidators(newValidator: js.Array[ValidatorFn]): scala.Unit = js.native

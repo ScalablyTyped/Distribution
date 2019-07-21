@@ -19,7 +19,7 @@ trait ModifyReplicationTaskMessage extends js.Object {
     */
   var CdcStopPosition: js.UndefOr[String] = js.undefined
   /**
-    * The migration type. Valid values: full-load | cdc | full-load-and-cdc
+    * The migration type. Valid values: full-load | cdc | full-load-and-cdc 
     */
   var MigrationType: js.UndefOr[MigrationTypeValue] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait ModifyReplicationTaskMessage extends js.Object {
     */
   var ReplicationTaskSettings: js.UndefOr[String] = js.undefined
   /**
-    * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with "file://". When working with the DMS API, provide the JSON as the parameter value. For example, --table-mappings file://mappingfile.json
+    * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with file://. When working with the DMS API, provide the JSON as the parameter value, for example: --table-mappings file://mappingfile.json 
     */
   var TableMappings: js.UndefOr[String] = js.undefined
 }

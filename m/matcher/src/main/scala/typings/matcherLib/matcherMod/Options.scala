@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Treat uppercase and lowercase characters as being the same.
+  		Ensure you use this correctly. For example, files and directories should be matched case-insensitively, while most often, object keys should be matched case-sensitively.
+  		@default false
+  		*/
+  val caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

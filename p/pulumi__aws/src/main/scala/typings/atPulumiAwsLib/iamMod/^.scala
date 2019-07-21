@@ -324,35 +324,35 @@ object ^ extends js.Object {
   val WorkDocsPrincipal: atPulumiAwsLib.iamDocumentsMod.Principal = js.native
   val WorkspacesPrincipal: atPulumiAwsLib.iamDocumentsMod.Principal = js.native
   def assumeRolePolicyForPrincipal(principal: atPulumiAwsLib.iamDocumentsMod.Principal): atPulumiAwsLib.iamDocumentsMod.PolicyDocument = js.native
-  def getAccountAlias(): js.Promise[atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult] = js.native
-  def getAccountAlias(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult] = js.native
-  def getGroup(args: atPulumiAwsLib.iamGetGroupMod.GetGroupArgs): js.Promise[atPulumiAwsLib.iamGetGroupMod.GetGroupResult] = js.native
-  def getGroup(args: atPulumiAwsLib.iamGetGroupMod.GetGroupArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetGroupMod.GetGroupResult] = js.native
-  def getInstanceProfile(args: atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileArgs): js.Promise[atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult] = js.native
+  def getAccountAlias(): js.Promise[atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult] with atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult = js.native
+  def getAccountAlias(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult] with atPulumiAwsLib.iamGetAccountAliasMod.GetAccountAliasResult = js.native
+  def getGroup(args: atPulumiAwsLib.iamGetGroupMod.GetGroupArgs): js.Promise[atPulumiAwsLib.iamGetGroupMod.GetGroupResult] with atPulumiAwsLib.iamGetGroupMod.GetGroupResult = js.native
+  def getGroup(args: atPulumiAwsLib.iamGetGroupMod.GetGroupArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetGroupMod.GetGroupResult] with atPulumiAwsLib.iamGetGroupMod.GetGroupResult = js.native
+  def getInstanceProfile(args: atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileArgs): js.Promise[atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult] with atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult = js.native
   def getInstanceProfile(
     args: atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult] = js.native
-  def getPolicy(args: atPulumiAwsLib.iamGetPolicyMod.GetPolicyArgs): js.Promise[atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult] with atPulumiAwsLib.iamGetInstanceProfileMod.GetInstanceProfileResult = js.native
+  def getPolicy(args: atPulumiAwsLib.iamGetPolicyMod.GetPolicyArgs): js.Promise[atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult] with atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult = js.native
   def getPolicy(
     args: atPulumiAwsLib.iamGetPolicyMod.GetPolicyArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult] = js.native
-  def getPolicyDocument(): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] = js.native
-  def getPolicyDocument(args: atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentArgs): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult] with atPulumiAwsLib.iamGetPolicyMod.GetPolicyResult = js.native
+  def getPolicyDocument(): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] with atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult = js.native
+  def getPolicyDocument(args: atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentArgs): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] with atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult = js.native
   def getPolicyDocument(
     args: atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] = js.native
-  def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] = js.native
-  def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] = js.native
-  def getServerCertificate(): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] = js.native
-  def getServerCertificate(args: atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateArgs): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] with atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult = js.native
+  def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] with atPulumiAwsLib.iamGetRoleMod.GetRoleResult = js.native
+  def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] with atPulumiAwsLib.iamGetRoleMod.GetRoleResult = js.native
+  def getServerCertificate(): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] with atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult = js.native
+  def getServerCertificate(args: atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateArgs): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] with atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult = js.native
   def getServerCertificate(
     args: atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] = js.native
-  def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] = js.native
-  def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] = js.native
+  ): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] with atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult = js.native
+  def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] with atPulumiAwsLib.iamGetUserMod.GetUserResult = js.native
+  def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] with atPulumiAwsLib.iamGetUserMod.GetUserResult = js.native
 }
 

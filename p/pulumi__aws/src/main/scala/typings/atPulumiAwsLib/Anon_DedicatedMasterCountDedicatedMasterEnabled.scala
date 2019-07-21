@@ -11,6 +11,7 @@ trait Anon_DedicatedMasterCountDedicatedMasterEnabled extends js.Object {
   var dedicatedMasterType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var instanceCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   var instanceType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var zoneAwarenessConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_AvailabilityZoneCountInput]] = js.undefined
   var zoneAwarenessEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
@@ -22,6 +23,7 @@ object Anon_DedicatedMasterCountDedicatedMasterEnabled {
     dedicatedMasterType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     instanceCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     instanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    zoneAwarenessConfig: atPulumiPulumiLib.outputMod.Input[Anon_AvailabilityZoneCountInput] = null,
     zoneAwarenessEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_DedicatedMasterCountDedicatedMasterEnabled = {
     val __obj = js.Dynamic.literal()
@@ -30,6 +32,7 @@ object Anon_DedicatedMasterCountDedicatedMasterEnabled {
     if (dedicatedMasterType != null) __obj.updateDynamic("dedicatedMasterType")(dedicatedMasterType.asInstanceOf[js.Any])
     if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (zoneAwarenessConfig != null) __obj.updateDynamic("zoneAwarenessConfig")(zoneAwarenessConfig.asInstanceOf[js.Any])
     if (zoneAwarenessEnabled != null) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DedicatedMasterCountDedicatedMasterEnabled]
   }

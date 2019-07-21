@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ExecSyncOptions extends CommonOptions {
   var encoding: js.UndefOr[java.lang.String] = js.undefined
-  var input: js.UndefOr[java.lang.String | nodeLib.Buffer | stdLib.Uint8Array] = js.undefined
+  var input: js.UndefOr[java.lang.String | stdLib.Uint8Array] = js.undefined
   var killSignal: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var maxBuffer: js.UndefOr[scala.Double] = js.undefined
   var shell: js.UndefOr[java.lang.String] = js.undefined
@@ -21,7 +21,7 @@ object ExecSyncOptions {
     encoding: java.lang.String = null,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     gid: scala.Int | scala.Double = null,
-    input: java.lang.String | nodeLib.Buffer | stdLib.Uint8Array = null,
+    input: java.lang.String | stdLib.Uint8Array = null,
     killSignal: java.lang.String | scala.Double = null,
     maxBuffer: scala.Int | scala.Double = null,
     shell: java.lang.String = null,

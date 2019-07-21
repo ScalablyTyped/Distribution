@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mixpanel"
-version := "2.14-dt-20190212Z-fbccfe"
+version := "2.14-dt-20190717Z-fbccfe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

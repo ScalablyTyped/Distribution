@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ssm/getDocument", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] = js.native
-  def getDocument(args: GetDocumentArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetDocumentResult] = js.native
+  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] with GetDocumentResult = js.native
+  def getDocument(args: GetDocumentArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetDocumentResult] with GetDocumentResult = js.native
 }
 

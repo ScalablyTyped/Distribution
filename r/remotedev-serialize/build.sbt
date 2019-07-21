@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remotedev-serialize"
-version := "1.0-dt-20190330Z-a61b3a"
+version := "1.0-dt-20190717Z-a61b3a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

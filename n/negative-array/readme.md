@@ -1,7 +1,7 @@
 
 # Scala.js typings for negative-array
 
-Typings are for version 2.0
+Typings are for version 2.1.0
 
 ## Library description:
 Negative array index support `array[-1]` using ES2015 Proxy
@@ -24,7 +24,7 @@ Negative array index support `array[-1]` using ES2015 Proxy
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,23 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for negative-array 2.0
-// Project: https://github.com/sindresorhus/negative-array#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Negative array index support `array[-1]` using [ES2015 `Proxy`](https://ponyfoo.com/articles/es6-proxies-in-depth).
+
+@example
+```
+import negativeArray = require('negative-array');
+
+// Adds negative array index support to any given array
+const unicorn = negativeArray(['🐴', '🎂', '🌈']);
+
+// Get the last item by using a negative index
+console.log(unicorn[-1]);
+//=> '🌈'
+
+// OMG, YES!
+```
+*/
 
 ```
 

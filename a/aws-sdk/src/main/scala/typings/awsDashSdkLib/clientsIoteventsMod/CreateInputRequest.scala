@@ -19,7 +19,7 @@ trait CreateInputRequest extends js.Object {
     */
   var inputName: InputName
   /**
-    * Metadata which can be used to manage the input.
+    * Metadata that can be used to manage the input.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

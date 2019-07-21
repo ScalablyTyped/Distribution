@@ -220,8 +220,8 @@ object cryptoNs extends js.Object {
   def createSecretKey(key: nodeLib.Buffer): nodeLib.cryptoMod.KeyObject = js.native
   def createSign(algorithm: java.lang.String): nodeLib.cryptoMod.Signer = js.native
   def createSign(algorithm: java.lang.String, options: nodeLib.streamMod.WritableOptions): nodeLib.cryptoMod.Signer = js.native
-  def createVerify(algorith: java.lang.String): nodeLib.cryptoMod.Verify = js.native
-  def createVerify(algorith: java.lang.String, options: nodeLib.streamMod.WritableOptions): nodeLib.cryptoMod.Verify = js.native
+  def createVerify(algorithm: java.lang.String): nodeLib.cryptoMod.Verify = js.native
+  def createVerify(algorithm: java.lang.String, options: nodeLib.streamMod.WritableOptions): nodeLib.cryptoMod.Verify = js.native
   def generateKeyPair(
     `type`: adoneLib.adoneLibStrings.dsa,
     options: nodeLib.cryptoMod.DSAKeyPairOptions[
@@ -359,21 +359,6 @@ object cryptoNs extends js.Object {
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def randomFill(
-    buffer: nodeLib.Buffer,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def randomFill(
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def randomFill(
-    buffer: nodeLib.Buffer,
-    offset: scala.Double,
-    size: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def randomFill(
     buffer: stdLib.DataView,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.DataView, scala.Unit]
   ): scala.Unit = js.native
@@ -523,9 +508,6 @@ object cryptoNs extends js.Object {
     size: scala.Double,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8ClampedArray, scala.Unit]
   ): scala.Unit = js.native
-  def randomFillSync(buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def randomFillSync(buffer: nodeLib.Buffer, offset: scala.Double): nodeLib.Buffer = js.native
-  def randomFillSync(buffer: nodeLib.Buffer, offset: scala.Double, size: scala.Double): nodeLib.Buffer = js.native
   def randomFillSync(buffer: stdLib.DataView): stdLib.DataView = js.native
   def randomFillSync(buffer: stdLib.DataView, offset: scala.Double): stdLib.DataView = js.native
   def randomFillSync(buffer: stdLib.DataView, offset: scala.Double, size: scala.Double): stdLib.DataView = js.native
