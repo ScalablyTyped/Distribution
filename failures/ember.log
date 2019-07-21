@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => ember, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember),TsIdentLibrarySimple(ember)),TsIdentModule(None,List(ember))) [id => ember, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ember)) [id => ember, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(ember) [id => ember, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(ember) [id => ember, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(EmberArrayNs), TsIdentSimple(A)))) [id => ember, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember) / TsExport() / TsExporteeTree() / TsDeclNamespace(Ember) / TsDeclVar(A) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(EmberArrayNs), TsIdentSimple(isArray)))) [id => ember, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember) / TsExport() / TsExporteeTree() / TsDeclNamespace(Ember) / TsDeclVar(isArray) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(EmberEnumerable)))) [id => ember, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember) / TsExport() / TsExporteeTree() / TsDeclNamespace(Ember) / TsDeclVar(Enumerable) / TsTypeQuery())] 

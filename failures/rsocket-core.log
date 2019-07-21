@@ -34,7 +34,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rsocket-core, RSocketVersion)) [id => rsocket-core, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rsocket-core/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rsocket-core),TsIdentLibrarySimple(rsocket-core)),TsIdentModule(None,List(rsocket-core))) [id => rsocket-core, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rsocket-core)) [id => rsocket-core, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(rsocket-core) [id => rsocket-core, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(rsocket-core) [id => rsocket-core, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DataMimeType) [id => rsocket-core, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rsocket-core/RSocketClient) / TsDeclInterface(ClientConfig) / TsMemberProperty(setup) / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => rsocket-core, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing rsocket-core [id => rsocket-core, phase => scala.js] 

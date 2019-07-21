@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk),TsIdentLibrarySimple(paypal-rest-sdk)),TsIdentModule(None,List(paypal-rest-sdk))) [id => paypal-rest-sdk, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(paypal-rest-sdk)) [id => paypal-rest-sdk, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Giftwrap) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Amount) / TsMemberProperty(details) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Items) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(item_list) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Allowedpaymentmethod) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(payment_options) / TsTypeObject())] 

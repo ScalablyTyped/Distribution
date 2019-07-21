@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_NextText extends js.Object {
+  /** 下一页 */
   var nextText: java.lang.String
+  /** 上一页 */
   var prevText: java.lang.String
 }
 

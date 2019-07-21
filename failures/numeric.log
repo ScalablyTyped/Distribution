@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(numeric)) [id => numeric, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abs) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abseq) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(acos) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 

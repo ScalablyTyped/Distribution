@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 trait CardFooterProps
   extends CardFooterPropsType
      with atAntDashDesignReactDashNativeLib.libStyleMod.WithThemeStyles[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.libCardStyleMod.CardStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerContent | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerExtra | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerWrap
-      ]
+      atAntDashDesignReactDashNativeLib.PickCardStylefooterContentfooterExtrafooterWrap
     ] {
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -25,10 +22,7 @@ object CardFooterProps {
     extra: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: stdLib.Partial[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.libCardStyleMod.CardStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerContent | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerExtra | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.footerWrap
-      ]
+      atAntDashDesignReactDashNativeLib.PickCardStylefooterContentfooterExtrafooterWrap
     ] = null
   ): CardFooterProps = {
     val __obj = js.Dynamic.literal()

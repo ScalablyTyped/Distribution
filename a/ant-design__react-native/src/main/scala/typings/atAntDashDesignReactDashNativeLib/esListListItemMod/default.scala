@@ -14,6 +14,6 @@ class default () extends Item
 @js.native
 object default extends js.Object {
   var Brief: org.scalablytyped.runtime.Instantiable0[atAntDashDesignReactDashNativeLib.esListListItemMod.Brief] = js.native
-  var defaultProps: stdLib.Partial[atAntDashDesignReactDashNativeLib.esListListItemMod.ListItemProps] = js.native
+  var defaultProps: atAntDashDesignReactDashNativeLib.PartialListItemProps = js.native
 }
 

@@ -47,7 +47,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(statusbar, lib, style, statusbar)) [id => @jupyterlab/statusbar, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/statusbar/lib/tokens.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/statusbar),TsIdentLibraryScoped(jupyterlab,Some(statusbar))),TsIdentModule(Some(jupyterlab),List(statusbar, lib, tokens))) [id => @jupyterlab/statusbar, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(statusbar, lib, tokens)) [id => @jupyterlab/statusbar, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(statusbar)) [id => @jupyterlab/statusbar, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(jupyterlab,Some(statusbar)) [id => @jupyterlab/statusbar, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify CodeEditor.IEditor [id => @jupyterlab/statusbar, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jupyterlab/statusbar/lib/defaults/lineCol) / TsExport() / TsExporteeTree() / TsDeclNamespace(LineCol) / TsDeclClass(Model) / TsMemberProperty(editor) / TsTypeUnion() / TsTypeRef())] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/statusbar, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/statusbar [id => @jupyterlab/statusbar, phase => scala.js] 

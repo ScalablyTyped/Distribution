@@ -20,10 +20,7 @@ object CardHeaderProps {
     extra: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: stdLib.Partial[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.esCardStyleMod.CardStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContentWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContent | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtraWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtra | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerImage | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerTitle | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerWrap
-      ]
+      atAntDashDesignReactDashNativeLib.PickCardStyleheaderContentWrapheaderContentheaderE
     ] = null,
     thumb: reactLib.reactMod.ReactNode = null,
     thumbStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle] = null,

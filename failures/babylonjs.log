@@ -53,7 +53,7 @@
 [debug] PhaseRunner.scala:92 Ignored [id => babylonjs, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => babylonjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/babylonjs/babylon.module.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/babylonjs),TsIdentLibrarySimple(babylonjs)),TsIdentModule(None,List(babylonjs))) [id => babylonjs, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(babylonjs) [id => babylonjs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(babylonjs) [id => babylonjs, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify IDisplayChangedEventArgs [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Engines/engine) / TsExport() / TsExporteeTree() / TsDeclClass(Engine) / TsMemberFunction(initWebVR) / TsFunSig() / TsTypeRef() / TsTypeRef())] 
 [warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DomManagement.GetDOMTextContent [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Misc/tools) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(GetDOMTextContent) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DomManagement.IsWindowObjectExist [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Misc/tools) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 

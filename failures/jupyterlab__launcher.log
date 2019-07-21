@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/launcher, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/launcher/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/launcher),TsIdentLibraryScoped(jupyterlab,Some(launcher))),TsIdentModule(Some(jupyterlab),List(launcher))) [id => @jupyterlab/launcher, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(launcher)) [id => @jupyterlab/launcher, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(launcher)) [id => @jupyterlab/launcher, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(jupyterlab,Some(launcher)) [id => @jupyterlab/launcher, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/launcher, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/launcher [id => @jupyterlab/launcher, phase => scala.js] 
 [info ] InferMemberOverrides.scala:83 added override methods List(Name(dispose)) [id => @jupyterlab/launcher, phase => scala.js, this => Name(atJupyterlabLauncherLib) / Name(atJupyterlabLauncherMod) / Name(LauncherModel)] 

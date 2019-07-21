@@ -14,9 +14,6 @@ object ^ extends js.Object {
     url: java.lang.String
   ): atAntDashDesignProDashLayoutLib.esTypingsMod.MenuDataItem = js.native
   def getBreadcrumbFromProps(props: BreadcrumbProps): atAntDashDesignProDashLayoutLib.Anon_BreadcrumbLocation = js.native
-  def getBreadcrumbProps(props: BreadcrumbProps): stdLib.Pick[
-    antdLib.esBreadcrumbBreadcrumbMod.BreadcrumbProps, 
-    atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.routes | atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.itemRender
-  ] = js.native
+  def getBreadcrumbProps(props: BreadcrumbProps): atAntDashDesignProDashLayoutLib.PickBreadcrumbPropsroutesitemRender = js.native
 }
 

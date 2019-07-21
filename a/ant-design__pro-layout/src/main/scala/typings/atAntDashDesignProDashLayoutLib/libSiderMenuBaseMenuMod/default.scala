@@ -15,7 +15,7 @@ class default protected () extends BaseMenu {
 @JSImport("@ant-design/pro-layout/lib/SiderMenu/BaseMenu", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: stdLib.Partial[atAntDashDesignProDashLayoutLib.libSiderMenuBaseMenuMod.BaseMenuProps] = js.native
+  var defaultProps: atAntDashDesignProDashLayoutLib.PartialBaseMenuPropsAutoHideHeader = js.native
   def getDerivedStateFromProps(props: atAntDashDesignProDashLayoutLib.libSiderMenuBaseMenuMod.BaseMenuProps): scala.Null = js.native
 }
 

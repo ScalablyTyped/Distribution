@@ -38,7 +38,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(redux-orm)) [id => redux-orm, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/redux-orm/redux.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/redux-orm),TsIdentLibrarySimple(redux-orm)),TsIdentModule(None,List(redux-orm, redux))) [id => redux-orm, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(redux-orm, redux)) [id => redux-orm, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(redux-orm) [id => redux-orm, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(redux-orm) [id => redux-orm, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(AnyModel)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsTypeParam() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(AnyModel)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsTypeParam() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(QuerySet)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsMemberProperty(querySetClass) / TsTypeQuery())] 

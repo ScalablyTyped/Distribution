@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @ember/service, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__service/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__service),TsIdentLibraryScoped(ember,Some(service))),TsIdentModule(Some(ember),List(service))) [id => @ember/service, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(service)) [id => @ember/service, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(ember,Some(service)) [id => @ember/service, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(ember,Some(service)) [id => @ember/service, phase => typescript] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibraryScoped(ember,Some(service)), TsIdentModule(Some(ember),List(service)), TsIdentSimple(Registry))) [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclFunction(inject) / TsFunSig() / TsTypeParam() / TsTypeKeyOf())] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclInterface(Service))] 
 [debug] PhaseRunner.scala:84 Success [id => @ember/service, phase => typescript] 

@@ -7,24 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait BriefProps
   extends atAntDashDesignReactDashNativeLib.esListPropsTypeMod.BriefProps
-     with atAntDashDesignReactDashNativeLib.esStyleMod.WithThemeStyles[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.esListStyleMod.ListStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.Brief | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.BriefText
-      ]
-    ]
+     with atAntDashDesignReactDashNativeLib.esStyleMod.WithThemeStyles[atAntDashDesignReactDashNativeLib.PickListStyleBriefBriefText]
 
 object BriefProps {
   @scala.inline
   def apply(
     children: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    styles: stdLib.Partial[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.esListStyleMod.ListStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.Brief | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.BriefText
-      ]
-    ] = null,
+    styles: stdLib.Partial[atAntDashDesignReactDashNativeLib.PickListStyleBriefBriefText] = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()

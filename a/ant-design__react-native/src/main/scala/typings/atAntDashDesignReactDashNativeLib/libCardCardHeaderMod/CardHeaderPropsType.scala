@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CardHeaderPropsType
   extends atAntDashDesignReactDashNativeLib.libStyleMod.WithThemeStyles[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.libCardStyleMod.CardStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContentWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContent | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtraWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtra | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerImage | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerTitle | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerWrap
-      ]
+      atAntDashDesignReactDashNativeLib.PickCardStyleheaderContentWrapheaderContentheaderE
     ] {
   var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** need url of img, if this is string. */
@@ -23,10 +20,7 @@ object CardHeaderPropsType {
   def apply(
     extra: reactLib.reactMod.ReactNode = null,
     styles: stdLib.Partial[
-      stdLib.Pick[
-        atAntDashDesignReactDashNativeLib.libCardStyleMod.CardStyle, 
-        atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContentWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerContent | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtraWrap | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerExtra | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerImage | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerTitle | atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings.headerWrap
-      ]
+      atAntDashDesignReactDashNativeLib.PickCardStyleheaderContentWrapheaderContentheaderE
     ] = null,
     thumb: reactLib.reactMod.ReactNode = null,
     title: reactLib.reactMod.ReactNode = null

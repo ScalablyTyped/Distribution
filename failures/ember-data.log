@@ -71,7 +71,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ember-data, types, registries, serializer)) [id => ember-data, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data/types/registries/transform.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data),TsIdentLibrarySimple(ember-data)),TsIdentModule(None,List(ember-data, types, registries, transform))) [id => ember-data, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ember-data, types, registries, transform)) [id => ember-data, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(ember-data) [id => ember-data, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(ember-data) [id => ember-data, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify DS.Model [id => ember-data, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ModelKeys) / TsTypeParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify DS.Model [id => ember-data, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ModelKeys) / TsTypeRef() / TsTypeKeyOf() / TsTypeRef())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DS), TsIdentSimple(AdapterError)))) [id => ember-data, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember-data/adapters/errors) / TsExport() / TsExporteeTree() / TsDeclVar(AdapterError) / TsTypeQuery())] 

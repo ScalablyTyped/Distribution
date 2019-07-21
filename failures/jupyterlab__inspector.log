@@ -13,7 +13,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(inspector, lib, kernelconnector)) [id => @jupyterlab/inspector, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/inspector/lib/tokens.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/inspector),TsIdentLibraryScoped(jupyterlab,Some(inspector))),TsIdentModule(Some(jupyterlab),List(inspector, lib, tokens))) [id => @jupyterlab/inspector, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(inspector, lib, tokens)) [id => @jupyterlab/inspector, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(inspector)) [id => @jupyterlab/inspector, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(jupyterlab,Some(inspector)) [id => @jupyterlab/inspector, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify CodeEditor.IEditor [id => @jupyterlab/inspector, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jupyterlab/inspector/lib/handler) / TsExport() / TsExporteeTree() / TsDeclClass(InspectionHandler) / TsMemberProperty(editor) / TsTypeUnion() / TsTypeRef())] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/inspector, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/inspector [id => @jupyterlab/inspector, phase => scala.js] 

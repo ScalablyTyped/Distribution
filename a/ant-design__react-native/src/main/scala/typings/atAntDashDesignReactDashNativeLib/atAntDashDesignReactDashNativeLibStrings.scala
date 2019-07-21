@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignReactDashNativeLibStrings {
   @js.native
-  sealed trait Brief extends js.Object
-  
-  @js.native
-  sealed trait BriefText extends js.Object
-  
-  @js.native
   sealed trait Empty extends js.Object
   
   @js.native
@@ -35,9 +29,6 @@ object atAntDashDesignReactDashNativeLibStrings {
   
   @js.native
   sealed trait between extends js.Object
-  
-  @js.native
-  sealed trait body extends js.Object
   
   @js.native
   sealed trait bottom extends js.Object
@@ -79,37 +70,7 @@ object atAntDashDesignReactDashNativeLibStrings {
   sealed trait fixed extends js.Object
   
   @js.native
-  sealed trait footerContent extends js.Object
-  
-  @js.native
-  sealed trait footerExtra extends js.Object
-  
-  @js.native
-  sealed trait footerWrap extends js.Object
-  
-  @js.native
   sealed trait ghost extends js.Object
-  
-  @js.native
-  sealed trait headerContent extends js.Object
-  
-  @js.native
-  sealed trait headerContentWrap extends js.Object
-  
-  @js.native
-  sealed trait headerExtra extends js.Object
-  
-  @js.native
-  sealed trait headerExtraWrap extends js.Object
-  
-  @js.native
-  sealed trait headerImage extends js.Object
-  
-  @js.native
-  sealed trait headerTitle extends js.Object
-  
-  @js.native
-  sealed trait headerWrap extends js.Object
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -241,10 +202,6 @@ object atAntDashDesignReactDashNativeLibStrings {
   sealed trait year extends js.Object
   
   @scala.inline
-  def Brief: Brief = "Brief".asInstanceOf[Brief]
-  @scala.inline
-  def BriefText: BriefText = "BriefText".asInstanceOf[BriefText]
-  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def PopoverItem: PopoverItem = "PopoverItem".asInstanceOf[PopoverItem]
@@ -260,8 +217,6 @@ object atAntDashDesignReactDashNativeLibStrings {
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   @scala.inline
   def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -289,27 +244,7 @@ object atAntDashDesignReactDashNativeLibStrings {
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
-  def footerContent: footerContent = "footerContent".asInstanceOf[footerContent]
-  @scala.inline
-  def footerExtra: footerExtra = "footerExtra".asInstanceOf[footerExtra]
-  @scala.inline
-  def footerWrap: footerWrap = "footerWrap".asInstanceOf[footerWrap]
-  @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
-  @scala.inline
-  def headerContent: headerContent = "headerContent".asInstanceOf[headerContent]
-  @scala.inline
-  def headerContentWrap: headerContentWrap = "headerContentWrap".asInstanceOf[headerContentWrap]
-  @scala.inline
-  def headerExtra: headerExtra = "headerExtra".asInstanceOf[headerExtra]
-  @scala.inline
-  def headerExtraWrap: headerExtraWrap = "headerExtraWrap".asInstanceOf[headerExtraWrap]
-  @scala.inline
-  def headerImage: headerImage = "headerImage".asInstanceOf[headerImage]
-  @scala.inline
-  def headerTitle: headerTitle = "headerTitle".asInstanceOf[headerTitle]
-  @scala.inline
-  def headerWrap: headerWrap = "headerWrap".asInstanceOf[headerWrap]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline

@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-city-search, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-city-search/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-city-search),TsIdentLibrarySimple(amap-js-api-city-search)),TsIdentModule(None,List(amap-js-api-city-search))) [id => amap-js-api-city-search, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(amap-js-api-city-search) [id => amap-js-api-city-search, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(amap-js-api-city-search) [id => amap-js-api-city-search, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Info) [id => amap-js-api-city-search, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclNamespace(CitySearch) / TsDeclInterface(EventMap) / TsMemberProperty(error) / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-city-search, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing amap-js-api-city-search [id => amap-js-api-city-search, phase => scala.js] 

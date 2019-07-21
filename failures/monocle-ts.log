@@ -5,7 +5,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(monocle-ts, es6)) [id => monocle-ts, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts),TsIdentLibrarySimple(monocle-ts)),TsIdentModule(None,List(monocle-ts))) [id => monocle-ts, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(monocle-ts)) [id => monocle-ts, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(monocle-ts) [id => monocle-ts, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(monocle-ts) [id => monocle-ts, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify Refinement<S, A> [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclClass(Prism) / TsMemberFunction(fromPredicate) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify Predicate<A> [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclClass(Prism) / TsMemberFunction(fromPredicate) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify URIS3 [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclInterface(ModifyF) / TsMemberCall() / TsFunSig() / TsTypeParam() / TsTypeRef())] 

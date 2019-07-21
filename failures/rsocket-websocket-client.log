@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rsocket-websocket-client, RSocketWebSocketClient)) [id => rsocket-websocket-client, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rsocket-websocket-client/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rsocket-websocket-client),TsIdentLibrarySimple(rsocket-websocket-client)),TsIdentModule(None,List(rsocket-websocket-client))) [id => rsocket-websocket-client, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rsocket-websocket-client)) [id => rsocket-websocket-client, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(rsocket-websocket-client) [id => rsocket-websocket-client, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(rsocket-websocket-client) [id => rsocket-websocket-client, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => rsocket-websocket-client, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing rsocket-websocket-client [id => rsocket-websocket-client, phase => scala.js] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(close, connect, connectionStatus, receive, send, sendOne) [id => rsocket-websocket-client, phase => scala.js, this => Name(rsocketDashWebsocketDashClientLib) / Name(rSocketWebSocketClientMod) / Name(default)] 

@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/hub-extension, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/hub-extension/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/hub-extension),TsIdentLibraryScoped(jupyterlab,Some(hub-extension))),TsIdentModule(Some(jupyterlab),List(hub-extension))) [id => @jupyterlab/hub-extension, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(hub-extension)) [id => @jupyterlab/hub-extension, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(hub-extension)) [id => @jupyterlab/hub-extension, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(jupyterlab,Some(hub-extension)) [id => @jupyterlab/hub-extension, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/hub-extension, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/hub-extension [id => @jupyterlab/hub-extension, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/hub-extension, phase => scala.js] 

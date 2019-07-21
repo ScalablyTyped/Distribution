@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/json-extension, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/json-extension/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/json-extension),TsIdentLibraryScoped(jupyterlab,Some(json-extension))),TsIdentModule(Some(jupyterlab),List(json-extension))) [id => @jupyterlab/json-extension, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(json-extension)) [id => @jupyterlab/json-extension, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(json-extension)) [id => @jupyterlab/json-extension, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibraryScoped(jupyterlab,Some(json-extension)) [id => @jupyterlab/json-extension, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/json-extension, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/json-extension [id => @jupyterlab/json-extension, phase => scala.js] 
 [warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(Printing), TsIdentSimple(symbol)) [id => @jupyterlab/json-extension, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@jupyterlab/json-extension) / TsDeclClass(RenderedJSON) / TsMemberIndex())] 

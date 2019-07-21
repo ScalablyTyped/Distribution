@@ -11,21 +11,21 @@ trait SettingDrawerProps extends js.Object {
   var onCollapseChange: js.UndefOr[js.Function1[/* collapse */ scala.Boolean, scala.Unit]] = js.undefined
   var onSettingChange: js.UndefOr[
     js.Function1[
-      /* settings */ MergerSettingsType[atAntDashDesignProDashLayoutLib.libDefaultSettingsMod.Settings], 
+      /* settings */ atAntDashDesignProDashLayoutLib.MergerSettingsTypeSettingsAutoHideHeader, 
       scala.Unit
     ]
   ] = js.undefined
-  var settings: MergerSettingsType[atAntDashDesignProDashLayoutLib.libDefaultSettingsMod.Settings]
+  var settings: atAntDashDesignProDashLayoutLib.MergerSettingsTypeSettingsAutoHideHeader
 }
 
 object SettingDrawerProps {
   @scala.inline
   def apply(
-    settings: MergerSettingsType[atAntDashDesignProDashLayoutLib.libDefaultSettingsMod.Settings],
+    settings: atAntDashDesignProDashLayoutLib.MergerSettingsTypeSettingsAutoHideHeader,
     collapse: js.UndefOr[scala.Boolean] = js.undefined,
     getContainer: js.Any = null,
     onCollapseChange: /* collapse */ scala.Boolean => scala.Unit = null,
-    onSettingChange: /* settings */ MergerSettingsType[atAntDashDesignProDashLayoutLib.libDefaultSettingsMod.Settings] => scala.Unit = null
+    onSettingChange: /* settings */ atAntDashDesignProDashLayoutLib.MergerSettingsTypeSettingsAutoHideHeader => scala.Unit = null
   ): SettingDrawerProps = {
     val __obj = js.Dynamic.literal(settings = settings)
     if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
