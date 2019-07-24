@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceEnrollmentPlatformRestrictionsConfiguration extends DeviceEnrollmentConfiguration {
-  /** Not yet documented */
+  // Not yet documented
   var androidRestriction: js.UndefOr[DeviceEnrollmentPlatformRestriction] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var iosRestriction: js.UndefOr[DeviceEnrollmentPlatformRestriction] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var macOSRestriction: js.UndefOr[DeviceEnrollmentPlatformRestriction] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var windowsMobileRestriction: js.UndefOr[DeviceEnrollmentPlatformRestriction] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var windowsRestriction: js.UndefOr[DeviceEnrollmentPlatformRestriction] = js.undefined
 }
 

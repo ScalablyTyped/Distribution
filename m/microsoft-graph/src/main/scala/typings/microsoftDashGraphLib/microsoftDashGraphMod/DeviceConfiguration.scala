@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceConfiguration extends Entity {
-  /** The list of assignments for the device configuration profile. */
+  // The list of assignments for the device configuration profile.
   var assignments: js.UndefOr[js.Array[DeviceConfigurationAssignment]] = js.undefined
-  /** DateTime the object was created. */
+  // DateTime the object was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Admin provided description of the Device Configuration. */
+  // Admin provided description of the Device Configuration.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Device Configuration Setting State Device Summary */
+  // Device Configuration Setting State Device Summary
   var deviceSettingStateSummaries: js.UndefOr[js.Array[SettingStateDeviceSummary]] = js.undefined
-  /** Device Configuration devices status overview */
+  // Device Configuration devices status overview
   var deviceStatusOverview: js.UndefOr[DeviceConfigurationDeviceOverview] = js.undefined
-  /** Device configuration installation status by device. */
+  // Device configuration installation status by device.
   var deviceStatuses: js.UndefOr[js.Array[DeviceConfigurationDeviceStatus]] = js.undefined
-  /** Admin provided name of the device configuration. */
+  // Admin provided name of the device configuration.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime the object was last modified. */
+  // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Device Configuration users status overview */
+  // Device Configuration users status overview
   var userStatusOverview: js.UndefOr[DeviceConfigurationUserOverview] = js.undefined
-  /** Device configuration installation status by user. */
+  // Device configuration installation status by user.
   var userStatuses: js.UndefOr[js.Array[DeviceConfigurationUserStatus]] = js.undefined
-  /** Version of the device configuration. */
+  // Version of the device configuration.
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 

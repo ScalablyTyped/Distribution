@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookWorksheetProtection extends Entity {
-  /** Sheet protection options. Read-only. */
+  // Sheet protection options. Read-only.
   var options: js.UndefOr[WorkbookWorksheetProtectionOptions] = js.undefined
-  /** Indicates if the worksheet is protected.  Read-only. */
+  // Indicates if the worksheet is protected. Read-only.
   var `protected`: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/html", "StyleElement")
 @js.native
 abstract class StyleElement () extends Element {
+  /** `type` attribute value. */
   def `type`(): java.lang.String = js.native
 }
 

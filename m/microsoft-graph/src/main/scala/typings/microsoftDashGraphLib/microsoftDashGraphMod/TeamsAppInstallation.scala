@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsAppInstallation extends Entity {
-  /** The app that is installed. */
+  // The app that is installed.
   var teamsApp: js.UndefOr[TeamsApp] = js.undefined
-  /** The details of this version of the app. */
+  // The details of this version of the app.
   var teamsAppDefinition: js.UndefOr[TeamsAppDefinition] = js.undefined
 }
 

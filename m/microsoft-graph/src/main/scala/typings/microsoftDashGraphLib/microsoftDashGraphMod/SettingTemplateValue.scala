@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SettingTemplateValue extends js.Object {
-  /** Default value for the setting. */
+  // Default value for the setting.
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
-  /** Description of the setting. */
+  // Description of the setting.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the setting. */
+  // Name of the setting.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Type of the setting. */
+  // Type of the setting.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

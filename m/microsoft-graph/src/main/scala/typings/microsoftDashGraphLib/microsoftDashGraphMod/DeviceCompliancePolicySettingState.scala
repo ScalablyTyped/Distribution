@@ -6,29 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCompliancePolicySettingState extends js.Object {
-  /** Current value of setting on device */
+  // Current value of setting on device
   var currentValue: js.UndefOr[java.lang.String] = js.undefined
-  /** Error code for the setting */
+  // Error code for the setting
   var errorCode: js.UndefOr[scala.Double] = js.undefined
-  /** Error description */
+  // Error description
   var errorDescription: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of setting instance that is being reported. */
+  // Name of setting instance that is being reported.
   var instanceDisplayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The setting that is being reported */
+  // The setting that is being reported
   var setting: js.UndefOr[java.lang.String] = js.undefined
-  /** Localized/user friendly setting name that is being reported */
+  // Localized/user friendly setting name that is being reported
   var settingName: js.UndefOr[java.lang.String] = js.undefined
-  /** Contributing policies */
+  // Contributing policies
   var sources: js.UndefOr[js.Array[SettingSource]] = js.undefined
-  /** The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned. */
+  /**
+    * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant,
+    * error, conflict, notAssigned.
+    */
   var state: js.UndefOr[ComplianceStatus] = js.undefined
-  /** UserEmail */
+  // UserEmail
   var userEmail: js.UndefOr[java.lang.String] = js.undefined
-  /** UserId */
+  // UserId
   var userId: js.UndefOr[java.lang.String] = js.undefined
-  /** UserName */
+  // UserName
   var userName: js.UndefOr[java.lang.String] = js.undefined
-  /** UserPrincipalName. */
+  // UserPrincipalName.
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

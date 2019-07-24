@@ -11,7 +11,7 @@ trait MediaContentRatingNewZealand extends js.Object {
     * agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
     */
   var movieRating: js.UndefOr[RatingNewZealandMoviesType] = js.undefined
-  /** TV rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, adults. */
+  // TV rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
   var tvRating: js.UndefOr[RatingNewZealandTelevisionType] = js.undefined
 }
 

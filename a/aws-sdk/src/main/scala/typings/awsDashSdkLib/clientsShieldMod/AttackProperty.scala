@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait AttackProperty extends js.Object {
   /**
-    * The type of DDoS event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events.
+    * The type of distributed denial of service (DDoS) event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events.
     */
   var AttackLayer: js.UndefOr[AttackLayer] = js.undefined
   /**
-    * Defines the DDoS attack property information that is provided.
+    * Defines the DDoS attack property information that is provided. The WORDPRESS_PINGBACK_REFLECTOR and WORDPRESS_PINGBACK_SOURCE values are valid only for WordPress reflective pingback DDoS attacks.
     */
   var AttackPropertyIdentifier: js.UndefOr[AttackPropertyIdentifier] = js.undefined
   /**

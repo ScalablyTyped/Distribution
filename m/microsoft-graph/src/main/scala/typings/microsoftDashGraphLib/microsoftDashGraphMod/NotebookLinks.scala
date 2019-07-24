@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotebookLinks extends js.Object {
-  /** Opens the notebook in the OneNote native client if it's installed. */
+  // Opens the notebook in the OneNote native client if it's installed.
   var oneNoteClientUrl: js.UndefOr[ExternalLink] = js.undefined
-  /** Opens the notebook in OneNote Online. */
+  // Opens the notebook in OneNote on the web.
   var oneNoteWebUrl: js.UndefOr[ExternalLink] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SiteCollection extends js.Object {
-  /** The hostname for the site collection. Read-only. */
+  // The hostname for the site collection. Read-only.
   var hostname: js.UndefOr[java.lang.String] = js.undefined
-  /** If present, indicates that this is a root site collection in SharePoint. Read-only. */
+  // If present, indicates that this is a root site collection in SharePoint. Read-only.
   var root: js.UndefOr[Root] = js.undefined
 }
 

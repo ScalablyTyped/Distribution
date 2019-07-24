@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AverageComparativeScore extends js.Object {
-  /** Average score within specified basis. */
+  // Average score within specified basis.
   var averageScore: js.UndefOr[scala.Double] = js.undefined
-  /** Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes. */
+  // Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes.
   var basis: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Recipient extends js.Object {
-  /** The recipient's email address. */
+  // The recipient's email address.
   var emailAddress: js.UndefOr[EmailAddress] = js.undefined
 }
 

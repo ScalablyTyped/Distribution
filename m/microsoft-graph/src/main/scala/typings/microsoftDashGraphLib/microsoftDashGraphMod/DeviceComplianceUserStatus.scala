@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceComplianceUserStatus extends Entity {
-  /** Devices count for that user. */
+  // Devices count for that user.
   var devicesCount: js.UndefOr[scala.Double] = js.undefined
-  /** Last modified date time of the policy report. */
+  // Last modified date time of the policy report.
   var lastReportedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned. */
+  /**
+    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated,
+    * nonCompliant, error, conflict, notAssigned.
+    */
   var status: js.UndefOr[ComplianceStatus] = js.undefined
-  /** User name of the DevicePolicyStatus. */
+  // User name of the DevicePolicyStatus.
   var userDisplayName: js.UndefOr[java.lang.String] = js.undefined
-  /** UserPrincipalName. */
+  // UserPrincipalName.
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

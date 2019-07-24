@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsInformationProtectionNetworkLearningSummary extends Entity {
-  /** Device Count */
+  // Device Count
   var deviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Website url */
+  // Website url
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

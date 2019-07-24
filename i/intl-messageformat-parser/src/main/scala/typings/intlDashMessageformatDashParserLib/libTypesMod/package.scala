@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
-  type ArgumentElement = BaseElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`1`]
-  type DateElement = SimpleFormatElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`3`]
-  type LiteralElement = BaseElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`0`]
+  type ArgumentElement = BaseElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.argument]
+  type DateElement = SimpleFormatElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.date]
+  type LiteralElement = BaseElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.literal]
   /* Rewritten from type alias, can be one of: 
     - LiteralElement
     - ArgumentElement
@@ -19,8 +19,8 @@ package object libTypesMod {
     - PluralElement
   */
   type MessageFormatElement = _MessageFormatElement | LiteralElement | ArgumentElement | NumberElement | DateElement | TimeElement
-  type NumberElement = SimpleFormatElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`2`]
-  type TimeElement = SimpleFormatElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`4`]
+  type NumberElement = SimpleFormatElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.number]
+  type TimeElement = SimpleFormatElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.time]
   /* Rewritten from type alias, can be one of: 
     - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibStrings.zero
     - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibStrings.one

@@ -9,11 +9,11 @@ trait Workbook extends Entity {
   var application: js.UndefOr[WorkbookApplication] = js.undefined
   var comments: js.UndefOr[js.Array[WorkbookComment]] = js.undefined
   var functions: js.UndefOr[WorkbookFunctions] = js.undefined
-  /** Represents a collection of workbook scoped named items (named ranges and constants). Read-only. */
+  // Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
   var names: js.UndefOr[js.Array[WorkbookNamedItem]] = js.undefined
-  /** Represents a collection of tables associated with the workbook. Read-only. */
+  // Represents a collection of tables associated with the workbook. Read-only.
   var tables: js.UndefOr[js.Array[WorkbookTable]] = js.undefined
-  /** Represents a collection of worksheets associated with the workbook. Read-only. */
+  // Represents a collection of worksheets associated with the workbook. Read-only.
   var worksheets: js.UndefOr[js.Array[WorkbookWorksheet]] = js.undefined
 }
 

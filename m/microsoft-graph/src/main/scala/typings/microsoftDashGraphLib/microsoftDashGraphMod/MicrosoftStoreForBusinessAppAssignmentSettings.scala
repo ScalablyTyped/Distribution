@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MicrosoftStoreForBusinessAppAssignmentSettings extends MobileAppAssignmentSettings {
-  /** Whether or not to use device execution context for Microsoft Store for Business mobile app. */
+  // Whether or not to use device execution context for Microsoft Store for Business mobile app.
   var useDeviceContext: js.UndefOr[scala.Boolean] = js.undefined
 }
 

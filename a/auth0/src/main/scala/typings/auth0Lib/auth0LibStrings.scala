@@ -13,6 +13,12 @@ object auth0LibStrings {
   sealed trait RS256 extends js.Object
   
   @js.native
+  sealed trait access_token extends js.Object
+  
+  @js.native
+  sealed trait access_token_authz extends js.Object
+  
+  @js.native
   sealed trait ad
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -451,6 +457,10 @@ object auth0LibStrings {
   def HS256: HS256 = "HS256".asInstanceOf[HS256]
   @scala.inline
   def RS256: RS256 = "RS256".asInstanceOf[RS256]
+  @scala.inline
+  def access_token: access_token = "access_token".asInstanceOf[access_token]
+  @scala.inline
+  def access_token_authz: access_token_authz = "access_token_authz".asInstanceOf[access_token_authz]
   @scala.inline
   def ad: ad = "ad".asInstanceOf[ad]
   @scala.inline

@@ -293,6 +293,9 @@ object reactDashTransitionDashGroupLibStrings {
   sealed trait img extends js.Object
   
   @js.native
+  sealed trait `in-out` extends js.Object
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -375,6 +378,9 @@ object reactDashTransitionDashGroupLibStrings {
   
   @js.native
   sealed trait option extends js.Object
+  
+  @js.native
+  sealed trait `out-in` extends js.Object
   
   @js.native
   sealed trait output extends js.Object
@@ -737,6 +743,8 @@ object reactDashTransitionDashGroupLibStrings {
   @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
+  def `in-out`: `in-out` = "in-out".asInstanceOf[`in-out`]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
@@ -792,6 +800,8 @@ object reactDashTransitionDashGroupLibStrings {
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
+  @scala.inline
+  def `out-in`: `out-in` = "out-in".asInstanceOf[`out-in`]
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline

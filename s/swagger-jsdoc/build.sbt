@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "swagger-jsdoc"
-version := "0.0-unknown-dt-20190322Z-962786"
+version := "3.0-dt-20190723Z-28c41e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

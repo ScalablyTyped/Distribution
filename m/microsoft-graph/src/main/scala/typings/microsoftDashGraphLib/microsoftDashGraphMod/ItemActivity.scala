@@ -6,9 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemActivity extends Entity {
+  // An item was accessed.
   var access: js.UndefOr[AccessAction] = js.undefined
+  // Details about when the activity took place. Read-only.
   var activityDateTime: js.UndefOr[java.lang.String] = js.undefined
+  // Identity of who performed the action. Read-only.
   var actor: js.UndefOr[IdentitySet] = js.undefined
+  // Exposes the driveItem that was the target of this activity.
   var driveItem: js.UndefOr[DriveItem] = js.undefined
 }
 

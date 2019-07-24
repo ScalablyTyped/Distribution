@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "lambda-tester"
-version := "3.5-dt-20181016Z-e5e5e2"
+version := "3.5-dt-20181016Z-35c16a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190715Z-52355b",
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190722Z-23a9df",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

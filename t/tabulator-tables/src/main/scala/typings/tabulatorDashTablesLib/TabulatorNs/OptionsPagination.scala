@@ -35,7 +35,7 @@ trait OptionsPagination extends js.Object {
     	 */
   var paginationDataSent: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /**  By default the pagination controls are added to the footer of the table. If you wish the controls to be created in another element pass a DOM node or a CSS selector for that element to the paginationElement option.*/
-  var paginationElement: js.UndefOr[stdLib.HTMLElement | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.string] = js.undefined
+  var paginationElement: js.UndefOr[stdLib.HTMLElement | java.lang.String] = js.undefined
   /** Set the number of rows in each page	 */
   var paginationSize: js.UndefOr[scala.Double] = js.undefined
   /**  Setting this option to true will cause Tabulator to create a list of page size options, that are multiples of the current page size. In the example below, the list will have the values of 5, 10, 15 and 20.
@@ -53,7 +53,7 @@ object OptionsPagination {
     paginationButtonCount: scala.Int | scala.Double = null,
     paginationDataReceived: stdLib.Record[java.lang.String, java.lang.String] = null,
     paginationDataSent: stdLib.Record[java.lang.String, java.lang.String] = null,
-    paginationElement: stdLib.HTMLElement | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.string = null,
+    paginationElement: stdLib.HTMLElement | java.lang.String = null,
     paginationSize: scala.Int | scala.Double = null,
     paginationSizeSelector: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | js.Array[scala.Double] = null
   ): OptionsPagination = {

@@ -9,15 +9,54 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object Global extends js.Object {
-  // Init context and VU body
-  val __ENV: js.Object = js.native
+  /**
+    * Current iteration number.
+    * https://docs.k6.io/docs/execution-context-variables
+    * @public
+    */
   val __ITER: scala.Double = js.native
+  /**
+    * Current VU number.
+    * https://docs.k6.io/docs/execution-context-variables
+    * @public
+    */
   val __VU: scala.Double = js.native
-  // VU body only
+  // === VU logic only ===
+  // ---------------------
+  /**
+    * Interface to system console.
+    * @public
+    */
   var console: k6Lib.globalMod.Console = js.native
-  // Init context only
+  // === Init context only ===
+  // -------------------------
+  /**
+    * Opens a file, reading all its contents into memory.
+    * https://docs.k6.io/docs/open-filepath-mode
+    * @param filePath - Path to file.
+    * @returns File contents decoded as UTF-8.
+    * @public
+    */
   def open(filePath: java.lang.String): java.lang.String = js.native
+  /**
+    * Opens a file, reading all its contents into memory.
+    * https://docs.k6.io/docs/open-filepath-mode
+    * @param filePath - Path to file.
+    * @returns Binary file contents.
+    * @public
+    */
   @JSName("open")
   def open_b(filePath: java.lang.String, mode: k6Lib.k6LibStrings.b): k6Lib.k6Mod.bytes = js.native
+  // === Init context and VU logic ===
+  // ---------------------------------
+  /**
+    * Environment variables.
+    * https://docs.k6.io/docs/environment-variables
+    * @public
+    */
+  @js.native
+  object __ENV
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  
 }
 

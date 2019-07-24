@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppListItem extends js.Object {
-  /** The application or bundle identifier of the application */
+  // The application or bundle identifier of the application
   var appId: js.UndefOr[java.lang.String] = js.undefined
-  /** The Store URL of the application */
+  // The Store URL of the application
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The application name */
+  // The application name
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** The publisher of the application */
+  // The publisher of the application
   var publisher: js.UndefOr[java.lang.String] = js.undefined
 }
 

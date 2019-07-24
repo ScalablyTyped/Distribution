@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProfilePhoto extends Entity {
-  /** The height of the photo. Read-only. */
+  // The height of the photo. Read-only.
   var height: js.UndefOr[scala.Double] = js.undefined
-  /** The width of the photo. Read-only. */
+  // The width of the photo. Read-only.
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

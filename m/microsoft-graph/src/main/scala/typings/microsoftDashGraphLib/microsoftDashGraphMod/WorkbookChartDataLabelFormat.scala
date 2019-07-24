@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartDataLabelFormat extends Entity {
-  /** Represents the fill format of the current chart data label. Read-only. */
+  // Represents the fill format of the current chart data label. Read-only.
   var fill: js.UndefOr[WorkbookChartFill] = js.undefined
-  /** Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only. */
+  // Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
   var font: js.UndefOr[WorkbookChartFont] = js.undefined
 }
 

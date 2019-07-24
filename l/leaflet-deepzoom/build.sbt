@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet-deepzoom"
-version := "2.0-dt-20190628Z-017cdd"
+version := "2.0-dt-20190628Z-155ee4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-d5dfc4",
-  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190715Z-46406c",
+  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190722Z-47b199",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

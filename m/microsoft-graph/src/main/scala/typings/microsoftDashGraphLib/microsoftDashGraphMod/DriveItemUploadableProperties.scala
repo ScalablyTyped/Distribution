@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DriveItemUploadableProperties extends js.Object {
-  /** Provides a user-visible description of the item. Read-write. Only on OneDrive Personal */
+  // Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** File system information on client. Read-write. */
+  // File system information on client. Read-write.
   var fileSystemInfo: js.UndefOr[FileSystemInfo] = js.undefined
-  /** The name of the item (filename and extension). Read-write. */
+  // The name of the item (filename and extension). Read-write.
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

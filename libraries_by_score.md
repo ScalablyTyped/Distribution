@@ -3217,6 +3217,7 @@
 | 0.6614265124211154 | [strong-cluster-control](./s/strong-cluster-control) | node cluster API wrapper and extensions
 | 0.6614070738083362 | [roads](./r/roads) | An isomophic http framework
 | 0.6614014812612062 | [json-schema-typed](./j/json-schema-typed) | JSONSchema TypeScript definitions.
+| 0.6613019679489541 | [random-normal](./r/random-normal) | Return a normally-distributed random variate.
 | 0.6612982730920407 | [get-range](./g/get-range) | Lazy number range generator
 | 0.6612760915829452 | [keyv__postgres](./k/keyv__postgres) | PostgreSQL storage adapter for Keyv
 | 0.6612536426900159 | [freshy](./f/freshy) | A node module (unre)loader.
@@ -4436,6 +4437,7 @@
 | 0.5531525107394681 | [ionic__storage](./i/ionic__storage) | Ionic Storage utility
 | 0.5529801320032361 | [google-maps-react](./g/google-maps-react) | Google maps container
 | 0.5529782954160052 | [react-navigation-material](./r/react-navigation-material-bottom-tabs) | Material Bottom Tab Navigation component for React
+| 0.552382741785092 | [react-plaid-link](./r/react-plaid-link) | A React component for Plaid Link
 | 0.5522781794128191 | [redux-first-router-restor](./r/redux-first-router-restore-scroll) | think of your app in states not routes (and, yes, 
 | 0.5522518073244703 | [json3](./j/json3) | A modern JSON implementation compatible with nearl
 | 0.55224545151431 | [ip](./i/ip) | -
@@ -4662,6 +4664,7 @@
 | 0.5176631485255947 | [chunk](./c/chunk) | Chunk converts arrays like 
 | 0.5170923338885154 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.5170626931752772 | [redux-batched-actions](./r/redux-batched-actions) | redux higher order reducer + action creator to red
+| 0.5164939869084295 | [webpack-virtual-modules](./w/webpack-virtual-modules) | Webpack Virtual Modules
 | 0.5164583328624901 | [watch](./w/watch) | Utilities for watching file trees.
 | 0.5164522464005914 | [smoothscroll-polyfill](./s/smoothscroll-polyfill) | Smooth Scroll behavior polyfill
 | 0.5163759530852761 | [sequelize-fixtures](./s/sequelize-fixtures) | sequelize fixture loader
@@ -5386,6 +5389,7 @@
 | 0.4078805141730872 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP
 | 0.40786560602631194 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly
 | 0.4077413230669079 | [baseui](./b/baseui) | A React Component library implementing the Base de
+| 0.4075912558454573 | [wordpress__core-data](./w/wordpress__core-data) | Access to and manipulation of core WordPress entit
 | 0.40754708467315276 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress.
 | 0.40747024603271803 | [find-down](./f/find-down) | Find a file by walking down parent directories.
 | 0.4073715083311573 | [amplifier](./a/amplifier) | Use the awesome AmplifyJs v1.1.2 library as a Node
@@ -5807,6 +5811,7 @@
 | 0.3485362003398511 | [selectables](./s/selectables) | Select html elements on webpage using mouse
 | 0.3484357407848645 | [superagent-prefix](./s/superagent-prefix) | A plugin for superagent that prefixes absolute URL
 | 0.3483415998343428 | [blazy](./b/blazy) | A fast lightweight pure JavaScript script for lazy
+| 0.348231163072952 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
 | 0.34816347626225 | [keypress_dot_js](./k/keypress_dot_js) | a robust keyboard input capturing Javascript utili
 | 0.3481364294406394 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config
 | 0.3479622304582965 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
@@ -6248,6 +6253,7 @@
 | 0.2632331065273267 | [reach__utils](./r/reach__utils) | Internal, shared utilities for Reach UI.
 | 0.2629899124448849 | [twilio-mcs-client](./t/twilio-mcs-client) | Twilio Media Content Service client library
 | 0.26261187123171975 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys
+| 0.26234101894288575 | [wordpress__data-controls](./w/wordpress__data-controls) | A set of common controls for the @wordpress/data a
 | 0.2621452023607836 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.26208836653182027 | [swiftclick](./s/swiftclick) | Eliminates the 300ms click event delay on touch de
 | 0.26139365797061653 | [html5-history](./h/html5-history) | A npm friendly version of history.js
@@ -6499,6 +6505,7 @@
 | 0.1845831053866156 | [tough-cookie-filestore](./t/tough-cookie-filestore) | file store for tough-cookie
 | 0.18290187456299356 | [uid2](./u/uid2) | strong uid
 | 0.18203527951778609 | [jsoneditor-for-react](./j/jsoneditor-for-react) | React wrapper for josdejong/jsoneditor
+| 0.18176008350729272 | [wordpress__library-export](./w/wordpress__library-export-default-webpack-plugin) | Webpack plugin for exporting default property for 
 | 0.1817573745973949 | [csvrow](./c/csvrow) | parse a CSV row string
 | 0.1815851806435111 | [sipml](./s/sipml) | NPM package for SIPml.js
 | 0.18101440079727865 | [react-addons-pure-render-](./r/react-addons-pure-render-mixin) | >**Note:** >This is a legacy React addon, and is n

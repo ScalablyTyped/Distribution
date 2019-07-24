@@ -19,7 +19,7 @@ trait MaintenanceWindowTaskInvocationParameters extends js.Object {
     */
   var RunCommand: js.UndefOr[MaintenanceWindowRunCommandParameters] = js.undefined
   /**
-    * The parameters for a STEP_FUNCTION task type.
+    * The parameters for a STEP_FUNCTIONS task type.
     */
   var StepFunctions: js.UndefOr[MaintenanceWindowStepFunctionsParameters] = js.undefined
 }

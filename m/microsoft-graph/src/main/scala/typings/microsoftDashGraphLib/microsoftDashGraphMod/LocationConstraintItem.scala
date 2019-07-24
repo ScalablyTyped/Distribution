@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait LocationConstraintItem extends Location {
   /**
-    * If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free.
-    * If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free. Default is true.
+    * If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free. If set to
+    * false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without
+    * checking if it's free. Default is true.
     */
   var resolveAvailability: js.UndefOr[scala.Boolean] = js.undefined
 }

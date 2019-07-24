@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApplePushNotificationCertificate extends Entity {
-  /** Apple Id of the account used to create the MDM push certificate. */
+  // Apple Id of the account used to create the MDM push certificate.
   var appleIdentifier: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var certificate: js.UndefOr[java.lang.String] = js.undefined
-  /** The expiration date and time for Apple push notification certificate. */
+  // The expiration date and time for Apple push notification certificate.
   var expirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Last modified date and time for Apple push notification certificate. */
+  // Last modified date and time for Apple push notification certificate.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Topic Id. */
+  // Topic Id.
   var topicIdentifier: js.UndefOr[java.lang.String] = js.undefined
 }
 

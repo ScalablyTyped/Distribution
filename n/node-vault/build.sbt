@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-vault"
-version := "0.5-dt-20180620Z-972ea0"
+version := "0.9-dt-20190723Z-e25e7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

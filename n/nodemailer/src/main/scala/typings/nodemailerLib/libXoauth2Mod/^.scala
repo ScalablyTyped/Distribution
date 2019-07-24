@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("nodemailer/lib/xoauth2", JSImport.Namespace)
 @js.native
-class ^ protected () extends XOAuth2 {
+class ^ () extends XOAuth2 {
+  def this(options: Options) = this()
   def this(options: Options, logger: nodemailerLib.libSharedMod.Logger) = this()
 }
 

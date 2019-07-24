@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationTeacher extends js.Object {
-  /** ID of the teacher in the source system. */
+  // ID of the teacher in the source system.
   var externalId: js.UndefOr[java.lang.String] = js.undefined
-  /** Teacher number. */
+  // Teacher number.
   var teacherNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 

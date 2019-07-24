@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pathfinding"
-version := "0.0-unknown-dt-20190322Z-816389"
+version := "0.0-unknown-dt-20190722Z-80bf90"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

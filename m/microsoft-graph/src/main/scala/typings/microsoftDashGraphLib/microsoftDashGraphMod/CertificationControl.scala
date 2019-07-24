@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CertificationControl extends js.Object {
-  /** Certification control name */
+  // Certification control name
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** URL for the Microsoft Service Trust Portal */
+  // URL for the Microsoft Service Trust Portal
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

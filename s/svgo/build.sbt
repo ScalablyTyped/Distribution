@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svgo"
-version := "1.2-dt-20190626Z-10455c"
+version := "1.2-dt-20190722Z-fcf1d6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

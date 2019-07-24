@@ -6,63 +6,66 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsPhone81GeneralConfiguration extends DeviceConfiguration {
-  /** Value indicating whether this policy only applies to Windows Phone 8.1. This property is read-only. */
+  // Value indicating whether this policy only applies to Windows Phone 8.1. This property is read-only.
   var applyOnlyToWindowsPhone81: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block copy paste. */
+  // Indicates whether or not to block copy paste.
   var appsBlockCopyPaste: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block bluetooth. */
+  // Indicates whether or not to block bluetooth.
   var bluetoothBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block camera. */
+  // Indicates whether or not to block camera.
   var cameraBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked. */
+  // Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.
   var cellularBlockWifiTethering: js.UndefOr[scala.Boolean] = js.undefined
-  /** List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant. */
+  // List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
   var compliantAppListType: js.UndefOr[AppListType] = js.undefined
-  /** List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements. */
+  /**
+    * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
+    * can contain a maximum of 10000 elements.
+    */
   var compliantAppsList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** Indicates whether or not to block diagnostic data submission. */
+  // Indicates whether or not to block diagnostic data submission.
   var diagnosticDataBlockSubmission: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block custom email accounts. */
+  // Indicates whether or not to block custom email accounts.
   var emailBlockAddingAccounts: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block location services. */
+  // Indicates whether or not to block location services.
   var locationServicesBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block using a Microsoft Account. */
+  // Indicates whether or not to block using a Microsoft Account.
   var microsoftAccountBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Near-Field Communication. */
+  // Indicates whether or not to block Near-Field Communication.
   var nfcBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block syncing the calendar. */
+  // Indicates whether or not to block syncing the calendar.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. */
+  // Number of days before the password expires.
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Number of character sets a password must contain. */
+  // Number of character sets a password must contain.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passwords. */
+  // Minimum length of passwords.
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before screen timeout. */
+  // Minutes of inactivity before screen timeout.
   var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 0 to 24 */
+  // Number of previous passwords to block. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to require a password. */
+  // Indicates whether or not to require a password.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Password type that is required. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // Password type that is required. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Number of sign in failures allowed before factory reset. */
+  // Number of sign in failures allowed before factory reset.
   var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to block screenshots. */
+  // Indicates whether or not to block screenshots.
   var screenCaptureBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block removable storage. */
+  // Indicates whether or not to block removable storage.
   var storageBlockRemovableStorage: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require encryption. */
+  // Indicates whether or not to require encryption.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the web browser. */
+  // Indicates whether or not to block the web browser.
   var webBrowserBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked. */
+  // Indicates whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
   var wifiBlockAutomaticConnectHotspots: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked. */
+  // Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.
   var wifiBlockHotspotReporting: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Wi-Fi. */
+  // Indicates whether or not to block Wi-Fi.
   var wifiBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the Windows Store. */
+  // Indicates whether or not to block the Windows Store.
   var windowsStoreBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

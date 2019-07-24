@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VppLicensingType extends js.Object {
-  /** Whether the program supports the device licensing type. */
+  // Whether the program supports the device licensing type.
   var supportsDeviceLicensing: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether the program supports the user licensing type. */
+  // Whether the program supports the user licensing type.
   var supportsUserLicensing: js.UndefOr[scala.Boolean] = js.undefined
 }
 

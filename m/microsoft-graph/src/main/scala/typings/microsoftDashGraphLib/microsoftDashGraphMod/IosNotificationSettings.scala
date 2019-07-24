@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosNotificationSettings extends js.Object {
-  /** Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none. */
+  // Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
   var alertType: js.UndefOr[IosNotificationAlertType] = js.undefined
-  /** Application name to be associated with the bundleID. */
+  // Application name to be associated with the bundleID.
   var appName: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether badges are allowed for this app. */
+  // Indicates whether badges are allowed for this app.
   var badgesEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Bundle id of app to which to apply these notification settings. */
+  // Bundle id of app to which to apply these notification settings.
   var bundleID: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether notifications are allowed for this app. */
+  // Indicates whether notifications are allowed for this app.
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Publisher to be associated with the bundleID. */
+  // Publisher to be associated with the bundleID.
   var publisher: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether notifications can be shown in notification center. */
+  // Indicates whether notifications can be shown in notification center.
   var showInNotificationCenter: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether notifications can be shown on the lock screen. */
+  // Indicates whether notifications can be shown on the lock screen.
   var showOnLockScreen: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether sounds are allowed for this app. */
+  // Indicates whether sounds are allowed for this app.
   var soundsEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 

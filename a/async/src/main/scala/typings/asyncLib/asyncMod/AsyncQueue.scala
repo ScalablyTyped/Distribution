@@ -15,7 +15,8 @@ trait AsyncQueue[T] extends js.Object {
   def drain(handler: js.Function0[scala.Unit]): scala.Unit = js.native
   def empty(): js.Promise[scala.Unit] = js.native
   def empty(handler: js.Function0[scala.Unit]): scala.Unit = js.native
-  def error(error: stdLib.Error, data: js.Any): scala.Unit = js.native
+  def error(): js.Promise[scala.Unit] = js.native
+  def error(handler: js.Function2[/* error */ stdLib.Error, /* task */ T, scala.Unit]): scala.Unit = js.native
   def idle(): scala.Boolean = js.native
   def kill(): scala.Unit = js.native
   def length(): scala.Double = js.native

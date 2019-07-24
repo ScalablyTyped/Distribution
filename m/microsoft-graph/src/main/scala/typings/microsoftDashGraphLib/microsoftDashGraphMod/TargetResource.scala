@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetResource extends js.Object {
-  /** Indicates the visible name defined for the resource. Typically specified when the resource is created. */
+  // Indicates the visible name defined for the resource. Typically specified when the resource is created.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** When type is set to Group, this indicates the group type. */
+  // When type is set to Group, this indicates the group type.
   var groupType: js.UndefOr[GroupType] = js.undefined
-  /** Indicates the unique ID of the resource. */
+  // Indicates the unique ID of the resource.
   var id: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates name, old value and new value of each attribute that changed. Property values depend on the operation type. */
+  // Indicates name, old value and new value of each attribute that changed. Property values depend on the operation type.
   var modifiedProperties: js.UndefOr[js.Array[ModifiedProperty]] = js.undefined
-  /** Describes the resource type.  Example values include Application, Group, ServicePrincipal, and User. */
+  // Describes the resource type. Example values include Application, Group, ServicePrincipal, and User.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /** When type is set to User, this includes the user name that initiated the action; null for other types. */
+  // When type is set to User, this includes the user name that initiated the action; null for other types.
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

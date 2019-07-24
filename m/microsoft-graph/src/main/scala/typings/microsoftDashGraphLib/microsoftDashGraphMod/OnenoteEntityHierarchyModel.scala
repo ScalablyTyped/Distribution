@@ -6,15 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenoteEntityHierarchyModel extends OnenoteEntitySchemaObjectModel {
-  /** Identity of the user, device, and application which created the item. Read-only. */
+  // Identity of the user, device, and application which created the item. Read-only.
   var createdBy: js.UndefOr[IdentitySet] = js.undefined
-  /** The name of the notebook. */
+  // The name of the notebook.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Identity of the user, device, and application which created the item. Read-only. */
+  // Identity of the user, device, and application which created the item. Read-only.
   var lastModifiedBy: js.UndefOr[IdentitySet] = js.undefined
   /**
-    * The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * The date and time when the notebook was last modified. The timestamp represents date and time information using ISO
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
+    * '2014-01-01T00:00:00Z'. Read-only.
     */
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }

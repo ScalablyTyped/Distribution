@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait CustomTimeZone extends TimeZoneBase {
   /**
-    * The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes.
-    * Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.
+    * The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are
+    * ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.
     */
   var bias: js.UndefOr[scala.Double] = js.undefined
-  /** Specifies when the time zone switches from standard time to daylight saving time. */
+  // Specifies when the time zone switches from standard time to daylight saving time.
   var daylightOffset: js.UndefOr[DaylightTimeZoneOffset] = js.undefined
-  /** Specifies when the time zone switches from daylight saving time to standard time. */
+  // Specifies when the time zone switches from daylight saving time to standard time.
   var standardOffset: js.UndefOr[StandardTimeZoneOffset] = js.undefined
 }
 

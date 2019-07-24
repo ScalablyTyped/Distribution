@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetedManagedAppProtection extends ManagedAppProtection {
-  /** Navigation property to list of inclusion and exclusion groups to which the policy is deployed. */
+  // Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   var assignments: js.UndefOr[js.Array[TargetedManagedAppPolicyAssignment]] = js.undefined
-  /** Indicates if the policy is deployed to any inclusion groups or not. */
+  // Indicates if the policy is deployed to any inclusion groups or not.
   var isAssigned: js.UndefOr[scala.Boolean] = js.undefined
 }
 

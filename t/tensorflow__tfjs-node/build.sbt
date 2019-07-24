@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-node"
-version := "1.2.4-b4c654"
+version := "1.2.5-001a15"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "tensorflow__tfjs" % "1.2.3-b5553d",
-  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.2.3-161a89",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.2.3-fecdf1",
-  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "1.2.3-d2b97d",
-  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "1.2.3-475491",
+  "org.scalablytyped" %%% "tensorflow__tfjs" % "1.2.5-ba9026",
+  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.2.5-331a3b",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.2.5-12dd41",
+  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "1.2.5-8efc04",
+  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "1.2.5-804cb1",
   "org.scalablytyped" %%% "webgl2" % "0.0-unknown-dt-20190711Z-742ad4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

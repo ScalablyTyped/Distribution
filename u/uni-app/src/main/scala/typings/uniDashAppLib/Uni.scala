@@ -1064,6 +1064,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/frame?id=upx2px](http://uniapp.dcloud.io/frame?id=upx2px)
     */
+  def upx2px(): scala.Double = js.native
   def upx2px(upx: scala.Double): scala.Double = js.native
   /**
     * 使手机发生较长时间的振动（400ms）

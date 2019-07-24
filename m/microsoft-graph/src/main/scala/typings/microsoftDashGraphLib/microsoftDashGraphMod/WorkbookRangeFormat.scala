@@ -6,23 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookRangeFormat extends Entity {
-  /** Collection of border objects that apply to the overall range selected Read-only. */
+  // Collection of border objects that apply to the overall range selected Read-only.
   var borders: js.UndefOr[js.Array[WorkbookRangeBorder]] = js.undefined
-  /** Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned. */
+  // Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
   var columnWidth: js.UndefOr[scala.Double] = js.undefined
-  /** Returns the fill object defined on the overall range. Read-only. */
+  // Returns the fill object defined on the overall range. Read-only.
   var fill: js.UndefOr[WorkbookRangeFill] = js.undefined
-  /** Returns the font object defined on the overall range selected Read-only. */
+  // Returns the font object defined on the overall range selected Read-only.
   var font: js.UndefOr[WorkbookRangeFont] = js.undefined
-  /** Represents the horizontal alignment for the specified object. The possible values are: General, Left, Center, Right, Fill, Justify, CenterAcrossSelection, Distributed. */
+  /**
+    * Represents the horizontal alignment for the specified object. The possible values are: General, Left, Center, Right,
+    * Fill, Justify, CenterAcrossSelection, Distributed.
+    */
   var horizontalAlignment: js.UndefOr[java.lang.String] = js.undefined
-  /** Returns the format protection object for a range. Read-only. */
+  // Returns the format protection object for a range. Read-only.
   var protection: js.UndefOr[WorkbookFormatProtection] = js.undefined
-  /** Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned. */
+  // Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
   var rowHeight: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the vertical alignment for the specified object. The possible values are: Top, Center, Bottom, Justify, Distributed. */
+  /**
+    * Represents the vertical alignment for the specified object. The possible values are: Top, Center, Bottom, Justify,
+    * Distributed.
+    */
   var verticalAlignment: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting */
+  /**
+    * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap
+    * setting
+    */
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 

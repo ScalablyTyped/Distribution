@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-node
 
-Typings are for version 1.2.4
+Typings are for version 1.2.5
 
 ## Library description:
 This repository provides native TensorFlow execution in backend JavaScript applications under the Node.js runtime, accelerated by the TensorFlow C binary under the hood. It provides the same API as [TensorFlow.js](https://js.tensorflow.org/api/latest/).
@@ -52,12 +52,6 @@ These comments are from the typescript definitions and might be useful:
  * =============================================================================
  */
 /**
- * Public exports from the `io` module.
- */
-/**
- * Public API symbols under the tf.node.* namespace.
- */
-/**
  * @license
  * Copyright 2019 Google Inc. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -72,6 +66,12 @@ These comments are from the typescript definitions and might be useful:
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
+ */
+/**
+ * Public exports from the `io` module.
+ */
+/**
+ * Public API symbols under the tf.node.* namespace.
  */
 
 ```

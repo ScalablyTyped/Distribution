@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RoleDefinition extends Entity {
-  /** Description of the Role definition. */
+  // Description of the Role definition.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Display Name of the Role definition. */
+  // Display Name of the Role definition.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. */
+  // Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
   var isBuiltIn: js.UndefOr[scala.Boolean] = js.undefined
-  /** List of Role assignments for this role definition. */
+  // List of Role assignments for this role definition.
   var roleAssignments: js.UndefOr[js.Array[RoleAssignment]] = js.undefined
-  /** List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. */
+  /**
+    * List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of
+    * the rolePermission.
+    */
   var rolePermissions: js.UndefOr[js.Array[RolePermission]] = js.undefined
 }
 

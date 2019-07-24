@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-mung
 
-Typings are for version 0.5.1
+Typings are for version 0.5
 
 ## Library description:
 Transform an express response (or make until no good)
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for express-mung 0.5.1
+// Type definitions for express-mung 0.5
 // Project: https://github.com/richardschneider/express-mung
 // Definitions by: Cyril Schumacher <https://github.com/cyrilschumacher>
+//                 Levi Bostian <https://github.com/levibostian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

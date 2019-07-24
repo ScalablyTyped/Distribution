@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCompliancePolicyDeviceStateSummary extends Entity {
-  /** Number of compliant devices */
+  // Number of compliant devices
   var compliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of devices that have compliance managed by System Center Configuration Manager */
+  // Number of devices that have compliance managed by System Center Configuration Manager
   var configManagerCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of conflict devices */
+  // Number of conflict devices
   var conflictDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of error devices */
+  // Number of error devices
   var errorDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of devices that are in grace period */
+  // Number of devices that are in grace period
   var inGracePeriodCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of NonCompliant devices */
+  // Number of NonCompliant devices
   var nonCompliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of not applicable devices */
+  // Number of not applicable devices
   var notApplicableDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of remediated devices */
+  // Number of remediated devices
   var remediatedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of unknown devices */
+  // Number of unknown devices
   var unknownDeviceCount: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -1211,6 +1211,7 @@ class Map () extends Evented {
   def snapToNorth(options: AnimationOptions): this.type = js.native
   def snapToNorth(options: AnimationOptions, eventData: EventData): this.type = js.native
   def stop(): this.type = js.native
+  def triggerRepaint(): scala.Unit = js.native
   def unproject(point: PointLike): LngLat = js.native
   def zoomIn(): this.type = js.native
   def zoomIn(options: AnimationOptions): this.type = js.native

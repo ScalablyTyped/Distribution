@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MacOSCustomConfiguration extends DeviceConfiguration {
-  /** Payload. (UTF8 encoded byte array) */
+  // Payload. (UTF8 encoded byte array)
   var payload: js.UndefOr[scala.Double] = js.undefined
-  /** Payload file name (.mobileconfig */
+  // Payload file name (.mobileconfig
   var payloadFileName: js.UndefOr[java.lang.String] = js.undefined
-  /** Name that is displayed to the user. */
+  // Name that is displayed to the user.
   var payloadName: js.UndefOr[java.lang.String] = js.undefined
 }
 

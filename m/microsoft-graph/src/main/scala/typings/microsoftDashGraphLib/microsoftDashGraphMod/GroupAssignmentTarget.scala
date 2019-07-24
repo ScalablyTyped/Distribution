@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GroupAssignmentTarget extends DeviceAndAppManagementAssignmentTarget {
-  /** The group Id that is the target of the assignment. */
+  // The group Id that is the target of the assignment.
   var groupId: js.UndefOr[java.lang.String] = js.undefined
 }
 

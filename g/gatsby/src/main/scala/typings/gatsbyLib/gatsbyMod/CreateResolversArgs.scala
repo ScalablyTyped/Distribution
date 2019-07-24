@@ -17,7 +17,7 @@ object CreateResolversArgs {
     actions: Actions,
     boundActionCreators: Actions,
     cache: gatsbyLib.Anon_Del,
-    createContentDigest: js.Function,
+    createContentDigest: /* input */ js.Any => java.lang.String,
     createNodeId: js.Function,
     createResolvers: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,
@@ -35,7 +35,7 @@ object CreateResolversArgs {
     traceId: gatsbyLib.gatsbyLibStrings.`initial-createResolvers`,
     tracing: Tracing
   ): CreateResolversArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, createResolvers = createResolvers, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, intermediateSchema = intermediateSchema, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, traceId = traceId, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId, createResolvers = createResolvers, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, intermediateSchema = intermediateSchema, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, traceId = traceId, tracing = tracing)
   
     __obj.asInstanceOf[CreateResolversArgs]
   }

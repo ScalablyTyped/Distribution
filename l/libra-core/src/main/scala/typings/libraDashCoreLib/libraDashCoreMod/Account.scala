@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Account protected () extends js.Object {
   def this(keyPair: KeyPair) = this()
+  val keyPair: KeyPair = js.native
   def getAddress(): AccountAddress = js.native
 }
 

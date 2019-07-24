@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecureScoreControlStateUpdate extends js.Object {
-  /** Assigns the control to the user who will take the action. */
+  // Assigns the control to the user who will take the action.
   var assignedTo: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides optional comment about the control. */
+  // Provides optional comment about the control.
   var comment: js.UndefOr[java.lang.String] = js.undefined
-  /** State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty). */
+  // State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** ID of the user who updated tenant state. */
+  // ID of the user who updated tenant state.
   var updatedBy: js.UndefOr[java.lang.String] = js.undefined
-  /** Time at which the control state was updated. */
+  // Time at which the control state was updated.
   var updatedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

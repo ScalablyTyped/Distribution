@@ -181,9 +181,15 @@ class Tabulator protected () extends js.Object {
   def getHistoryRedoSize(): scala.Double | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` = js.native
   /** You can use the getHistoryUndoSize function to get a count of the number of history undo actions available. */
   def getHistoryUndoSize(): scala.Double | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` = js.native
-  /** You can retrieve the table data as a simple HTML table using the getHtml function. */
-  def getHtml(): scala.Unit = js.native
-  def getHtml(activeOnly: scala.Boolean): scala.Unit = js.native
+  /** Returns a table built of all active rows in the table (matching filters and sorts) */
+  def getHtml(): js.Any = js.native
+  def getHtml(activeOnly: scala.Boolean): js.Any = js.native
+  def getHtml(activeOnly: scala.Boolean, style: scala.Boolean): js.Any = js.native
+  def getHtml(
+    activeOnly: scala.Boolean,
+    style: scala.Boolean,
+    config: tabulatorDashTablesLib.TabulatorNs.AddditionalExportOptions
+  ): js.Any = js.native
   /** You can then access these at any point using the getLang function, which will return the language object for the currently active locale. */
   def getLang(): js.Any = js.native
   def getLang(locale: java.lang.String): js.Any = js.native
@@ -276,6 +282,15 @@ class Tabulator protected () extends js.Object {
   def nextPage(): js.Promise[scala.Unit] = js.native
   /** You can change to show the previous page using the previousPage function. */
   def previousPage(): js.Promise[scala.Unit] = js.native
+  /**You can use the print function to trigger a full page printing of the contents of the table without any other elements from the page */
+  def print(): js.Any = js.native
+  def print(activeOnly: scala.Boolean): js.Any = js.native
+  def print(activeOnly: scala.Boolean, style: scala.Boolean): js.Any = js.native
+  def print(
+    activeOnly: scala.Boolean,
+    style: scala.Boolean,
+    config: tabulatorDashTablesLib.TabulatorNs.AddditionalExportOptions
+  ): js.Any = js.native
   /** With history enabled you can use the redo function to automatically redo user action that has been undone, the more times you call the function, the further up the history log you go. once a user interacts with the table then can no longer redo any further actions until an undo is performe */
   def redo(): scala.Boolean = js.native
   /** If the size of the element containing the Tabulator changes (and you are not able to use the in built auto-resize functionality) or you create a table before its containing element is visible, it will necessary to redraw the table to make sure the rows and columns render correctly.

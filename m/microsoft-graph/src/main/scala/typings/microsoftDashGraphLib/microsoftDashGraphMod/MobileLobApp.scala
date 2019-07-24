@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileLobApp extends MobileApp {
-  /** The internal committed content version. */
+  // The internal committed content version.
   var committedContentVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of content versions for this app. */
+  // The list of content versions for this app.
   var contentVersions: js.UndefOr[js.Array[MobileAppContent]] = js.undefined
-  /** The name of the main Lob application file. */
+  // The name of the main Lob application file.
   var fileName: js.UndefOr[java.lang.String] = js.undefined
-  /** The total size, including all uploaded files. */
+  // The total size, including all uploaded files.
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 

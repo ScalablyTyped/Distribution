@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Windows81CompliancePolicy extends DeviceCompliancePolicy {
-  /** Maximum Windows 8.1 version. */
+  // Maximum Windows 8.1 version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum Windows 8.1 version. */
+  // Minimum Windows 8.1 version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether or not to block simple password. */
+  // Indicates whether or not to block simple password.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Password expiration in days. */
+  // Password expiration in days.
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** The minimum password length. */
+  // The minimum password length.
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a password is required. */
+  // Minutes of inactivity before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** The number of previous passwords to prevent re-use of. Valid values 0 to 24 */
+  // The number of previous passwords to prevent re-use of. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Require a password to unlock Windows device. */
+  // Require a password to unlock Windows device.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** The required password type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Indicates whether or not to require encryption on a windows 8.1 device. */
+  // Indicates whether or not to require encryption on a windows 8.1 device.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 

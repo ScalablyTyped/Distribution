@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SharedDriveItem extends BaseItem {
-  /** Used to access the underlying driveItem */
+  // Used to access the underlying driveItem
   var driveItem: js.UndefOr[DriveItem] = js.undefined
-  /** All driveItems contained in the sharing root. This collection cannot be enumerated. */
+  // All driveItems contained in the sharing root. This collection cannot be enumerated.
   var items: js.UndefOr[js.Array[DriveItem]] = js.undefined
-  /** Used to access the underlying list */
+  // Used to access the underlying list
   var list: js.UndefOr[List] = js.undefined
-  /** Used to access the underlying listItem */
+  // Used to access the underlying listItem
   var listItem: js.UndefOr[ListItem] = js.undefined
-  /** Information about the owner of the shared item being referenced. */
+  // Information about the owner of the shared item being referenced.
   var owner: js.UndefOr[IdentitySet] = js.undefined
-  /** Used to access the underlying driveItem. Deprecated -- use driveItem instead. */
+  // Used to access the underlying driveItem. Deprecated -- use driveItem instead.
   var root: js.UndefOr[DriveItem] = js.undefined
-  /** Used to access the underlying site */
+  // Used to access the underlying site
   var site: js.UndefOr[Site] = js.undefined
 }
 

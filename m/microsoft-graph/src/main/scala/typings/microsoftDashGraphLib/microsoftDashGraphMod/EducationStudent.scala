@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationStudent extends js.Object {
-  /** Birth date of the student. */
+  // Birth date of the student.
   var birthDate: js.UndefOr[java.lang.String] = js.undefined
-  /** ID of the student in the source system. */
+  // ID of the student in the source system.
   var externalId: js.UndefOr[java.lang.String] = js.undefined
-  /** The possible values are: female, male, other, unknownFutureValue. */
+  // The possible values are: female, male, other, unknownFutureValue.
   var gender: js.UndefOr[EducationGender] = js.undefined
-  /** Current grade level of the student. */
+  // Current grade level of the student.
   var grade: js.UndefOr[java.lang.String] = js.undefined
-  /** Year the student is graduating from the school. */
+  // Year the student is graduating from the school.
   var graduationYear: js.UndefOr[java.lang.String] = js.undefined
-  /** Student Number. */
+  // Student Number.
   var studentNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 

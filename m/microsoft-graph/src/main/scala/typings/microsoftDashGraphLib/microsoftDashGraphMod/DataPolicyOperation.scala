@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait DataPolicyOperation extends Entity {
   /**
-    * Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Null until the operation completes.
+    * Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For
+    * example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Null until the operation completes.
     */
   var completedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Specifies the progress of an operation. */
+  // Specifies the progress of an operation.
   var progress: js.UndefOr[scala.Double] = js.undefined
-  /** Possible values are: notStarted, running, complete, failed, unknownFutureValue. */
+  // Possible values are: notStarted, running, complete, failed, unknownFutureValue.
   var status: js.UndefOr[DataPolicyOperationStatus] = js.undefined
-  /** The URL location to where data is being exported for export requests. */
+  // The URL location to where data is being exported for export requests.
   var storageLocation: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example,
+    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
   var submittedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The id for the user on whom the operation is performed. */
+  // The id for the user on whom the operation is performed.
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 

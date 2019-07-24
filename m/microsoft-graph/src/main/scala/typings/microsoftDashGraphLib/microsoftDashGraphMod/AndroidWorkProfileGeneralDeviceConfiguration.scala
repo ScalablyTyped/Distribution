@@ -6,79 +6,82 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration {
-  /** Indicates whether or not to block fingerprint unlock. */
+  // Indicates whether or not to block fingerprint unlock.
   var passwordBlockFingerprintUnlock: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Smart Lock and other trust agents. */
+  // Indicates whether or not to block Smart Lock and other trust agents.
   var passwordBlockTrustAgents: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. Valid values 1 to 365 */
+  // Number of days before the password expires. Valid values 1 to 365
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passwords. Valid values 4 to 16 */
+  // Minimum length of passwords. Valid values 4 to 16
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before the screen times out. */
+  // Minutes of inactivity before the screen times out.
   var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 0 to 24 */
+  // Number of previous passwords to block. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Type of password that is required.
-    * Possible values are: deviceDefault, lowSecurityBiometric, required, atLeastNumeric, numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
+    * Type of password that is required. Possible values are: deviceDefault, lowSecurityBiometric, required, atLeastNumeric,
+    * numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
     */
   var passwordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.undefined
-  /** Number of sign in failures allowed before factory reset. Valid values 1 to 16 */
+  // Number of sign in failures allowed before factory reset. Valid values 1 to 16
   var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[scala.Double] = js.undefined
-  /** Require the Android Verify apps feature is turned on. */
+  // Require the Android Verify apps feature is turned on.
   var securityRequireVerifyApps: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block users from adding/removing accounts in work profile. */
+  // Block users from adding/removing accounts in work profile.
   var workProfileBlockAddingAccounts: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block work profile camera. */
+  // Block work profile camera.
   var workProfileBlockCamera: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block display work profile caller ID in personal profile. */
+  // Block display work profile caller ID in personal profile.
   var workProfileBlockCrossProfileCallerId: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block work profile contacts availability in personal profile. */
+  // Block work profile contacts availability in personal profile.
   var workProfileBlockCrossProfileContactsSearch: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean that indicates if the setting disallow cross profile copy/paste is enabled. */
+  // Boolean that indicates if the setting disallow cross profile copy/paste is enabled.
   var workProfileBlockCrossProfileCopyPaste: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block notifications while device locked. */
+  // Indicates whether or not to block notifications while device locked.
   var workProfileBlockNotificationsWhileDeviceLocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block screen capture in work profile. */
+  // Block screen capture in work profile.
   var workProfileBlockScreenCapture: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allow bluetooth devices to access enterprise contacts. */
+  // Allow bluetooth devices to access enterprise contacts.
   var workProfileBluetoothEnableContactSharing: js.UndefOr[scala.Boolean] = js.undefined
-  /** Type of data sharing that is allowed. Possible values are: deviceDefault, preventAny, allowPersonalToWork, noRestrictions. */
+  /**
+    * Type of data sharing that is allowed. Possible values are: deviceDefault, preventAny, allowPersonalToWork,
+    * noRestrictions.
+    */
   var workProfileDataSharingType: js.UndefOr[AndroidWorkProfileCrossProfileDataSharingType] = js.undefined
-  /** Type of password that is required. Possible values are: deviceDefault, prompt, autoGrant, autoDeny. */
+  // Type of password that is required. Possible values are: deviceDefault, prompt, autoGrant, autoDeny.
   var workProfileDefaultAppPermissionPolicy: js.UndefOr[AndroidWorkProfileDefaultAppPermissionPolicyType] = js.undefined
-  /** Indicates whether or not to block fingerprint unlock for work profile. */
+  // Indicates whether or not to block fingerprint unlock for work profile.
   var workProfilePasswordBlockFingerprintUnlock: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Smart Lock and other trust agents for work profile. */
+  // Indicates whether or not to block Smart Lock and other trust agents for work profile.
   var workProfilePasswordBlockTrustAgents: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the work profile password expires. Valid values 1 to 365 */
+  // Number of days before the work profile password expires. Valid values 1 to 365
   var workProfilePasswordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of letter characters required in work profile password. Valid values 1 to 10 */
+  // Minimum # of letter characters required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinLetterCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of lower-case characters required in work profile password. Valid values 1 to 10 */
+  // Minimum # of lower-case characters required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinLowerCaseCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of non-letter characters required in work profile password. Valid values 1 to 10 */
+  // Minimum # of non-letter characters required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinNonLetterCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of numeric characters required in work profile password. Valid values 1 to 10 */
+  // Minimum # of numeric characters required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinNumericCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of symbols required in work profile password. Valid values 1 to 10 */
+  // Minimum # of symbols required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinSymbolCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum # of upper-case characters required in work profile password. Valid values 1 to 10 */
+  // Minimum # of upper-case characters required in work profile password. Valid values 1 to 10
   var workProfilePasswordMinUpperCaseCharacters: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of work profile password. Valid values 4 to 16 */
+  // Minimum length of work profile password. Valid values 4 to 16
   var workProfilePasswordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before the screen times out. */
+  // Minutes of inactivity before the screen times out.
   var workProfilePasswordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous work profile passwords to block. Valid values 0 to 24 */
+  // Number of previous work profile passwords to block. Valid values 0 to 24
   var workProfilePasswordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Type of work profile password that is required.
-    * Possible values are: deviceDefault, lowSecurityBiometric, required, atLeastNumeric, numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
+    * Type of work profile password that is required. Possible values are: deviceDefault, lowSecurityBiometric, required,
+    * atLeastNumeric, numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
     */
   var workProfilePasswordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.undefined
-  /** Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16 */
+  // Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16
   var workProfilePasswordSignInFailureCountBeforeFactoryReset: js.UndefOr[scala.Double] = js.undefined
-  /** Password is required or not for work profile */
+  // Password is required or not for work profile
   var workProfileRequirePassword: js.UndefOr[scala.Boolean] = js.undefined
 }
 

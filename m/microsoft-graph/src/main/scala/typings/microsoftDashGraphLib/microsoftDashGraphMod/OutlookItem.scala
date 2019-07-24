@@ -6,13 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OutlookItem extends Entity {
-  /** The categories associated with the item */
+  // The categories associated with the item
   var categories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only. */
+  /**
+    * Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to
+    * apply changes to the correct version of the object. Read-only.
+    */
   var changeKey: js.UndefOr[java.lang.String] = js.undefined
-  /** The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' */
+  /**
+    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
+    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    */
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' */
+  /**
+    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
+    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    */
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsAppDefinition extends Entity {
-  /** The name of the app provided by the app developer. */
+  // The name of the app provided by the app developer.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The id from the Teams App manifest. */
+  // The id from the Teams App manifest.
   var teamsAppId: js.UndefOr[java.lang.String] = js.undefined
-  /** The version number of the application. */
+  // The version number of the application.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

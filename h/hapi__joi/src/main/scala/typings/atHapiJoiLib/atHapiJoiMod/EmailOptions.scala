@@ -23,7 +23,7 @@ trait EmailOptions extends js.Object {
     *
     * @default { allow: true }
     */
-  var tlds: js.UndefOr[atHapiJoiLib.Anon_Allow] = js.undefined
+  var tlds: js.UndefOr[atHapiJoiLib.Anon_Allow | atHapiJoiLib.atHapiJoiLibNumbers.`false`] = js.undefined
 }
 
 object EmailOptions {
@@ -31,12 +31,12 @@ object EmailOptions {
   def apply(
     allowUnicode: js.UndefOr[scala.Boolean] = js.undefined,
     minDomainSegments: scala.Int | scala.Double = null,
-    tlds: atHapiJoiLib.Anon_Allow = null
+    tlds: atHapiJoiLib.Anon_Allow | atHapiJoiLib.atHapiJoiLibNumbers.`false` = null
   ): EmailOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode)
     if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
-    if (tlds != null) __obj.updateDynamic("tlds")(tlds)
+    if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions]
   }
 }

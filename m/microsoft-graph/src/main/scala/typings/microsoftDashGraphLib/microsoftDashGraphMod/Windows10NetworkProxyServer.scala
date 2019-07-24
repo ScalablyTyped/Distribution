@@ -6,11 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Windows10NetworkProxyServer extends js.Object {
-  /** Address to the proxy server. Specify an address in the format [':'] */
+  // Address to the proxy server. Specify an address in the format [':']
   var address: js.UndefOr[java.lang.String] = js.undefined
-  /** Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. */
+  /**
+    * Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with
+    * what is specified in this node.
+    */
   var exceptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Specifies whether the proxy server should be used for local (intranet) addresses. */
+  // Specifies whether the proxy server should be used for local (intranet) addresses.
   var useForLocalAddresses: js.UndefOr[scala.Boolean] = js.undefined
 }
 

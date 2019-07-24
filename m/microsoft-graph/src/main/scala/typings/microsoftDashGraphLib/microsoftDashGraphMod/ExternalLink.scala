@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExternalLink extends js.Object {
-  /** The url of the link. */
+  // The url of the link.
   var href: js.UndefOr[java.lang.String] = js.undefined
 }
 

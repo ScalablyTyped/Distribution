@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsDeviceAzureADAccount extends WindowsDeviceAccount {
-  /** Not yet documented */
+  // Not yet documented
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

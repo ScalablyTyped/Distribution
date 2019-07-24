@@ -64,6 +64,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Oleg Vaskevich <https://github.com/vaskevich>
 //                 Dylan Aspden <https://github.com/dhaspden>
 //                 Ethan Setnik <https://github.com/esetnik>
+//                 Pavel Ivanov <https://github.com/schfkt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

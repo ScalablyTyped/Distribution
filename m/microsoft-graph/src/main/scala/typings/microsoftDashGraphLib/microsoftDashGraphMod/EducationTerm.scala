@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationTerm extends js.Object {
-  /** Display name of the term. */
+  // Display name of the term.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** End of the term. */
+  // End of the term.
   var endDate: js.UndefOr[java.lang.String] = js.undefined
-  /** ID of term in the syncing system. */
+  // ID of term in the syncing system.
   var externalId: js.UndefOr[java.lang.String] = js.undefined
-  /** Start of the term. */
+  // Start of the term.
   var startDate: js.UndefOr[java.lang.String] = js.undefined
 }
 

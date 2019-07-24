@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DriveRecipient extends js.Object {
-  /** The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). */
+  // The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   var alias: js.UndefOr[java.lang.String] = js.undefined
-  /** The email address for the recipient, if the recipient has an associated email address. */
+  // The email address for the recipient, if the recipient has an associated email address.
   var email: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier for the recipient in the directory. */
+  // The unique identifier for the recipient in the directory.
   var objectId: js.UndefOr[java.lang.String] = js.undefined
 }
 

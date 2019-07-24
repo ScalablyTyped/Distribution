@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsMobileMSI extends MobileLobApp {
-  /** The command line. */
+  // The command line.
   var commandLine: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * A boolean to control whether the app's version will be used to detect the app after it is installed on a device.
-    * Set this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.
+    * A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set
+    * this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.
     */
   var ignoreVersionDetection: js.UndefOr[scala.Boolean] = js.undefined
-  /** The product code. */
+  // The product code.
   var productCode: js.UndefOr[java.lang.String] = js.undefined
-  /** The product version of Windows Mobile MSI Line of Business (LoB) app. */
+  // The product version of Windows Mobile MSI Line of Business (LoB) app.
   var productVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 

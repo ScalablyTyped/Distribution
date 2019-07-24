@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-layers", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val version_layers: atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.`1DOT2DOT3` = js.native
+  val version_layers: atTensorflowTfjsDashLayersLib.atTensorflowTfjsDashLayersLibStrings.`1DOT2DOT5` = js.native
   def input(config: atTensorflowTfjsDashLayersLib.distEngineInputUnderscoreLayerMod.InputConfig): atTensorflowTfjsDashLayersLib.distEngineTopologyMod.SymbolicTensor = js.native
   def loadLayersModel(pathOrIOHandler: atTensorflowTfjsDashCoreLib.distIoTypesMod.IOHandler): js.Promise[atTensorflowTfjsDashLayersLib.distEngineTrainingMod.LayersModel] = js.native
   def loadLayersModel(

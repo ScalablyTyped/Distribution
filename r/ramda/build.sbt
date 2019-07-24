@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ramda"
-version := "0.26-dt-20190716Z-826b83"
+version := "0.26-dt-20190722Z-50f1a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

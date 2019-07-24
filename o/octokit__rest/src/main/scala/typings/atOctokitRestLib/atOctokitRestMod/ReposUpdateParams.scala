@@ -53,7 +53,7 @@ trait ReposUpdateParams extends js.Object {
   /**
     * The name of the repository.
     */
-  var name: java.lang.String
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var owner: java.lang.String
   /**
     * Either `true` to make the repository private or `false` to make it public. Creating private repositories requires a paid GitHub account. Default: `false`.
@@ -66,7 +66,6 @@ trait ReposUpdateParams extends js.Object {
 object ReposUpdateParams {
   @scala.inline
   def apply(
-    name: java.lang.String,
     owner: java.lang.String,
     repo: java.lang.String,
     allow_merge_commit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -80,9 +79,10 @@ object ReposUpdateParams {
     has_wiki: js.UndefOr[scala.Boolean] = js.undefined,
     homepage: java.lang.String = null,
     is_template: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
     `private`: js.UndefOr[scala.Boolean] = js.undefined
   ): ReposUpdateParams = {
-    val __obj = js.Dynamic.literal(name = name, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
     if (!js.isUndefined(allow_merge_commit)) __obj.updateDynamic("allow_merge_commit")(allow_merge_commit)
     if (!js.isUndefined(allow_rebase_merge)) __obj.updateDynamic("allow_rebase_merge")(allow_rebase_merge)
     if (!js.isUndefined(allow_squash_merge)) __obj.updateDynamic("allow_squash_merge")(allow_squash_merge)
@@ -94,6 +94,7 @@ object ReposUpdateParams {
     if (!js.isUndefined(has_wiki)) __obj.updateDynamic("has_wiki")(has_wiki)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
     if (!js.isUndefined(is_template)) __obj.updateDynamic("is_template")(is_template)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[ReposUpdateParams]
   }

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceManagementTroubleshootingEvent extends Entity {
-  /** Id used for tracing the failure in the service. */
+  // Id used for tracing the failure in the service.
   var correlationId: js.UndefOr[java.lang.String] = js.undefined
-  /** Time when the event occurred . */
+  // Time when the event occurred .
   var eventDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

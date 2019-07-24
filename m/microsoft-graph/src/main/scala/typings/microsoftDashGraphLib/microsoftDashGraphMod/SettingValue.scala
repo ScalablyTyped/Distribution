@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SettingValue extends js.Object {
-  /** Name of the setting (as defined by the groupSettingTemplate). */
+  // Name of the setting (as defined by the groupSettingTemplate).
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Value of the setting. */
+  // Value of the setting.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCompliancePolicyAssignment extends Entity {
-  /** Target for the compliance policy assignment. */
+  // Target for the compliance policy assignment.
   var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
 }
 

@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsPhone81CompliancePolicy extends DeviceCompliancePolicy {
-  /** Maximum Windows Phone version. */
+  // Maximum Windows Phone version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum Windows Phone version. */
+  // Minimum Windows Phone version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Whether or not to block syncing the calendar. */
+  // Whether or not to block syncing the calendar.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. */
+  // Number of days before the password expires.
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passwords. */
+  // Minimum length of passwords.
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a password is required. */
+  // Minutes of inactivity before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 0 to 24 */
+  // Number of previous passwords to block. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Whether or not to require a password. */
+  // Whether or not to require a password.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** The required password type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Require encryption on windows phone devices. */
+  // Require encryption on windows phone devices.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 

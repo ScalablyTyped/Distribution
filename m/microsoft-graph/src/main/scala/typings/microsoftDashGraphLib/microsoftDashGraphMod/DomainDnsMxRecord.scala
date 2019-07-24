@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsMxRecord extends DomainDnsRecord {
-  /** Value used when configuring the answer/destination/value of the MX record at the DNS host. */
+  // Value used when configuring the answer/destination/value of the MX record at the DNS host.
   var mailExchange: js.UndefOr[java.lang.String] = js.undefined
-  /** Value used when configuring the Preference/Priority property of the MX record at the DNS host. */
+  // Value used when configuring the Preference/Priority property of the MX record at the DNS host.
   var preference: js.UndefOr[scala.Double] = js.undefined
 }
 

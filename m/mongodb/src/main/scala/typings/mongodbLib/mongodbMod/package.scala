@@ -19,6 +19,7 @@ package object mongodbMod {
   type GridFSBucketWriteStreamId = java.lang.String | scala.Double | js.Object | bsonLib.bsonMod.ObjectID
   type IteratorCallback[T] = js.Function1[/* doc */ T, scala.Unit]
   type MongoCallback[T] = js.Function2[/* error */ MongoError, /* result */ T, scala.Unit]
+  type WithTransactionCallback[T] = js.Function1[/* session */ ClientSession, js.Promise[T]]
   type log = js.Function2[
     /* message */ js.UndefOr[java.lang.String], 
     /* state */ js.UndefOr[LoggerState], 

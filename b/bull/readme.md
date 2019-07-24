@@ -52,6 +52,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Christian D. <https://github.com/pc-jedi>
 //                 Silas Rech <https://github.com/lenovouser>
 //                 DoYoung Ha <https://github.com/hados99>
+//                 Borys Kupar <https://github.com/borys-kupar>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceExchangeAccessStateSummary extends js.Object {
-  /** Total count of devices with Exchange Access State: Allowed. */
+  // Total count of devices with Exchange Access State: Allowed.
   var allowedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Total count of devices with Exchange Access State: Blocked. */
+  // Total count of devices with Exchange Access State: Blocked.
   var blockedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Total count of devices with Exchange Access State: Quarantined. */
+  // Total count of devices with Exchange Access State: Quarantined.
   var quarantinedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Total count of devices for which no Exchange Access State could be found. */
+  // Total count of devices for which no Exchange Access State could be found.
   var unavailableDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Total count of devices with Exchange Access State: Unknown. */
+  // Total count of devices with Exchange Access State: Unknown.
   var unknownDeviceCount: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -1351,8 +1351,19 @@ class SurveyModel ()
   def setJsonObject(jsonObj: js.Any): scala.Unit = js.native
   /* CompleteClass */
   override def setTriggerValue(name: java.lang.String, value: js.Any, isVariable: scala.Boolean): js.Any = js.native
+  /**
+    * Sets a question value. It runs all triggers and conditions (visibleIf properties). Goes to the next page if goNextPageAutomatic is true and all questions on the current page are answered correctly.
+    * @param name A question name
+    * @param newValue
+    * @see data
+    * @see getValue
+    * @see PageModel.visibleIf
+    * @see Question.visibleIf
+    * @see goNextPageAutomatic
+    */
+  def setValue(name: java.lang.String, newQuestionValue: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
+  override def setValue(name: java.lang.String, newValue: js.Any, locNotification: scala.Boolean): js.Any = js.native
   /**
     * Sets a variable value. Variable, unlike values, are not stored in the survey results.
     * @param name A variable name

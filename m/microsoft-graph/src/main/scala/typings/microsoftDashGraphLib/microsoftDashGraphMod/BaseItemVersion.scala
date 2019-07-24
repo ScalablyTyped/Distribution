@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseItemVersion extends Entity {
-  /** Identity of the user which last modified the version. Read-only. */
+  // Identity of the user which last modified the version. Read-only.
   var lastModifiedBy: js.UndefOr[IdentitySet] = js.undefined
-  /** Date and time the version was last modified. Read-only. */
+  // Date and time the version was last modified. Read-only.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates the publication status of this particular version. Read-only. */
+  // Indicates the publication status of this particular version. Read-only.
   var publication: js.UndefOr[PublicationFacet] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebApp extends MobileApp {
-  /** The web app URL. */
+  // The web app URL.
   var appUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** Whether or not to use managed browser. This property is only applicable for Android and IOS. */
+  // Whether or not to use managed browser. This property is only applicable for Android and IOS.
   var useManagedBrowser: js.UndefOr[scala.Boolean] = js.undefined
 }
 

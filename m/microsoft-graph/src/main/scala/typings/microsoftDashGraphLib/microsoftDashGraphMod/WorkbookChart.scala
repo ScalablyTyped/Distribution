@@ -6,29 +6,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChart extends Entity {
-  /** Represents chart axes. Read-only. */
+  // Represents chart axes. Read-only.
   var axes: js.UndefOr[WorkbookChartAxes] = js.undefined
-  /** Represents the datalabels on the chart. Read-only. */
+  // Represents the datalabels on the chart. Read-only.
   var dataLabels: js.UndefOr[WorkbookChartDataLabels] = js.undefined
-  /** Encapsulates the format properties for the chart area. Read-only. */
+  // Encapsulates the format properties for the chart area. Read-only.
   var format: js.UndefOr[WorkbookChartAreaFormat] = js.undefined
-  /** Represents the height, in points, of the chart object. */
+  // Represents the height, in points, of the chart object.
   var height: js.UndefOr[scala.Double] = js.undefined
-  /** The distance, in points, from the left side of the chart to the worksheet origin. */
+  // The distance, in points, from the left side of the chart to the worksheet origin.
   var left: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the legend for the chart. Read-only. */
+  // Represents the legend for the chart. Read-only.
   var legend: js.UndefOr[WorkbookChartLegend] = js.undefined
-  /** Represents the name of a chart object. */
+  // Represents the name of a chart object.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents either a single series or collection of series in the chart. Read-only. */
+  // Represents either a single series or collection of series in the chart. Read-only.
   var series: js.UndefOr[js.Array[WorkbookChartSeries]] = js.undefined
-  /** Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only. */
+  /**
+    * Represents the title of the specified chart, including the text, visibility, position and formating of the title.
+    * Read-only.
+    */
   var title: js.UndefOr[WorkbookChartTitle] = js.undefined
-  /** Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart). */
+  /**
+    * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of
+    * the chart area (on a chart).
+    */
   var top: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the width, in points, of the chart object. */
+  // Represents the width, in points, of the chart object.
   var width: js.UndefOr[scala.Double] = js.undefined
-  /** The worksheet containing the current chart. Read-only. */
+  // The worksheet containing the current chart. Read-only.
   var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
 }
 

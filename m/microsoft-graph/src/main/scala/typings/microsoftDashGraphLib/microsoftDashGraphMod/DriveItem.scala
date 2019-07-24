@@ -6,62 +6,81 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DriveItem extends BaseItem {
+  // Analytics about the view activities that took place on this item.
   var analytics: js.UndefOr[ItemAnalytics] = js.undefined
-  /** Audio metadata, if the item is an audio file. Read-only. */
+  // Audio metadata, if the item is an audio file. Read-only.
   var audio: js.UndefOr[Audio] = js.undefined
-  /** An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only. */
+  /**
+    * An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is
+    * not returned if the item is a folder. Read-only.
+    */
   var cTag: js.UndefOr[java.lang.String] = js.undefined
-  /** Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable. */
+  /**
+    * Collection containing Item objects for the immediate children of Item. Only items representing folders have children.
+    * Read-only. Nullable.
+    */
   var children: js.UndefOr[js.Array[DriveItem]] = js.undefined
-  /** The content stream, if the item represents a file. */
+  // The content stream, if the item represents a file.
   var content: js.UndefOr[js.Any] = js.undefined
-  /** Information about the deleted state of the item. Read-only. */
+  // Information about the deleted state of the item. Read-only.
   var deleted: js.UndefOr[Deleted] = js.undefined
-  /** File metadata, if the item is a file. Read-only. */
+  // File metadata, if the item is a file. Read-only.
   var file: js.UndefOr[File] = js.undefined
-  /** File system information on client. Read-write. */
+  // File system information on client. Read-write.
   var fileSystemInfo: js.UndefOr[FileSystemInfo] = js.undefined
-  /** Folder metadata, if the item is a folder. Read-only. */
+  // Folder metadata, if the item is a folder. Read-only.
   var folder: js.UndefOr[Folder] = js.undefined
-  /** Image metadata, if the item is an image. Read-only. */
+  // Image metadata, if the item is an image. Read-only.
   var image: js.UndefOr[Image] = js.undefined
-  /** For drives in SharePoint, the associated document library list item. Read-only. Nullable. */
+  // For drives in SharePoint, the associated document library list item. Read-only. Nullable.
   var listItem: js.UndefOr[ListItem] = js.undefined
-  /** Location metadata, if the item has location data. Read-only. */
+  // Location metadata, if the item has location data. Read-only.
   var location: js.UndefOr[GeoCoordinates] = js.undefined
-  /** If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only. */
+  /**
+    * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
+    * contexts and folders in others. Read-only.
+    */
   var `package`: js.UndefOr[Package] = js.undefined
-  /** The set of permissions for the item. Read-only. Nullable. */
+  // The set of permissions for the item. Read-only. Nullable.
   var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
-  /** Photo metadata, if the item is a photo. Read-only. */
+  // Photo metadata, if the item is a photo. Read-only.
   var photo: js.UndefOr[Photo] = js.undefined
-  /** Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. */
+  /**
+    * Provides information about the published or checked-out state of an item, in locations that support such actions. This
+    * property is not returned by default. Read-only.
+    */
   var publication: js.UndefOr[PublicationFacet] = js.undefined
-  /** Remote item data, if the item is shared from a drive other than the one being accessed. Read-only. */
+  // Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
   var remoteItem: js.UndefOr[RemoteItem] = js.undefined
-  /** If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive. */
+  // If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
   var root: js.UndefOr[Root] = js.undefined
-  /** Search metadata, if the item is from a search result. Read-only. */
+  // Search metadata, if the item is from a search result. Read-only.
   var searchResult: js.UndefOr[SearchResult] = js.undefined
-  /** Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only. */
+  /**
+    * Indicates that the item has been shared with others and provides information about the shared state of the item.
+    * Read-only.
+    */
   var shared: js.UndefOr[Shared] = js.undefined
-  /** Returns identifiers useful for SharePoint REST compatibility. Read-only. */
+  // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
-  /** Size of the item in bytes. Read-only. */
+  // Size of the item in bytes. Read-only.
   var size: js.UndefOr[scala.Double] = js.undefined
-  /** If the current item is also available as a special folder, this facet is returned. Read-only. */
+  // If the current item is also available as a special folder, this facet is returned. Read-only.
   var specialFolder: js.UndefOr[SpecialFolder] = js.undefined
-  /** The set of subscriptions on the item. Only supported on the root of a drive. */
+  // The set of subscriptions on the item. Only supported on the root of a drive.
   var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
-  /** Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable. */
+  /**
+    * Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][].
+    * Read-only. Nullable.
+    */
   var thumbnails: js.UndefOr[js.Array[ThumbnailSet]] = js.undefined
-  /** The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable. */
+  // The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
   var versions: js.UndefOr[js.Array[DriveItemVersion]] = js.undefined
-  /** Video metadata, if the item is a video. Read-only. */
+  // Video metadata, if the item is a video. Read-only.
   var video: js.UndefOr[Video] = js.undefined
-  /** WebDAV compatible URL for the item. */
+  // WebDAV compatible URL for the item.
   var webDavUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable. */
+  // For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
   var workbook: js.UndefOr[Workbook] = js.undefined
 }
 

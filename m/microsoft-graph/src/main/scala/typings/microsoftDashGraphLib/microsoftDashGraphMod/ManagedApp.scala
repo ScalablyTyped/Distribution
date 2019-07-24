@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedApp extends MobileApp {
-  /** The Application's availability. Possible values are: global, lineOfBusiness. */
+  // The Application's availability. Possible values are: global, lineOfBusiness.
   var appAvailability: js.UndefOr[ManagedAppAvailability] = js.undefined
-  /** The Application's version. */
+  // The Application's version.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

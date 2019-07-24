@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object k6Mod {
-  type Checker[T] = js.Function1[/* val */ T, scala.Boolean]
-  type Checkers[T] = org.scalablytyped.runtime.StringDictionary[Checker[T]]
+  type Checker[VT] = js.Function1[/* val */ VT, scala.Boolean]
+  type Checkers[VT] = org.scalablytyped.runtime.StringDictionary[Checker[VT]]
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - scala.Boolean

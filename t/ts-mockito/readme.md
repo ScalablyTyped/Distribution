@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-mockito
 
-Typings are for version 2.4.1
+Typings are for version 2.4.2
 
 ## Library description:
 Mocking library for TypeScript

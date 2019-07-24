@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosHomeScreenFolderPage extends js.Object {
-  /** A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements. */
+  // A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.
   var apps: js.UndefOr[js.Array[IosHomeScreenApp]] = js.undefined
-  /** Name of the folder page */
+  // Name of the folder page
   var displayName: js.UndefOr[java.lang.String] = js.undefined
 }
 

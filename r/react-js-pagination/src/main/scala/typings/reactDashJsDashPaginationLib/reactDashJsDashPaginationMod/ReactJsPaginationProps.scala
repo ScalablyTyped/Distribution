@@ -11,7 +11,7 @@ trait ReactJsPaginationProps extends js.Object {
   var activePage: scala.Double
   var disabledClass: js.UndefOr[java.lang.String] = js.undefined
   var firstPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
-  var getPageUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPageUrl: js.UndefOr[js.Function1[/* pageNumber */ scala.Double, java.lang.String]] = js.undefined
   var hideDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var hideFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined
   var hideNavigation: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,7 +45,7 @@ object ReactJsPaginationProps {
     activeLinkClass: java.lang.String = null,
     disabledClass: java.lang.String = null,
     firstPageText: java.lang.String | reactLib.reactMod.ReactElement = null,
-    getPageUrl: () => java.lang.String = null,
+    getPageUrl: /* pageNumber */ scala.Double => java.lang.String = null,
     hideDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     hideFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavigation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -71,7 +71,7 @@ object ReactJsPaginationProps {
     if (activeLinkClass != null) __obj.updateDynamic("activeLinkClass")(activeLinkClass)
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
     if (firstPageText != null) __obj.updateDynamic("firstPageText")(firstPageText.asInstanceOf[js.Any])
-    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(js.Any.fromFunction0(getPageUrl))
+    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(js.Any.fromFunction1(getPageUrl))
     if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled)
     if (!js.isUndefined(hideFirstLastPages)) __obj.updateDynamic("hideFirstLastPages")(hideFirstLastPages)
     if (!js.isUndefined(hideNavigation)) __obj.updateDynamic("hideNavigation")(hideNavigation)

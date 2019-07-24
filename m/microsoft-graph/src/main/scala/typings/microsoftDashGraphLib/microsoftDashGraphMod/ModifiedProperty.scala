@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModifiedProperty extends js.Object {
-  /** Indicates the property name of the target attribute that was changed. */
+  // Indicates the property name of the target attribute that was changed.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates the updated value for the propery. */
+  // Indicates the updated value for the propery.
   var newValue: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates the previous value (before the update) for the property. */
+  // Indicates the previous value (before the update) for the property.
   var oldValue: js.UndefOr[java.lang.String] = js.undefined
 }
 

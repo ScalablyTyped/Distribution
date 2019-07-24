@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosDeviceType extends js.Object {
-  /** Whether the app should run on iPads. */
+  // Whether the app should run on iPads.
   var iPad: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether the app should run on iPhones and iPods. */
+  // Whether the app should run on iPhones and iPods.
   var iPhoneAndIPod: js.UndefOr[scala.Boolean] = js.undefined
 }
 

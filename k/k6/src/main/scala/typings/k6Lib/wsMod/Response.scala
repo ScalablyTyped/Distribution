@@ -6,10 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Response extends js.Object {
+  /** Response body. */
   var body: java.lang.String
+  /** Non-HTTP error message. */
   var error: java.lang.String
+  /** Response headers. */
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  /** HTTP status code. */
   var status: scala.Double
+  /** Fetched URL. May differ from request URL due to redirects. */
   var url: java.lang.String
 }
 

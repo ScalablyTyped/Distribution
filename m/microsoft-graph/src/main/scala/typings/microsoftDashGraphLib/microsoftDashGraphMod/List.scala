@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait List extends BaseItem {
-  /** The collection of field definitions for this list. */
+  // The collection of field definitions for this list.
   var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
-  /** The collection of content types present in this list. */
+  // The collection of content types present in this list.
   var contentTypes: js.UndefOr[js.Array[ContentType]] = js.undefined
-  /** The displayable title of the list. */
+  // The displayable title of the list.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem]. */
+  // Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
   var drive: js.UndefOr[Drive] = js.undefined
-  /** All items contained in the list. */
+  // All items contained in the list.
   var items: js.UndefOr[js.Array[ListItem]] = js.undefined
-  /** Provides additional details about the list. */
+  // Provides additional details about the list.
   var list: js.UndefOr[ListInfo] = js.undefined
-  /** Returns identifiers useful for SharePoint REST compatibility. Read-only. */
+  // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
-  /** If present, indicates that this is a system-managed list. Read-only. */
+  // If present, indicates that this is a system-managed list. Read-only.
   var system: js.UndefOr[SystemFacet] = js.undefined
 }
 

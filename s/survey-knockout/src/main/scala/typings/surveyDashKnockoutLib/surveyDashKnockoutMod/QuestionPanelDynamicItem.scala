@@ -37,8 +37,9 @@ class QuestionPanelDynamicItem protected ()
   /* CompleteClass */
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
   def setSurveyImpl(): scala.Unit = js.native
+  def setValue(name: java.lang.String, newValue: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
+  override def setValue(name: java.lang.String, newValue: js.Any, locNotification: scala.Boolean): js.Any = js.native
 }
 
 /* static members */

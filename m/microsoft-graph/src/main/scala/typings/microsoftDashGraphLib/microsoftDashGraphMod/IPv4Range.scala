@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPv4Range extends IpRange {
-  /** Lower address. */
+  // Lower address.
   var lowerAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** Upper address. */
+  // Upper address.
   var upperAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 

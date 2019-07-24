@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosVppEBook extends ManagedEBook {
-  /** The Apple ID associated with Vpp token. */
+  // The Apple ID associated with Vpp token.
   var appleId: js.UndefOr[java.lang.String] = js.undefined
-  /** Genres. */
+  // Genres.
   var genres: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Language. */
+  // Language.
   var language: js.UndefOr[java.lang.String] = js.undefined
-  /** Seller. */
+  // Seller.
   var seller: js.UndefOr[java.lang.String] = js.undefined
-  /** Total license count. */
+  // Total license count.
   var totalLicenseCount: js.UndefOr[scala.Double] = js.undefined
-  /** Used license count. */
+  // Used license count.
   var usedLicenseCount: js.UndefOr[scala.Double] = js.undefined
-  /** The Vpp token's organization name. */
+  // The Vpp token's organization name.
   var vppOrganizationName: js.UndefOr[java.lang.String] = js.undefined
-  /** The Vpp token ID. */
+  // The Vpp token ID.
   var vppTokenId: js.UndefOr[java.lang.String] = js.undefined
 }
 

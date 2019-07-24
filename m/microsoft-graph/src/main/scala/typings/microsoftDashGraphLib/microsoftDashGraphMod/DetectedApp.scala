@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DetectedApp extends Entity {
-  /** The number of devices that have installed this application */
+  // The number of devices that have installed this application
   var deviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Name of the discovered application. Read-only */
+  // Name of the discovered application. Read-only
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The devices that have the discovered application installed */
+  // The devices that have the discovered application installed
   var managedDevices: js.UndefOr[js.Array[ManagedDevice]] = js.undefined
-  /** Discovered application size in bytes. Read-only */
+  // Discovered application size in bytes. Read-only
   var sizeInByte: js.UndefOr[scala.Double] = js.undefined
-  /** Version of the discovered application. Read-only */
+  // Version of the discovered application. Read-only
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

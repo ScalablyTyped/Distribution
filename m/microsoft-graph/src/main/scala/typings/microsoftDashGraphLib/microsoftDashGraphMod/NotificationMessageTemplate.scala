@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotificationMessageTemplate extends Entity {
-  /** The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation. */
+  /**
+    * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none,
+    * includeCompanyLogo, includeCompanyName, includeContactInformation.
+    */
   var brandingOptions: js.UndefOr[NotificationTemplateBrandingOptions] = js.undefined
-  /** The default locale to fallback onto when the requested locale is not available. */
+  // The default locale to fallback onto when the requested locale is not available.
   var defaultLocale: js.UndefOr[java.lang.String] = js.undefined
-  /** Display name for the Notification Message Template. */
+  // Display name for the Notification Message Template.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime the object was last modified. */
+  // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of localized messages for this Notification Message Template. */
+  // The list of localized messages for this Notification Message Template.
   var localizedNotificationMessages: js.UndefOr[js.Array[LocalizedNotificationMessage]] = js.undefined
 }
 

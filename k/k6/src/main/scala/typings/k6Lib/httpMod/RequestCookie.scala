@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestCookie extends js.Object {
+  /** Name. */
   var name: java.lang.String
+  /** Whether configured to override VU cookie jar. */
   var replace: scala.Boolean
+  /** Value. */
   var value: java.lang.String
 }
 

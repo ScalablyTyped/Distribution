@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MultiValueLegacyExtendedProperty extends Entity {
-  /** A collection of property values. */
+  // A collection of property values.
   var value: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

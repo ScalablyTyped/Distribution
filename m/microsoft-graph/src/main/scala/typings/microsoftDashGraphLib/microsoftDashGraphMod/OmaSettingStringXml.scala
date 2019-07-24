@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OmaSettingStringXml extends OmaSetting {
-  /** File name associated with the Value property (.xml). */
+  // File name associated with the Value property (.xml).
   var fileName: js.UndefOr[java.lang.String] = js.undefined
-  /** Value. (UTF8 encoded byte array) */
+  // Value. (UTF8 encoded byte array)
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 

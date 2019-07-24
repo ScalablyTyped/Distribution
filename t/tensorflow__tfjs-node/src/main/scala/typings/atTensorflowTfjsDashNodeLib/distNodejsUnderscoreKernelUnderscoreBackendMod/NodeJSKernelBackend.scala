@@ -106,6 +106,18 @@ class NodeJSKernelBackend protected ()
     exclusive: scala.Boolean,
     reverse: scala.Boolean
   ): atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] = js.native
+  def decodeBmp(contents: stdLib.Uint8Array, channels: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor3D = js.native
+  def decodeGif(contents: stdLib.Uint8Array): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor4D = js.native
+  def decodeJpeg(
+    contents: stdLib.Uint8Array,
+    channels: scala.Double,
+    ratio: scala.Double,
+    fancyUpscaling: scala.Boolean,
+    tryRecoverTruncated: scala.Boolean,
+    acceptableFraction: scala.Double,
+    dctMethod: java.lang.String
+  ): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor3D = js.native
+  def decodePng(contents: stdLib.Uint8Array, channels: scala.Double): atTensorflowTfjsDashCoreLib.distTensorMod.Tensor3D = js.native
   def depthToSpace(
     x: atTensorflowTfjsDashCoreLib.atTensorflowTfjsDashCoreMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank.R4],
     blockSize: scala.Double,

@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedIOSLobApp extends ManagedMobileLobApp {
-  /** The iOS architecture for which this app can run on. */
+  // The iOS architecture for which this app can run on.
   var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
-  /** The build number of managed iOS Line of Business (LoB) app. */
+  // The build number of managed iOS Line of Business (LoB) app.
   var buildNumber: js.UndefOr[java.lang.String] = js.undefined
-  /** The Identity Name. */
+  // The Identity Name.
   var bundleId: js.UndefOr[java.lang.String] = js.undefined
-  /** The expiration time. */
+  // The expiration time.
   var expirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The value for the minimum applicable operating system. */
+  // The value for the minimum applicable operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[IosMinimumOperatingSystem] = js.undefined
-  /** The version number of managed iOS Line of Business (LoB) app. */
+  // The version number of managed iOS Line of Business (LoB) app.
   var versionNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 

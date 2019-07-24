@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FolderView extends js.Object {
-  /** The method by which the folder should be sorted. */
+  // The method by which the folder should be sorted.
   var sortBy: js.UndefOr[java.lang.String] = js.undefined
-  /** If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending. */
+  // If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.
   var sortOrder: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of view that should be used to represent the folder. */
+  // The type of view that should be used to represent the folder.
   var viewType: js.UndefOr[java.lang.String] = js.undefined
 }
 

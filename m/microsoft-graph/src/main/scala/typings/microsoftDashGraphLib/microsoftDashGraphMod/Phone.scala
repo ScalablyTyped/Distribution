@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Phone extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
-  /** The phone number. */
+  // The phone number.
   var number: js.UndefOr[java.lang.String] = js.undefined
   var region: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of phone number. The possible values are: home, business, mobile, other, assistant, homeFax, businessFax, otherFax, pager, radio. */
+  /**
+    * The type of phone number. The possible values are: home, business, mobile, other, assistant, homeFax, businessFax,
+    * otherFax, pager, radio.
+    */
   var `type`: js.UndefOr[PhoneType] = js.undefined
 }
 

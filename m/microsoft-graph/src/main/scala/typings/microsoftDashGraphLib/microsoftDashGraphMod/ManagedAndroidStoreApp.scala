@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAndroidStoreApp extends ManagedApp {
-  /** The Android AppStoreUrl. */
+  // The Android AppStoreUrl.
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The value for the minimum supported operating system. */
+  // The value for the minimum supported operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[AndroidMinimumOperatingSystem] = js.undefined
-  /** The app's package ID. */
+  // The app's package ID.
   var packageId: js.UndefOr[java.lang.String] = js.undefined
 }
 

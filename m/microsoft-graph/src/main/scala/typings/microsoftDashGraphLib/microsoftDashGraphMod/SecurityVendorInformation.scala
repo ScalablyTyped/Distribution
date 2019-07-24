@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecurityVendorInformation extends js.Object {
-  /** Specific provider (product/service - not vendor company); for example, WindowsDefenderATP. */
+  // Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   var provider: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the provider or subprovider, if it exists, that generated the alert. Required */
+  // Version of the provider or subprovider, if it exists, that generated the alert. Required
   var providerVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen. */
+  // Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
   var subProvider: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required */
+  // Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
   var vendor: js.UndefOr[java.lang.String] = js.undefined
 }
 

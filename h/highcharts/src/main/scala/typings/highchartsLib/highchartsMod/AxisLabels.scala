@@ -20,7 +20,7 @@ trait AxisLabels extends js.Object {
     * @default [-45]
     * @since 4.1.0
     */
-  var autoRotation: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var autoRotation: js.UndefOr[js.Array[scala.Double] | scala.Boolean] = js.undefined
   /**
     * When each category width is more than this many pixels, we don't apply auto rotation. Instead, we lay out the
     * axis label with word wrap. A lower limit makes sense when the label contains multiple short words that don't
@@ -131,7 +131,7 @@ object AxisLabels {
   @scala.inline
   def apply(
     align: java.lang.String = null,
-    autoRotation: js.Array[scala.Double] = null,
+    autoRotation: js.Array[scala.Double] | scala.Boolean = null,
     autoRotationLimit: scala.Int | scala.Double = null,
     distance: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -152,7 +152,7 @@ object AxisLabels {
   ): AxisLabels = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
-    if (autoRotation != null) __obj.updateDynamic("autoRotation")(autoRotation)
+    if (autoRotation != null) __obj.updateDynamic("autoRotation")(autoRotation.asInstanceOf[js.Any])
     if (autoRotationLimit != null) __obj.updateDynamic("autoRotationLimit")(autoRotationLimit.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

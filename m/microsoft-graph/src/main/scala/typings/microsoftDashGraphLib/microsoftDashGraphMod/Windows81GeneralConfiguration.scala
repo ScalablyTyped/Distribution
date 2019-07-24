@@ -6,71 +6,77 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Windows81GeneralConfiguration extends DeviceConfiguration {
-  /** Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account. */
+  /**
+    * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a
+    * Microsoft account.
+    */
   var accountsBlockAddingNonMicrosoftAccountEmail: js.UndefOr[scala.Boolean] = js.undefined
-  /** Value indicating whether this policy only applies to Windows 8.1. This property is read-only. */
+  // Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
   var applyOnlyToWindows81: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block auto fill. */
+  // Indicates whether or not to block auto fill.
   var browserBlockAutofill: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block automatic detection of Intranet sites. */
+  // Indicates whether or not to block automatic detection of Intranet sites.
   var browserBlockAutomaticDetectionOfIntranetSites: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block enterprise mode access. */
+  // Indicates whether or not to block enterprise mode access.
   var browserBlockEnterpriseModeAccess: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to Block the user from using JavaScript. */
+  // Indicates whether or not to Block the user from using JavaScript.
   var browserBlockJavaScript: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block plug-ins. */
+  // Indicates whether or not to block plug-ins.
   var browserBlockPlugins: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block popups. */
+  // Indicates whether or not to block popups.
   var browserBlockPopups: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to Block the user from sending the do not track header. */
+  // Indicates whether or not to Block the user from sending the do not track header.
   var browserBlockSendingDoNotTrackHeader: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block a single word entry on Intranet sites. */
+  // Indicates whether or not to block a single word entry on Intranet sites.
   var browserBlockSingleWordEntryOnIntranetSites: js.UndefOr[scala.Boolean] = js.undefined
-  /** The enterprise mode site list location. Could be a local file, local network or http location. */
+  // The enterprise mode site list location. Could be a local file, local network or http location.
   var browserEnterpriseModeSiteListLocation: js.UndefOr[java.lang.String] = js.undefined
-  /** The internet security level. Possible values are: userDefined, medium, mediumHigh, high. */
+  // The internet security level. Possible values are: userDefined, medium, mediumHigh, high.
   var browserInternetSecurityLevel: js.UndefOr[InternetSiteSecurityLevel] = js.undefined
-  /** The Intranet security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high. */
+  // The Intranet security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
   var browserIntranetSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.undefined
-  /** The logging report location. */
+  // The logging report location.
   var browserLoggingReportLocation: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether or not to require a firewall. */
+  // Indicates whether or not to require a firewall.
   var browserRequireFirewall: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require fraud warning. */
+  // Indicates whether or not to require fraud warning.
   var browserRequireFraudWarning: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require high security for restricted sites. */
+  // Indicates whether or not to require high security for restricted sites.
   var browserRequireHighSecurityForRestrictedSites: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require the user to use the smart screen filter. */
+  // Indicates whether or not to require the user to use the smart screen filter.
   var browserRequireSmartScreen: js.UndefOr[scala.Boolean] = js.undefined
-  /** The trusted sites security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high. */
+  // The trusted sites security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
   var browserTrustedSitesSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.undefined
-  /** Indicates whether or not to block data roaming. */
+  // Indicates whether or not to block data roaming.
   var cellularBlockDataRoaming: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block diagnostic data submission. */
+  // Indicates whether or not to block diagnostic data submission.
   var diagnosticsBlockDataSubmission: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to Block the user from using a pictures password and pin. */
+  // Indicates whether or not to Block the user from using a pictures password and pin.
   var passwordBlockPicturePasswordAndPin: js.UndefOr[scala.Boolean] = js.undefined
-  /** Password expiration in days. */
+  // Password expiration in days.
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** The minimum password length. */
+  // The minimum password length.
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** The minutes of inactivity before the screen times out. */
+  // The minutes of inactivity before the screen times out.
   var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** The number of previous passwords to prevent re-use of. Valid values 0 to 24 */
+  // The number of previous passwords to prevent re-use of. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** The required password type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** The number of sign in failures before factory reset. */
+  // The number of sign in failures before factory reset.
   var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to require encryption on a mobile device. */
+  // Indicates whether or not to require encryption on a mobile device.
   var storageRequireDeviceEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require automatic updates. */
+  // Indicates whether or not to require automatic updates.
   var updatesRequireAutomaticUpdates: js.UndefOr[scala.Boolean] = js.undefined
-  /** The user account control settings. Possible values are: userDefined, alwaysNotify, notifyOnAppChanges, notifyOnAppChangesWithoutDimming, neverNotify. */
+  /**
+    * The user account control settings. Possible values are: userDefined, alwaysNotify, notifyOnAppChanges,
+    * notifyOnAppChangesWithoutDimming, neverNotify.
+    */
   var userAccountControlSettings: js.UndefOr[WindowsUserAccountControlSettings] = js.undefined
-  /** The work folders url. */
+  // The work folders url.
   var workFoldersUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

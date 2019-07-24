@@ -13,10 +13,15 @@ trait BootboxBaseOptions[T] extends js.Object {
   var callback: js.UndefOr[js.Function1[/* result */ T, _]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closeButton: js.UndefOr[scala.Boolean] = js.undefined
+  var locale: js.UndefOr[java.lang.String] = js.undefined
   var onEscape: js.UndefOr[js.Function0[_] | scala.Boolean] = js.undefined
+   // complex object where each key is of type BootboxButton
+  var scrollable: js.UndefOr[scala.Boolean] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   /** All other values result in medium */
-  var size: js.UndefOr[bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large] = js.undefined
+  var size: js.UndefOr[
+    bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.sm | bootboxLib.bootboxLibStrings.large | bootboxLib.bootboxLibStrings.lg | bootboxLib.bootboxLibStrings.`extra-large` | bootboxLib.bootboxLibStrings.xl
+  ] = js.undefined
   var title: js.UndefOr[java.lang.String | stdLib.Element] = js.undefined
 }
 
@@ -29,9 +34,11 @@ object BootboxBaseOptions {
     callback: /* result */ T => _ = null,
     className: java.lang.String = null,
     closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
     onEscape: js.Function0[_] | scala.Boolean = null,
+    scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     show: js.UndefOr[scala.Boolean] = js.undefined,
-    size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large = null,
+    size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.sm | bootboxLib.bootboxLibStrings.large | bootboxLib.bootboxLibStrings.lg | bootboxLib.bootboxLibStrings.`extra-large` | bootboxLib.bootboxLibStrings.xl = null,
     title: java.lang.String | stdLib.Element = null
   ): BootboxBaseOptions[T] = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +48,9 @@ object BootboxBaseOptions {
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
     if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OutlookGeoCoordinates extends js.Object {
-  /** The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters. */
+  /**
+    * The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude
+    * and longitude are accurate to within 50 meters.
+    */
   var accuracy: js.UndefOr[scala.Double] = js.undefined
-  /** The altitude of the location. */
+  // The altitude of the location.
   var altitude: js.UndefOr[scala.Double] = js.undefined
-  /** The accuracy of the altitude. */
+  // The accuracy of the altitude.
   var altitudeAccuracy: js.UndefOr[scala.Double] = js.undefined
-  /** The latitude of the location. */
+  // The latitude of the location.
   var latitude: js.UndefOr[scala.Double] = js.undefined
-  /** The longitude of the location. */
+  // The longitude of the location.
   var longitude: js.UndefOr[scala.Double] = js.undefined
 }
 

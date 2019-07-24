@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidManagedAppProtection extends TargetedManagedAppProtection {
-  /** List of apps to which the policy is deployed. */
+  // List of apps to which the policy is deployed.
   var apps: js.UndefOr[js.Array[ManagedMobileApp]] = js.undefined
-  /** Count of apps to which the current policy is deployed. */
+  // Count of apps to which the current policy is deployed.
   var deployedAppCount: js.UndefOr[scala.Double] = js.undefined
-  /** Navigation property to deployment summary of the configuration. */
+  // Navigation property to deployment summary of the configuration.
   var deploymentSummary: js.UndefOr[ManagedAppPolicyDeploymentSummary] = js.undefined
-  /** When this setting is enabled, app level encryption is disabled if device level encryption is enabled */
+  // When this setting is enabled, app level encryption is disabled if device level encryption is enabled
   var disableAppEncryptionIfDeviceEncryptionIsEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether application data for managed apps should be encrypted */
+  // Indicates whether application data for managed apps should be encrypted
   var encryptAppData: js.UndefOr[scala.Boolean] = js.undefined
-  /** Define the oldest required Android security patch level a user can have to gain secure access to the app. */
+  // Define the oldest required Android security patch level a user can have to gain secure access to the app.
   var minimumRequiredPatchVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Define the oldest recommended Android security patch level a user can have for secure access to the app. */
+  // Define the oldest recommended Android security patch level a user can have for secure access to the app.
   var minimumWarningPatchVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether a managed user can take screen captures of managed apps */
+  // Indicates whether a managed user can take screen captures of managed apps
   var screenCaptureBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

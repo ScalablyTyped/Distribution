@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsTab extends Entity {
-  /** Container for custom settings applied to a tab. The tab is considered configured only once this property is set. */
+  // Container for custom settings applied to a tab. The tab is considered configured only once this property is set.
   var configuration: js.UndefOr[TeamsTabConfiguration] = js.undefined
-  /** Name of the tab. */
+  // Name of the tab.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The application that is linked to the tab. This cannot be changed after tab creation. */
+  // The application that is linked to the tab. This cannot be changed after tab creation.
   var teamsApp: js.UndefOr[TeamsApp] = js.undefined
-  /** Deep link url of the tab instance. Read only. */
+  // Deep link url of the tab instance. Read only.
   var webUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

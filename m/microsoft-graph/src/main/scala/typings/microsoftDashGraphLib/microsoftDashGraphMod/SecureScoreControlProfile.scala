@@ -6,36 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecureScoreControlProfile extends Entity {
-  /** Control action type (Config, Review, Behavior). */
+  // Control action type (Config, Review, Behavior).
   var actionType: js.UndefOr[java.lang.String] = js.undefined
-  /** URL to where the control can be actioned. */
+  // URL to where the control can be actioned.
   var actionUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** GUID string for tenant ID. */
+  // GUID string for tenant ID.
   var azureTenantId: js.UndefOr[java.lang.String] = js.undefined
   var complianceInformation: js.UndefOr[js.Array[ComplianceInformation]] = js.undefined
-  /** Control action category (Identity, Data, Device, Apps, Infrastructure). */
+  // Control action category (Identity, Data, Device, Apps, Infrastructure).
   var controlCategory: js.UndefOr[java.lang.String] = js.undefined
   var controlStateUpdates: js.UndefOr[js.Array[SecureScoreControlStateUpdate]] = js.undefined
-  /** Flag to indicate if a control is depreciated. */
+  // Flag to indicate if a control is depreciated.
   var deprecated: js.UndefOr[scala.Boolean] = js.undefined
-  /** Resource cost of implemmentating control (low, moderate, high). */
+  // Resource cost of implemmentating control (low, moderate, high).
   var implementationCost: js.UndefOr[java.lang.String] = js.undefined
-  /** Time at which the control profile entity was last modified. The Timestamp type represents date and time */
+  // Time at which the control profile entity was last modified. The Timestamp type represents date and time
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** max attainable score for the control. */
+  // max attainable score for the control.
   var maxScore: js.UndefOr[scala.Double] = js.undefined
-  /** Microsoft's stack ranking of control. */
+  // Microsoft's stack ranking of control.
   var rank: js.UndefOr[scala.Double] = js.undefined
-  /** Description of what the control will help remediate. */
+  // Description of what the control will help remediate.
   var remediation: js.UndefOr[java.lang.String] = js.undefined
-  /** Description of the impact on users of the remediation. */
+  // Description of the impact on users of the remediation.
   var remediationImpact: js.UndefOr[java.lang.String] = js.undefined
-  /** Service that owns the control (Exchange, Sharepoint, Azure AD). */
+  // Service that owns the control (Exchange, Sharepoint, Azure AD).
   var service: js.UndefOr[java.lang.String] = js.undefined
-  /** List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage, */
+  // List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
   var threats: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var tier: js.UndefOr[java.lang.String] = js.undefined
-  /** Title of the control. */
+  // Title of the control.
   var title: js.UndefOr[java.lang.String] = js.undefined
   var userImpact: js.UndefOr[java.lang.String] = js.undefined
   var vendorInformation: js.UndefOr[SecurityVendorInformation] = js.undefined

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AuthenticationTypeOAuth2
   extends nodemailerLib.libXoauth2Mod.Options
      with AuthenticationType {
-  /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */
+  /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ or ‘custom’ */
   var `type`: js.UndefOr[
     nodemailerLib.nodemailerLibStrings.oauth2 | nodemailerLib.nodemailerLibStrings.OAuth2 | nodemailerLib.nodemailerLibStrings.OAUTH2
   ] = js.undefined
@@ -30,6 +30,7 @@ object AuthenticationTypeOAuth2 {
       scala.Unit
     ]) => scala.Unit = null,
     refreshToken: java.lang.String = null,
+    serviceClient: java.lang.String = null,
     timeout: js.UndefOr[nodemailerLib.libXoauth2Mod.s] = js.undefined,
     `type`: nodemailerLib.nodemailerLibStrings.oauth2 | nodemailerLib.nodemailerLibStrings.OAuth2 | nodemailerLib.nodemailerLibStrings.OAUTH2 = null,
     user: java.lang.String = null
@@ -43,6 +44,7 @@ object AuthenticationTypeOAuth2 {
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (provisionCallback != null) __obj.updateDynamic("provisionCallback")(js.Any.fromFunction3(provisionCallback))
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient)
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user)

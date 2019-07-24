@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AssignedLicense extends js.Object {
-  /** A collection of the unique identifiers for plans that have been disabled. */
+  // A collection of the unique identifiers for plans that have been disabled.
   var disabledPlans: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** The unique identifier for the SKU. */
+  // The unique identifier for the SKU.
   var skuId: js.UndefOr[java.lang.String] = js.undefined
 }
 

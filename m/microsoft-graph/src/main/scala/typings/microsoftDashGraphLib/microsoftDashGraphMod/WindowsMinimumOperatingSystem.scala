@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsMinimumOperatingSystem extends js.Object {
-  /** Windows version 10.0 or later. */
+  // Windows version 10.0 or later.
   var v10_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Windows version 8.0 or later. */
+  // Windows version 8.0 or later.
   var v8_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Windows version 8.1 or later. */
+  // Windows version 8.1 or later.
   var v8_1: js.UndefOr[scala.Boolean] = js.undefined
 }
 

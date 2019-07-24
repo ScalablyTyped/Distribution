@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartAxes extends Entity {
-  /** Represents the category axis in a chart. Read-only. */
+  // Represents the category axis in a chart. Read-only.
   var categoryAxis: js.UndefOr[WorkbookChartAxis] = js.undefined
-  /** Represents the series axis of a 3-dimensional chart. Read-only. */
+  // Represents the series axis of a 3-dimensional chart. Read-only.
   var seriesAxis: js.UndefOr[WorkbookChartAxis] = js.undefined
-  /** Represents the value axis in an axis. Read-only. */
+  // Represents the value axis in an axis. Read-only.
   var valueAxis: js.UndefOr[WorkbookChartAxis] = js.undefined
 }
 

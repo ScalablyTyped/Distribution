@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-async"
-version := "7.0.4-3c021a"
+version := "7.0.5-baed0d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

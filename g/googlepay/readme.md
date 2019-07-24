@@ -22,6 +22,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Florian Luccioni <https://github.com/Fluccioni>,
 //                 Radu Raicea <https://github.com/Radu-Raicea>,
 //                 Filip Stanis <https://github.com/fstanis>
+//                 Alexandre Couret <https://github.com/ozotek>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

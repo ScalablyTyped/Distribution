@@ -53,6 +53,8 @@ trait BazingaTranslator extends js.Object {
     *
     * @return {Object}           Translator
     */
+  def add(id: java.lang.String, message: java.lang.String): BazingaTranslator = js.native
+  def add(id: java.lang.String, message: java.lang.String, domain: java.lang.String): BazingaTranslator = js.native
   def add(
     id: java.lang.String,
     message: java.lang.String,
@@ -78,6 +80,8 @@ trait BazingaTranslator extends js.Object {
     *
     * @return {String}                 The translated string
     */
+  def trans(id: java.lang.String): java.lang.String = js.native
+  def trans(id: java.lang.String, parameters: js.Any): java.lang.String = js.native
   def trans(id: java.lang.String, parameters: js.Any, domain: java.lang.String): java.lang.String = js.native
   def trans(id: java.lang.String, parameters: js.Any, domain: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   /**
@@ -91,6 +95,8 @@ trait BazingaTranslator extends js.Object {
     *
     * @return {String}                 The translated string
     */
+  def transChoice(id: java.lang.String, number: scala.Double): java.lang.String = js.native
+  def transChoice(id: java.lang.String, number: scala.Double, parameters: js.Any): java.lang.String = js.native
   def transChoice(id: java.lang.String, number: scala.Double, parameters: js.Any, domain: java.lang.String): java.lang.String = js.native
   def transChoice(
     id: java.lang.String,

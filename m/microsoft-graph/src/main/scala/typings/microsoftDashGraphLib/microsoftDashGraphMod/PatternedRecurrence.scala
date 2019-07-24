@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PatternedRecurrence extends js.Object {
-  /** The frequency of an event. */
+  // The frequency of an event.
   var pattern: js.UndefOr[RecurrencePattern] = js.undefined
-  /** The duration of an event. */
+  // The duration of an event.
   var range: js.UndefOr[RecurrenceRange] = js.undefined
 }
 

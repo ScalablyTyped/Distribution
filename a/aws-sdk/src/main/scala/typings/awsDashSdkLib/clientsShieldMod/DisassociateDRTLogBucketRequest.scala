@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DisassociateDRTLogBucketRequest extends js.Object {
   /**
-    * The Amazon S3 bucket that contains your flow logs.
+    * The Amazon S3 bucket that contains your AWS WAF logs.
     */
   var LogBucket: awsDashSdkLib.clientsShieldMod.LogBucket
 }

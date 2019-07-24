@@ -6,13 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SignInLocation extends js.Object {
-  /** Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity. */
+  /**
+    * Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the
+    * sign-in activity.
+    */
   var city: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity. */
+  /**
+    * Provides the country code info (2 letter code) where the sign-in originated. This is calculated using
+    * latitude/longitude information from the sign-in activity.
+    */
   var countryOrRegion: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides the latitude, longitude and altitude where the sign-in originated. */
+  // Provides the latitude, longitude and altitude where the sign-in originated.
   var geoCoordinates: js.UndefOr[GeoCoordinates] = js.undefined
-  /** Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity. */
+  /**
+    * Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the
+    * sign-in activity.
+    */
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 

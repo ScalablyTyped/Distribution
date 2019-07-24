@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HostSecurityState extends js.Object {
-  /** Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com). */
+  // Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
   var fqdn: js.UndefOr[java.lang.String] = js.undefined
   var isAzureAdJoined: js.UndefOr[scala.Boolean] = js.undefined
   var isAzureAdRegistered: js.UndefOr[scala.Boolean] = js.undefined
-  /** True if the host is domain joined to an on-premises Active Directory domain. */
+  // True if the host is domain joined to an on-premises Active Directory domain.
   var isHybridAzureDomainJoined: js.UndefOr[scala.Boolean] = js.undefined
-  /** The local host name, without the DNS domain name. */
+  // The local host name, without the DNS domain name.
   var netBiosName: js.UndefOr[java.lang.String] = js.undefined
-  /** Host Operating System. (For example, Windows10, MacOS, RHEL, etc.). */
+  // Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
   var os: js.UndefOr[java.lang.String] = js.undefined
-  /** Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert. */
+  // Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
   var privateIpAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert. */
+  // Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
   var publicIpAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage. */
+  // Provider-generated/calculated risk score of the host. Recommended value range of 0-1, which equates to a percentage.
   var riskScore: js.UndefOr[java.lang.String] = js.undefined
 }
 

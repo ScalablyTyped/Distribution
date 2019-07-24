@@ -6,27 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileAppContentFile extends Entity {
-  /** The Azure Storage URI. */
+  // The Azure Storage URI.
   var azureStorageUri: js.UndefOr[java.lang.String] = js.undefined
-  /** The time the Azure storage Uri expires. */
+  // The time the Azure storage Uri expires.
   var azureStorageUriExpirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The time the file was created. */
+  // The time the file was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** A value indicating whether the file is committed. */
+  // A value indicating whether the file is committed.
   var isCommitted: js.UndefOr[scala.Boolean] = js.undefined
-  /** The manifest information. */
+  // The manifest information.
   var manifest: js.UndefOr[scala.Double] = js.undefined
-  /** the file name. */
+  // the file name.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** The size of the file prior to encryption. */
+  // The size of the file prior to encryption.
   var size: js.UndefOr[scala.Double] = js.undefined
-  /** The size of the file after encryption. */
+  // The size of the file after encryption.
   var sizeEncrypted: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The state of the current upload request.
-    * Possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending,
-    * azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending,
-    * azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut.
+    * The state of the current upload request. Possible values are: success, transientError, error, unknown,
+    * azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed,
+    * azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending,
+    * azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed,
+    * commitFileTimedOut.
     */
   var uploadState: js.UndefOr[MobileAppContentFileUploadState] = js.undefined
 }

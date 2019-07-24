@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsTxtRecord extends DomainDnsRecord {
-  /** Value used when configuring the text property at the DNS host. */
+  // Value used when configuring the text property at the DNS host.
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 

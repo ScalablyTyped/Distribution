@@ -6,17 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosManagedAppProtection extends TargetedManagedAppProtection {
-  /** Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked. */
+  /**
+    * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings,
+    * afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
+    */
   var appDataEncryptionType: js.UndefOr[ManagedAppDataEncryptionType] = js.undefined
-  /** List of apps to which the policy is deployed. */
+  // List of apps to which the policy is deployed.
   var apps: js.UndefOr[js.Array[ManagedMobileApp]] = js.undefined
-  /** Count of apps to which the current policy is deployed. */
+  // Count of apps to which the current policy is deployed.
   var deployedAppCount: js.UndefOr[scala.Double] = js.undefined
-  /** Navigation property to deployment summary of the configuration. */
+  // Navigation property to deployment summary of the configuration.
   var deploymentSummary: js.UndefOr[ManagedAppPolicyDeploymentSummary] = js.undefined
-  /** Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True. */
+  // Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   var faceIdBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Versions less than the specified version will block the managed app from accessing company data. */
+  // Versions less than the specified version will block the managed app from accessing company data.
   var minimumRequiredSdkVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 

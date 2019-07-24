@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseItem extends Entity {
-  /** Identity of the user, device, or application which created the item. Read-only. */
+  // Identity of the user, device, or application which created the item. Read-only.
   var createdBy: js.UndefOr[IdentitySet] = js.undefined
-  /** Identity of the user who created the item. Read-only. */
+  // Identity of the user who created the item. Read-only.
   var createdByUser: js.UndefOr[User] = js.undefined
-  /** Date and time of item creation. Read-only. */
+  // Date and time of item creation. Read-only.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides a user-visible description of the item. Optional. */
+  // Provides a user-visible description of the item. Optional.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** ETag for the item. Read-only. */
+  // ETag for the item. Read-only.
   var eTag: js.UndefOr[java.lang.String] = js.undefined
-  /** Identity of the user, device, and application which last modified the item. Read-only. */
+  // Identity of the user, device, and application which last modified the item. Read-only.
   var lastModifiedBy: js.UndefOr[IdentitySet] = js.undefined
-  /** Identity of the user who last modified the item. Read-only. */
+  // Identity of the user who last modified the item. Read-only.
   var lastModifiedByUser: js.UndefOr[User] = js.undefined
-  /** Date and time the item was last modified. Read-only. */
+  // Date and time the item was last modified. Read-only.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the item. Read-write. */
+  // The name of the item. Read-write.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Parent information, if the item has a parent. Read-write. */
+  // Parent information, if the item has a parent. Read-write.
   var parentReference: js.UndefOr[ItemReference] = js.undefined
-  /** URL that displays the resource in the browser. Read-only. */
+  // URL that displays the resource in the browser. Read-only.
   var webUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

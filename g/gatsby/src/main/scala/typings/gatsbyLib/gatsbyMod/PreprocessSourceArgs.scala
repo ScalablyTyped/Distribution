@@ -17,7 +17,7 @@ object PreprocessSourceArgs {
     boundActionCreators: Actions,
     cache: gatsbyLib.Anon_Del,
     contents: java.lang.String,
-    createContentDigest: js.Function,
+    createContentDigest: /* input */ js.Any => java.lang.String,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,
     filename: java.lang.String,
@@ -33,7 +33,7 @@ object PreprocessSourceArgs {
     store: Store,
     tracing: Tracing
   ): PreprocessSourceArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, contents = contents, createContentDigest = createContentDigest, createNodeId = createNodeId, emitter = emitter, filename = filename, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, contents = contents, createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId, emitter = emitter, filename = filename, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, tracing = tracing)
   
     __obj.asInstanceOf[PreprocessSourceArgs]
   }

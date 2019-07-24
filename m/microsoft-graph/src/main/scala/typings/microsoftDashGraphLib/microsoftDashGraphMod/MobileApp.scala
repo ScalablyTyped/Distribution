@@ -6,35 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileApp extends Entity {
-  /** The list of group assignments for this mobile app. */
+  // The list of group assignments for this mobile app.
   var assignments: js.UndefOr[js.Array[MobileAppAssignment]] = js.undefined
-  /** The list of categories for this app. */
+  // The list of categories for this app.
   var categories: js.UndefOr[js.Array[MobileAppCategory]] = js.undefined
-  /** The date and time the app was created. */
+  // The date and time the app was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The description of the app. */
+  // The description of the app.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The developer of the app. */
+  // The developer of the app.
   var developer: js.UndefOr[java.lang.String] = js.undefined
-  /** The admin provided or imported title of the app. */
+  // The admin provided or imported title of the app.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The more information Url. */
+  // The more information Url.
   var informationUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The value indicating whether the app is marked as featured by the admin. */
+  // The value indicating whether the app is marked as featured by the admin.
   var isFeatured: js.UndefOr[scala.Boolean] = js.undefined
-  /** The large icon, to be displayed in the app details and used for upload of the icon. */
+  // The large icon, to be displayed in the app details and used for upload of the icon.
   var largeIcon: js.UndefOr[MimeContent] = js.undefined
-  /** The date and time the app was last modified. */
+  // The date and time the app was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Notes for the app. */
+  // Notes for the app.
   var notes: js.UndefOr[java.lang.String] = js.undefined
-  /** The owner of the app. */
+  // The owner of the app.
   var owner: js.UndefOr[java.lang.String] = js.undefined
-  /** The privacy statement Url. */
+  // The privacy statement Url.
   var privacyInformationUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The publisher of the app. */
+  // The publisher of the app.
   var publisher: js.UndefOr[java.lang.String] = js.undefined
-  /** The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: notPublished, processing, published. */
+  /**
+    * The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are:
+    * notPublished, processing, published.
+    */
   var publishingState: js.UndefOr[MobileAppPublishingState] = js.undefined
 }
 

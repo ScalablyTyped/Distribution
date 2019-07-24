@@ -6,27 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCompliancePolicySettingStateSummary extends Entity {
-  /** Number of compliant devices */
+  // Number of compliant devices
   var compliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of conflict devices */
+  // Number of conflict devices
   var conflictDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var deviceComplianceSettingStates: js.UndefOr[js.Array[DeviceComplianceSettingState]] = js.undefined
-  /** Number of error devices */
+  // Number of error devices
   var errorDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of NonCompliant devices */
+  // Number of NonCompliant devices
   var nonCompliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of not applicable devices */
+  // Number of not applicable devices
   var notApplicableDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Setting platform. Possible values are: android, iOS, macOS, windowsPhone81, windows81AndLater, windows10AndLater, androidWorkProfile, all. */
+  /**
+    * Setting platform. Possible values are: android, iOS, macOS, windowsPhone81, windows81AndLater, windows10AndLater,
+    * androidWorkProfile, all.
+    */
   var platformType: js.UndefOr[PolicyPlatformType] = js.undefined
-  /** Number of remediated devices */
+  // Number of remediated devices
   var remediatedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** The setting class name and property name. */
+  // The setting class name and property name.
   var setting: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the setting. */
+  // Name of the setting.
   var settingName: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of unknown devices */
+  // Number of unknown devices
   var unknownDeviceCount: js.UndefOr[scala.Double] = js.undefined
 }
 

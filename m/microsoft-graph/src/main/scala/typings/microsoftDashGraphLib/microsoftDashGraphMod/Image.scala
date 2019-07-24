@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Image extends js.Object {
-  /** Optional. Height of the image, in pixels. Read-only. */
+  // Optional. Height of the image, in pixels. Read-only.
   var height: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. Width of the image, in pixels. Read-only. */
+  // Optional. Width of the image, in pixels. Read-only.
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

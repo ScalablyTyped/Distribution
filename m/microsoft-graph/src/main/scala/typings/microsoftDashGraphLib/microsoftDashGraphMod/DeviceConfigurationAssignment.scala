@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceConfigurationAssignment extends Entity {
-  /** The assignment target for the device configuration. */
+  // The assignment target for the device configuration.
   var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
 }
 

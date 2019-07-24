@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DirectoryRoleTemplate extends DirectoryObject {
-  /** The description to set for the directory role. Read-only. */
+  // The description to set for the directory role. Read-only.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The display name to set for the directory role. Read-only. */
+  // The display name to set for the directory role. Read-only.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
 }
 

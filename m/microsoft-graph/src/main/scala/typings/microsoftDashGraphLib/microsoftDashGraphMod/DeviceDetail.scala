@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceDetail extends js.Object {
-  /** Indicates the browser information of the used for signing in. */
+  // Indicates the browser information of the used for signing in.
   var browser: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the UniqueID of the device used for signing in. */
+  // Refers to the UniqueID of the device used for signing in.
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the name of the device used for signing in. */
+  // Refers to the name of the device used for signing in.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether the device is compliant. */
+  // Indicates whether the device is compliant.
   var isCompliant: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether the device is managed. */
+  // Indicates whether the device is managed.
   var isManaged: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates the operating system name and version used for signing in. */
+  // Indicates the operating system name and version used for signing in.
   var operatingSystem: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides information about whether the signed-in device is Workplace Joined, AzureAD Joined, Domain Joined. */
+  // Provides information about whether the signed-in device is Workplace Joined, AzureAD Joined, Domain Joined.
   var trustType: js.UndefOr[java.lang.String] = js.undefined
 }
 

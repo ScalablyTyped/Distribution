@@ -609,6 +609,7 @@
 | [browser-report](./b/browser-report) | Report browser settings like whatsmybrowser.org. | browser details, browser detection, browser, detect, report, supported, user agent string, user agent, user-agent, useragent, viewport, whatsmybrowser |
 | [browser-resolve](./b/browser-resolve) | resolve which handles browser field support in pac | resolve, browser |
 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing | browser sync, css, live reload, sync |
+| [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration | webpack, webpack-plugin, browsersync, browser-sync, livereload, serve |
 | [browserify](./b/browserify) | browser-side require() the node way | browser, require, commonjs, commonj-esque, bundle, npm, javascript |
 | [browserslist](./b/browserslist) | Share target browsers between different front-end  | caniuse, browsers, target |
 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u | - |
@@ -2065,6 +2066,7 @@
 | [gapi_dot_youtube](./g/gapi_dot_youtube) | - | - |
 | [gapi_dot_youtubeanalytics](./g/gapi_dot_youtubeanalytics) | - | - |
 | [gatsby](./g/gatsby) | Blazing fast modern site generator for React | blog, generator, jekyll, markdown, react, ssg, website |
+| [gatsby-core-utils](./g/gatsby-core-utils) | - | - |
 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s | gatsby, gatsby-component, react-component |
 | [gatsby-link](./g/gatsby-link) | An enhanced Link component for Gatsby sites with s | gatsby |
 | [gaussian](./g/gaussian) | A JavaScript model of a Gaussian distribution | gaussian, normal, distribution |
@@ -4972,6 +4974,7 @@
 | [random-int](./r/random-int) | Generate a random integer | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
 | [random-item](./r/random-item) | Get a random item from an array | random, randomize, math, array, item, element, pick, select |
 | [random-js](./r/random-js) | A mathematically correct random number generator l | random |
+| [random-normal](./r/random-normal) | Return a normally-distributed random variate. | normally, distributed, variate, random, randomly, randomize, chance, test, dice, mock |
 | [random-number](./r/random-number) | Generate pseudo-randum numbers | random-number, random, random-integer |
 | [random-obj-key](./r/random-obj-key) | Get a random key from an object | random, randomize, math, object, key, pick, select, choice |
 | [random-obj-prop](./r/random-obj-prop) | Get a random property from an object | random, randomize, math, object, property, prop, pick, select, choice |
@@ -5398,6 +5401,7 @@
 | [react-panelgroup](./r/react-panelgroup) | react-panelgroup React component | react-component |
 | [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the | pdf, pdf-viewer, react |
 | [react-places-autocomplete](./r/react-places-autocomplete) | A React component for Google Maps Places Autocompl | React.js, React, react-component, place, places, google-maps, google-map, places-autocomplete, autocomplete, google, maps, latitude, longitude, geocode, geocoder |
+| [react-plaid-link](./r/react-plaid-link) | A React component for Plaid Link | react, react-component, plaid |
 | [react-player](./r/react-player) | A React component for playing a variety of URLs, i | react, media, player, video, audio, youtube, facebook, twitch, soundcloud, streamable, vimeo, wistia, dailymotion, hls, dash, react-component |
 | [react-plotly_dot_js](./r/react-plotly_dot_js) | A plotly.js react component from Plotly | graphing, plotting, data, visualization, plotly, react |
 | [react-plyr](./r/react-plyr) | A simple, accessible HTML5 media player React Comp | - |
@@ -6979,6 +6983,7 @@
 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream | gulpplugin, webpack, stream |
 | [webpack-subresource-integ](./w/webpack-subresource-integrity) | Webpack plugin for enabling Subresource Integrity | webpack, plugin, sri, subresource, integrity, html-webpack-plugin |
 | [webpack-validator](./w/webpack-validator) | Validate your webpack config with joi | webpack, config, schema, validation, joi |
+| [webpack-virtual-modules](./w/webpack-virtual-modules) | Webpack Virtual Modules | webpack, webpack-plugin, virtual, modules |
 | [webpack-watched-glob-entr](./w/webpack-watched-glob-entries-plugin) | Webpack plugin to glob directories for entry files | - |
 | [webpackbar](./w/webpackbar) | Elegant ProgressBar and Profiler for Webpack | - |
 | [webpagetest](./w/webpagetest) | WebPageTest API wrapper for NodeJS | webpagetest, api, performance, test, browser |
@@ -7049,8 +7054,10 @@
 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP | wordpress, block, parser |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
+| [wordpress__core-data](./w/wordpress__core-data) | Access to and manipulation of core WordPress entit | wordpress, data, entities |
 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t | wordpress, webpack, webpack-plugin |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
+| [wordpress__data-controls](./w/wordpress__data-controls) | A set of common controls for the @wordpress/data a | wordpress, data, controls |
 | [wordpress__date](./w/wordpress__date) | Date module for WordPress. | wordpress, date |
 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack | wordpress, webpack, dependency |
 | [wordpress__deprecated](./w/wordpress__deprecated) | Deprecation utility for WordPress. | wordpress, deprecated |
@@ -7064,6 +7071,7 @@
 | [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a | wordpress, shallow, shallow-equal, shallowequal |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
+| [wordpress__library-export](./w/wordpress__library-export-default-webpack-plugin) | Webpack plugin for exporting default property for  | wordpress, webpack, webpack-plugin |
 | [wordpress__notices](./w/wordpress__notices) | State management for notices. | wordpress, notices |
 | [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress. | wordpress, nux |
 | [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue. | wordpress, browser, async |

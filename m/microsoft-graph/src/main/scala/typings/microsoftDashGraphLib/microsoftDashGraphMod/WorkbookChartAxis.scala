@@ -6,21 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartAxis extends Entity {
-  /** Represents the formatting of a chart object, which includes line and font formatting. Read-only. */
+  // Represents the formatting of a chart object, which includes line and font formatting. Read-only.
   var format: js.UndefOr[WorkbookChartAxisFormat] = js.undefined
-  /** Returns a gridlines object that represents the major gridlines for the specified axis. Read-only. */
+  // Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
   var majorGridlines: js.UndefOr[WorkbookChartGridlines] = js.undefined
-  /** Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number. */
+  /**
+    * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The returned
+    * value is always a number.
+    */
   var majorUnit: js.UndefOr[js.Any] = js.undefined
-  /** Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number. */
+  /**
+    * Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
+    * values). The returned value is always a number.
+    */
   var maximum: js.UndefOr[js.Any] = js.undefined
-  /** Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number. */
+  /**
+    * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
+    * values). The returned value is always a number.
+    */
   var minimum: js.UndefOr[js.Any] = js.undefined
-  /** Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only. */
+  // Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
   var minorGridlines: js.UndefOr[WorkbookChartGridlines] = js.undefined
-  /** Represents the interval between two minor tick marks. 'Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number. */
+  /**
+    * Represents the interval between two minor tick marks. 'Can be set to a numeric value or an empty string (for automatic
+    * axis values). The returned value is always a number.
+    */
   var minorUnit: js.UndefOr[js.Any] = js.undefined
-  /** Represents the axis title. Read-only. */
+  // Represents the axis title. Read-only.
   var title: js.UndefOr[WorkbookChartAxisTitle] = js.undefined
 }
 

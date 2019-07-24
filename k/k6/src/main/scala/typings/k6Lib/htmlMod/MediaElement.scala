@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/html", "MediaElement")
 @js.native
 abstract class MediaElement () extends Element {
-  def textTracks(): js.Array[Element] = js.native
+  /** Contained <track> elements. */
+  def textTracks(): js.Array[TrackElement] = js.native
 }
 

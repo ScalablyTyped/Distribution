@@ -6,17 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookRangeFont extends Entity {
-  /** Represents the bold status of font. */
+  // Represents the bold status of font.
   var bold: js.UndefOr[scala.Boolean] = js.undefined
-  /** HTML color code representation of the text color. E.g. #FF0000 represents Red. */
+  // HTML color code representation of the text color. E.g. #FF0000 represents Red.
   var color: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents the italic status of the font. */
+  // Represents the italic status of the font.
   var italic: js.UndefOr[scala.Boolean] = js.undefined
-  /** Font name (e.g. 'Calibri') */
+  // Font name (e.g. 'Calibri')
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Font size. */
+  // Font size.
   var size: js.UndefOr[scala.Double] = js.undefined
-  /** Type of underline applied to the font. The possible values are: None, Single, Double, SingleAccountant, DoubleAccountant. */
+  /**
+    * Type of underline applied to the font. The possible values are: None, Single, Double, SingleAccountant,
+    * DoubleAccountant.
+    */
   var underline: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-vault
 
-Typings are for version 0.5
+Typings are for version 0.9
 
 ## Library description:
 Javascript client for HashiCorp's Vault
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for node-vault 0.5
+// Type definitions for node-vault 0.9
 // Project: https://github.com/kr1sp1n/node-vault
 // Definitions by: Jianrong Yu <https://github.com/YuJianrong>
+//                 Neil Bryson Cargamento <https://github.com/neilbryson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

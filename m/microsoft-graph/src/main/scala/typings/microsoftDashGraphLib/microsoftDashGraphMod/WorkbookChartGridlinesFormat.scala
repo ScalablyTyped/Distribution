@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartGridlinesFormat extends Entity {
-  /** Represents chart line formatting. Read-only. */
+  // Represents chart line formatting. Read-only.
   var line: js.UndefOr[WorkbookChartLineFormat] = js.undefined
 }
 

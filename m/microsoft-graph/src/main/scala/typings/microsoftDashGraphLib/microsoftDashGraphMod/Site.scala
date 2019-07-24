@@ -6,30 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Site extends BaseItem {
+  // Analytics about the view activities that took place in this site.
   var analytics: js.UndefOr[ItemAnalytics] = js.undefined
-  /** The collection of column definitions reusable across lists under this site. */
+  // The collection of column definitions reusable across lists under this site.
   var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
-  /** The collection of content types defined for this site. */
+  // The collection of content types defined for this site.
   var contentTypes: js.UndefOr[js.Array[ContentType]] = js.undefined
-  /** The full title for the site. Read-only. */
+  // The full title for the site. Read-only.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The default drive (document library) for this site. */
+  // The default drive (document library) for this site.
   var drive: js.UndefOr[Drive] = js.undefined
-  /** The collection of drives (document libraries) under this site. */
+  // The collection of drives (document libraries) under this site.
   var drives: js.UndefOr[js.Array[Drive]] = js.undefined
-  /** Used to address any item contained in this site. This collection cannot be enumerated. */
+  // Used to address any item contained in this site. This collection cannot be enumerated.
   var items: js.UndefOr[js.Array[BaseItem]] = js.undefined
-  /** The collection of lists under this site. */
+  // The collection of lists under this site.
   var lists: js.UndefOr[js.Array[List]] = js.undefined
-  /** Calls the OneNote service for notebook related operations. */
+  // Calls the OneNote service for notebook related operations.
   var onenote: js.UndefOr[Onenote] = js.undefined
-  /** If present, indicates that this is the root site in the site collection. Read-only. */
+  // If present, indicates that this is the root site in the site collection. Read-only.
   var root: js.UndefOr[Root] = js.undefined
-  /** Returns identifiers useful for SharePoint REST compatibility. Read-only. */
+  // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
-  /** Provides details about the site's site collection. Available only on the root site. Read-only. */
+  // Provides details about the site's site collection. Available only on the root site. Read-only.
   var siteCollection: js.UndefOr[SiteCollection] = js.undefined
-  /** The collection of the sub-sites under this site. */
+  // The collection of the sub-sites under this site.
   var sites: js.UndefOr[js.Array[Site]] = js.undefined
 }
 

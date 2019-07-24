@@ -6,12 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageInfo extends js.Object {
-  /** Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image */
+  /**
+    * Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
+    * For example – a high contrast image
+    */
   var addImageQuery: js.UndefOr[scala.Boolean] = js.undefined
-  /** Optional; alt-text accessible content for the image */
+  // Optional; alt-text accessible content for the image
   var alternateText: js.UndefOr[java.lang.String] = js.undefined
   var alternativeText: js.UndefOr[java.lang.String] = js.undefined
-  /** Optional; URI that points to an icon which represents the application used to generate the activity */
+  // Optional; URI that points to an icon which represents the application used to generate the activity
   var iconUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

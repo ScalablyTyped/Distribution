@@ -70,7 +70,9 @@ object tsDashMockitoMod extends js.Object {
   def `match`(expectedValue: java.lang.String): js.Any = js.native
   def `match`(expectedValue: stdLib.RegExp): js.Any = js.native
   def mock[T](): T = js.native
+  def mock[T](clazz: js.Function with js.Object): T = js.native
   def mock[T](clazz: js.Any): T = js.native
+  def mock[T](clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): T = js.native
   def notNull(): js.Any = js.native
   def objectContaining(expectedValue: js.Object): js.Any = js.native
   def reset[T](mockedValue: T): scala.Unit = js.native
@@ -87,7 +89,7 @@ object tsDashMockitoMod extends js.Object {
     @JSName("anyNumber")
     var anyNumber_Original: js.Function0[_] = js.native
     @JSName("anyOfClass")
-    var anyOfClass_Original: tsDashMockitoLib.Fn_Args = js.native
+    var anyOfClass_Original: tsDashMockitoLib.Fn_ArgsExpectedClass = js.native
     @JSName("anyString")
     var anyString_Original: js.Function0[_] = js.native
     @JSName("anything")
@@ -103,7 +105,7 @@ object tsDashMockitoMod extends js.Object {
     @JSName("match")
     var match_Original: js.Function1[/* expectedValue */ stdLib.RegExp | java.lang.String, _] = js.native
     @JSName("mock")
-    var mock_Original: tsDashMockitoLib.Fn_Clazz = js.native
+    var mock_Original: tsDashMockitoLib.Fn_Args = js.native
     @JSName("notNull")
     var notNull_Original: js.Function0[_] = js.native
     @JSName("objectContaining")
@@ -182,7 +184,9 @@ object tsDashMockitoMod extends js.Object {
     def `match`(expectedValue: java.lang.String): js.Any = js.native
     def `match`(expectedValue: stdLib.RegExp): js.Any = js.native
     def mock[T](): T = js.native
+    def mock[T](clazz: js.Function with js.Object): T = js.native
     def mock[T](clazz: js.Any): T = js.native
+    def mock[T](clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): T = js.native
     def notNull(): js.Any = js.native
     def objectContaining(expectedValue: js.Object): js.Any = js.native
     def reset[T](mockedValue: T): scala.Unit = js.native

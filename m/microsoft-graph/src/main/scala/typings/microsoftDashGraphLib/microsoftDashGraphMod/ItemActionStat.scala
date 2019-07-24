@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemActionStat extends js.Object {
+  // The number of times the action took place. Read-only.
   var actionCount: js.UndefOr[scala.Double] = js.undefined
+  // The number of distinct actors that performed the action. Read-only.
   var actorCount: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeleteUserFromSharedAppleDeviceActionResult extends DeviceActionResult {
-  /** User principal name of the user to be deleted */
+  // User principal name of the user to be deleted
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

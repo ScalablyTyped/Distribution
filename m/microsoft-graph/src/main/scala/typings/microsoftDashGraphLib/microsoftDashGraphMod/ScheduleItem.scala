@@ -6,17 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScheduleItem extends js.Object {
-  /** The date, time, and time zone that the corresponding event ends. */
+  // The date, time, and time zone that the corresponding event ends.
   var end: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional. */
+  // The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional.
   var isPrivate: js.UndefOr[scala.Boolean] = js.undefined
-  /** The location where the corresponding event is held or attended from. Optional. */
+  // The location where the corresponding event is held or attended from. Optional.
   var location: js.UndefOr[java.lang.String] = js.undefined
-  /** The date, time, and time zone that the corresponding event starts. */
+  // The date, time, and time zone that the corresponding event starts.
   var start: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The availability status of the user or resource during the corresponding event. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown. */
+  /**
+    * The availability status of the user or resource during the corresponding event. The possible values are: free,
+    * tentative, busy, oof, workingElsewhere, unknown.
+    */
   var status: js.UndefOr[FreeBusyStatus] = js.undefined
-  /** The corresponding event's subject line. Optional. */
+  // The corresponding event's subject line. Optional.
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 

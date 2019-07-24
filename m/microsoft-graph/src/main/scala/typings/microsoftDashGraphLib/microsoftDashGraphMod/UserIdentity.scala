@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserIdentity extends js.Object {
-  /** The identity's display name. Note that this may not always be available or up-to-date. */
+  // The identity's display name. Note that this may not always be available or up-to-date.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Unique identifier for the identity. */
+  // Unique identifier for the identity.
   var id: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates the client IP address used by user performing the activity (audit log only). */
+  // Indicates the client IP address used by user performing the activity (audit log only).
   var ipAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** The userPrincipalName attribute of the user. */
+  // The userPrincipalName attribute of the user.
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

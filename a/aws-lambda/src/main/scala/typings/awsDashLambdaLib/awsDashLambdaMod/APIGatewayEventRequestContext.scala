@@ -12,6 +12,7 @@ trait APIGatewayEventRequestContext extends js.Object {
   var connectedAt: js.UndefOr[scala.Double] = js.undefined
   var connectionId: js.UndefOr[java.lang.String] = js.undefined
   var domainName: js.UndefOr[java.lang.String] = js.undefined
+  var domainPrefix: js.UndefOr[java.lang.String] = js.undefined
   var eventType: js.UndefOr[java.lang.String] = js.undefined
   var extendedRequestId: js.UndefOr[java.lang.String] = js.undefined
   var httpMethod: java.lang.String
@@ -45,6 +46,7 @@ object APIGatewayEventRequestContext {
     connectedAt: scala.Int | scala.Double = null,
     connectionId: java.lang.String = null,
     domainName: java.lang.String = null,
+    domainPrefix: java.lang.String = null,
     eventType: java.lang.String = null,
     extendedRequestId: java.lang.String = null,
     messageDirection: java.lang.String = null,
@@ -57,6 +59,7 @@ object APIGatewayEventRequestContext {
     if (connectedAt != null) __obj.updateDynamic("connectedAt")(connectedAt.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId)
     if (domainName != null) __obj.updateDynamic("domainName")(domainName)
+    if (domainPrefix != null) __obj.updateDynamic("domainPrefix")(domainPrefix)
     if (eventType != null) __obj.updateDynamic("eventType")(eventType)
     if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId)
     if (messageDirection != null) __obj.updateDynamic("messageDirection")(messageDirection)

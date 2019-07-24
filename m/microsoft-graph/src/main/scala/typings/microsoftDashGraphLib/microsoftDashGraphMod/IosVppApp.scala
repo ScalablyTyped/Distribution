@@ -6,25 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosVppApp extends MobileApp {
-  /** The store URL. */
+  // The store URL.
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The applicable iOS Device Type. */
+  // The applicable iOS Device Type.
   var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
-  /** The Identity Name. */
+  // The Identity Name.
   var bundleId: js.UndefOr[java.lang.String] = js.undefined
-  /** The supported License Type. */
+  // The supported License Type.
   var licensingType: js.UndefOr[VppLicensingType] = js.undefined
-  /** The VPP application release date and time. */
+  // The VPP application release date and time.
   var releaseDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The total number of VPP licenses. */
+  // The total number of VPP licenses.
   var totalLicenseCount: js.UndefOr[scala.Double] = js.undefined
-  /** The number of VPP licenses in use. */
+  // The number of VPP licenses in use.
   var usedLicenseCount: js.UndefOr[scala.Double] = js.undefined
-  /** The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: business, education. Possible values are: business, education. */
+  /**
+    * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible
+    * values are: business, education. Possible values are: business, education.
+    */
   var vppTokenAccountType: js.UndefOr[VppTokenAccountType] = js.undefined
-  /** The Apple Id associated with the given Apple Volume Purchase Program Token. */
+  // The Apple Id associated with the given Apple Volume Purchase Program Token.
   var vppTokenAppleId: js.UndefOr[java.lang.String] = js.undefined
-  /** The organization associated with the Apple Volume Purchase Program Token */
+  // The organization associated with the Apple Volume Purchase Program Token
   var vppTokenOrganizationName: js.UndefOr[java.lang.String] = js.undefined
 }
 

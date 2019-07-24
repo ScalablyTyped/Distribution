@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GeoCoordinates extends js.Object {
-  /** Optional. The altitude (height), in feet,  above sea level for the item. Read-only. */
+  // Optional. The altitude (height), in feet, above sea level for the item. Read-only.
   var altitude: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. The latitude, in decimal, for the item. Read-only. */
+  // Optional. The latitude, in decimal, for the item. Read-only.
   var latitude: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. The longitude, in decimal, for the item. Read-only. */
+  // Optional. The longitude, in decimal, for the item. Read-only.
   var longitude: js.UndefOr[scala.Double] = js.undefined
 }
 

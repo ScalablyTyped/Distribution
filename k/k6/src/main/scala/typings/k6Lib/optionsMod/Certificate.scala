@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Certificate extends js.Object {
+  /** PEM encoded certificate. */
   var cert: java.lang.String
+  /** Domains certificate is valid for. */
   var domains: js.Array[java.lang.String]
+  /** PEM encoded certificate key. */
   var key: java.lang.String
 }
 

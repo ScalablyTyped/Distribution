@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsUpdateScheduledInstall extends WindowsUpdateInstallScheduleType {
-  /** Scheduled Install Day in week. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday. */
+  /**
+    * Scheduled Install Day in week. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday,
+    * thursday, friday, saturday.
+    */
   var scheduledInstallDay: js.UndefOr[WeeklySchedule] = js.undefined
-  /** Scheduled Install Time during day */
+  // Scheduled Install Time during day
   var scheduledInstallTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

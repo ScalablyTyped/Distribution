@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dom/test-utils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def act(callback: js.Function0[js.UndefOr[scala.Unit]]): DebugPromiseLike | js.Object = js.native
+  def act(callback: js.Function0[js.UndefOr[scala.Unit]]): DebugPromiseLike = js.native
   def createRenderer(): ShallowRenderer = js.native
   def findAllInRenderedTree(
     root: reactLib.reactMod.Component[_, js.Object, _],

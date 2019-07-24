@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GroupSetting extends Entity {
-  /** Display name of this group of settings, which comes from the associated template. */
+  // Display name of this group of settings, which comes from the associated template.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Unique identifier for the template used to create this group of settings. Read-only. */
+  // Unique identifier for the template used to create this group of settings. Read-only.
   var templateId: js.UndefOr[java.lang.String] = js.undefined
-  /** Collection of name value pairs. Must contain and set all the settings defined in the template. */
+  // Collection of name value pairs. Must contain and set all the settings defined in the template.
   var values: js.UndefOr[js.Array[SettingValue]] = js.undefined
 }
 

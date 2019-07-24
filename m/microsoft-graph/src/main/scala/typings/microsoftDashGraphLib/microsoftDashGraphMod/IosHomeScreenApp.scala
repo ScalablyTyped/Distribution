@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosHomeScreenApp extends IosHomeScreenItem {
-  /** BundleID of app */
+  // BundleID of app
   var bundleID: js.UndefOr[java.lang.String] = js.undefined
 }
 

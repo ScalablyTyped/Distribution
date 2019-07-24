@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContentTypeInfo extends js.Object {
-  /** The id of the content type. */
+  // The id of the content type.
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 

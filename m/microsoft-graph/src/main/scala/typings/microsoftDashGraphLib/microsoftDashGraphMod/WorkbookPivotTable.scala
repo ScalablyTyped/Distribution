@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookPivotTable extends Entity {
-  /** Name of the PivotTable. */
+  // Name of the PivotTable.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** The worksheet containing the current PivotTable. Read-only. */
+  // The worksheet containing the current PivotTable. Read-only.
   var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
 }
 

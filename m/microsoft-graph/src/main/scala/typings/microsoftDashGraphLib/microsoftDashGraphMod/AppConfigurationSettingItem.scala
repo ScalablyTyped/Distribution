@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppConfigurationSettingItem extends js.Object {
-  /** app configuration key. */
+  // app configuration key.
   var appConfigKey: js.UndefOr[java.lang.String] = js.undefined
-  /** app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType. */
+  // app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
   var appConfigKeyType: js.UndefOr[MdmAppConfigKeyType] = js.undefined
-  /** app configuration key value. */
+  // app configuration key value.
   var appConfigKeyValue: js.UndefOr[java.lang.String] = js.undefined
 }
 

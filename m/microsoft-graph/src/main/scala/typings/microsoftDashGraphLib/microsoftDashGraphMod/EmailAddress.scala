@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailAddress extends js.Object {
-  /** The email address of the person or entity. */
+  // The email address of the person or entity.
   var address: js.UndefOr[java.lang.String] = js.undefined
-  /** The display name of the person or entity. */
+  // The display name of the person or entity.
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

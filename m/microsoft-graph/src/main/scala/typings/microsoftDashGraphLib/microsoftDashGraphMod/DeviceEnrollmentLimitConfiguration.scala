@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceEnrollmentLimitConfiguration extends DeviceEnrollmentConfiguration {
-  /** Not yet documented */
+  // Not yet documented
   var limit: js.UndefOr[scala.Double] = js.undefined
 }
 

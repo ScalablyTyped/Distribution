@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RemoteLockActionResult extends DeviceActionResult {
-  /** Pin to unlock the client */
+  // Pin to unlock the client
   var unlockPin: js.UndefOr[java.lang.String] = js.undefined
 }
 

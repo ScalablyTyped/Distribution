@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EdgeSearchEngine extends EdgeSearchEngineBase {
-  /** Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: default, bing. */
+  /**
+    * Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: default,
+    * bing.
+    */
   var edgeSearchEngineType: js.UndefOr[EdgeSearchEngineType] = js.undefined
 }
 

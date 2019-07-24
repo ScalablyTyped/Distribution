@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- nodemailerLib.libSmtpDashConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection */ trait Options
+- nodemailerLib.libSmtpDashConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection, customAuth */ trait Options
   extends MailOptions
      with nodemailerLib.nodemailerMod.TransportOptions {
   /** defines preferred authentication method, e.g. ‘PLAIN’ */
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   var connection: js.UndefOr[nodeLib.netMod.Socket] = js.undefined
   /** how many milliseconds to wait for the connection to establish */
   var connectionTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined
+  var customAuth: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.CustomAuthenticationHandlers] = js.undefined
   /** if set to true, then logs SMTP traffic and message content, otherwise logs only transaction events */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var getSocket: js.UndefOr[
@@ -70,6 +71,7 @@ object Options {
     component: java.lang.String = null,
     connection: nodeLib.netMod.Socket = null,
     connectionTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    customAuth: nodemailerLib.libSmtpDashConnectionMod.CustomAuthenticationHandlers = null,
     date: stdLib.Date | java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     disableFileAccess: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,6 +127,7 @@ object Options {
     if (component != null) __obj.updateDynamic("component")(component)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth)
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess)

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OmaSettingDateTime extends OmaSetting {
-  /** Value. */
+  // Value.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

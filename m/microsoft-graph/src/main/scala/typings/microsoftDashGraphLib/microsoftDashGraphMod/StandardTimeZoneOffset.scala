@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StandardTimeZoneOffset extends js.Object {
-  /** Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs. */
+  // Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
   var dayOccurrence: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the day of the week when the transition from daylight saving time to standard time. */
+  // Represents the day of the week when the transition from daylight saving time to standard time.
   var dayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
-  /** Represents the month of the year when the transition from daylight saving time to standard time occurs. */
+  // Represents the month of the year when the transition from daylight saving time to standard time occurs.
   var month: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the time of day when the transition from daylight saving time to standard time occurs. */
+  // Represents the time of day when the transition from daylight saving time to standard time occurs.
   var time: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year. */
+  /**
+    * Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example,
+    * a value of 0 means every year.
+    */
   var year: js.UndefOr[scala.Double] = js.undefined
 }
 

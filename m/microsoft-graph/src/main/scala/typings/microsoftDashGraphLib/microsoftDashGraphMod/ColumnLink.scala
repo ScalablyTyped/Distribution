@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnLink extends Entity {
-  /** The name of the column  in this content type. */
+  // The name of the column in this content type.
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenoteOperation extends Operation {
-  /** The error returned by the operation. */
+  // The error returned by the operation.
   var error: js.UndefOr[OnenoteOperationError] = js.undefined
-  /** The operation percent complete if the operation is still in running status */
+  // The operation percent complete if the operation is still in running status
   var percentComplete: js.UndefOr[java.lang.String] = js.undefined
-  /** The resource id. */
+  // The resource id.
   var resourceId: js.UndefOr[java.lang.String] = js.undefined
-  /** The resource URI for the object. For example, the resource URI for a copied page or section. */
+  // The resource URI for the object. For example, the resource URI for a copied page or section.
   var resourceLocation: js.UndefOr[java.lang.String] = js.undefined
 }
 

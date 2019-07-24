@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResetPasscodeActionResult extends DeviceActionResult {
-  /** Newly generated passcode for the device */
+  // Newly generated passcode for the device
   var passcode: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -10,6 +10,9 @@ trait reactDashStripeDashElementsLibProps {
   def CardCVCElementProps: reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps.type = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   type CardCVCElementProps = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   @scala.inline
+  def CardCvcElementProps: reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps.type = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
+  type CardCvcElementProps = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
+  @scala.inline
   def CardElementProps: reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps.type = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   type CardElementProps = reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   @scala.inline

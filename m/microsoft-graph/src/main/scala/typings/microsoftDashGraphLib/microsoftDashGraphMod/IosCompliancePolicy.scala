@@ -6,33 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosCompliancePolicy extends DeviceCompliancePolicy {
-  /** Require that devices have enabled device threat protection . */
+  // Require that devices have enabled device threat protection .
   var deviceThreatProtectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured, low, medium, high, notSet. */
+  /**
+    * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
+    * low, medium, high, notSet.
+    */
   var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
-  /** Indicates whether or not to require a managed email profile. */
+  // Indicates whether or not to require a managed email profile.
   var managedEmailProfileRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Maximum IOS version. */
+  // Maximum IOS version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum IOS version. */
+  // Minimum IOS version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether or not to block simple passcodes. */
+  // Indicates whether or not to block simple passcodes.
   var passcodeBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the passcode expires. Valid values 1 to 65535 */
+  // Number of days before the passcode expires. Valid values 1 to 65535
   var passcodeExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passcodeMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passcode. Valid values 4 to 14 */
+  // Minimum length of passcode. Valid values 4 to 14
   var passcodeMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a passcode is required. */
+  // Minutes of inactivity before a passcode is required.
   var passcodeMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passcodes to block. Valid values 1 to 24 */
+  // Number of previous passcodes to block. Valid values 1 to 24
   var passcodePreviousPasscodeBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to require a passcode. */
+  // Indicates whether or not to require a passcode.
   var passcodeRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** The required passcode type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required passcode type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passcodeRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Devices must not be jailbroken or rooted. */
+  // Devices must not be jailbroken or rooted.
   var securityBlockJailbrokenDevices: js.UndefOr[scala.Boolean] = js.undefined
 }
 

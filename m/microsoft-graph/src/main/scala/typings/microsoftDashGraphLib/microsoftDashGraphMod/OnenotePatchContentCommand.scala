@@ -6,16 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenotePatchContentCommand extends js.Object {
-  /** The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend. */
+  // The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend.
   var action: js.UndefOr[OnenotePatchActionType] = js.undefined
   /**
-    * A string of well-formed HTML to add to the page, and any image or file binary data.
-    * If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
+    * A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary
+    * data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     */
   var content: js.UndefOr[java.lang.String] = js.undefined
-  /** The location to add the supplied content, relative to the target element. The possible values are: after (default) or before. */
+  /**
+    * The location to add the supplied content, relative to the target element. The possible values are: after (default) or
+    * before.
+    */
   var position: js.UndefOr[OnenotePatchInsertPosition] = js.undefined
-  /** The element to update. Must be the #&amp;lt;data-id&amp;gt; or the generated &amp;lt;id&amp;gt; of the element, or the body or title keyword. */
+  /**
+    * The element to update. Must be the #&amp;lt;data-id&amp;gt; or the generated &amp;lt;id&amp;gt; of the element, or the
+    * body or title keyword.
+    */
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 

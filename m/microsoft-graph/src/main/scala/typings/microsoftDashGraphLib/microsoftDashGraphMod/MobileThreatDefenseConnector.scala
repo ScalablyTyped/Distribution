@@ -6,21 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileThreatDefenseConnector extends Entity {
-  /** For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant */
+  // For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   var androidDeviceBlockedOnMissingPartnerData: js.UndefOr[scala.Boolean] = js.undefined
-  /** For Android, set whether data from the data sync partner should be used during compliance evaluations */
+  // For Android, set whether data from the data sync partner should be used during compliance evaluations
   var androidEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant */
+  // For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   var iosDeviceBlockedOnMissingPartnerData: js.UndefOr[scala.Boolean] = js.undefined
-  /** For IOS, get or set whether data from the data sync partner should be used during compliance evaluations */
+  // For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
   var iosEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** DateTime of last Heartbeat recieved from the Data Sync Partner */
+  // DateTime of last Heartbeat recieved from the Data Sync Partner
   var lastHeartbeatDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Data Sync Partner state for this account. Possible values are: unavailable, available, enabled, unresponsive. */
+  // Data Sync Partner state for this account. Possible values are: unavailable, available, enabled, unresponsive.
   var partnerState: js.UndefOr[MobileThreatPartnerTenantState] = js.undefined
-  /** Get or Set days the per tenant tolerance to unresponsiveness for this partner integration */
+  // Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   var partnerUnresponsivenessThresholdInDays: js.UndefOr[scala.Double] = js.undefined
-  /** Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner */
+  /**
+    * Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the
+    * Data Sync Partner
+    */
   var partnerUnsupportedOsVersionBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

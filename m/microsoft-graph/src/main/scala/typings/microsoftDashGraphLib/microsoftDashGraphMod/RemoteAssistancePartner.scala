@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RemoteAssistancePartner extends Entity {
-  /** Display name of the partner. */
+  // Display name of the partner.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Timestamp of the last request sent to Intune by the TEM partner. */
+  // Timestamp of the last request sent to Intune by the TEM partner.
   var lastConnectionDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** TBD. Possible values are: notOnboarded, onboarding, onboarded. */
+  // TBD. Possible values are: notOnboarded, onboarding, onboarded.
   var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.undefined
-  /** URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service. */
+  // URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
   var onboardingUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

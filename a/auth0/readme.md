@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0
 
-Typings are for version 2.9.3
+Typings are for version 2.9.4
 
 ## Library description:
 SDK for Auth0 API v2
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for auth0 2.9.3
+// Type definitions for auth0 2.9.4
 // Project: https://github.com/auth0/node-auth0
 // Definitions by: Seth Westphal <https://github.com/westy92>
 //                 Ian Howe <https://github.com/ianhowe76>

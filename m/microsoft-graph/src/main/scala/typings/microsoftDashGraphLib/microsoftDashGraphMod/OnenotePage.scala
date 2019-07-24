@@ -6,28 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenotePage extends OnenoteEntitySchemaObjectModel {
-  /** The page's HTML content. */
+  // The page's HTML content.
   var content: js.UndefOr[js.Any] = js.undefined
-  /** The URL for the page's HTML content.  Read-only. */
+  // The URL for the page's HTML content. Read-only.
   var contentUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier of the application that created the page. Read-only. */
+  // The unique identifier of the application that created the page. Read-only.
   var createdByAppId: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
+    * '2014-01-01T00:00:00Z'. Read-only.
     */
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The indentation level of the page. Read-only. */
+  // The indentation level of the page. Read-only.
   var level: js.UndefOr[scala.Double] = js.undefined
-  /** Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed. The oneNoteWebUrl link opens the page in OneNote Online. Read-only. */
+  /**
+    * Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed.
+    * The oneNoteWebUrl link opens the page in OneNote on the web. Read-only.
+    */
   var links: js.UndefOr[PageLinks] = js.undefined
-  /** The order of the page within its parent section. Read-only. */
+  // The order of the page within its parent section. Read-only.
   var order: js.UndefOr[scala.Double] = js.undefined
-  /** The notebook that contains the page.  Read-only. */
+  // The notebook that contains the page. Read-only.
   var parentNotebook: js.UndefOr[Notebook] = js.undefined
-  /** The section that contains the page. Read-only. */
+  // The section that contains the page. Read-only.
   var parentSection: js.UndefOr[OnenoteSection] = js.undefined
-  /** The title of the page. */
+  // The title of the page.
   var title: js.UndefOr[java.lang.String] = js.undefined
   var userTags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }

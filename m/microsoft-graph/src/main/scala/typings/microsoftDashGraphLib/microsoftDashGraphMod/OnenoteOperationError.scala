@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenoteOperationError extends js.Object {
-  /** The error code. */
+  // The error code.
   var code: js.UndefOr[java.lang.String] = js.undefined
-  /** The error message. */
+  // The error message.
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileHash extends js.Object {
-  /** File hash type. Possible values are: unknown, sha1, sha256, md5, authenticodeHash256, lsHash, ctph, peSha1, peSha256. */
+  // File hash type. Possible values are: unknown, sha1, sha256, md5, authenticodeHash256, lsHash, ctph, peSha1, peSha256.
   var hashType: js.UndefOr[FileHashType] = js.undefined
-  /** Value of the file hash. */
+  // Value of the file hash.
   var hashValue: js.UndefOr[java.lang.String] = js.undefined
 }
 

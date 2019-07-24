@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Thumbnail extends js.Object {
-  /** The content stream for the thumbnail. */
+  // The content stream for the thumbnail.
   var content: js.UndefOr[js.Any] = js.undefined
-  /** The height of the thumbnail, in pixels. */
+  // The height of the thumbnail, in pixels.
   var height: js.UndefOr[scala.Double] = js.undefined
-  /** The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested. */
+  /**
+    * The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is
+    * requested.
+    */
   var sourceItemId: js.UndefOr[java.lang.String] = js.undefined
-  /** The URL used to fetch the thumbnail content. */
+  // The URL used to fetch the thumbnail content.
   var url: js.UndefOr[java.lang.String] = js.undefined
-  /** The width of the thumbnail, in pixels. */
+  // The width of the thumbnail, in pixels.
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -6,43 +6,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnDefinition extends Entity {
-  /** This column stores boolean values. */
+  // This column stores boolean values.
   var boolean: js.UndefOr[BooleanColumn] = js.undefined
-  /** This column's data is calculated based on other columns. */
+  // This column's data is calculated based on other columns.
   var calculated: js.UndefOr[CalculatedColumn] = js.undefined
-  /** This column stores data from a list of choices. */
+  // This column stores data from a list of choices.
   var choice: js.UndefOr[ChoiceColumn] = js.undefined
-  /** For site columns, the name of the group this column belongs to. Helps organize related columns. */
+  // For site columns, the name of the group this column belongs to. Helps organize related columns.
   var columnGroup: js.UndefOr[java.lang.String] = js.undefined
-  /** This column stores currency values. */
+  // This column stores currency values.
   var currency: js.UndefOr[CurrencyColumn] = js.undefined
-  /** This column stores DateTime values. */
+  // This column stores DateTime values.
   var dateTime: js.UndefOr[DateTimeColumn] = js.undefined
-  /** The default value for this column. */
+  // The default value for this column.
   var defaultValue: js.UndefOr[DefaultColumnValue] = js.undefined
-  /** The user-facing description of the column. */
+  // The user-facing description of the column.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The user-facing name of the column. */
+  // The user-facing name of the column.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** If true, no two list items may have the same value for this column. */
+  // If true, no two list items may have the same value for this column.
   var enforceUniqueValues: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies whether the column is displayed in the user interface. */
+  // Specifies whether the column is displayed in the user interface.
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies whether the column values can used for sorting and searching. */
+  // Specifies whether the column values can used for sorting and searching.
   var indexed: js.UndefOr[scala.Boolean] = js.undefined
-  /** This column's data is looked up from another source in the site. */
+  // This column's data is looked up from another source in the site.
   var lookup: js.UndefOr[LookupColumn] = js.undefined
-  /** The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see displayName. */
+  /**
+    * The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see
+    * displayName.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** This column stores number values. */
+  // This column stores number values.
   var number: js.UndefOr[NumberColumn] = js.undefined
-  /** This column stores Person or Group values. */
+  // This column stores Person or Group values.
   var personOrGroup: js.UndefOr[PersonOrGroupColumn] = js.undefined
-  /** Specifies whether the column values can be modified. */
+  // Specifies whether the column values can be modified.
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies whether the column value is not optional. */
+  // Specifies whether the column value is not optional.
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  /** This column stores text values. */
+  // This column stores text values.
   var text: js.UndefOr[TextColumn] = js.undefined
 }
 

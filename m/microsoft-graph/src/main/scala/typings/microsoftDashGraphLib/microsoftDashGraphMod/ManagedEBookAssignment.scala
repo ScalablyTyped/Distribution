@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedEBookAssignment extends Entity {
-  /** The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment. */
+  // The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment.
   var installIntent: js.UndefOr[InstallIntent] = js.undefined
-  /** The assignment target for eBook. */
+  // The assignment target for eBook.
   var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
 }
 

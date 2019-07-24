@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileSystemInfo extends js.Object {
-  /** The UTC date and time the file was created on a client. */
+  // The UTC date and time the file was created on a client.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The UTC date and time the file was last accessed. Available for the recent file list only. */
+  // The UTC date and time the file was last accessed. Available for the recent file list only.
   var lastAccessedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The UTC date and time the file was last modified on a client. */
+  // The UTC date and time the file was last modified on a client.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

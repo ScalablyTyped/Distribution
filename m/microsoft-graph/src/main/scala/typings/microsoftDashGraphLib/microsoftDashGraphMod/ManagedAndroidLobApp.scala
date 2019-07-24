@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAndroidLobApp extends ManagedMobileLobApp {
-  /** The value for the minimum applicable operating system. */
+  // The value for the minimum applicable operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[AndroidMinimumOperatingSystem] = js.undefined
-  /** The package identifier. */
+  // The package identifier.
   var packageId: js.UndefOr[java.lang.String] = js.undefined
-  /** The version code of managed Android Line of Business (LoB) app. */
+  // The version code of managed Android Line of Business (LoB) app.
   var versionCode: js.UndefOr[java.lang.String] = js.undefined
-  /** The version name of managed Android Line of Business (LoB) app. */
+  // The version name of managed Android Line of Business (LoB) app.
   var versionName: js.UndefOr[java.lang.String] = js.undefined
 }
 

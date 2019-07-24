@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAsyncMod {
-  type Async[T] = reactLib.reactMod.Component[AsyncProps[T], AsyncState[T], js.Any]
   type AsyncAction[T] = Start | Cancel | Fulfill[T] | Reject
   type AsyncChildren[T] = (js.Function1[/* state */ AsyncState[T], reactLib.reactMod.Global.JSXNs.Element]) | reactLib.reactMod.Global.JSXNs.Element
   type AsyncFulfilled[T] = AbstractState[T] with reactDashAsyncLib.Anon_DataErrorFalse[T]

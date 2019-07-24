@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartAreaFormat extends Entity {
-  /** Represents the fill format of an object, which includes background formatting information. Read-only. */
+  // Represents the fill format of an object, which includes background formatting information. Read-only.
   var fill: js.UndefOr[WorkbookChartFill] = js.undefined
-  /** Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only. */
+  // Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
   var font: js.UndefOr[WorkbookChartFont] = js.undefined
 }
 

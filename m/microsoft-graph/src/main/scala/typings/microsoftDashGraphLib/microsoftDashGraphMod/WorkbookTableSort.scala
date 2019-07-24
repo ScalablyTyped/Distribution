@@ -6,11 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookTableSort extends Entity {
-  /** Represents the current conditions used to last sort the table. Read-only. */
+  // Represents the current conditions used to last sort the table. Read-only.
   var fields: js.UndefOr[js.Array[WorkbookSortField]] = js.undefined
-  /** Represents whether the casing impacted the last sort of the table. Read-only. */
+  // Represents whether the casing impacted the last sort of the table. Read-only.
   var matchCase: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only. */
+  /**
+    * Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount.
+    * Read-only.
+    */
   var method: js.UndefOr[java.lang.String] = js.undefined
 }
 

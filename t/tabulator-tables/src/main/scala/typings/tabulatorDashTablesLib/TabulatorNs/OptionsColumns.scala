@@ -44,6 +44,8 @@ trait OptionsColumns extends js.Object {
   var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
   /** The default placeholder text used for input elements can be set using the headerFilterPlaceholder option in the table definition */
   var headerFilterPlaceholder: js.UndefOr[java.lang.String] = js.undefined
+  /**By setting the headerVisible option to false you can hide the column headers and present the table as a simple list if needed. */
+  var headerVisible: js.UndefOr[scala.Boolean] = js.undefined
   /** By default Tabulator will use the fitData layout mode, which will resize the tables columns to fit the data held in each column, unless you specify a width or minWidth in the column constructor. If the width of all columns exceeds the width of the containing element, a scroll bar will appear. */
   var layout: js.UndefOr[
     tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitData | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitColumns | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitDataFill
@@ -57,6 +59,8 @@ trait OptionsColumns extends js.Object {
     * Set to false to disable nested data parsing
     */
   var nestedFieldSeparator: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+  /**If you don't want to show a particular column in the print table you can set the print property in its column definition object to false */
+  var print: js.UndefOr[scala.Boolean] = js.undefined
   /** By default it is possible to manually resize columns by dragging the borders of the column in both the column headers and the cells of the column.
     If you want to alter this behaviour you can use the resizableColumns to choose where the resize handles are available.  */
   var resizableColumns: js.UndefOr[
@@ -109,10 +113,12 @@ object OptionsColumns {
     columnVisibilityChanged: (/* column */ ColumnComponent, /* visible */ scala.Boolean) => scala.Unit = null,
     columns: js.Array[ColumnDefinition] = null,
     headerFilterPlaceholder: java.lang.String = null,
+    headerVisible: js.UndefOr[scala.Boolean] = js.undefined,
     layout: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitData | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitColumns | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitDataFill = null,
     layoutColumnsOnNewData: js.UndefOr[scala.Boolean] = js.undefined,
     movableColumns: js.UndefOr[scala.Boolean] = js.undefined,
     nestedFieldSeparator: java.lang.String | scala.Boolean = null,
+    print: js.UndefOr[scala.Boolean] = js.undefined,
     resizableColumns: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.header | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.cell = null,
     responsiveLayout: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.hide | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.collapse = null,
     responsiveLayoutCollapseFormatter: /* data */ js.Array[_] => _ = null,
@@ -134,10 +140,12 @@ object OptionsColumns {
     if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder)
+    if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (!js.isUndefined(layoutColumnsOnNewData)) __obj.updateDynamic("layoutColumnsOnNewData")(layoutColumnsOnNewData)
     if (!js.isUndefined(movableColumns)) __obj.updateDynamic("movableColumns")(movableColumns)
     if (nestedFieldSeparator != null) __obj.updateDynamic("nestedFieldSeparator")(nestedFieldSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
     if (resizableColumns != null) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
     if (responsiveLayout != null) __obj.updateDynamic("responsiveLayout")(responsiveLayout.asInstanceOf[js.Any])
     if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(js.Any.fromFunction1(responsiveLayoutCollapseFormatter))

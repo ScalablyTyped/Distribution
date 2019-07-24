@@ -6,29 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SharedPCConfiguration extends DeviceConfiguration {
-  /** Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false. */
+  // Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.
   var accountManagerPolicy: js.UndefOr[SharedPCAccountManagerPolicy] = js.undefined
-  /** Specifies whether local storage is allowed on a shared PC. */
+  // Specifies whether local storage is allowed on a shared PC.
   var allowLocalStorage: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates which type of accounts are allowed to use on a shared PC. Possible values are: guest, domain. */
+  // Indicates which type of accounts are allowed to use on a shared PC. Possible values are: guest, domain.
   var allowedAccounts: js.UndefOr[SharedPCAllowedAccountType] = js.undefined
-  /** Disables the account manager for shared PC mode. */
+  // Disables the account manager for shared PC mode.
   var disableAccountManager: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. */
+  /**
+    * Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and
+    * later, this policy will be applied without setting Enabled to true.
+    */
   var disableEduPolicies: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies whether the default shared PC power policies should be disabled. */
+  // Specifies whether the default shared PC power policies should be disabled.
   var disablePowerPolicies: js.UndefOr[scala.Boolean] = js.undefined
-  /** Disables the requirement to sign in whenever the device wakes up from sleep mode. */
+  // Disables the requirement to sign in whenever the device wakes up from sleep mode.
   var disableSignInOnResume: js.UndefOr[scala.Boolean] = js.undefined
-  /** Enables shared PC mode and applies the shared pc policies. */
+  // Enables shared PC mode and applies the shared pc policies.
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring. */
+  /**
+    * Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents
+    * the sleep timeout from occurring.
+    */
   var idleTimeBeforeSleepInSeconds: js.UndefOr[scala.Double] = js.undefined
-  /** Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set. */
+  /**
+    * Specifies the display text for the account shown on the sign-in screen which launches the app specified by
+    * SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.
+    */
   var kioskAppDisplayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Specifies the application user model ID of the app to use with assigned access. */
+  // Specifies the application user model ID of the app to use with assigned access.
   var kioskAppUserModelId: js.UndefOr[java.lang.String] = js.undefined
-  /** Specifies the daily start time of maintenance hour. */
+  // Specifies the daily start time of maintenance hour.
   var maintenanceStartTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-stripe-elements
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 React components for Stripe.js and Stripe Elements
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-stripe-elements 1.1
+// Type definitions for react-stripe-elements 1.2
 // Project: https://github.com/stripe/react-stripe-elements#readme
 // Definitions by: dan-j <https://github.com/dan-j>
 //                 Santiago Doldan <https://github.com/santiagodoldan>
@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Thomas Chia <https://github.com/thchia>
 //                 Piotr Dabrowski <https://github.com/yhnavein>
 //                 Victor Irzak <https://github.com/virzak>
+//                 Alex Price <https://github.com/remotealex>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

@@ -6,12 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SharingInvitation extends js.Object {
-  /** The email address provided for the recipient of the sharing invitation. Read-only. */
+  // The email address provided for the recipient of the sharing invitation. Read-only.
   var email: js.UndefOr[java.lang.String] = js.undefined
-  /** Provides information about who sent the invitation that created this permission, if that information is available. Read-only. */
+  /**
+    * Provides information about who sent the invitation that created this permission, if that information is available.
+    * Read-only.
+    */
   var invitedBy: js.UndefOr[IdentitySet] = js.undefined
   var redeemedBy: js.UndefOr[java.lang.String] = js.undefined
-  /** If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only. */
+  // If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
   var signInRequired: js.UndefOr[scala.Boolean] = js.undefined
 }
 

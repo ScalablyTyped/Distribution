@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsSrvRecord extends DomainDnsRecord {
-  /** Value to use when configuring the Target property of the SRV record at the DNS host. */
+  // Value to use when configuring the Target property of the SRV record at the DNS host.
   var nameTarget: js.UndefOr[java.lang.String] = js.undefined
-  /** Value to use when configuring the port property of the SRV record at the DNS host. */
+  // Value to use when configuring the port property of the SRV record at the DNS host.
   var port: js.UndefOr[scala.Double] = js.undefined
-  /** Value to use when configuring the priority property of the SRV record at the DNS host. */
+  // Value to use when configuring the priority property of the SRV record at the DNS host.
   var priority: js.UndefOr[scala.Double] = js.undefined
-  /** Value to use when configuring the protocol property of the SRV record at the DNS host. */
+  // Value to use when configuring the protocol property of the SRV record at the DNS host.
   var protocol: js.UndefOr[java.lang.String] = js.undefined
-  /** Value to use when configuring the service property of the SRV record at the DNS host. */
+  // Value to use when configuring the service property of the SRV record at the DNS host.
   var service: js.UndefOr[java.lang.String] = js.undefined
-  /** Value to use when configuring the weight property of the SRV record at the DNS host. */
+  // Value to use when configuring the weight property of the SRV record at the DNS host.
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 

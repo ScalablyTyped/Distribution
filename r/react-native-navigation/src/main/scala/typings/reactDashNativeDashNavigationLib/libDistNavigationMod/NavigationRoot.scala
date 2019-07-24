@@ -25,7 +25,7 @@ class NavigationRoot () extends js.Object {
   /**
     * Constants coming from native
     */
-  def constants(): js.Promise[_] = js.native
+  def constants(): js.Promise[reactDashNativeDashNavigationLib.libDistAdaptersConstantsMod.NavigationConstants] = js.native
   /**
     * Dismiss all Modals
     */

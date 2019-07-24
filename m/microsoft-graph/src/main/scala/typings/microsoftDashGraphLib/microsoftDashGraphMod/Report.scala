@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Report extends js.Object {
-  /** Not yet documented */
+  // Not yet documented
   var content: js.UndefOr[js.Any] = js.undefined
 }
 

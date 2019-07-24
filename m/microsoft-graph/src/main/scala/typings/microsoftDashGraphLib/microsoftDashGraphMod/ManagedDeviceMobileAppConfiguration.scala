@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedDeviceMobileAppConfiguration extends Entity {
-  /** The list of group assignemenets for app configration. */
+  // The list of group assignemenets for app configration.
   var assignments: js.UndefOr[js.Array[ManagedDeviceMobileAppConfigurationAssignment]] = js.undefined
-  /** DateTime the object was created. */
+  // DateTime the object was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Admin provided description of the Device Configuration. */
+  // Admin provided description of the Device Configuration.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** App configuration device status summary. */
+  // App configuration device status summary.
   var deviceStatusSummary: js.UndefOr[ManagedDeviceMobileAppConfigurationDeviceSummary] = js.undefined
-  /** List of ManagedDeviceMobileAppConfigurationDeviceStatus. */
+  // List of ManagedDeviceMobileAppConfigurationDeviceStatus.
   var deviceStatuses: js.UndefOr[js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus]] = js.undefined
-  /** Admin provided name of the device configuration. */
+  // Admin provided name of the device configuration.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime the object was last modified. */
+  // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** the associated app. */
+  // the associated app.
   var targetedMobileApps: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** App configuration user status summary. */
+  // App configuration user status summary.
   var userStatusSummary: js.UndefOr[ManagedDeviceMobileAppConfigurationUserSummary] = js.undefined
-  /** List of ManagedDeviceMobileAppConfigurationUserStatus. */
+  // List of ManagedDeviceMobileAppConfigurationUserStatus.
   var userStatuses: js.UndefOr[js.Array[ManagedDeviceMobileAppConfigurationUserStatus]] = js.undefined
-  /** Version of the device configuration. */
+  // Version of the device configuration.
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 

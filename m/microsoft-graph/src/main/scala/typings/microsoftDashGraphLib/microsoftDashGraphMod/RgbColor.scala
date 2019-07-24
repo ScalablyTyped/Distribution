@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RgbColor extends js.Object {
-  /** Blue value */
+  // Blue value
   var b: js.UndefOr[scala.Double] = js.undefined
-  /** Green value */
+  // Green value
   var g: js.UndefOr[scala.Double] = js.undefined
-  /** Red value */
+  // Red value
   var r: js.UndefOr[scala.Double] = js.undefined
 }
 

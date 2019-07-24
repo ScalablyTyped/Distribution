@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserInstallStateSummary extends Entity {
-  /** The install state of the eBook. */
+  // The install state of the eBook.
   var deviceStates: js.UndefOr[js.Array[DeviceInstallState]] = js.undefined
-  /** Failed Device Count. */
+  // Failed Device Count.
   var failedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Installed Device Count. */
+  // Installed Device Count.
   var installedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Not installed device count. */
+  // Not installed device count.
   var notInstalledDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** User name. */
+  // User name.
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 

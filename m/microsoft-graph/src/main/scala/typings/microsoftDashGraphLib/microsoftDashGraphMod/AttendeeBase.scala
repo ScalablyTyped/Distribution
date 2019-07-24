@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AttendeeBase extends Recipient {
-  /** The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person, findMeetingTimes always considers the person is of the Required type. */
+  /**
+    * The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person,
+    * findMeetingTimes always considers the person is of the Required type.
+    */
   var `type`: js.UndefOr[AttendeeType] = js.undefined
 }
 

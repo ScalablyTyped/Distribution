@@ -6,17 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SectionGroup extends OnenoteEntityHierarchyModel {
-  /** The notebook that contains the section group. Read-only. */
+  // The notebook that contains the section group. Read-only.
   var parentNotebook: js.UndefOr[Notebook] = js.undefined
-  /** The section group that contains the section group. Read-only. */
+  // The section group that contains the section group. Read-only.
   var parentSectionGroup: js.UndefOr[SectionGroup] = js.undefined
-  /** The section groups in the section. Read-only. Nullable. */
+  // The section groups in the section. Read-only. Nullable.
   var sectionGroups: js.UndefOr[js.Array[SectionGroup]] = js.undefined
-  /** The URL for the sectionGroups navigation property, which returns all the section groups in the section group. Read-only. */
+  /**
+    * The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
+    * Read-only.
+    */
   var sectionGroupsUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The sections in the section group. Read-only. Nullable. */
+  // The sections in the section group. Read-only. Nullable.
   var sections: js.UndefOr[js.Array[OnenoteSection]] = js.undefined
-  /** The URL for the sections navigation property, which returns all the sections in the section group. Read-only. */
+  // The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
   var sectionsUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

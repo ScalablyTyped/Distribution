@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EnrollmentConfigurationAssignment extends Entity {
-  /** Not yet documented */
+  // Not yet documented
   var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
 }
 

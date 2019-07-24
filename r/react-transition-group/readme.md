@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-transition-group
 
-Typings are for version 2.9
+Typings are for version 4.2
 
 ## Library description:
 A react component toolset for managing animations
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-transition-group 2.9
+// Type definitions for react-transition-group 4.2
 // Project: https://github.com/reactjs/react-transition-group
 // Definitions by: Karol Janyst <https://github.com/LKay>
 //                 Epskampie <https://github.com/Epskampie>

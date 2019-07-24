@@ -6,13 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnPremisesConditionalAccessSettings extends Entity {
-  /** Indicates if on premises conditional access is enabled for this organization */
+  // Indicates if on premises conditional access is enabled for this organization
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy. */
+  /**
+    * User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the
+    * conditional access policy.
+    */
   var excludedGroups: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access. */
+  /**
+    * User groups that will be targeted by on premises conditional access. All users in these groups will be required to have
+    * mobile device managed and compliant for mail access.
+    */
   var includedGroups: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Override the default access rule when allowing a device to ensure access is granted. */
+  // Override the default access rule when allowing a device to ensure access is granted.
   var overrideDefaultRule: js.UndefOr[scala.Boolean] = js.undefined
 }
 

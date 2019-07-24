@@ -10,7 +10,7 @@ trait OptionsDownload extends js.Object {
   var downloadComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** By default Tabulator includes column headers, row groups and column calculations in the download output.
     You can choose to remove column headers groups, row groups or column calculations from the output data by setting the values in the downloadConfig option in the table definition: */
-  var downloadConfig: js.UndefOr[tabulatorDashTablesLib.Anon_ColumnCalcsColumnGroups] = js.undefined
+  var downloadConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
   /** If you want to make any bulk changes to the table data before it is parsed into the download file you can pass a mutator function to the downloadDataFormatter option in the table definition */
   var downloadDataFormatter: js.UndefOr[js.Function1[/* data */ js.Array[_], _]] = js.undefined
   /** The downloadReady callback allows you to intercept the download file data before the users is prompted to save the file.
@@ -23,7 +23,7 @@ object OptionsDownload {
   @scala.inline
   def apply(
     downloadComplete: () => scala.Unit = null,
-    downloadConfig: tabulatorDashTablesLib.Anon_ColumnCalcsColumnGroups = null,
+    downloadConfig: AddditionalExportOptions = null,
     downloadDataFormatter: /* data */ js.Array[_] => _ = null,
     downloadReady: (/* fileContents */ js.Any, /* blob */ js.Any) => _ = null
   ): OptionsDownload = {

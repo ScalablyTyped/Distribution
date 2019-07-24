@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppPolicyDeploymentSummaryPerApp extends js.Object {
-  /** Number of users the policy is applied. */
+  // Number of users the policy is applied.
   var configurationAppliedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Deployment of an app. */
+  // Deployment of an app.
   var mobileAppIdentifier: js.UndefOr[MobileAppIdentifier] = js.undefined
 }
 

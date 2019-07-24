@@ -6,57 +6,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppProtection extends ManagedAppPolicy {
-  /** Data storage locations where a user may store managed data. */
+  // Data storage locations where a user may store managed data.
   var allowedDataStorageLocations: js.UndefOr[js.Array[ManagedAppDataStorageLocation]] = js.undefined
-  /** Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none. */
+  // Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
   var allowedInboundDataTransferSources: js.UndefOr[ManagedAppDataTransferLevel] = js.undefined
-  /** The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked. */
+  /**
+    * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps,
+    * managedAppsWithPasteIn, managedApps, blocked.
+    */
   var allowedOutboundClipboardSharingLevel: js.UndefOr[ManagedAppClipboardSharingLevel] = js.undefined
-  /** Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none. */
+  // Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
   var allowedOutboundDataTransferDestinations: js.UndefOr[ManagedAppDataTransferLevel] = js.undefined
-  /** Indicates whether contacts can be synced to the user's device. */
+  // Indicates whether contacts can be synced to the user's device.
   var contactSyncBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether the backup of a managed app's data is blocked. */
+  // Indicates whether the backup of a managed app's data is blocked.
   var dataBackupBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether device compliance is required. */
+  // Indicates whether device compliance is required.
   var deviceComplianceRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether use of the app pin is required if the device pin is set. */
+  // Indicates whether use of the app pin is required if the device pin is set.
   var disableAppPinIfDevicePinIsSet: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. */
+  // Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
   var fingerprintBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether internet links should be opened in the managed browser app. */
+  // Indicates whether internet links should be opened in the managed browser app.
   var managedBrowserToOpenLinksRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped. */
+  // Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
   var maximumPinRetries: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum pin length required for an app-level pin if PinRequired is set to True */
+  // Minimum pin length required for an app-level pin if PinRequired is set to True
   var minimumPinLength: js.UndefOr[scala.Double] = js.undefined
-  /** Versions less than the specified version will block the managed app from accessing company data. */
+  // Versions less than the specified version will block the managed app from accessing company data.
   var minimumRequiredAppVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Versions less than the specified version will block the managed app from accessing company data. */
+  // Versions less than the specified version will block the managed app from accessing company data.
   var minimumRequiredOsVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Versions less than the specified version will result in warning message on the managed app. */
+  // Versions less than the specified version will result in warning message on the managed app.
   var minimumWarningAppVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Versions less than the specified version will result in warning message on the managed app from accessing company data. */
+  // Versions less than the specified version will result in warning message on the managed app from accessing company data.
   var minimumWarningOsVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether organizational credentials are required for app use. */
+  // Indicates whether organizational credentials are required for app use.
   var organizationalCredentialsRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** TimePeriod before the all-level pin must be reset if PinRequired is set to True. */
+  // TimePeriod before the all-level pin must be reset if PinRequired is set to True.
   var periodBeforePinReset: js.UndefOr[java.lang.String] = js.undefined
-  /** The period after which access is checked when the device is not connected to the internet. */
+  // The period after which access is checked when the device is not connected to the internet.
   var periodOfflineBeforeAccessCheck: js.UndefOr[java.lang.String] = js.undefined
-  /** The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped. */
+  // The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
   var periodOfflineBeforeWipeIsEnforced: js.UndefOr[java.lang.String] = js.undefined
-  /** The period after which access is checked when the device is connected to the internet. */
+  // The period after which access is checked when the device is connected to the internet.
   var periodOnlineBeforeAccessCheck: js.UndefOr[java.lang.String] = js.undefined
-  /** Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol. */
+  /**
+    * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric,
+    * alphanumericAndSymbol.
+    */
   var pinCharacterSet: js.UndefOr[ManagedAppPinCharacterSet] = js.undefined
-  /** Indicates whether an app-level pin is required. */
+  // Indicates whether an app-level pin is required.
   var pinRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether printing is allowed from managed apps. */
+  // Indicates whether printing is allowed from managed apps.
   var printBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether users may use the 'Save As' menu item to save a copy of protected files. */
+  // Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   var saveAsBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether simplePin is blocked. */
+  // Indicates whether simplePin is blocked.
   var simplePinBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

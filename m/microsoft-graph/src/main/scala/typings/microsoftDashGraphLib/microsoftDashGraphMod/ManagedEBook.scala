@@ -6,31 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedEBook extends Entity {
-  /** The list of assignments for this eBook. */
+  // The list of assignments for this eBook.
   var assignments: js.UndefOr[js.Array[ManagedEBookAssignment]] = js.undefined
-  /** The date and time when the eBook file was created. */
+  // The date and time when the eBook file was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Description. */
+  // Description.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of installation states for this eBook. */
+  // The list of installation states for this eBook.
   var deviceStates: js.UndefOr[js.Array[DeviceInstallState]] = js.undefined
-  /** Name of the eBook. */
+  // Name of the eBook.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The more information Url. */
+  // The more information Url.
   var informationUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** Mobile App Install Summary. */
+  // Mobile App Install Summary.
   var installSummary: js.UndefOr[EBookInstallSummary] = js.undefined
-  /** Book cover. */
+  // Book cover.
   var largeCover: js.UndefOr[MimeContent] = js.undefined
-  /** The date and time when the eBook was last modified. */
+  // The date and time when the eBook was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The privacy statement Url. */
+  // The privacy statement Url.
   var privacyInformationUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The date and time when the eBook was published. */
+  // The date and time when the eBook was published.
   var publishedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Publisher. */
+  // Publisher.
   var publisher: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of installation states for this eBook. */
+  // The list of installation states for this eBook.
   var userStateSummary: js.UndefOr[js.Array[UserInstallStateSummary]] = js.undefined
 }
 

@@ -7,88 +7,101 @@ import scala.scalajs.js.annotation._
 
 trait Windows10EndpointProtectionConfiguration extends DeviceConfiguration {
   /**
-    * Enables the Admin to choose what types of app to allow on devices.
-    * Possible values are: notConfigured, enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker, auditComponentsStoreAppsAndSmartlocker.
+    * Enables the Admin to choose what types of app to allow on devices. Possible values are: notConfigured,
+    * enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker,
+    * auditComponentsStoreAppsAndSmartlocker.
     */
   var appLockerApplicationControl: js.UndefOr[AppLockerApplicationControlType] = js.undefined
-  /** Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.) */
+  // Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
   var applicationGuardAllowPersistence: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allow printing to Local Printers from Container */
+  // Allow printing to Local Printers from Container
   var applicationGuardAllowPrintToLocalPrinters: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allow printing to Network Printers from Container */
+  // Allow printing to Network Printers from Container
   var applicationGuardAllowPrintToNetworkPrinters: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allow printing to PDF from Container */
+  // Allow printing to PDF from Container
   var applicationGuardAllowPrintToPDF: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allow printing to XPS from Container */
+  // Allow printing to XPS from Container
   var applicationGuardAllowPrintToXPS: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways.
     * Possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
     */
   var applicationGuardBlockClipboardSharing: js.UndefOr[ApplicationGuardBlockClipboardSharingType] = js.undefined
-  /** Block clipboard to transfer image file, text file or neither of them. Possible values are: notConfigured, blockImageAndTextFile, blockImageFile, blockNone, blockTextFile. */
+  /**
+    * Block clipboard to transfer image file, text file or neither of them. Possible values are: notConfigured,
+    * blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
+    */
   var applicationGuardBlockFileTransfer: js.UndefOr[ApplicationGuardBlockFileTransferType] = js.undefined
-  /** Block enterprise sites to load non-enterprise content, such as third party plug-ins */
+  // Block enterprise sites to load non-enterprise content, such as third party plug-ins
   var applicationGuardBlockNonEnterpriseContent: js.UndefOr[scala.Boolean] = js.undefined
-  /** Enable Windows Defender Application Guard */
+  // Enable Windows Defender Application Guard
   var applicationGuardEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Force auditing will persist Windows logs and events to meet security/compliance criteria
-    * (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)
+    * Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user
+    * login-logoff, use of privilege rights, software installation, system changes, etc.)
     */
   var applicationGuardForceAuditing: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allows the Admin to disable the warning prompt for other disk encryption on the user machines. */
+  // Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
   var bitLockerDisableWarningForOtherDiskEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU. */
+  // Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
   var bitLockerEnableStorageCardEncryptionOnMobile: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allows the admin to require encryption to be turned on using BitLocker. */
+  // Allows the admin to require encryption to be turned on using BitLocker.
   var bitLockerEncryptDevice: js.UndefOr[scala.Boolean] = js.undefined
-  /** BitLocker Removable Drive Policy. */
+  // BitLocker Removable Drive Policy.
   var bitLockerRemovableDrivePolicy: js.UndefOr[BitLockerRemovableDrivePolicy] = js.undefined
-  /** List of folder paths to be added to the list of protected folders */
+  // List of folder paths to be added to the list of protected folders
   var defenderAdditionalGuardedFolders: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** List of exe files and folders to be excluded from attack surface reduction rules */
+  // List of exe files and folders to be excluded from attack surface reduction rules
   var defenderAttackSurfaceReductionExcludedPaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Xml content containing information regarding exploit protection details. */
+  // Xml content containing information regarding exploit protection details.
   var defenderExploitProtectionXml: js.UndefOr[scala.Double] = js.undefined
-  /** Name of the file from which DefenderExploitProtectionXml was obtained. */
+  // Name of the file from which DefenderExploitProtectionXml was obtained.
   var defenderExploitProtectionXmlFileName: js.UndefOr[java.lang.String] = js.undefined
-  /** List of paths to exe that are allowed to access protected folders */
+  // List of paths to exe that are allowed to access protected folders
   var defenderGuardedFoldersAllowedAppPaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Indicates whether or not to block user from overriding Exploit Protection settings. */
+  // Indicates whether or not to block user from overriding Exploit Protection settings.
   var defenderSecurityCenterBlockExploitProtectionOverride: js.UndefOr[scala.Boolean] = js.undefined
-  /** Blocks stateful FTP connections to the device */
+  // Blocks stateful FTP connections to the device
   var firewallBlockStatefulFTP: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specify how the certificate revocation list is to be enforced. Possible values are: deviceDefault, none, attempt, require. */
+  /**
+    * Specify how the certificate revocation list is to be enforced. Possible values are: deviceDefault, none, attempt,
+    * require.
+    */
   var firewallCertificateRevocationListCheckMethod: js.UndefOr[FirewallCertificateRevocationListCheckMethodType] = js.undefined
-  /** Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic */
+  // Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
   var firewallIPSecExemptionsAllowDHCP: js.UndefOr[scala.Boolean] = js.undefined
-  /** Configures IPSec exemptions to allow ICMP */
+  // Configures IPSec exemptions to allow ICMP
   var firewallIPSecExemptionsAllowICMP: js.UndefOr[scala.Boolean] = js.undefined
-  /** Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes */
+  // Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
   var firewallIPSecExemptionsAllowNeighborDiscovery: js.UndefOr[scala.Boolean] = js.undefined
-  /** Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes */
+  // Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
   var firewallIPSecExemptionsAllowRouterDiscovery: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive.
-    * This is the period after which security associations will expire and be deleted. Valid values 300 to 3600
+    * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after
+    * which security associations will expire and be deleted. Valid values 300 to 3600
     */
   var firewallIdleTimeoutForSecurityAssociationInSeconds: js.UndefOr[scala.Double] = js.undefined
-  /** If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set */
+  /**
+    * If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported
+    * authentication suites rather than the entire set
+    */
   var firewallMergeKeyingModuleSettings: js.UndefOr[scala.Boolean] = js.undefined
-  /** Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: deviceDefault, disabled, queueInbound, queueOutbound, queueBoth. */
+  /**
+    * Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: deviceDefault,
+    * disabled, queueInbound, queueOutbound, queueBoth.
+    */
   var firewallPacketQueueingMethod: js.UndefOr[FirewallPacketQueueingMethodType] = js.undefined
-  /** Select the preshared key encoding to be used. Possible values are: deviceDefault, none, utF8. */
+  // Select the preshared key encoding to be used. Possible values are: deviceDefault, none, utF8.
   var firewallPreSharedKeyEncodingMethod: js.UndefOr[FirewallPreSharedKeyEncodingMethodType] = js.undefined
-  /** Configures the firewall profile settings for domain networks */
+  // Configures the firewall profile settings for domain networks
   var firewallProfileDomain: js.UndefOr[WindowsFirewallNetworkProfile] = js.undefined
-  /** Configures the firewall profile settings for private networks */
+  // Configures the firewall profile settings for private networks
   var firewallProfilePrivate: js.UndefOr[WindowsFirewallNetworkProfile] = js.undefined
-  /** Configures the firewall profile settings for public networks */
+  // Configures the firewall profile settings for public networks
   var firewallProfilePublic: js.UndefOr[WindowsFirewallNetworkProfile] = js.undefined
-  /** Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files. */
+  // Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
   var smartScreenBlockOverrideForFiles: js.UndefOr[scala.Boolean] = js.undefined
-  /** Allows IT Admins to configure SmartScreen for Windows. */
+  // Allows IT Admins to configure SmartScreen for Windows.
   var smartScreenEnableInShell: js.UndefOr[scala.Boolean] = js.undefined
 }
 

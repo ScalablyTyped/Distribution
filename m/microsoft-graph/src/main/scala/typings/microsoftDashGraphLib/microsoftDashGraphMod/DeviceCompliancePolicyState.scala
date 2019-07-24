@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCompliancePolicyState extends Entity {
-  /** The name of the policy for this policyBase */
+  // The name of the policy for this policyBase
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Platform type that the policy applies to */
+  // Platform type that the policy applies to
   var platformType: js.UndefOr[PolicyPlatformType] = js.undefined
-  /** Count of how many setting a policy holds */
+  // Count of how many setting a policy holds
   var settingCount: js.UndefOr[scala.Double] = js.undefined
   var settingStates: js.UndefOr[js.Array[DeviceCompliancePolicySettingState]] = js.undefined
-  /** The compliance state of the policy */
+  // The compliance state of the policy
   var state: js.UndefOr[ComplianceStatus] = js.undefined
-  /** The version of the policy */
+  // The version of the policy
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 

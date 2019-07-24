@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsInformationProtectionApp extends js.Object {
-  /** If true, app is denied protection or exemption. */
+  // If true, app is denied protection or exemption.
   var denied: js.UndefOr[scala.Boolean] = js.undefined
-  /** The app's description. */
+  // The app's description.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** App display name. */
+  // App display name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The product name. */
+  // The product name.
   var productName: js.UndefOr[java.lang.String] = js.undefined
-  /** The publisher name */
+  // The publisher name
   var publisherName: js.UndefOr[java.lang.String] = js.undefined
 }
 

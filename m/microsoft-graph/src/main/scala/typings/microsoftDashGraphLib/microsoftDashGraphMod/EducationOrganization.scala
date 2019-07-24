@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationOrganization extends Entity {
-  /** Organization description. */
+  // Organization description.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Organization display name. */
+  // Organization display name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue. */
+  // Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue.
   var externalSource: js.UndefOr[EducationExternalSource] = js.undefined
 }
 

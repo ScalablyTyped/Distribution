@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChoiceColumn extends js.Object {
-  /** If true, allows custom values that aren't in the configured choices. */
+  // If true, allows custom values that aren't in the configured choices.
   var allowTextEntry: js.UndefOr[scala.Boolean] = js.undefined
-  /** The list of values available for this column. */
+  // The list of values available for this column.
   var choices: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons */
+  // How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
   var displayAs: js.UndefOr[java.lang.String] = js.undefined
 }
 

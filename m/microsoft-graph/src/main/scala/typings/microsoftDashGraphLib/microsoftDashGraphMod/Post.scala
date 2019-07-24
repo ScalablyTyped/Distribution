@@ -6,34 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Post extends OutlookItem {
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
-  /** The contents of the post. This is a default property. This property can be null. */
+  // The contents of the post. This is a default property. This property can be null.
   var body: js.UndefOr[ItemBody] = js.undefined
-  /** Unique ID of the conversation. Read-only. */
+  // Unique ID of the conversation. Read-only.
   var conversationId: js.UndefOr[java.lang.String] = js.undefined
-  /** Unique ID of the conversation thread. Read-only. */
+  // Unique ID of the conversation thread. Read-only.
   var conversationThreadId: js.UndefOr[java.lang.String] = js.undefined
-  /** The collection of open extensions defined for the post. Read-only. Nullable. */
+  // The collection of open extensions defined for the post. Read-only. Nullable.
   var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
-  /** Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property. */
+  /**
+    * Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default
+    * property.
+    */
   var from: js.UndefOr[Recipient] = js.undefined
-  /** Indicates whether the post has at least one attachment. This is a default property. */
+  // Indicates whether the post has at least one attachment. This is a default property.
   var hasAttachments: js.UndefOr[scala.Boolean] = js.undefined
-  /** Read-only. */
+  // Read-only.
   var inReplyTo: js.UndefOr[Post] = js.undefined
-  /** The collection of multi-value extended properties defined for the post. Read-only. Nullable. */
+  // The collection of multi-value extended properties defined for the post. Read-only. Nullable.
   var multiValueExtendedProperties: js.UndefOr[js.Array[MultiValueLegacyExtendedProperty]] = js.undefined
-  /** Conversation participants that were added to the thread as part of this post. */
+  // Conversation participants that were added to the thread as part of this post.
   var newParticipants: js.UndefOr[js.Array[Recipient]] = js.undefined
   /**
-    * Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
   var receivedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property. */
+  /**
+    * Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the
+    * case when Sender is not specified. This is a default property.
+    */
   var sender: js.UndefOr[Recipient] = js.undefined
-  /** The collection of single-value extended properties defined for the post. Read-only. Nullable. */
+  // The collection of single-value extended properties defined for the post. Read-only. Nullable.
   var singleValueExtendedProperties: js.UndefOr[js.Array[SingleValueLegacyExtendedProperty]] = js.undefined
 }
 

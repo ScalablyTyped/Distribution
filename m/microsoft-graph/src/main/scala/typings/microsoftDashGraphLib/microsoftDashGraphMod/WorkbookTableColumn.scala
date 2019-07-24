@@ -6,13 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookTableColumn extends Entity {
-  /** Retrieve the filter applied to the column. Read-only. */
+  // Retrieve the filter applied to the column. Read-only.
   var filter: js.UndefOr[WorkbookFilter] = js.undefined
-  /** Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only. */
+  // Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
   var index: js.UndefOr[scala.Double] = js.undefined
-  /** Returns the name of the table column. Read-only. */
+  // Returns the name of the table column. Read-only.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string. */
+  /**
+    * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
+    * that contain an error will return the error string.
+    */
   var values: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceEnrollmentPlatformRestriction extends js.Object {
-  /** Max OS version supported */
+  // Max OS version supported
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Min OS version supported */
+  // Min OS version supported
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Block personally owned devices from enrolling */
+  // Block personally owned devices from enrolling
   var personalDeviceEnrollmentBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Block the platform from enrolling */
+  // Block the platform from enrolling
   var platformBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

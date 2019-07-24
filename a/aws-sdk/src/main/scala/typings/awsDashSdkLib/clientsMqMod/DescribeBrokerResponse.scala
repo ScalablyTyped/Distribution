@@ -43,6 +43,10 @@ trait DescribeBrokerResponse extends js.Object {
     */
   var DeploymentMode: js.UndefOr[DeploymentMode] = js.undefined
   /**
+    * Encryption options for the broker.
+    */
+  var EncryptionOptions: js.UndefOr[EncryptionOptions] = js.undefined
+  /**
     * Required. The type of broker engine. Note: Currently, Amazon MQ supports only ACTIVEMQ.
     */
   var EngineType: js.UndefOr[EngineType] = js.undefined
@@ -100,6 +104,7 @@ object DescribeBrokerResponse {
     Configurations: Configurations = null,
     Created: __timestampIso8601 = null,
     DeploymentMode: DeploymentMode = null,
+    EncryptionOptions: EncryptionOptions = null,
     EngineType: EngineType = null,
     EngineVersion: __string = null,
     HostInstanceType: __string = null,
@@ -122,6 +127,7 @@ object DescribeBrokerResponse {
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations)
     if (Created != null) __obj.updateDynamic("Created")(Created)
     if (DeploymentMode != null) __obj.updateDynamic("DeploymentMode")(DeploymentMode.asInstanceOf[js.Any])
+    if (EncryptionOptions != null) __obj.updateDynamic("EncryptionOptions")(EncryptionOptions)
     if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType)

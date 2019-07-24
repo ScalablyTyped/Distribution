@@ -347,9 +347,9 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_converter: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT3` = js.native
-  val version_core: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT3` = js.native
-  val version_layers: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT3` = js.native
+  val version_converter: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT5` = js.native
+  val version_core: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT5` = js.native
+  val version_layers: atTensorflowTfjsDashNodeLib.atTensorflowTfjsDashNodeLibStrings.`1DOT2DOT5` = js.native
   val whereAsync: js.Function1[
     /* condition */ atTensorflowTfjsDashCoreLib.distTensorMod.Tensor[atTensorflowTfjsDashCoreLib.distTypesMod.Rank] | atTensorflowTfjsDashCoreLib.distTypesMod.TensorLike, 
     js.Promise[atTensorflowTfjsDashCoreLib.distTensorMod.Tensor2D]

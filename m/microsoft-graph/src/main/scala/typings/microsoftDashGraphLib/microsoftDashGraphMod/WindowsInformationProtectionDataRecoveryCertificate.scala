@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsInformationProtectionDataRecoveryCertificate extends js.Object {
-  /** Data recovery Certificate */
+  // Data recovery Certificate
   var certificate: js.UndefOr[scala.Double] = js.undefined
-  /** Data recovery Certificate description */
+  // Data recovery Certificate description
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Data recovery Certificate expiration datetime */
+  // Data recovery Certificate expiration datetime
   var expirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Data recovery Certificate subject name */
+  // Data recovery Certificate subject name
   var subjectName: js.UndefOr[java.lang.String] = js.undefined
 }
 

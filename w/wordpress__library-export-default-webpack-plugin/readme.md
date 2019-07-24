@@ -1,0 +1,45 @@
+
+# Scala.js typings for wordpress__library-export-default-webpack-plugin
+
+Typings are for version 1.3
+
+## Library description:
+Webpack plugin for exporting default property for selected libraries.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @wordpress/library-export-default-webpack-plugin |
+| Keywords           | wordpress, webpack, webpack-plugin |
+| # releases         | 13 |
+| # dependents       | 0 |
+| # downloads        | 12349 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/library-export-default-webpack-plugin/README.md)
+- [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
+- [Npm](https://www.npmjs.com/package/%40wordpress%2Flibrary-export-default-webpack-plugin)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Type definitions for @wordpress/library-export-default-webpack-plugin 1.3
+// Project: https://github.com/WordPress/gutenberg/tree/master/packages/library-export-default-webpack-plugin/README.md
+// Definitions by: Derek Sifford <https://github.com/dsifford>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 3.5
+
+```
+

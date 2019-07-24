@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SizeRange extends js.Object {
-  /** The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply. */
+  // The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
   var maximumSize: js.UndefOr[scala.Double] = js.undefined
-  /** The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply. */
+  // The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
   var minimumSize: js.UndefOr[scala.Double] = js.undefined
 }
 

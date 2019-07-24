@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookSessionInfo extends js.Object {
-  /** Id of the workbook session. */
+  // Id of the workbook session.
   var id: js.UndefOr[java.lang.String] = js.undefined
-  /** true for persistent session. false for non-persistent session (view mode) */
+  // true for persistent session. false for non-persistent session (view mode)
   var persistChanges: js.UndefOr[scala.Boolean] = js.undefined
 }
 

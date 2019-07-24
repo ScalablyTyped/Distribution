@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlannerCategoryDescriptions extends js.Object {
-  /** The label associated with Category 1 */
+  // The label associated with Category 1
   var category1: js.UndefOr[java.lang.String] = js.undefined
-  /** The label associated with Category 2 */
+  // The label associated with Category 2
   var category2: js.UndefOr[java.lang.String] = js.undefined
-  /** The label associated with Category 3 */
+  // The label associated with Category 3
   var category3: js.UndefOr[java.lang.String] = js.undefined
-  /** The label associated with Category 4 */
+  // The label associated with Category 4
   var category4: js.UndefOr[java.lang.String] = js.undefined
-  /** The label associated with Category 5 */
+  // The label associated with Category 5
   var category5: js.UndefOr[java.lang.String] = js.undefined
-  /** The label associated with Category 6 */
+  // The label associated with Category 6
   var category6: js.UndefOr[java.lang.String] = js.undefined
 }
 

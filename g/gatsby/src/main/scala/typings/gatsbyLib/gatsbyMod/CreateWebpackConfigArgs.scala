@@ -19,7 +19,7 @@ object CreateWebpackConfigArgs {
     actions: Actions,
     boundActionCreators: Actions,
     cache: gatsbyLib.Anon_Del,
-    createContentDigest: js.Function,
+    createContentDigest: /* input */ js.Any => java.lang.String,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,
     getConfig: js.Function,
@@ -39,7 +39,7 @@ object CreateWebpackConfigArgs {
     store: Store,
     tracing: Tracing
   ): CreateWebpackConfigArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, emitter = emitter, getConfig = getConfig, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, loaders = loaders, parentSpan = parentSpan, pathPrefix = pathPrefix, plugins = plugins, reporter = reporter, rules = rules, stage = stage, store = store, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId, emitter = emitter, getConfig = getConfig, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, loaders = loaders, parentSpan = parentSpan, pathPrefix = pathPrefix, plugins = plugins, reporter = reporter, rules = rules, stage = stage, store = store, tracing = tracing)
   
     __obj.asInstanceOf[CreateWebpackConfigArgs]
   }

@@ -1,6 +1,7 @@
 
 # Scala.js typings for swagger-jsdoc
 
+Typings are for version 3.0
 
 ## Library description:
 Generates swagger doc based on JSDoc
@@ -34,18 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Swagger-JSDoc
+// Type definitions for swagger-jsdoc 3.0
 // Project: https://github.com/surnet/swagger-jsdoc
 // Definitions by: Daniel Grove <https://github.com/drGrove>
+//                 Neil Bryson Cargamento <https://github.com/neilbryson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 /* =================== USAGE ===================
 
-    import * as express from "express"
-    import swaggerJSDoc = require('swagger-jsdoc');
-    const app = express()
+    import * as express from 'express';
+    import * as swaggerJSDoc  from 'swagger-jsdoc';
 
-    let options = {
+    const app = express();
+
+    const options: swaggerJSDoc.Options = {
         swaggerDefinition: {
           info: {
             title: 'Hello World',
@@ -62,7 +65,7 @@ These comments are from the typescript definitions and might be useful:
       }
     };
 
-    var spec = swaggerJSDoc(options);
+    const spec = swaggerJSDoc(options);
 
     app.get('/api-docs.json', function(req, res) {
       res.setHeader('Content-Type', 'application/json');
@@ -71,6 +74,9 @@ These comments are from the typescript definitions and might be useful:
 
  =============================================== */
 
+/**
+ * Returns validated Swagger specification in JSON format.
+ */
 
 ```
 

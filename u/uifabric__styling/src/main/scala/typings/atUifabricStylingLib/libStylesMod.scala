@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object libStylesMod extends js.Object {
   val AnimationStyles: atUifabricStylingLib.libInterfacesIAnimationStylesMod.IAnimationStyles = js.native
   val AnimationVariables: atUifabricStylingLib.libInterfacesIAnimationStylesMod.IAnimationVariables = js.native
+  val DefaultEffects: atUifabricStylingLib.libInterfacesIEffectsMod.IEffects = js.native
   val DefaultFontStyles: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
   val DefaultPalette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette = js.native
   val HighContrastSelector: atUifabricStylingLib.atUifabricStylingLibStrings.`@media screen and (-ms-high-contrast: active)` = js.native

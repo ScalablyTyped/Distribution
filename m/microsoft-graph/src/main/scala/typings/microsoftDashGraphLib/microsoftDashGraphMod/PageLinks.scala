@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PageLinks extends js.Object {
-  /** Opens the page in the OneNote native client if it's installed. */
+  // Opens the page in the OneNote native client if it's installed.
   var oneNoteClientUrl: js.UndefOr[ExternalLink] = js.undefined
-  /** Opens the page in OneNote Online. */
+  // Opens the page in OneNote on the web.
   var oneNoteWebUrl: js.UndefOr[ExternalLink] = js.undefined
 }
 

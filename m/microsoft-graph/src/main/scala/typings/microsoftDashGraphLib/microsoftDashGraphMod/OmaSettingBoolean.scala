@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OmaSettingBoolean extends OmaSetting {
-  /** Value. */
+  // Value.
   var value: js.UndefOr[scala.Boolean] = js.undefined
 }
 

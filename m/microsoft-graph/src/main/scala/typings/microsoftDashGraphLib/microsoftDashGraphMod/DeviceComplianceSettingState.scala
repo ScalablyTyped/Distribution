@@ -6,27 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceComplianceSettingState extends Entity {
-  /** The DateTime when device compliance grace period expires */
+  // The DateTime when device compliance grace period expires
   var complianceGracePeriodExpirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The Device Id that is being reported */
+  // The Device Id that is being reported
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
-  /** The device model that is being reported */
+  // The device model that is being reported
   var deviceModel: js.UndefOr[java.lang.String] = js.undefined
-  /** The Device Name that is being reported */
+  // The Device Name that is being reported
   var deviceName: js.UndefOr[java.lang.String] = js.undefined
-  /** The setting class name and property name. */
+  // The setting class name and property name.
   var setting: js.UndefOr[java.lang.String] = js.undefined
-  /** The Setting Name that is being reported */
+  // The Setting Name that is being reported
   var settingName: js.UndefOr[java.lang.String] = js.undefined
-  /** The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned. */
+  /**
+    * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant,
+    * error, conflict, notAssigned.
+    */
   var state: js.UndefOr[ComplianceStatus] = js.undefined
-  /** The User email address that is being reported */
+  // The User email address that is being reported
   var userEmail: js.UndefOr[java.lang.String] = js.undefined
-  /** The user Id that is being reported */
+  // The user Id that is being reported
   var userId: js.UndefOr[java.lang.String] = js.undefined
-  /** The User Name that is being reported */
+  // The User Name that is being reported
   var userName: js.UndefOr[java.lang.String] = js.undefined
-  /** The User PrincipalName that is being reported */
+  // The User PrincipalName that is being reported
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

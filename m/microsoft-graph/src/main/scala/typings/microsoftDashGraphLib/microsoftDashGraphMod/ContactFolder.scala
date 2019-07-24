@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContactFolder extends Entity {
-  /** The collection of child folders in the folder. Navigation property. Read-only. Nullable. */
+  // The collection of child folders in the folder. Navigation property. Read-only. Nullable.
   var childFolders: js.UndefOr[js.Array[ContactFolder]] = js.undefined
-  /** The contacts in the folder. Navigation property. Read-only. Nullable. */
+  // The contacts in the folder. Navigation property. Read-only. Nullable.
   var contacts: js.UndefOr[js.Array[Contact]] = js.undefined
-  /** The folder's display name. */
+  // The folder's display name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable. */
+  // The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
   var multiValueExtendedProperties: js.UndefOr[js.Array[MultiValueLegacyExtendedProperty]] = js.undefined
-  /** The ID of the folder's parent folder. */
+  // The ID of the folder's parent folder.
   var parentFolderId: js.UndefOr[java.lang.String] = js.undefined
-  /** The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable. */
+  // The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   var singleValueExtendedProperties: js.UndefOr[js.Array[SingleValueLegacyExtendedProperty]] = js.undefined
 }
 

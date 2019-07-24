@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PublicationFacet extends js.Object {
-  /** The state of publication for this document. Either published or checkout. Read-only. */
+  // The state of publication for this document. Either published or checkout. Read-only.
   var level: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier for the version that is visible to the current caller. Read-only. */
+  // The unique identifier for the version that is visible to the current caller. Read-only.
   var versionId: js.UndefOr[java.lang.String] = js.undefined
 }
 

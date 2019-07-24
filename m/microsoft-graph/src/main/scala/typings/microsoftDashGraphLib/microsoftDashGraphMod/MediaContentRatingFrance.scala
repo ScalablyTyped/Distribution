@@ -6,9 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaContentRatingFrance extends js.Object {
-  /** Movies rating selected for France. Possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16, agesAbove18. */
+  /**
+    * Movies rating selected for France. Possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16,
+    * agesAbove18.
+    */
   var movieRating: js.UndefOr[RatingFranceMoviesType] = js.undefined
-  /** TV rating selected for France. Possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16, agesAbove18. */
+  /**
+    * TV rating selected for France. Possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16,
+    * agesAbove18.
+    */
   var tvRating: js.UndefOr[RatingFranceTelevisionType] = js.undefined
 }
 

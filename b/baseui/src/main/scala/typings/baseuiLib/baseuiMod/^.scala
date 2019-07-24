@@ -17,6 +17,10 @@ object ^ extends js.Object {
   val ThemeProvider: reactLib.reactMod.FC[ThemeProviderProps] = js.native
   val darkThemePrimitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any = js.native
   val lightThemePrimitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any = js.native
+  val useStyletron: UseStyletronFn[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any
+  ] = js.native
+  val withStyle: WithStyleFn = js.native
   def createTheme(
     primitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any
   ): js.Any = js.native
@@ -24,6 +28,7 @@ object ^ extends js.Object {
     primitives: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThemePrimitives */ js.Any,
     overrides: js.Object
   ): js.Any = js.native
+  def createThemedUseStyletron[Theme](): UseStyletronFn[Theme] = js.native
   def mergeOverrides[T](): js.Any = js.native
   def mergeOverrides[T](
     target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Overrides<T> */ js.Any

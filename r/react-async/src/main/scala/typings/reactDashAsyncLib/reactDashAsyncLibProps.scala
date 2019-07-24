@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait reactDashAsyncLibProps {
   @scala.inline
+  def AsyncProps: reactDashAsyncLib.reactDashAsyncMod.AsyncProps.type = reactDashAsyncLib.reactDashAsyncMod.AsyncProps
+  type AsyncProps[T] = reactDashAsyncLib.reactDashAsyncMod.AsyncProps[T]
+  @scala.inline
   def FulfilledProps: Anon_Children.type = reactDashAsyncLib.Anon_Children
   type FulfilledProps[T] = Anon_Children[T]
   @scala.inline

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IncompleteData extends js.Object {
+  // The service does not have source data before the specified time.
   var missingDataBeforeDateTime: js.UndefOr[java.lang.String] = js.undefined
+  // Some data was not recorded due to excessive activity.
   var wasThrottled: js.UndefOr[scala.Boolean] = js.undefined
 }
 

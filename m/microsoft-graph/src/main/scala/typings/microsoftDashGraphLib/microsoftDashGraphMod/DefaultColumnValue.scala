@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DefaultColumnValue extends js.Object {
-  /** The formula used to compute the default value for this column. */
+  // The formula used to compute the default value for this column.
   var formula: js.UndefOr[java.lang.String] = js.undefined
-  /** The direct value to use as the default value for this column. */
+  // The direct value to use as the default value for this column.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

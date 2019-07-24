@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RoleAssignment extends Entity {
-  /** Description of the Role Assignment. */
+  // Description of the Role Assignment.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The display or friendly name of the role Assignment. */
+  // The display or friendly name of the role Assignment.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** List of ids of role scope member security groups.  These are IDs from Azure Active Directory. */
+  // List of ids of role scope member security groups. These are IDs from Azure Active Directory.
   var resourceScopes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Role definition this assignment is part of. */
+  // Role definition this assignment is part of.
   var roleDefinition: js.UndefOr[RoleDefinition] = js.undefined
 }
 

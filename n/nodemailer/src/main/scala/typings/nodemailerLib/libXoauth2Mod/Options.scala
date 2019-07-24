@@ -34,6 +34,7 @@ trait Options extends js.Object {
   ] = js.undefined
   /** Refresh token for an user */
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined
+  var serviceClient: js.UndefOr[java.lang.String] = js.undefined
   /** Optional TTL for Access Token in seconds */
   var timeout: js.UndefOr[s] = js.undefined
   /** User e-mail address */
@@ -56,6 +57,7 @@ object Options {
       scala.Unit
     ]) => scala.Unit = null,
     refreshToken: java.lang.String = null,
+    serviceClient: java.lang.String = null,
     timeout: js.UndefOr[s] = js.undefined,
     user: java.lang.String = null
   ): Options = {
@@ -68,6 +70,7 @@ object Options {
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (provisionCallback != null) __obj.updateDynamic("provisionCallback")(js.Any.fromFunction3(provisionCallback))
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient)
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[Options]

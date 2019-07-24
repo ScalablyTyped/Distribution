@@ -24,13 +24,13 @@ object DiagonalMovement extends js.Object {
     extends pathfindingLib.pathfindingMod.DiagonalMovement
   
   @js.native
-  sealed trait OnlyWhenNoObstacle
+  sealed trait OnlyWhenNoObstacles
     extends pathfindingLib.pathfindingMod.DiagonalMovement
   
   /* 1 */ val Always: Always with scala.Double = js.native
   /* 3 */ val IfAtMostOneObstacle: IfAtMostOneObstacle with scala.Double = js.native
   /* 2 */ val Never: Never with scala.Double = js.native
-  /* 4 */ val OnlyWhenNoObstacle: OnlyWhenNoObstacle with scala.Double = js.native
+  /* 4 */ val OnlyWhenNoObstacles: OnlyWhenNoObstacles with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[pathfindingLib.pathfindingMod.DiagonalMovement with scala.Double] = js.native
 }

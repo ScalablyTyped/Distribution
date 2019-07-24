@@ -6,23 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartDataLabels extends Entity {
-  /** Represents the format of chart data labels, which includes fill and font formatting. Read-only. */
+  // Represents the format of chart data labels, which includes fill and font formatting. Read-only.
   var format: js.UndefOr[WorkbookChartDataLabelFormat] = js.undefined
-  /** DataLabelPosition value that represents the position of the data label. The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout. */
+  /**
+    * DataLabelPosition value that represents the position of the data label. The possible values are: None, Center,
+    * InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
+    */
   var position: js.UndefOr[java.lang.String] = js.undefined
-  /** String representing the separator used for the data labels on a chart. */
+  // String representing the separator used for the data labels on a chart.
   var separator: js.UndefOr[java.lang.String] = js.undefined
-  /** Boolean value representing if the data label bubble size is visible or not. */
+  // Boolean value representing if the data label bubble size is visible or not.
   var showBubbleSize: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean value representing if the data label category name is visible or not. */
+  // Boolean value representing if the data label category name is visible or not.
   var showCategoryName: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean value representing if the data label legend key is visible or not. */
+  // Boolean value representing if the data label legend key is visible or not.
   var showLegendKey: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean value representing if the data label percentage is visible or not. */
+  // Boolean value representing if the data label percentage is visible or not.
   var showPercentage: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean value representing if the data label series name is visible or not. */
+  // Boolean value representing if the data label series name is visible or not.
   var showSeriesName: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean value representing if the data label value is visible or not. */
+  // Boolean value representing if the data label value is visible or not.
   var showValue: js.UndefOr[scala.Boolean] = js.undefined
 }
 

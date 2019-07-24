@@ -13,6 +13,12 @@ object nodemailerLibStrings {
   sealed trait B extends js.Object
   
   @js.native
+  sealed trait CUSTOM extends js.Object
+  
+  @js.native
+  sealed trait Custom extends js.Object
+  
+  @js.native
   sealed trait DELAY
     extends nodemailerLib.libSmtpDashConnectionMod.DSNOption
   
@@ -70,6 +76,9 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait connected extends js.Object
+  
+  @js.native
+  sealed trait custom extends js.Object
   
   @js.native
   sealed trait data extends js.Object
@@ -167,6 +176,10 @@ object nodemailerLibStrings {
   @scala.inline
   def B: B = "B".asInstanceOf[B]
   @scala.inline
+  def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
+  @scala.inline
+  def Custom: Custom = "Custom".asInstanceOf[Custom]
+  @scala.inline
   def DELAY: DELAY = "DELAY".asInstanceOf[DELAY]
   @scala.inline
   def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
@@ -202,6 +215,8 @@ object nodemailerLibStrings {
   def connect: connect = "connect".asInstanceOf[connect]
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline

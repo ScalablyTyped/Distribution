@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartSeriesFormat extends Entity {
-  /** Represents the fill format of a chart series, which includes background formating information. Read-only. */
+  // Represents the fill format of a chart series, which includes background formating information. Read-only.
   var fill: js.UndefOr[WorkbookChartFill] = js.undefined
-  /** Represents line formatting. Read-only. */
+  // Represents line formatting. Read-only.
   var line: js.UndefOr[WorkbookChartLineFormat] = js.undefined
 }
 

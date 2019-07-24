@@ -12,7 +12,7 @@ trait ISurveyData extends js.Object {
   def getFilteredValues(): js.Any
   def getValue(name: java.lang.String): js.Any
   def setComment(name: java.lang.String, newValue: java.lang.String): js.Any
-  def setValue(name: java.lang.String, newValue: js.Any): js.Any
+  def setValue(name: java.lang.String, newValue: js.Any, locNotification: scala.Boolean): js.Any
 }
 
 object ISurveyData {
@@ -24,9 +24,9 @@ object ISurveyData {
     getFilteredValues: () => js.Any,
     getValue: java.lang.String => js.Any,
     setComment: (java.lang.String, java.lang.String) => js.Any,
-    setValue: (java.lang.String, js.Any) => js.Any
+    setValue: (java.lang.String, js.Any, scala.Boolean) => js.Any
   ): ISurveyData = {
-    val __obj = js.Dynamic.literal(getAllValues = js.Any.fromFunction0(getAllValues), getComment = js.Any.fromFunction1(getComment), getFilteredProperties = js.Any.fromFunction0(getFilteredProperties), getFilteredValues = js.Any.fromFunction0(getFilteredValues), getValue = js.Any.fromFunction1(getValue), setComment = js.Any.fromFunction2(setComment), setValue = js.Any.fromFunction2(setValue))
+    val __obj = js.Dynamic.literal(getAllValues = js.Any.fromFunction0(getAllValues), getComment = js.Any.fromFunction1(getComment), getFilteredProperties = js.Any.fromFunction0(getFilteredProperties), getFilteredValues = js.Any.fromFunction0(getFilteredValues), getValue = js.Any.fromFunction1(getValue), setComment = js.Any.fromFunction2(setComment), setValue = js.Any.fromFunction3(setValue))
   
     __obj.asInstanceOf[ISurveyData]
   }

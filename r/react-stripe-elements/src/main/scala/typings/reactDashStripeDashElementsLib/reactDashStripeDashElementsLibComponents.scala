@@ -12,6 +12,11 @@ object reactDashStripeDashElementsLibComponents extends reactDashStripeDashEleme
   ] = js.constructorOf[reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.CardCVCElement].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps]]
   @scala.inline
+  def CardCvcElement: reactLib.reactMod.ComponentType[
+    reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
+  ] = js.constructorOf[reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.CardCvcElement].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps]]
+  @scala.inline
   def CardElement: reactLib.reactMod.ComponentType[
     reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   ] = js.constructorOf[reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.CardElement].asInstanceOf[reactLib.reactMod.ComponentType[

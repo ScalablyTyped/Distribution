@@ -10736,7 +10736,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INSTANCE
-    extends awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
+    extends awsDashSdkLib.clientsSsmMod._MaintenanceWindowResourceType
+       with awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
        with awsDashSdkLib.clientsLightsailMod._PortInfoSourceType
        with awsDashSdkLib.clientsDlmMod._ResourceTypeValues
   
@@ -17075,6 +17076,10 @@ object awsDashSdkLibStrings {
   sealed trait RESOURCES extends js.Object
   
   @js.native
+  sealed trait RESOURCE_GROUP
+    extends awsDashSdkLib.clientsSsmMod._MaintenanceWindowResourceType
+  
+  @js.native
   sealed trait RESOURCE_ID extends js.Object
   
   @js.native
@@ -22471,6 +22476,14 @@ object awsDashSdkLibStrings {
   sealed trait WORD
     extends awsDashSdkLib.clientsTextractMod._BlockType
        with awsDashSdkLib.clientsRekognitionMod._TextTypes
+  
+  @js.native
+  sealed trait WORDPRESS_PINGBACK_REFLECTOR
+    extends awsDashSdkLib.clientsShieldMod._AttackPropertyIdentifier
+  
+  @js.native
+  sealed trait WORDPRESS_PINGBACK_SOURCE
+    extends awsDashSdkLib.clientsShieldMod._AttackPropertyIdentifier
   
   @js.native
   sealed trait WORK
@@ -36321,6 +36334,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def RESOURCES: RESOURCES = "RESOURCES".asInstanceOf[RESOURCES]
   @scala.inline
+  def RESOURCE_GROUP: RESOURCE_GROUP = "RESOURCE_GROUP".asInstanceOf[RESOURCE_GROUP]
+  @scala.inline
   def RESOURCE_ID: RESOURCE_ID = "RESOURCE_ID".asInstanceOf[RESOURCE_ID]
   @scala.inline
   def RESOURCE_INCORRECT_WEB_ACL: RESOURCE_INCORRECT_WEB_ACL = "RESOURCE_INCORRECT_WEB_ACL".asInstanceOf[RESOURCE_INCORRECT_WEB_ACL]
@@ -38626,6 +38641,10 @@ object awsDashSdkLibStrings {
   def WOL: WOL = "WOL".asInstanceOf[WOL]
   @scala.inline
   def WORD: WORD = "WORD".asInstanceOf[WORD]
+  @scala.inline
+  def WORDPRESS_PINGBACK_REFLECTOR: WORDPRESS_PINGBACK_REFLECTOR = "WORDPRESS_PINGBACK_REFLECTOR".asInstanceOf[WORDPRESS_PINGBACK_REFLECTOR]
+  @scala.inline
+  def WORDPRESS_PINGBACK_SOURCE: WORDPRESS_PINGBACK_SOURCE = "WORDPRESS_PINGBACK_SOURCE".asInstanceOf[WORDPRESS_PINGBACK_SOURCE]
   @scala.inline
   def WORK: WORK = "WORK".asInstanceOf[WORK]
   @scala.inline

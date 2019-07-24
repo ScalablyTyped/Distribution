@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SharingLink extends js.Object {
-  /** The app the link is associated with. */
+  // The app the link is associated with.
   var application: js.UndefOr[Identity] = js.undefined
   /**
     * The scope of the link represented by this permission. Value anonymous indicates the link is usable by anyone,
     * organization indicates the link is only usable for users signed into the same tenant.
     */
   var scope: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of the link created. */
+  // The type of the link created.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /** A URL that opens the item in the browser on the OneDrive website. */
+  // A URL that opens the item in the browser on the OneDrive website.
   var webUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

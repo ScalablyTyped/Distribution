@@ -1,7 +1,7 @@
 
 # Scala.js typings for pdfkit
 
-Typings are for version v0.7.2
+Typings are for version v0.10.0
 
 ## Library description:
 A PDF generation library for Node.js
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Pdfkit v0.7.2
+// Type definitions for Pdfkit v0.10.0
 // Project: http://pdfkit.org
 // Definitions by: Eric Hillah <https://github.com/erichillah>
+//                 Erik Berreßem <https://github.com/she11sh0cked>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

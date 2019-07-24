@@ -470,7 +470,6 @@ trait Player extends Component {
   		 */
   def play(): js.UndefOr[js.Promise[scala.Unit]] = js.native
   def playbackRate(): scala.Double = js.native
-  def playbackRate(rate: scala.Double): scala.Unit = js.native
   /**
   		 * Gets or sets the current playback rate. A playback rate of
   		 * 1.0 represents normal speed and 0.5 would indicate half-speed
@@ -483,8 +482,7 @@ trait Player extends Component {
   		 *
   		 * @return The current playback rate when getting or 1.0
   		 */
-  @JSName("playbackRate")
-  def playbackRate_Unit(): scala.Unit = js.native
+  def playbackRate(rate: scala.Double): scala.Unit = js.native
   def playsinline(): java.lang.String = js.native
   /**
   		 * Set or unset the playsinline attribute.

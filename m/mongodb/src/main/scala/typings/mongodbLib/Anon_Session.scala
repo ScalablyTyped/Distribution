@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Session extends js.Object {
   var session: js.UndefOr[mongodbLib.mongodbMod.ClientSession] = js.undefined
-  var startAtClusterTime: js.UndefOr[bsonLib.bsonMod.Timestamp] = js.undefined
+  var startAtOperationTime: js.UndefOr[bsonLib.bsonMod.Timestamp] = js.undefined
 }
 
 object Anon_Session {
   @scala.inline
   def apply(
     session: mongodbLib.mongodbMod.ClientSession = null,
-    startAtClusterTime: bsonLib.bsonMod.Timestamp = null
+    startAtOperationTime: bsonLib.bsonMod.Timestamp = null
   ): Anon_Session = {
     val __obj = js.Dynamic.literal()
     if (session != null) __obj.updateDynamic("session")(session)
-    if (startAtClusterTime != null) __obj.updateDynamic("startAtClusterTime")(startAtClusterTime)
+    if (startAtOperationTime != null) __obj.updateDynamic("startAtOperationTime")(startAtOperationTime)
     __obj.asInstanceOf[Anon_Session]
   }
 }

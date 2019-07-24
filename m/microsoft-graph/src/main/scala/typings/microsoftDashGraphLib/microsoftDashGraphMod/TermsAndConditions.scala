@@ -7,27 +7,36 @@ import scala.scalajs.js.annotation._
 
 trait TermsAndConditions extends Entity {
   /**
-    * Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&amp;C policy.
-    * This is shown to the user on prompts to accept the T&amp;C policy.
+    * Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms
+    * and conditions set out in the T&amp;C policy. This is shown to the user on prompts to accept the T&amp;C policy.
     */
   var acceptanceStatement: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of acceptance statuses for this T&amp;C policy. */
+  // The list of acceptance statuses for this T&amp;C policy.
   var acceptanceStatuses: js.UndefOr[js.Array[TermsAndConditionsAcceptanceStatus]] = js.undefined
-  /** The list of assignments for this T&amp;C policy. */
+  // The list of assignments for this T&amp;C policy.
   var assignments: js.UndefOr[js.Array[TermsAndConditionsAssignment]] = js.undefined
-  /** Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&amp;C policy. */
+  /**
+    * Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user
+    * on prompts to accept the T&amp;C policy.
+    */
   var bodyText: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime the object was created. */
+  // DateTime the object was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Administrator-supplied description of the T&amp;C policy. */
+  // Administrator-supplied description of the T&amp;C policy.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Administrator-supplied name for the T&amp;C policy. */
+  // Administrator-supplied name for the T&amp;C policy.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime the object was last modified. */
+  // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&amp;C policy. */
+  /**
+    * Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&amp;C
+    * policy.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
-  /** Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&amp;C policy. */
+  /**
+    * Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and
+    * wishes to require users to re-accept the modified T&amp;C policy.
+    */
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 

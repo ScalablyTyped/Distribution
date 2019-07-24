@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileAppContent extends Entity {
-  /** The list of files for this app content version. */
+  // The list of files for this app content version.
   var files: js.UndefOr[js.Array[MobileAppContentFile]] = js.undefined
 }
 

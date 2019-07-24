@@ -9,8 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Hasher () extends js.Object {
   var __brand: scala.Nothing = js.native
-  def digest(outputEncoding: BinaryEncoding): k6Lib.k6Mod.bytes = js.native
-  def digest(outputEncoding: StringEncoding): java.lang.String = js.native
+  /**
+    * Return a digest from the data added so far.
+    * @param outputEncoding - Output encoding.
+    * @returns Digest of data added so far.
+    */
+  def digest[OE /* <: OutputEncoding */](outputEncoding: OE): Output[OE] = js.native
+  /**
+    * Add more data to the string we want to create a hash of.
+    * @param input - Data to add.
+    */
   def update(input: java.lang.String): scala.Unit = js.native
 }
 

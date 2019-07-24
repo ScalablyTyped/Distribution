@@ -6,11 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CookieOptions extends js.Object {
+  /** Domain allowed to receive. */
   var domain: js.UndefOr[java.lang.String] = js.undefined
+  /** Expiry time in RFC1123 format. */
   var expires: js.UndefOr[java.lang.String] = js.undefined
+  /** HTTP only. */
   var http_only: js.UndefOr[scala.Boolean] = js.undefined
+  /** Seconds until expiration. */
   var max_age: js.UndefOr[scala.Double] = js.undefined
+  /** Scope path. */
   var path: js.UndefOr[java.lang.String] = js.undefined
+  /** Secure. */
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 

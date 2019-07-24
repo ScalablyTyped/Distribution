@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamMemberSettings extends js.Object {
-  /** If set to true, members can add and remove apps. */
+  // If set to true, members can add and remove apps.
   var allowAddRemoveApps: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, members can add and update channels. */
+  // If set to true, members can add and update channels.
   var allowCreateUpdateChannels: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, members can add, update, and remove connectors. */
+  // If set to true, members can add, update, and remove connectors.
   var allowCreateUpdateRemoveConnectors: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, members can add, update, and remove tabs. */
+  // If set to true, members can add, update, and remove tabs.
   var allowCreateUpdateRemoveTabs: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, members can delete channels. */
+  // If set to true, members can delete channels.
   var allowDeleteChannels: js.UndefOr[scala.Boolean] = js.undefined
 }
 

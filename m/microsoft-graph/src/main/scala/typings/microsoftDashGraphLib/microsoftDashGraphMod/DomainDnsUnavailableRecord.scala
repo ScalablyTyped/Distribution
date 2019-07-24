@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsUnavailableRecord extends DomainDnsRecord {
-  /** Provides the reason why the DomainDnsUnavailableRecord entity is returned. */
+  // Provides the reason why the DomainDnsUnavailableRecord entity is returned.
   var description: js.UndefOr[java.lang.String] = js.undefined
 }
 

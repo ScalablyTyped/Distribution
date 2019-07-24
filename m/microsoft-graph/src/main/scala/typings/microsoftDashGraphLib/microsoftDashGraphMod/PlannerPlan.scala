@@ -6,22 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlannerPlan extends Entity {
-  /** Read-only. Nullable. Collection of buckets in the plan. */
+  // Read-only. Nullable. Collection of buckets in the plan.
   var buckets: js.UndefOr[js.Array[PlannerBucket]] = js.undefined
-  /** Read-only. The user who created the plan. */
+  // Read-only. The user who created the plan.
   var createdBy: js.UndefOr[IdentitySet] = js.undefined
   /**
-    * Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
+    * '2014-01-01T00:00:00Z'
     */
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Read-only. Nullable. Additional details about the plan. */
+  // Read-only. Nullable. Additional details about the plan.
   var details: js.UndefOr[PlannerPlanDetails] = js.undefined
-  /** ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated. */
+  /**
+    * ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this
+    * property can’t be updated.
+    */
   var owner: js.UndefOr[java.lang.String] = js.undefined
-  /** Read-only. Nullable. Collection of tasks in the plan. */
+  // Read-only. Nullable. Collection of tasks in the plan.
   var tasks: js.UndefOr[js.Array[PlannerTask]] = js.undefined
-  /** Required. Title of the plan. */
+  // Required. Title of the plan.
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 

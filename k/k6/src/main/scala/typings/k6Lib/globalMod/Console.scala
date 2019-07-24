@@ -5,26 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @public */
+@js.native
 trait Console extends js.Object {
-  def debug(msg: js.Any, fields: js.Any*): scala.Unit
-  def error(msg: js.Any, fields: js.Any*): scala.Unit
-  def info(msg: js.Any, fields: js.Any*): scala.Unit
-  def log(msg: js.Any, fields: js.Any*): scala.Unit
-  def warn(msg: js.Any, fields: js.Any*): scala.Unit
-}
-
-object Console {
-  @scala.inline
-  def apply(
-    debug: (js.Any, /* repeated */ js.Any) => scala.Unit,
-    error: (js.Any, /* repeated */ js.Any) => scala.Unit,
-    info: (js.Any, /* repeated */ js.Any) => scala.Unit,
-    log: (js.Any, /* repeated */ js.Any) => scala.Unit,
-    warn: (js.Any, /* repeated */ js.Any) => scala.Unit
-  ): Console = {
-    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), log = js.Any.fromFunction2(log), warn = js.Any.fromFunction2(warn))
-  
-    __obj.asInstanceOf[Console]
-  }
+  /** Log debug message. */
+  @JSName("debug")
+  var debug_Original: Logger = js.native
+  /** Log error message. */
+  @JSName("error")
+  var error_Original: Logger = js.native
+  /** Log informational message. */
+  @JSName("info")
+  var info_Original: Logger = js.native
+  /** Log message. */
+  @JSName("log")
+  var log_Original: Logger = js.native
+  /** Log warning message. */
+  @JSName("warn")
+  var warn_Original: Logger = js.native
+  /** Log debug message. */
+  def debug(msg: js.Any, fields: js.Any*): scala.Unit = js.native
+  /** Log error message. */
+  def error(msg: js.Any, fields: js.Any*): scala.Unit = js.native
+  /** Log informational message. */
+  def info(msg: js.Any, fields: js.Any*): scala.Unit = js.native
+  /** Log message. */
+  def log(msg: js.Any, fields: js.Any*): scala.Unit = js.native
+  /** Log warning message. */
+  def warn(msg: js.Any, fields: js.Any*): scala.Unit = js.native
 }
 

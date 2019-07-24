@@ -6,13 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Params extends js.Object {
+  /** Authentication method. */
   var auth: js.UndefOr[AuthMethod] = js.undefined
+  /** Request scoped cookies. */
   var cookies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ParamsCookieValue]] = js.undefined
+  /** Request headers. */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /** Cookie jar to override default VU cookie jar with. */
   var jar: js.UndefOr[CookieJar] = js.undefined
+  /** Maximum redirects to follow. */
   var redirects: js.UndefOr[scala.Double] = js.undefined
+  /** Response type. */
   var responseType: js.UndefOr[ResponseType] = js.undefined
+  /** Response time metric tags. */
   var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /** Request timeout. */
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 

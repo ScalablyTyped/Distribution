@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CurrencyColumn extends js.Object {
-  /** Specifies the locale from which to infer the currency symbol. */
+  // Specifies the locale from which to infer the currency symbol.
   var locale: js.UndefOr[java.lang.String] = js.undefined
 }
 

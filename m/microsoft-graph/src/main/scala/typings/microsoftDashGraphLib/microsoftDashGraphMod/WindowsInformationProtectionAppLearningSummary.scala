@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsInformationProtectionAppLearningSummary extends Entity {
-  /** Application Name */
+  // Application Name
   var applicationName: js.UndefOr[java.lang.String] = js.undefined
-  /** Application Type. Possible values are: universal, desktop. */
+  // Application Type. Possible values are: universal, desktop.
   var applicationType: js.UndefOr[ApplicationType] = js.undefined
-  /** Device Count */
+  // Device Count
   var deviceCount: js.UndefOr[scala.Double] = js.undefined
 }
 

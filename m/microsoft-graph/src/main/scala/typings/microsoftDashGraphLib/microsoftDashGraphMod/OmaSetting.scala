@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OmaSetting extends js.Object {
-  /** Description. */
+  // Description.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Display Name. */
+  // Display Name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** OMA. */
+  // OMA.
   var omaUri: js.UndefOr[java.lang.String] = js.undefined
 }
 

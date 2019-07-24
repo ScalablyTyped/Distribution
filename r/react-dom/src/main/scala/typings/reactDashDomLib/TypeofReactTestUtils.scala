@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofReactTestUtils extends js.Object {
   val SimulateNs: TypeofSimulate = js.native
-  def act(callback: js.Function0[js.UndefOr[scala.Unit]]): reactDashDomLib.testDashUtilsMod.DebugPromiseLike | js.Object = js.native
+  def act(callback: js.Function0[js.UndefOr[scala.Unit]]): reactDashDomLib.testDashUtilsMod.DebugPromiseLike = js.native
   def createRenderer(): reactDashDomLib.testDashUtilsMod.ShallowRenderer = js.native
   def findAllInRenderedTree(
     root: reactLib.reactMod.Component[_, js.Object, _],

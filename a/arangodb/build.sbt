@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "arangodb"
-version := "3.5-dt-20190424Z-fd151a"
+version := "3.5-dt-20190424Z-bde61d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190624Z-c591ae",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-ce53a0",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

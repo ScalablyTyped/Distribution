@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LicenseUnitsDetail extends js.Object {
-  /** The number of units that are enabled. */
+  // The number of units that are enabled.
   var enabled: js.UndefOr[scala.Double] = js.undefined
-  /** The number of units that are suspended. */
+  // The number of units that are suspended.
   var suspended: js.UndefOr[scala.Double] = js.undefined
-  /** The number of units that are in warning status. */
+  // The number of units that are in warning status.
   var warning: js.UndefOr[scala.Double] = js.undefined
 }
 

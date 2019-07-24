@@ -11,7 +11,7 @@ trait Shield
   @JSName("config")
   var config_Shield: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Authorizes the DDoS Response team (DRT) to access the specified Amazon S3 bucket containing your flow logs. You can associate up to 10 Amazon S3 buckets with your subscription. To use the services of the DRT and make an AssociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan.
+    * Authorizes the DDoS Response team (DRT) to access the specified Amazon S3 bucket containing your AWS WAF logs. You can associate up to 10 Amazon S3 buckets with your subscription. To use the services of the DRT and make an AssociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan.
     */
   def associateDRTLogBucket(): awsDashSdkLib.libRequestMod.Request[AssociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateDRTLogBucket(
@@ -22,7 +22,7 @@ trait Shield
     ]
   ): awsDashSdkLib.libRequestMod.Request[AssociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Authorizes the DDoS Response team (DRT) to access the specified Amazon S3 bucket containing your flow logs. You can associate up to 10 Amazon S3 buckets with your subscription. To use the services of the DRT and make an AssociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan.
+    * Authorizes the DDoS Response team (DRT) to access the specified Amazon S3 bucket containing your AWS WAF logs. You can associate up to 10 Amazon S3 buckets with your subscription. To use the services of the DRT and make an AssociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan.
     */
   def associateDRTLogBucket(params: AssociateDRTLogBucketRequest): awsDashSdkLib.libRequestMod.Request[AssociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateDRTLogBucket(
@@ -80,7 +80,7 @@ trait Shield
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateProtectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Activates AWS Shield Advanced for an account. As part of this request you can specify EmergencySettings that automaticaly grant the DDoS response team (DRT) needed permissions to assist you during a suspected DDoS attack. For more information see Authorize the DDoS Response Team to Create Rules and Web ACLs on Your Behalf. When you initally create a subscription, your subscription is set to be automatically renewed at the end of the existing subscription period. You can change this by submitting an UpdateSubscription request. 
+    * Activates AWS Shield Advanced for an account. As part of this request you can specify EmergencySettings that automaticaly grant the DDoS response team (DRT) needed permissions to assist you during a suspected DDoS attack. For more information see Authorize the DDoS Response Team to Create Rules and Web ACLs on Your Behalf. To use the services of the DRT, you must be subscribed to the Business Support plan or the Enterprise Support plan. When you initally create a subscription, your subscription is set to be automatically renewed at the end of the existing subscription period. You can change this by submitting an UpdateSubscription request. 
     */
   def createSubscription(): awsDashSdkLib.libRequestMod.Request[CreateSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSubscription(
@@ -91,7 +91,7 @@ trait Shield
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Activates AWS Shield Advanced for an account. As part of this request you can specify EmergencySettings that automaticaly grant the DDoS response team (DRT) needed permissions to assist you during a suspected DDoS attack. For more information see Authorize the DDoS Response Team to Create Rules and Web ACLs on Your Behalf. When you initally create a subscription, your subscription is set to be automatically renewed at the end of the existing subscription period. You can change this by submitting an UpdateSubscription request. 
+    * Activates AWS Shield Advanced for an account. As part of this request you can specify EmergencySettings that automaticaly grant the DDoS response team (DRT) needed permissions to assist you during a suspected DDoS attack. For more information see Authorize the DDoS Response Team to Create Rules and Web ACLs on Your Behalf. To use the services of the DRT, you must be subscribed to the Business Support plan or the Enterprise Support plan. When you initally create a subscription, your subscription is set to be automatically renewed at the end of the existing subscription period. You can change this by submitting an UpdateSubscription request. 
     */
   def createSubscription(params: CreateSubscriptionRequest): awsDashSdkLib.libRequestMod.Request[CreateSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSubscription(
@@ -264,7 +264,7 @@ trait Shield
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes the DDoS Response team's (DRT) access to the specified Amazon S3 bucket containing your flow logs. To make a DisassociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan. However, if you are not subscribed to one of these support plans, but had been previously and had granted the DRT access to your account, you can submit a DisassociateDRTLogBucket request to remove this access.
+    * Removes the DDoS Response team's (DRT) access to the specified Amazon S3 bucket containing your AWS WAF logs. To make a DisassociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan. However, if you are not subscribed to one of these support plans, but had been previously and had granted the DRT access to your account, you can submit a DisassociateDRTLogBucket request to remove this access.
     */
   def disassociateDRTLogBucket(): awsDashSdkLib.libRequestMod.Request[DisassociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateDRTLogBucket(
@@ -275,7 +275,7 @@ trait Shield
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes the DDoS Response team's (DRT) access to the specified Amazon S3 bucket containing your flow logs. To make a DisassociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan. However, if you are not subscribed to one of these support plans, but had been previously and had granted the DRT access to your account, you can submit a DisassociateDRTLogBucket request to remove this access.
+    * Removes the DDoS Response team's (DRT) access to the specified Amazon S3 bucket containing your AWS WAF logs. To make a DisassociateDRTLogBucket request, you must be subscribed to the Business Support plan or the Enterprise Support plan. However, if you are not subscribed to one of these support plans, but had been previously and had granted the DRT access to your account, you can submit a DisassociateDRTLogBucket request to remove this access.
     */
   def disassociateDRTLogBucket(params: DisassociateDRTLogBucketRequest): awsDashSdkLib.libRequestMod.Request[DisassociateDRTLogBucketResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateDRTLogBucket(

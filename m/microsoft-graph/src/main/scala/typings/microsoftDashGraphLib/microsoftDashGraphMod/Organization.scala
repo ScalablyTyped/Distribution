@@ -6,57 +6,62 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Organization extends DirectoryObject {
-  /** The collection of service plans associated with the tenant. Not nullable. */
+  // The collection of service plans associated with the tenant. Not nullable.
   var assignedPlans: js.UndefOr[js.Array[AssignedPlan]] = js.undefined
-  /** Telephone number for the organization. NOTE: Although this is a string collection, only one number can be set for this property. */
+  /**
+    * Telephone number for the organization. NOTE: Although this is a string collection, only one number can be set for this
+    * property.
+    */
   var businessPhones: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** City name of the address for the organization */
+  // City name of the address for the organization
   var city: js.UndefOr[java.lang.String] = js.undefined
-  /** Country/region name of the address for the organization */
+  // Country/region name of the address for the organization
   var country: js.UndefOr[java.lang.String] = js.undefined
-  /** Country/region abbreviation for the organization */
+  // Country/region abbreviation for the organization
   var countryLetterCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created.
-    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the
+    * organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in
+    * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     */
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The display name for the tenant. */
+  // The display name for the tenant.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The collection of open extensions defined for the organization. Read-only. Nullable. */
+  // The collection of open extensions defined for the organization. Read-only. Nullable.
   var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
-  /** Not nullable. */
+  // Not nullable.
   var marketingNotificationEmails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Mobile device management authority. Possible values are: unknown, intune, sccm, office365. */
+  // Mobile device management authority. Possible values are: unknown, intune, sccm, office365.
   var mobileDeviceManagementAuthority: js.UndefOr[MdmAuthority] = js.undefined
   /**
-    * The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date
+    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
+    * look like this: '2014-01-01T00:00:00Z'. Read-only.
     */
   var onPremisesLastSyncDateTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced;
-    * null if this object has never been synced from an on-premises directory (default).
+    * true if this object is synced from an on-premises directory; false if this object was originally synced from an
+    * on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory
+    * (default).
     */
   var onPremisesSyncEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Postal code of the address for the organization */
+  // Postal code of the address for the organization
   var postalCode: js.UndefOr[java.lang.String] = js.undefined
-  /** The preferred language for the organization. Should follow ISO 639-1 Code; for example 'en'. */
+  // The preferred language for the organization. Should follow ISO 639-1 Code; for example 'en'.
   var preferredLanguage: js.UndefOr[java.lang.String] = js.undefined
-  /** The privacy profile of an organization. */
+  // The privacy profile of an organization.
   var privacyProfile: js.UndefOr[PrivacyProfile] = js.undefined
-  /** Not nullable. */
+  // Not nullable.
   var provisionedPlans: js.UndefOr[js.Array[ProvisionedPlan]] = js.undefined
   var securityComplianceNotificationMails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var securityComplianceNotificationPhones: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** State name of the address for the organization */
+  // State name of the address for the organization
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** Street name of the address for organization */
+  // Street name of the address for organization
   var street: js.UndefOr[java.lang.String] = js.undefined
-  /** Not nullable. */
+  // Not nullable.
   var technicalNotificationMails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** The collection of domains associated with this tenant. Not nullable. */
+  // The collection of domains associated with this tenant. Not nullable.
   var verifiedDomains: js.UndefOr[js.Array[VerifiedDomain]] = js.undefined
 }
 

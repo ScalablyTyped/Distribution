@@ -6,46 +6,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceAppManagement extends Entity {
-  /** Android managed app policies. */
+  // Android managed app policies.
   var androidManagedAppProtections: js.UndefOr[js.Array[AndroidManagedAppProtection]] = js.undefined
-  /** Default managed app policies. */
+  // Default managed app policies.
   var defaultManagedAppProtections: js.UndefOr[js.Array[DefaultManagedAppProtection]] = js.undefined
-  /** iOS managed app policies. */
+  // iOS managed app policies.
   var iosManagedAppProtections: js.UndefOr[js.Array[IosManagedAppProtection]] = js.undefined
-  /** Whether the account is enabled for syncing applications from the Microsoft Store for Business. */
+  // Whether the account is enabled for syncing applications from the Microsoft Store for Business.
   var isEnabledForMicrosoftStoreForBusiness: js.UndefOr[scala.Boolean] = js.undefined
-  /** Managed app policies. */
+  // Managed app policies.
   var managedAppPolicies: js.UndefOr[js.Array[ManagedAppPolicy]] = js.undefined
-  /** The managed app registrations. */
+  // The managed app registrations.
   var managedAppRegistrations: js.UndefOr[js.Array[ManagedAppRegistration]] = js.undefined
-  /** The managed app statuses. */
+  // The managed app statuses.
   var managedAppStatuses: js.UndefOr[js.Array[ManagedAppStatus]] = js.undefined
-  /** The Managed eBook. */
+  // The Managed eBook.
   var managedEBooks: js.UndefOr[js.Array[ManagedEBook]] = js.undefined
-  /** Windows information protection for apps running on devices which are MDM enrolled. */
+  // Windows information protection for apps running on devices which are MDM enrolled.
   var mdmWindowsInformationProtectionPolicies: js.UndefOr[js.Array[MdmWindowsInformationProtectionPolicy]] = js.undefined
   /**
-    * The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a country/region.
-    * The names of these cultures follow RFC 4646 (Windows Vista and later). The format is -&amp;lt;country/regioncode2&amp;gt;,
-    * where  is a lowercase two-letter code derived from ISO 639-1 and &amp;lt;country/regioncode2&amp;gt;
-    * is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.
+    * The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a
+    * country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is
+    * -&amp;lt;country/regioncode2&amp;gt;, where is a lowercase two-letter code derived from ISO 639-1 and
+    * &amp;lt;country/regioncode2&amp;gt; is an uppercase two-letter code derived from ISO 3166. For example, en-US for
+    * English (United States) is a specific culture.
     */
   var microsoftStoreForBusinessLanguage: js.UndefOr[java.lang.String] = js.undefined
-  /** The last time an application sync from the Microsoft Store for Business was completed. */
+  // The last time an application sync from the Microsoft Store for Business was completed.
   var microsoftStoreForBusinessLastCompletedApplicationSyncTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The last time the apps from the Microsoft Store for Business were synced successfully for the account. */
+  // The last time the apps from the Microsoft Store for Business were synced successfully for the account.
   var microsoftStoreForBusinessLastSuccessfulSyncDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The mobile app categories. */
+  // The mobile app categories.
   var mobileAppCategories: js.UndefOr[js.Array[MobileAppCategory]] = js.undefined
-  /** The Managed Device Mobile Application Configurations. */
+  // The Managed Device Mobile Application Configurations.
   var mobileAppConfigurations: js.UndefOr[js.Array[ManagedDeviceMobileAppConfiguration]] = js.undefined
-  /** The mobile apps. */
+  // The mobile apps.
   var mobileApps: js.UndefOr[js.Array[MobileApp]] = js.undefined
-  /** Targeted managed app configurations. */
+  // Targeted managed app configurations.
   var targetedManagedAppConfigurations: js.UndefOr[js.Array[TargetedManagedAppConfiguration]] = js.undefined
-  /** List of Vpp tokens for this organization. */
+  // List of Vpp tokens for this organization.
   var vppTokens: js.UndefOr[js.Array[VppToken]] = js.undefined
-  /** Windows information protection for apps running on devices which are not MDM enrolled. */
+  // Windows information protection for apps running on devices which are not MDM enrolled.
   var windowsInformationProtectionPolicies: js.UndefOr[js.Array[WindowsInformationProtectionPolicy]] = js.undefined
 }
 

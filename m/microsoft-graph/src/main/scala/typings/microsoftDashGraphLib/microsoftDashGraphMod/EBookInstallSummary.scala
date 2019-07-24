@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EBookInstallSummary extends Entity {
-  /** Number of Devices that have failed to install this book. */
+  // Number of Devices that have failed to install this book.
   var failedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Users that have 1 or more device that failed to install this book. */
+  // Number of Users that have 1 or more device that failed to install this book.
   var failedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Devices that have successfully installed this book. */
+  // Number of Devices that have successfully installed this book.
   var installedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Users whose devices have all succeeded to install this book. */
+  // Number of Users whose devices have all succeeded to install this book.
   var installedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Devices that does not have this book installed. */
+  // Number of Devices that does not have this book installed.
   var notInstalledDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Users that did not install this book. */
+  // Number of Users that did not install this book.
   var notInstalledUserCount: js.UndefOr[scala.Double] = js.undefined
 }
 

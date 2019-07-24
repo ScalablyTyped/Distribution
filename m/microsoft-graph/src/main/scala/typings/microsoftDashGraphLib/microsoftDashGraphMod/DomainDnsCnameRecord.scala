@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsCnameRecord extends DomainDnsRecord {
-  /** The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host. */
+  // The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host.
   var canonicalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

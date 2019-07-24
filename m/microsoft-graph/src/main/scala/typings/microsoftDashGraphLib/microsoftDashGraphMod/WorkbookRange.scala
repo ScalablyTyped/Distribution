@@ -6,48 +6,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookRange extends Entity {
-  /** Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only. */
+  /**
+    * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4).
+    * Read-only.
+    */
   var address: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents range reference for the specified range in the language of the user. Read-only. */
+  // Represents range reference for the specified range in the language of the user. Read-only.
   var addressLocal: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of cells in the range. Read-only. */
+  // Number of cells in the range. Read-only.
   var cellCount: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the total number of columns in the range. Read-only. */
+  // Represents the total number of columns in the range. Read-only.
   var columnCount: js.UndefOr[scala.Double] = js.undefined
-  /** Represents if all columns of the current range are hidden. */
+  // Represents if all columns of the current range are hidden.
   var columnHidden: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the column number of the first cell in the range. Zero-indexed. Read-only. */
+  // Represents the column number of the first cell in the range. Zero-indexed. Read-only.
   var columnIndex: js.UndefOr[scala.Double] = js.undefined
-  /** Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only. */
+  // Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
   var format: js.UndefOr[WorkbookRangeFormat] = js.undefined
-  /** Represents the formula in A1-style notation. */
+  // Represents the formula in A1-style notation.
   var formulas: js.UndefOr[js.Any] = js.undefined
-  /** Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English '=SUM(A1, 1.5)' formula would become '=SUMME(A1; 1,5)' in German. */
+  /**
+    * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+    * English '=SUM(A1, 1.5)' formula would become '=SUMME(A1; 1,5)' in German.
+    */
   var formulasLocal: js.UndefOr[js.Any] = js.undefined
-  /** Represents the formula in R1C1-style notation. */
+  // Represents the formula in R1C1-style notation.
   var formulasR1C1: js.UndefOr[js.Any] = js.undefined
-  /** Represents if all cells of the current range are hidden. Read-only. */
+  // Represents if all cells of the current range are hidden. Read-only.
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents Excel's number format code for the given cell. */
+  // Represents Excel's number format code for the given cell.
   var numberFormat: js.UndefOr[js.Any] = js.undefined
-  /** Returns the total number of rows in the range. Read-only. */
+  // Returns the total number of rows in the range. Read-only.
   var rowCount: js.UndefOr[scala.Double] = js.undefined
-  /** Represents if all rows of the current range are hidden. */
+  // Represents if all rows of the current range are hidden.
   var rowHidden: js.UndefOr[scala.Boolean] = js.undefined
-  /** Returns the row number of the first cell in the range. Zero-indexed. Read-only. */
+  // Returns the row number of the first cell in the range. Zero-indexed. Read-only.
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
-  /** The worksheet containing the current range. Read-only. */
+  // The worksheet containing the current range. Read-only.
   var sort: js.UndefOr[WorkbookRangeSort] = js.undefined
   /**
-    * Text values of the specified range. The Text value will not depend on the cell width.
-    * The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that
+    * happens in Excel UI will not affect the text value returned by the API. Read-only.
     */
   var text: js.UndefOr[js.Any] = js.undefined
-  /** Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error. Read-only. */
+  /**
+    * Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean,
+    * Error. Read-only.
+    */
   var valueTypes: js.UndefOr[js.Any] = js.undefined
-  /** Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string. */
+  /**
+    * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
+    * that contain an error will return the error string.
+    */
   var values: js.UndefOr[js.Any] = js.undefined
-  /** The worksheet containing the current range. Read-only. */
+  // The worksheet containing the current range. Read-only.
   var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
 }
 

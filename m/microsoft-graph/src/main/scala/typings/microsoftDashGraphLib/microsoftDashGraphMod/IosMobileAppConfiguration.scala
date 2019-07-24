@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosMobileAppConfiguration extends ManagedDeviceMobileAppConfiguration {
-  /** mdm app configuration Base64 binary. */
+  // mdm app configuration Base64 binary.
   var encodedSettingXml: js.UndefOr[scala.Double] = js.undefined
-  /** app configuration setting items. */
+  // app configuration setting items.
   var settings: js.UndefOr[js.Array[AppConfigurationSettingItem]] = js.undefined
 }
 

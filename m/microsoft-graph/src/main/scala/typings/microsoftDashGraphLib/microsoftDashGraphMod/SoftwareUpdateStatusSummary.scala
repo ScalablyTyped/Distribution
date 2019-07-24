@@ -6,35 +6,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SoftwareUpdateStatusSummary extends Entity {
-  /** Number of compliant devices. */
+  // Number of compliant devices.
   var compliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of compliant users. */
+  // Number of compliant users.
   var compliantUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of conflict devices. */
+  // Number of conflict devices.
   var conflictDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of conflict users. */
+  // Number of conflict users.
   var conflictUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** The name of the policy. */
+  // The name of the policy.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of devices had error. */
+  // Number of devices had error.
   var errorDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of users had error. */
+  // Number of users had error.
   var errorUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of non compliant devices. */
+  // Number of non compliant devices.
   var nonCompliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of non compliant users. */
+  // Number of non compliant users.
   var nonCompliantUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of not applicable devices. */
+  // Number of not applicable devices.
   var notApplicableDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of not applicable users. */
+  // Number of not applicable users.
   var notApplicableUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of remediated devices. */
+  // Number of remediated devices.
   var remediatedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of remediated users. */
+  // Number of remediated users.
   var remediatedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of unknown devices. */
+  // Number of unknown devices.
   var unknownDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of unknown users. */
+  // Number of unknown users.
   var unknownUserCount: js.UndefOr[scala.Double] = js.undefined
 }
 

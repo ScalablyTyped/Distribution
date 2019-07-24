@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemReference extends js.Object {
-  /** Unique identifier of the drive instance that contains the item. Read-only. */
+  // Unique identifier of the drive instance that contains the item. Read-only.
   var driveId: js.UndefOr[java.lang.String] = js.undefined
-  /** Identifies the type of drive. See [drive][] resource for values. */
+  // Identifies the type of drive. See [drive][] resource for values.
   var driveType: js.UndefOr[java.lang.String] = js.undefined
-  /** Unique identifier of the item in the drive. Read-only. */
+  // Unique identifier of the item in the drive. Read-only.
   var id: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the item being referenced. Read-only. */
+  // The name of the item being referenced. Read-only.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Path that can be used to navigate to the item. Read-only. */
+  // Path that can be used to navigate to the item. Read-only.
   var path: js.UndefOr[java.lang.String] = js.undefined
-  /** A unique identifier for a shared resource that can be accessed via the [Shares][] API. */
+  // A unique identifier for a shared resource that can be accessed via the [Shares][] API.
   var shareId: js.UndefOr[java.lang.String] = js.undefined
-  /** Returns identifiers useful for SharePoint REST compatibility. Read-only. */
+  // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
   var siteId: js.UndefOr[java.lang.String] = js.undefined
 }

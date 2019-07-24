@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TermsAndConditionsAssignment extends Entity {
-  /** Assignment target that the T&amp;C policy is assigned to. */
+  // Assignment target that the T&amp;C policy is assigned to.
   var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
 }
 

@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigurationManagerClientEnabledFeatures extends js.Object {
-  /** Whether compliance policy is managed by Intune */
+  // Whether compliance policy is managed by Intune
   var compliancePolicy: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether device configuration is managed by Intune */
+  // Whether device configuration is managed by Intune
   var deviceConfiguration: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether inventory is managed by Intune */
+  // Whether inventory is managed by Intune
   var inventory: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether modern application is managed by Intune */
+  // Whether modern application is managed by Intune
   var modernApps: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether resource access is managed by Intune */
+  // Whether resource access is managed by Intune
   var resourceAccess: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether Windows Update for Business is managed by Intune */
+  // Whether Windows Update for Business is managed by Intune
   var windowsUpdateForBusiness: js.UndefOr[scala.Boolean] = js.undefined
 }
 

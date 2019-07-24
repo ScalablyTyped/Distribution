@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-test-renderer"
-version := "16.8-dt-20190613Z-938a9d"
+version := "16.8-dt-20190723Z-952226"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

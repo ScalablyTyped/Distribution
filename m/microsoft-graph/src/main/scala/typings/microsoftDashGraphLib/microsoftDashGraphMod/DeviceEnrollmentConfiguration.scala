@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceEnrollmentConfiguration extends Entity {
-  /** The list of group assignments for the device configuration profile. */
+  // The list of group assignments for the device configuration profile.
   var assignments: js.UndefOr[js.Array[EnrollmentConfigurationAssignment]] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var priority: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectElement
-  extends BaseElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`5`]
+  extends BaseElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.select]
      with _MessageFormatElement {
   var options: stdLib.Record[java.lang.String, PluralOrSelectOption]
 }
@@ -15,7 +15,7 @@ object SelectElement {
   @scala.inline
   def apply(
     options: stdLib.Record[java.lang.String, PluralOrSelectOption],
-    `type`: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`5`,
+    `type`: intlDashMessageformatDashParserLib.libTypesMod.TYPE.select,
     value: java.lang.String,
     location: Location = null
   ): SelectElement = {

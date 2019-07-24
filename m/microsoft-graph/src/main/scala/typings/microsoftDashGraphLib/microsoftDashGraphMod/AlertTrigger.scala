@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlertTrigger extends js.Object {
-  /** Name of the property serving as a detection trigger. */
+  // Name of the property serving as a detection trigger.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc. */
+  // Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /** Value of the property serving as a detection trigger. */
+  // Value of the property serving as a detection trigger.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

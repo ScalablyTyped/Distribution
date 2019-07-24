@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppConfiguration extends ManagedAppPolicy {
-  /** A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service */
+  /**
+    * A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned
+    * by this service
+    */
   var customSettings: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
 }
 

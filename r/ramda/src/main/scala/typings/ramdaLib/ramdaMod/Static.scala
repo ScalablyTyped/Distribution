@@ -2217,14 +2217,14 @@ trait Static extends js.Object {
     */
   def tail(list: java.lang.String): java.lang.String = js.native
   def tail[T /* <: js.Any */](list: js.Array[T]): js.Array[T] = js.native
+  def take(n: scala.Double): ramdaLib.Fn_XsArrayReadonlyArray = js.native
   def take(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def take[T](n: scala.Double): ramdaLib.Fn_Xs[T] = js.native
   /**
     * Returns a new list containing the first `n` elements of the given list.  If
     * `n > * list.length`, returns a list of `list.length` elements.
     */
   def take[T](n: scala.Double, xs: js.Array[T]): js.Array[T] = js.native
-  def takeLast(n: scala.Double): ramdaLib.Fn_XsArrayReadonlyArray = js.native
+  def takeLast(n: scala.Double): ramdaLib.Fn_XsArrayReadonlyArrayString = js.native
   def takeLast(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
   /**
     * Returns a new list containing the last n elements of the given list. If n > list.length,

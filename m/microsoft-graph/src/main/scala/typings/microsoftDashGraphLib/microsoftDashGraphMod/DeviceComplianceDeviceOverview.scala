@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceComplianceDeviceOverview extends Entity {
-  /** Version of the policy for that overview */
+  // Version of the policy for that overview
   var configurationVersion: js.UndefOr[scala.Double] = js.undefined
-  /** Number of error devices */
+  // Number of error devices
   var errorCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of failed devices */
+  // Number of failed devices
   var failedCount: js.UndefOr[scala.Double] = js.undefined
-  /** Last update time */
+  // Last update time
   var lastUpdateDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of not applicable devices */
+  // Number of not applicable devices
   var notApplicableCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of pending devices */
+  // Number of pending devices
   var pendingCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of succeeded devices */
+  // Number of succeeded devices
   var successCount: js.UndefOr[scala.Double] = js.undefined
 }
 

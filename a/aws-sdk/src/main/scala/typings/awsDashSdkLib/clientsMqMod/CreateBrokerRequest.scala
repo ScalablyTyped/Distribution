@@ -27,6 +27,10 @@ trait CreateBrokerRequest extends js.Object {
     */
   var DeploymentMode: js.UndefOr[DeploymentMode] = js.undefined
   /**
+    * Encryption options for the broker.
+    */
+  var EncryptionOptions: js.UndefOr[EncryptionOptions] = js.undefined
+  /**
     * Required. The type of broker engine. Note: Currently, Amazon MQ supports only ACTIVEMQ.
     */
   var EngineType: js.UndefOr[EngineType] = js.undefined
@@ -76,6 +80,7 @@ object CreateBrokerRequest {
     Configuration: ConfigurationId = null,
     CreatorRequestId: __string = null,
     DeploymentMode: DeploymentMode = null,
+    EncryptionOptions: EncryptionOptions = null,
     EngineType: EngineType = null,
     EngineVersion: __string = null,
     HostInstanceType: __string = null,
@@ -93,6 +98,7 @@ object CreateBrokerRequest {
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration)
     if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId)
     if (DeploymentMode != null) __obj.updateDynamic("DeploymentMode")(DeploymentMode.asInstanceOf[js.Any])
+    if (EncryptionOptions != null) __obj.updateDynamic("EncryptionOptions")(EncryptionOptions)
     if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType)

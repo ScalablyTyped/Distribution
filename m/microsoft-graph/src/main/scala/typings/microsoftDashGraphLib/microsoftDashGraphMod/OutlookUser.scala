@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OutlookUser extends Entity {
-  /** A list of categories defined for the user. */
+  // A list of categories defined for the user.
   var masterCategories: js.UndefOr[js.Array[OutlookCategory]] = js.undefined
 }
 

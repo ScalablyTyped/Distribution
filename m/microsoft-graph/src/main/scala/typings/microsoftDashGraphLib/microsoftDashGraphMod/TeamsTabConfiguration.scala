@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsTabConfiguration extends js.Object {
-  /** Url used for rendering tab contents in Teams. Required. */
+  // Url used for rendering tab contents in Teams. Required.
   var contentUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** Identifier for the entity hosted by the tab provider. */
+  // Identifier for the entity hosted by the tab provider.
   var entityId: js.UndefOr[java.lang.String] = js.undefined
-  /** Url called by Teams client when a Tab is removed using the Teams Client. */
+  // Url called by Teams client when a Tab is removed using the Teams Client.
   var removeUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** Url for showing tab contents outside of Teams. */
+  // Url for showing tab contents outside of Teams.
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

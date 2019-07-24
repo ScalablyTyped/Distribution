@@ -6,13 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResponseCookie extends js.Object {
+  /** Domain allowed to receive. */
   var domain: java.lang.String
+  /** Expiry time in millisecond Unix time. */
   var expires: scala.Double
+  /** HTTP only. */
   var httpOnly: scala.Boolean
+  /** Seconds until expiration. */
   var maxAge: scala.Double
+  /** Name. */
   var name: java.lang.String
+  /** Scope path. */
   var path: java.lang.String
+  /** Secure. */
   var secure: scala.Boolean
+  /** Value. */
   var value: java.lang.String
 }
 

@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosHomeScreenFolder extends IosHomeScreenItem {
-  /** Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements. */
+  /**
+    * Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500
+    * elements.
+    */
   var pages: js.UndefOr[js.Array[IosHomeScreenFolderPage]] = js.undefined
 }
 

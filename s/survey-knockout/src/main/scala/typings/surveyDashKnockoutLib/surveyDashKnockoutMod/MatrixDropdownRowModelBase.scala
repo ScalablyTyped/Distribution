@@ -61,8 +61,9 @@ class MatrixDropdownRowModelBase protected ()
   def runCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /* CompleteClass */
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
+  def setValue(name: java.lang.String, newColumnValue: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
+  override def setValue(name: java.lang.String, newValue: js.Any, locNotification: scala.Boolean): js.Any = js.native
   /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell): scala.Unit = js.native
   def updateCellQuestionOnColumnChanged(column: MatrixDropdownColumn): scala.Unit = js.native
 }

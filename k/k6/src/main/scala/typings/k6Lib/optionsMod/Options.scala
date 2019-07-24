@@ -6,37 +6,69 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /** Maximum parallel `http.batch()` connections per VU. */
   var batch: scala.Double
+  /** Maximum parallel `http.batch()` host connections per VU. */
   var batchPerHost: scala.Double
+  /** Blacklist IP ranges from being called. */
   var blacklistIPs: js.Array[java.lang.String]
+  /** Discard response bodies. */
   var discardResponseBodies: scala.Boolean
+  /** Test duration. */
   var duration: java.lang.String
+  /** Third party collector configuration. */
   var ext: org.scalablytyped.runtime.StringDictionary[CollectorOptions]
+  /** Static hostname mapping. */
   var hosts: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  /** Log all HTTP requests and responses. */
   var httpDebug: java.lang.String
+  /** Disable TLS verification. Insecure. */
   var insecureSkipTLSVerify: scala.Boolean
+  /** Iterations to execute. */
   var iterations: scala.Double
+  /** Persist the k6 process after test completion. */
   var linger: scala.Boolean
+  /** Maximum HTTP redirects to follow. */
   var maxRedirects: scala.Double
+  /** Minimum test iteration duration. */
   var minIterationDuration: java.lang.String
+  /** Disable keepalive connections. */
   var noConnectionReuse: scala.Boolean
+  /** Disable usage reports. */
   var noUsageReport: scala.Boolean
+  /** Disable cross-VU TCP connection reuse. */
   var noVUConnectionReuse: scala.Boolean
+  /** Start test in paused state. */
   var paused: scala.Boolean
+  /** Maximum requests per second across all VUs. */
   var rps: scala.Double
+  /** Setup function timeout. */
   var setupTimeout: java.lang.String
+  /** Test stage specifications. Program of target VU stages. */
   var stages: js.Array[Stage]
+  /** Define stats for trend metrics. */
   var summaryTrendStats: js.Array[java.lang.String]
+  /** Which system tags to include in collected metrics. */
   var systemTags: js.Array[java.lang.String]
+  /** Tags to set test wide across all metrics. */
   var tags: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  /** Teardown function timeout. */
   var teardownTimeout: java.lang.String
+  /** Threshold specifications. Defines pass and fail conditions. */
   var thresholds: org.scalablytyped.runtime.StringDictionary[js.Array[Threshold]]
+  /** Throw error on failed HTTP request. */
   var `throw`: scala.Boolean
+  /** TLS client certificates. */
   var tlsAuth: js.Array[Certificate]
-  var tlsCipherSuites: js.Array[java.lang.String]
+  /** Allowed TLS cipher suites. */
+  var tlsCipherSuites: js.Array[k6Lib.httpMod.CipherSuite]
+  /** Allowed TLS version. Use `http.SSL_*` `http.TLS_*` constants. */
   var tlsVersion: java.lang.String | k6Lib.Anon_Max
+  /** User agent string to include in HTTP requests. */
   var userAgent: java.lang.String
+  /** Number of VUs to run concurrently. */
   var vus: scala.Double
+  /** Maximum VUs. Preallocates VUs to enable faster scaling. */
   var vusMax: scala.Double
 }
 
@@ -70,7 +102,7 @@ object Options {
     thresholds: org.scalablytyped.runtime.StringDictionary[js.Array[Threshold]],
     `throw`: scala.Boolean,
     tlsAuth: js.Array[Certificate],
-    tlsCipherSuites: js.Array[java.lang.String],
+    tlsCipherSuites: js.Array[k6Lib.httpMod.CipherSuite],
     tlsVersion: java.lang.String | k6Lib.Anon_Max,
     userAgent: java.lang.String,
     vus: scala.Double,

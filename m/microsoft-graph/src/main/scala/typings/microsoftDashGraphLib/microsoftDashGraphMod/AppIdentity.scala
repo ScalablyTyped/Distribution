@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppIdentity extends js.Object {
-  /** Refers to the Unique GUID representing Application Id in the Azure Active Directory. */
+  // Refers to the Unique GUID representing Application Id in the Azure Active Directory.
   var appId: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the Application Name displayed in the Azure Portal. */
+  // Refers to the Application Name displayed in the Azure Portal.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App. */
+  // Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
   var servicePrincipalId: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the Service Principal Name is the Application name in the tenant. */
+  // Refers to the Service Principal Name is the Application name in the tenant.
   var servicePrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,21 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsUniversalAppX extends MobileLobApp {
-  /** The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral. */
+  // The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral.
   var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.undefined
-  /** The Windows device type(s) for which this app can run on. Possible values are: none, desktop, mobile, holographic, team. */
+  /**
+    * The Windows device type(s) for which this app can run on. Possible values are: none, desktop, mobile, holographic,
+    * team.
+    */
   var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.undefined
-  /** The Identity Name. */
+  // The Identity Name.
   var identityName: js.UndefOr[java.lang.String] = js.undefined
-  /** The Identity Publisher Hash. */
+  // The Identity Publisher Hash.
   var identityPublisherHash: js.UndefOr[java.lang.String] = js.undefined
-  /** The Identity Resource Identifier. */
+  // The Identity Resource Identifier.
   var identityResourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
-  /** The identity version. */
+  // The identity version.
   var identityVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Whether or not the app is a bundle. */
+  // Whether or not the app is a bundle.
   var isBundle: js.UndefOr[scala.Boolean] = js.undefined
-  /** The value for the minimum applicable operating system. */
+  // The value for the minimum applicable operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[WindowsMinimumOperatingSystem] = js.undefined
 }
 

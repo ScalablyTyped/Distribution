@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsDeviceAccount extends js.Object {
-  /** Not yet documented */
+  // Not yet documented
   var password: js.UndefOr[java.lang.String] = js.undefined
 }
 

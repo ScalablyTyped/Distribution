@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosMinimumOperatingSystem extends js.Object {
-  /** Version 10.0 or later. */
+  // Version 10.0 or later.
   var v10_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 11.0 or later. */
+  // Version 11.0 or later.
   var v11_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 12.0 or later. */
+  // Version 12.0 or later.
   var v12_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 8.0 or later. */
+  // Version 8.0 or later.
   var v8_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 9.0 or later. */
+  // Version 9.0 or later.
   var v9_0: js.UndefOr[scala.Boolean] = js.undefined
 }
 

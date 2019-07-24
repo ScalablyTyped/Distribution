@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait EventMessage extends Message {
   /**
-    * The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to
-    * automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.
+    * The event associated with the event message. The assumption for attendees or room resources is that the Calendar
+    * Attendant is set to automatically update the calendar with an event when meeting request event messages arrive.
+    * Navigation property. Read-only.
     */
   var event: js.UndefOr[Event] = js.undefined
-  /** The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined. */
+  /**
+    * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted,
+    * meetingDeclined.
+    */
   var meetingMessageType: js.UndefOr[MeetingMessageType] = js.undefined
 }
 

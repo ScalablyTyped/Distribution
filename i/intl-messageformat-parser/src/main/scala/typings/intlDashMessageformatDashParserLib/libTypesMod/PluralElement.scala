@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluralElement
-  extends BaseElement[intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`6`]
+  extends BaseElement[intlDashMessageformatDashParserLib.libTypesMod.TYPE.plural]
      with _MessageFormatElement {
   var offset: scala.Double
   var options: stdLib.Record[ValidPluralRule, PluralOrSelectOption]
@@ -20,7 +20,7 @@ object PluralElement {
   def apply(
     offset: scala.Double,
     options: stdLib.Record[ValidPluralRule, PluralOrSelectOption],
-    `type`: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`6`,
+    `type`: intlDashMessageformatDashParserLib.libTypesMod.TYPE.plural,
     value: java.lang.String,
     location: Location = null,
     pluralType: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibStrings.cardinal | intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibStrings.ordinal = null

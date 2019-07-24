@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedDeviceOverview extends Entity {
-  /** Distribution of Exchange Access State in Intune */
+  // Distribution of Exchange Access State in Intune
   var deviceExchangeAccessStateSummary: js.UndefOr[DeviceExchangeAccessStateSummary] = js.undefined
-  /** Device operating system summary. */
+  // Device operating system summary.
   var deviceOperatingSystemSummary: js.UndefOr[DeviceOperatingSystemSummary] = js.undefined
-  /** The number of devices enrolled in both MDM and EAS */
+  // The number of devices enrolled in both MDM and EAS
   var dualEnrolledDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Total enrolled device count. Does not include PC devices managed via Intune PC Agent */
+  // Total enrolled device count. Does not include PC devices managed via Intune PC Agent
   var enrolledDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** The number of devices enrolled in MDM */
+  // The number of devices enrolled in MDM
   var mdmEnrolledCount: js.UndefOr[scala.Double] = js.undefined
 }
 

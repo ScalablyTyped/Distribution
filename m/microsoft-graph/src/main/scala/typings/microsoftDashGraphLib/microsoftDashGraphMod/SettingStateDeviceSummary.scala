@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SettingStateDeviceSummary extends Entity {
-  /** Device Compliant count for the setting */
+  // Device Compliant count for the setting
   var compliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Device conflict error count for the setting */
+  // Device conflict error count for the setting
   var conflictDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Device error count for the setting */
+  // Device error count for the setting
   var errorDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Name of the InstancePath for the setting */
+  // Name of the InstancePath for the setting
   var instancePath: js.UndefOr[java.lang.String] = js.undefined
-  /** Device NonCompliant count for the setting */
+  // Device NonCompliant count for the setting
   var nonCompliantDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Device Not Applicable count for the setting */
+  // Device Not Applicable count for the setting
   var notApplicableDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Device Compliant count for the setting */
+  // Device Compliant count for the setting
   var remediatedDeviceCount: js.UndefOr[scala.Double] = js.undefined
-  /** Name of the setting */
+  // Name of the setting
   var settingName: js.UndefOr[java.lang.String] = js.undefined
-  /** Device Unkown count for the setting */
+  // Device Unkown count for the setting
   var unknownDeviceCount: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -1,0 +1,45 @@
+
+# Scala.js typings for wordpress__data-controls
+
+Typings are for version 1.0
+
+## Library description:
+A set of common controls for the @wordpress/data api.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @wordpress/data-controls |
+| Keywords           | wordpress, data, controls |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 0 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/data-controls/README.md)
+- [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
+- [Npm](https://www.npmjs.com/package/%40wordpress%2Fdata-controls)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Type definitions for @wordpress/data-controls 1.0
+// Project: https://github.com/WordPress/gutenberg/tree/master/packages/data-controls/README.md
+// Definitions by: Derek Sifford <https://github.com/dsifford>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 3.5
+
+```
+

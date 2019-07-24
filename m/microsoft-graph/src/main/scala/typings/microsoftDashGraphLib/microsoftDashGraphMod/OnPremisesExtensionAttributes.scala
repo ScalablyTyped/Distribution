@@ -6,35 +6,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnPremisesExtensionAttributes extends js.Object {
-  /** First customizable extension attribute. */
+  // First customizable extension attribute.
   var extensionAttribute1: js.UndefOr[java.lang.String] = js.undefined
-  /** Tenth customizable extension attribute. */
+  // Tenth customizable extension attribute.
   var extensionAttribute10: js.UndefOr[java.lang.String] = js.undefined
-  /** Eleventh customizable extension attribute. */
+  // Eleventh customizable extension attribute.
   var extensionAttribute11: js.UndefOr[java.lang.String] = js.undefined
-  /** Twelfth customizable extension attribute. */
+  // Twelfth customizable extension attribute.
   var extensionAttribute12: js.UndefOr[java.lang.String] = js.undefined
-  /** Thirteenth customizable extension attribute. */
+  // Thirteenth customizable extension attribute.
   var extensionAttribute13: js.UndefOr[java.lang.String] = js.undefined
-  /** Fourteenth customizable extension attribute. */
+  // Fourteenth customizable extension attribute.
   var extensionAttribute14: js.UndefOr[java.lang.String] = js.undefined
-  /** Fifteenth customizable extension attribute. */
+  // Fifteenth customizable extension attribute.
   var extensionAttribute15: js.UndefOr[java.lang.String] = js.undefined
-  /** Second customizable extension attribute. */
+  // Second customizable extension attribute.
   var extensionAttribute2: js.UndefOr[java.lang.String] = js.undefined
-  /** Third customizable extension attribute. */
+  // Third customizable extension attribute.
   var extensionAttribute3: js.UndefOr[java.lang.String] = js.undefined
-  /** Fourth customizable extension attribute. */
+  // Fourth customizable extension attribute.
   var extensionAttribute4: js.UndefOr[java.lang.String] = js.undefined
-  /** Fifth customizable extension attribute. */
+  // Fifth customizable extension attribute.
   var extensionAttribute5: js.UndefOr[java.lang.String] = js.undefined
-  /** Sixth customizable extension attribute. */
+  // Sixth customizable extension attribute.
   var extensionAttribute6: js.UndefOr[java.lang.String] = js.undefined
-  /** Seventh customizable extension attribute. */
+  // Seventh customizable extension attribute.
   var extensionAttribute7: js.UndefOr[java.lang.String] = js.undefined
-  /** Eighth customizable extension attribute. */
+  // Eighth customizable extension attribute.
   var extensionAttribute8: js.UndefOr[java.lang.String] = js.undefined
-  /** Ninth customizable extension attribute. */
+  // Ninth customizable extension attribute.
   var extensionAttribute9: js.UndefOr[java.lang.String] = js.undefined
 }
 

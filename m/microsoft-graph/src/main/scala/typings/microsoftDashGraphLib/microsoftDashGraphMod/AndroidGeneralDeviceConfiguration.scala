@@ -6,101 +6,116 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidGeneralDeviceConfiguration extends DeviceConfiguration {
-  /** Indicates whether or not to block clipboard sharing to copy and paste between applications. */
+  // Indicates whether or not to block clipboard sharing to copy and paste between applications.
   var appsBlockClipboardSharing: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block copy and paste within applications. */
+  // Indicates whether or not to block copy and paste within applications.
   var appsBlockCopyPaste: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the YouTube app. */
+  // Indicates whether or not to block the YouTube app.
   var appsBlockYouTube: js.UndefOr[scala.Boolean] = js.undefined
-  /** List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements. */
+  // List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.
   var appsHideList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements. */
+  // List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.
   var appsInstallAllowList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements. */
+  /**
+    * List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500
+    * elements.
+    */
   var appsLaunchBlockList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** Indicates whether or not to block Bluetooth. */
+  // Indicates whether or not to block Bluetooth.
   var bluetoothBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the use of the camera. */
+  // Indicates whether or not to block the use of the camera.
   var cameraBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block data roaming. */
+  // Indicates whether or not to block data roaming.
   var cellularBlockDataRoaming: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block SMS/MMS messaging. */
+  // Indicates whether or not to block SMS/MMS messaging.
   var cellularBlockMessaging: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block voice roaming. */
+  // Indicates whether or not to block voice roaming.
   var cellularBlockVoiceRoaming: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block syncing Wi-Fi tethering. */
+  // Indicates whether or not to block syncing Wi-Fi tethering.
   var cellularBlockWiFiTethering: js.UndefOr[scala.Boolean] = js.undefined
-  /** Type of list that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant. */
+  // Type of list that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
   var compliantAppListType: js.UndefOr[AppListType] = js.undefined
-  /** List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements. */
+  /**
+    * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
+    * can contain a maximum of 10000 elements.
+    */
   var compliantAppsList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** Indicates whether or not to allow device sharing mode. */
+  // Indicates whether or not to allow device sharing mode.
   var deviceSharingAllowed: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block diagnostic data submission. */
+  // Indicates whether or not to block diagnostic data submission.
   var diagnosticDataBlockSubmission: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block user performing a factory reset. */
+  // Indicates whether or not to block user performing a factory reset.
   var factoryResetBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Google account auto sync. */
+  // Indicates whether or not to block Google account auto sync.
   var googleAccountBlockAutoSync: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the Google Play store. */
+  // Indicates whether or not to block the Google Play store.
   var googlePlayStoreBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements. */
+  /**
+    * A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of
+    * 500 elements.
+    */
   var kioskModeApps: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** Indicates whether or not to block the screen sleep button while in Kiosk Mode. */
+  // Indicates whether or not to block the screen sleep button while in Kiosk Mode.
   var kioskModeBlockSleepButton: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the volume buttons while in Kiosk Mode. */
+  // Indicates whether or not to block the volume buttons while in Kiosk Mode.
   var kioskModeBlockVolumeButtons: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block location services. */
+  // Indicates whether or not to block location services.
   var locationServicesBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Near-Field Communication. */
+  // Indicates whether or not to block Near-Field Communication.
   var nfcBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block fingerprint unlock. */
+  // Indicates whether or not to block fingerprint unlock.
   var passwordBlockFingerprintUnlock: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Smart Lock and other trust agents. */
+  // Indicates whether or not to block Smart Lock and other trust agents.
   var passwordBlockTrustAgents: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. Valid values 1 to 365 */
+  // Number of days before the password expires. Valid values 1 to 365
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passwords. Valid values 4 to 16 */
+  // Minimum length of passwords. Valid values 4 to 16
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before the screen times out. */
+  // Minutes of inactivity before the screen times out.
   var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 0 to 24 */
+  // Number of previous passwords to block. Valid values 0 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to require a password. */
+  // Indicates whether or not to require a password.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Type of password that is required. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any. */
+  /**
+    * Type of password that is required. Possible values are: deviceDefault, alphabetic, alphanumeric,
+    * alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any.
+    */
   var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.undefined
-  /** Number of sign in failures allowed before factory reset. Valid values 1 to 16 */
+  // Number of sign in failures allowed before factory reset. Valid values 1 to 16
   var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[scala.Double] = js.undefined
-  /** Indicates whether or not to block powering off the device. */
+  // Indicates whether or not to block powering off the device.
   var powerOffBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block screenshots. */
+  // Indicates whether or not to block screenshots.
   var screenCaptureBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the Android Verify apps feature is turned on. */
+  // Require the Android Verify apps feature is turned on.
   var securityRequireVerifyApps: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block Google Backup. */
+  // Indicates whether or not to block Google Backup.
   var storageBlockGoogleBackup: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block removable storage usage. */
+  // Indicates whether or not to block removable storage usage.
   var storageBlockRemovableStorage: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require device encryption. */
+  // Indicates whether or not to require device encryption.
   var storageRequireDeviceEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to require removable storage encryption. */
+  // Indicates whether or not to require removable storage encryption.
   var storageRequireRemovableStorageEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the use of the Voice Assistant. */
+  // Indicates whether or not to block the use of the Voice Assistant.
   var voiceAssistantBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block voice dialing. */
+  // Indicates whether or not to block voice dialing.
   var voiceDialingBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the web browser's auto fill feature. */
+  // Indicates whether or not to block the web browser's auto fill feature.
   var webBrowserBlockAutofill: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block JavaScript within the web browser. */
+  // Indicates whether or not to block JavaScript within the web browser.
   var webBrowserBlockJavaScript: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block popups within the web browser. */
+  // Indicates whether or not to block popups within the web browser.
   var webBrowserBlockPopups: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether or not to block the web browser. */
+  // Indicates whether or not to block the web browser.
   var webBrowserBlocked: js.UndefOr[scala.Boolean] = js.undefined
-  /** Cookie settings within the web browser. Possible values are: browserDefault, blockAlways, allowCurrentWebSite, allowFromWebsitesVisited, allowAlways. */
+  /**
+    * Cookie settings within the web browser. Possible values are: browserDefault, blockAlways, allowCurrentWebSite,
+    * allowFromWebsitesVisited, allowAlways.
+    */
   var webBrowserCookieSettings: js.UndefOr[WebBrowserCookieSettings] = js.undefined
-  /** Indicates whether or not to block syncing Wi-Fi. */
+  // Indicates whether or not to block syncing Wi-Fi.
   var wiFiBlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 

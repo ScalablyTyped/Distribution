@@ -107,6 +107,9 @@ trait ValidatorStatic extends js.Object {
   // check if the string is a valid ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) officially assigned
   // country code.
   def isISO31661Alpha2(str: java.lang.String): scala.Boolean = js.native
+  // check if the string is a valid ISO 3166-1 alpha-3 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) officially assigned
+  // country code.
+  def isISO31661Alpha3(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a valid ISO 8601 (https://en.wikipedia.org/wiki/ISO_8601) date.
   def isISO8601(str: java.lang.String): scala.Boolean = js.native
   def isISO8601(str: java.lang.String, options: IsISO8601Options): scala.Boolean = js.native

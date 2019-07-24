@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VerifiedDomain extends js.Object {
-  /** For example, 'Email', 'OfficeCommunicationsOnline'. */
+  // For example, 'Email', 'OfficeCommunicationsOnline'.
   var capabilities: js.UndefOr[java.lang.String] = js.undefined
-  /** true if this is the default domain associated with the tenant; otherwise, false. */
+  // true if this is the default domain associated with the tenant; otherwise, false.
   var isDefault: js.UndefOr[scala.Boolean] = js.undefined
-  /** true if this is the initial domain associated with the tenant; otherwise, false */
+  // true if this is the initial domain associated with the tenant; otherwise, false
   var isInitial: js.UndefOr[scala.Boolean] = js.undefined
-  /** The domain name; for example, 'contoso.onmicrosoft.com' */
+  // The domain name; for example, 'contoso.onmicrosoft.com'
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** For example, 'Managed'. */
+  // For example, 'Managed'.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

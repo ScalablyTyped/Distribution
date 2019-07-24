@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamGuestSettings extends js.Object {
-  /** If set to true, guests can add and update channels. */
+  // If set to true, guests can add and update channels.
   var allowCreateUpdateChannels: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, guests can delete channels. */
+  // If set to true, guests can delete channels.
   var allowDeleteChannels: js.UndefOr[scala.Boolean] = js.undefined
 }
 

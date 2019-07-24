@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait OnPremisesProvisioningError extends js.Object {
   /**
-    * Category of the provisioning error. Note: Currently, there is only one possible value.
-    * Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
+    * Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict
+    * - indicates a property value is not unique. Other objects contain the same value for the property.
     */
   var category: js.UndefOr[java.lang.String] = js.undefined
-  /** The date and time at which the error occurred. */
+  // The date and time at which the error occurred.
   var occurredDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress */
+  // Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
   var propertyCausingError: js.UndefOr[java.lang.String] = js.undefined
-  /** Value of the property causing the error. */
+  // Value of the property causing the error.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

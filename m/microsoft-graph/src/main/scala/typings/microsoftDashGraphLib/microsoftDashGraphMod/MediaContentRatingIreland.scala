@@ -6,9 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaContentRatingIreland extends js.Object {
-  /** Movies rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove12, agesAbove15, agesAbove16, adults. */
+  /**
+    * Movies rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, parentalGuidance,
+    * agesAbove12, agesAbove15, agesAbove16, adults.
+    */
   var movieRating: js.UndefOr[RatingIrelandMoviesType] = js.undefined
-  /** TV rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, children, youngAdults, parentalSupervision, mature. */
+  /**
+    * TV rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, children, youngAdults,
+    * parentalSupervision, mature.
+    */
   var tvRating: js.UndefOr[RatingIrelandTelevisionType] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Windows10EnterpriseModernAppManagementConfiguration extends DeviceConfiguration {
-  /** Indicates whether or not to uninstall a fixed list of built-in Windows apps. */
+  // Indicates whether or not to uninstall a fixed list of built-in Windows apps.
   var uninstallBuiltInApps: js.UndefOr[scala.Boolean] = js.undefined
 }
 

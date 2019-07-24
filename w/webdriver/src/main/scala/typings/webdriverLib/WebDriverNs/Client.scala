@@ -327,6 +327,7 @@ trait Client extends js.Object {
   def terminateApp(): scala.Unit = js.native
   def terminateApp(appId: java.lang.String): scala.Unit = js.native
   def terminateApp(appId: java.lang.String, bundleId: java.lang.String): scala.Unit = js.native
+  def throttleCPU(rate: scala.Double): scala.Unit = js.native
   def throttleNetwork(condition: java.lang.String): scala.Unit = js.native
   def throttleNetwork(condition: js.Object): scala.Unit = js.native
   def toggleAirplaneMode(): scala.Unit = js.native

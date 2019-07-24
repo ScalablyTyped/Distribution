@@ -50,6 +50,10 @@ object googlepayLibStrings {
     extends googlepayLib.googleNs.paymentsNs.apiNs.BillingAddressFormat
   
   @js.native
+  sealed trait INTERAC
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
+  
+  @js.native
   sealed trait INTERNAL_ERROR
     extends googlepayLib.googleNs.paymentsNs.apiNs.ErrorStatusCode
   
@@ -131,6 +135,8 @@ object googlepayLibStrings {
   def FINAL: FINAL = "FINAL".asInstanceOf[FINAL]
   @scala.inline
   def FULL: FULL = "FULL".asInstanceOf[FULL]
+  @scala.inline
+  def INTERAC: INTERAC = "INTERAC".asInstanceOf[INTERAC]
   @scala.inline
   def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
   @scala.inline

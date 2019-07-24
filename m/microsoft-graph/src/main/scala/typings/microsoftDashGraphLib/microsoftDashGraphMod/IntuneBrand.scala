@@ -6,33 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IntuneBrand extends js.Object {
-  /** Email address of the person/organization responsible for IT support. */
+  // Email address of the person/organization responsible for IT support.
   var contactITEmailAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the person/organization responsible for IT support. */
+  // Name of the person/organization responsible for IT support.
   var contactITName: js.UndefOr[java.lang.String] = js.undefined
-  /** Text comments regarding the person/organization responsible for IT support. */
+  // Text comments regarding the person/organization responsible for IT support.
   var contactITNotes: js.UndefOr[java.lang.String] = js.undefined
-  /** Phone number of the person/organization responsible for IT support. */
+  // Phone number of the person/organization responsible for IT support.
   var contactITPhoneNumber: js.UndefOr[java.lang.String] = js.undefined
-  /** Logo image displayed in Company Portal apps which have a dark background behind the logo. */
+  // Logo image displayed in Company Portal apps which have a dark background behind the logo.
   var darkBackgroundLogo: js.UndefOr[MimeContent] = js.undefined
-  /** Company/organization name that is displayed to end users. */
+  // Company/organization name that is displayed to end users.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Logo image displayed in Company Portal apps which have a light background behind the logo. */
+  // Logo image displayed in Company Portal apps which have a light background behind the logo.
   var lightBackgroundLogo: js.UndefOr[MimeContent] = js.undefined
-  /** Display name of the company/organization’s IT helpdesk site. */
+  // Display name of the company/organization’s IT helpdesk site.
   var onlineSupportSiteName: js.UndefOr[java.lang.String] = js.undefined
-  /** URL to the company/organization’s IT helpdesk site. */
+  // URL to the company/organization’s IT helpdesk site.
   var onlineSupportSiteUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** URL to the company/organization’s privacy policy. */
+  // URL to the company/organization’s privacy policy.
   var privacyUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** Boolean that represents whether the administrator-supplied display name will be shown next to the logo image. */
+  // Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
   var showDisplayNameNextToLogo: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean that represents whether the administrator-supplied logo images are shown or not shown. */
+  // Boolean that represents whether the administrator-supplied logo images are shown or not shown.
   var showLogo: js.UndefOr[scala.Boolean] = js.undefined
-  /** Boolean that represents whether the administrator-supplied display name will be shown next to the logo image. */
+  // Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
   var showNameNextToLogo: js.UndefOr[scala.Boolean] = js.undefined
-  /** Primary theme color used in the Company Portal applications and web portal. */
+  // Primary theme color used in the Company Portal applications and web portal.
   var themeColor: js.UndefOr[RgbColor] = js.undefined
 }
 

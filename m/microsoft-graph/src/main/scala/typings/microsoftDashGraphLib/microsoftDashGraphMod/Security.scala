@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Security extends Entity {
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var alerts: js.UndefOr[js.Array[Alert]] = js.undefined
   var secureScoreControlProfiles: js.UndefOr[js.Array[SecureScoreControlProfile]] = js.undefined
   var secureScores: js.UndefOr[js.Array[SecureScore]] = js.undefined

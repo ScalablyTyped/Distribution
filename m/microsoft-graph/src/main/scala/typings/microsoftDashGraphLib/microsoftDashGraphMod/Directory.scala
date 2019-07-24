@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Directory extends Entity {
-  /** Recently deleted items. Read-only. Nullable. */
+  // Recently deleted items. Read-only. Nullable.
   var deletedItems: js.UndefOr[js.Array[DirectoryObject]] = js.undefined
 }
 

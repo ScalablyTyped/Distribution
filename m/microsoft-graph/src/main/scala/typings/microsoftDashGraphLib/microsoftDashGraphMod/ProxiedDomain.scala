@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProxiedDomain extends js.Object {
-  /** The IP address or FQDN */
+  // The IP address or FQDN
   var ipAddressOrFQDN: js.UndefOr[java.lang.String] = js.undefined
-  /** Proxy IP or FQDN */
+  // Proxy IP or FQDN
   var proxy: js.UndefOr[java.lang.String] = js.undefined
 }
 

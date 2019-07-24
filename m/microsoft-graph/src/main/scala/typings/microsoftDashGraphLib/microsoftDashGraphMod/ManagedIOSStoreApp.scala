@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedIOSStoreApp extends ManagedApp {
-  /** The Apple AppStoreUrl. */
+  // The Apple AppStoreUrl.
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The iOS architecture for which this app can run on. */
+  // The iOS architecture for which this app can run on.
   var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
-  /** The app's Bundle ID. */
+  // The app's Bundle ID.
   var bundleId: js.UndefOr[java.lang.String] = js.undefined
-  /** The value for the minimum supported operating system. */
+  // The value for the minimum supported operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[IosMinimumOperatingSystem] = js.undefined
 }
 

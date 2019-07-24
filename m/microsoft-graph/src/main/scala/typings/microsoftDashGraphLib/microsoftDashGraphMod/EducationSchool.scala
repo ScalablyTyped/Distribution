@@ -6,31 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationSchool extends EducationOrganization {
-  /** Address of the school. */
+  // Address of the school.
   var address: js.UndefOr[PhysicalAddress] = js.undefined
-  /** Classes taught at the school. Nullable. */
+  // Classes taught at the school. Nullable.
   var classes: js.UndefOr[js.Array[EducationClass]] = js.undefined
-  /** Entity who created the school. */
+  // Entity who created the school.
   var createdBy: js.UndefOr[IdentitySet] = js.undefined
-  /** ID of school in syncing system. */
+  // ID of school in syncing system.
   var externalId: js.UndefOr[java.lang.String] = js.undefined
-  /** ID of principal in syncing system. */
+  // ID of principal in syncing system.
   var externalPrincipalId: js.UndefOr[java.lang.String] = js.undefined
-  /** Fax number of school. */
+  // Fax number of school.
   var fax: js.UndefOr[java.lang.String] = js.undefined
-  /** Highest grade taught. */
+  // Highest grade taught.
   var highestGrade: js.UndefOr[java.lang.String] = js.undefined
-  /** Lowest grade taught. */
+  // Lowest grade taught.
   var lowestGrade: js.UndefOr[java.lang.String] = js.undefined
-  /** Phone number of school. */
+  // Phone number of school.
   var phone: js.UndefOr[java.lang.String] = js.undefined
-  /** Email address of the principal. */
+  // Email address of the principal.
   var principalEmail: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the principal. */
+  // Name of the principal.
   var principalName: js.UndefOr[java.lang.String] = js.undefined
-  /** School Number. */
+  // School Number.
   var schoolNumber: js.UndefOr[java.lang.String] = js.undefined
-  /** Users in the school. Nullable. */
+  // Users in the school. Nullable.
   var users: js.UndefOr[js.Array[EducationUser]] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-graphql"
-version := "0.8-dt-20190426Z-2ea2b4"
+version := "0.8-dt-20190426Z-6e931f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e1c7d7",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-e6cc14",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-2e57f1",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190624Z-c591ae",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-ce53a0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-1c84be",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-f16918",

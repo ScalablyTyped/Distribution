@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceManagementSettings extends js.Object {
-  /** The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120 */
+  // The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
   var deviceComplianceCheckinThresholdDays: js.UndefOr[scala.Double] = js.undefined
-  /** Is feature enabled or not for scheduled action for rule. */
+  // Is feature enabled or not for scheduled action for rule.
   var isScheduledActionEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Device should be noncompliant when there is no compliance policy targeted when this is true */
+  // Device should be noncompliant when there is no compliance policy targeted when this is true
   var secureByDefault: js.UndefOr[scala.Boolean] = js.undefined
 }
 

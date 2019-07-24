@@ -6,11 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GroupSettingTemplate extends DirectoryObject {
-  /** Description of the template. */
+  // Description of the template.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Display name of the template. */
+  // Display name of the template.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. */
+  /**
+    * Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this
+    * template.
+    */
   var values: js.UndefOr[js.Array[SettingTemplateValue]] = js.undefined
 }
 

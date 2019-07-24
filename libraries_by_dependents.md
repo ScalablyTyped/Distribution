@@ -2233,6 +2233,7 @@
 | 57 | [source-list-map](./s/source-list-map) | Fast line to line SourceMap generator.
 | 57 | [speakeasy](./s/speakeasy) | Two-factor authentication for Node.js. One-time pa
 | 56 | [autobahn](./a/autobahn) | An implementation of The Web Application Messaging
+| 56 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
 | 56 | [card-validator](./c/card-validator) | A library for validating credit card fields
 | 56 | [combine-source-map](./c/combine-source-map) | Add source maps of multiple files, offset them and
 | 56 | [cordova-plugin-splashscre](./c/cordova-plugin-splashscreen) | Cordova Splashscreen Plugin
@@ -3659,6 +3660,7 @@
 | 17 | [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place
 | 17 | [vfile-location](./v/vfile-location) | Convert between positions (line and column-based) 
 | 17 | [vimeo__player](./v/vimeo__player) | Interact with and control an embedded Vimeo Player
+| 17 | [webpack-virtual-modules](./w/webpack-virtual-modules) | Webpack Virtual Modules
 | 17 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
 | 17 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
 | 17 | [zip-webpack-plugin](./z/zip-webpack-plugin) | Webpack plugin to zip up emitted files.
@@ -4737,6 +4739,7 @@
 | 6 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs
 | 6 | [web-resource-inliner](./w/web-resource-inliner) | Inlines img, script and link tags into the same fi
 | 6 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress.
+| 6 | [wordpress__core-data](./w/wordpress__core-data) | Access to and manipulation of core WordPress entit
 | 6 | [wordpress__deprecated](./w/wordpress__deprecated) | Deprecation utility for WordPress.
 | 6 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress.
 | 6 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API.
@@ -5570,6 +5573,7 @@
 | 2 | [pulumi__cloud](./p/pulumi__cloud) | A highly productive, cloud neutral programming mod
 | 2 | [qhistory](./q/qhistory) | Wrap history with query support
 | 2 | [r-script](./r/r-script) | A simple little module for passing data from NodeJ
+| 2 | [random-normal](./r/random-normal) | Return a normally-distributed random variate.
 | 2 | [rasha](./r/rasha) | 💯 PEM-to-JWK and JWK-to-PEM for RSA keys in a lig
 | 2 | [rbac-a](./r/rbac-a) | RBAC-A dynamic plugin roles implementation
 | 2 | [rdf-js](./r/rdf-js) | Mirror of the RDFJS TS typings
@@ -6575,6 +6579,7 @@
 | 0 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation
 | 0 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor
 | 0 | [react-navigation-material](./r/react-navigation-material-bottom-tabs) | Material Bottom Tab Navigation component for React
+| 0 | [react-plaid-link](./r/react-plaid-link) | A React component for Plaid Link
 | 0 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p
 | 0 | [react-scroll-into-view-if](./r/react-scroll-into-view-if-needed) | A thin component wrapper around scroll-into-view-i
 | 0 | [react-swf](./r/react-swf) | Shockwave Flash Player component for React
@@ -6717,6 +6722,8 @@
 | 0 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
 | 0 | [winston-dynamodb](./w/winston-dynamodb) | A Winston transport for Amazon DynamoDB
 | 0 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t
+| 0 | [wordpress__data-controls](./w/wordpress__data-controls) | A set of common controls for the @wordpress/data a
+| 0 | [wordpress__library-export](./w/wordpress__library-export-default-webpack-plugin) | Webpack plugin for exporting default property for 
 | 0 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
 | 0 | [xmljs](./x/xmljs) | A small and simple package which can traverse a XM
 | 0 | [xrm](./x/xrm) | -

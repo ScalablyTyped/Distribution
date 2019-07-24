@@ -6,16 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EditionUpgradeConfiguration extends DeviceConfiguration {
-  /** Edition Upgrade License File Content. */
+  // Edition Upgrade License File Content.
   var license: js.UndefOr[java.lang.String] = js.undefined
-  /** Edition Upgrade License Type. Possible values are: productKey, licenseFile. */
+  // Edition Upgrade License Type. Possible values are: productKey, licenseFile.
   var licenseType: js.UndefOr[EditionUpgradeLicenseType] = js.undefined
-  /** Edition Upgrade Product Key. */
+  // Edition Upgrade Product Key.
   var productKey: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education, windows10EducationN,
-    * windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional, windows10ProfessionalN, windows10ProfessionalEducation,
-    * windows10ProfessionalEducationN, windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
+    * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education,
+    * windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional,
+    * windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN,
+    * windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
     */
   var targetEdition: js.UndefOr[Windows10EditionType] = js.undefined
 }

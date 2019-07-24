@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenoteEntityBaseModel extends Entity {
-  /** The endpoint where you can get details about the page. Read-only. */
+  // The endpoint where you can get details about the page. Read-only.
   var self: js.UndefOr[java.lang.String] = js.undefined
 }
 

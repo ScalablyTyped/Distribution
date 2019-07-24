@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsDefenderScanActionResult extends DeviceActionResult {
-  /** Scan type either full scan or quick scan */
+  // Scan type either full scan or quick scan
   var scanType: js.UndefOr[java.lang.String] = js.undefined
 }
 

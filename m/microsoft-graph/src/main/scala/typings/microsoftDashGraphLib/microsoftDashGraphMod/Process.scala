@@ -6,35 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Process extends js.Object {
-  /** User account identifier (user account context the process ran under) for example, AccountName, SID, and so on. */
+  // User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
   var accountName: js.UndefOr[java.lang.String] = js.undefined
-  /** The full process invocation commandline including all parameters. */
+  // The full process invocation commandline including all parameters.
   var commandLine: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+    * Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
     */
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Complex type containing file hashes (cryptographic and location-sensitive). */
+  // Complex type containing file hashes (cryptographic and location-sensitive).
   var fileHash: js.UndefOr[FileHash] = js.undefined
-  /** The integrity level of the process. Possible values are: unknown, untrusted, low, medium, high, system. */
+  // The integrity level of the process. Possible values are: unknown, untrusted, low, medium, high, system.
   var integrityLevel: js.UndefOr[ProcessIntegrityLevel] = js.undefined
-  /** True if the process is elevated. */
+  // True if the process is elevated.
   var isElevated: js.UndefOr[scala.Boolean] = js.undefined
-  /** The name of the process' Image file. */
+  // The name of the process' Image file.
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-    * For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+    * DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
+    * '2014-01-01T00:00:00Z'.
     */
   var parentProcessCreatedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The Process ID (PID) of the parent process. */
+  // The Process ID (PID) of the parent process.
   var parentProcessId: js.UndefOr[scala.Double] = js.undefined
-  /** The name of the image file of the parent process. */
+  // The name of the image file of the parent process.
   var parentProcessName: js.UndefOr[java.lang.String] = js.undefined
-  /** Full path, including filename. */
+  // Full path, including filename.
   var path: js.UndefOr[java.lang.String] = js.undefined
-  /** The Process ID (PID) of the process. */
+  // The Process ID (PID) of the process.
   var processId: js.UndefOr[scala.Double] = js.undefined
 }
 

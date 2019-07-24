@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubscribedSku extends Entity {
-  /** For example, 'User' or 'Company'. */
+  // For example, 'User' or 'Company'.
   var appliesTo: js.UndefOr[java.lang.String] = js.undefined
-  /** For example, 'Enabled'. */
+  // For example, 'Enabled'.
   var capabilityStatus: js.UndefOr[java.lang.String] = js.undefined
-  /** The number of licenses that have been assigned. */
+  // The number of licenses that have been assigned.
   var consumedUnits: js.UndefOr[scala.Double] = js.undefined
-  /** Information about the number and status of prepaid licenses. */
+  // Information about the number and status of prepaid licenses.
   var prepaidUnits: js.UndefOr[LicenseUnitsDetail] = js.undefined
-  /** Information about the service plans that are available with the SKU. Not nullable */
+  // Information about the service plans that are available with the SKU. Not nullable
   var servicePlans: js.UndefOr[js.Array[ServicePlanInfo]] = js.undefined
-  /** The unique identifier (GUID) for the service SKU. */
+  // The unique identifier (GUID) for the service SKU.
   var skuId: js.UndefOr[java.lang.String] = js.undefined
-  /** The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'. */
+  // The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
   var skuPartNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 

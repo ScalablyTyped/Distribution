@@ -6,9 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AttendeeAvailability extends js.Object {
-  /** The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person. */
+  /**
+    * The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's
+    * a person.
+    */
   var attendee: js.UndefOr[AttendeeBase] = js.undefined
-  /** The availability status of the attendee. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown. */
+  /**
+    * The availability status of the attendee. The possible values are: free, tentative, busy, oof, workingElsewhere,
+    * unknown.
+    */
   var availability: js.UndefOr[FreeBusyStatus] = js.undefined
 }
 

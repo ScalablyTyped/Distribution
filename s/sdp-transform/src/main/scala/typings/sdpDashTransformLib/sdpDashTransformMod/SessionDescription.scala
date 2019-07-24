@@ -39,7 +39,7 @@ object SessionDescription {
     description: java.lang.String = null,
     direction: sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive = null,
     email: java.lang.String = null,
-    ext: sdpDashTransformLib.Anon_Config = null,
+    ext: js.Array[sdpDashTransformLib.Anon_Config] = null,
     fingerprint: sdpDashTransformLib.Anon_Hash = null,
     groups: js.Array[sdpDashTransformLib.Anon_Mids] = null,
     iceOptions: java.lang.String = null,

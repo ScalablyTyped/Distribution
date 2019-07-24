@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsInformationProtectionDesktopApp extends WindowsInformationProtectionApp {
-  /** The binary name. */
+  // The binary name.
   var binaryName: js.UndefOr[java.lang.String] = js.undefined
-  /** The high binary version. */
+  // The high binary version.
   var binaryVersionHigh: js.UndefOr[java.lang.String] = js.undefined
-  /** The lower binary version. */
+  // The lower binary version.
   var binaryVersionLow: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RolePermission extends js.Object {
-  /** Actions */
+  // Actions
   var resourceActions: js.UndefOr[js.Array[ResourceAction]] = js.undefined
 }
 

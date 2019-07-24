@@ -12,6 +12,8 @@ trait MediaDescription
 object MediaDescription {
   @scala.inline
   def apply(
+    fmtp: js.Array[sdpDashTransformLib.Anon_ConfigPayload],
+    rtp: js.Array[sdpDashTransformLib.Anon_Codec],
     bandwidth: sdpDashTransformLib.Anon_AS = null,
     candidates: js.Array[sdpDashTransformLib.Anon_ComponentFoundation] = null,
     connection: sdpDashTransformLib.Anon_Ip = null,
@@ -20,9 +22,8 @@ object MediaDescription {
     description: java.lang.String = null,
     direction: sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive = null,
     endOfCandidates: java.lang.String = null,
-    ext: sdpDashTransformLib.Anon_Config = null,
+    ext: js.Array[sdpDashTransformLib.Anon_Config] = null,
     fingerprint: sdpDashTransformLib.Anon_Hash = null,
-    fmtp: sdpDashTransformLib.Anon_ConfigPayload = null,
     framerate: scala.Double | java.lang.String = null,
     icePwd: java.lang.String = null,
     iceUfrag: java.lang.String = null,
@@ -39,7 +40,6 @@ object MediaDescription {
     rtcpFbTrrInt: sdpDashTransformLib.Anon_PayloadValue = null,
     rtcpMux: java.lang.String = null,
     rtcpRsize: java.lang.String = null,
-    rtp: sdpDashTransformLib.Anon_Codec = null,
     sctpmap: sdpDashTransformLib.Anon_App = null,
     setup: java.lang.String = null,
     simulcast: sdpDashTransformLib.Anon_Dir1 = null,
@@ -49,7 +49,7 @@ object MediaDescription {
     ssrcs: js.Array[sdpDashTransformLib.Anon_Attribute] = null,
     xGoogleFlag: java.lang.String = null
   ): MediaDescription = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(fmtp = fmtp, rtp = rtp)
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth)
     if (candidates != null) __obj.updateDynamic("candidates")(candidates)
     if (connection != null) __obj.updateDynamic("connection")(connection)
@@ -60,7 +60,6 @@ object MediaDescription {
     if (endOfCandidates != null) __obj.updateDynamic("endOfCandidates")(endOfCandidates)
     if (ext != null) __obj.updateDynamic("ext")(ext)
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (fmtp != null) __obj.updateDynamic("fmtp")(fmtp)
     if (framerate != null) __obj.updateDynamic("framerate")(framerate.asInstanceOf[js.Any])
     if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd)
     if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag)
@@ -77,7 +76,6 @@ object MediaDescription {
     if (rtcpFbTrrInt != null) __obj.updateDynamic("rtcpFbTrrInt")(rtcpFbTrrInt)
     if (rtcpMux != null) __obj.updateDynamic("rtcpMux")(rtcpMux)
     if (rtcpRsize != null) __obj.updateDynamic("rtcpRsize")(rtcpRsize)
-    if (rtp != null) __obj.updateDynamic("rtp")(rtp)
     if (sctpmap != null) __obj.updateDynamic("sctpmap")(sctpmap)
     if (setup != null) __obj.updateDynamic("setup")(setup)
     if (simulcast != null) __obj.updateDynamic("simulcast")(simulcast)

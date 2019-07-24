@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-data", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val version_data: atTensorflowTfjsDashDataLib.atTensorflowTfjsDashDataLibStrings.`1DOT2DOT3` = js.native
+  val version_data: atTensorflowTfjsDashDataLib.atTensorflowTfjsDashDataLibStrings.`1DOT2DOT5` = js.native
   def array[T /* <: atTensorflowTfjsDashCoreLib.distTensorUnderscoreTypesMod.TensorContainer */](items: js.Array[T]): atTensorflowTfjsDashDataLib.distDatasetMod.Dataset[T] = js.native
   def csv(source: stdLib.RequestInfo): atTensorflowTfjsDashDataLib.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native
   def csv(source: stdLib.RequestInfo, csvConfig: atTensorflowTfjsDashDataLib.distTypesMod.CSVConfig): atTensorflowTfjsDashDataLib.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native

@@ -514,7 +514,12 @@ package object clientsSsmMod {
   type MaintenanceWindowLambdaQualifier = java.lang.String
   type MaintenanceWindowMaxResults = scala.Double
   type MaintenanceWindowName = java.lang.String
-  type MaintenanceWindowResourceType = awsDashSdkLib.awsDashSdkLibStrings.INSTANCE | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTANCE
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_GROUP
+    - java.lang.String
+  */
+  type MaintenanceWindowResourceType = _MaintenanceWindowResourceType | java.lang.String
   type MaintenanceWindowSchedule = java.lang.String
   type MaintenanceWindowSearchMaxResults = scala.Double
   type MaintenanceWindowStepFunctionsInput = java.lang.String

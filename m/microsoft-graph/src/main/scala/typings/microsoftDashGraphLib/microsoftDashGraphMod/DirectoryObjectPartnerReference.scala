@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DirectoryObjectPartnerReference extends DirectoryObject {
-  /** Description of the object returned. Read-only. */
+  // Description of the object returned. Read-only.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of directory object being returned, like group or application. Read-only. */
+  // Name of directory object being returned, like group or application. Read-only.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The tenant identifier for the partner tenant. Read-only. */
+  // The tenant identifier for the partner tenant. Read-only.
   var externalPartnerTenantId: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of the referenced object in the partner tenant. Read-only. */
+  // The type of the referenced object in the partner tenant. Read-only.
   var objectType: js.UndefOr[java.lang.String] = js.undefined
 }
 

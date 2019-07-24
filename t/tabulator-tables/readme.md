@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabulator-tables
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 Interactive table generation JavaScript library
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for tabulator-tables 4.2
+// Type definitions for tabulator-tables 4.3
 // Project: http://tabulator.info
 // Definitions by: Josh Harris <https://github.com/jojoshua>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

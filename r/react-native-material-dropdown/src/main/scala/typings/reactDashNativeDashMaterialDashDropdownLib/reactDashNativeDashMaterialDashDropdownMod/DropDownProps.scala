@@ -56,7 +56,7 @@ trait DropDownProps
     js.Function3[
       /* value */ java.lang.String, 
       /* index */ scala.Double, 
-      /* data */ DropDownData, 
+      /* data */ js.Array[DropDownData], 
       scala.Unit
     ]
   ] = js.undefined
@@ -150,7 +150,7 @@ object DropDownProps {
     labelExtractor: (/* item */ DropDownData, /* index */ scala.Double) => java.lang.String = null,
     onAccessibilityTap: () => scala.Unit = null,
     onBlur: () => scala.Unit = null,
-    onChangeText: (/* value */ java.lang.String, /* index */ scala.Double, /* data */ DropDownData) => scala.Unit = null,
+    onChangeText: (/* value */ java.lang.String, /* index */ scala.Double, /* data */ js.Array[DropDownData]) => scala.Unit = null,
     onFocus: () => scala.Unit = null,
     onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
     onLongPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,

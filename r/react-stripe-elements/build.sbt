@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-stripe-elements"
-version := "1.1-dt-20181231Z-5d3fd6"
+version := "1.2-dt-20190722Z-3f37ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "stripe-v3" % "3.1-dt-20190718Z-cb9c95")
+  "org.scalablytyped" %%% "stripe-v3" % "3.1-dt-20190723Z-61bf32")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

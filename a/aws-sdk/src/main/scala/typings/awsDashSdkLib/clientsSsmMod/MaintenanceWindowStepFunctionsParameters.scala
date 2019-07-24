@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MaintenanceWindowStepFunctionsParameters extends js.Object {
   /**
-    * The inputs for the STEP_FUNCTION task.
+    * The inputs for the STEP_FUNCTIONS task.
     */
   var Input: js.UndefOr[MaintenanceWindowStepFunctionsInput] = js.undefined
   /**
-    * The name of the STEP_FUNCTION task.
+    * The name of the STEP_FUNCTIONS task.
     */
   var Name: js.UndefOr[MaintenanceWindowStepFunctionsName] = js.undefined
 }

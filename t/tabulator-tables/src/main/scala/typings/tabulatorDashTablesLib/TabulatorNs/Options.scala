@@ -21,6 +21,7 @@ trait Options
      with OptionsClipboard
      with OptionsDataTree
      with OptionsCell
+     with OptionsHTML
 
 object Options {
   @scala.inline
@@ -100,7 +101,7 @@ object Options {
     dataTreeRowExpanded: (/* row */ RowComponent, /* level */ scala.Double) => scala.Unit = null,
     dataTreeStartExpanded: scala.Boolean | js.Array[scala.Boolean] | (js.Function2[/* row */ RowComponent, /* level */ scala.Double, scala.Boolean]) = null,
     downloadComplete: () => scala.Unit = null,
-    downloadConfig: tabulatorDashTablesLib.Anon_ColumnCalcsColumnGroups = null,
+    downloadConfig: AddditionalExportOptions = null,
     downloadDataFormatter: /* data */ js.Array[_] => _ = null,
     downloadReady: (/* fileContents */ js.Any, /* blob */ js.Any) => _ = null,
     footerElement: java.lang.String | stdLib.HTMLElement = null,
@@ -132,12 +133,14 @@ object Options {
     groupValues: js.Array[js.Array[_]] = null,
     groupVisibilityChanged: (/* group */ GroupComponent, /* visible */ scala.Boolean) => scala.Unit = null,
     headerFilterPlaceholder: java.lang.String = null,
+    headerVisible: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String | scala.Double | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` = null,
     history: js.UndefOr[scala.Boolean] = js.undefined,
     historyRedo: (/* action */ HistoryAction, /* component */ CellComponent | RowComponent, /* data */ js.Any) => scala.Unit = null,
     historyUndo: (/* action */ HistoryAction, /* component */ CellComponent | RowComponent, /* data */ js.Any) => scala.Unit = null,
     htmlImported: EmptyCallback = null,
     htmlImporting: EmptyCallback = null,
+    htmlOutputConfig: AddditionalExportOptions = null,
     index: scala.Double | java.lang.String = null,
     initialFilter: js.Array[Filter] = null,
     initialHeaderFilter: js.Array[
@@ -183,7 +186,7 @@ object Options {
     paginationButtonCount: scala.Int | scala.Double = null,
     paginationDataReceived: stdLib.Record[java.lang.String, java.lang.String] = null,
     paginationDataSent: stdLib.Record[java.lang.String, java.lang.String] = null,
-    paginationElement: stdLib.HTMLElement | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.string = null,
+    paginationElement: stdLib.HTMLElement | java.lang.String = null,
     paginationSize: scala.Int | scala.Double = null,
     paginationSizeSelector: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | js.Array[scala.Double] = null,
     persistenceID: java.lang.String = null,
@@ -192,6 +195,14 @@ object Options {
     persistentLayout: js.UndefOr[scala.Boolean] = js.undefined,
     persistentSort: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String | stdLib.HTMLElement = null,
+    print: js.UndefOr[scala.Boolean] = js.undefined,
+    printAsHtml: js.UndefOr[scala.Boolean] = js.undefined,
+    printConfig: AddditionalExportOptions = null,
+    printCopyStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    printFooter: StandardStringParam = null,
+    printFormatter: (/* tableHolderElement */ js.Any, /* tableElement */ js.Any) => _ = null,
+    printHeader: StandardStringParam = null,
+    printVisibleRows: js.UndefOr[scala.Boolean] = js.undefined,
     reactiveData: js.UndefOr[scala.Boolean] = js.undefined,
     renderComplete: () => scala.Unit = null,
     renderStarted: () => scala.Unit = null,
@@ -333,12 +344,14 @@ object Options {
     if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues)
     if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(js.Any.fromFunction2(groupVisibilityChanged))
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder)
+    if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
     if (historyRedo != null) __obj.updateDynamic("historyRedo")(js.Any.fromFunction3(historyRedo))
     if (historyUndo != null) __obj.updateDynamic("historyUndo")(js.Any.fromFunction3(historyUndo))
     if (htmlImported != null) __obj.updateDynamic("htmlImported")(htmlImported)
     if (htmlImporting != null) __obj.updateDynamic("htmlImporting")(htmlImporting)
+    if (htmlOutputConfig != null) __obj.updateDynamic("htmlOutputConfig")(htmlOutputConfig)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (initialFilter != null) __obj.updateDynamic("initialFilter")(initialFilter)
     if (initialHeaderFilter != null) __obj.updateDynamic("initialHeaderFilter")(initialHeaderFilter)
@@ -378,6 +391,14 @@ object Options {
     if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout)
     if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
+    if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml)
+    if (printConfig != null) __obj.updateDynamic("printConfig")(printConfig)
+    if (!js.isUndefined(printCopyStyle)) __obj.updateDynamic("printCopyStyle")(printCopyStyle)
+    if (printFooter != null) __obj.updateDynamic("printFooter")(printFooter.asInstanceOf[js.Any])
+    if (printFormatter != null) __obj.updateDynamic("printFormatter")(js.Any.fromFunction2(printFormatter))
+    if (printHeader != null) __obj.updateDynamic("printHeader")(printHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(printVisibleRows)) __obj.updateDynamic("printVisibleRows")(printVisibleRows)
     if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData)
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction0(renderComplete))
     if (renderStarted != null) __obj.updateDynamic("renderStarted")(js.Any.fromFunction0(renderStarted))

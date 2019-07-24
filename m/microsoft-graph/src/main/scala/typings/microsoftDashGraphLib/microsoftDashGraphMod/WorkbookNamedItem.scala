@@ -6,19 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookNamedItem extends Entity {
-  /** Represents the comment associated with this name. */
+  // Represents the comment associated with this name.
   var comment: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the object. Read-only. */
+  // The name of the object. Read-only.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only. */
+  // Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
   var scope: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates what type of reference is associated with the name. The possible values are: String, Integer, Double, Boolean, Range. Read-only. */
+  /**
+    * Indicates what type of reference is associated with the name. The possible values are: String, Integer, Double,
+    * Boolean, Range. Read-only.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only. */
+  // Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.
   var value: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether the object is visible or not. */
+  // Specifies whether the object is visible or not.
   var visible: js.UndefOr[scala.Boolean] = js.undefined
-  /** Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only. */
+  /**
+    * Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet.
+    * Read-only.
+    */
   var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
 }
 

@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceOperatingSystemSummary extends js.Object {
-  /** Number of android device count. */
+  // Number of android device count.
   var androidCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of iOS device count. */
+  // Number of iOS device count.
   var iosCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Mac OS X device count. */
+  // Number of Mac OS X device count.
   var macOSCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of unknown device count. */
+  // Number of unknown device count.
   var unknownCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Windows device count. */
+  // Number of Windows device count.
   var windowsCount: js.UndefOr[scala.Double] = js.undefined
-  /** Number of Windows mobile device count. */
+  // Number of Windows mobile device count.
   var windowsMobileCount: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-virtualized-select"
-version := "3.0-dt-20180802Z-50f000"
+version := "3.0-dt-20180802Z-f070e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190718Z-6e2ca3",
+  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190722Z-6e2ca3",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

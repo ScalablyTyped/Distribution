@@ -60,6 +60,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Erik Christensen <https://github.com/erikc5000>
 //                 Nick Zahn <https://github.com/Manc>
 //                 Jarom Loveridge <https://github.com/jloveridge>
+//                 Luis Pais <https://github.com/ranguna>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // Documentation: https://mongodb.github.io/node-mongodb-native/3.1/api/

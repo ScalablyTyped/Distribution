@@ -83,6 +83,7 @@ package object ramdaMod {
   type EvolveNestedValue[V, E /* <: Evolver */] = Evolve[V, E]
   type EvolveValue[V, E] = (EvolveNestedValue[V, E]) | stdLib.ReturnType[E]
   type Evolved[T] = Evolvable[T]
+  type FilterOnceApplied[T] = js.Function1[/* source */ js.Array[T] | Dictionary[T], Dictionary[js.Any] | js.Array[js.Any]]
   type KeyValuePair[K, V] = js.Tuple2[K, V]
   type ObjFunc = org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
   type ObjFunc2 = org.scalablytyped.runtime.StringDictionary[js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Boolean]]

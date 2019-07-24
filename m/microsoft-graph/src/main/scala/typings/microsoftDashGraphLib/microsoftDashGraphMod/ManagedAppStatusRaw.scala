@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppStatusRaw extends ManagedAppStatus {
-  /** Status report content. */
+  // Status report content.
   var content: js.UndefOr[js.Any] = js.undefined
 }
 

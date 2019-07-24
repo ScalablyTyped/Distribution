@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppStatus extends Entity {
-  /** Friendly name of the status report. */
+  // Friendly name of the status report.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the entity. */
+  // Version of the entity.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

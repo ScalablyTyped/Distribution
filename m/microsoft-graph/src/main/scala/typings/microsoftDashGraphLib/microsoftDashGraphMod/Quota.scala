@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Quota extends js.Object {
-  /** Total space consumed by files in the recycle bin, in bytes. Read-only. */
+  // Total space consumed by files in the recycle bin, in bytes. Read-only.
   var deleted: js.UndefOr[scala.Double] = js.undefined
-  /** Total space remaining before reaching the quota limit, in bytes. Read-only. */
+  // Total space remaining before reaching the quota limit, in bytes. Read-only.
   var remaining: js.UndefOr[scala.Double] = js.undefined
-  /** Enumeration value that indicates the state of the storage space. Read-only. */
+  // Enumeration value that indicates the state of the storage space. Read-only.
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** Total allowed storage space, in bytes. Read-only. */
+  // Total allowed storage space, in bytes. Read-only.
   var total: js.UndefOr[scala.Double] = js.undefined
-  /** Total space used, in bytes. Read-only. */
+  // Total space used, in bytes. Read-only.
   var used: js.UndefOr[scala.Double] = js.undefined
 }
 

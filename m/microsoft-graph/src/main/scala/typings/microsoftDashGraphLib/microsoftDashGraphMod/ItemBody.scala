@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemBody extends js.Object {
-  /** The content of the item. */
+  // The content of the item.
   var content: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of the content. Possible values are text and HTML. */
+  // The type of the content. Possible values are text and HTML.
   var contentType: js.UndefOr[BodyType] = js.undefined
 }
 

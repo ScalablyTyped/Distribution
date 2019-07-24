@@ -17,11 +17,11 @@ trait CanvasToTempFilePathOptions extends js.Object {
   /**
     * 输出图片高度（默认为 height * 屏幕像素密度）
     */
-  var destHeight: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var destHeight: js.UndefOr[scala.Double] = js.undefined
   /**
     * 输出图片宽度（默认为 width * 屏幕像素密度）
     */
-  var destWidth: js.UndefOr[scala.Boolean] = js.undefined
+  var destWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * 接口调用失败的回调函数
     */
@@ -61,8 +61,8 @@ object CanvasToTempFilePathOptions {
   def apply(
     canvasId: java.lang.String = null,
     complete: () => scala.Unit = null,
-    destHeight: () => scala.Unit = null,
-    destWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    destHeight: scala.Int | scala.Double = null,
+    destWidth: scala.Int | scala.Double = null,
     fail: () => scala.Unit = null,
     fileType: java.lang.String = null,
     height: scala.Int | scala.Double = null,
@@ -75,8 +75,8 @@ object CanvasToTempFilePathOptions {
     val __obj = js.Dynamic.literal()
     if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId)
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (destHeight != null) __obj.updateDynamic("destHeight")(js.Any.fromFunction0(destHeight))
-    if (!js.isUndefined(destWidth)) __obj.updateDynamic("destWidth")(destWidth)
+    if (destHeight != null) __obj.updateDynamic("destHeight")(destHeight.asInstanceOf[js.Any])
+    if (destWidth != null) __obj.updateDynamic("destWidth")(destWidth.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (fileType != null) __obj.updateDynamic("fileType")(fileType)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jasmine-expect"
-version := "4.0.2-bb27b4"
+version := "4.0.3-bb27b4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,54 +5,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`0`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`1`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`2`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`3`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`4`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`5`
-  - intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`6`
-*/
-trait TYPE extends js.Object
+@js.native
+sealed trait TYPE extends js.Object
 
-object TYPE {
+@JSImport("intl-messageformat-parser/lib/types", "TYPE")
+@js.native
+object TYPE extends js.Object {
   /**
     * Variable w/o any format, e.g `var` in `this is a {var}`
     */
-  @scala.inline
-  def argument: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @js.native
+  sealed trait argument
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Variable w/ date format
     */
-  @scala.inline
-  def date: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`3` = this.cast(3)
+  @js.native
+  sealed trait date
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Raw text
     */
-  @scala.inline
-  def literal: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`0` = this.cast(0)
+  @js.native
+  sealed trait literal
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Variable w/ number format
     */
-  @scala.inline
-  def number: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`2` = this.cast(2)
+  @js.native
+  sealed trait number
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Variable w/ plural format
     */
-  @scala.inline
-  def plural: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`6` = this.cast(6)
+  @js.native
+  sealed trait plural
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Variable w/ select format
     */
-  @scala.inline
-  def select: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`5` = this.cast(5)
+  @js.native
+  sealed trait select
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
   /**
     * Variable w/ time format
     */
-  @scala.inline
-  def time: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserLibNumbers.`4` = this.cast(4)
+  @js.native
+  sealed trait time
+    extends intlDashMessageformatDashParserLib.libTypesMod.TYPE
+  
+  /* 1 */ val argument: argument with scala.Double = js.native
+  /* 3 */ val date: date with scala.Double = js.native
+  /* 0 */ val literal: literal with scala.Double = js.native
+  /* 2 */ val number: number with scala.Double = js.native
+  /* 6 */ val plural: plural with scala.Double = js.native
+  /* 5 */ val select: select with scala.Double = js.native
+  /* 4 */ val time: time with scala.Double = js.native
+  @JSBracketAccess
+  def apply(value: scala.Double): js.UndefOr[intlDashMessageformatDashParserLib.libTypesMod.TYPE with scala.Double] = js.native
 }
 

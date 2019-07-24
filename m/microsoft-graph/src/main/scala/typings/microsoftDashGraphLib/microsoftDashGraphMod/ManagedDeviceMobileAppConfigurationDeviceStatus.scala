@@ -6,19 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity {
-  /** The DateTime when device compliance grace period expires */
+  // The DateTime when device compliance grace period expires
   var complianceGracePeriodExpirationDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Device name of the DevicePolicyStatus. */
+  // Device name of the DevicePolicyStatus.
   var deviceDisplayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The device model that is being reported */
+  // The device model that is being reported
   var deviceModel: js.UndefOr[java.lang.String] = js.undefined
-  /** Last modified date time of the policy report. */
+  // Last modified date time of the policy report.
   var lastReportedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned. */
+  /**
+    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated,
+    * nonCompliant, error, conflict, notAssigned.
+    */
   var status: js.UndefOr[ComplianceStatus] = js.undefined
-  /** The User Name that is being reported */
+  // The User Name that is being reported
   var userName: js.UndefOr[java.lang.String] = js.undefined
-  /** UserPrincipalName. */
+  // UserPrincipalName.
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
 }
 

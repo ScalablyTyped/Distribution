@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartLegendFormat extends Entity {
-  /** Represents the fill format of an object, which includes background formating information. Read-only. */
+  // Represents the fill format of an object, which includes background formating information. Read-only.
   var fill: js.UndefOr[WorkbookChartFill] = js.undefined
-  /** Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only. */
+  // Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
   var font: js.UndefOr[WorkbookChartFont] = js.undefined
 }
 

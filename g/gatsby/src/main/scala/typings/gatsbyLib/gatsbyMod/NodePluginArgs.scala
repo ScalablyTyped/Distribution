@@ -10,7 +10,7 @@ trait NodePluginArgs
   var actions: Actions
   var boundActionCreators: Actions
   var cache: gatsbyLib.Anon_Del
-  var createContentDigest: js.Function
+  var createContentDigest: js.Function1[/* input */ js.Any, java.lang.String]
   var createNodeId: js.Function
   var emitter: nodeLib.eventsMod.EventEmitter
   var getNode: js.Function
@@ -31,7 +31,7 @@ object NodePluginArgs {
     actions: Actions,
     boundActionCreators: Actions,
     cache: gatsbyLib.Anon_Del,
-    createContentDigest: js.Function,
+    createContentDigest: /* input */ js.Any => java.lang.String,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,
     getNode: js.Function,
@@ -46,7 +46,7 @@ object NodePluginArgs {
     tracing: Tracing,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): NodePluginArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, pathPrefix = pathPrefix, reporter = reporter, store = store, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, pathPrefix = pathPrefix, reporter = reporter, store = store, tracing = tracing)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[NodePluginArgs]
   }

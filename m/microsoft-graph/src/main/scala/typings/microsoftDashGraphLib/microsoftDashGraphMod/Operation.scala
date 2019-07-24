@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Operation extends Entity {
-  /** The start time of the operation. */
+  // The start time of the operation.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The time of the last action of the operation. */
+  // The time of the last action of the operation.
   var lastActionDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The current status of the operation: notStarted, running, completed, failed */
+  // The current status of the operation: notStarted, running, completed, failed
   var status: js.UndefOr[OperationStatus] = js.undefined
 }
 

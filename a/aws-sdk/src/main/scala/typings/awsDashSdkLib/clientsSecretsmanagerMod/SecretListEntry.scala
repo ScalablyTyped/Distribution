@@ -38,6 +38,7 @@ trait SecretListEntry extends js.Object {
     * The friendly name of the secret. You can use forward slashes in the name to represent a path hierarchy. For example, /prod/databases/dbserver1 could represent the secret for a server named dbserver1 in the folder databases in the folder prod. 
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
+  var OwningService: js.UndefOr[OwningServiceType] = js.undefined
   /**
     * Indicated whether automatic, scheduled rotation is enabled for this secret.
     */
@@ -71,6 +72,7 @@ object SecretListEntry {
     LastChangedDate: LastChangedDateType = null,
     LastRotatedDate: LastRotatedDateType = null,
     Name: SecretNameType = null,
+    OwningService: OwningServiceType = null,
     RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
     RotationLambdaARN: RotationLambdaARNType = null,
     RotationRules: RotationRulesType = null,
@@ -86,6 +88,7 @@ object SecretListEntry {
     if (LastChangedDate != null) __obj.updateDynamic("LastChangedDate")(LastChangedDate)
     if (LastRotatedDate != null) __obj.updateDynamic("LastRotatedDate")(LastRotatedDate)
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService)
     if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled)
     if (RotationLambdaARN != null) __obj.updateDynamic("RotationLambdaARN")(RotationLambdaARN)
     if (RotationRules != null) __obj.updateDynamic("RotationRules")(RotationRules)

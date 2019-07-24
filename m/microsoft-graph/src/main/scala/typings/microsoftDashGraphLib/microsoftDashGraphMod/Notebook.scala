@@ -6,23 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Notebook extends OnenoteEntityHierarchyModel {
-  /** Indicates whether this is the user's default notebook. Read-only. */
+  // Indicates whether this is the user's default notebook. Read-only.
   var isDefault: js.UndefOr[scala.Boolean] = js.undefined
-  /** Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only. */
+  /**
+    * Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the
+    * owner. Read-only.
+    */
   var isShared: js.UndefOr[scala.Boolean] = js.undefined
-  /** Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote native client if it's installed. The oneNoteWebURL link opens the notebook in OneNote Online. */
+  /**
+    * Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote native client if it's
+    * installed. The oneNoteWebURL link opens the notebook in OneNote on the web.
+    */
   var links: js.UndefOr[NotebookLinks] = js.undefined
-  /** The section groups in the notebook. Read-only. Nullable. */
+  // The section groups in the notebook. Read-only. Nullable.
   var sectionGroups: js.UndefOr[js.Array[SectionGroup]] = js.undefined
-  /** The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only. */
+  // The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only.
   var sectionGroupsUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The sections in the notebook. Read-only. Nullable. */
+  // The sections in the notebook. Read-only. Nullable.
   var sections: js.UndefOr[js.Array[OnenoteSection]] = js.undefined
-  /** The URL for the sections navigation property, which returns all the sections in the notebook. Read-only. */
+  // The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
   var sectionsUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Possible values are: Owner, Contributor, Reader, None. Owner represents owner-level access to the notebook.
-    * Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.
+    * Possible values are: Owner, Contributor, Reader, None. Owner represents owner-level access to the notebook. Contributor
+    * represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.
     */
   var userRole: js.UndefOr[OnenoteUserRole] = js.undefined
 }

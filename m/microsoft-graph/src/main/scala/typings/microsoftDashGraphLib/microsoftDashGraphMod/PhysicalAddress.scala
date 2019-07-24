@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PhysicalAddress extends js.Object {
-  /** The city. */
+  // The city.
   var city: js.UndefOr[java.lang.String] = js.undefined
-  /** The country or region. It's a free-format string value, for example, 'United States'. */
+  // The country or region. It's a free-format string value, for example, 'United States'.
   var countryOrRegion: js.UndefOr[java.lang.String] = js.undefined
-  /** The postal code. */
+  // The postal code.
   var postalCode: js.UndefOr[java.lang.String] = js.undefined
-  /** The state. */
+  // The state.
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** The street. */
+  // The street.
   var street: js.UndefOr[java.lang.String] = js.undefined
 }
 

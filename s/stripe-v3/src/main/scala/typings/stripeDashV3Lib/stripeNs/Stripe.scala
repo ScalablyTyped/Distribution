@@ -51,7 +51,11 @@ trait Stripe extends js.Object {
     data: HandleCardSetupOptions
   ): js.Promise[SetupIntentResponse] = js.native
   def paymentRequest(options: stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequestOptions): stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequest = js.native
-  def redirectToCheckout(options: StripeCheckoutOptions): js.Promise[StripeRedirectResponse] = js.native
+  // We use function overloading instead of a union here to ensure that redirectToCheckout can only be
+  // called with either the server options or the client options - not a mix of both.
+  def redirectToCheckout(options: StripeClientCheckoutOptions): js.Promise[StripeRedirectResponse] = js.native
+  // tslint:disable-next-line unified-signatures
+  def redirectToCheckout(options: StripeServerCheckoutOptions): js.Promise[StripeRedirectResponse] = js.native
   def retrievePaymentIntent(clientSecret: java.lang.String): js.Promise[PaymentIntentResponse] = js.native
   def retrieveSource(options: RetrieveSourceOptions): js.Promise[SourceResponse] = js.native
 }

@@ -12,31 +12,34 @@ trait WindowsUpdateForBusinessConfiguration extends DeviceConfiguration {
     */
   var automaticUpdateMode: js.UndefOr[AutomaticUpdateMode] = js.undefined
   /**
-    * Determines which branch devices will receive their updates from.
-    * Possible values are: userDefined, all, businessReadyOnly, windowsInsiderBuildFast, windowsInsiderBuildSlow, windowsInsiderBuildRelease.
+    * Determines which branch devices will receive their updates from. Possible values are: userDefined, all,
+    * businessReadyOnly, windowsInsiderBuildFast, windowsInsiderBuildSlow, windowsInsiderBuildRelease.
     */
   var businessReadyUpdatesOnly: js.UndefOr[WindowsUpdateType] = js.undefined
-  /** Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat, httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode. */
+  /**
+    * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat,
+    * httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
+    */
   var deliveryOptimizationMode: js.UndefOr[WindowsDeliveryOptimizationMode] = js.undefined
-  /** Exclude Windows update Drivers */
+  // Exclude Windows update Drivers
   var driversExcluded: js.UndefOr[scala.Boolean] = js.undefined
-  /** Defer Feature Updates by these many days */
+  // Defer Feature Updates by these many days
   var featureUpdatesDeferralPeriodInDays: js.UndefOr[scala.Double] = js.undefined
-  /** Feature Updates Pause Expiry datetime */
+  // Feature Updates Pause Expiry datetime
   var featureUpdatesPauseExpiryDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Pause Feature Updates */
+  // Pause Feature Updates
   var featureUpdatesPaused: js.UndefOr[scala.Boolean] = js.undefined
-  /** Installation schedule */
+  // Installation schedule
   var installationSchedule: js.UndefOr[WindowsUpdateInstallScheduleType] = js.undefined
-  /** Allow Microsoft Update Service */
+  // Allow Microsoft Update Service
   var microsoftUpdateServiceAllowed: js.UndefOr[scala.Boolean] = js.undefined
-  /** The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed. */
+  // The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
   var prereleaseFeatures: js.UndefOr[PrereleaseFeatures] = js.undefined
-  /** Defer Quality Updates by these many days */
+  // Defer Quality Updates by these many days
   var qualityUpdatesDeferralPeriodInDays: js.UndefOr[scala.Double] = js.undefined
-  /** Quality Updates Pause Expiry datetime */
+  // Quality Updates Pause Expiry datetime
   var qualityUpdatesPauseExpiryDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Pause Quality Updates */
+  // Pause Quality Updates
   var qualityUpdatesPaused: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeZoneInformation extends js.Object {
-  /** An identifier for the time zone. */
+  // An identifier for the time zone.
   var alias: js.UndefOr[java.lang.String] = js.undefined
-  /** A display string that represents the time zone. */
+  // A display string that represents the time zone.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
 }
 

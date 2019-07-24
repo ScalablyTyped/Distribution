@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sdp-transform"
-version := "2.4-dt-20180806Z-e868e0"
+version := "2.4-dt-20190722Z-5cf3c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

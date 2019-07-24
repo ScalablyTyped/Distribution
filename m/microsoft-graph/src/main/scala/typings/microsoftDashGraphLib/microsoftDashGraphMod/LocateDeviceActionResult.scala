@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocateDeviceActionResult extends DeviceActionResult {
-  /** device location */
+  // device location
   var deviceLocation: js.UndefOr[DeviceGeoLocation] = js.undefined
 }
 

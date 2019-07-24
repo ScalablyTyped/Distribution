@@ -69,6 +69,10 @@ trait IPaymentIntentCreationOptions extends js.Object {
     * Set to `true` to save this PaymentIntent’s payment method to the associated Customer, if the payment method is not already attached. This parameter only applies to the payment method passed in the same request or the current payment method attached to the PaymentIntent and must be specified again if a new payment method is added.
     */
   var save_payment_method: js.UndefOr[scala.Boolean] = js.undefined
+  /*
+    * Indicates that you intend to make future payments with this PaymentIntent’s payment method.
+    */
+  var setup_future_usage: js.UndefOr[PaymentIntentFutureUsageType] = js.undefined
   /**
     * Shipping information for this PaymentIntent.
     */
@@ -105,6 +109,7 @@ object IPaymentIntentCreationOptions {
     receipt_email: java.lang.String = null,
     return_url: java.lang.String = null,
     save_payment_method: js.UndefOr[scala.Boolean] = js.undefined,
+    setup_future_usage: PaymentIntentFutureUsageType = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     statement_descriptor: java.lang.String = null,
     transfer_data: IPaymentIntentTransferData = null,
@@ -123,6 +128,7 @@ object IPaymentIntentCreationOptions {
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (return_url != null) __obj.updateDynamic("return_url")(return_url)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
+    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)

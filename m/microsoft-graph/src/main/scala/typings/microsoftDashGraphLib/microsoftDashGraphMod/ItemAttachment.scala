@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemAttachment extends Attachment {
-  /** The attached message or event. Navigation property. */
+  // The attached message or event. Navigation property.
   var item: js.UndefOr[OutlookItem] = js.undefined
 }
 

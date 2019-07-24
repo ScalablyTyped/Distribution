@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PersonOrGroupColumn extends js.Object {
-  /** Indicates whether multiple values can be selected from the source. */
+  // Indicates whether multiple values can be selected from the source.
   var allowMultipleSelection: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly. */
+  // Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
   var chooseFromType: js.UndefOr[java.lang.String] = js.undefined
-  /** How to display the information about the person or group chosen. See below. */
+  // How to display the information about the person or group chosen. See below.
   var displayAs: js.UndefOr[java.lang.String] = js.undefined
 }
 

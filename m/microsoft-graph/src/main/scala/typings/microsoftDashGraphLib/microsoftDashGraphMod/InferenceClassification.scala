@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InferenceClassification extends Entity {
-  /** A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable. */
+  /**
+    * A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+    * Read-only. Nullable.
+    */
   var overrides: js.UndefOr[js.Array[InferenceClassificationOverride]] = js.undefined
 }
 

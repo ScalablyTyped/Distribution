@@ -21,7 +21,7 @@ object RenderBodyArgs {
     actions: Actions,
     boundActionCreators: Actions,
     cache: gatsbyLib.Anon_Del,
-    createContentDigest: js.Function,
+    createContentDigest: /* input */ js.Any => java.lang.String,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,
     getNode: js.Function,
@@ -42,7 +42,7 @@ object RenderBodyArgs {
     store: Store,
     tracing: Tracing
   ): RenderBodyArgs = {
-    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, pathPrefix = pathPrefix, pathname = pathname, reporter = reporter, setBodyAttributes = setBodyAttributes, setBodyProps = setBodyProps, setHeadComponents = setHeadComponents, setHtmlAttributes = setHtmlAttributes, setPostBodyComponents = setPostBodyComponents, setPreBodyComponents = setPreBodyComponents, store = store, tracing = tracing)
+    val __obj = js.Dynamic.literal(actions = actions, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, pathPrefix = pathPrefix, pathname = pathname, reporter = reporter, setBodyAttributes = setBodyAttributes, setBodyProps = setBodyProps, setHeadComponents = setHeadComponents, setHtmlAttributes = setHtmlAttributes, setPostBodyComponents = setPostBodyComponents, setPreBodyComponents = setPreBodyComponents, store = store, tracing = tracing)
   
     __obj.asInstanceOf[RenderBodyArgs]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AuthenticationTypeLogin
   extends Credentials
      with AuthenticationType {
-  /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */
+  /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ or ‘custom’ */
   var `type`: js.UndefOr[
     nodemailerLib.nodemailerLibStrings.login | nodemailerLib.nodemailerLibStrings.Login | nodemailerLib.nodemailerLibStrings.LOGIN
   ] = js.undefined

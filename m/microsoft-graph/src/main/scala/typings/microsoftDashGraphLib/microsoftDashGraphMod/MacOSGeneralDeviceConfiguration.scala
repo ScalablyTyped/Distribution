@@ -6,29 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MacOSGeneralDeviceConfiguration extends DeviceConfiguration {
-  /** List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant. */
+  // List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
   var compliantAppListType: js.UndefOr[AppListType] = js.undefined
-  /** List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements. */
+  /**
+    * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
+    * can contain a maximum of 10000 elements.
+    */
   var compliantAppsList: js.UndefOr[js.Array[AppListItem]] = js.undefined
-  /** An email address lacking a suffix that matches any of these strings will be considered out-of-domain. */
+  // An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
   var emailInDomainSuffixes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Block simple passwords. */
+  // Block simple passwords.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. */
+  // Number of days before the password expires.
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Number of character sets a password must contain. Valid values 0 to 4 */
+  // Number of character sets a password must contain. Valid values 0 to 4
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of passwords. */
+  // Minimum length of passwords.
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity required before a password is required. */
+  // Minutes of inactivity required before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity required before the screen times out. */
+  // Minutes of inactivity required before the screen times out.
   var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. */
+  // Number of previous passwords to block.
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Whether or not to require a password. */
+  // Whether or not to require a password.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
 }
 

@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Identity extends js.Object {
   /**
-    * The identity's display name. Note that this may not always be available or up to date.
-    * For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    * The identity's display name. Note that this may not always be available or up to date. For example, if a user changes
+    * their display name, the API may show the new value in a future response, but the items associated with the user won't
+    * show up as having changed when using delta.
     */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Unique identifier for the identity. */
+  // Unique identifier for the identity.
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 

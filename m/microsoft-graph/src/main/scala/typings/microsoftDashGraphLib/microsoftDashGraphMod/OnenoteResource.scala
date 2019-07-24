@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnenoteResource extends OnenoteEntityBaseModel {
-  /** The content stream */
+  // The content stream
   var content: js.UndefOr[js.Any] = js.undefined
-  /** The URL for downloading the content */
+  // The URL for downloading the content
   var contentUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SettingSource extends js.Object {
-  /** Not yet documented */
+  // Not yet documented
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 

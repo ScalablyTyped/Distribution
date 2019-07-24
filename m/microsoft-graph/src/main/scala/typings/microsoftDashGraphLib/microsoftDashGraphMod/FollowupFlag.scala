@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FollowupFlag extends js.Object {
-  /** The date and time that the follow-up was finished. */
+  // The date and time that the follow-up was finished.
   var completedDateTime: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The date and time that the follow-up is to be finished. */
+  // The date and time that the follow-up is to be finished.
   var dueDateTime: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The status for follow-up for an item. Possible values are notFlagged, complete, and flagged. */
+  // The status for follow-up for an item. Possible values are notFlagged, complete, and flagged.
   var flagStatus: js.UndefOr[FollowupFlagStatus] = js.undefined
-  /** The date and time that the follow-up is to begin. */
+  // The date and time that the follow-up is to begin.
   var startDateTime: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
 

@@ -6,35 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppRegistration extends Entity {
-  /** The app package Identifier */
+  // The app package Identifier
   var appIdentifier: js.UndefOr[MobileAppIdentifier] = js.undefined
-  /** App version */
+  // App version
   var applicationVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Zero or more policys already applied on the registered app when it last synchronized with managment service. */
+  // Zero or more policys already applied on the registered app when it last synchronized with managment service.
   var appliedPolicies: js.UndefOr[js.Array[ManagedAppPolicy]] = js.undefined
-  /** Date and time of creation */
+  // Date and time of creation
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Host device name */
+  // Host device name
   var deviceName: js.UndefOr[java.lang.String] = js.undefined
-  /** App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. */
+  /**
+    * App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in
+    * all conditions.
+    */
   var deviceTag: js.UndefOr[java.lang.String] = js.undefined
-  /** Host device type */
+  // Host device type
   var deviceType: js.UndefOr[java.lang.String] = js.undefined
-  /** Zero or more reasons an app registration is flagged. E.g. app running on rooted device */
+  // Zero or more reasons an app registration is flagged. E.g. app running on rooted device
   var flaggedReasons: js.UndefOr[js.Array[ManagedAppFlaggedReason]] = js.undefined
-  /** Zero or more policies admin intended for the app as of now. */
+  // Zero or more policies admin intended for the app as of now.
   var intendedPolicies: js.UndefOr[js.Array[ManagedAppPolicy]] = js.undefined
-  /** Date and time of last the app synced with management service. */
+  // Date and time of last the app synced with management service.
   var lastSyncDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** App management SDK version */
+  // App management SDK version
   var managementSdkVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Zero or more long running operations triggered on the app registration. */
+  // Zero or more long running operations triggered on the app registration.
   var operations: js.UndefOr[js.Array[ManagedAppOperation]] = js.undefined
-  /** Operating System version */
+  // Operating System version
   var platformVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** The user Id to who this app registration belongs. */
+  // The user Id to who this app registration belongs.
   var userId: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the entity. */
+  // Version of the entity.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

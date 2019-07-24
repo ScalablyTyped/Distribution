@@ -12,7 +12,7 @@ trait BootboxPromptOptions
   var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
   var inputOptions: js.UndefOr[js.Array[Anon_Group]] = js.undefined
   var inputType: js.UndefOr[
-    bootboxLib.bootboxLibStrings.text | bootboxLib.bootboxLibStrings.textarea | bootboxLib.bootboxLibStrings.email | bootboxLib.bootboxLibStrings.select | bootboxLib.bootboxLibStrings.checkbox | bootboxLib.bootboxLibStrings.date | bootboxLib.bootboxLibStrings.time | bootboxLib.bootboxLibStrings.number | bootboxLib.bootboxLibStrings.password
+    bootboxLib.bootboxLibStrings.text | bootboxLib.bootboxLibStrings.textarea | bootboxLib.bootboxLibStrings.email | bootboxLib.bootboxLibStrings.select | bootboxLib.bootboxLibStrings.checkbox | bootboxLib.bootboxLibStrings.date | bootboxLib.bootboxLibStrings.time | bootboxLib.bootboxLibStrings.number | bootboxLib.bootboxLibStrings.password | bootboxLib.bootboxLibStrings.radio | bootboxLib.bootboxLibStrings.range
   ] = js.undefined
   @JSName("title")
   var title_BootboxPromptOptions: java.lang.String
@@ -32,10 +32,12 @@ object BootboxPromptOptions {
     className: java.lang.String = null,
     closeButton: js.UndefOr[scala.Boolean] = js.undefined,
     inputOptions: js.Array[Anon_Group] = null,
-    inputType: bootboxLib.bootboxLibStrings.text | bootboxLib.bootboxLibStrings.textarea | bootboxLib.bootboxLibStrings.email | bootboxLib.bootboxLibStrings.select | bootboxLib.bootboxLibStrings.checkbox | bootboxLib.bootboxLibStrings.date | bootboxLib.bootboxLibStrings.time | bootboxLib.bootboxLibStrings.number | bootboxLib.bootboxLibStrings.password = null,
+    inputType: bootboxLib.bootboxLibStrings.text | bootboxLib.bootboxLibStrings.textarea | bootboxLib.bootboxLibStrings.email | bootboxLib.bootboxLibStrings.select | bootboxLib.bootboxLibStrings.checkbox | bootboxLib.bootboxLibStrings.date | bootboxLib.bootboxLibStrings.time | bootboxLib.bootboxLibStrings.number | bootboxLib.bootboxLibStrings.password | bootboxLib.bootboxLibStrings.radio | bootboxLib.bootboxLibStrings.range = null,
+    locale: java.lang.String = null,
     onEscape: js.Function0[_] | scala.Boolean = null,
+    scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     show: js.UndefOr[scala.Boolean] = js.undefined,
-    size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large = null,
+    size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.sm | bootboxLib.bootboxLibStrings.large | bootboxLib.bootboxLibStrings.lg | bootboxLib.bootboxLibStrings.`extra-large` | bootboxLib.bootboxLibStrings.xl = null,
     value: java.lang.String = null
   ): BootboxPromptOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), title = title)
@@ -46,7 +48,9 @@ object BootboxPromptOptions {
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (inputOptions != null) __obj.updateDynamic("inputOptions")(inputOptions)
     if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
     if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidStoreApp extends MobileApp {
-  /** The Android app store URL. */
+  // The Android app store URL.
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The value for the minimum applicable operating system. */
+  // The value for the minimum applicable operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[AndroidMinimumOperatingSystem] = js.undefined
-  /** The package identifier. */
+  // The package identifier.
   var packageId: js.UndefOr[java.lang.String] = js.undefined
 }
 

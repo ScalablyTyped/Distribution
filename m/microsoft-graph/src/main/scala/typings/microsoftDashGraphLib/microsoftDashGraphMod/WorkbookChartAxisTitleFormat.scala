@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartAxisTitleFormat extends Entity {
-  /** Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only. */
+  // Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
   var font: js.UndefOr[WorkbookChartFont] = js.undefined
 }
 

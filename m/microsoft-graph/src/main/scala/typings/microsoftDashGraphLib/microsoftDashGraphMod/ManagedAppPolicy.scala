@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppPolicy extends Entity {
-  /** The date and time the policy was created. */
+  // The date and time the policy was created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The policy's description. */
+  // The policy's description.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Policy display name. */
+  // Policy display name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Last time the policy was modified. */
+  // Last time the policy was modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the entity. */
+  // Version of the entity.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

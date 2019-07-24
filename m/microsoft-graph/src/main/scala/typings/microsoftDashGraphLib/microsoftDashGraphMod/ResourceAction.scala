@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResourceAction extends js.Object {
-  /** Allowed Actions */
+  // Allowed Actions
   var allowedResourceActions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Not Allowed Actions */
+  // Not Allowed Actions
   var notAllowedResourceActions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

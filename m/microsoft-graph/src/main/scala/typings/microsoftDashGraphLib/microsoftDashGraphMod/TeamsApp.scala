@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsApp extends Entity {
-  /** The details for each version of the app. */
+  // The details for each version of the app.
   var appDefinitions: js.UndefOr[js.Array[TeamsAppDefinition]] = js.undefined
-  /** The name of the catalog app provided by the app developer in the Microsoft Teams zip app package. */
+  // The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The method of distribution for the app. */
+  // The method of distribution for the app.
   var distributionMethod: js.UndefOr[TeamsAppDistributionMethod] = js.undefined
-  /** The ID of the catalog provided by the app developer in the Microsoft Teams zip app package. */
+  // The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   var externalId: js.UndefOr[java.lang.String] = js.undefined
 }
 

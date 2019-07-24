@@ -6,11 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Hashes extends js.Object {
-  /** The CRC32 value of the file in little endian (if available). Read-only. */
+  // The CRC32 value of the file in little endian (if available). Read-only.
   var crc32Hash: js.UndefOr[java.lang.String] = js.undefined
-  /** A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. */
+  /**
+    * A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+    * Read-only.
+    */
   var quickXorHash: js.UndefOr[java.lang.String] = js.undefined
-  /** SHA1 hash for the contents of the file (if available). Read-only. */
+  // SHA1 hash for the contents of the file (if available). Read-only.
   var sha1Hash: js.UndefOr[java.lang.String] = js.undefined
 }
 

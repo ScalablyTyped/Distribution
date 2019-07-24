@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PersonType extends js.Object {
-  /** The type of data source, such as Person. */
+  // The type of data source, such as Person.
   var `class`: js.UndefOr[java.lang.String] = js.undefined
-  /** The secondary type of data source, such as OrganizationUser. */
+  // The secondary type of data source, such as OrganizationUser.
   var subclass: js.UndefOr[java.lang.String] = js.undefined
 }
 

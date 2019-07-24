@@ -106,6 +106,7 @@ class Question protected ()
   var isRequired: scala.Boolean = js.native
   val locCommentText: LocalizableString = js.native
   val locDescription: LocalizableString = js.native
+  var locNotificationInData: scala.Boolean = js.native
   var locOwner: ILocalizableOwner = js.native
   val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native

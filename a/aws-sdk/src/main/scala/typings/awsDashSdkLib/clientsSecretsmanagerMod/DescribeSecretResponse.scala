@@ -38,6 +38,7 @@ trait DescribeSecretResponse extends js.Object {
     * The user-provided friendly name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
+  var OwningService: js.UndefOr[OwningServiceType] = js.undefined
   /**
     * Specifies whether automatic rotation is enabled for this secret. To enable rotation, use RotateSecret with AutomaticallyRotateAfterDays set to a value greater than 0. To disable rotation, use CancelRotateSecret.
     */
@@ -71,6 +72,7 @@ object DescribeSecretResponse {
     LastChangedDate: LastChangedDateType = null,
     LastRotatedDate: LastRotatedDateType = null,
     Name: SecretNameType = null,
+    OwningService: OwningServiceType = null,
     RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
     RotationLambdaARN: RotationLambdaARNType = null,
     RotationRules: RotationRulesType = null,
@@ -86,6 +88,7 @@ object DescribeSecretResponse {
     if (LastChangedDate != null) __obj.updateDynamic("LastChangedDate")(LastChangedDate)
     if (LastRotatedDate != null) __obj.updateDynamic("LastRotatedDate")(LastRotatedDate)
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService)
     if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled)
     if (RotationLambdaARN != null) __obj.updateDynamic("RotationLambdaARN")(RotationLambdaARN)
     if (RotationRules != null) __obj.updateDynamic("RotationRules")(RotationRules)

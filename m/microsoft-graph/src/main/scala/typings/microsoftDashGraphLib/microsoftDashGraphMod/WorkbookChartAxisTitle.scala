@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartAxisTitle extends Entity {
-  /** Represents the formatting of chart axis title. Read-only. */
+  // Represents the formatting of chart axis title. Read-only.
   var format: js.UndefOr[WorkbookChartAxisTitleFormat] = js.undefined
-  /** Represents the axis title. */
+  // Represents the axis title.
   var text: js.UndefOr[java.lang.String] = js.undefined
-  /** A boolean that specifies the visibility of an axis title. */
+  // A boolean that specifies the visibility of an axis title.
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

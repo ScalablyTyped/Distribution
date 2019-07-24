@@ -6,39 +6,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MacOSCompliancePolicy extends DeviceCompliancePolicy {
-  /** Require that devices have enabled device threat protection. */
+  // Require that devices have enabled device threat protection.
   var deviceThreatProtectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured, low, medium, high, notSet. */
+  /**
+    * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
+    * low, medium, high, notSet.
+    */
   var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
-  /** Corresponds to the 'Block all incoming connections' option. */
+  // Corresponds to the 'Block all incoming connections' option.
   var firewallBlockAllIncoming: js.UndefOr[scala.Boolean] = js.undefined
-  /** Corresponds to 'Enable stealth mode.' */
+  // Corresponds to 'Enable stealth mode.'
   var firewallEnableStealthMode: js.UndefOr[scala.Boolean] = js.undefined
-  /** Whether the firewall should be enabled or not. */
+  // Whether the firewall should be enabled or not.
   var firewallEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Maximum MacOS version. */
+  // Maximum MacOS version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum MacOS version. */
+  // Minimum MacOS version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether or not to block simple passwords. */
+  // Indicates whether or not to block simple passwords.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before the password expires. Valid values 1 to 65535 */
+  // Number of days before the password expires. Valid values 1 to 65535
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum length of password. Valid values 4 to 14 */
+  // Minimum length of password. Valid values 4 to 14
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a password is required. */
+  // Minutes of inactivity before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 1 to 24 */
+  // Number of previous passwords to block. Valid values 1 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Whether or not to require a password. */
+  // Whether or not to require a password.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** The required password type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Require encryption on Mac OS devices. */
+  // Require encryption on Mac OS devices.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require that devices have enabled system integrity protection. */
+  // Require that devices have enabled system integrity protection.
   var systemIntegrityProtectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 

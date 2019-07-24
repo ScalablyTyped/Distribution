@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartSeries extends Entity {
-  /** Represents the formatting of a chart series, which includes fill and line formatting. Read-only. */
+  // Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
   var format: js.UndefOr[WorkbookChartSeriesFormat] = js.undefined
-  /** Represents the name of a series in a chart. */
+  // Represents the name of a series in a chart.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Represents a collection of all points in the series. Read-only. */
+  // Represents a collection of all points in the series. Read-only.
   var points: js.UndefOr[js.Array[WorkbookChartPoint]] = js.undefined
 }
 

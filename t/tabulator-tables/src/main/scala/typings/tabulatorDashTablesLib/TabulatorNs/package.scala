@@ -99,6 +99,7 @@ package object TabulatorNs {
     - CheckboxParams
     - SelectParams
     - AutoCompleteParams
+    - InputParams
     - js.Function1[/ * cell * / CellComponent, js.Object]
   */
   type EditorParams = _EditorParams | (js.Function1[/* cell */ CellComponent, js.Object])
@@ -154,6 +155,7 @@ package object TabulatorNs {
   type RowChangedCallback = js.Function1[/* row */ RowComponent, scala.Unit]
   type RowEventCallback = js.Function2[/* e */ js.Any, /* row */ RowComponent, scala.Unit]
   type RowLookup = RowComponent | stdLib.HTMLElement | java.lang.String | scala.Double
+  type StandardStringParam = java.lang.String | stdLib.HTMLElement | (js.Function0[java.lang.String | stdLib.HTMLElement])
   type ValueBooleanCallback = js.Function1[/* value */ js.Any, scala.Boolean]
   type ValueStringCallback = js.Function1[/* value */ js.Any, java.lang.String]
   type ValueVoidCallback = js.Function1[/* value */ js.Any, scala.Unit]

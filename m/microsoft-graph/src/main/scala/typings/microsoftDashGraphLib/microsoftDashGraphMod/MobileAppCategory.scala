@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MobileAppCategory extends Entity {
-  /** The name of the app category. */
+  // The name of the app category.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The date and time the mobileAppCategory was last modified. */
+  // The date and time the mobileAppCategory was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

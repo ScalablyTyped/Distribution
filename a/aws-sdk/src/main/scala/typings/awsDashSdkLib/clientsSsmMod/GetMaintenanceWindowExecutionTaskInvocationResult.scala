@@ -43,7 +43,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends js.Object {
     */
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   /**
-    * Retrieves the task type for a maintenance window. Task types include the following: LAMBDA, STEP_FUNCTION, AUTOMATION, RUN_COMMAND.
+    * Retrieves the task type for a maintenance window. Task types include the following: LAMBDA, STEP_FUNCTIONS, AUTOMATION, RUN_COMMAND.
     */
   var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**

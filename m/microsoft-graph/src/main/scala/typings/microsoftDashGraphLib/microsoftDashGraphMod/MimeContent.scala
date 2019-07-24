@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MimeContent extends js.Object {
-  /** Indicates the content mime type. */
+  // Indicates the content mime type.
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /** The byte array that contains the actual content. */
+  // The byte array that contains the actual content.
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 

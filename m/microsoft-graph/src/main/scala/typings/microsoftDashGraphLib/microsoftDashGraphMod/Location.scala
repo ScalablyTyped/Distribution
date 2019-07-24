@@ -6,21 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
-  /** The street address of the location. */
+  // The street address of the location.
   var address: js.UndefOr[PhysicalAddress] = js.undefined
-  /** The geographic coordinates and elevation of the location. */
+  // The geographic coordinates and elevation of the location.
   var coordinates: js.UndefOr[OutlookGeoCoordinates] = js.undefined
-  /** The name associated with the location. */
+  // The name associated with the location.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Optional email address of the location. */
+  // Optional email address of the location.
   var locationEmailAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of location. The possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates, streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only. */
+  /**
+    * The type of location. The possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates,
+    * streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only.
+    */
   var locationType: js.UndefOr[LocationType] = js.undefined
-  /** Optional URI representing the location. */
+  // Optional URI representing the location.
   var locationUri: js.UndefOr[java.lang.String] = js.undefined
-  /** For internal use only. */
+  // For internal use only.
   var uniqueId: js.UndefOr[java.lang.String] = js.undefined
-  /** For internal use only. */
+  // For internal use only.
   var uniqueIdType: js.UndefOr[LocationUniqueIdType] = js.undefined
 }
 

@@ -6,24 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Reminder extends js.Object {
-  /** Identifies the version of the reminder. Every time the reminder is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. */
+  /**
+    * Identifies the version of the reminder. Every time the reminder is changed, changeKey changes as well. This allows
+    * Exchange to apply changes to the correct version of the object.
+    */
   var changeKey: js.UndefOr[java.lang.String] = js.undefined
-  /** The date, time and time zone that the event ends. */
+  // The date, time and time zone that the event ends.
   var eventEndTime: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The unique ID of the event. Read only. */
+  // The unique ID of the event. Read only.
   var eventId: js.UndefOr[java.lang.String] = js.undefined
-  /** The location of the event. */
+  // The location of the event.
   var eventLocation: js.UndefOr[Location] = js.undefined
-  /** The date, time, and time zone that the event starts. */
+  // The date, time, and time zone that the event starts.
   var eventStartTime: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The text of the event's subject line. */
+  // The text of the event's subject line.
   var eventSubject: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The URL to open the event in Outlook on the web.The event will open in the browser if you are logged in to your mailbox via Outlook on the web.
-    * You will be prompted to login if you are not already logged in with the browser.This URL can be accessed from within an iFrame.
+    * The URL to open the event in Outlook on the web.The event will open in the browser if you are logged in to your mailbox
+    * via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL can be
+    * accessed from within an iFrame.
     */
   var eventWebLink: js.UndefOr[java.lang.String] = js.undefined
-  /** The date, time, and time zone that the reminder is set to occur. */
+  // The date, time, and time zone that the reminder is set to occur.
   var reminderFireTime: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
 

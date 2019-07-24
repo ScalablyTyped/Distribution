@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceManagementPartner extends Entity {
-  /** Partner display name */
+  // Partner display name
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Whether device management partner is configured or not */
+  // Whether device management partner is configured or not
   var isConfigured: js.UndefOr[scala.Boolean] = js.undefined
-  /** Timestamp of last heartbeat after admin enabled option Connect to Device management Partner */
+  // Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
   var lastHeartbeatDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp. */
+  // Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
   var partnerAppType: js.UndefOr[DeviceManagementPartnerAppType] = js.undefined
-  /** Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive. */
+  // Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
   var partnerState: js.UndefOr[DeviceManagementPartnerTenantState] = js.undefined
-  /** Partner Single tenant App id */
+  // Partner Single tenant App id
   var singleTenantAppId: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime in UTC when PartnerDevices will be marked as NonCompliant */
+  // DateTime in UTC when PartnerDevices will be marked as NonCompliant
   var whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** DateTime in UTC when PartnerDevices will be removed */
+  // DateTime in UTC when PartnerDevices will be removed
   var whenPartnerDevicesWillBeRemovedDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

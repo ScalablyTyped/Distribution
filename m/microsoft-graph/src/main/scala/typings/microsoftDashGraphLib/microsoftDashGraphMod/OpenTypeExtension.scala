@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OpenTypeExtension extends Entity {
-  /** A unique text identifier for an open type open extension. Required. */
+  // A unique text identifier for an open type open extension. Required.
   var extensionName: js.UndefOr[java.lang.String] = js.undefined
 }
 

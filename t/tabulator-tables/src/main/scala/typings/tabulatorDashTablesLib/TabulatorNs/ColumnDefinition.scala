@@ -112,6 +112,8 @@ trait ColumnDefinition
   var headerVertical: js.UndefOr[scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.flip] = js.undefined
   /** When the getHtml function is called, hide the column from the output. */
   var hideInHtml: js.UndefOr[scala.Boolean] = js.undefined
+  /** Show/Hide a particular column in the HTML output*/
+  var htmlOutput: js.UndefOr[scala.Boolean] = js.undefined
    // Align?
   /** sets the minimum width of this column, this should be set in pixels (this takes priority over the global option of columnMinWidth) */
   var minWidth: js.UndefOr[scala.Double] = js.undefined
@@ -251,6 +253,7 @@ object ColumnDefinition {
     headerTooltip: scala.Boolean | java.lang.String | (js.Function1[/* column */ ColumnComponent, java.lang.String]) = null,
     headerVertical: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.flip = null,
     hideInHtml: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlOutput: js.UndefOr[scala.Boolean] = js.undefined,
     minWidth: scala.Int | scala.Double = null,
     mutator: CustomMutator = null,
     mutatorClipboard: CustomMutator = null,
@@ -343,6 +346,7 @@ object ColumnDefinition {
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerVertical != null) __obj.updateDynamic("headerVertical")(headerVertical.asInstanceOf[js.Any])
     if (!js.isUndefined(hideInHtml)) __obj.updateDynamic("hideInHtml")(hideInHtml)
+    if (!js.isUndefined(htmlOutput)) __obj.updateDynamic("htmlOutput")(htmlOutput)
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mutator != null) __obj.updateDynamic("mutator")(mutator)
     if (mutatorClipboard != null) __obj.updateDynamic("mutatorClipboard")(mutatorClipboard)

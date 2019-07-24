@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookFilter extends Entity {
-  /** The currently applied filter on the given column. Read-only. */
+  // The currently applied filter on the given column. Read-only.
   var criteria: js.UndefOr[WorkbookFilterCriteria] = js.undefined
 }
 

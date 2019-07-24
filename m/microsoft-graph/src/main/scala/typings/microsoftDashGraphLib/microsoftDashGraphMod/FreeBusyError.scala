@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FreeBusyError extends js.Object {
-  /** Describes the error. */
+  // Describes the error.
   var message: js.UndefOr[java.lang.String] = js.undefined
-  /** The response code from querying for the availability of the user, distribution list, or resource. */
+  // The response code from querying for the availability of the user, distribution list, or resource.
   var responseCode: js.UndefOr[java.lang.String] = js.undefined
 }
 

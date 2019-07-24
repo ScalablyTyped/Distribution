@@ -21,6 +21,8 @@ package object clientsShieldMod {
     - awsDashSdkLib.awsDashSdkLibStrings.SOURCE_COUNTRY
     - awsDashSdkLib.awsDashSdkLibStrings.SOURCE_IP_ADDRESS
     - awsDashSdkLib.awsDashSdkLibStrings.SOURCE_USER_AGENT
+    - awsDashSdkLib.awsDashSdkLibStrings.WORDPRESS_PINGBACK_REFLECTOR
+    - awsDashSdkLib.awsDashSdkLibStrings.WORDPRESS_PINGBACK_SOURCE
     - java.lang.String
   */
   type AttackPropertyIdentifier = _AttackPropertyIdentifier | java.lang.String

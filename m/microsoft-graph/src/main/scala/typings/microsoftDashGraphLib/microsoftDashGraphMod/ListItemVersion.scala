@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListItemVersion extends BaseItemVersion {
-  /** A collection of the fields and values for this version of the list item. */
+  // A collection of the fields and values for this version of the list item.
   var fields: js.UndefOr[FieldValueSet] = js.undefined
 }
 

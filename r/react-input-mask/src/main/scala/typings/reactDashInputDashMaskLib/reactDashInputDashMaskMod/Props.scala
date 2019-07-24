@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props
-  extends reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLInputElement] {
   /**
     * Show mask even in empty input without focus.
     */
@@ -59,7 +59,7 @@ object Props {
   @scala.inline
   def apply(
     mask: java.lang.String,
-    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLInputElement] = null,
     alwaysShowMask: js.UndefOr[scala.Boolean] = js.undefined,
     beforeMaskedValueChange: (/* newState */ InputState, /* oldState */ InputState, /* userInput */ java.lang.String, /* maskOptions */ MaskOptions) => InputState = null,
     formatChars: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
@@ -67,7 +67,7 @@ object Props {
     maskChar: java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal(mask = mask)
-    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (!js.isUndefined(alwaysShowMask)) __obj.updateDynamic("alwaysShowMask")(alwaysShowMask)
     if (beforeMaskedValueChange != null) __obj.updateDynamic("beforeMaskedValueChange")(js.Any.fromFunction4(beforeMaskedValueChange))
     if (formatChars != null) __obj.updateDynamic("formatChars")(formatChars)

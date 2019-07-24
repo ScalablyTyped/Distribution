@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Chart extends js.Object {
+  var aspectRatio: scala.Double | scala.Null = js.native
   var canvas: stdLib.HTMLCanvasElement | scala.Null = js.native
   var chartArea: ChartArea = js.native
   var config: ChartConfiguration = js.native
   var ctx: stdLib.CanvasRenderingContext2D | scala.Null = js.native
   var data: ChartData = js.native
+  var height: scala.Double | scala.Null = js.native
+  var options: ChartOptions = js.native
+  var width: scala.Double | scala.Null = js.native
   def clear(): js.Object = js.native
   def destroy(): js.Object = js.native
   def generateLegend(): js.Object = js.native

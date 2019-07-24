@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileAttachment extends Attachment {
-  /** The base64-encoded contents of the file. */
+  // The base64-encoded contents of the file.
   var contentBytes: js.UndefOr[scala.Double] = js.undefined
-  /** The ID of the attachment in the Exchange store. */
+  // The ID of the attachment in the Exchange store.
   var contentId: js.UndefOr[java.lang.String] = js.undefined
-  /** Do not use this property as it is not supported. */
+  // Do not use this property as it is not supported.
   var contentLocation: js.UndefOr[java.lang.String] = js.undefined
 }
 

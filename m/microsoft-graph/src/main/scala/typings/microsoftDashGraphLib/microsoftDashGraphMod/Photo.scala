@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Photo extends js.Object {
-  /** Camera manufacturer. Read-only. */
+  // Camera manufacturer. Read-only.
   var cameraMake: js.UndefOr[java.lang.String] = js.undefined
-  /** Camera model. Read-only. */
+  // Camera model. Read-only.
   var cameraModel: js.UndefOr[java.lang.String] = js.undefined
-  /** The denominator for the exposure time fraction from the camera. Read-only. */
+  // The denominator for the exposure time fraction from the camera. Read-only.
   var exposureDenominator: js.UndefOr[scala.Double] = js.undefined
-  /** The numerator for the exposure time fraction from the camera. Read-only. */
+  // The numerator for the exposure time fraction from the camera. Read-only.
   var exposureNumerator: js.UndefOr[scala.Double] = js.undefined
-  /** The F-stop value from the camera. Read-only. */
+  // The F-stop value from the camera. Read-only.
   var fNumber: js.UndefOr[scala.Double] = js.undefined
-  /** The focal length from the camera. Read-only. */
+  // The focal length from the camera. Read-only.
   var focalLength: js.UndefOr[scala.Double] = js.undefined
-  /** The ISO value from the camera. Read-only. */
+  // The ISO value from the camera. Read-only.
   var iso: js.UndefOr[scala.Double] = js.undefined
-  /** Represents the date and time the photo was taken. Read-only. */
+  // Represents the date and time the photo was taken. Read-only.
   var takenDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

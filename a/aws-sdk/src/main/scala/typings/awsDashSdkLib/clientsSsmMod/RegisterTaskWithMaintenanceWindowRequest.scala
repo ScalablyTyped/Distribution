@@ -39,7 +39,7 @@ trait RegisterTaskWithMaintenanceWindowRequest extends js.Object {
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   /**
-    * The targets (either instances or maintenance window targets). Specify instances using the following format:   Key=InstanceIds,Values=&lt;instance-id-1&gt;,&lt;instance-id-2&gt;  Specify maintenance window targets using the following format:  Key=&lt;WindowTargetIds&gt;,Values=&lt;window-target-id-1&gt;,&lt;window-target-id-2&gt; 
+    * The targets (either instances or maintenance window targets). Specify instances using the following format:   Key=InstanceIds,Values=&lt;instance-id-1&gt;,&lt;instance-id-2&gt;  Specify maintenance window targets using the following format:  Key=WindowTargetIds;,Values=&lt;window-target-id-1&gt;,&lt;window-target-id-2&gt; 
     */
   var Targets: awsDashSdkLib.clientsSsmMod.Targets
   /**

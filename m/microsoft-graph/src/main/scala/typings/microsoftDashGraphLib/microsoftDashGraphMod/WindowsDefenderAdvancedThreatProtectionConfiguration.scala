@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsDefenderAdvancedThreatProtectionConfiguration extends DeviceConfiguration {
-  /** Windows Defender AdvancedThreatProtection 'Allow Sample Sharing' Rule */
+  // Windows Defender AdvancedThreatProtection 'Allow Sample Sharing' Rule
   var allowSampleSharing: js.UndefOr[scala.Boolean] = js.undefined
-  /** Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency. */
+  // Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.
   var enableExpeditedTelemetryReporting: js.UndefOr[scala.Boolean] = js.undefined
 }
 

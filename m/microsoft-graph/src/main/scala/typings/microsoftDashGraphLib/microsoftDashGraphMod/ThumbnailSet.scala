@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThumbnailSet extends Entity {
-  /** A 1920x1920 scaled thumbnail. */
+  // A 1920x1920 scaled thumbnail.
   var large: js.UndefOr[Thumbnail] = js.undefined
-  /** A 176x176 scaled thumbnail. */
+  // A 176x176 scaled thumbnail.
   var medium: js.UndefOr[Thumbnail] = js.undefined
-  /** A 48x48 cropped thumbnail. */
+  // A 48x48 cropped thumbnail.
   var small: js.UndefOr[Thumbnail] = js.undefined
-  /** A custom thumbnail image or the original image used to generate other thumbnails. */
+  // A custom thumbnail image or the original image used to generate other thumbnails.
   var source: js.UndefOr[Thumbnail] = js.undefined
 }
 

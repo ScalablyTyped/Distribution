@@ -20,6 +20,7 @@ class Client protected () extends js.Object {
   def onError(err: js.Any): scala.Unit = js.native
   def onUpdate(message: js.Any): scala.Unit = js.native
   def overrideReconnectionAuth(auth: js.Any): scala.Unit = js.native
+  def reauthenticate(auth: js.Any): js.Promise[atHapiNesLib.atHapiNesLibNumbers.`true`] = js.native
   def request(options: atHapiNesLib.libClientMod.ClientNs.ClientRequestOptions): js.Promise[_] = js.native
     // can be `null | number` but also the "socket" value from websocket message data.
   def request(options: java.lang.String): js.Promise[_] = js.native

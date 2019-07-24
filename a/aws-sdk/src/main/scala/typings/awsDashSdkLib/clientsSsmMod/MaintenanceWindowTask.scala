@@ -39,7 +39,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Targets: js.UndefOr[Targets] = js.undefined
   /**
-    * The resource that the task uses during execution. For RUN_COMMAND and AUTOMATION task types, TaskArn is the Systems Manager document name or ARN. For LAMBDA tasks, it's the function name or ARN. For STEP_FUNCTION tasks, it's the state machine ARN.
+    * The resource that the task uses during execution. For RUN_COMMAND and AUTOMATION task types, TaskArn is the Systems Manager document name or ARN. For LAMBDA tasks, it's the function name or ARN. For STEP_FUNCTIONS tasks, it's the state machine ARN.
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
   /**
-    * The type of task. The type can be one of the following: RUN_COMMAND, AUTOMATION, LAMBDA, or STEP_FUNCTION.
+    * The type of task. The type can be one of the following: RUN_COMMAND, AUTOMATION, LAMBDA, or STEP_FUNCTIONS.
     */
   var Type: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**

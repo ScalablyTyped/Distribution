@@ -16,7 +16,7 @@ trait SharedAttributes extends js.Object {
     sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive
   ] = js.undefined
   // a=extmap
-  var ext: js.UndefOr[sdpDashTransformLib.Anon_Config] = js.undefined
+  var ext: js.UndefOr[js.Array[sdpDashTransformLib.Anon_Config]] = js.undefined
   var fingerprint: js.UndefOr[sdpDashTransformLib.Anon_Hash] = js.undefined
   var icePwd: js.UndefOr[java.lang.String] = js.undefined
   var iceUfrag: js.UndefOr[java.lang.String] = js.undefined
@@ -32,7 +32,7 @@ object SharedAttributes {
   def apply(
     control: java.lang.String = null,
     direction: sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive = null,
-    ext: sdpDashTransformLib.Anon_Config = null,
+    ext: js.Array[sdpDashTransformLib.Anon_Config] = null,
     fingerprint: sdpDashTransformLib.Anon_Hash = null,
     icePwd: java.lang.String = null,
     iceUfrag: java.lang.String = null,

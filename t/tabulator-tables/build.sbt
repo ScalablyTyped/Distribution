@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tabulator-tables"
-version := "4.2-dt-20190418Z-4af6c1"
+version := "4.3-dt-20190722Z-92560e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

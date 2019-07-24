@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosUpdateConfiguration extends DeviceConfiguration {
-  /** Active Hours End (active hours mean the time window when updates install should not happen) */
+  // Active Hours End (active hours mean the time window when updates install should not happen)
   var activeHoursEnd: js.UndefOr[java.lang.String] = js.undefined
-  /** Active Hours Start (active hours mean the time window when updates install should not happen) */
+  // Active Hours Start (active hours mean the time window when updates install should not happen)
   var activeHoursStart: js.UndefOr[java.lang.String] = js.undefined
-  /** Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. */
+  // Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.
   var scheduledInstallDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
-  /** UTC Time Offset indicated in minutes */
+  // UTC Time Offset indicated in minutes
   var utcTimeOffsetInMinutes: js.UndefOr[scala.Double] = js.undefined
 }
 

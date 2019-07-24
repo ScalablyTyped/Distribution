@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Stage extends js.Object {
+  /** Stage duration. */
   var duration: java.lang.String
+  /** Target number of VUs. */
   var target: scala.Double
 }
 

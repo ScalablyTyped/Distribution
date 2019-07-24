@@ -6,21 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceInstallState extends Entity {
-  /** Device Id. */
+  // Device Id.
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
-  /** Device name. */
+  // Device name.
   var deviceName: js.UndefOr[java.lang.String] = js.undefined
-  /** The error code for install failures. */
+  // The error code for install failures.
   var errorCode: js.UndefOr[java.lang.String] = js.undefined
-  /** The install state of the eBook. Possible values are: notApplicable, installed, failed, notInstalled, uninstallFailed, unknown. */
+  /**
+    * The install state of the eBook. Possible values are: notApplicable, installed, failed, notInstalled, uninstallFailed,
+    * unknown.
+    */
   var installState: js.UndefOr[InstallState] = js.undefined
-  /** Last sync date and time. */
+  // Last sync date and time.
   var lastSyncDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** OS Description. */
+  // OS Description.
   var osDescription: js.UndefOr[java.lang.String] = js.undefined
-  /** OS Version. */
+  // OS Version.
   var osVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Device User Name. */
+  // Device User Name.
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 

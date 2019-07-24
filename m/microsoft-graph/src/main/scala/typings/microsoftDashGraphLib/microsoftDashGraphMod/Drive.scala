@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait Drive extends BaseItem {
   /**
-    * Describes the type of drive represented by this resource. OneDrive personal drives will return personal.
-    * OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+    * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for
+    * Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
     */
   var driveType: js.UndefOr[java.lang.String] = js.undefined
-  /** All items contained in the drive. Read-only. Nullable. */
+  // All items contained in the drive. Read-only. Nullable.
   var items: js.UndefOr[js.Array[DriveItem]] = js.undefined
-  /** For drives in SharePoint, the underlying document library list. Read-only. Nullable. */
+  // For drives in SharePoint, the underlying document library list. Read-only. Nullable.
   var list: js.UndefOr[List] = js.undefined
-  /** Optional. The user account that owns the drive. Read-only. */
+  // Optional. The user account that owns the drive. Read-only.
   var owner: js.UndefOr[IdentitySet] = js.undefined
-  /** Optional. Information about the drive's storage space quota. Read-only. */
+  // Optional. Information about the drive's storage space quota. Read-only.
   var quota: js.UndefOr[Quota] = js.undefined
-  /** The root folder of the drive. Read-only. */
+  // The root folder of the drive. Read-only.
   var root: js.UndefOr[DriveItem] = js.undefined
   var sharePointIds: js.UndefOr[SharepointIds] = js.undefined
-  /** Collection of common folders available in OneDrive. Read-only. Nullable. */
+  // Collection of common folders available in OneDrive. Read-only. Nullable.
   var special: js.UndefOr[js.Array[DriveItem]] = js.undefined
-  /** If present, indicates that this is a system-managed drive. Read-only. */
+  // If present, indicates that this is a system-managed drive. Read-only.
   var system: js.UndefOr[SystemFacet] = js.undefined
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KeyValue extends js.Object {
-  /** Key for the key-value pair. */
+  // Key for the key-value pair.
   var key: js.UndefOr[java.lang.String] = js.undefined
-  /** Value for the key-value pair. */
+  // Value for the key-value pair.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

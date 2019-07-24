@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeSlot extends js.Object {
-  /** The date, time, and time zone that a period begins. */
+  // The date, time, and time zone that a period begins.
   var end: js.UndefOr[DateTimeTimeZone] = js.undefined
-  /** The date, time, and time zone that a period ends. */
+  // The date, time, and time zone that a period ends.
   var start: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
 

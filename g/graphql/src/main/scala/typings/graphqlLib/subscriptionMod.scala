@@ -47,7 +47,7 @@ object subscriptionMod extends js.Object {
     ]
   ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def subscribe[TData](args: graphqlLib.Anon_ArgName): js.Promise[
-    stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
+    stdLib.AsyncIterableIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
@@ -67,7 +67,7 @@ object subscriptionMod extends js.Object {
       ]
     ]
   ): js.Promise[
-    stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
+    stdLib.AsyncIterableIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
 }
 

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppOperation extends Entity {
-  /** The operation name. */
+  // The operation name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The last time the app operation was modified. */
+  // The last time the app operation was modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The current state of the operation */
+  // The current state of the operation
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the entity. */
+  // Version of the entity.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

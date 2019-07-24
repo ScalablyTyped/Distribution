@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceManagementExchangeConnector extends Entity {
-  /** The name of the server hosting the Exchange Connector. */
+  // The name of the server hosting the Exchange Connector.
   var connectorServerName: js.UndefOr[java.lang.String] = js.undefined
-  /** An alias assigned to the Exchange server */
+  // An alias assigned to the Exchange server
   var exchangeAlias: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated. */
+  // The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated.
   var exchangeConnectorType: js.UndefOr[DeviceManagementExchangeConnectorType] = js.undefined
-  /** Exchange Organization to the Exchange server */
+  // Exchange Organization to the Exchange server
   var exchangeOrganization: js.UndefOr[java.lang.String] = js.undefined
-  /** Last sync time for the Exchange Connector */
+  // Last sync time for the Exchange Connector
   var lastSyncDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Email address used to configure the Service To Service Exchange Connector. */
+  // Email address used to configure the Service To Service Exchange Connector.
   var primarySmtpAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the Exchange server. */
+  // The name of the Exchange server.
   var serverName: js.UndefOr[java.lang.String] = js.undefined
-  /** Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected. */
+  // Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected.
   var status: js.UndefOr[DeviceManagementExchangeConnectorStatus] = js.undefined
-  /** The version of the ExchangeConnectorAgent */
+  // The version of the ExchangeConnectorAgent
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

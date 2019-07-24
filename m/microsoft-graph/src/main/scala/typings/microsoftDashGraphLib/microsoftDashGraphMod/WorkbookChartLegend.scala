@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartLegend extends Entity {
-  /** Represents the formatting of a chart legend, which includes fill and font formatting. Read-only. */
+  // Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
   var format: js.UndefOr[WorkbookChartLegendFormat] = js.undefined
-  /** Boolean value for whether the chart legend should overlap with the main body of the chart. */
+  // Boolean value for whether the chart legend should overlap with the main body of the chart.
   var overlay: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom. */
+  // Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom.
   var position: js.UndefOr[java.lang.String] = js.undefined
-  /** A boolean value the represents the visibility of a ChartLegend object. */
+  // A boolean value the represents the visibility of a ChartLegend object.
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

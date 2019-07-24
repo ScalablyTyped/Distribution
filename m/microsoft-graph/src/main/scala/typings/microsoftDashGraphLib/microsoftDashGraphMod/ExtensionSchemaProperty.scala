@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExtensionSchemaProperty extends js.Object {
-  /** The name of the strongly-typed property defined as part of a schema extension. */
+  // The name of the strongly-typed property defined as part of a schema extension.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String.  See the table below for more details. */
+  /**
+    * The type of the property that is defined as part of a schema extension. Allowed values are Binary, Boolean, DateTime,
+    * Integer or String. See the table below for more details.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

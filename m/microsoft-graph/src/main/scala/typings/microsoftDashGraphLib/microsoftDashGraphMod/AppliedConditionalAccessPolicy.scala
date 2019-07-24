@@ -6,17 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppliedConditionalAccessPolicy extends js.Object {
-  /** Refers to the Name of the conditional access policy (example: 'Require MFA for Salesforce'). */
+  // Refers to the Name of the conditional access policy (example: 'Require MFA for Salesforce').
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Refers to the grant controls enforced by the conditional access policy (example: 'Require multi-factor authentication'). */
+  /**
+    * Refers to the grant controls enforced by the conditional access policy (example: 'Require multi-factor
+    * authentication').
+    */
   var enforcedGrantControls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Refers to the session controls enforced by the conditional access policy (example: 'Require app enforced controls'). */
+  // Refers to the session controls enforced by the conditional access policy (example: 'Require app enforced controls').
   var enforcedSessionControls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Unique GUID of the conditional access polic.y */
+  // Unique GUID of the conditional access polic.y
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Indicates the result of the CA policy that was triggered.
-    * Possible values are:successfailurenotApplied - Policy isn't applied because policy conditions were not met.notEnabled - This is due to the policy in disabled state.
+    * Indicates the result of the CA policy that was triggered. Possible values are:successfailurenotApplied - Policy isn't
+    * applied because policy conditions were not met.notEnabled - This is due to the policy in disabled state.
     */
   var result: js.UndefOr[AppliedConditionalAccessPolicyResult] = js.undefined
 }

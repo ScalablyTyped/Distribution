@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SectionLinks extends js.Object {
-  /** Opens the section in the OneNote native client if it's installed. */
+  // Opens the section in the OneNote native client if it's installed.
   var oneNoteClientUrl: js.UndefOr[ExternalLink] = js.undefined
-  /** Opens the section in OneNote Online. */
+  // Opens the section in OneNote on the web.
   var oneNoteWebUrl: js.UndefOr[ExternalLink] = js.undefined
 }
 

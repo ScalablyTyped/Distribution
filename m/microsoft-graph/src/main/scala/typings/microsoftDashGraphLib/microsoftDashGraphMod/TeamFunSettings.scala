@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamFunSettings extends js.Object {
-  /** If set to true, enables users to include custom memes. */
+  // If set to true, enables users to include custom memes.
   var allowCustomMemes: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, enables Giphy use. */
+  // If set to true, enables Giphy use.
   var allowGiphy: js.UndefOr[scala.Boolean] = js.undefined
-  /** If set to true, enables users to include stickers and memes. */
+  // If set to true, enables users to include stickers and memes.
   var allowStickersAndMemes: js.UndefOr[scala.Boolean] = js.undefined
-  /** Giphy content rating. Possible values are: moderate, strict. */
+  // Giphy content rating. Possible values are: moderate, strict.
   var giphyContentRating: js.UndefOr[GiphyRatingType] = js.undefined
 }
 

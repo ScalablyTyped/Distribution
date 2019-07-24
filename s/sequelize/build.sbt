@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sequelize"
-version := "4.28.0-dt-20190530Z-532dd4"
+version := "4.28.0-dt-20190722Z-ae3a50"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190708Z-b8e808",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190608Z-1509b3")
+  "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190723Z-a6426c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

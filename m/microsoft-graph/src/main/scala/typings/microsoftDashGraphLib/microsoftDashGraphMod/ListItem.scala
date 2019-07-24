@@ -6,16 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListItem extends BaseItem {
+  // Analytics about the view activities that took place on this item.
   var analytics: js.UndefOr[ItemAnalytics] = js.undefined
-  /** The content type of this list item */
+  // The content type of this list item
   var contentType: js.UndefOr[ContentTypeInfo] = js.undefined
-  /** For document libraries, the driveItem relationship exposes the listItem as a [driveItem][] */
+  // For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
   var driveItem: js.UndefOr[DriveItem] = js.undefined
-  /** The values of the columns set on this list item. */
+  // The values of the columns set on this list item.
   var fields: js.UndefOr[FieldValueSet] = js.undefined
-  /** Returns identifiers useful for SharePoint REST compatibility. Read-only. */
+  // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
-  /** The list of previous versions of the list item. */
+  // The list of previous versions of the list item.
   var versions: js.UndefOr[js.Array[ListItemVersion]] = js.undefined
 }
 

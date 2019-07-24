@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocalizedNotificationMessage extends Entity {
-  /** Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message. */
+  /**
+    * Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset,
+    * set this property to true on another Localized Notification Message.
+    */
   var isDefault: js.UndefOr[scala.Boolean] = js.undefined
-  /** DateTime the object was last modified. */
+  // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The Locale for which this message is destined. */
+  // The Locale for which this message is destined.
   var locale: js.UndefOr[java.lang.String] = js.undefined
-  /** The Message Template content. */
+  // The Message Template content.
   var messageTemplate: js.UndefOr[java.lang.String] = js.undefined
-  /** The Message Template Subject. */
+  // The Message Template Subject.
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 

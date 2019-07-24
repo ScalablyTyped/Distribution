@@ -6,47 +6,56 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidCompliancePolicy extends DeviceCompliancePolicy {
-  /** Require that devices have enabled device threat protection. */
+  // Require that devices have enabled device threat protection.
   var deviceThreatProtectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured, low, medium, high, notSet. */
+  /**
+    * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
+    * low, medium, high, notSet.
+    */
   var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
-  /** Minimum Android security patch level. */
+  // Minimum Android security patch level.
   var minAndroidSecurityPatchLevel: js.UndefOr[java.lang.String] = js.undefined
-  /** Maximum Android version. */
+  // Maximum Android version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum Android version. */
+  // Minimum Android version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of days before the password expires. Valid values 1 to 365 */
+  // Number of days before the password expires. Valid values 1 to 365
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum password length. Valid values 4 to 16 */
+  // Minimum password length. Valid values 4 to 16
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a password is required. */
+  // Minutes of inactivity before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** Number of previous passwords to block. Valid values 1 to 24 */
+  // Number of previous passwords to block. Valid values 1 to 24
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Require a password to unlock device. */
+  // Require a password to unlock device.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Type of characters in password. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any. */
+  /**
+    * Type of characters in password. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols,
+    * lowSecurityBiometric, numeric, numericComplex, any.
+    */
   var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.undefined
-  /** Devices must not be jailbroken or rooted. */
+  // Devices must not be jailbroken or rooted.
   var securityBlockJailbrokenDevices: js.UndefOr[scala.Boolean] = js.undefined
-  /** Disable USB debugging on Android devices. */
+  // Disable USB debugging on Android devices.
   var securityDisableUsbDebugging: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require that devices disallow installation of apps from unknown sources. */
+  // Require that devices disallow installation of apps from unknown sources.
   var securityPreventInstallAppsFromUnknownSources: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the device to pass the Company Portal client app runtime integrity check. */
+  // Require the device to pass the Company Portal client app runtime integrity check.
   var securityRequireCompanyPortalAppIntegrity: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require Google Play Services to be installed and enabled on the device. */
+  // Require Google Play Services to be installed and enabled on the device.
   var securityRequireGooglePlayServices: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the device to pass the SafetyNet basic integrity check. */
+  // Require the device to pass the SafetyNet basic integrity check.
   var securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the device to pass the SafetyNet certified device check. */
+  // Require the device to pass the SafetyNet certified device check.
   var securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date. */
+  /**
+    * Require the device to have up to date security providers. The device will require Google Play Services to be enabled
+    * and up to date.
+    */
   var securityRequireUpToDateSecurityProviders: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require the Android Verify apps feature is turned on. */
+  // Require the Android Verify apps feature is turned on.
   var securityRequireVerifyApps: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require encryption on Android devices. */
+  // Require encryption on Android devices.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 

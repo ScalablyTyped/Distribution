@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Planner extends Entity {
-  /** Read-only. Nullable. Returns a collection of the specified buckets */
+  // Read-only. Nullable. Returns a collection of the specified buckets
   var buckets: js.UndefOr[js.Array[PlannerBucket]] = js.undefined
-  /** Read-only. Nullable. Returns a collection of the specified plans */
+  // Read-only. Nullable. Returns a collection of the specified plans
   var plans: js.UndefOr[js.Array[PlannerPlan]] = js.undefined
-  /** Read-only. Nullable. Returns a collection of the specified tasks */
+  // Read-only. Nullable. Returns a collection of the specified tasks
   var tasks: js.UndefOr[js.Array[PlannerTask]] = js.undefined
 }
 

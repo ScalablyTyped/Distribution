@@ -10,7 +10,7 @@ package object libInjectSheetMod {
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ reactDashJssLib.reactDashJssLibStrings.ConsistentWith with js.Any
-  type DynamicCSSRule[Props] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof csstype.csstype.Properties<number | string> ]: csstype.csstype.Properties<number | string>[K] | (props : Props): csstype.csstype.Properties<number | string>[K]}[keyof csstype.csstype.Properties<string | 0>] */ js.Any
+  type DynamicCSSRule[Props] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof csstype.csstype.Properties<number | string | std.Array<number | string>> ]: csstype.csstype.Properties<number | string | std.Array<number | string>>[K] | (props : Props): csstype.csstype.Properties<number | string | std.Array<number | string>>[K]}[keyof csstype.csstype.Properties<string | 0>] */ js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Overwrite[T, U] = (Omit[T, java.lang.String]) with U
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[

@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MessageRuleActions extends js.Object {
-  /** A list of categories to be assigned to a message. */
+  // A list of categories to be assigned to a message.
   var assignCategories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** The ID of a folder that a message is to be copied to. */
+  // The ID of a folder that a message is to be copied to.
   var copyToFolder: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether a message should be moved to the Deleted Items folder. */
+  // Indicates whether a message should be moved to the Deleted Items folder.
   var delete: js.UndefOr[scala.Boolean] = js.undefined
-  /** The email addresses of the recipients to which a message should be forwarded as an attachment. */
+  // The email addresses of the recipients to which a message should be forwarded as an attachment.
   var forwardAsAttachmentTo: js.UndefOr[js.Array[Recipient]] = js.undefined
-  /** The email addresses of the recipients to which a message should be forwarded. */
+  // The email addresses of the recipients to which a message should be forwarded.
   var forwardTo: js.UndefOr[js.Array[Recipient]] = js.undefined
-  /** Indicates whether a message should be marked as read. */
+  // Indicates whether a message should be marked as read.
   var markAsRead: js.UndefOr[scala.Boolean] = js.undefined
-  /** Sets the importance of the message, which can be: low, normal, high. */
+  // Sets the importance of the message, which can be: low, normal, high.
   var markImportance: js.UndefOr[Importance] = js.undefined
-  /** The ID of the folder that a message will be moved to. */
+  // The ID of the folder that a message will be moved to.
   var moveToFolder: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder. */
+  // Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
   var permanentDelete: js.UndefOr[scala.Boolean] = js.undefined
-  /** The email addresses to which a message should be redirected. */
+  // The email addresses to which a message should be redirected.
   var redirectTo: js.UndefOr[js.Array[Recipient]] = js.undefined
-  /** Indicates whether subsequent rules should be evaluated. */
+  // Indicates whether subsequent rules should be evaluated.
   var stopProcessingRules: js.UndefOr[scala.Boolean] = js.undefined
 }
 

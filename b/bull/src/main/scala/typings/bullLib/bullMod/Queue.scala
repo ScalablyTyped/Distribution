@@ -280,9 +280,9 @@ trait Queue[T]
     * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
     * If it is resolved, its value will be the "completed" event's second argument.
     */
-  def process(callback: ProcessCallbackFunction[T]): scala.Unit = js.native
-  def process(callback: ProcessPromiseFunction[T]): scala.Unit = js.native
-  def process(callback: java.lang.String): scala.Unit = js.native
+  def process(callback: ProcessCallbackFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(callback: ProcessPromiseFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(callback: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -302,9 +302,9 @@ trait Queue[T]
     *
     * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
     */
-  def process(concurrency: scala.Double, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
-  def process(concurrency: scala.Double, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
-  def process(concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
+  def process(concurrency: scala.Double, callback: ProcessCallbackFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(concurrency: scala.Double, callback: ProcessPromiseFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(concurrency: scala.Double, callback: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -324,9 +324,9 @@ trait Queue[T]
     *
     * @param name Bull will only call the handler if the job name matches
     */
-  def process(name: java.lang.String, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
-  def process(name: java.lang.String, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
-  def process(name: java.lang.String, callback: java.lang.String): scala.Unit = js.native
+  def process(name: java.lang.String, callback: ProcessCallbackFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(name: java.lang.String, callback: ProcessPromiseFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(name: java.lang.String, callback: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -347,9 +347,9 @@ trait Queue[T]
     * @param name Bull will only call the handler if the job name matches
     * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
     */
-  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
-  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
-  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessCallbackFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessPromiseFunction[T]): js.Promise[scala.Unit] = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Removes a given repeatable job. The RepeatOptions and JobId needs to be the same as the ones
     * used for the job when it was added.

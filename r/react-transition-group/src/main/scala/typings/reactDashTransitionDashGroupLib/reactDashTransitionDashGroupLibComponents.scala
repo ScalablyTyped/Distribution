@@ -9,6 +9,11 @@ object reactDashTransitionDashGroupLibComponents extends reactDashTransitionDash
   @scala.inline
   def CSSTransition: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.cSSTransitionMod.CSSTransitionProps] = js.constructorOf[reactDashTransitionDashGroupLib.cSSTransitionMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.cSSTransitionMod.CSSTransitionProps]]
   @scala.inline
+  def SwitchTransition: reactLib.reactMod.ComponentType[
+    reactDashTransitionDashGroupLib.switchTransitionMod.SwitchTransitionNs.SwitchTransitionProps
+  ] = js.constructorOf[reactDashTransitionDashGroupLib.switchTransitionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashTransitionDashGroupLib.switchTransitionMod.SwitchTransitionNs.SwitchTransitionProps]]
+  @scala.inline
   def Transition: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = js.constructorOf[reactDashTransitionDashGroupLib.transitionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]]
   @scala.inline
   def TransitionGroup: reactLib.reactMod.ComponentType[

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Attendee extends AttendeeBase {
-  /** The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent. */
+  // The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.
   var status: js.UndefOr[ResponseStatus] = js.undefined
 }
 

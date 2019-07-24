@@ -6,11 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainState extends js.Object {
-  /** Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes. */
+  /**
+    * Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous
+    * task starts, and when the operation completes.
+    */
   var lastActionDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Type of asynchronous operation. The values can be ForceDelete or Verification */
+  // Type of asynchronous operation. The values can be ForceDelete or Verification
   var operation: js.UndefOr[java.lang.String] = js.undefined
-  /** Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed. */
+  /**
+    * Current status of the operation. Scheduled - Operation has been scheduled but has not started. InProgress - Task has
+    * started and is in progress. Failed - Operation has failed.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 

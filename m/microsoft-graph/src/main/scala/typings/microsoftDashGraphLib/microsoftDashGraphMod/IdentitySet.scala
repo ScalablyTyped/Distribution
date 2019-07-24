@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IdentitySet extends js.Object {
-  /** Optional. The application associated with this action. */
+  // Optional. The application associated with this action.
   var application: js.UndefOr[Identity] = js.undefined
-  /** Optional. The device associated with this action. */
+  // Optional. The device associated with this action.
   var device: js.UndefOr[Identity] = js.undefined
-  /** Optional. The user associated with this action. */
+  // Optional. The user associated with this action.
   var user: js.UndefOr[Identity] = js.undefined
 }
 

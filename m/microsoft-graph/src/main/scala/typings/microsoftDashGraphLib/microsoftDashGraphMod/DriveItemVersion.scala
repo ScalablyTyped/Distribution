@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DriveItemVersion extends BaseItemVersion {
-  /** The content stream for this version of the item. */
+  // The content stream for this version of the item.
   var content: js.UndefOr[js.Any] = js.undefined
-  /** Indicates the size of the content stream for this version of the item. */
+  // Indicates the size of the content stream for this version of the item.
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 

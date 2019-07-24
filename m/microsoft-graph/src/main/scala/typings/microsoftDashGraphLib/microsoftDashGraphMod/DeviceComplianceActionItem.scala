@@ -6,13 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceComplianceActionItem extends Entity {
-  /** What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles, pushNotification. */
+  /**
+    * What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles,
+    * pushNotification.
+    */
   var actionType: js.UndefOr[DeviceComplianceActionType] = js.undefined
-  /** Number of hours to wait till the action will be enforced. Valid values 0 to 8760 */
+  // Number of hours to wait till the action will be enforced. Valid values 0 to 8760
   var gracePeriodHours: js.UndefOr[scala.Double] = js.undefined
-  /** A list of group IDs to speicify who to CC this notification message to. */
+  // A list of group IDs to speicify who to CC this notification message to.
   var notificationMessageCCList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** What notification Message template to use */
+  // What notification Message template to use
   var notificationTemplateId: js.UndefOr[java.lang.String] = js.undefined
 }
 

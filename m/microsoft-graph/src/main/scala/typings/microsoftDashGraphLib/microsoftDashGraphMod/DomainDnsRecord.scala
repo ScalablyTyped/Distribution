@@ -6,18 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DomainDnsRecord extends Entity {
-  /** If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. */
+  /**
+    * If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate
+    * correctly with the domain.
+    */
   var isOptional: js.UndefOr[scala.Boolean] = js.undefined
-  /** Value used when configuring the name of the DNS record at the DNS host. */
+  // Value used when configuring the name of the DNS record at the DNS host.
   var label: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, TxtKey */
+  // Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, TxtKey
   var recordType: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values:
-    * null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
+    * Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null,
+    * Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation,
+    * SharePointPublic, OrgIdAuthentication, Yammer, Intune
     */
   var supportedService: js.UndefOr[java.lang.String] = js.undefined
-  /** Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable */
+  // Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 

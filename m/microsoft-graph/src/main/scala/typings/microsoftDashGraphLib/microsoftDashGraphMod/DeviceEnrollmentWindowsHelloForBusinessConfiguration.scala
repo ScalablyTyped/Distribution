@@ -6,29 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollmentConfiguration {
-  /** Not yet documented. Possible values are: notConfigured, enabled, disabled. */
+  // Not yet documented. Possible values are: notConfigured, enabled, disabled.
   var enhancedBiometricsState: js.UndefOr[Enablement] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var pinExpirationInDays: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented. Possible values are: allowed, required, disallowed. */
+  // Not yet documented. Possible values are: allowed, required, disallowed.
   var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var pinMaximumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var pinMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var pinPreviousBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented. Possible values are: allowed, required, disallowed. */
+  // Not yet documented. Possible values are: allowed, required, disallowed.
   var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  /** Not yet documented. Possible values are: allowed, required, disallowed. */
+  // Not yet documented. Possible values are: allowed, required, disallowed.
   var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var remotePassportEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var securityDeviceRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** Not yet documented. Possible values are: notConfigured, enabled, disabled. */
+  // Not yet documented. Possible values are: notConfigured, enabled, disabled.
   var state: js.UndefOr[Enablement] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var unlockWithBiometricsEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 

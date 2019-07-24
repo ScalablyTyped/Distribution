@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait TextOptions extends js.Object {
   /** the alignment of the text (center, justify, left, right) */
-  var align: js.UndefOr[java.lang.String] = js.undefined
+  //TODO check this
+  var align: js.UndefOr[
+    pdfkitLib.pdfkitLibStrings.center | pdfkitLib.pdfkitLibStrings.justify | pdfkitLib.pdfkitLibStrings.left | pdfkitLib.pdfkitLibStrings.right | java.lang.String
+  ] = js.undefined
   /** the amount of space between each character in the text */
   var characterSpacing: js.UndefOr[scala.Double] = js.undefined
   /** the amount of space between each column (1/4 inch by default) */
@@ -47,7 +50,7 @@ trait TextOptions extends js.Object {
 object TextOptions {
   @scala.inline
   def apply(
-    align: java.lang.String = null,
+    align: pdfkitLib.pdfkitLibStrings.center | pdfkitLib.pdfkitLibStrings.justify | pdfkitLib.pdfkitLibStrings.left | pdfkitLib.pdfkitLibStrings.right | java.lang.String = null,
     characterSpacing: scala.Int | scala.Double = null,
     columnGap: scala.Int | scala.Double = null,
     columns: scala.Int | scala.Double = null,
@@ -67,7 +70,7 @@ object TextOptions {
     wordSpacing: scala.Int | scala.Double = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (characterSpacing != null) __obj.updateDynamic("characterSpacing")(characterSpacing.asInstanceOf[js.Any])
     if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])

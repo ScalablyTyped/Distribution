@@ -6,46 +6,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Person extends Entity {
-  /** The person's birthday. */
+  // The person's birthday.
   var birthday: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the person's company. */
+  // The name of the person's company.
   var companyName: js.UndefOr[java.lang.String] = js.undefined
-  /** The person's department. */
+  // The person's department.
   var department: js.UndefOr[java.lang.String] = js.undefined
-  /** The person's display name. */
+  // The person's display name.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The person's given name. */
+  // The person's given name.
   var givenName: js.UndefOr[java.lang.String] = js.undefined
-  /** The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only. */
+  // The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.
   var imAddress: js.UndefOr[java.lang.String] = js.undefined
-  /** true if the user has flagged this person as a favorite. */
+  // true if the user has flagged this person as a favorite.
   var isFavorite: js.UndefOr[scala.Boolean] = js.undefined
-  /** The person's job title. */
+  // The person's job title.
   var jobTitle: js.UndefOr[java.lang.String] = js.undefined
-  /** The location of the person's office. */
+  // The location of the person's office.
   var officeLocation: js.UndefOr[java.lang.String] = js.undefined
-  /** Free-form notes that the user has taken about this person. */
+  // Free-form notes that the user has taken about this person.
   var personNotes: js.UndefOr[java.lang.String] = js.undefined
-  /** The type of person. */
+  // The type of person.
   var personType: js.UndefOr[PersonType] = js.undefined
-  /** The person's phone numbers. */
+  // The person's phone numbers.
   var phones: js.UndefOr[js.Array[Phone]] = js.undefined
-  /** The person's addresses. */
+  // The person's addresses.
   var postalAddresses: js.UndefOr[js.Array[Location]] = js.undefined
-  /** The person's profession. */
+  // The person's profession.
   var profession: js.UndefOr[java.lang.String] = js.undefined
-  /** The person's email addresses. */
+  // The person's email addresses.
   var scoredEmailAddresses: js.UndefOr[js.Array[ScoredEmailAddress]] = js.undefined
-  /** The person's surname. */
+  // The person's surname.
   var surname: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822.
-    * By convention, this should map to the person's email name. The general format is alias@domain.
+    * The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the
+    * Internet standard RFC 822. By convention, this should map to the person's email name. The general format is
+    * alias@domain.
     */
   var userPrincipalName: js.UndefOr[java.lang.String] = js.undefined
-  /** The person's websites. */
+  // The person's websites.
   var websites: js.UndefOr[js.Array[Website]] = js.undefined
-  /** The phonetic Japanese name of the person's company. */
+  // The phonetic Japanese name of the person's company.
   var yomiCompany: js.UndefOr[java.lang.String] = js.undefined
 }
 

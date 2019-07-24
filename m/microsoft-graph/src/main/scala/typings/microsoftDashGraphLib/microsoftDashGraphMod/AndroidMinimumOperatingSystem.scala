@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidMinimumOperatingSystem extends js.Object {
-  /** Version 4.0 or later. */
+  // Version 4.0 or later.
   var v4_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 4.0.3 or later. */
+  // Version 4.0.3 or later.
   var v4_0_3: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 4.1 or later. */
+  // Version 4.1 or later.
   var v4_1: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 4.2 or later. */
+  // Version 4.2 or later.
   var v4_2: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 4.3 or later. */
+  // Version 4.3 or later.
   var v4_3: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 4.4 or later. */
+  // Version 4.4 or later.
   var v4_4: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 5.0 or later. */
+  // Version 5.0 or later.
   var v5_0: js.UndefOr[scala.Boolean] = js.undefined
-  /** Version 5.1 or later. */
+  // Version 5.1 or later.
   var v5_1: js.UndefOr[scala.Boolean] = js.undefined
 }
 

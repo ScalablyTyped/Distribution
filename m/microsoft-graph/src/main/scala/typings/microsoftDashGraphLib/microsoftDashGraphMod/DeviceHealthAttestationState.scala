@@ -6,69 +6,72 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceHealthAttestationState extends js.Object {
-  /** TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate. */
+  /**
+    * TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key
+    * (EK) certificate.
+    */
   var attestationIdentityKey: js.UndefOr[java.lang.String] = js.undefined
-  /** On or Off of BitLocker Drive Encryption */
+  // On or Off of BitLocker Drive Encryption
   var bitLockerStatus: js.UndefOr[java.lang.String] = js.undefined
-  /** The security version number of the Boot Application */
+  // The security version number of the Boot Application
   var bootAppSecurityVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** When bootDebugging is enabled, the device is used in development and testing */
+  // When bootDebugging is enabled, the device is used in development and testing
   var bootDebugging: js.UndefOr[java.lang.String] = js.undefined
-  /** The security version number of the Boot Application */
+  // The security version number of the Boot Application
   var bootManagerSecurityVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** The version of the Boot Manager */
+  // The version of the Boot Manager
   var bootManagerVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** The Boot Revision List that was loaded during initial boot on the attested device */
+  // The Boot Revision List that was loaded during initial boot on the attested device
   var bootRevisionListInfo: js.UndefOr[java.lang.String] = js.undefined
-  /** When code integrity is enabled, code execution is restricted to integrity verified code */
+  // When code integrity is enabled, code execution is restricted to integrity verified code
   var codeIntegrity: js.UndefOr[java.lang.String] = js.undefined
-  /** The version of the Boot Manager */
+  // The version of the Boot Manager
   var codeIntegrityCheckVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** The Code Integrity policy that is controlling the security of the boot environment */
+  // The Code Integrity policy that is controlling the security of the boot environment
   var codeIntegrityPolicy: js.UndefOr[java.lang.String] = js.undefined
-  /** The DHA report version. (Namespace version) */
+  // The DHA report version. (Namespace version)
   var contentNamespaceUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The HealthAttestation state schema version */
+  // The HealthAttestation state schema version
   var contentVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** DEP Policy defines a set of hardware and software technologies that perform additional checks on memory */
+  // DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
   var dataExcutionPolicy: js.UndefOr[java.lang.String] = js.undefined
-  /** The DHA report version. (Namespace version) */
+  // The DHA report version. (Namespace version)
   var deviceHealthAttestationStatus: js.UndefOr[java.lang.String] = js.undefined
-  /** ELAM provides protection for the computers in your network when they start up */
+  // ELAM provides protection for the computers in your network when they start up
   var earlyLaunchAntiMalwareDriverProtection: js.UndefOr[java.lang.String] = js.undefined
-  /** This attribute indicates if DHA is supported for the device */
+  // This attribute indicates if DHA is supported for the device
   var healthAttestationSupportedStatus: js.UndefOr[java.lang.String] = js.undefined
-  /** This attribute appears if DHA-Service detects an integrity issue */
+  // This attribute appears if DHA-Service detects an integrity issue
   var healthStatusMismatchInfo: js.UndefOr[java.lang.String] = js.undefined
-  /** The DateTime when device was evaluated or issued to MDM */
+  // The DateTime when device was evaluated or issued to MDM
   var issuedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** The Timestamp of the last update. */
+  // The Timestamp of the last update.
   var lastUpdateDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** When operatingSystemKernelDebugging is enabled, the device is used in development and testing */
+  // When operatingSystemKernelDebugging is enabled, the device is used in development and testing
   var operatingSystemKernelDebugging: js.UndefOr[java.lang.String] = js.undefined
-  /** The Operating System Revision List that was loaded during initial boot on the attested device */
+  // The Operating System Revision List that was loaded during initial boot on the attested device
   var operatingSystemRevListInfo: js.UndefOr[java.lang.String] = js.undefined
-  /** The measurement that is captured in PCR[0] */
+  // The measurement that is captured in PCR[0]
   var pcr0: js.UndefOr[java.lang.String] = js.undefined
-  /** Informational attribute that identifies the HASH algorithm that was used by TPM */
+  // Informational attribute that identifies the HASH algorithm that was used by TPM
   var pcrHashAlgorithm: js.UndefOr[java.lang.String] = js.undefined
-  /** The number of times a PC device has hibernated or resumed */
+  // The number of times a PC device has hibernated or resumed
   var resetCount: js.UndefOr[scala.Double] = js.undefined
-  /** The number of times a PC device has rebooted */
+  // The number of times a PC device has rebooted
   var restartCount: js.UndefOr[scala.Double] = js.undefined
-  /** Safe mode is a troubleshooting option for Windows that starts your computer in a limited state */
+  // Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
   var safeMode: js.UndefOr[java.lang.String] = js.undefined
-  /** When Secure Boot is enabled, the core components must have the correct cryptographic signatures */
+  // When Secure Boot is enabled, the core components must have the correct cryptographic signatures
   var secureBoot: js.UndefOr[java.lang.String] = js.undefined
-  /** Fingerprint of the Custom Secure Boot Configuration Policy */
+  // Fingerprint of the Custom Secure Boot Configuration Policy
   var secureBootConfigurationPolicyFingerPrint: js.UndefOr[java.lang.String] = js.undefined
-  /** When test signing is allowed, the device does not enforce signature validation during boot */
+  // When test signing is allowed, the device does not enforce signature validation during boot
   var testSigning: js.UndefOr[java.lang.String] = js.undefined
-  /** The security version number of the Boot Application */
+  // The security version number of the Boot Application
   var tpmVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** VSM is a container that protects high value assets from a compromised kernel */
+  // VSM is a container that protects high value assets from a compromised kernel
   var virtualSecureMode: js.UndefOr[java.lang.String] = js.undefined
-  /** Operating system running with limited services that is used to prepare a computer for Windows */
+  // Operating system running with limited services that is used to prepare a computer for Windows
   var windowsPE: js.UndefOr[java.lang.String] = js.undefined
 }
 

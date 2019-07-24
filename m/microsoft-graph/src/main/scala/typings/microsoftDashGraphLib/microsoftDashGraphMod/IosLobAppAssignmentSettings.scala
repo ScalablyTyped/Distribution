@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosLobAppAssignmentSettings extends MobileAppAssignmentSettings {
-  /** The VPN Configuration Id to apply for this app. */
+  // The VPN Configuration Id to apply for this app.
   var vpnConfigurationId: js.UndefOr[java.lang.String] = js.undefined
 }
 

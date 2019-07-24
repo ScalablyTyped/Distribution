@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-material-dropdown"
-version := "0.11-dt-20190123Z-3f60cf"
+version := "0.11-dt-20190723Z-f5a65c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

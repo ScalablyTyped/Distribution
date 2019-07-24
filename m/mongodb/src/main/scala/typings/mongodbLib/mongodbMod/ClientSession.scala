@@ -57,5 +57,18 @@ trait ClientSession
     */
   def startTransaction(): scala.Unit = js.native
   def startTransaction(options: TransactionOptions): scala.Unit = js.native
+  /**
+    * Runs a provided lambda within a transaction, retrying either the commit operation
+    * or entire transaction as needed (and when the error permits) to better ensure that
+    * the transaction can complete successfully.
+    *
+    * IMPORTANT: This method requires the user to return a Promise, all lambdas that do not
+    * return a Promise will result in undefined behavior.
+    * 
+    * @param fn Function to execute with the new session.
+    * @param options Optional settings for the transaction
+    */
+  def withTransaction[T](fn: WithTransactionCallback[T]): js.Promise[T] = js.native
+  def withTransaction[T](fn: WithTransactionCallback[T], options: TransactionOptions): js.Promise[T] = js.native
 }
 

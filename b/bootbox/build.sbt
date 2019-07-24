@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootbox"
-version := "4.4.0-dt-20190322Z-254477"
+version := "5.2.0-dt-20190723Z-e5dcc2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

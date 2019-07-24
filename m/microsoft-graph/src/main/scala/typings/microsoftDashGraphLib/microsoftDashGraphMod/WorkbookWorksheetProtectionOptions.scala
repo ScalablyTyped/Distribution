@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookWorksheetProtectionOptions extends js.Object {
-  /** Represents the worksheet protection option of allowing using auto filter feature. */
+  // Represents the worksheet protection option of allowing using auto filter feature.
   var allowAutoFilter: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing deleting columns. */
+  // Represents the worksheet protection option of allowing deleting columns.
   var allowDeleteColumns: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing deleting rows. */
+  // Represents the worksheet protection option of allowing deleting rows.
   var allowDeleteRows: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing formatting cells. */
+  // Represents the worksheet protection option of allowing formatting cells.
   var allowFormatCells: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing formatting columns. */
+  // Represents the worksheet protection option of allowing formatting columns.
   var allowFormatColumns: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing formatting rows. */
+  // Represents the worksheet protection option of allowing formatting rows.
   var allowFormatRows: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing inserting columns. */
+  // Represents the worksheet protection option of allowing inserting columns.
   var allowInsertColumns: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing inserting hyperlinks. */
+  // Represents the worksheet protection option of allowing inserting hyperlinks.
   var allowInsertHyperlinks: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing inserting rows. */
+  // Represents the worksheet protection option of allowing inserting rows.
   var allowInsertRows: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing using pivot table feature. */
+  // Represents the worksheet protection option of allowing using pivot table feature.
   var allowPivotTables: js.UndefOr[scala.Boolean] = js.undefined
-  /** Represents the worksheet protection option of allowing using sort feature. */
+  // Represents the worksheet protection option of allowing using sort feature.
   var allowSort: js.UndefOr[scala.Boolean] = js.undefined
 }
 

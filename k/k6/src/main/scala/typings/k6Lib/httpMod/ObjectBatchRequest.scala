@@ -6,9 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ObjectBatchRequest extends js.Object {
+  /** Request body. */
   var body: js.UndefOr[RequestBody | scala.Null] = js.undefined
+  /** Request method. */
   var method: java.lang.String
+  /** Requset parameters. */
   var params: js.UndefOr[Params | scala.Null] = js.undefined
+  /** Request URL. */
   var url: java.lang.String
 }
 

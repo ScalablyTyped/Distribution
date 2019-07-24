@@ -28,6 +28,7 @@ package object clientsSecretsmanagerMod {
   type NameType = java.lang.String
   type NextTokenType = java.lang.String
   type NonEmptyResourcePolicyType = java.lang.String
+  type OwningServiceType = java.lang.String
   type PasswordLengthType = scala.Double
   type RandomPasswordType = java.lang.String
   type RecoveryWindowInDaysType = scala.Double

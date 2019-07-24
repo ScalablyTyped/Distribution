@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__hapi"
-version := "18.2-dt-20190624Z-96f7ff"
+version := "18.2-dt-20190624Z-0c8e9c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190404Z-bf35fc",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-6859ed",
   "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-522863",
-  "org.scalablytyped" %%% "hapi__joi" % "15.0-dt-20190616Z-c2c8c3",
+  "org.scalablytyped" %%% "hapi__joi" % "15.0-dt-20190722Z-c6b827",
   "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-168c47",
   "org.scalablytyped" %%% "hapi__podium" % "3.4-dt-20190404Z-950de7",
   "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-d294a9",

@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ObjectThreshold extends js.Object {
+  /** Abort test if threshold violated. */
   var abortOnFail: js.UndefOr[scala.Boolean] = js.undefined
+  /** Duration to delay evaluation. Enables collecting additional metrics. */
   var delayAbortEval: js.UndefOr[java.lang.String] = js.undefined
+  /** Threshold expression. */
   var threshold: java.lang.String
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteDocumentRequest extends js.Object {
   /**
-    * (Optional) The version of the document that you want to delete. If not provided, all versions of the document are deleted.
+    * The version of the document that you want to delete. If not provided, all versions of the document are deleted.
     */
   var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait DeleteDocumentRequest extends js.Object {
     */
   var Name: DocumentName
   /**
-    * (Optional) The version name of the document that you want to delete. If not provided, all versions of the document are deleted.
+    * The version name of the document that you want to delete. If not provided, all versions of the document are deleted.
     */
   var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }

@@ -538,7 +538,15 @@ object stripeLibStrings {
   sealed trait now extends js.Object
   
   @js.native
+  sealed trait off_session
+    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentFutureUsageType
+  
+  @js.native
   sealed trait offline extends js.Object
+  
+  @js.native
+  sealed trait on_session
+    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentFutureUsageType
   
   @js.native
   sealed trait once extends js.Object
@@ -1265,7 +1273,11 @@ object stripeLibStrings {
   @scala.inline
   def now: now = "now".asInstanceOf[now]
   @scala.inline
+  def off_session: off_session = "off_session".asInstanceOf[off_session]
+  @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
+  def on_session: on_session = "on_session".asInstanceOf[on_session]
   @scala.inline
   def once: once = "once".asInstanceOf[once]
   @scala.inline

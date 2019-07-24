@@ -6,65 +6,74 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceManagement extends Entity {
-  /** Apple push notification certificate. */
+  // Apple push notification certificate.
   var applePushNotificationCertificate: js.UndefOr[ApplePushNotificationCertificate] = js.undefined
-  /** The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access */
+  /**
+    * The Exchange on premises conditional access settings. On premises conditional access will require devices to be both
+    * enrolled and compliant for mail access
+    */
   var conditionalAccessSettings: js.UndefOr[OnPremisesConditionalAccessSettings] = js.undefined
-  /** The list of detected apps associated with a device. */
+  // The list of detected apps associated with a device.
   var detectedApps: js.UndefOr[js.Array[DetectedApp]] = js.undefined
-  /** The list of device categories with the tenant. */
+  // The list of device categories with the tenant.
   var deviceCategories: js.UndefOr[js.Array[DeviceCategory]] = js.undefined
-  /** The device compliance policies. */
+  // The device compliance policies.
   var deviceCompliancePolicies: js.UndefOr[js.Array[DeviceCompliancePolicy]] = js.undefined
-  /** The device compliance state summary for this account. */
+  // The device compliance state summary for this account.
   var deviceCompliancePolicyDeviceStateSummary: js.UndefOr[DeviceCompliancePolicyDeviceStateSummary] = js.undefined
-  /** The summary states of compliance policy settings for this account. */
+  // The summary states of compliance policy settings for this account.
   var deviceCompliancePolicySettingStateSummaries: js.UndefOr[js.Array[DeviceCompliancePolicySettingStateSummary]] = js.undefined
-  /** The device configuration device state summary for this account. */
+  // The device configuration device state summary for this account.
   var deviceConfigurationDeviceStateSummaries: js.UndefOr[DeviceConfigurationDeviceStateSummary] = js.undefined
-  /** The device configurations. */
+  // The device configurations.
   var deviceConfigurations: js.UndefOr[js.Array[DeviceConfiguration]] = js.undefined
-  /** The list of device enrollment configurations */
+  // The list of device enrollment configurations
   var deviceEnrollmentConfigurations: js.UndefOr[js.Array[DeviceEnrollmentConfiguration]] = js.undefined
-  /** The list of Device Management Partners configured by the tenant. */
+  // The list of Device Management Partners configured by the tenant.
   var deviceManagementPartners: js.UndefOr[js.Array[DeviceManagementPartner]] = js.undefined
-  /** The list of Exchange Connectors configured by the tenant. */
+  // The list of Exchange Connectors configured by the tenant.
   var exchangeConnectors: js.UndefOr[js.Array[DeviceManagementExchangeConnector]] = js.undefined
-  /** intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal. */
+  /**
+    * intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the
+    * end user web portal.
+    */
   var intuneBrand: js.UndefOr[IntuneBrand] = js.undefined
-  /** The IOS software update installation statuses for this account. */
+  // The IOS software update installation statuses for this account.
   var iosUpdateStatuses: js.UndefOr[js.Array[IosUpdateDeviceStatus]] = js.undefined
-  /** Device overview */
+  // Device overview
   var managedDeviceOverview: js.UndefOr[ManagedDeviceOverview] = js.undefined
-  /** The list of managed devices. */
+  // The list of managed devices.
   var managedDevices: js.UndefOr[js.Array[ManagedDevice]] = js.undefined
-  /** The list of Mobile threat Defense connectors configured by the tenant. */
+  // The list of Mobile threat Defense connectors configured by the tenant.
   var mobileThreatDefenseConnectors: js.UndefOr[js.Array[MobileThreatDefenseConnector]] = js.undefined
-  /** The Notification Message Templates. */
+  // The Notification Message Templates.
   var notificationMessageTemplates: js.UndefOr[js.Array[NotificationMessageTemplate]] = js.undefined
-  /** The remote assist partners. */
+  // The remote assist partners.
   var remoteAssistancePartners: js.UndefOr[js.Array[RemoteAssistancePartner]] = js.undefined
-  /** The Resource Operations. */
+  // The Resource Operations.
   var resourceOperations: js.UndefOr[js.Array[ResourceOperation]] = js.undefined
-  /** The Role Assignments. */
+  // The Role Assignments.
   var roleAssignments: js.UndefOr[js.Array[DeviceAndAppManagementRoleAssignment]] = js.undefined
-  /** The Role Definitions. */
+  // The Role Definitions.
   var roleDefinitions: js.UndefOr[js.Array[RoleDefinition]] = js.undefined
-  /** Account level settings. */
+  // Account level settings.
   var settings: js.UndefOr[DeviceManagementSettings] = js.undefined
-  /** The software update status summary. */
+  // The software update status summary.
   var softwareUpdateStatusSummary: js.UndefOr[SoftwareUpdateStatusSummary] = js.undefined
-  /** Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut. */
+  /**
+    * Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled,
+    * deleted, blocked, lockedOut.
+    */
   var subscriptionState: js.UndefOr[DeviceManagementSubscriptionState] = js.undefined
-  /** The telecom expense management partners. */
+  // The telecom expense management partners.
   var telecomExpenseManagementPartners: js.UndefOr[js.Array[TelecomExpenseManagementPartner]] = js.undefined
-  /** The terms and conditions associated with device management of the company. */
+  // The terms and conditions associated with device management of the company.
   var termsAndConditions: js.UndefOr[js.Array[TermsAndConditions]] = js.undefined
-  /** The list of troubleshooting events for the tenant. */
+  // The list of troubleshooting events for the tenant.
   var troubleshootingEvents: js.UndefOr[js.Array[DeviceManagementTroubleshootingEvent]] = js.undefined
-  /** The windows information protection app learning summaries. */
+  // The windows information protection app learning summaries.
   var windowsInformationProtectionAppLearningSummaries: js.UndefOr[js.Array[WindowsInformationProtectionAppLearningSummary]] = js.undefined
-  /** The windows information protection network learning summaries. */
+  // The windows information protection network learning summaries.
   var windowsInformationProtectionNetworkLearningSummaries: js.UndefOr[js.Array[WindowsInformationProtectionNetworkLearningSummary]] = js.undefined
 }
 

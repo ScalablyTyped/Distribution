@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IosStoreApp extends MobileApp {
-  /** The Apple App Store URL */
+  // The Apple App Store URL
   var appStoreUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The iOS architecture for which this app can run on. */
+  // The iOS architecture for which this app can run on.
   var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
-  /** The Identity Name. */
+  // The Identity Name.
   var bundleId: js.UndefOr[java.lang.String] = js.undefined
-  /** The value for the minimum applicable operating system. */
+  // The value for the minimum applicable operating system.
   var minimumSupportedOperatingSystem: js.UndefOr[IosMinimumOperatingSystem] = js.undefined
 }
 

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceActionResult extends js.Object {
-  /** Action name */
+  // Action name
   var actionName: js.UndefOr[java.lang.String] = js.undefined
-  /** State of the action. Possible values are: none, pending, canceled, active, done, failed, notSupported. */
+  // State of the action. Possible values are: none, pending, canceled, active, done, failed, notSupported.
   var actionState: js.UndefOr[ActionState] = js.undefined
-  /** Time the action state was last updated */
+  // Time the action state was last updated
   var lastUpdatedDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Time the action was initiated */
+  // Time the action was initiated
   var startDateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

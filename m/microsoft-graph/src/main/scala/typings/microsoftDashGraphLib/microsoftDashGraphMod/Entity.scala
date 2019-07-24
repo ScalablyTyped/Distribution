@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Entity extends js.Object {
-  /** Read-only. */
+  // Read-only.
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 

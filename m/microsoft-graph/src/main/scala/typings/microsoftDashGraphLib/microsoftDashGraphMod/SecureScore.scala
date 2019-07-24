@@ -6,25 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecureScore extends Entity {
-  /** Active user count of the given tenant. */
+  // Active user count of the given tenant.
   var activeUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope. */
+  /**
+    * Average score by different scopes (for example, average by industry, average by seating) and control category
+    * (Identity, Data, Device, Apps, Infrastructure) within the scope.
+    */
   var averageComparativeScores: js.UndefOr[js.Array[AverageComparativeScore]] = js.undefined
-  /** GUID string for tenant ID. */
+  // GUID string for tenant ID.
   var azureTenantId: js.UndefOr[java.lang.String] = js.undefined
-  /** Contains tenant scores for a set of controls. */
+  // Contains tenant scores for a set of controls.
   var controlScores: js.UndefOr[js.Array[ControlScore]] = js.undefined
-  /** The date when the entity is created. */
+  // The date when the entity is created.
   var createdDateTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Tenant current attained score on specified date. */
+  // Tenant current attained score on specified date.
   var currentScore: js.UndefOr[scala.Double] = js.undefined
-  /** Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint). */
+  // Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
   var enabledServices: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /** Licensed user count of the given tenant. */
+  // Licensed user count of the given tenant.
   var licensedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Tenant maximum possible score on specified date. */
+  // Tenant maximum possible score on specified date.
   var maxScore: js.UndefOr[scala.Double] = js.undefined
-  /** Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore). Required. */
+  /**
+    * Complex type containing details about the security product/service vendor, provider, and subprovider (for example,
+    * vendor=Microsoft; provider=SecureScore). Required.
+    */
   var vendorInformation: js.UndefOr[SecurityVendorInformation] = js.undefined
 }
 

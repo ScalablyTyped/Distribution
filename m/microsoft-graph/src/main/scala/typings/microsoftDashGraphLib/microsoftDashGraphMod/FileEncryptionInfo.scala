@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileEncryptionInfo extends js.Object {
-  /** The key used to encrypt the file content. */
+  // The key used to encrypt the file content.
   var encryptionKey: js.UndefOr[scala.Double] = js.undefined
-  /** The file digest prior to encryption. */
+  // The file digest prior to encryption.
   var fileDigest: js.UndefOr[scala.Double] = js.undefined
-  /** The file digest algorithm. */
+  // The file digest algorithm.
   var fileDigestAlgorithm: js.UndefOr[java.lang.String] = js.undefined
-  /** The initialization vector used for the encryption algorithm. */
+  // The initialization vector used for the encryption algorithm.
   var initializationVector: js.UndefOr[scala.Double] = js.undefined
-  /** The hash of the encrypted file content + IV (content hash). */
+  // The hash of the encrypted file content + IV (content hash).
   var mac: js.UndefOr[scala.Double] = js.undefined
-  /** The key used to get mac. */
+  // The key used to get mac.
   var macKey: js.UndefOr[scala.Double] = js.undefined
-  /** The the profile identifier. */
+  // The the profile identifier.
   var profileIdentifier: js.UndefOr[java.lang.String] = js.undefined
 }
 

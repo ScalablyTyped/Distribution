@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType {
-  /** Active Hours End */
+  // Active Hours End
   var activeHoursEnd: js.UndefOr[java.lang.String] = js.undefined
-  /** Active Hours Start */
+  // Active Hours Start
   var activeHoursStart: js.UndefOr[java.lang.String] = js.undefined
 }
 

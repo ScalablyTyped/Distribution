@@ -6,37 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Windows10MobileCompliancePolicy extends DeviceCompliancePolicy {
-  /** Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled */
+  // Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled
   var bitLockerEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require devices to be reported as healthy by Windows Device Health Attestation. */
+  // Require devices to be reported as healthy by Windows Device Health Attestation.
   var codeIntegrityEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled. */
+  /**
+    * Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is
+    * enabled.
+    */
   var earlyLaunchAntiMalwareDriverEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Maximum Windows Phone version. */
+  // Maximum Windows Phone version.
   var osMaximumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Minimum Windows Phone version. */
+  // Minimum Windows Phone version.
   var osMinimumVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** Whether or not to block syncing the calendar. */
+  // Whether or not to block syncing the calendar.
   var passwordBlockSimple: js.UndefOr[scala.Boolean] = js.undefined
-  /** Number of days before password expiration. Valid values 1 to 255 */
+  // Number of days before password expiration. Valid values 1 to 255
   var passwordExpirationDays: js.UndefOr[scala.Double] = js.undefined
-  /** The number of character sets required in the password. */
+  // The number of character sets required in the password.
   var passwordMinimumCharacterSetCount: js.UndefOr[scala.Double] = js.undefined
-  /** Minimum password length. Valid values 4 to 16 */
+  // Minimum password length. Valid values 4 to 16
   var passwordMinimumLength: js.UndefOr[scala.Double] = js.undefined
-  /** Minutes of inactivity before a password is required. */
+  // Minutes of inactivity before a password is required.
   var passwordMinutesOfInactivityBeforeLock: js.UndefOr[scala.Double] = js.undefined
-  /** The number of previous passwords to prevent re-use of. */
+  // The number of previous passwords to prevent re-use of.
   var passwordPreviousPasswordBlockCount: js.UndefOr[scala.Double] = js.undefined
-  /** Require a password to unlock an idle device. */
+  // Require a password to unlock an idle device.
   var passwordRequireToUnlockFromIdle: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require a password to unlock Windows Phone device. */
+  // Require a password to unlock Windows Phone device.
   var passwordRequired: js.UndefOr[scala.Boolean] = js.undefined
-  /** The required password type. Possible values are: deviceDefault, alphanumeric, numeric. */
+  // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
   var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
-  /** Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled. */
+  // Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.
   var secureBootEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Require encryption on windows devices. */
+  // Require encryption on windows devices.
   var storageRequireEncryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 

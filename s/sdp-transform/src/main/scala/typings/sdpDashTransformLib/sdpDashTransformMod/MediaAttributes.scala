@@ -13,7 +13,7 @@ trait MediaAttributes extends SharedAttributes {
   // a=end-of-candidates
   var endOfCandidates: js.UndefOr[java.lang.String] = js.undefined
   // a=fmtp
-  var fmtp: js.UndefOr[sdpDashTransformLib.Anon_ConfigPayload] = js.undefined
+  var fmtp: js.Array[sdpDashTransformLib.Anon_ConfigPayload]
   // a=framerate
   var framerate: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   // a=imageattr
@@ -38,7 +38,7 @@ trait MediaAttributes extends SharedAttributes {
   var rtcpMux: js.UndefOr[java.lang.String] = js.undefined
   // a=rtcp-rsize
   var rtcpRsize: js.UndefOr[java.lang.String] = js.undefined
-  var rtp: js.UndefOr[sdpDashTransformLib.Anon_Codec] = js.undefined
+  var rtp: js.Array[sdpDashTransformLib.Anon_Codec]
   // a=sctpmap
   var sctpmap: js.UndefOr[sdpDashTransformLib.Anon_App] = js.undefined
   var simulcast: js.UndefOr[sdpDashTransformLib.Anon_Dir1] = js.undefined
@@ -54,14 +54,15 @@ trait MediaAttributes extends SharedAttributes {
 object MediaAttributes {
   @scala.inline
   def apply(
+    fmtp: js.Array[sdpDashTransformLib.Anon_ConfigPayload],
+    rtp: js.Array[sdpDashTransformLib.Anon_Codec],
     candidates: js.Array[sdpDashTransformLib.Anon_ComponentFoundation] = null,
     control: java.lang.String = null,
     crypto: sdpDashTransformLib.Anon_ConfigId = null,
     direction: sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive = null,
     endOfCandidates: java.lang.String = null,
-    ext: sdpDashTransformLib.Anon_Config = null,
+    ext: js.Array[sdpDashTransformLib.Anon_Config] = null,
     fingerprint: sdpDashTransformLib.Anon_Hash = null,
-    fmtp: sdpDashTransformLib.Anon_ConfigPayload = null,
     framerate: scala.Double | java.lang.String = null,
     icePwd: java.lang.String = null,
     iceUfrag: java.lang.String = null,
@@ -78,7 +79,6 @@ object MediaAttributes {
     rtcpFbTrrInt: sdpDashTransformLib.Anon_PayloadValue = null,
     rtcpMux: java.lang.String = null,
     rtcpRsize: java.lang.String = null,
-    rtp: sdpDashTransformLib.Anon_Codec = null,
     sctpmap: sdpDashTransformLib.Anon_App = null,
     setup: java.lang.String = null,
     simulcast: sdpDashTransformLib.Anon_Dir1 = null,
@@ -88,7 +88,7 @@ object MediaAttributes {
     ssrcs: js.Array[sdpDashTransformLib.Anon_Attribute] = null,
     xGoogleFlag: java.lang.String = null
   ): MediaAttributes = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(fmtp = fmtp, rtp = rtp)
     if (candidates != null) __obj.updateDynamic("candidates")(candidates)
     if (control != null) __obj.updateDynamic("control")(control)
     if (crypto != null) __obj.updateDynamic("crypto")(crypto)
@@ -96,7 +96,6 @@ object MediaAttributes {
     if (endOfCandidates != null) __obj.updateDynamic("endOfCandidates")(endOfCandidates)
     if (ext != null) __obj.updateDynamic("ext")(ext)
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (fmtp != null) __obj.updateDynamic("fmtp")(fmtp)
     if (framerate != null) __obj.updateDynamic("framerate")(framerate.asInstanceOf[js.Any])
     if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd)
     if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag)
@@ -113,7 +112,6 @@ object MediaAttributes {
     if (rtcpFbTrrInt != null) __obj.updateDynamic("rtcpFbTrrInt")(rtcpFbTrrInt)
     if (rtcpMux != null) __obj.updateDynamic("rtcpMux")(rtcpMux)
     if (rtcpRsize != null) __obj.updateDynamic("rtcpRsize")(rtcpRsize)
-    if (rtp != null) __obj.updateDynamic("rtp")(rtp)
     if (sctpmap != null) __obj.updateDynamic("sctpmap")(sctpmap)
     if (setup != null) __obj.updateDynamic("setup")(setup)
     if (simulcast != null) __obj.updateDynamic("simulcast")(simulcast)

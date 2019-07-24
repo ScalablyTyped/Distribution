@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlternativeSecurityId extends js.Object {
-  /** For internal use only */
+  // For internal use only
   var identityProvider: js.UndefOr[java.lang.String] = js.undefined
-  /** For internal use only */
+  // For internal use only
   var key: js.UndefOr[scala.Double] = js.undefined
-  /** For internal use only */
+  // For internal use only
   var `type`: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SharepointIds extends js.Object {
-  /** The unique identifier (guid) for the item's list in SharePoint. */
+  // The unique identifier (guid) for the item's list in SharePoint.
   var listId: js.UndefOr[java.lang.String] = js.undefined
-  /** An integer identifier for the item within the containing list. */
+  // An integer identifier for the item within the containing list.
   var listItemId: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site. */
+  // The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
   var listItemUniqueId: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier (guid) for the item's site collection (SPSite). */
+  // The unique identifier (guid) for the item's site collection (SPSite).
   var siteId: js.UndefOr[java.lang.String] = js.undefined
-  /** The SharePoint URL for the site that contains the item. */
+  // The SharePoint URL for the site that contains the item.
   var siteUrl: js.UndefOr[java.lang.String] = js.undefined
-  /** The unique identifier (guid) for the item's site (SPWeb). */
+  // The unique identifier (guid) for the item's site (SPWeb).
   var webId: js.UndefOr[java.lang.String] = js.undefined
 }
 

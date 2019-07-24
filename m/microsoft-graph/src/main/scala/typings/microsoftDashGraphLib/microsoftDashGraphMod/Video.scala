@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Video extends js.Object {
-  /** Number of audio bits per sample. */
+  // Number of audio bits per sample.
   var audioBitsPerSample: js.UndefOr[scala.Double] = js.undefined
-  /** Number of audio channels. */
+  // Number of audio channels.
   var audioChannels: js.UndefOr[scala.Double] = js.undefined
-  /** Name of the audio format (AAC, MP3, etc.). */
+  // Name of the audio format (AAC, MP3, etc.).
   var audioFormat: js.UndefOr[java.lang.String] = js.undefined
-  /** Number of audio samples per second. */
+  // Number of audio samples per second.
   var audioSamplesPerSecond: js.UndefOr[scala.Double] = js.undefined
-  /** Bit rate of the video in bits per second. */
+  // Bit rate of the video in bits per second.
   var bitrate: js.UndefOr[scala.Double] = js.undefined
-  /** Duration of the file in milliseconds. */
+  // Duration of the file in milliseconds.
   var duration: js.UndefOr[scala.Double] = js.undefined
-  /** 'Four character code' name of the video format. */
+  // 'Four character code' name of the video format.
   var fourCC: js.UndefOr[java.lang.String] = js.undefined
-  /** Frame rate of the video. */
+  // Frame rate of the video.
   var frameRate: js.UndefOr[scala.Double] = js.undefined
-  /** Height of the video, in pixels. */
+  // Height of the video, in pixels.
   var height: js.UndefOr[scala.Double] = js.undefined
-  /** Width of the video, in pixels. */
+  // Width of the video, in pixels.
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

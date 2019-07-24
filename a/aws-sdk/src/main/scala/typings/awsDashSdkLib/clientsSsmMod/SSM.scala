@@ -402,7 +402,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteParameterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete a list of parameters. This API is used to delete parameters by using the Amazon EC2 console.
+    * Delete a list of parameters.
     */
   def deleteParameters(): awsDashSdkLib.libRequestMod.Request[DeleteParametersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteParameters(
@@ -413,7 +413,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteParametersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete a list of parameters. This API is used to delete parameters by using the Amazon EC2 console.
+    * Delete a list of parameters.
     */
   def deleteParameters(params: DeleteParametersRequest): awsDashSdkLib.libRequestMod.Request[DeleteParametersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteParameters(
@@ -563,7 +563,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterTaskFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Details about the activation, including: the date and time the activation was created, the expiration date, the IAM role assigned to the instances in the activation, and the number of instances activated by this registration.
+    * Describes details about the activation, such as the date and time the activation was created, its expiration date, the IAM role assigned to the instances in the activation, and the number of instances registered by using this activation.
     */
   def describeActivations(): awsDashSdkLib.libRequestMod.Request[DescribeActivationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeActivations(
@@ -574,7 +574,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeActivationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Details about the activation, including: the date and time the activation was created, the expiration date, the IAM role assigned to the instances in the activation, and the number of instances activated by this registration.
+    * Describes details about the activation, such as the date and time the activation was created, its expiration date, the IAM role assigned to the instances in the activation, and the number of instances registered by using this activation.
     */
   def describeActivations(params: DescribeActivationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeActivationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeActivations(
@@ -701,7 +701,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeAutomationStepExecutionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists all patches that could possibly be included in a patch baseline.
+    * Lists all patches eligible to be included in a patch baseline.
     */
   def describeAvailablePatches(): awsDashSdkLib.libRequestMod.Request[DescribeAvailablePatchesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAvailablePatches(
@@ -712,7 +712,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeAvailablePatchesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists all patches that could possibly be included in a patch baseline.
+    * Lists all patches eligible to be included in a patch baseline.
     */
   def describeAvailablePatches(params: DescribeAvailablePatchesRequest): awsDashSdkLib.libRequestMod.Request[DescribeAvailablePatchesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAvailablePatches(
@@ -1518,7 +1518,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves details about a specific task run as part of a maintenance window execution.
+    * Retrieves details about a specific a maintenance window execution.
     */
   def getMaintenanceWindowExecution(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecution(
@@ -1529,7 +1529,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves details about a specific task run as part of a maintenance window execution.
+    * Retrieves details about a specific a maintenance window execution.
     */
   def getMaintenanceWindowExecution(params: GetMaintenanceWindowExecutionRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecution(
@@ -1564,7 +1564,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. maintenance windows report status for all invocations. 
+    * Retrieves information about a specific task running on a specific target.
     */
   def getMaintenanceWindowExecutionTaskInvocation(): awsDashSdkLib.libRequestMod.Request[
     GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -1581,7 +1581,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. maintenance windows report status for all invocations. 
+    * Retrieves information about a specific task running on a specific target.
     */
   def getMaintenanceWindowExecutionTaskInvocation(params: GetMaintenanceWindowExecutionTaskInvocationRequest): awsDashSdkLib.libRequestMod.Request[
     GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -2220,7 +2220,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutParameterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Defines the default patch baseline.
+    * Defines the default patch baseline for the relevant operating system. To reset the AWS predefined patch baseline as the default, specify the full patch baseline ARN as the baseline ID value. For example, for CentOS, specify arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-0574b43a65ea646ed instead of pb-0574b43a65ea646ed.
     */
   def registerDefaultPatchBaseline(): awsDashSdkLib.libRequestMod.Request[RegisterDefaultPatchBaselineResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerDefaultPatchBaseline(
@@ -2231,7 +2231,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterDefaultPatchBaselineResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Defines the default patch baseline.
+    * Defines the default patch baseline for the relevant operating system. To reset the AWS predefined patch baseline as the default, specify the full patch baseline ARN as the baseline ID value. For example, for CentOS, specify arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-0574b43a65ea646ed instead of pb-0574b43a65ea646ed.
     */
   def registerDefaultPatchBaseline(params: RegisterDefaultPatchBaselineRequest): awsDashSdkLib.libRequestMod.Request[RegisterDefaultPatchBaselineResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerDefaultPatchBaseline(
@@ -2312,7 +2312,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterTaskWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes all tags from the specified resource.
+    * Removes tag keys from the specified resource.
     */
   def removeTagsFromResource(): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeTagsFromResource(
@@ -2323,7 +2323,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes all tags from the specified resource.
+    * Removes tag keys from the specified resource.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceRequest): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeTagsFromResource(
@@ -2588,7 +2588,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateAssociationStatusResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * The document you want to update.
+    * Updates one or more values for an SSM document.
     */
   def updateDocument(): awsDashSdkLib.libRequestMod.Request[UpdateDocumentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDocument(
@@ -2599,7 +2599,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDocumentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * The document you want to update.
+    * Updates one or more values for an SSM document.
     */
   def updateDocument(params: UpdateDocumentRequest): awsDashSdkLib.libRequestMod.Request[UpdateDocumentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDocument(
@@ -2657,7 +2657,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the target of an existing maintenance window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
+    * Modifies the target of an existing maintenance window. You can change the following:   Name   Description   Owner   IDs for an ID target   Tags for a Tag target   From any supported tag type to another. The three supported tag types are ID target, Tag target, and resource group. For more information, see Target.    If a parameter is null, then the corresponding field is not modified. 
     */
   def updateMaintenanceWindowTarget(): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTarget(
@@ -2668,7 +2668,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the target of an existing maintenance window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
+    * Modifies the target of an existing maintenance window. You can change the following:   Name   Description   Owner   IDs for an ID target   Tags for a Tag target   From any supported tag type to another. The three supported tag types are ID target, Tag target, and resource group. For more information, see Target.    If a parameter is null, then the corresponding field is not modified. 
     */
   def updateMaintenanceWindowTarget(params: UpdateMaintenanceWindowTargetRequest): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTarget(
@@ -2703,7 +2703,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Assigns or changes an Amazon Identity and Access Management (IAM) role to the managed instance.
+    * Assigns or changes an Amazon Identity and Access Management (IAM) role for the managed instance.
     */
   def updateManagedInstanceRole(): awsDashSdkLib.libRequestMod.Request[UpdateManagedInstanceRoleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateManagedInstanceRole(
@@ -2714,7 +2714,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateManagedInstanceRoleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Assigns or changes an Amazon Identity and Access Management (IAM) role to the managed instance.
+    * Assigns or changes an Amazon Identity and Access Management (IAM) role for the managed instance.
     */
   def updateManagedInstanceRole(params: UpdateManagedInstanceRoleRequest): awsDashSdkLib.libRequestMod.Request[UpdateManagedInstanceRoleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateManagedInstanceRole(

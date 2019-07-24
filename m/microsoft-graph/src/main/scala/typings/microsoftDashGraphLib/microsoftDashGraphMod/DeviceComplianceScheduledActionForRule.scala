@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceComplianceScheduledActionForRule extends Entity {
-  /** Name of the rule which this scheduled action applies to. */
+  // Name of the rule which this scheduled action applies to.
   var ruleName: js.UndefOr[java.lang.String] = js.undefined
-  /** The list of scheduled action configurations for this compliance policy. */
+  // The list of scheduled action configurations for this compliance policy.
   var scheduledActionConfigurations: js.UndefOr[js.Array[DeviceComplianceActionItem]] = js.undefined
 }
 

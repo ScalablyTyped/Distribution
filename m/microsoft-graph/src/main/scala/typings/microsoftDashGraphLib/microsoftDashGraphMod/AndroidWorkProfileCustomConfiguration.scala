@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AndroidWorkProfileCustomConfiguration extends DeviceConfiguration {
-  /** OMA settings. This collection can contain a maximum of 500 elements. */
+  // OMA settings. This collection can contain a maximum of 500 elements.
   var omaSettings: js.UndefOr[js.Array[OmaSetting]] = js.undefined
 }
 

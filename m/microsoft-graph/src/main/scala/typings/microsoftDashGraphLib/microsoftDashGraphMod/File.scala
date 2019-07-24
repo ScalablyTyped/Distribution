@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait File extends js.Object {
-  /** Hashes of the file's binary content, if available. Read-only. */
+  // Hashes of the file's binary content, if available. Read-only.
   var hashes: js.UndefOr[Hashes] = js.undefined
-  /** The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. */
+  /**
+    * The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file
+    * was uploaded. Read-only.
+    */
   var mimeType: js.UndefOr[java.lang.String] = js.undefined
   var processingMetadata: js.UndefOr[scala.Boolean] = js.undefined
 }

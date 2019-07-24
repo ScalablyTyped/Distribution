@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MicrosoftStoreForBusinessApp extends MobileApp {
-  /** The app license type. Possible values are: offline, online. */
+  // The app license type. Possible values are: offline, online.
   var licenseType: js.UndefOr[MicrosoftStoreForBusinessLicenseType] = js.undefined
-  /** The app package identifier */
+  // The app package identifier
   var packageIdentityName: js.UndefOr[java.lang.String] = js.undefined
-  /** The app product key */
+  // The app product key
   var productKey: js.UndefOr[java.lang.String] = js.undefined
-  /** The total number of Microsoft Store for Business licenses. */
+  // The total number of Microsoft Store for Business licenses.
   var totalLicenseCount: js.UndefOr[scala.Double] = js.undefined
-  /** The number of Microsoft Store for Business licenses in use. */
+  // The number of Microsoft Store for Business licenses in use.
   var usedLicenseCount: js.UndefOr[scala.Double] = js.undefined
 }
 

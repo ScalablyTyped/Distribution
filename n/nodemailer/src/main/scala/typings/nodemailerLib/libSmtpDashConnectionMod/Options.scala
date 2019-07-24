@@ -14,6 +14,7 @@ trait Options extends js.Object {
   var connection: js.UndefOr[nodeLib.netMod.Socket] = js.undefined
   /** how many milliseconds to wait for the connection to establish */
   var connectionTimeout: js.UndefOr[ms] = js.undefined
+  var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.undefined
   /** if set to true, then logs SMTP traffic and message content, otherwise logs only transaction events */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   /** how many milliseconds to wait for the greeting after connection is established */
@@ -53,6 +54,7 @@ object Options {
     authMethod: java.lang.String = null,
     connection: nodeLib.netMod.Socket = null,
     connectionTimeout: js.UndefOr[ms] = js.undefined,
+    customAuth: CustomAuthenticationHandlers = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     greetingTimeout: js.UndefOr[ms] = js.undefined,
     host: java.lang.String = null,
@@ -74,6 +76,7 @@ object Options {
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
     if (host != null) __obj.updateDynamic("host")(host)

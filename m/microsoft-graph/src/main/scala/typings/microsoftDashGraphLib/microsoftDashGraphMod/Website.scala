@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Website extends js.Object {
-  /** The URL of the website. */
+  // The URL of the website.
   var address: js.UndefOr[java.lang.String] = js.undefined
-  /** The display name of the web site. */
+  // The display name of the web site.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The possible values are: other, home, work, blog, profile. */
+  // The possible values are: other, home, work, blog, profile.
   var `type`: js.UndefOr[WebsiteType] = js.undefined
 }
 

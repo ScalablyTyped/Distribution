@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("express-mung", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var onError: expressLib.expressMod.ErrorRequestHandler = js.native
   def headers(fn: TransformHeader): expressLib.expressMod.RequestHandler = js.native
   def headersAsync(fn: TransformHeaderAsync): expressLib.expressMod.RequestHandler = js.native
   def json(fn: Transform): expressLib.expressMod.RequestHandler = js.native

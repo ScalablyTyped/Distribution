@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookWorksheet extends Entity {
-  /** Returns collection of charts that are part of the worksheet. Read-only. */
+  // Returns collection of charts that are part of the worksheet. Read-only.
   var charts: js.UndefOr[js.Array[WorkbookChart]] = js.undefined
-  /** The display name of the worksheet. */
+  // The display name of the worksheet.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Returns collection of names that are associated with the worksheet. Read-only. */
+  // Returns collection of names that are associated with the worksheet. Read-only.
   var names: js.UndefOr[js.Array[WorkbookNamedItem]] = js.undefined
-  /** Collection of PivotTables that are part of the worksheet. */
+  // Collection of PivotTables that are part of the worksheet.
   var pivotTables: js.UndefOr[js.Array[WorkbookPivotTable]] = js.undefined
-  /** The zero-based position of the worksheet within the workbook. */
+  // The zero-based position of the worksheet within the workbook.
   var position: js.UndefOr[scala.Double] = js.undefined
-  /** Returns sheet protection object for a worksheet. Read-only. */
+  // Returns sheet protection object for a worksheet. Read-only.
   var protection: js.UndefOr[WorkbookWorksheetProtection] = js.undefined
-  /** Collection of tables that are part of the worksheet. Read-only. */
+  // Collection of tables that are part of the worksheet. Read-only.
   var tables: js.UndefOr[js.Array[WorkbookTable]] = js.undefined
-  /** The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden. */
+  // The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 

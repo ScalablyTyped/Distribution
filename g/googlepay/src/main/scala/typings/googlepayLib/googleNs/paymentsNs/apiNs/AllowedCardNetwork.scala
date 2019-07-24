@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - googlepayLib.googlepayLibStrings.JCB
   - googlepayLib.googlepayLibStrings.MASTERCARD
   - googlepayLib.googlepayLibStrings.VISA
+  - googlepayLib.googlepayLibStrings.INTERAC
 */
 trait AllowedCardNetwork extends js.Object
 

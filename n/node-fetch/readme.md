@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-fetch
 
-Typings are for version 2.3
+Typings are for version 2.5
 
 ## Library description:
 A light-weight module that brings window.fetch to node.js
@@ -38,7 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // `AbortSignal` is defined here to prevent a dependency on a particular
 // implementation like the `abort-controller` package, and to avoid requiring
 // the `dom` library in `tsconfig.json`.
-// Type definitions for node-fetch 2.3
+// Type definitions for node-fetch 2.5
 // Project: https://github.com/bitinn/node-fetch
 // Definitions by: Torsten Werner <https://github.com/torstenwerner>
 //                 Niklas Lindgren <https://github.com/nikcorg>

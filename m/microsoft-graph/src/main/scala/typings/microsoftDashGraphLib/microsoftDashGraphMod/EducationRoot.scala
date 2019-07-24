@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EducationRoot extends Entity {
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var classes: js.UndefOr[js.Array[EducationClass]] = js.undefined
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var me: js.UndefOr[EducationUser] = js.undefined
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var schools: js.UndefOr[js.Array[EducationSchool]] = js.undefined
-  /** Read-only. Nullable. */
+  // Read-only. Nullable.
   var users: js.UndefOr[js.Array[EducationUser]] = js.undefined
 }
 

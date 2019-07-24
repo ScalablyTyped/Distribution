@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceCategory extends Entity {
-  /** Optional description for the device category. */
+  // Optional description for the device category.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** Display name for the device category. */
+  // Display name for the device category.
   var displayName: js.UndefOr[java.lang.String] = js.undefined
 }
 

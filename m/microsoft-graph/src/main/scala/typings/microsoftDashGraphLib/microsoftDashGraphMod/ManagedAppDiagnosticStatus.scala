@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppDiagnosticStatus extends js.Object {
-  /** Instruction on how to mitigate a failed validation */
+  // Instruction on how to mitigate a failed validation
   var mitigationInstruction: js.UndefOr[java.lang.String] = js.undefined
-  /** The state of the operation */
+  // The state of the operation
   var state: js.UndefOr[java.lang.String] = js.undefined
-  /** The validation friendly name */
+  // The validation friendly name
   var validationName: js.UndefOr[java.lang.String] = js.undefined
 }
 

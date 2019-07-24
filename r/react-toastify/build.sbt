@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-toastify"
-version := "4.0-dt-20190212Z-30a765"
+version := "4.0-dt-20190212Z-59da78"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "react-transition-group" % "2.9-dt-20190607Z-e3271a",
+  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20190723Z-4c8a06",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

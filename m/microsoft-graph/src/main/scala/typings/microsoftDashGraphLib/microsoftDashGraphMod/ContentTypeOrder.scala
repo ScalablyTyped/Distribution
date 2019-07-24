@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContentTypeOrder extends js.Object {
-  /** Whether this is the default Content Type */
+  // Whether this is the default Content Type
   var default: js.UndefOr[scala.Boolean] = js.undefined
-  /** Specifies the position in which the Content Type appears in the selection UI. */
+  // Specifies the position in which the Content Type appears in the selection UI.
   var position: js.UndefOr[scala.Double] = js.undefined
 }
 

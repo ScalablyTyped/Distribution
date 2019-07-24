@@ -99,6 +99,10 @@ trait IPaymentIntent
     * ID of the review associated with this PaymentIntent, if any. [Expandable]
     */
   var review: js.UndefOr[java.lang.String | stripeLib.stripeMod.reviewsNs.IReview | scala.Null] = js.undefined
+  /*
+    * Indicates that you intend to make future payments with this PaymentIntent’s payment method.
+    */
+  var setup_future_usage: PaymentIntentFutureUsageType | scala.Null
   /**
     * Shipping information for this PaymentIntent.
     */
@@ -155,6 +159,7 @@ object IPaymentIntent {
     on_behalf_of: java.lang.String = null,
     receipt_email: java.lang.String = null,
     review: java.lang.String | stripeLib.stripeMod.reviewsNs.IReview = null,
+    setup_future_usage: PaymentIntentFutureUsageType = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     statement_descriptor: java.lang.String = null,
     transfer_data: IPaymentIntentTransferData = null,
@@ -172,6 +177,7 @@ object IPaymentIntent {
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
+    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)

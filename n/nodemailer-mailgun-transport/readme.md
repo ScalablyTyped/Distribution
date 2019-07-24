@@ -40,7 +40,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Oto Ciulis <https://github.com/otociulis>
 //                 Joachim Wallsin <https://github.com/calvinmcgee>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.3
 
 ```
 

@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManagedAppPolicyDeploymentSummary extends Entity {
-  /** Not yet documented */
+  // Not yet documented
   var configurationDeployedUserCount: js.UndefOr[scala.Double] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var configurationDeploymentSummaryPerApp: js.UndefOr[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var lastRefreshTime: js.UndefOr[java.lang.String] = js.undefined
-  /** Version of the entity. */
+  // Version of the entity.
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

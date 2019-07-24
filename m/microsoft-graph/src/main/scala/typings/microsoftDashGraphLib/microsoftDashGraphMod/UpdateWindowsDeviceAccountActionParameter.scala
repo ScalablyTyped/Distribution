@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UpdateWindowsDeviceAccountActionParameter extends js.Object {
-  /** Not yet documented */
+  // Not yet documented
   var calendarSyncEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var deviceAccount: js.UndefOr[WindowsDeviceAccount] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var deviceAccountEmail: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var exchangeServer: js.UndefOr[java.lang.String] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var passwordRotationEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Not yet documented */
+  // Not yet documented
   var sessionInitiationProtocalAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 

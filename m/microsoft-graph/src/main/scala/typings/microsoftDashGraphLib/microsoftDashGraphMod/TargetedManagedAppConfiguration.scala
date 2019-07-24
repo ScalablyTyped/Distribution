@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetedManagedAppConfiguration extends ManagedAppConfiguration {
-  /** List of apps to which the policy is deployed. */
+  // List of apps to which the policy is deployed.
   var apps: js.UndefOr[js.Array[ManagedMobileApp]] = js.undefined
-  /** Navigation property to list of inclusion and exclusion groups to which the policy is deployed. */
+  // Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   var assignments: js.UndefOr[js.Array[TargetedManagedAppPolicyAssignment]] = js.undefined
-  /** Count of apps to which the current policy is deployed. */
+  // Count of apps to which the current policy is deployed.
   var deployedAppCount: js.UndefOr[scala.Double] = js.undefined
-  /** Navigation property to deployment summary of the configuration. */
+  // Navigation property to deployment summary of the configuration.
   var deploymentSummary: js.UndefOr[ManagedAppPolicyDeploymentSummary] = js.undefined
-  /** Indicates if the policy is deployed to any inclusion groups or not. */
+  // Indicates if the policy is deployed to any inclusion groups or not.
   var isAssigned: js.UndefOr[scala.Boolean] = js.undefined
 }
 

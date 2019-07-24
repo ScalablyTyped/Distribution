@@ -6,11 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Nextupdate extends js.Object {
+  /** When response will be refreshed with the CA in millisecond Unix time. */
   var next_update: scala.Double
+  /** When response signed by responder in millisecond Unix time. */
   var produced_at: scala.Double
+  /** Certificate revocation reason. One of `OCSP_REASON_*` constants. */
   var revocation_reason: java.lang.String
+  /** When certificate was revoked in millisecond Unix time. */
   var revoked_at: scala.Double
+  /** Certificate status. One of `OCSP_STATUS_*` constants. */
   var status: java.lang.String
+  /** When indicated status was known correct in millisecond Unix time. */
   var this_update: scala.Double
 }
 

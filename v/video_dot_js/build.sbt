@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "video_dot_js"
-version := "7.2-dt-20190212Z-b4a809"
+version := "7.2-dt-20190722Z-4e7347"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

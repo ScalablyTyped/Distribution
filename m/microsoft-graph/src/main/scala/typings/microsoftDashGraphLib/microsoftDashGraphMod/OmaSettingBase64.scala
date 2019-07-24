@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OmaSettingBase64 extends OmaSetting {
-  /** File name associated with the Value property (.cer */
+  // File name associated with the Value property (.cer
   var fileName: js.UndefOr[java.lang.String] = js.undefined
-  /** Value. (Base64 encoded string) */
+  // Value. (Base64 encoded string)
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

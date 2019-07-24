@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InternetMessageHeader extends js.Object {
-  /** Represents the key in a key-value pair. */
+  // Represents the key in a key-value pair.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** The value in a key-value pair. */
+  // The value in a key-value pair.
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

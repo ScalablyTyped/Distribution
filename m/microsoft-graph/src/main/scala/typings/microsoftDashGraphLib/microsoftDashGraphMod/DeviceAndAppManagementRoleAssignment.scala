@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceAndAppManagementRoleAssignment extends RoleAssignment {
-  /** The list of ids of role member security groups. These are IDs from Azure Active Directory. */
+  // The list of ids of role member security groups. These are IDs from Azure Active Directory.
   var members: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

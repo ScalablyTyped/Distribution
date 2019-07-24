@@ -6,25 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContentType extends Entity {
-  /** The collection of columns that are required by this content type */
+  // The collection of columns that are required by this content type
   var columnLinks: js.UndefOr[js.Array[ColumnLink]] = js.undefined
-  /** The descriptive text for the item. */
+  // The descriptive text for the item.
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /** The name of the group this content type belongs to. Helps organize related content types. */
+  // The name of the group this content type belongs to. Helps organize related content types.
   var group: js.UndefOr[java.lang.String] = js.undefined
-  /** Indicates whether the content type is hidden in the list's 'New' menu. */
+  // Indicates whether the content type is hidden in the list's 'New' menu.
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  /** If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined. */
+  /**
+    * If this content type is inherited from another scope (like a site), provides a reference to the item where the content
+    * type is defined.
+    */
   var inheritedFrom: js.UndefOr[ItemReference] = js.undefined
-  /** The name of the content type. */
+  // The name of the content type.
   var name: js.UndefOr[java.lang.String] = js.undefined
-  /** Specifies the order in which the content type appears in the selection UI. */
+  // Specifies the order in which the content type appears in the selection UI.
   var order: js.UndefOr[ContentTypeOrder] = js.undefined
-  /** The unique identifier of the content type. */
+  // The unique identifier of the content type.
   var parentId: js.UndefOr[java.lang.String] = js.undefined
-  /** If true, the content type cannot be modified unless this value is first set to false. */
+  // If true, the content type cannot be modified unless this value is first set to false.
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
-  /** If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types. */
+  /**
+    * If true, the content type cannot be modified by users or through push-down operations. Only site collection
+    * administrators can seal or unseal content types.
+    */
   var `sealed`: js.UndefOr[scala.Boolean] = js.undefined
 }
 

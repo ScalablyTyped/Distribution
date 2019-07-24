@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookChartGridlines extends Entity {
-  /** Represents the formatting of chart gridlines. Read-only. */
+  // Represents the formatting of chart gridlines. Read-only.
   var format: js.UndefOr[WorkbookChartGridlinesFormat] = js.undefined
-  /** Boolean value representing if the axis gridlines are visible or not. */
+  // Boolean value representing if the axis gridlines are visible or not.
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
