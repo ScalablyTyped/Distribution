@@ -19,7 +19,9 @@ trait SettingDrawerState extends js.Object {
     atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.sidemenu | atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.topmenu
   ] = js.undefined
   var menu: js.UndefOr[atAntDashDesignProDashLayoutLib.Anon_Locale] = js.undefined
-  var navTheme: js.UndefOr[antdLib.esMenuMod.MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
+  ] = js.undefined
   var primaryColor: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -37,7 +39,7 @@ object SettingDrawerState {
     language: java.lang.String = null,
     layout: atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.sidemenu | atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.topmenu = null,
     menu: atAntDashDesignProDashLayoutLib.Anon_Locale = null,
-    navTheme: antdLib.esMenuMod.MenuTheme = null,
+    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
     primaryColor: java.lang.String = null,
     title: java.lang.String = null
   ): SettingDrawerState = {

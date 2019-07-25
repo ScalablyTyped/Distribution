@@ -30,6 +30,10 @@ trait ModifyClientVpnEndpointRequest extends js.Object {
     * The ARN of the server certificate to be used. The server certificate must be provisioned in AWS Certificate Manager (ACM).
     */
   var ServerCertificateArn: js.UndefOr[String] = js.undefined
+  /**
+    * Indicates whether the VPN is split-tunnel. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    */
+  var SplitTunnel: js.UndefOr[Boolean] = js.undefined
 }
 
 object ModifyClientVpnEndpointRequest {
@@ -40,7 +44,8 @@ object ModifyClientVpnEndpointRequest {
     Description: String = null,
     DnsServers: DnsServersOptionsModifyStructure = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
-    ServerCertificateArn: String = null
+    ServerCertificateArn: String = null,
+    SplitTunnel: js.UndefOr[Boolean] = js.undefined
   ): ModifyClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)
     if (ConnectionLogOptions != null) __obj.updateDynamic("ConnectionLogOptions")(ConnectionLogOptions)
@@ -48,6 +53,7 @@ object ModifyClientVpnEndpointRequest {
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn)
+    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel)
     __obj.asInstanceOf[ModifyClientVpnEndpointRequest]
   }
 }

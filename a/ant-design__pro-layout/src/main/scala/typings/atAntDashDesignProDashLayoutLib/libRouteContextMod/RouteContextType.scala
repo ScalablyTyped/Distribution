@@ -22,7 +22,9 @@ trait RouteContextType extends js.Object {
   ] = js.undefined
   var menu: js.UndefOr[atAntDashDesignProDashLayoutLib.Anon_Locale] = js.undefined
   var menuData: js.UndefOr[js.Array[atAntDashDesignProDashLayoutLib.libTypingsMod.MenuDataItem]] = js.undefined
-  var navTheme: js.UndefOr[antdLib.esMenuMod.MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
+  ] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -40,7 +42,7 @@ object RouteContextType {
     layout: atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.sidemenu | atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.topmenu = null,
     menu: atAntDashDesignProDashLayoutLib.Anon_Locale = null,
     menuData: js.Array[atAntDashDesignProDashLayoutLib.libTypingsMod.MenuDataItem] = null,
-    navTheme: antdLib.esMenuMod.MenuTheme = null,
+    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
     title: java.lang.String = null
   ): RouteContextType = {
     val __obj = js.Dynamic.literal()

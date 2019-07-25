@@ -32,7 +32,7 @@ trait MenuProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subMenuCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var subMenuOpenDelay: js.UndefOr[scala.Double] = js.undefined
-  var theme: js.UndefOr[MenuTheme] = js.undefined
+  var theme: js.UndefOr[antdLib.esMenuMenuContextMod.MenuTheme] = js.undefined
 }
 
 object MenuProps {
@@ -64,7 +64,7 @@ object MenuProps {
     style: reactLib.reactMod.CSSProperties = null,
     subMenuCloseDelay: scala.Int | scala.Double = null,
     subMenuOpenDelay: scala.Int | scala.Double = null,
-    theme: MenuTheme = null
+    theme: antdLib.esMenuMenuContextMod.MenuTheme = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

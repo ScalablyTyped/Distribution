@@ -35,7 +35,7 @@ trait UpdateDevEndpointRequest extends js.Object {
     */
   var PublicKey: js.UndefOr[GenericString] = js.undefined
   /**
-    * True if the list of custom libraries to be loaded in the development endpoint needs to be updated, or False otherwise.
+    *  True if the list of custom libraries to be loaded in the development endpoint needs to be updated, or False if otherwise.
     */
   var UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.undefined
 }

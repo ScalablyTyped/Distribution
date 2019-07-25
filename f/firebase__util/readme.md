@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__util
 
-Typings are for version 0.2.20
+Typings are for version 0.2.22
 
 ## Library description:
 _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package_
@@ -111,8 +111,8 @@ These comments are from the typescript definitions and might be useful:
  * @return {*} The javascript object representing the specified JSON.
  */
 /**
- * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a params
- * object (e.g. {arg: 'val', arg2: 'val2'})
+ * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a
+ * params object (e.g. {arg: 'val', arg2: 'val2'})
  * Note: You must prepend it with ? when adding it to a URL.
  */
 /**

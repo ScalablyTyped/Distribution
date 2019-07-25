@@ -787,6 +787,7 @@
 | [clean-regexp](./c/clean-regexp) | Clean up regular expressions | regex, regexp, regular, expression, clean, cleanup, digit, word |
 | [clean-stack](./c/clean-stack) | Clean up error stack traces | clean, stack, trace, traces, error, err, electron |
 | [clean-webpack-plugin](./c/clean-webpack-plugin) | A webpack plugin to remove/clean your build folder | webpack, plugin, clean, node |
+| [clear](./c/clear) | Clear the terminal screen if possible | ansi, clear, terminal |
 | [clearbladejs-client](./c/clearbladejs-client) | - | - |
 | [clearbladejs-node](./c/clearbladejs-node) | - | - |
 | [clearbladejs-server](./c/clearbladejs-server) | - | - |
@@ -857,6 +858,7 @@
 | [colresizable](./c/colresizable) | jQuery plugin to resize table columns | resize table, resize columns, resize, resizable, columns, jquery-plugin, table, range slider, colresizable, resize table columns, jquery |
 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android | cordova, screenshot, ecosystem:cordova, cordova-android, cordova-ios, cordova-osx |
 | [com_dot_wikitude_dot_phon](./c/com_dot_wikitude_dot_phonegap_dot_wikitudeplugin) | Augmented Reality Wikitude SDK Plugin  | AR, augmented reality, Wikitude, image recognition, markerless tracking, cloud recognition, ecosystem:cordova, cordova-android, cordova-ios |
+| [combine-reducers](./c/combine-reducers) | A stand-alone, Redux compatible implementation of  | Redux, flux, combineReducers |
 | [combine-source-map](./c/combine-source-map) | Add source maps of multiple files, offset them and | source, map, sourcemap, bundle, combine, cat, sourceMappingUrl, browserify |
 | [combokeys](./c/combokeys) | Handles keyboard shortcuts in the browser | keyboard, shortcuts, events, browser |
 | [cometd](./c/cometd) | Comet and WebSocket library for web messaging | comet, websocket, messaging, pubsub, publish, subscribe, rpc, p2p, peer-to-peer |
@@ -1777,8 +1779,6 @@
 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js | admin, database, Firebase, realtime, authentication |
 | [firebase-client](./f/firebase-client) | A simple Node.js client for Firebase | firebase, rest, api, client |
 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati | Firebase, JWT |
-| [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK | - |
-| [firebase__app-types](./f/firebase__app-types) | @firebase/app Types | - |
 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK | - |
 | [firebase__auth-types](./f/firebase__auth-types) | @firebase/auth Types | - |
 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o | - |
@@ -2252,7 +2252,6 @@
 | [grasp](./g/grasp) | JavaScript structural search, replace, and refacto | javascript, search, replace, refactor, structural, ast |
 | [gravatar](./g/gravatar) | Gravatar Node.js library | gravatar, avatar, package.json |
 | [gravatar-url](./g/gravatar-url) | Get the URL to a Gravatar image from an email | gravatar, avatar, profile, image, img, picture, pic, photo, hash, email |
-| [gray-matter](./g/gray-matter) | Parse front-matter from a string or file. Fast, re | assemble, coffee, coffee-script, data, docs, documentation, extract, extracting, front, front-matter, frontmatter, generate, generator, gh-pages, gray, javascript, jekyll, js, JSON, markdown, matter, parse, parser, parsing, site, static, template, toml, yaml, yfm |
 | [greasemonkey](./g/greasemonkey) | - | firefox, chrome, api, user.js, userscript, greasemonkey |
 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node | recaptcha, recaptcha-v3, v3, recaptcha-v2, v2, verify, recaptcha-verify, recaptcha2 |
 | [gregorian-calendar](./g/gregorian-calendar) | date time utils ported from java | date, time |
@@ -4345,6 +4344,7 @@
 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel | react, carousel, nuka |
 | [nullthrows](./n/nullthrows) | flow typed nullthrows | assert, flow, invariant, nullthrows |
 | [num-sort](./n/num-sort) | Sort an array of numbers | sort, sorter, compare, comparator, number, numbers, order, asc, ascending, desc, descending |
+| [num2fraction](./n/num2fraction) | Convert number to fraction | fraction, number, math, maths, arithmetic, gcd, rational |
 | [number-is-nan](./n/number-is-nan) | ES2015 Number.isNaN() ponyfill | es2015, ecmascript, ponyfill, polyfill, shim, number, is, nan, not |
 | [number-to-words](./n/number-to-words) | Contains some util methods for converting numbers  | converter, number, ordinal, string, tool, word |
 | [numbro](./n/numbro) | Format and manipulate numbers. | numeral, numbro, number, format, time, money, percentage |

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/storage-types", "FirebaseStorage")
 @js.native
 class FirebaseStorage protected () extends js.Object {
-  var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
+  var app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any = js.native
   var maxOperationRetryTime: scala.Double = js.native
   var maxUploadRetryTime: scala.Double = js.native
   def ref(): Reference = js.native

@@ -1,5 +1,5 @@
 package typings
-package antdLib.libMenuMod
+package antdLib.libMenuMenuContextMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

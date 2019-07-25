@@ -14,7 +14,11 @@ trait RunNamespace extends js.Object {
     * end.
     */
   def apply[Ret](method: js.Function1[/* repeated */ js.Any, Ret]): Ret = js.native
-  def apply[Target, Ret](target: Target, method: atEmberRunloopLib.dashPrivateTypesMod.RunMethod[Target, Ret]): Ret = js.native
+  def apply[Target, Ret](
+    target: Target,
+    method: atEmberRunloopLib.dashPrivateTypesMod.RunMethod[Target, Ret],
+    args: js.Any*
+  ): Ret = js.native
   /**
     * Begins a new RunLoop. Any deferred actions invoked after the begin will
     * be buffered until you invoke a matching call to `run.end()`. This is

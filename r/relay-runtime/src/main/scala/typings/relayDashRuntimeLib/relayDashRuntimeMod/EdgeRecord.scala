@@ -5,20 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EdgeRecord extends Record {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in string ]: unknown} */ trait EdgeRecord extends js.Object {
   var cursor: js.Any
-  var node: Record
+  var node: stdLib.Record[DataID, _]
 }
 
 object EdgeRecord {
   @scala.inline
-  def apply(
-    cursor: js.Any,
-    node: Record,
-    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null
-  ): EdgeRecord = {
+  def apply(cursor: js.Any, node: stdLib.Record[DataID, _]): EdgeRecord = {
     val __obj = js.Dynamic.literal(cursor = cursor, node = node)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  
     __obj.asInstanceOf[EdgeRecord]
   }
 }

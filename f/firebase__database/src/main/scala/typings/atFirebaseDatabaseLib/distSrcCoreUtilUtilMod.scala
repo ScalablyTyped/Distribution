@@ -20,14 +20,7 @@ object distSrcCoreUtilUtilMod extends js.Object {
   def callUserCallback(): scala.Unit = js.native
   def callUserCallback(callback: js.Function, var_args: js.Any*): scala.Unit = js.native
   def doubleToIEEE754String(v: scala.Double): java.lang.String = js.native
-  def each(
-    obj: js.Array[_],
-    fn: js.Function2[/* v */ js.UndefOr[js.Any], /* k */ js.UndefOr[js.Any], scala.Unit]
-  ): scala.Unit = js.native
-  def each(
-    obj: js.Object,
-    fn: js.Function2[/* v */ js.UndefOr[js.Any], /* k */ js.UndefOr[js.Any], scala.Unit]
-  ): scala.Unit = js.native
+  def each(obj: js.Object, fn: js.Function2[/* k */ java.lang.String, /* v */ js.Any, scala.Unit]): scala.Unit = js.native
   def enableLogging(): scala.Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ java.lang.String, scala.Unit], persistent: scala.Boolean): scala.Unit = js.native

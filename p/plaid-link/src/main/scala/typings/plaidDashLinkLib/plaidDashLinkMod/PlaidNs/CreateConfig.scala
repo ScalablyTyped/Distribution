@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateConfig extends js.Object {
   var clientName: java.lang.String = js.native
+  var countryCodes: js.UndefOr[js.Array[Country]] = js.native
   var env: Environment = js.native
   var isWebView: js.UndefOr[scala.Boolean] = js.native
   var key: java.lang.String = js.native
@@ -19,7 +20,8 @@ trait CreateConfig extends js.Object {
   var onSuccess_Original: OnSuccess = js.native
   var product: js.Array[Product] = js.native
   var token: js.UndefOr[java.lang.String] = js.native
-  var user: js.UndefOr[User] = js.native
+  var userEmailAddress: js.UndefOr[java.lang.String] = js.native
+  var userLegalName: js.UndefOr[java.lang.String] = js.native
   def onSuccess(public_token: java.lang.String, metadata: OnSuccessMetaData): scala.Unit = js.native
 }
 

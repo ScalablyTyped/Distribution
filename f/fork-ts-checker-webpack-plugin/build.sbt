@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.4.3-e9d7ec"
+version := "1.4.3-637e95"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.5-983486",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-a00acf",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-8dc4d2",
-  "org.scalablytyped" %%% "webpack" % "4.32-dt-20190719Z-3e0fb6",
+  "org.scalablytyped" %%% "webpack" % "4.32-dt-20190724Z-931598",
   "org.scalablytyped" %%% "worker-rpc" % "0.1.1-7b541c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

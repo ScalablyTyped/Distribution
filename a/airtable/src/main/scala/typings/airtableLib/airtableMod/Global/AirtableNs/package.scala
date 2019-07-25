@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object AirtableNs {
   type Base = js.Function1[/* tableName */ java.lang.String, Table[js.Object]]
-  type FieldSet = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[Attachment]]]
+  type FieldSet = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | (js.Array[Attachment | java.lang.String])]]
   type Response[TFields] = js.Array[Row[TFields]]
 }

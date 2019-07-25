@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetSecurityConfigurationResponse extends js.Object {
   /**
-    * The requested security configuration
+    * The requested security configuration.
     */
   var SecurityConfiguration: js.UndefOr[SecurityConfiguration] = js.undefined
 }

@@ -31,6 +31,10 @@ trait CreateJobRequest extends js.Object {
     */
   var ExecutionProperty: js.UndefOr[ExecutionProperty] = js.undefined
   /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for jobs of type Spark.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Jobs that are created without specifying a Glue version default to Glue 0.9.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
+  /**
     * This field is reserved for future use.
     */
   var LogUri: js.UndefOr[UriString] = js.undefined
@@ -73,7 +77,7 @@ trait CreateJobRequest extends js.Object {
   /**
     * The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X.   For the Standard worker type, each worker provides 4 vCPU, 16 GB of memory and a 50GB disk, and 2 executors per worker.   For the G.1X worker type, each worker maps to 1 DPU (4 vCPU, 16 GB of memory, 64 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs.   For the G.2X worker type, each worker maps to 2 DPU (8 vCPU, 32 GB of memory, 128 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs.  
     */
-  var WorkerType: js.UndefOr[NameString] = js.undefined
+  var WorkerType: js.UndefOr[WorkerType] = js.undefined
 }
 
 object CreateJobRequest {
@@ -87,6 +91,7 @@ object CreateJobRequest {
     DefaultArguments: GenericMap = null,
     Description: DescriptionString = null,
     ExecutionProperty: ExecutionProperty = null,
+    GlueVersion: GlueVersionString = null,
     LogUri: UriString = null,
     MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
     MaxRetries: js.UndefOr[MaxRetries] = js.undefined,
@@ -95,7 +100,7 @@ object CreateJobRequest {
     SecurityConfiguration: NameString = null,
     Tags: TagsMap = null,
     Timeout: js.UndefOr[Timeout] = js.undefined,
-    WorkerType: NameString = null
+    WorkerType: WorkerType = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(Command = Command, Name = Name, Role = Role)
     if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity)
@@ -103,6 +108,7 @@ object CreateJobRequest {
     if (DefaultArguments != null) __obj.updateDynamic("DefaultArguments")(DefaultArguments)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (ExecutionProperty != null) __obj.updateDynamic("ExecutionProperty")(ExecutionProperty)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)
     if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
     if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries)
@@ -111,7 +117,7 @@ object CreateJobRequest {
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType)
+    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
 }

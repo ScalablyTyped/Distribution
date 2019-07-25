@@ -33,6 +33,11 @@ trait Output extends js.Object {
   var devtoolNamespace: js.UndefOr[java.lang.String] = js.undefined
   /** The filename of the entry chunk as relative path inside the output.path directory. */
   var filename: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Tells webpack to use the future version of asset emitting logic, which allows freeing memory of assets after emitting. It could break plugins which
+    * assume that assets are still readable after they were emitted.
+    */
+  var futureEmitAssets: js.UndefOr[scala.Boolean] = js.undefined
   /** An expression which is used to address the global object/scope in runtime code. */
   var globalObject: js.UndefOr[java.lang.String] = js.undefined
   /** The encoding to use when generating the hash, defaults to 'hex' */
@@ -102,6 +107,7 @@ object Output {
     devtoolModuleFilenameTemplate: java.lang.String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, java.lang.String]) = null,
     devtoolNamespace: java.lang.String = null,
     filename: java.lang.String = null,
+    futureEmitAssets: js.UndefOr[scala.Boolean] = js.undefined,
     globalObject: java.lang.String = null,
     hashDigest: webpackLib.webpackLibStrings.hex | webpackLib.webpackLibStrings.latin1 | webpackLib.webpackLibStrings.base64 = null,
     hashDigestLength: scala.Int | scala.Double = null,
@@ -132,6 +138,7 @@ object Output {
     if (devtoolModuleFilenameTemplate != null) __obj.updateDynamic("devtoolModuleFilenameTemplate")(devtoolModuleFilenameTemplate.asInstanceOf[js.Any])
     if (devtoolNamespace != null) __obj.updateDynamic("devtoolNamespace")(devtoolNamespace)
     if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(futureEmitAssets)) __obj.updateDynamic("futureEmitAssets")(futureEmitAssets)
     if (globalObject != null) __obj.updateDynamic("globalObject")(globalObject)
     if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest.asInstanceOf[js.Any])
     if (hashDigestLength != null) __obj.updateDynamic("hashDigestLength")(hashDigestLength.asInstanceOf[js.Any])

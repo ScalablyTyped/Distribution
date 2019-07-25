@@ -13,6 +13,7 @@ trait NodeResult extends js.Object {
   var impact: js.UndefOr[ImpactValue] = js.undefined
   var none: js.Array[CheckResult]
   var target: js.Array[java.lang.String]
+  var xpath: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
 object NodeResult {
@@ -24,11 +25,13 @@ object NodeResult {
     none: js.Array[CheckResult],
     target: js.Array[java.lang.String],
     failureSummary: java.lang.String = null,
-    impact: ImpactValue = null
+    impact: ImpactValue = null,
+    xpath: js.Array[java.lang.String] = null
   ): NodeResult = {
     val __obj = js.Dynamic.literal(all = all, any = any, html = html, none = none, target = target)
     if (failureSummary != null) __obj.updateDynamic("failureSummary")(failureSummary)
     if (impact != null) __obj.updateDynamic("impact")(impact)
+    if (xpath != null) __obj.updateDynamic("xpath")(xpath)
     __obj.asInstanceOf[NodeResult]
   }
 }

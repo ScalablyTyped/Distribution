@@ -624,6 +624,29 @@ trait Pinpoint
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  Retrieves (queries) pre-aggregated data for a standard metric that applies to an application.
+    */
+  def getApplicationDateRangeKpi(): awsDashSdkLib.libRequestMod.Request[GetApplicationDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getApplicationDateRangeKpi(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetApplicationDateRangeKpiResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetApplicationDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Retrieves (queries) pre-aggregated data for a standard metric that applies to an application.
+    */
+  def getApplicationDateRangeKpi(params: GetApplicationDateRangeKpiRequest): awsDashSdkLib.libRequestMod.Request[GetApplicationDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getApplicationDateRangeKpi(
+    params: GetApplicationDateRangeKpiRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetApplicationDateRangeKpiResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetApplicationDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Retrieves information about the settings for an application.
     */
   def getApplicationSettings(): awsDashSdkLib.libRequestMod.Request[GetApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -730,6 +753,29 @@ trait Pinpoint
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignActivitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Retrieves (queries) pre-aggregated data for a standard metric that applies to a campaign.
+    */
+  def getCampaignDateRangeKpi(): awsDashSdkLib.libRequestMod.Request[GetCampaignDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getCampaignDateRangeKpi(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetCampaignDateRangeKpiResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetCampaignDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Retrieves (queries) pre-aggregated data for a standard metric that applies to a campaign.
+    */
+  def getCampaignDateRangeKpi(params: GetCampaignDateRangeKpiRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getCampaignDateRangeKpi(
+    params: GetCampaignDateRangeKpiRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetCampaignDateRangeKpiResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetCampaignDateRangeKpiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about the status, configuration, and other settings for a specific version of a campaign.
     */

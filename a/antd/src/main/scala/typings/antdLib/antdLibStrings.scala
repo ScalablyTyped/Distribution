@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT20DOT5` extends js.Object
+  sealed trait `3DOT20DOT6` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -466,8 +466,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait dark
-    extends antdLib.libMenuMod.MenuTheme
-       with antdLib.esMenuMod.MenuTheme
+    extends antdLib.libMenuMenuContextMod.MenuTheme
+       with antdLib.esMenuMenuContextMod.MenuTheme
        with antdLib.libLayoutSiderMod.SiderTheme
        with antdLib.esLayoutSiderMod.SiderTheme
   
@@ -871,8 +871,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait light
-    extends antdLib.libMenuMod.MenuTheme
-       with antdLib.esMenuMod.MenuTheme
+    extends antdLib.libMenuMenuContextMod.MenuTheme
+       with antdLib.esMenuMenuContextMod.MenuTheme
        with antdLib.libLayoutSiderMod.SiderTheme
        with antdLib.esLayoutSiderMod.SiderTheme
   
@@ -2034,7 +2034,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT20DOT5`: `3DOT20DOT5` = "3.20.5".asInstanceOf[`3DOT20DOT5`]
+  def `3DOT20DOT6`: `3DOT20DOT6` = "3.20.6".asInstanceOf[`3DOT20DOT6`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

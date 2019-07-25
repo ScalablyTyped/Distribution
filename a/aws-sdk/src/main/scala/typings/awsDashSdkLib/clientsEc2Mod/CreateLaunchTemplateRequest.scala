@@ -23,6 +23,10 @@ trait CreateLaunchTemplateRequest extends js.Object {
     */
   var LaunchTemplateName: awsDashSdkLib.clientsEc2Mod.LaunchTemplateName
   /**
+    * The tags to apply to the launch template during creation.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+  /**
     * A description for the first version of the launch template.
     */
   var VersionDescription: js.UndefOr[VersionDescription] = js.undefined
@@ -35,11 +39,13 @@ object CreateLaunchTemplateRequest {
     LaunchTemplateName: LaunchTemplateName,
     ClientToken: String = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
+    TagSpecifications: TagSpecificationList = null,
     VersionDescription: VersionDescription = null
   ): CreateLaunchTemplateRequest = {
     val __obj = js.Dynamic.literal(LaunchTemplateData = LaunchTemplateData, LaunchTemplateName = LaunchTemplateName)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
     if (VersionDescription != null) __obj.updateDynamic("VersionDescription")(VersionDescription)
     __obj.asInstanceOf[CreateLaunchTemplateRequest]
   }

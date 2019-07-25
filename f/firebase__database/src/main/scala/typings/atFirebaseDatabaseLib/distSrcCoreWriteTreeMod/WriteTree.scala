@@ -18,16 +18,9 @@ class WriteTree () extends js.Object {
     */
   var allWrites_ : js.Any = js.native
   var lastWriteId_ : js.Any = js.native
-  /**
-    * @param {!WriteRecord} writeRecord
-    * @param {!Path} path
-    * @return {boolean}
-    * @private
-    */
   var recordContainsPath_ : js.Any = js.native
   /**
     * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
-    * @private
     */
   var resetTree_ : js.Any = js.native
   /**
@@ -177,14 +170,6 @@ class WriteTree () extends js.Object {
   /**
     * This method is used when processing child remove events on a query. If we can, we pull in children that were outside
     * the window, but may now be in the window.
-    *
-    * @param {!Path} treePath
-    * @param {?Node} completeServerData
-    * @param {!NamedNode} startPost
-    * @param {!number} count
-    * @param {boolean} reverse
-    * @param {!Index} index
-    * @return {!Array.<!NamedNode>}
     */
   def calcIndexedSlice(
     treePath: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
@@ -235,9 +220,6 @@ class WriteTree () extends js.Object {
     * Returns a node if there is a complete overwrite for this path. More specifically, if there is a write at
     * a higher path, this will return the child of that write relative to the write and this path.
     * Returns null if there is no write at this path.
-    *
-    * @param {!Path} path
-    * @return {?Node}
     */
   def shadowingWrite(path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path): atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null = js.native
 }
@@ -248,21 +230,11 @@ class WriteTree () extends js.Object {
 object WriteTree extends js.Object {
   /**
     * The default filter used when constructing the tree. Keep everything that's visible.
-    *
-    * @param {!WriteRecord} write
-    * @return {boolean}
-    * @private
     */
   var DefaultFilter_ : js.Any = js.native
   /**
     * Static method. Given an array of WriteRecords, a filter for which ones to include, and a path, construct the tree of
     * event data at that path.
-    *
-    * @param {!Array.<!WriteRecord>} writes
-    * @param {!function(!WriteRecord):boolean} filter
-    * @param {!Path} treeRoot
-    * @return {!CompoundWrite}
-    * @private
     */
   var layerTree_ : js.Any = js.native
 }

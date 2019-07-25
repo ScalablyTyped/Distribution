@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateSnapshotsRequest extends js.Object {
   /**
-    * Copies the tags from the specified instance to all snapshots.
+    * Copies the tags from the specified volume to corresponding snapshot.
     */
   var CopyTagsFromSource: js.UndefOr[CopyTagsFromSource] = js.undefined
   /**

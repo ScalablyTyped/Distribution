@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   - plaidDashLinkLib.plaidDashLinkLibStrings.identity
   - plaidDashLinkLib.plaidDashLinkLibStrings.income
   - plaidDashLinkLib.plaidDashLinkLibStrings.assets
+  - plaidDashLinkLib.plaidDashLinkLibStrings.investments
+  - plaidDashLinkLib.plaidDashLinkLibStrings.liabilities
 */
 trait Product extends js.Object
 

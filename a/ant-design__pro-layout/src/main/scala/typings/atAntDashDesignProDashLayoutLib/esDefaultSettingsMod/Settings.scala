@@ -31,7 +31,9 @@ trait Settings extends js.Object {
   /**
     * theme for nav menu
     */
-  var navTheme: js.UndefOr[antdLib.esMenuMod.MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
+  ] = js.undefined
   var title: java.lang.String
 }
 
@@ -46,7 +48,7 @@ object Settings {
     layout: atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.sidemenu | atAntDashDesignProDashLayoutLib.atAntDashDesignProDashLayoutLibStrings.topmenu,
     menu: atAntDashDesignProDashLayoutLib.Anon_Locale,
     title: java.lang.String,
-    navTheme: antdLib.esMenuMod.MenuTheme = null
+    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null
   ): Settings = {
     val __obj = js.Dynamic.literal(autoHideHeader = autoHideHeader, contentWidth = contentWidth, fixSiderbar = fixSiderbar, fixedHeader = fixedHeader, iconfontUrl = iconfontUrl, layout = layout.asInstanceOf[js.Any], menu = menu, title = title)
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)

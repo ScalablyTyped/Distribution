@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation._
   - plaidDashLinkLib.plaidDashLinkLibStrings.OPEN_MY_PLAID
   - plaidDashLinkLib.plaidDashLinkLibStrings.SEARCH_INSTITUTION
   - plaidDashLinkLib.plaidDashLinkLibStrings.SELECT_INSTITUTION
+  - plaidDashLinkLib.plaidDashLinkLibStrings.SUBMIT_CREDENTIALS
+  - plaidDashLinkLib.plaidDashLinkLibStrings.SUBMIT_MFA
   - plaidDashLinkLib.plaidDashLinkLibStrings.TRANSITION_VIEW
 */
 trait EventName extends js.Object

@@ -107,6 +107,6 @@ object SortedMap extends js.Object {
     * Always use the same empty node, to reduce memory.
     * @const
     */
-  var EMPTY_NODE: atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.LLRBEmptyNode[js.Object, js.Object] = js.native
+  var EMPTY_NODE: atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.LLRBEmptyNode[_, _] = js.native
 }
 

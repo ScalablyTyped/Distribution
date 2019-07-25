@@ -39,6 +39,10 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     */
   var ServerCertificateArn: String
   /**
+    * Indicates whether split-tunnel is enabled on the AWS Client VPN endpoint endpoint. By default, split-tunnel on a VPN endpoint is disabled. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    */
+  var SplitTunnel: js.UndefOr[Boolean] = js.undefined
+  /**
     * The tags to apply to the Client VPN endpoint during creation.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
@@ -59,6 +63,7 @@ object CreateClientVpnEndpointRequest {
     Description: String = null,
     DnsServers: ValueStringList = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
+    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null,
     TransportProtocol: TransportProtocol = null
   ): CreateClientVpnEndpointRequest = {
@@ -67,6 +72,7 @@ object CreateClientVpnEndpointRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
+    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel)
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
     if (TransportProtocol != null) __obj.updateDynamic("TransportProtocol")(TransportProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientVpnEndpointRequest]

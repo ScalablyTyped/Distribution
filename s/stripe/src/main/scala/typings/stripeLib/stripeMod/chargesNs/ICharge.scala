@@ -114,11 +114,11 @@ trait ICharge
   /**
     * ID of the payment method used in this charge.
     */
-  var payment_method: java.lang.String
+  var payment_method: java.lang.String | scala.Null
   /**
     * Details about the payment method at the time of the transaction.
     */
-  var payment_method_details: IPaymentMethodDetails
+  var payment_method_details: IPaymentMethodDetails | scala.Null
   /**
     * This is the email address that the receipt for this charge was sent to.
     */
@@ -153,8 +153,9 @@ trait ICharge
   /**
     * For most Stripe users, the source of every charge is a credit or debit card.
     * This hash is then the card object describing that card.
+    * This value is null if this charge is associated with a Payment Intent instead of a Source.
     */
-  var source: stripeLib.stripeMod.IStripeSource
+  var source: stripeLib.stripeMod.IStripeSource | scala.Null
   /**
     * The transfer ID which created this charge. Only present if the charge came
     * from another Stripe account. See the Connect documentation for details.
@@ -199,12 +200,9 @@ object ICharge {
     metadata: stripeLib.stripeMod.IMetadata,
     `object`: stripeLib.stripeLibStrings.charge,
     paid: scala.Boolean,
-    payment_method: java.lang.String,
-    payment_method_details: IPaymentMethodDetails,
     receipt_url: java.lang.String,
     refunded: scala.Boolean,
     refunds: IChargeRefunds,
-    source: stripeLib.stripeMod.IStripeSource,
     status: stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.failed,
     application: java.lang.String | stripeLib.stripeMod.applicationsNs.IApplication = null,
     application_fee: java.lang.String | stripeLib.stripeMod.applicationFeesNs.IApplicationFee = null,
@@ -219,16 +217,19 @@ object ICharge {
     order: java.lang.String | stripeLib.stripeMod.ordersNs.IOrder = null,
     outcome: IOutcome = null,
     payment_intent: java.lang.String = null,
+    payment_method: java.lang.String = null,
+    payment_method_details: IPaymentMethodDetails = null,
     receipt_email: java.lang.String = null,
     receipt_number: java.lang.String = null,
     review: java.lang.String | stripeLib.stripeMod.reviewsNs.IReview = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
+    source: stripeLib.stripeMod.IStripeSource = null,
     source_transfer: java.lang.String | stripeLib.stripeMod.transfersNs.ITransfer = null,
     statement_descriptor: java.lang.String = null,
     transfer: java.lang.String | stripeLib.stripeMod.transfersNs.ITransfer = null,
     transfer_group: java.lang.String = null
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, payment_method = payment_method, payment_method_details = payment_method_details, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
@@ -243,10 +244,13 @@ object ICharge {
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (outcome != null) __obj.updateDynamic("outcome")(outcome)
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    if (payment_method_details != null) __obj.updateDynamic("payment_method_details")(payment_method_details)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number)
     if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source)
     if (source_transfer != null) __obj.updateDynamic("source_transfer")(source_transfer.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])

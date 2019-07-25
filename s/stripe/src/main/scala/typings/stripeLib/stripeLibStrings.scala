@@ -90,6 +90,9 @@ object stripeLibStrings {
   sealed trait android_pay extends js.Object
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait api_error
     extends stripeLib.stripeMod.errorsNs.RawType
   
@@ -159,7 +162,8 @@ object stripeLibStrings {
   
   @js.native
   sealed trait card
-    extends stripeLib.stripeMod.payoutsNs.PayoutTypes
+    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentPaymentMethodType
+       with stripeLib.stripeMod.payoutsNs.PayoutTypes
        with stripeLib.stripeMod.transfersNs.SourceTypes
   
   @js.native
@@ -167,7 +171,11 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.errorsNs.RawType
   
   @js.native
-  sealed trait card_present extends js.Object
+  sealed trait card_present
+    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentPaymentMethodType
+  
+  @js.native
+  sealed trait challenge_only extends js.Object
   
   @js.native
   sealed trait charge extends js.Object
@@ -242,7 +250,7 @@ object stripeLibStrings {
   sealed trait declined_by_network extends js.Object
   
   @js.native
-  sealed trait diner extends js.Object
+  sealed trait diners extends js.Object
   
   @js.native
   sealed trait discount extends js.Object
@@ -997,6 +1005,8 @@ object stripeLibStrings {
   @scala.inline
   def android_pay: android_pay = "android_pay".asInstanceOf[android_pay]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def api_error: api_error = "api_error".asInstanceOf[api_error]
   @scala.inline
   def apple_pay: apple_pay = "apple_pay".asInstanceOf[apple_pay]
@@ -1042,6 +1052,8 @@ object stripeLibStrings {
   def card_error: card_error = "card_error".asInstanceOf[card_error]
   @scala.inline
   def card_present: card_present = "card_present".asInstanceOf[card_present]
+  @scala.inline
+  def challenge_only: challenge_only = "challenge_only".asInstanceOf[challenge_only]
   @scala.inline
   def charge: charge = "charge".asInstanceOf[charge]
   @scala.inline
@@ -1089,7 +1101,7 @@ object stripeLibStrings {
   @scala.inline
   def declined_by_network: declined_by_network = "declined_by_network".asInstanceOf[declined_by_network]
   @scala.inline
-  def diner: diner = "diner".asInstanceOf[diner]
+  def diners: diners = "diners".asInstanceOf[diners]
   @scala.inline
   def discount: discount = "discount".asInstanceOf[discount]
   @scala.inline

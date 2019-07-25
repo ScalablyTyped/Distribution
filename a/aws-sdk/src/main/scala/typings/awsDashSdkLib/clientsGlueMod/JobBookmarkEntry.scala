@@ -15,7 +15,7 @@ trait JobBookmarkEntry extends js.Object {
     */
   var JobBookmark: js.UndefOr[JsonValue] = js.undefined
   /**
-    * Name of the job in question.
+    * The name of the job in question.
     */
   var JobName: js.UndefOr[JobName] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait JobBookmarkEntry extends js.Object {
     */
   var Run: js.UndefOr[IntegerValue] = js.undefined
   /**
-    * Version of the job.
+    * The version of the job.
     */
   var Version: js.UndefOr[IntegerValue] = js.undefined
 }

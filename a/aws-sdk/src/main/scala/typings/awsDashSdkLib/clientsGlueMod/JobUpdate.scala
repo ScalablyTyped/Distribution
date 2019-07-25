@@ -31,6 +31,10 @@ trait JobUpdate extends js.Object {
     */
   var ExecutionProperty: js.UndefOr[ExecutionProperty] = js.undefined
   /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for jobs of type Spark.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
+  /**
     * This field is reserved for future use.
     */
   var LogUri: js.UndefOr[UriString] = js.undefined
@@ -77,6 +81,7 @@ object JobUpdate {
     DefaultArguments: GenericMap = null,
     Description: DescriptionString = null,
     ExecutionProperty: ExecutionProperty = null,
+    GlueVersion: GlueVersionString = null,
     LogUri: UriString = null,
     MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
     MaxRetries: js.UndefOr[MaxRetries] = js.undefined,
@@ -94,6 +99,7 @@ object JobUpdate {
     if (DefaultArguments != null) __obj.updateDynamic("DefaultArguments")(DefaultArguments)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (ExecutionProperty != null) __obj.updateDynamic("ExecutionProperty")(ExecutionProperty)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)
     if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
     if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries)

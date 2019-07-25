@@ -35,6 +35,10 @@ trait Job extends js.Object {
     */
   var ExecutionProperty: js.UndefOr[ExecutionProperty] = js.undefined
   /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for jobs of type Spark.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Jobs that are created without specifying a Glue version default to Glue 0.9.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
+  /**
     * The last point in time when this job definition was modified.
     */
   var LastModifiedOn: js.UndefOr[TimestampValue] = js.undefined
@@ -90,6 +94,7 @@ object Job {
     DefaultArguments: GenericMap = null,
     Description: DescriptionString = null,
     ExecutionProperty: ExecutionProperty = null,
+    GlueVersion: GlueVersionString = null,
     LastModifiedOn: TimestampValue = null,
     LogUri: UriString = null,
     MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
@@ -110,6 +115,7 @@ object Job {
     if (DefaultArguments != null) __obj.updateDynamic("DefaultArguments")(DefaultArguments)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (ExecutionProperty != null) __obj.updateDynamic("ExecutionProperty")(ExecutionProperty)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn)
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)
     if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)

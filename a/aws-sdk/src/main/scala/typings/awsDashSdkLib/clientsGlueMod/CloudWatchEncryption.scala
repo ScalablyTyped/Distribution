@@ -11,7 +11,7 @@ trait CloudWatchEncryption extends js.Object {
     */
   var CloudWatchEncryptionMode: js.UndefOr[CloudWatchEncryptionMode] = js.undefined
   /**
-    * The AWS ARN of the KMS key to be used to encrypt the data.
+    * The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
   var KmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
 }

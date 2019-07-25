@@ -11,7 +11,7 @@ trait CreateDevEndpointResponse extends js.Object {
     */
   var Arguments: js.UndefOr[MapValue] = js.undefined
   /**
-    * The AWS availability zone where this DevEndpoint is located.
+    * The AWS Availability Zone where this DevEndpoint is located.
     */
   var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
   /**
@@ -23,11 +23,11 @@ trait CreateDevEndpointResponse extends js.Object {
     */
   var EndpointName: js.UndefOr[GenericString] = js.undefined
   /**
-    * Path to one or more Java Jars in an S3 bucket that will be loaded in your DevEndpoint.
+    * Path to one or more Java .jar files in an S3 bucket that will be loaded in your DevEndpoint.
     */
   var ExtraJarsS3Path: js.UndefOr[GenericString] = js.undefined
   /**
-    * Path(s) to one or more Python libraries in an S3 bucket that will be loaded in your DevEndpoint.
+    * The paths to one or more Python libraries in an S3 bucket that will be loaded in your DevEndpoint.
     */
   var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.undefined
   /**
@@ -39,7 +39,11 @@ trait CreateDevEndpointResponse extends js.Object {
     */
   var NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined
   /**
-    * The AWS ARN of the role assigned to the new DevEndpoint.
+    * The number of workers of a defined workerType that are allocated to the development endpoint.
+    */
+  var NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the role assigned to the new DevEndpoint.
     */
   var RoleArn: js.UndefOr[RoleArn] = js.undefined
   /**
@@ -59,9 +63,13 @@ trait CreateDevEndpointResponse extends js.Object {
     */
   var SubnetId: js.UndefOr[GenericString] = js.undefined
   /**
-    * The ID of the VPC used by this DevEndpoint.
+    * The ID of the virtual private cloud (VPC) used by this DevEndpoint.
     */
   var VpcId: js.UndefOr[GenericString] = js.undefined
+  /**
+    * The type of predefined worker that is allocated to the development endpoint. May be a value of Standard, G.1X, or G.2X.
+    */
+  var WorkerType: js.UndefOr[WorkerType] = js.undefined
   /**
     * The address of the YARN endpoint used by this DevEndpoint.
     */
@@ -83,12 +91,14 @@ object CreateDevEndpointResponse {
     ExtraPythonLibsS3Path: GenericString = null,
     FailureReason: GenericString = null,
     NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     RoleArn: RoleArn = null,
     SecurityConfiguration: NameString = null,
     SecurityGroupIds: StringList = null,
     Status: GenericString = null,
     SubnetId: GenericString = null,
     VpcId: GenericString = null,
+    WorkerType: WorkerType = null,
     YarnEndpointAddress: GenericString = null,
     ZeppelinRemoteSparkInterpreterPort: js.UndefOr[IntegerValue] = js.undefined
   ): CreateDevEndpointResponse = {
@@ -101,12 +111,14 @@ object CreateDevEndpointResponse {
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
     if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
     if (Status != null) __obj.updateDynamic("Status")(Status)
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     if (YarnEndpointAddress != null) __obj.updateDynamic("YarnEndpointAddress")(YarnEndpointAddress)
     if (!js.isUndefined(ZeppelinRemoteSparkInterpreterPort)) __obj.updateDynamic("ZeppelinRemoteSparkInterpreterPort")(ZeppelinRemoteSparkInterpreterPort)
     __obj.asInstanceOf[CreateDevEndpointResponse]

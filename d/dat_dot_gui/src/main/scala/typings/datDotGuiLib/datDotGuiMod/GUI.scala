@@ -41,6 +41,7 @@ class GUI () extends js.Object {
   def destroy(): scala.Unit = js.native
   def getRoot(): GUI = js.native
   def getSaveObject(): js.Object = js.native
+  def hide(): scala.Unit = js.native
   def listen(controller: GUIController): scala.Unit = js.native
   def open(): scala.Unit = js.native
   def remember(target: js.Object, additionalTargets: js.Object*): scala.Unit = js.native
@@ -49,6 +50,7 @@ class GUI () extends js.Object {
   def revert(gui: GUI): scala.Unit = js.native
   def save(): scala.Unit = js.native
   def saveAs(presetName: java.lang.String): scala.Unit = js.native
+  def show(): scala.Unit = js.native
   def updateDisplay(): scala.Unit = js.native
 }
 

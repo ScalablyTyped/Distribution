@@ -31,8 +31,20 @@ object axeDashCoreLibStrings {
     extends axeDashCoreLib.axeDashCoreMod.ImpactValue
   
   @js.native
+  sealed trait `no-passes`
+    extends axeDashCoreLib.axeDashCoreMod.ReporterVersion
+  
+  @js.native
   sealed trait passes
     extends axeDashCoreLib.axeDashCoreMod.resultGroups
+  
+  @js.native
+  sealed trait raw
+    extends axeDashCoreLib.axeDashCoreMod.ReporterVersion
+  
+  @js.native
+  sealed trait `raw-env`
+    extends axeDashCoreLib.axeDashCoreMod.ReporterVersion
   
   @js.native
   sealed trait rule
@@ -91,7 +103,13 @@ object axeDashCoreLibStrings {
   @scala.inline
   def moderate: moderate = "moderate".asInstanceOf[moderate]
   @scala.inline
+  def `no-passes`: `no-passes` = "no-passes".asInstanceOf[`no-passes`]
+  @scala.inline
   def passes: passes = "passes".asInstanceOf[passes]
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
+  def `raw-env`: `raw-env` = "raw-env".asInstanceOf[`raw-env`]
   @scala.inline
   def rule: rule = "rule".asInstanceOf[rule]
   @scala.inline

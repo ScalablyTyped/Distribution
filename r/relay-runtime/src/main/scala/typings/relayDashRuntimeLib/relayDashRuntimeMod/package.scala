@@ -50,9 +50,8 @@ package object relayDashRuntimeMod {
     RangeOperation
   ]) | org.scalablytyped.runtime.StringDictionary[RangeOperation]
   type ReaderSelector = CReaderSelector[ReaderSelectableNode]
-  type Record = org.scalablytyped.runtime.StringDictionary[js.Any]
   type RecordMap = // theoretically, this should be `[dataID: DataID]`, but `DataID` is a string.
-  org.scalablytyped.runtime.StringDictionary[js.UndefOr[Record]]
+  org.scalablytyped.runtime.StringDictionary[js.UndefOr[stdLib.Record[java.lang.String, js.Any]]]
   type RelayContext = CRelayContext[Environment]
   type Scheduler = js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]
   type SelectorData = org.scalablytyped.runtime.StringDictionary[js.Any]

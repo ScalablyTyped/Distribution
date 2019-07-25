@@ -10,6 +10,6 @@ trait MutableRecordSource extends js.Object {
   def clear(): scala.Unit = js.native
   def delete(dataID: DataID): scala.Unit = js.native
   def remove(dataID: DataID): scala.Unit = js.native
-  def set(dataID: DataID, record: Record): scala.Unit = js.native
+  def set(dataID: DataID, record: stdLib.Record[java.lang.String, _]): scala.Unit = js.native
 }
 

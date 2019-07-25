@@ -5,11 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Create extends js.Object {
-  def create(params: plaidDashLinkLib.plaidDashLinkMod.PlaidNs.CreateConfig): plaidDashLinkLib.plaidDashLinkMod.PlaidNs.LinkHandler = js.native
-  def exit(): scala.Unit = js.native
-  def exit(force: scala.Boolean): scala.Unit = js.native
-  def open(): scala.Unit = js.native
+  var version: java.lang.String
+  def create(params: plaidDashLinkLib.plaidDashLinkMod.PlaidNs.CreateConfig): plaidDashLinkLib.plaidDashLinkMod.PlaidNs.LinkHandler
+}
+
+object Anon_Create {
+  @scala.inline
+  def apply(
+    create: plaidDashLinkLib.plaidDashLinkMod.PlaidNs.CreateConfig => plaidDashLinkLib.plaidDashLinkMod.PlaidNs.LinkHandler,
+    version: java.lang.String
+  ): Anon_Create = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), version = version)
+  
+    __obj.asInstanceOf[Anon_Create]
+  }
 }
 

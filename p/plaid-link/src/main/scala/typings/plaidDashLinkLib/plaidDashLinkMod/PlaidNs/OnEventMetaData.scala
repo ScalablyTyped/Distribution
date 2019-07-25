@@ -9,7 +9,7 @@ trait OnEventMetaData extends js.Object {
   var error_code: java.lang.String
   var error_message: java.lang.String
   var error_type: java.lang.String
-  var exit_status: java.lang.String
+  var exit_status: ExitStatus
   var institution_id: java.lang.String
   var institution_name: java.lang.String
   var institution_search_query: java.lang.String
@@ -26,7 +26,7 @@ object OnEventMetaData {
     error_code: java.lang.String,
     error_message: java.lang.String,
     error_type: java.lang.String,
-    exit_status: java.lang.String,
+    exit_status: ExitStatus,
     institution_id: java.lang.String,
     institution_name: java.lang.String,
     institution_search_query: java.lang.String,

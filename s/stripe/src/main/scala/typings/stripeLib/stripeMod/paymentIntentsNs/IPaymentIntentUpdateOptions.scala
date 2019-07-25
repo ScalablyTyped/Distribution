@@ -34,6 +34,14 @@ trait IPaymentIntentUpdateOptions extends js.Object {
     */
   var metadata: js.UndefOr[stripeLib.stripeMod.IOptionsMetadata] = js.undefined
   /**
+    * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object) to attach to this PaymentIntent.
+    */
+  var payment_method: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The list of payment method types that this PaymentIntent is allowed to use.
+    */
+  var payment_method_types: js.UndefOr[js.Array[PaymentIntentPaymentMethodType]] = js.undefined
+  /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
   var receipt_email: js.UndefOr[java.lang.String] = js.undefined
@@ -54,6 +62,10 @@ trait IPaymentIntentUpdateOptions extends js.Object {
     */
   var source: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
+    */
+  var statement_descriptor: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * A string that identifies the resulting payment as part of a group.
     */
   var transfer_group: js.UndefOr[java.lang.String] = js.undefined
@@ -68,11 +80,14 @@ object IPaymentIntentUpdateOptions {
     customer: java.lang.String = null,
     description: java.lang.String = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
+    payment_method: java.lang.String = null,
+    payment_method_types: js.Array[PaymentIntentPaymentMethodType] = null,
     receipt_email: java.lang.String = null,
     save_payment_method: js.UndefOr[scala.Boolean] = js.undefined,
     setup_future_usage: PaymentIntentFutureUsageType = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     source: java.lang.String = null,
+    statement_descriptor: java.lang.String = null,
     transfer_group: java.lang.String = null
   ): IPaymentIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
@@ -82,11 +97,14 @@ object IPaymentIntentUpdateOptions {
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (description != null) __obj.updateDynamic("description")(description)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IPaymentIntentUpdateOptions]
   }

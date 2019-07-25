@@ -31,6 +31,10 @@ trait JobRun extends js.Object {
     */
   var ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined
   /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for jobs of type Spark.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Jobs that are created without specifying a Glue version default to Glue 0.9.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
+  /**
     * The ID of this job run.
     */
   var Id: js.UndefOr[IdString] = js.undefined
@@ -101,6 +105,7 @@ object JobRun {
     CompletedOn: TimestampValue = null,
     ErrorMessage: ErrorString = null,
     ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined,
+    GlueVersion: GlueVersionString = null,
     Id: IdString = null,
     JobName: NameString = null,
     JobRunState: JobRunState = null,
@@ -124,6 +129,7 @@ object JobRun {
     if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn)
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
     if (!js.isUndefined(ExecutionTime)) __obj.updateDynamic("ExecutionTime")(ExecutionTime)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (JobRunState != null) __obj.updateDynamic("JobRunState")(JobRunState.asInstanceOf[js.Any])

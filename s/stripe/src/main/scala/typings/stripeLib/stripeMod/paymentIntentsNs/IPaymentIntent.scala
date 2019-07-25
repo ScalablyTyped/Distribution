@@ -88,9 +88,17 @@ trait IPaymentIntent
     */
   var on_behalf_of: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
+    * ID of the payment method used in this PaymentIntent. [Expandable]
+    */
+  var payment_method: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Payment-method-specific configuration for this PaymentIntent.
+    */
+  var payment_method_options: js.UndefOr[stripeLib.Anon_Card] = js.undefined
+  /**
     * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
     */
-  var payment_method_types: js.Array[java.lang.String]
+  var payment_method_types: js.Array[PaymentIntentPaymentMethodType]
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
@@ -110,7 +118,7 @@ trait IPaymentIntent
   /**
     * ID of the source used in this PaymentIntent. [Expandable]
     */
-  var source: java.lang.String | stripeLib.stripeMod.IStripeSource
+  var source: java.lang.String | stripeLib.stripeMod.IStripeSource | scala.Null
   /**
     * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
     */
@@ -146,8 +154,7 @@ object IPaymentIntent {
     metadata: stripeLib.stripeMod.IMetadata,
     next_action: IPaymentIntentNextActionUseStripeSdk | IPaymentIntentNextActionRedirectToUrl,
     `object`: stripeLib.stripeLibStrings.payment_intent,
-    payment_method_types: js.Array[java.lang.String],
-    source: java.lang.String | stripeLib.stripeMod.IStripeSource,
+    payment_method_types: js.Array[PaymentIntentPaymentMethodType],
     status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_confirmation | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded,
     application: java.lang.String | stripeLib.stripeMod.applicationsNs.IApplication = null,
     application_fee_amount: scala.Int | scala.Double = null,
@@ -157,15 +164,18 @@ object IPaymentIntent {
     description: java.lang.String = null,
     last_payment_error: stripeLib.stripeMod.IStripeError = null,
     on_behalf_of: java.lang.String = null,
+    payment_method: java.lang.String = null,
+    payment_method_options: stripeLib.Anon_Card = null,
     receipt_email: java.lang.String = null,
     review: java.lang.String | stripeLib.stripeMod.reviewsNs.IReview = null,
     setup_future_usage: PaymentIntentFutureUsageType = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
+    source: java.lang.String | stripeLib.stripeMod.IStripeSource = null,
     statement_descriptor: java.lang.String = null,
     transfer_data: IPaymentIntentTransferData = null,
     transfer_group: java.lang.String = null
   ): IPaymentIntent = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_capturable = amount_capturable, amount_received = amount_received, capture_method = capture_method.asInstanceOf[js.Any], charges = charges, client_secret = client_secret, confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created, currency = currency, id = id, livemode = livemode, metadata = metadata, next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types, source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, amount_capturable = amount_capturable, amount_received = amount_received, capture_method = capture_method.asInstanceOf[js.Any], charges = charges, client_secret = client_secret, confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created, currency = currency, id = id, livemode = livemode, metadata = metadata, next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
@@ -175,10 +185,13 @@ object IPaymentIntent {
     if (description != null) __obj.updateDynamic("description")(description)
     if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error)
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)

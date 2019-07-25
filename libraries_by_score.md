@@ -549,6 +549,7 @@
 | 0.8050012383995748 | [icss-utils](./i/icss-utils) | ICSS utils for postcss ast
 | 0.8049659639950735 | [winston](./w/winston) | A logger for just about everything.
 | 0.8049254361466923 | [react-portal](./r/react-portal) | To make your life with React Portals easier.
+| 0.8048735743579236 | [num2fraction](./n/num2fraction) | Convert number to fraction
 | 0.8046238495269944 | [bignumber_dot_js](./b/bignumber_dot_js) | A library for arbitrary-precision decimal and non-
 | 0.8045998895225371 | [blueprintjs__core](./b/blueprintjs__core) | Core styles & components
 | 0.8045980104264782 | [react-lifecycles-compat](./r/react-lifecycles-compat) | Backwards compatibility polyfill for React class c
@@ -645,7 +646,6 @@
 | 0.7968351716159515 | [react-native-elements](./r/react-native-elements) | React Native Elements & UI Toolkit
 | 0.7968220675149891 | [gulp-concat](./g/gulp-concat) | Concatenates files
 | 0.7968020324763787 | [glob-stream](./g/glob-stream) | A Readable Stream interface over node-glob.
-| 0.7965522357587942 | [gray-matter](./g/gray-matter) | Parse front-matter from a string or file. Fast, re
 | 0.7963890080608116 | [popmotion](./p/popmotion) | A functional, reactive motion library.
 | 0.7963434283739369 | [cookie-signature](./c/cookie-signature) | Sign and unsign cookies
 | 0.7963415966664714 | [immutable](./i/immutable) | Immutable Data Collections
@@ -884,7 +884,6 @@
 | 0.7783908706261993 | [lodash_dot_words](./l/lodash_dot_words) | The lodash method _.words exported as a module.
 | 0.77820306733089 | [lodash_dot_flatmap](./l/lodash_dot_flatmap) | The lodash method _.flatMap exported as a module.
 | 0.7781907886797623 | [requireindex](./r/requireindex) | Write minimal node index.js files that require and
-| 0.77816957902754 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK
 | 0.7781148077501991 | [run-parallel](./r/run-parallel) | Run an array of functions in parallel
 | 0.7780230979225398 | [lodash_dot_differencewith](./l/lodash_dot_differencewith) | The lodash method _.differenceWith exported as a m
 | 0.7780086087438913 | [lodash_dot_isnull](./l/lodash_dot_isnull) | The modern build of lodash’s _.isNull as a module.
@@ -1031,7 +1030,6 @@
 | 0.7694098712205798 | [js-string-escape](./j/js-string-escape) | Escape strings for use as JavaScript string litera
 | 0.769399907205129 | [lodash_dot_pullall](./l/lodash_dot_pullall) | The lodash method _.pullAll exported as a module.
 | 0.7693078283013538 | [koa-convert](./k/koa-convert) | convert koa legacy generator-based middleware to p
-| 0.769209225750167 | [firebase__app-types](./f/firebase__app-types) | @firebase/app Types
 | 0.7691955274447566 | [clean-stack](./c/clean-stack) | Clean up error stack traces
 | 0.7691871222034101 | [is-alphanumerical](./i/is-alphanumerical) | Check if a character is alphanumerical
 | 0.7691668989056109 | [cacheable-request](./c/cacheable-request) | Wrap native HTTP requests with RFC compliant cache
@@ -3469,6 +3467,7 @@
 | 0.6482997463100789 | [is-uuid](./i/is-uuid) | UUID check for Node and the browser
 | 0.6481743640926718 | [chordsheetjs](./c/chordsheetjs) | A JavaScript library for parsing and formatting ch
 | 0.6481676803457903 | [express-http-proxy](./e/express-http-proxy) | http proxy middleware for express
+| 0.6481668995978549 | [combine-reducers](./c/combine-reducers) | A stand-alone, Redux compatible implementation of 
 | 0.648156269453809 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
 | 0.6481378943024451 | [jasmine-data_driven_tests](./j/jasmine-data_driven_tests) | This plugin for Jasmine 2.x allows you to easily c
 | 0.6481213222903928 | [html-to-text](./h/html-to-text) | Advanced html to plain text converter
@@ -6203,6 +6202,7 @@
 | 0.27378376002277016 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of 
 | 0.2735730133960045 | [cordova-plugin-insomnia](./c/cordova-plugin-insomnia) | Prevent the screen of the mobile device from falli
 | 0.27348350867998483 | [noisejs](./n/noisejs) | Perlin noise implementation
+| 0.27346371694273836 | [clear](./c/clear) | Clear the terminal screen if possible
 | 0.2734593170963468 | [gyronorm](./g/gyronorm) | Accesses the gyroscope and accelerometer data from
 | 0.273200996905962 | [readdir-stream](./r/readdir-stream) | Recursively read a directory and stream stats obje
 | 0.27245201001188624 | [d3pie](./d/d3pie) | A highly configurable, re-usable library built on 

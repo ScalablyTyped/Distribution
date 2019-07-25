@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase-admin
 
-Typings are for version 8.2.0
+Typings are for version 8.3.0
 
 ## Library description:
 Firebase admin SDK for Node.js
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-/*! firebase-admin v8.2.0 */
+/*! firebase-admin v8.3.0 */
 /*!
  * Copyright 2017 Google Inc.
  *

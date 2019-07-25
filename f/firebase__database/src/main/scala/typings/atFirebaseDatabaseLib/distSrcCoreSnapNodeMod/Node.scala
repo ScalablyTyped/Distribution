@@ -108,8 +108,8 @@ trait Node extends js.Object {
     */
   def updatePriority(newPriorityNode: Node): Node = js.native
   /**
-    * @param {boolean=} exportFormat True for export format (also wire protocol format).
-    * @return {*} Value of this node as JSON.
+    * @param exportFormat True for export format (also wire protocol format).
+    * @return Value of this node as JSON.
     */
   def `val`(): js.Any = js.native
   def `val`(exportFormat: scala.Boolean): js.Any = js.native

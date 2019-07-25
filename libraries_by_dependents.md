@@ -312,6 +312,7 @@
 | 874 | [hapi](./h/hapi) | HTTP Server framework
 | 872 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
 | 869 | [babylon](./b/babylon) | A JavaScript parser
+| 867 | [clear](./c/clear) | Clear the terminal screen if possible
 | 867 | [consolidate](./c/consolidate) | Template engine consolidation library
 | 862 | [hammerjs](./h/hammerjs) | A javascript library for multi-touch gestures
 | 861 | [serialport](./s/serialport) | Node.js package to access serial ports. Linux, OSX
@@ -655,7 +656,6 @@
 | 357 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js
 | 357 | [pako](./p/pako) | zlib port to javascript - fast, modularized, with 
 | 356 | [bson](./b/bson) | A bson parser for node.js and the browser
-| 356 | [gray-matter](./g/gray-matter) | Parse front-matter from a string or file. Fast, re
 | 355 | [arrify](./a/arrify) | Convert a value to an array
 | 354 | [bip39](./b/bip39) | Bitcoin BIP39: Mnemonic code for generating determ
 | 354 | [es6-error](./e/es6-error) | Easily-extendable error for use with ES6 classes
@@ -3052,7 +3052,6 @@
 | 28 | [diffie-hellman](./d/diffie-hellman) | pure js diffie-hellman
 | 28 | [dom4](./d/dom4) | a fully tested and covered polyfill for new DOM Le
 | 28 | [eslint-visitor-keys](./e/eslint-visitor-keys) | Constants and utilities about visitor keys to trav
-| 28 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK
 | 28 | [get-urls](./g/get-urls) | Get all URLs in a string
 | 28 | [hasher](./h/hasher) | Hasher is a set of JavaScript functions to control
 | 28 | [hexo-log](./h/hexo-log) | Logger for Hexo
@@ -3217,7 +3216,6 @@
 | 24 | [feathersjs__socketio-clie](./f/feathersjs__socketio-client) | The client for Socket.io through feathers-socketio
 | 24 | [ffmpeg-static](./f/ffmpeg-static) | ffmpeg static binaries for Mac OSX and Linux and W
 | 24 | [find-java-home](./f/find-java-home) | Find JAVA_HOME on any system
-| 24 | [firebase__app-types](./f/firebase__app-types) | @firebase/app Types
 | 24 | [fixed-data-table-2](./f/fixed-data-table-2) | A React table component designed to allow presenti
 | 24 | [google-cloud__common](./g/google-cloud__common) | Common components for Cloud APIs Node.js Client Li
 | 24 | [graphql-date](./g/graphql-date) | GraphQL Date Type
@@ -3394,6 +3392,7 @@
 | 21 | [mockdate](./m/mockdate) | A JavaScript mock Date object that can be used to 
 | 21 | [murmurhash3js](./m/murmurhash3js) | A javascript implementation of MurmurHash3's x86 h
 | 21 | [nivo__tooltip](./n/nivo__tooltip) | -
+| 21 | [num2fraction](./n/num2fraction) | Convert number to fraction
 | 21 | [p-wait-for](./p/p-wait-for) | Wait for a condition to be true
 | 21 | [parse-ms](./p/parse-ms) | Parse milliseconds into an object
 | 21 | [parse-numeric-range](./p/parse-numeric-range) | Takes a string, such as "1,2,3-10,5-8" and turns i
@@ -5397,6 +5396,7 @@
 | 2 | [chrome](./c/chrome) | Open chrome in shell
 | 2 | [clean-regexp](./c/clean-regexp) | Clean up regular expressions
 | 2 | [clmtrackr](./c/clmtrackr) | Javascript library for precise tracking of facial 
+| 2 | [combine-reducers](./c/combine-reducers) | A stand-alone, Redux compatible implementation of 
 | 2 | [connect-datadog](./c/connect-datadog) | Datadog middleware for Connect JS / Express
 | 2 | [contentful-resolve-respon](./c/contentful-resolve-response) | -
 | 2 | [convert-layout](./c/convert-layout) | Converts text from one keyboard layout to other

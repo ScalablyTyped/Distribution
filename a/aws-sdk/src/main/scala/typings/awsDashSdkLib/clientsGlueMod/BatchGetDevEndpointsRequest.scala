@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetDevEndpointsRequest extends js.Object {
   /**
-    * The list of DevEndpoint names, which may be the names returned from the ListDevEndpoint operation.
+    * The list of DevEndpoint names, which might be the names returned from the ListDevEndpoint operation.
     */
   var DevEndpointNames: awsDashSdkLib.clientsGlueMod.DevEndpointNames
 }

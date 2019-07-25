@@ -15,7 +15,7 @@ trait GetCampaignActivitiesRequest extends js.Object {
     */
   var CampaignId: __string
   /**
-    * The maximum number of items to include on each page in a paginated response.
+    * The maximum number of items to include in each page of a paginated response. This parameter is currently not supported by the App Metrics and Campaign Metrics resources.
     */
   var PageSize: js.UndefOr[__string] = js.undefined
   /**

@@ -35,7 +35,9 @@ trait Anon_App extends js.Object {
   var RecaptchaVerifier_Instance: org.scalablytyped.runtime.Instantiable3[
     /* container */ js.Any | java.lang.String, 
     js.UndefOr[js.Object | scala.Null], 
-    js.UndefOr[atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp | scala.Null], 
+    js.UndefOr[
+      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any) | scala.Null
+    ], 
     atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.RecaptchaVerifier_Instance
   ] = js.native
   var SAMLAuthProvider: org.scalablytyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.SAMLAuthProvider] = js.native

@@ -93,7 +93,9 @@ import scala.scalajs.js.annotation._
       ]
     ]
   ] = js.undefined
-  var navTheme: js.UndefOr[antdLib.esMenuMod.MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
+  ] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ scala.Boolean, scala.Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     atAntDashDesignProDashLayoutLib.esTypingsMod.WithFalse[
@@ -158,7 +160,7 @@ object BasicLayoutProps {
         reactLib.reactMod.ReactNode
       ]
     ] = null,
-    navTheme: antdLib.esMenuMod.MenuTheme = null,
+    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
     onCollapse: /* collapsed */ scala.Boolean => scala.Unit = null,
     pageTitleRender: atAntDashDesignProDashLayoutLib.esTypingsMod.WithFalse[
       js.Function2[

@@ -1,27 +1,23 @@
 package typings
-package atFirebaseUtilLib.atFirebaseUtilMod
+package atFirebaseUtilLib.distSrcCryptMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/util", "base64")
 @js.native
-object base64 extends js.Object {
+trait Base64 extends js.Object {
   /**
     * Our default alphabet. Value 64 (=) is special; it means "nothing."
-    * @type {string}
     */
   val ENCODED_VALS: java.lang.String = js.native
   /**
-    * Our default alphabet, shared between
+    * Our default alphabet shared between
     * ENCODED_VALS and ENCODED_VALS_WEBSAFE
-    * @type {string}
     */
   var ENCODED_VALS_BASE: java.lang.String = js.native
   /**
     * Our websafe alphabet.
-    * @type {string}
     */
   val ENCODED_VALS_WEBSAFE: java.lang.String = js.native
   /**
@@ -29,34 +25,24 @@ object base64 extends js.Object {
     * started at Mozilla but is now implemented by many browsers. We use the
     * ASSUME_* variables to avoid pulling in the full useragent detection library
     * but still allowing the standard per-browser compilations.
-    *
-    * @type {boolean}
     */
   var HAS_NATIVE_SUPPORT: scala.Boolean = js.native
   /**
     * Maps bytes to websafe characters.
-    * @type {Object}
-    * @private
     */
-  var byteToCharMapWebSafe_ : scala.Null = js.native
+  var byteToCharMapWebSafe_ : org.scalablytyped.runtime.NumberDictionary[java.lang.String] | scala.Null = js.native
   /**
     * Maps bytes to characters.
-    * @type {Object}
-    * @private
     */
-  var byteToCharMap_ : scala.Null = js.native
+  var byteToCharMap_ : org.scalablytyped.runtime.NumberDictionary[java.lang.String] | scala.Null = js.native
   /**
     * Maps websafe characters to bytes.
-    * @type {Object}
-    * @private
     */
-  var charToByteMapWebSafe_ : scala.Null = js.native
+  var charToByteMapWebSafe_ : org.scalablytyped.runtime.StringDictionary[scala.Double] | scala.Null = js.native
   /**
     * Maps characters to bytes.
-    * @type {Object}
-    * @private
     */
-  var charToByteMap_ : scala.Null = js.native
+  var charToByteMap_ : org.scalablytyped.runtime.StringDictionary[scala.Double] | scala.Null = js.native
   /**
     * Base64-decode a string.
     *

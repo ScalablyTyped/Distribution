@@ -21,6 +21,20 @@ import scala.scalajs.js.annotation._
 trait Database extends js.Object {
   var app: firebaseDashAdminLib.adminNs.appNs.App = js.native
   /**
+    * Gets the currently applied security rules as a string. The return value consists of
+    * the rules source including comments.
+    *
+    * @return A promise fulfilled with the rules as a raw string.
+    */
+  def getRules(): js.Promise[java.lang.String] = js.native
+  /**
+    * Gets the currently applied security rules as a parsed JSON object. Any comments in
+    * the original source are stripped away.
+    *
+    * @return A promise fulfilled with the parsed rules object.
+    */
+  def getRulesJSON(): js.Promise[js.Object] = js.native
+  /**
     * Disconnects from the server (all Database operations will be completed
     * offline).
     *
@@ -128,5 +142,15 @@ trait Database extends js.Object {
     * @return  A `Reference` pointing to the provided Firebase URL.
     */
   def refFromURL(url: java.lang.String): Reference = js.native
+  /**
+    * Sets the specified rules on the Firebase Realtime Database instance. If the rules source is
+    * specified as a string or a Buffer, it may include comments.
+    *
+    * @param source Source of the rules to apply. Must not be `null` or empty.
+    * @return Resolves when the rules are set on the Realtime Database.
+    */
+  def setRules(source: java.lang.String): js.Promise[scala.Unit] = js.native
+  def setRules(source: js.Object): js.Promise[scala.Unit] = js.native
+  def setRules(source: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
 }
 

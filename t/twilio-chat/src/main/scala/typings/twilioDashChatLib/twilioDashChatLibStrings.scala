@@ -206,6 +206,10 @@ object twilioDashChatLibStrings {
   sealed trait warn
     extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
   
+  @js.native
+  sealed trait whatsapp
+    extends twilioDashChatLib.libMemberMod.MemberNs.Type
+  
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
@@ -300,5 +304,7 @@ object twilioDashChatLibStrings {
   def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
+  def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
 }
 

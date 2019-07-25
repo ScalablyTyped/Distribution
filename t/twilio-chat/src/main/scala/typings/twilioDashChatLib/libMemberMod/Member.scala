@@ -35,7 +35,7 @@ class Member protected ()
     */
   /**
     * The type of Member
-    * @typedef {('chat' | 'sms')} Member#Type
+    * @typedef {('chat' | 'sms' | 'whatsapp')} Member#Type
     */
   def this(services: MemberServices, channel: js.Any, data: MemberDescriptor, sid: java.lang.String) = this()
   val attributes: js.Object = js.native
@@ -77,7 +77,7 @@ class Member protected ()
     */
   def getUserDescriptor(): js.Promise[twilioDashChatLib.libUserdescriptorMod.UserDescriptor] = js.native
   /**
-    * Remove Member from the Channel. Supported only for <code>chat</code> type of Members
+    * Remove Member from the Channel.
     * @returns {Promise<void|Error|SessionError>}
     */
   def remove(): js.Promise[_] = js.native

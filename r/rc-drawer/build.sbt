@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-drawer"
-version := "2.0.2-e5d869"
+version := "2.0.3-e5d869"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

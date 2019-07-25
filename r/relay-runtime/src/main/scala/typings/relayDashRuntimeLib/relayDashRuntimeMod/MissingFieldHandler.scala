@@ -10,7 +10,7 @@ trait MissingFieldHandler extends js.Object {
   var handle: js.UndefOr[
     js.Function4[
       (/* field */ NormalizationLinkedField) | (/* field */ NormalizationScalarField), 
-      js.UndefOr[scala.Null | Record], 
+      js.UndefOr[scala.Null | (stdLib.Record[java.lang.String, _])], 
       /* args */ Variables, 
       /* store */ ReadonlyRecordSourceProxy, 
       js.UndefOr[_ | (js.Array[js.UndefOr[DataID | scala.Null]]) | DataID | scala.Null]

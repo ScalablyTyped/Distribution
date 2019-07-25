@@ -117,6 +117,8 @@ package object clientsPinpointMod {
   type ListOfEndpointResponse = js.Array[EndpointResponse]
   type ListOfExportJobResponse = js.Array[ExportJobResponse]
   type ListOfImportJobResponse = js.Array[ImportJobResponse]
+  type ListOfResultRow = js.Array[ResultRow]
+  type ListOfResultRowValue = js.Array[ResultRowValue]
   type ListOfSegmentDimensions = js.Array[SegmentDimensions]
   type ListOfSegmentGroup = js.Array[SegmentGroup]
   type ListOfSegmentReference = js.Array[SegmentReference]
@@ -183,6 +185,7 @@ package object clientsPinpointMod {
   type __double = scala.Double
   type __integer = scala.Double
   type __string = java.lang.String
+  type __timestampIso8601 = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2016-12-01`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TagSpecification extends js.Object {
   /**
-    * The type of resource to tag. Currently, the resource types that support tagging on creation are fleet, dedicated-host, instance, snapshot, and volume. To tag a resource after it has been created, see CreateTags.
+    * The type of resource to tag. Currently, the resource types that support tagging on creation are: capacity-reservation | client-vpn-endpoint | dedicated-host | fleet | instance | launch-template | snapshot | transit-gateway | transit-gateway-attachment | transit-gateway-route-table | volume. To tag a resource after it has been created, see CreateTags.
     */
   var ResourceType: js.UndefOr[ResourceType] = js.undefined
   /**

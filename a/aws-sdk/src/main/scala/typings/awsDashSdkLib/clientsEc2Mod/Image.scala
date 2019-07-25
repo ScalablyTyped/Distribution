@@ -59,7 +59,7 @@ trait Image extends js.Object {
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   /**
-    * This value is set for Windows AMIs; otherwise, it is blank.
+    * This value is set to windows for Windows AMIs; otherwise, it is blank.
     */
   var Platform: js.UndefOr[PlatformValues] = js.undefined
   /**

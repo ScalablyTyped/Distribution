@@ -9,7 +9,7 @@ trait Anon_Amex extends js.Object {
   /**
     * Card brand. Can be `amex`, `diners`, `discover`, `jcb`, `mastercard`, `unionpay`, `visa`, or `unknown`.
     */
-  var brand: stripeLib.stripeLibStrings.amex | stripeLib.stripeLibStrings.diner | stripeLib.stripeLibStrings.discover | stripeLib.stripeLibStrings.jcb | stripeLib.stripeLibStrings.mastercard | stripeLib.stripeLibStrings.unionpay | stripeLib.stripeLibStrings.visa | stripeLib.stripeLibStrings.unknown
+  var brand: stripeLib.stripeLibStrings.amex | stripeLib.stripeLibStrings.diners | stripeLib.stripeLibStrings.discover | stripeLib.stripeLibStrings.jcb | stripeLib.stripeLibStrings.mastercard | stripeLib.stripeLibStrings.unionpay | stripeLib.stripeLibStrings.visa | stripeLib.stripeLibStrings.unknown
   /**
     * Check results by Card networks on Card address and CVC at time of payment.
     */
@@ -39,7 +39,7 @@ trait Anon_Amex extends js.Object {
   /**
     * The last four digits of the card.
     */
-  var last4: scala.Double
+  var last4: java.lang.String
   /**
     * Populated if this transaction used 3D Secure authentication.
     */
@@ -53,14 +53,14 @@ trait Anon_Amex extends js.Object {
 object Anon_Amex {
   @scala.inline
   def apply(
-    brand: stripeLib.stripeLibStrings.amex | stripeLib.stripeLibStrings.diner | stripeLib.stripeLibStrings.discover | stripeLib.stripeLibStrings.jcb | stripeLib.stripeLibStrings.mastercard | stripeLib.stripeLibStrings.unionpay | stripeLib.stripeLibStrings.visa | stripeLib.stripeLibStrings.unknown,
+    brand: stripeLib.stripeLibStrings.amex | stripeLib.stripeLibStrings.diners | stripeLib.stripeLibStrings.discover | stripeLib.stripeLibStrings.jcb | stripeLib.stripeLibStrings.mastercard | stripeLib.stripeLibStrings.unionpay | stripeLib.stripeLibStrings.visa | stripeLib.stripeLibStrings.unknown,
     checks: Anon_Addressline1check,
     country: java.lang.String,
     exp_month: scala.Double,
     exp_year: scala.Double,
     fingerprint: java.lang.String,
     funding: stripeLib.stripeLibStrings.credit | stripeLib.stripeLibStrings.debit | stripeLib.stripeLibStrings.prepaid | stripeLib.stripeLibStrings.unknown,
-    last4: scala.Double,
+    last4: java.lang.String,
     three_d_secure: Anon_Authenticated = null,
     wallet: Anon_Amexexpresscheckout = null
   ): Anon_Amex = {

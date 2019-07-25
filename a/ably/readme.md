@@ -1,7 +1,7 @@
 
 # Scala.js typings for ably
 
-Typings are for version 1.1.15
+Typings are for version 1.1.16
 
 ## Library description:
 Realtime client library for Ably.io, the realtime messaging service

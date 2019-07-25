@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait EncryptionConfiguration extends js.Object {
   /**
-    * The encryption configuration for CloudWatch.
+    * The encryption configuration for Amazon CloudWatch.
     */
   var CloudWatchEncryption: js.UndefOr[CloudWatchEncryption] = js.undefined
   /**
-    * The encryption configuration for Job Bookmarks.
+    * The encryption configuration for job bookmarks.
     */
   var JobBookmarksEncryption: js.UndefOr[JobBookmarksEncryption] = js.undefined
   /**
-    * The encryption configuration for S3 data.
+    * The encryption configuration for Amazon Simple Storage Service (Amazon S3) data.
     */
   var S3Encryption: js.UndefOr[S3EncryptionList] = js.undefined
 }

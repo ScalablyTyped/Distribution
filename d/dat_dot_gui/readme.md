@@ -1,7 +1,7 @@
 
 # Scala.js typings for dat_dot_gui
 
-Typings are for version 0.7.2
+Typings are for version 0.7.3
 
 ## Library description:
 A lightweight graphical user interface for changing variables in JavaScript.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for dat.GUI 0.7.2
+// Type definitions for dat.GUI 0.7.3
 // Project: https://github.com/dataarts/dat.gui
 // Definitions by: Satoru Kimura <https://github.com/gyohk>, ZongJing Lu <https://github.com/sonic3d>, Richard Roylance <https://github.com/rroylance>, Nahuel Scotti <https://github.com/singuerinc>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

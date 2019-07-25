@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait S3Encryption extends js.Object {
   /**
-    * The AWS ARN of the KMS key to be used to encrypt the data.
+    * The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
   var KmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   /**
-    * The encryption mode to use for S3 data.
+    * The encryption mode to use for Amazon S3 data.
     */
   var S3EncryptionMode: js.UndefOr[S3EncryptionMode] = js.undefined
 }

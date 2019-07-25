@@ -37,7 +37,9 @@ trait HeaderViewProps extends js.Object {
       ]
     ]
   ] = js.undefined
-  var navTheme: js.UndefOr[antdLib.esMenuMod.MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
+  ] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ scala.Boolean, scala.Unit]] = js.undefined
   var rightContentRender: js.UndefOr[
     atAntDashDesignProDashLayoutLib.esTypingsMod.WithFalse[js.Function1[/* props */ this.type, reactLib.reactMod.ReactNode]]
@@ -70,7 +72,7 @@ object HeaderViewProps {
         reactLib.reactMod.ReactNode
       ]
     ] = null,
-    navTheme: antdLib.esMenuMod.MenuTheme = null,
+    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
     onCollapse: /* collapsed */ scala.Boolean => scala.Unit = null,
     rightContentRender: atAntDashDesignProDashLayoutLib.esTypingsMod.WithFalse[js.Function1[HeaderViewProps, reactLib.reactMod.ReactNode]] = null,
     siderWidth: scala.Int | scala.Double = null,

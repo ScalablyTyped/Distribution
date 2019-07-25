@@ -149,7 +149,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    * Returns a list of resource metadata for a given list of development endpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
     */
   def batchGetDevEndpoints(): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDevEndpoints(
@@ -160,7 +160,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    * Returns a list of resource metadata for a given list of development endpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
     */
   def batchGetDevEndpoints(params: BatchGetDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDevEndpoints(
@@ -379,7 +379,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDatabaseResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new DevEndpoint.
+    * Creates a new development endpoint.
     */
   def createDevEndpoint(): awsDashSdkLib.libRequestMod.Request[CreateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDevEndpoint(
@@ -390,7 +390,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new DevEndpoint.
+    * Creates a new development endpoint.
     */
   def createDevEndpoint(params: CreateDevEndpointRequest): awsDashSdkLib.libRequestMod.Request[CreateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDevEndpoint(
@@ -471,7 +471,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateScriptResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new security configuration.
+    * Creates a new security configuration. A security configuration is a set of security properties that can be used by AWS Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in AWS Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
     */
   def createSecurityConfiguration(): awsDashSdkLib.libRequestMod.Request[CreateSecurityConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSecurityConfiguration(
@@ -482,7 +482,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateSecurityConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new security configuration.
+    * Creates a new security configuration. A security configuration is a set of security properties that can be used by AWS Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in AWS Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
     */
   def createSecurityConfiguration(params: CreateSecurityConfigurationRequest): awsDashSdkLib.libRequestMod.Request[CreateSecurityConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSecurityConfiguration(
@@ -678,7 +678,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDatabaseResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a specified DevEndpoint.
+    * Deletes a specified development endpoint.
     */
   def deleteDevEndpoint(): awsDashSdkLib.libRequestMod.Request[DeleteDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDevEndpoint(
@@ -689,7 +689,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a specified DevEndpoint.
+    * Deletes a specified development endpoint.
     */
   def deleteDevEndpoint(params: DeleteDevEndpointRequest): awsDashSdkLib.libRequestMod.Request[DeleteDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDevEndpoint(
@@ -1184,7 +1184,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDataflowGraphResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about a specified DevEndpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
     */
   def getDevEndpoint(): awsDashSdkLib.libRequestMod.Request[GetDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDevEndpoint(
@@ -1195,7 +1195,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about a specified DevEndpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
     */
   def getDevEndpoint(params: GetDevEndpointRequest): awsDashSdkLib.libRequestMod.Request[GetDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDevEndpoint(
@@ -1207,7 +1207,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves all the DevEndpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
     */
   def getDevEndpoints(): awsDashSdkLib.libRequestMod.Request[GetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDevEndpoints(
@@ -1218,7 +1218,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves all the DevEndpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
     */
   def getDevEndpoints(params: GetDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[GetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDevEndpoints(
@@ -2325,7 +2325,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDatabaseResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a specified DevEndpoint.
+    * Updates a specified development endpoint.
     */
   def updateDevEndpoint(): awsDashSdkLib.libRequestMod.Request[UpdateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDevEndpoint(
@@ -2336,7 +2336,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a specified DevEndpoint.
+    * Updates a specified development endpoint.
     */
   def updateDevEndpoint(params: UpdateDevEndpointRequest): awsDashSdkLib.libRequestMod.Request[UpdateDevEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDevEndpoint(

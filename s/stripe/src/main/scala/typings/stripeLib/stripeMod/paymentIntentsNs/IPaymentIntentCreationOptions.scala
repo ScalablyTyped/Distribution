@@ -54,9 +54,13 @@ trait IPaymentIntentCreationOptions extends js.Object {
     */
   var payment_method: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
+    * Payment-method-specific configuration for this PaymentIntent.
     */
-  var payment_method_types: js.Array[java.lang.String]
+  var payment_method_options: js.UndefOr[stripeLib.Anon_Card] = js.undefined
+  /**
+    * The list of payment method types that this PaymentIntent is allowed to use. If this is not provided, defaults to ["card"].
+    */
+  var payment_method_types: js.UndefOr[js.Array[PaymentIntentPaymentMethodType]] = js.undefined
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
@@ -96,7 +100,6 @@ object IPaymentIntentCreationOptions {
   def apply(
     amount: scala.Double,
     currency: java.lang.String,
-    payment_method_types: js.Array[java.lang.String],
     application_fee_amount: scala.Int | scala.Double = null,
     capture_method: stripeLib.stripeLibStrings.automatic | stripeLib.stripeLibStrings.manual = null,
     confirm: js.UndefOr[scala.Boolean] = js.undefined,
@@ -106,6 +109,8 @@ object IPaymentIntentCreationOptions {
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     on_behalf_of: java.lang.String = null,
     payment_method: java.lang.String = null,
+    payment_method_options: stripeLib.Anon_Card = null,
+    payment_method_types: js.Array[PaymentIntentPaymentMethodType] = null,
     receipt_email: java.lang.String = null,
     return_url: java.lang.String = null,
     save_payment_method: js.UndefOr[scala.Boolean] = js.undefined,
@@ -115,7 +120,7 @@ object IPaymentIntentCreationOptions {
     transfer_data: IPaymentIntentTransferData = null,
     transfer_group: java.lang.String = null
   ): IPaymentIntentCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, payment_method_types = payment_method_types)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
     if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method.asInstanceOf[js.Any])
     if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm)
@@ -125,6 +130,8 @@ object IPaymentIntentCreationOptions {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)
+    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (return_url != null) __obj.updateDynamic("return_url")(return_url)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)

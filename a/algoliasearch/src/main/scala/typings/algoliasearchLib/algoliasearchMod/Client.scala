@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Client extends js.Object {
   /**
+    * add a header, used for flagging InstantSearch implementations
+    */
+  def addAlgoliaAgent(agent: java.lang.String): scala.Unit = js.native
+  /**
     * Add global API Keys
     */
   def addApiKey(scopes: js.Array[java.lang.String]): js.Promise[Task] = js.native

@@ -5,19 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/database/dist/src/api/Database", "Database")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSImport("@firebase/database/dist/src/api/Database", "Database")
 @js.native
-class Database protected ()
-  extends atFirebaseAppDashTypesLib.privateMod.FirebaseService {
+class Database protected () extends js.Object {
   /**
     * The constructor should not be called by users of our public API.
     * @param {!Repo} repo_
     */
   def this(repo_ : atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
-  @JSName("INTERNAL")
-  var INTERNAL_Database: DatabaseInternals = js.native
-  /* CompleteClass */
-  override var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
+  var INTERNAL: DatabaseInternals = js.native
+  val app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any = js.native
   /**
     * @param {string} apiName
     */

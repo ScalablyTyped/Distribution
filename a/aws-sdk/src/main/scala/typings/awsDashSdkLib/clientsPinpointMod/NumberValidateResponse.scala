@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NumberValidateResponse extends js.Object {
   /**
-    * The carrier or service provider that the phone number is currently registered with.
+    * The carrier or service provider that the phone number is currently registered with. In some countries and regions, this value may be the carrier or service provider that the phone number was originally registered with.
     */
   var Carrier: js.UndefOr[__string] = js.undefined
   /**

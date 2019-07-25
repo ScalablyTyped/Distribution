@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetDevEndpointRequest extends js.Object {
   /**
-    * Name of the DevEndpoint for which to retrieve information.
+    * Name of the DevEndpoint to retrieve information for.
     */
   var EndpointName: GenericString
 }

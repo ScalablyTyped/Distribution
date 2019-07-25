@@ -145,6 +145,7 @@ package object clientsGlueMod {
   type GenericString = java.lang.String
   type GetTableVersionsList = js.Array[TableVersion]
   type GlueResourceArn = java.lang.String
+  type GlueVersionString = java.lang.String
   type GrokPattern = java.lang.String
   type HashString = java.lang.String
   type IdString = java.lang.String
