@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__installations
 
-Typings are for version 0.2.1
+Typings are for version 0.2.2
 
 
 

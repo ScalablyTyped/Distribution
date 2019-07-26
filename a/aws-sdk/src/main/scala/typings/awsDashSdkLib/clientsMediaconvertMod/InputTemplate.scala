@@ -19,6 +19,10 @@ trait InputTemplate extends js.Object {
     */
   var CaptionSelectors: js.UndefOr[__mapOfCaptionSelector] = js.undefined
   /**
+    * Use Cropping selection (crop) to specify the video area that the service will include in the output video frame. If you specify a value here, it will override any value that you specify in the output setting Cropping selection (crop).
+    */
+  var Crop: js.UndefOr[Rectangle] = js.undefined
+  /**
     * Enable Deblock (InputDeblockFilter) to produce smoother motion in the output. Default is disabled. Only manaully controllable for MPEG2 and uncompressed video inputs.
     */
   var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
@@ -43,6 +47,10 @@ trait InputTemplate extends js.Object {
     */
   var InputClippings: js.UndefOr[__listOfInputClipping] = js.undefined
   /**
+    * Use Selection placement (position) to define the video area in your output frame. The area outside of the rectangle that you specify here is black. If you specify a value here, it will override any value that you specify in the output setting Selection placement (position). If you specify a value here, this will override any AFD values in your input, even if you set Respond to AFD (RespondToAfd) to Respond (RESPOND). If you specify a value here, this will ignore anything that you specify for the setting Scaling Behavior (scalingBehavior).
+    */
+  var Position: js.UndefOr[Rectangle] = js.undefined
+  /**
     * Use Program (programNumber) to select a specific program from within a multi-program transport stream. Note that Quad 4K is not currently supported. Default is the first program within the transport stream. If the program you specify doesn't exist, the transcoding service will use this default.
     */
   var ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined
@@ -66,12 +74,14 @@ object InputTemplate {
     AudioSelectorGroups: __mapOfAudioSelectorGroup = null,
     AudioSelectors: __mapOfAudioSelector = null,
     CaptionSelectors: __mapOfCaptionSelector = null,
+    Crop: Rectangle = null,
     DeblockFilter: InputDeblockFilter = null,
     DenoiseFilter: InputDenoiseFilter = null,
     FilterEnable: InputFilterEnable = null,
     FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined,
     ImageInserter: ImageInserter = null,
     InputClippings: __listOfInputClipping = null,
+    Position: Rectangle = null,
     ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
     PsiControl: InputPsiControl = null,
     TimecodeSource: InputTimecodeSource = null,
@@ -81,12 +91,14 @@ object InputTemplate {
     if (AudioSelectorGroups != null) __obj.updateDynamic("AudioSelectorGroups")(AudioSelectorGroups)
     if (AudioSelectors != null) __obj.updateDynamic("AudioSelectors")(AudioSelectors)
     if (CaptionSelectors != null) __obj.updateDynamic("CaptionSelectors")(CaptionSelectors)
+    if (Crop != null) __obj.updateDynamic("Crop")(Crop)
     if (DeblockFilter != null) __obj.updateDynamic("DeblockFilter")(DeblockFilter.asInstanceOf[js.Any])
     if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
     if (FilterEnable != null) __obj.updateDynamic("FilterEnable")(FilterEnable.asInstanceOf[js.Any])
     if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength)
     if (ImageInserter != null) __obj.updateDynamic("ImageInserter")(ImageInserter)
     if (InputClippings != null) __obj.updateDynamic("InputClippings")(InputClippings)
+    if (Position != null) __obj.updateDynamic("Position")(Position)
     if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber)
     if (PsiControl != null) __obj.updateDynamic("PsiControl")(PsiControl.asInstanceOf[js.Any])
     if (TimecodeSource != null) __obj.updateDynamic("TimecodeSource")(TimecodeSource.asInstanceOf[js.Any])

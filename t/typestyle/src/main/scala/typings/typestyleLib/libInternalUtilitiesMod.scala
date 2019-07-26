@@ -20,9 +20,12 @@ object libInternalUtilitiesMod extends js.Object {
       typestyleLib.libTypesMod.NestedCSSProperties | scala.Null | typestyleLib.typestyleLibNumbers.`false`
     ])*
   ): typestyleLib.libTypesMod.NestedCSSProperties = js.native
-  def media(
+  @JSName("media")
+  def media_false(
     mediaQuery: typestyleLib.libTypesMod.MediaQuery,
-    objects: typestyleLib.libTypesMod.NestedCSSProperties*
+    objects: (js.UndefOr[
+      typestyleLib.typestyleLibNumbers.`false` | typestyleLib.libTypesMod.NestedCSSProperties | scala.Null
+    ])*
   ): typestyleLib.libTypesMod.NestedCSSProperties = js.native
   def raf(cb: js.Function0[scala.Unit]): scala.Unit = js.native
 }

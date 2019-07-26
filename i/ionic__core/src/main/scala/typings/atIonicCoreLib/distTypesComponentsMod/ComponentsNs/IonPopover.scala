@@ -64,11 +64,13 @@ trait IonPopover extends js.Object {
     */
   var showBackdrop: scala.Boolean = js.native
   /**
-    * If `true`, the popover will be translucent.
+    * If `true`, the popover will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: scala.Boolean = js.native
   /**
     * Dismiss the popover overlay after it has been presented.
+    * @param data Any data to emit in the dismiss events.
+    * @param role The role of the element that is dismissing the popover. For example, 'cancel' or 'backdrop'.
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native

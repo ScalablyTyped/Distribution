@@ -1779,6 +1779,8 @@
 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js | admin, database, Firebase, realtime, authentication |
 | [firebase-client](./f/firebase-client) | A simple Node.js client for Firebase | firebase, rest, api, client |
 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati | Firebase, JWT |
+| [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK | - |
+| [firebase__app-types](./f/firebase__app-types) | @firebase/app Types | - |
 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK | - |
 | [firebase__auth-types](./f/firebase__auth-types) | @firebase/auth Types | - |
 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o | - |
@@ -1812,6 +1814,7 @@
 | [flat](./f/flat) | Take a nested Javascript object and flatten it, or | flat, json, flatten, unflatten, split, object, nested |
 | [flat-cache](./f/flat-cache) | A stupidly simple key/value storage using files to | json cache, simple cache, file cache, key par, key value, cache |
 | [flatbuffers](./f/flatbuffers) | Memory Efficient Serialization Library | flatbuffers |
+| [flatbush](./f/flatbush) | Fast static spatial index for rectangles | geometry, spatial, tree, index, rectangle, search |
 | [flatpickr](./f/flatpickr) | A lightweight, powerful javascript datetime picker | javascript, datetimepicker, calendar, date, time, picker, lightweight |
 | [flatted](./f/flatted) | A super light and fast circular JSON parser. | circular, JSON, fast, parser, minimal |
 | [fleximap](./f/fleximap) | A flexible hash map which supports deep keys. | fleximap, flexible, hashmap, deep, keys, multidimensional |
@@ -2083,6 +2086,7 @@
 | [generic-pool](./g/generic-pool) | Generic resource pooling for Node.JS | pool, pooling, throttle |
 | [gently](./g/gently) |   | - |
 | [geodesy](./g/geodesy) | Libraries of geodesy functions | geodesy, latitude, longitude, distance, bearing, destination, haversine, vincenty, rhumb, ellipsoid, datum, reference frame, TRF, wgs84, utm, mgrs |
+| [geoflatbush](./g/geoflatbush) | A geographic extension for  | - |
 | [geoip-lite](./g/geoip-lite) | A light weight native JavaScript implementation of | geo, geoip, ip, ipv4, ipv6, geolookup, maxmind, geolite |
 | [geojson](./g/geojson) | Turn your geo data into GeoJSON | geojson |
 | [geojson2osm](./g/geojson2osm) | Convert geojson to osm | osm, geojson |
@@ -3931,6 +3935,7 @@
 | [microsoft-live-connect](./m/microsoft-live-connect) | - | - |
 | [microsoft-sdk-soap](./m/microsoft-sdk-soap) | - | - |
 | [microsoft__load-themed-st](./m/microsoft__load-themed-styles) | Loads themed styles. | - |
+| [microsoft__typescript-etw](./m/microsoft__typescript-etw) | - | - |
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
@@ -4543,6 +4548,7 @@
 | [parse-mockdb](./p/parse-mockdb) | Parse JS SDK Mocked Database | parse, parsesdk, mock, unit-testing |
 | [parse-ms](./p/parse-ms) | Parse milliseconds into an object | browser, parse, time, ms, milliseconds, microseconds, nanoseconds, duration, period, range |
 | [parse-numeric-range](./p/parse-numeric-range) | Takes a string, such as "1,2,3-10,5-8" and turns i | parse, numbers, ranges, utility, arrays |
+| [parse-package-name](./p/parse-package-name) | Parse package name with semver, path, scoped name  | parse, package, name |
 | [parse-passwd](./p/parse-passwd) | Parse a passwd file into a list of users. | etc, etc-passwd, etc/passwd, parse, parse-passwd, passwd |
 | [parse-torrent](./p/parse-torrent) | Parse a torrent identifier (magnet uri, .torrent f | .torrent, bittorrent, parse torrent, peer-to-peer, read torrent, torrent, webtorrent |
 | [parse-torrent-file](./p/parse-torrent-file) | Parse a .torrent file and return an object of keys | .torrent, bittorrent, bittorrent, parse torrent, peer-to-peer, read torrent, torrent, webtorrent |
@@ -5274,6 +5280,7 @@
 | [react-native-actionsheet](./r/react-native-actionsheet) | Cross platform ActionSheet. This component impleme | actionsheet, action sheet, react-native, react-native-action-sheet, react-native-actionsheet, custom-action-sheet |
 | [react-native-android-task](./r/react-native-android-taskdescription) | TaskDescription Android React Native module | react, native, taskdescription, android |
 | [react-native-animatable](./r/react-native-animatable) | Easy to use declarative transitions and animations | react-native, react-component, react-native-component, react, mobile, ios, android, ui, fade, bounce, slide, animatable, transition, animation |
+| [react-native-app-intro-sl](./r/react-native-app-intro-slider) | Simple and configurable app introduction slider fo | swiper, App, Intro, ios, android, react-component, react-native, slider |
 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native. | React, Native, js |
 | [react-native-audio](./r/react-native-audio) | React Native extension for recording audio | react-native, audio, record |
 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API | react-native, react, auth0, jwt, authentication, lock, auth0-lock, login, sdk, api |
@@ -5438,6 +5445,7 @@
 | [react-router-dom-slinky-f](./r/react-router-dom-slinky-facade) | - | - |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
+| [react-router-native-slink](./r/react-router-native-slinky-facade) | - | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
 | [react-router-navigation-c](./r/react-router-navigation-core) | - | web, react-native, ios, android, router, navigation, navigator |
 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p | link-component, component, parameter, dynamic, router, react |

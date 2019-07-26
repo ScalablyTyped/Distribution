@@ -40,7 +40,7 @@ trait CollapsibleProps extends js.Object {
   var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
   /**
     * Enable pointer events on collapsed view
-    * 
+    *
     * @default false
     */
   var enablePointerEvents: js.UndefOr[scala.Boolean] = js.undefined

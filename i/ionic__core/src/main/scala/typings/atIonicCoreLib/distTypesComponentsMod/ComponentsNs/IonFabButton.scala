@@ -55,7 +55,7 @@ trait IonFabButton extends js.Object {
     */
   var target: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `true`, the fab button will be translucent. Only applies to `ios` mode on devices that support [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
+    * If `true`, the fab button will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: scala.Boolean
   /**

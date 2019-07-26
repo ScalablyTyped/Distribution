@@ -28,9 +28,12 @@ object ^ extends js.Object {
   def forceRenderStyles(): scala.Unit = js.native
   def getStyles(): java.lang.String = js.native
   def keyframes(frames: typestyleLib.libTypesMod.KeyFrames): java.lang.String = js.native
-  def media(
+  @JSName("media")
+  def media_false(
     mediaQuery: typestyleLib.libTypesMod.MediaQuery,
-    objects: typestyleLib.libTypesMod.NestedCSSProperties*
+    objects: (js.UndefOr[
+      typestyleLib.typestyleLibNumbers.`false` | typestyleLib.libTypesMod.NestedCSSProperties | scala.Null
+    ])*
   ): typestyleLib.libTypesMod.NestedCSSProperties = js.native
   def reinit(): scala.Unit = js.native
   def setStylesTarget(tag: typestyleLib.Anon_TextContent): scala.Unit = js.native

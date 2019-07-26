@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Mp2Settings extends js.Object {
   /**
-    * Average bitrate in bits/second.
+    * Specify the average bitrate in bits per second.
     */
   var Bitrate: js.UndefOr[__integerMin32000Max384000] = js.undefined
   /**

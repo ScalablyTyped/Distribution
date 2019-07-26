@@ -812,6 +812,12 @@ package object clientsMedialiveMod {
   */
   type InputSourceEndBehavior = _InputSourceEndBehavior | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STATIC
+    - awsDashSdkLib.awsDashSdkLibStrings.DYNAMIC
+    - java.lang.String
+  */
+  type InputSourceType = _InputSourceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.CREATING
     - awsDashSdkLib.awsDashSdkLibStrings.DETACHED
     - awsDashSdkLib.awsDashSdkLibStrings.ATTACHED
@@ -820,6 +826,12 @@ package object clientsMedialiveMod {
     - java.lang.String
   */
   type InputState = _InputState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ZEROBASED
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED
+    - java.lang.String
+  */
+  type InputTimecodeSource = _InputTimecodeSource | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.UDP_PUSH
     - awsDashSdkLib.awsDashSdkLibStrings.RTP_PUSH
@@ -831,6 +843,12 @@ package object clientsMedialiveMod {
     - java.lang.String
   */
   type InputType = _InputType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE_LAST_FRAME
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE_LAST_FRAME
+    - java.lang.String
+  */
+  type LastFrameClippingBehavior = _LastFrameClippingBehavior | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ERROR
     - awsDashSdkLib.awsDashSdkLibStrings.WARNING
@@ -1235,20 +1253,17 @@ package object clientsMedialiveMod {
   type __integerMin0Max1000 = scala.Double
   type __integerMin0Max10000 = scala.Double
   type __integerMin0Max1000000 = scala.Double
-  type __integerMin0Max1099511627775 = scala.Double
   type __integerMin0Max128 = scala.Double
   type __integerMin0Max15 = scala.Double
   type __integerMin0Max255 = scala.Double
   type __integerMin0Max30 = scala.Double
   type __integerMin0Max3600 = scala.Double
-  type __integerMin0Max4294967295 = scala.Double
   type __integerMin0Max500 = scala.Double
   type __integerMin0Max600 = scala.Double
   type __integerMin0Max65535 = scala.Double
   type __integerMin0Max65536 = scala.Double
   type __integerMin0Max7 = scala.Double
   type __integerMin0Max8191 = scala.Double
-  type __integerMin0Max8589934591 = scala.Double
   type __integerMin1 = scala.Double
   type __integerMin1000 = scala.Double
   type __integerMin1000Max30000 = scala.Double
@@ -1299,12 +1314,16 @@ package object clientsMedialiveMod {
   type __listOfOutputDestination = js.Array[OutputDestination]
   type __listOfOutputDestinationSettings = js.Array[OutputDestinationSettings]
   type __listOfOutputGroup = js.Array[OutputGroup]
+  type __listOfPipelineDetail = js.Array[PipelineDetail]
   type __listOfPipelinePauseStateSettings = js.Array[PipelinePauseStateSettings]
   type __listOfReservation = js.Array[Reservation]
   type __listOfScheduleAction = js.Array[ScheduleAction]
   type __listOfScte35Descriptor = js.Array[Scte35Descriptor]
   type __listOfVideoDescription = js.Array[VideoDescription]
   type __listOf__string = js.Array[__string]
+  type __longMin0Max1099511627775 = scala.Double
+  type __longMin0Max4294967295 = scala.Double
+  type __longMin0Max8589934591 = scala.Double
   type __string = java.lang.String
   type __stringMax32 = java.lang.String
   type __stringMin1 = java.lang.String

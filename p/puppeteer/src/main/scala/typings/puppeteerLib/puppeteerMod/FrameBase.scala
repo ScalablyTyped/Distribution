@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FrameBase extends Evalable {
+trait FrameBase
+  extends Evalable
+     with JSEvalable {
   /**
     * The method queries frame for the selector.
     * If there's no such element within the frame, the method will resolve to null.
@@ -40,23 +42,6 @@ trait FrameBase extends Evalable {
   def click(selector: java.lang.String, options: ClickOptions): js.Promise[scala.Unit] = js.native
   /** Gets the full HTML contents of the page, including the doctype. */
   def content(): js.Promise[java.lang.String] = js.native
-  /**
-    * Evaluates a function in the browser context.
-    * If the function, passed to the frame.evaluate, returns a Promise, then frame.evaluate would wait for the promise to resolve and return its value.
-    * If the function passed into frame.evaluate returns a non-Serializable value, then frame.evaluate resolves to undefined.
-    * @param fn Function to be evaluated in browser context
-    * @param args Arguments to pass to `fn`
-    */
-  def evaluate[F /* <: EvaluateFn */](fn: F, args: SerializableOrJSHandle*): js.Promise[EvaluateFnReturnType[F]] = js.native
-  /**
-    * Evaluates a function in the page context.
-    * If the function, passed to the page.evaluateHandle, returns a Promise, then page.evaluateHandle
-    * would wait for the promise to resolve and return its value.
-    * @param fn The function to be evaluated in the page context.
-    * @param args The arguments to pass to the `fn`.
-    * @returns A promise which resolves to return value of `fn`.
-    */
-  def evaluateHandle(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
   /** This method fetches an element with selector and focuses it. */
   def focus(selector: java.lang.String): js.Promise[scala.Unit] = js.native
   /**

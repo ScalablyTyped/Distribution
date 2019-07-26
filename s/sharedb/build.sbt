@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sharedb"
-version := "1.0-dt-20190328Z-a832cd"
+version := "1.0-dt-20190725Z-969a45"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

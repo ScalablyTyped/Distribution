@@ -29,10 +29,22 @@ trait IonVirtualScroll extends js.Object {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
   ] = js.native
   /**
+    * An optional function that maps each item footer within their height.
+    */
+  var footerHeight: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FooterHeightFn */ js.Any
+  ] = js.native
+  /**
     * Section headers and the data used within its given template can be dynamically created by passing a function to `headerFn`. For example, a large list of contacts usually has dividers between each letter in the alphabet. App's can provide their own custom `headerFn` which is called with each record within the dataset. The logic within the header function can decide if the header template should be used, and what data to give to the header template. The function must return `null` if a header cell shouldn't be created.
     */
   var headerFn: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
+  ] = js.native
+  /**
+    * An optional function that maps each item header within their height.
+    */
+  var headerHeight: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderHeightFn */ js.Any
   ] = js.native
   /**
     * An optional function that maps each item within their height. When this function is provides, heavy optimizations and fast path can be taked by `ion-virtual-scroll` leading to massive performance improvements.  This function allows to skip all DOM reads, which can be Doing so leads to massive performance

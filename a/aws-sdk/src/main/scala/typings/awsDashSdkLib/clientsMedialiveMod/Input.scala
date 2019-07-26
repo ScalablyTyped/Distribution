@@ -28,6 +28,11 @@ trait Input extends js.Object {
     */
   var InputClass: js.UndefOr[InputClass] = js.undefined
   /**
+    * Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes
+  during input switch actions. Presently, this functionality only works with MP4_FILE inputs.
+    */
+  var InputSourceType: js.UndefOr[InputSourceType] = js.undefined
+  /**
     * A list of MediaConnect Flows for this input.
     */
   var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
@@ -63,6 +68,7 @@ object Input {
     Destinations: __listOfInputDestination = null,
     Id: __string = null,
     InputClass: InputClass = null,
+    InputSourceType: InputSourceType = null,
     MediaConnectFlows: __listOfMediaConnectFlow = null,
     Name: __string = null,
     RoleArn: __string = null,
@@ -78,6 +84,7 @@ object Input {
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (InputClass != null) __obj.updateDynamic("InputClass")(InputClass.asInstanceOf[js.Any])
+    if (InputSourceType != null) __obj.updateDynamic("InputSourceType")(InputSourceType.asInstanceOf[js.Any])
     if (MediaConnectFlows != null) __obj.updateDynamic("MediaConnectFlows")(MediaConnectFlows)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)

@@ -25,6 +25,8 @@ trait IonRouter extends js.Object {
   def printDebug(): js.Promise[scala.Unit] = js.native
   /**
     * Navigate to the specified URL.
+    * @param url The url to navigate to.
+    * @param direction The direction of the animation. Defaults to `"forward"`.
     */
   def push(url: java.lang.String): js.Promise[scala.Boolean] = js.native
   def push(

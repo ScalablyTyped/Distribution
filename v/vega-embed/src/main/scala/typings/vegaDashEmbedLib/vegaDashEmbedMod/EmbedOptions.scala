@@ -32,7 +32,7 @@ trait EmbedOptions extends js.Object {
     vegaDashEmbedLib.vegaDashEmbedLibStrings.excel | vegaDashEmbedLib.vegaDashEmbedLibStrings.ggplot2 | vegaDashEmbedLib.vegaDashEmbedLibStrings.quartz | vegaDashEmbedLib.vegaDashEmbedLibStrings.vox | vegaDashEmbedLib.vegaDashEmbedLibStrings.dark
   ] = js.undefined
   var tooltip: js.UndefOr[
-    vegaDashTypingsLib.typesRuntimeMod.TooltipHandler | vegaDashTooltipLib.buildDefaultsMod.Options | scala.Boolean
+    vegaDashTypingsLib.typesRuntimeMod.TooltipHandler | vegaDashTooltipLib.buildSrcDefaultsMod.Options | scala.Boolean
   ] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
@@ -59,7 +59,7 @@ object EmbedOptions {
     sourceFooter: java.lang.String = null,
     sourceHeader: java.lang.String = null,
     theme: vegaDashEmbedLib.vegaDashEmbedLibStrings.excel | vegaDashEmbedLib.vegaDashEmbedLibStrings.ggplot2 | vegaDashEmbedLib.vegaDashEmbedLibStrings.quartz | vegaDashEmbedLib.vegaDashEmbedLibStrings.vox | vegaDashEmbedLib.vegaDashEmbedLibStrings.dark = null,
-    tooltip: vegaDashTypingsLib.typesRuntimeMod.TooltipHandler | vegaDashTooltipLib.buildDefaultsMod.Options | scala.Boolean = null,
+    tooltip: vegaDashTypingsLib.typesRuntimeMod.TooltipHandler | vegaDashTooltipLib.buildSrcDefaultsMod.Options | scala.Boolean = null,
     width: scala.Int | scala.Double = null
   ): EmbedOptions = {
     val __obj = js.Dynamic.literal()

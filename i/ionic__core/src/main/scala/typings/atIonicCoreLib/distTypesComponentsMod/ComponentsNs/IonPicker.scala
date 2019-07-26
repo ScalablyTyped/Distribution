@@ -64,12 +64,15 @@ trait IonPicker extends js.Object {
   var showBackdrop: scala.Boolean = js.native
   /**
     * Dismiss the picker overlay after it has been presented.
+    * @param data Any data to emit in the dismiss events.
+    * @param role The role of the element that is dismissing the picker. This can be useful in a button handler for determining which button was clicked to dismiss the picker. Some examples include: ``"cancel"`, `"destructive"`, "selected"`, and `"backdrop"`.
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
     * Get the column that matches the specified name.
+    * @param name The name of the column.
     */
   def getColumn(name: java.lang.String): js.Promise[
     js.UndefOr[

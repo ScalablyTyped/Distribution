@@ -12,6 +12,7 @@ trait RadioButtonProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inputId: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
+  var required: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
@@ -29,6 +30,7 @@ object RadioButtonProps {
     id: java.lang.String = null,
     inputId: java.lang.String = null,
     name: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null,
@@ -41,6 +43,7 @@ object RadioButtonProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-collapsible"
-version := "1.4.0-9764b2"
+version := "1.5.0-5a2dc6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

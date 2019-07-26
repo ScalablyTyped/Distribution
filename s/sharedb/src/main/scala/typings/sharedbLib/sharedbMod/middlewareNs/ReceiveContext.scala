@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReceiveContext extends BaseContext {
-  var data: sharedbLib.libSharedbMod.JSONObject
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
 object ReceiveContext {
@@ -15,7 +15,7 @@ object ReceiveContext {
     action: sharedbLib.sharedbLibStrings.afterSubmit | sharedbLib.sharedbLibStrings.apply | sharedbLib.sharedbLibStrings.commit | sharedbLib.sharedbLibStrings.connect | sharedbLib.sharedbLibStrings.doc | sharedbLib.sharedbLibStrings.op | sharedbLib.sharedbLibStrings.query | sharedbLib.sharedbLibStrings.readSnapshots | sharedbLib.sharedbLibStrings.receive | sharedbLib.sharedbLibStrings.reply | sharedbLib.sharedbLibStrings.submit,
     agent: js.Any,
     backend: sharedbLib.sharedbMod.sharedb,
-    data: sharedbLib.libSharedbMod.JSONObject
+    data: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): ReceiveContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, data = data)
   

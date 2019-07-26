@@ -49,6 +49,15 @@ object SchemaTypes extends js.Object {
     js.UndefOr[/* options */ js.Any], 
     mongooseLib.mongooseMod.SchemaNs.TypesNs.Embedded
   ] = js.native
+  /**
+    * section schema/map.js
+    * https://mongoosejs.com/docs/schematypes.html#maps
+    */
+  var Map: org.scalablytyped.runtime.Instantiable2[
+    /* key */ java.lang.String, 
+    js.UndefOr[/* options */ js.Any], 
+    mongooseLib.mongooseMod.SchemaNs.TypesNs.Map
+  ] = js.native
   /*
     * section schema/mixed.js
     * http://mongoosejs.com/docs/api.html#schema-mixed-js

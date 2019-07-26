@@ -11,11 +11,11 @@ trait VideoDescription extends js.Object {
     */
   var AfdSignaling: js.UndefOr[AfdSignaling] = js.undefined
   /**
-    * The service automatically applies the anti-alias filter to all outputs. The service no longer accepts the value DISABLED for AntiAlias. If you specify that in your job, the service will ignore the setting.
+    * The anti-alias filter is automatically applied to all outputs. The service no longer accepts the value DISABLED for AntiAlias. If you specify that in your job, the service will ignore the setting.
     */
   var AntiAlias: js.UndefOr[AntiAlias] = js.undefined
   /**
-    * Video codec settings, (CodecSettings) under (VideoDescription), contains the group of settings related to video encoding. The settings in this group vary depending on the value you choose for Video codec (Codec). For each codec enum you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * H_264, H264Settings * H_265, H265Settings * MPEG2, Mpeg2Settings * PRORES, ProresSettings * FRAME_CAPTURE, FrameCaptureSettings
+    * Video codec settings, (CodecSettings) under (VideoDescription), contains the group of settings related to video encoding. The settings in this group vary depending on the value that you choose for Video codec (Codec). For each codec enum that you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * H_264, H264Settings * H_265, H265Settings * MPEG2, Mpeg2Settings * PRORES, ProresSettings * FRAME_CAPTURE, FrameCaptureSettings
     */
   var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait VideoDescription extends js.Object {
     */
   var ColorMetadata: js.UndefOr[ColorMetadata] = js.undefined
   /**
-    * Applies only if your input aspect ratio is different from your output aspect ratio. Use Input cropping rectangle (Crop) to specify the  video area the service will include in the output. This will crop the input source, causing video pixels to be removed on encode. If you crop your input frame size to smaller than your output frame size, make sure to specify the behavior you want in your output setting "Scaling behavior".
+    * Use Cropping selection (crop) to specify the video area that the service will include in the output video frame.
     */
   var Crop: js.UndefOr[Rectangle] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait VideoDescription extends js.Object {
     */
   var Height: js.UndefOr[__integerMin32Max2160] = js.undefined
   /**
-    * Use Position (Position) to point to a rectangle object to define your position. This setting overrides any other aspect ratio.
+    * Use Selection placement (position) to define the video area in your output frame. The area outside of the rectangle that you specify here is black.
     */
   var Position: js.UndefOr[Rectangle] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait VideoDescription extends js.Object {
     */
   var RespondToAfd: js.UndefOr[RespondToAfd] = js.undefined
   /**
-    * Applies only if your input aspect ratio is different from your output aspect ratio. Choose "Stretch to output" to have the service stretch your video image to fit. Keep the setting "Default" to allow the service to letterbox your video instead. This setting overrides any positioning value you specify elsewhere in the job.
+    * Specify how the service handles outputs that have a different aspect ratio from the input aspect ratio. Choose Stretch to output (STRETCH_TO_OUTPUT) to have the service stretch your video image to fit. Keep the setting Default (DEFAULT) to have the service letterbox your video instead. This setting overrides any value that you specify for the setting Selection placement (position) in this output.
     */
   var ScalingBehavior: js.UndefOr[ScalingBehavior] = js.undefined
   /**

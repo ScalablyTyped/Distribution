@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait JobTemplate extends js.Object {
   /**
-    * Accelerated transcoding is currently in private preview. Contact AWS for more information.
+    * Accelerated transcoding can significantly speed up jobs with long, visually complex content.
     */
   var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
   /**

@@ -21,11 +21,11 @@ trait Scte35SegmentationDescriptor extends js.Object {
   /**
     * Corresponds to SCTE-35 segmentation_duration. Optional. The duration for the time_signal, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. Enter time in 90 KHz clock ticks. If you do not enter a duration, the time_signal will continue until you insert a cancellation message.
     */
-  var SegmentationDuration: js.UndefOr[__integerMin0Max1099511627775] = js.undefined
+  var SegmentationDuration: js.UndefOr[__longMin0Max1099511627775] = js.undefined
   /**
     * Corresponds to SCTE-35 segmentation_event_id. 
     */
-  var SegmentationEventId: __integerMin0Max4294967295
+  var SegmentationEventId: __longMin0Max4294967295
   /**
     * Corresponds to SCTE-35 segmentation_type_id. One of the segmentation_type_id values listed in the SCTE-35 specification. On the console, enter the ID in decimal (for example, "52"). In the CLI, API, or an SDK, enter the ID in hex (for example, "0x34") or decimal (for example, "52").
     */
@@ -56,10 +56,10 @@ object Scte35SegmentationDescriptor {
   @scala.inline
   def apply(
     SegmentationCancelIndicator: Scte35SegmentationCancelIndicator,
-    SegmentationEventId: __integerMin0Max4294967295,
+    SegmentationEventId: __longMin0Max4294967295,
     DeliveryRestrictions: Scte35DeliveryRestrictions = null,
     SegmentNum: js.UndefOr[__integerMin0Max255] = js.undefined,
-    SegmentationDuration: js.UndefOr[__integerMin0Max1099511627775] = js.undefined,
+    SegmentationDuration: js.UndefOr[__longMin0Max1099511627775] = js.undefined,
     SegmentationTypeId: js.UndefOr[__integerMin0Max255] = js.undefined,
     SegmentationUpid: __string = null,
     SegmentationUpidType: js.UndefOr[__integerMin0Max255] = js.undefined,

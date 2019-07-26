@@ -63,6 +63,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Jarom Loveridge <https://github.com/jloveridge>
 //                 Grimmer Kang <https://github.com/grimmer0125>
 //                 Richard Davison <https://github.com/richarddd>
+//                 Brian Chen <https://github.com/ToucheSir>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

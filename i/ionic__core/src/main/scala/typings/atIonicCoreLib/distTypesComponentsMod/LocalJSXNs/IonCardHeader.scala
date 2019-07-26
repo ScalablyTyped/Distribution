@@ -21,7 +21,7 @@ trait IonCardHeader
     atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
   ] = js.undefined
   /**
-    * If `true`, the card header will be translucent.
+    * If `true`, the card header will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

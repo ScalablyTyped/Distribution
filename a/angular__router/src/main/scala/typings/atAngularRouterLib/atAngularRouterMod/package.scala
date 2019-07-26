@@ -10,12 +10,10 @@ package object atAngularRouterMod {
   type DeprecatedLoadChildren = java.lang.String
   type DetachedRouteHandle = js.Object
   /**
-    * @description
+    * Error handler that is invoked when a navigation error occurs.
     *
-    * Error handler that is invoked when a navigation errors.
-    *
-    * If the handler returns a value, the navigation promise will be resolved with this value.
-    * If the handler throws an exception, the navigation promise will be rejected with
+    * If the handler returns a value, the navigation promise is resolved with this value.
+    * If the handler throws an exception, the navigation promise is rejected with
     * the exception.
     *
     * @publicApi

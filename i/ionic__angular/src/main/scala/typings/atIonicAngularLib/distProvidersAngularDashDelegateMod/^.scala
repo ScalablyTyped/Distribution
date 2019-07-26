@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def attachView(
+    zone: atAngularCoreLib.atAngularCoreMod.NgZone,
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
     location: js.UndefOr[scala.Nothing],
@@ -20,6 +21,7 @@ object ^ extends js.Object {
     params: js.Any
   ): js.Any = js.native
   def attachView(
+    zone: atAngularCoreLib.atAngularCoreMod.NgZone,
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
     location: js.UndefOr[scala.Nothing],
@@ -32,6 +34,7 @@ object ^ extends js.Object {
     cssClasses: js.Array[java.lang.String]
   ): js.Any = js.native
   def attachView(
+    zone: atAngularCoreLib.atAngularCoreMod.NgZone,
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
     location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
@@ -43,6 +46,7 @@ object ^ extends js.Object {
     params: js.Any
   ): js.Any = js.native
   def attachView(
+    zone: atAngularCoreLib.atAngularCoreMod.NgZone,
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
     location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
@@ -54,6 +58,6 @@ object ^ extends js.Object {
     params: js.Any,
     cssClasses: js.Array[java.lang.String]
   ): js.Any = js.native
-  def bindLifecycleEvents(instance: js.Any, element: stdLib.HTMLElement): js.Function0[scala.Unit] = js.native
+  def bindLifecycleEvents(zone: atAngularCoreLib.atAngularCoreMod.NgZone, instance: js.Any, element: stdLib.HTMLElement): js.Function0[scala.Unit] = js.native
 }
 

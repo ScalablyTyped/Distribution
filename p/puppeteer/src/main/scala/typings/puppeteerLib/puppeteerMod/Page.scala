@@ -443,6 +443,13 @@ trait Page
   def target(): Target = js.native
   /** Gets the page viewport. */
   def viewport(): Viewport = js.native
+  /**
+    * In non-headless Chromium, this method results in the native file picker dialog not showing up for the user.
+    * This method is typically coupled with an action that triggers file choosing.
+    * This must be called before the file chooser is launched. It will not return a currently active file chooser.
+    */
+  def waitForFileChooser(): js.Promise[FileChooser] = js.native
+  def waitForFileChooser(options: Timeoutable): js.Promise[FileChooser] = js.native
   def waitForRequest(urlOrPredicate: java.lang.String): js.Promise[Request] = js.native
   def waitForRequest(urlOrPredicate: java.lang.String, options: Timeoutable): js.Promise[Request] = js.native
   def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, scala.Boolean]): js.Promise[Request] = js.native

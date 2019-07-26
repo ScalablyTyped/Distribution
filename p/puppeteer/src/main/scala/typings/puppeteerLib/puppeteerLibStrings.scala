@@ -157,8 +157,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.Permission
   
   @js.native
-  sealed trait close
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait close extends js.Object
   
   @js.native
   sealed trait confirm
@@ -185,8 +184,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ErrorCode
   
   @js.native
-  sealed trait console
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait console extends js.Object
   
   @js.native
   sealed trait count
@@ -197,8 +195,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ConsoleMessageType
   
   @js.native
-  sealed trait dialog
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait dir
@@ -209,8 +206,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ConsoleMessageType
   
   @js.native
-  sealed trait disconnected
-    extends puppeteerLib.puppeteerMod.BrowserEvents
+  sealed trait disconnected extends js.Object
   
   @js.native
   sealed trait document
@@ -227,7 +223,6 @@ object puppeteerLibStrings {
   @js.native
   sealed trait error
     extends puppeteerLib.puppeteerMod.ConsoleMessageType
-       with puppeteerLib.puppeteerMod.PageEvents
   
   @js.native
   sealed trait eventsource
@@ -246,16 +241,13 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ResourceType
   
   @js.native
-  sealed trait frameattached
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait frameattached extends js.Object
   
   @js.native
-  sealed trait framedetached
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait framedetached extends js.Object
   
   @js.native
-  sealed trait framenavigated
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait framenavigated extends js.Object
   
   @js.native
   sealed trait geolocation
@@ -291,7 +283,6 @@ object puppeteerLibStrings {
   @js.native
   sealed trait load
     extends puppeteerLib.puppeteerMod.LoadEvent
-       with puppeteerLib.puppeteerMod.PageEvents
   
   @js.native
   sealed trait log
@@ -364,8 +355,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.TargetType
   
   @js.native
-  sealed trait pageerror
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait pageerror extends js.Object
   
   @js.native
   sealed trait `payment-handler`
@@ -401,20 +391,16 @@ object puppeteerLibStrings {
   sealed trait raf extends js.Object
   
   @js.native
-  sealed trait request
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait request extends js.Object
   
   @js.native
-  sealed trait requestfailed
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait requestfailed extends js.Object
   
   @js.native
-  sealed trait requestfinished
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait requestfinished extends js.Object
   
   @js.native
-  sealed trait response
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait response extends js.Object
   
   @js.native
   sealed trait right
@@ -430,6 +416,10 @@ object puppeteerLibStrings {
   
   @js.native
   sealed trait service_worker
+    extends puppeteerLib.puppeteerMod.TargetType
+  
+  @js.native
+  sealed trait shared_worker
     extends puppeteerLib.puppeteerMod.TargetType
   
   @js.native
@@ -449,16 +439,13 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ConsoleMessageType
   
   @js.native
-  sealed trait targetchanged
-    extends puppeteerLib.puppeteerMod.BrowserEvents
+  sealed trait targetchanged extends js.Object
   
   @js.native
-  sealed trait targetcreated
-    extends puppeteerLib.puppeteerMod.BrowserEvents
+  sealed trait targetcreated extends js.Object
   
   @js.native
-  sealed trait targetdestroyed
-    extends puppeteerLib.puppeteerMod.BrowserEvents
+  sealed trait targetdestroyed extends js.Object
   
   @js.native
   sealed trait texttrack
@@ -493,12 +480,10 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.Platform
   
   @js.native
-  sealed trait workercreated
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait workercreated extends js.Object
   
   @js.native
-  sealed trait workerdestroyed
-    extends puppeteerLib.puppeteerMod.PageEvents
+  sealed trait workerdestroyed extends js.Object
   
   @js.native
   sealed trait xhr
@@ -720,6 +705,8 @@ object puppeteerLibStrings {
   def script: script = "script".asInstanceOf[script]
   @scala.inline
   def service_worker: service_worker = "service_worker".asInstanceOf[service_worker]
+  @scala.inline
+  def shared_worker: shared_worker = "shared_worker".asInstanceOf[shared_worker]
   @scala.inline
   def startGroup: startGroup = "startGroup".asInstanceOf[startGroup]
   @scala.inline

@@ -18,6 +18,8 @@ object ^ extends js.Object {
   def JSONFileContent(filename: java.lang.String, content: js.Object): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
+  def deepStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
+  def deepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit]): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit]): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
@@ -149,8 +151,8 @@ object ^ extends js.Object {
     * @param content An object of key/values the object should not contain
     */
   def noObjectContent(obj: js.Object, content: js.Object): scala.Unit = js.native
-  def notDeepEqual(acutal: js.Any, expected: js.Any): scala.Unit = js.native
-  def notDeepEqual(acutal: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
+  def notDeepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
+  def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def notImplement(subject: js.Object, methods: js.Array[java.lang.String]): scala.Unit = js.native

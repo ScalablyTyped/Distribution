@@ -15,6 +15,7 @@ trait ToggleButtonProps extends js.Object {
   var onIcon: js.UndefOr[java.lang.String] = js.undefined
   var onLabel: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
 }
@@ -31,6 +32,7 @@ object ToggleButtonProps {
     onIcon: java.lang.String = null,
     onLabel: java.lang.String = null,
     style: js.Object = null,
+    tabIndex: scala.Int | scala.Double = null,
     tooltip: js.Any = null,
     tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null
   ): ToggleButtonProps = {
@@ -44,6 +46,7 @@ object ToggleButtonProps {
     if (onIcon != null) __obj.updateDynamic("onIcon")(onIcon)
     if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
     __obj.asInstanceOf[ToggleButtonProps]

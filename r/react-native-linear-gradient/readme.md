@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-linear-gradient
 
-Typings are for version 2.5.5
+Typings are for version 2.5.6
 
 ## Library description:
 A <LinearGradient> element for React Native

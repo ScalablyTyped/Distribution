@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionicons
 
-Typings are for version 4.6.1
+Typings are for version 4.6.2
 
 ## Library description:
 Premium icons for Ionic.
@@ -49,6 +49,8 @@ These comments are from the typescript definitions and might be useful:
  * This file gets copied to all distributions of stencil component collections.
  * - no imports
  */
+
+/* Ionicons, Types */
 
 
 ```

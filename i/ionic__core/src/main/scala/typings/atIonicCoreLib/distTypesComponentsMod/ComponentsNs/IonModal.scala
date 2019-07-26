@@ -61,6 +61,8 @@ trait IonModal extends js.Object {
   var showBackdrop: scala.Boolean = js.native
   /**
     * Dismiss the modal overlay after it has been presented.
+    * @param data Any data to emit in the dismiss events.
+    * @param role The role of the element that is dismissing the modal. For example, 'cancel' or 'backdrop'.
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native

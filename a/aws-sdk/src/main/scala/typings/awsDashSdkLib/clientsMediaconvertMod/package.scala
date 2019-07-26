@@ -118,6 +118,7 @@ package object clientsMediaconvertMod {
     - awsDashSdkLib.awsDashSdkLibStrings.AIFF
     - awsDashSdkLib.awsDashSdkLibStrings.AC3
     - awsDashSdkLib.awsDashSdkLibStrings.EAC3
+    - awsDashSdkLib.awsDashSdkLibStrings.EAC3_ATMOS
     - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
     - java.lang.String
   */
@@ -137,6 +138,8 @@ package object clientsMediaconvertMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_1
     - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_2
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_3
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_4
     - java.lang.String
   */
   type AudioNormalizationAlgorithm = _AudioNormalizationAlgorithm | java.lang.String
@@ -467,6 +470,58 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type DvbSubtitleTeletextSpacing = _DvbSubtitleTeletextSpacing | java.lang.String
+  type Eac3AtmosBitstreamMode = awsDashSdkLib.awsDashSdkLibStrings.COMPLETE_MAIN | java.lang.String
+  type Eac3AtmosCodingMode = awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_9_1_6 | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
+  type Eac3AtmosDialogueIntelligence = _Eac3AtmosDialogueIntelligence | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.SPEECH
+    - java.lang.String
+  */
+  type Eac3AtmosDynamicRangeCompressionLine = _Eac3AtmosDynamicRangeCompressionLine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.SPEECH
+    - java.lang.String
+  */
+  type Eac3AtmosDynamicRangeCompressionRf = _Eac3AtmosDynamicRangeCompressionRf | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LEQ_A
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_1
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_2
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_3
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_4
+    - java.lang.String
+  */
+  type Eac3AtmosMeteringMode = _Eac3AtmosMeteringMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED
+    - awsDashSdkLib.awsDashSdkLibStrings.STEREO
+    - awsDashSdkLib.awsDashSdkLibStrings.SURROUND
+    - awsDashSdkLib.awsDashSdkLibStrings.DPL2
+    - java.lang.String
+  */
+  type Eac3AtmosStereoDownmix = _Eac3AtmosStereoDownmix | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
+  type Eac3AtmosSurroundExMode = _Eac3AtmosSurroundExMode | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ATTENUATE_3_DB
     - awsDashSdkLib.awsDashSdkLibStrings.NONE
@@ -938,6 +993,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type HlsAdMarkers = _HlsAdMarkers | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC
+    - awsDashSdkLib.awsDashSdkLibStrings.M2TS
+    - java.lang.String
+  */
+  type HlsAudioOnlyContainer = _HlsAudioOnlyContainer | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT
     - awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT
@@ -1817,7 +1878,9 @@ package object clientsMediaconvertMod {
   type __doubleMinNegative59Max0 = scala.Double
   type __doubleMinNegative60Max3 = scala.Double
   type __doubleMinNegative60MaxNegative1 = scala.Double
+  type __doubleMinNegative6Max3 = scala.Double
   type __integer = scala.Double
+  type __integerMin0Max0 = scala.Double
   type __integerMin0Max10 = scala.Double
   type __integerMin0Max100 = scala.Double
   type __integerMin0Max1000 = scala.Double
@@ -1839,7 +1902,6 @@ package object clientsMediaconvertMod {
   type __integerMin0Max65535 = scala.Double
   type __integerMin0Max7 = scala.Double
   type __integerMin0Max8 = scala.Double
-  type __integerMin0Max9 = scala.Double
   type __integerMin0Max96 = scala.Double
   type __integerMin0Max99 = scala.Double
   type __integerMin1000Max1152000000 = scala.Double
@@ -1874,6 +1936,7 @@ package object clientsMediaconvertMod {
   type __integerMin32Max2160 = scala.Double
   type __integerMin32Max4096 = scala.Double
   type __integerMin32Max8182 = scala.Double
+  type __integerMin384000Max768000 = scala.Double
   type __integerMin48000Max48000 = scala.Double
   type __integerMin6000Max1024000 = scala.Double
   type __integerMin64000Max640000 = scala.Double
@@ -1941,14 +2004,14 @@ package object clientsMediaconvertMod {
   type __stringPatternAZaZ0902 = java.lang.String
   type __stringPatternAZaZ0932 = java.lang.String
   type __stringPatternArnAwsUsGovAcm = java.lang.String
-  type __stringPatternArnAwsUsGovKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = java.lang.String
+  type __stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = java.lang.String
   type __stringPatternDD = java.lang.String
+  type __stringPatternHttpHttpsS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = java.lang.String
   type __stringPatternHttps = java.lang.String
   type __stringPatternIdentityAZaZ26AZaZ09163 = java.lang.String
   type __stringPatternS3 = java.lang.String
   type __stringPatternS3ASSETMAPXml = java.lang.String
   type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = java.lang.String
-  type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = java.lang.String
   type __stringPatternSNManifestConfirmConditionNotificationNS = java.lang.String
   type __stringPatternSNSignalProcessingNotificationNS = java.lang.String
   type __stringPatternWS = java.lang.String

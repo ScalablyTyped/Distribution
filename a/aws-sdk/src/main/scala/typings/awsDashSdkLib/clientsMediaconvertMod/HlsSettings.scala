@@ -11,6 +11,10 @@ trait HlsSettings extends js.Object {
     */
   var AudioGroupId: js.UndefOr[__string] = js.undefined
   /**
+    * Use this setting only in audio-only outputs. Choose MPEG-2 Transport Stream (M2TS) to create a file in an MPEG2-TS container. Keep the default value Automatic (AUTOMATIC) to create an audio-only file in a raw container. Regardless of the value that you specify here, if this output has video, the service will place the output into an MPEG2-TS container.
+    */
+  var AudioOnlyContainer: js.UndefOr[HlsAudioOnlyContainer] = js.undefined
+  /**
     * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
     */
   var AudioRenditionSets: js.UndefOr[__string] = js.undefined
@@ -32,6 +36,7 @@ object HlsSettings {
   @scala.inline
   def apply(
     AudioGroupId: __string = null,
+    AudioOnlyContainer: HlsAudioOnlyContainer = null,
     AudioRenditionSets: __string = null,
     AudioTrackType: HlsAudioTrackType = null,
     IFrameOnlyManifest: HlsIFrameOnlyManifest = null,
@@ -39,6 +44,7 @@ object HlsSettings {
   ): HlsSettings = {
     val __obj = js.Dynamic.literal()
     if (AudioGroupId != null) __obj.updateDynamic("AudioGroupId")(AudioGroupId)
+    if (AudioOnlyContainer != null) __obj.updateDynamic("AudioOnlyContainer")(AudioOnlyContainer.asInstanceOf[js.Any])
     if (AudioRenditionSets != null) __obj.updateDynamic("AudioRenditionSets")(AudioRenditionSets)
     if (AudioTrackType != null) __obj.updateDynamic("AudioTrackType")(AudioTrackType.asInstanceOf[js.Any])
     if (IFrameOnlyManifest != null) __obj.updateDynamic("IFrameOnlyManifest")(IFrameOnlyManifest.asInstanceOf[js.Any])

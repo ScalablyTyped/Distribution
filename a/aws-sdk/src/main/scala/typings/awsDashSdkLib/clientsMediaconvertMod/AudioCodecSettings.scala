@@ -23,6 +23,10 @@ trait AudioCodecSettings extends js.Object {
     */
   var Codec: js.UndefOr[AudioCodec] = js.undefined
   /**
+    * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value EAC3_ATMOS.
+    */
+  var Eac3AtmosSettings: js.UndefOr[Eac3AtmosSettings] = js.undefined
+  /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value EAC3.
     */
   var Eac3Settings: js.UndefOr[Eac3Settings] = js.undefined
@@ -43,6 +47,7 @@ object AudioCodecSettings {
     Ac3Settings: Ac3Settings = null,
     AiffSettings: AiffSettings = null,
     Codec: AudioCodec = null,
+    Eac3AtmosSettings: Eac3AtmosSettings = null,
     Eac3Settings: Eac3Settings = null,
     Mp2Settings: Mp2Settings = null,
     WavSettings: WavSettings = null
@@ -52,6 +57,7 @@ object AudioCodecSettings {
     if (Ac3Settings != null) __obj.updateDynamic("Ac3Settings")(Ac3Settings)
     if (AiffSettings != null) __obj.updateDynamic("AiffSettings")(AiffSettings)
     if (Codec != null) __obj.updateDynamic("Codec")(Codec.asInstanceOf[js.Any])
+    if (Eac3AtmosSettings != null) __obj.updateDynamic("Eac3AtmosSettings")(Eac3AtmosSettings)
     if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings)
     if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings)
     if (WavSettings != null) __obj.updateDynamic("WavSettings")(WavSettings)

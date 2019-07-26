@@ -14,7 +14,7 @@ trait IonHeader
     atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
   ] = js.undefined
   /**
-    * If `true`, the header will be translucent. Only applies to `ios` mode. Note: In order to scroll content behind the header, the `fullscreen` attribute needs to be set on the content.
+    * If `true`, the header will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).  Note: In order to scroll content behind the header, the `fullscreen` attribute needs to be set on the content.
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

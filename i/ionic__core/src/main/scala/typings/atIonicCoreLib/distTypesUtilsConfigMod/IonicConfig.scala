@@ -47,6 +47,10 @@ trait IonicConfig extends js.Object {
     */
   var backButtonText: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * EXPERIMENTAL: Adds a page shadow to transitioning pages on iOS. Disabled by default.
+    */
+  var experimentalTransitionShadow: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Wherever ionic will respond to hardware go back buttons in an Android device.
     * Defaults to `true` when ionic runs in a mobile device.
     */
@@ -206,6 +210,7 @@ object IonicConfig {
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     backButtonIcon: java.lang.String = null,
     backButtonText: java.lang.String = null,
+    experimentalTransitionShadow: js.UndefOr[scala.Boolean] = js.undefined,
     hardwareBackButton: js.UndefOr[scala.Boolean] = js.undefined,
     hideCaretOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
     infiniteLoadingSpinner: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any = null,
@@ -249,6 +254,7 @@ object IonicConfig {
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (backButtonIcon != null) __obj.updateDynamic("backButtonIcon")(backButtonIcon)
     if (backButtonText != null) __obj.updateDynamic("backButtonText")(backButtonText)
+    if (!js.isUndefined(experimentalTransitionShadow)) __obj.updateDynamic("experimentalTransitionShadow")(experimentalTransitionShadow)
     if (!js.isUndefined(hardwareBackButton)) __obj.updateDynamic("hardwareBackButton")(hardwareBackButton)
     if (!js.isUndefined(hideCaretOnScroll)) __obj.updateDynamic("hideCaretOnScroll")(hideCaretOnScroll)
     if (infiniteLoadingSpinner != null) __obj.updateDynamic("infiniteLoadingSpinner")(infiniteLoadingSpinner)

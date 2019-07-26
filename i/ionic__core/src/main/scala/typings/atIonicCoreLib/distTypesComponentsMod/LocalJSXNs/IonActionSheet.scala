@@ -88,7 +88,7 @@ trait IonActionSheet
     */
   var subHeader: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `true`, the action sheet will be translucent. Only applies when the mode is `"ios"` and the device supports backdrop-filter.
+    * If `true`, the action sheet will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

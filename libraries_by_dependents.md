@@ -3052,6 +3052,7 @@
 | 28 | [diffie-hellman](./d/diffie-hellman) | pure js diffie-hellman
 | 28 | [dom4](./d/dom4) | a fully tested and covered polyfill for new DOM Le
 | 28 | [eslint-visitor-keys](./e/eslint-visitor-keys) | Constants and utilities about visitor keys to trav
+| 28 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK
 | 28 | [get-urls](./g/get-urls) | Get all URLs in a string
 | 28 | [hasher](./h/hasher) | Hasher is a set of JavaScript functions to control
 | 28 | [hexo-log](./h/hexo-log) | Logger for Hexo
@@ -3216,6 +3217,7 @@
 | 24 | [feathersjs__socketio-clie](./f/feathersjs__socketio-client) | The client for Socket.io through feathers-socketio
 | 24 | [ffmpeg-static](./f/ffmpeg-static) | ffmpeg static binaries for Mac OSX and Linux and W
 | 24 | [find-java-home](./f/find-java-home) | Find JAVA_HOME on any system
+| 24 | [firebase__app-types](./f/firebase__app-types) | @firebase/app Types
 | 24 | [fixed-data-table-2](./f/fixed-data-table-2) | A React table component designed to allow presenti
 | 24 | [google-cloud__common](./g/google-cloud__common) | Common components for Cloud APIs Node.js Client Li
 | 24 | [graphql-date](./g/graphql-date) | GraphQL Date Type
@@ -3566,6 +3568,7 @@
 | 18 | [lodash_dot_isequalwith](./l/lodash_dot_isequalwith) | The lodash method _.isEqualWith exported as a modu
 | 18 | [oclazyload](./o/oclazyload) | Load modules on demand (lazy load) with angularJS
 | 18 | [palx](./p/palx) | Automatic UI Color Palette Generator
+| 18 | [parse-package-name](./p/parse-package-name) | Parse package name with semver, path, scoped name 
 | 18 | [passport-steam](./p/passport-steam) | Steam (OpenID) authentication strategy for Passpor
 | 18 | [phenomnomnominal__tsquery](./p/phenomnomnominal__tsquery) | Query TypeScript ASTs with the esquery API
 | 18 | [pino-http](./p/pino-http) | High-speed HTTP logger for Node.js
@@ -4036,6 +4039,7 @@
 | 11 | [firebase__firestore](./f/firebase__firestore) | This is the 
 | 11 | [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas
 | 11 | [flagged-respawn](./f/flagged-respawn) | A tool for respawning node binaries when special f
+| 11 | [flatbush](./f/flatbush) | Fast static spatial index for rectangles
 | 11 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
 | 11 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token
 | 11 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
@@ -5996,6 +6000,7 @@
 | 1 | [react-material-ui-form-va](./r/react-material-ui-form-validator) | Simple validator for forms designed with material-
 | 1 | [react-motion-loop](./r/react-motion-loop) | Looping animation for react-motion Spring
 | 1 | [react-multi-ref](./r/react-multi-ref) | Utility for keeping references to multiple React e
+| 1 | [react-native-app-intro-sl](./r/react-native-app-intro-slider) | Simple and configurable app introduction slider fo
 | 1 | [react-native-custom-tabs](./r/react-native-custom-tabs) | Chrome Custom Tabs for React Native.
 | 1 | [react-native-dialog](./r/react-native-dialog) | A flexible react-native dialog
 | 1 | [react-native-dialogflow](./r/react-native-dialogflow) | A React-Native Bridge for the Google Dialogflow SD
@@ -6292,6 +6297,7 @@
 | 0 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator.
 | 0 | [fuzzyset](./f/fuzzyset) | A fuzzy string set for JavaScript
 | 0 | [gen-readlines](./g/gen-readlines) | Generator based line reader
+| 0 | [geoflatbush](./g/geoflatbush) | A geographic extension for 
 | 0 | [geojson2osm](./g/geojson2osm) | Convert geojson to osm
 | 0 | [get-certain](./g/get-certain) | Assert a Map has a given key and return the value 
 | 0 | [gettext_dot_js](./g/gettext_dot_js) | gettext.js is a lightweight (3k minified

@@ -33,6 +33,7 @@ trait Config extends js.Object {
   var unsentIdentifyKey: js.UndefOr[java.lang.String] = js.undefined
   var unsentKey: js.UndefOr[java.lang.String] = js.undefined
   var uploadBatchSize: js.UndefOr[scala.Double] = js.undefined
+  var useNativeDeviceInfo: js.UndefOr[scala.Boolean] = js.undefined
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -64,6 +65,7 @@ object Config {
     unsentIdentifyKey: java.lang.String = null,
     unsentKey: java.lang.String = null,
     uploadBatchSize: scala.Int | scala.Double = null,
+    useNativeDeviceInfo: js.UndefOr[scala.Boolean] = js.undefined,
     userId: java.lang.String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
@@ -92,6 +94,7 @@ object Config {
     if (unsentIdentifyKey != null) __obj.updateDynamic("unsentIdentifyKey")(unsentIdentifyKey)
     if (unsentKey != null) __obj.updateDynamic("unsentKey")(unsentKey)
     if (uploadBatchSize != null) __obj.updateDynamic("uploadBatchSize")(uploadBatchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeDeviceInfo)) __obj.updateDynamic("useNativeDeviceInfo")(useNativeDeviceInfo)
     if (userId != null) __obj.updateDynamic("userId")(userId)
     __obj.asInstanceOf[Config]
   }

@@ -39,6 +39,12 @@ package object clientsEcrMod {
   type ImageTag = java.lang.String
   type ImageTagList = js.Array[ImageTag]
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MUTABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.IMMUTABLE
+    - java.lang.String
+  */
+  type ImageTagMutability = _ImageTagMutability | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE
     - awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE
     - java.lang.String

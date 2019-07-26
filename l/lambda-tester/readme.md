@@ -1,7 +1,7 @@
 
 # Scala.js typings for lambda-tester
 
-Typings are for version 3.5
+Typings are for version 3.6
 
 ## Library description:
 Unit/Integration tests for AWS Lambda handlers
@@ -35,12 +35,15 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for lambda-tester 3.5
+// Type definitions for lambda-tester 3.6
 // Project: https://github.com/vandium-io/lambda-tester#readme
 // Definitions by: Ivan Kerin <https://github.com/ivank>
 //                 Hajo Aho-Mantila <https://github.com/HajoAhoMantila>
+//                 Suntharesan Mohan <https://github.com/msuntharesan>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.1
+/* tslint:disable:no-unnecessary-generics */
+
 
 ```
 

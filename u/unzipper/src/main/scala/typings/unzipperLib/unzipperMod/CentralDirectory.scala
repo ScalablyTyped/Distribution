@@ -15,6 +15,7 @@ trait CentralDirectory extends js.Object {
   var offsetToStartOfCentralDirectory: scala.Double
   var signature: scala.Double
   var sizeOfCentralDirectory: scala.Double
+  def extract(opts: ParseOptions): ParseStream
 }
 
 object CentralDirectory {
@@ -23,6 +24,7 @@ object CentralDirectory {
     commentLength: scala.Double,
     diskNumber: scala.Double,
     diskStart: scala.Double,
+    extract: ParseOptions => ParseStream,
     files: js.Array[File],
     numberOfRecords: scala.Double,
     numberOfRecordsOnDisk: scala.Double,
@@ -30,7 +32,7 @@ object CentralDirectory {
     signature: scala.Double,
     sizeOfCentralDirectory: scala.Double
   ): CentralDirectory = {
-    val __obj = js.Dynamic.literal(commentLength = commentLength, diskNumber = diskNumber, diskStart = diskStart, files = files, numberOfRecords = numberOfRecords, numberOfRecordsOnDisk = numberOfRecordsOnDisk, offsetToStartOfCentralDirectory = offsetToStartOfCentralDirectory, signature = signature, sizeOfCentralDirectory = sizeOfCentralDirectory)
+    val __obj = js.Dynamic.literal(commentLength = commentLength, diskNumber = diskNumber, diskStart = diskStart, extract = js.Any.fromFunction1(extract), files = files, numberOfRecords = numberOfRecords, numberOfRecordsOnDisk = numberOfRecordsOnDisk, offsetToStartOfCentralDirectory = offsetToStartOfCentralDirectory, signature = signature, sizeOfCentralDirectory = sizeOfCentralDirectory)
   
     __obj.asInstanceOf[CentralDirectory]
   }

@@ -76,6 +76,8 @@ trait SchemaTypeOpts[T]
   ] = js.undefined
   /** String only - Sets a minimum length validator. */
   var minlength: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any] = js.undefined
+  /** Map only - Specifies the type of the map's attributes */
+  var of: js.UndefOr[js.Any] = js.undefined
   /**
     * Adds a required validator to this SchemaType. The validator gets added
     * to the front of this SchemaType's validators array using unshift().
@@ -139,6 +141,7 @@ object SchemaTypeOpts {
     maxlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
     min: scala.Double | (js.Tuple2[stdLib.Date | scala.Double, java.lang.String]) | stdLib.Date | js.Any = null,
     minlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
+    of: js.Any = null,
     required: mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean | java.lang.String, java.lang.String]) | java.lang.String | js.Any = null,
     select: scala.Boolean | js.Any = null,
     set: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]]) => T | _ = null,
@@ -170,6 +173,7 @@ object SchemaTypeOpts {
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (of != null) __obj.updateDynamic("of")(of)
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))

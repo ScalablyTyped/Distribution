@@ -90,7 +90,7 @@ trait IonLoading
     (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any) | scala.Null
   ] = js.undefined
   /**
-    * If `true`, the loading indicator will be translucent.
+    * If `true`, the loading indicator will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

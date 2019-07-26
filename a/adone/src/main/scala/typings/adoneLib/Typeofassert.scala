@@ -10,6 +10,8 @@ trait Typeofassert extends js.Object {
   var AssertionError: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.assertNs.AssertionError] = js.native
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
+  def deepStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
+  def deepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit]): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit]): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
@@ -30,8 +32,8 @@ trait Typeofassert extends js.Object {
   def fail(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def fail(actual: js.Any, expected: js.Any, message: java.lang.String, operator: java.lang.String): scala.Unit = js.native
   def ifError(value: js.Any): scala.Unit = js.native
-  def notDeepEqual(acutal: js.Any, expected: js.Any): scala.Unit = js.native
-  def notDeepEqual(acutal: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
+  def notDeepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
+  def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def notStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native

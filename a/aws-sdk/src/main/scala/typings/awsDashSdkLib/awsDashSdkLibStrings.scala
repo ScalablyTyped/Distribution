@@ -2192,6 +2192,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsGameliftMod._BackfillMode
        with awsDashSdkLib.clientsFsxMod._BackupType
        with awsDashSdkLib.clientsMediaconvertMod._FontScript
+       with awsDashSdkLib.clientsMediaconvertMod._HlsAudioOnlyContainer
        with awsDashSdkLib.clientsDatasyncMod._NfsVersion
        with awsDashSdkLib.clientsSmsMod._ReplicationRunType
   
@@ -4393,6 +4394,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._AacCodingMode
   
   @js.native
+  sealed trait CODING_MODE_9_1_6 extends js.Object
+  
+  @js.native
   sealed trait COGNITO_DEFAULT
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._EmailSendingAccountType
   
@@ -6388,6 +6392,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGuarddutyMod._DetectorStatus
        with awsDashSdkLib.clientsClouddirectoryMod._DirectoryState
        with awsDashSdkLib.clientsMediaconvertMod._DropFrameTimecode
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDialogueIntelligence
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosSurroundExMode
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DcFilter
        with awsDashSdkLib.clientsMedialiveMod._Eac3DcFilter
        with awsDashSdkLib.clientsMediaconvertMod._Eac3LfeFilter
@@ -6805,7 +6811,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DPL2
-    extends awsDashSdkLib.clientsMediaconvertMod._Eac3StereoDownmix
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosStereoDownmix
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3StereoDownmix
        with awsDashSdkLib.clientsMedialiveMod._Eac3StereoDownmix
   
   @js.native
@@ -6884,6 +6891,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicecatalogMod._EvaluationType
        with awsDashSdkLib.clientsClouddirectoryMod._FacetStyle
        with awsDashSdkLib.clientsMedialiveMod._H264SubGopLength
+       with awsDashSdkLib.clientsMedialiveMod._InputSourceType
   
   @js.native
   sealed trait DZ
@@ -7283,6 +7291,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._AudioCodec
   
   @js.native
+  sealed trait EAC3_ATMOS
+    extends awsDashSdkLib.clientsMediaconvertMod._AudioCodec
+  
+  @js.native
   sealed trait EAP_TLS extends js.Object
   
   @js.native
@@ -7486,6 +7498,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._CaptionDestinationType
        with awsDashSdkLib.clientsMediaconvertMod._CaptionSourceType
        with awsDashSdkLib.clientsMediaconvertMod._InputTimecodeSource
+       with awsDashSdkLib.clientsMedialiveMod._InputTimecodeSource
        with awsDashSdkLib.clientsMedialiveMod._TimecodeConfigSource
        with awsDashSdkLib.clientsMediaconvertMod._TimecodeSource
   
@@ -7541,6 +7554,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGuarddutyMod._DetectorStatus
        with awsDashSdkLib.clientsClouddirectoryMod._DirectoryState
        with awsDashSdkLib.clientsMediaconvertMod._DropFrameTimecode
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDialogueIntelligence
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosSurroundExMode
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DcFilter
        with awsDashSdkLib.clientsMedialiveMod._Eac3DcFilter
        with awsDashSdkLib.clientsMediaconvertMod._Eac3LfeFilter
@@ -7881,6 +7896,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._MovCslgAtom
        with awsDashSdkLib.clientsMediaconvertMod._Mp4CslgAtom
        with awsDashSdkLib.clientsMediaconvertMod._Mp4FreeSpaceBox
+  
+  @js.native
+  sealed trait EXCLUDE_LAST_FRAME
+    extends awsDashSdkLib.clientsMedialiveMod._LastFrameClippingBehavior
   
   @js.native
   sealed trait EXCLUSIVE
@@ -8557,7 +8576,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait FILM_LIGHT
-    extends awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
+       with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionLine
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionRf
@@ -8566,6 +8587,8 @@ object awsDashSdkLibStrings {
   sealed trait FILM_STANDARD
     extends awsDashSdkLib.clientsMedialiveMod._Ac3DrcProfile
        with awsDashSdkLib.clientsMediaconvertMod._Ac3DynamicRangeCompressionProfile
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionLine
@@ -10463,6 +10486,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDaxMod._ChangeType
   
   @js.native
+  sealed trait IMMUTABLE
+    extends awsDashSdkLib.clientsEcrMod._ImageTagMutability
+  
+  @js.native
   sealed trait IMPAIRED
     extends awsDashSdkLib.clientsEc2Mod._ElasticGpuStatus
        with awsDashSdkLib.clientsWorkspacesMod._WorkspaceState
@@ -10584,6 +10611,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._Mp4FreeSpaceBox
        with awsDashSdkLib.clientsDynamodbMod._ProjectionType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
+  
+  @js.native
+  sealed trait INCLUDE_LAST_FRAME
+    extends awsDashSdkLib.clientsMedialiveMod._LastFrameClippingBehavior
   
   @js.native
   sealed trait INCLUSIVE
@@ -11208,10 +11239,22 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ITU_BS_1770_1
     extends awsDashSdkLib.clientsMediaconvertMod._AudioNormalizationAlgorithm
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosMeteringMode
   
   @js.native
   sealed trait ITU_BS_1770_2
     extends awsDashSdkLib.clientsMediaconvertMod._AudioNormalizationAlgorithm
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosMeteringMode
+  
+  @js.native
+  sealed trait ITU_BS_1770_3
+    extends awsDashSdkLib.clientsMediaconvertMod._AudioNormalizationAlgorithm
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosMeteringMode
+  
+  @js.native
+  sealed trait ITU_BS_1770_4
+    extends awsDashSdkLib.clientsMediaconvertMod._AudioNormalizationAlgorithm
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosMeteringMode
   
   @js.native
   sealed trait IT_PIN
@@ -12188,6 +12231,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCostexplorerMod._Dimension
   
   @js.native
+  sealed trait LEQ_A
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosMeteringMode
+  
+  @js.native
   sealed trait LESS_THAN
     extends awsDashSdkLib.clientsSsmMod._AssociationFilterOperatorType
        with awsDashSdkLib.clientsBudgetsMod._ComparisonOperator
@@ -12801,6 +12848,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait M2TS
     extends awsDashSdkLib.clientsMediaconvertMod._ContainerType
+       with awsDashSdkLib.clientsMediaconvertMod._HlsAudioOnlyContainer
   
   @js.native
   sealed trait M3U8
@@ -13477,14 +13525,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MUSIC_LIGHT
-    extends awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
+       with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionLine
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionRf
   
   @js.native
   sealed trait MUSIC_STANDARD
-    extends awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
+       with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionLine
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionRf
@@ -13492,6 +13544,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MUST_EXIST
     extends awsDashSdkLib.clientsGlueMod._ExistCondition
+  
+  @js.native
+  sealed trait MUTABLE
+    extends awsDashSdkLib.clientsEcrMod._ImageTagMutability
   
   @js.native
   sealed trait MUTEX
@@ -14060,6 +14116,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._DvbSubDestinationShadowColor
        with awsDashSdkLib.clientsMediaconvertMod._DvbSubtitleBackgroundColor
        with awsDashSdkLib.clientsMediaconvertMod._DvbSubtitleShadowColor
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3AttenuationControl
        with awsDashSdkLib.clientsMedialiveMod._Eac3AttenuationControl
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
@@ -14252,7 +14310,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NOT_INDICATED
-    extends awsDashSdkLib.clientsMediaconvertMod._Eac3StereoDownmix
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosStereoDownmix
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosSurroundExMode
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3StereoDownmix
        with awsDashSdkLib.clientsMedialiveMod._Eac3StereoDownmix
        with awsDashSdkLib.clientsMediaconvertMod._Eac3SurroundExMode
        with awsDashSdkLib.clientsMedialiveMod._Eac3SurroundExMode
@@ -18858,7 +18918,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SPEECH
-    extends awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionLine
+       with awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosDynamicRangeCompressionRf
+       with awsDashSdkLib.clientsMedialiveMod._Eac3DrcLine
        with awsDashSdkLib.clientsMedialiveMod._Eac3DrcRf
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionLine
        with awsDashSdkLib.clientsMediaconvertMod._Eac3DynamicRangeCompressionRf
@@ -19104,6 +19166,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsClouddirectoryMod._FacetStyle
        with awsDashSdkLib.clientsMediaconvertMod._H264DynamicSubGop
        with awsDashSdkLib.clientsMediaconvertMod._H265DynamicSubGop
+       with awsDashSdkLib.clientsMedialiveMod._InputSourceType
        with awsDashSdkLib.clientsMediaconvertMod._Mpeg2DynamicSubGop
   
   @js.native
@@ -19144,6 +19207,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait STEP_SUCCEEDED
     extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait STEREO
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosStereoDownmix
   
   @js.native
   sealed trait STIX
@@ -19418,6 +19485,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SURPRISED
     extends awsDashSdkLib.clientsRekognitionMod._EmotionName
+  
+  @js.native
+  sealed trait SURROUND
+    extends awsDashSdkLib.clientsMediaconvertMod._Eac3AtmosStereoDownmix
   
   @js.native
   sealed trait SUSE
@@ -22793,6 +22864,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ZEROBASED
     extends awsDashSdkLib.clientsMediaconvertMod._InputTimecodeSource
+       with awsDashSdkLib.clientsMedialiveMod._InputTimecodeSource
        with awsDashSdkLib.clientsMedialiveMod._TimecodeConfigSource
        with awsDashSdkLib.clientsMediaconvertMod._TimecodeSource
   
@@ -31228,6 +31300,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CODING_MODE_5_1: CODING_MODE_5_1 = "CODING_MODE_5_1".asInstanceOf[CODING_MODE_5_1]
   @scala.inline
+  def CODING_MODE_9_1_6: CODING_MODE_9_1_6 = "CODING_MODE_9_1_6".asInstanceOf[CODING_MODE_9_1_6]
+  @scala.inline
   def COGNITO_DEFAULT: COGNITO_DEFAULT = "COGNITO_DEFAULT".asInstanceOf[COGNITO_DEFAULT]
   @scala.inline
   def COGNITO_IDENTITY_POOL: COGNITO_IDENTITY_POOL = "COGNITO_IDENTITY_POOL".asInstanceOf[COGNITO_IDENTITY_POOL]
@@ -32346,6 +32420,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def EAC3: EAC3 = "EAC3".asInstanceOf[EAC3]
   @scala.inline
+  def EAC3_ATMOS: EAC3_ATMOS = "EAC3_ATMOS".asInstanceOf[EAC3_ATMOS]
+  @scala.inline
   def EAP_TLS: EAP_TLS = "EAP_TLS".asInstanceOf[EAP_TLS]
   @scala.inline
   def EARLIEST: EARLIEST = "EARLIEST".asInstanceOf[EARLIEST]
@@ -32545,6 +32621,8 @@ object awsDashSdkLibStrings {
   def EXCEEDS_MAX_FACES: EXCEEDS_MAX_FACES = "EXCEEDS_MAX_FACES".asInstanceOf[EXCEEDS_MAX_FACES]
   @scala.inline
   def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
+  @scala.inline
+  def EXCLUDE_LAST_FRAME: EXCLUDE_LAST_FRAME = "EXCLUDE_LAST_FRAME".asInstanceOf[EXCLUDE_LAST_FRAME]
   @scala.inline
   def EXCLUSIVE: EXCLUSIVE = "EXCLUSIVE".asInstanceOf[EXCLUSIVE]
   @scala.inline
@@ -33590,6 +33668,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def IMMEDIATE: IMMEDIATE = "IMMEDIATE".asInstanceOf[IMMEDIATE]
   @scala.inline
+  def IMMUTABLE: IMMUTABLE = "IMMUTABLE".asInstanceOf[IMMUTABLE]
+  @scala.inline
   def IMPAIRED: IMPAIRED = "IMPAIRED".asInstanceOf[IMPAIRED]
   @scala.inline
   def IMPERIAL: IMPERIAL = "IMPERIAL".asInstanceOf[IMPERIAL]
@@ -33627,6 +33707,8 @@ object awsDashSdkLibStrings {
   def INBOUND: INBOUND = "INBOUND".asInstanceOf[INBOUND]
   @scala.inline
   def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
+  @scala.inline
+  def INCLUDE_LAST_FRAME: INCLUDE_LAST_FRAME = "INCLUDE_LAST_FRAME".asInstanceOf[INCLUDE_LAST_FRAME]
   @scala.inline
   def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
   @scala.inline
@@ -33873,6 +33955,10 @@ object awsDashSdkLibStrings {
   def ITU_BS_1770_1: ITU_BS_1770_1 = "ITU_BS_1770_1".asInstanceOf[ITU_BS_1770_1]
   @scala.inline
   def ITU_BS_1770_2: ITU_BS_1770_2 = "ITU_BS_1770_2".asInstanceOf[ITU_BS_1770_2]
+  @scala.inline
+  def ITU_BS_1770_3: ITU_BS_1770_3 = "ITU_BS_1770_3".asInstanceOf[ITU_BS_1770_3]
+  @scala.inline
+  def ITU_BS_1770_4: ITU_BS_1770_4 = "ITU_BS_1770_4".asInstanceOf[ITU_BS_1770_4]
   @scala.inline
   def IT_PIN: IT_PIN = "IT_PIN".asInstanceOf[IT_PIN]
   @scala.inline
@@ -34299,6 +34385,8 @@ object awsDashSdkLibStrings {
   def LEFT_HAND: LEFT_HAND = "LEFT_HAND".asInstanceOf[LEFT_HAND]
   @scala.inline
   def LEGAL_ENTITY_NAME: LEGAL_ENTITY_NAME = "LEGAL_ENTITY_NAME".asInstanceOf[LEGAL_ENTITY_NAME]
+  @scala.inline
+  def LEQ_A: LEQ_A = "LEQ_A".asInstanceOf[LEQ_A]
   @scala.inline
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
   @scala.inline
@@ -34863,6 +34951,8 @@ object awsDashSdkLibStrings {
   def MUSIC_STANDARD: MUSIC_STANDARD = "MUSIC_STANDARD".asInstanceOf[MUSIC_STANDARD]
   @scala.inline
   def MUST_EXIST: MUST_EXIST = "MUST_EXIST".asInstanceOf[MUST_EXIST]
+  @scala.inline
+  def MUTABLE: MUTABLE = "MUTABLE".asInstanceOf[MUTABLE]
   @scala.inline
   def MUTEX: MUTEX = "MUTEX".asInstanceOf[MUTEX]
   @scala.inline
@@ -37250,6 +37340,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def STEP_SUCCEEDED: STEP_SUCCEEDED = "STEP_SUCCEEDED".asInstanceOf[STEP_SUCCEEDED]
   @scala.inline
+  def STEREO: STEREO = "STEREO".asInstanceOf[STEREO]
+  @scala.inline
   def STIX: STIX = "STIX".asInstanceOf[STIX]
   @scala.inline
   def STL: STL = "STL".asInstanceOf[STL]
@@ -37341,6 +37433,8 @@ object awsDashSdkLibStrings {
   def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
   @scala.inline
   def SURPRISED: SURPRISED = "SURPRISED".asInstanceOf[SURPRISED]
+  @scala.inline
+  def SURROUND: SURROUND = "SURROUND".asInstanceOf[SURROUND]
   @scala.inline
   def SUSE: SUSE = "SUSE".asInstanceOf[SUSE]
   @scala.inline

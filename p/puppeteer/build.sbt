@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "puppeteer"
-version := "1.12-dt-20190503Z-c4f705"
+version := "1.19-dt-20190725Z-5e8e65"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

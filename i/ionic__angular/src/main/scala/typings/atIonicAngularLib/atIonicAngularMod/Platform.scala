@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Platform protected ()
   extends atIonicAngularLib.distMod.Platform {
-  def this(doc: js.Any) = this()
+  def this(doc: js.Any, zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
 }
 

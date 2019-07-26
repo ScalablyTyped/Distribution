@@ -34,6 +34,7 @@ trait Stripe extends js.Object {
   var invoices: stripeLib.stripeMod.resourcesNs.Invoices = js.native
   var orders: stripeLib.stripeMod.resourcesNs.Orders = js.native
   var paymentIntents: stripeLib.stripeMod.resourcesNs.PaymentIntents = js.native
+  var paymentMethods: stripeLib.stripeMod.resourcesNs.PaymentMethods = js.native
   var payouts: stripeLib.stripeMod.resourcesNs.Payouts = js.native
   var plans: stripeLib.stripeMod.resourcesNs.Plans = js.native
   var products: stripeLib.stripeMod.resourcesNs.Products = js.native

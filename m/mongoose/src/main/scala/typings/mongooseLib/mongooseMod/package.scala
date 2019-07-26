@@ -11,6 +11,9 @@ package object mongooseMod {
   type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends std.Array<infer U>? std.Array<object> : T[P] extends object? object : T[P]}
     */ mongooseLib.mongooseLibStrings.DeepPartial with js.Any
+  // Because the mongoose Map type shares a name with the default global interface,
+  // this type alias has to exist outside of the namespace
+  type GlobalMap[K, V] = stdLib.Map[K, V]
   type HookAsyncCallback[T] = js.ThisFunction3[
     /* this */ T, 
     /* next */ HookNextFunction, 

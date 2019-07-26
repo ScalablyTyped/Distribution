@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object intlDashMessageformatMod {
-  type PART_TYPE = intlDashMessageformatLib.libCoreMod.PART_TYPE
+  type PART_TYPE = intlDashMessageformatLib.libFormattersMod.PART_TYPE
 }

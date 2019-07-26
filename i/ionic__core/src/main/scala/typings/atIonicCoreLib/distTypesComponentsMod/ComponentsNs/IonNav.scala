@@ -38,6 +38,7 @@ trait IonNav extends js.Object {
   var swipeGesture: js.UndefOr[scala.Boolean] = js.native
   /**
     * Returns `true` if the current view can go back.
+    * @param view The view to check.
     */
   def canGoBack(): js.Promise[scala.Boolean] = js.native
   def canGoBack(
@@ -53,6 +54,7 @@ trait IonNav extends js.Object {
   ] = js.native
   /**
     * Get the view at the specified index.
+    * @param index The index of the view.
     */
   def getByIndex(index: scala.Double): js.Promise[
     js.UndefOr[
@@ -61,6 +63,7 @@ trait IonNav extends js.Object {
   ] = js.native
   /**
     * Get the previous view.
+    * @param view The view to get.
     */
   def getPrevious(): js.Promise[
     js.UndefOr[
@@ -81,6 +84,11 @@ trait IonNav extends js.Object {
   ] = js.native
   /**
     * Inserts a component into the navigation stack at the specified index. This is useful to add a component at any point in the navigation stack.
+    * @param insertIndex The index to insert the component at in the stack.
+    * @param component The component to insert into the navigation stack.
+    * @param componentProps Any properties of the component.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](insertIndex: scala.Double, component: T): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -171,6 +179,10 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Inserts an array of components into the navigation stack at the specified index. The last component in the array will become instantiated as a view, and animate in to become the active view.
+    * @param insertIndex The index to insert the components at in the stack.
+    * @param insertComponents The components to insert into the navigation stack.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def insertPages(
     insertIndex: scala.Double,
@@ -211,6 +223,8 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Pop a component off of the navigation stack. Navigates back from the current component.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def pop(): js.Promise[scala.Boolean] = js.native
   def pop(
@@ -252,6 +266,9 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Pop to a specific index in the navigation stack.
+    * @param indexOrViewCtrl The index or view controller to pop to.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def popTo(indexOrViewCtrl: scala.Double): js.Promise[scala.Boolean] = js.native
   def popTo(
@@ -275,6 +292,8 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Navigate back to the root of the stack, no matter how far back that is.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def popToRoot(): js.Promise[scala.Boolean] = js.native
   def popToRoot(
@@ -294,6 +313,10 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Push a new component onto the current navigation stack. Pass any additional information along as an object. This additional information is accessible through NavParams.
+    * @param component The component to push onto the navigation stack.
+    * @param componentProps Any properties of the component.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -371,6 +394,10 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Removes a component from the navigation stack at the specified index.
+    * @param startIndex The number to begin removal at.
+    * @param removeCount The number of components to remove.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def removeIndex(startIndex: scala.Double): js.Promise[scala.Boolean] = js.native
   def removeIndex(startIndex: scala.Double, removeCount: scala.Double): js.Promise[scala.Boolean] = js.native
@@ -399,6 +426,9 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Set the views of the current navigation stack and navigate to the last view. By default animations are disabled, but they can be enabled by passing options to the navigation controller. Navigation parameters can also be passed to the individual pages in the array.
+    * @param views The list of views to set as the navigation stack.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def setPages(views: js.Array[_]): js.Promise[scala.Boolean] = js.native
   def setPages(
@@ -422,6 +452,10 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   /**
     * Set the root for the current navigation stack to a component.
+    * @param component The component to set as the root of the navigation stack.
+    * @param componentProps Any properties of the component.
+    * @param opts The navigation options.
+    * @param done The transition complete function.
     */
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](

@@ -15,7 +15,7 @@ trait H265Settings extends js.Object {
     */
   var AlternateTransferFunctionSei: js.UndefOr[H265AlternateTransferFunctionSei] = js.undefined
   /**
-    * Average bitrate in bits/second. Required for VBR and CBR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
+    * Specify the average bitrate in bits per second. Required for VBR and CBR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
     */
   var Bitrate: js.UndefOr[__integerMin1000Max1466400000] = js.undefined
   /**

@@ -39,8 +39,14 @@ class Request ()
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def bulk(table: Table): js.Promise[scala.Double] = js.native
-  def bulk(table: Table, callback: js.Function2[/* err */ stdLib.Error, /* rowCount */ js.Any, scala.Unit]): scala.Unit = js.native
+  def bulk(table: Table): js.Promise[IBulkResult] = js.native
+  def bulk(table: Table, callback: js.Function2[/* err */ stdLib.Error, /* result */ IBulkResult, scala.Unit]): scala.Unit = js.native
+  def bulk(table: Table, options: IBulkOptions): js.Promise[IBulkResult] = js.native
+  def bulk(
+    table: Table,
+    options: IBulkOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ IBulkResult, scala.Unit]
+  ): scala.Unit = js.native
   def cancel(): scala.Unit = js.native
   def execute(procedure: java.lang.String): js.Promise[IProcedureResult[_]] = js.native
   def execute[Entity](

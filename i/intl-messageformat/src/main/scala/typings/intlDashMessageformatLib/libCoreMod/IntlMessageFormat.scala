@@ -14,14 +14,14 @@ class IntlMessageFormat protected () extends js.Object {
   def this(message: java.lang.String, locales: js.Array[java.lang.String]) = this()
   def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String) = this()
   def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String]) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
   val ast: js.Any = js.native
   val formats: js.Any = js.native
   val formatterCache: js.Any = js.native
@@ -29,14 +29,22 @@ class IntlMessageFormat protected () extends js.Object {
   val locale: js.Any = js.native
   val message: js.Any = js.native
   def format(): java.lang.String = js.native
-  def format(
+  def format(values: stdLib.Record[java.lang.String, intlDashMessageformatLib.libFormattersMod.PrimitiveType]): java.lang.String = js.native
+  def formatToParts(): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_intl-messageformat/lib/formatters.MessageFormatPart */ _
+  ] = js.native
+  def formatToParts(values: stdLib.Record[java.lang.String, _]): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_intl-messageformat/lib/formatters.MessageFormatPart */ _
+  ] = js.native
+  def formatXMLMessage(): js.Array[java.lang.String | js.Object] = js.native
+  def formatXMLMessage(
     values: stdLib.Record[
       java.lang.String, 
-      js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
+      js.UndefOr[
+        java.lang.String | scala.Double | scala.Boolean | js.Object | intlDashMessageformatLib.libFormattersMod.FormatXMLElementFn | scala.Null
+      ]
     ]
-  ): java.lang.String = js.native
-  def formatToParts(): js.Array[MessageFormatPart] = js.native
-  def formatToParts(values: stdLib.Record[java.lang.String, _]): js.Array[MessageFormatPart] = js.native
+  ): js.Array[java.lang.String | js.Object] = js.native
   def getAst(): js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement] = js.native
   def resolvedOptions(): intlDashMessageformatLib.Anon_Locale = js.native
 }

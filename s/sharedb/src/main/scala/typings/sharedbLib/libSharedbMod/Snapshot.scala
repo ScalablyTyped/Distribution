@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Snapshot extends js.Object {
-  var data: js.UndefOr[JSONObject] = js.undefined
+  var data: js.UndefOr[js.Any] = js.undefined
   var id: java.lang.String
   var m: SnapshotMeta | scala.Null
   var `type`: java.lang.String | scala.Null
@@ -18,7 +18,7 @@ object Snapshot {
   def apply(
     id: java.lang.String,
     v: scala.Double,
-    data: JSONObject = null,
+    data: js.Any = null,
     m: SnapshotMeta = null,
     `type`: java.lang.String = null
   ): Snapshot = {

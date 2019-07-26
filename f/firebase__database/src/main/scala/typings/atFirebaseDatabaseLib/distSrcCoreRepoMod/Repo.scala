@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/Repo", "Repo")
 @js.native
 class Repo protected () extends js.Object {
-  def this(repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any) = this()
+  def this(repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
   var __database: js.Any = js.native
   var abortTransactions_ : js.Any = js.native
-  var app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any = js.native
+  var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var dataUpdateCount: scala.Double = js.native
   val database: atFirebaseDatabaseLib.distSrcApiDatabaseMod.Database = js.native
   var eventQueue_ : js.Any = js.native

@@ -25,7 +25,7 @@ trait IonTabBar
     */
   var selectedTab: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `true`, the tab bar will be translucent.
+    * If `true`, the tab bar will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

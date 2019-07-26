@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait HlsGroupSettings extends js.Object {
   /**
-    * Choose one or more ad marker types to pass SCTE35 signals through to this group of Apple HLS outputs.
+    * Choose one or more ad marker types to decorate your Apple HLS manifest. This setting does not determine whether SCTE-35 markers appear in the outputs themselves.
     */
   var AdMarkers: js.UndefOr[__listOfHlsAdMarkers] = js.undefined
   /**

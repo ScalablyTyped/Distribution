@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__polyfill
 
-Typings are for version 0.3.16
+Typings are for version 0.3.17
 
 ## Library description:
 This is the a set of polyfills/shims used by the Firebase JS SDK. This package is completely standalone and can be loaded to standardize environments for use with the Firebase JS SDK.

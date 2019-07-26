@@ -1,7 +1,7 @@
 
 # Scala.js typings for puppeteer
 
-Typings are for version 1.12
+Typings are for version 1.19
 
 ## Library description:
 A high-level API to control headless Chrome over the DevTools Protocol
@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
  * TimeoutError is emitted whenever certain operations are terminated due to timeout,
  * e.g. page.waitForSelector(selector[, options]) or puppeteer.launch([options]).
  */
-// Type definitions for puppeteer 1.12
+// Type definitions for puppeteer 1.19
 // Project: https://github.com/GoogleChrome/puppeteer#readme
 // Definitions by: Marvin Hagemeister <https://github.com/marvinhagemeister>
 //                 Christopher Deutsch <https://github.com/cdeutsch>

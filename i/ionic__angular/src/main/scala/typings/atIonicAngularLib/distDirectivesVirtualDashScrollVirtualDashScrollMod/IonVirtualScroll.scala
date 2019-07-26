@@ -53,6 +53,12 @@ class IonVirtualScroll protected () extends js.Object {
   var footerFn: js.UndefOr[
     atIonicCoreLib.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.HeaderFn
   ] = js.native
+  /**
+    * An optional function that maps each item footer within their height.
+    */
+  var footerHeight: js.UndefOr[
+    atIonicCoreLib.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.FooterHeightFn
+  ] = js.native
   var ftrTmp: atIonicAngularLib.distDirectivesVirtualDashScrollVirtualDashFooterMod.VirtualFooter = js.native
   var getComponent: js.Any = js.native
   var hdrTmp: atIonicAngularLib.distDirectivesVirtualDashScrollVirtualDashHeaderMod.VirtualHeader = js.native
@@ -70,8 +76,14 @@ class IonVirtualScroll protected () extends js.Object {
     atIonicCoreLib.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.HeaderFn
   ] = js.native
   /**
+    * An optional function that maps each item header within their height.
+    */
+  var headerHeight: js.UndefOr[
+    atIonicCoreLib.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.HeaderHeightFn
+  ] = js.native
+  /**
     * An optional function that maps each item within their height.
-    * When this function is provides, heavy optimizations and fast path can be taked by
+    * When this function is provided, heavy optimizations and fast path can be taked by
     * `ion-virtual-scroll` leading to massive performance improvements.
     *
     * This function allows to skip all DOM reads, which can be Doing so leads

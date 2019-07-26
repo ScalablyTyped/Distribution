@@ -16,7 +16,7 @@ trait NavigationExtras extends js.Object {
     */
   var fragment: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Preserves the fragment for the next navigation
+    * When true, preserves the URL fragment for the next navigation
     *
     * ```
     * // Preserve fragment from /results#top to /view#top
@@ -25,13 +25,8 @@ trait NavigationExtras extends js.Object {
     */
   var preserveFragment: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * DEPRECATED: Use `queryParamsHandling` instead to preserve
+    * **DEPRECATED**: Use `queryParamsHandling: "preserve"` instead to preserve
     * query parameters for the next navigation.
-    *
-    * ```
-    * // Preserve query params from /results?page=1 to /view?page=1
-    * this.router.navigate(['/view'], { preserveQueryParams: true });
-    * ```
     *
     * @deprecated since v4
     */
@@ -46,7 +41,10 @@ trait NavigationExtras extends js.Object {
     */
   var queryParams: js.UndefOr[Params | scala.Null] = js.undefined
   /**
-    * Configuration strategy for how to handle query parameters for the next navigation.
+    * How to handle query parameters in the router link for the next navigation.
+    * One of:
+    * * `merge` : Merge new with current parameters.
+    * * `preserve` : Preserve current parameters.
     *
     * ```
     * // from /results?page=1 to /view?page=1&page=2
@@ -55,9 +53,10 @@ trait NavigationExtras extends js.Object {
     */
   var queryParamsHandling: js.UndefOr[QueryParamsHandling | scala.Null] = js.undefined
   /**
-    * Enables relative navigation from the current ActivatedRoute.
+    * Specifies a root URI to use for relative navigation.
     *
-    * Configuration:
+    * For example, consider the following route configuration where the parent route
+    * has two children.
     *
     * ```
     * [{
@@ -73,7 +72,8 @@ trait NavigationExtras extends js.Object {
     * }]
     * ```
     *
-    * Navigate to list route from child route:
+    * The following `go()` function navigates to the `list` route by
+    * interpreting the destination URI as relative to the activated `child`  route
     *
     * ```
     *  @Component({...})
@@ -88,7 +88,7 @@ trait NavigationExtras extends js.Object {
     */
   var relativeTo: js.UndefOr[ActivatedRoute | scala.Null] = js.undefined
   /**
-    * Navigates while replacing the current state in history.
+    * When true, navigates while replacing the current state in history.
     *
     * ```
     * // Navigate to /view
@@ -97,7 +97,7 @@ trait NavigationExtras extends js.Object {
     */
   var replaceUrl: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Navigates without pushing a new state into history.
+    * When true, navigates without pushing a new state into history.
     *
     * ```
     * // Navigate silently to /view
@@ -106,15 +106,17 @@ trait NavigationExtras extends js.Object {
     */
   var skipLocationChange: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * State passed to any navigation. This value will be accessible through the `extras` object
-    * returned from `router.getCurrentNavigation()` while a navigation is executing. Once a
-    * navigation completes, this value will be written to `history.state` when the `location.go`
-    * or `location.replaceState` method is called before activating of this route. Note that
-    * `history.state` will not pass an object equality test because the `navigationId` will be
-    * added to the state before being written.
+    * Developer-defined state that can be passed to any navigation.
+    * Access this value through the `Navigation.extras` object
+    * returned from `router.getCurrentNavigation()` while a navigation is executing.
     *
-    * While `history.state` can accept any type of value, because the router adds the `navigationId`
-    * on each navigation, the `state` must always be an object.
+    * After a navigation completes, the router writes an object containing this
+    * value together with a `navigationId` to `history.state`.
+    * The value is written when `location.go()` or `location.replaceState()`
+    * is called before activating this route.
+    *
+    * Note that `history.state` does not pass an object equality test because
+    * the router adds the `navigationId` on each navigation.
     */
   var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }

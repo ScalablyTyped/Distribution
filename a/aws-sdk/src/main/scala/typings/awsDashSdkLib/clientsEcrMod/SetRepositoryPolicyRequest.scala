@@ -11,7 +11,7 @@ trait SetRepositoryPolicyRequest extends js.Object {
     */
   var force: js.UndefOr[ForceFlag] = js.undefined
   /**
-    * The JSON repository policy text to apply to the repository.
+    * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR Repository Policy Examples in the Amazon Elastic Container Registry User Guide.
     */
   var policyText: RepositoryPolicyText
   /**

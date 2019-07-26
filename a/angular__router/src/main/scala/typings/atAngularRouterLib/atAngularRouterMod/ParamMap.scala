@@ -6,21 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ParamMap extends js.Object {
-  /** Name of the parameters */
+  /** Names of the parameters in the map. */
   val keys: js.Array[java.lang.String]
   /**
-    * Return a single value for the given parameter name:
-    * - the value when the parameter has a single value,
-    * - the first value if the parameter has multiple values,
-    * - `null` when there is no such parameter.
+    * Retrieves a single value for a parameter.
+    * @param name The parameter name.
+    * @return The parameter's single value,
+    * or the first value if the parameter has multiple values,
+    * or `null` when there is no such parameter.
     */
   def get(name: java.lang.String): java.lang.String | scala.Null
   /**
-    * Return an array of values for the given parameter name.
+    * Retrieves multiple values for a parameter.
+    * @param name The parameter name.
+    * @return An array containing one or more values,
+    * or an empty array if there is no such parameter.
     *
-    * If there is no such parameter, an empty array is returned.
     */
   def getAll(name: java.lang.String): js.Array[java.lang.String]
+  /**
+    * Reports whether the map contains a given parameter.
+    * @param name The parameter name.
+    * @returns True if the map contains the given parameter, false otherwise.
+    */
   def has(name: java.lang.String): scala.Boolean
 }
 

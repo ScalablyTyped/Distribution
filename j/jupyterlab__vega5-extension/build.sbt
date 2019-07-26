@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__vega5-extension"
-version := "1.0.0-3e5c49"
+version := "1.0.1-3e5c49"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/providers/platform", "Platform")
 @js.native
 class Platform protected () extends js.Object {
-  def this(doc: js.Any) = this()
+  def this(doc: js.Any, zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var _readyPromise: js.Any = js.native
   /**
     * @hidden

@@ -11,9 +11,9 @@ trait QueryContext extends BaseContext {
   var db: sharedbLib.sharedbMod.DB | scala.Null
   var fields: js.UndefOr[sharedbLib.sharedbMod.ProjectionFields] = js.undefined
   var index: java.lang.String
-  var options: sharedbLib.libSharedbMod.JSONObject
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var projection: js.UndefOr[sharedbLib.sharedbMod.Projection] = js.undefined
-  var query: sharedbLib.libSharedbMod.JSONObject
+  var query: js.Any
   var snapshotProjection: sharedbLib.sharedbMod.Projection | scala.Null
 }
 
@@ -26,16 +26,17 @@ object QueryContext {
     channel: java.lang.String,
     collection: java.lang.String,
     index: java.lang.String,
-    options: sharedbLib.libSharedbMod.JSONObject,
-    query: sharedbLib.libSharedbMod.JSONObject,
+    query: js.Any,
     db: sharedbLib.sharedbMod.DB = null,
     fields: sharedbLib.sharedbMod.ProjectionFields = null,
+    options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     projection: sharedbLib.sharedbMod.Projection = null,
     snapshotProjection: sharedbLib.sharedbMod.Projection = null
   ): QueryContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, channel = channel, collection = collection, index = index, options = options, query = query)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, channel = channel, collection = collection, index = index, query = query)
     if (db != null) __obj.updateDynamic("db")(db)
     if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (options != null) __obj.updateDynamic("options")(options)
     if (projection != null) __obj.updateDynamic("projection")(projection)
     if (snapshotProjection != null) __obj.updateDynamic("snapshotProjection")(snapshotProjection)
     __obj.asInstanceOf[QueryContext]

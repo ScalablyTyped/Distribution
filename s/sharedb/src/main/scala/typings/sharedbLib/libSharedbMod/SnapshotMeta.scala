@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SnapshotMeta
   extends // Users can use server middleware to add additional metadata to snapshots.
-/* key */ org.scalablytyped.runtime.StringDictionary[JSONValue] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ctime: scala.Double
   var mtime: scala.Double
 }
@@ -18,7 +18,7 @@ object SnapshotMeta {
     ctime: scala.Double,
     mtime: scala.Double,
     StringDictionary: // Users can use server middleware to add additional metadata to snapshots.
-  /* key */ org.scalablytyped.runtime.StringDictionary[JSONValue] = null
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): SnapshotMeta = {
     val __obj = js.Dynamic.literal(ctime = ctime, mtime = mtime)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

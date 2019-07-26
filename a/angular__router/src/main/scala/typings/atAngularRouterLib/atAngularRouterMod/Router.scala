@@ -61,7 +61,8 @@ class Router protected () extends js.Object {
   var processNavigations: js.Any = js.native
   var rawUrlTree: js.Any = js.native
   /**
-    * See {@link RouterModule} for more information.
+    * Enables a bug fix that corrects relative link resolution in components with empty paths.
+    * @see `RouterModule`
     */
   var relativeLinkResolution: atAngularRouterLib.atAngularRouterLibStrings.legacy | atAngularRouterLib.atAngularRouterLibStrings.corrected = js.native
   var removeEmptyProps: js.Any = js.native
@@ -70,7 +71,7 @@ class Router protected () extends js.Object {
   var rootComponentType: js.Any = js.native
   var rootContexts: js.Any = js.native
   /**
-    * The strategy for re-using routes.
+    * A strategy for re-using routes.
     */
   var routeReuseStrategy: RouteReuseStrategy = js.native
   /**
@@ -85,29 +86,27 @@ class Router protected () extends js.Object {
   /** The current URL. */
   val url: java.lang.String = js.native
   /**
-    * Extracts and merges URLs. Used for AngularJS to Angular migrations.
+    * A strategy for extracting and merging URLs.
+    * Used for AngularJS to Angular migrations.
     */
   var urlHandlingStrategy: UrlHandlingStrategy = js.native
   var urlSerializer: js.Any = js.native
   /**
-    * Defines when the router updates the browser URL. The default behavior is to update after
-    * successful navigation. However, some applications may prefer a mode where the URL gets
-    * updated at the beginning of navigation. The most common use case would be updating the
-    * URL early so if navigation fails, you can show an error message with the URL that failed.
-    * Available options are:
-    *
-    * - `'deferred'`, the default, updates the browser URL after navigation has finished.
-    * - `'eager'`, updates browser URL at the beginning of navigation.
+    * Determines when the router updates the browser URL.
+    * By default (`"deferred"`), udates the browser URL after navigation has finished.
+    * Set to `'eager'` to update the browser URL at the beginning of navigation.
+    * You can choose to update early so that, if navigation fails,
+    * you can show an error message with the URL that failed.
     */
   var urlUpdateStrategy: atAngularRouterLib.atAngularRouterLibStrings.deferred | atAngularRouterLib.atAngularRouterLibStrings.eager = js.native
   /**
     * Applies an array of commands to the current URL tree and creates a new URL tree.
     *
     * When given an activate route, applies the given commands starting from the route.
-    * When not given a route, applies the given command starting from the root.
+    * Otherwise, applies the given command starting from the root.
     *
     * @param commands An array of commands to apply.
-    * @param navigationExtras
+    * @param navigationExtras Options that control the navigation strategy.
     * @returns The new URL tree.
     *
     * @usageNotes
@@ -122,9 +121,8 @@ class Router protected () extends js.Object {
     * // you can collapse static segments like this (this works only with the first passed-in value):
     * router.createUrlTree(['/team/33/user', userId]);
     *
-    * // If the first segment can contain slashes, and you do not want the router to split it, you
-    * // can do the following:
-    *
+    * // If the first segment can contain slashes, and you do not want the router to split it,
+    * // you can do the following:
     * router.createUrlTree([{segmentPath: '/one/two'}]);
     *
     * // create /team/33/(user/11//right:chat)
@@ -163,8 +161,9 @@ class Router protected () extends js.Object {
   /** Returns whether the url is activated */
   def isActive(url: java.lang.String, exact: scala.Boolean): scala.Boolean = js.native
   /**
-    * Malformed uri error handler is invoked when `Router.parseUrl(url)` throws an
-    * error due to containing an invalid character. The most common case would be a `%` sign
+    * A handler for errors thrown by `Router.parseUrl(url)`
+    * when `url` contains an invalid character.
+    * The most common case is a `%` sign
     * that's not encoded and is not part of a percent encoded sequence.
     */
   def malformedUriErrorHandler(error: stdLib.URIError, urlSerializer: UrlSerializer, url: java.lang.String): UrlTree = js.native
@@ -178,8 +177,6 @@ class Router protected () extends js.Object {
     * - is rejected when an error happens.
     *
     * @usageNotes
-    *
-    * ### Example
     *
     * ```
     * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
@@ -213,8 +210,6 @@ class Router protected () extends js.Object {
     * to 'false' when navigation fails, or is rejected on error.
     *
     * @usageNotes
-    *
-    * ### Example
     *
     * ```
     * router.navigateByUrl("/team/33/user/11");

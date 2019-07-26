@@ -73,6 +73,8 @@ class HTMLIonRippleEffectElementCls () extends HTMLIonRippleEffectElement {
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.bounded | atIonicCoreLib.atIonicCoreLibStrings.unbounded = js.native
   /**
     * Adds the ripple effect to the parent element.
+    * @param x The horizontal coordinate of where the ripple should start.
+    * @param y The vertical coordinate of where the ripple should start.
     */
   /* CompleteClass */
   override def addRipple(x: scala.Double, y: scala.Double): js.Promise[js.Function0[scala.Unit]] = js.native

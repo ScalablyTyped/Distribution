@@ -43,6 +43,10 @@ trait StopChannelResponse extends js.Object {
     */
   var Name: js.UndefOr[__string] = js.undefined
   /**
+    * Runtime details for the pipelines of a running channel.
+    */
+  var PipelineDetails: js.UndefOr[__listOfPipelineDetail] = js.undefined
+  /**
     * The number of currently healthy pipelines.
     */
   var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
@@ -70,6 +74,7 @@ object StopChannelResponse {
     InputSpecification: InputSpecification = null,
     LogLevel: LogLevel = null,
     Name: __string = null,
+    PipelineDetails: __listOfPipelineDetail = null,
     PipelinesRunningCount: js.UndefOr[__integer] = js.undefined,
     RoleArn: __string = null,
     State: ChannelState = null,
@@ -86,6 +91,7 @@ object StopChannelResponse {
     if (InputSpecification != null) __obj.updateDynamic("InputSpecification")(InputSpecification)
     if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (PipelineDetails != null) __obj.updateDynamic("PipelineDetails")(PipelineDetails)
     if (!js.isUndefined(PipelinesRunningCount)) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ISourceUpdateOptions
   extends stripeLib.stripeMod.IDataOptionsWithMetadata {
   var mandate: js.UndefOr[stripeLib.Anon_AcceptanceAmount] = js.undefined
-  var owner: js.UndefOr[stripeLib.Anon_AddressEmailName] = js.undefined
+  var owner: js.UndefOr[stripeLib.Anon_AddressEmailNamePhoneIAddress] = js.undefined
 }
 
 object ISourceUpdateOptions {
@@ -18,7 +18,7 @@ object ISourceUpdateOptions {
     include: js.Array[java.lang.String] = null,
     mandate: stripeLib.Anon_AcceptanceAmount = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
-    owner: stripeLib.Anon_AddressEmailName = null
+    owner: stripeLib.Anon_AddressEmailNamePhoneIAddress = null
   ): ISourceUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand)

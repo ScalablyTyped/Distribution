@@ -32,6 +32,7 @@ trait IonItemSliding extends js.Object {
   def open_end(side: atIonicCoreLib.atIonicCoreLibStrings.end): js.Promise[scala.Unit] = js.native
   /**
     * Open the sliding item.
+    * @param side The side of the options to open. If a side is not provided, it will open the first set of options it finds within the item.
     */
   @JSName("open")
   def open_start(side: atIonicCoreLib.atIonicCoreLibStrings.start): js.Promise[scala.Unit] = js.native

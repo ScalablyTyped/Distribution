@@ -884,6 +884,7 @@
 | 0.7783908706261993 | [lodash_dot_words](./l/lodash_dot_words) | The lodash method _.words exported as a module.
 | 0.77820306733089 | [lodash_dot_flatmap](./l/lodash_dot_flatmap) | The lodash method _.flatMap exported as a module.
 | 0.7781907886797623 | [requireindex](./r/requireindex) | Write minimal node index.js files that require and
+| 0.77816957902754 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK
 | 0.7781148077501991 | [run-parallel](./r/run-parallel) | Run an array of functions in parallel
 | 0.7780230979225398 | [lodash_dot_differencewith](./l/lodash_dot_differencewith) | The lodash method _.differenceWith exported as a m
 | 0.7780086087438913 | [lodash_dot_isnull](./l/lodash_dot_isnull) | The modern build of lodash’s _.isNull as a module.
@@ -1030,6 +1031,7 @@
 | 0.7694098712205798 | [js-string-escape](./j/js-string-escape) | Escape strings for use as JavaScript string litera
 | 0.769399907205129 | [lodash_dot_pullall](./l/lodash_dot_pullall) | The lodash method _.pullAll exported as a module.
 | 0.7693078283013538 | [koa-convert](./k/koa-convert) | convert koa legacy generator-based middleware to p
+| 0.769209225750167 | [firebase__app-types](./f/firebase__app-types) | @firebase/app Types
 | 0.7691955274447566 | [clean-stack](./c/clean-stack) | Clean up error stack traces
 | 0.7691871222034101 | [is-alphanumerical](./i/is-alphanumerical) | Check if a character is alphanumerical
 | 0.7691668989056109 | [cacheable-request](./c/cacheable-request) | Wrap native HTTP requests with RFC compliant cache
@@ -2159,6 +2161,7 @@
 | 0.707624790571495 | [restify-cors-middleware](./r/restify-cors-middleware) | CORS middleware with full W3C spec support
 | 0.7074486986650363 | [maquette](./m/maquette) | Minimalistic Virtual DOM implementation with suppo
 | 0.7074265091675883 | [spotify-web-api-js](./s/spotify-web-api-js) | A client-side JS wrapper for the Spotify Web API
+| 0.707371412400456 | [flatbush](./f/flatbush) | Fast static spatial index for rectangles
 | 0.7073629081207043 | [psl](./p/psl) | Domain name parser based on the Public Suffix List
 | 0.7071825467582703 | [mongoose-deep-populate](./m/mongoose-deep-populate) | Mongoose plugin to enable deep population of neste
 | 0.7070785596578473 | [through2-map](./t/through2-map) | A through2 to create an Array.prototype.map analog
@@ -4267,6 +4270,7 @@
 | 0.5787800887038205 | [ionic__utils-array](./i/ionic__utils-array) | Array utils
 | 0.5787779518924066 | [ionic__utils-terminal](./i/ionic__utils-terminal) | Terminal utils for NodeJS
 | 0.5781671562067197 | [graphql-type-uuid](./g/graphql-type-uuid) | UUID scalar type for GraphQL.js
+| 0.5781627725666517 | [react-native-app-intro-sl](./r/react-native-app-intro-slider) | Simple and configurable app introduction slider fo
 | 0.5778831800880784 | [persona](./p/persona) | The official web client library for the Persona AP
 | 0.5777964257616502 | [level-sublevel](./l/level-sublevel) | partition levelup databases
 | 0.5775409043803122 | [node-cache](./n/node-cache) | Simple and fast NodeJS internal caching. Node inte
@@ -4775,6 +4779,7 @@
 | 0.49749868558954236 | [synaptic](./s/synaptic) | architecture-free neural network library
 | 0.4974405525673996 | [toastr](./t/toastr) | ToastrJS is a JavaScript library for Gnome / Growl
 | 0.4973978169342099 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license
+| 0.49733562613518695 | [parse-package-name](./p/parse-package-name) | Parse package name with semver, path, scoped name 
 | 0.49723311619022625 | [phonegap-nfc](./p/phonegap-nfc) | Near Field Communication (NFC) Plugin. Read and wr
 | 0.49713297844943144 | [react-tagsinput](./r/react-tagsinput) | Highly customizable React component for inputing t
 | 0.4970183736689441 | [passport-http](./p/passport-http) | HTTP Basic and Digest authentication strategies fo
@@ -6405,6 +6410,7 @@
 | 0.2253756489942691 | [codegen_dot_macro](./c/codegen_dot_macro) | Generate code at build-time with babel-macros
 | 0.22494240802028284 | [gulp-change](./g/gulp-change) | allow file content manipulations
 | 0.22485910621059538 | [browser-harness](./b/browser-harness) | Browser Harness ===============
+| 0.22458058061050523 | [geoflatbush](./g/geoflatbush) | A geographic extension for 
 | 0.22424106476386804 | [jquery-fullscreen](./j/jquery-fullscreen) | jQuery fullscreen plugin for all browsers
 | 0.22362354030991288 | [natural-compare](./n/natural-compare) | Compare strings containing a mix of letters and nu
 | 0.22248664889358674 | [jsonwebtoken-promisified](./j/jsonwebtoken-promisified) | A thin wrapper that provides promisified methods f

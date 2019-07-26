@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/auth-types", "FirebaseAuth")
 @js.native
 class FirebaseAuth protected () extends js.Object {
-  var app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any = js.native
+  var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var currentUser: User | scala.Null = js.native
   var languageCode: java.lang.String | scala.Null = js.native
   var settings: AuthSettings = js.native

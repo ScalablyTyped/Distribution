@@ -20,6 +20,8 @@ trait Target extends js.Object {
   def `type`(): TargetType
   /** Returns the target URL. */
   def url(): java.lang.String
+  /** If the target is not of type `service_worker` or `shared_worker`, resolves `null`. */
+  def worker(): js.Promise[Worker | scala.Null]
 }
 
 object Target {
@@ -31,9 +33,10 @@ object Target {
     opener: () => Target | scala.Null,
     page: () => js.Promise[Page],
     `type`: () => TargetType,
-    url: () => java.lang.String
+    url: () => java.lang.String,
+    worker: () => js.Promise[Worker | scala.Null]
   ): Target = {
-    val __obj = js.Dynamic.literal(browser = js.Any.fromFunction0(browser), browserContext = js.Any.fromFunction0(browserContext), createCDPSession = js.Any.fromFunction0(createCDPSession), opener = js.Any.fromFunction0(opener), page = js.Any.fromFunction0(page), url = js.Any.fromFunction0(url))
+    val __obj = js.Dynamic.literal(browser = js.Any.fromFunction0(browser), browserContext = js.Any.fromFunction0(browserContext), createCDPSession = js.Any.fromFunction0(createCDPSession), opener = js.Any.fromFunction0(opener), page = js.Any.fromFunction0(page), url = js.Any.fromFunction0(url), worker = js.Any.fromFunction0(worker))
     __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[Target]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for shopify-prime
 
-Typings are for version 2.13.0
+Typings are for version 2.14.0
 
 ## Library description:
 Shopify Prime is a NodeJS library built to help developers easily authenticate and make calls against the Shopify API. It was inspired by and borrows heavily from ShopifySharp.

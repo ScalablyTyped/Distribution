@@ -1,7 +1,7 @@
 
 # Scala.js typings for unzipper
 
-Typings are for version 0.9
+Typings are for version 0.10
 
 ## Library description:
 Unzip cross-platform streaming API
@@ -35,11 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for unzipper 0.9
+// Type definitions for unzipper 0.10
 // Project: https://github.com/ZJONSSON/node-unzipper#readme
 // Definitions by: s73obrien <https://github.com/s73obrien>
 //                 Nate <https://github.com/natemara>
 //                 Bart <https://github.com/bartje321>
+//                 Ken Human <https://github.com/kenhuman>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

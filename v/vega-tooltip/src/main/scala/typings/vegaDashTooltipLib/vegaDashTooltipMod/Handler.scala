@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param options Tooltip Options
   */
 class Handler ()
-  extends vegaDashTooltipLib.buildHandlerMod.Handler {
-  def this(options: stdLib.Partial[vegaDashTooltipLib.buildDefaultsMod.Options]) = this()
+  extends vegaDashTooltipLib.buildSrcHandlerMod.Handler {
+  def this(options: stdLib.Partial[vegaDashTooltipLib.buildSrcDefaultsMod.Options]) = this()
 }
 

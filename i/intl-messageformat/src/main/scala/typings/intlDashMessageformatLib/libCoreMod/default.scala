@@ -14,14 +14,14 @@ class default protected () extends IntlMessageFormat {
   def this(message: java.lang.String, locales: js.Array[java.lang.String]) = this()
   def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String) = this()
   def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String]) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
-  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats]) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libFormattersMod.Formats], opts: Options) = this()
 }
 
 /* static members */

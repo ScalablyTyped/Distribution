@@ -27,7 +27,7 @@ trait ContainerSettings extends js.Object {
     */
   var MovSettings: js.UndefOr[MovSettings] = js.undefined
   /**
-    * Settings for MP4 Container
+    * Settings for MP4 container. You can create audio-only AAC outputs with this container.
     */
   var Mp4Settings: js.UndefOr[Mp4Settings] = js.undefined
 }

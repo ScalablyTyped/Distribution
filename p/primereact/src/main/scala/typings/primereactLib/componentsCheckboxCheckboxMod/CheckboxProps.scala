@@ -15,6 +15,7 @@ trait CheckboxProps extends js.Object {
   var onContextMenu: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var required: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
@@ -35,6 +36,7 @@ object CheckboxProps {
     onContextMenu: /* event */ stdLib.Event => scala.Unit = null,
     onMouseDown: /* event */ stdLib.Event => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null,
@@ -50,6 +52,7 @@ object CheckboxProps {
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)

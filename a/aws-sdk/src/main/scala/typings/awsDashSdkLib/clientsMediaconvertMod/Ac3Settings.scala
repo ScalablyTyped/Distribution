@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Ac3Settings extends js.Object {
   /**
-    * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
+    * Specify the average bitrate in bits per second. Valid bitrates depend on the coding mode.
     */
   var Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined
   /**
-    * Specifies the "Bitstream Mode" (bsmod) for the emitted AC-3 stream. See ATSC A/52-2012 for background on these values.
+    * Specify the bitstream mode for the AC-3 stream that the encoder emits. For more information about the AC3 bitstream mode, see ATSC A/52-2012 (Annex E).
     */
   var BitstreamMode: js.UndefOr[Ac3BitstreamMode] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait Ac3Settings extends js.Object {
     */
   var MetadataControl: js.UndefOr[Ac3MetadataControl] = js.undefined
   /**
-    * Sample rate in hz. Sample rate is always 48000.
+    * This value is always 48000. It represents the sample rate in Hz.
     */
   var SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined
 }

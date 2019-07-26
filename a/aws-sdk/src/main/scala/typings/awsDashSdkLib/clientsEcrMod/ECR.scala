@@ -448,6 +448,29 @@ trait ECR
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutImageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Updates the image tag mutability settings for a repository.
+    */
+  def putImageTagMutability(): awsDashSdkLib.libRequestMod.Request[PutImageTagMutabilityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putImageTagMutability(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutImageTagMutabilityResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutImageTagMutabilityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the image tag mutability settings for a repository.
+    */
+  def putImageTagMutability(params: PutImageTagMutabilityRequest): awsDashSdkLib.libRequestMod.Request[PutImageTagMutabilityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putImageTagMutability(
+    params: PutImageTagMutabilityRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutImageTagMutabilityResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutImageTagMutabilityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates or updates a lifecycle policy. For information about lifecycle policy syntax, see Lifecycle Policy Template.
     */
   def putLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -471,7 +494,7 @@ trait ECR
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Applies a repository policy on a specified repository to control access permissions.
+    * Applies a repository policy on a specified repository to control access permissions. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
     */
   def setRepositoryPolicy(): awsDashSdkLib.libRequestMod.Request[SetRepositoryPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setRepositoryPolicy(
@@ -482,7 +505,7 @@ trait ECR
     ]
   ): awsDashSdkLib.libRequestMod.Request[SetRepositoryPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Applies a repository policy on a specified repository to control access permissions.
+    * Applies a repository policy on a specified repository to control access permissions. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
     */
   def setRepositoryPolicy(params: SetRepositoryPolicyRequest): awsDashSdkLib.libRequestMod.Request[SetRepositoryPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setRepositoryPolicy(

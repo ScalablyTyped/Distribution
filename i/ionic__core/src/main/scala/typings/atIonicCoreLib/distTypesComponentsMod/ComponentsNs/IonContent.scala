@@ -39,10 +39,14 @@ trait IonContent extends js.Object {
   def getScrollElement(): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * Scroll by a specified X/Y distance in the component.
+    * @param x The amount to scroll by on the horizontal axis.
+    * @param y The amount to scroll by on the vertical axis.
+    * @param duration The amount of time to take scrolling by that amount.
     */
   def scrollByPoint(x: scala.Double, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Scroll to the bottom of the component.
+    * @param duration The amount of time to take scrolling to the bottom. Defaults to `0`.
     */
   def scrollToBottom(): js.Promise[scala.Unit] = js.native
   def scrollToBottom(duration: scala.Double): js.Promise[scala.Unit] = js.native
@@ -55,6 +59,9 @@ trait IonContent extends js.Object {
   def scrollToPoint(x: scala.Double, y: js.UndefOr[scala.Nothing], duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Scroll to a specified X/Y location in the component.
+    * @param x The point to scroll to on the horizontal axis.
+    * @param y The point to scroll to on the vertical axis.
+    * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
     */
   def scrollToPoint(x: scala.Double, y: scala.Double): js.Promise[scala.Unit] = js.native
   def scrollToPoint(x: scala.Double, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
@@ -65,6 +72,7 @@ trait IonContent extends js.Object {
   def scrollToPoint(x: scala.Null, y: scala.Null, duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Scroll to the top of the component.
+    * @param duration The amount of time to take scrolling to the top. Defaults to `0`.
     */
   def scrollToTop(): js.Promise[scala.Unit] = js.native
   def scrollToTop(duration: scala.Double): js.Promise[scala.Unit] = js.native

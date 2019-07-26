@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-types
 
-Typings are for version 0.2.0
+Typings are for version 0.2.1
 
 
 

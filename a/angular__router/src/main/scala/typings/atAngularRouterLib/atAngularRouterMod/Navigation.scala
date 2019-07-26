@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Navigation extends js.Object {
   /**
-    * The initial target URL after being parsed with {@link UrlSerializer.extract()}.
+    * The initial target URL after being parsed with `UrlSerializer.extract()`.
     */
   var extractedUrl: UrlTree
   /**
-    * The NavigationExtras used in this navigation. See {@link NavigationExtras} for more info.
+    * Options that controlled the strategy used for this navigation.
+    * See `NavigationExtras`.
     */
   var extras: NavigationExtras
   /**
-    * Extracted URL after redirects have been applied. This URL may not be available immediately,
-    * therefore this property can be `undefined`. It is guaranteed to be set after the
-    * {@link RoutesRecognized} event fires.
+    * The extracted URL after redirects have been applied.
+    * This URL may not be available immediately, therefore this property can be `undefined`.
+    * It is guaranteed to be set after the `RoutesRecognized` event fires.
     */
   var finalUrl: js.UndefOr[UrlTree] = js.undefined
   /**
@@ -25,21 +26,22 @@ trait Navigation extends js.Object {
     */
   var id: scala.Double
   /**
-    * Target URL passed into the {@link Router#navigateByUrl} call before navigation. This is
+    * The target URL passed into the `Router#navigateByUrl()` call before navigation. This is
     * the value before the router has parsed or applied redirects to it.
     */
   var initialUrl: java.lang.String | UrlTree
   /**
-    * Previously successful Navigation object. Only a single previous Navigation is available,
-    * therefore this previous Navigation will always have a `null` value for `previousNavigation`.
+    * The previously successful `Navigation` object. Only one previous navigation
+    * is available, therefore this previous `Navigation` object has a `null` value
+    * for its own `previousNavigation`.
     */
   var previousNavigation: Navigation | scala.Null
   /**
-    * Identifies the trigger of the navigation.
+    * Identifies how this navigation was triggered.
     *
-    * * 'imperative'--triggered by `router.navigateByUrl` or `router.navigate`.
-    * * 'popstate'--triggered by a popstate event
-    * * 'hashchange'--triggered by a hashchange event
+    * * 'imperative'--Triggered by `router.navigateByUrl` or `router.navigate`.
+    * * 'popstate'--Triggered by a popstate event.
+    * * 'hashchange'--Triggered by a hashchange event.
     */
   var trigger: atAngularRouterLib.atAngularRouterLibStrings.imperative | atAngularRouterLib.atAngularRouterLibStrings.popstate | atAngularRouterLib.atAngularRouterLibStrings.hashchange
 }

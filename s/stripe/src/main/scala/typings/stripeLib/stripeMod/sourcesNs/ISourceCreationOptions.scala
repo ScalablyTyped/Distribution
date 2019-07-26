@@ -16,7 +16,7 @@ trait ISourceCreationOptions
   var mandate: js.UndefOr[stripeLib.Anon_Acceptance] = js.undefined
   @JSName("metadata")
   var metadata_ISourceCreationOptions: js.UndefOr[stripeLib.stripeMod.IMetadata] = js.undefined
-  var owner: js.UndefOr[stripeLib.Anon_AddressEmail] = js.undefined
+  var owner: js.UndefOr[stripeLib.Anon_AddressEmailNamePhone] = js.undefined
   var receiver: js.UndefOr[stripeLib.Anon_Email] = js.undefined
   var redirect: js.UndefOr[stripeLib.Anon_ReturnurlString] = js.undefined
   var sepa_debit: js.UndefOr[stripeLib.Anon_Iban] = js.undefined
@@ -38,7 +38,7 @@ object ISourceCreationOptions {
     include: js.Array[java.lang.String] = null,
     mandate: stripeLib.Anon_Acceptance = null,
     metadata: stripeLib.stripeMod.IMetadata = null,
-    owner: stripeLib.Anon_AddressEmail = null,
+    owner: stripeLib.Anon_AddressEmailNamePhone = null,
     receiver: stripeLib.Anon_Email = null,
     redirect: stripeLib.Anon_ReturnurlString = null,
     sepa_debit: stripeLib.Anon_Iban = null,

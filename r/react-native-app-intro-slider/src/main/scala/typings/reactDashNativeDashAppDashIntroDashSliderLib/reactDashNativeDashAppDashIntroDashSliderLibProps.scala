@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashAppDashIntroDashSliderLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashAppDashIntroDashSliderLibProps {
+  @scala.inline
+  def ReactDashNativeDashAppDashIntroDashSliderProps: reactDashNativeDashAppDashIntroDashSliderLib.reactDashNativeDashAppDashIntroDashSliderMod.AppIntroProps.type = reactDashNativeDashAppDashIntroDashSliderLib.reactDashNativeDashAppDashIntroDashSliderMod.AppIntroProps
+  type ReactDashNativeDashAppDashIntroDashSliderProps = reactDashNativeDashAppDashIntroDashSliderLib.reactDashNativeDashAppDashIntroDashSliderMod.AppIntroProps
+}
+

@@ -11,11 +11,11 @@ trait Eac3Settings extends js.Object {
     */
   var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.undefined
   /**
-    * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
+    * Specify the average bitrate in bits per second. Valid bitrates depend on the coding mode.
     */
   var Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined
   /**
-    * Specifies the "Bitstream Mode" (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values.
+    * Specify the bitstream mode for the E-AC-3 stream that the encoder emits. For more information about the EAC3 bitstream mode, see ATSC A/52-2012 (Annex E).
     */
   var BitstreamMode: js.UndefOr[Eac3BitstreamMode] = js.undefined
   /**
@@ -31,11 +31,11 @@ trait Eac3Settings extends js.Object {
     */
   var Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined
   /**
-    * Enables Dynamic Range Compression that restricts the absolute peak level for a signal.
+    * Specify the absolute peak level for a signal with dynamic range compression.
     */
   var DynamicRangeCompressionLine: js.UndefOr[Eac3DynamicRangeCompressionLine] = js.undefined
   /**
-    * Enables Heavy Dynamic Range Compression, ensures that the instantaneous signal peaks do not exceed specified levels.
+    * Specify how the service limits the audio dynamic range when compressing the audio.
     */
   var DynamicRangeCompressionRf: js.UndefOr[Eac3DynamicRangeCompressionRf] = js.undefined
   /**
@@ -47,23 +47,19 @@ trait Eac3Settings extends js.Object {
     */
   var LfeFilter: js.UndefOr[Eac3LfeFilter] = js.undefined
   /**
-    * Left only/Right only center mix level. Only used for 3/2 coding mode.
-  Valid values: 3.0, 1.5, 0.0, -1.5 -3.0 -4.5 -6.0 -60
+    * Specify a value for the following Dolby Digital Plus setting: Left only/Right only center mix (Lo/Ro center). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3StereoDownmix). Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. This setting applies only if you keep the default value of 3/2 - L, R, C, Ls, Rs (CODING_MODE_3_2) for the setting Coding mode (Eac3CodingMode). If you choose a different value for Coding mode, the service ignores Left only/Right only center (loRoCenterMixLevel).
     */
   var LoRoCenterMixLevel: js.UndefOr[__doubleMinNegative60Max3] = js.undefined
   /**
-    * Left only/Right only surround mix level. Only used for 3/2 coding mode.
-  Valid values: -1.5 -3.0 -4.5 -6.0 -60
+    * Specify a value for the following Dolby Digital Plus setting: Left only/Right only (Lo/Ro surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3StereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. This setting applies only if you keep the default value of 3/2 - L, R, C, Ls, Rs (CODING_MODE_3_2) for the setting Coding mode (Eac3CodingMode). If you choose a different value for Coding mode, the service ignores Left only/Right only surround (loRoSurroundMixLevel).
     */
   var LoRoSurroundMixLevel: js.UndefOr[__doubleMinNegative60MaxNegative1] = js.undefined
   /**
-    * Left total/Right total center mix level. Only used for 3/2 coding mode.
-  Valid values: 3.0, 1.5, 0.0, -1.5 -3.0 -4.5 -6.0 -60
+    * Specify a value for the following Dolby Digital Plus setting: Left total/Right total center mix (Lt/Rt center). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3StereoDownmix). Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. This setting applies only if you keep the default value of 3/2 - L, R, C, Ls, Rs (CODING_MODE_3_2) for the setting Coding mode (Eac3CodingMode). If you choose a different value for Coding mode, the service ignores Left total/Right total center (ltRtCenterMixLevel).
     */
   var LtRtCenterMixLevel: js.UndefOr[__doubleMinNegative60Max3] = js.undefined
   /**
-    * Left total/Right total surround mix level. Only used for 3/2 coding mode.
-  Valid values: -1.5 -3.0 -4.5 -6.0 -60
+    * Specify a value for the following Dolby Digital Plus setting: Left total/Right total surround mix (Lt/Rt surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3StereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. This setting applies only if you keep the default value of 3/2 - L, R, C, Ls, Rs (CODING_MODE_3_2) for the setting Coding mode (Eac3CodingMode). If you choose a different value for Coding mode, the service ignores Left total/Right total surround (ltRtSurroundMixLevel).
     */
   var LtRtSurroundMixLevel: js.UndefOr[__doubleMinNegative60MaxNegative1] = js.undefined
   /**
@@ -79,11 +75,11 @@ trait Eac3Settings extends js.Object {
     */
   var PhaseControl: js.UndefOr[Eac3PhaseControl] = js.undefined
   /**
-    * Sample rate in hz. Sample rate is always 48000.
+    * This value is always 48000. It represents the sample rate in Hz.
     */
   var SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined
   /**
-    * Stereo downmix preference. Only used for 3/2 coding mode.
+    * Choose how the service does stereo downmixing. This setting only applies if you keep the default value of 3/2 - L, R, C, Ls, Rs (CODING_MODE_3_2) for the setting Coding mode (Eac3CodingMode). If you choose a different value for Coding mode, the service ignores Stereo downmix (Eac3StereoDownmix).
     */
   var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.undefined
   /**

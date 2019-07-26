@@ -11,6 +11,10 @@ trait Repository extends js.Object {
     */
   var createdAt: js.UndefOr[CreationTimestamp] = js.undefined
   /**
+    * The tag mutability setting for the repository.
+    */
+  var imageTagMutability: js.UndefOr[ImageTagMutability] = js.undefined
+  /**
     * The AWS account ID associated with the registry that contains the repository.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
@@ -32,6 +36,7 @@ object Repository {
   @scala.inline
   def apply(
     createdAt: CreationTimestamp = null,
+    imageTagMutability: ImageTagMutability = null,
     registryId: RegistryId = null,
     repositoryArn: Arn = null,
     repositoryName: RepositoryName = null,
@@ -39,6 +44,7 @@ object Repository {
   ): Repository = {
     val __obj = js.Dynamic.literal()
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    if (imageTagMutability != null) __obj.updateDynamic("imageTagMutability")(imageTagMutability.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId)
     if (repositoryArn != null) __obj.updateDynamic("repositoryArn")(repositoryArn)
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)

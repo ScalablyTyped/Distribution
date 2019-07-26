@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait IonToastController extends js.Object {
   /**
     * Create a toast overlay with toast options.
+    * @param options The options to use to create the toast.
     */
   def create(): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonToastElement] = js.native
   def create(
@@ -16,6 +17,9 @@ trait IonToastController extends js.Object {
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonToastElement] = js.native
   /**
     * Dismiss the open toast overlay.
+    * @param data Any data to emit in the dismiss events.
+    * @param role The role of the element that is dismissing the toast. For example, 'cancel' or 'backdrop'.
+    * @param id The id of the toast to dismiss. If an id is not provided, it will dismiss the most recently opened toast.
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native

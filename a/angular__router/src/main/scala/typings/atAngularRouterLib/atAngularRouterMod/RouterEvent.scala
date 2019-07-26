@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/router", "RouterEvent")
 @js.native
 class RouterEvent protected () extends Event {
-  def this(/** @docsNotRequired */
-  id: scala.Double, /** @docsNotRequired */
+  def this(/** A unique ID that the router assigns to every router navigation. */
+  id: scala.Double, /** The URL that is the destination for this navigation. */
   url: java.lang.String) = this()
-  /** @docsNotRequired */
+  /** A unique ID that the router assigns to every router navigation. */
   var id: scala.Double = js.native
-  /** @docsNotRequired */
+  /** The URL that is the destination for this navigation. */
   var url: java.lang.String = js.native
 }
 

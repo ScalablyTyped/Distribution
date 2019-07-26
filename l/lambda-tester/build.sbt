@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lambda-tester"
-version := "3.5-dt-20181016Z-35c16a"
+version := "3.6-dt-20190725Z-e66ad6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

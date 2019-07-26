@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AudioDescription extends js.Object {
   /**
-    * Advanced audio normalization settings.
+    * Advanced audio normalization settings. Ignore these settings unless you need to comply with a loudness standard.
     */
   var AudioNormalizationSettings: js.UndefOr[AudioNormalizationSettings] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait AudioDescription extends js.Object {
     */
   var AudioTypeControl: js.UndefOr[AudioTypeControl] = js.undefined
   /**
-    * Audio codec settings (CodecSettings) under (AudioDescriptions) contains the group of settings related to audio encoding. The settings in this group vary depending on the value you choose for Audio codec (Codec). For each codec enum you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * AAC, AacSettings * MP2, Mp2Settings * WAV, WavSettings * AIFF, AiffSettings * AC3, Ac3Settings * EAC3, Eac3Settings
+    * Audio codec settings (CodecSettings) under (AudioDescriptions) contains the group of settings related to audio encoding. The settings in this group vary depending on the value that you choose for Audio codec (Codec). For each codec enum that you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * AAC, AacSettings * MP2, Mp2Settings * WAV, WavSettings * AIFF, AiffSettings * AC3, Ac3Settings * EAC3, Eac3Settings * EAC3_ATMOS, Eac3AtmosSettings
     */
   var CodecSettings: js.UndefOr[AudioCodecSettings] = js.undefined
   /**

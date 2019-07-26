@@ -22,7 +22,7 @@ trait ISource
   var metadata: stripeLib.stripeMod.IMetadata
   @JSName("object")
   var object_ISource: stripeLib.stripeLibStrings.source
-  var owner: stripeLib.Anon_Address
+  var owner: stripeLib.Anon_AddressEmailName
   var receiver: js.UndefOr[stripeLib.Anon_AddressAmountcharged] = js.undefined
   var redirect: js.UndefOr[stripeLib.Anon_Declined] = js.undefined
   var statement_descriptor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -41,7 +41,7 @@ object ISource {
     livemode: scala.Boolean,
     metadata: stripeLib.stripeMod.IMetadata,
     `object`: stripeLib.stripeLibStrings.source,
-    owner: stripeLib.Anon_Address,
+    owner: stripeLib.Anon_AddressEmailName,
     status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.chargeable | stripeLib.stripeLibStrings.consumed | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.pending,
     `type`: stripeLib.stripeLibStrings.ach_credit_transfer | stripeLib.stripeLibStrings.ach_debit | stripeLib.stripeLibStrings.alipay | stripeLib.stripeLibStrings.bancontact | stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.card_present | stripeLib.stripeLibStrings.eps | stripeLib.stripeLibStrings.giropay | stripeLib.stripeLibStrings.ideal | stripeLib.stripeLibStrings.multibanco | stripeLib.stripeLibStrings.p24 | stripeLib.stripeLibStrings.sepa_debit | stripeLib.stripeLibStrings.sofort | stripeLib.stripeLibStrings.three_d_secure | stripeLib.stripeLibStrings.wechat,
     usage: stripeLib.stripeLibStrings.reusable | stripeLib.stripeLibStrings.single_use,

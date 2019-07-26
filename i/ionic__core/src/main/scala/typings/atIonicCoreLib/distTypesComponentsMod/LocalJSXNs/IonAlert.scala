@@ -100,7 +100,7 @@ trait IonAlert
     */
   var subHeader: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `true`, the alert will be translucent.
+    * If `true`, the alert will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

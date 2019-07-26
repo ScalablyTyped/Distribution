@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shopify-prime"
-version := "2.13.0-1f210e"
+version := "2.14.0-5a7215"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -73,9 +73,18 @@ class MenuController protected () extends js.Object {
     * @param shouldEnable  True if it should be swipe-able, false if not.
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns the instance of the menu, which is useful for chaining.
+    * @deprecated Use swipeGesture() instead
     */
   def swipeEnable(shouldEnable: scala.Boolean): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement] = js.native
   def swipeEnable(shouldEnable: scala.Boolean, menuId: java.lang.String): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement] = js.native
+  /**
+    * Used to enable or disable the ability to swipe open the menu.
+    * @param shouldEnable  True if it should be swipe-able, false if not.
+    * @param [menuId]  Optionally get the menu by its id, or side.
+    * @return Returns the instance of the menu, which is useful for chaining.
+    */
+  def swipeGesture(shouldEnable: scala.Boolean): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement] = js.native
+  def swipeGesture(shouldEnable: scala.Boolean, menuId: java.lang.String): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement] = js.native
   /**
     * Toggle the menu. If it's closed, it will open, and if opened, it
     * will close.

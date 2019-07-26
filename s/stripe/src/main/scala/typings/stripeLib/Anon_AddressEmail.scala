@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AddressEmail extends js.Object {
-  var address: js.UndefOr[stripeLib.stripeMod.IAddress | scala.Null] = js.undefined
+  var address: js.UndefOr[stripeLib.stripeMod.IAddress] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var phone: js.UndefOr[java.lang.String] = js.undefined

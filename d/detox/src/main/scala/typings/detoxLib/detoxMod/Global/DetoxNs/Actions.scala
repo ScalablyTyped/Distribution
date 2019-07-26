@@ -86,6 +86,16 @@ trait Actions[R] extends js.Object {
     */
   def tapAtPoint(point: detoxLib.Anon_X): js.Promise[Actions[R]] = js.native
   /**
+    * Taps the backspace key on the built-in keyboard.
+    * @example await element(by.id('textField')).tapBackspaceKey();
+    */
+  def tapBackspaceKey(): js.Promise[Actions[R]] = js.native
+  /**
+    * Taps the return key on the built-in keyboard.
+    * @example await element(by.id('textField')).tapReturnKey();
+    */
+  def tapReturnKey(): js.Promise[Actions[R]] = js.native
+  /**
     * Use the builtin keyboard to type text into a text field.
     * @param text
     * @example await element(by.id('textField')).typeText('passcode');

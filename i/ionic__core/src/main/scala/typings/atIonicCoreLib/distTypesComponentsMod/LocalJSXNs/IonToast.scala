@@ -109,7 +109,7 @@ trait IonToast
     */
   var showCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If `true`, the toast will be translucent.
+    * If `true`, the toast will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -67,11 +67,13 @@ trait IonAlert extends js.Object {
     */
   var subHeader: js.UndefOr[java.lang.String] = js.native
   /**
-    * If `true`, the alert will be translucent.
+    * If `true`, the alert will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: scala.Boolean = js.native
   /**
     * Dismiss the alert overlay after it has been presented.
+    * @param data Any data to emit in the dismiss events.
+    * @param role The role of the element that is dismissing the alert. This can be useful in a button handler for determining which button was clicked to dismiss the alert. Some examples include: ``"cancel"`, `"destructive"`, "selected"`, and `"backdrop"`.
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native

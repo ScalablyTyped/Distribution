@@ -27,7 +27,7 @@ trait DescribeImagesRequest extends js.Object {
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   /**
-    * A list of repositories to describe.
+    * The repository that contains the images to describe.
     */
   var repositoryName: RepositoryName
 }

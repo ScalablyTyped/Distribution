@@ -17,6 +17,8 @@ trait PickListProps extends js.Object {
   var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onMoveToSource: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onMoveToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onSourceSelect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onTargetSelect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
   var showSourceControls: js.UndefOr[scala.Boolean] = js.undefined
   var showTargetControls: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,6 +44,8 @@ object PickListProps {
     onMoveAllToTarget: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
     onMoveToSource: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
     onMoveToTarget: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
+    onSourceSelect: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
+    onTargetSelect: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     showSourceControls: js.UndefOr[scala.Boolean] = js.undefined,
     showTargetControls: js.UndefOr[scala.Boolean] = js.undefined,
@@ -64,6 +68,8 @@ object PickListProps {
     if (onMoveAllToTarget != null) __obj.updateDynamic("onMoveAllToTarget")(js.Any.fromFunction1(onMoveAllToTarget))
     if (onMoveToSource != null) __obj.updateDynamic("onMoveToSource")(js.Any.fromFunction1(onMoveToSource))
     if (onMoveToTarget != null) __obj.updateDynamic("onMoveToTarget")(js.Any.fromFunction1(onMoveToTarget))
+    if (onSourceSelect != null) __obj.updateDynamic("onSourceSelect")(js.Any.fromFunction1(onSourceSelect))
+    if (onTargetSelect != null) __obj.updateDynamic("onTargetSelect")(js.Any.fromFunction1(onTargetSelect))
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(showSourceControls)) __obj.updateDynamic("showSourceControls")(showSourceControls)
     if (!js.isUndefined(showTargetControls)) __obj.updateDynamic("showTargetControls")(showTargetControls)

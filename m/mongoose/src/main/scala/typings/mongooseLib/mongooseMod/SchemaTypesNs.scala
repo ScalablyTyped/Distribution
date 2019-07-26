@@ -20,5 +20,17 @@ object SchemaTypesNs extends js.Object {
     def this(schema: mongooseLib.mongooseMod.Schema[_], key: java.lang.String, options: js.Any) = this()
   }
   
+  /**
+    * section schema/map.js
+    * https://mongoosejs.com/docs/schematypes.html#maps
+    */
+  @js.native
+  class Map protected ()
+    extends mongooseLib.mongooseMod.SchemaNs.TypesNs.Map {
+    /** Sub-schema schematype constructor */
+    def this(key: java.lang.String) = this()
+    def this(key: java.lang.String, options: js.Any) = this()
+  }
+  
 }
 

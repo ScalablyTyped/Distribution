@@ -39,28 +39,29 @@ class NavigationStart protected () extends RouterEvent {
   navigationTrigger: atAngularRouterLib.atAngularRouterLibStrings.popstate, /** @docsNotRequired */
   restoredState: atAngularRouterLib.Anon_K) = this()
   /**
-    * Identifies the trigger of the navigation.
+    * Identifies the call or event that triggered the navigation.
+    * An `imperative` trigger is a call to `router.navigateByUrl()` or `router.navigate()`.
     *
-    * * 'imperative'--triggered by `router.navigateByUrl` or `router.navigate`.
-    * * 'popstate'--triggered by a popstate event
-    * * 'hashchange'--triggered by a hashchange event
     */
   var navigationTrigger: js.UndefOr[
     atAngularRouterLib.atAngularRouterLibStrings.imperative | atAngularRouterLib.atAngularRouterLibStrings.popstate | atAngularRouterLib.atAngularRouterLibStrings.hashchange
   ] = js.native
   /**
-    * This reflects the state object that was previously supplied to the pushState call. This is
-    * not null only when the navigation is triggered by a popstate event.
+    * The navigation state that was previously supplied to the `pushState` call,
+    * when the navigation is triggered by a `popstate` event. Otherwise null.
     *
-    * The router assigns a navigationId to every router transition/navigation. Even when the user
-    * clicks on the back button in the browser, a new navigation id will be created. So from
-    * the perspective of the router, the router never "goes back". By using the `restoredState`
-    * and its navigationId, you can implement behavior that differentiates between creating new
-    * states
-    * and popstate events. In the latter case you can restore some remembered state (e.g., scroll
-    * position).
+    * The state object is defined by `NavigationExtras`, and contains any
+    * developer-defined state value, as well as a unique ID that
+    * the router assigns to every router transition/navigation.
     *
-    * See {@link NavigationExtras} for more information.
+    * From the perspective of the router, the router never "goes back".
+    * When the user clicks on the back button in the browser,
+    * a new navigation ID is created.
+    *
+    * Use the ID in this previous-state object to differentiate between a newly created
+    * state and one returned to by a `popstate` event, so that you can restore some
+    * remembered state, such as scroll position.
+    *
     */
   var restoredState: js.UndefOr[atAngularRouterLib.Anon_K | scala.Null] = js.native
 }

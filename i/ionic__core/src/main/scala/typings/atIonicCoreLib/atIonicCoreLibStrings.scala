@@ -162,6 +162,9 @@ object atIonicCoreLibStrings {
   sealed trait evenodd extends js.Object
   
   @js.native
+  sealed trait experimentalTransitionShadow extends js.Object
+  
+  @js.native
   sealed trait fixed extends js.Object
   
   @js.native
@@ -656,6 +659,8 @@ object atIonicCoreLibStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  @scala.inline
+  def experimentalTransitionShadow: experimentalTransitionShadow = "experimentalTransitionShadow".asInstanceOf[experimentalTransitionShadow]
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline

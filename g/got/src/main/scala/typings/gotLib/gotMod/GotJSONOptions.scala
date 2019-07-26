@@ -56,6 +56,7 @@ object GotJSONOptions {
     protocol: java.lang.String = null,
     query: (stdLib.Record[java.lang.String, _]) | nodeLib.urlMod.URLSearchParams | java.lang.String = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    request: RequestFunction = null,
     retry: scala.Double | RetryOptions = null,
     secureOptions: scala.Int | scala.Double = null,
     secureProtocol: java.lang.String = null,
@@ -106,6 +107,7 @@ object GotJSONOptions {
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (request != null) __obj.updateDynamic("request")(request)
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)

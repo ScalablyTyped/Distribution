@@ -81,7 +81,8 @@ object stripeLibStrings {
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait amex extends js.Object
+  sealed trait amex
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait amex_express_checkout extends js.Object
@@ -250,13 +251,15 @@ object stripeLibStrings {
   sealed trait declined_by_network extends js.Object
   
   @js.native
-  sealed trait diners extends js.Object
+  sealed trait diners
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait discount extends js.Object
   
   @js.native
-  sealed trait discover extends js.Object
+  sealed trait discover
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait dispute extends js.Object
@@ -446,7 +449,8 @@ object stripeLibStrings {
   sealed trait ja extends js.Object
   
   @js.native
-  sealed trait jcb extends js.Object
+  sealed trait jcb
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait jpg extends js.Object
@@ -491,7 +495,8 @@ object stripeLibStrings {
   sealed trait manual_review extends js.Object
   
   @js.native
-  sealed trait mastercard extends js.Object
+  sealed trait mastercard
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait masterpass extends js.Object
@@ -604,6 +609,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait payment_intent extends js.Object
+  
+  @js.native
+  sealed trait payment_method extends js.Object
   
   @js.native
   sealed trait payout extends js.Object
@@ -867,10 +875,12 @@ object stripeLibStrings {
   sealed trait under_review extends js.Object
   
   @js.native
-  sealed trait unionpay extends js.Object
+  sealed trait unionpay
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait unpaid
@@ -907,7 +917,8 @@ object stripeLibStrings {
   sealed trait verified extends js.Object
   
   @js.native
-  sealed trait visa extends js.Object
+  sealed trait visa
+    extends stripeLib.stripeMod.paymentMethodsNs.CardBrand
   
   @js.native
   sealed trait visa_checkout extends js.Object
@@ -1320,6 +1331,8 @@ object stripeLibStrings {
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
   def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
+  @scala.inline
+  def payment_method: payment_method = "payment_method".asInstanceOf[payment_method]
   @scala.inline
   def payout: payout = "payout".asInstanceOf[payout]
   @scala.inline

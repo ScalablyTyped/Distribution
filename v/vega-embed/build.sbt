@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-embed"
-version := "4.2.1-7c2014"
+version := "4.2.2-78cab7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.5-983486",
   "org.scalablytyped" %%% "vega" % "5.4.0-ff8668",
   "org.scalablytyped" %%% "vega-lite" % "2.7.0-66ae76",
-  "org.scalablytyped" %%% "vega-tooltip" % "0.17.1-25c1e8",
+  "org.scalablytyped" %%% "vega-tooltip" % "0.18.1-36ca3a",
   "org.scalablytyped" %%% "vega-typings" % "0.7.1-e0167e",
   "org.scalablytyped" %%% "vega-util" % "1.10.0-2c2358")
 publishArtifact in packageDoc := false

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ExtraOptions extends js.Object {
   /**
-    * Configures if the router should scroll to the element when the url has a fragment.
-    *
-    * * 'disabled'--does nothing (default).
-    * * 'enabled'--scrolls to the element. This option will be the default in the future.
+    * When set to 'enabled', scrolls to the anchor element when the URL has a fragment.
+    * Anchor scrolling is disabled by default.
     *
     * Anchor scrolling does not happen on 'popstate'. Instead, we restore the position
     * that we stored or scroll to the top.
@@ -19,23 +17,29 @@ trait ExtraOptions extends js.Object {
     atAngularRouterLib.atAngularRouterLibStrings.disabled | atAngularRouterLib.atAngularRouterLibStrings.enabled
   ] = js.undefined
   /**
-    * Makes the router log all its internal events to the console.
+    * When true, log all internal navigation events to the console.
+    * Use for debugging.
     */
   var enableTracing: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A custom error handler.
+    * A custom error handler for failed navigations.
     */
   var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
   /**
-    * Disables the initial navigation.
+    * One of `enabled` (the default) or `disabled`.
+    * By default, the initial navigation starts before the root component is created.
+    * The bootstrap is blocked until the initial navigation is complete.
+    * When set to `disabled`, the initial navigation is not performed.
+    * The location listener is set up before the root component gets created.
     */
   var initialNavigation: js.UndefOr[InitialNavigation] = js.undefined
   /**
-    * A custom malformed uri error handler function. This handler is invoked when encodedURI contains
-    * invalid character sequences. The default implementation is to redirect to the root url dropping
-    * any path or param info. This function passes three parameters:
+    * A custom handler for malformed URI errors. The handler is invoked when `encodedURI` contains
+    * invalid character sequences.
+    * The default implementation is to redirect to the root URL, dropping
+    * any path or parameter information. The function takes three parameters:
     *
-    * - `'URIError'` - Error thrown when parsing a bad URL
+    * - `'URIError'` - Error thrown when parsing a bad URL.
     * - `'UrlSerializer'` - UrlSerializer that’s configured with the router.
     * - `'url'` -  The malformed URL that caused the URIError
     * */
@@ -49,26 +53,26 @@ trait ExtraOptions extends js.Object {
   ] = js.undefined
   /**
     * Define what the router should do if it receives a navigation request to the current URL.
-    * By default, the router will ignore this navigation. However, this prevents features such
-    * as a "refresh" button. Use this option to configure the behavior when navigating to the
+    * Default is `ignore`, which causes the router ignores the navigation.
+    * This can disable features such as a "refresh" button.
+    * Use this option to configure the behavior when navigating to the
     * current URL. Default is 'ignore'.
     */
   var onSameUrlNavigation: js.UndefOr[
     atAngularRouterLib.atAngularRouterLibStrings.reload | atAngularRouterLib.atAngularRouterLibStrings.ignore
   ] = js.undefined
   /**
-    * Defines how the router merges params, data and resolved data from parent to child
-    * routes. Available options are:
-    *
-    * - `'emptyOnly'`, the default, only inherits parent params for path-less or component-less
-    *   routes.
-    * - `'always'`, enables unconditional inheritance of parent params.
+    * Defines how the router merges parameters, data, and resolved data from parent to child
+    * routes. By default ('emptyOnly'), inherits parent parameters only for
+    * path-less or component-less routes.
+    * Set to 'always' to enable unconditional inheritance of parent parameters.
     */
   var paramsInheritanceStrategy: js.UndefOr[
     atAngularRouterLib.atAngularRouterLibStrings.emptyOnly | atAngularRouterLib.atAngularRouterLibStrings.always
   ] = js.undefined
   /**
-    * Configures a preloading strategy. See `PreloadAllModules`.
+    * Configures a preloading strategy.
+    * One of `PreloadAllModules` or `NoPreloading` (the default).
     */
   var preloadingStrategy: js.UndefOr[js.Any] = js.undefined
   /**
@@ -105,9 +109,10 @@ trait ExtraOptions extends js.Object {
   /**
     * Configures the scroll offset the router will use when scrolling to an element.
     *
-    * When given a tuple with two numbers, the router will always use the numbers.
-    * When given a function, the router will invoke the function every time it restores scroll
-    * position.
+    * When given a tuple with x and y position value,
+    * the router uses that offset each time it scrolls.
+    * When given a function, the router invokes the function every time
+    * it restores scroll position.
     */
   var scrollOffset: js.UndefOr[
     (js.Tuple2[scala.Double, scala.Double]) | (js.Function0[js.Tuple2[scala.Double, scala.Double]])
@@ -115,14 +120,15 @@ trait ExtraOptions extends js.Object {
   /**
     * Configures if the scroll position needs to be restored when navigating back.
     *
-    * * 'disabled'--does nothing (default).  Scroll position will be maintained on navigation.
-    * * 'top'--set the scroll position to x = 0, y = 0 on all navigation.
-    * * 'enabled'--restores the previous scroll position on backward navigation, else sets the
+    * * 'disabled'- (Default) Does nothing. Scroll position is maintained on navigation.
+    * * 'top'- Sets the scroll position to x = 0, y = 0 on all navigation.
+    * * 'enabled'- Restores the previous scroll position on backward navigation, else sets the
     * position to the anchor if one is provided, or sets the scroll position to [0, 0] (forward
     * navigation). This option will be the default in the future.
     *
     * You can implement custom scroll restoration behavior by adapting the enabled behavior as
-    * follows:
+    * in the following example.
+    *
     * ```typescript
     * class AppModule {
     *   constructor(router: Router, viewportScroller: ViewportScroller) {
@@ -148,20 +154,18 @@ trait ExtraOptions extends js.Object {
     atAngularRouterLib.atAngularRouterLibStrings.disabled | atAngularRouterLib.atAngularRouterLibStrings.enabled | atAngularRouterLib.atAngularRouterLibStrings.top
   ] = js.undefined
   /**
-    * Defines when the router updates the browser URL. The default behavior is to update after
-    * successful navigation. However, some applications may prefer a mode where the URL gets
-    * updated at the beginning of navigation. The most common use case would be updating the
-    * URL early so if navigation fails, you can show an error message with the URL that failed.
-    * Available options are:
-    *
-    * - `'deferred'`, the default, updates the browser URL after navigation has finished.
-    * - `'eager'`, updates browser URL at the beginning of navigation.
+    * Defines when the router updates the browser URL. By default ('deferred'),
+    * update after successful navigation.
+    * Set to 'eager' if prefer to update the URL at the beginning of navigation.
+    * Updating the URL early allows you to handle a failure of navigation by
+    * showing an error message with the URL that failed.
     */
   var urlUpdateStrategy: js.UndefOr[
     atAngularRouterLib.atAngularRouterLibStrings.deferred | atAngularRouterLib.atAngularRouterLibStrings.eager
   ] = js.undefined
   /**
-    * Enables the location strategy that uses the URL fragment instead of the history API.
+    * When true, enable the location strategy that uses the URL fragment
+    * instead of the history API.
     */
   var useHash: js.UndefOr[scala.Boolean] = js.undefined
 }

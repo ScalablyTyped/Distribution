@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait NielsenConfiguration extends js.Object {
   /**
-    * Use Nielsen Configuration (NielsenConfiguration) to set the Nielsen measurement system breakout code. Supported values are 0, 3, 7, and 9.
+    * Nielsen has discontinued the use of breakout code functionality. If you must include this property, set the value to zero.
     */
-  var BreakoutCode: js.UndefOr[__integerMin0Max9] = js.undefined
+  var BreakoutCode: js.UndefOr[__integerMin0Max0] = js.undefined
   /**
     * Use Distributor ID (DistributorID) to specify the distributor ID that is assigned to your organization by Neilsen.
     */
@@ -18,7 +18,7 @@ trait NielsenConfiguration extends js.Object {
 
 object NielsenConfiguration {
   @scala.inline
-  def apply(BreakoutCode: js.UndefOr[__integerMin0Max9] = js.undefined, DistributorId: __string = null): NielsenConfiguration = {
+  def apply(BreakoutCode: js.UndefOr[__integerMin0Max0] = js.undefined, DistributorId: __string = null): NielsenConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(BreakoutCode)) __obj.updateDynamic("BreakoutCode")(BreakoutCode)
     if (DistributorId != null) __obj.updateDynamic("DistributorId")(DistributorId)

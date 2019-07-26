@@ -118,15 +118,20 @@ org.scalablytyped.runtime.Instantiable0[T]
     * Adds a discriminator type.
     * @param name discriminator model name
     * @param schema discriminator model schema
+    * @param value the string stored in the `discriminatorKey` property
     */
   def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[U, js.Object] = js.native
+  def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_], value: java.lang.String): Model[U, js.Object] = js.native
   /**
     * Adds a discriminator type.
     * @param name discriminator model name
     * @param schema discriminator model schema
+    * @param value the string stored in the `discriminatorKey` property
     */
   @JSName("discriminator")
   def discriminator_UDocumentMModelM[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_]): M = js.native
+  @JSName("discriminator")
+  def discriminator_UDocumentMModelM[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_], value: java.lang.String): M = js.native
   /** Creates a Query for a distinct operation. Passing a callback immediately executes the query. */
   def distinct(field: java.lang.String): Query[js.Array[_]] with QueryHelpers = js.native
   def distinct(
@@ -162,6 +167,12 @@ org.scalablytyped.runtime.Instantiable0[T]
   def estimatedDocumentCount(callback: js.Function2[/* err */ js.Any, /* count */ scala.Double, scala.Unit]): Query[scala.Double] with QueryHelpers = js.native
   def estimatedDocumentCount(options: js.Any): Query[scala.Double] with QueryHelpers = js.native
   def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ scala.Double, scala.Unit]): Query[scala.Double] with QueryHelpers = js.native
+  /**
+    * Returns true if at least one document exists in the database that matches
+    * the given `filter`, and false otherwise.
+    */
+  def exists(filter: js.Any): js.Promise[scala.Boolean] = js.native
+  def exists(filter: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ scala.Boolean, scala.Unit]): js.Promise[scala.Boolean] = js.native
   /**
     * Finds documents.
     * @param projection optional fields to return

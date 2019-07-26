@@ -3639,6 +3639,109 @@ object resourcesNs extends js.Object {
     ): js.Promise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
   }
   
+  /** https://stripe.com/docs/api/payment_methods */
+  @js.native
+  class PaymentMethods () extends js.Object {
+    def attach(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodAttachOptions
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def attach(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodAttachOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def attach(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodAttachOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def attach(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodAttachOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def create(data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodCreationOptions): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def create(
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def create(
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def create(
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodCreationOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def detach(paymentMethodId: java.lang.String): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def detach(paymentMethodId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def detach(
+      paymentMethodId: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def detach(
+      paymentMethodId: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def list[T /* <: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodType */](data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodListOptions[T]): stripeLib.stripeMod.IListPromise[
+        stdLib.Extract[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod, stripeLib.Anon_Type[T]]
+      ] = js.native
+    def list[T /* <: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodType */](
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodListOptions[T],
+      options: stripeLib.stripeMod.HeaderOptions
+    ): stripeLib.stripeMod.IListPromise[
+        stdLib.Extract[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod, stripeLib.Anon_Type[T]]
+      ] = js.native
+    def list[T /* <: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodType */](
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodListOptions[T],
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]]
+    ): stripeLib.stripeMod.IListPromise[
+        stdLib.Extract[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod, stripeLib.Anon_Type[T]]
+      ] = js.native
+    def list[T /* <: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodType */](
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodListOptions[T],
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]]
+    ): stripeLib.stripeMod.IListPromise[
+        stdLib.Extract[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod, stripeLib.Anon_Type[T]]
+      ] = js.native
+    def retrieve(paymentMethodId: java.lang.String): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def retrieve(paymentMethodId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def retrieve(
+      paymentMethodId: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def retrieve(
+      paymentMethodId: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def update(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodUpdateOptions
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def update(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def update(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+    def update(
+      paymentMethodId: java.lang.String,
+      data: stripeLib.stripeMod.paymentMethodsNs.IPaymentMethodUpdateOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod]
+    ): js.Promise[stripeLib.stripeMod.paymentMethodsNs.IPaymentMethod] = js.native
+  }
+  
   @js.native
   class Payouts ()
     extends stripeLib.stripeMod.StripeResource {
@@ -4258,6 +4361,12 @@ object resourcesNs extends js.Object {
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession]
     ): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
     def retrieve(data: java.lang.String): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
+    def retrieve(data: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
+    def retrieve(
+      data: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession]
+    ): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
     def retrieve(
       data: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession]

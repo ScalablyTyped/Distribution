@@ -13,8 +13,6 @@ object ^ extends js.Object {
   def enableLogging(logger_ : js.Function1[/* a */ java.lang.String, scala.Unit], persistent: scala.Boolean): scala.Unit = js.native
   def enableLogging(logger_ : scala.Boolean): scala.Unit = js.native
   def enableLogging(logger_ : scala.Boolean, persistent: scala.Boolean): scala.Unit = js.native
-  def registerDatabase(
-    instance: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseNamespace */ js.Any
-  ): scala.Unit = js.native
+  def registerDatabase(instance: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseNamespace): scala.Unit = js.native
 }
 

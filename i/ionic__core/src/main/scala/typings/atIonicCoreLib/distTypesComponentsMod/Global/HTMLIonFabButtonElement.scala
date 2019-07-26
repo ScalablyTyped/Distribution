@@ -87,7 +87,7 @@ class HTMLIonFabButtonElementCls () extends HTMLIonFabButtonElement {
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
   /**
-    * If `true`, the fab button will be translucent. Only applies to `ios` mode on devices that support [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
+    * If `true`, the fab button will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   /* CompleteClass */
   override var translucent: scala.Boolean = js.native

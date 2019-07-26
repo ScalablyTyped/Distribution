@@ -16,7 +16,7 @@ object ModelPopulateOptions {
     path: java.lang.String,
     justOne: js.UndefOr[scala.Boolean] = js.undefined,
     `match`: js.Any = null,
-    model: java.lang.String = null,
+    model: java.lang.String | (Model[_, js.Object]) = null,
     options: js.Any = null,
     populate: QueryPopulateOptions | js.Array[QueryPopulateOptions] = null,
     select: js.Any = null
@@ -24,7 +24,7 @@ object ModelPopulateOptions {
     val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(justOne)) __obj.updateDynamic("justOne")(justOne)
     if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select)

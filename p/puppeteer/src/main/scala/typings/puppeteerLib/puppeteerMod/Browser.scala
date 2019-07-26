@@ -46,6 +46,8 @@ trait Browser
   override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
   /* InferMemberOverrides */
   override def getMaxListeners(): scala.Double = js.native
+  /** Indicates that the browser is connected. */
+  def isConnected(): scala.Boolean = js.native
   /* InferMemberOverrides */
   override def listenerCount(`type`: java.lang.String): scala.Double = js.native
   /* InferMemberOverrides */

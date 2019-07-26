@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object intlDashMessageformatLibNumbers {
   @js.native
   sealed trait `0`
-    extends intlDashMessageformatLib.libCoreMod.PART_TYPE
+    extends intlDashMessageformatLib.libFormattersMod.PART_TYPE
   
   @js.native
   sealed trait `1`
-    extends intlDashMessageformatLib.libCoreMod.PART_TYPE
+    extends intlDashMessageformatLib.libFormattersMod.PART_TYPE
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

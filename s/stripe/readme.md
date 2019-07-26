@@ -66,7 +66,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ethan Setnik <https://github.com/esetnik>
 //                 Pavel Ivanov <https://github.com/schfkt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

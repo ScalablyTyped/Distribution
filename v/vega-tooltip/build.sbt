@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-tooltip"
-version := "0.17.1-25c1e8"
+version := "0.18.1-36ca3a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

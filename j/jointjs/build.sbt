@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jointjs"
-version := "3.0.2-a44e54"
+version := "3.0.3-2500d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

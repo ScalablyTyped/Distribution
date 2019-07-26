@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-themes"
-version := "2.3.0-603544"
+version := "2.3.2-603544"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
