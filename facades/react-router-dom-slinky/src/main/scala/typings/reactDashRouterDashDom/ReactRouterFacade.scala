@@ -1,33 +1,32 @@
-package typings.reactDashRouterDashNativeLib
+package typings.reactDashRouterDashDom
 
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
-import typings.historyLib.historyMod.{Location, LocationState}
-import typings.reactDashRouterDashNativeLib.{reactDashRouterDashNativeLibProps, reactDashRouterDashNativeLibComponents => RRN}
-import typings.reactDashRouterLib.reactDashRouterMod.{
+import typings.history.historyMod.{Location, LocationState}
+import typings.reactDashRouterDashDom.{reactDashRouterDashDomProps, reactDashRouterDashDomComponents => RRD}
+import typings.reactDashRouter.reactDashRouterMod.{
   RouteChildrenProps,
   RouteComponentProps,
   RouteProps,
   StaticContext
 }
-import typings.reactLib.ScalableSlinky.{importSTComponent, ExternalComponentP}
+import typings.react.ScalableSlinky.{importSTComponent, ExternalComponentP}
 
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-object ReactRouterNativeFacade extends reactDashRouterDashNativeLibProps {
+object ReactRouterFacade extends reactDashRouterDashDomProps {
 
-  @inline def NativeRouter     : ExternalComponentP[NativeRouterProps]      = importSTComponent(RRN.NativeRouter)
-  @inline def Link             : ExternalComponentP[LinkProps]              = importSTComponent(RRN.Link)
-  @inline def DeepLinking      : ExternalComponentP[DeepLinkingProps]       = importSTComponent(RRN.DeepLinking)
-  @inline def MemoryRouter     : ExternalComponentP[MemoryRouterProps]      = importSTComponent(RRN.MemoryRouter)
-  @inline def BackButton       : ExternalComponentP[BackButtonProps]        = importSTComponent(RRN.BackButton)
-  @inline def AndroidBackButton: ExternalComponentP[AndroidBackButtonProps] = importSTComponent(RRN.AndroidBackButton)
-  @inline def Prompt           : ExternalComponentP[PromptProps]            = importSTComponent(RRN.Prompt)
-  @inline def Redirect         : ExternalComponentP[RedirectProps]          = importSTComponent(RRN.Redirect)
-  @inline def Router           : ExternalComponentP[RouterProps]            = importSTComponent(RRN.Router)
-  @inline def StaticRouter     : ExternalComponentP[StaticRouterProps]      = importSTComponent(RRN.StaticRouter)
-  @inline def Switch           : ExternalComponentP[SwitchProps]            = importSTComponent(RRN.Switch)
+  @inline def BrowserRouter: ExternalComponentP[BrowserRouterProps]  = importSTComponent(RRD.BrowserRouter)
+  @inline def HashRouter   : ExternalComponentP[HashRouterProps]     = importSTComponent(RRD.HashRouter)
+  @inline def Link         : ExternalComponentP[LinkProps]           = importSTComponent(RRD.Link)
+  @inline def MemoryRouter : ExternalComponentP[MemoryRouterProps]   = importSTComponent(RRD.MemoryRouter)
+  @inline def NavLink      : ExternalComponentP[NavLinkProps]        = importSTComponent(RRD.NavLink)
+  @inline def Prompt       : ExternalComponentP[PromptProps]         = importSTComponent(RRD.Prompt)
+  @inline def Redirect     : ExternalComponentP[RedirectProps]       = importSTComponent(RRD.Redirect)
+  @inline def Router       : ExternalComponentP[RouterProps]         = importSTComponent(RRD.Router)
+  @inline def StaticRouter : ExternalComponentP[StaticRouterProps]   = importSTComponent(RRD.StaticRouter)
+  @inline def Switch       : ExternalComponentP[SwitchProps]         = importSTComponent(RRD.Switch)
 
   /** The description of the `Route` component is somewhat rough, so this is a somewhat better slinky wrapper.
     *
@@ -61,6 +60,6 @@ object ReactRouterNativeFacade extends reactDashRouterDashNativeLibProps {
     if (!js.isUndefined(sensitive)) props.updateDynamic("sensitive")(sensitive)
     if (!js.isUndefined(strict)) props.updateDynamic("strict")(strict)
 
-    importSTComponent(RRN.Route[RouteProps])(props.asInstanceOf[RouteProps])
+    importSTComponent(RRD.Route[RouteProps])(props.asInstanceOf[RouteProps])
   }
 }

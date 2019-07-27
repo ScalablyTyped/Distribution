@@ -1,12 +1,12 @@
-package typings.antdLib
+package typings.antd
 
 import slinky.core.TagMod
 import slinky.core.facade.ReactElement
-import typings.antdLib.esFormFormMod.default.{create => createForm}
-import typings.antdLib.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
-import typings.antdLib.{antdLibComponents => Antd}
-import typings.reactLib.ScalableSlinky._
-import typings.reactLib.reactMod.ComponentType
+import typings.antd.esFormFormMod.default.{create => createForm}
+import typings.antd.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
+import typings.antd.{antdComponents => Antd}
+import typings.react.ScalableSlinky._
+import typings.react.reactMod.ComponentType
 
 import scala.scalajs.js
 
@@ -22,7 +22,7 @@ import scala.scalajs.js
  *
  * There are also some helper methods for working with form components, see usage in demo
  */
-object AntdFacade extends antdLibProps {
+object AntdFacade extends antdProps {
   /* rewrites to slinky external components */
   @inline def ActionButton:       ExternalComponentP[ActionButtonProps]                                                = importSTComponent(Antd.ActionButton)
   @inline def Affix:              ExternalComponentP[AffixProps]                                                       = importSTComponent(Antd.Affix)
@@ -133,10 +133,10 @@ object AntdFacade extends antdLibProps {
   @inline def Typography:         ExternalComponentP[TypographyProps]                                                  = importSTComponent(Antd.Typography)
   @inline def Upload:             ExternalComponentP[UploadProps]                                                      = importSTComponent(Antd.Upload)
 
-  @inline def NotificationArgsProps = typings.antdLib.esNotificationMod.ArgsProps
-  type NotificationArgsProps = typings.antdLib.esNotificationMod.ArgsProps
+  @inline def NotificationArgsProps = typings.antd.esNotificationMod.ArgsProps
+  type NotificationArgsProps = typings.antd.esNotificationMod.ArgsProps
 
-  val antdStrings: typings.antdLib.antdLibStrings.type = typings.antdLib.antdLibStrings
+  val antdStrings: typings.antd.antdStrings.type = typings.antd.antdStrings
   
   /**
    * This is an example of something a bit more complicated than just rewriting component types, and which a manually
