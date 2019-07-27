@@ -15,8 +15,6 @@ class EngineFederatedTracingExtension[TContext] protected ()
   var treeBuilder: js.Any = js.native
   @JSName("didEncounterErrors")
   def didEncounterErrors_MEngineFederatedTracingExtension(errors: js.Array[graphqlLib.graphqlMod.GraphQLError]): scala.Unit = js.native
-  @JSName("executionDidStart")
-  def executionDidStart_MEngineFederatedTracingExtension(): graphqlDashExtensionsLib.graphqlDashExtensionsMod.EndHandler | scala.Unit = js.native
   @JSName("format")
   def format_MEngineFederatedTracingExtension(): js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   @JSName("requestDidStart")

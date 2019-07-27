@@ -66,6 +66,10 @@ object ^ extends js.Object {
   def rectangle(latLngBounds: LatLngBoundsExpression, options: PolylineOptions): Rectangle[_] = js.native
   def svg(): SVG = js.native
   def svg(options: RendererOptions): SVG = js.native
+  def svgOverlay(svgImage: java.lang.String, bounds: LatLngBoundsExpression): SVGOverlay = js.native
+  def svgOverlay(svgImage: java.lang.String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay = js.native
+  def svgOverlay(svgImage: stdLib.SVGElement, bounds: LatLngBoundsExpression): SVGOverlay = js.native
+  def svgOverlay(svgImage: stdLib.SVGElement, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay = js.native
   def tileLayer(urlTemplate: java.lang.String): TileLayer = js.native
   def tileLayer(urlTemplate: java.lang.String, options: TileLayerOptions): TileLayer = js.native
   def tooltip(): Tooltip = js.native

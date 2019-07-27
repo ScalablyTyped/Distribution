@@ -772,6 +772,7 @@
 [debug] PhaseRunner.scala:84 Success [id => office-ui-fabric-react, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => office-ui-fabric-react, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => office-ui-fabric-react, phase => typescript] 
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(office-ui-fabric-react) [id => office-ui-fabric-react, phase => typescript, file => ../components/SpinButton/SpinButton.d.ts] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(office-ui-fabric-react) [id => office-ui-fabric-react, phase => typescript, file => ../components/SpinButton/SpinButton.types.d.ts] 
 [debug] PhaseRunner.scala:92 Ignored [id => office-ui-fabric-react, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => office-ui-fabric-react, phase => typescript] 

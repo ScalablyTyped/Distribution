@@ -217,6 +217,7 @@
 | [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
+| [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
 | [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
@@ -392,7 +393,6 @@
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones | aws, amazon, regions, availability, zones, azs, global, infrastructure |
-| [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript | api, amazon, aws, ec2, simpledb, s3, sqs, ses, sns, route53, rds, elasticache, cloudfront, fps, cloudformation, cloudwatch, dynamodb, iam, swf, autoscaling, cloudsearch, elb, loadbalancing, emr, mapreduce, importexport, storagegateway, workflow, ebs, vpc, beanstalk, glacier, kinesis, cloudtrail, waf |
 | [aws-serverless-express](./a/aws-serverless-express) | This library enables you to utilize AWS Lambda and | aws, serverless, api, gateway, lambda, express |
 | [aws4](./a/aws4) | Signs and prepares requests using AWS Signature Ve | amazon, aws, signature, s3, ec2, autoscaling, cloudformation, elasticloadbalancing, elb, elasticbeanstalk, cloudsearch, dynamodb, kinesis, lambda, glacier, sqs, sns, iam, sts, ses, swf, storagegateway, datapipeline, directconnect, redshift, opsworks, rds, monitoring, cloudtrail, cloudfront, codedeploy, elasticache, elasticmapreduce, elastictranscoder, emr, cloudwatch, mobileanalytics, cognitoidentity, cognitosync, cognito, containerservice, ecs, appstream, keymanagementservice, kms, config, cloudhsm, route53, route53domains, logs |
 | [axe-core](./a/axe-core) | Accessibility engine for automated Web UI testing | Accessibility, a11y, testing, unit, tdd, bdd, aXe |
@@ -1300,6 +1300,7 @@
 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API | cosmosdb, cosmos db, documentdb, document database, azure, nosql, database, cloud |
 | [documentdb-server](./d/documentdb-server) | - | - |
 | [documentdb-session](./d/documentdb-session) | An express-session Store for Azure's DocumentDB No | documentdb, express-session, express, session, azure |
+| [dogapi](./d/dogapi) | Datadog API Node.JS Client | datadog, api, datadog api, dog, dogapi, dog api |
 | [doge-seed](./d/doge-seed) | Dank mnemonic seed phrases | bitcoin, cryptocurrency, seed, phrase, bip39 |
 | [dom-clipboard-api](./d/dom-clipboard-api) | - | - |
 | [dom-helpers](./d/dom-helpers) | tiny modular DOM lib for ie8+ | dom-helpers, react-component, dom, api, cross-browser, style, event, height, width, dom-helpers, class, classlist, css |
@@ -1416,6 +1417,7 @@
 | [ejs-locals](./e/ejs-locals) | Express 3.x locals for layout, partial and blocks. | - |
 | [ejson](./e/ejson) | EJSON - Extended and Extensible JSON library from  | EJSON, Extended, Extensible, JSON, Meteor, ejson, primus |
 | [elastic-apm-node](./e/elastic-apm-node) | The official Elastic APM agent for Node.js | opbeat, elastic, elasticapm, elasticsearch, log, logging, bug, bugs, error, errors, exception, exceptions, catch, monitor, monitoring, alert, alerts, performance, apm, ops, devops, stacktrace, trace, tracing, distributedtracing, distributed-tracing |
+| [elastic__elasticsearch](./e/elastic__elasticsearch) | The official Elasticsearch client for Node.js | elasticsearch, elastic, kibana, mapping, REST, search, client, index |
 | [elastic_dot_js](./e/elastic_dot_js) | Javascript API for ElasticSearch DSL | elasticsearch, search, elasticjs, elastic, elastic search, es, ejs |
 | [elasticsearch](./e/elasticsearch) | The official low-level Elasticsearch client for No | elasticsearch, mapping, REST |
 | [electron](./e/electron) | Build cross platform desktop apps with JavaScript, | electron |
@@ -2471,6 +2473,7 @@
 | [hibp](./h/hibp) | A Promise-based API for querying the 'Have I been  | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
 | [highcharts](./h/highcharts) | JavaScript charting framework | charts, dataviz, graphs, visualization, data, browserify, webpack |
 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng | angular |
+| [highcharts-react-official](./h/highcharts-react-official) | Official minimal  | highcharts, highstock, highmaps, react |
 | [highland](./h/highland) | The high-level streams library | - |
 | [highlight_dot_js](./h/highlight_dot_js) | Syntax highlighting with language autodetection. | highlight, syntax |
 | [hiredis](./h/hiredis) | Wrapper for reply processing code in hiredis | - |
@@ -3053,6 +3056,7 @@
 | [jsmockito](./j/jsmockito) | Javascript mocking framework inspired by the aweso | - |
 | [jsnlog](./j/jsnlog) | Simple logging package. Use on client and/or serve | logging, client, exceptions, ajax, timeouts, debugging, winston |
 | [jsnox](./j/jsnox) | Write concise React components without JSX | react, reactjs, jsx |
+| [json-buffer](./j/json-buffer) | JSON parse & stringify that supports binary via bo | - |
 | [json-editor](./j/json-editor) | JSON Schema based editor | json, schema, jsonschema, editor |
 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif | json, json file, formatting, read, write, promise, promiseback |
 | [json-js](./j/json-js) | JSON in JavaScript | cyclic, json, cycle, parsing |
@@ -4740,6 +4744,7 @@
 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs | polly, pollyjs, adapter |
 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs | polly, pollyjs, record, replay, fetch, adapter |
 | [pollyjs__adapter-node-htt](./p/pollyjs__adapter-node-http) | Node HTTP adapter for @pollyjs | polly, pollyjs, record, replay, http, adapter |
+| [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs | polly, pollyjs, record, replay, xhr, adapter |
 | [pollyjs__core](./p/pollyjs__core) | Record, replay, and stub HTTP Interactions | polly, pollyjs, vcr, record, replay, recorder, test, mock |
 | [pollyjs__persister](./p/pollyjs__persister) | Extendable base persister class used by @pollyjs | polly, pollyjs, persister |
 | [pollyjs__persister-fs](./p/pollyjs__persister-fs) | File system persister for @pollyjs | polly, pollyjs, record, replay, fs, file |
@@ -5320,6 +5325,7 @@
 | [react-native-htmlview](./r/react-native-htmlview) | A component which renders HTML content as native v | react, html, react-native, react-component, react-native-component, mobile, ui |
 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery | react-native, react-component, android, Huawei, Protected, apps |
 | [react-native-i18n](./r/react-native-i18n) | Provide I18n to your React Native application | react-native, react-component, ios, i18n |
+| [react-native-incall-manag](./r/react-native-incall-manager) | Handling media-routes/sensors/events during a audi | React, ReactNative, WebRTC, Phone, Call, InCall, Talk, SIP, Voip |
 | [react-native-indicators](./r/react-native-indicators) | Activity indicator collection | react, react-component, react-native, ios, android, activity, indicator, spinner, pacman, material |
 | [react-native-keep-awake](./r/react-native-keep-awake) | Keep the screen from going to sleep. iOS and Andro | react-native, ios, android, awake, screen, lock, sleep |
 | [react-native-keyboard-spa](./r/react-native-keyboard-spacer) | Plug and play react-Native keyboard spacer view. | react-component, react-native, ios, keyboard, spacer |
@@ -5390,6 +5396,7 @@
 | [react-native-version-numb](./r/react-native-version-number) | Access app version inside React Native | react, react-native, ios, react-component |
 | [react-native-video](./r/react-native-video) | A  element for react-native | - |
 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation | react-native react-component pdf viewer view android ios pdf |
+| [react-native-webrtc](./r/react-native-webrtc) | WebRTC for React Native | react-component, react-native, ios, android, webrtc |
 | [react-native-zeroconf](./r/react-native-zeroconf) | A Zeroconf discovery utility for react-native | react-component, react-native, zeroconf, bonjour, avahi, network, lan, ios, android, network-discovery, discovery |
 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor | - |
 | [react-navigation](./r/react-navigation) | Routing and navigation for your React Native apps | - |
@@ -7167,6 +7174,7 @@
 | [yargs](./y/yargs) | yargs the modern, pirate-themed, successor to opti | argument, args, option, parser, parsing, cli, command |
 | [yargs-interactive](./y/yargs-interactive) | Build interactive command line tools without worri | yargs, interactive, cli, arguments, args, prompt, inquirer |
 | [yargs-parser](./y/yargs-parser) | the mighty option parser used by yargs | argument, parser, yargs, command, cli, parsing, option, args, argument |
+| [yarnpkg__lockfile](./y/yarnpkg__lockfile) | The parser/stringifier for Yarn lockfiles. | yarn, yarnpkg, lockfile, dependency, npm |
 | [yauzl](./y/yauzl) | yet another unzip library for node | unzip, zip, stream, archive, file |
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |

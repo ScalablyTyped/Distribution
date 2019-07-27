@@ -1,4 +1,0 @@
-[debug] PhaseRunner.scala:84 Success [id => antd-native-slinky-facade, phase => typescript] 
-[debug] PhaseRunner.scala:84 Success [id => antd-native-slinky-facade, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [antd-native-slinky-facade => Couldn't resolve ant-design__icons-react-native] [id => antd-native-slinky-facade, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [antd-native-slinky-facade => Couldn't resolve ant-design__icons-react-native] [id => antd-native-slinky-facade, phase => publish] 

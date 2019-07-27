@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BasePost[T /* <: Context */] extends BaseResponse {
+trait BasePost[T /* <: Context */]
+  extends BaseResponse
+     with /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var author: scala.Double
   var categories: js.Array[scala.Double]
   var comment_status: OpenOrClosed
@@ -72,10 +74,12 @@ object BasePost {
     template: java.lang.String,
     title: Contextual[T, js.Object, js.Object],
     `type`: java.lang.String,
+    StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     _embedded: stdLib.Record[java.lang.String, js.Array[_]] = null
   ): BasePost[T] = {
     val __obj = js.Dynamic.literal(_links = _links, author = author, categories = categories, comment_status = comment_status, content = content.asInstanceOf[js.Any], date = date, date_gmt = date_gmt, excerpt = excerpt.asInstanceOf[js.Any], featured_media = featured_media, format = format, generated_slug = generated_slug, guid = guid.asInstanceOf[js.Any], id = id, link = link, meta = meta, modified = modified, modified_gmt = modified_gmt, password = password, permalink_template = permalink_template, ping_status = ping_status, slug = slug, status = status, sticky = sticky, tags = tags, template = template, title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
     __obj.asInstanceOf[BasePost[T]]
   }

@@ -78,7 +78,6 @@
 | 0.8794244764295105 | [vue-router](./v/vue-router) | Official router for Vue.js 2
 | 0.8794049245194621 | [pify](./p/pify) | Promisify a callback-style function
 | 0.8793111233094311 | [react-router-redux](./r/react-router-redux) | Ruthlessly simple bindings to keep react-router an
-| 0.8780174255795559 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
 | 0.8778824096619322 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 0.8770448908707043 | [d3](./d/d3) | Data-Driven Documents
 | 0.8759344401061098 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with 
@@ -1136,6 +1135,7 @@
 | 0.7628057655466027 | [emotion__serialize](./e/emotion__serialize) | serialization utils for emotion
 | 0.7627274107155916 | [execall](./e/execall) | Find multiple RegExp matches in a string
 | 0.7626279309420326 | [inflected](./i/inflected) | A port of ActiveSupport's inflector to Node.js
+| 0.7626192142357207 | [json-buffer](./j/json-buffer) | JSON parse & stringify that supports binary via bo
 | 0.7625362527355158 | [imagemin-gifsicle](./i/imagemin-gifsicle) | Imagemin plugin for Gifsicle
 | 0.7625361765467087 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o
 | 0.7624509154264008 | [fetch-mock](./f/fetch-mock) | Mock http requests made using fetch (or isomorphic
@@ -1216,6 +1216,7 @@
 | 0.7584435226005992 | [lodash_dot_constant](./l/lodash_dot_constant) | The modern build of lodash’s _.constant as a modul
 | 0.7583772797303707 | [apollo-link-ws](./a/apollo-link-ws) | WebSocket transport layer for GraphQL
 | 0.7583596237841563 | [gulp-replace](./g/gulp-replace) | A string replace plugin for gulp
+| 0.758321938776924 | [elastic__elasticsearch](./e/elastic__elasticsearch) | The official Elasticsearch client for Node.js
 | 0.7582207654485589 | [chownr](./c/chownr) | like chown -R
 | 0.7580488388327272 | [lodash_dot_issafeinteger](./l/lodash_dot_issafeinteger) | The lodash method _.isSafeInteger exported as a mo
 | 0.7580003153588468 | [conf](./c/conf) | Simple config handling for your app or module
@@ -1928,6 +1929,7 @@
 | 0.7195340090734188 | [tmp](./t/tmp) | Temporary file and directory creator
 | 0.7194303242930461 | [dashify](./d/dashify) | Convert a camelcase or space-separated string to a
 | 0.7193364878745423 | [run-parallel-limit](./r/run-parallel-limit) | Run an array of functions in parallel, but limit t
+| 0.7192871644335465 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs
 | 0.7192612642204534 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp
 | 0.7191945300293761 | [cli-progress](./c/cli-progress) | Easy to use Progress-Bar for Command-Line/Terminal
 | 0.7191791934692227 | [mkpath](./m/mkpath) | Make all directories in a path, like mkdir -p
@@ -2934,6 +2936,7 @@
 | 0.6741495094558083 | [gitlab](./g/gitlab) | Full NodeJS implementation of the GitLab API. Supp
 | 0.674134945272179 | [uuidjs](./u/uuidjs) | RFC-compliant UUID Generator for JavaScript
 | 0.6741328350439829 | [vue-resource](./v/vue-resource) | The HTTP client for Vue.js
+| 0.6741276028283187 | [highcharts-react-official](./h/highcharts-react-official) | Official minimal 
 | 0.6740396398410962 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.6740242432184549 | [egg-cookies](./e/egg-cookies) | cookies module for egg
 | 0.6739806627450023 | [node-config-manager](./n/node-config-manager) | A configuration manager for NodeJS. It helps you t
@@ -4626,6 +4629,7 @@
 | 0.523432599386137 | [rx-lite-aggregates](./r/rx-lite-aggregates) | Lightweight library with aggregate functions for c
 | 0.5232928517785663 | [kraken-js](./k/kraken-js) | An express-based Node.js web application bootstrap
 | 0.5228257434483855 | [react-collapse](./r/react-collapse) | Component-wrapper for collapse animation with reac
+| 0.5227588261889428 | [react-native-webrtc](./r/react-native-webrtc) | WebRTC for React Native
 | 0.5226261855387313 | [reflux](./r/reflux) | A simple library for uni-directional dataflow appl
 | 0.5225250103482502 | [jquery-backstretch](./j/jquery-backstretch) | A simple jQuery plugin that allows you to add a dy
 | 0.5222757284002562 | [yoga-layout](./y/yoga-layout) | Yoga is a cross-platform layout engine enabling ma
@@ -5932,6 +5936,7 @@
 | 0.330217415347313 | [passport-anonymous](./p/passport-anonymous) | Anonymous authentication strategy for Passport.
 | 0.33009496556758355 | [easy-xapi-utils](./e/easy-xapi-utils) | Utils for easy-xapi
 | 0.32991343766997344 | [restling](./r/restling) | Restling is a lightweight Node.js module for build
+| 0.32980503259384414 | [yarnpkg__lockfile](./y/yarnpkg__lockfile) | The parser/stringifier for Yarn lockfiles.
 | 0.32967695410595255 | [egjs__axes](./e/egjs__axes) | A module used to change the information of user ac
 | 0.32940073979527273 | [react-native-qrcode](./r/react-native-qrcode) | react-native qrocode generator
 | 0.3292221986259532 | [camo](./c/camo) | A class-based ES6 ODM for Mongo-like databases.
@@ -6405,6 +6410,7 @@
 | 0.22842720681238812 | [androiduix](./a/androiduix) | Framework to make high-performance SPA/WebApp. Ren
 | 0.22834625549519358 | [mrmlnc__readdir-enhanced](./m/mrmlnc__readdir-enhanced) | fs.readdir with sync, async, and streaming APIs + 
 | 0.22816529174730715 | [express-ws-routes](./e/express-ws-routes) | Handle WebSocket connections using express routes.
+| 0.2269701992739989 | [dogapi](./d/dogapi) | Datadog API Node.JS Client
 | 0.22583764496409922 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
 | 0.22578708055864266 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
 | 0.2253756489942691 | [codegen_dot_macro](./c/codegen_dot_macro) | Generate code at build-time with babel-macros
@@ -6495,6 +6501,7 @@
 | 0.1948351277466502 | [raspi-gpio](./r/raspi-gpio) | Provides access to GPIO on the Raspberry Pi from N
 | 0.19476799084088017 | [firebase__installations](./f/firebase__installations) | -
 | 0.19441435159256507 | [riot-api-nodejs](./r/riot-api-nodejs) | A NodeJS Library for Riot Games API
+| 0.19402941327889944 | [react-native-incall-manag](./r/react-native-incall-manager) | Handling media-routes/sensors/events during a audi
 | 0.1939866647563361 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images
 | 0.19365121377778996 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0.1928181758853048 | [react-addons-test-utils](./r/react-addons-test-utils) | This package provides the React TestUtils add-on.

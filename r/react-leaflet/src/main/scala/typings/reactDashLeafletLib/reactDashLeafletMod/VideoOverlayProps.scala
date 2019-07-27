@@ -27,6 +27,7 @@ object VideoOverlayProps {
     crossOrigin: leafletLib.leafletMod.CrossOrigin = null,
     errorOverlayUrl: java.lang.String = null,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    keepAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
     leaflet: LeafletContext = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     opacity: scala.Int | scala.Double = null,
@@ -43,6 +44,7 @@ object VideoOverlayProps {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

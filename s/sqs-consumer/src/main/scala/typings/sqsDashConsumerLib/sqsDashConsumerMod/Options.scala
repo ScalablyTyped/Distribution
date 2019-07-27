@@ -12,24 +12,29 @@ trait Options extends js.Object {
   var messageAttributeNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var queueUrl: java.lang.String
   var region: js.UndefOr[java.lang.String] = js.undefined
-  var sqs: js.UndefOr[awsDashSdkLib.awsDashSdkMod.SQS] = js.undefined
+  var sqs: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any
+  ] = js.undefined
   var terminateVisibilityTimeout: js.UndefOr[scala.Boolean] = js.undefined
   var visibilityTimeout: js.UndefOr[scala.Double] = js.undefined
   var waitTimeSeconds: js.UndefOr[scala.Double] = js.undefined
-  def handleMessage(message: awsDashSdkLib.clientsSqsMod.Message, done: ConsumerDone): js.Any
+  def handleMessage(
+    message: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS.Message */ js.Any,
+    done: ConsumerDone
+  ): js.Any
 }
 
 object Options {
   @scala.inline
   def apply(
-    handleMessage: (awsDashSdkLib.clientsSqsMod.Message, ConsumerDone) => js.Any,
+    handleMessage: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS.Message */ js.Any, ConsumerDone) => js.Any,
     queueUrl: java.lang.String,
     attributeNames: js.Array[java.lang.String] = null,
     authenticationErrorTimeout: scala.Int | scala.Double = null,
     batchSize: scala.Int | scala.Double = null,
     messageAttributeNames: js.Array[java.lang.String] = null,
     region: java.lang.String = null,
-    sqs: awsDashSdkLib.awsDashSdkMod.SQS = null,
+    sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null,
     terminateVisibilityTimeout: js.UndefOr[scala.Boolean] = js.undefined,
     visibilityTimeout: scala.Int | scala.Double = null,
     waitTimeSeconds: scala.Int | scala.Double = null

@@ -6,20 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CredstashConfig extends js.Object {
-  var awsOpts: js.UndefOr[awsDashSdkLib.clientsKmsMod.ClientConfiguration] = js.undefined
-  var dynamoOpts: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ClientConfiguration] = js.undefined
+  var awsOpts: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
+  ] = js.undefined
+  var dynamoOpts: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any
+  ] = js.undefined
   var kmsKey: js.UndefOr[java.lang.String] = js.undefined
-  var kmsOpts: js.UndefOr[awsDashSdkLib.clientsKmsMod.ClientConfiguration] = js.undefined
+  var kmsOpts: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
+  ] = js.undefined
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object CredstashConfig {
   @scala.inline
   def apply(
-    awsOpts: awsDashSdkLib.clientsKmsMod.ClientConfiguration = null,
-    dynamoOpts: awsDashSdkLib.clientsDynamodbMod.ClientConfiguration = null,
+    awsOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
+    dynamoOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any = null,
     kmsKey: java.lang.String = null,
-    kmsOpts: awsDashSdkLib.clientsKmsMod.ClientConfiguration = null,
+    kmsOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
     table: java.lang.String = null
   ): CredstashConfig = {
     val __obj = js.Dynamic.literal()

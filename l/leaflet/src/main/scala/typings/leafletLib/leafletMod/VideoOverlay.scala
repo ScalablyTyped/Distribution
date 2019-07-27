@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("leaflet", "VideoOverlay")
 @js.native
 class VideoOverlay protected () extends Layer {
-  /** VideoOverlay doesn't extend ImageOverlay because ImageOverlay.getElement returns HTMLImageElement */
+  /** VideoOverlay doesn't extend ImageOverlay because VideoOverlay.getElement returns HTMLImageElement */
   def this(video: java.lang.String, bounds: LatLngBoundsExpression) = this()
   def this(video: js.Array[java.lang.String], bounds: LatLngBoundsExpression) = this()
   def this(video: stdLib.HTMLVideoElement, bounds: LatLngBoundsExpression) = this()

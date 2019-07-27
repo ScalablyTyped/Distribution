@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 ## Library description:
 JavaScript library for mobile-friendly interactive maps
@@ -35,13 +35,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Leaflet.js 1.4
+// Type definitions for Leaflet.js 1.5
 // Project: https://github.com/Leaflet/Leaflet
 // Definitions by: Alejandro Sánchez <https://github.com/alejo90>
 //                 Arne Schubert <https://github.com/atd-schubert>
 //                 Michael Auer <https://github.com/mcauer>
 //                 Roni Karilkar <https://github.com/ronikar>
 //                 Sandra Frischmuth <https://github.com/sanfrisc>
+//                 Vladimir Dashukevich <https://github.com/life777>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

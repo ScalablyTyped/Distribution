@@ -16,6 +16,7 @@ package object jasmineNs {
   /* Rewritten from type alias, can be one of: 
     - T
     - ObjectContaining[T]
+    - AsymmetricMatcher
     - Any
     - Spy
     - / * import warning: ImportType.apply c Unsupported type mapping: 
@@ -25,9 +26,17 @@ package object jasmineNs {
   type Expected[T] = _Expected[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ jasmineLib.jasmineLibStrings.Expected with T) | T
-  type ExpectedRecursive[T] = T | ObjectContaining[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  /* Rewritten from type alias, can be one of: 
+    - T
+    - ObjectContaining[T]
+    - AsymmetricMatcher
+    - / * import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: object | jasmine.jasmine.Any}
-    */ jasmineLib.jasmineLibStrings.ExpectedRecursive with js.Any)
+    * / jasmineLib.jasmineLibStrings.ExpectedRecursive with js.Any
+  */
+  type ExpectedRecursive[T] = _ExpectedRecursive[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: object | jasmine.jasmine.Any}
+    */ jasmineLib.jasmineLibStrings.ExpectedRecursive with js.Any) | T
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], scala.Unit]
   type SpyObj[T] = T with jasmineLib.jasmineLibStrings.SpyObj with js.Any

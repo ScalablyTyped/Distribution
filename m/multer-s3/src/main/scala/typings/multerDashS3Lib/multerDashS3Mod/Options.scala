@@ -57,7 +57,7 @@ trait Options extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var s3: awsDashSdkLib.awsDashSdkMod.S3
+  var s3: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any
   var serverSideEncryption: js.UndefOr[
     (js.Function3[
       /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
@@ -81,7 +81,7 @@ object Options {
       /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[java.lang.String], scala.Unit], 
       scala.Unit
     ]) | java.lang.String,
-    s3: awsDashSdkLib.awsDashSdkMod.S3,
+    s3: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any,
     acl: (js.Function3[
       /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
       /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 

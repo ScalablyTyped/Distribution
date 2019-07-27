@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mini-css-extract-plugin"
-version := "0.2-dt-20190530Z-2b1afb"
+version := "0.8-dt-20190726Z-df7cb7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

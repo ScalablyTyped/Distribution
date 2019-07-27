@@ -733,6 +733,9 @@ object resourcesNs extends js.Object {
     extends stripeLib.stripeMod.StripeResource {
     def listTransactions(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def listTransactions(data: stripeLib.stripeMod.balanceNs.IBalanceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    /*
+      * @deprecated
+      */
     def listTransactions(
       data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
@@ -760,6 +763,9 @@ object resourcesNs extends js.Object {
     ): js.Promise[stripeLib.stripeMod.balanceNs.IBalance] = js.native
     def retrieve(response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalance]): js.Promise[stripeLib.stripeMod.balanceNs.IBalance] = js.native
     def retrieveTransaction(id: java.lang.String): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    /*
+      * @deprecated
+      */
     def retrieveTransaction(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def retrieveTransaction(
       id: java.lang.String,
@@ -767,6 +773,43 @@ object resourcesNs extends js.Object {
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
     ): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def retrieveTransaction(
+      id: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
+    ): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+  }
+  
+  @js.native
+  class BalanceTransaction ()
+    extends stripeLib.stripeMod.StripeResource {
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(data: stripeLib.stripeMod.balanceNs.IBalanceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(
+      data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(
+      data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(
+      data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def list(response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def retrieve(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def retrieve(
+      id: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
+    ): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def retrieve(
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
     ): js.Promise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native

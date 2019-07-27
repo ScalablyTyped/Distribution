@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atWordpressApiDashFetchLibStrings {
   @js.native
+  sealed trait Decontextualize extends js.Object
+  
+  @js.native
   sealed trait _embedded
     extends atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Block
        with atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Category
@@ -434,6 +437,8 @@ object atWordpressApiDashFetchLibStrings {
   sealed trait view
     extends atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.Context
   
+  @scala.inline
+  def Decontextualize: Decontextualize = "Decontextualize".asInstanceOf[Decontextualize]
   @scala.inline
   def _embedded: _embedded = "_embedded".asInstanceOf[_embedded]
   @scala.inline

@@ -17,7 +17,9 @@ object ^ extends js.Object {
     callback: js.Function1[/* err */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def define(modelName: java.lang.String, config: ModelConfiguration): Model = js.native
-  def dynamoDriver(dynamoDB: dynogelsLib.dynogelsMod.AWSNs.DynamoDB): dynogelsLib.dynogelsMod.AWSNs.DynamoDB = js.native
+  def dynamoDriver(
+    dynamoDB: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB */ js.Any
+  ): js.Any = js.native
   def reset(): scala.Unit = js.native
 }
 

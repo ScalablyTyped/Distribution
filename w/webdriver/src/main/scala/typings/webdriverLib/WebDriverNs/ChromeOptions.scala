@@ -16,6 +16,7 @@ trait ChromeOptions extends js.Object {
   var minidumpPath: js.UndefOr[java.lang.String] = js.undefined
   var mobileEmulation: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var perfLoggingPrefs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var prefs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var windowTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
@@ -32,6 +33,7 @@ object ChromeOptions {
     minidumpPath: java.lang.String = null,
     mobileEmulation: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     perfLoggingPrefs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    prefs: js.Array[java.lang.String] = null,
     windowTypes: js.Array[java.lang.String] = null
   ): ChromeOptions = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +47,7 @@ object ChromeOptions {
     if (minidumpPath != null) __obj.updateDynamic("minidumpPath")(minidumpPath)
     if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation)
     if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs)
+    if (prefs != null) __obj.updateDynamic("prefs")(prefs)
     if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
     __obj.asInstanceOf[ChromeOptions]
   }

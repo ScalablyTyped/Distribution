@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectContaining[T] extends _Expected[T] {
+trait ObjectContaining[T]
+  extends _Expected[T]
+     with _ExpectedRecursive[T] {
   var jasmineToString: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var `new`: js.UndefOr[js.Function1[/* sample */ stdLib.Partial[T], stdLib.Partial[T]]] = js.undefined
   def jasmineMatches(other: js.Any, mismatchKeys: js.Array[_], mismatchValues: js.Array[_]): scala.Boolean

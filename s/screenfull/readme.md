@@ -1,7 +1,7 @@
 
 # Scala.js typings for screenfull
 
-Typings are for version 4.2.0
+Typings are for version 4.2.1
 
 ## Library description:
 Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which lets you bring the page or any element into fullscreen.

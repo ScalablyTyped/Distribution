@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayContaining[T] extends js.Object {
-  var jasmineToString: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+trait ArrayContaining[T] extends AsymmetricMatcher {
   var `new`: js.UndefOr[js.Function1[/* sample */ ArrayLike[T], ArrayLike[T]]] = js.undefined
-  def asymmetricMatch(other: js.Any): scala.Boolean
 }
 
 object ArrayContaining {

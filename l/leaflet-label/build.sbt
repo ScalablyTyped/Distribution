@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet-label"
-version := "0.2-dt-20180214Z-336069"
+version := "0.2-dt-20180214Z-a56638"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-d5dfc4",
-  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190722Z-47b199",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190726Z-bf111b",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

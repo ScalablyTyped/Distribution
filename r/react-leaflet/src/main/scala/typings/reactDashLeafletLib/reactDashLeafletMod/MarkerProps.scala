@@ -24,7 +24,6 @@ object MarkerProps {
     autoPanSpeed: scala.Int | scala.Double = null,
     bubblingMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
     children: Children = null,
-    clickable: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     icon: leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon = null,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -48,6 +47,7 @@ object MarkerProps {
     pane: java.lang.String = null,
     riseOffset: scala.Int | scala.Double = null,
     riseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowPane: java.lang.String = null,
     title: java.lang.String = null,
     zIndexOffset: scala.Int | scala.Double = null
   ): MarkerProps = {
@@ -59,7 +59,6 @@ object MarkerProps {
     if (autoPanSpeed != null) __obj.updateDynamic("autoPanSpeed")(autoPanSpeed.asInstanceOf[js.Any])
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
@@ -83,6 +82,7 @@ object MarkerProps {
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (riseOffset != null) __obj.updateDynamic("riseOffset")(riseOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(riseOnHover)) __obj.updateDynamic("riseOnHover")(riseOnHover)
+    if (shadowPane != null) __obj.updateDynamic("shadowPane")(shadowPane)
     if (title != null) __obj.updateDynamic("title")(title)
     if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]

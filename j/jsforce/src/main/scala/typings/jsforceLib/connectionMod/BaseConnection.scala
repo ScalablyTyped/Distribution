@@ -14,6 +14,40 @@ abstract class BaseConnection ()
   @JSName("describeGlobal$")
   var describeGlobal$_Original: jsforceLib.Anon_CallbackClear = js.native
   def _baseUrl(): java.lang.String = js.native
+  def create[T](records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def create[T](records: js.Array[jsforceLib.recordMod.Record[T]], options: RestApiOptions): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def create[T](
+    records: js.Array[jsforceLib.recordMod.Record[T]],
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def create[T](records: jsforceLib.recordMod.Record[T]): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def create[T](records: jsforceLib.recordMod.Record[T], options: RestApiOptions): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def create[T](
+    records: jsforceLib.recordMod.Record[T],
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
   def create[T](`type`: java.lang.String, records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
     jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
   ] = js.native
@@ -296,6 +330,40 @@ abstract class BaseConnection ()
   ): js.Promise[jsforceLib.recordMod.Record[T] | js.Array[jsforceLib.recordMod.Record[T]]] = js.native
   // we want any object to be accepted if the user doesn't decide to give an explicit type
   def sobject[T](resource: java.lang.String): jsforceLib.salesforceDashObjectMod.SObject[T] = js.native
+  def update[T](records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def update[T](records: js.Array[jsforceLib.recordMod.Record[T]], options: RestApiOptions): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def update[T](
+    records: js.Array[jsforceLib.recordMod.Record[T]],
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordMod.Record[T]], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def update[T](records: jsforceLib.recordMod.Record[T]): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def update[T](records: jsforceLib.recordMod.Record[T], options: RestApiOptions): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def update[T](
+    records: jsforceLib.recordMod.Record[T],
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordMod.Record[T]], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
   def update[T](`type`: java.lang.String, records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
     jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
   ] = js.native
@@ -331,6 +399,46 @@ abstract class BaseConnection ()
     callback: js.Function2[
       /* err */ stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordMod.Record[T]], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](records: js.Array[jsforceLib.recordMod.Record[T]], extIdField: java.lang.String): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](
+    records: js.Array[jsforceLib.recordMod.Record[T]],
+    extIdField: java.lang.String,
+    options: RestApiOptions
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](
+    records: js.Array[jsforceLib.recordMod.Record[T]],
+    extIdField: java.lang.String,
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
+      scala.Unit
+    ]
+  ): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](records: jsforceLib.recordMod.Record[T], extIdField: java.lang.String): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](records: jsforceLib.recordMod.Record[T], extIdField: java.lang.String, options: RestApiOptions): js.Promise[
+    jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
+  ] = js.native
+  def upsert[T](
+    records: jsforceLib.recordMod.Record[T],
+    extIdField: java.lang.String,
+    options: RestApiOptions,
+    callback: js.Function2[
+      /* err */ stdLib.Error, 
+      /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
   ): js.Promise[

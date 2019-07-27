@@ -15,6 +15,7 @@ class Marker[P] protected () extends Layer {
   // Properties
   var options: MarkerOptions = js.native
   def getElement(): js.UndefOr[stdLib.HTMLElement] = js.native
+  def getIcon(): Icon[IconOptions] | DivIcon = js.native
   def getLatLng(): LatLng = js.native
   def setIcon(icon: DivIcon): this.type = js.native
   def setIcon(icon: Icon[IconOptions]): this.type = js.native

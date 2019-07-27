@@ -12,14 +12,25 @@ trait PluginOptions extends js.Object {
     * May contain `[name]`, `[id]`, `hash` and `[chunkhash]`
     */
   var filename: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * For projects where CSS ordering has been mitigated through consistent
+    * use of scoping or naming conventions, the CSS order warnings can be
+    * disabled by setting this flag to true for the plugin.
+    */
+  var ignoreOrder: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object PluginOptions {
   @scala.inline
-  def apply(chunkFilename: java.lang.String = null, filename: java.lang.String = null): PluginOptions = {
+  def apply(
+    chunkFilename: java.lang.String = null,
+    filename: java.lang.String = null,
+    ignoreOrder: js.UndefOr[scala.Boolean] = js.undefined
+  ): PluginOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename)
     if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder)
     __obj.asInstanceOf[PluginOptions]
   }
 }

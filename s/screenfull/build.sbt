@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "screenfull"
-version := "4.2.0-25d524"
+version := "4.2.1-25d524"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

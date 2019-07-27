@@ -19,10 +19,16 @@ object jsforceLibStrings {
   sealed trait Promise extends js.Object
   
   @js.native
+  sealed trait Restricted extends js.Object
+  
+  @js.native
   sealed trait SObject extends js.Object
   
   @js.native
   sealed trait Serial extends js.Object
+  
+  @js.native
+  sealed trait Unrestricted extends js.Object
   
   @js.native
   sealed trait address
@@ -248,9 +254,13 @@ object jsforceLibStrings {
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
+  def Restricted: Restricted = "Restricted".asInstanceOf[Restricted]
+  @scala.inline
   def SObject: SObject = "SObject".asInstanceOf[SObject]
   @scala.inline
   def Serial: Serial = "Serial".asInstanceOf[Serial]
+  @scala.inline
+  def Unrestricted: Unrestricted = "Unrestricted".asInstanceOf[Unrestricted]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline

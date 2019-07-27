@@ -11,7 +11,9 @@ trait Options extends js.Object {
   var queueUrl: java.lang.String
   var region: js.UndefOr[java.lang.String] = js.undefined
   var secretAccessKey: js.UndefOr[java.lang.String] = js.undefined
-  var sqs: js.UndefOr[awsDashSdkLib.awsDashSdkMod.SQS] = js.undefined
+  var sqs: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any
+  ] = js.undefined
 }
 
 object Options {
@@ -22,7 +24,7 @@ object Options {
     batchSize: scala.Int | scala.Double = null,
     region: java.lang.String = null,
     secretAccessKey: java.lang.String = null,
-    sqs: awsDashSdkLib.awsDashSdkMod.SQS = null
+    sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl)
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)

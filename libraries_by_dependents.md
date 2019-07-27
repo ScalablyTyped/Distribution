@@ -57,7 +57,6 @@
 | 5283 | [angular__compiler](./a/angular__compiler) | Angular - the compiler library
 | 5245 | [handlebars](./h/handlebars) | Handlebars provides the power necessary to let you
 | 5170 | [yosay](./y/yosay) | Tell Yeoman what to say
-| 5059 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
 | 5054 | [angular__forms](./a/angular__forms) | Angular - directives and services for creating for
 | 5014 | [socket_dot_io](./s/socket_dot_io) | node.js realtime framework server
 | 5009 | [angular__platform-browser](./a/angular__platform-browser-dynamic) | Angular - library for using Angular in a web brows
@@ -2127,6 +2126,7 @@
 | 63 | [sqs-consumer](./s/sqs-consumer) | Build SQS-based Node applications without the boil
 | 63 | [tiny-invariant](./t/tiny-invariant) | A tiny invariant function
 | 63 | [tldjs](./t/tldjs) | JavaScript API to work against complex domain name
+| 63 | [yarnpkg__lockfile](./y/yarnpkg__lockfile) | The parser/stringifier for Yarn lockfiles.
 | 62 | [agenda](./a/agenda) | Light weight job scheduler for Node.js
 | 62 | [binary-parser](./b/binary-parser) | Blazing-fast binary parser builder
 | 62 | [dotenv-safe](./d/dotenv-safe) | Load environment variables from .env and ensure th
@@ -2602,6 +2602,7 @@
 | 42 | [is-dotfile](./i/is-dotfile) | Return true if a file path is (or has) a dotfile. 
 | 42 | [javascript-state-machine](./j/javascript-state-machine) | A finite state machine library
 | 42 | [js-nacl](./j/js-nacl) | High-level API to libsodium.
+| 42 | [json-buffer](./j/json-buffer) | JSON parse & stringify that supports binary via bo
 | 42 | [keymaster](./k/keymaster) | library for defining and dispatching keyboard shor
 | 42 | [lcid](./l/lcid) | Mapping between standard locale identifiers and Wi
 | 42 | [mapbox__sphericalmercator](./m/mapbox__sphericalmercator) | Transformations between the Web Mercator projectio
@@ -3260,6 +3261,7 @@
 | 23 | [credit-card-type](./c/credit-card-type) | A library for determining credit card type
 | 23 | [d3-hexbin](./d/d3-hexbin) | Group two-dimensional points into hexagonal bins.
 | 23 | [d3-polygon](./d/d3-polygon) | Operations for two-dimensional polygons.
+| 23 | [elastic__elasticsearch](./e/elastic__elasticsearch) | The official Elasticsearch client for Node.js
 | 23 | [ffmpeg](./f/ffmpeg) | Utility for managing video streams using ffmpeg
 | 23 | [flatbuffers](./f/flatbuffers) | Memory Efficient Serialization Library
 | 23 | [gulp-mustache](./g/gulp-mustache) | A plugin for Gulp that renders mustache templates 
@@ -3433,6 +3435,7 @@
 | 20 | [configurable](./c/configurable) | Configuration mixin
 | 20 | [cote](./c/cote) | A Node.js library for building zero-configuration 
 | 20 | [country-list](./c/country-list) | Maps ISO 3166-1-alpha-2 codes to English country n
+| 20 | [dogapi](./d/dogapi) | Datadog API Node.JS Client
 | 20 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi
 | 20 | [elm](./e/elm) | The Elm Platform: Binaries for the Elm programming
 | 20 | [encoding-japanese](./e/encoding-japanese) | Converts character encoding
@@ -3954,6 +3957,7 @@
 | 12 | [geopattern](./g/geopattern) | Generate beautiful SVG patterns
 | 12 | [gravatar-url](./g/gravatar-url) | Get the URL to a Gravatar image from an email
 | 12 | [hash-file](./h/hash-file) | Create a hashed file name
+| 12 | [highcharts-react-official](./h/highcharts-react-official) | Official minimal 
 | 12 | [html-truncate](./h/html-truncate) | truncate html text and keep tag safe
 | 12 | [http-graceful-shutdown](./h/http-graceful-shutdown) | gracefully shuts downs http server
 | 12 | [hystrixjs](./h/hystrixjs) | resilience module for NodeJS applications
@@ -5054,6 +5058,7 @@
 | 4 | [react-native-restart](./r/react-native-restart) | React Native Restart Component
 | 4 | [react-native-signature-ca](./r/react-native-signature-capture) | Lets users sign their signatures
 | 4 | [react-native-touch-id](./r/react-native-touch-id) | React Native authentication with the native Touch 
+| 4 | [react-native-webrtc](./r/react-native-webrtc) | WebRTC for React Native
 | 4 | [react-scrollable-anchor](./r/react-scrollable-anchor) | Provide smooth scrolling anchors in React.
 | 4 | [react-splitter-layout](./r/react-splitter-layout) | A simple split layout for React and modern browser
 | 4 | [reactour](./r/reactour) | Tourist Guide into your React Components
@@ -5564,6 +5569,7 @@
 | 2 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
 | 2 | [plottable](./p/plottable) | A modular charting library built on D3
 | 2 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs
+| 2 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs
 | 2 | [pose-core](./p/pose-core) | Factory for Pose animation state machines
 | 2 | [positive-zero](./p/positive-zero) | Check if a number is positive zero
 | 2 | [pouch-redux-middleware](./p/pouch-redux-middleware) | PouchDB Redux Middleware
@@ -6008,6 +6014,7 @@
 | 1 | [react-native-dotenv](./r/react-native-dotenv) | A Babel preset let you import application configs 
 | 1 | [react-native-fabric](./r/react-native-fabric) | A React Native library for Fabric, Crashlytics and
 | 1 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
+| 1 | [react-native-incall-manag](./r/react-native-incall-manager) | Handling media-routes/sensors/events during a audi
 | 1 | [react-native-mail](./r/react-native-mail) | A wrapper on top of MFMailComposeViewController fr
 | 1 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar
 | 1 | [react-native-mauron85-bac](./r/react-native-mauron85-background-geolocation) | optimized background location tracking

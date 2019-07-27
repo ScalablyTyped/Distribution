@@ -41,7 +41,7 @@ class IntlMessageFormat protected () extends js.Object {
     values: stdLib.Record[
       java.lang.String, 
       js.UndefOr[
-        java.lang.String | scala.Double | scala.Boolean | js.Object | intlDashMessageformatLib.libFormattersMod.FormatXMLElementFn | scala.Null
+        java.lang.String | scala.Double | scala.Boolean | js.Object | stdLib.Date | intlDashMessageformatLib.libFormattersMod.FormatXMLElementFn | scala.Null
       ]
     ]
   ): js.Array[java.lang.String | js.Object] = js.native

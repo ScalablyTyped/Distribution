@@ -174,6 +174,7 @@ class Metadata protected () extends js.Object {
     newFullName: java.lang.String,
     callback: jsforceLib.connectionMod.Callback[SaveResult]
   ): js.Promise[SaveResult] = js.native
+  def retrieve(request: RetrieveRequest): RetrieveResultLocator[AsyncResult] = js.native
   def retrieve(request: RetrieveRequest, callback: jsforceLib.connectionMod.Callback[AsyncResult]): RetrieveResultLocator[AsyncResult] = js.native
   def update(`type`: java.lang.String, updateMetadata: js.Array[MetadataInfo]): js.Promise[SaveResult | js.Array[SaveResult]] = js.native
   def update(

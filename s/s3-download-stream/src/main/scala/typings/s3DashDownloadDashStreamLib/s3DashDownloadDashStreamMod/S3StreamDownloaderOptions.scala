@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait S3StreamDownloaderOptions extends js.Object {
   var chunkSize: js.UndefOr[java.lang.String] = js.undefined
-  var client: awsDashSdkLib.awsDashSdkMod.S3
+  var client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify S3 */ js.Any
   var concurrency: js.UndefOr[scala.Double] = js.undefined
-  var params: awsDashSdkLib.clientsS3Mod.GetObjectRequest
+  var params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify S3.GetObjectRequest */ js.Any
 }
 
 object S3StreamDownloaderOptions {
   @scala.inline
   def apply(
-    client: awsDashSdkLib.awsDashSdkMod.S3,
-    params: awsDashSdkLib.clientsS3Mod.GetObjectRequest,
+    client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify S3 */ js.Any,
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify S3.GetObjectRequest */ js.Any,
     chunkSize: java.lang.String = null,
     concurrency: scala.Int | scala.Double = null
   ): S3StreamDownloaderOptions = {

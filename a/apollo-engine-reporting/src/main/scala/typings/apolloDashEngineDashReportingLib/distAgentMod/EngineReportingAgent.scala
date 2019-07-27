@@ -20,6 +20,7 @@ class EngineReportingAgent[TContext] () extends js.Object {
   var sendAllReportsAndReportErrors: js.Any = js.native
   var sendReportAndReportErrors: js.Any = js.native
   var sendReportsImmediately: js.UndefOr[js.Any] = js.native
+  var signalHandlers: js.Any = js.native
   var signatureCache: js.Any = js.native
   var stopped: js.Any = js.native
   def addTrace(hasTraceQueryHashDocumentASTOperationNameQueryStringSchemaHash: AddTraceArgs): js.Promise[scala.Unit] = js.native

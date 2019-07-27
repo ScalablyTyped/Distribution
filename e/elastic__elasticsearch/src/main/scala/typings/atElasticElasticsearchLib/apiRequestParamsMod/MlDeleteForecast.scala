@@ -1,0 +1,44 @@
+package typings
+package atElasticElasticsearchLib.apiRequestParamsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MlDeleteForecast extends Generic {
+  var allow_no_forecasts: js.UndefOr[scala.Boolean] = js.undefined
+  var forecast_id: js.UndefOr[java.lang.String] = js.undefined
+  var job_id: java.lang.String
+  var timeout: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object MlDeleteForecast {
+  @scala.inline
+  def apply(
+    job_id: java.lang.String,
+    allow_no_forecasts: js.UndefOr[scala.Boolean] = js.undefined,
+    error_trace: js.UndefOr[scala.Boolean] = js.undefined,
+    filter_path: java.lang.String | js.Array[java.lang.String] = null,
+    forecast_id: java.lang.String = null,
+    human: js.UndefOr[scala.Boolean] = js.undefined,
+    ignore: scala.Double | js.Array[scala.Double] = null,
+    method: java.lang.String = null,
+    pretty: js.UndefOr[scala.Boolean] = js.undefined,
+    source: java.lang.String = null,
+    timeout: java.lang.String = null
+  ): MlDeleteForecast = {
+    val __obj = js.Dynamic.literal(job_id = job_id)
+    if (!js.isUndefined(allow_no_forecasts)) __obj.updateDynamic("allow_no_forecasts")(allow_no_forecasts)
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
+    if (forecast_id != null) __obj.updateDynamic("forecast_id")(forecast_id)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[MlDeleteForecast]
+  }
+}
+

@@ -22,6 +22,9 @@ package object SchemaNs {
     atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Comment | atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Comment
   ])
   type Contextual[T /* <: Context */, TAdditional, TEditAdditional] = (atWordpressApiDashFetchLib.Anon_Rendered with TAdditional) | (atWordpressApiDashFetchLib.Anon_Raw with TAdditional with TEditAdditional)
+  type Decontextualize[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]: T[k] extends @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}>? string : T[k]}
+    */ atWordpressApiDashFetchLib.atWordpressApiDashFetchLibStrings.Decontextualize with js.Any
   // prettier-ignore
   type Media[T /* <: Context */] = BaseMedia[T] | (stdLib.Pick[
     BaseMedia[T], 
@@ -37,6 +40,24 @@ package object SchemaNs {
     BasePost[T], 
     atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post | atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Post
   ])
+  // prettier-ignore
+  type PostOrPage[T /* <: Context */] = (BasePost[T] with stdLib.Partial[BasePage[T]]) | ((stdLib.Pick[
+    BasePost[T], 
+    atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+  ]) with (stdLib.Partial[
+    stdLib.Pick[
+      BasePage[T], 
+      atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
+    ]
+  ])) | ((stdLib.Pick[
+    BasePost[T], 
+    atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Post
+  ]) with (stdLib.Partial[
+    stdLib.Pick[
+      BasePage[T], 
+      atWordpressApiDashFetchLib.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Page
+    ]
+  ]))
   // prettier-ignore
   type PostRevision[T /* <: Context */] = BasePostRevision[T] | (stdLib.Pick[
     BasePostRevision[T], 
