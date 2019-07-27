@@ -1,4 +1,4 @@
-package typings.reactLib
+package typings.react
 
 import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
 import slinky.core.{
@@ -10,7 +10,7 @@ import slinky.core.{
   WithAttrs,
   facade => S
 }
-import typings.reactLib.{reactMod => ST}
+import typings.react.{reactMod => ST}
 
 import scala.language.implicitConversions
 import scala.scalajs.js

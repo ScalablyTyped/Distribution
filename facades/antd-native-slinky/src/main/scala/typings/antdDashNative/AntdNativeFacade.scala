@@ -1,13 +1,13 @@
-package typings.antdDashNativeLib
+package typings.antdDashNative
 
-import typings.atAntDashDesignIconsDashReactDashNativeLib.esFillMod.IconFillProps
-import typings.atAntDashDesignIconsDashReactDashNativeLib.esOutlineMod.IconOutlineProps
-import typings.atAntDashDesignIconsDashReactDashNativeLib.{atAntDashDesignIconsDashReactDashNativeLibComponents => AntdIcons}
-import typings.atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibStrings
-import typings.atAntDashDesignReactDashNativeLib.atAntDashDesignReactDashNativeLibProps
-import typings.atAntDashDesignReactDashNativeLib.esMod.Toast
-import typings.atAntDashDesignReactDashNativeLib.{atAntDashDesignReactDashNativeLibComponents => Antd}
-import typings.reactLib.ScalableSlinky._
+import typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
+import typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
+import typings.atAntDashDesignIconsDashReactDashNative.{atAntDashDesignIconsDashReactDashNativeComponents => AntdIcons}
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeProps
+import typings.atAntDashDesignReactDashNative.esMod.Toast
+import typings.atAntDashDesignReactDashNative.{atAntDashDesignReactDashNativeComponents => Antd}
+import typings.react.ScalableSlinky._
 
 /**
  * This wraps most of `ant-design__react-native` in a more slinky friendly way. We cast all components into `ExternalComponent`s, and
@@ -19,7 +19,7 @@ import typings.reactLib.ScalableSlinky._
  *  AntdNativeFacade.Button(AntdNativeFacade.ButtonProps(...))
  *  ```
  */
-object AntdNativeFacade extends atAntDashDesignReactDashNativeLibProps {
+object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
   /* rewrites to slinky external components */
   @inline def Badge:              ExternalComponentP[BadgeProps]              = importSTComponent(Antd.Badge)
   @inline def Button:             ExternalComponentP[ButtonProps]             = importSTComponent(Antd.Button)
@@ -50,6 +50,6 @@ object AntdNativeFacade extends atAntDashDesignReactDashNativeLibProps {
   @inline def IconOutline:        ExternalComponentP[IconOutlineProps]        = importSTComponent(AntdIcons.IconOutline)
 
   val antdToast: Toast.type = Toast
-  val antdStrings: atAntDashDesignReactDashNativeLibStrings.type = atAntDashDesignReactDashNativeLibStrings
+  val antdStrings: atAntDashDesignReactDashNativeStrings.type = atAntDashDesignReactDashNativeStrings
 
 }

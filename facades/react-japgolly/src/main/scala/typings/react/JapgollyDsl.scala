@@ -1,8 +1,8 @@
-package typings.reactLib
+package typings.react
 
-import typings.reactLib.reactMod._
-import typings.stdLib.^.{console, Object}
-import typings.{reactLib, stdLib}
+import typings.react.reactMod._
+import typings.std.^.{console, Object}
+import typings.{react, std}
 
 import scala.language.{higherKinds, implicitConversions}
 import scala.scalajs.js.|

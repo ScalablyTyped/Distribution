@@ -1,8 +1,8 @@
-package typings.reactDashReduxLib
+package typings.reactDashRedux
 
-import typings.reactDashReduxLib.reactDashReduxMod.^.connect
-import typings.reactLib.reactMod.FC
-import typings.reduxLib.reduxMod.{Action, Dispatch, Store}
+import typings.reactDashRedux.reactDashReduxMod.^.connect
+import typings.react.reactMod.FC
+import typings.redux.reduxMod.{Action, Dispatch, Store}
 
 import scala.scalajs.js
 
