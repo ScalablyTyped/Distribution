@@ -1,0 +1,24 @@
+package typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyanNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConsoleFormattedStreamLevelStyle extends js.Object {
+  var debug: String
+  var error: String
+  var fatal: String
+  var info: String
+  var trace: String
+  var warn: String
+}
+
+object ConsoleFormattedStreamLevelStyle {
+  @scala.inline
+  def apply(debug: String, error: String, fatal: String, info: String, trace: String, warn: String): ConsoleFormattedStreamLevelStyle = {
+    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, info = info, trace = trace, warn = warn)
+  
+    __obj.asInstanceOf[ConsoleFormattedStreamLevelStyle]
+  }
+}
+

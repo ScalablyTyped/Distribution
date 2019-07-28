@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-swipeable-views 0.13
-// Project: https://github.com/oliviertassinari/react-swipeable-views
-// Definitions by: Michael Ledin <https://github.com/mxl>
-//                 Deividas Bakanas <https://github.com/DeividasBakanas>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

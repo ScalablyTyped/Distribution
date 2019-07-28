@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for agent-base 4.2
-// Project: https://github.com/TooTallNate/node-agent-base#readme
-// Definitions by: Christopher Quadflieg <https://github.com/Shinigami92>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

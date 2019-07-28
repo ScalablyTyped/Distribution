@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for angular-es v0.0.3
-// Project: https://github.com/mbutsykin/angular-es
-// Definitions by: mbutsykin <https://github.com/mbutsykin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

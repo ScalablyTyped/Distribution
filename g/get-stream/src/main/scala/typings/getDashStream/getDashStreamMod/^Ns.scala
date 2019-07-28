@@ -1,0 +1,22 @@
+package typings.getDashStream.getDashStreamMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("get-stream", JSImport.Namespace)
+@js.native
+object `^Ns` extends js.Object {
+  @js.native
+  class MaxBufferError () extends MaxBufferErrorClass {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_MaxBufferErrorClass: typings.getDashStream.getDashStreamStrings.MaxBufferError = js.native
+  }
+  
+}
+

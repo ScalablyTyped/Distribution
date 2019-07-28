@@ -1,0 +1,19 @@
+package typings.osmtogeojson.osmtogeojsonMod.GeoJSONNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GeoJSONObject extends js.Object {
+  var `type`: String
+}
+
+object GeoJSONObject {
+  @scala.inline
+  def apply(`type`: String): GeoJSONObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GeoJSONObject]
+  }
+}
+

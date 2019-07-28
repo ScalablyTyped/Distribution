@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-dir
-// Project: https://github.com/fshost/node-dir
-// Definitions by: Panu Horsmalahti <https://github.com/panuhorsmalahti>
-//                 James Lismore <https://github.com/jlismore>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

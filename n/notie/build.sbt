@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "notie"
-version := "0.0-unknown-dt-20190322Z-294041"
+version := "0.0-unknown-dt-20190322Z-19c093"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

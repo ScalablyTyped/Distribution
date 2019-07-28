@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @wordpress/html-entities 2.3
-// Project: https://github.com/WordPress/gutenberg/tree/master/packages/html-entities/README.md
-// Definitions by: Derek Sifford <https://github.com/dsifford>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Decodes the HTML entities from a given string.
- */
-
-```
 

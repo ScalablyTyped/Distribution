@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for source-list-map v0.1.6
-// Project: https://github.com/webpack/source-list-map.git
-// Definitions by: e-cloud <https://github.com/e-cloud>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

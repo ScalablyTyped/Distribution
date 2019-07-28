@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a file path is a text file.
-
-@example
-```
-import isTextPath = require('is-text-path');
-
-isTextPath('source/unicorn.txt');
-//=> true
-
-isTextPath('source/unicorn.png');
-//=> false
-```
-*/
-
-```
 

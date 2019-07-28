@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for duplexify 3.6
-// Project: https://github.com/mafintosh/duplexify
-// Definitions by: Sami Kukkonen <https://github.com/strax>
-//                 Jonathan Lui <https://github.com/kinwa91>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

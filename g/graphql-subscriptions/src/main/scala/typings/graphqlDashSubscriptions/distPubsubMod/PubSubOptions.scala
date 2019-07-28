@@ -1,0 +1,20 @@
+package typings.graphqlDashSubscriptions.distPubsubMod
+
+import typings.node.eventsMod.EventEmitter
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PubSubOptions extends js.Object {
+  var eventEmitter: js.UndefOr[EventEmitter] = js.undefined
+}
+
+object PubSubOptions {
+  @scala.inline
+  def apply(eventEmitter: EventEmitter = null): PubSubOptions = {
+    val __obj = js.Dynamic.literal()
+    if (eventEmitter != null) __obj.updateDynamic("eventEmitter")(eventEmitter)
+    __obj.asInstanceOf[PubSubOptions]
+  }
+}
+

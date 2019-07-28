@@ -1,0 +1,123 @@
+package typings.d3DashGeo.d3DashGeoMod
+
+import typings.d3DashGeo.Anon_S
+import typings.geojson.geojsonMod.GeoJsonProperties
+import typings.geojson.geojsonMod.MultiLineString
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("d3-geo", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def geoAlbers(): GeoConicProjection = js.native
+  def geoAlbersUsa(): GeoProjection = js.native
+  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
+  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
+  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
+  def geoArea(`object`: GeoGeometryObjects): Double = js.native
+  def geoAzimuthalEqualArea(): GeoProjection = js.native
+  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = js.native
+  def geoAzimuthalEquidistant(): GeoProjection = js.native
+  def geoAzimuthalEquidistantRaw(): GeoRawProjection = js.native
+  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = js.native
+  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = js.native
+  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = js.native
+  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = js.native
+  def geoCircle(): GeoCircleGenerator[_, _] = js.native
+  @JSName("geoCircle")
+  def geoCircle_Datum[Datum](): GeoCircleGenerator[_, Datum] = js.native
+  @JSName("geoCircle")
+  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = js.native
+  def geoClipAntimeridian(stream: GeoStream): GeoStream = js.native
+  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream, GeoStream] = js.native
+  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream, GeoStream] = js.native
+  def geoConicConformal(): GeoConicProjection = js.native
+  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  def geoConicEqualArea(): GeoConicProjection = js.native
+  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  def geoConicEquidistant(): GeoConicProjection = js.native
+  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  def geoContains(
+    `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
+    point: js.Tuple2[Double, Double]
+  ): Boolean = js.native
+  def geoContains(
+    `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties],
+    point: js.Tuple2[Double, Double]
+  ): Boolean = js.native
+  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = js.native
+  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = js.native
+  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = js.native
+  def geoEqualEarth(): GeoProjection = js.native
+  def geoEqualEarthRaw(): GeoRawProjection = js.native
+  def geoEquirectangular(): GeoProjection = js.native
+  def geoEquirectangularRaw(): GeoRawProjection = js.native
+  def geoGnomonic(): GeoProjection = js.native
+  def geoGnomonicRaw(): GeoRawProjection = js.native
+  def geoGraticule(): GeoGraticuleGenerator = js.native
+  def geoGraticule10(): MultiLineString = js.native
+  def geoIdentity(): GeoIdentityTransform = js.native
+  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = js.native
+  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
+  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
+  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
+  def geoLength(`object`: GeoGeometryObjects): Double = js.native
+  def geoMercator(): GeoProjection = js.native
+  def geoMercatorRaw(): GeoRawProjection = js.native
+  def geoNaturalEarth1(): GeoProjection = js.native
+  def geoNaturalEarth1Raw(): GeoRawProjection = js.native
+  def geoOrthographic(): GeoProjection = js.native
+  def geoOrthographicRaw(): GeoRawProjection = js.native
+  def geoPath(): GeoPath[_, GeoPermissibleObjects] = js.native
+  def geoPath(projection: Null, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+  def geoPath(projection: GeoProjection): GeoPath[_, GeoPermissibleObjects] = js.native
+  def geoPath(projection: GeoProjection, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+  def geoPath(projection: GeoStreamWrapper): GeoPath[_, GeoPermissibleObjects] = js.native
+  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection, context: GeoContext): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath[_, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath[This, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath[This, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection): GeoPath[This, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection, context: GeoContext): GeoPath[This, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath[This, DatumObject] = js.native
+  @JSName("geoPath")
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath[This, DatumObject] = js.native
+  def geoProjection(project: GeoRawProjection): GeoProjection = js.native
+  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection] = js.native
+  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation = js.native
+  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation = js.native
+  def geoStereographic(): GeoProjection = js.native
+  def geoStereographicRaw(): GeoRawProjection = js.native
+  def geoStream(
+    `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
+    stream: GeoStream
+  ): Unit = js.native
+  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream): Unit = js.native
+  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream): Unit = js.native
+  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream): Unit = js.native
+  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): Anon_S[T] = js.native
+  def geoTransverseMercator(): GeoProjection = js.native
+  def geoTransverseMercatorRaw(): GeoRawProjection = js.native
+}
+

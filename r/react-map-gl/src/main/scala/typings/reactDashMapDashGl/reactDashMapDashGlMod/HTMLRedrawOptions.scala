@@ -1,0 +1,27 @@
+package typings.reactDashMapDashGl.reactDashMapDashGlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HTMLRedrawOptions extends js.Object {
+  var height: Double
+  var width: Double
+  def project(lnglat: js.Array[Double]): js.Array[Double]
+  def unproject(xy: js.Array[Double]): js.Array[Double]
+}
+
+object HTMLRedrawOptions {
+  @scala.inline
+  def apply(
+    height: Double,
+    project: js.Array[Double] => js.Array[Double],
+    unproject: js.Array[Double] => js.Array[Double],
+    width: Double
+  ): HTMLRedrawOptions = {
+    val __obj = js.Dynamic.literal(height = height, project = js.Any.fromFunction1(project), unproject = js.Any.fromFunction1(unproject), width = width)
+  
+    __obj.asInstanceOf[HTMLRedrawOptions]
+  }
+}
+

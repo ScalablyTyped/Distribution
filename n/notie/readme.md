@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for notie.js
-// Project: https://github.com/jaredreich/notie.js
-// Definitions by: Mateus Demboski <https://github.com/mateusdemboski>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

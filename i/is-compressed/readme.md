@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a file path is a compressed file.
-
-@example
-```
-import isCompressed = require('is-compressed');
-
-isCompressed('source/unicorn.zip');
-//=> true
-
-isCompressed('source/unicorn.txt');
-//=> false
-```
-*/
-
-```
 

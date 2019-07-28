@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for prompts 2.0
-// Project: https://github.com/terkelg/prompts
-// Definitions by: Berkay GURSOY <https://github.com/Berkays>
-//                 Daniel Perez Alvarez <https://github.com/danielpa9708>
-//                 Kamontat Chantrachirathumrong <https://github.com/kamontat>
-//                 theweirdone <https://github.com/theweirdone>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-
-```
 

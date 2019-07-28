@@ -1,0 +1,13 @@
+package typings.atBang88ReactDashNativeDashDrawerDashLayout
+
+import typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait atBang88ReactDashNativeDashDrawerDashLayoutProps {
+  @scala.inline
+  def ReactDashNativeDashDrawerDashLayoutProps: DrawerLayoutProperties.type = typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+  type ReactDashNativeDashDrawerDashLayoutProps = DrawerLayoutProperties
+}
+

@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for json-editor
-// Project: https://github.com/jdorn/json-editor
-// Definitions by: York Yao <https://github.com/plantain-00/>
-//                 Felipe Provenzano <https://github.com/felipeprov/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-actions 2.6
-// Project: https://github.com/redux-utilities/redux-actions
-// Definitions by: Jack Hsu <https://github.com/jaysoo>,
-//                 Alex Gorbatchev <https://github.com/alexgorbatchev>,
-//                 Alec Hill <https://github.com/alechill>
-//                 Alexey Pelykh <https://github.com/alexey-pelykh>
-//                 Thiago de Andrade <https://github.com/7hi4g0>
-//                 Ziyu <https://github.com/oddui>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

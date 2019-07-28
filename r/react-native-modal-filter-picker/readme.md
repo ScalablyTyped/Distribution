@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-modal-filter-picker 1.3
-// Project: https://github.com/hiddentao/react-native-modal-filter-picker#readme
-// Definitions by: Chang Yanwei <https://github.com/ywchang>
-//                 Cheng Gibson <https://github.com/nossbigg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

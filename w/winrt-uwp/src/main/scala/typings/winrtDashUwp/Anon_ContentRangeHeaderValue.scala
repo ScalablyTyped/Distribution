@@ -1,0 +1,21 @@
+package typings.winrtDashUwp
+
+import typings.winrtDashUwp.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentRangeHeaderValue
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ContentRangeHeaderValue extends js.Object {
+  /** The HttpContentRangeHeaderValue version of the string. */ var contentRangeHeaderValue: HttpContentRangeHeaderValue
+  /** true if input is valid HttpContentRangeHeaderValue information; otherwise, false. */ var returnValue: Boolean
+}
+
+object Anon_ContentRangeHeaderValue {
+  @scala.inline
+  def apply(contentRangeHeaderValue: HttpContentRangeHeaderValue, returnValue: Boolean): Anon_ContentRangeHeaderValue = {
+    val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ContentRangeHeaderValue]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for event-emitter-es6 1.1
-// Project: https://github.com/insane-jo/event-emitter#readme
-// Definitions by: Anton Strömkvist <https://github.com/ahstro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

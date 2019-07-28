@@ -1,0 +1,23 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GistsListStarredResponseItemFilesHelloWorldRb extends js.Object {
+  var filename: String
+  var language: String
+  var raw_url: String
+  var size: Double
+  var `type`: String
+}
+
+object GistsListStarredResponseItemFilesHelloWorldRb {
+  @scala.inline
+  def apply(filename: String, language: String, raw_url: String, size: Double, `type`: String): GistsListStarredResponseItemFilesHelloWorldRb = {
+    val __obj = js.Dynamic.literal(filename = filename, language = language, raw_url = raw_url, size = size)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GistsListStarredResponseItemFilesHelloWorldRb]
+  }
+}
+

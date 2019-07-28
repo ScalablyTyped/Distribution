@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for find-java-home 0.2
-// Project: https://github.com/jsdevel/node-find-java-home
-// Definitions by: sjx233 <https://github.com/sjx233>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

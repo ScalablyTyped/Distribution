@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-sslify 4.0
-// Project: https://github.com/turboMaCk/koa-sslify#readme
-// Definitions by: Matthew Bull <https://github.com/wingsbob>
-//                 Mihkel Sokk <https://github.com/msokk>
-//                 wujingtao <https://github.com/mx601595686>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

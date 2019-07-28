@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-zeroconf 0.9
-// Project: https://github.com/Apercu/react-native-zeroconf#readme
-// Definitions by: Peter Matta <https://github.com/mattapet>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

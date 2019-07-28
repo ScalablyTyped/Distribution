@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "filenamify-url"
-version := "2.1.0-f8252e"
+version := "2.1.0-6d9cb3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "filenamify" % "4.1.0-a285d3")
+  "org.scalablytyped" %%% "filenamify" % "4.1.0-4d7a77")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

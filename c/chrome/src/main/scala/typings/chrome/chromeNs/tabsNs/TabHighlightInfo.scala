@@ -1,0 +1,20 @@
+package typings.chrome.chromeNs.tabsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TabHighlightInfo extends js.Object {
+  var tabIds: js.Array[Double]
+  var windowId: Double
+}
+
+object TabHighlightInfo {
+  @scala.inline
+  def apply(tabIds: js.Array[Double], windowId: Double): TabHighlightInfo = {
+    val __obj = js.Dynamic.literal(tabIds = tabIds, windowId = windowId)
+  
+    __obj.asInstanceOf[TabHighlightInfo]
+  }
+}
+

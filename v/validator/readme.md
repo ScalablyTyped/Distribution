@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for validator.js v10.11.0
-// Project: https://github.com/chriso/validator.js
-// Definitions by: tgfjt <https://github.com/tgfjt>
-//                 Ilya Mochalov <https://github.com/chrootsu>
-//                 Ayman Nedjmeddine <https://github.com/IOAyman>
-//                 Louy Alakkad <https://github.com/louy>
-//                 Kacper Polak <https://github.com/kacepe>
-//                 Bonggyun Lee <https://github.com/deptno>
-//                 Naoto Yokoyama <https://github.com/builtinnya>
-//                 Philipp Katz <https://github.com/qqilihq>
-//                 Jace Warren <https://github.com/keatz55>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

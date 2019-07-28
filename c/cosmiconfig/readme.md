@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cosmiconfig 5.0
-// Project: https://github.com/davidtheclark/cosmiconfig
-// Definitions by: ozum <https://github.com/ozum>
-//                 szeck87 <https://github.com/szeck87>
-//                 saadq <https://github.com/saadq>
-//                 jinwoo <https://github.com/jinwoo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

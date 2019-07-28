@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for merge-stream 1.1
-// Project: https://github.com/grncdr/merge-stream
-// Definitions by: Keita Kagurazaka <https://github.com/k-kagurazaka>
-//                 Tom X. Tobin <https://github.com/tomxtobin>
-//                 Daniel Zazula <https://github.com/daniel-zazula>
-//                 Daniel Cassidy <https://github.com/djcsdy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for HTMLHint 0.9
-// Project: https://github.com/yaniswang/HTMLHint
-// Definitions by: Alan Agius <https://github.com/alan-agius4/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

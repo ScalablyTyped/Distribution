@@ -1,0 +1,55 @@
+package typings.braintree.braintreeMod
+
+import typings.braintree.Anon_Company
+import typings.braintree.Anon_FailOnDuplicatePaymentMethodMakeDefault
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreditCardCreateRequest extends js.Object {
+  var billingAddress: js.UndefOr[Anon_Company] = js.undefined
+  var billingAddressId: js.UndefOr[String] = js.undefined
+  var cardholderName: js.UndefOr[String] = js.undefined
+  var customerId: String
+  var cvv: js.UndefOr[String] = js.undefined
+  var expirationDate: js.UndefOr[String] = js.undefined
+  var expirationMonth: js.UndefOr[String] = js.undefined
+  var expirationYear: js.UndefOr[String] = js.undefined
+  var number: js.UndefOr[String] = js.undefined
+  var options: js.UndefOr[Anon_FailOnDuplicatePaymentMethodMakeDefault] = js.undefined
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String] = js.undefined
+}
+
+object CreditCardCreateRequest {
+  @scala.inline
+  def apply(
+    customerId: String,
+    billingAddress: Anon_Company = null,
+    billingAddressId: String = null,
+    cardholderName: String = null,
+    cvv: String = null,
+    expirationDate: String = null,
+    expirationMonth: String = null,
+    expirationYear: String = null,
+    number: String = null,
+    options: Anon_FailOnDuplicatePaymentMethodMakeDefault = null,
+    paymentMethodNonce: String = null,
+    token: String = null
+  ): CreditCardCreateRequest = {
+    val __obj = js.Dynamic.literal(customerId = customerId)
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
+    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId)
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
+    if (cvv != null) __obj.updateDynamic("cvv")(cvv)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
+    if (number != null) __obj.updateDynamic("number")(number)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[CreditCardCreateRequest]
+  }
+}
+

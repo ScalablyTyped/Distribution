@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for LESS 3.x
-// Project: http://lesscss.org/
-// Definitions by: Tom Hasner <https://github.com/thasner>
-//                 Pranay Prakash <https://github.com/pranaygp>
-//                 Daniel Waxweiler <https://github.com/dwaxweiler>
-//                 Richard Lea <https://github.com/chigix>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

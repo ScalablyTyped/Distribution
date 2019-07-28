@@ -1,0 +1,41 @@
+package typings.awsDashSdk.clientsAutoscalingMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TargetTrackingConfiguration extends js.Object {
+  /**
+    * A customized metric. You must specify either a predefined metric or a customized metric.
+    */
+  var CustomizedMetricSpecification: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.CustomizedMetricSpecification] = js.undefined
+  /**
+    * Indicates whether scaling in by the target tracking scaling policy is disabled. If scaling in is disabled, the target tracking scaling policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking scaling policy can remove instances from the Auto Scaling group. The default is false.
+    */
+  var DisableScaleIn: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.DisableScaleIn] = js.undefined
+  /**
+    * A predefined metric. You must specify either a predefined metric or a customized metric.
+    */
+  var PredefinedMetricSpecification: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.PredefinedMetricSpecification] = js.undefined
+  /**
+    * The target value for the metric.
+    */
+  var TargetValue: MetricScale
+}
+
+object TargetTrackingConfiguration {
+  @scala.inline
+  def apply(
+    TargetValue: MetricScale,
+    CustomizedMetricSpecification: CustomizedMetricSpecification = null,
+    DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined,
+    PredefinedMetricSpecification: PredefinedMetricSpecification = null
+  ): TargetTrackingConfiguration = {
+    val __obj = js.Dynamic.literal(TargetValue = TargetValue)
+    if (CustomizedMetricSpecification != null) __obj.updateDynamic("CustomizedMetricSpecification")(CustomizedMetricSpecification)
+    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn)
+    if (PredefinedMetricSpecification != null) __obj.updateDynamic("PredefinedMetricSpecification")(PredefinedMetricSpecification)
+    __obj.asInstanceOf[TargetTrackingConfiguration]
+  }
+}
+

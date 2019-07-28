@@ -1,0 +1,12 @@
+package typings.rellax
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("rellax", JSImport.Namespace)
+@js.native
+object rellaxRequire extends js.Object
+

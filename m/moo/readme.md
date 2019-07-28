@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for moo 0.5
-// Project: https://github.com/tjvr/moo#readme
-// Definitions by: Nikita Litvin <https://github.com/deltaidea>
-//                 Jörg Vehlow <https://github.com/MofX>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

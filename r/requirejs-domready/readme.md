@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for domReady 2.0.1
-// Project: https://github.com/requirejs/domReady
-// Definitions by: Nobuhiro Nakamura <https://github.com/lefb766>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

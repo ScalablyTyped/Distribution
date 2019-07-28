@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mark.js 8.11
-// Project: https://markjs.io/
-// Definitions by: Soner Köksal <https://github.com/renjfk>
-//                 Roman Hotsiy <https://github.com/RomanGotsiy>
-//                 Lucian Buzzo <https://github.com/LucianBuzzo>
-//                 Joao Lourenco <https://github.com/blackstarzes>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

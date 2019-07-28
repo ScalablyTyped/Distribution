@@ -1,0 +1,20 @@
+package typings.uuidDash1345
+
+import typings.uuidDash1345.uuidDash1345Strings.binary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BinaryEncoding_852630054 extends js.Object {
+  var encoding: binary
+}
+
+object Anon_BinaryEncoding_852630054 {
+  @scala.inline
+  def apply(encoding: binary): Anon_BinaryEncoding_852630054 = {
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
+    __obj.asInstanceOf[Anon_BinaryEncoding_852630054]
+  }
+}
+

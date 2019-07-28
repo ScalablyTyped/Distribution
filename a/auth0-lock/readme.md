@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for auth0-lock 11.4
-// Project: http://auth0.com, https://github.com/auth0/lock
-// Definitions by: Brian Caruso <https://github.com/carusology>
-//                 Dan Caddigan <https://github.com/goldcaddy77>
-//                 Larry Faudree <https://github.com/lfaudreejr>
-//                 Will Caulfield <https://github.com/willcaul>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.7
-
-```
 

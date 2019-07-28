@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for svg4everybody 2.1
-// Project: https://github.com/jonathantneal/svg4everybody#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>, bryceosterhaus <https://github.com/bryceosterhaus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

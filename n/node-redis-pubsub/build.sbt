@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "node-redis-pubsub"
-version := "3.0-dt-20180918Z-c90e5d"
+version := "3.0-dt-20180918Z-ed4239"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-b668c5",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-af43e8",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

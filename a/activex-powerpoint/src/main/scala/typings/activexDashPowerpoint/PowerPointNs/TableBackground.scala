@@ -1,0 +1,17 @@
+package typings.activexDashPowerpoint.PowerPointNs
+
+import typings.activexDashOffice.OfficeNs.ReflectionFormat
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("PowerPoint.TableBackground")
+@js.native
+class TableBackground protected () extends js.Object {
+  val Fill: FillFormat = js.native
+  val Picture: PictureFormat = js.native
+  var `PowerPoint.TableBackground_typekey`: TableBackground = js.native
+  val Reflection: ReflectionFormat = js.native
+  val Shadow: ShadowFormat = js.native
+}
+

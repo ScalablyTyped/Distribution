@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Paper.js v0.11.8
-// Project: http://paperjs.org/
-// Definitions by:  Clark Stevenson <https://github.com/clark-stevenson>,
-//                  Jon Lucas <https://github.com/Xakaloz>,
-//                  Sebastian Lopez <https://github.com/sebaswebdev>
-//                  Ryan Friedman <https://github.com/rfried>
-//                  Mikhaylov Anton <https://github.com/anion155>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for google-fonts 1.0
-// Project: https://github.com/hughsk/google-fonts#readme
-// Definitions by: Rafa Mel <https://github.com/rafamel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

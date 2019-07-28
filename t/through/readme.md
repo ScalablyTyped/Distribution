@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for through
-// Project: https://github.com/dominictarr/through
-// Definitions by: Andrew Gaspar <https://github.com/AndrewGaspar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

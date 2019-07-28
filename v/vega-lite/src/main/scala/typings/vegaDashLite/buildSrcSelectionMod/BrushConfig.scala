@@ -1,0 +1,68 @@
+package typings.vegaDashLite.buildSrcSelectionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BrushConfig extends js.Object {
+  /**
+    * The fill color of the interval mark.
+    *
+    * __Default value:__ `#333333`
+    *
+    */
+  var fill: js.UndefOr[String] = js.undefined
+  /**
+    * The fill opacity of the interval mark (a value between 0 and 1).
+    *
+    * __Default value:__ `0.125`
+    */
+  var fillOpacity: js.UndefOr[Double] = js.undefined
+  /**
+    * The stroke color of the interval mark.
+    *
+    * __Default value:__ `#ffffff`
+    */
+  var stroke: js.UndefOr[String] = js.undefined
+  /**
+    * An array of alternating stroke and space lengths,
+    * for creating dashed or dotted lines.
+    */
+  var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
+  /**
+    * The offset (in pixels) with which to begin drawing the stroke dash array.
+    */
+  var strokeDashOffset: js.UndefOr[Double] = js.undefined
+  /**
+    * The stroke opacity of the interval mark (a value between 0 and 1).
+    */
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
+  /**
+    * The stroke width of the interval mark.
+    */
+  var strokeWidth: js.UndefOr[Double] = js.undefined
+}
+
+object BrushConfig {
+  @scala.inline
+  def apply(
+    fill: String = null,
+    fillOpacity: Int | Double = null,
+    stroke: String = null,
+    strokeDash: js.Array[Double] = null,
+    strokeDashOffset: Int | Double = null,
+    strokeOpacity: Int | Double = null,
+    strokeWidth: Int | Double = null
+  ): BrushConfig = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash)
+    if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrushConfig]
+  }
+}
+

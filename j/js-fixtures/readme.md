@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for js-fixtures 1.2.0
-// Project: https://github.com/badunk/js-fixtures
-// Definitions by: Kazi Manzur Rashid <https://github.com/kazimanzurrashid>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

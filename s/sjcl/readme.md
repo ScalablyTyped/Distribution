@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sjcl v1.0.1
-// Project: http://crypto.stanford.edu/sjcl/
-// Definitions by: Eugene Chernyshov <https://github.com/Evgenus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

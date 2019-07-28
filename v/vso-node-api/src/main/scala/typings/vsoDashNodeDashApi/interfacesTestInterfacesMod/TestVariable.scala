@@ -1,0 +1,54 @@
+package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TestVariable extends js.Object {
+  /**
+    * Description of the test variable
+    */
+  var description: String
+  /**
+    * Id of the test variable
+    */
+  var id: Double
+  /**
+    * Name of the test variable
+    */
+  var name: String
+  /**
+    * Project to which the test variable belongs
+    */
+  var project: ShallowReference
+  /**
+    * Revision
+    */
+  var revision: Double
+  /**
+    * Url of the test variable
+    */
+  var url: String
+  /**
+    * List of allowed values
+    */
+  var values: js.Array[String]
+}
+
+object TestVariable {
+  @scala.inline
+  def apply(
+    description: String,
+    id: Double,
+    name: String,
+    project: ShallowReference,
+    revision: Double,
+    url: String,
+    values: js.Array[String]
+  ): TestVariable = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, project = project, revision = revision, url = url, values = values)
+  
+    __obj.asInstanceOf[TestVariable]
+  }
+}
+

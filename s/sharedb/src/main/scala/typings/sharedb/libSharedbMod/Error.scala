@@ -1,0 +1,20 @@
+package typings.sharedb.libSharedbMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Error extends js.Object {
+  var code: Double
+  var message: String
+}
+
+object Error {
+  @scala.inline
+  def apply(code: Double, message: String): Error = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
+    __obj.asInstanceOf[Error]
+  }
+}
+

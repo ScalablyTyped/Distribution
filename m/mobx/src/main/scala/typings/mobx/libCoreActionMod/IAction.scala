@@ -1,0 +1,19 @@
+package typings.mobx.libCoreActionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IAction extends js.Object {
+  var isMobxAction: Boolean
+}
+
+object IAction {
+  @scala.inline
+  def apply(isMobxAction: Boolean): IAction = {
+    val __obj = js.Dynamic.literal(isMobxAction = isMobxAction)
+  
+    __obj.asInstanceOf[IAction]
+  }
+}
+

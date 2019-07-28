@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for scrollparent 2.0
-// Project: https://github.com/olahol/scrollparent.js#readme
-// Definitions by: Sintifo <https://github.com/Sintifo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,21 @@
+package typings.ioredis
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.ioredis.Anon_Host
+import typings.node.Buffer
+import typings.node.NodeJSNs.ErrnoException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object ioredisMod {
+  type CallbackFunction[T] = js.Function2[/* err */ js.UndefOr[ErrnoException | Null], /* result */ js.UndefOr[T], Unit]
+  type ClusterNode = String | Double | NodeConfiguration
+  type DNSLookupFunction = js.Function2[
+    /* hostname */ String, 
+    /* callback */ js.Function3[/* err */ ErrnoException, /* address */ String, /* family */ Double, Unit], 
+    Unit
+  ]
+  type KeyType = String | Buffer
+  type NatMap = StringDictionary[Anon_Host]
+}

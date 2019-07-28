@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for SVG Injector
-// Project: https://github.com/iconic/SVGInjector
-// Definitions by: Patrick Westerhoff <https://github.com/poke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

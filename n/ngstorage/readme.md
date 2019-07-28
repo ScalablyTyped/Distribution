@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ngstorage 0.3
-// Project: https://github.com/gsklee/ngStorage
-// Definitions by: Jakub Pistek <https://github.com/kubiq>
-// Definitions: https://github.com/kubiq/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

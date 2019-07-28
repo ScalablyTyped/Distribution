@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for OverlayScrollbars 1.8
-// Project: https://kingsora.github.io/OverlayScrollbars
-// Definitions by: KingSora <https://github.com/KingSora>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,23 @@
+package typings.activexDashFaxcomexlib
+
+import typings.activexDashFaxcomexlib.FAXCOMEXLibNs.FaxAccount
+import typings.activexDashFaxcomexlib.FAXCOMEXLibNs.FaxJobStatus
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BstrJobIdPFaxAccount extends js.Object {
+  val bstrJobId: String
+  val pFaxAccount: FaxAccount
+  val pJobStatus: FaxJobStatus
+}
+
+object Anon_BstrJobIdPFaxAccount {
+  @scala.inline
+  def apply(bstrJobId: String, pFaxAccount: FaxAccount, pJobStatus: FaxJobStatus): Anon_BstrJobIdPFaxAccount = {
+    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId, pFaxAccount = pFaxAccount, pJobStatus = pJobStatus)
+  
+    __obj.asInstanceOf[Anon_BstrJobIdPFaxAccount]
+  }
+}
+

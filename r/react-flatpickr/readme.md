@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-flatpickr 3.8
-// Project: https://github.com/coderhaoxin/react-flatpickr
-// Definitions by: begincalendar <https://github.com/begincalendar>
-//                 snaveevans <https://github.com/snaveevans>
-//                 rigothedev <https://github.com/rigothedev>
-//                 doniyor2109 <https://github.com/doniyor2109>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

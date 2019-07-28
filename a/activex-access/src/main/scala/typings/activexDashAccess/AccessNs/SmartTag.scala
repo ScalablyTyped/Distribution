@@ -1,0 +1,27 @@
+package typings.activexDashAccess.AccessNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Access.SmartTag")
+@js.native
+class SmartTag protected () extends js.Object {
+  var `Access.SmartTag_typekey`: SmartTag = js.native
+  val Application: typings.activexDashAccess.AccessNs.Application = js.native
+  val IsMissing: Boolean = js.native
+  val Name: String = js.native
+  val Parent: js.Any = js.native
+  @JSName("Properties")
+  val Properties_Original: SmartTagProperties = js.native
+  @JSName("SmartTagActions")
+  val SmartTagActions_Original: SmartTagActions = js.native
+  val XML: String = js.native
+  def Delete(): Unit = js.native
+  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def Properties(Index: String): SmartTagProperty = js.native
+  def Properties(Index: Double): SmartTagProperty = js.native
+  def SmartTagActions(Index: String): SmartTagAction = js.native
+  def SmartTagActions(Index: Double): SmartTagAction = js.native
+}
+

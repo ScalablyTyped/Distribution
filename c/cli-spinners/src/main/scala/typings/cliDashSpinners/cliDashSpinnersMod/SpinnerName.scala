@@ -1,0 +1,79 @@
+package typings.cliDashSpinners.cliDashSpinnersMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots3
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots4
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots5
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots6
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots7
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots8
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots9
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots10
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots11
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dots12
+  - typings.cliDashSpinners.cliDashSpinnersStrings.line
+  - typings.cliDashSpinners.cliDashSpinnersStrings.line2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.pipe
+  - typings.cliDashSpinners.cliDashSpinnersStrings.simpleDots
+  - typings.cliDashSpinners.cliDashSpinnersStrings.simpleDotsScrolling
+  - typings.cliDashSpinners.cliDashSpinnersStrings.star
+  - typings.cliDashSpinners.cliDashSpinnersStrings.star2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.flip
+  - typings.cliDashSpinners.cliDashSpinnersStrings.hamburger
+  - typings.cliDashSpinners.cliDashSpinnersStrings.growVertical
+  - typings.cliDashSpinners.cliDashSpinnersStrings.growHorizontal
+  - typings.cliDashSpinners.cliDashSpinnersStrings.balloon
+  - typings.cliDashSpinners.cliDashSpinnersStrings.balloon2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.noise
+  - typings.cliDashSpinners.cliDashSpinnersStrings.bounce
+  - typings.cliDashSpinners.cliDashSpinnersStrings.boxBounce
+  - typings.cliDashSpinners.cliDashSpinnersStrings.boxBounce2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.triangle
+  - typings.cliDashSpinners.cliDashSpinnersStrings.arc
+  - typings.cliDashSpinners.cliDashSpinnersStrings.circle
+  - typings.cliDashSpinners.cliDashSpinnersStrings.squareCorners
+  - typings.cliDashSpinners.cliDashSpinnersStrings.circleQuarters
+  - typings.cliDashSpinners.cliDashSpinnersStrings.circleHalves
+  - typings.cliDashSpinners.cliDashSpinnersStrings.squish
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle3
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle4
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle5
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle6
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle7
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle8
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle9
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle10
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle11
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle12
+  - typings.cliDashSpinners.cliDashSpinnersStrings.toggle13
+  - typings.cliDashSpinners.cliDashSpinnersStrings.arrow
+  - typings.cliDashSpinners.cliDashSpinnersStrings.arrow2
+  - typings.cliDashSpinners.cliDashSpinnersStrings.arrow3
+  - typings.cliDashSpinners.cliDashSpinnersStrings.bouncingBar
+  - typings.cliDashSpinners.cliDashSpinnersStrings.bouncingBall
+  - typings.cliDashSpinners.cliDashSpinnersStrings.smiley
+  - typings.cliDashSpinners.cliDashSpinnersStrings.monkey
+  - typings.cliDashSpinners.cliDashSpinnersStrings.hearts
+  - typings.cliDashSpinners.cliDashSpinnersStrings.clock
+  - typings.cliDashSpinners.cliDashSpinnersStrings.earth
+  - typings.cliDashSpinners.cliDashSpinnersStrings.moon
+  - typings.cliDashSpinners.cliDashSpinnersStrings.runner
+  - typings.cliDashSpinners.cliDashSpinnersStrings.pong
+  - typings.cliDashSpinners.cliDashSpinnersStrings.shark
+  - typings.cliDashSpinners.cliDashSpinnersStrings.dqpb
+  - typings.cliDashSpinners.cliDashSpinnersStrings.weather
+  - typings.cliDashSpinners.cliDashSpinnersStrings.christmas
+  - typings.cliDashSpinners.cliDashSpinnersStrings.grenade
+  - typings.cliDashSpinners.cliDashSpinnersStrings.point
+  - typings.cliDashSpinners.cliDashSpinnersStrings.layer
+*/
+trait SpinnerName extends js.Object
+

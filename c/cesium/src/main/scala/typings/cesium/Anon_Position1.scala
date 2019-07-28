@@ -1,0 +1,21 @@
+package typings.cesium
+
+import typings.cesium.cesiumMod.Cartesian2
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Position1 extends js.Object {
+  var position1: Cartesian2
+  var position2: Cartesian2
+}
+
+object Anon_Position1 {
+  @scala.inline
+  def apply(position1: Cartesian2, position2: Cartesian2): Anon_Position1 = {
+    val __obj = js.Dynamic.literal(position1 = position1, position2 = position2)
+  
+    __obj.asInstanceOf[Anon_Position1]
+  }
+}
+

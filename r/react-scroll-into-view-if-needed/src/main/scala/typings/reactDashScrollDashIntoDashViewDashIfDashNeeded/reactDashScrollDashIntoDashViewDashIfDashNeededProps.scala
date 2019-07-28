@@ -1,0 +1,13 @@
+package typings.reactDashScrollDashIntoDashViewDashIfDashNeeded
+
+import typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollDashIntoDashViewDashIfDashNeededMod.ReactScrollIntoViewIfNeededProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashScrollDashIntoDashViewDashIfDashNeededProps {
+  @scala.inline
+  def ReactDashScrollDashIntoDashViewDashIfDashNeededProps: ReactScrollIntoViewIfNeededProps.type = typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollDashIntoDashViewDashIfDashNeededMod.ReactScrollIntoViewIfNeededProps
+  type ReactDashScrollDashIntoDashViewDashIfDashNeededProps = ReactScrollIntoViewIfNeededProps
+}
+

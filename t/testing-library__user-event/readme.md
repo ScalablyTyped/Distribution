@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @testing-library/user-event 4.1
-// Project: https://github.com/testing-library/user-event
-// Definitions by: Wu Haotian <https://github.com/whtsky>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

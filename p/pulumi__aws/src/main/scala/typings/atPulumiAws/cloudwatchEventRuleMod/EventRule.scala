@@ -1,0 +1,101 @@
+package typings.atPulumiAws.cloudwatchEventRuleMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.cloudwatchEventRuleMixinsMod.EventRuleEventHandler
+import typings.atPulumiAws.cloudwatchEventRuleMixinsMod.EventRuleEventSubscription
+import typings.atPulumiAws.cloudwatchEventRuleMixinsMod.EventRuleEventSubscriptionArgs
+import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
+import typings.atPulumiPulumi.outputMod.Input
+import typings.atPulumiPulumi.outputMod.Output
+import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions
+import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
+import typings.atPulumiPulumi.resourceMod.ID
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/cloudwatch/eventRule", "EventRule")
+@js.native
+class EventRule protected () extends CustomResource {
+  /**
+    * Create a EventRule resource with the given unique name, arguments, and options.
+    *
+    * @param name The _unique_ name of the resource.
+    * @param args The arguments to use to populate this resource's properties.
+    * @param opts A bag of options that control this resource's behavior.
+    */
+  def this(name: String) = this()
+  def this(name: String, args: EventRuleArgs) = this()
+  def this(name: String, args: EventRuleArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The Amazon Resource Name (ARN) of the rule.
+    */
+  val arn: Output[String] = js.native
+  /**
+    * The description of the rule.
+    */
+  val description: Output[js.UndefOr[String]] = js.native
+  /**
+    * Event pattern
+    * described a JSON object.
+    * See full documentation of [CloudWatch Events and Event Patterns](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CloudWatchEventsandEventPatterns.html) for details.
+    */
+  val eventPattern: Output[js.UndefOr[String]] = js.native
+  /**
+    * Whether the rule should be enabled (defaults to `true`).
+    */
+  val isEnabled: Output[js.UndefOr[Boolean]] = js.native
+  val name: Output[String] = js.native
+  /**
+    * The rule's name. Conflicts with `name`.
+    */
+  val namePrefix: Output[js.UndefOr[String]] = js.native
+  /**
+    * The Amazon Resource Name (ARN) associated with the role that is used for target invocation.
+    */
+  val roleArn: Output[js.UndefOr[String]] = js.native
+  /**
+    * The scheduling expression.
+    * For example, `cron(0 20 * * ? *)` or `rate(5 minutes)`.
+    */
+  val scheduleExpression: Output[js.UndefOr[String]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
+    * Creates a new subscription to events fired from this EventRule to the handler provided, along
+    * with options to control the behavior of the subscription.
+    */
+  def onEvent(name: String, handler: EventRuleEventHandler): EventRuleEventSubscription = js.native
+  def onEvent(name: String, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs): EventRuleEventSubscription = js.native
+  def onEvent(
+    name: String,
+    handler: EventRuleEventHandler,
+    args: EventRuleEventSubscriptionArgs,
+    opts: ComponentResourceOptions
+  ): EventRuleEventSubscription = js.native
+}
+
+/* static members */
+@JSImport("@pulumi/aws/cloudwatch/eventRule", "EventRule")
+@js.native
+object EventRule extends js.Object {
+  /**
+    * Get an existing EventRule resource's state with the given name, ID, and optional extra
+    * properties used to qualify the lookup.
+    *
+    * @param name The _unique_ name of the resulting resource.
+    * @param id The _unique_ provider ID of the resource to lookup.
+    * @param state Any extra arguments used during the lookup.
+    */
+  def get(name: String, id: Input[ID]): EventRule = js.native
+  def get(name: String, id: Input[ID], state: EventRuleState): EventRule = js.native
+  def get(name: String, id: Input[ID], state: EventRuleState, opts: CustomResourceOptions): EventRule = js.native
+  /**
+    * Returns true if the given object is an instance of EventRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean = js.native
+}
+

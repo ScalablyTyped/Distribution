@@ -1,0 +1,12 @@
+package typings.focusDashWithin
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("focus-within", JSImport.Namespace)
+@js.native
+object focusDashWithinRequire extends js.Object
+

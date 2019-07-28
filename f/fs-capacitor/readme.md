@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fs-capacitor 2.0
-// Project: https://github.com/mike-marcacci/fs-capacitor#readme
-// Definitions by: Mike Marcacci <https://github.com/mike-marcacci>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.3
-
-```
 

@@ -1,0 +1,27 @@
+package typings.expressDashWs.expressDashWsMod
+
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.ws.wsMod.Server
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Instance extends js.Object {
+  @JSName("app")
+  var app_Original: Application = js.native
+  /**
+    * Express instance itself is a request handler, which could be invoked without
+    * third argument.
+    */
+  def app(req: Request, res: Response): js.Any = js.native
+  def app(req: Request, res: ServerResponse): js.Any = js.native
+  def app(req: IncomingMessage, res: Response): js.Any = js.native
+  def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+  def applyTo(target: RouterLike): Unit = js.native
+  def getWss(): Server = js.native
+}
+

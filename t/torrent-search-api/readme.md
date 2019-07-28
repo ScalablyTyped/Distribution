@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for torrent-search-api 2.0
-// Project: https://github.com/JimmyLaurent/torrent-search-api
-// Definitions by: Nicolas Girardin <https://github.com/ngirardin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

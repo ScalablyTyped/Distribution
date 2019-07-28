@@ -1,0 +1,24 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PlotColumnLastVisiblePriceOptions extends js.Object {
+  /**
+    * (Highstock) Enable or disable the indicator.
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  var label: js.UndefOr[PlotColumnLastVisiblePriceLabelOptions] = js.undefined
+}
+
+object PlotColumnLastVisiblePriceOptions {
+  @scala.inline
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined, label: PlotColumnLastVisiblePriceLabelOptions = null): PlotColumnLastVisiblePriceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[PlotColumnLastVisiblePriceOptions]
+  }
+}
+

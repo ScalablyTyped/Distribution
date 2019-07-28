@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cloner 0.4
-// Project: https://github.com/WebReflection/cloner
-// Definitions by: matrumz <https://github.com/matrumz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Deep-style methods that will perform operations by value, instead of reference.
- */
-
-```
 

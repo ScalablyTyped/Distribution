@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bagpipes 0.1
-// Project: https://github.com/apigee-127/bagpipes
-// Definitions by: Michael Mrowetz <https://github.com/micmro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

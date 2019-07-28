@@ -1,0 +1,73 @@
+package typings.atPulumiAws.lightsailKeyPairMod
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait KeyPairState extends js.Object {
+  /**
+    * The ARN of the Lightsail key pair
+    */
+  val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The MD5 public key fingerprint for the encrypted
+    * private key
+    */
+  val encryptedFingerprint: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * the private key material, base 64 encoded and
+    * encrypted with the given `pgp_key`. This is only populated when creating a new
+    * key and `pgp_key` is supplied
+    */
+  val encryptedPrivateKey: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
+    */
+  val fingerprint: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * An optional PGP key to encrypt the resulting private
+    * key material. Only used when creating a new key pair
+    */
+  val pgpKey: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * the private key, base64 encoded. This is only populated
+    * when creating a new key, and when no `pgp_key` is provided
+    */
+  val privateKey: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The public key material. This public key will be
+    * imported into Lightsail
+    */
+  val publicKey: js.UndefOr[Input[String]] = js.undefined
+}
+
+object KeyPairState {
+  @scala.inline
+  def apply(
+    arn: Input[String] = null,
+    encryptedFingerprint: Input[String] = null,
+    encryptedPrivateKey: Input[String] = null,
+    fingerprint: Input[String] = null,
+    name: Input[String] = null,
+    namePrefix: Input[String] = null,
+    pgpKey: Input[String] = null,
+    privateKey: Input[String] = null,
+    publicKey: Input[String] = null
+  ): KeyPairState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (encryptedFingerprint != null) __obj.updateDynamic("encryptedFingerprint")(encryptedFingerprint.asInstanceOf[js.Any])
+    if (encryptedPrivateKey != null) __obj.updateDynamic("encryptedPrivateKey")(encryptedPrivateKey.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyPairState]
+  }
+}
+

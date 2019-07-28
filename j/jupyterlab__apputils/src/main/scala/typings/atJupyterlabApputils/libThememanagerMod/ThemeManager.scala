@@ -1,0 +1,94 @@
+package typings.atJupyterlabApputils.libThememanagerMod
+
+import typings.atJupyterlabApputils.libThememanagerMod.ThemeManagerNs.IOptions
+import typings.atJupyterlabApputils.libTokensMod.IThemeManager
+import typings.atJupyterlabApputils.libTokensMod.IThemeManagerNs.ITheme
+import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
+import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
+import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@jupyterlab/apputils/lib/thememanager", "ThemeManager")
+@js.native
+class ThemeManager protected () extends IThemeManager {
+  /**
+    * Construct a new theme manager.
+    */
+  def this(options: IOptions) = this()
+  var _base: js.Any = js.native
+  var _current: js.Any = js.native
+  var _host: js.Any = js.native
+  var _links: js.Any = js.native
+  /**
+    * Handle the current settings.
+    */
+  var _loadSettings: js.Any = js.native
+  /**
+    * Load the theme.
+    *
+    * #### Notes
+    * This method assumes that the `theme` exists.
+    */
+  var _loadTheme: js.Any = js.native
+  /**
+    * Handle a theme error.
+    */
+  var _onError: js.Any = js.native
+  var _outstanding: js.Any = js.native
+  var _pending: js.Any = js.native
+  var _requests: js.Any = js.native
+  var _settings: js.Any = js.native
+  var _splash: js.Any = js.native
+  var _themeChanged: js.Any = js.native
+  var _themes: js.Any = js.native
+  /**
+    * Get the name of the current theme.
+    */
+  /* CompleteClass */
+  override val theme: String | Null = js.native
+  /**
+    * A signal fired when the application theme changes.
+    */
+  /* CompleteClass */
+  override val themeChanged: ISignal[this.type, IChangedArgs[String]] = js.native
+  /**
+    * The names of the registered themes.
+    */
+  /* CompleteClass */
+  override val themes: js.Array[String] = js.native
+  /**
+    * Test whether a given theme is light.
+    */
+  /* CompleteClass */
+  override def isLight(name: String): Boolean = js.native
+  /**
+    * Load a theme CSS file by path.
+    *
+    * @param path - The path of the file to load.
+    */
+  /* CompleteClass */
+  override def loadCSS(path: String): js.Promise[Unit] = js.native
+  /**
+    * Register a theme with the theme manager.
+    *
+    * @param theme - The theme to register.
+    *
+    * @returns A disposable that can be used to unregister the theme.
+    */
+  /* CompleteClass */
+  override def register(theme: ITheme): IDisposable = js.native
+  /**
+    * Set the current theme.
+    */
+  /* CompleteClass */
+  override def setTheme(name: String): js.Promise[Unit] = js.native
+  /**
+    * Test whether a given theme styles scrollbars,
+    * and if the user has scrollbar styling enabled.
+    */
+  /* CompleteClass */
+  override def themeScrollbars(name: String): Boolean = js.native
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for async.nexttick 0.5
-// Project: https://github.com/caolan/async
-// Definitions by: Damien "pyrho" Rajon <https://github.com/pyrho>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-scroll 1.5
-// Project: https://github.com/fisshy/react-scroll
-// Definitions by: Ioannis Kokkinidis <https://github.com/sudoplz>
-//                 Giedrius Grabauskas <https://github.com/GiedriusGrabauskas>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Super dumb and simple WebDriver client. Works with selenium standalone, may or may not work yet
- * directly with other drivers.
- */
-
-```
 

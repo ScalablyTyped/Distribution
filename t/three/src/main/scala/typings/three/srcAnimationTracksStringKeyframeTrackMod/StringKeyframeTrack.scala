@@ -1,0 +1,15 @@
+package typings.three.srcAnimationTracksStringKeyframeTrackMod
+
+import typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack
+import typings.three.srcConstantsMod.InterpolationModes
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("three/src/animation/tracks/StringKeyframeTrack", "StringKeyframeTrack")
+@js.native
+class StringKeyframeTrack protected () extends KeyframeTrack {
+  def this(name: String, times: js.Array[_], values: js.Array[_]) = this()
+  def this(name: String, times: js.Array[_], values: js.Array[_], interpolation: InterpolationModes) = this()
+}
+

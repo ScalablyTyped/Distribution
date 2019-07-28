@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for JFP
-// Project: http://cmstead.github.io/JFP
-// Definitions by: Chris Stead <http://www.chrisstead.com>
-// Definitions: https://github.com/cmstead/DefinitelyTyped
-
-```
 

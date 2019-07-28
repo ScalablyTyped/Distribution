@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for yaml 1.0
-// Project: https://github.com/eemeli/yaml, https://eemeli.org/yaml
-// Definitions by: Ika <https://github.com/ikatyang>
-//                 Colin Bradley <https://github.com/ColinBradley>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

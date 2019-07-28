@@ -1,0 +1,63 @@
+package typings.poi.poiMod.ConfigNs
+
+import typings.poi.poiMod.ConfigNs.OutputNs.FileNames
+import typings.poi.poiMod.ConfigNs.OutputNs.Html
+import typings.poi.poiStrings.`async-node`
+import typings.poi.poiStrings.`electron-main`
+import typings.poi.poiStrings.`electron-renderer`
+import typings.poi.poiStrings.`node-webkit`
+import typings.poi.poiStrings.cjs
+import typings.poi.poiStrings.electron
+import typings.poi.poiStrings.iife
+import typings.poi.poiStrings.node
+import typings.poi.poiStrings.umd
+import typings.poi.poiStrings.web
+import typings.poi.poiStrings.webworker
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Output extends js.Object {
+  var clean: js.UndefOr[Boolean] = js.undefined
+  var dir: js.UndefOr[String] = js.undefined
+  var fileNames: js.UndefOr[FileNames] = js.undefined
+  var format: js.UndefOr[iife | cjs | umd] = js.undefined
+  var html: js.UndefOr[Html] = js.undefined
+  var minimize: js.UndefOr[Boolean] = js.undefined
+  var moduleName: js.UndefOr[String] = js.undefined
+  var publicUrl: js.UndefOr[String] = js.undefined
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
+  var target: js.UndefOr[
+    web | electron | `electron-renderer` | `electron-main` | node | `node-webkit` | `async-node` | webworker
+  ] = js.undefined
+}
+
+object Output {
+  @scala.inline
+  def apply(
+    clean: js.UndefOr[Boolean] = js.undefined,
+    dir: String = null,
+    fileNames: FileNames = null,
+    format: iife | cjs | umd = null,
+    html: Html = null,
+    minimize: js.UndefOr[Boolean] = js.undefined,
+    moduleName: String = null,
+    publicUrl: String = null,
+    sourceMap: js.UndefOr[Boolean] = js.undefined,
+    target: web | electron | `electron-renderer` | `electron-main` | node | `node-webkit` | `async-node` | webworker = null
+  ): Output = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (fileNames != null) __obj.updateDynamic("fileNames")(fileNames)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
+    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName)
+    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Output]
+  }
+}
+

@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Vimeo
-// Project: http://developer.vimeo.com/player/js-api
-// Definitions by: Daz Wilkin <https://github.com/DazWilkin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

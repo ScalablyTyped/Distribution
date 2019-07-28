@@ -1,0 +1,34 @@
+package typings.mfiles
+
+import typings.mfiles.MFilesNs.MFEventHandlerType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IEventHandler extends js.Object {
+  var Active: Boolean
+  var Description: String
+  var EventType: MFEventHandlerType
+  val GUID: String
+  var VBScript: String
+  def Clone(): IEventHandler
+  def GetID(): Double
+}
+
+object IEventHandler {
+  @scala.inline
+  def apply(
+    Active: Boolean,
+    Clone: () => IEventHandler,
+    Description: String,
+    EventType: MFEventHandlerType,
+    GUID: String,
+    GetID: () => Double,
+    VBScript: String
+  ): IEventHandler = {
+    val __obj = js.Dynamic.literal(Active = Active, Clone = js.Any.fromFunction0(Clone), Description = Description, EventType = EventType, GUID = GUID, GetID = js.Any.fromFunction0(GetID), VBScript = VBScript)
+  
+    __obj.asInstanceOf[IEventHandler]
+  }
+}
+

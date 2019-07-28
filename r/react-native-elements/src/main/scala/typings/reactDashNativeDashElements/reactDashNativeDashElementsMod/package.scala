@@ -1,0 +1,39 @@
+package typings.reactDashNativeDashElements
+
+import typings.react.reactMod.ReactElement
+import typings.std.Partial
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object reactDashNativeDashElementsMod {
+  type DividerProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
+  /* Rewritten from type alias, can be one of: 
+    - typings.react.reactMod.ReactElement
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.TextProps
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.HeaderIcon
+  */
+  type HeaderSubComponent = _HeaderSubComponent | ReactElement
+  type IconNode = Boolean | ReactElement | IconProps
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.material
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.`material-community`
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.`simple-line-icon`
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.zocial
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.`font-awesome`
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.octicon
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.ionicon
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.foundation
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.evilicon
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.entypo
+    - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.antdesign
+    - java.lang.String
+  */
+  type IconType = _IconType | String
+  type RecursivePartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? object}
+    */ typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.RecursivePartial with js.Any
+  type SearchBarProps = SearchBarWrapper with SearchBarBase with SearchBarPlatform with SearchBarDefault with SearchBarIOS with SearchBarAndroid
+  type Theme[T] = Partial[FullTheme] with T
+  type UpdateTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], Unit]
+}

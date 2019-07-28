@@ -1,0 +1,32 @@
+package typings.officeDashJsDashPreview.ExcelNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait SlicerSortType extends js.Object
+
+/**
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
+@JSGlobal("Excel.SlicerSortType")
+@js.native
+object SlicerSortType extends js.Object {
+  @js.native
+  sealed trait ascending extends SlicerSortType
+  
+  @js.native
+  sealed trait dataSourceOrder extends SlicerSortType
+  
+  @js.native
+  sealed trait descending extends SlicerSortType
+  
+  /* "Ascending" */ val ascending: typings.officeDashJsDashPreview.ExcelNs.SlicerSortType.ascending with String = js.native
+  /* "DataSourceOrder" */ val dataSourceOrder: typings.officeDashJsDashPreview.ExcelNs.SlicerSortType.dataSourceOrder with String = js.native
+  /* "Descending" */ val descending: typings.officeDashJsDashPreview.ExcelNs.SlicerSortType.descending with String = js.native
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[SlicerSortType with String] = js.native
+}
+

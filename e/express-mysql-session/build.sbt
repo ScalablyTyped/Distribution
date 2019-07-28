@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-mysql-session"
-version := "1.2-dt-20180214Z-a93500"
+version := "1.2-dt-20180214Z-2731b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

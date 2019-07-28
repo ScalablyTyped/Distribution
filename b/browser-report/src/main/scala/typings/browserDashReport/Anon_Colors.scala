@@ -1,0 +1,22 @@
+package typings.browserDashReport
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Colors extends js.Object {
+  var colors: Double
+  var dppx: Double
+  var height: Double
+  var width: Double
+}
+
+object Anon_Colors {
+  @scala.inline
+  def apply(colors: Double, dppx: Double, height: Double, width: Double): Anon_Colors = {
+    val __obj = js.Dynamic.literal(colors = colors, dppx = dppx, height = height, width = width)
+  
+    __obj.asInstanceOf[Anon_Colors]
+  }
+}
+

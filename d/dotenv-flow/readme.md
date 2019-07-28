@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dotenv-flow 3.0
-// Project: https://github.com/kerimdzhanov/dotenv-flow
-// Definitions by: Vincent Langlet <https://github.com/vincentlanglet>
-//                 Dan Kerimdzhanov <https://github.com/kerimdzhanov>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

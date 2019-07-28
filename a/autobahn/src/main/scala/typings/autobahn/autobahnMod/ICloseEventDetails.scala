@@ -1,0 +1,21 @@
+package typings.autobahn.autobahnMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ICloseEventDetails extends js.Object {
+  var code: Double
+  var reason: String
+  var wasClean: Boolean
+}
+
+object ICloseEventDetails {
+  @scala.inline
+  def apply(code: Double, reason: String, wasClean: Boolean): ICloseEventDetails = {
+    val __obj = js.Dynamic.literal(code = code, reason = reason, wasClean = wasClean)
+  
+    __obj.asInstanceOf[ICloseEventDetails]
+  }
+}
+

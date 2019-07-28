@@ -1,0 +1,21 @@
+package typings.nodeDashStatic.nodeDashStaticMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ByteRange extends js.Object {
+  var from: Double
+  var to: Double
+  var valid: Boolean
+}
+
+object ByteRange {
+  @scala.inline
+  def apply(from: Double, to: Double, valid: Boolean): ByteRange = {
+    val __obj = js.Dynamic.literal(from = from, to = to, valid = valid)
+  
+    __obj.asInstanceOf[ByteRange]
+  }
+}
+

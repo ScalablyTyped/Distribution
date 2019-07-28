@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsblocks v0.3.0
-// Project: http://jsblocks.com/
-// Definitions by: Krzysztof Śmigiel <https://github.com/ksmigiel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/////////////////////////////////////////
-// blocks methods
-
-```
 

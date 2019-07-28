@@ -1,0 +1,36 @@
+package typings.antdDashMobileDashRn.libActivityDashIndicatorIndexDotNativeMod
+
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.large
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.small
+import typings.antdDashMobileDashRn.libActivityDashIndicatorPropsTypeMod.ActivityIndicatorPropTypes
+import typings.antdDashMobileDashRn.libActivityDashIndicatorStyleIndexDotNativeMod.IActivityIndicatorStyle
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ActivityIndicatorNativeProps extends ActivityIndicatorPropTypes {
+  var color: js.UndefOr[String] = js.undefined
+  var styles: js.UndefOr[IActivityIndicatorStyle] = js.undefined
+}
+
+object ActivityIndicatorNativeProps {
+  @scala.inline
+  def apply(
+    animating: js.UndefOr[Boolean] = js.undefined,
+    color: String = null,
+    size: large | small = null,
+    styles: IActivityIndicatorStyle = null,
+    text: String = null,
+    toast: js.UndefOr[Boolean] = js.undefined
+  ): ActivityIndicatorNativeProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(toast)) __obj.updateDynamic("toast")(toast)
+    __obj.asInstanceOf[ActivityIndicatorNativeProps]
+  }
+}
+

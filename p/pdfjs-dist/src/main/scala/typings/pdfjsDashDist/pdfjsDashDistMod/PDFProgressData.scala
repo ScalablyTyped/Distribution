@@ -1,0 +1,20 @@
+package typings.pdfjsDashDist.pdfjsDashDistMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PDFProgressData extends js.Object {
+  var loaded: Double
+  var total: Double
+}
+
+object PDFProgressData {
+  @scala.inline
+  def apply(loaded: Double, total: Double): PDFProgressData = {
+    val __obj = js.Dynamic.literal(loaded = loaded, total = total)
+  
+    __obj.asInstanceOf[PDFProgressData]
+  }
+}
+

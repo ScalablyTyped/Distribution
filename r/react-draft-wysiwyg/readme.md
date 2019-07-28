@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-draft-wysiwyg 1.12
-// Project: https://github.com/jpuri/react-draft-wysiwyg#readme
-// Definitions by: imechZhangLY <https://github.com/imechZhangLY>
-//                 brunoMaurice <https://github.com/brunoMaurice>
-//                 ldanet <https://github.com/ldanet>
-//                 Munif Tanjim <https://github.com/MunifTanjim>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-
-```
 

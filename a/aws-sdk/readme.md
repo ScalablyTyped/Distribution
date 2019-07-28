@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk
 
-Typings are for version 2.500.0
+Typings are for version 2.501.0
 
 ## Library description:
 AWS SDK for JavaScript
@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * A structure containing information about a service or networking error.
- */
-/**
- * The namespace used to register global event listeners for request building and sending.
- */
-
-```
 

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for prosemirror-tables 0.8
-// Project: https://github.com/ProseMirror/prosemirror-tables
-// Definitions by: Oscar Wallhult <https://github.com/superchu>
-//                 Eduard Shvedai <https://github.com/eshvedai>
-//                 Patrick Simmelbauer <https://github.com/patsimm>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

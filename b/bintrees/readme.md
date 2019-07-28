@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bintrees 1.0.1
-// Project: https://github.com/vadimg/js_bintrees
-// Definitions by: Cayle Sharrock <https://github.com/CjS77>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for component-emitter v1.2.1
-// Project: https://www.npmjs.com/package/component-emitter
-// Definitions by: Peter Snider <https://github.com/psnider>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/emitter-component
-// TypeScript Version: 2.2
-
-```
 

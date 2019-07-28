@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ref-array"
-version := "0.0-unknown-dt-20190322Z-7427e3"
+version := "0.0-unknown-dt-20190322Z-31b1c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
-  "org.scalablytyped" %%% "ref" % "0.0-unknown-dt-20190322Z-4a3b95",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "ref" % "0.0-unknown-dt-20190322Z-d4805b",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

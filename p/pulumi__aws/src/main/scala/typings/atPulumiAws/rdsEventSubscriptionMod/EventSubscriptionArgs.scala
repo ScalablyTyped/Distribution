@@ -1,0 +1,64 @@
+package typings.atPulumiAws.rdsEventSubscriptionMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait EventSubscriptionArgs extends js.Object {
+  /**
+    * A boolean flag to enable/disable the subscription. Defaults to true.
+    */
+  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * A list of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run `aws rds describe-event-categories`.
+    */
+  val eventCategories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the DB event subscription. Conflicts with `name`.
+    */
+  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The SNS topic to send events to.
+    */
+  val snsTopic: Input[String]
+  /**
+    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.
+    */
+  val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * The type of source that will be generating the events. Valid options are `db-instance`, `db-security-group`, `db-parameter-group`, `db-snapshot`, `db-cluster` or `db-cluster-snapshot`. If not set, all sources will be subscribed to.
+    */
+  val sourceType: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+}
+
+object EventSubscriptionArgs {
+  @scala.inline
+  def apply(
+    snsTopic: Input[String],
+    enabled: Input[Boolean] = null,
+    eventCategories: Input[js.Array[Input[String]]] = null,
+    name: Input[String] = null,
+    namePrefix: Input[String] = null,
+    sourceIds: Input[js.Array[Input[String]]] = null,
+    sourceType: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null
+  ): EventSubscriptionArgs = {
+    val __obj = js.Dynamic.literal(snsTopic = snsTopic.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (sourceIds != null) __obj.updateDynamic("sourceIds")(sourceIds.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventSubscriptionArgs]
+  }
+}
+

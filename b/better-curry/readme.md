@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for better-curry
-// Project: https://github.com/pocesar/js-bettercurry
-// Definitions by: Paulo Cesar <https://github.com/pocesar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

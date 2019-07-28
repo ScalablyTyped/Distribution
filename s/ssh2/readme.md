@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ssh2 v0.5.x
-// Project: https://github.com/mscdex/ssh2
-// Definitions by: Qubo <https://github.com/tkQubo>
-//                 Ron Buckton <https://github.com/rbuckton>
-//                 Will Boyce <https://github.com/wrboyce>
-//                 Lucas Motta <https://github.com/lucasmotta>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

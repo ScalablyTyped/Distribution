@@ -1,0 +1,33 @@
+package typings.wiredep
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CssSassScss extends js.Object {
+  /**
+    * @example:
+    *  '@import "{{filePath}}";'
+    */
+  var css: String
+  /**
+    * @example:
+    *  '@import "{{filePath}}";'
+    */
+  var sass: String
+  /**
+    * @example:
+    *  '@import "{{filePath}}";'
+    */
+  var scss: String
+}
+
+object Anon_CssSassScss {
+  @scala.inline
+  def apply(css: String, sass: String, scss: String): Anon_CssSassScss = {
+    val __obj = js.Dynamic.literal(css = css, sass = sass, scss = scss)
+  
+    __obj.asInstanceOf[Anon_CssSassScss]
+  }
+}
+

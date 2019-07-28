@@ -1,0 +1,20 @@
+package typings.atOctokitEndpoint.distDashTypesGeneratedRoutesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AppsFindRepoInstallationEndpoint extends js.Object {
+  var owner: String
+  var repo: String
+}
+
+object AppsFindRepoInstallationEndpoint {
+  @scala.inline
+  def apply(owner: String, repo: String): AppsFindRepoInstallationEndpoint = {
+    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+  
+    __obj.asInstanceOf[AppsFindRepoInstallationEndpoint]
+  }
+}
+

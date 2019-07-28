@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strict-uri-encode"
-version := "2.0-dt-20180320Z-61a57b"
+version := "2.0-dt-20180320Z-a72e13"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

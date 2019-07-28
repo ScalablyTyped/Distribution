@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ansi 0.3
-// Project: https://github.com/tootallnate/ansi.js
-// Definitions by: Gustavo6046 <https://github.com/Gustavo6046>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-/**
- * References:
- *
- *   - http://en.wikipedia.org/wiki/ANSI_escape_code
- *   - http://www.termsys.demon.co.uk/vtansi.htm
- *
- */
-
-
-```
 

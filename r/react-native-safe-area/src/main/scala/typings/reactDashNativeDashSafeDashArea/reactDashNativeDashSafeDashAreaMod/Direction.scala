@@ -1,0 +1,29 @@
+package typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.top
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottom
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.left
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.right
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.topLeft
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.topAndLeft
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.topRight
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.topAndRight
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottomLeft
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottomAndLeft
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottomRight
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottomAndRight
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.vertical
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.horizontal
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.verticalAndLeft
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.verticalAndRight
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.horizontalAndTop
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.horizontalAndBottom
+  - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.all
+*/
+trait Direction extends js.Object
+

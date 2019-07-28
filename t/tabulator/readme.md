@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tabulator 0.1
-// Project: https://github.com/codenautas/tabulator
-// Definitions by: Eugenio Arosteguy <https://github.com/euginio>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

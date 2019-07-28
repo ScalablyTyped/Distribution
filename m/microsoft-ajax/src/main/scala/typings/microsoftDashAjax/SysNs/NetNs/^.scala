@@ -1,0 +1,12 @@
+package typings.microsoftDashAjax.SysNs.NetNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Sys.Net")
+@js.native
+object ^ extends js.Object {
+  var WebRequestManager: IWebRequestManager = js.native
+}
+

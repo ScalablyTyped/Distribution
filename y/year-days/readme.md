@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get the number of days in a year.
-
-@param yearOrDate - Default: `new Date()`.
-
-@example
-```
-import yearDays = require('year-days');
-
-yearDays(2014);
-//=> 365
-
-yearDays(2016);
-//=> 366
-```
-*/
-
-```
 

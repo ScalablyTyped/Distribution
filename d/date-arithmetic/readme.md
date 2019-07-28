@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for date-arithmetic v3.1.0
-// Project: https://github.com/jquense/date-math
-// Definitions by: Sergii Paryzhskyi <https://github.com/HeeL>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

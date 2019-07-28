@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Backbone.LayoutManager 0.9
-// Project: http://layoutmanager.org/
-// Definitions by: He Jiang <https://github.com/hejiang2000>
-// Definitions: https://github.com/hejiang2000/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

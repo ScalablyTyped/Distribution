@@ -1,0 +1,10 @@
+package typings.chrome.chromeNs
+
+import typings.chrome.chromeNs.eventsNs.Event
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object alarmsNs {
+  type AlarmEvent = Event[js.Function1[/* alarm */ Alarm, Unit]]
+}

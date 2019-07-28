@@ -1,0 +1,22 @@
+package typings.wepy
+
+import typings.std.Uint8ClampedArray
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Data extends js.Object {
+  var data: Uint8ClampedArray
+  var height: Double
+  var width: Double
+}
+
+object Anon_Data {
+  @scala.inline
+  def apply(data: Uint8ClampedArray, height: Double, width: Double): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

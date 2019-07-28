@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for glob-stream v6.1.0
-// Project: https://github.com/wearefractal/glob-stream
-// Definitions by: Bart van der Schoor <https://github.com/Bartvds>
-//                 mrmlnc <https://github.com/mrmlnc>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

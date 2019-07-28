@@ -1,0 +1,49 @@
+package typings.dockerode.dockerodeMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.dockerode.Anon_Destination
+import typings.dockerode.Anon_NetworkMode
+import typings.dockerode.Anon_NetworkType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ContainerInfo extends js.Object {
+  var Command: String
+  var Created: Double
+  var HostConfig: Anon_NetworkMode
+  var Id: String
+  var Image: String
+  var ImageID: String
+  var Labels: StringDictionary[String]
+  var Mounts: js.Array[Anon_Destination]
+  var Names: js.Array[String]
+  var NetworkSettings: Anon_NetworkType
+  var Ports: js.Array[Port]
+  var State: String
+  var Status: String
+}
+
+object ContainerInfo {
+  @scala.inline
+  def apply(
+    Command: String,
+    Created: Double,
+    HostConfig: Anon_NetworkMode,
+    Id: String,
+    Image: String,
+    ImageID: String,
+    Labels: StringDictionary[String],
+    Mounts: js.Array[Anon_Destination],
+    Names: js.Array[String],
+    NetworkSettings: Anon_NetworkType,
+    Ports: js.Array[Port],
+    State: String,
+    Status: String
+  ): ContainerInfo = {
+    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Mounts = Mounts, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
+  
+    __obj.asInstanceOf[ContainerInfo]
+  }
+}
+

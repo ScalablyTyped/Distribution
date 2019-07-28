@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for iopipe__iopipe 1.12
-// Project: https://github.com/iopipe/iopipe, https://github.com/iopipe/the-meta-package
-// Definitions by: Javon Harper <https://github.com/javonharper>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

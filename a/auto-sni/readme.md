@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for auto-sni 2.1
-// Project: https://github.com/dylanpiercey/auto-sni
-// Definitions by: Jan Wolf <https://github.com/janwo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

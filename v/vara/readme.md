@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for vara 1.1
-// Project: https://github.com/akzhy/vara#readme
-// Definitions by: Richard Haddad <https://github.com/Chnapy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Comments are from the documentation: http://vara.akzhy.com/documentation/
- */
-
-/**
- * The options given below will be applicable to every text created,
- * however they will not override the options set above.
- * They will work as secondary options.
- */
-
-```
 

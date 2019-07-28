@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-webdriverio 0.4
-// Project: https://github.com/marcodejongh/chai-webdriverio
-// Definitions by: Nikolai Orekhov <https://github.com/sherlock1982>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

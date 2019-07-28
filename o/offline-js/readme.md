@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Offline 0.7.14
-// Project: https://github.com/HubSpot/offline
-// Definitions by: Chris Wrench <https://github.com/cgwrench>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

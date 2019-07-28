@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rename"
-version := "1.0-dt-20180412Z-6ade73"
+version := "1.0-dt-20180412Z-e8a47e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

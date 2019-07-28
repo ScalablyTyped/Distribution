@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for simonwep__selection-js 0.2
-// Project: https://github.com/Simonwep/selection
-// Definitions by: Mitsuka Hanakura a.k.a. ragg <https://github.com/ra-gg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.4
-
-```
 

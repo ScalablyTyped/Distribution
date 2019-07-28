@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for UglifyCSS v0.0.20
-// Project: https://github.com/fmarcia/UglifyCSS
-// Definitions by: gevik Babakhani <https://github.com/blendsdk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

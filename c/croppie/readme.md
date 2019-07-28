@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for croppie 2.5
-// Project: https://github.com/Foliotek/Croppie, http://foliotek.github.io/croppie
-// Definitions by: Connor Peet <https://github.com/connor4312>
-//                 dklmuc <https://github.com/dklmuc>
-//                 Sarun Intaralawan <https://github.com/sarunint>
-//                 Knut Erik Helgesen <https://github.com/knuthelgesen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

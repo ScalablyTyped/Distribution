@@ -1,0 +1,79 @@
+package typings.atAngularCompiler.publicUnderscoreApiMod
+
+import typings.atAngularCompiler.srcCoreMod.SecurityContext
+import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.Message
+import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.Node
+import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.BoundAttribute
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/public_api", "TmplAstBoundAttribute")
+@js.native
+class TmplAstBoundAttribute protected ()
+  extends typings.atAngularCompiler.srcCompilerMod.TmplAstBoundAttribute {
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Node
+  ) = this()
+}
+
+/* static members */
+@JSImport("@angular/compiler/public_api", "TmplAstBoundAttribute")
+@js.native
+object TmplAstBoundAttribute extends js.Object {
+  def fromBoundElementProperty(prop: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BoundElementProperty): BoundAttribute = js.native
+  def fromBoundElementProperty(
+    prop: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BoundElementProperty,
+    i18n: typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.AST
+  ): BoundAttribute = js.native
+}
+

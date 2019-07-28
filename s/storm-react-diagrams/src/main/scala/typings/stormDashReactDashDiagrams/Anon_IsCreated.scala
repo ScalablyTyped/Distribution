@@ -1,0 +1,21 @@
+package typings.stormDashReactDashDiagrams
+
+import typings.stormDashReactDashDiagrams.distSrcModelsNodeModelMod.NodeModel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_IsCreated extends js.Object {
+  var isCreated: Boolean
+  var node: NodeModel
+}
+
+object Anon_IsCreated {
+  @scala.inline
+  def apply(isCreated: Boolean, node: NodeModel): Anon_IsCreated = {
+    val __obj = js.Dynamic.literal(isCreated = isCreated, node = node)
+  
+    __obj.asInstanceOf[Anon_IsCreated]
+  }
+}
+

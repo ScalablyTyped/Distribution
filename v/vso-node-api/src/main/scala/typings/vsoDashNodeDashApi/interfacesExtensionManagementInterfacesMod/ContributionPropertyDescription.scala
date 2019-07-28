@@ -1,0 +1,34 @@
+package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ContributionPropertyDescription extends js.Object {
+  /**
+    * Description of the property
+    */
+  var description: String
+  /**
+    * Name of the property
+    */
+  var name: String
+  /**
+    * True if this property is required
+    */
+  var required: Boolean
+  /**
+    * The type of value used for this property
+    */
+  var `type`: ContributionPropertyType
+}
+
+object ContributionPropertyDescription {
+  @scala.inline
+  def apply(description: String, name: String, required: Boolean, `type`: ContributionPropertyType): ContributionPropertyDescription = {
+    val __obj = js.Dynamic.literal(description = description, name = name, required = required)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ContributionPropertyDescription]
+  }
+}
+

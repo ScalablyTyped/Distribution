@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for flat-cache 2.0
-// Project: https://github.com/royriojas/flat-cache#readme
-// Definitions by: Kevin Pollet <https://github.com/kevinpollet>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

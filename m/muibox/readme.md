@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for muibox 1.0
-// Project: https://github.com/chunkai1312/muibox
-// Definitions by: Diego Mijelshon <https://github.com/diegose>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

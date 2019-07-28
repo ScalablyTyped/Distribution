@@ -1,0 +1,36 @@
+package typings.meteor
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_LoginStyle extends js.Object {
+  var loginStyle: js.UndefOr[String] = js.undefined
+  var loginUrlParameters: js.UndefOr[js.Object] = js.undefined
+  var redirectUrl: js.UndefOr[String] = js.undefined
+  var requestOfflineToken: js.UndefOr[Boolean] = js.undefined
+  var requestPermissions: js.UndefOr[js.Array[String]] = js.undefined
+  var userEmail: js.UndefOr[String] = js.undefined
+}
+
+object Anon_LoginStyle {
+  @scala.inline
+  def apply(
+    loginStyle: String = null,
+    loginUrlParameters: js.Object = null,
+    redirectUrl: String = null,
+    requestOfflineToken: js.UndefOr[Boolean] = js.undefined,
+    requestPermissions: js.Array[String] = null,
+    userEmail: String = null
+  ): Anon_LoginStyle = {
+    val __obj = js.Dynamic.literal()
+    if (loginStyle != null) __obj.updateDynamic("loginStyle")(loginStyle)
+    if (loginUrlParameters != null) __obj.updateDynamic("loginUrlParameters")(loginUrlParameters)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (!js.isUndefined(requestOfflineToken)) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken)
+    if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions)
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    __obj.asInstanceOf[Anon_LoginStyle]
+  }
+}
+

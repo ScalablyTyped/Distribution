@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for optimist
-// Project: https://github.com/substack/node-optimist
-// Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>, Christopher Brown <https://github.com/chbrown>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

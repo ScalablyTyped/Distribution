@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sql-bricks 2.0
-// Project: http://csnw.github.io/sql-bricks
-// Definitions by: Narcisse Assogba <https://github.com/adn05>
-//                 Paleo <https://github.com/paleo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

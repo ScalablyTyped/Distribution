@@ -1,0 +1,34 @@
+package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
+
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeActionKind
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("vscode-languageserver", "CodeAction")
+@js.native
+object CodeActionNs extends js.Object {
+  /**
+    * Creates a new code action.
+    *
+    * @param title The title of the code action.
+    * @param command The command to execute.
+    * @param kind The kind of the code action.
+    */
+  def create(title: String, command: Command): CodeAction = js.native
+  def create(title: String, command: Command, kind: CodeActionKind): CodeAction = js.native
+  /**
+    * Creates a new code action.
+    *
+    * @param title The title of the code action.
+    * @param command The command to execute.
+    * @param kind The kind of the code action.
+    */
+  def create(title: String, edit: WorkspaceEdit): CodeAction = js.native
+  def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
+}
+

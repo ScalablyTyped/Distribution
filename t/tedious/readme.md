@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tedious 4.0.0
-// Project: http://tediousjs.github.io/tedious/
-// Definitions by: Rogier Schouten <https://github.com/rogierschouten>
-//                 Chris Thompson <https://github.com/cjthompson>
-//                 Suraiya Hameed <https://github.com/v-suhame>
-//                 Guilherme Amorim <https://github.com/guiampm>
-//                 Simon Childs <https://github.com/csharpsi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

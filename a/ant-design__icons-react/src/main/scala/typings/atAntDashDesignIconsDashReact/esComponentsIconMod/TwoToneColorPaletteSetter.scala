@@ -1,0 +1,20 @@
+package typings.atAntDashDesignIconsDashReact.esComponentsIconMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TwoToneColorPaletteSetter extends js.Object {
+  var primaryColor: String
+  var secondaryColor: js.UndefOr[String] = js.undefined
+}
+
+object TwoToneColorPaletteSetter {
+  @scala.inline
+  def apply(primaryColor: String, secondaryColor: String = null): TwoToneColorPaletteSetter = {
+    val __obj = js.Dynamic.literal(primaryColor = primaryColor)
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
+    __obj.asInstanceOf[TwoToneColorPaletteSetter]
+  }
+}
+

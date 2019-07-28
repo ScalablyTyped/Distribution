@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redis-rate-limiter 1.2
-// Project: https://github.com/tabcorp/redis-rate-limiter
-// Definitions by: Seth Westphal <https://github.com/westy92>
-//                 Hasan Oezdemir <https://github.com/nodify-at>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

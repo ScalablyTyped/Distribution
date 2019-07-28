@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingeditor-extension
 
-Typings are for version 0.14.1
+Typings are for version 1.0.2
 
 ## Library description:
 JupyterLab - Setting Editor Extension

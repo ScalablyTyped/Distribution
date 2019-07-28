@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Smoothie Charts 1.35
-// Project: https://github.com/joewalnes/smoothie
-// Definitions by: Drew Noakes <https://drewnoakes.com>
-//                 Mike H. Hawley <https://github.com/mikehhawley>
-
-```
 

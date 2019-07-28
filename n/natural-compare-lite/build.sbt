@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "natural-compare-lite"
-version := "1.4-dt-20190215Z-34cb6f"
+version := "1.4-dt-20190215Z-d8644b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

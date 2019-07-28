@@ -1,0 +1,16 @@
+package typings.antd
+
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.MouseEvent
+import typings.std.HTMLButtonElement
+import typings.std.HTMLDivElement
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object libDrawerMod {
+  type EventType = KeyboardEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement | HTMLButtonElement, NativeMouseEvent])
+  type getContainerFunc = js.Function0[HTMLElement]
+}

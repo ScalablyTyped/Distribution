@@ -12,14 +12,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-webkit
-// Project: https://github.com/rogerwang/node-webkit
-// Definitions by: Pedro Casaubon <https://github.com/xperiments>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

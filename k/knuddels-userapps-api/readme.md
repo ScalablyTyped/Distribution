@@ -13,15 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for non-npm package Knuddels UserApps API 1.00111486
-// Project: https://developer.knuddels.de
-// Definitions by: Knuddels GmbH & Co. KG <https://github.com/Knuddels>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// helper types
-
-```
 

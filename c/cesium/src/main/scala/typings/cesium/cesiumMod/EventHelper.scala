@@ -1,0 +1,15 @@
+package typings.cesium.cesiumMod
+
+import typings.cesium.cesiumMod.EventHelperNs.RemoveCallback
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("cesium", "EventHelper")
+@js.native
+class EventHelper () extends js.Object {
+  def add(event: Event[js.Array[_]], listener: js.Function0[Unit]): RemoveCallback = js.native
+  def add(event: Event[js.Array[_]], listener: js.Function0[Unit], scope: js.Any): RemoveCallback = js.native
+  def removeAll(): Unit = js.native
+}
+

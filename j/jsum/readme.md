@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsum 0.1
-// Project: https://github.com/fraunhoferfokus/JSum#readme
-// Definitions by: David Uzumeri <https://github.com/daviduzumeri>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Creates hash of given JSON object.
- *
- * @param obj JSON object
- * @param hashAlgorithm hash algorithm (e.g. SHA256)
- * @param encoding hash encoding (e.g. base64) or none for buffer
- */
-
-```
 

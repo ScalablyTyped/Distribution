@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dependency-tree 6.1
-// Project: https://github.com/mrjoelkemp/node-dependency-tree
-// Definitions by: Joscha Feth <https://github.com/joscha>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

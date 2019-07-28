@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for isaac 0.0
-// Project: https://github.com/StefanoBalocco/isaac.js
-// Definitions by: Martin Olsson <https://github.com/mo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

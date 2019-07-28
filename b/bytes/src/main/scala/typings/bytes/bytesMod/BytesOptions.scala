@@ -1,0 +1,33 @@
+package typings.bytes.bytesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BytesOptions extends js.Object {
+  var decimalPlaces: js.UndefOr[Double] = js.undefined
+  var fixedDecimals: js.UndefOr[Boolean] = js.undefined
+  var thousandsSeparator: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[String] = js.undefined
+  var unitSeparator: js.UndefOr[String] = js.undefined
+}
+
+object BytesOptions {
+  @scala.inline
+  def apply(
+    decimalPlaces: Int | Double = null,
+    fixedDecimals: js.UndefOr[Boolean] = js.undefined,
+    thousandsSeparator: String = null,
+    unit: String = null,
+    unitSeparator: String = null
+  ): BytesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedDecimals)) __obj.updateDynamic("fixedDecimals")(fixedDecimals)
+    if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unitSeparator != null) __obj.updateDynamic("unitSeparator")(unitSeparator)
+    __obj.asInstanceOf[BytesOptions]
+  }
+}
+

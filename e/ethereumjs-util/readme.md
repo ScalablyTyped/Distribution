@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ethereumjs-util 5.2
-// Project: https://github.com/ethereumjs/ethereumjs-util#readme
-// Definitions by: Juan J. Jimenez-Anca <https://github.com/cortopy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

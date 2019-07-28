@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for antlr4 4.7
-// Project: https://github.com/antlr/antlr4
-// Definitions by: Marlon Chatman <https://github.com/mcchatman8009>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

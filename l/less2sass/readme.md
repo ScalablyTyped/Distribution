@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for less2sass 1.0
-// Project: https://github.com/ekryski/less2sass, http://erickryski.com
-// Definitions by: William Lohan <https://github.com/gatimus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

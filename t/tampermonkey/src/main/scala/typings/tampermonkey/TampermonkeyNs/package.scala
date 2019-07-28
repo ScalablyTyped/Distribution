@@ -1,0 +1,22 @@
+package typings.tampermonkey
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object TampermonkeyNs {
+  type NotificationOnClick = js.ThisFunction0[/* this */ NotificationThis, Unit]
+  /** `clicked` is `true` when `text` was set */
+  type NotificationOnDone = js.ThisFunction1[/* this */ NotificationThis, /* clicked */ Boolean, Unit]
+  type RequestEventListener[TResponse] = js.ThisFunction1[/* this */ TResponse, /* response */ TResponse, Unit]
+  // Request
+  type RequestHeaders = StringDictionary[String]
+  type ValueChangeListener = js.Function4[
+    /* name */ String, 
+    /* oldValue */ js.Any, 
+    /* newValue */ js.Any, 
+    /* remote */ Boolean, 
+    Unit
+  ]
+}

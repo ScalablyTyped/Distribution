@@ -1,0 +1,52 @@
+package typings.atAngularCompiler.srcRender3R3UnderscorePipeUnderscoreCompilerMod
+
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
+import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait R3PipeMetadata extends js.Object {
+  /**
+    * Dependencies of the pipe's constructor.
+    */
+  var deps: js.Array[R3DependencyMetadata] | Null
+  /**
+    * Name of the pipe type.
+    */
+  var name: String
+  /**
+    * Name of the pipe.
+    */
+  var pipeName: String
+  /**
+    * Whether the pipe is marked as pure.
+    */
+  var pure: Boolean
+  /**
+    * An expression representing a reference to the pipe itself.
+    */
+  var `type`: Expression
+  /**
+    * Number of generic type parameters of the type itself.
+    */
+  var typeArgumentCount: Double
+}
+
+object R3PipeMetadata {
+  @scala.inline
+  def apply(
+    name: String,
+    pipeName: String,
+    pure: Boolean,
+    `type`: Expression,
+    typeArgumentCount: Double,
+    deps: js.Array[R3DependencyMetadata] = null
+  ): R3PipeMetadata = {
+    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure, typeArgumentCount = typeArgumentCount)
+    __obj.updateDynamic("type")(`type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3PipeMetadata]
+  }
+}
+

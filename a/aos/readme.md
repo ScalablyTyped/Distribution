@@ -29,15 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for aos 3.0
-// Project: https://github.com/michalsnik/aos, https://michalsnik.github.io/aos
-// Definitions by: Rostislav Shermenyov <https://github.com/shermendev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

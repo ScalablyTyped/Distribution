@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for scrypt-async v1.3.1
-// Project: https://github.com/dchest/scrypt-async-js
-// Definitions by: Kaur Kuut <https://github.com/xStrom>
-//                 Stefano Sicco <https://github.com/stesix>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,16 @@
+package typings.parseDashTorrentDashFile.parseDashTorrentDashFileMod
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("parse-torrent-file", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(torrent: Buffer | Torrent): Instance = js.native
+  def decode(torrent: Buffer): Instance = js.native
+  def decode(torrent: Torrent): Instance = js.native
+  def encode(parsed: Instance): Buffer = js.native
+}
+

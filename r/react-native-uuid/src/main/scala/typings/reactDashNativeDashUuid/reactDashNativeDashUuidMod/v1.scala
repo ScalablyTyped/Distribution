@@ -1,0 +1,23 @@
+package typings.reactDashNativeDashUuid.reactDashNativeDashUuidMod
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait v1 extends js.Object {
+  var clockseq: Double
+  var msecs: Double | Date
+  var node: js.Array[Double]
+  var nsecs: Double
+}
+
+object v1 {
+  @scala.inline
+  def apply(clockseq: Double, msecs: Double | Date, node: js.Array[Double], nsecs: Double): v1 = {
+    val __obj = js.Dynamic.literal(clockseq = clockseq, msecs = msecs.asInstanceOf[js.Any], node = node, nsecs = nsecs)
+  
+    __obj.asInstanceOf[v1]
+  }
+}
+

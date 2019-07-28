@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for find 0.2
-// Project: https://github.com/yuanchuan/find#readme
-// Definitions by: Andrey Lalev <https://github.com/andypyrope>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

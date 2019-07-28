@@ -1,0 +1,27 @@
+package typings.atPulumiAws.ec2VpcEndpointServiceAllowedPrincipleMod
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait VpcEndpointServiceAllowedPrincipleArgs extends js.Object {
+  /**
+    * The ARN of the principal to allow permissions.
+    */
+  val principalArn: Input[String]
+  /**
+    * The ID of the VPC endpoint service to allow permission.
+    */
+  val vpcEndpointServiceId: Input[String]
+}
+
+object VpcEndpointServiceAllowedPrincipleArgs {
+  @scala.inline
+  def apply(principalArn: Input[String], vpcEndpointServiceId: Input[String]): VpcEndpointServiceAllowedPrincipleArgs = {
+    val __obj = js.Dynamic.literal(principalArn = principalArn.asInstanceOf[js.Any], vpcEndpointServiceId = vpcEndpointServiceId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleArgs]
+  }
+}
+

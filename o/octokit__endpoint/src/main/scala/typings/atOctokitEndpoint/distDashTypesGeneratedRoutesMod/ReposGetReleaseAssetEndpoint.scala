@@ -1,0 +1,21 @@
+package typings.atOctokitEndpoint.distDashTypesGeneratedRoutesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReposGetReleaseAssetEndpoint extends js.Object {
+  var asset_id: Double
+  var owner: String
+  var repo: String
+}
+
+object ReposGetReleaseAssetEndpoint {
+  @scala.inline
+  def apply(asset_id: Double, owner: String, repo: String): ReposGetReleaseAssetEndpoint = {
+    val __obj = js.Dynamic.literal(asset_id = asset_id, owner = owner, repo = repo)
+  
+    __obj.asInstanceOf[ReposGetReleaseAssetEndpoint]
+  }
+}
+

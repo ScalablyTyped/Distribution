@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for composer-concerto 0.71
-// Project: https://github.com/hyperledger/composer-concerto#readme
-// Definitions by: Giacomo Minighin <https://github.com/j4m3sb0mb>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-/**
- * AssetDeclaration defines the schema (aka model or class) for
- * an Asset. It extends ClassDeclaration which manages a set of
- * fields, a super-type and the specification of an
- * identifying field.
- */
-
-```
 

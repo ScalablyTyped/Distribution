@@ -1,0 +1,19 @@
+package typings.trezorDashConnect.trezorDashConnectMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Message extends js.Object {
+  var message: String
+}
+
+object Message {
+  @scala.inline
+  def apply(message: String): Message = {
+    val __obj = js.Dynamic.literal(message = message)
+  
+    __obj.asInstanceOf[Message]
+  }
+}
+

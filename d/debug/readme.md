@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for debug 4.1
-// Project: https://github.com/visionmedia/debug
-// Definitions by: Seon-Wook Park <https://github.com/swook>
-//                 Gal Talmor <https://github.com/galtalmor>
-//                 John McLaughlin <https://github.com/zamb3zi>
-//                 Brasten Sager <https://github.com/brasten>
-//                 Nicolas Penin <https://github.com/npenin>
-//                 Kristian Brünn <https://github.com/kristianmitk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

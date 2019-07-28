@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-json-db
-// Project: https://github.com/Belphemur/node-json-db
-// Definitions by: Ilya Kuznetsov <https://github.com/kuzn-ilya>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

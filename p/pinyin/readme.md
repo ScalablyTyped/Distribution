@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pinyin 2.8
-// Project: https://github.com/hotoo/pinyin, http://pinyin.hotoo.me
-// Definitions by: AnJun Wang <https://github.com/wanganjun>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

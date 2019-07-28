@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mime-types 2.1
-// Project: https://github.com/jshttp/mime-types#readme
-// Definitions by: Gyusun Yeom <https://github.com/Perlmint>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

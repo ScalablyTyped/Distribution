@@ -28,15 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-dec-router 0.0
-// Project: https://github.com/zaaack/koa-dec-router
-// Definitions by: Yerden Kembayev <https://github.com/aarystan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.7
-
-```
 

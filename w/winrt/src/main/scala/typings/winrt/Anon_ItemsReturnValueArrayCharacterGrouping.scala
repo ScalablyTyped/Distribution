@@ -1,0 +1,21 @@
+package typings.winrt
+
+import typings.winrt.WindowsNs.GlobalizationNs.CollationNs.CharacterGrouping
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ItemsReturnValueArrayCharacterGrouping extends js.Object {
+  var items: js.Array[CharacterGrouping]
+  var returnValue: Double
+}
+
+object Anon_ItemsReturnValueArrayCharacterGrouping {
+  @scala.inline
+  def apply(items: js.Array[CharacterGrouping], returnValue: Double): Anon_ItemsReturnValueArrayCharacterGrouping = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueArrayCharacterGrouping]
+  }
+}
+

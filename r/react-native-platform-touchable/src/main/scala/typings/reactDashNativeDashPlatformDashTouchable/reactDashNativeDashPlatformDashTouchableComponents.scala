@@ -1,0 +1,17 @@
+package typings.reactDashNativeDashPlatformDashTouchable
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashPlatformDashTouchable.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashPlatformDashTouchableComponents extends reactDashNativeDashPlatformDashTouchableProps {
+  @scala.inline
+  def ReactDashNativeDashPlatformDashTouchable: ComponentType[PlatformTouchableProps] = js.constructorOf[typings.reactDashNativeDashPlatformDashTouchable.reactDashNativeDashPlatformDashTouchableMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashPlatformDashTouchable.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps]]
+  @scala.inline
+  def Touchable: ComponentType[PlatformTouchableProps] = js.constructorOf[typings.reactDashNativeDashPlatformDashTouchable.reactDashNativeDashPlatformDashTouchableMod.Touchable].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashPlatformDashTouchable.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps]]
+}
+

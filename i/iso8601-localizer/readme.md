@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ISO8601-Localizer v1.2.1
-// Project: https://github.com/avielfedida/ISO8601-Localizer
-// Definitions by: Aviel Fedida <https://github.com/avielfedida>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

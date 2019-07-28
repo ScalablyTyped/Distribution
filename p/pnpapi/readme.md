@@ -27,15 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pnpapi 0.0
-// Project: https://yarnpkg.github.io/berry/advanced/pnpapi
-// Definitions by: Maël Nison <https://github.com/arcanis>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-```
 

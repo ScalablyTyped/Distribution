@@ -1,0 +1,39 @@
+package typings.atCkeditorCkeditor5DashEngine
+
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.Position
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.Range
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerDirection
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Boundaries extends js.Object {
+  var boundaries: js.UndefOr[Range] = js.undefined
+  var direction: js.UndefOr[TreeWalkerDirection] = js.undefined
+  var ignoreElementEnd: js.UndefOr[Boolean] = js.undefined
+  var shallow: js.UndefOr[Boolean] = js.undefined
+  var singleCharacters: js.UndefOr[Boolean] = js.undefined
+  var startPosition: js.UndefOr[Position] = js.undefined
+}
+
+object Anon_Boundaries {
+  @scala.inline
+  def apply(
+    boundaries: Range = null,
+    direction: TreeWalkerDirection = null,
+    ignoreElementEnd: js.UndefOr[Boolean] = js.undefined,
+    shallow: js.UndefOr[Boolean] = js.undefined,
+    singleCharacters: js.UndefOr[Boolean] = js.undefined,
+    startPosition: Position = null
+  ): Anon_Boundaries = {
+    val __obj = js.Dynamic.literal()
+    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (!js.isUndefined(ignoreElementEnd)) __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd)
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    if (!js.isUndefined(singleCharacters)) __obj.updateDynamic("singleCharacters")(singleCharacters)
+    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition)
+    __obj.asInstanceOf[Anon_Boundaries]
+  }
+}
+

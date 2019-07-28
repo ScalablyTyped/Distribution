@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for vssln-parser 0.1
-// Project: https://github.com/mhusseini/vssln-parser
-// Definitions by: Erik Källén <https://github.com/erik-kallen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

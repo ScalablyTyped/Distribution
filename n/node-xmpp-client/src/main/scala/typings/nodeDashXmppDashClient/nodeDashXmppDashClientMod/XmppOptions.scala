@@ -1,0 +1,62 @@
+package typings.nodeDashXmppDashClient.nodeDashXmppDashClientMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait XmppOptions extends js.Object {
+   // Dictionary (optional) - TLS or SSL key and certificate credentials
+  var actAs: js.UndefOr[String] = js.undefined
+  var autostart: js.UndefOr[Boolean] = js.undefined
+   // Preferred SASL mechanism to use
+  var bosh: js.UndefOr[Bosh] = js.undefined
+   // connect to the legacy SSL port, requires at least the host to be specified
+  var credentials: js.UndefOr[js.Any] = js.undefined
+   // if admin user act on behalf of another user (just user)
+  var disallowTLS: js.UndefOr[Boolean] = js.undefined
+  var host: js.UndefOr[String] = js.undefined
+  var jid: String
+   // register account before authentication
+  var legacySSL: js.UndefOr[Boolean] = js.undefined
+  var password: String
+  var port: js.UndefOr[Double] = js.undefined
+   // prevent upgrading the connection to a secure one via TLS
+  var preferred: js.UndefOr[String] = js.undefined
+  var reconnect: js.UndefOr[Boolean] = js.undefined
+   // if we start connecting to a given port
+  var register: js.UndefOr[Boolean] = js.undefined
+}
+
+object XmppOptions {
+  @scala.inline
+  def apply(
+    jid: String,
+    password: String,
+    actAs: String = null,
+    autostart: js.UndefOr[Boolean] = js.undefined,
+    bosh: Bosh = null,
+    credentials: js.Any = null,
+    disallowTLS: js.UndefOr[Boolean] = js.undefined,
+    host: String = null,
+    legacySSL: js.UndefOr[Boolean] = js.undefined,
+    port: Int | Double = null,
+    preferred: String = null,
+    reconnect: js.UndefOr[Boolean] = js.undefined,
+    register: js.UndefOr[Boolean] = js.undefined
+  ): XmppOptions = {
+    val __obj = js.Dynamic.literal(jid = jid, password = password)
+    if (actAs != null) __obj.updateDynamic("actAs")(actAs)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (bosh != null) __obj.updateDynamic("bosh")(bosh)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (!js.isUndefined(disallowTLS)) __obj.updateDynamic("disallowTLS")(disallowTLS)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(legacySSL)) __obj.updateDynamic("legacySSL")(legacySSL)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferred != null) __obj.updateDynamic("preferred")(preferred)
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
+    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register)
+    __obj.asInstanceOf[XmppOptions]
+  }
+}
+

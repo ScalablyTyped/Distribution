@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsx-chai"
-version := "3.0.0-dt-20190322Z-d1d531"
+version := "3.0.0-dt-20190322Z-519d6f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ontime 0.0
-// Project: http://code.woong.org/ontime
-// Definitions by: Jan Pilzer <https://github.com/Hirse>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-size 2.1
-// Project: https://github.com/sindresorhus/gulp-size
-// Definitions by: Tanguy Krotoff <https://github.com/tkrotoff>
-//                 Remisery <https://github.com/remisery>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

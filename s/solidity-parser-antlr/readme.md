@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for solidity-parser-antlr 0.2
-// Project: https://github.com/federicobond/solidity-parser-antlr
-// Definitions by: Leonid Logvinov <https://github.com/LogvinovLeon>
-//                 Alex Browne <https://github.com/albrow>
-//                 Xiao Liang <https://github.com/yxliang01>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-```
 

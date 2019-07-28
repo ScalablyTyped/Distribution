@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for shortid
-// Project: https://github.com/dylang/shortid
-// Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>, Danny Arnold <https://github.com/despairblue>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for init-package-json 1.10
-// Project: https://github.com/npm/init-package-json#readme
-// Definitions by: Kyle Farnung <https://github.com/kfarnung>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

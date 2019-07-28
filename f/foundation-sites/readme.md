@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Foundation Sites v6.3.1
-// Project: http://foundation.zurb.com/
-// Github: https://github.com/zurb/foundation-sites
-//
-// Definitions by: Sam Vloeberghs <https://github.com/samvloeberghs/>
-// Original Definitions: https://github.com/samvloeberghs/foundation-sites-typings
-
-```
 

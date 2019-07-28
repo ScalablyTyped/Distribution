@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for string-template 1.0.0
-// Project: https://www.npmjs.com/package/string-template
-// Definitions by: TonyYang <https://github.com/TonyPythoneer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * NAMESPACE
- */
-
-```
 

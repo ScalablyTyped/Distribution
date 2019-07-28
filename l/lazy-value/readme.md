@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Create a [lazily evaluated](https://en.wikipedia.org/wiki/Lazy_evaluation) value.
-
-@param fn - Expected to return a value.
-
-@example
-```
-import lazyValue = require('lazy-value');
-
-const value = lazyValue(() => expensiveComputation());
-
-app.on('user-action', () => {
-	doSomething(value());
-});
-```
-*/
-
-```
 

@@ -1,0 +1,15 @@
+package typings.reactDashNativeDashSafeDashAreaDashView
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSafeDashAreaDashViewProps {
+  @scala.inline
+  def ReactDashNativeDashSafeDashAreaDashViewProps: typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps.type = typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps
+  type ReactDashNativeDashSafeDashAreaDashViewProps = typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps
+  @scala.inline
+  def SafeAreaViewProps: typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps.type = typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps
+  type SafeAreaViewProps = typings.reactDashNativeDashSafeDashAreaDashView.reactDashNativeDashSafeDashAreaDashViewMod.SafeAreaViewProps
+}
+

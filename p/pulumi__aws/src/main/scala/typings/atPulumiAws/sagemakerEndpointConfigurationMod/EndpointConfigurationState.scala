@@ -1,0 +1,48 @@
+package typings.atPulumiAws.sagemakerEndpointConfigurationMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_AcceleratorTypeInitialInstanceCount
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait EndpointConfigurationState extends js.Object {
+  /**
+    * The Amazon Resource Name (ARN) assigned by AWS to this endpoint configuration.
+    */
+  val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
+    */
+  val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Fields are documented below.
+    */
+  val productionVariants: js.UndefOr[Input[js.Array[Input[Anon_AcceleratorTypeInitialInstanceCount]]]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+}
+
+object EndpointConfigurationState {
+  @scala.inline
+  def apply(
+    arn: Input[String] = null,
+    kmsKeyArn: Input[String] = null,
+    name: Input[String] = null,
+    productionVariants: Input[js.Array[Input[Anon_AcceleratorTypeInitialInstanceCount]]] = null,
+    tags: Input[StringDictionary[_]] = null
+  ): EndpointConfigurationState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (productionVariants != null) __obj.updateDynamic("productionVariants")(productionVariants.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EndpointConfigurationState]
+  }
+}
+

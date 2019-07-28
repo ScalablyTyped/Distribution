@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cordova-plugin-vibration 3.1
-// Project: https://github.com/apache/cordova-plugin-vibration
-// Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
-//                 Louis Lagrange <https://github.com/Minishlink>
-//                 Tim Brust <https://github.com/timbru31>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

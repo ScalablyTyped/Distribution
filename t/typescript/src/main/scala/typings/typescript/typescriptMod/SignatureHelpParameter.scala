@@ -1,0 +1,27 @@
+package typings.typescript.typescriptMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SignatureHelpParameter extends js.Object {
+  var displayParts: js.Array[SymbolDisplayPart]
+  var documentation: js.Array[SymbolDisplayPart]
+  var isOptional: Boolean
+  var name: String
+}
+
+object SignatureHelpParameter {
+  @scala.inline
+  def apply(
+    displayParts: js.Array[SymbolDisplayPart],
+    documentation: js.Array[SymbolDisplayPart],
+    isOptional: Boolean,
+    name: String
+  ): SignatureHelpParameter = {
+    val __obj = js.Dynamic.literal(displayParts = displayParts, documentation = documentation, isOptional = isOptional, name = name)
+  
+    __obj.asInstanceOf[SignatureHelpParameter]
+  }
+}
+

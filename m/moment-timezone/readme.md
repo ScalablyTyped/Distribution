@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for moment-timezone.js 0.5
-// Project: http://momentjs.com/timezone/
-// Definitions by: Michel Salib <https://github.com/michelsalib>
-//                 Alan Brazil Lins <https://github.com/alanblins>
-//                 Agustin Carrasco <https://github.com/asermax>
-//                 Borys Kupar <https://github.com/borys-kupar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

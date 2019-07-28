@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Remove leading, trailing, and repeated whitespace from a string.
-
-@example
-```
-import condenseWhitespace = require('condense-whitespace');
-
-condenseWhitespace('  foo bar     baz ');
-//=> 'foo bar baz'
-```
-*/
-
-```
 

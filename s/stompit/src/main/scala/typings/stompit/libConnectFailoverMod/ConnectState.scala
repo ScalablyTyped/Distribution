@@ -1,0 +1,21 @@
+package typings.stompit.libConnectFailoverMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// Internal class, which is not exported
+trait ConnectState extends js.Object {
+  var failedConnects: Double
+  var serverProperties: Server
+}
+
+object ConnectState {
+  @scala.inline
+  def apply(failedConnects: Double, serverProperties: Server): ConnectState = {
+    val __obj = js.Dynamic.literal(failedConnects = failedConnects, serverProperties = serverProperties)
+  
+    __obj.asInstanceOf[ConnectState]
+  }
+}
+

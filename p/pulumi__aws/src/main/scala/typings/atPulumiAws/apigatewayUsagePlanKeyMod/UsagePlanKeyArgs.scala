@@ -1,0 +1,31 @@
+package typings.atPulumiAws.apigatewayUsagePlanKeyMod
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UsagePlanKeyArgs extends js.Object {
+  /**
+    * The identifier of the API key resource.
+    */
+  val keyId: Input[String]
+  /**
+    * The type of the API key resource. Currently, the valid key type is API_KEY.
+    */
+  val keyType: Input[String]
+  /**
+    * The Id of the usage plan resource representing to associate the key to.
+    */
+  val usagePlanId: Input[String]
+}
+
+object UsagePlanKeyArgs {
+  @scala.inline
+  def apply(keyId: Input[String], keyType: Input[String], usagePlanId: Input[String]): UsagePlanKeyArgs = {
+    val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UsagePlanKeyArgs]
+  }
+}
+

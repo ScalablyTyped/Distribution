@@ -1,0 +1,30 @@
+package typings.atPulumiAws.emrSecurityConfigurationMod
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SecurityConfigurationArgs extends js.Object {
+  /**
+    * A JSON formatted Security Configuration
+    */
+  val configuration: Input[String]
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Creates a unique name beginning with the specified
+    * prefix. Conflicts with `name`.
+    */
+  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+}
+
+object SecurityConfigurationArgs {
+  @scala.inline
+  def apply(configuration: Input[String], name: Input[String] = null, namePrefix: Input[String] = null): SecurityConfigurationArgs = {
+    val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecurityConfigurationArgs]
+  }
+}
+

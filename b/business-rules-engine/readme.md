@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for business-rules-engine - v1.0.20
-// Project: https://github.com/rsamec/form
-// Definitions by: Roman Samec <https://github.com/rsamec>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for business-rules-engine v1.0.20
-// TypeScript Version: 2.3
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Natural 0.6
-// Project: https://github.com/NaturalNode/natural
-// Definitions by: Dylan R. E. Moonfire <https://github.com/dmoonfire>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

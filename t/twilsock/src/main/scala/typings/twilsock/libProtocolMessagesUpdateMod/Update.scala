@@ -1,0 +1,16 @@
+package typings.twilsock.libProtocolMessagesUpdateMod
+
+import typings.twilsock.libProtocolMessagesAbstractmessageMod.AbstractMessage
+import typings.twilsock.libProtocolProtocolMod.ProtocolNs.MessageType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("twilsock/lib/protocol/messages/update", "Update")
+@js.native
+class Update protected () extends AbstractMessage {
+  def this(token: String) = this()
+  val method: MessageType = js.native
+  val token: String = js.native
+}
+

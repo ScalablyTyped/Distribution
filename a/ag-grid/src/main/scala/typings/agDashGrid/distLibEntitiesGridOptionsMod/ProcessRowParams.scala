@@ -1,0 +1,41 @@
+package typings.agDashGrid.distLibEntitiesGridOptionsMod
+
+import typings.agDashGrid.distLibColumnControllerColumnApiMod.ColumnApi
+import typings.agDashGrid.distLibEntitiesRowNodeMod.RowNode
+import typings.agDashGrid.distLibGridApiMod.GridApi
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ProcessRowParams extends js.Object {
+  var api: GridApi
+  var columnApi: ColumnApi
+  var context: js.Any
+  var ePinnedLeftRow: HTMLElement
+  var ePinnedRightRow: HTMLElement
+  var eRow: HTMLElement
+  var node: RowNode
+  var rowIndex: Double
+  def addRenderedRowListener(eventType: String, listener: js.Function): Unit
+}
+
+object ProcessRowParams {
+  @scala.inline
+  def apply(
+    addRenderedRowListener: (String, js.Function) => Unit,
+    api: GridApi,
+    columnApi: ColumnApi,
+    context: js.Any,
+    ePinnedLeftRow: HTMLElement,
+    ePinnedRightRow: HTMLElement,
+    eRow: HTMLElement,
+    node: RowNode,
+    rowIndex: Double
+  ): ProcessRowParams = {
+    val __obj = js.Dynamic.literal(addRenderedRowListener = js.Any.fromFunction2(addRenderedRowListener), api = api, columnApi = columnApi, context = context, ePinnedLeftRow = ePinnedLeftRow, ePinnedRightRow = ePinnedRightRow, eRow = eRow, node = node, rowIndex = rowIndex)
+  
+    __obj.asInstanceOf[ProcessRowParams]
+  }
+}
+

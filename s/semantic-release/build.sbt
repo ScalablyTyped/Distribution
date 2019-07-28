@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-release"
-version := "15.13-dt-20190130Z-70c86a"
+version := "15.13-dt-20190130Z-e4f374"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

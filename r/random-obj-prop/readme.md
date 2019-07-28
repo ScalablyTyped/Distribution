@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get a random property from an object.
-
-@example
-```
-import randomObjProp = require('random-obj-prop');
-
-randomObjProp({foo: '🐴', bar: '🦄'});
-//=> '🦄'
-```
-*/
-
-```
 

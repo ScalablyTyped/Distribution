@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for wheel 0.0
-// Project: https://github.com/anvaka/wheel
-// Definitions by: Bradley Odell <https://github.com/BTOdell>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Adds a callback to receive mouse wheel events from the given element.
- */
-
-```
 

@@ -1,0 +1,12 @@
+package typings.reactDashMaterialDashUiDashFormDashValidator
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashMaterialDashUiDashFormDashValidatorProps {
+  @scala.inline
+  def ValidatorFormProps: typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps.type = typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
+  type ValidatorFormProps = typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
+}
+

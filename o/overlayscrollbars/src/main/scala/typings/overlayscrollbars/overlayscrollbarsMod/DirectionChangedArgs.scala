@@ -1,0 +1,20 @@
+package typings.overlayscrollbars.overlayscrollbarsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DirectionChangedArgs extends js.Object {
+  var dir: String
+  var isRTL: Double
+}
+
+object DirectionChangedArgs {
+  @scala.inline
+  def apply(dir: String, isRTL: Double): DirectionChangedArgs = {
+    val __obj = js.Dynamic.literal(dir = dir, isRTL = isRTL)
+  
+    __obj.asInstanceOf[DirectionChangedArgs]
+  }
+}
+

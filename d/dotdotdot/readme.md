@@ -29,15 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dotdotdot v1.6.16
-// Project: http://dotdotdot.frebsite.nl/
-// Definitions by: Milan Jaros <https://github.com/milanjaros>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

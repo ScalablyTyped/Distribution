@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for randomColor 0.5.2
-// Project: https://github.com/davidmerfield/randomColor
-// Definitions by: Mathias Feitzinger <https://github.com/feitzi>, Brady Liles <https://github.com/BradyLiles>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsonata 1.3
-// Project: https://github.com/jsonata-js/jsonata, http://jsonata.org
-// Definitions by: Nick <https://github.com/nick121212>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

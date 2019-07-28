@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for axe-core
-// Project: https://github.com/dequelabs/axe-core
-// Definitions by: Marcy Sutton <https://github.com/marcysutton>
-
-```
 

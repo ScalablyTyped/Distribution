@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Traceback v0.3.1
-// Project: https://github.com/iriscouch/traceback
-// Definitions by: Michael Zabka <https://github.com/misak113>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

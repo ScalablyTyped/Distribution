@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cordova-plugin-device 2.0
-// Project: https://github.com/apache/cordova-plugin-device
-// Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
-//                 Tim Brust <https://github.com/timbru31>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * This plugin defines a global device object, which describes the device's hardware and software.
- * Although the object is in the global scope, it is not available until after the deviceready event.
- */
-
-```
 

@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a value is an object.
-
-Keep in mind that array, function, regexp, etc, are objects in JavaScript.
-
-@example
-```
-import isObject = require('is-obj');
-
-isObject({foo: 'bar'});
-//=> true
-
-isObject([1, 2, 3]);
-//=> true
-
-isObject('foo');
-//=> false
-```
-*/
-
-```
 

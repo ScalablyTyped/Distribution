@@ -1,0 +1,12 @@
+package typings.sweetalert.typingsCoreMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("sweetalert/typings/core", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: SweetAlert = js.native
+}
+

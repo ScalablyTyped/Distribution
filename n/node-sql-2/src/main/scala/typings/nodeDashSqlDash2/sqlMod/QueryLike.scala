@@ -1,0 +1,20 @@
+package typings.nodeDashSqlDash2.sqlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait QueryLike extends js.Object {
+  var text: String
+  var values: js.Array[_]
+}
+
+object QueryLike {
+  @scala.inline
+  def apply(text: String, values: js.Array[_]): QueryLike = {
+    val __obj = js.Dynamic.literal(text = text, values = values)
+  
+    __obj.asInstanceOf[QueryLike]
+  }
+}
+

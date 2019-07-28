@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for twig 1.12
-// Project: https://github.com/twigjs/twig.js
-// Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>
-//                 Tim Schumacher <https://github.com/enko>
-//                 Maik Tizziani <https://github.com/mtizziani>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Imported from: https://github.com/soywiz/typescript-node-definitions/twig.d.ts
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for safe-json-stringify 1.1
-// Project: https://github.com/debitoor/safe-json-stringify
-// Definitions by: Eric Byers <https://github.com/ericbyers>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped"
-// TypeScript Version: 2.3
-
-```
 

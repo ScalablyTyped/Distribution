@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-animate-on-scroll 2.1
-// Project: https://github.com/dbramwell/react-animate-on-scroll, http://dbramwell.github.io/react-animate-on-scroll
-// Definitions by: Ricardo Albuquerque <https://github.com/ralbuque>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

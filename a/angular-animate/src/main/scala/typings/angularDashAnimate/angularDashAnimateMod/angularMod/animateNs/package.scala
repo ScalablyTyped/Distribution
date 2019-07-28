@@ -1,0 +1,17 @@
+package typings.angularDashAnimate.angularDashAnimateMod.angularMod
+
+import typings.angular.JQuery
+import typings.angular.angularMod.IPromise
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object animateNs {
+  /**
+    * AnimateCssService
+    * see http://docs.angularjs.org/api/ngAnimate/service/$animateCss
+    */
+  type IAnimateCssService = js.Function2[/* element */ JQuery, /* animateCssOptions */ IAnimationOptions, IAnimateCssRunner]
+  type IAnimateFactory = js.Function1[/* repeated */ js.Any, IAnimateCallbackObject]
+  type IAnimationPromise = IPromise[Unit]
+}

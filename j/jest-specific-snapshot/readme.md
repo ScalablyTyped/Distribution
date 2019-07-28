@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jest-specific-snapshot 0.5
-// Project: https://github.com/igor-dv/jest-specific-snapshot#readme
-// Definitions by: Janeene Beeforth <https://github.com/dawnmist>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.1
-
-```
 

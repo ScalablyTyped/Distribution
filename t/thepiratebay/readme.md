@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for thepiratebay 1.4
-// Project: http://github.com/t3chnoboy/thepiratebay
-// Definitions by: Jack Sorrell <https://github.com/jsorrell>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

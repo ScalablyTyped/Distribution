@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for json2csv 4.5
-// Project: https://github.com/zemirco/json2csv
-// Definitions by: Juanjo Diaz <https://github.com/juanjoDiaz>
-//                 Daniel Gooß <https://github.com/dangoo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

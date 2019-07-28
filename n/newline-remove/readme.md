@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for newline-remove 1.0
-// Project: https://github.com/yoshuawuyts/newline-remove
-// Definitions by: OpenByteDev <https://github.com/OpenByteDev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Strip all newlines from the given value
- */
-
-```
 

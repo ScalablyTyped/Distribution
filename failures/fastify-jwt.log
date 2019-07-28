@@ -1,4 +1,4 @@
-[warn ] Phase1ReadTypescript.scala:129 Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/fastify-jwt/tsconfig.json: io.circe.ParsingFailure: expected " got '},
+[warn ] Phase1ReadTypescript.scala:128 Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/fastify-jwt/tsconfig.json: io.circe.ParsingFailure: expected " got '},
   ...' (line 8, column 3) [id => fastify-jwt, phase => typescript] 
 [info ] ResolveExternalReferences.scala:82 Inferred augmented module None (TsIdentModule(None,List(fastify))) [file => ../node_modules/fastify-jwt/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(fastify)), id => fastify-jwt] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(fastify-jwt) [id => fastify-jwt, phase => typescript, file => ../node_modules/fastify-jwt/index.d.ts] 

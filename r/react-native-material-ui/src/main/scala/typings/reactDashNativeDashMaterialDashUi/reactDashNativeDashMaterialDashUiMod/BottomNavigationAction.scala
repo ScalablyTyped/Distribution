@@ -1,0 +1,39 @@
+package typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod
+
+import typings.react.reactMod.Global.JSXNs.Element
+import typings.reactDashNativeDashMaterialDashUi.Anon_Active
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BottomNavigationAction extends js.Object {
+  var active: Boolean
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  var icon: Element | String
+  var key: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.undefined
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var style: js.UndefOr[Anon_Active] = js.undefined
+}
+
+object BottomNavigationAction {
+  @scala.inline
+  def apply(
+    active: Boolean,
+    icon: Element | String,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    key: String = null,
+    label: String = null,
+    onPress: () => Unit = null,
+    style: Anon_Active = null
+  ): BottomNavigationAction = {
+    val __obj = js.Dynamic.literal(active = active, icon = icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[BottomNavigationAction]
+  }
+}
+

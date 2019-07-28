@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for BigScreen 2.0.4
-// Project: http://brad.is/coding/BigScreen/
-// Definitions by: Douglas Eichelberger <https://github.com/dduugg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

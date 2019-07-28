@@ -28,15 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-dotenv 0.2
-// Project: https://github.com/zetachang/react-native-dotenv
-// Definitions by: hmajid2301 <https://github.com/hmajid2301>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

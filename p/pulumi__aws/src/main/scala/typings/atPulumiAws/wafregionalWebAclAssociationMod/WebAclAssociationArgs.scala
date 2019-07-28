@@ -1,0 +1,27 @@
+package typings.atPulumiAws.wafregionalWebAclAssociationMod
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait WebAclAssociationArgs extends js.Object {
+  /**
+    * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
+    */
+  val resourceArn: Input[String]
+  /**
+    * The ID of the WAF Regional WebACL to create an association.
+    */
+  val webAclId: Input[String]
+}
+
+object WebAclAssociationArgs {
+  @scala.inline
+  def apply(resourceArn: Input[String], webAclId: Input[String]): WebAclAssociationArgs = {
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], webAclId = webAclId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[WebAclAssociationArgs]
+  }
+}
+

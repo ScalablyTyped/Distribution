@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-scanf
-// Project: https://github.com/ErikDubbelboer/node-sleep
-// Definitions by: Jeongho Nam <http://samchon.org>, Rahul Rajaram <https://github.com/rajarz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,19 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AppsGetOrgInstallationParams extends js.Object {
+  var org: String
+}
+
+object AppsGetOrgInstallationParams {
+  @scala.inline
+  def apply(org: String): AppsGetOrgInstallationParams = {
+    val __obj = js.Dynamic.literal(org = org)
+  
+    __obj.asInstanceOf[AppsGetOrgInstallationParams]
+  }
+}
+

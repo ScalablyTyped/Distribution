@@ -1,0 +1,85 @@
+package typings.fastDashJsonDashPatch.libCoreMod
+
+import org.scalablytyped.runtime.Instantiable5
+import typings.fastDashJsonDashPatch.libHelpersMod.JsonPatchErrorName
+import typings.fastDashJsonDashPatch.libHelpersMod.PatchError
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("fast-json-patch/lib/core", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val JsonPatchError: Instantiable5[
+    /* message */ String, 
+    /* name */ JsonPatchErrorName, 
+    js.UndefOr[/* index */ Double], 
+    js.UndefOr[/* operation */ js.Any], 
+    js.UndefOr[/* tree */ js.Any], 
+    PatchError
+  ] = js.native
+  val deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native
+  def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Boolean,
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean
+  ): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Boolean,
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean,
+    index: Double
+  ): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T]): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T], mutateDocument: Boolean): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean
+  ): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean,
+    index: Double
+  ): OperationResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean, mutateDocument: Boolean): PatchResult[T] = js.native
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: Boolean,
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean
+  ): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator[T]): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator[T], mutateDocument: Boolean): PatchResult[T] = js.native
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: Validator[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean
+  ): PatchResult[T] = js.native
+  def applyReducer[T](document: T, operation: Operation, index: Double): T = js.native
+  def getValueByPointer(document: js.Any, pointer: String): js.Any = js.native
+  def validate[T](sequence: js.Array[Operation]): PatchError = js.native
+  def validate[T](sequence: js.Array[Operation], document: T): PatchError = js.native
+  def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator[T]): PatchError = js.native
+  def validator(operation: Operation, index: Double): Unit = js.native
+  def validator(operation: Operation, index: Double, document: js.Any): Unit = js.native
+  def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = js.native
+}
+

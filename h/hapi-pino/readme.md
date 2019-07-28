@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for hapi-pino 6.0
-// Project: https://github.com/pinojs/hapi-pino#readme
-// Definitions by: Rodrigo Saboya <https://github.com/saboya>
-//                 Todd Bealmear <https://github.com/todd>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

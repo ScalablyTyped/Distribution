@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for babel-plugin-react-pug 0.5
-// Project: https://github.com/ljbc1994/babel-plugin-react-pug
-// Definitions by: John Papandriopoulos <https://github.com/jpap>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

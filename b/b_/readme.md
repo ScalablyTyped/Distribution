@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for b_ 1.3
-// Project: https://github.com/azproduction/b_
-// Definitions by: Vasya Aksyonov <https://github.com/outring>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

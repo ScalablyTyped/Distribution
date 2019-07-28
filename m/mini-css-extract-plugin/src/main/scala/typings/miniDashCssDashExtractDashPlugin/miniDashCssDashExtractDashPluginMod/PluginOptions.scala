@@ -1,0 +1,36 @@
+package typings.miniDashCssDashExtractDashPlugin.miniDashCssDashExtractDashPluginMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PluginOptions extends js.Object {
+  var chunkFilename: js.UndefOr[String] = js.undefined
+  /**
+    * Options similar to the same options in webpackOptions.output, both options are optional
+    * May contain `[name]`, `[id]`, `hash` and `[chunkhash]`
+    */
+  var filename: js.UndefOr[String] = js.undefined
+  /**
+    * For projects where CSS ordering has been mitigated through consistent
+    * use of scoping or naming conventions, the CSS order warnings can be
+    * disabled by setting this flag to true for the plugin.
+    */
+  var ignoreOrder: js.UndefOr[Boolean] = js.undefined
+}
+
+object PluginOptions {
+  @scala.inline
+  def apply(
+    chunkFilename: String = null,
+    filename: String = null,
+    ignoreOrder: js.UndefOr[Boolean] = js.undefined
+  ): PluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder)
+    __obj.asInstanceOf[PluginOptions]
+  }
+}
+

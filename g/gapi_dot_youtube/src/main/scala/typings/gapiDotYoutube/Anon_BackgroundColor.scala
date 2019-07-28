@@ -1,0 +1,30 @@
+package typings.gapiDotYoutube
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BackgroundColor extends js.Object {
+  /**
+    * The text color for the video watch pages branded area.
+    */
+  var backgroundColor: String
+  /**
+    * An ID that uniquely identifies a playlist that displays next to the video player on the video watch page.
+    */
+  var featuredPlaylistId: String
+  /**
+    * The background color for the video watch pages branded area.
+    */
+  var textColor: String
+}
+
+object Anon_BackgroundColor {
+  @scala.inline
+  def apply(backgroundColor: String, featuredPlaylistId: String, textColor: String): Anon_BackgroundColor = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, featuredPlaylistId = featuredPlaylistId, textColor = textColor)
+  
+    __obj.asInstanceOf[Anon_BackgroundColor]
+  }
+}
+

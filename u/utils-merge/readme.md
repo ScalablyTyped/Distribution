@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for utils-merge
-// Project: https://github.com/jaredhanson/utils-merge
-// Definitions by: Ilya Mochalov <https://github.com/chrootsu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

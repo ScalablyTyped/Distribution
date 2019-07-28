@@ -1,10 +1,10 @@
 [debug] PhaseRunner.scala:84 Success [id => dhtmlxgantt, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt),TsIdentLibrarySimple(dhtmlxgantt)),TsIdentModule(None,List(dhtmlxgantt))) [id => dhtmlxgantt, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt),TsIdentLibrarySimple(dhtmlxgantt)),TsIdentModule(None,List(dhtmlxgantt))) [id => dhtmlxgantt, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => dhtmlxgantt, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => dhtmlxgantt, phase => scala.js] 
-[warn ] Npmjs.scala:108 Could't fetch metadata for TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => build] gigahorse.StatusError: Unexpected status: 404
+[warn ] Npmjs.scala:107 Could't fetch metadata for TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
@@ -16,12 +16,12 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[warn ] Phase3Compile.scala:204 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/dhtmlxganttLib/ganttMod.scala:15:8
+[warn ] Phase3Compile.scala:208 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
+[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/dhtmlxgantt/ganttMod.scala:14:8
 [E]      ganttMod is already defined as object ganttMod
-[E]      L15: object ganttMod
+[E]      L14: object ganttMod extends TopLevel[GanttEnterprise]
 [E]                  ^
-[E] src/main/scala/typings/dhtmlxganttLib/ganttMod.scala: L15 [E1]
+[E] src/main/scala/typings/dhtmlxgantt/ganttMod.scala: L14 [E1]
 [E] Failed to compile 'dhtmlxgantt'
  [id => dhtmlxgantt, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 

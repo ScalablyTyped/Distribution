@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for svg-sprite-loader 3.9
-// Project: https://github.com/kisenka/svg-sprite-loader/releases, https://github.com/kisenka/svg-sprite-loader
-// Definitions by: Ryan Clark <https://github.com/rynclark>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

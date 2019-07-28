@@ -1,0 +1,19 @@
+package typings.safariDashExtensionDashContent
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SafariContentExtension extends js.Object {
+  var baseURI: String
+}
+
+object SafariContentExtension {
+  @scala.inline
+  def apply(baseURI: String): SafariContentExtension = {
+    val __obj = js.Dynamic.literal(baseURI = baseURI)
+  
+    __obj.asInstanceOf[SafariContentExtension]
+  }
+}
+

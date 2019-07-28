@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mongorito 3.0
-// Project: https://github.com/vadimdemedes/mongorito, https://github.com/vdemedes/mongorito
-// Definitions by: Pinguet62 <https://github.com/pinguet62>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

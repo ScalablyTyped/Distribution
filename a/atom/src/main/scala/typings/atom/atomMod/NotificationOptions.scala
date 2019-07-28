@@ -1,0 +1,34 @@
+package typings.atom.atomMod
+
+import typings.atom.Anon_ClassName
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait NotificationOptions extends js.Object {
+  var buttons: js.UndefOr[js.Array[Anon_ClassName]] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
+  var detail: js.UndefOr[String] = js.undefined
+  var dismissable: js.UndefOr[Boolean] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
+}
+
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[Anon_ClassName] = null,
+    description: String = null,
+    detail: String = null,
+    dismissable: js.UndefOr[Boolean] = js.undefined,
+    icon: String = null
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * The names of the supported HTML5 DOM element attributes.
- *
- * This list is not all-encompassing, rather it attempts to define the
- * attribute names which are relevant for use in a virtual DOM context.
- * If a standardized or widely supported name is missing, please open
- * an issue to have it added.
- *
- * The attribute names were collected from the following sources:
- *   - https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
- *   - https://www.w3.org/TR/html5/index.html#attributes-1
- *   - https://html.spec.whatwg.org/multipage/indices.html#attributes-3
- */
-
-```
 

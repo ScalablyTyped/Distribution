@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Angular Toastr v1.6.0
-// Project: https://github.com/Foxandxss/angular-toastr
-// Definitions by: Niko Kovačič <https://github.com/nkovacic>, Troy McKinnon <https://github.com/trodi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

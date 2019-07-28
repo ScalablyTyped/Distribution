@@ -1,0 +1,20 @@
+package typings.xmldsigjs.xmldsigjsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IX509IssuerSerial extends js.Object {
+  var issuerName: String
+  var serialNumber: String
+}
+
+object IX509IssuerSerial {
+  @scala.inline
+  def apply(issuerName: String, serialNumber: String): IX509IssuerSerial = {
+    val __obj = js.Dynamic.literal(issuerName = issuerName, serialNumber = serialNumber)
+  
+    __obj.asInstanceOf[IX509IssuerSerial]
+  }
+}
+

@@ -31,28 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * The namespace for code block functions which help
- * in extract code from markdown text
- */
-/**
- * The namespace for Page Config functions.
- */
-/**
- * The namespace for path-related functions.
- *
- * Note that Jupyter server paths do not start with a leading slash.
- */
-/**
- * The namespace for text-related functions.
- */
-/**
- * The namespace for date functions.
- */
-
-```
 

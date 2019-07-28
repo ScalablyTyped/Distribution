@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-ga 2.4
-// Project: https://github.com/react-ga/react-ga
-// Definitions by: Tim Aldridge <https://github.com/telshin>
-//                 Philip Karpiak <https://github.com/eswat>
-//                 Jerry Reptak <https://github.com/jetfault>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

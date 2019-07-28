@@ -1,0 +1,12 @@
+package typings.pdfkit
+
+import org.scalablytyped.runtime.TopLevel
+import typings.pdfkit.PDFKitNs.PDFPage
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("pdfkit/js/page", JSImport.Namespace)
+@js.native
+object jsPageMod extends TopLevel[PDFPage]
+

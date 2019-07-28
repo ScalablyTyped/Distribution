@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for musicmatch 0.3
-// Project: https://github.com/c0b41/musixmatch, https://www.npmjs.com/package/musicmatch
-// Definitions by: Aleksei Klimenko <https://github.com/DadUndead>
-// Definitions: https://github.com/DefinitelyTyped/
-
-```
 

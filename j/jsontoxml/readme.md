@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsontoxml 1.0
-// Project: https://github.com/soldair/node-jsontoxml, http://github.com/ken-franken/node-jsontoxml
-// Definitions by: benstevens48 <https://github.com/benstevens48>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

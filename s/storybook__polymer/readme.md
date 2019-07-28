@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @storybook/polymer 5.1
-// Project: https://github.com/storybookjs/storybook, https://github.com/storybookjs/storybook/tree/master/app/polymer
-// Definitions by: Joscha Feth <https://github.com/joscha>
-//                 Anton Izmailov <https://github.com/wapgear>
-//                 Dan Dean <https://github.com/dandean>
-//                 Ryan Coleman <https://github.com/ryuhhnn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.2
-// tslint:disable:no-unnecessary-generics
-
-```
 

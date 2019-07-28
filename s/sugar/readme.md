@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Sugar v2.0.6
-// Project: https://sugarjs.com/
-// Definitions by: Andrew Plummer <plummer.andrew@gmail.com>
-
-```
 

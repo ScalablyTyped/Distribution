@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sinon-express-mock 1.3
-// Project: https://github.com/danawoodman/sinon-express-mock#readme
-// Definitions by: Jared Chapiewsky <https://github.com/jpchip>
-//                 Tomek Łaziuk <https://github.com/tlaziuk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

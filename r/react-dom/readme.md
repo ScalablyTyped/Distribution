@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for React (react-dom) 16.8
-// Project: http://facebook.github.io/react/
-// Definitions by: Asana <https://asana.com>
-//                 AssureSign <http://www.assuresign.com>
-//                 Microsoft <https://microsoft.com>
-//                 MartynasZilinskas <https://github.com/MartynasZilinskas>
-//                 Josh Rutherford <https://github.com/theruther4d>
-//                 Jessica Franco <https://github.com/Jessidhia>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-// forward declarations
-
-```
 

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Recursively copy a value.
-
-@param source - should be a JavaScript primitive, Array, or (plain old) Object.
-@returns copy of source where every Array and Object have been recursively
-         reconstructed from their constituent elements
-*/
-
-```
 

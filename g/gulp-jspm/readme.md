@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-jspm v0.5.4
-// Project: https://www.npmjs.com/package/gulp-jspm
-// Definitions by: Peter Juras <https://github.com/peterjuras>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

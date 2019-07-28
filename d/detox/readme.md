@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for detox 12.8
-// Project: https://github.com/wix/detox
-// Definitions by: Tareq El-Masri <https://github.com/TareqElMasri>
-//                 Steve Chun <https://github.com/stevechun>
-//                 Hammad Jutt <https://github.com/hammadj>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

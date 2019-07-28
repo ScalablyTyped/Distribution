@@ -1,0 +1,12 @@
+package typings.atAngularCompiler.srcOutputSourceUnderscoreMapMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/src/output/source_map", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def toBase64String(value: String): String = js.native
+}
+

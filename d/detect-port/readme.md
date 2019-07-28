@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for detect-port 1.1
-// Project: https://github.com/node-modules/detect-port
-// Definitions by: François Nguyen <https://github.com/lith-light-g>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

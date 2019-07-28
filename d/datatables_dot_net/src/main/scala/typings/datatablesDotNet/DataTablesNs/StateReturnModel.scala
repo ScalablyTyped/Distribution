@@ -1,0 +1,31 @@
+package typings.datatablesDotNet.DataTablesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StateReturnModel extends js.Object {
+  var columns: js.Array[StateReturnModelColumns]
+  var length: Double
+  var order: js.Array[js.Array[String | Double]]
+  var search: SearchSettings
+  var start: Double
+  var time: Double
+}
+
+object StateReturnModel {
+  @scala.inline
+  def apply(
+    columns: js.Array[StateReturnModelColumns],
+    length: Double,
+    order: js.Array[js.Array[String | Double]],
+    search: SearchSettings,
+    start: Double,
+    time: Double
+  ): StateReturnModel = {
+    val __obj = js.Dynamic.literal(columns = columns, length = length, order = order, search = search, start = start, time = time)
+  
+    __obj.asInstanceOf[StateReturnModel]
+  }
+}
+

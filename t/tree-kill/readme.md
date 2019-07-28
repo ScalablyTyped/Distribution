@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Kills process identified by `pid` and all its children
- *
- * @param pid
- * @param signal 'SIGTERM' by default
- * @param callback
- */
-
-```
 

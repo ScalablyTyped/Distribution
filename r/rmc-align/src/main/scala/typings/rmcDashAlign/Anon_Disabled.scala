@@ -1,0 +1,30 @@
+package typings.rmcDashAlign
+
+import typings.std.Window
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Disabled extends js.Object {
+  var disabled: Boolean
+  var monitorBufferTime: Double
+  var monitorWindowResize: Boolean
+  def onAlign(): Unit
+  def target(): Window
+}
+
+object Anon_Disabled {
+  @scala.inline
+  def apply(
+    disabled: Boolean,
+    monitorBufferTime: Double,
+    monitorWindowResize: Boolean,
+    onAlign: () => Unit,
+    target: () => Window
+  ): Anon_Disabled = {
+    val __obj = js.Dynamic.literal(disabled = disabled, monitorBufferTime = monitorBufferTime, monitorWindowResize = monitorWindowResize, onAlign = js.Any.fromFunction0(onAlign), target = js.Any.fromFunction0(target))
+  
+    __obj.asInstanceOf[Anon_Disabled]
+  }
+}
+

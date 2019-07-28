@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for resolve
-// Project: https://github.com/substack/node-resolve
-// Definitions by: Mario Nebl <https://github.com/marionebl>
-//                 Klaus Meinhardt <https://github.com/ajafff>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

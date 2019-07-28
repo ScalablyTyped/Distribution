@@ -1,0 +1,21 @@
+package typings.vexflow.VexNs.FlowNs
+
+import typings.vexflow.Anon_Leftshift
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Vex.Flow.Articulation")
+@js.native
+class Articulation protected () extends Modifier {
+  def this(`type`: String) = this()
+}
+
+/* static members */
+@JSGlobal("Vex.Flow.Articulation")
+@js.native
+object Articulation extends js.Object {
+  var DEBUG: Boolean = js.native
+  def format(articulations: js.Array[Articulation], state: Anon_Leftshift): Boolean = js.native
+}
+

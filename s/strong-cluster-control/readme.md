@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for strong-cluster-control 2.2
-// Project: https://github.com/strongloop/strong-cluster-control
-// Definitions by: Shun Takahashi <https://github.com/shuntksh>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for btoa-lite 1.0
-// Project: https://github.com/hughsk/btoa-lite
-// Definitions by: Gregor Martynus <https://github.com/gr2m>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

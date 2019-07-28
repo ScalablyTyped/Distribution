@@ -1,0 +1,50 @@
+package typings.antdDashMobileDashRn.libPaginationIndexDotNativeMod
+
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.button
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.number
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.pointer
+import typings.antdDashMobileDashRn.libPaginationPropsTypeMod.PaginationPropsType
+import typings.antdDashMobileDashRn.libPaginationStyleIndexDotNativeMod.IPaginationStyle
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PaginationNativeProps extends PaginationPropsType {
+  var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var styles: js.UndefOr[IPaginationStyle] = js.undefined
+}
+
+object PaginationNativeProps {
+  @scala.inline
+  def apply(
+    current: Double,
+    total: Double,
+    indicatorStyle: StyleProp[ViewStyle] = null,
+    mode: button | number | pointer = null,
+    nextText: String = null,
+    onChange: /* current */ Double => Unit = null,
+    onNext: () => Unit = null,
+    onPrev: () => Unit = null,
+    prevText: String = null,
+    simple: js.UndefOr[Boolean] = js.undefined,
+    style: StyleProp[ViewStyle] = null,
+    styles: IPaginationStyle = null
+  ): PaginationNativeProps = {
+    val __obj = js.Dynamic.literal(current = current, total = total)
+    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
+    if (onPrev != null) __obj.updateDynamic("onPrev")(js.Any.fromFunction0(onPrev))
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[PaginationNativeProps]
+  }
+}
+

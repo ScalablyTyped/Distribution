@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-getopt 0.2.3
-// Project: https://github.com/jiangmiao/node-getopt
-// Definitions by: Karl.M.Cauchy <https://github.com/kcauchy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Type Script Declaration for node-getopt
- */
-
-
-
-```
 

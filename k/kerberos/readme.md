@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for kerberos 1.1
-// Project: https://github.com/mongodb-js/kerberos#readme
-// Definitions by: Shervin Sarain <https://github.com/velezsarain>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

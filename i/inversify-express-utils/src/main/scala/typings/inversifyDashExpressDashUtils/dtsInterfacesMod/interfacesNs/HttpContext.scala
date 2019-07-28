@@ -1,0 +1,25 @@
+package typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs
+
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
+import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Container
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HttpContext extends js.Object {
+  var container: Container
+  var request: Request
+  var response: Response
+  var user: Principal
+}
+
+object HttpContext {
+  @scala.inline
+  def apply(container: Container, request: Request, response: Response, user: Principal): HttpContext = {
+    val __obj = js.Dynamic.literal(container = container, request = request, response = response, user = user)
+  
+    __obj.asInstanceOf[HttpContext]
+  }
+}
+

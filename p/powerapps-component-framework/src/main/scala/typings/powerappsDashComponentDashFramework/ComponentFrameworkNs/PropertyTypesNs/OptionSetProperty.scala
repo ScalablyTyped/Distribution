@@ -1,0 +1,40 @@
+package typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyTypesNs
+
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.FieldPropertyMetadataNs.Metadata
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.FieldPropertyMetadataNs.OptionSetMetadata
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.SecurityValues
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+		 * Property Interface for context.parameters.[property_key], when property manifest type is OptionSet
+		 */
+trait OptionSetProperty extends Property {
+  var attributes: js.UndefOr[OptionSetMetadata] = js.undefined
+  @JSName("raw")
+  var raw_OptionSetProperty: Double
+}
+
+object OptionSetProperty {
+  @scala.inline
+  def apply(
+    error: Boolean,
+    errorMessage: String,
+    raw: Double,
+    `type`: String,
+    attribute: Metadata = null,
+    attributes: OptionSetMetadata = null,
+    formatted: String = null,
+    security: SecurityValues = null
+  ): OptionSetProperty = {
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    __obj.updateDynamic("type")(`type`)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (security != null) __obj.updateDynamic("security")(security)
+    __obj.asInstanceOf[OptionSetProperty]
+  }
+}
+

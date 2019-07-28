@@ -1,0 +1,21 @@
+package typings.agDashGrid.distLibGridOptionsWrapperMod
+
+import typings.agDashGrid.distLibEventsMod.AgEvent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PropertyChangedEvent extends AgEvent {
+  var currentValue: js.Any
+  var previousValue: js.Any
+}
+
+object PropertyChangedEvent {
+  @scala.inline
+  def apply(currentValue: js.Any, previousValue: js.Any, `type`: String): PropertyChangedEvent = {
+    val __obj = js.Dynamic.literal(currentValue = currentValue, previousValue = previousValue)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PropertyChangedEvent]
+  }
+}
+

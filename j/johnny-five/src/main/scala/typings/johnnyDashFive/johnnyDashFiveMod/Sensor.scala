@@ -1,0 +1,35 @@
+package typings.johnnyDashFive.johnnyDashFiveMod
+
+import typings.johnnyDashFive.johnnyDashFiveStrings.change
+import typings.johnnyDashFive.johnnyDashFiveStrings.data
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("johnny-five", "Sensor")
+@js.native
+class Sensor protected () extends js.Object {
+  def this(option: String) = this()
+  def this(option: Double) = this()
+  def this(option: SensorOption) = this()
+  val analog: Double = js.native
+  val boolean: Boolean = js.native
+  val constrained: Double = js.native
+  var id: String = js.native
+  var pin: Double | String = js.native
+  val raw: Double = js.native
+  var threshold: Double = js.native
+  val value: Double = js.native
+  def booleanAt(barrier: Double): Boolean = js.native
+  def fscaleTo(low: Double, high: Double): Double = js.native
+  def fscaleTo(range: js.Array[Double]): Double = js.native
+  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+  def scaleTo(low: Double, high: Double): Double = js.native
+  def scaleTo(range: js.Array[Double]): Double = js.native
+  def within(range: js.Array[Double], cb: js.Function0[Unit]): Unit = js.native
+}
+

@@ -1,0 +1,83 @@
+package typings.antdDashMobileDashRn.libInputDashItemIndexDotNativeMod
+
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.bankCard
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.center
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.digit
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.left
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.number
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.password
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.phone
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.text
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.top
+import typings.antdDashMobileDashRn.libInputDashItemPropsTypeMod.InputEventHandler
+import typings.antdDashMobileDashRn.libInputDashItemPropsTypeMod.InputItemPropsType
+import typings.react.reactMod.ReactNode
+import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof any, 'onChange' | 'onFocus' | 'onBlur'> ]: any[P]} */ trait InputItemProps extends InputItemPropsType {
+  var last: js.UndefOr[Boolean] = js.undefined
+  var onErrorClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onExtraClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+}
+
+object InputItemProps {
+  @scala.inline
+  def apply(
+    clear: js.UndefOr[Boolean] = js.undefined,
+    defaultValue: String = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    editable: js.UndefOr[Boolean] = js.undefined,
+    error: js.UndefOr[Boolean] = js.undefined,
+    extra: ReactNode = null,
+    labelNumber: Int | Double = null,
+    labelPosition: left | top = null,
+    last: js.UndefOr[Boolean] = js.undefined,
+    locale: js.Object = null,
+    maxLength: Int | Double = null,
+    name: String = null,
+    onBlur: InputEventHandler = null,
+    onChange: /* value */ String => Unit = null,
+    onErrorClick: /* event */ GestureResponderEvent => Unit = null,
+    onExtraClick: /* event */ GestureResponderEvent => Unit = null,
+    onFocus: InputEventHandler = null,
+    onVirtualKeyboardConfirm: InputEventHandler = null,
+    placeholder: String = null,
+    styles: js.Any = null,
+    textAlign: left | center = null,
+    `type`: text | bankCard | phone | password | number | digit = null,
+    updatePlaceholder: js.UndefOr[Boolean] = js.undefined,
+    value: String = null
+  ): InputItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (labelNumber != null) __obj.updateDynamic("labelNumber")(labelNumber.asInstanceOf[js.Any])
+    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction1(onErrorClick))
+    if (onExtraClick != null) __obj.updateDynamic("onExtraClick")(js.Any.fromFunction1(onExtraClick))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(onVirtualKeyboardConfirm)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(updatePlaceholder)) __obj.updateDynamic("updatePlaceholder")(updatePlaceholder)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[InputItemProps]
+  }
+}
+

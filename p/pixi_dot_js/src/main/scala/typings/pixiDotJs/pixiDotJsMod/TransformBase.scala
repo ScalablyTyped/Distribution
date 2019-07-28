@@ -1,0 +1,18 @@
+package typings.pixiDotJs.pixiDotJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("pixi.js", "TransformBase")
+@js.native
+class TransformBase ()
+  extends typings.pixiDotJs.PIXINs.TransformBase
+
+/* static members */
+@JSImport("pixi.js", "TransformBase")
+@js.native
+object TransformBase extends js.Object {
+  var IDENTITY: typings.pixiDotJs.PIXINs.TransformBase = js.native
+}
+

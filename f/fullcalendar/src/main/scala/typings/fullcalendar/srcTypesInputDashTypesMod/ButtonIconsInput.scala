@@ -1,0 +1,25 @@
+package typings.fullcalendar.srcTypesInputDashTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ButtonIconsInput extends js.Object {
+  var next: js.UndefOr[String] = js.undefined
+  var nextYear: js.UndefOr[String] = js.undefined
+  var prev: js.UndefOr[String] = js.undefined
+  var prevYear: js.UndefOr[String] = js.undefined
+}
+
+object ButtonIconsInput {
+  @scala.inline
+  def apply(next: String = null, nextYear: String = null, prev: String = null, prevYear: String = null): ButtonIconsInput = {
+    val __obj = js.Dynamic.literal()
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear)
+    __obj.asInstanceOf[ButtonIconsInput]
+  }
+}
+

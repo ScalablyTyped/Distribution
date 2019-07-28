@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for heroku-logger 1.0
-// Project: https://github.com/ianstormtaylor/heroku-logger
-// Definitions by: Kyle Vogt <https://github.com/kylevogt>
-//                 Alejandro Moran <https://github.com/AlejandroMoran>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-/* =================== USAGE ===================
-
-    import * as logger from 'heroku-logger';
-    catch (error) {
-        logger.warn('Do not clutter your log files!', error);
-    }
-
-=============================================== */
-
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fast64 0.5
-// Project: https://github.com/superhuman/fast64, https://github.com/conradirwin/fast64
-// Definitions by: Rares Matei <https://github.com/rarmatei>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

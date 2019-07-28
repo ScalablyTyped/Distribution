@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for next-redux-wrapper 2.0
-// Project: https://github.com/kirill-konshin/next-redux-wrapper
-// Definitions by: Steve <https://github.com/stevegeek>
-//                 Jungwoo-An <https://github.com/Jungwoo-An>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

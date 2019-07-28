@@ -27,15 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Masked Input plugin for jQuery
-// Project: http://digitalbush.com/projects/masked-input-plugin
-// Definitions by: Lokesh Peta <https://github.com/lokeshpeta>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

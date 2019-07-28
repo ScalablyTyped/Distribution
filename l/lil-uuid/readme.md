@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for lil-uuid 0.1
-// Project: https://github.com/lil-js/uuid
-// Definitions by: Pr1st0n <https://github.com/Pr1st0n>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Generate a random UUID
- *
- * @returns UUID string.
- */
-
-```
 

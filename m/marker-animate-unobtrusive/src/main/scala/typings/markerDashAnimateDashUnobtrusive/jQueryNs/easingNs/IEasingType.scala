@@ -1,0 +1,41 @@
+package typings.markerDashAnimateDashUnobtrusive.jQueryNs.easingNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.swing
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInQuad
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutQuad
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutQuad
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInCubic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutCubic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutCubic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInQuart
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutQuart
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutQuart
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInQuint
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutQuint
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutQuint
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInSine
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutSine
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutSine
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInExpo
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutExpo
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutExpo
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInCirc
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutCirc
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutCirc
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInElastic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutElastic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutElastic
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInBack
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutBack
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutBack
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInBounce
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeOutBounce
+  - typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.easeInOutBounce
+*/
+trait IEasingType extends js.Object
+

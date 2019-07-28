@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsend 1.0.2
-// Project: https://github.com/Prestaul/jsend
-// Definitions by: Federico Caselli <https://github.com/CaselIT> 
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,27 @@
+package typings.handlebars.hbsNs.ASTNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SubExpression extends Node {
+  var hash: Hash
+  var params: js.Array[Expression]
+  var path: PathExpression
+}
+
+object SubExpression {
+  @scala.inline
+  def apply(
+    hash: Hash,
+    loc: SourceLocation,
+    params: js.Array[Expression],
+    path: PathExpression,
+    `type`: String
+  ): SubExpression = {
+    val __obj = js.Dynamic.literal(hash = hash, loc = loc, params = params, path = path)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SubExpression]
+  }
+}
+

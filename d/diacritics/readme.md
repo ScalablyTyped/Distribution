@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for diacritics 1.3
-// Project: https://github.com/andrewrk/node-diacritics
-// Definitions by: Oto Ciulis <https://github.com/otociulis>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

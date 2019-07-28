@@ -1,0 +1,13 @@
+package typings.reactDashNativeDashTextDashInputDashMask
+
+import typings.reactDashNativeDashTextDashInputDashMask.reactDashNativeDashTextDashInputDashMaskMod.TextInputMaskProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashTextDashInputDashMaskProps {
+  @scala.inline
+  def ReactDashNativeDashTextDashInputDashMaskProps: TextInputMaskProps.type = typings.reactDashNativeDashTextDashInputDashMask.reactDashNativeDashTextDashInputDashMaskMod.TextInputMaskProps
+  type ReactDashNativeDashTextDashInputDashMaskProps = TextInputMaskProps
+}
+

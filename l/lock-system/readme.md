@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Lock your system. Shows the login screen the next time you use the computer.
-
-Throws an `Error` if executing the lock command fails or if the OS is not supported.
-
-@example
-```
-import lockSystem = require('lock-system');
-
-lockSystem();
-```
-*/
-
-```
 

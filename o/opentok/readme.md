@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for opentok v2.3.2
-// Project: https://github.com/opentok/opentok-node
-// Definitions by: Seth Westphal <https://github.com/westy92>
-//                 Anthony Messerschmidt <https://github.com/CatGuardian>
-//                 Andrej Mihajlov <https://github.com/pronebird>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

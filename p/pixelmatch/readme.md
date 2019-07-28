@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pixelmatch 5.0
-// Project: https://github.com/mapbox/pixelmatch#readme
-// Definitions by: Oleg Repin <https://github.com/iamolegga>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

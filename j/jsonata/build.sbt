@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonata"
-version := "1.3-dt-20190212Z-e9c7a3"
+version := "1.3-dt-20190212Z-07cbd2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-jsfl-runner v0.2.4
-// Project: https://www.npmjs.com/package/node-jsfl-runner
-// Definitions by: Michael Randolph <https://github.com/mrand01>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

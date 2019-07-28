@@ -1,0 +1,107 @@
+package typings.amphtmlDashValidator.amphtmlDashValidatorMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.UNKNOWN_CODE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_TAG_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_REQUIRED_BY_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_TAG_REQUIRED_BY_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_EXTENSION_UNUSED
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.EXTENSION_UNUSED
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_EXTENSION_DEPRECATED_VERSION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_REQUIRED_BUT_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.GENERAL_DISALLOWED_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_SCRIPT_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_ATTR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_STYLE_ATTR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_ATTRIBUTE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_VALUE_REQUIRED_BY_LAYOUT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.IMPLIED_LAYOUT_INVALID
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.SPECIFIED_LAYOUT_INVALID
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ATTR_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ONEOF_ATTR_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_DIMENSION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_UNIQUE_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_UNIQUE_TAG_WARNING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WRONG_PARENT_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.STYLESHEET_TOO_LONG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_CDATA_MISSING_OR_INCORRECT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CDATA_VIOLATES_BLACKLIST
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.NON_WHITESPACE_CDATA_ENCOUNTERED
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEPRECATED_ATTR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEPRECATED_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_PROPERTY_MISSING_FROM_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_PROPERTY_VALUE_IN_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_URL_PROTOCOL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_DOMAIN
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_RELATIVE_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_PROPERTY_IN_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MUTUALLY_EXCLUSIVE_ATTRS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.UNESCAPED_TEMPLATE_IN_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TEMPLATE_PARTIAL_IN_ATTR_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TEMPLATE_IN_ATTR_NAME
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INCONSISTENT_UNITS_FOR_WIDTH_AND_HEIGHT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_TAG_ANCESTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_LAST_CHILD_TAG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_TAG_ANCESTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_TAG_ANCESTOR_WITH_HINT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_DISALLOWED_BY_IMPLIED_LAYOUT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_DISALLOWED_BY_SPECIFIED_LAYOUT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INCORRECT_NUM_CHILD_TAGS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INCORRECT_MIN_NUM_CHILD_TAGS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_CHILD_TAG_NAME
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_FIRST_CHILD_TAG_NAME
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_MANUFACTURED_BODY
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_REFERENCE_POINT_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_REFERENCE_POINT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_REFERENCE_POINT_CONFLICT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.BASE_TAG_MUST_PRECEED_ALL_URLS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_REQUIRED_EXTENSION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_MISSING_REQUIRED_EXTENSION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DOCUMENT_TOO_COMPLEX
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_UTF8
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_AT_RULE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_STRAY_TRAILING_BACKSLASH
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_UNTERMINATED_COMMENT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_UNTERMINATED_STRING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_BAD_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_EOF_IN_PRELUDE_OF_QUALIFIED_RULE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_DECLARATION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INCOMPLETE_DECLARATION
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_ERROR_IN_PSEUDO_SELECTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_MISSING_SELECTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_NOT_A_SELECTOR_START
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_UNPARSED_INPUT_REMAINS_IN_SELECTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_MISSING_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_URL_PROTOCOL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_DOMAIN
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_RELATIVE_URL
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_ATTR_SELECTOR
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_PROPERTY
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_PROPERTY_NOLIST
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_QUALIFIED_RULE_HAS_NO_DECLARATIONS
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_QUALIFIED_RULE_MUST_BE_INSIDE_KEYFRAME
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_KEYFRAME_INSIDE_KEYFRAME
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_MALFORMED_MEDIA_QUERY
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_MEDIA_TYPE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_MEDIA_FEATURE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_PROPERTY_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_PROPERTY_VALUE_WITH_HINT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_PROPERTY_DISALLOWED_WITHIN_AT_RULE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_PROPERTY_DISALLOWED_TOGETHER_WITH
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_PROPERTY_REQUIRES_QUALIFICATION
+*/
+trait ValidationErrorCode extends js.Object
+

@@ -1,0 +1,82 @@
+package typings.tmiDotJs.tmiDotJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.tmiDotJs.tmiDotJsStrings.already_banned
+  - typings.tmiDotJs.tmiDotJsStrings.already_emote_only_on
+  - typings.tmiDotJs.tmiDotJsStrings.already_emote_only_off
+  - typings.tmiDotJs.tmiDotJsStrings.already_subs_on
+  - typings.tmiDotJs.tmiDotJsStrings.already_subs_off
+  - typings.tmiDotJs.tmiDotJsStrings.bad_ban_admin
+  - typings.tmiDotJs.tmiDotJsStrings.bad_ban_broadcaster
+  - typings.tmiDotJs.tmiDotJsStrings.bad_ban_global_mod
+  - typings.tmiDotJs.tmiDotJsStrings.bad_ban_self
+  - typings.tmiDotJs.tmiDotJsStrings.bad_ban_staff
+  - typings.tmiDotJs.tmiDotJsStrings.bad_commercial_error
+  - typings.tmiDotJs.tmiDotJsStrings.bad_host_hosting
+  - typings.tmiDotJs.tmiDotJsStrings.bad_host_rate_exceeded
+  - typings.tmiDotJs.tmiDotJsStrings.bad_mod_mod
+  - typings.tmiDotJs.tmiDotJsStrings.bad_mod_banned
+  - typings.tmiDotJs.tmiDotJsStrings.bad_timeout_admin
+  - typings.tmiDotJs.tmiDotJsStrings.bad_timeout_global_mod
+  - typings.tmiDotJs.tmiDotJsStrings.bad_timeout_self
+  - typings.tmiDotJs.tmiDotJsStrings.bad_timeout_staff
+  - typings.tmiDotJs.tmiDotJsStrings.bad_unban_no_ban
+  - typings.tmiDotJs.tmiDotJsStrings.bad_unmod_mod
+  - typings.tmiDotJs.tmiDotJsStrings.ban_success
+  - typings.tmiDotJs.tmiDotJsStrings.cmds_available
+  - typings.tmiDotJs.tmiDotJsStrings.color_changed
+  - typings.tmiDotJs.tmiDotJsStrings.commercial_success
+  - typings.tmiDotJs.tmiDotJsStrings.emote_only_on
+  - typings.tmiDotJs.tmiDotJsStrings.emote_only_off
+  - typings.tmiDotJs.tmiDotJsStrings.hosts_remaining
+  - typings.tmiDotJs.tmiDotJsStrings.host_target_went_offline
+  - typings.tmiDotJs.tmiDotJsStrings.mod_success
+  - typings.tmiDotJs.tmiDotJsStrings.msg_banned
+  - typings.tmiDotJs.tmiDotJsStrings.msg_censored_broadcaster
+  - typings.tmiDotJs.tmiDotJsStrings.msg_channel_suspended
+  - typings.tmiDotJs.tmiDotJsStrings.msg_duplicate
+  - typings.tmiDotJs.tmiDotJsStrings.msg_emoteonly
+  - typings.tmiDotJs.tmiDotJsStrings.msg_ratelimit
+  - typings.tmiDotJs.tmiDotJsStrings.msg_subsonly
+  - typings.tmiDotJs.tmiDotJsStrings.msg_timedout
+  - typings.tmiDotJs.tmiDotJsStrings.msg_verified_email
+  - typings.tmiDotJs.tmiDotJsStrings.no_help
+  - typings.tmiDotJs.tmiDotJsStrings.no_permission
+  - typings.tmiDotJs.tmiDotJsStrings.not_hosting
+  - typings.tmiDotJs.tmiDotJsStrings.timeout_success
+  - typings.tmiDotJs.tmiDotJsStrings.unban_success
+  - typings.tmiDotJs.tmiDotJsStrings.unmod_success
+  - typings.tmiDotJs.tmiDotJsStrings.unrecognized_cmd
+  - typings.tmiDotJs.tmiDotJsStrings.usage_ban
+  - typings.tmiDotJs.tmiDotJsStrings.usage_clear
+  - typings.tmiDotJs.tmiDotJsStrings.usage_color
+  - typings.tmiDotJs.tmiDotJsStrings.usage_commercial
+  - typings.tmiDotJs.tmiDotJsStrings.usage_disconnect
+  - typings.tmiDotJs.tmiDotJsStrings.usage_emote_only_on
+  - typings.tmiDotJs.tmiDotJsStrings.usage_emote_only_off
+  - typings.tmiDotJs.tmiDotJsStrings.usage_help
+  - typings.tmiDotJs.tmiDotJsStrings.usage_host
+  - typings.tmiDotJs.tmiDotJsStrings.usage_me
+  - typings.tmiDotJs.tmiDotJsStrings.usage_mod
+  - typings.tmiDotJs.tmiDotJsStrings.usage_mods
+  - typings.tmiDotJs.tmiDotJsStrings.usage_r9k_on
+  - typings.tmiDotJs.tmiDotJsStrings.usage_r9k_off
+  - typings.tmiDotJs.tmiDotJsStrings.usage_slow_on
+  - typings.tmiDotJs.tmiDotJsStrings.usage_slow_off
+  - typings.tmiDotJs.tmiDotJsStrings.usage_subs_on
+  - typings.tmiDotJs.tmiDotJsStrings.usage_subs_off
+  - typings.tmiDotJs.tmiDotJsStrings.usage_timeout
+  - typings.tmiDotJs.tmiDotJsStrings.usage_unban
+  - typings.tmiDotJs.tmiDotJsStrings.usage_unhost
+  - typings.tmiDotJs.tmiDotJsStrings.usage_unmod
+  - typings.tmiDotJs.tmiDotJsStrings.whisper_invalid_self
+  - typings.tmiDotJs.tmiDotJsStrings.whisper_limit_per_min
+  - typings.tmiDotJs.tmiDotJsStrings.whisper_limit_per_sec
+  - typings.tmiDotJs.tmiDotJsStrings.whisper_restricted_recipient
+*/
+trait MsgID extends js.Object
+

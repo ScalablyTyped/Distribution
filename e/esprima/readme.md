@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Esprima 4.0
-// Project: http://esprima.org
-// Definitions by: teppeis <https://github.com/teppeis>, RReverser <https://github.com/RReverser>, peter-scott <https://github.com/peter-scott>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

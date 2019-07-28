@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for logger 0.0
-// Project: http://github.com/quirkey/node-logger
-// Definitions by: Max Wan <https://github.com/maxwan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

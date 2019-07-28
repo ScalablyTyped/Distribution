@@ -1,0 +1,16 @@
+package typings.nodeDashSpriteDashGenerator.nodeDashSpriteDashGeneratorMod
+
+import typings.express.expressMod.RequestHandler
+import typings.std.Error
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("node-sprite-generator", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(option: Option): Unit = js.native
+  def apply(option: Option, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def middleware(option: Option): RequestHandler = js.native
+}
+

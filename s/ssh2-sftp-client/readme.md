@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ssh2-sftp-client 2.5
-// Project: https://github.com/jyu213/ssh2-sftp-client
-// Definitions by: igrayson <https://github.com/igrayson>
-//                 Ascari Andrea <https://github.com/ascariandrea>
-//                 Kartik Malik <https://github.com/kartik2406>
-//                 Michael Pertl <https://github.com/viamuli>
-//                 Orblazer <https://github.com/orblazer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,52 @@
+package typings.shot.shotMod
+
+import typings.node.Buffer
+import typings.node.streamMod.Stream
+import typings.shot.Anon_Close
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RequestOptions extends js.Object {
+  /** a string specifying the HTTP HOST header value to be used if no header is provided, and the url does not include an authority component. Defaults to 'localhost'. */
+  var authority: js.UndefOr[String] = js.undefined
+  /** an optional object containing request headers. */
+  var headers: js.UndefOr[Headers] = js.undefined
+  /** a string specifying the HTTP request method, defaulting to 'GET'. */
+  var method: js.UndefOr[String] = js.undefined
+  /** an optional request payload. Can be a string, Buffer, Stream or object. */
+  var payload: js.UndefOr[String | Buffer | Stream | js.Object] = js.undefined
+  /** an optional string specifying the client remote address. Defaults to '127.0.0.1'. */
+  var remoteAddress: js.UndefOr[String] = js.undefined
+  /** an object containing flags to simulate various conditions: */
+  var simulate: js.UndefOr[Anon_Close] = js.undefined
+  /** a string specifying the request URL. */
+  var url: String
+  /** Optional flag to validate this options object. Defaults to true. */
+  var validate: js.UndefOr[Boolean] = js.undefined
+}
+
+object RequestOptions {
+  @scala.inline
+  def apply(
+    url: String,
+    authority: String = null,
+    headers: Headers = null,
+    method: String = null,
+    payload: String | Buffer | Stream | js.Object = null,
+    remoteAddress: String = null,
+    simulate: Anon_Close = null,
+    validate: js.UndefOr[Boolean] = js.undefined
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

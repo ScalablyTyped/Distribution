@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for axios-case-converter 0.3
-// Project: https://github.com/mpyw/axios-case-converter, https://github.com/mpyw/axios-interceptor-change-case
-// Definitions by: Derek Kniffin <https://github.com/dkniffin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

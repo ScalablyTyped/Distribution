@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fromjs 2.1
-// Project: https://github.com/suckgamony/fromjs
-// Definitions by: Glenn Dierckx <https://github.com/glenndierckx>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

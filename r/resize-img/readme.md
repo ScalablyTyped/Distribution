@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for resize-img 1.1
-// Project: https://github.com/kevva/resize-img#readme
-// Definitions by: Yusuke Higuchi <https://github.com/higuri>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

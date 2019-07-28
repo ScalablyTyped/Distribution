@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jwt-simple"
-version := "v0.5.1-dt-20190322Z-08fa15"
+version := "v0.5.1-dt-20190322Z-867c0d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

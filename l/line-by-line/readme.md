@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for line-by-line 0.1
-// Project: https://github.com/Osterjour/line-by-line
-// Definitions by: Sean Roach <https://github.com/TheEdgyDev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

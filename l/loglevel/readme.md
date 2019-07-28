@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Originally from Definitely Typed, see:
-// https://github.com/DefinitelyTyped/DefinitelyTyped/blob/b4683d7/types/loglevel/index.d.ts
-// Original definitions by: Stefan Profanter <https://github.com/Pro>
-//                          Gabor Szmetanko <https://github.com/szmeti>
-//                          Christian Rackerseder <https://github.com/screendriver>
-
-```
 

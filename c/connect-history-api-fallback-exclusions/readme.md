@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for connect-history-api-fallback-exclusions 1.5
-// Project: https://github.com/Wirewheel/connect-history-api-fallback#readme
-// Definitions by: Tony Stone <https://github.com/tonystonee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Voca 1.4
-// Project: https://vocajs.com/
-// Definitions by: Pine Mizune <https://github.com/pine>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

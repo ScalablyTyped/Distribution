@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for metisMenu 3.0
-// Project: http://github.com/onokumus/metisMenu
-// Definitions by: onokumus <https://github.com/onokumus/>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

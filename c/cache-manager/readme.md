@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cache-manager v1.2.0
-// Project: https://github.com/BryanDonovan/node-cache-manager
-// Definitions by: Simon Gausmann <https://github.com/GausSim>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

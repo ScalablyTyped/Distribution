@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stampit 3.0
-// Project: https://github.com/stampit-org/stampit, https://stampit.js.org
-// Definitions by: Vasyl Boroviak <https://github.com/koresar>
-//                 Harris Lummis <https://github.com/lummish>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Function used as .init() argument.
- */
-
-```
 

@@ -1,0 +1,33 @@
+package typings.webdriver
+
+import typings.webdriver.WebDriverNs.AttachSessionOptions
+import typings.webdriver.WebDriverNs.Client
+import typings.webdriver.WebDriverNs.Options
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("webdriver", JSImport.Namespace)
+@js.native
+object webdriverMod extends js.Object {
+  def attachToSession(options: AttachSessionOptions): js.Promise[Client] = js.native
+  def attachToSession(options: AttachSessionOptions, modifier: js.Function1[/* repeated */ js.Any, _]): js.Promise[Client] = js.native
+  def attachToSession(options: AttachSessionOptions, modifier: js.Function1[/* repeated */ js.Any, _], proto: js.Object): js.Promise[Client] = js.native
+  def attachToSession(
+    options: AttachSessionOptions,
+    modifier: js.Function1[/* repeated */ js.Any, _],
+    proto: js.Object,
+    commandWrapper: js.Function2[/* commandName */ String, /* fn */ js.Function1[/* repeated */ js.Any, _], _]
+  ): js.Promise[Client] = js.native
+  def newSession(): js.Promise[Client] = js.native
+  def newSession(options: Options): js.Promise[Client] = js.native
+  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, _]): js.Promise[Client] = js.native
+  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, _], proto: js.Object): js.Promise[Client] = js.native
+  def newSession(
+    options: Options,
+    modifier: js.Function1[/* repeated */ js.Any, _],
+    proto: js.Object,
+    commandWrapper: js.Function2[/* commandName */ String, /* fn */ js.Function1[/* repeated */ js.Any, _], _]
+  ): js.Promise[Client] = js.native
+}
+

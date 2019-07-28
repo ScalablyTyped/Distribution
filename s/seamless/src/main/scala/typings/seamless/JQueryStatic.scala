@@ -1,0 +1,20 @@
+package typings.seamless
+
+import typings.seamless.SeamlessNs.Static
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait JQueryStatic extends js.Object {
+  var seamless: Static
+}
+
+object JQueryStatic {
+  @scala.inline
+  def apply(seamless: Static): JQueryStatic = {
+    val __obj = js.Dynamic.literal(seamless = seamless)
+  
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

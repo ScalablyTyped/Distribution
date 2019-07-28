@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-syntax-highlighter 10.2
-// Project: https://github.com/conorhastings/react-syntax-highlighter
-// Definitions by: Ivo Stratev <https://github.com/NoHomey>
-//                 Aimee Gamble-Milner <https://github.com/ajgamble-milner>
-//                 Guo Yunhe <https://github.com/guoyunhe>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

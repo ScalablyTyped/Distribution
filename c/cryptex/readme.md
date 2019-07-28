@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cryptex 1.0
-// Project: https://github.com/technologyadvice/cryptex
-// Definitions by: Robert Brownstein <https://github.com/brownstein>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-// this is the config structure for a given env
-// typically, you find these in cryptex.json
-
-```
 

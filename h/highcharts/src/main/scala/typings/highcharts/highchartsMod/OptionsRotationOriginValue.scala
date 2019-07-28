@@ -1,0 +1,13 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.highcharts.highchartsStrings.center
+  - typings.highcharts.highchartsStrings.end
+  - typings.highcharts.highchartsStrings.start
+*/
+trait OptionsRotationOriginValue extends js.Object
+

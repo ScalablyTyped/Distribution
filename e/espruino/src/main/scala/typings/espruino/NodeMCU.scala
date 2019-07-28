@@ -1,0 +1,19 @@
+package typings.espruino
+
+import org.scalablytyped.runtime.Instantiable0
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+* <p>This is a built-in class to allow you to use the ESP8266 NodeMCU boards&#39;s pin namings to access pins. It is only available on ESP8266-based boards.</p>
+* 
+* @url http://www.espruino.com/Reference#NodeMCU
+*/
+@js.native
+trait NodeMCU extends /**
+  * 
+  * @return  
+  */
+Instantiable0[NodeMCU]
+

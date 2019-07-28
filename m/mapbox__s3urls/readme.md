@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mapbox__s3urls 1.5
-// Project: https://github.com/mapbox/s3urls
-// Definitions by: Sebastian Vera <https://github.com/sebastianvera>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// tslint:disable-next-line no-single-declare-module
-
-```
 

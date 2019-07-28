@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Showdown 1.9.0
-// Project: https://github.com/showdownjs/showdown
-// Definitions by: Hamed Baatour <https://github.com/hamedbaatour>,
-//                 cbowdon <https://github.com/cbowdon>,
-//                 Pei-Tang Huang <https://github.com/tan9>,
-//                 Ariel-Saldana <https://github.com/arielsaldana>,
-//                 Yisrael Eliav <https://github.com/yisraelx>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

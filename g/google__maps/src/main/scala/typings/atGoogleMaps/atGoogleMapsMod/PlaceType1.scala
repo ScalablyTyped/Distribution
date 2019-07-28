@@ -1,0 +1,100 @@
+package typings.atGoogleMaps.atGoogleMapsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atGoogleMaps.atGoogleMapsStrings.accounting
+  - typings.atGoogleMaps.atGoogleMapsStrings.airport
+  - typings.atGoogleMaps.atGoogleMapsStrings.amusement_park
+  - typings.atGoogleMaps.atGoogleMapsStrings.aquarium
+  - typings.atGoogleMaps.atGoogleMapsStrings.art_gallery
+  - typings.atGoogleMaps.atGoogleMapsStrings.atm
+  - typings.atGoogleMaps.atGoogleMapsStrings.bakery
+  - typings.atGoogleMaps.atGoogleMapsStrings.bank
+  - typings.atGoogleMaps.atGoogleMapsStrings.bar
+  - typings.atGoogleMaps.atGoogleMapsStrings.beauty_salon
+  - typings.atGoogleMaps.atGoogleMapsStrings.bicycle_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.book_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.bowling_alley
+  - typings.atGoogleMaps.atGoogleMapsStrings.bus_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.cafe
+  - typings.atGoogleMaps.atGoogleMapsStrings.campground
+  - typings.atGoogleMaps.atGoogleMapsStrings.car_dealer
+  - typings.atGoogleMaps.atGoogleMapsStrings.car_rental
+  - typings.atGoogleMaps.atGoogleMapsStrings.car_repair
+  - typings.atGoogleMaps.atGoogleMapsStrings.car_wash
+  - typings.atGoogleMaps.atGoogleMapsStrings.casino
+  - typings.atGoogleMaps.atGoogleMapsStrings.cemetery
+  - typings.atGoogleMaps.atGoogleMapsStrings.church
+  - typings.atGoogleMaps.atGoogleMapsStrings.city_hall
+  - typings.atGoogleMaps.atGoogleMapsStrings.clothing_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.convenience_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.courthouse
+  - typings.atGoogleMaps.atGoogleMapsStrings.dentist
+  - typings.atGoogleMaps.atGoogleMapsStrings.department_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.doctor
+  - typings.atGoogleMaps.atGoogleMapsStrings.electrician
+  - typings.atGoogleMaps.atGoogleMapsStrings.electronics_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.embassy
+  - typings.atGoogleMaps.atGoogleMapsStrings.fire_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.florist
+  - typings.atGoogleMaps.atGoogleMapsStrings.funeral_home
+  - typings.atGoogleMaps.atGoogleMapsStrings.furniture_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.gas_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.gym
+  - typings.atGoogleMaps.atGoogleMapsStrings.hair_care
+  - typings.atGoogleMaps.atGoogleMapsStrings.hardware_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.hindu_temple
+  - typings.atGoogleMaps.atGoogleMapsStrings.home_goods_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.hospital
+  - typings.atGoogleMaps.atGoogleMapsStrings.insurance_agency
+  - typings.atGoogleMaps.atGoogleMapsStrings.jewelry_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.laundry
+  - typings.atGoogleMaps.atGoogleMapsStrings.lawyer
+  - typings.atGoogleMaps.atGoogleMapsStrings.library
+  - typings.atGoogleMaps.atGoogleMapsStrings.liquor_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.local_government_office
+  - typings.atGoogleMaps.atGoogleMapsStrings.locksmith
+  - typings.atGoogleMaps.atGoogleMapsStrings.lodging
+  - typings.atGoogleMaps.atGoogleMapsStrings.meal_delivery
+  - typings.atGoogleMaps.atGoogleMapsStrings.meal_takeaway
+  - typings.atGoogleMaps.atGoogleMapsStrings.mosque
+  - typings.atGoogleMaps.atGoogleMapsStrings.movie_rental
+  - typings.atGoogleMaps.atGoogleMapsStrings.movie_theater
+  - typings.atGoogleMaps.atGoogleMapsStrings.moving_company
+  - typings.atGoogleMaps.atGoogleMapsStrings.museum
+  - typings.atGoogleMaps.atGoogleMapsStrings.night_club
+  - typings.atGoogleMaps.atGoogleMapsStrings.painter
+  - typings.atGoogleMaps.atGoogleMapsStrings.park
+  - typings.atGoogleMaps.atGoogleMapsStrings.parking
+  - typings.atGoogleMaps.atGoogleMapsStrings.pet_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.pharmacy
+  - typings.atGoogleMaps.atGoogleMapsStrings.physiotherapist
+  - typings.atGoogleMaps.atGoogleMapsStrings.plumber
+  - typings.atGoogleMaps.atGoogleMapsStrings.police
+  - typings.atGoogleMaps.atGoogleMapsStrings.post_office
+  - typings.atGoogleMaps.atGoogleMapsStrings.real_estate_agency
+  - typings.atGoogleMaps.atGoogleMapsStrings.restaurant
+  - typings.atGoogleMaps.atGoogleMapsStrings.roofing_contractor
+  - typings.atGoogleMaps.atGoogleMapsStrings.rv_park
+  - typings.atGoogleMaps.atGoogleMapsStrings.school
+  - typings.atGoogleMaps.atGoogleMapsStrings.shoe_store
+  - typings.atGoogleMaps.atGoogleMapsStrings.shopping_mall
+  - typings.atGoogleMaps.atGoogleMapsStrings.spa
+  - typings.atGoogleMaps.atGoogleMapsStrings.stadium
+  - typings.atGoogleMaps.atGoogleMapsStrings.storage
+  - typings.atGoogleMaps.atGoogleMapsStrings.store
+  - typings.atGoogleMaps.atGoogleMapsStrings.subway_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.supermarket
+  - typings.atGoogleMaps.atGoogleMapsStrings.synagogue
+  - typings.atGoogleMaps.atGoogleMapsStrings.taxi_stand
+  - typings.atGoogleMaps.atGoogleMapsStrings.train_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.transit_station
+  - typings.atGoogleMaps.atGoogleMapsStrings.travel_agency
+  - typings.atGoogleMaps.atGoogleMapsStrings.veterinary_care
+  - typings.atGoogleMaps.atGoogleMapsStrings.zoo
+*/
+trait PlaceType1 extends js.Object
+

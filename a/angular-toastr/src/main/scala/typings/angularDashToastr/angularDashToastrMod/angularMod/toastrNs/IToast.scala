@@ -1,0 +1,33 @@
+package typings.angularDashToastr.angularDashToastrMod.angularMod.toastrNs
+
+import typings.angular.angularMod.IAugmentedJQuery
+import typings.angular.angularMod.IPromise
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IToast extends js.Object {
+  var el: IAugmentedJQuery
+  var iconClass: String
+  var isOpened: Boolean
+  var open: IPromise[_]
+  var scope: typings.angularDashToastr.angularDashToastrMod.angularMod.toastrNs.IToastScope
+  var toastId: Double
+}
+
+object IToast {
+  @scala.inline
+  def apply(
+    el: IAugmentedJQuery,
+    iconClass: String,
+    isOpened: Boolean,
+    open: IPromise[_],
+    scope: typings.angularDashToastr.angularDashToastrMod.angularMod.toastrNs.IToastScope,
+    toastId: Double
+  ): IToast = {
+    val __obj = js.Dynamic.literal(el = el, iconClass = iconClass, isOpened = isOpened, open = open, scope = scope, toastId = toastId)
+  
+    __obj.asInstanceOf[IToast]
+  }
+}
+

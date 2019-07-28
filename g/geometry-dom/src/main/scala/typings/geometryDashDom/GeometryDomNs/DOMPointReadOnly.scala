@@ -1,0 +1,45 @@
+package typings.geometryDashDom.GeometryDomNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DOMPointReadOnly extends js.Object {
+  /**
+    * w coordinate / readonly
+    */
+  var w: Double
+  /**
+    * x coordinate / readonly
+    */
+  var x: Double
+  /**
+    * y coordinate / readonly
+    */
+  var y: Double
+  /**
+    * z coordinate / readonly
+    */
+  var z: Double
+  /**
+    * Post-multiply point with matrix.
+    * @param matrix
+    */
+  def matrixTransform(matrix: typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly): typings.geometryDashDom.GeometryDomNs.DOMPoint
+}
+
+object DOMPointReadOnly {
+  @scala.inline
+  def apply(
+    matrixTransform: typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly => typings.geometryDashDom.GeometryDomNs.DOMPoint,
+    w: Double,
+    x: Double,
+    y: Double,
+    z: Double
+  ): DOMPointReadOnly = {
+    val __obj = js.Dynamic.literal(matrixTransform = js.Any.fromFunction1(matrixTransform), w = w, x = x, y = y, z = z)
+  
+    __obj.asInstanceOf[DOMPointReadOnly]
+  }
+}
+

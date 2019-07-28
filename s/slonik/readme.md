@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for slonik 18.2
-// Project: https://github.com/gajus/slonik#readme
-// Definitions by: Sebastian Sebald <https://github.com/sebald>
-//                 Misha Kaletsky <https://github.com/mmkal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.1
-
-```
 

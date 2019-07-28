@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for RWLock 5.0
-// Project: https://github.com/71104/rwlock
-// Definitions by: Federico Caselli <https://github.com/CaselIT/typings-rwlock>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

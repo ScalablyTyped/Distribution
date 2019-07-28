@@ -1,0 +1,20 @@
+package typings.captureDashConsole
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Stderr extends js.Object {
+  var stderr: String
+  var stdout: String
+}
+
+object Anon_Stderr {
+  @scala.inline
+  def apply(stderr: String, stdout: String): Anon_Stderr = {
+    val __obj = js.Dynamic.literal(stderr = stderr, stdout = stdout)
+  
+    __obj.asInstanceOf[Anon_Stderr]
+  }
+}
+

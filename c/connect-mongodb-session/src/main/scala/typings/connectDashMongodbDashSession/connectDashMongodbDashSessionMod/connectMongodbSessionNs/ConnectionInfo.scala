@@ -1,0 +1,35 @@
+package typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod.connectMongodbSessionNs
+
+import typings.mongodb.mongodbMod.MongoClientOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConnectionInfo extends js.Object {
+  var collection: String
+  var connectionOptions: js.UndefOr[MongoClientOptions] = js.undefined
+  var databaseName: js.UndefOr[String] = js.undefined
+  var expires: js.UndefOr[Double] = js.undefined
+  var idField: js.UndefOr[String] = js.undefined
+  var uri: String
+}
+
+object ConnectionInfo {
+  @scala.inline
+  def apply(
+    collection: String,
+    uri: String,
+    connectionOptions: MongoClientOptions = null,
+    databaseName: String = null,
+    expires: Int | Double = null,
+    idField: String = null
+  ): ConnectionInfo = {
+    val __obj = js.Dynamic.literal(collection = collection, uri = uri)
+    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions)
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (idField != null) __obj.updateDynamic("idField")(idField)
+    __obj.asInstanceOf[ConnectionInfo]
+  }
+}
+

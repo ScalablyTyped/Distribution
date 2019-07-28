@@ -1,0 +1,32 @@
+package typings.winrtDashUwp.WindowsNs.MediaNs.CaptureNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait PhotoCaptureSource extends js.Object
+
+/** Specifies which stream on a video camera is used to capture photos. */
+@JSGlobal("Windows.Media.Capture.PhotoCaptureSource")
+@js.native
+object PhotoCaptureSource extends js.Object {
+  /** Automatically select the stream. */
+  @js.native
+  sealed trait auto extends PhotoCaptureSource
+  
+  /** Use the photo stream. */
+  @js.native
+  sealed trait photo extends PhotoCaptureSource
+  
+  /** Use the video stream. */
+  @js.native
+  sealed trait videoPreview extends PhotoCaptureSource
+  
+  /* 0 */ val auto: typings.winrtDashUwp.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource.auto with Double = js.native
+  /* 2 */ val photo: typings.winrtDashUwp.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource.photo with Double = js.native
+  /* 1 */ val videoPreview: typings.winrtDashUwp.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource.videoPreview with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[PhotoCaptureSource with Double] = js.native
+}
+

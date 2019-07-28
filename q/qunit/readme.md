@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for QUnit v2.9.2
-// Project: http://qunitjs.com/
-// Definitions by: James Bracy <https://github.com/waratuman>
-//                 Mike North <https://github.com/mike-north>
-//                 Stefan Sechelmann <https://github.com/sechel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

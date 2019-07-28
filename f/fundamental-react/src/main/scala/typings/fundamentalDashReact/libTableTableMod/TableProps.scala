@@ -1,0 +1,52 @@
+package typings.fundamentalDashReact.libTableTableMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.fundamentalDashReact.Anon_RowData
+import typings.react.reactMod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TableProps
+  extends /* x */ StringDictionary[js.Any] {
+  var className: js.UndefOr[String] = js.undefined
+  /* Array of localized text strings for the column headers. */
+  var headers: js.Array[String | ReactNode]
+  /* Additional props to be spread to the `<tbody>` element. */
+  var tableBodyProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  /* Additional props to be spread to the `<tr>` elements within `<tbody>`. If using a function, the parameters passed will be an object representing the row (from `tableData`) and the row index. */
+  var tableBodyRowProps: js.UndefOr[
+    StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
+  ] = js.undefined
+  /* Array of objects that contain one property: `rowData` (an array of strings containing data for each column in the row). */
+  var tableData: js.UndefOr[js.Array[Anon_RowData]] = js.undefined
+  /* Additional props to be spread to the `<thead>` element. */
+  var tableHeaderProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  /* Additional props to be spread to the `<tr>` element within `<thead>`. */
+  var tableHeaderRowProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+}
+
+object TableProps {
+  @scala.inline
+  def apply(
+    headers: js.Array[String | ReactNode],
+    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    className: String = null,
+    tableBodyProps: StringDictionary[js.Any] = null,
+    tableBodyRowProps: StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) = null,
+    tableData: js.Array[Anon_RowData] = null,
+    tableHeaderProps: StringDictionary[js.Any] = null,
+    tableHeaderRowProps: StringDictionary[js.Any] = null
+  ): TableProps = {
+    val __obj = js.Dynamic.literal(headers = headers)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps)
+    if (tableBodyRowProps != null) __obj.updateDynamic("tableBodyRowProps")(tableBodyRowProps.asInstanceOf[js.Any])
+    if (tableData != null) __obj.updateDynamic("tableData")(tableData)
+    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps)
+    if (tableHeaderRowProps != null) __obj.updateDynamic("tableHeaderRowProps")(tableHeaderRowProps)
+    __obj.asInstanceOf[TableProps]
+  }
+}
+

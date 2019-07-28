@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsSHA 2.0
-// Project: https://github.com/Caligatio/jsSHA
-// Definitions by: David Li <https://github.com/randombk>
-//                 Tobias Kahlert <https://github.com/SrTobi>
-//                 Kannan Goundan <https://github.com/cakoose>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

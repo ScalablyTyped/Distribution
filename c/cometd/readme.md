@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for CometD 4.0
-// Project: https://cometd.org
-// Definitions by: Derek Cicerone <https://github.com/derekcicerone>
-//                 Daniel Perez Alvarez <https://github.com/unindented>
-//                 Alex Henry <https://github.com/alxHenry>
-//                 Harald Gliebe <https://github.com/hagl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

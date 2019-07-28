@@ -1,0 +1,81 @@
+package typings.expressDashValidator.srcOptionsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.expressDashValidator.expressDashValidatorStrings.any
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-AE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-DZ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-EG`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-JO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-IQ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-KW`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-SA`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-SY`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-TN`
+  - typings.expressDashValidator.expressDashValidatorStrings.`be-BY`
+  - typings.expressDashValidator.expressDashValidatorStrings.`bg-BG`
+  - typings.expressDashValidator.expressDashValidatorStrings.`bn-BD`
+  - typings.expressDashValidator.expressDashValidatorStrings.`cs-CZ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`de-DE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`da-DK`
+  - typings.expressDashValidator.expressDashValidatorStrings.`el-GR`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-AU`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-GB`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-GH`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-HK`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-IE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-IN`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-KE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-MU`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-NG`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-NZ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-PK`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-RW`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-SG`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-TZ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-UG`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-US`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-CA`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-ZA`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-ZM`
+  - typings.expressDashValidator.expressDashValidatorStrings.`es-ES`
+  - typings.expressDashValidator.expressDashValidatorStrings.`es-MX`
+  - typings.expressDashValidator.expressDashValidatorStrings.`es-PY`
+  - typings.expressDashValidator.expressDashValidatorStrings.`es-UY`
+  - typings.expressDashValidator.expressDashValidatorStrings.`et-EE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`fa-IR`
+  - typings.expressDashValidator.expressDashValidatorStrings.`fi-FI`
+  - typings.expressDashValidator.expressDashValidatorStrings.`fo-FO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`fr-FR`
+  - typings.expressDashValidator.expressDashValidatorStrings.`he-IL`
+  - typings.expressDashValidator.expressDashValidatorStrings.`hu-HU`
+  - typings.expressDashValidator.expressDashValidatorStrings.`id-ID`
+  - typings.expressDashValidator.expressDashValidatorStrings.`it-IT`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ja-JP`
+  - typings.expressDashValidator.expressDashValidatorStrings.`kk-KZ`
+  - typings.expressDashValidator.expressDashValidatorStrings.`kl-GL`
+  - typings.expressDashValidator.expressDashValidatorStrings.`lt-LT`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ms-MY`
+  - typings.expressDashValidator.expressDashValidatorStrings.`nb-NO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`nn-NO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`pl-PL`
+  - typings.expressDashValidator.expressDashValidatorStrings.`pt-PT`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ro-RO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ru-RU`
+  - typings.expressDashValidator.expressDashValidatorStrings.`sk-SK`
+  - typings.expressDashValidator.expressDashValidatorStrings.`sl-SI`
+  - typings.expressDashValidator.expressDashValidatorStrings.`sr-RS`
+  - typings.expressDashValidator.expressDashValidatorStrings.`sv-SE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`th-TH`
+  - typings.expressDashValidator.expressDashValidatorStrings.`tr-TR`
+  - typings.expressDashValidator.expressDashValidatorStrings.`uk-UA`
+  - typings.expressDashValidator.expressDashValidatorStrings.`vi-VN`
+  - typings.expressDashValidator.expressDashValidatorStrings.`zh-CN`
+  - typings.expressDashValidator.expressDashValidatorStrings.`zh-HK`
+  - typings.expressDashValidator.expressDashValidatorStrings.`zh-TW`
+*/
+trait MobilePhoneLocale extends js.Object
+

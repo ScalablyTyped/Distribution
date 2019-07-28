@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for s3-download-stream 0.1
-// Project: https://github.com/jb55/s3-download-stream
-// Definitions by: Caleb Everett <https://github.com/everettcaleb>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

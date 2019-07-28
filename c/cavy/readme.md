@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cavy 2.0
-// Project: https://github.com/pixielabs/cavy
-// Definitions by: Tyler Hoffman <https://github.com/tyler-hoffman>
-//                 Abigail McPhillips <https://github.com/AbigailMcP>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

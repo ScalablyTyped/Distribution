@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Underscore 1.9
-// Project: http://underscorejs.org/
-// Definitions by: Boris Yankov <https://github.com/borisyankov>,
-//                 Josh Baldwin <https://github.com/jbaldwin>,
-//                 Christopher Currens <https://github.com/ccurrens>,
-//                 Ard Timmerman <https://github.com/confususs>,
-//                 Julian Gonggrijp <https://github.com/jgonggrijp>,
-//                 Florian Keller <https://github.com/ffflorian>
-//                 Regev Brody <https://github.com/regevbr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

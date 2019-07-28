@@ -1,0 +1,19 @@
+package typings.sourceDashMap.sourceDashMapMod
+
+import typings.std.Promise
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait IndexedSourceMapConsumer extends SourceMapConsumer {
+  var sources: js.Array[String] = js.native
+}
+
+@JSImport("source-map", "IndexedSourceMapConsumer")
+@js.native
+class IndexedSourceMapConsumerCls protected () extends Promise[IndexedSourceMapConsumer] {
+  def this(rawSourceMap: String) = this()
+  def this(rawSourceMap: RawIndexMap) = this()
+}
+

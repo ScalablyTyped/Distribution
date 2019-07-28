@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "postcss-modules-values"
-version := "3.0-dt-20190614Z-20dd72"
+version := "3.0-dt-20190614Z-6999c6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "postcss" % "7.0.17-654401",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-11ec74",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "postcss" % "7.0.17-6bb3b9",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-9427ea",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

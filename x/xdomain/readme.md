@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for xdomain v0.7.5
-// Project: http://jpillora.com/xdomain/
-// Definitions by: Dan Chao <http://dchao.co/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

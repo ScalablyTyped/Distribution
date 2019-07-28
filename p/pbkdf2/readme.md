@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pbkdf2 3.0
-// Project: https://github.com/crypto-browserify/pbkdf2
-// Definitions by: Timon Engelke <https://github.com/timonegk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

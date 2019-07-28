@@ -1,0 +1,36 @@
+package typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.text
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.animation
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.audio
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.channel_chat_created
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.contact
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.delete_chat_photo
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.document
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.game
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.group_chat_created
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.invoice
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.left_chat_member
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.location
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.migrate_from_chat_id
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.migrate_to_chat_id
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.new_chat_members
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.new_chat_photo
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.new_chat_title
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.passport_data
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.photo
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.pinned_message
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.sticker
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.successful_payment
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.supergroup_chat_created
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.video
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.video_note
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.voice
+*/
+trait MessageType extends js.Object
+

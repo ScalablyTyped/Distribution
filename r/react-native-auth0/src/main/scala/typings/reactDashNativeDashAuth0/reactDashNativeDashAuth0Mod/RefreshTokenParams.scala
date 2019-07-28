@@ -1,0 +1,20 @@
+package typings.reactDashNativeDashAuth0.reactDashNativeDashAuth0Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RefreshTokenParams extends js.Object {
+  var refreshToken: String
+  var scope: js.UndefOr[String] = js.undefined
+}
+
+object RefreshTokenParams {
+  @scala.inline
+  def apply(refreshToken: String, scope: String = null): RefreshTokenParams = {
+    val __obj = js.Dynamic.literal(refreshToken = refreshToken)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[RefreshTokenParams]
+  }
+}
+

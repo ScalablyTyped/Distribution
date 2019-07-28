@@ -1,0 +1,13 @@
+package typings.reactDashNativeDashPercentageDashCircle
+
+import typings.reactDashNativeDashPercentageDashCircle.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashPercentageDashCircleProps {
+  @scala.inline
+  def ReactDashNativeDashPercentageDashCircleProps: PercentageCircleProps.type = typings.reactDashNativeDashPercentageDashCircle.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps
+  type ReactDashNativeDashPercentageDashCircleProps = PercentageCircleProps
+}
+

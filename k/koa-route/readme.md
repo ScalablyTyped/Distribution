@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-route 3.2
-// Project: https://github.com/koajs/route#readme
-// Definitions by: Mike Cook <https://github.com/migstopheles>
-//                 Jaco Greeff <https://github.com/jacogr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

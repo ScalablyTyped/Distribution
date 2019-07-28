@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for requestidlecallback 0.1
-// Project: https://w3c.github.io/requestidlecallback/, https://github.com/afarkas/requestidlecallback
-// Definitions by: 贺师俊 <https://github.com/hax>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

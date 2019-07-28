@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gc-stats 1.4
-// Project: https://github.com/dainis/node-gcstats#readme
-// Definitions by: Vitor Fernandes <https://github.com/vfernandestoptal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

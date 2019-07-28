@@ -1,0 +1,53 @@
+package typings.braintree.braintreeMod
+
+import typings.braintree.Anon_CompanyCountryCodeAlpha2
+import typings.braintree.Anon_MakeDefault
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PaymentMethodUpdateRequest extends js.Object {
+  var billingAddress: js.UndefOr[Anon_CompanyCountryCodeAlpha2] = js.undefined
+  var billingAddressId: js.UndefOr[String] = js.undefined
+  var cardholderName: js.UndefOr[String] = js.undefined
+  var cvv: js.UndefOr[String] = js.undefined
+  var deviceData: js.UndefOr[String] = js.undefined
+  var expirationDate: js.UndefOr[String] = js.undefined
+  var expirationMonth: js.UndefOr[String] = js.undefined
+  var expirationYear: js.UndefOr[String] = js.undefined
+  var number: js.UndefOr[String] = js.undefined
+  var options: js.UndefOr[Anon_MakeDefault] = js.undefined
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
+}
+
+object PaymentMethodUpdateRequest {
+  @scala.inline
+  def apply(
+    billingAddress: Anon_CompanyCountryCodeAlpha2 = null,
+    billingAddressId: String = null,
+    cardholderName: String = null,
+    cvv: String = null,
+    deviceData: String = null,
+    expirationDate: String = null,
+    expirationMonth: String = null,
+    expirationYear: String = null,
+    number: String = null,
+    options: Anon_MakeDefault = null,
+    paymentMethodNonce: String = null
+  ): PaymentMethodUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
+    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId)
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
+    if (cvv != null) __obj.updateDynamic("cvv")(cvv)
+    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
+    if (number != null) __obj.updateDynamic("number")(number)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce)
+    __obj.asInstanceOf[PaymentMethodUpdateRequest]
+  }
+}
+

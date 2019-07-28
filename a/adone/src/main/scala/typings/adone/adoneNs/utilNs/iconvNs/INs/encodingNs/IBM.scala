@@ -1,0 +1,88 @@
+package typings.adone.adoneNs.utilNs.iconvNs.INs.encodingNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.adone.adoneStrings.`437`
+  - typings.adone.adoneStrings.`737`
+  - typings.adone.adoneStrings.`775`
+  - typings.adone.adoneStrings.`808`
+  - typings.adone.adoneStrings.`850`
+  - typings.adone.adoneStrings.`852`
+  - typings.adone.adoneStrings.`855`
+  - typings.adone.adoneStrings.`856`
+  - typings.adone.adoneStrings.`857`
+  - typings.adone.adoneStrings.`858`
+  - typings.adone.adoneStrings.`860`
+  - typings.adone.adoneStrings.`861`
+  - typings.adone.adoneStrings.`862`
+  - typings.adone.adoneStrings.`863`
+  - typings.adone.adoneStrings.`864`
+  - typings.adone.adoneStrings.`865`
+  - typings.adone.adoneStrings.`866`
+  - typings.adone.adoneStrings.`869`
+  - typings.adone.adoneStrings.`922`
+  - typings.adone.adoneStrings.`1046`
+  - typings.adone.adoneStrings.`1124`
+  - typings.adone.adoneStrings.`1125`
+  - typings.adone.adoneStrings.`1129`
+  - typings.adone.adoneStrings.`1133`
+  - typings.adone.adoneStrings.`1161`
+  - typings.adone.adoneStrings.`1163`
+  - typings.adone.adoneStrings.CP437
+  - typings.adone.adoneStrings.CP737
+  - typings.adone.adoneStrings.CP775
+  - typings.adone.adoneStrings.CP808
+  - typings.adone.adoneStrings.CP850
+  - typings.adone.adoneStrings.CP852
+  - typings.adone.adoneStrings.CP855
+  - typings.adone.adoneStrings.CP856
+  - typings.adone.adoneStrings.CP857
+  - typings.adone.adoneStrings.CP858
+  - typings.adone.adoneStrings.CP860
+  - typings.adone.adoneStrings.CP861
+  - typings.adone.adoneStrings.CP862
+  - typings.adone.adoneStrings.CP863
+  - typings.adone.adoneStrings.CP864
+  - typings.adone.adoneStrings.CP865
+  - typings.adone.adoneStrings.CP866
+  - typings.adone.adoneStrings.CP869
+  - typings.adone.adoneStrings.CP922
+  - typings.adone.adoneStrings.CP1046
+  - typings.adone.adoneStrings.CP1124
+  - typings.adone.adoneStrings.CP1125
+  - typings.adone.adoneStrings.CP1129
+  - typings.adone.adoneStrings.CP1133
+  - typings.adone.adoneStrings.CP1161
+  - typings.adone.adoneStrings.CP1163
+  - typings.adone.adoneStrings.IBM437
+  - typings.adone.adoneStrings.IBM737
+  - typings.adone.adoneStrings.IBM775
+  - typings.adone.adoneStrings.IBM808
+  - typings.adone.adoneStrings.IBM850
+  - typings.adone.adoneStrings.IBM852
+  - typings.adone.adoneStrings.IBM855
+  - typings.adone.adoneStrings.IBM856
+  - typings.adone.adoneStrings.IBM857
+  - typings.adone.adoneStrings.IBM858
+  - typings.adone.adoneStrings.IBM860
+  - typings.adone.adoneStrings.IBM861
+  - typings.adone.adoneStrings.IBM862
+  - typings.adone.adoneStrings.IBM863
+  - typings.adone.adoneStrings.IBM864
+  - typings.adone.adoneStrings.IBM865
+  - typings.adone.adoneStrings.IBM866
+  - typings.adone.adoneStrings.IBM869
+  - typings.adone.adoneStrings.IBM922
+  - typings.adone.adoneStrings.IBM1046
+  - typings.adone.adoneStrings.IBM1124
+  - typings.adone.adoneStrings.IBM1125
+  - typings.adone.adoneStrings.IBM1129
+  - typings.adone.adoneStrings.IBM1133
+  - typings.adone.adoneStrings.IBM1161
+  - typings.adone.adoneStrings.IBM1163
+*/
+trait IBM extends Singlebyte
+

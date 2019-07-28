@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tcp-ping 0.1
-// Project: https://github.com/wesolyromek/tcp-ping
-// Definitions by: JUNG YONG WOO <https://github.com/stegano>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

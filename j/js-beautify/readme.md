@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for js_beautify 1.8.3
-// Project: https://github.com/beautify-web/js-beautify/
-// Definitions by: Josh Goldberg <https://github.com/JoshuaKGoldberg>, Hans Windhoff <https://github.com/hansrwindhoff>, Gavin Rehkemper <https://github.com/gavinr/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

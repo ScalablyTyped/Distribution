@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for harmony-proxy 1.0.0
-// Project: https://www.npmjs.com/package/harmony-proxy
-// Definitions by: Remo Jansen <https://github.com/remojansen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

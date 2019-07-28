@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for selenium-standalone 6.15
-// Project: https://github.com/vvo/selenium-standalone
-// Definitions by: Sander de Waal <https://github.com/SanderDeWaal1992>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

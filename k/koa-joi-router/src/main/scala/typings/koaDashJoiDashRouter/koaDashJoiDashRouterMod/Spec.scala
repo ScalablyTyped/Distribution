@@ -1,0 +1,32 @@
+package typings.koaDashJoiDashRouter.koaDashJoiDashRouterMod
+
+import typings.koaDashJoiDashRouter.Anon_Body
+import typings.std.RegExp
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Spec extends Config {
+  var handler: Handler
+  var method: String | js.Array[String]
+  var path: String | RegExp
+}
+
+object Spec {
+  @scala.inline
+  def apply(
+    handler: Handler,
+    method: String | js.Array[String],
+    path: String | RegExp,
+    meta: js.Any = null,
+    pre: Handler = null,
+    validate: Anon_Body = null
+  ): Spec = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Spec]
+  }
+}
+

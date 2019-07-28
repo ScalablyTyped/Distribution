@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dush 3.0
-// Project: https://github.com/tunnckocore/dush#readme
-// Definitions by: andrycodestuffs <https://github.com/andrycodestuffs>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

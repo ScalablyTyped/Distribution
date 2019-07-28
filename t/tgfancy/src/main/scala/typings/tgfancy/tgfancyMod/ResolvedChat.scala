@@ -1,0 +1,22 @@
+package typings.tgfancy.tgfancyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResolvedChat extends js.Object {
+  var id: Double | String
+  var `type`: String
+  var username: String
+  var when: String
+}
+
+object ResolvedChat {
+  @scala.inline
+  def apply(id: Double | String, `type`: String, username: String, when: String): ResolvedChat = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], username = username, when = when)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResolvedChat]
+  }
+}
+

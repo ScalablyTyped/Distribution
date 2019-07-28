@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "ng-cordova"
-version := "0.0-unknown-dt-20190322Z-b5af91"
+version := "0.0-unknown-dt-20190322Z-7d6076"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-e41730",
-  "org.scalablytyped" %%% "cordova-plugin-camera" % "4.1.0-269749",
-  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-6b67cc",
-  "org.scalablytyped" %%% "cordova-plugin-file-transfer" % "1.7.1-c6a51f",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-b96846",
+  "org.scalablytyped" %%% "cordova-plugin-camera" % "4.1.0-51bea2",
+  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-4ae0cf",
+  "org.scalablytyped" %%% "cordova-plugin-file-transfer" % "1.7.1-6d6db0",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

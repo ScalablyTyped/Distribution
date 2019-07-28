@@ -1,0 +1,23 @@
+package typings.yandexDashMaps.yandexDashMapsMod
+
+import typings.yandexDashMaps.yandexDashMapsMod.multiRouterNs.MultiRoute
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IRoutePanel extends js.Object {
+  var options: IOptionManager
+  var state: IDataManager
+  def getRoute(): MultiRoute
+  def switchPoints(): Unit
+}
+
+object IRoutePanel {
+  @scala.inline
+  def apply(getRoute: () => MultiRoute, options: IOptionManager, state: IDataManager, switchPoints: () => Unit): IRoutePanel = {
+    val __obj = js.Dynamic.literal(getRoute = js.Any.fromFunction0(getRoute), options = options, state = state, switchPoints = js.Any.fromFunction0(switchPoints))
+  
+    __obj.asInstanceOf[IRoutePanel]
+  }
+}
+

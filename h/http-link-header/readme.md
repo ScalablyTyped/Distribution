@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for http-link-header 1.0.2
-// Project: https://github.com/jhermsmeier/node-http-link-header
-// Definitions by: Christian Rackerseder <https://github.com/screendriver>
-//                 Noah Loomans <https://github.com/nloomans>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

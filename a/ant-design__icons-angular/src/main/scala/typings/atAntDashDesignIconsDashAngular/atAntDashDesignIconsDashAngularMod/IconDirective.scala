@@ -1,0 +1,19 @@
+package typings.atAntDashDesignIconsDashAngular.atAntDashDesignIconsDashAngularMod
+
+import typings.atAngularCore.atAngularCoreMod.ElementRef
+import typings.atAngularCore.atAngularCoreMod.Renderer2
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@ant-design/icons-angular", "IconDirective")
+@js.native
+class IconDirective protected ()
+  extends typings.atAntDashDesignIconsDashAngular.publicUnderscoreApiMod.IconDirective {
+  def this(
+    _iconService: typings.atAntDashDesignIconsDashAngular.componentIconDotServiceMod.IconService,
+    _elementRef: ElementRef[_],
+    _renderer: Renderer2
+  ) = this()
+}
+

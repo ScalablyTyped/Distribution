@@ -1,0 +1,43 @@
+package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
+
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.TeamProjectCollectionReference
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.TeamProjectReference
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GitRepositoryRef extends js.Object {
+  /**
+    * Team Project Collection where this Fork resides
+    */
+  var collection: TeamProjectCollectionReference
+  var id: String
+  /**
+    * True if the repository was created as a fork
+    */
+  var isFork: Boolean
+  var name: String
+  var project: TeamProjectReference
+  var remoteUrl: String
+  var sshUrl: String
+  var url: String
+}
+
+object GitRepositoryRef {
+  @scala.inline
+  def apply(
+    collection: TeamProjectCollectionReference,
+    id: String,
+    isFork: Boolean,
+    name: String,
+    project: TeamProjectReference,
+    remoteUrl: String,
+    sshUrl: String,
+    url: String
+  ): GitRepositoryRef = {
+    val __obj = js.Dynamic.literal(collection = collection, id = id, isFork = isFork, name = name, project = project, remoteUrl = remoteUrl, sshUrl = sshUrl, url = url)
+  
+    __obj.asInstanceOf[GitRepositoryRef]
+  }
+}
+

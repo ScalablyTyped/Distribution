@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-cached
-// Project: https://github.com/wearefractal/gulp-cached
-// Definitions by: Thomas Corbière <https://github.com/tomc974>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

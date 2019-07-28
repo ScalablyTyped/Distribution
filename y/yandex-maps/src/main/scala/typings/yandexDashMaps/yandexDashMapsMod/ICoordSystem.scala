@@ -1,0 +1,14 @@
+package typings.yandexDashMaps.yandexDashMapsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ICoordSystem extends js.Object {
+  def getDistance(point1: js.Array[Double], point2: js.Array[Double]): Double = js.native
+  def solveDirectProblem(startPoint: js.Array[Double], direction: js.Array[Double], distance: Double): js.Object = js.native
+  def solveInverseProblem(startPoint: js.Array[Double], endPoint: js.Array[Double]): js.Object = js.native
+  def solveInverseProblem(startPoint: js.Array[Double], endPoint: js.Array[Double], reverseDirection: Boolean): js.Object = js.native
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-permissions 1.1
-// Project: https://github.com/yonahforst/react-native-permissions
-// Definitions by: Vincent Langlet <https://github.com/vincentlanglet>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

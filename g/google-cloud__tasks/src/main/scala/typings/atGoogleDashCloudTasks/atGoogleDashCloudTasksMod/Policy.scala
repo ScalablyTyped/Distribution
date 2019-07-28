@@ -1,0 +1,21 @@
+package typings.atGoogleDashCloudTasks.atGoogleDashCloudTasksMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Policy extends js.Object {
+  var bindings: js.Array[Binding]
+  var etag: String
+  var version: Double
+}
+
+object Policy {
+  @scala.inline
+  def apply(bindings: js.Array[Binding], etag: String, version: Double): Policy = {
+    val __obj = js.Dynamic.literal(bindings = bindings, etag = etag, version = version)
+  
+    __obj.asInstanceOf[Policy]
+  }
+}
+

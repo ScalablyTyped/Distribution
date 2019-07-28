@@ -1,0 +1,22 @@
+package typings.unlDashCore.unlDashCoreMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Point extends js.Object {
+  var elevation: Double
+  var elevationType: ElevationType
+  var lat: Double
+  var lon: Double
+}
+
+object Point {
+  @scala.inline
+  def apply(elevation: Double, elevationType: ElevationType, lat: Double, lon: Double): Point = {
+    val __obj = js.Dynamic.literal(elevation = elevation, elevationType = elevationType, lat = lat, lon = lon)
+  
+    __obj.asInstanceOf[Point]
+  }
+}
+

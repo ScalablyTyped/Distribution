@@ -1,0 +1,19 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PullsCreateFromIssueResponseLinksStatuses extends js.Object {
+  var href: String
+}
+
+object PullsCreateFromIssueResponseLinksStatuses {
+  @scala.inline
+  def apply(href: String): PullsCreateFromIssueResponseLinksStatuses = {
+    val __obj = js.Dynamic.literal(href = href)
+  
+    __obj.asInstanceOf[PullsCreateFromIssueResponseLinksStatuses]
+  }
+}
+

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for faker 4.1
-// Project: http://marak.com/faker.js/
-// Definitions by: Ben Swartz <https://github.com/bensw>,
-//                 Bas Pennings <https://github.com/basp>,
-//                 Yuki Kokubun <https://github.com/Kuniwak>,
-//                 Matt Bishop <https://github.com/mattbishop>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

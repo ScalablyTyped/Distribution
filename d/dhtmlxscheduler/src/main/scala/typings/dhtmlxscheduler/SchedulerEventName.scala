@@ -1,0 +1,83 @@
+package typings.dhtmlxscheduler
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick
+  - typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick
+*/
+trait SchedulerEventName extends js.Object
+

@@ -1,0 +1,19 @@
+package typings.gulpDashFlatten.gulpDashFlattenMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IOptions extends js.Object {
+  var newPath: String
+}
+
+object IOptions {
+  @scala.inline
+  def apply(newPath: String): IOptions = {
+    val __obj = js.Dynamic.literal(newPath = newPath)
+  
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

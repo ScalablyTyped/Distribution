@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Lowdb 1.0
-// Project: https://github.com/typicode/lowdb
-// Definitions by: typicode <https://github.com/typicode>
-//                 Bazyli Brzóska <https://github.com/niieani>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.1
-
-```
 

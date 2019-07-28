@@ -1,0 +1,70 @@
+package typings.ngtoaster.ngtoasterMod
+
+import typings.std.EventListener
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IToast extends js.Object {
+  var body: js.UndefOr[String] = js.undefined
+  var bodyOutputType: js.UndefOr[String] = js.undefined
+  var clickHandler: js.UndefOr[EventListener] = js.undefined
+  var closeHtml: js.UndefOr[String] = js.undefined
+  var directiveData: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Called when the toast has been removed.
+    * @param toast the displayed toast
+    */
+  var onHideCallback: js.UndefOr[IToastCallback] = js.undefined
+  /**
+    * Called when the toast has been displayed.
+    * @param toast the displayed toast
+    */
+  var onShowCallback: js.UndefOr[IToastCallback] = js.undefined
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
+  var tapToDismiss: js.UndefOr[Boolean] = js.undefined
+  var timeout: js.UndefOr[Double] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
+  var toastId: js.UndefOr[String | Double] = js.undefined
+  /**
+    * Acceptable types are:
+    * 'error', 'info', 'wait', 'success', and 'warning'
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+}
+
+object IToast {
+  @scala.inline
+  def apply(
+    body: String = null,
+    bodyOutputType: String = null,
+    clickHandler: EventListener = null,
+    closeHtml: String = null,
+    directiveData: js.Any = null,
+    onHideCallback: IToastCallback = null,
+    onShowCallback: IToastCallback = null,
+    showCloseButton: js.UndefOr[Boolean] = js.undefined,
+    tapToDismiss: js.UndefOr[Boolean] = js.undefined,
+    timeout: Int | Double = null,
+    title: String = null,
+    toastId: String | Double = null,
+    `type`: String = null
+  ): IToast = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (bodyOutputType != null) __obj.updateDynamic("bodyOutputType")(bodyOutputType)
+    if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
+    if (closeHtml != null) __obj.updateDynamic("closeHtml")(closeHtml)
+    if (directiveData != null) __obj.updateDynamic("directiveData")(directiveData)
+    if (onHideCallback != null) __obj.updateDynamic("onHideCallback")(onHideCallback)
+    if (onShowCallback != null) __obj.updateDynamic("onShowCallback")(onShowCallback)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (toastId != null) __obj.updateDynamic("toastId")(toastId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IToast]
+  }
+}
+

@@ -13,17 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for non-npm package cordova-plugin-bluetoothClassic-serial 0.9
-// Project: https://github.com/soltius/BluetoothClassicSerial
-// Definitions by: Wouter Roosendaal <https://github.com/tuvokki>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Global object bluetoothClassicSerial.
- */
-
-```
 

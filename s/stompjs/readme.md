@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stompjs 2.3
-// Project: https://github.com/jmesnil/stomp-websocket
-// Definitions by: Jimi Charalampidis <https://github.com/jimic>
-//                 Stefan Erichsen <https://github.com/Dr4k4n>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

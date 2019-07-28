@@ -1,0 +1,22 @@
+package typings.ol.olMod
+
+import typings.ol.extentMod.Extent
+import typings.ol.imageMod.LoadFunction
+import typings.ol.imageMod.default
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("ol", "Image")
+@js.native
+class Image protected () extends default {
+  def this(
+    extent: Extent,
+    resolution: Double,
+    pixelRatio: Double,
+    src: String,
+    crossOrigin: String,
+    imageLoadFunction: LoadFunction
+  ) = this()
+}
+

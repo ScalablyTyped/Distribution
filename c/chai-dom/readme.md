@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-dom
-// Project: https://github.com/nathanboktae/chai-dom
-// Definitions by: Matt Lewis <https://github.com/mattlewis92>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

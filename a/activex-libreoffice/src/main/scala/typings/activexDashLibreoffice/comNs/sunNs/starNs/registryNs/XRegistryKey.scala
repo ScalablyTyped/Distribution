@@ -1,0 +1,306 @@
+package typings.activexDashLibreoffice.comNs.sunNs.starNs.registryNs
+
+import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
+import typings.activexDashLibreoffice.`type`
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+import typings.std.SafeArray
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * makes structural information (except regarding tree structures) of a single registry key accessible.
+  *
+  * This is the main interface for registry keys.
+  * @see XSimpleRegistry
+  */
+trait XRegistryKey extends XInterface {
+  /**
+    * @returns a sequence of ascii strings if the key contains an ascii list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type ascii list.
+    */
+  var AsciiListValue: SafeArray[String]
+  /**
+    * @returns an ascii string value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type ascii.
+    */
+  var AsciiValue: String
+  /**
+    * @returns a binary value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type binary.
+    */
+  var BinaryValue: SafeArray[Double]
+  /**
+    * This is the key of the entry relative to its parent.
+    *
+    * The access path starts with the root "/" and all parent entry names are delimited with slashes "/" too, like in a UNIX (R) file system. Slashes which
+    * are part of single names are represented as hexadecimals preceded with a "%" like in URL syntax.
+    */
+  var KeyName: String
+  /**
+    * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  val KeyNames: SafeArray[String]
+  /**
+    * @returns a sequence of longs if the key contains a long list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type long list.
+    */
+  var LongListValue: SafeArray[Double]
+  /**
+    * @returns a long value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the value is not of type long.
+    */
+  var LongValue: Double
+  /**
+    * @returns a sequence of unicode strings if the key contains an unicode string list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type string list.
+    */
+  var StringListValue: SafeArray[String]
+  /**
+    * @returns a unicode string value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type string.
+    */
+  var StringValue: String
+  /**
+    * @returns the type of the key value or NOT_DEFINED if the key has no value.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  val ValueType: RegistryValueType
+  /**
+    * closes a key in the registry.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def closeKey(): Unit
+  /**
+    * creates a new key in the registry.
+    *
+    * If the key already exists, the function will open the key.
+    * @param aKeyName specifies the relative path from the current key to the key which will be created.
+    * @returns a NULL interface if the key could not be created.
+    * @throws InvalidRegistryException if the registry is not open, the registry is readonly or if the key exists and is of type LINK.
+    */
+  def createKey(aKeyName: String): XRegistryKey
+  /**
+    * creates a new link in the registry.
+    * @param aLinkName specifies the relative path from the current key to the link which will be created.
+    * @param aLinkTarget specifies the full path of the key which will be referenced by the link.
+    * @returns `TRUE` if the link was created. If the link already exists or the link target does not exist, the function returns `FALSE` .
+    * @throws InvalidRegistryException if the registry is not open or the registry is readonly.
+    */
+  def createLink(aLinkName: String, aLinkTarget: String): Boolean
+  /**
+    * deletes a key from the registry.
+    * @param rKeyName specifies the relative path from the current key to the key which will be deleted.
+    * @throws InvalidRegistryException if the registry is not open, the registry is readonly, the key does not exists or if the key is of type LINK.
+    */
+  def deleteKey(rKeyName: String): Unit
+  /**
+    * deletes a link from the registry.
+    * @param rLinkName specifies the relative path from the current key to the link which will be deleted.
+    * @throws InvalidRegistryException if the registry is not open, the registry is readonly, or if the link does not exist.
+    */
+  def deleteLink(rLinkName: String): Unit
+  /**
+    * @returns a sequence of ascii strings if the key contains an ascii list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type ascii list.
+    */
+  def getAsciiListValue(): SafeArray[String]
+  /**
+    * @returns an ascii string value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type ascii.
+    */
+  def getAsciiValue(): String
+  /**
+    * @returns a binary value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type binary.
+    */
+  def getBinaryValue(): SafeArray[Double]
+  /**
+    * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def getKeyNames(): SafeArray[String]
+  /**
+    * @param rKeyName specifies the relative path from the current key to the key of the type which will be returned.
+    * @returns the type of the specified key.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def getKeyType(rKeyName: String): RegistryKeyType
+  /**
+    * @param rLinkName specifies the relative path from the current key to the link which target will be returned.
+    * @returns the target (complete path of a key) of the link specified by rLinkName.
+    * @throws InvalidRegistryException if the registry is not open or the link does not exists.
+    */
+  def getLinkTarget(rLinkName: String): String
+  /**
+    * @returns a sequence of longs if the key contains a long list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type long list.
+    */
+  def getLongListValue(): SafeArray[Double]
+  /**
+    * @returns a long value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the value is not of type long.
+    */
+  def getLongValue(): Double
+  /**
+    * @param aKeyName specifies a relative path from the current key which will be resolved from all links.
+    * @returns the resolved name of a key. The function resolve the complete name of the key. If a link could not be resolved, the linktarget concatenated with
+    * @throws InvalidRegistryException if the registry is not open or a recursion was detected.
+    */
+  def getResolvedName(aKeyName: String): String
+  /**
+    * @returns a sequence of unicode strings if the key contains an unicode string list value.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type string list.
+    */
+  def getStringListValue(): SafeArray[String]
+  /**
+    * @returns a unicode string value if the key contains one.
+    * @throws InvalidRegistryException if the registry is not open.
+    * @throws InvalidValueException if the actual value is not of type string.
+    */
+  def getStringValue(): String
+  /**
+    * @returns the type of the key value or NOT_DEFINED if the key has no value.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def getValueType(): RegistryValueType
+  /**
+    * checks if the key can be overwritten.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def isReadOnly(): Boolean
+  /** checks if the key points to an open valid key in the data-source. */
+  def isValid(): Boolean
+  /**
+    * opens a sub key of the key.
+    *
+    * If the sub key does not exist, the function returns a NULL-interface.
+    * @param aKeyName the relative path from the current key to the key which will be created.
+    * @returns a NULL interface if the key does not exist.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def openKey(aKeyName: String): XRegistryKey
+  /**
+    * opens all subkeys of the key. If a subkey is a link, the link will be resolved and the appropriate key will be opened.
+    * @returns an empty sequence if the key has no subkeys.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def openKeys(): SafeArray[XRegistryKey]
+  /**
+    * sets an ASCII string list value to the key.
+    *
+    * The high byte of the string should be NULL. If not, there is no guarantee that the string will be correctly transported. If the key already has a
+    * value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setAsciiListValue(seqValue: SeqEquiv[String]): Unit
+  /**
+    * sets an ASCII string value to the key.
+    *
+    * The high byte of the string should be NULL. If not, there is no guarantee that the string will be correctly transported. If the key already has a
+    * value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setAsciiValue(value: String): Unit
+  /**
+    * sets a binary value to the key.
+    *
+    * If the key already has a value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setBinaryValue(value: SeqEquiv[Double]): Unit
+  /**
+    * sets a long list value to the key.
+    *
+    * If the key already has a value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setLongListValue(seqValue: SeqEquiv[Double]): Unit
+  /**
+    * sets a long value to the key.
+    *
+    * If the key already has a value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setLongValue(value: Double): Unit
+  /**
+    * sets a unicode string value to the key.
+    *
+    * If the key already has a value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setStringListValue(seqValue: SeqEquiv[String]): Unit
+  /**
+    * sets a unicode string value to the key.
+    *
+    * If the key already has a value, the value will be overridden.
+    * @throws InvalidRegistryException if the registry is not open.
+    */
+  def setStringValue(value: String): Unit
+}
+
+object XRegistryKey {
+  @scala.inline
+  def apply(
+    AsciiListValue: SafeArray[String],
+    AsciiValue: String,
+    BinaryValue: SafeArray[Double],
+    KeyName: String,
+    KeyNames: SafeArray[String],
+    LongListValue: SafeArray[Double],
+    LongValue: Double,
+    StringListValue: SafeArray[String],
+    StringValue: String,
+    ValueType: RegistryValueType,
+    acquire: () => Unit,
+    closeKey: () => Unit,
+    createKey: String => XRegistryKey,
+    createLink: (String, String) => Boolean,
+    deleteKey: String => Unit,
+    deleteLink: String => Unit,
+    getAsciiListValue: () => SafeArray[String],
+    getAsciiValue: () => String,
+    getBinaryValue: () => SafeArray[Double],
+    getKeyNames: () => SafeArray[String],
+    getKeyType: String => RegistryKeyType,
+    getLinkTarget: String => String,
+    getLongListValue: () => SafeArray[Double],
+    getLongValue: () => Double,
+    getResolvedName: String => String,
+    getStringListValue: () => SafeArray[String],
+    getStringValue: () => String,
+    getValueType: () => RegistryValueType,
+    isReadOnly: () => Boolean,
+    isValid: () => Boolean,
+    openKey: String => XRegistryKey,
+    openKeys: () => SafeArray[XRegistryKey],
+    queryInterface: `type` => js.Any,
+    release: () => Unit,
+    setAsciiListValue: SeqEquiv[String] => Unit,
+    setAsciiValue: String => Unit,
+    setBinaryValue: SeqEquiv[Double] => Unit,
+    setLongListValue: SeqEquiv[Double] => Unit,
+    setLongValue: Double => Unit,
+    setStringListValue: SeqEquiv[String] => Unit,
+    setStringValue: String => Unit
+  ): XRegistryKey = {
+    val __obj = js.Dynamic.literal(AsciiListValue = AsciiListValue, AsciiValue = AsciiValue, BinaryValue = BinaryValue, KeyName = KeyName, KeyNames = KeyNames, LongListValue = LongListValue, LongValue = LongValue, StringListValue = StringListValue, StringValue = StringValue, ValueType = ValueType, acquire = js.Any.fromFunction0(acquire), closeKey = js.Any.fromFunction0(closeKey), createKey = js.Any.fromFunction1(createKey), createLink = js.Any.fromFunction2(createLink), deleteKey = js.Any.fromFunction1(deleteKey), deleteLink = js.Any.fromFunction1(deleteLink), getAsciiListValue = js.Any.fromFunction0(getAsciiListValue), getAsciiValue = js.Any.fromFunction0(getAsciiValue), getBinaryValue = js.Any.fromFunction0(getBinaryValue), getKeyNames = js.Any.fromFunction0(getKeyNames), getKeyType = js.Any.fromFunction1(getKeyType), getLinkTarget = js.Any.fromFunction1(getLinkTarget), getLongListValue = js.Any.fromFunction0(getLongListValue), getLongValue = js.Any.fromFunction0(getLongValue), getResolvedName = js.Any.fromFunction1(getResolvedName), getStringListValue = js.Any.fromFunction0(getStringListValue), getStringValue = js.Any.fromFunction0(getStringValue), getValueType = js.Any.fromFunction0(getValueType), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), openKey = js.Any.fromFunction1(openKey), openKeys = js.Any.fromFunction0(openKeys), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAsciiListValue = js.Any.fromFunction1(setAsciiListValue), setAsciiValue = js.Any.fromFunction1(setAsciiValue), setBinaryValue = js.Any.fromFunction1(setBinaryValue), setLongListValue = js.Any.fromFunction1(setLongListValue), setLongValue = js.Any.fromFunction1(setLongValue), setStringListValue = js.Any.fromFunction1(setStringListValue), setStringValue = js.Any.fromFunction1(setStringValue))
+  
+    __obj.asInstanceOf[XRegistryKey]
+  }
+}
+

@@ -1,0 +1,12 @@
+package typings.pgDashConnectionDashString.pgDashConnectionDashStringMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("pg-connection-string", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def parse(connectionString: String): ConnectionOptions = js.native
+}
+

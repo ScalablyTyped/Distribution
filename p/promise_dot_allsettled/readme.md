@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// This file exists only to reflect the existence of the auto.js file in the source package, which has a side-effect
-// when imported.
-// Type definitions for promise.allsettled 1.0
-// Project: https://github.com/ljharb/promise.allsettled#readme
-// Definitions by: Martin Jurča <https://github.com/jurca>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.1
-
-```
 

@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if the process is running inside a Docker container.
-
-@example
-```
-import isDocker = require('is-docker');
-
-if (isDocker()) {
-	console.log('Running inside a Docker container');
-}
-```
-*/
-
-```
 

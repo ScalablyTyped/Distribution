@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-List of binary file extensions.
-
-@example
-```
-import binaryExtensions = require('binary-extensions');
-
-console.log(binaryExtensions);
-//=> ['3ds', '3g2', …]
-```
-*/
-
-```
 

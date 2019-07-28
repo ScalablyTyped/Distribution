@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Apache Cordova Keyboard plugin v1.2.0
-// Project: https://github.com/cjpearson/cordova-plugin-keyboard
-// Definitions by:  Dan Manastireanu <https://github.com/danmana>
-//                  Jochen Becker <https://github.com/jkfb>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * A message which can be delivered to a message handler.
- *
- * #### Notes
- * This class may be subclassed to create complex message types.
- */
-
-```
 

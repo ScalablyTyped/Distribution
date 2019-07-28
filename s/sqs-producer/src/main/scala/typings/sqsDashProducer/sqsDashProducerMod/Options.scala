@@ -1,0 +1,36 @@
+package typings.sqsDashProducer.sqsDashProducerMod
+
+import typings.awsDashSdk.awsDashSdkMod.SQS
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var accessKeyId: js.UndefOr[String] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.undefined
+  var queueUrl: String
+  var region: js.UndefOr[String] = js.undefined
+  var secretAccessKey: js.UndefOr[String] = js.undefined
+  var sqs: js.UndefOr[SQS] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    queueUrl: String,
+    accessKeyId: String = null,
+    batchSize: Int | Double = null,
+    region: String = null,
+    secretAccessKey: String = null,
+    sqs: SQS = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(queueUrl = queueUrl)
+    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey)
+    if (sqs != null) __obj.updateDynamic("sqs")(sqs)
+    __obj.asInstanceOf[Options]
+  }
+}
+

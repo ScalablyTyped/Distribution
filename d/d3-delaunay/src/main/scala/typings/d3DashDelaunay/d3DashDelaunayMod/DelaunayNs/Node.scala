@@ -1,0 +1,49 @@
+package typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * A point node on a convex hull (represented as a circular linked list).
+  */
+trait Node extends js.Object {
+  /**
+    * The index of the associated point.
+    */
+  var i: Double
+  /**
+    * The next node on the hull.
+    */
+  var next: Node
+  /**
+    * The previous node on the hull.
+    */
+  var prev: Node
+  /**
+    * Whether the node has been removed from the linked list.
+    */
+  var removed: Boolean
+  /**
+    * The index of the (incoming or outgoing?) associated halfedge.
+    */
+  var t: Double
+  /**
+    * The x-coordinate of the associated point.
+    */
+  var x: Double
+  /**
+    * The y-coordinate of the associated point.
+    */
+  var y: Double
+}
+
+object Node {
+  @scala.inline
+  def apply(i: Double, next: Node, prev: Node, removed: Boolean, t: Double, x: Double, y: Double): Node = {
+    val __obj = js.Dynamic.literal(i = i, next = next, prev = prev, removed = removed, t = t, x = x, y = y)
+  
+    __obj.asInstanceOf[Node]
+  }
+}
+

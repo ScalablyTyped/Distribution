@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Datadog's nodejs metrics client node-dogstatsd
-// Project: https://github.com/joybro/node-dogstatsd
-// Definitions by: Chris Bobo <https://github.com/chrisbobo>
-//                 Michael Mifsud <https://github.com/xzyfer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

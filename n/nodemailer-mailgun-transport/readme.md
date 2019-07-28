@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nodemailer-mailgun-transport 1.4
-// Project: https://github.com/orliesaurus/nodemailer-mailgun-transport, http://mailgun.com
-// Definitions by: Oto Ciulis <https://github.com/otociulis>
-//                 Joachim Wallsin <https://github.com/calvinmcgee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.3
-
-```
 

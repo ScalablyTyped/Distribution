@@ -1,0 +1,19 @@
+package typings.shrinkDashRay.shrinkDashRayMod
+
+import typings.express.expressMod.Request
+import typings.express.expressMod.RequestHandler
+import typings.express.expressMod.Response
+import typings.shrinkDashRay.Options
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CreateMiddleware extends js.Object {
+  @JSName("filter")
+  var filter_Original: FilterFunction = js.native
+  def apply(): RequestHandler = js.native
+  def apply(options: Options): RequestHandler = js.native
+  def filter(req: Request, res: Response): Boolean = js.native
+}
+

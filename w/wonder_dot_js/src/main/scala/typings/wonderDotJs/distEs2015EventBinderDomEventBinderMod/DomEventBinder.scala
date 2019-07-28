@@ -1,0 +1,37 @@
+package typings.wonderDotJs.distEs2015EventBinderDomEventBinderMod
+
+import typings.std.HTMLElement
+import typings.wonderDotJs.distEs2015EventBinderEventBinderMod.EventBinder
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("wonder.js/dist/es2015/event/binder/DomEventBinder", "DomEventBinder")
+@js.native
+class DomEventBinder () extends EventBinder {
+  def off(): Unit = js.native
+  def off(dom: HTMLElement): Unit = js.native
+  def off(dom: HTMLElement, eventName: EEventName): Unit = js.native
+  def off(dom: HTMLElement, eventName: EEventName, handler: js.Function): Unit = js.native
+  def off(eventName: String): Unit = js.native
+  def off(eventName: String, handler: js.Function): Unit = js.native
+  def off(eventName: EEventName): Unit = js.native
+  def off(eventName: EEventName, handler: js.Function): Unit = js.native
+  def on(dom: HTMLElement, eventName: String, handler: js.Function): Unit = js.native
+  def on(dom: HTMLElement, eventName: String, handler: js.Function, priority: Double): Unit = js.native
+  def on(dom: HTMLElement, eventName: EEventName, handler: js.Function): Unit = js.native
+  def on(dom: HTMLElement, eventName: EEventName, handler: js.Function, priority: Double): Unit = js.native
+  def on(eventName: String, handler: js.Function): Unit = js.native
+  def on(eventName: String, handler: js.Function, priority: Double): Unit = js.native
+  def on(eventName: EEventName, handler: js.Function): Unit = js.native
+  def on(eventName: EEventName, handler: js.Function, priority: Double): Unit = js.native
+}
+
+/* static members */
+@JSImport("wonder.js/dist/es2015/event/binder/DomEventBinder", "DomEventBinder")
+@js.native
+object DomEventBinder extends js.Object {
+  def getInstance(): js.Any = js.native
+}
+

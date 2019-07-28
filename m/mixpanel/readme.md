@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Mixpanel 2.14
-// Project: https://mixpanel.com/, https://github.com/mixpanel/mixpanel-node
-//          https://github.com/mixpanel/mixpanel-js
-// Definitions by: Knut Eirik Leira Hjelle <https://github.com/hjellek>
-//                 Manduro <https://github.com/Manduro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Generate a unique random string.
-
-@returns A 32 character unique string. Matches the length of MD5, which is [unique enough](https://stackoverflow.com/a/2444336/64949) for non-crypto purposes.
-
-@example
-```
-import uniqueString = require('unique-string');
-
-uniqueString();
-//=> 'b4de2a49c8ffa3fbee04446f045483b2'
-```
-*/
-
-```
 

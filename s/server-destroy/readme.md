@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for server-destroy 1.0
-// Project: https://github.com/isaacs/server-destroy#readme
-// Definitions by: Gyula Szalai <https://github.com/gyszalai>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

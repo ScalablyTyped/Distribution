@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for entities 1.1
-// Project: https://github.com/fb55/entities
-// Definitions by: Alice Klipper <https://github.com/aliceklipper>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

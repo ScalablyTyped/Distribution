@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for electron-packager 14.0
-// Project: https://github.com/electron-userland/electron-packager
-// Definitions by: Maxime LUCE <https://github.com/SomaticIT>
-//                 Juan Jimenez-Anca <https://github.com/cortopy>
-//                 John Kleinschmidt <https://github.com/jkleinsc>
-//                 Brendan Forster <https://github.com/shiftkey>
-//                 Mark Lee <https://github.com/malept>
-//                 Florian Keller <https://github.com/ffflorian>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-
-```
 

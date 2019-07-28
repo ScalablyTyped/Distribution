@@ -1,0 +1,84 @@
+package typings.mapboxDashGl.mapboxDashGlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.mapboxDashGl.mapboxDashGlStrings.array
+  - typings.mapboxDashGl.mapboxDashGlStrings.boolean
+  - typings.mapboxDashGl.mapboxDashGlStrings.collator
+  - typings.mapboxDashGl.mapboxDashGlStrings.format
+  - typings.mapboxDashGl.mapboxDashGlStrings.literal
+  - typings.mapboxDashGl.mapboxDashGlStrings.number
+  - typings.mapboxDashGl.mapboxDashGlStrings.`object`
+  - typings.mapboxDashGl.mapboxDashGlStrings.string
+  - typings.mapboxDashGl.mapboxDashGlStrings.`to-boolean`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`to-color`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`to-number`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`to-string`
+  - typings.mapboxDashGl.mapboxDashGlStrings.typeof
+  - typings.mapboxDashGl.mapboxDashGlStrings.`feature-state`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`geometry-type`
+  - typings.mapboxDashGl.mapboxDashGlStrings.id
+  - typings.mapboxDashGl.mapboxDashGlStrings.`line-progress`
+  - typings.mapboxDashGl.mapboxDashGlStrings.properties
+  - typings.mapboxDashGl.mapboxDashGlStrings.at
+  - typings.mapboxDashGl.mapboxDashGlStrings.get
+  - typings.mapboxDashGl.mapboxDashGlStrings.has
+  - typings.mapboxDashGl.mapboxDashGlStrings.length
+  - typings.mapboxDashGl.mapboxDashGlStrings.`!`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`!=`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`<`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`<=`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`==`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`>`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`>=`
+  - typings.mapboxDashGl.mapboxDashGlStrings.all
+  - typings.mapboxDashGl.mapboxDashGlStrings.any
+  - typings.mapboxDashGl.mapboxDashGlStrings.`case`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`match`
+  - typings.mapboxDashGl.mapboxDashGlStrings.coalesce
+  - typings.mapboxDashGl.mapboxDashGlStrings.interpolate
+  - typings.mapboxDashGl.mapboxDashGlStrings.`interpolate-hcl`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`interpolate-lab`
+  - typings.mapboxDashGl.mapboxDashGlStrings.step
+  - typings.mapboxDashGl.mapboxDashGlStrings.let
+  - typings.mapboxDashGl.mapboxDashGlStrings.`var`
+  - typings.mapboxDashGl.mapboxDashGlStrings.concat
+  - typings.mapboxDashGl.mapboxDashGlStrings.downcase
+  - typings.mapboxDashGl.mapboxDashGlStrings.`is-supported-script`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`resolved-locale`
+  - typings.mapboxDashGl.mapboxDashGlStrings.upcase
+  - typings.mapboxDashGl.mapboxDashGlStrings.rgb
+  - typings.mapboxDashGl.mapboxDashGlStrings.rgba
+  - typings.mapboxDashGl.mapboxDashGlStrings.`-`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`*`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`/`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`%`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`_backtick^_backtick`
+  - typings.mapboxDashGl.mapboxDashGlStrings.`+`
+  - typings.mapboxDashGl.mapboxDashGlStrings.abs
+  - typings.mapboxDashGl.mapboxDashGlStrings.acos
+  - typings.mapboxDashGl.mapboxDashGlStrings.asin
+  - typings.mapboxDashGl.mapboxDashGlStrings.atan
+  - typings.mapboxDashGl.mapboxDashGlStrings.ceil
+  - typings.mapboxDashGl.mapboxDashGlStrings.cos
+  - typings.mapboxDashGl.mapboxDashGlStrings.e
+  - typings.mapboxDashGl.mapboxDashGlStrings.floor
+  - typings.mapboxDashGl.mapboxDashGlStrings.ln
+  - typings.mapboxDashGl.mapboxDashGlStrings.ln2
+  - typings.mapboxDashGl.mapboxDashGlStrings.log10
+  - typings.mapboxDashGl.mapboxDashGlStrings.log2
+  - typings.mapboxDashGl.mapboxDashGlStrings.max
+  - typings.mapboxDashGl.mapboxDashGlStrings.min
+  - typings.mapboxDashGl.mapboxDashGlStrings.pi
+  - typings.mapboxDashGl.mapboxDashGlStrings.round
+  - typings.mapboxDashGl.mapboxDashGlStrings.sin
+  - typings.mapboxDashGl.mapboxDashGlStrings.sqrt
+  - typings.mapboxDashGl.mapboxDashGlStrings.tan
+  - typings.mapboxDashGl.mapboxDashGlStrings.zoom
+  - typings.mapboxDashGl.mapboxDashGlStrings.`heatmap-density`
+*/
+trait ExpressionName extends js.Object
+

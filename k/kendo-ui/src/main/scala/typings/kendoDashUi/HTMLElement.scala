@@ -1,0 +1,20 @@
+package typings.kendoDashUi
+
+import typings.kendoDashUi.kendoNs.dataNs.BindingTarget
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HTMLElement extends js.Object {
+  var kendoBindingTarget: BindingTarget
+}
+
+object HTMLElement {
+  @scala.inline
+  def apply(kendoBindingTarget: BindingTarget): HTMLElement = {
+    val __obj = js.Dynamic.literal(kendoBindingTarget = kendoBindingTarget)
+  
+    __obj.asInstanceOf[HTMLElement]
+  }
+}
+

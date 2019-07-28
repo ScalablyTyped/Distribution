@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-dnd"
-version := "9.3.2-f2544a"
+version := "9.3.2-985661"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "dnd-core" % "9.3.2-058116",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-6a02ec",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
+  "org.scalablytyped" %%% "dnd-core" % "9.3.2-b6d170",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-0366b1",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

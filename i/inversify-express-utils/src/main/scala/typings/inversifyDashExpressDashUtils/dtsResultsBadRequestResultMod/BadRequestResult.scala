@@ -1,0 +1,21 @@
+package typings.inversifyDashExpressDashUtils.dtsResultsBadRequestResultMod
+
+import typings.inversifyDashExpressDashUtils.dtsHttpResponseMessageMod.HttpResponseMessage
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.IHttpActionResult
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BadRequestResult extends IHttpActionResult {
+  var apiController: js.Any
+}
+
+object BadRequestResult {
+  @scala.inline
+  def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): BadRequestResult = {
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync))
+  
+    __obj.asInstanceOf[BadRequestResult]
+  }
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for accounting.js 0.4
-// Project: http://openexchangerates.github.io/accounting.js/
-// Definitions by: Sergey Gerasimov <https://github.com/gerich-home>
-//                 Christopher Eck <https://github.com/chrisleck>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

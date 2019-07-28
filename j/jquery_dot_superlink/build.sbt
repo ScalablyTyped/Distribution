@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_superlink"
-version := "0.0-unknown-dt-20190322Z-469a3b"
+version := "0.0-unknown-dt-20190322Z-762550"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

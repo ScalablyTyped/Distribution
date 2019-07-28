@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for routie 0.3.2
-// Project: https://github.com/jgallen23/routie
-// Definitions by: Adilson <https://github.com/Adilson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

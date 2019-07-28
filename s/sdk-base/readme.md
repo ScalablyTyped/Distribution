@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sdk-base 3.4
-// Project: https://github.com/node-modules/sdk-base
-// Definitions by: Sang Lv <https://github.com/sang4lv>
-// TypeScript Version: 2.9.2
-/* =================== USAGE ===================
-    import Base from "sdk-base";
-    class newSDK extends Base {}
- =============================================== */
-
-
-```
 

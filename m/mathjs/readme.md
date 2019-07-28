@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mathjs 6.0
-// Project: https://mathjs.org/
-// Definitions by: Ilya Shestakov <https://github.com/siavol>,
-//                  Andy Patterson <https://github.com/andnp>,
-//                  Brad Besserman <https://github.com/bradbesserman>
-//                  Pawel Krol <https://github.com/pawkrol>
-//                  Charlee Li <https://github.com/charlee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

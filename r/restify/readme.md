@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for restify 7.2
-// Project: https://github.com/restify/node-restify, http://restify.com
-// Definitions by: Bret Little <https://github.com/blittle>
-//                 Steve Hipwell <https://github.com/stevehipwell>
-//                 Leandro Almeida <https://github.com/leanazulyoro>
-//                 Mitchell Bundy <https://github.com/mgebundy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

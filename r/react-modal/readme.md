@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-modal 3.8
-// Project: https://github.com/reactjs/react-modal
-// Definitions by: Rajab Shakirov <https://github.com/radziksh>,
-//                 Drew Noakes <https://github.com/drewnoakes>,
-//                 Thomas B Homburg <https://github.com/homburg>,
-//                 Tatu Tamminen <https://github.com/ttamminen>,
-//                 Uwe Wiemer <https://github.com/hallowatcher>,
-//                 Peter Blazejewicz <https://github.com/peterblazejewicz>,
-//                 Justin Powell <https://github.com/jpowell>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

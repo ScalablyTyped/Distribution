@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bittorrent-protocol 2.2
-// Project: https://github.com/webtorrent/bittorrent-protocol
-// Definitions by: Feross Aboukhadijeh <https://github.com/feross>, Tomasz Łaziuk <https://github.com/tlaziuk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

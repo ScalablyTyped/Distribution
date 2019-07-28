@@ -1,0 +1,11 @@
+package typings.cannon.cannonMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("cannon", "World")
+@js.native
+class World ()
+  extends typings.cannon.CANNONNs.World
+

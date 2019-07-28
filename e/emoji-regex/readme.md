@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for emoji-regex 8.0
-// Project: https://github.com/mathiasbynens/emoji-regex, https://mths.be/emoji-regex
-// Definitions by: iKBAHT <https://github.com/iKBAHT>
-//                 Ifiok Jr. <https://github.com/ifiokjr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,32 @@
+package typings.mfiles
+
+import typings.mfiles.MFilesNs.MFPermission
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IAccessControlEntry extends js.Object {
+  var ChangePermissionsPermission: MFPermission
+  var EditPermission: MFPermission
+  var IsGroup: Boolean
+  var ReadPermission: MFPermission
+  var UserOrGroupID: Double
+  def Clone(): IAccessControlEntry
+}
+
+object IAccessControlEntry {
+  @scala.inline
+  def apply(
+    ChangePermissionsPermission: MFPermission,
+    Clone: () => IAccessControlEntry,
+    EditPermission: MFPermission,
+    IsGroup: Boolean,
+    ReadPermission: MFPermission,
+    UserOrGroupID: Double
+  ): IAccessControlEntry = {
+    val __obj = js.Dynamic.literal(ChangePermissionsPermission = ChangePermissionsPermission, Clone = js.Any.fromFunction0(Clone), EditPermission = EditPermission, IsGroup = IsGroup, ReadPermission = ReadPermission, UserOrGroupID = UserOrGroupID)
+  
+    __obj.asInstanceOf[IAccessControlEntry]
+  }
+}
+

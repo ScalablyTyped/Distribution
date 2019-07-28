@@ -1,0 +1,21 @@
+package typings.googlemaps.googleNs.mapsNs.visualizationNs
+
+import typings.googlemaps.googleNs.mapsNs.LatLng
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait WeightedLocation extends js.Object {
+  var location: LatLng
+  var weight: Double
+}
+
+object WeightedLocation {
+  @scala.inline
+  def apply(location: LatLng, weight: Double): WeightedLocation = {
+    val __obj = js.Dynamic.literal(location = location, weight = weight)
+  
+    __obj.asInstanceOf[WeightedLocation]
+  }
+}
+

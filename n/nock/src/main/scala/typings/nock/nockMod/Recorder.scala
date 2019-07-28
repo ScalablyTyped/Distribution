@@ -1,0 +1,15 @@
+package typings.nock.nockMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Recorder extends js.Object {
+  def clear(): Unit = js.native
+  def play(): js.Array[NockDefinition | String] = js.native
+  def rec(): Unit = js.native
+  def rec(options: Boolean): Unit = js.native
+  def rec(options: RecorderOptions): Unit = js.native
+}
+

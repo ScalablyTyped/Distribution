@@ -1,0 +1,19 @@
+package typings.vsoDashNodeDashApi
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_EnumValuesAnonAsRequirements extends js.Object {
+  var enumValues: Anon_AsRequirements
+}
+
+object Anon_EnumValuesAnonAsRequirements {
+  @scala.inline
+  def apply(enumValues: Anon_AsRequirements): Anon_EnumValuesAnonAsRequirements = {
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
+    __obj.asInstanceOf[Anon_EnumValuesAnonAsRequirements]
+  }
+}
+

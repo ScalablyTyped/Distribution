@@ -1,0 +1,14 @@
+package typings.reactDashNativeDashSnackbarDashComponent
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashSnackbarDashComponent.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashSnackbarDashComponentComponents extends reactDashNativeDashSnackbarDashComponentProps {
+  @scala.inline
+  def ReactDashNativeDashSnackbarDashComponent: ComponentType[SnackbarComponentProps] = js.constructorOf[typings.reactDashNativeDashSnackbarDashComponent.reactDashNativeDashSnackbarDashComponentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSnackbarDashComponent.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps]]
+}
+

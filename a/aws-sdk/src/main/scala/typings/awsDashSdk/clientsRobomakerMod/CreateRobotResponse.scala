@@ -1,0 +1,54 @@
+package typings.awsDashSdk.clientsRobomakerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreateRobotResponse extends js.Object {
+  /**
+    * The target architecture of the robot.
+    */
+  var architecture: js.UndefOr[Architecture] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the robot.
+    */
+  var arn: js.UndefOr[Arn] = js.undefined
+  /**
+    * The time, in milliseconds since the epoch, when the robot was created.
+    */
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the Greengrass group associated with the robot.
+    */
+  var greengrassGroupId: js.UndefOr[Id] = js.undefined
+  /**
+    * The name of the robot.
+    */
+  var name: js.UndefOr[Name] = js.undefined
+  /**
+    * The list of all tags added to the robot.
+    */
+  var tags: js.UndefOr[TagMap] = js.undefined
+}
+
+object CreateRobotResponse {
+  @scala.inline
+  def apply(
+    architecture: Architecture = null,
+    arn: Arn = null,
+    createdAt: CreatedAt = null,
+    greengrassGroupId: Id = null,
+    name: Name = null,
+    tags: TagMap = null
+  ): CreateRobotResponse = {
+    val __obj = js.Dynamic.literal()
+    if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    if (greengrassGroupId != null) __obj.updateDynamic("greengrassGroupId")(greengrassGroupId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[CreateRobotResponse]
+  }
+}
+

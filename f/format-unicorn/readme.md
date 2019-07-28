@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for format-unicorn 1.1
-// Project: https://github.com/tallesl/node-format-unicorn
-// Definitions by: kruncher <https://github.com/kruncher>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

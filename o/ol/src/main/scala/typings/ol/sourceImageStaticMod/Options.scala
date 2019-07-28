@@ -1,0 +1,43 @@
+package typings.ol.sourceImageStaticMod
+
+import typings.ol.extentMod.Extent
+import typings.ol.imageMod.LoadFunction
+import typings.ol.projMod.ProjectionLike
+import typings.ol.sizeMod.Size
+import typings.ol.sourceSourceMod.AttributionLike
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
+  var crossOrigin: js.UndefOr[String] = js.undefined
+  var imageExtent: js.UndefOr[Extent] = js.undefined
+  var imageLoadFunction: js.UndefOr[LoadFunction] = js.undefined
+  var imageSize: js.UndefOr[Size] = js.undefined
+  var projection: js.UndefOr[ProjectionLike] = js.undefined
+  var url: String
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    url: String,
+    attributions: AttributionLike = null,
+    crossOrigin: String = null,
+    imageExtent: Extent = null,
+    imageLoadFunction: LoadFunction = null,
+    imageSize: Size = null,
+    projection: ProjectionLike = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (imageExtent != null) __obj.updateDynamic("imageExtent")(imageExtent)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

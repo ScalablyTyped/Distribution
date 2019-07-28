@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for d3-delaunay 4.1
-// Project: https://github.com/d3/d3-delaunay
-// Definitions by: Bradley Odell <https://github.com/BTOdell>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Delaunay triangulation
- */
-
-```
 

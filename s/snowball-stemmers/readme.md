@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for snowball-stemmers 0.6
-// Project: https://github.com/mazko/jssnowball#readme
-// Definitions by: Ryan Volum <https://github.com/ryanvolum>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

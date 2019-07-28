@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-emoji 1.8
-// Project: https://github.com/omnidan/node-emoji#readme
-// Definitions by: Tristan Jones <https://github.com/jonestristand>
-//                 styu <https://github.com/styu>
-//                 rimiti <https://github.com/rimiti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

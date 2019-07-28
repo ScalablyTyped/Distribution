@@ -1,0 +1,19 @@
+package typings.consul
+
+import typings.consul.consulMod.Callback
+import typings.consul.consulMod.CatalogNs.ServiceNs.ListOptions
+import typings.consul.consulMod.Thenable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Fn_CallbackDcOpts extends js.Object {
+  def apply[TData](): Thenable[TData] = js.native
+  def apply[TData](callback: Callback[TData]): Unit = js.native
+  def apply[TData](dc: String): Thenable[TData] = js.native
+  def apply[TData](dc: String, callback: Callback[TData]): Unit = js.native
+  def apply[TData](opts: ListOptions): Thenable[TData] = js.native
+  def apply[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
+}
+

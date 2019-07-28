@@ -1,0 +1,70 @@
+package typings.openjscad
+
+import typings.openjscad.CAGNs.Side
+import typings.openjscad.CSGNs.ICircleOptions
+import typings.openjscad.CSGNs.IRectangleOptions
+import typings.openjscad.CSGNs.Matrix4x4
+import typings.openjscad.CSGNs.OrthoNormalBasis
+import typings.openjscad.CSGNs.Path2D
+import typings.openjscad.CSGNs.Polygon
+import typings.openjscad.CSGNs.Vector2D
+import typings.openjscad.CSGNs.Vector3D
+import typings.std.Blob
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("CAG")
+@js.native
+class CAG ()
+  extends CxG
+     with ICenter {
+  var isCanonicalized: Boolean = js.native
+  var sides: js.Array[Side] = js.native
+  def _toCSGWall(z0: js.Any, z1: js.Any): CSG = js.native
+  def _toPlanePolygons(options: js.Any): js.Array[Polygon] = js.native
+  def _toVector3DPairs(m: Matrix4x4): js.Array[js.Array[Vector3D]] = js.native
+  def _toWallPolygons(options: js.Any): js.Array[_] = js.native
+  def area(): Double = js.native
+  def canonicalized(): CAG = js.native
+  /* CompleteClass */
+  override def center(cAxes: js.Array[String]): CxG = js.native
+  def check(): Unit = js.native
+  def contract(radius: Double, resolution: Double): CAG = js.native
+  def expand(radius: Double, resolution: Double): CAG = js.native
+  def expandedShell(radius: Double, resolution: Double): CAG = js.native
+  def extrude(options: CAG_extrude_options): CSG = js.native
+  def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double): CSG = js.native
+  def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double, options: js.Any): CSG = js.native
+  def extrudeInPlane(axis1: js.Any, axis2: js.Any, depth: js.Any, options: js.Any): CSG = js.native
+  def flipped(): CAG = js.native
+  def getOutlinePaths(): js.Array[Path2D] = js.native
+  def intersect(cag: js.Array[CAG]): CAG = js.native
+  def intersect(cag: CAG): CAG = js.native
+  def isSelfIntersecting(): Boolean = js.native
+  def overCutInsideCorners(cutterradius: js.Any): CAG = js.native
+  def rotateExtrude(options: js.Any): CSG = js.native
+  def subtract(cag: js.Array[CAG]): CAG = js.native
+  def subtract(cag: CAG): CAG = js.native
+  def toCompactBinary(): Anon_ClassSideVertexIndices = js.native
+  def toDxf(): Blob = js.native
+  def union(cag: js.Array[CAG]): CAG = js.native
+  def union(cag: CAG): CAG = js.native
+}
+
+/* static members */
+@JSGlobal("CAG")
+@js.native
+object CAG extends js.Object {
+  def PathsToDxf(paths: js.Array[Path2D]): Blob = js.native
+  def circle(options: ICircleOptions): CAG = js.native
+  def fromCompactBinary(bin: js.Any): CAG = js.native
+  def fromFakeCSG(csg: CSG): CAG = js.native
+  def fromPoints(points: js.Array[Vector2D]): CAG = js.native
+  def fromPointsNoCheck(points: js.Array[Vector2D]): CAG = js.native
+  def fromSides(sides: js.Array[Side]): CAG = js.native
+  def linesIntersect(p0start: Vector2D, p0end: Vector2D, p1start: Vector2D, p1end: Vector2D): Boolean = js.native
+  def rectangle(options: IRectangleOptions): CAG = js.native
+  def roundedRectangle(options: js.Any): CAG = js.native
+}
+

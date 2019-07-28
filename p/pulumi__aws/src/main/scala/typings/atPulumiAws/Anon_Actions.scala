@@ -1,0 +1,20 @@
+package typings.atPulumiAws
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Actions extends js.Object {
+  var actions: js.Array[Anon_Category]
+  var name: String
+}
+
+object Anon_Actions {
+  @scala.inline
+  def apply(actions: js.Array[Anon_Category], name: String): Anon_Actions = {
+    val __obj = js.Dynamic.literal(actions = actions, name = name)
+  
+    __obj.asInstanceOf[Anon_Actions]
+  }
+}
+

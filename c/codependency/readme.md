@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for codependency 0.1
-// Project: https://github.com/Wizcorp/codependency
-// Definitions by: Morgan Benton <https://github.com/morphatic>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

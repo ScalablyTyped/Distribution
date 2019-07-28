@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jschannel 1.0
-// Project: https://github.com/yochannah/jschannel
-// Definitions by: Yitzchok Gottlieb <https://github.com/yitzchok>
-//                 McFlat <https://github.com/McFlat>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

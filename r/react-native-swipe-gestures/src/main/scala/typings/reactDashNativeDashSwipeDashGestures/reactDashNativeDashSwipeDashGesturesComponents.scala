@@ -1,0 +1,14 @@
+package typings.reactDashNativeDashSwipeDashGestures
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashSwipeDashGesturesComponents extends reactDashNativeDashSwipeDashGesturesProps {
+  @scala.inline
+  def ReactDashNativeDashSwipeDashGestures: ComponentType[GestureRecognizerProps] = js.constructorOf[typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps]]
+}
+

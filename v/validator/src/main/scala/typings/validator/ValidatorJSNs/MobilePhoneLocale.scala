@@ -1,0 +1,69 @@
+package typings.validator.ValidatorJSNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.validator.validatorStrings.`ar-AE`
+  - typings.validator.validatorStrings.`ar-DZ`
+  - typings.validator.validatorStrings.`ar-EG`
+  - typings.validator.validatorStrings.`ar-JO`
+  - typings.validator.validatorStrings.`ar-SA`
+  - typings.validator.validatorStrings.`ar-SY`
+  - typings.validator.validatorStrings.`be-BY`
+  - typings.validator.validatorStrings.`bg-BG`
+  - typings.validator.validatorStrings.`cs-CZ`
+  - typings.validator.validatorStrings.`de-DE`
+  - typings.validator.validatorStrings.`da-DK`
+  - typings.validator.validatorStrings.`el-GR`
+  - typings.validator.validatorStrings.`en-AU`
+  - typings.validator.validatorStrings.`en-GB`
+  - typings.validator.validatorStrings.`en-HK`
+  - typings.validator.validatorStrings.`en-IN`
+  - typings.validator.validatorStrings.`en-KE`
+  - typings.validator.validatorStrings.`en-NG`
+  - typings.validator.validatorStrings.`en-NZ`
+  - typings.validator.validatorStrings.`en-UG`
+  - typings.validator.validatorStrings.`en-RW`
+  - typings.validator.validatorStrings.`en-SG`
+  - typings.validator.validatorStrings.`en-TZ`
+  - typings.validator.validatorStrings.`en-PK`
+  - typings.validator.validatorStrings.`en-US`
+  - typings.validator.validatorStrings.`en-CA`
+  - typings.validator.validatorStrings.`en-ZA`
+  - typings.validator.validatorStrings.`en-ZM`
+  - typings.validator.validatorStrings.`es-ES`
+  - typings.validator.validatorStrings.`fa-IR`
+  - typings.validator.validatorStrings.`fi-FI`
+  - typings.validator.validatorStrings.`fo-FO`
+  - typings.validator.validatorStrings.`fr-FR`
+  - typings.validator.validatorStrings.`he-IL`
+  - typings.validator.validatorStrings.`hu-HU`
+  - typings.validator.validatorStrings.`id-ID`
+  - typings.validator.validatorStrings.`it-IT`
+  - typings.validator.validatorStrings.`ja-JP`
+  - typings.validator.validatorStrings.`kk-KZ`
+  - typings.validator.validatorStrings.`kl-GL`
+  - typings.validator.validatorStrings.`ko-KR`
+  - typings.validator.validatorStrings.`lt-LT`
+  - typings.validator.validatorStrings.`ms-MY`
+  - typings.validator.validatorStrings.`nb-NO`
+  - typings.validator.validatorStrings.`nn-NO`
+  - typings.validator.validatorStrings.`pl-PL`
+  - typings.validator.validatorStrings.`pt-PT`
+  - typings.validator.validatorStrings.`ro-RO`
+  - typings.validator.validatorStrings.`ru-RU`
+  - typings.validator.validatorStrings.`sk-SK`
+  - typings.validator.validatorStrings.`sr-RS`
+  - typings.validator.validatorStrings.`th-TH`
+  - typings.validator.validatorStrings.`tr-TR`
+  - typings.validator.validatorStrings.`uk-UA`
+  - typings.validator.validatorStrings.`vi-VN`
+  - typings.validator.validatorStrings.`zh-CN`
+  - typings.validator.validatorStrings.`zh-HK`
+  - typings.validator.validatorStrings.`zh-TW`
+  - typings.validator.validatorStrings.any
+*/
+trait MobilePhoneLocale extends js.Object
+

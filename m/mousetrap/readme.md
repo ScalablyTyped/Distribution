@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Mousetrap 1.6.x
-// Project: http://craig.is/killing/mice
-// Definitions by: Dániel Tar <https://github.com/qcz>, Alan Choi <https://github.com/alanhchoi>, Nic Barker <https://github.com/nicbarker>, Mitsuka Hanakura a.k.a ragg <https://github.com/ra-gg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

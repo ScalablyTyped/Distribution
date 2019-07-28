@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for better-queue 3.8
-// Project: https://github.com/diamondio/better-queue
-// Definitions by: Ostap Nagovitsyn <https://github.com/maozedong>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-/* =================== USAGE ===================
-    import * as Queue from "better-queue";
-    var queue = new Queue(...);
- =============================================== */
-
-
-```
 

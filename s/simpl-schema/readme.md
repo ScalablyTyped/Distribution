@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for simpl-schema 0.2
-// Project: https://github.com/aldeed/simple-schema-js, https://github.com/aldeed/node-simple-schema
-// Definitions by: Andreas Richter <https://github.com/arichter83>
-//                 Qkramer <https://github.com/Qkramer>
-//                 Deskoh <https://github.com/deskoh>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

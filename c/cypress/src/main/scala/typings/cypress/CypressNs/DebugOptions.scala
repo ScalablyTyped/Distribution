@@ -1,0 +1,19 @@
+package typings.cypress.CypressNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DebugOptions extends js.Object {
+  var verbose: Boolean
+}
+
+object DebugOptions {
+  @scala.inline
+  def apply(verbose: Boolean): DebugOptions = {
+    val __obj = js.Dynamic.literal(verbose = verbose)
+  
+    __obj.asInstanceOf[DebugOptions]
+  }
+}
+

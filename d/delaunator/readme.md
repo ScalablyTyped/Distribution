@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for delaunator 3.0
-// Project: https://github.com/mapbox/delaunator#readme
-// Definitions by: Denis Carriere <https://github.com/DenisCarriere>
-//                 Bradley Odell <https://github.com/BTOdell>
-//                 Tobias Kraus <https://github.com/tobiaskraus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.7
-
-```
 

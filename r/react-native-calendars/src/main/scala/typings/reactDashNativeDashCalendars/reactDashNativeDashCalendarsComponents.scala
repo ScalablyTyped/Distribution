@@ -1,0 +1,23 @@
+package typings.reactDashNativeDashCalendars
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.AgendaProps
+import typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarBaseProps
+import typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarListBaseProps
+import typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarMarkingProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashCalendarsComponents extends reactDashNativeDashCalendarsProps {
+  @scala.inline
+  def Agenda[TItem]: ComponentType[AgendaProps[TItem] with CalendarMarkingProps] = js.constructorOf[typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.Agenda[TItem]].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.AgendaProps[TItem] with typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarMarkingProps]]
+  @scala.inline
+  def Calendar: ComponentType[CalendarMarkingProps with CalendarBaseProps] = js.constructorOf[typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarMarkingProps with typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarBaseProps]]
+  @scala.inline
+  def CalendarList: ComponentType[CalendarMarkingProps with CalendarListBaseProps] = js.constructorOf[typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarList].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarMarkingProps with typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.CalendarListBaseProps]]
+}
+

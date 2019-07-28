@@ -1,0 +1,33 @@
+package typings.googleDashAppsDashScript.GoogleAppsScriptNs.ContentNs.SchemaNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AccountUser extends js.Object {
+  var admin: js.UndefOr[Boolean] = js.undefined
+  var emailAddress: js.UndefOr[String] = js.undefined
+  var orderManager: js.UndefOr[Boolean] = js.undefined
+  var paymentsAnalyst: js.UndefOr[Boolean] = js.undefined
+  var paymentsManager: js.UndefOr[Boolean] = js.undefined
+}
+
+object AccountUser {
+  @scala.inline
+  def apply(
+    admin: js.UndefOr[Boolean] = js.undefined,
+    emailAddress: String = null,
+    orderManager: js.UndefOr[Boolean] = js.undefined,
+    paymentsAnalyst: js.UndefOr[Boolean] = js.undefined,
+    paymentsManager: js.UndefOr[Boolean] = js.undefined
+  ): AccountUser = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (!js.isUndefined(orderManager)) __obj.updateDynamic("orderManager")(orderManager)
+    if (!js.isUndefined(paymentsAnalyst)) __obj.updateDynamic("paymentsAnalyst")(paymentsAnalyst)
+    if (!js.isUndefined(paymentsManager)) __obj.updateDynamic("paymentsManager")(paymentsManager)
+    __obj.asInstanceOf[AccountUser]
+  }
+}
+

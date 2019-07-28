@@ -31,40 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for swagger-node-runner 0.6
-// Project: https://github.com/theganyo/swagger-node-runner
-// Definitions by: Michael Mrowetz <https://github.com/micmro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-/* =================== USAGE ===================
-
-import * as SwaggerNodeRunner from "swagger-node-runner";
-import * as express from "express";
-
-let app = express();
-let config = {
-        appRoot: __dirname
-};
-
-SwaggerNodeRunner.create(config, (err, runner) => {
-        if (err) {
-                throw err; // or handle error
-        }
-        let middleware = runner.expressMiddleware();
-        middleware.register(app);
-
-        const port = process.env.PORT || 10010;
-        app.listen(port);
-
-        console.log('try this:\ncurl http://127.0.0.1:' + port + '/v1/hello?name=Scott');
-});
-
- =============================================== */
-
-
-```
 

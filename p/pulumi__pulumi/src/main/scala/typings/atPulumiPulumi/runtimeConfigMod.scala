@@ -1,0 +1,15 @@
+package typings.atPulumiPulumi
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/pulumi/runtime/config", JSImport.Namespace)
+@js.native
+object runtimeConfigMod extends js.Object {
+  def allConfig(): StringDictionary[String] = js.native
+  def getConfig(k: String): js.UndefOr[String] = js.native
+  def setConfig(k: String, v: String): Unit = js.native
+}
+

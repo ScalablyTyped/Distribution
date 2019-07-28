@@ -1,0 +1,21 @@
+package typings.xterm.xtermMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IMarker extends IDisposable {
+  val id: Double
+  val isDisposed: Boolean
+  val line: Double
+}
+
+object IMarker {
+  @scala.inline
+  def apply(dispose: () => Unit, id: Double, isDisposed: Boolean, line: Double): IMarker = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), id = id, isDisposed = isDisposed, line = line)
+  
+    __obj.asInstanceOf[IMarker]
+  }
+}
+

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for highlight.js v9.12
-// Project: https://github.com/isagalaev/highlight.js
-// Definitions by: Niklas Mollenhauer <https://github.com/nikeee>
-//                 Jeremy Hull <https://github.com/sourrust>
-//                 Josh Goldberg <https://github.com/joshuakgoldberg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

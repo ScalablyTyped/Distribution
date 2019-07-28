@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Enumeration of calendar months.
- *
- * Note that the enum values are numbers (with January as `0`) so they can be
- * easily compared to `date.getMonth()`.
- */
-
-```
 

@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get the real path of the system temp directory.
-
-@example
-```
-import * as os from 'os';
-import tempDirectory = require('temp-dir');
-
-console.log(tempDirectory);
-//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T'
-
-console.log(os.tmpdir());
-//=> '/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T' // <= Symlink
-```
-*/
-
-```
 

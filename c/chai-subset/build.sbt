@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-subset"
-version := "1.3-dt-20190212Z-cb5db2"
+version := "1.3-dt-20190212Z-f42390"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

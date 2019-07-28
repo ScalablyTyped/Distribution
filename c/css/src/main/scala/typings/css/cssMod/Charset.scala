@@ -1,0 +1,26 @@
+package typings.css.cssMod
+
+import typings.css.Anon_Content
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Charset
+  extends Node
+     with AtRule {
+  /** The part following @charset. */
+  var charset: js.UndefOr[String] = js.undefined
+}
+
+object Charset {
+  @scala.inline
+  def apply(charset: String = null, parent: Node = null, position: Anon_Content = null, `type`: String = null): Charset = {
+    val __obj = js.Dynamic.literal()
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Charset]
+  }
+}
+

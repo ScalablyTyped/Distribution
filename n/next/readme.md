@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for next 8.0
-// Project: https://github.com/zeit/next.js/packages/next, https://nextjs.org
-// Definitions by: Drew Hays <https://github.com/dru89>
-//                 Brice BERNARD <https://github.com/brikou>
-//                 James Hegedus <https://github.com/jthegedus>
-//                 Resi Respati <https://github.com/resir014>
-//                 Scott Jones <https://github.com/scottdj92>
-//                 Joao Vieira <https://github.com/joaovieira>
-//                 AJ Livingston <https://github.com/ajliv>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

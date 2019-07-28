@@ -1,0 +1,55 @@
+package typings.fundamentalDashReact.libMultiInputMultiInputMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.fundamentalDashReact.Anon_ImageLabel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MultiInputProps
+  extends /* x */ StringDictionary[js.Any] {
+  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
+  var compact: js.UndefOr[Boolean] = js.undefined
+  /* Collection of items to display in the list. */
+  var data: js.Array[String | Double | js.Array[String]]
+  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var listProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var localizedText: js.UndefOr[Anon_ImageLabel] = js.undefined
+  /* Localized placeholder text of the input. */
+  var placeHolder: js.UndefOr[String] = js.undefined
+  /* Additional props to be spread to the tags `<div>` element. */
+  var tagProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  /* Callback function when a tag is added or removed. Returns array of tags selected. */
+  def onTagsUpdate(tags: js.Array[String]): Unit
+}
+
+object MultiInputProps {
+  @scala.inline
+  def apply(
+    data: js.Array[String | Double | js.Array[String]],
+    onTagsUpdate: js.Array[String] => Unit,
+    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    buttonProps: StringDictionary[js.Any] = null,
+    className: String = null,
+    compact: js.UndefOr[Boolean] = js.undefined,
+    inputProps: StringDictionary[js.Any] = null,
+    listProps: StringDictionary[js.Any] = null,
+    localizedText: Anon_ImageLabel = null,
+    placeHolder: String = null,
+    tagProps: StringDictionary[js.Any] = null
+  ): MultiInputProps = {
+    val __obj = js.Dynamic.literal(data = data, onTagsUpdate = js.Any.fromFunction1(onTagsUpdate))
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps)
+    __obj.asInstanceOf[MultiInputProps]
+  }
+}
+

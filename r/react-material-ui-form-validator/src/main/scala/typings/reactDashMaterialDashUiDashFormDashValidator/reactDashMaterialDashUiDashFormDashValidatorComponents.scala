@@ -1,0 +1,23 @@
+package typings.reactDashMaterialDashUiDashFormDashValidator
+
+import typings.materialDashUi.underscoreUnderscoreMaterialUINs.TextFieldProps
+import typings.react.reactMod.ComponentType
+import typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashMaterialDashUiDashFormDashValidatorComponents extends reactDashMaterialDashUiDashFormDashValidatorProps {
+  @scala.inline
+  def TextValidator: ComponentType[ValidatorComponentProps with TextFieldProps] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.TextValidator].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with typings.materialDashUi.underscoreUnderscoreMaterialUINs.TextFieldProps]]
+  @scala.inline
+  def ValidatorComponent: ComponentType[ValidatorComponentProps with TextFieldProps] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponent].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with typings.materialDashUi.underscoreUnderscoreMaterialUINs.TextFieldProps]]
+  @scala.inline
+  def ValidatorForm: ComponentType[
+    typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
+  ] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps]]
+}
+

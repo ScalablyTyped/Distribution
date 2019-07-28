@@ -1,0 +1,14 @@
+package typings.reactDashNative.reactDashNativeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNative.reactDashNativeStrings.notification
+  - typings.reactDashNative.reactDashNativeStrings.localNotification
+  - typings.reactDashNative.reactDashNativeStrings.register
+  - typings.reactDashNative.reactDashNativeStrings.registrationError
+*/
+trait PushNotificationEventName extends js.Object
+

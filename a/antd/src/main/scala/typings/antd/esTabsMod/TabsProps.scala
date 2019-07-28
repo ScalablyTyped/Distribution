@@ -1,0 +1,104 @@
+package typings.antd.esTabsMod
+
+import typings.antd.Anon_InkBar
+import typings.antd.antdStrings.add
+import typings.antd.antdStrings.large
+import typings.antd.antdStrings.remove
+import typings.antd.antdStrings.small
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ComponentClass
+import typings.react.reactMod.ComponentState
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TabsProps extends js.Object {
+  var activeKey: js.UndefOr[String] = js.undefined
+  var animated: js.UndefOr[Boolean | Anon_InkBar] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
+  var defaultActiveKey: js.UndefOr[String] = js.undefined
+  var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
+  var hideAdd: js.UndefOr[Boolean] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
+  var onEdit: js.UndefOr[
+    js.Function2[
+      /* targetKey */ String | (MouseEvent[HTMLElement, NativeMouseEvent]), 
+      /* action */ add | remove, 
+      Unit
+    ]
+  ] = js.undefined
+  var onNextClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+  var onPrevClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+  var onTabClick: js.UndefOr[js.Function] = js.undefined
+  var prefixCls: js.UndefOr[String] = js.undefined
+  var renderTabBar: js.UndefOr[
+    js.Function2[
+      /* props */ TabsProps, 
+      /* DefaultTabBar */ ComponentClass[_, ComponentState], 
+      ReactElement
+    ]
+  ] = js.undefined
+  var size: js.UndefOr[large | typings.antd.antdStrings.default | small] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  var tabBarExtraContent: js.UndefOr[ReactNode | Null] = js.undefined
+  var tabBarGutter: js.UndefOr[Double] = js.undefined
+  var tabBarStyle: js.UndefOr[CSSProperties] = js.undefined
+  var tabPosition: js.UndefOr[TabsPosition] = js.undefined
+  var `type`: js.UndefOr[TabsType] = js.undefined
+}
+
+object TabsProps {
+  @scala.inline
+  def apply(
+    activeKey: String = null,
+    animated: Boolean | Anon_InkBar = null,
+    className: String = null,
+    defaultActiveKey: String = null,
+    destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined,
+    hideAdd: js.UndefOr[Boolean] = js.undefined,
+    onChange: /* activeKey */ String => Unit = null,
+    onEdit: (/* targetKey */ String | (MouseEvent[HTMLElement, NativeMouseEvent]), /* action */ add | remove) => Unit = null,
+    onNextClick: MouseEventHandler[HTMLElement] = null,
+    onPrevClick: MouseEventHandler[HTMLElement] = null,
+    onTabClick: js.Function = null,
+    prefixCls: String = null,
+    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ ComponentClass[_, ComponentState]) => ReactElement = null,
+    size: large | typings.antd.antdStrings.default | small = null,
+    style: CSSProperties = null,
+    tabBarExtraContent: ReactNode = null,
+    tabBarGutter: Int | Double = null,
+    tabBarStyle: CSSProperties = null,
+    tabPosition: TabsPosition = null,
+    `type`: TabsType = null
+  ): TabsProps = {
+    val __obj = js.Dynamic.literal()
+    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
+    if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
+    if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane)
+    if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))
+    if (onNextClick != null) __obj.updateDynamic("onNextClick")(onNextClick)
+    if (onPrevClick != null) __obj.updateDynamic("onPrevClick")(onPrevClick)
+    if (onTabClick != null) __obj.updateDynamic("onTabClick")(onTabClick)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction2(renderTabBar))
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
+    if (tabBarGutter != null) __obj.updateDynamic("tabBarGutter")(tabBarGutter.asInstanceOf[js.Any])
+    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle)
+    if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TabsProps]
+  }
+}
+

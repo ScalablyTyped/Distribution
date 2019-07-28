@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for NeDB 1.8
-// Project: https://github.com/louischatriot/nedb
-// Definitions by: Stefan Steinhart <https://github.com/reppners>
-//                 Anthony Nichols <https://github.com/anthonynichols>
-//                 Alejandro Fernandez Haro <https://github.com/afharo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

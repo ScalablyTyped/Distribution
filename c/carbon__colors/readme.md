@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @carbon/colors 0.0
-// Project: https://github.com/IBM/carbon-elements/tree/master/packages/colors
-// Definitions by: Vince Picone <https://github.com/vpicone>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "container-query-toolkit"
-version := "0.1.3-c1b2a8"
+version := "0.1.3-b32164"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

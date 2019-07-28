@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for countdown.js
-// Project: http://countdownjs.org/
-// Definitions by: Gabriel Juchault <https://github.com/gjuchault>, Ionaru <https://github.com/Ionaru>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

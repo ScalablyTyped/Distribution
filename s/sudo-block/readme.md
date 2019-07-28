@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Block users from running your app with root permissions. When a file containing this function is run with root permissions it will exit and show an error message telling the user how to fix the problem, so they don't have to run it with `sudo`.
-
-@param message - Custom message.
-
-@example
-```
-import sudoBlock = require('sudo-block');
-
-sudoBlock();
-```
-*/
-
-```
 

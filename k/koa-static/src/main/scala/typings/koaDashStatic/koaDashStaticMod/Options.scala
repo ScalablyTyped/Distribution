@@ -1,0 +1,47 @@
+package typings.koaDashStatic.koaDashStaticMod
+
+import typings.koaDashSend.koaDashSendMod.SendOptions
+import typings.koaDashSend.koaDashSendMod.SetHeaders
+import typings.koaDashSend.koaDashSendNumbers.`false`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends SendOptions {
+  /** If true, serves after return next(), allowing any downstream middleware to respond first. */
+  var defer: js.UndefOr[Boolean] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    brotli: js.UndefOr[Boolean] = js.undefined,
+    defer: js.UndefOr[Boolean] = js.undefined,
+    extensions: js.Array[String] | `false` = null,
+    format: js.UndefOr[Boolean] = js.undefined,
+    gzip: js.UndefOr[Boolean] = js.undefined,
+    hidden: js.UndefOr[Boolean] = js.undefined,
+    immutable: js.UndefOr[Boolean] = js.undefined,
+    index: String | `false` = null,
+    maxAge: Int | Double = null,
+    maxage: Int | Double = null,
+    root: String = null,
+    setHeaders: SetHeaders = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(brotli)) __obj.updateDynamic("brotli")(brotli)
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-request 3.1
-// Project: https://github.com/jamesplease/react-request
-// Definitions by: Danny Cochran <https://github.com/dannycochran>
-//                 Angus Fretwell <https://github.com/angusfretwell>
-//                 Jonathan Ly <https://github.com/jonathanly>
-//                 Alberto Juan <https://github.com/albertojuanl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-
-```
 

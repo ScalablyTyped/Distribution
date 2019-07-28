@@ -1,0 +1,33 @@
+package typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod
+
+import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.insert
+import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.replace
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Insert_Replace extends AST {
+  var columns: js.Array[String] | Null
+  var db: String | Null
+  var table: String
+  var `type`: replace | insert
+  var values: js.Array[InsertReplaceValue]
+}
+
+object Insert_Replace {
+  @scala.inline
+  def apply(
+    table: String,
+    `type`: replace | insert,
+    values: js.Array[InsertReplaceValue],
+    columns: js.Array[String] = null,
+    db: String = null
+  ): Insert_Replace = {
+    val __obj = js.Dynamic.literal(table = table, values = values)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (db != null) __obj.updateDynamic("db")(db)
+    __obj.asInstanceOf[Insert_Replace]
+  }
+}
+

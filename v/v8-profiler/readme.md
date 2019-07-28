@@ -30,19 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for v8-profiler
-// Project: https://github.com/node-inspector/v8-profiler
-// Definitions by: York Yao <https://github.com/plantain-00/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/* =================== USAGE ===================
-    import * as profiler from "v8-profiler";
-    profiler.startProfiling();
- =============================================== */
-
-
-```
 

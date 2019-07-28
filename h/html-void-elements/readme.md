@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for html-void-elements 1.0
-// Project: https://github.com/wooorm/html-void-elements
-// Definitions by: rhysd <https://github.com/rhysd>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

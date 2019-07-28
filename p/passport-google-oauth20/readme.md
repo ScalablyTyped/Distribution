@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for passport-google-oauth 2.0
-// Project: https://github.com/jaredhanson/passport-google-oauth2
-// Definitions by: Yasunori Ohoka <https://github.com/yasupeke>
-//                 Eduard Zintz <https://github.com/ezintz>
-//                 Tan Nguyen <https://github.com/ngtan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -1,0 +1,50 @@
+package typings.chromeDashApps.chromeNs.systemNs.storageNs
+
+import typings.chromeDashApps.Anon_FAILURE
+import typings.chromeDashApps.chromeDashAppsStrings.failure
+import typings.chromeDashApps.chromeDashAppsStrings.in_use
+import typings.chromeDashApps.chromeDashAppsStrings.no_such_device
+import typings.chromeDashApps.chromeDashAppsStrings.success
+import typings.chromeDashApps.chromeNs.ToStringLiteral
+import typings.std.Exclude
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("chrome.system.storage")
+@js.native
+object ^ extends js.Object {
+  /** Fired when a new removable storage is attached to the system. */
+  val onAttached: typings.chromeDashApps.chromeNs.eventsNs.Event[js.Function1[/* info */ StorageUnitInfo, Unit]] = js.native
+  /** Fired when a removable storage is detached from the system. */
+  val onDetached: typings.chromeDashApps.chromeNs.eventsNs.Event[js.Function1[/* id */ String, Unit]] = js.native
+  /**
+    * Ejects a removable storage device.
+    * @param callback
+    * Parameter **result**:
+    *
+    * **success:** The ejection command is successful -- the application can prompt the user to remove the device;
+    *
+    * **in_use:** The device is in use by another application. The ejection did not succeed;
+    *   the user should not remove the device until the other application is done with the device;
+    *
+    * **no_such_device:** There is no such device known.
+    *
+    * **failure:** The ejection command failed.
+    */
+  def ejectDevice(
+    id: String,
+    callback: js.Function1[
+      /* result */ ToStringLiteral[Anon_FAILURE, String, Exclude[String, success | in_use | no_such_device | failure]], 
+      Unit
+    ]
+  ): Unit = js.native
+  /**
+    * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
+    * @since Dev channel only.
+    */
+  def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = js.native
+  /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
+  def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = js.native
+}
+

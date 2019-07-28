@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for probability-distributions 0.1
-// Project: https://github.com/Mattasher/probability-distributions
-// Definitions by: Sophie Dankel <https://github.com/sdankel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

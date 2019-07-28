@@ -1,0 +1,24 @@
+package typings.sharepoint.SPNs
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("SP.RecycleBinItem")
+@js.native
+class RecycleBinItem () extends ClientObject {
+  def deleteObject(): Unit = js.native
+  def get_author(): User = js.native
+  def get_deletedBy(): User = js.native
+  def get_deletedDate(): Date = js.native
+  def get_dirName(): String = js.native
+  def get_id(): Guid = js.native
+  def get_itemState(): RecycleBinItemState = js.native
+  def get_itemType(): RecycleBinItemType = js.native
+  def get_leafName(): String = js.native
+  def get_size(): Double = js.native
+  def get_title(): String = js.native
+  def restore(): Unit = js.native
+}
+

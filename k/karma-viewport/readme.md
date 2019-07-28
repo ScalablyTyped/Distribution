@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for karma-viewport 0.4
-// Project: https://github.com/squidfunk/karma-viewport
-// Definitions by: Karak <https://github.com/karak>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definition file for 'karma-viewport'
-// https://www.npmjs.com/package/karma-viewport
-
-```
 

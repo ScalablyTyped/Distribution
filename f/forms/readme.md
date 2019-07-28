@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for forms 1.3
-// Project: https://github.com/caolan/forms
-// Definitions by: suXin <https://github.com/suXinjke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

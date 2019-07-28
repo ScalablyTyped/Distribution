@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for diff 4.0
-// Project: https://github.com/kpdecker/jsdiff
-// Definitions by: vvakame <https://github.com/vvakame>
-//                 szdc <https://github.com/szdc>
-//                 moc-yuto <https://github.com/moc-yuto>
-//                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

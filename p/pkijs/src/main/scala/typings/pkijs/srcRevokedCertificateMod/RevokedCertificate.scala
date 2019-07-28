@@ -1,0 +1,32 @@
+package typings.pkijs.srcRevokedCertificateMod
+
+import typings.asn1js.asn1jsMod.Integer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RevokedCertificate extends js.Object {
+  var crlEntryExtensions: typings.pkijs.srcExtensionsMod.default
+  var revocationDate: typings.pkijs.srcTimeMod.default
+  var userCertificate: Integer
+  def fromSchema(schema: js.Any): Unit
+  def toJSON(): js.Any
+  def toSchema(): js.Any
+}
+
+object RevokedCertificate {
+  @scala.inline
+  def apply(
+    crlEntryExtensions: typings.pkijs.srcExtensionsMod.default,
+    fromSchema: js.Any => Unit,
+    revocationDate: typings.pkijs.srcTimeMod.default,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
+    userCertificate: Integer
+  ): RevokedCertificate = {
+    val __obj = js.Dynamic.literal(crlEntryExtensions = crlEntryExtensions, fromSchema = js.Any.fromFunction1(fromSchema), revocationDate = revocationDate, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), userCertificate = userCertificate)
+  
+    __obj.asInstanceOf[RevokedCertificate]
+  }
+}
+

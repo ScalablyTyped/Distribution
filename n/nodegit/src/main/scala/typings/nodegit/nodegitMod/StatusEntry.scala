@@ -1,0 +1,11 @@
+package typings.nodegit.nodegitMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("nodegit", "StatusEntry")
+@js.native
+class StatusEntry ()
+  extends typings.nodegit.statusDashEntryMod.StatusEntry
+

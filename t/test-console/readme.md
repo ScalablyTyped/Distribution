@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for test-console 1.1
-// Project: https://github.com/jamesshore/test-console
-// Definitions by:  Roberto Soares <https://github.com/roberto>
-//                  Pedro Guidoux <https://github.com/guidoux>
-//                  Guilherme Moretti <https://github.com/gbmoretti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

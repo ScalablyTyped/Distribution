@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bunyan-prettystream 0.1.3
-// Project: https://www.npmjs.com/package/bunyan-prettystream
-// Definitions by: Jason Swearingen <https://github.com/jasonswearingen>, Vadim Macagon <https://github.com/enlight>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

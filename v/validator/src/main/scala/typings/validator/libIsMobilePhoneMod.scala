@@ -1,0 +1,21 @@
+package typings.validator
+
+import org.scalablytyped.runtime.TopLevel
+import typings.validator.ValidatorJSNs.IsMobilePhoneOptions
+import typings.validator.ValidatorJSNs.MobilePhoneLocale
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("validator/lib/isMobilePhone", JSImport.Namespace)
+@js.native
+object libIsMobilePhoneMod
+  extends TopLevel[
+      (js.Function3[
+        /* str */ String, 
+        /* locale */ MobilePhoneLocale, 
+        /* options */ js.UndefOr[IsMobilePhoneOptions], 
+        Boolean
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isMobilePhone */ js.Any)
+    ]
+

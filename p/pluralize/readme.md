@@ -30,22 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pluralize
-// Project: https://www.npmjs.com/package/pluralize
-// Definitions by: Syu Kato <https://github.com/ukyo>
-//                 Karol Majewski <https://github.com/karol-majewski>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Pluralize or singularize a word based on the passed in count.
- *
- * @param word
- * @param count
- * @param inclusive
- */
-
-```
 

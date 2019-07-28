@@ -1,0 +1,13 @@
+package typings.reactDashNativeDashSignatureDashCapture
+
+import typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSignatureDashCaptureProps {
+  @scala.inline
+  def ReactDashNativeDashSignatureDashCaptureProps: SignatureCaptureProps.type = typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
+  type ReactDashNativeDashSignatureDashCaptureProps = SignatureCaptureProps
+}
+

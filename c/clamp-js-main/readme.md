@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for clamp-js-main 0.11
-// Project: https://github.com/jmenglis/clamp-js-main#readme
-// Definitions by: Sinziana Nicolae <https://github.com/sinziananicolae>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

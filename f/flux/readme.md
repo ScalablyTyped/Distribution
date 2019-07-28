@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Flux 3.1
-// Project: http://facebook.github.io/flux/
-// Definitions by: Steve Baker <https://github.com/stkb>
-//                 Giedrius Grabauskas <https://github.com/GiedriusGrabauskas>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

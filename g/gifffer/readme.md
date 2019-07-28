@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gifffer 1.5
-// Project: https://github.com/krasimir/gifffer#readme
-// Definitions by: William Lohan <https://github.com/gatimus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

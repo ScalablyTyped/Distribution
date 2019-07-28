@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-Licensed under the Apache License, Version 2.0.
-
-See LICENSE file in the project root for details.
-***************************************************************************** */
-/**
- * Encapsulates a Promise and exposes its resolve and reject callbacks.
- */
-/**
- * An asynchronous queue.
- */
-/**
- * An asynchronous Stack.
- */
-
-```
 

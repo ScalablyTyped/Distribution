@@ -1,0 +1,39 @@
+package typings.createDashEmotion.createDashEmotionMod
+
+import typings.createDashEmotion.createDashEmotionNumbers.`1`
+import typings.createDashEmotion.createDashEmotionNumbers.`2`
+import typings.createDashEmotion.createDashEmotionNumbers.`3`
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait EmotionOptions extends js.Object {
+  var container: js.UndefOr[HTMLElement] = js.undefined
+  var key: js.UndefOr[String] = js.undefined
+  var nonce: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[
+    Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`, Boolean])
+  ] = js.undefined
+  var stylisPlugins: js.UndefOr[StylisPlugins] = js.undefined
+}
+
+object EmotionOptions {
+  @scala.inline
+  def apply(
+    container: HTMLElement = null,
+    key: String = null,
+    nonce: String = null,
+    prefix: Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`, Boolean]) = null,
+    stylisPlugins: StylisPlugins = null
+  ): EmotionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (stylisPlugins != null) __obj.updateDynamic("stylisPlugins")(stylisPlugins.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmotionOptions]
+  }
+}
+

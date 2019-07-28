@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Tiny Validator tv4 1.2.5
-// Project: https://github.com/geraintluff/tv4
-// Definitions by: Bart van der Schoor <https://github.com/Bartvds>, Peter Snider <https://github.com/psnider>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

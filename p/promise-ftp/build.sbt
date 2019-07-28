@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "promise-ftp"
-version := "1.3-dt-20190524Z-0aeeb0"
+version := "1.3-dt-20190524Z-b28e5a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-aebf09",
-  "org.scalablytyped" %%% "ftp" % "0.3.8-dt-20190322Z-1f4bf1",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
-  "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-d4bcd7",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-2c5248",
+  "org.scalablytyped" %%% "ftp" % "0.3.8-dt-20190322Z-b3696e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-2def75",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

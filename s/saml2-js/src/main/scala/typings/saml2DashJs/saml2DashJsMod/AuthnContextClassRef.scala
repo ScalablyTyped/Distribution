@@ -1,0 +1,20 @@
+package typings.saml2DashJs.saml2DashJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AuthnContextClassRef extends js.Object {
+  var class_refs: js.Array[String]
+  var comparison: String
+}
+
+object AuthnContextClassRef {
+  @scala.inline
+  def apply(class_refs: js.Array[String], comparison: String): AuthnContextClassRef = {
+    val __obj = js.Dynamic.literal(class_refs = class_refs, comparison = comparison)
+  
+    __obj.asInstanceOf[AuthnContextClassRef]
+  }
+}
+

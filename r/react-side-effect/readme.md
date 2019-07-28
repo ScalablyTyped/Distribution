@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-side-effect 1.1
-// Project: https://github.com/gaearon/react-side-effect
-// Definitions by: Remo H. Jansen <https://github.com/remojansen>
-//                 Martin Charles <https://github.com/0xcaff>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

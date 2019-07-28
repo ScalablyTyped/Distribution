@@ -12,14 +12,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for the Facebook Pixel Tag API
-// Project: https://developers.facebook.com/docs/ads-for-websites/tag-api/
-// Definitions by: Noctis Hsu <https://github.com/noctishsu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

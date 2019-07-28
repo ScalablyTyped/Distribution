@@ -1,0 +1,41 @@
+package typings.antdDashMobileDashRn.libSwipeDashActionPropsTypeMod
+
+import typings.antdDashMobileDashRn.Anon_ClassName
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SwipeActionPropsType[T] extends js.Object {
+  /** whether button is disabled*/
+  var autoClose: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  var left: js.UndefOr[js.Array[Anon_ClassName[T]]] = js.undefined
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var right: js.UndefOr[js.Array[Anon_ClassName[T]]] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
+}
+
+object SwipeActionPropsType {
+  @scala.inline
+  def apply[T](
+    autoClose: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    left: js.Array[Anon_ClassName[T]] = null,
+    onClose: () => Unit = null,
+    onOpen: () => Unit = null,
+    right: js.Array[Anon_ClassName[T]] = null,
+    title: String = null
+  ): SwipeActionPropsType[T] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[SwipeActionPropsType[T]]
+  }
+}
+

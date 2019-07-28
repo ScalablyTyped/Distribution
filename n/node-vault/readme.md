@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-vault 0.9
-// Project: https://github.com/kr1sp1n/node-vault
-// Definitions by: Jianrong Yu <https://github.com/YuJianrong>
-//                 Neil Bryson Cargamento <https://github.com/neilbryson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

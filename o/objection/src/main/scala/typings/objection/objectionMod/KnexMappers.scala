@@ -1,0 +1,23 @@
+package typings.objection.objectionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait KnexMappers extends js.Object {
+  def postProcessResponse(response: js.Any): js.Any
+  def wrapIdentifier(identifier: String, origWrap: js.Function1[/* identifier */ String, String]): String
+}
+
+object KnexMappers {
+  @scala.inline
+  def apply(
+    postProcessResponse: js.Any => js.Any,
+    wrapIdentifier: (String, js.Function1[/* identifier */ String, String]) => String
+  ): KnexMappers = {
+    val __obj = js.Dynamic.literal(postProcessResponse = js.Any.fromFunction1(postProcessResponse), wrapIdentifier = js.Any.fromFunction2(wrapIdentifier))
+  
+    __obj.asInstanceOf[KnexMappers]
+  }
+}
+

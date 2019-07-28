@@ -1,0 +1,33 @@
+package typings.openlayers.openlayersMod.olxNs.sourceNs
+
+import typings.openlayers.openlayersMod.TileLoadFunctionType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MapQuestOptions extends js.Object {
+  var cacheSize: js.UndefOr[Double] = js.undefined
+  var layer: String
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
+}
+
+object MapQuestOptions {
+  @scala.inline
+  def apply(
+    layer: String,
+    cacheSize: Int | Double = null,
+    reprojectionErrorThreshold: Int | Double = null,
+    tileLoadFunction: TileLoadFunctionType = null,
+    url: String = null
+  ): MapQuestOptions = {
+    val __obj = js.Dynamic.literal(layer = layer)
+    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[MapQuestOptions]
+  }
+}
+

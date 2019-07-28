@@ -1,0 +1,22 @@
+package typings.pem.pemMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ModuleConfiguration extends js.Object {
+  /**
+    * Path to OpenSSL binaries
+    */
+  var pathOpenSSL: String
+}
+
+object ModuleConfiguration {
+  @scala.inline
+  def apply(pathOpenSSL: String): ModuleConfiguration = {
+    val __obj = js.Dynamic.literal(pathOpenSSL = pathOpenSSL)
+  
+    __obj.asInstanceOf[ModuleConfiguration]
+  }
+}
+

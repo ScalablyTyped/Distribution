@@ -1,0 +1,38 @@
+package typings.log4js.log4jsMod
+
+import typings.log4js.Anon_Worker
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LoggingEvent extends js.Object {
+  var categoryName: String
+  var cluster: js.UndefOr[Anon_Worker] = js.undefined
+  var context: js.Any
+  	// level of message
+  var data: js.Array[_]
+  	// name of category
+  var level: Level
+  var pid: Double
+  	// objects to log
+  var startTime: Date
+}
+
+object LoggingEvent {
+  @scala.inline
+  def apply(
+    categoryName: String,
+    context: js.Any,
+    data: js.Array[_],
+    level: Level,
+    pid: Double,
+    startTime: Date,
+    cluster: Anon_Worker = null
+  ): LoggingEvent = {
+    val __obj = js.Dynamic.literal(categoryName = categoryName, context = context, data = data, level = level, pid = pid, startTime = startTime)
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    __obj.asInstanceOf[LoggingEvent]
+  }
+}
+

@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Originally based on contributions to DefinitelyTyped:
-// Definitions by: Qubo <https://github.com/tkQubo>
-//                 Pablo Rodríguez <https://github.com/MeLlamoPablo>
-//                 Matt R. Wilson <https://github.com/mastermatt>
-//                 Satana Charuwichitratana <https://github.com/micksatana>
-//                 Shrey Jain <https://github.com/shreyjain1994>
-// TypeScript Version: 3.2
-// This empty interface serves as a placeholder which userland code can augment to
-// override result types.
-//
-// Currently only available result type which is overridable is Count, which defaults to
-// number | string;
-// Following example in userland code will alter this to be just number:
-// declare module "knex/types/result" {
-//     interface Registry {
-//         Count: number;
-//     }
-// }
-// Prior discussion: https://github.com/tgriesser/knex/issues/3247
-
-```
 

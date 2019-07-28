@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__services
 
-Typings are for version 3.2.1
+Typings are for version 4.0.2
 
 ## Library description:
 Client APIs for the Jupyter services REST APIs
@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * The namespace for ServerConnection functions.
- *
- * #### Notes
- * This is only intended to manage communication with the Jupyter server.
- *
- * The default values can be used in a JupyterLab or Jupyter Notebook context.
- *
- * We use `token` authentication if available, falling back on an XSRF
- * cookie if one has been provided on the `document`.
- *
- * A content type of `'application/json'` is added when using authentication
- * and there is no body data to allow the server to prevent malicious forms.
- */
-
-```
 

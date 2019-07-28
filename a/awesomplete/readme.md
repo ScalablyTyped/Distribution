@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Awesomplete 1.1
-// Project: https://leaverou.github.io/awesomplete/
-// Definitions by: webbiesdk <https://github.com/webbiesdk>
-//                 Ben Dixon <https://github.com/bmdixon>
-//                 Trevor Bekolay <https://github.com/tbekolay>
-//                 Chris LoPresto <https://github.com/chrislopresto>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,22 @@
+package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PublisherFacts extends js.Object {
+  var displayName: String
+  var flags: PublisherFlags
+  var publisherId: String
+  var publisherName: String
+}
+
+object PublisherFacts {
+  @scala.inline
+  def apply(displayName: String, flags: PublisherFlags, publisherId: String, publisherName: String): PublisherFacts = {
+    val __obj = js.Dynamic.literal(displayName = displayName, flags = flags, publisherId = publisherId, publisherName = publisherName)
+  
+    __obj.asInstanceOf[PublisherFacts]
+  }
+}
+

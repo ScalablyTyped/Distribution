@@ -1,0 +1,32 @@
+package typings.braintree
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Amount extends js.Object {
+  var amount: String
+  var createdAt: Date
+  var id: String
+  var orderId: String
+  var paymentInstrumentSubtype: String
+  var purchaseOrderNumber: String
+}
+
+object Anon_Amount {
+  @scala.inline
+  def apply(
+    amount: String,
+    createdAt: Date,
+    id: String,
+    orderId: String,
+    paymentInstrumentSubtype: String,
+    purchaseOrderNumber: String
+  ): Anon_Amount = {
+    val __obj = js.Dynamic.literal(amount = amount, createdAt = createdAt, id = id, orderId = orderId, paymentInstrumentSubtype = paymentInstrumentSubtype, purchaseOrderNumber = purchaseOrderNumber)
+  
+    __obj.asInstanceOf[Anon_Amount]
+  }
+}
+

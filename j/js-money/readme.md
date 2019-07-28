@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for js-money 0.6
-// Project: https://github.com/davidkalosi/js-money
-// Definitions by: Kanat Kubash <https://github.com/kanatkubash>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Project: https://github.com/davidkalosi/js-money#readme
-
-```
 

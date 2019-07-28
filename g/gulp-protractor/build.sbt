@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "gulp-protractor"
-version := "v1.0.0-dt-20190322Z-a59a23"
+version := "v1.0.0-dt-20190322Z-5a983b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chokidar" % "3.0.2-a792a4",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ffce18",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-cc7bb4",
-  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190405Z-baf071",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-41d0ad",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20190405Z-05e039",
-  "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180214Z-f9ecbf",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-69adaf",
-  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-4c3e2b")
+  "org.scalablytyped" %%% "chokidar" % "3.0.2-ca966b",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-b686b1",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-d6af2a",
+  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190405Z-8b383f",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-40806c",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20190405Z-a3e401",
+  "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180214Z-10a15b",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-d2e3b4",
+  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-44eb46")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

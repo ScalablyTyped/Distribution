@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for blob-stream v0.1.3
-// Project: https://github.com/devongovett/blob-stream
-// Definitions by: Eric Hillah <https://github.com/erichillah>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

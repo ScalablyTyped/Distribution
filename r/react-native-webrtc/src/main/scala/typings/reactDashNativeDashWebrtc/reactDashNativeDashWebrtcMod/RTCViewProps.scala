@@ -1,0 +1,35 @@
+package typings.reactDashNativeDashWebrtc.reactDashNativeDashWebrtcMod
+
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
+import typings.reactDashNativeDashWebrtc.reactDashNativeDashWebrtcStrings.contain
+import typings.reactDashNativeDashWebrtc.reactDashNativeDashWebrtcStrings.cover
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RTCViewProps extends js.Object {
+  var mirror: js.UndefOr[Boolean] = js.undefined
+  var objectFit: js.UndefOr[contain | cover] = js.undefined
+  var streamURL: String
+  var style: js.UndefOr[ViewStyle] = js.undefined
+  var zOrder: js.UndefOr[Double] = js.undefined
+}
+
+object RTCViewProps {
+  @scala.inline
+  def apply(
+    streamURL: String,
+    mirror: js.UndefOr[Boolean] = js.undefined,
+    objectFit: contain | cover = null,
+    style: ViewStyle = null,
+    zOrder: Int | Double = null
+  ): RTCViewProps = {
+    val __obj = js.Dynamic.literal(streamURL = streamURL)
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTCViewProps]
+  }
+}
+

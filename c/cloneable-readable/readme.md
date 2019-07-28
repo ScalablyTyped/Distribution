@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cloneable-readable 2.0
-// Project: https://github.com/mcollina/cloneable-readable#readme
-// Definitions by: Nikita Volodin <https://github.com/qlonik>
-//                 Oleg Vaskevich <https://github.com/vaskevich>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

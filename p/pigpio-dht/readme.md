@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pigpio-dht 1.1
-// Project: https://github.com/depuits/pigpio-dht
-// Definitions by: Erik Mavrinac <https://github.com/erikma>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

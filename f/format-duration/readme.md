@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for format-duration 1.0
-// Project: https://github.com/hypermodules/format-duration
-// Definitions by: Giles Roadnight <https://github.com/Roaders>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

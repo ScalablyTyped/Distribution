@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for yui 3.14.0
-// Project: https://github.com/yui/yui3
-// Definitions by: Gia Bảo @ Sân Đình <https://github.com/giabao>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Project: https://github.com/yui/yui3/blob/release-3.14.0/src/test/js
-
-```
 

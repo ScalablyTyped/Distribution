@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for starwars-names 1.6
-// Project: https://github.com/kentcdodds/starwars-names#readme
-// Definitions by: Claas Ahlrichs <https://github.com/claasahl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

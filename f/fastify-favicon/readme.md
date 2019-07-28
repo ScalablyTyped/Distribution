@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fastify-favicon 0.3
-// Project: https://github.com/smartiniOnGitHub/fastify-favicon
-// Definitions by: Philipp Gfeller <https://github.com/tuelsch>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

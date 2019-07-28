@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-background-timer 2.0
-// Project: https://github.com/ocetnik/react-native-background-timer#readme
-// Definitions by: Tjark Smalla <https://github.com/chillkroeteTTS>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/*~ You can declare types that are available via importing the module */
-
-```
 

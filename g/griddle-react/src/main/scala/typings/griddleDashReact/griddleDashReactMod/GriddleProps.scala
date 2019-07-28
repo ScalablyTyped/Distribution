@@ -1,0 +1,66 @@
+package typings.griddleDashReact.griddleDashReactMod
+
+import typings.griddleDashReact.Anon_FilterPlaceholder
+import typings.redux.reduxMod.AnyAction
+import typings.redux.reduxMod.Dispatch
+import typings.redux.reduxMod.Middleware
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GriddleProps[T]
+  extends GriddlePlugin
+     with GriddleInitialState {
+  var core: js.UndefOr[GriddlePlugin] = js.undefined
+  var data: js.UndefOr[js.Array[T]] = js.undefined
+  var plugins: js.UndefOr[js.Array[GriddlePlugin]] = js.undefined
+  var storeKey: js.UndefOr[String] = js.undefined
+}
+
+object GriddleProps {
+  @scala.inline
+  def apply[T](
+    components: GriddleComponents = null,
+    core: GriddlePlugin = null,
+    data: js.Array[T] = null,
+    enableSettings: js.UndefOr[Boolean] = js.undefined,
+    events: GriddleEvents = null,
+    initialState: GriddleInitialState = null,
+    listeners: PropertyBag[Listener] = null,
+    pageProperties: GriddlePageProperties = null,
+    plugins: js.Array[GriddlePlugin] = null,
+    reducer: PropertyBag[Reducer] = null,
+    reduxMiddleware: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]] = null,
+    renderProperties: GriddleRenderProperties = null,
+    selectors: PropertyBag[Selector] = null,
+    settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
+    sortMethod: (/* data */ js.Array[_], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double = null,
+    sortProperties: js.Array[GriddleSortKey] = null,
+    storeKey: String = null,
+    styleConfig: GriddleStyleConfig = null,
+    textProperties: Anon_FilterPlaceholder = null
+  ): GriddleProps[T] = {
+    val __obj = js.Dynamic.literal()
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (core != null) __obj.updateDynamic("core")(core)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (reducer != null) __obj.updateDynamic("reducer")(reducer)
+    if (reduxMiddleware != null) __obj.updateDynamic("reduxMiddleware")(reduxMiddleware)
+    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects)
+    if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
+    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties)
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
+    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig)
+    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties)
+    __obj.asInstanceOf[GriddleProps[T]]
+  }
+}
+

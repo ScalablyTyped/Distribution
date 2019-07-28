@@ -1,0 +1,25 @@
+package typings.mendixmodelsdk.distCommonMod.commonNs
+
+import typings.mendixmodelsdk.distSdkInternalDeltasDeltasMod._PrimitiveValue
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Representation of an RGB color.
+  */
+trait IColor extends _PrimitiveValue {
+  var blue: Double
+  var green: Double
+  var red: Double
+}
+
+object IColor {
+  @scala.inline
+  def apply(blue: Double, green: Double, red: Double): IColor = {
+    val __obj = js.Dynamic.literal(blue = blue, green = green, red = red)
+  
+    __obj.asInstanceOf[IColor]
+  }
+}
+

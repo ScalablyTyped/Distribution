@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-batch 1.0
-// Project: https://github.com/floatdrop/gulp-batch
-// Definitions by: Alvaro Menezes <https://github.com/alvarollmenezes>, Vinicius Salomao <https://github.com/vizeke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

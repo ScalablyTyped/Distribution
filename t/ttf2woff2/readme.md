@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ttf2woff2 2.0
-// Project: https://github.com/nfroidure/ttf2woff2
-// Definitions by: Thomas den Hollander <https://github.com/ThomasdenH>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

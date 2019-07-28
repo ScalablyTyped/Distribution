@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for isotope 3.0
-// Project: https://isotope.metafizzy.co
-// Definitions by: Anže Videnič <https://github.com/avidenic>
-//                 Mălin Brândușe <https://github.com/malinushj>
-//                 SPWizard01 <https://github.com/SPWizard01>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

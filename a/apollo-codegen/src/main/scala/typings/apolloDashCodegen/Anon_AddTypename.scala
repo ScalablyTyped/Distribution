@@ -1,0 +1,45 @@
+package typings.apolloDashCodegen
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AddTypename extends js.Object {
+  var addTypename: js.UndefOr[Boolean] = js.undefined
+  var customScalarsPrefix: js.UndefOr[String] = js.undefined
+  var generateOperationIds: js.UndefOr[Boolean] = js.undefined
+  var mergeInFieldsFromFragmentSpreads: js.UndefOr[Boolean] = js.undefined
+  var namespace: js.UndefOr[String] = js.undefined
+  var operationIdsPath: js.UndefOr[String | Null] = js.undefined
+  var passthroughCustomScalars: js.UndefOr[Boolean] = js.undefined
+  var useFlowExactObjects: js.UndefOr[Boolean] = js.undefined
+  var useFlowReadOnlyTypes: js.UndefOr[Boolean] = js.undefined
+}
+
+object Anon_AddTypename {
+  @scala.inline
+  def apply(
+    addTypename: js.UndefOr[Boolean] = js.undefined,
+    customScalarsPrefix: String = null,
+    generateOperationIds: js.UndefOr[Boolean] = js.undefined,
+    mergeInFieldsFromFragmentSpreads: js.UndefOr[Boolean] = js.undefined,
+    namespace: String = null,
+    operationIdsPath: String = null,
+    passthroughCustomScalars: js.UndefOr[Boolean] = js.undefined,
+    useFlowExactObjects: js.UndefOr[Boolean] = js.undefined,
+    useFlowReadOnlyTypes: js.UndefOr[Boolean] = js.undefined
+  ): Anon_AddTypename = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addTypename)) __obj.updateDynamic("addTypename")(addTypename)
+    if (customScalarsPrefix != null) __obj.updateDynamic("customScalarsPrefix")(customScalarsPrefix)
+    if (!js.isUndefined(generateOperationIds)) __obj.updateDynamic("generateOperationIds")(generateOperationIds)
+    if (!js.isUndefined(mergeInFieldsFromFragmentSpreads)) __obj.updateDynamic("mergeInFieldsFromFragmentSpreads")(mergeInFieldsFromFragmentSpreads)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (operationIdsPath != null) __obj.updateDynamic("operationIdsPath")(operationIdsPath)
+    if (!js.isUndefined(passthroughCustomScalars)) __obj.updateDynamic("passthroughCustomScalars")(passthroughCustomScalars)
+    if (!js.isUndefined(useFlowExactObjects)) __obj.updateDynamic("useFlowExactObjects")(useFlowExactObjects)
+    if (!js.isUndefined(useFlowReadOnlyTypes)) __obj.updateDynamic("useFlowReadOnlyTypes")(useFlowReadOnlyTypes)
+    __obj.asInstanceOf[Anon_AddTypename]
+  }
+}
+

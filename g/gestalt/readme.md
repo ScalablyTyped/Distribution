@@ -29,17 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gestalt 0.75
-// Project: https://github.com/pinterest/gestalt, https://pinterest.github.io/gestalt
-// Definitions by: Nicolás Serrano Arévalo <https://github.com/serranoarevalo>
-//                 Josh Gachnang <https://github.com/joshgachnang>
-//                 Calvin Chhour <https://github.com/calvinchhour>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

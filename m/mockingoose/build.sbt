@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mockingoose"
-version := "2.11-dt-20181124Z-3e91f6"
+version := "2.11-dt-20181124Z-74fe0c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

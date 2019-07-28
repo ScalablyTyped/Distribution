@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-flatpickr"
-version := "3.8-dt-20190618Z-2ac2b9"
+version := "3.8-dt-20190618Z-2e60e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "flatpickr" % "4.6.2-924fd3",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
+  "org.scalablytyped" %%% "flatpickr" % "4.6.2-8f476a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

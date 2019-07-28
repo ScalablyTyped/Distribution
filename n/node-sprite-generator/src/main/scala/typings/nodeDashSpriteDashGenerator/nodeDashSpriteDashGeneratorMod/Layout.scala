@@ -1,0 +1,22 @@
+package typings.nodeDashSpriteDashGenerator.nodeDashSpriteDashGeneratorMod
+
+import typings.nodeDashSpriteDashGenerator.Anon_X
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Layout extends js.Object {
+  var height: Double
+  var images: js.Array[Anon_X with Image]
+  var width: Double
+}
+
+object Layout {
+  @scala.inline
+  def apply(height: Double, images: js.Array[Anon_X with Image], width: Double): Layout = {
+    val __obj = js.Dynamic.literal(height = height, images = images, width = width)
+  
+    __obj.asInstanceOf[Layout]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for deglob v 2.1
-// Project: https://github.com/standard/deglob, https://github.com/flet/deglob
-// Definitions by: Saad Quadri <https://github.com/saadq>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

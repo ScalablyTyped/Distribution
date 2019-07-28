@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for josa 3.0
-// Project: https://github.com/kimdhoe/josa
-// Definitions by: Vichyssoise <https://github.com/vichyssoise>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

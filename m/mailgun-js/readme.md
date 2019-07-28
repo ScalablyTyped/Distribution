@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mailgun-js 0.22
-// Project: https://github.com/bojand/mailgun-js
-// Definitions by: Sampson Oliver <https://github.com/sampsonjoliver>
-//                 Andi Pätzold <https://github.com/andipaetzold>
-//                 Jiri Balcar <https://github.com/JiriBalcar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for json-rpc-random-id 1.0
-// Project: https://github.com/kumavis/json-rpc-random-id#readme
-// Definitions by: Micah Riggan <https://github.com/micahriggan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- *  Returns a function that generates a random number
- *  This number is to be used with web3 rpc
- */
-
-```
 

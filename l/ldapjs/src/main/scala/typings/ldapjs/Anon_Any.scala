@@ -1,0 +1,23 @@
+package typings.ldapjs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Any extends js.Object {
+  var any: js.UndefOr[js.Array[String]] = js.undefined
+  var attribute: String
+  var `final`: js.UndefOr[String] = js.undefined
+  var initial: String
+}
+
+object Anon_Any {
+  @scala.inline
+  def apply(attribute: String, initial: String, any: js.Array[String] = null, `final`: String = null): Anon_Any = {
+    val __obj = js.Dynamic.literal(attribute = attribute, initial = initial)
+    if (any != null) __obj.updateDynamic("any")(any)
+    if (`final` != null) __obj.updateDynamic("final")(`final`)
+    __obj.asInstanceOf[Anon_Any]
+  }
+}
+

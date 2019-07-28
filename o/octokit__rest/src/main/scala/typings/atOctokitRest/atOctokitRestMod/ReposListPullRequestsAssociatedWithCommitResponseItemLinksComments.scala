@@ -1,0 +1,19 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReposListPullRequestsAssociatedWithCommitResponseItemLinksComments extends js.Object {
+  var href: String
+}
+
+object ReposListPullRequestsAssociatedWithCommitResponseItemLinksComments {
+  @scala.inline
+  def apply(href: String): ReposListPullRequestsAssociatedWithCommitResponseItemLinksComments = {
+    val __obj = js.Dynamic.literal(href = href)
+  
+    __obj.asInstanceOf[ReposListPullRequestsAssociatedWithCommitResponseItemLinksComments]
+  }
+}
+

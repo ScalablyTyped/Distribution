@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for oakdex-pokedex 0.4
-// Project: https://github.com/jalyna/oakdex-pokedex
-// Definitions by: Jalyna Schroeder <https://github.com/jalyna>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

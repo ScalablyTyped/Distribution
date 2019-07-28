@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for svg2png 4.1
-// Project: https://github.com/domenic/svg2png
-// Definitions by: hans windhoff <https://github.com/hansrwindhoff>, songChengcheng <https://github.com/sccgithub>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

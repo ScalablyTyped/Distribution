@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pumpify 1.4
-// Project: https://github.com/mafintosh/pumpify
-// Definitions by: Justin Beckwith <https://github.com/JustinBeckwith>
-//                 Ankur Oberoi <https://github.com/aoberoi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

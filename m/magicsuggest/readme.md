@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for MagicSuggest 2.1.4
-// Project: http://nicolasbize.com/magicsuggest
-// Definitions by: Leonardo Chaia <https://github.com/leonardochaia>
-// Definitions: https://github.com/leonardochaia/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

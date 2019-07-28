@@ -31,36 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Represents an icon.
- */
-/**
- * Provides the functionality to generate a css-class for an icon.
- */
-/**
- * Represents a sizeable object.
- */
-/**
- * Represents an icon-preloader.
- */
-/**
- * Represents an identifiable object.
- */
-/**
- * Provides the functionality to require components of the `webicon`-module.
- */
-/**
- * Represents an url.
- */
-// Type definitions for webicon 0.10
-// Project: https://icons8.github.io/webicon/
-// Definitions by: Manuel Thalmann <https://github.com/manuth>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

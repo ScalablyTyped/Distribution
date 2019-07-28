@@ -1,0 +1,166 @@
+package typings.forkDashTsDashCheckerDashWebpackDashPlugin.forkDashTsDashCheckerDashWebpackDashPluginMod
+
+import typings.std.Partial
+import typings.workerDashRpc.workerDashRpcMod.RpcProvider
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * ForkTsCheckerWebpackPlugin
+  * Runs typescript type checker and linter (tslint) on separate process.
+  * This speed-ups build a lot.
+  *
+  * Options description in README.md
+  */
+trait ForkTsCheckerWebpackPlugin extends js.Object {
+  var async: js.Any
+  var cancellationToken: js.Any
+  var checkDone: js.Any
+  var checkSyntacticErrors: js.Any
+  var colors: js.Any
+  var compilationDone: js.Any
+  var compiler: js.Any
+  var compilerOptions: js.Any
+  var computeContextPath: js.Any
+  var createDoneCallback: js.Any
+  var createEmitCallback: js.Any
+  var createNoopEmitCallback: js.Any
+  var diagnostics: js.Any
+  var doneCallback: js.Any
+  var elapsed: js.Any
+  var emitCallback: js.Any
+  var eslint: js.Any
+  var eslintOptions: js.Any
+  var eslintVersion: js.Any
+  var formatter: js.Any
+  var handleServiceExit: js.Any
+  var handleServiceMessage: js.Any
+  var ignoreDiagnostics: js.Any
+  var ignoreLintWarnings: js.Any
+  var ignoreLints: js.Any
+  var isWatching: js.Any
+  var killService: js.Any
+  var lints: js.Any
+  var logger: js.Any
+  var measureTime: js.Any
+  var memoryLimit: js.Any
+  var nodeArgs: js.Array[String]
+  val options: Partial[Options]
+  var performance: js.Any
+  var pluginCompile: js.Any
+  var pluginDone: js.Any
+  var pluginEmit: js.Any
+  var pluginStart: js.Any
+  var pluginStop: js.Any
+  var printLoggerMessage: js.Any
+  var reportFiles: js.Any
+  var resolveModuleNameModule: js.Any
+  var resolveTypeReferenceDirectiveModule: js.Any
+  var service: js.UndefOr[js.Any] = js.undefined
+  var serviceRpc: js.UndefOr[RpcProvider] = js.undefined
+  var silent: js.Any
+  var spawnService: js.Any
+  var startAt: js.Any
+  var started: js.Any
+  var tsconfig: js.Any
+  var tsconfigPath: js.Any
+  var tslint: js.Any
+  var tslintAutoFix: js.Any
+  var tslintPath: js.Any
+  var tslintVersion: js.Any
+  var typescript: js.Any
+  var typescriptPath: js.Any
+  var typescriptVersion: js.Any
+  var useColors: js.Any
+  var useTypescriptIncrementalApi: js.Any
+  var validateEslint: js.Any
+  var validateTslint: js.Any
+  var validateTypeScript: js.Any
+  var vue: js.Any
+  var watch: js.Any
+  var watchPaths: js.Any
+  var workersNumber: js.Any
+  @JSName("apply")
+  def apply(compiler: js.Any): Unit
+}
+
+object ForkTsCheckerWebpackPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Any => Unit,
+    async: js.Any,
+    cancellationToken: js.Any,
+    checkDone: js.Any,
+    checkSyntacticErrors: js.Any,
+    colors: js.Any,
+    compilationDone: js.Any,
+    compiler: js.Any,
+    compilerOptions: js.Any,
+    computeContextPath: js.Any,
+    createDoneCallback: js.Any,
+    createEmitCallback: js.Any,
+    createNoopEmitCallback: js.Any,
+    diagnostics: js.Any,
+    doneCallback: js.Any,
+    elapsed: js.Any,
+    emitCallback: js.Any,
+    eslint: js.Any,
+    eslintOptions: js.Any,
+    eslintVersion: js.Any,
+    formatter: js.Any,
+    handleServiceExit: js.Any,
+    handleServiceMessage: js.Any,
+    ignoreDiagnostics: js.Any,
+    ignoreLintWarnings: js.Any,
+    ignoreLints: js.Any,
+    isWatching: js.Any,
+    killService: js.Any,
+    lints: js.Any,
+    logger: js.Any,
+    measureTime: js.Any,
+    memoryLimit: js.Any,
+    nodeArgs: js.Array[String],
+    options: Partial[Options],
+    performance: js.Any,
+    pluginCompile: js.Any,
+    pluginDone: js.Any,
+    pluginEmit: js.Any,
+    pluginStart: js.Any,
+    pluginStop: js.Any,
+    printLoggerMessage: js.Any,
+    reportFiles: js.Any,
+    resolveModuleNameModule: js.Any,
+    resolveTypeReferenceDirectiveModule: js.Any,
+    silent: js.Any,
+    spawnService: js.Any,
+    startAt: js.Any,
+    started: js.Any,
+    tsconfig: js.Any,
+    tsconfigPath: js.Any,
+    tslint: js.Any,
+    tslintAutoFix: js.Any,
+    tslintPath: js.Any,
+    tslintVersion: js.Any,
+    typescript: js.Any,
+    typescriptPath: js.Any,
+    typescriptVersion: js.Any,
+    useColors: js.Any,
+    useTypescriptIncrementalApi: js.Any,
+    validateEslint: js.Any,
+    validateTslint: js.Any,
+    validateTypeScript: js.Any,
+    vue: js.Any,
+    watch: js.Any,
+    watchPaths: js.Any,
+    workersNumber: js.Any,
+    service: js.Any = null,
+    serviceRpc: RpcProvider = null
+  ): ForkTsCheckerWebpackPlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, cancellationToken = cancellationToken, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, elapsed = elapsed, emitCallback = emitCallback, eslint = eslint, eslintOptions = eslintOptions, eslintVersion = eslintVersion, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, spawnService = spawnService, startAt = startAt, started = started, tsconfig = tsconfig, tsconfigPath = tsconfigPath, tslint = tslint, tslintAutoFix = tslintAutoFix, tslintPath = tslintPath, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateEslint = validateEslint, validateTslint = validateTslint, validateTypeScript = validateTypeScript, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (serviceRpc != null) __obj.updateDynamic("serviceRpc")(serviceRpc)
+    __obj.asInstanceOf[ForkTsCheckerWebpackPlugin]
+  }
+}
+

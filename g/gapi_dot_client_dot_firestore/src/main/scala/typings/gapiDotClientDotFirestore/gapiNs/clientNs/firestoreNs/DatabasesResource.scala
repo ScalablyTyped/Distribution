@@ -1,0 +1,20 @@
+package typings.gapiDotClientDotFirestore.gapiNs.clientNs.firestoreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DatabasesResource extends js.Object {
+  var documents: DocumentsResource
+  var indexes: IndexesResource
+}
+
+object DatabasesResource {
+  @scala.inline
+  def apply(documents: DocumentsResource, indexes: IndexesResource): DatabasesResource = {
+    val __obj = js.Dynamic.literal(documents = documents, indexes = indexes)
+  
+    __obj.asInstanceOf[DatabasesResource]
+  }
+}
+

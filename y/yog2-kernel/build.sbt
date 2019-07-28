@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20190312Z-975aba"
+version := "1.9-dt-20190312Z-7dc428"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9c543c",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e1c7d7",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-e6cc14",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-2e57f1",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190708Z-b8e808",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-1c84be",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-e46800",
-  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-d0ad69",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-f16918",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-43ad97",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-556db3",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-17e9b7")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-d89a50",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ee50f3",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-083460",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-df4cf9",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190708Z-370309",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-c26a2f",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-00865d",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-c9090b",
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-f9971a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

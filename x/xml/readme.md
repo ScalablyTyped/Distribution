@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for xml 1.0
-// Project: http://github.com/dylang/node-xml
-// Definitions by: Jianrong Yu <https://github.com/YuJianrong>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

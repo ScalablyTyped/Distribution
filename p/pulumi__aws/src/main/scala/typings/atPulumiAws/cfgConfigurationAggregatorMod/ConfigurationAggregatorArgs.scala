@@ -1,0 +1,39 @@
+package typings.atPulumiAws.cfgConfigurationAggregatorMod
+
+import typings.atPulumiAws.Anon_AccountIdsAllRegions
+import typings.atPulumiAws.Anon_AllRegionsRegions
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConfigurationAggregatorArgs extends js.Object {
+  /**
+    * The account(s) to aggregate config data from as documented below.
+    */
+  val accountAggregationSource: js.UndefOr[Input[Anon_AccountIdsAllRegions]] = js.undefined
+  /**
+    * The name of the configuration aggregator.
+    */
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The organization to aggregate config data from as documented below.
+    */
+  val organizationAggregationSource: js.UndefOr[Input[Anon_AllRegionsRegions]] = js.undefined
+}
+
+object ConfigurationAggregatorArgs {
+  @scala.inline
+  def apply(
+    accountAggregationSource: Input[Anon_AccountIdsAllRegions] = null,
+    name: Input[String] = null,
+    organizationAggregationSource: Input[Anon_AllRegionsRegions] = null
+  ): ConfigurationAggregatorArgs = {
+    val __obj = js.Dynamic.literal()
+    if (accountAggregationSource != null) __obj.updateDynamic("accountAggregationSource")(accountAggregationSource.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (organizationAggregationSource != null) __obj.updateDynamic("organizationAggregationSource")(organizationAggregationSource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigurationAggregatorArgs]
+  }
+}
+

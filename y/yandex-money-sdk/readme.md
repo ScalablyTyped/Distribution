@@ -27,14 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for NodeJS Yandex.Money API SDK
-// Project: https://github.com/yandex-money/yandex-money-sdk-nodejs
-// Definitions by: Ilya Mochalov <https://github.com/chrootsu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

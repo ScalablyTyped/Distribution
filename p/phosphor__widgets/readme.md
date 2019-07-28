@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * A sizer object for use with the box engine layout functions.
- *
- * #### Notes
- * A box sizer holds the geometry information for an object along an
- * arbitrary layout orientation.
- *
- * For best performance, this class should be treated as a raw data
- * struct. It should not typically be subclassed.
- */
-
-```
 

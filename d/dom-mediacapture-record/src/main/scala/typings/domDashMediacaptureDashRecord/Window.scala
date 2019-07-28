@@ -1,0 +1,38 @@
+package typings.domDashMediacaptureDashRecord
+
+import org.scalablytyped.runtime.Instantiable2
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Window extends js.Object {
+  var BlobEvent: Instantiable2[
+    /* type */ String, 
+    /* eventInitDict */ BlobEventInit, 
+    typings.domDashMediacaptureDashRecord.BlobEvent
+  ]
+  var MediaRecorder: TypeofClassMediaRecorder
+  var MediaRecorderErrorEvent: Instantiable2[
+    /* type */ String, 
+    /* eventInitDict */ MediaRecorderErrorEventInit, 
+    typings.domDashMediacaptureDashRecord.MediaRecorderErrorEvent
+  ]
+}
+
+object Window {
+  @scala.inline
+  def apply(
+    BlobEvent: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent],
+    MediaRecorder: TypeofClassMediaRecorder,
+    MediaRecorderErrorEvent: Instantiable2[
+      /* type */ String, 
+      /* eventInitDict */ MediaRecorderErrorEventInit, 
+      MediaRecorderErrorEvent
+    ]
+  ): Window = {
+    val __obj = js.Dynamic.literal(BlobEvent = BlobEvent, MediaRecorder = MediaRecorder, MediaRecorderErrorEvent = MediaRecorderErrorEvent)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

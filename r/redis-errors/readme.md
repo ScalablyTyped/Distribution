@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redis-errors 1.2
-// Project: https://github.com/NodeRedis/redis-errors#readme
-// Definitions by: James Garbutt <https://github.com/43081j>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

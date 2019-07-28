@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for svg-pan-zoom v3.5.0
-// Project: https://github.com/ariutta/svg-pan-zoom
-// Definitions by: César Vidril <https://github.com/Yimiprod>
-// Definitions: https://github.com/ariutta/svg-pan-zoom
-
-```
 

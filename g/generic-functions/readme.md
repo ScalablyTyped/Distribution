@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for generic-functions
-// Project: https://github.com/stpettersens/generic-functions
-// Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>
-// Definitions: https://github.com/definitelytyped/DefinitelyTyped
-
-```
 

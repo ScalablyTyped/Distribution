@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for geetest 4.1
-// Project: https://github.com/GeeTeam/gt-node-sdk#readme
-// Definitions by: York Yao <https://github.com/plantain-00>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

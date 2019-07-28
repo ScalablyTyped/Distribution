@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for vnu-jar 17.11
-// Project: https://github.com/validator/validator#readme
-// Definitions by: Umoxfo <https://github.com/Umoxfo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

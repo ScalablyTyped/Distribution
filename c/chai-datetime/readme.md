@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-datetime
-// Project: https://github.com/gaslight/chai-datetime.git
-// Definitions by: Cliff Burger <https://github.com/cliffburger>,
-//                 Matt Bishop <https://github.com/mattbishop>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-resize-detector 4.0
-// Project: https://github.com/maslianok/react-resize-detector
-// Definitions by: Matthew James <https://github.com/matthew-matvei>
-//                 James Greenleaf <https://github.com/aMoniker>
-//                 Remin <https://github.com/rdrgn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

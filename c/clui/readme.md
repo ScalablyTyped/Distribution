@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for clui 0.3
-// Project: https://github.com/nathanpeck/clui#readme
-// Definitions by: Farzad Majidfayyaz <https://github.com/farzadmf>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

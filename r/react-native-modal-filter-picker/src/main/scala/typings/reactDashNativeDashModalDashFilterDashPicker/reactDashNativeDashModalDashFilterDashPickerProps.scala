@@ -1,0 +1,14 @@
+package typings.reactDashNativeDashModalDashFilterDashPicker
+
+import typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerOption
+import typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashModalDashFilterDashPickerProps {
+  @scala.inline
+  def ReactDashNativeDashModalDashFilterDashPickerProps: ModalFilterPickerProps.type = typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps
+  type ReactDashNativeDashModalDashFilterDashPickerProps[T /* <: ModalFilterPickerOption */] = ModalFilterPickerProps[T]
+}
+

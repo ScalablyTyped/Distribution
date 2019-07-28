@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for z-schema v3.16.0
-// Project: https://github.com/zaggino/z-schema
-// Definitions by: pgonzal <https://github.com/pgonzal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

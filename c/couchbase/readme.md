@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Couchbase Node.js SDK 2.4.5
-// Project: https://github.com/couchbase/couchnode
-// Definitions by: Marwan Aouida <https://github.com/maouida>
-//      Brian Crowell <https://github.com/fluggo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

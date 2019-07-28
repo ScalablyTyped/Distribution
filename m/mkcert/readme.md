@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mkcert 1.2
-// Project: https://github.com/Subash/mkcert/
-// Definitions by: Sachin Arunkumar <https://github.com/asachin96>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type which represent's generated certificate
-
-```
 

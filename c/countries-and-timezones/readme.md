@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for countries-and-timezones 1.0
-// Project: https://github.com/manuelmhtr/countries-and-timezones#readme
-// Definitions by: David Bird <https://github.com/zero51>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

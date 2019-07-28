@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for PDFObject v2.0.201604172
-// Project: https://github.com/pipwerks/PDFObject
-// Definitions by: Niels Boogaard <https://github.com/nielsboogaard>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

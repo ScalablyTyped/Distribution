@@ -1,0 +1,30 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * A command to change the number of section columns having the same width.
+  */
+trait ChangeSectionEqualColumnCountCommand extends CommandBase {
+  /**
+    * Executes the ChangeSectionEqualColumnCountCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * @param columnCount An interger number specifying the number of section columns having the same width.
+    */
+  def execute(columnCount: Double): Boolean
+  /**
+    * Gets information about the command state.
+    */
+  def getState(): js.Any
+}
+
+object ChangeSectionEqualColumnCountCommand {
+  @scala.inline
+  def apply(execute: Double => Boolean, getState: () => js.Any): ChangeSectionEqualColumnCountCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
+  
+    __obj.asInstanceOf[ChangeSectionEqualColumnCountCommand]
+  }
+}
+

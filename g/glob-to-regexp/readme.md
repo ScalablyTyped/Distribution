@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for glob-to-regexp 0.4
-// Project: https://github.com/fitzgen/glob-to-regexp#readme
-// Definitions by: whatasoda <https://github.com/whatasoda>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

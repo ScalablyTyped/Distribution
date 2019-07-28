@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sqlite3 3.1
-// Project: http://github.com/mapbox/node-sqlite3
-// Definitions by: Nick Malaguti <https://github.com/nmalaguti>
-//                 Sumant Manne <https://github.com/dpyro>
-//                 Behind The Math <https://github.com/BehindTheMath>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

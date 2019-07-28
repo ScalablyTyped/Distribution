@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for zipcelx 1.5
-// Project: https://github.com/dixieio/zipcelx#readme
-// Definitions by: Alessandro Burato <https://github.com/aleburato>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * The value and type of a single cell. Only strings and numbers are supported.
- */
-
-```
 

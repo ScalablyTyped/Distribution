@@ -30,17 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Apache Cordova WebSQL plugin
-// Project: https://github.com/MSOpenTech/cordova-plugin-websql
-// Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// 
-// Copyright (c) Microsoft Open Technologies Inc
-// Licensed under the MIT license.
-
-```
 

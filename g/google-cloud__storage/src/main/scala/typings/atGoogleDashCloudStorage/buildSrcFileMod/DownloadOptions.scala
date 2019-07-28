@@ -1,0 +1,33 @@
+package typings.atGoogleDashCloudStorage.buildSrcFileMod
+
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageNumbers.`false`
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageNumbers.`true`
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageStrings.crc32c
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageStrings.md5
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DownloadOptions extends CreateReadStreamOptions {
+  var destination: js.UndefOr[String] = js.undefined
+}
+
+object DownloadOptions {
+  @scala.inline
+  def apply(
+    destination: String = null,
+    end: Int | Double = null,
+    start: Int | Double = null,
+    userProject: String = null,
+    validation: md5 | crc32c | `false` | `true` = null
+  ): DownloadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DownloadOptions]
+  }
+}
+

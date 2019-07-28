@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for busboy v0.2.13
-// Project: https://www.npmjs.com/package/busboy
-// Definitions by: Jacob Baskin <https://github.com/jacobbaskin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

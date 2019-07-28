@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-little-router 15.0.0
-// Project: https://github.com/FormidableLabs/redux-little-router
-// Definitions by: priecint <https://github.com/priecint>
-//                 parkerziegler <https://github.com/parkerziegler>
-// TypeScript version: 2.4
-
-```
 

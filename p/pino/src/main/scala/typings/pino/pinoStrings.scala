@@ -1,0 +1,51 @@
+package typings.pino
+
+import typings.pino.pinoMod.Level
+import typings.pino.pinoMod.LevelWithSilent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object pinoStrings {
+  @js.native
+  sealed trait debug extends Level
+  
+  @js.native
+  sealed trait error extends Level
+  
+  @js.native
+  sealed trait fatal extends Level
+  
+  @js.native
+  sealed trait info extends Level
+  
+  @js.native
+  sealed trait `level-change` extends js.Object
+  
+  @js.native
+  sealed trait silent extends LevelWithSilent
+  
+  @js.native
+  sealed trait trace extends Level
+  
+  @js.native
+  sealed trait warn extends Level
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  @scala.inline
+  def `level-change`: `level-change` = "level-change".asInstanceOf[`level-change`]
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+}
+

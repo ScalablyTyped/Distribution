@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redom 3.12
-// Project: https://github.com/redom/redom/, https://redom.js.org
-// Definitions by: Rauli Laine <https://github.com/RauliL>
-//                 Felix Nehrke <https://github.com/nemoinho>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

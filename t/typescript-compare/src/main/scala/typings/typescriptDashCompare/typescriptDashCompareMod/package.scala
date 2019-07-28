@@ -1,0 +1,50 @@
+package typings.typescriptDashCompare
+
+import typings.typescriptDashCompare.typescriptDashCompareMod.CompareNs.Options
+import typings.typescriptDashCompare.typescriptDashCompareNumbers.`0`
+import typings.typescriptDashCompare.typescriptDashCompareNumbers.`1`
+import typings.typescriptDashCompare.typescriptDashCompareNumbers.`true`
+import typings.typescriptDashLogic.typescriptDashLogicMod.And
+import typings.typescriptDashLogic.typescriptDashLogicMod.If
+import typings.typescriptDashLogic.typescriptDashLogicMod.Not
+import typings.typescriptDashLogic.typescriptDashLogicMod.Or
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object typescriptDashCompareMod {
+  type Any[Type] = And[
+    typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `0`], 
+    typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `1`]
+  ]
+  type Compare[A, B, Options /* <: Options */] = If[
+    Extends[A, B], 
+    If[
+      Extends[B, A], 
+      /* import warning: ImportType.apply Failed type conversion: Options['equal' | 'broaderRight' | 'broaderLeft'] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: Options['broaderRight'] */ js.Any
+    ], 
+    If[
+      Extends[B, A], 
+      /* import warning: ImportType.apply Failed type conversion: Options['broaderLeft'] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: Options['mismatch'] */ js.Any
+    ]
+  ]
+  type Equal[A, B] = Or[
+    And[Any[A], Any[B]], 
+    And[
+      And[NotAny[A, `true`, `true`], NotAny[B, `true`, `true`]], 
+      And[Extends[A, B], Extends[B, A]]
+    ]
+  ]
+  type Extends[A, B] = Or[
+    Any[B], 
+    If[
+      Any[A], 
+      Any[B], 
+      typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[A, B]
+    ]
+  ]
+  type NotAny[Type, True, False] = Not[Any[Type]]
+  type NotEqual[A, B] = Not[Equal[A, B]]
+}

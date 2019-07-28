@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micro-events"
-version := "1.0-dt-20181231Z-849e7e"
+version := "1.0-dt-20181231Z-c1cf84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

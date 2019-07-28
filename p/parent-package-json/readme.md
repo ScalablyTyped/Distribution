@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parent-package-json 2.0
-// Project: https://github.com/maxrimue/parent-package-json, https://github.com/maxrimue/parentpackagejson
-// Definitions by: Simon McClive <https://github.com/sgmccli>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

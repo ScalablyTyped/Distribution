@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for emoji-flags 1.2
-// Project: https://github.com/matiassingers/emoji-flags
-// Definitions by: Todd Dukart <https://github.com/tdukart>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

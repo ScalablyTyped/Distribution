@@ -1,0 +1,25 @@
+package typings.parsimmon.parsimmonMod
+
+import typings.parsimmon.parsimmonNumbers.`-1`
+import typings.parsimmon.parsimmonNumbers.`true`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SuccessReply[T] extends Reply[T] {
+  var expected: js.Array[String]
+  var furthest: `-1`
+  var index: Double
+  var status: `true`
+  var value: T
+}
+
+object SuccessReply {
+  @scala.inline
+  def apply[T](expected: js.Array[String], furthest: `-1`, index: Double, status: `true`, value: T): SuccessReply[T] = {
+    val __obj = js.Dynamic.literal(expected = expected, furthest = furthest, index = index, status = status, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SuccessReply[T]]
+  }
+}
+

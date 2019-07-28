@@ -1,0 +1,19 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UsersUnblockParams extends js.Object {
+  var username: String
+}
+
+object UsersUnblockParams {
+  @scala.inline
+  def apply(username: String): UsersUnblockParams = {
+    val __obj = js.Dynamic.literal(username = username)
+  
+    __obj.asInstanceOf[UsersUnblockParams]
+  }
+}
+

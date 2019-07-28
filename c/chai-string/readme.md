@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-string 1.4.0
-// Project: https://github.com/onechiporenko/chai-string
-// Definitions by: Nick Malaguti <https://github.com/nmalaguti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

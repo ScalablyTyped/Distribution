@@ -1,0 +1,35 @@
+package typings.primereact.componentsCalendarCalendarMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LocaleSettings extends js.Object {
+  var clear: String
+  var dayNames: js.Array[String]
+  var dayNamesMin: js.Array[String]
+  var dayNamesShort: js.Array[String]
+  var firstDayOfWeek: js.UndefOr[Double] = js.undefined
+  var monthNames: js.Array[String]
+  var monthNamesShort: js.Array[String]
+  var today: String
+}
+
+object LocaleSettings {
+  @scala.inline
+  def apply(
+    clear: String,
+    dayNames: js.Array[String],
+    dayNamesMin: js.Array[String],
+    dayNamesShort: js.Array[String],
+    monthNames: js.Array[String],
+    monthNamesShort: js.Array[String],
+    today: String,
+    firstDayOfWeek: Int | Double = null
+  ): LocaleSettings = {
+    val __obj = js.Dynamic.literal(clear = clear, dayNames = dayNames, dayNamesMin = dayNamesMin, dayNamesShort = dayNamesShort, monthNames = monthNames, monthNamesShort = monthNamesShort, today = today)
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocaleSettings]
+  }
+}
+

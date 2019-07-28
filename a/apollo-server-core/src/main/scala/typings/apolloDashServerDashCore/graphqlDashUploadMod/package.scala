@@ -1,0 +1,10 @@
+package typings.apolloDashServerDashCore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object graphqlDashUploadMod {
+  type Request = js.Any
+  type Response = js.Any
+}

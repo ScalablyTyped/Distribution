@@ -1,0 +1,50 @@
+package typings.winrt.WindowsNs.DataNs.XmlNs.DomNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IXmlProcessingInstruction extends IXmlNode {
+  var data: String
+  var target: String
+}
+
+object IXmlProcessingInstruction {
+  @scala.inline
+  def apply(
+    appendChild: IXmlNode => IXmlNode,
+    attributes: XmlNamedNodeMap,
+    childNodes: XmlNodeList,
+    cloneNode: Boolean => IXmlNode,
+    data: String,
+    firstChild: IXmlNode,
+    getXml: () => String,
+    hasChildNodes: () => Boolean,
+    innerText: String,
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    lastChild: IXmlNode,
+    localName: js.Any,
+    namespaceUri: js.Any,
+    nextSibling: IXmlNode,
+    nodeName: String,
+    nodeType: NodeType,
+    nodeValue: js.Any,
+    normalize: () => Unit,
+    ownerDocument: XmlDocument,
+    parentNode: IXmlNode,
+    prefix: js.Any,
+    previousSibling: IXmlNode,
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    target: String
+  ): IXmlProcessingInstruction = {
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes, childNodes = childNodes, cloneNode = js.Any.fromFunction1(cloneNode), data = data, firstChild = firstChild, getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText, insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild, localName = localName, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), target = target)
+  
+    __obj.asInstanceOf[IXmlProcessingInstruction]
+  }
+}
+

@@ -1,0 +1,66 @@
+package typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Geometry
+  extends Accessor
+     with JSONSupport {
+  /**
+    * The cache is used to store values computed from geometries that need to cleared or recomputed upon mutation. An example is the extent of a polygon.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#cache)
+    */
+  val cache: js.Any = js.native
+  /**
+    * The extent of the geometry. For a point, the extent is null.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#extent)
+    */
+  val extent: Extent = js.native
+  /**
+    * Indicates if the geometry has M values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
+    */
+  var hasM: Boolean = js.native
+  /**
+    * Indicates if the geometry has Z (elevation) values.
+    * > **Z-values** defined in a geographic or metric coordinate system are expressed in meters. However, in local scenes that use a projected coordinate system, vertical units are assumed to be the same as the horizontal units specified by the service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
+    */
+  var hasZ: Boolean = js.native
+  /**
+    * The spatial reference of the geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
+    *
+    * @default WGS84 (wkid: 4326)
+    */
+  var spatialReference: SpatialReference = js.native
+  /**
+    * The geometry type.  **Possible Values:** point | multipoint | polyline | polygon | extent | mesh
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#type)
+    */
+  val `type`: String = js.native
+}
+
+@JSGlobal("__esri.Geometry")
+@js.native
+class GeometryCls () extends Geometry {
+  def this(properties: GeometryProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+}
+

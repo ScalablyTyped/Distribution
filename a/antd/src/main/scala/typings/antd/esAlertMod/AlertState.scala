@@ -1,0 +1,20 @@
+package typings.antd.esAlertMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AlertState extends js.Object {
+  var closed: Boolean
+  var closing: Boolean
+}
+
+object AlertState {
+  @scala.inline
+  def apply(closed: Boolean, closing: Boolean): AlertState = {
+    val __obj = js.Dynamic.literal(closed = closed, closing = closing)
+  
+    __obj.asInstanceOf[AlertState]
+  }
+}
+

@@ -1,0 +1,69 @@
+package typings.flatpickr.distTypesLocaleMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.flatpickr.flatpickrStrings.ar
+  - typings.flatpickr.flatpickrStrings.at
+  - typings.flatpickr.flatpickrStrings.az
+  - typings.flatpickr.flatpickrStrings.be
+  - typings.flatpickr.flatpickrStrings.bg
+  - typings.flatpickr.flatpickrStrings.bn
+  - typings.flatpickr.flatpickrStrings.bs
+  - typings.flatpickr.flatpickrStrings.cat
+  - typings.flatpickr.flatpickrStrings.cs
+  - typings.flatpickr.flatpickrStrings.cy
+  - typings.flatpickr.flatpickrStrings.da
+  - typings.flatpickr.flatpickrStrings.de
+  - typings.flatpickr.flatpickrStrings.default
+  - typings.flatpickr.flatpickrStrings.en
+  - typings.flatpickr.flatpickrStrings.eo
+  - typings.flatpickr.flatpickrStrings.es
+  - typings.flatpickr.flatpickrStrings.et
+  - typings.flatpickr.flatpickrStrings.fa
+  - typings.flatpickr.flatpickrStrings.fi
+  - typings.flatpickr.flatpickrStrings.fo
+  - typings.flatpickr.flatpickrStrings.fr
+  - typings.flatpickr.flatpickrStrings.gr
+  - typings.flatpickr.flatpickrStrings.he
+  - typings.flatpickr.flatpickrStrings.hi
+  - typings.flatpickr.flatpickrStrings.hr
+  - typings.flatpickr.flatpickrStrings.hu
+  - typings.flatpickr.flatpickrStrings.id
+  - typings.flatpickr.flatpickrStrings.is
+  - typings.flatpickr.flatpickrStrings.it
+  - typings.flatpickr.flatpickrStrings.ja
+  - typings.flatpickr.flatpickrStrings.ka
+  - typings.flatpickr.flatpickrStrings.ko
+  - typings.flatpickr.flatpickrStrings.km
+  - typings.flatpickr.flatpickrStrings.kz
+  - typings.flatpickr.flatpickrStrings.lt
+  - typings.flatpickr.flatpickrStrings.lv
+  - typings.flatpickr.flatpickrStrings.mk
+  - typings.flatpickr.flatpickrStrings.mn
+  - typings.flatpickr.flatpickrStrings.ms
+  - typings.flatpickr.flatpickrStrings.my
+  - typings.flatpickr.flatpickrStrings.nl
+  - typings.flatpickr.flatpickrStrings.no
+  - typings.flatpickr.flatpickrStrings.pa
+  - typings.flatpickr.flatpickrStrings.pl
+  - typings.flatpickr.flatpickrStrings.pt
+  - typings.flatpickr.flatpickrStrings.ro
+  - typings.flatpickr.flatpickrStrings.ru
+  - typings.flatpickr.flatpickrStrings.si
+  - typings.flatpickr.flatpickrStrings.sk
+  - typings.flatpickr.flatpickrStrings.sl
+  - typings.flatpickr.flatpickrStrings.sq
+  - typings.flatpickr.flatpickrStrings.sr
+  - typings.flatpickr.flatpickrStrings.sv
+  - typings.flatpickr.flatpickrStrings.th
+  - typings.flatpickr.flatpickrStrings.tr
+  - typings.flatpickr.flatpickrStrings.uk
+  - typings.flatpickr.flatpickrStrings.vn
+  - typings.flatpickr.flatpickrStrings.zh
+  - typings.flatpickr.flatpickrStrings.zh_tw
+*/
+trait key extends js.Object
+

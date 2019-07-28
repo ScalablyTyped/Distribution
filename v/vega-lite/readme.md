@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Generic class for storing properties that are explicitly specified
- * and implicitly determined by the compiler.
- * This is important for scale/axis/legend merging as
- * we want to prioritize properties that users explicitly specified.
- */
-/**
- * @minimum 1
- * @maximum 12
- * @TJS-type integer
- */
-/**
- * Vega-Lite's singleton logger utility.
- */
-
-```
 

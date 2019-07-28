@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for vinyl-source-stream
-// Project: https://github.com/hughsk/vinyl-source-stream
-// Definitions by: Asana <https://asana.com>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

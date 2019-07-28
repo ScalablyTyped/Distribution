@@ -1,0 +1,19 @@
+package typings.extjs.ExtNs.resizerNs
+
+import typings.extjs.ExtNs.IComponent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IHandle extends IComponent
+
+object IHandle {
+  @scala.inline
+  def apply(IComponent: IComponent = null, region: js.Any = null): IHandle = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[IHandle]
+  }
+}
+

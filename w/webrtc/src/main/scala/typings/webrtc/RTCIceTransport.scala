@@ -1,0 +1,43 @@
+package typings.webrtc
+
+import typings.std.RTCIceCandidate
+import typings.std.RTCIceCandidatePair
+import typings.std.RTCIceGatheringState
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RTCIceTransport extends js.Object {
+  //readonly role: RTCIceRole;
+  //readonly component: RTCIceComponent;
+  //readonly state: RTCIceTransportState;
+  val gatheringState: RTCIceGatheringState
+  var ongatheringstatechange: IceTransportEventHandler
+  var onselectedcandidatepairchange: IceTransportEventHandler
+  var onstatechange: IceTransportEventHandler
+  def getLocalCandidates(): js.Array[RTCIceCandidate]
+  def getLocalParameters(): RTCIceParameters | Null
+  def getRemoteCandidates(): js.Array[RTCIceCandidate]
+  def getRemoteParameters(): RTCIceParameters | Null
+  def getSelectedCandidatePair(): RTCIceCandidatePair | Null
+}
+
+object RTCIceTransport {
+  @scala.inline
+  def apply(
+    gatheringState: RTCIceGatheringState,
+    getLocalCandidates: () => js.Array[RTCIceCandidate],
+    getLocalParameters: () => RTCIceParameters | Null,
+    getRemoteCandidates: () => js.Array[RTCIceCandidate],
+    getRemoteParameters: () => RTCIceParameters | Null,
+    getSelectedCandidatePair: () => RTCIceCandidatePair | Null,
+    ongatheringstatechange: IceTransportEventHandler,
+    onselectedcandidatepairchange: IceTransportEventHandler,
+    onstatechange: IceTransportEventHandler
+  ): RTCIceTransport = {
+    val __obj = js.Dynamic.literal(gatheringState = gatheringState, getLocalCandidates = js.Any.fromFunction0(getLocalCandidates), getLocalParameters = js.Any.fromFunction0(getLocalParameters), getRemoteCandidates = js.Any.fromFunction0(getRemoteCandidates), getRemoteParameters = js.Any.fromFunction0(getRemoteParameters), getSelectedCandidatePair = js.Any.fromFunction0(getSelectedCandidatePair), ongatheringstatechange = ongatheringstatechange.asInstanceOf[js.Any], onselectedcandidatepairchange = onselectedcandidatepairchange.asInstanceOf[js.Any], onstatechange = onstatechange.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RTCIceTransport]
+  }
+}
+

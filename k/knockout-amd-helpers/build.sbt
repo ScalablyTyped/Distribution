@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout-amd-helpers"
-version := "0.0-unknown-dt-20190322Z-d16e1c"
+version := "0.0-unknown-dt-20190322Z-0319be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

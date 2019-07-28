@@ -28,15 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Milkcocoa 0.2.8
-// Project: https://mlkcca.com/
-// Definitions by: odangosan <https://github.com/odangosan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Api Reference : https://mlkcca.com/document/api-js.html
-
-```
 

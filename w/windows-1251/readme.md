@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for windows-1251 v0.1.2
-// Project: https://github.com/mathiasbynens/windows-1251
-// Definitions by: RomanGolovanov <https://github.com/RomanGolovanov>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

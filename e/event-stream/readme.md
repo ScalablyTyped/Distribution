@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for event-stream v3.3.2
-// Project: https://github.com/dominictarr/event-stream
-// Definitions by: David Gardiner <https://github.com/flcdrg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

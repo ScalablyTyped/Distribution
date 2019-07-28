@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-srp
-// Project: https://github.com/mozilla/node-srp
-// Definitions by: Pat Smuk <https://github.com/Patman64>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -28,16 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jQuery Cycle2 version 2.1
-// Project: http://jquery.malsup.com/cycle2/
-//          https://github.com/malsup/cycle2
-// Definitions by: Donny Nadolny <https://github.com/dnadolny>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

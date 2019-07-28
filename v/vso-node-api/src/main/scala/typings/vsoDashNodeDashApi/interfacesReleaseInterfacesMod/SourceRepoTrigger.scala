@@ -1,0 +1,20 @@
+package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SourceRepoTrigger extends ReleaseTriggerBase {
+  var alias: String
+  var branchFilters: js.Array[String]
+}
+
+object SourceRepoTrigger {
+  @scala.inline
+  def apply(alias: String, branchFilters: js.Array[String], triggerType: ReleaseTriggerType): SourceRepoTrigger = {
+    val __obj = js.Dynamic.literal(alias = alias, branchFilters = branchFilters, triggerType = triggerType)
+  
+    __obj.asInstanceOf[SourceRepoTrigger]
+  }
+}
+

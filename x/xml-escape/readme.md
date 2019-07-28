@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for xml-escape 1.1
-// Project: https://github.com/miketheprogrammer/xml-escape
-// Definitions by: Charles Kenney <https://github.com/charliekenney23>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Escape an XML string
- *
- * @param string String of XML to escape
- * @param ignore Characters to ignore
- */
-
-```
 

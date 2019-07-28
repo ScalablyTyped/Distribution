@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for calq
-// Project: https://calq.io/docs/client/javascript/reference
-// Definitions by: Eirik Hoem <https://github.com/eirikhm>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

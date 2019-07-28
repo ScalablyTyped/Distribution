@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-dijkstra 2.5
-// Project: https://github.com/albertorestifo/node-dijkstra
-// Definitions by: Jorge López <https://github.com/nokutu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

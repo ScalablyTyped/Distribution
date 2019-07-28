@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-tap-event-plugin
-// Project: https://github.com/zilverline/react-tap-event-plugin
-// Definitions by: Michael Ledin <https://github.com/mxl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

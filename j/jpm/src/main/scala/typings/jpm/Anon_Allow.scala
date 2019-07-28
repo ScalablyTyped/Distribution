@@ -1,0 +1,46 @@
+package typings.jpm
+
+import typings.jpm.jpmStrings.end
+import typings.jpm.jpmStrings.ready
+import typings.jpm.jpmStrings.start
+import typings.std.RegExp
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Allow extends js.Object {
+  var allow: js.UndefOr[Anon_Script] = js.undefined
+  var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
+  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
+  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
+  var contentScriptWhen: js.UndefOr[start | ready | end] = js.undefined
+  var contentURL: js.UndefOr[String] = js.undefined
+  var include: js.UndefOr[String | (js.Array[RegExp | String]) | RegExp] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, _]] = js.undefined
+}
+
+object Anon_Allow {
+  @scala.inline
+  def apply(
+    allow: Anon_Script = null,
+    contentScript: String | js.Array[String] = null,
+    contentScriptFile: String | js.Array[String] = null,
+    contentScriptOptions: js.Any = null,
+    contentScriptWhen: start | ready | end = null,
+    contentURL: String = null,
+    include: String | (js.Array[RegExp | String]) | RegExp = null,
+    onMessage: /* message */ String => _ = null
+  ): Anon_Allow = {
+    val __obj = js.Dynamic.literal()
+    if (allow != null) __obj.updateDynamic("allow")(allow)
+    if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
+    if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
+    if (contentScriptOptions != null) __obj.updateDynamic("contentScriptOptions")(contentScriptOptions)
+    if (contentScriptWhen != null) __obj.updateDynamic("contentScriptWhen")(contentScriptWhen.asInstanceOf[js.Any])
+    if (contentURL != null) __obj.updateDynamic("contentURL")(contentURL)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
+    __obj.asInstanceOf[Anon_Allow]
+  }
+}
+

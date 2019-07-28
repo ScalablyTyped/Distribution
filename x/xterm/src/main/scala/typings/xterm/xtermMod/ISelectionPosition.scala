@@ -1,0 +1,37 @@
+package typings.xterm.xtermMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * An object representing a selecrtion within the terminal.
+  */
+trait ISelectionPosition extends js.Object {
+  /**
+    * The end column of the selection.
+    */
+  var endColumn: Double
+  /**
+    * The end row of the selection.
+    */
+  var endRow: Double
+  /**
+    * The start column of the selection.
+    */
+  var startColumn: Double
+  /**
+    * The start row of the selection.
+    */
+  var startRow: Double
+}
+
+object ISelectionPosition {
+  @scala.inline
+  def apply(endColumn: Double, endRow: Double, startColumn: Double, startRow: Double): ISelectionPosition = {
+    val __obj = js.Dynamic.literal(endColumn = endColumn, endRow = endRow, startColumn = startColumn, startRow = startRow)
+  
+    __obj.asInstanceOf[ISelectionPosition]
+  }
+}
+

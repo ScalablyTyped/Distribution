@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for leaflet-providers 1.2
-// Project: https://github.com/leaflet-extras/leaflet-providers#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-//                 Simon Legner <https://github.com/simon04>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

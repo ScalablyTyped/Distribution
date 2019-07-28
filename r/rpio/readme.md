@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-rpio
-// Project: https://github.com/jperkin/node-rpio
-// Definitions by: Dominik Palo <https://github.com/DominikPalo>
-//                 Hannes Früchtenicht <https://github.com/Pencl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

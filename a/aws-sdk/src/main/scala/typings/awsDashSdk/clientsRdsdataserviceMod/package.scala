@@ -1,0 +1,45 @@
+package typings.awsDashSdk
+
+import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+import typings.node.Buffer
+import typings.std.Uint8Array
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object clientsRdsdataserviceMod {
+  type Arn = java.lang.String
+  type ArrayValueList = js.Array[Value]
+  type Boolean = scala.Boolean
+  type BoxedBoolean = scala.Boolean
+  type BoxedDouble = Double
+  type BoxedFloat = Double
+  type BoxedInteger = Double
+  type BoxedLong = Double
+  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  type DbName = java.lang.String
+  type FieldList = js.Array[Field]
+  type Id = java.lang.String
+  type Integer = Double
+  type Long = Double
+  type Metadata = js.Array[ColumnMetadata]
+  type ParameterName = java.lang.String
+  type Records = js.Array[Record]
+  type RecordsUpdated = Double
+  type Row = js.Array[Value]
+  type SqlParameterSets = js.Array[SqlParametersList]
+  type SqlParametersList = js.Array[SqlParameter]
+  type SqlRecords = js.Array[FieldList]
+  type SqlStatement = java.lang.String
+  type SqlStatementResults = js.Array[SqlStatementResult]
+  type String = java.lang.String
+  type TransactionStatus = java.lang.String
+  type UpdateResults = js.Array[UpdateResult]
+  type _Blob = Buffer | Uint8Array | Blob | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`2018-08-01`
+    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - java.lang.String
+  */
+  type apiVersion = _apiVersion | java.lang.String
+}

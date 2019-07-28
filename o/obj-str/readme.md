@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for obj-str 1.0
-// Project: https://github.com/lukeed/obj-str#readme
-// Definitions by: Sascha Englert <https://github.com/saenglert>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

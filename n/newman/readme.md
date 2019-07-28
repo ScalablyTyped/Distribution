@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for newman 3.11
-// Project: https://github.com/postmanlabs/newman
-// Definitions by: Leonid Logvinov <https://github.com/LogvinovLeon>
-//                 Graham McGregor <https://github.com/Graham42>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

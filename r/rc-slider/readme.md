@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rc-slider 8.6
-// Project: http://github.com/react-component/slider
-// Definitions by: Marcinkus Mantas <https://github.com/mantasmarcinkus>
-//                 Alexander Mattoni <https://github.com/mattoni>
-//                 Austin Turner <https://github.com/paustint>
-//                 Jacob Froman <https://github.com/j-fro>
-//                 Deanna Veale <https://github.com/Deanna2>
-//                 Nick Maddren <https://github.com/nicholasmaddren>
-//                 Roman Nevolin <https://github.com/nulladdict>
-//                 Mojtaba Izadmehr <https://github.com/m-izadmehr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

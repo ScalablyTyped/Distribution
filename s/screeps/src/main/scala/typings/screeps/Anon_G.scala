@@ -1,0 +1,30 @@
+package typings.screeps
+
+import typings.screeps.screepsStrings.GH
+import typings.screeps.screepsStrings.KH
+import typings.screeps.screepsStrings.LH
+import typings.screeps.screepsStrings.OH
+import typings.screeps.screepsStrings.UH
+import typings.screeps.screepsStrings.ZH
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_G extends js.Object {
+  var G: GH
+  var K: KH
+  var L: LH
+  var O: OH
+  var U: UH
+  var Z: ZH
+}
+
+object Anon_G {
+  @scala.inline
+  def apply(G: GH, K: KH, L: LH, O: OH, U: UH, Z: ZH): Anon_G = {
+    val __obj = js.Dynamic.literal(G = G, K = K, L = L, O = O, U = U, Z = Z)
+  
+    __obj.asInstanceOf[Anon_G]
+  }
+}
+

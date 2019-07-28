@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for smart-truncate 1.0
-// Project: https://github.com/millerized/smart-truncate
-// Definitions by: Omer Yalhi <https://github.com/oyalhi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parse5-html-rewriting-stream 5.1
-// Project: https://github.com/inikulin/parse5/tree/master/packages/parse5-html-rewriting-stream, https://github.com/inikulin/parse5
-// Definitions by: Sam Li <https://github.com/samuelli>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

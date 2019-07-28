@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for kissfft-js 0.1
-// Project: https://github.com/j-funk/kissfft-js#readme
-// Definitions by: racerhere <https://github.com/racerhere>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/types/kissfft-js
-
-```
 

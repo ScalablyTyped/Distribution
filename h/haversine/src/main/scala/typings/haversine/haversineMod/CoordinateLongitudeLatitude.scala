@@ -1,0 +1,21 @@
+package typings.haversine.haversineMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.haversine.haversineMod._ParamType because Already inherited */ trait CoordinateLongitudeLatitude extends _Coordinate {
+  var latitude: Double
+  var longitude: Double
+}
+
+object CoordinateLongitudeLatitude {
+  @scala.inline
+  def apply(latitude: Double, longitude: Double): CoordinateLongitudeLatitude = {
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[CoordinateLongitudeLatitude]
+  }
+}
+

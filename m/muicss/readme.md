@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for muicss React bindings 0.9
-// Project: https://www.muicss.com/
-// Definitions by: Samuel Neff <https://github.com/samuelneff>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-// all definitions in react.d.ts and subdirs
-
-```
 

@@ -1,0 +1,27 @@
+package typings.winrt.WindowsNs.DevicesNs.SensorsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ICompass extends js.Object {
+  var minimumReportInterval: Double
+  var onreadingchanged: js.Any
+  var reportInterval: Double
+  def getCurrentReading(): CompassReading
+}
+
+object ICompass {
+  @scala.inline
+  def apply(
+    getCurrentReading: () => CompassReading,
+    minimumReportInterval: Double,
+    onreadingchanged: js.Any,
+    reportInterval: Double
+  ): ICompass = {
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
+  
+    __obj.asInstanceOf[ICompass]
+  }
+}
+

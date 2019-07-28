@@ -1,0 +1,31 @@
+package typings.browserDashSync.browserDashSyncMod
+
+import typings.browserDashSync.Anon_Fn
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SnippetOptions extends js.Object {
+  var async: js.UndefOr[Boolean] = js.undefined
+  var blacklist: js.UndefOr[js.Array[String]] = js.undefined
+  var rule: js.UndefOr[Anon_Fn] = js.undefined
+  var whitelist: js.UndefOr[js.Array[String]] = js.undefined
+}
+
+object SnippetOptions {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[Boolean] = js.undefined,
+    blacklist: js.Array[String] = null,
+    rule: Anon_Fn = null,
+    whitelist: js.Array[String] = null
+  ): SnippetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[SnippetOptions]
+  }
+}
+

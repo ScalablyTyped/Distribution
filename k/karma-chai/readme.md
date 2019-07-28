@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for karma-chai 0.1
-// Project: http://xdissent.github.io/karma-chai
-// Definitions by: JayAndCatchFire <https://github.com/JayAndCatchFire>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for wonder.js 0.1.0
-// Project: https://github.com/yyc-git/Wonder.js
-// Definitions by: YYC <https://github.com/yyc-git>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,21 @@
+package typings.intercomDashClient.tagMod
+
+import typings.intercomDashClient.userMod.UserIdentifier
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TagUsers extends TagOper {
+  var name: String
+  var users: js.Array[UserIdentifier]
+}
+
+object TagUsers {
+  @scala.inline
+  def apply(name: String, users: js.Array[UserIdentifier]): TagUsers = {
+    val __obj = js.Dynamic.literal(name = name, users = users)
+  
+    __obj.asInstanceOf[TagUsers]
+  }
+}
+

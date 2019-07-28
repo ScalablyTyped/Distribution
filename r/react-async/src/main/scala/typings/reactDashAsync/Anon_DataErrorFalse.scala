@@ -1,0 +1,49 @@
+package typings.reactDashAsync
+
+import typings.reactDashAsync.reactDashAsyncNumbers.`false`
+import typings.reactDashAsync.reactDashAsyncNumbers.`true`
+import typings.reactDashAsync.reactDashAsyncStrings.fulfilled
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_DataErrorFalse[T] extends js.Object {
+  var data: T
+  var error: js.UndefOr[scala.Nothing] = js.undefined
+  var finishedAt: Date
+  var isFulfilled: `true`
+  var isInitial: `false`
+  var isLoading: `false`
+  var isPending: `false`
+  var isRejected: `false`
+  var isResolved: `true`
+  var isSettled: `true`
+  var startedAt: Date
+  var status: fulfilled
+  var value: T
+}
+
+object Anon_DataErrorFalse {
+  @scala.inline
+  def apply[T](
+    data: T,
+    finishedAt: Date,
+    isFulfilled: `true`,
+    isInitial: `false`,
+    isLoading: `false`,
+    isPending: `false`,
+    isRejected: `false`,
+    isResolved: `true`,
+    isSettled: `true`,
+    startedAt: Date,
+    status: fulfilled,
+    value: T,
+    error: js.UndefOr[scala.Nothing] = js.undefined
+  ): Anon_DataErrorFalse[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], finishedAt = finishedAt, isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status, value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Anon_DataErrorFalse[T]]
+  }
+}
+

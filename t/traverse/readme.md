@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for traverse 0.6.7
-// Project: https://github.com/substack/js-traverse
-// Definitions by: Bazyli Brzóska <https://invent.life>, newclear <https://github.com/newclear>, Guten Ye <https://guten.me>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

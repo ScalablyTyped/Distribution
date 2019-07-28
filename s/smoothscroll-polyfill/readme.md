@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for smoothscroll-polyfill 0.3
-// Project: https://iamdustan.github.io/smoothscroll, https://iamdustan.com/smoothscroll
-// Definitions by: Michael Strobel <https://github.com/kryops>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

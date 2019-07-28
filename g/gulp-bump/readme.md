@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-bump 2.8
-// Project: https://github.com/stevelacy/gulp-bump, http://github.com/stevelacy/gulp-bump
-// Definitions by: silkentrance <https://github.com/silkentrance>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

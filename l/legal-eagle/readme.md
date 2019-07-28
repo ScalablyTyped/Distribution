@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for legal-eagle 0.15
-// Project: https://github.com/atom/legal-eagle
-// Definitions by: Jed Fox <https://github.com/j-f1>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

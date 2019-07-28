@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-sticky-box 0.7
-// Project: https://github.com/codecks-io/react-sticky-box, https://github.com/danielberndt/react-sticky-box
-// Definitions by: Konstantin Lebedev <https://github.com/koss-lebedev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

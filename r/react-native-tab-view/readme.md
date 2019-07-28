@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-tab-view 1.0
-// Project: https://github.com/react-native-community/react-native-tab-view
-// Definitions by: Kalle Ott <https://github.com/kaoDev>
-//                 Kyle Roach <https://github.com/iRoachie>
-//                 Tim Wang <https://github.com/timwangdev>
-//                 Gerardo Pacheco <https://github.com/geriux>
-//                 Kazuyuki Takahashi <https://github.com/kazyk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for reconnectingwebsocket 1.0
-// Project: https://github.com/joewalnes/reconnecting-websocket
-// Definitions by: Nicholas Guarracino <https://github.com/nguarracino>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

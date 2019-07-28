@@ -1,0 +1,50 @@
+package typings.vscode.vscodeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait QuickPickItem extends js.Object {
+  /**
+  		 * Always show this item.
+  		 */
+  var alwaysShow: js.UndefOr[Boolean] = js.undefined
+  /**
+  		 * A human readable string which is rendered less prominent.
+  		 */
+  var description: js.UndefOr[String] = js.undefined
+  /**
+  		 * A human readable string which is rendered less prominent.
+  		 */
+  var detail: js.UndefOr[String] = js.undefined
+  /**
+  		 * A human readable string which is rendered prominent.
+  		 */
+  var label: String
+  /**
+  		 * Optional flag indicating if this item is picked initially.
+  		 * (Only honored when the picker allows multiple selections.)
+  		 *
+  		 * @see [QuickPickOptions.canPickMany](#QuickPickOptions.canPickMany)
+  		 */
+  var picked: js.UndefOr[Boolean] = js.undefined
+}
+
+object QuickPickItem {
+  @scala.inline
+  def apply(
+    label: String,
+    alwaysShow: js.UndefOr[Boolean] = js.undefined,
+    description: String = null,
+    detail: String = null,
+    picked: js.UndefOr[Boolean] = js.undefined
+  ): QuickPickItem = {
+    val __obj = js.Dynamic.literal(label = label)
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (!js.isUndefined(picked)) __obj.updateDynamic("picked")(picked)
+    __obj.asInstanceOf[QuickPickItem]
+  }
+}
+

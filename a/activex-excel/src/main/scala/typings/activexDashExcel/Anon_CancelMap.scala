@@ -1,0 +1,24 @@
+package typings.activexDashExcel
+
+import typings.activexDashExcel.ExcelNs.Workbook
+import typings.activexDashExcel.ExcelNs.XmlMap
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CancelMap extends js.Object {
+  var Cancel: Boolean
+  val Map: XmlMap
+  val Url: String
+  val Wb: Workbook
+}
+
+object Anon_CancelMap {
+  @scala.inline
+  def apply(Cancel: Boolean, Map: XmlMap, Url: String, Wb: Workbook): Anon_CancelMap = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Map = Map, Url = Url, Wb = Wb)
+  
+    __obj.asInstanceOf[Anon_CancelMap]
+  }
+}
+

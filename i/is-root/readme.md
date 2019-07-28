@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if the process is running as root user, for example, one started with `sudo`.
-
-@example
-```
-// index.js
-import isRoot = require('is-root');
-
-console.log(isRoot());
-
-// $ sudo node index.js
-// true
-```
-*/
-
-```
 

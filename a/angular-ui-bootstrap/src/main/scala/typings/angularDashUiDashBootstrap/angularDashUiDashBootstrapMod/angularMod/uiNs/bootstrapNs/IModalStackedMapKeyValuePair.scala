@@ -1,0 +1,23 @@
+package typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IModalStackedMapKeyValuePair extends js.Object {
+  var key: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService
+  var value: js.Any
+}
+
+object IModalStackedMapKeyValuePair {
+  @scala.inline
+  def apply(
+    key: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService,
+    value: js.Any
+  ): IModalStackedMapKeyValuePair = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[IModalStackedMapKeyValuePair]
+  }
+}
+

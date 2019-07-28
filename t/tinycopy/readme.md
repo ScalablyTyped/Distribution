@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tinycopy 2.1.2
-// Project: https://github.com/vvatanabe/tinycopy
-// Definitions by: Yuichi Watanabe <https://github.com/vvatanabe>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

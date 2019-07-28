@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for deep-assign 0.1
-// Project: https://github.com/sindresorhus/deep-assign
-// Definitions by: Ionut Costica <https://github.com/souldreamer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Pretty much just returns the target object
- * @param target Base object
- */
-
-```
 

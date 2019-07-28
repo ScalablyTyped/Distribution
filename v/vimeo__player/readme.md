@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @vimeo/player 2.9.1
-// Project: https://github.com/vimeo/player.js
-// Definitions by: Denis Yılmaz <https://github.com/denisyilmaz>
-//                 Felix Albert <f.albert.work@icloud.com>
-//                 Tim Chen <https://github.com/timc13>
-//                 Terry Mun <https://github.com/terrymun>
-//                 Coskun Deniz <deniz@tassomai.com>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

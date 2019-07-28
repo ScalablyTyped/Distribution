@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for array-binarysearch.closest 0.2
-// Project: https://www.npmjs.com/package/array-binarysearch.closest
-// Definitions by: Heye Vöcking <https://github.com/hvoecking>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

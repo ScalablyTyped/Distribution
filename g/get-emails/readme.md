@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get all email addresses in a string.
-
-@example
-```
-import getEmails = require('get-emails');
-
-const text = 'Lorem ipsum dolor, sindresorhus@gmail.com consectetuer unicorn@rainbow.cake elit.';
-
-getEmails(text);
-//=> Set {'sindresorhus@gmail.com', 'unicorn@rainbow.cake'}
-```
-*/
-
-```
 

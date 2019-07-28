@@ -1,0 +1,19 @@
+package typings.antd.esTimeDashPickerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TimePickerLocale extends js.Object {
+  var placeholder: String
+}
+
+object TimePickerLocale {
+  @scala.inline
+  def apply(placeholder: String): TimePickerLocale = {
+    val __obj = js.Dynamic.literal(placeholder = placeholder)
+  
+    __obj.asInstanceOf[TimePickerLocale]
+  }
+}
+

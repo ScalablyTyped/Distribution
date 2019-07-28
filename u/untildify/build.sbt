@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "untildify"
-version := "4.0.0-f7b473"
+version := "4.0.0-bc6258"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,15 +12,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Google Analytics API
-// Project: https://developers.google.com/analytics/devguides/reporting/core/v4/
-// Definitions by: César Costas <https://github.com/gatsbimantico>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for workbox-webpack-plugin 4.1
-// Project: https://github.com/GoogleChrome/workbox/blob/master/packages/workbox-webpack-plugin, https://github.com/googlechrome/workbox
-// Definitions by: Kevin Groat <https://github.com/kgroat>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

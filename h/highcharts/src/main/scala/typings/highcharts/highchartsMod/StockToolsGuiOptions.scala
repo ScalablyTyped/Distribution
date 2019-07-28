@@ -1,0 +1,59 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StockToolsGuiOptions extends js.Object {
+  /**
+    * (Highstock) A collection of strings pointing to config options for the
+    * toolbar items. Each name refers to unique key from definitions object.
+    */
+  var buttons: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * (Highstock) A CSS class name to apply to the stocktools' div, allowing
+    * unique CSS styling for each chart.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
+    * (Highstock) An options object of the buttons definitions. Each name
+    * refers to unique key from buttons array.
+    */
+  var definitions: js.UndefOr[js.Object | StockToolsGuiDefinitionsOptions] = js.undefined
+  /**
+    * (Highstock) Enable or disable the stockTools gui.
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highstock) Path where Highcharts will look for icons. Change this to use
+    * icons from a different server.
+    */
+  var iconsURL: js.UndefOr[String] = js.undefined
+  /**
+    * (Highstock) A CSS class name to apply to the container of buttons,
+    * allowing unique CSS styling for each chart.
+    */
+  var toolbarClassName: js.UndefOr[String] = js.undefined
+}
+
+object StockToolsGuiOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[_] = null,
+    className: String = null,
+    definitions: js.Object | StockToolsGuiDefinitionsOptions = null,
+    enabled: js.UndefOr[Boolean] = js.undefined,
+    iconsURL: String = null,
+    toolbarClassName: String = null
+  ): StockToolsGuiOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL)
+    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName)
+    __obj.asInstanceOf[StockToolsGuiOptions]
+  }
+}
+

@@ -1,0 +1,12 @@
+package typings.jasmineDashExpect.distToBeHtmlStringMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jasmine-expect/dist/toBeHtmlString", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val toBeHtmlString: ToBeHtmlString = js.native
+}
+

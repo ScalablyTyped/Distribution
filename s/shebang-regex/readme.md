@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Regular expression for matching a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line.
-
-@example
-```
-import shebangRegex = require('shebang-regex');
-
-const string = '#!/usr/bin/env node\nconsole.log("unicorns");';
-
-shebangRegex.test(string);
-//=> true
-
-shebangRegex.exec(string)[0];
-//=> '#!/usr/bin/env node'
-
-shebangRegex.exec(string)[1];
-//=> '/usr/bin/env node'
-```
-*/
-
-```
 

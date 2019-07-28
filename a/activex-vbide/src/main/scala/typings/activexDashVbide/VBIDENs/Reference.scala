@@ -1,0 +1,25 @@
+package typings.activexDashVbide.VBIDENs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("VBIDE.Reference")
+@js.native
+class Reference protected () extends js.Object {
+  val BuiltIn: Boolean = js.native
+  @JSName("Collection")
+  val Collection_Original: References = js.native
+  val Description: String = js.native
+  val FullPath: String = js.native
+  val Guid: String = js.native
+  val IsBroken: Boolean = js.native
+  val Major: Double = js.native
+  val Minor: Double = js.native
+  val Name: String = js.native
+  val Type: vbext_RefKind = js.native
+  val VBE: typings.activexDashVbide.VBIDENs.VBE = js.native
+  var `VBIDE.Reference_typekey`: Reference = js.native
+  def Collection(index: js.Any): Reference = js.native
+}
+

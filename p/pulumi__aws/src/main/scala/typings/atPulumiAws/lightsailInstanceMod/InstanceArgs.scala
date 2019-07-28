@@ -1,0 +1,62 @@
+package typings.atPulumiAws.lightsailInstanceMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InstanceArgs extends js.Object {
+  /**
+    * The Availability Zone in which to create your
+    * instance (see list below)
+    */
+  val availabilityZone: Input[String]
+  /**
+    * The ID for a virtual private server image
+    * (see list below)
+    */
+  val blueprintId: Input[String]
+  /**
+    * The bundle of specification information (see list below)
+    */
+  val bundleId: Input[String]
+  /**
+    * The name of your key pair. Created in the
+    * Lightsail console (cannot use `aws_key_pair` at this time)
+    */
+  val keyPairName: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the Lightsail Instance
+    */
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  /**
+    * launch script to configure server with additional user data
+    */
+  val userData: js.UndefOr[Input[String]] = js.undefined
+}
+
+object InstanceArgs {
+  @scala.inline
+  def apply(
+    availabilityZone: Input[String],
+    blueprintId: Input[String],
+    bundleId: Input[String],
+    keyPairName: Input[String] = null,
+    name: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null,
+    userData: Input[String] = null
+  ): InstanceArgs = {
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any])
+    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceArgs]
+  }
+}
+

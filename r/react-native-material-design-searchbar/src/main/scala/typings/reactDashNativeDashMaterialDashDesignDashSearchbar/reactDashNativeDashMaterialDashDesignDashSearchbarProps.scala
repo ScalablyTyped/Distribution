@@ -1,0 +1,13 @@
+package typings.reactDashNativeDashMaterialDashDesignDashSearchbar
+
+import typings.reactDashNativeDashMaterialDashDesignDashSearchbar.reactDashNativeDashMaterialDashDesignDashSearchbarMod.SearchBarProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashMaterialDashDesignDashSearchbarProps {
+  @scala.inline
+  def ReactDashNativeDashMaterialDashDesignDashSearchbarProps: SearchBarProps.type = typings.reactDashNativeDashMaterialDashDesignDashSearchbar.reactDashNativeDashMaterialDashDesignDashSearchbarMod.SearchBarProps
+  type ReactDashNativeDashMaterialDashDesignDashSearchbarProps = SearchBarProps
+}
+

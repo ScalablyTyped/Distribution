@@ -1,0 +1,21 @@
+package typings.sdpDashTransform
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Direction extends js.Object {
+  var direction: String
+  var id: Double | String
+  var params: js.UndefOr[String] = js.undefined
+}
+
+object Anon_Direction {
+  @scala.inline
+  def apply(direction: String, id: Double | String, params: String = null): Anon_Direction = {
+    val __obj = js.Dynamic.literal(direction = direction, id = id.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Direction]
+  }
+}
+

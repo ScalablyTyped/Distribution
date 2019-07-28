@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * The namespace's name is the same as the exported EggCookies,
- * so you can solely use CookieGetOptions and CookieSetOptions
- * when you use
- * `import {CookieGetOptions, CookieSetOptions} from 'egg-cookies'`.
- */
-
-```
 

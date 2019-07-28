@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for telebot 1.2
-// Project: https://github.com/mullwar/telebot
-// Definitions by: Simone Mariotti <https://github.com/mariotsi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

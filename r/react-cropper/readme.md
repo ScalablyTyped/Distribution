@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-cropper 0.10
-// Project: https://github.com/roadmanfong/react-cropper, http://roadmanfong.github.io/react-cropper
-// Definitions by: Stepan Mikhaylyuk <https://github.com/stepancar>
-//                 Walter Barbagallo <https://github.com/bwlt>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

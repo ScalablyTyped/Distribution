@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-image-crop 8.1
-// Project: https://github.com/DominicTobias/react-image-crop
-// Definitions by: Daniela Yassuda <https://github.com/danielasy>
-//                 Elias Chaaya <https://github.com/chaaya>
-//                 Søren Englund <https://github.com/englund0110>
-//                 Jonathan Guo <https://github.com/JonathanGuo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

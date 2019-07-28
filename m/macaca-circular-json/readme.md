@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for macaca-circular-json 0.4
-// Project: https://github.com/macacajs/circular-json
-// Definitions by: Jonathan Pevarnek <https://github.com/jpevarnek>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

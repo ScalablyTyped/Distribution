@@ -1,0 +1,46 @@
+package typings.atPulumiAws.cloudformationStackSetInstanceMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StackSetInstanceArgs extends js.Object {
+  /**
+    * Target AWS Account ID to create a Stack based on the Stack Set. Defaults to current account.
+    */
+  val accountId: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Key-value map of input parameters to override from the Stack Set for this Instance.
+    */
+  val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  /**
+    * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
+    */
+  val region: js.UndefOr[Input[String]] = js.undefined
+  val retainStack: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * Name of the Stack Set.
+    */
+  val stackSetName: Input[String]
+}
+
+object StackSetInstanceArgs {
+  @scala.inline
+  def apply(
+    stackSetName: Input[String],
+    accountId: Input[String] = null,
+    parameterOverrides: Input[StringDictionary[Input[String]]] = null,
+    region: Input[String] = null,
+    retainStack: Input[Boolean] = null
+  ): StackSetInstanceArgs = {
+    val __obj = js.Dynamic.literal(stackSetName = stackSetName.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (parameterOverrides != null) __obj.updateDynamic("parameterOverrides")(parameterOverrides.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (retainStack != null) __obj.updateDynamic("retainStack")(retainStack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackSetInstanceArgs]
+  }
+}
+

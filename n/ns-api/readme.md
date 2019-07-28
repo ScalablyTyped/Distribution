@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ns-api 2.0
-// Project: https://github.com/fvdm/nodejs-ns-api#readme
-// Definitions by: Sander Koenders <https://github.com/Archcry>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

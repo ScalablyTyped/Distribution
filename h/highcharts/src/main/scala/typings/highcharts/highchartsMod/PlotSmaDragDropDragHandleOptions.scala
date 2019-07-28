@@ -1,0 +1,65 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PlotSmaDragDropDragHandleOptions extends js.Object {
+  /**
+    * (Highstock) The class name of the drag handles. Defaults to
+    * `highcharts-drag-handle`.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
+    * (Highstock) The fill color of the drag handles.
+    */
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highstock) The mouse cursor to use for the drag handles. By default this
+    * is intelligently switching between `ew-resize` and `ns-resize` depending
+    * on the direction the point is being dragged.
+    */
+  var cursor: js.UndefOr[String] = js.undefined
+  /**
+    * (Highstock) The line color of the drag handles.
+    */
+  var lineColor: js.UndefOr[ColorString] = js.undefined
+  /**
+    * (Highstock) The line width for the drag handles.
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highstock) Function to define the SVG path to use for the drag handles.
+    * Takes the point as argument. Should return an SVG path in array format.
+    * The SVG path is automatically positioned on the point.
+    */
+  var pathFormatter: js.UndefOr[js.Function] = js.undefined
+  /**
+    * (Highstock) The z index for the drag handles.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
+}
+
+object PlotSmaDragDropDragHandleOptions {
+  @scala.inline
+  def apply(
+    className: String = null,
+    color: ColorString | GradientColorObject | PatternObject = null,
+    cursor: String = null,
+    lineColor: ColorString = null,
+    lineWidth: Int | Double = null,
+    pathFormatter: js.Function = null,
+    zIndex: Int | Double = null
+  ): PlotSmaDragDropDragHandleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (pathFormatter != null) __obj.updateDynamic("pathFormatter")(pathFormatter)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotSmaDragDropDragHandleOptions]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for uinput 1.1
-// Project: https://github.com/santigimeno/node-uinput#readme
-// Definitions by: Florian Richter <https://github.com/Fidge123>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

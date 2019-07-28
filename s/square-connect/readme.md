@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for square-connect 2.20190508
-// Project: https://docs.connect.squareup.com/
-// Definitions by: Dmitri Dimitrioglo <https://github.com/ddimitrioglo>
-//                 Richard Moot <https://github.com/mootrichard>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-/**
- * Represents an additional recipient (other than the merchant) receiving a portion of this tender.
- */
-
-```
 

@@ -1,0 +1,22 @@
+package typings.smartDashFoxDashServer.SFS2XNs
+
+import typings.smartDashFoxDashServer.SFS2XNs.EntitiesNs.SFSRoom
+import typings.smartDashFoxDashServer.SFS2XNs.EntitiesNs.SFSUser
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IPLAYER_TO_SPECTATOR extends js.Object {
+  var room: SFSRoom
+  var user: SFSUser
+}
+
+object IPLAYER_TO_SPECTATOR {
+  @scala.inline
+  def apply(room: SFSRoom, user: SFSUser): IPLAYER_TO_SPECTATOR = {
+    val __obj = js.Dynamic.literal(room = room, user = user)
+  
+    __obj.asInstanceOf[IPLAYER_TO_SPECTATOR]
+  }
+}
+

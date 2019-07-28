@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for meshblu.js 1.30.1
-// Project: https://github.com/octoblu/meshblu-npm
-// Definitions by: Felipe Nipo <https://github.com/fnipo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

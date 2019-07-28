@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for JavaScript Hooker v0.2.3
-// Project: https://github.com/cowboy/javascript-hooker
-// Definitions by: Michael Zabka <https://github.com/misak113>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

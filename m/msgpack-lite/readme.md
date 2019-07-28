@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for msgpack-lite 0.1
-// Project: https://github.com/kawanet/msgpack-lite
-// Definitions by: Endel Dreyer <https://github.com/endel>, Edmund Fokschaner <https://github.com/efokschaner>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

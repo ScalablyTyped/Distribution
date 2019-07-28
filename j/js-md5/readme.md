@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for js-md5 0.4
-// Project: https://github.com/emn178/js-md5
-// Definitions by: Michael McCarthy <https://github.com/mwmccarthy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/
-
-```
 

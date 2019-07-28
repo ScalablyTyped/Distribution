@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dotenv 6.1
-// Project: https://github.com/motdotla/dotenv
-// Definitions by: Jussi Kinnula <https://github.com/jussikinnula>
-//                 Borek Bernard <https://github.com/borekb>
-//                 Eric Naeseth <https://github.com/enaeseth>
-//                 Max Beatty <https://github.com/maxbeatty>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

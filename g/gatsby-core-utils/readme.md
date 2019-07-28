@@ -13,16 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Encrypts an input using md5 hash of hexadecimal digest.
- *
- * @param {*} input The input to encrypt
- * @return {string} The content digest
- */
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for words-to-numbers 1.2
-// Project: https://github.com/finnfiddle/words-to-numbers
-// Definitions by: James Frowen <https://github.com/James-Frowen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

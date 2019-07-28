@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Empty the [trash](https://en.wikipedia.org/wiki/Trash_(computing)).
-
-@example
-```
-import emptyTrash = require('empty-trash');
-
-(async () => {
-	await emptyTrash();
-})();
-```
-*/
-
-```
 

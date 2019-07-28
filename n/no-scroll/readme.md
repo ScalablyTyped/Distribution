@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for no-scroll 2.1
-// Project: https://github.com/davidtheclark/no-scroll
-// Definitions by: Zhang Yi Jiang <https://github.com/ZhangYiJiang>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Module is exported as global object outside of module loader environment
-
-```
 

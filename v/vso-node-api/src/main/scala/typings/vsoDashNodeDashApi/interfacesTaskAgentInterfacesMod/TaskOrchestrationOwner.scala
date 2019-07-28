@@ -1,0 +1,21 @@
+package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TaskOrchestrationOwner extends js.Object {
+  var _links: js.Any
+  var id: Double
+  var name: String
+}
+
+object TaskOrchestrationOwner {
+  @scala.inline
+  def apply(_links: js.Any, id: Double, name: String): TaskOrchestrationOwner = {
+    val __obj = js.Dynamic.literal(_links = _links, id = id, name = name)
+  
+    __obj.asInstanceOf[TaskOrchestrationOwner]
+  }
+}
+

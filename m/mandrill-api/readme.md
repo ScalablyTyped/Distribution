@@ -30,20 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Mandrill API 1.x
-// Project: http://mandrill.com/
-// Definitions by: Paulo Cesar <https://github.com/pocesar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/* =================== USAGE ===================
-
-    import mandrill from 'mandrill-api';
-
- =============================================== */
-
-
-```
 

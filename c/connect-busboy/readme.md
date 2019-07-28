@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for connect-busboy 0.0
-// Project: https://github.com/mscdex/connect-busboy
-// Definitions by: Pinguet62 <https://github.com/pinguet62>
-//                 Chris Gedrim <https://github.com/chrisgedrim>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

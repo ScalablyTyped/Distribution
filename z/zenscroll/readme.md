@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for zenscroll 4.0
-// Project: https://zengabor.github.io/zenscroll/
-// Definitions by: Hamed Fathi <https://github.com/HamedFathi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

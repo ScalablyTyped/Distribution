@@ -1,0 +1,141 @@
+package typings.gapiDotClientDotPartners
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AccesstokenAddress extends js.Object {
+  /** V1 error format. */
+  @JSName("$.xgafv")
+  var `$.xgafv`: js.UndefOr[String] = js.undefined
+  /** OAuth access token. */
+  var access_token: js.UndefOr[String] = js.undefined
+  /**
+    * The address to use for sorting the company's addresses by proximity.
+    * If not given, the geo-located address of the request is used.
+    * Used when order_by is set.
+    */
+  var address: js.UndefOr[String] = js.undefined
+  /** Data format for response. */
+  var alt: js.UndefOr[String] = js.undefined
+  /** OAuth bearer token. */
+  var bearer_token: js.UndefOr[String] = js.undefined
+  /** JSONP */
+  var callback: js.UndefOr[String] = js.undefined
+  /** The ID of the company to retrieve. */
+  var companyId: String
+  /**
+    * If the company's budget is in a different currency code than this one, then
+    * the converted budget is converted to this currency code.
+    */
+  var currencyCode: js.UndefOr[String] = js.undefined
+  /** Selector specifying which fields to include in a partial response. */
+  var fields: js.UndefOr[String] = js.undefined
+  /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+  var key: js.UndefOr[String] = js.undefined
+  /** OAuth 2.0 token for the current user. */
+  var oauth_token: js.UndefOr[String] = js.undefined
+  /**
+    * How to order addresses within the returned company. Currently, only
+    * `address` and `address desc` is supported which will sorted by closest to
+    * farthest in distance from given address and farthest to closest distance
+    * from given address respectively.
+    */
+  var orderBy: js.UndefOr[String] = js.undefined
+  /** Pretty-print response. */
+  var pp: js.UndefOr[Boolean] = js.undefined
+  /** Returns response with indentations and line breaks. */
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+  var quotaUser: js.UndefOr[String] = js.undefined
+  /** Experiment IDs the current request belongs to. */
+  var `requestMetadata.experimentIds`: js.UndefOr[String] = js.undefined
+  /** Locale to use for the current request. */
+  var `requestMetadata.locale`: js.UndefOr[String] = js.undefined
+  /** Google Partners session ID. */
+  var `requestMetadata.partnersSessionId`: js.UndefOr[String] = js.undefined
+  /**
+    * Identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
+  var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[String] = js.undefined
+  /**
+    * Second level identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
+  var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[String] = js.undefined
+  /** IP address to use instead of the user's geo-located IP address. */
+  var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[String] = js.undefined
+  /** Logged-in user ID to impersonate instead of the user's ID. */
+  var `requestMetadata.userOverrides.userId`: js.UndefOr[String] = js.undefined
+  /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  /** Upload protocol for media (e.g. "raw", "multipart"). */
+  var upload_protocol: js.UndefOr[String] = js.undefined
+  /**
+    * The view of `Company` resource to be returned. This must not be
+    * `COMPANY_VIEW_UNSPECIFIED`.
+    */
+  var view: js.UndefOr[String] = js.undefined
+}
+
+object Anon_AccesstokenAddress {
+  @scala.inline
+  def apply(
+    companyId: String,
+    `$.xgafv`: String = null,
+    access_token: String = null,
+    address: String = null,
+    alt: String = null,
+    bearer_token: String = null,
+    callback: String = null,
+    currencyCode: String = null,
+    fields: String = null,
+    key: String = null,
+    oauth_token: String = null,
+    orderBy: String = null,
+    pp: js.UndefOr[Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[Boolean] = js.undefined,
+    quotaUser: String = null,
+    `requestMetadata.experimentIds`: String = null,
+    `requestMetadata.locale`: String = null,
+    `requestMetadata.partnersSessionId`: String = null,
+    `requestMetadata.trafficSource.trafficSourceId`: String = null,
+    `requestMetadata.trafficSource.trafficSubId`: String = null,
+    `requestMetadata.userOverrides.ipAddress`: String = null,
+    `requestMetadata.userOverrides.userId`: String = null,
+    uploadType: String = null,
+    upload_protocol: String = null,
+    view: String = null
+  ): Anon_AccesstokenAddress = {
+    val __obj = js.Dynamic.literal(companyId = companyId)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (`requestMetadata.experimentIds` != null) __obj.updateDynamic("requestMetadata.experimentIds")(`requestMetadata.experimentIds`)
+    if (`requestMetadata.locale` != null) __obj.updateDynamic("requestMetadata.locale")(`requestMetadata.locale`)
+    if (`requestMetadata.partnersSessionId` != null) __obj.updateDynamic("requestMetadata.partnersSessionId")(`requestMetadata.partnersSessionId`)
+    if (`requestMetadata.trafficSource.trafficSourceId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSourceId")(`requestMetadata.trafficSource.trafficSourceId`)
+    if (`requestMetadata.trafficSource.trafficSubId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSubId")(`requestMetadata.trafficSource.trafficSubId`)
+    if (`requestMetadata.userOverrides.ipAddress` != null) __obj.updateDynamic("requestMetadata.userOverrides.ipAddress")(`requestMetadata.userOverrides.ipAddress`)
+    if (`requestMetadata.userOverrides.userId` != null) __obj.updateDynamic("requestMetadata.userOverrides.userId")(`requestMetadata.userOverrides.userId`)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Anon_AccesstokenAddress]
+  }
+}
+

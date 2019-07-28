@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "topojson"
-version := "3.2-dt-20190717Z-10ca1c"
+version := "3.2-dt-20190717Z-9fdd35"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-d5dfc4",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "topojson-client" % "3.0-dt-20180414Z-64270b",
-  "org.scalablytyped" %%% "topojson-simplify" % "3.0-dt-20180414Z-19249f",
-  "org.scalablytyped" %%% "topojson-specification" % "1.0-dt-20190213Z-8bcbb9")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-8b8d4c",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "topojson-client" % "3.0-dt-20180414Z-b42ee1",
+  "org.scalablytyped" %%% "topojson-simplify" % "3.0-dt-20180414Z-1ccebd",
+  "org.scalablytyped" %%% "topojson-specification" % "1.0-dt-20190213Z-a18619")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

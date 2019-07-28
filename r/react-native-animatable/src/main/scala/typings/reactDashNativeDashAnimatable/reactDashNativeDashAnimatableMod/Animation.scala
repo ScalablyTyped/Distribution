@@ -1,0 +1,72 @@
+package typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounce
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.flash
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.jello
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.pulse
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.rotate
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.rubberBand
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.shake
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.swing
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.tada
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.wobble
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceIn
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceInDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceInUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceInLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceInRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceOut
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceOutDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceOutUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceOutLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.bounceOutRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeIn
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInDownBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInUpBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInLeftBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeInRightBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOut
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutDownBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutUpBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutLeftBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.fadeOutRightBig
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.flipInX
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.flipInY
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.flipOutX
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.flipOutY
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.lightSpeedIn
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.lightSpeedOut
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideInDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideInUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideInLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideInRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideOutDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideOutUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideOutLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.slideOutRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomIn
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomInDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomInUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomInLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomInRight
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomOut
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomOutDown
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomOutUp
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomOutLeft
+  - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.zoomOutRight
+*/
+trait Animation extends js.Object
+

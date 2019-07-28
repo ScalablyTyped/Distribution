@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for antlr4-autosuggest 0.0
-// Project: https://github.com/oranoran/antlr4-autosuggest-js
-// Definitions by: Jon Freedman <https://github.com/jonfreedman>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

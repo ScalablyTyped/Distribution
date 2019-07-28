@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for angular-environment v1.0.4
-// Project: https://github.com/juanpablob/angular-environment
-// Definitions by: Matt Wheatley <https://github.com/terrawheat>
-// Definitions: https://github.com/LiberisLabs
-
-```
 

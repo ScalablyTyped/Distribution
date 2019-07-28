@@ -1,0 +1,21 @@
+package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
+
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.IdentityRef
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PointAssignment extends js.Object {
+  var configuration: ShallowReference
+  var tester: IdentityRef
+}
+
+object PointAssignment {
+  @scala.inline
+  def apply(configuration: ShallowReference, tester: IdentityRef): PointAssignment = {
+    val __obj = js.Dynamic.literal(configuration = configuration, tester = tester)
+  
+    __obj.asInstanceOf[PointAssignment]
+  }
+}
+

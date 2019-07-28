@@ -1,0 +1,15 @@
+package typings.typedoc.distLibModelsTypesUnionMod
+
+import typings.typedoc.distLibModelsTypesAbstractMod.Type
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("typedoc/dist/lib/models/types/union", "UnionType")
+@js.native
+class UnionType protected () extends Type {
+  def this(types: js.Array[Type]) = this()
+  var types: js.Array[Type] = js.native
+  def equals(`type`: UnionType): Boolean = js.native
+}
+

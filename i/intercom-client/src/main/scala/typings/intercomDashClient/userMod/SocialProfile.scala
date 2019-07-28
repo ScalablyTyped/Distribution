@@ -1,0 +1,25 @@
+package typings.intercomDashClient.userMod
+
+import typings.intercomDashClient.intercomDashClientStrings.Twitter
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SocialProfile extends js.Object {
+  val id: String | Null
+  var name: Twitter
+  var url: String | Null
+  var username: String | Null
+}
+
+object SocialProfile {
+  @scala.inline
+  def apply(name: Twitter, id: String = null, url: String = null, username: String = null): SocialProfile = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[SocialProfile]
+  }
+}
+

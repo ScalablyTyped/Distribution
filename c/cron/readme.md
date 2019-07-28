@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cron 1.7
-// Project: https://www.npmjs.com/package/cron
-// Definitions by: Hiroki Horiuchi <https://github.com/horiuchi>
-//                 Lundarl Gholoi <https://github.com/winup>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

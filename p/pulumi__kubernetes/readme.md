@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/** @ignore */ /**
- * Returns the version of the package containing this file, obtained from the package.json
- * of this package.
- */
-
-```
 

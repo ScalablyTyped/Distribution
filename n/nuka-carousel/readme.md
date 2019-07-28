@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Definitions by: Roman Charugin <https://github.com/Romic>
-//                 Alex Smith <https://github.com/altaudio>
-//                 matt-sungwook <https://github.com/matt-sungwook>
-
-```
 

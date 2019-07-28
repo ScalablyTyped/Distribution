@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for basiclightbox 5.0
-// Project: https://basiclightbox.electerious.com
-// Definitions by: Adrian Hope-Bailie <https://github.com/adrianhopebailie>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

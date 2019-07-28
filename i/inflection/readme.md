@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for inflection 1.5.0
-// Project: https://github.com/dreamerslab/node.inflection
-// Definitions by: Shogo Iwano <https://github.com/shiwano>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

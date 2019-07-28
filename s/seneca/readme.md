@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for seneca v2.1.0
-// Project: https://www.npmjs.com/package/seneca
-// Definitions by: Peter Snider <https://github.com/psnider>
-//                 Kevyn Bruyere <https://github.com/kevynb>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/seneca
-// TypeScript Version: 2.3
-
-```
 

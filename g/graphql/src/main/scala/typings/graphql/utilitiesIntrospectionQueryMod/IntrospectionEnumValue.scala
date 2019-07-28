@@ -1,0 +1,29 @@
+package typings.graphql.utilitiesIntrospectionQueryMod
+
+import typings.graphql.tsutilsMaybeMod.Maybe
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IntrospectionEnumValue extends js.Object {
+  val deprecationReason: js.UndefOr[Maybe[String]] = js.undefined
+  val description: js.UndefOr[Maybe[String]] = js.undefined
+  val isDeprecated: Boolean
+  val name: String
+}
+
+object IntrospectionEnumValue {
+  @scala.inline
+  def apply(
+    isDeprecated: Boolean,
+    name: String,
+    deprecationReason: Maybe[String] = null,
+    description: Maybe[String] = null
+  ): IntrospectionEnumValue = {
+    val __obj = js.Dynamic.literal(isDeprecated = isDeprecated, name = name)
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionEnumValue]
+  }
+}
+

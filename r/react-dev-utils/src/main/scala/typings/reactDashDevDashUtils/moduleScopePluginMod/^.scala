@@ -1,0 +1,19 @@
+package typings.reactDashDevDashUtils.moduleScopePluginMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * This Webpack plugin ensures that relative imports from app's source
+  * directories don't reach outside of it.
+  */
+@JSImport("react-dev-utils/ModuleScopePlugin", JSImport.Namespace)
+@js.native
+class ^ protected () extends ModuleScopePlugin {
+  def this(appSrc: String) = this()
+  def this(appSrc: js.Array[String]) = this()
+  def this(appSrc: String, allowedFiles: js.Array[String]) = this()
+  def this(appSrc: js.Array[String], allowedFiles: js.Array[String]) = this()
+}
+

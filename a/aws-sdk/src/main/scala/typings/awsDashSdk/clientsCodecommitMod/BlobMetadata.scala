@@ -1,0 +1,32 @@
+package typings.awsDashSdk.clientsCodecommitMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BlobMetadata extends js.Object {
+  /**
+    * The full ID of the blob.
+    */
+  var blobId: js.UndefOr[ObjectId] = js.undefined
+  /**
+    * The file mode permissions of the blob. File mode permission codes include:    100644 indicates read/write    100755 indicates read/write/execute    160000 indicates a submodule    120000 indicates a symlink  
+    */
+  var mode: js.UndefOr[Mode] = js.undefined
+  /**
+    * The path to the blob and any associated file name, if any.
+    */
+  var path: js.UndefOr[Path] = js.undefined
+}
+
+object BlobMetadata {
+  @scala.inline
+  def apply(blobId: ObjectId = null, mode: Mode = null, path: Path = null): BlobMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (blobId != null) __obj.updateDynamic("blobId")(blobId)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[BlobMetadata]
+  }
+}
+

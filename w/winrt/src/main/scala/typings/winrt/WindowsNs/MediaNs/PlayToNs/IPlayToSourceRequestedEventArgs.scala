@@ -1,0 +1,19 @@
+package typings.winrt.WindowsNs.MediaNs.PlayToNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IPlayToSourceRequestedEventArgs extends js.Object {
+  var sourceRequest: PlayToSourceRequest
+}
+
+object IPlayToSourceRequestedEventArgs {
+  @scala.inline
+  def apply(sourceRequest: PlayToSourceRequest): IPlayToSourceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(sourceRequest = sourceRequest)
+  
+    __obj.asInstanceOf[IPlayToSourceRequestedEventArgs]
+  }
+}
+

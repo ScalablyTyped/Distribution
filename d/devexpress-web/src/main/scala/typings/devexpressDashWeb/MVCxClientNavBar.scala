@@ -1,0 +1,59 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * A client-side counterpart of the NavBar extension.
+  */
+trait MVCxClientNavBar extends ASPxClientNavBar {
+  /**
+    * Occurs when a callback for server-side processing is initiated.
+    */
+  @JSName("BeginCallback")
+  var BeginCallback_MVCxClientNavBar: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientNavBar]]
+}
+
+object MVCxClientNavBar {
+  @scala.inline
+  def apply(
+    AdjustControl: () => Unit,
+    BeginCallback: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientNavBar]],
+    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]],
+    CollapseAll: () => Unit,
+    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientNavBar]],
+    ExpandAll: () => Unit,
+    ExpandedChanged: ASPxClientEvent[ASPxClientNavBarGroupEventHandler[ASPxClientNavBar]],
+    ExpandedChanging: ASPxClientEvent[ASPxClientNavBarGroupCancelEventHandler[ASPxClientNavBar]],
+    GetActiveGroup: () => ASPxClientNavBarGroup,
+    GetClientVisible: () => Boolean,
+    GetGroup: Double => ASPxClientNavBarGroup,
+    GetGroupByName: String => ASPxClientNavBarGroup,
+    GetGroupCount: () => Double,
+    GetHeight: () => Double,
+    GetItemByName: String => ASPxClientNavBarItem,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetSelectedItem: () => ASPxClientNavBarItem,
+    GetVisible: () => Boolean,
+    GetWidth: () => Double,
+    HeaderClick: ASPxClientEvent[ASPxClientNavBarGroupClickEventHandler[ASPxClientNavBar]],
+    InCallback: () => Boolean,
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    ItemClick: ASPxClientEvent[ASPxClientNavBarItemEventHandler[ASPxClientNavBar]],
+    SendMessageToAssistiveTechnology: String => Unit,
+    SetActiveGroup: ASPxClientNavBarGroup => Unit,
+    SetClientVisible: Boolean => Unit,
+    SetHeight: Double => Unit,
+    SetSelectedItem: ASPxClientNavBarItem => Unit,
+    SetVisible: Boolean => Unit,
+    SetWidth: Double => Unit,
+    name: String
+  ): MVCxClientNavBar = {
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), BeginCallback = BeginCallback, CallbackError = CallbackError, CollapseAll = js.Any.fromFunction0(CollapseAll), EndCallback = EndCallback, ExpandAll = js.Any.fromFunction0(ExpandAll), ExpandedChanged = ExpandedChanged, ExpandedChanging = ExpandedChanging, GetActiveGroup = js.Any.fromFunction0(GetActiveGroup), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetGroup = js.Any.fromFunction1(GetGroup), GetGroupByName = js.Any.fromFunction1(GetGroupByName), GetGroupCount = js.Any.fromFunction0(GetGroupCount), GetHeight = js.Any.fromFunction0(GetHeight), GetItemByName = js.Any.fromFunction1(GetItemByName), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetSelectedItem = js.Any.fromFunction0(GetSelectedItem), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), HeaderClick = HeaderClick, InCallback = js.Any.fromFunction0(InCallback), Init = Init, ItemClick = ItemClick, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetActiveGroup = js.Any.fromFunction1(SetActiveGroup), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetSelectedItem = js.Any.fromFunction1(SetSelectedItem), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
+  
+    __obj.asInstanceOf[MVCxClientNavBar]
+  }
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-google-places-suggest 3.4
-// Project: https://xuopled.github.io/react-google-places-suggest, https://github.com/xuopled/react-google-places-suggest
-// Definitions by: Vasily Nesterov <https://github.com/vasilysn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

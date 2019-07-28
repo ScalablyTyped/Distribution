@@ -1,0 +1,106 @@
+package typings.reactDashNativeDashMaterialDashUi
+
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationAction
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CheckBoxProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderAccountProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerSectionProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeConsumerProps
+import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeProviderProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashMaterialDashUiProps {
+  @scala.inline
+  def AccountProps: DrawerHeaderAccountProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderAccountProps
+  type AccountProps = DrawerHeaderAccountProps
+  @scala.inline
+  def ActionProps: BottomNavigationAction.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationAction
+  type ActionProps = BottomNavigationAction
+  @scala.inline
+  def ActionButtonProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ActionButtonProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ActionButtonProps
+  type ActionButtonProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ActionButtonProps
+  @scala.inline
+  def ActionsProps: DialogActionsProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps
+  type ActionsProps = DialogActionsProps
+  @scala.inline
+  def AvatarProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.AvatarProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.AvatarProps
+  type AvatarProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.AvatarProps
+  @scala.inline
+  def BadgeProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BadgeProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BadgeProps
+  type BadgeProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BadgeProps
+  @scala.inline
+  def BottomNavigationProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationProps
+  type BottomNavigationProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationProps
+  @scala.inline
+  def ButtonProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ButtonProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ButtonProps
+  type ButtonProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ButtonProps
+  @scala.inline
+  def CardProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CardProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CardProps
+  type CardProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CardProps
+  @scala.inline
+  def CheckboxProps: CheckBoxProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CheckBoxProps
+  type CheckboxProps = CheckBoxProps
+  @scala.inline
+  def ConsumerProps: ThemeConsumerProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeConsumerProps
+  type ConsumerProps = ThemeConsumerProps
+  @scala.inline
+  def ContentProps: DialogContentProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps
+  type ContentProps = DialogContentProps
+  @scala.inline
+  def DialogProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogProps
+  type DialogProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogProps
+  @scala.inline
+  def DialogDefaultActionsProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActionsProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActionsProps
+  type DialogDefaultActionsProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActionsProps
+  @scala.inline
+  def DialogStackedActionsProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActionsProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActionsProps
+  type DialogStackedActionsProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActionsProps
+  @scala.inline
+  def DividerProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DividerProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DividerProps
+  type DividerProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DividerProps
+  @scala.inline
+  def DrawerProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerProps
+  type DrawerProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerProps
+  @scala.inline
+  def HeaderProps: DrawerHeaderProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderProps
+  type HeaderProps = DrawerHeaderProps
+  @scala.inline
+  def IconProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconProps
+  type IconProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconProps
+  @scala.inline
+  def IconToggleProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconToggleProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconToggleProps
+  type IconToggleProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.IconToggleProps
+  @scala.inline
+  def ListItemProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ListItemProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ListItemProps
+  type ListItemProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ListItemProps
+  @scala.inline
+  def ProviderProps: ThemeProviderProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeProviderProps
+  type ProviderProps = ThemeProviderProps
+  @scala.inline
+  def RadioButtonProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RadioButtonProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RadioButtonProps
+  type RadioButtonProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RadioButtonProps
+  @scala.inline
+  def RippleFeedbackProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RippleFeedbackProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RippleFeedbackProps
+  type RippleFeedbackProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.RippleFeedbackProps
+  @scala.inline
+  def SectionProps: DrawerSectionProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerSectionProps
+  type SectionProps = DrawerSectionProps
+  @scala.inline
+  def SnackbarProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SnackbarProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SnackbarProps
+  type SnackbarProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SnackbarProps
+  @scala.inline
+  def SubheaderProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SubheaderProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SubheaderProps
+  type SubheaderProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SubheaderProps
+  @scala.inline
+  def TitleProps: DialogTitleProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps
+  type TitleProps = DialogTitleProps
+  @scala.inline
+  def ToolbarProps: typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ToolbarProps.type = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ToolbarProps
+  type ToolbarProps = typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ToolbarProps
+}
+

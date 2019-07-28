@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dnssd 0.4
-// Project: https://github.com/DeMille/dnssd.js#readme
-// Definitions by: Angel Merino <https://github.com/angelmerino>
-//                 Max Rumpf <https://github.com/Maxr1998>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

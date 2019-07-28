@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for angular-hotkeys 1.7
-// Project: https://github.com/chieffancypants/angular-hotkeys, https://chieffancypants.github.io/angular-hotkeys
-// Definitions by: Jason Zhao <https://github.com/jlz27>
-//                 Stefan Steinhart <https://github.com/reppners>
-//                 Cyril Gandon <https://github.com/cyrilgandon>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

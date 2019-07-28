@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-immutable v4.0.0
-// Project: https://github.com/gajus/redux-immutable
-// Definitions by: Pedro Pereira <https://github.com/oizie>
-//                 Sebastian Sebald <https://github.com/sebald>
-//                 Gavin Gregory <https://github.com/gavingregory>
-//                 Kanitkorn Sujautra <https://github.com/lukyth>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

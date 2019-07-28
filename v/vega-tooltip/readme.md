@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Format the value to be shown in the toolip.
- *
- * @param value The value to show in the tooltip.
- * @param valueToHtml Function to convert a single cell value to an HTML string
- */
-/**
- * Position the tooltip
- *
- * @param event The mouse event.
- * @param tooltipBox
- * @param offsetX Horizontal offset.
- * @param offsetY Vertical offset.
- */
-
-```
 

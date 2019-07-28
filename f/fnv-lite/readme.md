@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fnv-lite 1.2
-// Project: https://github.com/casetext/fnv-lite
-// Definitions by: MarcinD <https://github.com/marcind>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

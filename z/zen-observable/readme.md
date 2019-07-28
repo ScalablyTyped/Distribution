@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for zen-observable 0.8
-// Project: https://github.com/zenparsing/zen-observable
-// Definitions by: Kombu <https://github.com/aicest>
-//                 JounQin <https://github.com/JounQin>
-//                 Thomas <https://github.com/itomtom>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

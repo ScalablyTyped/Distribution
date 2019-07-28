@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for DCJS
-// Project: https://github.com/dc-js/dc.js
-// Definitions by: hans windhoff <https://github.com/hansrwindhoff>
-//                 matt traynham <https://github.com/mtraynham>
-//                 matthias jobst <https://github.com/MatthiasJobst>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

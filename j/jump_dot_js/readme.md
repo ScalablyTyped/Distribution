@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jump.js 1.0
-// Project: https://github.com/callmecavs/jump.js
-// Definitions by: rhysd <https://rhysd.github.io>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

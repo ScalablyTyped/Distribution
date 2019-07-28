@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for GSAP 1.20.6
-// Project: http://greensock.com/
-// Definitions by:  VILIC VANE <https://vilic.github.io/>,
-//                  Robert S <https://github.com/codebelt>,
-//                  Richard Fox <https://github.com/ProbablePrime>,
-//                  Philip Bulley <https://github.com/philipbulley>,
-//                  Leonardo Melo <https://github.com/leomeloxp>
-//                  Adem Hodzic <https://github.com/AdemHodzic>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for GeoIP-lite 1.1.6
-// Project: https://github.com/bluesmoon/node-geoip
-// Definitions by: Yuce Tekol <http://yuce.me/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

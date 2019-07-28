@@ -1,0 +1,15 @@
+package typings.p2.p2Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("p2", "LockConstraint")
+@js.native
+class LockConstraint protected () extends Constraint {
+  def this(bodyA: Body, bodyB: Body, `type`: Double) = this()
+  def this(bodyA: Body, bodyB: Body, `type`: Double, options: LockConstraintOptions) = this()
+  def getMaxForce(): Double = js.native
+  def setMaxForce(force: Double): Unit = js.native
+}
+

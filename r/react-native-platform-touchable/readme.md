@@ -28,16 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-platform-touchable 1.1
-// Project: https://github.com/react-native-community/react-native-platform-touchable
-// Definitions by: Toni Granados <https://github.com/tngranados>
-//                 Joel Nordström <https://github.com/iwikal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

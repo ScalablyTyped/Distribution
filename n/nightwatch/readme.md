@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nightwatch 1.1
-// Project: http://nightwatchjs.org
-// Definitions by: Rahul Kavalapara <https://github.com/rkavalap>
-//                 Connor Schlesiger <https://github.com/schlesiger>
-//                 Clayton Astrom <https://github.com/ClaytonAstrom>
-//                 Lukas Beranek <https://github.com/lloiser>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

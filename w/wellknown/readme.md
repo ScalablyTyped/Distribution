@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for wellknown 0.5
-// Project: https://github.com/mapbox/wellknown#readme
-// Definitions by: Yair Tawil <https://github.com/yairtawil>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

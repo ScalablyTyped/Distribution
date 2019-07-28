@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for PiwikTracker v0.1.1
-// Project: https://www.npmjs.com/package/piwik-tracker
-// Definitions by: Guilherme Bernal <https://github.com/lbguilherme>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

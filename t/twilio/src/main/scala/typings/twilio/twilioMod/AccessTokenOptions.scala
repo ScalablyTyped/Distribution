@@ -1,0 +1,21 @@
+package typings.twilio.twilioMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AccessTokenOptions extends js.Object {
+  var identity: String
+  var nbf: Double
+  var ttl: Double
+}
+
+object AccessTokenOptions {
+  @scala.inline
+  def apply(identity: String, nbf: Double, ttl: Double): AccessTokenOptions = {
+    val __obj = js.Dynamic.literal(identity = identity, nbf = nbf, ttl = ttl)
+  
+    __obj.asInstanceOf[AccessTokenOptions]
+  }
+}
+

@@ -1,0 +1,19 @@
+package typings.kendoDashUi.kendoNs.datavizNs.diagramNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConnectionStartCapFill extends js.Object {
+  var color: js.UndefOr[String] = js.undefined
+}
+
+object ConnectionStartCapFill {
+  @scala.inline
+  def apply(color: String = null): ConnectionStartCapFill = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[ConnectionStartCapFill]
+  }
+}
+

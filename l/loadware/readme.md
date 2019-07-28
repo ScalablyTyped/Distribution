@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for loadware 2.0
-// Project: https://github.com/franciscop/loadware
-// Definitions by: A.J.J. Lyman <https://github.com/ALyman>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// tslint:disable-next-line:ban-types
-
-```
 

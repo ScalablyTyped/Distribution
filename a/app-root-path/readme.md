@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for app-root-path 1.2.1
-// Project: https://github.com/inxilpro/node-app-root-path
-// Definitions by: Shant Marouti <https://github.com/shantmarouti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Solution Center Communicator 2.3.0
-// Project: https://github.com/zalando-incubator/solution-center-communicator
-// Definitions by: Damián García <https://github.com/dami-gg>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

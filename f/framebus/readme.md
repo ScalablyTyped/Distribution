@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for framebus 2.0
-// Project: https://github.com/braintree/framebus
-// Definitions by: kbukum <https://github.com/kbukum>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/*~ If this module is a UMD module that exposes a global variable 'myLib' when
- *~ loaded outside a module loader environment, declare that global here.
- *~ Otherwise, delete this declaration.
- */
-
-```
 

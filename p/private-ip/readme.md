@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for private-ip 1.0
-// Project: https://github.com/frenchbread/private-ip#readme
-// Definitions by: coderslagoon <https://github.com/coderslagoon>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

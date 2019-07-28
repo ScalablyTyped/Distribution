@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for MarkerClustererPlus for Google Maps V3 2.1
-// Project: https://github.com/mahnunchik/markerclustererplus
-// Definitions by: Mathias Rodriguez <https://github.com/enanox>
-//                 Michael Ledin <https://github.com/mxl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

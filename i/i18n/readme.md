@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for i18n-node 0.8
-// Project: http://github.com/mashpie/i18n-node
-// Definitions by: Maxime LUCE <https://github.com/SomaticIT>
-//                 FindQ <https://github.com/FindQ>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

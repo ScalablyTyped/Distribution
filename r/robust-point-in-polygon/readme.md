@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for robust-point-in-polygon 1.0
-// Project: https://github.com/mikolalysenko/robust-point-in-polygon
-// Definitions by: Crash Springfield <https://github.com/crashspringfield>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

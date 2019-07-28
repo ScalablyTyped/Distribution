@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uritemplate"
-version := "0.3-dt-20180214Z-5d824c"
+version := "0.3-dt-20180214Z-303c9a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

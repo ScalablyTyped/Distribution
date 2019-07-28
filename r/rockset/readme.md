@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rockset 1.0
-// Project: https://github.com/rockset/rockset-node-client#readme
-// Definitions by: Kshitij Wadhwa <https://github.com/kwadhwa18>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

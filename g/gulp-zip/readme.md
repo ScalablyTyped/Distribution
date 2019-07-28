@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-zip 4.0
-// Project: https://github.com/sindresorhus/gulp-zip
-// Definitions by: Louis Orleans <https://github.com/dudeofawesome>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

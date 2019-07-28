@@ -1,0 +1,21 @@
+package typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IPopoverState extends js.Object {
+  var hasDarkParent: Boolean
+  var isOpen: Boolean
+  var transformOrigin: String
+}
+
+object IPopoverState {
+  @scala.inline
+  def apply(hasDarkParent: Boolean, isOpen: Boolean, transformOrigin: String): IPopoverState = {
+    val __obj = js.Dynamic.literal(hasDarkParent = hasDarkParent, isOpen = isOpen, transformOrigin = transformOrigin)
+  
+    __obj.asInstanceOf[IPopoverState]
+  }
+}
+

@@ -1,0 +1,20 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait OrgsPublicizeMembershipParams extends js.Object {
+  var org: String
+  var username: String
+}
+
+object OrgsPublicizeMembershipParams {
+  @scala.inline
+  def apply(org: String, username: String): OrgsPublicizeMembershipParams = {
+    val __obj = js.Dynamic.literal(org = org, username = username)
+  
+    __obj.asInstanceOf[OrgsPublicizeMembershipParams]
+  }
+}
+

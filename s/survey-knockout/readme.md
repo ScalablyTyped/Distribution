@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/*Type definitions for Survey JavaScript library v1.1.1
-Copyright (c) 2015-2019 Devsoft Baltic OÜ  - http://surveyjs.io/
-Definitions by: Devsoft Baltic OÜ <https://github.com/surveyjs/>
-*/
-
-
-```
 

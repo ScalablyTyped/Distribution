@@ -1,0 +1,23 @@
+package typings.atIonicCliDashFramework.utilsIpcMod
+
+import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.`rpc-request`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RPCRequest[P /* <: String */, A /* <: js.Array[_] */] extends js.Object {
+  var args: A
+  var id: String
+  var procedure: P
+  var `type`: `rpc-request`
+}
+
+object RPCRequest {
+  @scala.inline
+  def apply[P /* <: String */, A /* <: js.Array[_] */](args: A, id: String, procedure: P, `type`: `rpc-request`): RPCRequest[P, A] = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id, procedure = procedure.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RPCRequest[P, A]]
+  }
+}
+

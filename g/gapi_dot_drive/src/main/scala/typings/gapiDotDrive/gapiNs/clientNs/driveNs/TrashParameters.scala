@@ -1,0 +1,20 @@
+package typings.gapiDotDrive.gapiNs.clientNs.driveNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TrashParameters extends js.Object {
+  var fileId: String
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
+}
+
+object TrashParameters {
+  @scala.inline
+  def apply(fileId: String, supportsTeamDrives: js.UndefOr[Boolean] = js.undefined): TrashParameters = {
+    val __obj = js.Dynamic.literal(fileId = fileId)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    __obj.asInstanceOf[TrashParameters]
+  }
+}
+

@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for argparse 1.0
-// Project: https://github.com/nodeca/argparse
-// Definitions by: Andrew Schurman <https://github.com/arcticwaters>
-//                 Tomasz Łaziuk <https://github.com/tlaziuk>
-//                 Sebastian Silbermann <https://github.com/eps1lon>
-//                 Kannan Goundan <https://github.com/cakoose>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

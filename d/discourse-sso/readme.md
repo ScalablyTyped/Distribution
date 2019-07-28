@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for discourse-sso 1.0
-// Project: https://github.com/ArmedGuy/discourse_sso_node
-// Definitions by: Arnav Gupta <https://github.com/championswimmer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

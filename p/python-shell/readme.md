@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for python-shell 0.4
-// Project: http://github.com/extrabacon/python-shell
-// Definitions by: Dolan Miu <https://github.com/dolanmiu>, Colin Richardson <https://github.com/WORMSS>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

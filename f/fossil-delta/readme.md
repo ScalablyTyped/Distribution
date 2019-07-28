@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fossil-delta 1.0.0
-// Project: https://github.com/dchest/fossil-delta-js
-// Definitions by: Endel Dreyer <https://github.com/endel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,34 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for React Router 5.0
-// Project: https://github.com/ReactTraining/react-router
-// Definitions by: Sergey Buturlakin <https://github.com/sergey-buturlakin>
-//                 Yuichi Murata <https://github.com/mrk21>
-//                 Václav Ostrožlík <https://github.com/vasek17>
-//                 Nathan Brown <https://github.com/ngbrown>
-//                 Alex Wendland <https://github.com/awendland>
-//                 Kostya Esmukov <https://github.com/KostyaEsmukov>
-//                 John Reilly <https://github.com/johnnyreilly>
-//                 Karol Janyst <https://github.com/LKay>
-//                 Dovydas Navickas <https://github.com/DovydasNavickas>
-//                 Huy Nguyen <https://github.com/huy-nguyen>
-//                 Jérémy Fauvel <https://github.com/grmiade>
-//                 Daniel Roth <https://github.com/DaIgeb>
-//                 Egor Shulga <https://github.com/egorshulga>
-//                 Rahul Raina <https://github.com/rraina>
-//                 Maksim Sharipov <https://github.com/pret-a-porter>
-//                 Duong Tran <https://github.com/t49tran>
-//                 Ben Smith <https://github.com/8enSmith>
-//                 Wesley Tsai <https://github.com/wezleytsai>
-//                 Sebastian Silbermann <https://github.com/eps1lon>
-//                 Nicholas Hehr <https://github.com/HipsterBrown>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

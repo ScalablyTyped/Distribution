@@ -1,0 +1,14 @@
+package typings.reactDashNativeDashPercentageDashCircle
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashPercentageDashCircle.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashPercentageDashCircleComponents extends reactDashNativeDashPercentageDashCircleProps {
+  @scala.inline
+  def ReactDashNativeDashPercentageDashCircle: ComponentType[PercentageCircleProps] = js.constructorOf[typings.reactDashNativeDashPercentageDashCircle.reactDashNativeDashPercentageDashCircleMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashPercentageDashCircle.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps]]
+}
+

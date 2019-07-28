@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-basic-auth 2.x
-// Project: https://github.com/koajs/basic-auth
-// Definitions by: Tobias Wolff <https://github.com/Tobias4872>
-// Definitions: https://github.com/Tobias4872/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

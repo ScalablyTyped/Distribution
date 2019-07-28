@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if the process is running with elevated privileges.
-
-@example
-```
-import isElevated = require('is-elevated');
-
-(async () => {
-	console.log(await isElevated());
-	//=> false
-})();
-```
-*/
-
-```
 

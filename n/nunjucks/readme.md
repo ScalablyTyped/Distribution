@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nunjucks 3.1
-// Project: http://mozilla.github.io/nunjucks/, https://github.com/mozilla/nunjucks
-// Definitions by: Ruben Slabbert <https://github.com/RubenSlabbert>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

@@ -1,0 +1,23 @@
+package typings.qlik.qlikMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait NxAttrExprInfo extends js.Object {
+  var qContinuousAxes: Boolean
+  var qFallbackTitle: String
+  var qIsCyclic: Boolean
+  var qMax: Double
+  var qMin: Double
+}
+
+object NxAttrExprInfo {
+  @scala.inline
+  def apply(qContinuousAxes: Boolean, qFallbackTitle: String, qIsCyclic: Boolean, qMax: Double, qMin: Double): NxAttrExprInfo = {
+    val __obj = js.Dynamic.literal(qContinuousAxes = qContinuousAxes, qFallbackTitle = qFallbackTitle, qIsCyclic = qIsCyclic, qMax = qMax, qMin = qMin)
+  
+    __obj.asInstanceOf[NxAttrExprInfo]
+  }
+}
+

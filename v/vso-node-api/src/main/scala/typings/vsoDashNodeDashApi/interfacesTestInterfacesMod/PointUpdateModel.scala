@@ -1,0 +1,22 @@
+package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
+
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.IdentityRef
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PointUpdateModel extends js.Object {
+  var outcome: String
+  var resetToActive: Boolean
+  var tester: IdentityRef
+}
+
+object PointUpdateModel {
+  @scala.inline
+  def apply(outcome: String, resetToActive: Boolean, tester: IdentityRef): PointUpdateModel = {
+    val __obj = js.Dynamic.literal(outcome = outcome, resetToActive = resetToActive, tester = tester)
+  
+    __obj.asInstanceOf[PointUpdateModel]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for avoscloud-sdk 0.6.10
-// Project: https://leancloud.cn/
-// Definitions by: Wu Jun <http://leancloud.cn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-flip-move 2.9
-// Project: https://github.com/joshwcomeau/react-flip-move
-// Definitions by: Joey Hain <https://github.com/jmhain>,
-//                 Ville Saarinen <https://github.com/vsaarinen>
-// TypeScript Version: 2.3
-
-```
 

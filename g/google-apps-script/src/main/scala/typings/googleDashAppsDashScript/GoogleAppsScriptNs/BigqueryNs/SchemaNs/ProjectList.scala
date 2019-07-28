@@ -1,0 +1,33 @@
+package typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ProjectList extends js.Object {
+  var etag: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String] = js.undefined
+  var projects: js.UndefOr[js.Array[ProjectListProjects]] = js.undefined
+  var totalItems: js.UndefOr[Double] = js.undefined
+}
+
+object ProjectList {
+  @scala.inline
+  def apply(
+    etag: String = null,
+    kind: String = null,
+    nextPageToken: String = null,
+    projects: js.Array[ProjectListProjects] = null,
+    totalItems: Int | Double = null
+  ): ProjectList = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (projects != null) __obj.updateDynamic("projects")(projects)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProjectList]
+  }
+}
+

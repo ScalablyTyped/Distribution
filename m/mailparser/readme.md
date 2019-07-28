@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mailparser 2.4
-// Project: https://github.com/nodemailer/mailparser
-// Definitions by: Peter Snider <https://github.com/psnider>
-//                 Andrey Volynkin <https://github.com/Avol-V>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

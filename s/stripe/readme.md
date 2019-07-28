@@ -31,42 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stripe 6.31
-// Project: https://github.com/stripe/stripe-node/
-// Definitions by: William Johnston <https://github.com/wjohnsto>
-//                 Peter Harris <https://github.com/codeanimal>
-//                 Sampson Oliver <https://github.com/sampsonjoliver>
-//                 Linus Unnebäck <https://github.com/LinusU>
-//                 Brannon Jones <https://github.com/brannon>
-//                 Kyle Kamperschroer <https://github.com/kkamperschroer>
-//                 Kensuke Hoshikawa <https://github.com/starhoshi>
-//                 Thomas Bruun <https://github.com/bruun>
-//                 Gal Talmor <https://github.com/galtalmor>
-//                 Hunter Tunnicliff <https://github.com/htunnicliff>
-//                 Tyler Jones <https://github.com/squirly>
-//                 Troy Zarger <https://github.com/tzarger>
-//                 Ifiok Jr. <https://github.com/ifiokjr>
-//                 Slava Yultyyev <https://github.com/yultyyev>
-//                 Corey Psoinos <https://github.com/cpsoinos>
-//                 Adam Duren <https://github.com/adamduren>
-//                 Saransh Kataria <https://github.com/saranshkataria>
-//                 Jonas Keisel <https://github.com/0xJoKe>
-//                 Andrew Delianides <https://github.com/delianides>
-//                 Gokul Chandrasekaran <https://github.com/gokulchandra>
-//                 Jamie Davies <https://github.com/viralpickaxe>
-//                 Christopher Eck <https://github.com/chrisleck>
-//                 Joshua Feltimo <https://github.com/opticalgenesis>
-//                 Josiah <https://github.com/spacetag>
-//                 Oleg Vaskevich <https://github.com/vaskevich>
-//                 Dylan Aspden <https://github.com/dhaspden>
-//                 Ethan Setnik <https://github.com/esetnik>
-//                 Pavel Ivanov <https://github.com/schfkt>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

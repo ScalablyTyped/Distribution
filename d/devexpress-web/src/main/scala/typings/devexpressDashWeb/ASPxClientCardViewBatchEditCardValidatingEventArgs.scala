@@ -1,0 +1,31 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Provides data for the BatchEditCardValidating event.
+  */
+trait ASPxClientCardViewBatchEditCardValidatingEventArgs extends ASPxClientEventArgs {
+  /**
+    * Provides validation information of a card currently being validated.
+    * Value: An object that is a hashtable containing validation information.
+    */
+  var validationInfo: js.Object
+  /**
+    * Gets the processed card's visible index.
+    * Value: An integer value that specifies the processed card's visible index.
+    */
+  var visibleIndex: Double
+}
+
+object ASPxClientCardViewBatchEditCardValidatingEventArgs {
+  @scala.inline
+  def apply(validationInfo: js.Object, visibleIndex: Double): ASPxClientCardViewBatchEditCardValidatingEventArgs = {
+    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardValidatingEventArgs]
+  }
+}
+

@@ -1,0 +1,173 @@
+package typings.expo.expoMod
+
+import typings.expo.expoStrings.androidDOTsettingsDOTACCESSIBILITY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTACTION_APP_NOTIFICATION_REDACTION
+import typings.expo.expoStrings.androidDOTsettingsDOTACTION_CONDITION_PROVIDER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTACTION_NOTIFICATION_LISTENER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTACTION_PRINT_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTADD_ACCOUNT_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAIRPLANE_MODE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPN_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPPLICATION_DETAILS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPPLICATION_DEVELOPMENT_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPPLICATION_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPP_NOTIFICATION_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTAPP_OPS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTBATTERY_SAVER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTBLUETOOTH_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTCAPTIONING_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTCAST_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTDATA_ROAMING_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTDATE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTDEVICE_INFO_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTDEVICE_NAME
+import typings.expo.expoStrings.androidDOTsettingsDOTDISPLAY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTDREAM_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTHARD_KEYBOARD_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTHOME_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTIGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTIGNORE_BATTERY_OPTIMIZATION_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTINPUT_METHOD_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTINPUT_METHOD_SUBTYPE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTINTERNAL_STORAGE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTLOCALE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTLOCATION_SOURCE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTMANAGE_ALL_APPLICATIONS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTMANAGE_APPLICATIONS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTMANAGE_DEFAULT_APPS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTMEMORY_CARD_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTMONITORING_CERT_INFO
+import typings.expo.expoStrings.androidDOTsettingsDOTNETWORK_OPERATOR_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNFCSHARING_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNFC_PAYMENT_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNFC_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNIGHT_DISPLAY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNOTIFICATION_POLICY_ACCESS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTNOTIFICATION_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTPAIRING_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTPRIVACY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTQUICK_LAUNCH_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTREQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+import typings.expo.expoStrings.androidDOTsettingsDOTSECURITY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTSETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTSHOW_ADMIN_SUPPORT_DETAILS
+import typings.expo.expoStrings.androidDOTsettingsDOTSHOW_INPUT_METHOD_PICKER
+import typings.expo.expoStrings.androidDOTsettingsDOTSHOW_REGULATORY_INFO
+import typings.expo.expoStrings.androidDOTsettingsDOTSHOW_REMOTE_BUGREPORT_DIALOG
+import typings.expo.expoStrings.androidDOTsettingsDOTSOUND_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTSTORAGE_MANAGER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTSYNC_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTSYSTEM_UPDATE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTTETHER_PROVISIONING_UI
+import typings.expo.expoStrings.androidDOTsettingsDOTTRUSTED_CREDENTIALS_USER
+import typings.expo.expoStrings.androidDOTsettingsDOTUSAGE_ACCESS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTUSER_DICTIONARY_INSERT
+import typings.expo.expoStrings.androidDOTsettingsDOTUSER_DICTIONARY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTUSER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTVOICE_CONTROL_AIRPLANE_MODE
+import typings.expo.expoStrings.androidDOTsettingsDOTVOICE_CONTROL_BATTERY_SAVER_MODE
+import typings.expo.expoStrings.androidDOTsettingsDOTVOICE_CONTROL_DO_NOT_DISTURB_MODE
+import typings.expo.expoStrings.androidDOTsettingsDOTVOICE_INPUT_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTVPN_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTVR_LISTENER_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTWEBVIEW_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTWIFI_IP_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTWIFI_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTWIRELESS_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_AUTOMATION_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_EVENT_RULE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_EXTERNAL_RULE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_PRIORITY_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_SCHEDULE_RULE_SETTINGS
+import typings.expo.expoStrings.androidDOTsettingsDOTZEN_MODE_SETTINGS
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("expo", "IntentLauncherAndroid")
+@js.native
+object IntentLauncherAndroidNs extends js.Object {
+  val ACTION_ACCESSIBILITY_SETTINGS: androidDOTsettingsDOTACCESSIBILITY_SETTINGS = js.native
+  val ACTION_ADD_ACCOUNT_SETTINGS: androidDOTsettingsDOTADD_ACCOUNT_SETTINGS = js.native
+  val ACTION_AIRPLANE_MODE_SETTINGS: androidDOTsettingsDOTAIRPLANE_MODE_SETTINGS = js.native
+  val ACTION_APN_SETTINGS: androidDOTsettingsDOTAPN_SETTINGS = js.native
+  val ACTION_APPLICATION_DETAILS_SETTINGS: androidDOTsettingsDOTAPPLICATION_DETAILS_SETTINGS = js.native
+  val ACTION_APPLICATION_DEVELOPMENT_SETTINGS: androidDOTsettingsDOTAPPLICATION_DEVELOPMENT_SETTINGS = js.native
+  val ACTION_APPLICATION_SETTINGS: androidDOTsettingsDOTAPPLICATION_SETTINGS = js.native
+  val ACTION_APP_NOTIFICATION_REDACTION: androidDOTsettingsDOTACTION_APP_NOTIFICATION_REDACTION = js.native
+  val ACTION_APP_NOTIFICATION_SETTINGS: androidDOTsettingsDOTAPP_NOTIFICATION_SETTINGS = js.native
+  val ACTION_APP_OPS_SETTINGS: androidDOTsettingsDOTAPP_OPS_SETTINGS = js.native
+  val ACTION_BATTERY_SAVER_SETTINGS: androidDOTsettingsDOTBATTERY_SAVER_SETTINGS = js.native
+  val ACTION_BLUETOOTH_SETTINGS: androidDOTsettingsDOTBLUETOOTH_SETTINGS = js.native
+  val ACTION_CAPTIONING_SETTINGS: androidDOTsettingsDOTCAPTIONING_SETTINGS = js.native
+  val ACTION_CAST_SETTINGS: androidDOTsettingsDOTCAST_SETTINGS = js.native
+  val ACTION_CONDITION_PROVIDER_SETTINGS: androidDOTsettingsDOTACTION_CONDITION_PROVIDER_SETTINGS = js.native
+  val ACTION_DATA_ROAMING_SETTINGS: androidDOTsettingsDOTDATA_ROAMING_SETTINGS = js.native
+  val ACTION_DATE_SETTINGS: androidDOTsettingsDOTDATE_SETTINGS = js.native
+  val ACTION_DEVICE_INFO_SETTINGS: androidDOTsettingsDOTDEVICE_INFO_SETTINGS = js.native
+  val ACTION_DEVICE_NAME: androidDOTsettingsDOTDEVICE_NAME = js.native
+  val ACTION_DISPLAY_SETTINGS: androidDOTsettingsDOTDISPLAY_SETTINGS = js.native
+  val ACTION_DREAM_SETTINGS: androidDOTsettingsDOTDREAM_SETTINGS = js.native
+  val ACTION_HARD_KEYBOARD_SETTINGS: androidDOTsettingsDOTHARD_KEYBOARD_SETTINGS = js.native
+  val ACTION_HOME_SETTINGS: androidDOTsettingsDOTHOME_SETTINGS = js.native
+  val ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS: androidDOTsettingsDOTIGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS = js.native
+  val ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS: androidDOTsettingsDOTIGNORE_BATTERY_OPTIMIZATION_SETTINGS = js.native
+  val ACTION_INPUT_METHOD_SETTINGS: androidDOTsettingsDOTINPUT_METHOD_SETTINGS = js.native
+  val ACTION_INPUT_METHOD_SUBTYPE_SETTINGS: androidDOTsettingsDOTINPUT_METHOD_SUBTYPE_SETTINGS = js.native
+  val ACTION_INTERNAL_STORAGE_SETTINGS: androidDOTsettingsDOTINTERNAL_STORAGE_SETTINGS = js.native
+  val ACTION_LOCALE_SETTINGS: androidDOTsettingsDOTLOCALE_SETTINGS = js.native
+  val ACTION_LOCATION_SOURCE_SETTINGS: androidDOTsettingsDOTLOCATION_SOURCE_SETTINGS = js.native
+  val ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS: androidDOTsettingsDOTMANAGE_ALL_APPLICATIONS_SETTINGS = js.native
+  val ACTION_MANAGE_APPLICATIONS_SETTINGS: androidDOTsettingsDOTMANAGE_APPLICATIONS_SETTINGS = js.native
+  val ACTION_MANAGE_DEFAULT_APPS_SETTINGS: androidDOTsettingsDOTMANAGE_DEFAULT_APPS_SETTINGS = js.native
+  val ACTION_MEMORY_CARD_SETTINGS: androidDOTsettingsDOTMEMORY_CARD_SETTINGS = js.native
+  val ACTION_MONITORING_CERT_INFO: androidDOTsettingsDOTMONITORING_CERT_INFO = js.native
+  val ACTION_NETWORK_OPERATOR_SETTINGS: androidDOTsettingsDOTNETWORK_OPERATOR_SETTINGS = js.native
+  val ACTION_NFCSHARING_SETTINGS: androidDOTsettingsDOTNFCSHARING_SETTINGS = js.native
+  val ACTION_NFC_PAYMENT_SETTINGS: androidDOTsettingsDOTNFC_PAYMENT_SETTINGS = js.native
+  val ACTION_NFC_SETTINGS: androidDOTsettingsDOTNFC_SETTINGS = js.native
+  val ACTION_NIGHT_DISPLAY_SETTINGS: androidDOTsettingsDOTNIGHT_DISPLAY_SETTINGS = js.native
+  val ACTION_NOTIFICATION_LISTENER_SETTINGS: androidDOTsettingsDOTACTION_NOTIFICATION_LISTENER_SETTINGS = js.native
+  val ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS: androidDOTsettingsDOTNOTIFICATION_POLICY_ACCESS_SETTINGS = js.native
+  val ACTION_NOTIFICATION_SETTINGS: androidDOTsettingsDOTNOTIFICATION_SETTINGS = js.native
+  val ACTION_PAIRING_SETTINGS: androidDOTsettingsDOTPAIRING_SETTINGS = js.native
+  val ACTION_PRINT_SETTINGS: androidDOTsettingsDOTACTION_PRINT_SETTINGS = js.native
+  val ACTION_PRIVACY_SETTINGS: androidDOTsettingsDOTPRIVACY_SETTINGS = js.native
+  val ACTION_QUICK_LAUNCH_SETTINGS: androidDOTsettingsDOTQUICK_LAUNCH_SETTINGS = js.native
+  val ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: androidDOTsettingsDOTREQUEST_IGNORE_BATTERY_OPTIMIZATIONS = js.native
+  val ACTION_SECURITY_SETTINGS: androidDOTsettingsDOTSECURITY_SETTINGS = js.native
+  val ACTION_SETTINGS: androidDOTsettingsDOTSETTINGS = js.native
+  val ACTION_SHOW_ADMIN_SUPPORT_DETAILS: androidDOTsettingsDOTSHOW_ADMIN_SUPPORT_DETAILS = js.native
+  val ACTION_SHOW_INPUT_METHOD_PICKER: androidDOTsettingsDOTSHOW_INPUT_METHOD_PICKER = js.native
+  val ACTION_SHOW_REGULATORY_INFO: androidDOTsettingsDOTSHOW_REGULATORY_INFO = js.native
+  val ACTION_SHOW_REMOTE_BUGREPORT_DIALOG: androidDOTsettingsDOTSHOW_REMOTE_BUGREPORT_DIALOG = js.native
+  val ACTION_SOUND_SETTINGS: androidDOTsettingsDOTSOUND_SETTINGS = js.native
+  val ACTION_STORAGE_MANAGER_SETTINGS: androidDOTsettingsDOTSTORAGE_MANAGER_SETTINGS = js.native
+  val ACTION_SYNC_SETTINGS: androidDOTsettingsDOTSYNC_SETTINGS = js.native
+  val ACTION_SYSTEM_UPDATE_SETTINGS: androidDOTsettingsDOTSYSTEM_UPDATE_SETTINGS = js.native
+  val ACTION_TETHER_PROVISIONING_UI: androidDOTsettingsDOTTETHER_PROVISIONING_UI = js.native
+  val ACTION_TRUSTED_CREDENTIALS_USER: androidDOTsettingsDOTTRUSTED_CREDENTIALS_USER = js.native
+  val ACTION_USAGE_ACCESS_SETTINGS: androidDOTsettingsDOTUSAGE_ACCESS_SETTINGS = js.native
+  val ACTION_USER_DICTIONARY_INSERT: androidDOTsettingsDOTUSER_DICTIONARY_INSERT = js.native
+  val ACTION_USER_DICTIONARY_SETTINGS: androidDOTsettingsDOTUSER_DICTIONARY_SETTINGS = js.native
+  val ACTION_USER_SETTINGS: androidDOTsettingsDOTUSER_SETTINGS = js.native
+  val ACTION_VOICE_CONTROL_AIRPLANE_MODE: androidDOTsettingsDOTVOICE_CONTROL_AIRPLANE_MODE = js.native
+  val ACTION_VOICE_CONTROL_BATTERY_SAVER_MODE: androidDOTsettingsDOTVOICE_CONTROL_BATTERY_SAVER_MODE = js.native
+  val ACTION_VOICE_CONTROL_DO_NOT_DISTURB_MODE: androidDOTsettingsDOTVOICE_CONTROL_DO_NOT_DISTURB_MODE = js.native
+  val ACTION_VOICE_INPUT_SETTINGS: androidDOTsettingsDOTVOICE_INPUT_SETTINGS = js.native
+  val ACTION_VPN_SETTINGS: androidDOTsettingsDOTVPN_SETTINGS = js.native
+  val ACTION_VR_LISTENER_SETTINGS: androidDOTsettingsDOTVR_LISTENER_SETTINGS = js.native
+  val ACTION_WEBVIEW_SETTINGS: androidDOTsettingsDOTWEBVIEW_SETTINGS = js.native
+  val ACTION_WIFI_IP_SETTINGS: androidDOTsettingsDOTWIFI_IP_SETTINGS = js.native
+  val ACTION_WIFI_SETTINGS: androidDOTsettingsDOTWIFI_SETTINGS = js.native
+  val ACTION_WIRELESS_SETTINGS: androidDOTsettingsDOTWIRELESS_SETTINGS = js.native
+  val ACTION_ZEN_MODE_AUTOMATION_SETTINGS: androidDOTsettingsDOTZEN_MODE_AUTOMATION_SETTINGS = js.native
+  val ACTION_ZEN_MODE_EVENT_RULE_SETTINGS: androidDOTsettingsDOTZEN_MODE_EVENT_RULE_SETTINGS = js.native
+  val ACTION_ZEN_MODE_EXTERNAL_RULE_SETTINGS: androidDOTsettingsDOTZEN_MODE_EXTERNAL_RULE_SETTINGS = js.native
+  val ACTION_ZEN_MODE_PRIORITY_SETTINGS: androidDOTsettingsDOTZEN_MODE_PRIORITY_SETTINGS = js.native
+  val ACTION_ZEN_MODE_SCHEDULE_RULE_SETTINGS: androidDOTsettingsDOTZEN_MODE_SCHEDULE_RULE_SETTINGS = js.native
+  val ACTION_ZEN_MODE_SETTINGS: androidDOTsettingsDOTZEN_MODE_SETTINGS = js.native
+  def startActivityAsync(activity: String): js.Promise[Boolean] = js.native
+  def startActivityAsync(activity: String, data: HashMap): js.Promise[Boolean] = js.native
+}
+

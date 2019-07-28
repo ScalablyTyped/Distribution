@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for httperr v1.0.0
-// Project: https://github.com/pluma/httperr
-// Definitions by: Troy Gerwien <https://github.com/yortus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** Overall module shape, expressed as an interface. */
-
-```
 

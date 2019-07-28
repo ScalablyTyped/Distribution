@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a file path is an image.
-
-@example
-```
-const isImage = require('is-image');
-
-isImage('source/unicorn.png');
-//=> true
-
-isImage('source/unicorn.txt');
-//=> false
-```
-*/
-
-```
 

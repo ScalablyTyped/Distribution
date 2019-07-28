@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Created by Ivo Meißner on 28.07.17.
- */
-// Type definitions for graphql-query-complexity 0.1
-// Project: https://github.com/slicknode/graphql-query-complexity
-// Definitions by: Abhik Mitra <https://github.com/abhikmitra>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.6
-
-```
 

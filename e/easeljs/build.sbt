@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "easeljs"
-version := "1.0.0-dt-20190322Z-978591"
+version := "1.0.0-dt-20190322Z-eae717"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20190322Z-a246b7",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "tweenjs" % "1.0.2-dt-20190322Z-516d0f")
+  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20190322Z-65aa90",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "tweenjs" % "1.0.2-dt-20190322Z-023836")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

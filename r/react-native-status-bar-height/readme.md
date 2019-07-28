@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-status-bar-height 2.1
-// Project: https://github.com/ovr/react-native-status-bar-height#readme
-// Definitions by: Tom Spencer <https://github.com/fiznool>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

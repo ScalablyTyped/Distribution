@@ -28,15 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for flowjs 2.13
-// Project: https://github.com/flowjs/flow.js
-// Definitions by: Ryan McNamara <https://github.com/ryan10132>
-//                 Martin Nuc <https://github.com/martinnuc>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

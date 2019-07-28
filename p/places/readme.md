@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for algolia places 1.16
-// Project: https://github.com/algolia/places
-// Definitions by: Ghizlane LOTFI <https://github.com/ghizlanelotfi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

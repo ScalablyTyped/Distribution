@@ -1,0 +1,24 @@
+package typings.stylus
+
+import typings.stylus.stylusMod.StylusNs.NodesNs.Block
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BlockColumnFilenameLineno extends js.Object {
+  var __type: String
+  var block: Block
+  var column: Double
+  var filename: String
+  var lineno: Double
+}
+
+object Anon_BlockColumnFilenameLineno {
+  @scala.inline
+  def apply(__type: String, block: Block, column: Double, filename: String, lineno: Double): Anon_BlockColumnFilenameLineno = {
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno)
+  
+    __obj.asInstanceOf[Anon_BlockColumnFilenameLineno]
+  }
+}
+

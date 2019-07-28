@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-saga-tester 1.0
-// Project: https://github.com/wix/redux-saga-tester#readme
-// Definitions by: Ben Lorantfy <https://github.com/BenLorantfy>, Law Smith <https://github.com/lawsumisu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

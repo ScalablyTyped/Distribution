@@ -1,0 +1,12 @@
+package typings.aos.aosMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.aos.aosStrings.`aos:in`
+  - typings.aos.aosStrings.`aos:out`
+*/
+trait AosEventType extends js.Object
+

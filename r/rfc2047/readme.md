@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rfc2047 2.0
-// Project: https://github.com/One-com/rfc2047
-// Definitions by: Masanori Ohgita <https://github.com/mugifly>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Decode
- * @param encodedText Encoded Text
- * @return Decoded Text
- */
-
-```
 

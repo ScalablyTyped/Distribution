@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-fetch-blob 0.10
-// Project: https://github.com/wkh237/react-native-fetch-blob#readme
-// Definitions by: MNB <https://github.com/MNBuyskih>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

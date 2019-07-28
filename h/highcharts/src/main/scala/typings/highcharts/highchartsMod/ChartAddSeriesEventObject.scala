@@ -1,0 +1,35 @@
+package typings.highcharts.highchartsMod
+
+import typings.highcharts.highchartsStrings.addSeries
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ChartAddSeriesEventObject extends js.Object {
+  /**
+    * The series options that were passed to the `addSeries` method.
+    */
+  var options: SeriesOptionsType
+  /**
+    * Prevents the default behaviour of the event.
+    */
+  var preventDefault: js.Function
+  /**
+    * The event target.
+    */
+  var target: Chart
+  /**
+    * The event type.
+    */
+  var `type`: addSeries
+}
+
+object ChartAddSeriesEventObject {
+  @scala.inline
+  def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart, `type`: addSeries): ChartAddSeriesEventObject = {
+    val __obj = js.Dynamic.literal(options = options, preventDefault = preventDefault, target = target)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ChartAddSeriesEventObject]
+  }
+}
+

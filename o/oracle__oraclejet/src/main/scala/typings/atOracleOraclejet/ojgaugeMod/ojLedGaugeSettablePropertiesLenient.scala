@@ -1,0 +1,20 @@
+package typings.atOracleOraclejet.ojgaugeMod
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGaugeSettableProperties ]:? @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGaugeSettableProperties[P]} */ trait ojLedGaugeSettablePropertiesLenient
+  extends /* key */ StringDictionary[js.Any]
+
+object ojLedGaugeSettablePropertiesLenient {
+  @scala.inline
+  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null): ojLedGaugeSettablePropertiesLenient = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ojLedGaugeSettablePropertiesLenient]
+  }
+}
+

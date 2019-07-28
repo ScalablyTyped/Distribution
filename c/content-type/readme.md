@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for content-type 1.1
-// Project: https://github.com/jshttp/content-type
-// Definitions by: Hiroki Horiuchi <https://github.com/horiuchi>
-//                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

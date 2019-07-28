@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsonminify 0.4.1
-// Project: https://github.com/fkei/JSON.minify
-// Definitions by: Dan Homola <https://github.com/no23reason>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

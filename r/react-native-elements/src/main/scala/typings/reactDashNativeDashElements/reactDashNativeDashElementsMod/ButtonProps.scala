@@ -1,0 +1,262 @@
+package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
+
+import typings.react.reactMod.ComponentClass
+import typings.react.reactMod.ComponentState
+import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
+import typings.reactDashNative.reactDashNativeMod.AccessibilityState
+import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
+import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
+import typings.reactDashNative.reactDashNativeMod.BackgroundPropType
+import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNative.reactDashNativeMod.Insets
+import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
+import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
+import typings.reactDashNative.reactDashNativeMod.TargetedEvent
+import typings.reactDashNative.reactDashNativeMod.TextStyle
+import typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
+import typings.reactDashNative.reactDashNativeStrings.`no-hide-descendants`
+import typings.reactDashNative.reactDashNativeStrings.assertive
+import typings.reactDashNative.reactDashNativeStrings.auto
+import typings.reactDashNative.reactDashNativeStrings.button
+import typings.reactDashNative.reactDashNativeStrings.no
+import typings.reactDashNative.reactDashNativeStrings.none
+import typings.reactDashNative.reactDashNativeStrings.polite
+import typings.reactDashNative.reactDashNativeStrings.radiobutton_checked
+import typings.reactDashNative.reactDashNativeStrings.radiobutton_unchecked
+import typings.reactDashNative.reactDashNativeStrings.yes
+import typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.clear
+import typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.outline
+import typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.solid
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps because var conflicts: accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, tvParallaxProperties. Inlined background, useForeground */ trait ButtonProps extends TouchableOpacityProps {
+  /**
+    * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
+    *
+    * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
+    */
+  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
+  /**
+    * Specify a different component as the background for the button.
+    * Useful for if you want to make a button with a gradient background.
+    *
+    * @default View
+    */
+  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.undefined
+  /**
+    * Determines the type of background drawable that's going to be used to display feedback.
+    * It takes an object with type property and extra data depending on the type.
+    * It's recommended to use one of the following static methods to generate that dictionary:
+    *      1) TouchableNativeFeedback.SelectableBackground() - will create object that represents android theme's
+    *         default background for selectable elements (?android:attr/selectableItemBackground)
+    *      2) TouchableNativeFeedback.SelectableBackgroundBorderless() - will create object that represent android
+    *         theme's default background for borderless selectable elements
+    *         (?android:attr/selectableItemBackgroundBorderless). Available on android API level 21+
+    *      3) TouchableNativeFeedback.Ripple(color, borderless) - will create object that represents ripple drawable
+    *         with specified color (as a string). If property borderless evaluates to true the ripple will render
+    *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
+    *         type is available on Android API level 21+
+    */
+  var background: js.UndefOr[BackgroundPropType] = js.undefined
+  /**
+    * Additional styling for button (background) view component
+    *
+    * @default null
+    */
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * Styling for Component container
+    *
+    * @default null
+    */
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * Style of the button when disabled
+    */
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * Style of the title when the button is disabled
+    */
+  var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  /**
+    * Icon to show in the button
+    */
+  var icon: js.UndefOr[IconNode] = js.undefined
+  /**
+    * Style for the container around the icon
+    */
+  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * If to show the icon on the right
+    *
+    * @default false
+    */
+  var iconRight: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Object of props to be applied to the linearGradient view(ViewComponent)
+    */
+  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
+  /**
+    * Display a loading spinner
+    *
+    * @default false
+    */
+  var loading: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Additional props to applied to the ActivityIndicator
+    */
+  var loadingProps: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any
+  ] = js.undefined
+  /**
+    * Additional style to applied to the ActivityIndicator
+    */
+  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * If the button has raised styling
+    *
+    * @default false
+    */
+  var raised: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Button title
+    */
+  var title: js.UndefOr[String] = js.undefined
+  /**
+    * Optional props for the title inside the button
+    */
+  var titleProps: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
+  ] = js.undefined
+  /**
+    * Title styling
+    */
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  /**
+    * Type of button
+    *
+    * @default solid
+    */
+  var `type`: js.UndefOr[solid | clear | outline] = js.undefined
+  var useForeground: js.UndefOr[Boolean] = js.undefined
+}
+
+object ButtonProps {
+  @scala.inline
+  def apply(
+    TouchableComponent: ComponentClass[js.Object, ComponentState] = null,
+    ViewComponent: ComponentClass[_, ComponentState] = null,
+    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
+    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
+    accessibilityHint: String = null,
+    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
+    accessibilityLabel: String = null,
+    accessibilityLiveRegion: none | polite | assertive = null,
+    accessibilityRole: AccessibilityRole = null,
+    accessibilityState: AccessibilityState = null,
+    accessibilityStates: js.Array[AccessibilityStates] = null,
+    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessible: js.UndefOr[Boolean] = js.undefined,
+    activeOpacity: Int | Double = null,
+    background: BackgroundPropType = null,
+    buttonStyle: StyleProp[ViewStyle] = null,
+    containerStyle: StyleProp[ViewStyle] = null,
+    delayLongPress: Int | Double = null,
+    delayPressIn: Int | Double = null,
+    delayPressOut: Int | Double = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    disabledStyle: StyleProp[ViewStyle] = null,
+    disabledTitleStyle: StyleProp[TextStyle] = null,
+    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
+    hitSlop: Insets = null,
+    icon: IconNode = null,
+    iconContainerStyle: StyleProp[ViewStyle] = null,
+    iconRight: js.UndefOr[Boolean] = js.undefined,
+    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
+    linearGradientProps: js.Object = null,
+    loading: js.UndefOr[Boolean] = js.undefined,
+    loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any = null,
+    loadingStyle: StyleProp[ViewStyle] = null,
+    onAccessibilityTap: () => Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
+    onLayout: /* event */ LayoutChangeEvent => Unit = null,
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
+    onMagicTap: () => Unit = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
+    pressRetentionOffset: Insets = null,
+    raised: js.UndefOr[Boolean] = js.undefined,
+    style: StyleProp[ViewStyle] = null,
+    testID: String = null,
+    title: String = null,
+    titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    titleStyle: StyleProp[TextStyle] = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    `type`: solid | clear | outline = null,
+    useForeground: js.UndefOr[Boolean] = js.undefined
+  ): ButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (TouchableComponent != null) __obj.updateDynamic("TouchableComponent")(TouchableComponent)
+    if (ViewComponent != null) __obj.updateDynamic("ViewComponent")(ViewComponent)
+    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
+    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState)
+    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
+    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
+    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
+    if (disabledTitleStyle != null) __obj.updateDynamic("disabledTitleStyle")(disabledTitleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
+    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconContainerStyle != null) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight)
+    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (linearGradientProps != null) __obj.updateDynamic("linearGradientProps")(linearGradientProps)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
+    if (loadingStyle != null) __obj.updateDynamic("loadingStyle")(loadingStyle.asInstanceOf[js.Any])
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
+    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(useForeground)) __obj.updateDynamic("useForeground")(useForeground)
+    __obj.asInstanceOf[ButtonProps]
+  }
+}
+

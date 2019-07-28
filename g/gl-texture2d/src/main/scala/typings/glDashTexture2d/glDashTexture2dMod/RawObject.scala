@@ -1,0 +1,23 @@
+package typings.glDashTexture2d.glDashTexture2dMod
+
+import typings.std.ArrayBufferView
+import typings.std.ImageBitmap
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RawObject extends js.Object {
+  var height: Double
+  var raw: ArrayBufferView | InputType | ImageBitmap
+  var width: Double
+}
+
+object RawObject {
+  @scala.inline
+  def apply(height: Double, raw: ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
+    val __obj = js.Dynamic.literal(height = height, raw = raw.asInstanceOf[js.Any], width = width)
+  
+    __obj.asInstanceOf[RawObject]
+  }
+}
+

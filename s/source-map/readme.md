@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for source-map 0.7
-// Project: https://github.com/mozilla/source-map
-// Definitions by: Morten Houston Ludvigsen <https://github.com/MortenHoustonLudvigsen>,
-//                 Ron Buckton <https://github.com/rbuckton>,
-//                 John Vilk <https://github.com/jvilk>
-// Definitions: https://github.com/mozilla/source-map
-
-```
 

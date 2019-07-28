@@ -31,33 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Generated bundle index. Do not edit.
- */
-/**
- * @description
- * NavParams are an object that exists on a page and can contain data for that particular view.
- * Similar to how data was pass to a view in V1 with `$stateParams`, NavParams offer a much more flexible
- * option with a simple `get` method.
- *
- * @usage
- * ```ts
- * import { NavParams } from '@ionic/angular';
- *
- * export class MyClass{
- *
- *  constructor(navParams: NavParams){
- *    // userParams is an object we have in our nav-parameters
- *    navParams.get('userParams');
- *  }
- *
- * }
- * ```
- */
-
-```
 

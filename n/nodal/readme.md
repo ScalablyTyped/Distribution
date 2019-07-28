@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nodal 0.12.8
-// Project: https://github.com/keithwhor/nodal
-// Definitions by: Adam Charron <https://github.com/charrondev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

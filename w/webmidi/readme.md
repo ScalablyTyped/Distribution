@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Web MIDI API 2.0
-// Project: http://www.w3.org/TR/webmidi/, https://github.com/djipco/webmidi
-// Definitions by: six a <https://github.com/lostfictions>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

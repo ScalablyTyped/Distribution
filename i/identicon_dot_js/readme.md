@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for identicon.js 2.3
-// Project: https://github.com/stewartlord/identicon.js
-// Definitions by: D0miH <https://github.com/D0miH>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

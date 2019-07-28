@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "vega-embed"
-version := "4.2.2-78cab7"
+version := "4.2.2-960230"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-b08cd3",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "vega" % "5.4.0-ff8668",
-  "org.scalablytyped" %%% "vega-lite" % "2.7.0-66ae76",
-  "org.scalablytyped" %%% "vega-tooltip" % "0.18.1-36ca3a",
-  "org.scalablytyped" %%% "vega-typings" % "0.7.1-e0167e",
-  "org.scalablytyped" %%% "vega-util" % "1.10.0-2c2358")
+  "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-9486ca",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "vega" % "5.4.0-a4b654",
+  "org.scalablytyped" %%% "vega-lite" % "2.7.0-aeb2de",
+  "org.scalablytyped" %%% "vega-tooltip" % "0.18.1-b56e7f",
+  "org.scalablytyped" %%% "vega-typings" % "0.7.1-e88933",
+  "org.scalablytyped" %%% "vega-util" % "1.10.0-8e79a2")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

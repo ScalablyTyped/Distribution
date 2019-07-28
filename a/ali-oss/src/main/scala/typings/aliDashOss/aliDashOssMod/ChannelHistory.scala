@@ -1,0 +1,22 @@
+package typings.aliDashOss.aliDashOssMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ChannelHistory extends js.Object {
+   //
+  var EndTime: String
+  var RemoteAddr: String
+  var StartTime: String
+}
+
+object ChannelHistory {
+  @scala.inline
+  def apply(EndTime: String, RemoteAddr: String, StartTime: String): ChannelHistory = {
+    val __obj = js.Dynamic.literal(EndTime = EndTime, RemoteAddr = RemoteAddr, StartTime = StartTime)
+  
+    __obj.asInstanceOf[ChannelHistory]
+  }
+}
+

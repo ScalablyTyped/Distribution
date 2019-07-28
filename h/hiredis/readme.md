@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for hiredis 0.5
-// Project: http://github.com/redis/hiredis-node
-// Definitions by: Titan <https://github.com/titan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

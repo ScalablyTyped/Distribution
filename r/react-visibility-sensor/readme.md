@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-visibility-sensor 5.0
-// Project: https://github.com/joshwnj/react-visibility-sensor#readme
-// Definitions by: Rasmus Bergström <https://github.com/JRasmusBm>
-//                 Gabriel Cangussu <https://github.com/gcangussu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -31,33 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @wordpress/viewport 2.5
-// Project: https://github.com/WordPress/gutenberg/tree/master/packages/viewport/README.md
-// Definitions by: Derek Sifford <https://github.com/dsifford>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.5
-/**
- * Used in signalling that viewport queries have been updated. Values are specified as an object of
- * breakpoint query keys where value represents whether query matches.
- *
- * @param values - Breakpoint query matches.
- */
-/**
- * Returns `true` if the viewport matches the given query, or `false` otherwise.
- *
- * @param query - Query string. Includes operator and breakpoint name, space separated.
- *                Operator defaults to `>=`.
- *
- * @example
- * ```js
- * isViewportMatch( '< huge' );
- * isViewPortMatch( 'medium' );
- * ```
- */
-
-```
 

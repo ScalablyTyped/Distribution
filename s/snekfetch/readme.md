@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for snekfetch 4.0
-// Project: https://github.com/GusCaplan/snekfetch, https://snekfetch.js.org
-// Definitions by: Iker Pérez Brunelli <https://github.com/ANekoIsFineToo>
-//                 Shayne Hartford <https://github.com/ShayBox>
-//                 Yukine <https://github.com/Dev-Yukine>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

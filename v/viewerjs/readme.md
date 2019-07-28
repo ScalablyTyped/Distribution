@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for viewerjs 0.7
-// Project: https://fengyuanchen.github.io/viewerjs
-// Definitions by: LRH3321 <https://github.com/lrh3321>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,23 @@
+package typings.semanticDashUiDashSidebar.SemanticUINs.SidebarNs.DefaultTransitionSettingsNs
+
+import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.bottom
+import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.left
+import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.right
+import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.top
+import typings.std.Partial
+import typings.std.Pick
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object ComputerSettingsNs {
+  type Param = (Pick[
+    typings.semanticDashUiDashSidebar.SemanticUINs.SidebarNs.DefaultTransitionSettingsNs.ComputerSettingsNs._Impl, 
+    left | right | top | bottom
+  ]) with (Partial[
+    Pick[
+      typings.semanticDashUiDashSidebar.SemanticUINs.SidebarNs.DefaultTransitionSettingsNs.ComputerSettingsNs._Impl, 
+      left | right | top | bottom
+    ]
+  ])
+}

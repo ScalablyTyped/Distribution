@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for base64-url 2.2
-// Project: https://github.com/joaquimserafim/base64-url
-// Definitions by: Uri Shaked <https://github.com/urish>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

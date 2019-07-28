@@ -1,0 +1,27 @@
+package typings.adone
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TypeofconstantsNODEPERFORMANCEGCINCREMENTAL extends js.Object {
+  val NODE_PERFORMANCE_GC_INCREMENTAL: Double
+  val NODE_PERFORMANCE_GC_MAJOR: Double
+  val NODE_PERFORMANCE_GC_MINOR: Double
+  val NODE_PERFORMANCE_GC_WEAKCB: Double
+}
+
+object TypeofconstantsNODEPERFORMANCEGCINCREMENTAL {
+  @scala.inline
+  def apply(
+    NODE_PERFORMANCE_GC_INCREMENTAL: Double,
+    NODE_PERFORMANCE_GC_MAJOR: Double,
+    NODE_PERFORMANCE_GC_MINOR: Double,
+    NODE_PERFORMANCE_GC_WEAKCB: Double
+  ): TypeofconstantsNODEPERFORMANCEGCINCREMENTAL = {
+    val __obj = js.Dynamic.literal(NODE_PERFORMANCE_GC_INCREMENTAL = NODE_PERFORMANCE_GC_INCREMENTAL, NODE_PERFORMANCE_GC_MAJOR = NODE_PERFORMANCE_GC_MAJOR, NODE_PERFORMANCE_GC_MINOR = NODE_PERFORMANCE_GC_MINOR, NODE_PERFORMANCE_GC_WEAKCB = NODE_PERFORMANCE_GC_WEAKCB)
+  
+    __obj.asInstanceOf[TypeofconstantsNODEPERFORMANCEGCINCREMENTAL]
+  }
+}
+

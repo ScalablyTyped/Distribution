@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Pathjs v0.8.4
-// Project: https://github.com/mtrpcic/pathjs
-// Definitions by: Lokesh Peta <https://github.com/lokeshpeta>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

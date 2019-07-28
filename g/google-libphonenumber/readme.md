@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for libphonenumber v7.4.3
-// Project: https://github.com/googlei18n/libphonenumber, https://github.com/seegno/google-libphonenumber
-// Definitions by: Leon Yu <https://github.com/leonyu>
-//		   Roman Jurkov <https://github.com/winfinit>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

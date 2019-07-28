@@ -1,0 +1,23 @@
+package typings.agDashGrid.distLibInterfacesIRangeControllerMod
+
+import typings.agDashGrid.distLibEntitiesColumnMod.Column
+import typings.agDashGrid.distLibEntitiesGridCellMod.GridCell
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RangeSelection extends js.Object {
+  var columns: js.Array[Column]
+  var end: GridCell
+  var start: GridCell
+}
+
+object RangeSelection {
+  @scala.inline
+  def apply(columns: js.Array[Column], end: GridCell, start: GridCell): RangeSelection = {
+    val __obj = js.Dynamic.literal(columns = columns, end = end, start = start)
+  
+    __obj.asInstanceOf[RangeSelection]
+  }
+}
+

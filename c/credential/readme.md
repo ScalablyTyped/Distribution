@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for credential 2.0
-// Project: https://github.com/ericelliott/credential
-// Definitions by: Phú <https://github.com/phuvo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

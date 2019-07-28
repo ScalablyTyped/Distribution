@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for is-valid-path 0.1
-// Project: https://github.com/jonschlinkert/is-valid-path
-// Definitions by: Zlatko Andonovski <https://github.com/Goldsmith42>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

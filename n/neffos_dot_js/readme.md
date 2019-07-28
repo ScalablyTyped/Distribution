@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for neffos.js 0.1
-// Project: https://github.com/kataras/neffos.js
-// Definitions by: Gerasimos (Makis) Maropoulos <https://github.com/kataras>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-/* The WSData is just a string type alias. */
-
-```
 

@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get the remote origin url of a Git repository.
-
-@param cwd - The current working directory. Default: `process.cwd()`.
-
-@example
-```
-import gitRemoteOriginUrl = require('git-remote-origin-url');
-
-(async() => {
-	console.log(await gitRemoteOriginUrl());
-	//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
-})();
-```
-*/
-
-```
 

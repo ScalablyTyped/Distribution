@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for distributions 2.0
-// Project: https://github.com/AndreasMadsen/distributions
-// Definitions by: Marco Lanaro <https://github.com/marcolanaro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

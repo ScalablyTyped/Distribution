@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsWorklinkMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeleteFleetRequest extends js.Object {
+  /**
+    * The ARN of the fleet.
+    */
+  var FleetArn: typings.awsDashSdk.clientsWorklinkMod.FleetArn
+}
+
+object DeleteFleetRequest {
+  @scala.inline
+  def apply(FleetArn: FleetArn): DeleteFleetRequest = {
+    val __obj = js.Dynamic.literal(FleetArn = FleetArn)
+  
+    __obj.asInstanceOf[DeleteFleetRequest]
+  }
+}
+

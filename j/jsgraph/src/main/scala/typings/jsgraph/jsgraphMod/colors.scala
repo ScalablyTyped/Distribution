@@ -1,0 +1,24 @@
+package typings.jsgraph.jsgraphMod
+
+import typings.jsgraph.jsgraphNumbers.`0`
+import typings.jsgraph.jsgraphNumbers.`1`
+import typings.jsgraph.jsgraphNumbers.`2`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait colors extends js.Object {
+  var black: `2`
+  var gray: `1`
+  var white: `0`
+}
+
+object colors {
+  @scala.inline
+  def apply(black: `2`, gray: `1`, white: `0`): colors = {
+    val __obj = js.Dynamic.literal(black = black, gray = gray, white = white)
+  
+    __obj.asInstanceOf[colors]
+  }
+}
+

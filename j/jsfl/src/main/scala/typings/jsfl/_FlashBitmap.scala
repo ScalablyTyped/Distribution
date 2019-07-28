@@ -1,0 +1,23 @@
+package typings.jsfl
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _FlashBitmap extends js.Object {
+  var bits: js.Any
+  var cTab: js.UndefOr[js.Array[String]] = js.undefined
+  var depth: js.Any
+  var height: js.Any
+  var width: js.Any
+}
+
+object _FlashBitmap {
+  @scala.inline
+  def apply(bits: js.Any, depth: js.Any, height: js.Any, width: js.Any, cTab: js.Array[String] = null): _FlashBitmap = {
+    val __obj = js.Dynamic.literal(bits = bits, depth = depth, height = height, width = width)
+    if (cTab != null) __obj.updateDynamic("cTab")(cTab)
+    __obj.asInstanceOf[_FlashBitmap]
+  }
+}
+

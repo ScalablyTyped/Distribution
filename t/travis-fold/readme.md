@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for travis-fold 0.1
-// Project: https://github.com/macbre/travis-fold
-// Definitions by: Andy Hanson <https://github.com/andy-ms>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

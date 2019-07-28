@@ -1,0 +1,36 @@
+package typings.naverDashWhale.whaleNs.devtoolsNs.panelsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ExtensionPanel extends js.Object {
+  /** Fired when the user switches away from the panel. */
+  var onHidden: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelHiddenEvent
+  /** Fired upon a search action (start of a new search, search result navigation, or search being canceled). */
+  var onSearch: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelSearchEvent
+  /** Fired when the user switches to the panel. */
+  var onShown: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelShownEvent
+  /**
+    * Appends a button to the status bar of the panel.
+    * @param iconPath Path to the icon of the button. The file should contain a 64x24-pixel image composed of two 32x24 icons. The left icon is used when the button is inactive; the right icon is displayed when the button is pressed.
+    * @param tooltipText Text shown as a tooltip when user hovers the mouse over the button.
+    * @param disabled Whether the button is disabled.
+    */
+  def createStatusBarButton(iconPath: String, tooltipText: String, disabled: Boolean): typings.chrome.chromeNs.devtoolsNs.panelsNs.Button
+}
+
+object ExtensionPanel {
+  @scala.inline
+  def apply(
+    createStatusBarButton: (String, String, Boolean) => typings.chrome.chromeNs.devtoolsNs.panelsNs.Button,
+    onHidden: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelHiddenEvent,
+    onSearch: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelSearchEvent,
+    onShown: typings.chrome.chromeNs.devtoolsNs.panelsNs.PanelShownEvent
+  ): ExtensionPanel = {
+    val __obj = js.Dynamic.literal(createStatusBarButton = js.Any.fromFunction3(createStatusBarButton), onHidden = onHidden, onSearch = onSearch, onShown = onShown)
+  
+    __obj.asInstanceOf[ExtensionPanel]
+  }
+}
+

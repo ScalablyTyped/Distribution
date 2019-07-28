@@ -31,27 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a number is [negative zero](https://en.wikipedia.org/wiki/Signed_zero).
-
-@example
-```
-import negativeZero = require('negative-zero');
-
-negativeZero(-0);
-//=> true
-
-negativeZero(0);
-//=> false
-
-negativeZero(+0);
-//=> false
-```
-*/
-
-```
 

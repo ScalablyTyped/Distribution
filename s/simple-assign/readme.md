@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for simple-assign 0.1.0
-// Project: https://github.com/newoga/simple-assign
-// Definitions by: Ivo Stratev <https://github.com/NoHomey>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

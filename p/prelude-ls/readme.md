@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for prelude.ls 1.1.1
-// Project: http://www.preludels.com
-// Definitions by: Aya Morisawa <https://github.com/AyaMorisawa>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Change [0]: 2015/06/14 - Marcelo Camargo <https://github.com/haskellcamargo>
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pngjs2 2.0.0
-// Project: https://www.npmjs.com/package/pngjs2
-// Definitions by: Elisée Maurer <https://sparklinlabs.com/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

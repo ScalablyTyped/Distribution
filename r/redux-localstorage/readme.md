@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-localstorage 1.0
-// Project: https://github.com/elgerlambert/redux-localstorage
-// Definitions by: Karol Janyst <https://github.com/LKay>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

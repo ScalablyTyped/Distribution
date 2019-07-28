@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for websocket-stream 5.3
-// Project: https://github.com/maxogden/websocket-stream#readme
-// Original definitions by: Ben Burns <https://github.com/benjamincburns>
-
-```
 

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-aria-menubutton 6.2
-// Project: https://github.com/davidtheclark/react-aria-menubutton
-// Definitions by: Muhammad Fawwaz Orabi <https://github.com/forabi>
-//                 Chris Rohlfs <https://github.com/crohlfs>
-//                 Mats Roshauw <https://github.com/karmats>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

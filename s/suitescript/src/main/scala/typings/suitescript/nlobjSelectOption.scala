@@ -1,0 +1,47 @@
+package typings.suitescript
+
+import org.scalablytyped.runtime.Instantiable0
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Return a new instance of nlobjSelectOption.
+  *
+  * @classDescription select|radio option used for building select fields via the UI Object API and for describing select|radio fields.
+  * @return {nlobjSelectOption}
+  * @constructor
+  *
+  * @since 2009.2
+  */
+@js.native
+trait nlobjSelectOption
+  extends /**
+  *
+  * @return
+  */
+Instantiable0[js.Any] {
+  /**
+    * return internal ID for select option
+    * @return {string}
+    *
+    * @method
+    * @memberOf nlobjSelectOption
+    *
+    * @since 2009.2
+    * @return
+    */
+  def getId(): String = js.native
+  /**
+    * return display value for select option.
+    * @return {string}
+    *
+    * @method
+    * @memberOf nlobjSelectOption
+    *
+    * @since 2009.2
+    * @return
+    */
+  def getText(): String = js.native
+}
+

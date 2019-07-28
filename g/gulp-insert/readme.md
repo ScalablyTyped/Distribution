@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-insert 0.5.0
-// Project: https://github.com/rschmukler/gulp-insert
-// Definitions by: Shant Marouti <https://github.com/shantmarouti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

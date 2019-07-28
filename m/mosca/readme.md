@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mosca 2.8
-// Project: https://github.com/mcollina/mosca
-// Definitions by: Joao Gabriel Gouveia <https://github.com/GabrielGouv>
-//                 Jerray Fu <https://github.com/jerray>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

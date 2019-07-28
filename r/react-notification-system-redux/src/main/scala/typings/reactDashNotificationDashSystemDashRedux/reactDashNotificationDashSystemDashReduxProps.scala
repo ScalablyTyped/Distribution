@@ -1,0 +1,13 @@
+package typings.reactDashNotificationDashSystemDashRedux
+
+import typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNotificationDashSystemDashReduxProps {
+  @scala.inline
+  def ReactDashNotificationDashSystemDashReduxProps: NotificationsProps.type = typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
+  type ReactDashNotificationDashSystemDashReduxProps = NotificationsProps
+}
+

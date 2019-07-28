@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Decorum JS v0.2.0
-// Project: https://github.com/dflor003/decorum
-// Definitions by: Danil Flores <https://github.com/dflor003>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

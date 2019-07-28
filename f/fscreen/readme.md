@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fscreen 1.0
-// Project: https://github.com/rafrex/fscreen#readme
-// Definitions by: Joscha Feth <https://github.com/joscha>
-//                 Terry Mun <https://github.com/terrymun>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

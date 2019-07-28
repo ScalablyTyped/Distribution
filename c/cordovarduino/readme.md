@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Cordovarduino plugin
-// Project: https://github.com/stereolux/cordovarduino
-// Definitions by: Hendrik Maus <https://github.com/hendrikmaus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

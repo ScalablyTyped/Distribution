@@ -1,0 +1,21 @@
+package typings.vuex.typesVueMod
+
+import typings.vuex.typesMod.Store
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Vue extends js.Object {
+  @JSName("$store")
+  var $store: Store[_]
+}
+
+object Vue {
+  @scala.inline
+  def apply($store: Store[_]): Vue = {
+    val __obj = js.Dynamic.literal($store = $store)
+  
+    __obj.asInstanceOf[Vue]
+  }
+}
+

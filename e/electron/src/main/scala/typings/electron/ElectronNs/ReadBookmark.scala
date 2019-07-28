@@ -1,0 +1,20 @@
+package typings.electron.ElectronNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReadBookmark extends js.Object {
+  var title: String
+  var url: String
+}
+
+object ReadBookmark {
+  @scala.inline
+  def apply(title: String, url: String): ReadBookmark = {
+    val __obj = js.Dynamic.literal(title = title, url = url)
+  
+    __obj.asInstanceOf[ReadBookmark]
+  }
+}
+

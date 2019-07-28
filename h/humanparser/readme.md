@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for humanparser 1.1.1
-// Project: https://github.com/chovy/humanparser
-// Definitions by: Michał Podeszwa <https://github.com/MichalPodeszwa>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pusher-js 4.2
-// Project: https://github.com/pusher/pusher-js
-// Definitions by: Qubo <https://github.com/tkqubo>
-//                 Lance Ivy <https://github.com/cainlevy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

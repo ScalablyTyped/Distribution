@@ -1,0 +1,45 @@
+package typings.antdDashMobile.esRadioRadioMod
+
+import typings.antdDashMobile.Anon_Target
+import typings.antdDashMobile.esRadioPropsTypeMod.RadioPropsType
+import typings.react.reactMod.CSSProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RadioProps extends RadioPropsType {
+  var className: js.UndefOr[String] = js.undefined
+  var listPrefixCls: js.UndefOr[String] = js.undefined
+  var prefixCls: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
+}
+
+object RadioProps {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[Boolean] = js.undefined,
+    className: String = null,
+    defaultChecked: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    listPrefixCls: String = null,
+    name: String = null,
+    onChange: /* e */ Anon_Target => Unit = null,
+    prefixCls: String = null,
+    style: CSSProperties = null,
+    wrapLabel: js.UndefOr[Boolean] = js.undefined
+  ): RadioProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (listPrefixCls != null) __obj.updateDynamic("listPrefixCls")(listPrefixCls)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(wrapLabel)) __obj.updateDynamic("wrapLabel")(wrapLabel)
+    __obj.asInstanceOf[RadioProps]
+  }
+}
+

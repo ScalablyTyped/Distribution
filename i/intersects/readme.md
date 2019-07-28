@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for intersects 2.5
-// Project: https://github.com/davidfig/intersects#readme
-// Definitions by: Voxylu <https://github.com/voxylu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

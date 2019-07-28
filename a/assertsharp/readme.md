@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for assertsharp
-// Project: https://www.npmjs.com/package/assertsharp
-// Definitions by: Bruno Leonardo Michels <https://github.com/brunolm>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

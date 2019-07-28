@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for is-url v1.2.1
-// Project: https://github.com/segmentio/is-url
-// Definitions by: Ryota Murohoshi <https://github.com/RyotaMurohoshi>
-// Definitions: https://github.com/RyotaMurohoshi/DefinitelyTyped
-
-```
 

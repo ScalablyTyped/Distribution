@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jsx-chai 3.0.0
-// Project: https://github.com/bkonkle/jsx-chai
-// Definitions by: Philipp Holzer <https://github.com/nupplaphil>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

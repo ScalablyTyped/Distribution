@@ -1,0 +1,22 @@
+package typings.reactDashNativeDashSnapDashCarousel
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.CarouselProperties
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.PaginationProperties
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashSnapDashCarouselComponents extends reactDashNativeDashSnapDashCarouselProps {
+  @scala.inline
+  def Pagination: ComponentType[PaginationProperties] = js.constructorOf[typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.Pagination].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.PaginationProperties]]
+  @scala.inline
+  def ParallaxImage: ComponentType[ParallaxImageProperties] = js.constructorOf[typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.ParallaxImage].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties]]
+  @scala.inline
+  def ReactDashNativeDashSnapDashCarousel[T]: ComponentType[CarouselProperties[T]] = js.constructorOf[typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.CarouselProperties[T]]]
+}
+

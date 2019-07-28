@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for currency-formatter 1.3
-// Project: https://github.com/smirzaei/currency-formatter#readme
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-//                 David Paz <https://github.com/davidmpaz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

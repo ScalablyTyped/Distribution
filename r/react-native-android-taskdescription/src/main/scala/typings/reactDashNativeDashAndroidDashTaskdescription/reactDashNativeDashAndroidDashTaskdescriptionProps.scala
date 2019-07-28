@@ -1,0 +1,13 @@
+package typings.reactDashNativeDashAndroidDashTaskdescription
+
+import typings.reactDashNativeDashAndroidDashTaskdescription.reactDashNativeDashAndroidDashTaskdescriptionMod.ReactNativeAndroidTaskDescriptionProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashAndroidDashTaskdescriptionProps {
+  @scala.inline
+  def ReactDashNativeDashAndroidDashTaskdescriptionProps: ReactNativeAndroidTaskDescriptionProps.type = typings.reactDashNativeDashAndroidDashTaskdescription.reactDashNativeDashAndroidDashTaskdescriptionMod.ReactNativeAndroidTaskDescriptionProps
+  type ReactDashNativeDashAndroidDashTaskdescriptionProps = ReactNativeAndroidTaskDescriptionProps
+}
+

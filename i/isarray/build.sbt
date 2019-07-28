@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "isarray"
-version := "2.0-dt-20190407Z-1e6e4c"
+version := "2.0-dt-20190407Z-e29883"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

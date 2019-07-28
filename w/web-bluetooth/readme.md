@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Web Bluetooth
-// Project: https://webbluetoothcg.github.io/web-bluetooth/
-// Definitions by: Uri Shaked <https://github.com/urish>
-// 								 Xavier Lozinguez <http://github.com/xlozinguez>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

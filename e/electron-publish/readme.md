@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/*!
- * node-progress
- * Copyright(c) 2011 TJ Holowaychuk <tj@vision-media.ca>
- * MIT Licensed
- */
-
-```
 

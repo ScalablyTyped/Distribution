@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for assert-plus 1.0
-// Project: https://github.com/mcavage/node-assert-plus#readme
-// Definitions by: Костя Третяк <https://github.com/KostyaTretyak>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

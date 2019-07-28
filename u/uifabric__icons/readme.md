@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * @deprecated Const enum use is deprecated. See GitHub issue #7110: https://github.com/OfficeDev/office-ui-fabric-react/issues/7110
- */
-
-```
 

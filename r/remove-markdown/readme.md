@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for remove-markdown 0.1
-// Project: https://github.com/stiang/remove-markdown
-// Definitions by: Muhammad Ragib Hasin <https://github.com/RagibHasin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,45 @@
+package typings.atHapiInert.atHapiInertMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atHapiInert.atHapiInertNumbers.`false`
+import typings.atHapiInert.atHapiInertStrings.`inline`
+import typings.atHapiInert.atHapiInertStrings.attachment
+import typings.atHapiInert.atHapiInertStrings.hash
+import typings.atHapiInert.atHapiInertStrings.simple
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FileHandlerRouteObject extends ReplyFileHandlerOptions {
+  /**
+    * path - a path string or function as described above (required).
+    */
+  var path: String | RequestHandler[String]
+}
+
+object FileHandlerRouteObject {
+  @scala.inline
+  def apply(
+    path: String | RequestHandler[String],
+    confine: js.UndefOr[Boolean] = js.undefined,
+    end: Int | Double = null,
+    etagMethod: hash | simple | `false` = null,
+    filename: String = null,
+    lookupCompressed: js.UndefOr[Boolean] = js.undefined,
+    lookupMap: StringDictionary[String] = null,
+    mode: `false` | attachment | `inline` = null,
+    start: Int | Double = null
+  ): FileHandlerRouteObject = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed)
+    if (lookupMap != null) __obj.updateDynamic("lookupMap")(lookupMap)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileHandlerRouteObject]
+  }
+}
+

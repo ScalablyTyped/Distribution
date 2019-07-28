@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-List of [compressed file extensions](http://en.wikipedia.org/wiki/List_of_archive_formats#Compression_only).
-
-@example
-```
-import compressedExtensions = require('compressed-extensions');
-
-console.log(compressedExtensions);
-//=> ['7z', 'apk', …]
-```
-*/
-
-```
 

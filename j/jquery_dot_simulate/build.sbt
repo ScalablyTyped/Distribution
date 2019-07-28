@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_simulate"
-version := "0.0-unknown-dt-20190322Z-e670b8"
+version := "0.0-unknown-dt-20190322Z-4d81be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

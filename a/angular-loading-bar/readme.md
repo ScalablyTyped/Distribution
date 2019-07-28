@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for angular-loading-bar
-// Project: https://github.com/chieffancypants/angular-loading-bar
-// Definitions by:  Stephen Lautier <https://github.com/stephenlautier>
-//                  Tyrone Dougherty <https://github.com/tyronedougherty>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

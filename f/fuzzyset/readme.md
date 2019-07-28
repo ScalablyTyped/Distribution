@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fuzzset 1.0
-// Project: http://github.com/washt/fuzzyset
-// Definitions by: Louis Grignon <https://github.com/lgrignon>
-//                Narain Sagar <https://github.com/narainsagar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

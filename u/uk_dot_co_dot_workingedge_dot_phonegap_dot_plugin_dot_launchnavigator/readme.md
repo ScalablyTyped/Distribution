@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for uk.co.workingedge.phonegap.plugin.launchnavigator@5
-// Project: https://github.com/dpa99c/phonegap-launch-navigator
-// Definitions by: Dave Alden <https://github.com/dpa99c>
-// Usage: import { LaunchNavigator, LaunchNavigatorOptions, PromptsOptions, RememberChoiceOptions, AppSelectionOptions, UserChoice, UserPrompted, AppSelection } from 'react-native-launch-navigator';
-
-```
 

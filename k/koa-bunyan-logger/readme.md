@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-bunyan-logger 2.1
-// Project: https://github.com/koajs/bunyan-logger
-// Definitions by: Steven McDowall <https://github.com/sjmcdowall>
-//                 Jan Karlo Dela Cruz <https://github.com/jankdc>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

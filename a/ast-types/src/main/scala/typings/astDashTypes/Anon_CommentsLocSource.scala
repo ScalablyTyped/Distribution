@@ -1,0 +1,26 @@
+package typings.astDashTypes
+
+import typings.astDashTypes.genKindsMod.CommentKind
+import typings.astDashTypes.genKindsMod.LiteralKind
+import typings.astDashTypes.genKindsMod.SourceLocationKind
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CommentsLocSource extends js.Object {
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
+  var source: js.UndefOr[LiteralKind | Null] = js.undefined
+}
+
+object Anon_CommentsLocSource {
+  @scala.inline
+  def apply(comments: js.Array[CommentKind] = null, loc: SourceLocationKind = null, source: LiteralKind = null): Anon_CommentsLocSource = {
+    val __obj = js.Dynamic.literal()
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Anon_CommentsLocSource]
+  }
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for imsi-grok 1.0
-// Project: https://github.com/atis--/imsi-grok#readme
-// Definitions by: Dean Pienaar <https://github.com/deanpienaar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// tslint:disable-next-line interface-name
-
-```
 

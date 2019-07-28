@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-responsive 3.0
-// Project: http://github.com/contra/react-responsive
-// Definitions by: Alexey Svetliakov <https://github.com/asvetliakov>
-//                 Alec Hill <https://github.com/alechill>
-//                 Javier Gonzalez <https://github.com/xaviergonz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

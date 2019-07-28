@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-List of [JavaScript types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
-
-@example
-```
-import jsTypes = require('js-types');
-
-console.log(jsTypes);
-//=> ['Array', 'ArrayBuffer', 'Boolean', …]
-```
-*/
-
-```
 

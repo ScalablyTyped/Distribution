@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for imap v0.8.14
-// Project: https://www.npmjs.com/package/imap
-// Definitions by: Peter Snider <https://github.com/psnider>
-// Definitions: https://github.com/psnider/DefinitelyTyped/imap
-
-```
 

@@ -1,0 +1,19 @@
+package typings.siesta.SiestaNs.HarnessNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IPreloadTextDescriptor extends js.Object {
+  var text: String
+}
+
+object IPreloadTextDescriptor {
+  @scala.inline
+  def apply(text: String): IPreloadTextDescriptor = {
+    val __obj = js.Dynamic.literal(text = text)
+  
+    __obj.asInstanceOf[IPreloadTextDescriptor]
+  }
+}
+

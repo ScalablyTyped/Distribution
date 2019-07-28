@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-List of [archive file](http://en.wikipedia.org/wiki/Archive_file) extensions.
-
-@example
-```
-import archiveExtensions = require('archive-extensions');
-
-console.log(archiveExtensions);
-//=> ['7z', 'a', …]
-```
-*/
-
-```
 

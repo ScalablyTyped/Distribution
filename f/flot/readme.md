@@ -30,17 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Flot
-// Project: http://www.flotcharts.org/
-// Definitions by:  Matt Burland <https://github.com/burlandm>
-//                  Timo Mühlbach <https://github.com/Anticom>
-//                  Ariel Kuechler <https://github.com/admiralsmaster> 
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

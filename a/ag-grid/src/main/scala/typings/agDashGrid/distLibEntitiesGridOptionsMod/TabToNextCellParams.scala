@@ -1,0 +1,23 @@
+package typings.agDashGrid.distLibEntitiesGridOptionsMod
+
+import typings.agDashGrid.distLibEntitiesGridCellMod.GridCellDef
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TabToNextCellParams extends js.Object {
+  var backwards: Boolean
+  var editing: Boolean
+  var nextCellDef: GridCellDef
+  var previousCellDef: GridCellDef
+}
+
+object TabToNextCellParams {
+  @scala.inline
+  def apply(backwards: Boolean, editing: Boolean, nextCellDef: GridCellDef, previousCellDef: GridCellDef): TabToNextCellParams = {
+    val __obj = js.Dynamic.literal(backwards = backwards, editing = editing, nextCellDef = nextCellDef, previousCellDef = previousCellDef)
+  
+    __obj.asInstanceOf[TabToNextCellParams]
+  }
+}
+

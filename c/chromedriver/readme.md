@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chromedriver 2.38
-// Project: https://github.com/giggio/node-chromedriver
-// Definitions by: Peter Safranek <https://github.com/pe8ter>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

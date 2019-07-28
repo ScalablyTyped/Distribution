@@ -1,0 +1,22 @@
+package typings.leafletDashDraw.leafletMod
+
+import typings.leaflet.leafletMod.Handler
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ToolbarModeHandler extends js.Object {
+  var enabled: Boolean
+  var handler: Handler
+  var title: String
+}
+
+object ToolbarModeHandler {
+  @scala.inline
+  def apply(enabled: Boolean, handler: Handler, title: String): ToolbarModeHandler = {
+    val __obj = js.Dynamic.literal(enabled = enabled, handler = handler, title = title)
+  
+    __obj.asInstanceOf[ToolbarModeHandler]
+  }
+}
+

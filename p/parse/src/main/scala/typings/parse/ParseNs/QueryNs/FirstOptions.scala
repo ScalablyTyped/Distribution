@@ -1,0 +1,29 @@
+package typings.parse.ParseNs.QueryNs
+
+import typings.parse.ParseNs.ScopeOptions
+import typings.parse.ParseNs.SuccessFailureOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FirstOptions
+  extends SuccessFailureOptions
+     with ScopeOptions
+
+object FirstOptions {
+  @scala.inline
+  def apply(
+    error: js.Function = null,
+    sessionToken: String = null,
+    success: js.Function = null,
+    useMasterKey: js.UndefOr[Boolean] = js.undefined
+  ): FirstOptions = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    __obj.asInstanceOf[FirstOptions]
+  }
+}
+

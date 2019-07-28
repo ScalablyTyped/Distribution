@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for repeat-element 1.1
-// Project: https://github.com/jonschlinkert/repeat-element
-// Definitions by:  Adam Zerella <https://github.com/adamzerella>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-/**
- * Create an array by repeating the given value n times.
- */
-
-```
 

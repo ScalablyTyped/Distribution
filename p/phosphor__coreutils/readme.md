@@ -31,42 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * A type alias for a JSON primitive.
- */
-/**
- * An object which stores MIME data for general application use.
- *
- * #### Notes
- * This class does not attempt to enforce "correctness" of MIME types
- * and their associated data. Since this class is designed to transfer
- * arbitrary data and objects within the same application, it assumes
- * that the user provides correct and accurate data.
- */
-/**
- * A class which wraps a promise into a delegate object.
- *
- * #### Notes
- * This class is useful when the logic to resolve or reject a promise
- * cannot be defined at the point where the promise is created.
- */
-/**
- * The namespace for random number related functionality.
- */
-/**
- * A runtime object which captures compile-time type information.
- *
- * #### Notes
- * A token captures the compile-time type of an interface or class in
- * an object which can be used at runtime in a type-safe fashion.
- */
-/**
- * The namespace for UUID related functionality.
- */
-
-```
 

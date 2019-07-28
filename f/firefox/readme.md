@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Mozilla Web API
-// Project: https://developer.mozilla.org/en-US/docs/Web/API
-// Definitions by: vvakame <https://github.com/vvakame>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// required lib.d.ts
-// expand Navigator definietion.
-
-```
 

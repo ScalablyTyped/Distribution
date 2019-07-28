@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-msxml2"
-version := "6.0-dt-20190213Z-d02c6e"
+version := "6.0-dt-20190213Z-a780bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

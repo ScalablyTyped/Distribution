@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Rison
-// Project: https://github.com/Nanonid/rison
-// Definitions by: Andrei Kurosh <https://github.com/impworks>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

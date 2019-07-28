@@ -1,0 +1,19 @@
+package typings.yogDashLog.yogDashLogMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LogInfo extends js.Object {
+  var msg: String
+}
+
+object LogInfo {
+  @scala.inline
+  def apply(msg: String): LogInfo = {
+    val __obj = js.Dynamic.literal(msg = msg)
+  
+    __obj.asInstanceOf[LogInfo]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for contextjs 2.1.1
-// Project: https://github.com/jakiestfu/Context.js
-// Definitions by: Kern Handa <https://github.com/kernhanda>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

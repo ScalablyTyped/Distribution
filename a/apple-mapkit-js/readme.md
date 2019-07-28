@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for MapKit JS 5.4
-// Project: https://developer.apple.com/reference/mapkitjs, https://github.com/lukemizuhashi/apple-mapkit-js
-// Definitions by: Philipp Jean-Jacques <https://github.com/kilghaz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

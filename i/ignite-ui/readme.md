@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Ignite UI 19.1
-// Project: https://github.com/IgniteUI/ignite-ui
-// Definitions by: Ignite UI <https://github.com/IgniteUI>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

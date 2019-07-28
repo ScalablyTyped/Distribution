@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "watson-developer-cloud"
-version := "2.40-dt-20180214Z-0146d0"
+version := "2.40-dt-20180214Z-020ab1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

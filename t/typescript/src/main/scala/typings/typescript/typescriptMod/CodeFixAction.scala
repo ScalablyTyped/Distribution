@@ -1,0 +1,35 @@
+package typings.typescript.typescriptMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CodeFixAction extends CodeAction {
+  var fixAllDescription: js.UndefOr[String] = js.undefined
+  /**
+    * If present, one may call 'getCombinedCodeFix' with this fixId.
+    * This may be omitted to indicate that the code fix can't be applied in a group.
+    */
+  var fixId: js.UndefOr[js.Object] = js.undefined
+  /** Short name to identify the fix, for use by telemetry. */
+  var fixName: String
+}
+
+object CodeFixAction {
+  @scala.inline
+  def apply(
+    changes: js.Array[FileTextChanges],
+    description: String,
+    fixName: String,
+    commands: js.Array[CodeActionCommand] = null,
+    fixAllDescription: String = null,
+    fixId: js.Object = null
+  ): CodeFixAction = {
+    val __obj = js.Dynamic.literal(changes = changes, description = description, fixName = fixName)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (fixAllDescription != null) __obj.updateDynamic("fixAllDescription")(fixAllDescription)
+    if (fixId != null) __obj.updateDynamic("fixId")(fixId)
+    __obj.asInstanceOf[CodeFixAction]
+  }
+}
+

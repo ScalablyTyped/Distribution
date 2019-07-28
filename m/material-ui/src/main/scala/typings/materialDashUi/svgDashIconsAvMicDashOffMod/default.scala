@@ -1,0 +1,10 @@
+package typings.materialDashUi.svgDashIconsAvMicDashOffMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/av/mic-off", JSImport.Default)
+@js.native
+class default () extends AvMicOff
+

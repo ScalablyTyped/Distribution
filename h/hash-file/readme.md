@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for hash-file 3.0
-// Project: https://github.com/kevva/hash-file#readme
-// Definitions by: Hiromi Shikata <https://github.com/HiromiShikata>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

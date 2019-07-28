@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for non-npm package Titanium 8.0
-// Project: https://github.com/appcelerator/titanium_mobile
-// Definitions by: Axway Appcelerator <https://github.com/appcelerator>
-//                 Jan Vennemann <https://github.com/janvennemann>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.6
-
-```
 

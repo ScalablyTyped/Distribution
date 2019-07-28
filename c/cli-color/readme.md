@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cli-color 0.3.2
-// Project: https://github.com/medikoo/cli-color
-// Definitions by: Joel Spadin <https://github.com/ChaosinaCan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

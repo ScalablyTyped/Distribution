@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @wordpress/block-library 2.6
-// Project: https://github.com/WordPress/gutenberg/tree/master/packages/block-library/README.md
-// Definitions by: Derek Sifford <https://github.com/dsifford>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.5
-/**
- * Function to register core blocks provided by the block editor.
- *
- * @example
- * ```js
- * import { registerCoreBlocks } from '@wordpress/block-library';
- *
- * registerCoreBlocks();
- * ```
- */
-
-```
 

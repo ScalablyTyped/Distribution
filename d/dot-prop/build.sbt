@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dot-prop"
-version := "5.1.0-8b0f62"
+version := "5.1.0-f25ddc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

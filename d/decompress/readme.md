@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for decompress 4.2
-// Project: https://github.com/kevva/decompress#readme
-// Definitions by: York Yao <https://github.com/plantain-00>
-//                 Jesse Bethke <https://github.com/jbethke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

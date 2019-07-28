@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for event-to-promise v0.7.0
-// Project: https://github.com/JsCommunity/event-to-promise
-// Definitions by: flying-sheep <https://github.com/flying-sheep>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

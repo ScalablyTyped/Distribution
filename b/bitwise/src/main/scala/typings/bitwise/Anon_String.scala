@@ -1,0 +1,25 @@
+package typings.bitwise
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_String extends js.Object {
+  def toBits(string: String): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
+  ]
+}
+
+object Anon_String {
+  @scala.inline
+  def apply(
+    toBits: String => js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
+  ): Anon_String = {
+    val __obj = js.Dynamic.literal(toBits = js.Any.fromFunction1(toBits))
+  
+    __obj.asInstanceOf[Anon_String]
+  }
+}
+

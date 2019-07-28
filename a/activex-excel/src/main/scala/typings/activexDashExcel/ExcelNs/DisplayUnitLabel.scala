@@ -1,0 +1,43 @@
+package typings.activexDashExcel.ExcelNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Excel.DisplayUnitLabel")
+@js.native
+class DisplayUnitLabel protected () extends js.Object {
+  val Application: typings.activexDashExcel.ExcelNs.Application = js.native
+  var AutoScaleFont: js.Any = js.native
+  val Border: typings.activexDashExcel.ExcelNs.Border = js.native
+  var Caption: String = js.native
+  val Creator: XlCreator = js.native
+  var `Excel.DisplayUnitLabel_typekey`: DisplayUnitLabel = js.native
+  val Fill: ChartFillFormat = js.native
+  val Font: typings.activexDashExcel.ExcelNs.Font = js.native
+  val Format: ChartFormat = js.native
+  var Formula: String = js.native
+  var FormulaLocal: String = js.native
+  var FormulaR1C1: String = js.native
+  var FormulaR1C1Local: String = js.native
+  val Height: Double = js.native
+  var HorizontalAlignment: HorizontalAlignments = js.native
+  val Interior: typings.activexDashExcel.ExcelNs.Interior = js.native
+  var Left: Double = js.native
+  val Name: String = js.native
+  var Orientation: XlOrientation = js.native
+  val Parent: js.Any = js.native
+  var Position: XlChartElementPosition = js.native
+  var ReadingOrder: Double = js.native
+  var Shadow: Boolean = js.native
+  var Text: String = js.native
+  var Top: Double = js.native
+  var VerticalAlignment: VerticalAlignments = js.native
+  val Width: Double = js.native
+  def Characters(): typings.activexDashExcel.ExcelNs.Characters = js.native
+  def Characters(Start: Double): typings.activexDashExcel.ExcelNs.Characters = js.native
+  def Characters(Start: Double, Length: Double): typings.activexDashExcel.ExcelNs.Characters = js.native
+  def Delete(): js.Any = js.native
+  def Select(): js.Any = js.native
+}
+

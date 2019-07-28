@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__apputils
 
-Typings are for version 0.19.1
+Typings are for version 1.0.2
 
 ## Library description:
 JupyterLab - Application Utilities
@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * The namespace for DOM utilities.
- */
-/**
- * A namespace for `HoverBox` members.
- */
-/**
- * A namespace for node styling.
- */
-
-```
 

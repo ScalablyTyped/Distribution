@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for WebCrypto
-// Project: http://www.w3.org/TR/WebCryptoAPI/
-// Definitions by: Lucas Dixon <https://github.com/iislucas>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// DEPRECATED: use TypeScript 1.5.3
-
-```
 

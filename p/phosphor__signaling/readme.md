@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * A type alias for a slot function.
- *
- * @param sender - The object emitting the signal.
- *
- * @param args - The args object emitted with the signal.
- *
- * #### Notes
- * A slot is invoked when a signal to which it is connected is emitted.
- */
-
-```
 

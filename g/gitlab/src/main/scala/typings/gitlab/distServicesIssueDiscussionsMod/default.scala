@@ -1,0 +1,13 @@
+package typings.gitlab.distServicesIssueDiscussionsMod
+
+import typings.gitlab.distInfrastructureMod.BaseServiceOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("gitlab/dist/services/IssueDiscussions", JSImport.Default)
+@js.native
+class default protected () extends IssueDiscussions {
+  def this(options: BaseServiceOptions) = this()
+}
+

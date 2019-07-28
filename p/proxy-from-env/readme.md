@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for proxy-from-env 1.0
-// Project: https://github.com/Rob--W/proxy-from-env#readme
-// Definitions by: JasonHK <https://github.com/JasonHK>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Takes an input URL and returns the desired proxy URL. If no proxy is set, an
- * empty string is returned.
- * @param url The URL
- * @returns The URL of the proxy that should handle the request to the given
- *          URL.
- */
-
-```
 

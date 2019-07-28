@@ -1,0 +1,199 @@
+package typings.adone.adoneNs.netNs.httpNs.clientNs.INs
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResponseHeaders
+  extends /* header */ StringDictionary[js.UndefOr[String]] {
+  var `accept-patch`: js.UndefOr[String] = js.undefined
+  var `accept-ranges`: js.UndefOr[String] = js.undefined
+  var `access-control-allow-credentials`: js.UndefOr[String] = js.undefined
+  var `access-control-allow-headers`: js.UndefOr[String] = js.undefined
+  var `access-control-allow-methods`: js.UndefOr[String] = js.undefined
+  var `access-control-allow-origin`: js.UndefOr[String] = js.undefined
+  var `access-control-expose-headers`: js.UndefOr[String] = js.undefined
+  var `access-control-max-age`: js.UndefOr[String] = js.undefined
+  var age: js.UndefOr[String] = js.undefined
+  var allow: js.UndefOr[String] = js.undefined
+  var `alt-svc`: js.UndefOr[String] = js.undefined
+  var `cache-control`: js.UndefOr[String] = js.undefined
+  var connection: js.UndefOr[String] = js.undefined
+  var `content-disposition`: js.UndefOr[String] = js.undefined
+  var `content-encoding`: js.UndefOr[String] = js.undefined
+  var `content-language`: js.UndefOr[String] = js.undefined
+  var `content-length`: js.UndefOr[String] = js.undefined
+  var `content-location`: js.UndefOr[String] = js.undefined
+  var `content-md5`: js.UndefOr[String] = js.undefined
+  var `content-range`: js.UndefOr[String] = js.undefined
+  var `content-security-policy`: js.UndefOr[String] = js.undefined
+  var `content-type`: js.UndefOr[String] = js.undefined
+  var date: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String] = js.undefined
+  var expires: js.UndefOr[String] = js.undefined
+  var `keep-alive`: js.UndefOr[String] = js.undefined
+  var `last-modified`: js.UndefOr[String] = js.undefined
+  var link: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String] = js.undefined
+  var p3p: js.UndefOr[String] = js.undefined
+  var pragma: js.UndefOr[String] = js.undefined
+  var `proxy-authenticate`: js.UndefOr[String] = js.undefined
+  var `public-key-pins`: js.UndefOr[String] = js.undefined
+  var `referer-policy`: js.UndefOr[String] = js.undefined
+  var refresh: js.UndefOr[String] = js.undefined
+  var `retry-after`: js.UndefOr[String] = js.undefined
+  var server: js.UndefOr[String] = js.undefined
+  var `set-cookie`: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String] = js.undefined
+  var `strict-transport-security`: js.UndefOr[String] = js.undefined
+  var `timing-allow-origin`: js.UndefOr[String] = js.undefined
+  var tk: js.UndefOr[String] = js.undefined
+  var `transfer-encoding`: js.UndefOr[String] = js.undefined
+  var upgrade: js.UndefOr[String] = js.undefined
+  var `upgrade-insecure-requests`: js.UndefOr[String] = js.undefined
+  var vary: js.UndefOr[String] = js.undefined
+  var via: js.UndefOr[String] = js.undefined
+  var warning: js.UndefOr[String] = js.undefined
+  var `www-authenticate`: js.UndefOr[String] = js.undefined
+  var `x-content-duration`: js.UndefOr[String] = js.undefined
+  var `x-content-security-policy`: js.UndefOr[String] = js.undefined
+  var `x-content-type-options`: js.UndefOr[String] = js.undefined
+  var `x-correlation-id`: js.UndefOr[String] = js.undefined
+  var `x-frame-options`: js.UndefOr[String] = js.undefined
+  var `x-powered-by`: js.UndefOr[String] = js.undefined
+  var `x-request-id`: js.UndefOr[String] = js.undefined
+  var `x-ua-compatible`: js.UndefOr[String] = js.undefined
+  var `x-webkit-csp`: js.UndefOr[String] = js.undefined
+  var `x-xss-protection`: js.UndefOr[String] = js.undefined
+}
+
+object ResponseHeaders {
+  @scala.inline
+  def apply(
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
+    `accept-patch`: String = null,
+    `accept-ranges`: String = null,
+    `access-control-allow-credentials`: String = null,
+    `access-control-allow-headers`: String = null,
+    `access-control-allow-methods`: String = null,
+    `access-control-allow-origin`: String = null,
+    `access-control-expose-headers`: String = null,
+    `access-control-max-age`: String = null,
+    age: String = null,
+    allow: String = null,
+    `alt-svc`: String = null,
+    `cache-control`: String = null,
+    connection: String = null,
+    `content-disposition`: String = null,
+    `content-encoding`: String = null,
+    `content-language`: String = null,
+    `content-length`: String = null,
+    `content-location`: String = null,
+    `content-md5`: String = null,
+    `content-range`: String = null,
+    `content-security-policy`: String = null,
+    `content-type`: String = null,
+    date: String = null,
+    etag: String = null,
+    expires: String = null,
+    `keep-alive`: String = null,
+    `last-modified`: String = null,
+    link: String = null,
+    location: String = null,
+    p3p: String = null,
+    pragma: String = null,
+    `proxy-authenticate`: String = null,
+    `public-key-pins`: String = null,
+    `referer-policy`: String = null,
+    refresh: String = null,
+    `retry-after`: String = null,
+    server: String = null,
+    `set-cookie`: String = null,
+    status: String = null,
+    `strict-transport-security`: String = null,
+    `timing-allow-origin`: String = null,
+    tk: String = null,
+    `transfer-encoding`: String = null,
+    upgrade: String = null,
+    `upgrade-insecure-requests`: String = null,
+    vary: String = null,
+    via: String = null,
+    warning: String = null,
+    `www-authenticate`: String = null,
+    `x-content-duration`: String = null,
+    `x-content-security-policy`: String = null,
+    `x-content-type-options`: String = null,
+    `x-correlation-id`: String = null,
+    `x-frame-options`: String = null,
+    `x-powered-by`: String = null,
+    `x-request-id`: String = null,
+    `x-ua-compatible`: String = null,
+    `x-webkit-csp`: String = null,
+    `x-xss-protection`: String = null
+  ): ResponseHeaders = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`accept-patch` != null) __obj.updateDynamic("accept-patch")(`accept-patch`)
+    if (`accept-ranges` != null) __obj.updateDynamic("accept-ranges")(`accept-ranges`)
+    if (`access-control-allow-credentials` != null) __obj.updateDynamic("access-control-allow-credentials")(`access-control-allow-credentials`)
+    if (`access-control-allow-headers` != null) __obj.updateDynamic("access-control-allow-headers")(`access-control-allow-headers`)
+    if (`access-control-allow-methods` != null) __obj.updateDynamic("access-control-allow-methods")(`access-control-allow-methods`)
+    if (`access-control-allow-origin` != null) __obj.updateDynamic("access-control-allow-origin")(`access-control-allow-origin`)
+    if (`access-control-expose-headers` != null) __obj.updateDynamic("access-control-expose-headers")(`access-control-expose-headers`)
+    if (`access-control-max-age` != null) __obj.updateDynamic("access-control-max-age")(`access-control-max-age`)
+    if (age != null) __obj.updateDynamic("age")(age)
+    if (allow != null) __obj.updateDynamic("allow")(allow)
+    if (`alt-svc` != null) __obj.updateDynamic("alt-svc")(`alt-svc`)
+    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (`content-disposition` != null) __obj.updateDynamic("content-disposition")(`content-disposition`)
+    if (`content-encoding` != null) __obj.updateDynamic("content-encoding")(`content-encoding`)
+    if (`content-language` != null) __obj.updateDynamic("content-language")(`content-language`)
+    if (`content-length` != null) __obj.updateDynamic("content-length")(`content-length`)
+    if (`content-location` != null) __obj.updateDynamic("content-location")(`content-location`)
+    if (`content-md5` != null) __obj.updateDynamic("content-md5")(`content-md5`)
+    if (`content-range` != null) __obj.updateDynamic("content-range")(`content-range`)
+    if (`content-security-policy` != null) __obj.updateDynamic("content-security-policy")(`content-security-policy`)
+    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (expires != null) __obj.updateDynamic("expires")(expires)
+    if (`keep-alive` != null) __obj.updateDynamic("keep-alive")(`keep-alive`)
+    if (`last-modified` != null) __obj.updateDynamic("last-modified")(`last-modified`)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (p3p != null) __obj.updateDynamic("p3p")(p3p)
+    if (pragma != null) __obj.updateDynamic("pragma")(pragma)
+    if (`proxy-authenticate` != null) __obj.updateDynamic("proxy-authenticate")(`proxy-authenticate`)
+    if (`public-key-pins` != null) __obj.updateDynamic("public-key-pins")(`public-key-pins`)
+    if (`referer-policy` != null) __obj.updateDynamic("referer-policy")(`referer-policy`)
+    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (`retry-after` != null) __obj.updateDynamic("retry-after")(`retry-after`)
+    if (server != null) __obj.updateDynamic("server")(server)
+    if (`set-cookie` != null) __obj.updateDynamic("set-cookie")(`set-cookie`)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (`strict-transport-security` != null) __obj.updateDynamic("strict-transport-security")(`strict-transport-security`)
+    if (`timing-allow-origin` != null) __obj.updateDynamic("timing-allow-origin")(`timing-allow-origin`)
+    if (tk != null) __obj.updateDynamic("tk")(tk)
+    if (`transfer-encoding` != null) __obj.updateDynamic("transfer-encoding")(`transfer-encoding`)
+    if (upgrade != null) __obj.updateDynamic("upgrade")(upgrade)
+    if (`upgrade-insecure-requests` != null) __obj.updateDynamic("upgrade-insecure-requests")(`upgrade-insecure-requests`)
+    if (vary != null) __obj.updateDynamic("vary")(vary)
+    if (via != null) __obj.updateDynamic("via")(via)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (`www-authenticate` != null) __obj.updateDynamic("www-authenticate")(`www-authenticate`)
+    if (`x-content-duration` != null) __obj.updateDynamic("x-content-duration")(`x-content-duration`)
+    if (`x-content-security-policy` != null) __obj.updateDynamic("x-content-security-policy")(`x-content-security-policy`)
+    if (`x-content-type-options` != null) __obj.updateDynamic("x-content-type-options")(`x-content-type-options`)
+    if (`x-correlation-id` != null) __obj.updateDynamic("x-correlation-id")(`x-correlation-id`)
+    if (`x-frame-options` != null) __obj.updateDynamic("x-frame-options")(`x-frame-options`)
+    if (`x-powered-by` != null) __obj.updateDynamic("x-powered-by")(`x-powered-by`)
+    if (`x-request-id` != null) __obj.updateDynamic("x-request-id")(`x-request-id`)
+    if (`x-ua-compatible` != null) __obj.updateDynamic("x-ua-compatible")(`x-ua-compatible`)
+    if (`x-webkit-csp` != null) __obj.updateDynamic("x-webkit-csp")(`x-webkit-csp`)
+    if (`x-xss-protection` != null) __obj.updateDynamic("x-xss-protection")(`x-xss-protection`)
+    __obj.asInstanceOf[ResponseHeaders]
+  }
+}
+

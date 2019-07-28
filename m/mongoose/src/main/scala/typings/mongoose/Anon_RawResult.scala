@@ -1,0 +1,20 @@
+package typings.mongoose
+
+import typings.mongoose.mongooseNumbers.`true`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_RawResult extends js.Object {
+  var rawResult: `true`
+}
+
+object Anon_RawResult {
+  @scala.inline
+  def apply(rawResult: `true`): Anon_RawResult = {
+    val __obj = js.Dynamic.literal(rawResult = rawResult)
+  
+    __obj.asInstanceOf[Anon_RawResult]
+  }
+}
+

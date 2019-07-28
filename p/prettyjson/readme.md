@@ -30,17 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for prettyjson
-// Project: https://github.com/rafeca/prettyjson
-// Definitions by: Wael BEN ZID EL GUEBSI <https://github.com/benzid-wael/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Defines prettyjson version
- */
-
-```
 

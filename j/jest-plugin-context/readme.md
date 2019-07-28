@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jest-plugin-context 2.9
-// Project: https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-context, https://github.com/negativetwelve/jest-plugins
-// Definitions by: Jonas Heinrich <https://github.com/jonasheinrich>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

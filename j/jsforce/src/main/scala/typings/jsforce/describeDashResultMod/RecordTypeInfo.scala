@@ -1,0 +1,34 @@
+package typings.jsforce.describeDashResultMod
+
+import typings.std.Record
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RecordTypeInfo extends js.Object {
+  var available: Boolean
+  var defaultRecordTypeMapping: Boolean
+  var developerName: js.UndefOr[maybe[String]] = js.undefined
+  var master: Boolean
+  var name: String
+  var recordTypeId: String
+  var urls: Record[String, String]
+}
+
+object RecordTypeInfo {
+  @scala.inline
+  def apply(
+    available: Boolean,
+    defaultRecordTypeMapping: Boolean,
+    master: Boolean,
+    name: String,
+    recordTypeId: String,
+    urls: Record[String, String],
+    developerName: maybe[String] = null
+  ): RecordTypeInfo = {
+    val __obj = js.Dynamic.literal(available = available, defaultRecordTypeMapping = defaultRecordTypeMapping, master = master, name = name, recordTypeId = recordTypeId, urls = urls)
+    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordTypeInfo]
+  }
+}
+

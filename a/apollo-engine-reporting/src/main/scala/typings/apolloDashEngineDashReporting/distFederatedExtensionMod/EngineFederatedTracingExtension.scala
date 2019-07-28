@@ -1,0 +1,30 @@
+package typings.apolloDashEngineDashReporting.distFederatedExtensionMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.apolloDashEngineDashReporting.Anon_Err
+import typings.apolloDashEngineDashReporting.Anon_RequestContext
+import typings.graphql.graphqlMod.GraphQLError
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+import typings.graphqlDashExtensions.graphqlDashExtensionsMod.GraphQLExtension
+import typings.std.Error
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("apollo-engine-reporting/dist/federatedExtension", "EngineFederatedTracingExtension")
+@js.native
+class EngineFederatedTracingExtension[TContext] protected () extends GraphQLExtension[TContext] {
+  def this(options: Anon_Err) = this()
+  var done: js.Any = js.native
+  var enabled: js.Any = js.native
+  var treeBuilder: js.Any = js.native
+  @JSName("didEncounterErrors")
+  def didEncounterErrors_MEngineFederatedTracingExtension(errors: js.Array[GraphQLError]): Unit = js.native
+  @JSName("format")
+  def format_MEngineFederatedTracingExtension(): js.UndefOr[js.Tuple2[String, String]] = js.native
+  @JSName("requestDidStart")
+  def requestDidStart_MEngineFederatedTracingExtension(o: Anon_RequestContext[TContext]): Unit = js.native
+  @JSName("willResolveField")
+  def willResolveField_MEngineFederatedTracingExtension(_source: js.Any, _args: StringDictionary[js.Any], _context: TContext, info: GraphQLResolveInfo): (js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]) | Unit = js.native
+}
+

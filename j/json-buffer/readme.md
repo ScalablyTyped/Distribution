@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for json-buffer 3.0
-// Project: https://github.com/dominictarr/json-buffer
-// Definitions by: Paul Hawxby <https://github.com/phawxby>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Converts supplied object to a string and safely handles buffers by converting them to a base64 string.
- *
- * @param o - Object to convert.
- * @returns - JSON string.
- */
-
-```
 

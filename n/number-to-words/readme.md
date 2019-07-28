@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for number-to-words 1.2
-// Project: https://github.com/marlun78/number-to-words
-// Definitions by: Frederick Fogerty <https://github.com/frederickfogerty>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Converts an integer into a string with an ordinal postfix. If number is decimal, the decimals will be removed.
- */
-
-```
 

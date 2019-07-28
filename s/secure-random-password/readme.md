@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for secure-random-password 0.1
-// Project: https://github.com/rackerlabs/secure-random-password
-// Definitions by: Bjørnar Snoksrud <https://github.com/bjornars>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

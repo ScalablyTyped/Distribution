@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ScrollReveal
-// Project: https://github.com/jlmakes/scrollreveal.js
-// Definitions by: David Pires <https://github.com/Davidblkx>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

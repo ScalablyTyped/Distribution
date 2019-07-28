@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for falcor-http-datasource 0.1.3
-// Project: https://github.com/Netflix/falcor-http-datasource
-// Definitions by: Quramy <https://github.com/Quramy>, LukeRielley <https://github.com/lukerielley>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

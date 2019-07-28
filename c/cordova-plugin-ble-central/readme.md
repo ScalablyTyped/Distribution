@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cordova-plugin-ble-central 1.2.2
-// Project: https://github.com/don/cordova-plugin-ble-central
-// Definitions by: Gidon Junge <https://github.com/gjunge>
-//                 Philip Peitsch <https://github.com/peitschie>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

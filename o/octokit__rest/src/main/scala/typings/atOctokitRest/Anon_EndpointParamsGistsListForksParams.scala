@@ -1,0 +1,23 @@
+package typings.atOctokitRest
+
+import typings.atOctokitRest.atOctokitRestMod.Endpoint
+import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
+import typings.atOctokitRest.atOctokitRestMod.GistsListForksParams
+import typings.atOctokitRest.atOctokitRestMod.GistsListForksResponse
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
+import typings.atOctokitRest.atOctokitRestMod.Response
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Anon_EndpointParamsGistsListForksParams extends js.Object {
+  @JSName("endpoint")
+  var endpoint_Original: Endpoint = js.native
+  def apply(): js.Promise[Response[GistsListForksResponse]] = js.native
+  def apply(params: GistsListForksParams): js.Promise[Response[GistsListForksResponse]] = js.native
+  def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
+  def endpoint(Route: String): RequestOptions = js.native
+  def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native
+}
+

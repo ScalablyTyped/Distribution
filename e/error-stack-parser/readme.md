@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ErrorStackParser v2.0.0
-// Project: https://github.com/stacktracejs/error-stack-parser
-// Definitions by: Eric Wendelin <https://www.eriwen.com>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

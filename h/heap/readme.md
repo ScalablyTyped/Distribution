@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for heap 0.2.6
-// Project: https://github.com/qiao/heap.js
-// Definitions by: Ryan McNamara <https://github.com/ryan10132>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

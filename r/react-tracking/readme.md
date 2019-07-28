@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-tracking 7.0
-// Project: https://github.com/NYTimes/react-tracking
-// Definitions by: Eloy Durán <https://github.com/alloy>
-//                 Christopher Pappas <https://github.com/damassi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

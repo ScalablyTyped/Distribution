@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for yoctodelay 1.1
-// Project: https://github.com/sindresorhus/yoctodelay#readme
-// Definitions by: Sean Marvi Oliver Genabe <https://github.com/seangenabe>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Delay the promise and then resolve.
- * @param ms Milliseconds to delay the promise.
- */
-
-```
 

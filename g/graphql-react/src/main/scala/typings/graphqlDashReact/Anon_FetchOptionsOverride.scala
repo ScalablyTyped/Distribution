@@ -1,0 +1,31 @@
+package typings.graphqlDashReact
+
+import typings.graphqlDashReact.graphqlDashReactMod.GraphQLFetchOptionsOverride
+import typings.graphqlDashReact.graphqlDashReactMod.GraphQLOperation
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_FetchOptionsOverride[V] extends js.Object {
+  var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.undefined
+  var operation: GraphQLOperation[V]
+  var reloadOnLoad: js.UndefOr[Boolean] = js.undefined
+  var resetOnLoad: js.UndefOr[Boolean] = js.undefined
+}
+
+object Anon_FetchOptionsOverride {
+  @scala.inline
+  def apply[V](
+    operation: GraphQLOperation[V],
+    fetchOptionsOverride: GraphQLFetchOptionsOverride = null,
+    reloadOnLoad: js.UndefOr[Boolean] = js.undefined,
+    resetOnLoad: js.UndefOr[Boolean] = js.undefined
+  ): Anon_FetchOptionsOverride[V] = {
+    val __obj = js.Dynamic.literal(operation = operation)
+    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(fetchOptionsOverride)
+    if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad)
+    if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad)
+    __obj.asInstanceOf[Anon_FetchOptionsOverride[V]]
+  }
+}
+

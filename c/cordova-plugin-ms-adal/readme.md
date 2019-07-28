@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Active Directory Authentication Library plugin for Apache Cordova
-// Project: https://github.com/AzureAD/azure-activedirectory-library-for-cordova
-// Definitions by: Kai Walter <https://github.com/KaiWalter>
-// Definitions: https://github.com/KaiWalter/DefinitelyTyped
-
-```
 

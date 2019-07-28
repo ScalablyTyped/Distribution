@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for i18n-js 3.0
-// Project: https://github.com/fnando/i18n-js
-// Definitions by: Yuya Tanaka <https://github.com/ypresto>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-// tslint:disable-next-line:export-just-namespace
-
-```
 

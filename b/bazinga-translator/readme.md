@@ -27,14 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Translator
-// Project: https://github.com/willdurand/BazingaJsTranslationBundle
-// Definitions by: Alex <https://github.com/alexndlm>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

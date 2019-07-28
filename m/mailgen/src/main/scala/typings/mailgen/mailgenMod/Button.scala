@@ -1,0 +1,21 @@
+package typings.mailgen.mailgenMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Button extends js.Object {
+  var color: String
+  var link: String
+  var text: String
+}
+
+object Button {
+  @scala.inline
+  def apply(color: String, link: String, text: String): Button = {
+    val __obj = js.Dynamic.literal(color = color, link = link, text = text)
+  
+    __obj.asInstanceOf[Button]
+  }
+}
+

@@ -1,0 +1,22 @@
+package typings.std
+
+import org.scalablytyped.runtime.Instantiable0
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/////////////////////////////
+/// DOM Iterable APIs
+/////////////////////////////
+@js.native
+trait AudioParamMap
+  extends ReadonlyMap[java.lang.String, AudioParam]
+
+@JSGlobal("AudioParamMap")
+@js.native
+class AudioParamMapCls () extends AudioParamMap
+
+@JSGlobal("AudioParamMap")
+@js.native
+object AudioParamMap extends Instantiable0[AudioParamMap]
+

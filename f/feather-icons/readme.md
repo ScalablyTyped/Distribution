@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for feather-icons 4.7
-// Project: https://github.com/feathericons/feather#readme
-// Definitions by: Jinesh Shah <https://github.com/jineshshah36>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

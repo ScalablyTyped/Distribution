@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for datadog-statsd-metrics-collector 1.1
-// Project: https://github.com/xzyfer/datadog-statsd-metrics-collector#readme
-// Definitions by: Michael Mifsud <https://github.com/xzyfer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

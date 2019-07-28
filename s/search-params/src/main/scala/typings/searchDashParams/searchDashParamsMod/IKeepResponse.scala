@@ -1,0 +1,20 @@
+package typings.searchDashParams.searchDashParamsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IKeepResponse extends js.Object {
+  var keptParams: js.Object
+  var querystring: String
+}
+
+object IKeepResponse {
+  @scala.inline
+  def apply(keptParams: js.Object, querystring: String): IKeepResponse = {
+    val __obj = js.Dynamic.literal(keptParams = keptParams, querystring = querystring)
+  
+    __obj.asInstanceOf[IKeepResponse]
+  }
+}
+

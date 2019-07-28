@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for lyricist 2.2
-// Project: https://github.com/scf4/lyricist, https://www.npmjs.com/package/lyricist
-// Definitions by: Aleksei Klimenko <https://github.com/DadUndead>
-// Definitions: https://github.com/DefinitelyTyped/
-// TypeScript Version: 2.7
-
-```
 

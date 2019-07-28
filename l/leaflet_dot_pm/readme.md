@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for leaflet.pm 0.13
-// Project: https://github.com/codeofsumit/leaflet.pm, https://leafletpm.now.sh
-// Definitions by: Thomas Kleinke <https://github.com/tkleinke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

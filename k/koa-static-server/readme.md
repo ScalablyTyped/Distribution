@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-static-server 1.3
-// Project: https://github.com/pkoretic/koa-static-server
-// Definitions by: wulunyi <https://github.com/wulunyi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-/* =================== USAGE ===================
-
-    import serve = require("koa-static-server");
-    var Koa = require('koa');
-
-    var app = new Koa();
-    app.use(serve(serve({rootDir: 'web'}));
-
- =============================================== */
-
-```
 

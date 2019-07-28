@@ -1,0 +1,28 @@
+package typings.mdast.mdastMod
+
+import typings.mdast.mdastStrings.html
+import typings.unist.unistMod.Data
+import typings.unist.unistMod.Position
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HTML
+  extends Literal
+     with BlockContent
+     with StaticPhrasingContent {
+  @JSName("type")
+  var type_HTML: html
+}
+
+object HTML {
+  @scala.inline
+  def apply(`type`: html, value: String, data: Data = null, position: Position = null): HTML = {
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[HTML]
+  }
+}
+

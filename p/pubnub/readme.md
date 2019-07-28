@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pubnub 4.0
-// Project: https://github.com/pubnub/javascript
-// Definitions by:  bitbankinc <https://github.com/bitbankinc>,
-//                  rollymaduk <https://github.com/rollymaduk>,
-//                  vitosamson <https://github.com/vitosamson>,
-//                  FlorianDr <https://github.com/FlorianDr>,
-//                  danduh <https://github.com/danduh>,
-//                  ChristianBoehlke <https://github.com/ChristianBoehlke>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// @see https://www.pubnub.com/docs/web-javascript/api-reference-configuration
-// TypeScript Version: 2.2
-
-```
 

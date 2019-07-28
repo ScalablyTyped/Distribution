@@ -13,15 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for unl-core 1.0
-// Project: https://github.com/u-n-l/core-js, http://www.movable-type.co.uk/scripts/geohash.html
-// Definitions by: UNL Network B.V. <https://github.com/u-n-l>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

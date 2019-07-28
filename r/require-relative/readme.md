@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for require-relative 0.8
-// Project: https://github.com/kamicane/require-relative
-// Definitions by: Mattias Buelens <https://github.com/MattiasBuelens>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

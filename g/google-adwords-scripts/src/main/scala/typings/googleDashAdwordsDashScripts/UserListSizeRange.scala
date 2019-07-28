@@ -1,0 +1,26 @@
+package typings.googleDashAdwordsDashScripts
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.LESS_THAN_FIVE_HUNDRED
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.LESS_THAN_ONE_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.ONE_THOUSAND_TO_TEN_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.TEN_THOUSAND_TO_FIFTY_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.ONE_MILLION_TO_TWO_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.TWO_MILLION_TO_THREE_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.THREE_MILLION_TO_FIVE_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.FIVE_MILLION_TO_TEN_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.TEN_MILLION_TO_TWENTY_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.TWENTY_MILLION_TO_THIRTY_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.THIRTY_MILLION_TO_FIFTY_MILLION
+  - typings.googleDashAdwordsDashScripts.googleDashAdwordsDashScriptsStrings.OVER_FIFTY_MILLION
+*/
+trait UserListSizeRange extends js.Object
+

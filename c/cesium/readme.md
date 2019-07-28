@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cesium 1.59
-// Project: http://cesiumjs.org
-// Definitions by: Aigars Zeiza <https://github.com/Zuzon>
-//                 Harry Nicholls <https://github.com/hnipps>
-//                 Jared Szechy <https://github.com/szechyjs>
-//                 Radek Goláň jr. <https://github.com/golyalpha>
-//                 Emma Krantz <https://github.com/KeyboardSounds>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-// tslint:disable-next-line:export-just-namespace
-
-```
 

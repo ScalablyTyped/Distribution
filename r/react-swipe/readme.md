@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-swipe 6.0
-// Project: https://github.com/voronianski/react-swipe
-// Definitions by: Deividas Bakanas <https://github.com/DeividasBakanas>, Ammar Alakkad <https://github.com/AAlakkad>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

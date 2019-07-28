@@ -1,0 +1,23 @@
+package typings.reactDashVirtualized.distEsTableMod
+
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HeaderMouseEventHandlerParams extends js.Object {
+  var columnData: js.Any
+  var dataKey: String
+  var event: MouseEvent[_, NativeMouseEvent]
+}
+
+object HeaderMouseEventHandlerParams {
+  @scala.inline
+  def apply(columnData: js.Any, dataKey: String, event: MouseEvent[_, NativeMouseEvent]): HeaderMouseEventHandlerParams = {
+    val __obj = js.Dynamic.literal(columnData = columnData, dataKey = dataKey, event = event)
+  
+    __obj.asInstanceOf[HeaderMouseEventHandlerParams]
+  }
+}
+

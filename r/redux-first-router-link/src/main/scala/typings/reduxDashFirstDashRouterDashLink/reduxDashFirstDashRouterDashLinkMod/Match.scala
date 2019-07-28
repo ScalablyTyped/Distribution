@@ -1,0 +1,22 @@
+package typings.reduxDashFirstDashRouterDashLink.reduxDashFirstDashRouterDashLinkMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Match[P] extends js.Object {
+  var isExact: Boolean
+  var params: P
+  var path: String
+  var url: String
+}
+
+object Match {
+  @scala.inline
+  def apply[P](isExact: Boolean, params: P, path: String, url: String): Match[P] = {
+    val __obj = js.Dynamic.literal(isExact = isExact, params = params.asInstanceOf[js.Any], path = path, url = url)
+  
+    __obj.asInstanceOf[Match[P]]
+  }
+}
+

@@ -1,0 +1,63 @@
+package typings.webpack
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
+import typings.std.RegExp
+import typings.webpack.webpackMod.EvalSourceMapDevToolPluginNs.Options
+import typings.webpack.webpackMod.OptionsNs.Performance
+import typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.CommentFilter
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object webpackMod {
+  type AuxiliaryCommentObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in webpack.webpack.LibraryTarget ]: string}
+    */ typings.webpack.webpackStrings.AuxiliaryCommentObject with js.Any
+  /**
+    * @deprecated Use RuleSetCondition instead
+    */
+  type Condition = RuleSetCondition
+  type Entry = StringDictionary[String | js.Array[String]]
+  type EntryFunc = js.Function0[
+    String | js.Array[String] | Entry | (js.Promise[String | js.Array[String] | Entry])
+  ]
+  /** @deprecated use webpack.EvalSourceMapDevToolPlugin.Options */
+  type EvalSourceMapDevToolPluginOptions = Options
+  type ExternalsElement = String | RegExp | ExternalsObjectElement | ExternalsFunctionElement
+  type ExternalsFunctionElement = js.Function3[
+    /* context */ js.Any, 
+    /* request */ js.Any, 
+    /* callback */ js.Function2[/* error */ js.Any, /* result */ js.Any, Unit], 
+    js.Any
+  ]
+  type ExternalsObjectElement = StringDictionary[
+    Boolean | String | js.Array[String] | (Record[String, String | js.Array[String]])
+  ]
+  type Loader = String | NewLoader
+  /** @deprecated use webpack.Options.Performance */
+  type PerformanceOptions = Performance
+  /**
+    * @deprecated Use RuleSetRule instead
+    */
+  type Rule = RuleSetRule
+  /* Rewritten from type alias, can be one of: 
+    - typings.std.RegExp
+    - java.lang.String
+    - js.Function1[/ * path * / java.lang.String, scala.Boolean]
+    - typings.webpack.webpackMod.RuleSetConditions
+    - typings.webpack.Anon_And
+  */
+  type RuleSetCondition = _RuleSetCondition | (js.Function1[/* path */ String, Boolean]) | RegExp | String
+  type RuleSetQuery = String | StringDictionary[js.Any]
+  type RuleSetUse = RuleSetUseItem | js.Array[RuleSetUseItem] | (js.Function1[/* data */ js.Any, RuleSetUseItem | js.Array[RuleSetUseItem]])
+  type RuleSetUseItem = String | RuleSetLoader | (js.Function1[/* data */ js.Any, String | RuleSetLoader])
+  /** @deprecated use webpack.SourceMapDevToolPlugin.Options */
+  type SourceMapDevToolPluginOptions = typings.webpack.webpackMod.SourceMapDevToolPluginNs.Options
+  /** @deprecated use webpack.optimize.UglifyJsPlugin.CommentFilter */
+  type UglifyCommentFunction = CommentFilter
+  /** @deprecated use webpack.optimize.UglifyJsPlugin.Options */
+  type UglifyPluginOptions = typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.Options
+  /** @deprecated use webpack.Options.WatchOptions */
+  type WatchOptions = typings.webpack.webpackMod.OptionsNs.WatchOptions
+}

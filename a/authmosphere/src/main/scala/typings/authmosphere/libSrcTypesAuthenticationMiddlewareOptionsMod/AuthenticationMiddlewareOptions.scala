@@ -1,0 +1,36 @@
+package typings.authmosphere.libSrcTypesAuthenticationMiddlewareOptionsMod
+
+import typings.authmosphere.libSrcTypesGetTokenInfoMod.GetTokenInfo
+import typings.authmosphere.libSrcTypesLoggerMod.Logger
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AuthenticationMiddlewareOptions extends js.Object {
+  var getTokenInfo: js.UndefOr[GetTokenInfo[js.Object]] = js.undefined
+  var logger: js.UndefOr[Logger] = js.undefined
+  var onNotAuthenticatedHandler: js.UndefOr[
+    typings.authmosphere.libSrcTypesAuthenticationMiddlewareOptionsMod.onNotAuthenticatedHandler
+  ] = js.undefined
+  var publicEndpoints: js.UndefOr[js.Array[String]] = js.undefined
+  var tokenInfoEndpoint: String
+}
+
+object AuthenticationMiddlewareOptions {
+  @scala.inline
+  def apply(
+    tokenInfoEndpoint: String,
+    getTokenInfo: GetTokenInfo[js.Object] = null,
+    logger: Logger = null,
+    onNotAuthenticatedHandler: onNotAuthenticatedHandler = null,
+    publicEndpoints: js.Array[String] = null
+  ): AuthenticationMiddlewareOptions = {
+    val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint)
+    if (getTokenInfo != null) __obj.updateDynamic("getTokenInfo")(getTokenInfo)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (onNotAuthenticatedHandler != null) __obj.updateDynamic("onNotAuthenticatedHandler")(onNotAuthenticatedHandler)
+    if (publicEndpoints != null) __obj.updateDynamic("publicEndpoints")(publicEndpoints)
+    __obj.asInstanceOf[AuthenticationMiddlewareOptions]
+  }
+}
+

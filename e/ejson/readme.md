@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ejson v2.1.2
-// Project: https://www.npmjs.com/package/ejson
-// Definitions by: Shantanu Bhadoria <https://github.com/shantanubhadoria>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

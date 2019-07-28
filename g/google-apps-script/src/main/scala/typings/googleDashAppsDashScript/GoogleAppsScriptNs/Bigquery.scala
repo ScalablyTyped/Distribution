@@ -1,0 +1,262 @@
+package typings.googleDashAppsDashScript.GoogleAppsScriptNs
+
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.CollectionNs.DatasetsCollection
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.CollectionNs.JobsCollection
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.CollectionNs.ProjectsCollection
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.CollectionNs.TabledataCollection
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.CollectionNs.TablesCollection
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BigQueryModelTraining
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BigtableColumn
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BigtableColumnFamily
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BigtableOptions
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BqmlIterationResult
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BqmlTrainingRun
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.BqmlTrainingRunTrainingOptions
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.Clustering
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.CsvOptions
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.Dataset
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.DatasetAccess
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.DatasetReference
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.DestinationTableProperties
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.EncryptionConfiguration
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ErrorProto
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ExplainQueryStage
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ExplainQueryStep
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ExternalDataConfiguration
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.GoogleSheetsOptions
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.Job
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobConfiguration
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobConfigurationExtract
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobConfigurationLoad
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobConfigurationQuery
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobConfigurationTableCopy
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobReference
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatistics
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatistics2
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatistics2ReservationUsage
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatistics3
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatistics4
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatisticsReservationUsage
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.JobStatus
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.MaterializedViewDefinition
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ModelDefinition
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ModelDefinitionModelOptions
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryParameter
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryParameterType
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryParameterTypeStructTypes
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryParameterValue
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryRequest
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.QueryTimelineSample
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.RangePartitioning
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.RangePartitioningRange
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.RoutineReference
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.Streamingbuffer
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.Table
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableDataInsertAllRequest
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableDataInsertAllRequestRows
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableFieldSchema
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableFieldSchemaCategories
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableReference
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TableSchema
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.TimePartitioning
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.UserDefinedFunctionResource
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BigqueryNs.SchemaNs.ViewDefinition
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Bigquery extends js.Object {
+  var Datasets: js.UndefOr[DatasetsCollection] = js.undefined
+  var Jobs: js.UndefOr[JobsCollection] = js.undefined
+  var Projects: js.UndefOr[ProjectsCollection] = js.undefined
+  var Tabledata: js.UndefOr[TabledataCollection] = js.undefined
+  var Tables: js.UndefOr[TablesCollection] = js.undefined
+  // Create a new instance of BigQueryModelTraining
+  def newBigQueryModelTraining(): BigQueryModelTraining
+  // Create a new instance of BigtableColumn
+  def newBigtableColumn(): BigtableColumn
+  // Create a new instance of BigtableColumnFamily
+  def newBigtableColumnFamily(): BigtableColumnFamily
+  // Create a new instance of BigtableOptions
+  def newBigtableOptions(): BigtableOptions
+  // Create a new instance of BqmlIterationResult
+  def newBqmlIterationResult(): BqmlIterationResult
+  // Create a new instance of BqmlTrainingRun
+  def newBqmlTrainingRun(): BqmlTrainingRun
+  // Create a new instance of BqmlTrainingRunTrainingOptions
+  def newBqmlTrainingRunTrainingOptions(): BqmlTrainingRunTrainingOptions
+  // Create a new instance of Clustering
+  def newClustering(): Clustering
+  // Create a new instance of CsvOptions
+  def newCsvOptions(): CsvOptions
+  // Create a new instance of Dataset
+  def newDataset(): Dataset
+  // Create a new instance of DatasetAccess
+  def newDatasetAccess(): DatasetAccess
+  // Create a new instance of DatasetReference
+  def newDatasetReference(): DatasetReference
+  // Create a new instance of DestinationTableProperties
+  def newDestinationTableProperties(): DestinationTableProperties
+  // Create a new instance of EncryptionConfiguration
+  def newEncryptionConfiguration(): EncryptionConfiguration
+  // Create a new instance of ErrorProto
+  def newErrorProto(): ErrorProto
+  // Create a new instance of ExplainQueryStage
+  def newExplainQueryStage(): ExplainQueryStage
+  // Create a new instance of ExplainQueryStep
+  def newExplainQueryStep(): ExplainQueryStep
+  // Create a new instance of ExternalDataConfiguration
+  def newExternalDataConfiguration(): ExternalDataConfiguration
+  // Create a new instance of GoogleSheetsOptions
+  def newGoogleSheetsOptions(): GoogleSheetsOptions
+  // Create a new instance of Job
+  def newJob(): Job
+  // Create a new instance of JobConfiguration
+  def newJobConfiguration(): JobConfiguration
+  // Create a new instance of JobConfigurationExtract
+  def newJobConfigurationExtract(): JobConfigurationExtract
+  // Create a new instance of JobConfigurationLoad
+  def newJobConfigurationLoad(): JobConfigurationLoad
+  // Create a new instance of JobConfigurationQuery
+  def newJobConfigurationQuery(): JobConfigurationQuery
+  // Create a new instance of JobConfigurationTableCopy
+  def newJobConfigurationTableCopy(): JobConfigurationTableCopy
+  // Create a new instance of JobReference
+  def newJobReference(): JobReference
+  // Create a new instance of JobStatistics
+  def newJobStatistics(): JobStatistics
+  // Create a new instance of JobStatistics2
+  def newJobStatistics2(): JobStatistics2
+  // Create a new instance of JobStatistics2ReservationUsage
+  def newJobStatistics2ReservationUsage(): JobStatistics2ReservationUsage
+  // Create a new instance of JobStatistics3
+  def newJobStatistics3(): JobStatistics3
+  // Create a new instance of JobStatistics4
+  def newJobStatistics4(): JobStatistics4
+  // Create a new instance of JobStatisticsReservationUsage
+  def newJobStatisticsReservationUsage(): JobStatisticsReservationUsage
+  // Create a new instance of JobStatus
+  def newJobStatus(): JobStatus
+  // Create a new instance of MaterializedViewDefinition
+  def newMaterializedViewDefinition(): MaterializedViewDefinition
+  // Create a new instance of ModelDefinition
+  def newModelDefinition(): ModelDefinition
+  // Create a new instance of ModelDefinitionModelOptions
+  def newModelDefinitionModelOptions(): ModelDefinitionModelOptions
+  // Create a new instance of QueryParameter
+  def newQueryParameter(): QueryParameter
+  // Create a new instance of QueryParameterType
+  def newQueryParameterType(): QueryParameterType
+  // Create a new instance of QueryParameterTypeStructTypes
+  def newQueryParameterTypeStructTypes(): QueryParameterTypeStructTypes
+  // Create a new instance of QueryParameterValue
+  def newQueryParameterValue(): QueryParameterValue
+  // Create a new instance of QueryRequest
+  def newQueryRequest(): QueryRequest
+  // Create a new instance of QueryTimelineSample
+  def newQueryTimelineSample(): QueryTimelineSample
+  // Create a new instance of RangePartitioning
+  def newRangePartitioning(): RangePartitioning
+  // Create a new instance of RangePartitioningRange
+  def newRangePartitioningRange(): RangePartitioningRange
+  // Create a new instance of RoutineReference
+  def newRoutineReference(): RoutineReference
+  // Create a new instance of Streamingbuffer
+  def newStreamingbuffer(): Streamingbuffer
+  // Create a new instance of Table
+  def newTable(): Table
+  // Create a new instance of TableDataInsertAllRequest
+  def newTableDataInsertAllRequest(): TableDataInsertAllRequest
+  // Create a new instance of TableDataInsertAllRequestRows
+  def newTableDataInsertAllRequestRows(): TableDataInsertAllRequestRows
+  // Create a new instance of TableFieldSchema
+  def newTableFieldSchema(): TableFieldSchema
+  // Create a new instance of TableFieldSchemaCategories
+  def newTableFieldSchemaCategories(): TableFieldSchemaCategories
+  // Create a new instance of TableReference
+  def newTableReference(): TableReference
+  // Create a new instance of TableSchema
+  def newTableSchema(): TableSchema
+  // Create a new instance of TimePartitioning
+  def newTimePartitioning(): TimePartitioning
+  // Create a new instance of UserDefinedFunctionResource
+  def newUserDefinedFunctionResource(): UserDefinedFunctionResource
+  // Create a new instance of ViewDefinition
+  def newViewDefinition(): ViewDefinition
+}
+
+object Bigquery {
+  @scala.inline
+  def apply(
+    newBigQueryModelTraining: () => BigQueryModelTraining,
+    newBigtableColumn: () => BigtableColumn,
+    newBigtableColumnFamily: () => BigtableColumnFamily,
+    newBigtableOptions: () => BigtableOptions,
+    newBqmlIterationResult: () => BqmlIterationResult,
+    newBqmlTrainingRun: () => BqmlTrainingRun,
+    newBqmlTrainingRunTrainingOptions: () => BqmlTrainingRunTrainingOptions,
+    newClustering: () => Clustering,
+    newCsvOptions: () => CsvOptions,
+    newDataset: () => Dataset,
+    newDatasetAccess: () => DatasetAccess,
+    newDatasetReference: () => DatasetReference,
+    newDestinationTableProperties: () => DestinationTableProperties,
+    newEncryptionConfiguration: () => EncryptionConfiguration,
+    newErrorProto: () => ErrorProto,
+    newExplainQueryStage: () => ExplainQueryStage,
+    newExplainQueryStep: () => ExplainQueryStep,
+    newExternalDataConfiguration: () => ExternalDataConfiguration,
+    newGoogleSheetsOptions: () => GoogleSheetsOptions,
+    newJob: () => Job,
+    newJobConfiguration: () => JobConfiguration,
+    newJobConfigurationExtract: () => JobConfigurationExtract,
+    newJobConfigurationLoad: () => JobConfigurationLoad,
+    newJobConfigurationQuery: () => JobConfigurationQuery,
+    newJobConfigurationTableCopy: () => JobConfigurationTableCopy,
+    newJobReference: () => JobReference,
+    newJobStatistics: () => JobStatistics,
+    newJobStatistics2: () => JobStatistics2,
+    newJobStatistics2ReservationUsage: () => JobStatistics2ReservationUsage,
+    newJobStatistics3: () => JobStatistics3,
+    newJobStatistics4: () => JobStatistics4,
+    newJobStatisticsReservationUsage: () => JobStatisticsReservationUsage,
+    newJobStatus: () => JobStatus,
+    newMaterializedViewDefinition: () => MaterializedViewDefinition,
+    newModelDefinition: () => ModelDefinition,
+    newModelDefinitionModelOptions: () => ModelDefinitionModelOptions,
+    newQueryParameter: () => QueryParameter,
+    newQueryParameterType: () => QueryParameterType,
+    newQueryParameterTypeStructTypes: () => QueryParameterTypeStructTypes,
+    newQueryParameterValue: () => QueryParameterValue,
+    newQueryRequest: () => QueryRequest,
+    newQueryTimelineSample: () => QueryTimelineSample,
+    newRangePartitioning: () => RangePartitioning,
+    newRangePartitioningRange: () => RangePartitioningRange,
+    newRoutineReference: () => RoutineReference,
+    newStreamingbuffer: () => Streamingbuffer,
+    newTable: () => Table,
+    newTableDataInsertAllRequest: () => TableDataInsertAllRequest,
+    newTableDataInsertAllRequestRows: () => TableDataInsertAllRequestRows,
+    newTableFieldSchema: () => TableFieldSchema,
+    newTableFieldSchemaCategories: () => TableFieldSchemaCategories,
+    newTableReference: () => TableReference,
+    newTableSchema: () => TableSchema,
+    newTimePartitioning: () => TimePartitioning,
+    newUserDefinedFunctionResource: () => UserDefinedFunctionResource,
+    newViewDefinition: () => ViewDefinition,
+    Datasets: DatasetsCollection = null,
+    Jobs: JobsCollection = null,
+    Projects: ProjectsCollection = null,
+    Tabledata: TabledataCollection = null,
+    Tables: TablesCollection = null
+  ): Bigquery = {
+    val __obj = js.Dynamic.literal(newBigQueryModelTraining = js.Any.fromFunction0(newBigQueryModelTraining), newBigtableColumn = js.Any.fromFunction0(newBigtableColumn), newBigtableColumnFamily = js.Any.fromFunction0(newBigtableColumnFamily), newBigtableOptions = js.Any.fromFunction0(newBigtableOptions), newBqmlIterationResult = js.Any.fromFunction0(newBqmlIterationResult), newBqmlTrainingRun = js.Any.fromFunction0(newBqmlTrainingRun), newBqmlTrainingRunTrainingOptions = js.Any.fromFunction0(newBqmlTrainingRunTrainingOptions), newClustering = js.Any.fromFunction0(newClustering), newCsvOptions = js.Any.fromFunction0(newCsvOptions), newDataset = js.Any.fromFunction0(newDataset), newDatasetAccess = js.Any.fromFunction0(newDatasetAccess), newDatasetReference = js.Any.fromFunction0(newDatasetReference), newDestinationTableProperties = js.Any.fromFunction0(newDestinationTableProperties), newEncryptionConfiguration = js.Any.fromFunction0(newEncryptionConfiguration), newErrorProto = js.Any.fromFunction0(newErrorProto), newExplainQueryStage = js.Any.fromFunction0(newExplainQueryStage), newExplainQueryStep = js.Any.fromFunction0(newExplainQueryStep), newExternalDataConfiguration = js.Any.fromFunction0(newExternalDataConfiguration), newGoogleSheetsOptions = js.Any.fromFunction0(newGoogleSheetsOptions), newJob = js.Any.fromFunction0(newJob), newJobConfiguration = js.Any.fromFunction0(newJobConfiguration), newJobConfigurationExtract = js.Any.fromFunction0(newJobConfigurationExtract), newJobConfigurationLoad = js.Any.fromFunction0(newJobConfigurationLoad), newJobConfigurationQuery = js.Any.fromFunction0(newJobConfigurationQuery), newJobConfigurationTableCopy = js.Any.fromFunction0(newJobConfigurationTableCopy), newJobReference = js.Any.fromFunction0(newJobReference), newJobStatistics = js.Any.fromFunction0(newJobStatistics), newJobStatistics2 = js.Any.fromFunction0(newJobStatistics2), newJobStatistics2ReservationUsage = js.Any.fromFunction0(newJobStatistics2ReservationUsage), newJobStatistics3 = js.Any.fromFunction0(newJobStatistics3), newJobStatistics4 = js.Any.fromFunction0(newJobStatistics4), newJobStatisticsReservationUsage = js.Any.fromFunction0(newJobStatisticsReservationUsage), newJobStatus = js.Any.fromFunction0(newJobStatus), newMaterializedViewDefinition = js.Any.fromFunction0(newMaterializedViewDefinition), newModelDefinition = js.Any.fromFunction0(newModelDefinition), newModelDefinitionModelOptions = js.Any.fromFunction0(newModelDefinitionModelOptions), newQueryParameter = js.Any.fromFunction0(newQueryParameter), newQueryParameterType = js.Any.fromFunction0(newQueryParameterType), newQueryParameterTypeStructTypes = js.Any.fromFunction0(newQueryParameterTypeStructTypes), newQueryParameterValue = js.Any.fromFunction0(newQueryParameterValue), newQueryRequest = js.Any.fromFunction0(newQueryRequest), newQueryTimelineSample = js.Any.fromFunction0(newQueryTimelineSample), newRangePartitioning = js.Any.fromFunction0(newRangePartitioning), newRangePartitioningRange = js.Any.fromFunction0(newRangePartitioningRange), newRoutineReference = js.Any.fromFunction0(newRoutineReference), newStreamingbuffer = js.Any.fromFunction0(newStreamingbuffer), newTable = js.Any.fromFunction0(newTable), newTableDataInsertAllRequest = js.Any.fromFunction0(newTableDataInsertAllRequest), newTableDataInsertAllRequestRows = js.Any.fromFunction0(newTableDataInsertAllRequestRows), newTableFieldSchema = js.Any.fromFunction0(newTableFieldSchema), newTableFieldSchemaCategories = js.Any.fromFunction0(newTableFieldSchemaCategories), newTableReference = js.Any.fromFunction0(newTableReference), newTableSchema = js.Any.fromFunction0(newTableSchema), newTimePartitioning = js.Any.fromFunction0(newTimePartitioning), newUserDefinedFunctionResource = js.Any.fromFunction0(newUserDefinedFunctionResource), newViewDefinition = js.Any.fromFunction0(newViewDefinition))
+    if (Datasets != null) __obj.updateDynamic("Datasets")(Datasets)
+    if (Jobs != null) __obj.updateDynamic("Jobs")(Jobs)
+    if (Projects != null) __obj.updateDynamic("Projects")(Projects)
+    if (Tabledata != null) __obj.updateDynamic("Tabledata")(Tabledata)
+    if (Tables != null) __obj.updateDynamic("Tables")(Tables)
+    __obj.asInstanceOf[Bigquery]
+  }
+}
+

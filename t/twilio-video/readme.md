@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for twilio-video 2.0
-// Project: https://twilio.com/video, https://twilio.com
-// Definitions by: MindDoc <https://github.com/minddocdev>
-//                 Darío Blanco <https://github.com/darioblanco>
-//                 katashin <https://github.com/ktsn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

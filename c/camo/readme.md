@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for camo v0.12.2
-// Project: https://github.com/scottwrobinson/camo
-// Definitions by: Lucas Matías Ciruzzi <https://github.com/lucasmciruzzi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

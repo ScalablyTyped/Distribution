@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for uniqid 4.1
-// Project: http://github.com/adamhalasz/uniqid
-// Definitions by: idchlife <https://github.com/idchlife>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uniqid
-// Commmon function signature
-
-```
 

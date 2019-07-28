@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for graphite-udp 1.2
-// Project: https://github.com/fermads/graphite-udp
-// Definitions by: Eric Byers <https://github.com/EricByers>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

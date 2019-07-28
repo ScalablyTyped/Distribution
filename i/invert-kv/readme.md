@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// TODO: Extend this to symbol when TS allows symbols in index signatures:
-// https://github.com/Microsoft/TypeScript/issues/1863
-/**
-Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`.
-
-@example
-```
-import invertKeyValue = require('invert-kv');
-
-invertKeyValue({foo: 'bar', '🦄': '🌈'});
-//=> {bar: 'foo', '🌈': '🦄'}
-```
-*/
-
-```
 

@@ -2,29 +2,29 @@
 [debug] PhaseRunner.scala:84 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, bundles, dx.all)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, events)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, localization)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(AjaxFileProvider))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(ArrayFileProvider))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(HierarchicalCollectionWidget))] 
@@ -578,17 +578,17 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:328)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:12)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$20(Phase1ReadTypescript.scala:246)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$38(Phase1ReadTypescript.scala:194)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$20(Phase1ReadTypescript.scala:245)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$38(Phase1ReadTypescript.scala:193)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$30(Phase1ReadTypescript.scala:194)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$30(Phase1ReadTypescript.scala:193)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:159)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:16)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:158)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:15)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
 	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:78)
@@ -623,7 +623,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:213)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -634,8 +634,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main.run(Main.scala:215)
-	at com.olvind.tso.importer.Main$.main(Main.scala:313)
+	at com.olvind.tso.importer.Main.run(Main.scala:213)
+	at com.olvind.tso.importer.Main$.main(Main.scala:311)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => typescript] 

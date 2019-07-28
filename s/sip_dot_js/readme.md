@@ -31,30 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * An Exception is considered a condition that a reasonable application may wish to catch.
- * An Error indicates serious problems that a reasonable application should not try to catch.
- * @public
- */
-/**
- * Log levels.
- * @public
- */
-/**
- * SIP Methods
- * @internal
- */
-/**
- * @internal
- */
-/** Transaction state. */
-/**
- * The SessionDescriptionHandler interface SIP.js is expecting.
- */
-
-```
 

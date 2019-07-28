@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for weighted
-// Project: https://github.com/Schoonology/weighted
-// Definitions by: Craig Citro <https://github.com/ccitro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

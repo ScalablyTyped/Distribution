@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__rendermime
 
-Typings are for version 0.19.1
+Typings are for version 1.0.2
 
 ## Library description:
 JupyterLab - RenderMime
@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- *  Break up the text into its component parts and search
- *    through them for math delimiters, braces, linebreaks, etc.
- *  Math delimiters must match and braces must balance.
- *  Don't allow math to pass through a double linebreak
- *    (which will be a paragraph).
- */
-
-```
 

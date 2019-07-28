@@ -1,0 +1,14 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.highcharts.highchartsStrings.circle
+  - typings.highcharts.highchartsStrings.diamond
+  - typings.highcharts.highchartsStrings.hexagon
+  - typings.highcharts.highchartsStrings.square
+*/
+trait TilemapShapeValue extends js.Object
+

@@ -1,0 +1,26 @@
+package typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs
+
+import typings.chromeDashApps.chromeNs.integer
+import typings.std.ArrayBuffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IResponse extends js.Object {
+  /** If this is an error response, this should be true. */
+  var isError: Boolean
+  /** Id of the request this is a response to. */
+  var requestId: integer
+  /** Response value. Write requests and error responses will ignore this parameter. */
+  var value: js.UndefOr[ArrayBuffer] = js.undefined
+}
+
+object IResponse {
+  @scala.inline
+  def apply(isError: Boolean, requestId: integer, value: ArrayBuffer = null): IResponse = {
+    val __obj = js.Dynamic.literal(isError = isError, requestId = requestId)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IResponse]
+  }
+}
+

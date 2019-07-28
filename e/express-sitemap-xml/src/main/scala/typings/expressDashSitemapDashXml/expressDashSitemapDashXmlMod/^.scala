@@ -1,0 +1,14 @@
+package typings.expressDashSitemapDashXml.expressDashSitemapDashXmlMod
+
+import typings.express.expressMod.RequestHandler
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("express-sitemap-xml", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]], base: String): RequestHandler = js.native
+  def buildSitemaps(urls: js.Array[SitemapLeaf], base: String): js.Promise[Sitemap] = js.native
+}
+

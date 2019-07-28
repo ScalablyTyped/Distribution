@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a year is a [leap year](https://en.wikipedia.org/wiki/Leap_year).
-
-@param year - Default: `new Date()`.
-
-@example
-```
-import leapYear = require('leap-year');
-
-leapYear(2014);
-//=> false
-
-leapYear(2016);
-//=> true
-```
-*/
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dragula v2.1.2
-// Project: http://bevacqua.github.io/dragula/
-// Definitions by: Paul Welter <https://github.com/pwelter34>
-//                 Yang He <https://github.com/abruzzihraig>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

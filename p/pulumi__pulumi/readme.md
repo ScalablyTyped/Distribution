@@ -28,19 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Asset represents a single blob of text or data that is managed as a first class entity.
- */
-/**
- * getProject returns the current project name.  It throws an exception if none is registered.
- */
-/**
- * allConfig returns a copy of the full config map.
- */
-
-```
 

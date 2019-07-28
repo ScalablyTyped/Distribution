@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for athenajs 0.1
-// Project: https://github.com/AthenaJS/athenajs
-// Definitions by: Nicolas Ramz <https://github.com/warpdesign>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

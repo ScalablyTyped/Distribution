@@ -31,28 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for styled-system 5.0
-// Project: https://github.com/jxnblk/styled-system#readme
-// Definitions by: Marshall Bowers <https://github.com/maxdeviant>
-//                 Ben McCormick <https://github.com/phobon>
-//                 Justin Bennett <https://github.com/zephraph>
-//                 Christopher Pappas <https://github.com/damassi>
-//                 Eloy Durán <https://github.com/alloy>
-//                 Matthieu Vachon <https://github.com/maoueh>
-//                 Adam Lavin <https://github.com/lavoaster>
-//                 Joachim Schuler <https://github.com/jschuler>
-//                 Adam Misiorny <https://github.com/adam187>
-//                 Sara F-P <https://github.com/gretzky>
-//                 Chris LoPresto <https://github.com/chrislopresto>
-//                 Pedro Duarte <https://github.com/peduarte>
-//                 Dhalton Huber <https://github.com/Dhalton>
-//                 Elliot Bonneville <https://github.com/elliotbonneville>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

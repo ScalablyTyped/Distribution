@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parse-numeric-range 0.0
-// Project: https://github.com/euank/node-parse-numeric-range
-// Definitions by: Eoin O'Brien <https://github.com/eoin-obrien>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Parses expressions like `1-10,20-30`. Returns an energetic (as opposed to lazy) array.
- * @param expression a numeric range expression
- */
-
-```
 

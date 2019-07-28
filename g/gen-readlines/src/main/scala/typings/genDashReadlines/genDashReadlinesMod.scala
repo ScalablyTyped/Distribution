@@ -1,0 +1,16 @@
+package typings.genDashReadlines
+
+import typings.node.Buffer
+import typings.std.IterableIterator
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("gen-readlines", JSImport.Namespace)
+@js.native
+object genDashReadlinesMod extends js.Object {
+  def apply(fd: Double, filesize: Double): IterableIterator[Buffer] = js.native
+  def apply(fd: Double, filesize: Double, bufferSize: Double): IterableIterator[Buffer] = js.native
+  def apply(fd: Double, filesize: Double, bufferSize: Double, position: Double): IterableIterator[Buffer] = js.native
+}
+

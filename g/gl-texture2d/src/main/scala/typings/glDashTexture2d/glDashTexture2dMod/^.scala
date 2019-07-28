@@ -1,0 +1,27 @@
+package typings.glDashTexture2d.glDashTexture2dMod
+
+import typings.glDashTexture2d.GLenum
+import typings.ndarray.ndarrayMod.ndarray
+import typings.std.WebGLRenderingContext
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("gl-texture2d", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = js.native
+  def apply(gl: WebGLRenderingContext, input: InputType | RawObject | (js.Tuple2[Double, Double])): Texture = js.native
+  def apply(
+    gl: WebGLRenderingContext,
+    input: InputType | RawObject | (js.Tuple2[Double, Double]),
+    format: GLenum
+  ): Texture = js.native
+  def apply(
+    gl: WebGLRenderingContext,
+    input: InputType | RawObject | (js.Tuple2[Double, Double]),
+    format: GLenum,
+    `type`: GLenum
+  ): Texture = js.native
+}
+

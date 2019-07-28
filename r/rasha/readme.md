@@ -29,14 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rasha 1.2
-// Project: https://git.coolaj86.com/coolaj86/rasha.js
-// Definitions by: Justin Baroux <https://github.com/Just1B>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

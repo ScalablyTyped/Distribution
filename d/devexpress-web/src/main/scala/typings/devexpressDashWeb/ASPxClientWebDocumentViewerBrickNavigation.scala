@@ -1,0 +1,36 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Provides navigation settings for a brick used to construct a document in the Web Document Viewer.
+  */
+trait ASPxClientWebDocumentViewerBrickNavigation extends js.Object {
+  /**
+    * Provides access to a drill-down key.
+    * Value: A string that specifies a drill-down key.
+    */
+  var drillDownKey: String
+  /**
+    * Provides access to a value that specifies the target window or frame in which to display the linked Web page's content when the brick is clicked.
+    * Value: A string that specifies the window or frame to which to target the URL's content.
+    */
+  var target: String
+  /**
+    * Provides access to the URL to navigate to when a brick is a clicked.
+    * Value: A string that specifies the URL.
+    */
+  var url: String
+}
+
+object ASPxClientWebDocumentViewerBrickNavigation {
+  @scala.inline
+  def apply(drillDownKey: String, target: String, url: String): ASPxClientWebDocumentViewerBrickNavigation = {
+    val __obj = js.Dynamic.literal(drillDownKey = drillDownKey, target = target, url = url)
+  
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerBrickNavigation]
+  }
+}
+

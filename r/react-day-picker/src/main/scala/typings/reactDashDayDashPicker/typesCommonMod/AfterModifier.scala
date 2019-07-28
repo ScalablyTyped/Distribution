@@ -1,0 +1,20 @@
+package typings.reactDashDayDashPicker.typesCommonMod
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AfterModifier extends _Modifier {
+  var after: Date
+}
+
+object AfterModifier {
+  @scala.inline
+  def apply(after: Date): AfterModifier = {
+    val __obj = js.Dynamic.literal(after = after)
+  
+    __obj.asInstanceOf[AfterModifier]
+  }
+}
+

@@ -1,0 +1,20 @@
+package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ArtifactSourceReference extends js.Object {
+  var id: String
+  var name: String
+}
+
+object ArtifactSourceReference {
+  @scala.inline
+  def apply(id: String, name: String): ArtifactSourceReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
+    __obj.asInstanceOf[ArtifactSourceReference]
+  }
+}
+

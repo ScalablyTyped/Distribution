@@ -1,0 +1,49 @@
+package typings.openui5.sapNs.uiNs.coreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait AccessibleLandmarkRole extends js.Object
+
+/**
+  * Defines the accessible landmark roles for ARIA support. This enumeration is used with the
+  * AccessibleRole control property.For more information, goto "Roles for Accessible Rich Internet
+  * Applications (WAI-ARIA Roles)" at the www.w3.org homepage.
+  */
+@JSGlobal("sap.ui.core.AccessibleLandmarkRole")
+@js.native
+object AccessibleLandmarkRole extends js.Object {
+  @js.native
+  sealed trait Banner extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait Complementary extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait Main extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait Navigation extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait None extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait Region extends AccessibleLandmarkRole
+  
+  @js.native
+  sealed trait Search extends AccessibleLandmarkRole
+  
+  /* 0 */ val Banner: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Banner with Double = js.native
+  /* 1 */ val Complementary: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Complementary with Double = js.native
+  /* 2 */ val Main: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Main with Double = js.native
+  /* 3 */ val Navigation: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Navigation with Double = js.native
+  /* 4 */ val None: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.None with Double = js.native
+  /* 5 */ val Region: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Region with Double = js.native
+  /* 6 */ val Search: typings.openui5.sapNs.uiNs.coreNs.AccessibleLandmarkRole.Search with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[AccessibleLandmarkRole with Double] = js.native
+}
+

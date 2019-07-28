@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **7230** Javascript libraries,
+This is the home of Scala.js typings for **7293** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               227585     11270382       981413      2686736      7602233
- Markdown              7378       345972       100813            0       245159
- JSON                    10           94            0            0           94
- Makefile                 2           35            7            0           28
+ Scala               233713     11295624      1006350      2905848      7383426
+ Markdown              7386       262912        87121            0       175791
+ JSON                     9           90            0            0           90
+ Makefile                 2           33            7            0           26
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               234976     11616489      1082233      2686736      7847520
+ Total               241111     11558665      1093478      2905848      7559339
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201907271221")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201907281059")
 ```
 
 ### `build.sbt`
@@ -122,9 +122,9 @@ object D {
 }
 ```
 ### Code away
-After that you should be good to go, and just reference things in your code
+After that you should be good to go and start coding:
 ```scala
-  import typings.stdLib.^.console
+  import typings.std.^.console
   console.warn("Hello, World!")
 ```
 
@@ -132,11 +132,10 @@ After that you should be good to go, and just reference things in your code
 As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
-For now we just have the following facades:
+For now we have the following facades:
 - [antd-slinky](facades/antd-slinky)
 - [react-router-native-slinky](facades/react-router-native-slinky)
 - [antd-native-slinky](facades/antd-native-slinky)
-- [std](facades/std)
 - [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)
 - [react-redux](facades/react-redux)
@@ -211,7 +210,7 @@ There are loads of details as to how the conversion is done.
 Not everything is optimal of course.
 The following points try to explain the big picture:
 
-### Whatsup with fooLib, fooNs, fooMod, foo and all that?
+### Whatsup with fooNs, fooMod, foo and all that?
 
 Typescript does namespacing differently than Scala, so you can have
 a library, a `var`/`function`, a `module` and a `namespace` all with the same name.
@@ -229,11 +228,14 @@ and we have way better tooling in Scala to handle it - meaning you shouldn't wri
 A somewhat nice way of handling this is to bundle your commonly used imports somewhere, for instance:
 ```scala
 package object myapp {
-  type Avatar = typings.materialDashUiLib.avatarMod.default
-  val React = typings.reactLib.dsl
+  type Avatar = typings.materialDashUi.avatarMod.default
+  val React = typings.react.dsl
 }
 
 ```
+
+Note: Earlier we used `Lib` as a suffix for all library names, we now managed to drop it.
+Migration should be easy with a search/replace of `typings.xxxLib => typings.xxx`.
 
 ### Whatsup with the hats?
 
@@ -246,19 +248,19 @@ For that reason we put them into objects called `^`.
 The scheme is like this:
 ```scala
 package typings
-package stdLib
+package std
 
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scalajs.js
+import scalajs.js.`|`
+import scalajs.js.annotation._
 
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val Array: stdLib.ArrayConstructor = js.native
+  val Array: std.ArrayConstructor = js.native
   // ...
 }
-// usage: typings.stdLib.^.Array.newInstance(1)
+// usage: typings.std.^.Array.newInstance(1)
 ```
 
 Note that this is the "normal" container format.
@@ -267,7 +269,7 @@ the "compact" format is used instead where everything goes into an object.
 
 Modules which are classes are also called `^`, for instance:
 ```scala
-package awsDashSdkLib.clientsDynamodbMod
+package typings.awsDashSdk.clientsDynamodbMod
 
 @JSImport("aws-sdk/clients/dynamodb", JSImport.Namespace)
 @js.native
@@ -276,7 +278,7 @@ class ^ () extends DynamoDB {
 }
 
 //usage:
-import awsDashSdkLib.clientsDynamodbMod.{^ => DynamoDb}
+import typings.awsDashSdk.clientsDynamodbMod.{^ => DynamoDb}
 new DynamoDb(ClientConfiguration(...))
 
 ```
@@ -333,13 +335,13 @@ In the general case it's hopeless to guess what a `number` is, so `Double` is al
 
 ### Whatsup with casting?
 
-Since Typescript is structurally typed it's impossible that all subtyping relationships transfer to scala.
+Since Typescript is structurally typed it's impossible that all subtyping relationships transfer to 
 For instance:
 
 ```scala
 @js.native
 trait ArrayLike[T] extends /* n */ ScalablyTyped.runtime.NumberDictionary[T] {
-  val length: scala.Double
+  val length: Double
 }
 ```
 is a description of something that conforms to a minimal version of the `Array` interface.
@@ -348,7 +350,7 @@ You'll find that `Array` itself doesn't inherit it:
 ```scala
 @js.native
 trait Array[T] extends /* n */ ScalablyTyped.runtime.NumberDictionary[T] {
-  val length: scala.Double = js.native
+  val length: Double = js.native
   //...
 }
 ```
@@ -356,12 +358,12 @@ Although we could extend the converter to recognize some of these cases, it is n
 The fix is straightforward cast, demonstrating that you know something the compiler doesn't:
 
 ```scala
-stdLib.Array(1).asInstanceOf[ArrayLike[Int]]
+typings.std.Array(1).asInstanceOf[ArrayLike[Int]]
 ```
 For good measure, bundle your knowledge somewhere so you don't litter you code with casts:
 ```scala
 object Foo {
-  def ArrayIsArrayLike[T](ts: stdLib.Array[T]): stdLib.ArrayLike[T] = ts.asInstanceOf[stdLib.ArrayLike[T]]
+  def ArrayIsArrayLike[T](ts: typings.std.Array[T]): typings.std.ArrayLike[T] = ts.asInstanceOf[typings.std.ArrayLike[T]]
 }
 ```
 
@@ -373,7 +375,7 @@ Take for instance this:
 ```scala
 @js.native
 trait Crypto extends js.Object {
-  def getRandomValues[T /* <: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | scala.Null */](array: T): T
+  def getRandomValues[T /* <: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | Null */](array: T): T
 }
 ```
 
@@ -410,7 +412,7 @@ trait Anon_BlobParts
   with ScalablyTyped.runtime.Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
 
 //usage
-val blob: Blob = stdLibMembers.window.Blob.newInstance0()
+val blob: Blob = typings.std.^.window.Blob.newInstance0()
 ```
 
 #### inferred classes
@@ -458,7 +460,7 @@ trait UnderlyingSink extends js.Object {
 }
 
 type WritableStreamDefaultControllerCallback =
-  js.Function1[/* controller */ WritableStreamDefaultController, scala.Unit]
+  js.Function1[/* controller */ WritableStreamDefaultController, Unit]
 ```
 
 It's generally impossible to know whether `this` is important in this context, and Scala.js is not going to supply it.
@@ -467,7 +469,7 @@ We play it safe and rewrite most such cases to methods, like this:
 ```scala
 @js.native
 trait UnderlyingSink extends js.Object {
-  def start(controller: WritableStreamDefaultController): scala.Unit = js.native
+  def start(controller: WritableStreamDefaultController): Unit = js.native
 }
 ```
 
@@ -480,9 +482,9 @@ Even when we get them, erasure probably means they won't be too useful in this p
 Soo, we cheat a bit. Let's have a look at what it looks like in the `csstype` library:
 ```scala
 package typings
-package csstypeLib
+package csstype
 
-object csstypeLibStrings {
+object csstypeStrings {
   @js.native
   sealed trait `-moz-initial` extends js.Object
   def `-moz-initial`: `-moz-initial` = "-moz-initial".asInstanceOf[`-moz-initial`]
@@ -522,29 +524,31 @@ So what do we do in Scala? We could consolidate/discard the methods and go for a
 @js.native
 trait HTMLCanvasElement extends HTMLElement {
   // we don't actually do this
-  def getContext(contextId: java.lang.String, contextAttributes: js.UndefOr[js.Object | CanvasRenderingContext2DSettings | WebGLContextAttributes]): CanvasRenderingContext2D | WebGLRenderingContext | scala.Null = js.native
+  def getContext(contextId: String, contextAttributes: js.UndefOr[js.Object | CanvasRenderingContext2DSettings | WebGLContextAttributes]): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
 }
 ```
 
 But where would the fun be? And the type-safety? This is what we actually end up with:
 
 ```scala
+import typings.std.stdStrings.{`2d`, `experimental-webgl`, webgl}
+
 @js.native
 trait HTMLCanvasElement extends HTMLElement {
-  def getContext(contextId: java.lang.String): CanvasRenderingContext2D | WebGLRenderingContext | scala.Null = js.native
-  def getContext(contextId: java.lang.String, contextAttributes: js.Object): CanvasRenderingContext2D | WebGLRenderingContext | scala.Null = js.native
+  def getContext(contextId: String): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
+  def getContext(contextId: String, contextAttributes: js.Object): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
   @JSName("getContext")
-  def getContext_2d(contextId: stdLib.stdLibStrings.`2d`): CanvasRenderingContext2D | scala.Null = js.native
+  def getContext_2d(contextId: `2d`): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
-  def getContext_2d(contextId: stdLib.stdLibStrings.`2d`, contextAttributes: CanvasRenderingContext2DSettings): CanvasRenderingContext2D | scala.Null = js.native
+  def getContext_2d(contextId: `2d`, contextAttributes: CanvasRenderingContext2DSettings): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
-  def `getContext_experimental-webgl`(contextId: stdLib.stdLibStrings.`experimental-webgl`): WebGLRenderingContext | scala.Null = js.native
+  def `getContext_experimental-webgl`(contextId: `experimental-webgl`): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
-  def `getContext_experimental-webgl`(contextId: stdLib.stdLibStrings.`experimental-webgl`, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | scala.Null = js.native
+  def `getContext_experimental-webgl`(contextId: `experimental-webgl`, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
-  def getContext_webgl(contextId: stdLib.stdLibStrings.webgl): WebGLRenderingContext | scala.Null = js.native
+  def getContext_webgl(contextId: webgl): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
-  def getContext_webgl(contextId: stdLib.stdLibStrings.webgl, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | scala.Null = js.native
+  def getContext_webgl(contextId: webgl, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
 }
 ```
 
@@ -594,19 +598,19 @@ To solve this situation, we also duplicate methods rather liberally around union
 
 @js.native
 trait EventTarget extends js.Object {
-  def addEventListener(`type`: java.lang.String): scala.Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): scala.Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: scala.Null, options: AddEventListenerOptions): scala.Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: scala.Null, options: scala.Boolean): scala.Unit = js.native
+  def addEventListener(`type`: String): Unit = js.native
+  def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
+  def addEventListener(`type`: String, listener: Null, options: Boolean): Unit = js.native
 }
 type EventListenerOrEventListenerObject = EventListener | EventListenerObject
 
-type EventListener = js.Function1[/* evt */ Event, scala.Unit]
+type EventListener = js.Function1[/* evt */ Event, Unit]
 
 trait EventListenerObject extends js.Object {
-  def handleEvent(evt: Event): scala.Unit
+  def handleEvent(evt: Event): Unit
 }
 
 ```
@@ -616,21 +620,22 @@ the presence of overrides in subclasses with different optionality of parameters
 
 Let's have a look at `MediaStream` as well:
 ```scala
+import typings.std.stdStrings.{active, addtrack}
 
 @js.native
 trait MediaStream extends EventTarget {
   @JSName("addEventListener")
-  def addEventListener_active(`type`: stdLib.stdLibStrings.active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): scala.Unit = js.native
+  def addEventListener_active(`type`: active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_active(`type`: stdLib.stdLibStrings.active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], options: AddEventListenerOptions): scala.Unit = js.native
+  def addEventListener_active(`type`: active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], options: AddEventListenerOptions): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_active(`type`: stdLib.stdLibStrings.active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], options: scala.Boolean): scala.Unit = js.native
+  def addEventListener_active(`type`: active, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], options: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: stdLib.stdLibStrings.addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]): scala.Unit = js.native
+  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: stdLib.stdLibStrings.addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _], options: AddEventListenerOptions): scala.Unit = js.native
+  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _], options: AddEventListenerOptions): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: stdLib.stdLibStrings.addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _], options: scala.Boolean): scala.Unit = js.native
+  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _], options: Boolean): Unit = js.native
 
 ```
 
@@ -650,7 +655,7 @@ Scala is much better prepared to handle `trait`s with many implementations, so a
 types in a long type union is contained in the same library, we rewrite for instance this:
 
 ```scala
-type BlobPart = BufferSource | Blob | java.lang.String
+type BlobPart = BufferSource | Blob | String
 ```
 
 Into this:
@@ -659,9 +664,9 @@ Into this:
 /* Rewritten from type alias, can be one of:
   - BufferSource
   - Blob
-  - java.lang.String
+  - String
 */
-type BlobPart = _BlobPart | java.lang.String
+type BlobPart = _BlobPart | String
 
 trait _BlobPart extends js.Object
 
@@ -763,7 +768,7 @@ Just to get things working, we mostly ignore the effects of the type mappings in
 ```scala
 type Partial[T] = /* import warning: ImportType.apply c Unsupported type mapping:
   {[ P in keyof T ]:? T[P]}
-  */ stdLib.stdLibStrings.Partial with T
+  */ typings.std.stdStrings.Partial with T
 ```
 This is again not necessarily awesome, but it works.
 
@@ -786,12 +791,12 @@ an existing structure.
 
 ```typescript
 // in library foo
-interface FooStatic{
+interface FooStatic {
     sayHello();
 }
 
 // in library foo-augmented
-interface FooStatic{
+interface FooStatic {
     sayGoodbye();
 }
 

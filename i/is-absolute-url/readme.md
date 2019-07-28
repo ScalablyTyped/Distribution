@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if an URL is absolute.
-
-@param url - The URL to check.
-
-@example
-```
-import isAbsoluteUrl = require('is-absolute-url');
-
-isAbsoluteUrl('http://sindresorhus.com/foo/bar');
-//=> true
-
-isAbsoluteUrl('//sindresorhus.com');
-//=> false
-
-isAbsoluteUrl('foo/bar');
-//=> false
-```
-*/
-
-```
 

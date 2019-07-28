@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pikaday 1.7
-// Project: https://github.com/dbushell/Pikaday, https://pikaday.com
-// Definitions by: Rudolph Gottesheim <https://github.com/MidnightDesign>
-//                 Åke Wivänge <https://github.com/wake42>
-//                 Istvan Mezo <https://github.com/mezoistvan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

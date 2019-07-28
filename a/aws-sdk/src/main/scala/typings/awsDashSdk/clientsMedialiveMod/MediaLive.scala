@@ -1,0 +1,502 @@
+package typings.awsDashSdk.clientsMedialiveMod
+
+import typings.awsDashSdk.Anon_Waiter
+import typings.awsDashSdk.awsDashSdkStrings.channelCreated
+import typings.awsDashSdk.awsDashSdkStrings.channelDeleted
+import typings.awsDashSdk.awsDashSdkStrings.channelRunning
+import typings.awsDashSdk.awsDashSdkStrings.channelStopped
+import typings.awsDashSdk.libConfigMod.ConfigBase
+import typings.awsDashSdk.libErrorMod.AWSError
+import typings.awsDashSdk.libRequestMod.Request
+import typings.awsDashSdk.libServiceMod.Service
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait MediaLive extends Service {
+  @JSName("config")
+  var config_MediaLive: ConfigBase with ClientConfiguration = js.native
+  /**
+    * Update a channel schedule
+    */
+  def batchUpdateSchedule(): Request[BatchUpdateScheduleResponse, AWSError] = js.native
+  def batchUpdateSchedule(callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateScheduleResponse, Unit]): Request[BatchUpdateScheduleResponse, AWSError] = js.native
+  /**
+    * Update a channel schedule
+    */
+  def batchUpdateSchedule(params: BatchUpdateScheduleRequest): Request[BatchUpdateScheduleResponse, AWSError] = js.native
+  def batchUpdateSchedule(
+    params: BatchUpdateScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateScheduleResponse, Unit]
+  ): Request[BatchUpdateScheduleResponse, AWSError] = js.native
+  /**
+    * Creates a new channel
+    */
+  def createChannel(): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]): Request[CreateChannelResponse, AWSError] = js.native
+  /**
+    * Creates a new channel
+    */
+  def createChannel(params: CreateChannelRequest): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(
+    params: CreateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]
+  ): Request[CreateChannelResponse, AWSError] = js.native
+  /**
+    * Create an input
+    */
+  def createInput(): Request[CreateInputResponse, AWSError] = js.native
+  def createInput(callback: js.Function2[/* err */ AWSError, /* data */ CreateInputResponse, Unit]): Request[CreateInputResponse, AWSError] = js.native
+  /**
+    * Create an input
+    */
+  def createInput(params: CreateInputRequest): Request[CreateInputResponse, AWSError] = js.native
+  def createInput(
+    params: CreateInputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInputResponse, Unit]
+  ): Request[CreateInputResponse, AWSError] = js.native
+  /**
+    * Creates a Input Security Group
+    */
+  def createInputSecurityGroup(): Request[CreateInputSecurityGroupResponse, AWSError] = js.native
+  def createInputSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateInputSecurityGroupResponse, Unit]): Request[CreateInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Creates a Input Security Group
+    */
+  def createInputSecurityGroup(params: CreateInputSecurityGroupRequest): Request[CreateInputSecurityGroupResponse, AWSError] = js.native
+  def createInputSecurityGroup(
+    params: CreateInputSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInputSecurityGroupResponse, Unit]
+  ): Request[CreateInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Create tags for a resource
+    */
+  def createTags(): Request[js.Object, AWSError] = js.native
+  def createTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Create tags for a resource
+    */
+  def createTags(params: CreateTagsRequest): Request[js.Object, AWSError] = js.native
+  def createTags(params: CreateTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Starts deletion of channel. The associated outputs are also deleted.
+    */
+  def deleteChannel(): Request[DeleteChannelResponse, AWSError] = js.native
+  def deleteChannel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteChannelResponse, Unit]): Request[DeleteChannelResponse, AWSError] = js.native
+  /**
+    * Starts deletion of channel. The associated outputs are also deleted.
+    */
+  def deleteChannel(params: DeleteChannelRequest): Request[DeleteChannelResponse, AWSError] = js.native
+  def deleteChannel(
+    params: DeleteChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteChannelResponse, Unit]
+  ): Request[DeleteChannelResponse, AWSError] = js.native
+  /**
+    * Deletes the input end point
+    */
+  def deleteInput(): Request[DeleteInputResponse, AWSError] = js.native
+  def deleteInput(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputResponse, Unit]): Request[DeleteInputResponse, AWSError] = js.native
+  /**
+    * Deletes the input end point
+    */
+  def deleteInput(params: DeleteInputRequest): Request[DeleteInputResponse, AWSError] = js.native
+  def deleteInput(
+    params: DeleteInputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputResponse, Unit]
+  ): Request[DeleteInputResponse, AWSError] = js.native
+  /**
+    * Deletes an Input Security Group
+    */
+  def deleteInputSecurityGroup(): Request[DeleteInputSecurityGroupResponse, AWSError] = js.native
+  def deleteInputSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputSecurityGroupResponse, Unit]): Request[DeleteInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Deletes an Input Security Group
+    */
+  def deleteInputSecurityGroup(params: DeleteInputSecurityGroupRequest): Request[DeleteInputSecurityGroupResponse, AWSError] = js.native
+  def deleteInputSecurityGroup(
+    params: DeleteInputSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputSecurityGroupResponse, Unit]
+  ): Request[DeleteInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Delete an expired reservation.
+    */
+  def deleteReservation(): Request[DeleteReservationResponse, AWSError] = js.native
+  def deleteReservation(callback: js.Function2[/* err */ AWSError, /* data */ DeleteReservationResponse, Unit]): Request[DeleteReservationResponse, AWSError] = js.native
+  /**
+    * Delete an expired reservation.
+    */
+  def deleteReservation(params: DeleteReservationRequest): Request[DeleteReservationResponse, AWSError] = js.native
+  def deleteReservation(
+    params: DeleteReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteReservationResponse, Unit]
+  ): Request[DeleteReservationResponse, AWSError] = js.native
+  /**
+    * Delete all schedule actions on a channel.
+    */
+  def deleteSchedule(): Request[DeleteScheduleResponse, AWSError] = js.native
+  def deleteSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteScheduleResponse, Unit]): Request[DeleteScheduleResponse, AWSError] = js.native
+  /**
+    * Delete all schedule actions on a channel.
+    */
+  def deleteSchedule(params: DeleteScheduleRequest): Request[DeleteScheduleResponse, AWSError] = js.native
+  def deleteSchedule(
+    params: DeleteScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteScheduleResponse, Unit]
+  ): Request[DeleteScheduleResponse, AWSError] = js.native
+  /**
+    * Removes tags for a resource
+    */
+  def deleteTags(): Request[js.Object, AWSError] = js.native
+  def deleteTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes tags for a resource
+    */
+  def deleteTags(params: DeleteTagsRequest): Request[js.Object, AWSError] = js.native
+  def deleteTags(params: DeleteTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Gets details about a channel
+    */
+  def describeChannel(): Request[DescribeChannelResponse, AWSError] = js.native
+  def describeChannel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Gets details about a channel
+    */
+  def describeChannel(params: DescribeChannelRequest): Request[DescribeChannelResponse, AWSError] = js.native
+  def describeChannel(
+    params: DescribeChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Produces details about an input
+    */
+  def describeInput(): Request[DescribeInputResponse, AWSError] = js.native
+  def describeInput(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputResponse, Unit]): Request[DescribeInputResponse, AWSError] = js.native
+  /**
+    * Produces details about an input
+    */
+  def describeInput(params: DescribeInputRequest): Request[DescribeInputResponse, AWSError] = js.native
+  def describeInput(
+    params: DescribeInputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputResponse, Unit]
+  ): Request[DescribeInputResponse, AWSError] = js.native
+  /**
+    * Produces a summary of an Input Security Group
+    */
+  def describeInputSecurityGroup(): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native
+  def describeInputSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputSecurityGroupResponse, Unit]): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Produces a summary of an Input Security Group
+    */
+  def describeInputSecurityGroup(params: DescribeInputSecurityGroupRequest): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native
+  def describeInputSecurityGroup(
+    params: DescribeInputSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputSecurityGroupResponse, Unit]
+  ): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Get details for an offering.
+    */
+  def describeOffering(): Request[DescribeOfferingResponse, AWSError] = js.native
+  def describeOffering(callback: js.Function2[/* err */ AWSError, /* data */ DescribeOfferingResponse, Unit]): Request[DescribeOfferingResponse, AWSError] = js.native
+  /**
+    * Get details for an offering.
+    */
+  def describeOffering(params: DescribeOfferingRequest): Request[DescribeOfferingResponse, AWSError] = js.native
+  def describeOffering(
+    params: DescribeOfferingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeOfferingResponse, Unit]
+  ): Request[DescribeOfferingResponse, AWSError] = js.native
+  /**
+    * Get details for a reservation.
+    */
+  def describeReservation(): Request[DescribeReservationResponse, AWSError] = js.native
+  def describeReservation(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservationResponse, Unit]): Request[DescribeReservationResponse, AWSError] = js.native
+  /**
+    * Get details for a reservation.
+    */
+  def describeReservation(params: DescribeReservationRequest): Request[DescribeReservationResponse, AWSError] = js.native
+  def describeReservation(
+    params: DescribeReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservationResponse, Unit]
+  ): Request[DescribeReservationResponse, AWSError] = js.native
+  /**
+    * Get a channel schedule
+    */
+  def describeSchedule(): Request[DescribeScheduleResponse, AWSError] = js.native
+  def describeSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduleResponse, Unit]): Request[DescribeScheduleResponse, AWSError] = js.native
+  /**
+    * Get a channel schedule
+    */
+  def describeSchedule(params: DescribeScheduleRequest): Request[DescribeScheduleResponse, AWSError] = js.native
+  def describeSchedule(
+    params: DescribeScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduleResponse, Unit]
+  ): Request[DescribeScheduleResponse, AWSError] = js.native
+  /**
+    * Produces list of channels that have been created
+    */
+  def listChannels(): Request[ListChannelsResponse, AWSError] = js.native
+  def listChannels(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]): Request[ListChannelsResponse, AWSError] = js.native
+  /**
+    * Produces list of channels that have been created
+    */
+  def listChannels(params: ListChannelsRequest): Request[ListChannelsResponse, AWSError] = js.native
+  def listChannels(
+    params: ListChannelsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]
+  ): Request[ListChannelsResponse, AWSError] = js.native
+  /**
+    * Produces a list of Input Security Groups for an account
+    */
+  def listInputSecurityGroups(): Request[ListInputSecurityGroupsResponse, AWSError] = js.native
+  def listInputSecurityGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListInputSecurityGroupsResponse, Unit]): Request[ListInputSecurityGroupsResponse, AWSError] = js.native
+  /**
+    * Produces a list of Input Security Groups for an account
+    */
+  def listInputSecurityGroups(params: ListInputSecurityGroupsRequest): Request[ListInputSecurityGroupsResponse, AWSError] = js.native
+  def listInputSecurityGroups(
+    params: ListInputSecurityGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInputSecurityGroupsResponse, Unit]
+  ): Request[ListInputSecurityGroupsResponse, AWSError] = js.native
+  /**
+    * Produces list of inputs that have been created
+    */
+  def listInputs(): Request[ListInputsResponse, AWSError] = js.native
+  def listInputs(callback: js.Function2[/* err */ AWSError, /* data */ ListInputsResponse, Unit]): Request[ListInputsResponse, AWSError] = js.native
+  /**
+    * Produces list of inputs that have been created
+    */
+  def listInputs(params: ListInputsRequest): Request[ListInputsResponse, AWSError] = js.native
+  def listInputs(
+    params: ListInputsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInputsResponse, Unit]
+  ): Request[ListInputsResponse, AWSError] = js.native
+  /**
+    * List offerings available for purchase.
+    */
+  def listOfferings(): Request[ListOfferingsResponse, AWSError] = js.native
+  def listOfferings(callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingsResponse, Unit]): Request[ListOfferingsResponse, AWSError] = js.native
+  /**
+    * List offerings available for purchase.
+    */
+  def listOfferings(params: ListOfferingsRequest): Request[ListOfferingsResponse, AWSError] = js.native
+  def listOfferings(
+    params: ListOfferingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingsResponse, Unit]
+  ): Request[ListOfferingsResponse, AWSError] = js.native
+  /**
+    * List purchased reservations.
+    */
+  def listReservations(): Request[ListReservationsResponse, AWSError] = js.native
+  def listReservations(callback: js.Function2[/* err */ AWSError, /* data */ ListReservationsResponse, Unit]): Request[ListReservationsResponse, AWSError] = js.native
+  /**
+    * List purchased reservations.
+    */
+  def listReservations(params: ListReservationsRequest): Request[ListReservationsResponse, AWSError] = js.native
+  def listReservations(
+    params: ListReservationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReservationsResponse, Unit]
+  ): Request[ListReservationsResponse, AWSError] = js.native
+  /**
+    * Produces list of tags that have been created for a resource
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Produces list of tags that have been created for a resource
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Purchase an offering and create a reservation.
+    */
+  def purchaseOffering(): Request[PurchaseOfferingResponse, AWSError] = js.native
+  def purchaseOffering(callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResponse, Unit]): Request[PurchaseOfferingResponse, AWSError] = js.native
+  /**
+    * Purchase an offering and create a reservation.
+    */
+  def purchaseOffering(params: PurchaseOfferingRequest): Request[PurchaseOfferingResponse, AWSError] = js.native
+  def purchaseOffering(
+    params: PurchaseOfferingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResponse, Unit]
+  ): Request[PurchaseOfferingResponse, AWSError] = js.native
+  /**
+    * Starts an existing channel
+    */
+  def startChannel(): Request[StartChannelResponse, AWSError] = js.native
+  def startChannel(callback: js.Function2[/* err */ AWSError, /* data */ StartChannelResponse, Unit]): Request[StartChannelResponse, AWSError] = js.native
+  /**
+    * Starts an existing channel
+    */
+  def startChannel(params: StartChannelRequest): Request[StartChannelResponse, AWSError] = js.native
+  def startChannel(
+    params: StartChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartChannelResponse, Unit]
+  ): Request[StartChannelResponse, AWSError] = js.native
+  /**
+    * Stops a running channel
+    */
+  def stopChannel(): Request[StopChannelResponse, AWSError] = js.native
+  def stopChannel(callback: js.Function2[/* err */ AWSError, /* data */ StopChannelResponse, Unit]): Request[StopChannelResponse, AWSError] = js.native
+  /**
+    * Stops a running channel
+    */
+  def stopChannel(params: StopChannelRequest): Request[StopChannelResponse, AWSError] = js.native
+  def stopChannel(
+    params: StopChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopChannelResponse, Unit]
+  ): Request[StopChannelResponse, AWSError] = js.native
+  /**
+    * Updates a channel.
+    */
+  def updateChannel(): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]): Request[UpdateChannelResponse, AWSError] = js.native
+  /**
+    * Updates a channel.
+    */
+  def updateChannel(params: UpdateChannelRequest): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(
+    params: UpdateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]
+  ): Request[UpdateChannelResponse, AWSError] = js.native
+  /**
+    * Changes the class of the channel.
+    */
+  def updateChannelClass(): Request[UpdateChannelClassResponse, AWSError] = js.native
+  def updateChannelClass(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelClassResponse, Unit]): Request[UpdateChannelClassResponse, AWSError] = js.native
+  /**
+    * Changes the class of the channel.
+    */
+  def updateChannelClass(params: UpdateChannelClassRequest): Request[UpdateChannelClassResponse, AWSError] = js.native
+  def updateChannelClass(
+    params: UpdateChannelClassRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelClassResponse, Unit]
+  ): Request[UpdateChannelClassResponse, AWSError] = js.native
+  /**
+    * Updates an input.
+    */
+  def updateInput(): Request[UpdateInputResponse, AWSError] = js.native
+  def updateInput(callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputResponse, Unit]): Request[UpdateInputResponse, AWSError] = js.native
+  /**
+    * Updates an input.
+    */
+  def updateInput(params: UpdateInputRequest): Request[UpdateInputResponse, AWSError] = js.native
+  def updateInput(
+    params: UpdateInputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputResponse, Unit]
+  ): Request[UpdateInputResponse, AWSError] = js.native
+  /**
+    * Update an Input Security Group's Whilelists.
+    */
+  def updateInputSecurityGroup(): Request[UpdateInputSecurityGroupResponse, AWSError] = js.native
+  def updateInputSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputSecurityGroupResponse, Unit]): Request[UpdateInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Update an Input Security Group's Whilelists.
+    */
+  def updateInputSecurityGroup(params: UpdateInputSecurityGroupRequest): Request[UpdateInputSecurityGroupResponse, AWSError] = js.native
+  def updateInputSecurityGroup(
+    params: UpdateInputSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputSecurityGroupResponse, Unit]
+  ): Request[UpdateInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Update reservation.
+    */
+  def updateReservation(): Request[UpdateReservationResponse, AWSError] = js.native
+  def updateReservation(callback: js.Function2[/* err */ AWSError, /* data */ UpdateReservationResponse, Unit]): Request[UpdateReservationResponse, AWSError] = js.native
+  /**
+    * Update reservation.
+    */
+  def updateReservation(params: UpdateReservationRequest): Request[UpdateReservationResponse, AWSError] = js.native
+  def updateReservation(
+    params: UpdateReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateReservationResponse, Unit]
+  ): Request[UpdateReservationResponse, AWSError] = js.native
+  /**
+    * Waits for the channelCreated state by periodically calling the underlying MediaLive.describeChanneloperation every 3 seconds (at most 5 times). Wait until a channel has been created
+    */
+  @JSName("waitFor")
+  def waitFor_channelCreated(state: channelCreated): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelCreated(
+    state: channelCreated,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelCreated state by periodically calling the underlying MediaLive.describeChanneloperation every 3 seconds (at most 5 times). Wait until a channel has been created
+    */
+  @JSName("waitFor")
+  def waitFor_channelCreated(state: channelCreated, params: DescribeChannelRequest with Anon_Waiter): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelCreated(
+    state: channelCreated,
+    params: DescribeChannelRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_channelDeleted(state: channelDeleted): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelDeleted(
+    state: channelDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_channelDeleted(state: channelDeleted, params: DescribeChannelRequest with Anon_Waiter): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelDeleted(
+    state: channelDeleted,
+    params: DescribeChannelRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelRunning state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 120 times). Wait until a channel is running
+    */
+  @JSName("waitFor")
+  def waitFor_channelRunning(state: channelRunning): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelRunning(
+    state: channelRunning,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelRunning state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 120 times). Wait until a channel is running
+    */
+  @JSName("waitFor")
+  def waitFor_channelRunning(state: channelRunning, params: DescribeChannelRequest with Anon_Waiter): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelRunning(
+    state: channelRunning,
+    params: DescribeChannelRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_channelStopped(state: channelStopped): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelStopped(
+    state: channelStopped,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_channelStopped(state: channelStopped, params: DescribeChannelRequest with Anon_Waiter): Request[DescribeChannelResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelStopped(
+    state: channelStopped,
+    params: DescribeChannelRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+}
+

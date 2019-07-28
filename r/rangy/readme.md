@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Rangy
-// Project: https://github.com/timdown/rangy
-// Definitions by: Rudolph Gottesheim <http://www.midnight-design.at/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Rangy Class Applier module
-// Definitions by: Maxime Kjaer <https://github.com/MaximeKjaer>
-
-```
 

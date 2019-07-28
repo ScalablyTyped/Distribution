@@ -1,0 +1,25 @@
+package typings.kendoDashUi.kendoNs.uiNs
+
+import typings.std.Element
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DropDownTreeSelectEvent extends DropDownTreeEvent {
+  var node: js.UndefOr[Element] = js.undefined
+}
+
+object DropDownTreeSelectEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: () => Boolean,
+    preventDefault: js.Function,
+    sender: DropDownTree,
+    node: Element = null
+  ): DropDownTreeSelectEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[DropDownTreeSelectEvent]
+  }
+}
+

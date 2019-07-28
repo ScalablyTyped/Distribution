@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for XRegExp 3.0.0
-// Project: http://xregexp.com
-// Definitions by: Bart van der Schoor <https://github.com/Bartvds>,
-//                 Johannes Fahrenkrug <https://github.com/jfahrenkrug>
-//                 Mateusz Jagiełło <https://github.com/sigo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

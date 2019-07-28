@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Create an array with values that are present in the first array but not additional ones.
-
-@param array - The array to compare against.
-@param values - The arrays with values to be excluded.
-@returns A new array of filtered values.
-
-@example
-```
-import arrayDiffer = require('array-differ');
-
-arrayDiffer([2, 3, 4], [3, 50]);
-//=> [2, 4]
-```
-*/
-
-```
 

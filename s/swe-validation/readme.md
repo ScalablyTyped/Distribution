@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for swe-validation 1.0
-// Project: https://github.com/keype/swe-validation
-// Definitions by: Robert Hjalmers <https://github.com/hjalmers>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

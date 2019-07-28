@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for trim 0.01
-// Project: https://www.npmjs.com/package/trim
-// Definitions by: Steve Jenkins <https://github.com/skysteve>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

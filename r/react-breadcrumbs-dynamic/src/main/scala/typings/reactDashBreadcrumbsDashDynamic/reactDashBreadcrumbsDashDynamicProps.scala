@@ -1,0 +1,18 @@
+package typings.reactDashBreadcrumbsDashDynamic
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashBreadcrumbsDashDynamicProps {
+  @scala.inline
+  def BreadcrumbsProps: typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps.type = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
+  type BreadcrumbsProps = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
+  @scala.inline
+  def BreadcrumbsItemProps: typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps.type = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
+  type BreadcrumbsItemProps = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
+  @scala.inline
+  def BreadcrumbsProviderProps: typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps.type = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
+  type BreadcrumbsProviderProps = typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
+}
+

@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Firefox Addon SDK
-// Project: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/Add-on_SDK
-// Definitions by: Mohammed Hamdy <https://github.com/github-account-because-they-want-it>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

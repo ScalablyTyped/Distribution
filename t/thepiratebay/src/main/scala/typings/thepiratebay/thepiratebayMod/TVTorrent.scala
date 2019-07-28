@@ -1,0 +1,21 @@
+package typings.thepiratebay.thepiratebayMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TVTorrent extends js.Object {
+  var id: String
+  var link: String
+  var title: String
+}
+
+object TVTorrent {
+  @scala.inline
+  def apply(id: String, link: String, title: String): TVTorrent = {
+    val __obj = js.Dynamic.literal(id = id, link = link, title = title)
+  
+    __obj.asInstanceOf[TVTorrent]
+  }
+}
+

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for thrift 0.10
-// Project: http://thrift.apache.org
-// Definitions by: Kamek <https://github.com/kamek-pf>
-//                 Kevin Greene <https://github.com/kevin-greene-ck>
-//                 Jesse Zhang <https://github.com/jessezhang91>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

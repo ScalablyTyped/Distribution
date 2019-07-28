@@ -1,0 +1,12 @@
+package typings.reactDashAddonsDashTransitionDashGroup.reactDashAddonsDashTransitionDashGroupMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashAddonsDashTransitionDashGroup.ReactTransitionGroup
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-addons-transition-group", JSImport.Namespace)
+@js.native
+object ^ extends TopLevel[ReactTransitionGroup]
+

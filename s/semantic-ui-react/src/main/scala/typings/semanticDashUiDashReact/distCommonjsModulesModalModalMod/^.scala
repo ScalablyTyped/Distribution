@@ -1,0 +1,12 @@
+package typings.semanticDashUiDashReact.distCommonjsModulesModalModalMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("semantic-ui-react/dist/commonjs/modules/Modal/Modal", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: ModalComponent = js.native
+}
+

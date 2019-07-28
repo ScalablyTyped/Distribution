@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dsv
-// Project: https://www.npmjs.com/package/dsv
-// Definitions by: Jason Swearingen <https://jasonswearingen.github.io>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** A parser and formatter for DSV (CSV and TSV) files.
-Extracted from D3. */
-
-```
 

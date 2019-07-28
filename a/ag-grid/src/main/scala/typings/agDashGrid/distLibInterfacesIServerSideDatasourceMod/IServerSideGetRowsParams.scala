@@ -1,0 +1,28 @@
+package typings.agDashGrid.distLibInterfacesIServerSideDatasourceMod
+
+import typings.agDashGrid.distLibEntitiesRowNodeMod.RowNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IServerSideGetRowsParams extends js.Object {
+  var parentNode: RowNode
+  var request: IServerSideGetRowsRequest
+  def failCallback(): Unit
+  def successCallback(rowsThisPage: js.Array[_], lastRow: Double): Unit
+}
+
+object IServerSideGetRowsParams {
+  @scala.inline
+  def apply(
+    failCallback: () => Unit,
+    parentNode: RowNode,
+    request: IServerSideGetRowsRequest,
+    successCallback: (js.Array[_], Double) => Unit
+  ): IServerSideGetRowsParams = {
+    val __obj = js.Dynamic.literal(failCallback = js.Any.fromFunction0(failCallback), parentNode = parentNode, request = request, successCallback = js.Any.fromFunction2(successCallback))
+  
+    __obj.asInstanceOf[IServerSideGetRowsParams]
+  }
+}
+

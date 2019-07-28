@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-memwatch 1.0
-// Project: https://github.com/eduardbcom/node-memwatch#readme
-// Definitions by: Eunchong Yu <https://github.com/Kroisse>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

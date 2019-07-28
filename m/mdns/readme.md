@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node_mdns
-// Project: https://github.com/agnat/node_mdns
-// Definitions by: Stefan Steinhart <https://github.com/reppners>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

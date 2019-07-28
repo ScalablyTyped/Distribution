@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cookie-signature 1.0
-// Project: https://github.com/tj/node-cookie-signature, https://github.com/visionmedia/node-cookie-signature
-// Definitions by: François Nguyen <https://github.com/lith-light-g>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** Sign the given `val` with `secret`. */
-
-```
 

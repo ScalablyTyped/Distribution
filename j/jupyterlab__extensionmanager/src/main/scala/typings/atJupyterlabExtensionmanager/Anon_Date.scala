@@ -1,0 +1,66 @@
+package typings.atJupyterlabExtensionmanager
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atJupyterlabExtensionmanager.libQueryMod.IPerson
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Date extends js.Object {
+  /**
+    * Timestamp of release(?).
+    */
+  var date: String
+  /**
+    * Description as listed in package.json.
+    */
+  var description: String
+  /**
+    * Package keywords.
+    */
+  var keywords: js.Array[String]
+  /**
+    * Various metadata links for the package.
+    */
+  var links: StringDictionary[String]
+  /**
+    * Maintainer list per package.json.
+    */
+  var maintainers: js.Array[IPerson]
+  /**
+    * The package name.
+    */
+  var name: String
+  /**
+    * Metadata about user who published the release.
+    */
+  var publisher: IPerson
+  /**
+    * The scope of the package (e.g. jupyterlab for @jupyterlab/services).
+    */
+  var scope: String
+  /**
+    * Version number.
+    */
+  var version: String
+}
+
+object Anon_Date {
+  @scala.inline
+  def apply(
+    date: String,
+    description: String,
+    keywords: js.Array[String],
+    links: StringDictionary[String],
+    maintainers: js.Array[IPerson],
+    name: String,
+    publisher: IPerson,
+    scope: String,
+    version: String
+  ): Anon_Date = {
+    val __obj = js.Dynamic.literal(date = date, description = description, keywords = keywords, links = links, maintainers = maintainers, name = name, publisher = publisher, scope = scope, version = version)
+  
+    __obj.asInstanceOf[Anon_Date]
+  }
+}
+

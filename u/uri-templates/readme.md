@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for uri-templates 0.1.9
-// Project: https://github.com/geraintluff/uri-templates
-// Definitions by: Bart van der Schoor <https://github.com/Bartvds>
-//                 Bartek Szczepański <https://github.com/barnski>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

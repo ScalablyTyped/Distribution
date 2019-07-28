@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for memorystream 0.3
-// Project: https://github.com/JSBizon/node-memorystream
-// Definitions by: bangbang93 <https://github.com/bangbang93>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

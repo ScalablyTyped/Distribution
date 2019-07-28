@@ -1,25 +1,25 @@
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tabris)) [id => tabris, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof LayoutData.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReference) / TsTypeUnion() / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof LayoutData.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReference) / TsTypeUnion() / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof LayoutData.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReferenceValue) / TsTypeUnion() / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof LayoutData.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReferenceValue) / TsTypeUnion() / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof Constraint.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclClass(LayoutData) / TsMemberProperty(next) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof Constraint.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclClass(LayoutData) / TsMemberProperty(prev) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(ImageData)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(ImageDataConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Storage)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(StorageConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WebSocket)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(WebSocketConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(XMLHttpRequest)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(XMLHttpRequestConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Crypto)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(CryptoConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Worker)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(workerConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Request)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(RequestConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Response)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(ResponseConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Headers)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(HeadersConstructor) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(fetch)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(fetchFunction) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple($)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar($Function) / TsTypeQuery())] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof LayoutData.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReference) / TsTypeUnion() / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof LayoutData.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReference) / TsTypeUnion() / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof LayoutData.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReferenceValue) / TsTypeUnion() / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof LayoutData.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(SiblingReferenceValue) / TsTypeUnion() / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof Constraint.next [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclClass(LayoutData) / TsMemberProperty(next) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof Constraint.prev [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsExport() / TsExporteeTree() / TsDeclClass(LayoutData) / TsMemberProperty(prev) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(ImageData)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(ImageDataConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Storage)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(StorageConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WebSocket)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(WebSocketConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(XMLHttpRequest)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(XMLHttpRequestConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Crypto)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(CryptoConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Worker)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(workerConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Request)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(RequestConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Response)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(ResponseConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Headers)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(HeadersConstructor) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(fetch)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar(fetchFunction) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple($)))) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclVar($Function) / TsTypeQuery())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ReadOnly) / TsTypeParam() / TsTypeKeyOf())] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(EventListener))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(MessagePort))] 
@@ -29,7 +29,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 8 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequest))] 
 [info ] ExpandTypeParams.scala:61 Expanding 7 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequestUpload))] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Set) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(Properties) / TsTypeParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cid) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(Properties) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_LayoutData) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(JSXShorthands) / TsTypeConditional() / TsTypeExtends() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Center) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(JSXShorthands) / TsTypeConditional() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_JsxAttributes) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(JSXAttributes) / TsTypeParam() / TsTypeObject())] 
@@ -44,35 +43,25 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cancel) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheet) / TsMemberProperty(actions) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cancel) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheet) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject() / TsMemberProperty(children) / TsTypeRef() / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenAnonCancel) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheet) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActivityIndicator) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_CancelNeutral) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(AlertDialog) / TsMemberProperty(buttons) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenFlatten) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(AlertDialog) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Button) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(CheckBox) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(CollectionView) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Layout) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Composite) / TsMemberFunction(_initLayout) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenChildType) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Composite) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ImageView) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(NavigationBar) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Args) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(NavigationView) / TsMemberFunction(pages) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Picker) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenJSXChildrenWidget) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Popover) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ContentType) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Printer) / TsMemberFunction(print) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ProgressBar) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(RadioButton) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Animate) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ScrollView) / TsMemberFunction(scrollToX) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Animate) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ScrollView) / TsMemberFunction(scrollToY) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Slider) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Alignment) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(StackLayout) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_X) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(StatusBarTapEvent) / TsMemberProperty(touches) / TsTypeRef() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(StatusBar) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Switch) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Headless) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Tabris) / TsMemberFunction(_init) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(TextInput) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArrayString) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(TextView) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ToggleButton) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Video) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WebView) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_X) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(WidgetLongPressEvent) / TsMemberProperty(touches) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_X) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(WidgetPanEvent) / TsMemberProperty(touches) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_X) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(WidgetSwipeEvent) / TsMemberProperty(touches) / TsTypeRef() / TsTypeObject())] 
@@ -83,7 +72,6 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ArgsAny) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberFunction(last) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenJSXChildrenT) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberProperty(jsxAttributes) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ArgsAny_301089180) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclTypeAlias(JsxFactory) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenNever) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicElements) / TsMemberProperty(br) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArrayString) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicElements) / TsMemberProperty(b) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArrayString) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicElements) / TsMemberProperty(span) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArrayString) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicElements) / TsMemberProperty(big) / TsTypeObject())] 
@@ -96,327 +84,328 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenJSXChildren) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclFunction($) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArray) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclFunction($) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing tabris [id => tabris, phase => scala.js] 
-[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(ElementClass) / TsMemberIndex())] 
+[warn ] Phase2ToScalaJs.scala:43 Processing tabris [id => tabris, phase => scala.js] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(ElementClass) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(MethodKeysOf) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: Target['selection'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(TabFolderSelectEvent) / TsMemberProperty(selection) / TsTypeUnion() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: T[K] extends tabris.tabris.Listeners<any>? K : never}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(ListenersKeysOf) / TsTypeLookup())] 
-[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheetItem) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheetItem) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: Target['selection'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(TabFolderScrollEvent) / TsMemberProperty(selection) / TsTypeUnion() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: T['jsxAttributes'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(Attributes) / TsTypeLookup())] 
-[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberIndex())] 
-[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Popup) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Popup) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: Target[Property] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ChangeListeners) / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ P in keyof T ]: tabris.tabris.IfEquals<{[ Q in P ]: T[P]}, {  readonly , [ Q in P ]: T[P]}, never, P>}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(ReadOnlyKeysOf) / TsTypeLookup())] 
-[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Widget) / TsMemberIndex())] 
-[info ] InferMemberOverrides.scala:83 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(XMLHttpRequestUpload)] 
-[info ] InferMemberOverrides.scala:83 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(XMLHttpRequest)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(wasClean, code, reason, initCloseEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(CloseEventCls)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(lineno, error, filename, message, colno, initErrorEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(ErrorEventCls)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(EventCls)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(data, source, ports, origin, initMessageEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(MessageEventCls)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(total, loaded, lengthComputable, initProgressEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(ProgressEventCls)] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Widget) / TsMemberIndex())] 
+[info ] InferMemberOverrides.scala:83 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(XMLHttpRequestUpload)] 
+[info ] InferMemberOverrides.scala:83 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(XMLHttpRequest)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(wasClean, code, reason, initCloseEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(CloseEventCls)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(lineno, error, filename, message, colno, initErrorEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(ErrorEventCls)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(EventCls)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(data, source, ports, origin, initMessageEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(MessageEventCls)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(total, loaded, lengthComputable, initProgressEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(ProgressEventCls)] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => scala.js] 
-[warn ] Phase3Compile.scala:204 Building tabris... [id => tabris, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E65] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:56:8
+[warn ] Phase3Compile.scala:208 Building tabris... [id => tabris, phase => build] 
+[error] Phase3Compile.scala:234 [E] [E75] src/main/scala/typings/tabris/tabrisMod/package.scala:59:8
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L56:   type JSXAttributes[T /* <: tabrisLib.Anon_JsxAttributes */, U] = (Properties[U, tabrisLib.Omit[U, tabrisLib.tabrisLibStrings.set]]) with ListenersMap[U] with JSXShorthands[U]
+[E]       L59:   type JSXAttributes[T /* <: Anon_JsxAttributes */, U] = (Properties[U, Omit[U, set]]) with ListenersMap[U] with JSXShorthands[U]
 [E]                   ^
-[E] [E64] src/main/scala/typings/tabrisLib/tabrisMod/WidgetCollection.scala:168:15
+[E] [E65] src/main/scala/typings/tabris/tabrisMod/WidgetCollection.scala:161:15
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L168:   def set_set(properties: Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]): this.type = js.native
+[E]       L161:   def set_set(properties: Properties[T, Omit[T, set]]): this.type = js.native
 [E]                           ^
-[E] [E63] src/main/scala/typings/tabrisLib/tabrisMod/WidgetCollection.scala:24:7
+[E] [E64] src/main/scala/typings/tabris/tabrisMod/WidgetCollection.scala:28:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L24:   val jsxAttributes: (JSXAttributes[
+[E]       L28:   val jsxAttributes: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenJSXChildrenT[T] = js.native
 [E]              ^^^^
-[E] [E62] src/main/scala/typings/tabrisLib/tabrisMod/Widget.scala:11:22
+[E] [E63] src/main/scala/typings/tabris/tabrisMod/Widget.scala:38:22
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   protected def this(properties: Properties[Widget, tabrisLib.Omit[Widget, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L38:   protected def this(properties: Properties[Widget, Omit[Widget, set]]) = this()
 [E]                                 ^
-[E] [E61] src/main/scala/typings/tabrisLib/tabrisMod/WebView.scala:35:7
+[E] [E62] src/main/scala/typings/tabris/tabrisMod/WebView.scala:38:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L35:   val jsxAttributes_WebView: (JSXAttributes[
+[E]       L38:   val jsxAttributes_WebView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E60] src/main/scala/typings/tabrisLib/tabrisMod/WebView.scala:11:12
+[E] [E61] src/main/scala/typings/tabris/tabrisMod/WebView.scala:14:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[WebView, tabrisLib.Omit[WebView, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L14:   def this(properties: Properties[WebView, Omit[WebView, set]]) = this()
 [E]                       ^
-[E] [E59] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala:28:7
+[E] [E60] src/main/scala/typings/tabris/tabrisMod/Video.scala:40:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L28:   val jsxAttributes_Video: (JSXAttributes[
+[E]       L40:   val jsxAttributes_Video: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E58] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala:11:12
+[E] [E59] src/main/scala/typings/tabris/tabrisMod/Video.scala:23:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Video, tabrisLib.Omit[Video, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L23:   def this(properties: Properties[Video, Omit[Video, set]]) = this()
 [E]                       ^
-[E] [E57] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala:32:7
+[E] [E58] src/main/scala/typings/tabris/tabrisMod/ToggleButton.scala:43:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L32:   val jsxAttributes_ToggleButton: (JSXAttributes[
+[E]       L43:   val jsxAttributes_ToggleButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]              ^^^^
-[E] [E56] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala:11:12
+[E] [E57] src/main/scala/typings/tabris/tabrisMod/ToggleButton.scala:22:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[ToggleButton, tabrisLib.Omit[ToggleButton, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L22:   def this(properties: Properties[ToggleButton, Omit[ToggleButton, set]]) = this()
 [E]                       ^
-[E] [E55] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala:11:12
+[E] [E56] src/main/scala/typings/tabris/tabrisMod/TimeDialog.scala:14:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[TimeDialog, tabrisLib.Omit[TimeDialog, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L14:   def this(properties: Properties[TimeDialog, Omit[TimeDialog, set]]) = this()
 [E]                       ^
-[E] [E54] src/main/scala/typings/tabrisLib/tabrisMod/TextView.scala:24:7
+[E] [E55] src/main/scala/typings/tabris/tabrisMod/TextView.scala:37:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L24:   val jsxAttributes_TextView: (JSXAttributes[
+[E]       L37:   val jsxAttributes_TextView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenArrayString = js.native
 [E]              ^^^^
-[E] [E53] src/main/scala/typings/tabrisLib/tabrisMod/TextView.scala:11:12
+[E] [E54] src/main/scala/typings/tabris/tabrisMod/TextView.scala:24:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[TextView, tabrisLib.Omit[TextView, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L24:   def this(properties: Properties[TextView, Omit[TextView, set]]) = this()
 [E]                       ^
-[E] [E52] src/main/scala/typings/tabrisLib/tabrisMod/TextInput.scala:67:7
+[E] [E53] src/main/scala/typings/tabris/tabrisMod/TextInput.scala:113:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L67:   val jsxAttributes_TextInput: (JSXAttributes[
+[E]       L113:   val jsxAttributes_TextInput: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
+[E]               ^^^^
+[E] [E52] src/main/scala/typings/tabris/tabrisMod/TextInput.scala:57:12
+[E]       cyclic aliasing or subtyping involving type Omit
+[E]       L57:   def this(properties: Properties[TextInput, Omit[TextInput, set]]) = this()
+[E]                       ^
+[E] [E51] src/main/scala/typings/tabris/tabrisMod/TabFolder.scala:26:12
+[E]       cyclic aliasing or subtyping involving type Omit
+[E]       L26:   def this(properties: Properties[TabFolder[Tab], Omit[TabFolder[Tab], set]]) = this()
+[E]                       ^
+[E] [E50] src/main/scala/typings/tabris/tabrisMod/Tab.scala:17:12
+[E]       cyclic aliasing or subtyping involving type Omit
+[E]       L17:   def this(properties: Properties[Tab, Omit[Tab, set]]) = this()
+[E]                       ^
+[E] [E49] src/main/scala/typings/tabris/tabrisMod/Switch.scala:27:7
+[E]       cyclic aliasing or subtyping involving type Omit
+[E]       L27:   val jsxAttributes_Switch: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]              ^^^^
-[E] [E51] src/main/scala/typings/tabrisLib/tabrisMod/TextInput.scala:11:12
+[E] [E48] src/main/scala/typings/tabris/tabrisMod/Switch.scala:18:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[TextInput, tabrisLib.Omit[TextInput, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L18:   def this(properties: Properties[Switch, Omit[Switch, set]]) = this()
 [E]                       ^
-[E] [E50] src/main/scala/typings/tabrisLib/tabrisMod/TabFolder.scala:11:12
+[E] [E47] src/main/scala/typings/tabris/tabrisMod/StatusBar.scala:42:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[TabFolder[Tab], tabrisLib.Omit[TabFolder[Tab], tabrisLib.tabrisLibStrings.set]]) = this()
-[E]                       ^
-[E] [E49] src/main/scala/typings/tabrisLib/tabrisMod/Tab.scala:11:12
-[E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Tab, tabrisLib.Omit[Tab, tabrisLib.tabrisLibStrings.set]]) = this()
-[E]                       ^
-[E] [E48] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala:20:7
-[E]       cyclic aliasing or subtyping involving type Omit
-[E]       L20:   val jsxAttributes_Switch: (JSXAttributes[
+[E]       L42:   val jsxAttributes_StatusBar: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E47] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala:11:12
+[E] [E46] src/main/scala/typings/tabris/tabrisMod/StatusBar.scala:20:22
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Switch, tabrisLib.Omit[Switch, tabrisLib.tabrisLibStrings.set]]) = this()
-[E]                       ^
-[E] [E46] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:33:7
-[E]       cyclic aliasing or subtyping involving type Omit
-[E]       L33:   val jsxAttributes_StatusBar: (JSXAttributes[
-[E]              ^^^^
-[E] [E45] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:11:22
-[E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   protected def this(properties: Properties[StatusBar, tabrisLib.Omit[StatusBar, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L20:   protected def this(properties: Properties[StatusBar, Omit[StatusBar, set]]) = this()
 [E]                                 ^
-[E] [E44] src/main/scala/typings/tabrisLib/tabrisMod/Stack.scala:11:12
+[E] [E45] src/main/scala/typings/tabris/tabrisMod/Stack.scala:16:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Stack, tabrisLib.Omit[Stack, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L16:   def this(properties: Properties[Stack, Omit[Stack, set]]) = this()
 [E]                       ^
-[E] [E43] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:16:7
+[E] [E44] src/main/scala/typings/tabris/tabrisMod/Slider.scala:21:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L16:   val jsxAttributes_Slider: (JSXAttributes[
+[E]       L21:   val jsxAttributes_Slider: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E42] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:11:12
+[E] [E43] src/main/scala/typings/tabris/tabrisMod/Slider.scala:16:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Slider, tabrisLib.Omit[Slider, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L16:   def this(properties: Properties[Slider, Omit[Slider, set]]) = this()
 [E]                       ^
-[E] [E41] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:11:12
+[E] [E42] src/main/scala/typings/tabris/tabrisMod/SearchAction.scala:15:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[SearchAction, tabrisLib.Omit[SearchAction, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L15:   def this(properties: Properties[SearchAction, Omit[SearchAction, set]]) = this()
 [E]                       ^
-[E] [E40] src/main/scala/typings/tabrisLib/tabrisMod/ScrollView.scala:11:12
+[E] [E41] src/main/scala/typings/tabris/tabrisMod/ScrollView.scala:19:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[ScrollView, tabrisLib.Omit[ScrollView, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L19:   def this(properties: Properties[ScrollView, Omit[ScrollView, set]]) = this()
 [E]                       ^
-[E] [E39] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:11:12
+[E] [E40] src/main/scala/typings/tabris/tabrisMod/RefreshComposite.scala:15:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[RefreshComposite, tabrisLib.Omit[RefreshComposite, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L15:   def this(properties: Properties[RefreshComposite, Omit[RefreshComposite, set]]) = this()
 [E]                       ^
-[E] [E38] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala:28:7
+[E] [E39] src/main/scala/typings/tabris/tabrisMod/RadioButton.scala:36:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L28:   val jsxAttributes_RadioButton: (JSXAttributes[
+[E]       L36:   val jsxAttributes_RadioButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]              ^^^^
-[E] [E37] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala:11:12
+[E] [E38] src/main/scala/typings/tabris/tabrisMod/RadioButton.scala:19:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[RadioButton, tabrisLib.Omit[RadioButton, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L19:   def this(properties: Properties[RadioButton, Omit[RadioButton, set]]) = this()
 [E]                       ^
-[E] [E36] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:16:7
+[E] [E37] src/main/scala/typings/tabris/tabrisMod/ProgressBar.scala:25:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L16:   val jsxAttributes_ProgressBar: (JSXAttributes[
+[E]       L25:   val jsxAttributes_ProgressBar: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E35] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:11:12
+[E] [E36] src/main/scala/typings/tabris/tabrisMod/ProgressBar.scala:20:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[ProgressBar, tabrisLib.Omit[ProgressBar, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L20:   def this(properties: Properties[ProgressBar, Omit[ProgressBar, set]]) = this()
 [E]                       ^
-[E] [E34] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:31:7
+[E] [E35] src/main/scala/typings/tabris/tabrisMod/Popover.scala:36:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L31:   val jsxAttributes_Popover: (JSXAttributes[
+[E]       L36:   val jsxAttributes_Popover: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenJSXChildrenWidget = js.native
 [E]              ^^^^
-[E] [E33] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:11:12
+[E] [E34] src/main/scala/typings/tabris/tabrisMod/Popover.scala:16:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Popover, tabrisLib.Omit[Popover, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L16:   def this(properties: Properties[Popover, Omit[Popover, set]]) = this()
 [E]                       ^
-[E] [E32] src/main/scala/typings/tabrisLib/tabrisMod/Picker.scala:107:5
+[E] [E33] src/main/scala/typings/tabris/tabrisMod/Picker.scala:117:5
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L107:     properties: (Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[stdLib.Pick[this.type, tabrisLib.tabrisLibStrings.itemText]])
+[E]       L117:     properties: (Properties[T, Omit[T, typings.tabris.tabrisStrings.set]]) with (Partial[Pick[this.type, itemText]])
 [E]                 ^
-[E] [E31] src/main/scala/typings/tabrisLib/tabrisMod/Picker.scala:33:7
+[E] [E32] src/main/scala/typings/tabris/tabrisMod/Picker.scala:49:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L33:   val jsxAttributes_Picker: (JSXAttributes[
+[E]       L49:   val jsxAttributes_Picker: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object with (Partial[Pick[Picker, itemText]]) = js.native
 [E]              ^^^^
-[E] [E30] src/main/scala/typings/tabrisLib/tabrisMod/Picker.scala:11:12
+[E] [E31] src/main/scala/typings/tabris/tabrisMod/Picker.scala:27:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: (Properties[Picker, tabrisLib.Omit[Picker, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[stdLib.Pick[Picker, tabrisLib.tabrisLibStrings.itemText]])) = this()
+[E]       L27:   def this(properties: (Properties[Picker, Omit[Picker, set]]) with (Partial[Pick[Picker, itemText]])) = this()
 [E]                       ^
-[E] [E29] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:11:12
+[E] [E30] src/main/scala/typings/tabris/tabrisMod/Page.scala:15:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Page, tabrisLib.Omit[Page, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L15:   def this(properties: Properties[Page, Omit[Page, set]]) = this()
 [E]                       ^
-[E] [E28] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:11:12
+[E] [E29] src/main/scala/typings/tabris/tabrisMod/NavigationView.scala:23:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[
+[E]       L23:   def this(properties: Properties[NavigationView[Page, Action], Omit[NavigationView[Page, Action], set]]) = this()
 [E]                       ^
-[E] [E27] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:32:7
+[E] [E28] src/main/scala/typings/tabris/tabrisMod/NavigationBar.scala:41:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L32:   val jsxAttributes_NavigationBar: (JSXAttributes[
+[E]       L41:   val jsxAttributes_NavigationBar: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E26] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:11:22
+[E] [E27] src/main/scala/typings/tabris/tabrisMod/NavigationBar.scala:20:22
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   protected def this(properties: Properties[NavigationBar, tabrisLib.Omit[NavigationBar, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L20:   protected def this(properties: Properties[NavigationBar, Omit[NavigationBar, set]]) = this()
 [E]                                 ^
-[E] [E25] src/main/scala/typings/tabrisLib/tabrisMod/NativeObject.scala:269:40
+[E] [E26] src/main/scala/typings/tabris/tabrisMod/NativeObject.scala:260:40
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L269:   def set_set[T /* <: NativeObject */](properties: Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]): this.type = js.native
+[E]       L260:   def set_set[T /* <: NativeObject */](properties: Properties[T, Omit[T, set]]): this.type = js.native
 [E]                                                    ^
-[E] [E24] src/main/scala/typings/tabrisLib/tabrisMod/NativeObject.scala:27:7
+[E] [E25] src/main/scala/typings/tabris/tabrisMod/NativeObject.scala:30:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L27:   val jsxAttributes: JSXAttributes[
+[E]       L30:   val jsxAttributes: JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]] = js.native
 [E]              ^^^^
-[E] [E23] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:11:12
+[E] [E24] src/main/scala/typings/tabris/tabrisMod/InactivityTimer.scala:13:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[InactivityTimer, tabrisLib.Omit[InactivityTimer, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L13:   def this(properties: Properties[InactivityTimer, Omit[InactivityTimer, set]]) = this()
 [E]                       ^
-[E] [E22] src/main/scala/typings/tabrisLib/tabrisMod/ImageView.scala:22:7
+[E] [E23] src/main/scala/typings/tabris/tabrisMod/ImageView.scala:35:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L22:   val jsxAttributes_ImageView: (JSXAttributes[
+[E]       L35:   val jsxAttributes_ImageView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E21] src/main/scala/typings/tabrisLib/tabrisMod/ImageView.scala:11:12
+[E] [E22] src/main/scala/typings/tabris/tabrisMod/ImageView.scala:24:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[ImageView, tabrisLib.Omit[ImageView, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L24:   def this(properties: Properties[ImageView, Omit[ImageView, set]]) = this()
 [E]                       ^
-[E] [E20] src/main/scala/typings/tabrisLib/tabrisMod/DateDialog.scala:11:12
+[E] [E21] src/main/scala/typings/tabris/tabrisMod/DateDialog.scala:16:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[DateDialog, tabrisLib.Omit[DateDialog, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L16:   def this(properties: Properties[DateDialog, Omit[DateDialog, set]]) = this()
 [E]                       ^
-[E] [E19] src/main/scala/typings/tabrisLib/tabrisMod/ContentView.scala:11:22
+[E] [E20] src/main/scala/typings/tabris/tabrisMod/ContentView.scala:12:22
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   protected def this(properties: Properties[
+[E]       L12:   protected def this(properties: Properties[ContentView[Widget], Omit[ContentView[Widget], set]]) = this()
 [E]                                 ^
-[E] [E18] src/main/scala/typings/tabrisLib/tabrisMod/Composite.scala:22:7
+[E] [E19] src/main/scala/typings/tabris/tabrisMod/Composite.scala:23:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L22:   val jsxAttributes_Composite: (JSXAttributes[
+[E]       L23:   val jsxAttributes_Composite: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenChildType[ChildType] = js.native
 [E]              ^^^^
-[E] [E17] src/main/scala/typings/tabrisLib/tabrisMod/Composite.scala:11:12
+[E] [E18] src/main/scala/typings/tabris/tabrisMod/Composite.scala:15:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[
+[E]       L15:   def this(properties: Properties[Composite[Widget], Omit[Composite[Widget], set]]) = this()
 [E]                       ^
-[E] [E16] src/main/scala/typings/tabrisLib/tabrisMod/CollectionView.scala:201:5
+[E] [E17] src/main/scala/typings/tabris/tabrisMod/CollectionView.scala:191:5
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L201:     properties: (Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[
+[E]       L191:     properties: (Properties[T, Omit[T, typings.tabris.tabrisStrings.set]]) with (Partial[Pick[this.type, cellHeight | cellType | createCell]])
 [E]                 ^
-[E] [E15] src/main/scala/typings/tabrisLib/tabrisMod/CollectionView.scala:59:7
+[E] [E16] src/main/scala/typings/tabris/tabrisMod/CollectionView.scala:60:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L59:   val jsxAttributes_CollectionView: (JSXAttributes[
+[E]       L60:   val jsxAttributes_CollectionView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with (Partial[Pick[CollectionView[Cell], cellHeight | cellType | createCell | updateCell]]) with js.Object = js.native
 [E]              ^^^^
-[E] [E14] src/main/scala/typings/tabrisLib/tabrisMod/CollectionView.scala:11:12
+[E] [E15] src/main/scala/typings/tabris/tabrisMod/CollectionView.scala:24:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: (Properties[
+[E]       L24:   def this(properties: (Properties[CollectionView[Cell], Omit[CollectionView[Cell], set]]) with (Partial[Pick[CollectionView[Cell], cellHeight | cellType | createCell | updateCell]])) = this()
 [E]                       ^
-[E] [E13] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala:28:7
+[E] [E14] src/main/scala/typings/tabris/tabrisMod/CheckBox.scala:36:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L28:   val jsxAttributes_CheckBox: (JSXAttributes[
+[E]       L36:   val jsxAttributes_CheckBox: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]              ^^^^
-[E] [E12] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala:11:12
+[E] [E13] src/main/scala/typings/tabris/tabrisMod/CheckBox.scala:19:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[CheckBox, tabrisLib.Omit[CheckBox, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L19:   def this(properties: Properties[CheckBox, Omit[CheckBox, set]]) = this()
 [E]                       ^
-[E] [E11] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala:11:12
+[E] [E12] src/main/scala/typings/tabris/tabrisMod/Canvas.scala:12:12
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L11:   def this(properties: Properties[Canvas, tabrisLib.Omit[Canvas, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]       L12:   def this(properties: Properties[Canvas, Omit[Canvas, set]]) = this()
 [E]                       ^
-[E] [E10] src/main/scala/typings/tabrisLib/tabrisMod/Button.scala:28:7
+[E] [E11] src/main/scala/typings/tabris/tabrisMod/Button.scala:44:7
 [E]       cyclic aliasing or subtyping involving type Omit
-[E]       L28:   val jsxAttributes_Button: (JSXAttributes[
+[E]       L44:   val jsxAttributes_Button: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]              ^^^^
-[E] [E9] src/main/scala/typings/tabrisLib/tabrisMod/Button.scala:11:12
+[E] [E10] src/main/scala/typings/tabris/tabrisMod/Button.scala:27:12
+[E]       cyclic aliasing or subtyping involving type Omit
+[E]       L27:   def this(properties: Properties[Button, Omit[Button, set]]) = this()
+[E]                       ^
+[E] [E9] src/main/scala/typings/tabris/tabrisMod/AlertDialog.scala:28:7
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L11:   def this(properties: Properties[Button, tabrisLib.Omit[Button, tabrisLib.tabrisLibStrings.set]]) = this()
-[E]                      ^
-[E] [E8] src/main/scala/typings/tabrisLib/tabrisMod/AlertDialog.scala:22:7
-[E]      cyclic aliasing or subtyping involving type Omit
-[E]      L22:   val jsxAttributes_AlertDialog: (JSXAttributes[
+[E]      L28:   val jsxAttributes_AlertDialog: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenFlatten = js.native
 [E]             ^^^^
-[E] [E7] src/main/scala/typings/tabrisLib/tabrisMod/AlertDialog.scala:11:12
+[E] [E8] src/main/scala/typings/tabris/tabrisMod/AlertDialog.scala:17:12
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L11:   def this(properties: Properties[AlertDialog, tabrisLib.Omit[AlertDialog, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]      L17:   def this(properties: Properties[AlertDialog, Omit[AlertDialog, set]]) = this()
 [E]                      ^
-[E] [E6] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:19:7
+[E] [E7] src/main/scala/typings/tabris/tabrisMod/ActivityIndicator.scala:18:7
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L19:   val jsxAttributes_ActivityIndicator: (JSXAttributes[
+[E]      L18:   val jsxAttributes_ActivityIndicator: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with js.Object = js.native
 [E]             ^^^^
-[E] [E5] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:11:12
+[E] [E6] src/main/scala/typings/tabris/tabrisMod/ActivityIndicator.scala:13:12
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L11:   def this(properties: Properties[
+[E]      L13:   def this(properties: Properties[ActivityIndicator, Omit[ActivityIndicator, set]]) = this()
 [E]                      ^
-[E] [E4] src/main/scala/typings/tabrisLib/tabrisMod/ActionSheet.scala:27:7
+[E] [E5] src/main/scala/typings/tabris/tabrisMod/ActionSheet.scala:33:7
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L27:   val jsxAttributes_ActionSheet: (JSXAttributes[
+[E]      L33:   val jsxAttributes_ActionSheet: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_ChildrenAnonCancel = js.native
 [E]             ^^^^
-[E] [E3] src/main/scala/typings/tabrisLib/tabrisMod/ActionSheet.scala:11:12
+[E] [E4] src/main/scala/typings/tabris/tabrisMod/ActionSheet.scala:17:12
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L11:   def this(properties: Properties[ActionSheet, tabrisLib.Omit[ActionSheet, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]      L17:   def this(properties: Properties[ActionSheet, Omit[ActionSheet, set]]) = this()
 [E]                      ^
-[E] [E2] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala:23:7
+[E] [E3] src/main/scala/typings/tabris/tabrisMod/Action.scala:31:7
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L23:   val jsxAttributes_Action: (JSXAttributes[
+[E]      L31:   val jsxAttributes_Action: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) with Anon_Children = js.native
 [E]             ^^^^
-[E] [E1] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala:11:12
+[E] [E2] src/main/scala/typings/tabris/tabrisMod/Action.scala:19:12
 [E]      cyclic aliasing or subtyping involving type Omit
-[E]      L11:   def this(properties: Properties[Action, tabrisLib.Omit[Action, tabrisLib.tabrisLibStrings.set]]) = this()
+[E]      L19:   def this(properties: Properties[Action, Omit[Action, set]]) = this()
 [E]                      ^
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ImageView.scala: L11 [E21], L22 [E22]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/CollectionView.scala: L11 [E14], L59 [E15], L201 [E16]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala: L11 [E28]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ActionSheet.scala: L11 [E3], L27 [E4]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala: L11 [E5], L19 [E6]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala: L11 [E33], L31 [E34]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Stack.scala: L11 [E44]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/WidgetCollection.scala: L24 [E63], L168 [E64]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Button.scala: L11 [E9], L28 [E10]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala: L11 [E58], L28 [E59]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala: L11 [E1], L23 [E2]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Composite.scala: L11 [E17], L22 [E18]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Picker.scala: L11 [E30], L33 [E31], L107 [E32]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala: L11 [E42], L16 [E43]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/WebView.scala: L11 [E60], L35 [E61]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala: L11 [E45], L33 [E46]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala: L11 [E56], L32 [E57]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/TextView.scala: L11 [E53], L24 [E54]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala: L11 [E35], L16 [E36]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/NativeObject.scala: L27 [E24], L269 [E25]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala: L11 [E12], L28 [E13]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ScrollView.scala: L11 [E40]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala: L11 [E11]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala: L11 [E55]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/package.scala: L56 [E65]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/DateDialog.scala: L11 [E20]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala: L11 [E29]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/ContentView.scala: L11 [E19]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala: L11 [E23]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala: L11 [E26], L32 [E27]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Tab.scala: L11 [E49]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/TabFolder.scala: L11 [E50]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala: L11 [E47], L20 [E48]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala: L11 [E41]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/TextInput.scala: L11 [E51], L67 [E52]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala: L11 [E39]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala: L11 [E37], L28 [E38]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/AlertDialog.scala: L11 [E7], L22 [E8]
-[E] src/main/scala/typings/tabrisLib/tabrisMod/Widget.scala: L11 [E62]
+[E] src/main/scala/typings/tabris/tabrisMod/StatusBar.scala: L20 [E46], L42 [E47]
+[E] src/main/scala/typings/tabris/tabrisMod/Popover.scala: L16 [E34], L36 [E35]
+[E] src/main/scala/typings/tabris/tabrisMod/ToggleButton.scala: L22 [E57], L43 [E58]
+[E] src/main/scala/typings/tabris/JSXNs/package.scala: L3 [E1]
+[E] src/main/scala/typings/tabris/tabrisMod/TimeDialog.scala: L14 [E56]
+[E] src/main/scala/typings/tabris/tabrisMod/Page.scala: L15 [E30]
+[E] src/main/scala/typings/tabris/tabrisMod/NativeObject.scala: L30 [E25], L260 [E26]
+[E] src/main/scala/typings/tabris/tabrisMod/Widget.scala: L38 [E63]
+[E] src/main/scala/typings/tabris/tabrisMod/Tab.scala: L17 [E50]
+[E] src/main/scala/typings/tabris/tabrisMod/CheckBox.scala: L19 [E13], L36 [E14]
+[E] src/main/scala/typings/tabris/tabrisMod/AlertDialog.scala: L17 [E8], L28 [E9]
+[E] src/main/scala/typings/tabris/tabrisMod/ImageView.scala: L24 [E22], L35 [E23]
+[E] src/main/scala/typings/tabris/tabrisMod/NavigationView.scala: L23 [E29]
+[E] src/main/scala/typings/tabris/tabrisMod/RadioButton.scala: L19 [E38], L36 [E39]
+[E] src/main/scala/typings/tabris/tabrisMod/ActionSheet.scala: L17 [E4], L33 [E5]
+[E] src/main/scala/typings/tabris/tabrisMod/TextView.scala: L24 [E54], L37 [E55]
+[E] src/main/scala/typings/tabris/tabrisMod/TextInput.scala: L57 [E52], L113 [E53]
+[E] src/main/scala/typings/tabris/tabrisMod/Canvas.scala: L12 [E12]
+[E] src/main/scala/typings/tabris/tabrisMod/Video.scala: L23 [E59], L40 [E60]
+[E] src/main/scala/typings/tabris/tabrisMod/Composite.scala: L15 [E18], L23 [E19]
+[E] src/main/scala/typings/tabris/tabrisMod/InactivityTimer.scala: L13 [E24]
+[E] src/main/scala/typings/tabris/tabrisMod/ScrollView.scala: L19 [E41]
+[E] src/main/scala/typings/tabris/tabrisMod/Stack.scala: L16 [E45]
+[E] src/main/scala/typings/tabris/tabrisMod/WidgetCollection.scala: L28 [E64], L161 [E65]
+[E] src/main/scala/typings/tabris/tabrisMod/Action.scala: L19 [E2], L31 [E3]
+[E] src/main/scala/typings/tabris/tabrisMod/Picker.scala: L27 [E31], L49 [E32], L117 [E33]
+[E] src/main/scala/typings/tabris/tabrisMod/TabFolder.scala: L26 [E51]
+[E] src/main/scala/typings/tabris/tabrisMod/NavigationBar.scala: L20 [E27], L41 [E28]
+[E] src/main/scala/typings/tabris/tabrisMod/ContentView.scala: L12 [E20]
+[E] src/main/scala/typings/tabris/tabrisMod/CollectionView.scala: L24 [E15], L60 [E16], L191 [E17]
+[E] src/main/scala/typings/tabris/tabrisMod/RefreshComposite.scala: L15 [E40]
+[E] src/main/scala/typings/tabris/tabrisMod/ProgressBar.scala: L20 [E36], L25 [E37]
+[E] src/main/scala/typings/tabris/tabrisMod/DateDialog.scala: L16 [E21]
+[E] src/main/scala/typings/tabris/tabrisMod/Button.scala: L27 [E10], L44 [E11]
+[E] src/main/scala/typings/tabris/tabrisMod/package.scala: L4 [E66], L4 [E67], L5 [E68], L5 [E69], L6 [E70], L6 [E71], L7 [E72], L7 [E73], L8 [E74], L59 [E75]
+[E] src/main/scala/typings/tabris/tabrisMod/ActivityIndicator.scala: L13 [E6], L18 [E7]
+[E] src/main/scala/typings/tabris/tabrisMod/WebView.scala: L14 [E61], L38 [E62]
+[E] src/main/scala/typings/tabris/tabrisMod/Switch.scala: L18 [E48], L27 [E49]
+[E] src/main/scala/typings/tabris/tabrisMod/SearchAction.scala: L15 [E42]
+[E] src/main/scala/typings/tabris/tabrisMod/Slider.scala: L16 [E43], L21 [E44]
 [E] Failed to compile 'tabris'
  [id => tabris, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris, phase => build] 

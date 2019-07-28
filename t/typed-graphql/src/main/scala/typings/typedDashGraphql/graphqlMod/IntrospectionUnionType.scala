@@ -1,0 +1,28 @@
+package typings.typedDashGraphql.graphqlMod
+
+import typings.typedDashGraphql.typedDashGraphqlStrings.UNION
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IntrospectionUnionType extends IntrospectionType {
+  var description: js.UndefOr[String] = js.undefined
+  var kind: UNION
+  var name: String
+  var possibleTypes: js.Array[IntrospectionNamedTypeRef]
+}
+
+object IntrospectionUnionType {
+  @scala.inline
+  def apply(
+    kind: UNION,
+    name: String,
+    possibleTypes: js.Array[IntrospectionNamedTypeRef],
+    description: String = null
+  ): IntrospectionUnionType = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, possibleTypes = possibleTypes)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionUnionType]
+  }
+}
+

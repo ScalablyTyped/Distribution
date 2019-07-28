@@ -1,0 +1,21 @@
+package typings.reactDashWeui.reactDashWeuiMod
+
+import typings.reactDashWeui.Anon_Direction
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-weui", "ButtonArea")
+@js.native
+class ButtonArea protected () extends js.Object {
+  def this(args: js.Any*) = this()
+  def render(): js.Any = js.native
+}
+
+/* static members */
+@JSImport("react-weui", "ButtonArea")
+@js.native
+object ButtonArea extends js.Object {
+  var defaultProps: Anon_Direction = js.native
+}
+

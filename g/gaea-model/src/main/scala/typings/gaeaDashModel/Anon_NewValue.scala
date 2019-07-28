@@ -1,0 +1,21 @@
+package typings.gaeaDashModel
+
+import typings.gaeaDashModel.FitGaeaNs.ComponentProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_NewValue extends js.Object {
+  var newValue: ComponentProps
+  var oldValue: ComponentProps
+}
+
+object Anon_NewValue {
+  @scala.inline
+  def apply(newValue: ComponentProps, oldValue: ComponentProps): Anon_NewValue = {
+    val __obj = js.Dynamic.literal(newValue = newValue, oldValue = oldValue)
+  
+    __obj.asInstanceOf[Anon_NewValue]
+  }
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ink-table 1.0
-// Project: https://github.com/maticzav/ink-table#readme
-// Definitions by: Łukasz Ostrowski <https://github.com/lukostry>
-// Definitions: https://github.com/DefinitelyTyped/
-// TypeScript Version: 2.8
-
-```
 

@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Create an array without duplicates.
-
-@param array - The array to remove duplicates from.
-
-@example
-```
-import arrayUniq = require('array-uniq');
-
-arrayUniq([1, 1, 2, 3, 3]);
-//=> [1, 2, 3]
-
-arrayUniq(['foo', 'foo', 'bar', 'foo']);
-//=> ['foo', 'bar']
-```
-*/
-
-```
 

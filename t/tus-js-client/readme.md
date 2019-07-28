@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tus-js-client 1.5
-// Project: https://github.com/tus/tus-js-client/
-// Definitions by: Kevin Somers-Higgins <https://github.com/kevhiggins>
-//                 Marius Kleidl <https://github.com/Acconut>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

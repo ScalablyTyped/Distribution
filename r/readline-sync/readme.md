@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for readline-sync 1.4
-// Project: https://github.com/anseki/readline-sync
-// Definitions by: Tristan Jones <https://github.com/jonestristand>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

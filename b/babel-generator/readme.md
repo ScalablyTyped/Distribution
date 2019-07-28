@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for babel-generator 6.25
-// Project: https://github.com/babel/babel/tree/master/packages/babel-generator, https://babeljs.io
-// Definitions by: Troy Gerwien <https://github.com/yortus>
-//                 Johnny Estilles <https://github.com/johnnyestilles>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

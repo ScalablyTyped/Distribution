@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for are-we-there-yet 1.1
-// Project: https://github.com/iarna/are-we-there-yet
-// Definitions by: Brian J Brennan <https://github.com/brianloveswords>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

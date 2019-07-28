@@ -1,0 +1,20 @@
+package typings.less.LessNs
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ImportManager extends js.Object {
+  var contents: StringDictionary[String]
+}
+
+object ImportManager {
+  @scala.inline
+  def apply(contents: StringDictionary[String]): ImportManager = {
+    val __obj = js.Dynamic.literal(contents = contents)
+  
+    __obj.asInstanceOf[ImportManager]
+  }
+}
+

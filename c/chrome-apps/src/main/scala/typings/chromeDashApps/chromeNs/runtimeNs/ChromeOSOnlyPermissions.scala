@@ -1,0 +1,24 @@
+package typings.chromeDashApps.chromeNs.runtimeNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// | 'chrome://extension-icon/'; // Doesn't need permission yet?
+/* Rewritten from type alias, can be one of: 
+  - typings.chromeDashApps.chromeDashAppsStrings.certificateProvider
+  - typings.chromeDashApps.chromeDashAppsStrings.clipboard
+  - typings.chromeDashApps.chromeDashAppsStrings.dns
+  - typings.chromeDashApps.chromeDashAppsStrings.documentScan
+  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDOTplatformKeys
+  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDOTdeviceAttributes
+  - typings.chromeDashApps.chromeDashAppsStrings.fileBrowserHandler
+  - typings.chromeDashApps.chromeDashAppsStrings.fileSystemProvider
+  - typings.chromeDashApps.chromeDashAppsStrings.networkingDOTconfig
+  - typings.chromeDashApps.chromeDashAppsStrings.platformKeys
+  - typings.chromeDashApps.chromeDashAppsStrings.vpnProvider
+  - typings.chromeDashApps.chromeDashAppsStrings.wallpaper
+  - typings.chromeDashApps.chromeNs.runtimeNs.FileSystemPermission
+*/
+trait ChromeOSOnlyPermissions extends Permission
+

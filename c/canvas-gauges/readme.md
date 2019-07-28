@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for canvas-gauges v2.1.3
-// Project: https://github.com/Mikhus/canvas-gauges
-// Definitions by: Mikhus <https://github.com/Mikhus>
-// Definitions: https://github.com/Mikhus/DefinitelyTyped
-
-```
 

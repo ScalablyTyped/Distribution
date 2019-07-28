@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parse-package-name 0.1
-// Project: https://github.com/egoist/parse-package-name
-// Definitions by: Eric Wang <https://github.com/fa93hws>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

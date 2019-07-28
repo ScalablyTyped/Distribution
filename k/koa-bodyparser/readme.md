@@ -31,28 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-bodyparser 4.3
-// Project: https://github.com/koajs/body-parser
-// Definitions by: Jerry Chin <https://github.com/hellopao>
-//                 Anup Kishore <https://github.com/anup-2s>
-//                 Hiroshi Ioka <https://github.com/hirochachacha>
-//                 Alexi Maschas <https://github.com/amaschas>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-/* =================== USAGE ===================
-
-    import bodyParser = require("koa-bodyparser");
-    var Koa = require('koa');
-
-    var app = new Koa();
-    app.use(bodyParser());
-
- =============================================== */
-
-
-```
 

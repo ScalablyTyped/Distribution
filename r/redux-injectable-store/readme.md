@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-injectable-store 1.0
-// Project: https://github.com/lelandrichardson/redux-injectable-store#readme
-// Definitions by: Daniel Perez Alvarez <https://github.com/unindented>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

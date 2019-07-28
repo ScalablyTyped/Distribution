@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for yamljs 0.2.3
-// Project: https://github.com/jeremyfa/yaml.js
-// Definitions by: Tim Jonischkat <http://www.tim-jonischkat.de>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

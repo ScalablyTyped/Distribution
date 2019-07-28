@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fs-promise 1.0
-// Project: https://github.com/kevinbeaty/fs-promise#readme
-// Definitions by: Thiago de Arruda <https://github.com/tarruda>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

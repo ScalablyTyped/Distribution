@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsS3Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetObjectLockConfigurationOutput extends js.Object {
+  /**
+    * The specified bucket's object lock configuration.
+    */
+  var ObjectLockConfiguration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockConfiguration] = js.undefined
+}
+
+object GetObjectLockConfigurationOutput {
+  @scala.inline
+  def apply(ObjectLockConfiguration: ObjectLockConfiguration = null): GetObjectLockConfigurationOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ObjectLockConfiguration != null) __obj.updateDynamic("ObjectLockConfiguration")(ObjectLockConfiguration)
+    __obj.asInstanceOf[GetObjectLockConfigurationOutput]
+  }
+}
+

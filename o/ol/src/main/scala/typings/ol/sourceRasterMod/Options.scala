@@ -1,0 +1,34 @@
+package typings.ol.sourceRasterMod
+
+import typings.ol.olStrings.image
+import typings.ol.olStrings.pixel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var lib: js.UndefOr[js.Any] = js.undefined
+  var operation: js.UndefOr[Operation] = js.undefined
+  var operationType: js.UndefOr[pixel | image] = js.undefined
+  var sources: js.Array[typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default]
+  var threads: js.UndefOr[Double] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    sources: js.Array[typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default],
+    lib: js.Any = null,
+    operation: Operation = null,
+    operationType: pixel | image = null,
+    threads: Int | Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(sources = sources)
+    if (lib != null) __obj.updateDynamic("lib")(lib)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

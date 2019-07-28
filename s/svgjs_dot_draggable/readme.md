@@ -12,14 +12,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for svgjs.draggable
-// Project: http://www.svgjs.com/
-// Definitions by: Luigi Trabacchin <https://github.com/LiFeleSs>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

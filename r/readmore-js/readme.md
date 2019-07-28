@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for readmore-js 3.0
-// Project: https://github.com/jedfoster/Readmore.js
-// Definitions by: AntonDemarczyk <https://github.com/AntonDemarczyk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

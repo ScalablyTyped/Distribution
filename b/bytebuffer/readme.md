@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bytebuffer.js 5.0.0
-// Project: https://github.com/dcodeIO/bytebuffer.js
-// Definitions by: Denis Cappellin <https://github.com/cappellin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Definitions by: SINTEF-9012 <https://github.com/SINTEF-9012>
-
-```
 

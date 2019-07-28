@@ -1,0 +1,50 @@
+package typings.emailDashTemplates.emailDashTemplatesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("email-templates", JSImport.Namespace)
+@js.native
+class ^ protected () extends EmailTemplate {
+  def this(config: EmailConfig) = this()
+  /**
+    *   shorthand use of `juiceResources` with the config
+    *   mainly for custom renders like from a database).
+    */
+  /* CompleteClass */
+  override def juiceResources(html: String): js.Promise[String] = js.native
+  /**
+    *
+    * @param view The Html pug to render
+    * @param locals The template Variables
+    */
+  /* CompleteClass */
+  override def render(view: String, locals: js.Any): js.Promise[String] = js.native
+  /**
+    * Send the Email
+    */
+  /* CompleteClass */
+  override def send(options: EmailOptions): js.Any = js.native
+}
+
+@JSImport("email-templates", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  /**
+    *   shorthand use of `juiceResources` with the config
+    *   mainly for custom renders like from a database).
+    */
+  def juiceResources(html: String): js.Promise[String] = js.native
+  /**
+    *
+    * @param view The Html pug to render
+    * @param locals The template Variables
+    */
+  def render(view: String, locals: js.Any): js.Promise[String] = js.native
+  /**
+    * Send the Email
+    */
+  def send(options: EmailOptions): js.Any = js.native
+}
+

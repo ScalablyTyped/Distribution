@@ -28,17 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for find-project-root 1.1
-// Project: https://github.com/kirstein/find-project-root
-// Definitions by: Ika <https://github.com/ikatyang>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Finds the project root by custom markers
- */
-
-```
 

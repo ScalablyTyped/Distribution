@@ -1,0 +1,61 @@
+package typings.reactDashResponsive.reactDashResponsiveMod
+
+import typings.reactDashResponsive.reactDashResponsiveStrings.interlace
+import typings.reactDashResponsive.reactDashResponsiveStrings.landscape
+import typings.reactDashResponsive.reactDashResponsiveStrings.portrait
+import typings.reactDashResponsive.reactDashResponsiveStrings.progressive
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MediaQueryMatchers extends js.Object {
+  var aspectRatio: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[Boolean] = js.undefined
+  var colorIndex: js.UndefOr[Boolean] = js.undefined
+  var deviceAspectRatio: js.UndefOr[String] = js.undefined
+  var deviceHeight: js.UndefOr[Double | String] = js.undefined
+  var deviceWidth: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
+  var monochrome: js.UndefOr[Boolean] = js.undefined
+  var orientation: js.UndefOr[portrait | landscape] = js.undefined
+  var resolution: js.UndefOr[Double | String] = js.undefined
+  var scan: js.UndefOr[progressive | interlace] = js.undefined
+  var `type`: js.UndefOr[MediaQueryType] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
+}
+
+object MediaQueryMatchers {
+  @scala.inline
+  def apply(
+    aspectRatio: String = null,
+    color: js.UndefOr[Boolean] = js.undefined,
+    colorIndex: js.UndefOr[Boolean] = js.undefined,
+    deviceAspectRatio: String = null,
+    deviceHeight: Double | String = null,
+    deviceWidth: Double | String = null,
+    height: Double | String = null,
+    monochrome: js.UndefOr[Boolean] = js.undefined,
+    orientation: portrait | landscape = null,
+    resolution: Double | String = null,
+    scan: progressive | interlace = null,
+    `type`: MediaQueryType = null,
+    width: Double | String = null
+  ): MediaQueryMatchers = {
+    val __obj = js.Dynamic.literal()
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex)
+    if (deviceAspectRatio != null) __obj.updateDynamic("deviceAspectRatio")(deviceAspectRatio)
+    if (deviceHeight != null) __obj.updateDynamic("deviceHeight")(deviceHeight.asInstanceOf[js.Any])
+    if (deviceWidth != null) __obj.updateDynamic("deviceWidth")(deviceWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(monochrome)) __obj.updateDynamic("monochrome")(monochrome)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (scan != null) __obj.updateDynamic("scan")(scan.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaQueryMatchers]
+  }
+}
+

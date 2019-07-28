@@ -1,0 +1,19 @@
+package typings.reactDashElemental.reactDashElementalMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ImageState extends js.Object {
+  val load: String
+}
+
+object ImageState {
+  @scala.inline
+  def apply(load: String): ImageState = {
+    val __obj = js.Dynamic.literal(load = load)
+  
+    __obj.asInstanceOf[ImageState]
+  }
+}
+

@@ -31,28 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-big-calendar 0.22
-// Project: https://github.com/intljusticemission/react-big-calendar
-// Definitions by: Piotr Witek <https://github.com/piotrwitek>
-//                 Austin Turner <https://github.com/paustint>
-//                 Krzysztof Bezrąk <https://github.com/pikpok>
-//                 Sebastian Silbermann <https://github.com/eps1lon>
-//                 Paul Potsides <https://github.com/strongpauly>
-//                 janb87 <https://github.com/janb87>
-//                 Daniel Thorne <https://github.com/ldthorne>
-//                 Panagiotis Rikarnto Siavelis <https://github.com/siavelis>
-//                 Tomas Hubelbauer <https://github.com/TomasHubelbauer>
-//                 Lucas Silva Souza <https://github.com/lksilva>
-//                 Siarhey Belofost <https://github.com/SergeyBelofost>
-//                 Mark Nelissen <https://github.com/marknelissen>
-//                 Eric Kenney <https://github.com/KenneyE>
-//                 Paito Anderson <https://github.com/PaitoAnderson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

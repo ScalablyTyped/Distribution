@@ -1,0 +1,12 @@
+package typings.wordcloud
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("wordcloud", JSImport.Namespace)
+@js.native
+object wordcloudRequire extends js.Object
+

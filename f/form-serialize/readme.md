@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for form-serialize 0.7
-// Project: https://github.com/defunctzombie/form-serialize#readme, https://github.com/shtylman/form-serialize
-// Definitions by: Tyler Johnson <https://github.com/tyler-johnson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

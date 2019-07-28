@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for slackify-html v1.0.1
-// Project: https://github.com/mrq-cz/slackify-html
-// Definitions by: Scott Rippee <https://github.com/hypexr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

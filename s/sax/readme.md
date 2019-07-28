@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sax-js 1.2
-// Project: https://github.com/isaacs/sax-js
-// Definitions by: Vincent Siao (Asana, Inc.) <https://github.com/vsiao>
-//                 Evert Pot <https://github.com/evert>
-//                 Daniel Cassidy <https://github.com/djcsdy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

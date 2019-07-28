@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for inversify-devtools 1.0.0
-// Project: https://github.com/inversify/inversify-devtools
-// Definitions by: inversify <https://github.com/inversify>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

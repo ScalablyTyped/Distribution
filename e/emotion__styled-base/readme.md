@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
-// TypeScript Version: 3.1
-/**
- * @desc
- * In following types,
- * `InnerProps` is type parameter that represents props type of
- * internal component (target of styling)
- * `ExtraProps` is type parameter that represents extra props type of
- * styled component.
- * `StyleProps` is type parameter that represents props used in
- * a style of that component.
- */
-
-
-```
 

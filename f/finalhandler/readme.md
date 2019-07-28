@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for finalhandler 1.1
-// Project: https://github.com/pillarjs/finalhandler
-// Definitions by: Ilya Mochalov <https://github.com/chrootsu>
-//                 Mark Veronda <https://github.com/hbomark>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

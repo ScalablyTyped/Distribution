@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bytes 3.0
-// Project: https://github.com/visionmedia/bytes.js
-// Definitions by: Zhiyuan Wang <https://github.com/danny8002>
-//                 Rickard Laurin <https://github.com/believer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

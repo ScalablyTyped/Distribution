@@ -28,14 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for flipsnap.js
-// Project: http://pxgrid.github.io/js-flipsnap/
-// Definitions by: kubosho <https://github.com/kubosho>, gsino <https://github.com/gsino>, Mayuki Sawatari <https://github.com/mayuki>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

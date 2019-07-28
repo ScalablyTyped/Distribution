@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for murmurhash-js v1.0.0
-// Project: https://github.com/mikolalysenko/murmurhash-js
-// Definitions by: Chi Vinh Le <https://github.com/cvle>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

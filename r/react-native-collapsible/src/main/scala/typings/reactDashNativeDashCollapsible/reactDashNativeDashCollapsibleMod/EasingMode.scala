@@ -1,0 +1,41 @@
+package typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.linear
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInQuad
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutQuad
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutQuad
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInCubic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutCubic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutCubic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInQuart
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutQuart
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutQuart
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInQuint
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutQuint
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutQuint
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInSine
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutSine
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutSine
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInExpo
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutExpo
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutExpo
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInCirc
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutCirc
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutCirc
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInElastic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutElastic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutElastic
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInBack
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutBack
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutBack
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInBounce
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeOutBounce
+  - typings.reactDashNativeDashCollapsible.reactDashNativeDashCollapsibleStrings.easeInOutBounce
+*/
+trait EasingMode extends js.Object
+

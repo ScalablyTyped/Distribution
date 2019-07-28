@@ -1,0 +1,71 @@
+package typings.atGoogleMaps.atGoogleMapsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atGoogleMaps.atGoogleMapsStrings.ar
+  - typings.atGoogleMaps.atGoogleMapsStrings.be
+  - typings.atGoogleMaps.atGoogleMapsStrings.bg
+  - typings.atGoogleMaps.atGoogleMapsStrings.bn
+  - typings.atGoogleMaps.atGoogleMapsStrings.ca
+  - typings.atGoogleMaps.atGoogleMapsStrings.cs
+  - typings.atGoogleMaps.atGoogleMapsStrings.da
+  - typings.atGoogleMaps.atGoogleMapsStrings.de
+  - typings.atGoogleMaps.atGoogleMapsStrings.el
+  - typings.atGoogleMaps.atGoogleMapsStrings.en
+  - typings.atGoogleMaps.atGoogleMapsStrings.`en-Au`
+  - typings.atGoogleMaps.atGoogleMapsStrings.`en-GB`
+  - typings.atGoogleMaps.atGoogleMapsStrings.es
+  - typings.atGoogleMaps.atGoogleMapsStrings.eu
+  - typings.atGoogleMaps.atGoogleMapsStrings.fa
+  - typings.atGoogleMaps.atGoogleMapsStrings.fi
+  - typings.atGoogleMaps.atGoogleMapsStrings.fil
+  - typings.atGoogleMaps.atGoogleMapsStrings.fr
+  - typings.atGoogleMaps.atGoogleMapsStrings.gl
+  - typings.atGoogleMaps.atGoogleMapsStrings.gu
+  - typings.atGoogleMaps.atGoogleMapsStrings.hi
+  - typings.atGoogleMaps.atGoogleMapsStrings.hr
+  - typings.atGoogleMaps.atGoogleMapsStrings.hu
+  - typings.atGoogleMaps.atGoogleMapsStrings.id
+  - typings.atGoogleMaps.atGoogleMapsStrings.it
+  - typings.atGoogleMaps.atGoogleMapsStrings.iw
+  - typings.atGoogleMaps.atGoogleMapsStrings.ja
+  - typings.atGoogleMaps.atGoogleMapsStrings.kk
+  - typings.atGoogleMaps.atGoogleMapsStrings.kn
+  - typings.atGoogleMaps.atGoogleMapsStrings.ko
+  - typings.atGoogleMaps.atGoogleMapsStrings.ky
+  - typings.atGoogleMaps.atGoogleMapsStrings.lt
+  - typings.atGoogleMaps.atGoogleMapsStrings.lv
+  - typings.atGoogleMaps.atGoogleMapsStrings.mk
+  - typings.atGoogleMaps.atGoogleMapsStrings.ml
+  - typings.atGoogleMaps.atGoogleMapsStrings.mr
+  - typings.atGoogleMaps.atGoogleMapsStrings.my
+  - typings.atGoogleMaps.atGoogleMapsStrings.nl
+  - typings.atGoogleMaps.atGoogleMapsStrings.no
+  - typings.atGoogleMaps.atGoogleMapsStrings.pa
+  - typings.atGoogleMaps.atGoogleMapsStrings.pl
+  - typings.atGoogleMaps.atGoogleMapsStrings.pt
+  - typings.atGoogleMaps.atGoogleMapsStrings.`pt-BR`
+  - typings.atGoogleMaps.atGoogleMapsStrings.`pt-PT`
+  - typings.atGoogleMaps.atGoogleMapsStrings.ro
+  - typings.atGoogleMaps.atGoogleMapsStrings.ru
+  - typings.atGoogleMaps.atGoogleMapsStrings.sk
+  - typings.atGoogleMaps.atGoogleMapsStrings.sl
+  - typings.atGoogleMaps.atGoogleMapsStrings.sq
+  - typings.atGoogleMaps.atGoogleMapsStrings.sr
+  - typings.atGoogleMaps.atGoogleMapsStrings.sv
+  - typings.atGoogleMaps.atGoogleMapsStrings.ta
+  - typings.atGoogleMaps.atGoogleMapsStrings.te
+  - typings.atGoogleMaps.atGoogleMapsStrings.th
+  - typings.atGoogleMaps.atGoogleMapsStrings.tl
+  - typings.atGoogleMaps.atGoogleMapsStrings.tr
+  - typings.atGoogleMaps.atGoogleMapsStrings.uk
+  - typings.atGoogleMaps.atGoogleMapsStrings.uz
+  - typings.atGoogleMaps.atGoogleMapsStrings.vi
+  - typings.atGoogleMaps.atGoogleMapsStrings.`zh-CN`
+  - typings.atGoogleMaps.atGoogleMapsStrings.`zh-TW`
+*/
+trait Language extends js.Object
+

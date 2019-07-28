@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jquery.autosize 3.0
-// Project: http://www.jacklmoore.com/autosize/
-// Definitions by: Aaron T. King <https://github.com/kingdango>, keika299 <https://github.com/keika299>, NeekSandhu <https://github.com/NeekSandhu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

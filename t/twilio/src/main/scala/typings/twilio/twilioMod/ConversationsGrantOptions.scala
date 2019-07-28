@@ -1,0 +1,19 @@
+package typings.twilio.twilioMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConversationsGrantOptions extends js.Object {
+  var configurationProfileSid: String
+}
+
+object ConversationsGrantOptions {
+  @scala.inline
+  def apply(configurationProfileSid: String): ConversationsGrantOptions = {
+    val __obj = js.Dynamic.literal(configurationProfileSid = configurationProfileSid)
+  
+    __obj.asInstanceOf[ConversationsGrantOptions]
+  }
+}
+

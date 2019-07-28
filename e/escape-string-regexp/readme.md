@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Escape RegExp special characters.
-
-You can also use this to escape a string that is inserted into the middle of a regex, for example, into a character class.
-
-@example
-```
-import escapeStringRegexp = require('escape-string-regexp');
-
-const escapedString = escapeStringRegexp('How much $ for a 🦄?');
-//=> 'How much \\$ for a 🦄\\?'
-
-new RegExp(escapedString);
-```
-*/
-
-```
 

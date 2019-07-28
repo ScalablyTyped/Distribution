@@ -1,0 +1,48 @@
+package typings.gapiDotClientDotYoutube.gapiNs.clientNs.youtubeNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SponsorListResponse extends js.Object {
+  /** Etag of this resource. */
+  var etag: js.UndefOr[String] = js.undefined
+  /** Serialized EventId of the request which produced this response. */
+  var eventId: js.UndefOr[String] = js.undefined
+  /** A list of sponsors that match the request criteria. */
+  var items: js.UndefOr[js.Array[Sponsor]] = js.undefined
+  /** Identifies what kind of resource this is. Value: the fixed string "youtube#sponsorListResponse". */
+  var kind: js.UndefOr[String] = js.undefined
+  /** The token that can be used as the value of the pageToken parameter to retrieve the next page in the result set. */
+  var nextPageToken: js.UndefOr[String] = js.undefined
+  var pageInfo: js.UndefOr[PageInfo] = js.undefined
+  var tokenPagination: js.UndefOr[js.Any] = js.undefined
+  /** The visitorId identifies the visitor. */
+  var visitorId: js.UndefOr[String] = js.undefined
+}
+
+object SponsorListResponse {
+  @scala.inline
+  def apply(
+    etag: String = null,
+    eventId: String = null,
+    items: js.Array[Sponsor] = null,
+    kind: String = null,
+    nextPageToken: String = null,
+    pageInfo: PageInfo = null,
+    tokenPagination: js.Any = null,
+    visitorId: String = null
+  ): SponsorListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[SponsorListResponse]
+  }
+}
+

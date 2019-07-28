@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for js-sumo-logger 1.6
-// Project: https://github.com/SumoLogic/js-sumo-logger
-// Definitions by: forabi <https://github.com/forabi>
-//                 clementallen <https://github.com/clementallen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

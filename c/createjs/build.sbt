@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "createjs"
-version := "0.0-unknown-dt-20190322Z-466531"
+version := "0.0-unknown-dt-20190322Z-ec4e35"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

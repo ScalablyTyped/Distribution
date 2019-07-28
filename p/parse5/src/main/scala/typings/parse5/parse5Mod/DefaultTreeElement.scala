@@ -1,0 +1,47 @@
+package typings.parse5.parse5Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.parse5.parse5Mod.DefaultTreeParentNode because var conflicts: nodeName. Inlined childNodes */ trait DefaultTreeElement extends DefaultTreeChildNode {
+  /**
+    * List of element attributes.
+    */
+  var attrs: js.Array[Attribute]
+  /**
+    * Child nodes.
+    */
+  var childNodes: js.Array[DefaultTreeNode]
+  /**
+    * Element namespace.
+    */
+  var namespaceURI: String
+  /**
+    * Element source code location info. Available if location info is enabled via {@link ParserOptions}.
+    */
+  var sourceCodeLocation: js.UndefOr[ElementLocation] = js.undefined
+  /**
+    * Element tag name.
+    */
+  var tagName: String
+}
+
+object DefaultTreeElement {
+  @scala.inline
+  def apply(
+    attrs: js.Array[Attribute],
+    childNodes: js.Array[DefaultTreeNode],
+    namespaceURI: String,
+    nodeName: String,
+    parentNode: DefaultTreeParentNode,
+    tagName: String,
+    sourceCodeLocation: ElementLocation = null
+  ): DefaultTreeElement = {
+    val __obj = js.Dynamic.literal(attrs = attrs, childNodes = childNodes, namespaceURI = namespaceURI, nodeName = nodeName, parentNode = parentNode, tagName = tagName)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[DefaultTreeElement]
+  }
+}
+

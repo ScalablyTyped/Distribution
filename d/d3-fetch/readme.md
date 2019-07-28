@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for d3-fetch 1.1
-// Project: https://d3js.org/d3-fetch/
-// Definitions by: Hugues Stefanski <https://github.com/ledragon>
-//                 denisname <https://github.com/denisname>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-// Last module patch version validated against: 1.1.0
-
-```
 

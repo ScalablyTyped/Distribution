@@ -1,0 +1,12 @@
+package typings.bootstrapDash3DashTypeahead
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("bootstrap-3-typeahead", JSImport.Namespace)
+@js.native
+object bootstrapDash3DashTypeaheadRequire extends js.Object
+

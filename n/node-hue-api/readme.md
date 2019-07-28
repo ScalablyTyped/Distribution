@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-hue-api 2.3.0
-// Project: https://github.com/peter-murray/node-hue-api
-// Definitions by: wind-rider <https://github.com/wind-rider/>, Frederic Morel <https://github.com/fjmorel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

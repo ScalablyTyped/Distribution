@@ -1,0 +1,31 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Provides data for the FlashScriptCommand client event.
+  */
+trait ASPxClientFlashScriptCommandEventArgs extends ASPxClientEventArgs {
+  /**
+    * Gets arguments passed via the FSCommand action of the flash object.
+    * Value: A string that represents the value of the FSCommand action's args parameter.
+    */
+  var args: String
+  /**
+    * Gets a command passed via the FSCommand action of the flash object.
+    * Value: A string that represents the value of the FSCommand action's command parameter.
+    */
+  var command: String
+}
+
+object ASPxClientFlashScriptCommandEventArgs {
+  @scala.inline
+  def apply(args: String, command: String): ASPxClientFlashScriptCommandEventArgs = {
+    val __obj = js.Dynamic.literal(args = args, command = command)
+  
+    __obj.asInstanceOf[ASPxClientFlashScriptCommandEventArgs]
+  }
+}
+

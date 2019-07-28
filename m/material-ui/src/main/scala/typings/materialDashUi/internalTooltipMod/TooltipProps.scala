@@ -1,0 +1,51 @@
+package typings.materialDashUi.internalTooltipMod
+
+import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
+import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.Key
+import typings.react.reactMod.LegacyRef
+import typings.react.reactMod.Props
+import typings.react.reactMod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TooltipProps extends Props[Tooltip] {
+  var className: js.UndefOr[String] = js.undefined
+  var horizontalPosition: js.UndefOr[tooltipHorizontal] = js.undefined
+  var label: js.Any
+  var show: js.UndefOr[Boolean] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  var touch: js.UndefOr[Boolean] = js.undefined
+  var verticalPosition: js.UndefOr[vertical] = js.undefined
+}
+
+object TooltipProps {
+  @scala.inline
+  def apply(
+    label: js.Any,
+    children: ReactNode = null,
+    className: String = null,
+    horizontalPosition: tooltipHorizontal = null,
+    key: Key = null,
+    ref: LegacyRef[Tooltip] = null,
+    show: js.UndefOr[Boolean] = js.undefined,
+    style: CSSProperties = null,
+    touch: js.UndefOr[Boolean] = js.undefined,
+    verticalPosition: vertical = null
+  ): TooltipProps = {
+    val __obj = js.Dynamic.literal(label = label)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (horizontalPosition != null) __obj.updateDynamic("horizontalPosition")(horizontalPosition)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    if (verticalPosition != null) __obj.updateDynamic("verticalPosition")(verticalPosition)
+    __obj.asInstanceOf[TooltipProps]
+  }
+}
+

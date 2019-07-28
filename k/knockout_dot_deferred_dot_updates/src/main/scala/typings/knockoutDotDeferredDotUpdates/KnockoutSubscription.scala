@@ -1,0 +1,19 @@
+package typings.knockoutDotDeferredDotUpdates
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait KnockoutSubscription extends js.Object {
+  var deferUpdates: Boolean
+}
+
+object KnockoutSubscription {
+  @scala.inline
+  def apply(deferUpdates: Boolean): KnockoutSubscription = {
+    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates)
+  
+    __obj.asInstanceOf[KnockoutSubscription]
+  }
+}
+

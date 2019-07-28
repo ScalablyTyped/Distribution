@@ -1,0 +1,41 @@
+package typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs
+
+import typings.activexDashLibreoffice.`type`
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XContainerListener
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+import typings.std.SafeArray
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Objects of this type are collections of text contents of the same type.
+  * @see Text
+  */
+trait TextContentCollection
+  extends XNameAccess
+     with XContainer
+
+object TextContentCollection {
+  @scala.inline
+  def apply(
+    ElementNames: SafeArray[String],
+    ElementType: `type`,
+    acquire: () => Unit,
+    addContainerListener: XContainerListener => Unit,
+    getByName: String => js.Any,
+    getElementNames: () => SafeArray[String],
+    getElementType: () => `type`,
+    hasByName: String => Boolean,
+    hasElements: () => Boolean,
+    queryInterface: `type` => js.Any,
+    release: () => Unit,
+    removeContainerListener: XContainerListener => Unit
+  ): TextContentCollection = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeContainerListener = js.Any.fromFunction1(removeContainerListener))
+  
+    __obj.asInstanceOf[TextContentCollection]
+  }
+}
+

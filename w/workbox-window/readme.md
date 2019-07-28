@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for workbox-window 4.3
-// Project: https://github.com/GoogleChrome/workbox/tree/master/packages/workbox-window, https://github.com/GoogleChrome/workbox
-// Definitions by: Yamagishi Kazutoshi <https://github.com/ykzts>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-/**
- * Sends a data object to a service worker via `postMessage` and resolves with
- * a response (if any).
- *
- * A response can be set in a message handler in the service worker by
- * calling `event.ports[0].postMessage(...)`, which will resolve the promise
- * returned by `messageSW()`. If no response is set, the promise will not
- * resolve.
- */
-
-```
 

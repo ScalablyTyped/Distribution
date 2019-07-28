@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rsmq-worker 0.3.5
-// Project: http://smrchy.github.io/rsmq/rsmq-worker/
-// Definitions by: TANAKA Koichi <https://github.com/MugeSo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

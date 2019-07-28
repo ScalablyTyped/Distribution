@@ -1,0 +1,146 @@
+package typings.atPulumiAws.elasticloadbalancingLoadBalancerMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_BucketBucketPrefixEnabledInterval
+import typings.atPulumiAws.Anon_HealthyThresholdIntervalTarget
+import typings.atPulumiAws.Anon_InstancePortInstanceProtocolLbPort
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LoadBalancerState extends js.Object {
+  /**
+    * An Access Logs block. Access Logs documented below.
+    */
+  val accessLogs: js.UndefOr[Input[Anon_BucketBucketPrefixEnabledInterval]] = js.undefined
+  /**
+    * The ARN of the ELB
+    */
+  val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The AZ's to serve traffic in.
+    */
+  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * Boolean to enable connection draining. Default: `false`
+    */
+  val connectionDraining: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * The time in seconds to allow for connections to drain. Default: `300`
+    */
+  val connectionDrainingTimeout: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * Enable cross-zone load balancing. Default: `true`
+    */
+  val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * The DNS name of the ELB
+    */
+  val dnsName: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A health_check block. Health Check documented below.
+    */
+  val healthCheck: js.UndefOr[Input[Anon_HealthyThresholdIntervalTarget]] = js.undefined
+  /**
+    * The time in seconds that the connection is allowed to be idle. Default: `60`
+    */
+  val idleTimeout: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * A list of instance ids to place in the ELB pool.
+    */
+  val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * If true, ELB will be an internal ELB.
+    */
+  val internal: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * A list of listener blocks. Listeners documented below.
+    */
+  val listeners: js.UndefOr[Input[js.Array[Input[Anon_InstancePortInstanceProtocolLbPort]]]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Creates a unique name beginning with the specified
+    * prefix. Conflicts with `name`.
+    */
+  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A list of security group IDs to assign to the ELB.
+    * Only valid if creating an ELB within a VPC
+    */
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * The name of the security group that you can use as
+    * part of your inbound rules for your load balancer's back-end application
+    * instances. Use this for Classic or Default VPC only.
+    */
+  val sourceSecurityGroup: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The ID of the security group that you can use as
+    * part of your inbound rules for your load balancer's back-end application
+    * instances. Only available on ELBs launched in a VPC.
+    */
+  val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A list of subnet IDs to attach to the ELB.
+    */
+  val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  /**
+    * The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+    */
+  val zoneId: js.UndefOr[Input[String]] = js.undefined
+}
+
+object LoadBalancerState {
+  @scala.inline
+  def apply(
+    accessLogs: Input[Anon_BucketBucketPrefixEnabledInterval] = null,
+    arn: Input[String] = null,
+    availabilityZones: Input[js.Array[Input[String]]] = null,
+    connectionDraining: Input[Boolean] = null,
+    connectionDrainingTimeout: Input[Double] = null,
+    crossZoneLoadBalancing: Input[Boolean] = null,
+    dnsName: Input[String] = null,
+    healthCheck: Input[Anon_HealthyThresholdIntervalTarget] = null,
+    idleTimeout: Input[Double] = null,
+    instances: Input[js.Array[Input[String]]] = null,
+    internal: Input[Boolean] = null,
+    listeners: Input[js.Array[Input[Anon_InstancePortInstanceProtocolLbPort]]] = null,
+    name: Input[String] = null,
+    namePrefix: Input[String] = null,
+    securityGroups: Input[js.Array[Input[String]]] = null,
+    sourceSecurityGroup: Input[String] = null,
+    sourceSecurityGroupId: Input[String] = null,
+    subnets: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
+    zoneId: Input[String] = null
+  ): LoadBalancerState = {
+    val __obj = js.Dynamic.literal()
+    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
+    if (connectionDrainingTimeout != null) __obj.updateDynamic("connectionDrainingTimeout")(connectionDrainingTimeout.asInstanceOf[js.Any])
+    if (crossZoneLoadBalancing != null) __obj.updateDynamic("crossZoneLoadBalancing")(crossZoneLoadBalancing.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceSecurityGroup != null) __obj.updateDynamic("sourceSecurityGroup")(sourceSecurityGroup.asInstanceOf[js.Any])
+    if (sourceSecurityGroupId != null) __obj.updateDynamic("sourceSecurityGroupId")(sourceSecurityGroupId.asInstanceOf[js.Any])
+    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerState]
+  }
+}
+

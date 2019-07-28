@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-amplitude 0.1
-// Project: https://github.com/rorygarand/react-amplitude
-// Definitions by: Raymond Ho <https://github.com/rayzor65>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

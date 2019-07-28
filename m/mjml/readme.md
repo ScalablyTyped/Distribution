@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mjml 4.0
-// Project: https://github.com/mjmlio/mjml, https://mjml.io
-// Definitions by: aahoughton <https://github.com/aahoughton>
-//                 marpstar   <https://github.com/marpstar>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

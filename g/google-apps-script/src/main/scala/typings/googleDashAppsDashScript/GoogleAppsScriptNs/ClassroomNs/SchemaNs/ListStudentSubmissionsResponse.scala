@@ -1,0 +1,21 @@
+package typings.googleDashAppsDashScript.GoogleAppsScriptNs.ClassroomNs.SchemaNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ListStudentSubmissionsResponse extends js.Object {
+  var nextPageToken: js.UndefOr[String] = js.undefined
+  var studentSubmissions: js.UndefOr[js.Array[StudentSubmission]] = js.undefined
+}
+
+object ListStudentSubmissionsResponse {
+  @scala.inline
+  def apply(nextPageToken: String = null, studentSubmissions: js.Array[StudentSubmission] = null): ListStudentSubmissionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (studentSubmissions != null) __obj.updateDynamic("studentSubmissions")(studentSubmissions)
+    __obj.asInstanceOf[ListStudentSubmissionsResponse]
+  }
+}
+

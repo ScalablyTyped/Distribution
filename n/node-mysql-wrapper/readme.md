@@ -27,16 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-mysql-wrapper
-// Project: https://github.com/nodets/node-mysql-wrapper
-// Definitions by: Makis Maropoulos <https://github.com/kataras>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.2
-// Type definitions for meteorjs for node-mysql-wrapper which helps in development
-
-```
 

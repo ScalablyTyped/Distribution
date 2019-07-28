@@ -1,0 +1,24 @@
+package typings.uaDashParserDashJs.IUAParserNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BROWSER extends js.Object {
+  /**
+    * @deprecated
+    */
+  var MAJOR: String
+  var NAME: String
+  var VERSION: String
+}
+
+object BROWSER {
+  @scala.inline
+  def apply(MAJOR: String, NAME: String, VERSION: String): BROWSER = {
+    val __obj = js.Dynamic.literal(MAJOR = MAJOR, NAME = NAME, VERSION = VERSION)
+  
+    __obj.asInstanceOf[BROWSER]
+  }
+}
+

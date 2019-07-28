@@ -1,0 +1,20 @@
+package typings.reactDashVerticalDashTimelineDashComponent
+
+import typings.react.reactMod.ComponentType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashVerticalDashTimelineDashComponentComponents extends reactDashVerticalDashTimelineDashComponentProps {
+  @scala.inline
+  def VerticalTimeline: ComponentType[
+    typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps
+  ] = js.constructorOf[typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimeline].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps]]
+  @scala.inline
+  def VerticalTimelineElement: ComponentType[
+    typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps
+  ] = js.constructorOf[typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElement].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashVerticalDashTimelineDashComponent.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps]]
+}
+

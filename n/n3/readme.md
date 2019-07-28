@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for N3 1.1
-// Project: https://github.com/rdfjs/n3.js
-// Definitions by: Fred Eisele <https://github.com/phreed>
-//                 Ruben Taelman <https://github.com/rubensworks>
-//                 Laurens Rietveld <https://github.com/LaurensRietveld>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

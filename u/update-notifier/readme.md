@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for update-notifier 2.5
-// Project: https://github.com/yeoman/update-notifier
-// Definitions by: vvakame <https://github.com/vvakame>
-//                 Noah Chen <https://github.com/nchen63>
-//                 Jason Dreyzehner <https://github.com/bitjson>
-//                 Michael Grinich <https://github.com/grinich>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

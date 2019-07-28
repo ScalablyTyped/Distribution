@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for oauth 0.9
-// Project: https://github.com/ciaranj/node-oauth#readme
-// Definitions by: nonAlgebraic <https://github.com/nonAlgebraic>
-//                 Eduardo AC <https://github.com/EduardoAC>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

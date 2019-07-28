@@ -1,0 +1,53 @@
+package typings.highcharts.highchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnnotationsPitchforkTypeOptions extends js.Object {
+  /**
+    * (Highstock) Inner background options.
+    */
+  var innerBackground: js.UndefOr[AnnotationsPitchforkTypeInnerBackgroundOptions] = js.undefined
+  /**
+    * (Highstock) Line options.
+    */
+  var line: js.UndefOr[AnnotationsPitchforkTypeLineOptions] = js.undefined
+  /**
+    * (Highstock) Outer background options.
+    */
+  var outerBackground: js.UndefOr[AnnotationsPitchforkTypeOuterBackgroundOptions] = js.undefined
+  var points: js.UndefOr[js.Array[AnnotationsPitchforkTypePointsOptions]] = js.undefined
+  /**
+    * (Highstock) This number defines which xAxis the point is connected to. It
+    * refers to either the axis id or the index of the axis in the xAxis array.
+    */
+  var xAxis: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highstock) This number defines which yAxis the point is connected to. It
+    * refers to either the axis id or the index of the axis in the xAxis array.
+    */
+  var yAxis: js.UndefOr[Double] = js.undefined
+}
+
+object AnnotationsPitchforkTypeOptions {
+  @scala.inline
+  def apply(
+    innerBackground: AnnotationsPitchforkTypeInnerBackgroundOptions = null,
+    line: AnnotationsPitchforkTypeLineOptions = null,
+    outerBackground: AnnotationsPitchforkTypeOuterBackgroundOptions = null,
+    points: js.Array[AnnotationsPitchforkTypePointsOptions] = null,
+    xAxis: Int | Double = null,
+    yAxis: Int | Double = null
+  ): AnnotationsPitchforkTypeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (innerBackground != null) __obj.updateDynamic("innerBackground")(innerBackground)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (outerBackground != null) __obj.updateDynamic("outerBackground")(outerBackground)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnnotationsPitchforkTypeOptions]
+  }
+}
+

@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for MovieDB
-// Project: https://github.com/danzajdband/moviedb
-// Definitions by: Basarat Ali Syed <https://github.com/basarat>, Pavel Puchkov <https://github.com/0x6368656174>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Ghost module for Types
-
-```
 

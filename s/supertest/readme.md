@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for SuperTest v2.0.1
-// Project: https://github.com/visionmedia/supertest
-// Definitions by: Alex Varju <https://github.com/varju>
-//                 Petteri Parkkila <https://github.com/pietu>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

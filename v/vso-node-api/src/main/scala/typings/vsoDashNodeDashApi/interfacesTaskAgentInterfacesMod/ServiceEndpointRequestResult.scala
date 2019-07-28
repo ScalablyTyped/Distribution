@@ -1,0 +1,21 @@
+package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ServiceEndpointRequestResult extends js.Object {
+  var errorMessage: String
+  var result: js.Any
+  var statusCode: String
+}
+
+object ServiceEndpointRequestResult {
+  @scala.inline
+  def apply(errorMessage: String, result: js.Any, statusCode: String): ServiceEndpointRequestResult = {
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage, result = result, statusCode = statusCode)
+  
+    __obj.asInstanceOf[ServiceEndpointRequestResult]
+  }
+}
+

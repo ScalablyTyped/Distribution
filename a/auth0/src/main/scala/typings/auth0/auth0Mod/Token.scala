@@ -1,0 +1,20 @@
+package typings.auth0.auth0Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Token extends js.Object {
+  var aud: String
+  var jti: String
+}
+
+object Token {
+  @scala.inline
+  def apply(aud: String, jti: String): Token = {
+    val __obj = js.Dynamic.literal(aud = aud, jti = jti)
+  
+    __obj.asInstanceOf[Token]
+  }
+}
+

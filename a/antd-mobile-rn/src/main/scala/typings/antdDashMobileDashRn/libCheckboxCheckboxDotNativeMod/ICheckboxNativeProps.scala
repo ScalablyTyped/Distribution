@@ -1,0 +1,37 @@
+package typings.antdDashMobileDashRn.libCheckboxCheckboxDotNativeMod
+
+import typings.antdDashMobileDashRn.libCheckboxPropsTypeMod.CheckboxPropsType
+import typings.antdDashMobileDashRn.libCheckboxPropsTypeMod.OnChangeParams
+import typings.antdDashMobileDashRn.libCheckboxStyleIndexDotNativeMod.ICheckboxStyle
+import typings.reactDashNative.reactDashNativeMod.ImageStyle
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ICheckboxNativeProps extends CheckboxPropsType {
+  var style: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
+  var styles: js.UndefOr[ICheckboxStyle] = js.undefined
+}
+
+object ICheckboxNativeProps {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[Boolean] = js.undefined,
+    defaultChecked: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    onChange: /* params */ OnChangeParams => Unit = null,
+    style: StyleProp[ImageStyle] = null,
+    styles: ICheckboxStyle = null
+  ): ICheckboxNativeProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[ICheckboxNativeProps]
+  }
+}
+

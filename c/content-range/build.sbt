@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "content-range"
-version := "1.1-dt-20190131Z-fe9db8"
+version := "1.1-dt-20190131Z-16bbd8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

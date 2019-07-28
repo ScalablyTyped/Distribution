@@ -1,0 +1,36 @@
+package typings.reactDashNativeDashGoogleDashSignin
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Email extends js.Object {
+  var email: String | Null
+  var familyName: String | Null
+  var givenName: String | Null
+  var id: String | Null
+  var name: String | Null
+  var photo: String | Null
+}
+
+object Anon_Email {
+  @scala.inline
+  def apply(
+    email: String = null,
+    familyName: String = null,
+    givenName: String = null,
+    id: String = null,
+    name: String = null,
+    photo: String = null
+  ): Anon_Email = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (photo != null) __obj.updateDynamic("photo")(photo)
+    __obj.asInstanceOf[Anon_Email]
+  }
+}
+

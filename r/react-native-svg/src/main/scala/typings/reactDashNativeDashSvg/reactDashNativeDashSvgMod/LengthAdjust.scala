@@ -1,0 +1,12 @@
+package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.spacing
+  - typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.spacingAndGlyphs
+*/
+trait LengthAdjust extends js.Object
+

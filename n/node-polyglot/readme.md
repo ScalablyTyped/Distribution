@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-polyglot v0.4.3
-// Project: https://github.com/airbnb/polyglot.js
-// Definitions by: Tim Jackson-Kiely <https://github.com/timjk>
-//                 Liam Ross <https://github.com/liamross>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

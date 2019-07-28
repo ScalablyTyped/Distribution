@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wcwidth"
-version := "1.0-dt-20180214Z-ba2044"
+version := "1.0-dt-20180214Z-c69dee"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,143 @@
+package typings.stripe.stripeMod.transfersNs
+
+import typings.stripe.stripeMod.IMetadata
+import typings.stripe.stripeMod.IResourceObject
+import typings.stripe.stripeMod.accountsNs.IAccount
+import typings.stripe.stripeMod.balanceNs.IBalanceTransaction
+import typings.stripe.stripeMod.cardsNs.ICardHash
+import typings.stripe.stripeMod.chargesNs.ICharge
+import typings.stripe.stripeStrings.bank_account
+import typings.stripe.stripeStrings.card
+import typings.stripe.stripeStrings.stripe_account
+import typings.stripe.stripeStrings.transfer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ITransfer extends IResourceObject {
+  /**
+    * Amount (in cents) to be transferred to your bank account
+    */
+  var amount: Double
+  /**
+    * Amount in cents reversed (can be less than the amount attribute on the transfer if a partial reversal was issued).
+    */
+  var amount_reversed: Double
+  var application_fee: String
+  /**
+    * Balance transaction that describes the impact of this transfer on your account balance. [Expandable]
+    */
+  var balance_transaction: String | IBalanceTransaction
+  /**
+    * Time that this record of the transfer was first created.
+    */
+  var created: Double
+  /**
+    * Three-letter ISO currency code representing the currency.
+    */
+  var currency: String
+  /**
+    * Date the transfer is scheduled to arrive in the bank. This factors in delays like weekends or bank holidays.
+    */
+  var date: Double
+  /**
+    * Internal-only description of the transfer
+    */
+  var description: String
+  /**
+    * ID of the bank account, card, or Stripe account the transfer was sent to. [Expandable]
+    */
+  var destination: String | typings.stripe.stripeMod.bankAccountsNs.IBankAccount | ICardHash | IAccount
+  /**
+    * If the destination is a Stripe account, this will be the ID of the
+    * payment that the destination account received for the transfer. [Expandable]
+    */
+  var destination_payment: String
+  /**
+    * Error code explaining reason for transfer failure if available. See Types of transfer failures for a
+    * list of failure codes: https://stripe.com/docs/api#transfer_failures
+    */
+  var failure_code: String
+  /**
+    * Message to user further explaining reason for transfer failure if available.
+    */
+  var failure_message: String
+  var livemode: Boolean
+  var metadata: IMetadata
+  /**
+    * Value is "transfer"
+    */
+  @JSName("object")
+  var object_ITransfer: transfer
+  /**
+    * A list of reversals that have been applied to the transfer.
+    */
+  var reversals: ITransferReversals
+  /**
+    * Whether or not the transfer has been fully reversed. If the transfer is only partially reversed, this attribute
+    * will still be false.
+    */
+  var reversed: Boolean
+  /**
+    * ID of the charge (or other transaction) that was used to fund the
+    * transfer. If null, the transfer was funded from the available
+    * balance. [Expandable]
+    */
+  var source_transaction: String | ICharge
+  /**
+    * The source balance this transfer came from.
+    * One of card, bank_account, bitcoin_receiver, or alipay_account
+    */
+  var source_type: SourceTypes
+  /**
+    * Extra information about a transfer to be displayed on the user's bank statement.
+    */
+  var statement_descriptor: String
+  /**
+    * Current status of the transfer (paid, pending, in_transit, canceled or failed).
+    * A transfer will be pending until it is submitted to the bank, at which point
+    * it becomes in_transit. It will then change to paid if the transaction goes
+    * through. If it does not go through successfully, its status will change to
+    * failed or canceled.
+    */
+  var status: Statuses
+  /**
+    * Can be card, bank_account, or stripe_account.
+    */
+  var `type`: card | bank_account | stripe_account
+}
+
+object ITransfer {
+  @scala.inline
+  def apply(
+    amount: Double,
+    amount_reversed: Double,
+    application_fee: String,
+    balance_transaction: String | IBalanceTransaction,
+    created: Double,
+    currency: String,
+    date: Double,
+    description: String,
+    destination: String | typings.stripe.stripeMod.bankAccountsNs.IBankAccount | ICardHash | IAccount,
+    destination_payment: String,
+    failure_code: String,
+    failure_message: String,
+    id: String,
+    livemode: Boolean,
+    metadata: IMetadata,
+    `object`: transfer,
+    reversals: ITransferReversals,
+    reversed: Boolean,
+    source_transaction: String | ICharge,
+    source_type: SourceTypes,
+    statement_descriptor: String,
+    status: Statuses,
+    `type`: card | bank_account | stripe_account
+  ): ITransfer = {
+    val __obj = js.Dynamic.literal(amount = amount, amount_reversed = amount_reversed, application_fee = application_fee, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, date = date, description = description, destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment, failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, reversals = reversals, reversed = reversed, source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type, statement_descriptor = statement_descriptor, status = status)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITransfer]
+  }
+}
+

@@ -1,0 +1,20 @@
+package typings.seleniumDashWebdriver.seleniumDashWebdriverMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ILocation extends js.Object {
+  var x: Double
+  var y: Double
+}
+
+object ILocation {
+  @scala.inline
+  def apply(x: Double, y: Double): ILocation = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[ILocation]
+  }
+}
+

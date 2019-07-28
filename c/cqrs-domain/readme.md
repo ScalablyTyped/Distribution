@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cqrs-domain 2.10
-// Project: https://github.com/adrai/node-cqrs-domain
-// Definitions by: Steven Weiß <https://github.com/blissi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

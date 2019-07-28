@@ -1,0 +1,89 @@
+package typings.reduxDashForm.libActionTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ActionTypes extends js.Object {
+  var ARRAY_INSERT: String
+  var ARRAY_MOVE: String
+  var ARRAY_POP: String
+  var ARRAY_PUSH: String
+  var ARRAY_REMOVE: String
+  var ARRAY_REMOVE_ALL: String
+  var ARRAY_SHIFT: String
+  var ARRAY_SPLICE: String
+  var ARRAY_SWAP: String
+  var ARRAY_UNSHIFT: String
+  var AUTOFILL: String
+  var BLUR: String
+  var CHANGE: String
+  var CLEAR_ASYNC_ERROR: String
+  var CLEAR_FIELDS: String
+  var CLEAR_SUBMIT: String
+  var CLEAR_SUBMIT_ERRORS: String
+  var DESTROY: String
+  var FOCUS: String
+  var INITIALIZE: String
+  var REGISTER_FIELD: String
+  var RESET: String
+  var RESET_SECTION: String
+  var SET_SUBMIT_FAILED: String
+  var SET_SUBMIT_SUCCEEDED: String
+  var START_ASYNC_VALIDATION: String
+  var START_SUBMIT: String
+  var STOP_ASYNC_VALIDATION: String
+  var STOP_SUBMIT: String
+  var SUBMIT: String
+  var TOUCH: String
+  var UNREGISTER_FIELD: String
+  var UNTOUCH: String
+  var UPDATE_SYNC_ERRORS: String
+  var UPDATE_SYNC_WARNINGS: String
+}
+
+object ActionTypes {
+  @scala.inline
+  def apply(
+    ARRAY_INSERT: String,
+    ARRAY_MOVE: String,
+    ARRAY_POP: String,
+    ARRAY_PUSH: String,
+    ARRAY_REMOVE: String,
+    ARRAY_REMOVE_ALL: String,
+    ARRAY_SHIFT: String,
+    ARRAY_SPLICE: String,
+    ARRAY_SWAP: String,
+    ARRAY_UNSHIFT: String,
+    AUTOFILL: String,
+    BLUR: String,
+    CHANGE: String,
+    CLEAR_ASYNC_ERROR: String,
+    CLEAR_FIELDS: String,
+    CLEAR_SUBMIT: String,
+    CLEAR_SUBMIT_ERRORS: String,
+    DESTROY: String,
+    FOCUS: String,
+    INITIALIZE: String,
+    REGISTER_FIELD: String,
+    RESET: String,
+    RESET_SECTION: String,
+    SET_SUBMIT_FAILED: String,
+    SET_SUBMIT_SUCCEEDED: String,
+    START_ASYNC_VALIDATION: String,
+    START_SUBMIT: String,
+    STOP_ASYNC_VALIDATION: String,
+    STOP_SUBMIT: String,
+    SUBMIT: String,
+    TOUCH: String,
+    UNREGISTER_FIELD: String,
+    UNTOUCH: String,
+    UPDATE_SYNC_ERRORS: String,
+    UPDATE_SYNC_WARNINGS: String
+  ): ActionTypes = {
+    val __obj = js.Dynamic.literal(ARRAY_INSERT = ARRAY_INSERT, ARRAY_MOVE = ARRAY_MOVE, ARRAY_POP = ARRAY_POP, ARRAY_PUSH = ARRAY_PUSH, ARRAY_REMOVE = ARRAY_REMOVE, ARRAY_REMOVE_ALL = ARRAY_REMOVE_ALL, ARRAY_SHIFT = ARRAY_SHIFT, ARRAY_SPLICE = ARRAY_SPLICE, ARRAY_SWAP = ARRAY_SWAP, ARRAY_UNSHIFT = ARRAY_UNSHIFT, AUTOFILL = AUTOFILL, BLUR = BLUR, CHANGE = CHANGE, CLEAR_ASYNC_ERROR = CLEAR_ASYNC_ERROR, CLEAR_FIELDS = CLEAR_FIELDS, CLEAR_SUBMIT = CLEAR_SUBMIT, CLEAR_SUBMIT_ERRORS = CLEAR_SUBMIT_ERRORS, DESTROY = DESTROY, FOCUS = FOCUS, INITIALIZE = INITIALIZE, REGISTER_FIELD = REGISTER_FIELD, RESET = RESET, RESET_SECTION = RESET_SECTION, SET_SUBMIT_FAILED = SET_SUBMIT_FAILED, SET_SUBMIT_SUCCEEDED = SET_SUBMIT_SUCCEEDED, START_ASYNC_VALIDATION = START_ASYNC_VALIDATION, START_SUBMIT = START_SUBMIT, STOP_ASYNC_VALIDATION = STOP_ASYNC_VALIDATION, STOP_SUBMIT = STOP_SUBMIT, SUBMIT = SUBMIT, TOUCH = TOUCH, UNREGISTER_FIELD = UNREGISTER_FIELD, UNTOUCH = UNTOUCH, UPDATE_SYNC_ERRORS = UPDATE_SYNC_ERRORS, UPDATE_SYNC_WARNINGS = UPDATE_SYNC_WARNINGS)
+  
+    __obj.asInstanceOf[ActionTypes]
+  }
+}
+

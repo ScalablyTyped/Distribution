@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for notifyjs 3.0.0
-// Project: https://github.com/alexgibson/notify.js
-// Definitions by: soundTricker <https://github.com/soundTricker>
-//                 NateScarlet <https://github.com/NateScarlet>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

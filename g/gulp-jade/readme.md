@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-jade
-// Project: https://github.com/phated/gulp-jade
-// Definitions by: berwyn <https://github.com/berwyn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

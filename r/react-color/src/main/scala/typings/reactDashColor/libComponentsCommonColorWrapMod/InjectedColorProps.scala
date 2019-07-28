@@ -1,0 +1,32 @@
+package typings.reactDashColor.libComponentsCommonColorWrapMod
+
+import typings.reactDashColor.reactDashColorMod.HSLColor
+import typings.reactDashColor.reactDashColorMod.RGBColor
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InjectedColorProps extends js.Object {
+  var hex: js.UndefOr[String] = js.undefined
+  var hsl: js.UndefOr[HSLColor] = js.undefined
+  var onChange: js.UndefOr[ColorWrapChangeHandler] = js.undefined
+  var rgb: js.UndefOr[RGBColor] = js.undefined
+}
+
+object InjectedColorProps {
+  @scala.inline
+  def apply(
+    hex: String = null,
+    hsl: HSLColor = null,
+    onChange: ColorWrapChangeHandler = null,
+    rgb: RGBColor = null
+  ): InjectedColorProps = {
+    val __obj = js.Dynamic.literal()
+    if (hex != null) __obj.updateDynamic("hex")(hex)
+    if (hsl != null) __obj.updateDynamic("hsl")(hsl)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (rgb != null) __obj.updateDynamic("rgb")(rgb)
+    __obj.asInstanceOf[InjectedColorProps]
+  }
+}
+

@@ -1,0 +1,19 @@
+package typings.devexpressDashAspnetcoreDashBootstrap.DevExpressNs.AspNetCoreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CustomDataCallbackEventArgs extends EventArgs {
+  var result: String
+}
+
+object CustomDataCallbackEventArgs {
+  @scala.inline
+  def apply(result: String, sender: Control): CustomDataCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(result = result, sender = sender)
+  
+    __obj.asInstanceOf[CustomDataCallbackEventArgs]
+  }
+}
+

@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-json v2.x
-// Project: https://github.com/koajs/json
-// Definitions by: Alex Friedman <https://github.com/brooklyndev>
-// Definitions: https://github.com/brooklyndev/DefinitelyTyped
-// TypeScript Version: 2.3
-/* =================== USAGE ===================
-
-    import * as Koa from 'koa';
-    import * as json from 'koa-json';
-
-    const app = new Koa();
-    app.use(json());
-
- =============================================== */
-
-
-```
 

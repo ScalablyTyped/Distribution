@@ -1,0 +1,21 @@
+package typings.winrtDashUwp
+
+import typings.winrtDashUwp.WindowsNs.WebNs.HttpNs.HeadersNs.HttpNameValueHeaderValue
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_NameValueHeaderValue extends js.Object {
+  /** The HttpNameValueHeaderValue version of the string. */ var nameValueHeaderValue: HttpNameValueHeaderValue
+  /** true if input is valid HttpNameValueHeaderValue information; otherwise, false. */ var returnValue: Boolean
+}
+
+object Anon_NameValueHeaderValue {
+  @scala.inline
+  def apply(nameValueHeaderValue: HttpNameValueHeaderValue, returnValue: Boolean): Anon_NameValueHeaderValue = {
+    val __obj = js.Dynamic.literal(nameValueHeaderValue = nameValueHeaderValue, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_NameValueHeaderValue]
+  }
+}
+

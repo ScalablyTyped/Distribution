@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-socket.io 1.4
-// Project: https://github.com/itaylor/redux-socket.io#readme
-// Definitions by: Igor Voropaev <https://github.com/snakeego>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

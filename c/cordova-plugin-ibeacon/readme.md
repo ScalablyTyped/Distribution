@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cordova-plugin-ibeacon v3.3.0
-// Project: https://github.com/petermetz/cordova-plugin-ibeacon
-// Definitions by: Markus Wagner <https://github.com/Ritzlgrmft>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

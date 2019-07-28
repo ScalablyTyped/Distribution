@@ -13,14 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for non-npm package ArcGIS REST API 10.4
-// Project: http://resources.arcgis.com/en/help/arcgis-rest-api/
-// Definitions by: Jeff Jacobson <https://github.com/JeffJacobson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

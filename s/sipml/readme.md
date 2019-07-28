@@ -27,14 +27,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for SIPml5
-// Project: http://sipml5.org/
-// Definitions by: A. Groenenboom <https://github.com/chookies>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

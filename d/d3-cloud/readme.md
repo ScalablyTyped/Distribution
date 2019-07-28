@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for d3JS cloud layout plugin by Jason Davies v1.2.5
-// Project: https://github.com/jasondavies/d3-cloud
-// Definitions by: hans windhoff <https://github.com/hansrwindhoff>, locknono <https://github.com/locknono>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

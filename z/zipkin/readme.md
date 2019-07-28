@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// TypeScript type definitions
-//
-// After modifying project's source code make appropriate changes to this file,
-// especially when you do one of the following:
-//  - add/remove/rename a class
-//  - add/remove/rename a method
-//  - change method signature
-
-```
 

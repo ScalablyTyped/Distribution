@@ -1,0 +1,20 @@
+package typings.graphqlDashReact.graphqlDashReactMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HttpError extends js.Object {
+  var status: Double
+  var statusText: String
+}
+
+object HttpError {
+  @scala.inline
+  def apply(status: Double, statusText: String): HttpError = {
+    val __obj = js.Dynamic.literal(status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[HttpError]
+  }
+}
+

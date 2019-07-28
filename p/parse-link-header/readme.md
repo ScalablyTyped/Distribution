@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for parse-link-header 1.0
-// Project: https://github.com/thlorenz/parse-link-header
-// Definitions by: Nick Zelei <https://github.com/zelein>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

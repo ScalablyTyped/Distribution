@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nested-error-stacks 2.1
-// Project: https://github.com/mdlavin/nested-error-stacks
-// Definitions by: Wouter van Heeswijk <https://github.com/woutervh->
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

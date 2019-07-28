@@ -1,0 +1,20 @@
+package typings.agDashGrid.distLibComponentsFrameworkComponentProviderMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeprecatedComponentName extends js.Object {
+  var newComponentName: String
+  var propertyHolder: String
+}
+
+object DeprecatedComponentName {
+  @scala.inline
+  def apply(newComponentName: String, propertyHolder: String): DeprecatedComponentName = {
+    val __obj = js.Dynamic.literal(newComponentName = newComponentName, propertyHolder = propertyHolder)
+  
+    __obj.asInstanceOf[DeprecatedComponentName]
+  }
+}
+

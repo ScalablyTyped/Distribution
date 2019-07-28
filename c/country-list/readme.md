@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for country-list 2.1
-// Project: https://github.com/fannarsh/country-list
-// Definitions by: Kyle Roach <https://github.com/iRoachie>
-//                 Adam Binford <https://github.com/Kimahriman>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Expects an array of code and country name pairs to add to the list. Doesn't return anything.
- */
-
-```
 

@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if your package was installed globally.
-
-@example
-```
-import isInstalledGlobally = require('is-installed-globally');
-
-// With `npm install your-package`
-console.log(isInstalledGlobally);
-//=> false
-
-// With `npm install --global your-package`
-console.log(isInstalledGlobally);
-//=> true
-```
-*/
-
-```
 

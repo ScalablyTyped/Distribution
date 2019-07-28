@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-json-editor v2.2.1
-// Project: https://www.npmjs.com/package/gulp-json-editor
-// Definitions by: Peter Juras <https://github.com/peterjuras>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => cytoscape, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape),TsIdentLibrarySimple(cytoscape)),TsIdentModule(None,List(cytoscape))) [id => cytoscape, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape),TsIdentLibrarySimple(cytoscape)),TsIdentModule(None,List(cytoscape))) [id => cytoscape, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(cytoscape)) [id => cytoscape, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_H) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CoreViewportManipulation) / TsMemberFunction(extent) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Source) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Parent) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -41,16 +41,16 @@
 [info ] ExpandCallables.scala:48 Expanded (-) into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
 [info ] ExpandCallables.scala:48 Expanded weight into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(SearchFloydWarshallOptions))] 
 [debug] PhaseRunner.scala:84 Success [id => cytoscape, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing cytoscape [id => cytoscape, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing cytoscape [id => cytoscape, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => cytoscape, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
-	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
-	at com.olvind.tso.scalajs.FieldTree.renamed(tree.scala:125)
-	at com.olvind.tso.scalajs.FieldTree.withSuffix(tree.scala:120)
-	at com.olvind.tso.importer.ImportTree$.hack(ImportTree.scala:455)
-	at com.olvind.tso.importer.ImportTree$.tsMemberProperty(ImportTree.scala:441)
-	at com.olvind.tso.importer.ImportTree$.tsMember(ImportTree.scala:309)
-	at com.olvind.tso.importer.ImportTree$.$anonfun$decl$7(ImportTree.scala:205)
+	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:49)
+	at com.olvind.tso.scalajs.FieldTree.renamed(tree.scala:133)
+	at com.olvind.tso.scalajs.FieldTree.withSuffix(tree.scala:125)
+	at com.olvind.tso.importer.ImportTree$.hack(ImportTree.scala:458)
+	at com.olvind.tso.importer.ImportTree$.tsMemberProperty(ImportTree.scala:444)
+	at com.olvind.tso.importer.ImportTree$.tsMember(ImportTree.scala:312)
+	at com.olvind.tso.importer.ImportTree$.$anonfun$decl$7(ImportTree.scala:208)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -61,7 +61,7 @@
 	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:244)
 	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:241)
 	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
-	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:205)
+	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:208)
 	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:100)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.immutable.List.foreach(List.scala:392)
@@ -69,7 +69,7 @@
 	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:241)
 	at scala.collection.immutable.List.flatMap(List.scala:355)
 	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:100)
-	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:65)
+	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:68)
 	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:100)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.immutable.List.foreach(List.scala:392)
@@ -78,7 +78,7 @@
 	at scala.collection.immutable.List.flatMap(List.scala:355)
 	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:100)
 	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:25)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:74)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
@@ -111,7 +111,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:213)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -122,8 +122,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main.run(Main.scala:215)
-	at com.olvind.tso.importer.Main$.main(Main.scala:313)
+	at com.olvind.tso.importer.Main.run(Main.scala:213)
+	at com.olvind.tso.importer.Main$.main(Main.scala:311)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => scala.js] 

@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pouchdb-upsert 2.2
-// Project: https://github.com/pouchdb/upsert, https://github.com/nolanlawson/pouchdb-upsert
-// Definitions by: Keith D. Moore <https://github.com/keithdmoore>
-//                 Andrew Mitchell <https://github.com/hotforfeature>
-//                 Eddie Hsu <https://github.com/apolkingg8>
-//                 John McLaughlin <https://github.com/zamb3zi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-
-```
 

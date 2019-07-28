@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jquery-deparam v1.0.0
-// Project: https://github.com/AceMetrix/jquery-deparam
-// Definitions by: Pat Sissons <https://github.com/patsissons>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

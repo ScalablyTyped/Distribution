@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fromnow v3.0.0
-// Project: https://github.com/lukeed/fromNow
-// Definitions by: Martin Bukovics <https://github.com/marinewater>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

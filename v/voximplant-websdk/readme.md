@@ -29,14 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for VoxImplant Web SDK 3.0.x
-// Project: http://voximplant.com/
-// Definitions by: Alexey Aylarov <https://github.com/aylarov>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

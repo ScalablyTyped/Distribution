@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "otplib"
-version := "7.0-dt-20180214Z-be7d1e"
+version := "7.0-dt-20180214Z-dfbfe2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

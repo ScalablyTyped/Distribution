@@ -1,11 +1,11 @@
-[warn ] Phase1ReadTypescript.scala:154 Could not resolve declared dependency fp-ts [id => monocle-ts, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:153 Could not resolve declared dependency fp-ts [id => monocle-ts, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts/es6/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts),TsIdentLibrarySimple(monocle-ts)),TsIdentModule(None,List(monocle-ts, es6))) [id => monocle-ts, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts/es6/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts),TsIdentLibrarySimple(monocle-ts)),TsIdentModule(None,List(monocle-ts, es6))) [id => monocle-ts, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(monocle-ts, es6)) [id => monocle-ts, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts),TsIdentLibrarySimple(monocle-ts)),TsIdentModule(None,List(monocle-ts))) [id => monocle-ts, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/monocle-ts),TsIdentLibrarySimple(monocle-ts)),TsIdentModule(None,List(monocle-ts))) [id => monocle-ts, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(monocle-ts)) [id => monocle-ts, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(monocle-ts) [id => monocle-ts, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(monocle-ts) [id => monocle-ts, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify Refinement<S, A> [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclClass(Prism) / TsMemberFunction(fromPredicate) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify Predicate<A> [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclClass(Prism) / TsMemberFunction(fromPredicate) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify URIS3 [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsExport() / TsExporteeTree() / TsDeclInterface(ModifyF) / TsMemberCall() / TsFunSig() / TsTypeParam() / TsTypeRef())] 
@@ -115,7 +115,7 @@
 [info ] ExpandCallables.scala:48 Expanded modifyF into 5 methods [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Traversal))] 
 [info ] ExpandCallables.scala:48 Expanded modifyF into 5 methods [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Traversal))] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing monocle-ts [id => monocle-ts, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing monocle-ts [id => monocle-ts, phase => scala.js] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Optional) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Lens) / TsMemberFunction(fromProp) / TsTypeFunction() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Lens) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
@@ -156,22 +156,22 @@
 [info ] ImportType.scala:245 Failed type conversion: keyof S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof S ]: -? S[K] extends std.Option? K : never}[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclTypeAlias(OptionPropertyNames) / TsTypeLookup())] 
-[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(monocleDashTsLib) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(monocleDashTsLib) / Name(es6Mod) / Name(ModifyF)] 
-[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(monocleDashTsLib) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(monocleDashTsLib) / Name(es6Mod) / Name(ModifyF)] 
-[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(monocleDashTsLib) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(monocleDashTsLib) / Name(monocleDashTsMod) / Name(ModifyF)] 
-[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(monocleDashTsLib) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(monocleDashTsLib) / Name(monocleDashTsMod) / Name(ModifyF)] 
+[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF)] 
+[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF)] 
+[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
+[info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => scala.js] 
-[warn ] Phase3Compile.scala:204 Building monocle-ts... [id => monocle-ts, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/monocleDashTsLib/monocleDashTsMod/package.scala:10:67
+[warn ] Phase3Compile.scala:208 Building monocle-ts... [id => monocle-ts, phase => build] 
+[error] Phase3Compile.scala:234 [E] [E2] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala:9:67
 [E]      not found: type A
-[E]      L10:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
-[E]                                                                             ^
-[E] [E1] src/main/scala/typings/monocleDashTsLib/es6Mod/package.scala:10:67
+[E]      L9:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
+[E]                                                                            ^
+[E] [E1] src/main/scala/typings/monocleDashTs/es6Mod/package.scala:9:67
 [E]      not found: type A
-[E]      L10:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
-[E]                                                                             ^
-[E] src/main/scala/typings/monocleDashTsLib/es6Mod/package.scala: L10 [E1]
-[E] src/main/scala/typings/monocleDashTsLib/monocleDashTsMod/package.scala: L10 [E2]
+[E]      L9:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
+[E]                                                                            ^
+[E] src/main/scala/typings/monocleDashTs/es6Mod/package.scala: L9 [E1]
+[E] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala: L9 [E2]
 [E] Failed to compile 'monocle-ts'
  [id => monocle-ts, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [monocle-ts => Compilation failed] [id => monocle-ts, phase => build] 

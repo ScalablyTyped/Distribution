@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Victor.js 1.1.0
-// Project: http://victorjs.org/
-// Definitions by: Ivane Gegia <https://twitter.com/ivanegegia>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

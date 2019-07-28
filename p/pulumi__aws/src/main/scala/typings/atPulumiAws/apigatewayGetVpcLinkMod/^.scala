@@ -1,0 +1,14 @@
+package typings.atPulumiAws.apigatewayGetVpcLinkMod
+
+import typings.atPulumiPulumi.invokeMod.InvokeOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/apigateway/getVpcLink", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def getVpcLink(args: GetVpcLinkArgs): js.Promise[GetVpcLinkResult] with GetVpcLinkResult = js.native
+  def getVpcLink(args: GetVpcLinkArgs, opts: InvokeOptions): js.Promise[GetVpcLinkResult] with GetVpcLinkResult = js.native
+}
+

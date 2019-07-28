@@ -1,0 +1,241 @@
+package typings.handsontable.handsontableMod.HandsontableNs
+
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Autocomplete
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Base
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Checkbox
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Html
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Numeric
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Password
+import typings.handsontable.handsontableMod.HandsontableNs.renderersNs.Text
+import typings.handsontable.handsontableMod.underscoreHandsontableNs.Core
+import typings.std.HTMLTableCellElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Renderers extends js.Object {
+  @JSName("AutocompleteRenderer")
+  var AutocompleteRenderer_Original: Autocomplete = js.native
+  @JSName("BaseRenderer")
+  var BaseRenderer_Original: Base = js.native
+  @JSName("CheckboxRenderer")
+  var CheckboxRenderer_Original: Checkbox = js.native
+  @JSName("DateRenderer")
+  var DateRenderer_Original: Autocomplete = js.native
+  @JSName("DropdownRenderer")
+  var DropdownRenderer_Original: Autocomplete = js.native
+  @JSName("HandsontableRenderer")
+  var HandsontableRenderer_Original: Autocomplete = js.native
+  @JSName("HtmlRenderer")
+  var HtmlRenderer_Original: Html = js.native
+  @JSName("NumericRenderer")
+  var NumericRenderer_Original: Numeric = js.native
+  @JSName("PasswordRenderer")
+  var PasswordRenderer_Original: Password = js.native
+  @JSName("TextRenderer")
+  var TextRenderer_Original: Text = js.native
+  @JSName("TimeRenderer")
+  var TimeRenderer_Original: Text = js.native
+  def AutocompleteRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def AutocompleteRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def BaseRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def BaseRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def CheckboxRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def CheckboxRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def DateRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def DateRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def DropdownRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def DropdownRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def HandsontableRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def HandsontableRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def HtmlRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def HtmlRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def NumericRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def NumericRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def PasswordRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def PasswordRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def TextRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def TextRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def TimeRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def TimeRenderer(
+    instance: Core,
+    TD: HTMLTableCellElement,
+    row: Double,
+    col: Double,
+    prop: Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): HTMLTableCellElement | Unit = js.native
+  def getRenderer(name: String): Base = js.native
+  def registerRenderer(name: String, renderer: Base): Unit = js.native
+}
+

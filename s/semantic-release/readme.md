@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for semantic-release 15.13
-// Project: https://github.com/semantic-release/semantic-release#readme
-// Definitions by: Leonardo Gatica <https://github.com/lgaticaq>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * The semantic release configuration itself.
- */
-
-```
 

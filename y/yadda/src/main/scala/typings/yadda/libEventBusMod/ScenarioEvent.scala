@@ -1,0 +1,21 @@
+package typings.yadda.libEventBusMod
+
+import typings.yadda.yaddaStrings.__ON_SCENARIO__
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ScenarioEvent extends js.Object {
+  var data: ScenarioEventData
+  var name: __ON_SCENARIO__
+}
+
+object ScenarioEvent {
+  @scala.inline
+  def apply(data: ScenarioEventData, name: __ON_SCENARIO__): ScenarioEvent = {
+    val __obj = js.Dynamic.literal(data = data, name = name)
+  
+    __obj.asInstanceOf[ScenarioEvent]
+  }
+}
+

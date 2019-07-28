@@ -31,27 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get a GitHub username from an email address.
-
-@param email - Email address for the user of whom you want the username.
-@param token - GitHub [personal access token](https://github.com/settings/tokens/new).
-@returns The username for the `email`.
-
-@example
-```
-import githubUsername = require('github-username');
-
-(async () => {
-	console.log(await githubUsername('sindresorhus@gmail.com'));
-	//=> 'sindresorhus'
-})();
-```
-*/
-
-```
 

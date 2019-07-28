@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(numeric)) [id => numeric, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abs) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abseq) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(acos) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
@@ -80,12 +80,12 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Iact) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveQP) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_S) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(svd) / TsFunSig() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing numeric [id => numeric, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing numeric [id => numeric, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => numeric, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
-	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
-	at com.olvind.tso.scalajs.MethodTree.renamed(tree.scala:151)
-	at com.olvind.tso.scalajs.MethodTree.withSuffix(tree.scala:146)
+	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:49)
+	at com.olvind.tso.scalajs.MethodTree.renamed(tree.scala:162)
+	at com.olvind.tso.scalajs.MethodTree.withSuffix(tree.scala:154)
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.$anonfun$combineSameErasureSameTypeParams$7(CombineOverloads.scala:68)
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.$anonfun$combineSameErasureSameTypeParams$7$adapted(CombineOverloads.scala:67)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
@@ -133,12 +133,20 @@
 	at scala.collection.immutable.List.map(List.scala:298)
 	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:123)
 	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:192)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$10(Phase2ToScalaJs.scala:55)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$15(Phase2ToScalaJs.scala:64)
+	at com.olvind.tso.scalajs.TreeTransformation.visitTree(TreeTransformation.scala:206)
+	at com.olvind.tso.scalajs.TreeTransformation.$anonfun$visitPackageTree$1(TreeTransformation.scala:123)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.immutable.List.map(List.scala:298)
+	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:123)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$11(Phase2ToScalaJs.scala:66)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$16(Phase2ToScalaJs.scala:75)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:74)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
@@ -171,7 +179,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:213)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -182,8 +190,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main.run(Main.scala:215)
-	at com.olvind.tso.importer.Main$.main(Main.scala:313)
+	at com.olvind.tso.importer.Main.run(Main.scala:213)
+	at com.olvind.tso.importer.Main$.main(Main.scala:311)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => scala.js] 

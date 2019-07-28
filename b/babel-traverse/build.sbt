@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babel-traverse"
-version := "6.25-dt-20190212Z-88069f"
+version := "6.25-dt-20190212Z-9f72a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-98b295",
-  "org.scalablytyped" %%% "std" % "3.5-983486")
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-c55b3a",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

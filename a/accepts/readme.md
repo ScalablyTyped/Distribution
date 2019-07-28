@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for accepts 1.3
-// Project: https://github.com/jshttp/accepts
-// Definitions by: Stefan Reichel <https://github.com/bomret>
-//                 Brice BERNARD <https://github.com/brikou>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

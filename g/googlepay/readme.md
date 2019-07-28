@@ -13,17 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for non-npm package Google Pay API 0.2
-// Project: https://developers.google.com/pay/api/web/
-// Definitions by: Florian Luccioni <https://github.com/Fluccioni>,
-//                 Radu Raicea <https://github.com/Radu-Raicea>,
-//                 Filip Stanis <https://github.com/fstanis>
-//                 Alexandre Couret <https://github.com/ozotek>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

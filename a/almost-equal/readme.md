@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for almost-equal 1.1
-// Project: https://github.com/mikolalysenko/almost-equal#readme
-// Definitions by: Curtis Maddalozzo <https://github.com/cmaddalozzo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

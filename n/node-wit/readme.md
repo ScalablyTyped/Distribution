@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-wit 4.2
-// Project: https://github.com/wit-ai/node-wit#readme
-// Definitions by: Julien Dufresne <https://github.com/julienduf>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

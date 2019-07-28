@@ -1,0 +1,22 @@
+package typings.atAntDashDesignReactDashNative
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Files extends js.Object {
+  var files: js.Array[scala.Nothing]
+  var selectable: Boolean
+  def onChange(): Unit
+  def onFail(): Unit
+}
+
+object Anon_Files {
+  @scala.inline
+  def apply(files: js.Array[scala.Nothing], onChange: () => Unit, onFail: () => Unit, selectable: Boolean): Anon_Files = {
+    val __obj = js.Dynamic.literal(files = files, onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable)
+  
+    __obj.asInstanceOf[Anon_Files]
+  }
+}
+

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @storybook/addon-info 4.1
-// Project: https://github.com/storybookjs/storybook, https://github.com/storybookjs/storybook/tree/master/addons/info
-// Definitions by: Mark Kornblum <https://github.com/mkornblum>
-//                 Mattias Wikstrom <https://github.com/fyrkant>
-//                 Kevin Lee <https://github.com/RunningCoderLee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

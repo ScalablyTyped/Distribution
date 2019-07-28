@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for urlrouter
-// Project: https://github.com/fengmk2/urlrouter
-// Definitions by: soywiz <https://github.com/soywiz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,22 @@
+package typings.matterDashJs.matterDashJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IEventCollision[T] extends IEventTimestamped[T] {
+  /**
+    * The collision pair
+    */
+  var pairs: js.Array[IPair]
+}
+
+object IEventCollision {
+  @scala.inline
+  def apply[T](name: String, pairs: js.Array[IPair], source: T, timestamp: Double): IEventCollision[T] = {
+    val __obj = js.Dynamic.literal(name = name, pairs = pairs, source = source.asInstanceOf[js.Any], timestamp = timestamp)
+  
+    __obj.asInstanceOf[IEventCollision[T]]
+  }
+}
+

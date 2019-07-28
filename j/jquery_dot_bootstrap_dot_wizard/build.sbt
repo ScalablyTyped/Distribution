@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_bootstrap_dot_wizard"
-version := "0.0-unknown-dt-20190322Z-f3552c"
+version := "0.0-unknown-dt-20190322Z-ee48ff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

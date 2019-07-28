@@ -1,0 +1,40 @@
+package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait TaskResult extends js.Object
+
+@JSImport("vso-node-api/interfaces/BuildInterfaces", "TaskResult")
+@js.native
+object TaskResult extends js.Object {
+  @js.native
+  sealed trait Abandoned extends TaskResult
+  
+  @js.native
+  sealed trait Canceled extends TaskResult
+  
+  @js.native
+  sealed trait Failed extends TaskResult
+  
+  @js.native
+  sealed trait Skipped extends TaskResult
+  
+  @js.native
+  sealed trait Succeeded extends TaskResult
+  
+  @js.native
+  sealed trait SucceededWithIssues extends TaskResult
+  
+  /* 5 */ val Abandoned: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Abandoned with Double = js.native
+  /* 3 */ val Canceled: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Canceled with Double = js.native
+  /* 2 */ val Failed: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Failed with Double = js.native
+  /* 4 */ val Skipped: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Skipped with Double = js.native
+  /* 0 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Succeeded with Double = js.native
+  /* 1 */ val SucceededWithIssues: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.SucceededWithIssues with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[TaskResult with Double] = js.native
+}
+

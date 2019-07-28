@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for f1 8.0
-// Project: https://github.com/jam3/f1
-// Definitions by: Neo <https://github.com/neolwc>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

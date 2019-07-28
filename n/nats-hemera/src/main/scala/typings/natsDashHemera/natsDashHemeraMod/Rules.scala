@@ -1,0 +1,56 @@
+package typings.natsDashHemera.natsDashHemeraMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Rules[P /* <: js.Object */] extends js.Object {
+  var description: js.UndefOr[String | (js.Function1[/* params */ P, String])] = js.undefined
+  var name: String
+  var params: js.UndefOr[
+    ObjectSchema | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof P ]: nats-hemera.nats-hemera.SchemaLike}
+    */ typings.natsDashHemera.natsDashHemeraStrings.Rules with js.Any)
+  ] = js.undefined
+  var setup: js.UndefOr[
+    js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ js.Any, js.UndefOr[Schema]]
+  ] = js.undefined
+  var validate: js.UndefOr[
+    js.ThisFunction4[
+      /* this */ ExtensionBoundSchema, 
+      /* params */ P, 
+      /* value */ js.Any, 
+      /* state */ State, 
+      /* options */ ValidationOptions, 
+      _
+    ]
+  ] = js.undefined
+}
+
+object Rules {
+  @scala.inline
+  def apply[P /* <: js.Object */](
+    name: String,
+    description: String | (js.Function1[/* params */ P, String]) = null,
+    params: ObjectSchema | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof P ]: nats-hemera.nats-hemera.SchemaLike}
+    */ typings.natsDashHemera.natsDashHemeraStrings.Rules with js.Any) = null,
+    setup: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ js.Any, js.UndefOr[Schema]] = null,
+    validate: js.ThisFunction4[
+      /* this */ ExtensionBoundSchema, 
+      /* params */ P, 
+      /* value */ js.Any, 
+      /* state */ State, 
+      /* options */ ValidationOptions, 
+      _
+    ] = null
+  ): Rules[P] = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Rules[P]]
+  }
+}
+

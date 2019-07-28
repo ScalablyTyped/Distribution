@@ -1,0 +1,14 @@
+package typings.reactDashScrollDashIntoDashViewDashIfDashNeeded
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollDashIntoDashViewDashIfDashNeededMod.ReactScrollIntoViewIfNeededProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashScrollDashIntoDashViewDashIfDashNeededComponents extends reactDashScrollDashIntoDashViewDashIfDashNeededProps {
+  @scala.inline
+  def ReactDashScrollDashIntoDashViewDashIfDashNeeded: ComponentType[ReactScrollIntoViewIfNeededProps] = js.constructorOf[typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollDashIntoDashViewDashIfDashNeededMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollDashIntoDashViewDashIfDashNeededMod.ReactScrollIntoViewIfNeededProps]]
+}
+

@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a file path is an archive file.
-
-@example
-```
-import isArchive = require('is-archive');
-
-isArchive('source/unicorn.zip');
-//=> true
-
-isArchive('source/unicorn.txt');
-//=> false
-```
-*/
-
-```
 

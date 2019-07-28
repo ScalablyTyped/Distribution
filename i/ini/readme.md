@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ini v1.3.3
-// Project: https://github.com/isaacs/ini
-// Definitions by: Marcin Porębski <https://github.com/marcinporebski>
-//                 Chris Arnesen <https://github.com/carnesen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,24 @@
+package typings.maliDashCompose
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("mali-compose", JSImport.Namespace)
+@js.native
+object maliDashComposeMod extends js.Object {
+  def apply(
+    middleware: js.Array[
+      js.Function2[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Context */ /* ctx */ _, 
+        /* next */ js.Function0[js.Promise[Unit]], 
+        js.Promise[Unit]
+      ]
+    ]
+  ): js.Function2[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Context */ /* context */ js.Any, 
+    /* next */ js.Function0[js.Promise[Unit]], 
+    js.Promise[Unit]
+  ] = js.native
+}
+

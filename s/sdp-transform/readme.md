@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sdp-transform 2.4
-// Project: https://github.com/clux/sdp-transform#readme
-// Definitions by: @loc <https://github.com/loc>, @muenchow <https://github.com/muenchow>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// https://tools.ietf.org/html/rfc4566
-// https://www.iana.org/assignments/sdp-parameters/sdp-parameters.xhtml
-
-```
 

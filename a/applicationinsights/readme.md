@@ -31,41 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Data struct to contain only C section with custom fields.
- */
-/**
- * Type of the metric data measurement.
- */
-/**
- * The abstract common base of all domains.
- */
-/**
- * Defines the level of severity for the event.
- */
-/**
- * Stack frame information.
- */
-/**
- * Base telemetry interface encapsulating comming properties
- */
-/**
- * Encapsulates options passed into client.flush() function
- */
-/**
- * Helper class to manage parsing and validation of traceparent header. Also handles hierarchical
- * back-compatibility headers generated from traceparent. W3C traceparent spec is documented at
- * https://www.w3.org/TR/trace-context/#traceparent-field
- */
-/**
- * Helper class to manage parsing and strict-validation of tracestate header. W3C tracestate spec
- * is documented at https://www.w3.org/TR/trace-context/#header-value
- * @class Tracestate
- */
-
-```
 

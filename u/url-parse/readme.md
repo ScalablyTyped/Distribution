@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for url-parse 1.4
-// Project: https://github.com/unshiftio/url-parse
-// Definitions by: Pavlo Chernenko <https://github.com/ChernenkoPaul>
-//                 Hari Sivaramakrishnan <https://github.com/harisiva>
-//                 Dmitry Dushkin <https://github.com/DimitryDushkin>
-//                 David Golightly <https://github.com/davidgoli>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

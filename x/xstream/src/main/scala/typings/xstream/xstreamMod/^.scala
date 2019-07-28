@@ -1,0 +1,12 @@
+package typings.xstream.xstreamMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("xstream", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val NO_IL: InternalListener[js.Any] = js.native
+}
+

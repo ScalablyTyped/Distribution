@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gm 1.18
-// Project: https://github.com/aheckmann/gm
-// Definitions by:  Joel Spadin <https://github.com/ChaosinaCan>
-//                  Maarten van Vliet <https://github.com/maartenvanvliet>
-//                  Vaclav Mlejnsky <https://github.com/mlejva>
-//                  Dimitry Kooijmans <https://github.com/mrcageman>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

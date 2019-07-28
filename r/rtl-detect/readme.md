@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rtl-detect 1.0
-// Project: https://github.com/shadiabuhilal/rtl-detect
-// Definitions by: imprevo <https://github.com/imprevo>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

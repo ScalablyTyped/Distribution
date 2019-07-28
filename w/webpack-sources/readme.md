@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for webpack-sources 0.1
-// Project: https://github.com/webpack/webpack-sources
-// Definitions by: e-cloud <https://github.com/e-cloud>
-//                 Chris Eppstein <https://github.com/chriseppstein>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

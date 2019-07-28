@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mem-cache 1.0
-// Project: https://github.com/silviom/node-mem-cache
-// Definitions by: Pedro Mutter <https://github.com/MutterPedro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

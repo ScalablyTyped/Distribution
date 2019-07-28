@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for React Router 4.3
-// Project: https://github.com/ReactTraining/react-router
-// Definitions by: Huy Nguyen <https://github.com/huy-nguyen>
-//                 Philip Jackson <https://github.com/p-jackson>
-//                 John Reilly <https://github.com/johnnyreilly>
-//                 Sebastian Silbermann <https://github.com/eps1lon>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -1,0 +1,31 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReposEnablePagesSiteResponse extends js.Object {
+  var cname: String
+  var custom_404: Boolean
+  var html_url: String
+  var source: ReposEnablePagesSiteResponseSource
+  var status: String
+  var url: String
+}
+
+object ReposEnablePagesSiteResponse {
+  @scala.inline
+  def apply(
+    cname: String,
+    custom_404: Boolean,
+    html_url: String,
+    source: ReposEnablePagesSiteResponseSource,
+    status: String,
+    url: String
+  ): ReposEnablePagesSiteResponse = {
+    val __obj = js.Dynamic.literal(cname = cname, custom_404 = custom_404, html_url = html_url, source = source, status = status, url = url)
+  
+    __obj.asInstanceOf[ReposEnablePagesSiteResponse]
+  }
+}
+

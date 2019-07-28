@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for easy-table
-// Project: https://github.com/eldargab/easy-table
-// Definitions by: Niklas Mollenhauer <https://github.com/nikeee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

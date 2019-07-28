@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Google Recaptcha 2.0
-// Project: https://www.google.com/recaptcha
-// Definitions by: Kristof Mattei <http://kristofmattei.be>
-//                 Martin Costello <https://martincostello.com/>
-//                 Ruslan Arkhipau <https://github.com/DethAriel>
-//                 Rafael Tavares <https://github.com/rafaeltavares>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

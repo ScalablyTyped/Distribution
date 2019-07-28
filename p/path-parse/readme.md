@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for path-parse v1.0.5
-// Project: https://github.com/jbgutierrez/path-parse
-// Definitions by: Dan Chao <http://dchao.co>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,12 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/* frac.js (C) 2012-present SheetJS -- http://sheetjs.com */
-// TypeScript Version: 2.2
-
-```
 

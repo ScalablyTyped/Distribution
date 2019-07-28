@@ -1,0 +1,50 @@
+package typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support
+  * ownership management or SELinux relabeling.
+  */
+trait QuobyteVolumeSource extends js.Object {
+  /**
+    * Group to map volume access to Default is no group
+    */
+  val group: String
+  /**
+    * ReadOnly here will force the Quobyte volume to be mounted with read-only permissions.
+    * Defaults to false.
+    */
+  val readOnly: Boolean
+  /**
+    * Registry represents a single or multiple Quobyte Registry services specified as a string as
+    * host:port pair (multiple entries are separated with commas) which acts as the central
+    * registry for volumes
+    */
+  val registry: String
+  /**
+    * Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned
+    * Quobyte volumes, value is set by the plugin
+    */
+  val tenant: String
+  /**
+    * User to map volume access to Defaults to serivceaccount user
+    */
+  val user: String
+  /**
+    * Volume is a string that references an already created Quobyte volume by name.
+    */
+  val volume: String
+}
+
+object QuobyteVolumeSource {
+  @scala.inline
+  def apply(group: String, readOnly: Boolean, registry: String, tenant: String, user: String, volume: String): QuobyteVolumeSource = {
+    val __obj = js.Dynamic.literal(group = group, readOnly = readOnly, registry = registry, tenant = tenant, user = user, volume = volume)
+  
+    __obj.asInstanceOf[QuobyteVolumeSource]
+  }
+}
+

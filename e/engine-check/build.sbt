@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "engine-check"
-version := "1.1-dt-20190717Z-401dc9"
+version := "1.1-dt-20190717Z-909029"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

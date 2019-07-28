@@ -1,0 +1,15 @@
+package typings.reactDashNativeDashSnapDashCarousel
+
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.CarouselProperties
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.PaginationProperties
+import typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSnapDashCarouselProps {
+  type PaginationProps = PaginationProperties
+  type ParallaxImageProps = ParallaxImageProperties
+  type ReactDashNativeDashSnapDashCarouselProps[T] = CarouselProperties[T]
+}
+

@@ -1,0 +1,106 @@
+package typings.atPhosphorVirtualdom.atPhosphorVirtualdomMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.abbr
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.accept
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.`accept-charset`
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.accesskey
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.action
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.allowfullscreen
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.alt
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.autocomplete
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.autofocus
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.autoplay
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.autosave
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.checked
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.cite
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.cols
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.colspan
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.contenteditable
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.controls
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.coords
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.crossorigin
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.data
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.datetime
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.default
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.dir
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.dirname
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.disabled
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.download
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.draggable
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.dropzone
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.enctype
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.form
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.formaction
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.formenctype
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.formmethod
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.formnovalidate
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.formtarget
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.headers
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.height
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.hidden
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.high
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.href
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.hreflang
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.id
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.inputmode
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.integrity
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.ismap
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.kind
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.label
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.lang
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.list
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.loop
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.low
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.max
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.maxlength
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.media
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.mediagroup
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.method
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.min
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.minlength
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.multiple
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.muted
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.name
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.novalidate
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.optimum
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.pattern
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.placeholder
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.poster
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.preload
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.readonly
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.rel
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.required
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.reversed
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.rows
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.rowspan
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.sandbox
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.scope
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.selected
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.shape
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.size
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.sizes
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.span
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.spellcheck
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.src
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.srcdoc
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.srclang
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.srcset
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.start
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.step
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.tabindex
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.target
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.title
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.`type`
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.typemustmatch
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.usemap
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.value
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.width
+  - typings.atPhosphorVirtualdom.atPhosphorVirtualdomStrings.wrap
+*/
+trait ElementAttrNames extends js.Object
+

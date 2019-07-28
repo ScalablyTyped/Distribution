@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsSignerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StartSigningJobResponse extends js.Object {
+  /**
+    * The ID of your signing job.
+    */
+  var jobId: js.UndefOr[JobId] = js.undefined
+}
+
+object StartSigningJobResponse {
+  @scala.inline
+  def apply(jobId: JobId = null): StartSigningJobResponse = {
+    val __obj = js.Dynamic.literal()
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    __obj.asInstanceOf[StartSigningJobResponse]
+  }
+}
+

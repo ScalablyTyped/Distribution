@@ -13,16 +13,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Commangular Mock 0.9.0
-// Project: http://commangular.org
-// Definitions by: Hiraash Thawfeek <https://github.com/hiraash>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-// Type definitions for Commangular 0.9.0
-// TypeScript Version: 2.3
-
-```
 

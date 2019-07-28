@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sprintf 0.1
-// Project: https://github.com/maritz/node-sprintf
-// Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>
-//                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Imported from: https://github.com/soywiz/typescript-node-definitions/sprintff.d.ts
-
-```
 

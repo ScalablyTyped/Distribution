@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jquery.placeholder.js 2.1.1
-// Project: https://github.com/mathiasbynens/jquery-placeholder
-// Definitions by: Peter Gill <https://github.com/majorsilence>, Neil Culver <https://github.com/EnableSoftware>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

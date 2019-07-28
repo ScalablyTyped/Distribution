@@ -1,0 +1,21 @@
+package typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod
+
+import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileTokenMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait QueryMatch extends js.Object {
+  var queryId: Double
+  var value: CompileTokenMetadata
+}
+
+object QueryMatch {
+  @scala.inline
+  def apply(queryId: Double, value: CompileTokenMetadata): QueryMatch = {
+    val __obj = js.Dynamic.literal(queryId = queryId, value = value)
+  
+    __obj.asInstanceOf[QueryMatch]
+  }
+}
+

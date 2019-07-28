@@ -1,0 +1,10 @@
+package typings.materialDashUi.svgDashIconsAvQueueDashMusicMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/av/queue-music", JSImport.Default)
+@js.native
+class default () extends AvQueueMusic
+

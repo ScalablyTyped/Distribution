@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for browser-resolve
-// Project: https://github.com/defunctzombie/node-browser-resolve
-// Definitions by: Mario Nebl <https://github.com/marionebl>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

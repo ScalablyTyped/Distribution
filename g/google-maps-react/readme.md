@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for google-maps-react 2.0
-// Project: https://github.com/fullstackreact/google-maps-react#readme
-// Definitions by: Gordon Burgett <https://github.com/gburgett>
-//                 Justin Powell <https://github.com/jpowell>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

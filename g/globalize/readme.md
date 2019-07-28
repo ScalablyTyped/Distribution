@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Globalize
-// Project: https://github.com/jquery/globalize
-// Definitions by: Grégoire Castre <https://github.com/gcastre>
-//                 Aram Taieb <https://github.com/afromogli>
-//                 Bryan Forbes <https://github.com/bryanforbes>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,22 @@
+package typings.devexpressDashWeb
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ASPxClientVerticalGridCallbackCommandStatic extends js.Object {
+  /**
+    * Default value: "EXPANDROW"
+    */
+  var ExpandRow: String
+}
+
+object ASPxClientVerticalGridCallbackCommandStatic {
+  @scala.inline
+  def apply(ExpandRow: String): ASPxClientVerticalGridCallbackCommandStatic = {
+    val __obj = js.Dynamic.literal(ExpandRow = ExpandRow)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridCallbackCommandStatic]
+  }
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for tinycon 0.6
-// Project: https://github.com/tommoor/tinycon
-// Definitions by: Daniel Waxweiler <https://github.com/dwaxweiler>
-//                 Julian Hundeloh <https://github.com/jaulz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

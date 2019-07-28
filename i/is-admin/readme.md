@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if the process is running as Administrator on Windows.
-
-@returns Whether the process is running as Administrator.
-
-@example
-```
-import isAdmin = require('is-admin');
-
-(async () => {
-	console.log(await isAdmin());
-	//=> false
-})();
-```
-*/
-
-```
 

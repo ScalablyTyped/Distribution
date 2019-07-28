@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for password-hash-and-salt 0.1
-// Project: https://github.com/florianheinemann/password-hash-and-salt
-// Definitions by: Ali Taheri <https://github.com/alitaheri>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

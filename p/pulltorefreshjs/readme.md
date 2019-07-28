@@ -28,15 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pulltorefreshjs 0.1
-// Project: https://github.com/BoxFactura/pulltorefresh.js
-// Definitions by: Daniel Rosenwasser <https://github.com/DanielRosenwasser>
-//                 Tamas Kinsztler <https://github.com/humpedli>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

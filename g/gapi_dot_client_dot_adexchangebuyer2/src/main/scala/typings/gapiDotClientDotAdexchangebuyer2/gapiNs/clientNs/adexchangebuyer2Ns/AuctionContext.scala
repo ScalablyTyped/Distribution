@@ -1,0 +1,20 @@
+package typings.gapiDotClientDotAdexchangebuyer2.gapiNs.clientNs.adexchangebuyer2Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AuctionContext extends js.Object {
+  /** The auction types this restriction applies to. */
+  var auctionTypes: js.UndefOr[js.Array[String]] = js.undefined
+}
+
+object AuctionContext {
+  @scala.inline
+  def apply(auctionTypes: js.Array[String] = null): AuctionContext = {
+    val __obj = js.Dynamic.literal()
+    if (auctionTypes != null) __obj.updateDynamic("auctionTypes")(auctionTypes)
+    __obj.asInstanceOf[AuctionContext]
+  }
+}
+

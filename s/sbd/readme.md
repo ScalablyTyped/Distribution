@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sbd 1.0
-// Project: http://github.com/tessmore/sbd
-// Definitions by: Brian Cort <https://github.com/thatcort>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

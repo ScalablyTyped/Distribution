@@ -1,0 +1,31 @@
+package typings.openui5.sapNs.mNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait DraftIndicatorState extends js.Object
+
+/**
+  * Enum for the state of sap.m.DraftIndicator control.
+  */
+@JSGlobal("sap.m.DraftIndicatorState")
+@js.native
+object DraftIndicatorState extends js.Object {
+  @js.native
+  sealed trait Clear extends DraftIndicatorState
+  
+  @js.native
+  sealed trait Saved extends DraftIndicatorState
+  
+  @js.native
+  sealed trait Saving extends DraftIndicatorState
+  
+  /* 0 */ val Clear: typings.openui5.sapNs.mNs.DraftIndicatorState.Clear with Double = js.native
+  /* 1 */ val Saved: typings.openui5.sapNs.mNs.DraftIndicatorState.Saved with Double = js.native
+  /* 2 */ val Saving: typings.openui5.sapNs.mNs.DraftIndicatorState.Saving with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[DraftIndicatorState with Double] = js.native
+}
+

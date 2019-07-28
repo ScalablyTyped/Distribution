@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ftdomdelegate
-// Project: https://github.com/ftlabs/ftdomdelegate
-// Definitions by: Christian Holm Nielsen <https://github.com/dotnetnerd>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

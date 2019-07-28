@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "storybook__components"
-version := "5.1.9-ddd1a5"
+version := "5.1.9-4d2d45"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.14-7805df",
-  "org.scalablytyped" %%% "emotion__core" % "10.0.14-422d9e",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.8-71e43b",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.14-a6ebd2",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.14-8e8269",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.2-4bbedf",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-b6ccee",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
-  "org.scalablytyped" %%% "react-syntax-highlighter" % "10.2-dt-20190530Z-c6bd4e",
-  "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "storybook__theming" % "5.1.9-1d932c")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.14-aa3ad2",
+  "org.scalablytyped" %%% "emotion__core" % "10.0.14-30ea36",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.8-4d72f0",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.14-dc3c21",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.14-0c4224",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.2-3c2e35",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-1a85e7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "react-syntax-highlighter" % "10.2-dt-20190530Z-4735df",
+  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
+  "org.scalablytyped" %%% "storybook__theming" % "5.1.9-2b492a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

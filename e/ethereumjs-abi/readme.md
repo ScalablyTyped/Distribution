@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ethereumjs-abi 0.6
-// Project: https://github.com/ethereumjs/ethereumjs-abi, https://github.com/axic/ethereumjs-abi
-// Definitions by: Leonid Logvinov <https://github.com/LogvinovLeon>
-//                 Artur Kozak <https://github.com/quezak>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Complex 3.0
-// Project: https://github.com/arian/Complex
-// Definitions by: Aya Morisawa <https://github.com/AyaMorisawa>
-//                 Paul Vasich <https://github.com/pavasich>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

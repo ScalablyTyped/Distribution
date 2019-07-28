@@ -1,0 +1,23 @@
+package typings.wepy
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Duration extends js.Object {
+  var duration: Double
+  var height: Double
+  var size: Double
+  var tempFilePath: String
+  var width: Double
+}
+
+object Anon_Duration {
+  @scala.inline
+  def apply(duration: Double, height: Double, size: Double, tempFilePath: String, width: Double): Anon_Duration = {
+    val __obj = js.Dynamic.literal(duration = duration, height = height, size = size, tempFilePath = tempFilePath, width = width)
+  
+    __obj.asInstanceOf[Anon_Duration]
+  }
+}
+

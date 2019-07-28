@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for random-seed 0.3
-// Project: https://github.com/skratchdot/random-seed/
-// Definitions by: Endel Dreyer <https://github.com/endel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

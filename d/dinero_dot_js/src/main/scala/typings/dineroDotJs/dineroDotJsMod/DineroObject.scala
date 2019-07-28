@@ -1,0 +1,21 @@
+package typings.dineroDotJs.dineroDotJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DineroObject extends js.Object {
+  var amount: Double
+  var currency: String
+  var precision: Double
+}
+
+object DineroObject {
+  @scala.inline
+  def apply(amount: Double, currency: String, precision: Double): DineroObject = {
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, precision = precision)
+  
+    __obj.asInstanceOf[DineroObject]
+  }
+}
+

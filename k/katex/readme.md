@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for KaTeX 0.10
-// Project: http://khan.github.io/KaTeX/
-// Definitions by: Michael Randolph <https://github.com/mrand01>
-//                 Kevin Nguyen <https://github.com/knguyen0125>
-//                 bLue <https://github.com/dreamerblue>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-```
 

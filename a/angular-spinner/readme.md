@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for angular-spinner.js 0.5.1
-// Project: https://github.com/urish/angular-spinner
-// Definitions by: Marcin Biegała <https://github.com/Biegal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-/**
-* SpinnerService
-* see https://github.com/urish/angular-spinner
-*/
-
-```
 

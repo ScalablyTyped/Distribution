@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for got 9.6
-// Project: https://github.com/sindresorhus/got#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-//                 Linus Unnebäck <https://github.com/LinusU>
-//                 Konstantin Ikonnikov <https://github.com/ikokostya>
-//                 Stijn Van Nieuwenhuyse <https://github.com/stijnvn>
-//                 Matthew Bull <https://github.com/wingsbob>
-//                 Ryan Wilson-Perkin <https://github.com/ryanwilsonperkin>
-//                 Paul Hawxby <https://github.com/phawxby>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

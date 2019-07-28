@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for elgamal 0.3
-// Project: https://github.com/kripod/elgamal.js
-// Definitions by: Yu-Hsi Chiang <https://github.com/arbuztw>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

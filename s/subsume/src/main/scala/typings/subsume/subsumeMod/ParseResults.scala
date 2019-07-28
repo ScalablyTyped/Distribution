@@ -1,0 +1,21 @@
+package typings.subsume.subsumeMod
+
+import typings.std.Map
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ParseResults extends js.Object {
+  var data: Map[String, String]
+  var rest: String
+}
+
+object ParseResults {
+  @scala.inline
+  def apply(data: Map[String, String], rest: String): ParseResults = {
+    val __obj = js.Dynamic.literal(data = data, rest = rest)
+  
+    __obj.asInstanceOf[ParseResults]
+  }
+}
+

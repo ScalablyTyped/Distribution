@@ -1,0 +1,14 @@
+package typings.atBang88ReactDashNativeDashDrawerDashLayout
+
+import typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+import typings.react.reactMod.ComponentType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object atBang88ReactDashNativeDashDrawerDashLayoutComponents extends atBang88ReactDashNativeDashDrawerDashLayoutProps {
+  @scala.inline
+  def ReactDashNativeDashDrawerDashLayout: ComponentType[DrawerLayoutProperties] = js.constructorOf[typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNativeDashDrawerDashLayoutMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties]]
+}
+

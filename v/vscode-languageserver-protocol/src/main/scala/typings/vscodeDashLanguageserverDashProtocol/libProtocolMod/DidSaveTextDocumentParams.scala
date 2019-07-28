@@ -1,0 +1,28 @@
+package typings.vscodeDashLanguageserverDashProtocol.libProtocolMod
+
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DidSaveTextDocumentParams extends js.Object {
+  /**
+    * Optional the content when saved. Depends on the includeText value
+    * when the save notification was requested.
+    */
+  var text: js.UndefOr[String] = js.undefined
+  /**
+    * The document that was closed.
+    */
+  var textDocument: VersionedTextDocumentIdentifier
+}
+
+object DidSaveTextDocumentParams {
+  @scala.inline
+  def apply(textDocument: VersionedTextDocumentIdentifier, text: String = null): DidSaveTextDocumentParams = {
+    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DidSaveTextDocumentParams]
+  }
+}
+

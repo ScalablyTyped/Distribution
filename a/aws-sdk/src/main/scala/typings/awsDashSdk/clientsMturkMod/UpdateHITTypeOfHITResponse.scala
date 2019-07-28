@@ -1,0 +1,8 @@
+package typings.awsDashSdk.clientsMturkMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UpdateHITTypeOfHITResponse extends js.Object
+

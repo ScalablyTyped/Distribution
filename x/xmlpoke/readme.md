@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for xmlpoke 0.1.12
-// Project: https://github.com/mikeobrien/node-xmlpoke
-// Definitions by: Garth Kidd <https://github.com/garthk>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

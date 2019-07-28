@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for webpack-watched-glob-entries-plugin 2.1
-// Project: https://github.com/Milanzor/webpack-watched-glob-entries-plugin#readme
-// Definitions by: Joel Spadin <https://github.com/ChaosinaCan>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

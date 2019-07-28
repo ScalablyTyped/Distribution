@@ -1,0 +1,75 @@
+package typings.tstl.containerVectorBooleanMod
+
+import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
+import typings.tstl.containerVectorBooleanMod.VectorBooleanNs.Iterator
+import typings.tstl.containerVectorBooleanMod.VectorBooleanNs.ReverseIterator
+import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tstl/container/VectorBoolean", "VectorBoolean")
+@js.native
+/**
+  * Default Constructor.
+  */
+class VectorBoolean () extends ArrayContainer[Boolean, VectorBoolean, VectorBoolean, Iterator, ReverseIterator, Boolean] {
+  /**
+    * Initializer Constructor.
+    *
+    * @param items Items to assign.
+    */
+  def this(array: js.Array[Boolean]) = this()
+  /**
+    * Copy Constructor
+    *
+    * @param obj Object to copy.
+    */
+  def this(obj: VectorBoolean) = this()
+  /**
+    * Range Constructor.
+    *
+    * @param first Input iterator of the first position.
+    * @param last Input iteartor of the last position.
+    */
+  def this(
+    first: IForwardIterator[Boolean, IForwardIterator[Boolean, _]],
+    last: IForwardIterator[Boolean, IForwardIterator[Boolean, _]]
+  ) = this()
+  /**
+    * Fill Constructor.
+    *
+    * @param size Initial size.
+    * @param val Value to fill.
+    */
+  def this(n: Double, `val`: Boolean) = this()
+  /**
+    * @hidden
+    */
+  var _Find_node: js.Any = js.native
+  /**
+    * @hidden
+    */
+  var _Insert_to_end: js.Any = js.native
+  /**
+    * @hidden
+    */
+  var _Insert_to_middle: js.Any = js.native
+  /**
+    * @hidden
+    */
+  var data_ : js.Any = js.native
+  /**
+    * @hidden
+    */
+  var size_ : js.Any = js.native
+  /**
+    * @inheritDoc
+    */
+  def assign(n: Double, `val`: Boolean): Unit = js.native
+  /**
+    * Flip all values.
+    */
+  def flip(): Unit = js.native
+}
+

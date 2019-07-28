@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>
-//                 Leon Yu <https://github.com/leonyu>
-//                 BendingBender <https://github.com/BendingBender>
-//                 Maple Miao <https://github.com/mapleeit>
-
-```
 

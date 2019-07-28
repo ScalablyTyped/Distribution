@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-geocoder 3.19
-// Project: https://github.com/nchaulet/node-geocoder#readme
-// Definitions by: Krzysztof Rosinski <https://github.com/rosek86>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

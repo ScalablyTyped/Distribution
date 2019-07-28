@@ -1,0 +1,31 @@
+package typings.autoprefixerDashCore.autoprefixerDashCoreMod
+
+import typings.autoprefixerDashCore.Anon_Inline
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var from: js.UndefOr[String] = js.undefined
+  var map: js.UndefOr[Anon_Inline] = js.undefined
+  var safe: js.UndefOr[Boolean] = js.undefined
+  var to: js.UndefOr[String] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    from: String = null,
+    map: Anon_Inline = null,
+    safe: js.UndefOr[Boolean] = js.undefined,
+    to: String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Options]
+  }
+}
+

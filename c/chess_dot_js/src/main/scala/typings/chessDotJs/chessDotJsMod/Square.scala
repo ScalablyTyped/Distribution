@@ -1,0 +1,74 @@
+package typings.chessDotJs.chessDotJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.chessDotJs.chessDotJsStrings.a8
+  - typings.chessDotJs.chessDotJsStrings.b8
+  - typings.chessDotJs.chessDotJsStrings.c8
+  - typings.chessDotJs.chessDotJsStrings.d8
+  - typings.chessDotJs.chessDotJsStrings.e8
+  - typings.chessDotJs.chessDotJsStrings.f8
+  - typings.chessDotJs.chessDotJsStrings.g8
+  - typings.chessDotJs.chessDotJsStrings.h8
+  - typings.chessDotJs.chessDotJsStrings.a7
+  - typings.chessDotJs.chessDotJsStrings.b7
+  - typings.chessDotJs.chessDotJsStrings.c7
+  - typings.chessDotJs.chessDotJsStrings.d7
+  - typings.chessDotJs.chessDotJsStrings.e7
+  - typings.chessDotJs.chessDotJsStrings.f7
+  - typings.chessDotJs.chessDotJsStrings.g7
+  - typings.chessDotJs.chessDotJsStrings.h7
+  - typings.chessDotJs.chessDotJsStrings.a6
+  - typings.chessDotJs.chessDotJsStrings.b6
+  - typings.chessDotJs.chessDotJsStrings.c6
+  - typings.chessDotJs.chessDotJsStrings.d6
+  - typings.chessDotJs.chessDotJsStrings.e6
+  - typings.chessDotJs.chessDotJsStrings.f6
+  - typings.chessDotJs.chessDotJsStrings.g6
+  - typings.chessDotJs.chessDotJsStrings.h6
+  - typings.chessDotJs.chessDotJsStrings.a5
+  - typings.chessDotJs.chessDotJsStrings.b5
+  - typings.chessDotJs.chessDotJsStrings.c5
+  - typings.chessDotJs.chessDotJsStrings.d5
+  - typings.chessDotJs.chessDotJsStrings.e5
+  - typings.chessDotJs.chessDotJsStrings.f5
+  - typings.chessDotJs.chessDotJsStrings.g5
+  - typings.chessDotJs.chessDotJsStrings.h5
+  - typings.chessDotJs.chessDotJsStrings.a4
+  - typings.chessDotJs.chessDotJsStrings.b4
+  - typings.chessDotJs.chessDotJsStrings.c4
+  - typings.chessDotJs.chessDotJsStrings.d4
+  - typings.chessDotJs.chessDotJsStrings.e4
+  - typings.chessDotJs.chessDotJsStrings.f4
+  - typings.chessDotJs.chessDotJsStrings.g4
+  - typings.chessDotJs.chessDotJsStrings.h4
+  - typings.chessDotJs.chessDotJsStrings.a3
+  - typings.chessDotJs.chessDotJsStrings.b3
+  - typings.chessDotJs.chessDotJsStrings.c3
+  - typings.chessDotJs.chessDotJsStrings.d3
+  - typings.chessDotJs.chessDotJsStrings.e3
+  - typings.chessDotJs.chessDotJsStrings.f3
+  - typings.chessDotJs.chessDotJsStrings.g3
+  - typings.chessDotJs.chessDotJsStrings.h3
+  - typings.chessDotJs.chessDotJsStrings.a2
+  - typings.chessDotJs.chessDotJsStrings.b2
+  - typings.chessDotJs.chessDotJsStrings.c2
+  - typings.chessDotJs.chessDotJsStrings.d2
+  - typings.chessDotJs.chessDotJsStrings.e2
+  - typings.chessDotJs.chessDotJsStrings.f2
+  - typings.chessDotJs.chessDotJsStrings.g2
+  - typings.chessDotJs.chessDotJsStrings.h2
+  - typings.chessDotJs.chessDotJsStrings.a1
+  - typings.chessDotJs.chessDotJsStrings.b1
+  - typings.chessDotJs.chessDotJsStrings.c1
+  - typings.chessDotJs.chessDotJsStrings.d1
+  - typings.chessDotJs.chessDotJsStrings.e1
+  - typings.chessDotJs.chessDotJsStrings.f1
+  - typings.chessDotJs.chessDotJsStrings.g1
+  - typings.chessDotJs.chessDotJsStrings.h1
+*/
+trait Square extends js.Object
+

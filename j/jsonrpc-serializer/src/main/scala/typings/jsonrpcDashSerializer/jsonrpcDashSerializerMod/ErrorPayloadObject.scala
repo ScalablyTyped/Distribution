@@ -1,0 +1,30 @@
+package typings.jsonrpcDashSerializer.jsonrpcDashSerializerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ErrorPayloadObject extends PayloadObject {
+  @JSName("error")
+  var error_ErrorPayloadObject: SerializerError
+  @JSName("id")
+  var id_ErrorPayloadObject: String | Double
+}
+
+object ErrorPayloadObject {
+  @scala.inline
+  def apply(
+    error: SerializerError,
+    id: String | Double,
+    method: String = null,
+    params: js.Any = null,
+    result: js.Any = null
+  ): ErrorPayloadObject = {
+    val __obj = js.Dynamic.literal(error = error, id = id.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ErrorPayloadObject]
+  }
+}
+

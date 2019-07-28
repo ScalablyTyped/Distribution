@@ -1,0 +1,47 @@
+package typings.openui5.sapNs.mNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait FacetFilterListDataType extends js.Object
+
+/**
+  * FacetFilterList data types.
+  */
+@JSGlobal("sap.m.FacetFilterListDataType")
+@js.native
+object FacetFilterListDataType extends js.Object {
+  @js.native
+  sealed trait Boolean extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait Date extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait DateTime extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait Float extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait Integer extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait String extends FacetFilterListDataType
+  
+  @js.native
+  sealed trait Time extends FacetFilterListDataType
+  
+  /* 0 */ val Boolean: typings.openui5.sapNs.mNs.FacetFilterListDataType.Boolean with Double = js.native
+  /* 1 */ val Date: typings.openui5.sapNs.mNs.FacetFilterListDataType.Date with Double = js.native
+  /* 2 */ val DateTime: typings.openui5.sapNs.mNs.FacetFilterListDataType.DateTime with Double = js.native
+  /* 3 */ val Float: typings.openui5.sapNs.mNs.FacetFilterListDataType.Float with Double = js.native
+  /* 4 */ val Integer: typings.openui5.sapNs.mNs.FacetFilterListDataType.Integer with Double = js.native
+  /* 5 */ val String: typings.openui5.sapNs.mNs.FacetFilterListDataType.String with Double = js.native
+  /* 6 */ val Time: typings.openui5.sapNs.mNs.FacetFilterListDataType.Time with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[FacetFilterListDataType with Double] = js.native
+}
+

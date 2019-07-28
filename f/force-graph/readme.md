@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for force-graph 1.15
-// Project: https://github.com/vasturiano/force-graph
-// Definitions by: Peter Kimberley <https://github.com/p-kimberley>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

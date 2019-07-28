@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inherits"
-version := "0.0-unknown-dt-20190322Z-c6b9bf"
+version := "0.0-unknown-dt-20190322Z-ce4bb9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,12 @@
+package typings.arcgisDashJsDashApi.esriRenderersMixinsVisualVariablesRendererMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariablesRendererConstructor
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("esri/renderers/mixins/VisualVariablesRenderer", JSImport.Namespace)
+@js.native
+object ^ extends TopLevel[VisualVariablesRendererConstructor]
+

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for promisify-supertest v1.0.0
-// Project: https://www.npmjs.com/package/promisify-supertest
-// Definitions by: Leo Liang <https://github.com/aleung>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-// Mostly copy-pasted from supertest.d.ts
-
-```
 

@@ -1,0 +1,23 @@
+package typings.fluentDashReact.fluentDashReactMod
+
+import typings.fluentDashReact.fluentDashReactNumbers.`3`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Node extends js.Object {
+  var TEXT_NODE: `3`
+  var localName: js.UndefOr[String] = js.undefined
+  var nodeType: Double
+  var textContext: String
+}
+
+object Node {
+  @scala.inline
+  def apply(TEXT_NODE: `3`, nodeType: Double, textContext: String, localName: String = null): Node = {
+    val __obj = js.Dynamic.literal(TEXT_NODE = TEXT_NODE, nodeType = nodeType, textContext = textContext)
+    if (localName != null) __obj.updateDynamic("localName")(localName)
+    __obj.asInstanceOf[Node]
+  }
+}
+

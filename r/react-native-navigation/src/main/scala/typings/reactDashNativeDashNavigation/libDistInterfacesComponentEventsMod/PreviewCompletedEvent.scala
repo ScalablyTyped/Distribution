@@ -1,0 +1,21 @@
+package typings.reactDashNativeDashNavigation.libDistInterfacesComponentEventsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PreviewCompletedEvent extends ComponentEvent {
+  var componentName: js.UndefOr[String] = js.undefined
+  var previewComponentId: js.UndefOr[String] = js.undefined
+}
+
+object PreviewCompletedEvent {
+  @scala.inline
+  def apply(componentId: String, componentName: String = null, previewComponentId: String = null): PreviewCompletedEvent = {
+    val __obj = js.Dynamic.literal(componentId = componentId)
+    if (componentName != null) __obj.updateDynamic("componentName")(componentName)
+    if (previewComponentId != null) __obj.updateDynamic("previewComponentId")(previewComponentId)
+    __obj.asInstanceOf[PreviewCompletedEvent]
+  }
+}
+

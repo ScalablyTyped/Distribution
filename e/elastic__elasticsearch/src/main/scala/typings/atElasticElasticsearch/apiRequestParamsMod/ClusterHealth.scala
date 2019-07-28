@@ -1,0 +1,84 @@
+package typings.atElasticElasticsearch.apiRequestParamsMod
+
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.all
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.closed
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.cluster
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.green
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.high
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.immediate
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.indices
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.languid
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.low
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.none
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.normal
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.open
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.red
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.shards
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.urgent
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.yellow
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ClusterHealth extends Generic {
+  var expand_wildcards: js.UndefOr[open | closed | none | all] = js.undefined
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
+  var level: js.UndefOr[cluster | indices | shards] = js.undefined
+  var local: js.UndefOr[Boolean] = js.undefined
+  var master_timeout: js.UndefOr[String] = js.undefined
+  var timeout: js.UndefOr[String] = js.undefined
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
+  var wait_for_events: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.undefined
+  var wait_for_no_initializing_shards: js.UndefOr[Boolean] = js.undefined
+  var wait_for_no_relocating_shards: js.UndefOr[Boolean] = js.undefined
+  var wait_for_nodes: js.UndefOr[String] = js.undefined
+  var wait_for_status: js.UndefOr[green | yellow | red] = js.undefined
+}
+
+object ClusterHealth {
+  @scala.inline
+  def apply(
+    error_trace: js.UndefOr[Boolean] = js.undefined,
+    expand_wildcards: open | closed | none | all = null,
+    filter_path: String | js.Array[String] = null,
+    human: js.UndefOr[Boolean] = js.undefined,
+    ignore: Double | js.Array[Double] = null,
+    index: String | js.Array[String] = null,
+    level: cluster | indices | shards = null,
+    local: js.UndefOr[Boolean] = js.undefined,
+    master_timeout: String = null,
+    method: String = null,
+    pretty: js.UndefOr[Boolean] = js.undefined,
+    source: String = null,
+    timeout: String = null,
+    wait_for_active_shards: String = null,
+    wait_for_events: immediate | urgent | high | normal | low | languid = null,
+    wait_for_no_initializing_shards: js.UndefOr[Boolean] = js.undefined,
+    wait_for_no_relocating_shards: js.UndefOr[Boolean] = js.undefined,
+    wait_for_nodes: String = null,
+    wait_for_status: green | yellow | red = null
+  ): ClusterHealth = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    if (expand_wildcards != null) __obj.updateDynamic("expand_wildcards")(expand_wildcards.asInstanceOf[js.Any])
+    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local)
+    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards)
+    if (wait_for_events != null) __obj.updateDynamic("wait_for_events")(wait_for_events.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait_for_no_initializing_shards)) __obj.updateDynamic("wait_for_no_initializing_shards")(wait_for_no_initializing_shards)
+    if (!js.isUndefined(wait_for_no_relocating_shards)) __obj.updateDynamic("wait_for_no_relocating_shards")(wait_for_no_relocating_shards)
+    if (wait_for_nodes != null) __obj.updateDynamic("wait_for_nodes")(wait_for_nodes)
+    if (wait_for_status != null) __obj.updateDynamic("wait_for_status")(wait_for_status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterHealth]
+  }
+}
+

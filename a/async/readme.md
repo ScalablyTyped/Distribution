@@ -31,22 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Async 3.0
-// Project: https://github.com/caolan/async, https://caolan.github.io/async
-// Definitions by: Boris Yankov <https://github.com/borisyankov>
-//                 Arseniy Maximov <https://github.com/kern0>
-//                 Joe Herman <https://github.com/Penryn>
-//                 Angus Fenying <https://github.com/fenying>
-//                 Pascal Martin <https://github.com/pascalmartin>
-//                 Dmitri Trofimov <https://github.com/Dmitri1337>
-//                 Etienne Rossignon <https://github.com/erossignon>
-//                 Lifeng Zhu <https://github.com/Juliiii>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

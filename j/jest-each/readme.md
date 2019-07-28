@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jest-each 0.3
-// Project: https://github.com/facebook/jest
-// Definitions by: Michael Utz <https://github.com/theutz>, Nick McCurdy <https://github.com/nickmccurdy>
-// Definitions: <https://github.com/DefinitelyTyped/DefinitelyTyped>
-// TypeScript Version: 2.2
-
-```
 

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pako 1.0
-// Project: https://github.com/nodeca/pako
-// Definitions by: Denis Cappellin <https://github.com/cappellin>
-//                 Caleb Eggensperger <https://github.com/calebegg>
-//                 Muhammet Öztürk <https://github.com/hlthi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

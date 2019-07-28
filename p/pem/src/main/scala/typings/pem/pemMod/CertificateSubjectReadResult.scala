@@ -1,0 +1,33 @@
+package typings.pem.pemMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CertificateSubjectReadResult extends js.Object {
+  var commonName: String
+  var country: String
+  var emailAddress: String
+  var locality: String
+  var organization: String
+  var organizationUnit: String
+  var state: String
+}
+
+object CertificateSubjectReadResult {
+  @scala.inline
+  def apply(
+    commonName: String,
+    country: String,
+    emailAddress: String,
+    locality: String,
+    organization: String,
+    organizationUnit: String,
+    state: String
+  ): CertificateSubjectReadResult = {
+    val __obj = js.Dynamic.literal(commonName = commonName, country = country, emailAddress = emailAddress, locality = locality, organization = organization, organizationUnit = organizationUnit, state = state)
+  
+    __obj.asInstanceOf[CertificateSubjectReadResult]
+  }
+}
+

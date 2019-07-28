@@ -1,0 +1,22 @@
+package typings.socketcluster.socketclusterMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BrokerExitInfo extends js.Object {
+  var code: Double
+  var id: Double
+  var pid: Double
+  var signal: String
+}
+
+object BrokerExitInfo {
+  @scala.inline
+  def apply(code: Double, id: Double, pid: Double, signal: String): BrokerExitInfo = {
+    val __obj = js.Dynamic.literal(code = code, id = id, pid = pid, signal = signal)
+  
+    __obj.asInstanceOf[BrokerExitInfo]
+  }
+}
+

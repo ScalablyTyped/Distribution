@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for koa-response-time 2.1
-// Project: https://github.com/koajs/response-time#readme
-// Definitions by: Thor Sedeke <https://github.com/thorsedeke>
-//                 Steven McDowall <https://github.com/sjmcdowall>
-//                 Dwscdv3 <https://github.com/Dwscdv3>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

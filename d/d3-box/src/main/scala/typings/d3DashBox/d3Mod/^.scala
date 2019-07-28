@@ -1,0 +1,12 @@
+package typings.d3DashBox.d3Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("d3")
+@js.native
+object ^ extends js.Object {
+  def box(): Box = js.native
+}
+

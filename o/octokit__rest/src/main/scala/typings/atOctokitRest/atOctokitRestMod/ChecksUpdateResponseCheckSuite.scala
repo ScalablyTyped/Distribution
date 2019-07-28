@@ -1,0 +1,19 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ChecksUpdateResponseCheckSuite extends js.Object {
+  var id: Double
+}
+
+object ChecksUpdateResponseCheckSuite {
+  @scala.inline
+  def apply(id: Double): ChecksUpdateResponseCheckSuite = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[ChecksUpdateResponseCheckSuite]
+  }
+}
+

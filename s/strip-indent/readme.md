@@ -31,28 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Strip leading whitespace from each line in a string.
-
-The line with the least number of leading whitespace, ignoring empty lines, determines the number to remove.
-
-@example
-```
-import stripIndent = require('strip-indent');
-
-const string = '\tunicorn\n\t\tcake';
-//	unicorn
-//		cake
-
-stripIndent(string);
-//unicorn
-//	cake
-```
-*/
-
-```
 

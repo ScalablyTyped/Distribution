@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for URI.js 1.19
-// Project: http://medialize.github.io/URI.js
-// Definitions by: RodneyJT <https://github.com/RodneyJT>
-//                 Brian Surowiec <https://github.com/xt0rted>
-//                 Pete Johanson <https://github.com/petejohanson>
-//                 Zhibin Liu <https://github.com/ljqx>
-//                 TeamworkGuy2 <https://github.com/teamworkguy2>
-//                 Akuukis <https://github.com/Akuukis>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-// urijs uses DOM dependencies which are absent in browserless envoronment like node.js.
-// to avoid compiler errors this monkey patch is used. See more details in:
-// - sinon: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11351
-// - rxjs: https://github.com/ReactiveX/rxjs/issues/1986
-
-```
 

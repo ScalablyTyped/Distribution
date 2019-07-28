@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Backbone 1.4
-// Project: http://backbonejs.org/
-//          https://github.com/jashkenas/backbone
-// Definitions by: Boris Yankov <https://github.com/borisyankov>
-//                 Natan Vivo <https://github.com/nvivo>
-//                 kenjiru <https://github.com/kenjiru>
-//                 jjoekoullas <https://github.com/jjoekoullas>
-//                 Julian Gonggrijp <https://github.com/jgonggrijp>
-//                 Kyle Scully <https://github.com/zieka>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for mocha-phantomjs v3.5.0
-// Project: http://metaskills.net/mocha-phantomjs/
-// Definitions by: Erik Schierboom <https://github.com/ErikSchierboom>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

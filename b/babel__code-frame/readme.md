@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @babel/code-frame 7.0
-// Project: https://github.com/babel/babel/tree/master/packages/babel-code-frame, https://babeljs.io
-// Definitions by: Mohsen Azimi <https://github.com/mohsen1>
-//                 Forbes Lindesay <https://github.com/ForbesLindesay>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

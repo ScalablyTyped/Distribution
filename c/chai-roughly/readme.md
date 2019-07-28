@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-roughly 1.0
-// Project: https://github.com/Turbo87/chai-roughly#readme
-// Definitions by: Tomasz Nguyen <https://github.com/swist>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

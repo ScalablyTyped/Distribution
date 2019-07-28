@@ -1,0 +1,68 @@
+package typings
+
+import typings.cypress.JQueryNs.AjaxSettings
+import typings.cypress.JQueryNs.Callbacks
+import typings.cypress.JQueryNs.Coordinates
+import typings.cypress.JQueryNs.Deferred
+import typings.cypress.JQueryNs.EffectsOptions
+import typings.cypress.JQueryNs.EventStatic
+import typings.cypress.JQueryNs.NameValuePair
+import typings.cypress.JQueryNs.PlainObject
+import typings.cypress.JQueryNs.Promise
+import typings.cypress.JQueryNs.Thenable
+import typings.cypress.JQueryNs.TypeOrArray
+import typings.cypress.JQueryNs.jqXHR
+import typings.std.Element
+import typings.std.Event
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object cypress {
+  // tslint:disable-next-line:no-empty-interface
+  type JQueryAjaxSettings = AjaxSettings[js.Any]
+  type JQueryAnimationOptions = EffectsOptions[Element]
+  // region Legacy types
+  // tslint:disable-next-line:no-empty-interface
+  type JQueryCallback = Callbacks[js.Function]
+  // tslint:disable-next-line:no-empty-interface
+  type JQueryCoordinates = Coordinates
+  type JQueryDeferred[T] = Deferred[T, js.Any, js.Any]
+  /**
+    * @deprecated Internal. See \`{@link https://github.com/jquery/api.jquery.com/issues/912 }\`.
+    */
+  type JQueryEasingFunction = js.Function1[/* percent */ Double, Double]
+  // tslint:disable-next-line:no-empty-interface
+  type JQueryEventConstructor = EventStatic
+  type JQueryGenericPromise[T] = Thenable[T]
+  /**
+    * @deprecated Use \`{@link JQueryStatic.param JQueryStatic&#91;'param'&#93;}\`.
+    */
+  type JQueryParam = js.Function2[/* obj */ js.Any, /* traditional */ js.UndefOr[Boolean], String]
+  type JQueryPromise[T] = Promise[T, js.Any, js.Any]
+  // Legacy types that are not represented in the current type definitions are marked deprecated.
+  /**
+    * @deprecated Use \`{@link JQuery.Deferred.Callback }\` or \`{@link JQuery.Deferred.CallbackBase }\`.
+    */
+  type JQueryPromiseCallback[T] = js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit]
+  /**
+    * @deprecated
+    */
+  type JQueryPromiseOperator[T, U] = js.Function2[
+    /* callback1 */ TypeOrArray[JQueryPromiseCallback[T]], 
+    /* repeated */ TypeOrArray[JQueryPromiseCallback[js.Any]], 
+    JQueryPromise[U]
+  ]
+  // tslint:disable-next-line:no-empty-interface
+  type JQuerySerializeArrayElement = NameValuePair
+  /**
+    * @deprecated Deprecated since 1.9. See \`{@link https://api.jquery.com/jQuery.support/ }\`.
+    */
+  // tslint:disable-next-line:no-empty-interface
+  type JQuerySupport = PlainObject[js.Any]
+  // tslint:disable-next-line:no-empty-interface
+  type JQueryXHR = jqXHR[js.Any]
+  type MochaDone = js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+  // Used by JQuery.Event
+  type _Event = Event
+}

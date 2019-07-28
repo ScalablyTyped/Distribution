@@ -1,0 +1,77 @@
+package typings.fridaDashGum
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.fridaDashGum.fridaDashGumStrings.v0
+  - typings.fridaDashGum.fridaDashGumStrings.v1
+  - typings.fridaDashGum.fridaDashGumStrings.a0
+  - typings.fridaDashGum.fridaDashGumStrings.a1
+  - typings.fridaDashGum.fridaDashGumStrings.a2
+  - typings.fridaDashGum.fridaDashGumStrings.a3
+  - typings.fridaDashGum.fridaDashGumStrings.t0
+  - typings.fridaDashGum.fridaDashGumStrings.t1
+  - typings.fridaDashGum.fridaDashGumStrings.t2
+  - typings.fridaDashGum.fridaDashGumStrings.t3
+  - typings.fridaDashGum.fridaDashGumStrings.t4
+  - typings.fridaDashGum.fridaDashGumStrings.t5
+  - typings.fridaDashGum.fridaDashGumStrings.t6
+  - typings.fridaDashGum.fridaDashGumStrings.t7
+  - typings.fridaDashGum.fridaDashGumStrings.s0
+  - typings.fridaDashGum.fridaDashGumStrings.s1
+  - typings.fridaDashGum.fridaDashGumStrings.s2
+  - typings.fridaDashGum.fridaDashGumStrings.s3
+  - typings.fridaDashGum.fridaDashGumStrings.s4
+  - typings.fridaDashGum.fridaDashGumStrings.s5
+  - typings.fridaDashGum.fridaDashGumStrings.s6
+  - typings.fridaDashGum.fridaDashGumStrings.s7
+  - typings.fridaDashGum.fridaDashGumStrings.t8
+  - typings.fridaDashGum.fridaDashGumStrings.t9
+  - typings.fridaDashGum.fridaDashGumStrings.k0
+  - typings.fridaDashGum.fridaDashGumStrings.k1
+  - typings.fridaDashGum.fridaDashGumStrings.gp
+  - typings.fridaDashGum.fridaDashGumStrings.sp
+  - typings.fridaDashGum.fridaDashGumStrings.fp
+  - typings.fridaDashGum.fridaDashGumStrings.s8
+  - typings.fridaDashGum.fridaDashGumStrings.ra
+  - typings.fridaDashGum.fridaDashGumStrings.hi
+  - typings.fridaDashGum.fridaDashGumStrings.lo
+  - typings.fridaDashGum.fridaDashGumStrings.zero
+  - typings.fridaDashGum.fridaDashGumStrings.at
+  - typings.fridaDashGum.fridaDashGumStrings.`0`
+  - typings.fridaDashGum.fridaDashGumStrings.`1`
+  - typings.fridaDashGum.fridaDashGumStrings.`2`
+  - typings.fridaDashGum.fridaDashGumStrings.`3`
+  - typings.fridaDashGum.fridaDashGumStrings.`4`
+  - typings.fridaDashGum.fridaDashGumStrings.`5`
+  - typings.fridaDashGum.fridaDashGumStrings.`6`
+  - typings.fridaDashGum.fridaDashGumStrings.`7`
+  - typings.fridaDashGum.fridaDashGumStrings.`8`
+  - typings.fridaDashGum.fridaDashGumStrings.`9`
+  - typings.fridaDashGum.fridaDashGumStrings.`10`
+  - typings.fridaDashGum.fridaDashGumStrings.`11`
+  - typings.fridaDashGum.fridaDashGumStrings.`12`
+  - typings.fridaDashGum.fridaDashGumStrings.`13`
+  - typings.fridaDashGum.fridaDashGumStrings.`14`
+  - typings.fridaDashGum.fridaDashGumStrings.`15`
+  - typings.fridaDashGum.fridaDashGumStrings.`16`
+  - typings.fridaDashGum.fridaDashGumStrings.`17`
+  - typings.fridaDashGum.fridaDashGumStrings.`18`
+  - typings.fridaDashGum.fridaDashGumStrings.`19`
+  - typings.fridaDashGum.fridaDashGumStrings.`20`
+  - typings.fridaDashGum.fridaDashGumStrings.`21`
+  - typings.fridaDashGum.fridaDashGumStrings.`22`
+  - typings.fridaDashGum.fridaDashGumStrings.`23`
+  - typings.fridaDashGum.fridaDashGumStrings.`24`
+  - typings.fridaDashGum.fridaDashGumStrings.`25`
+  - typings.fridaDashGum.fridaDashGumStrings.`26`
+  - typings.fridaDashGum.fridaDashGumStrings.`27`
+  - typings.fridaDashGum.fridaDashGumStrings.`28`
+  - typings.fridaDashGum.fridaDashGumStrings.`29`
+  - typings.fridaDashGum.fridaDashGumStrings.`30`
+  - typings.fridaDashGum.fridaDashGumStrings.`31`
+*/
+trait MipsRegister extends _MipsCallArgument
+

@@ -1,0 +1,14 @@
+package typings.polylabel
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("polylabel", JSImport.Namespace)
+@js.native
+object polylabelMod extends js.Object {
+  def default(polygon: js.Array[js.Array[js.Array[Double]]]): js.Array[Double] = js.native
+  def default(polygon: js.Array[js.Array[js.Array[Double]]], precision: Double): js.Array[Double] = js.native
+  def default(polygon: js.Array[js.Array[js.Array[Double]]], precision: Double, debug: Boolean): js.Array[Double] = js.native
+}
+

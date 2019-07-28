@@ -4,28 +4,28 @@
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-howler) [id => react-howler, phase => typescript, file => ../types/react/index.d.ts] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/howler/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler, howler))) [id => react-howler, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler))) [id => react-howler, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/howler/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler, howler))) [id => react-howler, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler))) [id => react-howler, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(react-howler)) [id => react-howler, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler, react))) [id => react-howler, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-howler),TsIdentLibrarySimple(react-howler)),TsIdentModule(None,List(react-howler, react))) [id => react-howler, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(react-howler, react)) [id => react-howler, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(react-howler) [id => react-howler, phase => typescript] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(any)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(any) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(array)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(array) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(bool)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(bool) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(func)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(func) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(number)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(number) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(object)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(object) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(string)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(string) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(node)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(node) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(element)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(element) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(instanceOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(instanceOf) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(oneOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(oneOf) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(oneOfType)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(oneOfType) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(arrayOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(arrayOf) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(objectOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(objectOf) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(shape)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(shape) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(exact)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(exact) / TsTypeQuery())] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(react-howler) [id => react-howler, phase => typescript] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(any)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(any) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(array)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(array) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(bool)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(bool) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(func)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(func) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(number)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(number) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(object)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(object) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(string)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(string) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(node)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(node) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(element)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(element) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(instanceOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(instanceOf) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(oneOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(oneOf) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(oneOfType)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(oneOfType) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(arrayOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(arrayOf) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(objectOf)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(objectOf) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(shape)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(shape) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(PropTypes), TsIdentSimple(exact)))) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsExport() / TsExporteeTree() / TsDeclInterface(ReactPropTypes) / TsMemberProperty(exact) / TsTypeQuery())] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsGlobal() / TsDeclNamespace(JSX) / TsDeclInterface(Element))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsGlobal() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicAttributes))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsGlobal() / TsDeclNamespace(JSX) / TsDeclInterface(IntrinsicClassAttributes))] 
@@ -198,7 +198,7 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_PropTypes) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclTypeAlias(ReactManagedAttributes) / TsTypeConditional() / TsTypeConditional() / TsTypeExtends() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DefaultPropsD) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclTypeAlias(ReactManagedAttributes) / TsTypeConditional() / TsTypeConditional() / TsTypeConditional() / TsTypeExtends() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing react-howler [id => react-howler, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing react-howler [id => react-howler, phase => scala.js] 
 [info ] ImportType.scala:245 Failed type conversion: infer D [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_DefaultPropsD) / TsMemberProperty(defaultProps) / TsTypeInfer())] 
 [info ] ImportType.scala:245 Failed type conversion: infer T [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_PropTypes) / TsMemberProperty(propTypes) / TsTypeInfer())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: react-howler.react-howler/react.IsExactlyAny<T[K]> extends true? K : never}[keyof T] [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclTypeAlias(ExactlyAnyPropertyKeys) / TsTypeLookup())] 
@@ -207,64 +207,65 @@
 [info ] ImportType.scala:245 Failed type conversion: infer R [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_Ref) / TsMemberProperty(ref) / TsTypeInfer())] 
 [info ] ImportType.scala:245 Failed type conversion: infer T [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_DefaultProps) / TsMemberProperty(propTypes) / TsTypeInfer())] 
 [info ] ImportType.scala:245 Failed type conversion: infer D [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_DefaultProps) / TsMemberProperty(defaultProps) / TsTypeInfer())] 
-[info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))) at Name(reactDashHowlerLib) / Name(reactMod) / Name(ClassicComponentClass) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(reactDashHowlerLib), Name(reactMod), Name(StaticLifecycle))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))),List(),NoComments)) [id => react-howler, phase => scala.js, this => Name(reactDashHowlerLib) / Name(reactMod) / Name(ClassicComponentClass)] 
+[info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))) at Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(ClassicComponentClass) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typings), Name(reactDashHowler), Name(reactMod), Name(StaticLifecycle))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))),List(),NoComments)) [id => react-howler, phase => scala.js, this => Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(ClassicComponentClass)] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => scala.js] 
-[warn ] Phase3Compile.scala:204 Building react-howler... [id => react-howler, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E11] src/main/scala/typings/reactDashHowlerLib/reactMod/WheelEvent.scala:8:43
+[warn ] Phase3Compile.scala:208 Building react-howler... [id => react-howler, phase => build] 
+[error] Phase3Compile.scala:234 [E] [E11] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala:9:58
 [E]       illegal cyclic reference involving trait WheelEvent
-[E]       L8: trait WheelEvent[T] extends MouseEvent[T, NativeWheelEvent] {
-[E]                                                     ^
-[E] [E10] src/main/scala/typings/reactDashHowlerLib/reactMod/UIEvent.scala:9:30
+[E]       L9:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativeWheelEvent] {
+[E]                                                                    ^
+[E] [E10] src/main/scala/typings/reactDashHowler/reactMod/UIEvent.scala:8:45
 [E]       illegal cyclic reference involving trait UIEvent
-[E]       L9:   extends BaseSyntheticEvent[NativeUIEvent, reactDashHowlerLib.EventTarget with T, reactDashHowlerLib.EventTarget] {
-[E]                                        ^
-[E] [E9] src/main/scala/typings/reactDashHowlerLib/reactMod/TransitionEvent.scala:10:7
+[E]       L8: trait UIEvent[T] extends BaseSyntheticEvent[NativeUIEvent, EventTarget with T, EventTarget] {
+[E]                                                       ^
+[E] [E9] src/main/scala/typings/reactDashHowler/reactMod/TransitionEvent.scala:8:53
 [E]      illegal cyclic reference involving trait TransitionEvent
-[E]      L10:       NativeTransitionEvent, 
-[E]                 ^
-[E] [E8] src/main/scala/typings/reactDashHowlerLib/reactMod/TouchEvent.scala:10:7
+[E]      L8: trait TransitionEvent[T] extends BaseSyntheticEvent[NativeTransitionEvent, EventTarget with T, EventTarget] {
+[E]                                                              ^
+[E] [E8] src/main/scala/typings/reactDashHowler/reactMod/TouchEvent.scala:8:48
 [E]      illegal cyclic reference involving trait TouchEvent
-[E]      L10:       NativeTouchEvent, 
-[E]                 ^
-[E] [E7] src/main/scala/typings/reactDashHowlerLib/reactMod/PointerEvent.scala:8:45
+[E]      L8: trait TouchEvent[T] extends BaseSyntheticEvent[NativeTouchEvent, EventTarget with T, EventTarget] {
+[E]                                                         ^
+[E] [E7] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala:12:58
 [E]      illegal cyclic reference involving trait PointerEvent
-[E]      L8: trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
-[E]                                                      ^
-[E] [E6] src/main/scala/typings/reactDashHowlerLib/reactMod/KeyboardEvent.scala:10:7
+[E]      L12:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativePointerEvent] {
+[E]                                                                    ^
+[E] [E6] src/main/scala/typings/reactDashHowler/reactMod/KeyboardEvent.scala:8:51
 [E]      illegal cyclic reference involving trait KeyboardEvent
-[E]      L10:       NativeKeyboardEvent, 
-[E]                 ^
-[E] [E5] src/main/scala/typings/reactDashHowlerLib/reactMod/FocusEvent.scala:10:7
+[E]      L8: trait KeyboardEvent[T] extends BaseSyntheticEvent[NativeKeyboardEvent, EventTarget with T, EventTarget] {
+[E]                                                            ^
+[E] [E5] src/main/scala/typings/reactDashHowler/reactMod/FocusEvent.scala:8:48
 [E]      illegal cyclic reference involving trait FocusEvent
-[E]      L10:       NativeFocusEvent, 
-[E]                 ^
-[E] [E4] src/main/scala/typings/reactDashHowlerLib/reactMod/DragEvent.scala:8:42
+[E]      L8: trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget with T, EventTarget] {
+[E]                                                         ^
+[E] [E4] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala:10:58
 [E]      illegal cyclic reference involving trait DragEvent
-[E]      L8: trait DragEvent[T] extends MouseEvent[T, NativeDragEvent] {
-[E]                                                   ^
-[E] [E3] src/main/scala/typings/reactDashHowlerLib/reactMod/CompositionEvent.scala:10:7
+[E]      L10:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativeDragEvent] {
+[E]                                                                    ^
+[E] [E3] src/main/scala/typings/reactDashHowler/reactMod/CompositionEvent.scala:8:54
 [E]      illegal cyclic reference involving trait CompositionEvent
-[E]      L10:       NativeCompositionEvent, 
-[E]                 ^
-[E] [E2] src/main/scala/typings/reactDashHowlerLib/reactMod/ClipboardEvent.scala:10:7
+[E]      L8: trait CompositionEvent[T] extends BaseSyntheticEvent[NativeCompositionEvent, EventTarget with T, EventTarget] {
+[E]                                                               ^
+[E] [E2] src/main/scala/typings/reactDashHowler/reactMod/ClipboardEvent.scala:9:52
 [E]      illegal cyclic reference involving trait ClipboardEvent
-[E]      L10:       NativeClipboardEvent, 
-[E]                 ^
-[E] [E1] src/main/scala/typings/reactDashHowlerLib/reactMod/AnimationEvent.scala:10:7
+[E]      L9: trait ClipboardEvent[T] extends BaseSyntheticEvent[NativeClipboardEvent, EventTarget with T, EventTarget] {
+[E]                                                             ^
+[E] [E1] src/main/scala/typings/reactDashHowler/reactMod/AnimationEvent.scala:8:52
 [E]      illegal cyclic reference involving trait AnimationEvent
-[E]      L10:       NativeAnimationEvent, 
-[E]                 ^
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/WheelEvent.scala: L8 [E11]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/ClipboardEvent.scala: L10 [E2]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/CompositionEvent.scala: L10 [E3]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/TouchEvent.scala: L10 [E8]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/KeyboardEvent.scala: L10 [E6]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/FocusEvent.scala: L10 [E5]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/DragEvent.scala: L8 [E4]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/TransitionEvent.scala: L10 [E9]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/UIEvent.scala: L9 [E10]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/PointerEvent.scala: L8 [E7]
-[E] src/main/scala/typings/reactDashHowlerLib/reactMod/AnimationEvent.scala: L10 [E1]
+[E]      L8: trait AnimationEvent[T] extends BaseSyntheticEvent[NativeAnimationEvent, EventTarget with T, EventTarget] {
+[E]                                                             ^
+[E] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala: L12 [E7]
+[E] src/main/scala/typings/reactDashHowler/reactMod/AnimationEvent.scala: L8 [E1]
+[E] src/main/scala/typings/reactDashHowler/reactMod/KeyboardEvent.scala: L8 [E6]
+[E] src/main/scala/typings/reactDashHowler/reactMod/TransitionEvent.scala: L8 [E9]
+[E] src/main/scala/typings/reactDashHowler/reactMod/TouchEvent.scala: L8 [E8]
+[E] src/main/scala/typings/reactDashHowler/reactMod/CompositionEvent.scala: L8 [E3]
+[E] src/main/scala/typings/reactDashHowler/reactMod/FocusEvent.scala: L8 [E5]
+[E] src/main/scala/typings/reactDashHowler/reactMod/package.scala: L7 [E12], L7 [E13], L8 [E14], L8 [E15], L9 [E16], L9 [E17], L10 [E18], L10 [E19], L11 [E20], L12 [E21], L13 [E22], L14 [E23]
+[E] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala: L9 [E11]
+[E] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala: L10 [E4]
+[E] src/main/scala/typings/reactDashHowler/reactMod/UIEvent.scala: L8 [E10]
+[E] src/main/scala/typings/reactDashHowler/reactMod/ClipboardEvent.scala: L9 [E2]
 [E] Failed to compile 'react-howler'
  [id => react-howler, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [react-howler => Compilation failed] [id => react-howler, phase => build] 

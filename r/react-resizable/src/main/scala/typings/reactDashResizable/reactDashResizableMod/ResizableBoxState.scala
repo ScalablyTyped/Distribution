@@ -1,0 +1,20 @@
+package typings.reactDashResizable.reactDashResizableMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResizableBoxState extends js.Object {
+  var height: Double
+  var width: Double
+}
+
+object ResizableBoxState {
+  @scala.inline
+  def apply(height: Double, width: Double): ResizableBoxState = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[ResizableBoxState]
+  }
+}
+

@@ -1,0 +1,10 @@
+package typings.materialDashUi.svgDashIconsEditorFormatDashColorDashTextMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/editor/format-color-text", JSImport.Default)
+@js.native
+class default () extends EditorFormatColorText
+

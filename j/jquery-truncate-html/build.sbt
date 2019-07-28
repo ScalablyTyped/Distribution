@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-truncate-html"
-version := "0.0-unknown-dt-20190322Z-240a4b"
+version := "0.0-unknown-dt-20190322Z-84a1cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

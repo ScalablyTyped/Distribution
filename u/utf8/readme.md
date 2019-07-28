@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for utf8 v2.1.1
-// Project: https://github.com/mathiasbynens/utf8.js
-// Definitions by: Nick Zelei <https://github.com/zelein>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

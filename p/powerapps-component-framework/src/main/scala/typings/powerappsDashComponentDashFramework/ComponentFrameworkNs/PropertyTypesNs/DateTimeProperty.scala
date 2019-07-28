@@ -1,0 +1,41 @@
+package typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyTypesNs
+
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.FieldPropertyMetadataNs.DateTimeMetadata
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.FieldPropertyMetadataNs.Metadata
+import typings.powerappsDashComponentDashFramework.ComponentFrameworkNs.PropertyHelperNs.SecurityValues
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+		 * Property Interface for context.parameters.[property_key], when property manifest type starts from DateTime
+		 */
+trait DateTimeProperty extends Property {
+  var attributes: js.UndefOr[DateTimeMetadata] = js.undefined
+  @JSName("raw")
+  var raw_DateTimeProperty: Date
+}
+
+object DateTimeProperty {
+  @scala.inline
+  def apply(
+    error: Boolean,
+    errorMessage: String,
+    raw: Date,
+    `type`: String,
+    attribute: Metadata = null,
+    attributes: DateTimeMetadata = null,
+    formatted: String = null,
+    security: SecurityValues = null
+  ): DateTimeProperty = {
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    __obj.updateDynamic("type")(`type`)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (security != null) __obj.updateDynamic("security")(security)
+    __obj.asInstanceOf[DateTimeProperty]
+  }
+}
+

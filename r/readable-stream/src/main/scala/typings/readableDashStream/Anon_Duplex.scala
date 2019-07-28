@@ -1,0 +1,37 @@
+package typings.readableDashStream
+
+import typings.node.streamMod.Duplex
+import typings.node.streamMod.PassThrough
+import typings.node.streamMod.Readable
+import typings.node.streamMod.Transform
+import typings.node.streamMod.Writable
+import typings.node.streamMod.^
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Duplex extends js.Object {
+  var Duplex: typings.node.streamMod.Duplex
+  var PassThrough: typings.node.streamMod.PassThrough
+  var Readable: typings.node.streamMod.Readable
+  var Stream: ^
+  var Transform: typings.node.streamMod.Transform
+  var Writable: typings.node.streamMod.Writable
+}
+
+object Anon_Duplex {
+  @scala.inline
+  def apply(
+    Duplex: Duplex,
+    PassThrough: PassThrough,
+    Readable: Readable,
+    Stream: ^,
+    Transform: Transform,
+    Writable: Writable
+  ): Anon_Duplex = {
+    val __obj = js.Dynamic.literal(Duplex = Duplex, PassThrough = PassThrough, Readable = Readable, Stream = Stream, Transform = Transform, Writable = Writable)
+  
+    __obj.asInstanceOf[Anon_Duplex]
+  }
+}
+

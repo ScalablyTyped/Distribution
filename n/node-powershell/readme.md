@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-powershell v3.1.1
-// Project: https://github.com/rannn505/node-powershell
-// Definitions by: Rodrigo F. Fernandes <https://github.com/rodrigoff>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

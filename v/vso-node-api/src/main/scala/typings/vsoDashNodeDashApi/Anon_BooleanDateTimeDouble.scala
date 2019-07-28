@@ -1,0 +1,33 @@
+package typings.vsoDashNodeDashApi
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BooleanDateTimeDouble extends js.Object {
+  var boolean: Double
+  var dateTime: Double
+  var double: Double
+  var integer: Double
+  var plainText: Double
+  var string: Double
+  var treePath: Double
+}
+
+object Anon_BooleanDateTimeDouble {
+  @scala.inline
+  def apply(
+    boolean: Double,
+    dateTime: Double,
+    double: Double,
+    integer: Double,
+    plainText: Double,
+    string: Double,
+    treePath: Double
+  ): Anon_BooleanDateTimeDouble = {
+    val __obj = js.Dynamic.literal(boolean = boolean, dateTime = dateTime, double = double, integer = integer, plainText = plainText, string = string, treePath = treePath)
+  
+    __obj.asInstanceOf[Anon_BooleanDateTimeDouble]
+  }
+}
+

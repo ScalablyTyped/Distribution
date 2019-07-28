@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * ngTable: Table + Angular JS
- *
- * @author Vitalii Savchuk <esvit666@gmail.com>
- * @url https://github.com/esvit/ng-table/
- * @license New BSD License <http://creativecommons.org/licenses/BSD/>
- */
-/**
- * Definition of the buttons rendered by the data row pager directive
- */
-
-```
 

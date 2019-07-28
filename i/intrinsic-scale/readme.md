@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for intrinsic-scale 3.0
-// Project: https://github.com/bfred-it/intrinsic-scale#readme
-// Definitions by: shalomdotnet <https://github.com/shalomdotnet>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

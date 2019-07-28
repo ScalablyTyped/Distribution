@@ -31,27 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if a path is in the [current working directory](https://en.wikipedia.org/wiki/Working_directory).
-
-@example
-```
-import isPathInCwd = require('is-path-in-cwd');
-
-isPathInCwd('unicorn');
-//=> true
-
-isPathInCwd('../rainbow');
-//=> false
-
-isPathInCwd('.');
-//=> false
-```
-*/
-
-```
 

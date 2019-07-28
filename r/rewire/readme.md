@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rewire 2.5
-// Project: https://github.com/jhnns/rewire
-// Definitions by: Borislav Zhivkov <https://github.com/borislavjivkov>
-//                 Federico Caselli <https://github.com/CaselIT>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -1,0 +1,20 @@
+package typings.reactDashMapDashGl.reactDashMapDashGlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Center extends js.Object {
+  var x: Double
+  var y: Double
+}
+
+object Center {
+  @scala.inline
+  def apply(x: Double, y: Double): Center = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[Center]
+  }
+}
+

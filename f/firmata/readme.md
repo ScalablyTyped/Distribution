@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for firmata.js 0.19
-// Project: http://www.github.com/firmata/firmata.js
-// Definitions by: Troy W. <https://github.com/troywweber7>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Arbiter.js 1.0
-// Project: http://arbiterjs.com/
-// Definitions by: Arash Shakery <https://github.com/arash16>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// May 22 2013
-
-```
 

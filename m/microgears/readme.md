@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for microgears v4.0.x
-// Project: http://github.com/marcusdb/microgears
-// Definitions by: Marcus David Bronstein <https://github.com/marcusdb>
-
-```
 

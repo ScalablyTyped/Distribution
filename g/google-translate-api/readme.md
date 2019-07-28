@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for google-translate-api 2.3
-// Project: https://github.com/matheuss/google-translate-api#readme
-// Definitions by: maple3142 <https://github.com/maple3142>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,12 @@
+package typings.dtsDashGenerator
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("dts-generator", JSImport.Namespace)
+@js.native
+object dtsDashGeneratorRequire extends js.Object
+

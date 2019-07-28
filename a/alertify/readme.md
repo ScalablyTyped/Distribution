@@ -29,14 +29,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for alertify 0.3.11
-// Project: http://fabien-d.github.io/alertify.js/
-// Definitions by: John Jeffery <https://github.com/jjeffery>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

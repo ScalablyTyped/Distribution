@@ -1,0 +1,33 @@
+package typings.amapDashJsDashSdk
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AlwaysShow extends js.Object {
+  var alwaysShow: js.UndefOr[Boolean] = js.undefined
+  var cursor: js.UndefOr[String] = js.undefined
+  var hideFloorBar: js.UndefOr[Boolean] = js.undefined
+  var opacity: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.undefined
+}
+
+object Anon_AlwaysShow {
+  @scala.inline
+  def apply(
+    alwaysShow: js.UndefOr[Boolean] = js.undefined,
+    cursor: String = null,
+    hideFloorBar: js.UndefOr[Boolean] = js.undefined,
+    opacity: Int | Double = null,
+    zIndex: Int | Double = null
+  ): Anon_AlwaysShow = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(hideFloorBar)) __obj.updateDynamic("hideFloorBar")(hideFloorBar)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AlwaysShow]
+  }
+}
+

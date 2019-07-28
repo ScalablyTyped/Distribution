@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for element-resize-event 2.0.9
-// Project: https://github.com/KyleAMathews/element-resize-event
-// Definitions by: Rogier Schouten <https://github.com/rogierschouten>, Pierre-Luc Gregoire <https://github.com/plgregoire>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

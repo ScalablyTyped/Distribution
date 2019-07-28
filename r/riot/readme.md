@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for riot 3.6
-// Project: https://github.com/riot/riot, http://riot.js.org
-// Definitions by: Boriss Nazarovs <https://github.com/Stubb0rn>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-/**
- * Current version number as a string
- */
-
-```
 

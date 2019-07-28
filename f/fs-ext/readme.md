@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fs-ext
-// Project: https://github.com/baudehlo/node-fs-ext
-// Definitions by: Oguzhan Ergin <https://github.com/OguzhanE>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

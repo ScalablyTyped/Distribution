@@ -1,0 +1,27 @@
+package typings.parse5DashSaxDashParser.parse5DashSaxDashParserMod
+
+import typings.parse5.parse5Mod.Location
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CommentToken extends js.Object {
+  /**
+    * Comment source code location info. Available if location info is enabled via {@link SAXParserOptions}.
+    */
+  var sourceCodeLocation: js.UndefOr[Location] = js.undefined
+  /**
+    * Comment text.
+    */
+  var text: String
+}
+
+object CommentToken {
+  @scala.inline
+  def apply(text: String, sourceCodeLocation: Location = null): CommentToken = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[CommentToken]
+  }
+}
+

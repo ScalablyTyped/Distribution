@@ -1,0 +1,21 @@
+package typings.handsontable.handsontableMod.HandsontableNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SelectionController extends js.Object {
+  var cells: Boolean
+  var column: Boolean
+  var row: Boolean
+}
+
+object SelectionController {
+  @scala.inline
+  def apply(cells: Boolean, column: Boolean, row: Boolean): SelectionController = {
+    val __obj = js.Dynamic.literal(cells = cells, column = column, row = row)
+  
+    __obj.asInstanceOf[SelectionController]
+  }
+}
+

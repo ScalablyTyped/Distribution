@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for localtunnel 1.9
-// Project: https://github.com/localtunnel/localtunnel
-// Definitions by: Vladyslav Khrapov <https://github.com/vladhrapov>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for jade
-// Project: https://github.com/jadejs/jade
-// Definitions by: Panu Horsmalahti <https://github.com/panuhorsmalahti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

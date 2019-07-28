@@ -1,0 +1,32 @@
+package typings.elasticsearch.elasticsearchMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ClearScrollParams extends GenericParams {
+  var scrollId: NameList
+}
+
+object ClearScrollParams {
+  @scala.inline
+  def apply(
+    scrollId: NameList,
+    body: js.Any = null,
+    filterPath: String | js.Array[String] = null,
+    ignore: Double | js.Array[Double] = null,
+    maxRetries: Int | Double = null,
+    method: String = null,
+    requestTimeout: Int | Double = null
+  ): ClearScrollParams = {
+    val __obj = js.Dynamic.literal(scrollId = scrollId.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClearScrollParams]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for gulp-clean-dest 0.2
-// Project: https://github.com/clark800/gulp-clean-dest
-// Definitions by: Andrey Lalev <https://github.com/andypyrope>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

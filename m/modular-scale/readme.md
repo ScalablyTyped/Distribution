@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for modular-scale 5.1
-// Project: https://github.com/kristoferjoseph/modular-scale
-// Definitions by: Mike Fowler <https://github.com/mikefowler>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -78,6 +78,7 @@
 | 0.8794244764295105 | [vue-router](./v/vue-router) | Official router for Vue.js 2
 | 0.8794049245194621 | [pify](./p/pify) | Promisify a callback-style function
 | 0.8793111233094311 | [react-router-redux](./r/react-router-redux) | Ruthlessly simple bindings to keep react-router an
+| 0.8780174255795559 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
 | 0.8778824096619322 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 0.8770448908707043 | [d3](./d/d3) | Data-Driven Documents
 | 0.8759344401061098 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with 
@@ -3307,6 +3308,7 @@
 | 0.6575602746545854 | [ref-array-di](./r/ref-array-di) | Create C "array" instances on top of Buffers
 | 0.6575582119143555 | [hyper-aws4](./h/hyper-aws4) | AWS Signature Version 4 Signing Library for Hyper
 | 0.6575232187423508 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u
+| 0.6574473902778372 | [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application
 | 0.6573744523955221 | [d3-delaunay](./d/d3-delaunay) | Compute the Voronoi diagram of a set of two-dimens
 | 0.6573247368137317 | [react-chartjs-2](./r/react-chartjs-2) | react-chartjs-2
 | 0.6572996864995926 | [jsonabc](./j/jsonabc) | Sorts JSON object alphabetically. It supports nest
@@ -3481,6 +3483,7 @@
 | 0.6480954463742726 | [testingbot-api](./t/testingbot-api) | A wrapper around TestingBot's REST API
 | 0.6479691157959406 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises
 | 0.6478715398599623 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th
+| 0.647839138777955 | [kefir](./k/kefir) | Reactive Programming library for JavaScript inspir
 | 0.6477964562895508 | [rollup-plugin-node-resolv](./r/rollup-plugin-node-resolve) | Bundle third-party dependencies in node_modules
 | 0.6477897616084406 | [chunk-text](./c/chunk-text) | 🔪 chunk/split a string by length without cutting/
 | 0.6477605333855757 | [voronoi-diagram](./v/voronoi-diagram) | Constructs a Voronoi diagram for a collection of p
@@ -3620,6 +3623,7 @@
 | 0.6400895226340206 | [linqsharp](./l/linqsharp) | Linq methods based on .NET
 | 0.6400794887993964 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F
 | 0.6399892677713733 | [procfs-stats](./p/procfs-stats) | get detailed information (more than ps, top etc) a
+| 0.6399653031331218 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager
 | 0.6398666100009137 | [vnu-jar](./v/vnu-jar) | Provides the Nu Html Checker «vnu.jar» file
 | 0.639822515547197 | [howler](./h/howler) | Javascript audio library for the modern web.
 | 0.6397428287361273 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects
@@ -3683,6 +3687,8 @@
 | 0.6366622564281179 | [node-insights](./n/node-insights) | Submit and query New Relic Insights data
 | 0.6366619829196123 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work wit
 | 0.6366158834766835 | [jasmine-promise-matchers](./j/jasmine-promise-matchers) | Jasmine Promise Matchers ================
+| 0.636615066863764 | [jupyterlab__hub-extension](./j/jupyterlab__hub-extension) | JupyterLab integration for JupyterHub
+| 0.6365513612202345 | [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime
 | 0.6364112566360189 | [deep-extend](./d/deep-extend) | Recursive object extending
 | 0.6362266779647934 | [pi-spi](./p/pi-spi) | Simple async SPI library for Raspberry Pi
 | 0.636208968750732 | [intrinsic-scale](./i/intrinsic-scale) | Replicate background-size: cover/contain (scale+cr
@@ -3690,6 +3696,7 @@
 | 0.6358682933708665 | [send](./s/send) | Better streaming static file server with Range and
 | 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
+| 0.6357097208651624 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 0.6356053132776762 | [highcharts](./h/highcharts) | JavaScript charting framework
 | 0.6355517503766868 | [rollup-plugin-buble](./r/rollup-plugin-buble) | Compile ES2015 with buble
 | 0.635311937633098 | [react-tagcloud](./r/react-tagcloud) | Tag/word cloud component for react
@@ -3710,6 +3717,7 @@
 | 0.6342018001737337 | [ag-grid](./a/ag-grid) | Advanced Data Grid / Data Table supporting Javascr
 | 0.6341677698498165 | [react-input-calendar](./r/react-input-calendar) | Datepicker widget react component
 | 0.6341622775739463 | [redux-api-middleware](./r/redux-api-middleware) | Redux middleware for calling an API.
+| 0.6339729402979128 | [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget
 | 0.633957277664793 | [openpgp](./o/openpgp) | OpenPGP.js is a Javascript implementation of the O
 | 0.633943910338205 | [fluent-langneg](./f/fluent-langneg) | Language Negotiation API for Fluent
 | 0.6339227617671875 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app
@@ -3811,6 +3819,7 @@
 | 0.6260325613273962 | [atlassian-crowd-client](./a/atlassian-crowd-client) | Atlassian Crowd API client for Node
 | 0.6259551061721065 | [url-variables](./u/url-variables) | URLVariables class for TypeScript
 | 0.6259166505327667 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
+| 0.6257917197394696 | [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget
 | 0.62577844133259 | [sendmail](./s/sendmail) | Sendmail without setting up SMTP server
 | 0.6256109480362342 | [tmi_dot_js](./t/tmi_dot_js) | Javascript library for the Twitch Messaging Interf
 | 0.6255774350315593 | [react-spinners](./r/react-spinners) | A collection of react loading spinners
@@ -3859,6 +3868,7 @@
 | 0.6220174260177542 | [node-xlsx](./n/node-xlsx) | NodeJS Excel files parser & builder
 | 0.6216961575255888 | [memoizee](./m/memoizee) | Memoize/cache function results
 | 0.6215890653627776 | [exceljs](./e/exceljs) | Excel Workbook Manager - Read and Write xlsx and c
+| 0.6214994963134599 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
 | 0.6214677132305224 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer
 | 0.6213384787977796 | [watchify](./w/watchify) | watch mode for browserify builds
 | 0.6213364812595024 | [field](./f/field) | Easily set, get, stub values of a field in a JavaS
@@ -4315,7 +4325,6 @@
 | 0.5726618033075637 | [gm](./g/gm) | GraphicsMagick and ImageMagick for node.js
 | 0.5725018189057468 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.5723051573350508 | [vorpal](./v/vorpal) | Node's first framework for building immersive CLI 
-| 0.5721822310450162 | [koa-compose](./k/koa-compose) | compose Koa middleware
 | 0.5721222135488043 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
 | 0.57187584106903 | [react-svg-pan-zoom](./r/react-svg-pan-zoom) | A React component that adds pan and zoom features 
 | 0.5710623333256402 | [daterangepicker](./d/daterangepicker) | Date range picker component for Bootstrap
@@ -5432,6 +5441,7 @@
 | 0.4046718347713317 | [durandal](./d/durandal) | Durandal is a cross-device, cross-platform client 
 | 0.4043876279214934 | [redux-batched-subscribe](./r/redux-batched-subscribe) | redux store enhancer which allows batching subscri
 | 0.40436155329944456 | [atpl](./a/atpl) | A complete and fast template engine fully compatib
+| 0.40424209744748657 | [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs
 | 0.40396266741684667 | [neo4j](./n/neo4j) | Neo4j driver (REST API client) for Node.js
 | 0.4039587495724585 | [jquery_dot_transit](./j/jquery_dot_transit) | Smooth CSS3 transitions and transformations for jQ
 | 0.40392320951484817 | [uglifycss](./u/uglifycss) | Port of YUI CSS Compressor to NodeJS
@@ -5687,6 +5697,7 @@
 | 0.36844399055356186 | [react-native-material-kit](./r/react-native-material-kit) | Bringing Material Design to React Native
 | 0.3683119937845906 | [react-native-photo-view](./r/react-native-photo-view) | Displaying photos with pinch-to-zoom
 | 0.36811418020477255 | [gulp-cheerio](./g/gulp-cheerio) | Manipulate HTML and XML files with Cheerio in Gulp
+| 0.36810852429874663 | [jupyterlab__statusbar-ext](./j/jupyterlab__statusbar-extension) | JupyterLab - Statusbar Extension
 | 0.36790306482592294 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.3676399676602067 | [dookie](./d/dookie) | Stylus-inspired preprocessor for MongoDB data sets
 | 0.36750939591398657 | [rivets](./r/rivets) | Declarative data binding + templating solution.
@@ -5717,12 +5728,14 @@
 | 0.3635566215147725 | [backbone-associations](./b/backbone-associations) | Create object hierarchies with Backbone models. Re
 | 0.36355348714436725 | [is-color](./i/is-color) | Check if a string is CSS color value
 | 0.36352005707441054 | [dnssd](./d/dnssd) | Bonjour/Avahi-like service discovery in pure JavaS
+| 0.36348754498754915 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry
 | 0.36319497181425264 | [jquery-drawer](./j/jquery-drawer) | Flexible drawer menu using jQuery, iScroll and CSS
 | 0.3631078100985897 | [bunyan-winston-adapter](./b/bunyan-winston-adapter) | Allows to use winston logger in restify server wit
 | 0.3630277655385469 | [scoped-http-client](./s/scoped-http-client) | http client request wrapper
 | 0.36299112602385697 | [semantic-ui-checkbox](./s/semantic-ui-checkbox) | Single component release of checkbox
 | 0.36274741367695046 | [btoa](./b/btoa) | btoa for Node.JS (it's a one-liner)
 | 0.36262592033725505 | [react-owl-carousel](./r/react-owl-carousel) | React.js + Owl Carousel
+| 0.3626087303217025 | [jupyterlab__statusbar](./j/jupyterlab__statusbar) | JupyterLab statusbar package.
 | 0.3625820108175286 | [keysym](./k/keysym) | Look up X11 keysyms, unicode positions, and names.
 | 0.3624827532284865 | [node-wit](./n/node-wit) | Wit.ai Node.js SDK
 | 0.3623766216849183 | [overwatch-api](./o/overwatch-api) | An Unoffical Overwatch API.
@@ -5779,11 +5792,14 @@
 | 0.35473673574095216 | [string-replace-webpack-pl](./s/string-replace-webpack-plugin) | Replace string tokens in the contents of a file.
 | 0.3546718456646181 | [web3](./w/web3) | Ethereum JavaScript API
 | 0.35441865028400776 | [wheel](./w/wheel) | Mouse wheel event unified for all browsers
+| 0.3543753322889761 | [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities
 | 0.3542294237692264 | [redux-localstorage-filter](./r/redux-localstorage-filter) | Storage enhancer to persist a subset of your state
 | 0.35417581208185067 | [pty_dot_js](./p/pty_dot_js) | Pseudo terminals for node.
 | 0.3537989371044825 | [defaults-deep](./d/defaults-deep) | Like extend but recursively copies only the missin
+| 0.3537797125271426 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel
 | 0.35365039398203 | [locks](./l/locks) | Mutex locks, Read/Write locks, Condition variables
 | 0.3534612499075999 | [passport-vkontakte](./p/passport-vkontakte) | VK.com authentication strategy for Passport.
+| 0.35321746074979965 | [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells
 | 0.3531538599920964 | [avoscloud-sdk](./a/avoscloud-sdk) | AVOSCloud JavaScript SDK.
 | 0.3531172686355782 | [bootstrap-notify](./b/bootstrap-notify) | This is a simple plugin that turns standard Bootst
 | 0.3528263386816399 | [merkle](./m/merkle) | Javascript implementation of merkle trees
@@ -5800,6 +5816,7 @@
 | 0.3517034288081313 | [murmurhash](./m/murmurhash) | A Node.js module for the optimized JavaScript impl
 | 0.351545793829399 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in
 | 0.3515155011911312 | [coinbase](./c/coinbase) | The Coinbase API for Node.js
+| 0.35145294957763346 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
 | 0.35120617372480556 | [react-virtual-keyboard](./r/react-virtual-keyboard) | Use jQuery Virtual Keyboard in react.js
 | 0.35119046949913424 | [react-native-drawer-layou](./r/react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
 | 0.35071792583563177 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog.
@@ -5814,6 +5831,7 @@
 | 0.34927155918050967 | [react-native-scaled-image](./r/react-native-scaled-image) | Image component to add images without defining bot
 | 0.34921485706016625 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.3487730746978246 | [istanbul-middleware](./i/istanbul-middleware) | Connect middleware for Istanbul to handle server-s
+| 0.34871561485202146 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
 | 0.3486700901248488 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
 | 0.3485362986917547 | [app-root-dir](./a/app-root-dir) | Simple module to infer the root directory of the c
 | 0.3485362003398511 | [selectables](./s/selectables) | Select html elements on webpage using mouse
@@ -5831,6 +5849,7 @@
 | 0.3470463256712284 | [json-js](./j/json-js) | JSON in JavaScript
 | 0.34700509497762233 | [webicon](./w/webicon) | Icon library
 | 0.34680540301615237 | [ez-plus](./e/ez-plus) | A jQuery image zoom plug-in, with tints, easing an
+| 0.346707174655458 | [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer
 | 0.3466264391182379 | [knockout-amd-helpers](./k/knockout-amd-helpers) | Makes Knockout and AMD modules work better togethe
 | 0.3463049232061793 | [jquery-awesome-cursor](./j/jquery-awesome-cursor) | jQuery plugin for using FontAwesome icons as custo
 | 0.34619726573818754 | [cannon](./c/cannon) | A lightweight 3D physics engine written in JavaScr
@@ -5844,8 +5863,10 @@
 | 0.3447536267452698 | [passport-beam](./p/passport-beam) | Beam (OAuth) authentication strategies for Passpor
 | 0.3447092317222121 | [checksum](./c/checksum) | Checksum utility for node
 | 0.34466145854755165 | [gtin](./g/gtin) | GTIN (UPC, EAN, ITF, etc.) utilities.
+| 0.34462455715180806 | [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget
 | 0.34461910787504196 | [rdf-js](./r/rdf-js) | Mirror of the RDFJS TS typings
 | 0.3442732509508428 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
+| 0.3441635667875143 | [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector
 | 0.3441541235684412 | [seededshuffle](./s/seededshuffle) | Shuffle and unshuffle an array by seed/key.
 | 0.3440239302785783 | [libxslt](./l/libxslt) | Node.js bindings for libxslt compatible with libxm
 | 0.34311744324283255 | [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor
@@ -5856,11 +5877,14 @@
 | 0.342829301667834 | [oidc-token-manager](./o/oidc-token-manager) | Library to manage tokens obtained via OpenID Conne
 | 0.342587160287897 | [easy-x-headers](./e/easy-x-headers) | X-headers to object mapper
 | 0.34247138120875426 | [atlaskit__tree](./a/atlaskit__tree) | A React Component for displaying expandable and so
+| 0.3422831518047095 | [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget
 | 0.3422718065161649 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab
+| 0.34188928041663474 | [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments
 | 0.34183997122152554 | [react-native-modal-filter](./r/react-native-modal-filter-picker) | Cross-platform modal picker for React Native which
 | 0.3416797908529242 | [easy-jsend](./e/easy-jsend) | Adds jSend response functions to express.response 
 | 0.34127116973161875 | [sha256](./s/sha256) | Compute SHA256 of bytes or strings.
 | 0.3412461948068373 | [angular-tooltips](./a/angular-tooltips) | Angular.js tooltips module.
+| 0.34102103377417164 | [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension
 | 0.3408045790503266 | [stack-mapper](./s/stack-mapper) | Initialize it with a source map, then feed it erro
 | 0.3407427382440499 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting
 | 0.3405537215963695 | [js-schema](./j/js-schema) | A simple and intuitive object validation library
@@ -5879,10 +5903,19 @@
 | 0.3393852853198933 | [snowball-stemmers](./s/snowball-stemmers) | JS Port from Snowball Stemmers http://snowball.tar
 | 0.339374539421776 | [iso8601-localizer](./i/iso8601-localizer) | Simple to use getTimezoneOffset based ISO8601 loca
 | 0.3392478541758476 | [babel-plugin-syntax-jsx](./b/babel-plugin-syntax-jsx) | Allow parsing of jsx
+| 0.339187557668982 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
 | 0.33914396726956775 | [lodash_dot_frompairs](./l/lodash_dot_frompairs) | The lodash method _.fromPairs exported as a module
+| 0.339135577598015 | [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension
+| 0.33913358575757074 | [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension
+| 0.33913310926087137 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension
+| 0.3391221856706993 | [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension
+| 0.3391168904547509 | [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab
+| 0.33910888051224475 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
 | 0.33907515669346516 | [connect-ensure-login](./c/connect-ensure-login) | Login session ensuring middleware for Connect.
 | 0.3390138130133005 | [clovelced-plugin-audioman](./c/clovelced-plugin-audiomanagement) | A plugin to manage audio mode and volume
+| 0.3390048552171026 | [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension
 | 0.3390015033355301 | [clockpicker](./c/clockpicker) | A clock-style timepicker for Bootstrap (or jQuery)
+| 0.3389795394175833 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension
 | 0.3389317852226986 | [konami_dot_js](./k/konami_dot_js) | A small bit of JavaScript that recognizes the Kona
 | 0.33889664517655677 | [git](./g/git) | A node.js library for git
 | 0.33874723921733907 | [week](./w/week) | Get the current week number.
@@ -5890,6 +5923,7 @@
 | 0.33825069657217427 | [p2](./p/p2) | A JavaScript 2D physics engine.
 | 0.33816926128411756 | [swiz](./s/swiz) | Serialization and Validation Framework for objects
 | 0.3378898090619402 | [pg-escape](./p/pg-escape) | escape postgres queries which do not support store
+| 0.33787637462675196 | [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension
 | 0.3378194730543297 | [shrink-ray](./s/shrink-ray) | Node.js compression middleware with brotli and zop
 | 0.33775881600466584 | [angular-ui-router-default](./a/angular-ui-router-default) | AngularJS module that adds support for specifying 
 | 0.33758107935767867 | [wrench](./w/wrench) | Recursive filesystem (and other) operations that N
@@ -5901,6 +5935,7 @@
 | 0.3363244249690387 | [ngkookies](./n/ngkookies) | More powerful replacer for built-in Angular $cooki
 | 0.33629825623479387 | [redux-pack](./r/redux-pack) | Sensible promise handling and middleware for redux
 | 0.33620835164603136 | [swagger-express-mw](./s/swagger-express-mw) | Swagger loader and middleware for express
+| 0.33598790666739914 | [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension
 | 0.3359867919942216 | [stream-throttle](./s/stream-throttle) | A rate limiter for Node.js streams.
 | 0.3359416826292324 | [bases](./b/bases) | Utility for converting numbers to/from different b
 | 0.3356195659016868 | [oauth-shim](./o/oauth-shim) | OAuth2 shim for OAuth1 services, works with the cl
@@ -5916,6 +5951,7 @@
 | 0.3335303096168094 | [jquery-countto](./j/jquery-countto) | A jQuery plugin that will count up (or down) to a 
 | 0.3334646668784344 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC
 | 0.33343474458417244 | [expo__status-bar-height](./e/expo__status-bar-height) | Listen to status bar changes during incoming calls
+| 0.33320733808872605 | [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset
 | 0.33312929115114154 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
 | 0.3329429490789153 | [express-domain-middleware](./e/express-domain-middleware) | wrap express request/response with node domains
 | 0.3326148583049345 | [react-native-navbar](./r/react-native-navbar) | Simple customizable navbar component for react-nat
@@ -5955,6 +5991,7 @@
 | 0.3274432553898253 | [use-set-interval](./u/use-set-interval) | A React Hook (using useEffect) which uses window.s
 | 0.32742578490432234 | [rabbit_dot_js](./r/rabbit_dot_js) | Easy stream-based messaging using RabbitMQ
 | 0.3273729545975328 | [use-set-timeout](./u/use-set-timeout) | A React Hook (using useEffect) which uses window.s
+| 0.3273619058354065 | [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel
 | 0.3269034093221015 | [express-flash](./e/express-flash) | Flash Messages for your Express Application
 | 0.3266564659479681 | [lodash_dot_lowercase](./l/lodash_dot_lowercase) | The lodash method _.lowerCase exported as a module
 | 0.3266385804428996 | [mongoose-simple-random](./m/mongoose-simple-random) | Simple and easy-to-use NodeJS Mongoose Schema plug
@@ -5994,6 +6031,8 @@
 | 0.32011168585572575 | [check-sum](./c/check-sum) | Assert multiple checksums on a stream in parallel.
 | 0.3200460534251015 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi
 | 0.3200352171876657 | [babel-webpack-plugin](./b/babel-webpack-plugin) | babel plugin (not loader) for webpack
+| 0.32002449105842345 | [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer
+| 0.32002053525429625 | [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer
 | 0.3196611848864568 | [prosemirror-gapcursor](./p/prosemirror-gapcursor) | ProseMirror plugin for cursors at normally impossi
 | 0.31961517963828173 | [rbac-a](./r/rbac-a) | RBAC-A dynamic plugin roles implementation
 | 0.3194410713917999 | [react-is-deprecated](./r/react-is-deprecated) | Adds an isDeprecated method to the React.PropTypes
@@ -6446,17 +6485,20 @@
 | 0.21408416091560445 | [react-native-sensor-manag](./r/react-native-sensor-manager) | A react-native module that allows you to use the a
 | 0.21314809173181976 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests.
 | 0.21289719627081888 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
+| 0.21287783116199996 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
 | 0.21273519266237287 | [js-combinatorics](./j/js-combinatorics) | Simple combinatorics like power set, combination, 
 | 0.21236288067731252 | [closure-compiler](./c/closure-compiler) | Bindings to Google's Closure Compiler
 | 0.21225619111292868 | [react-native-background-t](./r/react-native-background-timer) | Emit event periodically (even when app is in the b
 | 0.21196790469733925 | [fhir-js-client](./f/fhir-js-client) | JavaScript client for Fast Healthcare Interoperabi
 | 0.2118550163767725 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.2117749615253468 | [fm-websync](./f/fm-websync) | > npm install --save @types/fm-websync
+| 0.21099549173850496 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget
 | 0.20998938740061798 | [react-file-input](./r/react-file-input) | Simple file input component for React
 | 0.20967319974710624 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
 | 0.20960724643597625 | [resize-observer-lite](./r/resize-observer-lite) | A ResizeObserver polyfill that has limited functio
 | 0.20923552086478237 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module.
 | 0.20911796049660814 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr
+| 0.20898070709092736 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
 | 0.20896232688519634 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
 | 0.20894788906384318 | [canvasjs](./c/canvasjs) | CanvasJS charting library
 | 0.20873941831262988 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods.
@@ -6485,26 +6527,48 @@
 | 0.20220669368111463 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress.
 | 0.2017824197657338 | [material__icon-toggle](./m/material__icon-toggle) | The Material Components for the web icon toggle co
 | 0.20134707995081297 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
+| 0.20080922345309998 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
+| 0.20080708367936934 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 0.20066961829356728 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly
+| 0.2004926436806096 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
 | 0.2000318786431426 | [amqp-rpc](./a/amqp-rpc) | AMQP RPC driver for node.js
 | 0.19988408491277004 | [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue.
+| 0.19951768133161868 | [jupyterlab__htmlviewer](./j/jupyterlab__htmlviewer) | A viewer for HTML documents.
 | 0.1994686873209554 | [jquery-cropbox](./j/jquery-cropbox) | jQuery plugin for in-place image cropping (zoom & 
+| 0.19905487420023216 | [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget
 | 0.19880417719171345 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0.1984100919680944 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 0.19775049523529142 | [lodash_dot_unescape](./l/lodash_dot_unescape) | The lodash method _.unescape exported as a module.
+| 0.1976327036199682 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
 | 0.1972438591092262 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer 
 | 0.19697897963657768 | [lodash_dot_union](./l/lodash_dot_union) | The lodash method _.union exported as a module.
 | 0.19671182392319322 | [operation-retrier](./o/operation-retrier) | -
 | 0.19624544489959875 | [ui-router-extras](./u/ui-router-extras) | UI-Router Extras: Sticky states, Future States, De
+| 0.1957114013185492 | [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension
 | 0.19514225681666444 | [mkcert](./m/mkcert) | Create Self Signed Development Certificates
 | 0.19487183736677277 | [pulumi__cloud](./p/pulumi__cloud) | A highly productive, cloud neutral programming mod
 | 0.1948351277466502 | [raspi-gpio](./r/raspi-gpio) | Provides access to GPIO on the Raspberry Pi from N
+| 0.19483317945934364 | [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme
 | 0.19476799084088017 | [firebase__installations](./f/firebase__installations) | -
+| 0.19465145139492235 | [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension
+| 0.19446863303037776 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager
+| 0.19444414536475246 | [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension
 | 0.19441435159256507 | [riot-api-nodejs](./r/riot-api-nodejs) | A NodeJS Library for Riot Games API
+| 0.1944041460328882 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface
 | 0.19402941327889944 | [react-native-incall-manag](./r/react-native-incall-manager) | Handling media-routes/sensors/events during a audi
 | 0.1939866647563361 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images
 | 0.19365121377778996 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0.1928181758853048 | [react-addons-test-utils](./r/react-addons-test-utils) | This package provides the React TestUtils add-on.
+| 0.1926111149393639 | [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer
+| 0.1926027149580985 | [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension
+| 0.19255963586947422 | [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension
+| 0.19255734512135925 | [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension
+| 0.19255608641599614 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
+| 0.19254870755724432 | [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension
+| 0.19254699011832843 | [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension
+| 0.1925467716286241 | [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension
+| 0.19252053122259552 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension
+| 0.19242692575877557 | [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme
 | 0.18955733217736703 | [ngprogress](./n/ngprogress) | slim, site-wide progressbar for AngularJS
 | 0.1889061911506119 | [nsqjs](./n/nsqjs) | NodeJS client for NSQ
 | 0.18797426208194468 | [react-addons-transition-g](./r/react-addons-transition-group) | The code in this package has moved. We recommend y

@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Copyright 2018 Google LLC
- *
- * Distributed under MIT license.
- * See file LICENSE for detail or copy at https://opensource.org/licenses/MIT
- */
-/**
- * Convert a .p12 file to .pem string
- * @param filename The .p12 key filename.
- * @param callback The callback function.
- * @return A promise that resolves with the .pem private key
- *         if no callback provided.
- */
-
-```
 

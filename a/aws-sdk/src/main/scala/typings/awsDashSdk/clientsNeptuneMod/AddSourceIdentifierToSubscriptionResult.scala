@@ -1,0 +1,19 @@
+package typings.awsDashSdk.clientsNeptuneMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AddSourceIdentifierToSubscriptionResult extends js.Object {
+  var EventSubscription: js.UndefOr[typings.awsDashSdk.clientsNeptuneMod.EventSubscription] = js.undefined
+}
+
+object AddSourceIdentifierToSubscriptionResult {
+  @scala.inline
+  def apply(EventSubscription: EventSubscription = null): AddSourceIdentifierToSubscriptionResult = {
+    val __obj = js.Dynamic.literal()
+    if (EventSubscription != null) __obj.updateDynamic("EventSubscription")(EventSubscription)
+    __obj.asInstanceOf[AddSourceIdentifierToSubscriptionResult]
+  }
+}
+

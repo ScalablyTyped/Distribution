@@ -2,25 +2,25 @@
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate)) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/lib/validators.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, lib, validators))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/lib/validators.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, lib, validators))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, lib, validators)) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, vuelidate)) [id => vuelidate, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias vuelidate.vue/types/vue.ValidationProperties<V[P]> [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vue/types/vue) / TsDeclTypeAlias(ValidationProperties) / TsTypeObject() / TsMemberTypeMapped() / TsTypeIntersect() / TsTypeRef())] 
 [info ] PreferTypeAlias.scala:168 Could not simplify vuelidate.vue/types/options.RuleDecl to function type alias because of circular references Vector(TsQIdent(List(TsIdentLibrarySimple(vuelidate), TsIdentModule(None,List(vue, types, options)), TsIdentSimple(RuleDecl)))) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vue/types/options) / TsDeclTypeAlias(NestedDecl))] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:42 Processing vuelidate [id => vuelidate, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:43 Processing vuelidate [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => scala.js] 
-[warn ] Phase3Compile.scala:204 Building vuelidate... [id => vuelidate, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala:9:106
+[warn ] Phase3Compile.scala:208 Building vuelidate... [id => vuelidate, phase => build] 
+[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/vuelidate/typesOptionsMod/RuleDecl.scala:8:93
 [E]      illegal cyclic reference involving trait RuleDecl
-[E]      L9:   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
-[E]                                                                                                                   ^
-[E] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala: L9 [E1]
+[E]      L8: trait RuleDecl extends /* rule */ StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
+[E]                                                                                                      ^
+[E] src/main/scala/typings/vuelidate/typesOptionsMod/RuleDecl.scala: L8 [E1]
 [E] Failed to compile 'vuelidate'
  [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 

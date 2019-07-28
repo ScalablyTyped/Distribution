@@ -1,7 +1,7 @@
 
 # Scala.js typings for highcharts
 
-Typings are for version 5.0
+Typings are for version 7.1.2
 
 ## Library description:
 JavaScript charting framework
@@ -24,30 +24,11 @@ JavaScript charting framework
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Highcharts 5.0
-// Project: http://www.highcharts.com/
-// Definitions by: Damiano Gambarotto <https://github.com/damianog>
-//                 Dan Lewi Harkestad <https://github.com/baltie>
-//                 Albert Ozimek <https://github.com/AlbertOzimek>
-//                 Juliën Hanssens <https://github.com/hanssens>
-//                 Johns Gresham <https://github.com/jgresham>
-//                 ArunkeshavaReddy Sankaramaddi <https://github.com/Arunkeshavareddy>
-//                 Dolan Miu <https://github.com/dolanmiu>
-//                 Jack Siman <https://github.com/jjsiman>
-//                 Matthew Wills <https://github.com/mdotwills>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

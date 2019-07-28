@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for escape-html
-// Project: https://github.com/component/escape-html
-// Definitions by: Elisée MAURER <https://github.com/elisee>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

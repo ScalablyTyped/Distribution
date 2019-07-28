@@ -1,0 +1,21 @@
+package typings.tslint.libTestMod
+
+import typings.tslint.tslintNumbers.`true`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SkippedTest extends js.Object {
+  var requirement: String
+  var skipped: `true`
+}
+
+object SkippedTest {
+  @scala.inline
+  def apply(requirement: String, skipped: `true`): SkippedTest = {
+    val __obj = js.Dynamic.literal(requirement = requirement, skipped = skipped)
+  
+    __obj.asInstanceOf[SkippedTest]
+  }
+}
+

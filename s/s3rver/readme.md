@@ -30,16 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for S3rver
-// Project: https://github.com/jamhall/s3rver
-// Definitions by: David Broder-Rodgers <https://github.com/DavidBR-SW/>
-//                 F. Eugene Aumson <https://github.com/feuGeneA/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-```
 

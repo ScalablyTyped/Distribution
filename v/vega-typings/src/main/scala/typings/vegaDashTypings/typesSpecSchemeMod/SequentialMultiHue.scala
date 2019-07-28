@@ -1,0 +1,110 @@
+package typings.vegaDashTypings.typesSpecSchemeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.vegaDashTypings.vegaDashTypingsStrings.viridis
+  - typings.vegaDashTypings.vegaDashTypingsStrings.inferno
+  - typings.vegaDashTypings.vegaDashTypingsStrings.magma
+  - typings.vegaDashTypings.vegaDashTypingsStrings.plasma
+  - typings.vegaDashTypings.vegaDashTypingsStrings.bluegreen
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluegreen-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.bluepurple
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`bluepurple-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.greenblue
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`greenblue-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.orangered
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`orangered-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.purplebluegreen
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplebluegreen-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.purpleblue
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purpleblue-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.purplered
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`purplered-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.redpurple
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`redpurple-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.yellowgreenblue
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreenblue-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.yellowgreen
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yellowgreen-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.yelloworangebrown
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangebrown-9`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.yelloworangered
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-3`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-4`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-5`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-6`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-7`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-8`
+  - typings.vegaDashTypings.vegaDashTypingsStrings.`yelloworangered-9`
+*/
+trait SequentialMultiHue extends ColorScheme
+

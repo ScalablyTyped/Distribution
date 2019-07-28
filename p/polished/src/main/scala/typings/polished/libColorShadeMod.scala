@@ -1,0 +1,15 @@
+package typings.polished
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("polished/lib/color/shade", JSImport.Namespace)
+@js.native
+object libColorShadeMod extends js.Object {
+  def default(percentage: String): js.Function1[/* color */ String, String] = js.native
+  def default(percentage: String, color: String): String = js.native
+  def default(percentage: Double): js.Function1[/* color */ String, String] = js.native
+  def default(percentage: Double, color: String): String = js.native
+}
+

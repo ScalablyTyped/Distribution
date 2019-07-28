@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ts-nameof 3.2
-// Project: https://github.com/dsherret/ts-nameof#readme
-// Definitions by: David Sherret <https://github.com/dsherret>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// tslint:disable-next-line no-unnecessary-generics
-
-```
 

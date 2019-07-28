@@ -1,0 +1,20 @@
+package typings.reactDashNativeDashAuth0.reactDashNativeDashAuth0Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResetPasswordParams extends js.Object {
+  var connection: String
+  var email: String
+}
+
+object ResetPasswordParams {
+  @scala.inline
+  def apply(connection: String, email: String): ResetPasswordParams = {
+    val __obj = js.Dynamic.literal(connection = connection, email = email)
+  
+    __obj.asInstanceOf[ResetPasswordParams]
+  }
+}
+

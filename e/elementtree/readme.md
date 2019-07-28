@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for elementtree 0.1
-// Project: https://github.com/racker/node-elementtree
-// Definitions by: Daniel Imhoff <https://github.com/dwieeb>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

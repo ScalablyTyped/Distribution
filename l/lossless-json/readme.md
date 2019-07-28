@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for lossless-json 1.0
-// Project: https://github.com/josdejong/lossless-json#readme
-// Definitions by: André Vitor de Lima Matos <https://github.com/andrevmatos>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Get and/or set configuration options
- * @param options.circularRefs enable circularRefs (default is true)
- * @return New/current config
- */
-
-```
 

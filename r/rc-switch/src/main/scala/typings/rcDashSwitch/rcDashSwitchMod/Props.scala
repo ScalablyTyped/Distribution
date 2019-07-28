@@ -1,0 +1,53 @@
+package typings.rcDashSwitch.rcDashSwitchMod
+
+import typings.react.reactMod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Props extends js.Object {
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  var checked: js.UndefOr[Boolean] = js.undefined
+  var checkedChildren: ReactNode
+  var className: js.UndefOr[String] = js.undefined
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  var loadingIcon: js.UndefOr[ReactNode] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
+  var prefixCls: js.UndefOr[String] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  var unCheckedChildren: ReactNode
+}
+
+object Props {
+  @scala.inline
+  def apply(
+    checkedChildren: ReactNode,
+    unCheckedChildren: ReactNode,
+    autoFocus: js.UndefOr[Boolean] = js.undefined,
+    checked: js.UndefOr[Boolean] = js.undefined,
+    className: String = null,
+    defaultChecked: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    loadingIcon: ReactNode = null,
+    onChange: /* checked */ Boolean => Unit = null,
+    onClick: /* checked */ Boolean => Unit = null,
+    prefixCls: String = null,
+    tabIndex: Int | Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal(checkedChildren = checkedChildren.asInstanceOf[js.Any], unCheckedChildren = unCheckedChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

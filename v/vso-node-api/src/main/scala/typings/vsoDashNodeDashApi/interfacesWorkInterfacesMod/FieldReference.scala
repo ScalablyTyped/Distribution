@@ -1,0 +1,26 @@
+package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FieldReference extends js.Object {
+  /**
+    * fieldRefName for the field
+    */
+  var referenceName: String
+  /**
+    * Full http link to more information about the field
+    */
+  var url: String
+}
+
+object FieldReference {
+  @scala.inline
+  def apply(referenceName: String, url: String): FieldReference = {
+    val __obj = js.Dynamic.literal(referenceName = referenceName, url = url)
+  
+    __obj.asInstanceOf[FieldReference]
+  }
+}
+

@@ -1,0 +1,12 @@
+package typings.atVueComponentDashCompilerDashUtils.distCompileTemplateMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@vue/component-compiler-utils/dist/compileTemplate", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def compileTemplate(options: TemplateCompileOptions): TemplateCompileResult = js.native
+}
+

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for http-proxy-agent 2.0
-// Project: https://github.com/TooTallNate/node-http-proxy-agent
-// Definitions by: mrmlnc <https://github.com/mrmlnc>
-//                 steprescott <https://github.com/steprescott>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

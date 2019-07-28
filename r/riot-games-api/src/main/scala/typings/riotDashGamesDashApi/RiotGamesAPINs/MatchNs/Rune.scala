@@ -1,0 +1,20 @@
+package typings.riotDashGamesDashApi.RiotGamesAPINs.MatchNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Rune extends js.Object {
+  var rank: Double
+  var runeId: Double
+}
+
+object Rune {
+  @scala.inline
+  def apply(rank: Double, runeId: Double): Rune = {
+    val __obj = js.Dynamic.literal(rank = rank, runeId = runeId)
+  
+    __obj.asInstanceOf[Rune]
+  }
+}
+

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for swfobject v2.2
-// Project: https://code.google.com/p/swfobject/
-// Definitions by: rou <https://github.com/rou>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

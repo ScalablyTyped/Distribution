@@ -31,33 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Make your terminal beep.
-
-@param count - How many times you want it to beep. Default: `1`.
-@param melody - Construct your own melody by supplying a string of `*` for beep `-` for pause.
-@returns A `Promise` that is resolved after the melody has ended.
-
-@example
-```
-import beeper = require('beeper');
-
-(async => {
-	await beeper();
-	// beep one time
-
-	await beeper(3);
-	// beep three times
-
-	await beeper('****-*-*');
-	// beep, beep, beep, beep, pause, beep, pause, beep
-})();
-```
-*/
-
-```
 

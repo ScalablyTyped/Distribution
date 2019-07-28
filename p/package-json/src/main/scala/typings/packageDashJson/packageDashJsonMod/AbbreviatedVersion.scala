@@ -1,0 +1,59 @@
+package typings.packageDashJson.packageDashJsonMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.packageDashJson.Anon_Integrity
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AbbreviatedVersion
+  extends /* key */ StringDictionary[js.Any] {
+  val _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined
+  val bin: js.UndefOr[StringDictionary[String]] = js.undefined
+  val bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val deprecated: js.UndefOr[String] = js.undefined
+  val devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val directories: js.UndefOr[js.Array[String]] = js.undefined
+  val dist: Anon_Integrity
+  val engines: js.UndefOr[StringDictionary[String]] = js.undefined
+  val name: String
+  val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val peerDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val version: String
+}
+
+object AbbreviatedVersion {
+  @scala.inline
+  def apply(
+    dist: Anon_Integrity,
+    name: String,
+    version: String,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined,
+    bin: StringDictionary[String] = null,
+    bundleDependencies: StringDictionary[String] = null,
+    dependencies: StringDictionary[String] = null,
+    deprecated: String = null,
+    devDependencies: StringDictionary[String] = null,
+    directories: js.Array[String] = null,
+    engines: StringDictionary[String] = null,
+    optionalDependencies: StringDictionary[String] = null,
+    peerDependencies: StringDictionary[String] = null
+  ): AbbreviatedVersion = {
+    val __obj = js.Dynamic.literal(dist = dist, name = name, version = version)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap)
+    if (bin != null) __obj.updateDynamic("bin")(bin)
+    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies)
+    if (directories != null) __obj.updateDynamic("directories")(directories)
+    if (engines != null) __obj.updateDynamic("engines")(engines)
+    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies)
+    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies)
+    __obj.asInstanceOf[AbbreviatedVersion]
+  }
+}
+

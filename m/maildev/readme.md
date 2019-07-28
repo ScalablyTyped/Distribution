@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for maildev 1.0.0-rc3
-// Project: https://github.com/djfarrelly/maildev
-// Definitions by: Cyril Schumacher <https://github.com/cyrilschumacher>
-//                 Zak Barbuto <https://github.com/zbarbuto>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,15 @@
+package typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod
+
+import typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod.connectMongodbSessionNs.MongoDBStore
+import typings.express.expressMod.RequestHandler
+import typings.expressDashSession.expressDashSessionMod.SessionOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("connect-mongodb-session", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(fn: js.Function1[/* options */ js.UndefOr[SessionOptions], RequestHandler]): MongoDBStore = js.native
+}
+

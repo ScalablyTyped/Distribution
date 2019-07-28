@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for dynamic-time-warping 1.0
-// Project: https://github.com/GordonLesti/dynamic-time-warping
-// Definitions by: Zlatko Andonovski <https://github.com/Goldsmith42>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

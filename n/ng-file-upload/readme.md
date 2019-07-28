@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Angular File Upload 12.2
-// Project: https://github.com/danialfarid/ng-file-upload
-// Definitions by: John Reilly <https://github.com/johnnyreilly>,
-//   Eduardo Garcia <https://github.com/thewarpaint>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

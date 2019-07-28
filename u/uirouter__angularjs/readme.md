@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/** @hidden Used for typedoc */
-/** @publicapi @module directives */ /** */
-/**
- * Main entry point for angular 1.x build
- * @publicapi @module ng1
- */ /** @publicapi @module ng1 */ /** @publicapi @module url */ 
-```
 

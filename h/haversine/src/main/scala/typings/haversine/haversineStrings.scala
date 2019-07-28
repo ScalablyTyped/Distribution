@@ -1,0 +1,59 @@
+package typings.haversine
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object haversineStrings {
+  @js.native
+  sealed trait `[lat,lon]` extends js.Object
+  
+  @js.native
+  sealed trait `[lon,lat]` extends js.Object
+  
+  @js.native
+  sealed trait geojson extends js.Object
+  
+  @js.native
+  sealed trait km extends js.Object
+  
+  @js.native
+  sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait mile extends js.Object
+  
+  @js.native
+  sealed trait nmi extends js.Object
+  
+  @js.native
+  sealed trait `{lat,lng}` extends js.Object
+  
+  @js.native
+  sealed trait `{lat,lon}` extends js.Object
+  
+  @js.native
+  sealed trait `{lon,lat}` extends js.Object
+  
+  @scala.inline
+  def `[lat,lon]`: `[lat,lon]` = "[lat,lon]".asInstanceOf[`[lat,lon]`]
+  @scala.inline
+  def `[lon,lat]`: `[lon,lat]` = "[lon,lat]".asInstanceOf[`[lon,lat]`]
+  @scala.inline
+  def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
+  def km: km = "km".asInstanceOf[km]
+  @scala.inline
+  def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def mile: mile = "mile".asInstanceOf[mile]
+  @scala.inline
+  def nmi: nmi = "nmi".asInstanceOf[nmi]
+  @scala.inline
+  def `{lat,lng}`: `{lat,lng}` = "{lat,lng}".asInstanceOf[`{lat,lng}`]
+  @scala.inline
+  def `{lat,lon}`: `{lat,lon}` = "{lat,lon}".asInstanceOf[`{lat,lon}`]
+  @scala.inline
+  def `{lon,lat}`: `{lon,lat}` = "{lon,lat}".asInstanceOf[`{lon,lat}`]
+}
+

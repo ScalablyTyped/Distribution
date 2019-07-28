@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-map-gl 5.0
-// Project: https://github.com/uber/react-map-gl#readme
-// Definitions by: Robert Imig <https://github.com/rimig>
-//                 Fabio Berta <https://github.com/fnberta>
-//                 Sander Siim <https://github.com/sandersiim>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
-
-```
 

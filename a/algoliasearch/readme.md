@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for algoliasearch-client-js 3.30.2
-// Project: https://github.com/algolia/algoliasearch-client-js
-// Definitions by: Baptiste Coquelle <https://github.com/cbaptiste>
-//                 Haroen Viaene <https://github.com/haroenv>
-//                 Samuel Vaillant <https://github.com/samouss>
-//                 Kai Eichinger <https://github.com/keichinger>
-//                 Nery Ortez <https://github.com/neryortez>
-//                 Antoine Rousseau <https://github.com/antoinerousseau>
-//                 Luca Pasquale <https://github.com/lucapasquale>
-//                 Alexandre Deve <https://github.com/adeve>
-//                 Dan Grayson <https://github.com/dan-grayson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-// Type definitions for algoliasearch-client-js 3.30.1
-//                 Claas Brüggemann <https://github.com/ClaasBrueggemann>
-
-```
 

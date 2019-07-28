@@ -1,0 +1,32 @@
+package typings.braintree.braintreeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DiscountAddRequest extends js.Object {
+  var amount: js.UndefOr[String] = js.undefined
+  var inheritedFromId: String
+  var neverExpires: js.UndefOr[Boolean] = js.undefined
+  var numberOfBillingCycles: js.UndefOr[Double] = js.undefined
+  var quantity: js.UndefOr[Double] = js.undefined
+}
+
+object DiscountAddRequest {
+  @scala.inline
+  def apply(
+    inheritedFromId: String,
+    amount: String = null,
+    neverExpires: js.UndefOr[Boolean] = js.undefined,
+    numberOfBillingCycles: Int | Double = null,
+    quantity: Int | Double = null
+  ): DiscountAddRequest = {
+    val __obj = js.Dynamic.literal(inheritedFromId = inheritedFromId)
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires)
+    if (numberOfBillingCycles != null) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DiscountAddRequest]
+  }
+}
+

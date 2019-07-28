@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ngProgress 1.0.7
-// Project: http://victorbjelkholm.github.io/ngProgress/
-// Definitions by: Martin McWhorter <https://github.com/martinmcwhorter>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

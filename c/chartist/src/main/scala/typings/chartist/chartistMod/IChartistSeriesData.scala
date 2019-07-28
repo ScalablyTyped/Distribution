@@ -1,0 +1,34 @@
+package typings.chartist.chartistMod
+
+import typings.chartist.Anon_X
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IChartistSeriesData extends js.Object {
+  var className: js.UndefOr[String] = js.undefined
+  var data: js.UndefOr[js.Array[Anon_X | Double]] = js.undefined
+  var meta: js.UndefOr[js.Any] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[Double] = js.undefined
+}
+
+object IChartistSeriesData {
+  @scala.inline
+  def apply(
+    className: String = null,
+    data: js.Array[Anon_X | Double] = null,
+    meta: js.Any = null,
+    name: String = null,
+    value: Int | Double = null
+  ): IChartistSeriesData = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IChartistSeriesData]
+  }
+}
+

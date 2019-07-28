@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for console-stamp 0.2.0
-// Project: https://github.com/starak/node-console-stamp
-// Definitions by: Eric Byers <https://github.com/ericbyers>
-//                 Guus De Graeve <https://github.com/guusdegraeve>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

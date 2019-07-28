@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ratelimiter 2.1.1
-// Project: https://github.com/tj/node-ratelimiter
-// Definitions by: Aya Morisawa <https://github.com/AyaMorisawa>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

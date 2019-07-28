@@ -31,25 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * JSON Schema
- *
- * Documentation corresponds to the work-in-progress draft-07 of JSON Schema.
- *
- * The latest published drafts are:
- * - draft-handrews-json-schema-01
- * - draft-handrews-json-schema-validation-01
- *
- * For more information, visit: http://json-schema.org/.
- *
- * Draft date: March 19, 2018.
- *
- * @public
- */
-
-```
 

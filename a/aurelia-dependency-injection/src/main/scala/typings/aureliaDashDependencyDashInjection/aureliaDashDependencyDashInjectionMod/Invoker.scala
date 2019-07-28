@@ -1,0 +1,41 @@
+package typings.aureliaDashDependencyDashInjection.aureliaDashDependencyDashInjectionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Invoker extends js.Object {
+  /**
+    * Invokes the function with the provided dependencies.
+    * @param fn The constructor or factory function.
+    * @param dependencies The dependencies of the function call.
+    * @return The result of the function invocation.
+    */
+  def invoke(container: Container, fn: js.Function, dependencies: js.Array[_]): js.Any
+  /**
+    * Invokes the function with the provided dependencies.
+    * @param fn The constructor or factory function.
+    * @param staticDependencies The static dependencies of the function.
+    * @param dynamicDependencies Additional dependencies to use during invocation.
+    * @return The result of the function invocation.
+    */
+  def invokeWithDynamicDependencies(
+    container: Container,
+    fn: js.Function,
+    staticDependencies: js.Array[_],
+    dynamicDependencies: js.Array[_]
+  ): js.Any
+}
+
+object Invoker {
+  @scala.inline
+  def apply(
+    invoke: (Container, js.Function, js.Array[_]) => js.Any,
+    invokeWithDynamicDependencies: (Container, js.Function, js.Array[_], js.Array[_]) => js.Any
+  ): Invoker = {
+    val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction3(invoke), invokeWithDynamicDependencies = js.Any.fromFunction4(invokeWithDynamicDependencies))
+  
+    __obj.asInstanceOf[Invoker]
+  }
+}
+

@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @wordpress/escape-html 1.4
-// Project: https://github.com/WordPress/gutenberg/tree/master/packages/escape-html/README.md
-// Definitions by: Derek Sifford <https://github.com/dsifford>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.5
-/**
- * Returns a string with ampersands escaped.
- *
- * @remarks
- * Note that this is an imperfect implementation, where only ampersands which do not appear as a
- * pattern of named, decimal, or hexadecimal character references are escaped. Invalid named
- * references (i.e. ambiguous ampersand) are are still permitted.
- *
- * See: {@link https://w3c.github.io/html/syntax.html#character-references }
- * See: {@link https://w3c.github.io/html/syntax.html#ambiguous-ampersand }
- * See: {@link https://w3c.github.io/html/syntax.html#named-character-references }
- *
- * @param value - Original string.
- */
-
-```
 

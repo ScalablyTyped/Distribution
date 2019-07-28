@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Convert a tilde path to an absolute path: `~/dev` → `/Users/sindresorhus/dev`.
-
-@example
-```
-import untildify = require('untildify');
-
-untildify('~/dev');
-//=> '/Users/sindresorhus/dev'
-```
-*/
-
-```
 

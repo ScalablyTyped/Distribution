@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for swagger-ui-dist 3.x
-// Project: https://github.com/swagger-api/swagger-ui#readme
-// Definitions by: Haowen <https://github.com/haowen737>
-//                 Bryce <https://github.com/brycematheson1234>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

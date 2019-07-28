@@ -1,0 +1,21 @@
+package typings.arangodb
+
+import typings.arangodb.ArangoDBNs.HttpMethod
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Method extends js.Object {
+  var method: js.UndefOr[HttpMethod] = js.undefined
+  var url: String
+}
+
+object Anon_Method {
+  @scala.inline
+  def apply(url: String, method: HttpMethod = null): Anon_Method = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (method != null) __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[Anon_Method]
+  }
+}
+

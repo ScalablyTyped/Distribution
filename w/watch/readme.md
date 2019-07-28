@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for watch 1.0
-// Project: https://github.com/mikeal/watch
-// Definitions by: Carlos Ballesteros Velasco <https://github.com/soywiz>, Gyusun Yeom <https://github.com/Perlmint>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Imported from: https://github.com/soywiz/typescript-node-definitions/watch.d.ts
-
-```
 

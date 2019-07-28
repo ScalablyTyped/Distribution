@@ -1,0 +1,19 @@
+package typings.devexpressDashAspnetcoreDashBootstrap.DevExpressNs.AspNetCoreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ProcessingModeCancelEventArgs extends ProcessingModeEventArgs {
+  var cancel: Boolean
+}
+
+object ProcessingModeCancelEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, processOnServer: Boolean, sender: Control): ProcessingModeCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, processOnServer = processOnServer, sender = sender)
+  
+    __obj.asInstanceOf[ProcessingModeCancelEventArgs]
+  }
+}
+

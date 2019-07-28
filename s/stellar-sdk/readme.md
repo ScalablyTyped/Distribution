@@ -31,20 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stellar-sdk 0.11
-// Project: https://github.com/stellar/js-stellar-sdk
-// Definitions by: Carl Foster <https://github.com/carl-foster>
-//                 Triston Jones <https://github.com/tristonj>
-//                 Paul Selden <https://github.com/pselden>
-//                 Max Bause <https://github.com/maxbause>
-//                 Timur Ramazanov <https://github.com/charlie-wasp>
-//                 Kalvis Kalniņš <https://github.com/Akuukis>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-
-```
 

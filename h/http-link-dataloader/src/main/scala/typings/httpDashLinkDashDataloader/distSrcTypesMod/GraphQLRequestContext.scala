@@ -1,0 +1,20 @@
+package typings.httpDashLinkDashDataloader.distSrcTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GraphQLRequestContext extends js.Object {
+  var query: String
+  var variables: js.UndefOr[Variables] = js.undefined
+}
+
+object GraphQLRequestContext {
+  @scala.inline
+  def apply(query: String, variables: Variables = null): GraphQLRequestContext = {
+    val __obj = js.Dynamic.literal(query = query)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[GraphQLRequestContext]
+  }
+}
+

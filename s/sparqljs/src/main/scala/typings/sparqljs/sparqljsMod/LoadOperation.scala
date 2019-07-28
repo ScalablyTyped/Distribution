@@ -1,0 +1,24 @@
+package typings.sparqljs.sparqljsMod
+
+import typings.sparqljs.sparqljsNumbers.`false`
+import typings.sparqljs.sparqljsStrings.load
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LoadOperation extends ManagementOperation {
+  var destination: String | `false`
+  var silent: Boolean
+  var source: String
+  var `type`: load
+}
+
+object LoadOperation {
+  @scala.inline
+  def apply(destination: String | `false`, silent: Boolean, source: String, `type`: load): LoadOperation = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent, source = source)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LoadOperation]
+  }
+}
+

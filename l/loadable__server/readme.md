@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @loadable/server 5.9
-// Project: https://github.com/smooth-code/loadable-components
-// Definitions by: Martynas Kadiša <https://github.com/martynaskadisa>
-//                 Luis Herranz <https://github.com/luisherranz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

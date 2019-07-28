@@ -1,0 +1,3176 @@
+package typings.activexDashLibreoffice.LibreOfficeNs
+
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.accessibilityNs.Accessible
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.accessibilityNs.AccessibleContext
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.accessibilityNs.MSAAService
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.AnimateColor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.AnimateMotion
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.AnimateSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.Audio
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.Command
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.IterateContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.ParallelTimeContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.animationsNs.SequenceTimeContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.authNs.SSOManagerFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.authNs.SSOPasswordCache
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleCheckBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleDropDownComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleDropDownListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleEdit
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleFixedText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleIconChoiceControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleIconChoiceControlEntry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleList
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleListBoxList
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleListItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleMenu
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleMenuBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleMenuItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleMenuSeparator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessiblePopupMenu
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleRadioButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleScrollBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleStatusBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleStatusBarItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTabBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTabBarPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTabBarPageList
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTabControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTabPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTextField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleToolBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleToolBoxItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTreeListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleTreeListBoxEntry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AccessibleWindow
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AnimatedImagesControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AnimatedImagesControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.AsyncCallback
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.ContainerWindowProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.DialogProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.DialogProvider2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.MenuBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.Pointer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.PopupMenu
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.PrinterServer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.RoadmapItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.SpinningProgressControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.TabController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.TabControllerModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.Toolkit
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlButtonModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlCheckBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlCheckBoxModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlComboBoxModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlContainerModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlCurrencyField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlCurrencyFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDateField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDateFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDialogElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDialogModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlDialogModelProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlEdit
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlEditModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFileControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFileControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedHyperlink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedHyperlinkModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedLine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedLineModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFixedTextModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFormattedField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlFormattedFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlGroupBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlGroupBoxModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlImageControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlImageControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlListBoxModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlNumericField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlNumericFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlPatternField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlPatternFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlProgressBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlProgressBarModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlRadioButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlRadioButtonModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlRoadmap
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlRoadmapModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlScrollBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlScrollBarModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlSpinButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlSpinButtonModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlTimeField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlTimeFieldModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.DefaultGridColumnModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.DefaultGridDataModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.GridColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.SortableGridDataModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.UnoControlGrid
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.gridNs.UnoControlGridModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.tabNs.UnoControlTabPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.tabNs.UnoControlTabPageContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.tabNs.UnoControlTabPageContainerModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.tabNs.UnoControlTabPageModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.treeNs.MutableTreeDataModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.treeNs.MutableTreeNode
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.treeNs.TreeControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.treeNs.TreeControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.Introspection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.PropertyBag
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.PropertySet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.Bridge
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.BridgeFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.IiopBridge
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.OleApplicationRegistration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.OleBridgeSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.OleBridgeSupplier2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.OleBridgeSupplierVar1
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.OleObjectFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.UnoUrlResolver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.UrpBridge
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.oleautomationNs.ApplicationRegistration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.oleautomationNs.BridgeSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.oleautomationNs.Factory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Axis
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.CandleStickChartType
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.CartesianCoordinateSystem2d
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.CartesianCoordinateSystem3d
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartDocumentWrapper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartType
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartTypeManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartTypeTemplate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.CoordinateSystem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.CoordinateSystemType
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.DataPoint
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.DataPointProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.DataSeries
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ErrorBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ExponentialRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ExponentialScaling
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.FormattedString
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.GridProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Legend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.LinearRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.LinearScaling
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.LogarithmicRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.LogarithmicScaling
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.LogicTargetModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.MovingAverageRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PolarCoordinateSystem2d
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PolarCoordinateSystem3d
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PolynomialRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PotentialRegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PowerScaling
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.PropertyPool
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.RegressionCurve
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.RegressionCurveEquation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.RegressionEquation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Scaling
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.StandardDiagramCreationParameters
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Title
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DataFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DataProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DataSequence
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DataSink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DataSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.DatabaseDataProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.LabeledDataSequence
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.RangeHighlightListener
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.RangeHighlighter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.dataNs.TabularDataProviderArguments
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.AccessibleChartDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.AccessibleChartElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.AreaDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.BarDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.BubbleDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.Chart3DBarProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartArea
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartAxis
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartAxisXSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartAxisYSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartAxisZSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartData
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartDataArray
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartDataPointProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartDataRowProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartGrid
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartLegend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartLine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartPieSegmentProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartStatistics
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartTableAddressSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartTitle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartTwoAxisXSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.ChartTwoAxisYSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.Diagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.Dim3DDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.DonutDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.FilledNetDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.LineDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.NetDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.PieDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.StackableDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.StockDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.chartNs.XYDiagram
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.AccessRootElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.AdministrationProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ConfigurationAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ConfigurationProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ConfigurationRegistry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ConfigurationUpdateAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.DefaultProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.GroupAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.GroupElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.GroupUpdate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.HierarchyAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.HierarchyElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.PropertyHierarchy
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ReadOnlyAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.ReadWriteAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.SetAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.SetElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.SetUpdate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.SimpleSetAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.SimpleSetUpdate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.UpdateRootElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.Backend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.BackendAdapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.CopyImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.DataImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.DefaultBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.HierarchyBrowser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.Importer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.InteractionHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.Layer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LayerDescriber
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LayerFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LayerUpdateMerger
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LdapMultiLayerStratum
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LdapSingleBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LdapSingleStratum
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LocalDataImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LocalHierarchyBrowser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LocalSchemaSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LocalSingleBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.LocalSingleStratum
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.MergeImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.MultiLayerStratum
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.MultiStratumBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.OfflineBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.OnlineBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.PlatformBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.Schema
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.SchemaSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.SingleBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.SingleBackendAdapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.SingleLayerStratum
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.SystemIntegration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.UpdatableLayer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.xmlNs.LayerParser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.xmlNs.LayerWriter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.backendNs.xmlNs.SchemaParser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs.bootstrapNs.BootstrapContext
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.connectionNs.Acceptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.connectionNs.Connector
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.EnumerableMap
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.cuiNs.ColorPicker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.DataFormatTranslator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.MimeContentTypeFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.clipboardNs.ClipboardManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.clipboardNs.GenericClipboard
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.clipboardNs.SystemClipboard
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.dndNs.OleDragSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.dndNs.OleDropTarget
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.dndNs.X11DragSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs.dndNs.X11DropTarget
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.PackageRegistryBackend
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.UpdateInformationProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.testNs.SmoketestCommandEnvironment
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.uiNs.LicenseDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.uiNs.PackageManagerDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.deploymentNs.uiNs.UpdateRequiredDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.DocumentProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.DocumentRevisionListPersistence
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.EventDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.Events
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.ExportFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.ExtendedTypeDetection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.ExtendedTypeDetectionFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.FilterAdapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.FilterConfigRefresh
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.FilterFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.GraphicObjectResolver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.HeaderFooterSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.ImportFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.IndexedPropertyValues
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.LinkTarget
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.LinkTargets
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.MediaDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.NamedPropertyValues
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.OOXMLDocumentPropertiesImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.OfficeDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.OleEmbeddedServerRegistration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.PDFDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.Settings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.TypeDetection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.XMLBasicExporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.XMLBasicImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.XMLOasisBasicExporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.documentNs.XMLOasisBasicImporter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleDrawDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleGraphControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleGraphicShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleImageBullet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleOLEShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleSlideView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AccessibleSlideViewObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.AppletShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Background
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.BitmapTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.CaptionShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ClosedBezierShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ColorTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ConnectorProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ConnectorShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ControlShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.CustomShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.CustomShapeEngine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DashTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Defaults
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DocumentSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DrawPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DrawPages
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DrawingDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DrawingDocumentDrawView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.DrawingDocumentFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EllipseShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EnhancedCustomShapeExtrusion
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EnhancedCustomShapeGeometry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EnhancedCustomShapeHandle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EnhancedCustomShapePath
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.EnhancedCustomShapeTextPath
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.FillProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GenericDrawPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GenericDrawingDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GradientTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GraphicExportFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GraphicObjectShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.GroupShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.HatchTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.LayerManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.LineProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.LineShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.MarkerTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.MasterPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.MasterPages
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.MeasureProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.MeasureShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ModuleDispatcher
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.OLE2Shape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.OpenBezierShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PageShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PluginShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PolyLineShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PolyPolygonBezierDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PolyPolygonBezierShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PolyPolygonDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.PolyPolygonShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.RectangleShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.RotationDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ShadowProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Shape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.ShapeCollection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Shapes
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.SlideRenderer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.SlideSorter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Text
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.TextProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.TextShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.TransparencyGradientTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.BasicPaneFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.BasicToolBarFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.BasicViewFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.Configuration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.ConfigurationController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.ModuleController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.frameworkNs.ResourceId
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.BaseStorage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.DocumentCloser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.EmbeddedObjectCreator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.EmbeddedObjectDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.FileSystemStorage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.FileSystemStorageFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.HatchWindowFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.InstanceLocker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.MSOLEObjectSystemCreator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.OLEEmbeddedObjectFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.OLESimpleStorage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.OOoEmbeddedObjectFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.Storage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.StorageFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.embedNs.StorageStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.ControlFontDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.DataAwareControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.FormComponent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.FormComponents
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.FormControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.FormController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.FormControllerDispatcher
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.Forms
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.PropertyBrowserController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.TabOrderDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDataAwareControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseCheckBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseDateField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseFormattedField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseNumericField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseRadioButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseTextField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableDatabaseTimeField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.BindableIntegerValueRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.ListEntrySource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.bindingNs.ValueBinding
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.CheckBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.ComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.CommandButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.CurrencyField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DataForm
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseCheckBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseComboBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseCurrencyField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseDateField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseFormattedField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseImageControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseNumericField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabasePatternField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseRadioButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseTextField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DatabaseTimeField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.DateField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.FileControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.FixedText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.Form
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.FormattedField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.GridControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.GroupBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.HTMLForm
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.HiddenControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.ImageButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.ListBox
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.NavigationToolBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.NumericField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.PatternField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.RadioButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.RichTextControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.ScrollBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.SpinButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.SubmitButton
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.TextField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.componentNs.TimeField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.FilterControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.ImageControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.InteractionGridControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.ButtonNavigationHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.CellBindingPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.DefaultFormComponentInspectorModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.EditPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.EventHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.FormComponentPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.SubmissionPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.XMLFormsPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.inspectionNs.XSDValidationPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.runtimeNs.FormOperations
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.validationNs.ValidatableBindableControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.validationNs.ValidatableControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formulaNs.AccessibleFormulaText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formulaNs.AccessibleFormulaView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.formulaNs.FormulaProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.AppDispatchProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.AutoRecovery
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Bibliography
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Components
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ContentHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ContentHandlerFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Controller
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Desktop
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DesktopTask
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DesktopTasks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DispatchHelper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DispatchProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DispatchRecorder
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DispatchRecorderSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.DocumentTemplates
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Frame
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FrameControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FrameLoader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FrameLoaderFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FramesContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.GlobalEventBroadcaster
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.LayoutManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.MediaTypeDetectionHelper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ModuleManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.OfficeFrameLoader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.PopupMenuController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.PopupMenuControllerFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ProtocolHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.SessionListener
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.SessionManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.StartModule
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.StatusbarController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.StatusbarControllerFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.SynchronousFrameLoader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Task
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.TaskCreator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.TemplateAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ToolbarController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.ToolbarControllerFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.TransientDocumentsDocumentContentFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.UICommandDescription
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.galleryNs.GalleryItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.galleryNs.GalleryTheme
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.galleryNs.GalleryThemeProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.Graphic
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.GraphicDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.GraphicObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.GraphicProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.GraphicRasterizer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.GraphicRendererVCL
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.MediaProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.Primitive2DTools
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.PrimitiveFactory2D
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.graphicNs.SvgTools
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.BreakIterator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.ChapterCollator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.CharacterClassification
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.Collator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.IndexEntrySupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.InputSequenceChecker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.LocaleCalendar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.LocaleCalendar2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.LocaleData
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.NativeNumberSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.NumberFormatMapper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.OrdinalSuffix
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.TextConversion
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.i18nNs.Transliteration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.imageNs.ImageMap
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.imageNs.ImageMapCircleObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.imageNs.ImageMapObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.imageNs.ImageMapPolygonObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.imageNs.ImageMapRectangleObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.DefaultHelpProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.GenericPropertyHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.ObjectInspector
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.ObjectInspectorModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.StringRepresentation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.DataInputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.DataOutputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.MarkableInputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.MarkableOutputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.ObjectInputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.ObjectOutputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.Pipe
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.Pump
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.SequenceInputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.SequenceOutputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.TempFile
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.TextInputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.TextOutputStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.javaNs.JavaVirtualMachine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.MultiServiceFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.RegistryServiceManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.ServiceManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.ConversionDictionary
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.ConversionDictionaryList
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.Dictionary
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.DictionaryList
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.HangulHanjaConversionDictionary
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.Hyphenator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.LanguageGuessing
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.LinguProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.LinguServiceManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.Proofreader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.ProofreadingIterator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.SpellChecker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.linguistic2Ns.Thesaurus
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loaderNs.Dynamic
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loaderNs.Java
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loaderNs.Java2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loaderNs.SharedLibrary
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loggingNs.ConsoleHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loggingNs.CsvLogFormatter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loggingNs.FileHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loggingNs.PlainTextFormatter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.loggingNs.SimpleLogRing
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mailNs.MailMessage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mailNs.MailServiceProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mediaNs.Manager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mozillaNs.MenuProxy
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mozillaNs.MenuProxyListener
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.mozillaNs.MozillaBootstrap
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.officeNs.Quickstart
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.Package
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.PackageFolder
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.PackageFolderEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.PackageStream
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.manifestNs.ManifestReader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.manifestNs.ManifestWriter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs.zipNs.ZipFileAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.ChartShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.CustomPresentation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.CustomPresentationAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.DateTimeShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.FooterShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.HandoutShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.HandoutView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.HeaderShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.NotesShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.NotesView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.OutlineView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.OutlinerShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.Presentation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.Presentation2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.PresentationDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.PresentationView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.PreviewView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.SlideNumberShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.SlideShow
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.SlidesView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.SubtitleShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.TitleTextShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.TransitionFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.textfieldNs.DateTime
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.textfieldNs.Footer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.textfieldNs.Header
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.rdfNs.BlankNode
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.rdfNs.Literal
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.rdfNs.Repository
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.rdfNs.URI
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reflectionNs.CoreReflection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reflectionNs.ProxyFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reflectionNs.TypeDescriptionManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reflectionNs.TypeDescriptionProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.registryNs.DefaultRegistry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.registryNs.ImplementationRegistration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.registryNs.NestedRegistry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.registryNs.SimpleRegistry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.renderingNs.BitmapCanvas
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.renderingNs.Canvas
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.renderingNs.CanvasFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.renderingNs.MtfRenderer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.FixedLine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.FormatCondition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.Function
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.Group
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.Groups
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.ReportControlFormat
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.ReportControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.ReportDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.ReportEngine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.Section
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.inspectionNs.DataProviderHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.inspectionNs.DefaultComponentInspectorModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.inspectionNs.ReportComponentHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.resourceNs.StringResource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.resourceNs.StringResourceWithLocation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.resourceNs.StringResourceWithStorage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scannerNs.ScannerManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.AllListenerAdapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.Converter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.DocumentDialogLibraryContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.DocumentScriptLibraryContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.Engine
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.Invocation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.InvocationAdapterFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.JavaScript
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.browseNs.BrowseNode
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.browseNs.BrowseNodeFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.LanguageScriptProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.MasterScriptProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.MasterScriptProviderFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptProviderForBasic
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptProviderForBeanShell
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptProviderForJava
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptProviderForJavaScript
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.providerNs.ScriptURIHelper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.vbaNs.VBAEventProcessor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.vbaNs.VBAMacroResolver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.vbaNs.VBASpreadsheetEventProcessor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.scriptNs.vbaNs.VBATextEventProcessor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.CallableStatement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Column
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ColumnDescriptorControl
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ColumnDescriptorControlModel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ColumnSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.CommandDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Connection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ContentLoader
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DataAccessDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DataColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DataSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DataSourceBrowser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseAccessConnection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseAccessContext
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseAccessDataSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseContext
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseEnvironment
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatabaseInteractionHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DatasourceAdministrationDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DefinitionContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DefinitionContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Document
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DocumentContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DocumentDataSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DocumentDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ErrorMessageDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.FilterDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.OfficeDatabaseDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.OrderColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.OrderDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.PreparedStatement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Query
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.QueryDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.QueryDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.QueryDesign
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.RelationDesign
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ReportDesign
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Reports
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ResultColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.ResultSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.RowSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.SQLQueryComposer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.SingleSelectQueryAnalyzer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.SingleSelectQueryComposer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Table
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.TableDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.TableDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.TableDesign
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.TextConnectionSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.applicationNs.CopyTableWizard
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.applicationNs.DefaultViewController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.applicationNs.MacroMigrationWizard
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.toolsNs.ConnectionTools
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.ConnectionPool
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.ConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.DBASEConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.Driver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.DriverManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.FILEConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.FLATConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.JDBCConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.ODBCConnectionProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.Statement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.ColumnDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Container
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.DatabaseDefinition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Descriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.GroupDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Index
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.IndexColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.IndexColumnDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.IndexDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Key
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.KeyColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.KeyColumnDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.KeyDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.ReferenceColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.User
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.UserDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.View
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.ViewDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.AccessController
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.CertificateContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.DocumentDigitalSignatures
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.Policy
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.SerialNumberAdapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.setupNs.UpdateCheck
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.setupNs.UpdateCheckConfig
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleCell
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleCsvCell
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleCsvRuler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleCsvTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessiblePageHeaderFooterAreasView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleSpreadsheet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleSpreadsheetDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AccessibleSpreadsheetPageView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.AddIn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAnnotation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAnnotationShape
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAnnotations
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAnnotationsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAreaLink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAreaLinks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellAreaLinksEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellFormatRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellFormatRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Cells
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.CellsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ColorScale
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ConditionFormatEntry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ConditionalFormat
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ConsolidationDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DDELink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DDELinks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DDELinksEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataBar
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroup
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroupEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroupItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroups
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroupsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFields
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotFieldsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotItem
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotItems
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotItemsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceDimension
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceDimensions
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceHierarchies
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceHierarchy
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceLevel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceLevels
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceMember
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotSourceMembers
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotTables
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DataPilotTablesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DatabaseImportDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DatabaseRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DatabaseRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DatabaseRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DateCondition
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ExternalDocLink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ExternalDocLinks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ExternalSheetCache
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FilterFormulaParser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FormulaOpCodeMapper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FormulaParser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FunctionAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FunctionDescription
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FunctionDescriptionEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.FunctionDescriptions
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.GlobalSheetSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.HeaderFooterContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.IconSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.LabelRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.LabelRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.LabelRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.NamedRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.NamedRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.NamedRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.RangeSelectionArguments
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.RecentFunctions
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Scenario
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Scenarios
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.ScenariosEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetCell
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetCellCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetCellRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetCellRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetCellRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetFilterDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetLink
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetLinks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetLinksEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetRangesQuery
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetSortDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SheetSortDescriptor2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Solver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Spreadsheet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetDocumentSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetDrawPage
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetViewPane
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetViewPanesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetViewSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Spreadsheets
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SpreadsheetsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SubTotalDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SubTotalField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.SubTotalFieldsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableAutoFormat
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableAutoFormatEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableAutoFormatField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableAutoFormats
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableAutoFormatsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableCellStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableConditionalEntry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableConditionalEntryEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableConditionalFormat
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TablePageStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.TableValidation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.UniqueCellFormatRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.UniqueCellFormatRangesEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.VolatileResult
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.smarttagsNs.SmartTagAction
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.smarttagsNs.SmartTagRecognizer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.CellStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.CharacterProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.CharacterStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.NumberingAlignment
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.NumberingLevel
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.NumberingRule
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.PageProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.PageStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.ParagraphProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.ParagraphStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.Style
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.StyleFamilies
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.styleNs.StyleFamily
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.systemNs.SimpleCommandMail
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.systemNs.SimpleSystemMail
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.systemNs.SystemShellExecute
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.AccessibleCellView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.AccessibleTableView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.Cell
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.CellCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.CellProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.CellRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.CellRangeListSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.CellValueBinding
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.ListPositionCellBinding
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableChart
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableCharts
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableChartsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableColumn
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableColumns
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableColumnsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableRow
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableRows
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableRowsEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableSortDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.TableSortDescriptor2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.AsyncJob
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.InteractionRequestStringResolver
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.Job
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.JobExecutor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.PasswordContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.PasswordContainerInteractionHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.StatusIndicatorFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleEndnoteView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleFootnoteView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleHeaderFooterView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessiblePageView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleParagraphView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleTextDocumentPageView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleTextDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleTextEmbeddedObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleTextFrameView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AccessibleTextGraphicObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AutoTextContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AutoTextEntry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.AutoTextGroup
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.BaseFrame
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.BaseFrameProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.BaseIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.BaseIndexMark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Bookmark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Bookmarks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ChainedTextFrame
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ChapterNumberingRule
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ContentIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ContentIndexMark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DefaultNumberingProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DependentTextField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndexLevelFormat
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndexMark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndexMarkAsian
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndexParagraphStyles
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentIndexes
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Endnote
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.EndnoteSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Footnote
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.FootnoteSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Footnotes
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.GenericTextDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.GlobalDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.GlobalSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.IllustrationsIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.InContentMetadata
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.LineNumberingProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.MailMerge
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.NumberingRules
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.NumberingStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ObjectIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.PageFootnoteInfo
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.PagePrintSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Paragraph
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ParagraphEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.PrintSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.RedlinePortion
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ReferenceMark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ReferenceMarks
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TableIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextColumns
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextContentCollection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextEmbeddedObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextEmbeddedObjects
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFieldEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFieldMaster
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFieldMasters
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFields
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFrame
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextFrames
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextGraphicObject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextGraphicObjects
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextLayoutCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextPageStyle
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextPortion
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextPortionEnumeration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextRange
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextRangeContentProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextRanges
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextSection
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextSections
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextSortDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextSortDescriptor2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextSortable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextTable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextTableCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextTableRow
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextTables
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextViewCursor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.UserDefinedIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.UserIndex
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.UserIndexMark
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ViewSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.WebDocument
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.fieldmasterNs.DDE
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.fieldmasterNs.Database
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.fieldmasterNs.SetExpression
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Annotation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Author
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Chapter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.CharacterCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.CombinedCharacters
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.ConditionalText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DatabaseName
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DatabaseNextSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DatabaseNumberOfSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DatabaseSetNumber
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DropDown
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.EmbeddedObjectCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.ExtendedUser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.FileName
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.GetExpression
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.GetReference
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.GraphicObjectCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.HiddenParagraph
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.HiddenText
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Input
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.InputUser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.JumpEdit
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Macro
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.MetadataField
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.PageCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.PageNumber
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.ParagraphCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.ReferencePageGet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.ReferencePageSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Script
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.TableCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.TableFormula
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.TemplateName
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.URL
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.WordCount
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.ChangeAuthor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.ChangeDateTime
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.CreateAuthor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.CreateDateTime
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Custom
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Description
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.EditTime
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Keywords
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.PrintAuthor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.PrintDateTime
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Revision
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Subject
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.AnyCompareFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedContentResultSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedContentResultSetFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedContentResultSetStub
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedContentResultSetStubFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedDynamicResultSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedDynamicResultSetFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedDynamicResultSetStub
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CachedDynamicResultSetStubFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CmisContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.CommandEnvironment
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.Content
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ContentProviderProxy
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ContentProviderProxyFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ContentResultSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ContentTransmitter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.DefaultHierarchyDataSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.DynamicResultSet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ExpandContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.FTPContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.FTPContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.FileContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.FileContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.GIOContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.GnomeVFSContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.GnomeVFSDocumentContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.GnomeVFSFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HelpContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HelpContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyDataReadAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyDataReadWriteAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyDataSource
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyLinkContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.HierarchyRootFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ODMAContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.ODMAContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PackageContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PackageFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PackageStreamContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PersistentPropertySet
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PropertiesManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.PropertySetRegistry
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.RemoteAccessContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.RemoteContentProviderAcceptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.RemoteProxyContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.SimpleFileAccess
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.SortedDynamicResultSetFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.Store
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.TransientDocumentsContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.TransientDocumentsDocumentContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.TransientDocumentsFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.TransientDocumentsRootContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.TransientDocumentsStreamContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.UniversalContentBroker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.WebDAVContentProvider
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.WebDAVDocumentContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.ucbNs.WebDAVFolderContent
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ActionTrigger
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ActionTriggerContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ActionTriggerSeparator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.AddressBookSourceDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ConfigurableUIElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.DocumentAcceleratorConfiguration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.GlobalAcceleratorConfiguration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ImageManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ItemDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ModuleAcceleratorConfiguration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ModuleUICategoryDescription
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ModuleUICommandDescription
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ModuleUIConfigurationManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.ModuleWindowStateConfiguration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UICategoryDescription
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UIConfigurationManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UIElement
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UIElementFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UIElementFactoryManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.UIElementSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.WindowContentFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.WindowContentFactoryManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.WindowStateConfiguration
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.AddressBookSourcePilot
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.FilePicker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.FilterOptionsDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.FolderPicker
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.Wizard
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.XSLTFilterDialog
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.testNs.UITest
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.NamingService
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uriNs.ExternalUriReferenceTranslator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uriNs.UriReferenceFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTexpand
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTscript
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.uriNs.VndSunStarPkgUrlReferenceFactory
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.BootstrapMacroExpander
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.JobManager
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.MacroExpander
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.NumberFormatProperties
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.NumberFormatSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.NumberFormats
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.NumberFormatsSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.NumberFormatter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.OfficeInstallationDirectories
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.PathSettings
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.PathSubstitution
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.ReplaceDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.SearchDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.SortDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.SortDescriptor2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.Sortable
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.TextSearch
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.TextSearch2
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.URLTransformer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.UriAbbreviation
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.OfficeDocumentView
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.PrintOptions
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.PrinterDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.RenderDescriptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.RenderOptions
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xformsNs.Binding
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xformsNs.Model
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xformsNs.XForms
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.AttributeContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.NamespaceContainer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.ParaUserDefinedAttributesSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.TextUserDefinedAttributesSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.UserDefinedAttributesSupplier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.XMLExportFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.XMLImportFilter
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.NSSInitializer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.SEInitializer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityEnvironment
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.XMLEncryption
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.XMLEncryptionTemplate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.XMLSecurityContext
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.XMLSignature
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.XMLSignatureTemplate
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.Decryptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.Encryptor
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.SAXEventKeeper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.SignatureCreator
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.SignatureVerifier
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.domNs.DocumentBuilder
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.domNs.SAXDocumentBuilder
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.inputNs.SaxDocumentHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.saxNs.FastParser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.saxNs.FastShapeContextHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.saxNs.FastTokenHandler
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.saxNs.Parser
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.saxNs.Writer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.wrapperNs.XMLDocumentWrapper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.wrapperNs.XMLElementWrapper
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.xpathNs.XPathAPI
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.xpathNs.XPathExtension
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.xsltNs.XSLT2Transformer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.xsltNs.XSLTTransformer
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Boolean
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Date
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Day
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Decimal
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Month
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.String
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Time
+import typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.Year
+import typings.activexDashLibreoffice.orgNs.freedesktopNs.PackageKitNs.SyncDbusSessionHelper
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ServicesNameMap extends js.Object {
+  var `com.sun.star.accessibility.Accessible`: Accessible
+  var `com.sun.star.accessibility.AccessibleContext`: AccessibleContext
+  var `com.sun.star.accessibility.MSAAService`: MSAAService
+  var `com.sun.star.animations.AnimateColor`: AnimateColor
+  var `com.sun.star.animations.AnimateMotion`: AnimateMotion
+  var `com.sun.star.animations.AnimateSet`: AnimateSet
+  var `com.sun.star.animations.Audio`: Audio
+  var `com.sun.star.animations.Command`: Command
+  var `com.sun.star.animations.IterateContainer`: IterateContainer
+  var `com.sun.star.animations.ParallelTimeContainer`: ParallelTimeContainer
+  var `com.sun.star.animations.SequenceTimeContainer`: SequenceTimeContainer
+  var `com.sun.star.auth.SSOManagerFactory`: SSOManagerFactory
+  var `com.sun.star.auth.SSOPasswordCache`: SSOPasswordCache
+  var `com.sun.star.awt.AccessibleButton`: AccessibleButton
+  var `com.sun.star.awt.AccessibleCheckBox`: AccessibleCheckBox
+  var `com.sun.star.awt.AccessibleComboBox`: AccessibleComboBox
+  var `com.sun.star.awt.AccessibleDropDownComboBox`: AccessibleDropDownComboBox
+  var `com.sun.star.awt.AccessibleDropDownListBox`: AccessibleDropDownListBox
+  var `com.sun.star.awt.AccessibleEdit`: AccessibleEdit
+  var `com.sun.star.awt.AccessibleFixedText`: AccessibleFixedText
+  var `com.sun.star.awt.AccessibleIconChoiceControl`: AccessibleIconChoiceControl
+  var `com.sun.star.awt.AccessibleIconChoiceControlEntry`: AccessibleIconChoiceControlEntry
+  var `com.sun.star.awt.AccessibleList`: AccessibleList
+  var `com.sun.star.awt.AccessibleListBox`: AccessibleListBox
+  var `com.sun.star.awt.AccessibleListBoxList`: AccessibleListBoxList
+  var `com.sun.star.awt.AccessibleListItem`: AccessibleListItem
+  var `com.sun.star.awt.AccessibleMenu`: AccessibleMenu
+  var `com.sun.star.awt.AccessibleMenuBar`: AccessibleMenuBar
+  var `com.sun.star.awt.AccessibleMenuItem`: AccessibleMenuItem
+  var `com.sun.star.awt.AccessibleMenuSeparator`: AccessibleMenuSeparator
+  var `com.sun.star.awt.AccessiblePopupMenu`: AccessiblePopupMenu
+  var `com.sun.star.awt.AccessibleRadioButton`: AccessibleRadioButton
+  var `com.sun.star.awt.AccessibleScrollBar`: AccessibleScrollBar
+  var `com.sun.star.awt.AccessibleStatusBar`: AccessibleStatusBar
+  var `com.sun.star.awt.AccessibleStatusBarItem`: AccessibleStatusBarItem
+  var `com.sun.star.awt.AccessibleTabBar`: AccessibleTabBar
+  var `com.sun.star.awt.AccessibleTabBarPage`: AccessibleTabBarPage
+  var `com.sun.star.awt.AccessibleTabBarPageList`: AccessibleTabBarPageList
+  var `com.sun.star.awt.AccessibleTabControl`: AccessibleTabControl
+  var `com.sun.star.awt.AccessibleTabPage`: AccessibleTabPage
+  var `com.sun.star.awt.AccessibleTextField`: AccessibleTextField
+  var `com.sun.star.awt.AccessibleToolBox`: AccessibleToolBox
+  var `com.sun.star.awt.AccessibleToolBoxItem`: AccessibleToolBoxItem
+  var `com.sun.star.awt.AccessibleTreeListBox`: AccessibleTreeListBox
+  var `com.sun.star.awt.AccessibleTreeListBoxEntry`: AccessibleTreeListBoxEntry
+  var `com.sun.star.awt.AccessibleWindow`: AccessibleWindow
+  var `com.sun.star.awt.AnimatedImagesControl`: AnimatedImagesControl
+  var `com.sun.star.awt.AnimatedImagesControlModel`: AnimatedImagesControlModel
+  var `com.sun.star.awt.AsyncCallback`: AsyncCallback
+  var `com.sun.star.awt.ContainerWindowProvider`: ContainerWindowProvider
+  var `com.sun.star.awt.DialogProvider`: DialogProvider
+  var `com.sun.star.awt.DialogProvider2`: DialogProvider2
+  var `com.sun.star.awt.MenuBar`: MenuBar
+  var `com.sun.star.awt.Pointer`: Pointer
+  var `com.sun.star.awt.PopupMenu`: PopupMenu
+  var `com.sun.star.awt.PrinterServer`: PrinterServer
+  var `com.sun.star.awt.RoadmapItem`: RoadmapItem
+  var `com.sun.star.awt.SpinningProgressControlModel`: SpinningProgressControlModel
+  var `com.sun.star.awt.TabController`: TabController
+  var `com.sun.star.awt.TabControllerModel`: TabControllerModel
+  var `com.sun.star.awt.Toolkit`: Toolkit
+  var `com.sun.star.awt.UnoControl`: UnoControl
+  var `com.sun.star.awt.UnoControlButton`: UnoControlButton
+  var `com.sun.star.awt.UnoControlButtonModel`: UnoControlButtonModel
+  var `com.sun.star.awt.UnoControlCheckBox`: UnoControlCheckBox
+  var `com.sun.star.awt.UnoControlCheckBoxModel`: UnoControlCheckBoxModel
+  var `com.sun.star.awt.UnoControlComboBox`: UnoControlComboBox
+  var `com.sun.star.awt.UnoControlComboBoxModel`: UnoControlComboBoxModel
+  var `com.sun.star.awt.UnoControlContainer`: UnoControlContainer
+  var `com.sun.star.awt.UnoControlContainerModel`: UnoControlContainerModel
+  var `com.sun.star.awt.UnoControlCurrencyField`: UnoControlCurrencyField
+  var `com.sun.star.awt.UnoControlCurrencyFieldModel`: UnoControlCurrencyFieldModel
+  var `com.sun.star.awt.UnoControlDateField`: UnoControlDateField
+  var `com.sun.star.awt.UnoControlDateFieldModel`: UnoControlDateFieldModel
+  var `com.sun.star.awt.UnoControlDialog`: UnoControlDialog
+  var `com.sun.star.awt.UnoControlDialogElement`: UnoControlDialogElement
+  var `com.sun.star.awt.UnoControlDialogModel`: UnoControlDialogModel
+  var `com.sun.star.awt.UnoControlDialogModelProvider`: UnoControlDialogModelProvider
+  var `com.sun.star.awt.UnoControlEdit`: UnoControlEdit
+  var `com.sun.star.awt.UnoControlEditModel`: UnoControlEditModel
+  var `com.sun.star.awt.UnoControlFileControl`: UnoControlFileControl
+  var `com.sun.star.awt.UnoControlFileControlModel`: UnoControlFileControlModel
+  var `com.sun.star.awt.UnoControlFixedHyperlink`: UnoControlFixedHyperlink
+  var `com.sun.star.awt.UnoControlFixedHyperlinkModel`: UnoControlFixedHyperlinkModel
+  var `com.sun.star.awt.UnoControlFixedLine`: UnoControlFixedLine
+  var `com.sun.star.awt.UnoControlFixedLineModel`: UnoControlFixedLineModel
+  var `com.sun.star.awt.UnoControlFixedText`: UnoControlFixedText
+  var `com.sun.star.awt.UnoControlFixedTextModel`: UnoControlFixedTextModel
+  var `com.sun.star.awt.UnoControlFormattedField`: UnoControlFormattedField
+  var `com.sun.star.awt.UnoControlFormattedFieldModel`: UnoControlFormattedFieldModel
+  var `com.sun.star.awt.UnoControlGroupBox`: UnoControlGroupBox
+  var `com.sun.star.awt.UnoControlGroupBoxModel`: UnoControlGroupBoxModel
+  var `com.sun.star.awt.UnoControlImageControl`: UnoControlImageControl
+  var `com.sun.star.awt.UnoControlImageControlModel`: UnoControlImageControlModel
+  var `com.sun.star.awt.UnoControlListBox`: UnoControlListBox
+  var `com.sun.star.awt.UnoControlListBoxModel`: UnoControlListBoxModel
+  var `com.sun.star.awt.UnoControlModel`: UnoControlModel
+  var `com.sun.star.awt.UnoControlNumericField`: UnoControlNumericField
+  var `com.sun.star.awt.UnoControlNumericFieldModel`: UnoControlNumericFieldModel
+  var `com.sun.star.awt.UnoControlPatternField`: UnoControlPatternField
+  var `com.sun.star.awt.UnoControlPatternFieldModel`: UnoControlPatternFieldModel
+  var `com.sun.star.awt.UnoControlProgressBar`: UnoControlProgressBar
+  var `com.sun.star.awt.UnoControlProgressBarModel`: UnoControlProgressBarModel
+  var `com.sun.star.awt.UnoControlRadioButton`: UnoControlRadioButton
+  var `com.sun.star.awt.UnoControlRadioButtonModel`: UnoControlRadioButtonModel
+  var `com.sun.star.awt.UnoControlRoadmap`: UnoControlRoadmap
+  var `com.sun.star.awt.UnoControlRoadmapModel`: UnoControlRoadmapModel
+  var `com.sun.star.awt.UnoControlScrollBar`: UnoControlScrollBar
+  var `com.sun.star.awt.UnoControlScrollBarModel`: UnoControlScrollBarModel
+  var `com.sun.star.awt.UnoControlSpinButton`: UnoControlSpinButton
+  var `com.sun.star.awt.UnoControlSpinButtonModel`: UnoControlSpinButtonModel
+  var `com.sun.star.awt.UnoControlTimeField`: UnoControlTimeField
+  var `com.sun.star.awt.UnoControlTimeFieldModel`: UnoControlTimeFieldModel
+  var `com.sun.star.awt.grid.DefaultGridColumnModel`: DefaultGridColumnModel
+  var `com.sun.star.awt.grid.DefaultGridDataModel`: DefaultGridDataModel
+  var `com.sun.star.awt.grid.GridColumn`: GridColumn
+  var `com.sun.star.awt.grid.SortableGridDataModel`: SortableGridDataModel
+  var `com.sun.star.awt.grid.UnoControlGrid`: UnoControlGrid
+  var `com.sun.star.awt.grid.UnoControlGridModel`: UnoControlGridModel
+  var `com.sun.star.awt.tab.UnoControlTabPage`: UnoControlTabPage
+  var `com.sun.star.awt.tab.UnoControlTabPageContainer`: UnoControlTabPageContainer
+  var `com.sun.star.awt.tab.UnoControlTabPageContainerModel`: UnoControlTabPageContainerModel
+  var `com.sun.star.awt.tab.UnoControlTabPageModel`: UnoControlTabPageModel
+  var `com.sun.star.awt.tree.MutableTreeDataModel`: MutableTreeDataModel
+  var `com.sun.star.awt.tree.MutableTreeNode`: MutableTreeNode
+  var `com.sun.star.awt.tree.TreeControl`: TreeControl
+  var `com.sun.star.awt.tree.TreeControlModel`: TreeControlModel
+  var `com.sun.star.beans.Introspection`: Introspection
+  var `com.sun.star.beans.PropertyBag`: PropertyBag
+  var `com.sun.star.beans.PropertySet`: PropertySet
+  var `com.sun.star.bridge.Bridge`: Bridge
+  var `com.sun.star.bridge.BridgeFactory`: BridgeFactory
+  var `com.sun.star.bridge.IiopBridge`: IiopBridge
+  var `com.sun.star.bridge.OleApplicationRegistration`: OleApplicationRegistration
+  var `com.sun.star.bridge.OleBridgeSupplier`: OleBridgeSupplier
+  var `com.sun.star.bridge.OleBridgeSupplier2`: OleBridgeSupplier2
+  var `com.sun.star.bridge.OleBridgeSupplierVar1`: OleBridgeSupplierVar1
+  var `com.sun.star.bridge.OleObjectFactory`: OleObjectFactory
+  var `com.sun.star.bridge.UnoUrlResolver`: UnoUrlResolver
+  var `com.sun.star.bridge.UrpBridge`: UrpBridge
+  var `com.sun.star.bridge.oleautomation.ApplicationRegistration`: ApplicationRegistration
+  var `com.sun.star.bridge.oleautomation.BridgeSupplier`: BridgeSupplier
+  var `com.sun.star.bridge.oleautomation.Factory`: Factory
+  var `com.sun.star.chart.AccessibleChartDocumentView`: AccessibleChartDocumentView
+  var `com.sun.star.chart.AccessibleChartElement`: AccessibleChartElement
+  var `com.sun.star.chart.AreaDiagram`: AreaDiagram
+  var `com.sun.star.chart.BarDiagram`: BarDiagram
+  var `com.sun.star.chart.BubbleDiagram`: BubbleDiagram
+  var `com.sun.star.chart.Chart3DBarProperties`: Chart3DBarProperties
+  var `com.sun.star.chart.ChartArea`: ChartArea
+  var `com.sun.star.chart.ChartAxis`: ChartAxis
+  var `com.sun.star.chart.ChartAxisXSupplier`: ChartAxisXSupplier
+  var `com.sun.star.chart.ChartAxisYSupplier`: ChartAxisYSupplier
+  var `com.sun.star.chart.ChartAxisZSupplier`: ChartAxisZSupplier
+  var `com.sun.star.chart.ChartData`: ChartData
+  var `com.sun.star.chart.ChartDataArray`: ChartDataArray
+  var `com.sun.star.chart.ChartDataPointProperties`: ChartDataPointProperties
+  var `com.sun.star.chart.ChartDataRowProperties`: ChartDataRowProperties
+  var `com.sun.star.chart.ChartDocument`: ChartDocument
+  var `com.sun.star.chart.ChartGrid`: ChartGrid
+  var `com.sun.star.chart.ChartLegend`: ChartLegend
+  var `com.sun.star.chart.ChartLine`: ChartLine
+  var `com.sun.star.chart.ChartPieSegmentProperties`: ChartPieSegmentProperties
+  var `com.sun.star.chart.ChartStatistics`: ChartStatistics
+  var `com.sun.star.chart.ChartTableAddressSupplier`: ChartTableAddressSupplier
+  var `com.sun.star.chart.ChartTitle`: ChartTitle
+  var `com.sun.star.chart.ChartTwoAxisXSupplier`: ChartTwoAxisXSupplier
+  var `com.sun.star.chart.ChartTwoAxisYSupplier`: ChartTwoAxisYSupplier
+  var `com.sun.star.chart.Diagram`: Diagram
+  var `com.sun.star.chart.Dim3DDiagram`: Dim3DDiagram
+  var `com.sun.star.chart.DonutDiagram`: DonutDiagram
+  var `com.sun.star.chart.FilledNetDiagram`: FilledNetDiagram
+  var `com.sun.star.chart.LineDiagram`: LineDiagram
+  var `com.sun.star.chart.NetDiagram`: NetDiagram
+  var `com.sun.star.chart.PieDiagram`: PieDiagram
+  var `com.sun.star.chart.StackableDiagram`: StackableDiagram
+  var `com.sun.star.chart.StockDiagram`: StockDiagram
+  var `com.sun.star.chart.XYDiagram`: XYDiagram
+  var `com.sun.star.chart2.Axis`: Axis
+  var `com.sun.star.chart2.CandleStickChartType`: CandleStickChartType
+  var `com.sun.star.chart2.CartesianCoordinateSystem2d`: CartesianCoordinateSystem2d
+  var `com.sun.star.chart2.CartesianCoordinateSystem3d`: CartesianCoordinateSystem3d
+  var `com.sun.star.chart2.ChartDocument`: typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartDocument
+  var `com.sun.star.chart2.ChartDocumentWrapper`: ChartDocumentWrapper
+  var `com.sun.star.chart2.ChartType`: ChartType
+  var `com.sun.star.chart2.ChartTypeManager`: ChartTypeManager
+  var `com.sun.star.chart2.ChartTypeTemplate`: ChartTypeTemplate
+  var `com.sun.star.chart2.CoordinateSystem`: CoordinateSystem
+  var `com.sun.star.chart2.CoordinateSystemType`: CoordinateSystemType
+  var `com.sun.star.chart2.DataPoint`: DataPoint
+  var `com.sun.star.chart2.DataPointProperties`: DataPointProperties
+  var `com.sun.star.chart2.DataSeries`: DataSeries
+  var `com.sun.star.chart2.Diagram`: typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Diagram
+  var `com.sun.star.chart2.ErrorBar`: ErrorBar
+  var `com.sun.star.chart2.ExponentialRegressionCurve`: ExponentialRegressionCurve
+  var `com.sun.star.chart2.ExponentialScaling`: ExponentialScaling
+  var `com.sun.star.chart2.FormattedString`: FormattedString
+  var `com.sun.star.chart2.GridProperties`: GridProperties
+  var `com.sun.star.chart2.Legend`: Legend
+  var `com.sun.star.chart2.LinearRegressionCurve`: LinearRegressionCurve
+  var `com.sun.star.chart2.LinearScaling`: LinearScaling
+  var `com.sun.star.chart2.LogarithmicRegressionCurve`: LogarithmicRegressionCurve
+  var `com.sun.star.chart2.LogarithmicScaling`: LogarithmicScaling
+  var `com.sun.star.chart2.LogicTargetModel`: LogicTargetModel
+  var `com.sun.star.chart2.MovingAverageRegressionCurve`: MovingAverageRegressionCurve
+  var `com.sun.star.chart2.PolarCoordinateSystem2d`: PolarCoordinateSystem2d
+  var `com.sun.star.chart2.PolarCoordinateSystem3d`: PolarCoordinateSystem3d
+  var `com.sun.star.chart2.PolynomialRegressionCurve`: PolynomialRegressionCurve
+  var `com.sun.star.chart2.PotentialRegressionCurve`: PotentialRegressionCurve
+  var `com.sun.star.chart2.PowerScaling`: PowerScaling
+  var `com.sun.star.chart2.PropertyPool`: PropertyPool
+  var `com.sun.star.chart2.RegressionCurve`: RegressionCurve
+  var `com.sun.star.chart2.RegressionCurveEquation`: RegressionCurveEquation
+  var `com.sun.star.chart2.RegressionEquation`: RegressionEquation
+  var `com.sun.star.chart2.Scaling`: Scaling
+  var `com.sun.star.chart2.StandardDiagramCreationParameters`: StandardDiagramCreationParameters
+  var `com.sun.star.chart2.Title`: Title
+  var `com.sun.star.chart2.data.DataFilter`: DataFilter
+  var `com.sun.star.chart2.data.DataProvider`: DataProvider
+  var `com.sun.star.chart2.data.DataSequence`: DataSequence
+  var `com.sun.star.chart2.data.DataSink`: DataSink
+  var `com.sun.star.chart2.data.DataSource`: DataSource
+  var `com.sun.star.chart2.data.DatabaseDataProvider`: DatabaseDataProvider
+  var `com.sun.star.chart2.data.LabeledDataSequence`: LabeledDataSequence
+  var `com.sun.star.chart2.data.RangeHighlightListener`: RangeHighlightListener
+  var `com.sun.star.chart2.data.RangeHighlighter`: RangeHighlighter
+  var `com.sun.star.chart2.data.TabularDataProviderArguments`: TabularDataProviderArguments
+  var `com.sun.star.configuration.AccessRootElement`: AccessRootElement
+  var `com.sun.star.configuration.AdministrationProvider`: AdministrationProvider
+  var `com.sun.star.configuration.ConfigurationAccess`: ConfigurationAccess
+  var `com.sun.star.configuration.ConfigurationProvider`: ConfigurationProvider
+  var `com.sun.star.configuration.ConfigurationRegistry`: ConfigurationRegistry
+  var `com.sun.star.configuration.ConfigurationUpdateAccess`: ConfigurationUpdateAccess
+  var `com.sun.star.configuration.DefaultProvider`: DefaultProvider
+  var `com.sun.star.configuration.GroupAccess`: GroupAccess
+  var `com.sun.star.configuration.GroupElement`: GroupElement
+  var `com.sun.star.configuration.GroupUpdate`: GroupUpdate
+  var `com.sun.star.configuration.HierarchyAccess`: HierarchyAccess
+  var `com.sun.star.configuration.HierarchyElement`: HierarchyElement
+  var `com.sun.star.configuration.PropertyHierarchy`: PropertyHierarchy
+  var `com.sun.star.configuration.ReadOnlyAccess`: ReadOnlyAccess
+  var `com.sun.star.configuration.ReadWriteAccess`: ReadWriteAccess
+  var `com.sun.star.configuration.SetAccess`: SetAccess
+  var `com.sun.star.configuration.SetElement`: SetElement
+  var `com.sun.star.configuration.SetUpdate`: SetUpdate
+  var `com.sun.star.configuration.SimpleSetAccess`: SimpleSetAccess
+  var `com.sun.star.configuration.SimpleSetUpdate`: SimpleSetUpdate
+  var `com.sun.star.configuration.UpdateRootElement`: UpdateRootElement
+  var `com.sun.star.configuration.backend.Backend`: Backend
+  var `com.sun.star.configuration.backend.BackendAdapter`: BackendAdapter
+  var `com.sun.star.configuration.backend.CopyImporter`: CopyImporter
+  var `com.sun.star.configuration.backend.DataImporter`: DataImporter
+  var `com.sun.star.configuration.backend.DefaultBackend`: DefaultBackend
+  var `com.sun.star.configuration.backend.HierarchyBrowser`: HierarchyBrowser
+  var `com.sun.star.configuration.backend.Importer`: Importer
+  var `com.sun.star.configuration.backend.InteractionHandler`: InteractionHandler
+  var `com.sun.star.configuration.backend.Layer`: Layer
+  var `com.sun.star.configuration.backend.LayerDescriber`: LayerDescriber
+  var `com.sun.star.configuration.backend.LayerFilter`: LayerFilter
+  var `com.sun.star.configuration.backend.LayerUpdateMerger`: LayerUpdateMerger
+  var `com.sun.star.configuration.backend.LdapMultiLayerStratum`: LdapMultiLayerStratum
+  var `com.sun.star.configuration.backend.LdapSingleBackend`: LdapSingleBackend
+  var `com.sun.star.configuration.backend.LdapSingleStratum`: LdapSingleStratum
+  var `com.sun.star.configuration.backend.LocalDataImporter`: LocalDataImporter
+  var `com.sun.star.configuration.backend.LocalHierarchyBrowser`: LocalHierarchyBrowser
+  var `com.sun.star.configuration.backend.LocalSchemaSupplier`: LocalSchemaSupplier
+  var `com.sun.star.configuration.backend.LocalSingleBackend`: LocalSingleBackend
+  var `com.sun.star.configuration.backend.LocalSingleStratum`: LocalSingleStratum
+  var `com.sun.star.configuration.backend.MergeImporter`: MergeImporter
+  var `com.sun.star.configuration.backend.MultiLayerStratum`: MultiLayerStratum
+  var `com.sun.star.configuration.backend.MultiStratumBackend`: MultiStratumBackend
+  var `com.sun.star.configuration.backend.OfflineBackend`: OfflineBackend
+  var `com.sun.star.configuration.backend.OnlineBackend`: OnlineBackend
+  var `com.sun.star.configuration.backend.PlatformBackend`: PlatformBackend
+  var `com.sun.star.configuration.backend.Schema`: Schema
+  var `com.sun.star.configuration.backend.SchemaSupplier`: SchemaSupplier
+  var `com.sun.star.configuration.backend.SingleBackend`: SingleBackend
+  var `com.sun.star.configuration.backend.SingleBackendAdapter`: SingleBackendAdapter
+  var `com.sun.star.configuration.backend.SingleLayerStratum`: SingleLayerStratum
+  var `com.sun.star.configuration.backend.SystemIntegration`: SystemIntegration
+  var `com.sun.star.configuration.backend.UpdatableLayer`: UpdatableLayer
+  var `com.sun.star.configuration.backend.xml.LayerParser`: LayerParser
+  var `com.sun.star.configuration.backend.xml.LayerWriter`: LayerWriter
+  var `com.sun.star.configuration.backend.xml.SchemaParser`: SchemaParser
+  var `com.sun.star.configuration.bootstrap.BootstrapContext`: BootstrapContext
+  var `com.sun.star.connection.Acceptor`: Acceptor
+  var `com.sun.star.connection.Connector`: Connector
+  var `com.sun.star.container.EnumerableMap`: EnumerableMap
+  var `com.sun.star.cui.ColorPicker`: ColorPicker
+  var `com.sun.star.datatransfer.DataFormatTranslator`: DataFormatTranslator
+  var `com.sun.star.datatransfer.MimeContentTypeFactory`: MimeContentTypeFactory
+  var `com.sun.star.datatransfer.clipboard.ClipboardManager`: ClipboardManager
+  var `com.sun.star.datatransfer.clipboard.GenericClipboard`: GenericClipboard
+  var `com.sun.star.datatransfer.clipboard.SystemClipboard`: SystemClipboard
+  var `com.sun.star.datatransfer.dnd.OleDragSource`: OleDragSource
+  var `com.sun.star.datatransfer.dnd.OleDropTarget`: OleDropTarget
+  var `com.sun.star.datatransfer.dnd.X11DragSource`: X11DragSource
+  var `com.sun.star.datatransfer.dnd.X11DropTarget`: X11DropTarget
+  var `com.sun.star.deployment.PackageRegistryBackend`: PackageRegistryBackend
+  var `com.sun.star.deployment.UpdateInformationProvider`: UpdateInformationProvider
+  var `com.sun.star.deployment.test.SmoketestCommandEnvironment`: SmoketestCommandEnvironment
+  var `com.sun.star.deployment.ui.LicenseDialog`: LicenseDialog
+  var `com.sun.star.deployment.ui.PackageManagerDialog`: PackageManagerDialog
+  var `com.sun.star.deployment.ui.UpdateRequiredDialog`: UpdateRequiredDialog
+  var `com.sun.star.document.DocumentProperties`: DocumentProperties
+  var `com.sun.star.document.DocumentRevisionListPersistence`: DocumentRevisionListPersistence
+  var `com.sun.star.document.EventDescriptor`: EventDescriptor
+  var `com.sun.star.document.Events`: Events
+  var `com.sun.star.document.ExportFilter`: ExportFilter
+  var `com.sun.star.document.ExtendedTypeDetection`: ExtendedTypeDetection
+  var `com.sun.star.document.ExtendedTypeDetectionFactory`: ExtendedTypeDetectionFactory
+  var `com.sun.star.document.FilterAdapter`: FilterAdapter
+  var `com.sun.star.document.FilterConfigRefresh`: FilterConfigRefresh
+  var `com.sun.star.document.FilterFactory`: FilterFactory
+  var `com.sun.star.document.GraphicObjectResolver`: GraphicObjectResolver
+  var `com.sun.star.document.HeaderFooterSettings`: HeaderFooterSettings
+  var `com.sun.star.document.ImportFilter`: ImportFilter
+  var `com.sun.star.document.IndexedPropertyValues`: IndexedPropertyValues
+  var `com.sun.star.document.LinkTarget`: LinkTarget
+  var `com.sun.star.document.LinkTargets`: LinkTargets
+  var `com.sun.star.document.MediaDescriptor`: MediaDescriptor
+  var `com.sun.star.document.NamedPropertyValues`: NamedPropertyValues
+  var `com.sun.star.document.OOXMLDocumentPropertiesImporter`: OOXMLDocumentPropertiesImporter
+  var `com.sun.star.document.OfficeDocument`: OfficeDocument
+  var `com.sun.star.document.OleEmbeddedServerRegistration`: OleEmbeddedServerRegistration
+  var `com.sun.star.document.PDFDialog`: PDFDialog
+  var `com.sun.star.document.Settings`: Settings
+  var `com.sun.star.document.TypeDetection`: TypeDetection
+  var `com.sun.star.document.XMLBasicExporter`: XMLBasicExporter
+  var `com.sun.star.document.XMLBasicImporter`: XMLBasicImporter
+  var `com.sun.star.document.XMLOasisBasicExporter`: XMLOasisBasicExporter
+  var `com.sun.star.document.XMLOasisBasicImporter`: XMLOasisBasicImporter
+  var `com.sun.star.drawing.AccessibleDrawDocumentView`: AccessibleDrawDocumentView
+  var `com.sun.star.drawing.AccessibleGraphControl`: AccessibleGraphControl
+  var `com.sun.star.drawing.AccessibleGraphicShape`: AccessibleGraphicShape
+  var `com.sun.star.drawing.AccessibleImageBullet`: AccessibleImageBullet
+  var `com.sun.star.drawing.AccessibleOLEShape`: AccessibleOLEShape
+  var `com.sun.star.drawing.AccessibleShape`: AccessibleShape
+  var `com.sun.star.drawing.AccessibleSlideView`: AccessibleSlideView
+  var `com.sun.star.drawing.AccessibleSlideViewObject`: AccessibleSlideViewObject
+  var `com.sun.star.drawing.AppletShape`: AppletShape
+  var `com.sun.star.drawing.Background`: Background
+  var `com.sun.star.drawing.BitmapTable`: BitmapTable
+  var `com.sun.star.drawing.CaptionShape`: CaptionShape
+  var `com.sun.star.drawing.ClosedBezierShape`: ClosedBezierShape
+  var `com.sun.star.drawing.ColorTable`: ColorTable
+  var `com.sun.star.drawing.ConnectorProperties`: ConnectorProperties
+  var `com.sun.star.drawing.ConnectorShape`: ConnectorShape
+  var `com.sun.star.drawing.ControlShape`: ControlShape
+  var `com.sun.star.drawing.CustomShape`: CustomShape
+  var `com.sun.star.drawing.CustomShapeEngine`: CustomShapeEngine
+  var `com.sun.star.drawing.DashTable`: DashTable
+  var `com.sun.star.drawing.Defaults`: Defaults
+  var `com.sun.star.drawing.DocumentSettings`: DocumentSettings
+  var `com.sun.star.drawing.DrawPage`: DrawPage
+  var `com.sun.star.drawing.DrawPages`: DrawPages
+  var `com.sun.star.drawing.DrawingDocument`: DrawingDocument
+  var `com.sun.star.drawing.DrawingDocumentDrawView`: DrawingDocumentDrawView
+  var `com.sun.star.drawing.DrawingDocumentFactory`: DrawingDocumentFactory
+  var `com.sun.star.drawing.EllipseShape`: EllipseShape
+  var `com.sun.star.drawing.EnhancedCustomShapeExtrusion`: EnhancedCustomShapeExtrusion
+  var `com.sun.star.drawing.EnhancedCustomShapeGeometry`: EnhancedCustomShapeGeometry
+  var `com.sun.star.drawing.EnhancedCustomShapeHandle`: EnhancedCustomShapeHandle
+  var `com.sun.star.drawing.EnhancedCustomShapePath`: EnhancedCustomShapePath
+  var `com.sun.star.drawing.EnhancedCustomShapeTextPath`: EnhancedCustomShapeTextPath
+  var `com.sun.star.drawing.FillProperties`: FillProperties
+  var `com.sun.star.drawing.GenericDrawPage`: GenericDrawPage
+  var `com.sun.star.drawing.GenericDrawingDocument`: GenericDrawingDocument
+  var `com.sun.star.drawing.GradientTable`: GradientTable
+  var `com.sun.star.drawing.GraphicExportFilter`: GraphicExportFilter
+  var `com.sun.star.drawing.GraphicObjectShape`: GraphicObjectShape
+  var `com.sun.star.drawing.GroupShape`: GroupShape
+  var `com.sun.star.drawing.HatchTable`: HatchTable
+  var `com.sun.star.drawing.Layer`: typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.Layer
+  var `com.sun.star.drawing.LayerManager`: LayerManager
+  var `com.sun.star.drawing.LineProperties`: LineProperties
+  var `com.sun.star.drawing.LineShape`: LineShape
+  var `com.sun.star.drawing.MarkerTable`: MarkerTable
+  var `com.sun.star.drawing.MasterPage`: MasterPage
+  var `com.sun.star.drawing.MasterPages`: MasterPages
+  var `com.sun.star.drawing.MeasureProperties`: MeasureProperties
+  var `com.sun.star.drawing.MeasureShape`: MeasureShape
+  var `com.sun.star.drawing.ModuleDispatcher`: ModuleDispatcher
+  var `com.sun.star.drawing.OLE2Shape`: OLE2Shape
+  var `com.sun.star.drawing.OpenBezierShape`: OpenBezierShape
+  var `com.sun.star.drawing.PageShape`: PageShape
+  var `com.sun.star.drawing.PluginShape`: PluginShape
+  var `com.sun.star.drawing.PolyLineShape`: PolyLineShape
+  var `com.sun.star.drawing.PolyPolygonBezierDescriptor`: PolyPolygonBezierDescriptor
+  var `com.sun.star.drawing.PolyPolygonBezierShape`: PolyPolygonBezierShape
+  var `com.sun.star.drawing.PolyPolygonDescriptor`: PolyPolygonDescriptor
+  var `com.sun.star.drawing.PolyPolygonShape`: PolyPolygonShape
+  var `com.sun.star.drawing.RectangleShape`: RectangleShape
+  var `com.sun.star.drawing.RotationDescriptor`: RotationDescriptor
+  var `com.sun.star.drawing.ShadowProperties`: ShadowProperties
+  var `com.sun.star.drawing.Shape`: Shape
+  var `com.sun.star.drawing.ShapeCollection`: ShapeCollection
+  var `com.sun.star.drawing.Shapes`: Shapes
+  var `com.sun.star.drawing.SlideRenderer`: SlideRenderer
+  var `com.sun.star.drawing.SlideSorter`: SlideSorter
+  var `com.sun.star.drawing.Text`: Text
+  var `com.sun.star.drawing.TextProperties`: TextProperties
+  var `com.sun.star.drawing.TextShape`: TextShape
+  var `com.sun.star.drawing.TransparencyGradientTable`: TransparencyGradientTable
+  var `com.sun.star.drawing.framework.BasicPaneFactory`: BasicPaneFactory
+  var `com.sun.star.drawing.framework.BasicToolBarFactory`: BasicToolBarFactory
+  var `com.sun.star.drawing.framework.BasicViewFactory`: BasicViewFactory
+  var `com.sun.star.drawing.framework.Configuration`: Configuration
+  var `com.sun.star.drawing.framework.ConfigurationController`: ConfigurationController
+  var `com.sun.star.drawing.framework.ModuleController`: ModuleController
+  var `com.sun.star.drawing.framework.ResourceId`: ResourceId
+  var `com.sun.star.embed.BaseStorage`: BaseStorage
+  var `com.sun.star.embed.DocumentCloser`: DocumentCloser
+  var `com.sun.star.embed.EmbeddedObjectCreator`: EmbeddedObjectCreator
+  var `com.sun.star.embed.EmbeddedObjectDescriptor`: EmbeddedObjectDescriptor
+  var `com.sun.star.embed.FileSystemStorage`: FileSystemStorage
+  var `com.sun.star.embed.FileSystemStorageFactory`: FileSystemStorageFactory
+  var `com.sun.star.embed.HatchWindowFactory`: HatchWindowFactory
+  var `com.sun.star.embed.InstanceLocker`: InstanceLocker
+  var `com.sun.star.embed.MSOLEObjectSystemCreator`: MSOLEObjectSystemCreator
+  var `com.sun.star.embed.OLEEmbeddedObjectFactory`: OLEEmbeddedObjectFactory
+  var `com.sun.star.embed.OLESimpleStorage`: OLESimpleStorage
+  var `com.sun.star.embed.OOoEmbeddedObjectFactory`: OOoEmbeddedObjectFactory
+  var `com.sun.star.embed.Storage`: Storage
+  var `com.sun.star.embed.StorageFactory`: StorageFactory
+  var `com.sun.star.embed.StorageStream`: StorageStream
+  var `com.sun.star.form.ControlFontDialog`: ControlFontDialog
+  var `com.sun.star.form.DataAwareControlModel`: DataAwareControlModel
+  var `com.sun.star.form.FormComponent`: FormComponent
+  var `com.sun.star.form.FormComponents`: FormComponents
+  var `com.sun.star.form.FormControlModel`: FormControlModel
+  var `com.sun.star.form.FormController`: FormController
+  var `com.sun.star.form.FormControllerDispatcher`: FormControllerDispatcher
+  var `com.sun.star.form.Forms`: Forms
+  var `com.sun.star.form.PropertyBrowserController`: PropertyBrowserController
+  var `com.sun.star.form.TabOrderDialog`: TabOrderDialog
+  var `com.sun.star.form.binding.BindableControlModel`: BindableControlModel
+  var `com.sun.star.form.binding.BindableDataAwareControlModel`: BindableDataAwareControlModel
+  var `com.sun.star.form.binding.BindableDatabaseCheckBox`: BindableDatabaseCheckBox
+  var `com.sun.star.form.binding.BindableDatabaseComboBox`: BindableDatabaseComboBox
+  var `com.sun.star.form.binding.BindableDatabaseDateField`: BindableDatabaseDateField
+  var `com.sun.star.form.binding.BindableDatabaseFormattedField`: BindableDatabaseFormattedField
+  var `com.sun.star.form.binding.BindableDatabaseListBox`: BindableDatabaseListBox
+  var `com.sun.star.form.binding.BindableDatabaseNumericField`: BindableDatabaseNumericField
+  var `com.sun.star.form.binding.BindableDatabaseRadioButton`: BindableDatabaseRadioButton
+  var `com.sun.star.form.binding.BindableDatabaseTextField`: BindableDatabaseTextField
+  var `com.sun.star.form.binding.BindableDatabaseTimeField`: BindableDatabaseTimeField
+  var `com.sun.star.form.binding.BindableIntegerValueRange`: BindableIntegerValueRange
+  var `com.sun.star.form.binding.ListEntrySource`: ListEntrySource
+  var `com.sun.star.form.binding.ValueBinding`: ValueBinding
+  var `com.sun.star.form.component.CheckBox`: CheckBox
+  var `com.sun.star.form.component.ComboBox`: ComboBox
+  var `com.sun.star.form.component.CommandButton`: CommandButton
+  var `com.sun.star.form.component.CurrencyField`: CurrencyField
+  var `com.sun.star.form.component.DataForm`: DataForm
+  var `com.sun.star.form.component.DatabaseCheckBox`: DatabaseCheckBox
+  var `com.sun.star.form.component.DatabaseComboBox`: DatabaseComboBox
+  var `com.sun.star.form.component.DatabaseCurrencyField`: DatabaseCurrencyField
+  var `com.sun.star.form.component.DatabaseDateField`: DatabaseDateField
+  var `com.sun.star.form.component.DatabaseFormattedField`: DatabaseFormattedField
+  var `com.sun.star.form.component.DatabaseImageControl`: DatabaseImageControl
+  var `com.sun.star.form.component.DatabaseListBox`: DatabaseListBox
+  var `com.sun.star.form.component.DatabaseNumericField`: DatabaseNumericField
+  var `com.sun.star.form.component.DatabasePatternField`: DatabasePatternField
+  var `com.sun.star.form.component.DatabaseRadioButton`: DatabaseRadioButton
+  var `com.sun.star.form.component.DatabaseTextField`: DatabaseTextField
+  var `com.sun.star.form.component.DatabaseTimeField`: DatabaseTimeField
+  var `com.sun.star.form.component.DateField`: DateField
+  var `com.sun.star.form.component.FileControl`: FileControl
+  var `com.sun.star.form.component.FixedText`: FixedText
+  var `com.sun.star.form.component.Form`: Form
+  var `com.sun.star.form.component.FormattedField`: FormattedField
+  var `com.sun.star.form.component.GridControl`: GridControl
+  var `com.sun.star.form.component.GroupBox`: GroupBox
+  var `com.sun.star.form.component.HTMLForm`: HTMLForm
+  var `com.sun.star.form.component.HiddenControl`: HiddenControl
+  var `com.sun.star.form.component.ImageButton`: ImageButton
+  var `com.sun.star.form.component.ListBox`: ListBox
+  var `com.sun.star.form.component.NavigationToolBar`: NavigationToolBar
+  var `com.sun.star.form.component.NumericField`: NumericField
+  var `com.sun.star.form.component.PatternField`: PatternField
+  var `com.sun.star.form.component.RadioButton`: RadioButton
+  var `com.sun.star.form.component.RichTextControl`: RichTextControl
+  var `com.sun.star.form.component.ScrollBar`: ScrollBar
+  var `com.sun.star.form.component.SpinButton`: SpinButton
+  var `com.sun.star.form.component.SubmitButton`: SubmitButton
+  var `com.sun.star.form.component.TextField`: TextField
+  var `com.sun.star.form.component.TimeField`: TimeField
+  var `com.sun.star.form.control.CheckBox`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.CheckBox
+  var `com.sun.star.form.control.ComboBox`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.ComboBox
+  var `com.sun.star.form.control.CommandButton`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.CommandButton
+  var `com.sun.star.form.control.CurrencyField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.CurrencyField
+  var `com.sun.star.form.control.DateField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.DateField
+  var `com.sun.star.form.control.FilterControl`: FilterControl
+  var `com.sun.star.form.control.FormattedField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.FormattedField
+  var `com.sun.star.form.control.GridControl`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.GridControl
+  var `com.sun.star.form.control.GroupBox`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.GroupBox
+  var `com.sun.star.form.control.ImageButton`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.ImageButton
+  var `com.sun.star.form.control.ImageControl`: ImageControl
+  var `com.sun.star.form.control.InteractionGridControl`: InteractionGridControl
+  var `com.sun.star.form.control.ListBox`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.ListBox
+  var `com.sun.star.form.control.NavigationToolBar`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.NavigationToolBar
+  var `com.sun.star.form.control.NumericField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.NumericField
+  var `com.sun.star.form.control.PatternField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.PatternField
+  var `com.sun.star.form.control.RadioButton`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.RadioButton
+  var `com.sun.star.form.control.SubmitButton`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.SubmitButton
+  var `com.sun.star.form.control.TextField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.TextField
+  var `com.sun.star.form.control.TimeField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.controlNs.TimeField
+  var `com.sun.star.form.inspection.ButtonNavigationHandler`: ButtonNavigationHandler
+  var `com.sun.star.form.inspection.CellBindingPropertyHandler`: CellBindingPropertyHandler
+  var `com.sun.star.form.inspection.DefaultFormComponentInspectorModel`: DefaultFormComponentInspectorModel
+  var `com.sun.star.form.inspection.EditPropertyHandler`: EditPropertyHandler
+  var `com.sun.star.form.inspection.EventHandler`: EventHandler
+  var `com.sun.star.form.inspection.FormComponentPropertyHandler`: FormComponentPropertyHandler
+  var `com.sun.star.form.inspection.SubmissionPropertyHandler`: SubmissionPropertyHandler
+  var `com.sun.star.form.inspection.XMLFormsPropertyHandler`: XMLFormsPropertyHandler
+  var `com.sun.star.form.inspection.XSDValidationPropertyHandler`: XSDValidationPropertyHandler
+  var `com.sun.star.form.runtime.FormController`: typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.runtimeNs.FormController
+  var `com.sun.star.form.runtime.FormOperations`: FormOperations
+  var `com.sun.star.form.validation.ValidatableBindableControlModel`: ValidatableBindableControlModel
+  var `com.sun.star.form.validation.ValidatableControlModel`: ValidatableControlModel
+  var `com.sun.star.formula.AccessibleFormulaText`: AccessibleFormulaText
+  var `com.sun.star.formula.AccessibleFormulaView`: AccessibleFormulaView
+  var `com.sun.star.formula.FormulaProperties`: FormulaProperties
+  var `com.sun.star.frame.AppDispatchProvider`: AppDispatchProvider
+  var `com.sun.star.frame.AutoRecovery`: AutoRecovery
+  var `com.sun.star.frame.Bibliography`: Bibliography
+  var `com.sun.star.frame.Components`: Components
+  var `com.sun.star.frame.ContentHandler`: ContentHandler
+  var `com.sun.star.frame.ContentHandlerFactory`: ContentHandlerFactory
+  var `com.sun.star.frame.Controller`: Controller
+  var `com.sun.star.frame.Desktop`: Desktop
+  var `com.sun.star.frame.DesktopTask`: DesktopTask
+  var `com.sun.star.frame.DesktopTasks`: DesktopTasks
+  var `com.sun.star.frame.DispatchHelper`: DispatchHelper
+  var `com.sun.star.frame.DispatchProvider`: DispatchProvider
+  var `com.sun.star.frame.DispatchRecorder`: DispatchRecorder
+  var `com.sun.star.frame.DispatchRecorderSupplier`: DispatchRecorderSupplier
+  var `com.sun.star.frame.DocumentTemplates`: DocumentTemplates
+  var `com.sun.star.frame.Frame`: Frame
+  var `com.sun.star.frame.FrameControl`: FrameControl
+  var `com.sun.star.frame.FrameLoader`: FrameLoader
+  var `com.sun.star.frame.FrameLoaderFactory`: FrameLoaderFactory
+  var `com.sun.star.frame.FramesContainer`: FramesContainer
+  var `com.sun.star.frame.GlobalEventBroadcaster`: GlobalEventBroadcaster
+  var `com.sun.star.frame.LayoutManager`: LayoutManager
+  var `com.sun.star.frame.MediaTypeDetectionHelper`: MediaTypeDetectionHelper
+  var `com.sun.star.frame.ModuleManager`: ModuleManager
+  var `com.sun.star.frame.OfficeFrameLoader`: OfficeFrameLoader
+  var `com.sun.star.frame.PopupMenuController`: PopupMenuController
+  var `com.sun.star.frame.PopupMenuControllerFactory`: PopupMenuControllerFactory
+  var `com.sun.star.frame.ProtocolHandler`: ProtocolHandler
+  var `com.sun.star.frame.SessionListener`: SessionListener
+  var `com.sun.star.frame.SessionManager`: SessionManager
+  var `com.sun.star.frame.Settings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.Settings
+  var `com.sun.star.frame.StartModule`: StartModule
+  var `com.sun.star.frame.StatusbarController`: StatusbarController
+  var `com.sun.star.frame.StatusbarControllerFactory`: StatusbarControllerFactory
+  var `com.sun.star.frame.SynchronousFrameLoader`: SynchronousFrameLoader
+  var `com.sun.star.frame.Task`: Task
+  var `com.sun.star.frame.TaskCreator`: TaskCreator
+  var `com.sun.star.frame.TemplateAccess`: TemplateAccess
+  var `com.sun.star.frame.ToolbarController`: ToolbarController
+  var `com.sun.star.frame.ToolbarControllerFactory`: ToolbarControllerFactory
+  var `com.sun.star.frame.TransientDocumentsDocumentContentFactory`: TransientDocumentsDocumentContentFactory
+  var `com.sun.star.frame.UICommandDescription`: UICommandDescription
+  var `com.sun.star.gallery.GalleryItem`: GalleryItem
+  var `com.sun.star.gallery.GalleryTheme`: GalleryTheme
+  var `com.sun.star.gallery.GalleryThemeProvider`: GalleryThemeProvider
+  var `com.sun.star.graphic.Graphic`: Graphic
+  var `com.sun.star.graphic.GraphicDescriptor`: GraphicDescriptor
+  var `com.sun.star.graphic.GraphicObject`: GraphicObject
+  var `com.sun.star.graphic.GraphicProvider`: GraphicProvider
+  var `com.sun.star.graphic.GraphicRasterizer`: GraphicRasterizer
+  var `com.sun.star.graphic.GraphicRendererVCL`: GraphicRendererVCL
+  var `com.sun.star.graphic.MediaProperties`: MediaProperties
+  var `com.sun.star.graphic.Primitive2DTools`: Primitive2DTools
+  var `com.sun.star.graphic.PrimitiveFactory2D`: PrimitiveFactory2D
+  var `com.sun.star.graphic.SvgTools`: SvgTools
+  var `com.sun.star.i18n.BreakIterator`: BreakIterator
+  var `com.sun.star.i18n.ChapterCollator`: ChapterCollator
+  var `com.sun.star.i18n.CharacterClassification`: CharacterClassification
+  var `com.sun.star.i18n.Collator`: Collator
+  var `com.sun.star.i18n.IndexEntrySupplier`: IndexEntrySupplier
+  var `com.sun.star.i18n.InputSequenceChecker`: InputSequenceChecker
+  var `com.sun.star.i18n.LocaleCalendar`: LocaleCalendar
+  var `com.sun.star.i18n.LocaleCalendar2`: LocaleCalendar2
+  var `com.sun.star.i18n.LocaleData`: LocaleData
+  var `com.sun.star.i18n.NativeNumberSupplier`: NativeNumberSupplier
+  var `com.sun.star.i18n.NumberFormatMapper`: NumberFormatMapper
+  var `com.sun.star.i18n.OrdinalSuffix`: OrdinalSuffix
+  var `com.sun.star.i18n.TextConversion`: TextConversion
+  var `com.sun.star.i18n.Transliteration`: Transliteration
+  var `com.sun.star.image.ImageMap`: ImageMap
+  var `com.sun.star.image.ImageMapCircleObject`: ImageMapCircleObject
+  var `com.sun.star.image.ImageMapObject`: ImageMapObject
+  var `com.sun.star.image.ImageMapPolygonObject`: ImageMapPolygonObject
+  var `com.sun.star.image.ImageMapRectangleObject`: ImageMapRectangleObject
+  var `com.sun.star.inspection.DefaultHelpProvider`: DefaultHelpProvider
+  var `com.sun.star.inspection.GenericPropertyHandler`: GenericPropertyHandler
+  var `com.sun.star.inspection.ObjectInspector`: ObjectInspector
+  var `com.sun.star.inspection.ObjectInspectorModel`: ObjectInspectorModel
+  var `com.sun.star.inspection.StringRepresentation`: StringRepresentation
+  var `com.sun.star.io.DataInputStream`: DataInputStream
+  var `com.sun.star.io.DataOutputStream`: DataOutputStream
+  var `com.sun.star.io.MarkableInputStream`: MarkableInputStream
+  var `com.sun.star.io.MarkableOutputStream`: MarkableOutputStream
+  var `com.sun.star.io.ObjectInputStream`: ObjectInputStream
+  var `com.sun.star.io.ObjectOutputStream`: ObjectOutputStream
+  var `com.sun.star.io.Pipe`: Pipe
+  var `com.sun.star.io.Pump`: Pump
+  var `com.sun.star.io.SequenceInputStream`: SequenceInputStream
+  var `com.sun.star.io.SequenceOutputStream`: SequenceOutputStream
+  var `com.sun.star.io.TempFile`: TempFile
+  var `com.sun.star.io.TextInputStream`: TextInputStream
+  var `com.sun.star.io.TextOutputStream`: TextOutputStream
+  var `com.sun.star.java.JavaVirtualMachine`: JavaVirtualMachine
+  var `com.sun.star.lang.MultiServiceFactory`: MultiServiceFactory
+  var `com.sun.star.lang.RegistryServiceManager`: RegistryServiceManager
+  var `com.sun.star.lang.ServiceManager`: ServiceManager
+  var `com.sun.star.linguistic2.ConversionDictionary`: ConversionDictionary
+  var `com.sun.star.linguistic2.ConversionDictionaryList`: ConversionDictionaryList
+  var `com.sun.star.linguistic2.Dictionary`: Dictionary
+  var `com.sun.star.linguistic2.DictionaryList`: DictionaryList
+  var `com.sun.star.linguistic2.HangulHanjaConversionDictionary`: HangulHanjaConversionDictionary
+  var `com.sun.star.linguistic2.Hyphenator`: Hyphenator
+  var `com.sun.star.linguistic2.LanguageGuessing`: LanguageGuessing
+  var `com.sun.star.linguistic2.LinguProperties`: LinguProperties
+  var `com.sun.star.linguistic2.LinguServiceManager`: LinguServiceManager
+  var `com.sun.star.linguistic2.Proofreader`: Proofreader
+  var `com.sun.star.linguistic2.ProofreadingIterator`: ProofreadingIterator
+  var `com.sun.star.linguistic2.SpellChecker`: SpellChecker
+  var `com.sun.star.linguistic2.Thesaurus`: Thesaurus
+  var `com.sun.star.loader.Dynamic`: Dynamic
+  var `com.sun.star.loader.Java`: Java
+  var `com.sun.star.loader.Java2`: Java2
+  var `com.sun.star.loader.SharedLibrary`: SharedLibrary
+  var `com.sun.star.logging.ConsoleHandler`: ConsoleHandler
+  var `com.sun.star.logging.CsvLogFormatter`: CsvLogFormatter
+  var `com.sun.star.logging.FileHandler`: FileHandler
+  var `com.sun.star.logging.PlainTextFormatter`: PlainTextFormatter
+  var `com.sun.star.logging.SimpleLogRing`: SimpleLogRing
+  var `com.sun.star.mail.MailMessage`: MailMessage
+  var `com.sun.star.mail.MailServiceProvider`: MailServiceProvider
+  var `com.sun.star.media.Manager`: Manager
+  var `com.sun.star.mozilla.MenuProxy`: MenuProxy
+  var `com.sun.star.mozilla.MenuProxyListener`: MenuProxyListener
+  var `com.sun.star.mozilla.MozillaBootstrap`: MozillaBootstrap
+  var `com.sun.star.office.Quickstart`: Quickstart
+  var `com.sun.star.packages.Package`: Package
+  var `com.sun.star.packages.PackageFolder`: PackageFolder
+  var `com.sun.star.packages.PackageFolderEnumeration`: PackageFolderEnumeration
+  var `com.sun.star.packages.PackageStream`: PackageStream
+  var `com.sun.star.packages.manifest.ManifestReader`: ManifestReader
+  var `com.sun.star.packages.manifest.ManifestWriter`: ManifestWriter
+  var `com.sun.star.packages.zip.ZipFileAccess`: ZipFileAccess
+  var `com.sun.star.presentation.ChartShape`: ChartShape
+  var `com.sun.star.presentation.CustomPresentation`: CustomPresentation
+  var `com.sun.star.presentation.CustomPresentationAccess`: CustomPresentationAccess
+  var `com.sun.star.presentation.DateTimeShape`: DateTimeShape
+  var `com.sun.star.presentation.DocumentSettings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.DocumentSettings
+  var `com.sun.star.presentation.DrawPage`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.DrawPage
+  var `com.sun.star.presentation.FooterShape`: FooterShape
+  var `com.sun.star.presentation.GraphicObjectShape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.GraphicObjectShape
+  var `com.sun.star.presentation.HandoutShape`: HandoutShape
+  var `com.sun.star.presentation.HandoutView`: HandoutView
+  var `com.sun.star.presentation.HeaderShape`: HeaderShape
+  var `com.sun.star.presentation.NotesShape`: NotesShape
+  var `com.sun.star.presentation.NotesView`: NotesView
+  var `com.sun.star.presentation.OLE2Shape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.OLE2Shape
+  var `com.sun.star.presentation.OutlineView`: OutlineView
+  var `com.sun.star.presentation.OutlinerShape`: OutlinerShape
+  var `com.sun.star.presentation.PageShape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.PageShape
+  var `com.sun.star.presentation.Presentation`: Presentation
+  var `com.sun.star.presentation.Presentation2`: Presentation2
+  var `com.sun.star.presentation.PresentationDocument`: PresentationDocument
+  var `com.sun.star.presentation.PresentationView`: PresentationView
+  var `com.sun.star.presentation.PreviewView`: PreviewView
+  var `com.sun.star.presentation.Shape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs.Shape
+  var `com.sun.star.presentation.SlideNumberShape`: SlideNumberShape
+  var `com.sun.star.presentation.SlideShow`: SlideShow
+  var `com.sun.star.presentation.SlidesView`: SlidesView
+  var `com.sun.star.presentation.SubtitleShape`: SubtitleShape
+  var `com.sun.star.presentation.TitleTextShape`: TitleTextShape
+  var `com.sun.star.presentation.TransitionFactory`: TransitionFactory
+  var `com.sun.star.presentation.textfield.DateTime`: DateTime
+  var `com.sun.star.presentation.textfield.Footer`: Footer
+  var `com.sun.star.presentation.textfield.Header`: Header
+  var `com.sun.star.rdf.BlankNode`: BlankNode
+  var `com.sun.star.rdf.Literal`: Literal
+  var `com.sun.star.rdf.Repository`: Repository
+  var `com.sun.star.rdf.URI`: URI
+  var `com.sun.star.reflection.CoreReflection`: CoreReflection
+  var `com.sun.star.reflection.ProxyFactory`: ProxyFactory
+  var `com.sun.star.reflection.TypeDescriptionManager`: TypeDescriptionManager
+  var `com.sun.star.reflection.TypeDescriptionProvider`: TypeDescriptionProvider
+  var `com.sun.star.registry.DefaultRegistry`: DefaultRegistry
+  var `com.sun.star.registry.ImplementationRegistration`: ImplementationRegistration
+  var `com.sun.star.registry.NestedRegistry`: NestedRegistry
+  var `com.sun.star.registry.SimpleRegistry`: SimpleRegistry
+  var `com.sun.star.rendering.BitmapCanvas`: BitmapCanvas
+  var `com.sun.star.rendering.Canvas`: Canvas
+  var `com.sun.star.rendering.CanvasFactory`: CanvasFactory
+  var `com.sun.star.rendering.MtfRenderer`: MtfRenderer
+  var `com.sun.star.report.FixedLine`: FixedLine
+  var `com.sun.star.report.FixedText`: typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.FixedText
+  var `com.sun.star.report.FormatCondition`: FormatCondition
+  var `com.sun.star.report.FormattedField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.FormattedField
+  var `com.sun.star.report.Function`: Function
+  var `com.sun.star.report.Group`: Group
+  var `com.sun.star.report.Groups`: Groups
+  var `com.sun.star.report.ImageControl`: typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.ImageControl
+  var `com.sun.star.report.ReportControlFormat`: ReportControlFormat
+  var `com.sun.star.report.ReportControlModel`: ReportControlModel
+  var `com.sun.star.report.ReportDefinition`: ReportDefinition
+  var `com.sun.star.report.ReportEngine`: ReportEngine
+  var `com.sun.star.report.Section`: Section
+  var `com.sun.star.report.Shape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.reportNs.Shape
+  var `com.sun.star.report.inspection.DataProviderHandler`: DataProviderHandler
+  var `com.sun.star.report.inspection.DefaultComponentInspectorModel`: DefaultComponentInspectorModel
+  var `com.sun.star.report.inspection.ReportComponentHandler`: ReportComponentHandler
+  var `com.sun.star.resource.StringResource`: StringResource
+  var `com.sun.star.resource.StringResourceWithLocation`: StringResourceWithLocation
+  var `com.sun.star.resource.StringResourceWithStorage`: StringResourceWithStorage
+  var `com.sun.star.scanner.ScannerManager`: ScannerManager
+  var `com.sun.star.script.AllListenerAdapter`: AllListenerAdapter
+  var `com.sun.star.script.Converter`: Converter
+  var `com.sun.star.script.DocumentDialogLibraryContainer`: DocumentDialogLibraryContainer
+  var `com.sun.star.script.DocumentScriptLibraryContainer`: DocumentScriptLibraryContainer
+  var `com.sun.star.script.Engine`: Engine
+  var `com.sun.star.script.Invocation`: Invocation
+  var `com.sun.star.script.InvocationAdapterFactory`: InvocationAdapterFactory
+  var `com.sun.star.script.JavaScript`: JavaScript
+  var `com.sun.star.script.browse.BrowseNode`: BrowseNode
+  var `com.sun.star.script.browse.BrowseNodeFactory`: BrowseNodeFactory
+  var `com.sun.star.script.provider.LanguageScriptProvider`: LanguageScriptProvider
+  var `com.sun.star.script.provider.MasterScriptProvider`: MasterScriptProvider
+  var `com.sun.star.script.provider.MasterScriptProviderFactory`: MasterScriptProviderFactory
+  var `com.sun.star.script.provider.ScriptProvider`: ScriptProvider
+  var `com.sun.star.script.provider.ScriptProviderForBasic`: ScriptProviderForBasic
+  var `com.sun.star.script.provider.ScriptProviderForBeanShell`: ScriptProviderForBeanShell
+  var `com.sun.star.script.provider.ScriptProviderForJava`: ScriptProviderForJava
+  var `com.sun.star.script.provider.ScriptProviderForJavaScript`: ScriptProviderForJavaScript
+  var `com.sun.star.script.provider.ScriptURIHelper`: ScriptURIHelper
+  var `com.sun.star.script.vba.VBAEventProcessor`: VBAEventProcessor
+  var `com.sun.star.script.vba.VBAMacroResolver`: VBAMacroResolver
+  var `com.sun.star.script.vba.VBASpreadsheetEventProcessor`: VBASpreadsheetEventProcessor
+  var `com.sun.star.script.vba.VBATextEventProcessor`: VBATextEventProcessor
+  var `com.sun.star.sdb.CallableStatement`: CallableStatement
+  var `com.sun.star.sdb.Column`: Column
+  var `com.sun.star.sdb.ColumnDescriptorControl`: ColumnDescriptorControl
+  var `com.sun.star.sdb.ColumnDescriptorControlModel`: ColumnDescriptorControlModel
+  var `com.sun.star.sdb.ColumnSettings`: ColumnSettings
+  var `com.sun.star.sdb.CommandDefinition`: CommandDefinition
+  var `com.sun.star.sdb.Connection`: Connection
+  var `com.sun.star.sdb.ContentLoader`: ContentLoader
+  var `com.sun.star.sdb.DataAccessDescriptor`: DataAccessDescriptor
+  var `com.sun.star.sdb.DataColumn`: DataColumn
+  var `com.sun.star.sdb.DataSettings`: DataSettings
+  var `com.sun.star.sdb.DataSource`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.DataSource
+  var `com.sun.star.sdb.DataSourceBrowser`: DataSourceBrowser
+  var `com.sun.star.sdb.DatabaseAccess`: DatabaseAccess
+  var `com.sun.star.sdb.DatabaseAccessConnection`: DatabaseAccessConnection
+  var `com.sun.star.sdb.DatabaseAccessContext`: DatabaseAccessContext
+  var `com.sun.star.sdb.DatabaseAccessDataSource`: DatabaseAccessDataSource
+  var `com.sun.star.sdb.DatabaseContext`: DatabaseContext
+  var `com.sun.star.sdb.DatabaseDocument`: DatabaseDocument
+  var `com.sun.star.sdb.DatabaseEnvironment`: DatabaseEnvironment
+  var `com.sun.star.sdb.DatabaseInteractionHandler`: DatabaseInteractionHandler
+  var `com.sun.star.sdb.DatasourceAdministrationDialog`: DatasourceAdministrationDialog
+  var `com.sun.star.sdb.DefinitionContainer`: DefinitionContainer
+  var `com.sun.star.sdb.DefinitionContent`: DefinitionContent
+  var `com.sun.star.sdb.Document`: Document
+  var `com.sun.star.sdb.DocumentContainer`: DocumentContainer
+  var `com.sun.star.sdb.DocumentDataSource`: DocumentDataSource
+  var `com.sun.star.sdb.DocumentDefinition`: DocumentDefinition
+  var `com.sun.star.sdb.ErrorMessageDialog`: ErrorMessageDialog
+  var `com.sun.star.sdb.FilterDialog`: FilterDialog
+  var `com.sun.star.sdb.Forms`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.Forms
+  var `com.sun.star.sdb.InteractionHandler`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbNs.InteractionHandler
+  var `com.sun.star.sdb.OfficeDatabaseDocument`: OfficeDatabaseDocument
+  var `com.sun.star.sdb.OrderColumn`: OrderColumn
+  var `com.sun.star.sdb.OrderDialog`: OrderDialog
+  var `com.sun.star.sdb.PreparedStatement`: PreparedStatement
+  var `com.sun.star.sdb.Query`: Query
+  var `com.sun.star.sdb.QueryDefinition`: QueryDefinition
+  var `com.sun.star.sdb.QueryDescriptor`: QueryDescriptor
+  var `com.sun.star.sdb.QueryDesign`: QueryDesign
+  var `com.sun.star.sdb.RelationDesign`: RelationDesign
+  var `com.sun.star.sdb.ReportDesign`: ReportDesign
+  var `com.sun.star.sdb.Reports`: Reports
+  var `com.sun.star.sdb.ResultColumn`: ResultColumn
+  var `com.sun.star.sdb.ResultSet`: ResultSet
+  var `com.sun.star.sdb.RowSet`: RowSet
+  var `com.sun.star.sdb.SQLQueryComposer`: SQLQueryComposer
+  var `com.sun.star.sdb.SingleSelectQueryAnalyzer`: SingleSelectQueryAnalyzer
+  var `com.sun.star.sdb.SingleSelectQueryComposer`: SingleSelectQueryComposer
+  var `com.sun.star.sdb.Table`: Table
+  var `com.sun.star.sdb.TableDefinition`: TableDefinition
+  var `com.sun.star.sdb.TableDescriptor`: TableDescriptor
+  var `com.sun.star.sdb.TableDesign`: TableDesign
+  var `com.sun.star.sdb.TextConnectionSettings`: TextConnectionSettings
+  var `com.sun.star.sdb.application.CopyTableWizard`: CopyTableWizard
+  var `com.sun.star.sdb.application.DefaultViewController`: DefaultViewController
+  var `com.sun.star.sdb.application.MacroMigrationWizard`: MacroMigrationWizard
+  var `com.sun.star.sdb.tools.ConnectionTools`: ConnectionTools
+  var `com.sun.star.sdbc.CallableStatement`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.CallableStatement
+  var `com.sun.star.sdbc.Connection`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.Connection
+  var `com.sun.star.sdbc.ConnectionPool`: ConnectionPool
+  var `com.sun.star.sdbc.ConnectionProperties`: ConnectionProperties
+  var `com.sun.star.sdbc.DBASEConnectionProperties`: DBASEConnectionProperties
+  var `com.sun.star.sdbc.Driver`: Driver
+  var `com.sun.star.sdbc.DriverManager`: DriverManager
+  var `com.sun.star.sdbc.FILEConnectionProperties`: FILEConnectionProperties
+  var `com.sun.star.sdbc.FLATConnectionProperties`: FLATConnectionProperties
+  var `com.sun.star.sdbc.JDBCConnectionProperties`: JDBCConnectionProperties
+  var `com.sun.star.sdbc.ODBCConnectionProperties`: ODBCConnectionProperties
+  var `com.sun.star.sdbc.PreparedStatement`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.PreparedStatement
+  var `com.sun.star.sdbc.ResultSet`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.ResultSet
+  var `com.sun.star.sdbc.RowSet`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.RowSet
+  var `com.sun.star.sdbc.Statement`: Statement
+  var `com.sun.star.sdbcx.Column`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Column
+  var `com.sun.star.sdbcx.ColumnDescriptor`: ColumnDescriptor
+  var `com.sun.star.sdbcx.Container`: Container
+  var `com.sun.star.sdbcx.DatabaseDefinition`: DatabaseDefinition
+  var `com.sun.star.sdbcx.Descriptor`: Descriptor
+  var `com.sun.star.sdbcx.Driver`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Driver
+  var `com.sun.star.sdbcx.Group`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Group
+  var `com.sun.star.sdbcx.GroupDescriptor`: GroupDescriptor
+  var `com.sun.star.sdbcx.Index`: Index
+  var `com.sun.star.sdbcx.IndexColumn`: IndexColumn
+  var `com.sun.star.sdbcx.IndexColumnDescriptor`: IndexColumnDescriptor
+  var `com.sun.star.sdbcx.IndexDescriptor`: IndexDescriptor
+  var `com.sun.star.sdbcx.Key`: Key
+  var `com.sun.star.sdbcx.KeyColumn`: KeyColumn
+  var `com.sun.star.sdbcx.KeyColumnDescriptor`: KeyColumnDescriptor
+  var `com.sun.star.sdbcx.KeyDescriptor`: KeyDescriptor
+  var `com.sun.star.sdbcx.PreparedStatement`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.PreparedStatement
+  var `com.sun.star.sdbcx.ReferenceColumn`: ReferenceColumn
+  var `com.sun.star.sdbcx.ResultSet`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.ResultSet
+  var `com.sun.star.sdbcx.Statement`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Statement
+  var `com.sun.star.sdbcx.Table`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.Table
+  var `com.sun.star.sdbcx.TableDescriptor`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.TableDescriptor
+  var `com.sun.star.sdbcx.User`: User
+  var `com.sun.star.sdbcx.UserDescriptor`: UserDescriptor
+  var `com.sun.star.sdbcx.View`: View
+  var `com.sun.star.sdbcx.ViewDescriptor`: ViewDescriptor
+  var `com.sun.star.security.AccessController`: AccessController
+  var `com.sun.star.security.CertificateContainer`: CertificateContainer
+  var `com.sun.star.security.DocumentDigitalSignatures`: DocumentDigitalSignatures
+  var `com.sun.star.security.Policy`: Policy
+  var `com.sun.star.security.SerialNumberAdapter`: SerialNumberAdapter
+  var `com.sun.star.setup.UpdateCheck`: UpdateCheck
+  var `com.sun.star.setup.UpdateCheckConfig`: UpdateCheckConfig
+  var `com.sun.star.sheet.AccessibleCell`: AccessibleCell
+  var `com.sun.star.sheet.AccessibleCsvCell`: AccessibleCsvCell
+  var `com.sun.star.sheet.AccessibleCsvRuler`: AccessibleCsvRuler
+  var `com.sun.star.sheet.AccessibleCsvTable`: AccessibleCsvTable
+  var `com.sun.star.sheet.AccessiblePageHeaderFooterAreasView`: AccessiblePageHeaderFooterAreasView
+  var `com.sun.star.sheet.AccessibleSpreadsheet`: AccessibleSpreadsheet
+  var `com.sun.star.sheet.AccessibleSpreadsheetDocumentView`: AccessibleSpreadsheetDocumentView
+  var `com.sun.star.sheet.AccessibleSpreadsheetPageView`: AccessibleSpreadsheetPageView
+  var `com.sun.star.sheet.AddIn`: AddIn
+  var `com.sun.star.sheet.CellAnnotation`: CellAnnotation
+  var `com.sun.star.sheet.CellAnnotationShape`: CellAnnotationShape
+  var `com.sun.star.sheet.CellAnnotations`: CellAnnotations
+  var `com.sun.star.sheet.CellAnnotationsEnumeration`: CellAnnotationsEnumeration
+  var `com.sun.star.sheet.CellAreaLink`: CellAreaLink
+  var `com.sun.star.sheet.CellAreaLinks`: CellAreaLinks
+  var `com.sun.star.sheet.CellAreaLinksEnumeration`: CellAreaLinksEnumeration
+  var `com.sun.star.sheet.CellFormatRanges`: CellFormatRanges
+  var `com.sun.star.sheet.CellFormatRangesEnumeration`: CellFormatRangesEnumeration
+  var `com.sun.star.sheet.Cells`: Cells
+  var `com.sun.star.sheet.CellsEnumeration`: CellsEnumeration
+  var `com.sun.star.sheet.ColorScale`: ColorScale
+  var `com.sun.star.sheet.ConditionFormatEntry`: ConditionFormatEntry
+  var `com.sun.star.sheet.ConditionalFormat`: ConditionalFormat
+  var `com.sun.star.sheet.ConsolidationDescriptor`: ConsolidationDescriptor
+  var `com.sun.star.sheet.DDELink`: DDELink
+  var `com.sun.star.sheet.DDELinks`: DDELinks
+  var `com.sun.star.sheet.DDELinksEnumeration`: DDELinksEnumeration
+  var `com.sun.star.sheet.DataBar`: DataBar
+  var `com.sun.star.sheet.DataPilotDescriptor`: DataPilotDescriptor
+  var `com.sun.star.sheet.DataPilotField`: DataPilotField
+  var `com.sun.star.sheet.DataPilotFieldGroup`: DataPilotFieldGroup
+  var `com.sun.star.sheet.DataPilotFieldGroupEnumeration`: DataPilotFieldGroupEnumeration
+  var `com.sun.star.sheet.DataPilotFieldGroupItem`: DataPilotFieldGroupItem
+  var `com.sun.star.sheet.DataPilotFieldGroups`: DataPilotFieldGroups
+  var `com.sun.star.sheet.DataPilotFieldGroupsEnumeration`: DataPilotFieldGroupsEnumeration
+  var `com.sun.star.sheet.DataPilotFields`: DataPilotFields
+  var `com.sun.star.sheet.DataPilotFieldsEnumeration`: DataPilotFieldsEnumeration
+  var `com.sun.star.sheet.DataPilotItem`: DataPilotItem
+  var `com.sun.star.sheet.DataPilotItems`: DataPilotItems
+  var `com.sun.star.sheet.DataPilotItemsEnumeration`: DataPilotItemsEnumeration
+  var `com.sun.star.sheet.DataPilotSource`: DataPilotSource
+  var `com.sun.star.sheet.DataPilotSourceDimension`: DataPilotSourceDimension
+  var `com.sun.star.sheet.DataPilotSourceDimensions`: DataPilotSourceDimensions
+  var `com.sun.star.sheet.DataPilotSourceHierarchies`: DataPilotSourceHierarchies
+  var `com.sun.star.sheet.DataPilotSourceHierarchy`: DataPilotSourceHierarchy
+  var `com.sun.star.sheet.DataPilotSourceLevel`: DataPilotSourceLevel
+  var `com.sun.star.sheet.DataPilotSourceLevels`: DataPilotSourceLevels
+  var `com.sun.star.sheet.DataPilotSourceMember`: DataPilotSourceMember
+  var `com.sun.star.sheet.DataPilotSourceMembers`: DataPilotSourceMembers
+  var `com.sun.star.sheet.DataPilotTable`: DataPilotTable
+  var `com.sun.star.sheet.DataPilotTables`: DataPilotTables
+  var `com.sun.star.sheet.DataPilotTablesEnumeration`: DataPilotTablesEnumeration
+  var `com.sun.star.sheet.DatabaseImportDescriptor`: DatabaseImportDescriptor
+  var `com.sun.star.sheet.DatabaseRange`: DatabaseRange
+  var `com.sun.star.sheet.DatabaseRanges`: DatabaseRanges
+  var `com.sun.star.sheet.DatabaseRangesEnumeration`: DatabaseRangesEnumeration
+  var `com.sun.star.sheet.DateCondition`: DateCondition
+  var `com.sun.star.sheet.DocumentSettings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.DocumentSettings
+  var `com.sun.star.sheet.ExternalDocLink`: ExternalDocLink
+  var `com.sun.star.sheet.ExternalDocLinks`: ExternalDocLinks
+  var `com.sun.star.sheet.ExternalSheetCache`: ExternalSheetCache
+  var `com.sun.star.sheet.FilterFormulaParser`: FilterFormulaParser
+  var `com.sun.star.sheet.FormulaOpCodeMapper`: FormulaOpCodeMapper
+  var `com.sun.star.sheet.FormulaParser`: FormulaParser
+  var `com.sun.star.sheet.FunctionAccess`: FunctionAccess
+  var `com.sun.star.sheet.FunctionDescription`: FunctionDescription
+  var `com.sun.star.sheet.FunctionDescriptionEnumeration`: FunctionDescriptionEnumeration
+  var `com.sun.star.sheet.FunctionDescriptions`: FunctionDescriptions
+  var `com.sun.star.sheet.GlobalSheetSettings`: GlobalSheetSettings
+  var `com.sun.star.sheet.HeaderFooterContent`: HeaderFooterContent
+  var `com.sun.star.sheet.IconSet`: IconSet
+  var `com.sun.star.sheet.LabelRange`: LabelRange
+  var `com.sun.star.sheet.LabelRanges`: LabelRanges
+  var `com.sun.star.sheet.LabelRangesEnumeration`: LabelRangesEnumeration
+  var `com.sun.star.sheet.NamedRange`: NamedRange
+  var `com.sun.star.sheet.NamedRanges`: NamedRanges
+  var `com.sun.star.sheet.NamedRangesEnumeration`: NamedRangesEnumeration
+  var `com.sun.star.sheet.RangeSelectionArguments`: RangeSelectionArguments
+  var `com.sun.star.sheet.RecentFunctions`: RecentFunctions
+  var `com.sun.star.sheet.Scenario`: Scenario
+  var `com.sun.star.sheet.Scenarios`: Scenarios
+  var `com.sun.star.sheet.ScenariosEnumeration`: ScenariosEnumeration
+  var `com.sun.star.sheet.Shape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.sheetNs.Shape
+  var `com.sun.star.sheet.SheetCell`: SheetCell
+  var `com.sun.star.sheet.SheetCellCursor`: SheetCellCursor
+  var `com.sun.star.sheet.SheetCellRange`: SheetCellRange
+  var `com.sun.star.sheet.SheetCellRanges`: SheetCellRanges
+  var `com.sun.star.sheet.SheetCellRangesEnumeration`: SheetCellRangesEnumeration
+  var `com.sun.star.sheet.SheetFilterDescriptor`: SheetFilterDescriptor
+  var `com.sun.star.sheet.SheetLink`: SheetLink
+  var `com.sun.star.sheet.SheetLinks`: SheetLinks
+  var `com.sun.star.sheet.SheetLinksEnumeration`: SheetLinksEnumeration
+  var `com.sun.star.sheet.SheetRangesQuery`: SheetRangesQuery
+  var `com.sun.star.sheet.SheetSortDescriptor`: SheetSortDescriptor
+  var `com.sun.star.sheet.SheetSortDescriptor2`: SheetSortDescriptor2
+  var `com.sun.star.sheet.Solver`: Solver
+  var `com.sun.star.sheet.Spreadsheet`: Spreadsheet
+  var `com.sun.star.sheet.SpreadsheetDocument`: SpreadsheetDocument
+  var `com.sun.star.sheet.SpreadsheetDocumentSettings`: SpreadsheetDocumentSettings
+  var `com.sun.star.sheet.SpreadsheetDrawPage`: SpreadsheetDrawPage
+  var `com.sun.star.sheet.SpreadsheetView`: SpreadsheetView
+  var `com.sun.star.sheet.SpreadsheetViewPane`: SpreadsheetViewPane
+  var `com.sun.star.sheet.SpreadsheetViewPanesEnumeration`: SpreadsheetViewPanesEnumeration
+  var `com.sun.star.sheet.SpreadsheetViewSettings`: SpreadsheetViewSettings
+  var `com.sun.star.sheet.Spreadsheets`: Spreadsheets
+  var `com.sun.star.sheet.SpreadsheetsEnumeration`: SpreadsheetsEnumeration
+  var `com.sun.star.sheet.SubTotalDescriptor`: SubTotalDescriptor
+  var `com.sun.star.sheet.SubTotalField`: SubTotalField
+  var `com.sun.star.sheet.SubTotalFieldsEnumeration`: SubTotalFieldsEnumeration
+  var `com.sun.star.sheet.TableAutoFormat`: TableAutoFormat
+  var `com.sun.star.sheet.TableAutoFormatEnumeration`: TableAutoFormatEnumeration
+  var `com.sun.star.sheet.TableAutoFormatField`: TableAutoFormatField
+  var `com.sun.star.sheet.TableAutoFormats`: TableAutoFormats
+  var `com.sun.star.sheet.TableAutoFormatsEnumeration`: TableAutoFormatsEnumeration
+  var `com.sun.star.sheet.TableCellStyle`: TableCellStyle
+  var `com.sun.star.sheet.TableConditionalEntry`: TableConditionalEntry
+  var `com.sun.star.sheet.TableConditionalEntryEnumeration`: TableConditionalEntryEnumeration
+  var `com.sun.star.sheet.TableConditionalFormat`: TableConditionalFormat
+  var `com.sun.star.sheet.TablePageStyle`: TablePageStyle
+  var `com.sun.star.sheet.TableValidation`: TableValidation
+  var `com.sun.star.sheet.UniqueCellFormatRanges`: UniqueCellFormatRanges
+  var `com.sun.star.sheet.UniqueCellFormatRangesEnumeration`: UniqueCellFormatRangesEnumeration
+  var `com.sun.star.sheet.VolatileResult`: VolatileResult
+  var `com.sun.star.smarttags.SmartTagAction`: SmartTagAction
+  var `com.sun.star.smarttags.SmartTagRecognizer`: SmartTagRecognizer
+  var `com.sun.star.style.CellStyle`: CellStyle
+  var `com.sun.star.style.CharacterProperties`: CharacterProperties
+  var `com.sun.star.style.CharacterPropertiesAsian`: CharacterPropertiesAsian
+  var `com.sun.star.style.CharacterPropertiesComplex`: CharacterPropertiesComplex
+  var `com.sun.star.style.CharacterStyle`: CharacterStyle
+  var `com.sun.star.style.NumberingAlignment`: NumberingAlignment
+  var `com.sun.star.style.NumberingLevel`: NumberingLevel
+  var `com.sun.star.style.NumberingRule`: NumberingRule
+  var `com.sun.star.style.PageProperties`: PageProperties
+  var `com.sun.star.style.PageStyle`: PageStyle
+  var `com.sun.star.style.ParagraphProperties`: ParagraphProperties
+  var `com.sun.star.style.ParagraphPropertiesAsian`: ParagraphPropertiesAsian
+  var `com.sun.star.style.ParagraphPropertiesComplex`: ParagraphPropertiesComplex
+  var `com.sun.star.style.ParagraphStyle`: ParagraphStyle
+  var `com.sun.star.style.Style`: Style
+  var `com.sun.star.style.StyleFamilies`: StyleFamilies
+  var `com.sun.star.style.StyleFamily`: StyleFamily
+  var `com.sun.star.system.SimpleCommandMail`: SimpleCommandMail
+  var `com.sun.star.system.SimpleSystemMail`: SimpleSystemMail
+  var `com.sun.star.system.SystemShellExecute`: SystemShellExecute
+  var `com.sun.star.table.AccessibleCellView`: AccessibleCellView
+  var `com.sun.star.table.AccessibleTableView`: AccessibleTableView
+  var `com.sun.star.table.Cell`: Cell
+  var `com.sun.star.table.CellCursor`: CellCursor
+  var `com.sun.star.table.CellProperties`: CellProperties
+  var `com.sun.star.table.CellRange`: CellRange
+  var `com.sun.star.table.CellRangeListSource`: CellRangeListSource
+  var `com.sun.star.table.CellValueBinding`: CellValueBinding
+  var `com.sun.star.table.ListPositionCellBinding`: ListPositionCellBinding
+  var `com.sun.star.table.TableChart`: TableChart
+  var `com.sun.star.table.TableCharts`: TableCharts
+  var `com.sun.star.table.TableChartsEnumeration`: TableChartsEnumeration
+  var `com.sun.star.table.TableColumn`: TableColumn
+  var `com.sun.star.table.TableColumns`: TableColumns
+  var `com.sun.star.table.TableColumnsEnumeration`: TableColumnsEnumeration
+  var `com.sun.star.table.TableRow`: TableRow
+  var `com.sun.star.table.TableRows`: TableRows
+  var `com.sun.star.table.TableRowsEnumeration`: TableRowsEnumeration
+  var `com.sun.star.table.TableSortDescriptor`: TableSortDescriptor
+  var `com.sun.star.table.TableSortDescriptor2`: TableSortDescriptor2
+  var `com.sun.star.task.AsyncJob`: AsyncJob
+  var `com.sun.star.task.InteractionHandler`: typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.InteractionHandler
+  var `com.sun.star.task.InteractionRequestStringResolver`: InteractionRequestStringResolver
+  var `com.sun.star.task.Job`: Job
+  var `com.sun.star.task.JobExecutor`: JobExecutor
+  var `com.sun.star.task.PasswordContainer`: PasswordContainer
+  var `com.sun.star.task.PasswordContainerInteractionHandler`: PasswordContainerInteractionHandler
+  var `com.sun.star.task.StatusIndicatorFactory`: StatusIndicatorFactory
+  var `com.sun.star.text.AccessibleEndnoteView`: AccessibleEndnoteView
+  var `com.sun.star.text.AccessibleFootnoteView`: AccessibleFootnoteView
+  var `com.sun.star.text.AccessibleHeaderFooterView`: AccessibleHeaderFooterView
+  var `com.sun.star.text.AccessiblePageView`: AccessiblePageView
+  var `com.sun.star.text.AccessibleParagraphView`: AccessibleParagraphView
+  var `com.sun.star.text.AccessibleTextDocumentPageView`: AccessibleTextDocumentPageView
+  var `com.sun.star.text.AccessibleTextDocumentView`: AccessibleTextDocumentView
+  var `com.sun.star.text.AccessibleTextEmbeddedObject`: AccessibleTextEmbeddedObject
+  var `com.sun.star.text.AccessibleTextFrameView`: AccessibleTextFrameView
+  var `com.sun.star.text.AccessibleTextGraphicObject`: AccessibleTextGraphicObject
+  var `com.sun.star.text.AutoTextContainer`: AutoTextContainer
+  var `com.sun.star.text.AutoTextEntry`: AutoTextEntry
+  var `com.sun.star.text.AutoTextGroup`: AutoTextGroup
+  var `com.sun.star.text.BaseFrame`: BaseFrame
+  var `com.sun.star.text.BaseFrameProperties`: BaseFrameProperties
+  var `com.sun.star.text.BaseIndex`: BaseIndex
+  var `com.sun.star.text.BaseIndexMark`: BaseIndexMark
+  var `com.sun.star.text.Bibliography`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Bibliography
+  var `com.sun.star.text.Bookmark`: Bookmark
+  var `com.sun.star.text.Bookmarks`: Bookmarks
+  var `com.sun.star.text.Cell`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Cell
+  var `com.sun.star.text.CellProperties`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.CellProperties
+  var `com.sun.star.text.CellRange`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.CellRange
+  var `com.sun.star.text.ChainedTextFrame`: ChainedTextFrame
+  var `com.sun.star.text.ChapterNumberingRule`: ChapterNumberingRule
+  var `com.sun.star.text.ContentIndex`: ContentIndex
+  var `com.sun.star.text.ContentIndexMark`: ContentIndexMark
+  var `com.sun.star.text.DefaultNumberingProvider`: DefaultNumberingProvider
+  var `com.sun.star.text.Defaults`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Defaults
+  var `com.sun.star.text.DependentTextField`: DependentTextField
+  var `com.sun.star.text.DocumentIndex`: DocumentIndex
+  var `com.sun.star.text.DocumentIndexLevelFormat`: DocumentIndexLevelFormat
+  var `com.sun.star.text.DocumentIndexMark`: DocumentIndexMark
+  var `com.sun.star.text.DocumentIndexMarkAsian`: DocumentIndexMarkAsian
+  var `com.sun.star.text.DocumentIndexParagraphStyles`: DocumentIndexParagraphStyles
+  var `com.sun.star.text.DocumentIndexes`: DocumentIndexes
+  var `com.sun.star.text.DocumentSettings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.DocumentSettings
+  var `com.sun.star.text.Endnote`: Endnote
+  var `com.sun.star.text.EndnoteSettings`: EndnoteSettings
+  var `com.sun.star.text.Footnote`: Footnote
+  var `com.sun.star.text.FootnoteSettings`: FootnoteSettings
+  var `com.sun.star.text.Footnotes`: Footnotes
+  var `com.sun.star.text.GenericTextDocument`: GenericTextDocument
+  var `com.sun.star.text.GlobalDocument`: GlobalDocument
+  var `com.sun.star.text.GlobalSettings`: GlobalSettings
+  var `com.sun.star.text.IllustrationsIndex`: IllustrationsIndex
+  var `com.sun.star.text.InContentMetadata`: InContentMetadata
+  var `com.sun.star.text.LineNumberingProperties`: LineNumberingProperties
+  var `com.sun.star.text.MailMerge`: MailMerge
+  var `com.sun.star.text.ModuleDispatcher`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.ModuleDispatcher
+  var `com.sun.star.text.NumberingLevel`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.NumberingLevel
+  var `com.sun.star.text.NumberingRules`: NumberingRules
+  var `com.sun.star.text.NumberingStyle`: NumberingStyle
+  var `com.sun.star.text.ObjectIndex`: ObjectIndex
+  var `com.sun.star.text.PageFootnoteInfo`: PageFootnoteInfo
+  var `com.sun.star.text.PagePrintSettings`: PagePrintSettings
+  var `com.sun.star.text.Paragraph`: Paragraph
+  var `com.sun.star.text.ParagraphEnumeration`: ParagraphEnumeration
+  var `com.sun.star.text.PrintSettings`: PrintSettings
+  var `com.sun.star.text.RedlinePortion`: RedlinePortion
+  var `com.sun.star.text.ReferenceMark`: ReferenceMark
+  var `com.sun.star.text.ReferenceMarks`: ReferenceMarks
+  var `com.sun.star.text.Shape`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Shape
+  var `com.sun.star.text.TableColumns`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TableColumns
+  var `com.sun.star.text.TableIndex`: TableIndex
+  var `com.sun.star.text.TableRows`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TableRows
+  var `com.sun.star.text.Text`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.Text
+  var `com.sun.star.text.TextColumns`: TextColumns
+  var `com.sun.star.text.TextContent`: TextContent
+  var `com.sun.star.text.TextContentCollection`: TextContentCollection
+  var `com.sun.star.text.TextCursor`: TextCursor
+  var `com.sun.star.text.TextDocument`: TextDocument
+  var `com.sun.star.text.TextDocumentView`: TextDocumentView
+  var `com.sun.star.text.TextEmbeddedObject`: TextEmbeddedObject
+  var `com.sun.star.text.TextEmbeddedObjects`: TextEmbeddedObjects
+  var `com.sun.star.text.TextField`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextField
+  var `com.sun.star.text.TextFieldEnumeration`: TextFieldEnumeration
+  var `com.sun.star.text.TextFieldMaster`: TextFieldMaster
+  var `com.sun.star.text.TextFieldMasters`: TextFieldMasters
+  var `com.sun.star.text.TextFields`: TextFields
+  var `com.sun.star.text.TextFrame`: TextFrame
+  var `com.sun.star.text.TextFrames`: TextFrames
+  var `com.sun.star.text.TextGraphicObject`: TextGraphicObject
+  var `com.sun.star.text.TextGraphicObjects`: TextGraphicObjects
+  var `com.sun.star.text.TextLayoutCursor`: TextLayoutCursor
+  var `com.sun.star.text.TextPageStyle`: TextPageStyle
+  var `com.sun.star.text.TextPortion`: TextPortion
+  var `com.sun.star.text.TextPortionEnumeration`: TextPortionEnumeration
+  var `com.sun.star.text.TextRange`: TextRange
+  var `com.sun.star.text.TextRangeContentProperties`: TextRangeContentProperties
+  var `com.sun.star.text.TextRanges`: TextRanges
+  var `com.sun.star.text.TextSection`: TextSection
+  var `com.sun.star.text.TextSections`: TextSections
+  var `com.sun.star.text.TextSortDescriptor`: TextSortDescriptor
+  var `com.sun.star.text.TextSortDescriptor2`: TextSortDescriptor2
+  var `com.sun.star.text.TextSortable`: TextSortable
+  var `com.sun.star.text.TextTable`: TextTable
+  var `com.sun.star.text.TextTableCursor`: TextTableCursor
+  var `com.sun.star.text.TextTableRow`: TextTableRow
+  var `com.sun.star.text.TextTables`: TextTables
+  var `com.sun.star.text.TextViewCursor`: TextViewCursor
+  var `com.sun.star.text.UserDefinedIndex`: UserDefinedIndex
+  var `com.sun.star.text.UserIndex`: UserIndex
+  var `com.sun.star.text.UserIndexMark`: UserIndexMark
+  var `com.sun.star.text.ViewSettings`: ViewSettings
+  var `com.sun.star.text.WebDocument`: WebDocument
+  var `com.sun.star.text.fieldmaster.Bibliography`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.fieldmasterNs.Bibliography
+  var `com.sun.star.text.fieldmaster.DDE`: DDE
+  var `com.sun.star.text.fieldmaster.Database`: Database
+  var `com.sun.star.text.fieldmaster.SetExpression`: SetExpression
+  var `com.sun.star.text.fieldmaster.User`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.fieldmasterNs.User
+  var `com.sun.star.text.textfield.Annotation`: Annotation
+  var `com.sun.star.text.textfield.Author`: Author
+  var `com.sun.star.text.textfield.Bibliography`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Bibliography
+  var `com.sun.star.text.textfield.Chapter`: Chapter
+  var `com.sun.star.text.textfield.CharacterCount`: CharacterCount
+  var `com.sun.star.text.textfield.CombinedCharacters`: CombinedCharacters
+  var `com.sun.star.text.textfield.ConditionalText`: ConditionalText
+  var `com.sun.star.text.textfield.DDE`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DDE
+  var `com.sun.star.text.textfield.Database`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.Database
+  var `com.sun.star.text.textfield.DatabaseName`: DatabaseName
+  var `com.sun.star.text.textfield.DatabaseNextSet`: DatabaseNextSet
+  var `com.sun.star.text.textfield.DatabaseNumberOfSet`: DatabaseNumberOfSet
+  var `com.sun.star.text.textfield.DatabaseSetNumber`: DatabaseSetNumber
+  var `com.sun.star.text.textfield.DateTime`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.DateTime
+  var `com.sun.star.text.textfield.DropDown`: DropDown
+  var `com.sun.star.text.textfield.EmbeddedObjectCount`: EmbeddedObjectCount
+  var `com.sun.star.text.textfield.ExtendedUser`: ExtendedUser
+  var `com.sun.star.text.textfield.FileName`: FileName
+  var `com.sun.star.text.textfield.GetExpression`: GetExpression
+  var `com.sun.star.text.textfield.GetReference`: GetReference
+  var `com.sun.star.text.textfield.GraphicObjectCount`: GraphicObjectCount
+  var `com.sun.star.text.textfield.HiddenParagraph`: HiddenParagraph
+  var `com.sun.star.text.textfield.HiddenText`: HiddenText
+  var `com.sun.star.text.textfield.Input`: Input
+  var `com.sun.star.text.textfield.InputUser`: InputUser
+  var `com.sun.star.text.textfield.JumpEdit`: JumpEdit
+  var `com.sun.star.text.textfield.Macro`: Macro
+  var `com.sun.star.text.textfield.MetadataField`: MetadataField
+  var `com.sun.star.text.textfield.PageCount`: PageCount
+  var `com.sun.star.text.textfield.PageNumber`: PageNumber
+  var `com.sun.star.text.textfield.ParagraphCount`: ParagraphCount
+  var `com.sun.star.text.textfield.ReferencePageGet`: ReferencePageGet
+  var `com.sun.star.text.textfield.ReferencePageSet`: ReferencePageSet
+  var `com.sun.star.text.textfield.Script`: Script
+  var `com.sun.star.text.textfield.SetExpression`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.SetExpression
+  var `com.sun.star.text.textfield.TableCount`: TableCount
+  var `com.sun.star.text.textfield.TableFormula`: TableFormula
+  var `com.sun.star.text.textfield.TemplateName`: TemplateName
+  var `com.sun.star.text.textfield.URL`: URL
+  var `com.sun.star.text.textfield.User`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.User
+  var `com.sun.star.text.textfield.WordCount`: WordCount
+  var `com.sun.star.text.textfield.docinfo.ChangeAuthor`: ChangeAuthor
+  var `com.sun.star.text.textfield.docinfo.ChangeDateTime`: ChangeDateTime
+  var `com.sun.star.text.textfield.docinfo.CreateAuthor`: CreateAuthor
+  var `com.sun.star.text.textfield.docinfo.CreateDateTime`: CreateDateTime
+  var `com.sun.star.text.textfield.docinfo.Custom`: Custom
+  var `com.sun.star.text.textfield.docinfo.Description`: Description
+  var `com.sun.star.text.textfield.docinfo.EditTime`: EditTime
+  var `com.sun.star.text.textfield.docinfo.Keywords`: Keywords
+  var `com.sun.star.text.textfield.docinfo.PrintAuthor`: PrintAuthor
+  var `com.sun.star.text.textfield.docinfo.PrintDateTime`: PrintDateTime
+  var `com.sun.star.text.textfield.docinfo.Revision`: Revision
+  var `com.sun.star.text.textfield.docinfo.Subject`: Subject
+  var `com.sun.star.text.textfield.docinfo.Title`: typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.textfieldNs.docinfoNs.Title
+  var `com.sun.star.ucb.AnyCompareFactory`: AnyCompareFactory
+  var `com.sun.star.ucb.CachedContentResultSet`: CachedContentResultSet
+  var `com.sun.star.ucb.CachedContentResultSetFactory`: CachedContentResultSetFactory
+  var `com.sun.star.ucb.CachedContentResultSetStub`: CachedContentResultSetStub
+  var `com.sun.star.ucb.CachedContentResultSetStubFactory`: CachedContentResultSetStubFactory
+  var `com.sun.star.ucb.CachedDynamicResultSet`: CachedDynamicResultSet
+  var `com.sun.star.ucb.CachedDynamicResultSetFactory`: CachedDynamicResultSetFactory
+  var `com.sun.star.ucb.CachedDynamicResultSetStub`: CachedDynamicResultSetStub
+  var `com.sun.star.ucb.CachedDynamicResultSetStubFactory`: CachedDynamicResultSetStubFactory
+  var `com.sun.star.ucb.CmisContentProvider`: CmisContentProvider
+  var `com.sun.star.ucb.CommandEnvironment`: CommandEnvironment
+  var `com.sun.star.ucb.Content`: Content
+  var `com.sun.star.ucb.ContentProvider`: ContentProvider
+  var `com.sun.star.ucb.ContentProviderProxy`: ContentProviderProxy
+  var `com.sun.star.ucb.ContentProviderProxyFactory`: ContentProviderProxyFactory
+  var `com.sun.star.ucb.ContentResultSet`: ContentResultSet
+  var `com.sun.star.ucb.ContentTransmitter`: ContentTransmitter
+  var `com.sun.star.ucb.DefaultHierarchyDataSource`: DefaultHierarchyDataSource
+  var `com.sun.star.ucb.DynamicResultSet`: DynamicResultSet
+  var `com.sun.star.ucb.ExpandContentProvider`: ExpandContentProvider
+  var `com.sun.star.ucb.FTPContent`: FTPContent
+  var `com.sun.star.ucb.FTPContentProvider`: FTPContentProvider
+  var `com.sun.star.ucb.FileContent`: FileContent
+  var `com.sun.star.ucb.FileContentProvider`: FileContentProvider
+  var `com.sun.star.ucb.GIOContentProvider`: GIOContentProvider
+  var `com.sun.star.ucb.GnomeVFSContentProvider`: GnomeVFSContentProvider
+  var `com.sun.star.ucb.GnomeVFSDocumentContent`: GnomeVFSDocumentContent
+  var `com.sun.star.ucb.GnomeVFSFolderContent`: GnomeVFSFolderContent
+  var `com.sun.star.ucb.HelpContent`: HelpContent
+  var `com.sun.star.ucb.HelpContentProvider`: HelpContentProvider
+  var `com.sun.star.ucb.HierarchyContentProvider`: HierarchyContentProvider
+  var `com.sun.star.ucb.HierarchyDataReadAccess`: HierarchyDataReadAccess
+  var `com.sun.star.ucb.HierarchyDataReadWriteAccess`: HierarchyDataReadWriteAccess
+  var `com.sun.star.ucb.HierarchyDataSource`: HierarchyDataSource
+  var `com.sun.star.ucb.HierarchyFolderContent`: HierarchyFolderContent
+  var `com.sun.star.ucb.HierarchyLinkContent`: HierarchyLinkContent
+  var `com.sun.star.ucb.HierarchyRootFolderContent`: HierarchyRootFolderContent
+  var `com.sun.star.ucb.ODMAContent`: ODMAContent
+  var `com.sun.star.ucb.ODMAContentProvider`: ODMAContentProvider
+  var `com.sun.star.ucb.PackageContentProvider`: PackageContentProvider
+  var `com.sun.star.ucb.PackageFolderContent`: PackageFolderContent
+  var `com.sun.star.ucb.PackageStreamContent`: PackageStreamContent
+  var `com.sun.star.ucb.PersistentPropertySet`: PersistentPropertySet
+  var `com.sun.star.ucb.PropertiesManager`: PropertiesManager
+  var `com.sun.star.ucb.PropertySetRegistry`: PropertySetRegistry
+  var `com.sun.star.ucb.RemoteAccessContentProvider`: RemoteAccessContentProvider
+  var `com.sun.star.ucb.RemoteContentProviderAcceptor`: RemoteContentProviderAcceptor
+  var `com.sun.star.ucb.RemoteProxyContentProvider`: RemoteProxyContentProvider
+  var `com.sun.star.ucb.SimpleFileAccess`: SimpleFileAccess
+  var `com.sun.star.ucb.SortedDynamicResultSetFactory`: SortedDynamicResultSetFactory
+  var `com.sun.star.ucb.Store`: Store
+  var `com.sun.star.ucb.TransientDocumentsContentProvider`: TransientDocumentsContentProvider
+  var `com.sun.star.ucb.TransientDocumentsDocumentContent`: TransientDocumentsDocumentContent
+  var `com.sun.star.ucb.TransientDocumentsFolderContent`: TransientDocumentsFolderContent
+  var `com.sun.star.ucb.TransientDocumentsRootContent`: TransientDocumentsRootContent
+  var `com.sun.star.ucb.TransientDocumentsStreamContent`: TransientDocumentsStreamContent
+  var `com.sun.star.ucb.UniversalContentBroker`: UniversalContentBroker
+  var `com.sun.star.ucb.WebDAVContentProvider`: WebDAVContentProvider
+  var `com.sun.star.ucb.WebDAVDocumentContent`: WebDAVDocumentContent
+  var `com.sun.star.ucb.WebDAVFolderContent`: WebDAVFolderContent
+  var `com.sun.star.ui.ActionTrigger`: ActionTrigger
+  var `com.sun.star.ui.ActionTriggerContainer`: ActionTriggerContainer
+  var `com.sun.star.ui.ActionTriggerSeparator`: ActionTriggerSeparator
+  var `com.sun.star.ui.AddressBookSourceDialog`: AddressBookSourceDialog
+  var `com.sun.star.ui.ConfigurableUIElement`: ConfigurableUIElement
+  var `com.sun.star.ui.DocumentAcceleratorConfiguration`: DocumentAcceleratorConfiguration
+  var `com.sun.star.ui.GlobalAcceleratorConfiguration`: GlobalAcceleratorConfiguration
+  var `com.sun.star.ui.ImageManager`: ImageManager
+  var `com.sun.star.ui.ItemDescriptor`: ItemDescriptor
+  var `com.sun.star.ui.ModuleAcceleratorConfiguration`: ModuleAcceleratorConfiguration
+  var `com.sun.star.ui.ModuleUICategoryDescription`: ModuleUICategoryDescription
+  var `com.sun.star.ui.ModuleUICommandDescription`: ModuleUICommandDescription
+  var `com.sun.star.ui.ModuleUIConfigurationManager`: ModuleUIConfigurationManager
+  var `com.sun.star.ui.ModuleWindowStateConfiguration`: ModuleWindowStateConfiguration
+  var `com.sun.star.ui.UICategoryDescription`: UICategoryDescription
+  var `com.sun.star.ui.UIConfigurationManager`: UIConfigurationManager
+  var `com.sun.star.ui.UIElement`: UIElement
+  var `com.sun.star.ui.UIElementFactory`: UIElementFactory
+  var `com.sun.star.ui.UIElementFactoryManager`: UIElementFactoryManager
+  var `com.sun.star.ui.UIElementSettings`: UIElementSettings
+  var `com.sun.star.ui.WindowContentFactory`: WindowContentFactory
+  var `com.sun.star.ui.WindowContentFactoryManager`: WindowContentFactoryManager
+  var `com.sun.star.ui.WindowStateConfiguration`: WindowStateConfiguration
+  var `com.sun.star.ui.dialogs.AddressBookSourcePilot`: AddressBookSourcePilot
+  var `com.sun.star.ui.dialogs.FilePicker`: FilePicker
+  var `com.sun.star.ui.dialogs.FilterOptionsDialog`: FilterOptionsDialog
+  var `com.sun.star.ui.dialogs.FolderPicker`: FolderPicker
+  var `com.sun.star.ui.dialogs.Wizard`: Wizard
+  var `com.sun.star.ui.dialogs.XSLTFilterDialog`: XSLTFilterDialog
+  var `com.sun.star.ui.test.UITest`: UITest
+  var `com.sun.star.uno.NamingService`: NamingService
+  var `com.sun.star.uri.ExternalUriReferenceTranslator`: ExternalUriReferenceTranslator
+  var `com.sun.star.uri.UriReferenceFactory`: UriReferenceFactory
+  var `com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTexpand`: UriSchemeParser_vndDOTsunDOTstarDOTexpand
+  var `com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTscript`: UriSchemeParser_vndDOTsunDOTstarDOTscript
+  var `com.sun.star.uri.VndSunStarPkgUrlReferenceFactory`: VndSunStarPkgUrlReferenceFactory
+  var `com.sun.star.util.BootstrapMacroExpander`: BootstrapMacroExpander
+  var `com.sun.star.util.JobManager`: JobManager
+  var `com.sun.star.util.MacroExpander`: MacroExpander
+  var `com.sun.star.util.NumberFormatProperties`: NumberFormatProperties
+  var `com.sun.star.util.NumberFormatSettings`: NumberFormatSettings
+  var `com.sun.star.util.NumberFormats`: NumberFormats
+  var `com.sun.star.util.NumberFormatsSupplier`: NumberFormatsSupplier
+  var `com.sun.star.util.NumberFormatter`: NumberFormatter
+  var `com.sun.star.util.OfficeInstallationDirectories`: OfficeInstallationDirectories
+  var `com.sun.star.util.PathSettings`: PathSettings
+  var `com.sun.star.util.PathSubstitution`: PathSubstitution
+  var `com.sun.star.util.ReplaceDescriptor`: ReplaceDescriptor
+  var `com.sun.star.util.SearchDescriptor`: SearchDescriptor
+  var `com.sun.star.util.SortDescriptor`: SortDescriptor
+  var `com.sun.star.util.SortDescriptor2`: SortDescriptor2
+  var `com.sun.star.util.Sortable`: Sortable
+  var `com.sun.star.util.TextSearch`: TextSearch
+  var `com.sun.star.util.TextSearch2`: TextSearch2
+  var `com.sun.star.util.URLTransformer`: URLTransformer
+  var `com.sun.star.util.UriAbbreviation`: UriAbbreviation
+  var `com.sun.star.view.OfficeDocumentView`: OfficeDocumentView
+  var `com.sun.star.view.PrintOptions`: PrintOptions
+  var `com.sun.star.view.PrintSettings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.PrintSettings
+  var `com.sun.star.view.PrinterDescriptor`: PrinterDescriptor
+  var `com.sun.star.view.RenderDescriptor`: RenderDescriptor
+  var `com.sun.star.view.RenderOptions`: RenderOptions
+  var `com.sun.star.view.ViewSettings`: typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.ViewSettings
+  var `com.sun.star.xforms.Binding`: Binding
+  var `com.sun.star.xforms.Model`: Model
+  var `com.sun.star.xforms.XForms`: XForms
+  var `com.sun.star.xml.AttributeContainer`: AttributeContainer
+  var `com.sun.star.xml.ExportFilter`: typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.ExportFilter
+  var `com.sun.star.xml.ImportFilter`: typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs.ImportFilter
+  var `com.sun.star.xml.NamespaceContainer`: NamespaceContainer
+  var `com.sun.star.xml.ParaUserDefinedAttributesSupplier`: ParaUserDefinedAttributesSupplier
+  var `com.sun.star.xml.TextUserDefinedAttributesSupplier`: TextUserDefinedAttributesSupplier
+  var `com.sun.star.xml.UserDefinedAttributesSupplier`: UserDefinedAttributesSupplier
+  var `com.sun.star.xml.XMLExportFilter`: XMLExportFilter
+  var `com.sun.star.xml.XMLImportFilter`: XMLImportFilter
+  var `com.sun.star.xml.crypto.NSSInitializer`: NSSInitializer
+  var `com.sun.star.xml.crypto.SEInitializer`: SEInitializer
+  var `com.sun.star.xml.crypto.SecurityEnvironment`: SecurityEnvironment
+  var `com.sun.star.xml.crypto.XMLEncryption`: XMLEncryption
+  var `com.sun.star.xml.crypto.XMLEncryptionTemplate`: XMLEncryptionTemplate
+  var `com.sun.star.xml.crypto.XMLSecurityContext`: XMLSecurityContext
+  var `com.sun.star.xml.crypto.XMLSignature`: XMLSignature
+  var `com.sun.star.xml.crypto.XMLSignatureTemplate`: XMLSignatureTemplate
+  var `com.sun.star.xml.crypto.sax.Decryptor`: Decryptor
+  var `com.sun.star.xml.crypto.sax.Encryptor`: Encryptor
+  var `com.sun.star.xml.crypto.sax.SAXEventKeeper`: SAXEventKeeper
+  var `com.sun.star.xml.crypto.sax.SignatureCreator`: SignatureCreator
+  var `com.sun.star.xml.crypto.sax.SignatureVerifier`: SignatureVerifier
+  var `com.sun.star.xml.dom.DocumentBuilder`: DocumentBuilder
+  var `com.sun.star.xml.dom.SAXDocumentBuilder`: SAXDocumentBuilder
+  var `com.sun.star.xml.input.SaxDocumentHandler`: SaxDocumentHandler
+  var `com.sun.star.xml.sax.FastParser`: FastParser
+  var `com.sun.star.xml.sax.FastShapeContextHandler`: FastShapeContextHandler
+  var `com.sun.star.xml.sax.FastTokenHandler`: FastTokenHandler
+  var `com.sun.star.xml.sax.Parser`: Parser
+  var `com.sun.star.xml.sax.Writer`: Writer
+  var `com.sun.star.xml.wrapper.XMLDocumentWrapper`: XMLDocumentWrapper
+  var `com.sun.star.xml.wrapper.XMLElementWrapper`: XMLElementWrapper
+  var `com.sun.star.xml.xpath.XPathAPI`: XPathAPI
+  var `com.sun.star.xml.xpath.XPathExtension`: XPathExtension
+  var `com.sun.star.xml.xslt.XSLT2Transformer`: XSLT2Transformer
+  var `com.sun.star.xml.xslt.XSLTTransformer`: XSLTTransformer
+  var `com.sun.star.xsd.Boolean`: Boolean
+  var `com.sun.star.xsd.Date`: Date
+  var `com.sun.star.xsd.DateTime`: typings.activexDashLibreoffice.comNs.sunNs.starNs.xsdNs.DateTime
+  var `com.sun.star.xsd.Day`: Day
+  var `com.sun.star.xsd.Decimal`: Decimal
+  var `com.sun.star.xsd.Month`: Month
+  var `com.sun.star.xsd.String`: String
+  var `com.sun.star.xsd.Time`: Time
+  var `com.sun.star.xsd.Year`: Year
+  var `org.freedesktop.PackageKit.SyncDbusSessionHelper`: SyncDbusSessionHelper
+}
+
+object ServicesNameMap {
+  @scala.inline
+  def apply(
+    `com.sun.star.accessibility.Accessible`: Accessible,
+    `com.sun.star.accessibility.AccessibleContext`: AccessibleContext,
+    `com.sun.star.accessibility.MSAAService`: MSAAService,
+    `com.sun.star.animations.AnimateColor`: AnimateColor,
+    `com.sun.star.animations.AnimateMotion`: AnimateMotion,
+    `com.sun.star.animations.AnimateSet`: AnimateSet,
+    `com.sun.star.animations.Audio`: Audio,
+    `com.sun.star.animations.Command`: Command,
+    `com.sun.star.animations.IterateContainer`: IterateContainer,
+    `com.sun.star.animations.ParallelTimeContainer`: ParallelTimeContainer,
+    `com.sun.star.animations.SequenceTimeContainer`: SequenceTimeContainer,
+    `com.sun.star.auth.SSOManagerFactory`: SSOManagerFactory,
+    `com.sun.star.auth.SSOPasswordCache`: SSOPasswordCache,
+    `com.sun.star.awt.AccessibleButton`: AccessibleButton,
+    `com.sun.star.awt.AccessibleCheckBox`: AccessibleCheckBox,
+    `com.sun.star.awt.AccessibleComboBox`: AccessibleComboBox,
+    `com.sun.star.awt.AccessibleDropDownComboBox`: AccessibleDropDownComboBox,
+    `com.sun.star.awt.AccessibleDropDownListBox`: AccessibleDropDownListBox,
+    `com.sun.star.awt.AccessibleEdit`: AccessibleEdit,
+    `com.sun.star.awt.AccessibleFixedText`: AccessibleFixedText,
+    `com.sun.star.awt.AccessibleIconChoiceControl`: AccessibleIconChoiceControl,
+    `com.sun.star.awt.AccessibleIconChoiceControlEntry`: AccessibleIconChoiceControlEntry,
+    `com.sun.star.awt.AccessibleList`: AccessibleList,
+    `com.sun.star.awt.AccessibleListBox`: AccessibleListBox,
+    `com.sun.star.awt.AccessibleListBoxList`: AccessibleListBoxList,
+    `com.sun.star.awt.AccessibleListItem`: AccessibleListItem,
+    `com.sun.star.awt.AccessibleMenu`: AccessibleMenu,
+    `com.sun.star.awt.AccessibleMenuBar`: AccessibleMenuBar,
+    `com.sun.star.awt.AccessibleMenuItem`: AccessibleMenuItem,
+    `com.sun.star.awt.AccessibleMenuSeparator`: AccessibleMenuSeparator,
+    `com.sun.star.awt.AccessiblePopupMenu`: AccessiblePopupMenu,
+    `com.sun.star.awt.AccessibleRadioButton`: AccessibleRadioButton,
+    `com.sun.star.awt.AccessibleScrollBar`: AccessibleScrollBar,
+    `com.sun.star.awt.AccessibleStatusBar`: AccessibleStatusBar,
+    `com.sun.star.awt.AccessibleStatusBarItem`: AccessibleStatusBarItem,
+    `com.sun.star.awt.AccessibleTabBar`: AccessibleTabBar,
+    `com.sun.star.awt.AccessibleTabBarPage`: AccessibleTabBarPage,
+    `com.sun.star.awt.AccessibleTabBarPageList`: AccessibleTabBarPageList,
+    `com.sun.star.awt.AccessibleTabControl`: AccessibleTabControl,
+    `com.sun.star.awt.AccessibleTabPage`: AccessibleTabPage,
+    `com.sun.star.awt.AccessibleTextField`: AccessibleTextField,
+    `com.sun.star.awt.AccessibleToolBox`: AccessibleToolBox,
+    `com.sun.star.awt.AccessibleToolBoxItem`: AccessibleToolBoxItem,
+    `com.sun.star.awt.AccessibleTreeListBox`: AccessibleTreeListBox,
+    `com.sun.star.awt.AccessibleTreeListBoxEntry`: AccessibleTreeListBoxEntry,
+    `com.sun.star.awt.AccessibleWindow`: AccessibleWindow,
+    `com.sun.star.awt.AnimatedImagesControl`: AnimatedImagesControl,
+    `com.sun.star.awt.AnimatedImagesControlModel`: AnimatedImagesControlModel,
+    `com.sun.star.awt.AsyncCallback`: AsyncCallback,
+    `com.sun.star.awt.ContainerWindowProvider`: ContainerWindowProvider,
+    `com.sun.star.awt.DialogProvider`: DialogProvider,
+    `com.sun.star.awt.DialogProvider2`: DialogProvider2,
+    `com.sun.star.awt.MenuBar`: MenuBar,
+    `com.sun.star.awt.Pointer`: Pointer,
+    `com.sun.star.awt.PopupMenu`: PopupMenu,
+    `com.sun.star.awt.PrinterServer`: PrinterServer,
+    `com.sun.star.awt.RoadmapItem`: RoadmapItem,
+    `com.sun.star.awt.SpinningProgressControlModel`: SpinningProgressControlModel,
+    `com.sun.star.awt.TabController`: TabController,
+    `com.sun.star.awt.TabControllerModel`: TabControllerModel,
+    `com.sun.star.awt.Toolkit`: Toolkit,
+    `com.sun.star.awt.UnoControl`: UnoControl,
+    `com.sun.star.awt.UnoControlButton`: UnoControlButton,
+    `com.sun.star.awt.UnoControlButtonModel`: UnoControlButtonModel,
+    `com.sun.star.awt.UnoControlCheckBox`: UnoControlCheckBox,
+    `com.sun.star.awt.UnoControlCheckBoxModel`: UnoControlCheckBoxModel,
+    `com.sun.star.awt.UnoControlComboBox`: UnoControlComboBox,
+    `com.sun.star.awt.UnoControlComboBoxModel`: UnoControlComboBoxModel,
+    `com.sun.star.awt.UnoControlContainer`: UnoControlContainer,
+    `com.sun.star.awt.UnoControlContainerModel`: UnoControlContainerModel,
+    `com.sun.star.awt.UnoControlCurrencyField`: UnoControlCurrencyField,
+    `com.sun.star.awt.UnoControlCurrencyFieldModel`: UnoControlCurrencyFieldModel,
+    `com.sun.star.awt.UnoControlDateField`: UnoControlDateField,
+    `com.sun.star.awt.UnoControlDateFieldModel`: UnoControlDateFieldModel,
+    `com.sun.star.awt.UnoControlDialog`: UnoControlDialog,
+    `com.sun.star.awt.UnoControlDialogElement`: UnoControlDialogElement,
+    `com.sun.star.awt.UnoControlDialogModel`: UnoControlDialogModel,
+    `com.sun.star.awt.UnoControlDialogModelProvider`: UnoControlDialogModelProvider,
+    `com.sun.star.awt.UnoControlEdit`: UnoControlEdit,
+    `com.sun.star.awt.UnoControlEditModel`: UnoControlEditModel,
+    `com.sun.star.awt.UnoControlFileControl`: UnoControlFileControl,
+    `com.sun.star.awt.UnoControlFileControlModel`: UnoControlFileControlModel,
+    `com.sun.star.awt.UnoControlFixedHyperlink`: UnoControlFixedHyperlink,
+    `com.sun.star.awt.UnoControlFixedHyperlinkModel`: UnoControlFixedHyperlinkModel,
+    `com.sun.star.awt.UnoControlFixedLine`: UnoControlFixedLine,
+    `com.sun.star.awt.UnoControlFixedLineModel`: UnoControlFixedLineModel,
+    `com.sun.star.awt.UnoControlFixedText`: UnoControlFixedText,
+    `com.sun.star.awt.UnoControlFixedTextModel`: UnoControlFixedTextModel,
+    `com.sun.star.awt.UnoControlFormattedField`: UnoControlFormattedField,
+    `com.sun.star.awt.UnoControlFormattedFieldModel`: UnoControlFormattedFieldModel,
+    `com.sun.star.awt.UnoControlGroupBox`: UnoControlGroupBox,
+    `com.sun.star.awt.UnoControlGroupBoxModel`: UnoControlGroupBoxModel,
+    `com.sun.star.awt.UnoControlImageControl`: UnoControlImageControl,
+    `com.sun.star.awt.UnoControlImageControlModel`: UnoControlImageControlModel,
+    `com.sun.star.awt.UnoControlListBox`: UnoControlListBox,
+    `com.sun.star.awt.UnoControlListBoxModel`: UnoControlListBoxModel,
+    `com.sun.star.awt.UnoControlModel`: UnoControlModel,
+    `com.sun.star.awt.UnoControlNumericField`: UnoControlNumericField,
+    `com.sun.star.awt.UnoControlNumericFieldModel`: UnoControlNumericFieldModel,
+    `com.sun.star.awt.UnoControlPatternField`: UnoControlPatternField,
+    `com.sun.star.awt.UnoControlPatternFieldModel`: UnoControlPatternFieldModel,
+    `com.sun.star.awt.UnoControlProgressBar`: UnoControlProgressBar,
+    `com.sun.star.awt.UnoControlProgressBarModel`: UnoControlProgressBarModel,
+    `com.sun.star.awt.UnoControlRadioButton`: UnoControlRadioButton,
+    `com.sun.star.awt.UnoControlRadioButtonModel`: UnoControlRadioButtonModel,
+    `com.sun.star.awt.UnoControlRoadmap`: UnoControlRoadmap,
+    `com.sun.star.awt.UnoControlRoadmapModel`: UnoControlRoadmapModel,
+    `com.sun.star.awt.UnoControlScrollBar`: UnoControlScrollBar,
+    `com.sun.star.awt.UnoControlScrollBarModel`: UnoControlScrollBarModel,
+    `com.sun.star.awt.UnoControlSpinButton`: UnoControlSpinButton,
+    `com.sun.star.awt.UnoControlSpinButtonModel`: UnoControlSpinButtonModel,
+    `com.sun.star.awt.UnoControlTimeField`: UnoControlTimeField,
+    `com.sun.star.awt.UnoControlTimeFieldModel`: UnoControlTimeFieldModel,
+    `com.sun.star.awt.grid.DefaultGridColumnModel`: DefaultGridColumnModel,
+    `com.sun.star.awt.grid.DefaultGridDataModel`: DefaultGridDataModel,
+    `com.sun.star.awt.grid.GridColumn`: GridColumn,
+    `com.sun.star.awt.grid.SortableGridDataModel`: SortableGridDataModel,
+    `com.sun.star.awt.grid.UnoControlGrid`: UnoControlGrid,
+    `com.sun.star.awt.grid.UnoControlGridModel`: UnoControlGridModel,
+    `com.sun.star.awt.tab.UnoControlTabPage`: UnoControlTabPage,
+    `com.sun.star.awt.tab.UnoControlTabPageContainer`: UnoControlTabPageContainer,
+    `com.sun.star.awt.tab.UnoControlTabPageContainerModel`: UnoControlTabPageContainerModel,
+    `com.sun.star.awt.tab.UnoControlTabPageModel`: UnoControlTabPageModel,
+    `com.sun.star.awt.tree.MutableTreeDataModel`: MutableTreeDataModel,
+    `com.sun.star.awt.tree.MutableTreeNode`: MutableTreeNode,
+    `com.sun.star.awt.tree.TreeControl`: TreeControl,
+    `com.sun.star.awt.tree.TreeControlModel`: TreeControlModel,
+    `com.sun.star.beans.Introspection`: Introspection,
+    `com.sun.star.beans.PropertyBag`: PropertyBag,
+    `com.sun.star.beans.PropertySet`: PropertySet,
+    `com.sun.star.bridge.Bridge`: Bridge,
+    `com.sun.star.bridge.BridgeFactory`: BridgeFactory,
+    `com.sun.star.bridge.IiopBridge`: IiopBridge,
+    `com.sun.star.bridge.OleApplicationRegistration`: OleApplicationRegistration,
+    `com.sun.star.bridge.OleBridgeSupplier`: OleBridgeSupplier,
+    `com.sun.star.bridge.OleBridgeSupplier2`: OleBridgeSupplier2,
+    `com.sun.star.bridge.OleBridgeSupplierVar1`: OleBridgeSupplierVar1,
+    `com.sun.star.bridge.OleObjectFactory`: OleObjectFactory,
+    `com.sun.star.bridge.UnoUrlResolver`: UnoUrlResolver,
+    `com.sun.star.bridge.UrpBridge`: UrpBridge,
+    `com.sun.star.bridge.oleautomation.ApplicationRegistration`: ApplicationRegistration,
+    `com.sun.star.bridge.oleautomation.BridgeSupplier`: BridgeSupplier,
+    `com.sun.star.bridge.oleautomation.Factory`: Factory,
+    `com.sun.star.chart.AccessibleChartDocumentView`: AccessibleChartDocumentView,
+    `com.sun.star.chart.AccessibleChartElement`: AccessibleChartElement,
+    `com.sun.star.chart.AreaDiagram`: AreaDiagram,
+    `com.sun.star.chart.BarDiagram`: BarDiagram,
+    `com.sun.star.chart.BubbleDiagram`: BubbleDiagram,
+    `com.sun.star.chart.Chart3DBarProperties`: Chart3DBarProperties,
+    `com.sun.star.chart.ChartArea`: ChartArea,
+    `com.sun.star.chart.ChartAxis`: ChartAxis,
+    `com.sun.star.chart.ChartAxisXSupplier`: ChartAxisXSupplier,
+    `com.sun.star.chart.ChartAxisYSupplier`: ChartAxisYSupplier,
+    `com.sun.star.chart.ChartAxisZSupplier`: ChartAxisZSupplier,
+    `com.sun.star.chart.ChartData`: ChartData,
+    `com.sun.star.chart.ChartDataArray`: ChartDataArray,
+    `com.sun.star.chart.ChartDataPointProperties`: ChartDataPointProperties,
+    `com.sun.star.chart.ChartDataRowProperties`: ChartDataRowProperties,
+    `com.sun.star.chart.ChartDocument`: ChartDocument,
+    `com.sun.star.chart.ChartGrid`: ChartGrid,
+    `com.sun.star.chart.ChartLegend`: ChartLegend,
+    `com.sun.star.chart.ChartLine`: ChartLine,
+    `com.sun.star.chart.ChartPieSegmentProperties`: ChartPieSegmentProperties,
+    `com.sun.star.chart.ChartStatistics`: ChartStatistics,
+    `com.sun.star.chart.ChartTableAddressSupplier`: ChartTableAddressSupplier,
+    `com.sun.star.chart.ChartTitle`: ChartTitle,
+    `com.sun.star.chart.ChartTwoAxisXSupplier`: ChartTwoAxisXSupplier,
+    `com.sun.star.chart.ChartTwoAxisYSupplier`: ChartTwoAxisYSupplier,
+    `com.sun.star.chart.Diagram`: Diagram,
+    `com.sun.star.chart.Dim3DDiagram`: Dim3DDiagram,
+    `com.sun.star.chart.DonutDiagram`: DonutDiagram,
+    `com.sun.star.chart.FilledNetDiagram`: FilledNetDiagram,
+    `com.sun.star.chart.LineDiagram`: LineDiagram,
+    `com.sun.star.chart.NetDiagram`: NetDiagram,
+    `com.sun.star.chart.PieDiagram`: PieDiagram,
+    `com.sun.star.chart.StackableDiagram`: StackableDiagram,
+    `com.sun.star.chart.StockDiagram`: StockDiagram,
+    `com.sun.star.chart.XYDiagram`: XYDiagram,
+    `com.sun.star.chart2.Axis`: Axis,
+    `com.sun.star.chart2.CandleStickChartType`: CandleStickChartType,
+    `com.sun.star.chart2.CartesianCoordinateSystem2d`: CartesianCoordinateSystem2d,
+    `com.sun.star.chart2.CartesianCoordinateSystem3d`: CartesianCoordinateSystem3d,
+    `com.sun.star.chart2.ChartDocument`: typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.ChartDocument,
+    `com.sun.star.chart2.ChartDocumentWrapper`: ChartDocumentWrapper,
+    `com.sun.star.chart2.ChartType`: ChartType,
+    `com.sun.star.chart2.ChartTypeManager`: ChartTypeManager,
+    `com.sun.star.chart2.ChartTypeTemplate`: ChartTypeTemplate,
+    `com.sun.star.chart2.CoordinateSystem`: CoordinateSystem,
+    `com.sun.star.chart2.CoordinateSystemType`: CoordinateSystemType,
+    `com.sun.star.chart2.DataPoint`: DataPoint,
+    `com.sun.star.chart2.DataPointProperties`: DataPointProperties,
+    `com.sun.star.chart2.DataSeries`: DataSeries,
+    `com.sun.star.chart2.Diagram`: typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns.Diagram,
+    `com.sun.star.chart2.ErrorBar`: ErrorBar,
+    `com.sun.star.chart2.ExponentialRegressionCurve`: ExponentialRegressionCurve,
+    `com.sun.star.chart2.ExponentialScaling`: ExponentialScaling,
+    `com.sun.star.chart2.FormattedString`: FormattedString,
+    `com.sun.star.chart2.GridProperties`: GridProperties,
+    `com.sun.star.chart2.Legend`: Legend,
+    `com.sun.star.chart2.LinearRegressionCurve`: LinearRegressionCurve,
+    `com.sun.star.chart2.LinearScaling`: LinearScaling,
+    `com.sun.star.chart2.LogarithmicRegressionCurve`: LogarithmicRegressionCurve,
+    `com.sun.star.chart2.LogarithmicScaling`: LogarithmicScaling,
+    `com.sun.star.chart2.LogicTargetModel`: LogicTargetModel,
+    `com.sun.star.chart2.MovingAverageRegressionCurve`: MovingAverageRegressionCurve,
+    `com.sun.star.chart2.PolarCoordinateSystem2d`: PolarCoordinateSystem2d,
+    `com.sun.star.chart2.PolarCoordinateSystem3d`: PolarCoordinateSystem3d,
+    `com.sun.star.chart2.PolynomialRegressionCurve`: PolynomialRegressionCurve,
+    `com.sun.star.chart2.PotentialRegressionCurve`: PotentialRegressionCurve,
+    `com.sun.star.chart2.PowerScaling`: PowerScaling,
+    `com.sun.star.chart2.PropertyPool`: PropertyPool,
+    `com.sun.star.chart2.RegressionCurve`: RegressionCurve,
+    `com.sun.star.chart2.RegressionCurveEquation`: RegressionCurveEquation,
+    `com.sun.star.chart2.RegressionEquation`: RegressionEquation,
+    `com.sun.star.chart2.Scaling`: Scaling,
+    `com.sun.star.chart2.StandardDiagramCreationParameters`: StandardDiagramCreationParameters,
+    `com.sun.star.chart2.Title`: Title,
+    `com.sun.star.chart2.data.DataFilter`: DataFilter,
+    `com.sun.star.chart2.data.DataProvider`: DataProvider,
+    `com.sun.star.chart2.data.DataSequence`: DataSequence,
+    `com.sun.star.chart2.data.DataSink`: DataSink,
+    `com.sun.star.chart2.data.DataSource`: DataSource,
+    `com.sun.star.chart2.data.DatabaseDataProvider`: DatabaseDataProvider,
+    `com.sun.star.chart2.data.LabeledDataSequence`: LabeledDataSequence,
+    `com.sun.star.chart2.data.RangeHighlightListener`: RangeHighlightListener,
+    `com.sun.star.chart2.data.RangeHighlighter`: RangeHighlighter,
+    `com.sun.star.chart2.data.TabularDataProviderArguments`: TabularDataProviderArguments,
+    `com.sun.star.configuration.AccessRootElement`: AccessRootElement,
+    `com.sun.star.configuration.AdministrationProvider`: AdministrationProvider,
+    `com.sun.star.configuration.ConfigurationAccess`: ConfigurationAccess,
+    `com.sun.star.configuration.ConfigurationProvider`: ConfigurationProvider,
+    `com.sun.star.configuration.ConfigurationRegistry`: ConfigurationRegistry,
+    `com.sun.star.configuration.ConfigurationUpdateAccess`: ConfigurationUpdateAccess,
+    `com.sun.star.configuration.DefaultProvider`: DefaultProvider,
+    `com.sun.star.configuration.GroupAccess`: GroupAccess,
+    `com.sun.star.configuration.GroupElement`: GroupElement,
+    `com.sun.star.configuration.GroupUpdate`: GroupUpdate,
+    `com.sun.star.configuration.HierarchyAccess`: HierarchyAccess,
+    `com.sun.star.configuration.HierarchyElement`: HierarchyElement,
+    `com.sun.star.configuration.PropertyHierarchy`: PropertyHierarchy,
+    `com.sun.star.configuration.ReadOnlyAccess`: ReadOnlyAccess,
+    `com.sun.star.configuration.ReadWriteAccess`: ReadWriteAccess,
+    `com.sun.star.configuration.SetAccess`: SetAccess,
+    `com.sun.star.configuration.SetElement`: SetElement,
+    `com.sun.star.configuration.SetUpdate`: SetUpdate,
+    `com.sun.star.configuration.SimpleSetAccess`: SimpleSetAccess,
+    `com.sun.star.configuration.SimpleSetUpdate`: SimpleSetUpdate,
+    `com.sun.star.configuration.UpdateRootElement`: UpdateRootElement,
+    `com.sun.star.configuration.backend.Backend`: Backend,
+    `com.sun.star.configuration.backend.BackendAdapter`: BackendAdapter,
+    `com.sun.star.configuration.backend.CopyImporter`: CopyImporter,
+    `com.sun.star.configuration.backend.DataImporter`: DataImporter,
+    `com.sun.star.configuration.backend.DefaultBackend`: DefaultBackend,
+    `com.sun.star.configuration.backend.HierarchyBrowser`: HierarchyBrowser
+  ): ServicesNameMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("com.sun.star.accessibility.Accessible")(`com.sun.star.accessibility.Accessible`)
+    __obj.updateDynamic("com.sun.star.accessibility.AccessibleContext")(`com.sun.star.accessibility.AccessibleContext`)
+    __obj.updateDynamic("com.sun.star.accessibility.MSAAService")(`com.sun.star.accessibility.MSAAService`)
+    __obj.updateDynamic("com.sun.star.animations.AnimateColor")(`com.sun.star.animations.AnimateColor`)
+    __obj.updateDynamic("com.sun.star.animations.AnimateMotion")(`com.sun.star.animations.AnimateMotion`)
+    __obj.updateDynamic("com.sun.star.animations.AnimateSet")(`com.sun.star.animations.AnimateSet`)
+    __obj.updateDynamic("com.sun.star.animations.Audio")(`com.sun.star.animations.Audio`)
+    __obj.updateDynamic("com.sun.star.animations.Command")(`com.sun.star.animations.Command`)
+    __obj.updateDynamic("com.sun.star.animations.IterateContainer")(`com.sun.star.animations.IterateContainer`)
+    __obj.updateDynamic("com.sun.star.animations.ParallelTimeContainer")(`com.sun.star.animations.ParallelTimeContainer`)
+    __obj.updateDynamic("com.sun.star.animations.SequenceTimeContainer")(`com.sun.star.animations.SequenceTimeContainer`)
+    __obj.updateDynamic("com.sun.star.auth.SSOManagerFactory")(`com.sun.star.auth.SSOManagerFactory`)
+    __obj.updateDynamic("com.sun.star.auth.SSOPasswordCache")(`com.sun.star.auth.SSOPasswordCache`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleButton")(`com.sun.star.awt.AccessibleButton`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleCheckBox")(`com.sun.star.awt.AccessibleCheckBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleComboBox")(`com.sun.star.awt.AccessibleComboBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleDropDownComboBox")(`com.sun.star.awt.AccessibleDropDownComboBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleDropDownListBox")(`com.sun.star.awt.AccessibleDropDownListBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleEdit")(`com.sun.star.awt.AccessibleEdit`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleFixedText")(`com.sun.star.awt.AccessibleFixedText`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleIconChoiceControl")(`com.sun.star.awt.AccessibleIconChoiceControl`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleIconChoiceControlEntry")(`com.sun.star.awt.AccessibleIconChoiceControlEntry`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleList")(`com.sun.star.awt.AccessibleList`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleListBox")(`com.sun.star.awt.AccessibleListBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleListBoxList")(`com.sun.star.awt.AccessibleListBoxList`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleListItem")(`com.sun.star.awt.AccessibleListItem`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleMenu")(`com.sun.star.awt.AccessibleMenu`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleMenuBar")(`com.sun.star.awt.AccessibleMenuBar`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleMenuItem")(`com.sun.star.awt.AccessibleMenuItem`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleMenuSeparator")(`com.sun.star.awt.AccessibleMenuSeparator`)
+    __obj.updateDynamic("com.sun.star.awt.AccessiblePopupMenu")(`com.sun.star.awt.AccessiblePopupMenu`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleRadioButton")(`com.sun.star.awt.AccessibleRadioButton`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleScrollBar")(`com.sun.star.awt.AccessibleScrollBar`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleStatusBar")(`com.sun.star.awt.AccessibleStatusBar`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleStatusBarItem")(`com.sun.star.awt.AccessibleStatusBarItem`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTabBar")(`com.sun.star.awt.AccessibleTabBar`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTabBarPage")(`com.sun.star.awt.AccessibleTabBarPage`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTabBarPageList")(`com.sun.star.awt.AccessibleTabBarPageList`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTabControl")(`com.sun.star.awt.AccessibleTabControl`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTabPage")(`com.sun.star.awt.AccessibleTabPage`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTextField")(`com.sun.star.awt.AccessibleTextField`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleToolBox")(`com.sun.star.awt.AccessibleToolBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleToolBoxItem")(`com.sun.star.awt.AccessibleToolBoxItem`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTreeListBox")(`com.sun.star.awt.AccessibleTreeListBox`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleTreeListBoxEntry")(`com.sun.star.awt.AccessibleTreeListBoxEntry`)
+    __obj.updateDynamic("com.sun.star.awt.AccessibleWindow")(`com.sun.star.awt.AccessibleWindow`)
+    __obj.updateDynamic("com.sun.star.awt.AnimatedImagesControl")(`com.sun.star.awt.AnimatedImagesControl`)
+    __obj.updateDynamic("com.sun.star.awt.AnimatedImagesControlModel")(`com.sun.star.awt.AnimatedImagesControlModel`)
+    __obj.updateDynamic("com.sun.star.awt.AsyncCallback")(`com.sun.star.awt.AsyncCallback`)
+    __obj.updateDynamic("com.sun.star.awt.ContainerWindowProvider")(`com.sun.star.awt.ContainerWindowProvider`)
+    __obj.updateDynamic("com.sun.star.awt.DialogProvider")(`com.sun.star.awt.DialogProvider`)
+    __obj.updateDynamic("com.sun.star.awt.DialogProvider2")(`com.sun.star.awt.DialogProvider2`)
+    __obj.updateDynamic("com.sun.star.awt.MenuBar")(`com.sun.star.awt.MenuBar`)
+    __obj.updateDynamic("com.sun.star.awt.Pointer")(`com.sun.star.awt.Pointer`)
+    __obj.updateDynamic("com.sun.star.awt.PopupMenu")(`com.sun.star.awt.PopupMenu`)
+    __obj.updateDynamic("com.sun.star.awt.PrinterServer")(`com.sun.star.awt.PrinterServer`)
+    __obj.updateDynamic("com.sun.star.awt.RoadmapItem")(`com.sun.star.awt.RoadmapItem`)
+    __obj.updateDynamic("com.sun.star.awt.SpinningProgressControlModel")(`com.sun.star.awt.SpinningProgressControlModel`)
+    __obj.updateDynamic("com.sun.star.awt.TabController")(`com.sun.star.awt.TabController`)
+    __obj.updateDynamic("com.sun.star.awt.TabControllerModel")(`com.sun.star.awt.TabControllerModel`)
+    __obj.updateDynamic("com.sun.star.awt.Toolkit")(`com.sun.star.awt.Toolkit`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControl")(`com.sun.star.awt.UnoControl`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlButton")(`com.sun.star.awt.UnoControlButton`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlButtonModel")(`com.sun.star.awt.UnoControlButtonModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlCheckBox")(`com.sun.star.awt.UnoControlCheckBox`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlCheckBoxModel")(`com.sun.star.awt.UnoControlCheckBoxModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlComboBox")(`com.sun.star.awt.UnoControlComboBox`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlComboBoxModel")(`com.sun.star.awt.UnoControlComboBoxModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlContainer")(`com.sun.star.awt.UnoControlContainer`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlContainerModel")(`com.sun.star.awt.UnoControlContainerModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlCurrencyField")(`com.sun.star.awt.UnoControlCurrencyField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlCurrencyFieldModel")(`com.sun.star.awt.UnoControlCurrencyFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDateField")(`com.sun.star.awt.UnoControlDateField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDateFieldModel")(`com.sun.star.awt.UnoControlDateFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDialog")(`com.sun.star.awt.UnoControlDialog`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDialogElement")(`com.sun.star.awt.UnoControlDialogElement`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDialogModel")(`com.sun.star.awt.UnoControlDialogModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlDialogModelProvider")(`com.sun.star.awt.UnoControlDialogModelProvider`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlEdit")(`com.sun.star.awt.UnoControlEdit`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlEditModel")(`com.sun.star.awt.UnoControlEditModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFileControl")(`com.sun.star.awt.UnoControlFileControl`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFileControlModel")(`com.sun.star.awt.UnoControlFileControlModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedHyperlink")(`com.sun.star.awt.UnoControlFixedHyperlink`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedHyperlinkModel")(`com.sun.star.awt.UnoControlFixedHyperlinkModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedLine")(`com.sun.star.awt.UnoControlFixedLine`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedLineModel")(`com.sun.star.awt.UnoControlFixedLineModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedText")(`com.sun.star.awt.UnoControlFixedText`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFixedTextModel")(`com.sun.star.awt.UnoControlFixedTextModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFormattedField")(`com.sun.star.awt.UnoControlFormattedField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlFormattedFieldModel")(`com.sun.star.awt.UnoControlFormattedFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlGroupBox")(`com.sun.star.awt.UnoControlGroupBox`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlGroupBoxModel")(`com.sun.star.awt.UnoControlGroupBoxModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlImageControl")(`com.sun.star.awt.UnoControlImageControl`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlImageControlModel")(`com.sun.star.awt.UnoControlImageControlModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlListBox")(`com.sun.star.awt.UnoControlListBox`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlListBoxModel")(`com.sun.star.awt.UnoControlListBoxModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlModel")(`com.sun.star.awt.UnoControlModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlNumericField")(`com.sun.star.awt.UnoControlNumericField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlNumericFieldModel")(`com.sun.star.awt.UnoControlNumericFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlPatternField")(`com.sun.star.awt.UnoControlPatternField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlPatternFieldModel")(`com.sun.star.awt.UnoControlPatternFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlProgressBar")(`com.sun.star.awt.UnoControlProgressBar`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlProgressBarModel")(`com.sun.star.awt.UnoControlProgressBarModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlRadioButton")(`com.sun.star.awt.UnoControlRadioButton`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlRadioButtonModel")(`com.sun.star.awt.UnoControlRadioButtonModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlRoadmap")(`com.sun.star.awt.UnoControlRoadmap`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlRoadmapModel")(`com.sun.star.awt.UnoControlRoadmapModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlScrollBar")(`com.sun.star.awt.UnoControlScrollBar`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlScrollBarModel")(`com.sun.star.awt.UnoControlScrollBarModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlSpinButton")(`com.sun.star.awt.UnoControlSpinButton`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlSpinButtonModel")(`com.sun.star.awt.UnoControlSpinButtonModel`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlTimeField")(`com.sun.star.awt.UnoControlTimeField`)
+    __obj.updateDynamic("com.sun.star.awt.UnoControlTimeFieldModel")(`com.sun.star.awt.UnoControlTimeFieldModel`)
+    __obj.updateDynamic("com.sun.star.awt.grid.DefaultGridColumnModel")(`com.sun.star.awt.grid.DefaultGridColumnModel`)
+    __obj.updateDynamic("com.sun.star.awt.grid.DefaultGridDataModel")(`com.sun.star.awt.grid.DefaultGridDataModel`)
+    __obj.updateDynamic("com.sun.star.awt.grid.GridColumn")(`com.sun.star.awt.grid.GridColumn`)
+    __obj.updateDynamic("com.sun.star.awt.grid.SortableGridDataModel")(`com.sun.star.awt.grid.SortableGridDataModel`)
+    __obj.updateDynamic("com.sun.star.awt.grid.UnoControlGrid")(`com.sun.star.awt.grid.UnoControlGrid`)
+    __obj.updateDynamic("com.sun.star.awt.grid.UnoControlGridModel")(`com.sun.star.awt.grid.UnoControlGridModel`)
+    __obj.updateDynamic("com.sun.star.awt.tab.UnoControlTabPage")(`com.sun.star.awt.tab.UnoControlTabPage`)
+    __obj.updateDynamic("com.sun.star.awt.tab.UnoControlTabPageContainer")(`com.sun.star.awt.tab.UnoControlTabPageContainer`)
+    __obj.updateDynamic("com.sun.star.awt.tab.UnoControlTabPageContainerModel")(`com.sun.star.awt.tab.UnoControlTabPageContainerModel`)
+    __obj.updateDynamic("com.sun.star.awt.tab.UnoControlTabPageModel")(`com.sun.star.awt.tab.UnoControlTabPageModel`)
+    __obj.updateDynamic("com.sun.star.awt.tree.MutableTreeDataModel")(`com.sun.star.awt.tree.MutableTreeDataModel`)
+    __obj.updateDynamic("com.sun.star.awt.tree.MutableTreeNode")(`com.sun.star.awt.tree.MutableTreeNode`)
+    __obj.updateDynamic("com.sun.star.awt.tree.TreeControl")(`com.sun.star.awt.tree.TreeControl`)
+    __obj.updateDynamic("com.sun.star.awt.tree.TreeControlModel")(`com.sun.star.awt.tree.TreeControlModel`)
+    __obj.updateDynamic("com.sun.star.beans.Introspection")(`com.sun.star.beans.Introspection`)
+    __obj.updateDynamic("com.sun.star.beans.PropertyBag")(`com.sun.star.beans.PropertyBag`)
+    __obj.updateDynamic("com.sun.star.beans.PropertySet")(`com.sun.star.beans.PropertySet`)
+    __obj.updateDynamic("com.sun.star.bridge.Bridge")(`com.sun.star.bridge.Bridge`)
+    __obj.updateDynamic("com.sun.star.bridge.BridgeFactory")(`com.sun.star.bridge.BridgeFactory`)
+    __obj.updateDynamic("com.sun.star.bridge.IiopBridge")(`com.sun.star.bridge.IiopBridge`)
+    __obj.updateDynamic("com.sun.star.bridge.OleApplicationRegistration")(`com.sun.star.bridge.OleApplicationRegistration`)
+    __obj.updateDynamic("com.sun.star.bridge.OleBridgeSupplier")(`com.sun.star.bridge.OleBridgeSupplier`)
+    __obj.updateDynamic("com.sun.star.bridge.OleBridgeSupplier2")(`com.sun.star.bridge.OleBridgeSupplier2`)
+    __obj.updateDynamic("com.sun.star.bridge.OleBridgeSupplierVar1")(`com.sun.star.bridge.OleBridgeSupplierVar1`)
+    __obj.updateDynamic("com.sun.star.bridge.OleObjectFactory")(`com.sun.star.bridge.OleObjectFactory`)
+    __obj.updateDynamic("com.sun.star.bridge.UnoUrlResolver")(`com.sun.star.bridge.UnoUrlResolver`)
+    __obj.updateDynamic("com.sun.star.bridge.UrpBridge")(`com.sun.star.bridge.UrpBridge`)
+    __obj.updateDynamic("com.sun.star.bridge.oleautomation.ApplicationRegistration")(`com.sun.star.bridge.oleautomation.ApplicationRegistration`)
+    __obj.updateDynamic("com.sun.star.bridge.oleautomation.BridgeSupplier")(`com.sun.star.bridge.oleautomation.BridgeSupplier`)
+    __obj.updateDynamic("com.sun.star.bridge.oleautomation.Factory")(`com.sun.star.bridge.oleautomation.Factory`)
+    __obj.updateDynamic("com.sun.star.chart.AccessibleChartDocumentView")(`com.sun.star.chart.AccessibleChartDocumentView`)
+    __obj.updateDynamic("com.sun.star.chart.AccessibleChartElement")(`com.sun.star.chart.AccessibleChartElement`)
+    __obj.updateDynamic("com.sun.star.chart.AreaDiagram")(`com.sun.star.chart.AreaDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.BarDiagram")(`com.sun.star.chart.BarDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.BubbleDiagram")(`com.sun.star.chart.BubbleDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.Chart3DBarProperties")(`com.sun.star.chart.Chart3DBarProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartArea")(`com.sun.star.chart.ChartArea`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxis")(`com.sun.star.chart.ChartAxis`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisXSupplier")(`com.sun.star.chart.ChartAxisXSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisYSupplier")(`com.sun.star.chart.ChartAxisYSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisZSupplier")(`com.sun.star.chart.ChartAxisZSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartData")(`com.sun.star.chart.ChartData`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataArray")(`com.sun.star.chart.ChartDataArray`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataPointProperties")(`com.sun.star.chart.ChartDataPointProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataRowProperties")(`com.sun.star.chart.ChartDataRowProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDocument")(`com.sun.star.chart.ChartDocument`)
+    __obj.updateDynamic("com.sun.star.chart.ChartGrid")(`com.sun.star.chart.ChartGrid`)
+    __obj.updateDynamic("com.sun.star.chart.ChartLegend")(`com.sun.star.chart.ChartLegend`)
+    __obj.updateDynamic("com.sun.star.chart.ChartLine")(`com.sun.star.chart.ChartLine`)
+    __obj.updateDynamic("com.sun.star.chart.ChartPieSegmentProperties")(`com.sun.star.chart.ChartPieSegmentProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartStatistics")(`com.sun.star.chart.ChartStatistics`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTableAddressSupplier")(`com.sun.star.chart.ChartTableAddressSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTitle")(`com.sun.star.chart.ChartTitle`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTwoAxisXSupplier")(`com.sun.star.chart.ChartTwoAxisXSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTwoAxisYSupplier")(`com.sun.star.chart.ChartTwoAxisYSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.Diagram")(`com.sun.star.chart.Diagram`)
+    __obj.updateDynamic("com.sun.star.chart.Dim3DDiagram")(`com.sun.star.chart.Dim3DDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.DonutDiagram")(`com.sun.star.chart.DonutDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.FilledNetDiagram")(`com.sun.star.chart.FilledNetDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.LineDiagram")(`com.sun.star.chart.LineDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.NetDiagram")(`com.sun.star.chart.NetDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.PieDiagram")(`com.sun.star.chart.PieDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.StackableDiagram")(`com.sun.star.chart.StackableDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.StockDiagram")(`com.sun.star.chart.StockDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.XYDiagram")(`com.sun.star.chart.XYDiagram`)
+    __obj.updateDynamic("com.sun.star.chart2.Axis")(`com.sun.star.chart2.Axis`)
+    __obj.updateDynamic("com.sun.star.chart2.CandleStickChartType")(`com.sun.star.chart2.CandleStickChartType`)
+    __obj.updateDynamic("com.sun.star.chart2.CartesianCoordinateSystem2d")(`com.sun.star.chart2.CartesianCoordinateSystem2d`)
+    __obj.updateDynamic("com.sun.star.chart2.CartesianCoordinateSystem3d")(`com.sun.star.chart2.CartesianCoordinateSystem3d`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartDocument")(`com.sun.star.chart2.ChartDocument`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartDocumentWrapper")(`com.sun.star.chart2.ChartDocumentWrapper`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartType")(`com.sun.star.chart2.ChartType`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartTypeManager")(`com.sun.star.chart2.ChartTypeManager`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartTypeTemplate")(`com.sun.star.chart2.ChartTypeTemplate`)
+    __obj.updateDynamic("com.sun.star.chart2.CoordinateSystem")(`com.sun.star.chart2.CoordinateSystem`)
+    __obj.updateDynamic("com.sun.star.chart2.CoordinateSystemType")(`com.sun.star.chart2.CoordinateSystemType`)
+    __obj.updateDynamic("com.sun.star.chart2.DataPoint")(`com.sun.star.chart2.DataPoint`)
+    __obj.updateDynamic("com.sun.star.chart2.DataPointProperties")(`com.sun.star.chart2.DataPointProperties`)
+    __obj.updateDynamic("com.sun.star.chart2.DataSeries")(`com.sun.star.chart2.DataSeries`)
+    __obj.updateDynamic("com.sun.star.chart2.Diagram")(`com.sun.star.chart2.Diagram`)
+    __obj.updateDynamic("com.sun.star.chart2.ErrorBar")(`com.sun.star.chart2.ErrorBar`)
+    __obj.updateDynamic("com.sun.star.chart2.ExponentialRegressionCurve")(`com.sun.star.chart2.ExponentialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.ExponentialScaling")(`com.sun.star.chart2.ExponentialScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.FormattedString")(`com.sun.star.chart2.FormattedString`)
+    __obj.updateDynamic("com.sun.star.chart2.GridProperties")(`com.sun.star.chart2.GridProperties`)
+    __obj.updateDynamic("com.sun.star.chart2.Legend")(`com.sun.star.chart2.Legend`)
+    __obj.updateDynamic("com.sun.star.chart2.LinearRegressionCurve")(`com.sun.star.chart2.LinearRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.LinearScaling")(`com.sun.star.chart2.LinearScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.LogarithmicRegressionCurve")(`com.sun.star.chart2.LogarithmicRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.LogarithmicScaling")(`com.sun.star.chart2.LogarithmicScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.LogicTargetModel")(`com.sun.star.chart2.LogicTargetModel`)
+    __obj.updateDynamic("com.sun.star.chart2.MovingAverageRegressionCurve")(`com.sun.star.chart2.MovingAverageRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PolarCoordinateSystem2d")(`com.sun.star.chart2.PolarCoordinateSystem2d`)
+    __obj.updateDynamic("com.sun.star.chart2.PolarCoordinateSystem3d")(`com.sun.star.chart2.PolarCoordinateSystem3d`)
+    __obj.updateDynamic("com.sun.star.chart2.PolynomialRegressionCurve")(`com.sun.star.chart2.PolynomialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PotentialRegressionCurve")(`com.sun.star.chart2.PotentialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PowerScaling")(`com.sun.star.chart2.PowerScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.PropertyPool")(`com.sun.star.chart2.PropertyPool`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionCurve")(`com.sun.star.chart2.RegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionCurveEquation")(`com.sun.star.chart2.RegressionCurveEquation`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionEquation")(`com.sun.star.chart2.RegressionEquation`)
+    __obj.updateDynamic("com.sun.star.chart2.Scaling")(`com.sun.star.chart2.Scaling`)
+    __obj.updateDynamic("com.sun.star.chart2.StandardDiagramCreationParameters")(`com.sun.star.chart2.StandardDiagramCreationParameters`)
+    __obj.updateDynamic("com.sun.star.chart2.Title")(`com.sun.star.chart2.Title`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataFilter")(`com.sun.star.chart2.data.DataFilter`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataProvider")(`com.sun.star.chart2.data.DataProvider`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSequence")(`com.sun.star.chart2.data.DataSequence`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSink")(`com.sun.star.chart2.data.DataSink`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSource")(`com.sun.star.chart2.data.DataSource`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DatabaseDataProvider")(`com.sun.star.chart2.data.DatabaseDataProvider`)
+    __obj.updateDynamic("com.sun.star.chart2.data.LabeledDataSequence")(`com.sun.star.chart2.data.LabeledDataSequence`)
+    __obj.updateDynamic("com.sun.star.chart2.data.RangeHighlightListener")(`com.sun.star.chart2.data.RangeHighlightListener`)
+    __obj.updateDynamic("com.sun.star.chart2.data.RangeHighlighter")(`com.sun.star.chart2.data.RangeHighlighter`)
+    __obj.updateDynamic("com.sun.star.chart2.data.TabularDataProviderArguments")(`com.sun.star.chart2.data.TabularDataProviderArguments`)
+    __obj.updateDynamic("com.sun.star.configuration.AccessRootElement")(`com.sun.star.configuration.AccessRootElement`)
+    __obj.updateDynamic("com.sun.star.configuration.AdministrationProvider")(`com.sun.star.configuration.AdministrationProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationAccess")(`com.sun.star.configuration.ConfigurationAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationProvider")(`com.sun.star.configuration.ConfigurationProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationRegistry")(`com.sun.star.configuration.ConfigurationRegistry`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationUpdateAccess")(`com.sun.star.configuration.ConfigurationUpdateAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.DefaultProvider")(`com.sun.star.configuration.DefaultProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupAccess")(`com.sun.star.configuration.GroupAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupElement")(`com.sun.star.configuration.GroupElement`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupUpdate")(`com.sun.star.configuration.GroupUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.HierarchyAccess")(`com.sun.star.configuration.HierarchyAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.HierarchyElement")(`com.sun.star.configuration.HierarchyElement`)
+    __obj.updateDynamic("com.sun.star.configuration.PropertyHierarchy")(`com.sun.star.configuration.PropertyHierarchy`)
+    __obj.updateDynamic("com.sun.star.configuration.ReadOnlyAccess")(`com.sun.star.configuration.ReadOnlyAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.ReadWriteAccess")(`com.sun.star.configuration.ReadWriteAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SetAccess")(`com.sun.star.configuration.SetAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SetElement")(`com.sun.star.configuration.SetElement`)
+    __obj.updateDynamic("com.sun.star.configuration.SetUpdate")(`com.sun.star.configuration.SetUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.SimpleSetAccess")(`com.sun.star.configuration.SimpleSetAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SimpleSetUpdate")(`com.sun.star.configuration.SimpleSetUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.UpdateRootElement")(`com.sun.star.configuration.UpdateRootElement`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.Backend")(`com.sun.star.configuration.backend.Backend`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.BackendAdapter")(`com.sun.star.configuration.backend.BackendAdapter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.CopyImporter")(`com.sun.star.configuration.backend.CopyImporter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.DataImporter")(`com.sun.star.configuration.backend.DataImporter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.DefaultBackend")(`com.sun.star.configuration.backend.DefaultBackend`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.HierarchyBrowser")(`com.sun.star.configuration.backend.HierarchyBrowser`)
+    __obj.asInstanceOf[ServicesNameMap]
+  }
+}
+

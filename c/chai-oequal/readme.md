@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for chai-oequal 0.0
-// Project: https://github.com/wrwrwr/chai-oequal
-// Definitions by: Mizunashi Mana <https://github.com/mizunashi-mana>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

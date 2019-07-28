@@ -28,25 +28,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * @class Paginator
- * @classdesc Pagination helper class.
- *
- * @property {Array} items Array of elements on current page.
- * @property {Boolean} hasNextPage Indicates the existence of next page.
- * @property {Boolean} hasPrevPage Indicates the existence of previous page.
- */
-/**
- * @class Router
- * @classdesc Routes all incoming messages to the consumers
- */
-/**
- * Generic SyncLibrary error class
- */
-
-```
 

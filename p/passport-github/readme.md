@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for passport-github 1.1
-// Project: https://github.com/jaredhanson/passport-github
-// Definitions by:  Yasunori Ohoka <https://github.com/yasupeke>
-//                  Manuel Ruck <https://github.com/reggaepanda>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

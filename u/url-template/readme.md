@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for url-template 2.0.6
-// Project: https://github.com/bramstein/url-template
-// Definitions by: Marcin Porębski <https://github.com/marcinporebski>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for vanilla-tilt 1.4
-// Project: https://github.com/micku7zu/vanilla-tilt.js
-// Definitions by: Livio Brunner <https://github.com/BrunnerLivio>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Options which configures the tilting
- */
-
-```
 

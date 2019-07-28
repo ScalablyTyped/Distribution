@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @pollyjs/adapter-xhr 2.6
-// Project: https://github.com/netflix/pollyjs/tree/master/packages/@pollyjs/adapter-xhr
-// Definitions by: silverchen <https://github.com/silverchen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.5
-
-```
 

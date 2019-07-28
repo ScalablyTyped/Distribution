@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for random-js 1.0
-// Project: https://github.com/ckknight/random-js
-// Definitions by: Gustavo Di Pietro <https://github.com/pistacchio>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,30 @@
+package typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedAudio
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedDocument
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedGif
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedMpeg4Gif
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedPhoto
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedSticker
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedVideo
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultCachedVoice
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultArticle
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultAudio
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultContact
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultGame
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultDocument
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultGif
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultLocation
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultMpeg4Gif
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultPhoto
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultVenue
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultVideo
+  - typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiMod.InlineQueryResultVoice
+*/
+trait InlineQueryResult extends js.Object
+

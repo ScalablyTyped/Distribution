@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for pure-render-decorator v0.2.0
-// Project: https://github.com/felixgirault/pure-render-decorator
-// Definitions by: Sean Kelley <https://github.com/seansfkelley>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

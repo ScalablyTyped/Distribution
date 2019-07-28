@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rc-calendar 9.6
-// Project: http://github.com/react-component/calendar
-// Definitions by: 9renpoto <https://github.com/9renpoto>
-// Definitions: https://github.com/react-component/calendar
-
-```
 

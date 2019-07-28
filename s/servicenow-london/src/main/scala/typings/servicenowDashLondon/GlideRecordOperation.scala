@@ -1,0 +1,13 @@
+package typings.servicenowDashLondon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.servicenowDashLondon.servicenowDashLondonStrings.insert
+  - typings.servicenowDashLondon.servicenowDashLondonStrings.update
+  - typings.servicenowDashLondon.servicenowDashLondonStrings.delete
+*/
+trait GlideRecordOperation extends js.Object
+

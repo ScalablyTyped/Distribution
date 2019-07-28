@@ -1,0 +1,284 @@
+package typings.highcharts.highchartsMod
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("highcharts", "Point")
+@js.native
+class Point ()
+  extends /**
+  * Custom properties set by custom data options.
+  */
+/* property */ StringDictionary[js.Any] {
+  /**
+    * For categorized axes this property holds the category name for the point.
+    * For other axes it holds the X value.
+    */
+  var category: Double | String = js.native
+  /**
+    * The point's current color.
+    */
+  var color: ColorString | GradientColorObject | PatternObject = js.native
+  /**
+    * The point's current color index, used in styled mode instead of `color`.
+    * The color index is inserted in class names used for styling.
+    */
+  var colorIndex: Double = js.native
+  /**
+    * (Highstock) Highstock only. If a point object is created by data
+    * grouping, it doesn't reflect actual points in the raw data. In this case,
+    * the `dataGroup` property holds information that points back to the raw
+    * data.
+    *
+    * - `dataGroup.start` is the index of the first raw data point in the
+    * group.
+    *
+    * - `dataGroup.length` is the amount of points in the group.
+    */
+  var dataGroup: js.UndefOr[SVGElement] = js.native
+  /**
+    * The name of the point. The name can be given as the first position of the
+    * point configuration array, or as a `name` property in the configuration:
+    */
+  var name: String = js.native
+  /**
+    * The point's options as applied in the initial configuration, or extended
+    * through `Point.update`.
+    */
+  var options: js.Object = js.native
+  /**
+    * The percentage for points in a stacked series or pies.
+    */
+  var percentage: Double = js.native
+  /**
+    * Whether the point is selected or not.
+    */
+  var selected: Boolean = js.native
+  /**
+    * The series object associated with the point.
+    */
+  var series: Series = js.native
+  /**
+    * The total of values in either a stack for stacked series, or a pie in a
+    * pie series.
+    */
+  var total: Double = js.native
+  /**
+    * For certain series types, like pie charts, where individual points can be
+    * shown or hidden.
+    */
+  var visible: Boolean = js.native
+  /**
+    * The x value of the point.
+    */
+  var x: Double = js.native
+  /**
+    * The y value of the point.
+    */
+  var y: js.UndefOr[Double] = js.native
+  /**
+    * Get the CSS class names for individual points. Used internally where the
+    * returned value is set on every point.
+    *
+    * @return The class names.
+    */
+  def getClassName(): String = js.native
+  /**
+    * Return the configuration hash needed for the data label and tooltip
+    * formatters.
+    *
+    * @return Abstract object used in formatters and formats.
+    */
+  def getLabelConfig(): PointLabelObject = js.native
+  /**
+    * In a series with `zones`, return the zone that the point belongs to.
+    *
+    * @return The zone item.
+    */
+  def getZone(): PlotSeriesZonesOptions = js.native
+  /**
+    * Get the path definition for the halo, which is usually a shadow-like
+    * circle around the currently hovered point.
+    *
+    * @param size
+    *        The radius of the circular halo.
+    *
+    * @return The path definition.
+    */
+  def haloPath(size: Double): SVGPathArray = js.native
+  def init(series: Series): Point = js.native
+  def init(series: Series, options: js.Array[Double | String]): Point = js.native
+  def init(series: Series, options: js.Array[Double | String], x: Double): Point = js.native
+  def init(series: Series, options: js.Object): Point = js.native
+  def init(series: Series, options: js.Object, x: Double): Point = js.native
+  /**
+    * Initialize the point. Called internally based on the `series.data`
+    * option.
+    *
+    * @param series
+    *        The series object containing this point.
+    *
+    * @param options
+    *        The data in either number, array or object format.
+    *
+    * @param x
+    *        Optionally, the X value of the point.
+    *
+    * @return The Point instance.
+    *
+    * @fires Highcharts.Point#afterInit
+    */
+  def init(series: Series, options: Double): Point = js.native
+  def init(series: Series, options: Double, x: Double): Point = js.native
+  def init(series: Series, options: Null, x: Double): Point = js.native
+  /**
+    * Runs on mouse out from the point. Called internally from mouse and touch
+    * events.
+    *
+    * @fires Highcharts.Point#mouseOut
+    */
+  def onMouseOut(): Unit = js.native
+  /**
+    * Runs on mouse over the point. Called internally from mouse and touch
+    * events.
+    *
+    * @param e
+    *        The event arguments.
+    */
+  def onMouseOver(e: PointerEventObject): Unit = js.native
+  def optionsToObject(): Dictionary[_] = js.native
+  def optionsToObject(options: js.Array[Double | String]): Dictionary[_] = js.native
+  /**
+    * Transform number or array configs into objects. Also called for object
+    * configs. Used internally to unify the different configuration formats for
+    * points. For example, a simple number `10` in a line series will be
+    * transformed to `{ y: 10 }`, and an array config like `[1, 10]` in a
+    * scatter series will be transformed to `{ x: 1, y: 10 }`.
+    *
+    * @param options
+    *        The input option.
+    *
+    * @return Transformed options.
+    */
+  def optionsToObject(options: Double): Dictionary[_] = js.native
+  def optionsToObject(options: Dictionary[_]): Dictionary[_] = js.native
+  /**
+    * Remove a point and optionally redraw the series and if necessary the axes
+    *
+    * @param redraw
+    *        Whether to redraw the chart or wait for an explicit call. When
+    *        doing more operations on the chart, for example running
+    *        `point.remove()` in a loop, it is best practice to set `redraw` to
+    *        false and call `chart.redraw()` after.
+    *
+    * @param animation
+    *        Whether to apply animation, and optionally animation
+    *        configuration.
+    */
+  def remove(redraw: Boolean): Unit = js.native
+  def remove(redraw: Boolean, animation: Boolean): Unit = js.native
+  def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  /**
+    * Toggle the selection status of a point.
+    *
+    * @param selected
+    *        When `true`, the point is selected. When `false`, the point is
+    *        unselected. When `null` or `undefined`, the selection state is
+    *        toggled.
+    *
+    * @param accumulate
+    *        When `true`, the selection is added to other selected points. When
+    *        `false`, other selected points are deselected. Internally in
+    *        Highcharts, when allowPointSelect is `true`, selected points are
+    *        accumulated on Control, Shift or Cmd clicking the point.
+    *
+    * @fires Highcharts.Point#select
+    * @fires Highcharts.Point#unselect
+    */
+  def select(): Unit = js.native
+  def select(selected: Boolean): Unit = js.native
+  def select(selected: Boolean, accumulate: Boolean): Unit = js.native
+  /**
+    * Set a value in an object, on the property defined by key. The key
+    * supports nested properties using dot notation. The function modifies the
+    * input object and does not make a copy.
+    *
+    * @param object
+    *        The object to set the value on.
+    *
+    * @param value
+    *        The value to set.
+    *
+    * @param key
+    *        Key to the property to set.
+    *
+    * @return The modified object.
+    */
+  def setNestedProperty[T](`object`: T, value: js.Any, key: String): T = js.native
+  /**
+    * Set the point's state.
+    *
+    * @param state
+    *        The new state, can be one of `''` (an empty string), `hover`,
+    *        `select` or `inactive`.
+    *
+    * @param move
+    *        State for animation.
+    *
+    * @fires Highcharts.Point#afterSetState
+    */
+  def setState(): Unit = js.native
+  def setState(state: String): Unit = js.native
+  def setState(state: String, move: Boolean): Unit = js.native
+  /**
+    * Extendable method for formatting each point's tooltip line.
+    *
+    * @param pointFormat
+    *        The point format.
+    *
+    * @return A string to be concatenated in to the common tooltip text.
+    */
+  def tooltipFormatter(pointFormat: String): String = js.native
+  def update(): Unit = js.native
+  def update(options: js.Array[Double | String]): Unit = js.native
+  def update(options: js.Array[Double | String], redraw: Boolean): Unit = js.native
+  def update(options: js.Array[Double | String], redraw: Boolean, animation: Boolean): Unit = js.native
+  def update(options: js.Array[Double | String], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def update(options: js.Object): Unit = js.native
+  def update(options: js.Object, redraw: Boolean): Unit = js.native
+  def update(options: js.Object, redraw: Boolean, animation: Boolean): Unit = js.native
+  def update(options: js.Object, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  /**
+    * Update point with new options (typically x/y data) and optionally redraw
+    * the series.
+    *
+    * @param options
+    *        The point options. Point options are handled as described under
+    *        the `series.type.data` item for each series type. For example for
+    *        a line series, if options is a single number, the point will be
+    *        given that number as the marin y value. If it is an array, it will
+    *        be interpreted as x and y values respectively. If it is an object,
+    *        advanced options are applied.
+    *
+    * @param redraw
+    *        Whether to redraw the chart after the point is updated. If doing
+    *        more operations on the chart, it is best practice to set `redraw`
+    *        to false and call `chart.redraw()` after.
+    *
+    * @param animation
+    *        Whether to apply animation, and optionally animation
+    *        configuration.
+    *
+    * @fires Highcharts.Point#update
+    */
+  def update(options: Double): Unit = js.native
+  def update(options: Double, redraw: Boolean): Unit = js.native
+  def update(options: Double, redraw: Boolean, animation: Boolean): Unit = js.native
+  def update(options: Double, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def update(options: Null, redraw: Boolean): Unit = js.native
+  def update(options: Null, redraw: Boolean, animation: Boolean): Unit = js.native
+  def update(options: Null, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+}
+

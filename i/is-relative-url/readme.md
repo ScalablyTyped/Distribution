@@ -31,29 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Check if an URL is relative.
-
-@param url - The URL to check.
-
-@example
-```
-import isRelativeUrl = require('is-relative-url');
-
-isRelativeUrl('foo/bar');
-//=> true
-
-isRelativeUrl('https://sindresorhus.com/foo/bar');
-//=> false
-
-isRelativeUrl('//sindresorhus.com');
-//=> true
-```
-*/
-
-```
 

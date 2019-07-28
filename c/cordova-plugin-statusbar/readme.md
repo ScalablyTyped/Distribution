@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cordova-plugin-statusbar
-// Project: https://github.com/apache/cordova-plugin-statusbar
-// Definitions by: Xinkai Chen <https://github.com/Xinkai>
-//                 Tim Brust <https://github.com/timbru31>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
-* Global object StatusBar.
-*/
-
-```
 

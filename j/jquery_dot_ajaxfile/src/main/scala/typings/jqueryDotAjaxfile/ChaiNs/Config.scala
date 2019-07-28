@@ -1,0 +1,19 @@
+package typings.jqueryDotAjaxfile.ChaiNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Config extends js.Object {
+  var includeStack: Boolean
+}
+
+object Config {
+  @scala.inline
+  def apply(includeStack: Boolean): Config = {
+    val __obj = js.Dynamic.literal(includeStack = includeStack)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

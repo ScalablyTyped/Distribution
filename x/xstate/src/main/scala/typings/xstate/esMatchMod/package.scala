@@ -1,0 +1,13 @@
+package typings.xstate
+
+import typings.xstate.esStateMod.State
+import typings.xstate.esTypesMod.EventObject
+import typings.xstate.esTypesMod.StateValue
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object esMatchMod {
+  type StatePatternTuple[T, TContext, TEvent /* <: EventObject */] = js.Tuple2[StateValue, ValueFromStateGetter[T, TContext, TEvent]]
+  type ValueFromStateGetter[T, TContext, TEvent /* <: EventObject */] = js.Function1[/* state */ State[TContext, TEvent], T]
+}

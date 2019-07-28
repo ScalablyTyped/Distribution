@@ -1,0 +1,11 @@
+package typings.enigmaDotJs
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("enigma.js", JSImport.Namespace)
+@js.native
+object enigmaDotJsMod extends TopLevel[IEnigmaClass]
+

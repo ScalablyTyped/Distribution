@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for promise-timeout 1.3
-// Project: https://github.com/building5/promise-timeout#readme
-// Definitions by: Aankhen <https://github.com/Aankhen>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

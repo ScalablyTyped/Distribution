@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__json-extension
 
-Typings are for version 0.18.1
+Typings are for version 1.0.2
 
 ## Library description:
 JupyterLab - JSON Renderer

@@ -1,0 +1,11 @@
+package typings.materialDashUi.svgDashIconsMod
+
+import typings.materialDashUi.underscoreUnderscoreMaterialUINs.SvgIcon
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons", "ActionTimeline")
+@js.native
+class ActionTimeline () extends SvgIcon
+

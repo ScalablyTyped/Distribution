@@ -1,0 +1,13 @@
+package typings.bootstrapDashTable
+
+import typings.jquery.JQueryStatic
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object ^ extends js.Object {
+  var bootstrapTable: JQueryStatic = js.native
+}
+

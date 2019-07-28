@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for TypeScript-Services
-// Project: https://www.npmjs.org/package/typescript-services
-// Definitions by: Basarat Ali Syed <http://github.com/basarat>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Jasmine Data Driven Tests 1.0
-// Project: https://github.com/gburghardt/jasmine-data_driven_tests, https://github.com/dakolech/jasmine-data_driven_tests
-// Definitions by: Anthony MacKinnon <https://github.com/AnthonyMacKinnon>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

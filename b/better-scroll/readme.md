@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for better-scroll 1.12
-// Project: https://github.com/ustbhuangyi/better-scroll
-// Definitions by: cloudstone <https://github.com/stoneChen>
-//                 jack <https://github.com/cnjack>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

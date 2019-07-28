@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Agenda v2.0.0
-// Project: https://github.com/agenda/agenda
-// Definitions by: Meir Gottlieb <https://github.com/meirgottlieb>
-//                 Jeff Principe <https://github.com/princjef>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -1,0 +1,51 @@
+package typings.atPulumiAws.ecrLifecyclePolicyDocumentMod
+
+import typings.atPulumiAws.atPulumiAwsStrings.any
+import typings.atPulumiAws.atPulumiAwsStrings.imageCountMoreThan
+import typings.atPulumiAws.atPulumiAwsStrings.sinceImagePushed
+import typings.atPulumiAws.atPulumiAwsStrings.tagged
+import typings.atPulumiAws.atPulumiAwsStrings.untagged
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Selection extends js.Object {
+  /**
+    * The maximum number of images or the max age for which to apply the image selection.
+    */
+  var countNumber: Input[Double]
+  /**
+    * Indicate whether to evaluate the rule based on `imageCountMoreThan` or `sinceImagePushed`.
+    */
+  var countType: Input[imageCountMoreThan | sinceImagePushed]
+  /**
+    * The unit of time e.g. days for which to apply the selection.
+    */
+  var countUnit: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Specify one or more image tag prefixes for selection.
+    */
+  var tagPrefixList: js.UndefOr[Input[String] | js.Array[Input[String]]] = js.undefined
+  /**
+    * Indicate whether to select `tagged`, `untagged` or `any` images in the repository.
+    */
+  var tagStatus: Input[tagged | untagged | any]
+}
+
+object Selection {
+  @scala.inline
+  def apply(
+    countNumber: Input[Double],
+    countType: Input[imageCountMoreThan | sinceImagePushed],
+    tagStatus: Input[tagged | untagged | any],
+    countUnit: Input[String] = null,
+    tagPrefixList: Input[String] | js.Array[Input[String]] = null
+  ): Selection = {
+    val __obj = js.Dynamic.literal(countNumber = countNumber.asInstanceOf[js.Any], countType = countType.asInstanceOf[js.Any], tagStatus = tagStatus.asInstanceOf[js.Any])
+    if (countUnit != null) __obj.updateDynamic("countUnit")(countUnit.asInstanceOf[js.Any])
+    if (tagPrefixList != null) __obj.updateDynamic("tagPrefixList")(tagPrefixList.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Selection]
+  }
+}
+

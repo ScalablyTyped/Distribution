@@ -1,0 +1,19 @@
+package typings.stripe.stripeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IObject extends js.Object {
+  var `object`: String
+}
+
+object IObject {
+  @scala.inline
+  def apply(`object`: String): IObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
+    __obj.asInstanceOf[IObject]
+  }
+}
+

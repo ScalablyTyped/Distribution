@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for findup-sync 2.0
-// Project: https://github.com/gulpjs/findup-sync
-// Definitions by: Bart van der Schoor <https://github.com/Bartvds>
-//                 Nathan Brown <https://github.com/ngbrown>
-//                 BendingBender <https://github.com/BendingBender>
-//                 Kotaro Sugawara <https://github.com/kotarella1110>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
-
-```
 

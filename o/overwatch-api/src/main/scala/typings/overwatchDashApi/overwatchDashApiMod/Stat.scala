@@ -1,0 +1,20 @@
+package typings.overwatchDashApi.overwatchDashApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Stat extends js.Object {
+  var title: String
+  var value: String
+}
+
+object Stat {
+  @scala.inline
+  def apply(title: String, value: String): Stat = {
+    val __obj = js.Dynamic.literal(title = title, value = value)
+  
+    __obj.asInstanceOf[Stat]
+  }
+}
+

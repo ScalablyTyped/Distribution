@@ -30,17 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for precise
-// Project: https://www.npmjs.org/package/precise
-// Definitions by: Peter Harris <https://github.com/codeanimal>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Precise factory
- */
-
-```
 

@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for nodegit 0.24
-// Project: https://github.com/nodegit/nodegit, http://nodegit.org
-// Definitions by: Dolan Miu <https://github.com/dolanmiu>,
-//                 Tobias Nießen <https://github.com/tniessen>,
-//                 Pierre Vigier <https://github.com/pvigier>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

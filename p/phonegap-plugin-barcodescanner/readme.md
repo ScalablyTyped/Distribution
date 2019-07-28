@@ -30,15 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for phonegap-plugin-barcodescanner
-// Project: https://github.com/phonegap/phonegap-plugin-barcodescanner
-// Definitions by: Nathan Ainslie <https://www.github.com/nainslie>
-//                 Jeff Wu <https://www.github.com/jeffwu85182>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

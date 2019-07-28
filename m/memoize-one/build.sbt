@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memoize-one"
-version := "4.1-dt-20190312Z-08b910"
+version := "4.1-dt-20190312Z-ce705a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

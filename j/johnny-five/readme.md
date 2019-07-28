@@ -30,18 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for johnny-five
-// Project: https://github.com/rwaldron/johnny-five
-// Definitions by: Toshiya Nakakura <https://github.com/nakakura>
-//                 Zoltan Ujvary <https://github.com/ujvzolee>
-//                 Simon Colmer <https://github.com/workshop2>
-//                 XtrimSystems <https://github.com/xtrimsystems>
-//                 Marcin Obiedziński <https://github.com/marcinobiedz>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

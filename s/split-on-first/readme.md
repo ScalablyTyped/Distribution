@@ -31,33 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Split a string on the first occurrence of a given separator.
-
-@param string - The string to split.
-@param separator - The separator to split on.
-
-@example
-```
-import splitOnFirst = require('split-on-first');
-
-splitOnFirst('a-b-c', '-');
-//=> ['a', 'b-c']
-
-splitOnFirst('key:value:value2', ':');
-//=> ['key', 'value:value2']
-
-splitOnFirst('a---b---c', '---');
-//=> ['a', 'b---c']
-
-splitOnFirst('a-b-c', '+');
-//=> ['a-b-c']
-```
-*/
-
-```
 

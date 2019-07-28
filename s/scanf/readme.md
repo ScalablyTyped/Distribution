@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for node-scanf
-// Project: https://github.com/Lellansin/node-scanf
-// Definitions by: Jeongho Nam <http://samchon.org>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

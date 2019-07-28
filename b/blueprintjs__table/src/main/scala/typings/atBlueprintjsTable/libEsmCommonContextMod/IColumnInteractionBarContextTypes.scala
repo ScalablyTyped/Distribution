@@ -1,0 +1,19 @@
+package typings.atBlueprintjsTable.libEsmCommonContextMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IColumnInteractionBarContextTypes extends js.Object {
+  var enableColumnInteractionBar: Boolean
+}
+
+object IColumnInteractionBarContextTypes {
+  @scala.inline
+  def apply(enableColumnInteractionBar: Boolean): IColumnInteractionBarContextTypes = {
+    val __obj = js.Dynamic.literal(enableColumnInteractionBar = enableColumnInteractionBar)
+  
+    __obj.asInstanceOf[IColumnInteractionBarContextTypes]
+  }
+}
+

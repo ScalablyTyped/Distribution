@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fullname v2.1.0
-// Project: https://www.npmjs.com/package/fullname
-// Definitions by: Klaus Reimer <https://github.com/kayahr>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

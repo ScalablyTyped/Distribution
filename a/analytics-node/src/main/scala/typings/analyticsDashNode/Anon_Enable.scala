@@ -1,0 +1,30 @@
+package typings.analyticsDashNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Enable extends js.Object {
+  var enable: js.UndefOr[Boolean] = js.undefined
+  var flushAt: js.UndefOr[Double] = js.undefined
+  var flushInterval: js.UndefOr[Double] = js.undefined
+  var host: js.UndefOr[String] = js.undefined
+}
+
+object Anon_Enable {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[Boolean] = js.undefined,
+    flushAt: Int | Double = null,
+    flushInterval: Int | Double = null,
+    host: String = null
+  ): Anon_Enable = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (flushAt != null) __obj.updateDynamic("flushAt")(flushAt.asInstanceOf[js.Any])
+    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    __obj.asInstanceOf[Anon_Enable]
+  }
+}
+

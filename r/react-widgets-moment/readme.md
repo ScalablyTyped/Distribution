@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-widgets-moment 4.0
-// Project: https://github.com/jquense/react-widgets#readme
-// Definitions by: Janeene Beeforth <https://github.com/dawnmist>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

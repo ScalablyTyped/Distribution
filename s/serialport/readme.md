@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for serialport 7.0
-// Project: https://github.com/node-serialport/node-serialport
-// Definitions by: Jeremy Foster <https://github.com/codefoster>
-//                 Andrew Pearson <https://github.com/apearson>
-//                 Cameron Tacklind <https://github.com/cinderblock>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

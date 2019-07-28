@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for flushable 1.0
-// Project: https://github.com/petegleeson/flushable#readme
-// Definitions by: Parth Mehta <https://github.com/pash90>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

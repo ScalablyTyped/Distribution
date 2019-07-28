@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for orientjs 3.0
-// Project: https://github.com/orientechnologies/orientjs
-// Definitions by: [Saeed Tabrizi] <https://github.com/saeedtabrizi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.2
-// Last Update  : 17-4-2019
-// Compatible with Orientdb >= 2.2.x and orientjs <= 3.0.x features.
-// Developed with love in www.nowcando.com
-
-```
 

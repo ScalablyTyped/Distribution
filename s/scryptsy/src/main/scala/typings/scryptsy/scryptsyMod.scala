@@ -1,0 +1,22 @@
+package typings.scryptsy
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("scryptsy", JSImport.Namespace)
+@js.native
+object scryptsyMod extends js.Object {
+  def apply(key: Buffer | String, salt: Buffer | String, N: Double, r: Double, p: Double, dkLen: Double): Buffer = js.native
+  def apply(
+    key: Buffer | String,
+    salt: Buffer | String,
+    N: Double,
+    r: Double,
+    p: Double,
+    dkLen: Double,
+    progressCallback: js.Function1[/* status */ Anon_Current, Unit]
+  ): Buffer = js.native
+}
+

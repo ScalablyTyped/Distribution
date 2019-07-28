@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for bootstrap3-dialog 1.35
-// Project: http://nakupanda.github.io/bootstrap3-dialog
-// Definitions by: Dante <https://github.com/nakupanda>
-//                 Craig Boland <https://github.com/cnboland>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

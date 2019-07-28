@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for minilog 2.0
-// Project: https://github.com/mixu/minilog
-// Definitions by: Guido <http://guido.io>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-//These type definitions are not complete, although basic usage should be typed.
-
-```
 

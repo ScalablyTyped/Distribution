@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for undertaker 1.2
-// Project: https://github.com/gulpjs/undertaker
-// Definitions by: Qubo <https://github.com/tkqubo>
-//                 Giedrius Grabauskas <https://github.com/GiedriusGrabauskas>
-//                 Evan Yamanishi <https://github.com/sh0ji>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,92 @@
+package typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.SourceUnit
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.PragmaDirective
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.PragmaName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.PragmaValue
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Version
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.VersionOperator
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.VersionConstraint
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ImportDeclaration
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ImportDirective
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ContractDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.InheritanceSpecifier
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ContractPart
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.StateVariableDeclaration
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.UsingForDeclaration
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.StructDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ModifierDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ModifierInvocation
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ReturnParameters
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ModifierList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EventDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EnumValue
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EnumDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ParameterList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Parameter
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EventParameterList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EventParameter
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionTypeParameterList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionTypeParameter
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.VariableDeclaration
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.TypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.UserDefinedTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Mapping
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.StorageLocation
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.StateMutability
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Block
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Statement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ExpressionStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.IfStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.WhileStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.SimpleStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ForStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.InlineAssemblyStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.DoWhileStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ContinueStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.BreakStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ReturnStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ThrowStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.VariableDeclarationStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.IdentifierList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ElementaryTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Expression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.PrimaryExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ExpressionList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.NameValueList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.NameValue
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionCallArguments
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyBlock
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyItem
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyCall
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyLocalDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyAssignment
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyIdentifierOrList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyIdentifierList
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyStackAssignment
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.LabelDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblySwitch
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyCase
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyFunctionDefinition
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyFunctionReturns
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyFor
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyIf
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.AssemblyLiteral
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.SubAssembly
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.TupleExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ElementaryTypeNameExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.NumberLiteral
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Identifier
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.BinaryOperation
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Conditional
+*/
+trait ASTNode extends js.Object
+

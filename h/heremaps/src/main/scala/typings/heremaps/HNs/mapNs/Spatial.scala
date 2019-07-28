@@ -1,0 +1,55 @@
+package typings.heremaps.HNs.mapNs
+
+import typings.heremaps.HNs.mapNs.SpatialNs.Options
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * This class represents a spatial map object which provides its projected geometry.
+  */
+@JSGlobal("H.map.Spatial")
+@js.native
+class Spatial protected () extends Object {
+  /**
+    * Constructor
+    * @param isClosed {boolean} - Indicates whether this spatial object represents a closed shape
+    * @param opt_options {H.map.Spatial.Options=} - The options to apply
+    */
+  def this(isClosed: Boolean) = this()
+  def this(isClosed: Boolean, opt_options: Options) = this()
+  /**
+    * To get the arrow style of this spatial object or undefined if no style is defined. A returned arrow style is treated as immutable and must not be modified afterwards to prevent
+    * inconsistancies!
+    * @returns {(H.map.ArrowStyle | undefined)}
+    */
+  def getArrows(): ArrowStyle | Unit = js.native
+  /**
+    * To get the drawing style of this object. The returned style is treated as immutable and must not be modified afterwards to prevent inconsistancies!
+    * @returns {H.map.SpatialStyle}
+    */
+  def getStyle(): SpatialStyle = js.native
+  /**
+    * Indicates whether this spatial object represents a closed shape
+    * @returns {boolean}
+    */
+  def isClosed(): Boolean = js.native
+  /**
+    * To set the arrow style of this object.
+    * @param opt_arrows {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=} - the arrow style to be applied
+    * @returns {H.map.Spatial} - the Spatial instance itself
+    */
+  def setArrows(): Spatial = js.native
+  def setArrows(opt_arrows: ArrowStyle): Spatial = js.native
+  def setArrows(opt_arrows: typings.heremaps.HNs.mapNs.ArrowStyleNs.Options): Spatial = js.native
+  /**
+    * To set the drawing style of this object. If the passed opt_style argument is an instance of H.map.SpatialStyle it is treated as immutable and must not be modified afterwards to prevent
+    * inconsistancies!
+    * @param opt_style {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - The style to set. If it evaluates to a falsy the H.map.SpatialStyle.DEFAULT_STYLE is used.
+    * @returns {H.map.Spatial} - the Spatial instance itself
+    */
+  def setStyle(): Spatial = js.native
+  def setStyle(opt_style: SpatialStyle): Spatial = js.native
+  def setStyle(opt_style: typings.heremaps.HNs.mapNs.SpatialStyleNs.Options): Spatial = js.native
+}
+

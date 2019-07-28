@@ -1,0 +1,45 @@
+package typings.reactDashOnsenui
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ContentStyle extends js.Object {
+  var contentStyle: js.UndefOr[js.Any] = js.undefined
+  var modifier: js.UndefOr[String] = js.undefined
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var renderBottomToolbar: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var renderFixed: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var renderModal: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var renderToolbar: js.UndefOr[js.Function0[Unit]] = js.undefined
+}
+
+object Anon_ContentStyle {
+  @scala.inline
+  def apply(
+    contentStyle: js.Any = null,
+    modifier: String = null,
+    onHide: () => Unit = null,
+    onInit: () => Unit = null,
+    onShow: () => Unit = null,
+    renderBottomToolbar: () => Unit = null,
+    renderFixed: () => Unit = null,
+    renderModal: () => Unit = null,
+    renderToolbar: () => Unit = null
+  ): Anon_ContentStyle = {
+    val __obj = js.Dynamic.literal()
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (renderBottomToolbar != null) __obj.updateDynamic("renderBottomToolbar")(js.Any.fromFunction0(renderBottomToolbar))
+    if (renderFixed != null) __obj.updateDynamic("renderFixed")(js.Any.fromFunction0(renderFixed))
+    if (renderModal != null) __obj.updateDynamic("renderModal")(js.Any.fromFunction0(renderModal))
+    if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(js.Any.fromFunction0(renderToolbar))
+    __obj.asInstanceOf[Anon_ContentStyle]
+  }
+}
+

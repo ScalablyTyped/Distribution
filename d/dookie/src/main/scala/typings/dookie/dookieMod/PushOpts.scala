@@ -1,0 +1,20 @@
+package typings.dookie.dookieMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PushOpts extends js.Object {
+  var dropDatabase: Boolean
+  var filename: js.UndefOr[String] = js.undefined
+}
+
+object PushOpts {
+  @scala.inline
+  def apply(dropDatabase: Boolean, filename: String = null): PushOpts = {
+    val __obj = js.Dynamic.literal(dropDatabase = dropDatabase)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    __obj.asInstanceOf[PushOpts]
+  }
+}
+

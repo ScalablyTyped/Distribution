@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for keysym 0.0
-// Project: https://github.com/substack/node-keysym
-// Definitions by: Harry Shipton <https://github.com/harryshipton>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

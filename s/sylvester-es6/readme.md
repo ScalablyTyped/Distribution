@@ -31,19 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for sylvester-es6 0.0
-// Project: https://github.com/pithumke/sylvester
-// Definitions by: briwa <https://github.com/briwa>
-//                 Stephane Alie <https://github.com/StephaneAlie>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// === Sylvester ===
-// Vector and Matrix mathematics modules for JavaScript
-// Copyright (c) 2007 James Coglan
-// Extended version of the library is courtesy of @pithumke (c) 2016
-
-```
 

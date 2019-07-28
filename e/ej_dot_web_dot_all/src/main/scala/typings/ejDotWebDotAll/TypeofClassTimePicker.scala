@@ -1,0 +1,19 @@
+package typings.ejDotWebDotAll
+
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import typings.ejDotWebDotAll.ejNs.TimePicker
+import typings.ejDotWebDotAll.ejNs.TimePickerNs.Model
+import typings.std.Element
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TypeofClassTimePicker
+  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TimePicker]
+     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), TimePicker] {
+  var Locale: js.Any = js.native
+  var fn: TimePicker = js.native
+}
+

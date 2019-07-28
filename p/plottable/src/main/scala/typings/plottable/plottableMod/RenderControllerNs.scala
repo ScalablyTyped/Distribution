@@ -1,0 +1,25 @@
+package typings.plottable.plottableMod
+
+import typings.plottable.buildSrcCoreRenderPolicyMod.IRenderPolicy
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("plottable", "RenderController")
+@js.native
+object RenderControllerNs extends js.Object {
+  def flush(): Unit = js.native
+  def registerToComputeLayout(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = js.native
+  def registerToComputeLayoutAndRender(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = js.native
+  def registerToRender(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = js.native
+  def renderPolicy(): IRenderPolicy = js.native
+  def renderPolicy(renderPolicy: typings.plottable.buildSrcCoreRenderControllerMod.Policy): Unit = js.native
+  @js.native
+  object Policy extends js.Object {
+    var animationFrame: typings.plottable.plottableStrings.animationFrame = js.native
+    var immediate: typings.plottable.plottableStrings.immediate = js.native
+    var timeout: typings.plottable.plottableStrings.timeout = js.native
+  }
+  
+}
+

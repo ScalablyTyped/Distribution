@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for PhoneGap 2.3
-// Project: http://phonegap.com
-// Definitions by: Boris Yankov <https://github.com/borisyankov>, Dick van den Brink <https://github.com/DickvdBrink>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

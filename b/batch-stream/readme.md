@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for batch-stream 0.1.2
-// Project: https://github.com/segmentio/batch-stream
-// Definitions by: Nicholas Penree <https://github.com/drudge>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

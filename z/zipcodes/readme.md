@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for zipcodes 6.1
-// Project: https://github.com/davglass/zipcodes#readme
-// Definitions by: Brayden Lopez <https://github.com/headdetect>, Dobes Vandermeer <https://github.com/dobesv>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

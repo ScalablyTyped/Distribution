@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-native-dialog 5.5
-// Project: https://github.com/mmazzarolo/react-native-dialog
-// Definitions by: MrLuje <https://github.com/MrLuje>
-//                 Stack Builders <https://github.com/stackbuilders>
-//                 Esteban Ibarra <https://github.com/ibarrae>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

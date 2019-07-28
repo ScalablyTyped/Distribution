@@ -1,0 +1,14 @@
+package typings.reactDashNativeDashMaterialDashDesignDashSearchbar
+
+import typings.react.reactMod.ComponentType
+import typings.reactDashNativeDashMaterialDashDesignDashSearchbar.reactDashNativeDashMaterialDashDesignDashSearchbarMod.SearchBarProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashMaterialDashDesignDashSearchbarComponents extends reactDashNativeDashMaterialDashDesignDashSearchbarProps {
+  @scala.inline
+  def ReactDashNativeDashMaterialDashDesignDashSearchbar: ComponentType[SearchBarProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashDesignDashSearchbar.reactDashNativeDashMaterialDashDesignDashSearchbarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashMaterialDashDesignDashSearchbar.reactDashNativeDashMaterialDashDesignDashSearchbarMod.SearchBarProps]]
+}
+

@@ -1,0 +1,30 @@
+package typings.adone.adoneNs.collectionNs.INs.LRUNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SerializedEntry[K, V] extends js.Object {
+  /**
+    * when it becomes expired
+    */
+  var e: Double
+  /**
+    * key
+    */
+  var key: K
+  /**
+    * value
+    */
+  var value: V
+}
+
+object SerializedEntry {
+  @scala.inline
+  def apply[K, V](e: Double, key: K, value: V): SerializedEntry[K, V] = {
+    val __obj = js.Dynamic.literal(e = e, key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SerializedEntry[K, V]]
+  }
+}
+

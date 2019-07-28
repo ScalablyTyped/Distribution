@@ -1,0 +1,24 @@
+package typings.xmldsigjs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Algorithm extends js.Object {
+  var Algorithm: String
+  var Encoding: String
+  var Id: String
+  var MimeType: String
+  var Type: String
+  var URI: String
+}
+
+object Anon_Algorithm {
+  @scala.inline
+  def apply(Algorithm: String, Encoding: String, Id: String, MimeType: String, Type: String, URI: String): Anon_Algorithm = {
+    val __obj = js.Dynamic.literal(Algorithm = Algorithm, Encoding = Encoding, Id = Id, MimeType = MimeType, Type = Type, URI = URI)
+  
+    __obj.asInstanceOf[Anon_Algorithm]
+  }
+}
+

@@ -1,0 +1,48 @@
+package typings.callsites.callsitesMod
+
+import typings.callsites.Anon_Default
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("callsites", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function callsites(): callsites.CallSite[];
+  // export = callsites;
+  @JSName("default")
+  var default_Original: Anon_Default = js.native
+  /**
+  	Get callsites from the V8 stack trace API.
+  	@returns An array of `CallSite` objects.
+  	@example
+  	```
+  	import callsites = require('callsites');
+  	function unicorn() {
+  		console.log(callsites()[0].getFileName());
+  		//=> '/Users/sindresorhus/dev/callsites/test.js'
+  	}
+  	unicorn();
+  	```
+  	*/
+  def apply(): js.Array[CallSite] = js.native
+  /**
+  	Get callsites from the V8 stack trace API.
+  	@returns An array of `CallSite` objects.
+  	@example
+  	```
+  	import callsites = require('callsites');
+  	function unicorn() {
+  		console.log(callsites()[0].getFileName());
+  		//=> '/Users/sindresorhus/dev/callsites/test.js'
+  	}
+  	unicorn();
+  	```
+  	*/
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function callsites(): callsites.CallSite[];
+  // export = callsites;
+  def default(): js.Array[CallSite] = js.native
+}
+

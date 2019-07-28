@@ -30,14 +30,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for fontfaceobserver
-// Project: https://github.com/bramstein/fontfaceobserver
-// Definitions by: Rand Scullard <https://github.com/RandScullard>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

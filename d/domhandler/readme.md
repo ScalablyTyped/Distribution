@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for domhandler 2.4
-// Project: https://github.com/fb55/DomHandler#readme
-// Definitions by: Johan Davidsson <https://github.com/johandavidson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for domutils 1.7
-// Project: https://github.com/FB55/domutils#readme
-// Definitions by: Johan Davidsson <https://github.com/johandavidson>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

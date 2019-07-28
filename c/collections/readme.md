@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for collections v5.0.6
-// Project: http://www.collectionsjs.com/
-// Definitions by: Scarabe Dore <https://github.com/scarabedore>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

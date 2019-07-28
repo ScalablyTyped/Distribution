@@ -31,17 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-tabs 2.3
-// Project: https://github.com/reactjs/react-tabs/
-// Definitions by: Yuu Igarashi <https://github.com/yu-i9>
-//                 Daniel Tschinder <https://github.com/danez>
-//                 Ummon Karpe <https://github.com/Equationist>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

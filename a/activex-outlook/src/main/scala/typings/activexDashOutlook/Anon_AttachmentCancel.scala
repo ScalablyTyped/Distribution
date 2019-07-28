@@ -1,0 +1,21 @@
+package typings.activexDashOutlook
+
+import typings.activexDashOutlook.OutlookNs.Attachment
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AttachmentCancel extends js.Object {
+  val Attachment: typings.activexDashOutlook.OutlookNs.Attachment
+  var Cancel: Boolean
+}
+
+object Anon_AttachmentCancel {
+  @scala.inline
+  def apply(Attachment: Attachment, Cancel: Boolean): Anon_AttachmentCancel = {
+    val __obj = js.Dynamic.literal(Attachment = Attachment, Cancel = Cancel)
+  
+    __obj.asInstanceOf[Anon_AttachmentCancel]
+  }
+}
+

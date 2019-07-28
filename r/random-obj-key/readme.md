@@ -31,21 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Get a random key from an object.
-
-@example
-```
-import randomObjKey = require('random-obj-key');
-
-randomObjKey({foo: true, bar: true});
-//=> 'bar'
-```
-*/
-
-```
 

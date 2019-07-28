@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stale-lru-cache 5.1
-// Project: https://github.com/cyberthom/stale-lru-cache
-// Definitions by: Joona Heikkilä <https://github.com/cxcorp>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -1,0 +1,70 @@
+package typings.mailgunDashJs.mailgunDashJsMod.messagesNs
+
+import typings.mailgunDashJs.mailgunDashJsMod.AttachmentData
+import typings.mailgunDashJs.mailgunDashJsStrings.False
+import typings.mailgunDashJs.mailgunDashJsStrings.True
+import typings.mailgunDashJs.mailgunDashJsStrings.htmlonly
+import typings.mailgunDashJs.mailgunDashJsStrings.no
+import typings.mailgunDashJs.mailgunDashJsStrings.yes
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BatchData extends SendData {
+  var `recipient-variables`: js.UndefOr[BatchSendRecipientVars] = js.undefined
+}
+
+object BatchData {
+  @scala.inline
+  def apply(
+    to: String | js.Array[String],
+    `amp-html`: String = null,
+    attachment: AttachmentData | js.Array[AttachmentData] = null,
+    bcc: String | js.Array[String] = null,
+    cc: String | js.Array[String] = null,
+    from: String = null,
+    `h:Importance`: String = null,
+    `h:In-Reply-To`: String = null,
+    `h:References`: String = null,
+    `h:Reply-To`: String = null,
+    html: String = null,
+    `inline`: AttachmentData | js.Array[AttachmentData] = null,
+    `o:deliverytime`: String = null,
+    `o:dkim`: yes | no | Boolean = null,
+    `o:require-tls`: yes | no | True | False = null,
+    `o:skip-verification`: yes | no | True | False = null,
+    `o:tag`: String | js.Array[String] = null,
+    `o:tracking`: yes | no | Boolean = null,
+    `o:tracking-clicks`: yes | no | htmlonly | Boolean = null,
+    `o:tracking-opens`: yes | no | Boolean = null,
+    `recipient-variables`: BatchSendRecipientVars = null,
+    subject: String = null,
+    text: String = null
+  ): BatchData = {
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    if (`amp-html` != null) __obj.updateDynamic("amp-html")(`amp-html`)
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (`h:Importance` != null) __obj.updateDynamic("h:Importance")(`h:Importance`)
+    if (`h:In-Reply-To` != null) __obj.updateDynamic("h:In-Reply-To")(`h:In-Reply-To`)
+    if (`h:References` != null) __obj.updateDynamic("h:References")(`h:References`)
+    if (`h:Reply-To` != null) __obj.updateDynamic("h:Reply-To")(`h:Reply-To`)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (`o:deliverytime` != null) __obj.updateDynamic("o:deliverytime")(`o:deliverytime`)
+    if (`o:dkim` != null) __obj.updateDynamic("o:dkim")(`o:dkim`.asInstanceOf[js.Any])
+    if (`o:require-tls` != null) __obj.updateDynamic("o:require-tls")(`o:require-tls`.asInstanceOf[js.Any])
+    if (`o:skip-verification` != null) __obj.updateDynamic("o:skip-verification")(`o:skip-verification`.asInstanceOf[js.Any])
+    if (`o:tag` != null) __obj.updateDynamic("o:tag")(`o:tag`.asInstanceOf[js.Any])
+    if (`o:tracking` != null) __obj.updateDynamic("o:tracking")(`o:tracking`.asInstanceOf[js.Any])
+    if (`o:tracking-clicks` != null) __obj.updateDynamic("o:tracking-clicks")(`o:tracking-clicks`.asInstanceOf[js.Any])
+    if (`o:tracking-opens` != null) __obj.updateDynamic("o:tracking-opens")(`o:tracking-opens`.asInstanceOf[js.Any])
+    if (`recipient-variables` != null) __obj.updateDynamic("recipient-variables")(`recipient-variables`)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[BatchData]
+  }
+}
+

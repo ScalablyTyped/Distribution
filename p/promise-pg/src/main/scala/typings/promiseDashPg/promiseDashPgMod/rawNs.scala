@@ -1,0 +1,69 @@
+package typings.promiseDashPg.promiseDashPgMod
+
+import typings.pg.TypeofPg
+import typings.pg.TypeofarrayParser
+import typings.pg.pgMod.ConnectionConfig
+import typings.pg.pgMod.Defaults
+import typings.pg.pgMod.PoolConfig
+import typings.pgDashTypes.pgDashTypesMod.TypeParser
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("promise-pg", "raw")
+@js.native
+object rawNs extends js.Object {
+  @js.native
+  class Client ()
+    extends typings.pg.pgMod.Client {
+    def this(config: String) = this()
+    def this(config: typings.pg.pgMod.ClientConfig) = this()
+  }
+  
+  @js.native
+  class ClientBase ()
+    extends typings.pg.pgMod.ClientBase {
+    def this(config: String) = this()
+    def this(config: typings.pg.pgMod.ClientConfig) = this()
+  }
+  
+  @js.native
+  class Connection ()
+    extends typings.pg.pgMod.Connection {
+    def this(config: ConnectionConfig) = this()
+  }
+  
+  @js.native
+  class Events ()
+    extends typings.pg.pgMod.Events
+  
+  @js.native
+  // `new Pool('pg://user@localhost/mydb')` is not allowed.
+  // But it passes type check because of issue:
+  // https://github.com/Microsoft/TypeScript/issues/7485
+  class Pool ()
+    extends typings.pg.pgMod.Pool {
+    def this(config: PoolConfig) = this()
+  }
+  
+  @js.native
+  class Query ()
+    extends typings.pg.pgMod.Query {
+    def this(queryTextOrConfig: String) = this()
+    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig) = this()
+    def this(queryTextOrConfig: String, values: js.Array[_]) = this()
+    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig, values: js.Array[_]) = this()
+  }
+  
+  val defaults: Defaults with typings.pg.pgMod.ClientConfig = js.native
+  val native: TypeofPg | Null = js.native
+  @js.native
+  object types extends js.Object {
+    val arrayParserNs: TypeofarrayParser = js.native
+    def getTypeParser(oid: Double, format: String): TypeParser = js.native
+    def setTypeParser(oid: Double, format: String, parseFn: TypeParser): Unit = js.native
+    def setTypeParser(oid: Double, parseFn: TypeParser): Unit = js.native
+  }
+  
+}
+

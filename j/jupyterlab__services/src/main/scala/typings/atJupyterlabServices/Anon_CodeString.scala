@@ -1,0 +1,19 @@
+package typings.atJupyterlabServices
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CodeString extends js.Object {
+  var code: String
+}
+
+object Anon_CodeString {
+  @scala.inline
+  def apply(code: String): Anon_CodeString = {
+    val __obj = js.Dynamic.literal(code = code)
+  
+    __obj.asInstanceOf[Anon_CodeString]
+  }
+}
+

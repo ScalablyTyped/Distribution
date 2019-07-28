@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for cls-hooked 4.3
-// Project: https://github.com/jeff-lewis/cls-hooked
-// Definitions by: Leo Liang <https://github.com/aleung>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

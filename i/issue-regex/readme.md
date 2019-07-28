@@ -31,23 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Regular expression for matching issue references.
-
-@returns A `RegExp` for matching issue references.
-
-@example
-```
-import issueRegex = require('issue-regex');
-
-'Fixes #143 and avajs/ava#1023'.match(issueRegex());
-//=> ['#143', 'avajs/ava#1023']
-```
-*/
-
-```
 

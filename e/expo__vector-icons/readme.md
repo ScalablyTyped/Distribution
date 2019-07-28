@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for @expo/vector-icons 9.0
-// Project: https://github.com/expo/vector-icons, https://expo.github.io/vector-icons
-// Definitions by: Hyeonsu Lee <https://github.com/incleaf>
-//                 Robert Ying <https://github.com/robertying>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

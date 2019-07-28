@@ -31,26 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Escape a string for use in HTML.
-
-Escapes the following characters in the given `string` argument: `&` `<` `>` `"` `'`.
-
-@example
-```
-import {htmlEscape} from 'escape-goat';
-
-htmlEscape('🦄 & 🐐');
-//=> '🦄 &amp; 🐐'
-
-htmlEscape('Hello <em>World</em>');
-//=> 'Hello &lt;em&gt;World&lt;/em&gt;'
-```
-*/
-
-```
 
