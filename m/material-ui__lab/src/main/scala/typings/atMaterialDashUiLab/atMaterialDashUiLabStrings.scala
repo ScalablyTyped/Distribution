@@ -6,6 +6,7 @@ import typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconCl
 import typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialClassKey
 import typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
 import typings.atMaterialDashUiLab.toggleButtonToggleButtonMod._ToggleButtonClassKey
+import typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,6 +53,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait contained extends js.Object
+  
+  @js.native
+  sealed trait content extends TreeItemClassKey
   
   @js.native
   sealed trait copy extends js.Object
@@ -108,6 +112,9 @@ object atMaterialDashUiLabStrings {
   sealed trait grid extends js.Object
   
   @js.native
+  sealed trait group extends TreeItemClassKey
+  
+  @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
@@ -117,6 +124,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait iconActive extends RatingClassKey
+  
+  @js.native
+  sealed trait iconContainer extends TreeItemClassKey
   
   @js.native
   sealed trait iconEmpty extends RatingClassKey
@@ -142,6 +152,7 @@ object atMaterialDashUiLabStrings {
   @js.native
   sealed trait label
     extends RatingClassKey
+       with TreeItemClassKey
        with _ToggleButtonClassKey
   
   @js.native
@@ -241,6 +252,7 @@ object atMaterialDashUiLabStrings {
        with SpeedDialClassKey
        with SpeedDialIconClassKey
        with ToggleButtonGroupClassKey
+       with TreeItemClassKey
   
   @js.native
   sealed trait selected
@@ -321,6 +333,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def contained: contained = "contained".asInstanceOf[contained]
   @scala.inline
+  def content: content = "content".asInstanceOf[content]
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
@@ -357,11 +371,15 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   @scala.inline
   def iconActive: iconActive = "iconActive".asInstanceOf[iconActive]
+  @scala.inline
+  def iconContainer: iconContainer = "iconContainer".asInstanceOf[iconContainer]
   @scala.inline
   def iconEmpty: iconEmpty = "iconEmpty".asInstanceOf[iconEmpty]
   @scala.inline

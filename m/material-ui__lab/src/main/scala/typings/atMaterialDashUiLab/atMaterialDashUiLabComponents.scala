@@ -22,5 +22,9 @@ object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
     typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
   ] = js.constructorOf[typings.atMaterialDashUiLab.toggleButtonGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps]]
+  @scala.inline
+  def TreeItem: ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps] = js.constructorOf[typings.atMaterialDashUiLab.treeItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps]]
+  @scala.inline
+  def TreeView: ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps] = js.constructorOf[typings.atMaterialDashUiLab.treeViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps]]
 }
 
