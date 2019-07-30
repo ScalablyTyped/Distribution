@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var accessToken: String = js.native
+  var baseApiUrl: String = js.native
   var version: String = js.native
   def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def supported(): Boolean = js.native

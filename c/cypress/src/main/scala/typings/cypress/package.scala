@@ -12,6 +12,8 @@ import typings.cypress.JQueryNs.Promise
 import typings.cypress.JQueryNs.Thenable
 import typings.cypress.JQueryNs.TypeOrArray
 import typings.cypress.JQueryNs.jqXHR
+import typings.cypress.MochaNs.Done
+import typings.cypress.MochaNs.MochaGlobals
 import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
@@ -62,7 +64,15 @@ package object cypress {
   type JQuerySupport = PlainObject[js.Any]
   // tslint:disable-next-line:no-empty-interface
   type JQueryXHR = jqXHR[js.Any]
-  type MochaDone = js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+  // #endregion Browser augmentations
+  // #region Deprecations
+  /** @deprecated use `Mocha.Done` instead. */
+  type MochaDone = Done
+  /** @deprecated use `Mocha.ReporterConstructor` instead. */
+  type ReporterConstructor = typings.cypress.MochaNs.ReporterConstructor
+  // Augments the DOM `Window` object when lib.dom.d.ts is loaded.
+  // tslint:disable-next-line no-empty-interface
+  type Window = MochaGlobals
   // Used by JQuery.Event
   type _Event = Event
 }

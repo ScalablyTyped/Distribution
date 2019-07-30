@@ -91,6 +91,7 @@ import typings.jest.jestStrings.incomplete
 import typings.jest.jestStrings.real
 import typings.jest.jestStrings.set
 import typings.std.Error
+import typings.std.InstanceType
 import typings.std.Partial
 import typings.std.RegExp
 import typings.std.Required
@@ -1928,17 +1929,43 @@ object jestNs extends js.Object {
   type Maybe[T] = js.UndefOr[Unit | Null | T]
   type Milliseconds = Double
   /**
-    * Wrap module with mock definitions
+    * Wrap an object or a module with mock definitions
     *
     * @example
     *
     *  jest.mock("../api");
-    *  import { Api } from "../api";
+    *  import * as api from "../api";
     *
-    *  const myApi: jest.Mocked<Api> = new Api() as any;
-    *  myApi.myApiMethod.mockImplementation(() => "test");
+    *  const mockApi = api as jest.Mocked<typeof api>;
+    *  api.MyApi.prototype.myApiMethod.mockImplementation(() => "test");
     */
   type Mocked[T] = typings.jest.jestStrings.Mocked with js.Any with T
+  /**
+    * Wrap a class with mock definitions
+    *
+    * @example
+    *
+    *  import { MyClass } from "./libary";
+    *  jest.mock("./library");
+    *
+    *  const mockedMyClass = MyClass as jest.MockedClass<MyClass>;
+    *
+    *  expect(mockedMyClass.mock.calls[0][0]).toBe(42); // Constructor calls
+    *  expect(mockedMyClass.prototype.myMethod.mock.calls[0][0]).toBe(42); // Method calls
+    */
+  type MockedClass[T /* <: Constructable */] = (MockInstance[InstanceType[T], _]) with js.Object with T
+  /**
+    * Wrap a function with mock definitions
+    *
+    * @example
+    *
+    *  import { myFunction } from "./library";
+    *  jest.mock("./library");
+    *
+    *  const mockMyFunction = myFunction as jest.MockedFunction<typeof myFunction>;
+    *  expect(mockMyFunction.mock.calls[0][0]).toBe(42);
+    */
+  type MockedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = (MockInstance[ReturnType[T], ArgsType[T]]) with T
   type ModuleMap = js.Any
   type ModuleMocker = js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215

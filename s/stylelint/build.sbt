@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stylelint"
-version := "9.10-dt-20190320Z-aaab0a"
+version := "9.10-dt-20190729Z-2e6249"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

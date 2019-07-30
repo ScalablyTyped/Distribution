@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onsenui"
-version := "2.10.9-26b4b7"
+version := "2.10.10-26b4b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -674,6 +674,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `border-bottom` extends IconName
   
   @js.native
+  sealed trait `border-center-h` extends IconName
+  
+  @js.native
+  sealed trait `border-center-v` extends IconName
+  
+  @js.native
   sealed trait `border-inner` extends IconName
   
   @js.native
@@ -1532,6 +1538,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait corn extends IconName
   
   @js.native
+  sealed trait `cotton-bureau` extends IconName
+  
+  @js.native
   sealed trait couch extends IconName
   
   @js.native
@@ -2097,6 +2106,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `facebook-square` extends IconName
+  
+  @js.native
+  sealed trait fad extends IconPrefix
   
   @js.native
   sealed trait fal extends IconPrefix
@@ -6686,6 +6698,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `border-bottom`: `border-bottom` = "border-bottom".asInstanceOf[`border-bottom`]
   @scala.inline
+  def `border-center-h`: `border-center-h` = "border-center-h".asInstanceOf[`border-center-h`]
+  @scala.inline
+  def `border-center-v`: `border-center-v` = "border-center-v".asInstanceOf[`border-center-v`]
+  @scala.inline
   def `border-inner`: `border-inner` = "border-inner".asInstanceOf[`border-inner`]
   @scala.inline
   def `border-left`: `border-left` = "border-left".asInstanceOf[`border-left`]
@@ -7256,6 +7272,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def corn: corn = "corn".asInstanceOf[corn]
   @scala.inline
+  def `cotton-bureau`: `cotton-bureau` = "cotton-bureau".asInstanceOf[`cotton-bureau`]
+  @scala.inline
   def couch: couch = "couch".asInstanceOf[couch]
   @scala.inline
   def cow: cow = "cow".asInstanceOf[cow]
@@ -7633,6 +7651,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `facebook-messenger`: `facebook-messenger` = "facebook-messenger".asInstanceOf[`facebook-messenger`]
   @scala.inline
   def `facebook-square`: `facebook-square` = "facebook-square".asInstanceOf[`facebook-square`]
+  @scala.inline
+  def fad: fad = "fad".asInstanceOf[fad]
   @scala.inline
   def fal: fal = "fal".asInstanceOf[fal]
   @scala.inline

@@ -226,6 +226,10 @@ object settingsNs extends js.Object {
   }
   
   @js.native
+  class ThemeConversionStatusEnum ()
+    extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.settingsNs.ThemeConversionStatusEnum
+  
+  @js.native
   class WebUIProjectSettingsPart protected ()
     extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.settingsNs.WebUIProjectSettingsPart {
     def this(
@@ -533,6 +537,16 @@ object settingsNs extends js.Object {
       * of the parent ProjectSettings element passed as argument.
       */
     def createIn(container: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ProjectSettings): typings.mendixmodelsdk.distGenSettingsMod.settingsNs.RuntimeSettings = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ThemeConversionStatusEnum extends js.Object {
+    var AtlasNotFound: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum = js.native
+    var ChangesInAtlas: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum = js.native
+    var ConvertedChangesInCustom: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum = js.native
+    var ConvertedChangesInVariables: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum = js.native
+    var Done: typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum = js.native
   }
   
   /* static members */

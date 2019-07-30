@@ -1,7 +1,7 @@
 
 # Scala.js typings for rmc-date-picker
 
-Typings are for version 6.0.9
+Typings are for version 6.0.10
 
 ## Library description:
 React Mobile DatePicker Component for web and react-native

@@ -20,9 +20,6 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SelectorXPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SingleSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticOrDynamicString
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.ObjectListSortItem
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.WebDynamicImageValue
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModule
 import typings.mendixmodelsdk.distGenSecurityMod.securityNs.AccessRuleContainerBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -953,15 +950,6 @@ object domainmodelsNs extends js.Object {
     def create(model: IModel): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.AttributeValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.11.0 to 7.18.0
-      */
-    def createInAttributeValueUnderValue(container: AttributeValue): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property
       * of the parent documenttemplates.AttributeWidget element passed as argument.
       *
@@ -1026,15 +1014,6 @@ object domainmodelsNs extends js.Object {
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property
-      * of the parent pluginwidgets.ObjectListSortItem element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInObjectListSortItemUnderAttributeRef(container: ObjectListSortItem): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'attributeRef' property
       * of the parent pages.GridSortItem element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -1095,15 +1074,6 @@ object domainmodelsNs extends js.Object {
       *  7.11.0 and higher
       */
     def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebDynamicImageValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebDynamicImageValueUnderValue(container: WebDynamicImageValue): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property

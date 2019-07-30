@@ -52,6 +52,24 @@ object restNs extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class ODataAttribute protected ()
+    extends typings.mendixmodelsdk.distGenRestMod.restNs.ODataAttribute {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: ModelUnit,
+      container: AbstractElement
+    ) = this()
+  }
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
     * In version 7.18.0: introduced
     */
   @js.native
@@ -229,6 +247,28 @@ object restNs extends js.Object {
       *  7.18.0 and higher
       */
     def createIn(container: typings.mendixmodelsdk.distGenRestMod.restNs.PublishedRestService): typings.mendixmodelsdk.distGenRestMod.restNs.CorsConfiguration = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ODataAttribute extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: typings.mendixmodelsdk.distGenRestMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new ODataAttribute instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): typings.mendixmodelsdk.distGenRestMod.restNs.ODataAttribute = js.native
+    /**
+      * Creates and returns a new ODataAttribute instance in the SDK and on the server.
+      * The new ODataAttribute will be automatically stored in the 'attributes' property
+      * of the parent ODataEntity element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: typings.mendixmodelsdk.distGenRestMod.restNs.ODataEntity): typings.mendixmodelsdk.distGenRestMod.restNs.ODataAttribute = js.native
   }
   
   /* static members */

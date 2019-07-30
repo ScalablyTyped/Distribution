@@ -4,22 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated use `Mocha.Suite` instead. */
+@js.native
 trait ISuiteCallbackContext extends js.Object {
-  def retries(n: Double): this.type
-  def slow(ms: Double): this.type
-  def timeout(ms: Double): this.type
-}
-
-object ISuiteCallbackContext {
-  @scala.inline
-  def apply(
-    retries: Double => ISuiteCallbackContext,
-    slow: Double => ISuiteCallbackContext,
-    timeout: Double => ISuiteCallbackContext
-  ): ISuiteCallbackContext = {
-    val __obj = js.Dynamic.literal(retries = js.Any.fromFunction1(retries), slow = js.Any.fromFunction1(slow), timeout = js.Any.fromFunction1(timeout))
-  
-    __obj.asInstanceOf[ISuiteCallbackContext]
-  }
+  /** @deprecated `.retries()` has additional overloads in `Mocha.Suite`. */
+  def retries(n: Double): this.type = js.native
+  /** @deprecated `.slow()` has additional overloads in `Mocha.Suite`. */
+  def slow(ms: Double): this.type = js.native
+  def timeout(ms: String): this.type = js.native
+  /** @deprecated `.timeout()` has additional overloads in `Mocha.Suite`. */
+  def timeout(ms: Double): this.type = js.native
 }
 

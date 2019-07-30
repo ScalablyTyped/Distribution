@@ -206,10 +206,10 @@ trait SwiperOptions extends js.Object {
   var simulateTouch: js.UndefOr[Boolean] = js.undefined
   var slideActiveClass: js.UndefOr[String] = js.undefined
   var slideClass: js.UndefOr[String] = js.undefined
+  var slideDuplicateActiveClass: js.UndefOr[String] = js.undefined
   var slideDuplicateClass: js.UndefOr[String] = js.undefined
-  var slideDuplicatedActiveClass: js.UndefOr[String] = js.undefined
-  var slideDuplicatedNextClass: js.UndefOr[String] = js.undefined
-  var slideDuplicatedPrevClass: js.UndefOr[String] = js.undefined
+  var slideDuplicateNextClass: js.UndefOr[String] = js.undefined
+  var slideDuplicatePrevClass: js.UndefOr[String] = js.undefined
   var slideNextClass: js.UndefOr[String] = js.undefined
   var slidePrevClass: js.UndefOr[String] = js.undefined
   var slideToClickedSlide: js.UndefOr[Boolean] = js.undefined
@@ -399,10 +399,10 @@ object SwiperOptions {
     simulateTouch: js.UndefOr[Boolean] = js.undefined,
     slideActiveClass: String = null,
     slideClass: String = null,
+    slideDuplicateActiveClass: String = null,
     slideDuplicateClass: String = null,
-    slideDuplicatedActiveClass: String = null,
-    slideDuplicatedNextClass: String = null,
-    slideDuplicatedPrevClass: String = null,
+    slideDuplicateNextClass: String = null,
+    slideDuplicatePrevClass: String = null,
     slideNextClass: String = null,
     slidePrevClass: String = null,
     slideToClickedSlide: js.UndefOr[Boolean] = js.undefined,
@@ -507,10 +507,10 @@ object SwiperOptions {
     if (!js.isUndefined(simulateTouch)) __obj.updateDynamic("simulateTouch")(simulateTouch)
     if (slideActiveClass != null) __obj.updateDynamic("slideActiveClass")(slideActiveClass)
     if (slideClass != null) __obj.updateDynamic("slideClass")(slideClass)
+    if (slideDuplicateActiveClass != null) __obj.updateDynamic("slideDuplicateActiveClass")(slideDuplicateActiveClass)
     if (slideDuplicateClass != null) __obj.updateDynamic("slideDuplicateClass")(slideDuplicateClass)
-    if (slideDuplicatedActiveClass != null) __obj.updateDynamic("slideDuplicatedActiveClass")(slideDuplicatedActiveClass)
-    if (slideDuplicatedNextClass != null) __obj.updateDynamic("slideDuplicatedNextClass")(slideDuplicatedNextClass)
-    if (slideDuplicatedPrevClass != null) __obj.updateDynamic("slideDuplicatedPrevClass")(slideDuplicatedPrevClass)
+    if (slideDuplicateNextClass != null) __obj.updateDynamic("slideDuplicateNextClass")(slideDuplicateNextClass)
+    if (slideDuplicatePrevClass != null) __obj.updateDynamic("slideDuplicatePrevClass")(slideDuplicatePrevClass)
     if (slideNextClass != null) __obj.updateDynamic("slideNextClass")(slideNextClass)
     if (slidePrevClass != null) __obj.updateDynamic("slidePrevClass")(slidePrevClass)
     if (!js.isUndefined(slideToClickedSlide)) __obj.updateDynamic("slideToClickedSlide")(slideToClickedSlide)

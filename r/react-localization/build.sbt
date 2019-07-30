@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-localization"
-version := "1.0.14-e613bc"
+version := "1.0.15-4fd688"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

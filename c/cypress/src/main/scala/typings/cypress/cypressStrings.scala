@@ -9,11 +9,16 @@ import typings.cypress.CypressNs.ViewportPreset
 import typings.cypress.JQueryNs.AjaxNs.ErrorTextStatus
 import typings.cypress.JQueryNs.AjaxNs.SuccessTextStatus
 import typings.cypress.JQueryNs._Duration
+import typings.cypress.MochaNs.Interface
+import typings.cypress.MochaNs.Reporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object cypressStrings {
+  @js.native
+  sealed trait Base extends Reporter
+  
   @js.native
   sealed trait Canary extends js.Object
   
@@ -30,6 +35,9 @@ object cypressStrings {
   sealed trait Date extends js.Object
   
   @js.native
+  sealed trait Dot extends Reporter
+  
+  @js.native
   sealed trait Electron extends js.Object
   
   @js.native
@@ -39,13 +47,49 @@ object cypressStrings {
   sealed trait GET extends js.Object
   
   @js.native
+  sealed trait HTML extends Reporter
+  
+  @js.native
+  sealed trait JSON extends Reporter
+  
+  @js.native
+  sealed trait JSONStream extends Reporter
+  
+  @js.native
+  sealed trait Landing extends Reporter
+  
+  @js.native
+  sealed trait List extends Reporter
+  
+  @js.native
+  sealed trait Markdown extends Reporter
+  
+  @js.native
+  sealed trait Min extends Reporter
+  
+  @js.native
+  sealed trait Nyan extends Reporter
+  
+  @js.native
   sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait Progress extends Reporter
   
   @js.native
   sealed trait ResolvableProps extends js.Object
   
   @js.native
   sealed trait SinonStubbedInstance extends js.Object
+  
+  @js.native
+  sealed trait Spec extends Reporter
+  
+  @js.native
+  sealed trait TAP extends Reporter
+  
+  @js.native
+  sealed trait XUnit extends Reporter
   
   @js.native
   sealed trait a extends js.Object
@@ -61,6 +105,9 @@ object cypressStrings {
   
   @js.native
   sealed trait after extends js.Object
+  
+  @js.native
+  sealed trait afterAll extends js.Object
   
   @js.native
   sealed trait afterEach extends js.Object
@@ -114,7 +161,7 @@ object cypressStrings {
   sealed trait back extends HistoryDirection
   
   @js.native
-  sealed trait base extends js.Object
+  sealed trait base extends Reporter
   
   @js.native
   sealed trait base64 extends Encodings
@@ -124,6 +171,9 @@ object cypressStrings {
   
   @js.native
   sealed trait basefont extends js.Object
+  
+  @js.native
+  sealed trait bdd extends Interface
   
   @js.native
   sealed trait bdi extends js.Object
@@ -253,6 +303,9 @@ object cypressStrings {
   
   @js.native
   sealed trait before extends js.Object
+  
+  @js.native
+  sealed trait beforeAll extends js.Object
   
   @js.native
   sealed trait beforeEach extends js.Object
@@ -432,6 +485,9 @@ object cypressStrings {
   sealed trait document extends PrevSubject
   
   @js.native
+  sealed trait dot extends Reporter
+  
+  @js.native
   sealed trait drag extends js.Object
   
   @js.native
@@ -477,6 +533,9 @@ object cypressStrings {
   sealed trait emptied extends js.Object
   
   @js.native
+  sealed trait end extends js.Object
+  
+  @js.native
   sealed trait ended extends js.Object
   
   @js.native
@@ -499,6 +558,9 @@ object cypressStrings {
   
   @js.native
   sealed trait exist extends js.Object
+  
+  @js.native
+  sealed trait exports extends Interface
   
   @js.native
   sealed trait fail extends js.Object
@@ -681,10 +743,16 @@ object cypressStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
+  sealed trait hook extends js.Object
+  
+  @js.native
+  sealed trait `hook end` extends js.Object
+  
+  @js.native
   sealed trait hr extends js.Object
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html extends Reporter
   
   @js.native
   sealed trait i extends js.Object
@@ -702,7 +770,16 @@ object cypressStrings {
   sealed trait include extends js.Object
   
   @js.native
+  sealed trait includeDOThtml extends js.Object
+  
+  @js.native
   sealed trait includeDOTmembers extends js.Object
+  
+  @js.native
+  sealed trait includeDOTtext extends js.Object
+  
+  @js.native
+  sealed trait includeDOTvalue extends js.Object
   
   @js.native
   sealed trait increase extends js.Object
@@ -741,7 +818,10 @@ object cypressStrings {
   sealed trait `iphone-6+` extends ViewportPreset
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json extends Reporter
+  
+  @js.native
+  sealed trait `json-stream` extends Reporter
   
   @js.native
   sealed trait jsonp extends js.Object
@@ -760,6 +840,9 @@ object cypressStrings {
   
   @js.native
   sealed trait label extends js.Object
+  
+  @js.native
+  sealed trait landing extends Reporter
   
   @js.native
   sealed trait landscape extends ViewportOrientation
@@ -781,6 +864,9 @@ object cypressStrings {
   
   @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait list extends Reporter
   
   @js.native
   sealed trait load extends js.Object
@@ -825,10 +911,16 @@ object cypressStrings {
   sealed trait mark extends js.Object
   
   @js.native
+  sealed trait markdown extends Reporter
+  
+  @js.native
   sealed trait marquee extends js.Object
   
   @js.native
   sealed trait `match` extends js.Object
+  
+  @js.native
+  sealed trait medium extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -841,6 +933,9 @@ object cypressStrings {
   
   @js.native
   sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait min extends Reporter
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -1119,7 +1214,16 @@ object cypressStrings {
   sealed trait notDOTinclude extends js.Object
   
   @js.native
+  sealed trait notDOTincludeDOThtml extends js.Object
+  
+  @js.native
   sealed trait notDOTincludeDOTmembers extends js.Object
+  
+  @js.native
+  sealed trait notDOTincludeDOTtext extends js.Object
+  
+  @js.native
+  sealed trait notDOTincludeDOTvalue extends js.Object
   
   @js.native
   sealed trait notDOTincrease extends js.Object
@@ -1147,6 +1251,9 @@ object cypressStrings {
   
   @js.native
   sealed trait number extends js.Object
+  
+  @js.native
+  sealed trait nyan extends Reporter
   
   @js.native
   sealed trait `object` extends js.Object
@@ -1177,6 +1284,9 @@ object cypressStrings {
   
   @js.native
   sealed trait parsererror extends ErrorTextStatus
+  
+  @js.native
+  sealed trait pass extends js.Object
   
   @js.native
   sealed trait passed extends js.Object
@@ -1239,13 +1349,22 @@ object cypressStrings {
   sealed trait portrait extends ViewportOrientation
   
   @js.native
+  sealed trait `post-require` extends js.Object
+  
+  @js.native
   sealed trait pre extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait `pre-require` extends js.Object
+  
+  @js.native
+  sealed trait progress extends Reporter
   
   @js.native
   sealed trait q extends js.Object
+  
+  @js.native
+  sealed trait qunit extends Interface
   
   @js.native
   sealed trait ratechange extends js.Object
@@ -1264,6 +1383,9 @@ object cypressStrings {
   
   @js.native
   sealed trait requestTimeout extends js.Object
+  
+  @js.native
+  sealed trait require extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -1294,6 +1416,9 @@ object cypressStrings {
   
   @js.native
   sealed trait ruby extends js.Object
+  
+  @js.native
+  sealed trait run extends js.Object
   
   @js.native
   sealed trait runner extends js.Object
@@ -1362,7 +1487,13 @@ object cypressStrings {
   sealed trait span extends js.Object
   
   @js.native
+  sealed trait spec extends Reporter
+  
+  @js.native
   sealed trait stalled extends js.Object
+  
+  @js.native
+  sealed trait start extends js.Object
   
   @js.native
   sealed trait string extends js.Object
@@ -1381,6 +1512,12 @@ object cypressStrings {
   
   @js.native
   sealed trait success extends SuccessTextStatus
+  
+  @js.native
+  sealed trait suite extends js.Object
+  
+  @js.native
+  sealed trait `suite end` extends js.Object
   
   @js.native
   sealed trait summary extends js.Object
@@ -1404,13 +1541,25 @@ object cypressStrings {
   sealed trait table extends js.Object
   
   @js.native
+  sealed trait tap extends Reporter
+  
+  @js.native
   sealed trait tbody extends js.Object
   
   @js.native
   sealed trait td extends js.Object
   
   @js.native
+  sealed trait tdd extends Interface
+  
+  @js.native
   sealed trait template extends js.Object
+  
+  @js.native
+  sealed trait test extends js.Object
+  
+  @js.native
+  sealed trait `test end` extends js.Object
   
   @js.native
   sealed trait `test:after:run` extends js.Object
@@ -1601,6 +1750,11 @@ object cypressStrings {
   @js.native
   sealed trait xml extends js.Object
   
+  @js.native
+  sealed trait xunit extends Reporter
+  
+  @scala.inline
+  def Base: Base = "Base".asInstanceOf[Base]
   @scala.inline
   def Canary: Canary = "Canary".asInstanceOf[Canary]
   @scala.inline
@@ -1612,17 +1766,43 @@ object cypressStrings {
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
   @scala.inline
+  def Dot: Dot = "Dot".asInstanceOf[Dot]
+  @scala.inline
   def Electron: Electron = "Electron".asInstanceOf[Electron]
   @scala.inline
   def FireFox: FireFox = "FireFox".asInstanceOf[FireFox]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
+  def HTML: HTML = "HTML".asInstanceOf[HTML]
+  @scala.inline
+  def JSON: JSON = "JSON".asInstanceOf[JSON]
+  @scala.inline
+  def JSONStream: JSONStream = "JSONStream".asInstanceOf[JSONStream]
+  @scala.inline
+  def Landing: Landing = "Landing".asInstanceOf[Landing]
+  @scala.inline
+  def List: List = "List".asInstanceOf[List]
+  @scala.inline
+  def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
+  @scala.inline
+  def Min: Min = "Min".asInstanceOf[Min]
+  @scala.inline
+  def Nyan: Nyan = "Nyan".asInstanceOf[Nyan]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def Progress: Progress = "Progress".asInstanceOf[Progress]
   @scala.inline
   def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
   @scala.inline
   def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
+  @scala.inline
+  def Spec: Spec = "Spec".asInstanceOf[Spec]
+  @scala.inline
+  def TAP: TAP = "TAP".asInstanceOf[TAP]
+  @scala.inline
+  def XUnit: XUnit = "XUnit".asInstanceOf[XUnit]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -1633,6 +1813,8 @@ object cypressStrings {
   def address: address = "address".asInstanceOf[address]
   @scala.inline
   def after: after = "after".asInstanceOf[after]
+  @scala.inline
+  def afterAll: afterAll = "afterAll".asInstanceOf[afterAll]
   @scala.inline
   def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   @scala.inline
@@ -1675,6 +1857,8 @@ object cypressStrings {
   def baseUrl: baseUrl = "baseUrl".asInstanceOf[baseUrl]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdd: bdd = "bdd".asInstanceOf[bdd]
   @scala.inline
   def bdi: bdi = "bdi".asInstanceOf[bdi]
   @scala.inline
@@ -1761,6 +1945,8 @@ object cypressStrings {
   def beDOTwithin: beDOTwithin = "be.within".asInstanceOf[beDOTwithin]
   @scala.inline
   def before: before = "before".asInstanceOf[before]
+  @scala.inline
+  def beforeAll: beforeAll = "beforeAll".asInstanceOf[beforeAll]
   @scala.inline
   def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   @scala.inline
@@ -1880,6 +2066,8 @@ object cypressStrings {
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   @scala.inline
+  def dot: dot = "dot".asInstanceOf[dot]
+  @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline
   def dragend: dragend = "dragend".asInstanceOf[dragend]
@@ -1910,6 +2098,8 @@ object cypressStrings {
   @scala.inline
   def emptied: emptied = "emptied".asInstanceOf[emptied]
   @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
   @scala.inline
   def env: env = "env".asInstanceOf[env]
@@ -1925,6 +2115,8 @@ object cypressStrings {
   def execTimeout: execTimeout = "execTimeout".asInstanceOf[execTimeout]
   @scala.inline
   def exist: exist = "exist".asInstanceOf[exist]
+  @scala.inline
+  def exports: exports = "exports".asInstanceOf[exports]
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
@@ -2046,6 +2238,10 @@ object cypressStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
+  def hook: hook = "hook".asInstanceOf[hook]
+  @scala.inline
+  def `hook end`: `hook end` = "hook end".asInstanceOf[`hook end`]
+  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -2060,7 +2256,13 @@ object cypressStrings {
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   @scala.inline
+  def includeDOThtml: includeDOThtml = "include.html".asInstanceOf[includeDOThtml]
+  @scala.inline
   def includeDOTmembers: includeDOTmembers = "include.members".asInstanceOf[includeDOTmembers]
+  @scala.inline
+  def includeDOTtext: includeDOTtext = "include.text".asInstanceOf[includeDOTtext]
+  @scala.inline
+  def includeDOTvalue: includeDOTvalue = "include.value".asInstanceOf[includeDOTvalue]
   @scala.inline
   def increase: increase = "increase".asInstanceOf[increase]
   @scala.inline
@@ -2088,6 +2290,8 @@ object cypressStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def `json-stream`: `json-stream` = "json-stream".asInstanceOf[`json-stream`]
+  @scala.inline
   def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
@@ -2099,6 +2303,8 @@ object cypressStrings {
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
+  def landing: landing = "landing".asInstanceOf[landing]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
@@ -2113,6 +2319,8 @@ object cypressStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
@@ -2142,9 +2350,13 @@ object cypressStrings {
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
   @scala.inline
+  def markdown: markdown = "markdown".asInstanceOf[markdown]
+  @scala.inline
   def marquee: marquee = "marquee".asInstanceOf[marquee]
   @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -2153,6 +2365,8 @@ object cypressStrings {
   def meta: meta = "meta".asInstanceOf[meta]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
@@ -2338,7 +2552,13 @@ object cypressStrings {
   @scala.inline
   def notDOTinclude: notDOTinclude = "not.include".asInstanceOf[notDOTinclude]
   @scala.inline
+  def notDOTincludeDOThtml: notDOTincludeDOThtml = "not.include.html".asInstanceOf[notDOTincludeDOThtml]
+  @scala.inline
   def notDOTincludeDOTmembers: notDOTincludeDOTmembers = "not.include.members".asInstanceOf[notDOTincludeDOTmembers]
+  @scala.inline
+  def notDOTincludeDOTtext: notDOTincludeDOTtext = "not.include.text".asInstanceOf[notDOTincludeDOTtext]
+  @scala.inline
+  def notDOTincludeDOTvalue: notDOTincludeDOTvalue = "not.include.value".asInstanceOf[notDOTincludeDOTvalue]
   @scala.inline
   def notDOTincrease: notDOTincrease = "not.increase".asInstanceOf[notDOTincrease]
   @scala.inline
@@ -2357,6 +2577,8 @@ object cypressStrings {
   def numTestsKeptInMemory: numTestsKeptInMemory = "numTestsKeptInMemory".asInstanceOf[numTestsKeptInMemory]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def nyan: nyan = "nyan".asInstanceOf[nyan]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
@@ -2377,6 +2599,8 @@ object cypressStrings {
   def param: param = "param".asInstanceOf[param]
   @scala.inline
   def parsererror: parsererror = "parsererror".asInstanceOf[parsererror]
+  @scala.inline
+  def pass: pass = "pass".asInstanceOf[pass]
   @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
   @scala.inline
@@ -2418,11 +2642,17 @@ object cypressStrings {
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline
+  def `post-require`: `post-require` = "post-require".asInstanceOf[`post-require`]
+  @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
+  @scala.inline
+  def `pre-require`: `pre-require` = "pre-require".asInstanceOf[`pre-require`]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
+  @scala.inline
+  def qunit: qunit = "qunit".asInstanceOf[qunit]
   @scala.inline
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   @scala.inline
@@ -2435,6 +2665,8 @@ object cypressStrings {
   def reporter: reporter = "reporter".asInstanceOf[reporter]
   @scala.inline
   def requestTimeout: requestTimeout = "requestTimeout".asInstanceOf[requestTimeout]
+  @scala.inline
+  def require: require = "require".asInstanceOf[require]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -2455,6 +2687,8 @@ object cypressStrings {
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
+  @scala.inline
+  def run: run = "run".asInstanceOf[run]
   @scala.inline
   def runner: runner = "runner".asInstanceOf[runner]
   @scala.inline
@@ -2500,7 +2734,11 @@ object cypressStrings {
   @scala.inline
   def span: span = "span".asInstanceOf[span]
   @scala.inline
+  def spec: spec = "spec".asInstanceOf[spec]
+  @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
@@ -2513,6 +2751,10 @@ object cypressStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
+  def suite: suite = "suite".asInstanceOf[suite]
+  @scala.inline
+  def `suite end`: `suite end` = "suite end".asInstanceOf[`suite end`]
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
@@ -2528,11 +2770,19 @@ object cypressStrings {
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline
+  def tap: tap = "tap".asInstanceOf[tap]
+  @scala.inline
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
+  def tdd: tdd = "tdd".asInstanceOf[tdd]
+  @scala.inline
   def template: template = "template".asInstanceOf[template]
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  @scala.inline
+  def `test end`: `test end` = "test end".asInstanceOf[`test end`]
   @scala.inline
   def `test:after:run`: `test:after:run` = "test:after:run".asInstanceOf[`test:after:run`]
   @scala.inline
@@ -2659,5 +2909,7 @@ object cypressStrings {
   def withArgs: withArgs = "withArgs".asInstanceOf[withArgs]
   @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
+  @scala.inline
+  def xunit: xunit = "xunit".asInstanceOf[xunit]
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mathjs.mathjsStrings.all
   - typings.mathjs.mathjsStrings.e
   - typings.mathjs.mathjsStrings.pi
   - typings.mathjs.mathjsStrings.i

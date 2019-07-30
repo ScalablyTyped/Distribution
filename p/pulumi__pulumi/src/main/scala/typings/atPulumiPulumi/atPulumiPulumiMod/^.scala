@@ -3,6 +3,9 @@ package typings.atPulumiPulumi.atPulumiPulumiMod
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.OutputConstructor
 import typings.atPulumiPulumi.outputMod.Unwrap
+import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions
+import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
+import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import typings.atPulumiPulumi.resourceMod.URN
 import typings.std.Record
 import typings.std.TemplateStringsArray
@@ -97,6 +100,20 @@ object ^ extends js.Object {
   def getProject(): String = js.native
   def getStack(): String = js.native
   def interpolate(literals: TemplateStringsArray, placeholders: Input[_]*): typings.atPulumiPulumi.outputMod.Output[String] = js.native
+  def mergeOptions(): CustomResourceOptions = js.native
+  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: ComponentResourceOptions): ComponentResourceOptions = js.native
+  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: CustomResourceOptions): CustomResourceOptions = js.native
+  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: ResourceOptions): ResourceOptions = js.native
+  def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = js.native
+  def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = js.native
+  def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = js.native
+  def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = js.native
+  def mergeOptions(opts1: ResourceOptions): ResourceOptions = js.native
+  def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = js.native
+  @JSName("mergeOptions")
+  def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = js.native
+  @JSName("mergeOptions")
+  def mergeOptions_ResourceOptions(): ResourceOptions = js.native
   def output[T](): typings.atPulumiPulumi.outputMod.Output[Unwrap[js.UndefOr[T]]] = js.native
   def output[T](`val`: Input[T]): typings.atPulumiPulumi.outputMod.Output[Unwrap[T]] = js.native
   def secret[T](): typings.atPulumiPulumi.outputMod.Output[Unwrap[js.UndefOr[T]]] = js.native

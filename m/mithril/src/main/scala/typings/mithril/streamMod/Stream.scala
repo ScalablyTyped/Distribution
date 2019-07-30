@@ -22,9 +22,13 @@ trait Stream[T] extends js.Object {
   /** A co-dependent stream that unregisters dependent streams when set to true. */
   def end(value: Boolean): this.type = js.native
   /** Creates a dependent stream whose value is set to the result of the callback function. */
-  def map[U](f: js.Function1[/* current */ T, U]): Stream[U] = js.native
+  def map[U](
+    f: js.Function1[
+      /* current */ T, 
+      U | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stream.SKIP */ _)
+    ]
+  ): Stream[U] = js.native
   /** This method is functionally identical to stream. It exists to conform to Fantasy Land's Applicative specification. */
-  def of(): Stream[T] = js.native
   def of(`val`: T): Stream[T] = js.native
   /** When a stream is passed as the argument to JSON.stringify(), the value of the stream is serialized. */
   def toJSON(): String = js.native

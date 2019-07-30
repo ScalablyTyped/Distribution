@@ -245,6 +245,7 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SizeMode
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.Snippet
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetCall
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetCallWidget
+import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetType
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SortDirection
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SortableEntityPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SplitPane
@@ -275,13 +276,6 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.VerticalSplitPane
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.Widget
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.WidgetValidation
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.ActionValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.DynamicTextValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.NestedWidgetValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.TemplatedWidgetValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.Document
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IFolderBase
@@ -635,7 +629,6 @@ object pagesNs extends js.Object {
     ) = this()
     val containerAsActionButton: ActionButton = js.native
     val containerAsActionItem: ActionItem = js.native
-    val containerAsActionValue: ActionValue = js.native
     val containerAsAssociationWidget: AssociationWidget = js.native
     val containerAsAttributeWidget: AttributeWidget = js.native
     val containerAsBottomBarItem: BottomBarItem = js.native
@@ -663,8 +656,8 @@ object pagesNs extends js.Object {
     ) = this()
     val containerAsButton: Button = js.native
     val containerAsControlBarButton: ControlBarButton = js.native
+    val containerAsDataGrid: DataGrid = js.native
     val containerAsDynamicText: DynamicText = js.native
-    val containerAsDynamicTextValue: DynamicTextValue = js.native
     val containerAsGroupBox: GroupBox = js.native
     val containerAsInputWidget: InputWidget = js.native
     val containerAsWidgetObject: WidgetObject = js.native
@@ -962,6 +955,10 @@ object pagesNs extends js.Object {
       unit: ModelUnit,
       container: AbstractElement
     ) = this()
+    /**
+      * In version 8.0.0: introduced
+      */
+    var caption: ClientTemplate = js.native
   }
   
   /**
@@ -2182,7 +2179,6 @@ object pagesNs extends js.Object {
     val containerAsButton: Button = js.native
     val containerAsControlBarButton: ControlBarButton = js.native
     val containerAsMenuItem: MenuItem = js.native
-    val containerAsWebIconValue: WebIconValue = js.native
     val containerAsWidgetValue: WidgetValue = js.native
     @JSName("model")
     var model_Icon: IModel = js.native
@@ -4186,6 +4182,10 @@ object pagesNs extends js.Object {
     var entity: IEntity | Null = js.native
     val entityQualifiedName: Null | String = js.native
     /**
+      * In version 8.0.0: introduced
+      */
+    var `type`: SnippetType = js.native
+    /**
       * In version 7.15.0: deleted
       */
     var widget: Widget | Null = js.native
@@ -4227,6 +4227,9 @@ object pagesNs extends js.Object {
     ) = this()
     var snippetCall: SnippetCall = js.native
   }
+  
+  @js.native
+  class SnippetType () extends AbstractEnum
   
   @js.native
   class SortDirection () extends AbstractEnum
@@ -4764,8 +4767,6 @@ object pagesNs extends js.Object {
     val containerAsNativeLayoutCallArgument: NativeLayoutCallArgument = js.native
     val containerAsNativeLayoutContent: NativeLayoutContent = js.native
     val containerAsNavigationListItem: NavigationListItem = js.native
-    val containerAsNestedWidgetValue: NestedWidgetValue = js.native
-    val containerAsPluginWidget: PluginWidget = js.native
     val containerAsReportPane: ReportPane = js.native
     val containerAsScrollContainerRegion: ScrollContainerRegion = js.native
     val containerAsSnippet: Snippet = js.native
@@ -4773,7 +4774,6 @@ object pagesNs extends js.Object {
     val containerAsTabPage: TabPage = js.native
     val containerAsTableCell: TableCell = js.native
     val containerAsTemplateGridContents: TemplateGridContents = js.native
-    val containerAsTemplatedWidgetValue: TemplatedWidgetValue = js.native
     val containerAsVerticalFlow: VerticalFlow = js.native
     val containerAsWebLayoutContent: WebLayoutContent = js.native
     @JSName("model")
@@ -4799,7 +4799,6 @@ object pagesNs extends js.Object {
       unit: ModelUnit,
       container: AbstractElement
     ) = this()
-    val containerAsAttributeValue: AttributeValue = js.native
     val containerAsAttributeWidget: AttributeWidget = js.native
     val containerAsReferenceSelector: ReferenceSelector = js.native
     /**
@@ -5731,15 +5730,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): CallNanoflowClientAction = js.native
     /**
       * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
-      * The new CallNanoflowClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.8.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): CallNanoflowClientAction = js.native
-    /**
-      * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
       * The new CallNanoflowClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -6097,15 +6087,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: ActionItem): CancelChangesClientAction = js.native
-    /**
-      * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
-      * The new CancelChangesClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): CancelChangesClientAction = js.native
     /**
       * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
       * The new CancelChangesClientAction will be automatically stored in the 'onChangeAction' property
@@ -6718,19 +6699,19 @@ object pagesNs extends js.Object {
     def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = js.native
     /**
       * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+      * The new ClientTemplate will be automatically stored in the 'caption' property
+      * of the parent DataGrid element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = js.native
+    /**
+      * Creates and returns a new ClientTemplate instance in the SDK and on the server.
       * The new ClientTemplate will be automatically stored in the 'content' property
       * of the parent DynamicText element passed as argument.
       */
     def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = js.native
-    /**
-      * Creates and returns a new ClientTemplate instance in the SDK and on the server.
-      * The new ClientTemplate will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.DynamicTextValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.1.0 to 7.18.0
-      */
-    def createInDynamicTextValueUnderValue(container: DynamicTextValue): ClientTemplate = js.native
     /**
       * Creates and returns a new ClientTemplate instance in the SDK and on the server.
       * The new ClientTemplate will be automatically stored in the 'caption' property
@@ -6814,15 +6795,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: ActionItem): ClosePageClientAction = js.native
-    /**
-      * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
-      * The new ClosePageClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): ClosePageClientAction = js.native
     /**
       * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
       * The new ClosePageClientAction will be automatically stored in the 'onChangeAction' property
@@ -7166,15 +7138,6 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInActionItemUnderAction(container: ActionItem): CreateObjectClientAction = js.native
-    /**
-      * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
-      * The new CreateObjectClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.17.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): CreateObjectClientAction = js.native
     /**
       * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
       * The new CreateObjectClientAction will be automatically stored in the 'onChangeAction' property
@@ -8977,15 +8940,6 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInActionItemUnderAction(container: ActionItem): DeleteClientAction = js.native
-    /**
-      * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
-      * The new DeleteClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.17.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): DeleteClientAction = js.native
     /**
       * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
       * The new DeleteClientAction will be automatically stored in the 'onChangeAction' property
@@ -12054,15 +12008,6 @@ object pagesNs extends js.Object {
     def createInMenuItemUnderIcon(container: MenuItem): GlyphIcon = js.native
     /**
       * Creates and returns a new GlyphIcon instance in the SDK and on the server.
-      * The new GlyphIcon will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebIconValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebIconValueUnderValue(container: WebIconValue): GlyphIcon = js.native
-    /**
-      * Creates and returns a new GlyphIcon instance in the SDK and on the server.
       * The new GlyphIcon will be automatically stored in the 'icon' property
       * of the parent customwidgets.WidgetValue element passed as argument.
       *
@@ -13792,15 +13737,6 @@ object pagesNs extends js.Object {
       * of the parent menus.MenuItem element passed as argument.
       */
     def createInMenuItemUnderIcon(container: MenuItem): ImageIcon = js.native
-    /**
-      * Creates and returns a new ImageIcon instance in the SDK and on the server.
-      * The new ImageIcon will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebIconValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebIconValueUnderValue(container: WebIconValue): ImageIcon = js.native
     /**
       * Creates and returns a new ImageIcon instance in the SDK and on the server.
       * The new ImageIcon will be automatically stored in the 'icon' property
@@ -18490,15 +18426,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): MicroflowClientAction = js.native
     /**
       * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
-      * The new MicroflowClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): MicroflowClientAction = js.native
-    /**
-      * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
       * The new MicroflowClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -20222,15 +20149,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): NoClientAction = js.native
     /**
       * Creates and returns a new NoClientAction instance in the SDK and on the server.
-      * The new NoClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): NoClientAction = js.native
-    /**
-      * Creates and returns a new NoClientAction instance in the SDK and on the server.
       * The new NoClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -20475,15 +20393,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): OpenLinkClientAction = js.native
     /**
       * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
-      * The new OpenLinkClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): OpenLinkClientAction = js.native
-    /**
-      * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
       * The new OpenLinkClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -20636,15 +20545,6 @@ object pagesNs extends js.Object {
       * of the parent ActionItem element passed as argument.
       */
     def createInActionItemUnderAction(container: ActionItem): PageClientAction = js.native
-    /**
-      * Creates and returns a new PageClientAction instance in the SDK and on the server.
-      * The new PageClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): PageClientAction = js.native
     /**
       * Creates and returns a new PageClientAction instance in the SDK and on the server.
       * The new PageClientAction will be automatically stored in the 'onChangeAction' property
@@ -23500,15 +23400,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): SaveChangesClientAction = js.native
     /**
       * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
-      * The new SaveChangesClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): SaveChangesClientAction = js.native
-    /**
-      * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
       * The new SaveChangesClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -24792,15 +24683,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: ActionItem): SignOutClientAction = js.native
     /**
       * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
-      * The new SignOutClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): SignOutClientAction = js.native
-    /**
-      * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
       * The new SignOutClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -25881,6 +25763,13 @@ object pagesNs extends js.Object {
   
   /* static members */
   @js.native
+  object SnippetType extends js.Object {
+    var Native: SnippetType = js.native
+    var Web: SnippetType = js.native
+  }
+  
+  /* static members */
+  @js.native
   object SortDirection extends js.Object {
     var Ascending: SortDirection = js.native
     var Descending: SortDirection = js.native
@@ -26625,15 +26514,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: ActionItem): SyncClientAction = js.native
-    /**
-      * Creates and returns a new SyncClientAction instance in the SDK and on the server.
-      * The new SyncClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): SyncClientAction = js.native
     /**
       * Creates and returns a new SyncClientAction instance in the SDK and on the server.
       * The new SyncClientAction will be automatically stored in the 'onChangeAction' property
@@ -30765,15 +30645,6 @@ object pagesNs extends js.Object {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     def create(model: IModel): WidgetValidation = js.native
-    /**
-      * Creates and returns a new WidgetValidation instance in the SDK and on the server.
-      * The new WidgetValidation will be automatically stored in the 'validations' property
-      * of the parent pluginwidgets.AttributeValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.7.0 to 7.18.0
-      */
-    def createInAttributeValueUnderValidations(container: AttributeValue): WidgetValidation = js.native
     /**
       * Creates and returns a new WidgetValidation instance in the SDK and on the server.
       * The new WidgetValidation will be automatically stored in the 'validation' property

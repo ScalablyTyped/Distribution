@@ -5,32 +5,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WalkContext extends js.Object {
-  var atrule: Atrule
-  var atrulePrelude: AtrulePrelude
-  var block: Block
-  var declaration: Declaration
-  var function: FunctionNode | PseudoClassSelector | PseudoElementSelector
+  var atrule: Atrule | Null
+  var atrulePrelude: AtrulePrelude | Null
+  var block: Block | Null
+  var declaration: Declaration | Null
+  var function: FunctionNode | PseudoClassSelector | PseudoElementSelector | Null
   var root: CssNode
-  var rule: Rule
-  var selector: SelectorList
-  var stylesheet: StyleSheet
+  var rule: Rule | Null
+  var selector: SelectorList | Null
+  var stylesheet: StyleSheet | Null
 }
 
 object WalkContext {
   @scala.inline
   def apply(
-    atrule: Atrule,
-    atrulePrelude: AtrulePrelude,
-    block: Block,
-    declaration: Declaration,
-    function: FunctionNode | PseudoClassSelector | PseudoElementSelector,
     root: CssNode,
-    rule: Rule,
-    selector: SelectorList,
-    stylesheet: StyleSheet
+    atrule: Atrule = null,
+    atrulePrelude: AtrulePrelude = null,
+    block: Block = null,
+    declaration: Declaration = null,
+    function: FunctionNode | PseudoClassSelector | PseudoElementSelector = null,
+    rule: Rule = null,
+    selector: SelectorList = null,
+    stylesheet: StyleSheet = null
   ): WalkContext = {
-    val __obj = js.Dynamic.literal(atrule = atrule, atrulePrelude = atrulePrelude, block = block, declaration = declaration, function = function.asInstanceOf[js.Any], root = root, rule = rule, selector = selector, stylesheet = stylesheet)
-  
+    val __obj = js.Dynamic.literal(root = root)
+    if (atrule != null) __obj.updateDynamic("atrule")(atrule)
+    if (atrulePrelude != null) __obj.updateDynamic("atrulePrelude")(atrulePrelude)
+    if (block != null) __obj.updateDynamic("block")(block)
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
     __obj.asInstanceOf[WalkContext]
   }
 }

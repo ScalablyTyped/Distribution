@@ -84,7 +84,10 @@ import typings.cypress.cypressStrings.haveDOTtext
 import typings.cypress.cypressStrings.haveDOTthrown
 import typings.cypress.cypressStrings.haveDOTvalue
 import typings.cypress.cypressStrings.include
+import typings.cypress.cypressStrings.includeDOThtml
 import typings.cypress.cypressStrings.includeDOTmembers
+import typings.cypress.cypressStrings.includeDOTtext
+import typings.cypress.cypressStrings.includeDOTvalue
 import typings.cypress.cypressStrings.increase
 import typings.cypress.cypressStrings.notDOTalwaysDOTreturned
 import typings.cypress.cypressStrings.notDOTbeDOTa
@@ -167,7 +170,10 @@ import typings.cypress.cypressStrings.notDOThaveDOTtext
 import typings.cypress.cypressStrings.notDOThaveDOTthrown
 import typings.cypress.cypressStrings.notDOThaveDOTvalue
 import typings.cypress.cypressStrings.notDOTinclude
+import typings.cypress.cypressStrings.notDOTincludeDOThtml
 import typings.cypress.cypressStrings.notDOTincludeDOTmembers
+import typings.cypress.cypressStrings.notDOTincludeDOTtext
+import typings.cypress.cypressStrings.notDOTincludeDOTvalue
 import typings.cypress.cypressStrings.notDOTincrease
 import typings.cypress.cypressStrings.notDOTmatch
 import typings.cypress.cypressStrings.notDOTrespondTo
@@ -963,6 +969,14 @@ trait Chainer[Subject] extends js.Object {
     */
   def apply(chainer: haveDOTvalue, value: String): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: includeDOThtml, value: String): Chainable[Subject] = js.native
+  /**
     * When the target is a string, `.include` asserts that the given string `val` is a substring of the target.
     * @example
     *    cy.wrap([1, 2, 3]).should('include.members', [1, 2])
@@ -970,6 +984,22 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: includeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: includeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: includeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When the target is a string, `.include` asserts that the given string `val` is a substring of the target.
     * @example
@@ -1694,6 +1724,14 @@ trait Chainer[Subject] extends js.Object {
     */
   def apply(chainer: notDOThaveDOTvalue, value: String): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: notDOTincludeDOThtml, value: String): Chainable[Subject] = js.native
+  /**
     * When the target is a string, `.include` asserts that the given string `val` is not a substring of the target.
     * @example
     *    cy.wrap([1, 2, 3]).should('not.include.members', [4, 5])
@@ -1701,6 +1739,22 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: notDOTincludeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: notDOTincludeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: notDOTincludeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When the target is a string, `.include` asserts that the given string `val` is not a substring of the target.
     * @example

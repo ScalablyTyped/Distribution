@@ -11,10 +11,6 @@ import typings.mendixmodelsdk.distGenNativepagesMod.nativepagesNs.BottomBarItem
 import typings.mendixmodelsdk.distGenNativepagesMod.nativepagesNs.NativeLayout
 import typings.mendixmodelsdk.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument
 import typings.mendixmodelsdk.distGenNavigationMod.navigationNs.NavigationProfile
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.ActionValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.DynamicTextValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IFolderBase
 import typings.mendixmodelsdk.distGenReportsMod.reportsNs.ReportPane
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -2748,6 +2744,10 @@ object pagesNs extends js.Object {
   }
   
   @js.native
+  class SnippetType ()
+    extends typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetType
+  
+  @js.native
   class SortDirection ()
     extends typings.mendixmodelsdk.distGenPagesMod.pagesNs.SortDirection
   
@@ -4066,15 +4066,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
     /**
       * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
-      * The new CallNanoflowClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.8.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
-    /**
-      * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
       * The new CallNanoflowClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -4432,15 +4423,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
-    /**
-      * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
-      * The new CancelChangesClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
     /**
       * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
       * The new CancelChangesClientAction will be automatically stored in the 'onChangeAction' property
@@ -5053,19 +5035,19 @@ object pagesNs extends js.Object {
     def createInControlBarButtonUnderCaption(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ControlBarButton): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientTemplate = js.native
     /**
       * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+      * The new ClientTemplate will be automatically stored in the 'caption' property
+      * of the parent DataGrid element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInDataGridUnderCaption(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataGrid): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientTemplate = js.native
+    /**
+      * Creates and returns a new ClientTemplate instance in the SDK and on the server.
       * The new ClientTemplate will be automatically stored in the 'content' property
       * of the parent DynamicText element passed as argument.
       */
     def createInDynamicTextUnderContent(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.DynamicText): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientTemplate = js.native
-    /**
-      * Creates and returns a new ClientTemplate instance in the SDK and on the server.
-      * The new ClientTemplate will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.DynamicTextValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.1.0 to 7.18.0
-      */
-    def createInDynamicTextValueUnderValue(container: DynamicTextValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientTemplate = js.native
     /**
       * Creates and returns a new ClientTemplate instance in the SDK and on the server.
       * The new ClientTemplate will be automatically stored in the 'caption' property
@@ -5149,15 +5131,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
-    /**
-      * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
-      * The new ClosePageClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
     /**
       * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
       * The new ClosePageClientAction will be automatically stored in the 'onChangeAction' property
@@ -5501,15 +5474,6 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
-    /**
-      * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
-      * The new CreateObjectClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.17.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
     /**
       * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
       * The new CreateObjectClientAction will be automatically stored in the 'onChangeAction' property
@@ -7312,15 +7276,6 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DeleteClientAction = js.native
-    /**
-      * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
-      * The new DeleteClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.17.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DeleteClientAction = js.native
     /**
       * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
       * The new DeleteClientAction will be automatically stored in the 'onChangeAction' property
@@ -10389,15 +10344,6 @@ object pagesNs extends js.Object {
     def createInMenuItemUnderIcon(container: MenuItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.GlyphIcon = js.native
     /**
       * Creates and returns a new GlyphIcon instance in the SDK and on the server.
-      * The new GlyphIcon will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebIconValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebIconValueUnderValue(container: WebIconValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.GlyphIcon = js.native
-    /**
-      * Creates and returns a new GlyphIcon instance in the SDK and on the server.
       * The new GlyphIcon will be automatically stored in the 'icon' property
       * of the parent customwidgets.WidgetValue element passed as argument.
       *
@@ -12127,15 +12073,6 @@ object pagesNs extends js.Object {
       * of the parent menus.MenuItem element passed as argument.
       */
     def createInMenuItemUnderIcon(container: MenuItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ImageIcon = js.native
-    /**
-      * Creates and returns a new ImageIcon instance in the SDK and on the server.
-      * The new ImageIcon will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebIconValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebIconValueUnderValue(container: WebIconValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ImageIcon = js.native
     /**
       * Creates and returns a new ImageIcon instance in the SDK and on the server.
       * The new ImageIcon will be automatically stored in the 'icon' property
@@ -16825,15 +16762,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
     /**
       * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
-      * The new MicroflowClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
-    /**
-      * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
       * The new MicroflowClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -18557,15 +18485,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NoClientAction = js.native
     /**
       * Creates and returns a new NoClientAction instance in the SDK and on the server.
-      * The new NoClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NoClientAction = js.native
-    /**
-      * Creates and returns a new NoClientAction instance in the SDK and on the server.
       * The new NoClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -18810,15 +18729,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
     /**
       * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
-      * The new OpenLinkClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
-    /**
-      * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
       * The new OpenLinkClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -18971,15 +18881,6 @@ object pagesNs extends js.Object {
       * of the parent ActionItem element passed as argument.
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.PageClientAction = js.native
-    /**
-      * Creates and returns a new PageClientAction instance in the SDK and on the server.
-      * The new PageClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.PageClientAction = js.native
     /**
       * Creates and returns a new PageClientAction instance in the SDK and on the server.
       * The new PageClientAction will be automatically stored in the 'onChangeAction' property
@@ -21835,15 +21736,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
     /**
       * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
-      * The new SaveChangesClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
-    /**
-      * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
       * The new SaveChangesClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -23127,15 +23019,6 @@ object pagesNs extends js.Object {
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SignOutClientAction = js.native
     /**
       * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
-      * The new SignOutClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SignOutClientAction = js.native
-    /**
-      * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
       * The new SignOutClientAction will be automatically stored in the 'onChangeAction' property
       * of the parent AssociationWidget element passed as argument.
       *
@@ -24216,6 +24099,13 @@ object pagesNs extends js.Object {
   
   /* static members */
   @js.native
+  object SnippetType extends js.Object {
+    var Native: typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetType = js.native
+    var Web: typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetType = js.native
+  }
+  
+  /* static members */
+  @js.native
   object SortDirection extends js.Object {
     var Ascending: typings.mendixmodelsdk.distGenPagesMod.pagesNs.SortDirection = js.native
     var Descending: typings.mendixmodelsdk.distGenPagesMod.pagesNs.SortDirection = js.native
@@ -24960,15 +24850,6 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInActionItemUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionItem): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SyncClientAction = js.native
-    /**
-      * Creates and returns a new SyncClientAction instance in the SDK and on the server.
-      * The new SyncClientAction will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.ActionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.6.0 to 7.18.0
-      */
-    def createInActionValueUnderValue(container: ActionValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SyncClientAction = js.native
     /**
       * Creates and returns a new SyncClientAction instance in the SDK and on the server.
       * The new SyncClientAction will be automatically stored in the 'onChangeAction' property
@@ -29100,15 +28981,6 @@ object pagesNs extends js.Object {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     def create(model: IModel): typings.mendixmodelsdk.distGenPagesMod.pagesNs.WidgetValidation = js.native
-    /**
-      * Creates and returns a new WidgetValidation instance in the SDK and on the server.
-      * The new WidgetValidation will be automatically stored in the 'validations' property
-      * of the parent pluginwidgets.AttributeValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.7.0 to 7.18.0
-      */
-    def createInAttributeValueUnderValidations(container: AttributeValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.WidgetValidation = js.native
     /**
       * Creates and returns a new WidgetValidation instance in the SDK and on the server.
       * The new WidgetValidation will be automatically stored in the 'validation' property

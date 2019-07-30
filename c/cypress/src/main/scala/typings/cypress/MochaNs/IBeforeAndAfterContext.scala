@@ -4,16 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated use `Mocha.Context` instead. */
+@js.native
 trait IBeforeAndAfterContext extends IHookCallbackContext {
-  var currentTest: ITest
-}
-
-object IBeforeAndAfterContext {
-  @scala.inline
-  def apply(currentTest: ITest, skip: () => IBeforeAndAfterContext, timeout: Double => IBeforeAndAfterContext): IBeforeAndAfterContext = {
-    val __obj = js.Dynamic.literal(currentTest = currentTest, skip = js.Any.fromFunction0(skip), timeout = js.Any.fromFunction1(timeout))
-  
-    __obj.asInstanceOf[IBeforeAndAfterContext]
-  }
+  /** @deprecated `.currentTest` has type `Mocha.Test` in `Mocha.Context`. */
+  var currentTest: js.UndefOr[ITest] = js.native
 }
 

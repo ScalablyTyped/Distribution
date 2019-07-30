@@ -22,7 +22,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MathJsStatic extends js.Object {
+trait MathJsStatic extends FactoryDependencies {
   var Infinity: Double = js.native
   var LN10: Double = js.native
   var LN2: Double = js.native
@@ -31,7 +31,6 @@ trait MathJsStatic extends js.Object {
   var NaN: Double = js.native
   var SQRT1_2: Double = js.native
   var SQRT2: Double = js.native
-  var all: FactoryFunctionMap = js.native
   var e: Double = js.native
   var expression: MathNode = js.native
   var i: Double = js.native
@@ -627,7 +626,6 @@ trait MathJsStatic extends js.Object {
   def coth(x: MathArray): MathArray = js.native
   def coth(x: Matrix): Matrix = js.native
   def coth(x: Unit): Double = js.native
-  def create(factories: FactoryFunctionMap, config: ConfigOptions): MathJsStatic = js.native
   /**
     * Create a user-defined unit and register it with the Unit type.
     * @param name The name of the new unit. Must be unique. Example: ‘knot’
@@ -934,17 +932,6 @@ trait MathJsStatic extends js.Object {
   def factorial(n: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
   def factorial(n: MathArray): Double | BigNumber | MathArray | Matrix = js.native
   def factorial(n: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def factory[T](
-    name: String,
-    dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ this.type, T]
-  ): FactoryFunction[T] = js.native
-  def factory[T](
-    name: String,
-    dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ this.type, T],
-    meta: js.Any
-  ): FactoryFunction[T] = js.native
   def filter(
     x: js.Array[String] | MathArray,
     test: js.Function3[/* value */ js.Any, /* index */ js.Any, js.Array[String] | MathArray | Matrix, Boolean]

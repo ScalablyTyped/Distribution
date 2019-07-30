@@ -423,6 +423,10 @@ object javaactionsNs extends js.Object {
       * In version 6.6.0: introduced
       */
     val typeParameters: IList[ITypeParameter] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    val useLegacyCodeGeneration: Boolean = js.native
   }
   
   @js.native
@@ -618,7 +622,7 @@ object javaactionsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/java-actions relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.mendixmodelsdk.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: actionReturnType, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo */ @js.native
+  - typings.mendixmodelsdk.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: actionReturnType, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo, useLegacyCodeGeneration */ @js.native
   class JavaAction protected () extends CodeAction {
     def this(
       model: AbstractModel,
@@ -652,6 +656,10 @@ object javaactionsNs extends js.Object {
       * In version 6.6.0: introduced
       */
     val typeParameters: IList[ITypeParameter | TypeParameter] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var useLegacyCodeGeneration: Boolean = js.native
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 

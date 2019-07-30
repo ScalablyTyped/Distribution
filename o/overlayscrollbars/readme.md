@@ -1,7 +1,7 @@
 
 # Scala.js typings for overlayscrollbars
 
-Typings are for version 1.8
+Typings are for version 1.9
 
 ## Library description:
 A javascript scrollbar plugin which hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling.

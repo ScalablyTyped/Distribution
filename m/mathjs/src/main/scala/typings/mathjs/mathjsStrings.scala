@@ -31,9 +31,6 @@ object mathjsStrings {
   sealed trait SQRT2 extends MathJsFunctionName
   
   @js.native
-  sealed trait all extends MathJsFunctionName
-  
-  @js.native
   sealed trait asc extends js.Object
   
   @js.native
@@ -130,8 +127,6 @@ object mathjsStrings {
   def SQRT1_2: SQRT1_2 = "SQRT1_2".asInstanceOf[SQRT1_2]
   @scala.inline
   def SQRT2: SQRT2 = "SQRT2".asInstanceOf[SQRT2]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline

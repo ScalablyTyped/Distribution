@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-localization
 
-Typings are for version 1.0.14
+Typings are for version 1.0.15
 
 ## Library description:
 Simple module to localize the React interface using the same syntax used in the ReactNativeLocalization module, use 'npm run build' before publishing

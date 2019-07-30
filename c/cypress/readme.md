@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress
 
-Typings are for version 3.4.0
+Typings are for version 3.4.1
 
 ## Library description:
 Cypress.io end to end testing tool

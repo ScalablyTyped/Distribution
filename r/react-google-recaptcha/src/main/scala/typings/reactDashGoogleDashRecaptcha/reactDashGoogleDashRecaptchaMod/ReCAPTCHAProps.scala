@@ -12,6 +12,10 @@ trait ReCAPTCHAProps extends js.Object {
   	 */
   var badge: js.UndefOr[Badge] = js.undefined
   /**
+  	 *  Optional. Forces the widget to render in a specific language. Auto-detects the user's language if unspecified.
+  	 */
+  var hl: js.UndefOr[String] = js.undefined
+  /**
   	 *  The function to be called when the user successfully completes the normal or compat captcha.
   	 * 	It will also be called with null, when captcha expires
   	 *  @param token string or null
@@ -62,6 +66,7 @@ object ReCAPTCHAProps {
   def apply(
     sitekey: String,
     badge: Badge = null,
+    hl: String = null,
     onChange: /* token */ String | Null => Unit = null,
     onErrored: () => Unit = null,
     onExpired: () => Unit = null,
@@ -73,6 +78,7 @@ object ReCAPTCHAProps {
   ): ReCAPTCHAProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (hl != null) __obj.updateDynamic("hl")(hl)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrored != null) __obj.updateDynamic("onErrored")(js.Any.fromFunction0(onErrored))
     if (onExpired != null) __obj.updateDynamic("onExpired")(js.Any.fromFunction0(onExpired))

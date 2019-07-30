@@ -2,6 +2,7 @@ package typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesome
 
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconDefinition
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPathData
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
 import typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.icon
 import typings.std.HTMLCollection
@@ -21,7 +22,7 @@ object Icon {
   def apply(
     `abstract`: js.Array[AbstractElement],
     html: js.Array[String],
-    icon: js.Tuple5[Double, Double, js.Array[String], String, String],
+    icon: js.Tuple5[Double, Double, js.Array[String], String, IconPathData],
     iconName: IconName,
     node: HTMLCollection,
     prefix: IconPrefix,

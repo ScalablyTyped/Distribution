@@ -36,6 +36,7 @@ package object mithrilMod {
   	 * Components can be consumed via the m() utility.
   	 */
   type FactoryComponent[A] = js.Function1[/* vnode */ Vnode[A, js.Object], Component[A, js.Object]]
+  type Params = js.Object with ParamsRec
   /** This represents a key-value mapping linking routes to components. */
   type RouteDefs = /** The key represents the route. The value represents the corresponding component. */
   StringDictionary[(ComponentTypes[js.Any, js.Any]) | (RouteResolver[js.Any, js.Any])]

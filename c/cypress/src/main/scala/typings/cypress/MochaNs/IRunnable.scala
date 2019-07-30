@@ -1,32 +1,23 @@
 package typings.cypress.MochaNs
 
+import typings.cypress.NodeJSNs.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Partial interface for Mocha's `Runnable` class. */
-trait IRunnable extends js.Object {
-  var async: Boolean
-  var fn: js.Function
-  var sync: Boolean
-  var timedOut: Boolean
-  var title: String
-  def timeout(n: Double): this.type
-}
-
-object IRunnable {
-  @scala.inline
-  def apply(
-    async: Boolean,
-    fn: js.Function,
-    sync: Boolean,
-    timedOut: Boolean,
-    timeout: Double => IRunnable,
-    title: String
-  ): IRunnable = {
-    val __obj = js.Dynamic.literal(async = async, fn = fn, sync = sync, timedOut = timedOut, timeout = js.Any.fromFunction1(timeout), title = title)
-  
-    __obj.asInstanceOf[IRunnable]
-  }
+/** @deprecated use `Mocha.Runnable` instead. */
+@js.native
+trait IRunnable extends EventEmitter {
+  var async: Boolean = js.native
+  var duration: js.UndefOr[Double] = js.native
+  /** @deprecated `.fn` has type `Func | AsyncFunc` in `Mocha.Runnable`. */
+  var fn: js.UndefOr[js.Function] = js.native
+  var sync: Boolean = js.native
+  var timedOut: Boolean = js.native
+  var title: String = js.native
+  def timeout(n: String): this.type = js.native
+  /** @deprecated `.timeout()` has additional overloads in `Mocha.Runnable`. */
+  def timeout(n: Double): this.type = js.native
 }
 

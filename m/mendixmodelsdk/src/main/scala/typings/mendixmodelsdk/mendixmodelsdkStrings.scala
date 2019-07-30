@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.distSdkInternalDeltasTransactionDashManagerMod.TransactionType
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.StructureState
 import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
 import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
@@ -132,6 +133,9 @@ object mendixmodelsdkStrings {
   sealed trait edit extends LockType
   
   @js.native
+  sealed trait explicit extends TransactionType
+  
+  @js.native
   sealed trait fail extends js.Object
   
   @js.native
@@ -145,6 +149,9 @@ object mendixmodelsdkStrings {
   
   @js.native
   sealed trait get extends RequestMethod
+  
+  @js.native
+  sealed trait `implicit` extends TransactionType
   
   @js.native
   sealed trait json extends js.Object
@@ -263,6 +270,8 @@ object mendixmodelsdkStrings {
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline
+  def explicit: explicit = "explicit".asInstanceOf[explicit]
+  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
@@ -272,6 +281,8 @@ object mendixmodelsdkStrings {
   def full: full = "full".asInstanceOf[full]
   @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
+  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline

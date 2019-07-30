@@ -2181,6 +2181,7 @@ object resourcesNs extends js.Object {
     def retrieveLines(id: String, options: HeaderOptions): IListPromise[IInvoiceLineItem] = js.native
     def retrieveLines(id: String, options: HeaderOptions, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
     def retrieveLines(id: String, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
+    def retrieveUpcoming(data: IInvoiceUpcomingOptions): js.Promise[IInvoice] = js.native
     /**
       * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
       * including subscription renewal charges, invoice item charges, etc. It will also show you any discount that is applicable
@@ -2196,6 +2197,7 @@ object resourcesNs extends js.Object {
       */
     def retrieveUpcoming(data: IInvoiceUpcomingOptions, options: HeaderOptions): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(data: IInvoiceUpcomingOptions, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+    def retrieveUpcoming(data: IInvoiceUpcomingOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(id: String): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(id: String, data: IInvoiceUpcomingOptions): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(id: String, data: IInvoiceUpcomingOptions, options: HeaderOptions): js.Promise[IInvoice] = js.native

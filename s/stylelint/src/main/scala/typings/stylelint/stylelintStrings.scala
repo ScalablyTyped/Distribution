@@ -1,26 +1,27 @@
 package typings.stylelint
 
-import typings.stylelint.stylelintMod.FormatterType
+import typings.stylelint.stylelintMod.Severity
 import typings.stylelint.stylelintMod.SyntaxType
+import typings.stylelint.stylelintMod._FormatterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object stylelintStrings {
   @js.native
-  sealed trait compact extends FormatterType
+  sealed trait compact extends _FormatterType
   
   @js.native
   sealed trait `css-in-js` extends SyntaxType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends Severity
   
   @js.native
   sealed trait html extends SyntaxType
   
   @js.native
-  sealed trait json extends FormatterType
+  sealed trait json extends _FormatterType
   
   @js.native
   sealed trait less extends SyntaxType
@@ -35,19 +36,19 @@ object stylelintStrings {
   sealed trait scss extends SyntaxType
   
   @js.native
-  sealed trait string extends FormatterType
+  sealed trait string extends _FormatterType
   
   @js.native
   sealed trait sugarss extends SyntaxType
   
   @js.native
-  sealed trait unix extends FormatterType
+  sealed trait unix extends _FormatterType
   
   @js.native
-  sealed trait verbose extends FormatterType
+  sealed trait verbose extends _FormatterType
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning extends Severity
   
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]

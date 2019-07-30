@@ -91,6 +91,8 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IMicroflow
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IMicroflowBase
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IMicroflowParameter
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IMicroflowParameterBase
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.INanoflow
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.INanoflowParameter
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IRule
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IRuleParameter
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.IServerSideMicroflow
@@ -129,6 +131,9 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.MicroflowParamet
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.MicroflowParameterObject
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.MicroflowParameterValue
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.Nanoflow
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NanoflowCall
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NanoflowCallAction
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NanoflowCallParameterMapping
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NanoflowParameter
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NoCase
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NullValueOption
@@ -2193,6 +2198,73 @@ object microflowsNs extends js.Object {
       */
     val allowedModuleRoles: IList[IModuleRole] = js.native
     val allowedModuleRolesQualifiedNames: js.Array[String] = js.native
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class NanoflowCall protected () extends Element {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: ModelUnit,
+      container: AbstractElement
+    ) = this()
+    val containerAsNanoflowCallAction: NanoflowCallAction = js.native
+    @JSName("model")
+    var model_NanoflowCall: IModel = js.native
+    var nanoflow: INanoflow | Null = js.native
+    val nanoflowQualifiedName: String | Null = js.native
+    val parameterMappings: IList[NanoflowCallParameterMapping] = js.native
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class NanoflowCallAction protected () extends MicroflowAction {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: ModelUnit,
+      container: AbstractElement
+    ) = this()
+    var nanoflowCall: NanoflowCall = js.native
+    var outputVariableName: String = js.native
+    var useReturnVariable: Boolean = js.native
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class NanoflowCallParameterMapping protected () extends Element {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: ModelUnit,
+      container: AbstractElement
+    ) = this()
+    /**
+      * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+      */
+    var argument: String = js.native
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      */
+    var argumentModel: Expression = js.native
+    val containerAsNanoflowCall: NanoflowCall = js.native
+    @JSName("model")
+    var model_NanoflowCallParameterMapping: IModel = js.native
+    var parameter: INanoflowParameter = js.native
+    val parameterQualifiedName: String = js.native
   }
   
   /**
@@ -4897,6 +4969,72 @@ object microflowsNs extends js.Object {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     def createIn(container: IFolderBase): Nanoflow = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NanoflowCall extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new NanoflowCall instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): NanoflowCall = js.native
+    /**
+      * Creates and returns a new NanoflowCall instance in the SDK and on the server.
+      * The new NanoflowCall will be automatically stored in the 'nanoflowCall' property
+      * of the parent NanoflowCallAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: NanoflowCallAction): NanoflowCall = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NanoflowCallAction extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new NanoflowCallAction instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): NanoflowCallAction = js.native
+    /**
+      * Creates and returns a new NanoflowCallAction instance in the SDK and on the server.
+      * The new NanoflowCallAction will be automatically stored in the 'action' property
+      * of the parent ActionActivity element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: ActionActivity): NanoflowCallAction = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NanoflowCallParameterMapping extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new NanoflowCallParameterMapping instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): NanoflowCallParameterMapping = js.native
+    /**
+      * Creates and returns a new NanoflowCallParameterMapping instance in the SDK and on the server.
+      * The new NanoflowCallParameterMapping will be automatically stored in the 'parameterMappings' property
+      * of the parent NanoflowCall element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: NanoflowCall): NanoflowCallParameterMapping = js.native
   }
   
   /* static members */

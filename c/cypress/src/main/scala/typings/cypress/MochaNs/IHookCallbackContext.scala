@@ -5,22 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated use `Mocha.Context` instead. */
+@js.native
 trait IHookCallbackContext
   extends /* index */ StringDictionary[js.Any] {
-  def skip(): this.type
-  def timeout(ms: Double): this.type
-}
-
-object IHookCallbackContext {
-  @scala.inline
-  def apply(
-    skip: () => IHookCallbackContext,
-    timeout: Double => IHookCallbackContext,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null
-  ): IHookCallbackContext = {
-    val __obj = js.Dynamic.literal(skip = js.Any.fromFunction0(skip), timeout = js.Any.fromFunction1(timeout))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[IHookCallbackContext]
-  }
+  /** @deprecated `.skip()` returns `never` in `Mocha.Context`. */
+  def skip(): this.type = js.native
+  def timeout(ms: String): this.type = js.native
+  /** @deprecated `.timeout()` has additional overloads in `Mocha.Context`. */
+  def timeout(ms: Double): this.type = js.native
 }
 

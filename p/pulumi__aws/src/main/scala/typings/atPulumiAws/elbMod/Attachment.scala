@@ -1,0 +1,48 @@
+package typings.atPulumiAws.elbMod
+
+import typings.atPulumiAws.elbAttachmentMod.AttachmentArgs
+import typings.atPulumiAws.elbAttachmentMod.AttachmentState
+import typings.atPulumiPulumi.outputMod.Input
+import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
+import typings.atPulumiPulumi.resourceMod.ID
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/elb", "Attachment")
+@js.native
+class Attachment protected ()
+  extends typings.atPulumiAws.elbAttachmentMod.Attachment {
+  /**
+    * Create a Attachment resource with the given unique name, arguments, and options.
+    *
+    * @param name The _unique_ name of the resource.
+    * @param args The arguments to use to populate this resource's properties.
+    * @param opts A bag of options that control this resource's behavior.
+    */
+  def this(name: String, args: AttachmentArgs) = this()
+  def this(name: String, args: AttachmentArgs, opts: CustomResourceOptions) = this()
+}
+
+/* static members */
+@JSImport("@pulumi/aws/elb", "Attachment")
+@js.native
+object Attachment extends js.Object {
+  /**
+    * Get an existing Attachment resource's state with the given name, ID, and optional extra
+    * properties used to qualify the lookup.
+    *
+    * @param name The _unique_ name of the resulting resource.
+    * @param id The _unique_ provider ID of the resource to lookup.
+    * @param state Any extra arguments used during the lookup.
+    */
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.elbAttachmentMod.Attachment = js.native
+  def get(name: String, id: Input[ID], state: AttachmentState): typings.atPulumiAws.elbAttachmentMod.Attachment = js.native
+  def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.atPulumiAws.elbAttachmentMod.Attachment = js.native
+  /**
+    * Returns true if the given object is an instance of Attachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean = js.native
+}
+

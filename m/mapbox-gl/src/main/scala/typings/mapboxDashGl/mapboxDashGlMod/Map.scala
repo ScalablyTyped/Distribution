@@ -5,7 +5,6 @@ import typings.mapboxDashGl.Anon_Data
 import typings.mapboxDashGl.Anon_Diff
 import typings.mapboxDashGl.Anon_Filter
 import typings.mapboxDashGl.Anon_FilterSourceLayer
-import typings.mapboxDashGl.Anon_Id
 import typings.mapboxDashGl.Anon_PixelRatio
 import typings.mapboxDashGl.mapboxDashGlStrings.`bottom-left`
 import typings.mapboxDashGl.mapboxDashGlStrings.`bottom-right`
@@ -138,7 +137,7 @@ class Map () extends Evented {
   def getCanvasContainer(): HTMLElement = js.native
   def getCenter(): LngLat = js.native
   def getContainer(): HTMLElement = js.native
-  def getFeatureState(feature: Anon_Id): StringDictionary[js.Any] = js.native
+  def getFeatureState(feature: FeatureIdentifier): StringDictionary[js.Any] = js.native
   def getFeatureState(feature: MapboxGeoJSONFeature): StringDictionary[js.Any] = js.native
   def getFilter(layer: String): js.Array[_] = js.native
   def getLayer(id: String): Layer = js.native
@@ -934,6 +933,10 @@ class Map () extends Evented {
   def remove(): Unit = js.native
   def removeControl(control: Control): this.type = js.native
   def removeControl(control: IControl): this.type = js.native
+  def removeFeatureState(target: FeatureIdentifier): Unit = js.native
+  def removeFeatureState(target: FeatureIdentifier, key: String): Unit = js.native
+  def removeFeatureState(target: MapboxGeoJSONFeature): Unit = js.native
+  def removeFeatureState(target: MapboxGeoJSONFeature, key: String): Unit = js.native
   def removeImage(name: String): this.type = js.native
   def removeLayer(id: String): this.type = js.native
   def removeSource(id: String): this.type = js.native
@@ -949,7 +952,7 @@ class Map () extends Evented {
   def setBearing(bearing: Double, eventData: EventData): this.type = js.native
   def setCenter(center: LngLatLike): this.type = js.native
   def setCenter(center: LngLatLike, eventData: EventData): this.type = js.native
-  def setFeatureState(feature: Anon_Id, state: StringDictionary[js.Any]): Unit = js.native
+  def setFeatureState(feature: FeatureIdentifier, state: StringDictionary[js.Any]): Unit = js.native
   def setFeatureState(feature: MapboxGeoJSONFeature, state: StringDictionary[js.Any]): Unit = js.native
   def setFilter(layer: String): this.type = js.native
   def setFilter(layer: String, filter: js.Array[_]): this.type = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "speakeasy"
-version := "2.0-dt-20190212Z-b7b5e5"
+version := "2.0-dt-20190729Z-61e76a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

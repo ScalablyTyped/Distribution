@@ -8,7 +8,7 @@ trait TotpVerifyOptions extends SharedOptions {
   /**
     * The counter value, calculated from time by default
     */
-  var counter: js.UndefOr[String] = js.undefined
+  var counter: js.UndefOr[Double] = js.undefined
   /**
     * The number of digits for the one-time passcode, defaults to 6
     */
@@ -51,7 +51,7 @@ object TotpVerifyOptions {
     secret: String,
     token: String,
     algorithm: Algorithm = null,
-    counter: String = null,
+    counter: Int | Double = null,
     digits: Int | Double = null,
     encoding: Encoding = null,
     epoch: Int | Double = null,
@@ -61,7 +61,7 @@ object TotpVerifyOptions {
   ): TotpVerifyOptions = {
     val __obj = js.Dynamic.literal(secret = secret, token = token)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (counter != null) __obj.updateDynamic("counter")(counter)
+    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])

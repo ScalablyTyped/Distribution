@@ -14,9 +14,9 @@ package object mithrilDashGlobalMod {
   type ChildArrayOrPrimitive = typings.mithril.mithrilMod.ChildArrayOrPrimitive
   type Children = typings.mithril.mithrilMod.Children
   type ClassComponent[A] = typings.mithril.mithrilMod.ClassComponent[A]
-  type Comp[A, S] = typings.mithril.mithrilMod.Comp[A, S]
+  type Comp[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.Comp[A, S]
   type Component[A, S] = typings.mithril.mithrilMod.Component[A, S]
-  type ComponentTypes[A, S] = typings.mithril.mithrilMod.ComponentTypes[A, S]
+  type ComponentTypes[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.ComponentTypes[A, S]
   type FactoryComponent[A] = typings.mithril.mithrilMod.FactoryComponent[A]
   type Hyperscript = typings.mithril.mithrilMod.Hyperscript
   type JsonpOptions = typings.mithril.mithrilMod.JsonpOptions
@@ -25,9 +25,9 @@ package object mithrilDashGlobalMod {
   type Route = typings.mithril.mithrilMod.Route
   type RouteDefs = typings.mithril.mithrilMod.RouteDefs
   type RouteOptions = typings.mithril.mithrilMod.RouteOptions
-  type RouteResolver[S, P] = typings.mithril.mithrilMod.RouteResolver[S, P]
+  type RouteResolver[A, S] = typings.mithril.mithrilMod.RouteResolver[A, S]
   type Static = typings.mithril.mithrilMod.Static with Anon_Stream
   type Stream[T] = typings.mithril.streamMod.Stream[T]
-  type Vnode[A, S] = typings.mithril.mithrilMod.Vnode[A, S]
-  type VnodeDOM[A, S] = typings.mithril.mithrilMod.VnodeDOM[A, S]
+  type Vnode[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.Vnode[A, S]
+  type VnodeDOM[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.VnodeDOM[A, S]
 }

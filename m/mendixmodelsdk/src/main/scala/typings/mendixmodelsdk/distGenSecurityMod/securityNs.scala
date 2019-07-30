@@ -248,6 +248,9 @@ object securityNs extends js.Object {
     var imageAccess: ImageAccessRuleContainer = js.native
     var passwordPolicySettings: PasswordPolicySettings = js.native
     var securityLevel: SecurityLevel = js.native
+    /**
+      * In version 8.0.0: deleted
+      */
     var signInMicroflow: IMicroflow | Null = js.native
     val signInMicroflowQualifiedName: String | Null = js.native
     val userRoles: IList[IUserRole | UserRole] = js.native

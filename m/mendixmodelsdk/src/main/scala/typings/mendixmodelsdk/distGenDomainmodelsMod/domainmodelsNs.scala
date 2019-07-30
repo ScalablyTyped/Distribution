@@ -96,9 +96,6 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SelectorXPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SingleSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticOrDynamicString
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.ObjectListSortItem
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.WebDynamicImageValue
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModule
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModuleDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.Module
@@ -1083,7 +1080,6 @@ object domainmodelsNs extends js.Object {
       unit: ModelUnit,
       container: AbstractElement
     ) = this()
-    val containerAsAttributeValue: AttributeValue = js.native
     val containerAsAttributeWidget: AttributeWidget = js.native
     val containerAsClientTemplateParameter: ClientTemplateParameter = js.native
     val containerAsDataGridColumn: DataGridColumn = js.native
@@ -1091,14 +1087,12 @@ object domainmodelsNs extends js.Object {
     val containerAsGridColumn: GridColumn = js.native
     val containerAsListViewSearch: ListViewSearch = js.native
     val containerAsMemberWidget: MemberWidget = js.native
-    val containerAsObjectListSortItem: ObjectListSortItem = js.native
     val containerAsPagesGridSortItem: typings.mendixmodelsdk.distGenPagesMod.pagesNs.GridSortItem = js.native
     val containerAsRangeSearchField: RangeSearchField = js.native
     val containerAsSingleSearchField: SingleSearchField = js.native
     val containerAsSortItem: SortItem = js.native
     val containerAsStaticOrDynamicString: StaticOrDynamicString = js.native
     val containerAsVariableRefExpression: VariableRefExpression = js.native
-    val containerAsWebDynamicImageValue: WebDynamicImageValue = js.native
     val containerAsWidgetValue: WidgetValue = js.native
     var entityRef: IndirectEntityRef | Null = js.native
     @JSName("model")
@@ -1448,15 +1442,6 @@ object domainmodelsNs extends js.Object {
     def create(model: IModel): AttributeRef = js.native
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.AttributeValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.11.0 to 7.18.0
-      */
-    def createInAttributeValueUnderValue(container: AttributeValue): AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property
       * of the parent documenttemplates.AttributeWidget element passed as argument.
       *
@@ -1521,15 +1506,6 @@ object domainmodelsNs extends js.Object {
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property
-      * of the parent pluginwidgets.ObjectListSortItem element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInObjectListSortItemUnderAttributeRef(container: ObjectListSortItem): AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'attributeRef' property
       * of the parent pages.GridSortItem element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -1590,15 +1566,6 @@ object domainmodelsNs extends js.Object {
       *  7.11.0 and higher
       */
     def createInVariableRefExpressionUnderMember(container: VariableRefExpression): AttributeRef = js.native
-    /**
-      * Creates and returns a new AttributeRef instance in the SDK and on the server.
-      * The new AttributeRef will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.WebDynamicImageValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInWebDynamicImageValueUnderValue(container: WebDynamicImageValue): AttributeRef = js.native
     /**
       * Creates and returns a new AttributeRef instance in the SDK and on the server.
       * The new AttributeRef will be automatically stored in the 'attributeRef' property

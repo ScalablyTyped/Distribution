@@ -1,9 +1,9 @@
 package typings.cypress.CypressNs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.cypress.Window
 import typings.cypress.cypressStrings.GET
 import typings.cypress.cypressStrings.POST
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

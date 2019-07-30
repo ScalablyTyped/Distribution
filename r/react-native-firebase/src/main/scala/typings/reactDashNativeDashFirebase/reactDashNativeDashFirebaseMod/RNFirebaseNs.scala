@@ -2032,7 +2032,7 @@ object RNFirebaseNs extends js.Object {
     class Notification () extends js.Object {
       var android: AndroidNotification = js.native
       var body: String = js.native
-      var data: js.Any = js.native
+      var data: StringDictionary[String] = js.native
       var ios: IOSNotification = js.native
       var notificationId: String = js.native
       var sound: js.UndefOr[String] = js.native

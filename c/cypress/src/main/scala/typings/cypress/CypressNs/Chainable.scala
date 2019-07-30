@@ -8,6 +8,7 @@ import typings.cypress.JQueryNs.htmlString
 import typings.cypress.JQueryStatic
 import typings.cypress.MochaNs.IRunnable
 import typings.cypress.MochaNs.ITest
+import typings.cypress.Window
 import typings.cypress.cypressNumbers.`false`
 import typings.cypress.cypressStrings.`command:end`
 import typings.cypress.cypressStrings.`command:enqueued`
@@ -206,7 +207,10 @@ import typings.cypress.cypressStrings.i
 import typings.cypress.cypressStrings.iframe
 import typings.cypress.cypressStrings.img
 import typings.cypress.cypressStrings.include
+import typings.cypress.cypressStrings.includeDOThtml
 import typings.cypress.cypressStrings.includeDOTmembers
+import typings.cypress.cypressStrings.includeDOTtext
+import typings.cypress.cypressStrings.includeDOTvalue
 import typings.cypress.cypressStrings.increase
 import typings.cypress.cypressStrings.input
 import typings.cypress.cypressStrings.ins
@@ -322,7 +326,10 @@ import typings.cypress.cypressStrings.notDOThaveDOTtext
 import typings.cypress.cypressStrings.notDOThaveDOTthrown
 import typings.cypress.cypressStrings.notDOThaveDOTvalue
 import typings.cypress.cypressStrings.notDOTinclude
+import typings.cypress.cypressStrings.notDOTincludeDOThtml
 import typings.cypress.cypressStrings.notDOTincludeDOTmembers
+import typings.cypress.cypressStrings.notDOTincludeDOTtext
+import typings.cypress.cypressStrings.notDOTincludeDOTvalue
 import typings.cypress.cypressStrings.notDOTincrease
 import typings.cypress.cypressStrings.notDOTmatch
 import typings.cypress.cypressStrings.notDOTrespondTo
@@ -463,7 +470,6 @@ import typings.std.HTMLHtmlElement
 import typings.std.HTMLIFrameElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLInputElement
-import typings.std.HTMLLIElement
 import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
@@ -518,7 +524,6 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -558,9 +563,18 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   var on_Original: Actions = js.native
   /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  var once_Original: Actions = js.native
+  /**
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   var should_Original: Chainer[Subject] = js.native
@@ -2122,6 +2136,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_include(chainer: include, value: js.Any): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_includehtml(chainer: includeDOThtml, value: String): Chainable[Subject] = js.native
+  /**
     * When the target is a string, `.include` asserts that the given string `val` is a substring of the target.
     * @example
     *    cy.wrap([1, 2, 3]).should('include.members', [1, 2])
@@ -2136,6 +2165,36 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("and")
   def and_includemembers(chainer: includeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_includetext(chainer: includeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_includevalue(chainer: includeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.increase` asserts that the given function `subject` returns a greater number when it’s
     * invoked after invoking the target function compared to when it’s invoked beforehand.
@@ -3507,6 +3566,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_notinclude(chainer: notDOTinclude, value: js.Any): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notincludehtml(chainer: notDOTincludeDOThtml, value: String): Chainable[Subject] = js.native
+  /**
     * When the target is a string, `.include` asserts that the given string `val` is not a substring of the target.
     * @example
     *    cy.wrap([1, 2, 3]).should('not.include.members', [4, 5])
@@ -3521,6 +3595,36 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("and")
   def and_notincludemembers(chainer: notDOTincludeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notincludetext(chainer: notDOTincludeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notincludevalue(chainer: notDOTincludeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.increase` asserts that the given function `subject` returns a greater number when it’s
     * invoked after invoking the target function compared to when it’s invoked beforehand.
@@ -4033,9 +4137,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("children")
-  def children_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def children_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("children")
-  def children_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def children_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("children")
   def children_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("children")
@@ -4665,9 +4769,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("closest")
   def closest_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("closest")
-  def closest_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def closest_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("closest")
-  def closest_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def closest_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("closest")
   def closest_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("closest")
@@ -4903,10 +5007,15 @@ trait Chainable[Subject] extends js.Object {
     *    cy.contains(/^b\w+/)
     *    // yields <ul>...</ul>
     *    cy.contains('ul', 'apples')
+    *    // tries to find the given text for up to 1 second
+    *    cy.contains('my text to find', {timeout: 1000})
     */
   def contains(content: String): Chainable[Subject] = js.native
+  def contains(content: String, options: Partial[Loggable with Timeoutable]): Chainable[Subject] = js.native
   def contains(content: Double): Chainable[Subject] = js.native
+  def contains(content: Double, options: Partial[Loggable with Timeoutable]): Chainable[Subject] = js.native
   def contains(content: RegExp): Chainable[Subject] = js.native
+  def contains(content: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[Subject] = js.native
   /**
     * Get the DOM element using CSS "selector" containing the text or regular expression.
     *
@@ -5700,17 +5809,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_legend(selector: legend, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: String): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: Double): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: Double): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: RegExp): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: RegExp): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("contains")
   def contains_link(selector: link, text: String): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("contains")
@@ -6705,9 +6814,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("filter")
   def filter_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("filter")
-  def filter_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def filter_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("filter")
-  def filter_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def filter_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("filter")
   def filter_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("filter")
@@ -7198,9 +7307,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("find")
-  def find_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def find_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("find")
-  def find_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def find_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("find")
   def find_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("find")
@@ -7768,9 +7877,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_legend(selector: legend, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("get")
-  def get_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def get_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("get")
-  def get_li(selector: li, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def get_li(selector: li, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("get")
   def get_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("get")
@@ -8051,6 +8160,8 @@ trait Chainable[Subject] extends js.Object {
     * @example
     *    cy.location('host') // Get the host of the location object
     *    cy.location('port') // Get the port of the location object
+    *    // Assert on the href of the location
+    *    cy.location('href').should('contain', '/tag/tutorials')
     */
   def location(key: String): Chainable[Location] = js.native
   def location(key: String, options: Partial[Loggable with Timeoutable]): Chainable[Location] = js.native
@@ -8351,9 +8462,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextAll")
   def nextAll_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextAll")
-  def nextAll_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def nextAll_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("nextAll")
-  def nextAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def nextAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("nextAll")
   def nextAll_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextAll")
@@ -8846,9 +8957,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextUntil")
   def nextUntil_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def nextUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def nextUntil_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextUntil")
@@ -9327,9 +9438,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("next")
   def next_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("next")
-  def next_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def next_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("next")
-  def next_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def next_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("next")
   def next_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("next")
@@ -10032,6 +10143,243 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def on_windowunload(action: `window:unload`, fn: js.Function1[/* event */ Event, Unit]): Unit = js.native
   /**
+    * Fires when an uncaught exception occurs in your application.
+    * Cypress will fail the test when this fires.
+    * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  def once(
+    action: `uncaught:exception`,
+    fn: js.Function2[/* error */ Error, /* runnable */ IRunnable, `false` | Unit]
+  ): Unit = js.native
+  /**
+    * Fires when your app calls the global `window.confirm()` method.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be canceled.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  def once(action: `window:confirm`, fn: js.Function1[/* text */ String, `false` | Unit]): Unit = js.native
+  /**
+    * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_commandend(action: `command:end`, fn: js.Function1[/* command */ CommandQueue, Unit]): Unit = js.native
+  /**
+    * Fires when a cy command is first invoked and enqueued to be run later. Useful for debugging purposes if you're confused about the order in which commands will execute.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_commandenqueued(action: `command:enqueued`, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): Unit = js.native
+  /**
+    * Fires whenever a command begins its retrying routines. This is called on the trailing edge after Cypress has internally waited for the retry interval. Useful to understand **why** a command is retrying, and generally includes the actual error causing the retry to happen. When commands fail the final error is the one that actually bubbles up to fail the test. This event is essentially to debug why Cypress is failing.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_commandretry(action: `command:retry`, fn: js.Function1[/* command */ CommandQueue, Unit]): Unit = js.native
+  /**
+    * Fires when cy begins actually running and executing your command. Useful for debugging and understanding how the command queue is async.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_commandstart(action: `command:start`, fn: js.Function1[/* command */ CommandQueue, Unit]): Unit = js.native
+  /**
+    * Fires when the test has failed. It is technically possible to prevent the test from actually failing by binding to this event and invoking an async `done` callback. However this is **strongly discouraged**. Tests should never legitimately fail. This event exists because it's extremely useful for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_fail(action: fail, fn: js.Function2[/* error */ Error, /* mocha */ IRunnable, Unit]): Unit = js.native
+  /**
+    * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_logadded(action: `log:added`, fn: js.Function2[/* log */ js.Any, /* interactive */ Boolean, Unit]): Unit = js.native
+  /**
+    * Fires whenever a command's attributes changes. This event is debounced to prevent it from firing too quickly and too often. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_logchanged(action: `log:changed`, fn: js.Function2[/* log */ js.Any, /* interactive */ Boolean, Unit]): Unit = js.native
+  /**
+    * Fires whenever **Cypress** is scrolling your application. This event is fired when Cypress is {% url 'waiting for and calculating actionability' interacting-with-elements %}. It will scroll to 'uncover' elements currently being covered. This event is extremely useful to debug why Cypress may think an element is not interactive.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_scrolled(action: scrolled, fn: js.Function1[/* $el */ JQuery[HTMLElement], Unit]): Unit = js.native
+  /**
+    * Fires after the test and all **afterEach** and **after** hooks run.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_testafterrun(action: `test:after:run`, fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]): Unit = js.native
+  /**
+    * Fires before the test and all **before** and **beforeEach** hooks run.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_testbeforerun(action: `test:before:run`, fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]): Unit = js.native
+  /**
+    * Fires whenever Cypress detects that your application's URL has changed.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_urlchanged(action: `url:changed`, fn: js.Function1[/* url */ String, Unit]): Unit = js.native
+  /**
+    * Fires whenever the viewport changes via a `cy.viewport()` or naturally when Cypress resets the viewport to the default between tests. Useful for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_viewportchanged(action: `viewport:changed`, fn: js.Function1[/* viewport */ Viewport, Unit]): Unit = js.native
+  /**
+    * Fires when your app calls the global `window.alert()` method.
+    * Cypress will auto accept alerts. You cannot change this behavior.
+    * @example
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_windowalert(action: `window:alert`, fn: js.Function1[/* text */ String, Unit]): Unit = js.native
+  @JSName("once")
+  def once_windowalert(action: `window:alert`, fn: SinonSpyAgent[SinonSpy | SinonStub]): Unit = js.native
+  /**
+    * Fires as the page begins to load, but before any of your applications JavaScript has executed. This fires at the exact same time as `cy.visit()` `onBeforeLoad` callback. Useful to modify the window on a page transition.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_windowbeforeload(action: `window:before:load`, fn: js.Function1[/* win */ Window, Unit]): Unit = js.native
+  /**
+    * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_windowbeforeunload(action: `window:before:unload`, fn: js.Function1[/* event */ BeforeUnloadEvent, Unit]): Unit = js.native
+  @JSName("once")
+  def once_windowconfirm(action: `window:confirm`, fn: SinonSpyAgent[SinonSpy | SinonStub]): Unit = js.native
+  /**
+    * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_windowload(action: `window:load`, fn: js.Function1[/* win */ Window, Unit]): Unit = js.native
+  /**
+    * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_windowunload(action: `window:unload`, fn: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  /**
     * Get the parent DOM element of a set of DOM elements.
     *
     * @see https://on.cypress.io/parent
@@ -10303,9 +10651,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parent")
   def parent_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parent")
-  def parent_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parent_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parent")
-  def parent_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parent_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parent")
   def parent_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parent")
@@ -10943,11 +11291,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_legend(selector: legend, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li, filter: String): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li, filter: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parentsUntil")
@@ -11536,9 +11884,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parents")
   def parents_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parents")
-  def parents_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parents_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parents")
-  def parents_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def parents_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("parents")
   def parents_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parents")
@@ -12060,9 +12408,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevAll")
   def prevAll_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prevAll")
-  def prevAll_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prevAll_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prevAll")
-  def prevAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prevAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prevAll")
   def prevAll_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prevAll")
@@ -12689,11 +13037,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_legend(selector: legend, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li, filter: String): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li, filter: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prevUntil")
@@ -13284,9 +13632,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prev")
   def prev_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prev")
-  def prev_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prev_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prev")
-  def prev_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def prev_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("prev")
   def prev_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prev")
@@ -13734,6 +14082,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   def should(chainers: String): Chainable[Subject] = js.native
   def should(chainers: String, value: js.Any): Chainable[Subject] = js.native
@@ -13741,6 +14092,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   def should(chainers: String, value: js.Any, `match`: js.Any): Chainable[Subject] = js.native
   /**
@@ -13776,6 +14130,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   def should(fn: js.Function1[/* currentSubject */ Subject, Unit]): Chainable[Subject] = js.native
   /**
@@ -13787,6 +14144,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_alwaysreturned(chainer: alwaysDOTreturned, value: js.Any): Chainable[Subject] = js.native
@@ -13804,6 +14164,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bea(chainer: beDOTa, `type`: String): Chainable[Subject] = js.native
@@ -13819,6 +14182,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beabove(chainer: beDOTabove, value: Double): Chainable[Subject] = js.native
@@ -13833,6 +14199,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bealwayscalledWithMatch(chainer: beDOTalwaysDOTcalledWithMatch, args: js.Any*): Chainable[Subject] = js.native
@@ -13847,6 +14216,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bealwayscalledWithNew(chainer: beDOTalwaysDOTcalledWithNew): Chainable[Subject] = js.native
@@ -13864,6 +14236,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bean(chainer: beDOTan, value: String): Chainable[Subject] = js.native
@@ -13879,6 +14254,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beapproximately(chainer: beDOTapproximately, value: Double, delta: Double): Chainable[Subject] = js.native
@@ -13893,6 +14271,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bearguments(chainer: beDOTarguments): Chainable[Subject] = js.native
@@ -13908,6 +14289,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beatleast(chainer: beDOTatDOTleast, value: Double): Chainable[Subject] = js.native
@@ -13925,6 +14309,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bebelow(chainer: beDOTbelow, value: Double): Chainable[Subject] = js.native
@@ -13937,6 +14324,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalled(chainer: beDOTcalled): Chainable[Subject] = js.native
@@ -13949,6 +14339,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledAfter(chainer: beDOTcalledAfter, spy: SinonSpy): Chainable[Subject] = js.native
@@ -13961,6 +14354,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledBefore(chainer: beDOTcalledBefore, spy: SinonSpy): Chainable[Subject] = js.native
@@ -13973,6 +14369,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledOn(chainer: beDOTcalledOn, context: js.Any): Chainable[Subject] = js.native
@@ -13985,6 +14384,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledOnce(chainer: beDOTcalledOnce): Chainable[Subject] = js.native
@@ -13997,6 +14399,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledThrice(chainer: beDOTcalledThrice): Chainable[Subject] = js.native
@@ -14009,6 +14414,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledTwice(chainer: beDOTcalledTwice): Chainable[Subject] = js.native
@@ -14021,6 +14429,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledWithExactly(chainer: beDOTcalledWithExactly, args: js.Any*): Chainable[Subject] = js.native
@@ -14033,6 +14444,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledWithMatch(chainer: beDOTcalledWithMatch, args: js.Any*): Chainable[Subject] = js.native
@@ -14046,6 +14460,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becalledWithNew(chainer: beDOTcalledWithNew): Chainable[Subject] = js.native
@@ -14061,6 +14478,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bechecked(chainer: beDOTchecked): Chainable[Subject] = js.native
@@ -14075,6 +14495,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_becloseTo(chainer: beDOTcloseTo, value: Double, delta: Double): Chainable[Subject] = js.native
@@ -14089,6 +14512,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bedisabled(chainer: beDOTdisabled): Chainable[Subject] = js.native
@@ -14104,6 +14530,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beempty(chainer: beDOTempty): Chainable[Subject] = js.native
@@ -14118,6 +14547,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beenabled(chainer: beDOTenabled): Chainable[Subject] = js.native
@@ -14132,6 +14564,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_befalse(chainer: beDOTfalse): Chainable[Subject] = js.native
@@ -14146,6 +14581,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_befocused(chainer: beDOTfocused): Chainable[Subject] = js.native
@@ -14162,6 +14600,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_begreaterThan(chainer: beDOTgreaterThan, value: Double): Chainable[Subject] = js.native
@@ -14178,6 +14619,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_begt(chainer: beDOTgt, value: Double): Chainable[Subject] = js.native
@@ -14194,6 +14638,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_begte(chainer: beDOTgte, value: Double): Chainable[Subject] = js.native
@@ -14208,6 +14655,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_behidden(chainer: beDOThidden): Chainable[Subject] = js.native
@@ -14222,6 +14672,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beinstanceOf(chainer: beDOTinstanceOf, value: js.Any): Chainable[Subject] = js.native
@@ -14238,6 +14691,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_belessThan(chainer: beDOTlessThan, value: Double): Chainable[Subject] = js.native
@@ -14254,6 +14710,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_belt(chainer: beDOTlt, value: Double): Chainable[Subject] = js.native
@@ -14270,6 +14729,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_belte(chainer: beDOTlte, value: Double): Chainable[Subject] = js.native
@@ -14284,6 +14746,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beok(chainer: beDOTok): Chainable[Subject] = js.native
@@ -14298,6 +14763,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beselected(chainer: beDOTselected): Chainable[Subject] = js.native
@@ -14312,6 +14780,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_betrue(chainer: beDOTtrue): Chainable[Subject] = js.native
@@ -14326,6 +14797,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_beundefined(chainer: beDOTundefined): Chainable[Subject] = js.native
@@ -14340,6 +14814,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bevisible(chainer: beDOTvisible): Chainable[Subject] = js.native
@@ -14355,6 +14832,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bewithin(chainer: beDOTwithin, start: Double, end: Double): Chainable[Subject] = js.native
@@ -14362,6 +14842,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_bewithin(chainer: beDOTwithin, start: Date, end: Date): Chainable[Subject] = js.native
@@ -14380,6 +14863,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_change(chainer: change, fn: js.Function1[/* repeated */ js.Any, _]): Chainable[Subject] = js.native
@@ -14396,6 +14882,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_change(chainer: change, obj: js.Object, prop: String): Chainable[Subject] = js.native
@@ -14410,6 +14899,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_contain(chainer: contain, value: String): Chainable[Subject] = js.native
@@ -14425,6 +14917,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_contain(chainer: contain, value: js.Any): Chainable[Subject] = js.native
@@ -14439,6 +14934,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_containhtml(chainer: containDOThtml, value: String): Chainable[Subject] = js.native
@@ -14453,6 +14951,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_containtext(chainer: containDOTtext, value: String): Chainable[Subject] = js.native
@@ -14467,6 +14968,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_containvalue(chainer: containDOTvalue, value: String): Chainable[Subject] = js.native
@@ -14485,6 +14989,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_decrease(chainer: decrease, fn: js.Function1[/* repeated */ js.Any, _]): Chainable[Subject] = js.native
@@ -14502,6 +15009,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_decrease(chainer: decrease, obj: js.Object, prop: String): Chainable[Subject] = js.native
@@ -14516,6 +15026,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_deepequal(chainer: deepDOTequal, value: Subject): Chainable[Subject] = js.native
@@ -14531,6 +15044,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_eq(chainer: eq, value: js.Any): Chainable[Subject] = js.native
@@ -14545,6 +15061,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_eql(chainer: eql, value: js.Any): Chainable[Subject] = js.native
@@ -14559,6 +15078,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_equal(chainer: equal, value: js.Any): Chainable[Subject] = js.native
@@ -14573,6 +15095,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_exist(chainer: exist): Chainable[Subject] = js.native
@@ -14587,6 +15112,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveallkeys(chainer: haveDOTallDOTkeys, value: String*): Chainable[Subject] = js.native
@@ -14599,6 +15127,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havealwaysthrown(chainer: haveDOTalwaysDOTthrown): Chainable[Subject] = js.native
@@ -14619,6 +15150,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveanykeys(chainer: haveDOTanyDOTkeys, value: String*): Chainable[Subject] = js.native
@@ -14634,6 +15168,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveattr(chainer: haveDOTattr, value: String): Chainable[Subject] = js.native
@@ -14648,6 +15185,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havecallCount(chainer: haveDOTcallCount, value: Double): Chainable[Subject] = js.native
@@ -14662,6 +15202,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveclass(chainer: haveDOTclass, value: String): Chainable[Subject] = js.native
@@ -14676,6 +15219,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havecss(chainer: haveDOTcss, value: String): Chainable[Subject] = js.native
@@ -14692,6 +15238,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havedata(chainer: haveDOTdata, value: String): Chainable[Subject] = js.native
@@ -14708,6 +15257,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havedeepproperty(chainer: haveDOTdeepDOTproperty, value: String, obj: js.Object): Chainable[Subject] = js.native
@@ -14722,6 +15274,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havedescendants(chainer: haveDOTdescendants, selector: String): Chainable[Subject] = js.native
@@ -14736,6 +15291,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havefocus(chainer: haveDOTfocus): Chainable[Subject] = js.native
@@ -14750,6 +15308,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havehtml(chainer: haveDOThtml, value: String): Chainable[Subject] = js.native
@@ -14764,6 +15325,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveid(chainer: haveDOTid, value: String): Chainable[Subject] = js.native
@@ -14782,6 +15346,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelength(chainer: haveDOTlength, value: Double): Chainable[Subject] = js.native
@@ -14797,6 +15364,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthgreaterThan(chainer: haveDOTlengthDOTgreaterThan, value: Double): Chainable[Subject] = js.native
@@ -14812,6 +15382,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthgt(chainer: haveDOTlengthDOTgt, value: Double): Chainable[Subject] = js.native
@@ -14827,6 +15400,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthgte(chainer: haveDOTlengthDOTgte, value: Double): Chainable[Subject] = js.native
@@ -14842,6 +15418,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthlessThan(chainer: haveDOTlengthDOTlessThan, value: Double): Chainable[Subject] = js.native
@@ -14857,6 +15436,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthlt(chainer: haveDOTlengthDOTlt, value: Double): Chainable[Subject] = js.native
@@ -14872,6 +15454,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havelengthlte(chainer: haveDOTlengthDOTlte, value: Double): Chainable[Subject] = js.native
@@ -14886,6 +15471,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havemembers(chainer: haveDOTmembers, values: js.Array[_]): Chainable[Subject] = js.native
@@ -14900,6 +15488,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveorderedmembers(chainer: haveDOTorderedDOTmembers, values: js.Array[_]): Chainable[Subject] = js.native
@@ -14915,6 +15506,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveownProperty(chainer: haveDOTownProperty, property: String): Chainable[Subject] = js.native
@@ -14930,6 +15524,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveprop(chainer: haveDOTprop, value: String): Chainable[Subject] = js.native
@@ -14947,6 +15544,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_haveproperty(chainer: haveDOTproperty, property: String): Chainable[Subject] = js.native
@@ -14963,6 +15563,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havestring(chainer: haveDOTstring, `match`: String): Chainable[Subject] = js.native
@@ -14979,6 +15582,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havetext(chainer: haveDOTtext, value: String): Chainable[Subject] = js.native
@@ -14991,6 +15597,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havethrown(chainer: haveDOTthrown): Chainable[Subject] = js.native
@@ -15011,6 +15620,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_havevalue(chainer: haveDOTvalue, value: String): Chainable[Subject] = js.native
@@ -15025,9 +15637,29 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_include(chainer: include, value: js.Any): Chainable[Subject] = js.native
+  /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_includehtml(chainer: includeDOThtml, value: String): Chainable[Subject] = js.native
   /**
     * When the target is a string, `.include` asserts that the given string `val` is a substring of the target.
     * @example
@@ -15039,9 +15671,46 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_includemembers(chainer: includeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_includetext(chainer: includeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_includevalue(chainer: includeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.increase` asserts that the given function `subject` returns a greater number when it’s
     * invoked after invoking the target function compared to when it’s invoked beforehand.
@@ -15059,6 +15728,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_increase(chainer: increase, value: js.Object, property: String): Chainable[Subject] = js.native
@@ -15073,6 +15745,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_match(chainer: `match`, value: String): Chainable[Subject] = js.native
@@ -15087,6 +15762,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_match(chainer: `match`, value: RegExp): Chainable[Subject] = js.native
@@ -15099,6 +15777,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notalwaysreturned(chainer: notDOTalwaysDOTreturned, value: js.Any): Chainable[Subject] = js.native
@@ -15116,6 +15797,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbea(chainer: notDOTbeDOTa, `type`: String): Chainable[Subject] = js.native
@@ -15131,6 +15815,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeabove(chainer: notDOTbeDOTabove, value: Double): Chainable[Subject] = js.native
@@ -15145,6 +15832,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbealwayscalledWithMatch(chainer: notDOTbeDOTalwaysDOTcalledWithMatch, args: js.Any*): Chainable[Subject] = js.native
@@ -15159,6 +15849,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbealwayscalledWithNew(chainer: notDOTbeDOTalwaysDOTcalledWithNew): Chainable[Subject] = js.native
@@ -15176,6 +15869,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbean(chainer: notDOTbeDOTan, value: String): Chainable[Subject] = js.native
@@ -15191,6 +15887,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeapproximately(chainer: notDOTbeDOTapproximately, value: Double, delta: Double): Chainable[Subject] = js.native
@@ -15205,6 +15904,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbearguments(chainer: notDOTbeDOTarguments): Chainable[Subject] = js.native
@@ -15220,6 +15922,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeatleast(chainer: notDOTbeDOTatDOTleast, value: Double): Chainable[Subject] = js.native
@@ -15237,6 +15942,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbebelow(chainer: notDOTbeDOTbelow, value: Double): Chainable[Subject] = js.native
@@ -15249,6 +15957,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalled(chainer: notDOTbeDOTcalled): Chainable[Subject] = js.native
@@ -15261,6 +15972,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledAfter(chainer: notDOTbeDOTcalledAfter, spy: SinonSpy): Chainable[Subject] = js.native
@@ -15273,6 +15987,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledBefore(chainer: notDOTbeDOTcalledBefore, spy: SinonSpy): Chainable[Subject] = js.native
@@ -15285,6 +16002,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledOn(chainer: notDOTbeDOTcalledOn, context: js.Any): Chainable[Subject] = js.native
@@ -15297,6 +16017,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledOnce(chainer: notDOTbeDOTcalledOnce): Chainable[Subject] = js.native
@@ -15309,6 +16032,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledThrice(chainer: notDOTbeDOTcalledThrice): Chainable[Subject] = js.native
@@ -15321,6 +16047,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledTwice(chainer: notDOTbeDOTcalledTwice): Chainable[Subject] = js.native
@@ -15333,6 +16062,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledWithExactly(chainer: notDOTbeDOTcalledWithExactly, args: js.Any*): Chainable[Subject] = js.native
@@ -15345,6 +16077,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledWithMatch(chainer: notDOTbeDOTcalledWithMatch, args: js.Any*): Chainable[Subject] = js.native
@@ -15358,6 +16093,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecalledWithNew(chainer: notDOTbeDOTcalledWithNew): Chainable[Subject] = js.native
@@ -15373,6 +16111,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbechecked(chainer: notDOTbeDOTchecked): Chainable[Subject] = js.native
@@ -15387,6 +16128,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbecloseTo(chainer: notDOTbeDOTcloseTo, value: Double, delta: Double): Chainable[Subject] = js.native
@@ -15401,6 +16145,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbedisabled(chainer: notDOTbeDOTdisabled): Chainable[Subject] = js.native
@@ -15416,6 +16163,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeempty(chainer: notDOTbeDOTempty): Chainable[Subject] = js.native
@@ -15430,6 +16180,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeenabled(chainer: notDOTbeDOTenabled): Chainable[Subject] = js.native
@@ -15444,6 +16197,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbefalse(chainer: notDOTbeDOTfalse): Chainable[Subject] = js.native
@@ -15458,6 +16214,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbefocused(chainer: notDOTbeDOTfocused): Chainable[Subject] = js.native
@@ -15474,6 +16233,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbegreaterThan(chainer: notDOTbeDOTgreaterThan, value: Double): Chainable[Subject] = js.native
@@ -15490,6 +16252,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbegt(chainer: notDOTbeDOTgt, value: Double): Chainable[Subject] = js.native
@@ -15506,6 +16271,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbegte(chainer: notDOTbeDOTgte, value: Double): Chainable[Subject] = js.native
@@ -15520,6 +16288,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbehidden(chainer: notDOTbeDOThidden): Chainable[Subject] = js.native
@@ -15534,6 +16305,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeinstanceOf(chainer: notDOTbeDOTinstanceOf, value: js.Any): Chainable[Subject] = js.native
@@ -15550,6 +16324,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbelessThan(chainer: notDOTbeDOTlessThan, value: Double): Chainable[Subject] = js.native
@@ -15566,6 +16343,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbelt(chainer: notDOTbeDOTlt, value: Double): Chainable[Subject] = js.native
@@ -15582,6 +16362,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbelte(chainer: notDOTbeDOTlte, value: Double): Chainable[Subject] = js.native
@@ -15596,6 +16379,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeok(chainer: notDOTbeDOTok): Chainable[Subject] = js.native
@@ -15610,6 +16396,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeselected(chainer: notDOTbeDOTselected): Chainable[Subject] = js.native
@@ -15624,6 +16413,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbetrue(chainer: notDOTbeDOTtrue): Chainable[Subject] = js.native
@@ -15638,6 +16430,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbeundefined(chainer: notDOTbeDOTundefined): Chainable[Subject] = js.native
@@ -15652,6 +16447,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbevisible(chainer: notDOTbeDOTvisible): Chainable[Subject] = js.native
@@ -15667,6 +16465,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbewithin(chainer: notDOTbeDOTwithin, start: Double, end: Double): Chainable[Subject] = js.native
@@ -15674,6 +16475,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notbewithin(chainer: notDOTbeDOTwithin, start: Date, end: Date): Chainable[Subject] = js.native
@@ -15692,6 +16496,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notchange(chainer: notDOTchange, fn: js.Function1[/* repeated */ js.Any, _]): Chainable[Subject] = js.native
@@ -15708,6 +16515,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notchange(chainer: notDOTchange, obj: js.Object, prop: String): Chainable[Subject] = js.native
@@ -15722,6 +16532,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notcontain(chainer: notDOTcontain, value: String): Chainable[Subject] = js.native
@@ -15737,6 +16550,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notcontain(chainer: notDOTcontain, value: js.Any): Chainable[Subject] = js.native
@@ -15751,6 +16567,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notcontainhtml(chainer: notDOTcontainDOThtml, value: String): Chainable[Subject] = js.native
@@ -15765,6 +16584,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notcontaintext(chainer: notDOTcontainDOTtext, value: String): Chainable[Subject] = js.native
@@ -15779,6 +16601,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notcontainvalue(chainer: notDOTcontainDOTvalue, value: String): Chainable[Subject] = js.native
@@ -15797,6 +16622,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notdecrease(chainer: notDOTdecrease, fn: js.Function1[/* repeated */ js.Any, _]): Chainable[Subject] = js.native
@@ -15813,6 +16641,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notdecrease(chainer: notDOTdecrease, obj: js.Object, prop: String): Chainable[Subject] = js.native
@@ -15827,6 +16658,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notdeepequal(chainer: notDOTdeepDOTequal, value: Subject): Chainable[Subject] = js.native
@@ -15842,6 +16676,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_noteq(chainer: notDOTeq, value: js.Any): Chainable[Subject] = js.native
@@ -15856,6 +16693,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_noteql(chainer: notDOTeql, value: js.Any): Chainable[Subject] = js.native
@@ -15870,6 +16710,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notequal(chainer: notDOTequal, value: js.Any): Chainable[Subject] = js.native
@@ -15884,6 +16727,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notexist(chainer: notDOTexist): Chainable[Subject] = js.native
@@ -15898,6 +16744,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveallkeys(chainer: notDOThaveDOTallDOTkeys, value: String*): Chainable[Subject] = js.native
@@ -15910,6 +16759,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavealwaysthrown(chainer: notDOThaveDOTalwaysDOTthrown): Chainable[Subject] = js.native
@@ -15930,6 +16782,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveanykeys(chainer: notDOThaveDOTanyDOTkeys, value: String*): Chainable[Subject] = js.native
@@ -15945,6 +16800,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveattr(chainer: notDOThaveDOTattr, value: String): Chainable[Subject] = js.native
@@ -15959,6 +16817,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavecallCount(chainer: notDOThaveDOTcallCount, value: Double): Chainable[Subject] = js.native
@@ -15973,6 +16834,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveclass(chainer: notDOThaveDOTclass, value: String): Chainable[Subject] = js.native
@@ -15987,6 +16851,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavecss(chainer: notDOThaveDOTcss, value: String): Chainable[Subject] = js.native
@@ -16003,6 +16870,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavedata(chainer: notDOThaveDOTdata, value: String): Chainable[Subject] = js.native
@@ -16019,6 +16889,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavedeepproperty(chainer: notDOThaveDOTdeepDOTproperty, value: String, obj: js.Object): Chainable[Subject] = js.native
@@ -16033,6 +16906,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavedescendants(chainer: notDOThaveDOTdescendants, selector: String): Chainable[Subject] = js.native
@@ -16047,6 +16923,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavefocus(chainer: notDOThaveDOTfocus): Chainable[Subject] = js.native
@@ -16061,6 +16940,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavehtml(chainer: notDOThaveDOThtml, value: String): Chainable[Subject] = js.native
@@ -16075,6 +16957,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveid(chainer: notDOThaveDOTid, value: String): Chainable[Subject] = js.native
@@ -16093,6 +16978,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelength(chainer: notDOThaveDOTlength, value: Double): Chainable[Subject] = js.native
@@ -16108,6 +16996,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelengthgreaterThan(chainer: notDOThaveDOTlengthDOTgreaterThan, value: Double): Chainable[Subject] = js.native
@@ -16123,6 +17014,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelengthgt(chainer: notDOThaveDOTlengthDOTgt, value: Double): Chainable[Subject] = js.native
@@ -16138,6 +17032,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelengthlessThan(chainer: notDOThaveDOTlengthDOTlessThan, value: Double): Chainable[Subject] = js.native
@@ -16153,6 +17050,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelengthlt(chainer: notDOThaveDOTlengthDOTlt, value: Double): Chainable[Subject] = js.native
@@ -16168,6 +17068,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavelengthlte(chainer: notDOThaveDOTlengthDOTlte, value: Double): Chainable[Subject] = js.native
@@ -16182,6 +17085,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavemembers(chainer: notDOThaveDOTmembers, values: js.Array[_]): Chainable[Subject] = js.native
@@ -16196,6 +17102,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveorderedmembers(chainer: notDOThaveDOTorderedDOTmembers, values: js.Array[_]): Chainable[Subject] = js.native
@@ -16211,6 +17120,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveownProperty(chainer: notDOThaveDOTownProperty, property: String): Chainable[Subject] = js.native
@@ -16226,6 +17138,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveprop(chainer: notDOThaveDOTprop, value: String): Chainable[Subject] = js.native
@@ -16243,6 +17158,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothaveproperty(chainer: notDOThaveDOTproperty, property: String): Chainable[Subject] = js.native
@@ -16259,6 +17177,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavestring(chainer: notDOThaveDOTstring, `match`: String): Chainable[Subject] = js.native
@@ -16275,6 +17196,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavetext(chainer: notDOThaveDOTtext, value: String): Chainable[Subject] = js.native
@@ -16287,6 +17211,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavethrown(chainer: notDOThaveDOTthrown): Chainable[Subject] = js.native
@@ -16307,6 +17234,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_nothavevalue(chainer: notDOThaveDOTvalue, value: String): Chainable[Subject] = js.native
@@ -16321,9 +17251,29 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notinclude(chainer: notDOTinclude, value: js.Any): Chainable[Subject] = js.native
+  /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.include.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_notincludehtml(chainer: notDOTincludeDOThtml, value: String): Chainable[Subject] = js.native
   /**
     * When the target is a string, `.include` asserts that the given string `val` is not a substring of the target.
     * @example
@@ -16335,9 +17285,46 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notincludemembers(chainer: notDOTincludeDOTmembers, value: js.Array[_]): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.include.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_notincludetext(chainer: notDOTincludeDOTtext, value: String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.include.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_notincludevalue(chainer: notDOTincludeDOTvalue, value: String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.increase` asserts that the given function `subject` returns a greater number when it’s
     * invoked after invoking the target function compared to when it’s invoked beforehand.
@@ -16355,6 +17342,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notincrease(chainer: notDOTincrease, value: js.Object, property: String): Chainable[Subject] = js.native
@@ -16369,6 +17359,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notmatch(chainer: notDOTmatch, value: String): Chainable[Subject] = js.native
@@ -16383,6 +17376,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notmatch(chainer: notDOTmatch, value: RegExp): Chainable[Subject] = js.native
@@ -16400,6 +17396,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notrespondTo(chainer: notDOTrespondTo, value: String): Chainable[Subject] = js.native
@@ -16412,6 +17411,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notreturned(chainer: notDOTreturned, value: js.Any): Chainable[Subject] = js.native
@@ -16426,6 +17428,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_notsatisfy(chainer: notDOTsatisfy, fn: js.Function1[/* val */ js.Any, Boolean]): Chainable[Subject] = js.native
@@ -16443,6 +17448,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_respondTo(chainer: respondTo, value: String): Chainable[Subject] = js.native
@@ -16455,6 +17463,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_returned(chainer: returned, value: js.Any): Chainable[Subject] = js.native
@@ -16469,6 +17480,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_satisfy(chainer: satisfy, fn: js.Function1[/* val */ js.Any, Boolean]): Chainable[Subject] = js.native
@@ -16487,6 +17501,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_throw(chainer: `throw`): Chainable[Subject] = js.native
@@ -16512,6 +17529,9 @@ trait Chainable[Subject] extends js.Object {
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
     */
   @JSName("should")
   def should_throw(chainer: `throw`, error: Error): Chainable[Subject] = js.native
@@ -16802,9 +17822,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("siblings")
   def siblings_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("siblings")
-  def siblings_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
+  def siblings_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("siblings")
-  def siblings_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
+  def siblings_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
   @JSName("siblings")
   def siblings_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("siblings")

@@ -35,7 +35,6 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SearchField
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.TabPage
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.TextArea
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.WidgetValidation
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.StaticTextValue
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IProject
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IProjectDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.Project
@@ -154,7 +153,6 @@ object textsNs extends js.Object {
     val containerAsReportDateRangeSelector: ReportDateRangeSelector = js.native
     val containerAsSearchField: SearchField = js.native
     val containerAsStaticLabel: StaticLabel = js.native
-    val containerAsStaticTextValue: StaticTextValue = js.native
     val containerAsSystemText: SystemText = js.native
     val containerAsTabPage: TabPage = js.native
     val containerAsTextArea: TextArea = js.native
@@ -518,15 +516,6 @@ object textsNs extends js.Object {
       * of the parent documenttemplates.StaticLabel element passed as argument.
       */
     def createInStaticLabelUnderCaption(container: StaticLabel): Text = js.native
-    /**
-      * Creates and returns a new Text instance in the SDK and on the server.
-      * The new Text will be automatically stored in the 'value' property
-      * of the parent pluginwidgets.StaticTextValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.16.0 to 7.18.0
-      */
-    def createInStaticTextValueUnderValue(container: StaticTextValue): Text = js.native
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'text' property

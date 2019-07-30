@@ -44,7 +44,6 @@ import typings.std.Error
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.Node
-import typings.std.Window
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -740,7 +739,7 @@ trait JQueryStatic extends js.Object {
     *
     * @deprecated Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/3629 }\`.
     */
-  def isWindow(obj: js.Any): /* is std.Window */ Boolean = js.native
+  def isWindow(obj: js.Any): /* is cypress.Window */ Boolean = js.native
   /**
     * Check to see if a DOM node is within an XML document (or is an XML document).
     *

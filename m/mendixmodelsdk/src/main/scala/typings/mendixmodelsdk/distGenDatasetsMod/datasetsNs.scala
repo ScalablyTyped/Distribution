@@ -299,6 +299,10 @@ object datasetsNs extends js.Object {
       container: AbstractElement
     ) = this()
     val columns: IList[DataSetColumn] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var useLegacyCodeGeneration: Boolean = js.native
   }
   
   @js.native

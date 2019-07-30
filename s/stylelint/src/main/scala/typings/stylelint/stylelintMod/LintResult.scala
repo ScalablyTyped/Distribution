@@ -10,7 +10,7 @@ trait LintResult extends js.Object {
   var ignored: js.UndefOr[Boolean] = js.undefined
   var invalidOptionWarnings: js.Array[_]
   var source: String
-  var warnings: js.Array[String]
+  var warnings: js.Array[Warning]
 }
 
 object LintResult {
@@ -19,7 +19,7 @@ object LintResult {
     deprecations: js.Array[String],
     invalidOptionWarnings: js.Array[_],
     source: String,
-    warnings: js.Array[String],
+    warnings: js.Array[Warning],
     errored: js.UndefOr[Boolean] = js.undefined,
     ignored: js.UndefOr[Boolean] = js.undefined
   ): LintResult = {

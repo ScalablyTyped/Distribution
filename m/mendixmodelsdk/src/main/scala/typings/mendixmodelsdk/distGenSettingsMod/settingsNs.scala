@@ -26,6 +26,7 @@ import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ProjectSettings
 import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ProjectSettingsPart
 import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.RoundingMode
 import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.RuntimeSettings
+import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.ThemeConversionStatusEnum
 import typings.mendixmodelsdk.distGenSettingsMod.settingsNs.WebUIProjectSettingsPart
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -334,6 +335,9 @@ object settingsNs extends js.Object {
   }
   
   @js.native
+  class ThemeConversionStatusEnum () extends AbstractEnum
+  
+  @js.native
   class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
     def this(
       model: AbstractModel,
@@ -357,6 +361,10 @@ object settingsNs extends js.Object {
       */
     var feedbackWidgetUpdated: Boolean = js.native
     var theme: String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var themeConversionStatus: ThemeConversionStatusEnum = js.native
     /**
       * In version 7.9.0: introduced
       */
@@ -658,6 +666,16 @@ object settingsNs extends js.Object {
       * of the parent ProjectSettings element passed as argument.
       */
     def createIn(container: ProjectSettings): RuntimeSettings = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ThemeConversionStatusEnum extends js.Object {
+    var AtlasNotFound: ThemeConversionStatusEnum = js.native
+    var ChangesInAtlas: ThemeConversionStatusEnum = js.native
+    var ConvertedChangesInCustom: ThemeConversionStatusEnum = js.native
+    var ConvertedChangesInVariables: ThemeConversionStatusEnum = js.native
+    var Done: ThemeConversionStatusEnum = js.native
   }
   
   /* static members */

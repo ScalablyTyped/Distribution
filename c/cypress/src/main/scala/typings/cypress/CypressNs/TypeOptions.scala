@@ -25,6 +25,13 @@ trait TypeOptions
     */
   var force: Boolean
   /**
+    * Parse special characters for strings surrounded by `{}`,
+    * such as `{esc}`. Set to `false` to type the literal characters instead
+    *
+    * @default true
+    */
+  var parseSpecialCharSequences: Boolean
+  /**
     * Keep a modifier activated between commands
     *
     * @default true
@@ -34,8 +41,15 @@ trait TypeOptions
 
 object TypeOptions {
   @scala.inline
-  def apply(delay: Double, force: Boolean, log: Boolean, release: Boolean, timeout: Double): TypeOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, force = force, log = log, release = release, timeout = timeout)
+  def apply(
+    delay: Double,
+    force: Boolean,
+    log: Boolean,
+    parseSpecialCharSequences: Boolean,
+    release: Boolean,
+    timeout: Double
+  ): TypeOptions = {
+    val __obj = js.Dynamic.literal(delay = delay, force = force, log = log, parseSpecialCharSequences = parseSpecialCharSequences, release = release, timeout = timeout)
   
     __obj.asInstanceOf[TypeOptions]
   }

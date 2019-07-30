@@ -15,6 +15,8 @@ trait MapboxOptions extends js.Object {
   var bearing: js.UndefOr[Double] = js.undefined
   /** Snap to north threshold in degrees. */
   var bearingSnap: js.UndefOr[Double] = js.undefined
+  /** The initial bounds of the map. If bounds is specified, it overrides center and zoom constructor options. */
+  var bounds: js.UndefOr[LngLatBoundsLike] = js.undefined
   /** If true, enable the "box zoom" interaction (see BoxZoomHandler) */
   var boxZoom: js.UndefOr[Boolean] = js.undefined
   /** initial map center */
@@ -63,6 +65,8 @@ trait MapboxOptions extends js.Object {
   var fadeDuration: js.UndefOr[Double] = js.undefined
   /** If true, map creation will fail if the implementation determines that the performance of the created WebGL context would be dramatically lower than expected. */
   var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  /** A fitBounds options object to use only when setting the bounds option. */
+  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
   /** If true, the map will track and update the page URL according to map position */
   var hash: js.UndefOr[Boolean] = js.undefined
   /** If false, no mouse, touch, or keyboard listeners are attached to the map, so it will not respond to input */
@@ -151,6 +155,7 @@ object MapboxOptions {
     attributionControl: js.UndefOr[Boolean] = js.undefined,
     bearing: Int | Double = null,
     bearingSnap: Int | Double = null,
+    bounds: LngLatBoundsLike = null,
     boxZoom: js.UndefOr[Boolean] = js.undefined,
     center: LngLatLike = null,
     clickTolerance: Int | Double = null,
@@ -162,6 +167,7 @@ object MapboxOptions {
     dragRotate: js.UndefOr[Boolean] = js.undefined,
     fadeDuration: Int | Double = null,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
+    fitBoundsOptions: FitBoundsOptions = null,
     hash: js.UndefOr[Boolean] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
@@ -187,6 +193,7 @@ object MapboxOptions {
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
@@ -198,6 +205,7 @@ object MapboxOptions {
     if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)
     if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat)
+    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions)
     if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)

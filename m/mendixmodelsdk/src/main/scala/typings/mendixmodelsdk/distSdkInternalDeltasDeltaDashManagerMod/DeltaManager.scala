@@ -12,15 +12,15 @@ class DeltaManager protected () extends IDeltaManager {
   var callCloseCallback: js.Any = js.native
   var callErrorCallback: js.Any = js.native
   var closeCallback: js.Any = js.native
-  var commitTransaction: js.Any = js.native
   var deltaProcessor: js.Any = js.native
   var deltaReverser: js.Any = js.native
   var deltaSender: js.Any = js.native
   var errorCallback: js.Any = js.native
   var eventEmitter: js.Any = js.native
+  var getReverseDelta: js.Any = js.native
+  var handleTransactionCommited: js.Any = js.native
+  var handleTransactionRollback: js.Any = js.native
   var model: js.Any = js.native
-  var scheduleCommitTransaction: js.Any = js.native
-  var transactionChecks: js.Any = js.native
-  var transactionPending: js.Any = js.native
+  var transactionManager: js.Any = js.native
 }
 

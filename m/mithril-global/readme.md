@@ -1,7 +1,7 @@
 
 # Scala.js typings for mithril-global
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 
 

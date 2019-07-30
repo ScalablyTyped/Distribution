@@ -69,5 +69,6 @@ trait OverlayScrollbarsStatic extends js.Object {
   @JSName("extension")
   def extension_Unit(extensionName: String): Unit = js.native
   def globals(): Globals = js.native
+  def valid(osInstance: js.Any): Boolean = js.native
 }
 

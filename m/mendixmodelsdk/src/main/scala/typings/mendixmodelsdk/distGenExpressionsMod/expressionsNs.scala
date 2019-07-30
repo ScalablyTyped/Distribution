@@ -45,6 +45,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.InspectAttribute
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.LogMessageAction
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.MemberChange
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.MicroflowCallParameterMapping
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.NanoflowCallParameterMapping
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.ProxyConfiguration
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.RestCallAction
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.RuleCallParameterMapping
@@ -53,7 +54,6 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.WebServiceCallAc
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflowsNs.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.WidgetValidation
-import typings.mendixmodelsdk.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractEnum
@@ -202,7 +202,6 @@ object expressionsNs extends js.Object {
     val containerAsDocumentTemplateParameterMapping: DocumentTemplateParameterMapping = js.native
     val containerAsEndEvent: EndEvent = js.native
     val containerAsExpressionSplitCondition: ExpressionSplitCondition = js.native
-    val containerAsExpressionValue: ExpressionValue = js.native
     val containerAsFormDataPart: FormDataPart = js.native
     val containerAsFunctionCallExpression: FunctionCallExpression = js.native
     val containerAsGenerateDocumentAction: GenerateDocumentAction = js.native
@@ -213,6 +212,7 @@ object expressionsNs extends js.Object {
     val containerAsLogMessageAction: LogMessageAction = js.native
     val containerAsMemberChange: MemberChange = js.native
     val containerAsMicroflowCallParameterMapping: MicroflowCallParameterMapping = js.native
+    val containerAsNanoflowCallParameterMapping: NanoflowCallParameterMapping = js.native
     val containerAsParenthesisExpression: ParenthesisExpression = js.native
     val containerAsProxyConfiguration: ProxyConfiguration = js.native
     val containerAsRestCallAction: RestCallAction = js.native
@@ -658,15 +658,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new BinaryExpression instance in the SDK and on the server.
       * The new BinaryExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): BinaryExpression = js.native
-    /**
-      * Creates and returns a new BinaryExpression instance in the SDK and on the server.
-      * The new BinaryExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -817,6 +808,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BinaryExpression = js.native
+    /**
+      * Creates and returns a new BinaryExpression instance in the SDK and on the server.
+      * The new BinaryExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BinaryExpression = js.native
     /**
       * Creates and returns a new BinaryExpression instance in the SDK and on the server.
       * The new BinaryExpression will be automatically stored in the 'expression' property
@@ -1105,15 +1105,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
       * The new BooleanLiteral will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): BooleanLiteral = js.native
-    /**
-      * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
-      * The new BooleanLiteral will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -1264,6 +1255,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BooleanLiteral = js.native
+    /**
+      * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
+      * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BooleanLiteral = js.native
     /**
       * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
       * The new BooleanLiteral will be automatically stored in the 'expression' property
@@ -1532,15 +1532,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
       * The new ConstantRefExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): ConstantRefExpression = js.native
-    /**
-      * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
-      * The new ConstantRefExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -1691,6 +1682,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): ConstantRefExpression = js.native
+    /**
+      * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
+      * The new ConstantRefExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): ConstantRefExpression = js.native
     /**
       * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
       * The new ConstantRefExpression will be automatically stored in the 'expression' property
@@ -1959,15 +1959,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
       * The new EmptyLiteral will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): EmptyLiteral = js.native
-    /**
-      * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
-      * The new EmptyLiteral will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -2118,6 +2109,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EmptyLiteral = js.native
+    /**
+      * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
+      * The new EmptyLiteral will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EmptyLiteral = js.native
     /**
       * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
       * The new EmptyLiteral will be automatically stored in the 'expression' property
@@ -2386,15 +2386,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
       * The new EnumerationValueRefExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): EnumerationValueRefExpression = js.native
-    /**
-      * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
-      * The new EnumerationValueRefExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -2545,6 +2536,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EnumerationValueRefExpression = js.native
+    /**
+      * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
+      * The new EnumerationValueRefExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EnumerationValueRefExpression = js.native
     /**
       * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
       * The new EnumerationValueRefExpression will be automatically stored in the 'expression' property
@@ -2820,15 +2820,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new FloatLiteral instance in the SDK and on the server.
       * The new FloatLiteral will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): FloatLiteral = js.native
-    /**
-      * Creates and returns a new FloatLiteral instance in the SDK and on the server.
-      * The new FloatLiteral will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -2979,6 +2970,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): FloatLiteral = js.native
+    /**
+      * Creates and returns a new FloatLiteral instance in the SDK and on the server.
+      * The new FloatLiteral will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): FloatLiteral = js.native
     /**
       * Creates and returns a new FloatLiteral instance in the SDK and on the server.
       * The new FloatLiteral will be automatically stored in the 'expression' property
@@ -3247,15 +3247,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
       * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): FunctionCallExpression = js.native
-    /**
-      * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
-      * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -3406,6 +3397,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): FunctionCallExpression = js.native
+    /**
+      * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
+      * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): FunctionCallExpression = js.native
     /**
       * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
       * The new FunctionCallExpression will be automatically stored in the 'expression' property
@@ -3696,15 +3696,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new IfExpression instance in the SDK and on the server.
       * The new IfExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): IfExpression = js.native
-    /**
-      * Creates and returns a new IfExpression instance in the SDK and on the server.
-      * The new IfExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -3855,6 +3846,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IfExpression = js.native
+    /**
+      * Creates and returns a new IfExpression instance in the SDK and on the server.
+      * The new IfExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IfExpression = js.native
     /**
       * Creates and returns a new IfExpression instance in the SDK and on the server.
       * The new IfExpression will be automatically stored in the 'expression' property
@@ -4123,15 +4123,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
       * The new IntegerLiteral will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): IntegerLiteral = js.native
-    /**
-      * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
-      * The new IntegerLiteral will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -4282,6 +4273,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IntegerLiteral = js.native
+    /**
+      * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
+      * The new IntegerLiteral will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IntegerLiteral = js.native
     /**
       * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
       * The new IntegerLiteral will be automatically stored in the 'expression' property
@@ -4557,15 +4557,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new NoExpression instance in the SDK and on the server.
       * The new NoExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): NoExpression = js.native
-    /**
-      * Creates and returns a new NoExpression instance in the SDK and on the server.
-      * The new NoExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -4716,6 +4707,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): NoExpression = js.native
+    /**
+      * Creates and returns a new NoExpression instance in the SDK and on the server.
+      * The new NoExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): NoExpression = js.native
     /**
       * Creates and returns a new NoExpression instance in the SDK and on the server.
       * The new NoExpression will be automatically stored in the 'expression' property
@@ -5006,15 +5006,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
       * The new ParenthesisExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): ParenthesisExpression = js.native
-    /**
-      * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
-      * The new ParenthesisExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -5165,6 +5156,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): ParenthesisExpression = js.native
+    /**
+      * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
+      * The new ParenthesisExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): ParenthesisExpression = js.native
     /**
       * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
       * The new ParenthesisExpression will be automatically stored in the 'expression' property
@@ -5433,15 +5433,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new StringLiteral instance in the SDK and on the server.
       * The new StringLiteral will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): StringLiteral = js.native
-    /**
-      * Creates and returns a new StringLiteral instance in the SDK and on the server.
-      * The new StringLiteral will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -5592,6 +5583,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): StringLiteral = js.native
+    /**
+      * Creates and returns a new StringLiteral instance in the SDK and on the server.
+      * The new StringLiteral will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): StringLiteral = js.native
     /**
       * Creates and returns a new StringLiteral instance in the SDK and on the server.
       * The new StringLiteral will be automatically stored in the 'expression' property
@@ -5860,15 +5860,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new UnaryExpression instance in the SDK and on the server.
       * The new UnaryExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): UnaryExpression = js.native
-    /**
-      * Creates and returns a new UnaryExpression instance in the SDK and on the server.
-      * The new UnaryExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -6019,6 +6010,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): UnaryExpression = js.native
+    /**
+      * Creates and returns a new UnaryExpression instance in the SDK and on the server.
+      * The new UnaryExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): UnaryExpression = js.native
     /**
       * Creates and returns a new UnaryExpression instance in the SDK and on the server.
       * The new UnaryExpression will be automatically stored in the 'expression' property
@@ -6294,15 +6294,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
       * The new UnparsableExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): UnparsableExpression = js.native
-    /**
-      * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
-      * The new UnparsableExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -6453,6 +6444,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): UnparsableExpression = js.native
+    /**
+      * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
+      * The new UnparsableExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): UnparsableExpression = js.native
     /**
       * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
       * The new UnparsableExpression will be automatically stored in the 'expression' property
@@ -6728,15 +6728,6 @@ object expressionsNs extends js.Object {
     /**
       * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
       * The new VariableRefExpression will be automatically stored in the 'valueModel' property
-      * of the parent pluginwidgets.ExpressionValue element passed as argument.
-      *
-      * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 to 7.18.0
-      */
-    def createInExpressionValueUnderValueModel(container: ExpressionValue): VariableRefExpression = js.native
-    /**
-      * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
-      * The new VariableRefExpression will be automatically stored in the 'valueModel' property
       * of the parent microflows.FormDataPart element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -6887,6 +6878,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 and higher
       */
     def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): VariableRefExpression = js.native
+    /**
+      * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
+      * The new VariableRefExpression will be automatically stored in the 'argumentModel' property
+      * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): VariableRefExpression = js.native
     /**
       * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
       * The new VariableRefExpression will be automatically stored in the 'expression' property

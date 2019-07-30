@@ -374,6 +374,10 @@ object customwidgetsNs extends js.Object {
     var model_WidgetValueType: IModel = js.native
     var multiline: Boolean = js.native
     var objectType: WidgetObjectType | Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var onChangeProperty: String = js.native
     var parameterIsList: Boolean = js.native
     var pathType: PathType = js.native
     var required: Boolean = js.native

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.7.2-6f485e"
+version := "2.8.0-83ac54"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.8.1-8b715d",
+  "org.scalablytyped" %%% "apollo-cache-control" % "0.8.1-28a5af",
   "org.scalablytyped" %%% "apollo-datasource" % "0.6.1-edceaf",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.4.2-aa65e7",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.4.2-756bc8",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-c6f06d",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-16bcb2",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a37b56",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.7.2-12828c",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.8.0-e40724",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-b6f3b7",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.1-e7b445",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.7.2-b4db9d",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.8.0-ac22f8",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.1-2057ff",
   "org.scalablytyped" %%% "apollo-server-types" % "0.2.1-858381",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.4.0-50eec6",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-083460",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-df4cf9",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-fd24a4",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.8.2-f5d3fb",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.9.0-f5d3fb",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-180b44",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.5-7862ab",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",

@@ -5,26 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated use `Mocha.Context` instead. */
+@js.native
 trait ITestCallbackContext
   extends /* index */ StringDictionary[js.Any] {
-  def retries(n: Double): this.type
-  def skip(): this.type
-  def slow(ms: Double): this.type
-  def timeout(ms: Double): this.type
-}
-
-object ITestCallbackContext {
-  @scala.inline
-  def apply(
-    retries: Double => ITestCallbackContext,
-    skip: () => ITestCallbackContext,
-    slow: Double => ITestCallbackContext,
-    timeout: Double => ITestCallbackContext,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null
-  ): ITestCallbackContext = {
-    val __obj = js.Dynamic.literal(retries = js.Any.fromFunction1(retries), skip = js.Any.fromFunction0(skip), slow = js.Any.fromFunction1(slow), timeout = js.Any.fromFunction1(timeout))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[ITestCallbackContext]
-  }
+  /** @deprecated `.retries()` has additional overloads in `Mocha.Context`. */
+  def retries(n: Double): this.type = js.native
+  /** @deprecated `.skip()` returns `never` in `Mocha.Context`. */
+  def skip(): this.type = js.native
+  /** @deprecated `.slow()` has additional overloads in `Mocha.Context`. */
+  def slow(ms: Double): this.type = js.native
+  def timeout(ms: String): this.type = js.native
+  /** @deprecated `.timeout()` has additional overloads in `Mocha.Context`. */
+  def timeout(ms: Double): this.type = js.native
 }
 

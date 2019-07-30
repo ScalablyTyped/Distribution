@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod
 import typings.mendixmodelsdk.distCommonMod.commonNs.ICallback
 import typings.mendixmodelsdk.distCommonMod.commonNs.IErrorCallback
 import typings.mendixmodelsdk.distCommonMod.commonNs.IVoidCallback
+import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IAbstractUnitJson
 import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus
 import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus
 import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IGetFilesOptions
@@ -33,6 +34,15 @@ trait IAbstractModel extends js.Object {
     * The meta data of the model.
     */
   var workingCopy: IWorkingCopy = js.native
+  /**
+    * Adds the given module json to the project, which will make the module and its units read-only and unloadable.
+    *
+    * Gives **error** if
+    * - The JSON isn't an array
+    * - The module package is not compatible with the same metamodel version as the project
+    */
+  def addModuleUnitInterfaces(moduleJson: String): Unit = js.native
+  def addModuleUnitInterfaces(moduleJson: js.Array[IAbstractUnitJson]): Unit = js.native
   /**
     * Returns all units in the project, including modules, folders etc.
     * To retrieve all "real" documents (pages, microflows etc.), use allDocuments().
@@ -153,8 +163,10 @@ trait IAbstractModel extends js.Object {
     * - A module with the same name already exists
     * - The module package is not using the same metamodel version as the project
     */
+  def importModuleMpk(mpkPath: String, callback: IVoidCallback): Unit = js.native
   def importModuleMpk(mpkPath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
   def importModuleMpk(mpkPath: Blob): js.Promise[Unit] = js.native
+  def importModuleMpk(mpkPath: Blob, callback: IVoidCallback): Unit = js.native
   def importModuleMpk(mpkPath: Blob, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
   def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean): js.Promise[T] = js.native
   /**

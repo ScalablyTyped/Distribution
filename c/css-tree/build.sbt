@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-tree"
-version := "1.0-dt-20181116Z-d3c1de"
+version := "1.0-dt-20190729Z-34ab9e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

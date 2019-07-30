@@ -16,10 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def contains(range: IVersionRange, version: typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.Version): Boolean = js.native
-  def createElementFromJSON(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
-    json: IAbstractElementJson
-  ): typings.mendixmodelsdk.distSdkInternalElementsMod.Element = js.native
+  def createElementFromJSON(model: IAbstractModel, json: IAbstractElementJson): typings.mendixmodelsdk.distSdkInternalElementsMod.Element = js.native
   def createInVersionCheck(model: IAbstractModel, structureTypeName: String, versionRange: IVersionRange): Unit = js.native
   def isAtLeast(versionString: String, model: IAbstractModel): Boolean = js.native
   def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/local-by-name-reference.INamedElement */ Boolean = js.native

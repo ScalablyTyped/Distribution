@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constantsNs.IConstant
 import typings.mendixmodelsdk.distGenDatatypesMod.datatypesNs.DataType
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAssociationBase
+import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAttribute
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IEntity
 import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappingsNs.IExportMapping
 import typings.mendixmodelsdk.distGenImportmappingsMod.importmappingsNs.IImportMapping
@@ -18,6 +19,7 @@ import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IFolderBase
 import typings.mendixmodelsdk.distGenRestMod.restNs.ConsumedODataService
 import typings.mendixmodelsdk.distGenRestMod.restNs.CorsConfiguration
+import typings.mendixmodelsdk.distGenRestMod.restNs.ODataAttribute
 import typings.mendixmodelsdk.distGenRestMod.restNs.ODataEntity
 import typings.mendixmodelsdk.distGenRestMod.restNs.ODataNavigationProperty
 import typings.mendixmodelsdk.distGenRestMod.restNs.PublishedODataService
@@ -150,6 +152,29 @@ object restNs extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class ODataAttribute protected () extends Element {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: ModelUnit,
+      container: AbstractElement
+    ) = this()
+    var attribute: IAttribute = js.native
+    val attributeQualifiedName: String = js.native
+    val containerAsODataEntity: ODataEntity = js.native
+    @JSName("model")
+    var model_ODataAttribute: IModel = js.native
+    var name: String = js.native
+  }
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
     * In version 7.18.0: introduced
     */
   @js.native
@@ -162,6 +187,12 @@ object restNs extends js.Object {
       unit: ModelUnit,
       container: AbstractElement
     ) = this()
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      *
+      * In version 8.0.0: introduced
+      */
+    val attributes: IList[ODataAttribute] = js.native
     val containerAsConsumedODataService: ConsumedODataService = js.native
     var entity: IEntity = js.native
     val entityQualifiedName: String = js.native
@@ -486,6 +517,28 @@ object restNs extends js.Object {
       *  7.18.0 and higher
       */
     def createIn(container: PublishedRestService): CorsConfiguration = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ODataAttribute extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new ODataAttribute instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): ODataAttribute = js.native
+    /**
+      * Creates and returns a new ODataAttribute instance in the SDK and on the server.
+      * The new ODataAttribute will be automatically stored in the 'attributes' property
+      * of the parent ODataEntity element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: ODataEntity): ODataAttribute = js.native
   }
   
   /* static members */

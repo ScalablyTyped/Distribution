@@ -1,6 +1,6 @@
 package typings.atPulumiAws
 
-import typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
+import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType
 import typings.atPulumiAws.autoscalingMetricsMod.Metric
 import typings.atPulumiAws.autoscalingNotificationTypeMod.NotificationType
@@ -325,7 +325,9 @@ object atPulumiAwsStrings {
   sealed trait `ap-southeast-2` extends Region
   
   @js.native
-  sealed trait application extends LoadBalancerType
+  sealed trait application
+    extends LoadBalancerType
+       with typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
   
   @js.native
   sealed trait aurora extends EngineType
@@ -711,7 +713,9 @@ object atPulumiAwsStrings {
   sealed trait dotnetcore2DOT1 extends Runtime
   
   @js.native
-  sealed trait dualstack extends IpAddressType
+  sealed trait dualstack
+    extends IpAddressType
+       with typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
   
   @js.native
   sealed trait `eu-central-1` extends Region
@@ -816,7 +820,9 @@ object atPulumiAwsStrings {
   sealed trait io1 extends StorageType
   
   @js.native
-  sealed trait ipv4 extends IpAddressType
+  sealed trait ipv4
+    extends IpAddressType
+       with typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
   
   @js.native
   sealed trait java8 extends Runtime
@@ -924,7 +930,9 @@ object atPulumiAwsStrings {
   sealed trait msgqueue extends UlimitName
   
   @js.native
-  sealed trait network extends LoadBalancerType
+  sealed trait network
+    extends LoadBalancerType
+       with typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
   
   @js.native
   sealed trait nice extends UlimitName

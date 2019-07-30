@@ -48,7 +48,7 @@ object LinterOptions {
     reportNeedlessDisables: Boolean,
     syntax: SyntaxType
   ): LinterOptions = {
-    val __obj = js.Dynamic.literal(cache = cache, cacheLocation = cacheLocation, code = code, codeFilename = codeFilename, config = config, configBasedir = configBasedir, configFile = configFile, configOverrides = configOverrides, customSyntax = customSyntax, disableDefaultIgnores = disableDefaultIgnores, files = files.asInstanceOf[js.Any], fix = fix, formatter = formatter, ignoreDisables = ignoreDisables, ignorePath = ignorePath, maxWarnings = maxWarnings, reportNeedlessDisables = reportNeedlessDisables, syntax = syntax)
+    val __obj = js.Dynamic.literal(cache = cache, cacheLocation = cacheLocation, code = code, codeFilename = codeFilename, config = config, configBasedir = configBasedir, configFile = configFile, configOverrides = configOverrides, customSyntax = customSyntax, disableDefaultIgnores = disableDefaultIgnores, files = files.asInstanceOf[js.Any], fix = fix, formatter = formatter.asInstanceOf[js.Any], ignoreDisables = ignoreDisables, ignorePath = ignorePath, maxWarnings = maxWarnings, reportNeedlessDisables = reportNeedlessDisables, syntax = syntax)
   
     __obj.asInstanceOf[LinterOptions]
   }
