@@ -12,7 +12,7 @@ trait EventParams extends js.Object {
   var coupon: js.UndefOr[String] = js.undefined
   var currency: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
-  var event_category: String
+  var event_category: js.UndefOr[String] = js.undefined
   var event_label: js.UndefOr[String] = js.undefined
   var fatal: js.UndefOr[Boolean] = js.undefined
   var items: js.UndefOr[js.Array[Item]] = js.undefined
@@ -30,7 +30,6 @@ trait EventParams extends js.Object {
 object EventParams {
   @scala.inline
   def apply(
-    event_category: String,
     checkout_option: String = null,
     checkout_step: Int | Double = null,
     content_id: String = null,
@@ -38,6 +37,7 @@ object EventParams {
     coupon: String = null,
     currency: String = null,
     description: String = null,
+    event_category: String = null,
     event_label: String = null,
     fatal: js.UndefOr[Boolean] = js.undefined,
     items: js.Array[Item] = null,
@@ -51,7 +51,7 @@ object EventParams {
     transaction_id: String = null,
     value: Int | Double = null
   ): EventParams = {
-    val __obj = js.Dynamic.literal(event_category = event_category)
+    val __obj = js.Dynamic.literal()
     if (checkout_option != null) __obj.updateDynamic("checkout_option")(checkout_option)
     if (checkout_step != null) __obj.updateDynamic("checkout_step")(checkout_step.asInstanceOf[js.Any])
     if (content_id != null) __obj.updateDynamic("content_id")(content_id)
@@ -59,6 +59,7 @@ object EventParams {
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (event_category != null) __obj.updateDynamic("event_category")(event_category)
     if (event_label != null) __obj.updateDynamic("event_label")(event_label)
     if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal)
     if (items != null) __obj.updateDynamic("items")(items)

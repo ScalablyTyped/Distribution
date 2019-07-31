@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "idyll-document"
-version := "2.9-dt-20190126Z-71a307"
+version := "2.9-dt-20190126Z-733525"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "idyll-compiler" % "3.1-dt-20190312Z-3258a7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

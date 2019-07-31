@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
   var cancelOpenTimeout: js.Any = js.native
+  var getIsOpen: js.Any = js.native
+  var getPopperModifiers: js.Any = js.native
   var handleMouseEnter: js.Any = js.native
   var handleMouseLeave: js.Any = js.native
   var handleOverlayClose: js.Any = js.native
@@ -17,6 +19,10 @@ class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
   var handleTargetBlur: js.Any = js.native
   var handleTargetClick: js.Any = js.native
   var handleTargetFocus: js.Any = js.native
+  var isArrowEnabled: js.Any = js.native
+  var isControlled: js.Any = js.native
+  var isElementInPopover: js.Any = js.native
+  var isHoverInteractionKind: js.Any = js.native
   var isMouseInTargetOrPopover: js.Any = js.native
   var lostFocusOnSamePage: js.Any = js.native
   /**
@@ -29,8 +35,11 @@ class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
   var refHandlers: js.Any = js.native
   var renderPopover: js.Any = js.native
   var renderTarget: js.Any = js.native
+  var setOpenState: js.Any = js.native
   /** DOM element that contains the target. */
   var targetElement: HTMLElement = js.native
+  var understandChildren: js.Any = js.native
+  var updateDarkParent: js.Any = js.native
   /** Popper modifier that updates React state (for style properties) based on latest data. */
   var updatePopoverState: js.Any = js.native
   @JSName("componentDidMount")
@@ -39,11 +48,6 @@ class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
   def componentDidUpdate_MPopover(): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MPopover(nextProps: IPopoverProps): Unit = js.native
-  /* private */ def getIsOpen(props: js.Any): js.Any = js.native
-  /* private */ def getPopperModifiers(): js.Any = js.native
-  /* private */ def isArrowEnabled(): js.Any = js.native
-  /* private */ def isElementInPopover(element: js.Any): js.Any = js.native
-  /* private */ def isHoverInteractionKind(): js.Any = js.native
   /**
     * Instance method to instruct the `Popover` to recompute its position.
     *
@@ -53,11 +57,6 @@ class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
     * detects a resize).
     */
   def reposition(): Unit = js.native
-  /* private */ def setOpenState(isOpen: js.Any): js.Any = js.native
-  /* private */ def setOpenState(isOpen: js.Any, e: js.Any): js.Any = js.native
-  /* private */ def setOpenState(isOpen: js.Any, e: js.Any, timeout: js.Any): js.Any = js.native
-  /* private */ def understandChildren(): js.Any = js.native
-  /* private */ def updateDarkParent(): js.Any = js.native
 }
 
 /* static members */

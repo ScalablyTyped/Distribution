@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait AuthorizeOptions extends js.Object {
   var accessType: js.UndefOr[String] = js.undefined
+  var appState: js.UndefOr[js.Any] = js.undefined
   var approvalPrompt: js.UndefOr[String] = js.undefined
   var audience: js.UndefOr[String] = js.undefined
   var clientID: js.UndefOr[String] = js.undefined
@@ -29,6 +30,7 @@ object AuthorizeOptions {
   @scala.inline
   def apply(
     accessType: String = null,
+    appState: js.Any = null,
     approvalPrompt: String = null,
     audience: String = null,
     clientID: String = null,
@@ -47,6 +49,7 @@ object AuthorizeOptions {
   ): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
     if (accessType != null) __obj.updateDynamic("accessType")(accessType)
+    if (appState != null) __obj.updateDynamic("appState")(appState)
     if (approvalPrompt != null) __obj.updateDynamic("approvalPrompt")(approvalPrompt)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (clientID != null) __obj.updateDynamic("clientID")(clientID)

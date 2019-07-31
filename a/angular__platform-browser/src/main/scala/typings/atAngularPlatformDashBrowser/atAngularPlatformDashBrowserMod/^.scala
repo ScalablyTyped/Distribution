@@ -25,7 +25,7 @@ object ^ extends js.Object {
   val ɵELEMENT_PROBE_PROVIDERS: js.Array[Provider] = js.native
   val ɵELEMENT_PROBE_PROVIDERS__POST_R3__ : js.Array[scala.Nothing] = js.native
   val ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS: js.Array[StaticProvider] = js.native
-  val ɵTRANSITION_ID: InjectionToken[js.Object] = js.native
+  val ɵTRANSITION_ID: InjectionToken[js.Any] = js.native
   val ɵangular_packages_platform_browser_platform_browser_c: js.Array[StaticProvider] = js.native
   val ɵangular_packages_platform_browser_platform_browser_i: js.Array[StaticProvider] = js.native
   val ɵangular_packages_platform_browser_platform_browser_k: js.Array[Provider] = js.native

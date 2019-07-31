@@ -14,8 +14,6 @@ import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.Headers
 import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.RefreshOptions
 import typings.googleDashAuthDashLibrary.buildSrcAuthRefreshclientMod.UserRefreshClient
 import typings.googleDashAuthDashLibrary.buildSrcTransportersMod.Transporter
-import typings.node.NodeJSNs.Platform
-import typings.node.fsMod.ReadStream
 import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
@@ -26,6 +24,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class GoogleAuth () extends js.Object {
   def this(opts: GoogleAuthOptions) = this()
+  /**
+    * Return a JWT or UserRefreshClient from JavaScript object, caching both the
+    * object used to instantiate and the client.
+    * @param json The input object.
+    * @param options The JWT or UserRefresh options for the client
+    * @returns JWT or UserRefresh Client with data
+    */
+  var _cacheClientFromJSON: js.Any = js.native
   var _cachedProjectId: js.UndefOr[js.Any] = js.native
   var _getDefaultProjectIdPromise: js.UndefOr[js.Any] = js.native
   /**
@@ -41,7 +47,6 @@ class GoogleAuth () extends js.Object {
     */
   var checkIsGCE: js.UndefOr[js.Any] = js.native
   var clientOptions: js.UndefOr[js.Any] = js.native
-  var createError: js.Any = js.native
   var fromStreamAsync: js.Any = js.native
   var getApplicationDefaultAsync: js.Any = js.native
   var getCredentialsAsync: js.Any = js.native
@@ -76,16 +81,6 @@ class GoogleAuth () extends js.Object {
     */
   def _checkIsGCE(): js.Promise[Boolean] = js.native
   /**
-    * Creates a file stream. Allows mocking.
-    * @api private
-    */
-  def _createReadStream(filePath: String): ReadStream = js.native
-  /**
-    * Determines whether a file exists. Allows mocking.
-    * @api private
-    */
-  def _fileExists(filePath: String): Boolean = js.native
-  /**
     * Attempts to load default credentials from a file at the given path..
     * @param filePath The path to the file to read.
     * @returns Promise that resolves with the OAuth2Client
@@ -93,21 +88,6 @@ class GoogleAuth () extends js.Object {
     */
   def _getApplicationCredentialsFromFilePath(filePath: String): js.Promise[JWT | UserRefreshClient] = js.native
   def _getApplicationCredentialsFromFilePath(filePath: String, options: RefreshOptions): js.Promise[JWT | UserRefreshClient] = js.native
-  /**
-    * Allows mocking of the path to a well-known file.
-    * @api private
-    */
-  def _mockWellKnownFilePath(filePath: String): String = js.native
-  /**
-    * Gets the current operating system platform. Allows mocking.
-    * @api private
-    */
-  def _osPlatform(): Platform = js.native
-  /**
-    * Joins two parts of a path. Allows mocking.
-    * @api private
-    */
-  def _pathJoin(item1: String, item2: String): String = js.native
   /**
     * Attempts to load default credentials from the environment variable path..
     * @returns Promise that resolves with the OAuth2Client or null.
@@ -173,7 +153,7 @@ class GoogleAuth () extends js.Object {
     * options were passed, use Application Default Credentials.
     */
   def getClient(): js.Promise[Compute | JWT | UserRefreshClient] = js.native
-  def getClient(options: GoogleAuthOptions): js.Promise[Compute | JWT | UserRefreshClient] = js.native
+  def getClient(options: DeprecatedGetClientOptions): js.Promise[Compute | JWT | UserRefreshClient] = js.native
   /**
     * The callback function handles a credential object that contains the
     * client_email and private_key (if exists).

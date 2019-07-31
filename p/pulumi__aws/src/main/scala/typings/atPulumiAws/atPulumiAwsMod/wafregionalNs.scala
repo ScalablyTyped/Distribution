@@ -4,6 +4,8 @@ import typings.atPulumiAws.wafregionalByteMatchSetMod.ByteMatchSetArgs
 import typings.atPulumiAws.wafregionalByteMatchSetMod.ByteMatchSetState
 import typings.atPulumiAws.wafregionalGeoMatchSetMod.GeoMatchSetArgs
 import typings.atPulumiAws.wafregionalGeoMatchSetMod.GeoMatchSetState
+import typings.atPulumiAws.wafregionalGetIpsetMod.GetIpsetArgs
+import typings.atPulumiAws.wafregionalGetIpsetMod.GetIpsetResult
 import typings.atPulumiAws.wafregionalGetRuleMod.GetRuleArgs
 import typings.atPulumiAws.wafregionalGetRuleMod.GetRuleResult
 import typings.atPulumiAws.wafregionalGetWebAclMod.GetWebAclArgs
@@ -231,6 +233,8 @@ object wafregionalNs extends js.Object {
     def this(name: String, args: XssMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getIpset(args: GetIpsetArgs): js.Promise[GetIpsetResult] with GetIpsetResult = js.native
+  def getIpset(args: GetIpsetArgs, opts: InvokeOptions): js.Promise[GetIpsetResult] with GetIpsetResult = js.native
   def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] with GetRuleResult = js.native
   def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] with GetRuleResult = js.native
   def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] with GetWebAclResult = js.native

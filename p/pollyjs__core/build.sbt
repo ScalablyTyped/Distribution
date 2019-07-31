@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pollyjs__core"
-version := "2.3-dt-20190227Z-fdf712"
+version := "2.6-dt-20190731Z-55b661"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "pollyjs__adapter" % "2.0-dt-20190131Z-668205",
-  "org.scalablytyped" %%% "pollyjs__persister" % "2.0-dt-20190131Z-63fb7f",
+  "org.scalablytyped" %%% "pollyjs__persister" % "2.0-dt-20190731Z-e43824",
   "org.scalablytyped" %%% "pollyjs__utils" % "2.0-dt-20190131Z-8a4586",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

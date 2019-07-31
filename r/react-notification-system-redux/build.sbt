@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-notification-system-redux"
-version := "1.1-dt-20180806Z-6a7ea8"
+version := "1.1-dt-20180806Z-0d1842"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
-  "org.scalablytyped" %%% "react-notification-system" % "0.2-dt-20190322Z-b78846",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react-notification-system" % "0.2-dt-20190322Z-8b4bf4",
   "org.scalablytyped" %%% "redux" % "4.0.4-567508",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

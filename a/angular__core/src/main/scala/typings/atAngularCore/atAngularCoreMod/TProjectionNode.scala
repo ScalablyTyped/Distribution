@@ -17,7 +17,7 @@ trait TProjectionNode extends TNode {
     * retrieved using LView.node).
     */
   @JSName("parent")
-  var parent_TProjectionNode: ɵangular_packages_core_core_bg | TElementContainerNode | Null
+  var parent_TProjectionNode: ɵangular_packages_core_core_bf | TElementContainerNode | Null
   /** Index of the projection node. (See TNode.projection for more info.) */
   @JSName("projection")
   var projection_TProjectionNode: Double
@@ -41,33 +41,29 @@ object TProjectionNode {
     tViews: Null,
     `type`: TNodeType,
     attrs: TAttributes = null,
+    classes: StylingMapArray | TStylingContext = null,
     initialInputs: InitialInputData = null,
     inputs: PropertyAliases = null,
     localNames: js.Array[String | Double] = null,
-    newClasses: TStylingContext = null,
-    newStyles: TStylingContext = null,
     next: TNode = null,
-    onElementCreationFns: js.Array[js.Function] = null,
     outputs: PropertyAliases = null,
-    parent: ɵangular_packages_core_core_bg | TElementContainerNode = null,
+    parent: ɵangular_packages_core_core_bf | TElementContainerNode = null,
     projectionNext: TNode = null,
-    stylingTemplate: StylingContext = null,
+    styles: StylingMapArray | TStylingContext = null,
     tagName: String = null
   ): TProjectionNode = {
     val __obj = js.Dynamic.literal(child = child, directiveEnd = directiveEnd, directiveStart = directiveStart, flags = flags, index = index, injectorIndex = injectorIndex, projection = projection, propertyMetadataEndIndex = propertyMetadataEndIndex, propertyMetadataStartIndex = propertyMetadataStartIndex, providerIndexes = providerIndexes, tViews = tViews)
     __obj.updateDynamic("type")(`type`)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (localNames != null) __obj.updateDynamic("localNames")(localNames)
-    if (newClasses != null) __obj.updateDynamic("newClasses")(newClasses)
-    if (newStyles != null) __obj.updateDynamic("newStyles")(newStyles)
     if (next != null) __obj.updateDynamic("next")(next)
-    if (onElementCreationFns != null) __obj.updateDynamic("onElementCreationFns")(onElementCreationFns)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext)
-    if (stylingTemplate != null) __obj.updateDynamic("stylingTemplate")(stylingTemplate)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[TProjectionNode]
   }

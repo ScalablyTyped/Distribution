@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Persister {
   /* CompleteClass */
+  override val options: js.Any = js.native
+  /* CompleteClass */
   override def persist(): js.Promise[Unit] = js.native
 }
 

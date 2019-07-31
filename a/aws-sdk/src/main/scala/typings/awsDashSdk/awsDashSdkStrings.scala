@@ -1442,6 +1442,7 @@ import typings.awsDashSdk.clientsPinpointemailMod._MailFromDomainStatus
 import typings.awsDashSdk.clientsPinpointemailMod._TlsPolicy
 import typings.awsDashSdk.clientsPinpointemailMod._WarmupStatus
 import typings.awsDashSdk.clientsPinpointsmsvoiceMod._EventType
+import typings.awsDashSdk.clientsPollyMod._Engine
 import typings.awsDashSdk.clientsPollyMod._Gender
 import typings.awsDashSdk.clientsPollyMod._SpeechMarkType
 import typings.awsDashSdk.clientsPollyMod._TextType
@@ -25231,6 +25232,12 @@ object awsDashSdkStrings {
   sealed trait maxIO extends _PerformanceMode
   
   @js.native
+  sealed trait `me-south-1`
+    extends _CloudWatchRegion
+       with _ResourceRecordSetRegion
+       with _VPCRegion
+  
+  @js.native
   sealed trait medium extends _ServiceUpdateSeverity
   
   @js.native
@@ -25636,6 +25643,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait networkInterfaceAvailable extends js.Object
+  
+  @js.native
+  sealed trait neural extends _Engine
   
   @js.native
   sealed trait nice extends _UlimitName
@@ -26927,6 +26937,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait standard
     extends _DomainType
+       with _Engine
        with _OfferingClassType
        with _VolumeType
        with typings.awsDashSdk.clientsEsMod._VolumeType
@@ -38825,6 +38836,8 @@ object awsDashSdkStrings {
   @scala.inline
   def maxIO: maxIO = "maxIO".asInstanceOf[maxIO]
   @scala.inline
+  def `me-south-1`: `me-south-1` = "me-south-1".asInstanceOf[`me-south-1`]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def memberOf: memberOf = "memberOf".asInstanceOf[memberOf]
@@ -39002,6 +39015,8 @@ object awsDashSdkStrings {
   def `network-load-balancer`: `network-load-balancer` = "network-load-balancer".asInstanceOf[`network-load-balancer`]
   @scala.inline
   def networkInterfaceAvailable: networkInterfaceAvailable = "networkInterfaceAvailable".asInstanceOf[networkInterfaceAvailable]
+  @scala.inline
+  def neural: neural = "neural".asInstanceOf[neural]
   @scala.inline
   def nice: nice = "nice".asInstanceOf[nice]
   @scala.inline

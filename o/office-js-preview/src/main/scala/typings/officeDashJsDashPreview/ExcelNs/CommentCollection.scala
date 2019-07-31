@@ -76,7 +76,7 @@ class CommentCollection () extends ClientObject {
   def getItemByCell(cellAddress: String): Comment = js.native
   /**
     *
-    * Gets the comment from the specified cell.
+    * Gets the comment from the specifed cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

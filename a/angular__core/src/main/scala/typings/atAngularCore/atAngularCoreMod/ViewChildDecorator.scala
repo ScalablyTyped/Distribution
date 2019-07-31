@@ -48,13 +48,11 @@ trait ViewChildDecorator
     *
     * @usageNotes
     *
-    * {@example core/di/ts/viewChild/view_child_example.ts region='Component'
-    * linenums="false"}
+    * {@example core/di/ts/viewChild/view_child_example.ts region='Component'}
     *
     * ### Example 2
     *
-    * {@example core/di/ts/viewChild/view_child_howto.ts region='HowTo'
-    * linenums="false"}
+    * {@example core/di/ts/viewChild/view_child_howto.ts region='HowTo'}
     *
     * @Annotation
     */

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class Suggest[T] ()
   extends PureComponent[ISuggestProps[T], ISuggestState[T], js.Any] {
   var TypedQueryList: js.Any = js.native
+  var getInitialSelectedItem: js.Any = js.native
   var getTargetKeyDownHandler: js.Any = js.native
   var getTargetKeyUpHandler: js.Any = js.native
   var handleInputFocus: js.Any = js.native
@@ -28,7 +29,6 @@ class Suggest[T] ()
   def componentDidUpdate_MSuggest(_prevProps: ISuggestProps[T], prevState: ISuggestState[T]): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MSuggest(nextProps: ISuggestProps[T]): Unit = js.native
-  /* private */ def getInitialSelectedItem(): js.Any = js.native
 }
 
 /* static members */

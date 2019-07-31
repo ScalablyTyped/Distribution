@@ -19,13 +19,16 @@ class DateRangeInput protected () extends AbstractPureComponent[IDateRangeInputP
     */
   var doesEndBoundaryOverlapStartBoundary: js.Any = js.native
   var endInputRef: js.Any = js.native
+  var formatDate: js.Any = js.native
   var getDateRangeForCallback: js.Any = js.native
+  var getFormattedMinMaxDateString: js.Any = js.native
   var getInitialRange: js.Any = js.native
   var getInputDisplayString: js.Any = js.native
   var getInputGroupCallbackForEvent: js.Any = js.native
   var getInputPlaceholderString: js.Any = js.native
   var getInputProps: js.Any = js.native
   var getInputRef: js.Any = js.native
+  var getIsOpenValueWhenDateChanges: js.Any = js.native
   var getOtherBoundary: js.Any = js.native
   var getSelectedRange: js.Any = js.native
   var getStateKeysAndValuesForBoundary: js.Any = js.native
@@ -45,23 +48,21 @@ class DateRangeInput protected () extends AbstractPureComponent[IDateRangeInputP
   var isDateValidAndInRange: js.Any = js.native
   var isInputEmpty: js.Any = js.native
   var isInputInErrorState: js.Any = js.native
+  var isNextDateRangeValid: js.Any = js.native
+  var parseDate: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderInputGroup: js.Any = js.native
+  var shouldFocusInputRef: js.Any = js.native
   var startInputRef: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDateRangeInput(): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDateRangeInput(nextProps: IDateRangeInputProps): Unit = js.native
-  /* private */ def formatDate(date: js.Any): js.Any = js.native
-  /* private */ def getFormattedMinMaxDateString(props: js.Any, propName: js.Any): js.Any = js.native
-  /* private */ def isNextDateRangeValid(nextDate: js.Any, boundary: js.Any): js.Any = js.native
-  /* private */ def parseDate(dateString: js.Any): js.Any = js.native
   /**
     * Public method intended for unit testing only. Do not use in feature work!
     */
   def reset(): Unit = js.native
   def reset(props: IDateRangeInputProps): Unit = js.native
-  /* private */ def shouldFocusInputRef(isFocused: js.Any, inputRef: js.Any): js.Any = js.native
 }
 
 /* static members */

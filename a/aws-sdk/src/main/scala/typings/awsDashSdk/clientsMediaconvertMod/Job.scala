@@ -50,6 +50,10 @@ trait Job extends js.Object {
     */
   var OutputGroupDetails: js.UndefOr[__listOfOutputGroupDetail] = js.undefined
   /**
+    * Relative priority on the job.
+    */
+  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined
+  /**
     * Optional. When you create a job, you can specify a queue to send it to. If you don't specify, the job will go to the default queue. For more about queues, see the User Guide topic at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
     */
   var Queue: js.UndefOr[__string] = js.undefined
@@ -99,6 +103,7 @@ object Job {
     JobPercentComplete: js.UndefOr[__integer] = js.undefined,
     JobTemplate: __string = null,
     OutputGroupDetails: __listOfOutputGroupDetail = null,
+    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
     RetryCount: js.UndefOr[__integer] = js.undefined,
     Status: JobStatus = null,
@@ -118,6 +123,7 @@ object Job {
     if (!js.isUndefined(JobPercentComplete)) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete)
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
     if (OutputGroupDetails != null) __obj.updateDynamic("OutputGroupDetails")(OutputGroupDetails)
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (!js.isUndefined(RetryCount)) __obj.updateDynamic("RetryCount")(RetryCount)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

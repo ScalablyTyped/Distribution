@@ -12,17 +12,16 @@ import scala.scalajs.js.annotation._
 class Toaster ()
   extends AbstractPureComponent[IToasterProps, IToasterState]
      with IToaster {
+  var createToastOptions: js.Any = js.native
   var getDismissHandler: js.Any = js.native
+  var getPositionClasses: js.Any = js.native
   var handleClose: js.Any = js.native
+  var isNewToastKey: js.Any = js.native
+  var renderToast: js.Any = js.native
   @JSName("state")
   var state_Toaster: Anon_Toasts = js.native
   var toastId: js.Any = js.native
-  /* private */ def createToastOptions(props: js.Any): js.Any = js.native
-  /* private */ def createToastOptions(props: js.Any, key: js.Any): js.Any = js.native
   def dismiss(key: String, timeoutExpired: Boolean): Unit = js.native
-  /* private */ def getPositionClasses(): js.Any = js.native
-  /* private */ def isNewToastKey(key: js.Any): js.Any = js.native
-  /* private */ def renderToast(toast: js.Any): js.Any = js.native
 }
 
 /* static members */

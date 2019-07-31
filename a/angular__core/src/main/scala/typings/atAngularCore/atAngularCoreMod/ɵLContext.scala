@@ -17,7 +17,7 @@ trait ɵLContext extends js.Object {
   /**
     * The component's parent view data.
     */
-  var lView: ɵangular_packages_core_core_bm
+  var lView: ɵangular_packages_core_core_bj
   /**
     * The map of local references (local reference name => element or directive instance) that exist
     * on this element.
@@ -36,7 +36,7 @@ trait ɵLContext extends js.Object {
 object ɵLContext {
   @scala.inline
   def apply(
-    lView: ɵangular_packages_core_core_bm,
+    lView: ɵangular_packages_core_core_bj,
     native: RNode,
     nodeIndex: Double,
     component: js.Object = null,

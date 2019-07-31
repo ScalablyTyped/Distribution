@@ -41,7 +41,7 @@ class Paginator () extends js.Object {
     *     and returns `nextQuery` to receive more results.
     * @return {stream} - Readable object stream.
     */
-  def runAsStream_(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
+  def runAsStream_[T](parsedArguments: ParsedArguments, originalMethod: js.Function): typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod.ResourceStream[T] = js.native
   /**
     * This simply checks to see if `autoPaginate` is set or not, if it's true
     * then we buffer all results, otherwise simply call the original method.
@@ -71,6 +71,10 @@ class Paginator () extends js.Object {
     * @param {string} methodName - Name of the method to streamify.
     * @return {function} - Wrapped function.
     */
-  def streamify[T](methodName: String): js.ThisFunction1[/* this */ StringDictionary[js.Function], /* repeated */ js.Any, ResourceStream[T]] = js.native
+  def streamify[T](methodName: String): js.ThisFunction1[
+    /* this */ StringDictionary[js.Function], 
+    /* repeated */ js.Any, 
+    typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod.ResourceStream[T]
+  ] = js.native
 }
 

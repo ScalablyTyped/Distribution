@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a collection of all the Pivot Items related to their parent PivotField.
+  * Represents a collection of all the PivotItems related to their parent PivotField.
   *
   * [Api set: ExcelApi 1.8]
   */

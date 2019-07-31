@@ -310,6 +310,9 @@ object atPulumiAwsStrings {
   sealed trait any extends js.Object
   
   @js.native
+  sealed trait `ap-east-1` extends Region
+  
+  @js.native
   sealed trait `ap-northeast-1` extends Region
   
   @js.native
@@ -463,6 +466,12 @@ object atPulumiAwsStrings {
   
   @js.native
   sealed trait cluster extends PlacementStrategy
+  
+  @js.native
+  sealed trait `cn-north-1` extends Region
+  
+  @js.native
+  sealed trait `cn-northwest-1` extends Region
   
   @js.native
   sealed trait core extends UlimitName
@@ -721,6 +730,9 @@ object atPulumiAwsStrings {
   sealed trait `eu-central-1` extends Region
   
   @js.native
+  sealed trait `eu-north-1` extends Region
+  
+  @js.native
   sealed trait `eu-west-1` extends Region
   
   @js.native
@@ -922,6 +934,9 @@ object atPulumiAwsStrings {
   
   @js.native
   sealed trait m5dDOTxlarge extends InstanceType
+  
+  @js.native
+  sealed trait `me-south-1` extends Region
   
   @js.native
   sealed trait memlock extends UlimitName
@@ -1445,6 +1460,8 @@ object atPulumiAwsStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
+  def `ap-east-1`: `ap-east-1` = "ap-east-1".asInstanceOf[`ap-east-1`]
+  @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   @scala.inline
   def `ap-northeast-2`: `ap-northeast-2` = "ap-northeast-2".asInstanceOf[`ap-northeast-2`]
@@ -1546,6 +1563,10 @@ object atPulumiAwsStrings {
   def `ca-central-1`: `ca-central-1` = "ca-central-1".asInstanceOf[`ca-central-1`]
   @scala.inline
   def cluster: cluster = "cluster".asInstanceOf[cluster]
+  @scala.inline
+  def `cn-north-1`: `cn-north-1` = "cn-north-1".asInstanceOf[`cn-north-1`]
+  @scala.inline
+  def `cn-northwest-1`: `cn-northwest-1` = "cn-northwest-1".asInstanceOf[`cn-northwest-1`]
   @scala.inline
   def core: core = "core".asInstanceOf[core]
   @scala.inline
@@ -1681,6 +1702,8 @@ object atPulumiAwsStrings {
   @scala.inline
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
   @scala.inline
+  def `eu-north-1`: `eu-north-1` = "eu-north-1".asInstanceOf[`eu-north-1`]
+  @scala.inline
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
   @scala.inline
   def `eu-west-2`: `eu-west-2` = "eu-west-2".asInstanceOf[`eu-west-2`]
@@ -1814,6 +1837,8 @@ object atPulumiAwsStrings {
   def m5dDOTlarge: m5dDOTlarge = "m5d.large".asInstanceOf[m5dDOTlarge]
   @scala.inline
   def m5dDOTxlarge: m5dDOTxlarge = "m5d.xlarge".asInstanceOf[m5dDOTxlarge]
+  @scala.inline
+  def `me-south-1`: `me-south-1` = "me-south-1".asInstanceOf[`me-south-1`]
   @scala.inline
   def memlock: memlock = "memlock".asInstanceOf[memlock]
   @scala.inline

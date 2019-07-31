@@ -51,7 +51,7 @@ class FormControlDirective protected ()
   @JSName("path")
   val path_FormControlDirective: js.Array[String] = js.native
   /** @deprecated as of v6 */
-  var update: EventEmitter[js.Object] = js.native
+  var update: EventEmitter[_] = js.native
   /**
     * @description
     * Internal reference to the view model value.

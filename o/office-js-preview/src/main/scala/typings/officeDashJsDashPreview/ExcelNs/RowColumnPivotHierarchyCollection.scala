@@ -45,7 +45,7 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotTable to be retrieved.
+    * @param name Name of the RowColumnPivotHierarchy to be retrieved.
     */
   def getItem(name: String): RowColumnPivotHierarchy = js.native
   /**

@@ -20,8 +20,8 @@ trait SelfDecorator extends Instantiable0[Self] {
     * by the local injector when instantiating the class itself, but not
     * when instantiating a child.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Self"
-    *  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Self">
+    * </code-example>
     *
     *
     * @see `SkipSelf`

@@ -1,12 +1,11 @@
 package typings.apolloDashServerDashCore.apolloDashServerDashCoreMod
 
+import typings.apolloDashServerDashCore.Fn_Request
 import typings.apolloDashServerDashCore.distGraphqlOptionsMod.GraphQLServerOptions
 import typings.apolloDashServerDashCore.distPlaygroundMod.PlaygroundConfig
 import typings.apolloDashServerDashCore.distRunHttpQueryMod.HttpQueryRequest
 import typings.apolloDashServerDashCore.distRunHttpQueryMod.HttpQueryResponse
-import typings.apolloDashServerDashCore.graphqlDashUploadMod.ApolloUploadOptions
-import typings.apolloDashServerDashCore.graphqlDashUploadMod.Request
-import typings.apolloDashServerDashCore.graphqlDashUploadMod.Response
+import typings.apolloDashServerDashEnv.apolloDashServerDashEnvMod.Request
 import typings.apolloDashServerDashErrors.Anon_Debug
 import typings.apolloDashServerDashErrors.Anon_Extensions
 import typings.apolloDashServerDashErrors.Anon_ExtensionsAny
@@ -26,15 +25,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val GraphQLUpload: js.UndefOr[GraphQLScalarType] = js.native
-  val processFileUploads: js.UndefOr[
-    js.Function3[
-      /* request */ Request, 
-      /* response */ Response, 
-      /* options */ js.UndefOr[ApolloUploadOptions], 
-      js.Promise[js.Any]
-    ]
-  ] = js.native
-  def convertNodeHttpToRequest(req: IncomingMessage): typings.apolloDashServerDashEnv.apolloDashServerDashEnvMod.Request = js.native
+  val processFileUploads: js.UndefOr[Fn_Request] = js.native
+  def convertNodeHttpToRequest(req: IncomingMessage): Request = js.native
   def createPlaygroundOptions(): js.UndefOr[RenderPageOptions] = js.native
   def createPlaygroundOptions(playground: PlaygroundConfig): js.UndefOr[RenderPageOptions] = js.native
   def formatApolloErrors(errors: js.Array[Error]): js.Array[typings.apolloDashServerDashErrors.apolloDashServerDashErrorsMod.ApolloError] = js.native

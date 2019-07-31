@@ -41,6 +41,25 @@ trait TNode extends js.Object {
     */
   var child: TNode | Null
   /**
+    * A collection of all class bindings and/or static class values for an element.
+    *
+    * This field will be populated if and when:
+    *
+    * - There are one or more initial classes on an element (e.g. `<div class="one two three">`)
+    * - There are one or more class bindings on an element (e.g. `<div [class.foo]="f">`)
+    *
+    * If and when there are only initial classes (no bindings) then an instance of `StylingMapArray`
+    * will be used here. Otherwise an instance of `TStylingContext` will be created when there
+    * are one or more class bindings on an element.
+    *
+    * During element creation this value is likely to be populated with an instance of
+    * `StylingMapArray` and only when the bindings are evaluated (which happens during
+    * update mode) then it will be converted to a `TStylingContext` if any class bindings
+    * are encountered. If and when this happens then the existing `StylingMapArray` value
+    * will be placed into the initial styling slot in the newly created `TStylingContext`.
+    */
+  var classes: StylingMapArray | TStylingContext | Null
+  /**
     * Stores final exclusive index of the directives.
     */
   var directiveEnd: Double
@@ -102,25 +121,11 @@ trait TNode extends js.Object {
     * - `<div #foo #bar="directiveExportAs">` => `["foo", -1, "bar", directiveIdx]`
     */
   var localNames: (js.Array[String | Double]) | Null
-  var newClasses: TStylingContext | Null
-  var newStyles: TStylingContext | Null
   /**
     * The next sibling node. Necessary so we can propagate through the root nodes of a view
     * to insert them or remove them from the DOM.
     */
   var next: TNode | Null
-  /**
-    * A buffer of functions that will be called once `elementEnd` (or `element`) completes.
-    *
-    * Due to the nature of how directives work in Angular, some directive code may
-    * need to fire after any template-level code runs. If present, this array will
-    * be flushed (each function will be invoked) once the associated element is
-    * created.
-    *
-    * If an element is created multiple times then this function will be populated
-    * with functions each time the creation block is called.
-    */
-  var onElementCreationFns: js.Array[js.Function] | Null
   /**
     * Output data for all directives on this node.
     *
@@ -142,7 +147,7 @@ trait TNode extends js.Object {
     *
     * If this is an inline view node (V), the parent will be its container.
     */
-  var parent: ɵangular_packages_core_core_bg | TContainerNode | Null
+  var parent: ɵangular_packages_core_core_bf | TContainerNode | Null
   /**
     * List of projected TNodes for a given component host element OR index into the said nodes.
     *
@@ -207,7 +212,25 @@ trait TNode extends js.Object {
     * - the count of view providers from the component on this node (last 16 bits)
     */
   var providerIndexes: TNodeProviderIndexes
-  var stylingTemplate: StylingContext | Null
+  /**
+    * A collection of all style bindings and/or static style values for an element.
+    *
+    * This field will be populated if and when:
+    *
+    * - There are one or more initial styles on an element (e.g. `<div style="width:200px">`)
+    * - There are one or more style bindings on an element (e.g. `<div [style.width]="w">`)
+    *
+    * If and when there are only initial styles (no bindings) then an instance of `StylingMapArray`
+    * will be used here. Otherwise an instance of `TStylingContext` will be created when there
+    * are one or more style bindings on an element.
+    *
+    * During element creation this value is likely to be populated with an instance of
+    * `StylingMapArray` and only when the bindings are evaluated (which happens during
+    * update mode) then it will be converted to a `TStylingContext` if any style bindings
+    * are encountered. If and when this happens then the existing `StylingMapArray` value
+    * will be placed into the initial styling slot in the newly created `TStylingContext`.
+    */
+  var styles: StylingMapArray | TStylingContext | Null
   /**
     * The TView or TViews attached to this node.
     *
@@ -249,18 +272,16 @@ object TNode {
     `type`: TNodeType,
     attrs: TAttributes = null,
     child: TNode = null,
+    classes: StylingMapArray | TStylingContext = null,
     initialInputs: InitialInputData = null,
     inputs: PropertyAliases = null,
     localNames: js.Array[String | Double] = null,
-    newClasses: TStylingContext = null,
-    newStyles: TStylingContext = null,
     next: TNode = null,
-    onElementCreationFns: js.Array[js.Function] = null,
     outputs: PropertyAliases = null,
-    parent: ɵangular_packages_core_core_bg | TContainerNode = null,
+    parent: ɵangular_packages_core_core_bf | TContainerNode = null,
     projection: (js.Array[TNode | js.Array[RNode]]) | Double = null,
     projectionNext: TNode = null,
-    stylingTemplate: StylingContext = null,
+    styles: StylingMapArray | TStylingContext = null,
     tViews: TView | js.Array[TView] = null,
     tagName: String = null
   ): TNode = {
@@ -268,18 +289,16 @@ object TNode {
     __obj.updateDynamic("type")(`type`)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (child != null) __obj.updateDynamic("child")(child)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (localNames != null) __obj.updateDynamic("localNames")(localNames)
-    if (newClasses != null) __obj.updateDynamic("newClasses")(newClasses)
-    if (newStyles != null) __obj.updateDynamic("newStyles")(newStyles)
     if (next != null) __obj.updateDynamic("next")(next)
-    if (onElementCreationFns != null) __obj.updateDynamic("onElementCreationFns")(onElementCreationFns)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext)
-    if (stylingTemplate != null) __obj.updateDynamic("stylingTemplate")(stylingTemplate)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tViews != null) __obj.updateDynamic("tViews")(tViews.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[TNode]

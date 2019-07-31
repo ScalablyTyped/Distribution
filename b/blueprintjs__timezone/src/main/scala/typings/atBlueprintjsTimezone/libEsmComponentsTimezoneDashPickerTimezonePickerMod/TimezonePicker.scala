@@ -17,11 +17,11 @@ class TimezonePicker protected () extends AbstractPureComponent[ITimezonePickerP
   var handleItemSelect: js.Any = js.native
   var handleQueryChange: js.Any = js.native
   var initialTimezoneItems: js.Any = js.native
+  var renderButton: js.Any = js.native
   var renderItem: js.Any = js.native
   var timezoneItems: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTimezonePicker(nextProps: ITimezonePickerProps): Unit = js.native
-  /* private */ def renderButton(): js.Any = js.native
   /* protected */ def validateProps(props: IPopoverProps with Anon_Children): Unit = js.native
 }
 

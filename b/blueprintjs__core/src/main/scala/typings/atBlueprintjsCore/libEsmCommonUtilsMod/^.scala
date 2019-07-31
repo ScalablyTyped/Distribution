@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmCommonUtilsMod
 
 import typings.atBlueprintjsCore.Anon_Key
-import typings.atBlueprintjsCore.Anon_ValueA
 import typings.atBlueprintjsCore.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist
 import typings.atBlueprintjsCore.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist
 import typings.react.reactMod.ComponentType
@@ -32,7 +31,7 @@ object ^ extends js.Object {
   def clamp(`val`: Double, min: Double, max: Double): Double = js.native
   def countDecimalPlaces(num: Double): Double = js.native
   def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = js.native
-  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String]): Boolean = js.native
+  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = js.native
   def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = js.native
   def ensureElement(): ReactElement = js.native
   def ensureElement(
@@ -46,9 +45,6 @@ object ^ extends js.Object {
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[String]): js.Array[Anon_Key[T]] = js.native
   def getDisplayName(ComponentClass: INamed): String = js.native
   def getDisplayName(ComponentClass: ComponentType[js.Object]): String = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Anon_ValueA] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: IKeyBlacklist[T]): js.Array[Anon_ValueA] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): js.Array[Anon_ValueA] = js.native
   def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
   def isNodeEnv(env: String): Boolean = js.native
@@ -124,10 +120,10 @@ object ^ extends js.Object {
   def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = js.native
   def throttleReactEventCallback(
     callback: js.Function2[/* event */ SyntheticEvent[_, typings.react.Event], /* repeated */ js.Any, _]
-  ): js.Function1[/* event2 */ SyntheticEvent[_, typings.react.Event], Unit] = js.native
+  ): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
   def throttleReactEventCallback(
     callback: js.Function2[/* event */ SyntheticEvent[_, typings.react.Event], /* repeated */ js.Any, _],
     options: IThrottledReactEventOptions
-  ): js.Function1[/* event2 */ SyntheticEvent[_, typings.react.Event], Unit] = js.native
+  ): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.atBlueprintjsCore.libEsmComponentsNavbarNavbarDividerMod
 
-import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEventHandler
@@ -123,7 +122,7 @@ object INavbarDividerProps {
     color: String = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: typings.react.Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | js.Array[String] = null,

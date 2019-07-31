@@ -9,6 +9,7 @@ import typings.react.HTMLBodyElement
 import typings.react.HTMLButtonElement
 import typings.react.HTMLCanvasElement
 import typings.react.HTMLDListElement
+import typings.react.HTMLDataElement
 import typings.react.HTMLDataListElement
 import typings.react.HTMLDialogElement
 import typings.react.HTMLDivElement
@@ -87,7 +88,7 @@ trait ReactHTML extends js.Object {
   var code: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   var col: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
   var colgroup: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
-  var data: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
+  var data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]
   var datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
   var dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   var del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]
@@ -207,7 +208,7 @@ object ReactHTML {
     code: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     col: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
     colgroup: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
-    data: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
+    data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement],
     datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
     dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement],

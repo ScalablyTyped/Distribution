@@ -1,7 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod
 
+import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.HTMLProps
-import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLElement
 import typings.std.HTMLHeadingElement
 import typings.std.HTMLLabelElement
@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/html/html", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Blockquote: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
-  val Code: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
-  val H1: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H2: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H3: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H4: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H5: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H6: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val Label: StatelessComponent[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = js.native
-  val OL: StatelessComponent[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = js.native
-  val Pre: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
-  val UL: StatelessComponent[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = js.native
+  val Blockquote: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val Code: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val H1: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H2: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H3: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H4: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H5: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H6: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val Label: FunctionComponent[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = js.native
+  val OL: FunctionComponent[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = js.native
+  val Pre: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val UL: FunctionComponent[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = js.native
 }
 

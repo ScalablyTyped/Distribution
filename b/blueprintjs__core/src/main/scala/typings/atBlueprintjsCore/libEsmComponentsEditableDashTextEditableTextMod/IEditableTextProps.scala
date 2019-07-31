@@ -61,6 +61,7 @@ trait IEditableTextProps
   /**
     * Whether the entire text field should be selected on focus.
     * If `false`, the cursor is placed at the end of the text.
+    * This prop is ignored on inputs with type other then text, search, url, tel and password. See https://html.spec.whatwg.org/multipage/input.html#do-not-apply for details.
     * @default false
     */
   var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined

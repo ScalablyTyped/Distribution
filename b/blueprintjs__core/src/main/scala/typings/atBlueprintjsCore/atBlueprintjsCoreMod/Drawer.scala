@@ -1,5 +1,8 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
+import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`360px`
+import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`50%`
+import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`90%`
 import typings.atBlueprintjsCore.libEsmComponentsDrawerDrawerMod.IDrawerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +17,9 @@ class Drawer ()
 @JSImport("@blueprintjs/core", "Drawer")
 @js.native
 object Drawer extends js.Object {
-  val SIZE_LARGE: String = js.native
-  val SIZE_SMALL: String = js.native
-  val SIZE_STANDARD: String = js.native
+  val SIZE_LARGE: `90%` = js.native
+  val SIZE_SMALL: `360px` = js.native
+  val SIZE_STANDARD: `50%` = js.native
   var defaultProps: IDrawerProps = js.native
   var displayName: String = js.native
 }

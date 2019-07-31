@@ -26,8 +26,17 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   var columnIdToIndex: js.Any = js.native
   var didCompletelyMount: js.Any = js.native
   var didUpdateColumnOrRowSizes: js.Any = js.native
+  var getColumnProps: js.Any = js.native
+  var getEnabledSelectionHandler: js.Any = js.native
   var getMaxFrozenColumnIndex: js.Any = js.native
   var getMaxFrozenRowIndex: js.Any = js.native
+  /**
+    * Normalizes RenderMode.BATCH_ON_UPDATE into RenderMode.{BATCH,NONE}. We do
+    * this because there are actually multiple updates required before the
+    * <Table> is considered fully "mounted," and adding that knowledge to child
+    * components would lead to tight coupling. Thus, keep it simple for them.
+    */
+  var getNormalizedRenderMode: js.Any = js.native
   var grid: Grid = js.native
   var handleBodyScroll: js.Any = js.native
   var handleColumnResizeGuide: js.Any = js.native
@@ -62,8 +71,24 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   var handleSelectionResizeRight: js.Any = js.native
   var handleSelectionResizeUp: js.Any = js.native
   var hasLoadingOption: js.Any = js.native
+  var invalidateGrid: js.Any = js.native
+  var invokeOnVisibleCellsChangeCallback: js.Any = js.native
+  var isGuidesShowing: js.Any = js.native
+  var isSelectionModeEnabled: js.Any = js.native
   var locator: Locator = js.native
-  var mainQuadrantElement: js.Any = js.native
+  var maybeRenderCopyHotkey: js.Any = js.native
+  var maybeRenderFocusHotkeys: js.Any = js.native
+  /**
+    * Renders a `RegionLayer`, applying styles to the regions using the
+    * supplied `IRegionStyler`. `RegionLayer` is a `PureRender` component, so
+    * the `IRegionStyler` should be a new instance on every render if we
+    * intend to redraw the region layer.
+    */
+  var maybeRenderRegions: js.Any = js.native
+  var maybeRenderSelectAllHotkey: js.Any = js.native
+  var maybeRenderSelectionResizeHotkeys: js.Any = js.native
+  var maybeScrollTableIntoView: js.Any = js.native
+  var moveFocusCell: js.Any = js.native
   var quadrantStackInstance: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderBody: js.Any = js.native
@@ -71,16 +96,31 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   var renderMenu: js.Any = js.native
   var renderRowHeader: js.Any = js.native
   var resizeSensorDetach: js.Any = js.native
+  /**
+    * Returns an object with option keys mapped to their resolved values
+    * (falling back to default values as necessary).
+    */
+  var resolveResizeRowsByApproximateHeightOptions: js.Any = js.native
   var rootTableElement: js.Any = js.native
   var rowHeaderElement: js.Any = js.native
   var scrollBodyToFocusedCell: js.Any = js.native
   var scrollContainerElement: js.Any = js.native
   var selectAll: js.Any = js.native
+  var shouldDisableHorizontalScroll: js.Any = js.native
+  var shouldDisableVerticalScroll: js.Any = js.native
   var styleBodyRegion: js.Any = js.native
   var styleColumnHeaderRegion: js.Any = js.native
   var styleMenuRegion: js.Any = js.native
   var styleRowHeaderRegion: js.Any = js.native
+  var syncViewportPosition: js.Any = js.native
+  var updateLocator: js.Any = js.native
+  /**
+    * Replaces the selected region at the specified array index, with the
+    * region provided.
+    */
+  var updateSelectedRegionAtIndex: js.Any = js.native
   var updateViewportRect: js.Any = js.native
+  var validateGrid: js.Any = js.native
   /**
     * When the component mounts, the HTML Element refs will be available, so
     * we constructor the Locator, which queries the elements' bounding
@@ -95,40 +135,6 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTable(): Unit = js.native
   def getChildContext(): IColumnInteractionBarContextTypes = js.native
-  /* private */ def getColumnProps(columnIndex: js.Any): js.Any = js.native
-  /* private */ def getEnabledSelectionHandler(selectionMode: js.Any): js.Any = js.native
-  /**
-    * Normalizes RenderMode.BATCH_ON_UPDATE into RenderMode.{BATCH,NONE}. We do
-    * this because there are actually multiple updates required before the
-    * <Table> is considered fully "mounted," and adding that knowledge to child
-    * components would lead to tight coupling. Thus, keep it simple for them.
-    */
-  /* private */ def getNormalizedRenderMode(): js.Any = js.native
-  /* private */ def invalidateGrid(): js.Any = js.native
-  /* private */ def invokeOnVisibleCellsChangeCallback(viewportRect: js.Any): js.Any = js.native
-  /* private */ def isGuidesShowing(): js.Any = js.native
-  /* private */ def isSelectionModeEnabled(selectionMode: js.Any): js.Any = js.native
-  /* private */ def isSelectionModeEnabled(selectionMode: js.Any, selectionModes: js.Any): js.Any = js.native
-  /* private */ def maybeRenderCopyHotkey(): js.Any = js.native
-  /* private */ def maybeRenderFocusHotkeys(): js.Any = js.native
-  /**
-    * Renders a `RegionLayer`, applying styles to the regions using the
-    * supplied `IRegionStyler`. `RegionLayer` is a `PureRender` component, so
-    * the `IRegionStyler` should be a new instance on every render if we
-    * intend to redraw the region layer.
-    */
-  /* private */ def maybeRenderRegions(getRegionStyle: js.Any): js.Any = js.native
-  /* private */ def maybeRenderRegions(getRegionStyle: js.Any, quadrantType: js.Any): js.Any = js.native
-  /* private */ def maybeRenderSelectAllHotkey(): js.Any = js.native
-  /* private */ def maybeRenderSelectionResizeHotkeys(): js.Any = js.native
-  /* private */ def maybeScrollTableIntoView(): js.Any = js.native
-  /* private */ def moveFocusCell(
-    primaryAxis: js.Any,
-    secondaryAxis: js.Any,
-    isUpOrLeft: js.Any,
-    newFocusedCell: js.Any,
-    focusCellRegion: js.Any
-  ): js.Any = js.native
   def renderHotkeys(): Element = js.native
   /**
     * __Experimental!__ Resizes all rows in the table to the approximate
@@ -151,11 +157,6 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   def resizeRowsByTallestCell(columnIndices: js.Array[Double]): Unit = js.native
   def resizeRowsByTallestCell(columnIndices: Double): Unit = js.native
   /**
-    * Returns an object with option keys mapped to their resolved values
-    * (falling back to default values as necessary).
-    */
-  /* private */ def resolveResizeRowsByApproximateHeightOptions(options: js.Any, rowIndex: js.Any, columnIndex: js.Any): js.Any = js.native
-  /**
     * Scrolls the table to the target region in a fashion appropriate to the target region's
     * cardinality:
     *
@@ -175,16 +176,6 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   def scrollToRegion(region: IRegion): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MTable(nextProps: ITableProps, nextState: ITableState): Boolean = js.native
-  /* private */ def shouldDisableHorizontalScroll(): js.Any = js.native
-  /* private */ def shouldDisableVerticalScroll(): js.Any = js.native
-  /* private */ def syncViewportPosition(nextScrollLeft: js.Any, nextScrollTop: js.Any): js.Any = js.native
-  /* private */ def updateLocator(): js.Any = js.native
-  /**
-    * Replaces the selected region at the specified array index, with the
-    * region provided.
-    */
-  /* private */ def updateSelectedRegionAtIndex(region: js.Any, index: js.Any): js.Any = js.native
-  /* private */ def validateGrid(): js.Any = js.native
 }
 
 /* static members */
@@ -194,9 +185,9 @@ object Table extends js.Object {
   var SHALLOW_COMPARE_PROP_KEYS_BLACKLIST: js.Any = js.native
   var SHALLOW_COMPARE_STATE_KEYS_BLACKLIST: js.Any = js.native
   var childContextTypes: ValidationMap[IColumnInteractionBarContextTypes] = js.native
+  var createColumnIdIndex: js.Any = js.native
   var defaultProps: ITableProps = js.native
   var displayName: String = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native
-  /* private */ def createColumnIdIndex(children: js.Any): js.Any = js.native
 }
 

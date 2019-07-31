@@ -13,13 +13,13 @@ class TruncatedFormat ()
   var handleContentDivRef: js.Any = js.native
   var handlePopoverClose: js.Any = js.native
   var handlePopoverOpen: js.Any = js.native
+  var renderPopover: js.Any = js.native
+  var setTruncationState: js.Any = js.native
+  var shouldShowPopover: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTruncatedFormat(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTruncatedFormat(): Unit = js.native
-  /* private */ def renderPopover(): js.Any = js.native
-  /* private */ def setTruncationState(): js.Any = js.native
-  /* private */ def shouldShowPopover(content: js.Any): js.Any = js.native
 }
 
 /* static members */

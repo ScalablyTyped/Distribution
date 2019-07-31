@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gtag_dot_js"
-version := "0.0-unknown-dt-20190718Z-bb5fb3"
+version := "0.0-unknown-dt-20190731Z-d6d3ae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

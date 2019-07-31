@@ -31,6 +31,9 @@ trait ContentChildrenDecorator
     *
     * Content queries are set before the `ngAfterContentInit` callback is called.
     *
+    * Does not retrieve elements or directives that are in other components' templates,
+    * since a component's template is always a black box to its ancestors.
+    *
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
@@ -41,16 +44,14 @@ trait ContentChildrenDecorator
     *
     * Here is a simple demonstration of how the `ContentChildren` decorator can be used.
     *
-    * {@example core/di/ts/contentChildren/content_children_howto.ts region='HowTo'
-    * linenums="false"}
+    * {@example core/di/ts/contentChildren/content_children_howto.ts region='HowTo'}
     *
     * ### Tab-pane example
     *
     * Here is a slightly more realistic example that shows how `ContentChildren` decorators
     * can be used to implement a tab pane component.
     *
-    * {@example core/di/ts/contentChildren/content_children_example.ts region='Component'
-    * linenums="false"}
+    * {@example core/di/ts/contentChildren/content_children_example.ts region='Component'}
     *
     * @Annotation
     */

@@ -17,6 +17,7 @@ object CheckSessionOptions {
   @scala.inline
   def apply(
     accessType: String = null,
+    appState: js.Any = null,
     approvalPrompt: String = null,
     audience: String = null,
     clientID: String = null,
@@ -36,6 +37,7 @@ object CheckSessionOptions {
   ): CheckSessionOptions = {
     val __obj = js.Dynamic.literal()
     if (accessType != null) __obj.updateDynamic("accessType")(accessType)
+    if (appState != null) __obj.updateDynamic("appState")(appState)
     if (approvalPrompt != null) __obj.updateDynamic("approvalPrompt")(approvalPrompt)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (clientID != null) __obj.updateDynamic("clientID")(clientID)

@@ -17,8 +17,8 @@ class TreeNode[T] ()
   var handleDoubleClick: js.Any = js.native
   var handleMouseEnter: js.Any = js.native
   var handleMouseLeave: js.Any = js.native
-  /* private */ def maybeRenderCaret(): js.Any = js.native
-  /* private */ def maybeRenderSecondaryLabel(): js.Any = js.native
+  var maybeRenderCaret: js.Any = js.native
+  var maybeRenderSecondaryLabel: js.Any = js.native
 }
 
 /* static members */

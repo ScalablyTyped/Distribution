@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__datetime
 
-Typings are for version 3.11.0
+Typings are for version 3.12.0
 
 ## Library description:
 Components for interacting with dates and times

@@ -49,6 +49,7 @@ package object clientsRoute53Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`eu-west-2`
     - typings.awsDashSdk.awsDashSdkStrings.`eu-west-3`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-east-1`
+    - typings.awsDashSdk.awsDashSdkStrings.`me-south-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-south-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-southeast-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-southeast-2`
@@ -216,6 +217,7 @@ package object clientsRoute53Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`cn-north-1`
     - typings.awsDashSdk.awsDashSdkStrings.`cn-northwest-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-east-1`
+    - typings.awsDashSdk.awsDashSdkStrings.`me-south-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-south-1`
     - java.lang.String
   */
@@ -279,6 +281,7 @@ package object clientsRoute53Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`eu-west-3`
     - typings.awsDashSdk.awsDashSdkStrings.`eu-central-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-east-1`
+    - typings.awsDashSdk.awsDashSdkStrings.`me-south-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-southeast-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-southeast-2`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-south-1`

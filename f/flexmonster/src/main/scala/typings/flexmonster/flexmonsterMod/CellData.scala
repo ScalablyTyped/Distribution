@@ -19,6 +19,7 @@ trait CellData extends js.Object {
   var isTotalColumn: js.UndefOr[Boolean] = js.undefined
   var isTotalRow: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[String] = js.undefined
+  var level: js.UndefOr[Double] = js.undefined
   var measure: js.UndefOr[MeasureObject] = js.undefined
   var member: js.UndefOr[Member] = js.undefined
   var rowIndex: js.UndefOr[Double] = js.undefined
@@ -47,6 +48,7 @@ object CellData {
     isTotalColumn: js.UndefOr[Boolean] = js.undefined,
     isTotalRow: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
+    level: Int | Double = null,
     measure: MeasureObject = null,
     member: Member = null,
     rowIndex: Int | Double = null,
@@ -72,6 +74,7 @@ object CellData {
     if (!js.isUndefined(isTotalColumn)) __obj.updateDynamic("isTotalColumn")(isTotalColumn)
     if (!js.isUndefined(isTotalRow)) __obj.updateDynamic("isTotalRow")(isTotalRow)
     if (label != null) __obj.updateDynamic("label")(label)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure)
     if (member != null) __obj.updateDynamic("member")(member)
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])

@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Callout ()
   extends PureComponent[ICalloutProps, js.Object, js.Any] {
-  /* private */ def getIconName(): js.Any = js.native
-  /* private */ def getIconName(icon: js.Any): js.Any = js.native
-  /* private */ def getIconName(icon: js.Any, intent: js.Any): js.Any = js.native
+  var getIconName: js.Any = js.native
 }
 
 /* static members */

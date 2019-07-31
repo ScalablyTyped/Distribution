@@ -21,11 +21,11 @@ trait AttributeDecorator extends Instantiable1[/* name */ String, Attribute] {
     *
     * The following example uses the decorator to inject the string literal `text`.
     *
-    * {@example core/ts/metadata/metadata.ts region='attributeMetadata' linenums="false"}
+    * {@example core/ts/metadata/metadata.ts region='attributeMetadata'}
     *
     * ### Example as TypeScript Decorator
     *
-    * {@example core/ts/metadata/metadata.ts region='attributeFactory' linenums="false"}
+    * {@example core/ts/metadata/metadata.ts region='attributeFactory'}
     *
     */
   def apply(name: String): js.Any = js.native

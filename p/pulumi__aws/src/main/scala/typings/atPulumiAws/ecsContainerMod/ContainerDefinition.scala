@@ -30,6 +30,7 @@ trait ContainerDefinition extends js.Object {
   var portMappings: js.UndefOr[js.Array[PortMapping]] = js.undefined
   var privileged: js.UndefOr[Boolean] = js.undefined
   var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
+  var repositoryCredentials: js.UndefOr[RepositoryCredentials] = js.undefined
   var ulimits: js.UndefOr[js.Array[Ulimit]] = js.undefined
   var user: js.UndefOr[String] = js.undefined
   var volumesFrom: js.UndefOr[js.Array[VolumeFrom]] = js.undefined
@@ -63,6 +64,7 @@ object ContainerDefinition {
     portMappings: js.Array[PortMapping] = null,
     privileged: js.UndefOr[Boolean] = js.undefined,
     readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
+    repositoryCredentials: RepositoryCredentials = null,
     ulimits: js.Array[Ulimit] = null,
     user: String = null,
     volumesFrom: js.Array[VolumeFrom] = null,
@@ -92,6 +94,7 @@ object ContainerDefinition {
     if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings)
     if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged)
     if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem)
+    if (repositoryCredentials != null) __obj.updateDynamic("repositoryCredentials")(repositoryCredentials)
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits)
     if (user != null) __obj.updateDynamic("user")(user)
     if (volumesFrom != null) __obj.updateDynamic("volumesFrom")(volumesFrom)

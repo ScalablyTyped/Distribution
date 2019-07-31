@@ -25,6 +25,7 @@ trait ResizableProps extends js.Object {
   var onResizeStop: js.UndefOr[
     js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, _]
   ] = js.undefined
+  var resizeHandles: js.UndefOr[js.Array[String]] = js.undefined
   var width: Double
 }
 
@@ -42,7 +43,8 @@ object ResizableProps {
     minConstraints: js.Tuple2[Double, Double] = null,
     onResize: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _ = null,
     onResizeStart: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _ = null,
-    onResizeStop: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _ = null
+    onResizeStop: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _ = null,
+    resizeHandles: js.Array[String] = null
   ): ResizableProps = {
     val __obj = js.Dynamic.literal(height = height, width = width)
     if (axis != null) __obj.updateDynamic("axis")(axis)
@@ -55,6 +57,7 @@ object ResizableProps {
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction2(onResize))
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction2(onResizeStart))
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction2(onResizeStop))
+    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles)
     __obj.asInstanceOf[ResizableProps]
   }
 }

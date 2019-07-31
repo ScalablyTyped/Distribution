@@ -1,7 +1,7 @@
 
 # Scala.js typings for cavy
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 An integration test framework for React Native.

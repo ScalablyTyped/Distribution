@@ -35,6 +35,25 @@ class TmplAstBoundAttribute protected ()
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
     i18n: Message
   ) = this()
   def this(
@@ -44,6 +63,27 @@ class TmplAstBoundAttribute protected ()
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
     i18n: Node
   ) = this()
   def this(
@@ -53,6 +93,7 @@ class TmplAstBoundAttribute protected ()
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
     i18n: Message
   ) = this()
   def this(
@@ -62,6 +103,27 @@ class TmplAstBoundAttribute protected ()
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    securityContext: SecurityContext,
+    value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
+    unit: Null,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
     i18n: Node
   ) = this()
 }

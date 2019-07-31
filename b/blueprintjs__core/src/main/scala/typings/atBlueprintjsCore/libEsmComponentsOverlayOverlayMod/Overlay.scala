@@ -17,7 +17,10 @@ class Overlay ()
   var handleDocumentClick: js.Any = js.native
   var handleDocumentFocus: js.Any = js.native
   var handleKeyDown: js.Any = js.native
+  var maybeRenderBackdrop: js.Any = js.native
   var maybeRenderChild: js.Any = js.native
+  var overlayWillClose: js.Any = js.native
+  var overlayWillOpen: js.Any = js.native
   var refHandlers: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MOverlay(): Unit = js.native
@@ -27,9 +30,6 @@ class Overlay ()
   def componentWillReceiveProps_MOverlay(nextProps: IOverlayProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MOverlay(): Unit = js.native
-  /* private */ def maybeRenderBackdrop(): js.Any = js.native
-  /* private */ def overlayWillClose(): js.Any = js.native
-  /* private */ def overlayWillOpen(): js.Any = js.native
 }
 
 /* static members */

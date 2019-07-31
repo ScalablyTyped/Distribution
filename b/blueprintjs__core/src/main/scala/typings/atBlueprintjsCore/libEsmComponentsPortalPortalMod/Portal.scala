@@ -12,15 +12,15 @@ class Portal ()
   extends Component[IPortalProps, IPortalState, js.Any] {
   @JSName("context")
   var context_Portal: IPortalContext = js.native
+  var createContainerElement: js.Any = js.native
   var portalElement: js.Any = js.native
+  var unstableRenderNoPortal: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MPortal(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MPortal(prevProps: IPortalProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MPortal(): Unit = js.native
-  /* private */ def createContainerElement(): js.Any = js.native
-  /* private */ def unstableRenderNoPortal(): js.Any = js.native
 }
 
 /* static members */

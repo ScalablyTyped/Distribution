@@ -16,6 +16,15 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsCoreStrings {
   @js.native
+  sealed trait `360px` extends js.Object
+  
+  @js.native
+  sealed trait `50%` extends js.Object
+  
+  @js.native
+  sealed trait `90%` extends js.Object
+  
+  @js.native
   sealed trait Blueprint3 extends js.Object
   
   @js.native
@@ -25,7 +34,16 @@ object atBlueprintjsCoreStrings {
   sealed trait abbr extends js.Object
   
   @js.native
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
   sealed trait address extends js.Object
+  
+  @js.native
+  sealed trait all extends js.Object
   
   @js.native
   sealed trait animate extends js.Object
@@ -43,7 +61,13 @@ object atBlueprintjsCoreStrings {
   sealed trait article extends js.Object
   
   @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
   sealed trait aside extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait audio extends js.Object
@@ -80,6 +104,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait body extends js.Object
+  
+  @js.native
+  sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom
@@ -139,6 +166,9 @@ object atBlueprintjsCoreStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
+  sealed trait copy extends js.Object
+  
+  @js.native
   sealed trait danger extends Intent
   
   @js.native
@@ -146,6 +176,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait datalist extends js.Object
+  
+  @js.native
+  sealed trait date extends js.Object
   
   @js.native
   sealed trait dd extends js.Object
@@ -161,6 +194,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait desc extends js.Object
+  
+  @js.native
+  sealed trait descending extends js.Object
   
   @js.native
   sealed trait details extends js.Object
@@ -193,6 +229,9 @@ object atBlueprintjsCoreStrings {
   sealed trait end
     extends Boundary
        with HandleType
+  
+  @js.native
+  sealed trait execute extends js.Object
   
   @js.native
   sealed trait feBlend extends js.Object
@@ -297,6 +336,12 @@ object atBlueprintjsCoreStrings {
   sealed trait g extends js.Object
   
   @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
+  
+  @js.native
   sealed trait h1 extends js.Object
   
   @js.native
@@ -324,6 +369,9 @@ object atBlueprintjsCoreStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
   sealed trait hover extends PopoverInteractionKind
   
   @js.native
@@ -346,6 +394,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait img extends js.Object
+  
+  @js.native
+  sealed trait `inline` extends js.Object
   
   @js.native
   sealed trait input extends js.Object
@@ -394,6 +445,15 @@ object atBlueprintjsCoreStrings {
   sealed trait link extends js.Object
   
   @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
+  sealed trait listbox extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
+  
+  @js.native
   sealed trait lock extends HandleInteractionKind
   
   @js.native
@@ -427,6 +487,12 @@ object atBlueprintjsCoreStrings {
   sealed trait meter extends js.Object
   
   @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
   sealed trait mpath extends js.Object
   
   @js.native
@@ -447,7 +513,13 @@ object atBlueprintjsCoreStrings {
   sealed trait `object` extends js.Object
   
   @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
   sealed trait ol extends js.Object
+  
+  @js.native
+  sealed trait on extends js.Object
   
   @js.native
   sealed trait optgroup extends js.Object
@@ -456,10 +528,16 @@ object atBlueprintjsCoreStrings {
   sealed trait option extends js.Object
   
   @js.native
+  sealed trait other extends js.Object
+  
+  @js.native
   sealed trait output extends js.Object
   
   @js.native
   sealed trait p extends js.Object
+  
+  @js.native
+  sealed trait page extends js.Object
   
   @js.native
   sealed trait param extends js.Object
@@ -477,6 +555,9 @@ object atBlueprintjsCoreStrings {
   sealed trait picture extends js.Object
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
   sealed trait polygon extends js.Object
   
   @js.native
@@ -484,6 +565,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait pop extends js.Object
+  
+  @js.native
+  sealed trait popup extends js.Object
   
   @js.native
   sealed trait pre extends js.Object
@@ -505,6 +589,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait rect extends js.Object
+  
+  @js.native
+  sealed trait removals extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -562,9 +649,15 @@ object atBlueprintjsCoreStrings {
   sealed trait span extends js.Object
   
   @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
   sealed trait start
     extends Boundary
        with HandleType
+  
+  @js.native
+  sealed trait step extends js.Object
   
   @js.native
   sealed trait stop extends js.Object
@@ -660,6 +753,9 @@ object atBlueprintjsCoreStrings {
   sealed trait track extends js.Object
   
   @js.native
+  sealed trait tree extends js.Object
+  
+  @js.native
   sealed trait tspan extends js.Object
   
   @js.native
@@ -673,6 +769,9 @@ object atBlueprintjsCoreStrings {
   
   @js.native
   sealed trait `var` extends js.Object
+  
+  @js.native
+  sealed trait vertical extends js.Object
   
   @js.native
   sealed trait video extends js.Object
@@ -690,13 +789,25 @@ object atBlueprintjsCoreStrings {
   sealed trait webview extends js.Object
   
   @scala.inline
+  def `360px`: `360px` = "360px".asInstanceOf[`360px`]
+  @scala.inline
+  def `50%`: `50%` = "50%".asInstanceOf[`50%`]
+  @scala.inline
+  def `90%`: `90%` = "90%".asInstanceOf[`90%`]
+  @scala.inline
   def Blueprint3: Blueprint3 = "Blueprint3".asInstanceOf[Blueprint3]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
   def address: address = "address".asInstanceOf[address]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
@@ -708,7 +819,11 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
@@ -733,6 +848,8 @@ object atBlueprintjsCoreStrings {
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -766,11 +883,15 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
@@ -781,6 +902,8 @@ object atBlueprintjsCoreStrings {
   def del: del = "del".asInstanceOf[del]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
@@ -801,6 +924,8 @@ object atBlueprintjsCoreStrings {
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   @scala.inline
@@ -870,6 +995,10 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
@@ -888,6 +1017,8 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
   def `hover-target`: `hover-target` = "hover-target".asInstanceOf[`hover-target`]
@@ -903,6 +1034,8 @@ object atBlueprintjsCoreStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
@@ -930,6 +1063,12 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   @scala.inline
   def main: main = "main".asInstanceOf[main]
@@ -952,6 +1091,10 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def mpath: mpath = "mpath".asInstanceOf[mpath]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
@@ -964,15 +1107,23 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
   @scala.inline
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
   def p: p = "p".asInstanceOf[p]
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
   @scala.inline
@@ -984,11 +1135,15 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
   def polygon: polygon = "polygon".asInstanceOf[polygon]
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
@@ -1003,6 +1158,8 @@ object atBlueprintjsCoreStrings {
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -1036,7 +1193,11 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def span: span = "span".asInstanceOf[span]
   @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
@@ -1094,6 +1255,8 @@ object atBlueprintjsCoreStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline
   def u: u = "u".asInstanceOf[u]
@@ -1103,6 +1266,8 @@ object atBlueprintjsCoreStrings {
   def use: use = "use".asInstanceOf[use]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline

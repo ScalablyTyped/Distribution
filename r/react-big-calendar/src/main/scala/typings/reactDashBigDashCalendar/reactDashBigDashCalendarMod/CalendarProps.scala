@@ -65,7 +65,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var popupOffset: js.UndefOr[Double | Anon_X] = js.undefined
   var resourceAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, _])] = js.undefined
   var resourceIdAccessor: js.UndefOr[String | (js.Function1[/* resource */ TResource, _])] = js.undefined
-  var resourceTitleAccessor: js.UndefOr[String | (js.Function1[/* resource */ TResource, String])] = js.undefined
+  var resourceTitleAccessor: js.UndefOr[String | (js.Function1[/* resource */ TResource, _])] = js.undefined
   var resources: js.UndefOr[js.Array[TResource]] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
   var scrollToTime: js.UndefOr[Date] = js.undefined
@@ -124,7 +124,7 @@ object CalendarProps {
     ref: LegacyRef[Calendar[TEvent, TResource]] = null,
     resourceAccessor: String | (js.Function1[/* event */ TEvent, _]) = null,
     resourceIdAccessor: String | (js.Function1[/* resource */ TResource, _]) = null,
-    resourceTitleAccessor: String | (js.Function1[/* resource */ TResource, String]) = null,
+    resourceTitleAccessor: String | (js.Function1[/* resource */ TResource, _]) = null,
     resources: js.Array[TResource] = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
     scrollToTime: Date = null,

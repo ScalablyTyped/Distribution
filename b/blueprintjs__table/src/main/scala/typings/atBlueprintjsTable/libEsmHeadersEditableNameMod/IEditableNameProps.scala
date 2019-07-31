@@ -25,17 +25,17 @@ trait IEditableNameProps
     * important to listen to if you are doing anything with `onChange` events,
     * since you'll likely want to revert whatever changes you made.
     */
-  var onCancel: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
+  var onCancel: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
   /**
     * A listener that is triggered as soon as the editable name is modified.
     * This can be due, for example, to keyboard input or the clipboard.
     */
-  var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
   /**
     * A listener that is triggered once the editing is confirmed. This is
     * usually due to the `return` (or `enter`) key press.
     */
-  var onConfirm: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
 object IEditableNameProps {
@@ -45,18 +45,18 @@ object IEditableNameProps {
     index: Int | Double = null,
     intent: Intent = null,
     name: String = null,
-    onCancel: /* value */ String => Unit = null,
-    onChange: /* value */ String => Unit = null,
-    onConfirm: /* value */ String => Unit = null
+    onCancel: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit = null,
+    onChange: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit = null,
+    onConfirm: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit = null
   ): IEditableNameProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction1(onConfirm))
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction2(onCancel))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction2(onConfirm))
     __obj.asInstanceOf[IEditableNameProps]
   }
 }

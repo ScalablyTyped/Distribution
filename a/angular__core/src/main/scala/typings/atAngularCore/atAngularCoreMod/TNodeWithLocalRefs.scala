@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 /* Rewritten from type alias, can be one of: 
   - typings.atAngularCore.atAngularCoreMod.TContainerNode
-  - typings.atAngularCore.atAngularCoreMod.ɵangular_packages_core_core_bg
+  - typings.atAngularCore.atAngularCoreMod.ɵangular_packages_core_core_bf
   - typings.atAngularCore.atAngularCoreMod.TElementContainerNode
 */
 trait TNodeWithLocalRefs extends js.Object

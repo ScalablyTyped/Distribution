@@ -191,8 +191,8 @@ trait RangeCollectionLoadOptions extends js.Object {
   /**
     *
     * For EACH ITEM in the collection: Represents if ALL the cells would be saved as an array formula.
-    Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-    Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+    * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

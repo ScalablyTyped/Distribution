@@ -47,7 +47,7 @@ class FormGroupDirective protected ()
     * @description
     * Emits an event when the form submission has been triggered.
     */
-  var ngSubmit: EventEmitter[js.Object] = js.native
+  var ngSubmit: EventEmitter[_] = js.native
   /**
     * @description
     * Returns an array representing the path to this group. Because this directive

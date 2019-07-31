@@ -29,6 +29,10 @@ trait Voice extends js.Object {
     * Name of the voice (for example, Salli, Kendra, etc.). This provides a human readable voice name that you might display in your application.
     */
   var Name: js.UndefOr[VoiceName] = js.undefined
+  /**
+    * Specifies which engines (standard or neural) that are supported by a given voice.
+    */
+  var SupportedEngines: js.UndefOr[EngineList] = js.undefined
 }
 
 object Voice {
@@ -39,7 +43,8 @@ object Voice {
     Id: VoiceId = null,
     LanguageCode: LanguageCode = null,
     LanguageName: LanguageName = null,
-    Name: VoiceName = null
+    Name: VoiceName = null,
+    SupportedEngines: EngineList = null
   ): Voice = {
     val __obj = js.Dynamic.literal()
     if (AdditionalLanguageCodes != null) __obj.updateDynamic("AdditionalLanguageCodes")(AdditionalLanguageCodes)
@@ -48,6 +53,7 @@ object Voice {
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (LanguageName != null) __obj.updateDynamic("LanguageName")(LanguageName)
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (SupportedEngines != null) __obj.updateDynamic("SupportedEngines")(SupportedEngines)
     __obj.asInstanceOf[Voice]
   }
 }

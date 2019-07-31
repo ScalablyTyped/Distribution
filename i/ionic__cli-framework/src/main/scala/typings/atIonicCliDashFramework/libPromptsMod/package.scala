@@ -17,5 +17,5 @@ package object libPromptsMod {
   type PromptValueConfirm = Boolean
   type PromptValueOther = String
   type Question = typings.inquirer.inquirerMod.Question[Answers]
-  type Separator = typings.inquirer.inquirerMod.objectsNs.Separator
+  type Separator = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_inquirer.objects.Separator */ js.Any
 }

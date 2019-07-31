@@ -232,6 +232,12 @@ trait Argv[T] extends js.Object {
   def completion(cmd: String, description: String, func: AsyncCompletionFunction): Argv[T] = js.native
   def completion(cmd: String, func: PromiseCompletionFunction | SyncCompletionFunction): Argv[T] = js.native
   def completion(cmd: String, func: AsyncCompletionFunction): Argv[T] = js.native
+  @JSName("completion")
+  def completion_false(cmd: String, description: `false`): Argv[T] = js.native
+  @JSName("completion")
+  def completion_false(cmd: String, description: `false`, func: PromiseCompletionFunction | SyncCompletionFunction): Argv[T] = js.native
+  @JSName("completion")
+  def completion_false(cmd: String, description: `false`, func: AsyncCompletionFunction): Argv[T] = js.native
   /**
     * Tells the parser that if the option specified by `key` is passed in, it should be interpreted as a path to a JSON config file.
     * The file is loaded and parsed, and its properties are set as arguments.

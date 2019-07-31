@@ -1,51 +1,53 @@
 package typings.inquirer.inquirerMod
 
+import typings.inquirer.Anon_IsFinal
 import typings.inquirer.inquirerStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'filter' | 'transformer' ]: inquirer.inquirer.QuestionOptions<A>[P]} */ trait InputQuestion[A]
-  extends QuestionCommon[A]
-     with Question[A] {
-  var `type`: js.UndefOr[input] = js.undefined
+/**
+  * Provides options for a question for the `InputPrompt`.
+  *
+  * @template T
+  * The type of the answers.
+  */
+trait InputQuestion[T /* <: Answers */]
+  extends InputQuestionOptions[T]
+     with DistinctQuestion[T] {
   /**
-    * Receive the user input and answers hash. Should return `true` if the value is valid,
-    * and an error message (`String`) otherwise. If `false` is returned, a default error
-    * message is provided.
+    * @inheritdoc
     */
-  var validate: js.UndefOr[
-    js.Function2[
-      /* input */ String, 
-      /* answers */ js.UndefOr[A], 
-      Boolean | String | (js.Promise[Boolean | String])
-    ]
-  ] = js.undefined
+  @JSName("type")
+  var type_InputQuestion: js.UndefOr[input] = js.undefined
 }
 
 object InputQuestion {
   @scala.inline
-  def apply[A](
-    default: String | Double | Boolean | js.Array[_] | (js.Function1[A, _ | js.Promise[_]]) = null,
-    message: String | (js.Function1[A, String]) = null,
-    name: String = null,
+  def apply[T /* <: Answers */](
+    default: AsyncDynamicQuestionProperty[_, T] = null,
+    filter: /* input */ js.Any => _ = null,
+    message: AsyncDynamicQuestionProperty[String, T] = null,
+    name: KeyUnion[T] = null,
     prefix: String = null,
     suffix: String = null,
+    transformer: (/* input */ js.Any, T, /* flags */ Anon_IsFinal) => String | js.Promise[String] = null,
     `type`: input = null,
-    validate: (/* input */ String, /* answers */ js.UndefOr[A]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: Boolean | (js.Function1[A, Boolean | js.Promise[Boolean]]) = null
-  ): InputQuestion[A] = {
+    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
+    when: AsyncDynamicQuestionProperty[Boolean, T] = null
+  ): InputQuestion[T] = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction3(transformer))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InputQuestion[A]]
+    __obj.asInstanceOf[InputQuestion[T]]
   }
 }
 

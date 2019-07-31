@@ -11,15 +11,15 @@ class Toast ()
   extends AbstractPureComponent[IToastProps, js.Object] {
   var handleActionClick: js.Any = js.native
   var handleCloseClick: js.Any = js.native
+  var maybeRenderActionButton: js.Any = js.native
   var startTimeout: js.Any = js.native
+  var triggerDismiss: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MToast(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MToast(prevProps: IToastProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MToast(): Unit = js.native
-  /* private */ def maybeRenderActionButton(): js.Any = js.native
-  /* private */ def triggerDismiss(didTimeoutExpire: js.Any): js.Any = js.native
 }
 
 /* static members */

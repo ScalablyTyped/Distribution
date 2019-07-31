@@ -41,7 +41,7 @@ package object atAngularCore {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵDirectiveDef<any> */ js.Any
   ]
   type DirectiveTypeList = js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵDirectiveDef<any> */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵDirectiveType<any> */ js.Any
   ]
   /**
     * Array of hooks that should be executed for a view and their directive indices.
@@ -88,6 +88,9 @@ package object atAngularCore {
   type InitialInputs = js.Array[String]
   type PipeDefList = js.Array[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵPipeDef<any> */ js.Any
+  ]
+  type PipeTypeList = js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PipeType<any> */ js.Any
   ]
   /**
     * List of slots for a projection. A slot can be either based on a parsed CSS selector

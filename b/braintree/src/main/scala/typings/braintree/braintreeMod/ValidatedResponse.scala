@@ -11,6 +11,7 @@ trait ValidatedResponse[T] extends js.Object {
   var creditCard: CreditCard
   var customer: Customer
   var dispute: Dispute
+  var errors: ValidationErrorsCollection
   var merchantAccount: MerchantAccount
   var message: String
   var params: Record[String, _]
@@ -20,7 +21,6 @@ trait ValidatedResponse[T] extends js.Object {
   var subscription: Subscription
   var success: Boolean
   var transaction: Transaction
-  def errors(): js.Array[String]
 }
 
 object ValidatedResponse {
@@ -31,7 +31,7 @@ object ValidatedResponse {
     creditCard: CreditCard,
     customer: Customer,
     dispute: Dispute,
-    errors: () => js.Array[String],
+    errors: ValidationErrorsCollection,
     merchantAccount: MerchantAccount,
     message: String,
     params: Record[String, _],
@@ -42,7 +42,7 @@ object ValidatedResponse {
     success: Boolean,
     transaction: Transaction
   ): ValidatedResponse[T] = {
-    val __obj = js.Dynamic.literal(address = address, clientToken = clientToken, creditCard = creditCard, customer = customer, dispute = dispute, errors = js.Any.fromFunction0(errors), merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, paymentMethodNonce = paymentMethodNonce, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
+    val __obj = js.Dynamic.literal(address = address, clientToken = clientToken, creditCard = creditCard, customer = customer, dispute = dispute, errors = errors, merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, paymentMethodNonce = paymentMethodNonce, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
   
     __obj.asInstanceOf[ValidatedResponse[T]]
   }

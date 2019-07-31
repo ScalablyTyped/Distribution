@@ -70,6 +70,7 @@ object libEsmCommonClassesMod extends js.Object {
   val FILE_INPUT: String = js.native
   val FILE_INPUT_HAS_SELECTION: String = js.native
   val FILE_UPLOAD_INPUT: String = js.native
+  val FILE_UPLOAD_INPUT_CUSTOM_TEXT: String = js.native
   val FILL: String = js.native
   val FIXED: String = js.native
   val FIXED_TOP: String = js.native

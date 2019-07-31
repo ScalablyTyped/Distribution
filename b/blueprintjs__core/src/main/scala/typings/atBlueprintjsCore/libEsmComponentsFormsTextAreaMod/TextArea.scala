@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 class TextArea ()
   extends PureComponent[ITextAreaProps, ITextAreaState, js.Any] {
   var handleChange: js.Any = js.native
+  var handleInternalRef: js.Any = js.native
+  var internalTextAreaRef: js.Any = js.native
+  @JSName("componentDidMount")
+  def componentDidMount_MTextArea(): Unit = js.native
 }
 
 /* static members */

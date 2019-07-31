@@ -2633,6 +2633,7 @@
 | [ink-text-input](./i/ink-text-input) | Text input component for Ink | ink, text, input, component, jsx, react, stdin, keypress, search, query |
 | [inline-css](./i/inline-css) | Inline css into an html file. | inline, css, html, email |
 | [inline-style-prefixer](./i/inline-style-prefixer) | Run-time Autoprefixer for JavaScript style objects | react, react styling, prefixer, inline styles, autoprefixer, vendor prefix, userAgent |
+| [input-moment](./i/input-moment) | React datetime picker powered by momentjs | react, react-component, input, datetime, picker, moment |
 | [inputmask](./i/inputmask) | Inputmask is a javascript library which creates an | form, input, inputmask, jquery, jquery-plugin, mask, plugins |
 | [inquirer](./i/inquirer) | A collection of common interactive command line us | command, prompt, stdin, cli, tty, menu |
 | [inquirer-npm-name](./i/inquirer-npm-name) | Helper function using inquirer to validate a value | inquirer, npm, name, yeoman, package |
@@ -4939,6 +4940,7 @@
 | [properties-reader](./p/properties-reader) | Properties file reader for Node.js | properties, ini, parser |
 | [prosemirror-collab](./p/prosemirror-collab) | Collaborative editing for ProseMirror | - |
 | [prosemirror-commands](./p/prosemirror-commands) | Editing commands for ProseMirror | - |
+| [prosemirror-dev-tools](./p/prosemirror-dev-tools) | Dev Tools for ProseMirror | - |
 | [prosemirror-dropcursor](./p/prosemirror-dropcursor) | Drop cursor plugin for ProseMirror | - |
 | [prosemirror-gapcursor](./p/prosemirror-gapcursor) | ProseMirror plugin for cursors at normally impossi | - |
 | [prosemirror-history](./p/prosemirror-history) | Undo history for ProseMirror | - |

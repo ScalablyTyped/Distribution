@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class Text ()
   extends PureComponent[ITextProps, ITextState, js.Any] {
   var textRef: js.Any = js.native
+  var update: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MText(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MText(): Unit = js.native
-  /* private */ def update(): js.Any = js.native
 }
 
 /* static members */

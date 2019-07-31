@@ -28,13 +28,13 @@ object ^ extends js.Object {
   val ɵangular_packages_forms_forms_e: js.Any = js.native
   val ɵangular_packages_forms_forms_f: js.Any = js.native
   val ɵangular_packages_forms_forms_i: js.Any = js.native
-  val ɵangular_packages_forms_forms_j: InjectionToken[js.Object] = js.native
+  val ɵangular_packages_forms_forms_j: InjectionToken[js.Any] = js.native
   val ɵangular_packages_forms_forms_k: js.Any = js.native
   val ɵangular_packages_forms_forms_l: js.Any = js.native
   val ɵangular_packages_forms_forms_m: js.Any = js.native
   val ɵangular_packages_forms_forms_n: js.Any = js.native
   val ɵangular_packages_forms_forms_p: StaticProvider = js.native
-  val ɵangular_packages_forms_forms_q: InjectionToken[js.Object] = js.native
+  val ɵangular_packages_forms_forms_q: InjectionToken[js.Any] = js.native
   val ɵangular_packages_forms_forms_r: js.Any = js.native
   val ɵangular_packages_forms_forms_s: js.Any = js.native
   val ɵangular_packages_forms_forms_t: js.Any = js.native

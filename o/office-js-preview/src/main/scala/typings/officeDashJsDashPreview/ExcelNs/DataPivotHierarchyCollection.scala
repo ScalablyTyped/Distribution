@@ -44,7 +44,7 @@ class DataPivotHierarchyCollection () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotTable to be retrieved.
+    * @param name Name of the DataPivotHierarchy to be retrieved.
     */
   def getItem(name: String): DataPivotHierarchy = js.native
   /**

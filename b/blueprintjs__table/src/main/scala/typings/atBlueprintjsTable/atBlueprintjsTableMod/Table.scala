@@ -22,9 +22,9 @@ object Table extends js.Object {
   var SHALLOW_COMPARE_PROP_KEYS_BLACKLIST: js.Any = js.native
   var SHALLOW_COMPARE_STATE_KEYS_BLACKLIST: js.Any = js.native
   var childContextTypes: ValidationMap[IColumnInteractionBarContextTypes] = js.native
+  var createColumnIdIndex: js.Any = js.native
   var defaultProps: ITableProps = js.native
   var displayName: String = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native
-  /* private */ def createColumnIdIndex(children: js.Any): js.Any = js.native
 }
 

@@ -26,7 +26,7 @@ trait TView extends js.Object {
     * This is a blueprint used to generate LView instances for this TView. Copying this
     * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: ɵangular_packages_core_core_bm
+  var blueprint: ɵangular_packages_core_core_bj
   /**
     * When a view is destroyed, listeners need to be released and outputs need to be
     * unsubscribed. This cleanup array stores both listener data (in chunks of 4)
@@ -78,7 +78,14 @@ trait TView extends js.Object {
     */
   var contentHooks: HookData | Null
   /**
-    * A list of indices for child directives that have content queries.
+    * An array of indices pointing to directives with content queries alongside with the
+    * corresponding
+    * query index. Each entry in this array is a tuple of:
+    * - index of the first content query index declared by a given directive;
+    * - index of a directive.
+    *
+    * We are storing those indexes so we can refresh content queries as part of a view refresh
+    * process.
     */
   var contentQueries: js.Array[Double] | Null
   /** Static data equivalent of LView.data[]. Contains TNodes, PipeDefInternal or TI18n. */
@@ -143,7 +150,7 @@ trait TView extends js.Object {
     * different host TNodes, depending on where the component is being used. These host
     * TNodes cannot be shared (due to different indices, etc).
     */
-  var node: TViewNode | ɵangular_packages_core_core_bg | Null
+  var node: TViewNode | ɵangular_packages_core_core_bf | Null
   /**
     * Full registry of pipes that may be found in this view.
     *
@@ -169,6 +176,10 @@ trait TView extends js.Object {
     * Odd indices: Hook function
     */
   var preOrderHooks: HookData | Null
+  /**
+    * A collection of queries tracked in a given view.
+    */
+  var queries: TQueries | Null
   /**
     * Set of schemas that declare elements to be allowed inside the view.
     */
@@ -212,30 +223,19 @@ trait TView extends js.Object {
     * A function containing query-related instructions.
     */
   var viewQuery: ViewQueriesFunction[js.Object] | Null
-  /**
-    * The index where the viewQueries section of `LView` begins. This section contains
-    * view queries defined for a component/directive.
-    *
-    * We store this start index so we know where the list of view queries starts.
-    * This is required when we invoke view queries at runtime. We invoke queries one by one and
-    * increment query index after each iteration. This information helps us to reset index back to
-    * the beginning of view query list before we invoke view queries again.
-    */
-  var viewQueryStartIndex: Double
 }
 
 object TView {
   @scala.inline
   def apply(
     bindingStartIndex: Double,
-    blueprint: ɵangular_packages_core_core_bm,
+    blueprint: ɵangular_packages_core_core_bj,
     data: TData,
     expandoStartIndex: Double,
     firstTemplatePass: Boolean,
     id: Double,
     staticContentQueries: Boolean,
     staticViewQueries: Boolean,
-    viewQueryStartIndex: Double,
     cleanup: js.Array[_] = null,
     components: js.Array[Double] = null,
     contentCheckHooks: HookData = null,
@@ -245,17 +245,18 @@ object TView {
     directiveRegistry: DirectiveDefList = null,
     expandoInstructions: ExpandoInstructions = null,
     firstChild: TNode = null,
-    node: TViewNode | ɵangular_packages_core_core_bg = null,
+    node: TViewNode | ɵangular_packages_core_core_bf = null,
     pipeRegistry: PipeDefList = null,
     preOrderCheckHooks: HookData = null,
     preOrderHooks: HookData = null,
+    queries: TQueries = null,
     schemas: js.Array[SchemaMetadata] = null,
     template: ComponentTemplate[js.Object] = null,
     viewCheckHooks: HookData = null,
     viewHooks: HookData = null,
     viewQuery: ViewQueriesFunction[js.Object] = null
   ): TView = {
-    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex, blueprint = blueprint, data = data, expandoStartIndex = expandoStartIndex, firstTemplatePass = firstTemplatePass, id = id, staticContentQueries = staticContentQueries, staticViewQueries = staticViewQueries, viewQueryStartIndex = viewQueryStartIndex)
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex, blueprint = blueprint, data = data, expandoStartIndex = expandoStartIndex, firstTemplatePass = firstTemplatePass, id = id, staticContentQueries = staticContentQueries, staticViewQueries = staticViewQueries)
     if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
     if (components != null) __obj.updateDynamic("components")(components)
     if (contentCheckHooks != null) __obj.updateDynamic("contentCheckHooks")(contentCheckHooks)
@@ -269,6 +270,7 @@ object TView {
     if (pipeRegistry != null) __obj.updateDynamic("pipeRegistry")(pipeRegistry)
     if (preOrderCheckHooks != null) __obj.updateDynamic("preOrderCheckHooks")(preOrderCheckHooks)
     if (preOrderHooks != null) __obj.updateDynamic("preOrderHooks")(preOrderHooks)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
     if (schemas != null) __obj.updateDynamic("schemas")(schemas)
     if (template != null) __obj.updateDynamic("template")(template)
     if (viewCheckHooks != null) __obj.updateDynamic("viewCheckHooks")(viewCheckHooks)

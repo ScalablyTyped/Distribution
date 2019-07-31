@@ -2,8 +2,8 @@ package typings.flexmonster.flexmonsterMod
 
 import typings.flexmonster.Anon_Blocking
 import typings.flexmonster.Anon_CallbackHandler
-import typings.flexmonster.Anon_CallbackHandlerFormat
-import typings.flexmonster.Anon_CallbackHandlerFormatGetAxisFormat
+import typings.flexmonster.Anon_CallbackHandlerError
+import typings.flexmonster.Anon_CallbackHandlerErrorFormat
 import typings.flexmonster.Anon_IsRemoved
 import typings.flexmonster.Anon_Slice
 import scala.scalajs.js
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Pivot extends js.Object {
   var fusioncharts: js.UndefOr[Anon_CallbackHandler] = js.native
-  var googlecharts: js.UndefOr[Anon_CallbackHandlerFormat] = js.native
-  var highcharts: js.UndefOr[Anon_CallbackHandlerFormatGetAxisFormat] = js.native
+  var googlecharts: js.UndefOr[Anon_CallbackHandlerError] = js.native
+  var highcharts: js.UndefOr[Anon_CallbackHandlerErrorFormat] = js.native
   var toolbar: Toolbar = js.native
   var version: String = js.native
   def addCalculatedMeasure(measure: Measure): Unit = js.native
@@ -107,18 +107,21 @@ trait Pivot extends js.Object {
   def getData(
     options: Anon_Slice,
     callbackHandler: String,
-    updateHandler: js.Function1[/* rawData */ js.Any, Unit]
+    updateHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
   ): Unit = js.native
-  def getData(options: Anon_Slice, callbackHandler: js.Function1[/* rawData */ js.Any, Unit]): Unit = js.native
   def getData(
     options: Anon_Slice,
-    callbackHandler: js.Function1[/* rawData */ js.Any, Unit],
+    callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
+  ): Unit = js.native
+  def getData(
+    options: Anon_Slice,
+    callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit],
     updateHandler: String
   ): Unit = js.native
   def getData(
     options: Anon_Slice,
-    callbackHandler: js.Function1[/* rawData */ js.Any, Unit],
-    updateHandler: js.Function1[/* rawData */ js.Any, Unit]
+    callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit],
+    updateHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
   ): Unit = js.native
   def getFilter(hierarchyName: String): Filter = js.native
   def getFormat(measureName: String): Format = js.native

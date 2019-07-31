@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "hapi__h2o2"
-version := "8.3-dt-20190425Z-75d5b2"
+version := "8.3-dt-20190425Z-9cd717"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190404Z-6e17ff",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-a9414f",
-  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20190624Z-9e9729",
-  "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-a571af",
+  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20190624Z-ec9646",
+  "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-1e411f",
   "org.scalablytyped" %%% "hapi__joi" % "15.0-dt-20190722Z-f97fcb",
   "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-31dd4c",
   "org.scalablytyped" %%% "hapi__podium" % "3.4-dt-20190404Z-ee10bf",
-  "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-57f3c3",
+  "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-44c31a",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-cb7ee4",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

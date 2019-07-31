@@ -32,6 +32,7 @@ class Grid protected () extends js.Object {
   var columnWidths: js.Any = js.native
   var cumulativeColumnWidths: js.Any = js.native
   var cumulativeRowHeights: js.Any = js.native
+  var getIndicesInInterval: js.Any = js.native
   var ghostHeight: js.Any = js.native
   var ghostWidth: js.Any = js.native
   var numCols: Double = js.native
@@ -77,7 +78,6 @@ class Grid protected () extends js.Object {
     * Returns the total width of the entire grid
     */
   def getHeight(): Double = js.native
-  /* private */ def getIndicesInInterval(min: js.Any, max: js.Any, count: js.Any, useEndBleed: js.Any, lookup: js.Any): js.Any = js.native
   /**
     * Returns the `Rect` bounds of entire grid
     */

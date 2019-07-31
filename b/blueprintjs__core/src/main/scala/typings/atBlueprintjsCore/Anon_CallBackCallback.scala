@@ -3,6 +3,7 @@ package typings.atBlueprintjsCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents
 import typings.react.reactMod.ErrorInfo
+import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactInstance
 import typings.std.Error
@@ -33,9 +34,11 @@ trait Anon_CallBackCallback extends js.Object {
   ] = js.native
   var context: js.Any = js.native
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _]] = js.native
+  /** @internal */
   var globalHotkeysEvents: js.UndefOr[HotkeysEvents] = js.native
+  /** @internal */
   var localHotkeysEvents: js.UndefOr[HotkeysEvents] = js.native
-  val props: Anon_Children with js.Object = js.native
+  val props: js.Object with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
@@ -51,7 +54,11 @@ trait Anon_CallBackCallback extends js.Object {
   def componentWillUnmount(): Unit = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
-  def render(): ReactElement = js.native
+  def render(): Element = js.native
+  /**
+    * Components decorated with the `@HotkeysTarget` decorator must implement
+    * this method, and it must return a `Hotkeys` React element.
+    */
   def renderHotkeys(): ReactElement = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[/* prevState */ js.Object, /* props */ js.Object, js.Object | (Pick[js.Object, K])]

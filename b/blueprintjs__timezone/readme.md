@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__timezone
 
-Typings are for version 3.4.0
+Typings are for version 3.5.0
 
 ## Library description:
 Components related to timezone selection and UI

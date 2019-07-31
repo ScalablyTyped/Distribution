@@ -1,6 +1,7 @@
 package typings.spectacle
 
 import typings.spectacle.spectacleMod.alignType
+import typings.spectacle.spectacleMod.bulletStyleType
 import typings.spectacle.spectacleMod.easeType
 import typings.spectacle.spectacleMod.progressType
 import typings.spectacle.spectacleMod.sType
@@ -23,6 +24,9 @@ object spectacleStrings {
   
   @js.native
   sealed trait _top extends targetType
+  
+  @js.native
+  sealed trait arrow extends bulletStyleType
   
   @js.native
   sealed trait back extends easeType
@@ -74,6 +78,12 @@ object spectacleStrings {
   
   @js.native
   sealed trait circleOut extends easeType
+  
+  @js.native
+  sealed trait classicCheck extends bulletStyleType
+  
+  @js.native
+  sealed trait cross extends bulletStyleType
   
   @js.native
   sealed trait cubic extends easeType
@@ -137,6 +147,9 @@ object spectacleStrings {
   
   @js.native
   sealed trait `flex-start flex-start` extends alignType
+  
+  @js.native
+  sealed trait greenCheck extends bulletStyleType
   
   @js.native
   sealed trait italic extends sType
@@ -211,6 +224,9 @@ object spectacleStrings {
   sealed trait spin extends transitionType
   
   @js.native
+  sealed trait star extends bulletStyleType
+  
+  @js.native
   sealed trait underline extends sType
   
   @js.native
@@ -224,6 +240,8 @@ object spectacleStrings {
   def _self: _self = "_self".asInstanceOf[_self]
   @scala.inline
   def _top: _top = "_top".asInstanceOf[_top]
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
@@ -258,6 +276,10 @@ object spectacleStrings {
   def circleInOut: circleInOut = "circleInOut".asInstanceOf[circleInOut]
   @scala.inline
   def circleOut: circleOut = "circleOut".asInstanceOf[circleOut]
+  @scala.inline
+  def classicCheck: classicCheck = "classicCheck".asInstanceOf[classicCheck]
+  @scala.inline
+  def cross: cross = "cross".asInstanceOf[cross]
   @scala.inline
   def cubic: cubic = "cubic".asInstanceOf[cubic]
   @scala.inline
@@ -300,6 +322,8 @@ object spectacleStrings {
   def `flex-start flex-end`: `flex-start flex-end` = "flex-start flex-end".asInstanceOf[`flex-start flex-end`]
   @scala.inline
   def `flex-start flex-start`: `flex-start flex-start` = "flex-start flex-start".asInstanceOf[`flex-start flex-start`]
+  @scala.inline
+  def greenCheck: greenCheck = "greenCheck".asInstanceOf[greenCheck]
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
@@ -348,6 +372,8 @@ object spectacleStrings {
   def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
   def spin: spin = "spin".asInstanceOf[spin]
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline

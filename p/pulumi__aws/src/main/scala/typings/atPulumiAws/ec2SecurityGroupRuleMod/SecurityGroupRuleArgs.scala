@@ -37,12 +37,12 @@ trait SecurityGroupRuleArgs extends js.Object {
   val securityGroupId: Input[String]
   /**
     * If true, the security group itself will be added as
-    * a source to this ingress rule.
+    * a source to this ingress rule. Cannot be specified with `source_security_group_id`.
     */
   val self: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * The security group id to allow access to/from,
-    * depending on the `type`. Cannot be specified with `cidr_blocks`.
+    * depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
     */
   val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
   /**

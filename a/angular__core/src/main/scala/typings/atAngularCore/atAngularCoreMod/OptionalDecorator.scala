@@ -21,8 +21,8 @@ trait OptionalDecorator extends Instantiable0[Optional] {
     *
     * The following code allows the possibility of a null result:
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Optional"
-    *  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Optional">
+    * </code-example>
     *
     */
   def apply(): js.Any = js.native

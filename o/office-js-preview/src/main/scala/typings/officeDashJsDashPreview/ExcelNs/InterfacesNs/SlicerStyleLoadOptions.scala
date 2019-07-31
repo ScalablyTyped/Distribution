@@ -24,7 +24,7 @@ trait SlicerStyleLoadOptions extends js.Object {
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies if this SlicerStyle object is read-only. Read-only.
+    * Specifies whether this SlicerStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

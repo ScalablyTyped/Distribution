@@ -1,6 +1,6 @@
 package typings.consoleDashUi.consoleDashUiMod
 
-import typings.inquirer.inquirerMod.Questions
+import typings.inquirer.inquirerMod.QuestionCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,8 @@ trait UI extends js.Object {
     * Launch the prompt interface (inquiry session) with (Array of Questions || Question)
     * See [Inquirer.js#question](https://github.com/SBoudrias/Inquirer.js#question) for Question properties
     */
-  def prompt[T](questions: Questions[T]): js.Promise[T] = js.native
-  def prompt[T](questions: Questions[T], callback: js.Function1[/* answers */ T, Unit]): js.Promise[T] = js.native
+  def prompt[T](questions: QuestionCollection[T]): js.Promise[T] = js.native
+  def prompt[T](questions: QuestionCollection[T], callback: js.Function1[/* answers */ T, Unit]): js.Promise[T] = js.native
   /**
     * Sets the write level for the UI. Valid write levels are 'DEBUG', 'INFO',
     * 'WARNING', and 'ERROR'.

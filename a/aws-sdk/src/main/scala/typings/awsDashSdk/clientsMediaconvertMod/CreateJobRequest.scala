@@ -22,6 +22,10 @@ trait CreateJobRequest extends js.Object {
     */
   var JobTemplate: js.UndefOr[__string] = js.undefined
   /**
+    * Specify the relative priority for this job. In any given queue, the service begins processing the job with the highest value first. When more than one job has the same priority, the service begins processing the job that you submitted first. If you don't specify a priority, the service uses the default value 0.
+    */
+  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined
+  /**
     * Optional. When you create a job, you can specify a queue to send it to. If you don't specify, the job will go to the default queue. For more about queues, see the User Guide topic at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html.
     */
   var Queue: js.UndefOr[__string] = js.undefined
@@ -52,6 +56,7 @@ object CreateJobRequest {
     BillingTagsSource: BillingTagsSource = null,
     ClientRequestToken: __string = null,
     JobTemplate: __string = null,
+    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     UserMetadata: __mapOf__string = null
@@ -61,6 +66,7 @@ object CreateJobRequest {
     if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata)

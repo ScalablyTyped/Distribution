@@ -27,8 +27,7 @@ trait InjectableDecorator
     * The following example shows how a service class is properly
     *  marked so that a supporting service can be injected upon creation.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Injectable"
-    *  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Injectable"></code-example>
     *
     */
   def apply(): TypeDecorator = js.native

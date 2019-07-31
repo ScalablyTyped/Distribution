@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "datadog-statsd-metrics-collector"
-version := "1.1-dt-20190306Z-68c9c4"
+version := "1.1-dt-20190306Z-e9f2ac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
-  "org.scalablytyped" %%% "node-dogstatsd" % "0.0-unknown-dt-20190322Z-0188fe",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "node-dogstatsd" % "0.0-unknown-dt-20190322Z-166b89",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

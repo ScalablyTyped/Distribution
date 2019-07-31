@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Dialog ()
   extends AbstractPureComponent[IDialogProps, js.Object] {
-  /* private */ def maybeRenderCloseButton(): js.Any = js.native
-  /* private */ def maybeRenderHeader(): js.Any = js.native
+  var maybeRenderCloseButton: js.Any = js.native
+  var maybeRenderHeader: js.Any = js.native
 }
 
 /* static members */

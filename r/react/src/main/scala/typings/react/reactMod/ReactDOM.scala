@@ -9,6 +9,7 @@ import typings.react.HTMLBodyElement
 import typings.react.HTMLButtonElement
 import typings.react.HTMLCanvasElement
 import typings.react.HTMLDListElement
+import typings.react.HTMLDataElement
 import typings.react.HTMLDataListElement
 import typings.react.HTMLDialogElement
 import typings.react.HTMLDivElement
@@ -93,7 +94,7 @@ object ReactDOM {
     code: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     col: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
     colgroup: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
-    data: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
+    data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement],
     datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
     dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     defs: SVGFactory,

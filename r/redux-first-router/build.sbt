@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-first-router"
-version := "2.1-dt-20190522Z-8c931f"
+version := "2.1-dt-20190730Z-19fc98"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

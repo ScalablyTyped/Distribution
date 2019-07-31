@@ -194,7 +194,9 @@ class Worksheet () extends ClientObject {
   val onSelectionChanged: EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
   /**
     *
-    * Occurs when left-clicked/tapped operation happens in the worksheet.
+    * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
+    - The user drags the mouse for multi-selection.
+    - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -532,6 +534,21 @@ class Worksheet () extends ClientObject {
   def set(properties: WorksheetUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Worksheet): Unit = js.native
+  /**
+    *
+    * Shows row or column groups by their outline levels.
+    Outlines group and summarize a list of data in the worksheet.
+    The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed.
+    The acceptable argument range is between 0 and 8.
+    A value of 0 does not change the current display. A value greater than the current number of levels displays all the levels.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param rowLevels The number of row levels of an outline to display.
+    * @param columnLevels The number of column levels of an outline to display.
+    */
+  def showOutlineLevels(rowLevels: Double, columnLevels: Double): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.

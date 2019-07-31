@@ -48,12 +48,12 @@ class BindingScope protected () extends LocalResolver {
     * @param declareLocalCallback The callback to invoke when declaring this local var
     * @param localRef Whether or not this is a local ref
     */
-  def set(retrievalLevel: Double, name: String, lhs: ReadVarExpr): BindingScope = js.native
-  def set(retrievalLevel: Double, name: String, lhs: ReadVarExpr, priority: Double): BindingScope = js.native
+  def set(retrievalLevel: Double, name: String, lhs: Expression): BindingScope = js.native
+  def set(retrievalLevel: Double, name: String, lhs: Expression, priority: Double): BindingScope = js.native
   def set(
     retrievalLevel: Double,
     name: String,
-    lhs: ReadVarExpr,
+    lhs: Expression,
     priority: Double,
     declareLocalCallback: DeclareLocalVarCallback
   ): BindingScope = js.native
@@ -61,7 +61,7 @@ class BindingScope protected () extends LocalResolver {
   def set_true(
     retrievalLevel: Double,
     name: String,
-    lhs: ReadVarExpr,
+    lhs: Expression,
     priority: Double,
     declareLocalCallback: DeclareLocalVarCallback,
     localRef: `true`

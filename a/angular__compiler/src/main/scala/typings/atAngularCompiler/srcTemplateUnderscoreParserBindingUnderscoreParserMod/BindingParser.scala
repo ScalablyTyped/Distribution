@@ -83,6 +83,7 @@ class BindingParser protected () extends js.Object {
     tplKey: String,
     tplValue: String,
     sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
     targetMatchableAttrs: js.Array[js.Array[String]],
     targetProps: js.Array[ParsedProperty],
     targetVars: js.Array[ParsedVariable]
@@ -92,6 +93,17 @@ class BindingParser protected () extends js.Object {
     name: String,
     value: String,
     sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: js.UndefOr[scala.Nothing],
+    targetMatchableAttrs: js.Array[js.Array[String]],
+    targetProps: js.Array[ParsedProperty]
+  ): Unit = js.native
+  def parseLiteralAttr(
+    name: String,
+    value: String,
+    sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: ParseSourceSpan,
     targetMatchableAttrs: js.Array[js.Array[String]],
     targetProps: js.Array[ParsedProperty]
   ): Unit = js.native
@@ -99,6 +111,17 @@ class BindingParser protected () extends js.Object {
     name: String,
     value: Null,
     sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: js.UndefOr[scala.Nothing],
+    targetMatchableAttrs: js.Array[js.Array[String]],
+    targetProps: js.Array[ParsedProperty]
+  ): Unit = js.native
+  def parseLiteralAttr(
+    name: String,
+    value: Null,
+    sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: ParseSourceSpan,
     targetMatchableAttrs: js.Array[js.Array[String]],
     targetProps: js.Array[ParsedProperty]
   ): Unit = js.native
@@ -107,6 +130,18 @@ class BindingParser protected () extends js.Object {
     expression: String,
     isHost: Boolean,
     sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: js.UndefOr[scala.Nothing],
+    targetMatchableAttrs: js.Array[js.Array[String]],
+    targetProps: js.Array[ParsedProperty]
+  ): Unit = js.native
+  def parsePropertyBinding(
+    name: String,
+    expression: String,
+    isHost: Boolean,
+    sourceSpan: ParseSourceSpan,
+    absoluteOffset: Double,
+    valueSpan: ParseSourceSpan,
     targetMatchableAttrs: js.Array[js.Array[String]],
     targetProps: js.Array[ParsedProperty]
   ): Unit = js.native
@@ -114,6 +149,15 @@ class BindingParser protected () extends js.Object {
     name: String,
     value: String,
     sourceSpan: ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    targetMatchableAttrs: js.Array[js.Array[String]],
+    targetProps: js.Array[ParsedProperty]
+  ): Boolean = js.native
+  def parsePropertyInterpolation(
+    name: String,
+    value: String,
+    sourceSpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan,
     targetMatchableAttrs: js.Array[js.Array[String]],
     targetProps: js.Array[ParsedProperty]
   ): Boolean = js.native

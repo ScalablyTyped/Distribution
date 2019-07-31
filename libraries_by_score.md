@@ -3975,6 +3975,7 @@
 | 0.6118061889302255 | [airtable](./a/airtable) | The official Airtable JavaScript library.
 | 0.6117660572842687 | [react-webcam](./r/react-webcam) | React webcam component
 | 0.6117391875111065 | [rheostat](./r/rheostat) | Rheostat is a www, mobile, and accessible slider c
+| 0.6117230252248578 | [prosemirror-dev-tools](./p/prosemirror-dev-tools) | Dev Tools for ProseMirror
 | 0.6116294729781757 | [promise-dag](./p/promise-dag) | Chain promises declaratively using high-level grap
 | 0.6114874362152027 | [http-codes](./h/http-codes) | Map of HTTP status messages to codes based on Node
 | 0.61139529600626 | [leaflet_dot_locatecontrol](./l/leaflet_dot_locatecontrol) | A useful control to geolocate the user with many o
@@ -5521,6 +5522,7 @@
 | 0.3939089131565365 | [angular-gridster](./a/angular-gridster) | This directive gives you gridster behavior
 | 0.3937612646560477 | [rcloader](./r/rcloader) | For build system plugins that need to fetch relati
 | 0.39353564332336155 | [tensorflow__tfjs-data](./t/tensorflow__tfjs-data) | TensorFlow Data API in JavaScript
+| 0.3933920102007753 | [input-moment](./i/input-moment) | React datetime picker powered by momentjs
 | 0.3932514171878618 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets.
 | 0.3932170909939428 | [json2mq](./j/json2mq) | Generate media query string from JSON or javascrip
 | 0.39320655473895605 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types

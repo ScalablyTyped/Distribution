@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-p12-pem"
-version := "1.0.4-056434"
+version := "2.0.1-056434"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

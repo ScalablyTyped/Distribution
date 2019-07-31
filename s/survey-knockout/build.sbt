@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "survey-knockout"
-version := "1.1.1-e55744"
+version := "1.1.2-3c354e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

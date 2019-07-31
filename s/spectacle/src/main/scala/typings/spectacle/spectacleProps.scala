@@ -50,11 +50,11 @@ trait spectacleProps {
   def LinkProps: typings.spectacle.spectacleMod.LinkProps.type = typings.spectacle.spectacleMod.LinkProps
   type LinkProps = typings.spectacle.spectacleMod.LinkProps
   @scala.inline
-  def ListProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
-  type ListProps = BaseProps
+  def ListProps: typings.spectacle.spectacleMod.ListProps.type = typings.spectacle.spectacleMod.ListProps
+  type ListProps = typings.spectacle.spectacleMod.ListProps
   @scala.inline
-  def ListItemProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
-  type ListItemProps = BaseProps
+  def ListItemProps: typings.spectacle.spectacleMod.ListProps.type = typings.spectacle.spectacleMod.ListProps
+  type ListItemProps = typings.spectacle.spectacleMod.ListProps
   @scala.inline
   def MarkdownProps: typings.spectacle.spectacleMod.MarkdownProps.type = typings.spectacle.spectacleMod.MarkdownProps
   type MarkdownProps = typings.spectacle.spectacleMod.MarkdownProps
@@ -94,5 +94,8 @@ trait spectacleProps {
   @scala.inline
   def TextProps: typings.spectacle.spectacleMod.TextProps.type = typings.spectacle.spectacleMod.TextProps
   type TextProps = typings.spectacle.spectacleMod.TextProps
+  @scala.inline
+  def UnfitTextProps: typings.spectacle.spectacleMod.TextProps.type = typings.spectacle.spectacleMod.TextProps
+  type UnfitTextProps = typings.spectacle.spectacleMod.TextProps
 }
 

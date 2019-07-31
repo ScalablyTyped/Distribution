@@ -34,8 +34,8 @@ trait CheckoutResource extends js.Object {
   /**
     * Remove a line item from cart based on line item id
     */
-  def removeLineItem(checkoutId: String, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native
-  def removeLineItem(checkoutId: Double, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native
+  def removeLineItems(checkoutId: String, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native
+  def removeLineItems(checkoutId: Double, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native
   /**
     * Update a line item quantity based on line item id
     */

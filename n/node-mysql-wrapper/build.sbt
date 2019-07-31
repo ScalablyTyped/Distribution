@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "node-mysql-wrapper"
-version := "0.0-unknown-dt-20190524Z-6a1c75"
+version := "0.0-unknown-dt-20190524Z-68d7c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-2c5248",
-  "org.scalablytyped" %%% "mysql" % "2.15-dt-20190423Z-8e03ea",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "mysql" % "2.15-dt-20190423Z-191170",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

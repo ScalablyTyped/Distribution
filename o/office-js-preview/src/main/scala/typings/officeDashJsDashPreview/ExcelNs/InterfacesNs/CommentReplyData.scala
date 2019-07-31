@@ -47,6 +47,14 @@ trait CommentReplyData extends js.Object {
     * @beta
     */
   var id: js.UndefOr[String] = js.undefined
+  /**
+    *
+    * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var resolved: js.UndefOr[Boolean] = js.undefined
 }
 
 object CommentReplyData {
@@ -56,7 +64,8 @@ object CommentReplyData {
     authorName: String = null,
     content: String = null,
     creationDate: Date = null,
-    id: String = null
+    id: String = null,
+    resolved: js.UndefOr[Boolean] = js.undefined
   ): CommentReplyData = {
     val __obj = js.Dynamic.literal()
     if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail)
@@ -64,6 +73,7 @@ object CommentReplyData {
     if (content != null) __obj.updateDynamic("content")(content)
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
     __obj.asInstanceOf[CommentReplyData]
   }
 }

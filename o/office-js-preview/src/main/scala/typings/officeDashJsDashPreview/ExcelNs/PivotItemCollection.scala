@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a collection of all the Pivot Items related to their parent PivotField.
+  * Represents a collection of all the PivotItems related to their parent PivotField.
   *
   * [Api set: ExcelApi 1.8]
   */
@@ -26,27 +26,27 @@ class PivotItemCollection () extends ClientObject {
   val items: js.Array[PivotItem] = js.native
   /**
     *
-    * Gets the number of pivot hierarchies in the collection.
+    * Gets the number of PivotItems in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
-    * Gets a PivotHierarchy by its name or id.
+    * Gets a PivotItem by its name or id.
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotTable to be retrieved.
+    * @param name Name of the PivotItem to be retrieved.
     */
   def getItem(name: String): PivotItem = js.native
   /**
     *
-    * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+    * Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotHierarchy to be retrieved.
+    * @param name Name of the PivotItem to be retrieved.
     */
   def getItemOrNullObject(name: String): PivotItem = js.native
   /**

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def compileFactoryFunction(meta: R3FactoryMetadata): Anon_Factory = js.native
+  def compileFactoryFunction(meta: R3FactoryMetadata, isPipe: Boolean): Anon_Factory = js.native
   def dependenciesFromGlobalMetadata(`type`: CompileTypeMetadata, outputCtx: OutputContext, reflector: CompileReflector): js.Array[R3DependencyMetadata] = js.native
 }
 

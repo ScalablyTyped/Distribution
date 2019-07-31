@@ -13,7 +13,9 @@ class EditableText () extends AbstractPureComponent[IEditableTextProps, IEditabl
   var handleFocus: js.Any = js.native
   var handleKeyEvent: js.Any = js.native
   var handleTextChange: js.Any = js.native
+  var maybeRenderInput: js.Any = js.native
   var refHandlers: js.Any = js.native
+  var updateInputDimensions: js.Any = js.native
   var valueElement: js.Any = js.native
   def cancelEditing(): Unit = js.native
   @JSName("componentDidMount")
@@ -22,9 +24,7 @@ class EditableText () extends AbstractPureComponent[IEditableTextProps, IEditabl
   def componentDidUpdate_MEditableText(`_`: IEditableTextProps, prevState: IEditableTextState): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MEditableText(nextProps: IEditableTextProps): Unit = js.native
-  /* private */ def maybeRenderInput(value: js.Any): js.Any = js.native
   def toggleEditing(): Unit = js.native
-  /* private */ def updateInputDimensions(): js.Any = js.native
 }
 
 /* static members */

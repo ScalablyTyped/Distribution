@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput")
 @js.native
 class DateInput () extends AbstractPureComponent[IDateInputProps, IDateInputState] {
+  var formatDate: js.Any = js.native
   var handleClosePopover: js.Any = js.native
   var handleDateChange: js.Any = js.native
   var handleInputBlur: js.Any = js.native
@@ -17,23 +18,22 @@ class DateInput () extends AbstractPureComponent[IDateInputProps, IDateInputStat
   var handleInputFocus: js.Any = js.native
   var handleInputKeyDown: js.Any = js.native
   var handlePopoverBlur: js.Any = js.native
+  var hasMonthChanged: js.Any = js.native
+  var hasTimeChanged: js.Any = js.native
   var inputEl: js.Any = js.native
   var inputRef: js.Any = js.native
+  var isDateInRange: js.Any = js.native
   var lastElementInPopover: js.Any = js.native
+  var parseDate: js.Any = js.native
   var popoverContentEl: js.Any = js.native
   var registerPopoverBlurHandler: js.Any = js.native
+  /** safe wrapper around invoking input props event handler (prop defaults to undefined) */
+  var safeInvokeInputProp: js.Any = js.native
   var unregisterPopoverBlurHandler: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDateInput(nextProps: IDateInputProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDateInput(): Unit = js.native
-  /* private */ def formatDate(date: js.Any): js.Any = js.native
-  /* private */ def hasMonthChanged(prevDate: js.Any, nextDate: js.Any): js.Any = js.native
-  /* private */ def hasTimeChanged(prevDate: js.Any, nextDate: js.Any): js.Any = js.native
-  /* private */ def isDateInRange(value: js.Any): js.Any = js.native
-  /* private */ def parseDate(dateString: js.Any): js.Any = js.native
-  /** safe wrapper around invoking input props event handler (prop defaults to undefined) */
-  /* private */ def safeInvokeInputProp(name: js.Any, e: js.Any): js.Any = js.native
 }
 
 /* static members */

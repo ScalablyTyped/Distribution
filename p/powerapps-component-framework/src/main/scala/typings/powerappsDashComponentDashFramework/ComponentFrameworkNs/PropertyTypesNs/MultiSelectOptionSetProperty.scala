@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait MultiSelectOptionSetProperty extends Property {
   var attributes: js.UndefOr[OptionSetMetadata] = js.undefined
   @JSName("raw")
-  var raw_MultiSelectOptionSetProperty: js.Array[Double]
+  var raw_MultiSelectOptionSetProperty: js.Array[Double] | Null
 }
 
 object MultiSelectOptionSetProperty {
@@ -21,18 +21,19 @@ object MultiSelectOptionSetProperty {
   def apply(
     error: Boolean,
     errorMessage: String,
-    raw: js.Array[Double],
     `type`: String,
     attribute: Metadata = null,
     attributes: OptionSetMetadata = null,
     formatted: String = null,
+    raw: js.Array[Double] = null,
     security: SecurityValues = null
   ): MultiSelectOptionSetProperty = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage)
     __obj.updateDynamic("type")(`type`)
     if (attribute != null) __obj.updateDynamic("attribute")(attribute)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
     if (security != null) __obj.updateDynamic("security")(security)
     __obj.asInstanceOf[MultiSelectOptionSetProperty]
   }

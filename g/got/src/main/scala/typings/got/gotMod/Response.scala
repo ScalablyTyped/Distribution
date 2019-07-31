@@ -13,6 +13,11 @@ trait Response[B /* <: Buffer | String | js.Object */] extends IncomingMessage {
   var redirectUrls: js.UndefOr[js.Array[String]] = js.native
   var requestUrl: String = js.native
   var retryCount: Double = js.native
+  // got's Response is always a "response obtained from http.ClientRequest", therefore these two properties are never undefined
+  @JSName("statusCode")
+  var statusCode_Response: Double = js.native
+  @JSName("statusMessage")
+  var statusMessage_Response: String = js.native
   @JSName("url")
   var url_Response: String = js.native
 }

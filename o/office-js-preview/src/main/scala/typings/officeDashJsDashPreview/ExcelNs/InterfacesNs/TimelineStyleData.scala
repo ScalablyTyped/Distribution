@@ -16,7 +16,7 @@ trait TimelineStyleData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies if this TimelineStyle object is read-only. Read-only.
+    * Specifies whether this TimelineStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

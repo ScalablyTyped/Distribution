@@ -55,6 +55,14 @@ trait CommentData extends js.Object {
     * @beta
     */
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
+  /**
+    *
+    * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var resolved: js.UndefOr[Boolean] = js.undefined
 }
 
 object CommentData {
@@ -65,7 +73,8 @@ object CommentData {
     content: String = null,
     creationDate: Date = null,
     id: String = null,
-    replies: js.Array[CommentReplyData] = null
+    replies: js.Array[CommentReplyData] = null,
+    resolved: js.UndefOr[Boolean] = js.undefined
   ): CommentData = {
     val __obj = js.Dynamic.literal()
     if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail)
@@ -74,6 +83,7 @@ object CommentData {
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
     if (id != null) __obj.updateDynamic("id")(id)
     if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
     __obj.asInstanceOf[CommentData]
   }
 }

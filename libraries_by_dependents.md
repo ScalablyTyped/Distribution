@@ -4515,6 +4515,7 @@
 | 7 | [gulp-intercept](./g/gulp-intercept) | Intercept Gulp streams and take full control of th
 | 7 | [http-context](./h/http-context) | High-level request & response object. Inspired by 
 | 7 | [i18n-abide](./i/i18n-abide) | Express/connect module for Node i18n and l10n supp
+| 7 | [input-moment](./i/input-moment) | React datetime picker powered by momentjs
 | 7 | [integer](./i/integer) | Native 64-bit integers with overflow protection.
 | 7 | [is-color](./i/is-color) | Check if a string is CSS color value
 | 7 | [jackrabbit](./j/jackrabbit) | Easy RabbitMQ for node
@@ -6041,6 +6042,7 @@
 | 1 | [preact-i18n](./p/preact-i18n) | Preact internationalization, done simply.
 | 1 | [promise-pool](./p/promise-pool) | just another simple task pool based on promise (Q)
 | 1 | [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet
+| 1 | [prosemirror-dev-tools](./p/prosemirror-dev-tools) | Dev Tools for ProseMirror
 | 1 | [prosemirror-test-builder](./p/prosemirror-test-builder) | Helpers for programatically building ProseMirror t
 | 1 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
 | 1 | [proxy-verifier](./p/proxy-verifier) | Check that proxies are working, verify their anony

@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuItem ()
   extends PureComponent[IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Any] {
-  /* private */ def maybeRenderLabel(): js.Any = js.native
-  /* private */ def maybeRenderLabel(labelElement: js.Any): js.Any = js.native
-  /* private */ def maybeRenderPopover(target: js.Any): js.Any = js.native
-  /* private */ def maybeRenderPopover(target: js.Any, children: js.Any): js.Any = js.native
+  var maybeRenderLabel: js.Any = js.native
+  var maybeRenderPopover: js.Any = js.native
 }
 
 /* static members */

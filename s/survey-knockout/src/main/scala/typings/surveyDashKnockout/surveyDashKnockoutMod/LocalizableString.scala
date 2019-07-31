@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation._
 class LocalizableString protected () extends js.Object {
   def this(owner: ILocalizableOwner) = this()
   def this(owner: ILocalizableOwner, useMarkdown: Boolean) = this()
+  val calculatedText: String = js.native
   val hasHtml: Boolean = js.native
   val html: String = js.native
   val isEmpty: Boolean = js.native
   val locale: String = js.native
   var owner: ILocalizableOwner = js.native
-  val pureText: js.Any = js.native
+  val pureText: String = js.native
   val renderedHtml: String = js.native
+  var sharedData: LocalizableString = js.native
   var text: String = js.native
   val textOrHtml: String = js.native
   var useMarkdown: Boolean = js.native
@@ -27,7 +29,6 @@ class LocalizableString protected () extends js.Object {
   def onChanged(): Unit = js.native
   /* protected */ def onCreating(): Unit = js.native
   def onGetTextCallback(str: String): String = js.native
-  def onRenderedHtmlCallback(html: String): String = js.native
   def onStrChanged(): Unit = js.native
   def setJson(value: js.Any): Unit = js.native
   def setLocaleText(loc: String, value: String): Unit = js.native

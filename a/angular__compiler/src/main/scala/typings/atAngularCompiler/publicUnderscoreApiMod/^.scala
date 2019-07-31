@@ -57,10 +57,13 @@ object ^ extends js.Object {
   val CONTENT_ATTR: String = js.native
   val DEFAULT_INTERPOLATION_CONFIG: typings.atAngularCompiler.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig = js.native
   val DYNAMIC_TYPE: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinType = js.native
+  val EMPTY_PARSE_LOCATION: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseLocation = js.native
+  val EMPTY_SOURCE_SPAN: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
   val EOF: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Token = js.native
   val ERROR_COMPONENT_TYPE: ngComponentType = js.native
   val HOST_ATTR: String = js.native
   val NGSP_UNICODE: BACKSLASHuE500 = js.native
+  val STRING_TYPE: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinType = js.native
   val UrlResolver: UrlResolverCtor = js.native
   val VERSION: typings.atAngularCompiler.srcUtilMod.Version = js.native
   def analyzeAndValidateNgModules(

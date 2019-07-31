@@ -20,7 +20,9 @@ class Tree[T] ()
   var handleNodeExpand: js.Any = js.native
   var handleNodeMouseEnter: js.Any = js.native
   var handleNodeMouseLeave: js.Any = js.native
+  var handlerHelper: js.Any = js.native
   var nodeRefs: js.Any = js.native
+  var renderNodes: js.Any = js.native
   /**
     * Returns the underlying HTML element of the `Tree` node with an id of `nodeId`.
     * This element does not contain the children of the node, only its label and controls.
@@ -28,10 +30,6 @@ class Tree[T] ()
     */
   def getNodeContentElement(nodeId: String): js.UndefOr[HTMLElement] = js.native
   def getNodeContentElement(nodeId: Double): js.UndefOr[HTMLElement] = js.native
-  /* private */ def handlerHelper(handlerFromProps: js.Any, node: js.Any, e: js.Any): js.Any = js.native
-  /* private */ def renderNodes(treeNodes: js.Any): js.Any = js.native
-  /* private */ def renderNodes(treeNodes: js.Any, currentPath: js.Any): js.Any = js.native
-  /* private */ def renderNodes(treeNodes: js.Any, currentPath: js.Any, className: js.Any): js.Any = js.native
 }
 
 /* static members */

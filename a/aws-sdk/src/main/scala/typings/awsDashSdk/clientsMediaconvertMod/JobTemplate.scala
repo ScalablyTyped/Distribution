@@ -34,6 +34,10 @@ trait JobTemplate extends js.Object {
     */
   var Name: __string
   /**
+    * Relative priority on the job.
+    */
+  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined
+  /**
     * Optional. The queue that jobs created from this template are assigned to. If you don't specify this, jobs will go to the default queue.
     */
   var Queue: js.UndefOr[__string] = js.undefined
@@ -62,6 +66,7 @@ object JobTemplate {
     CreatedAt: __timestampUnix = null,
     Description: __string = null,
     LastUpdated: __timestampUnix = null,
+    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Type: Type = null
@@ -73,6 +78,7 @@ object JobTemplate {
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

@@ -72,6 +72,10 @@ class BucketObject protected () extends CustomResource {
     */
   val kmsKeyId: Output[js.UndefOr[String]] = js.native
   /**
+    * A mapping of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
+    */
+  val metadata: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
     * Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
     */
   val serverSideEncryption: Output[String] = js.native

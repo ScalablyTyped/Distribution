@@ -17,7 +17,7 @@ package object reduxDashFirstDashRouterMod {
   type Navigators[TState] = StringDictionary[Navigator[TState]]
   type Nullable[T] = js.UndefOr[T | Null]
   type Params = StringDictionary[js.Any]
-  type Query = StringDictionary[String]
+  type Query = StringDictionary[js.UndefOr[String]]
   type Route[TKeys, TState] = RouteString | (RouteObject[TKeys, TState])
   type RouteObject[TKeys, TState] = TKeys with Anon_CapitalizedWords[TState]
   type RouteString = String

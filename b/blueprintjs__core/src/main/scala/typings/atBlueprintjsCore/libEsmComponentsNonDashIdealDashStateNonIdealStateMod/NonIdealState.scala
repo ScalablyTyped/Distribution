@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NonIdealState ()
   extends PureComponent[INonIdealStateProps, js.Object, js.Any] {
-  /* private */ def maybeRenderVisual(): js.Any = js.native
+  var maybeRenderVisual: js.Any = js.native
 }
 
 /* static members */

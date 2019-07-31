@@ -15,9 +15,9 @@ import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeyParserMod.IKeyComb
 import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysDialogMod.IHotkeysDialogProps
 import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
 import typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps
+import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.SFC
-import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLElement
 import typings.std.HTMLHeadingElement
 import typings.std.HTMLLabelElement
@@ -32,21 +32,21 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Blockquote: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val Blockquote: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
   val Breadcrumb: SFC[IBreadcrumbProps] = js.native
-  val Code: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val Code: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
   val DISPLAYNAME_PREFIX: Blueprint3 = js.native
   val Expander: SFC[js.Object] = js.native
-  val H1: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H2: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H3: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H4: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H5: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val H6: StatelessComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
-  val Label: StatelessComponent[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = js.native
-  val OL: StatelessComponent[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = js.native
-  val Pre: StatelessComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
-  val UL: StatelessComponent[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = js.native
+  val H1: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H2: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H3: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H4: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H5: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val H6: FunctionComponent[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = js.native
+  val Label: FunctionComponent[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = js.native
+  val OL: FunctionComponent[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = js.native
+  val Pre: FunctionComponent[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = js.native
+  val UL: FunctionComponent[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = js.native
   def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): Anon_Args with T = js.native
   def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): Anon_ArgsDisplayName with T = js.native
   def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = js.native

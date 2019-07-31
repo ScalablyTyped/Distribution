@@ -12,12 +12,14 @@ class ASTWithSource protected ()
     ast: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     source: String,
     location: String,
+    absoluteOffset: Double,
     errors: js.Array[typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParserError]
   ) = this()
   def this(
     ast: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     source: Null,
     location: String,
+    absoluteOffset: Double,
     errors: js.Array[typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParserError]
   ) = this()
 }

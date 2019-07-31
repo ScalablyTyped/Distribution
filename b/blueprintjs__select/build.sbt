@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__select"
-version := "3.9.0-913cd1"
+version := "3.10.0-b76ee1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blueprintjs__core" % "3.17.1-146588",
-  "org.scalablytyped" %%% "blueprintjs__icons" % "3.9.1-e13dc2",
+  "org.scalablytyped" %%% "blueprintjs__core" % "3.18.0-ba4c8a",
+  "org.scalablytyped" %%% "blueprintjs__icons" % "3.10.0-e13dc2",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-1a85e7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

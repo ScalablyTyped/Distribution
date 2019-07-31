@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__animations"
-version := "8.1.3-dcca52"
+version := "8.2.0-dcca52"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

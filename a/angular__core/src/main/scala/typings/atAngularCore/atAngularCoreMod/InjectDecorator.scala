@@ -21,8 +21,8 @@ trait InjectDecorator
     * When `@Inject()` is not present, the injector uses the type annotation of the
     * parameter as the provider.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts"
-    * region="InjectWithoutDecorator"  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="InjectWithoutDecorator">
+    * </code-example>
     */
   def apply(token: js.Any): js.Any = js.native
 }

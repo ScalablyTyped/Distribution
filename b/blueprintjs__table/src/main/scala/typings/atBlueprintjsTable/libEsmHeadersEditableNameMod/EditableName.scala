@@ -15,8 +15,8 @@ class EditableName protected ()
   var handleChange: js.Any = js.native
   var handleConfirm: js.Any = js.native
   var handleEdit: js.Any = js.native
+  var invokeCallback: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MEditableName(nextProps: IEditableNameProps): Unit = js.native
-  /* private */ def invokeCallback(callback: js.Any, value: js.Any): js.Any = js.native
 }
 

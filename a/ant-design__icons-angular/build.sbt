@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons-angular"
-version := "8.0.2-dbbc8a"
+version := "8.0.3-d229d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__common" % "8.1.3-93c362",
-  "org.scalablytyped" %%% "angular__core" % "8.1.3-9fadcb",
-  "org.scalablytyped" %%% "angular__platform-browser" % "8.1.3-7d21f4",
+  "org.scalablytyped" %%% "angular__common" % "8.2.0-812bb9",
+  "org.scalablytyped" %%% "angular__core" % "8.2.0-ac4c63",
+  "org.scalablytyped" %%% "angular__platform-browser" % "8.2.0-ecd9b2",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

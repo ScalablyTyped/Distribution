@@ -127,7 +127,7 @@ class Util () extends js.Object {
     * @param {?error} parsedHttpRespMessage.err - An error detected.
     * @param {object} parsedHttpRespMessage.body - The original body value provided
     *     will try to be JSON.parse'd. If it's successful, the parsed value will
-    * be returned here, otherwise the original value.
+    * be returned here, otherwise the original value and an error will be returned.
     */
   def parseHttpRespBody(body: ResponseBody): ParsedHttpResponseBody = js.native
   /**

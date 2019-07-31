@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "coffeeify"
-version := "0.0-unknown-dt-20190322Z-d32a96"
+version := "0.0-unknown-dt-20190322Z-5c5693"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-553c49")
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-3ba3bf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

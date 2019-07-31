@@ -11,6 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class TagInput () extends AbstractPureComponent[ITagInputProps, ITagInputState] {
   var addTags: js.Any = js.native
+  var findNextIndex: js.Any = js.native
+  var getNextActiveIndex: js.Any = js.native
+  /**
+    * Splits inputValue on separator prop,
+    * trims whitespace from each new value,
+    * and ignores empty values.
+    */
+  var getValues: js.Any = js.native
+  var handleBackspaceToRemove: js.Any = js.native
   var handleContainerBlur: js.Any = js.native
   var handleContainerClick: js.Any = js.native
   var handleInputChange: js.Any = js.native
@@ -20,24 +29,15 @@ class TagInput () extends AbstractPureComponent[ITagInputProps, ITagInputState] 
   var handleInputPaste: js.Any = js.native
   var handleRemoveTag: js.Any = js.native
   var inputElement: js.Any = js.native
+  var invokeKeyPressCallback: js.Any = js.native
+  /** Returns whether the given index represents a valid item in `this.props.values`. */
+  var isValidIndex: js.Any = js.native
   var maybeRenderTag: js.Any = js.native
   var refHandlers: js.Any = js.native
+  /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
+  var removeIndexFromValues: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTagInput(nextProps: HTMLInputProps with ITagInputProps): Unit = js.native
-  /* private */ def findNextIndex(startIndex: js.Any, direction: js.Any): js.Any = js.native
-  /* private */ def getNextActiveIndex(direction: js.Any): js.Any = js.native
-  /**
-    * Splits inputValue on separator prop,
-    * trims whitespace from each new value,
-    * and ignores empty values.
-    */
-  /* private */ def getValues(inputValue: js.Any): js.Any = js.native
-  /* private */ def handleBackspaceToRemove(event: js.Any): js.Any = js.native
-  /* private */ def invokeKeyPressCallback(propCallbackName: js.Any, event: js.Any, activeIndex: js.Any): js.Any = js.native
-  /** Returns whether the given index represents a valid item in `this.props.values`. */
-  /* private */ def isValidIndex(index: js.Any): js.Any = js.native
-  /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
-  /* private */ def removeIndexFromValues(index: js.Any): js.Any = js.native
 }
 
 /* static members */

@@ -54,7 +54,7 @@ class QueryList[T] () extends js.Object {
     * on change detection, it will not notify of changes to the queries, unless a new change
     * occurs.
     *
-    * @param resultsTree The results tree to store
+    * @param resultsTree The query results to store
     */
   def reset(resultsTree: js.Array[T | js.Array[_]]): Unit = js.native
   /** internal */

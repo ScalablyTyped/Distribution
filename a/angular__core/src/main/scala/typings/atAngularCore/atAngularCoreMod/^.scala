@@ -28,7 +28,6 @@ import typings.atAngularCore.atAngularCoreStrings.`en-US`
 import typings.rxjs.rxjsMod.Observable
 import typings.std.Element
 import typings.std.FunctionConstructor
-import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Node
 import scala.scalajs.js
@@ -86,7 +85,7 @@ object ^ extends js.Object {
   val ɵNG_MODULE_DEF: String = js.native
   val ɵNG_PIPE_DEF: String = js.native
   val ɵNO_CHANGE: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  val ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__ : js.Function0[ChangeDetectorRef] = js.native
+  val ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__ : js.Function1[/* isPipe */ js.UndefOr[Boolean], ChangeDetectorRef] = js.native
   val ɵSWITCH_COMPILE_COMPONENT__POST_R3__ : js.Function2[
     /* type */ typings.atAngularCore.atAngularCoreMod.Type[js.Any], 
     /* metadata */ typings.atAngularCore.atAngularCoreMod.Component, 
@@ -123,9 +122,9 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: typeof ElementRef */ /* ElementRefToken */ js.Any, 
     ViewContainerRef
   ] = js.native
-  val ɵangular_packages_core_core_bb: InjectionToken[js.Function1[/* fn */ js.Function0[Unit], Unit]] = js.native
-  val ɵangular_packages_core_core_r: js.Array[StaticProvider] = js.native
-  val ɵangular_packages_core_core_t: Boolean = js.native
+  val ɵangular_packages_core_core_ba: InjectionToken[js.Function1[/* fn */ js.Function0[Unit], Unit]] = js.native
+  val ɵangular_packages_core_core_q: js.Array[StaticProvider] = js.native
+  val ɵangular_packages_core_core_s: Boolean = js.native
   val ɵdefaultIterableDiffers: IterableDiffers = js.native
   val ɵdefaultKeyValueDiffers: KeyValueDiffers = js.native
   val ɵglobal: js.Any = js.native
@@ -172,8 +171,6 @@ object ^ extends js.Object {
   def ɵ_sanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: String): String = js.native
   def ɵ_sanitizeStyle(value: String): String = js.native
   def ɵ_sanitizeUrl(url: String): String = js.native
-  def ɵaddPlayer(ref: ComponentInstance | DirectiveInstance, player: ɵPlayer): Unit = js.native
-  def ɵaddPlayer(ref: HTMLElement, player: ɵPlayer): Unit = js.native
   def ɵand(
     flags: ɵNodeFlags,
     matchedQueriesDsl: js.Array[js.Tuple2[Double | String, ɵQueryValueType]],
@@ -288,66 +285,65 @@ object ^ extends js.Object {
   def ɵangular_packages_core_core_a_T_T[T](token: InjectionToken[T]): T = js.native
   @JSName("ɵangular_packages_core_core_a")
   def ɵangular_packages_core_core_a_T_T[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T = js.native
-  def ɵangular_packages_core_core_bc(tNode: TNode, attrNameToInject: String): String | Null = js.native
-  def ɵangular_packages_core_core_bd(): ɵangular_packages_core_core_bm = js.native
-  def ɵangular_packages_core_core_be(): TNode = js.native
-  def ɵangular_packages_core_core_bf[T](): T = js.native
-  def ɵangular_packages_core_core_bf[T](level: Double): T = js.native
-  def ɵangular_packages_core_core_bh(tag: String, prop: String): js.Function1[/* unsafeResourceUrl */ js.Any, String] = js.native
-  def ɵangular_packages_core_core_bk(name: String): js.Any = js.native
-  def ɵangular_packages_core_core_bk(name: String, props: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
-  def ɵangular_packages_core_core_bk(name: String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): js.Any = js.native
-  def ɵangular_packages_core_core_bl(name: String): js.Any = js.native
-  def ɵangular_packages_core_core_bl(name: String, props: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
-  def ɵangular_packages_core_core_bl(name: String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): js.Any = js.native
-  def ɵangular_packages_core_core_bl(
+  def ɵangular_packages_core_core_bb(tNode: TNode, attrNameToInject: String): String | Null = js.native
+  def ɵangular_packages_core_core_bc(): ɵangular_packages_core_core_bj = js.native
+  def ɵangular_packages_core_core_bd(): TNode = js.native
+  def ɵangular_packages_core_core_be[T](): T = js.native
+  def ɵangular_packages_core_core_be[T](level: Double): T = js.native
+  def ɵangular_packages_core_core_bg(tag: String, prop: String): js.Function1[/* unsafeResourceUrl */ js.Any, String] = js.native
+  def ɵangular_packages_core_core_bh(name: String): js.Any = js.native
+  def ɵangular_packages_core_core_bh(name: String, props: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def ɵangular_packages_core_core_bh(name: String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): js.Any = js.native
+  def ɵangular_packages_core_core_bi(name: String): js.Any = js.native
+  def ɵangular_packages_core_core_bi(name: String, props: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def ɵangular_packages_core_core_bi(name: String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): js.Any = js.native
+  def ɵangular_packages_core_core_bi(
     name: String,
     props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function3[/* target */ js.Any, /* name */ String, /* repeated */ js.Any, Unit]
   ): js.Any = js.native
-  def ɵangular_packages_core_core_bn(fn: js.Function0[Unit]): String = js.native
-  def ɵangular_packages_core_core_bo[T](view: TData, index: Double): T = js.native
-  def ɵangular_packages_core_core_bo[T](view: ɵangular_packages_core_core_bm, index: Double): T = js.native
-  def ɵangular_packages_core_core_bp(viewOrComponent: js.Object): RootContext = js.native
-  def ɵangular_packages_core_core_bp(viewOrComponent: ɵangular_packages_core_core_bm): RootContext = js.native
-  def ɵangular_packages_core_core_bq[T](objWithPropertyToExtract: T): String = js.native
+  def ɵangular_packages_core_core_bk(fn: js.Function0[Unit]): String = js.native
+  def ɵangular_packages_core_core_bl[T](view: TData, index: Double): T = js.native
+  def ɵangular_packages_core_core_bl[T](view: ɵangular_packages_core_core_bj, index: Double): T = js.native
+  def ɵangular_packages_core_core_bm(viewOrComponent: js.Object): RootContext = js.native
+  def ɵangular_packages_core_core_bm(viewOrComponent: ɵangular_packages_core_core_bj): RootContext = js.native
+  def ɵangular_packages_core_core_bn[T](objWithPropertyToExtract: T): String = js.native
   def ɵangular_packages_core_core_e(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = js.native
   def ɵangular_packages_core_core_f(): String = js.native
   def ɵangular_packages_core_core_g(
     ElementRefToken: Instantiable1[
       /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
-      ElementRef[js.Object]
+      ElementRef[js.Any]
     ],
     tNode: TNode,
-    view: ɵangular_packages_core_core_bm
+    view: ɵangular_packages_core_core_bj
   ): ElementRef[_] = js.native
   def ɵangular_packages_core_core_h[T](
     TemplateRefToken: Instantiable0[TemplateRef[js.Object]],
     ElementRefToken: Instantiable1[
       /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
-      ElementRef[js.Object]
+      ElementRef[js.Any]
     ],
     hostTNode: TNode,
-    hostView: ɵangular_packages_core_core_bm
+    hostView: ɵangular_packages_core_core_bj
   ): TemplateRef[T] | Null = js.native
-  def ɵangular_packages_core_core_i(hostTNode: TNode, hostView: ɵangular_packages_core_core_bm, context: js.Any): ChangeDetectorRef = js.native
-  def ɵangular_packages_core_core_j(id: String): NgModuleFactory[_] = js.native
-  def ɵangular_packages_core_core_o(): IterableDiffers = js.native
-  def ɵangular_packages_core_core_p(): KeyValueDiffers = js.native
-  def ɵangular_packages_core_core_q(): String = js.native
-  def ɵangular_packages_core_core_q(locale: String): String = js.native
-  def ɵangular_packages_core_core_s(ngZone: NgZone): js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
-  def ɵangular_packages_core_core_u(): Boolean = js.native
-  def ɵangular_packages_core_core_v(signature: String): js.Any = js.native
-  def ɵangular_packages_core_core_v(signature: String, flags: js.Any): js.Any = js.native
-  def ɵangular_packages_core_core_w[T](scope: Scope): T = js.native
-  def ɵangular_packages_core_core_w[T](scope: Scope, returnValue: T): T = js.native
-  @JSName("ɵangular_packages_core_core_w")
-  def ɵangular_packages_core_core_w_T_Unit[T](scope: Scope): Unit = js.native
-  def ɵangular_packages_core_core_x(rangeType: String, action: String): Range = js.native
-  def ɵangular_packages_core_core_y(range: Range): Unit = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_i(id: String): NgModuleFactory[_] = js.native
+  def ɵangular_packages_core_core_n(): IterableDiffers = js.native
+  def ɵangular_packages_core_core_o(): KeyValueDiffers = js.native
+  def ɵangular_packages_core_core_p(): String = js.native
+  def ɵangular_packages_core_core_p(locale: String): String = js.native
+  def ɵangular_packages_core_core_r(ngZone: NgZone): js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
+  def ɵangular_packages_core_core_t(): Boolean = js.native
+  def ɵangular_packages_core_core_u(signature: String): js.Any = js.native
+  def ɵangular_packages_core_core_u(signature: String, flags: js.Any): js.Any = js.native
+  def ɵangular_packages_core_core_v[T](scope: Scope): T = js.native
+  def ɵangular_packages_core_core_v[T](scope: Scope, returnValue: T): T = js.native
+  @JSName("ɵangular_packages_core_core_v")
+  def ɵangular_packages_core_core_v_T_Unit[T](scope: Scope): Unit = js.native
+  def ɵangular_packages_core_core_w(rangeType: String, action: String): Range = js.native
+  def ɵangular_packages_core_core_x(range: Range): Unit = js.native
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
@@ -356,7 +352,7 @@ object ^ extends js.Object {
     value: js.Any,
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _]
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
@@ -366,7 +362,7 @@ object ^ extends js.Object {
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _],
     bindings: js.Array[BindingDef]
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
@@ -377,7 +373,7 @@ object ^ extends js.Object {
     bindings: js.Array[BindingDef],
     outputs: js.Array[OutputDef]
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: Null,
@@ -386,7 +382,7 @@ object ^ extends js.Object {
     value: js.Any,
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _]
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: Null,
@@ -396,7 +392,7 @@ object ^ extends js.Object {
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _],
     bindings: js.Array[BindingDef]
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_z(
+  def ɵangular_packages_core_core_y(
     checkIndex: Double,
     flags: ɵNodeFlags,
     matchedQueriesDsl: Null,
@@ -407,7 +403,6 @@ object ^ extends js.Object {
     bindings: js.Array[BindingDef],
     outputs: js.Array[OutputDef]
   ): NodeDef = js.native
-  def ɵbindPlayerFactory[T](factoryFn: ɵangular_packages_core_core_bi, value: T): ɵPlayerFactory = js.native
   def ɵbypassSanitizationTrustHtml(trustedHtml: String): TrustedHtmlString = js.native
   def ɵbypassSanitizationTrustResourceUrl(trustedResourceUrl: String): TrustedResourceUrlString = js.native
   def ɵbypassSanitizationTrustScript(trustedScript: String): TrustedScriptString = js.native
@@ -580,8 +575,6 @@ object ^ extends js.Object {
   def ɵgetLContext(target: js.Any): ɵLContext | Null = js.native
   def ɵgetLocalePluralCase(locale: String): js.Function1[/* value */ Double, Double] = js.native
   def ɵgetModuleFactory__POST_R3__(id: String): NgModuleFactory[_] = js.native
-  def ɵgetPlayers(ref: ComponentInstance | DirectiveInstance): js.Array[ɵPlayer] = js.native
-  def ɵgetPlayers(ref: HTMLElement): js.Array[ɵPlayer] = js.native
   def ɵi18nConfigureLocalize(): Unit = js.native
   def ɵi18nConfigureLocalize(options: I18nLocalizeOptions): Unit = js.native
   def ɵinitServicesIfNeeded(): Unit = js.native
@@ -1067,86 +1060,10 @@ object ^ extends js.Object {
   def ɵɵclassMap(classes: String): Unit = js.native
   def ɵɵclassMap(classes: StringDictionary[js.Any]): Unit = js.native
   def ɵɵclassMap(classes: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE): Unit = js.native
-  def ɵɵclassProp(classIndex: Double, value: Boolean): Unit = js.native
-  def ɵɵclassProp(classIndex: Double, value: Boolean, forceOverride: Boolean): Unit = js.native
-  def ɵɵclassProp(classIndex: Double, value: ɵPlayerFactory): Unit = js.native
-  def ɵɵclassProp(classIndex: Double, value: ɵPlayerFactory, forceOverride: Boolean): Unit = js.native
-  def ɵɵcomponentHostSyntheticListener[T](eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): Unit = js.native
-  def ɵɵcomponentHostSyntheticListener[T](eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _], useCapture: Boolean): Unit = js.native
-  def ɵɵcomponentHostSyntheticListener[T](
-    eventName: String,
-    listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _],
-    useCapture: Boolean,
-    eventTargetResolver: GlobalTargetResolver
-  ): Unit = js.native
-  def ɵɵcontainer(index: Double): Unit = js.native
-  def ɵɵcontainerRefreshEnd(): Unit = js.native
-  def ɵɵcontainerRefreshStart(index: Double): Unit = js.native
-  def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[String], descend: Boolean, read: js.Any): QueryList[T] = js.native
-  def ɵɵcontentQuery[T](
-    directiveIndex: Double,
-    predicate: typings.atAngularCore.atAngularCoreMod.Type[_],
-    descend: Boolean,
-    read: js.Any
-  ): QueryList[T] = js.native
-  def ɵɵdefineBase[T](baseDefinition: Anon_ContentQueries[T]): ɵɵBaseDef[T] = js.native
-  def ɵɵdefineComponent[T](componentDefinition: Anon_ChangeDetection[T]): scala.Nothing = js.native
-  def ɵɵdefineDirective[T](directiveDefinition: Anon_ContentQueriesExportAs[T]): scala.Nothing = js.native
-  def ɵɵdefineInjectable[T](opts: Anon_Any[T]): scala.Nothing = js.native
-  def ɵɵdefineInjector(options: Anon_FactoryImports): scala.Nothing = js.native
-  def ɵɵdefineNgModule[T](`def`: Anon_Bootstrap[T]): scala.Nothing = js.native
-  def ɵɵdefinePipe[T](pipeDef: Anon_FactoryName[T]): scala.Nothing = js.native
-  def ɵɵdirectiveInject[T](token: InjectionToken[T]): T = js.native
-  def ɵɵdirectiveInject[T](token: InjectionToken[T], flags: InjectFlags): T = js.native
-  def ɵɵdirectiveInject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T = js.native
-  def ɵɵdirectiveInject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T], flags: InjectFlags): T = js.native
-  def ɵɵdisableBindings(): Unit = js.native
-  def ɵɵelement(index: Double, name: String): Unit = js.native
-  def ɵɵelement(index: Double, name: String, attrs: Null, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵelement(index: Double, name: String, attrs: TAttributes): Unit = js.native
-  def ɵɵelement(index: Double, name: String, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵelementContainerEnd(): Unit = js.native
-  def ɵɵelementContainerStart(index: Double): Unit = js.native
-  def ɵɵelementContainerStart(index: Double, attrs: Null, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵelementContainerStart(index: Double, attrs: TAttributes): Unit = js.native
-  def ɵɵelementContainerStart(index: Double, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵelementEnd(): Unit = js.native
-  def ɵɵelementHostAttrs(attrs: TAttributes): Unit = js.native
-  def ɵɵelementStart(index: Double, name: String): Unit = js.native
-  def ɵɵelementStart(index: Double, name: String, attrs: Null, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵelementStart(index: Double, name: String, attrs: TAttributes): Unit = js.native
-  def ɵɵelementStart(index: Double, name: String, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
-  def ɵɵembeddedViewEnd(): Unit = js.native
-  def ɵɵembeddedViewStart(viewBlockId: Double, consts: Double, vars: Double): ɵRenderFlags = js.native
-  def ɵɵenableBindings(): Unit = js.native
-  def ɵɵgetCurrentView(): OpaqueViewState = js.native
-  def ɵɵgetFactoryOf[T](`type`: typings.atAngularCore.atAngularCoreMod.Type[_]): FactoryFn[T] | Null = js.native
-  def ɵɵgetInheritedFactory[T](`type`: typings.atAngularCore.atAngularCoreMod.Type[_]): js.Function1[/* type */ typings.atAngularCore.atAngularCoreMod.Type[T], T] = js.native
-  def ɵɵi18n(index: Double, message: String): Unit = js.native
-  def ɵɵi18n(index: Double, message: String, subTemplateIndex: Double): Unit = js.native
-  def ɵɵi18nApply(index: Double): Unit = js.native
-  def ɵɵi18nAttributes(index: Double, values: js.Array[String]): Unit = js.native
-  def ɵɵi18nEnd(): Unit = js.native
-  def ɵɵi18nExp[T](value: T): TsickleIssue1009 = js.native
-  def ɵɵi18nLocalize(input: String): String = js.native
-  def ɵɵi18nLocalize(input: String, placeholders: StringDictionary[String]): String = js.native
-  def ɵɵi18nPostprocess(message: String): String = js.native
-  def ɵɵi18nPostprocess(message: String, replacements: StringDictionary[String | js.Array[String]]): String = js.native
-  def ɵɵi18nStart(index: Double, message: String): Unit = js.native
-  def ɵɵi18nStart(index: Double, message: String, subTemplateIndex: Double): Unit = js.native
-  def ɵɵinject[T](token: InjectionToken[T]): T | Null = js.native
-  def ɵɵinject[T](token: InjectionToken[T], flags: InjectFlags): T | Null = js.native
-  def ɵɵinject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T | Null = js.native
-  def ɵɵinject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T], flags: InjectFlags): T | Null = js.native
-  def ɵɵinjectAttribute(attrNameToInject: String): String | Null = js.native
-  @JSName("ɵɵinject")
-  def ɵɵinject_T_T[T](token: InjectionToken[T]): T = js.native
-  @JSName("ɵɵinject")
-  def ɵɵinject_T_T[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T = js.native
-  def ɵɵinterpolation1(prefix: String, v0: js.Any, suffix: String): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation2(prefix: String, v0: js.Any, i0: String, v1: js.Any, suffix: String): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation3(prefix: String, v0: js.Any, i0: String, v1: js.Any, i1: String, v2: js.Any, suffix: String): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation4(
+  def ɵɵclassMapInterpolate1(prefix: String, v0: js.Any, suffix: String): Unit = js.native
+  def ɵɵclassMapInterpolate2(prefix: String, v0: js.Any, i0: String, v1: js.Any, suffix: String): Unit = js.native
+  def ɵɵclassMapInterpolate3(prefix: String, v0: js.Any, i0: String, v1: js.Any, i1: String, v2: js.Any, suffix: String): Unit = js.native
+  def ɵɵclassMapInterpolate4(
     prefix: String,
     v0: js.Any,
     i0: String,
@@ -1156,8 +1073,8 @@ object ^ extends js.Object {
     i2: String,
     v3: js.Any,
     suffix: String
-  ): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation5(
+  ): Unit = js.native
+  def ɵɵclassMapInterpolate5(
     prefix: String,
     v0: js.Any,
     i0: String,
@@ -1169,8 +1086,8 @@ object ^ extends js.Object {
     i3: String,
     v4: js.Any,
     suffix: String
-  ): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation6(
+  ): Unit = js.native
+  def ɵɵclassMapInterpolate6(
     prefix: String,
     v0: js.Any,
     i0: String,
@@ -1184,8 +1101,8 @@ object ^ extends js.Object {
     i4: String,
     v5: js.Any,
     suffix: String
-  ): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation7(
+  ): Unit = js.native
+  def ɵɵclassMapInterpolate7(
     prefix: String,
     v0: js.Any,
     i0: String,
@@ -1201,8 +1118,8 @@ object ^ extends js.Object {
     i5: String,
     v6: js.Any,
     suffix: String
-  ): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolation8(
+  ): Unit = js.native
+  def ɵɵclassMapInterpolate8(
     prefix: String,
     v0: js.Any,
     i0: String,
@@ -1220,8 +1137,96 @@ object ^ extends js.Object {
     i6: String,
     v7: js.Any,
     suffix: String
-  ): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
-  def ɵɵinterpolationV(values: js.Array[_]): String | typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE = js.native
+  ): Unit = js.native
+  def ɵɵclassMapInterpolateV(values: js.Array[_]): Unit = js.native
+  def ɵɵclassProp(className: String): Unit = js.native
+  def ɵɵclassProp(className: String, value: Boolean): Unit = js.native
+  def ɵɵcomponentHostSyntheticListener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): Unit = js.native
+  def ɵɵcomponentHostSyntheticListener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _], useCapture: Boolean): Unit = js.native
+  def ɵɵcomponentHostSyntheticListener(
+    eventName: String,
+    listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _],
+    useCapture: Boolean,
+    eventTargetResolver: GlobalTargetResolver
+  ): Unit = js.native
+  def ɵɵcontainer(index: Double): Unit = js.native
+  def ɵɵcontainerRefreshEnd(): Unit = js.native
+  def ɵɵcontainerRefreshStart(index: Double): Unit = js.native
+  def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[String], descend: Boolean): Unit = js.native
+  def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[String], descend: Boolean, read: js.Any): Unit = js.native
+  def ɵɵcontentQuery[T](
+    directiveIndex: Double,
+    predicate: typings.atAngularCore.atAngularCoreMod.Type[_],
+    descend: Boolean
+  ): Unit = js.native
+  def ɵɵcontentQuery[T](
+    directiveIndex: Double,
+    predicate: typings.atAngularCore.atAngularCoreMod.Type[_],
+    descend: Boolean,
+    read: js.Any
+  ): Unit = js.native
+  def ɵɵdefineBase[T](baseDefinition: Anon_ContentQueries[T]): ɵɵBaseDef[T] = js.native
+  def ɵɵdefineComponent[T](componentDefinition: Anon_ChangeDetection[T]): scala.Nothing = js.native
+  def ɵɵdefineDirective[T](directiveDefinition: Anon_ContentQueriesExportAs[T]): scala.Nothing = js.native
+  def ɵɵdefineInjectable[T](opts: Anon_Any[T]): scala.Nothing = js.native
+  def ɵɵdefineInjector(options: Anon_FactoryImports): scala.Nothing = js.native
+  def ɵɵdefineNgModule[T](`def`: Anon_Bootstrap[T]): scala.Nothing = js.native
+  def ɵɵdefinePipe[T](pipeDef: Anon_FactoryName[T]): scala.Nothing = js.native
+  def ɵɵdirectiveInject[T](token: InjectionToken[T]): T = js.native
+  def ɵɵdirectiveInject[T](token: InjectionToken[T], flags: InjectFlags): T = js.native
+  def ɵɵdirectiveInject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T = js.native
+  def ɵɵdirectiveInject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T], flags: InjectFlags): T = js.native
+  def ɵɵdisableBindings(): Unit = js.native
+  def ɵɵelement(index: Double, name: String): Unit = js.native
+  def ɵɵelement(index: Double, name: String, attrs: Null, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelement(index: Double, name: String, attrs: TAttributes): Unit = js.native
+  def ɵɵelement(index: Double, name: String, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementContainer(index: Double): Unit = js.native
+  def ɵɵelementContainer(index: Double, attrs: Null, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementContainer(index: Double, attrs: TAttributes): Unit = js.native
+  def ɵɵelementContainer(index: Double, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementContainerEnd(): Unit = js.native
+  def ɵɵelementContainerStart(index: Double): Unit = js.native
+  def ɵɵelementContainerStart(index: Double, attrs: Null, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementContainerStart(index: Double, attrs: TAttributes): Unit = js.native
+  def ɵɵelementContainerStart(index: Double, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementEnd(): Unit = js.native
+  def ɵɵelementHostAttrs(attrs: TAttributes): Unit = js.native
+  def ɵɵelementStart(index: Double, name: String): Unit = js.native
+  def ɵɵelementStart(index: Double, name: String, attrs: Null, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵelementStart(index: Double, name: String, attrs: TAttributes): Unit = js.native
+  def ɵɵelementStart(index: Double, name: String, attrs: TAttributes, localRefs: js.Array[String]): Unit = js.native
+  def ɵɵembeddedViewEnd(): Unit = js.native
+  def ɵɵembeddedViewStart(viewBlockId: Double, consts: Double, vars: Double): ɵRenderFlags = js.native
+  def ɵɵenableBindings(): Unit = js.native
+  def ɵɵgetCurrentView(): OpaqueViewState = js.native
+  def ɵɵgetFactoryOf[T](`type`: typings.atAngularCore.atAngularCoreMod.Type[_]): FactoryFn[T] | Null = js.native
+  def ɵɵgetInheritedFactory[T](`type`: typings.atAngularCore.atAngularCoreMod.Type[_]): js.Function1[/* type */ typings.atAngularCore.atAngularCoreMod.Type[T], T] = js.native
+  def ɵɵhostProperty[T](propName: String, value: T): TsickleIssue1009 = js.native
+  def ɵɵhostProperty[T](propName: String, value: T, sanitizer: SanitizerFn): TsickleIssue1009 = js.native
+  def ɵɵi18n(index: Double, message: String): Unit = js.native
+  def ɵɵi18n(index: Double, message: String, subTemplateIndex: Double): Unit = js.native
+  def ɵɵi18nApply(index: Double): Unit = js.native
+  def ɵɵi18nAttributes(index: Double, values: js.Array[String]): Unit = js.native
+  def ɵɵi18nEnd(): Unit = js.native
+  def ɵɵi18nExp[T](value: T): TsickleIssue1009 = js.native
+  def ɵɵi18nLocalize(input: String): String = js.native
+  def ɵɵi18nLocalize(input: String, placeholders: StringDictionary[String]): String = js.native
+  def ɵɵi18nPostprocess(message: String): String = js.native
+  def ɵɵi18nPostprocess(message: String, replacements: StringDictionary[String | js.Array[String]]): String = js.native
+  def ɵɵi18nStart(index: Double, message: String): Unit = js.native
+  def ɵɵi18nStart(index: Double, message: String, subTemplateIndex: Double): Unit = js.native
+  def ɵɵinject[T](token: InjectionToken[T]): T | Null = js.native
+  def ɵɵinject[T](token: InjectionToken[T], flags: InjectFlags): T | Null = js.native
+  def ɵɵinject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T | Null = js.native
+  def ɵɵinject[T](token: typings.atAngularCore.atAngularCoreMod.Type[T], flags: InjectFlags): T | Null = js.native
+  def ɵɵinjectAttribute(attrNameToInject: String): String | Null = js.native
+  def ɵɵinjectPipeChangeDetectorRef(): ChangeDetectorRef | Null = js.native
+  def ɵɵinjectPipeChangeDetectorRef(flags: InjectFlags): ChangeDetectorRef | Null = js.native
+  @JSName("ɵɵinject")
+  def ɵɵinject_T_T[T](token: InjectionToken[T]): T = js.native
+  @JSName("ɵɵinject")
+  def ɵɵinject_T_T[T](token: typings.atAngularCore.atAngularCoreMod.Type[T]): T = js.native
   def ɵɵlistener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): Unit = js.native
   def ɵɵlistener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _], useCapture: Boolean): Unit = js.native
   def ɵɵlistener(
@@ -1232,7 +1237,7 @@ object ^ extends js.Object {
   ): Unit = js.native
   def ɵɵload[T](index: Double): T = js.native
   def ɵɵloadContentQuery[T](): QueryList[T] = js.native
-  def ɵɵloadViewQuery[T](): T = js.native
+  def ɵɵloadViewQuery[T](): QueryList[T] = js.native
   def ɵɵnamespaceHTML(): Unit = js.native
   def ɵɵnamespaceMathML(): Unit = js.native
   def ɵɵnamespaceSVG(): Unit = js.native
@@ -1250,9 +1255,7 @@ object ^ extends js.Object {
   def ɵɵprojectionDef(): Unit = js.native
   def ɵɵprojectionDef(projectionSlots: ProjectionSlots): Unit = js.native
   def ɵɵproperty[T](propName: String, value: T): TsickleIssue1009 = js.native
-  def ɵɵproperty[T](propName: String, value: T, sanitizer: Null, nativeOnly: Boolean): TsickleIssue1009 = js.native
   def ɵɵproperty[T](propName: String, value: T, sanitizer: SanitizerFn): TsickleIssue1009 = js.native
-  def ɵɵproperty[T](propName: String, value: T, sanitizer: SanitizerFn, nativeOnly: Boolean): TsickleIssue1009 = js.native
   def ɵɵpropertyInterpolate(propName: String, v0: js.Any): TsickleIssue1009 = js.native
   def ɵɵpropertyInterpolate(propName: String, v0: js.Any, sanitizer: SanitizerFn): TsickleIssue1009 = js.native
   def ɵɵpropertyInterpolate1(propName: String, prefix: String, v0: js.Any, suffix: String): TsickleIssue1009 = js.native
@@ -1672,46 +1675,235 @@ object ^ extends js.Object {
     pipes: js.Array[typings.atAngularCore.atAngularCoreMod.Type[_]]
   ): Unit = js.native
   def ɵɵsetNgModuleScope(`type`: js.Any, scope: Anon_Declarations): Unit = js.native
+  def ɵɵstaticContentQuery[T](directiveIndex: Double, predicate: js.Array[String], descend: Boolean): Unit = js.native
   def ɵɵstaticContentQuery[T](directiveIndex: Double, predicate: js.Array[String], descend: Boolean, read: js.Any): Unit = js.native
+  def ɵɵstaticContentQuery[T](
+    directiveIndex: Double,
+    predicate: typings.atAngularCore.atAngularCoreMod.Type[_],
+    descend: Boolean
+  ): Unit = js.native
   def ɵɵstaticContentQuery[T](
     directiveIndex: Double,
     predicate: typings.atAngularCore.atAngularCoreMod.Type[_],
     descend: Boolean,
     read: js.Any
   ): Unit = js.native
+  def ɵɵstaticViewQuery[T](predicate: js.Array[String], descend: Boolean): Unit = js.native
   def ɵɵstaticViewQuery[T](predicate: js.Array[String], descend: Boolean, read: js.Any): Unit = js.native
+  def ɵɵstaticViewQuery[T](predicate: typings.atAngularCore.atAngularCoreMod.Type[_], descend: Boolean): Unit = js.native
   def ɵɵstaticViewQuery[T](predicate: typings.atAngularCore.atAngularCoreMod.Type[_], descend: Boolean, read: js.Any): Unit = js.native
   def ɵɵstyleMap(): Unit = js.native
   def ɵɵstyleMap(styles: StringDictionary[js.Any]): Unit = js.native
   def ɵɵstyleMap(styles: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: String): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: String, suffix: String): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: String, suffix: String, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: String, suffix: Null, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Double): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Double, suffix: String): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Double, suffix: String, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Double, suffix: Null, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Null, suffix: String): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Null, suffix: String, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: Null, suffix: Null, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: ɵPlayerFactory): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: ɵPlayerFactory, suffix: String): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: ɵPlayerFactory, suffix: String, forceOverride: Boolean): Unit = js.native
-  def ɵɵstyleProp(styleIndex: Double, value: ɵPlayerFactory, suffix: Null, forceOverride: Boolean): Unit = js.native
+  def ɵɵstyleProp(prop: String): Unit = js.native
+  def ɵɵstyleProp(prop: String, value: String): Unit = js.native
+  def ɵɵstyleProp(prop: String, value: String, suffix: String): Unit = js.native
+  def ɵɵstyleProp(prop: String, value: Double): Unit = js.native
+  def ɵɵstyleProp(prop: String, value: Double, suffix: String): Unit = js.native
+  def ɵɵstyleProp(prop: String, value: Null, suffix: String): Unit = js.native
+  def ɵɵstylePropInterpolate1(prop: String, prefix: String, v0: js.Any, suffix: String): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate1(prop: String, prefix: String, v0: js.Any, suffix: String, valueSuffix: String): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate2(prop: String, prefix: String, v0: js.Any, i0: String, v1: js.Any, suffix: String): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate2(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate3(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate3(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate4(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate4(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate5(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate5(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate6(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate6(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate7(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    i5: String,
+    v6: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate7(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    i5: String,
+    v6: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate8(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    i5: String,
+    v6: js.Any,
+    i6: String,
+    v7: js.Any,
+    suffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolate8(
+    prop: String,
+    prefix: String,
+    v0: js.Any,
+    i0: String,
+    v1: js.Any,
+    i1: String,
+    v2: js.Any,
+    i2: String,
+    v3: js.Any,
+    i3: String,
+    v4: js.Any,
+    i4: String,
+    v5: js.Any,
+    i5: String,
+    v6: js.Any,
+    i6: String,
+    v7: js.Any,
+    suffix: String,
+    valueSuffix: String
+  ): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolateV(prop: String, values: js.Array[_]): TsickleIssue1009 = js.native
+  def ɵɵstylePropInterpolateV(prop: String, values: js.Array[_], valueSuffix: String): TsickleIssue1009 = js.native
+  def ɵɵstyleSanitizer(): Unit = js.native
+  def ɵɵstyleSanitizer(sanitizer: StyleSanitizeFn): Unit = js.native
   def ɵɵstyling(): Unit = js.native
-  def ɵɵstyling(classBindingNames: js.Array[String]): Unit = js.native
-  def ɵɵstyling(classBindingNames: js.Array[String], styleBindingNames: js.Array[String]): Unit = js.native
-  def ɵɵstyling(
-    classBindingNames: js.Array[String],
-    styleBindingNames: js.Array[String],
-    styleSanitizer: StyleSanitizeFn
-  ): Unit = js.native
-  def ɵɵstyling(classBindingNames: js.Array[String], styleBindingNames: Null, styleSanitizer: StyleSanitizeFn): Unit = js.native
-  def ɵɵstyling(classBindingNames: Null, styleBindingNames: js.Array[String]): Unit = js.native
-  def ɵɵstyling(classBindingNames: Null, styleBindingNames: js.Array[String], styleSanitizer: StyleSanitizeFn): Unit = js.native
-  def ɵɵstyling(classBindingNames: Null, styleBindingNames: Null, styleSanitizer: StyleSanitizeFn): Unit = js.native
   def ɵɵstylingApply(): Unit = js.native
   def ɵɵtemplate(index: Double, templateFn: Null, consts: Double, vars: Double): Unit = js.native
   def ɵɵtemplate(index: Double, templateFn: Null, consts: Double, vars: Double, tagName: String): Unit = js.native
@@ -1967,7 +2159,7 @@ object ^ extends js.Object {
     localRefs: Null,
     localRefExtractor: LocalRefExtractor
   ): Unit = js.native
-  def ɵɵtemplateRefExtractor(tNode: TNode, currentView: ɵangular_packages_core_core_bm): TemplateRef[js.Object] | Null = js.native
+  def ɵɵtemplateRefExtractor(tNode: TNode, currentView: ɵangular_packages_core_core_bj): TemplateRef[_] | Null = js.native
   def ɵɵtext(index: Double): Unit = js.native
   def ɵɵtext(index: Double, value: js.Any): Unit = js.native
   def ɵɵtextBinding[T](value: T): Unit = js.native
@@ -2052,25 +2244,13 @@ object ^ extends js.Object {
     suffix: String
   ): TsickleIssue1009 = js.native
   def ɵɵtextInterpolateV(values: js.Array[_]): TsickleIssue1009 = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T, sanitizer: Null, nativeOnly: Boolean): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T, sanitizer: SanitizerFn): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T, sanitizer: SanitizerFn, nativeOnly: Boolean): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](
-    propName: String,
-    value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE,
-    sanitizer: Null,
-    nativeOnly: Boolean
-  ): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE, sanitizer: SanitizerFn): Unit = js.native
-  def ɵɵupdateSyntheticHostBinding[T](
-    propName: String,
-    value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE,
-    sanitizer: SanitizerFn,
-    nativeOnly: Boolean
-  ): Unit = js.native
-  def ɵɵviewQuery[T](predicate: js.Array[String], descend: Boolean, read: js.Any): QueryList[T] = js.native
-  def ɵɵviewQuery[T](predicate: typings.atAngularCore.atAngularCoreMod.Type[_], descend: Boolean, read: js.Any): QueryList[T] = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T): TsickleIssue1009 = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: T, sanitizer: SanitizerFn): TsickleIssue1009 = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE): TsickleIssue1009 = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: String, value: typings.atAngularCore.atAngularCoreMod.ɵNO_CHANGE, sanitizer: SanitizerFn): TsickleIssue1009 = js.native
+  def ɵɵviewQuery[T](predicate: js.Array[String], descend: Boolean): Unit = js.native
+  def ɵɵviewQuery[T](predicate: js.Array[String], descend: Boolean, read: js.Any): Unit = js.native
+  def ɵɵviewQuery[T](predicate: typings.atAngularCore.atAngularCoreMod.Type[_], descend: Boolean): Unit = js.native
+  def ɵɵviewQuery[T](predicate: typings.atAngularCore.atAngularCoreMod.Type[_], descend: Boolean, read: js.Any): Unit = js.native
 }
 

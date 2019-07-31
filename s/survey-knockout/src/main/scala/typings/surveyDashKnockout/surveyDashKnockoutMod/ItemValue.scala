@@ -13,6 +13,7 @@ class ItemValue protected ()
   def this(value: js.Any) = this()
   def this(value: js.Any, text: String) = this()
   def this(value: js.Any, text: String, typeName: String) = this()
+  val calculatedText: String = js.native
   val hasText: Boolean = js.native
   val isEnabled: js.Any = js.native
   val isVisible: Boolean = js.native

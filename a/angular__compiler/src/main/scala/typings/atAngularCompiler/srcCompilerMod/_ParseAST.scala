@@ -11,6 +11,7 @@ class _ParseAST protected ()
   def this(
     input: String,
     location: js.Any,
+    absoluteOffset: Double,
     tokens: js.Array[typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Token],
     inputLength: Double,
     parseAction: Boolean,

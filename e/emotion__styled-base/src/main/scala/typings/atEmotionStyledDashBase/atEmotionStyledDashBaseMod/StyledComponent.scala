@@ -186,6 +186,7 @@ import typings.react.HTMLBodyElement
 import typings.react.HTMLButtonElement
 import typings.react.HTMLCanvasElement
 import typings.react.HTMLDListElement
+import typings.react.HTMLDataElement
 import typings.react.HTMLDataListElement
 import typings.react.HTMLDialogElement
 import typings.react.HTMLDivElement
@@ -299,6 +300,7 @@ import typings.react.reactMod.CanvasHTMLAttributes
 import typings.react.reactMod.ColHTMLAttributes
 import typings.react.reactMod.ColgroupHTMLAttributes
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.DataHTMLAttributes
 import typings.react.reactMod.DelHTMLAttributes
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.DetailsHTMLAttributes
@@ -449,7 +451,11 @@ trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
     Theme
   ] = js.native
   @JSName("withComponent")
-  def withComponent_data(tag: data): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_data(tag: data): StyledComponent[
+    DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
+    StyleProps, 
+    Theme
+  ] = js.native
   @JSName("withComponent")
   def withComponent_datalist(tag: datalist): StyledComponent[
     DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 

@@ -32,7 +32,7 @@ trait VpnConnectionArgs extends js.Object {
     */
   val tunnel1PresharedKey: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The CIDR block of the second IP addresses for the first VPN tunnel.
+    * The CIDR block of the inside IP addresses for the second VPN tunnel.
     */
   val tunnel2InsideCidr: js.UndefOr[Input[String]] = js.undefined
   /**

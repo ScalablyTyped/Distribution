@@ -12,6 +12,7 @@ class Collapse () extends AbstractPureComponent[ICollapseProps, ICollapseState] 
   var contents: js.Any = js.native
   var contentsRefHandler: js.Any = js.native
   var height: js.Any = js.native
+  var onDelayedStateChange: js.Any = js.native
   @JSName("state")
   var state_Collapse: Anon_AnimationState = js.native
   @JSName("componentDidMount")
@@ -20,7 +21,6 @@ class Collapse () extends AbstractPureComponent[ICollapseProps, ICollapseState] 
   def componentDidUpdate_MCollapse(): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MCollapse(nextProps: ICollapseProps): Unit = js.native
-  /* private */ def onDelayedStateChange(): js.Any = js.native
 }
 
 /* static members */

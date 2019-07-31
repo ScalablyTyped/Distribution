@@ -14,13 +14,22 @@ trait CommentUpdateData extends js.Object {
     * @beta
     */
   var content: js.UndefOr[String] = js.undefined
+  /**
+    *
+    * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var resolved: js.UndefOr[Boolean] = js.undefined
 }
 
 object CommentUpdateData {
   @scala.inline
-  def apply(content: String = null): CommentUpdateData = {
+  def apply(content: String = null, resolved: js.UndefOr[Boolean] = js.undefined): CommentUpdateData = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
     __obj.asInstanceOf[CommentUpdateData]
   }
 }

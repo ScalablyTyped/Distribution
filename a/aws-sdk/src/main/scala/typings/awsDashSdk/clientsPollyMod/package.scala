@@ -16,6 +16,13 @@ package object clientsPollyMod {
   type ContentType = String
   type DateTime = Date
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.neural
+    - java.lang.String
+  */
+  type Engine = _Engine | String
+  type EngineList = js.Array[Engine]
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Female
     - typings.awsDashSdk.awsDashSdkStrings.Male
     - java.lang.String

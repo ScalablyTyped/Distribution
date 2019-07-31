@@ -16,12 +16,14 @@ class _ParseAST protected () extends js.Object {
   def this(
     input: String,
     location: js.Any,
+    absoluteOffset: Double,
     tokens: js.Array[Token],
     inputLength: Double,
     parseAction: Boolean,
     errors: js.Array[ParserError],
     offset: Double
   ) = this()
+  var absoluteOffset: Double = js.native
   var errors: js.Any = js.native
   var index: Double = js.native
   var input: String = js.native

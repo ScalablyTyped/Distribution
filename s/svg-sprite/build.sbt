@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "svg-sprite"
-version := "0.0-unknown-dt-20190322Z-3a272d"
+version := "0.0-unknown-dt-20190322Z-96a23e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-4b9d73",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-d2e3b4",
-  "org.scalablytyped" %%% "winston" % "3.2.1-95f1c9",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-fe90d7")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-6be48d",
+  "org.scalablytyped" %%% "winston" % "3.2.1-7d671e",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-bcd7aa")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("spectacle", "ListItem")
 @js.native
 class ListItem ()
-  extends Component[BaseProps, js.Object, js.Any]
+  extends Component[ListProps, js.Object, js.Any]
 

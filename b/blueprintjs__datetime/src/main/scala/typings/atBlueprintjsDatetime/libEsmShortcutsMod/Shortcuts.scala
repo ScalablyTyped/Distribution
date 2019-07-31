@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Shortcuts ()
   extends PureComponent[IShortcutsProps, js.Object, js.Any] {
-  /* private */ def getShorcutClickHandler(shortcut: js.Any): js.Any = js.native
-  /* private */ def isShortcutInRange(shortcutDateRange: js.Any): js.Any = js.native
+  var getShorcutClickHandler: js.Any = js.native
+  var isShortcutInRange: js.Any = js.native
 }
 

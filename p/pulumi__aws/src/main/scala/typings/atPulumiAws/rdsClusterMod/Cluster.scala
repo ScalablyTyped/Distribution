@@ -132,7 +132,7 @@ class Cluster protected () extends CustomResource {
     */
   val masterPassword: Output[js.UndefOr[String]] = js.native
   /**
-    * Username for the master DB user. Please refer to the [RDS Naming Constraints][5]
+    * Username for the master DB user. Please refer to the [RDS Naming Constraints][5]. This argument does not support in-place updates and cannot be changed during a restore from snapshot.
     */
   val masterUsername: Output[String] = js.native
   /**

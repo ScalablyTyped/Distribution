@@ -15,6 +15,19 @@ class Regions () extends js.Object
 @js.native
 object Regions extends js.Object {
   /**
+    * Iterates over the cells within an `IRegion`, invoking the callback with
+    * each cell's coordinates.
+    */
+  var eachCellInRegion: js.Any = js.native
+  var intervalContains: js.Any = js.native
+  var intervalContainsIndex: js.Any = js.native
+  var intervalOverlaps: js.Any = js.native
+  var intervalsEqual: js.Any = js.native
+  var normalizeInterval: js.Any = js.native
+  var numericalComparator: js.Any = js.native
+  var regionContains: js.Any = js.native
+  var rowFirstComparator: js.Any = js.native
+  /**
     * Adds the region to the end of a cloned copy of the supplied region
     * array.
     */
@@ -43,11 +56,6 @@ object Regions extends js.Object {
     * Returns a deep copy of the provided region.
     */
   def copy(region: IRegion): IRegion = js.native
-  /**
-    * Iterates over the cells within an `IRegion`, invoking the callback with
-    * each cell's coordinates.
-    */
-  /* private */ def eachCellInRegion(region: js.Any, numRows: js.Any, numCols: js.Any, iteratee: js.Any): js.Any = js.native
   def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = js.native
   def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = js.native
   /**
@@ -127,10 +135,6 @@ object Regions extends js.Object {
     * Returns true if the regions contain a region that has FULL_TABLE cardinality
     */
   def hasFullTable(regions: js.Array[IRegion]): Boolean = js.native
-  /* private */ def intervalContains(ivalA: js.Any, ivalB: js.Any): js.Any = js.native
-  /* private */ def intervalContainsIndex(interval: js.Any, index: js.Any): js.Any = js.native
-  /* private */ def intervalOverlaps(ivalA: js.Any, ivalB: js.Any): js.Any = js.native
-  /* private */ def intervalsEqual(ivalA: js.Any, ivalB: js.Any): js.Any = js.native
   def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = js.native
   def isValid(region: IRegion): Boolean = js.native
   def joinStyledRegionGroups(
@@ -143,22 +147,17 @@ object Regions extends js.Object {
     * the region list. This allows us to avoid immediate additive re-selection.
     */
   def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = js.native
-  /* private */ def normalizeInterval(coord: js.Any): js.Any = js.native
-  /* private */ def normalizeInterval(coord: js.Any, coord2: js.Any): js.Any = js.native
-  /* private */ def numericalComparator(a: js.Any, b: js.Any): js.Any = js.native
   /**
     * Returns true if the regions at least partially overlap the query region.
     */
   def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = js.native
   def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = js.native
-  /* private */ def regionContains(regionA: js.Any, regionB: js.Any): js.Any = js.native
   def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = js.native
   /**
     * Returns a region containing one or more full rows.
     */
   def row(row: Double): IRegion = js.native
   def row(row: Double, row2: Double): IRegion = js.native
-  /* private */ def rowFirstComparator(a: js.Any, b: js.Any): js.Any = js.native
   /**
     * Maps a dense array of cell coordinates to a sparse 2-dimensional array
     * of cell values.

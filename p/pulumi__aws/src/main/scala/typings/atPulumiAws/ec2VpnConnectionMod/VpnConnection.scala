@@ -94,7 +94,7 @@ class VpnConnection protected () extends CustomResource {
     */
   val tunnel2CgwInsideAddress: Output[String] = js.native
   /**
-    * The CIDR block of the second IP addresses for the first VPN tunnel.
+    * The CIDR block of the inside IP addresses for the second VPN tunnel.
     */
   val tunnel2InsideCidr: Output[String] = js.native
   /**

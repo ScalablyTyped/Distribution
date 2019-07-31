@@ -1,20 +1,13 @@
 package typings.atAngularCore
 
-import typings.atAngularCore.atAngularCoreMod.BindingType
-import typings.atAngularCore.atAngularCoreMod.DirectiveRegistryValuesIndex
 import typings.atAngularCore.atAngularCoreMod.IcuType
-import typings.atAngularCore.atAngularCoreMod.InitialStylingValuesIndex
-import typings.atAngularCore.atAngularCoreMod.LStylingMapIndex
 import typings.atAngularCore.atAngularCoreMod.LViewFlags
-import typings.atAngularCore.atAngularCoreMod.MapBasedOffsetValuesIndex
 import typings.atAngularCore.atAngularCoreMod.OutputType
-import typings.atAngularCore.atAngularCoreMod.PlayerIndex
 import typings.atAngularCore.atAngularCoreMod.PreOrderHookFlags
 import typings.atAngularCore.atAngularCoreMod.RootContextFlags
 import typings.atAngularCore.atAngularCoreMod.SelectorFlags
-import typings.atAngularCore.atAngularCoreMod.SinglePropOffsetValuesIndex
 import typings.atAngularCore.atAngularCoreMod.StyleSanitizeMode
-import typings.atAngularCore.atAngularCoreMod.StylingIndex
+import typings.atAngularCore.atAngularCoreMod.StylingMapArrayIndex
 import typings.atAngularCore.atAngularCoreMod.TNodeFlags
 import typings.atAngularCore.atAngularCoreMod.TNodeProviderIndexes
 import typings.atAngularCore.atAngularCoreMod.TNodeType
@@ -38,17 +31,10 @@ import scala.scalajs.js.annotation._
 object atAngularCoreNumbers {
   @js.native
   sealed trait `0`
-    extends BindingType
-       with DirectiveRegistryValuesIndex
-       with IcuType
-       with InitialStylingValuesIndex
-       with LStylingMapIndex
-       with MapBasedOffsetValuesIndex
+    extends IcuType
        with OutputType
-       with PlayerIndex
        with RootContextFlags
-       with SinglePropOffsetValuesIndex
-       with StylingIndex
+       with StylingMapArrayIndex
        with TNodeType
        with TStylingConfigFlags
        with TStylingContextIndex
@@ -64,20 +50,13 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `1`
-    extends BindingType
-       with DirectiveRegistryValuesIndex
-       with IcuType
-       with InitialStylingValuesIndex
-       with LStylingMapIndex
+    extends IcuType
        with LViewFlags
-       with MapBasedOffsetValuesIndex
        with OutputType
-       with PlayerIndex
        with RootContextFlags
        with SelectorFlags
-       with SinglePropOffsetValuesIndex
        with StyleSanitizeMode
-       with StylingIndex
+       with StylingMapArrayIndex
        with TNodeFlags
        with TNodeType
        with TStylingConfigFlags
@@ -94,9 +73,7 @@ object atAngularCoreNumbers {
        with ɵRenderFlags
   
   @js.native
-  sealed trait `10`
-    extends LViewFlags
-       with StylingIndex
+  sealed trait `10` extends LViewFlags
   
   @js.native
   sealed trait `100` extends ɵPlayState
@@ -135,9 +112,6 @@ object atAngularCoreNumbers {
   sealed trait `134217728` extends ɵNodeFlags
   
   @js.native
-  sealed trait `14` extends StylingIndex
-  
-  @js.native
   sealed trait `15` extends ɵBindingFlags
   
   @js.native
@@ -151,9 +125,6 @@ object atAngularCoreNumbers {
        with ɵNodeFlags
   
   @js.native
-  sealed trait `16383` extends StylingIndex
-  
-  @js.native
   sealed trait `16384` extends ɵNodeFlags
   
   @js.native
@@ -164,19 +135,13 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `2`
-    extends BindingType
-       with DirectiveRegistryValuesIndex
-       with InitialStylingValuesIndex
-       with LStylingMapIndex
-       with MapBasedOffsetValuesIndex
-       with PlayerIndex
-       with RootContextFlags
+    extends RootContextFlags
        with SelectorFlags
-       with SinglePropOffsetValuesIndex
        with StyleSanitizeMode
-       with StylingIndex
+       with StylingMapArrayIndex
        with TNodeFlags
        with TNodeType
+       with TStylingConfigFlags
        with TStylingContextIndex
        with ViewState
        with ɵAttributeMarker
@@ -223,13 +188,10 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `3`
-    extends InitialStylingValuesIndex
-       with LViewFlags
-       with MapBasedOffsetValuesIndex
-       with PlayerIndex
+    extends LViewFlags
        with StyleSanitizeMode
-       with StylingIndex
        with TNodeType
+       with TStylingConfigFlags
        with TStylingContextIndex
        with ɵAttributeMarker
        with ɵNodeFlags
@@ -255,10 +217,7 @@ object atAngularCoreNumbers {
   @js.native
   sealed trait `4`
     extends LViewFlags
-       with MapBasedOffsetValuesIndex
-       with PlayerIndex
        with SelectorFlags
-       with StylingIndex
        with TNodeFlags
        with TNodeType
        with TStylingContextIndex
@@ -280,9 +239,7 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `5`
-    extends PlayerIndex
-       with StylingIndex
-       with TNodeType
+    extends TNodeType
        with TStylingContextIndex
        with ɵAttributeMarker
   
@@ -300,7 +257,7 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `6`
-    extends StylingIndex
+    extends TStylingContextIndex
        with ɵAttributeMarker
   
   @js.native
@@ -324,16 +281,12 @@ object atAngularCoreNumbers {
   sealed trait `67108864` extends ɵNodeFlags
   
   @js.native
-  sealed trait `7` extends StylingIndex
-  
-  @js.native
   sealed trait `768` extends ViewState
   
   @js.native
   sealed trait `8`
     extends LViewFlags
        with SelectorFlags
-       with StylingIndex
        with TNodeFlags
        with ViewState
        with ɵBindingFlags
@@ -345,9 +298,6 @@ object atAngularCoreNumbers {
   
   @js.native
   sealed trait `8388608` extends ɵNodeFlags
-  
-  @js.native
-  sealed trait `9` extends StylingIndex
   
   @js.native
   sealed trait _4294901760 extends PreOrderHookFlags
@@ -385,13 +335,9 @@ object atAngularCoreNumbers {
   @scala.inline
   def `134217728`: `134217728` = 134217728.asInstanceOf[`134217728`]
   @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
-  @scala.inline
   def `15`: `15` = 15.asInstanceOf[`15`]
   @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
-  @scala.inline
-  def `16383`: `16383` = 16383.asInstanceOf[`16383`]
   @scala.inline
   def `16384`: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
@@ -457,8 +403,6 @@ object atAngularCoreNumbers {
   @scala.inline
   def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
   @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
   def `768`: `768` = 768.asInstanceOf[`768`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
@@ -466,8 +410,6 @@ object atAngularCoreNumbers {
   def `8192`: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
   def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
   @scala.inline
   def _4294901760: _4294901760 = _4294901760.asInstanceOf[_4294901760]
   @scala.inline

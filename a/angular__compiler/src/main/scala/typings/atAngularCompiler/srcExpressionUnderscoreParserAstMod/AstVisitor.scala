@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait AstVisitor extends js.Object {
   var visit: js.UndefOr[js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], _]] = js.undefined
+  var visitASTWithSource: js.UndefOr[js.Function2[/* ast */ ASTWithSource, /* context */ js.Any, _]] = js.undefined
   def visitBinary(ast: Binary, context: js.Any): js.Any
   def visitChain(ast: Chain, context: js.Any): js.Any
   def visitConditional(ast: Conditional, context: js.Any): js.Any
@@ -51,10 +52,12 @@ object AstVisitor {
     visitQuote: (Quote, js.Any) => js.Any,
     visitSafeMethodCall: (SafeMethodCall, js.Any) => js.Any,
     visitSafePropertyRead: (SafePropertyRead, js.Any) => js.Any,
-    visit: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => _ = null
+    visit: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => _ = null,
+    visitASTWithSource: (/* ast */ ASTWithSource, /* context */ js.Any) => _ = null
   ): AstVisitor = {
     val __obj = js.Dynamic.literal(visitBinary = js.Any.fromFunction2(visitBinary), visitChain = js.Any.fromFunction2(visitChain), visitConditional = js.Any.fromFunction2(visitConditional), visitFunctionCall = js.Any.fromFunction2(visitFunctionCall), visitImplicitReceiver = js.Any.fromFunction2(visitImplicitReceiver), visitInterpolation = js.Any.fromFunction2(visitInterpolation), visitKeyedRead = js.Any.fromFunction2(visitKeyedRead), visitKeyedWrite = js.Any.fromFunction2(visitKeyedWrite), visitLiteralArray = js.Any.fromFunction2(visitLiteralArray), visitLiteralMap = js.Any.fromFunction2(visitLiteralMap), visitLiteralPrimitive = js.Any.fromFunction2(visitLiteralPrimitive), visitMethodCall = js.Any.fromFunction2(visitMethodCall), visitNonNullAssert = js.Any.fromFunction2(visitNonNullAssert), visitPipe = js.Any.fromFunction2(visitPipe), visitPrefixNot = js.Any.fromFunction2(visitPrefixNot), visitPropertyRead = js.Any.fromFunction2(visitPropertyRead), visitPropertyWrite = js.Any.fromFunction2(visitPropertyWrite), visitQuote = js.Any.fromFunction2(visitQuote), visitSafeMethodCall = js.Any.fromFunction2(visitSafeMethodCall), visitSafePropertyRead = js.Any.fromFunction2(visitSafePropertyRead))
     if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction2(visit))
+    if (visitASTWithSource != null) __obj.updateDynamic("visitASTWithSource")(js.Any.fromFunction2(visitASTWithSource))
     __obj.asInstanceOf[AstVisitor]
   }
 }

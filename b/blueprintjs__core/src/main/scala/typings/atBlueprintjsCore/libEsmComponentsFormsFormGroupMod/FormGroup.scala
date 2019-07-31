@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormGroup ()
   extends PureComponent[IFormGroupProps, js.Object, js.Any] {
-  /* private */ def getClassName(): js.Any = js.native
+  var getClassName: js.Any = js.native
 }
 
 /* static members */

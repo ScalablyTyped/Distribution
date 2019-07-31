@@ -27,7 +27,7 @@ trait WorksheetRowHiddenChangedEventArgs extends js.Object {
   var address: String
   /**
     *
-    * Gets the change type that represents how the Changed event is triggered. See Excel.RowHiddenChangeType for details.
+    * Gets the change type that represents how the RowHiddenChanged event is triggered. See Excel.RowHiddenChangeType for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -44,7 +44,7 @@ class NgForm protected ()
     * @description
     * Event emitter for the "ngSubmit" event
     */
-  var ngSubmit: EventEmitter[js.Object] = js.native
+  var ngSubmit: EventEmitter[_] = js.native
   /**
     * @description
     * Tracks options for the `NgForm` instance.

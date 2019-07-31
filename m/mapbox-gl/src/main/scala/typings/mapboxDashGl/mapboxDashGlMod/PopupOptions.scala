@@ -10,6 +10,7 @@ trait PopupOptions extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var closeButton: js.UndefOr[Boolean] = js.undefined
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  var maxWidth: js.UndefOr[String] = js.undefined
   var offset: js.UndefOr[Double | PointLike | StringDictionary[PointLike]] = js.undefined
 }
 
@@ -20,6 +21,7 @@ object PopupOptions {
     className: String = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
+    maxWidth: String = null,
     offset: Double | PointLike | StringDictionary[PointLike] = null
   ): PopupOptions = {
     val __obj = js.Dynamic.literal()
@@ -27,6 +29,7 @@ object PopupOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]
   }

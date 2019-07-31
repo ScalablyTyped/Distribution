@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class PanelStack () extends AbstractPureComponent[IPanelStackProps, IPanelStackState] {
   var handlePanelClose: js.Any = js.native
   var handlePanelOpen: js.Any = js.native
+  var renderCurrentPanel: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MPanelStack(nextProps: IPanelStackProps): Unit = js.native
-  /* private */ def renderCurrentPanel(): js.Any = js.native
 }
 

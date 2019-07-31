@@ -20,6 +20,7 @@ trait AgentConfigOptions extends js.Object {
   var captureExceptions: js.UndefOr[Boolean] = js.undefined
   var captureHeaders: js.UndefOr[Boolean] = js.undefined
   var captureSpanStackTraces: js.UndefOr[Boolean] = js.undefined
+  var centralConfig: js.UndefOr[Boolean] = js.undefined
   var containerId: js.UndefOr[String] = js.undefined
   var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.undefined
   var environment: js.UndefOr[String] = js.undefined
@@ -74,6 +75,7 @@ object AgentConfigOptions {
     captureExceptions: js.UndefOr[Boolean] = js.undefined,
     captureHeaders: js.UndefOr[Boolean] = js.undefined,
     captureSpanStackTraces: js.UndefOr[Boolean] = js.undefined,
+    centralConfig: js.UndefOr[Boolean] = js.undefined,
     containerId: String = null,
     disableInstrumentations: String | js.Array[String] = null,
     environment: String = null,
@@ -122,6 +124,7 @@ object AgentConfigOptions {
     if (!js.isUndefined(captureExceptions)) __obj.updateDynamic("captureExceptions")(captureExceptions)
     if (!js.isUndefined(captureHeaders)) __obj.updateDynamic("captureHeaders")(captureHeaders)
     if (!js.isUndefined(captureSpanStackTraces)) __obj.updateDynamic("captureSpanStackTraces")(captureSpanStackTraces)
+    if (!js.isUndefined(centralConfig)) __obj.updateDynamic("centralConfig")(centralConfig)
     if (containerId != null) __obj.updateDynamic("containerId")(containerId)
     if (disableInstrumentations != null) __obj.updateDynamic("disableInstrumentations")(disableInstrumentations.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment)

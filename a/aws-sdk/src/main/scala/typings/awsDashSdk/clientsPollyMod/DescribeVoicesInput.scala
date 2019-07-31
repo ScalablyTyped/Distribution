@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait DescribeVoicesInput extends js.Object {
   /**
+    * Specifies the engine (standard or neural) used by Amazon Polly when processing input text for speech synthesis. 
+    */
+  var Engine: js.UndefOr[typings.awsDashSdk.clientsPollyMod.Engine] = js.undefined
+  /**
     * Boolean value indicating whether to return any bilingual voices that use the specified language as an additional language. For instance, if you request all languages that use US English (es-US), and there is an Italian voice that speaks both Italian (it-IT) and US English, that voice will be included if you specify yes but not if you specify no.
     */
   var IncludeAdditionalLanguageCodes: js.UndefOr[typings.awsDashSdk.clientsPollyMod.IncludeAdditionalLanguageCodes] = js.undefined
@@ -22,11 +26,13 @@ trait DescribeVoicesInput extends js.Object {
 object DescribeVoicesInput {
   @scala.inline
   def apply(
+    Engine: Engine = null,
     IncludeAdditionalLanguageCodes: js.UndefOr[IncludeAdditionalLanguageCodes] = js.undefined,
     LanguageCode: LanguageCode = null,
     NextToken: NextToken = null
   ): DescribeVoicesInput = {
     val __obj = js.Dynamic.literal()
+    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (!js.isUndefined(IncludeAdditionalLanguageCodes)) __obj.updateDynamic("IncludeAdditionalLanguageCodes")(IncludeAdditionalLanguageCodes)
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

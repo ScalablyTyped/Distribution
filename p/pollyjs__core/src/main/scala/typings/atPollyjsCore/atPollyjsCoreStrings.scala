@@ -24,6 +24,9 @@ object atPollyjsCoreStrings {
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait record extends js.Object
+  
+  @js.native
   sealed trait register extends PollyEvent
   
   @js.native
@@ -34,6 +37,9 @@ object atPollyjsCoreStrings {
   
   @js.native
   sealed trait stop extends PollyEvent
+  
+  @js.native
+  sealed trait warn extends js.Object
   
   @scala.inline
   def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]
@@ -46,6 +52,8 @@ object atPollyjsCoreStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def record: record = "record".asInstanceOf[record]
+  @scala.inline
   def register: register = "register".asInstanceOf[register]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
@@ -53,5 +61,7 @@ object atPollyjsCoreStrings {
   def response: response = "response".asInstanceOf[response]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
 }
 

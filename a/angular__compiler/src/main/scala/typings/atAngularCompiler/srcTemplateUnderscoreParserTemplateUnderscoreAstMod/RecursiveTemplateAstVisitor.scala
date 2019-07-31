@@ -13,6 +13,6 @@ class RecursiveTemplateAstVisitor () extends NullTemplateVisitor {
       /* visit */ js.Function1[/* children */ js.UndefOr[js.Array[TemplateAst]], Unit], 
       Unit
     ]
-  ): js.Any = js.native
+  ): js.Array[_] = js.native
 }
 

@@ -9,6 +9,7 @@ import typings.react.HTMLBodyElement
 import typings.react.HTMLButtonElement
 import typings.react.HTMLCanvasElement
 import typings.react.HTMLDListElement
+import typings.react.HTMLDataElement
 import typings.react.HTMLDataListElement
 import typings.react.HTMLDialogElement
 import typings.react.HTMLDivElement
@@ -121,6 +122,7 @@ import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.CanvasHTMLAttributes
 import typings.react.reactMod.ColHTMLAttributes
 import typings.react.reactMod.ColgroupHTMLAttributes
+import typings.react.reactMod.DataHTMLAttributes
 import typings.react.reactMod.DelHTMLAttributes
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.DetailsHTMLAttributes
@@ -198,7 +200,7 @@ trait IntrinsicElements extends js.Object {
   var code: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
   var col: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
   var colgroup: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
-  var data: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+  var data: DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]
   var datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
   var dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
   var defs: SVGProps[SVGDefsElement]
@@ -378,7 +380,7 @@ object IntrinsicElements {
     code: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
     col: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
     colgroup: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
-    data: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+    data: DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement],
     datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
     dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
     defs: SVGProps[SVGDefsElement],

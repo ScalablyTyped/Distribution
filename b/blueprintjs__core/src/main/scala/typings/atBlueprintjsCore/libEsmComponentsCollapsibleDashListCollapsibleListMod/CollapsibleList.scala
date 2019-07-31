@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CollapsibleList ()
   extends Component[ICollapsibleListProps, js.Object, js.Any] {
-  /* private */ def partitionChildren(): js.Any = js.native
+  var partitionChildren: js.Any = js.native
 }
 
 /* static members */

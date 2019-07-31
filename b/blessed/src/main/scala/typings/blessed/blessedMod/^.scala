@@ -68,11 +68,13 @@ object ^ extends js.Object {
   def button(options: ButtonOptions): ButtonElement = js.native
   def checkbox(): CheckboxElement = js.native
   def checkbox(options: CheckboxOptions): CheckboxElement = js.native
-  def escape(item: js.Any): js.Any = js.native
+  def cleanTags(text: String): String = js.native
+  def escape(text: String): String = js.native
   def filemanager(): FileManagerElement = js.native
   def filemanager(options: FileManagerOptions): FileManagerElement = js.native
   def form[TFormData](): FormElement[TFormData] = js.native
   def form[TFormData](options: FormOptions): FormElement[TFormData] = js.native
+  def generateTags(style: js.Any, text: String): String = js.native
   def input(): InputElement = js.native
   def input(options: InputOptions): InputElement = js.native
   def layout(): LayoutElement = js.native
@@ -109,6 +111,7 @@ object ^ extends js.Object {
   def scrollablebox(options: BoxOptions): BoxElement = js.native
   def scrollabletext(): BoxElement = js.native
   def scrollabletext(options: BoxOptions): BoxElement = js.native
+  def stripTags(text: String): String = js.native
   def table(): TableElement = js.native
   def table(options: TableOptions): TableElement = js.native
   def terminal(): TerminalElement = js.native

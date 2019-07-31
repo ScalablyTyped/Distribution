@@ -393,6 +393,12 @@ object officeDashJsDashPreviewStrings {
   sealed trait Bullet extends js.Object
   
   @js.native
+  sealed trait ByColumns extends js.Object
+  
+  @js.native
+  sealed trait ByRows extends js.Object
+  
+  @js.native
   sealed trait Calculating extends js.Object
   
   @js.native
@@ -3728,6 +3734,10 @@ object officeDashJsDashPreviewStrings {
   def BuildingBlockGallery: BuildingBlockGallery = "BuildingBlockGallery".asInstanceOf[BuildingBlockGallery]
   @scala.inline
   def Bullet: Bullet = "Bullet".asInstanceOf[Bullet]
+  @scala.inline
+  def ByColumns: ByColumns = "ByColumns".asInstanceOf[ByColumns]
+  @scala.inline
+  def ByRows: ByRows = "ByRows".asInstanceOf[ByRows]
   @scala.inline
   def Calculating: Calculating = "Calculating".asInstanceOf[Calculating]
   @scala.inline

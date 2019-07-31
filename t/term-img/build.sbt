@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "term-img"
-version := "4.1.0-611e7d"
+version := "4.1.0-9a6577"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ansi-escapes" % "4.2.0-934008",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "ansi-escapes" % "4.2.0-b9f2fe",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "type-fest" % "0.3.1-51ba03")
 publishArtifact in packageDoc := false

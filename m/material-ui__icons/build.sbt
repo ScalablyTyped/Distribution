@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "4.2.1-e18ea5"
+version := "4.2.1-a94692"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-0dcc62",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20190710Z-a4abf5",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-142863",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-5d49a4",
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-1a85e7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
-  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20190723Z-0f68bd",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20190723Z-d4a0d8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gtoken
 
-Typings are for version 2.3.3
+Typings are for version 3.0.2
 
 ## Library description:
 Node.js Google Authentication Service Account Tokens

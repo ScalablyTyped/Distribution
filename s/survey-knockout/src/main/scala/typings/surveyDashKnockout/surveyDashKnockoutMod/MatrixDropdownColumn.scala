@@ -49,7 +49,6 @@ class MatrixDropdownColumn protected ()
   def getDynamicProperties(): js.Array[String] = js.native
   def getDynamicPropertyName(): String = js.native
   def getDynamicType(): String = js.native
-  def getFullTitle(str: String): String = js.native
   /* CompleteClass */
   override def getLocale(): String = js.native
   /* CompleteClass */

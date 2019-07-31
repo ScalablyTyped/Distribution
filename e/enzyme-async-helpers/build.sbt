@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "enzyme-async-helpers"
-version := "0.9-dt-20190219Z-86920f"
+version := "0.9-dt-20190219Z-23e519"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-c7214f",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-83a4b5",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-fbb60b",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-a11c3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

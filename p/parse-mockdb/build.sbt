@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "parse-mockdb"
-version := "0.1-dt-20190619Z-c9987a"
+version := "0.1-dt-20190619Z-ff1e43"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
-  "org.scalablytyped" %%% "parse" % "2.2.1-dt-20190708Z-66f314",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "parse" % "2.2.1-dt-20190708Z-660392",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

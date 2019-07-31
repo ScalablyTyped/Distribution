@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recharts"
-version := "1.1-dt-20190716Z-277ad8"
+version := "1.1-dt-20190716Z-0291f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20190212Z-da723e",
   "org.scalablytyped" %%% "d3-shape" % "1.3-dt-20190212Z-2a6244",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

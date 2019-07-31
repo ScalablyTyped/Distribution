@@ -20,18 +20,18 @@ class Parser protected () extends js.Object {
   var _reportError: js.Any = js.native
   var _stripComments: js.Any = js.native
   var errors: js.Any = js.native
-  def parseAction(input: String, location: js.Any): ASTWithSource = js.native
-  def parseAction(input: String, location: js.Any, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
-  def parseBinding(input: String, location: js.Any): ASTWithSource = js.native
-  def parseBinding(input: String, location: js.Any, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
-  def parseInterpolation(input: String, location: js.Any): ASTWithSource | Null = js.native
-  def parseInterpolation(input: String, location: js.Any, interpolationConfig: InterpolationConfig): ASTWithSource | Null = js.native
-  def parseSimpleBinding(input: String, location: String): ASTWithSource = js.native
-  def parseSimpleBinding(input: String, location: String, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
-  def parseTemplateBindings(tplKey: String, tplValue: String, location: js.Any): TemplateBindingParseResult = js.native
+  def parseAction(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
+  def parseAction(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
+  def parseBinding(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
+  def parseBinding(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
+  def parseInterpolation(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource | Null = js.native
+  def parseInterpolation(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource | Null = js.native
+  def parseSimpleBinding(input: String, location: String, absoluteOffset: Double): ASTWithSource = js.native
+  def parseSimpleBinding(input: String, location: String, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
+  def parseTemplateBindings(tplKey: String, tplValue: String, location: js.Any, absoluteOffset: Double): TemplateBindingParseResult = js.native
   def splitInterpolation(input: String, location: String): SplitInterpolation | Null = js.native
   def splitInterpolation(input: String, location: String, interpolationConfig: InterpolationConfig): SplitInterpolation | Null = js.native
-  def wrapLiteralPrimitive(input: String, location: js.Any): ASTWithSource = js.native
-  def wrapLiteralPrimitive(input: Null, location: js.Any): ASTWithSource = js.native
+  def wrapLiteralPrimitive(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
+  def wrapLiteralPrimitive(input: Null, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
 }
 

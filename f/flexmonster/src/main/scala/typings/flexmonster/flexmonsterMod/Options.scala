@@ -34,11 +34,13 @@ trait Options extends js.Object {
   var showFieldListSearch: js.UndefOr[Boolean] = js.undefined
   var showMemberProperties: js.UndefOr[Boolean] = js.undefined
   var showOutdatedDataAlert: js.UndefOr[Boolean] = js.undefined
+  var simplifyFieldListFolders: js.UndefOr[Boolean] = js.undefined
   var sorting: js.UndefOr[String] = js.undefined
   var strictDataTypes: js.UndefOr[Boolean] = js.undefined
   var timePattern: js.UndefOr[String] = js.undefined
   var useOlapFormatting: js.UndefOr[Boolean] = js.undefined
   var validateFormulas: js.UndefOr[Boolean] = js.undefined
+  var validateReportFiles: js.UndefOr[Boolean] = js.undefined
   var viewType: js.UndefOr[String] = js.undefined
 }
 
@@ -71,11 +73,13 @@ object Options {
     showFieldListSearch: js.UndefOr[Boolean] = js.undefined,
     showMemberProperties: js.UndefOr[Boolean] = js.undefined,
     showOutdatedDataAlert: js.UndefOr[Boolean] = js.undefined,
+    simplifyFieldListFolders: js.UndefOr[Boolean] = js.undefined,
     sorting: String = null,
     strictDataTypes: js.UndefOr[Boolean] = js.undefined,
     timePattern: String = null,
     useOlapFormatting: js.UndefOr[Boolean] = js.undefined,
     validateFormulas: js.UndefOr[Boolean] = js.undefined,
+    validateReportFiles: js.UndefOr[Boolean] = js.undefined,
     viewType: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -105,11 +109,13 @@ object Options {
     if (!js.isUndefined(showFieldListSearch)) __obj.updateDynamic("showFieldListSearch")(showFieldListSearch)
     if (!js.isUndefined(showMemberProperties)) __obj.updateDynamic("showMemberProperties")(showMemberProperties)
     if (!js.isUndefined(showOutdatedDataAlert)) __obj.updateDynamic("showOutdatedDataAlert")(showOutdatedDataAlert)
+    if (!js.isUndefined(simplifyFieldListFolders)) __obj.updateDynamic("simplifyFieldListFolders")(simplifyFieldListFolders)
     if (sorting != null) __obj.updateDynamic("sorting")(sorting)
     if (!js.isUndefined(strictDataTypes)) __obj.updateDynamic("strictDataTypes")(strictDataTypes)
     if (timePattern != null) __obj.updateDynamic("timePattern")(timePattern)
     if (!js.isUndefined(useOlapFormatting)) __obj.updateDynamic("useOlapFormatting")(useOlapFormatting)
     if (!js.isUndefined(validateFormulas)) __obj.updateDynamic("validateFormulas")(validateFormulas)
+    if (!js.isUndefined(validateReportFiles)) __obj.updateDynamic("validateReportFiles")(validateReportFiles)
     if (viewType != null) __obj.updateDynamic("viewType")(viewType)
     __obj.asInstanceOf[Options]
   }

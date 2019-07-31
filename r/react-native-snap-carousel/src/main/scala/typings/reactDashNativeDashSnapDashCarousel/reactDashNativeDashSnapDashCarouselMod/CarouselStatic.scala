@@ -49,6 +49,7 @@ trait CarouselStatic[T] extends ComponentClass[CarouselProps[T], ComponentState]
     * (see #238). Note that the offset parameter is not required and will default to either 1 or -1 depending
     * on the current scroll position
     */
+  def triggerRenderingHack(): Unit = js.native
   def triggerRenderingHack(offset: Double): Unit = js.native
 }
 

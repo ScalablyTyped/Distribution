@@ -19,8 +19,8 @@ trait HostDecorator extends Instantiable0[Host] {
     *
     * The following shows use with the `@Optional` decorator, and allows for a null result.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="Host"
-    *  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="Host">
+    * </code-example>
     */
   def apply(): js.Any = js.native
 }

@@ -16,7 +16,7 @@ trait TableStyleData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies if this TableStyle object is read-only. Read-only.
+    * Specifies whether this TableStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -20,18 +20,19 @@ object DecimalNumberProperty {
   def apply(
     error: Boolean,
     errorMessage: String,
-    raw: Double,
     `type`: String,
     attribute: Metadata = null,
     attributes: DecimalNumberMetadata = null,
     formatted: String = null,
+    raw: Int | Double = null,
     security: SecurityValues = null
   ): DecimalNumberProperty = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage)
     __obj.updateDynamic("type")(`type`)
     if (attribute != null) __obj.updateDynamic("attribute")(attribute)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security)
     __obj.asInstanceOf[DecimalNumberProperty]
   }

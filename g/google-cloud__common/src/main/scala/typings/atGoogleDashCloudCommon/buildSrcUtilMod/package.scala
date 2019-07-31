@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 package object buildSrcUtilMod {
   type AbortableDuplex = Duplexify with Abortable
   type BodyResponseCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ Error | ApiError | Null, 
     /* body */ js.UndefOr[ResponseBody], 
     /* res */ js.UndefOr[Response], 
     Unit

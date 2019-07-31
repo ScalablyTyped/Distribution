@@ -9,6 +9,8 @@ trait DeckProps extends js.Object {
   var autoplayDuration: js.UndefOr[Double] = js.undefined
   var autoplayLoop: js.UndefOr[Boolean] = js.undefined
   var autoplayOnStart: js.UndefOr[Boolean] = js.undefined
+  var contentHeight: js.UndefOr[String] = js.undefined
+  var contentWidth: js.UndefOr[String] = js.undefined
   var controls: js.UndefOr[Boolean] = js.undefined
   var globalStyles: js.UndefOr[Boolean] = js.undefined
   var history: js.UndefOr[js.Any] = js.undefined
@@ -30,6 +32,8 @@ object DeckProps {
     autoplayDuration: Int | Double = null,
     autoplayLoop: js.UndefOr[Boolean] = js.undefined,
     autoplayOnStart: js.UndefOr[Boolean] = js.undefined,
+    contentHeight: String = null,
+    contentWidth: String = null,
     controls: js.UndefOr[Boolean] = js.undefined,
     globalStyles: js.UndefOr[Boolean] = js.undefined,
     history: js.Any = null,
@@ -45,6 +49,8 @@ object DeckProps {
     if (autoplayDuration != null) __obj.updateDynamic("autoplayDuration")(autoplayDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(autoplayLoop)) __obj.updateDynamic("autoplayLoop")(autoplayLoop)
     if (!js.isUndefined(autoplayOnStart)) __obj.updateDynamic("autoplayOnStart")(autoplayOnStart)
+    if (contentHeight != null) __obj.updateDynamic("contentHeight")(contentHeight)
+    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles)
     if (history != null) __obj.updateDynamic("history")(history)

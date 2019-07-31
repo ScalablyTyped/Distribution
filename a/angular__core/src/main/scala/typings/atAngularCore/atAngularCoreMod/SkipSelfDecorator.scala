@@ -18,8 +18,8 @@ trait SkipSelfDecorator extends Instantiable0[SkipSelf] {
     * In the following example, the dependency can be resolved when
     * instantiating a child, but not when instantiating the class itself.
     *
-    * <code-example path="core/di/ts/metadata_spec.ts" region="SkipSelf"
-    *  linenums="false"></code-example>
+    * <code-example path="core/di/ts/metadata_spec.ts" region="SkipSelf">
+    * </code-example>
     *
     * Learn more in the
     * [Dependency Injection guide](guide/dependency-injection-in-action#skip).

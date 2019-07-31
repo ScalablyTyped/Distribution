@@ -20,6 +20,7 @@ package object react {
   type HTMLButtonElement = HTMLElement
   type HTMLCanvasElement = HTMLElement
   type HTMLDListElement = HTMLElement
+  type HTMLDataElement = HTMLElement
   type HTMLDataListElement = HTMLElement
   type HTMLDialogElement = HTMLElement
   type HTMLDivElement = HTMLElement

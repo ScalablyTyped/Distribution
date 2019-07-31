@@ -2,6 +2,7 @@ package typings.atPulumiAws.atPulumiAwsMod
 
 import typings.atPulumiAws.organizationsAccountMod.AccountArgs
 import typings.atPulumiAws.organizationsAccountMod.AccountState
+import typings.atPulumiAws.organizationsGetOrganizationMod.GetOrganizationResult
 import typings.atPulumiAws.organizationsOrganizationMod.OrganizationArgs
 import typings.atPulumiAws.organizationsOrganizationMod.OrganizationState
 import typings.atPulumiAws.organizationsOrganizationalUnitMod.OrganizationalUnitArgs
@@ -10,6 +11,7 @@ import typings.atPulumiAws.organizationsPolicyAttachmentMod.PolicyAttachmentArgs
 import typings.atPulumiAws.organizationsPolicyAttachmentMod.PolicyAttachmentState
 import typings.atPulumiAws.organizationsPolicyMod.PolicyArgs
 import typings.atPulumiAws.organizationsPolicyMod.PolicyState
+import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import typings.atPulumiPulumi.resourceMod.ID
@@ -91,6 +93,8 @@ object organizationsNs extends js.Object {
     def this(name: String, args: PolicyAttachmentArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getOrganization(): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
+  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
   /* static members */
   @js.native
   object Account extends js.Object {

@@ -12,6 +12,10 @@ class NumericInput () extends AbstractPureComponent[HTMLInputProps with INumeric
   var decrementButtonHandlers: js.Any = js.native
   var delta: js.Any = js.native
   var didPasteEventJustOccur: js.Any = js.native
+  var getButtonEventHandlers: js.Any = js.native
+  var getIncrementDelta: js.Any = js.native
+  var getSanitizedValue: js.Any = js.native
+  var getStepMaxPrecision: js.Any = js.native
   var handleButtonClick: js.Any = js.native
   var handleContinuousChange: js.Any = js.native
   var handleInputBlur: js.Any = js.native
@@ -21,27 +25,20 @@ class NumericInput () extends AbstractPureComponent[HTMLInputProps with INumeric
   var handleInputKeyPress: js.Any = js.native
   var handleInputPaste: js.Any = js.native
   var incrementButtonHandlers: js.Any = js.native
+  var incrementValue: js.Any = js.native
   var inputElement: js.Any = js.native
   var inputRef: js.Any = js.native
   var intervalId: js.Any = js.native
+  var invokeValueCallback: js.Any = js.native
+  var renderButtons: js.Any = js.native
+  var renderInput: js.Any = js.native
+  var startContinuousChange: js.Any = js.native
   var stopContinuousChange: js.Any = js.native
+  var updateDelta: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MNumericInput(): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MNumericInput(nextProps: HTMLInputProps with INumericInputProps): Unit = js.native
-  /* private */ def getButtonEventHandlers(direction: js.Any): js.Any = js.native
-  /* private */ def getIncrementDelta(direction: js.Any, isShiftKeyPressed: js.Any, isAltKeyPressed: js.Any): js.Any = js.native
-  /* private */ def getSanitizedValue(value: js.Any): js.Any = js.native
-  /* private */ def getSanitizedValue(value: js.Any, delta: js.Any): js.Any = js.native
-  /* private */ def getSanitizedValue(value: js.Any, delta: js.Any, min: js.Any): js.Any = js.native
-  /* private */ def getSanitizedValue(value: js.Any, delta: js.Any, min: js.Any, max: js.Any): js.Any = js.native
-  /* private */ def getStepMaxPrecision(props: js.Any): js.Any = js.native
-  /* private */ def incrementValue(delta: js.Any): js.Any = js.native
-  /* private */ def invokeValueCallback(value: js.Any, callback: js.Any): js.Any = js.native
-  /* private */ def renderButtons(): js.Any = js.native
-  /* private */ def renderInput(): js.Any = js.native
-  /* private */ def startContinuousChange(): js.Any = js.native
-  /* private */ def updateDelta(direction: js.Any, e: js.Any): js.Any = js.native
 }
 
 /* static members */

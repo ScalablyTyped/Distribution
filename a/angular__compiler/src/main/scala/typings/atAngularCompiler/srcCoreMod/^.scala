@@ -16,7 +16,7 @@ object ^ extends js.Object {
   val createContentChild: MetadataFactory[Query] = js.native
   val createContentChildren: MetadataFactory[Query] = js.native
   val createDirective: MetadataFactory[Directive] = js.native
-  val createHost: MetadataFactory[js.Object] = js.native
+  val createHost: MetadataFactory[js.Any] = js.native
   val createHostBinding: MetadataFactory[HostBinding] = js.native
   val createHostListener: MetadataFactory[HostListener] = js.native
   val createInject: MetadataFactory[Inject] = js.native
@@ -24,11 +24,11 @@ object ^ extends js.Object {
   val createInjectionToken: MetadataFactory[js.Object] = js.native
   val createInput: MetadataFactory[Input] = js.native
   val createNgModule: MetadataFactory[NgModule] = js.native
-  val createOptional: MetadataFactory[js.Object] = js.native
+  val createOptional: MetadataFactory[js.Any] = js.native
   val createOutput: MetadataFactory[Output] = js.native
   val createPipe: MetadataFactory[Pipe] = js.native
-  val createSelf: MetadataFactory[js.Object] = js.native
-  val createSkipSelf: MetadataFactory[js.Object] = js.native
+  val createSelf: MetadataFactory[js.Any] = js.native
+  val createSkipSelf: MetadataFactory[js.Any] = js.native
   val createViewChild: MetadataFactory[Query] = js.native
   val createViewChildren: MetadataFactory[Query] = js.native
   def parseSelectorToR3Selector(): R3CssSelectorList = js.native

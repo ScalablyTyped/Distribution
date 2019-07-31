@@ -33,7 +33,7 @@ class TableStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies if this TableStyle object is read-only. Read-only.
+    * Specifies whether this TableStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

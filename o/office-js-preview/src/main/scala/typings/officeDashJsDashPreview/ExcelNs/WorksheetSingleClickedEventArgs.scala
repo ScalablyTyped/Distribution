@@ -23,7 +23,7 @@ trait WorksheetSingleClickedEventArgs extends js.Object {
   var address: String
   /**
     *
-    * The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the left-clicked/tapped cell.
+    * The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the left-clicked/tapped cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

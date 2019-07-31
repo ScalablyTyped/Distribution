@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param isAsync When true, deliver events asynchronously.
   *
   */
-class EventEmitter[T] () extends Subject[T] {
+class EventEmitter[T /* <: js.Any */] () extends Subject[T] {
   def this(isAsync: Boolean) = this()
   /**
     * Internal

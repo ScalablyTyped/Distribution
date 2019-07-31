@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Reference protected () extends Node {
   def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
+  def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: ParseSourceSpan) = this()
   var name: String = js.native
   /* CompleteClass */
   override var sourceSpan: ParseSourceSpan = js.native
   var value: String = js.native
+  var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
   /* CompleteClass */
   override def visit[Result](visitor: Visitor[Result]): Result = js.native
 }

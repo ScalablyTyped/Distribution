@@ -3,13 +3,12 @@ package typings.nodeDashForge.nodeDashForgeMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.nodeDashForge.Anon_AddField
-import typings.nodeDashForge.Anon_Encoding
-import typings.nodeDashForge.Anon_EncodingMessage
 import typings.nodeDashForge.Anon_Id
 import typings.nodeDashForge.Anon_Name
 import typings.nodeDashForge.Anon_NotAfter
 import typings.nodeDashForge.Anon_PrivateKey
-import typings.nodeDashForge.Anon_PrivateKeyNativeBuffer
+import typings.nodeDashForge.Anon_PrivateKeyBinaryBuffer
+import typings.nodeDashForge.Anon_PublicKey
 import typings.nodeDashForge.Anon_Seed
 import typings.nodeDashForge.nodeDashForgeMod.asn1Ns.Asn1
 import typings.nodeDashForge.nodeDashForgeMod.asn1Ns.Class
@@ -25,6 +24,7 @@ import typings.nodeDashForge.nodeDashForgeMod.pkiNs.PrivateKey
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.PublicKey
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.ed25519Ns.Key
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
+import typings.nodeDashForge.nodeDashForgeMod.pkiNs.ed25519Ns.ToNativeBufferParameters
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.oids
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.EncryptionScheme
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.GenerateKeyPairOptions
@@ -32,6 +32,7 @@ import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.SignatureScheme
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
 import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs._SignatureScheme
 import typings.nodeDashForge.nodeDashForgeMod.pssNs.PSS
+import typings.nodeDashForge.nodeDashForgeMod.utilNs.ByteBuffer
 import typings.nodeDashForge.nodeDashForgeMod.utilNs.ByteStringBuffer
 import typings.nodeDashForge.nodeDashForgeNumbers.`32`
 import typings.nodeDashForge.nodeDashForgeNumbers.`64`
@@ -39,12 +40,13 @@ import typings.nodeDashForge.nodeDashForgeStrings.`3des`
 import typings.nodeDashForge.nodeDashForgeStrings.aes128
 import typings.nodeDashForge.nodeDashForgeStrings.aes192
 import typings.nodeDashForge.nodeDashForgeStrings.aes256
+import typings.nodeDashForge.nodeDashForgeStrings.binary
 import typings.nodeDashForge.nodeDashForgeStrings.sha1
 import typings.nodeDashForge.nodeDashForgeStrings.sha224
 import typings.nodeDashForge.nodeDashForgeStrings.sha256
 import typings.nodeDashForge.nodeDashForgeStrings.sha384
 import typings.nodeDashForge.nodeDashForgeStrings.sha512
-import typings.std.ArrayBuffer
+import typings.nodeDashForge.nodeDashForgeStrings.utf8
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -216,11 +218,17 @@ object pkiNs extends js.Object {
   @JSName("ed25519")
   @js.native
   object ed25519Ns extends js.Object {
+    trait ToNativeBufferParameters extends js.Object {
+      var encoding: js.UndefOr[binary | utf8] = js.undefined
+      var message: js.UndefOr[ByteBuffer | NativeBuffer | String] = js.undefined
+    }
+    
+    // generateKeyPair does not currently accept `util.ByteBuffer` as the seed.
     def generateKeyPair(): Anon_PrivateKey = js.native
     def generateKeyPair(options: Anon_Seed): Anon_PrivateKey = js.native
-    def publicKeyFromPrivateKey(options: Anon_PrivateKeyNativeBuffer): NativeBuffer = js.native
-    def sign(options: Anon_Encoding): NativeBuffer = js.native
-    def verify(options: Anon_EncodingMessage): Boolean = js.native
+    def publicKeyFromPrivateKey(options: Anon_PrivateKeyBinaryBuffer): NativeBuffer = js.native
+    def sign(options: ToNativeBufferParameters with Anon_PrivateKeyBinaryBuffer): NativeBuffer = js.native
+    def verify(options: ToNativeBufferParameters with Anon_PublicKey): Boolean = js.native
     @JSName("constants")
     @js.native
     object constantsNs extends js.Object {
@@ -231,7 +239,9 @@ object pkiNs extends js.Object {
       val SIGN_BYTE_LENGTH: `64` = js.native
     }
     
-    type Key = ArrayBuffer
+    // `string`s will be converted by toNativeBuffer with `encoding: 'binary'`
+    type BinaryBuffer = NativeBuffer | ByteBuffer | String
+    type Key = NativeBuffer
     type NativeBuffer = Buffer | Uint8Array
   }
   

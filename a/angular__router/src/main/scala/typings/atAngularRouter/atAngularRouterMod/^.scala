@@ -15,8 +15,8 @@ import typings.atAngularCore.atAngularCoreMod.NgModuleFactoryLoader
 import typings.atAngularCore.atAngularCoreMod.NgProbeToken
 import typings.atAngularCore.atAngularCoreMod.Provider
 import typings.atAngularCore.atAngularCoreMod.Version
+import typings.atAngularRouter.Anon_BootstrappedComponentRef
 import typings.atAngularRouter.Anon_CompRef
-import typings.atAngularRouter.Anon_CompRefDeps
 import typings.atAngularRouter.Anon_Deps
 import typings.atAngularRouter.atAngularRouterStrings.primary
 import scala.scalajs.js
@@ -87,10 +87,10 @@ object ^ extends js.Object {
     routeReuseStrategy: RouteReuseStrategy
   ): Router = js.native
   def ɵangular_packages_router_router_g(router: Router): ActivatedRoute = js.native
-  def ɵangular_packages_router_router_i(r: ɵangular_packages_router_router_h): js.Any = js.native
-  def ɵangular_packages_router_router_j(r: ɵangular_packages_router_router_h): js.Any = js.native
+  def ɵangular_packages_router_router_i(r: ɵangular_packages_router_router_h): js.Function0[js.Promise[_]] = js.native
+  def ɵangular_packages_router_router_j(r: ɵangular_packages_router_router_h): js.Function1[/* bootstrappedComponentRef */ ComponentRef[_], Unit] = js.native
   def ɵangular_packages_router_router_k(): js.Array[
-    (Instantiable1[/* injector */ Injector, ɵangular_packages_router_router_h]) | Anon_Deps | Anon_CompRef | Anon_CompRefDeps
+    (Instantiable1[/* injector */ Injector, ɵangular_packages_router_router_h]) | Anon_Deps | Anon_BootstrappedComponentRef | Anon_CompRef
   ] = js.native
   def ɵflatten[T](arr: js.Array[js.Array[T]]): js.Array[T] = js.native
 }

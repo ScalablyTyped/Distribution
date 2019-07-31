@@ -19,12 +19,19 @@ object R3ResolvedDependencyType extends js.Object {
   sealed trait Attribute extends R3ResolvedDependencyType
   
   /**
+    * Injecting the `ChangeDetectorRef` token. Needs special handling when injected into a pipe.
+    */
+  @js.native
+  sealed trait ChangeDetectorRef extends R3ResolvedDependencyType
+  
+  /**
     * A normal token dependency.
     */
   @js.native
   sealed trait Token extends R3ResolvedDependencyType
   
   /* 1 */ val Attribute: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.Attribute with Double = js.native
+  /* 2 */ val ChangeDetectorRef: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.ChangeDetectorRef with Double = js.native
   /* 0 */ val Token: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.Token with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[R3ResolvedDependencyType with Double] = js.native

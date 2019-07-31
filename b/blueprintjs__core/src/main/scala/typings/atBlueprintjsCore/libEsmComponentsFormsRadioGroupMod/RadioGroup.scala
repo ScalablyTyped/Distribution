@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class RadioGroup ()
   extends AbstractPureComponent[IRadioGroupProps, js.Object] {
   var autoGroupName: js.Any = js.native
-  /* private */ def getRadioProps(optionProps: js.Any): js.Any = js.native
-  /* private */ def renderChildren(): js.Any = js.native
-  /* private */ def renderOptions(): js.Any = js.native
+  var getRadioProps: js.Any = js.native
+  var renderChildren: js.Any = js.native
+  var renderOptions: js.Any = js.native
   /* protected */ def validateProps(): Unit = js.native
 }
 

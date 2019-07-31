@@ -19,9 +19,6 @@ trait Components[TEvent /* <: js.Object */] extends js.Object {
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
   ] = js.undefined
   var day: js.UndefOr[Anon_Event] = js.undefined
-  var dayWrapper: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
-  ] = js.undefined
   var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   var eventContainerWrapper: js.UndefOr[
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
@@ -48,7 +45,6 @@ trait Components[TEvent /* <: js.Object */] extends js.Object {
 
 trait components extends js.Object {
   var dateCellWrapper: ComponentType[js.Object]
-  var dayWrapper: ComponentType[js.Object]
   var eventWrapper: ComponentType[Event]
 }
 
@@ -58,7 +54,6 @@ object Components {
     agenda: Anon_Date = null,
     dateCellWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     day: Anon_Event = null,
-    dayWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     event: ComponentType[EventProps[TEvent]] = null,
     eventContainerWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     eventWrapper: ComponentType[EventWrapperProps[TEvent]] = null,
@@ -75,7 +70,6 @@ object Components {
     if (agenda != null) __obj.updateDynamic("agenda")(agenda)
     if (dateCellWrapper != null) __obj.updateDynamic("dateCellWrapper")(dateCellWrapper.asInstanceOf[js.Any])
     if (day != null) __obj.updateDynamic("day")(day)
-    if (dayWrapper != null) __obj.updateDynamic("dayWrapper")(dayWrapper.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (eventContainerWrapper != null) __obj.updateDynamic("eventContainerWrapper")(eventContainerWrapper.asInstanceOf[js.Any])
     if (eventWrapper != null) __obj.updateDynamic("eventWrapper")(eventWrapper.asInstanceOf[js.Any])
@@ -93,12 +87,8 @@ object Components {
 
 object components {
   @scala.inline
-  def apply(
-    dateCellWrapper: ComponentType[js.Object],
-    dayWrapper: ComponentType[js.Object],
-    eventWrapper: ComponentType[Event]
-  ): components = {
-    val __obj = js.Dynamic.literal(dateCellWrapper = dateCellWrapper.asInstanceOf[js.Any], dayWrapper = dayWrapper.asInstanceOf[js.Any], eventWrapper = eventWrapper.asInstanceOf[js.Any])
+  def apply(dateCellWrapper: ComponentType[js.Object], eventWrapper: ComponentType[Event]): components = {
+    val __obj = js.Dynamic.literal(dateCellWrapper = dateCellWrapper.asInstanceOf[js.Any], eventWrapper = eventWrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[components]
   }

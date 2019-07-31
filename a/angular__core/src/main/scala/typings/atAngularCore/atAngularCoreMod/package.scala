@@ -6,8 +6,8 @@ import typings.atAngularCore.CssSelector
 import typings.atAngularCore.DirectiveDefList
 import typings.atAngularCore.DirectiveTypeList
 import typings.atAngularCore.PipeDefList
+import typings.atAngularCore.PipeTypeList
 import typings.atAngularCore.PropertyAliasValue
-import typings.std.HTMLElement
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -202,7 +202,7 @@ package object atAngularCoreMod {
     */
   type LocalRefExtractor = js.Function2[
     /* tNode */ TNodeWithLocalRefs, 
-    /* currentView */ ɵangular_packages_core_core_bm, 
+    /* currentView */ ɵangular_packages_core_core_bj, 
     js.Any
   ]
   type NgIterable[T] = js.Array[T] | Iterable[T]
@@ -218,7 +218,7 @@ package object atAngularCoreMod {
     * The function is necessary to be able to support forward declarations.
     */
   type PipeDefListOrFactory = js.Function0[PipeDefList] | PipeDefList
-  type PipeTypesOrFactory = js.Function0[DirectiveTypeList] | DirectiveTypeList
+  type PipeTypesOrFactory = js.Function0[PipeTypeList] | PipeTypeList
   type Predicate[T] = js.Function1[/* value */ T, Boolean]
   /**
     * Describes a function that is used to process provider lists (such as provider
@@ -301,14 +301,6 @@ package object atAngularCoreMod {
   type ɵGetterFn = js.Function1[/* obj */ js.Any, js.Any]
   type ɵMethodFn = js.Function2[/* obj */ js.Any, /* args */ js.Array[js.Any], js.Any]
   type ɵSetterFn = js.Function2[/* obj */ js.Any, /* value */ js.Any, Unit]
-  type ɵangular_packages_core_core_bi = js.Function5[
-    /* element */ HTMLElement, 
-    /* type */ BindingType, 
-    /* values */ StringDictionary[js.Any], 
-    /* isFirstRender */ Boolean, 
-    /* currentPlayer */ ɵPlayer | Null, 
-    ɵPlayer | Null
-  ]
   type ɵɵComponentDefWithMeta[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */] = ɵComponentDef[T]
   type ɵɵDirectiveDefWithMeta[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */] = ɵDirectiveDef[T]
   type ɵɵNgModuleDefWithMeta[T, Declarations, Imports, Exports] = ɵNgModuleDef[T]

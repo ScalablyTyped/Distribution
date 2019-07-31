@@ -54,6 +54,14 @@ trait CommentReplyCollectionLoadOptions extends js.Object {
     * @beta
     */
   var id: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var resolved: js.UndefOr[Boolean] = js.undefined
 }
 
 object CommentReplyCollectionLoadOptions {
@@ -64,7 +72,8 @@ object CommentReplyCollectionLoadOptions {
     authorName: js.UndefOr[Boolean] = js.undefined,
     content: js.UndefOr[Boolean] = js.undefined,
     creationDate: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined
+    id: js.UndefOr[Boolean] = js.undefined,
+    resolved: js.UndefOr[Boolean] = js.undefined
   ): CommentReplyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
@@ -73,6 +82,7 @@ object CommentReplyCollectionLoadOptions {
     if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
     if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
     __obj.asInstanceOf[CommentReplyCollectionLoadOptions]
   }
 }

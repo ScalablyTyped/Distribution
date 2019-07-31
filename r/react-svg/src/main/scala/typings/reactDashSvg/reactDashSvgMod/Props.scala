@@ -11,8 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
-  var afterInjection: Errback
-  var beforeInjection: BeforeEach
+  var afterInjection: js.UndefOr[Errback] = js.undefined
+  var beforeInjection: js.UndefOr[BeforeEach] = js.undefined
   var evalScripts: js.UndefOr[EvalScripts] = js.undefined
   var fallback: js.UndefOr[ReactType[_]] = js.undefined
   var loading: js.UndefOr[ReactType[_]] = js.undefined
@@ -24,16 +24,18 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    afterInjection: Errback,
-    beforeInjection: BeforeEach,
     src: String,
+    afterInjection: Errback = null,
+    beforeInjection: BeforeEach = null,
     evalScripts: EvalScripts = null,
     fallback: ReactType[_] = null,
     loading: ReactType[_] = null,
     renumerateIRIElements: js.UndefOr[Boolean] = js.undefined,
     wrapper: div | span = null
   ): Props = {
-    val __obj = js.Dynamic.literal(afterInjection = afterInjection, beforeInjection = beforeInjection, src = src)
+    val __obj = js.Dynamic.literal(src = src)
+    if (afterInjection != null) __obj.updateDynamic("afterInjection")(afterInjection)
+    if (beforeInjection != null) __obj.updateDynamic("beforeInjection")(beforeInjection)
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])

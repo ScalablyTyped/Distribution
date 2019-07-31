@@ -33,7 +33,7 @@ class SlicerStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies if this SlicerStyle object is read-only. Read-only.
+    * Specifies whether this SlicerStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-leaflet-markercluster"
-version := "2.0-dt-20181121Z-ce8dc0"
+version := "2.0-dt-20181121Z-735a95"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190726Z-14695c",
   "org.scalablytyped" %%% "leaflet_dot_markercluster" % "1.4-dt-20190326Z-fd3d25",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-ce0842",
-  "org.scalablytyped" %%% "react-leaflet" % "2.2-dt-20190311Z-0b74eb",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react-leaflet" % "2.2-dt-20190311Z-81fc63",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

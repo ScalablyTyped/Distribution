@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "twilio-mcs-client"
-version := "0.2.4-871917"
+version := "0.2.4-4bd4c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190717Z-f93e3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "twilio-transport" % "0.3.5-a5f8f9")
 publishArtifact in packageDoc := false

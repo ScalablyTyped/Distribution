@@ -38,9 +38,9 @@ object spectacleComponents extends spectacleProps {
   @scala.inline
   def Link: ComponentType[typings.spectacle.spectacleMod.LinkProps] = js.constructorOf[typings.spectacle.spectacleMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.LinkProps]]
   @scala.inline
-  def List: ComponentType[BaseProps] = js.constructorOf[typings.spectacle.spectacleMod.List].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.BaseProps]]
+  def List: ComponentType[typings.spectacle.spectacleMod.ListProps] = js.constructorOf[typings.spectacle.spectacleMod.List].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.ListProps]]
   @scala.inline
-  def ListItem: ComponentType[BaseProps] = js.constructorOf[typings.spectacle.spectacleMod.ListItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.BaseProps]]
+  def ListItem: ComponentType[typings.spectacle.spectacleMod.ListProps] = js.constructorOf[typings.spectacle.spectacleMod.ListItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.ListProps]]
   @scala.inline
   def Markdown: ComponentType[typings.spectacle.spectacleMod.MarkdownProps] = js.constructorOf[typings.spectacle.spectacleMod.Markdown].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.MarkdownProps]]
   @scala.inline
@@ -67,5 +67,7 @@ object spectacleComponents extends spectacleProps {
   def TableRow: ComponentType[BaseProps] = js.constructorOf[typings.spectacle.spectacleMod.TableRow].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.BaseProps]]
   @scala.inline
   def Text: ComponentType[typings.spectacle.spectacleMod.TextProps] = js.constructorOf[typings.spectacle.spectacleMod.Text].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.TextProps]]
+  @scala.inline
+  def UnfitText: ComponentType[typings.spectacle.spectacleMod.TextProps] = js.constructorOf[typings.spectacle.spectacleMod.UnfitText].asInstanceOf[typings.react.reactMod.ComponentType[typings.spectacle.spectacleMod.TextProps]]
 }
 

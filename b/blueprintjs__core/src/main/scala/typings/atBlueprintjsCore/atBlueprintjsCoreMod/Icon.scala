@@ -1,5 +1,7 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
+import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`16`
+import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`20`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,8 @@ class Icon ()
 @JSImport("@blueprintjs/core", "Icon")
 @js.native
 object Icon extends js.Object {
-  val SIZE_LARGE: Double = js.native
-  val SIZE_STANDARD: Double = js.native
+  val SIZE_LARGE: `20` = js.native
+  val SIZE_STANDARD: `16` = js.native
   var displayName: String = js.native
 }
 

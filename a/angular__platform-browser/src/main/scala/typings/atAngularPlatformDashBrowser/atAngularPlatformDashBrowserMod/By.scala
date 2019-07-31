@@ -1,6 +1,7 @@
 package typings.atAngularPlatformDashBrowser.atAngularPlatformDashBrowserMod
 
 import typings.atAngularCore.atAngularCoreMod.DebugElement
+import typings.atAngularCore.atAngularCoreMod.DebugNode
 import typings.atAngularCore.atAngularCoreMod.Predicate
 import typings.atAngularCore.atAngularCoreMod.Type
 import scala.scalajs.js
@@ -16,14 +17,14 @@ class By () extends js.Object
 @js.native
 object By extends js.Object {
   /**
-    * Match all elements.
+    * Match all nodes.
     *
     * @usageNotes
     * ### Example
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
     */
-  def all(): Predicate[DebugElement] = js.native
+  def all(): Predicate[DebugNode] = js.native
   /**
     * Match elements by the given CSS selector.
     *
@@ -34,13 +35,13 @@ object By extends js.Object {
     */
   def css(selector: String): Predicate[DebugElement] = js.native
   /**
-    * Match elements that have the given directive present.
+    * Match nodes that have the given directive present.
     *
     * @usageNotes
     * ### Example
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_directive'}
     */
-  def directive(`type`: Type[_]): Predicate[DebugElement] = js.native
+  def directive(`type`: Type[_]): Predicate[DebugNode] = js.native
 }
 

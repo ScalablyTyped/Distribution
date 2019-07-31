@@ -16,7 +16,7 @@ trait PivotTableStyleData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies if this PivotTableStyle object is read-only. Read-only.
+    * Specifies whether this PivotTableStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

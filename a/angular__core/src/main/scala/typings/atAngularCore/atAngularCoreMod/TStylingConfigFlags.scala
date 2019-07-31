@@ -2,6 +2,8 @@ package typings.atAngularCore.atAngularCoreMod
 
 import typings.atAngularCore.atAngularCoreNumbers.`0`
 import typings.atAngularCore.atAngularCoreNumbers.`1`
+import typings.atAngularCore.atAngularCoreNumbers.`2`
+import typings.atAngularCore.atAngularCoreNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +15,8 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atAngularCore.atAngularCoreNumbers.`0`
   - typings.atAngularCore.atAngularCoreNumbers.`1`
+  - typings.atAngularCore.atAngularCoreNumbers.`2`
+  - typings.atAngularCore.atAngularCoreNumbers.`3`
 */
 trait TStylingConfigFlags extends js.Object
 
@@ -33,6 +37,24 @@ object TStylingConfigFlags {
     */
   @scala.inline
   def Locked: `1` = this.cast(1)
+  /** A Mask of all the configurations */
+  @scala.inline
+  def Mask: `3` = this.cast(3)
+  /**
+    * Whether or not to store the state between updates in a global storage map.
+    *
+    * This flag helps the algorithm avoid storing all state values temporarily in
+    * a storage map (that lives in `state.ts`). The flag is only flipped to true if
+    * and when an element contains style/class bindings that exist both on the
+    * template-level as well as within host bindings on the same element. This is a
+    * rare case, and a storage map is required so that the state values can be restored
+    * between the template code running and the host binding code executing.
+    */
+  @scala.inline
+  def PersistStateValues: `2` = this.cast(2)
+  /** Total amount of configuration bits used */
+  @scala.inline
+  def TotalBits: `2` = this.cast(2)
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

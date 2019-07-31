@@ -1,5 +1,6 @@
 package typings.googleDashAuthDashLibrary.buildSrcAuthComputeclientMod
 
+import typings.gaxios.gaxiosMod.GaxiosError
 import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.OAuth2Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 class Compute () extends OAuth2Client {
   def this(options: ComputeOptions) = this()
+  var scopes: js.Array[String] = js.native
   var serviceAccountEmail: js.Any = js.native
   /**
     * Indicates whether the credential requires scopes to be created by calling
@@ -23,5 +25,6 @@ class Compute () extends OAuth2Client {
     * @return Boolean indicating if scope is required.
     */
   def createScopedRequired(): Boolean = js.native
+  /* protected */ def wrapError(e: GaxiosError[_]): Unit = js.native
 }
 

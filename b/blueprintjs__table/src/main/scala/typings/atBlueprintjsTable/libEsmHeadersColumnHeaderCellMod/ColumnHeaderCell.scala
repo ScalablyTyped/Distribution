@@ -16,11 +16,11 @@ class ColumnHeaderCell () extends AbstractPureComponent[IColumnHeaderCellProps, 
   var context_ColumnHeaderCell: IColumnInteractionBarContextTypes = js.native
   var handlePopoverClosing: js.Any = js.native
   var handlePopoverOpened: js.Any = js.native
+  var maybeRenderContent: js.Any = js.native
+  var maybeRenderDropdownMenu: js.Any = js.native
+  var renderName: js.Any = js.native
   @JSName("state")
   var state_ColumnHeaderCell: Anon_IsActive = js.native
-  /* private */ def maybeRenderContent(): js.Any = js.native
-  /* private */ def maybeRenderDropdownMenu(): js.Any = js.native
-  /* private */ def renderName(): js.Any = js.native
 }
 
 /* static members */

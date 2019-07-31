@@ -72,6 +72,7 @@
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLBRElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLButtonElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLCanvasElement))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDataElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDataListElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDialogElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDivElement))] 

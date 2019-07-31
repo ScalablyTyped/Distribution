@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ErrorInfo
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.MouseEvent
@@ -40,7 +39,7 @@ trait Anon_CallBack extends js.Object {
   var context: js.Any = js.native
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _]] = js.native
   var onContextMenuClose: js.UndefOr[js.Function0[Unit]] = js.native
-  val props: Anon_Children with js.Object = js.native
+  val props: js.Object with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
@@ -54,7 +53,7 @@ trait Anon_CallBack extends js.Object {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
   def render(): ReactElement = js.native
-  def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
+  def renderContextMenu(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Element = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[/* prevState */ js.Object, /* props */ js.Object, js.Object | (Pick[js.Object, K])]
   ): Unit = js.native

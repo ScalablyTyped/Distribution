@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait StringProperty extends Property {
   var attributes: js.UndefOr[StringMetadata] = js.undefined
   @JSName("raw")
-  var raw_StringProperty: String
+  var raw_StringProperty: String | Null
 }
 
 object StringProperty {
@@ -21,18 +21,19 @@ object StringProperty {
   def apply(
     error: Boolean,
     errorMessage: String,
-    raw: String,
     `type`: String,
     attribute: Metadata = null,
     attributes: StringMetadata = null,
     formatted: String = null,
+    raw: String = null,
     security: SecurityValues = null
   ): StringProperty = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage)
     __obj.updateDynamic("type")(`type`)
     if (attribute != null) __obj.updateDynamic("attribute")(attribute)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
     if (security != null) __obj.updateDynamic("security")(security)
     __obj.asInstanceOf[StringProperty]
   }

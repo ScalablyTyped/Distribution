@@ -1,7 +1,7 @@
 
 # Scala.js typings for powerapps-component-framework
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 
 

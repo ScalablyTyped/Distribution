@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Breadcrumbs ()
   extends PureComponent[IBreadcrumbsProps, js.Object, js.Any] {
+  var renderBreadcrumb: js.Any = js.native
   var renderBreadcrumbWrapper: js.Any = js.native
   var renderOverflow: js.Any = js.native
   var renderOverflowBreadcrumb: js.Any = js.native
-  /* private */ def renderBreadcrumb(props: js.Any, isCurrent: js.Any): js.Any = js.native
 }
 
 /* static members */

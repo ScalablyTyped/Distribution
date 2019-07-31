@@ -1954,6 +1954,7 @@ package object clientsMediaconvertMod {
   type __integerMinNegative180Max180 = Double
   type __integerMinNegative2147483648Max2147483647 = Double
   type __integerMinNegative2Max3 = Double
+  type __integerMinNegative50Max50 = Double
   type __integerMinNegative5Max5 = Double
   type __integerMinNegative60Max6 = Double
   type __integerMinNegative70Max0 = Double

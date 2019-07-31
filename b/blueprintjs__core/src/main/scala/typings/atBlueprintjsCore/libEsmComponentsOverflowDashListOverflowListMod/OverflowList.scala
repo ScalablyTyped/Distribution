@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class OverflowList[T] ()
   extends Component[IOverflowListProps[T], IOverflowListState[T], js.Any] {
+  var maybeRenderOverflow: js.Any = js.native
   /** A cache containing the widths of all elements being observed to detect growing/shrinking */
   var previousWidths: js.Any = js.native
+  var repartition: js.Any = js.native
   var resize: js.Any = js.native
   var spacer: js.Any = js.native
   @JSName("componentDidMount")
@@ -21,8 +23,6 @@ class OverflowList[T] ()
   def componentDidUpdate_MOverflowList(_prevProps: IOverflowListProps[T], prevState: IOverflowListState[T]): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MOverflowList(nextProps: IOverflowListProps[T]): Unit = js.native
-  /* private */ def maybeRenderOverflow(): js.Any = js.native
-  /* private */ def repartition(growing: js.Any): js.Any = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MOverflowList(_nextProps: IOverflowListProps[T], nextState: IOverflowListState[T]): Boolean = js.native
 }

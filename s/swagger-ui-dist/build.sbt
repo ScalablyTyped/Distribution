@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-ui-dist"
-version := "3.x-dt-20190729Z-187b8f"
+version := "3.x-dt-20190730Z-1970f3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,7 @@ trait Anon_Deps extends js.Object {
   var provide: InjectionToken[js.Array[js.Function0[Unit]]] = js.native
   var useExisting: js.UndefOr[scala.Nothing] = js.native
   @JSName("useFactory")
-  var useFactory_Original: js.Function1[/* r */ ɵangular_packages_router_router_h, _] = js.native
-  def useFactory(r: ɵangular_packages_router_router_h): js.Any = js.native
+  var useFactory_Original: js.Function1[/* r */ ɵangular_packages_router_router_h, js.Function0[js.Promise[_]]] = js.native
+  def useFactory(r: ɵangular_packages_router_router_h): js.Function0[js.Promise[_]] = js.native
 }
 

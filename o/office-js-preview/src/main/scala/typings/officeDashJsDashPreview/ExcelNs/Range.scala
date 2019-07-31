@@ -9,6 +9,8 @@ import typings.officeDashJsDashPreview.OfficeExtensionNs.ClientResult
 import typings.officeDashJsDashPreview.OfficeExtensionNs.UpdateOptions
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.All
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Blanks
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ByColumns
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ByRows
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ConditionalFormats
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Constants
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Contents
@@ -959,6 +961,56 @@ class Range () extends ClientObject {
   def getVisibleView(): RangeView = js.native
   /**
     *
+    * Groups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param groupOption Specifies how the range can be grouped by rows or columns.
+    An `InvalidArgument` error is thrown when the group option differs from the range's
+    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+    */
+  def group(groupOption: GroupOption): Unit = js.native
+  @JSName("group")
+  def group_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Groups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param groupOption Specifies how the range can be grouped by rows or columns.
+    An `InvalidArgument` error is thrown when the group option differs from the range's
+    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+    */
+  @JSName("group")
+  def group_ByRows(groupOption: ByRows): Unit = js.native
+  /**
+    *
+    * Hide details of the row or column group.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
+    */
+  def hideGroupDetails(groupOption: GroupOption): Unit = js.native
+  @JSName("hideGroupDetails")
+  def hideGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Hide details of the row or column group.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
+    */
+  @JSName("hideGroupDetails")
+  def hideGroupDetails_ByRows(groupOption: ByRows): Unit = js.native
+  /**
+    *
     * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
     *
     * [Api set: ExcelApi 1.1]
@@ -1095,6 +1147,28 @@ class Range () extends ClientObject {
     */
   def showCard(): Unit = js.native
   /**
+    *
+    * Show details of the row or column group.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
+    */
+  def showGroupDetails(groupOption: GroupOption): Unit = js.native
+  @JSName("showGroupDetails")
+  def showGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Show details of the row or column group.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
+    */
+  @JSName("showGroupDetails")
+  def showGroupDetails_ByRows(groupOption: ByRows): Unit = js.native
+  /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
     */
@@ -1103,6 +1177,28 @@ class Range () extends ClientObject {
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Range = js.native
+  /**
+    *
+    * Ungroups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param groupOption Specifies how the range can be ungrouped by rows or columns.
+    */
+  def ungroup(groupOption: GroupOption): Unit = js.native
+  @JSName("ungroup")
+  def ungroup_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Ungroups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param groupOption Specifies how the range can be ungrouped by rows or columns.
+    */
+  @JSName("ungroup")
+  def ungroup_ByRows(groupOption: ByRows): Unit = js.native
   /**
     *
     * Unmerge the range cells into separate cells.

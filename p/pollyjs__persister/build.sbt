@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pollyjs__persister"
-version := "2.0-dt-20190131Z-63fb7f"
+version := "2.0-dt-20190731Z-e43824"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

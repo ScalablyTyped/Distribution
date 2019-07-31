@@ -1,17 +1,17 @@
 package typings.inquirer
 
-import typings.inquirer.inquirerMod.uiNs.PromptUI
+import typings.inquirer.libUiPromptMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Ui extends js.Object {
-  var ui: PromptUI
+  var ui: ^
 }
 
 object Anon_Ui {
   @scala.inline
-  def apply(ui: PromptUI): Anon_Ui = {
+  def apply(ui: ^): Anon_Ui = {
     val __obj = js.Dynamic.literal(ui = ui)
   
     __obj.asInstanceOf[Anon_Ui]

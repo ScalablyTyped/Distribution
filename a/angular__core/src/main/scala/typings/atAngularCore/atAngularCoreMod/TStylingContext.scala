@@ -32,6 +32,26 @@ import scala.scalajs.js.annotation._
   * tNode.classes = [ ... a context only for classes ... ];
   * ```
   *
+  * `tNode.styles` and `tNode.classes` can be an instance of the following:
+  *
+  * ```typescript
+  * tNode.styles = null; // no static styling or styling bindings active
+  * tNode.styles = StylingMapArray; // only static values present (e.g. `<div style="width:200">`)
+  * tNode.styles = TStylingContext; // one or more styling bindings present (e.g. `<div
+  * [style.width]>`)
+  * ```
+  *
+  * Both `tNode.styles` and `tNode.classes` are instantiated when anything
+  * styling-related is active on an element. They are first created from
+  * from the any of the element-level instructions (e.g. `element`,
+  * `elementStart`, `elementHostAttrs`). When any static style/class
+  * values are encountered they are registered on the `tNode.styles`
+  * and `tNode.classes` data-structures. By default (when any static
+  * values are encountered) the `tNode.styles` or `tNode.classes` values
+  * are instances of a `StylingMapArray`. Only when style/class bindings
+  * are detected then that styling map is converted into an instance of
+  * `TStylingContext`.
+  *
   * Due to the fact the the `TStylingContext` is stored on a `TNode`
   * this means that all data within the context is static. Instead of
   * storing actual styling binding values, the lView binding index values
@@ -42,6 +62,7 @@ import scala.scalajs.js.annotation._
   * //      [style.width]="x"   // lView binding index = 21
   * //      [style.height]="y"> // lView binding index = 22
   * tNode.stylesContext = [
+  *   [], // initial values array
   *   0, // the context config value
   *
   *   0b001, // guard mask for width
@@ -58,6 +79,7 @@ import scala.scalajs.js.annotation._
   * ];
   *
   * tNode.classesContext = [
+  *   [], // initial values array
   *   0, // the context config value
   *
   *   0b001, // guard mask for active
@@ -255,5 +277,6 @@ import scala.scalajs.js.annotation._
   * to the element.
   */
 @js.native
-trait TStylingContext extends Array[Double | String | Boolean | Null | LStylingMap]
+trait TStylingContext
+  extends Array[Double | String | Boolean | Null | StylingMapArray | js.Object]
 

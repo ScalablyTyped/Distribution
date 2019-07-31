@@ -1,23 +1,23 @@
 package typings.inquirer.inquirerMod
 
 import typings.inquirer.Anon_Ui
-import typings.inquirer.inquirerMod.promptsNs.Base
+import typings.inquirer.inquirerMod.promptsNs.PromptCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Provides the functionality to prompt questions to the user.
+  */
 @js.native
-trait PromptModule extends js.Object {
-  def apply[A](questions: Questions[A]): js.Promise[A] with Anon_Ui = js.native
+trait PromptModule extends PromptModuleBase {
   /**
-    * Register a prompt type
-    * @param name Prompt type name
-    * @param prompt Prompt constructor
+    * The prompts of the prompt-module.
     */
-  def registerPrompt(name: String, prompt: Base): PromptModule = js.native
+  var prompts: PromptCollection = js.native
   /**
-    * Register the defaults provider prompts
+    * Prompts the questions to the user.
     */
-  def restoreDefaultPrompts(): Unit = js.native
+  def apply[T](questions: QuestionCollection[T]): js.Promise[T] with Anon_Ui = js.native
 }
 

@@ -46,6 +46,7 @@ class Base () extends js.Object {
     */
   def getType(): String = js.native
   /* protected */ def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = js.native
+  /* protected */ def isTwoValueEquals(x: js.Any, y: js.Any, caseInSensitive: Boolean): Boolean = js.native
   /**
     * A static methods that returns true if a value underfined, null, empty string or empty array.
     * @param value

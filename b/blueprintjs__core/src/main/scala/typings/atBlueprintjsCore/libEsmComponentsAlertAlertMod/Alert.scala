@@ -11,8 +11,7 @@ class Alert ()
   extends AbstractPureComponent[IAlertProps, js.Object] {
   var handleCancel: js.Any = js.native
   var handleConfirm: js.Any = js.native
-  /* private */ def internalHandleCallbacks(confirmed: js.Any): js.Any = js.native
-  /* private */ def internalHandleCallbacks(confirmed: js.Any, evt: js.Any): js.Any = js.native
+  var internalHandleCallbacks: js.Any = js.native
 }
 
 /* static members */

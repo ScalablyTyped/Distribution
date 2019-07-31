@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait DateTimeProperty extends Property {
   var attributes: js.UndefOr[DateTimeMetadata] = js.undefined
   @JSName("raw")
-  var raw_DateTimeProperty: Date
+  var raw_DateTimeProperty: Date | Null
 }
 
 object DateTimeProperty {
@@ -22,18 +22,19 @@ object DateTimeProperty {
   def apply(
     error: Boolean,
     errorMessage: String,
-    raw: Date,
     `type`: String,
     attribute: Metadata = null,
     attributes: DateTimeMetadata = null,
     formatted: String = null,
+    raw: Date = null,
     security: SecurityValues = null
   ): DateTimeProperty = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage)
     __obj.updateDynamic("type")(`type`)
     if (attribute != null) __obj.updateDynamic("attribute")(attribute)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
     if (security != null) __obj.updateDynamic("security")(security)
     __obj.asInstanceOf[DateTimeProperty]
   }

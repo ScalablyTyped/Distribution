@@ -14,6 +14,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IFileInputProps extends LabelHTMLAttributes[HTMLLabelElement] {
   /**
+    * The button text.
+    * @default "Browse"
+    */
+  var buttonText: js.UndefOr[String] = js.undefined
+  /**
     * Whether the file input is non-interactive.
     * Setting this to `true` will automatically disable the child input too.
     */
@@ -61,6 +66,7 @@ object IFileInputProps {
   def apply(
     IProps: IProps = null,
     LabelHTMLAttributes: LabelHTMLAttributes[HTMLLabelElement] = null,
+    buttonText: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     fill: js.UndefOr[Boolean] = js.undefined,
     hasSelection: js.UndefOr[Boolean] = js.undefined,
@@ -72,6 +78,7 @@ object IFileInputProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IProps)
     js.Dynamic.global.Object.assign(__obj, LabelHTMLAttributes)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(hasSelection)) __obj.updateDynamic("hasSelection")(hasSelection)

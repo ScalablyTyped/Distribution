@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "body-scroll-lock"
-version := "2.6-dt-20190123Z-e40212"
+version := "2.6-dt-20190730Z-cd5442"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

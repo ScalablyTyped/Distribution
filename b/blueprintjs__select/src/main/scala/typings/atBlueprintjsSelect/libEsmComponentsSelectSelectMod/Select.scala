@@ -18,6 +18,7 @@ class Select[T] ()
   var handlePopoverOpening: js.Any = js.native
   var handleTargetKeyDown: js.Any = js.native
   var input: js.Any = js.native
+  var maybeRenderClearButton: js.Any = js.native
   var previousFocusedElement: js.Any = js.native
   var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
@@ -25,7 +26,6 @@ class Select[T] ()
   var resetQuery: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSelect(_prevProps: ISelectProps[T], prevState: ISelectState): Unit = js.native
-  /* private */ def maybeRenderClearButton(query: js.Any): js.Any = js.native
 }
 
 /* static members */

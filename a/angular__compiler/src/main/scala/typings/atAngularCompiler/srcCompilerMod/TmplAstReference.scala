@@ -13,5 +13,11 @@ class TmplAstReference protected () extends Reference {
     value: String,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
+  def this(
+    name: String,
+    value: String,
+    sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    valueSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ) = this()
 }
 

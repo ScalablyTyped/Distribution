@@ -22,6 +22,10 @@ trait UpdateJobTemplateRequest extends js.Object {
     */
   var Name: __string
   /**
+    * Specify the relative priority for this job. In any given queue, the service begins processing the job with the highest value first. When more than one job has the same priority, the service begins processing the job that you submitted first. If you don't specify a priority, the service uses the default value 0.
+    */
+  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined
+  /**
     * The new queue for the job template, if you are changing it.
     */
   var Queue: js.UndefOr[__string] = js.undefined
@@ -42,6 +46,7 @@ object UpdateJobTemplateRequest {
     AccelerationSettings: AccelerationSettings = null,
     Category: __string = null,
     Description: __string = null,
+    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
     Settings: JobTemplateSettings = null,
     StatusUpdateInterval: StatusUpdateInterval = null
@@ -50,6 +55,7 @@ object UpdateJobTemplateRequest {
     if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings)
     if (Category != null) __obj.updateDynamic("Category")(Category)
     if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (Settings != null) __obj.updateDynamic("Settings")(Settings)
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])

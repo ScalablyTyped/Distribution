@@ -66,6 +66,14 @@ class CommentReply () extends ClientObject {
   val id: String = js.native
   /**
     *
+    * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val resolved: Boolean = js.native
+  /**
+    *
     * Deletes the comment reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

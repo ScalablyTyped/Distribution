@@ -1,6 +1,6 @@
 package typings.atAngularCompiler.srcRender3ViewTemplateMod
 
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ReadVarExpr
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 trait BindingData extends js.Object {
   var declare: Boolean
   var declareLocalCallback: js.UndefOr[DeclareLocalVarCallback] = js.undefined
-  var lhs: ReadVarExpr
+  var lhs: Expression
   var localRef: Boolean
   var priority: Double
   var retrievalLevel: Double
@@ -32,7 +32,7 @@ object BindingData {
   @scala.inline
   def apply(
     declare: Boolean,
-    lhs: ReadVarExpr,
+    lhs: Expression,
     localRef: Boolean,
     priority: Double,
     retrievalLevel: Double,

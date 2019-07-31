@@ -24,6 +24,9 @@ trait ContentChildDecorator
     *
     * Content queries are set before the `ngAfterContentInit` callback is called.
     *
+    * Does not retrieve elements or directives that are in other components' templates,
+    * since a component's template is always a black box to its ancestors.
+    *
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
@@ -38,13 +41,11 @@ trait ContentChildDecorator
     *
     * @usageNotes
     *
-    * {@example core/di/ts/contentChild/content_child_howto.ts region='HowTo'
-    * linenums="false"}
+    * {@example core/di/ts/contentChild/content_child_howto.ts region='HowTo'}
     *
     * ### Example
     *
-    * {@example core/di/ts/contentChild/content_child_example.ts region='Component'
-    * linenums="false"}
+    * {@example core/di/ts/contentChild/content_child_example.ts region='Component'}
     *
     * @Annotation
     */

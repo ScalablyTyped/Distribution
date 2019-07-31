@@ -2206,6 +2206,21 @@ object resourcesNs extends js.Object {
     def retrieveUpcoming(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
     def retrieveUpcoming(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+    def sendInvoice(id: String): js.Promise[IInvoice] = js.native
+    /**
+      * Stripe will automatically send invoices to customers according to your subscriptions settings.
+      * However, if you’d like to manually send an invoice to your customer out of the normal schedule, you can do so.
+      * When sending invoices that have already been paid, there will be no reference to the payment in the email.
+      *
+      * Requests made in test-mode result in no emails being sent, despite sending an invoice.sent event.
+      *
+      * @returns Returns the invoice object
+      *
+      * @param invoice The ID of the invoice to send
+      */
+    def sendInvoice(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
+    def sendInvoice(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+    def sendInvoice(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
     def update(id: String, data: IInvoiceUpdateOptions): js.Promise[IInvoice] = js.native
     /**
       * Until an invoice is paid, it is marked as open (closed=false). If you'd like to stop Stripe from automatically attempting

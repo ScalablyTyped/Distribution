@@ -74,6 +74,14 @@ class Comment () extends ClientObject {
   val replies: CommentReplyCollection = js.native
   /**
     *
+    * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var resolved: Boolean = js.native
+  /**
+    *
     * Deletes the comment thread.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

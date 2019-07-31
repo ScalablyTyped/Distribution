@@ -58,6 +58,10 @@ trait BucketObjectState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**
+    * A mapping of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
+    */
+  val metadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  /**
     * Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
     */
   val serverSideEncryption: js.UndefOr[Input[String]] = js.undefined
@@ -100,6 +104,7 @@ object BucketObjectState {
     etag: Input[String] = null,
     key: Input[String] = null,
     kmsKeyId: Input[String] = null,
+    metadata: Input[StringDictionary[Input[String]]] = null,
     serverSideEncryption: Input[String] = null,
     source: Input[Asset] = null,
     storageClass: Input[String] = null,
@@ -120,6 +125,7 @@ object BucketObjectState {
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])

@@ -16,6 +16,8 @@ class Locator protected () extends ILocator {
   var convertCellIndexToClientY: js.Any = js.native
   var convertCellMidpointToClientX: js.Any = js.native
   var convertCellMidpointToClientY: js.Any = js.native
+  var getColumnCellSelector: js.Any = js.native
+  var getTableRect: js.Any = js.native
   var grid: js.Any = js.native
   var numFrozenColumns: js.Any = js.native
   var numFrozenRows: js.Any = js.native
@@ -23,8 +25,6 @@ class Locator protected () extends ILocator {
   var tableElement: js.Any = js.native
   var toGridX: js.Any = js.native
   var toGridY: js.Any = js.native
-  /* private */ def getColumnCellSelector(columnIndex: js.Any): js.Any = js.native
-  /* private */ def getTableRect(): js.Any = js.native
   def getViewportRect(): Rect = js.native
   def setGrid(grid: Grid): this.type = js.native
   def setNumFrozenColumns(numFrozenColumns: Double): this.type = js.native

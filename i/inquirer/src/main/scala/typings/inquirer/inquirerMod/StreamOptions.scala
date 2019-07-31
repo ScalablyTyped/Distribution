@@ -6,8 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Provides an input and an output-stream.
+  */
 trait StreamOptions extends js.Object {
+  /**
+    * A stream to read the input from.
+    */
   var input: js.UndefOr[ReadStream] = js.undefined
+  /**
+    * A stream to write the output to.
+    */
   var output: js.UndefOr[WriteStream] = js.undefined
 }
 

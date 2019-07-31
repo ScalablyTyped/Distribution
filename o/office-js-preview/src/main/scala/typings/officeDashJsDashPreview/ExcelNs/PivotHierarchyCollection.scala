@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+  * Represents a collection of all the PivotHierarchies that are part of the PivotTable.
   *
   * [Api set: ExcelApi 1.8]
   */
@@ -37,7 +37,7 @@ class PivotHierarchyCollection () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotTable to be retrieved.
+    * @param name Name of the PivotHierarchy to be retrieved.
     */
   def getItem(name: String): PivotHierarchy = js.native
   /**

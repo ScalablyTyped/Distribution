@@ -26,21 +26,21 @@ class DateRangePicker protected () extends AbstractPureComponent[IDateRangePicke
   var handleTimeChange: js.Any = js.native
   var handleTimeChangeLeftCalendar: js.Any = js.native
   var handleTimeChangeRightCalendar: js.Any = js.native
+  var maybeRenderShortcuts: js.Any = js.native
+  var maybeRenderTimePickers: js.Any = js.native
   var modifiers: js.Any = js.native
+  var renderCalendars: js.Any = js.native
   var renderLeftCaption: js.Any = js.native
   var renderLeftNavbar: js.Any = js.native
   var renderRightCaption: js.Any = js.native
   var renderRightNavbar: js.Any = js.native
   var renderSingleCaption: js.Any = js.native
   var renderSingleNavbar: js.Any = js.native
+  var setViews: js.Any = js.native
+  var updateLeftView: js.Any = js.native
+  var updateRightView: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDateRangePicker(nextProps: IDateRangePickerProps): Unit = js.native
-  /* private */ def maybeRenderShortcuts(): js.Any = js.native
-  /* private */ def maybeRenderTimePickers(): js.Any = js.native
-  /* private */ def renderCalendars(isShowingOneMonth: js.Any): js.Any = js.native
-  /* private */ def setViews(leftView: js.Any, rightView: js.Any): js.Any = js.native
-  /* private */ def updateLeftView(leftView: js.Any): js.Any = js.native
-  /* private */ def updateRightView(rightView: js.Any): js.Any = js.native
 }
 
 /* static members */

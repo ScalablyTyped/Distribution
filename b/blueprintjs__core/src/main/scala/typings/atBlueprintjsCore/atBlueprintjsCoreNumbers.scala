@@ -13,6 +13,9 @@ object atBlueprintjsCoreNumbers {
   sealed trait `1` extends Elevation
   
   @js.native
+  sealed trait `100` extends js.Object
+  
+  @js.native
   sealed trait `13` extends js.Object
   
   @js.native
@@ -20,6 +23,9 @@ object atBlueprintjsCoreNumbers {
   
   @js.native
   sealed trait `2` extends Elevation
+  
+  @js.native
+  sealed trait `20` extends js.Object
   
   @js.native
   sealed trait `27` extends js.Object
@@ -49,6 +55,9 @@ object atBlueprintjsCoreNumbers {
   sealed trait `46` extends js.Object
   
   @js.native
+  sealed trait `50` extends js.Object
+  
+  @js.native
   sealed trait `8` extends js.Object
   
   @js.native
@@ -62,11 +71,15 @@ object atBlueprintjsCoreNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
+  def `100`: `100` = 100.asInstanceOf[`100`]
+  @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
+  def `20`: `20` = 20.asInstanceOf[`20`]
   @scala.inline
   def `27`: `27` = 27.asInstanceOf[`27`]
   @scala.inline
@@ -85,6 +98,8 @@ object atBlueprintjsCoreNumbers {
   def `40`: `40` = 40.asInstanceOf[`40`]
   @scala.inline
   def `46`: `46` = 46.asInstanceOf[`46`]
+  @scala.inline
+  def `50`: `50` = 50.asInstanceOf[`50`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
