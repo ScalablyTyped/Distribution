@@ -96,6 +96,15 @@ class GraphModel protected () extends InferenceModel {
   def executeAsync(inputs: NamedTensorMap, outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
   def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
   /**
+    * There's no native PRelu op in TensorFlow, so Keras generates the following
+    * structure which does the equivalent calculation:
+    * f(x) = Relu(x) + (-alpha * Relu(-x))
+    * Since tfjs-core has a prelu op, this method will fuse the TensorFlow
+    * generated ops into prelu op. It will also try to register a custom op that
+    * supports prelu op.
+    */
+  def fusePrelu(): Unit = js.native
+  /**
     * Loads the model and weight files, construct the in memory weight map and
     * compile the inference graph.
     */

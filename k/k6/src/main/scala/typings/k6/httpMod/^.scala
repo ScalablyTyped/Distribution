@@ -17,6 +17,7 @@ import typings.k6.k6Strings.superseded
 import typings.k6.k6Strings.tls1DOT0
 import typings.k6.k6Strings.tls1DOT1
 import typings.k6.k6Strings.tls1DOT2
+import typings.k6.k6Strings.tls1DOT3
 import typings.k6.k6Strings.unknown
 import typings.k6.k6Strings.unspecified
 import scala.scalajs.js
@@ -44,6 +45,7 @@ object ^ extends js.Object {
   val TLS_1_0: tls1DOT0 = js.native
   val TLS_1_1: tls1DOT1 = js.native
   val TLS_1_2: tls1DOT2 = js.native
+  val TLS_1_3: tls1DOT3 = js.native
   def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = js.native
   def cookieJar(): CookieJar = js.native
   def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native

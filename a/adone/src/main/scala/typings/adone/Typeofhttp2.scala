@@ -1,6 +1,8 @@
 package typings.adone
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable4
 import typings.node.Buffer
 import typings.node.http2Mod.ClientHttp2Session
 import typings.node.http2Mod.ClientSessionOptions
@@ -8,11 +10,14 @@ import typings.node.http2Mod.Http2SecureServer
 import typings.node.http2Mod.Http2Server
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.http2Mod.Http2ServerResponse
+import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.http2Mod.SecureClientSessionOptions
 import typings.node.http2Mod.SecureServerOptions
+import typings.node.http2Mod.ServerHttp2Stream
 import typings.node.http2Mod.ServerOptions
 import typings.node.http2Mod.Settings
 import typings.node.netMod.Socket
+import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL
 import typings.std.Uint8Array
@@ -26,8 +31,17 @@ trait Typeofhttp2 extends js.Object {
   var ClientHttp2Stream: Instantiable0[typings.adone.glossesStdMod.http2Ns.ClientHttp2Stream] = js.native
   var Http2SecureServer: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2SecureServer] = js.native
   var Http2Server: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2Server] = js.native
-  var Http2ServerRequest: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2ServerRequest] = js.native
-  var Http2ServerResponse: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2ServerResponse] = js.native
+  var Http2ServerRequest: Instantiable4[
+    /* stream */ ServerHttp2Stream, 
+    /* headers */ IncomingHttpHeaders, 
+    /* options */ ReadableOptions, 
+    /* rawHeaders */ js.Array[String], 
+    typings.adone.glossesStdMod.http2Ns.Http2ServerRequest
+  ] = js.native
+  var Http2ServerResponse: Instantiable1[
+    /* stream */ ServerHttp2Stream, 
+    typings.adone.glossesStdMod.http2Ns.Http2ServerResponse
+  ] = js.native
   var Http2Session: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2Session] = js.native
   var Http2Stream: Instantiable0[typings.adone.glossesStdMod.http2Ns.Http2Stream] = js.native
   var ServerHttp2Session: Instantiable0[typings.adone.glossesStdMod.http2Ns.ServerHttp2Session] = js.native

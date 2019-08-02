@@ -51,7 +51,7 @@ trait Anon_BarBorderColor
     * "auto"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.color
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String | Anon_ColorStops | Anon_ColorStopsGlobal] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not be
@@ -108,7 +108,7 @@ object Anon_BarBorderColor {
     barBorderColor: String = null,
     barBorderRadius: js.Array[_] | Double = null,
     barBorderWidth: Int | Double = null,
-    color: String = null,
+    color: String | Anon_ColorStops | Anon_ColorStopsGlobal = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,
@@ -120,7 +120,7 @@ object Anon_BarBorderColor {
     if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor)
     if (barBorderRadius != null) __obj.updateDynamic("barBorderRadius")(barBorderRadius.asInstanceOf[js.Any])
     if (barBorderWidth != null) __obj.updateDynamic("barBorderWidth")(barBorderWidth.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)

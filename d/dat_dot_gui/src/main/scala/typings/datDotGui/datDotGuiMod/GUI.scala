@@ -48,3 +48,22 @@ class GUI () extends js.Object {
   def updateDisplay(): Unit = js.native
 }
 
+/* static members */
+@JSImport("dat.gui", "GUI")
+@js.native
+object GUI extends js.Object {
+  var CLASS_AUTO_PLACE: String = js.native
+  var CLASS_AUTO_PLACE_CONTAINER: String = js.native
+  var CLASS_CLOSED: String = js.native
+  var CLASS_CLOSE_BOTTOM: String = js.native
+  var CLASS_CLOSE_BUTTON: String = js.native
+  var CLASS_CLOSE_TOP: String = js.native
+  var CLASS_CONTROLLER_ROW: String = js.native
+  var CLASS_DRAG: String = js.native
+  var CLASS_MAIN: String = js.native
+  var CLASS_TOO_TALL: String = js.native
+  var DEFAULT_WIDTH: Double = js.native
+  var TEXT_CLOSED: String = js.native
+  var TEXT_OPEN: String = js.native
+}
+

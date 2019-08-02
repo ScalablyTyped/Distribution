@@ -32,6 +32,7 @@ trait DeleteByQuery[T] extends Generic {
   var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   var index: String | js.Array[String]
   var lenient: js.UndefOr[Boolean] = js.undefined
+  var max_docs: js.UndefOr[Double] = js.undefined
   var preference: js.UndefOr[String] = js.undefined
   var q: js.UndefOr[String] = js.undefined
   var refresh: js.UndefOr[Boolean] = js.undefined
@@ -78,6 +79,7 @@ object DeleteByQuery {
     ignore: Double | js.Array[Double] = null,
     ignore_unavailable: js.UndefOr[Boolean] = js.undefined,
     lenient: js.UndefOr[Boolean] = js.undefined,
+    max_docs: Int | Double = null,
     method: String = null,
     preference: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
@@ -122,6 +124,7 @@ object DeleteByQuery {
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(ignore_unavailable)) __obj.updateDynamic("ignore_unavailable")(ignore_unavailable)
     if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient)
+    if (max_docs != null) __obj.updateDynamic("max_docs")(max_docs.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (preference != null) __obj.updateDynamic("preference")(preference)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)

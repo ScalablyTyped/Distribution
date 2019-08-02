@@ -1,20 +1,16 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SlidesNs
 
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColorScheme extends js.Object {
-  def getConcreteColor(theme: ThemeColorType): Color
-  def getThemeColors(): js.Array[ThemeColorType]
-}
-
-object ColorScheme {
-  @scala.inline
-  def apply(getConcreteColor: ThemeColorType => Color, getThemeColors: () => js.Array[ThemeColorType]): ColorScheme = {
-    val __obj = js.Dynamic.literal(getConcreteColor = js.Any.fromFunction1(getConcreteColor), getThemeColors = js.Any.fromFunction0(getThemeColors))
-  
-    __obj.asInstanceOf[ColorScheme]
-  }
+  def getConcreteColor(theme: ThemeColorType): Color = js.native
+  def getThemeColors(): js.Array[ThemeColorType] = js.native
+  def setConcreteColor(`type`: ThemeColorType, color: Color): ColorScheme = js.native
+  def setConcreteColor(`type`: ThemeColorType, hexColor: String): ColorScheme = js.native
+  def setConcreteColor(`type`: ThemeColorType, red: Integer, green: Integer, blue: Integer): ColorScheme = js.native
 }
 

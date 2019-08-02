@@ -134,6 +134,8 @@ trait Range extends js.Object {
   def protect(): Protection = js.native
   def randomize(): Range = js.native
   def removeCheckboxes(): Range = js.native
+  def removeDuplicates(): Range = js.native
+  def removeDuplicates(columnsToCompare: js.Array[Integer]): Range = js.native
   def setBackground(color: String): Range = js.native
   def setBackgroundRGB(red: Integer, green: Integer, blue: Integer): Range = js.native
   def setBackgrounds(color: js.Array[js.Array[String]]): Range = js.native
@@ -204,6 +206,7 @@ trait Range extends js.Object {
   def splitTextToColumns(): Unit = js.native
   def splitTextToColumns(delimiter: String): Unit = js.native
   def splitTextToColumns(delimiter: TextToColumnsDelimiter): Unit = js.native
+  def trimWhitespace(): Range = js.native
   def uncheck(): Range = js.native
 }
 

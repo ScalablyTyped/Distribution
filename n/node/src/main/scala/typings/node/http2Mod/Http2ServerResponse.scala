@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("http2", "Http2ServerResponse")
 @js.native
 class Http2ServerResponse protected () extends Stream {
+  def this(stream: ServerHttp2Stream) = this()
   val connection: Socket | TLSSocket = js.native
   val finished: Boolean = js.native
   val headersSent: Boolean = js.native

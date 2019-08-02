@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataFrameGetDataFrameTransformStats extends Generic {
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   var from: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var transform_id: js.UndefOr[String] = js.undefined
@@ -13,6 +14,7 @@ trait DataFrameGetDataFrameTransformStats extends Generic {
 object DataFrameGetDataFrameTransformStats {
   @scala.inline
   def apply(
+    allow_no_match: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     from: Int | Double = null,
@@ -25,6 +27,7 @@ object DataFrameGetDataFrameTransformStats {
     transform_id: String = null
   ): DataFrameGetDataFrameTransformStats = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allow_no_match)) __obj.updateDynamic("allow_no_match")(allow_no_match)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])

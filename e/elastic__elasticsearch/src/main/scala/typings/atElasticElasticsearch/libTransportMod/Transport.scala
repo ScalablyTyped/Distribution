@@ -2,6 +2,8 @@ package typings.atElasticElasticsearch.libTransportMod
 
 import typings.atElasticElasticsearch.atElasticElasticsearchNumbers.`false`
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.gzip
+import typings.atElasticElasticsearch.libPoolMod.CloudConnectionPool
+import typings.atElasticElasticsearch.libPoolMod.ConnectionPool
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +15,7 @@ trait Transport extends js.Object {
   var _nextSniff: Double = js.native
   var _sniffEnabled: Boolean = js.native
   var compression: gzip | `false` = js.native
-  var connectionPool: typings.atElasticElasticsearch.libConnectionPoolMod.default = js.native
+  var connectionPool: ConnectionPool | CloudConnectionPool = js.native
   @JSName("emit")
   var emit_Original: emitFn with noopFn = js.native
   var maxRetries: Double = js.native

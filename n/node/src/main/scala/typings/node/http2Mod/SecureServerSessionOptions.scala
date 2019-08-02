@@ -1,13 +1,14 @@
 package typings.node.http2Mod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable4
 import typings.node.Buffer
 import typings.node.Error
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.streamMod.Duplex
+import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TlsOptions
@@ -27,8 +28,14 @@ object SecureServerSessionOptions {
     ALPNProtocols: (js.Array[java.lang.String | Uint8Array]) | Uint8Array = null,
     Http1IncomingMessage: Instantiable1[/* socket */ Socket, IncomingMessage] = null,
     Http1ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null,
-    Http2ServerRequest: Instantiable0[Http2ServerRequest] = null,
-    Http2ServerResponse: Instantiable0[Http2ServerResponse] = null,
+    Http2ServerRequest: Instantiable4[
+      /* stream */ ServerHttp2Stream, 
+      /* headers */ IncomingHttpHeaders, 
+      /* options */ ReadableOptions, 
+      /* rawHeaders */ js.Array[java.lang.String], 
+      Http2ServerRequest
+    ] = null,
+    Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
     ca: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
     cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,

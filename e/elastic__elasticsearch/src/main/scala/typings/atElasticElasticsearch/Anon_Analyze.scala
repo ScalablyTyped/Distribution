@@ -29,6 +29,7 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesPutSettings
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesPutTemplate
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesRecovery
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesRefresh
+import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesReloadSearchAnalyzers
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesRollover
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesSegments
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesShardStores
@@ -142,6 +143,10 @@ trait Anon_Analyze extends js.Object {
   var recovery_Original: ApiMethod[IndicesRecovery, _] = js.native
   @JSName("refresh")
   var refresh_Original: ApiMethod[IndicesRefresh, _] = js.native
+  @JSName("reloadSearchAnalyzers")
+  var reloadSearchAnalyzers_Original: ApiMethod[IndicesReloadSearchAnalyzers, _] = js.native
+  @JSName("reload_search_analyzers")
+  var reload_search_analyzers_Original: ApiMethod[IndicesReloadSearchAnalyzers, _] = js.native
   @JSName("rollover")
   var rollover_Original: ApiMethod[IndicesRollover[_], _] = js.native
   @JSName("segments")
@@ -536,6 +541,22 @@ trait Anon_Analyze extends js.Object {
   def refresh(params: IndicesRefresh, callback: callbackFn[_]): TransportRequestCallback = js.native
   def refresh(params: IndicesRefresh, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def refresh(params: IndicesRefresh, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def reloadSearchAnalyzers(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def reloadSearchAnalyzers(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def reloadSearchAnalyzers(params: IndicesReloadSearchAnalyzers): js.Promise[ApiResponse[_, _]] = js.native
+  def reloadSearchAnalyzers(params: IndicesReloadSearchAnalyzers, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def reloadSearchAnalyzers(params: IndicesReloadSearchAnalyzers, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def reloadSearchAnalyzers(params: IndicesReloadSearchAnalyzers, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def reload_search_analyzers(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def reload_search_analyzers(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def reload_search_analyzers(params: IndicesReloadSearchAnalyzers): js.Promise[ApiResponse[_, _]] = js.native
+  def reload_search_analyzers(params: IndicesReloadSearchAnalyzers, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def reload_search_analyzers(params: IndicesReloadSearchAnalyzers, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def reload_search_analyzers(params: IndicesReloadSearchAnalyzers, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def rollover(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

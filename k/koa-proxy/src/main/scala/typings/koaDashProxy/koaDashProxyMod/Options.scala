@@ -1,0 +1,55 @@
+package typings.koaDashProxy.koaDashProxyMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.RegExp
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var followRedirect: js.UndefOr[Boolean] = js.undefined
+  var host: js.UndefOr[String] = js.undefined
+  var jar: js.UndefOr[Boolean] = js.undefined
+  var map: js.UndefOr[StringDictionary[String]] = js.undefined
+  var `match`: js.UndefOr[RegExp] = js.undefined
+   // case-insensitive
+  var overrideResponseHeaders: js.UndefOr[js.Any] = js.undefined
+  var requestOptions: js.UndefOr[RequestOptionFunc | StringDictionary[String]] = js.undefined
+  var suppressRequestHeaders: js.UndefOr[js.Array[String]] = js.undefined
+   // case-insensitive
+  var suppressResponseHeaders: js.UndefOr[js.Array[String]] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
+  var yieldNext: js.UndefOr[Boolean] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    followRedirect: js.UndefOr[Boolean] = js.undefined,
+    host: String = null,
+    jar: js.UndefOr[Boolean] = js.undefined,
+    map: StringDictionary[String] = null,
+    `match`: RegExp = null,
+    overrideResponseHeaders: js.Any = null,
+    requestOptions: RequestOptionFunc | StringDictionary[String] = null,
+    suppressRequestHeaders: js.Array[String] = null,
+    suppressResponseHeaders: js.Array[String] = null,
+    url: String = null,
+    yieldNext: js.UndefOr[Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (overrideResponseHeaders != null) __obj.updateDynamic("overrideResponseHeaders")(overrideResponseHeaders)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (suppressRequestHeaders != null) __obj.updateDynamic("suppressRequestHeaders")(suppressRequestHeaders)
+    if (suppressResponseHeaders != null) __obj.updateDynamic("suppressResponseHeaders")(suppressResponseHeaders)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(yieldNext)) __obj.updateDynamic("yieldNext")(yieldNext)
+    __obj.asInstanceOf[Options]
+  }
+}
+

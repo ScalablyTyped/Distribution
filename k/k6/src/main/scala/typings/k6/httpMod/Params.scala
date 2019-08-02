@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Params extends js.Object {
   /** Authentication method. */
   var auth: js.UndefOr[AuthMethod] = js.undefined
+  /** Request body compression. */
+  var compression: js.UndefOr[String] = js.undefined
   /** Request scoped cookies. */
   var cookies: js.UndefOr[StringDictionary[ParamsCookieValue]] = js.undefined
   /** Request headers. */
@@ -28,6 +30,7 @@ object Params {
   @scala.inline
   def apply(
     auth: AuthMethod = null,
+    compression: String = null,
     cookies: StringDictionary[ParamsCookieValue] = null,
     headers: StringDictionary[String] = null,
     jar: CookieJar = null,
@@ -38,6 +41,7 @@ object Params {
   ): Params = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (compression != null) __obj.updateDynamic("compression")(compression)
     if (cookies != null) __obj.updateDynamic("cookies")(cookies)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (jar != null) __obj.updateDynamic("jar")(jar)

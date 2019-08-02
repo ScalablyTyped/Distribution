@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-window-infinite-loader"
-version := "1.0-dt-20190626Z-01c1a1"
+version := "1.0-dt-20190801Z-4cde4c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

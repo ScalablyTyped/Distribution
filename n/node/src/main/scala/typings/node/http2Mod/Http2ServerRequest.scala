@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.node.netMod.Socket
 import typings.node.nodeStrings.data
 import typings.node.streamMod.Readable
+import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.TLSSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,12 @@ import scala.scalajs.js.annotation._
 @JSImport("http2", "Http2ServerRequest")
 @js.native
 class Http2ServerRequest protected () extends Readable {
+  def this(
+    stream: ServerHttp2Stream,
+    headers: IncomingHttpHeaders,
+    options: ReadableOptions,
+    rawHeaders: js.Array[java.lang.String]
+  ) = this()
   val aborted: Boolean = js.native
   val authority: java.lang.String = js.native
   val headers: IncomingHttpHeaders = js.native

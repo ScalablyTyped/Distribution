@@ -49,7 +49,6 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.RankEval
 import typings.atElasticElasticsearch.apiRequestParamsMod.Reindex
 import typings.atElasticElasticsearch.apiRequestParamsMod.ReindexRethrottle
 import typings.atElasticElasticsearch.apiRequestParamsMod.RenderSearchTemplate
-import typings.atElasticElasticsearch.apiRequestParamsMod.ScriptsPainlessContext
 import typings.atElasticElasticsearch.apiRequestParamsMod.ScriptsPainlessExecute
 import typings.atElasticElasticsearch.apiRequestParamsMod.Scroll
 import typings.atElasticElasticsearch.apiRequestParamsMod.Search
@@ -59,7 +58,7 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.Termvectors
 import typings.atElasticElasticsearch.apiRequestParamsMod.Update
 import typings.atElasticElasticsearch.apiRequestParamsMod.UpdateByQuery
 import typings.atElasticElasticsearch.apiRequestParamsMod.UpdateByQueryRethrottle
-import typings.atElasticElasticsearch.libConnectionPoolMod.default
+import typings.atElasticElasticsearch.libSerializerMod.default
 import typings.atElasticElasticsearch.libTransportMod.ApiResponse
 import typings.atElasticElasticsearch.libTransportMod.TransportRequestCallback
 import typings.atElasticElasticsearch.libTransportMod.TransportRequestOptions
@@ -72,6 +71,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Client () extends EventEmitter {
   def this(opts: ClientOptions) = this()
+  /* GENERATED */
   @JSName("bulk")
   var bulk_Original: ApiMethod[Bulk[_], _] = js.native
   var cat: Anon_Aliases = js.native
@@ -81,7 +81,7 @@ class Client () extends EventEmitter {
   @JSName("clear_scroll")
   var clear_scroll_Original: ApiMethod[ClearScroll[_], _] = js.native
   var cluster: Anon_AllocationExplain = js.native
-  var connectionPool: default = js.native
+  var connectionPool: typings.atElasticElasticsearch.libPoolMod.ConnectionPool = js.native
   @JSName("count")
   var count_Original: ApiMethod[Count[_], _] = js.native
   @JSName("create")
@@ -170,12 +170,8 @@ class Client () extends EventEmitter {
   @JSName("render_search_template")
   var render_search_template_Original: ApiMethod[RenderSearchTemplate[_], _] = js.native
   var rollup: Anon_DeleteJob = js.native
-  @JSName("scriptsPainlessContext")
-  var scriptsPainlessContext_Original: ApiMethod[ScriptsPainlessContext, _] = js.native
   @JSName("scriptsPainlessExecute")
   var scriptsPainlessExecute_Original: ApiMethod[ScriptsPainlessExecute[_], _] = js.native
-  @JSName("scripts_painless_context")
-  var scripts_painless_context_Original: ApiMethod[ScriptsPainlessContext, _] = js.native
   @JSName("scripts_painless_execute")
   var scripts_painless_execute_Original: ApiMethod[ScriptsPainlessExecute[_], _] = js.native
   @JSName("scroll")
@@ -191,7 +187,7 @@ class Client () extends EventEmitter {
   @JSName("search_template")
   var search_template_Original: ApiMethod[SearchTemplate[_], _] = js.native
   var security: Anon_Authenticate = js.native
-  var serializer: typings.atElasticElasticsearch.libSerializerMod.default = js.native
+  var serializer: default = js.native
   var snapshot: Anon_Create = js.native
   var sql: Anon_ClearCursor = js.native
   var ssl: Anon_Certificates = js.native
@@ -212,12 +208,18 @@ class Client () extends EventEmitter {
   var watcher: Anon_AckWatch = js.native
   var xpack: Anon_Info = js.native
   // Promise API
+  /* GENERATED */
   def bulk(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
+  /* GENERATED */
   def bulk(callback: callbackFn[_]): TransportRequestCallback = js.native
+  /* GENERATED */
   def bulk(params: Bulk[_]): js.Promise[ApiResponse[_, _]] = js.native
+  /* GENERATED */
   def bulk(params: Bulk[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  /* GENERATED */
   def bulk(params: Bulk[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  /* GENERATED */
   def bulk(params: Bulk[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   def child(): Client = js.native
   def child(opts: ClientOptions): Client = js.native
@@ -538,14 +540,6 @@ class Client () extends EventEmitter {
   def render_search_template(params: RenderSearchTemplate[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def render_search_template(params: RenderSearchTemplate[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
-  def scriptsPainlessContext(): js.Promise[ApiResponse[_, _]] = js.native
-  // Callback API
-  def scriptsPainlessContext(callback: callbackFn[_]): TransportRequestCallback = js.native
-  def scriptsPainlessContext(params: ScriptsPainlessContext): js.Promise[ApiResponse[_, _]] = js.native
-  def scriptsPainlessContext(params: ScriptsPainlessContext, callback: callbackFn[_]): TransportRequestCallback = js.native
-  def scriptsPainlessContext(params: ScriptsPainlessContext, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
-  def scriptsPainlessContext(params: ScriptsPainlessContext, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
-  // Promise API
   def scriptsPainlessExecute(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def scriptsPainlessExecute(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -553,14 +547,6 @@ class Client () extends EventEmitter {
   def scriptsPainlessExecute(params: ScriptsPainlessExecute[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def scriptsPainlessExecute(params: ScriptsPainlessExecute[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def scriptsPainlessExecute(params: ScriptsPainlessExecute[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
-  // Promise API
-  def scripts_painless_context(): js.Promise[ApiResponse[_, _]] = js.native
-  // Callback API
-  def scripts_painless_context(callback: callbackFn[_]): TransportRequestCallback = js.native
-  def scripts_painless_context(params: ScriptsPainlessContext): js.Promise[ApiResponse[_, _]] = js.native
-  def scripts_painless_context(params: ScriptsPainlessContext, callback: callbackFn[_]): TransportRequestCallback = js.native
-  def scripts_painless_context(params: ScriptsPainlessContext, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
-  def scripts_painless_context(params: ScriptsPainlessContext, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def scripts_painless_execute(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

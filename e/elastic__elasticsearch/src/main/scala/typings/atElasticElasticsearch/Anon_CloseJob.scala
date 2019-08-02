@@ -4,12 +4,14 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.MlCloseJob
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteCalendar
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteCalendarEvent
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteCalendarJob
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteDataFrameAnalytics
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteDatafeed
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteExpiredData
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteFilter
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteForecast
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteJob
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteModelSnapshot
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlEvaluateDataFrame
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlFindFileStructure
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlFlushJob
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlForecast
@@ -17,6 +19,8 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetBuckets
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetCalendarEvents
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetCalendars
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetCategories
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetDataFrameAnalytics
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetDataFrameAnalyticsStats
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetDatafeedStats
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetDatafeeds
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlGetFilters
@@ -33,12 +37,15 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.MlPostData
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPreviewDatafeed
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutCalendar
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutCalendarJob
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutDataFrameAnalytics
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutDatafeed
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutFilter
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlPutJob
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlRevertModelSnapshot
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlSetUpgradeMode
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlStartDataFrameAnalytics
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlStartDatafeed
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlStopDataFrameAnalytics
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlStopDatafeed
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlUpdateDatafeed
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlUpdateFilter
@@ -67,6 +74,8 @@ trait Anon_CloseJob extends js.Object {
   var deleteCalendarJob_Original: ApiMethod[MlDeleteCalendarJob, _] = js.native
   @JSName("deleteCalendar")
   var deleteCalendar_Original: ApiMethod[MlDeleteCalendar, _] = js.native
+  @JSName("deleteDataFrameAnalytics")
+  var deleteDataFrameAnalytics_Original: ApiMethod[MlDeleteDataFrameAnalytics, _] = js.native
   @JSName("deleteDatafeed")
   var deleteDatafeed_Original: ApiMethod[MlDeleteDatafeed, _] = js.native
   @JSName("deleteExpiredData")
@@ -85,6 +94,8 @@ trait Anon_CloseJob extends js.Object {
   var delete_calendar_event_Original: ApiMethod[MlDeleteCalendarEvent, _] = js.native
   @JSName("delete_calendar_job")
   var delete_calendar_job_Original: ApiMethod[MlDeleteCalendarJob, _] = js.native
+  @JSName("delete_data_frame_analytics")
+  var delete_data_frame_analytics_Original: ApiMethod[MlDeleteDataFrameAnalytics, _] = js.native
   @JSName("delete_datafeed")
   var delete_datafeed_Original: ApiMethod[MlDeleteDatafeed, _] = js.native
   @JSName("delete_expired_data")
@@ -97,6 +108,10 @@ trait Anon_CloseJob extends js.Object {
   var delete_job_Original: ApiMethod[MlDeleteJob, _] = js.native
   @JSName("delete_model_snapshot")
   var delete_model_snapshot_Original: ApiMethod[MlDeleteModelSnapshot, _] = js.native
+  @JSName("evaluateDataFrame")
+  var evaluateDataFrame_Original: ApiMethod[MlEvaluateDataFrame[_], _] = js.native
+  @JSName("evaluate_data_frame")
+  var evaluate_data_frame_Original: ApiMethod[MlEvaluateDataFrame[_], _] = js.native
   @JSName("findFileStructure")
   var findFileStructure_Original: ApiMethod[MlFindFileStructure[_], _] = js.native
   @JSName("find_file_structure")
@@ -115,6 +130,10 @@ trait Anon_CloseJob extends js.Object {
   var getCalendars_Original: ApiMethod[MlGetCalendars[_], _] = js.native
   @JSName("getCategories")
   var getCategories_Original: ApiMethod[MlGetCategories[_], _] = js.native
+  @JSName("getDataFrameAnalyticsStats")
+  var getDataFrameAnalyticsStats_Original: ApiMethod[MlGetDataFrameAnalyticsStats, _] = js.native
+  @JSName("getDataFrameAnalytics")
+  var getDataFrameAnalytics_Original: ApiMethod[MlGetDataFrameAnalytics, _] = js.native
   @JSName("getDatafeedStats")
   var getDatafeedStats_Original: ApiMethod[MlGetDatafeedStats, _] = js.native
   @JSName("getDatafeeds")
@@ -141,6 +160,10 @@ trait Anon_CloseJob extends js.Object {
   var get_calendars_Original: ApiMethod[MlGetCalendars[_], _] = js.native
   @JSName("get_categories")
   var get_categories_Original: ApiMethod[MlGetCategories[_], _] = js.native
+  @JSName("get_data_frame_analytics")
+  var get_data_frame_analytics_Original: ApiMethod[MlGetDataFrameAnalytics, _] = js.native
+  @JSName("get_data_frame_analytics_stats")
+  var get_data_frame_analytics_stats_Original: ApiMethod[MlGetDataFrameAnalyticsStats, _] = js.native
   @JSName("get_datafeed_stats")
   var get_datafeed_stats_Original: ApiMethod[MlGetDatafeedStats, _] = js.native
   @JSName("get_datafeeds")
@@ -181,6 +204,8 @@ trait Anon_CloseJob extends js.Object {
   var putCalendarJob_Original: ApiMethod[MlPutCalendarJob, _] = js.native
   @JSName("putCalendar")
   var putCalendar_Original: ApiMethod[MlPutCalendar[_], _] = js.native
+  @JSName("putDataFrameAnalytics")
+  var putDataFrameAnalytics_Original: ApiMethod[MlPutDataFrameAnalytics[_], _] = js.native
   @JSName("putDatafeed")
   var putDatafeed_Original: ApiMethod[MlPutDatafeed[_], _] = js.native
   @JSName("putFilter")
@@ -191,6 +216,8 @@ trait Anon_CloseJob extends js.Object {
   var put_calendar_Original: ApiMethod[MlPutCalendar[_], _] = js.native
   @JSName("put_calendar_job")
   var put_calendar_job_Original: ApiMethod[MlPutCalendarJob, _] = js.native
+  @JSName("put_data_frame_analytics")
+  var put_data_frame_analytics_Original: ApiMethod[MlPutDataFrameAnalytics[_], _] = js.native
   @JSName("put_datafeed")
   var put_datafeed_Original: ApiMethod[MlPutDatafeed[_], _] = js.native
   @JSName("put_filter")
@@ -205,12 +232,20 @@ trait Anon_CloseJob extends js.Object {
   var setUpgradeMode_Original: ApiMethod[MlSetUpgradeMode, _] = js.native
   @JSName("set_upgrade_mode")
   var set_upgrade_mode_Original: ApiMethod[MlSetUpgradeMode, _] = js.native
+  @JSName("startDataFrameAnalytics")
+  var startDataFrameAnalytics_Original: ApiMethod[MlStartDataFrameAnalytics[_], _] = js.native
   @JSName("startDatafeed")
   var startDatafeed_Original: ApiMethod[MlStartDatafeed[_], _] = js.native
+  @JSName("start_data_frame_analytics")
+  var start_data_frame_analytics_Original: ApiMethod[MlStartDataFrameAnalytics[_], _] = js.native
   @JSName("start_datafeed")
   var start_datafeed_Original: ApiMethod[MlStartDatafeed[_], _] = js.native
+  @JSName("stopDataFrameAnalytics")
+  var stopDataFrameAnalytics_Original: ApiMethod[MlStopDataFrameAnalytics[_], _] = js.native
   @JSName("stopDatafeed")
   var stopDatafeed_Original: ApiMethod[MlStopDatafeed, _] = js.native
+  @JSName("stop_data_frame_analytics")
+  var stop_data_frame_analytics_Original: ApiMethod[MlStopDataFrameAnalytics[_], _] = js.native
   @JSName("stop_datafeed")
   var stop_datafeed_Original: ApiMethod[MlStopDatafeed, _] = js.native
   @JSName("updateDatafeed")
@@ -275,6 +310,14 @@ trait Anon_CloseJob extends js.Object {
   def deleteCalendarJob(params: MlDeleteCalendarJob, callback: callbackFn[_]): TransportRequestCallback = js.native
   def deleteCalendarJob(params: MlDeleteCalendarJob, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def deleteCalendarJob(params: MlDeleteCalendarJob, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def deleteDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def deleteDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def deleteDataFrameAnalytics(params: MlDeleteDataFrameAnalytics): js.Promise[ApiResponse[_, _]] = js.native
+  def deleteDataFrameAnalytics(params: MlDeleteDataFrameAnalytics, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def deleteDataFrameAnalytics(params: MlDeleteDataFrameAnalytics, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def deleteDataFrameAnalytics(params: MlDeleteDataFrameAnalytics, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def deleteDatafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -348,6 +391,14 @@ trait Anon_CloseJob extends js.Object {
   def delete_calendar_job(params: MlDeleteCalendarJob, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def delete_calendar_job(params: MlDeleteCalendarJob, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def delete_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def delete_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def delete_data_frame_analytics(params: MlDeleteDataFrameAnalytics): js.Promise[ApiResponse[_, _]] = js.native
+  def delete_data_frame_analytics(params: MlDeleteDataFrameAnalytics, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def delete_data_frame_analytics(params: MlDeleteDataFrameAnalytics, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def delete_data_frame_analytics(params: MlDeleteDataFrameAnalytics, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def delete_datafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def delete_datafeed(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -395,6 +446,22 @@ trait Anon_CloseJob extends js.Object {
   def delete_model_snapshot(params: MlDeleteModelSnapshot, callback: callbackFn[_]): TransportRequestCallback = js.native
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def evaluateDataFrame(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def evaluateDataFrame(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def evaluateDataFrame(params: MlEvaluateDataFrame[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def evaluateDataFrame(params: MlEvaluateDataFrame[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def evaluateDataFrame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def evaluateDataFrame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def evaluate_data_frame(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def evaluate_data_frame(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def evaluate_data_frame(params: MlEvaluateDataFrame[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def evaluate_data_frame(params: MlEvaluateDataFrame[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def evaluate_data_frame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def evaluate_data_frame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def findFileStructure(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -467,6 +534,22 @@ trait Anon_CloseJob extends js.Object {
   def getCategories(params: MlGetCategories[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def getCategories(params: MlGetCategories[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def getCategories(params: MlGetCategories[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def getDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getDataFrameAnalytics(params: MlGetDataFrameAnalytics): js.Promise[ApiResponse[_, _]] = js.native
+  def getDataFrameAnalytics(params: MlGetDataFrameAnalytics, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getDataFrameAnalytics(params: MlGetDataFrameAnalytics, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getDataFrameAnalytics(params: MlGetDataFrameAnalytics, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def getDataFrameAnalyticsStats(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getDataFrameAnalyticsStats(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getDataFrameAnalyticsStats(params: MlGetDataFrameAnalyticsStats): js.Promise[ApiResponse[_, _]] = js.native
+  def getDataFrameAnalyticsStats(params: MlGetDataFrameAnalyticsStats, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getDataFrameAnalyticsStats(params: MlGetDataFrameAnalyticsStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getDataFrameAnalyticsStats(params: MlGetDataFrameAnalyticsStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def getDatafeedStats(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -571,6 +654,22 @@ trait Anon_CloseJob extends js.Object {
   def get_categories(params: MlGetCategories[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def get_categories(params: MlGetCategories[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_categories(params: MlGetCategories[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_data_frame_analytics(params: MlGetDataFrameAnalytics): js.Promise[ApiResponse[_, _]] = js.native
+  def get_data_frame_analytics(params: MlGetDataFrameAnalytics, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_data_frame_analytics(params: MlGetDataFrameAnalytics, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_data_frame_analytics(params: MlGetDataFrameAnalytics, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_data_frame_analytics_stats(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_data_frame_analytics_stats(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_data_frame_analytics_stats(params: MlGetDataFrameAnalyticsStats): js.Promise[ApiResponse[_, _]] = js.native
+  def get_data_frame_analytics_stats(params: MlGetDataFrameAnalyticsStats, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_data_frame_analytics_stats(params: MlGetDataFrameAnalyticsStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_data_frame_analytics_stats(params: MlGetDataFrameAnalyticsStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def get_datafeed_stats(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -732,6 +831,14 @@ trait Anon_CloseJob extends js.Object {
   def putCalendarJob(params: MlPutCalendarJob, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def putCalendarJob(params: MlPutCalendarJob, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def putDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def putDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def putDataFrameAnalytics(params: MlPutDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def putDataFrameAnalytics(params: MlPutDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def putDataFrameAnalytics(params: MlPutDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def putDataFrameAnalytics(params: MlPutDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def putDatafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def putDatafeed(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -771,6 +878,14 @@ trait Anon_CloseJob extends js.Object {
   def put_calendar_job(params: MlPutCalendarJob, callback: callbackFn[_]): TransportRequestCallback = js.native
   def put_calendar_job(params: MlPutCalendarJob, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def put_calendar_job(params: MlPutCalendarJob, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def put_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def put_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def put_data_frame_analytics(params: MlPutDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def put_data_frame_analytics(params: MlPutDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def put_data_frame_analytics(params: MlPutDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def put_data_frame_analytics(params: MlPutDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def put_datafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -828,6 +943,14 @@ trait Anon_CloseJob extends js.Object {
   def set_upgrade_mode(params: MlSetUpgradeMode, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def set_upgrade_mode(params: MlSetUpgradeMode, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def startDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def startDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def startDataFrameAnalytics(params: MlStartDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def startDataFrameAnalytics(params: MlStartDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def startDataFrameAnalytics(params: MlStartDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def startDataFrameAnalytics(params: MlStartDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def startDatafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def startDatafeed(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -835,6 +958,14 @@ trait Anon_CloseJob extends js.Object {
   def startDatafeed(params: MlStartDatafeed[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def startDatafeed(params: MlStartDatafeed[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def startDatafeed(params: MlStartDatafeed[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def start_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def start_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def start_data_frame_analytics(params: MlStartDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def start_data_frame_analytics(params: MlStartDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def start_data_frame_analytics(params: MlStartDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def start_data_frame_analytics(params: MlStartDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def start_datafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -844,6 +975,14 @@ trait Anon_CloseJob extends js.Object {
   def start_datafeed(params: MlStartDatafeed[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def start_datafeed(params: MlStartDatafeed[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def stopDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def stopDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stopDataFrameAnalytics(params: MlStopDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def stopDataFrameAnalytics(params: MlStopDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stopDataFrameAnalytics(params: MlStopDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def stopDataFrameAnalytics(params: MlStopDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def stopDatafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def stopDatafeed(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -851,6 +990,14 @@ trait Anon_CloseJob extends js.Object {
   def stopDatafeed(params: MlStopDatafeed, callback: callbackFn[_]): TransportRequestCallback = js.native
   def stopDatafeed(params: MlStopDatafeed, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def stopDatafeed(params: MlStopDatafeed, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def stop_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def stop_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stop_data_frame_analytics(params: MlStopDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def stop_data_frame_analytics(params: MlStopDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stop_data_frame_analytics(params: MlStopDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def stop_data_frame_analytics(params: MlStopDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def stop_datafeed(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dat_dot_gui"
-version := "0.7.3-dt-20190724Z-82e4f9"
+version := "0.7-dt-20190801Z-601284"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

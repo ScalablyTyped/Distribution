@@ -19,6 +19,7 @@ package object apiRequestParamsMod {
   type MlInfo = Generic
   type Ping = Generic
   type SecurityAuthenticate = Generic
+  type SecurityGetBuiltinPrivileges = Generic
   type SecurityGetUserPrivileges = Generic
   type SslCertificates = Generic
   type WatcherStart = Generic

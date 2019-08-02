@@ -26,7 +26,19 @@ object k6Strings {
   sealed trait `HTTP/2DOT0` extends Protocol
   
   @js.native
+  sealed trait TLS_AES_128_GCM_SHA256 extends CipherSuite
+  
+  @js.native
+  sealed trait TLS_AES_256_GCM_SHA384 extends CipherSuite
+  
+  @js.native
+  sealed trait TLS_CHACHA20_POLY1305_SHA256 extends CipherSuite
+  
+  @js.native
   sealed trait TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA extends CipherSuite
+  
+  @js.native
+  sealed trait TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 extends CipherSuite
   
   @js.native
   sealed trait TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 extends CipherSuite
@@ -38,6 +50,9 @@ object k6Strings {
   sealed trait TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 extends CipherSuite
   
   @js.native
+  sealed trait TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 extends CipherSuite
+  
+  @js.native
   sealed trait TLS_ECDHE_ECDSA_WITH_RC4_128_SHA extends CipherSuite
   
   @js.native
@@ -45,6 +60,9 @@ object k6Strings {
   
   @js.native
   sealed trait TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA extends CipherSuite
+  
+  @js.native
+  sealed trait TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 extends CipherSuite
   
   @js.native
   sealed trait TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 extends CipherSuite
@@ -56,6 +74,9 @@ object k6Strings {
   sealed trait TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 extends CipherSuite
   
   @js.native
+  sealed trait TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 extends CipherSuite
+  
+  @js.native
   sealed trait TLS_ECDHE_RSA_WITH_RC4_128_SHA extends CipherSuite
   
   @js.native
@@ -63,6 +84,9 @@ object k6Strings {
   
   @js.native
   sealed trait TLS_RSA_WITH_AES_128_CBC_SHA extends CipherSuite
+  
+  @js.native
+  sealed trait TLS_RSA_WITH_AES_128_CBC_SHA256 extends CipherSuite
   
   @js.native
   sealed trait TLS_RSA_WITH_AES_128_GCM_SHA256 extends CipherSuite
@@ -212,6 +236,9 @@ object k6Strings {
   sealed trait tls1DOT2 extends js.Object
   
   @js.native
+  sealed trait tls1DOT3 extends js.Object
+  
+  @js.native
   sealed trait unknown extends js.Object
   
   @js.native
@@ -229,7 +256,15 @@ object k6Strings {
   @scala.inline
   def `HTTP/2DOT0`: `HTTP/2DOT0` = "HTTP/2.0".asInstanceOf[`HTTP/2DOT0`]
   @scala.inline
+  def TLS_AES_128_GCM_SHA256: TLS_AES_128_GCM_SHA256 = "TLS_AES_128_GCM_SHA256".asInstanceOf[TLS_AES_128_GCM_SHA256]
+  @scala.inline
+  def TLS_AES_256_GCM_SHA384: TLS_AES_256_GCM_SHA384 = "TLS_AES_256_GCM_SHA384".asInstanceOf[TLS_AES_256_GCM_SHA384]
+  @scala.inline
+  def TLS_CHACHA20_POLY1305_SHA256: TLS_CHACHA20_POLY1305_SHA256 = "TLS_CHACHA20_POLY1305_SHA256".asInstanceOf[TLS_CHACHA20_POLY1305_SHA256]
+  @scala.inline
   def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA".asInstanceOf[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]
+  @scala.inline
+  def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256".asInstanceOf[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256]
   @scala.inline
   def TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256".asInstanceOf[TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256]
   @scala.inline
@@ -237,11 +272,15 @@ object k6Strings {
   @scala.inline
   def TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384".asInstanceOf[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384]
   @scala.inline
+  def TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305".asInstanceOf[TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305]
+  @scala.inline
   def TLS_ECDHE_ECDSA_WITH_RC4_128_SHA: TLS_ECDHE_ECDSA_WITH_RC4_128_SHA = "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA".asInstanceOf[TLS_ECDHE_ECDSA_WITH_RC4_128_SHA]
   @scala.inline
   def TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA: TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA]
   @scala.inline
   def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]
+  @scala.inline
+  def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]
   @scala.inline
   def TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256]
   @scala.inline
@@ -249,11 +288,15 @@ object k6Strings {
   @scala.inline
   def TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".asInstanceOf[TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384]
   @scala.inline
+  def TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305".asInstanceOf[TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305]
+  @scala.inline
   def TLS_ECDHE_RSA_WITH_RC4_128_SHA: TLS_ECDHE_RSA_WITH_RC4_128_SHA = "TLS_ECDHE_RSA_WITH_RC4_128_SHA".asInstanceOf[TLS_ECDHE_RSA_WITH_RC4_128_SHA]
   @scala.inline
   def TLS_RSA_WITH_3DES_EDE_CBC_SHA: TLS_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[TLS_RSA_WITH_3DES_EDE_CBC_SHA]
   @scala.inline
   def TLS_RSA_WITH_AES_128_CBC_SHA: TLS_RSA_WITH_AES_128_CBC_SHA = "TLS_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[TLS_RSA_WITH_AES_128_CBC_SHA]
+  @scala.inline
+  def TLS_RSA_WITH_AES_128_CBC_SHA256: TLS_RSA_WITH_AES_128_CBC_SHA256 = "TLS_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[TLS_RSA_WITH_AES_128_CBC_SHA256]
   @scala.inline
   def TLS_RSA_WITH_AES_128_GCM_SHA256: TLS_RSA_WITH_AES_128_GCM_SHA256 = "TLS_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[TLS_RSA_WITH_AES_128_GCM_SHA256]
   @scala.inline
@@ -352,6 +395,8 @@ object k6Strings {
   def tls1DOT1: tls1DOT1 = "tls1.1".asInstanceOf[tls1DOT1]
   @scala.inline
   def tls1DOT2: tls1DOT2 = "tls1.2".asInstanceOf[tls1DOT2]
+  @scala.inline
+  def tls1DOT3: tls1DOT3 = "tls1.3".asInstanceOf[tls1DOT3]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline

@@ -11,6 +11,7 @@ trait Group extends js.Object {
   def getGroups(): js.Array[Group] = js.native
   def getRole(email: String): Role = js.native
   def getRole(user: User): Role = js.native
+  def getRoles(users: js.Array[User]): js.Array[Role] = js.native
   def getUsers(): js.Array[User] = js.native
   def hasGroup(email: String): Boolean = js.native
   def hasGroup(group: Group): Boolean = js.native

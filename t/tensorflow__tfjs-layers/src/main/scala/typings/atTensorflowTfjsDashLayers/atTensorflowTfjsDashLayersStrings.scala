@@ -20,19 +20,19 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashLayersStrings {
   @js.native
-  sealed trait `1DOT2DOT5` extends js.Object
+  sealed trait `1DOT2DOT6` extends js.Object
   
   @js.native
-  sealed trait AdadeltaOptimizer extends js.Object
+  sealed trait Adadelta extends js.Object
   
   @js.native
-  sealed trait AdagradOptimizer extends js.Object
+  sealed trait Adagrad extends js.Object
   
   @js.native
-  sealed trait AdamOptimizer extends js.Object
+  sealed trait Adam extends js.Object
   
   @js.native
-  sealed trait AdamaxOptimizer extends js.Object
+  sealed trait Adamax extends js.Object
   
   @js.native
   sealed trait Constant extends js.Object
@@ -50,7 +50,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait MinMaxNorm extends js.Object
   
   @js.native
-  sealed trait MomentumOptimizer extends js.Object
+  sealed trait Momentum extends js.Object
   
   @js.native
   sealed trait NonNeg extends js.Object
@@ -65,7 +65,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait PyJson extends js.Object
   
   @js.native
-  sealed trait RMSPropOptimizer extends js.Object
+  sealed trait RMSProp extends js.Object
   
   @js.native
   sealed trait RandomNormal extends js.Object
@@ -74,7 +74,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait RandomUniform extends js.Object
   
   @js.native
-  sealed trait SGDOptimizer extends js.Object
+  sealed trait SGD extends js.Object
   
   @js.native
   sealed trait TruncatedNormal extends js.Object
@@ -332,15 +332,15 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait zeros extends _InitializerIdentifier
   
   @scala.inline
-  def `1DOT2DOT5`: `1DOT2DOT5` = "1.2.5".asInstanceOf[`1DOT2DOT5`]
+  def `1DOT2DOT6`: `1DOT2DOT6` = "1.2.6".asInstanceOf[`1DOT2DOT6`]
   @scala.inline
-  def AdadeltaOptimizer: AdadeltaOptimizer = "AdadeltaOptimizer".asInstanceOf[AdadeltaOptimizer]
+  def Adadelta: Adadelta = "Adadelta".asInstanceOf[Adadelta]
   @scala.inline
-  def AdagradOptimizer: AdagradOptimizer = "AdagradOptimizer".asInstanceOf[AdagradOptimizer]
+  def Adagrad: Adagrad = "Adagrad".asInstanceOf[Adagrad]
   @scala.inline
-  def AdamOptimizer: AdamOptimizer = "AdamOptimizer".asInstanceOf[AdamOptimizer]
+  def Adam: Adam = "Adam".asInstanceOf[Adam]
   @scala.inline
-  def AdamaxOptimizer: AdamaxOptimizer = "AdamaxOptimizer".asInstanceOf[AdamaxOptimizer]
+  def Adamax: Adamax = "Adamax".asInstanceOf[Adamax]
   @scala.inline
   def Constant: Constant = "Constant".asInstanceOf[Constant]
   @scala.inline
@@ -352,7 +352,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def MinMaxNorm: MinMaxNorm = "MinMaxNorm".asInstanceOf[MinMaxNorm]
   @scala.inline
-  def MomentumOptimizer: MomentumOptimizer = "MomentumOptimizer".asInstanceOf[MomentumOptimizer]
+  def Momentum: Momentum = "Momentum".asInstanceOf[Momentum]
   @scala.inline
   def NonNeg: NonNeg = "NonNeg".asInstanceOf[NonNeg]
   @scala.inline
@@ -362,13 +362,13 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def PyJson: PyJson = "PyJson".asInstanceOf[PyJson]
   @scala.inline
-  def RMSPropOptimizer: RMSPropOptimizer = "RMSPropOptimizer".asInstanceOf[RMSPropOptimizer]
+  def RMSProp: RMSProp = "RMSProp".asInstanceOf[RMSProp]
   @scala.inline
   def RandomNormal: RandomNormal = "RandomNormal".asInstanceOf[RandomNormal]
   @scala.inline
   def RandomUniform: RandomUniform = "RandomUniform".asInstanceOf[RandomUniform]
   @scala.inline
-  def SGDOptimizer: SGDOptimizer = "SGDOptimizer".asInstanceOf[SGDOptimizer]
+  def SGD: SGD = "SGD".asInstanceOf[SGD]
   @scala.inline
   def TruncatedNormal: TruncatedNormal = "TruncatedNormal".asInstanceOf[TruncatedNormal]
   @scala.inline

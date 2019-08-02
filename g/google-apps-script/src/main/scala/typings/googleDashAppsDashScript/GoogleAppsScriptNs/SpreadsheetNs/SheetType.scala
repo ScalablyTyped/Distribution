@@ -14,10 +14,10 @@ object SheetType extends js.Object {
   sealed trait GRID extends SheetType
   
   @js.native
-  sealed trait any extends SheetType
+  sealed trait OBJECT extends SheetType
   
   /* 0 */ val GRID: typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.SheetType.GRID with Double = js.native
-  /* 1 */ val any: typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.SheetType.any with Double = js.native
+  /* 1 */ val OBJECT: typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.SheetType.OBJECT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SheetType with Double] = js.native
 }

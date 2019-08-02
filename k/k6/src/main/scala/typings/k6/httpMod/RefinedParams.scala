@@ -14,6 +14,7 @@ object RefinedParams {
   @scala.inline
   def apply[RT /* <: js.UndefOr[ResponseType] */](
     auth: AuthMethod = null,
+    compression: String = null,
     cookies: StringDictionary[ParamsCookieValue] = null,
     headers: StringDictionary[String] = null,
     jar: CookieJar = null,
@@ -24,6 +25,7 @@ object RefinedParams {
   ): RefinedParams[RT] = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (compression != null) __obj.updateDynamic("compression")(compression)
     if (cookies != null) __obj.updateDynamic("cookies")(cookies)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (jar != null) __obj.updateDynamic("jar")(jar)

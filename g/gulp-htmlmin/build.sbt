@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-htmlmin"
-version := "v1.3.0-dt-20190322Z-d36145"
+version := "v1.3.0-dt-20190322Z-e7f982"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-29e973",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-67e398",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-35d7e0",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-8a0441",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-fa55c4",
   "org.scalablytyped" %%% "source-map" % "0.7.3-9427ea",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",

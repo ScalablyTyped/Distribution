@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hasha"
-version := "5.0.0-6b04c4"
+version := "5.0.0-e7129a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "type-fest" % "0.3.1-51ba03")
 publishArtifact in packageDoc := false

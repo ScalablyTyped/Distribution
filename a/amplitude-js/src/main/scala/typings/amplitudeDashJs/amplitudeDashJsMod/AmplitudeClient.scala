@@ -47,6 +47,7 @@ class AmplitudeClient () extends js.Object {
   def setGroup(groupType: String, groupName: js.Array[String]): Unit = js.native
   def setOptOut(enable: Boolean): Unit = js.native
   def setSessionId(sessionId: Double): Unit = js.native
+  def setUserId(): Unit = js.native
   def setUserId(userId: String): Unit = js.native
   def setUserProperties(properties: js.Any): Unit = js.native
   def setVersionName(versionName: String): Unit = js.native

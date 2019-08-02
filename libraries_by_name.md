@@ -547,6 +547,7 @@
 | [bluebird-global](./b/bluebird-global) | Patches global.Promise to use bluebird and returns | polyfill, promise-library, promise, performance, promises, promises-a, promises-aplus, async, await |
 | [bluebird-lst](./b/bluebird-lst) | Bluebird — longStackTraces: true, cancellation: tr | - |
 | [bluebird-retry](./b/bluebird-retry) | utility for retrying a bluebird promise until it s | bluebird, promise, retry |
+| [blueimp-load-image](./b/blueimp-load-image) | JavaScript Load Image is a library to load images  | javascript, load, loading, image, file, blob, url, scale, crop, img, canvas, meta, exif, iptc, thumbnail, resizing |
 | [blueimp-md5](./b/blueimp-md5) | JavaScript MD5 implementation. Compatible with ser | javascript, md5 |
 | [blueprintjs__core](./b/blueprintjs__core) | Core styles & components | palantir, blueprint, components, styles, theme, ui |
 | [blueprintjs__datetime](./b/blueprintjs__datetime) | Components for interacting with dates and times | palantir, blueprint, theme, react, day, picker, date, time |
@@ -1078,6 +1079,7 @@
 | [csvtojson](./c/csvtojson) | A tool concentrating on converting csv data to JSO | csv, csv parser, parse csv, csvtojson, json, csv to json, csv convert, tojson, convert csv to json, csv-json |
 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas.  | - |
 | [cucumber](./c/cucumber) | The official JavaScript implementation of Cucumber | testing, bdd, cucumber, gherkin, tests |
+| [cucumber-html-reporter](./c/cucumber-html-reporter) | Generates Cucumber HTML reports in three different | cucumber, html, cucumber-html-reporter, html report, json to html |
 | [cuid](./c/cuid) | Collision-resistant ids optimized for horizontal s | guid, id, uid, unique id, uuid |
 | [cuint](./c/cuint) | Unsigned integers for Javascript | C, unsigned, integer, 32bits, 64bits |
 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp | format, currency, money |
@@ -1239,6 +1241,7 @@
 | [destroy-on-hwm](./d/destroy-on-hwm) | Destroy a writable stream if it hits the high wate | stream, high, water, mark, destroy |
 | [detect-browser](./d/detect-browser) | Unpack a browser type and version from the userage | browser, detect, useragent |
 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU | detect, character, encoding, charset, icu |
+| [detect-emoji-support](./d/detect-emoji-support) | Detect support for emoji character sets. | detect, emoji, support |
 | [detect-hover](./d/detect-hover) | JavaScript wrapper for hover and any-hover media q | detect, hover, any-hover, media query |
 | [detect-indent](./d/detect-indent) | Detect the indentation of code | indent, indentation, detect, infer, identify, code, string, text, source, space, tab |
 | [detect-it](./d/detect-it) | Detect if a device is mouse only, touch only, or h | detect, device, mouse, touch, hybrid, passive events |
@@ -1844,6 +1847,7 @@
 | [fluxible-router](./f/fluxible-router) | Routing for Fluxible applications | flux, fluxible, history, navigation, react, router |
 | [fluxxor](./f/fluxxor) | Flux architecture tools for React | react, flux |
 | [fm-websync](./f/fm-websync) | > npm install --save @types/fm-websync | - |
+| [fnando__sparkline](./f/fnando__sparkline) | Generate SVG sparklines with JavaScript without an | - |
 | [fnv-lite](./f/fnv-lite) | Small 128-bit FNV-1a library for the browser. | FNV, FNV-1a, Fowler-Noll-Vo, browser, small, lightweight, hash |
 | [focus-trap](./f/focus-trap) | Trap focus within a DOM node. | focus, accessibility, trap, capture, keyboard, modal |
 | [focus-trap-react](./f/focus-trap-react) | A React component that traps focus. | react, reactjs, react-component, aria, accessibility, modal, dialog, focus, keyboard |
@@ -2170,6 +2174,7 @@
 | [glob-watcher](./g/glob-watcher) | Watch globs and execute a function upon change, wi | watch, glob, async, queue, debounce, callback |
 | [global-dirs](./g/global-dirs) | Get the directory of globally installed packages a | global, prefix, path, paths, npm, yarn, node, modules, node-modules, package, packages, binary, binaries, bin, directory, directories, npmrc, rc, config, root, resolve |
 | [global-modules](./g/global-modules) | The directory used by npm for globally installed n | directory, dirname, global, module, modules, package, path, prefix, resolve |
+| [global-modules-path](./g/global-modules-path) | Returns path to globally installed package | npm, global, installed, path |
 | [global-paths](./g/global-paths) | Returns an array of unique "global" directories ba | directory, dirname, global, module, package, path, paths, prefix, resolve |
 | [global-prefix](./g/global-prefix) | Get the npm global path prefix. | global, module, modules, npm, path, prefix, resolve |
 | [global-tunnel-ng](./g/global-tunnel-ng) | Global HTTP & HTTPS tunneling | http, https, tunnel, global |
@@ -2640,6 +2645,7 @@
 | [insert-css](./i/insert-css) | insert a string of css into the  | css, insert, dom, browser, browserify, inject, styles, stylesheet, style, html, head, link |
 | [insert-module-globals](./i/insert-module-globals) | insert implicit module globals into a module-deps  | __filename, __dirname, global, process, module-deps, browser-pack, browserify |
 | [insight](./i/insight) | Understand how your tool is being used by anonymou | package, stats, google, analytics, track, metrics, yandex, metrica |
+| [inspectlet-es](./i/inspectlet-es) | ES module for Inspectlet. | inspectlet, session, replay, recording, heatmap, a/b, testing, analytics, error, logging, tracking, es, es6, module, npm, package |
 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S | react-native, bug, reporting, feedback, instabug, sdk |
 | [int64-buffer](./i/int64-buffer) | 64bit Long Integer on Buffer/Array/ArrayBuffer in  | 64bit, IEEE-754, arraybuffer, buffer, int, int64, int8array, integer, long, longlong, signed, uint64, unsinged |
 | [integer](./i/integer) | Native 64-bit integers with overflow protection. | integer, 64-bit, 64bit, int, overflow, native |
@@ -3328,6 +3334,7 @@
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
 | [koa-passport](./k/koa-passport) | Passport middleware for Koa | koa, passport, auth, authentication, authorization |
 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware | koa, http, logger, fast, pino |
+| [koa-proxy](./k/koa-proxy) | Proxy middleware for koa | koa, middleware, proxy |
 | [koa-pug](./k/koa-pug) | A Pug middleware for Koa | koa, jade, template, pug |
 | [koa-qs](./k/koa-qs) | qs for koa | - |
 | [koa-range](./k/koa-range) | range request implementation for koa | range, koa, http |
@@ -3372,6 +3379,7 @@
 | [lambda-log](./l/lambda-log) | Basic logging mechanism for Node 6.10+ Lambda Func | lambda, aws, log, logger, console, wrap, wrapper, node6.10, error, warn, info, message, assert, json, cloudwatch, logs |
 | [lambda-phi](./l/lambda-phi) | Typescript framework for AWS API Gateway and Lambd | api gateway, lambda, aws, typescript |
 | [lambda-tester](./l/lambda-tester) | Unit/Integration tests for AWS Lambda handlers | AWS, Lambda, unit, test, mocha, TDD, unit test, unit testing, integration test, integration testing, serverless, environment, variables, x-ray |
+| [langmap](./l/langmap) | List of all the known languages in their English a | locales, map, languages, list, l10n, localization, world, native language, English language, list of languages |
 | [lasso](./l/lasso) | Lasso.js is a build tool and runtime library for b | bundler, build, css, javascript, concat, minify |
 | [later](./l/later) | Determine later (or previous) occurrences of recur | schedule, occurrences, recur, cron |
 | [latest-semver](./l/latest-semver) | Get the latest stable semver version from an array | semver, semantic, version, versioning, latest, stable, max, maximum, highest, newest, git, tag, tags |
@@ -3860,6 +3868,7 @@
 | [mapbox-gl-leaflet](./m/mapbox-gl-leaflet) | binding from mapbox gl to the leaflet api | mapbox, gl, leaflet, leafletjs, maps |
 | [mapbox__geo-viewport](./m/mapbox__geo-viewport) | convert between viewports and extents | geographic, viewport, zoom, scale |
 | [mapbox__geojson-area](./m/mapbox__geojson-area) | calculate the physical area of a geojson geometry | geojson, area, geodesy |
+| [mapbox__mapbox-sdk](./m/mapbox__mapbox-sdk) | JS SDK for accessing Mapbox APIs | mapbox, sdk, api, map, style, tileset, dataset, search, navigation |
 | [mapbox__polyline](./m/mapbox__polyline) | Polyline encoding and decoding | - |
 | [mapbox__s3urls](./m/mapbox__s3urls) | Create S3 urls from bucket/key or extract bucket/k | - |
 | [mapbox__shelf-pack](./m/mapbox__shelf-pack) | A 2D rectangular bin packing data structure that u | bin packing, sprite |
@@ -4289,6 +4298,7 @@
 | [nodal](./n/nodal) | An API Server and Framework for node.js | framework, api, application, branding, server, modular, nodal |
 | [node](./n/node) | node | runtime |
 | [node-7z](./n/node-7z) | A Node.js wrapper for 7-Zip with platform binaries | node, 7z, 7za, 7zr, p7zip, 7zip, wrapper |
+| [node-abi](./n/node-abi) | Get the Node ABI for a given target and runtime, a | node, electron, node_module_version, abi, v8 |
 | [node-array-ext](./n/node-array-ext) | A library that contains simple extensions for node | node, array, extension, async |
 | [node-cache](./n/node-cache) | Simple and fast NodeJS internal caching. Node inte | cache, caching, local, variable, multi, memory, internal, node, memcached, object |
 | [node-calendar](./n/node-calendar) | A fairly straightforward port of the Python calend | calendar, python, year, month, day, locale, isleap, leapdays, monthrange, setlocale, noconflict, timegm, weekday, getfirstweekday, setfirstweekday, iterweekdays, itermonthdates, itermonthdays, itermonthdays2, monthdatescalendar, monthdayscalendar, monthdays2calendar, yeardatescalendar, yeardayscalendar, yeardays2calendar |
@@ -4725,6 +4735,7 @@
 | [phoenix](./p/phoenix) | The official JavaScript client for the Phoenix web | - |
 | [phone](./p/phone) | With a given country and phone number, validate an | phone, e.164 |
 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers. | - |
+| [phoneformat_dot_js](./p/phoneformat_dot_js) | - | - |
 | [phonegap](./p/phonegap) | PhoneGap command-line interface and node.js librar | cli, cordova, phonegap, phonegap build, phonegap/build |
 | [phonegap-facebook-plugin](./p/phonegap-facebook-plugin) | The official Facebook plugin for Apache Cordova/Ph | cordova, facebook, ecosystem:cordova, cordova-android, cordova-ios, cordova-browser |
 | [phonegap-nfc](./p/phonegap-nfc) | Near Field Communication (NFC) Plugin. Read and wr | nfc, ndef, ecosystem:cordova, cordova, cordova-android, cordova-wp8, cordova-windows, cordova-blackberry10, cordova-ios |
@@ -4877,6 +4888,7 @@
 | [preact-i18n](./p/preact-i18n) | Preact internationalization, done simply. | intl, internationalization, localization |
 | [precise](./p/precise) | Precision timer for nanosecond differences | precise, precision, nanosecond, timer, time, difference, elasped |
 | [precond](./p/precond) | Precondition checking utilities. | precondition, assert, invariant, contract, condition |
+| [preferred-pm](./p/preferred-pm) | Detects what package manager was used for installa | npm, pnpm, yarn |
 | [prefixfree](./p/prefixfree) | Break free from CSS prefix hell | CSS, prefixes |
 | [preloadjs](./p/preloadjs) | PreloadJS makes it easy to preload your assets: im | createjs, preloadjs, gskinner, preload, preloading, progress, XHR, javascript, html5 |
 | [prelude-ls](./p/prelude-ls) | prelude.ls is a functionally oriented utility libr | prelude, livescript, utility, ls, coffeescript, javascript, library, functional, array, list, object, string |
@@ -5206,6 +5218,7 @@
 | [react-daum-postcode](./r/react-daum-postcode) | React daum-postcode component | react, postcode, zipcode |
 | [react-day-picker](./r/react-day-picker) | Flexible date picker component for React | react, react-component, component, calendar, date-picker, datepicker, date, picker, moment, momentjs |
 | [react-dev-utils](./r/react-dev-utils) | Webpack utilities used by Create React App | - |
+| [react-devtools](./r/react-devtools) | Use react-devtools outside of the browser | - |
 | [react-dnd](./r/react-dnd) | Drag and Drop for React | - |
 | [react-dnd-html5-backend](./r/react-dnd-html5-backend) | HTML5 backend for React DnD | - |
 | [react-dnd-multi-backend](./r/react-dnd-multi-backend) | Multi Backend system compatible with React DnD | react, dnd, drag, drop, html5, touch, react-dnd |
@@ -6354,6 +6367,7 @@
 | [storybook__addon-notes](./s/storybook__addon-notes) | Write notes for your Storybook stories. | addon, notes, storybook |
 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook | addon, storybook |
 | [storybook__addon-storysho](./s/storybook__addon-storyshots) | StoryShots is a Jest Snapshot Testing Addon for St | addon, storybook |
+| [storybook__addon-storysho](./s/storybook__addon-storyshots-puppeteer) | Image snappshots addition to StoryShots base on pu | addon, storybook |
 | [storybook__addon-viewport](./s/storybook__addon-viewport) | Storybook addon to change the viewport size to mob | addon, storybook |
 | [storybook__addons](./s/storybook__addons) | Storybook addons store | storybook |
 | [storybook__api](./s/storybook__api) | Core Storybook API & Context | storybook |
@@ -6590,6 +6604,7 @@
 | [textversionjs](./t/textversionjs) | A tool for generating the text version of an html  | email, html, text, version, plaintext |
 | [texzilla](./t/texzilla) | A LALR Javascript LaTeX-to-MathML converter compat | mathml,tex,latex,unicode |
 | [tgfancy](./t/tgfancy) | A Fancy, Higher-Level Wrapper for Telegram Bot API | telegram, bot, api |
+| [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des | - |
 | [theming](./t/theming) | Unified CSSinJS theming solution for React | react, theme, theming, styled-components, jss, cssinjs, css-in-js |
 | [then-eos](./t/then-eos) | Promise-based end-of-stream. | end, eos, promise, stream |
 | [theo](./t/theo) | Design Tokens formatter | css, design, properties, tokens, sass, scss, stylus, less, iOS, Android, aura |
@@ -7094,6 +7109,7 @@
 | [when-dom-ready](./w/when-dom-ready) | $(document).ready() for the 21st century | check, dom, loaded, ready, promise, async, asynchronous, pure |
 | [which](./w/which) | Like which(1) unix command. Find the first instanc | - |
 | [which-pm](./w/which-pm) | Detects what package manager was used for installa | npm, pnpm, yarn |
+| [which-pm-runs](./w/which-pm-runs) | Detects what package manager executes the process | npm, pnpm, yarn |
 | [whitelist-object](./w/whitelist-object) | returns specified keys for passed in object | object, whitelist, filter, reduce |
 | [why-did-you-update](./w/why-did-you-update) | Patch React to discover unnecessary re-renders | react-component |
 | [wicg-mediasession](./w/wicg-mediasession) | - | - |

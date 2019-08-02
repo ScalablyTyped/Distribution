@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "any-db-transaction"
-version := "2.2.1-dt-20190322Z-c8a011"
+version := "2.2.1-dt-20190322Z-3f4ef1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20190322Z-73b451",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20190322Z-9724e0",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

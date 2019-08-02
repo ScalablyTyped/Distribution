@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Id extends js.Object {
   var id: String
   var password: String
+  // TODO: remove username and password here in 8
   var username: String
 }
 

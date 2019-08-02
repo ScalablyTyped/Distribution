@@ -1,11 +1,12 @@
 package typings.node.http2Mod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable4
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.streamMod.Duplex
+import typings.node.streamMod.ReadableOptions
 import typings.node.urlMod.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +15,18 @@ import scala.scalajs.js.annotation._
 trait ServerSessionOptions extends SessionOptions {
   var Http1IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, IncomingMessage]] = js.undefined
   var Http1ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, ServerResponse]] = js.undefined
-  var Http2ServerRequest: js.UndefOr[Instantiable0[typings.node.http2Mod.Http2ServerRequest]] = js.undefined
-  var Http2ServerResponse: js.UndefOr[Instantiable0[typings.node.http2Mod.Http2ServerResponse]] = js.undefined
+  var Http2ServerRequest: js.UndefOr[
+    Instantiable4[
+      /* stream */ ServerHttp2Stream, 
+      /* headers */ IncomingHttpHeaders, 
+      /* options */ ReadableOptions, 
+      /* rawHeaders */ js.Array[java.lang.String], 
+      typings.node.http2Mod.Http2ServerRequest
+    ]
+  ] = js.undefined
+  var Http2ServerResponse: js.UndefOr[
+    Instantiable1[/* stream */ ServerHttp2Stream, typings.node.http2Mod.Http2ServerResponse]
+  ] = js.undefined
 }
 
 object ServerSessionOptions {
@@ -23,8 +34,14 @@ object ServerSessionOptions {
   def apply(
     Http1IncomingMessage: Instantiable1[/* socket */ Socket, IncomingMessage] = null,
     Http1ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null,
-    Http2ServerRequest: Instantiable0[Http2ServerRequest] = null,
-    Http2ServerResponse: Instantiable0[Http2ServerResponse] = null,
+    Http2ServerRequest: Instantiable4[
+      /* stream */ ServerHttp2Stream, 
+      /* headers */ IncomingHttpHeaders, 
+      /* options */ ReadableOptions, 
+      /* rawHeaders */ js.Array[java.lang.String], 
+      Http2ServerRequest
+    ] = null,
+    Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,
     createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,

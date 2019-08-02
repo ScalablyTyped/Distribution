@@ -1,7 +1,6 @@
 package typings.reactDashAutosuggest
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Component
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.ReactNode
 import typings.std.Partial
@@ -12,7 +11,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAutosuggestMod {
-  type Autosuggest[T] = Component[AutosuggestProps[T], js.Object, js.Any]
   // types for functions - allowing reuse externally - e.g. as props and bound in the constructor
   type GetSectionSuggestions[TSuggestion] = js.Function1[/* section */ js.Any, js.Array[TSuggestion]]
   type GetSuggestionValue[TSuggestion] = js.Function1[/* suggestion */ TSuggestion, String]

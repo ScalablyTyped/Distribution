@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-actionsheet"
-version := "2.4-dt-20190515Z-329496"
+version := "2.4-dt-20190801Z-765c5c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

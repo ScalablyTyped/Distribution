@@ -1,15 +1,15 @@
 package typings.atElasticElasticsearch.atElasticElasticsearchMod
 
 import typings.atElasticElasticsearch.Anon_None
-import typings.atElasticElasticsearch.libConnectionPoolMod.ConnectionPoolOptions
-import typings.atElasticElasticsearch.libConnectionPoolMod.default
+import typings.atElasticElasticsearch.libPoolMod.ConnectionPoolOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@elastic/elasticsearch", "ConnectionPool")
 @js.native
-class ConnectionPool () extends default {
+class ConnectionPool ()
+  extends typings.atElasticElasticsearch.libPoolMod.ConnectionPool {
   def this(opts: ConnectionPoolOptions) = this()
 }
 

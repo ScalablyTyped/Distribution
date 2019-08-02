@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashCoreStrings {
   @js.native
-  sealed trait `1DOT2DOT5` extends js.Object
+  sealed trait `1DOT2DOT6` extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
@@ -132,7 +132,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `1DOT2DOT5`: `1DOT2DOT5` = "1.2.5".asInstanceOf[`1DOT2DOT5`]
+  def `1DOT2DOT6`: `1DOT2DOT6` = "1.2.6".asInstanceOf[`1DOT2DOT6`]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline

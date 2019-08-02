@@ -114,6 +114,9 @@ object echartsStrings {
   sealed trait line extends EChartsSeriesType
   
   @js.native
+  sealed trait linear extends js.Object
+  
+  @js.native
   sealed trait lines extends EChartsSeriesType
   
   @js.native
@@ -151,6 +154,9 @@ object echartsStrings {
   
   @js.native
   sealed trait radar extends EChartsSeriesType
+  
+  @js.native
+  sealed trait radial extends js.Object
   
   @js.native
   sealed trait radius extends js.Object
@@ -280,6 +286,8 @@ object echartsStrings {
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def lines: lines = "lines".asInstanceOf[lines]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
@@ -305,6 +313,8 @@ object echartsStrings {
   def pie: pie = "pie".asInstanceOf[pie]
   @scala.inline
   def radar: radar = "radar".asInstanceOf[radar]
+  @scala.inline
+  def radial: radial = "radial".asInstanceOf[radial]
   @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
   @scala.inline

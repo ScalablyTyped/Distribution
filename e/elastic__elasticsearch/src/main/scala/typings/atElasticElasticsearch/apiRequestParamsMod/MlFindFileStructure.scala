@@ -17,6 +17,7 @@ trait MlFindFileStructure[T] extends Generic {
   var format: js.UndefOr[ndjson | xml | delimited | semi_structured_text] = js.undefined
   var grok_pattern: js.UndefOr[String] = js.undefined
   var has_header_row: js.UndefOr[Boolean] = js.undefined
+  var line_merge_size_limit: js.UndefOr[Double] = js.undefined
   var lines_to_sample: js.UndefOr[Double] = js.undefined
   var quote: js.UndefOr[String] = js.undefined
   var should_trim_fields: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +41,7 @@ object MlFindFileStructure {
     has_header_row: js.UndefOr[Boolean] = js.undefined,
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
+    line_merge_size_limit: Int | Double = null,
     lines_to_sample: Int | Double = null,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
@@ -62,6 +64,7 @@ object MlFindFileStructure {
     if (!js.isUndefined(has_header_row)) __obj.updateDynamic("has_header_row")(has_header_row)
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (line_merge_size_limit != null) __obj.updateDynamic("line_merge_size_limit")(line_merge_size_limit.asInstanceOf[js.Any])
     if (lines_to_sample != null) __obj.updateDynamic("lines_to_sample")(lines_to_sample.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)

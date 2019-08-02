@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-autosuggest"
-version := "9.3-dt-20190616Z-329e1d"
+version := "9.3-dt-20190801Z-2fda92"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

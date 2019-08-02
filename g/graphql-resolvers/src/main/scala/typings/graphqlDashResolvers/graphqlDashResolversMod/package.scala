@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object graphqlDashResolversMod {
-  type TArgs = StringDictionary[js.Any]
+  type TArgsDefault = StringDictionary[js.Any]
 }

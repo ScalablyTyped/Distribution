@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ink-table"
-version := "1.0-dt-20190218Z-f6b27b"
+version := "1.0-dt-20190218Z-ecf41c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-aaa17a",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190731Z-f93e3e",
+  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-51daf4",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

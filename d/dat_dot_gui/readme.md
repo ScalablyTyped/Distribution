@@ -1,7 +1,7 @@
 
 # Scala.js typings for dat_dot_gui
 
-Typings are for version 0.7.3
+Typings are for version 0.7
 
 ## Library description:
 A lightweight graphical user interface for changing variables in JavaScript.

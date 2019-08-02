@@ -11,6 +11,8 @@ import typings.atElasticElasticsearch.atElasticElasticsearchStrings.optimistic
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.ping
 import typings.atElasticElasticsearch.libConnectionMod.AgentOptions
 import typings.atElasticElasticsearch.libConnectionMod.agentFn
+import typings.atElasticElasticsearch.libPoolMod.ApiKeyAuth
+import typings.atElasticElasticsearch.libPoolMod.BasicAuth
 import typings.atElasticElasticsearch.libSerializerMod.default
 import typings.atElasticElasticsearch.libTransportMod.generateRequestIdFn
 import typings.atElasticElasticsearch.libTransportMod.nodeFilterFn
@@ -26,6 +28,7 @@ trait ClientOptions extends js.Object {
   var Serializer: js.UndefOr[Instantiable0[default]] = js.undefined
   var Transport: js.UndefOr[Anon_OptsSniffReasons] = js.undefined
   var agent: js.UndefOr[AgentOptions | agentFn] = js.undefined
+  var auth: js.UndefOr[BasicAuth | ApiKeyAuth] = js.undefined
   var cloud: js.UndefOr[Anon_Id] = js.undefined
   var compression: js.UndefOr[gzip] = js.undefined
   var generateRequestId: js.UndefOr[generateRequestIdFn] = js.undefined
@@ -40,7 +43,7 @@ trait ClientOptions extends js.Object {
   var requestTimeout: js.UndefOr[Double] = js.undefined
   var resurrectStrategy: js.UndefOr[ping | optimistic | none] = js.undefined
   var sniffEndpoint: js.UndefOr[String] = js.undefined
-  var sniffInterval: js.UndefOr[Double] = js.undefined
+  var sniffInterval: js.UndefOr[Double | Boolean] = js.undefined
   var sniffOnConnectionFault: js.UndefOr[Boolean] = js.undefined
   var sniffOnStart: js.UndefOr[Boolean] = js.undefined
   var ssl: js.UndefOr[ConnectionOptions] = js.undefined
@@ -55,6 +58,7 @@ object ClientOptions {
     Serializer: Instantiable0[default] = null,
     Transport: Anon_OptsSniffReasons = null,
     agent: AgentOptions | agentFn = null,
+    auth: BasicAuth | ApiKeyAuth = null,
     cloud: Anon_Id = null,
     compression: gzip = null,
     generateRequestId: generateRequestIdFn = null,
@@ -69,7 +73,7 @@ object ClientOptions {
     requestTimeout: Int | Double = null,
     resurrectStrategy: ping | optimistic | none = null,
     sniffEndpoint: String = null,
-    sniffInterval: Int | Double = null,
+    sniffInterval: Double | Boolean = null,
     sniffOnConnectionFault: js.UndefOr[Boolean] = js.undefined,
     sniffOnStart: js.UndefOr[Boolean] = js.undefined,
     ssl: ConnectionOptions = null,
@@ -81,6 +85,7 @@ object ClientOptions {
     if (Serializer != null) __obj.updateDynamic("Serializer")(Serializer)
     if (Transport != null) __obj.updateDynamic("Transport")(Transport)
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (cloud != null) __obj.updateDynamic("cloud")(cloud)
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (generateRequestId != null) __obj.updateDynamic("generateRequestId")(generateRequestId)

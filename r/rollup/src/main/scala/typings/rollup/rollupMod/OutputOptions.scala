@@ -23,6 +23,7 @@ trait OutputOptions extends js.Object {
   var esModule: js.UndefOr[Boolean] = js.undefined
   var exports: js.UndefOr[default | named | none | auto] = js.undefined
   var extend: js.UndefOr[Boolean] = js.undefined
+  var externalLiveBindings: js.UndefOr[Boolean] = js.undefined
   // only required for bundle.write
   var file: js.UndefOr[String] = js.undefined
   var footer: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
@@ -62,6 +63,7 @@ object OutputOptions {
     esModule: js.UndefOr[Boolean] = js.undefined,
     exports: default | named | none | auto = null,
     extend: js.UndefOr[Boolean] = js.undefined,
+    externalLiveBindings: js.UndefOr[Boolean] = js.undefined,
     file: String = null,
     footer: String | (js.Function0[String | js.Promise[String]]) = null,
     format: ModuleFormat = null,
@@ -95,6 +97,7 @@ object OutputOptions {
     if (!js.isUndefined(esModule)) __obj.updateDynamic("esModule")(esModule)
     if (exports != null) __obj.updateDynamic("exports")(exports.asInstanceOf[js.Any])
     if (!js.isUndefined(extend)) __obj.updateDynamic("extend")(extend)
+    if (!js.isUndefined(externalLiveBindings)) __obj.updateDynamic("externalLiveBindings")(externalLiveBindings)
     if (file != null) __obj.updateDynamic("file")(file)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)

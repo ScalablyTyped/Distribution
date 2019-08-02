@@ -1,0 +1,49 @@
+package typings.atMapboxMapboxDashSdk.libClassesMapiDashErrorMod
+
+import typings.atMapboxMapboxDashSdk.libClassesMapiDashRequestMod.MapiRequest
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MapiError extends js.Object {
+  /**
+    * If the server sent a response body, this property exposes that response, parsed as JSON if possible.
+    */
+  var body: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Whatever message could be derived from the call site and HTTP response.
+    */
+  var message: js.UndefOr[String] = js.undefined
+  /**
+    * The errored request.
+    */
+  var request: MapiRequest
+  /**
+    * The numeric status code of the HTTP response
+    */
+  var statusCode: js.UndefOr[Double] = js.undefined
+  /**
+    * The type of error. Usually this is 'HttpError'.
+    * If the request was aborted, so the error was not sent from the server, the type will be 'RequestAbortedError'.
+    */
+  var `type`: String
+}
+
+object MapiError {
+  @scala.inline
+  def apply(
+    request: MapiRequest,
+    `type`: String,
+    body: js.Any = null,
+    message: String = null,
+    statusCode: Int | Double = null
+  ): MapiError = {
+    val __obj = js.Dynamic.literal(request = request)
+    __obj.updateDynamic("type")(`type`)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapiError]
+  }
+}
+

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait ClientOptions extends js.Object {
   var capabilities: DesiredCapabilities
   var isAndroid: Boolean
+  var isChrome: Boolean
   var isIOS: Boolean
   var isMobile: Boolean
   var isW3C: Boolean
@@ -18,12 +19,13 @@ object ClientOptions {
   def apply(
     capabilities: DesiredCapabilities,
     isAndroid: Boolean,
+    isChrome: Boolean,
     isIOS: Boolean,
     isMobile: Boolean,
     isW3C: Boolean,
     sessionId: String
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, isAndroid = isAndroid, isIOS = isIOS, isMobile = isMobile, isW3C = isW3C, sessionId = sessionId)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, isAndroid = isAndroid, isChrome = isChrome, isIOS = isIOS, isMobile = isMobile, isW3C = isW3C, sessionId = sessionId)
   
     __obj.asInstanceOf[ClientOptions]
   }

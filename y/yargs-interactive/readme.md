@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs-interactive
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 Build interactive command line tools without worring to parse the arguments (or ask them).

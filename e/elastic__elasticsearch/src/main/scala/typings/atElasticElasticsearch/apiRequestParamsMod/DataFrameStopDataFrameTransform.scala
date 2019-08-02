@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataFrameStopDataFrameTransform extends Generic {
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   var timeout: js.UndefOr[String] = js.undefined
   var transform_id: String
   var wait_for_completion: js.UndefOr[Boolean] = js.undefined
@@ -14,6 +15,7 @@ object DataFrameStopDataFrameTransform {
   @scala.inline
   def apply(
     transform_id: String,
+    allow_no_match: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
@@ -25,6 +27,7 @@ object DataFrameStopDataFrameTransform {
     wait_for_completion: js.UndefOr[Boolean] = js.undefined
   ): DataFrameStopDataFrameTransform = {
     val __obj = js.Dynamic.literal(transform_id = transform_id)
+    if (!js.isUndefined(allow_no_match)) __obj.updateDynamic("allow_no_match")(allow_no_match)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)

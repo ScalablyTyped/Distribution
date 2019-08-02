@@ -60,6 +60,7 @@ trait RangeList extends js.Object {
   def setVerticalText(isVertical: Boolean): RangeList = js.native
   def setWrap(isWrapEnabled: Boolean): RangeList = js.native
   def setWrapStrategy(strategy: WrapStrategy): RangeList = js.native
+  def trimWhitespace(): RangeList = js.native
   def uncheck(): RangeList = js.native
 }
 

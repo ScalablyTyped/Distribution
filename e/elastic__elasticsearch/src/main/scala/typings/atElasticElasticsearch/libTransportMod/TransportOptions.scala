@@ -1,6 +1,8 @@
 package typings.atElasticElasticsearch.libTransportMod
 
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.gzip
+import typings.atElasticElasticsearch.libPoolMod.CloudConnectionPool
+import typings.atElasticElasticsearch.libPoolMod.ConnectionPool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TransportOptions extends js.Object {
   var compression: js.UndefOr[gzip] = js.native
-  var connectionPool: typings.atElasticElasticsearch.libConnectionPoolMod.default = js.native
+  var connectionPool: ConnectionPool | CloudConnectionPool = js.native
   @JSName("emit")
   var emit_Original: emitFn with noopFn = js.native
   var generateRequestId: js.UndefOr[generateRequestIdFn] = js.native

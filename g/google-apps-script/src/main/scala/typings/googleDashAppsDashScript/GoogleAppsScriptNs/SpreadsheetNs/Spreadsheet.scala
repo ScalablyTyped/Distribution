@@ -4,7 +4,6 @@ import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.BlobSource
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.User
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +51,7 @@ trait Spreadsheet extends js.Object {
   def getFrozenRows(): Integer = js.native
   def getId(): String = js.native
   def getImages(): js.Array[OverGridImage] = js.native
-  def getIterativeCalculationConvergenceThreshold(): Number = js.native
+  def getIterativeCalculationConvergenceThreshold(): Double = js.native
   def getLastColumn(): Integer = js.native
   def getLastRow(): Integer = js.native
   def getMaxIterativeCalculationCycles(): Integer = js.native
@@ -107,7 +106,7 @@ trait Spreadsheet extends js.Object {
   def isRowHiddenByFilter(rowPosition: Integer): Boolean = js.native
   def isRowHiddenByUser(rowPosition: Integer): Boolean = js.native
   def moveActiveSheet(pos: Integer): Unit = js.native
-  def moveChartToanySheet(chart: EmbeddedChart): Sheet = js.native
+  def moveChartToObjectSheet(chart: EmbeddedChart): Sheet = js.native
   def removeEditor(emailAddress: String): Spreadsheet = js.native
   def removeEditor(user: User): Spreadsheet = js.native
   def removeMenu(name: String): Unit = js.native
@@ -127,7 +126,7 @@ trait Spreadsheet extends js.Object {
   def setCurrentCell(cell: Range): Range = js.native
   def setFrozenColumns(columns: Integer): Unit = js.native
   def setFrozenRows(rows: Integer): Unit = js.native
-  def setIterativeCalculationConvergenceThreshold(minThreshold: Number): Spreadsheet = js.native
+  def setIterativeCalculationConvergenceThreshold(minThreshold: Double): Spreadsheet = js.native
   def setIterativeCalculationEnabled(isEnabled: Boolean): Spreadsheet = js.native
   def setMaxIterativeCalculationCycles(maxIterations: Integer): Spreadsheet = js.native
   def setNamedRange(name: String, range: Range): Unit = js.native

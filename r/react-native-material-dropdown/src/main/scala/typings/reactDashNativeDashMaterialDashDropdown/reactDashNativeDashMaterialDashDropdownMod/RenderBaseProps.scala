@@ -64,6 +64,7 @@ object RenderBaseProps {
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: DropDownInsets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
+    inputContainerStyle: StyleProp[ViewStyle] = null,
     itemColor: String = null,
     itemCount: Int | Double = null,
     itemPadding: Int | Double = null,
@@ -131,6 +132,7 @@ object RenderBaseProps {
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
     if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
     if (itemPadding != null) __obj.updateDynamic("itemPadding")(itemPadding.asInstanceOf[js.Any])

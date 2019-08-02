@@ -12,6 +12,7 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityDeleteUser
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityDisableUser
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityEnableUser
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityGetApiKey
+import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityGetBuiltinPrivileges
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityGetPrivileges
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityGetRole
 import typings.atElasticElasticsearch.apiRequestParamsMod.SecurityGetRoleMapping
@@ -80,6 +81,8 @@ trait Anon_Authenticate extends js.Object {
   var enable_user_Original: ApiMethod[SecurityEnableUser, _] = js.native
   @JSName("getApiKey")
   var getApiKey_Original: ApiMethod[SecurityGetApiKey, _] = js.native
+  @JSName("getBuiltinPrivileges")
+  var getBuiltinPrivileges_Original: ApiMethod[SecurityGetBuiltinPrivileges, _] = js.native
   @JSName("getPrivileges")
   var getPrivileges_Original: ApiMethod[SecurityGetPrivileges, _] = js.native
   @JSName("getRoleMapping")
@@ -94,6 +97,8 @@ trait Anon_Authenticate extends js.Object {
   var getUser_Original: ApiMethod[SecurityGetUser, _] = js.native
   @JSName("get_api_key")
   var get_api_key_Original: ApiMethod[SecurityGetApiKey, _] = js.native
+  @JSName("get_builtin_privileges")
+  var get_builtin_privileges_Original: ApiMethod[SecurityGetBuiltinPrivileges, _] = js.native
   @JSName("get_privileges")
   var get_privileges_Original: ApiMethod[SecurityGetPrivileges, _] = js.native
   @JSName("get_role")
@@ -311,6 +316,14 @@ trait Anon_Authenticate extends js.Object {
   def getApiKey(params: SecurityGetApiKey, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def getApiKey(params: SecurityGetApiKey, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def getBuiltinPrivileges(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getBuiltinPrivileges(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getBuiltinPrivileges(params: SecurityGetBuiltinPrivileges): js.Promise[ApiResponse[_, _]] = js.native
+  def getBuiltinPrivileges(params: SecurityGetBuiltinPrivileges, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getBuiltinPrivileges(params: SecurityGetBuiltinPrivileges, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getBuiltinPrivileges(params: SecurityGetBuiltinPrivileges, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def getPrivileges(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def getPrivileges(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -366,6 +379,14 @@ trait Anon_Authenticate extends js.Object {
   def get_api_key(params: SecurityGetApiKey, callback: callbackFn[_]): TransportRequestCallback = js.native
   def get_api_key(params: SecurityGetApiKey, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_api_key(params: SecurityGetApiKey, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_builtin_privileges(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_builtin_privileges(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_builtin_privileges(params: SecurityGetBuiltinPrivileges): js.Promise[ApiResponse[_, _]] = js.native
+  def get_builtin_privileges(params: SecurityGetBuiltinPrivileges, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_builtin_privileges(params: SecurityGetBuiltinPrivileges, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_builtin_privileges(params: SecurityGetBuiltinPrivileges, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def get_privileges(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

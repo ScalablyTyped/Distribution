@@ -2,11 +2,13 @@ package typings.adone.glossesStdMod
 
 import typings.node.Buffer
 import typings.node.http2Mod.ClientSessionOptions
+import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.http2Mod.SecureClientSessionOptions
 import typings.node.http2Mod.SecureServerOptions
 import typings.node.http2Mod.ServerOptions
 import typings.node.http2Mod.Settings
 import typings.node.netMod.Socket
+import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL
 import typings.std.Uint8Array
@@ -35,11 +37,20 @@ object http2Ns extends js.Object {
   
   @js.native
   class Http2ServerRequest protected ()
-    extends typings.node.http2Mod.Http2ServerRequest
+    extends typings.node.http2Mod.Http2ServerRequest {
+    def this(
+      stream: typings.node.http2Mod.ServerHttp2Stream,
+      headers: IncomingHttpHeaders,
+      options: ReadableOptions,
+      rawHeaders: js.Array[String]
+    ) = this()
+  }
   
   @js.native
   class Http2ServerResponse protected ()
-    extends typings.node.http2Mod.Http2ServerResponse
+    extends typings.node.http2Mod.Http2ServerResponse {
+    def this(stream: typings.node.http2Mod.ServerHttp2Stream) = this()
+  }
   
   @js.native
   class Http2Session protected ()
