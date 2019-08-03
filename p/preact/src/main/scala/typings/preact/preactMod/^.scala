@@ -1,8 +1,8 @@
 package typings.preact.preactMod
 
-import typings.preact.preactMod.Global.JSXNs.Element
-import typings.preact.preactMod.Global.JSXNs.HTMLAttributes
-import typings.preact.preactMod.Global.JSXNs.SVGAttributes
+import typings.preact.preactMod.JSXNs.Element
+import typings.preact.preactMod.JSXNs.HTMLAttributes
+import typings.preact.preactMod.JSXNs.SVGAttributes
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Record
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def cloneElement(element: Element, props: js.Any, children: ComponentChildren*): Element = js.native
+  def createRef[T](): RefObject[T] = js.native
   def h(node: String, children: ComponentChildren*): VNode[_] = js.native
   def h(
     node: String,

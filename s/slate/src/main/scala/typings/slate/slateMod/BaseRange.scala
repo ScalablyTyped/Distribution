@@ -1,5 +1,6 @@
 package typings.slate.slateMod
 
+import typings.immutable.immutableMod.List
 import typings.immutable.immutableMod.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +23,12 @@ trait BaseRange extends js.Object {
   def moveAnchorBackward(n: Double): RangeType = js.native
   def moveAnchorForward(): RangeType = js.native
   def moveAnchorForward(n: Double): RangeType = js.native
-  def moveAnchorTo(path: Path): RangeType = js.native
-  def moveAnchorTo(path: Path, offset: Double): RangeType = js.native
+  def moveAnchorTo(path: String): RangeType = js.native
+  def moveAnchorTo(path: String, offset: Double): RangeType = js.native
+  def moveAnchorTo(path: Double): RangeType = js.native
+  def moveAnchorTo(path: Double, offset: Double): RangeType = js.native
+  def moveAnchorTo(path: List[Double]): RangeType = js.native
+  def moveAnchorTo(path: List[Double], offset: Double): RangeType = js.native
   def moveAnchorToEndOfNode(node: Node): RangeType = js.native
   def moveAnchorToStartOfNode(node: Node): RangeType = js.native
   def moveBackward(): RangeType = js.native
@@ -32,16 +37,24 @@ trait BaseRange extends js.Object {
   def moveEndBackward(n: Double): RangeType = js.native
   def moveEndForward(): RangeType = js.native
   def moveEndForward(n: Double): RangeType = js.native
-  def moveEndTo(path: Path): RangeType = js.native
-  def moveEndTo(path: Path, offset: Double): RangeType = js.native
+  def moveEndTo(path: String): RangeType = js.native
+  def moveEndTo(path: String, offset: Double): RangeType = js.native
+  def moveEndTo(path: Double): RangeType = js.native
+  def moveEndTo(path: Double, offset: Double): RangeType = js.native
+  def moveEndTo(path: List[Double]): RangeType = js.native
+  def moveEndTo(path: List[Double], offset: Double): RangeType = js.native
   def moveEndToEndOfNode(node: Node): RangeType = js.native
   def moveEndToStartOfNode(node: Node): RangeType = js.native
   def moveFocusBackward(): RangeType = js.native
   def moveFocusBackward(n: Double): RangeType = js.native
   def moveFocusForward(): RangeType = js.native
   def moveFocusForward(n: Double): RangeType = js.native
-  def moveFocusTo(path: Path): RangeType = js.native
-  def moveFocusTo(path: Path, offset: Double): RangeType = js.native
+  def moveFocusTo(path: String): RangeType = js.native
+  def moveFocusTo(path: String, offset: Double): RangeType = js.native
+  def moveFocusTo(path: Double): RangeType = js.native
+  def moveFocusTo(path: Double, offset: Double): RangeType = js.native
+  def moveFocusTo(path: List[Double]): RangeType = js.native
+  def moveFocusTo(path: List[Double], offset: Double): RangeType = js.native
   def moveFocusToEndOfNode(node: Node): RangeType = js.native
   def moveFocusToStartOfNode(node: Node): RangeType = js.native
   def moveForward(): RangeType = js.native
@@ -50,8 +63,12 @@ trait BaseRange extends js.Object {
   def moveStartBackward(n: Double): RangeType = js.native
   def moveStartForward(): RangeType = js.native
   def moveStartForward(n: Double): RangeType = js.native
-  def moveStartTo(path: Path): RangeType = js.native
-  def moveStartTo(path: Path, offset: Double): RangeType = js.native
+  def moveStartTo(path: String): RangeType = js.native
+  def moveStartTo(path: String, offset: Double): RangeType = js.native
+  def moveStartTo(path: Double): RangeType = js.native
+  def moveStartTo(path: Double, offset: Double): RangeType = js.native
+  def moveStartTo(path: List[Double]): RangeType = js.native
+  def moveStartTo(path: List[Double], offset: Double): RangeType = js.native
   def moveStartToEndOfNode(node: Node): RangeType = js.native
   def moveStartToStartOfNode(node: Node): RangeType = js.native
   def moveToAnchor(): RangeType = js.native
@@ -70,13 +87,14 @@ trait BaseRange extends js.Object {
   def setIsFocused(value: Boolean): RangeType = js.native
   def setMarks(marks: Set[Mark]): RangeType = js.native
   def setPoints(values: js.Array[Point]): RangeType = js.native
-  def setProperties(properties: String): RangeType = js.native
   def setProperties(properties: RangeType): RangeType = js.native
+  def setProperties(properties: RangeTypeJSON): RangeType = js.native
   def setProperties(properties: RangeTypeProperties): RangeType = js.native
   def setStart(point: Point): RangeType = js.native
+  def toJS(): RangeTypeJSON = js.native
   def toJSON(): RangeTypeJSON = js.native
   def toRange(): RangeType = js.native
   def unset(): RangeType = js.native
-  def updatePoints(updator: js.Function0[Point]): RangeType = js.native
+  def updatePoints(updater: js.Function1[/* point */ Point, Point]): RangeType = js.native
 }
 

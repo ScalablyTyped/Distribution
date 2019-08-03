@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation._
   - typings.slate.slateMod.AddMarkOperation
   - typings.slate.slateMod.RemoveMarkOperation
   - typings.slate.slateMod.SetMarkOperation
+  - typings.slate.slateMod.AddAnnotationOperation
+  - typings.slate.slateMod.RemoveAnnotationOperation
+  - typings.slate.slateMod.SetAnnotationOperation
   - typings.slate.slateMod.InsertNodeOperation
   - typings.slate.slateMod.MergeNodeOperation
   - typings.slate.slateMod.MoveNodeOperation

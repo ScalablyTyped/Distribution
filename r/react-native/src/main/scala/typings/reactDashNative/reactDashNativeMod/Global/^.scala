@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ErrorUtils: typings.reactDashNative.reactDashNativeMod.ErrorUtils = js.native
+  val HermesInternal: Null | js.Object = js.native
   val __BUNDLE_START_TIME__ : Double = js.native
   /**
     * This variable is set to true when react-native is running in Dev mode

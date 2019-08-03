@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-js"
-version := "1.0-dt-20190719Z-c003eb"
+version := "1.0-dt-20190802Z-0060a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,24 +1,21 @@
 package typings.slate.slateMod
 
+import typings.immutable.immutableMod.List
 import typings.slate.slateStrings.merge_node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MergeNodeOperation extends Operation {
-  var data: Data
-  var path: Path
-  var position: Double
-  var properties: NodeProperties
-  var `type`: merge_node
-}
-
-object MergeNodeOperation {
-  @scala.inline
-  def apply(data: Data, path: Path, position: Double, properties: NodeProperties, `type`: merge_node): MergeNodeOperation = {
-    val __obj = js.Dynamic.literal(data = data, path = path.asInstanceOf[js.Any], position = position, properties = properties)
-    __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[MergeNodeOperation]
-  }
+@JSImport("slate", "MergeNodeOperation")
+@js.native
+class MergeNodeOperation ()
+  extends BaseOperation
+     with Operation {
+  var data: Data = js.native
+  var path: List[Double] = js.native
+  var position: Double = js.native
+  var properties: NodeProperties = js.native
+  @JSName("type")
+  var type_MergeNodeOperation: merge_node = js.native
 }
 

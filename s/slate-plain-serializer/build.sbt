@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "slate-plain-serializer"
-version := "0.6-dt-20181024Z-638c43"
+version := "0.6-dt-20181024Z-9a81fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-3acc33",
-  "org.scalablytyped" %%% "slate" % "0.44-dt-20190624Z-a5be91",
+  "org.scalablytyped" %%% "slate" % "0.47-dt-20190802Z-72a600",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

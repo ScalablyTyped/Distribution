@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
 // The actual analytics.js object
 @js.native
 trait AnalyticsJS extends js.Object {
+  /* Define a new integration */
+  def addIntegration(integration: js.Function1[/* options */ js.Any, Unit]): this.type = js.native
   /* The alias method combines two previously unassociated user identities.
     This comes in handy if the same user visits from two different devices
     and you want to combine their history.
@@ -56,6 +58,10 @@ trait AnalyticsJS extends js.Object {
   def identify(userId: String, traits: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def identify(userId: String, traits: js.Object, options: SegmentOpts): Unit = js.native
   def identify(userId: String, traits: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+  /* Initialize with the given integration `settings` and `options`. */
+  def init(): this.type = js.native
+  def init(settings: IntegrationsSettings): this.type = js.native
+  def init(settings: IntegrationsSettings, options: InitOptions): this.type = js.native
   /* Configure Segment with write key */
   def load(writeKey: String): Unit = js.native
   def load(writeKey: String, options: SegmentOpts): Unit = js.native
@@ -94,6 +100,8 @@ trait AnalyticsJS extends js.Object {
     reset function that is most commonly used when your identified users
     logout of your application. */
   def reset(): Unit = js.native
+  /*  Set the user's `id`. */
+  def setAnonymousId(id: String): this.type = js.native
   /* You can extend the length (in milliseconds) of the method callbacks and
     helpers */
   def timeout(milliseconds: Double): Unit = js.native
@@ -148,6 +156,8 @@ trait AnalyticsJS extends js.Object {
   def trackLink(elements: Element, event: Fn_Elm): Unit = js.native
   def trackLink(elements: Element, event: Fn_Elm, properties: js.Object): Unit = js.native
   def trackLink(elements: Element, event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  /* Use a plugin */
+  def use(plugin: js.Function1[/* analytics */ this.type, Unit]): this.type = js.native
   /* Once Analytics.js loaded, you can retrieve information about the
     currently identified user or group like their id and traits. */
   def user(): Anon_AnonymousId = js.native

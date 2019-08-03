@@ -6,20 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PointJSON extends js.Object {
-  var key: js.UndefOr[String | Null] = js.undefined
-  var `object`: point
+  var key: js.UndefOr[String] = js.undefined
+  var `object`: js.UndefOr[point] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
-  var path: js.UndefOr[Path | Null] = js.undefined
+  var path: js.UndefOr[js.Array[Double]] = js.undefined
 }
 
 object PointJSON {
   @scala.inline
-  def apply(`object`: point, key: String = null, offset: Int | Double = null, path: Path = null): PointJSON = {
+  def apply(
+    key: String = null,
+    `object`: point = null,
+    offset: Int | Double = null,
+    path: js.Array[Double] = null
+  ): PointJSON = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
     if (key != null) __obj.updateDynamic("key")(key)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[PointJSON]
   }
 }

@@ -1,22 +1,24 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Map
+import typings.slate.slateStrings.mark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MarkProperties extends js.Object {
-  var data: js.UndefOr[(Map[String, _]) | StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[Data | StringDictionary[js.Any]] = js.undefined
+  var `object`: js.UndefOr[mark] = js.undefined
   var `type`: String
 }
 
 object MarkProperties {
   @scala.inline
-  def apply(`type`: String, data: (Map[String, _]) | StringDictionary[js.Any] = null): MarkProperties = {
+  def apply(`type`: String, data: Data | StringDictionary[js.Any] = null, `object`: mark = null): MarkProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[MarkProperties]
   }
 }

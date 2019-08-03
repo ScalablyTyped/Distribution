@@ -16,8 +16,10 @@ class Leaf () extends js.Object {
   var text: String = js.native
   def addMark(mark: Mark): Leaf = js.native
   def addMarks(marks: Set[Mark]): Leaf = js.native
+  def insertText(offset: Double, string: String): Leaf = js.native
   def removeMark(mark: Mark): Leaf = js.native
-  def toJSON(): LeafProperties = js.native
+  def toJS(): LeafJSON = js.native
+  def toJSON(): LeafJSON = js.native
   def updateMark(mark: Mark, newMark: Mark): Leaf = js.native
 }
 
@@ -25,13 +27,17 @@ class Leaf () extends js.Object {
 @JSImport("slate", "Leaf")
 @js.native
 object Leaf extends js.Object {
+  def create(properties: Leaf): Leaf = js.native
+  def create(properties: LeafJSON): Leaf = js.native
   def create(properties: LeafProperties): Leaf = js.native
   def createLeaves(leaves: List[Leaf]): List[Leaf] = js.native
   def createList(): List[Leaf] = js.native
-  def createList(attrs: js.Array[Leaf | LeafProperties]): List[Leaf] = js.native
-  def createList(attrs: List[Leaf | LeafProperties]): List[Leaf] = js.native
+  def createList(attrs: js.Array[LeafProperties | LeafJSON | Leaf]): List[Leaf] = js.native
+  def createList(attrs: List[LeafProperties | LeafJSON | Leaf]): List[Leaf] = js.native
   def fromJS(properties: LeafJSON): Leaf = js.native
+  def fromJS(properties: LeafProperties): Leaf = js.native
   def fromJSON(properties: LeafJSON): Leaf = js.native
+  def fromJSON(properties: LeafProperties): Leaf = js.native
   def isLeaf(maybeLeaf: js.Any): /* is slate.slate.Leaf */ Boolean = js.native
   def isLeafList(maybeLeafList: js.Any): /* is immutable.immutable.List<slate.slate.Leaf> */ Boolean = js.native
   def splitLeaves(leaves: List[Leaf], offset: Double): js.Array[List[Leaf]] = js.native

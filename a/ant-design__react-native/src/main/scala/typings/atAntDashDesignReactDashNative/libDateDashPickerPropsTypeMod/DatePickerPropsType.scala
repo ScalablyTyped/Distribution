@@ -17,6 +17,8 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerPropsType extends DatePickerProps {
   var children: js.UndefOr[ReactNode] = js.undefined
+  @JSName("defaultDate")
+  var defaultDate_DatePickerPropsType: js.UndefOr[Date] = js.undefined
   var dismissText: js.UndefOr[ReactNode] = js.undefined
   var extra: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | (js.Function1[/* value */ Date, String])] = js.undefined
@@ -41,7 +43,7 @@ object DatePickerPropsType {
   def apply(
     children: ReactNode = null,
     date: js.Any = null,
-    defaultDate: js.Any = null,
+    defaultDate: Date = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dismissText: ReactNode = null,
     extra: String = null,

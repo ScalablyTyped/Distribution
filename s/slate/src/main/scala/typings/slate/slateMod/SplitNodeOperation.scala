@@ -1,32 +1,22 @@
 package typings.slate.slateMod
 
+import typings.immutable.immutableMod.List
 import typings.slate.slateStrings.split_node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SplitNodeOperation extends Operation {
-  var data: Data
-  var path: Path
-  var position: Double
-  var properties: NodeProperties
-  var target: Double
-  var `type`: split_node
-}
-
-object SplitNodeOperation {
-  @scala.inline
-  def apply(
-    data: Data,
-    path: Path,
-    position: Double,
-    properties: NodeProperties,
-    target: Double,
-    `type`: split_node
-  ): SplitNodeOperation = {
-    val __obj = js.Dynamic.literal(data = data, path = path.asInstanceOf[js.Any], position = position, properties = properties, target = target)
-    __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[SplitNodeOperation]
-  }
+@JSImport("slate", "SplitNodeOperation")
+@js.native
+class SplitNodeOperation ()
+  extends BaseOperation
+     with Operation {
+  var data: Data = js.native
+  var path: List[Double] = js.native
+  var position: Double = js.native
+  var properties: NodeProperties = js.native
+  var target: Double = js.native
+  @JSName("type")
+  var type_SplitNodeOperation: split_node = js.native
 }
 

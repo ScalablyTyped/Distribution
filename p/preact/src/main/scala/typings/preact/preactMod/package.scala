@@ -27,6 +27,7 @@ package object preactMod {
   	 * Use ClassAttributes instead
   	 */
   type PreactHTMLAttributes = ClassAttributes[js.Any]
-  type Ref[T] = js.Function1[/* instance */ T, Unit]
+  type Ref[T] = RefObject[T] | RefCallback[T]
+  type RefCallback[T] = js.Function1[/* instance */ T | Null, Unit]
   type RenderableProps[P, RefType] = P with Attributes with Anon_Children[RefType]
 }

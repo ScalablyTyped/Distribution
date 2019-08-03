@@ -1,21 +1,20 @@
 package typings.slateDashReact
 
-import typings.slate.slateMod.Node
-import typings.slateDashReact.slateDashReactMod.SlateType
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Node extends js.Object {
   var node: Node
-  var `type`: SlateType
+  var offset: Double
 }
 
 object Anon_Node {
   @scala.inline
-  def apply(node: Node, `type`: SlateType): Anon_Node = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+  def apply(node: Node, offset: Double): Anon_Node = {
+    val __obj = js.Dynamic.literal(node = node, offset = offset)
+  
     __obj.asInstanceOf[Anon_Node]
   }
 }

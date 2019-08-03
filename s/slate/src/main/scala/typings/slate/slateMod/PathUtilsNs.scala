@@ -67,7 +67,7 @@ object PathUtilsNs extends js.Object {
   /**
     * Is an `any` object a path?
     */
-  def isPath(any: js.Any): Boolean = js.native
+  def isPath(maybePath: js.Any): Boolean = js.native
   /**
     * Is a `path` a sibling of a `target` path?
     */
@@ -81,6 +81,7 @@ object PathUtilsNs extends js.Object {
     * Lift a `path` to refer to its `n`th ancestor.
     */
   def lift(path: List[Double]): List[Double] = js.native
+  def lift(path: List[Double], n: Double): List[Double] = js.native
   /**
     * Get the maximum length of paths `a` and `b`.
     */
@@ -97,5 +98,7 @@ object PathUtilsNs extends js.Object {
     * Transform a `path` by an `operation`, adjusting it to stay current.
     */
   def transform(path: List[Double], operation: Operation): List[List[Double]] = js.native
+  def transform(path: List[Double], operation: OperationJSON): List[List[Double]] = js.native
+  def transform(path: List[Double], operation: OperationProperties): List[List[Double]] = js.native
 }
 

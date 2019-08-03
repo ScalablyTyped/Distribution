@@ -24,9 +24,9 @@ class Client () extends js.Object {
   def endSessionUrl(): String = js.native
   def endSessionUrl(parameters: EndSessionUrlParameters): String = js.native
   def grant(body: Anon_Authorizationcode): js.Promise[TokenSet] = js.native
-  def introspect(token: String): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
-  def introspect(token: String, tokenTypeHint: String): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
-  def introspect(token: String, tokenTypeHint: String, extras: Anon_IntrospectBody): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
+  def introspect(token: String): js.Promise[IntrospectionResponse] = js.native
+  def introspect(token: String, tokenTypeHint: String): js.Promise[IntrospectionResponse] = js.native
+  def introspect(token: String, tokenTypeHint: String, extras: Anon_IntrospectBody): js.Promise[IntrospectionResponse] = js.native
   def userinfo(accessToken: String): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
   def userinfo(accessToken: TokenSet): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
 }

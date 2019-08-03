@@ -42,9 +42,25 @@ trait Plugin
   var onKeyDown: js.UndefOr[EventHook] = js.undefined
   var onPaste: js.UndefOr[EventHook] = js.undefined
   var onSelect: js.UndefOr[EventHook] = js.undefined
+  var renderAnnotation: js.UndefOr[
+    js.Function3[
+      /* props */ RenderAnnotationProps, 
+      /* editor */ typings.slate.slateMod.Editor, 
+      /* next */ js.Function0[_], 
+      _
+    ]
+  ] = js.undefined
   var renderBlock: js.UndefOr[
     js.Function3[
       /* props */ RenderBlockProps, 
+      /* editor */ typings.slate.slateMod.Editor, 
+      /* next */ js.Function0[_], 
+      _
+    ]
+  ] = js.undefined
+  var renderDecoration: js.UndefOr[
+    js.Function3[
+      /* props */ RenderDecorationProps, 
       /* editor */ typings.slate.slateMod.Editor, 
       /* next */ js.Function0[_], 
       _
@@ -123,7 +139,9 @@ object Plugin {
     onQuery: (/* query */ Query, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
     onSelect: EventHook = null,
     queries: StringDictionary[QueryFunc] = null,
+    renderAnnotation: (/* props */ RenderAnnotationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderBlock: (/* props */ RenderBlockProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
+    renderDecoration: (/* props */ RenderDecorationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderDocument: (/* props */ RenderDocumentProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderEditor: (/* props */ EditorProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderInline: (/* props */ RenderInlineProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
@@ -160,7 +178,9 @@ object Plugin {
     if (onQuery != null) __obj.updateDynamic("onQuery")(js.Any.fromFunction3(onQuery))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
     if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (renderAnnotation != null) __obj.updateDynamic("renderAnnotation")(js.Any.fromFunction3(renderAnnotation))
     if (renderBlock != null) __obj.updateDynamic("renderBlock")(js.Any.fromFunction3(renderBlock))
+    if (renderDecoration != null) __obj.updateDynamic("renderDecoration")(js.Any.fromFunction3(renderDecoration))
     if (renderDocument != null) __obj.updateDynamic("renderDocument")(js.Any.fromFunction3(renderDocument))
     if (renderEditor != null) __obj.updateDynamic("renderEditor")(js.Any.fromFunction3(renderEditor))
     if (renderInline != null) __obj.updateDynamic("renderInline")(js.Any.fromFunction3(renderInline))

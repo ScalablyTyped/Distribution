@@ -34,7 +34,7 @@ trait Mailbox extends js.Object {
     * Contains the following members:
     * 
     *  - hostName (string): A string that represents the name of the host application. 
-    * It be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+    * It be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
     * 
     *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. 
     * If the mail add-in is running in Outlook on desktop clients or iOS, the hostVersion property returns the version of the 
@@ -42,8 +42,8 @@ trait Mailbox extends js.Object {
     * 
     *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook on the web. 
     * If the host application is not Outlook on the web, then accessing this property results in undefined. 
-    * Outlook on the web has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, 
-    * and ThreeColumns - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
+    * Outlook on the web has three views ("OneColumn" - displayed when the screen is narrow, "TwoColumns" - displayed when the screen is wider, 
+    * and "ThreeColumns" - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
     * that can be displayed.
     *
     *  More information is under {@link Office.Diagnostics}. 

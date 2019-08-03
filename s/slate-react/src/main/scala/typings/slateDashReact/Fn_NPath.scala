@@ -1,14 +1,18 @@
 package typings.slateDashReact
 
+import typings.immutable.immutableMod.List
 import typings.slate.slateMod.Editor
-import typings.slate.slateMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Fn_NPath extends js.Object {
-  def apply(path: Path): Editor = js.native
-  def apply(path: Path, n: Double): Editor = js.native
+  def apply(path: String): Editor = js.native
+  def apply(path: String, n: Double): Editor = js.native
+  def apply(path: Double): Editor = js.native
+  def apply(path: Double, n: Double): Editor = js.native
+  def apply(path: List[Double]): Editor = js.native
+  def apply(path: List[Double], n: Double): Editor = js.native
 }
 

@@ -81,6 +81,7 @@ object ButtonProps {
     mt: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
     mx: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     my: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
+    opacity: ResponsiveValue[GlobalsNumber] = null,
     order: ResponsiveValue[GlobalsNumber] = null,
     p: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     padding: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
@@ -137,6 +138,7 @@ object ButtonProps {
     if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
     if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
     if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

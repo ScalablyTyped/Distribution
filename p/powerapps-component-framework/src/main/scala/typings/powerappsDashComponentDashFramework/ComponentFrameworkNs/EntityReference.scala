@@ -1,5 +1,6 @@
 package typings.powerappsDashComponentDashFramework.ComponentFrameworkNs
 
+import typings.powerappsDashComponentDashFramework.Anon_Guid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +12,11 @@ trait EntityReference extends js.Object {
   /**
   		 * The entity logical name. Read-only.
   		 */
-  var entityType: js.UndefOr[String] = js.undefined
+  var etn: js.UndefOr[String] = js.undefined
   /**
   		 * The record id. Read-only.
   		 */
-  var id: String
+  var id: Anon_Guid
   /**
   		 * The name of the entity reference. Read-only.
   		 */
@@ -24,9 +25,9 @@ trait EntityReference extends js.Object {
 
 object EntityReference {
   @scala.inline
-  def apply(id: String, name: String, entityType: String = null): EntityReference = {
+  def apply(id: Anon_Guid, name: String, etn: String = null): EntityReference = {
     val __obj = js.Dynamic.literal(id = id, name = name)
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
+    if (etn != null) __obj.updateDynamic("etn")(etn)
     __obj.asInstanceOf[EntityReference]
   }
 }

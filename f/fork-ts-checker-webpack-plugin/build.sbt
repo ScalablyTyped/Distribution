@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.4.3-e5eb89"
+version := "1.5.0-e5eb89"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

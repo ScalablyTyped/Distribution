@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree"
-version := "0.3-dt-20190718Z-71c561"
+version := "0.3-dt-20190802Z-66fc82"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -38,14 +38,16 @@ trait JobOptions extends js.Object {
   var priority: js.UndefOr[Double] = js.undefined
   /**
     * A boolean which, if true, removes the job when it successfully completes.
-    * Default behavior is to keep the job in the completed set.
+    * When a number, it specifies the amount of jobs to keep.
+    * Default behavior is to keep the job in the failed set.
     */
   var removeOnComplete: js.UndefOr[Boolean | Double] = js.undefined
   /**
-    * A boolean which, if true, removes the job when it fails after all attempts
+    * A boolean which, if true, removes the job when it fails after all attempts.
+    * When a number, it specifies the amount of jobs to keep.
     * Default behavior is to keep the job in the completed set.
     */
-  var removeOnFail: js.UndefOr[Boolean] = js.undefined
+  var removeOnFail: js.UndefOr[Boolean | Double] = js.undefined
   /**
     * Repeat job according to a cron specification
     */
@@ -70,7 +72,7 @@ object JobOptions {
     lifo: js.UndefOr[Boolean] = js.undefined,
     priority: Int | Double = null,
     removeOnComplete: Boolean | Double = null,
-    removeOnFail: js.UndefOr[Boolean] = js.undefined,
+    removeOnFail: Boolean | Double = null,
     repeat: CronRepeatOptions | EveryRepeatOptions = null,
     stackTraceLimit: Int | Double = null,
     timeout: Int | Double = null
@@ -83,7 +85,7 @@ object JobOptions {
     if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (removeOnComplete != null) __obj.updateDynamic("removeOnComplete")(removeOnComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeOnFail)) __obj.updateDynamic("removeOnFail")(removeOnFail)
+    if (removeOnFail != null) __obj.updateDynamic("removeOnFail")(removeOnFail.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (stackTraceLimit != null) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

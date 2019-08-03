@@ -1,6 +1,5 @@
 package typings.slate.slateMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.immutableMod.List
 import typings.slate.slateStrings.document
 import scala.scalajs.js
@@ -9,11 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("slate", "Document")
 @js.native
-class Document[DataMap] () extends BaseNode[DataMap] {
-  @JSName("nodes")
-  var nodes_Document: List[Block] = js.native
+class Document ()
+  extends BaseNode
+     with Node {
   @JSName("object")
   var object_Document: document = js.native
+  def toJS(): DocumentJSON = js.native
   def toJSON(): DocumentJSON = js.native
 }
 
@@ -21,14 +21,17 @@ class Document[DataMap] () extends BaseNode[DataMap] {
 @JSImport("slate", "Document")
 @js.native
 object Document extends js.Object {
-  def create(properties: js.Array[Node]): Document[StringDictionary[_]] = js.native
-  def create(properties: List[Node]): Document[StringDictionary[_]] = js.native
-  def create(properties: Document[StringDictionary[_]]): Document[StringDictionary[_]] = js.native
-  def create(properties: DocumentProperties): Document[StringDictionary[_]] = js.native
-  def fromJS(properties: Document[StringDictionary[_]]): Document[StringDictionary[_]] = js.native
-  def fromJS(properties: DocumentJSON): Document[StringDictionary[_]] = js.native
-  def fromJSON(properties: Document[StringDictionary[_]]): Document[StringDictionary[_]] = js.native
-  def fromJSON(properties: DocumentJSON): Document[StringDictionary[_]] = js.native
-  def isDocument(maybeDocument: js.Any): /* is slate.slate.Document<{[key: string] : any}> */ Boolean = js.native
+  def create(properties: js.Array[NodeJSON | NodeProperties | Node]): Document = js.native
+  def create(properties: List[NodeJSON | NodeProperties | Node]): Document = js.native
+  def create(properties: Document): Document = js.native
+  def create(properties: DocumentJSON): Document = js.native
+  def create(properties: DocumentProperties): Document = js.native
+  def fromJS(properties: Document): Document = js.native
+  def fromJS(properties: DocumentJSON): Document = js.native
+  def fromJS(properties: DocumentProperties): Document = js.native
+  def fromJSON(properties: Document): Document = js.native
+  def fromJSON(properties: DocumentJSON): Document = js.native
+  def fromJSON(properties: DocumentProperties): Document = js.native
+  def isDocument(maybeDocument: js.Any): /* is slate.slate.Document */ Boolean = js.native
 }
 

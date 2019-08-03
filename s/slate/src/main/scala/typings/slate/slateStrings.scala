@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 object slateStrings {
   @js.native
+  sealed trait add_annotation extends js.Object
+  
+  @js.native
   sealed trait add_mark extends js.Object
+  
+  @js.native
+  sealed trait annotation extends js.Object
   
   @js.native
   sealed trait block extends js.Object
@@ -97,6 +103,9 @@ object slateStrings {
   sealed trait node_type_invalid extends ErrorCode
   
   @js.native
+  sealed trait operation extends js.Object
+  
+  @js.native
   sealed trait parent_object_invalid extends ErrorCode
   
   @js.native
@@ -115,6 +124,9 @@ object slateStrings {
   sealed trait range extends js.Object
   
   @js.native
+  sealed trait remove_annotation extends js.Object
+  
+  @js.native
   sealed trait remove_mark extends js.Object
   
   @js.native
@@ -125,6 +137,9 @@ object slateStrings {
   
   @js.native
   sealed trait selection extends js.Object
+  
+  @js.native
+  sealed trait set_annotation extends js.Object
   
   @js.native
   sealed trait set_mark extends js.Object
@@ -148,7 +163,11 @@ object slateStrings {
   sealed trait value extends js.Object
   
   @scala.inline
+  def add_annotation: add_annotation = "add_annotation".asInstanceOf[add_annotation]
+  @scala.inline
   def add_mark: add_mark = "add_mark".asInstanceOf[add_mark]
+  @scala.inline
+  def annotation: annotation = "annotation".asInstanceOf[annotation]
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
@@ -208,6 +227,8 @@ object slateStrings {
   @scala.inline
   def node_type_invalid: node_type_invalid = "node_type_invalid".asInstanceOf[node_type_invalid]
   @scala.inline
+  def operation: operation = "operation".asInstanceOf[operation]
+  @scala.inline
   def parent_object_invalid: parent_object_invalid = "parent_object_invalid".asInstanceOf[parent_object_invalid]
   @scala.inline
   def parent_type_invalid: parent_type_invalid = "parent_type_invalid".asInstanceOf[parent_type_invalid]
@@ -220,6 +241,8 @@ object slateStrings {
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
+  def remove_annotation: remove_annotation = "remove_annotation".asInstanceOf[remove_annotation]
+  @scala.inline
   def remove_mark: remove_mark = "remove_mark".asInstanceOf[remove_mark]
   @scala.inline
   def remove_node: remove_node = "remove_node".asInstanceOf[remove_node]
@@ -227,6 +250,8 @@ object slateStrings {
   def remove_text: remove_text = "remove_text".asInstanceOf[remove_text]
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
+  def set_annotation: set_annotation = "set_annotation".asInstanceOf[set_annotation]
   @scala.inline
   def set_mark: set_mark = "set_mark".asInstanceOf[set_mark]
   @scala.inline

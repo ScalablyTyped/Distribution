@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "styled-react-modal"
-version := "1.2-dt-20190506Z-6f487a"
+version := "1.2-dt-20190506Z-46fa0e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190717Z-40a360",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190802Z-48f8ad",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190710Z-b7a22e")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190710Z-c0a6e0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

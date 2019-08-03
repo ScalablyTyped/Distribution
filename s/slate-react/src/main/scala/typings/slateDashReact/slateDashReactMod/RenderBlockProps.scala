@@ -24,7 +24,7 @@ object RenderBlockProps {
     parent: Node,
     readOnly: Boolean
   ): RenderBlockProps = {
-    val __obj = js.Dynamic.literal(attributes = attributes, children = children.asInstanceOf[js.Any], editor = editor, isFocused = isFocused, isSelected = isSelected, key = key, node = node, parent = parent.asInstanceOf[js.Any], readOnly = readOnly)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children.asInstanceOf[js.Any], editor = editor, isFocused = isFocused, isSelected = isSelected, key = key, node = node, parent = parent, readOnly = readOnly)
   
     __obj.asInstanceOf[RenderBlockProps]
   }

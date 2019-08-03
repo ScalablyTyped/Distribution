@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__fontawesome-common-types
 
-Typings are for version 0.2.20
+Typings are for version 0.2.21
 
 ## Library description:
 The iconic font, CSS, and SVG framework

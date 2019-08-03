@@ -1,6 +1,7 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.immutable.immutableMod.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,9 @@ class Data ()
 @JSImport("slate", "Data")
 @js.native
 object Data extends js.Object {
-  def create(properties: js.Object): Data = js.native
-  def fromJS(`object`: js.Object): Data = js.native
-  def fromJSON(`object`: js.Object): Data = js.native
+  def create(properties: StringDictionary[js.Any]): Data = js.native
+  def create(properties: Map[String, _]): Data = js.native
+  def fromJS(`object`: StringDictionary[js.Any]): Data = js.native
+  def fromJSON(`object`: StringDictionary[js.Any]): Data = js.native
 }
 

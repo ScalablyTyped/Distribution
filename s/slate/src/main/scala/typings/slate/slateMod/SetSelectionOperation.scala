@@ -5,24 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SetSelectionOperation extends Operation {
-  var data: Data
-  var newProperties: SelectionProperties
-  var properties: SelectionProperties
-  var `type`: set_selection
-}
-
-object SetSelectionOperation {
-  @scala.inline
-  def apply(
-    data: Data,
-    newProperties: SelectionProperties,
-    properties: SelectionProperties,
-    `type`: set_selection
-  ): SetSelectionOperation = {
-    val __obj = js.Dynamic.literal(data = data, newProperties = newProperties, properties = properties)
-    __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[SetSelectionOperation]
-  }
+@JSImport("slate", "SetSelectionOperation")
+@js.native
+class SetSelectionOperation ()
+  extends BaseOperation
+     with Operation {
+  var data: Data = js.native
+  var newProperties: SelectionProperties = js.native
+  var properties: SelectionProperties = js.native
+  @JSName("type")
+  var type_SetSelectionOperation: set_selection = js.native
 }
 

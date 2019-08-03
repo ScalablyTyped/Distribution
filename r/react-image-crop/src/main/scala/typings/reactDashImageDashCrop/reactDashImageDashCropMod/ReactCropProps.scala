@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait ReactCropProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
+  var circularCrop: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var crop: js.UndefOr[Crop] = js.undefined
   var crossorigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
@@ -32,6 +33,7 @@ trait ReactCropProps extends js.Object {
   var onImageLoaded: js.UndefOr[js.Function1[/* target */ HTMLImageElement, Unit]] = js.undefined
   var renderComponent: js.UndefOr[ReactNode] = js.undefined
   var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, ReactNode]] = js.undefined
+  var ruleOfThirds: js.UndefOr[Boolean] = js.undefined
   var src: String
   var style: js.UndefOr[CSSProperties] = js.undefined
   def onChange(crop: Crop, percentCrop: PercentCrop): Unit
@@ -43,6 +45,7 @@ object ReactCropProps {
     onChange: (Crop, PercentCrop) => Unit,
     src: String,
     children: ReactNode = null,
+    circularCrop: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     crop: Crop = null,
     crossorigin: anonymous | `use-credentials` = null,
@@ -62,10 +65,12 @@ object ReactCropProps {
     onImageLoaded: /* target */ HTMLImageElement => Unit = null,
     renderComponent: ReactNode = null,
     renderSelectionAddon: /* state */ js.Any => ReactNode = null,
+    ruleOfThirds: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): ReactCropProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(circularCrop)) __obj.updateDynamic("circularCrop")(circularCrop)
     if (className != null) __obj.updateDynamic("className")(className)
     if (crop != null) __obj.updateDynamic("crop")(crop)
     if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
@@ -85,6 +90,7 @@ object ReactCropProps {
     if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(js.Any.fromFunction1(onImageLoaded))
     if (renderComponent != null) __obj.updateDynamic("renderComponent")(renderComponent.asInstanceOf[js.Any])
     if (renderSelectionAddon != null) __obj.updateDynamic("renderSelectionAddon")(js.Any.fromFunction1(renderSelectionAddon))
+    if (!js.isUndefined(ruleOfThirds)) __obj.updateDynamic("ruleOfThirds")(ruleOfThirds)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ReactCropProps]
   }

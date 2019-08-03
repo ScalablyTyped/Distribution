@@ -29,7 +29,7 @@ object DatePickerProps {
   def apply(
     children: ReactNode = null,
     date: js.Any = null,
-    defaultDate: js.Any = null,
+    defaultDate: Date = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dismissText: ReactNode = null,
     extra: String = null,

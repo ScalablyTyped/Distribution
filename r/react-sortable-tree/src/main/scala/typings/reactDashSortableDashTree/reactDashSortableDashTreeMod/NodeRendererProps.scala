@@ -3,6 +3,8 @@ package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.reactDashSortableDashTree.NumberOrStringArray
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +29,7 @@ trait NodeRendererProps extends js.Object {
   var node: TreeItem
   var parentNode: js.UndefOr[TreeItem] = js.undefined
   var path: NumberOrStringArray
+  var rowDirection: js.UndefOr[ltr | rtl] = js.undefined
   var scaffoldBlockPxWidth: Double
   var startDrag: js.Any
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -66,6 +69,7 @@ object NodeRendererProps {
     draggedNode: TreeItem = null,
     icons: js.Array[Element] = null,
     parentNode: TreeItem = null,
+    rowDirection: ltr | rtl = null,
     style: CSSProperties = null,
     subtitle: /* data */ NodeData => Element = null,
     swapDepth: Int | Double = null,
@@ -81,6 +85,7 @@ object NodeRendererProps {
     if (draggedNode != null) __obj.updateDynamic("draggedNode")(draggedNode)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
+    if (rowDirection != null) __obj.updateDynamic("rowDirection")(rowDirection.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (subtitle != null) __obj.updateDynamic("subtitle")(js.Any.fromFunction1(subtitle))
     if (swapDepth != null) __obj.updateDynamic("swapDepth")(swapDepth.asInstanceOf[js.Any])

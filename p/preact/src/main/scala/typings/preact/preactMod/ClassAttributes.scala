@@ -14,7 +14,7 @@ object ClassAttributes {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassAttributes[T]]
   }
 }

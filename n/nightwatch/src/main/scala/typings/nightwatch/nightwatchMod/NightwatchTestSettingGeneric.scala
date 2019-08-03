@@ -9,11 +9,11 @@ trait NightwatchTestSettingGeneric extends js.Object {
     * This field will be used together with username to compute the Authorization header.
     * Like username, the value can be also an environment variable: "access_key" : "${SAUCE_ACCESS_KEY}"
     */
-  var access_key: String
+  var access_key: js.UndefOr[String] = js.undefined
   /**
     * Same as Selenium settings cli_args. You can override the global cli_args on a per-environment basis.
     */
-  var cli_args: js.Any
+  var cli_args: js.UndefOr[js.Any] = js.undefined
   /**
     * An object which will be passed to the Selenium WebDriver when a new session will be created. You can specify browser name for instance along with other capabilities.
     * Example:
@@ -23,96 +23,113 @@ trait NightwatchTestSettingGeneric extends js.Object {
     * }
     * You can view the complete list of capabilities https://code.google.com/p/selenium/wiki/DesiredCapabilities.
     */
-  var desiredCapabilities: NightwatchDesiredCapabilities
+  var desiredCapabilities: js.UndefOr[NightwatchDesiredCapabilities] = js.undefined
   /**
     * Use to disable colored output in the terminal.
     */
-  var disable_colors: Boolean
+  var disable_colors: js.UndefOr[Boolean] = js.undefined
   /**
     * End the session automatically when the test is being terminated, usually after a failed assertion.
     */
-  var end_session_on_fail: Boolean
+  var end_session_on_fail: js.UndefOr[Boolean] = js.undefined
   /**
     * An array of folders or file patterns to be skipped (relative to the main source folder).
     * Example: "exclude" : ["excluded-folder"] or: "exclude" : ["test-folder/ *-smoke.js"]
     */
-  var exclude: js.Array[String]
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Folder or file pattern to be used when loading the tests. Files that don't match this patter will be ignored.
     * Example: "filter" : "tests/ *-smoke.js"
     */
-  var filter: String
+  var filter: js.UndefOr[String] = js.undefined
   /**
     * An object which will be made available within the test and can be overwritten per environment. Example:"globals" : {  "myGlobal" : "some_global" }
     */
-  var globals: NightwatchGlobals
+  var globals: js.UndefOr[NightwatchGlobals] = js.undefined
   /**
     * A url which can be used later in the tests as the main url to load. Can be useful if your tests will run on different environments, each one with a different url.
     */
-  var launch_url: String
+  var launch_url: js.UndefOr[String] = js.undefined
   /**
     * Do not show the Base64 image data in the (verbose) log when taking screenshots.
     */
-  var log_screenshot_data: Boolean
+  var log_screenshot_data: js.UndefOr[Boolean] = js.undefined
   /**
     * Use to disable terminal output completely.
     */
-  var output: Boolean
+  var output: js.UndefOr[Boolean] = js.undefined
   /**
     * Proxy requests to the selenium server. http, https, socks(v5), socks5, sock4, and pac are accepted. Uses node-proxy-agent. Example: http://user:pass@host:port
     */
-  var proxy: String
+  var proxy: js.UndefOr[String] = js.undefined
   /**
     * The hostname/IP on which the selenium server is accepting connections.
     */
-  var selenium_host: String
+  var selenium_host: js.UndefOr[String] = js.undefined
   /**
     * The port number on which the selenium server is accepting connections.
     */
-  var selenium_port: Double
+  var selenium_port: js.UndefOr[Double] = js.undefined
   /**
     * Whether to show extended Selenium command logs.
     */
-  var silent: Boolean
+  var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * Skip the rest of testcases (if any) when one testcase fails..
     */
-  var skip_testcases_on_fail: Boolean
+  var skip_testcases_on_fail: js.UndefOr[Boolean] = js.undefined
   /**
     * Use xpath as the default locator strategy
     */
-  var use_xpath: Boolean
+  var use_xpath: js.UndefOr[Boolean] = js.undefined
   /**
     * In case the selenium server requires credentials this username will be used to compute the Authorization header.
     * The value can be also an environment variable, in which case it will look like this: "username" : "${SAUCE_USERNAME}"
     */
-  var username: String
+  var username: js.UndefOr[String] = js.undefined
 }
 
 object NightwatchTestSettingGeneric {
   @scala.inline
   def apply(
-    access_key: String,
-    cli_args: js.Any,
-    desiredCapabilities: NightwatchDesiredCapabilities,
-    disable_colors: Boolean,
-    end_session_on_fail: Boolean,
-    exclude: js.Array[String],
-    filter: String,
-    globals: NightwatchGlobals,
-    launch_url: String,
-    log_screenshot_data: Boolean,
-    output: Boolean,
-    proxy: String,
-    selenium_host: String,
-    selenium_port: Double,
-    silent: Boolean,
-    skip_testcases_on_fail: Boolean,
-    use_xpath: Boolean,
-    username: String
+    access_key: String = null,
+    cli_args: js.Any = null,
+    desiredCapabilities: NightwatchDesiredCapabilities = null,
+    disable_colors: js.UndefOr[Boolean] = js.undefined,
+    end_session_on_fail: js.UndefOr[Boolean] = js.undefined,
+    exclude: js.Array[String] = null,
+    filter: String = null,
+    globals: NightwatchGlobals = null,
+    launch_url: String = null,
+    log_screenshot_data: js.UndefOr[Boolean] = js.undefined,
+    output: js.UndefOr[Boolean] = js.undefined,
+    proxy: String = null,
+    selenium_host: String = null,
+    selenium_port: Int | Double = null,
+    silent: js.UndefOr[Boolean] = js.undefined,
+    skip_testcases_on_fail: js.UndefOr[Boolean] = js.undefined,
+    use_xpath: js.UndefOr[Boolean] = js.undefined,
+    username: String = null
   ): NightwatchTestSettingGeneric = {
-    val __obj = js.Dynamic.literal(access_key = access_key, cli_args = cli_args, desiredCapabilities = desiredCapabilities, disable_colors = disable_colors, end_session_on_fail = end_session_on_fail, exclude = exclude, filter = filter, globals = globals, launch_url = launch_url, log_screenshot_data = log_screenshot_data, output = output, proxy = proxy, selenium_host = selenium_host, selenium_port = selenium_port, silent = silent, skip_testcases_on_fail = skip_testcases_on_fail, use_xpath = use_xpath, username = username)
-  
+    val __obj = js.Dynamic.literal()
+    if (access_key != null) __obj.updateDynamic("access_key")(access_key)
+    if (cli_args != null) __obj.updateDynamic("cli_args")(cli_args)
+    if (desiredCapabilities != null) __obj.updateDynamic("desiredCapabilities")(desiredCapabilities)
+    if (!js.isUndefined(disable_colors)) __obj.updateDynamic("disable_colors")(disable_colors)
+    if (!js.isUndefined(end_session_on_fail)) __obj.updateDynamic("end_session_on_fail")(end_session_on_fail)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (launch_url != null) __obj.updateDynamic("launch_url")(launch_url)
+    if (!js.isUndefined(log_screenshot_data)) __obj.updateDynamic("log_screenshot_data")(log_screenshot_data)
+    if (!js.isUndefined(output)) __obj.updateDynamic("output")(output)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (selenium_host != null) __obj.updateDynamic("selenium_host")(selenium_host)
+    if (selenium_port != null) __obj.updateDynamic("selenium_port")(selenium_port.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(skip_testcases_on_fail)) __obj.updateDynamic("skip_testcases_on_fail")(skip_testcases_on_fail)
+    if (!js.isUndefined(use_xpath)) __obj.updateDynamic("use_xpath")(use_xpath)
+    if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[NightwatchTestSettingGeneric]
   }
 }

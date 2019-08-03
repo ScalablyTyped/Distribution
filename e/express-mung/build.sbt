@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-mung"
-version := "0.5-dt-20190722Z-14bfd6"
+version := "0.5-dt-20190802Z-14bfd6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

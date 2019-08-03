@@ -3303,6 +3303,7 @@
 | 0.65803905254398 | [imap-simple](./i/imap-simple) | Wrapper over node-imap, providing a simpler api fo
 | 0.6580290793000219 | [react-sortable-hoc](./r/react-sortable-hoc) | Set of higher-order components to turn any list in
 | 0.657982800074286 | [cryptex](./c/cryptex) | Secure secret storage and cryptographic key retrie
+| 0.6579438265880324 | [vmap](./v/vmap) | Javascript VMAP Parser
 | 0.657919882723115 | [npm-registry-package-info](./n/npm-registry-package-info) | Get package info for one or more packages.
 | 0.6579106065865954 | [express-frappe](./e/express-frappe) | Express Frappe 🥤 - build express application anot
 | 0.6578824127580878 | [progressbar](./p/progressbar) | A nice wrapper around 
@@ -3700,6 +3701,7 @@
 | 0.6362266779647934 | [pi-spi](./p/pi-spi) | Simple async SPI library for Raspberry Pi
 | 0.636208968750732 | [intrinsic-scale](./i/intrinsic-scale) | Replicate background-size: cover/contain (scale+cr
 | 0.6361614322862086 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
+| 0.6361401627088612 | [express-form-data](./e/express-form-data) | Module to parse multipart/form data
 | 0.6358682933708665 | [send](./s/send) | Better streaming static file server with Range and
 | 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
@@ -3917,6 +3919,7 @@
 | 0.6184688702752351 | [nwmatcher](./n/nwmatcher) | A CSS3-compliant JavaScript selector engine.
 | 0.618429114862449 | [merge-anything](./m/merge-anything) | Merge objects & other types recursively. A simple 
 | 0.6184064369804623 | [globalize-compiler](./g/globalize-compiler) | Globalize.js runtime compiler for your formatters 
+| 0.6183686947710476 | [dexie-batch](./d/dexie-batch) | Fetch DB entries in batches to improve performance
 | 0.6183541717946486 | [minimatch](./m/minimatch) | a glob matcher in javascript
 | 0.6183512581468933 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
 | 0.6183506804449288 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p
@@ -3976,6 +3979,7 @@
 | 0.612677775448126 | [phosphor__application](./p/phosphor__application) | PhosphorJS - Pluggable Application
 | 0.6125351878715606 | [urbanairship-cordova](./u/urbanairship-cordova) | Urban Airship Cordova plugin
 | 0.6123022056819489 | [merge-env](./m/merge-env) | An object merging function that has special suppor
+| 0.6121910770697394 | [jsspec__jsspec](./j/jsspec__jsspec) | JSSpec
 | 0.6121876324208604 | [pg-ears](./p/pg-ears) | Resilient Postgres listen client
 | 0.61217631922648 | [forge-apis](./f/forge-apis) | The Forge Platform contains an expanding collectio
 | 0.6119782687804061 | [usb](./u/usb) | Library to access USB devices
@@ -4888,6 +4892,7 @@
 | 0.48314903361483563 | [bdfjs](./b/bdfjs) | Simple library for reading Adobe Glyph Bitmap Dist
 | 0.4828212433919823 | [socket_dot_io-redis](./s/socket_dot_io-redis) | -
 | 0.482755656347444 | [parity-pmd](./p/parity-pmd) | Parity's native market data protocol
+| 0.4826823896287287 | [react-native-pdf-lib](./r/react-native-pdf-lib) | A react native library for handling generating PDF
 | 0.4822046155813262 | [nvd3](./n/nvd3) | A reusable charting library written in d3.js
 | 0.48210004304945786 | [autosize](./a/autosize) | Autosize is a small, stand-alone script to automat
 | 0.48201111979750644 | [cpx](./c/cpx) | Copy file globs, watching for changes.
@@ -6355,6 +6360,7 @@
 | 0.2553919336425226 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token
 | 0.25516429868928175 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s
 | 0.2551622585511155 | [jupyterlab__coreutils](./j/jupyterlab__coreutils) | JupyterLab - Core Utilities
+| 0.25502618549247497 | [wx-server-sdk](./w/wx-server-sdk) | mini program cloud server sdk
 | 0.25444269566645605 | [activestorage](./a/activestorage) | Attach cloud and local files in Rails applications
 | 0.25430490049265275 | [angular-pdfjs-viewer](./a/angular-pdfjs-viewer) | Embed PDF.js viewer into your angular application
 | 0.254296527397763 | [pleasejs](./p/pleasejs) | JS library to generate random pleasing colors/colo

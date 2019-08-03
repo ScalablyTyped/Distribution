@@ -1,7 +1,7 @@
 
 # Scala.js typings for slate
 
-Typings are for version 0.44
+Typings are for version 0.47
 
 ## Library description:
 A completely customizable framework for building rich text editors.

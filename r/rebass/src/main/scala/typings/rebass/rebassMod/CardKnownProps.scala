@@ -43,7 +43,6 @@ import typings.styledDashSystem.styledDashSystemMod.BackgroundRepeatProps
 import typings.styledDashSystem.styledDashSystemMod.BackgroundSizeProps
 import typings.styledDashSystem.styledDashSystemMod.BordersProps
 import typings.styledDashSystem.styledDashSystemMod.BoxShadowProps
-import typings.styledDashSystem.styledDashSystemMod.OpacityProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
 import scala.scalajs.js
@@ -57,8 +56,7 @@ trait CardKnownProps
      with BackgroundImageProps
      with BackgroundSizeProps[TLengthStyledSystem]
      with BackgroundPositionProps[TLengthStyledSystem]
-     with BackgroundRepeatProps
-     with OpacityProps {
+     with BackgroundRepeatProps {
   var variant: js.UndefOr[ResponsiveValue[String]] = js.undefined
 }
 

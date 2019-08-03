@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "powerapps-component-framework"
-version := "1.2-dt-20190730Z-0190c4"
+version := "1.2-dt-20190802Z-c4540c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

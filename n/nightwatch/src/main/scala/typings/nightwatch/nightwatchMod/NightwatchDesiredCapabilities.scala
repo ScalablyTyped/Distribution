@@ -23,6 +23,10 @@ trait NightwatchDesiredCapabilities extends js.Object {
     */
   var browserName: js.UndefOr[String] = js.undefined
   /**
+    * This is a list of all the Chrome-specific desired capabilities.
+    */
+  var chromeOptions: js.UndefOr[ChromeOptions] = js.undefined
+  /**
     * Whether the session supports CSS selectors when searching for elements.
     */
   var cssSelectorsEnabled: js.UndefOr[Boolean] = js.undefined
@@ -38,7 +42,7 @@ trait NightwatchDesiredCapabilities extends js.Object {
   /**
     * Whether the session can interact with modal popups, such as window.alert and window.confirm.
     */
-  var handlesAlerts: Boolean
+  var handlesAlerts: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether the session supports executing user supplied JavaScript in the context of the current page (only on HTMLUnitDriver).
     */
@@ -88,14 +92,15 @@ trait NightwatchDesiredCapabilities extends js.Object {
 object NightwatchDesiredCapabilities {
   @scala.inline
   def apply(
-    handlesAlerts: Boolean,
     acceptSslCerts: js.UndefOr[Boolean] = js.undefined,
     applicationCacheEnabled: js.UndefOr[Boolean] = js.undefined,
     browserConnectionEnabled: js.UndefOr[Boolean] = js.undefined,
     browserName: String = null,
+    chromeOptions: ChromeOptions = null,
     cssSelectorsEnabled: js.UndefOr[Boolean] = js.undefined,
     databaseEnabled: js.UndefOr[Boolean] = js.undefined,
     elementScrollBehaviour: Int | Double = null,
+    handlesAlerts: js.UndefOr[Boolean] = js.undefined,
     javascriptEnabled: js.UndefOr[Boolean] = js.undefined,
     locationContextEnabled: js.UndefOr[Boolean] = js.undefined,
     loggingPrefs: Anon_Browser = null,
@@ -107,14 +112,16 @@ object NightwatchDesiredCapabilities {
     version: String = null,
     webStorageEnabled: js.UndefOr[Boolean] = js.undefined
   ): NightwatchDesiredCapabilities = {
-    val __obj = js.Dynamic.literal(handlesAlerts = handlesAlerts)
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(acceptSslCerts)) __obj.updateDynamic("acceptSslCerts")(acceptSslCerts)
     if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled)
     if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled)
     if (browserName != null) __obj.updateDynamic("browserName")(browserName)
+    if (chromeOptions != null) __obj.updateDynamic("chromeOptions")(chromeOptions)
     if (!js.isUndefined(cssSelectorsEnabled)) __obj.updateDynamic("cssSelectorsEnabled")(cssSelectorsEnabled)
     if (!js.isUndefined(databaseEnabled)) __obj.updateDynamic("databaseEnabled")(databaseEnabled)
     if (elementScrollBehaviour != null) __obj.updateDynamic("elementScrollBehaviour")(elementScrollBehaviour.asInstanceOf[js.Any])
+    if (!js.isUndefined(handlesAlerts)) __obj.updateDynamic("handlesAlerts")(handlesAlerts)
     if (!js.isUndefined(javascriptEnabled)) __obj.updateDynamic("javascriptEnabled")(javascriptEnabled)
     if (!js.isUndefined(locationContextEnabled)) __obj.updateDynamic("locationContextEnabled")(locationContextEnabled)
     if (loggingPrefs != null) __obj.updateDynamic("loggingPrefs")(loggingPrefs)

@@ -99,6 +99,12 @@ class Session protected () extends js.Object {
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  def sendMessage(
+    namespace: String,
+    message: js.Object,
+    successCallback: js.Function,
+    errorCallback: js.Function1[/* error */ Error, Unit]
+  ): Unit = js.native
   /**
     * @param {boolean} muted
     * @param {function()} successCallback

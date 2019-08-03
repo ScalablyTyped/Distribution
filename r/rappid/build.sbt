@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rappid"
-version := "1.5-dt-20190619Z-296484"
+version := "1.5-dt-20190619Z-2fba21"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "backbone" % "1.4-dt-20190619Z-520270",
-  "org.scalablytyped" %%% "jointjs" % "3.0.3-0d4745",
+  "org.scalablytyped" %%% "jointjs" % "3.0.4-0d4745",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190711Z-947f04",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b6c899",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 trait Rules extends js.Object {
   var data: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, Boolean]]] = js.undefined
   var first: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
+  var isAtomic: js.UndefOr[Boolean] = js.undefined
   var isVoid: js.UndefOr[Boolean] = js.undefined
   var last: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
   var marks: js.UndefOr[js.Array[Anon_Type]] = js.undefined
@@ -27,6 +28,7 @@ object Rules {
   def apply(
     data: StringDictionary[js.Function1[/* v */ js.Any, Boolean]] = null,
     first: ObjectAndType | js.Array[ObjectAndType] = null,
+    isAtomic: js.UndefOr[Boolean] = js.undefined,
     isVoid: js.UndefOr[Boolean] = js.undefined,
     last: ObjectAndType | js.Array[ObjectAndType] = null,
     marks: js.Array[Anon_Type] = null,
@@ -40,6 +42,7 @@ object Rules {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAtomic)) __obj.updateDynamic("isAtomic")(isAtomic)
     if (!js.isUndefined(isVoid)) __obj.updateDynamic("isVoid")(isVoid)
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks)

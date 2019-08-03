@@ -4281,6 +4281,7 @@
 | 9 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
 | 9 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron
 | 9 | [express-cluster](./e/express-cluster) | Simple drop-in for express apps to spawn multiple 
+| 9 | [express-form-data](./e/express-form-data) | Module to parse multipart/form data
 | 9 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
 | 9 | [firebase__logger](./f/firebase__logger) | A logger package for use in the Firebase JS SDK
 | 9 | [fluxible-addons-react](./f/fluxible-addons-react) | Fluxible addons for use with React
@@ -5404,6 +5405,7 @@
 | 3 | [wordpress__wordcount](./w/wordpress__wordcount) | WordPress word count utility.
 | 3 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 3 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
+| 3 | [wx-server-sdk](./w/wx-server-sdk) | mini program cloud server sdk
 | 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
 | 3 | [yesql](./y/yesql) | Read named SQL statements from .sql files. Also na
 | 3 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
@@ -6324,6 +6326,7 @@
 | 0 | [decorum](./d/decorum) | Vanilla, lightweight, simple JavaScript decorators
 | 0 | [deep-equal-in-any-order](./d/deep-equal-in-any-order) | chai plugin to match objects and arrays deep equal
 | 0 | [detect-emoji-support](./d/detect-emoji-support) | Detect support for emoji character sets.
+| 0 | [dexie-batch](./d/dexie-batch) | Fetch DB entries in batches to improve performance
 | 0 | [di-lite](./d/di-lite) | A ultra light-weight dependency injection containe
 | 0 | [dir-walker-gen](./d/dir-walker-gen) | A javascript generator pattern for directlry listi
 | 0 | [dirname-regex](./d/dirname-regex) | Regular expression for matching the directory part
@@ -6472,6 +6475,7 @@
 | 0 | [jsoneditor-for-react](./j/jsoneditor-for-react) | React wrapper for josdejong/jsoneditor
 | 0 | [jsonwebtoken-promisified](./j/jsonwebtoken-promisified) | A thin wrapper that provides promisified methods f
 | 0 | [jsprintmanager](./j/jsprintmanager) | JSPrintManager Solution allows you to print RAW Pr
+| 0 | [jsspec__jsspec](./j/jsspec__jsspec) | JSSpec
 | 0 | [jsuite](./j/jsuite) | a tool suite of javascript.
 | 0 | [jsum](./j/jsum) | Consistent checksum calculation of JSON objects.
 | 0 | [jsx-chai](./j/jsx-chai) | JSX assertions for Chai using Algolia's react-elem
@@ -6660,6 +6664,7 @@
 | 0 | [react-native-honeywell-sc](./r/react-native-honeywell-scanner) | A barcode scanner for Honeywell handheld devices l
 | 0 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery
 | 0 | [react-native-modal-filter](./r/react-native-modal-filter-picker) | Cross-platform modal picker for React Native which
+| 0 | [react-native-pdf-lib](./r/react-native-pdf-lib) | A react native library for handling generating PDF
 | 0 | [react-native-percentage-c](./r/react-native-percentage-circle) | react native percentage circle and also be a progr
 | 0 | [react-native-read-more-te](./r/react-native-read-more-text) | Add a 'Read More' and optionally a 'Read Less' but
 | 0 | [react-native-referrer](./r/react-native-referrer) |  
@@ -6804,6 +6809,7 @@
 | 0 | [vexdb](./v/vexdb) | A simple tool for accessing the VexDB
 | 0 | [viewability-helper](./v/viewability-helper) | Lightweight cross-browser library that enables you
 | 0 | [viewporter](./v/viewporter) | Tools for working with all sorts of browser viewpo
+| 0 | [vmap](./v/vmap) | Javascript VMAP Parser
 | 0 | [voximplant-websdk](./v/voximplant-websdk) | VoxImplant Web SDK for embedding voice and video c
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices

@@ -1259,6 +1259,7 @@
 | [devexpress-web](./d/devexpress-web) | - | - |
 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation | browser, detect, identify, check, dev, devtools, developer, orientation, placement, docked |
 | [dexie](./d/dexie) | A Minimalistic Wrapper for IndexedDB | indexeddb, browser, database |
+| [dexie-batch](./d/dexie-batch) | Fetch DB entries in batches to improve performance | batch, bulk, dexie, fetch, get |
 | [df-visible](./d/df-visible) | - | - |
 | [dhtmlxscheduler](./d/dhtmlxscheduler) | - | - |
 | [di](./d/di) | Dependency Injection for Node.js. Heavily inspired | di, dependency, injection, injector |
@@ -1616,6 +1617,7 @@
 | [express-flash](./e/express-flash) | Flash Messages for your Express Application | express, flash, messages |
 | [express-flash-2](./e/express-flash-2) | Flash message middleware for express. | express, flash, messages |
 | [express-flash-notificatio](./e/express-flash-notification) | Express.js flash notifications that works with any | flash, flash message, flash notification, notification, express, hogan, mustache, logicless |
+| [express-form-data](./e/express-form-data) | Module to parse multipart/form data | express, form, data, multipart, multipart/form, json |
 | [express-formidable](./e/express-formidable) | An Express middleware of Formidable that just work | express, middleware, formidable |
 | [express-frappe](./e/express-frappe) | Express Frappe 🥤 - build express application anot | express, expressjs, typescript |
 | [express-graphql](./e/express-graphql) | Production ready GraphQL HTTP middleware. | express, restify, connect, http, graphql, middleware, api |
@@ -3129,6 +3131,7 @@
 | [jsrp](./j/jsrp) | JavaScript SRP implementation | srp |
 | [jss](./j/jss) | A lib for generating Style Sheets with JavaScript. | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
 | [jssha](./j/jssha) | jsSHA is a JavaScript implementation of the comple | SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE-128, SHAKE-256, SHAKE128, SHAKE256, SHA1, SHA224, SHA256, SHA384, SHA512, SHA-2, SHA2, SHA-3, SHA3, SHAKE, HMAC, hash |
+| [jsspec__jsspec](./j/jsspec__jsspec) | JSSpec | spec, test, jsspec |
 | [jstimezonedetect](./j/jstimezonedetect) | This script gives you the zone info key representi | time, timezone, tz, date |
 | [jstorage](./j/jstorage) | jStorage is a cross-browser key-value store databa | key |
 | [jstree](./j/jstree) | jQuery tree plugin | - |
@@ -5429,6 +5432,7 @@
 | [react-native-navbar](./r/react-native-navbar) | Simple customizable navbar component for react-nat | react-native, navbar |
 | [react-native-navigation](./r/react-native-navigation) | React Native Navigation - truly native navigation  | - |
 | [react-native-orientation](./r/react-native-orientation) | Listen to device orientation changes in React Nati | orientation, react-native, ios, android |
+| [react-native-pdf-lib](./r/react-native-pdf-lib) | A react native library for handling generating PDF | react-native |
 | [react-native-percentage-c](./r/react-native-percentage-circle) | react native percentage circle and also be a progr | percentage, circle, progress, bar |
 | [react-native-permissions](./r/react-native-permissions) | Check user permissions in React Native | react-native, react-permissions, permissions |
 | [react-native-photo-view](./r/react-native-photo-view) | Displaying photos with pinch-to-zoom | react-native, react-component, ios, android, gallery, lightbox, pinch, pinch-to-zoom, mobile |
@@ -6961,6 +6965,7 @@
 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV | - |
 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS | minify, beautify, pretty, print, pretty-print, json, xml, sql, css |
 | [vlq](./v/vlq) | Generate, and decode, base64 VLQ mappings for sour | - |
+| [vmap](./v/vmap) | Javascript VMAP Parser | vmap, ad, advertising, iab, in-stream, video |
 | [vnu-jar](./v/vnu-jar) | Provides the Nu Html Checker «vnu.jar» file | checker, html, lint, linter, jar, nu, validator, vnu, w3c |
 | [voca](./v/voca) | The ultimate JavaScript string library | string, sprintf, trim, truncate, pad, slugify, latinise, escape, word, wrap, case, strip |
 | [void-elements](./v/void-elements) | Array of "void elements" defined by the HTML speci | html, void, elements |
@@ -7201,6 +7206,7 @@
 | [wtfnode](./w/wtfnode) | Utility to help find out why Node isn't exiting | - |
 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators. | - |
 | [wx-js-sdk-dt](./w/wx-js-sdk-dt) | - | - |
+| [wx-server-sdk](./w/wx-server-sdk) | mini program cloud server sdk | - |
 | [x-editable](./x/x-editable) | In-place editing with Twitter Bootstrap, jQuery UI | - |
 | [x-ray-crawler](./x/x-ray-crawler) | x-ray's crawler | x-ray, crawler, request, scrape, scraper |
 | [x2js](./x/x2js) | Transforms between XML string and JavaScript objec | xml, convert, transform, mapping, map |

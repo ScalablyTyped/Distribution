@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.slate.slateMod.RangeJSON
   - typings.slate.slateMod.SelectionJSON
   - typings.slate.slateMod.DecorationJSON
+  - typings.slate.slateMod.AnnotationJSON
 */
 trait RangeTypeJSON extends js.Object
 

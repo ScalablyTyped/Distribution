@@ -16,7 +16,7 @@ object Anon_Children {
   def apply[RefType](children: ComponentChildren = null, ref: Ref[RefType] = null): Anon_Children[RefType] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children[RefType]]
   }
 }

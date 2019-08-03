@@ -13,6 +13,7 @@ class Treebuilder ()
 @JSImport("nodegit", "Treebuilder")
 @js.native
 object Treebuilder extends js.Object {
+  def create(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.treeDashBuilderMod.Treebuilder] = js.native
   def create(repo: typings.nodegit.repositoryMod.Repository, source: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.treeDashBuilderMod.Treebuilder] = js.native
 }
 

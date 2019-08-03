@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__icons"
-version := "7.1.1-b0cfa9"
+version := "7.1.1-4a11b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "7.2.0-888e06",
-  "org.scalablytyped" %%% "uifabric__styling" % "7.3.1-07fea9",
+  "org.scalablytyped" %%% "uifabric__styling" % "7.4.0-3081bd",
   "org.scalablytyped" %%% "uifabric__utilities" % "7.0.7-18744b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

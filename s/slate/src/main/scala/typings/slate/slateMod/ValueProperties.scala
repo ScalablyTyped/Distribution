@@ -1,30 +1,34 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.List
+import typings.immutable.immutableMod.Map
+import typings.slate.slateStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ValueProperties extends js.Object {
-  var data: js.UndefOr[Data] = js.undefined
-  var decorations: js.UndefOr[List[Decoration] | Null] = js.undefined
-  var document: js.UndefOr[Document[StringDictionary[_]]] = js.undefined
+  var annotations: js.UndefOr[(Map[String, Annotation]) | StringDictionary[AnnotationJSON]] = js.undefined
+  var data: js.UndefOr[Data | StringDictionary[js.Any]] = js.undefined
+  var document: js.UndefOr[Document] = js.undefined
+  var `object`: js.UndefOr[value] = js.undefined
   var selection: js.UndefOr[Selection] = js.undefined
 }
 
 object ValueProperties {
   @scala.inline
   def apply(
-    data: Data = null,
-    decorations: List[Decoration] = null,
-    document: Document[StringDictionary[_]] = null,
+    annotations: (Map[String, Annotation]) | StringDictionary[AnnotationJSON] = null,
+    data: Data | StringDictionary[js.Any] = null,
+    document: Document = null,
+    `object`: value = null,
     selection: Selection = null
   ): ValueProperties = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (decorations != null) __obj.updateDynamic("decorations")(decorations)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (document != null) __obj.updateDynamic("document")(document)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
     if (selection != null) __obj.updateDynamic("selection")(selection)
     __obj.asInstanceOf[ValueProperties]
   }

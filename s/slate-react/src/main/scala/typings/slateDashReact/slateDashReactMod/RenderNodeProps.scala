@@ -29,7 +29,7 @@ object RenderNodeProps {
     parent: Node,
     readOnly: Boolean
   ): RenderNodeProps = {
-    val __obj = js.Dynamic.literal(attributes = attributes, children = children.asInstanceOf[js.Any], editor = editor, isFocused = isFocused, isSelected = isSelected, key = key, parent = parent.asInstanceOf[js.Any], readOnly = readOnly)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children.asInstanceOf[js.Any], editor = editor, isFocused = isFocused, isSelected = isSelected, key = key, parent = parent, readOnly = readOnly)
   
     __obj.asInstanceOf[RenderNodeProps]
   }

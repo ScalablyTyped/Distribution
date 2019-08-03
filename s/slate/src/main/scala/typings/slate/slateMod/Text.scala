@@ -1,8 +1,11 @@
 package typings.slate.slateMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.OrderedSet
+import typings.immutable.immutableMod.Map
 import typings.immutable.immutableMod.Set
+import typings.slate.Anon_PreserveKeys
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,57 +13,70 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("slate", "Text")
 @js.native
-class Text () extends _Node {
+class Text () extends Node {
   var key: String = js.native
   var `object`: typings.slate.slateStrings.text = js.native
   val text: String = js.native
-  def addMark(index: Double, length: Double, mark: Mark): Text = js.native
-  def addMarks(index: Double, lenght: Double, marks: Set[Mark]): Text = js.native
-  def getActiveMarks(): Set[Mark] = js.native
-  def getActiveMarksBetweenOffsets(startOffset: Double, endOffset: Double): Set[Mark] = js.native
-  def getFirstText(): Text = js.native
-  def getKeysToPathsTable(): js.Object = js.native
-  def getLastText(): Text = js.native
-  def getLeaves(): List[Leaf] = js.native
-  def getLeaves(decorations: js.Array[Range]): List[Leaf] = js.native
-  def getMarks(): OrderedSet[Mark] = js.native
-  def getMarksAsArray(): js.Array[Mark] = js.native
-  def getMarksAtIndex(index: Double): OrderedSet[Mark] = js.native
-  def getMarksBetweenOffsets(startOffset: Double, endOffset: Double): Set[Mark] = js.native
-  def getNode(key: String): Node | Null = js.native
-  def getPath(key: String): Path = js.native
-  def getPath(key: Path): Path = js.native
-  def getString(): String = js.native
+  def addMark(mark: String): Text = js.native
+  def addMark(mark: Mark): Text = js.native
+  def addMark(mark: MarkJSON): Text = js.native
+  def addMark(mark: MarkProperties): Text = js.native
+  def addMarks(marks: js.Array[MarkProperties | MarkJSON | Mark | String]): Text = js.native
+  def addMarks(marks: Set[MarkProperties | MarkJSON | Mark | String]): Text = js.native
+  def getFirstText(): Text | Null = js.native
+  def getKeysToPathsTable(): StringDictionary[js.Array[Double]] = js.native
+  def getLastText(): Text | Null = js.native
+  def getLeaves(annotations: Map[String, Annotation]): List[Leaf] = js.native
+  def getLeaves(annotations: Map[String, Annotation], decorations: js.Array[Decoration]): List[Leaf] = js.native
+  def getLeaves(annotations: Map[String, Annotation], decorations: List[Decoration]): List[Leaf] = js.native
+  def getNode(path: Path): Node | Null = js.native
+  def getPath(key: String): List[Double] | Null = js.native
+  def getPath(key: List[Double]): List[Double] | Null = js.native
+  def getPath(key: Node): List[Double] | Null = js.native
   def getText(): String = js.native
-  def hasNode(key: String): Boolean = js.native
-  def insertText(offset: Double, text: String): Text = js.native
-  def insertText(offset: Double, text: String, marks: Set[Mark]): Text = js.native
-  def mergeText(text: Text): Text = js.native
+  def hasNode(path: Path): Boolean = js.native
+  def insertText(index: Double, string: String): Text = js.native
+  def mergeText(other: Text): Text = js.native
+  def normalize(editor: Editor): js.Function0[Unit] = js.native
   def regenerateKey(): Text = js.native
-  def removeMark(index: Double, length: Mark, mark: Mark): Text = js.native
-  def removeText(start: Double, length: Double): Text = js.native
-  def resolvePath(path: Path, index: Double): List[String] = js.native
-  def searchLeafAtOffset(offset: Double): LeafAndOffset = js.native
-  def setLeaves(leaves: List[Leaf]): Text = js.native
-  def splitText(offset: Double): js.Array[Text] = js.native
+  def removeMark(mark: String): Text = js.native
+  def removeMark(mark: Mark): Text = js.native
+  def removeMark(mark: MarkJSON): Text = js.native
+  def removeMark(mark: MarkProperties): Text = js.native
+  def removeText(index: Double, length: Double): Text = js.native
+  def resolvePath(path: Path): List[Double] = js.native
+  def resolvePath(path: Path, index: Double): List[Double] = js.native
+  def setMark(properties: String, newProperties: MarkProperties): Text = js.native
+  def setMark(properties: MarkJSON, newProperties: MarkProperties): Text = js.native
+  def setMark(properties: MarkProperties, newProperties: MarkProperties): Text = js.native
+  def setMark(properties: Mark, newProperties: MarkProperties): Text = js.native
+  def splitText(index: Double): js.Array[Text] = js.native
+  def toJS(): TextJSON = js.native
+  def toJS(options: Anon_PreserveKeys): TextJSON = js.native
   def toJSON(): TextJSON = js.native
-  def updateMark(index: Double, length: Double, mark: Mark, properties: MarkProperties): Text = js.native
+  def toJSON(options: Anon_PreserveKeys): TextJSON = js.native
+  def validate(editor: Editor): Error | Unit = js.native
 }
 
 /* static members */
 @JSImport("slate", "Text")
 @js.native
 object Text extends js.Object {
+  def create(): Text = js.native
   def create(properties: String): Text = js.native
   def create(properties: Text): Text = js.native
+  def create(properties: TextJSON): Text = js.native
   def create(properties: TextProperties): Text = js.native
   def createList(): List[Text] = js.native
-  def createList(elements: js.Array[Text | TextProperties]): List[Text] = js.native
-  def createList(elements: List[Text | TextProperties]): List[Text] = js.native
+  def createList(elements: js.Array[TextProperties | TextJSON | Text | String]): List[Text] = js.native
+  def createList(elements: List[TextProperties | TextJSON | Text | String]): List[Text] = js.native
   def fromJS(properties: Text): Text = js.native
   def fromJS(properties: TextJSON): Text = js.native
+  def fromJS(properties: TextProperties): Text = js.native
   def fromJSON(properties: Text): Text = js.native
   def fromJSON(properties: TextJSON): Text = js.native
+  def fromJSON(properties: TextProperties): Text = js.native
   def isText(maybeText: js.Any): /* is slate.slate.Text */ Boolean = js.native
+  def isTextList(maybeTextList: js.Any): /* is immutable.immutable.List<slate.slate.Text> */ Boolean = js.native
 }
 

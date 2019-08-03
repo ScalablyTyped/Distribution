@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "baseui"
-version := "8.13.0-5ee22c"
+version := "8.14.0-5ee22c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
