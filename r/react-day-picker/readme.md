@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-day-picker
 
-Typings are for version 7.3.0
+Typings are for version 7.3.1
 
 ## Library description:
 Flexible date picker component for React

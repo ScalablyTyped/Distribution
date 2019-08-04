@@ -1,4 +1,4 @@
-package typings.reactDashDayDashPicker.typesUtilsMod
+package typings.reactDashDayDashPicker
 
 import typings.reactDashDayDashPicker.typesCommonMod.RangeModifier
 import typings.std.Date
@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DateUtils extends js.Object {
+trait Anon_AddDayToRange extends js.Object {
   def addDayToRange(day: Date, range: RangeModifier): RangeModifier
   def addMonths(d: Date, n: Double): Date
   def clone(d: Date): Date
@@ -21,7 +21,7 @@ trait DateUtils extends js.Object {
   def isSameMonth(day1: Date, day2: Date): Boolean
 }
 
-object DateUtils {
+object Anon_AddDayToRange {
   @scala.inline
   def apply(
     addDayToRange: (Date, RangeModifier) => RangeModifier,
@@ -36,10 +36,10 @@ object DateUtils {
     isPastDay: Date => Boolean,
     isSameDay: (Date, Date) => Boolean,
     isSameMonth: (Date, Date) => Boolean
-  ): DateUtils = {
+  ): Anon_AddDayToRange = {
     val __obj = js.Dynamic.literal(addDayToRange = js.Any.fromFunction2(addDayToRange), addMonths = js.Any.fromFunction2(addMonths), clone = js.Any.fromFunction1(clone), isDate = js.Any.fromFunction1(isDate), isDayAfter = js.Any.fromFunction2(isDayAfter), isDayBefore = js.Any.fromFunction2(isDayBefore), isDayBetween = js.Any.fromFunction3(isDayBetween), isDayInRange = js.Any.fromFunction2(isDayInRange), isFutureDay = js.Any.fromFunction1(isFutureDay), isPastDay = js.Any.fromFunction1(isPastDay), isSameDay = js.Any.fromFunction2(isSameDay), isSameMonth = js.Any.fromFunction2(isSameMonth))
   
-    __obj.asInstanceOf[DateUtils]
+    __obj.asInstanceOf[Anon_AddDayToRange]
   }
 }
 

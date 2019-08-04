@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__datetime"
-version := "3.12.0-5d3602"
+version := "3.12.0-61185f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-1a85e7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
-  "org.scalablytyped" %%% "react-day-picker" % "7.3.0-018067",
+  "org.scalablytyped" %%% "react-day-picker" % "7.3.1-f956ff",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

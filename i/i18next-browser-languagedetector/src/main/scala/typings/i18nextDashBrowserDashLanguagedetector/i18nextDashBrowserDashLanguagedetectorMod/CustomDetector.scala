@@ -1,4 +1,4 @@
-package typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorMod.I18nextBrowserLanguageDetectorNs
+package typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

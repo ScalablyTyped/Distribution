@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab.treeItemTreeItemMod
 
+import typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps
 import typings.atMaterialDashUiLab.PartialClassNameMapTreeItemClassKey
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
@@ -41,6 +42,7 @@ import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEventHandler
+import typings.react.reactMod.ComponentType
 import typings.react.reactMod.CompositionEventHandler
 import typings.react.reactMod.DragEventHandler
 import typings.react.reactMod.FocusEventHandler
@@ -63,6 +65,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLLIElement>, @material-ui/lab.@material-ui/lab/TreeItem/TreeItem.TreeItemClassKey, never> */
 trait TreeItemProps extends js.Object {
+  var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -129,6 +132,7 @@ trait TreeItemProps extends js.Object {
   var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
+  var endIcon: js.UndefOr[ReactNode] = js.undefined
   var expandIcon: js.UndefOr[ReactNode] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
@@ -329,6 +333,7 @@ object TreeItemProps {
   @scala.inline
   def apply(
     nodeId: String,
+    TransitionComponent: ComponentType[TransitionProps] = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -395,6 +400,7 @@ object TreeItemProps {
     defaultValue: String | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    endIcon: ReactNode = null,
     expandIcon: ReactNode = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
@@ -509,6 +515,7 @@ object TreeItemProps {
     vocab: String = null
   ): TreeItemProps = {
     val __obj = js.Dynamic.literal(nodeId = nodeId)
+    if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
@@ -575,6 +582,7 @@ object TreeItemProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

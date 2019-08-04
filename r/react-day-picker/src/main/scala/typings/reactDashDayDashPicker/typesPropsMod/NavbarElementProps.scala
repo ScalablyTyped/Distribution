@@ -1,8 +1,8 @@
 package typings.reactDashDayDashPicker.typesPropsMod
 
+import typings.reactDashDayDashPicker.Anon_Day
 import typings.reactDashDayDashPicker.Anon_NextMonth
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait NavbarElementProps extends js.Object {
   var dir: js.UndefOr[String] = js.native
   var labels: Anon_NextMonth = js.native
   var locale: String = js.native
-  var localeUtils: LocaleUtils = js.native
+  var localeUtils: Anon_Day = js.native
   var month: Date = js.native
   var nextMonth: Date = js.native
   var previousMonth: Date = js.native

@@ -1,6 +1,6 @@
 package typings.reactDashDayDashPicker.typesPropsMod
 
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
+import typings.reactDashDayDashPicker.Anon_Day
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WeekdayElementProps extends js.Object {
   var className: String
   var locale: String
-  var localeUtils: LocaleUtils
+  var localeUtils: Anon_Day
   var weekday: Double
   var weekdaysLong: js.UndefOr[js.Array[String]] = js.undefined
   var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
@@ -19,7 +19,7 @@ object WeekdayElementProps {
   def apply(
     className: String,
     locale: String,
-    localeUtils: LocaleUtils,
+    localeUtils: Anon_Day,
     weekday: Double,
     weekdaysLong: js.Array[String] = null,
     weekdaysShort: js.Array[String] = null

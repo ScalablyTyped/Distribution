@@ -6,7 +6,6 @@ import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerModifier
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.TimePrecision
 import typings.reactDashDayDashPicker.typesPropsMod.DayPickerProps
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,7 +78,7 @@ object IDatePickerProps {
     highlightCurrentDay: js.UndefOr[Boolean] = js.undefined,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: LocaleUtils = null,
+    localeUtils: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocaleUtils */ js.Any = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

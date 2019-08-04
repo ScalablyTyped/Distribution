@@ -1,6 +1,5 @@
 package typings.i18nextDashXhrDashBackend.i18nextDashXhrDashBackendMod
 
-import typings.i18nextDashXhrDashBackend.i18nextDashXhrDashBackendMod.I18NextXhrBackendNs.BackendOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

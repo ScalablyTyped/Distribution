@@ -1,4 +1,4 @@
-package typings.reactDashDayDashPicker.typesUtilsMod
+package typings.reactDashDayDashPicker
 
 import typings.reactDashDayDashPicker.typesCommonMod.Modifier
 import typings.std.Date
@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ModifiersUtils extends js.Object {
+trait Anon_DayDayMatchesModifier extends js.Object {
   def dayMatchesModifier(day: Date): Boolean = js.native
   def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = js.native
   def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = js.native

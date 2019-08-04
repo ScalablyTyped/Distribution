@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val I18nContext: Context[i18n] = js.native
   val I18nextProvider: FunctionComponent[I18nextProviderProps] = js.native
+  val initReactI18next: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.ThirdPartyModule */ js.Any = js.native
   def Trans(props: TransProps): js.Any = js.native
   def Translation(props: TranslationProps): js.Any = js.native
   def addUsedNamespaces(namespaces: js.Array[Namespace]): Unit = js.native

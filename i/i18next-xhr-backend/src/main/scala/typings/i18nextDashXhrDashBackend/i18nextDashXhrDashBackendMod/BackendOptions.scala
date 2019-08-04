@@ -1,4 +1,4 @@
-package typings.i18nextDashXhrDashBackend.i18nextDashXhrDashBackendMod.I18NextXhrBackendNs
+package typings.i18nextDashXhrDashBackend.i18nextDashXhrDashBackendMod
 
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.reactDashDayDashPicker.typesPropsMod
 
 import typings.react.reactMod.MouseEventHandler
+import typings.reactDashDayDashPicker.Anon_Day
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait CaptionElementProps extends js.Object {
   var classNames: ClassNames
   var date: Date
   var locale: String
-  var localeUtils: LocaleUtils
+  var localeUtils: Anon_Day
   var months: js.UndefOr[js.Array[String]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
 }
@@ -24,7 +24,7 @@ object CaptionElementProps {
     classNames: ClassNames,
     date: Date,
     locale: String,
-    localeUtils: LocaleUtils,
+    localeUtils: Anon_Day,
     months: js.Array[String] = null,
     onClick: MouseEventHandler[HTMLElement] = null
   ): CaptionElementProps = {

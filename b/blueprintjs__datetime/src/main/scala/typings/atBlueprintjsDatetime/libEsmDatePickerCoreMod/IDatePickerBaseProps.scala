@@ -2,7 +2,6 @@ package typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod
 
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.TimePrecision
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,9 @@ trait IDatePickerBaseProps extends js.Object {
   /**
     * Collection of functions that provide internationalization support.
     */
-  var localeUtils: js.UndefOr[LocaleUtils] = js.undefined
+  var localeUtils: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocaleUtils */ js.Any
+  ] = js.undefined
   /**
     * The latest date the user can select.
     * @default Dec. 31st of this year.
@@ -69,7 +70,7 @@ object IDatePickerBaseProps {
   def apply(
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: LocaleUtils = null,
+    localeUtils: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocaleUtils */ js.Any = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

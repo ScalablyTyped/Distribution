@@ -1,12 +1,13 @@
-package typings.reactDashDayDashPicker.typesUtilsMod
+package typings.atBlueprintjsDatetime.atBlueprintjsDatetimeMod
 
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("@blueprintjs/datetime", "IDatePickerLocaleUtils")
 @js.native
-trait LocaleUtils extends js.Object {
+object IDatePickerLocaleUtils extends js.Object {
   def formatDay(day: Date): String = js.native
   def formatDay(day: Date, locale: String): String = js.native
   def formatMonthTitle(month: Date): String = js.native

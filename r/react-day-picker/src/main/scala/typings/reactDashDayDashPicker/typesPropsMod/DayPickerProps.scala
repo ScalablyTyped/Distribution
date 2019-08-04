@@ -12,12 +12,12 @@ import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SFC
 import typings.react.reactMod.TouchEvent
+import typings.reactDashDayDashPicker.Anon_Day
 import typings.reactDashDayDashPicker.Anon_NextMonth
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
 import typings.reactDashDayDashPicker.typesCommonMod.DayModifiers
 import typings.reactDashDayDashPicker.typesCommonMod.Modifier
 import typings.reactDashDayDashPicker.typesCommonMod.Modifiers
-import typings.reactDashDayDashPicker.typesUtilsMod.LocaleUtils
 import typings.std.Date
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -43,7 +43,7 @@ trait DayPickerProps extends js.Object {
   var initialMonth: js.UndefOr[Date] = js.undefined
   var labels: js.UndefOr[Anon_NextMonth] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localeUtils: js.UndefOr[LocaleUtils] = js.undefined
+  var localeUtils: js.UndefOr[Anon_Day] = js.undefined
   var modifiers: js.UndefOr[Partial[Modifiers]] = js.undefined
   var modifiersStyles: js.UndefOr[js.Object] = js.undefined
   var month: js.UndefOr[Date] = js.undefined
@@ -139,6 +139,7 @@ trait DayPickerProps extends js.Object {
   var showOutsideDays: js.UndefOr[Boolean] = js.undefined
   var showWeekDays: js.UndefOr[Boolean] = js.undefined
   var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.undefined
   var toMonth: js.UndefOr[Date] = js.undefined
   var todayButton: js.UndefOr[String] = js.undefined
   var weekdayElement: js.UndefOr[
@@ -165,7 +166,7 @@ object DayPickerProps {
     initialMonth: Date = null,
     labels: Anon_NextMonth = null,
     locale: String = null,
-    localeUtils: LocaleUtils = null,
+    localeUtils: Anon_Day = null,
     modifiers: Partial[Modifiers] = null,
     modifiersStyles: js.Object = null,
     month: Date = null,
@@ -195,6 +196,7 @@ object DayPickerProps {
     showOutsideDays: js.UndefOr[Boolean] = js.undefined,
     showWeekDays: js.UndefOr[Boolean] = js.undefined,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
+    tabIndex: Int | Double = null,
     toMonth: Date = null,
     todayButton: String = null,
     weekdayElement: ReactElement | (ComponentClass[WeekdayElementProps, ComponentState]) | SFC[WeekdayElementProps] = null,
@@ -246,6 +248,7 @@ object DayPickerProps {
     if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays)
     if (!js.isUndefined(showWeekDays)) __obj.updateDynamic("showWeekDays")(showWeekDays)
     if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (toMonth != null) __obj.updateDynamic("toMonth")(toMonth)
     if (todayButton != null) __obj.updateDynamic("todayButton")(todayButton)
     if (weekdayElement != null) __obj.updateDynamic("weekdayElement")(weekdayElement.asInstanceOf[js.Any])
