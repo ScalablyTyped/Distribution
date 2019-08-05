@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 
 trait ImageProps
   extends ResponderProps
+     with CommonMaskProps
+     with ClipProps
      with TouchableProps {
   var height: js.UndefOr[NumberProp] = js.undefined
   var href: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any
@@ -28,11 +30,14 @@ object ImageProps {
   @scala.inline
   def apply(
     href: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any,
+    clipPath: String = null,
+    clipRule: FillRule = null,
     delayLongPress: Int | Double = null,
     delayPressIn: Int | Double = null,
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     height: NumberProp = null,
+    mask: String = null,
     onLongPress: /* event */ js.Any => _ = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
@@ -58,11 +63,14 @@ object ImageProps {
     y: NumberProp = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal(href = href)
+    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
+    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
     if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))

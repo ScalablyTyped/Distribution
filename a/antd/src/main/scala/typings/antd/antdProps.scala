@@ -7,7 +7,6 @@ import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
 import typings.antd.esDropdownDropdownMod.DropDownProps
 import typings.antd.esLayoutLayoutMod.BasicProps
 import typings.antd.esListItemMod.ListItemProps
-import typings.antd.esResultMod.ResultProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
 import typings.antd.esTransferOperationMod.TransferOperationProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
@@ -147,6 +146,9 @@ trait antdProps {
   def DropdownDashButtonProps: DropdownButtonProps.type = typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
   type DropdownDashButtonProps = DropdownButtonProps
   @scala.inline
+  def EmptyProps: typings.antd.esEmptyMod.EmptyProps.type = typings.antd.esEmptyMod.EmptyProps
+  type EmptyProps = typings.antd.esEmptyMod.EmptyProps
+  @scala.inline
   def FooterProps: BasicProps.type = typings.antd.esLayoutLayoutMod.BasicProps
   type FooterProps = BasicProps
   @scala.inline
@@ -219,9 +221,6 @@ trait antdProps {
   def OptionProps: typings.antd.esSelectMod.OptionProps.type = typings.antd.esSelectMod.OptionProps
   type OptionProps = typings.antd.esSelectMod.OptionProps
   @scala.inline
-  def OriginResultProps: ResultProps.type = typings.antd.esResultMod.ResultProps
-  type OriginResultProps = ResultProps
-  @scala.inline
   def PageDashHeaderProps: typings.antd.esPageDashHeaderMod.PageHeaderProps.type = typings.antd.esPageDashHeaderMod.PageHeaderProps
   type PageDashHeaderProps = typings.antd.esPageDashHeaderMod.PageHeaderProps
   @scala.inline
@@ -248,6 +247,9 @@ trait antdProps {
   @scala.inline
   def RateProps: typings.antd.esRateMod.RateProps.type = typings.antd.esRateMod.RateProps
   type RateProps = typings.antd.esRateMod.RateProps
+  @scala.inline
+  def ResultProps: typings.antd.esResultMod.ResultProps.type = typings.antd.esResultMod.ResultProps
+  type ResultProps = typings.antd.esResultMod.ResultProps
   @scala.inline
   def RowProps: typings.antd.esGridRowMod.RowProps.type = typings.antd.esGridRowMod.RowProps
   type RowProps = typings.antd.esGridRowMod.RowProps

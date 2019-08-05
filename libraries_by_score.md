@@ -3745,6 +3745,7 @@
 | 0.6326667378784236 | [sitemap2](./s/sitemap2) | Sitemap-generating framework
 | 0.6325319869074447 | [pg-large-object](./p/pg-large-object) | Large object support for PostgreSQL clients (node-
 | 0.6325267243971521 | [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des
+| 0.6323187764430291 | [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation
 | 0.6322792420630108 | [micro-events](./m/micro-events) | A very, very simple event emitter implementation.
 | 0.6322737220077181 | [decode-uri-component](./d/decode-uri-component) | A better decodeURIComponent
 | 0.632269602647549 | [x-ray-crawler](./x/x-ray-crawler) | x-ray's crawler
@@ -4435,6 +4436,7 @@
 | 0.5584224496657947 | [one-time](./o/one-time) | Run the supplied function exactly one time (once)
 | 0.5583212805706615 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types
 | 0.558115819708589 | [rx-lite](./r/rx-lite) | Lightweight library for composing asynchronous and
+| 0.5579665901216531 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.5578368632987841 | [prelude-ls](./p/prelude-ls) | prelude.ls is a functionally oriented utility libr
 | 0.5577270370002104 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars
 | 0.5575297674114305 | [xadesjs](./x/xadesjs) | A pure Typescript/Javascript implementation of XAd
@@ -6208,6 +6210,7 @@
 | 0.2889105655280456 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
 | 0.2888766256010207 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor
 | 0.2888238290481311 | [jasmine-matchers](./j/jasmine-matchers) | Extends the matchers jasmine provides.
+| 0.2886855807596985 | [apollo-server-types](./a/apollo-server-types) | Apollo Server shared types
 | 0.28827056142242835 | [react-motion-ui-pack](./r/react-motion-ui-pack) | Addon component wrappers for common UI transitions
 | 0.2881497104040971 | [chrome](./c/chrome) | Open chrome in shell
 | 0.2880822339898158 | [tedious](./t/tedious) | A TDS driver, for connecting to MS SQLServer datab

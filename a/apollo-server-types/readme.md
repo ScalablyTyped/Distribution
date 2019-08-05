@@ -3,6 +3,21 @@
 
 Typings are for version 0.2.1
 
+## Library description:
+Apollo Server shared types
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | apollo-server-types |
+| Keywords           | - |
+| # releases         | 6 |
+| # dependents       | 14 |
+| # downloads        | 365384 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/apollo-server-types)
+    
 
 
 ## Note

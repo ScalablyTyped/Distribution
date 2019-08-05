@@ -4,6 +4,7 @@ import typings.antd.esUploadInterfaceMod.HttpRequestHeader
 import typings.antd.esUploadInterfaceMod.PreviewFileHandler
 import typings.antd.esUploadInterfaceMod.RcFile
 import typings.antd.esUploadInterfaceMod.ShowUploadListInterface
+import typings.antd.esUploadInterfaceMod.TransformFileHandler
 import typings.antd.esUploadInterfaceMod.UploadChangeParam
 import typings.antd.esUploadInterfaceMod.UploadFile
 import typings.antd.esUploadInterfaceMod.UploadListType
@@ -46,6 +47,7 @@ trait DraggerProps extends js.Object {
   var showUploadList: js.UndefOr[Boolean | ShowUploadListInterface] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var supportServerRender: js.UndefOr[Boolean] = js.undefined
+  var transformFile: js.UndefOr[TransformFileHandler] = js.undefined
   var `type`: js.UndefOr[UploadType] = js.undefined
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
@@ -79,6 +81,7 @@ object DraggerProps {
     showUploadList: Boolean | ShowUploadListInterface = null,
     style: CSSProperties = null,
     supportServerRender: js.UndefOr[Boolean] = js.undefined,
+    transformFile: TransformFileHandler = null,
     `type`: UploadType = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): DraggerProps = {
@@ -109,6 +112,7 @@ object DraggerProps {
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender)
+    if (transformFile != null) __obj.updateDynamic("transformFile")(transformFile)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[DraggerProps]

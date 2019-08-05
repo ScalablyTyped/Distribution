@@ -153,7 +153,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT20DOT7` extends js.Object
+  sealed trait `3DOT21DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -857,6 +857,9 @@ object antdStrings {
   
   @js.native
   sealed trait `inter-word` extends js.Object
+  
+  @js.native
+  sealed trait internalMark extends js.Object
   
   @js.native
   sealed trait isolate extends js.Object
@@ -2084,7 +2087,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT20DOT7`: `3DOT20DOT7` = "3.20.7".asInstanceOf[`3DOT20DOT7`]
+  def `3DOT21DOT0`: `3DOT21DOT0` = "3.21.0".asInstanceOf[`3DOT21DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2453,6 +2456,8 @@ object antdStrings {
   def `inter-character`: `inter-character` = "inter-character".asInstanceOf[`inter-character`]
   @scala.inline
   def `inter-word`: `inter-word` = "inter-word".asInstanceOf[`inter-word`]
+  @scala.inline
+  def internalMark: internalMark = "internalMark".asInstanceOf[internalMark]
   @scala.inline
   def isolate: isolate = "isolate".asInstanceOf[isolate]
   @scala.inline

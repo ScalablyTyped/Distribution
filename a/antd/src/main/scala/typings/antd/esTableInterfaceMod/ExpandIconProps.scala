@@ -1,32 +1,20 @@
 package typings.antd.esTableInterfaceMod
 
-import typings.std.MouseEvent
+import typings.react.Element
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExpandIconProps[T] extends js.Object {
-  var expandable: Boolean
-  var expanded: Boolean
-  var needIndentSpaced: Boolean
-  var prefixCls: String
-  var record: T
-  def onExpand(record: T, event: MouseEvent): Unit
-}
-
-object ExpandIconProps {
-  @scala.inline
-  def apply[T](
-    expandable: Boolean,
-    expanded: Boolean,
-    needIndentSpaced: Boolean,
-    onExpand: (T, MouseEvent) => Unit,
-    prefixCls: String,
-    record: T
-  ): ExpandIconProps[T] = {
-    val __obj = js.Dynamic.literal(expandable = expandable, expanded = expanded, needIndentSpaced = needIndentSpaced, onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls, record = record.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[ExpandIconProps[T]]
-  }
+  var expandable: Boolean = js.native
+  var expanded: Boolean = js.native
+  var needIndentSpaced: Boolean = js.native
+  var prefixCls: String = js.native
+  var record: T = js.native
+  def onExpand(record: T): Unit = js.native
+  def onExpand(record: T, event: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
 }
 

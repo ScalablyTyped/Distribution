@@ -2,7 +2,10 @@ package typings.antd.esTableTableMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antd.Anon_Arg
+import typings.antd.Anon_Columns
+import typings.antd.Anon_ComponentName
 import typings.antd.Anon_Filters
+import typings.antd.Anon_GetPopupContainer
 import typings.antd.Anon_SortColumn
 import typings.antd.antdStrings.checkbox
 import typings.antd.antdStrings.radio
@@ -11,11 +14,11 @@ import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.antd.esRadioInterfaceMod.RadioChangeEvent
 import typings.antd.esTableCreateStoreMod.Store
 import typings.antd.esTableInterfaceMod.ColumnProps
+import typings.antd.esTableInterfaceMod.ExpandIconProps
 import typings.antd.esTableInterfaceMod.PrepareParamsArgumentsReturn
 import typings.antd.esTableInterfaceMod.SelectionInfo
 import typings.antd.esTableInterfaceMod.SelectionItemSelectFn
 import typings.antd.esTableInterfaceMod.TableComponents
-import typings.antd.esTableInterfaceMod.TableLocale
 import typings.antd.esTableInterfaceMod.TableProps
 import typings.antd.esTableInterfaceMod.TableState
 import typings.antd.esTableInterfaceMod.TableStateFilters
@@ -43,7 +46,8 @@ trait Table[T]
   def createComponents(components: TableComponents, prevComponents: TableComponents): Unit = js.native
   def findColumn(myKey: String): js.UndefOr[scala.Nothing] = js.native
   def findColumn(myKey: Double): js.UndefOr[scala.Nothing] = js.native
-  def generatePopupContainerFunc(): js.UndefOr[js.Function0[HTMLElement]] = js.native
+  def generatePopupContainerFunc(): js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+  def generatePopupContainerFunc(getPopupContainer: js.Function1[/* triggerNode */ HTMLElement, HTMLElement]): js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
   def getCheckboxPropsByItem(item: T, index: Double): js.Any = js.native
   def getColumnKey(column: ColumnProps[T]): js.UndefOr[String | Double] = js.native
   def getColumnKey(column: ColumnProps[T], index: Double): js.UndefOr[String | Double] = js.native
@@ -63,7 +67,6 @@ trait Table[T]
   def getLocalData(state: TableState[T]): js.Array[T] = js.native
   def getLocalData(state: TableState[T], filter: Boolean): js.Array[T] = js.native
   def getMaxCurrent(total: Double): js.UndefOr[Double] = js.native
-  def getPopupContainer(): HTMLElement = js.native
   def getRecordKey(record: T, index: Double): js.Any = js.native
   def getSortOrderColumns(): js.Any = js.native
   def getSortOrderColumns(columns: js.Array[ColumnProps[T]]): js.Any = js.native
@@ -90,26 +93,20 @@ trait Table[T]
   def renderColumnTitle(): ReactNode = js.native
   def renderColumnTitle(title: js.Function1[/* options */ Anon_Filters, ReactNode]): ReactNode = js.native
   def renderColumnTitle(title: ReactNode): ReactNode = js.native
-  def renderColumnsDropdown(
-    prefixCls: String,
-    dropdownPrefixCls: String,
-    columns: js.Array[ColumnProps[T]],
-    locale: TableLocale
-  ): js.Array[_] = js.native
-  def renderComponent(hasGetPrefixClsRenderEmpty: ConfigConsumerProps): Element = js.native
+  def renderColumnsDropdown(hasPrefixClsDropdownPrefixClsColumnsLocaleGetPopupContainer: Anon_Columns[T]): js.Array[_] = js.native
+  def renderComponent(hasGetPrefixClsRenderEmptyGetPopupContainer: ConfigConsumerProps): Element = js.native
+  def renderExpandIcon(prefixCls: String): js.Function1[
+    /* hasExpandableExpandedNeedIndentSpacedRecordOnExpand */ ExpandIconProps[T], 
+    Element | Null
+  ] = js.native
   def renderPagination(prefixCls: String, paginationPosition: String): Element | Null = js.native
-  def renderRowSelection(prefixCls: String, locale: TableLocale): js.Array[ColumnProps[T]] = js.native
+  def renderRowSelection(hasPrefixClsLocaleGetPopupContainer: Anon_GetPopupContainer): js.Array[ColumnProps[T]] = js.native
   def renderSelectionBox(): js.Function3[/* _ */ js.Any, /* record */ T, /* index */ Double, Element] = js.native
   @JSName("renderSelectionBox")
   def renderSelectionBox_checkbox(`type`: checkbox): js.Function3[/* _ */ js.Any, /* record */ T, /* index */ Double, Element] = js.native
   @JSName("renderSelectionBox")
   def renderSelectionBox_radio(`type`: radio): js.Function3[/* _ */ js.Any, /* record */ T, /* index */ Double, Element] = js.native
-  def renderTable(
-    prefixCls: String,
-    renderEmpty: js.Function1[/* componentName */ js.UndefOr[String], ReactNode],
-    dropdownPrefixCls: String,
-    contextLocale: TableLocale
-  ): Element = js.native
+  def renderTable(hasPrefixClsRenderEmptyDropdownPrefixClsContextLocaleGetPopupContainer: Anon_ComponentName): Element = js.native
   def setSelectedRowKeys(selectedRowKeys: js.Array[String], selectionInfo: SelectionInfo[T]): Unit = js.native
   def toggleSortOrder(column: ColumnProps[T]): Unit = js.native
 }

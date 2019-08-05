@@ -2,12 +2,12 @@ package typings.antd.libTagMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.HTMLAttributes
-import typings.std.HTMLDivElement
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TagProps extends HTMLAttributes[HTMLDivElement] {
+trait TagProps extends HTMLAttributes[HTMLSpanElement] {
   var afterClose: js.UndefOr[js.Function] = js.undefined
   var closable: js.UndefOr[Boolean] = js.undefined
   var onClose: js.UndefOr[js.Function] = js.undefined
@@ -18,7 +18,7 @@ trait TagProps extends HTMLAttributes[HTMLDivElement] {
 object TagProps {
   @scala.inline
   def apply(
-    HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
+    HTMLAttributes: HTMLAttributes[HTMLSpanElement] = null,
     afterClose: js.Function = null,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,

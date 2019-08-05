@@ -15,6 +15,7 @@ trait DescriptionsProps extends js.Object {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var colon: js.UndefOr[Boolean] = js.undefined
   var column: js.UndefOr[Double | PartialRecordBreakpointnumber] = js.undefined
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -29,6 +30,7 @@ object DescriptionsProps {
     bordered: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
+    colon: js.UndefOr[Boolean] = js.undefined,
     column: Double | PartialRecordBreakpointnumber = null,
     layout: horizontal | vertical = null,
     prefixCls: String = null,
@@ -40,6 +42,7 @@ object DescriptionsProps {
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

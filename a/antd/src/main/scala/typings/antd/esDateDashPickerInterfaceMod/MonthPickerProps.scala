@@ -34,7 +34,7 @@ object MonthPickerProps {
     inputPrefixCls: String = null,
     locale: js.Any = null,
     name: String = null,
-    onChange: (/* date */ Moment, /* dateString */ String) => Unit = null,
+    onChange: (/* date */ Moment | Null, /* dateString */ String) => Unit = null,
     onOpenChange: /* status */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,

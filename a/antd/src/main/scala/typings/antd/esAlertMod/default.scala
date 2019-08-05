@@ -6,5 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/es/alert", JSImport.Default)
 @js.native
-class default () extends Alert
+class default protected () extends Alert {
+  def this(props: AlertProps) = this()
+}
 

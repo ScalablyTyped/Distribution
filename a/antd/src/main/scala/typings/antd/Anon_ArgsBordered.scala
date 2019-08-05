@@ -14,6 +14,7 @@ trait Anon_ArgsBordered extends js.Object {
   var columns: Requireable[js.Array[_]]
   var dataSource: Requireable[js.Array[_]]
   var dropdownPrefixCls: Requireable[String]
+  var getPopupContainer: Requireable[js.Function1[/* repeated */ _, _]]
   var loading: Requireable[Boolean | js.Object]
   var locale: Requireable[js.Object]
   var onChange: Requireable[js.Function1[/* repeated */ _, _]]
@@ -32,6 +33,7 @@ object Anon_ArgsBordered {
     columns: Requireable[js.Array[_]],
     dataSource: Requireable[js.Array[_]],
     dropdownPrefixCls: Requireable[String],
+    getPopupContainer: Requireable[js.Function1[/* repeated */ _, _]],
     loading: Requireable[Boolean | js.Object],
     locale: Requireable[js.Object],
     onChange: Requireable[js.Function1[/* repeated */ _, _]],
@@ -41,7 +43,7 @@ object Anon_ArgsBordered {
     sortDirections: Requireable[js.Array[_]],
     useFixedHeader: Requireable[Boolean]
   ): Anon_ArgsBordered = {
-    val __obj = js.Dynamic.literal(bordered = bordered, className = className, columns = columns, dataSource = dataSource, dropdownPrefixCls = dropdownPrefixCls, loading = loading, locale = locale, onChange = onChange, prefixCls = prefixCls, rowSelection = rowSelection, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+    val __obj = js.Dynamic.literal(bordered = bordered, className = className, columns = columns, dataSource = dataSource, dropdownPrefixCls = dropdownPrefixCls, getPopupContainer = getPopupContainer, loading = loading, locale = locale, onChange = onChange, prefixCls = prefixCls, rowSelection = rowSelection, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
   
     __obj.asInstanceOf[Anon_ArgsBordered]
   }

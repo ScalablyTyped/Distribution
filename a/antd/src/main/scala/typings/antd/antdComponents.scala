@@ -7,7 +7,6 @@ import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
 import typings.antd.esDropdownDropdownMod.DropDownProps
 import typings.antd.esLayoutLayoutMod.BasicProps
 import typings.antd.esListItemMod.ListItemProps
-import typings.antd.esResultMod.ResultProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
 import typings.antd.esTransferOperationMod.TransferOperationProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
@@ -49,6 +48,8 @@ object antdComponents extends antdProps {
   def Breadcrumb: ComponentType[typings.antd.esBreadcrumbBreadcrumbMod.BreadcrumbProps] = js.constructorOf[typings.antd.esBreadcrumbMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esBreadcrumbBreadcrumbMod.BreadcrumbProps]]
   @scala.inline
   def BreadcrumbItem: ComponentType[typings.antd.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps] = js.constructorOf[typings.antd.esBreadcrumbBreadcrumbItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps]]
+  @scala.inline
+  def BreadcrumbSeparator: ComponentType[js.Any] = js.constructorOf[typings.antd.esBreadcrumbBreadcrumbSeparatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
   def Button: ComponentType[typings.antd.esButtonButtonMod.ButtonProps] = js.constructorOf[typings.antd.esButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esButtonButtonMod.ButtonProps]]
   @scala.inline
@@ -107,6 +108,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def DropdownDashButton: ComponentType[DropdownButtonProps] = js.constructorOf[typings.antd.esDropdownDropdownDashButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps]]
   @scala.inline
+  def Empty: ComponentType[typings.antd.esEmptyMod.EmptyProps] = typings.antd.esEmptyMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esEmptyMod.EmptyProps]]
+  @scala.inline
   def Footer: ComponentType[BasicProps] = typings.antd.esLayoutMod.default.Footer.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esLayoutLayoutMod.BasicProps]]
   @scala.inline
   def Form: ComponentType[typings.antd.esFormFormMod.FormProps] = js.constructorOf[typings.antd.esFormMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esFormFormMod.FormProps]]
@@ -155,8 +158,6 @@ object antdComponents extends antdProps {
   @scala.inline
   def Option: ComponentType[typings.antd.esSelectMod.OptionProps] = typings.antd.esSelectMod.default.Option.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esSelectMod.OptionProps]]
   @scala.inline
-  def OriginResult: ComponentType[ResultProps] = typings.antd.esResultMod.^.OriginResult.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esResultMod.ResultProps]]
-  @scala.inline
   def PageDashHeader: ComponentType[typings.antd.esPageDashHeaderMod.PageHeaderProps] = typings.antd.esPageDashHeaderMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esPageDashHeaderMod.PageHeaderProps]]
   @scala.inline
   def PageHeader: ComponentType[typings.antd.esPageDashHeaderMod.PageHeaderProps] = typings.antd.esMod.^.PageHeader.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esPageDashHeaderMod.PageHeaderProps]]
@@ -178,6 +179,8 @@ object antdComponents extends antdProps {
   def RadioButton: ComponentType[typings.antd.esRadioRadioButtonMod.RadioButtonProps] = js.constructorOf[typings.antd.esRadioRadioButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esRadioRadioButtonMod.RadioButtonProps]]
   @scala.inline
   def Rate: ComponentType[typings.antd.esRateMod.RateProps] = js.constructorOf[typings.antd.esRateMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esRateMod.RateProps]]
+  @scala.inline
+  def Result: ComponentType[typings.antd.esResultMod.ResultProps] = typings.antd.esResultMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esResultMod.ResultProps]]
   @scala.inline
   def Row: ComponentType[typings.antd.esGridRowMod.RowProps] = js.constructorOf[typings.antd.esRowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esGridRowMod.RowProps]]
   @scala.inline

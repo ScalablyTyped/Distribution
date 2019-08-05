@@ -8,6 +8,7 @@ import typings.antd.libSpinMod.SpinProps
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.std.Event
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +40,7 @@ trait TableProps[T] extends js.Object {
     ]
   ] = js.undefined
   var footer: js.UndefOr[js.Function1[/* currentPageData */ js.Array[js.Object], ReactNode]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var indentSize: js.UndefOr[Double] = js.undefined
   var loading: js.UndefOr[Boolean | SpinProps] = js.undefined
   var locale: js.UndefOr[TableLocale] = js.undefined
@@ -91,6 +93,7 @@ object TableProps {
     expandedRowKeys: js.Array[Double | String] = null,
     expandedRowRender: (/* record */ T, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
     footer: /* currentPageData */ js.Array[js.Object] => ReactNode = null,
+    getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     indentSize: Int | Double = null,
     loading: Boolean | SpinProps = null,
     locale: TableLocale = null,
@@ -132,6 +135,7 @@ object TableProps {
     if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys)
     if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)

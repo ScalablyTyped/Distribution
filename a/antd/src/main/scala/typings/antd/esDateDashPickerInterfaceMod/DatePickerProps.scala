@@ -45,7 +45,7 @@ object DatePickerProps {
     locale: js.Any = null,
     mode: DatePickerMode = null,
     name: String = null,
-    onChange: (/* date */ Moment, /* dateString */ String) => Unit = null,
+    onChange: (/* date */ Moment | Null, /* dateString */ String) => Unit = null,
     onOk: /* selectedTime */ Moment => Unit = null,
     onOpenChange: /* status */ Boolean => Unit = null,
     onPanelChange: (/* value */ js.UndefOr[Moment], /* mode */ DatePickerMode) => Unit = null,

@@ -3810,6 +3810,7 @@
 | 14 | [animation-frame](./a/animation-frame) | An even better requestAnimationFrame
 | 14 | [apollo-codegen](./a/apollo-codegen) | Generate API code or type annotations based on a G
 | 14 | [apollo-link-http-common](./a/apollo-link-http-common) | Http utilities for Apollo Link shared across all l
+| 14 | [apollo-server-types](./a/apollo-server-types) | Apollo Server shared types
 | 14 | [auth-header](./a/auth-header) | For HTTP Authorization and WWW-Authenticate header
 | 14 | [bugsnag-js](./b/bugsnag-js) | Automatically detect JavaScript errors, collect de
 | 14 | [change-emitter](./c/change-emitter) | Listen for changes. Like an event emitter that onl
@@ -6533,6 +6534,7 @@
 | 0 | [metric-suffix](./m/metric-suffix) | Display big numbers in short using metric suffixes
 | 0 | [microgears](./m/microgears) | super lightweight micro framework for reactive ser
 | 0 | [microservice-utilities](./m/microservice-utilities) | Utilities supporting authorization, request loggin
+| 0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0 | [mina](./m/mina) | Lightweight deployer for node development, inspire
 | 0 | [mindbox__redux-helpers](./m/mindbox__redux-helpers) | Typed factories for your redux reducers and action
 | 0 | [mobx-cookie](./m/mobx-cookie) | Syncs a cookie's value with a MobX observable, all
@@ -6797,6 +6799,7 @@
 | 0 | [uinput](./u/uinput) | Linux uinput module
 | 0 | [underscore-ko](./u/underscore-ko) | Dead simple utility that attaches Underscore.js ar
 | 0 | [unique-push-id](./u/unique-push-id) | 🆔 Generates unique, chronological, lexicographica
+| 0 | [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation
 | 0 | [urbanairship-cordova](./u/urbanairship-cordova) | Urban Airship Cordova plugin
 | 0 | [use-dark-mode](./u/use-dark-mode) | A custom React Hook to help you implement a "dark 
 | 0 | [use-set-interval](./u/use-set-interval) | A React Hook (using useEffect) which uses window.s

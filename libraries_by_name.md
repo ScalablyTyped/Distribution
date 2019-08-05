@@ -257,7 +257,7 @@
 | [apollo-server-errors](./a/apollo-server-errors) | - | - |
 | [apollo-server-express](./a/apollo-server-express) | Production-ready Node.js GraphQL server for Expres | GraphQL, Apollo, Server, Express, Connect, Javascript |
 | [apollo-server-plugin-base](./a/apollo-server-plugin-base) | Apollo Server plugin base classes | - |
-| [apollo-server-types](./a/apollo-server-types) | - | - |
+| [apollo-server-types](./a/apollo-server-types) | Apollo Server shared types | - |
 | [apollo-upload-client](./a/apollo-upload-client) | An Apollo Link for Apollo Client that allows FileL | graphql, multipart, request, file, upload, apollo, client, link, react, native |
 | [apollo-utilities](./a/apollo-utilities) | Utilities for working with GraphQL ASTs | - |
 | [apollographql__apollo-too](./a/apollographql__apollo-tools) | - | - |
@@ -4016,7 +4016,7 @@
 | [microsoft-live-connect](./m/microsoft-live-connect) | - | - |
 | [microsoft-sdk-soap](./m/microsoft-sdk-soap) | - | - |
 | [microsoft__load-themed-st](./m/microsoft__load-themed-styles) | Loads themed styles. | - |
-| [microsoft__typescript-etw](./m/microsoft__typescript-etw) | - | - |
+| [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri | etw, napi, node |
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
@@ -6836,7 +6836,7 @@
 | [universal-cookie](./u/universal-cookie) | Universal cookies for JavaScript | universal, isomophic, cookie |
 | [universal-router](./u/universal-router) | Isomorphic router for JavaScript web applications | isomorphic, universal, router, routing, routes, route |
 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node | - |
-| [unl-core](./u/unl-core) | - | - |
+| [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation | geohash, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
 | [unorm](./u/unorm) | JavaScript Unicode 8.0 Normalization - NFC, NFD, N | - |
 | [unsplash-js](./u/unsplash-js) | A Universal JavaScript wrapper for the Unsplash AP | unsplash, photos, api, images, splash, free |
 | [untildify](./u/untildify) | Convert a tilde path to an absolute path: ~/dev => | tilde, expansion, expand, untildify, path, home, dir, directory, user, shell, bash |

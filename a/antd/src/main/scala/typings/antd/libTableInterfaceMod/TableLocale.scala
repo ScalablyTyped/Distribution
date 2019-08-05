@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableLocale extends js.Object {
+  var collapse: js.UndefOr[String] = js.undefined
   var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
+  var expand: js.UndefOr[String] = js.undefined
   var filterConfirm: js.UndefOr[ReactNode] = js.undefined
   var filterReset: js.UndefOr[ReactNode] = js.undefined
   var filterTitle: js.UndefOr[String] = js.undefined
@@ -18,7 +20,9 @@ trait TableLocale extends js.Object {
 object TableLocale {
   @scala.inline
   def apply(
+    collapse: String = null,
     emptyText: ReactNode | js.Function0[ReactNode] = null,
+    expand: String = null,
     filterConfirm: ReactNode = null,
     filterReset: ReactNode = null,
     filterTitle: String = null,
@@ -27,7 +31,9 @@ object TableLocale {
     sortTitle: String = null
   ): TableLocale = {
     val __obj = js.Dynamic.literal()
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
     if (filterConfirm != null) __obj.updateDynamic("filterConfirm")(filterConfirm.asInstanceOf[js.Any])
     if (filterReset != null) __obj.updateDynamic("filterReset")(filterReset.asInstanceOf[js.Any])
     if (filterTitle != null) __obj.updateDynamic("filterTitle")(filterTitle)
