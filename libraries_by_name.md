@@ -1535,7 +1535,7 @@
 | [escodegen](./e/escodegen) | ECMAScript code generator | - |
 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common | - |
 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man | - |
-| [esfx__internal-deprecate](./e/esfx__internal-deprecate) | - | - |
+| [esfx__internal-deprecate](./e/esfx__internal-deprecate) | This package provides internal utilities for '@esf | - |
 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for & | - |
 | [eslint](./e/eslint) | An AST-based pattern checker for JavaScript. | ast, lint, javascript, ecmascript, espree |
 | [eslint-plugin-prettier](./e/eslint-plugin-prettier) | Runs prettier as an eslint rule | eslint, eslintplugin, eslint-plugin, prettier |
@@ -2078,7 +2078,7 @@
 | [gapi_dot_youtube](./g/gapi_dot_youtube) | - | - |
 | [gapi_dot_youtubeanalytics](./g/gapi_dot_youtubeanalytics) | - | - |
 | [gatsby](./g/gatsby) | Blazing fast modern site generator for React | blog, generator, jekyll, markdown, react, ssg, website |
-| [gatsby-core-utils](./g/gatsby-core-utils) | - | - |
+| [gatsby-core-utils](./g/gatsby-core-utils) | A collection of gatsby utils used in different gat | gatsby, gatsby-core-utils |
 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s | gatsby, gatsby-component, react-component |
 | [gatsby-link](./g/gatsby-link) | An enhanced Link component for Gatsby sites with s | gatsby |
 | [gaussian](./g/gaussian) | A JavaScript model of a Gaussian distribution | gaussian, normal, distribution |
@@ -2088,6 +2088,7 @@
 | [gcs-resumable-upload](./g/gcs-resumable-upload) | Upload a file to Google Cloud Storage with built-i | google, gcloud, storage, gcs, upload, resumable |
 | [gdal](./g/gdal) | Bindings to GDAL (Geospatial Data Abstraction Libr | gdal, libgdal, ogr, gis, geo, geos, geography, geospatial, raster, vector, gtiff, geojson, mapping |
 | [geetest](./g/geetest) | Node SDK for Geetest captcha | Geetest, Captcha |
+| [gematriya](./g/gematriya) | Convert numbers to gematriya representation, and v | hebrew, gematriya, numbers |
 | [gen-readlines](./g/gen-readlines) | Generator based line reader | generator, file, line, reader, read, by, es6, ecma2015 |
 | [generate-changelog](./g/generate-changelog) | Generate a changelog from git commits. | changelog, cli, npm, version, git, semver |
 | [generate-json-webpack-plu](./g/generate-json-webpack-plugin) | Webpack plugin to generate a custom JSON asset | webpack |
@@ -2458,7 +2459,7 @@
 | [hdkey](./h/hdkey) | Bitcoin BIP32 hierarchical deterministic keys | bitcoin, bip32, bip, key, hierarchical, deterministic, crypto |
 | [he](./h/he) | A robust HTML entities encoder/decoder with full U | string, entities, entity, html, encode, decode, unicode |
 | [header-case](./h/header-case) | Header case a string | header, case, upper, http |
-| [headroom](./h/headroom) | - | - |
+| [headroom](./h/headroom) | The same old headroom simplified | - |
 | [heap](./h/heap) | binary heap (priority queue) algorithms (ported fr | algorithm, data structure, heap |
 | [heapdump](./h/heapdump) | Make a dump of the V8 heap for later inspection. | - |
 | [heatmap_dot_js](./h/heatmap_dot_js) | Dynamic JavaScript Heatmaps for the Web | heatmap, heatmaps, heat map, heat maps, googlemaps heatmap, leaflet heatmap, leaflet |
@@ -2484,6 +2485,7 @@
 | [highcharts-react-official](./h/highcharts-react-official) | Official minimal  | highcharts, highstock, highmaps, react |
 | [highland](./h/highland) | The high-level streams library | - |
 | [highlight_dot_js](./h/highlight_dot_js) | Syntax highlighting with language autodetection. | highlight, syntax |
+| [highlightjs](./h/highlightjs) | Syntax highlighting for the Web | - |
 | [hiredis](./h/hiredis) | Wrapper for reply processing code in hiredis | - |
 | [history](./h/history) | Manage session history with JavaScript | history, location |
 | [history_dot_js](./h/history_dot_js) | History.js gracefully supports the HTML5 History/S | javascript, html5 history api, hashchange, popstate, pushstate, replacestate, hashes, hashbang |
@@ -2651,6 +2653,7 @@
 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S | react-native, bug, reporting, feedback, instabug, sdk |
 | [int64-buffer](./i/int64-buffer) | 64bit Long Integer on Buffer/Array/ArrayBuffer in  | 64bit, IEEE-754, arraybuffer, buffer, int, int64, int8array, integer, long, longlong, signed, uint64, unsinged |
 | [integer](./i/integer) | Native 64-bit integers with overflow protection. | integer, 64-bit, 64bit, int, overflow, native |
+| [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order  | scijs, integral, definite-integral, integration, calculus, adaptive, romberg |
 | [intercom-client](./i/intercom-client) | Official Node bindings to the Intercom API | intercom, api |
 | [intercom-web](./i/intercom-web) | - | - |
 | [intercomjs](./i/intercomjs) | - | - |
@@ -5555,6 +5558,7 @@
 | [react-sidebar](./r/react-sidebar) | A sidebar component for React. | react, react-component, sidebar, drawer, navigation |
 | [react-simple-code-editor](./r/react-simple-code-editor) | Simple no-frills code editor with syntax highlight | code, editor, react |
 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React | react, maps, worldmap, geo, d3 |
+| [react-sizeme](./r/react-sizeme) | Make your React Components aware of their dimensio | library |
 | [react-sizes](./r/react-sizes) | Hoc to easily map window sizes to props. | react, hoc, media, query, react-sizes, react, hoc, sizes, media, query |
 | [react-sketchapp](./r/react-sketchapp) | A React renderer for Sketch.app | sketch, sketchapp, react, reactjs, renderer |
 | [react-slick](./r/react-slick) | React port of slick carousel | slick, carousel, Image slider, orbit, slider, react-component |
@@ -6334,6 +6338,7 @@
 | [starwars-names](./s/starwars-names) | Get random Star Wars names | random, star, wars |
 | [stat-mode](./s/stat-mode) | Offers convenient getters and setters for the stat | stat, mode, owner, group, others, chmod, octal, symbolic, permissions |
 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
+| [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol | openstreetmap, osm, staticmaps, staticmap, map, maps |
 | [stats-lite](./s/stats-lite) | A light statistical package that operates on numer | stats, statistics, numbers, math, sum, mean, average, mode, median, percentile, variance, deviation |
 | [stats_dot_js](./s/stats_dot_js) | JavaScript Performance Monitor | performance, fps, stats |
 | [statsd-client](./s/statsd-client) | Yet another client for Etsy's statsd | statsd, client, metrics, udp, tcp |
@@ -6557,6 +6562,7 @@
 | [tcomb](./t/tcomb) | Type checking and DDD for JavaScript | type, combinators, checking, safety, model, domain, debugging, immutable, DDD, JSON, store |
 | [tcp-ping](./t/tcp-ping) | A ping utility using TCP connection | ping, util, tcp, availability |
 | [tcp-port-used](./t/tcp-port-used) | A simple Node.js module to check if a TCP port is  | tcp, port, available, free, check, networking |
+| [tdweb](./t/tdweb) | Javascript interface for TDLib (telegram library) | telegram |
 | [tea-merge](./t/tea-merge) | Deep object merge utility. | - |
 | [teddy](./t/teddy) | Teddy Templating Engine | teddy.js, node.js, teddy, template, view |
 | [tedious](./t/tedious) | A TDS driver, for connecting to MS SQLServer datab | sql, database, mssql, sqlserver, sql-server, tds, msnodesql, azure |

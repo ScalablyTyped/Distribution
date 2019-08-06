@@ -4,6 +4,7 @@ import typings.chrome.chromeNs.webRequestNs.WebAuthenticationChallengeEvent
 import typings.chrome.chromeNs.webRequestNs.WebRedirectionResponseEvent
 import typings.chrome.chromeNs.webRequestNs.WebRequestBodyEvent
 import typings.chrome.chromeNs.webRequestNs.WebRequestHeadersEvent
+import typings.chrome.chromeNs.webRequestNs.WebRequestHeadersSynchronousEvent
 import typings.chrome.chromeNs.webRequestNs.WebResponseCacheEvent
 import typings.chrome.chromeNs.webRequestNs.WebResponseErrorEvent
 import typings.chrome.chromeNs.webRequestNs.WebResponseHeadersEvent
@@ -17,7 +18,7 @@ trait TypeofwebRequest extends js.Object {
   var onAuthRequired: WebAuthenticationChallengeEvent = js.native
   var onBeforeRedirect: WebRedirectionResponseEvent = js.native
   var onBeforeRequest: WebRequestBodyEvent = js.native
-  var onBeforeSendHeaders: WebRequestHeadersEvent = js.native
+  var onBeforeSendHeaders: WebRequestHeadersSynchronousEvent = js.native
   var onCompleted: WebResponseCacheEvent = js.native
   var onErrorOccurred: WebResponseErrorEvent = js.native
   var onHeadersReceived: WebResponseHeadersEvent = js.native

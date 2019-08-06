@@ -10,6 +10,9 @@ trait ApiKeyState extends js.Object {
     * The ID of the associated AppSync API
     */
   val apiId: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The API key description. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.

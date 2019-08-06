@@ -27,6 +27,9 @@ class ClusterParameterGroup protected () extends CustomResource {
     * The ARN of the documentDB cluster parameter group.
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the documentDB cluster parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[js.UndefOr[String]] = js.native
   /**
     * The family of the documentDB cluster parameter group.

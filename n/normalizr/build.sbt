@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalizr"
-version := "3.4.0-95f269"
+version := "3.4.1-0cf4ef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,7 +10,7 @@ trait DeleteCertificateRequest extends js.Object {
     */
   var certificateId: CertificateId
   /**
-    * Forces a certificate request to be deleted.
+    * Forces the deletion of a certificate if it is inactive and is not attached to an IoT thing.
     */
   var forceDelete: js.UndefOr[ForceDelete] = js.undefined
 }

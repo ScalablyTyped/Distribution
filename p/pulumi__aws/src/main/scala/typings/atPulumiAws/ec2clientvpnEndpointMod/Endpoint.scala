@@ -53,6 +53,10 @@ class Endpoint protected () extends CustomResource {
     */
   val serverCertificateArn: Output[String] = js.native
   /**
+    * Indicates whether split-tunnel is enabled on VPN endpoint. Default value is `false`.
+    */
+  val splitTunnel: Output[js.UndefOr[Boolean]] = js.native
+  /**
     * The current state of the Client VPN endpoint.
     */
   val status: Output[String] = js.native

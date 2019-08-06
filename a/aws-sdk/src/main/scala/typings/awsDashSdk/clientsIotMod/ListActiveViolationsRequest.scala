@@ -20,7 +20,7 @@ trait ListActiveViolationsRequest extends js.Object {
   /**
     * The name of the thing whose active violations are listed.
     */
-  var thingName: js.UndefOr[ThingName] = js.undefined
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
 }
 
 object ListActiveViolationsRequest {
@@ -29,7 +29,7 @@ object ListActiveViolationsRequest {
     maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null,
     securityProfileName: SecurityProfileName = null,
-    thingName: ThingName = null
+    thingName: DeviceDefenderThingName = null
   ): ListActiveViolationsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)

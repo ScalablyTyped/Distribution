@@ -63,6 +63,9 @@ class ClusterInstance protected () extends CustomResource {
     * The neptune engine version.
     */
   val engineVersion: Output[String] = js.native
+  /**
+    * The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: Output[String] = js.native
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

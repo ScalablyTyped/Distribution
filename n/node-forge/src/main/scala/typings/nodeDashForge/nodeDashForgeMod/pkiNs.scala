@@ -202,7 +202,6 @@ object pkiNs extends js.Object {
   def publicKeyToPem(key: PublicKey): PEM = js.native
   def publicKeyToPem(key: PublicKey, maxline: Double): PEM = js.native
   def publicKeyToRSAPublicKey(publicKey: PublicKey): js.Any = js.native
-  def setRsaPublicKey(n: BigInteger, e: BigInteger): PublicKey = js.native
   def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate]): Boolean = js.native
   def verifyCertificateChain(
     caStore: CAStore,
@@ -316,7 +315,7 @@ object pkiNs extends js.Object {
           Unit
         ]
     ): typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.KeyPair = js.native
-    def setPublicKey(n: js.Any, e: js.Any): js.Any = js.native
+    def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.PublicKey = js.native
     /* Rewritten from type alias, can be one of: 
       - typings.nodeDashForge.nodeDashForgeStrings.`RSAES-PKCS1-V1_5`
       - typings.nodeDashForge.nodeDashForgeStrings.`RSA-OAEP`
@@ -338,5 +337,10 @@ object pkiNs extends js.Object {
   type PrivateKey = typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.PrivateKey | Key
   type PublicKey = typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.PublicKey | Key
   type oids = StringDictionary[String]
+  type setRsaPublicKey = js.Function2[
+    /* n */ BigInteger, 
+    /* e */ BigInteger, 
+    typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs.PublicKey
+  ]
 }
 

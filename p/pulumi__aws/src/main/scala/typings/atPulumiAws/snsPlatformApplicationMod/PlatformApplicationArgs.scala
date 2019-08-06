@@ -34,7 +34,13 @@ trait PlatformApplicationArgs extends js.Object {
     * The platform that the app is registered with. See [Platform][1] for supported platforms.
     */
   val platform: Input[String]
+  /**
+    * Application Platform credential. See [Credential][1] for type of credential required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
+    */
   val platformCredential: Input[String]
+  /**
+    * Application Platform principal. See [Principal][2] for type of principal required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
+    */
   val platformPrincipal: js.UndefOr[Input[String]] = js.undefined
   /**
     * The IAM role permitted to receive success feedback for this application.

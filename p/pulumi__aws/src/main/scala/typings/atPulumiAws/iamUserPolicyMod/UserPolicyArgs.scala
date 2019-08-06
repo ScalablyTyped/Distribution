@@ -7,11 +7,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserPolicyArgs extends js.Object {
+  /**
+    * The name of the policy. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Input[String | PolicyDocument]
   /**
     * IAM user to which to attach this policy.

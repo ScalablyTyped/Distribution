@@ -46,6 +46,9 @@ class Role protected () extends CustomResource {
     * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
     */
   val maxSessionDuration: Output[js.UndefOr[Double]] = js.native
+  /**
+    * The name of the role. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

@@ -141,6 +141,11 @@ class Distribution protected () extends CustomResource {
     * configuration for this distribution (maximum one).
     */
   val restrictions: Output[Anon_GeoRestriction] = js.native
+  /**
+    * Disables the distribution instead of
+    * deleting it when destroying the resource. If this is set,
+    * the distribution needs to be deleted manually afterwards. Default: `false`.
+    */
   val retainOnDelete: Output[js.UndefOr[Boolean]] = js.native
   /**
     * The current status of the distribution. `Deployed` if the

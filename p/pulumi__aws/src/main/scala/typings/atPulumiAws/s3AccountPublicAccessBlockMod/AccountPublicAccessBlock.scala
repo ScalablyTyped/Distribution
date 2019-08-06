@@ -22,6 +22,9 @@ class AccountPublicAccessBlock protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: AccountPublicAccessBlockArgs) = this()
   def this(name: String, args: AccountPublicAccessBlockArgs, opts: CustomResourceOptions) = this()
+  /**
+    * AWS account ID to configure. Defaults to automatically determined account ID of the this provider AWS provider.
+    */
   val accountId: Output[String] = js.native
   /**
     * Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to `false`. Enabling this setting does not affect existing policies or ACLs. When set to `true` causes the following behavior:

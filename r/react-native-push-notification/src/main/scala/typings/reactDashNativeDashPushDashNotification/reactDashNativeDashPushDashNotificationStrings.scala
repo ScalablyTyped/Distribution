@@ -1,7 +1,9 @@
 package typings.reactDashNativeDashPushDashNotification
 
+import typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationMod.ImportanceType
 import typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationMod.PriorityType
 import typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationMod.RepeatType
+import typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationMod.VisibilityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,31 +19,56 @@ object reactDashNativeDashPushDashNotificationStrings {
   sealed trait day extends RepeatType
   
   @js.native
-  sealed trait default extends PriorityType
+  sealed trait default
+    extends ImportanceType
+       with PriorityType
   
   @js.native
-  sealed trait high extends PriorityType
+  sealed trait high
+    extends ImportanceType
+       with PriorityType
   
   @js.native
   sealed trait hour extends RepeatType
   
   @js.native
-  sealed trait low extends PriorityType
+  sealed trait low
+    extends ImportanceType
+       with PriorityType
   
   @js.native
-  sealed trait max extends PriorityType
+  sealed trait max
+    extends ImportanceType
+       with PriorityType
   
   @js.native
-  sealed trait min extends PriorityType
+  sealed trait min
+    extends ImportanceType
+       with PriorityType
   
   @js.native
   sealed trait minute extends RepeatType
+  
+  @js.native
+  sealed trait none extends ImportanceType
+  
+  @js.native
+  sealed trait `private` extends VisibilityType
+  
+  @js.native
+  sealed trait public extends VisibilityType
+  
+  @js.native
+  sealed trait secret extends VisibilityType
   
   @js.native
   sealed trait sound extends js.Object
   
   @js.native
   sealed trait time extends RepeatType
+  
+  @js.native
+  sealed trait unspecified extends ImportanceType
   
   @js.native
   sealed trait week extends RepeatType
@@ -67,9 +94,19 @@ object reactDashNativeDashPushDashNotificationStrings {
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
+  @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
+  @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_validation"
-version := "0.0-unknown-dt-20190322Z-ea1879"
+version := "0.0-unknown-dt-20190805Z-6b05b1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

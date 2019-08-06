@@ -10,6 +10,9 @@ trait ContainerPolicyState extends js.Object {
     * The name of the container.
     */
   val containerName: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The contents of the policy.
+    */
   val policy: js.UndefOr[Input[String]] = js.undefined
 }
 

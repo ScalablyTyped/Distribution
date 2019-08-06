@@ -26,6 +26,9 @@ class ApiKey protected () extends CustomResource {
     * The creation date of the API key
     */
   val createdDate: Output[String] = js.native
+  /**
+    * The API key description. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * Specifies whether the API key can be used by callers. Defaults to `true`.

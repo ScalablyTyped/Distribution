@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateSecurityProfileRequest extends js.Object {
   /**
-    * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors but it is also retained for any metric specified here.
+    * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     */
   var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait CreateSecurityProfileRequest extends js.Object {
     */
   var securityProfileName: SecurityProfileName
   /**
-    * Metadata which can be used to manage the security profile.
+    * Metadata that can be used to manage the security profile.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }

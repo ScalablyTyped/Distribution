@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebRequestBodyEvent
-  extends Event[js.Function1[/* details */ WebRequestBodyDetails, Unit]] {
-  def addListener(callback: js.Function1[/* details */ WebRequestBodyDetails, Unit], filter: RequestFilter): Unit = js.native
+  extends Event[js.Function1[/* details */ WebRequestBodyDetails, BlockingResponse | Unit]] {
   def addListener(
-    callback: js.Function1[/* details */ WebRequestBodyDetails, Unit],
+    callback: js.Function1[/* details */ WebRequestBodyDetails, BlockingResponse | Unit],
+    filter: RequestFilter
+  ): Unit = js.native
+  def addListener(
+    callback: js.Function1[/* details */ WebRequestBodyDetails, BlockingResponse | Unit],
     filter: RequestFilter,
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native

@@ -51,6 +51,9 @@ trait LayerVersionState extends js.Object {
     * The object version containing the function's deployment package. Conflicts with `filename`.
     */
   val s3ObjectVersion: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+    */
   val sourceCodeHash: js.UndefOr[Input[String]] = js.undefined
   /**
     * The size in bytes of the function .zip file.

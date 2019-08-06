@@ -19,6 +19,9 @@ trait ClusterArgs extends js.Object {
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * The cluster identifier. If omitted, this provider will assign a random, unique identifier.
+    */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

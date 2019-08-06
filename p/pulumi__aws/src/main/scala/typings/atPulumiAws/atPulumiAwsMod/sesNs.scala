@@ -4,6 +4,8 @@ import typings.atPulumiAws.sesActiveReceiptRuleSetMod.ActiveReceiptRuleSetArgs
 import typings.atPulumiAws.sesActiveReceiptRuleSetMod.ActiveReceiptRuleSetState
 import typings.atPulumiAws.sesConfgurationSetMod.ConfgurationSetArgs
 import typings.atPulumiAws.sesConfgurationSetMod.ConfgurationSetState
+import typings.atPulumiAws.sesConfigurationSetMod.ConfigurationSetArgs
+import typings.atPulumiAws.sesConfigurationSetMod.ConfigurationSetState
 import typings.atPulumiAws.sesDomainDkimMod.DomainDkimArgs
 import typings.atPulumiAws.sesDomainDkimMod.DomainDkimState
 import typings.atPulumiAws.sesDomainIdentityMod.DomainIdentityArgs
@@ -65,6 +67,21 @@ object sesNs extends js.Object {
     def this(name: String) = this()
     def this(name: String, args: ConfgurationSetArgs) = this()
     def this(name: String, args: ConfgurationSetArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class ConfigurationSet protected ()
+    extends typings.atPulumiAws.sesMod.ConfigurationSet {
+    /**
+      * Create a ConfigurationSet resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: ConfigurationSetArgs) = this()
+    def this(name: String, args: ConfigurationSetArgs, opts: CustomResourceOptions) = this()
   }
   
   @js.native
@@ -276,6 +293,27 @@ object sesNs extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/confgurationSet.ConfgurationSet */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ConfigurationSet extends js.Object {
+    /**
+      * Get an existing ConfigurationSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.sesConfigurationSetMod.ConfigurationSet = js.native
+    def get(name: String, id: Input[ID], state: ConfigurationSetState): typings.atPulumiAws.sesConfigurationSetMod.ConfigurationSet = js.native
+    def get(name: String, id: Input[ID], state: ConfigurationSetState, opts: CustomResourceOptions): typings.atPulumiAws.sesConfigurationSetMod.ConfigurationSet = js.native
+    /**
+      * Returns true if the given object is an instance of ConfigurationSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean = js.native
   }
   
   /* static members */

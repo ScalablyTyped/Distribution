@@ -1,20 +1,24 @@
 package typings.rollup.rollupMod
 
-import typings.rollup.Anon_Name
+import typings.rollup.rollupStrings.chunk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EmittedChunk extends js.Object {
+trait EmittedChunk extends EmittedFile {
+  var fileName: js.UndefOr[String] = js.undefined
   var id: String
-  var options: js.UndefOr[Anon_Name] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var `type`: chunk
 }
 
 object EmittedChunk {
   @scala.inline
-  def apply(id: String, options: Anon_Name = null): EmittedChunk = {
+  def apply(id: String, `type`: chunk, fileName: String = null, name: String = null): EmittedChunk = {
     val __obj = js.Dynamic.literal(id = id)
-    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("type")(`type`)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[EmittedChunk]
   }
 }

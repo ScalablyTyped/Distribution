@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object knockoutDotValidation {
   type KnockoutValidationLocalizationDictionary = StringDictionary[String]
+  type KnockoutValidationMessageFunction = js.Function2[/* params */ js.Any, /* observable */ js.Any, String]
 }

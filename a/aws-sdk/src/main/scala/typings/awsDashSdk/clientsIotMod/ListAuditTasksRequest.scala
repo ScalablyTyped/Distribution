@@ -18,11 +18,11 @@ trait ListAuditTasksRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The beginning of the time period. Note that audit information is retained for a limited time (180 days). Requesting a start time prior to what is retained results in an "InvalidRequestException".
+    * The beginning of the time period. Audit information is retained for a limited time (180 days). Requesting a start time prior to what is retained results in an "InvalidRequestException".
     */
   var startTime: Timestamp
   /**
-    * A filter to limit the output to audits with the specified completion status: can be one of "IN_PROGRESS", "COMPLETED", "FAILED" or "CANCELED".
+    * A filter to limit the output to audits with the specified completion status: can be one of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
     */
   var taskStatus: js.UndefOr[AuditTaskStatus] = js.undefined
   /**

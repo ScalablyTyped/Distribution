@@ -43,6 +43,9 @@ class VpcEndpoint protected () extends CustomResource {
     * The ID of the AWS account that owns the VPC endpoint.
     */
   val ownerId: Output[String] = js.native
+  /**
+    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
+    */
   val policy: Output[String] = js.native
   /**
     * The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.

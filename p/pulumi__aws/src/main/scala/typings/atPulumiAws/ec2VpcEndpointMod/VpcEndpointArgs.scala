@@ -11,6 +11,9 @@ trait VpcEndpointArgs extends js.Object {
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
   val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
+    */
   val policy: js.UndefOr[Input[String]] = js.undefined
   /**
     * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.

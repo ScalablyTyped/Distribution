@@ -12,7 +12,9 @@ trait UserState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices
+    * When destroying this user, destroy even if it
+    * has non-this provider-managed IAM access keys, login profile or MFA devices. Without `force_destroy`
+    * a user with non-this provider-managed access keys and login profile will fail to be destroyed.
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
   /**

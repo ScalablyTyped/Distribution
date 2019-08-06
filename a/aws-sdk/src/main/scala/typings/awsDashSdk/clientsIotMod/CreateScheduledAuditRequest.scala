@@ -10,11 +10,11 @@ trait CreateScheduledAuditRequest extends js.Object {
     */
   var dayOfMonth: js.UndefOr[DayOfMonth] = js.undefined
   /**
-    * The day of the week on which the scheduled audit takes place. Can be one of "SUN", "MON", "TUE", "WED", "THU", "FRI" or "SAT". This field is required if the "frequency" parameter is set to "WEEKLY" or "BIWEEKLY".
+    * The day of the week on which the scheduled audit takes place. Can be one of "SUN", "MON", "TUE", "WED", "THU", "FRI", or "SAT". This field is required if the "frequency" parameter is set to "WEEKLY" or "BIWEEKLY".
     */
   var dayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
   /**
-    * How often the scheduled audit takes place. Can be one of "DAILY", "WEEKLY", "BIWEEKLY" or "MONTHLY". The actual start time of each audit is determined by the system.
+    * How often the scheduled audit takes place. Can be one of "DAILY", "WEEKLY", "BIWEEKLY" or "MONTHLY". The start time of each audit is determined by the system.
     */
   var frequency: AuditFrequency
   /**
@@ -22,11 +22,11 @@ trait CreateScheduledAuditRequest extends js.Object {
     */
   var scheduledAuditName: ScheduledAuditName
   /**
-    * Metadata which can be used to manage the scheduled audit.
+    * Metadata that can be used to manage the scheduled audit.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   /**
-    * Which checks are performed during the scheduled audit. Checks must be enabled for your account. (Use DescribeAccountAuditConfiguration to see the list of all checks including those that are enabled or UpdateAccountAuditConfiguration to select which checks are enabled.)
+    * Which checks are performed during the scheduled audit. Checks must be enabled for your account. (Use DescribeAccountAuditConfiguration to see the list of all checks, including those that are enabled or use UpdateAccountAuditConfiguration to select which checks are enabled.)
     */
   var targetCheckNames: TargetAuditCheckNames
 }

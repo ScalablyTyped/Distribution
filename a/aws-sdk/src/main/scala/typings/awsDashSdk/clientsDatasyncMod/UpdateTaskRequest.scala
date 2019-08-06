@@ -10,7 +10,7 @@ trait UpdateTaskRequest extends js.Object {
     */
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   /**
-    *  A filter that determines which files to exclude from a task based on the specified pattern in the filter. Transfers all files in the task’s subdirectory, except files that match the filter that is set. 
+    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   /**

@@ -28,6 +28,9 @@ trait ClusterInstanceArgs extends js.Object {
     * The name of the database engine to be used for the DocDB instance. Defaults to `docdb`. Valid Values: `docdb`.
     */
   val engine: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The indentifier for the DocDB instance, if omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.

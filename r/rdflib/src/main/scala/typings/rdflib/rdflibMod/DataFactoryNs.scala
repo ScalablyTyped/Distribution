@@ -37,12 +37,15 @@ object DataFactoryNs extends js.Object {
     * @param lang The language
     * @param dt The datatype
     */
+  def lit(`val`: String): Literal = js.native
+  def lit(`val`: String, lang: String): Literal = js.native
   def lit(`val`: String, lang: String, dt: NamedNode): Literal = js.native
   /**
     * Creates a new literal node
     * @param value The lexical value
     * @param languageOrDatatype Either the language or the datatype
     */
+  def literal(value: String): Literal = js.native
   def literal(value: String, languageOrDatatype: String): Literal = js.native
   def literal(value: String, languageOrDatatype: NamedNode): Literal = js.native
   /**
@@ -77,6 +80,7 @@ object DataFactoryNs extends js.Object {
     * Creates a new variable
     * @param name The name for the variable
     */
+  def variable(): Variable = js.native
   def variable(name: String): Variable = js.native
 }
 

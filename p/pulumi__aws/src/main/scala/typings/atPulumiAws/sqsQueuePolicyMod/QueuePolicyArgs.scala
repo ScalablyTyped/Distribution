@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueuePolicyArgs extends js.Object {
+  /**
+    * The JSON policy for the SQS queue.
+    */
   val policy: Input[String]
   /**
     * The URL of the SQS Queue to which to attach the policy

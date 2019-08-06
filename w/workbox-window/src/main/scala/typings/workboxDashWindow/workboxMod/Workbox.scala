@@ -73,7 +73,10 @@ class Workbox protected () extends EventTargetShim {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxExtendableEvent, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_installed(`type`: installed, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxEvent, Unit]): Unit = js.native
+  def addEventListener_installed(
+    `type`: installed,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxUpdatableEvent, Unit]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(
     `type`: message,
@@ -143,7 +146,10 @@ class Workbox protected () extends EventTargetShim {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxExtendableEvent, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_installed(`type`: installed, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxEvent, Unit]): Unit = js.native
+  def removeEventListener_installed(
+    `type`: installed,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxUpdatableEvent, Unit]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(
     `type`: message,

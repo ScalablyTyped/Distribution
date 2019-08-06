@@ -44,6 +44,10 @@ trait CertificateState extends js.Object {
     * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
     */
   val validationEmails: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into state managed by this provider.
+    * * Importing an existing certificate
+    */
   val validationMethod: js.UndefOr[Input[String]] = js.undefined
 }
 

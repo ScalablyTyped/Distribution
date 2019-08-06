@@ -1,6 +1,5 @@
 package typings.oracledb.oracledbMod
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ trait Results extends js.Object {
     * the array passed as the binds parameter. It will be present only if there is at least one OUT bind
     * variable identified.
     */
-  var outBinds: js.Array[(Record[String, _]) | js.Array[_]]
+  var outBinds: js.Array[Row]
   /**
     * An integer identifying the total number of database rows affected by the processing of all records
     * of the binds parameter. It is only present if a DML statement was executed.
@@ -46,7 +45,7 @@ object Results {
   def apply(
     batchErrors: js.Array[DBError],
     dmlRowCounts: js.Array[Double],
-    outBinds: js.Array[(Record[String, _]) | js.Array[_]],
+    outBinds: js.Array[Row],
     rowsAffected: Double
   ): Results = {
     val __obj = js.Dynamic.literal(batchErrors = batchErrors, dmlRowCounts = dmlRowCounts, outBinds = outBinds, rowsAffected = rowsAffected)

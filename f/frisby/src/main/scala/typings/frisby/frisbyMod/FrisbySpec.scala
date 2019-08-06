@@ -16,7 +16,7 @@ class FrisbySpec protected () extends js.Object {
   def del(url: String, params: js.Object): FrisbySpec = js.native
   def done(doneFn: js.Function1[/* repeated */ js.Any, Unit]): FrisbySpec = js.native
   def expect(expectName: String, args: js.Any*): FrisbySpec = js.native
-  def expectNot(expectName: String): FrisbySpec = js.native
+  def expectNot(expectName: String, args: js.Any*): FrisbySpec = js.native
   def fetch(url: String): FrisbySpec = js.native
   def fetch(url: String, params: js.Object): FrisbySpec = js.native
   def fetch(url: String, params: js.Object, options: js.Object): FrisbySpec = js.native

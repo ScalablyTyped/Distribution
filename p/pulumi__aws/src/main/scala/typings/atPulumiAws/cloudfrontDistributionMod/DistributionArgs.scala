@@ -86,6 +86,11 @@ trait DistributionArgs extends js.Object {
     * configuration for this distribution (maximum one).
     */
   val restrictions: Input[Anon_GeoRestrictionAnonLocationsRestrictionType]
+  /**
+    * Disables the distribution instead of
+    * deleting it when destroying the resource. If this is set,
+    * the distribution needs to be deleted manually afterwards. Default: `false`.
+    */
   val retainOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

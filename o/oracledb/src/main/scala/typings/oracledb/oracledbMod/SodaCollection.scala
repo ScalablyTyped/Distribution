@@ -112,23 +112,42 @@ trait SodaCollection extends js.Object {
   def getDataGuide(): js.Promise[SodaDocument] = js.native
   def getDataGuide(callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]): Unit = js.native
   /**
-    * Inserts a given document to the collection. The input document can be either a JavaScript object representing
-    * the data content, or it can be an existing SodaDocument.
-    *
-    * Note SodaDocuments returned from sodaCollection.insertOneAndGet() or from sodaOperation.replaceOneAndGet()
-    * cannot be passed to insertOne(), since these do not contain any document content. Instead, create a
-    * JavaScript object using the desired attribute values, or use sodaDatabase.createDocument(), or use a
-    * SodaDocument returned by a sodaCollection.find() query.
-    *
-    * If oracledb.autoCommit is true, and insertOne() succeeds, then the new document and any open transaction
-    * on the connection is committed.
-    *
-    * @param newDocumentContent The document to insert.
-    *
-    * @since 3.0
+    * This is similar to insertOne() however it accepts an array of the Objects or SodaDocuments that insertOne() accepts.
+    * When inserting multiple documents, using insertMany() is recommended in preference to insertOne().
+    * 
+    * If an error occurs, the offset attribute on the Error objects will contain the number of documents that were successfully inserted.
+    * Subsequent documents in the input array will not be inserted
+    * 
+    * This method is in Preview status and should not be used in production.
+    * 
+    * @param documents The documents to insert.
+    * 
+    * @requires Oracle Client 18.5 or higher
+    * @since 4.0
     */
-  def insertOne(newDocumentContent: Record[String, _]): js.Promise[Unit] = js.native
-  def insertOne(newDocumentContent: Record[String, _], callback: js.Function1[/* error */ DBError, Unit]): js.Promise[Unit] = js.native
+  def insertMany(documents: js.Array[SodaDocument | (Record[String, _])]): js.Promise[Unit] = js.native
+  def insertMany(
+    documents: js.Array[SodaDocument | (Record[String, _])],
+    callback: js.Function1[/* error */ DBError, Unit]
+  ): Unit = js.native
+  /**
+    * Similar to sodaCollection.insertMany() but also returns an array of the inserted documents so system managed properties,
+    * such as the keys (in default collections), can be found. Content itself is not returned for performance reasons.
+    * 
+    * When inserting multiple documents, using insertManyAndGet() is recommended in preference to insertOneAndGet().
+    * 
+    * This method is in Preview status and should not be used in production.
+    * 
+    * @param documents 
+    * 
+    * @required Oracle Client 18.5 or higher
+    * @since 4.0
+    */
+  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, _])]): js.Promise[js.Array[SodaDocument]] = js.native
+  def insertManyAndGet(
+    documents: js.Array[SodaDocument | (Record[String, _])],
+    callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit]
+  ): Unit = js.native
   /**
     * Inserts a given document to the collection. The input document can be either a JavaScript object representing
     * the data content, or it can be an existing SodaDocument.
@@ -147,30 +166,8 @@ trait SodaCollection extends js.Object {
     */
   def insertOne(newDocument: SodaDocument): js.Promise[Unit] = js.native
   def insertOne(newDocument: SodaDocument, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
-  /**
-    * Similar to sodaCollection.insertOne() but also returns the inserted document so system managed properties,
-    * such as the key (in default collections), can be found.
-    *
-    * Inserts a document in a collection. This is similar to sodaCollection.insertOne(), but also returns the
-    * result document, which contains all SodaDocument components (key, version, etc.) except for content.
-    * Content is not returned for performance reasons. The result document has new values for components that
-    * are updated as part of the replace operation (such as version, last-modified timestamp, and media type)
-    *
-    * If you want to insert the returned document again, use the original newDocumentContent or newDocument.
-    * Alternatively construct a new object from the returned document and add content.
-    *
-    * If oracledb.autoCommit is true, and insertOneAndGet() succeeds, then any open transaction on the connection
-    * is committed.
-    *
-    * @param newDocumentContent The document to insert.
-    *
-    * @since 3.0
-    */
-  def insertOneAndGet(newDocumentContent: Record[String, _]): js.Promise[SodaDocument] = js.native
-  def insertOneAndGet(
-    newDocumentContent: Record[String, _],
-    callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
-  ): js.Promise[Unit] = js.native
+  def insertOne(newDocument: Record[String, _]): js.Promise[Unit] = js.native
+  def insertOne(newDocument: Record[String, _], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   /**
     * Similar to sodaCollection.insertOne() but also returns the inserted document so system managed properties,
     * such as the key (in default collections), can be found.
@@ -193,6 +190,11 @@ trait SodaCollection extends js.Object {
   def insertOneAndGet(newDocument: SodaDocument): js.Promise[SodaDocument] = js.native
   def insertOneAndGet(
     newDocument: SodaDocument,
+    callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
+  ): Unit = js.native
+  def insertOneAndGet(newDocument: Record[String, _]): js.Promise[SodaDocument] = js.native
+  def insertOneAndGet(
+    newDocument: Record[String, _],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
 }

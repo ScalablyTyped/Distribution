@@ -46,6 +46,10 @@ class LoadBalancer protected () extends CustomResource {
     * This is a `network` load balancer feature. Defaults to `false`.
     */
   val enableCrossZoneLoadBalancing: Output[js.UndefOr[Boolean]] = js.native
+  /**
+    * If true, deletion of the load balancer will be disabled via
+    * the AWS API. This will prevent this provider from deleting the load balancer. Defaults to `false`.
+    */
   val enableDeletionProtection: Output[js.UndefOr[Boolean]] = js.native
   /**
     * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
@@ -67,6 +71,11 @@ class LoadBalancer protected () extends CustomResource {
     * The type of load balancer to create. Possible values are `application` or `network`. The default value is `application`.
     */
   val loadBalancerType: Output[js.UndefOr[String]] = js.native
+  /**
+    * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
+    * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
+    * this provider will autogenerate a name beginning with `tf-lb`.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

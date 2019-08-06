@@ -32,6 +32,9 @@ trait RoleState extends js.Object {
     * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
     */
   val maxSessionDuration: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * The name of the role. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

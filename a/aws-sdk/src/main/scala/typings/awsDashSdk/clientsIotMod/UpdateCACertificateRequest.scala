@@ -22,7 +22,7 @@ trait UpdateCACertificateRequest extends js.Object {
     */
   var registrationConfig: js.UndefOr[RegistrationConfig] = js.undefined
   /**
-    * If true, remove auto registration.
+    * If true, removes auto registration.
     */
   var removeAutoRegistration: js.UndefOr[RemoveAutoRegistration] = js.undefined
 }

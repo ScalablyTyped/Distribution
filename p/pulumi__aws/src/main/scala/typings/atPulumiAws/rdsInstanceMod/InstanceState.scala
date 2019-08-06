@@ -136,6 +136,10 @@ trait InstanceState extends js.Object {
     * accounts is enabled.
     */
   val iamDatabaseAuthenticationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * The name of the RDS instance,
+    * if omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique

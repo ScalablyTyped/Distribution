@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubnetGroupState extends js.Object {
+  /**
+    * Description for the cache subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.

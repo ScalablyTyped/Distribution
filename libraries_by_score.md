@@ -1018,6 +1018,7 @@
 | 0.7700017821962835 | [feathersjs__authenticatio](./f/feathersjs__authentication-client) | The authentication plugin for feathers-client
 | 0.7698626570994442 | [less](./l/less) | Leaner CSS
 | 0.7698208754606115 | [lodash_dot_tostring](./l/lodash_dot_tostring) | The lodash method _.toString exported as a module.
+| 0.7697529673164961 | [react-sizeme](./r/react-sizeme) | Make your React Components aware of their dimensio
 | 0.7696975788100383 | [write-json-file](./w/write-json-file) | Stringify and write JSON to a file atomically
 | 0.7696684405776364 | [responselike](./r/responselike) | A response-like object for mocking a Node.js HTTP 
 | 0.7696281802446165 | [cucumber](./c/cucumber) | The official JavaScript implementation of Cucumber
@@ -3145,6 +3146,7 @@
 | 0.6658299698009299 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.6658274849982049 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt
 | 0.6657737644270008 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u
+| 0.6657252268538513 | [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order 
 | 0.6657218995525797 | [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications
 | 0.6656847563462427 | [logrocket-react](./l/logrocket-react) | React library for 
 | 0.6655708436184947 | [react-scroll-into-view-if](./r/react-scroll-into-view-if-needed) | A thin component wrapper around scroll-into-view-i
@@ -3354,6 +3356,7 @@
 | 0.6557782115310844 | [webgme](./w/webgme) | Web-based Generic Modeling Environment
 | 0.6557734520842514 | [prometheus-gc-stats](./p/prometheus-gc-stats) | Report Garbage Collection stats using Prometheus
 | 0.6557500558081556 | [gulp-nunit-runner](./g/gulp-nunit-runner) | A Gulp.js plugin to facilitate the running of NUni
+| 0.655730320775689 | [tdweb](./t/tdweb) | Javascript interface for TDLib (telegram library)
 | 0.6555942527179826 | [openapi-factory](./o/openapi-factory) | Build API's and serverless code using node and fir
 | 0.6555578174329427 | [webpack-plugin-serve](./w/webpack-plugin-serve) | A Development Server in a Webpack Plugin
 | 0.6554677460020795 | [get-res](./g/get-res) | Get ten most popular screen resolutions
@@ -3851,6 +3854,7 @@
 | 0.6245128337542689 | [react-flatpickr](./r/react-flatpickr) | flatpickr for React
 | 0.6244949000603466 | [get-certain](./g/get-certain) | Assert a Map has a given key and return the value 
 | 0.6244356641512399 | [phosphor__disposable](./p/phosphor__disposable) | PhosphorJS - Disposable
+| 0.6243065749113597 | [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol
 | 0.6241544081644157 | [summernote](./s/summernote) | Super simple WYSIWYG editor
 | 0.6241181225395207 | [phosphor__signaling](./p/phosphor__signaling) | PhosphorJS - Signals and Slots
 | 0.6239587067986458 | [jasmine-es6-promise-match](./j/jasmine-es6-promise-matchers) | Jasmine matchers for testing ES6 Promises
@@ -4330,6 +4334,7 @@
 | 0.5740057725309313 | [jsplumb](./j/jsplumb) | Visual connectivity for webapps
 | 0.5737343281380722 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended
 | 0.5735914709130709 | [codependency](./c/codependency) | Optional peer dependencies
+| 0.5735694645858572 | [esfx__internal-deprecate](./e/esfx__internal-deprecate) | This package provides internal utilities for '@esf
 | 0.5735298141510052 | [onesignal-cordova-plugin](./o/onesignal-cordova-plugin) | OneSignal is a high volume Push Notification servi
 | 0.5734988649439025 | [jest-cli](./j/jest-cli) | Delightful JavaScript Testing.
 | 0.5733100352707128 | [koa-static-server](./k/koa-static-server) | Static file serving middleware for koa with direct
@@ -4763,6 +4768,7 @@
 | 0.5066836790279168 | [react-native-push-notific](./r/react-native-push-notification) | React Native Local and Remote Notifications
 | 0.5060417831520344 | [jsrp](./j/jsrp) | JavaScript SRP implementation
 | 0.5060412433707419 | [jsonquery](./j/jsonquery) | MongoDB query language implemented as a node.js St
+| 0.5057563107313061 | [gematriya](./g/gematriya) | Convert numbers to gematriya representation, and v
 | 0.5056583912163266 | [rmc-nuka-carousel](./r/rmc-nuka-carousel) | Pure React Carousel
 | 0.5055634901464858 | [typestub-ipfs](./t/typestub-ipfs) | The type definition for IPFS package
 | 0.5052405314662184 | [event-lite](./e/event-lite) | Light-weight EventEmitter (less than 1KB when gzip
@@ -5014,6 +5020,7 @@
 | 0.46385576710457654 | [react-bytesize-icons](./r/react-bytesize-icons) | Bytesize Icons as React Components.
 | 0.46377598274325565 | [react-toggle](./r/react-toggle) | An elegant, accessible toggle component for React.
 | 0.46376690101277573 | [qwest](./q/qwest) | Ajax library with XHR2, promises and request limit
+| 0.4635917578214042 | [headroom](./h/headroom) | The same old headroom simplified
 | 0.4635605953915495 | [react-toastr](./r/react-toastr) | React.js toastr component
 | 0.4635569916866934 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP
 | 0.4633369043579578 | [prex](./p/prex) | Async coordination primitives and extensions on to
@@ -6099,6 +6106,7 @@
 | 0.31323792530113276 | [react-native-i18n](./r/react-native-i18n) | Provide I18n to your React Native application
 | 0.31287050960386936 | [callsite](./c/callsite) | access to v8's CallSites
 | 0.3126173251405001 | [jwt-client](./j/jwt-client) | Micro service to read, write and save JWT headers
+| 0.31245071538145286 | [highlightjs](./h/highlightjs) | Syntax highlighting for the Web
 | 0.3121213230796004 | [mem-cache](./m/mem-cache) | simple in memory key/value cache with autoclean by
 | 0.3119955869884978 | [jschannel](./j/jschannel) | Mozilla's Channel mechanism built on top of post-m
 | 0.3118488480144524 | [nivo__bar](./n/nivo__bar) | -
@@ -6474,6 +6482,7 @@
 | 0.22842720681238812 | [androiduix](./a/androiduix) | Framework to make high-performance SPA/WebApp. Ren
 | 0.22834625549519358 | [mrmlnc__readdir-enhanced](./m/mrmlnc__readdir-enhanced) | fs.readdir with sync, async, and streaming APIs + 
 | 0.22816529174730715 | [express-ws-routes](./e/express-ws-routes) | Handle WebSocket connections using express routes.
+| 0.2275893770962782 | [gatsby-core-utils](./g/gatsby-core-utils) | A collection of gatsby utils used in different gat
 | 0.2269701992739989 | [dogapi](./d/dogapi) | Datadog API Node.JS Client
 | 0.22583764496409922 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
 | 0.22578708055864266 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam

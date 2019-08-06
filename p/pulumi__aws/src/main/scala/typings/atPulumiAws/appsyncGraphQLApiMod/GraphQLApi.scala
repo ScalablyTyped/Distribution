@@ -45,6 +45,9 @@ class GraphQLApi protected () extends CustomResource {
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
   val openidConnectConfig: Output[js.UndefOr[Anon_AuthTtl]] = js.native
+  /**
+    * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
+    */
   val schema: Output[js.UndefOr[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.

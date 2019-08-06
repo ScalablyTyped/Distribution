@@ -13,7 +13,13 @@ object rollupStrings {
   sealed trait amd extends ModuleFormat
   
   @js.native
+  sealed trait asset extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait chunk extends js.Object
   
   @js.native
   sealed trait cjs extends ModuleFormat
@@ -59,7 +65,11 @@ object rollupStrings {
   @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
   @scala.inline
+  def asset: asset = "asset".asInstanceOf[asset]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def chunk: chunk = "chunk".asInstanceOf[chunk]
   @scala.inline
   def cjs: cjs = "cjs".asInstanceOf[cjs]
   @scala.inline

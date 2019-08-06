@@ -7,7 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubnetGroupArgs extends js.Object {
+  /**
+    * The description of the neptune subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the neptune subnet group. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

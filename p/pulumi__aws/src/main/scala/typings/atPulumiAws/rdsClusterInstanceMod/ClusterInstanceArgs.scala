@@ -49,6 +49,9 @@ trait ClusterInstanceArgs extends js.Object {
     * The database engine version.
     */
   val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

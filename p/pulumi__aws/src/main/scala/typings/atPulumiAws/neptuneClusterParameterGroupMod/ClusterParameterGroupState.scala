@@ -12,6 +12,9 @@ trait ClusterParameterGroupState extends js.Object {
     * The ARN of the neptune cluster parameter group.
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the neptune cluster parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The family of the neptune cluster parameter group.

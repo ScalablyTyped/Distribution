@@ -5,6 +5,8 @@ import typings.std.Pick
 import typings.webdriverio.WebdriverIOAsyncNs.Element
 import typings.webdriverio.webdriverioStrings.DOLLAR
 import typings.webdriverio.webdriverioStrings.DOLLARDOLLAR
+import typings.webdriverio.webdriverioStrings.ELEMENT
+import typings.webdriverio.webdriverioStrings.`element-6066-11e4-a52e-4f735466cecf`
 import typings.webdriverio.webdriverioStrings.addCommand
 import typings.webdriverio.webdriverioStrings.elementId
 import typings.webdriverio.webdriverioStrings.options
@@ -34,11 +36,11 @@ package object webdriverio {
   // Element commands that should be wrapper with Promise
   type ElementPromise = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
-    addCommand | DOLLAR | DOLLARDOLLAR | selector | elementId
+    addCommand | DOLLAR | DOLLARDOLLAR | selector | elementId | `element-6066-11e4-a52e-4f735466cecf` | ELEMENT
   ]
   // Element commands that should not be wrapper with promise
   type ElementStatic = Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
-    addCommand | selector | elementId
+    addCommand | selector | elementId | `element-6066-11e4-a52e-4f735466cecf` | ELEMENT
   ]
 }

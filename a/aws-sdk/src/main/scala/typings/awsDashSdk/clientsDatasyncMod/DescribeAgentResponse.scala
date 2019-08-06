@@ -13,7 +13,10 @@ trait DescribeAgentResponse extends js.Object {
     * The time that the agent was activated (that is, created in your account).
     */
   var CreationTime: js.UndefOr[Time] = js.undefined
-  var EndpointOptions: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.EndpointOptions] = js.undefined
+  /**
+    * The type of endpoint that your agent is connected to. If the endpoint is a VPC endpoint, the agent is not accessible over the public Internet. 
+    */
+  var EndpointType: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.EndpointType] = js.undefined
   /**
     * The time that the agent last connected to DataSyc.
     */
@@ -22,6 +25,9 @@ trait DescribeAgentResponse extends js.Object {
     * The name of the agent.
     */
   var Name: js.UndefOr[TagValue] = js.undefined
+  /**
+    * The subnet and the security group that DataSync used to access a VPC endpoint.
+    */
   var PrivateLinkConfig: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.PrivateLinkConfig] = js.undefined
   /**
     * The status of the agent. If the status is ONLINE, then the agent is configured properly and is available to use. The Running status is the normal running status for an agent. If the status is OFFLINE, the agent's VM is turned off or the agent is in an unhealthy state. When the issue that caused the unhealthy state is resolved, the agent returns to ONLINE status.
@@ -34,7 +40,7 @@ object DescribeAgentResponse {
   def apply(
     AgentArn: AgentArn = null,
     CreationTime: Time = null,
-    EndpointOptions: EndpointOptions = null,
+    EndpointType: EndpointType = null,
     LastConnectionTime: Time = null,
     Name: TagValue = null,
     PrivateLinkConfig: PrivateLinkConfig = null,
@@ -43,7 +49,7 @@ object DescribeAgentResponse {
     val __obj = js.Dynamic.literal()
     if (AgentArn != null) __obj.updateDynamic("AgentArn")(AgentArn)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (EndpointOptions != null) __obj.updateDynamic("EndpointOptions")(EndpointOptions)
+    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
     if (LastConnectionTime != null) __obj.updateDynamic("LastConnectionTime")(LastConnectionTime)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (PrivateLinkConfig != null) __obj.updateDynamic("PrivateLinkConfig")(PrivateLinkConfig)

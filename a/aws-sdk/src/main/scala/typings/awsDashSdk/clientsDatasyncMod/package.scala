@@ -26,11 +26,19 @@ package object clientsDatasyncMod {
   type Atime = _Atime | String
   type BytesPerSecond = Double
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  type DestinationNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
   type Duration = Double
   type Ec2SecurityGroupArn = String
   type Ec2SecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
   type Ec2SubnetArn = String
   type EfsFilesystemArn = String
+  type Endpoint = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PUBLIC
+    - typings.awsDashSdk.awsDashSdkStrings.PRIVATE_LINK
+    - java.lang.String
+  */
+  type EndpointType = _EndpointType | String
   type FilterList = js.Array[FilterRule]
   type FilterType = SIMPLE_PATTERN | String
   type FilterValue = String
@@ -54,6 +62,7 @@ package object clientsDatasyncMod {
     - java.lang.String
   */
   type Mtime = _Mtime | String
+  type NetworkInterfaceArn = String
   type NextToken = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AUTOMATIC
@@ -94,6 +103,7 @@ package object clientsDatasyncMod {
   type PreserveDevices = _PreserveDevices | String
   type S3BucketArn = String
   type ServerHostname = String
+  type SourceNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
   type Subdirectory = String
   type TagKey = String
   type TagKeyList = js.Array[TagKey]
@@ -137,6 +147,7 @@ package object clientsDatasyncMod {
     - java.lang.String
   */
   type VerifyMode = _VerifyMode | String
+  type VpcEndpointId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-09`
     - typings.awsDashSdk.awsDashSdkStrings.latest

@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
 package object rollupMod {
   type AddonHook = String | (js.ThisFunction0[/* this */ PluginContext, String | js.Promise[String]])
   type EmitAsset = js.Function2[/* name */ String, /* source */ js.UndefOr[String | Buffer], String]
-  type EmitChunk = js.Function2[/* name */ String, /* options */ js.UndefOr[Anon_Name], String]
+  type EmitChunk = js.Function2[/* id */ String, /* options */ js.UndefOr[Anon_Name], String]
+  type EmitFile = js.Function1[/* emittedFile */ EmittedFile, String]
   type ExternalOption = js.Array[String] | IsExternal
   type GetManualChunk = js.Function1[/* id */ String, js.UndefOr[String | Null]]
   type GlobalsOption = StringDictionary[String] | (js.Function1[/* name */ String, String])
@@ -39,6 +40,7 @@ package object rollupMod {
   type ModuleSideEffectsOption = Boolean | `no-external` | js.Array[String] | HasModuleSideEffects
   type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, String])
   type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
+  type OutputBundleWithPlaceholders = StringDictionary[OutputAsset | OutputChunk | js.Object]
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
   type PureModulesOption = Boolean | js.Array[String] | IsPureModule
   type RenderChunkHook = js.ThisFunction3[

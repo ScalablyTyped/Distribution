@@ -126,6 +126,11 @@ trait DistributionState extends js.Object {
     * configuration for this distribution (maximum one).
     */
   val restrictions: js.UndefOr[Input[Anon_GeoRestrictionAnonLocationsRestrictionType]] = js.undefined
+  /**
+    * Disables the distribution instead of
+    * deleting it when destroying the resource. If this is set,
+    * the distribution needs to be deleted manually afterwards. Default: `false`.
+    */
   val retainOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * The current status of the distribution. `Deployed` if the

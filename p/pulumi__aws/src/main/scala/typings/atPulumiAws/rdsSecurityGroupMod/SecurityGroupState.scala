@@ -12,6 +12,9 @@ trait SecurityGroupState extends js.Object {
     * The arn of the DB security group.
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the DB security group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * A list of ingress rules.

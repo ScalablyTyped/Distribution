@@ -26,6 +26,9 @@ class NotebookInstanceLifecycleConfiguration protected () extends CustomResource
     * The Amazon Resource Name (ARN) assigned by AWS to this lifecycle configuration.
     */
   val arn: Output[String] = js.native
+  /**
+    * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.

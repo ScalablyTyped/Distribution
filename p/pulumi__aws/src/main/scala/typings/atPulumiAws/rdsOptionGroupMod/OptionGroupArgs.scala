@@ -24,6 +24,9 @@ trait OptionGroupArgs extends js.Object {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the option group. Defaults to "Managed by Pulumi".
+    */
   val optionGroupDescription: js.UndefOr[Input[String]] = js.undefined
   /**
     * A list of Options to apply.

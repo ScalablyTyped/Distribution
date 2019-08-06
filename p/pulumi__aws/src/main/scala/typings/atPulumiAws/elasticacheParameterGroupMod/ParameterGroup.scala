@@ -22,6 +22,9 @@ class ParameterGroup protected () extends CustomResource {
     */
   def this(name: String, args: ParameterGroupArgs) = this()
   def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The description of the ElastiCache parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * The family of the ElastiCache parameter group.

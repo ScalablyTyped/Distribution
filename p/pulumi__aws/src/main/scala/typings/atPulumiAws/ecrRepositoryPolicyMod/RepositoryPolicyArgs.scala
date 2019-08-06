@@ -7,6 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RepositoryPolicyArgs extends js.Object {
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Input[String | PolicyDocument]
   /**
     * Name of the repository to apply the policy.

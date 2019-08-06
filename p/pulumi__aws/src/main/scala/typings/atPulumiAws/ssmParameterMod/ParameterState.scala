@@ -28,6 +28,9 @@ trait ParameterState extends js.Object {
     * The name of the parameter. If the name contains a path (e.g. any forward slashes (`/`)), it must be fully qualified with a leading forward slash (`/`). For additional requirements and constraints, see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
     */
   val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Overwrite an existing parameter. If not specified, will default to `false` if the resource has not been created by this provider to avoid overwrite of existing resource and will default to `true` otherwise (lifecycle rules should then be used to manage the update behavior).
+    */
   val overwrite: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * A mapping of tags to assign to the object.

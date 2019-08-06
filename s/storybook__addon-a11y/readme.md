@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-a11y
 
-Typings are for version 5.0
+Typings are for version 5.1.10
 
 ## Library description:
 a11y addon for storybook
@@ -24,7 +24,7 @@ a11y addon for storybook
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecurityGroupState extends js.Object {
+  /**
+    * description for the cache security group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * Name for the cache security group. This value is stored as a lowercase string.

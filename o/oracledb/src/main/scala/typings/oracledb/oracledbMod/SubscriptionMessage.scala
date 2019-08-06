@@ -14,6 +14,12 @@ trait SubscriptionMessage extends js.Object {
   var dbName: js.UndefOr[String] = js.undefined
   /** Array of objects specifying the queries which were affected by the Query Change notification. */
   var queries: js.UndefOr[js.Array[Anon_Tables]] = js.undefined
+  /**
+    * Name of the Advanced Queue. Undefined for CQN.
+    * 
+    * @since 4.0
+    */
+  var queueName: js.UndefOr[String] = js.undefined
   /** Indicates whether the subscription is registerd with the database. */
   var registered: js.UndefOr[Boolean] = js.undefined
   /** Array of objects specifying the tables which were affected by the notification. */
@@ -29,6 +35,7 @@ object SubscriptionMessage {
   def apply(
     dbName: String = null,
     queries: js.Array[Anon_Tables] = null,
+    queueName: String = null,
     registered: js.UndefOr[Boolean] = js.undefined,
     tables: js.Array[SubscriptionTables] = null,
     txId: Buffer = null,
@@ -37,6 +44,7 @@ object SubscriptionMessage {
     val __obj = js.Dynamic.literal()
     if (dbName != null) __obj.updateDynamic("dbName")(dbName)
     if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queueName != null) __obj.updateDynamic("queueName")(queueName)
     if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered)
     if (tables != null) __obj.updateDynamic("tables")(tables)
     if (txId != null) __obj.updateDynamic("txId")(txId)

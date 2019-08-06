@@ -106,6 +106,12 @@ trait EnvironmentState extends js.Object {
     * to use in deployment.
     */
   val version: js.UndefOr[Input[ApplicationVersion]] = js.undefined
+  /**
+    * The maximum
+    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
+    * wait for an Elastic Beanstalk Environment to be in a ready state before timing
+    * out.
+    */
   val waitForReadyTimeout: js.UndefOr[Input[String]] = js.undefined
 }
 

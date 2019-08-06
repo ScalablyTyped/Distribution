@@ -1,8 +1,8 @@
 package typings.gremlin.gremlinMod
 
-import typings.gremlin.gremlinMod.driverNs.Authenticator
 import typings.gremlin.gremlinMod.driverNs.RemoteConnection
 import typings.gremlin.gremlinMod.driverNs.RemoteTraversal
+import typings.gremlin.gremlinMod.driverNs.authNs.Authenticator
 import typings.gremlin.gremlinMod.processNs.Bytecode
 import typings.gremlin.gremlinMod.processNs.Traversal
 import typings.gremlin.gremlinMod.processNs.TraversalSideEffects
@@ -16,12 +16,6 @@ import scala.scalajs.js.annotation._
 @JSImport("gremlin", "driver")
 @js.native
 object driverNs extends js.Object {
-  @js.native
-  class Authenticator () extends js.Object {
-    def this(options: js.Any) = this()
-    def evaluateChallenge(challenge: String): js.Any = js.native
-  }
-  
   @js.native
   class Client protected () extends js.Object {
     def this(url: String) = this()
@@ -38,12 +32,6 @@ object driverNs extends js.Object {
   class DriverRemoteConnection protected () extends RemoteConnection {
     def this(url: String) = this()
     def this(url: String, options: js.Any) = this()
-  }
-  
-  @js.native
-  class PlainTextSaslAuthenticator protected () extends Authenticator {
-    def this(username: String, password: String) = this()
-    def this(username: String, password: String, authzid: String) = this()
   }
   
   @js.native
@@ -73,6 +61,23 @@ object driverNs extends js.Object {
     def this(items: js.Array[_], attributes: MapConstructor) = this()
     def first(): js.Any = js.native
     def toArray(): js.Array[_] = js.native
+  }
+  
+  @JSName("auth")
+  @js.native
+  object authNs extends js.Object {
+    @js.native
+    class Authenticator () extends js.Object {
+      def this(options: js.Any) = this()
+      def evaluateChallenge(challenge: String): js.Any = js.native
+    }
+    
+    @js.native
+    class PlainTextSaslAuthenticator protected () extends Authenticator {
+      def this(username: String, password: String) = this()
+      def this(username: String, password: String, authzid: String) = this()
+    }
+    
   }
   
 }

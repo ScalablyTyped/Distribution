@@ -67,6 +67,7 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.lowestPrice
     - typings.awsDashSdk.awsDashSdkStrings.diversified
+    - typings.awsDashSdk.awsDashSdkStrings.capacityOptimized
     - java.lang.String
   */
   type AllocationStrategy = _AllocationStrategy | java.lang.String
@@ -1367,6 +1368,7 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`lowest-price`
     - typings.awsDashSdk.awsDashSdkStrings.diversified
+    - typings.awsDashSdk.awsDashSdkStrings.`capacity-optimized`
     - java.lang.String
   */
   type SpotAllocationStrategy = _SpotAllocationStrategy | java.lang.String

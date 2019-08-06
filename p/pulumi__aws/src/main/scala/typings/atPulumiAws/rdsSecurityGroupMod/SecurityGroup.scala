@@ -27,6 +27,9 @@ class SecurityGroup protected () extends CustomResource {
     * The arn of the DB security group.
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the DB security group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * A list of ingress rules.

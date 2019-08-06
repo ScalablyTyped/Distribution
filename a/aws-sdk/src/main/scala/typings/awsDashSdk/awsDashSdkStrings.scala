@@ -847,6 +847,8 @@ import typings.awsDashSdk.clientsInspectorMod._StopAction
 import typings.awsDashSdk.clientsIotMod._AuditCheckRunStatus
 import typings.awsDashSdk.clientsIotMod._AuditFindingSeverity
 import typings.awsDashSdk.clientsIotMod._AuditFrequency
+import typings.awsDashSdk.clientsIotMod._AuditMitigationActionsExecutionStatus
+import typings.awsDashSdk.clientsIotMod._AuditMitigationActionsTaskStatus
 import typings.awsDashSdk.clientsIotMod._AuditTaskStatus
 import typings.awsDashSdk.clientsIotMod._AuditTaskType
 import typings.awsDashSdk.clientsIotMod._AuthDecision
@@ -862,6 +864,7 @@ import typings.awsDashSdk.clientsIotMod._JobExecutionFailureType
 import typings.awsDashSdk.clientsIotMod._JobExecutionStatus
 import typings.awsDashSdk.clientsIotMod._LogTargetType
 import typings.awsDashSdk.clientsIotMod._MessageFormat
+import typings.awsDashSdk.clientsIotMod._MitigationActionType
 import typings.awsDashSdk.clientsIotMod._OTAUpdateStatus
 import typings.awsDashSdk.clientsIotMod._ReportType
 import typings.awsDashSdk.clientsIotMod._ResourceType
@@ -3001,6 +3004,9 @@ object awsDashSdkStrings {
   sealed trait ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE extends _ActionType
   
   @js.native
+  sealed trait ADD_THINGS_TO_THING_GROUP extends _MitigationActionType
+  
+  @js.native
   sealed trait ADJ extends _PartOfSpeechTagType
   
   @js.native
@@ -4956,6 +4962,9 @@ object awsDashSdkStrings {
   sealed trait BLACKLISTED extends _AgentStatus
   
   @js.native
+  sealed trait BLANK_POLICY extends js.Object
+  
+  @js.native
   sealed trait BLEND extends _DeinterlaceAlgorithm
   
   @js.native
@@ -5391,6 +5400,8 @@ object awsDashSdkStrings {
   sealed trait CANCELED
     extends _AssessmentRunState
        with _AuditCheckRunStatus
+       with _AuditMitigationActionsExecutionStatus
+       with _AuditMitigationActionsTaskStatus
        with _AuditTaskStatus
        with _CloseStatus
        with _HandshakeState
@@ -5881,6 +5892,8 @@ object awsDashSdkStrings {
   sealed trait COMPLETED
     extends _ApplicationStatus
        with _AssessmentRunState
+       with _AuditMitigationActionsExecutionStatus
+       with _AuditMitigationActionsTaskStatus
        with _AuditTaskStatus
        with _BackupJobState
        with _BuildPhaseType
@@ -7008,6 +7021,9 @@ object awsDashSdkStrings {
     extends _CountryCode
        with _GeoMatchConstraintValue
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait DEACTIVATE extends js.Object
   
   @js.native
   sealed trait DEACTIVATED extends _TriggerState
@@ -8676,6 +8692,9 @@ object awsDashSdkStrings {
   sealed trait ENABLE_AUTORENEW extends _OperationType
   
   @js.native
+  sealed trait ENABLE_IOT_LOGGING extends _MitigationActionType
+  
+  @js.native
   sealed trait ENABLING
     extends _DeliveryStreamEncryptionStatus
        with _SSEStatus
@@ -9254,6 +9273,8 @@ object awsDashSdkStrings {
        with _AggregatedSourceStatusType
        with _AssessmentRunState
        with _AuditCheckRunStatus
+       with _AuditMitigationActionsExecutionStatus
+       with _AuditMitigationActionsTaskStatus
        with _AuditReportStatus
        with _AuditTaskStatus
        with _AutoScalingPolicyState
@@ -11653,6 +11674,8 @@ object awsDashSdkStrings {
     extends _AcceleratorStatus
        with _ApplicationStatus
        with _AuditCheckRunStatus
+       with _AuditMitigationActionsExecutionStatus
+       with _AuditMitigationActionsTaskStatus
        with _AuditTaskStatus
        with typings.awsDashSdk.clientsOpsworkscmMod._BackupStatus
        with _BulkPublishStatus
@@ -15459,6 +15482,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PENDING
     extends _AgentUpdateStatus
+       with _AuditMitigationActionsExecutionStatus
        with _AutoScalingPolicyState
        with _BackupJobState
        with _ChangeStatus
@@ -15831,6 +15855,10 @@ object awsDashSdkStrings {
        with _VisibilityType
   
   @js.native
+  sealed trait PRIVATE_LINK
+    extends typings.awsDashSdk.clientsDatasyncMod._EndpointType
+  
+  @js.native
   sealed trait PRIVILEGE_WITHDRAWN
     extends _LoadBalancerTlsCertificateRevocationReason
        with _RevocationReason
@@ -15979,6 +16007,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PUBLIC
     extends _CommentVisibilityType
+       with typings.awsDashSdk.clientsDatasyncMod._EndpointType
        with typings.awsDashSdk.clientsTransferMod._EndpointType
        with _SkillType
        with _SkillTypeFilter
@@ -15993,6 +16022,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait PUBLISHED extends _CommentStatusType
+  
+  @js.native
+  sealed trait PUBLISH_FINDING_TO_SNS extends _MitigationActionType
   
   @js.native
   sealed trait PULL_REQUEST_CREATED extends _PullRequestEventType
@@ -16793,6 +16825,9 @@ object awsDashSdkStrings {
     extends _MetadataDirective
        with _S3MetadataDirective
        with _TaggingDirective
+  
+  @js.native
+  sealed trait REPLACE_DEFAULT_POLICY_VERSION extends _MitigationActionType
   
   @js.native
   sealed trait REPLICA
@@ -18248,6 +18283,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SKIPPED
     extends _AccountGateStatus
+       with _AuditMitigationActionsExecutionStatus
        with _ExecutionResult
   
   @js.native
@@ -20675,6 +20711,9 @@ object awsDashSdkStrings {
   sealed trait UPDATEPOLICY extends _ResourceAttribute
   
   @js.native
+  sealed trait UPDATE_CA_CERTIFICATE extends _MitigationActionType
+  
+  @js.native
   sealed trait UPDATE_COMPLETE
     extends typings.awsDashSdk.clientsCloudformationMod._ResourceStatus
        with _StackStatus
@@ -20684,6 +20723,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait UPDATE_DATE extends _OperationFilterName
+  
+  @js.native
+  sealed trait UPDATE_DEVICE_CERTIFICATE extends _MitigationActionType
   
   @js.native
   sealed trait UPDATE_DOMAIN_CONTACT extends _OperationType
@@ -22659,6 +22701,12 @@ object awsDashSdkStrings {
     extends _BundleTaskState
        with _ConversionTaskState
        with _ExportTaskState
+  
+  @js.native
+  sealed trait `capacity-optimized` extends _SpotAllocationStrategy
+  
+  @js.native
+  sealed trait capacityOptimized extends _AllocationStrategy
   
   @js.native
   sealed trait cc1DOT4xlarge
@@ -28274,6 +28322,8 @@ object awsDashSdkStrings {
   @scala.inline
   def ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE: ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE = "ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE".asInstanceOf[ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE]
   @scala.inline
+  def ADD_THINGS_TO_THING_GROUP: ADD_THINGS_TO_THING_GROUP = "ADD_THINGS_TO_THING_GROUP".asInstanceOf[ADD_THINGS_TO_THING_GROUP]
+  @scala.inline
   def ADJ: ADJ = "ADJ".asInstanceOf[ADJ]
   @scala.inline
   def ADM: ADM = "ADM".asInstanceOf[ADM]
@@ -29246,6 +29296,8 @@ object awsDashSdkStrings {
   @scala.inline
   def BLACKLISTED: BLACKLISTED = "BLACKLISTED".asInstanceOf[BLACKLISTED]
   @scala.inline
+  def BLANK_POLICY: BLANK_POLICY = "BLANK_POLICY".asInstanceOf[BLANK_POLICY]
+  @scala.inline
   def BLEND: BLEND = "BLEND".asInstanceOf[BLEND]
   @scala.inline
   def BLENDED_COST: BLENDED_COST = "BLENDED_COST".asInstanceOf[BLENDED_COST]
@@ -30192,6 +30244,8 @@ object awsDashSdkStrings {
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
   @scala.inline
+  def DEACTIVATE: DEACTIVATE = "DEACTIVATE".asInstanceOf[DEACTIVATE]
+  @scala.inline
   def DEACTIVATED: DEACTIVATED = "DEACTIVATED".asInstanceOf[DEACTIVATED]
   @scala.inline
   def DEACTIVATING: DEACTIVATING = "DEACTIVATING".asInstanceOf[DEACTIVATING]
@@ -30875,6 +30929,8 @@ object awsDashSdkStrings {
   def ENABLE_ALL_FEATURES: ENABLE_ALL_FEATURES = "ENABLE_ALL_FEATURES".asInstanceOf[ENABLE_ALL_FEATURES]
   @scala.inline
   def ENABLE_AUTORENEW: ENABLE_AUTORENEW = "ENABLE_AUTORENEW".asInstanceOf[ENABLE_AUTORENEW]
+  @scala.inline
+  def ENABLE_IOT_LOGGING: ENABLE_IOT_LOGGING = "ENABLE_IOT_LOGGING".asInstanceOf[ENABLE_IOT_LOGGING]
   @scala.inline
   def ENABLING: ENABLING = "ENABLING".asInstanceOf[ENABLING]
   @scala.inline
@@ -34234,6 +34290,8 @@ object awsDashSdkStrings {
   @scala.inline
   def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
   @scala.inline
+  def PRIVATE_LINK: PRIVATE_LINK = "PRIVATE_LINK".asInstanceOf[PRIVATE_LINK]
+  @scala.inline
   def PRIVILEGE_WITHDRAWN: PRIVILEGE_WITHDRAWN = "PRIVILEGE_WITHDRAWN".asInstanceOf[PRIVILEGE_WITHDRAWN]
   @scala.inline
   def PROBING: PROBING = "PROBING".asInstanceOf[PROBING]
@@ -34307,6 +34365,8 @@ object awsDashSdkStrings {
   def PUBLISH: PUBLISH = "PUBLISH".asInstanceOf[PUBLISH]
   @scala.inline
   def PUBLISHED: PUBLISHED = "PUBLISHED".asInstanceOf[PUBLISHED]
+  @scala.inline
+  def PUBLISH_FINDING_TO_SNS: PUBLISH_FINDING_TO_SNS = "PUBLISH_FINDING_TO_SNS".asInstanceOf[PUBLISH_FINDING_TO_SNS]
   @scala.inline
   def PULL_REQUEST_CREATED: PULL_REQUEST_CREATED = "PULL_REQUEST_CREATED".asInstanceOf[PULL_REQUEST_CREATED]
   @scala.inline
@@ -34709,6 +34769,8 @@ object awsDashSdkStrings {
   def REPEAT: REPEAT = "REPEAT".asInstanceOf[REPEAT]
   @scala.inline
   def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
+  @scala.inline
+  def REPLACE_DEFAULT_POLICY_VERSION: REPLACE_DEFAULT_POLICY_VERSION = "REPLACE_DEFAULT_POLICY_VERSION".asInstanceOf[REPLACE_DEFAULT_POLICY_VERSION]
   @scala.inline
   def REPLICA: REPLICA = "REPLICA".asInstanceOf[REPLICA]
   @scala.inline
@@ -36646,11 +36708,15 @@ object awsDashSdkStrings {
   @scala.inline
   def UPDATEPOLICY: UPDATEPOLICY = "UPDATEPOLICY".asInstanceOf[UPDATEPOLICY]
   @scala.inline
+  def UPDATE_CA_CERTIFICATE: UPDATE_CA_CERTIFICATE = "UPDATE_CA_CERTIFICATE".asInstanceOf[UPDATE_CA_CERTIFICATE]
+  @scala.inline
   def UPDATE_COMPLETE: UPDATE_COMPLETE = "UPDATE_COMPLETE".asInstanceOf[UPDATE_COMPLETE]
   @scala.inline
   def UPDATE_COMPLETE_CLEANUP_IN_PROGRESS: UPDATE_COMPLETE_CLEANUP_IN_PROGRESS = "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS".asInstanceOf[UPDATE_COMPLETE_CLEANUP_IN_PROGRESS]
   @scala.inline
   def UPDATE_DATE: UPDATE_DATE = "UPDATE_DATE".asInstanceOf[UPDATE_DATE]
+  @scala.inline
+  def UPDATE_DEVICE_CERTIFICATE: UPDATE_DEVICE_CERTIFICATE = "UPDATE_DEVICE_CERTIFICATE".asInstanceOf[UPDATE_DEVICE_CERTIFICATE]
   @scala.inline
   def UPDATE_DOMAIN_CONTACT: UPDATE_DOMAIN_CONTACT = "UPDATE_DOMAIN_CONTACT".asInstanceOf[UPDATE_DOMAIN_CONTACT]
   @scala.inline
@@ -37597,6 +37663,10 @@ object awsDashSdkStrings {
   def cancelled_terminating: cancelled_terminating = "cancelled_terminating".asInstanceOf[cancelled_terminating]
   @scala.inline
   def cancelling: cancelling = "cancelling".asInstanceOf[cancelling]
+  @scala.inline
+  def `capacity-optimized`: `capacity-optimized` = "capacity-optimized".asInstanceOf[`capacity-optimized`]
+  @scala.inline
+  def capacityOptimized: capacityOptimized = "capacityOptimized".asInstanceOf[capacityOptimized]
   @scala.inline
   def cc1DOT4xlarge: cc1DOT4xlarge = "cc1.4xlarge".asInstanceOf[cc1DOT4xlarge]
   @scala.inline

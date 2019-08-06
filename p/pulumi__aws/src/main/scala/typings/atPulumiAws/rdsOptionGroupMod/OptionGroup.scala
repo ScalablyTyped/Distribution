@@ -43,6 +43,9 @@ class OptionGroup protected () extends CustomResource {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
   val namePrefix: Output[String] = js.native
+  /**
+    * The description of the option group. Defaults to "Managed by Pulumi".
+    */
   val optionGroupDescription: Output[String] = js.native
   /**
     * A list of Options to apply.

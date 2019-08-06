@@ -18,6 +18,10 @@ trait LoadBalancerArgs extends js.Object {
     * This is a `network` load balancer feature. Defaults to `false`.
     */
   val enableCrossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * If true, deletion of the load balancer will be disabled via
+    * the AWS API. This will prevent this provider from deleting the load balancer. Defaults to `false`.
+    */
   val enableDeletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
@@ -39,6 +43,11 @@ trait LoadBalancerArgs extends js.Object {
     * The type of load balancer to create. Possible values are `application` or `network`. The default value is `application`.
     */
   val loadBalancerType: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
+    * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
+    * this provider will autogenerate a name beginning with `tf-lb`.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fnando__sparkline"
-version := "0.3-dt-20190731Z-bb4149"
+version := "0.3-dt-20190805Z-74a991"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

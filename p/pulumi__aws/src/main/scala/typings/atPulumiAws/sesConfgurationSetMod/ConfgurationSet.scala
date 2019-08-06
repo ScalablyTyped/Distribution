@@ -22,9 +22,6 @@ class ConfgurationSet protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: ConfgurationSetArgs) = this()
   def this(name: String, args: ConfgurationSetArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The name of the configuration set
-    */
   val name: Output[String] = js.native
 }
 

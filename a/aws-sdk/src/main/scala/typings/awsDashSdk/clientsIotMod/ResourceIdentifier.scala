@@ -18,7 +18,7 @@ trait ResourceIdentifier extends js.Object {
     */
   var clientId: js.UndefOr[ClientId] = js.undefined
   /**
-    * The ID of the Cognito Identity Pool.
+    * The ID of the Amazon Cognito identity pool.
     */
   var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.undefined
   /**

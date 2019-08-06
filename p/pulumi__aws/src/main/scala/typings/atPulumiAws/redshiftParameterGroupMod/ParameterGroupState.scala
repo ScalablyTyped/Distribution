@@ -12,6 +12,9 @@ trait ParameterGroupState extends js.Object {
     * Amazon Resource Name (ARN) of parameter group
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the Redshift parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The family of the Redshift parameter group.

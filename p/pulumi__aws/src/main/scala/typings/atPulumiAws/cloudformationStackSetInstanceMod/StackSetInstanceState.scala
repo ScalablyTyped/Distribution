@@ -19,6 +19,9 @@ trait StackSetInstanceState extends js.Object {
     * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
     */
   val region: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * During resource destroy, remove Instance from Stack Set while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new Stack Set. Defaults to `false`.
+    */
   val retainStack: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * Stack identifier

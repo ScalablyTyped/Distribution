@@ -10,6 +10,9 @@ trait TopicPolicyArgs extends js.Object {
     * The ARN of the SNS topic
     */
   val arn: Input[String]
+  /**
+    * The fully-formed AWS policy as JSON.
+    */
   val policy: Input[String]
 }
 

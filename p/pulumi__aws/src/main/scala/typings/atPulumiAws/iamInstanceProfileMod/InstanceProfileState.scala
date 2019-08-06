@@ -15,6 +15,9 @@ trait InstanceProfileState extends js.Object {
     * The creation timestamp of the instance profile.
     */
   val createDate: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The profile's name. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -28,6 +31,10 @@ trait InstanceProfileState extends js.Object {
     * The role name to include in the profile.
     */
   val role: js.UndefOr[Input[String | Role]] = js.undefined
+  /**
+    *
+    * A list of role names to include in the profile.  The current default is 1.  If you see an error message similar to `Cannot exceed quota for InstanceSessionsPerInstanceProfile: 1`, then you must contact AWS support and ask for a limit increase.
+    */
   val roles: js.UndefOr[Input[js.Array[Input[String | Role]]]] = js.undefined
   /**
     * The [unique ID][1] assigned by AWS.

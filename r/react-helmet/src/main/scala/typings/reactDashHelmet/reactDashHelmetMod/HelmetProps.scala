@@ -15,7 +15,9 @@ trait HelmetProps extends js.Object {
   var link: js.UndefOr[js.Array[LinkProps]] = js.undefined
   var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
   var noscript: js.UndefOr[js.Array[_]] = js.undefined
-  var onChangeClientState: js.UndefOr[js.Function1[/* newState */ js.Any, Unit]] = js.undefined
+  var onChangeClientState: js.UndefOr[
+    js.Function3[/* newState */ js.Any, /* addedTags */ TagUpdates, /* removedTags */ TagUpdates, Unit]
+  ] = js.undefined
   var script: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Array[_]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -36,7 +38,7 @@ object HelmetProps {
     link: js.Array[LinkProps] = null,
     meta: js.Array[MetaProps] = null,
     noscript: js.Array[_] = null,
-    onChangeClientState: /* newState */ js.Any => Unit = null,
+    onChangeClientState: (/* newState */ js.Any, /* addedTags */ TagUpdates, /* removedTags */ TagUpdates) => Unit = null,
     script: js.Array[_] = null,
     style: js.Array[_] = null,
     title: String = null,
@@ -54,7 +56,7 @@ object HelmetProps {
     if (link != null) __obj.updateDynamic("link")(link)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (noscript != null) __obj.updateDynamic("noscript")(noscript)
-    if (onChangeClientState != null) __obj.updateDynamic("onChangeClientState")(js.Any.fromFunction1(onChangeClientState))
+    if (onChangeClientState != null) __obj.updateDynamic("onChangeClientState")(js.Any.fromFunction3(onChangeClientState))
     if (script != null) __obj.updateDynamic("script")(script)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

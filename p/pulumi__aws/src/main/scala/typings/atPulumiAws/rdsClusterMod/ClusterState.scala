@@ -21,6 +21,9 @@ trait ClusterState extends js.Object {
     * Amazon Resource Name (ARN) of cluster
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next deployment. It is recommended to specify 3 AZs or use `ignore_changes` if necessary.
+    */
   val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * The target backtrack window, in seconds. Only available for `aurora` engine currently. To disable backtracking, set this value to `0`. Defaults to `0`. Must be between `0` and `259200` (72 hours)
@@ -30,6 +33,9 @@ trait ClusterState extends js.Object {
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * The cluster identifier. If omitted, this provider will assign a random, unique identifier.
+    */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

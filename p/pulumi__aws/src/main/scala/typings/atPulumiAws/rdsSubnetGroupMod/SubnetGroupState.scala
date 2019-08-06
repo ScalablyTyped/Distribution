@@ -11,7 +11,13 @@ trait SubnetGroupState extends js.Object {
     * The ARN of the db subnet group.
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the DB subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the DB subnet group. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

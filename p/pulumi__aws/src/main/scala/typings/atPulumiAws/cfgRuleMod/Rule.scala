@@ -1,5 +1,6 @@
 package typings.atPulumiAws.cfgRuleMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.Anon_ComplianceResourceId
 import typings.atPulumiAws.Anon_Owner
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -57,6 +58,10 @@ class Rule protected () extends CustomResource {
     * the function to evaluate your AWS resources as documented below.
     */
   val source: Output[Anon_Owner] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -41,6 +41,9 @@ class Member protected () extends CustomResource {
     * Message for invitation.
     */
   val invitationMessage: Output[js.UndefOr[String]] = js.native
+  /**
+    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationship_status` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
+    */
   val invite: Output[js.UndefOr[Boolean]] = js.native
   /**
     * The status of the relationship between the member account and its master account. More information can be found in [Amazon GuardDuty API Reference](https://docs.aws.amazon.com/guardduty/latest/ug/get-members.html).

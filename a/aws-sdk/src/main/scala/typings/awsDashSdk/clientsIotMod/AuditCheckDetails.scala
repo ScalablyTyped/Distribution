@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait AuditCheckDetails extends js.Object {
   /**
-    * True if the check completed and found all resources compliant.
+    * True if the check is complete and found all resources compliant.
     */
   var checkCompliant: js.UndefOr[CheckCompliant] = js.undefined
   /**
-    * The completion status of this check, one of "IN_PROGRESS", "WAITING_FOR_DATA_COLLECTION", "CANCELED", "COMPLETED_COMPLIANT", "COMPLETED_NON_COMPLIANT", or "FAILED".
+    * The completion status of this check. One of "IN_PROGRESS", "WAITING_FOR_DATA_COLLECTION", "CANCELED", "COMPLETED_COMPLIANT", "COMPLETED_NON_COMPLIANT", or "FAILED".
     */
   var checkRunStatus: js.UndefOr[AuditCheckRunStatus] = js.undefined
   /**
-    * The code of any error encountered when performing this check during this audit. One of "INSUFFICIENT_PERMISSIONS", or "AUDIT_CHECK_DISABLED".
+    * The code of any error encountered when this check is performed during this audit. One of "INSUFFICIENT_PERMISSIONS" or "AUDIT_CHECK_DISABLED".
     */
   var errorCode: js.UndefOr[ErrorCode] = js.undefined
   /**
-    * The message associated with any error encountered when performing this check during this audit.
+    * The message associated with any error encountered when this check is performed during this audit.
     */
   var message: js.UndefOr[ErrorMessage] = js.undefined
   /**
-    * The number of resources that the check found non-compliant.
+    * The number of resources that were found noncompliant during the check.
     */
   var nonCompliantResourcesCount: js.UndefOr[NonCompliantResourcesCount] = js.undefined
   /**

@@ -25,6 +25,9 @@ class ContainerPolicy protected () extends CustomResource {
     * The name of the container.
     */
   val containerName: Output[String] = js.native
+  /**
+    * The contents of the policy.
+    */
   val policy: Output[String] = js.native
 }
 

@@ -25,6 +25,9 @@ trait ModelState extends js.Object {
     * A role that SageMaker can assume to access model artifacts and docker images for deployment.
     */
   val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.

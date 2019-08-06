@@ -20,6 +20,12 @@ trait DomainState extends js.Object {
     * IAM policy document specifying the access policies for the domain
     */
   val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  /**
+    * Key-value string pairs to specify advanced configuration options.
+    * Note that the values for these configuration options must be strings (wrapped in quotes) or they
+    * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
+    * domain on every apply.
+    */
   val advancedOptions: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
     * Amazon Resource Name (ARN) of the domain.

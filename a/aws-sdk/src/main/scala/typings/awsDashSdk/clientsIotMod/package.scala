@@ -1,7 +1,9 @@
 package typings.awsDashSdk
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsDashSdk.awsDashSdkStrings.BLANK_POLICY
 import typings.awsDashSdk.awsDashSdkStrings.CANCEL
+import typings.awsDashSdk.awsDashSdkStrings.DEACTIVATE
 import typings.awsDashSdk.awsDashSdkStrings.SNS
 import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import typings.node.Buffer
@@ -52,6 +54,8 @@ package object clientsIotMod {
     - java.lang.String
   */
   type AuditCheckRunStatus = _AuditCheckRunStatus | java.lang.String
+  type AuditCheckToActionsMapping = StringDictionary[MitigationActionNameList]
+  type AuditCheckToReasonCodeFilter = StringDictionary[ReasonForNonComplianceCodes]
   type AuditDetails = StringDictionary[AuditCheckDetails]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CRITICAL
@@ -70,6 +74,28 @@ package object clientsIotMod {
     - java.lang.String
   */
   type AuditFrequency = _AuditFrequency | java.lang.String
+  type AuditMitigationActionExecutionMetadataList = js.Array[AuditMitigationActionExecutionMetadata]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.CANCELED
+    - typings.awsDashSdk.awsDashSdkStrings.SKIPPED
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING
+    - java.lang.String
+  */
+  type AuditMitigationActionsExecutionStatus = _AuditMitigationActionsExecutionStatus | java.lang.String
+  type AuditMitigationActionsTaskId = java.lang.String
+  type AuditMitigationActionsTaskMetadataList = js.Array[AuditMitigationActionsTaskMetadata]
+  type AuditMitigationActionsTaskStatistics = StringDictionary[TaskStatisticsForAuditCheck]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.CANCELED
+    - java.lang.String
+  */
+  type AuditMitigationActionsTaskStatus = _AuditMitigationActionsTaskStatus | java.lang.String
   type AuditNotificationTargetConfigurations = StringDictionary[AuditNotificationTarget]
   type AuditNotificationType = SNS | java.lang.String
   type AuditTaskId = java.lang.String
@@ -134,8 +160,10 @@ package object clientsIotMod {
     - java.lang.String
   */
   type CACertificateStatus = _CACertificateStatus | java.lang.String
+  type CACertificateUpdateAction = DEACTIVATE | java.lang.String
   type CACertificates = js.Array[CACertificate]
   type CanceledChecksCount = Double
+  type CanceledFindingsCount = Double
   type CanceledThings = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`private`
@@ -172,6 +200,7 @@ package object clientsIotMod {
   type Cidrs = js.Array[Cidr]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientId = java.lang.String
+  type ClientRequestToken = java.lang.String
   type Code = java.lang.String
   type CognitoIdentityPoolId = java.lang.String
   type Comment = java.lang.String
@@ -220,6 +249,8 @@ package object clientsIotMod {
   type DetailsKey = java.lang.String
   type DetailsMap = StringDictionary[DetailsValue]
   type DetailsValue = java.lang.String
+  type DeviceCertificateUpdateAction = DEACTIVATE | java.lang.String
+  type DeviceDefenderThingName = java.lang.String
   type DisableAllLogs = scala.Boolean
   type DurationSeconds = Double
   /* Rewritten from type alias, can be one of: 
@@ -268,9 +299,12 @@ package object clientsIotMod {
   type ExpectedVersion = Double
   type ExpiresInSec = Double
   type FailedChecksCount = Double
+  type FailedFindingsCount = Double
   type FailedThings = Double
   type FileId = Double
   type FileName = java.lang.String
+  type FindingId = java.lang.String
+  type FindingIds = js.Array[FindingId]
   type FirehoseSeparator = java.lang.String
   type Flag = scala.Boolean
   type ForceDelete = scala.Boolean
@@ -377,6 +411,22 @@ package object clientsIotMod {
   type MinimumNumberOfExecutedThings = Double
   type MissingContextValue = java.lang.String
   type MissingContextValues = js.Array[MissingContextValue]
+  type MitigationActionArn = java.lang.String
+  type MitigationActionId = java.lang.String
+  type MitigationActionIdentifierList = js.Array[MitigationActionIdentifier]
+  type MitigationActionList = js.Array[MitigationAction]
+  type MitigationActionName = java.lang.String
+  type MitigationActionNameList = js.Array[MitigationActionName]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.UPDATE_DEVICE_CERTIFICATE
+    - typings.awsDashSdk.awsDashSdkStrings.UPDATE_CA_CERTIFICATE
+    - typings.awsDashSdk.awsDashSdkStrings.ADD_THINGS_TO_THING_GROUP
+    - typings.awsDashSdk.awsDashSdkStrings.REPLACE_DEFAULT_POLICY_VERSION
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLE_IOT_LOGGING
+    - typings.awsDashSdk.awsDashSdkStrings.PUBLISH_FINDING_TO_SNS
+    - java.lang.String
+  */
+  type MitigationActionType = _MitigationActionType | java.lang.String
   type NextToken = java.lang.String
   type NonCompliantChecksCount = Double
   type NonCompliantResourcesCount = Double
@@ -414,6 +464,7 @@ package object clientsIotMod {
   type PolicyNames = js.Array[PolicyName]
   type PolicyTarget = java.lang.String
   type PolicyTargets = js.Array[PolicyTarget]
+  type PolicyTemplateName = BLANK_POLICY | java.lang.String
   type PolicyVersionId = java.lang.String
   type PolicyVersions = js.Array[PolicyVersion]
   type Port = Double
@@ -438,6 +489,7 @@ package object clientsIotMod {
   type ReasonCode = java.lang.String
   type ReasonForNonCompliance = java.lang.String
   type ReasonForNonComplianceCode = java.lang.String
+  type ReasonForNonComplianceCodes = js.Array[ReasonForNonComplianceCode]
   type Recursive = scala.Boolean
   type RecursiveWithoutDefault = scala.Boolean
   type RegistrationCode = java.lang.String
@@ -504,7 +556,9 @@ package object clientsIotMod {
   type SignatureAlgorithm = java.lang.String
   type SigningJobId = java.lang.String
   type SigningProfileName = java.lang.String
+  type SkippedFindingsCount = Double
   type SkyfallMaxResults = Double
+  type SnsTopicArn = java.lang.String
   type StateMachineName = java.lang.String
   type StateReason = java.lang.String
   type StateValue = java.lang.String
@@ -526,6 +580,7 @@ package object clientsIotMod {
   type StreamsSummary = js.Array[StreamSummary]
   type String = java.lang.String
   type StringMap = StringDictionary[String]
+  type SucceededFindingsCount = Double
   type SucceededThings = Double
   type TableName = java.lang.String
   type TagKey = java.lang.String
@@ -568,6 +623,7 @@ package object clientsIotMod {
   type ThingGroupName = java.lang.String
   type ThingGroupNameAndArnList = js.Array[GroupNameAndArn]
   type ThingGroupNameList = js.Array[ThingGroupName]
+  type ThingGroupNames = js.Array[ThingGroupName]
   type ThingId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.OFF
@@ -592,6 +648,7 @@ package object clientsIotMod {
   type TopicPattern = java.lang.String
   type TopicRuleList = js.Array[TopicRuleListItem]
   type TotalChecksCount = Double
+  type TotalFindingsCount = Double
   type TotalResourcesCount = Double
   type UndoDeprecate = scala.Boolean
   type UnsignedLong = Double

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PutItemInput extends js.Object {
   /**
-    * The table where the message data will be written
+    * The table where the message data will be written.
     */
   var tableName: TableName
 }

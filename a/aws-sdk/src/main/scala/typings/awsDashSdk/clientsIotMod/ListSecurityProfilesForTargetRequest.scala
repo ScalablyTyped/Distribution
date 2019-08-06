@@ -14,7 +14,7 @@ trait ListSecurityProfilesForTargetRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * If true, return child groups as well.
+    * If true, return child groups too.
     */
   var recursive: js.UndefOr[Recursive] = js.undefined
   /**

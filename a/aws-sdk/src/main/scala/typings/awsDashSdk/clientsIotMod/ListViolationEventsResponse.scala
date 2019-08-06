@@ -10,7 +10,7 @@ trait ListViolationEventsResponse extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The security profile violation alerts issued for this account during the given time frame, potentially filtered by security profile, behavior violated, or thing (device) violating.
+    * The security profile violation alerts issued for this account during the given time period, potentially filtered by security profile, behavior violated, or thing (device) violating.
     */
   var violationEvents: js.UndefOr[ViolationEvents] = js.undefined
 }

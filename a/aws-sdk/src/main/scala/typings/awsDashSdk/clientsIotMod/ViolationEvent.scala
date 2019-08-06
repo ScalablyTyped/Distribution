@@ -20,7 +20,7 @@ trait ViolationEvent extends js.Object {
   /**
     * The name of the thing responsible for the violation event.
     */
-  var thingName: js.UndefOr[ThingName] = js.undefined
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
   /**
     * The time the violation event occurred.
     */
@@ -41,7 +41,7 @@ object ViolationEvent {
     behavior: Behavior = null,
     metricValue: MetricValue = null,
     securityProfileName: SecurityProfileName = null,
-    thingName: ThingName = null,
+    thingName: DeviceDefenderThingName = null,
     violationEventTime: Timestamp = null,
     violationEventType: ViolationEventType = null,
     violationId: ViolationId = null

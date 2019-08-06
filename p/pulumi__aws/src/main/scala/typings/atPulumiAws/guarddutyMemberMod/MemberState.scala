@@ -26,6 +26,9 @@ trait MemberState extends js.Object {
     * Message for invitation.
     */
   val invitationMessage: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationship_status` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
+    */
   val invite: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * The status of the relationship between the member account and its master account. More information can be found in [Amazon GuardDuty API Reference](https://docs.aws.amazon.com/guardduty/latest/ug/get-members.html).

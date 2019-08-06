@@ -16,6 +16,9 @@ trait EndpointConfigurationState extends js.Object {
     * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
     */
   val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the endpoint configuration. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Fields are documented below.

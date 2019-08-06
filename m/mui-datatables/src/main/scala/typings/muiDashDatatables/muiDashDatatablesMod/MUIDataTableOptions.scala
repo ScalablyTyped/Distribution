@@ -50,6 +50,7 @@ trait MUIDataTableOptions extends js.Object {
   var downloadOptions: js.UndefOr[Anon_Filename] = js.undefined
   var elevation: js.UndefOr[Double] = js.undefined
   var expandableRows: js.UndefOr[Boolean] = js.undefined
+  var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterType: js.UndefOr[FilterType] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
@@ -115,6 +116,7 @@ object MUIDataTableOptions {
     downloadOptions: Anon_Filename = null,
     elevation: Int | Double = null,
     expandableRows: js.UndefOr[Boolean] = js.undefined,
+    expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterType: FilterType = null,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
@@ -163,6 +165,7 @@ object MUIDataTableOptions {
     if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows)
+    if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterType != null) __obj.updateDynamic("filterType")(filterType)
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)

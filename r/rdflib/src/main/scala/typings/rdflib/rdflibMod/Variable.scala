@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rdflib", "Variable")
 @js.native
-class Variable protected () extends Node {
-  /**
-    * Initializes this variable
-    * @param name The variable's name
-    */
+/**
+  * Initializes this variable
+  * @param name The variable's name
+  */
+class Variable () extends Node {
   def this(name: String) = this()
   /**
     * The base string for a variable's name

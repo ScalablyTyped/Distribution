@@ -12,6 +12,7 @@ import typings.jquery.JQueryNs.Promise
 import typings.jquery.JQueryNs.Thenable
 import typings.jquery.JQueryNs.TypeOrArray
 import typings.jquery.JQueryNs.jqXHR
+import typings.std.DragEvent
 import typings.std.Element
 import typings.std.Event
 import typings.std.FocusEvent
@@ -65,6 +66,7 @@ package object jquery {
   type JQuerySupport = PlainObject[js.Any]
   // tslint:disable-next-line:no-empty-interface
   type JQueryXHR = jqXHR[js.Any]
+  type _DragEvent = DragEvent
   type _Event = Event
   type _FocusEvent = FocusEvent
   type _KeyboardEvent = KeyboardEvent

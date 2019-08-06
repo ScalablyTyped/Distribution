@@ -91,12 +91,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Associates a Device Defender security profile with a thing group or with this account. Each thing group or account can have up to five security profiles associated with it.
+    * Associates a Device Defender security profile with a thing group or this account. Each thing group or account can have up to five security profiles associated with it.
     */
   def attachSecurityProfile(): Request[AttachSecurityProfileResponse, AWSError] = js.native
   def attachSecurityProfile(callback: js.Function2[/* err */ AWSError, /* data */ AttachSecurityProfileResponse, Unit]): Request[AttachSecurityProfileResponse, AWSError] = js.native
   /**
-    * Associates a Device Defender security profile with a thing group or with this account. Each thing group or account can have up to five security profiles associated with it.
+    * Associates a Device Defender security profile with a thing group or this account. Each thing group or account can have up to five security profiles associated with it.
     */
   def attachSecurityProfile(params: AttachSecurityProfileRequest): Request[AttachSecurityProfileResponse, AWSError] = js.native
   def attachSecurityProfile(
@@ -116,6 +116,21 @@ trait Iot extends Service {
     params: AttachThingPrincipalRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachThingPrincipalResponse, Unit]
   ): Request[AttachThingPrincipalResponse, AWSError] = js.native
+  /**
+    * Cancels a mitigation action task that is in progress. If the task is not in progress, an InvalidRequestException occurs.
+    */
+  def cancelAuditMitigationActionsTask(): Request[CancelAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def cancelAuditMitigationActionsTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelAuditMitigationActionsTaskResponse, Unit]
+  ): Request[CancelAuditMitigationActionsTaskResponse, AWSError] = js.native
+  /**
+    * Cancels a mitigation action task that is in progress. If the task is not in progress, an InvalidRequestException occurs.
+    */
+  def cancelAuditMitigationActionsTask(params: CancelAuditMitigationActionsTaskRequest): Request[CancelAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def cancelAuditMitigationActionsTask(
+    params: CancelAuditMitigationActionsTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelAuditMitigationActionsTaskResponse, Unit]
+  ): Request[CancelAuditMitigationActionsTaskResponse, AWSError] = js.native
   /**
     * Cancels an audit that is in progress. The audit can be either scheduled or on-demand. If the audit is not in progress, an "InvalidRequestException" occurs.
     */
@@ -259,6 +274,19 @@ trait Iot extends Service {
     params: CreateKeysAndCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateKeysAndCertificateResponse, Unit]
   ): Request[CreateKeysAndCertificateResponse, AWSError] = js.native
+  /**
+    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Each mitigation action can apply only one type of change.
+    */
+  def createMitigationAction(): Request[CreateMitigationActionResponse, AWSError] = js.native
+  def createMitigationAction(callback: js.Function2[/* err */ AWSError, /* data */ CreateMitigationActionResponse, Unit]): Request[CreateMitigationActionResponse, AWSError] = js.native
+  /**
+    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Each mitigation action can apply only one type of change.
+    */
+  def createMitigationAction(params: CreateMitigationActionRequest): Request[CreateMitigationActionResponse, AWSError] = js.native
+  def createMitigationAction(
+    params: CreateMitigationActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMitigationActionResponse, Unit]
+  ): Request[CreateMitigationActionResponse, AWSError] = js.native
   /**
     * Creates an AWS IoT OTAUpdate on a target group of things or groups.
     */
@@ -457,12 +485,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCACertificateResponse, Unit]
   ): Request[DeleteCACertificateResponse, AWSError] = js.native
   /**
-    * Deletes the specified certificate. A certificate cannot be deleted if it has a policy attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
+    * Deletes the specified certificate. A certificate cannot be deleted if it has a policy or IoT thing attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
     */
   def deleteCertificate(): Request[js.Object, AWSError] = js.native
   def deleteCertificate(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified certificate. A certificate cannot be deleted if it has a policy attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
+    * Deletes the specified certificate. A certificate cannot be deleted if it has a policy or IoT thing attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
     */
   def deleteCertificate(params: DeleteCertificateRequest): Request[js.Object, AWSError] = js.native
   def deleteCertificate(
@@ -505,6 +533,19 @@ trait Iot extends Service {
     params: DeleteJobExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a defined mitigation action from your AWS account.
+    */
+  def deleteMitigationAction(): Request[DeleteMitigationActionResponse, AWSError] = js.native
+  def deleteMitigationAction(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMitigationActionResponse, Unit]): Request[DeleteMitigationActionResponse, AWSError] = js.native
+  /**
+    * Deletes a defined mitigation action from your AWS account.
+    */
+  def deleteMitigationAction(params: DeleteMitigationActionRequest): Request[DeleteMitigationActionResponse, AWSError] = js.native
+  def deleteMitigationAction(
+    params: DeleteMitigationActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMitigationActionResponse, Unit]
+  ): Request[DeleteMitigationActionResponse, AWSError] = js.native
   /**
     * Delete an OTA update.
     */
@@ -703,6 +744,34 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAuditConfigurationResponse, Unit]
   ): Request[DescribeAccountAuditConfigurationResponse, AWSError] = js.native
   /**
+    * Gets information about a single audit finding. Properties include the reason for noncompliance, the severity of the issue, and when the audit that returned the finding was started.
+    */
+  def describeAuditFinding(): Request[DescribeAuditFindingResponse, AWSError] = js.native
+  def describeAuditFinding(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditFindingResponse, Unit]): Request[DescribeAuditFindingResponse, AWSError] = js.native
+  /**
+    * Gets information about a single audit finding. Properties include the reason for noncompliance, the severity of the issue, and when the audit that returned the finding was started.
+    */
+  def describeAuditFinding(params: DescribeAuditFindingRequest): Request[DescribeAuditFindingResponse, AWSError] = js.native
+  def describeAuditFinding(
+    params: DescribeAuditFindingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditFindingResponse, Unit]
+  ): Request[DescribeAuditFindingResponse, AWSError] = js.native
+  /**
+    * Gets information about an audit mitigation task that is used to apply mitigation actions to a set of audit findings. Properties include the actions being applied, the audit checks to which they're being applied, the task status, and aggregated task statistics.
+    */
+  def describeAuditMitigationActionsTask(): Request[DescribeAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def describeAuditMitigationActionsTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditMitigationActionsTaskResponse, Unit]
+  ): Request[DescribeAuditMitigationActionsTaskResponse, AWSError] = js.native
+  /**
+    * Gets information about an audit mitigation task that is used to apply mitigation actions to a set of audit findings. Properties include the actions being applied, the audit checks to which they're being applied, the task status, and aggregated task statistics.
+    */
+  def describeAuditMitigationActionsTask(params: DescribeAuditMitigationActionsTaskRequest): Request[DescribeAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def describeAuditMitigationActionsTask(
+    params: DescribeAuditMitigationActionsTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditMitigationActionsTaskResponse, Unit]
+  ): Request[DescribeAuditMitigationActionsTaskResponse, AWSError] = js.native
+  /**
     * Gets information about a Device Defender audit.
     */
   def describeAuditTask(): Request[DescribeAuditTaskResponse, AWSError] = js.native
@@ -845,6 +914,19 @@ trait Iot extends Service {
     params: DescribeJobExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobExecutionResponse, Unit]
   ): Request[DescribeJobExecutionResponse, AWSError] = js.native
+  /**
+    * Gets information about a mitigation action.
+    */
+  def describeMitigationAction(): Request[DescribeMitigationActionResponse, AWSError] = js.native
+  def describeMitigationAction(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMitigationActionResponse, Unit]): Request[DescribeMitigationActionResponse, AWSError] = js.native
+  /**
+    * Gets information about a mitigation action.
+    */
+  def describeMitigationAction(params: DescribeMitigationActionRequest): Request[DescribeMitigationActionResponse, AWSError] = js.native
+  def describeMitigationAction(
+    params: DescribeMitigationActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMitigationActionResponse, Unit]
+  ): Request[DescribeMitigationActionResponse, AWSError] = js.native
   /**
     * Describes a role alias.
     */
@@ -1210,6 +1292,36 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuditFindingsResponse, Unit]
   ): Request[ListAuditFindingsResponse, AWSError] = js.native
   /**
+    * Gets the status of audit mitigation action tasks that were executed.
+    */
+  def listAuditMitigationActionsExecutions(): Request[ListAuditMitigationActionsExecutionsResponse, AWSError] = js.native
+  def listAuditMitigationActionsExecutions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsExecutionsResponse, Unit]
+  ): Request[ListAuditMitigationActionsExecutionsResponse, AWSError] = js.native
+  /**
+    * Gets the status of audit mitigation action tasks that were executed.
+    */
+  def listAuditMitigationActionsExecutions(params: ListAuditMitigationActionsExecutionsRequest): Request[ListAuditMitigationActionsExecutionsResponse, AWSError] = js.native
+  def listAuditMitigationActionsExecutions(
+    params: ListAuditMitigationActionsExecutionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsExecutionsResponse, Unit]
+  ): Request[ListAuditMitigationActionsExecutionsResponse, AWSError] = js.native
+  /**
+    * Gets a list of audit mitigation action tasks that match the specified filters.
+    */
+  def listAuditMitigationActionsTasks(): Request[ListAuditMitigationActionsTasksResponse, AWSError] = js.native
+  def listAuditMitigationActionsTasks(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsTasksResponse, Unit]
+  ): Request[ListAuditMitigationActionsTasksResponse, AWSError] = js.native
+  /**
+    * Gets a list of audit mitigation action tasks that match the specified filters.
+    */
+  def listAuditMitigationActionsTasks(params: ListAuditMitigationActionsTasksRequest): Request[ListAuditMitigationActionsTasksResponse, AWSError] = js.native
+  def listAuditMitigationActionsTasks(
+    params: ListAuditMitigationActionsTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsTasksResponse, Unit]
+  ): Request[ListAuditMitigationActionsTasksResponse, AWSError] = js.native
+  /**
     * Lists the Device Defender audits that have been performed during a given time period.
     */
   def listAuditTasks(): Request[ListAuditTasksResponse, AWSError] = js.native
@@ -1339,6 +1451,19 @@ trait Iot extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of all mitigation actions that match the specified filter criteria.
+    */
+  def listMitigationActions(): Request[ListMitigationActionsResponse, AWSError] = js.native
+  def listMitigationActions(callback: js.Function2[/* err */ AWSError, /* data */ ListMitigationActionsResponse, Unit]): Request[ListMitigationActionsResponse, AWSError] = js.native
+  /**
+    * Gets a list of all mitigation actions that match the specified filter criteria.
+    */
+  def listMitigationActions(params: ListMitigationActionsRequest): Request[ListMitigationActionsResponse, AWSError] = js.native
+  def listMitigationActions(
+    params: ListMitigationActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMitigationActionsResponse, Unit]
+  ): Request[ListMitigationActionsResponse, AWSError] = js.native
   /**
     * Lists OTA updates.
     */
@@ -1680,12 +1805,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListV2LoggingLevelsResponse, Unit]
   ): Request[ListV2LoggingLevelsResponse, AWSError] = js.native
   /**
-    * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior or thing (device).
+    * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior, or thing (device).
     */
   def listViolationEvents(): Request[ListViolationEventsResponse, AWSError] = js.native
   def listViolationEvents(callback: js.Function2[/* err */ AWSError, /* data */ ListViolationEventsResponse, Unit]): Request[ListViolationEventsResponse, AWSError] = js.native
   /**
-    * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior or thing (device).
+    * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior, or thing (device).
     */
   def listViolationEvents(params: ListViolationEventsRequest): Request[ListViolationEventsResponse, AWSError] = js.native
   def listViolationEvents(
@@ -1861,6 +1986,21 @@ trait Iot extends Service {
     params: SetV2LoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Starts a task that applies a set of mitigation actions to the specified target.
+    */
+  def startAuditMitigationActionsTask(): Request[StartAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def startAuditMitigationActionsTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartAuditMitigationActionsTaskResponse, Unit]
+  ): Request[StartAuditMitigationActionsTaskResponse, AWSError] = js.native
+  /**
+    * Starts a task that applies a set of mitigation actions to the specified target.
+    */
+  def startAuditMitigationActionsTask(params: StartAuditMitigationActionsTaskRequest): Request[StartAuditMitigationActionsTaskResponse, AWSError] = js.native
+  def startAuditMitigationActionsTask(
+    params: StartAuditMitigationActionsTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartAuditMitigationActionsTaskResponse, Unit]
+  ): Request[StartAuditMitigationActionsTaskResponse, AWSError] = js.native
   /**
     * Starts an on-demand Device Defender audit.
     */
@@ -2082,6 +2222,19 @@ trait Iot extends Service {
   def updateJob(params: UpdateJobRequest): Request[js.Object, AWSError] = js.native
   def updateJob(params: UpdateJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
+    * Updates the definition for the specified mitigation action.
+    */
+  def updateMitigationAction(): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  def updateMitigationAction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMitigationActionResponse, Unit]): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  /**
+    * Updates the definition for the specified mitigation action.
+    */
+  def updateMitigationAction(params: UpdateMitigationActionRequest): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  def updateMitigationAction(
+    params: UpdateMitigationActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMitigationActionResponse, Unit]
+  ): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  /**
     * Updates a role alias.
     */
   def updateRoleAlias(): Request[UpdateRoleAliasResponse, AWSError] = js.native
@@ -2095,12 +2248,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoleAliasResponse, Unit]
   ): Request[UpdateRoleAliasResponse, AWSError] = js.native
   /**
-    * Updates a scheduled audit, including what checks are performed and how often the audit takes place.
+    * Updates a scheduled audit, including which checks are performed and how often the audit takes place.
     */
   def updateScheduledAudit(): Request[UpdateScheduledAuditResponse, AWSError] = js.native
   def updateScheduledAudit(callback: js.Function2[/* err */ AWSError, /* data */ UpdateScheduledAuditResponse, Unit]): Request[UpdateScheduledAuditResponse, AWSError] = js.native
   /**
-    * Updates a scheduled audit, including what checks are performed and how often the audit takes place.
+    * Updates a scheduled audit, including which checks are performed and how often the audit takes place.
     */
   def updateScheduledAudit(params: UpdateScheduledAuditRequest): Request[UpdateScheduledAuditResponse, AWSError] = js.native
   def updateScheduledAudit(

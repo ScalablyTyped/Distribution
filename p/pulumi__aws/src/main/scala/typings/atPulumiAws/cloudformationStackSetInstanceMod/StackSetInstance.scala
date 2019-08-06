@@ -34,6 +34,9 @@ class StackSetInstance protected () extends CustomResource {
     * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
     */
   val region: Output[String] = js.native
+  /**
+    * During resource destroy, remove Instance from Stack Set while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new Stack Set. Defaults to `false`.
+    */
   val retainStack: Output[js.UndefOr[Boolean]] = js.native
   /**
     * Stack identifier

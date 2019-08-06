@@ -413,6 +413,7 @@ object jestNs extends js.Object {
   trait FakeTimers extends js.Object {
     def advanceTimersByTime(msToRun: Double): Unit
     def clearAllTimers(): Unit
+    def getTimerCount(): Double
     def runAllImmediates(): Unit
     def runAllTicks(): Unit
     def runAllTimers(): Unit
@@ -1750,6 +1751,10 @@ object jestNs extends js.Object {
     * Use the automatic mocking system to generate a mocked version of the given module.
     */
   def genMockFromModule[T](moduleName: String): T = js.native
+  /**
+    * Returns the number of fake timers still left to run.
+    */
+  def getTimerCount(): Double = js.native
   /**
     * Returns whether the given function is a mock function.
     */

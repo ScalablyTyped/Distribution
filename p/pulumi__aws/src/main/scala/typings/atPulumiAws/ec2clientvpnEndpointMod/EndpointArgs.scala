@@ -34,6 +34,10 @@ trait EndpointArgs extends js.Object {
     */
   val serverCertificateArn: Input[String]
   /**
+    * Indicates whether split-tunnel is enabled on VPN endpoint. Default value is `false`.
+    */
+  val splitTunnel: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
     * A mapping of tags to assign to the resource.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
@@ -52,12 +56,14 @@ object EndpointArgs {
     serverCertificateArn: Input[String],
     description: Input[String] = null,
     dnsServers: Input[js.Array[Input[String]]] = null,
+    splitTunnel: Input[Boolean] = null,
     tags: Input[StringDictionary[_]] = null,
     transportProtocol: Input[String] = null
   ): EndpointArgs = {
     val __obj = js.Dynamic.literal(authenticationOptions = authenticationOptions.asInstanceOf[js.Any], clientCidrBlock = clientCidrBlock.asInstanceOf[js.Any], connectionLogOptions = connectionLogOptions.asInstanceOf[js.Any], serverCertificateArn = serverCertificateArn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
+    if (splitTunnel != null) __obj.updateDynamic("splitTunnel")(splitTunnel.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointArgs]

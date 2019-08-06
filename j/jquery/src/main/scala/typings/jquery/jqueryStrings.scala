@@ -46,6 +46,30 @@ object jqueryStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
+  sealed trait drag extends js.Object
+  
+  @js.native
+  sealed trait dragend extends js.Object
+  
+  @js.native
+  sealed trait dragenter extends js.Object
+  
+  @js.native
+  sealed trait dragexit extends js.Object
+  
+  @js.native
+  sealed trait dragleave extends js.Object
+  
+  @js.native
+  sealed trait dragover extends js.Object
+  
+  @js.native
+  sealed trait dragstart extends js.Object
+  
+  @js.native
+  sealed trait drop extends js.Object
+  
+  @js.native
   sealed trait error extends ErrorTextStatus
   
   @js.native
@@ -219,6 +243,22 @@ object jqueryStrings {
   def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
+  def drag: drag = "drag".asInstanceOf[drag]
+  @scala.inline
+  def dragend: dragend = "dragend".asInstanceOf[dragend]
+  @scala.inline
+  def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
+  @scala.inline
+  def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
+  @scala.inline
+  def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
+  @scala.inline
+  def dragover: dragover = "dragover".asInstanceOf[dragover]
+  @scala.inline
+  def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
+  @scala.inline
+  def drop: drop = "drop".asInstanceOf[drop]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

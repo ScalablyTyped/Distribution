@@ -121,6 +121,12 @@ class Environment protected () extends CustomResource {
     * to use in deployment.
     */
   val version: Output[ApplicationVersion] = js.native
+  /**
+    * The maximum
+    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
+    * wait for an Elastic Beanstalk Environment to be in a ready state before timing
+    * out.
+    */
   val waitForReadyTimeout: Output[js.UndefOr[String]] = js.native
 }
 

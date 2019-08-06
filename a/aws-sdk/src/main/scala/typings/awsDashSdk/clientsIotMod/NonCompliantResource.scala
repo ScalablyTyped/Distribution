@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait NonCompliantResource extends js.Object {
   /**
-    * Additional information about the non-compliant resource.
+    * Other information about the noncompliant resource.
     */
   var additionalInfo: js.UndefOr[StringMap] = js.undefined
   /**
-    * Information identifying the non-compliant resource.
+    * Information that identifies the noncompliant resource.
     */
   var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   /**
-    * The type of the non-compliant resource.
+    * The type of the noncompliant resource.
     */
   var resourceType: js.UndefOr[ResourceType] = js.undefined
 }

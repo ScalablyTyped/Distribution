@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rest-io"
-version := "5.0.0-045d41"
+version := "5.0.0-2eef71"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-257a4f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
   "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190730Z-492174",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190725Z-e65c53",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190805Z-50fcbe",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-42b281",

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jsuite"
-version := "0.0-unknown-dt-20190322Z-9fa633"
+version := "0.0-unknown-dt-20190322Z-58e85e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190711Z-947f04",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190805Z-186115",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b6c899",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "suitescript" % "0.0-unknown-dt-20190322Z-68ce1e")

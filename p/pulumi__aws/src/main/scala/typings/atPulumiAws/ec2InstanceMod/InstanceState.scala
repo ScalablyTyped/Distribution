@@ -94,6 +94,9 @@ trait InstanceState extends js.Object {
     * instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingInstanceInitiatedShutdownBehavior) for more information.
     */
   val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+    */
   val instanceState: js.UndefOr[Input[String]] = js.undefined
   /**
     * The type of instance to start. Updates to this field will trigger a stop/start of the EC2 instance.

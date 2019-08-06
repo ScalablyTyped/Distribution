@@ -91,6 +91,11 @@ trait SpotFleetRequestState extends js.Object {
     * The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot instance requests are placed or enabled to fulfill the request. Defaults to 24 hours.
     */
   val validUntil: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * If set, this provider will
+    * wait for the Spot Request to be fulfilled, and will throw an error if the
+    * timeout of 10m is reached.
+    */
   val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.undefined
 }
 

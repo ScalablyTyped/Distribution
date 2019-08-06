@@ -39,7 +39,12 @@ class Formula protected () extends Node {
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def add(s: ValueType, p: ValueType, o: ValueType, g: ValueType): Double = js.native
+  def add(s: Node, p: NamedNode, o: Node, g: NamedNode): Double = js.native
+  /**
+    * Adds all the statements to this formula
+    * @param statements A collection of statements
+    */
+  def addAll(statements: Iterable[Statement]): Unit = js.native
   /**
     * Adds a statement to this formula
     * @param st The statement to add
@@ -52,7 +57,91 @@ class Formula protected () extends Node {
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def any(s: ValueType, p: ValueType, o: ValueType, g: ValueType): Node = js.native
+  def any(): Node | Null = js.native
+  def any(s: Null, p: Null, o: Null, g: Node): Node | Null = js.native
+  def any(s: Null, p: Null, o: Node): Node | Null = js.native
+  def any(s: Null, p: Null, o: Node, g: Node): Node | Null = js.native
+  def any(s: Null, p: Node): Node | Null = js.native
+  def any(s: Null, p: Node, o: Null, g: Node): Node | Null = js.native
+  def any(s: Null, p: Node, o: Node): Node | Null = js.native
+  def any(s: Null, p: Node, o: Node, g: Node): Node | Null = js.native
+  def any(s: Node): Node | Null = js.native
+  def any(s: Node, p: Null, o: Null, g: Node): Node | Null = js.native
+  def any(s: Node, p: Null, o: Node): Node | Null = js.native
+  def any(s: Node, p: Null, o: Node, g: Node): Node | Null = js.native
+  def any(s: Node, p: Node): Node | Null = js.native
+  def any(s: Node, p: Node, o: Null, g: Node): Node | Null = js.native
+  def any(s: Node, p: Node, o: Node): Node | Null = js.native
+  def any(s: Node, p: Node, o: Node, g: Node): Node | Null = js.native
+  /**
+    * Gets the first JavaScript object equivalent to a node based on the specified pattern
+    * @param s The subject
+    * @param p The predicate
+    * @param o The object
+    * @param g The graph that contains the statement
+    */
+  def anyJS(): js.Any = js.native
+  def anyJS(s: Null, p: Null, o: Null, g: Node): js.Any = js.native
+  def anyJS(s: Null, p: Null, o: Node): js.Any = js.native
+  def anyJS(s: Null, p: Null, o: Node, g: Node): js.Any = js.native
+  def anyJS(s: Null, p: Node): js.Any = js.native
+  def anyJS(s: Null, p: Node, o: Null, g: Node): js.Any = js.native
+  def anyJS(s: Null, p: Node, o: Node): js.Any = js.native
+  def anyJS(s: Null, p: Node, o: Node, g: Node): js.Any = js.native
+  def anyJS(s: Node): js.Any = js.native
+  def anyJS(s: Node, p: Null, o: Null, g: Node): js.Any = js.native
+  def anyJS(s: Node, p: Null, o: Node): js.Any = js.native
+  def anyJS(s: Node, p: Null, o: Node, g: Node): js.Any = js.native
+  def anyJS(s: Node, p: Node): js.Any = js.native
+  def anyJS(s: Node, p: Node, o: Null, g: Node): js.Any = js.native
+  def anyJS(s: Node, p: Node, o: Node): js.Any = js.native
+  def anyJS(s: Node, p: Node, o: Node, g: Node): js.Any = js.native
+  /**
+    * Gets the first statement that matches the specified pattern
+    * @param subj The subject
+    * @param pred The predicate
+    * @param obj The object
+    * @param why The graph that contains the statement
+    */
+  def anyStatementMatching(): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Null, obj: Null, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Null, obj: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Null, obj: Node, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Node, obj: Null, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Node, obj: Node): Statement = js.native
+  def anyStatementMatching(subj: Null, pred: Node, obj: Node, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Null, obj: Null, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Null, obj: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Null, obj: Node, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Node, obj: Null, why: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Node, obj: Node): Statement = js.native
+  def anyStatementMatching(subj: Node, pred: Node, obj: Node, why: Node): Statement = js.native
+  /**
+    * Gets the value of a node that matches the specified pattern
+    * @param s The subject
+    * @param p The predicate
+    * @param o The object
+    * @param g The graph that contains the statement
+    */
+  def anyValue(): String = js.native
+  def anyValue(s: Null, p: Null, o: Null, g: Node): String = js.native
+  def anyValue(s: Null, p: Null, o: Node): String = js.native
+  def anyValue(s: Null, p: Null, o: Node, g: Node): String = js.native
+  def anyValue(s: Null, p: Node): String = js.native
+  def anyValue(s: Null, p: Node, o: Null, g: Node): String = js.native
+  def anyValue(s: Null, p: Node, o: Node): String = js.native
+  def anyValue(s: Null, p: Node, o: Node, g: Node): String = js.native
+  def anyValue(s: Node): String = js.native
+  def anyValue(s: Node, p: Null, o: Null, g: Node): String = js.native
+  def anyValue(s: Node, p: Null, o: Node): String = js.native
+  def anyValue(s: Node, p: Null, o: Node, g: Node): String = js.native
+  def anyValue(s: Node, p: Node): String = js.native
+  def anyValue(s: Node, p: Node, o: Null, g: Node): String = js.native
+  def anyValue(s: Node, p: Node, o: Node): String = js.native
+  def anyValue(s: Node, p: Node, o: Node, g: Node): String = js.native
   /**
     * Gets a blank node
     * @param id The node's identifier
@@ -86,7 +175,22 @@ class Formula protected () extends Node {
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def each(s: ValueType, p: ValueType, o: ValueType, g: ValueType): js.Array[Node] = js.native
+  def each(): js.Array[Node] = js.native
+  def each(s: Null, p: Null, o: Null, g: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Null, o: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Null, o: Node, g: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Node, o: Null, g: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Node, o: Node): js.Array[Node] = js.native
+  def each(s: Null, p: Node, o: Node, g: Node): js.Array[Node] = js.native
+  def each(s: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Null, o: Null, g: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Null, o: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Null, o: Node, g: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Node, o: Null, g: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Node, o: Node): js.Array[Node] = js.native
+  def each(s: Node, p: Node, o: Node, g: Node): js.Array[Node] = js.native
   /**
     * Gets whether this formula is equals to the other one
     * @param other The other formula
@@ -153,14 +257,10 @@ class Formula protected () extends Node {
     */
   def findTypesNT(subject: Node): StringDictionary[Boolean] = js.native
   /**
-    * Creates a new empty formula
+    * Creates a new empty formula - features not applicable, but necessary for typing to pass
     */
   def formula(): Formula = js.native
-  /**
-    * Creates a new empty indexed formulat
-    * @param features The list of features
-    */
-  def formula(features: js.Array[String]): IndexedFormula = js.native
+  def formula(features: js.Array[String]): Formula = js.native
   /**
     * Transforms an NTriples string format into a Node.
     * The bnode bit should not be used on program-external values; designed
@@ -169,12 +269,6 @@ class Formula protected () extends Node {
     * @param str A string representation
     */
   def fromNT(str: String): Node = js.native
-  def holds(s: js.Array[Statement]): Boolean = js.native
-  /**
-    * Gets whether this formula holds the specified statement
-    * @param s A statement
-    */
-  def holds(s: Statement): Boolean = js.native
   /**
     * Gets whether this formula holds the specified statement
     * @param s A subject
@@ -182,7 +276,22 @@ class Formula protected () extends Node {
     * @param o An object
     * @param g A containing graph
     */
-  def holds(s: ValueType, p: ValueType, o: ValueType, g: ValueType): Boolean = js.native
+  def holds(): Boolean = js.native
+  def holds(s: Null, p: Null, o: Null, g: Node): Boolean = js.native
+  def holds(s: Null, p: Null, o: Node): Boolean = js.native
+  def holds(s: Null, p: Null, o: Node, g: Node): Boolean = js.native
+  def holds(s: Null, p: Node): Boolean = js.native
+  def holds(s: Null, p: Node, o: Null, g: Node): Boolean = js.native
+  def holds(s: Null, p: Node, o: Node): Boolean = js.native
+  def holds(s: Null, p: Node, o: Node, g: Node): Boolean = js.native
+  def holds(s: Node): Boolean = js.native
+  def holds(s: Node, p: Null, o: Null, g: Node): Boolean = js.native
+  def holds(s: Node, p: Null, o: Node): Boolean = js.native
+  def holds(s: Node, p: Null, o: Node, g: Node): Boolean = js.native
+  def holds(s: Node, p: Node): Boolean = js.native
+  def holds(s: Node, p: Node, o: Null, g: Node): Boolean = js.native
+  def holds(s: Node, p: Node, o: Node): Boolean = js.native
+  def holds(s: Node, p: Node, o: Node, g: Node): Boolean = js.native
   /**
     * Gets whether this formula holds the specified statement
     * @param st A statement
@@ -213,6 +322,46 @@ class Formula protected () extends Node {
     */
   def serialize(base: String, contentType: String, provenance: String): String = js.native
   /**
+    * Gets the statements matching the specified pattern
+    * @param subj The subject
+    * @param pred The predicate
+    * @param obj The object
+    * @param why The graph that contains the statement
+    * @param justOne Whether to only get one statement
+    */
+  def statementsMatching(): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
+  /**
     * Gets an named node for an URI
     * @param uri The URI
     */
@@ -225,7 +374,22 @@ class Formula protected () extends Node {
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def the(s: ValueType, p: ValueType, o: ValueType, g: ValueType): Node = js.native
+  def the(): Node = js.native
+  def the(s: Null, p: Null, o: Null, g: Node): Node = js.native
+  def the(s: Null, p: Null, o: Node): Node = js.native
+  def the(s: Null, p: Null, o: Node, g: Node): Node = js.native
+  def the(s: Null, p: Node): Node = js.native
+  def the(s: Null, p: Node, o: Null, g: Node): Node = js.native
+  def the(s: Null, p: Node, o: Node): Node = js.native
+  def the(s: Null, p: Node, o: Node, g: Node): Node = js.native
+  def the(s: Node): Node = js.native
+  def the(s: Node, p: Null, o: Null, g: Node): Node = js.native
+  def the(s: Node, p: Null, o: Node): Node = js.native
+  def the(s: Node, p: Null, o: Node, g: Node): Node = js.native
+  def the(s: Node, p: Node): Node = js.native
+  def the(s: Node, p: Node, o: Null, g: Node): Node = js.native
+  def the(s: Node, p: Node, o: Node): Node = js.native
+  def the(s: Node, p: Node, o: Node, g: Node): Node = js.native
   /**
     * Finds the types in the list which have no *stored* supertypes
     * We exclude the universal class, owl:Things and rdf:Resource, as it is
@@ -254,7 +418,22 @@ class Formula protected () extends Node {
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def whether(s: ValueType, p: ValueType, o: ValueType, g: ValueType): Double = js.native
+  def whether(): Double = js.native
+  def whether(s: Null, p: Null, o: Null, g: Node): Double = js.native
+  def whether(s: Null, p: Null, o: Node): Double = js.native
+  def whether(s: Null, p: Null, o: Node, g: Node): Double = js.native
+  def whether(s: Null, p: Node): Double = js.native
+  def whether(s: Null, p: Node, o: Null, g: Node): Double = js.native
+  def whether(s: Null, p: Node, o: Node): Double = js.native
+  def whether(s: Null, p: Node, o: Node, g: Node): Double = js.native
+  def whether(s: Node): Double = js.native
+  def whether(s: Node, p: Null, o: Null, g: Node): Double = js.native
+  def whether(s: Node, p: Null, o: Node): Double = js.native
+  def whether(s: Node, p: Null, o: Node, g: Node): Double = js.native
+  def whether(s: Node, p: Node): Double = js.native
+  def whether(s: Node, p: Node, o: Null, g: Node): Double = js.native
+  def whether(s: Node, p: Node, o: Node): Double = js.native
+  def whether(s: Node, p: Node, o: Node, g: Node): Double = js.native
 }
 
 /* static members */

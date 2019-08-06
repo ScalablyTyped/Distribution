@@ -29,6 +29,9 @@ class Policy protected () extends CustomResource {
     * Description of the IAM policy.
     */
   val description: Output[js.UndefOr[String]] = js.native
+  /**
+    * The name of the policy. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -39,6 +42,9 @@ class Policy protected () extends CustomResource {
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
   val path: Output[js.UndefOr[String]] = js.native
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Output[String] = js.native
 }
 

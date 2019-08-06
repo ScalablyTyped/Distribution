@@ -10,11 +10,11 @@ trait AuditTaskMetadata extends js.Object {
     */
   var taskId: js.UndefOr[AuditTaskId] = js.undefined
   /**
-    * The status of this audit: one of "IN_PROGRESS", "COMPLETED", "FAILED" or "CANCELED".
+    * The status of this audit. One of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
     */
   var taskStatus: js.UndefOr[AuditTaskStatus] = js.undefined
   /**
-    * The type of this audit: one of "ON_DEMAND_AUDIT_TASK" or "SCHEDULED_AUDIT_TASK".
+    * The type of this audit. One of "ON_DEMAND_AUDIT_TASK" or "SCHEDULED_AUDIT_TASK".
     */
   var taskType: js.UndefOr[AuditTaskType] = js.undefined
 }

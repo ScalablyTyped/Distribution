@@ -33,7 +33,7 @@ trait BindParameter extends js.Object {
     * With IN or IN OUT binds the type can be explicitly set with type or it will default to the type
     * of the input data value. With OUT binds, the type defaults to oracledb.STRING whenever type is not specified.
     */
-  var `type`: js.UndefOr[Double] = js.undefined
+  var `type`: js.UndefOr[Double | String] = js.undefined
   /**
     * The input value or variable to be used for an IN or IN OUT bind variable.
     */
@@ -46,7 +46,7 @@ object BindParameter {
     dir: Int | Double = null,
     maxArraySize: Int | Double = null,
     maxSize: Int | Double = null,
-    `type`: Int | Double = null,
+    `type`: Double | String = null,
     `val`: js.Any = null
   ): BindParameter = {
     val __obj = js.Dynamic.literal()

@@ -12,6 +12,9 @@ trait ParameterGroupState extends js.Object {
     * The Neptune parameter group Amazon Resource Name (ARN).
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the Neptune parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The family of the Neptune parameter group.

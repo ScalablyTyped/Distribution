@@ -21,6 +21,9 @@ class SubnetGroup protected () extends CustomResource {
     */
   def this(name: String, args: SubnetGroupArgs) = this()
   def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
+  /**
+    * Description for the cache subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.

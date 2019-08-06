@@ -26,6 +26,8 @@ trait Boom[Data] extends Error {
   var output: Output
   /** reformat() - rebuilds error.output using the other object properties. */
   def reformat(): String
+  /** typeof - the constructor used to create the error (e.g. Boom.badRequest). */
+  def typeof(): js.Any
 }
 
 object Boom {
@@ -38,10 +40,11 @@ object Boom {
     name: String,
     output: Output,
     reformat: () => String,
+    typeof: () => js.Any,
     isMissing: js.UndefOr[Boolean] = js.undefined,
     stack: String = null
   ): Boom[Data] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom, isServer = isServer, message = message, name = name, output = output, reformat = js.Any.fromFunction0(reformat))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom, isServer = isServer, message = message, name = name, output = output, reformat = js.Any.fromFunction0(reformat), typeof = js.Any.fromFunction0(typeof))
     if (!js.isUndefined(isMissing)) __obj.updateDynamic("isMissing")(isMissing)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[Boom[Data]]

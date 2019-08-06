@@ -1,6 +1,5 @@
 package typings.rdflib.rdflibMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +44,7 @@ class Statement protected () extends js.Object {
     * Gets this statement with the bindings substituted
     * @param bindings The bindings
     */
-  def substitute(bindings: StringDictionary[Node]): Statement = js.native
+  def substitute(bindings: Bindings): Statement = js.native
   /**
     * Gets the canonical string representation of this statement
     */

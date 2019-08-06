@@ -11,6 +11,9 @@ trait GatewayArgs extends js.Object {
     * Gateway activation key during resource creation. Conflicts with `gateway_ip_address`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val activationKey: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+    */
   val gatewayIpAddress: js.UndefOr[Input[String]] = js.undefined
   /**
     * Name of the gateway.
@@ -29,7 +32,13 @@ trait GatewayArgs extends js.Object {
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
     */
   val smbActiveDirectorySettings: js.UndefOr[Input[Anon_DomainNamePasswordUsername]] = js.undefined
+  /**
+    * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
+    */
   val smbGuestPassword: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Type of tape drive to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
+    */
   val tapeDriveType: js.UndefOr[Input[String]] = js.undefined
 }
 

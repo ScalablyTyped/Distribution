@@ -7,8 +7,42 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /** Constant for the query result outFormat option. */
-  val ARRAY: Double = js.native
+  /** Constant for the AqDeqOptions Class 'mode' */
+  val AQ_DEQ_MODE_BROWSE: Double = js.native
+  /** Constant for the AqDeqOptions Class 'mode' */
+  val AQ_DEQ_MODE_LOCKED: Double = js.native
+  /** Constant for the AqDeqOptions Class 'mode' */
+  val AQ_DEQ_MODE_REMOVE: Double = js.native
+  /** Constant for the AqDeqOptions Class 'mode' */
+  val AQ_DEQ_MODE_REMOVE_NO_DAT: Double = js.native
+  /** Constant for the AqDeqOptions Class 'navigation' */
+  val AQ_DEQ_NAV_FIRST_MSG: Double = js.native
+  /** Constant for the AqDeqOptions Class 'navigation' */
+  val AQ_DEQ_NAV_NEXT_MS: Double = js.native
+  /** Constant for the AqDeqOptions Class 'navigation' */
+  val AQ_DEQ_NAV_NEXT_TRANSACTION: Double = js.native
+  /** Constant for the AqDeqOptions Class 'wait' */
+  val AQ_DEQ_NO_WAIT: Double = js.native
+  /** Constant for the AqEnqOptions Class 'deliveryMode' */
+  val AQ_DEQ_WAAQ_MSG_DELIV_MODE_PERSISTENTIT_FOREVER: Double = js.native
+  /** Constant for the AqDeqOptions Class 'wait' */
+  val AQ_DEQ_WAIT_FOREVER: Double = js.native
+  /** Constant for the AqEnqOptions Class 'deliveryMode' */
+  val AQ_MSG_DELIV_MODE_BUFFERED: Double = js.native
+  /** Constant for the AqEnqOptions Class 'deliveryMode' */
+  val AQ_MSG_DELIV_MODE_PERSISTENT_OR_BUFFERED: Double = js.native
+  /** Constant for the AqMessage Class 'state' */
+  val AQ_MSG_STATE_EXPIRED: Double = js.native
+  /** Constant for the AqMessage Class 'state' */
+  val AQ_MSG_STATE_PROCESSED: Double = js.native
+  /** Constant for the AqMessage Class 'state' */
+  val AQ_MSG_STATE_READY: Double = js.native
+  /** Constant for the AqMessage Class 'state' */
+  val AQ_MSG_STATE_WAITING: Double = js.native
+  /** Constant for the AqEnqOptions Class and AqDeqOptions 'visibility' */
+  val AQ_VISIBILITY_IMMEDIATE: Double = js.native
+  /** Constant for the AqEnqOptions Class and AqDeqOptions 'visibility' */
+  val AQ_VISIBILITY_ON_COMMIT: Double = js.native
   /** Constant for the dir property of execute() bindParams, queryStream() and executeMany() bindDefs. */
   val BIND_IN: Double = js.native
   /** Constant for the dir property of execute() bindParams, queryStream() and executeMany() bindDefs. */
@@ -40,17 +74,29 @@ object ^ extends js.Object {
   /** Constant for execute() bind parameter type property, for the createLob() type parameter, for the Lob type property, for fetchAsBuffer, for fetchAsString and fetchInfo, and for extended metadata. */
   val DATE: Double = js.native
   /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_BFILE: Double = js.native
+  /** Constant which represents the Oracle Database type. */
   val DB_TYPE_BINARY_DOUBLE: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_BINARY_FLOAT: Double = js.native
   /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_BINARY_INTEGER: Double = js.native
+  /** Constant which represents the Oracle Database type. */
   val DB_TYPE_BLOB: Double = js.native
+  /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_BOOLEAN: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_CHAR: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_CLOB: Double = js.native
   /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_CURSOR: Double = js.native
+  /** Constant which represents the Oracle Database type. */
   val DB_TYPE_DATE: Double = js.native
+  /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_INTERVAL_DS: Double = js.native
+  /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_INTERVAL_YM: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_LONG: Double = js.native
   /** Constant which represents the Oracle Database type. */
@@ -63,6 +109,8 @@ object ^ extends js.Object {
   val DB_TYPE_NUMBER: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_NVARCHAR: Double = js.native
+  /** Constant which represents the Oracle Database type. */
+  val DB_TYPE_OBJECT: Double = js.native
   /** Constant which represents the Oracle Database type. */
   val DB_TYPE_RAW: Double = js.native
   /** Constant which represents the Oracle Database type. */
@@ -79,8 +127,13 @@ object ^ extends js.Object {
   val DEFAULT: Double = js.native
   /** Constant for execute() bind parameter type property, for the createLob() type parameter, for the Lob type property, for fetchAsBuffer, for fetchAsString and fetchInfo, and for extended metadata. */
   val NUMBER: Double = js.native
+  /** Deprecated */
+  // const ARRAY: number;
+  // const OBJECT: number;
   /** Constant for the query result outFormat option. */
-  val OBJECT: Double = js.native
+  val OUT_FORMAT_ARRAY: Double = js.native
+  /** Constant for the query result outFormat option. */
+  val OUT_FORMAT_OBJECT: Double = js.native
   /** Constant for the connection pool.status readonly attribute. */
   val POOL_STATUS_CLOSED: Double = js.native
   /** Constant for the connection pool.status readonly attribute. */
@@ -142,6 +195,12 @@ object ^ extends js.Object {
   val SUBSCR_EVENT_TYPE_OBJ_CHANGE: Double = js.native
   /** Constant for the Continuous Query Notification message.type. */
   val SUBSCR_EVENT_TYPE_QUERY_CHANGE: Double = js.native
+  /** Constant for the Continuous Query Notification message.type. */
+  val SUBSCR_EVENT_TYPE_SHUTDOWN: Double = js.native
+  /** Constant for the Continuous Query Notification message.type. */
+  val SUBSCR_EVENT_TYPE_SHUTDOWN_ANY: Double = js.native
+  /** Constant for the Continuous Query Notification message.type. */
+  val SUBSCR_EVENT_TYPE_STARTUP: Double = js.native
   /** Constant for the Continuous Query Notification groupingClass. */
   val SUBSCR_GROUPING_CLASS_TIME: Double = js.native
   /** Constant for the Continuous Query Notification groupingType. */
@@ -213,7 +272,7 @@ object ^ extends js.Object {
     *
     * Events mode is required for Continuous Query Notification, Fast Application Notification (FAN) and Runtime Load Balancing (RLB).
     *
-    * @default false
+    * @default true
     * @since 2.2
     */
   var events: Boolean = js.native

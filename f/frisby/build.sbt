@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frisby"
-version := "2.0-dt-20190212Z-b1b153"
+version := "2.0-dt-20190805Z-159004"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

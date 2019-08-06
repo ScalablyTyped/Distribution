@@ -8,14 +8,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebRequestBodyEvent
   extends Event[
-      js.Function1[/* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, Unit]
+      js.Function1[
+        /* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, 
+        typings.chrome.chromeNs.webRequestNs.BlockingResponse | Unit
+      ]
     ] {
   def addListener(
-    callback: js.Function1[/* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, Unit],
+    callback: js.Function1[
+      /* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, 
+      typings.chrome.chromeNs.webRequestNs.BlockingResponse | Unit
+    ],
     filter: typings.chrome.chromeNs.webRequestNs.RequestFilter
   ): Unit = js.native
   def addListener(
-    callback: js.Function1[/* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, Unit],
+    callback: js.Function1[
+      /* details */ typings.chrome.chromeNs.webRequestNs.WebRequestBodyDetails, 
+      typings.chrome.chromeNs.webRequestNs.BlockingResponse | Unit
+    ],
     filter: typings.chrome.chromeNs.webRequestNs.RequestFilter,
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native

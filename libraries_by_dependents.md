@@ -1775,6 +1775,7 @@
 | 88 | [electron-debug](./e/electron-debug) | Adds useful debug features to your Electron app
 | 88 | [exit-hook](./e/exit-hook) | Run some code when the process exits
 | 88 | [gulp-useref](./g/gulp-useref) | Parse build blocks in HTML files to replace refere
+| 88 | [highlightjs](./h/highlightjs) | Syntax highlighting for the Web
 | 88 | [i18next-xhr-backend](./i/i18next-xhr-backend) | backend layer for i18next using browsers xhr
 | 88 | [postcss-modules-values](./p/postcss-modules-values) | PostCSS plugin for CSS Modules to pass arbitrary v
 | 88 | [ractive](./r/ractive) | Next-generation DOM manipulation
@@ -1811,6 +1812,7 @@
 | 85 | [npm-which](./n/npm-which) | Locate a program or locally installed node module'
 | 85 | [orchestrator](./o/orchestrator) | A module for sequencing and executing tasks and de
 | 85 | [postcss-modules-local-by-](./p/postcss-modules-local-by-default) | A CSS Modules transform to make local scope the de
+| 85 | [react-sizeme](./r/react-sizeme) | Make your React Components aware of their dimensio
 | 85 | [zipkin](./z/zipkin) | The core tracer for Zipkin JS
 | 84 | [cordova-plugin-device](./c/cordova-plugin-device) | Cordova Device Plugin
 | 84 | [d3-scale-chromatic](./d/d3-scale-chromatic) | Sequential, diverging and categorical color scheme
@@ -3976,6 +3978,7 @@
 | 12 | [favico_dot_js](./f/favico_dot_js) | Favico.js is a library to manipulate the favicon, 
 | 12 | [flot](./f/flot) | -
 | 12 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen scrolling websites
+| 12 | [gatsby-core-utils](./g/gatsby-core-utils) | A collection of gatsby utils used in different gat
 | 12 | [geopattern](./g/geopattern) | Generate beautiful SVG patterns
 | 12 | [gravatar-url](./g/gravatar-url) | Get the URL to a Gravatar image from an email
 | 12 | [hash-file](./h/hash-file) | Create a hashed file name
@@ -4816,6 +4819,7 @@
 | 5 | [electron-unhandled](./e/electron-unhandled) | Catch unhandled errors and promise rejections in y
 | 5 | [emotion__stylis](./e/emotion__stylis) | A custom build of Stylis
 | 5 | [engine-check](./e/engine-check) | Enforce node engine version from package.json
+| 5 | [esfx__internal-deprecate](./e/esfx__internal-deprecate) | This package provides internal utilities for '@esf
 | 5 | [expectations](./e/expectations) | jasmine-style 'expect' calls for mocha and other t
 | 5 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 5 | [extract-stack](./e/extract-stack) | Extract the actual stack of an error
@@ -5487,6 +5491,7 @@
 | 2 | [fromnow](./f/fromnow) | A tiny (392B) utility for human-readable time diff
 | 2 | [fs-capacitor](./f/fs-capacitor) | Filesystem-buffered, passthrough stream that buffe
 | 2 | [gapi](./g/gapi) | Node implementation of Google's JavaScript Library
+| 2 | [gematriya](./g/gematriya) | Convert numbers to gematriya representation, and v
 | 2 | [generic-functions](./g/generic-functions) | A generic function library for Node.js
 | 2 | [gently](./g/gently) |  
 | 2 | [gestalt](./g/gestalt) | A set of React UI components which enforce Pintere
@@ -5891,6 +5896,7 @@
 | 1 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
 | 1 | [infobox-parser](./i/infobox-parser) | Parse Wikipedia Infobox Source
 | 1 | [ink-testing-library](./i/ink-testing-library) | Utilities for testing Ink apps
+| 1 | [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order 
 | 1 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl
 | 1 | [ionic__discover](./i/ionic__discover) | Simple UDP based protocol for service discovery im
 | 1 | [ionic__utils-network](./i/ionic__utils-network) | Network utils for Node
@@ -6422,6 +6428,7 @@
 | 0 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes
 | 0 | [hapi__vision](./h/hapi__vision) | Templates rendering plugin support for hapi.js
 | 0 | [hapi__yar](./h/hapi__yar) | Cookie jar plugin for Hapi
+| 0 | [headroom](./h/headroom) | The same old headroom simplified
 | 0 | [hellosign-embedded](./h/hellosign-embedded) | Embed HelloSign signature requests and templates f
 | 0 | [host-validation](./h/host-validation) | Node.js middleware to validate Host and Referer he
 | 0 | [http-rx](./h/http-rx) | A reactive http client based on Observable and Req
@@ -6762,6 +6769,7 @@
 | 0 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan
 | 0 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API"
 | 0 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb
+| 0 | [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol
 | 0 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in 
 | 0 | [stream-csv-as-json](./s/stream-csv-as-json) | Streams CSV files.
 | 0 | [stripe-checkout](./s/stripe-checkout) | standalone stripe checkout handler
@@ -6775,6 +6783,7 @@
 | 0 | [tableau](./t/tableau) | Construct rows and columns from an alphabet with w
 | 0 | [tarantool-driver](./t/tarantool-driver) | Tarantool driver for 1.7
 | 0 | [task-worklet](./t/task-worklet) | Streamlined processing of tasks in a shared thread
+| 0 | [tdweb](./t/tdweb) | Javascript interface for TDLib (telegram library)
 | 0 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library
 | 0 | [then-eos](./t/then-eos) | Promise-based end-of-stream.
 | 0 | [three-tds-loader](./t/three-tds-loader) | NodeJS wrapper for Three.js' TDSLoader function

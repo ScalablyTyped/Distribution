@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ K in keyof webdriverio.ElementPromise ]: (args : std.Parameters<webdriverio.ElementPromise[K]>): std.Promise<std.ReturnType<webdriverio.ElementPromise[K]>>}
-- Dropped {[ P in 'addCommand' | 'selector' | 'elementId' ]: any[P]} */ @js.native
+- Dropped {[ P in 'addCommand' | 'selector' | 'elementId' | 'element-6066-11e4-a52e-4f735466cecf' | 'ELEMENT' ]: any[P]} */ @js.native
 trait Element extends AsyncSelectors
 

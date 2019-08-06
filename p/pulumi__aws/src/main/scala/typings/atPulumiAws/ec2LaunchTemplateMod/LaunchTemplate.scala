@@ -121,6 +121,9 @@ class LaunchTemplate protected () extends CustomResource {
     * The monitoring option for the instance. See Monitoring below for more details.
     */
   val monitoring: Output[js.UndefOr[Anon_EnabledBoolean]] = js.native
+  /**
+    * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

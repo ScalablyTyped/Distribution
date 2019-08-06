@@ -26,6 +26,9 @@ class SubnetGroup protected () extends CustomResource {
     * Amazon Resource Name (ARN) of the Redshift Subnet group name
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the Redshift Subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * The name of the Redshift Subnet group.

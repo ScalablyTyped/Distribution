@@ -1,5 +1,6 @@
 package typings.atPulumiAws.cfgRuleMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.Anon_ComplianceResourceIdComplianceResourceTypes
 import typings.atPulumiAws.Anon_OwnerSourceDetails
 import typings.atPulumiPulumi.outputMod.Input
@@ -34,6 +35,10 @@ trait RuleArgs extends js.Object {
     * the function to evaluate your AWS resources as documented below.
     */
   val source: Input[Anon_OwnerSourceDetails]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
 }
 
 object RuleArgs {
@@ -44,7 +49,8 @@ object RuleArgs {
     inputParameters: Input[String] = null,
     maximumExecutionFrequency: Input[String] = null,
     name: Input[String] = null,
-    scope: Input[Anon_ComplianceResourceIdComplianceResourceTypes] = null
+    scope: Input[Anon_ComplianceResourceIdComplianceResourceTypes] = null,
+    tags: Input[StringDictionary[_]] = null
   ): RuleArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -52,6 +58,7 @@ object RuleArgs {
     if (maximumExecutionFrequency != null) __obj.updateDynamic("maximumExecutionFrequency")(maximumExecutionFrequency.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleArgs]
   }
 }

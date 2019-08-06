@@ -7,6 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubnetGroupArgs extends js.Object {
+  /**
+    * The description of the Redshift Subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The name of the Redshift Subnet group.

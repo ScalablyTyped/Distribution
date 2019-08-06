@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait FilterRule extends js.Object {
   /**
-    *  Specifies the type of filter rule pattern to apply. DataSync only supports the SIMPLE_PATTERN rule type.
+    * The type of filter rule to apply. AWS DataSync only supports the SIMPLE_PATTERN rule type.
     */
   var FilterType: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.FilterType] = js.undefined
   /**
-    *  A pattern that defines the filter. The filter might include or exclude files is a transfer.
+    * A single filter string that consists of the patterns to include or exclude. The patterns are delimited by "|" (that is, a pipe), for example: /folder1|/folder2   
     */
   var Value: js.UndefOr[FilterValue] = js.undefined
 }

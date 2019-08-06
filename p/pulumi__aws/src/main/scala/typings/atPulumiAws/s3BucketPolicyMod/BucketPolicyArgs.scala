@@ -11,6 +11,9 @@ trait BucketPolicyArgs extends js.Object {
     * The name of the bucket to which to apply the policy.
     */
   val bucket: Input[String]
+  /**
+    * The text of the policy.
+    */
   val policy: Input[String | PolicyDocument]
 }
 

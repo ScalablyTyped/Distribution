@@ -21,6 +21,10 @@ trait ServerCertificateArgs extends js.Object {
     * of the chain.
     */
   val certificateChain: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the Server Certificate. Do not include the
+    * path in this value. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

@@ -11,6 +11,7 @@ trait Anon_AssetReferenceId extends js.Object {
   var fileName: String
   var format: String
   var moduleId: String
+  var referenceId: String
   var relativePath: String
 }
 
@@ -21,11 +22,12 @@ object Anon_AssetReferenceId {
     fileName: String,
     format: String,
     moduleId: String,
+    referenceId: String,
     relativePath: String,
     assetReferenceId: String = null,
     chunkReferenceId: String = null
   ): Anon_AssetReferenceId = {
-    val __obj = js.Dynamic.literal(chunkId = chunkId, fileName = fileName, format = format, moduleId = moduleId, relativePath = relativePath)
+    val __obj = js.Dynamic.literal(chunkId = chunkId, fileName = fileName, format = format, moduleId = moduleId, referenceId = referenceId, relativePath = relativePath)
     if (assetReferenceId != null) __obj.updateDynamic("assetReferenceId")(assetReferenceId)
     if (chunkReferenceId != null) __obj.updateDynamic("chunkReferenceId")(chunkReferenceId)
     __obj.asInstanceOf[Anon_AssetReferenceId]

@@ -24,7 +24,7 @@ trait ActiveViolation extends js.Object {
   /**
     * The name of the thing responsible for the active violation.
     */
-  var thingName: js.UndefOr[ThingName] = js.undefined
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
   /**
     * The ID of the active violation.
     */
@@ -42,7 +42,7 @@ object ActiveViolation {
     lastViolationTime: Timestamp = null,
     lastViolationValue: MetricValue = null,
     securityProfileName: SecurityProfileName = null,
-    thingName: ThingName = null,
+    thingName: DeviceDefenderThingName = null,
     violationId: ViolationId = null,
     violationStartTime: Timestamp = null
   ): ActiveViolation = {

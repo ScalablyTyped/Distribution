@@ -14,7 +14,7 @@ trait TaskStatistics extends js.Object {
     */
   var compliantChecks: js.UndefOr[CompliantChecksCount] = js.undefined
   /**
-    * The number of checks 
+    * The number of checks.
     */
   var failedChecks: js.UndefOr[FailedChecksCount] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait TaskStatistics extends js.Object {
     */
   var inProgressChecks: js.UndefOr[InProgressChecksCount] = js.undefined
   /**
-    * The number of checks that found non-compliant resources.
+    * The number of checks that found noncompliant resources.
     */
   var nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.undefined
   /**

@@ -192,6 +192,11 @@ trait SpotInstanceRequestArgs extends js.Object {
     * A list of security group IDs to associate with.
     */
   val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * If set, this provider will
+    * wait for the Spot Request to be fulfilled, and will throw an error if the
+    * timeout of 10m is reached.
+    */
   val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.undefined
 }
 

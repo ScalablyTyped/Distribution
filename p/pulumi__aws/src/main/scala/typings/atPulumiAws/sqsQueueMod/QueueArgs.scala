@@ -35,11 +35,17 @@ trait QueueArgs extends js.Object {
     * The number of seconds Amazon SQS retains a message. Integer representing seconds, from 60 (1 minute) to 1209600 (14 days). The default for this attribute is 345600 (4 days).
     */
   val messageRetentionSeconds: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * This is the human-readable name of the queue. If omitted, this provider will assign a random name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The JSON policy for the SQS queue.
+    */
   val policy: js.UndefOr[Input[String]] = js.undefined
   /**
     * The time for which a ReceiveMessage call will wait for a message to arrive (long polling) before returning. An integer from 0 to 20 (seconds). The default for this attribute is 0, meaning that the call will return immediately.

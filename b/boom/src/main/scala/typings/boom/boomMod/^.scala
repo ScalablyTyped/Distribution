@@ -38,6 +38,9 @@ class ^[Data] () extends Boom[Data] {
   /** reformat() - rebuilds error.output using the other object properties. */
   /* CompleteClass */
   override def reformat(): String = js.native
+  /** typeof - the constructor used to create the error (e.g. Boom.badRequest). */
+  /* CompleteClass */
+  override def typeof(): js.Any = js.native
 }
 
 @JSImport("boom", JSImport.Namespace)

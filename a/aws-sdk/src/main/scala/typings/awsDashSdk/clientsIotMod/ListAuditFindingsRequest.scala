@@ -22,7 +22,7 @@ trait ListAuditFindingsRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * Information identifying the non-compliant resource.
+    * Information identifying the noncompliant resource.
     */
   var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   /**

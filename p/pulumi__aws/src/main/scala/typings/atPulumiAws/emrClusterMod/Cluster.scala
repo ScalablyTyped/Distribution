@@ -29,6 +29,9 @@ class Cluster protected () extends CustomResource {
     */
   def this(name: String, args: ClusterArgs) = this()
   def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
+  /**
+    * A JSON string for selecting additional features such as adding proxy information. Note: Currently there is no API to retrieve the value of this argument after EMR cluster creation from provider, therefore this provider cannot detect drift from the actual EMR cluster if its value is changed outside this provider.
+    */
   val additionalInfo: Output[js.UndefOr[String]] = js.native
   /**
     * A list of applications for the cluster. Valid values are: `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub` (as of EMR 5.14.0). Case insensitive
@@ -124,6 +127,9 @@ class Cluster protected () extends CustomResource {
     * IAM role that will be assumed by the Amazon EMR service to access AWS resources
     */
   val serviceRole: Output[String] = js.native
+  /**
+    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
+    */
   val steps: Output[js.Array[Anon_ActionOnFailure]] = js.native
   /**
     * list of tags to apply to the EMR Cluster

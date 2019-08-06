@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-broker"
-version := "5.1-dt-20181218Z-cc8cfe"
+version := "5.1-dt-20181218Z-255109"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,9 +15,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20190415Z-1737e1",
   "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-187eec",
   "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-4c13f4",
-  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-56bc82",
+  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-bc3e56",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-083027")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190805Z-c1cede")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

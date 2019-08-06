@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteSecurityProfileRequest extends js.Object {
   /**
-    * The expected version of the security profile. A new version is generated whenever the security profile is updated. If you specify a value that is different than the actual version, a VersionConflictException is thrown.
+    * The expected version of the security profile. A new version is generated whenever the security profile is updated. If you specify a value that is different from the actual version, a VersionConflictException is thrown.
     */
   var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   /**

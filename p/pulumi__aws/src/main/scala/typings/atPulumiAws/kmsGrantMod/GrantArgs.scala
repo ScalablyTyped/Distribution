@@ -17,6 +17,9 @@ trait GrantArgs extends js.Object {
     * See [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) for more information.
     */
   val grantCreationTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
+    * The principal that is given permission to perform the operations that the grant permits in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
+    */
   val granteePrincipal: Input[String]
   /**
     * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.

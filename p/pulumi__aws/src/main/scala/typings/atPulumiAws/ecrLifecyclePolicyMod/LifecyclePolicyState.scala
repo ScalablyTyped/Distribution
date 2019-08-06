@@ -7,6 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LifecyclePolicyState extends js.Object {
+  /**
+    * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs.
+    */
   val policy: js.UndefOr[Input[String | LifecyclePolicyDocument]] = js.undefined
   /**
     * The registry ID where the repository was created.

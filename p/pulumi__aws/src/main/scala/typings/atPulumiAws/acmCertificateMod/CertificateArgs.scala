@@ -31,6 +31,10 @@ trait CertificateArgs extends js.Object {
     * A mapping of tags to assign to the resource.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  /**
+    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into state managed by this provider.
+    * * Importing an existing certificate
+    */
   val validationMethod: js.UndefOr[Input[String]] = js.undefined
 }
 

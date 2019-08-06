@@ -30,6 +30,9 @@ trait GraphQLApiState extends js.Object {
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
   val openidConnectConfig: js.UndefOr[Input[Anon_AuthTtlClientId]] = js.undefined
+  /**
+    * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
+    */
   val schema: js.UndefOr[Input[String]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

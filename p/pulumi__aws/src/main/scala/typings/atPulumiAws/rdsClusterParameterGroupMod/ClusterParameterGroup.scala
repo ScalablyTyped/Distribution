@@ -27,6 +27,9 @@ class ClusterParameterGroup protected () extends CustomResource {
     * The ARN of the db cluster parameter group.
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the DB cluster parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * The family of the DB cluster parameter group.

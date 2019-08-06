@@ -7,7 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AgentArgs extends js.Object {
+  /**
+    * DataSync Agent activation key during resource creation. Conflicts with `ip_address`. If an `ip_address` is provided instead, the provider will retrieve the `activation_key` as part of the resource creation.
+    */
   val activationKey: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. DataSync Agent must be accessible on port 80 from where the provider is running.
+    */
   val ipAddress: js.UndefOr[Input[String]] = js.undefined
   /**
     * Name of the DataSync Agent.

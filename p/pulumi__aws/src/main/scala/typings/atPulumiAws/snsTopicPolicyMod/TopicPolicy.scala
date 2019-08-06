@@ -25,6 +25,9 @@ class TopicPolicy protected () extends CustomResource {
     * The ARN of the SNS topic
     */
   val arn: Output[String] = js.native
+  /**
+    * The fully-formed AWS policy as JSON.
+    */
   val policy: Output[String] = js.native
 }
 

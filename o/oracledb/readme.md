@@ -1,7 +1,7 @@
 
 # Scala.js typings for oracledb
 
-Typings are for version v3.1.2
+Typings are for version 4.0
 
 ## Library description:
 A Node.js module for Oracle Database access

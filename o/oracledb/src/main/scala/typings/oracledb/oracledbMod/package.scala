@@ -1,5 +1,7 @@
 package typings.oracledb
 
+import typings.node.Buffer
+import typings.std.Date
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,5 +13,13 @@ package object oracledbMod {
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#executebindParams
     */
-  type BindParameters = (Record[String, BindParameter | String | Double | Null]) | (js.Array[js.Any | BindParameter])
+  type BindParameters = (Record[String, BindParameter | String | Double | Date | DBObject | Null]) | (js.Array[js.Any | BindParameter])
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - typings.node.Buffer
+    - typings.oracledb.oracledbMod.DBObject
+    - typings.oracledb.Anon_Correlation
+  */
+  type EnqueueMessage = _EnqueueMessage | String | Buffer
+  type Row = js.Array[js.Any] | (Record[String, js.Any])
 }

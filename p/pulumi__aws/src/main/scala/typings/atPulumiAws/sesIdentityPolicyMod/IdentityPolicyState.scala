@@ -14,6 +14,9 @@ trait IdentityPolicyState extends js.Object {
     * Name of the policy.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * JSON string of the policy.
+    */
   val policy: js.UndefOr[Input[String]] = js.undefined
 }
 

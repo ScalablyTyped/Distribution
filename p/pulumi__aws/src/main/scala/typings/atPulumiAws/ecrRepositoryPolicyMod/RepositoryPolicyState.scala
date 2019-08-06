@@ -7,6 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RepositoryPolicyState extends js.Object {
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
   /**
     * The registry ID where the repository was created.

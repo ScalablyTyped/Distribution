@@ -17,6 +17,9 @@ trait GetInvocationResult extends js.Object {
     * String result of the lambda function invocation.
     */
   val result: String
+  /**
+    * This field is set only if result is a map of primitive types, where the map is string keys and string values.
+    */
   val resultMap: StringDictionary[String]
 }
 

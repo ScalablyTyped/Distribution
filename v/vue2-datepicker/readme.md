@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue2-datepicker
 
-Typings are for version 2.0
+Typings are for version 2.12
 
 ## Library description:
 A Datepicker Component For Vue2

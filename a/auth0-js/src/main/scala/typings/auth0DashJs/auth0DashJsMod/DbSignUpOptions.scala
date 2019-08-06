@@ -10,6 +10,7 @@ trait DbSignUpOptions extends js.Object {
   var password: String
   var scope: js.UndefOr[String] = js.undefined
   var user_metadata: js.UndefOr[js.Any] = js.undefined
+  /** User desired username. Required if you use a database connection and you have enabled `Requires Username` */
   var username: js.UndefOr[String] = js.undefined
 }
 

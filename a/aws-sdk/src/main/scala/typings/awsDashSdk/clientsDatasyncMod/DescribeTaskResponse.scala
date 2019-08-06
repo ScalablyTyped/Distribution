@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeTaskResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the task. For more information on these groups, see "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html" (Working with Log Groups and Log Streams) in the Amazon CloudWatch UserGuide.
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the task. For more information on these groups, see Working with Log Groups and Log Streams in the Amazon CloudWatch User Guide.
     */
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   /**
@@ -22,6 +22,10 @@ trait DescribeTaskResponse extends js.Object {
     */
   var DestinationLocationArn: js.UndefOr[LocationArn] = js.undefined
   /**
+    * The Amazon Resource Name (ARN) of the destination ENIs (Elastic Network Interface) that was created for your subnet.
+    */
+  var DestinationNetworkInterfaceArns: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.DestinationNetworkInterfaceArns] = js.undefined
+  /**
     * Errors that AWS DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
     */
   var ErrorCode: js.UndefOr[String] = js.undefined
@@ -30,7 +34,7 @@ trait DescribeTaskResponse extends js.Object {
     */
   var ErrorDetail: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies that the task excludes files in the transfer based on the specified pattern in the filter. Transfers all files in the task’s subdirectory, except files that match the filter that is set. 
+    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   /**
@@ -46,7 +50,11 @@ trait DescribeTaskResponse extends js.Object {
     */
   var SourceLocationArn: js.UndefOr[LocationArn] = js.undefined
   /**
-    * The status of the task that was described. For detailed information about task execution statuses, see "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-tasks.html#understand-task-creation-statuses" (Understanding Task Statuses).
+    * The Amazon Resource Name (ARN) of the source ENIs (Elastic Network Interface) that was created for your subnet.
+    */
+  var SourceNetworkInterfaceArns: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.SourceNetworkInterfaceArns] = js.undefined
+  /**
+    * The status of the task that was described. For detailed information about task execution statuses, see Understanding Task Statuses in the AWS DataSync User Guide. 
     */
   var Status: js.UndefOr[TaskStatus] = js.undefined
   /**
@@ -62,12 +70,14 @@ object DescribeTaskResponse {
     CreationTime: Time = null,
     CurrentTaskExecutionArn: TaskExecutionArn = null,
     DestinationLocationArn: LocationArn = null,
+    DestinationNetworkInterfaceArns: DestinationNetworkInterfaceArns = null,
     ErrorCode: String = null,
     ErrorDetail: String = null,
     Excludes: FilterList = null,
     Name: TagValue = null,
     Options: Options = null,
     SourceLocationArn: LocationArn = null,
+    SourceNetworkInterfaceArns: SourceNetworkInterfaceArns = null,
     Status: TaskStatus = null,
     TaskArn: TaskArn = null
   ): DescribeTaskResponse = {
@@ -76,12 +86,14 @@ object DescribeTaskResponse {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CurrentTaskExecutionArn != null) __obj.updateDynamic("CurrentTaskExecutionArn")(CurrentTaskExecutionArn)
     if (DestinationLocationArn != null) __obj.updateDynamic("DestinationLocationArn")(DestinationLocationArn)
+    if (DestinationNetworkInterfaceArns != null) __obj.updateDynamic("DestinationNetworkInterfaceArns")(DestinationNetworkInterfaceArns)
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
     if (ErrorDetail != null) __obj.updateDynamic("ErrorDetail")(ErrorDetail)
     if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Options != null) __obj.updateDynamic("Options")(Options)
     if (SourceLocationArn != null) __obj.updateDynamic("SourceLocationArn")(SourceLocationArn)
+    if (SourceNetworkInterfaceArns != null) __obj.updateDynamic("SourceNetworkInterfaceArns")(SourceNetworkInterfaceArns)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn)
     __obj.asInstanceOf[DescribeTaskResponse]

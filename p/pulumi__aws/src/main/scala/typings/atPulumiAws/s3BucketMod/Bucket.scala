@@ -89,6 +89,9 @@ class Bucket protected () extends CustomResource {
     * A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below)
     */
   val objectLockConfiguration: Output[js.UndefOr[Anon_ObjectLockEnabled]] = js.native
+  /**
+    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), this provider may view the policy as constantly changing in a deployment. In this case, please make sure you use the verbose/specific version of the policy.
+    */
   val policy: Output[js.UndefOr[String]] = js.native
   /**
     * If specified, the AWS region this bucket should reside in. Otherwise, the region used by the callee.

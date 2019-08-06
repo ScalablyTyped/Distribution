@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.8.1-ec4f14"
+version := "2.8.1-f68e55"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -36,8 +36,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-42b281",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-7b5c16",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-083027",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-117046",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190805Z-c1cede",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.19-871dff")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

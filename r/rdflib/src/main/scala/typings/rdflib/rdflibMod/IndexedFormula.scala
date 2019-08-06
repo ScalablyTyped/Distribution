@@ -1,7 +1,12 @@
 package typings.rdflib.rdflibMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
+import typings.rdflib.Anon_Delete
+import typings.rdflib.rdflibStrings.FunctionalProperty
+import typings.rdflib.rdflibStrings.InverseFunctionalProperty
+import typings.rdflib.rdflibStrings.`two-direction`
+import typings.rdflib.rdflibStrings.delete
+import typings.rdflib.rdflibStrings.sameAs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,23 +32,18 @@ class IndexedFormula protected () extends Formula {
     */
   var updater: js.UndefOr[UpdateManager] = js.native
   /**
-    * Adds all the statements to this formula
-    * @param statements A collection of statements
-    */
-  def addAll(statements: Iterable[Statement]): Unit = js.native
-  /**
     * Return all equivalent URIs by which this is known
     * @param x A named node
     */
   def allAliases(x: NamedNode): js.Array[NamedNode] = js.native
   /**
-    * Gets the value of a node that matches the specified pattern
-    * @param s The subject
-    * @param p The predicate
-    * @param o The object
-    * @param g The graph that contains the statement
+    * Apply a set of statements to be deleted and to be inserted
+    *
+    * @param patch The set of statements to be deleted and to be inserted
+    * @param target The name of the document to patch
+    * @param patchCallback Callback to be called when patching is complete
     */
-  def anyValue(s: ValueType, p: ValueType, o: ValueType, g: ValueType): String = js.native
+  def applyPatch(patch: Anon_Delete, target: NamedNode, patchCallback: js.Function0[Unit]): Unit = js.native
   /**
     * Returns the symbol with canonical URI as smushed
     * @param term A RDF node
@@ -64,12 +64,32 @@ class IndexedFormula protected () extends Formula {
     */
   def close(): IndexedFormula = js.native
   /**
+    * replaces @template with @target and add appropriate triples
+    * removes no triples by default and is a one-direction replication
+    * @param template node to copy
+    * @param target node to copy to
+    * @param flags Whether or not to do a two-directional copy and/or delete triples
+    *
+    */
+  def copyTo(template: Node, target: Node): Unit = js.native
+  def copyTo(template: Node, target: Node, flags: js.Array[`two-direction` | delete]): Unit = js.native
+  /**
+    * N3 allows for declaring blank nodes, this function enables that support
+    *
+    * @param x The blank node to be declared, supported in N3
+    */
+  def declareExistential(x: Node): Node = js.native
+  /**
     * Simplify graph in store when we realize two identifiers are equivalent
     * We replace the bigger with the smaller.
     * @param u1 The first node
     * @param u2 The second node
     */
   def equate(u1: Node, u2: Node): Boolean = js.native
+  /**
+    * @param features
+    */
+  def initPropertyActions(features: js.Array[sameAs | InverseFunctionalProperty | FunctionalProperty]): Boolean = js.native
   /**
     * eturns any quads matching the given arguments.
     * Standard RDFJS Taskforce method for Source objects, implemented as an
@@ -91,6 +111,15 @@ class IndexedFormula protected () extends Formula {
     */
   def newExistential(uri: String): Node = js.native
   /**
+    * Adds a new property action
+    * @param pred the predicate that the function should be triggered on
+    * @param action the function that should trigger
+    */
+  def newPropertyAction(
+    pred: Node,
+    action: js.Function3[/* store */ this.type, /* subject */ NamedNode, /* object */ NamedNode, Boolean]
+  ): Boolean = js.native
+  /**
     * Creates a new universal node
     * Universals are Variables
     * @param uri An URI
@@ -102,6 +131,27 @@ class IndexedFormula protected () extends Formula {
     * @param doc A document named node
     */
   def nextSymbol(doc: NamedNode): NamedNode = js.native
+  /**
+    * Query this store asynchronously, return bindings in callback
+    *
+    * @param myQuery The query to be run
+    * @param callback Function to call when bindings
+    * @param dummy OBSOLETE - do not use this
+    * @param onDone OBSOLETE - do not use this
+    */
+  def query(myQuery: Query, callback: js.Function1[/* bindings */ Bindings, Unit]): Unit = js.native
+  def query(
+    myQuery: Query,
+    callback: js.Function1[/* bindings */ Bindings, Unit],
+    dummy: Null,
+    onDone: js.Function0[Unit]
+  ): Unit = js.native
+  /**
+    * Query this store synchronously and return bindings
+    *
+    * @param myQuery The query to be run
+    */
+  def querySync(myQuery: Query): js.Array[Bindings] = js.native
   /**
     * Removes a statement from this formula
     * @param st A statement to remove
@@ -120,6 +170,37 @@ class IndexedFormula protected () extends Formula {
     * @param why The graph that contains the statement
     * @param limit The number of statements to remove
     */
+  def removeMany(): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Null, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Null, why: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Null, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Node, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Node, why: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Null, obj: Node, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Null, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Null, why: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Null, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Node, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Node, why: Node): Unit = js.native
+  def removeMany(subj: Null, pred: Node, obj: Node, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Null, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Null, why: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Null, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Node, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Node, why: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Null, obj: Node, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Null, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Null, why: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Null, why: Node, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Node): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Node, why: Null, limit: Double): Unit = js.native
+  def removeMany(subj: Node, pred: Node, obj: Node, why: Node): Unit = js.native
   def removeMany(subj: Node, pred: Node, obj: Node, why: Node, limit: Double): Unit = js.native
   /**
     * Remove all matching statements
@@ -128,7 +209,22 @@ class IndexedFormula protected () extends Formula {
     * @param object The object
     * @param graph The graph that contains the statement
     */
-  def removeMatches(subject: ValueType, predicate: ValueType, `object`: ValueType, graph: ValueType): Unit = js.native
+  def removeMatches(): Unit = js.native
+  def removeMatches(subject: Null, predicate: Null, `object`: Null, graph: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Null, `object`: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Null, `object`: Node, graph: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Node, `object`: Null, graph: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Node, `object`: Node): Unit = js.native
+  def removeMatches(subject: Null, predicate: Node, `object`: Node, graph: Node): Unit = js.native
+  def removeMatches(subject: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Null, `object`: Null, graph: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Null, `object`: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Null, `object`: Node, graph: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Node, `object`: Null, graph: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Node, `object`: Node): Unit = js.native
+  def removeMatches(subject: Node, predicate: Node, `object`: Node, graph: Node): Unit = js.native
   /**
     * Removes a statement
     * @param st The statement to remove
@@ -145,46 +241,6 @@ class IndexedFormula protected () extends Formula {
     * @param y Another named node
     */
   def sameThings(x: NamedNode, y: NamedNode): Boolean = js.native
-  def statementsMatching(): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Null, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Null, pred: Node, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Null, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Null, why: Node, justOne: Boolean): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Null, justOne: Boolean): js.Array[Statement] = js.native
-  /**
-    * Gets the statements matching the specified pattern
-    * @param subj The subject
-    * @param pred The predicate
-    * @param obj The object
-    * @param why The graph that contains the statement
-    * @param justOne Whether to only get one statement
-    */
-  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
-  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node, justOne: Boolean): js.Array[Statement] = js.native
   /**
     * A list of all the URIs by which this thing is known
     * @param term

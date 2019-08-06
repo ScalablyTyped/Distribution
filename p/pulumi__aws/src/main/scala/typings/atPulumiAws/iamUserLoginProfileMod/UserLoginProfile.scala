@@ -21,7 +21,13 @@ class UserLoginProfile protected () extends CustomResource {
     */
   def this(name: String, args: UserLoginProfileArgs) = this()
   def this(name: String, args: UserLoginProfileArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The encrypted password, base64 encoded. Only available if password was handled on this provider resource creation, not import.
+    */
   val encryptedPassword: Output[String] = js.native
+  /**
+    * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on this provider resource creation, not import.
+    */
   val keyFingerprint: Output[String] = js.native
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.

@@ -25,6 +25,9 @@ class Domain protected () extends CustomResource {
     * The domain description.
     */
   val description: Output[js.UndefOr[String]] = js.native
+  /**
+    * The name of the domain. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

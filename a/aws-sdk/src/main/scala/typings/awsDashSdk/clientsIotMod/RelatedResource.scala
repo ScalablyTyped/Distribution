@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait RelatedResource extends js.Object {
   /**
-    * Additional information about the resource.
+    * Other information about the resource.
     */
   var additionalInfo: js.UndefOr[StringMap] = js.undefined
   /**
-    * Information identifying the resource.
+    * Information that identifies the resource.
     */
   var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   /**

@@ -11,12 +11,19 @@ trait GroupPolicyArgs extends js.Object {
     * The IAM group to attach to the policy.
     */
   val group: Input[String]
+  /**
+    * The name of the policy. If omitted, this provider will
+    * assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Input[String | PolicyDocument]
 }
 

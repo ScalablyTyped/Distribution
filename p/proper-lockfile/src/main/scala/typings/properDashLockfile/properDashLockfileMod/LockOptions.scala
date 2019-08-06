@@ -1,6 +1,6 @@
 package typings.properDashLockfile.properDashLockfileMod
 
-import typings.retry.retryMod.TimeoutsOptions
+import typings.retry.retryMod.OperationOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait LockOptions extends js.Object {
    // default: 0
   var realpath: js.UndefOr[Boolean] = js.undefined
    // default: stale/2
-  var retries: js.UndefOr[Double | TimeoutsOptions] = js.undefined
+  var retries: js.UndefOr[Double | OperationOptions] = js.undefined
   var stale: js.UndefOr[Double] = js.undefined
    // default: 10000
   var update: js.UndefOr[Double] = js.undefined
@@ -29,7 +29,7 @@ object LockOptions {
     lockfilePath: String = null,
     onCompromised: /* err */ Error => _ = null,
     realpath: js.UndefOr[Boolean] = js.undefined,
-    retries: Double | TimeoutsOptions = null,
+    retries: Double | OperationOptions = null,
     stale: Int | Double = null,
     update: Int | Double = null
   ): LockOptions = {

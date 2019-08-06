@@ -21,6 +21,11 @@ class AccessKey protected () extends CustomResource {
     */
   def this(name: String, args: AccessKeyArgs) = this()
   def this(name: String, args: AccessKeyArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The encrypted secret, base64 encoded.
+    * > **NOTE:** The encrypted secret may be decrypted using the command line,
+    * for example: `... | base64 --decode | keybase pgp decrypt`.
+    */
   val encryptedSecret: Output[String] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt

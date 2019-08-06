@@ -10,6 +10,9 @@ trait ContainerPolicyArgs extends js.Object {
     * The name of the container.
     */
   val containerName: Input[String]
+  /**
+    * The contents of the policy.
+    */
   val policy: Input[String]
 }
 

@@ -13,6 +13,9 @@ trait LogGroupArgs extends js.Object {
     * permissions for the CMK whenever the encrypted data is requested.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the log group. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

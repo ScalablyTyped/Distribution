@@ -1,21 +1,20 @@
 package typings.normalizr.normalizrMod.schemaNs
 
 import typings.normalizr.normalizrMod.Schema
-import typings.normalizr.normalizrMod._Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Union extends _Schema {
-  def define(definition: Schema): Unit
+trait Union[T] extends Schema[T] {
+  def define(definition: Schema[_]): Unit
 }
 
 object Union {
   @scala.inline
-  def apply(define: Schema => Unit): Union = {
+  def apply[T](define: Schema[_] => Unit): Union[T] = {
     val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
   
-    __obj.asInstanceOf[Union]
+    __obj.asInstanceOf[Union[T]]
   }
 }
 

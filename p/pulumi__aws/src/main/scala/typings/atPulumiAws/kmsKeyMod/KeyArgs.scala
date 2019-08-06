@@ -30,6 +30,9 @@ trait KeyArgs extends js.Object {
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
   val keyUsage: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A valid policy JSON document.
+    */
   val policy: js.UndefOr[Input[String]] = js.undefined
   /**
     * A mapping of tags to assign to the object.

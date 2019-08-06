@@ -59,6 +59,10 @@ class BucketObject protected () extends CustomResource {
     * A standard MIME type describing the format of the object data, e.g. application/octet-stream. All Valid MIME Types are valid for this input.
     */
   val contentType: Output[String] = js.native
+  /**
+    * Used to trigger updates. The only meaningful value is `${filemd5("path/to/file")}` (this provider 0.11.12 or later) or `${md5(file("path/to/file"))}` (this provider 0.11.11 or earlier).
+    * This attribute is not compatible with KMS encryption, `kms_key_id` or `server_side_encryption = "aws:kms"`.
+    */
   val etag: Output[String] = js.native
   /**
     * The name of the object once it is in the bucket.

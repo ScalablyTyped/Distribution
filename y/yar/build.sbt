@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "yar"
-version := "9.1-dt-20181111Z-6ad6dd"
+version := "9.1-dt-20181111Z-190693"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-31ac2c",
+  "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-fef2b5",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-07848f",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-0f550e",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-f45aad",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-ecc900",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-8ac771",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-cb7ee4",

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "google-maps-react"
-version := "2.0-dt-20181231Z-708fe5"
+version := "2.0-dt-20181231Z-c0e93c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190710Z-ab7e1b",
+  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190805Z-ea5a4f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")

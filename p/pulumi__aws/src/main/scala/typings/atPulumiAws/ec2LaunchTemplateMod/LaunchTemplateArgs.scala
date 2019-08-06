@@ -97,6 +97,9 @@ trait LaunchTemplateArgs extends js.Object {
     * The monitoring option for the instance. See Monitoring below for more details.
     */
   val monitoring: js.UndefOr[Input[Anon_EnabledBooleanInput]] = js.undefined
+  /**
+    * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

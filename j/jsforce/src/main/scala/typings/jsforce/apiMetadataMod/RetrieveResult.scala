@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait RetrieveResult extends js.Object {
   var fileProperties: js.Array[FileProperties]
   var id: String
-  var messages: js.Array[js.Object]
+  var messages: js.Array[RetrieveMessage]
   var zipFile: String
 }
 
@@ -16,7 +16,7 @@ object RetrieveResult {
   def apply(
     fileProperties: js.Array[FileProperties],
     id: String,
-    messages: js.Array[js.Object],
+    messages: js.Array[RetrieveMessage],
     zipFile: String
   ): RetrieveResult = {
     val __obj = js.Dynamic.literal(fileProperties = fileProperties, id = id, messages = messages, zipFile = zipFile)

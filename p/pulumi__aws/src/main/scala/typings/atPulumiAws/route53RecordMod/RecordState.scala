@@ -17,6 +17,9 @@ trait RecordState extends js.Object {
     * Alias record documented below.
     */
   val aliases: js.UndefOr[Input[js.Array[Input[Anon_EvaluateTargetHealthName]]]] = js.undefined
+  /**
+    * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
+    */
   val allowOverwrite: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
@@ -46,6 +49,9 @@ trait RecordState extends js.Object {
     * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the configuration string (e.g. `"first255characters\"\"morecharacters"`).
+    */
   val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * Unique identifier to differentiate records with routing policies from one another. Required if using `failover`, `geolocation`, `latency`, or `weighted` routing policies documented below.

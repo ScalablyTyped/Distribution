@@ -85,6 +85,10 @@ trait Typeofjest extends js.Object {
     */
   def genMockFromModule[T](moduleName: String): T = js.native
   /**
+    * Returns the number of fake timers still left to run.
+    */
+  def getTimerCount(): Double = js.native
+  /**
     * Returns whether the given function is a mock function.
     */
   def isMockFunction(fn: js.Any): /* is jest.jest.jest.Mock<any, any> */ Boolean = js.native

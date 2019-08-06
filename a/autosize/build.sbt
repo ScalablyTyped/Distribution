@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "autosize"
-version := "3.0-dt-20180214Z-300e96"
+version := "3.0-dt-20180214Z-ba20bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190711Z-947f04",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190805Z-186115",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b6c899",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

@@ -21,6 +21,9 @@ trait TargetGroupArgs extends js.Object {
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
     */
   val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
+    * The name of the target group. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Cannot be longer than 6 characters.

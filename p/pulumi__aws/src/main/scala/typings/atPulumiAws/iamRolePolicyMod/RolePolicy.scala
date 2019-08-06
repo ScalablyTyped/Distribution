@@ -21,12 +21,19 @@ class RolePolicy protected () extends CustomResource {
     */
   def this(name: String, args: RolePolicyArgs) = this()
   def this(name: String, args: RolePolicyArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The name of the role policy. If omitted, this provider will
+    * assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: Output[js.UndefOr[String]] = js.native
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Output[String] = js.native
   /**
     * The IAM role to attach to the policy.

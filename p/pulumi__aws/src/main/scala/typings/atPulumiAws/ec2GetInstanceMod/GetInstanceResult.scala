@@ -60,6 +60,9 @@ trait GetInstanceResult extends js.Object {
     */
   val id: String
   val instanceId: js.UndefOr[String] = js.undefined
+  /**
+    * The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+    */
   val instanceState: String
   val instanceTags: StringDictionary[js.Any]
   /**

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApiKeyArgs extends js.Object {
+  /**
+    * The API key description. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * Specifies whether the API key can be used by callers. Defaults to `true`.

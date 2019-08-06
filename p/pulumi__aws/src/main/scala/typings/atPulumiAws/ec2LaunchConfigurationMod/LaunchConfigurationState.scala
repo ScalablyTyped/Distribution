@@ -53,6 +53,10 @@ trait LaunchConfigurationState extends js.Object {
     * The key name that should be used for the instance.
     */
   val keyName: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the launch configuration. If you leave
+    * this blank, this provider will auto-generate a unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified

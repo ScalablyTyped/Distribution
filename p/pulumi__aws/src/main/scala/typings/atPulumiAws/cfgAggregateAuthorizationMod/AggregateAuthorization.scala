@@ -1,5 +1,6 @@
 package typings.atPulumiAws.cfgAggregateAuthorizationMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,6 +34,10 @@ class AggregateAuthorization protected () extends CustomResource {
     * Region
     */
   val region: Output[String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

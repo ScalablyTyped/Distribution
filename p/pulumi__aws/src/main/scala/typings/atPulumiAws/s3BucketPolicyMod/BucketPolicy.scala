@@ -25,6 +25,9 @@ class BucketPolicy protected () extends CustomResource {
     * The name of the bucket to which to apply the policy.
     */
   val bucket: Output[String] = js.native
+  /**
+    * The text of the policy.
+    */
   val policy: Output[String] = js.native
 }
 

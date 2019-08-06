@@ -15,6 +15,9 @@ trait EndpointState extends js.Object {
     * The name of the endpoint configuration to use.
     */
   val endpointConfigName: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the endpoint. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

@@ -23,11 +23,17 @@ class Agent protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: AgentArgs) = this()
   def this(name: String, args: AgentArgs, opts: CustomResourceOptions) = this()
+  /**
+    * DataSync Agent activation key during resource creation. Conflicts with `ip_address`. If an `ip_address` is provided instead, the provider will retrieve the `activation_key` as part of the resource creation.
+    */
   val activationKey: Output[String] = js.native
   /**
     * Amazon Resource Name (ARN) of the DataSync Agent.
     */
   val arn: Output[String] = js.native
+  /**
+    * DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. DataSync Agent must be accessible on port 80 from where the provider is running.
+    */
   val ipAddress: Output[String] = js.native
   /**
     * Name of the DataSync Agent.

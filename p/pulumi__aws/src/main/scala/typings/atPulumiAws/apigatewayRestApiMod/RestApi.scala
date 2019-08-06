@@ -61,6 +61,9 @@ class RestApi protected () extends CustomResource {
     * The name of the REST API
     */
   val name: Output[String] = js.native
+  /**
+    * JSON formatted policy document that controls access to the API Gateway.
+    */
   val policy: Output[js.UndefOr[String]] = js.native
   /**
     * The resource ID of the REST API's root

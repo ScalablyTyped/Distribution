@@ -25,6 +25,9 @@ class ApiKey protected () extends CustomResource {
     * The ID of the associated AppSync API
     */
   val apiId: Output[String] = js.native
+  /**
+    * The API key description. Defaults to "Managed by Pulumi".
+    */
   val description: Output[js.UndefOr[String]] = js.native
   /**
     * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.

@@ -7,6 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecurityGroupArgs extends js.Object {
+  /**
+    * The description of the Redshift security group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * A list of ingress rules.

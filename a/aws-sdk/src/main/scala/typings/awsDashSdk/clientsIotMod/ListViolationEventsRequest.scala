@@ -28,7 +28,7 @@ trait ListViolationEventsRequest extends js.Object {
   /**
     * A filter to limit results to those alerts caused by the specified thing.
     */
-  var thingName: js.UndefOr[ThingName] = js.undefined
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
 }
 
 object ListViolationEventsRequest {
@@ -39,7 +39,7 @@ object ListViolationEventsRequest {
     maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null,
     securityProfileName: SecurityProfileName = null,
-    thingName: ThingName = null
+    thingName: DeviceDefenderThingName = null
   ): ListViolationEventsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
     if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)

@@ -1,5 +1,6 @@
 package typings.antd.libConfigDashProviderMod
 
+import typings.antd.libLocaleDashProviderMod.Locale
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
@@ -11,6 +12,6 @@ trait ConfigProvider
   extends Component[ConfigProviderProps, js.Object, js.Any] {
   def getPrefixCls(suffixCls: String): String = js.native
   def getPrefixCls(suffixCls: String, customizePrefixCls: String): String = js.native
-  def renderProvider(context: ConfigConsumerProps): Element = js.native
+  def renderProvider(context: ConfigConsumerProps, legacyLocale: Locale): Element = js.native
 }
 

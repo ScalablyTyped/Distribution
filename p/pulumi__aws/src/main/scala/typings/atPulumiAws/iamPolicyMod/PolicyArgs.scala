@@ -11,6 +11,9 @@ trait PolicyArgs extends js.Object {
     * Description of the IAM policy.
     */
   val description: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the policy. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
@@ -21,6 +24,9 @@ trait PolicyArgs extends js.Object {
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
   val path: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Input[String | PolicyDocument]
 }
 

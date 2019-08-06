@@ -1,5 +1,6 @@
 package typings.atPulumiAws.cfgConfigurationAggregatorMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.Anon_AccountIdsAllRegions
 import typings.atPulumiAws.Anon_AllRegionsRegions
 import typings.atPulumiPulumi.outputMod.Input
@@ -24,6 +25,10 @@ trait ConfigurationAggregatorState extends js.Object {
     * The organization to aggregate config data from as documented below.
     */
   val organizationAggregationSource: js.UndefOr[Input[Anon_AllRegionsRegions]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
 }
 
 object ConfigurationAggregatorState {
@@ -32,13 +37,15 @@ object ConfigurationAggregatorState {
     accountAggregationSource: Input[Anon_AccountIdsAllRegions] = null,
     arn: Input[String] = null,
     name: Input[String] = null,
-    organizationAggregationSource: Input[Anon_AllRegionsRegions] = null
+    organizationAggregationSource: Input[Anon_AllRegionsRegions] = null,
+    tags: Input[StringDictionary[_]] = null
   ): ConfigurationAggregatorState = {
     val __obj = js.Dynamic.literal()
     if (accountAggregationSource != null) __obj.updateDynamic("accountAggregationSource")(accountAggregationSource.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (organizationAggregationSource != null) __obj.updateDynamic("organizationAggregationSource")(organizationAggregationSource.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationAggregatorState]
   }
 }

@@ -60,6 +60,10 @@ class Certificate protected () extends CustomResource {
     * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
     */
   val validationEmails: Output[js.Array[String]] = js.native
+  /**
+    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into state managed by this provider.
+    * * Importing an existing certificate
+    */
   val validationMethod: Output[String] = js.native
 }
 

@@ -14,6 +14,8 @@ class Literal protected () extends Node {
     * @param language The language for the literal
     * @param datatype The literal's datatype as a named node
     */
+  def this(value: String) = this()
+  def this(value: String, language: String) = this()
   def this(value: String, language: String, datatype: NamedNode) = this()
   /**
     * The literal's datatype as a named node

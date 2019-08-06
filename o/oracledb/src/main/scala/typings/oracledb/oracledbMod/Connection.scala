@@ -1,7 +1,6 @@
 package typings.oracledb.oracledbMod
 
 import typings.node.streamMod.Readable
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,6 +24,15 @@ trait Connection extends js.Object {
     * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
     */
   var clientId: js.UndefOr[String] = js.native
+  /**
+    * After setting currentSchema, SQL statements using unqualified references to schema objects will resolve to objects in the specified schema.
+    * This setting does not change the session user or the current user, nor does it give the session user any additional system or object privileges for the session.
+    * The value of currentSchema will be empty until it has been explicitly set.
+    * This property is an efficient alternative to ALTER SESSION SET CURRENT_SCHEMA.
+    * 
+    * @since 4.0
+    */
+  var currentSchema: js.UndefOr[String] = js.native
   /**
     * The module attribute for end-to-end application tracing.
     * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
@@ -184,10 +192,10 @@ trait Connection extends js.Object {
     callback: js.Function2[/* error */ DBError, /* result */ Result, Unit]
   ): Unit = js.native
   def execute(sql: String, callback: js.Function2[/* error */ DBError, /* result */ Result, Unit]): Unit = js.native
-  def executeMany(sql: String, binds: js.Array[(Record[String, _]) | js.Array[_]]): js.Promise[Results] = js.native
+  def executeMany(sql: String, binds: js.Array[Row]): js.Promise[Results] = js.native
   def executeMany(
     sql: String,
-    binds: js.Array[(Record[String, _]) | js.Array[_]],
+    binds: js.Array[Row],
     callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
   ): Unit = js.native
   /**
@@ -229,10 +237,10 @@ trait Connection extends js.Object {
     *
     * @since 2.2
     */
-  def executeMany(sql: String, binds: js.Array[(Record[String, _]) | js.Array[_]], options: ExecuteManyOptions): js.Promise[Results] = js.native
+  def executeMany(sql: String, binds: js.Array[Row], options: ExecuteManyOptions): js.Promise[Results] = js.native
   def executeMany(
     sql: String,
-    binds: js.Array[(Record[String, _]) | js.Array[_]],
+    binds: js.Array[Row],
     options: ExecuteManyOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
   ): Unit = js.native
@@ -264,6 +272,29 @@ trait Connection extends js.Object {
     iterations: Double,
     options: ExecuteManyOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
+  ): Unit = js.native
+  /**
+    * Returns a DbObject prototype object representing the named Oracle Database object or collection.
+    * When the definition of a type changes in the database, such as might occur in a development environment,
+    * you should fully close connections to clear the object caches used by node-oracledb and the Oracle client libraries.
+    * 
+    * For example, when using a pool you could use await connection.close({drop: true}), or restart the pool.
+    * Then getDbObjectClass() can be called again to get the updated type information.
+    * 
+    * @param className The name of the Oracle object or collection.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
+    * @since 4.0
+    */
+  def getDbObjectClass(className: String): js.Promise[DBObjectClass] = js.native
+  def getDbObjectClass(className: String, callback: js.Function2[/* error */ DBError, /* dbObject */ DBObjectClass, Unit]): Unit = js.native
+  def getQueue(name: String): js.Promise[AdvancedQueue] = js.native
+  def getQueue(name: String, callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue, Unit]): Unit = js.native
+  def getQueue(name: String, options: GetAdvancedQueueOptions): js.Promise[AdvancedQueue] = js.native
+  def getQueue(
+    name: String,
+    options: GetAdvancedQueueOptions,
+    callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue, Unit]
   ): Unit = js.native
   /**
     * Returns a parent SodaDatabase object for use with Simple Oracle Document Access (SODA).
@@ -353,29 +384,33 @@ trait Connection extends js.Object {
   def rollback(): js.Promise[Unit] = js.native
   def rollback(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   /**
-    * Register a JavaScript callback method to be invoked when data is changed in the database by any committed
-    * transaction.
-    *
-    * For notification to work, the connection must be created with events mode true.
-    *
+    * Register a JavaScript callback method to be invoked when data is changed in the database by any committed transaction,
+    * or when there are Advanced Queuing messages to be dequeued.
+    * 
+    * For notifications to work, the connection must be created with events mode true, which is the default.
     * The database must be able to connect to the node-oracledb machine for notifications to be received.
-    * Typically this means that the machine running node-oracledb needs a fixed IP address. If there is
-    * any problem sending a notification, then the callback method will not be invoked.
-    *
-    * The connection.subscribe() method may be called multiple times with the same name. In this case,
-    * the second and subsequent invocations ignore all options properties other than sql and binds. Instead,
-    * the new SQL statement is registered to the same subscription, and the same JavaScript notification
-    * callback is used. For performance reasons this can be preferable to creating a new subscription for each query.
-    *
-    * @param name
-    *
-    * For Continuous Query Notification this is an arbitrary name given to the subscription.
-    * For Advanced Queue notifications this must be the queue name.
-    *
-    * @param options Options that control the subscription.
+    * Typically this means that the machine running node-oracledb needs a fixed IP address.
+    * 
+    * If there is any problem sending a notification, then the callback method will not be invoked.
+    * The connection.subscribe() method may be called multiple times with the same name, as long as the same connection is used.
+    * In this case, the second and subsequent invocations ignore all options properties other than sql and binds.
+    * Instead, the new SQL statement is registered to the same subscription, and the same JavaScript notification callback is used.
+    * For performance reasons this can be preferable to creating a new subscription for each query.
+    * 
+    * AQ notifications were added in node-oracledb 4.0.
+    * The result callback parameter was added in node-oracledb 4.0.
+    * 
+    * @param name For Continuous Query Notification this is an arbitrary name given to the subscription. For Advanced Queuing notifications this must be the queue name.
+    * @param options Options that control the subscription. 
+    * 
+    * @since 2.3
     */
-  def subscribe(name: String, options: SubscribeOptions): js.Promise[Unit] = js.native
-  def subscribe(name: String, options: SubscribeOptions, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  def subscribe(name: String, options: SubscribeOptions): js.Promise[Subscription] = js.native
+  def subscribe(
+    name: String,
+    options: SubscribeOptions,
+    callback: js.Function2[/* error */ DBError, /* result */ Subscription, Unit]
+  ): Unit = js.native
   /**
     * Unregister a Continuous Query Notification (CQN) subscription previously created with connection.subscribe().
     * No further notifications will be sent. The notification callback does not receive a notification of the

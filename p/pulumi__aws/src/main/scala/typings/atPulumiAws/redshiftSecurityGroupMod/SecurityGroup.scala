@@ -22,6 +22,9 @@ class SecurityGroup protected () extends CustomResource {
     */
   def this(name: String, args: SecurityGroupArgs) = this()
   def this(name: String, args: SecurityGroupArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The description of the Redshift security group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * A list of ingress rules.

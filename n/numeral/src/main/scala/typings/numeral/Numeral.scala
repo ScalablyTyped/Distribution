@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Numeral extends js.Object {
   var isNumeral: Boolean = js.native
+  /**
+  	 * Object with all loaded locales
+  	 */
+  var locales: NumeralJSLocales = js.native
   var options: NumeralJSOptions = js.native
   var version: String = js.native
   def apply(): Numeral = js.native

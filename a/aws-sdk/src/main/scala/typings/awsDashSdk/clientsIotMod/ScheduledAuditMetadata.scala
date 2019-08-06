@@ -14,7 +14,7 @@ trait ScheduledAuditMetadata extends js.Object {
     */
   var dayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
   /**
-    * How often the scheduled audit takes place.
+    * How often the scheduled audit occurs.
     */
   var frequency: js.UndefOr[AuditFrequency] = js.undefined
   /**

@@ -26,7 +26,13 @@ class SubnetGroup protected () extends CustomResource {
     * The ARN of the neptune subnet group.
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the neptune subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[js.UndefOr[String]] = js.native
+  /**
+    * The name of the neptune subnet group. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

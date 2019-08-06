@@ -11,7 +11,7 @@ trait WokerboxEventMap extends js.Object {
   var externalactivated: WorkboxExtendableEvent
   var externalinstalled: WorkboxExtendableEvent
   var externalwaiting: WorkboxExtendableEvent
-  var installed: WorkboxEvent
+  var installed: WorkboxUpdatableEvent
   var message: WorkboxMessageEvent
   var redundant: WorkboxEvent
   var waiting: WorkboxWaitingEvent
@@ -25,7 +25,7 @@ object WokerboxEventMap {
     externalactivated: WorkboxExtendableEvent,
     externalinstalled: WorkboxExtendableEvent,
     externalwaiting: WorkboxExtendableEvent,
-    installed: WorkboxEvent,
+    installed: WorkboxUpdatableEvent,
     message: WorkboxMessageEvent,
     redundant: WorkboxEvent,
     waiting: WorkboxWaitingEvent

@@ -105,6 +105,11 @@ trait MongooseDocument extends MongooseDocumentOptionals {
   /** Returns the list of paths that have been modified. */
   def modifiedPaths(): js.Array[String] = js.native
   /**
+    * Overwrite all values, except for immutable properties.
+    * @param obj the object to overwrite this document with
+    */
+  def overwrite(obj: js.Any): this.type = js.native
+  /**
     * Populates document references, executing the callback when complete.
     * If you want to use promises instead, use this function with
     * execPopulate()

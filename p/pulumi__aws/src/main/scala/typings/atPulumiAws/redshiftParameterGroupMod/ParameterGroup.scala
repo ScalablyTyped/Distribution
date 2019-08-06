@@ -27,6 +27,9 @@ class ParameterGroup protected () extends CustomResource {
     * Amazon Resource Name (ARN) of parameter group
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the Redshift parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * The family of the Redshift parameter group.

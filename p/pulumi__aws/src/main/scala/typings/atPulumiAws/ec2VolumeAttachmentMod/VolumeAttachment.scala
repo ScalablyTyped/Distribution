@@ -37,6 +37,13 @@ class VolumeAttachment protected () extends CustomResource {
     * ID of the Instance to attach to
     */
   val instanceId: Output[String] = js.native
+  /**
+    * Set this to true if you do not wish
+    * to detach the volume from the instance to which it is attached at destroy
+    * time, and instead just remove the attachment from this provider state. This is
+    * useful when destroying an instance which has volumes created by some other
+    * means attached.
+    */
   val skipDestroy: Output[js.UndefOr[Boolean]] = js.native
   /**
     * ID of the Volume to be attached

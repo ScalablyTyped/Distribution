@@ -45,6 +45,9 @@ class TargetGroup protected () extends CustomResource {
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
     */
   val lambdaMultiValueHeadersEnabled: Output[js.UndefOr[Boolean]] = js.native
+  /**
+    * The name of the target group. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Cannot be longer than 6 characters.

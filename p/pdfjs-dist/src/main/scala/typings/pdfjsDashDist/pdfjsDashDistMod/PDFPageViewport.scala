@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PDFPageViewport extends js.Object {
-  var fontScale: Double
   var height: Double
+  var scale: Double
   var transforms: js.Array[Double]
   var width: Double
   def clone(options: PDFPageViewportOptions): PDFPageViewport
@@ -24,12 +24,12 @@ object PDFPageViewport {
     convertToPdfPoint: (Double, Double) => js.Array[Double],
     convertToViewportPoint: (Double, Double) => js.Array[Double],
     convertToViewportRectangle: js.Array[Double] => js.Array[Double],
-    fontScale: Double,
     height: Double,
+    scale: Double,
     transforms: js.Array[Double],
     width: Double
   ): PDFPageViewport = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), convertToPdfPoint = js.Any.fromFunction2(convertToPdfPoint), convertToViewportPoint = js.Any.fromFunction2(convertToViewportPoint), convertToViewportRectangle = js.Any.fromFunction1(convertToViewportRectangle), fontScale = fontScale, height = height, transforms = transforms, width = width)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), convertToPdfPoint = js.Any.fromFunction2(convertToPdfPoint), convertToViewportPoint = js.Any.fromFunction2(convertToViewportPoint), convertToViewportRectangle = js.Any.fromFunction1(convertToViewportRectangle), height = height, scale = scale, transforms = transforms, width = width)
   
     __obj.asInstanceOf[PDFPageViewport]
   }

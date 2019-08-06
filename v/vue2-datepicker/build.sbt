@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue2-datepicker"
-version := "2.0-dt-20181017Z-0461b7"
+version := "2.12-dt-20190805Z-c1f1bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

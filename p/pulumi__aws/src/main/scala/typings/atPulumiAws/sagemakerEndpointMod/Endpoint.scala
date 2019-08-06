@@ -30,6 +30,9 @@ class Endpoint protected () extends CustomResource {
     * The name of the endpoint configuration to use.
     */
   val endpointConfigName: Output[String] = js.native
+  /**
+    * The name of the endpoint. If omitted, this provider will assign a random, unique name.
+    */
   val name: Output[String] = js.native
   /**
     * A mapping of tags to assign to the resource.

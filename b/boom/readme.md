@@ -1,7 +1,7 @@
 
 # Scala.js typings for boom
 
-Typings are for version 7.2
+Typings are for version 7.3
 
 ## Library description:
 HTTP-friendly error objects

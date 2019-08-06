@@ -15,6 +15,7 @@ trait Anon_ActiveBackgroundColorActiveTintColor extends js.Object {
   var inactiveBackgroundColor: js.UndefOr[String] = js.undefined
   var inactiveTintColor: js.UndefOr[String] = js.undefined
   var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var keyboardHidesTabBar: js.UndefOr[Boolean] = js.undefined
   var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var pressColor: js.UndefOr[String] = js.undefined
   var pressOpacity: js.UndefOr[Double] = js.undefined
@@ -37,6 +38,7 @@ object Anon_ActiveBackgroundColorActiveTintColor {
     inactiveBackgroundColor: String = null,
     inactiveTintColor: String = null,
     indicatorStyle: StyleProp[ViewStyle] = null,
+    keyboardHidesTabBar: js.UndefOr[Boolean] = js.undefined,
     labelStyle: StyleProp[TextStyle] = null,
     pressColor: String = null,
     pressOpacity: Int | Double = null,
@@ -55,6 +57,7 @@ object Anon_ActiveBackgroundColorActiveTintColor {
     if (inactiveBackgroundColor != null) __obj.updateDynamic("inactiveBackgroundColor")(inactiveBackgroundColor)
     if (inactiveTintColor != null) __obj.updateDynamic("inactiveTintColor")(inactiveTintColor)
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardHidesTabBar)) __obj.updateDynamic("keyboardHidesTabBar")(keyboardHidesTabBar)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (pressColor != null) __obj.updateDynamic("pressColor")(pressColor)
     if (pressOpacity != null) __obj.updateDynamic("pressOpacity")(pressOpacity.asInstanceOf[js.Any])

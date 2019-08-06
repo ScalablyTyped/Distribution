@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 package object atStorybookPreactMod {
   type DecoratorParameters = StringDictionary[js.Any]
   type RenderFunction = js.Function0[Renderable | js.Array[Renderable]]
-  type Renderable = (AnyComponent[js.Object, js.Object]) | Element
+  type Renderable = (AnyComponent[js.Object, js.Object]) | Element | typings.preact.preactMod.JSXNs.Element
   type StoryDecorator = js.Function2[/* story */ RenderFunction, /* context */ Anon_Kind, Renderable | Null]
 }

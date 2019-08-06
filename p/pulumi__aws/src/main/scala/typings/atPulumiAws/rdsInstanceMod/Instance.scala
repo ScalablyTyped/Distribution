@@ -149,6 +149,10 @@ class Instance protected () extends CustomResource {
     * accounts is enabled.
     */
   val iamDatabaseAuthenticationEnabled: Output[js.UndefOr[Boolean]] = js.native
+  /**
+    * The name of the RDS instance,
+    * if omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: Output[String] = js.native
   /**
     * Creates a unique

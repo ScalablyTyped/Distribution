@@ -21,6 +21,9 @@ class SecurityGroup protected () extends CustomResource {
     */
   def this(name: String, args: SecurityGroupArgs) = this()
   def this(name: String, args: SecurityGroupArgs, opts: CustomResourceOptions) = this()
+  /**
+    * description for the cache security group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[String] = js.native
   /**
     * Name for the cache security group. This value is stored as a lowercase string.

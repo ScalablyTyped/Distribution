@@ -57,6 +57,10 @@ trait DragSourceMonitor
     */
   def getSourceClientOffset(): XYCoord | Null = js.native
   /**
+    * Returns the ids of the potential drop targets.
+    */
+  def getTargetIds(): js.Array[Identifier] = js.native
+  /**
     *  Returns true if a drag operation is in progress, and either the owner initiated the drag, or its isDragging() is defined and returns true.
     */
   def isDragging(): Boolean = js.native

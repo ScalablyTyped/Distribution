@@ -33,7 +33,7 @@ class StackReference protected () extends CustomResource {
     */
   val outputs: Output[StringDictionary[_]] = js.native
   /**
-    * Fetches the value of the named stack output.
+    * Fetches the value of the named stack output, or undefined if the stack output was not found.
     *
     * @param name The name of the stack output to fetch.
     */
@@ -48,5 +48,21 @@ class StackReference protected () extends CustomResource {
     * @param name The name of the stack output to fetch.
     */
   def getOutputSync(name: String): js.Any = js.native
+  /**
+    * Fetches the value of the named stack output, or throws an error if the output was not found.
+    *
+    * @param name The name of the stack output to fetch.
+    */
+  def requireOutput(name: Input[String]): Output[_] = js.native
+  /**
+    * Fetches the value promptly of the named stack output.  Throws an error if the stack output is
+    * not found.
+    *
+    * This operation is not supported (and will throw) if any exported values of the StackReference
+    * are secrets.
+    *
+    * @param name The name of the stack output to fetch.
+    */
+  def requireOutputSync(name: String): js.Any = js.native
 }
 

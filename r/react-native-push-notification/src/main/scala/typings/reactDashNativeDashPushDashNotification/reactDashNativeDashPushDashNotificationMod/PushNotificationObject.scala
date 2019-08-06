@@ -17,6 +17,7 @@ class PushNotificationObject () extends js.Object {
   var group: js.UndefOr[String] = js.native
   /* Android only properties */
   var id: js.UndefOr[String] = js.native
+  var importance: js.UndefOr[ImportanceType] = js.native
   var largeIcon: js.UndefOr[String] = js.native
   var message: String = js.native
   var number: js.UndefOr[String] = js.native
@@ -34,5 +35,6 @@ class PushNotificationObject () extends js.Object {
   var userInfo: js.UndefOr[js.Any] = js.native
   var vibrate: js.UndefOr[Boolean] = js.native
   var vibration: js.UndefOr[Double] = js.native
+  var visibility: js.UndefOr[VisibilityType] = js.native
 }
 

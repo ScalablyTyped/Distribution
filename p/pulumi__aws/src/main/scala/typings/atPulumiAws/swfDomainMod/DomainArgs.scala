@@ -10,6 +10,9 @@ trait DomainArgs extends js.Object {
     * The domain description.
     */
   val description: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The name of the domain. If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

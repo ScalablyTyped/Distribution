@@ -28,6 +28,12 @@ class SecurityGroup protected () extends CustomResource {
     * The ARN of the security group
     */
   val arn: Output[String] = js.native
+  /**
+    * The security group description. Defaults to
+    * "Managed by Pulumi". Cannot be "". __NOTE__: This field maps to the AWS
+    * `GroupDescription` attribute, for which there is no Update API. If you'd like
+    * to classify your security groups in a way that can be updated, use `tags`.
+    */
   val description: Output[String] = js.native
   /**
     * Can be specified multiple times for each
@@ -41,6 +47,10 @@ class SecurityGroup protected () extends CustomResource {
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: Output[js.Array[Anon_CidrBlocks]] = js.native
+  /**
+    * The name of the security group. If omitted, this provider will
+    * assign a random, unique name
+    */
   val name: Output[String] = js.native
   /**
     * Creates a unique name beginning with the specified
@@ -51,6 +61,15 @@ class SecurityGroup protected () extends CustomResource {
     * The owner ID.
     */
   val ownerId: Output[String] = js.native
+  /**
+    * Instruct this provider to revoke all of the
+    * Security Groups attached ingress and egress rules before deleting the rule
+    * itself. This is normally not needed, however certain AWS services such as
+    * Elastic Map Reduce may automatically add required rules to security groups used
+    * with the service, and those rules may contain a cyclic dependency that prevent
+    * the security groups from being destroyed without removing the dependency first.
+    * Default `false`
+    */
   val revokeRulesOnDelete: Output[js.UndefOr[Boolean]] = js.native
   /**
     * A mapping of tags to assign to the resource.

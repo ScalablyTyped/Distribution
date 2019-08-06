@@ -11,6 +11,9 @@ trait SubnetGroupState extends js.Object {
     * Amazon Resource Name (ARN) of the Redshift Subnet group name
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the Redshift Subnet group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The name of the Redshift Subnet group.

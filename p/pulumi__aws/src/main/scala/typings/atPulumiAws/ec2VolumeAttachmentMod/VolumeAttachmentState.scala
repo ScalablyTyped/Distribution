@@ -22,6 +22,13 @@ trait VolumeAttachmentState extends js.Object {
     * ID of the Instance to attach to
     */
   val instanceId: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Set this to true if you do not wish
+    * to detach the volume from the instance to which it is attached at destroy
+    * time, and instead just remove the attachment from this provider state. This is
+    * useful when destroying an instance which has volumes created by some other
+    * means attached.
+    */
   val skipDestroy: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * ID of the Volume to be attached

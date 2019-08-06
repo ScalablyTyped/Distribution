@@ -27,6 +27,9 @@ class ParameterGroup protected () extends CustomResource {
     * The Neptune parameter group Amazon Resource Name (ARN).
     */
   val arn: Output[String] = js.native
+  /**
+    * The description of the Neptune parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: Output[js.UndefOr[String]] = js.native
   /**
     * The family of the Neptune parameter group.

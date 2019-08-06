@@ -12,6 +12,9 @@ trait ParameterGroupState extends js.Object {
     * The ARN of the db parameter group.
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The description of the DB parameter group. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * The family of the DB parameter group.

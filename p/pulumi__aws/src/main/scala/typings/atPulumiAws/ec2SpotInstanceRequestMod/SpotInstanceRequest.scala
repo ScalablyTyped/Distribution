@@ -235,6 +235,11 @@ class SpotInstanceRequest protected () extends CustomResource {
     * A list of security group IDs to associate with.
     */
   val vpcSecurityGroupIds: Output[js.Array[String]] = js.native
+  /**
+    * If set, this provider will
+    * wait for the Spot Request to be fulfilled, and will throw an error if the
+    * timeout of 10m is reached.
+    */
   val waitForFulfillment: Output[js.UndefOr[Boolean]] = js.native
 }
 

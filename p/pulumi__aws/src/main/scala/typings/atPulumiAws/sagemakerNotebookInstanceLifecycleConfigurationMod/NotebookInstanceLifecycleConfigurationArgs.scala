@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotebookInstanceLifecycleConfigurationArgs extends js.Object {
+  /**
+    * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
+    */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.

@@ -10,19 +10,23 @@ trait AuditFinding extends js.Object {
     */
   var checkName: js.UndefOr[AuditCheckName] = js.undefined
   /**
+    * A unique identifier for this set of audit findings. This identifier is used to apply mitigation tasks to one or more sets of findings.
+    */
+  var findingId: js.UndefOr[FindingId] = js.undefined
+  /**
     * The time the result (finding) was discovered.
     */
   var findingTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The resource that was found to be non-compliant with the audit check.
+    * The resource that was found to be noncompliant with the audit check.
     */
   var nonCompliantResource: js.UndefOr[NonCompliantResource] = js.undefined
   /**
-    * The reason the resource was non-compliant.
+    * The reason the resource was noncompliant.
     */
   var reasonForNonCompliance: js.UndefOr[ReasonForNonCompliance] = js.undefined
   /**
-    * A code which indicates the reason that the resource was non-compliant.
+    * A code that indicates the reason that the resource was noncompliant.
     */
   var reasonForNonComplianceCode: js.UndefOr[ReasonForNonComplianceCode] = js.undefined
   /**
@@ -34,7 +38,7 @@ trait AuditFinding extends js.Object {
     */
   var severity: js.UndefOr[AuditFindingSeverity] = js.undefined
   /**
-    * The ID of the audit that generated this result (finding)
+    * The ID of the audit that generated this result (finding).
     */
   var taskId: js.UndefOr[AuditTaskId] = js.undefined
   /**
@@ -47,6 +51,7 @@ object AuditFinding {
   @scala.inline
   def apply(
     checkName: AuditCheckName = null,
+    findingId: FindingId = null,
     findingTime: Timestamp = null,
     nonCompliantResource: NonCompliantResource = null,
     reasonForNonCompliance: ReasonForNonCompliance = null,
@@ -58,6 +63,7 @@ object AuditFinding {
   ): AuditFinding = {
     val __obj = js.Dynamic.literal()
     if (checkName != null) __obj.updateDynamic("checkName")(checkName)
+    if (findingId != null) __obj.updateDynamic("findingId")(findingId)
     if (findingTime != null) __obj.updateDynamic("findingTime")(findingTime)
     if (nonCompliantResource != null) __obj.updateDynamic("nonCompliantResource")(nonCompliantResource)
     if (reasonForNonCompliance != null) __obj.updateDynamic("reasonForNonCompliance")(reasonForNonCompliance)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prometheus-gc-stats"
-version := "0.6-dt-20180829Z-df8b95"
+version := "0.6-dt-20190805Z-9c9d7f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,5 @@
 package typings.rdflib.rdflibMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +46,7 @@ class Node () extends js.Object {
     * Gets the substituted node for this one, according to the specified bindings
     * @param bindings Bindings of identifiers to nodes
     */
-  def substitute(bindings: StringDictionary[Node]): Node = js.native
+  def substitute(bindings: Bindings): Node = js.native
   /**
     * Gets the canonical string representation of this node
     */

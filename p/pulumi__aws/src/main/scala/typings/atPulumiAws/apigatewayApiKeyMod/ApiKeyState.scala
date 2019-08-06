@@ -10,6 +10,9 @@ trait ApiKeyState extends js.Object {
     * The creation date of the API key
     */
   val createdDate: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The API key description. Defaults to "Managed by Pulumi".
+    */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
     * Specifies whether the API key can be used by callers. Defaults to `true`.
