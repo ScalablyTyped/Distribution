@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Font dialog allowing end-users to change the font, size and style of the selected text.
   */
-trait OpenFontFormattingDialogCommand extends CommandWithSimpleStateBase {
+@JSGlobal("OpenFontFormattingDialogCommand")
+@js.native
+class OpenFontFormattingDialogCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the OpenFontFormattingDialogCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the OpenFontFormattingDialogCommand command.
     */
-  def execute(): Boolean
-}
-
-object OpenFontFormattingDialogCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenFontFormattingDialogCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[OpenFontFormattingDialogCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

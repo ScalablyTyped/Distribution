@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapTabControl control.
   */
+@JSGlobal("BootstrapClientTabControl")
 @js.native
-trait BootstrapClientTabControl extends ASPxClientTabControlBase {
+class BootstrapClientTabControl () extends ASPxClientTabControl {
   /**
     * Makes the specified tab active within the Tab Control on the client side.
     * @param tab A BootstrapClientTab object specifying the tab to select.

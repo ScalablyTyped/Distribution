@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ItemClick events.
+  * Provides data for the ASPxClientImageSlider.ActiveItemChanged and ASPxClientImageSlider.ItemClick events.
   */
-trait ASPxClientImageSliderItemEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientImageSliderItemEventArgs")
+@js.native
+class ASPxClientImageSliderItemEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientImageSliderItemEventArgs class.
+    * @param item An ASPxClientImageSliderItem object that is the item related to the generated event.
+    */
+  def this(item: ASPxClientImageSliderItem) = this()
   /**
     * Gets an item object related to the event.
-    * Value: An <see cref="ASPxClientImageSliderItem" /> object, manipulations on which forced the event to be raised.
     */
-  var item: ASPxClientImageSliderItem
-}
-
-object ASPxClientImageSliderItemEventArgs {
-  @scala.inline
-  def apply(item: ASPxClientImageSliderItem): ASPxClientImageSliderItemEventArgs = {
-    val __obj = js.Dynamic.literal(item = item)
-  
-    __obj.asInstanceOf[ASPxClientImageSliderItemEventArgs]
-  }
+  var item: ASPxClientImageSliderItem = js.native
 }
 

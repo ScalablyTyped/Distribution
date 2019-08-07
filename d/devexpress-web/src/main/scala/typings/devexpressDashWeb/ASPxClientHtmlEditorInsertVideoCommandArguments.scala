@@ -5,34 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Contains settings related to the INSERTVIDEO_COMMAND command parameter.
+  * Contains settings related to the ASPxClientCommandConsts.INSERTVIDEO_COMMAND command parameter.
   */
-trait ASPxClientHtmlEditorInsertVideoCommandArguments extends ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
+@JSGlobal("ASPxClientHtmlEditorInsertVideoCommandArguments")
+@js.native
+class ASPxClientHtmlEditorInsertVideoCommandArguments protected () extends ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
+  def this(htmlEditor: ASPxClientHtmlEditor) = this()
+  def this(htmlEditor: ASPxClientHtmlEditor, elementToReplace: js.Any) = this()
   /**
     * Defines the URL of an image that is shown while the video file is downloading, or until an end-user clicks the play button.
-    * Value: A string value that specifies the poster image URL.
     */
-  var posterUrl: String
-}
-
-object ASPxClientHtmlEditorInsertVideoCommandArguments {
-  @scala.inline
-  def apply(
-    GetCommandName: () => String,
-    align: String,
-    autoPlay: Boolean,
-    id: String,
-    loop: Boolean,
-    posterUrl: String,
-    preloadMode: String,
-    selectedElement: js.Object,
-    showPlayerControls: Boolean,
-    src: String,
-    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
-  ): ASPxClientHtmlEditorInsertVideoCommandArguments = {
-    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align, autoPlay = autoPlay, id = id, loop = loop, posterUrl = posterUrl, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorInsertVideoCommandArguments]
-  }
+  var posterUrl: String = js.native
 }
 

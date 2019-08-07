@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditEndEditing event.
+  * Provides data for the ASPxClientTreeList.BatchEditEndEditing event.
   */
-trait ASPxClientTreeListBatchEditEndEditingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientTreeListBatchEditEndEditingEventArgs")
+@js.native
+class ASPxClientTreeListBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTreeListBatchEditEndEditingEventArgs class.
+    * @param nodeKey A String value that identifies the processed node.
+    * @param nodeValues An object representing a data source’s field values.
+    */
+  def this(nodeKey: String, nodeValues: js.Any) = this()
   /**
     * Gets the processed node's key value.
-    * Value: A String value that identifies the processed node.
     */
-  var nodeKey: String
+  var nodeKey: String = js.native
   /**
     * Gets the value of the processed cell.
-    * Value: A String value that identifies the node values.
     */
-  var nodeValues: js.Object
-}
-
-object ASPxClientTreeListBatchEditEndEditingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Object): ASPxClientTreeListBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, nodeKey = nodeKey, nodeValues = nodeValues)
-  
-    __obj.asInstanceOf[ASPxClientTreeListBatchEditEndEditingEventArgs]
-  }
+  var nodeValues: js.Any = js.native
 }
 

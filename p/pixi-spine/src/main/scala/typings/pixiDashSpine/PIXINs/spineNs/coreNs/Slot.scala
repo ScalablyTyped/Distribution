@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Slot protected () extends js.Object {
   def this(data: SlotData, bone: Bone) = this()
-  var attachment: Attachment = js.native
+  var attachment: js.Any = js.native
   var attachmentTime: js.Any = js.native
-  var attachmentVertices: js.Array[Double] = js.native
   var blendMode: Double = js.native
   var bone: Bone = js.native
   var clippingContainer: js.Any = js.native
@@ -22,6 +21,7 @@ class Slot protected () extends js.Object {
   var currentSpriteName: String = js.native
   var darkColor: Color = js.native
   var data: SlotData = js.native
+  var deform: js.Array[Double] = js.native
   var meshes: js.Any = js.native
   var sprites: js.Any = js.native
   var tempAttachment: Attachment = js.native

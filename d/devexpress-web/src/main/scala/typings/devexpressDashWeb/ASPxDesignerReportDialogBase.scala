@@ -1,88 +1,41 @@
 package typings.devexpressDashWeb
 
+import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Provides the base functionality for dialogs used to open and save reports on the client side of the Web Report Designer.
-  */
-trait ASPxDesignerReportDialogBase extends js.Object {
-  /**
-    * Provides access to buttons displayed in a dialog.
-    * Value: An array of objects that specify buttons displayed in the dialog.
-    */
-  var buttons: js.Array[js.Object]
-  /**
-    * Provides access to a dialog's height.
-    * Value: A knockout observable object that specifies a dialog's height.
-    */
-  var height: js.Any
-  /**
-    * Provides access to a dialog's model.
-    * Value: A knockout observable object of the ASPxDesignerDialogModel type.
-    */
-  var model: js.Any
-  /**
-    * Provides access to a report tab for which a dialog appears.
-    * Value: A knockout observable object of the ASPxDesignerNavigateTab type.
-    */
-  var tab: js.Any
-  /**
-    * Provides access to the name of an HTML template used by a dialog.
-    * Value: A knockout observable string that specifies the name of the HTML template used by a dialog.
-    */
-  var template: js.Any
-  /**
-    * Provides access to a dialog's title.
-    * Value: A string that specifies a dialog's title.
-    */
-  var title: String
-  /**
-    * Provides access to a value that specifies a dialog's visibility state.
-    * Value: true, if the dialog is visible; otherwise, false;
-    */
-  var visible: js.Any
-  /**
-    * Provides access to a dialog's width.
-    * Value: A knockout observable object that specifies a dialog's width.
-    */
-  var width: js.Any
-  /**
-    * Cancels the dialog.
-    */
-  def cancel(): Unit
-  /**
-    * Customizes the dialog based on the specified template and model.
-    * @param template A string that specifies the name of an HTML template for the dialog.
-    * @param model An object that specifies the dialog model.
-    */
-  def customize(template: String, model: ASPxDesignerDialogModel): Unit
-  /**
-    * Shows the dialog for the specified report tab.
-    * @param tab A report tab for which the dialog should be shown.
-    */
-  def show(tab: ASPxDesignerNavigateTab): Unit
-}
-
-object ASPxDesignerReportDialogBase {
-  @scala.inline
-  def apply(
-    buttons: js.Array[js.Object],
-    cancel: () => Unit,
-    customize: (String, ASPxDesignerDialogModel) => Unit,
-    height: js.Any,
-    model: js.Any,
-    show: ASPxDesignerNavigateTab => Unit,
-    tab: js.Any,
-    template: js.Any,
-    title: String,
-    visible: js.Any,
-    width: js.Any
-  ): ASPxDesignerReportDialogBase = {
-    val __obj = js.Dynamic.literal(buttons = buttons, cancel = js.Any.fromFunction0(cancel), customize = js.Any.fromFunction2(customize), height = height, model = model, show = js.Any.fromFunction1(show), tab = tab, template = template, title = title, visible = visible, width = width)
-  
-    __obj.asInstanceOf[ASPxDesignerReportDialogBase]
-  }
+@JSGlobal("ASPxDesignerReportDialogBase")
+@js.native
+class ASPxDesignerReportDialogBase () extends js.Object {
+  var buttons: js.Array[_] = js.native
+  @JSName("height")
+  var height_Original: KnockoutObservable[_] = js.native
+  @JSName("model")
+  var model_Original: KnockoutObservable[ASPxDesignerDialogModel] = js.native
+  @JSName("tab")
+  var tab_Original: KnockoutObservable[ASPxDesignerNavigateTab] = js.native
+  @JSName("template")
+  var template_Original: KnockoutObservable[String] = js.native
+  var title: String = js.native
+  @JSName("visible")
+  var visible_Original: KnockoutObservable[Boolean] = js.native
+  @JSName("width")
+  var width_Original: KnockoutObservable[_] = js.native
+  def cancel(): Unit = js.native
+  def customize(template: String, model: ASPxDesignerDialogModel): Unit = js.native
+  def height(): js.Any = js.native
+  def height(value: js.Any): Unit = js.native
+  def model(): ASPxDesignerDialogModel = js.native
+  def model(value: ASPxDesignerDialogModel): Unit = js.native
+  def show(tab: ASPxDesignerNavigateTab): Unit = js.native
+  def tab(): ASPxDesignerNavigateTab = js.native
+  def tab(value: ASPxDesignerNavigateTab): Unit = js.native
+  def template(): String = js.native
+  def template(value: String): Unit = js.native
+  def visible(): Boolean = js.native
+  def visible(value: Boolean): Unit = js.native
+  def width(): js.Any = js.native
+  def width(value: js.Any): Unit = js.native
 }
 

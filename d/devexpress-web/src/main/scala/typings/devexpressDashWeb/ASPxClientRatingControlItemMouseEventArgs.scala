@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the rating control's ItemMouseOver and ItemMouseOut client events (such as ItemMouseOut).
+  * Provides data for the rating control's ItemMouseOver and ItemMouseOut client events (such as ASPxClientRatingControl.ItemMouseOver and ASPxClientRatingControl.ItemMouseOut).
   */
-trait ASPxClientRatingControlItemMouseEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRatingControlItemMouseEventArgs")
+@js.native
+class ASPxClientRatingControlItemMouseEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRatingControlItemMouseEventArgs class.
+    * @param index An integer value that represents the index of the item being processed. This value is assigned to the ASPxClientRatingControlItemMouseEventArgs.index property.
+    */
+  def this(index: Double) = this()
   /**
     * Gets the index of the item related to the event.
-    * Value: An integer value that represents the related item's index.
     */
-  var index: Double
-}
-
-object ASPxClientRatingControlItemMouseEventArgs {
-  @scala.inline
-  def apply(index: Double): ASPxClientRatingControlItemMouseEventArgs = {
-    val __obj = js.Dynamic.literal(index = index)
-  
-    __obj.asInstanceOf[ASPxClientRatingControlItemMouseEventArgs]
-  }
+  var index: Double = js.native
 }
 

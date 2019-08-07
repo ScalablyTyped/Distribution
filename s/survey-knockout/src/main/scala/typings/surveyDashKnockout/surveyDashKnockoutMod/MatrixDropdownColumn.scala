@@ -19,6 +19,7 @@ class MatrixDropdownColumn protected ()
   val hasCondition: Boolean = js.native
   var hasOther: Boolean = js.native
   val hasTotal: Boolean = js.native
+  var hasVisibleCell: Boolean = js.native
   val index: Double = js.native
   var isRequired: Boolean = js.native
   val isVisible: Boolean = js.native

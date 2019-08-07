@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ExpandedChanged events.
+  * Provides data for the ASPxClientTreeView.ExpandedChanged events.
   */
-trait BootstrapClientTreeViewNodeEventArgs extends ASPxClientEventArgs {
+@JSGlobal("BootstrapClientTreeViewNodeEventArgs")
+@js.native
+class BootstrapClientTreeViewNodeEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the BootstrapClientTreeViewNodeEventArgs type with the specified value.
+    * @param node An BootstrapClientTreeViewNode object representing the node related to the event.
+    */
+  def this(node: BootstrapClientTreeViewNode) = this()
   /**
     * Gets a node object related to the event.
-    * Value: A BootstrapClientTreeViewNode object, manipulations on which forced the event to be raised.
     */
-  var node: BootstrapClientTreeViewNode
-}
-
-object BootstrapClientTreeViewNodeEventArgs {
-  @scala.inline
-  def apply(node: BootstrapClientTreeViewNode): BootstrapClientTreeViewNodeEventArgs = {
-    val __obj = js.Dynamic.literal(node = node)
-  
-    __obj.asInstanceOf[BootstrapClientTreeViewNodeEventArgs]
-  }
+  var node: BootstrapClientTreeViewNode = js.native
 }
 

@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Represents a client-side equivalent of the ASPxUploadControl control.
+  * A client-side equivalent of the ASPxUploadControl control.
   */
+@JSGlobal("ASPxClientUploadControl")
 @js.native
-trait ASPxClientUploadControl extends ASPxClientControl {
+class ASPxClientUploadControl () extends ASPxClientControl {
   /**
     * Fires when the mouse enters a drop zone or an external drop zone element while dragging a file.
     */
@@ -22,9 +23,10 @@ trait ASPxClientUploadControl extends ASPxClientControl {
     */
   var FileInputCountChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientUploadControl]] = js.native
   /**
-    * Occurs on the client after a file has been uploaded.
+    * Occurs on the client side after a file has been uploaded.
     */
   var FileUploadComplete: ASPxClientEvent[ASPxClientUploadControlFileUploadCompleteEventHandler[ASPxClientUploadControl]] = js.native
+  /** @deprecated This event is now obsolete. Use the FilesUploadStart event instead. */
   /**
     * Occurs on the client side before upload of the specified files starts.
     */
@@ -66,7 +68,7 @@ trait ASPxClientUploadControl extends ASPxClientControl {
     */
   def ClearText(): Unit = js.native
   /**
-    * Returns the text displayed within the add button.
+    * Returns the add button's text.
     */
   def GetAddButtonText(): String = js.native
   /**
@@ -78,12 +80,12 @@ trait ASPxClientUploadControl extends ASPxClientControl {
     */
   def GetFileInputCount(): Double = js.native
   /**
-    * Returns files selected for uploading within the specified file input.
+    * Returns files selected for uploading within the specified file input. An array of ASPxClientUploadControlFile objects that are files selected for uploading.
     * @param inputIndex An integer value that specifies the index of a file input. Default value is "0".
     */
   def GetSelectedFiles(inputIndex: Double): js.Array[ASPxClientUploadControlFile] = js.native
   /**
-    * Gets the text displayed within the edit box of the specified file input element.
+    * Gets the text displayed within the edit box of the specified file input element. A string value representing the displayed text.
     * @param index An integer value that specifies the required file input element's index.
     */
   def GetText(index: Double): String = js.native
@@ -100,11 +102,7 @@ trait ASPxClientUploadControl extends ASPxClientControl {
     * @param fileIndex An integer value that is the zero-based index of an item in the file list.
     */
   def RemoveFileFromSelection(fileIndex: Double): Unit = js.native
-  /**
-    * Removes the specified file from the list of files selected for uploading in the upload control.
-    * @param file An ASPxClientUploadControl object that is the file to be removed from the list of files.
-    */
-  def RemoveFileFromSelection(file: ASPxClientUploadControlFile): Unit = js.native
+  def RemoveFileFromSelection(fileIndex: ASPxClientUploadControlFile): Unit = js.native
   /**
     * Removes a file input element from the ASPxUploadControl.
     * @param index An integer value that represents a file input element's index.
@@ -139,9 +137,21 @@ trait ASPxClientUploadControl extends ASPxClientControl {
     * Initiates uploading of the specified file(s) to the web server's memory.
     */
   def Upload(): Unit = js.native
+  /** @deprecated Use the Upload method instead. */
   /**
     * Initiates uploading of the specified file to the web server's memory.
     */
   def UploadFile(): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientUploadControl")
+@js.native
+object ASPxClientUploadControl extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientUploadControl type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientUploadControl = js.native
 }
 

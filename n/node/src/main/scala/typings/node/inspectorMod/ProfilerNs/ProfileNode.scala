@@ -18,8 +18,7 @@ trait ProfileNode extends js.Object {
     */
   var children: js.UndefOr[js.Array[Double]] = js.undefined
   /**
-    * The reason of being not optimized. The function may be deoptimized or marked as don't
-    * optimize.
+    * The reason of being not optimized. The function may be deoptimized or marked as don't optimize.
     */
   var deoptReason: js.UndefOr[java.lang.String] = js.undefined
   /**

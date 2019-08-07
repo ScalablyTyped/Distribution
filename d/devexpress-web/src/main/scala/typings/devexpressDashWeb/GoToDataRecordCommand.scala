@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to navigate to the next data record of the bound data source.
   */
-trait GoToDataRecordCommand extends CommandBase {
+@JSGlobal("GoToDataRecordCommand")
+@js.native
+class GoToDataRecordCommand () extends CommandBase {
   /**
-    * Executes the GoToDataRecordCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the GoToDataRecordCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param activeRecordIndex An integer value specifying index of the next data record.
     */
-  def execute(activeRecordIndex: Double): Boolean
+  def execute(activeRecordIndex: Double): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object GoToDataRecordCommand {
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => js.Any): GoToDataRecordCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[GoToDataRecordCommand]
-  }
+  def getState(): CommandState[DataRecordOptions] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree-web
 
-Typings are for version v3.6.1
+Typings are for version v3.47.0
 
 ## Library description:
 A suite of tools for integrating Braintree in the browser

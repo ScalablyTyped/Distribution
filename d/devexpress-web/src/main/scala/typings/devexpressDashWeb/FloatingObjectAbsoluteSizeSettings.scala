@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Contains absolute size settings for floating objects.
   */
-trait FloatingObjectAbsoluteSizeSettings extends js.Object {
+@JSGlobal("FloatingObjectAbsoluteSizeSettings")
+@js.native
+class FloatingObjectAbsoluteSizeSettings () extends js.Object {
   /**
     * Gets or sets a floating object's absolute height.
-    * Value: An integer value specifying the height in twips.
     */
-  var absoluteHeight: Double
+  var absoluteHeight: Double = js.native
   /**
     * Gets or sets a floating object's absolute width.
-    * Value: An integer value specifying the width in twips.
     */
-  var absoluteWidth: Double
-}
-
-object FloatingObjectAbsoluteSizeSettings {
-  @scala.inline
-  def apply(absoluteHeight: Double, absoluteWidth: Double): FloatingObjectAbsoluteSizeSettings = {
-    val __obj = js.Dynamic.literal(absoluteHeight = absoluteHeight, absoluteWidth = absoluteWidth)
-  
-    __obj.asInstanceOf[FloatingObjectAbsoluteSizeSettings]
-  }
+  var absoluteWidth: Double = js.native
 }
 

@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the PopupMenuShowing event.
+  * Provides data for the ASPxClientSpreadsheet.PopupMenuShowing event.
   */
-trait ASPxClientSpreadsheetPopupMenuShowingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientSpreadsheetPopupMenuShowingEventArgs")
+@js.native
+class ASPxClientSpreadsheetPopupMenuShowingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientSpreadsheetPopupMenuShowingEventArgs class with the specified settings.
+    * @param menuItems Provides access to the context menu's item collection.
+    * @param menuType Specifies the currently displayed context menu's type.
+    */
+  def this(menuItems: js.Any, menuType: js.Any) = this()
   /**
     * Provides access to a collection of menu items in the context menu being invoked.
-    * Value: A <see cref="ASPxClientSpreadsheetPopupMenuItemCollection" /> object representing the context menu's item collection.
     */
-  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection
+  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection = js.native
   /**
     * Gets the currently displayed context menu's type.
-    * Value: One of the <see cref="ASPxClientSpreadsheetPopupMenuType" /> enumeration values.
     */
-  var menuType: js.Any
-}
-
-object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, menuItems: ASPxClientSpreadsheetPopupMenuItemCollection, menuType: js.Any): ASPxClientSpreadsheetPopupMenuShowingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, menuItems = menuItems, menuType = menuType)
-  
-    __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuShowingEventArgs]
-  }
+  var menuType: ASPxClientSpreadsheetPopupMenuType = js.native
 }
 

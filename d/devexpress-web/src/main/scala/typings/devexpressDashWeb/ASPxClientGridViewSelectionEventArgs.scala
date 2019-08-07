@@ -5,43 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SelectionChanged event.
+  * Provides data for the ASPxClientGridView.SelectionChanged event.
   */
-trait ASPxClientGridViewSelectionEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientGridViewSelectionEventArgs")
+@js.native
+class ASPxClientGridViewSelectionEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewSelectionEventArgs class.
+    * @param visibleIndex An integer value that specifies the visible index of the row whose selected state has been changed. This value is assigned to the ASPxClientGridViewSelectionEventArgs.visibleIndex property.
+    */
+  def this(visibleIndex: Double) = this()
   /**
     * Gets whether all rows displayed within a page have been selected or unselected.
-    * Value: true if all rows displayed within a page have been selected or unselected; otherwise, false.
     */
-  var isAllRecordsOnPage: Boolean
+  var isAllRecordsOnPage: Boolean = js.native
   /**
     * Gets whether a selection has been changed on the server.
-    * Value: true  if a selection has been changed on the server; otherwise, false.
     */
-  var isChangedOnServer: Boolean
+  var isChangedOnServer: Boolean = js.native
   /**
     * Gets whether the row has been selected.
-    * Value: true if the row has been selected; otherwise, false.
     */
-  var isSelected: Boolean
+  var isSelected: Boolean = js.native
   /**
     * Gets the visible index of the row whose selected state has been changed.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the row.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewSelectionEventArgs {
-  @scala.inline
-  def apply(
-    isAllRecordsOnPage: Boolean,
-    isChangedOnServer: Boolean,
-    isSelected: Boolean,
-    processOnServer: Boolean,
-    visibleIndex: Double
-  ): ASPxClientGridViewSelectionEventArgs = {
-    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewSelectionEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

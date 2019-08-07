@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait RemoteObject extends js.Object {
   /**
-    * Object class (constructor) name. Specified for `object` type values only.
+    * Object class (constructor) name. Specified for <code>object</code> type values only.
     */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -25,12 +25,12 @@ trait RemoteObject extends js.Object {
     */
   var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   /**
-    * Preview containing abbreviated property values. Specified for `object` type values only.
+    * Preview containing abbreviated property values. Specified for <code>object</code> type values only.
     * @experimental
     */
   var preview: js.UndefOr[ObjectPreview] = js.undefined
   /**
-    * Object subtype hint. Specified for `object` type values only.
+    * Object subtype hint. Specified for <code>object</code> type values only.
     */
   var subtype: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -38,8 +38,7 @@ trait RemoteObject extends js.Object {
     */
   var `type`: java.lang.String
   /**
-    * Primitive value which can not be JSON-stringified does not have `value`, but gets this
-    * property.
+    * Primitive value which can not be JSON-stringified does not have <code>value</code>, but gets this property.
     */
   var unserializableValue: js.UndefOr[UnserializableValue] = js.undefined
   /**

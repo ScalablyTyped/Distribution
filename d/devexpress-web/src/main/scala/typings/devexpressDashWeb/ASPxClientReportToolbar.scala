@@ -7,37 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxClientDocumentViewer control's toolbar.
   */
-trait ASPxClientReportToolbar extends ASPxClientControl {
+@JSGlobal("ASPxClientReportToolbar")
+@js.native
+class ASPxClientReportToolbar () extends ASPxClientControl {
   /**
-    * Provides access to the control template assigned for the specified menu item.
+    * Provides access to the control template assigned for the specified menu item. A control.
     * @param name A String value, specifying the menu item name.
     */
-  def GetItemTemplateControl(name: String): ASPxClientControl
+  def GetItemTemplateControl(name: String): ASPxClientControl = js.native
 }
 
-object ASPxClientReportToolbar {
-  @scala.inline
-  def apply(
-    AdjustControl: () => Unit,
-    GetClientVisible: () => Boolean,
-    GetHeight: () => Double,
-    GetItemTemplateControl: String => ASPxClientControl,
-    GetMainElement: () => js.Object,
-    GetParentControl: () => js.Object,
-    GetVisible: () => Boolean,
-    GetWidth: () => Double,
-    InCallback: () => Boolean,
-    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: String => Unit,
-    SetClientVisible: Boolean => Unit,
-    SetHeight: Double => Unit,
-    SetVisible: Boolean => Unit,
-    SetWidth: Double => Unit,
-    name: String
-  ): ASPxClientReportToolbar = {
-    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetItemTemplateControl = js.Any.fromFunction1(GetItemTemplateControl), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
-  
-    __obj.asInstanceOf[ASPxClientReportToolbar]
-  }
+/* static members */
+@JSGlobal("ASPxClientReportToolbar")
+@js.native
+object ASPxClientReportToolbar extends js.Object {
+  /**
+    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientReportToolbar object.
+    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
+    */
+  def Cast(obj: js.Any): ASPxClientReportToolbar = js.native
 }
 

@@ -7,64 +7,47 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side dashboard parameter.
   */
-trait ASPxClientDashboardParameter extends js.Object {
+@JSGlobal("ASPxClientDashboardParameter")
+@js.native
+class ASPxClientDashboardParameter () extends js.Object {
+  /** @deprecated Use the GetName method instead. */
   /**
     * Gets the dashboard parameter name on the client side.
-    * Value: A string value that is the dashboard parameter name on the client side.
     */
-  var Name: String
+  var Name: String = js.native
+  /** @deprecated Use the GetValue method instead. */
   /**
     * Gets the dashboard parameter value on the client side.
-    * Value: A string value that specifies the dashboard parameter value on the client side.
     */
-  var Value: js.Object
+  var Value: js.Any = js.native
   /**
     * Returns a default parameter value.
     */
-  def GetDefaultValue(): js.Object
+  def GetDefaultValue(): js.Any = js.native
   /**
     * Returns the parameter's description displayed to an end-user.
     */
-  def GetDescription(): String
+  def GetDescription(): String = js.native
   /**
     * Returns a parameter name.
     */
-  def GetName(): String
+  def GetName(): String = js.native
   /**
     * Returns a parameter type.
     */
-  def GetType(): String
+  def GetType(): String = js.native
   /**
     * Returns a current parameter value(s).
     */
-  def GetValue(): js.Object
+  def GetValue(): js.Any = js.native
   /**
     * Returns possible parameter values.
     */
-  def GetValues(): js.Array[ASPxClientDashboardParameterValue]
+  def GetValues(): js.Array[ASPxClientDashboardParameterValue] = js.native
   /**
     * Specifies the current parameter value(s).
     * @param value The current parameter value(s).
     */
-  def SetValue(value: js.Object): Unit
-}
-
-object ASPxClientDashboardParameter {
-  @scala.inline
-  def apply(
-    GetDefaultValue: () => js.Object,
-    GetDescription: () => String,
-    GetName: () => String,
-    GetType: () => String,
-    GetValue: () => js.Object,
-    GetValues: () => js.Array[ASPxClientDashboardParameterValue],
-    Name: String,
-    SetValue: js.Object => Unit,
-    Value: js.Object
-  ): ASPxClientDashboardParameter = {
-    val __obj = js.Dynamic.literal(GetDefaultValue = js.Any.fromFunction0(GetDefaultValue), GetDescription = js.Any.fromFunction0(GetDescription), GetName = js.Any.fromFunction0(GetName), GetType = js.Any.fromFunction0(GetType), GetValue = js.Any.fromFunction0(GetValue), GetValues = js.Any.fromFunction0(GetValues), Name = Name, SetValue = js.Any.fromFunction1(SetValue), Value = Value)
-  
-    __obj.asInstanceOf[ASPxClientDashboardParameter]
-  }
+  def SetValue(value: js.Any): Unit = js.native
 }
 

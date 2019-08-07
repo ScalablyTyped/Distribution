@@ -8,8 +8,13 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxQueryBuilder control.
   */
+@JSGlobal("ASPxClientQueryBuilder")
 @js.native
-trait ASPxClientQueryBuilder extends ASPxClientControl {
+class ASPxClientQueryBuilder () extends ASPxClientControl {
+  /**
+    * Occurs before the Query Builder UI is initialized.
+    */
+  var BeforeRender: ASPxClientEvent[ASPxClientQueryBuilderBeforeRenderEventHandler[ASPxClientQueryBuilder]] = js.native
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -33,13 +38,17 @@ trait ASPxClientQueryBuilder extends ASPxClientControl {
     */
   var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientQueryBuilder]] = js.native
   /**
+    * Occurs on the client each time a server-side error raises.
+    */
+  var OnServerError: ASPxClientEvent[ASPxClientQueryBuilderErrorEventHandler[ASPxClientQueryBuilder]] = js.native
+  /**
     * Occurs when executing the Save command on the client.
     */
   var SaveCommandExecute: ASPxClientEvent[ASPxClientQueryBuilderSaveCommandExecuteEventHandler[ASPxClientQueryBuilder]] = js.native
   /**
     * Returns the object model of a Query Builder.
     */
-  def GetDesignerModel(): js.Object = js.native
+  def GetDesignerModel(): js.Any = js.native
   /**
     * Gets a client-side model of the currently opened query serialized to Json.
     */
@@ -49,16 +58,12 @@ trait ASPxClientQueryBuilder extends ASPxClientControl {
     */
   def IsQueryValid(): Boolean = js.native
   /**
-    * Sends a callback to the server with the specified argument.
-    * @param arg A String value, specifying the callback argument.
-    */
-  def PerformCallback(arg: String): Unit = js.native
-  /**
     * Sends a callback to the server and generates the server-side event, passing it the specified argument.
     * @param arg A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(arg: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(arg: String): Unit = js.native
+  def PerformCallback(arg: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Saves the current query.
     */
@@ -72,5 +77,16 @@ trait ASPxClientQueryBuilder extends ASPxClientControl {
     * @param localization A dictionary containing the property names, along with their localized equivalents.
     */
   def UpdateLocalization(localization: StringDictionary[String]): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientQueryBuilder")
+@js.native
+object ASPxClientQueryBuilder extends js.Object {
+  /**
+    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientQueryBuilder object.
+    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
+    */
+  def Cast(obj: js.Any): ASPxClientQueryBuilder = js.native
 }
 

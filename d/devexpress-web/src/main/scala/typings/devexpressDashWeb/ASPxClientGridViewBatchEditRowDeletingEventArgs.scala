@@ -5,27 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRowDeleting event.
+  * Provides data for the ASPxClientGridView.BatchEditRowDeleting event.
   */
-trait ASPxClientGridViewBatchEditRowDeletingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditRowDeletingEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditRowDeletingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditRowDeletingEventArgs class.
+    * @param visibleIndex An integer value that specifies the row's visible index.
+    * @param rowValues An object that provides row values.
+    * @param key An object that is the row's key.
+    */
+  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about deleted cells.
-    * Value: A hashtable that stores information about deleted cells.
     */
-  var rowValues: js.Object
+  var rowValues: js.Any = js.native
   /**
     * Gets the processed row's visible index.
-    * Value: An integer value that specifies the processed row's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewBatchEditRowDeletingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, rowValues: js.Object, visibleIndex: Double): ASPxClientGridViewBatchEditRowDeletingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, rowValues = rowValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowDeletingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

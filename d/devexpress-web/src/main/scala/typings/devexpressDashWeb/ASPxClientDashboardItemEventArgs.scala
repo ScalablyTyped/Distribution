@@ -7,30 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as the base class for classes that provide data for client-side events related to dashboard items.
   */
-trait ASPxClientDashboardItemEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientDashboardItemEventArgs")
+@js.native
+class ASPxClientDashboardItemEventArgs () extends ASPxClientEventArgs {
   /**
     * Gets the component name of the dashboard item.
-    * Value: A string value that is the component name of the dashboard item.
     */
-  var ItemName: String
+  var ItemName: String = js.native
   /**
-    * Returns whether or not the specified value is null.
+    * Returns whether the specified value is null. true, if the specified value is null; otherwise, false.
     * @param value The specified value.
     */
-  def IsNullValue(value: js.Object): Boolean
+  def IsNullValue(value: js.Any): Boolean = js.native
   /**
-    * Returns whether or not the specified value is 'others'.
+    * Returns whether the specified value is 'others'. true, if the specified value is 'others'; otherwise, false.
     * @param value The specified value.
     */
-  def IsOthersValue(value: js.Object): Boolean
-}
-
-object ASPxClientDashboardItemEventArgs {
-  @scala.inline
-  def apply(IsNullValue: js.Object => Boolean, IsOthersValue: js.Object => Boolean, ItemName: String): ASPxClientDashboardItemEventArgs = {
-    val __obj = js.Dynamic.literal(IsNullValue = js.Any.fromFunction1(IsNullValue), IsOthersValue = js.Any.fromFunction1(IsOthersValue), ItemName = ItemName)
-  
-    __obj.asInstanceOf[ASPxClientDashboardItemEventArgs]
-  }
+  def IsOthersValue(value: js.Any): Boolean = js.native
 }
 

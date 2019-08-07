@@ -7,20 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the StandardDeviationErrorBars class.
   */
-trait ASPxClientStandardDeviationErrorBars extends ASPxClientIndicator {
+@JSGlobal("ASPxClientStandardDeviationErrorBars")
+@js.native
+class ASPxClientStandardDeviationErrorBars () extends ASPxClientIndicator {
   /**
     * Returns the multiplier on which the standard deviation value is multiplied before display.
-    * Value: A double value specifying the multiplier. Values less than 0 are not allowed.
     */
-  var multiplier: Double
-}
-
-object ASPxClientStandardDeviationErrorBars {
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, multiplier: Double, name: String, series: ASPxClientSeries): ASPxClientStandardDeviationErrorBars = {
-    val __obj = js.Dynamic.literal(chart = chart, multiplier = multiplier, name = name, series = series)
-  
-    __obj.asInstanceOf[ASPxClientStandardDeviationErrorBars]
-  }
+  var multiplier: Double = js.native
 }
 

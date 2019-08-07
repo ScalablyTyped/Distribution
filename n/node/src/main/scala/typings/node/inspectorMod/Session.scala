@@ -28,8 +28,6 @@ import typings.node.inspectorMod.DebuggerNs.SetBlackboxPatternsParameterType
 import typings.node.inspectorMod.DebuggerNs.SetBlackboxedRangesParameterType
 import typings.node.inspectorMod.DebuggerNs.SetBreakpointByUrlParameterType
 import typings.node.inspectorMod.DebuggerNs.SetBreakpointByUrlReturnType
-import typings.node.inspectorMod.DebuggerNs.SetBreakpointOnFunctionCallParameterType
-import typings.node.inspectorMod.DebuggerNs.SetBreakpointOnFunctionCallReturnType
 import typings.node.inspectorMod.DebuggerNs.SetBreakpointParameterType
 import typings.node.inspectorMod.DebuggerNs.SetBreakpointReturnType
 import typings.node.inspectorMod.DebuggerNs.SetBreakpointsActiveParameterType
@@ -55,10 +53,12 @@ import typings.node.inspectorMod.HeapProfilerNs.StartTrackingHeapObjectsParamete
 import typings.node.inspectorMod.HeapProfilerNs.StopSamplingReturnType
 import typings.node.inspectorMod.HeapProfilerNs.StopTrackingHeapObjectsParameterType
 import typings.node.inspectorMod.HeapProfilerNs.TakeHeapSnapshotParameterType
+import typings.node.inspectorMod.NodeRuntimeNs.NotifyWhenWaitingForDisconnectParameterType
 import typings.node.inspectorMod.NodeTracingNs.DataCollectedEventDataType
 import typings.node.inspectorMod.NodeTracingNs.GetCategoriesReturnType
 import typings.node.inspectorMod.NodeTracingNs.StartParameterType
 import typings.node.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType
+import typings.node.inspectorMod.NodeWorkerNs.DetachParameterType
 import typings.node.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType
 import typings.node.inspectorMod.NodeWorkerNs.EnableParameterType
 import typings.node.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType
@@ -71,10 +71,8 @@ import typings.node.inspectorMod.ProfilerNs.StartPreciseCoverageParameterType
 import typings.node.inspectorMod.ProfilerNs.StopReturnType
 import typings.node.inspectorMod.ProfilerNs.TakePreciseCoverageReturnType
 import typings.node.inspectorMod.ProfilerNs.TakeTypeProfileReturnType
-import typings.node.inspectorMod.RuntimeNs.AddBindingParameterType
 import typings.node.inspectorMod.RuntimeNs.AwaitPromiseParameterType
 import typings.node.inspectorMod.RuntimeNs.AwaitPromiseReturnType
-import typings.node.inspectorMod.RuntimeNs.BindingCalledEventDataType
 import typings.node.inspectorMod.RuntimeNs.CallFunctionOnParameterType
 import typings.node.inspectorMod.RuntimeNs.CallFunctionOnReturnType
 import typings.node.inspectorMod.RuntimeNs.CompileScriptParameterType
@@ -86,8 +84,6 @@ import typings.node.inspectorMod.RuntimeNs.ExceptionRevokedEventDataType
 import typings.node.inspectorMod.RuntimeNs.ExceptionThrownEventDataType
 import typings.node.inspectorMod.RuntimeNs.ExecutionContextCreatedEventDataType
 import typings.node.inspectorMod.RuntimeNs.ExecutionContextDestroyedEventDataType
-import typings.node.inspectorMod.RuntimeNs.GetHeapUsageReturnType
-import typings.node.inspectorMod.RuntimeNs.GetIsolateIdReturnType
 import typings.node.inspectorMod.RuntimeNs.GetPropertiesParameterType
 import typings.node.inspectorMod.RuntimeNs.GetPropertiesReturnType
 import typings.node.inspectorMod.RuntimeNs.GlobalLexicalScopeNamesParameterType
@@ -97,11 +93,9 @@ import typings.node.inspectorMod.RuntimeNs.QueryObjectsParameterType
 import typings.node.inspectorMod.RuntimeNs.QueryObjectsReturnType
 import typings.node.inspectorMod.RuntimeNs.ReleaseObjectGroupParameterType
 import typings.node.inspectorMod.RuntimeNs.ReleaseObjectParameterType
-import typings.node.inspectorMod.RuntimeNs.RemoveBindingParameterType
 import typings.node.inspectorMod.RuntimeNs.RunScriptParameterType
 import typings.node.inspectorMod.RuntimeNs.RunScriptReturnType
 import typings.node.inspectorMod.RuntimeNs.SetCustomObjectFormatterEnabledParameterType
-import typings.node.inspectorMod.RuntimeNs.SetMaxCallStackSizeToCaptureParameterType
 import typings.node.inspectorMod.SchemaNs.GetDomainsReturnType
 import typings.node.nodeStrings.ConsoleDOTclearMessages
 import typings.node.nodeStrings.ConsoleDOTdisable
@@ -131,7 +125,6 @@ import typings.node.nodeStrings.DebuggerDOTsetBlackboxPatterns
 import typings.node.nodeStrings.DebuggerDOTsetBlackboxedRanges
 import typings.node.nodeStrings.DebuggerDOTsetBreakpoint
 import typings.node.nodeStrings.DebuggerDOTsetBreakpointByUrl
-import typings.node.nodeStrings.DebuggerDOTsetBreakpointOnFunctionCall
 import typings.node.nodeStrings.DebuggerDOTsetBreakpointsActive
 import typings.node.nodeStrings.DebuggerDOTsetPauseOnExceptions
 import typings.node.nodeStrings.DebuggerDOTsetReturnValue
@@ -158,12 +151,15 @@ import typings.node.nodeStrings.HeapProfilerDOTstartTrackingHeapObjects
 import typings.node.nodeStrings.HeapProfilerDOTstopSampling
 import typings.node.nodeStrings.HeapProfilerDOTstopTrackingHeapObjects
 import typings.node.nodeStrings.HeapProfilerDOTtakeHeapSnapshot
+import typings.node.nodeStrings.NodeRuntimeDOTnotifyWhenWaitingForDisconnect
+import typings.node.nodeStrings.NodeRuntimeDOTwaitingForDisconnect
 import typings.node.nodeStrings.NodeTracingDOTdataCollected
 import typings.node.nodeStrings.NodeTracingDOTgetCategories
 import typings.node.nodeStrings.NodeTracingDOTstart
 import typings.node.nodeStrings.NodeTracingDOTstop
 import typings.node.nodeStrings.NodeTracingDOTtracingComplete
 import typings.node.nodeStrings.NodeWorkerDOTattachedToWorker
+import typings.node.nodeStrings.NodeWorkerDOTdetach
 import typings.node.nodeStrings.NodeWorkerDOTdetachedFromWorker
 import typings.node.nodeStrings.NodeWorkerDOTdisable
 import typings.node.nodeStrings.NodeWorkerDOTenable
@@ -183,9 +179,7 @@ import typings.node.nodeStrings.ProfilerDOTstopPreciseCoverage
 import typings.node.nodeStrings.ProfilerDOTstopTypeProfile
 import typings.node.nodeStrings.ProfilerDOTtakePreciseCoverage
 import typings.node.nodeStrings.ProfilerDOTtakeTypeProfile
-import typings.node.nodeStrings.RuntimeDOTaddBinding
 import typings.node.nodeStrings.RuntimeDOTawaitPromise
-import typings.node.nodeStrings.RuntimeDOTbindingCalled
 import typings.node.nodeStrings.RuntimeDOTcallFunctionOn
 import typings.node.nodeStrings.RuntimeDOTcompileScript
 import typings.node.nodeStrings.RuntimeDOTconsoleAPICalled
@@ -198,21 +192,15 @@ import typings.node.nodeStrings.RuntimeDOTexceptionThrown
 import typings.node.nodeStrings.RuntimeDOTexecutionContextCreated
 import typings.node.nodeStrings.RuntimeDOTexecutionContextDestroyed
 import typings.node.nodeStrings.RuntimeDOTexecutionContextsCleared
-import typings.node.nodeStrings.RuntimeDOTgetHeapUsage
-import typings.node.nodeStrings.RuntimeDOTgetIsolateId
 import typings.node.nodeStrings.RuntimeDOTgetProperties
 import typings.node.nodeStrings.RuntimeDOTglobalLexicalScopeNames
 import typings.node.nodeStrings.RuntimeDOTinspectRequested
 import typings.node.nodeStrings.RuntimeDOTqueryObjects
 import typings.node.nodeStrings.RuntimeDOTreleaseObject
 import typings.node.nodeStrings.RuntimeDOTreleaseObjectGroup
-import typings.node.nodeStrings.RuntimeDOTremoveBinding
 import typings.node.nodeStrings.RuntimeDOTrunIfWaitingForDebugger
 import typings.node.nodeStrings.RuntimeDOTrunScript
-import typings.node.nodeStrings.RuntimeDOTsetAsyncCallStackDepth
 import typings.node.nodeStrings.RuntimeDOTsetCustomObjectFormatterEnabled
-import typings.node.nodeStrings.RuntimeDOTsetMaxCallStackSizeToCapture
-import typings.node.nodeStrings.RuntimeDOTterminateExecution
 import typings.node.nodeStrings.SchemaDOTgetDomains
 import typings.node.nodeStrings.inspectorNotification
 import scala.scalajs.js
@@ -267,8 +255,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected
-    * scripts upon enabling debugger.
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
     */
   @JSName("addListener")
   def addListener_DebuggerscriptParsed(
@@ -289,9 +276,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last
-    * seen object id and corresponding timestamp. If the were changes in the heap since last event
-    * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
     */
   @JSName("addListener")
   def addListener_HeapProfilerlastSeenObjectId(
@@ -305,6 +290,14 @@ class Session () extends EventEmitter {
   ): this.type = js.native
   @JSName("addListener")
   def addListener_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("addListener")
+  def addListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
@@ -358,15 +351,6 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Notification is issued every time when binding is called.
-    * @experimental
-    */
-  @JSName("addListener")
-  def addListener_RuntimebindingCalled(
-    event: RuntimeDOTbindingCalled,
-    listener: js.Function1[/* message */ InspectorNotification[BindingCalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
     * Issued when console API was called.
     */
   @JSName("addListener")
@@ -412,8 +396,7 @@ class Session () extends EventEmitter {
   @JSName("addListener")
   def addListener_RuntimeexecutionContextsCleared(event: RuntimeDOTexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API
-    * call).
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("addListener")
   def addListener_RuntimeinspectRequested(
@@ -481,6 +464,8 @@ class Session () extends EventEmitter {
   @JSName("emit")
   def emit_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles): Boolean = js.native
   @JSName("emit")
+  def emit_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect): Boolean = js.native
+  @JSName("emit")
   def emit_NodeTracingdataCollected(event: NodeTracingDOTdataCollected, message: InspectorNotification[DataCollectedEventDataType]): Boolean = js.native
   @JSName("emit")
   def emit_NodeTracingtracingComplete(event: NodeTracingDOTtracingComplete): Boolean = js.native
@@ -509,8 +494,6 @@ class Session () extends EventEmitter {
     event: ProfilerDOTconsoleProfileStarted,
     message: InspectorNotification[ConsoleProfileStartedEventDataType]
   ): Boolean = js.native
-  @JSName("emit")
-  def emit_RuntimebindingCalled(event: RuntimeDOTbindingCalled, message: InspectorNotification[BindingCalledEventDataType]): Boolean = js.native
   @JSName("emit")
   def emit_RuntimeconsoleAPICalled(event: RuntimeDOTconsoleAPICalled, message: InspectorNotification[ConsoleAPICalledEventDataType]): Boolean = js.native
   @JSName("emit")
@@ -571,8 +554,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected
-    * scripts upon enabling debugger.
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
     */
   @JSName("on")
   def on_DebuggerscriptParsed(
@@ -593,9 +575,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last
-    * seen object id and corresponding timestamp. If the were changes in the heap since last event
-    * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
     */
   @JSName("on")
   def on_HeapProfilerlastSeenObjectId(
@@ -609,6 +589,14 @@ class Session () extends EventEmitter {
   ): this.type = js.native
   @JSName("on")
   def on_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("on")
+  def on_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
@@ -662,15 +650,6 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Notification is issued every time when binding is called.
-    * @experimental
-    */
-  @JSName("on")
-  def on_RuntimebindingCalled(
-    event: RuntimeDOTbindingCalled,
-    listener: js.Function1[/* message */ InspectorNotification[BindingCalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
     * Issued when console API was called.
     */
   @JSName("on")
@@ -716,8 +695,7 @@ class Session () extends EventEmitter {
   @JSName("on")
   def on_RuntimeexecutionContextsCleared(event: RuntimeDOTexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API
-    * call).
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("on")
   def on_RuntimeinspectRequested(
@@ -770,8 +748,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected
-    * scripts upon enabling debugger.
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
     */
   @JSName("once")
   def once_DebuggerscriptParsed(
@@ -792,9 +769,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last
-    * seen object id and corresponding timestamp. If the were changes in the heap since last event
-    * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
     */
   @JSName("once")
   def once_HeapProfilerlastSeenObjectId(
@@ -808,6 +783,14 @@ class Session () extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("once")
+  def once_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
@@ -861,15 +844,6 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Notification is issued every time when binding is called.
-    * @experimental
-    */
-  @JSName("once")
-  def once_RuntimebindingCalled(
-    event: RuntimeDOTbindingCalled,
-    listener: js.Function1[/* message */ InspectorNotification[BindingCalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
     * Issued when console API was called.
     */
   @JSName("once")
@@ -915,8 +889,7 @@ class Session () extends EventEmitter {
   @JSName("once")
   def once_RuntimeexecutionContextsCleared(event: RuntimeDOTexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API
-    * call).
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("once")
   def once_RuntimeinspectRequested(
@@ -961,8 +934,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_Consoledisable(method: ConsoleDOTdisable, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Enables console domain, sends the messages collected so far to the client by means of the
-    * `messageAdded` notification.
+    * Enables console domain, sends the messages collected so far to the client by means of the <code>messageAdded</code> notification.
     */
   @JSName("post")
   def post_Consoleenable(method: ConsoleDOTenable): Unit = js.native
@@ -991,8 +963,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_Debuggerdisable(method: DebuggerDOTdisable, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Enables debugger for the given page. Clients should not assume that the debugging has been
-    * enabled until the result for this command is received.
+    * Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
     */
   @JSName("post")
   def post_Debuggerenable(method: DebuggerDOTenable): Unit = js.native
@@ -1020,8 +991,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
   ): Unit = js.native
   /**
-    * Returns possible locations for breakpoint. scriptId in start and end range locations should be
-    * the same.
+    * Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
     */
   @JSName("post")
   def post_DebuggergetPossibleBreakpoints(method: DebuggerDOTgetPossibleBreakpoints): Unit = js.native
@@ -1057,7 +1027,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ GetScriptSourceReturnType, Unit]
   ): Unit = js.native
   /**
-    * Returns stack trace with given `stackTraceId`.
+    * Returns stack trace with given <code>stackTraceId</code>.
     * @experimental
     */
   @JSName("post")
@@ -1138,10 +1108,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_Debuggerresume(method: DebuggerDOTresume, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * This method is deprecated - use Debugger.stepInto with breakOnAsyncCall and
-    * Debugger.pauseOnAsyncTask instead. Steps into next scheduled async task if any is scheduled
-    * before next pause. Returns success when async task is actually scheduled, returns error if no
-    * task were scheduled or another scheduleStepIntoAsync was called.
+    * This method is deprecated - use Debugger.stepInto with breakOnAsyncCall and Debugger.pauseOnAsyncTask instead. Steps into next scheduled async task if any is scheduled before next pause. Returns success when async task is actually scheduled, returns error if no task were scheduled or another scheduleStepIntoAsync was called.
     * @experimental
     */
   @JSName("post")
@@ -1182,9 +1149,7 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
-    * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
-    * scripts with url matching one of the patterns. VM will try to leave blackboxed script by
-    * performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
+    * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. VM will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
     * @experimental
     */
   @JSName("post")
@@ -1200,10 +1165,7 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
-    * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted
-    * scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
-    * Positions array contains positions where blackbox state is changed. First interval isn't
-    * blackboxed. Array should be sorted.
+    * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. Positions array contains positions where blackbox state is changed. First interval isn't blackboxed. Array should be sorted.
     * @experimental
     */
   @JSName("post")
@@ -1237,10 +1199,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointReturnType, Unit]
   ): Unit = js.native
   /**
-    * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
-    * command is issued, all existing parsed scripts will have breakpoints resolved and returned in
-    * `locations` property. Further matching script parsing will result in subsequent
-    * `breakpointResolved` events issued. This logical breakpoint will survive page reloads.
+    * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
     */
   @JSName("post")
   def post_DebuggersetBreakpointByUrl(method: DebuggerDOTsetBreakpointByUrl): Unit = js.native
@@ -1258,27 +1217,6 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
   ): Unit = js.native
   /**
-    * Sets JavaScript breakpoint before each call to the given function.
-    * If another function was created from the same source as a given one,
-    * calling it will also trigger the breakpoint.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggersetBreakpointOnFunctionCall(method: DebuggerDOTsetBreakpointOnFunctionCall): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointOnFunctionCall(
-    method: DebuggerDOTsetBreakpointOnFunctionCall,
-    callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointOnFunctionCallReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointOnFunctionCall(method: DebuggerDOTsetBreakpointOnFunctionCall, params: SetBreakpointOnFunctionCallParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointOnFunctionCall(
-    method: DebuggerDOTsetBreakpointOnFunctionCall,
-    params: SetBreakpointOnFunctionCallParameterType,
-    callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointOnFunctionCallReturnType, Unit]
-  ): Unit = js.native
-  /**
     * Activates / deactivates all breakpoints on the page.
     */
   @JSName("post")
@@ -1294,8 +1232,7 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
-    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
-    * no exceptions. Initial pause on exceptions state is `none`.
+    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
     */
   @JSName("post")
   def post_DebuggersetPauseOnExceptions(method: DebuggerDOTsetPauseOnExceptions): Unit = js.native
@@ -1359,8 +1296,7 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
-    * Changes value of variable in a callframe. Object-based scopes are not supported and must be
-    * mutated manually.
+    * Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
     */
   @JSName("post")
   def post_DebuggersetVariableValue(method: DebuggerDOTsetVariableValue): Unit = js.native
@@ -1404,8 +1340,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggerstepOver(method: DebuggerDOTstepOver, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Enables console to refer to the node with given id via $x (see Command Line API for more details
-    * $x functions).
+    * Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).
     */
   @JSName("post")
   def post_HeapProfileraddInspectedHeapObject(method: HeapProfilerDOTaddInspectedHeapObject): Unit = js.native
@@ -1533,6 +1468,27 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
+    * Enable the `NodeRuntime.waitingForDisconnect`.
+    */
+  @JSName("post")
+  def post_NodeRuntimenotifyWhenWaitingForDisconnect(method: NodeRuntimeDOTnotifyWhenWaitingForDisconnect): Unit = js.native
+  @JSName("post")
+  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
+    method: NodeRuntimeDOTnotifyWhenWaitingForDisconnect,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
+    method: NodeRuntimeDOTnotifyWhenWaitingForDisconnect,
+    params: NotifyWhenWaitingForDisconnectParameterType
+  ): Unit = js.native
+  @JSName("post")
+  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
+    method: NodeRuntimeDOTnotifyWhenWaitingForDisconnect,
+    params: NotifyWhenWaitingForDisconnectParameterType,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  /**
     * Gets supported tracing categories.
     */
   @JSName("post")
@@ -1565,6 +1521,21 @@ class Session () extends EventEmitter {
   def post_NodeTracingstop(method: NodeTracingDOTstop): Unit = js.native
   @JSName("post")
   def post_NodeTracingstop(method: NodeTracingDOTstop, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  /**
+    * Detached from the worker with given sessionId.
+    */
+  @JSName("post")
+  def post_NodeWorkerdetach(method: NodeWorkerDOTdetach): Unit = js.native
+  @JSName("post")
+  def post_NodeWorkerdetach(method: NodeWorkerDOTdetach, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_NodeWorkerdetach(method: NodeWorkerDOTdetach, params: DetachParameterType): Unit = js.native
+  @JSName("post")
+  def post_NodeWorkerdetach(
+    method: NodeWorkerDOTdetach,
+    params: DetachParameterType,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   /**
     * Detaches from all running workers and disables attaching to new workers as they are started.
     */
@@ -1612,8 +1583,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_Profilerenable(method: ProfilerDOTenable, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Collect coverage data for the current isolate. The coverage data may be incomplete due to
-    * garbage collection.
+    * Collect coverage data for the current isolate. The coverage data may be incomplete due to garbage collection.
     */
   @JSName("post")
   def post_ProfilergetBestEffortCoverage(method: ProfilerDOTgetBestEffortCoverage): Unit = js.native
@@ -1642,9 +1612,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_Profilerstart(method: ProfilerDOTstart, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code
-    * coverage may be incomplete. Enabling prevents running optimized code and resets execution
-    * counters.
+    * Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code coverage may be incomplete. Enabling prevents running optimized code and resets execution counters.
     */
   @JSName("post")
   def post_ProfilerstartPreciseCoverage(method: ProfilerDOTstartPreciseCoverage): Unit = js.native
@@ -1674,8 +1642,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ StopReturnType, Unit]
   ): Unit = js.native
   /**
-    * Disable precise code coverage. Disabling releases unnecessary execution count records and allows
-    * executing optimized code.
+    * Disable precise code coverage. Disabling releases unnecessary execution count records and allows executing optimized code.
     */
   @JSName("post")
   def post_ProfilerstopPreciseCoverage(method: ProfilerDOTstopPreciseCoverage): Unit = js.native
@@ -1690,8 +1657,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_ProfilerstopTypeProfile(method: ProfilerDOTstopTypeProfile, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Collect coverage data for the current isolate, and resets execution counters. Precise code
-    * coverage needs to have started.
+    * Collect coverage data for the current isolate, and resets execution counters. Precise code coverage needs to have started.
     */
   @JSName("post")
   def post_ProfilertakePreciseCoverage(method: ProfilerDOTtakePreciseCoverage): Unit = js.native
@@ -1712,29 +1678,6 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ TakeTypeProfileReturnType, Unit]
   ): Unit = js.native
   /**
-    * If executionContextId is empty, adds binding with the given name on the
-    * global objects of all inspected contexts, including those created later,
-    * bindings survive reloads.
-    * If executionContextId is specified, adds binding only on global object of
-    * given execution context.
-    * Binding function takes exactly one argument, this argument should be string,
-    * in case of any other input, function throws an exception.
-    * Each binding function call produces Runtime.bindingCalled notification.
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimeaddBinding(method: RuntimeDOTaddBinding): Unit = js.native
-  @JSName("post")
-  def post_RuntimeaddBinding(method: RuntimeDOTaddBinding, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_RuntimeaddBinding(method: RuntimeDOTaddBinding, params: AddBindingParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimeaddBinding(
-    method: RuntimeDOTaddBinding,
-    params: AddBindingParameterType,
-    callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  /**
     * Add handler to promise with given promise object id.
     */
   @JSName("post")
@@ -1753,8 +1696,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ AwaitPromiseReturnType, Unit]
   ): Unit = js.native
   /**
-    * Calls function with given declaration on the given object. Object group of the result is
-    * inherited from the target object.
+    * Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
     */
   @JSName("post")
   def post_RuntimecallFunctionOn(method: RuntimeDOTcallFunctionOn): Unit = js.native
@@ -1804,9 +1746,7 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimediscardConsoleEntries(method: RuntimeDOTdiscardConsoleEntries, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
-    * Enables reporting of execution contexts creation by means of `executionContextCreated` event.
-    * When the reporting gets enabled the event will be sent immediately for each existing execution
-    * context.
+    * Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event. When the reporting gets enabled the event will be sent immediately for each existing execution context.
     */
   @JSName("post")
   def post_Runtimeenable(method: RuntimeDOTenable): Unit = js.native
@@ -1831,31 +1771,7 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateReturnType, Unit]
   ): Unit = js.native
   /**
-    * Returns the JavaScript heap usage.
-    * It is the total usage of the corresponding isolate not scoped to a particular Runtime.
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimegetHeapUsage(method: RuntimeDOTgetHeapUsage): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetHeapUsage(
-    method: RuntimeDOTgetHeapUsage,
-    callback: js.Function2[/* err */ Error | Null, /* params */ GetHeapUsageReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns the isolate id.
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimegetIsolateId(method: RuntimeDOTgetIsolateId): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetIsolateId(
-    method: RuntimeDOTgetIsolateId,
-    callback: js.Function2[/* err */ Error | Null, /* params */ GetIsolateIdReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns properties of a given object. Object group of the result is inherited from the target
-    * object.
+    * Returns properties of a given object. Object group of the result is inherited from the target object.
     */
   @JSName("post")
   def post_RuntimegetProperties(method: RuntimeDOTgetProperties): Unit = js.native
@@ -1936,23 +1852,6 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   /**
-    * This method does not remove binding function from global object but
-    * unsubscribes current runtime agent from Runtime.bindingCalled notifications.
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimeremoveBinding(method: RuntimeDOTremoveBinding): Unit = js.native
-  @JSName("post")
-  def post_RuntimeremoveBinding(method: RuntimeDOTremoveBinding, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_RuntimeremoveBinding(method: RuntimeDOTremoveBinding, params: RemoveBindingParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimeremoveBinding(
-    method: RuntimeDOTremoveBinding,
-    params: RemoveBindingParameterType,
-    callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  /**
     * Tells inspected instance to run if it was waiting for debugger to attach.
     */
   @JSName("post")
@@ -1978,24 +1877,6 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ RunScriptReturnType, Unit]
   ): Unit = js.native
   /**
-    * Enables or disables async call stacks tracking.
-    */
-  @JSName("post")
-  def post_RuntimesetAsyncCallStackDepth(method: RuntimeDOTsetAsyncCallStackDepth): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetAsyncCallStackDepth(method: RuntimeDOTsetAsyncCallStackDepth, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetAsyncCallStackDepth(
-    method: RuntimeDOTsetAsyncCallStackDepth,
-    params: typings.node.inspectorMod.RuntimeNs.SetAsyncCallStackDepthParameterType
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetAsyncCallStackDepth(
-    method: RuntimeDOTsetAsyncCallStackDepth,
-    params: typings.node.inspectorMod.RuntimeNs.SetAsyncCallStackDepthParameterType,
-    callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  /**
     * @experimental
     */
   @JSName("post")
@@ -2016,33 +1897,6 @@ class Session () extends EventEmitter {
     params: SetCustomObjectFormatterEnabledParameterType,
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
-  /**
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimesetMaxCallStackSizeToCapture(method: RuntimeDOTsetMaxCallStackSizeToCapture): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetMaxCallStackSizeToCapture(
-    method: RuntimeDOTsetMaxCallStackSizeToCapture,
-    callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetMaxCallStackSizeToCapture(method: RuntimeDOTsetMaxCallStackSizeToCapture, params: SetMaxCallStackSizeToCaptureParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetMaxCallStackSizeToCapture(
-    method: RuntimeDOTsetMaxCallStackSizeToCapture,
-    params: SetMaxCallStackSizeToCaptureParameterType,
-    callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Terminate current or next JavaScript execution.
-    * Will cancel the termination when the outer-most script execution ends.
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimeterminateExecution(method: RuntimeDOTterminateExecution): Unit = js.native
-  @JSName("post")
-  def post_RuntimeterminateExecution(method: RuntimeDOTterminateExecution, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**
     * Returns supported domains.
     */
@@ -2091,8 +1945,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected
-    * scripts upon enabling debugger.
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
     */
   @JSName("prependListener")
   def prependListener_DebuggerscriptParsed(
@@ -2113,9 +1966,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last
-    * seen object id and corresponding timestamp. If the were changes in the heap since last event
-    * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
     */
   @JSName("prependListener")
   def prependListener_HeapProfilerlastSeenObjectId(
@@ -2129,6 +1980,14 @@ class Session () extends EventEmitter {
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("prependListener")
+  def prependListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
@@ -2182,15 +2041,6 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Notification is issued every time when binding is called.
-    * @experimental
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimebindingCalled(
-    event: RuntimeDOTbindingCalled,
-    listener: js.Function1[/* message */ InspectorNotification[BindingCalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
     * Issued when console API was called.
     */
   @JSName("prependListener")
@@ -2236,8 +2086,7 @@ class Session () extends EventEmitter {
   @JSName("prependListener")
   def prependListener_RuntimeexecutionContextsCleared(event: RuntimeDOTexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API
-    * call).
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("prependListener")
   def prependListener_RuntimeinspectRequested(
@@ -2290,8 +2139,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected
-    * scripts upon enabling debugger.
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
     */
   @JSName("prependOnceListener")
   def prependOnceListener_DebuggerscriptParsed(
@@ -2312,9 +2160,7 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last
-    * seen object id and corresponding timestamp. If the were changes in the heap since last event
-    * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
     */
   @JSName("prependOnceListener")
   def prependOnceListener_HeapProfilerlastSeenObjectId(
@@ -2328,6 +2174,14 @@ class Session () extends EventEmitter {
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_HeapProfilerresetProfiles(event: HeapProfilerDOTresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDOTwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
@@ -2381,15 +2235,6 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Notification is issued every time when binding is called.
-    * @experimental
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimebindingCalled(
-    event: RuntimeDOTbindingCalled,
-    listener: js.Function1[/* message */ InspectorNotification[BindingCalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
     * Issued when console API was called.
     */
   @JSName("prependOnceListener")
@@ -2435,8 +2280,7 @@ class Session () extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_RuntimeexecutionContextsCleared(event: RuntimeDOTexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API
-    * call).
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("prependOnceListener")
   def prependOnceListener_RuntimeinspectRequested(

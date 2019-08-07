@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client ASPxCardView.
   */
+@JSGlobal("ASPxClientCardView")
 @js.native
-trait ASPxClientCardView extends ASPxClientGridBase {
+class ASPxClientCardView () extends ASPxClientGridBase {
   /**
     * Occurs on the client side before a card is deleted in batch edit mode.
     */
@@ -69,6 +70,9 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Fires before a card has been focused.
     */
   var CardFocusing: ASPxClientEvent[ASPxClientCardViewCardFocusingEventHandler[ASPxClientCardView]] = js.native
+  /**
+    * Enables you to handle each column grouping.
+    */
   var ColumnGrouping: ASPxClientEvent[ASPxClientCardViewColumnCancelEventHandler[ASPxClientCardView]] = js.native
   /**
     * Enables you to prevent columns from being sorted.
@@ -94,7 +98,13 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Occurs on the client side when the focused cell is about to be changed.
     */
   var FocusedCellChanging: ASPxClientEvent[ASPxClientCardViewFocusedCellChangingEventHandler[ASPxClientCardView]] = js.native
+  /**
+    * Fires before a group row is collapsed.
+    */
   var GroupRowCollapsing: ASPxClientEvent[ASPxClientCardViewGroupCancelEventHandler[ASPxClientCardView]] = js.native
+  /**
+    * Fires before a group row is expanded.
+    */
   var GroupRowExpanding: ASPxClientEvent[ASPxClientCardViewGroupCancelEventHandler[ASPxClientCardView]] = js.native
   /**
     * Fires after the selection has been changed.
@@ -102,7 +112,6 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   var SelectionChanged: ASPxClientEvent[ASPxClientCardViewSelectionEventHandler[ASPxClientCardView]] = js.native
   /**
     * Provides access to the batch editing client API.
-    * Value: A <see cref="ASPxClientCardViewBatchEditApi" /> object that exposes the batch editing client API methods.
     */
   var batchEditApi: ASPxClientCardViewBatchEditApi = js.native
   /**
@@ -131,10 +140,13 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Hides the Filter Control.
     */
   def CloseFilterControl(): Unit = js.native
+  /**
+    * Collapses all group rows.
+    */
   def CollapseAll(): Unit = js.native
   /**
-    * 
-    * @param visibleIndex 
+    * Collapses the specified group row.
+    * @param visibleIndex An integer value that identifies the group row by its visible index.
     */
   def CollapseGroupRow(visibleIndex: Double): Unit = js.native
   /**
@@ -146,11 +158,14 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Deletes a card with the specified key value.
     * @param key An object that uniquely identifies the card.
     */
-  def DeleteCardByKey(key: js.Object): Unit = js.native
+  def DeleteCardByKey(key: js.Any): Unit = js.native
+  /**
+    * Expands all group rows.
+    */
   def ExpandAll(): Unit = js.native
   /**
-    * 
-    * @param visibleIndex 
+    * Expands the specified group row.
+    * @param visibleIndex An integer value that identifies the group row.
     */
   def ExpandGroupRow(visibleIndex: Double): Unit = js.native
   /**
@@ -162,23 +177,14 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Sets input focus to the grid.
     */
   def Focus(): Unit = js.native
+  def FocusEditor(column: String): Unit = js.native
+  def FocusEditor(column: Double): Unit = js.native
   /**
     * Moves focus to the specified edit cell within the edited card.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def FocusEditor(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Moves focus to the specified edit cell within the edited card.
-    * @param columnIndex An integer value that specifies the column's position within the columns collection.
-    */
-  def FocusEditor(columnIndex: Double): Unit = js.native
-  /**
-    * Moves focus to the specified edit cell within the edited card.
-    * @param column An ASPxClientCardViewColumn object that represents the data column within the client grid.
     */
   def FocusEditor(column: ASPxClientCardViewColumn): Unit = js.native
   /**
-    * Returns the key value of the specified card.
+    * Returns the key value of the specified card. A string representing the specified card's key value. If the index passed via the visibleIndex parameter is wrong, or the ASPxGridBase.KeyFieldName property is not set, null is returned.
     * @param visibleIndex An integer value that specifies the card's visible index.
     */
   def GetCardKey(visibleIndex: Double): String = js.native
@@ -190,52 +196,34 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     */
   def GetCardValues(visibleIndex: Double, fieldNames: String, onCallback: ASPxClientCardViewValuesCallback): Unit = js.native
   /**
-    * Returns the client column that resides at the specified position within the column collection.
-    * @param columnIndex A zero-based index that identifies the column within the column collection (the column's Index property value).
+    * Returns the client column that resides at the specified position within the column collection. An ASPxClientCardViewColumn object that represents the client column.
+    * @param columnIndex A zero-based index that identifies the column within the column collection (the column's CollectionItem.Index property value).
     */
   def GetColumn(columnIndex: Double): ASPxClientCardViewColumn = js.native
   /**
-    * Returns the client column to which the specified data source field is bound.
-    * @param columnFieldName A string value that specifies the name of the data source field to which the column is bound (the column's FieldName property value).
+    * Returns the client column to which the specified data source field is bound. An ASPxClientCardViewColumn object that represents the client column bound to the specified data source field.
+    * @param columnFieldName A string value that specifies the name of the data source field to which the column is bound (the column's CardViewColumn.FieldName property value).
     */
   def GetColumnByField(columnFieldName: String): ASPxClientCardViewColumn = js.native
   /**
-    * Returns the column with the specified unique identifier.
-    * @param columnId A string value that specifies the column's unique identifier (the column's Name property value).
+    * Returns the column with the specified unique identifier. An ASPxClientCardViewColumn object that represents the client column.
+    * @param columnId A string value that specifies the column's unique identifier (the column's WebColumnBase.Name property value).
     */
   def GetColumnById(columnId: String): ASPxClientCardViewColumn = js.native
   /**
     * Returns the number of columns within the client grid.
     */
   def GetColumnCount(): Double = js.native
+  def GetEditValue(column: String): String = js.native
+  def GetEditValue(column: Double): String = js.native
   /**
-    * Returns the value of the specified edit cell.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def GetEditValue(columnFieldNameOrId: String): String = js.native
-  /**
-    * Returns the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column within the grid's column collection.
-    */
-  def GetEditValue(columnIndex: Double): String = js.native
-  /**
-    * Returns the value of the specified edit cell.
-    * @param column An ASPxClientCardViewColumn object that represents the data column within the client grid.
+    * Returns the value of the specified edit cell. A string value that represents the value of the edit cell which corresponds to the specified data column.
     */
   def GetEditValue(column: ASPxClientCardViewColumn): String = js.native
+  def GetEditor(column: String): ASPxClientEdit = js.native
+  def GetEditor(column: Double): ASPxClientEdit = js.native
   /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def GetEditor(columnFieldNameOrId: String): ASPxClientEdit = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def GetEditor(columnIndex: Double): ASPxClientEdit = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
-    * @param column An ASPxClientCardViewColumn object that specifies the required column within the client grid.
+    * Returns the editor used to edit the specified column's values. An ASPxClientEdit object that is the specified column's editor.
     */
   def GetEditor(column: ASPxClientCardViewColumn): ASPxClientEdit = js.native
   /**
@@ -277,14 +265,14 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   /**
     * Returns key values of selected cards displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[js.Object] = js.native
+  def GetSelectedKeysOnPage(): js.Array[_] = js.native
   /**
     * Returns the index of the first card displayed within the grid's active page.
     */
   def GetTopVisibleIndex(): Double = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomDataCallback event.
-    * @param args A string value that is any information that needs to be sent to the server-side CustomDataCallback event.
+    * Sends a callback to the server and generates the server-side ASPxCardView.CustomDataCallback event.
+    * @param args A string value that is any information that needs to be sent to the server-side ASPxCardView.CustomDataCallback event.
     * @param onCallback An ASPxClientCardViewValuesCallback object that is the JavaScript function which receives the information on the client side.
     */
   def GetValuesOnCustomCallback(args: String, onCallback: ASPxClientCardViewValuesCallback): Unit = js.native
@@ -301,66 +289,27 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * @param pageIndex An integer value that specifies the active page's index.
     */
   def GotoPage(pageIndex: Double): Unit = js.native
+  def GroupBy(column: String): Unit = js.native
+  def GroupBy(column: String, groupIndex: Double): Unit = js.native
+  def GroupBy(column: String, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: Double): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Double): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
-    * 
-    * @param columnFieldNameOrId 
-    */
-  def GroupBy(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * 
-    * @param columnFieldNameOrId 
-    * @param groupIndex 
-    */
-  def GroupBy(columnFieldNameOrId: String, groupIndex: Double): Unit = js.native
-  /**
-    * 
-    * @param columnFieldNameOrId 
-    * @param groupIndex 
-    * @param sortOrder 
-    */
-  def GroupBy(columnFieldNameOrId: String, groupIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * 
-    * @param columnIndex 
-    */
-  def GroupBy(columnIndex: Double): Unit = js.native
-  /**
-    * 
-    * @param columnIndex 
-    * @param groupIndex 
-    */
-  def GroupBy(columnIndex: Double, groupIndex: Double): Unit = js.native
-  /**
-    * 
-    * @param columnIndex 
-    * @param groupIndex 
-    * @param sortOrder 
-    */
-  def GroupBy(columnIndex: Double, groupIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * 
-    * @param column 
+    * Groups cards by the values of the specified column.
+    * @param column An ASPxClientCardViewColumn object that represents the card view column.
+    * @param groupIndex An integer value that specifies the grouping level. &#0045;1 to cancel grouping by the column's values.
+    * @param sortOrder A string value that specifies the column's sort order.
     */
   def GroupBy(column: ASPxClientCardViewColumn): Unit = js.native
-  /**
-    * 
-    * @param column 
-    * @param groupIndex 
-    */
   def GroupBy(column: ASPxClientCardViewColumn, groupIndex: Double): Unit = js.native
-  /**
-    * 
-    * @param column 
-    * @param groupIndex 
-    * @param sortOrder 
-    */
   def GroupBy(column: ASPxClientCardViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
     * Closes the customization window.
     */
   def HideCustomizationWindow(): Unit = js.native
   /**
-    * Indicates whether or not the specified card is selected within the current page.
+    * Indicates whether or not the specified card is selected within the current page. true if the specified card is selected within the current page; otherwise, false.
     * @param visibleIndex An integer value that identifies the card by its visible index.
     */
   def IsCardSelectedOnPage(visibleIndex: Double): Boolean = js.native
@@ -376,75 +325,31 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Indicates whether or not a new card is being edited.
     */
   def IsNewCardEditing(): Boolean = js.native
-  /**
-    * Hides the specified column.
-    * @param columnFieldNameOrId A string value that identifies the column to be hidden by the name of the data source field to which the column is bound, or by the column's name.
-    */
-  def MoveColumn(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the ASPxCardView.
-    */
-  def MoveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double): Unit = js.native
+  def MoveColumn(column: String): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Double): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: Double): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   /**
     * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
     * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
     * @param moveBefore true to move the column before the target column; otherwise, false.
-    */
-  def MoveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  /**
-    * Hides the specified column.
-    * @param columnIndex An integer value that specifies the absolute index of the column to hide.
-    */
-  def MoveColumn(columnIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    */
-  def MoveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    */
-  def MoveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  /**
-    * Hides the specified column.
-    * @param column An ASPxClientCardViewColumn object that represents the column to hide.
     */
   def MoveColumn(column: ASPxClientCardViewColumn): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param column An ASPxClientCardViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the ASPxCardView.
-    */
   def MoveColumn(column: ASPxClientCardViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the ASPxCardView.
-    * @param column An ASPxClientCardViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the CardView.
-    * @param moveBefore true, to move the column before the target column; otherwise, false.
-    */
   def MoveColumn(column: ASPxClientCardViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   /**
     * Activates the next page.
     */
   def NextPage(): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(args: String): Unit = js.native
-  /**
     * Sends a callback to the server and generates the server-side event, passing the specified argument to it.
     * @param args A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(args: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(args: String): Unit = js.native
+  def PerformCallback(args: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Activates the previous page.
     */
@@ -454,70 +359,40 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     */
   def Refresh(): Unit = js.native
   /**
-    * Selects all unselected cards displayed on the current page.
-    */
-  def SelectAllCardsOnPage(): Unit = js.native
-  /**
     * Allows you to select or deselect all cards displayed on the current page based on the parameter passed.
     * @param selected true to select all unselected cards displayed on the current page; false to deselect all selected cards on the page.
     */
+  def SelectAllCardsOnPage(): Unit = js.native
   def SelectAllCardsOnPage(selected: Boolean): Unit = js.native
   /**
-    * Selects the specified card displayed on the current page.
+    * Selects or deselects the specified card displayed on the current page.
     * @param visibleIndex A zero-based integer value that specifies the card's visible index.
+    * @param selected true to select the specified card; false to deselect the card.
     */
   def SelectCardOnPage(visibleIndex: Double): Unit = js.native
   def SelectCardOnPage(visibleIndex: Double, selected: Boolean): Unit = js.native
-  /**
-    * Selects all the unselected cards within the CardView.
-    */
-  def SelectCards(): Unit = js.native
-  /**
-    * Selects the specified card displayed within the CardView.
-    * @param visibleIndex A zero-based integer value that specifies the card's visible index.
-    */
-  def SelectCards(visibleIndex: Double): Unit = js.native
-  def SelectCards(visibleIndex: Double, selected: Boolean): Unit = js.native
-  /**
-    * Selects the specified cards within the CardView.
-    * @param visibleIndices An array of zero-based indices that identify data cards within the grid.
-    */
-  def SelectCards(visibleIndices: js.Array[Double]): Unit = js.native
   /**
     * Selects or deselects the specified cards within the CardView.
     * @param visibleIndices An array of zero-based indices that identify data cards within the grid.
     * @param selected true to select the specified cards; false to deselect the cards.
     */
+  def SelectCards(): Unit = js.native
+  def SelectCards(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectCards(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
+  def SelectCards(visibleIndices: Double): Unit = js.native
+  def SelectCards(visibleIndices: Double, selected: Boolean): Unit = js.native
+  def SelectCardsByKey(keys: js.Any): Unit = js.native
+  def SelectCardsByKey(keys: js.Any, selected: Boolean): Unit = js.native
   /**
     * Selects or deselects the specified card displayed within the CardView.
-    * @param key An object that uniquely identifies the card.
     * @param selected true to select the specified card; false to deselect the card.
     */
-  def SelectCardsByKey(key: js.Object): Unit = js.native
-  def SelectCardsByKey(key: js.Object, selected: Boolean): Unit = js.native
-  /**
-    * Selects or deselects the specified cards displayed within the CardView.
-    * @param keys An array of objects that uniquely identify the cards.
-    * @param selected true to select the specified cards; false to deselect the cards.
-    */
-  def SelectCardsByKey(keys: js.Array[js.Object]): Unit = js.native
-  def SelectCardsByKey(keys: js.Array[js.Object], selected: Boolean): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[_]): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def SetEditValue(column: String, value: String): Unit = js.native
+  def SetEditValue(column: Double, value: String): Unit = js.native
   /**
     * Sets the value of the specified edit cell.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param value A string value that specifies the edit cell's new value.
-    */
-  def SetEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column within the grid's column collection.
-    * @param value A string value that specifies the edit cell's new value.
-    */
-  def SetEditValue(columnIndex: Double, value: String): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param column An ASPxClientCardViewColumn object that represents the data column within the client grid.
     * @param value A string value that specifies the edit cell's new value.
     */
   def SetEditValue(column: ASPxClientCardViewColumn, value: String): Unit = js.native
@@ -534,7 +409,7 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   /**
     * Focuses the specified cell.
     * @param cardVisibleIndex An  value that specifies the visible index of the card.
-    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's Index property value).
+    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's CollectionItem.Index property value).
     */
   def SetFocusedCell(cardVisibleIndex: Double, columnIndex: Double): Unit = js.native
   /**
@@ -548,91 +423,32 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     */
   def SetVerticalScrollPosition(position: Double): Unit = js.native
   /**
-    * Invokes the customization window.
+    * Invokes the customization window and displays it over the specified HTML element.
+    * @param showAtElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
   def ShowCustomizationWindow(): Unit = js.native
-  def ShowCustomizationWindow(showAtElement: js.Object): Unit = js.native
+  def ShowCustomizationWindow(showAtElement: js.Any): Unit = js.native
   /**
     * Displays the Filter Control.
     */
   def ShowFilterControl(): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def SortBy(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: String): Unit = js.native
+  def SortBy(column: String, sortOrder: String): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: String): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**
     * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. -1 if data is not sorted by this column.
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def SortBy(columnIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
-  def SortBy(columnIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. -1 if data is not sorted by this column.
-    */
-  def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
     * @param column An ASPxClientCardViewColumn object that represents the data column.
+    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
+    * @param reset true to clear any previous sorting; otherwise, false.
     */
   def SortBy(column: ASPxClientCardViewColumn): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientCardViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientCardViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param column An ASPxClientCardViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex 
-    */
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**
     * Switches the CardView to edit mode.
@@ -643,20 +459,11 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Switches the ASPxCardView to edit mode.
     * @param key An object that uniquely identifies a card to be edited.
     */
-  def StartEditCardByKey(key: js.Object): Unit = js.native
+  def StartEditCardByKey(key: js.Any): Unit = js.native
+  def Ungroup(column: String): Unit = js.native
+  def Ungroup(column: Double): Unit = js.native
   /**
-    * 
-    * @param columnFieldNameOrId 
-    */
-  def Ungroup(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * 
-    * @param columnIndex 
-    */
-  def Ungroup(columnIndex: Double): Unit = js.native
-  /**
-    * 
-    * @param column 
+    * Ungroups cards by the values of the specified column.
     */
   def Ungroup(column: ASPxClientCardViewColumn): Unit = js.native
   /**
@@ -669,29 +476,17 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     */
   def UnselectCardOnPage(visibleIndex: Double): Unit = js.native
   /**
-    * Deselects all the selected cards within the ASPxCardView.
+    * Deselects the specified cards (if selected) within the ASPxCardView.
     */
   def UnselectCards(): Unit = js.native
-  /**
-    * Deselects the specified cards (if selected) within the ASPxCardView.
-    * @param visibleIndex A zero-based integer value that specifies the card's visible index.
-    */
-  def UnselectCards(visibleIndex: Double): Unit = js.native
-  /**
-    * Deselects the specified cards (if selected) within the ASPxCardView.
-    * @param visibleIndices An array of zero-based indices that identify data cards within the grid.
-    */
   def UnselectCards(visibleIndices: js.Array[Double]): Unit = js.native
-  /**
-    * Deselects the specified card displayed within the ASPxCardView.
-    * @param key An object that uniquely identifies the card.
-    */
-  def UnselectCardsByKey(key: js.Object): Unit = js.native
+  def UnselectCards(visibleIndices: Double): Unit = js.native
+  def UnselectCardsByKey(keys: js.Any): Unit = js.native
   /**
     * Deselects the specified cards displayed within the ASPxCardView.
     * @param keys An array of objects that uniquely identify the cards.
     */
-  def UnselectCardsByKey(keys: js.Array[js.Object]): Unit = js.native
+  def UnselectCardsByKey(keys: js.Array[_]): Unit = js.native
   /**
     * Deselects all grid cards that match the filter criteria currently applied to the CardView.
     */
@@ -700,5 +495,16 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Saves all the changes made and switches the grid to browse mode.
     */
   def UpdateEdit(): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientCardView")
+@js.native
+object ASPxClientCardView extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientCardView type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientCardView = js.native
 }
 

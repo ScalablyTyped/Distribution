@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout
 
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.antd.esMenuMod.MenuMode
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -45,18 +46,14 @@ trait PartialBaseMenuProps extends js.Object {
     ]
   ] = js.undefined
   var mode: js.UndefOr[MenuMode] = js.undefined
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.undefined
   var openKeys: js.UndefOr[js.Array[String]] = js.undefined
   var route: js.UndefOr[Route] = js.undefined
   var staticContext: js.UndefOr[StaticContext] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var theme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var theme: js.UndefOr[MenuTheme] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -85,14 +82,14 @@ object PartialBaseMenuProps {
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
     mode: MenuMode = null,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    navTheme: MenuTheme = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onOpenChange: /* openKeys */ js.Array[String] => Unit = null,
     openKeys: js.Array[String] = null,
     route: Route = null,
     staticContext: StaticContext = null,
     style: CSSProperties = null,
-    theme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    theme: MenuTheme = null,
     title: String = null
   ): PartialBaseMenuProps = {
     val __obj = js.Dynamic.literal()

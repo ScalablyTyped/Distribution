@@ -45,10 +45,12 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   /* protected */ def filterItems(): Boolean = js.native
   /* protected */ def getRowName(row: js.Any): js.Any = js.native
   /* protected */ def getVisibleRows(): js.Array[TRow] = js.native
+  /* protected */ def hasRowsAsItems(): Boolean = js.native
   /* protected */ def onColumnsChanged(): Unit = js.native
   /* protected */ def onRowsChanged(): Unit = js.native
   /* protected */ def processRowsOnSet(newRows: js.Array[_]): js.Array[_] = js.native
   /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): Boolean = js.native
+  /* protected */ def shouldRunColumnExpression(): Boolean = js.native
   def visibleRowsChangedCallback(): Unit = js.native
 }
 

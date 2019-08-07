@@ -13,8 +13,7 @@ trait ExecutionContextDescription extends js.Object {
     */
   var auxData: js.UndefOr[js.Object] = js.undefined
   /**
-    * Unique id of the execution context. It can be used to specify in which execution context
-    * script evaluation should be performed.
+    * Unique id of the execution context. It can be used to specify in which execution context script evaluation should be performed.
     */
   var id: ExecutionContextId
   /**

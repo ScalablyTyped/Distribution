@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devexpress-web"
-version := "182.3-dt-20190322Z-20d315"
+version := "191.5-dt-20190806Z-d4c214"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

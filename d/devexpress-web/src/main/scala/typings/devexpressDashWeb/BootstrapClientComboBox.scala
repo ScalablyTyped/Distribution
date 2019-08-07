@@ -7,15 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapComboBox control.
   */
+@JSGlobal("BootstrapClientComboBox")
 @js.native
-trait BootstrapClientComboBox extends ASPxClientComboBox {
+class BootstrapClientComboBox () extends ASPxClientComboBox {
   /**
-    * Gets the CSS class of the icon displayed within a Combo Box item badge.
+    * Gets the CSS class of the icon displayed within a Combo Box item badge. A String containing the name of a CSS class.
     * @param index The index of a Combo Box item.
     */
   def GetItemBadgeIconCssClass(index: Double): String = js.native
   /**
-    * Gets the text displayed within a Combo Box item badge.
+    * Gets the text displayed within a Combo Box item badge. A String specifying the badge text.
     * @param index The index of a Combo Box item.
     */
   def GetItemBadgeText(index: Double): String = js.native

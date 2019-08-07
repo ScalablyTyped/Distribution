@@ -40,7 +40,7 @@ trait Font extends js.Object {
     *
     *
     *   sampleFactor - the ratio of path-length to number
-    *   of samples (default=.25); higher values yield more
+    *   of samples (default=.1); higher values yield more
     *   points and are therefore more precise
     *
     *

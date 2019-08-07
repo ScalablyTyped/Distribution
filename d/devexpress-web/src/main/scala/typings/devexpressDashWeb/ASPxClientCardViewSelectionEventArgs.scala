@@ -5,43 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SelectionChanged event.
+  * Provides data for the ASPxClientCardView.SelectionChanged event.
   */
-trait ASPxClientCardViewSelectionEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientCardViewSelectionEventArgs")
+@js.native
+class ASPxClientCardViewSelectionEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewSelectionEventArgs class.
+    * @param visibleIndex An integer value that specifies the visible index of the card whose selected state has been changed. This value is assigned to the ASPxClientCardViewSelectionEventArgs.visibleIndex property.
+    */
+  def this(visibleIndex: Double) = this()
   /**
     * Gets whether all cards displayed within a page have been selected or unselected.
-    * Value: true if all cards displayed within a page have been selected or unselected; otherwise, false.
     */
-  var isAllRecordsOnPage: Boolean
+  var isAllRecordsOnPage: Boolean = js.native
   /**
     * Gets whether a selection has been changed on the server.
-    * Value: true  if a selection has been changed on the server; otherwise, false.
     */
-  var isChangedOnServer: Boolean
+  var isChangedOnServer: Boolean = js.native
   /**
     * Gets whether the card has been selected.
-    * Value: true if the card has been selected; otherwise, false.
     */
-  var isSelected: Boolean
+  var isSelected: Boolean = js.native
   /**
     * Gets the visible index of the card whose selected state has been changed.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the card.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewSelectionEventArgs {
-  @scala.inline
-  def apply(
-    isAllRecordsOnPage: Boolean,
-    isChangedOnServer: Boolean,
-    isSelected: Boolean,
-    processOnServer: Boolean,
-    visibleIndex: Double
-  ): ASPxClientCardViewSelectionEventArgs = {
-    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewSelectionEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

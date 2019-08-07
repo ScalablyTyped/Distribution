@@ -7,13 +7,20 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxGridView object.
   */
+@JSGlobal("ASPxClientGridView")
 @js.native
-trait ASPxClientGridView extends ASPxClientGridBase {
+class ASPxClientGridView () extends ASPxClientGridBase {
   /**
     * Occurs on the client side before data changes are canceled in batch edit mode.
     */
   var BatchEditChangesCanceling: ASPxClientEvent[ASPxClientGridViewBatchEditChangesCancelingEventHandler[ASPxClientGridView]] = js.native
+  /**
+    * Occurs on the client side before the Changes Preview window is shown.
+    */
   var BatchEditChangesPreviewShowing: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientGridView]] = js.native
+  /**
+    * Occurs on the client side when the Changes Preview window is shown.
+    */
   var BatchEditChangesPreviewShown: ASPxClientEvent[ASPxClientEventHandler[ASPxClientGridView]] = js.native
   /**
     * Occurs on the client side before data changes are saved in batch edit mode.
@@ -36,7 +43,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   var BatchEditRowInserting: ASPxClientEvent[ASPxClientGridViewBatchEditRowInsertingEventHandler[ASPxClientGridView]] = js.native
   /**
-    * Occurs on the client side before a row is deleted in batch edit mode.
+    * Occurs on the client side before a row is recovered in batch edit mode.
     */
   var BatchEditRowRecovering: ASPxClientEvent[ASPxClientGridViewBatchEditRowRecoveringEventHandler[ASPxClientGridView]] = js.native
   /**
@@ -92,7 +99,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   var ContextMenuItemClick: ASPxClientEvent[ASPxClientGridViewContextMenuItemClickEventHandler[ASPxClientGridView]] = js.native
   /**
-    * Occurs when a custom command button has been clicked.
+    * Occurs when a user clicks a custom command button.
     */
   var CustomButtonClick: ASPxClientEvent[ASPxClientGridViewCustomButtonEventHandler[ASPxClientGridView]] = js.native
   /**
@@ -140,12 +147,11 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   var RowFocusing: ASPxClientEvent[ASPxClientGridViewRowFocusingEventHandler[ASPxClientGridView]] = js.native
   /**
-    * Fires after the selection has been changed.
+    * Fires when a user selects a row.
     */
   var SelectionChanged: ASPxClientEvent[ASPxClientGridViewSelectionEventHandler[ASPxClientGridView]] = js.native
   /**
     * Provides access to the batch editing client API.
-    * Value: A <see cref="ASPxClientGridViewBatchEditApi" /> object that exposes the batch editing client API methods.
     */
   var batchEditApi: ASPxClientGridViewBatchEditApi = js.native
   /**
@@ -166,21 +172,10 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param value A string value that specifies the filter criterion.
     */
   def ApplySearchPanelFilter(value: String): Unit = js.native
+  def AutoFilterByColumn(column: String, `val`: String): Unit = js.native
+  def AutoFilterByColumn(column: Double, `val`: String): Unit = js.native
   /**
     * Applies a filter to the specified data column.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param val A string value that specifies the filter expression.
-    */
-  def AutoFilterByColumn(columnFieldNameOrId: String, `val`: String): Unit = js.native
-  /**
-    * Applies a filter to the specified data column.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param val A string value that specifies the filter expression.
-    */
-  def AutoFilterByColumn(columnIndex: Double, `val`: String): Unit = js.native
-  /**
-    * Applies a filter to the specified data column.
-    * @param column An ASPxClientGridViewColumn object that represents the data column within the client GridView.
     * @param val A string value that specifies the filter expression.
     */
   def AutoFilterByColumn(column: ASPxClientGridViewColumn, `val`: String): Unit = js.native
@@ -210,8 +205,9 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def CollapseDetailRow(visibleIndex: Double): Unit = js.native
   /**
-    * Collapses the specified group row preserving the expanded state of child group rows.
+    * Collapses the specified group row and optionally child group rows at all nesting levels.
     * @param visibleIndex An integer value that identifies the group row by its visible index.
+    * @param recursive true to collapse child group rows at all nesting levels; false to preserve the expanded state of any child group row.
     */
   def CollapseRow(visibleIndex: Double): Unit = js.native
   def CollapseRow(visibleIndex: Double, recursive: Boolean): Unit = js.native
@@ -224,7 +220,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Deletes a row with the specified key value.
     * @param key An object that uniquely identifies the row.
     */
-  def DeleteRowByKey(key: js.Object): Unit = js.native
+  def DeleteRowByKey(key: js.Any): Unit = js.native
   /**
     * Expands all group rows.
     */
@@ -239,8 +235,9 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def ExpandDetailRow(visibleIndex: Double): Unit = js.native
   /**
-    * Expands the specified group row preserving the collapsed state of any child group row.
+    * Expands the specified group row and optionally child group rows at all nesting levels.
     * @param visibleIndex An integer value that identifies the group row.
+    * @param recursive true to expand any child group rows at all nesting levels; false to preserve the collapsed state of any child group rows.
     */
   def ExpandRow(visibleIndex: Double): Unit = js.native
   def ExpandRow(visibleIndex: Double, recursive: Boolean): Unit = js.native
@@ -253,49 +250,32 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Sets input focus to the grid.
     */
   def Focus(): Unit = js.native
-  /**
-    * Moves focus to the specified edit cell within the edited row.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def FocusEditor(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Moves focus to the specified edit cell within the edited row.
-    * @param columnIndex An integer value that specifies the column's position within the columns collection.
-    */
-  def FocusEditor(columnIndex: Double): Unit = js.native
+  def FocusEditor(column: String): Unit = js.native
+  def FocusEditor(column: Double): Unit = js.native
   /**
     * Moves focus to the specified edit cell within the edited row.
     * @param column An ASPxClientGridViewColumn object that represents the data column within the client grid.
     */
   def FocusEditor(column: ASPxClientGridViewColumn): Unit = js.native
+  def GetAutoFilterEditor(column: String): js.Any = js.native
+  def GetAutoFilterEditor(column: Double): js.Any = js.native
   /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
-    * @param columnFieldNameOrId A string value that specifies the column's name or its data base field name.
+    * Returns the editor used to edit the value in the auto filter row for the specified data column. An object that represents the editor used to edit the value in the specified auto filter row cell. null (Nothing in Visual Basic) if the editor was not found.
     */
-  def GetAutoFilterEditor(columnFieldNameOrId: String): js.Object = js.native
+  def GetAutoFilterEditor(column: ASPxClientGridViewColumn): js.Any = js.native
   /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
-    * @param columnIndex An integer value that identifies the data column by its index.
-    */
-  def GetAutoFilterEditor(columnIndex: Double): js.Object = js.native
-  /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
-    * @param column An ASPxClientGridViewColumn object that represents the data colum within the ASPxGridView.
-    */
-  def GetAutoFilterEditor(column: ASPxClientGridViewColumn): js.Object = js.native
-  /**
-    * Returns the client column that resides at the specified position within the column collection.
-    * @param columnIndex A zero-based index that identifies the column within the column collection (the column's Index property value).
+    * Returns the client column that resides at the specified position within the column collection. An ASPxClientGridViewColumn object that represents the client column.
+    * @param columnIndex A zero-based index that identifies the column within the column collection (the column's CollectionItem.Index property value).
     */
   def GetColumn(columnIndex: Double): ASPxClientGridViewColumn = js.native
   /**
-    * Returns the client column which is bound to the specified data source field.
-    * @param columnFieldName A string value that specifies the name of the data source field to which the column is bound (the column's FieldName property value).
+    * Returns the client column which is bound to the specified data source field. An ASPxClientGridViewColumn object that represents the client column bound to the specified data source field.
+    * @param columnFieldName A string value that specifies the name of the data source field to which the column is bound (the column's GridViewDataColumn.FieldName property value).
     */
   def GetColumnByField(columnFieldName: String): ASPxClientGridViewColumn = js.native
   /**
-    * Returns the column with the specified unique identifier.
-    * @param columnId A string value that specifies the column's unique identifier (the column's Name property value).
+    * Returns the column with the specified unique identifier. An ASPxClientGridViewColumn object that represents the client column.
+    * @param columnId A string value that specifies the column's unique identifier (the column's WebColumnBase.Name property value).
     */
   def GetColumnById(columnId: String): ASPxClientGridViewColumn = js.native
   /**
@@ -305,39 +285,24 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   /**
     * Returns an object specifying the grid column's layout.
     */
-  def GetColumnLayout(): js.Object = js.native
+  def GetColumnLayout(): js.Any = js.native
+  /** @deprecated Use the GetColumnCount method instead. */
   /**
     * Returns the number of columns within the client GridView.
     */
   def GetColumnsCount(): Double = js.native
+  def GetEditValue(column: String): String = js.native
+  def GetEditValue(column: Double): String = js.native
   /**
-    * Returns the value of the specified edit cell.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def GetEditValue(columnFieldNameOrId: String): String = js.native
-  /**
-    * Returns the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column within the grid's column collection.
-    */
-  def GetEditValue(columnIndex: Double): String = js.native
-  /**
-    * Returns the value of the specified edit cell.
+    * Returns the value of the specified edit cell. A string value that represents the value of the edit cell which corresponds to the specified data column.
     * @param column An ASPxClientGridViewColumn object that represents the data column within the client grid.
     */
   def GetEditValue(column: ASPxClientGridViewColumn): String = js.native
+  def GetEditor(column: String): ASPxClientEdit = js.native
+  def GetEditor(column: Double): ASPxClientEdit = js.native
   /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def GetEditor(columnFieldNameOrId: String): ASPxClientEdit = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def GetEditor(columnIndex: Double): ASPxClientEdit = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
-    * @param column An ASPxClientGridViewColumn object that specifies the required column within the client grid.
+    * Returns the editor used to edit the specified column's values. Specifies a column's editor.
+    * @param column Specifies the required column in the client grid.
     */
   def GetEditor(column: ASPxClientGridViewColumn): ASPxClientEdit = js.native
   /**
@@ -352,6 +317,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Returns the current horizontal scroll position of the grid's content.
     */
   def GetHorizontalScrollPosition(): Double = js.native
+  /** @deprecated Use the GetHorizontalScrollPosition method instead. */
   /**
     * Returns the current horizontal scroll position of the grid's content.
     */
@@ -375,19 +341,19 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def GetPopupEditForm(): ASPxClientPopupControl = js.native
   /**
-    * Returns a value specifying the indices of the rows visible in the browser's view port.
+    * Returns a value specifying the indices of the rows visible in the browser's view port. An array of integer values that are the indices of the rows visible in the browser's view port.
     * @param includePartiallyVisible true, to include partially visible rows, otherwise, false.
     */
   def GetRowIndicesVisibleInViewPort(includePartiallyVisible: Boolean): js.Array[Double] = js.native
   /**
-    * Returns the key value of the specified data row.
+    * Returns the key value of the specified data row. A string representing the specified data row's key value. If the index passed via the visibleIndex parameter is wrong, or the ASPxGridBase.KeyFieldName property is not set, null is returned.
     * @param visibleIndex An integer value that specifies the row's visible index.
     */
   def GetRowKey(visibleIndex: Double): String = js.native
   /**
     * Returns the values of the specified data source fields within the specified row.
-    * @param visibleIndex An integer value that identifies the data row.
-    * @param fieldNames The names of data source fields separated via a semicolon, whose values within the specified row are returned.
+    * @param visibleIndex An integer value that identifies the data row's index.
+    * @param fieldNames The names of data source fields separated by a semicolon, whose values within the specified row are returned.
     * @param onCallback An ASPxClientGridViewValuesCallback object that represents the JavaScript function which receives the list of row values as a parameter.
     */
   def GetRowValues(visibleIndex: Double, fieldNames: String, onCallback: ASPxClientGridViewValuesCallback): Unit = js.native
@@ -400,7 +366,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   /**
     * Returns key values of selected rows displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[js.Object] = js.native
+  def GetSelectedKeysOnPage(): js.Array[_] = js.native
   /**
     * Returns the number of selected rows.
     */
@@ -410,11 +376,12 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def GetTopVisibleIndex(): Double = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomDataCallback event.
-    * @param args A string value that is any information that needs to be sent to the server-side CustomDataCallback event.
+    * Sends a callback to the server and generates the server-side ASPxGridView.CustomDataCallback event.
+    * @param args A string value that is any information that needs to be sent to the server-side ASPxGridView.CustomDataCallback event.
     * @param onCallback A ASPxClientGridViewValuesCallback object that is the JavaScript function which receives the information on the client side.
     */
   def GetValuesOnCustomCallback(args: String, onCallback: ASPxClientGridViewValuesCallback): Unit = js.native
+  /** @deprecated Use the GetVerticalScrollPosition method instead. */
   /**
     * Returns the current vertical scroll position of the grid's content.
     */
@@ -432,59 +399,19 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param pageIndex An integer value that specifies the active page's index.
     */
   def GotoPage(pageIndex: Double): Unit = js.native
-  /**
-    * Groups data by the values of the specified column.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def GroupBy(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Groups data by the values of the specified data column. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
-    */
-  def GroupBy(columnFieldNameOrId: String, groupIndex: Double): Unit = js.native
+  def GroupBy(column: String): Unit = js.native
+  def GroupBy(column: String, groupIndex: Double): Unit = js.native
+  def GroupBy(column: String, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: Double): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Double): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
     * Groups data by the values of the specified data column with the specified sort order. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
+    * @param groupIndex An integer value that specifies the grouping level. &#0045;1 to cancel grouping by the column's values.
     * @param sortOrder A string value that specifies the column's sort order.
-    */
-  def GroupBy(columnFieldNameOrId: String, groupIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * Groups data by the values of the specified column.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def GroupBy(columnIndex: Double): Unit = js.native
-  /**
-    * Groups data by the values of the specified data column. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
-    */
-  def GroupBy(columnIndex: Double, groupIndex: Double): Unit = js.native
-  /**
-    * Groups data by the values of the specified data column with the specified sort order. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
-    * @param sortOrder A string value that specifies the column's sort order.
-    */
-  def GroupBy(columnIndex: Double, groupIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * Groups data by the values of the specified column.
-    * @param column An ASPxClientGridViewColumn object that represents the data column by whose values data is grouped.
     */
   def GroupBy(column: ASPxClientGridViewColumn): Unit = js.native
-  /**
-    * Groups data by the values of the specified data column. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param column An ASPxClientGridViewColumn object that represents the data column by whose values data is grouped.
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
-    */
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double): Unit = js.native
-  /**
-    * Groups data by the values of the specified data column with the specified sort order. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
-    * @param column An ASPxClientGridViewColumn object that represents the data column by whose values data is grouped.
-    * @param groupIndex An integer value that specifies the grouping level. -1 to cancel grouping by the column's values.
-    * @param sortOrder A string value that specifies the column's sort order.
-    */
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
     * Closes the Customization Window.
@@ -495,7 +422,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def IsCustomizationWindowVisible(): Boolean = js.native
   /**
-    * Indicates whether the specified row is a data row.
+    * Indicates whether the specified row is a data row. true if the specified row is a data row; otherwise, false.
     * @param visibleIndex An integer value that identifies the row by its visible index.
     */
   def IsDataRow(visibleIndex: Double): Boolean = js.native
@@ -504,12 +431,12 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def IsEditing(): Boolean = js.native
   /**
-    * Indicates whether the specified row is a group row.
+    * Indicates whether the specified row is a group row. true if the specified row is a group row; otherwise, false.
     * @param visibleIndex An integer value that identifies the row by its visible index.
     */
   def IsGroupRow(visibleIndex: Double): Boolean = js.native
   /**
-    * Indicates whether the specified group row is expanded.
+    * Indicates whether the specified group row is expanded. true if the specified group row is expanded; otherwise, false.
     * @param visibleIndex An integer value that identifies the group row by its visible index.
     */
   def IsGroupRowExpanded(visibleIndex: Double): Boolean = js.native
@@ -518,7 +445,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def IsNewRowEditing(): Boolean = js.native
   /**
-    * Indicates whether or not the specified row is selected within the current page.
+    * Indicates whether or not the specified row is selected within the current page. true if the specified row is selected within the current page; otherwise, false.
     * @param visibleIndex An integer value that identifies the row by its visible index.
     */
   def IsRowSelectedOnPage(visibleIndex: Double): Boolean = js.native
@@ -527,188 +454,103 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param visibleIndex An integer value that identifies a row by its visible index.
     */
   def MakeRowVisible(visibleIndex: Double): Unit = js.native
-  /**
-    * Hides the specified column.
-    * @param columnFieldNameOrId A String value that identifies the column to be hidden by the name of the data source field to which the column is bound, or by the column's name.
-    */
-  def MoveColumn(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnFieldNameOrId A String value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    */
-  def MoveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    */
-  def MoveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups the grid's data by this column.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    * @param moveToGroup true to group the grid's data by the column; otherwise, false.
-    */
+  def MoveColumn(column: String): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Double): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean, moveToGroup: Boolean): Unit = js.native
   def MoveColumn(
-    columnFieldNameOrId: String,
+    column: String,
     moveToColumnVisibleIndex: Double,
     moveBefore: Boolean,
+    moveToGroup: Boolean,
+    moveFromGroup: Boolean
+  ): Unit = js.native
+  def MoveColumn(
+    column: String,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition
+  ): Unit = js.native
+  def MoveColumn(
+    column: String,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
     moveToGroup: Boolean
   ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    * @param moveToGroup true to group the grid's data by the column; otherwise, false.
-    * @param moveFromGroup true to ungroup the grid's data by the column; otherwise, false.
-    */
   def MoveColumn(
-    columnFieldNameOrId: String,
+    column: String,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
+    moveToGroup: Boolean,
+    moveFromGroup: Boolean
+  ): Unit = js.native
+  def MoveColumn(column: Double): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean, moveToGroup: Boolean): Unit = js.native
+  def MoveColumn(
+    column: Double,
     moveToColumnVisibleIndex: Double,
     moveBefore: Boolean,
     moveToGroup: Boolean,
     moveFromGroup: Boolean
   ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnFieldNameOrId A String value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    * @param targetPosition An ASPxClientGridColumnMovingTargetPosition enumeration value specifying the position relative to the target column in which to place the moved column.
-    */
   def MoveColumn(
-    columnFieldNameOrId: String,
+    column: Double,
     moveToColumnVisibleIndex: Double,
-    targetPosition: ASPxClientGridColumnMovingTargetPosition
+    moveBefore: ASPxClientGridColumnMovingTargetPosition
   ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
-    * @param columnFieldNameOrId A string value that identifies the column to be moved by the name of the data source field to which the column is bound or by the column's name.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param targetPosition An ASPxClientGridColumnMovingTargetPosition enumeration value specifying the position relative to the target column in which to place the moved column.
-    * @param moveToGroup true, to group the grid's data by the column; otherwise, false.
-    * @param moveFromGroup true, to ungroup the grid's data by the column; otherwise, false.
-    */
   def MoveColumn(
-    columnFieldNameOrId: String,
+    column: Double,
     moveToColumnVisibleIndex: Double,
-    targetPosition: ASPxClientGridColumnMovingTargetPosition,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
+    moveToGroup: Boolean
+  ): Unit = js.native
+  def MoveColumn(
+    column: Double,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
     moveToGroup: Boolean,
     moveFromGroup: Boolean
   ): Unit = js.native
   /**
-    * Hides the specified column.
-    * @param columnIndex An integer value that specifies the absolute index of the column to hide.
-    */
-  def MoveColumn(columnIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    */
-  def MoveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    */
-  def MoveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups the grid's data by this column.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    * @param moveToGroup true to group the ASPxGridView's data by the column; otherwise, false.
-    */
-  def MoveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean, moveToGroup: Boolean): Unit = js.native
-  /**
     * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
+    * @param column An ASPxClientGridViewColumn object that represents the column to move.
     * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
     * @param moveBefore true to move the column before the target column; otherwise, false.
     * @param moveToGroup true to group the grid's data by the column; otherwise, false.
     * @param moveFromGroup true to ungroup the grid's data by the column; otherwise, false.
-    */
-  def MoveColumn(
-    columnIndex: Double,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: Boolean,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    * @param targetPosition An ASPxClientGridColumnMovingTargetPosition enumeration value specifying the position relative to the target column in which to place the moved column.
-    */
-  def MoveColumn(
-    columnIndex: Double,
-    moveToColumnVisibleIndex: Double,
-    targetPosition: ASPxClientGridColumnMovingTargetPosition
-  ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
-    * @param columnIndex An integer value that specifies the absolute index of the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param targetPosition An ASPxClientGridColumnMovingTargetPosition enumeration value specifying the position relative to the target column in which to place the moved column.
-    * @param moveToGroup true, to group the ASPxGridView's data by the column; otherwise, false.
-    * @param moveFromGroup true, to ungroup the grid's data by the column; otherwise, false.
-    */
-  def MoveColumn(
-    columnIndex: Double,
-    moveToColumnVisibleIndex: Double,
-    targetPosition: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  /**
-    * Hides the specified column.
-    * @param column An ASPxClientGridViewColumn object that represents the column to hide.
     */
   def MoveColumn(column: ASPxClientGridViewColumn): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param column An ASPxClientGridViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that specifies the column's position among the visible columns within the grid.
-    */
   def MoveColumn(column: ASPxClientGridViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid.
-    * @param column An ASPxClientGridViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    */
   def MoveColumn(column: ASPxClientGridViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups the grid's data by this column.
-    * @param column An ASPxClientGridViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    * @param moveToGroup true to group the grid's data by the column; otherwise, false.
-    */
   def MoveColumn(
     column: ASPxClientGridViewColumn,
     moveToColumnVisibleIndex: Double,
     moveBefore: Boolean,
     moveToGroup: Boolean
   ): Unit = js.native
-  /**
-    * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
-    * @param column An ASPxClientGridViewColumn object that represents the column to move.
-    * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
-    * @param moveBefore true to move the column before the target column; otherwise, false.
-    * @param moveToGroup true to group the grid's data by the column; otherwise, false.
-    * @param moveFromGroup true to ungroup the grid's data by the column; otherwise, false.
-    */
   def MoveColumn(
     column: ASPxClientGridViewColumn,
     moveToColumnVisibleIndex: Double,
     moveBefore: Boolean,
+    moveToGroup: Boolean,
+    moveFromGroup: Boolean
+  ): Unit = js.native
+  def MoveColumn(
+    column: ASPxClientGridViewColumn,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition
+  ): Unit = js.native
+  def MoveColumn(
+    column: ASPxClientGridViewColumn,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
+    moveToGroup: Boolean
+  ): Unit = js.native
+  def MoveColumn(
+    column: ASPxClientGridViewColumn,
+    moveToColumnVisibleIndex: Double,
+    moveBefore: ASPxClientGridColumnMovingTargetPosition,
     moveToGroup: Boolean,
     moveFromGroup: Boolean
   ): Unit = js.native
@@ -717,16 +559,12 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def NextPage(): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(args: String): Unit = js.native
-  /**
     * Sends a callback to the server and generates the server-side event, passing the specified argument to it.
     * @param args A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(args: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(args: String): Unit = js.native
+  def PerformCallback(args: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Activates the previous page.
     */
@@ -736,75 +574,45 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def Refresh(): Unit = js.native
   /**
-    * Selects all unselected rows displayed on the current page.
-    */
-  def SelectAllRowsOnPage(): Unit = js.native
-  /**
     * Allows you to select or deselect all rows displayed on the current page based on the parameter passed.
     * @param selected true to select all unselected rows displayed on the current page; false to deselect all selected rows on the page.
     */
+  def SelectAllRowsOnPage(): Unit = js.native
   def SelectAllRowsOnPage(selected: Boolean): Unit = js.native
   /**
-    * Selects the specified row displayed on the current page.
+    * Selects or deselects the specified row displayed on the current page.
     * @param visibleIndex A zero-based integer value that specifies the row's visible index.
+    * @param selected true to select the specified row; false to deselect the row.
     */
   def SelectRowOnPage(visibleIndex: Double): Unit = js.native
   def SelectRowOnPage(visibleIndex: Double, selected: Boolean): Unit = js.native
-  /**
-    * Selects all the unselected rows within the grid.
-    */
-  def SelectRows(): Unit = js.native
-  /**
-    * Selects the specified row displayed within the grid.
-    * @param visibleIndex A zero-based integer value that specifies the row's visible index.
-    */
-  def SelectRows(visibleIndex: Double): Unit = js.native
-  def SelectRows(visibleIndex: Double, selected: Boolean): Unit = js.native
-  /**
-    * Selects the specified rows within the grid.
-    * @param visibleIndices An array of zero-based indices that identify data rows within the grid.
-    */
-  def SelectRows(visibleIndices: js.Array[Double]): Unit = js.native
   /**
     * Selects or deselects the specified rows within the grid.
     * @param visibleIndices An array of zero-based indices that identify data rows within the grid.
     * @param selected true to select the specified rows; false to deselect the rows.
     */
+  def SelectRows(): Unit = js.native
+  def SelectRows(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectRows(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
+  def SelectRows(visibleIndices: Double): Unit = js.native
+  def SelectRows(visibleIndices: Double, selected: Boolean): Unit = js.native
+  def SelectRowsByKey(keys: js.Any): Unit = js.native
+  def SelectRowsByKey(keys: js.Any, selected: Boolean): Unit = js.native
   /**
-    * Selects or deselects the specified row displayed within the grid.
-    * @param key An object that uniquely identifies the row.
+    * Selects or deselects the specified row in the grid.
     * @param selected true to select the specified row; false to deselect the row.
     */
-  def SelectRowsByKey(key: js.Object): Unit = js.native
-  def SelectRowsByKey(key: js.Object, selected: Boolean): Unit = js.native
-  /**
-    * Selects or deselects the specified rows displayed within the grid.
-    * @param keys An array of objects that uniquely identify the rows.
-    * @param selected true to select the specified rows; false to deselect the rows.
-    */
-  def SelectRowsByKey(keys: js.Array[js.Object]): Unit = js.native
-  def SelectRowsByKey(keys: js.Array[js.Object], selected: Boolean): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[_]): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
   /**
     * Specifies the grid column's layout.
     * @param columnLayout An object specifying the grid column's layout.
     */
-  def SetColumnLayout(columnLayout: js.Object): Unit = js.native
+  def SetColumnLayout(columnLayout: js.Any): Unit = js.native
+  def SetEditValue(column: String, value: String): Unit = js.native
+  def SetEditValue(column: Double, value: String): Unit = js.native
   /**
     * Sets the value of the specified edit cell.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param value A string value that specifies the edit cell's new value.
-    */
-  def SetEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column within the grid's column collection.
-    * @param value A string value that specifies the edit cell's new value.
-    */
-  def SetEditValue(columnIndex: Double, value: String): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param column An ASPxClientGridViewColumn object that represents the data column within the client grid.
     * @param value A string value that specifies the edit cell's new value.
     */
   def SetEditValue(column: ASPxClientGridViewColumn, value: String): Unit = js.native
@@ -817,13 +625,19 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Sets the scrollability of various types of grid rows when the grid displays fixed columns.
     * @param scrollableRowSettings An object specifying which types of grid rows should or should not be scrollable.
     */
-  def SetFixedColumnScrollableRows(scrollableRowSettings: js.Object): Unit = js.native
+  def SetFixedColumnScrollableRows(scrollableRowSettings: js.Any): Unit = js.native
   /**
     * Focuses the specified cell.
     * @param rowVisibleIndex An integer value that specifies the visible index of the row.
-    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's Index property value).
+    * @param columnIndex Focuses the specified cell.
     */
   def SetFocusedCell(rowVisibleIndex: Double, columnIndex: Double): Unit = js.native
+  /**
+    * Focuses the specified cell.
+    * @param key A String value that identifies the row by its key value.
+    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's CollectionItem.Index property value).
+    */
+  def SetFocusedCellByKey(key: js.Any, columnIndex: Double): Unit = js.native
   /**
     * Moves focus to the specified row.
     * @param visibleIndex An integer value that specifies the focused row's index.
@@ -834,6 +648,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param position An integer value specifying the horizontal scroll position.
     */
   def SetHorizontalScrollPosition(position: Double): Unit = js.native
+  /** @deprecated Use the SetHorizontalScrollPosition method instead. */
   /**
     * Specifies the horizontal scroll position for the grid's content.
     * @param position An integer value specifying the horizontal scroll position.
@@ -844,6 +659,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param editor An ASPxClientEdit object representing a custom editor.
     */
   def SetSearchPanelCustomEditor(editor: ASPxClientEdit): Unit = js.native
+  /** @deprecated Use the SetVerticalScrollPosition method instead. */
   /**
     * Specifies the vertical scroll position for the grid's content.
     * @param position An integer value specifying the vertical scroll position.
@@ -851,7 +667,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   def SetVertScrollPos(position: Double): Unit = js.native
   /**
     * Specifies the vertical scroll position for the grid's content.
-    * @param position An integer value specifying the vertical scroll position.
+    * @param position An integer value that specifies the vertical scroll position.
     */
   def SetVerticalScrollPosition(position: Double): Unit = js.native
   /**
@@ -859,91 +675,33 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def ShowCustomizationDialog(): Unit = js.native
   /**
-    * Invokes the Customization Window.
+    * Invokes the Customization Window and displays it over the specified HTML element.
+    * @param showAtElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
   def ShowCustomizationWindow(): Unit = js.native
-  def ShowCustomizationWindow(showAtElement: js.Object): Unit = js.native
+  def ShowCustomizationWindow(showAtElement: js.Any): Unit = js.native
   /**
     * Displays the Filter Control.
     */
   def ShowFilterControl(): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def SortBy(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: String): Unit = js.native
+  def SortBy(column: String, sortOrder: String): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: String): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**
     * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. -1 if data is not sorted by this column.
-    */
-  def SortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def SortBy(columnIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
-  def SortBy(columnIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. -1 if data is not sorted by this column.
-    */
-  def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
     * @param column An ASPxClientGridViewColumn object that represents the data column.
+    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
+    * @param reset true to clear any previous sorting; otherwise, false.
+    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. &#0045;1 if data is not sorted by this column.
     */
   def SortBy(column: ASPxClientGridViewColumn): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientGridViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    */
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientGridViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
-    * @param column An ASPxClientGridViewColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DSC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. -1 if data is not sorted by this column.
-    */
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**
     * Switches the grid to edit mode.
@@ -954,32 +712,16 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Switches the grid to edit mode.
     * @param key An object that uniquely identifies a data row to be edited.
     */
-  def StartEditRowByKey(key: js.Object): Unit = js.native
+  def StartEditRowByKey(key: js.Any): Unit = js.native
+  def UnGroup(column: String): Unit = js.native
+  def UnGroup(column: Double): Unit = js.native
+  /** @deprecated Use the Ungroup method instead. */
   /**
     * Ungroups data by the values of the specified column.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    */
-  def UnGroup(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Ungroups data by the values of the specified column.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    */
-  def UnGroup(columnIndex: Double): Unit = js.native
-  /**
-    * Ungroups data by the values of the specified column.
-    * @param column An ASPxClientGridViewColumn object that represents the data column within the ASPxGridView.
     */
   def UnGroup(column: ASPxClientGridViewColumn): Unit = js.native
-  /**
-    * Ungroups data by the values of a specified column.
-    * @param columnFieldNameOrId A string value that is the column's FieldName or ID.
-    */
-  def Ungroup(columnFieldNameOrId: String): Unit = js.native
-  /**
-    * Ungroups data by the values of a specified column.
-    * @param columnIndex An integer value that is the column index.
-    */
-  def Ungroup(columnIndex: Double): Unit = js.native
+  def Ungroup(column: String): Unit = js.native
+  def Ungroup(column: Double): Unit = js.native
   /**
     * Ungroups data by the values of a specified column.
     * @param column A ASPxClientGridViewColumn object that is the grid column.
@@ -999,32 +741,30 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def UnselectRowOnPage(visibleIndex: Double): Unit = js.native
   /**
-    * Deselects all the selected rows within the grid.
+    * Deselects the specified row (if selected) within the grid.
     */
   def UnselectRows(): Unit = js.native
-  /**
-    * Deselects the specified row (if selected) within the grid.
-    * @param visibleIndex A zero-based integer value that specifies the row's visible index.
-    */
-  def UnselectRows(visibleIndex: Double): Unit = js.native
-  /**
-    * Deselects the specified rows (if selected) within the grid.
-    * @param visibleIndices An array of zero-based indices that identify data rows within the grid.
-    */
   def UnselectRows(visibleIndices: js.Array[Double]): Unit = js.native
+  def UnselectRows(visibleIndices: Double): Unit = js.native
+  def UnselectRowsByKey(keys: js.Any): Unit = js.native
   /**
     * Deselects the specified row displayed within the grid.
-    * @param key An object that uniquely identifies the row.
     */
-  def UnselectRowsByKey(key: js.Object): Unit = js.native
-  /**
-    * Deselects the specified rows displayed within the grid.
-    * @param keys An array of objects that uniquely identify the rows.
-    */
-  def UnselectRowsByKey(keys: js.Array[js.Object]): Unit = js.native
+  def UnselectRowsByKey(keys: js.Array[_]): Unit = js.native
   /**
     * Saves all the changes made and switches the grid to browse mode.
     */
   def UpdateEdit(): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientGridView")
+@js.native
+object ASPxClientGridView extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientGridView type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientGridView = js.native
 }
 

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait StepIntoParameterType extends js.Object {
   /**
-    * Debugger will issue additional Debugger.paused notification if any async task is scheduled
-    * before next pause.
+    * Debugger will issue additional Debugger.paused notification if any async task is scheduled before next pause.
     * @experimental
     */
   var breakOnAsyncCall: js.UndefOr[Boolean] = js.undefined

@@ -11,7 +11,6 @@ trait InfoWindowOptions extends js.Object {
     * plain-text string, or a string containing HTML. The InfoWindow will be
     * sized according to the content. To set an explicit size for the content,
     * set content to be a HTML element with that size.
-    * @type {(string|Node)}
     */
   var content: js.UndefOr[String | Node] = js.undefined
   /**

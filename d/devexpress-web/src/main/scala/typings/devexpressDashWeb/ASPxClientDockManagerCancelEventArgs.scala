@@ -5,22 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BeforeDock event.
+  * Provides data for the ASPxClientDockManager.BeforeDock event.
   */
-trait ASPxClientDockManagerCancelEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientDockManagerCancelEventArgs")
+@js.native
+class ASPxClientDockManagerCancelEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * For internal use only.
+    */
+  def this(panel: ASPxClientDockPanel) = this()
   /**
     * Gets the panel currently being processed.
-    * Value: An ASPxClientDockPanel object that is the processed panel.
     */
-  var panel: ASPxClientDockPanel
-}
-
-object ASPxClientDockManagerCancelEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, panel: ASPxClientDockPanel): ASPxClientDockManagerCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, panel = panel)
-  
-    __obj.asInstanceOf[ASPxClientDockManagerCancelEventArgs]
-  }
+  var panel: ASPxClientDockPanel = js.native
 }
 

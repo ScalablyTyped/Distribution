@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to decrement the indent level of paragraphs in a selected range.
   */
-trait DecreaseIndentCommand extends CommandWithSimpleStateBase {
+@JSGlobal("DecreaseIndentCommand")
+@js.native
+class DecreaseIndentCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the DecreaseIndentCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the DecreaseIndentCommand command.
     */
-  def execute(): Boolean
-}
-
-object DecreaseIndentCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DecreaseIndentCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[DecreaseIndentCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

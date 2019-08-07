@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libHeaderMod
 
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -28,9 +29,7 @@ trait HeaderViewProps extends js.Object {
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
   var siderWidth: js.UndefOr[Double] = js.undefined
@@ -53,7 +52,7 @@ object HeaderViewProps {
     logo: ReactNode = null,
     menu: Anon_Locale = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    navTheme: MenuTheme = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,
     siderWidth: Int | Double = null,

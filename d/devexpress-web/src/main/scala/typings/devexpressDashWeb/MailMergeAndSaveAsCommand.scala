@@ -7,22 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * A command to start the mail merge process and save the resulting merged document to the server.
   */
+@JSGlobal("MailMergeAndSaveAsCommand")
 @js.native
-trait MailMergeAndSaveAsCommand extends CommandBase {
+class MailMergeAndSaveAsCommand () extends js.Object {
   /**
-    * Executes the MailMergeAndSaveAsCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param fileInfo A RichEditFileInfo object specifying a file to save to.
-    * @param settings A MailMergeSettings object specifying the mail merge settings.
-    */
-  def execute(fileInfo: RichEditFileInfo, settings: MailMergeSettings): Boolean = js.native
-  /**
-    * Executes the MailMergeAndSaveAsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param filePath A string value specifying path to the saving file on the server.
+    * Executes the MailMergeAndSaveAsCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
+    * @param filePath The path to a saved file, or an object that contains the saved file information.
+    * @param settings An object that contains settings to set up the mail merge operation.
     */
   def execute(filePath: String): Boolean = js.native
+  def execute(filePath: String, settings: MailMergeSettings): Boolean = js.native
+  def execute(filePath: RichEditFileInfo): Boolean = js.native
+  def execute(filePath: RichEditFileInfo, settings: MailMergeSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any = js.native
+  def getState(): CommandState[MailMergeSettings] = js.native
 }
 

@@ -7,25 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change borders and shading of the selected table elements.
   */
-trait ChangeTableBordersAndShadingCommand extends CommandBase {
+@JSGlobal("ChangeTableBordersAndShadingCommand")
+@js.native
+class ChangeTableBordersAndShadingCommand () extends js.Object {
   /**
-    * Executes the ChangeTableBordersAndShadingCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTableBordersAndShadingCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TableBorderSettings object with settings specifying table borders.
     * @param applyToWholeTable true to apply the border settings to the whole table, false to apply the border settings to the selected cells.
     */
-  def execute(settings: TableBordersSettings, applyToWholeTable: Boolean): Boolean
+  def execute(settings: TableBordersSettings, applyToWholeTable: Boolean): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTableBordersAndShadingCommand {
-  @scala.inline
-  def apply(execute: (TableBordersSettings, Boolean) => Boolean, getState: () => js.Any): ChangeTableBordersAndShadingCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTableBordersAndShadingCommand]
-  }
+  def getState(): CommandState[TableBordersSettings] = js.native
 }
 

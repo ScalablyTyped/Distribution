@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxImageSlider object.
   */
+@JSGlobal("ASPxClientImageSlider")
 @js.native
-trait ASPxClientImageSlider extends ASPxClientControl {
+class ASPxClientImageSlider () extends ASPxClientControl {
   /**
     * Occurs after the active image, displayed within the image area, is changed.
     */
@@ -38,26 +39,18 @@ trait ASPxClientImageSlider extends ASPxClientControl {
     */
   def GetActiveItemIndex(): Double = js.native
   /**
-    * Returns an item specified by its index within the image slider's item collection.
-    * @param index An integer value specifying the zero-based index of the item to be retrieved.
-    */
-  def GetItem(index: Double): ASPxClientImageSliderItem = js.native
-  /**
-    * Returns an item specified by its index within the image slider's item collection.
+    * Returns an item specified by its index within the image slider's item collection. An ASPxClientImageSliderItem object that is the collection item found.
     * @param index An integer value specifying the zero-based index of the item to be retrieved.
     * @param forceLoad true, to force the item's loading; otherwise, false.
     */
+  def GetItem(index: Double): ASPxClientImageSliderItem = js.native
   def GetItem(index: Double, forceLoad: Boolean): ASPxClientImageSliderItem = js.native
   /**
-    * Returns an item specified by its name.
-    * @param name A string value specifying the name of the item.
-    */
-  def GetItemByName(name: String): ASPxClientImageSliderItem = js.native
-  /**
-    * Returns the image slider's item by its name.
+    * Returns the image slider's item by its name. An ASPxClientImageSliderItem object representing the Image
     * @param name A string value representing the item's name.
     * @param forceLoad true, to force the item's loading; otherwise, false.
     */
+  def GetItemByName(name: String): ASPxClientImageSliderItem = js.native
   def GetItemByName(name: String, forceLoad: Boolean): ASPxClientImageSliderItem = js.native
   /**
     * Gets the number of items contained in the control's item collection.
@@ -91,5 +84,16 @@ trait ASPxClientImageSlider extends ASPxClientControl {
     * @param preventAnimation true to prevent the animation effect; false to change images using animation.
     */
   def SetActiveItemIndex(index: Double, preventAnimation: Boolean): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientImageSlider")
+@js.native
+object ASPxClientImageSlider extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientImageSlider type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientImageSlider = js.native
 }
 

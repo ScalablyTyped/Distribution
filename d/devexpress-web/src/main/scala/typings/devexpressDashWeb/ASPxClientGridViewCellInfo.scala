@@ -7,25 +7,20 @@ import scala.scalajs.js.annotation._
 /**
   * Contains information on a grid cell.
   */
-trait ASPxClientGridViewCellInfo extends js.Object {
+@JSGlobal("ASPxClientGridViewCellInfo")
+@js.native
+class ASPxClientGridViewCellInfo () extends js.Object {
   /**
     * Gets the data column that contains the cell currently being processed.
-    * Value: An <see cref="ASPxClientGridViewColumn" /> object that is the data column which contains the processed cell.
     */
-  var column: ASPxClientGridViewColumn
+  var column: ASPxClientGridViewColumn = js.native
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Gets the visible index of the row that contains the cell currently being processed.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the row.
     */
-  var rowVisibleIndex: Double
-}
-
-object ASPxClientGridViewCellInfo {
-  @scala.inline
-  def apply(column: ASPxClientGridViewColumn, rowVisibleIndex: Double): ASPxClientGridViewCellInfo = {
-    val __obj = js.Dynamic.literal(column = column, rowVisibleIndex = rowVisibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewCellInfo]
-  }
+  var rowVisibleIndex: Double = js.native
 }
 

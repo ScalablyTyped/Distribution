@@ -13,6 +13,7 @@ class QuestionMultipleTextModel protected () extends Question {
     * The number of columns. Items are rendred in one line if the value is 0.
     */
   var colCount: Double = js.native
+  val elements: js.Array[IElement] = js.native
   /**
     * The default text input size.
     */

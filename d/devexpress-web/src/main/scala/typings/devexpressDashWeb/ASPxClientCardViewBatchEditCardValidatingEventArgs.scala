@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditCardValidating event.
+  * Provides data for the ASPxClientCardView.BatchEditCardValidating event.
   */
-trait ASPxClientCardViewBatchEditCardValidatingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditCardValidatingEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditCardValidatingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditCardValidatingEventArgs class.
+    * @param visibleIndex An integer value that specifies the processed card's visible index.
+    * @param validationInfo An object containing validation information.
+    */
+  def this(visibleIndex: Double, validationInfo: js.Any) = this()
   /**
     * Provides validation information of a card currently being validated.
-    * Value: An object that is a hashtable containing validation information.
     */
-  var validationInfo: js.Object
+  var validationInfo: js.Any = js.native
   /**
     * Gets the processed card's visible index.
-    * Value: An integer value that specifies the processed card's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewBatchEditCardValidatingEventArgs {
-  @scala.inline
-  def apply(validationInfo: js.Object, visibleIndex: Double): ASPxClientCardViewBatchEditCardValidatingEventArgs = {
-    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardValidatingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

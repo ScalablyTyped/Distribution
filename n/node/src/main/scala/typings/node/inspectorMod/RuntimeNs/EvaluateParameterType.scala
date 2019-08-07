@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait EvaluateParameterType extends js.Object {
   /**
-    * Whether execution should `await` for resulting value and return once awaited promise is
-    * resolved.
+    * Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.
     */
   var awaitPromise: js.UndefOr[Boolean] = js.undefined
   /**
-    * Specifies in which execution context to perform evaluation. If the parameter is omitted the
-    * evaluation will be performed in the context of the inspected page.
+    * Specifies in which execution context to perform evaluation. If the parameter is omitted the evaluation will be performed in the context of the inspected page.
     */
   var contextId: js.UndefOr[ExecutionContextId] = js.undefined
   /**
@@ -37,20 +35,9 @@ trait EvaluateParameterType extends js.Object {
     */
   var returnByValue: js.UndefOr[Boolean] = js.undefined
   /**
-    * In silent mode exceptions thrown during evaluation are not reported and do not pause
-    * execution. Overrides `setPauseOnException` state.
+    * In silent mode exceptions thrown during evaluation are not reported and do not pause execution. Overrides <code>setPauseOnException</code> state.
     */
   var silent: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Whether to throw an exception if side effect cannot be ruled out during evaluation.
-    * @experimental
-    */
-  var throwOnSideEffect: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Terminate execution after timing out (number of milliseconds).
-    * @experimental
-    */
-  var timeout: js.UndefOr[TimeDelta] = js.undefined
   /**
     * Whether execution should be treated as initiated by user in the UI.
     */
@@ -68,8 +55,6 @@ object EvaluateParameterType {
     objectGroup: java.lang.String = null,
     returnByValue: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    throwOnSideEffect: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[TimeDelta] = js.undefined,
     userGesture: js.UndefOr[Boolean] = js.undefined
   ): EvaluateParameterType = {
     val __obj = js.Dynamic.literal(expression = expression)
@@ -80,8 +65,6 @@ object EvaluateParameterType {
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
     if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(throwOnSideEffect)) __obj.updateDynamic("throwOnSideEffect")(throwOnSideEffect)
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
     if (!js.isUndefined(userGesture)) __obj.updateDynamic("userGesture")(userGesture)
     __obj.asInstanceOf[EvaluateParameterType]
   }

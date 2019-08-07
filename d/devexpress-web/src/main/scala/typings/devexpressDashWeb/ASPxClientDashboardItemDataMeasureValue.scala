@@ -7,23 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Provides the measure value and display text.
   */
-trait ASPxClientDashboardItemDataMeasureValue extends js.Object {
+@JSGlobal("ASPxClientDashboardItemDataMeasureValue")
+@js.native
+class ASPxClientDashboardItemDataMeasureValue () extends js.Object {
   /**
     * Gets the measure display text.
     */
-  def GetDisplayText(): String
+  def GetDisplayText(): String = js.native
   /**
     * Gets the measure value.
     */
-  def GetValue(): js.Object
-}
-
-object ASPxClientDashboardItemDataMeasureValue {
-  @scala.inline
-  def apply(GetDisplayText: () => String, GetValue: () => js.Object): ASPxClientDashboardItemDataMeasureValue = {
-    val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetValue = js.Any.fromFunction0(GetValue))
-  
-    __obj.asInstanceOf[ASPxClientDashboardItemDataMeasureValue]
-  }
+  def GetValue(): js.Any = js.native
 }
 

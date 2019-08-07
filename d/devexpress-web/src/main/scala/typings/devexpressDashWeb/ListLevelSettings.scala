@@ -7,94 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings to define individual bulleted or numbered list levels.
   */
-trait ListLevelSettings extends js.Object {
+@JSGlobal("ListLevelSettings")
+@js.native
+class ListLevelSettings () extends js.Object {
   /**
     * Gets or sets the paragraph text alignment within numbered list levels.
-    * Value: One of the <see cref="ListLevelNumberAlignment" /> values.
     */
-  var alignment: js.Any
+  var alignment: ListLevelNumberAlignment = js.native
   /**
     * Gets or sets the pattern used to format the list level for display purposes.
-    * Value: A string value specifying the format pattern.
     */
-  var displayFormatString: String
+  var displayFormatString: String = js.native
   /**
     * Gets or sets a value specifying the indent of the first line of the current list level's paragraph.
-    * Value: An integer value specifying the indent.
     */
-  var firstLineIndent: Double
+  var firstLineIndent: Double = js.native
   /**
     * Gets or sets a value specifying whether and how the first line of the current list level's paragraph is indented.
-    * Value: One of the <see cref="ParagraphFirstLineIndent" /> values.
     */
-  var firstLineIndentType: js.Any
+  var firstLineIndentType: ParagraphFirstLineIndent = js.native
   /**
     * Gets or sets whether the font formatting of the current list level's paragraph is bold.
-    * Value: true, if the font formatting is bold; otherwise, false.
     */
-  var fontBold: Boolean
+  var fontBold: Boolean = js.native
   /**
     * Gets or sets the font color of the current list level's paragraph.
-    * Value: A string value specifying the font color.
     */
-  var fontColor: String
+  var fontColor: String = js.native
   /**
     * Gets or sets whether the font formatting of the current list level's paragraph is italic.
-    * Value: true, if the font formatting is italic; otherwise, false.
     */
-  var fontItalic: Boolean
+  var fontItalic: Boolean = js.native
   /**
     * Gets or sets the font name of the current list level's paragraph.
-    * Value: A string value specifying the font name.
     */
-  var fontName: String
+  var fontName: String = js.native
   /**
     * Gets or sets the font size of the current list level's paragraph.
-    * Value: An integer value specifying the font size.
     */
-  var fontSize: Double
+  var fontSize: Double = js.native
   /**
     * Gets or sets the numbering format used for the current list level's paragraph.
-    * Value: One of the <see cref="ListLevelFormat" /> values.
     */
-  var format: js.Any
+  var format: ListLevelFormat = js.native
   /**
     * Gets or sets the left indent for text within the current list level's paragraph.
-    * Value: An integer value specifying the left indent.
     */
-  var leftIndent: Double
+  var leftIndent: Double = js.native
   /**
     * Gets or sets the character inserted after the number for a numbered list item.
-    * Value: A string value that is the trailing character for the list level.
     */
-  var separator: String
+  var separator: String = js.native
   /**
     * Gets the list level item's start position in the document.
-    * Value: An integer value specifying the start position.
     */
-  var start: Double
-}
-
-object ListLevelSettings {
-  @scala.inline
-  def apply(
-    alignment: js.Any,
-    displayFormatString: String,
-    firstLineIndent: Double,
-    firstLineIndentType: js.Any,
-    fontBold: Boolean,
-    fontColor: String,
-    fontItalic: Boolean,
-    fontName: String,
-    fontSize: Double,
-    format: js.Any,
-    leftIndent: Double,
-    separator: String,
-    start: Double
-  ): ListLevelSettings = {
-    val __obj = js.Dynamic.literal(alignment = alignment, displayFormatString = displayFormatString, firstLineIndent = firstLineIndent, firstLineIndentType = firstLineIndentType, fontBold = fontBold, fontColor = fontColor, fontItalic = fontItalic, fontName = fontName, fontSize = fontSize, format = format, leftIndent = leftIndent, separator = separator, start = start)
-  
-    __obj.asInstanceOf[ListLevelSettings]
-  }
+  var start: Double = js.native
 }
 

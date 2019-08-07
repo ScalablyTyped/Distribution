@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the PopupMenuShowing event.
+  * Provides data for the ASPxClientRichEdit.PopupMenuShowing event.
   */
-trait ASPxClientRichEditPopupMenuShowingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientRichEditPopupMenuShowingEventArgs")
+@js.native
+class ASPxClientRichEditPopupMenuShowingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditPopupMenuShowingEventArgs object. For internal use only.
+    * @param menuItems Provides access to the context menu's item collection.
+    */
+  def this(menuItems: ASPxClientRichEditPopupMenuItemCollection) = this()
   /**
     * Provides access to a collection of menu items in the context menu being invoked.
-    * Value: A <see cref="ASPxClientRichEditPopupMenuItemCollection" /> object representing the context menu's item collection.
     */
-  var menuItems: ASPxClientRichEditPopupMenuItemCollection
-}
-
-object ASPxClientRichEditPopupMenuShowingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, menuItems: ASPxClientRichEditPopupMenuItemCollection): ASPxClientRichEditPopupMenuShowingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, menuItems = menuItems)
-  
-    __obj.asInstanceOf[ASPxClientRichEditPopupMenuShowingEventArgs]
-  }
+  var menuItems: ASPxClientRichEditPopupMenuItemCollection = js.native
 }
 

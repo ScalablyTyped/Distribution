@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoneData protected () extends js.Object {
   def this(index: Double, name: String, parent: BoneData) = this()
+  var color: Color = js.native
   var index: Double = js.native
   var length: Double = js.native
   var name: String = js.native
@@ -17,6 +18,7 @@ class BoneData protected () extends js.Object {
   var scaleY: Double = js.native
   var shearX: Double = js.native
   var shearY: Double = js.native
+  var skinRequired: Boolean = js.native
   var transformMode: TransformMode = js.native
   var x: Double = js.native
   var y: Double = js.native

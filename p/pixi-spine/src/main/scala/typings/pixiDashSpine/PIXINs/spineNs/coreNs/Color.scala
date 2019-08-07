@@ -31,5 +31,7 @@ object Color extends js.Object {
   var MAGENTA: Color = js.native
   var RED: Color = js.native
   var WHITE: Color = js.native
+  def rgb888ToColor(color: Color, value: Double): Unit = js.native
+  def rgba8888ToColor(color: Color, value: Double): Unit = js.native
 }
 

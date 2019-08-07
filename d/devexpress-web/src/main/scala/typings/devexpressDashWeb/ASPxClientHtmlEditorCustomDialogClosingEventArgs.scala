@@ -5,22 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CustomDialogClosing client event.
+  * Provides data for the ASPxClientHtmlEditor.CustomDialogClosing client event.
   */
-trait ASPxClientHtmlEditorCustomDialogClosingEventArgs extends ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
+@JSGlobal("ASPxClientHtmlEditorCustomDialogClosingEventArgs")
+@js.native
+class ASPxClientHtmlEditorCustomDialogClosingEventArgs protected () extends ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorCustomDialogClosingEventArgs class with the specified settings.
+    * @param name A string value that specifies the custom dialog's name. This value is assigned to the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
+    * @param status An object that specifies a status that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogCloseEventArgsBase.status property.
+    */
+  def this(name: String, status: js.Any) = this()
   /**
     * Gets or sets a value specifying whether the event was handled.
-    * Value: true if the event was handled and default processing should not occur; false if the event should be handled using default processing.
     */
-  var handled: Boolean
-}
-
-object ASPxClientHtmlEditorCustomDialogClosingEventArgs {
-  @scala.inline
-  def apply(handled: Boolean, name: String, status: js.Object): ASPxClientHtmlEditorCustomDialogClosingEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, name = name, status = status)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosingEventArgs]
-  }
+  var handled: Boolean = js.native
 }
 

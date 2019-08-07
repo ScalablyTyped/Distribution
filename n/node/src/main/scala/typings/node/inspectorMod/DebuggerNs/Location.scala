@@ -18,7 +18,7 @@ trait Location extends js.Object {
     */
   var lineNumber: Double
   /**
-    * Script identifier as reported in the `Debugger.scriptParsed`.
+    * Script identifier as reported in the <code>Debugger.scriptParsed</code>.
     */
   var scriptId: ScriptId
 }

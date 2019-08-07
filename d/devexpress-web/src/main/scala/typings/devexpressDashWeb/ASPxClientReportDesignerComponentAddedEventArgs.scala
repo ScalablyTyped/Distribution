@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ComponentAdded event.
+  * Provides data for the ASPxClientReportDesigner.ComponentAdded event.
   */
-trait ASPxClientReportDesignerComponentAddedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientReportDesignerComponentAddedEventArgs")
+@js.native
+class ASPxClientReportDesignerComponentAddedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientReportDesignerComponentAddedEventArgs class with the specified settings.
+    * @param model An object that specifies the model of a component that has been added to a report. This value is assigned to the ASPxClientReportDesignerComponentAddedEventArgs.Model property.
+    * @param parent An object that specifies the parent of a component that has been added to a report. This value is assigned to the ASPxClientReportDesignerComponentAddedEventArgs.Parent property.
+    */
+  def this(model: js.Any, parent: js.Any) = this()
   /**
     * Gets the model of a component that has been added to a report.
-    * Value: An object that specifies the component model.
     */
-  var Model: js.Object
+  var Model: js.Any = js.native
   /**
     * Gets the parent of a component that has been added to a report.
-    * Value: An object that specifies the component parent.
     */
-  var Parent: js.Object
-}
-
-object ASPxClientReportDesignerComponentAddedEventArgs {
-  @scala.inline
-  def apply(Model: js.Object, Parent: js.Object): ASPxClientReportDesignerComponentAddedEventArgs = {
-    val __obj = js.Dynamic.literal(Model = Model, Parent = Parent)
-  
-    __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
-  }
+  var Parent: js.Any = js.native
 }
 

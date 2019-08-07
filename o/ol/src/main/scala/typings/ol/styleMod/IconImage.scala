@@ -15,7 +15,23 @@ import scala.scalajs.js.annotation._
 class IconImage protected () extends default {
   def this(
     image: HTMLCanvasElement,
+    src: js.UndefOr[scala.Nothing],
+    size: Size,
+    crossOrigin: String,
+    imageState: ImageState,
+    color: Color
+  ) = this()
+  def this(
+    image: HTMLCanvasElement,
     src: String,
+    size: Size,
+    crossOrigin: String,
+    imageState: ImageState,
+    color: Color
+  ) = this()
+  def this(
+    image: HTMLImageElement,
+    src: js.UndefOr[scala.Nothing],
     size: Size,
     crossOrigin: String,
     imageState: ImageState,

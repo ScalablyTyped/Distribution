@@ -114,7 +114,7 @@ trait MapOptions extends js.Object {
     * in the v3.22 Map Controls}.
     */
   var panControlOptions: js.UndefOr[PanControlOptions] = js.undefined
-  /** 
+  /**
     * Defines a boundary that restricts the area of the map accessible to users.
     * When set, a user can only pan and zoom while the camera view stays inside the
     * limits of the boundary.

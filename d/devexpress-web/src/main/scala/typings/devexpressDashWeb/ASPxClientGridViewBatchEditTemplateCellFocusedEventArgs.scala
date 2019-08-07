@@ -5,27 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditTemplateCellFocused event.
+  * Provides data for the ASPxClientGridView.BatchEditTemplateCellFocused event.
   */
-trait ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs class with the specified column.
+    * @param column An ASPxClientGridViewColumn object that is the processed grid column. This value is assigned to the ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs.column property.
+    */
+  def this(column: ASPxClientGridViewColumn) = this()
   /**
     * Gets the currently processed column.
-    * Value: A <see cref="ASPxClientGridViewColumn" /> object that is the client-side column object.
     */
-  var column: ASPxClientGridViewColumn
+  var column: ASPxClientGridViewColumn = js.native
   /**
     * Gets or sets a value specifying whether the event was handled.
-    * Value: true if the event was handled and default processing should not occur; false if the event should be handled using default processing.
     */
-  var handled: Boolean
-}
-
-object ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs {
-  @scala.inline
-  def apply(column: ASPxClientGridViewColumn, handled: Boolean): ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs = {
-    val __obj = js.Dynamic.literal(column = column, handled = handled)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs]
-  }
+  var handled: Boolean = js.native
 }
 

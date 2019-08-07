@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait p5 extends p5InstanceExtensions {
   /**
+    *   Allows for the friendly error system (FES) to be
+    *   turned off when creating a sketch, which can give
+    *   a significant boost to performance when needed.
+    *   See  disabling the friendly error system.
+    */
+  var disableFriendlyErrors: Boolean = js.native
+  /**
     *   Called directly after setup(), the draw() function
     *   continuously executes the lines of code contained
     *   inside its block until the program is stopped or

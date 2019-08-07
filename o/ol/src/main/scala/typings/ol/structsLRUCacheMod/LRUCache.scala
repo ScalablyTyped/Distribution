@@ -12,9 +12,9 @@ trait LRUCache[T]
   def canExpireCache(): Boolean = js.native
   def clear(): Unit = js.native
   def containsKey(key: String): Boolean = js.native
-  def forEach[S](f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], Unit]): Unit = js.native
+  def forEach[S](f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], _]): Unit = js.native
   def forEach[S](
-    f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], Unit],
+    f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], _],
     opt_this: S
   ): Unit = js.native
   def get(key: String): T = js.native

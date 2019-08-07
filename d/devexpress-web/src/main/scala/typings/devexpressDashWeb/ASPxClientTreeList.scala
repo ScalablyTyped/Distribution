@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client ASPxTreeList.
   */
+@JSGlobal("ASPxClientTreeList")
 @js.native
-trait ASPxClientTreeList extends ASPxClientControl {
+class ASPxClientTreeList () extends ASPxClientControl {
   /**
     * Occurs on the client side before data changes are canceled in batch edit mode.
     */
@@ -74,7 +75,7 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   var CustomButtonClick: ASPxClientEvent[ASPxClientTreeListCustomButtonEventHandler[ASPxClientTreeList]] = js.native
   /**
-    * Fires after the callback has been processed in the CustomDataCallback event handler.
+    * Fires after the callback has been processed in the ASPxTreeList.CustomDataCallback event handler.
     */
   var CustomDataCallback: ASPxClientEvent[ASPxClientTreeListCustomDataCallbackEventHandler[ASPxClientTreeList]] = js.native
   /**
@@ -131,7 +132,6 @@ trait ASPxClientTreeList extends ASPxClientControl {
   var ToolbarItemClick: ASPxClientEvent[ASPxClientTreeListToolbarItemClickEventHandler[ASPxClientTreeList]] = js.native
   /**
     * Provides access to the batch editing client API.
-    * Value: A <see cref="ASPxClientTreeListBatchEditApi" /> object that exposes the batch editing client API methods.
     */
   var batchEditApi: ASPxClientTreeListBatchEditApi = js.native
   /**
@@ -148,21 +148,10 @@ trait ASPxClientTreeList extends ASPxClientControl {
     * @param value A string value that specifies the filter criterion.
     */
   def ApplySearchPanelFilter(value: String): Unit = js.native
+  def AutoFilterByColumn(column: String, `val`: String): Unit = js.native
+  def AutoFilterByColumn(column: Double, `val`: String): Unit = js.native
   /**
     * Applies a filter to the specified data column.
-    * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's Name property value).
-    * @param val A string value that specifies the filter expression.
-    */
-  def AutoFilterByColumn(columnFieldNameOrId: String, `val`: String): Unit = js.native
-  /**
-    * Applies a filter to the specified data column.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param val A string value that specifies the filter expression.
-    */
-  def AutoFilterByColumn(columnIndex: Double, `val`: String): Unit = js.native
-  /**
-    * Applies a filter to the specified data column.
-    * @param column An ASPxClientTreeListColumn object that represents the data column within the client Tree List.
     * @param val A string value that specifies the filter expression.
     */
   def AutoFilterByColumn(column: ASPxClientTreeListColumn, `val`: String): Unit = js.native
@@ -210,89 +199,56 @@ trait ASPxClientTreeList extends ASPxClientControl {
     * Sets input focus to the ASPxTreeList.
     */
   def Focus(): Unit = js.native
+  def FocusEditor(column: String): Unit = js.native
+  def FocusEditor(column: Double): Unit = js.native
   /**
     * Moves focus to the specified editor within the edited node.
-    * @param columnIndex An integer value that identifies the data column.
-    */
-  def FocusEditor(columnIndex: Double): Unit = js.native
-  /**
-    * Moves focus to the specified editor within the edited node.
-    * @param columnNameOrFieldName A String value that specifies the column's name or field name.
-    */
-  def FocusEditor(columnNameOrFieldName: String): Unit = js.native
-  /**
-    * Moves focus to the specified editor within the edited node.
-    * @param column A ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
     */
   def FocusEditor(column: ASPxClientTreeListColumn): Unit = js.native
+  def GetAutoFilterEditor(column: String): js.Any = js.native
+  def GetAutoFilterEditor(column: Double): js.Any = js.native
   /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
-    * @param columnFieldNameOrId A string value that specifies the column's name or its data base field name.
-    */
-  def GetAutoFilterEditor(columnFieldNameOrId: String): js.Object = js.native
-  /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
-    * @param columnIndex An integer value that identifies the data column by its index.
-    */
-  def GetAutoFilterEditor(columnIndex: Double): js.Object = js.native
-  /**
-    * Returns the editor used to edit the value in the auto filter row for the specified data column.
+    * Returns the editor used to edit the value in the auto filter row for the specified data column. An object that represents the editor used to edit the value in the specified auto filter row cell. null (Nothing in Visual Basic) if the editor was not found.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the ASPxTreeList.
     */
-  def GetAutoFilterEditor(column: ASPxClientTreeListColumn): js.Object = js.native
+  def GetAutoFilterEditor(column: ASPxClientTreeListColumn): js.Any = js.native
   /**
-    * Returns the client column which is bound to the specified data source field.
-    * @param fieldName A string value that specifies the name of the data source field to which the column is bound (the column's FieldName property value).
+    * Returns the client column which is bound to the specified data source field. An ASPxClientTreeListColumn object that represents the client column bound to the specified data source field.
+    * @param fieldName A string value that specifies the name of the data source field to which the column is bound (the column's TreeListDataColumn.FieldName property value).
     */
   def GetColumnByFieldName(fieldName: String): ASPxClientTreeListColumn = js.native
   /**
-    * Returns the column located at the specified position within the Columns collection.
-    * @param index An integer value that identifies the column within the collection (the column's Index property value).
+    * Returns the column located at the specified position within the ASPxTreeList.Columns collection. An ASPxClientTreeListColumn object that represents the client column located at the specified position within the collection.
+    * @param index An integer value that identifies the column within the collection (the column's CollectionItem.Index property value).
     */
   def GetColumnByIndex(index: Double): ASPxClientTreeListColumn = js.native
   /**
-    * Returns the column with the specified name.
-    * @param name A string value that specifies the column's name (the column's Name property value).
+    * Returns the column with the specified name. An ASPxClientTreeListColumn object that represents the column with the specified name.
+    * @param name A string value that specifies the column's name (the column's WebColumnBase.Name property value).
     */
   def GetColumnByName(name: String): ASPxClientTreeListColumn = js.native
   /**
     * Returns the number of columns within the client ASPxTreeList.
     */
   def GetColumnCount(): Double = js.native
+  def GetEditValue(column: String): js.Any = js.native
+  def GetEditValue(column: Double): js.Any = js.native
   /**
-    * Returns the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column by its index within the ASPxTreeList's column collection.
-    */
-  def GetEditValue(columnIndex: Double): js.Object = js.native
-  /**
-    * Returns the value of the specified edit cell.
-    * @param columnNameOrFieldName A String value that identifies the column by its name or field name.
-    */
-  def GetEditValue(columnNameOrFieldName: String): js.Object = js.native
-  /**
-    * Returns the value of the specified edit cell.
+    * Returns the value of the specified edit cell. A String value that represents the value of the edit cell, which corresponds to the specified data column.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
     */
-  def GetEditValue(column: ASPxClientTreeListColumn): js.Object = js.native
+  def GetEditValue(column: ASPxClientTreeListColumn): js.Any = js.native
   /**
     * Gets the key value of the node currently being edited.
     */
   def GetEditingNodeKey(): String = js.native
+  def GetEditor(column: String): js.Any = js.native
+  def GetEditor(column: Double): js.Any = js.native
   /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnIndex An integer value that identifies the column by its position within the column collection.
-    */
-  def GetEditor(columnIndex: Double): js.Object = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
-    * @param columnNameOrFieldName A String value that identifies the column by its name or field name.
-    */
-  def GetEditor(columnNameOrFieldName: String): js.Object = js.native
-  /**
-    * Returns the editor used to edit the specified column's values.
+    * Returns the editor used to edit the specified column's values. An object that represents the specified column's editor.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
     */
-  def GetEditor(column: ASPxClientTreeListColumn): js.Object = js.native
+  def GetEditor(column: ASPxClientTreeListColumn): js.Any = js.native
   /**
     * Gets information about a focused cell.
     */
@@ -306,28 +262,22 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def GetHorizontalScrollPosition(): Double = js.native
   /**
-    * Returns an HTML table row that represents the specified node.
+    * Returns an HTML table row that represents the specified node. An object that represents the HTML table row, which corresponds to the specified node.
     * @param nodeKey A string value that identifies the node.
     */
-  def GetNodeHtmlElement(nodeKey: String): js.Object = js.native
+  def GetNodeHtmlElement(nodeKey: String): js.Any = js.native
   /**
-    * Returns the specified node's state.
+    * Returns the specified node's state. A String value that represents the specified node's state.
     * @param nodeKey A String value that identifies the node.
     */
   def GetNodeState(nodeKey: String): String = js.native
   /**
     * Obtains specified data source field values within a specified node, and submits them to the specified JavaScript function.
     * @param nodeKey A string value that identifies the node.
-    * @param fieldNames A string value that contains the names of data source fields whose values within the specified node are returned. The field names should be separated by ';'.
-    * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
-    */
-  def GetNodeValues(nodeKey: String, fieldNames: String, onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
-  /**
-    * Obtains specified data source field values within a specified node, and submits them to the specified JavaScript function.
-    * @param nodeKey A string value that identifies the node.
     * @param fieldNames The names of data source fields whose values within the specified node are returned.
     * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
     */
+  def GetNodeValues(nodeKey: String, fieldNames: String, onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
   def GetNodeValues(nodeKey: String, fieldNames: js.Array[String], onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
   /**
     * Gets the number of pages to which the ASPxTreeList's data is divided.
@@ -343,37 +293,21 @@ trait ASPxClientTreeList extends ASPxClientControl {
   def GetPopupEditForm(): ASPxClientPopupControl = js.native
   /**
     * Obtains specified data source field values within selected nodes, and submits them to the specified JavaScript function.
-    * @param fieldNames A string value that contains the names of data source fields whose values within selected nodes are returned. The field names should be separated by ';'.
+    * @param fieldNames The names of data source fields whose values within selected nodes are returned.
     * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
+    * @param visibleOnly true to return values within selected nodes that are displayed within the current page; false to return values within all selected nodes.
     */
   def GetSelectedNodeValues(fieldNames: String, onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
-  /**
-    * Obtains specified data source field values within selected nodes, and submits them to the specified JavaScript function.
-    * @param fieldNames A string value that contains the names of data source fields whose values within selected nodes are returned. The field names should be separated by ';'.
-    * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
-    * @param visibleOnly true to return values within selected nodes that are displayed within the current page; false to return values within all selected nodes.
-    */
   def GetSelectedNodeValues(fieldNames: String, onCallback: ASPxClientTreeListValuesCallback, visibleOnly: Boolean): Unit = js.native
-  /**
-    * Obtains specified data source field values within selected nodes, and submits them to the specified JavaScript function.
-    * @param fieldNames The names of data source fields whose values within selected nodes are returned.
-    * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
-    */
   def GetSelectedNodeValues(fieldNames: js.Array[String], onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
-  /**
-    * Obtains specified data source field values within selected nodes, and submits them to the specified JavaScript function.
-    * @param fieldNames The names of data source fields whose values within selected nodes are returned.
-    * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
-    * @param visibleOnly true to return values within selected nodes that are displayed within the current page; false to return values within all selected nodes.
-    */
   def GetSelectedNodeValues(fieldNames: js.Array[String], onCallback: ASPxClientTreeListValuesCallback, visibleOnly: Boolean): Unit = js.native
   /**
-    * Returns a toolbar specified by its index.
+    * Returns a toolbar specified by its index. An ASPxClientMenu object that is the toolbar located at the specified index within the control's ASPxTreeList.Toolbars collection.
     * @param index An integer value specifying the zero-based index of the toolbar object to retrieve.
     */
   def GetToolbar(index: Double): ASPxClientMenu = js.native
   /**
-    * Returns a toolbar specified by its name.
+    * Returns a toolbar specified by its name. An ASPxClientMenu object that is the toolbar with the specified name.
     * @param name A string value specifying the toolbar name.
     */
   def GetToolbarByName(name: String): ASPxClientMenu = js.native
@@ -391,15 +325,10 @@ trait ASPxClientTreeList extends ASPxClientControl {
   def GetVisibleNodeKeys(): js.Array[String] = js.native
   /**
     * Obtains specified data source field values within nodes that are displayed within the current page, and submits them to the specified JavaScript function.
-    * @param fieldNames A string value that contains the names of data source fields whose values within visible nodes are returned. The field names should be separated by ';'.
-    * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
-    */
-  def GetVisibleNodeValues(fieldNames: String, onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
-  /**
-    * Obtains specified data source field values within nodes that are displayed within the current page, and submits them to the specified JavaScript function.
     * @param fieldNames The names of data source fields whose values within visible nodes are returned.
     * @param onCallback A ASPxClientTreeListValuesCallback object that represents the JavaScript function which receives the list of values as a parameter.
     */
+  def GetVisibleNodeValues(fieldNames: String, onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
   def GetVisibleNodeValues(fieldNames: js.Array[String], onCallback: ASPxClientTreeListValuesCallback): Unit = js.native
   /**
     * Obtains key values of selected nodes that are displayed within the current page.
@@ -423,10 +352,10 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def IsEditing(): Boolean = js.native
   /**
-    * Indicates whether the specified node is selected.
+    * Indicates whether the specified node is selected. true if the specified node is selected; false if the specified node isn't selected. null if the specified node was not found on the client.
     * @param nodeKey A String value that identifies the node by its key value.
     */
-  def IsNodeSelected(nodeKey: String): js.Any = js.native
+  def IsNodeSelected(nodeKey: String): Boolean | Null = js.native
   /**
     * Scrolls the tree list so that the specified node becomes visible.
     * @param nodeKey An integer value that specifies the node index within the tree list's client item list.
@@ -443,24 +372,21 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def NextPage(): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(args: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxTreeList.CustomCallback event, passing it the specified argument.
+    * @param args A string value that represents any information that needs to be sent to the server-side ASPxTreeList.CustomCallback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(args: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(args: String): Unit = js.native
+  def PerformCallback(args: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  /** @deprecated Use the PerformCallback method instead */
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param arg A string value that represents any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxTreeList.CustomCallback event, passing it the specified argument.
+    * @param arg A string value that represents any information that needs to be sent to the server-side ASPxTreeList.CustomCallback event.
     */
   def PerformCustomCallback(arg: String): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomDataCallback event passing it the specified argument.
-    * @param arg A string value that represents any information that needs to be sent to the server-side CustomDataCallback event.
+    * Sends a callback to the server and generates the server-side ASPxTreeList.CustomDataCallback event passing it the specified argument.
+    * @param arg A string value that represents any information that needs to be sent to the server-side ASPxTreeList.CustomDataCallback event.
     */
   def PerformCustomDataCallback(arg: String): Unit = js.native
   /**
@@ -468,34 +394,23 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def PrevPage(): Unit = js.native
   /**
-    * Selects the specified node.
-    * @param nodeKey A string value that identifies the node.
+    * Updates the tree list data.
     */
-  def SelectNode(nodeKey: String): Unit = js.native
+  def Refresh(): Unit = js.native
   /**
     * Selects or deselects the specified node.
     * @param nodeKey A string value that identifies the node.
     * @param state true to select the node; otherwise, false.
     */
+  def SelectNode(nodeKey: String): Unit = js.native
   def SelectNode(nodeKey: String, state: Boolean): Unit = js.native
+  def SetEditValue(column: String, value: js.Any): Unit = js.native
+  def SetEditValue(column: Double, value: js.Any): Unit = js.native
   /**
     * Sets the value of the specified edit cell.
-    * @param columnIndex An integer value that identifies the data column by its index within the ASPxTreeList's column collection.
     * @param value An object that specifies the edit cell's new value.
     */
-  def SetEditValue(columnIndex: Double, value: js.Object): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param columnNameOrFieldName A String value that identifies the column by its name or field name.
-    * @param value An object that specifies the edit cell's new value.
-    */
-  def SetEditValue(columnNameOrFieldName: String, value: js.Object): Unit = js.native
-  /**
-    * Sets the value of the specified edit cell.
-    * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
-    * @param value An object that specifies the edit cell's new value.
-    */
-  def SetEditValue(column: ASPxClientTreeListColumn, value: js.Object): Unit = js.native
+  def SetEditValue(column: ASPxClientTreeListColumn, value: js.Any): Unit = js.native
   /**
     * Enables or disables the current filter.
     * @param isFilterEnabled true to enable the current filter; otherwise, false.
@@ -504,7 +419,7 @@ trait ASPxClientTreeList extends ASPxClientControl {
   /**
     * Focuses a specified cell.
     * @param nodeKey An integer value that specifies a node key.
-    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's Index property value).
+    * @param columnIndex A zero-based index that identifies the column in the column collection (the column's CollectionItem.Index property value).
     */
   def SetFocusedCell(nodeKey: String, columnIndex: Double): Unit = js.native
   /**
@@ -528,89 +443,54 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def SetVerticalScrollPosition(position: Double): Unit = js.native
   /**
-    * Invokes the Customization Window.
-    */
-  def ShowCustomizationWindow(): Unit = js.native
-  /**
     * Invokes the Customization Window and displays it over the specified HTML element.
     * @param htmlElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
-  def ShowCustomizationWindow(htmlElement: js.Object): Unit = js.native
+  def ShowCustomizationWindow(): Unit = js.native
+  def ShowCustomizationWindow(htmlElement: js.Any): Unit = js.native
   /**
     * Displays the Filter Control.
     */
   def ShowFilterControl(): Unit = js.native
+  def SortBy(columnIndex: String): Unit = js.native
+  def SortBy(columnIndex: String, sortOrder: String): Unit = js.native
+  def SortBy(columnIndex: String, sortOrder: String, reset: Boolean): Unit = js.native
   /**
     * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
+    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
+    * @param reset true to clear any previous sorting; otherwise, false.
     */
   def SortBy(columnIndex: Double): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    */
   def SortBy(columnIndex: Double, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param columnIndex An integer value that specifies the column's position within the column collection.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
   def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientTreeListColumn object that represents the data column.
-    */
-  def SortBy(column: ASPxClientTreeListColumn): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientTreeListColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    */
-  def SortBy(column: ASPxClientTreeListColumn, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param column An ASPxClientTreeListColumn object that represents the data column.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(column: ASPxClientTreeListColumn, sortOrder: String, reset: Boolean): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param nameOrFieldName A String value that specifies the column's name or field name.
-    */
-  def SortBy(nameOrFieldName: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param nameOrFieldName A String value that specifies the column's name or field name.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    */
-  def SortBy(nameOrFieldName: String, sortOrder: String): Unit = js.native
-  /**
-    * Sorts data by the specified data column's values.
-    * @param nameOrFieldName A String value that specifies the column's name or field name.
-    * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
-    * @param reset true to clear any previous sorting; otherwise, false.
-    */
-  def SortBy(nameOrFieldName: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(columnIndex: ASPxClientTreeListColumn): Unit = js.native
+  def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String): Unit = js.native
+  def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String, reset: Boolean): Unit = js.native
   /**
     * Switches the ASPxTreeList to edit mode.
     * @param nodeKey A string value that identifies the node by its key value.
     */
   def StartEdit(nodeKey: String): Unit = js.native
   /**
-    * Switches the ASPxTreeList to edit mode and allows new root node values to be edited.
-    */
-  def StartEditNewNode(): Unit = js.native
-  /**
     * Switches the ASPxTreeList to edit mode and allows new node values to be edited.
     * @param parentNodeKey A String value that identifies the parent node, which owns a new node.
     */
+  def StartEditNewNode(): Unit = js.native
   def StartEditNewNode(parentNodeKey: String): Unit = js.native
   /**
     * Saves all the changes made and switches the ASPxTreeList to browse mode.
     */
   def UpdateEdit(): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientTreeList")
+@js.native
+object ASPxClientTreeList extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientTreeList type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientTreeList = js.native
 }
 

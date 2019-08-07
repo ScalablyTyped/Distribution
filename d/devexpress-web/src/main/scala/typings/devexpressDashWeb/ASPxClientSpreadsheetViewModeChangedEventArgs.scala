@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ViewModeChanged event.
+  * Provides data for the ASPxClientSpreadsheet.ViewModeChanged event.
   */
-trait ASPxClientSpreadsheetViewModeChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientSpreadsheetViewModeChangedEventArgs")
+@js.native
+class ASPxClientSpreadsheetViewModeChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientSpreadsheetViewModeChangedEventArgs class.
+    * @param oldViewMode Specifies the control's current view mode.
+    */
+  def this(oldViewMode: js.Any) = this()
   /**
     * Gets the control's current view mode when the event is triggered.
-    * Value: A <see cref="ASPxClientSpreadsheetViewMode" /> value specifying the control's view mode.
     */
-  var oldViewMode: js.Any
-}
-
-object ASPxClientSpreadsheetViewModeChangedEventArgs {
-  @scala.inline
-  def apply(oldViewMode: js.Any): ASPxClientSpreadsheetViewModeChangedEventArgs = {
-    val __obj = js.Dynamic.literal(oldViewMode = oldViewMode)
-  
-    __obj.asInstanceOf[ASPxClientSpreadsheetViewModeChangedEventArgs]
-  }
+  var oldViewMode: ASPxClientSpreadsheetViewMode = js.native
 }
 

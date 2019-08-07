@@ -7,25 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides base data for the client-side events.
   */
-trait BootstrapUIWidgetEventArgsBase extends ASPxClientEventArgs {
+@JSGlobal("BootstrapUIWidgetEventArgsBase")
+@js.native
+class BootstrapUIWidgetEventArgsBase protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the BootstrapUIWidgetEventArgsBase class with the specified widget and its container.
+    * @param component The widget instance.
+    * @param element The widget's container.
+    */
+  def this(component: js.Any, element: js.Any) = this()
   /**
     * The widget instance.
-    * Value: An object specifying the widget instance.
     */
-  var component: js.Object
+  var component: js.Any = js.native
   /**
     * The widget's container.
-    * Value: An object specifying the widget's container.
     */
-  var element: js.Object
-}
-
-object BootstrapUIWidgetEventArgsBase {
-  @scala.inline
-  def apply(component: js.Object, element: js.Object): BootstrapUIWidgetEventArgsBase = {
-    val __obj = js.Dynamic.literal(component = component, element = element)
-  
-    __obj.asInstanceOf[BootstrapUIWidgetEventArgsBase]
-  }
+  var element: js.Any = js.native
 }
 

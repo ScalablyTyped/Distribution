@@ -14,6 +14,7 @@ trait StyleOptions extends js.Object {
   var editable: js.UndefOr[Boolean] = js.undefined
   var fillColor: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double] = js.undefined
+  // tslint:disable-next-line:no-unnecessary-qualifier
   var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
   var shape: js.UndefOr[MarkerShape] = js.undefined
   var strokeColor: js.UndefOr[String] = js.undefined

@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to decrement the indent level of paragraphs in a selected numbered list.
   */
-trait DecrementNumberingIndentCommand extends CommandWithSimpleStateBase {
+@JSGlobal("DecrementNumberingIndentCommand")
+@js.native
+class DecrementNumberingIndentCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the DecrementNumberingIndentCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the DecrementNumberingIndentCommand command.
     */
-  def execute(): Boolean
-}
-
-object DecrementNumberingIndentCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DecrementNumberingIndentCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[DecrementNumberingIndentCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

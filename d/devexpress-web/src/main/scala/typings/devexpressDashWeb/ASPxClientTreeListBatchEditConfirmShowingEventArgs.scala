@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditConfirmShowing event.
+  * Provides data for the ASPxClientTreeList.BatchEditConfirmShowing event.
   */
-trait ASPxClientTreeListBatchEditConfirmShowingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientTreeListBatchEditConfirmShowingEventArgs")
+@js.native
+class ASPxClientTreeListBatchEditConfirmShowingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTreeListBatchEditConfirmShowingEventArgs class.
+    * @param requestTriggerID A string value specifying the client identifier of an object that initiates a request.
+    */
+  def this(requestTriggerID: String) = this()
   /**
     * Gets the client identifier of an object that initiates a send request.
-    * Value: A string value that specifies the object client identifier.
     */
-  var requestTriggerID: String
-}
-
-object ASPxClientTreeListBatchEditConfirmShowingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, requestTriggerID: String): ASPxClientTreeListBatchEditConfirmShowingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, requestTriggerID = requestTriggerID)
-  
-    __obj.asInstanceOf[ASPxClientTreeListBatchEditConfirmShowingEventArgs]
-  }
+  var requestTriggerID: String = js.native
 }
 

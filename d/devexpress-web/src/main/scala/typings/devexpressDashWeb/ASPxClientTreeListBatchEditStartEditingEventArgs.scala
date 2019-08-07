@@ -5,32 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditStartEditing event.
+  * Provides data for the ASPxClientTreeList.BatchEditStartEditing event.
   */
-trait ASPxClientTreeListBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientTreeListBatchEditStartEditingEventArgs")
+@js.native
+class ASPxClientTreeListBatchEditStartEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTreeListBatchEditStartEditingEventArgs class.
+    * @param nodeKey A String value that identifies the processed node.
+    * @param focusedColumn An ASPxClientTreeListColumn object representing the focused column.
+    * @param nodeValues An object representing a data source’s field values.
+    */
+  def this(nodeKey: String, focusedColumn: ASPxClientTreeListColumn, nodeValues: js.Any) = this()
   /**
     * Gets the tree list column that owns a cell that is about to be edited.
-    * Value: An <see cref="ASPxClientTreeListColumn" /> object that is the focused tree list column.
     */
-  var focusedColumn: ASPxClientTreeListColumn
+  var focusedColumn: ASPxClientTreeListColumn = js.native
   /**
     * Gets the node's key value.
-    * Value: A String value that identifies the processed node.
     */
-  var nodeKey: String
+  var nodeKey: String = js.native
   /**
     * Gets the value of the processed cell.
-    * Value: A String value that identifies the node values.
     */
-  var nodeValues: js.Object
-}
-
-object ASPxClientTreeListBatchEditStartEditingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, focusedColumn: ASPxClientTreeListColumn, nodeKey: String, nodeValues: js.Object): ASPxClientTreeListBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, focusedColumn = focusedColumn, nodeKey = nodeKey, nodeValues = nodeValues)
-  
-    __obj.asInstanceOf[ASPxClientTreeListBatchEditStartEditingEventArgs]
-  }
+  var nodeValues: js.Any = js.native
 }
 

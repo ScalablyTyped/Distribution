@@ -2,7 +2,9 @@ package typings.braintreeDashWeb.braintreeDashWebMod
 
 import typings.braintreeDashWeb.Anon_AddFrame
 import typings.braintreeDashWeb.Anon_AddFrameAmount
+import typings.braintreeDashWeb.Anon_Bin
 import typings.braintreeDashWeb.Anon_Client
+import typings.braintreeDashWeb.Anon_ClientVersion
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,6 +50,7 @@ trait ThreeDSecure extends js.Object {
     * @static
     * @function create
     * @param {object} options Creation options:
+    * @param {Version} options.version=1 The version of 3DS to use. Pass in 2 to use 3DS 2.0.
     * @param {Client} options.client A {@link Client} instance.
     * @param {callback} callback The second argument, `data`, is the {@link ThreeDSecure} instance.
     * @returns {void}
@@ -57,7 +60,34 @@ trait ThreeDSecure extends js.Object {
     * }, callback);
     */
   def create(options: Anon_Client): js.Promise[ThreeDSecure] = js.native
+  def create(options: Anon_ClientVersion): js.Promise[ThreeDSecure] = js.native
+  def create(options: Anon_ClientVersion, callback: callback): Unit = js.native
   def create(options: Anon_Client, callback: callback): Unit = js.native
+  /**
+    * Gather the data needed for a 3D Secure lookup call.
+    *
+    * @public
+    * @param {object} options Options for 3D Secure lookup.
+    * @param {string} options.nonce The nonce representing the card from a tokenization payload. For example, this can be a {@link HostedFields~tokenizePayload|tokenizePayload} returned by Hosted Fields under `payload.nonce`.
+    * @param {string} [options.bin] The numeric Bank Identification Number (bin) of the card from a tokenization payload. For example, this can be a {@link HostedFields~tokenizePayload|tokenizePayload} returned by Hosted Fields under `payload.details.bin`. Though not required to start the verification, it is required to receive a 3DS 2.0 lookup response.
+    * @param {callback} [callback] The second argument, <code>data</code>, is a {@link ThreeDSecure~prepareLookupPayload|prepareLookupPayload}. If no callback is provided, it will return a promise that resolves {@link ThreeDSecure~prepareLookupPayload|prepareLookupPayload}.
+    * @returns {Promise|void} Returns a promise if no callback is provided.
+    * @example
+    * <caption>Preparing data for a 3D Secure lookup</caption>
+    * threeDSecure.prepareLookup({
+    *   nonce: hostedFieldsTokenizationPayload.nonce,
+    *   bin: hostedFieldsTokenizationPayload.details.bin
+    * }, function (err, payload) {
+    *   if (err) {
+    *     console.error(err);
+    *     return;
+    *   }
+    *
+    *   // send payload to server to do server side lookup
+    * });
+    */
+  def prepareLookup(options: Anon_Bin): js.Promise[String] = js.native
+  def prepareLookup(options: Anon_Bin, callback: callback): Unit = js.native
   /**
     * @callback ThreeDSecure~removeFrameCallback
     * @description The callback used for options.removeFrame in {@link ThreeDSecure#verifyCard|verifyCard}.

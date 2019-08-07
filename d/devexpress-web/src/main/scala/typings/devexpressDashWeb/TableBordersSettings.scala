@@ -7,58 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings to define table borders.
   */
-trait TableBordersSettings extends js.Object {
+@JSGlobal("TableBordersSettings")
+@js.native
+class TableBordersSettings () extends js.Object {
   /**
     * Gets or sets the background color of table borders.
-    * Value: A string value specifying the background color.
     */
-  var backgroundColor: String
+  var backgroundColor: String = js.native
   /**
     * Gets or sets the bottom border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var bottom: TableBorderSettings
+  var bottom: TableBorderSettings = js.native
   /**
     * Gets or sets the inside horizontal border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var insideHorizontal: TableBorderSettings
+  var insideHorizontal: TableBorderSettings = js.native
   /**
     * Gets or sets the inside vertical border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var insideVertical: TableBorderSettings
+  var insideVertical: TableBorderSettings = js.native
   /**
     * Gets or sets the left border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var left: TableBorderSettings
+  var left: TableBorderSettings = js.native
   /**
     * Gets or sets the right border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var right: TableBorderSettings
+  var right: TableBorderSettings = js.native
   /**
     * Gets or sets the top border's settings.
-    * Value: A TableBorderSettings object containing the table border settings.
     */
-  var top: TableBorderSettings
-}
-
-object TableBordersSettings {
-  @scala.inline
-  def apply(
-    backgroundColor: String,
-    bottom: TableBorderSettings,
-    insideHorizontal: TableBorderSettings,
-    insideVertical: TableBorderSettings,
-    left: TableBorderSettings,
-    right: TableBorderSettings,
-    top: TableBorderSettings
-  ): TableBordersSettings = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, bottom = bottom, insideHorizontal = insideHorizontal, insideVertical = insideVertical, left = left, right = right, top = top)
-  
-    __obj.asInstanceOf[TableBordersSettings]
-  }
+  var top: TableBorderSettings = js.native
 }
 

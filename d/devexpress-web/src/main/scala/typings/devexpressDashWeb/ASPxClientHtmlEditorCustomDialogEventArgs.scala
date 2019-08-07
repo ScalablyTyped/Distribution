@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for client events that relate to custom dialog operations.
   */
-trait ASPxClientHtmlEditorCustomDialogEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientHtmlEditorCustomDialogEventArgs")
+@js.native
+class ASPxClientHtmlEditorCustomDialogEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorCustomDialogEventArgs class.
+    * @param name A string value that specifies the custom dialog's name. Initializes the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
+    */
+  def this(name: String) = this()
   /**
     * Gets the name that uniquely identifies the processed custom dialog.
-    * Value: A string value that represents the value assigned to the processed custom dialog's Name property.
     */
-  var name: String
-}
-
-object ASPxClientHtmlEditorCustomDialogEventArgs {
-  @scala.inline
-  def apply(name: String): ASPxClientHtmlEditorCustomDialogEventArgs = {
-    val __obj = js.Dynamic.literal(name = name)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogEventArgs]
-  }
+  var name: String = js.native
 }
 

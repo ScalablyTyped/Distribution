@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditCardRecovering event.
+  * Provides data for the ASPxClientCardView.BatchEditCardRecovering event.
   */
-trait ASPxClientCardViewBatchEditCardRecoveringEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditCardRecoveringEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditCardRecoveringEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditCardRecoveringEventArgs class.
+    * @param visibleIndex An integer value specifying a card's visible index.
+    * @param cardValues An object representing card values.
+    */
+  def this(visibleIndex: Double, cardValues: js.Any) = this()
   /**
     * Gets a hashtable that maintains information about recovered cells.
-    * Value: A hashtable that stores information about recovered cells.
     */
-  var cardValues: js.Object
+  var cardValues: js.Any = js.native
   /**
     * Gets the visible index of the card whose cells has been recovered.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the card.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewBatchEditCardRecoveringEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, cardValues: js.Object, visibleIndex: Double): ASPxClientCardViewBatchEditCardRecoveringEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardRecoveringEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

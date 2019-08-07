@@ -7,40 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Contains page margin settings.
   */
-trait FloatingObjectAbsolutePositionSettings extends js.Object {
+@JSGlobal("FloatingObjectAbsolutePositionSettings")
+@js.native
+class FloatingObjectAbsolutePositionSettings () extends js.Object {
   /**
-    * Gets or sets a floating object's horizontal position relative to an element specified by the horizontalPositionType property.
-    * Value: An integer value specifying the position in twips.
+    * Gets or sets a floating object's horizontal position relative to an element specified by the FloatingObjectAbsolutePositionSettings.horizontalPositionType property.
     */
-  var horizontalAbsolutePosition: Double
+  var horizontalAbsolutePosition: Double = js.native
   /**
     * Gets or sets a value specifying to what element the horizontal position of a floating object is relative.
-    * Value: One of the <see cref="FloatingObjectHorizontalPositionType" /> enumeration values.
     */
-  var horizontalPositionType: js.Any
+  var horizontalPositionType: FloatingObjectHorizontalPositionType = js.native
   /**
-    * Gets or sets a floating object's vertical position relative to an element specified by the verticalPositionType property.
-    * Value: An integer value specifying the position in twips.
+    * Gets or sets a floating object's vertical position relative to an element specified by the FloatingObjectAbsolutePositionSettings.verticalPositionType property.
     */
-  var verticalAbsolutePosition: Double
+  var verticalAbsolutePosition: Double = js.native
   /**
     * Gets or sets a value specifying to what element the vertical position of a floating object is relative.
-    * Value: One of the <see cref="FloatingObjectVerticalPositionType" /> enumeration values.
     */
-  var verticalPositionType: js.Any
-}
-
-object FloatingObjectAbsolutePositionSettings {
-  @scala.inline
-  def apply(
-    horizontalAbsolutePosition: Double,
-    horizontalPositionType: js.Any,
-    verticalAbsolutePosition: Double,
-    verticalPositionType: js.Any
-  ): FloatingObjectAbsolutePositionSettings = {
-    val __obj = js.Dynamic.literal(horizontalAbsolutePosition = horizontalAbsolutePosition, horizontalPositionType = horizontalPositionType, verticalAbsolutePosition = verticalAbsolutePosition, verticalPositionType = verticalPositionType)
-  
-    __obj.asInstanceOf[FloatingObjectAbsolutePositionSettings]
-  }
+  var verticalPositionType: FloatingObjectVerticalPositionType = js.native
 }
 

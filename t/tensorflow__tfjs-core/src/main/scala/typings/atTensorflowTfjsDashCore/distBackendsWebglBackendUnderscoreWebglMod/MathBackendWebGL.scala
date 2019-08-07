@@ -7,7 +7,6 @@ import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreContextMod.GPGPUContext
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreMathMod.GPGPUProgram
 import typings.atTensorflowTfjsDashCore.distBackendsWebglTextureUnderscoreManagerMod.TextureManager
-import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
@@ -35,6 +34,8 @@ class MathBackendWebGL () extends KernelBackend {
     */
   var complexSeparableBinaryOp: js.Any = js.native
   var computeBytes: js.Any = js.native
+  var conv2dByMatMul: js.Any = js.native
+  var conv2dWithIm2Row: js.Any = js.native
   var convertAndCacheOnCPU: js.Any = js.native
   var cpuBackend: js.Any = js.native
   var dataRefCount: js.Any = js.native
@@ -90,8 +91,6 @@ class MathBackendWebGL () extends KernelBackend {
     customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
     preventEagerUnpackingOfOutput: Boolean
   ): K = js.native
-  def conv2dByMatMul(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
-  def conv2dWithIm2Row(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   @JSName("depthToSpace")
   def depthToSpace_NCHW(x: Tensor4D, blockSize: Double, dataFormat: NCHW): Tensor4D = js.native
   @JSName("depthToSpace")

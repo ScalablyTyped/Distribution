@@ -72,7 +72,6 @@
 | 4625 | [ejs](./e/ejs) | Embedded JavaScript templates
 | 4615 | [superagent](./s/superagent) | elegant & feature rich browser / node HTTP with a 
 | 4580 | [react-redux](./r/react-redux) | Official React bindings for Redux
-| 4575 | [ramda](./r/ramda) | A practical functional library for JavaScript prog
 | 4404 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js
 | 4384 | [autoprefixer](./a/autoprefixer) | Parse CSS and add vendor prefixes to CSS rules usi
 | 4347 | [node-sass](./n/node-sass) | Wrapper around libsass
@@ -3999,6 +3998,7 @@
 | 12 | [lodash_dot_rest](./l/lodash_dot_rest) | The lodash method _.rest exported as a module.
 | 12 | [lodash_dot_reverse](./l/lodash_dot_reverse) | The lodash method _.reverse exported as a module.
 | 12 | [mailcheck](./m/mailcheck) | A standalone module that suggests a right domain w
+| 12 | [mapbox__tile-cover](./m/mapbox__tile-cover) | generate the minimum number of tiles to cover a ge
 | 12 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
 | 12 | [morris_dot_js](./m/morris_dot_js) | Easy, pretty charts
 | 12 | [moveto](./m/moveto) | A lightweight scroll animation javascript library 
@@ -5007,6 +5007,7 @@
 | 4 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspi
 | 4 | [filesystem](./f/filesystem) | -
 | 4 | [format-util](./f/format-util) | Lightweight util.format() for the browser.
+| 4 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings.
 | 4 | [fxn](./f/fxn) | Stateless Architecture
 | 4 | [gamedig](./g/gamedig) | Query for the status of any game server in Node.JS
 | 4 | [geolite2](./g/geolite2) | Maxmind's GeoLite2 Free Databases

@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the splitter's SplitterPane object.
   */
+@JSGlobal("ASPxClientSplitterPane")
 @js.native
-trait ASPxClientSplitterPane extends js.Object {
+class ASPxClientSplitterPane () extends js.Object {
   /**
     * Gets the index of the current pane within the pane collection to which it belongs.
-    * Value: An integer value representing the zero-based index of the current pane within the SplitterPaneCollection collection.
     */
   var index: Double = js.native
   /**
     * Gets the name that uniquely identifies the current splitter pane.
-    * Value: A string value that represents the value assigned to the pane's Name property.
     */
   var name: String = js.native
   /**
-    * Collapses the current pane and occupies its space by maximizing the specified pane.
+    * Collapses the current pane and occupies its space by maximizing the specified pane. true if the current pane has been collapsed successfully; otherwise, false.
     * @param maximizedPane A ASPxClientSplitterPane object specifying the pane to be maximized to occupy the freed space.
     */
   def Collapse(maximizedPane: ASPxClientSplitterPane): Boolean = js.native
@@ -45,9 +44,9 @@ trait ASPxClientSplitterPane extends js.Object {
     */
   def GetClientWidth(): Double = js.native
   /**
-    * Returns an iframe object containing a web page specified via the pane's SetContentUrl client method).
+    * Returns an iframe object containing a web page specified via the pane's SplitterPane.ContentUrl property (or the ASPxClientSplitterPane.SetContentUrl client method).
     */
-  def GetContentIFrame(): js.Object = js.native
+  def GetContentIFrame(): js.Any = js.native
   /**
     * Gets the URL of a web page displayed as a pane's content.
     */
@@ -55,18 +54,18 @@ trait ASPxClientSplitterPane extends js.Object {
   /**
     * Returns an HTML element representing a splitter pane object.
     */
-  def GetElement(): js.Object = js.native
+  def GetElement(): js.Any = js.native
   /**
     * Returns the next sibling pane of the current pane.
     */
   def GetNextPane(): ASPxClientSplitterPane = js.native
   /**
-    * Returns the current pane's immediate child pane specified by its index.
+    * Returns the current pane's immediate child pane specified by its index. An ASPxClientSplitterPane object representing the pane's immediate child pane located at the specified index within the pane's SplitterPane.Panes collection.
     * @param index An integer value specifying the zero-based index of the child pane to be retrieved.
     */
   def GetPane(index: Double): ASPxClientSplitterPane = js.native
   /**
-    * Returns the current pane's child pane specified by its name.
+    * Returns the current pane's child pane specified by its name. An ASPxClientSplitterPane object that represents the current pane's child pane with the specified name.
     * @param name A string value specifying the name of the pane.
     */
   def GetPaneByName(name: String): ASPxClientSplitterPane = js.native
@@ -119,7 +118,7 @@ trait ASPxClientSplitterPane extends js.Object {
     */
   def IsVertical(): Boolean = js.native
   /**
-    * Forces the client PaneResized event to be generated.
+    * Forces the client ASPxClientSplitter.PaneResized event to be generated.
     */
   def RaiseResizedEvent(): Unit = js.native
   /**
@@ -132,15 +131,11 @@ trait ASPxClientSplitterPane extends js.Object {
     */
   def SetAllowResize(allowResize: Boolean): Unit = js.native
   /**
-    * Sets the URL to point to a web page that should be loaded into, and displayed within the current pane.
-    * @param url A string value specifying the URL to a web page displayed within the pane.
-    */
-  def SetContentUrl(url: String): Unit = js.native
-  /**
     * Sets the URL to point to a web page that should be loaded into, and displayed within the current pane, but should not be cached by a client browser.
     * @param url A string value specifying the URL to a web page displayed within the pane.
     * @param preventBrowserCaching true to prevent the browser to cache the loaded content; false to allow browser caching.
     */
+  def SetContentUrl(url: String): Unit = js.native
   def SetContentUrl(url: String, preventBrowserCaching: Boolean): Unit = js.native
   /**
     * Specifies the distance between the left edge of the pane content and the leftmost portion of the content currently visible in the pane.
@@ -152,10 +147,6 @@ trait ASPxClientSplitterPane extends js.Object {
     * @param value An integer value that is the distance (in pixels).
     */
   def SetScrollTop(value: Double): Unit = js.native
-  /**
-    * Specifies the splitter pane's size, in pixels or percents.
-    * @param size A string value that specifies the splitter pane's size, in pixels or percents.
-    */
   def SetSize(size: String): Unit = js.native
   /**
     * Specifies the splitter pane's size in pixels.

@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SelectedFileOpened events.
+  * Provides data for the ASPxClientFileManager.SelectedFileChanged and ASPxClientFileManager.SelectedFileOpened events.
   */
-trait ASPxClientFileManagerFileEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerFileEventArgs")
+@js.native
+class ASPxClientFileManagerFileEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerFileEventArgs class.
+    * @param file An ASPxClientFileManagerFile object representing the file related to the event.
+    */
+  def this(file: ASPxClientFileManagerFile) = this()
   /**
     * Gets a file related to the event.
-    * Value: An ASPxClientFileManagerFile object that represents a file currently being processed.
     */
-  var file: ASPxClientFileManagerFile
-}
-
-object ASPxClientFileManagerFileEventArgs {
-  @scala.inline
-  def apply(file: ASPxClientFileManagerFile): ASPxClientFileManagerFileEventArgs = {
-    val __obj = js.Dynamic.literal(file = file)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerFileEventArgs]
-  }
+  var file: ASPxClientFileManagerFile = js.native
 }
 

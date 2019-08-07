@@ -45,6 +45,9 @@ object intlDashRelativeformatStrings {
        with SUPPORTED_FIELD
   
   @js.native
+  sealed trait localeMatcher extends js.Object
+  
+  @js.native
   sealed trait minute
     extends DATA_FIELD
        with SUPPORTED_FIELD
@@ -147,6 +150,8 @@ object intlDashRelativeformatStrings {
   def `hour-narrow`: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
   @scala.inline
   def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
+  @scala.inline
+  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline

@@ -7,7 +7,7 @@ import typings.atTensorflowTfjsDashCore.Anon_GradsValueArray
 import typings.atTensorflowTfjsDashCore.Anon_Mean
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCHW
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`1DOT2DOT6`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`1DOT2DOT7`
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.bool
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.complex64
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.euclidean
@@ -303,7 +303,7 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_core: `1DOT2DOT6` = js.native
+  val version_core: `1DOT2DOT7` = js.native
   val whereAsync: js.Function1[
     /* condition */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     js.Promise[Tensor2D]

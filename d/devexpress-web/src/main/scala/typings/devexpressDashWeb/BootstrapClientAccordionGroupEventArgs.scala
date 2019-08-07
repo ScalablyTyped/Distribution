@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events related to manipulations on groups.
   */
-trait BootstrapClientAccordionGroupEventArgs extends ASPxClientEventArgs {
+@JSGlobal("BootstrapClientAccordionGroupEventArgs")
+@js.native
+class BootstrapClientAccordionGroupEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the BootstrapClientAccordionGroupEventArgs type with the specified value.
+    * @param group An BootstrapAccordionGroup object representing the group related to the event.
+    */
+  def this(group: BootstrapClientAccordionGroup) = this()
   /**
     * Gets the group object related to the event.
-    * Value: A BootstrapClientAccordionGroup object, manipulations on which forced the event to be raised.
     */
-  var group: BootstrapClientAccordionGroup
-}
-
-object BootstrapClientAccordionGroupEventArgs {
-  @scala.inline
-  def apply(group: BootstrapClientAccordionGroup): BootstrapClientAccordionGroupEventArgs = {
-    val __obj = js.Dynamic.literal(group = group)
-  
-    __obj.asInstanceOf[BootstrapClientAccordionGroupEventArgs]
-  }
+  var group: BootstrapClientAccordionGroup = js.native
 }
 

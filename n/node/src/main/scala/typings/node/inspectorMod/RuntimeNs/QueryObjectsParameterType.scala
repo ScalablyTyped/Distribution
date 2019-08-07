@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait QueryObjectsParameterType extends js.Object {
   /**
-    * Symbolic group name that can be used to release the results.
-    */
-  var objectGroup: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Identifier of the prototype to return objects for.
     */
   var prototypeObjectId: RemoteObjectId
@@ -17,9 +13,9 @@ trait QueryObjectsParameterType extends js.Object {
 
 object QueryObjectsParameterType {
   @scala.inline
-  def apply(prototypeObjectId: RemoteObjectId, objectGroup: java.lang.String = null): QueryObjectsParameterType = {
+  def apply(prototypeObjectId: RemoteObjectId): QueryObjectsParameterType = {
     val __obj = js.Dynamic.literal(prototypeObjectId = prototypeObjectId)
-    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+  
     __obj.asInstanceOf[QueryObjectsParameterType]
   }
 }

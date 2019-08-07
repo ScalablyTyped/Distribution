@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the CrosshairLineElement class.
   */
-trait ASPxClientCrosshairLineElement extends js.Object
+@JSGlobal("ASPxClientCrosshairLineElement")
+@js.native
+class ASPxClientCrosshairLineElement () extends js.Object
 

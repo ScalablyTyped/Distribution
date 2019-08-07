@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/TileQueue", JSImport.Default)
 @js.native
 class default protected () extends TileQueue {
-  def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[Unit]) = this()
+  def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
 }
 

@@ -29,6 +29,7 @@ trait ImageArcGISRest
   @JSName("once")
   def once_imageloadstart(`type`: imageloadstart, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): EventsKey = js.native
   def setImageLoadFunction(imageLoadFunction: LoadFunction): Unit = js.native
+  def setUrl(): Unit = js.native
   def setUrl(url: String): Unit = js.native
   @JSName("un")
   def un_imageloadend(`type`: imageloadend, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): Unit = js.native

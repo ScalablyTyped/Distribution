@@ -8,87 +8,57 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the DiagramCoordinates class.
   */
-trait ASPxClientDiagramCoordinates extends js.Object {
+@JSGlobal("ASPxClientDiagramCoordinates")
+@js.native
+class ASPxClientDiagramCoordinates () extends js.Object {
   /**
     * Gets the type of the argument scale.
-    * Value: A string object which contains the current scale type.
     */
-  var argumentScaleType: String
+  var argumentScaleType: String = js.native
   /**
     * Gets the X-axis of the diagram point.
-    * Value: An ASPxClientAxisBase descendant, representing the axis of arguments (X-axis).
     */
-  var axisX: ASPxClientAxisBase
+  var axisX: ASPxClientAxisBase = js.native
   /**
     * Gets the Y-axis of the diagram point.
-    * Value: An ASPxClientAxisBase descendant, representing the axis of values (Y-axis).
     */
-  var axisY: ASPxClientAxisBase
+  var axisY: ASPxClientAxisBase = js.native
   /**
     * Gets the date-time representation of the data point's argument.
-    * Value: A date object, representing the point's argument.
     */
-  var dateTimeArgument: Date
+  var dateTimeArgument: Date = js.native
   /**
     * Gets the date-time representation of the data point's value.
-    * Value: A date object, representing the point's value.
     */
-  var dateTimeValue: Date
+  var dateTimeValue: Date = js.native
   /**
     * Gets the numerical representation of the data point's argument.
-    * Value: A Double value, representing the data point's argument.
     */
-  var numericalArgument: Double
+  var numericalArgument: Double = js.native
   /**
     * Gets the numerical representation of the data point's value.
-    * Value: A Double value, representing the data point's value.
     */
-  var numericalValue: Double
+  var numericalValue: Double = js.native
   /**
     * Gets the pane of the diagram point.
-    * Value: An ASPxClientXYDiagramPane descendant, representing the pane.
     */
-  var pane: ASPxClientXYDiagramPane
+  var pane: ASPxClientXYDiagramPane = js.native
   /**
     * Gets the argument of the data point as a text string.
-    * Value: A string object, representing a data point's argument.
     */
-  var qualitativeArgument: String
+  var qualitativeArgument: String = js.native
   /**
     * Gets the type of the value scale.
-    * Value: A string object which contains the current scale type.
     */
-  var valueScaleType: String
+  var valueScaleType: String = js.native
   /**
-    * Gets the value of the client-side axis instance.
+    * Gets the value of the client-side axis instance. An ASPxClientAxisValue object that contains the information about the axis scale type and value.
     * @param axis An ASPxClientAxisBase class descendant, representing the axis that contains the requested value.
     */
-  def GetAxisValue(axis: ASPxClientAxisBase): ASPxClientAxisValue
+  def GetAxisValue(axis: ASPxClientAxisBase): ASPxClientAxisValue = js.native
   /**
     * Checks whether the current object represents a point outside the diagram area.
     */
-  def IsEmpty(): Boolean
-}
-
-object ASPxClientDiagramCoordinates {
-  @scala.inline
-  def apply(
-    GetAxisValue: ASPxClientAxisBase => ASPxClientAxisValue,
-    IsEmpty: () => Boolean,
-    argumentScaleType: String,
-    axisX: ASPxClientAxisBase,
-    axisY: ASPxClientAxisBase,
-    dateTimeArgument: Date,
-    dateTimeValue: Date,
-    numericalArgument: Double,
-    numericalValue: Double,
-    pane: ASPxClientXYDiagramPane,
-    qualitativeArgument: String,
-    valueScaleType: String
-  ): ASPxClientDiagramCoordinates = {
-    val __obj = js.Dynamic.literal(GetAxisValue = js.Any.fromFunction1(GetAxisValue), IsEmpty = js.Any.fromFunction0(IsEmpty), argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, dateTimeArgument = dateTimeArgument, dateTimeValue = dateTimeValue, numericalArgument = numericalArgument, numericalValue = numericalValue, pane = pane, qualitativeArgument = qualitativeArgument, valueScaleType = valueScaleType)
-  
-    __obj.asInstanceOf[ASPxClientDiagramCoordinates]
-  }
+  def IsEmpty(): Boolean = js.native
 }
 

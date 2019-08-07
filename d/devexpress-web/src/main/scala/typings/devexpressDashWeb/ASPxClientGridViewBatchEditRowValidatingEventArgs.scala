@@ -5,27 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRowValidating event.
+  * Provides data for the ASPxClientGridView.BatchEditRowValidating event.
   */
-trait ASPxClientGridViewBatchEditRowValidatingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditRowValidatingEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditRowValidatingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditRowValidatingEventArgs class.
+    * @param visibleIndex An integer value that specifies the row's visible index.
+    * @param validationInfo An object that provides the row's validation info.
+    * @param key An object that is the row's key.
+    */
+  def this(visibleIndex: Double, validationInfo: js.Any, key: js.Any) = this()
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Provides validation information of a row currently being validated.
-    * Value: An object that is a hashtable containing validation information.
     */
-  var validationInfo: js.Object
+  var validationInfo: js.Any = js.native
   /**
     * Gets the processed row's visible index.
-    * Value: An integer value that specifies the processed row's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewBatchEditRowValidatingEventArgs {
-  @scala.inline
-  def apply(validationInfo: js.Object, visibleIndex: Double): ASPxClientGridViewBatchEditRowValidatingEventArgs = {
-    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowValidatingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

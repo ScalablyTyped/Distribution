@@ -7,25 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * A command to insert content created on the server to the client model.
   */
+@JSGlobal("InsertContentFromServerCommand")
 @js.native
-trait InsertContentFromServerCommand extends CommandBase {
+class InsertContentFromServerCommand () extends CommandBase {
   /**
-    * Executes the InsertContentFromServerCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param requestId An integer value identifying the request to the server.
-    */
-  def execute(requestId: String): Boolean = js.native
-  /**
-    * Executes the InsertContentFromServerCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param requestId An integer value identifying the request to the server.
-    * @param position An integer value specifying the position where to insert content to the active sub-document.
-    */
-  def execute(requestId: String, position: Double): Boolean = js.native
-  /**
-    * Executes the InsertContentFromServerCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the InsertContentFromServerCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param requestId An integer value identifying the request to the server.
     * @param position An integer value specifying position where to insert content to the active sub-document.
     * @param subDocumentId An integer value identifying the target sub-document.
     */
+  def execute(requestId: String): Boolean = js.native
+  def execute(requestId: String, position: Double): Boolean = js.native
   def execute(requestId: String, position: Double, subDocumentId: Double): Boolean = js.native
+  /**
+    * Gets information about the command's state.
+    */
+  def getState(): SimpleCommandState = js.native
 }
 

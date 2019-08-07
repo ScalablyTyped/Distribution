@@ -5,22 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplayGroup extends js.Object {
-  def addDeclutter(group: Boolean): js.Array[_]
-  def getReplay(zIndex: Double, replayType: ReplayType): typings.ol.renderVectorContextMod.default
-  def isEmpty(): Boolean
-}
-
-object ReplayGroup {
-  @scala.inline
-  def apply(
-    addDeclutter: Boolean => js.Array[_],
-    getReplay: (Double, ReplayType) => typings.ol.renderVectorContextMod.default,
-    isEmpty: () => Boolean
-  ): ReplayGroup = {
-    val __obj = js.Dynamic.literal(addDeclutter = js.Any.fromFunction1(addDeclutter), getReplay = js.Any.fromFunction2(getReplay), isEmpty = js.Any.fromFunction0(isEmpty))
-  
-    __obj.asInstanceOf[ReplayGroup]
-  }
+  def addDeclutter(group: Boolean): js.Array[_] = js.native
+  def getReplay(zIndex: js.UndefOr[scala.Nothing], replayType: ReplayType): typings.ol.renderVectorContextMod.default = js.native
+  def getReplay(zIndex: Double, replayType: ReplayType): typings.ol.renderVectorContextMod.default = js.native
+  def isEmpty(): Boolean = js.native
 }
 

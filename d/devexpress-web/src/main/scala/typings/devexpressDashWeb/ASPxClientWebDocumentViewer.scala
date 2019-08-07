@@ -1,6 +1,7 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxWebDocumentViewer class.
   */
+@JSGlobal("ASPxClientWebDocumentViewer")
 @js.native
-trait ASPxClientWebDocumentViewer extends ASPxClientControl {
+class ASPxClientWebDocumentViewer () extends ASPxClientControl {
   /**
     * Occurs before the Web Document Viewer UI is initialized.
     */
@@ -20,6 +22,9 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
   var CustomizeElements: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeElementsEventHandler[ASPxClientWebDocumentViewer]
   ] = js.native
+  /**
+    * Allows you to customize the Web Document Viewer's available export formats and corresponding export options.
+    */
   var CustomizeExportOptions: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[ASPxClientWebDocumentViewer]
   ] = js.native
@@ -60,6 +65,10 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     ASPxClientWebDocumentViewerEditingFieldChangedEventHandler[ASPxClientWebDocumentViewer]
   ] = js.native
   /**
+    * Occurs on the client each time a server-side error raises.
+    */
+  var OnServerError: ASPxClientEvent[ASPxClientWebDocumentViewerErrorEventHandler[ASPxClientWebDocumentViewer]] = js.native
+  /**
     * Occurs after report parameter values are reset to their default values.
     */
   var ParametersReset: ASPxClientEvent[
@@ -80,24 +89,17 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     */
   def Close(): Unit = js.native
   /**
-    * Enables navigation between drill-through reports on the client-side.
+    * Enables navigation between drill-through reports on the client-side. A Deferred Promise object.
     * @param customData Provides access to custom client data associated with a currently previewed report.
     */
-  def DrillThrough(customData: String): js.Any = js.native
-  /**
-    * Exports the document to a PDF file.
-    */
-  def ExportTo(): Unit = js.native
-  /**
-    * Exports the document to a specified file format.
-    * @param format A String value, specifying the export format. The following formats are currently supported: 'csv', 'html', 'image', 'mht', 'pdf', 'rtf', 'docx', 'txt', 'xls', and 'xlsx'.
-    */
-  def ExportTo(format: String): Unit = js.native
+  def DrillThrough(customData: String): JQueryPromise[_] = js.native
   /**
     * Exports the document to a specified file format.
     * @param format A String value that specifies the export format. The following formats are currently supported: 'csv', 'html', 'image', 'mht', 'pdf', 'rtf', 'docx', 'txt', 'xls', and 'xlsx'.
     * @param inlineResult true, to try opening the result file in a new browser tab without a download; otherwise, false.
     */
+  def ExportTo(): Unit = js.native
+  def ExportTo(format: String): Unit = js.native
   def ExportTo(format: String, inlineResult: Boolean): Unit = js.native
   /**
     * Returns the current page's zero-based index.
@@ -121,33 +123,23 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     */
   def GoToPage(pageIndex: Double): Unit = js.native
   /**
-    * Opens the specified report on the Web Document Viewer's client side.
+    * Opens the specified report on the Web Document Viewer's client side. A Deferred Promise object.
     * @param url A string that specifies the URL of a report to be opened.
     */
-  def OpenReport(url: String): js.Any = js.native
+  def OpenReport(url: String): JQueryPromise[_] = js.native
   /**
-    * Performs a custom operation with a currently opened document on the client side.
-    */
-  def PerformCustomDocumentOperation(): js.Any = js.native
-  /**
-    * Performs a custom operation with a currently opened document on the client-side.
-    * @param customData Provides access to custom client data associated with a target document operation.
-    */
-  def PerformCustomDocumentOperation(customData: String): js.Any = js.native
-  /**
-    * Performs a custom operation with a currently opened document on the client-side.
+    * Performs a custom operation with a currently opened document on the client-side. A Deferred Promise object.
     * @param customData Provides access to custom client data associated with a target document operation.
     * @param hideMessageFromUser true, to hide a message with the operation result from a user; otherwise, false.
     */
-  def PerformCustomDocumentOperation(customData: String, hideMessageFromUser: Boolean): js.Any = js.native
-  /**
-    * Prints the current document.
-    */
-  def Print(): Unit = js.native
+  def PerformCustomDocumentOperation(): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
+  def PerformCustomDocumentOperation(customData: String): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
+  def PerformCustomDocumentOperation(customData: String, hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   /**
     * Prints the document's page with the specified index.
     * @param pageIndex An index of the page to be printed.
     */
+  def Print(): Unit = js.native
   def Print(pageIndex: Double): Unit = js.native
   /**
     * Resets the report parameter values to the default values.
@@ -162,5 +154,16 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * @param localization A dictionary containing the property names, along with their localized equivalents.
     */
   def UpdateLocalization(localization: StringDictionary[String]): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientWebDocumentViewer")
+@js.native
+object ASPxClientWebDocumentViewer extends js.Object {
+  /**
+    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientWebDocumentViewer object.
+    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
+    */
+  def Cast(obj: js.Any): ASPxClientWebDocumentViewer = js.native
 }
 

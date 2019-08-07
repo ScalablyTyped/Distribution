@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "solid-auth-client"
-version := "2.3-dt-20190621Z-0d2584"
+version := "2.3-dt-20190621Z-8d5060"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

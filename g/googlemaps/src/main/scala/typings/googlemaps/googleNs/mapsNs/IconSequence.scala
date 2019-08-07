@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait IconSequence extends js.Object {
   var fixedRotation: js.UndefOr[Boolean] = js.undefined
+  // tslint:disable-next-line:no-unnecessary-qualifier
   var icon: js.UndefOr[Symbol] = js.undefined
   var offset: js.UndefOr[String] = js.undefined
   var repeat: js.UndefOr[String] = js.undefined

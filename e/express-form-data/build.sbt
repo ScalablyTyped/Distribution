@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "express-form-data"
-version := "2.0-dt-20190802Z-ab2085"
+version := "2.0-dt-20190802Z-92b817"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-7c6e52",
-  "org.scalablytyped" %%% "multiparty" % "0.0-unknown-dt-20190322Z-b0a5ee",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-515b96",
+  "org.scalablytyped" %%% "multiparty" % "0.0-unknown-dt-20190322Z-2c0323",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

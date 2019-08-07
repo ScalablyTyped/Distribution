@@ -5,32 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the client-side Shortcut event.
+  * Provides data for the client-side ASPxClientScheduler.Shortcut event.
   */
-trait ShortcutEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ShortcutEventArgs")
+@js.native
+class ShortcutEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initialize a new instance of the class.
+    * @param commandName Specifies the command name.
+    * @param htmlEvent Specifies the html event.
+    */
+  def this(commandName: String, htmlEvent: js.Any) = this()
   /**
     * Gets the name of a command associated with the keyboard shortcut.
-    * Value: A string containing a command name.
     */
-  var commandName: String
+  var commandName: String = js.native
   /**
     * Gets or sets whether an event is handled, and that default actions are not required.
-    * Value: true, if no default processing is required; otherwise, false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets an object containing information about a keyboard shortcut event.
-    * Value: An object containing event data.
     */
-  var htmlEvent: js.Object
-}
-
-object ShortcutEventArgs {
-  @scala.inline
-  def apply(commandName: String, handled: Boolean, htmlEvent: js.Object): ShortcutEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName, handled = handled, htmlEvent = htmlEvent)
-  
-    __obj.asInstanceOf[ShortcutEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

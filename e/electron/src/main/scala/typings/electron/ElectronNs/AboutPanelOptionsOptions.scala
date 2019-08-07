@@ -22,7 +22,8 @@ trait AboutPanelOptionsOptions extends js.Object {
     */
   var credits: js.UndefOr[String] = js.undefined
   /**
-    * Path to the app's icon.
+    * Path to the app's icon. Will be shown as 64x64 pixels while retaining aspect
+    * ratio.
     */
   var iconPath: js.UndefOr[String] = js.undefined
   /**

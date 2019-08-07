@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CompileScriptParameterType extends js.Object {
   /**
-    * Specifies in which execution context to perform script run. If the parameter is omitted the
-    * evaluation will be performed in the context of the inspected page.
+    * Specifies in which execution context to perform script run. If the parameter is omitted the evaluation will be performed in the context of the inspected page.
     */
   var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   /**

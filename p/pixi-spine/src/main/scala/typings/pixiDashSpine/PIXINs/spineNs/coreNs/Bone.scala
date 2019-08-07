@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Bone protected () extends Updatable {
   def this(data: BoneData, skeleton: Skeleton, parent: Bone) = this()
+  var active: Boolean = js.native
   var appliedValid: Boolean = js.native
   var arotation: Double = js.native
   var ascaleX: Double = js.native
@@ -35,6 +36,8 @@ class Bone protected () extends Updatable {
   def getWorldRotationY(): Double = js.native
   def getWorldScaleX(): Double = js.native
   def getWorldScaleY(): Double = js.native
+  /* CompleteClass */
+  override def isActive(): Boolean = js.native
   def localToWorld(local: Vector2): Vector2 = js.native
   def localToWorldRotation(localRotation: Double): Double = js.native
   def rotateWorld(degrees: Double): Unit = js.native

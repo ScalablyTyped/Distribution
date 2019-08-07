@@ -13,8 +13,7 @@ trait StackTrace extends js.Object {
     */
   var callFrames: js.Array[CallFrame]
   /**
-    * String label of this stack trace. For async traces this may be a name of the function that
-    * initiated the async call.
+    * String label of this stack trace. For async traces this may be a name of the function that initiated the async call.
     */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**

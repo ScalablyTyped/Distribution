@@ -7,25 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for client events related to server-side errors that occured during callback processing.
   */
-trait ASPxClientCallbackErrorEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientCallbackErrorEventArgs")
+@js.native
+class ASPxClientCallbackErrorEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new ASPxClientCallbackErrorEventArgs object with the specified settings.
+    * @param message A string value that specifies the error message.
+    */
+  def this(message: String) = this()
   /**
     * Gets or sets whether the event is handled and the default error handling actions are not required.
-    * Value: true if the error is handled and no default processing is required; otherwise false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets the error message that describes the server error that occurred.
-    * Value: A string value that represents the error message.
     */
-  var message: String
-}
-
-object ASPxClientCallbackErrorEventArgs {
-  @scala.inline
-  def apply(handled: Boolean, message: String): ASPxClientCallbackErrorEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, message = message)
-  
-    __obj.asInstanceOf[ASPxClientCallbackErrorEventArgs]
-  }
+  var message: String = js.native
 }
 

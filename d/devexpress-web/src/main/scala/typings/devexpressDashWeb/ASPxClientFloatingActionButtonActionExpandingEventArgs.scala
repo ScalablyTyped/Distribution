@@ -4,16 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientFloatingActionButtonActionExpandingEventArgs extends ASPxClientEventArgs {
-  var contextName: String
-}
-
-object ASPxClientFloatingActionButtonActionExpandingEventArgs {
-  @scala.inline
-  def apply(contextName: String): ASPxClientFloatingActionButtonActionExpandingEventArgs = {
-    val __obj = js.Dynamic.literal(contextName = contextName)
-  
-    __obj.asInstanceOf[ASPxClientFloatingActionButtonActionExpandingEventArgs]
-  }
+/**
+  * Provides data for the ActionExpanding event.
+  */
+@JSGlobal("ASPxClientFloatingActionButtonActionExpandingEventArgs")
+@js.native
+class ASPxClientFloatingActionButtonActionExpandingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientFloatingActionButtonActionExpandingEventArgs type with the specified settings.
+    * @param contextName Specifies the FAB action's context name.
+    */
+  def this(contextName: String) = this()
+  /**
+    * Specifies the FAB action's context name.
+    */
+  var contextName: String = js.native
 }
 

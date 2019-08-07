@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libDefaultSettingsMod
 
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -33,9 +34,7 @@ trait Settings extends js.Object {
   /**
     * theme for nav menu
     */
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var title: String
 }
 
@@ -50,7 +49,7 @@ object Settings {
     layout: sidemenu | topmenu,
     menu: Anon_Locale,
     title: String,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null
+    navTheme: MenuTheme = null
   ): Settings = {
     val __obj = js.Dynamic.literal(autoHideHeader = autoHideHeader, contentWidth = contentWidth, fixSiderbar = fixSiderbar, fixedHeader = fixedHeader, iconfontUrl = iconfontUrl, layout = layout.asInstanceOf[js.Any], menu = menu, title = title)
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)

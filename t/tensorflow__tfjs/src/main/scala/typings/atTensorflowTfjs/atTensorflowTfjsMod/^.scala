@@ -3,7 +3,7 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCHW
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NHWC
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT6`
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT7`
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.bool
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.complex64
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.euclidean
@@ -311,9 +311,9 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_converter: `1DOT2DOT6` = js.native
-  val version_core: `1DOT2DOT6` = js.native
-  val version_layers: `1DOT2DOT6` = js.native
+  val version_converter: `1DOT2DOT7` = js.native
+  val version_core: `1DOT2DOT7` = js.native
+  val version_layers: `1DOT2DOT7` = js.native
   val whereAsync: js.Function1[
     /* condition */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     js.Promise[Tensor2D]

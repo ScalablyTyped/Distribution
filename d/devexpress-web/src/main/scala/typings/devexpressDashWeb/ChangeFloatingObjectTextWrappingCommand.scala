@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a floating object's text wrapping settings.
   */
-trait ChangeFloatingObjectTextWrappingCommand extends CommandBase {
+@JSGlobal("ChangeFloatingObjectTextWrappingCommand")
+@js.native
+class ChangeFloatingObjectTextWrappingCommand () extends js.Object {
   /**
-    * Executes the ChangeFloatingObjectTextWrappingCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeFloatingObjectTextWrappingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A FloatingObjectTextWrappingSettings object specifying text wrapping settings.
     */
-  def execute(settings: FloatingObjectTextWrappingSettings): Boolean
+  def execute(settings: FloatingObjectTextWrappingSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeFloatingObjectTextWrappingCommand {
-  @scala.inline
-  def apply(execute: FloatingObjectTextWrappingSettings => Boolean, getState: () => js.Any): ChangeFloatingObjectTextWrappingCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeFloatingObjectTextWrappingCommand]
-  }
+  def getState(): CommandState[FloatingObjectTextWrappingSettings] = js.native
 }
 

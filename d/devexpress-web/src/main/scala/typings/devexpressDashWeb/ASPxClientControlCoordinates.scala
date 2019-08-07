@@ -7,35 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ControlCoordinates class.
   */
-trait ASPxClientControlCoordinates extends js.Object {
+@JSGlobal("ASPxClientControlCoordinates")
+@js.native
+class ASPxClientControlCoordinates () extends js.Object {
   /**
     * Gets the point's pane.
-    * Value: An ASPxClientXYDiagramPane object.
     */
-  var pane: ASPxClientXYDiagramPane
+  var pane: ASPxClientXYDiagramPane = js.native
   /**
     * Gets the point's visibility state.
-    * Value: "Visible", "Hidden", or "Undefined".
     */
-  var visibility: String
+  var visibility: String = js.native
   /**
     * Gets the point's X-coordinate, in pixels.
-    * Value: An integer value, specifying the X-coordinate (in pixels).
     */
-  var x: Double
+  var x: Double = js.native
   /**
     * Gets the point's Y-coordinate, in pixels.
-    * Value: An integer value, specifying the Y-coordinate (in pixels).
     */
-  var y: Double
-}
-
-object ASPxClientControlCoordinates {
-  @scala.inline
-  def apply(pane: ASPxClientXYDiagramPane, visibility: String, x: Double, y: Double): ASPxClientControlCoordinates = {
-    val __obj = js.Dynamic.literal(pane = pane, visibility = visibility, x = x, y = y)
-  
-    __obj.asInstanceOf[ASPxClientControlCoordinates]
-  }
+  var y: Double = js.native
 }
 

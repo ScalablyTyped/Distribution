@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to add a non-breaking space in place of a selected range.
   */
-trait InsertNonBreakingSpaceCommand extends CommandWithSimpleStateBase {
+@JSGlobal("InsertNonBreakingSpaceCommand")
+@js.native
+class InsertNonBreakingSpaceCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the InsertNonBreakingSpaceCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the InsertNonBreakingSpaceCommand command.
     */
-  def execute(): Boolean
-}
-
-object InsertNonBreakingSpaceCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertNonBreakingSpaceCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[InsertNonBreakingSpaceCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

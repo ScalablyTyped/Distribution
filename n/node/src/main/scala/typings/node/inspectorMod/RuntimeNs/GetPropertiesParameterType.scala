@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetPropertiesParameterType extends js.Object {
   /**
-    * If true, returns accessor properties (with getter/setter) only; internal properties are not
-    * returned either.
+    * If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.
     * @experimental
     */
   var accessorPropertiesOnly: js.UndefOr[Boolean] = js.undefined
@@ -21,8 +20,7 @@ trait GetPropertiesParameterType extends js.Object {
     */
   var objectId: RemoteObjectId
   /**
-    * If true, returns properties belonging only to the element itself, not to its prototype
-    * chain.
+    * If true, returns properties belonging only to the element itself, not to its prototype chain.
     */
   var ownProperties: js.UndefOr[Boolean] = js.undefined
 }

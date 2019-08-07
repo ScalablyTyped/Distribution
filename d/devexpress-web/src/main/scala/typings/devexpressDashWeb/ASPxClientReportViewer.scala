@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The client-side equivalent of the ReportViewer.
+  * The client-side equivalent of the ASPxClientDocumentViewer control's ReportViewer.
   */
+@JSGlobal("ASPxClientReportViewer")
 @js.native
-trait ASPxClientReportViewer extends ASPxClientControl {
+class ASPxClientReportViewer () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -36,13 +37,10 @@ trait ASPxClientReportViewer extends ASPxClientControl {
     */
   def IsSearchAllowed(): Boolean = js.native
   /**
-    * Prints a report shown in the ReportViewer.
-    */
-  def Print(): Unit = js.native
-  /**
     * Prints a report page with the specified page index.
     * @param pageIndex An integer value which specifies an index of the page to be printed.
     */
+  def Print(): Unit = js.native
   def Print(pageIndex: Double): Unit = js.native
   /**
     * Initiates a round trip to the server so that the current page will be reloaded.
@@ -66,6 +64,17 @@ trait ASPxClientReportViewer extends ASPxClientControl {
     * Submits the values of the specified parameters.
     * @param parameters A dictionary containing the parameter names, along with their Object values.
     */
-  def SubmitParameters(parameters: StringDictionary[js.Object]): Unit = js.native
+  def SubmitParameters(parameters: StringDictionary[js.Any]): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientReportViewer")
+@js.native
+object ASPxClientReportViewer extends js.Object {
+  /**
+    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An object of the ASPxClientReportViewer type. Represents the converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
+    */
+  def Cast(obj: js.Any): ASPxClientReportViewer = js.native
 }
 

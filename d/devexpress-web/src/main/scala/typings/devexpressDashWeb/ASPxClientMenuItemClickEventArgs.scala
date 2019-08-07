@@ -7,30 +7,28 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern clicking on the control's items.
   */
-trait ASPxClientMenuItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientMenuItemClickEventArgs")
+@js.native
+class ASPxClientMenuItemClickEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientMenuItemClickEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param item An ASPxClientMenuItem object that represents an item related to the event.
+    * @param htmlElement An HTML object that contains the processed item.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(processOnServer: Boolean, item: ASPxClientMenuItem, htmlElement: js.Any, htmlEvent: js.Any) = this()
   /**
     * Gets the HTML object that contains the processed item.
-    * Value: An object representing a container for the item related to the event.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
+  var htmlEvent: js.Any = js.native
   /**
     * Gets the menu item object related to the event.
-    * Value: An ASPxClientMenuItem object, manipulations on which forced the event to be raised.
     */
-  var item: ASPxClientMenuItem
-}
-
-object ASPxClientMenuItemClickEventArgs {
-  @scala.inline
-  def apply(htmlElement: js.Object, htmlEvent: js.Object, item: ASPxClientMenuItem, processOnServer: Boolean): ASPxClientMenuItemClickEventArgs = {
-    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientMenuItemClickEventArgs]
-  }
+  var item: ASPxClientMenuItem = js.native
 }
 

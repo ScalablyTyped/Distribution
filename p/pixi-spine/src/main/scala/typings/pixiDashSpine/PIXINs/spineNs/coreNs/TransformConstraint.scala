@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("PIXI.spine.core.TransformConstraint")
 @js.native
-class TransformConstraint protected () extends Constraint {
+class TransformConstraint protected () extends Updatable {
   def this(data: TransformConstraintData, skeleton: Skeleton) = this()
+  var active: Boolean = js.native
   var bones: js.Array[Bone] = js.native
   var data: TransformConstraintData = js.native
   var rotateMix: Double = js.native
@@ -23,7 +24,7 @@ class TransformConstraint protected () extends Constraint {
   def applyRelativeLocal(): Unit = js.native
   def applyRelativeWorld(): Unit = js.native
   /* CompleteClass */
-  override def getOrder(): Double = js.native
+  override def isActive(): Boolean = js.native
   /* CompleteClass */
   override def update(): Unit = js.native
 }

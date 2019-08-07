@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the client events related to node processing, and allowing the event's processing to be passed to the server side.
   */
-trait BootstrapClientTreeViewNodeProcessingModeEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("BootstrapClientTreeViewNodeProcessingModeEventArgs")
+@js.native
+class BootstrapClientTreeViewNodeProcessingModeEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the BootstrapClientTreeViewNodeProcessingModeEventArgs class with the specified setting.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param node An BootstrapClientTreeViewNode object representing the node related to the event.
+    */
+  def this(processOnServer: Boolean, node: BootstrapClientTreeViewNode) = this()
   /**
     * Gets a node object related to the event.
-    * Value: A BootstrapClientTreeViewNode object, manipulations on which forced the event to be raised.
     */
-  var node: BootstrapClientTreeViewNode
-}
-
-object BootstrapClientTreeViewNodeProcessingModeEventArgs {
-  @scala.inline
-  def apply(node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal(node = node, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[BootstrapClientTreeViewNodeProcessingModeEventArgs]
-  }
+  var node: BootstrapClientTreeViewNode = js.native
 }
 

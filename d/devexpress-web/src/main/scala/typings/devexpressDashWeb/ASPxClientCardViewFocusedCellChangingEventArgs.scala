@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the FocusedCellChanging event.
+  * Provides data for the ASPxClientCardView.FocusedCellChanging event.
   */
-trait ASPxClientCardViewFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewFocusedCellChangingEventArgs")
+@js.native
+class ASPxClientCardViewFocusedCellChangingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewFocusedCellChangingEventArgs class with specified settings.
+    * @param cellInfo A ASPxClientCardViewCellInfo object providing information about the focused cell.
+    */
+  def this(cellInfo: ASPxClientCardViewCellInfo) = this()
   /**
     * Provides information of a card's cell currently being focused.
-    * Value: A ASPxClientCardViewCellInfo object that provides information about the card's cell.
     */
-  var cellInfo: ASPxClientCardViewCellInfo
-}
-
-object ASPxClientCardViewFocusedCellChangingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientCardViewCellInfo): ASPxClientCardViewFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo)
-  
-    __obj.asInstanceOf[ASPxClientCardViewFocusedCellChangingEventArgs]
-  }
+  var cellInfo: ASPxClientCardViewCellInfo = js.native
 }
 

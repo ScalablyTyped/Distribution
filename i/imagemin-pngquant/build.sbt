@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "imagemin-pngquant"
-version := "7.0-dt-20190429Z-5e0831"
+version := "7.0-dt-20190429Z-e5cf6e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-89b6cc",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-8f4369",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

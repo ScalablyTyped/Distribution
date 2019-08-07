@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CurrentFolderChanged event.
+  * Provides data for the ASPxClientFileManager.CurrentFolderChanged event.
   */
-trait ASPxClientFileManagerCurrentFolderChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerCurrentFolderChangedEventArgs")
+@js.native
+class ASPxClientFileManagerCurrentFolderChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerCurrentFolderChangedEventArgs class with the specified settings.
+    * @param name A string value that specifies the folder's name. Initializes the ASPxClientFileManagerCurrentFolderChangedEventArgs.name property.
+    * @param fullName A string value that specifies the folder's full name. Initializes the ASPxClientFileManagerCurrentFolderChangedEventArgs.fullName property.
+    */
+  def this(name: String, fullName: String) = this()
   /**
     * Gets the full name of the folder currently being processed.
-    * Value: A string value that is the folder's full name.
     */
-  var fullName: String
+  var fullName: String = js.native
   /**
     * Gets the name of the currently processed folder.
-    * Value: A string value that specifies the folder's name.
     */
-  var name: String
-}
-
-object ASPxClientFileManagerCurrentFolderChangedEventArgs {
-  @scala.inline
-  def apply(fullName: String, name: String): ASPxClientFileManagerCurrentFolderChangedEventArgs = {
-    val __obj = js.Dynamic.literal(fullName = fullName, name = name)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerCurrentFolderChangedEventArgs]
-  }
+  var name: String = js.native
 }
 

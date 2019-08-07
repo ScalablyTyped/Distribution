@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the VisibilityChanged event.
+  * Provides data for the ASPxClientValidationSummary.VisibilityChanged event.
   */
-trait ASPxClientValidationSummaryVisibilityChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientValidationSummaryVisibilityChangedEventArgs")
+@js.native
+class ASPxClientValidationSummaryVisibilityChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientValidationSummaryVisibilityChangedEventArgs class.
+    * @param visible true if the editor is visible; otherwise, false.
+    */
+  def this(visible: Boolean) = this()
   /**
     * Gets or sets whether the editor is visible on the client.
-    * Value: true if the editor is visible; otherwise, false.
     */
-  var visible: Boolean
-}
-
-object ASPxClientValidationSummaryVisibilityChangedEventArgs {
-  @scala.inline
-  def apply(visible: Boolean): ASPxClientValidationSummaryVisibilityChangedEventArgs = {
-    val __obj = js.Dynamic.literal(visible = visible)
-  
-    __obj.asInstanceOf[ASPxClientValidationSummaryVisibilityChangedEventArgs]
-  }
+  var visible: Boolean = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for devexpress-web
 
-Typings are for version 182.3
+Typings are for version 191.5
 
 
 

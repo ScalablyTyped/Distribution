@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HeatmapLayer () extends MVCObject {
   def this(opts: HeatmapLayerOptions) = this()
-  def getData[T /* <: LatLng | WeightedLocation */](): MVCArray[T] = js.native
+  def getData(): MVCArray[LatLng | WeightedLocation] = js.native
   def getMap(): Map = js.native
   def setData(data: js.Array[LatLng | WeightedLocation]): Unit = js.native
   def setData(data: MVCArray[LatLng | WeightedLocation]): Unit = js.native

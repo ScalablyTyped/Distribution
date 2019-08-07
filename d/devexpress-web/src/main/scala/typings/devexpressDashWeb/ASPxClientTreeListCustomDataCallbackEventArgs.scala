@@ -5,27 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CustomDataCallback event.
+  * Provides data for the ASPxClientTreeList.CustomDataCallback event.
   */
-trait ASPxClientTreeListCustomDataCallbackEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientTreeListCustomDataCallbackEventArgs")
+@js.native
+class ASPxClientTreeListCustomDataCallbackEventArgs () extends ASPxClientEventArgs {
   /**
-    * Gets the information that has been collected on the client-side and sent to the  server-side CustomDataCallback event.
-    * Value: A string value that represents the information that has been collected on the client-side and sent to the server-side CustomDataCallback event.
+    * Gets the information that has been collected on the client-side and sent to the  server-side ASPxClientTreeList.CustomDataCallback event.
     */
-  var arg: String
+  var arg: String = js.native
   /**
-    * Gets the information passed from the server-side CustomDataCallback event.
-    * Value: An object that represents the information passed from the server-side CustomDataCallback event.
+    * Gets the information passed from the server-side ASPxTreeList.CustomDataCallback event.
     */
-  var result: js.Object
-}
-
-object ASPxClientTreeListCustomDataCallbackEventArgs {
-  @scala.inline
-  def apply(arg: String, result: js.Object): ASPxClientTreeListCustomDataCallbackEventArgs = {
-    val __obj = js.Dynamic.literal(arg = arg, result = result)
-  
-    __obj.asInstanceOf[ASPxClientTreeListCustomDataCallbackEventArgs]
-  }
+  var result: js.Any = js.native
 }
 

@@ -17,7 +17,7 @@ import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensor
 import typings.atTensorflowTfjsDashNode.Fn_FilePathPrefix
 import typings.atTensorflowTfjsDashNode.Fn_Group
 import typings.atTensorflowTfjsDashNode.Fn_LoadOptions
-import typings.atTensorflowTfjsDashNode.Fn_ModelTopology
+import typings.atTensorflowTfjsDashNode.Fn_ModelArtifacts
 import typings.atTensorflowTfjsDashNode.distIoFileUnderscoreSystemMod.NodeFileSystem
 import typings.std.ArrayBuffer
 import typings.std.File
@@ -44,7 +44,7 @@ object io extends js.Object {
   @JSName("fileSystem")
   var fileSystem_Original: js.Function1[/* path */ String | js.Array[String], NodeFileSystem] = js.native
   @JSName("fromMemory")
-  var fromMemory_Original: Fn_ModelTopology = js.native
+  var fromMemory_Original: Fn_ModelArtifacts = js.native
   @JSName("getModelArtifactsInfoForJSON")
   var getModelArtifactsInfoForJSON_Original: js.Function1[/* modelArtifacts */ ModelArtifacts, ModelArtifactsInfo] = js.native
   @JSName("http")
@@ -93,11 +93,24 @@ object io extends js.Object {
   def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Anon_Data] = js.native
   def fileSystem(path: String): NodeFileSystem = js.native
   def fileSystem(path: js.Array[String]): NodeFileSystem = js.native
-  def fromMemory(modelTopology: js.Object): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
   def fromMemory(
-    modelTopology: js.Object,
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer
+  ): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig

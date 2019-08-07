@@ -7,82 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client ASPxFilterControl.
   */
-trait ASPxClientFilterControl extends ASPxClientControl {
+@JSGlobal("ASPxClientFilterControl")
+@js.native
+class ASPxClientFilterControl () extends ASPxClientControl {
   /**
     * Occurs after a new filter expression has been applied.
     */
-  var Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]
+  var Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]] = js.native
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]] = js.native
   /**
     * Fires on the client if any server error occurs during server-side processing of a callback sent by the ASPxClientFilterControl.
     */
-  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]
+  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]] = js.native
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]] = js.native
   /**
     * Applies a filter constructed by an end-user.
     */
-  def Apply(): Unit
+  def Apply(): Unit = js.native
   /**
     * Returns the applied filter expression.
     */
-  def GetAppliedFilterExpression(): String
+  def GetAppliedFilterExpression(): String = js.native
   /**
-    * Returns the editor used to edit operand values for the specified filter column.
+    * Returns the editor used to edit operand values for the specified filter column. An ASPxClientEditBase descendant that represents the editor used to edit operand values for the specified filter column.
     * @param editorIndex An integer value that identifies the filter column by its index within the collection.
     */
-  def GetEditor(editorIndex: Double): ASPxClientEditBase
+  def GetEditor(editorIndex: Double): ASPxClientEditBase = js.native
   /**
     * Returns the filter expression.
     */
-  def GetFilterExpression(): String
+  def GetFilterExpression(): String = js.native
   /**
     * Returns a value indicating whether the filter expression being currently composed on the client side is valid - all expression conditions are filled.
     */
-  def IsFilterExpressionValid(): Boolean
+  def IsFilterExpressionValid(): Boolean = js.native
   /**
     * Resets the current filter expression to a previously applied filter expression.
     */
-  def Reset(): Unit
+  def Reset(): Unit = js.native
 }
 
-object ASPxClientFilterControl {
-  @scala.inline
-  def apply(
-    AdjustControl: () => Unit,
-    Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]],
-    Apply: () => Unit,
-    BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]],
-    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]],
-    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]],
-    GetAppliedFilterExpression: () => String,
-    GetClientVisible: () => Boolean,
-    GetEditor: Double => ASPxClientEditBase,
-    GetFilterExpression: () => String,
-    GetHeight: () => Double,
-    GetMainElement: () => js.Object,
-    GetParentControl: () => js.Object,
-    GetVisible: () => Boolean,
-    GetWidth: () => Double,
-    InCallback: () => Boolean,
-    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    IsFilterExpressionValid: () => Boolean,
-    Reset: () => Unit,
-    SendMessageToAssistiveTechnology: String => Unit,
-    SetClientVisible: Boolean => Unit,
-    SetHeight: Double => Unit,
-    SetVisible: Boolean => Unit,
-    SetWidth: Double => Unit,
-    name: String
-  ): ASPxClientFilterControl = {
-    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Applied = Applied, Apply = js.Any.fromFunction0(Apply), BeginCallback = BeginCallback, CallbackError = CallbackError, EndCallback = EndCallback, GetAppliedFilterExpression = js.Any.fromFunction0(GetAppliedFilterExpression), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEditor = js.Any.fromFunction1(GetEditor), GetFilterExpression = js.Any.fromFunction0(GetFilterExpression), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, IsFilterExpressionValid = js.Any.fromFunction0(IsFilterExpressionValid), Reset = js.Any.fromFunction0(Reset), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
-  
-    __obj.asInstanceOf[ASPxClientFilterControl]
-  }
+/* static members */
+@JSGlobal("ASPxClientFilterControl")
+@js.native
+object ASPxClientFilterControl extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientFilterControl type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientFilterControl = js.native
 }
 

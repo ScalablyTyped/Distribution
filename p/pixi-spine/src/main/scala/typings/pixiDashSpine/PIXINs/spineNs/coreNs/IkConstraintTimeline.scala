@@ -14,6 +14,7 @@ class IkConstraintTimeline protected () extends CurveTimeline {
     frameIndex: Double,
     time: Double,
     mix: Double,
+    softness: Double,
     bendDirection: Double,
     compress: Boolean,
     stretch: Boolean
@@ -31,8 +32,10 @@ object IkConstraintTimeline extends js.Object {
   var PREV_BEND_DIRECTION: Double = js.native
   var PREV_COMPRESS: Double = js.native
   var PREV_MIX: Double = js.native
+  var PREV_SOFTNESS: Double = js.native
   var PREV_STRETCH: Double = js.native
   var PREV_TIME: Double = js.native
+  var SOFTNESS: Double = js.native
   var STRETCH: Double = js.native
 }
 

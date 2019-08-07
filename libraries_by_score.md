@@ -96,7 +96,6 @@
 | 0.8701898113065796 | [events](./e/events) | Node's event emitter for all engines.
 | 0.8699512568983501 | [react-dev-utils](./r/react-dev-utils) | Webpack utilities used by Create React App
 | 0.8697902744294229 | [tar](./t/tar) | tar for node
-| 0.8693909039650893 | [ramda](./r/ramda) | A practical functional library for JavaScript prog
 | 0.8686153801596752 | [xmlbuilder](./x/xmlbuilder) | An XML builder for node.js
 | 0.8685946164313206 | [loglevel](./l/loglevel) | Minimal lightweight logging for JavaScript, adding
 | 0.8685902740695157 | [lodash_dot_flatten](./l/lodash_dot_flatten) | The lodash method _.flatten exported as a module.
@@ -2626,6 +2625,7 @@
 | 0.6868263987760098 | [react-frontload](./r/react-frontload) | Bind Async Data Dependencies to React Components
 | 0.6867828780542831 | [react-panelgroup](./r/react-panelgroup) | react-panelgroup React component
 | 0.6867239577908621 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js
+| 0.6866638784171546 | [mapbox__tile-cover](./m/mapbox__tile-cover) | generate the minimum number of tiles to cover a ge
 | 0.6866011095625817 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React
 | 0.6865467645348259 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
 | 0.6865291097096956 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design
@@ -2670,6 +2670,7 @@
 | 0.6850226600254075 | [test-listen](./t/test-listen) | Produce URLs to test HTTP servers with ephemeral p
 | 0.6849478578431111 | [streamtest](./s/streamtest) | Streams test library
 | 0.6849454423744376 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware
+| 0.6848961418355215 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings.
 | 0.6848620444222434 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
 | 0.6848477484431694 | [qs-middleware](./q/qs-middleware) | Connect querystring middleware
 | 0.6847216996884204 | [chmodr](./c/chmodr) | like chmod -R

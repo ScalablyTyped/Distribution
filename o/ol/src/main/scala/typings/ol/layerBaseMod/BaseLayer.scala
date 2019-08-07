@@ -55,6 +55,7 @@ trait BaseLayer
   def once_changevisible(`type`: `change:visible`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_changezIndex(`type`: `change:zIndex`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def setExtent(): Unit = js.native
   def setExtent(extent: Extent): Unit = js.native
   def setMaxResolution(maxResolution: Double): Unit = js.native
   def setMinResolution(minResolution: Double): Unit = js.native

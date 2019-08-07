@@ -34,7 +34,7 @@ trait CallFrame extends js.Object {
     */
   var scopeChain: js.Array[Scope]
   /**
-    * `this` object for this call frame.
+    * <code>this</code> object for this call frame.
     */
   var `this`: RemoteObject
   /**

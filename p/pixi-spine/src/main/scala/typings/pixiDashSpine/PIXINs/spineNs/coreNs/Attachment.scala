@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 abstract class Attachment protected () extends js.Object {
   def this(name: String) = this()
   var name: String = js.native
+  def copy(): Attachment = js.native
 }
 

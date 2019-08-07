@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line:no-unnecessary-qualifier
 trait MouseEvent
   extends typings.googlemaps.googleNs.mapsNs.MouseEvent {
   var feature: Feature

@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a floating object's outline width.
   */
-trait ChangeFloatingObjectOutlineWidthCommand extends CommandBase {
+@JSGlobal("ChangeFloatingObjectOutlineWidthCommand")
+@js.native
+class ChangeFloatingObjectOutlineWidthCommand () extends CommandBase {
   /**
-    * Executes the ChangeFloatingObjectOutlineWidthCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeFloatingObjectOutlineWidthCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param width An integer value specifying the outline width.
     */
-  def execute(width: Double): Boolean
+  def execute(width: Double): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeFloatingObjectOutlineWidthCommand {
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => js.Any): ChangeFloatingObjectOutlineWidthCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeFloatingObjectOutlineWidthCommand]
-  }
+  def getState(): CommandState[Double] = js.native
 }
 

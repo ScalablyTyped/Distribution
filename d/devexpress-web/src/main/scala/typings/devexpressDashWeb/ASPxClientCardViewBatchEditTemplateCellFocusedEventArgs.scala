@@ -5,27 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditTemplateCellFocused event.
+  * Provides data for the ASPxClientCardView.BatchEditTemplateCellFocused event.
   */
-trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs class with the specified column.
+    * @param column An ASPxClientCardViewColumn object that is the processed CardView column. This value is assigned to the ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs.column property.
+    */
+  def this(column: ASPxClientCardViewColumn) = this()
   /**
     * Gets the currently processed column.
-    * Value: An <see cref="ASPxClientCardViewColumn" /> object that is the client-side column object.
     */
-  var column: ASPxClientCardViewColumn
+  var column: ASPxClientCardViewColumn = js.native
   /**
     * Gets or sets a value specifying whether the event was handled.
-    * Value: true if the event was handled and default processing should not occur; false if the event should be handled using default processing.
     */
-  var handled: Boolean
-}
-
-object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
-  @scala.inline
-  def apply(column: ASPxClientCardViewColumn, handled: Boolean): ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs = {
-    val __obj = js.Dynamic.literal(column = column, handled = handled)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs]
-  }
+  var handled: Boolean = js.native
 }
 

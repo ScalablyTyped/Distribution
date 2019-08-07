@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientDateNavigatorSelectionChangedEventArgs extends ASPxClientEventArgs {
-  var selectedDates: js.Array[Date]
-}
-
-object ASPxClientDateNavigatorSelectionChangedEventArgs {
-  @scala.inline
-  def apply(selectedDates: js.Array[Date]): ASPxClientDateNavigatorSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(selectedDates = selectedDates)
-  
-    __obj.asInstanceOf[ASPxClientDateNavigatorSelectionChangedEventArgs]
-  }
+/**
+  * Provides data for the ASPxClientDateNavigator.SelectionChanged event.
+  */
+@JSGlobal("ASPxClientDateNavigatorSelectionChangedEventArgs")
+@js.native
+class ASPxClientDateNavigatorSelectionChangedEventArgs () extends ASPxClientEventArgs {
+  /**
+    * Returns the selected dates related to the event.
+    */
+  var selectedDates: js.Array[Date] = js.native
 }
 

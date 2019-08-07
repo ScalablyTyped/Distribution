@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the BootstrapTagBox object.
   */
+@JSGlobal("BootstrapClientTagBox")
 @js.native
-trait BootstrapClientTagBox extends ASPxClientTokenBox {
+class BootstrapClientTagBox () extends ASPxClientTokenBox {
   /**
     * Fires on the client side after the tag collection has been changed.
     */
   var TagsChanged: ASPxClientEvent[ASPxClientEventHandler[BootstrapClientTagBox]] = js.native
+  /** @deprecated This event is now obsolete. Use the TagsChanged event instead. */
   /**
-    * Use the TagsChanged event instead.
+    * Use the BootstrapClientTagBox.TagsChanged event instead.
     */
   @JSName("TokensChanged")
   var TokensChanged_BootstrapClientTagBox: ASPxClientEvent[ASPxClientEventHandler[BootstrapClientTagBox]] = js.native
@@ -28,12 +30,12 @@ trait BootstrapClientTagBox extends ASPxClientTokenBox {
     */
   def ClearTagCollection(): Unit = js.native
   /**
-    * Gets the CSS class of the icon displayed within a Tag Box item badge.
+    * Gets the CSS class of the icon displayed within a Tag Box item badge. A String containing the name of a CSS class.
     * @param index The index of a Tag Box item.
     */
   def GetItemBadgeIconCssClass(index: Double): String = js.native
   /**
-    * Gets the text displayed within a Tag Box item badge.
+    * Gets the text displayed within a Tag Box item badge. A String specifying the badge text.
     * @param index The index of a Tag Box item.
     */
   def GetItemBadgeText(index: Double): String = js.native
@@ -42,27 +44,27 @@ trait BootstrapClientTagBox extends ASPxClientTokenBox {
     */
   def GetTagCollection(): js.Array[String] = js.native
   /**
-    * Returns an HTML span element that corresponds to the specified tag.
+    * Returns an HTML span element that corresponds to the specified tag. An object that is the HTML span element that corresponds to the specified tag.
     * @param index An integer value that is the tag index.
     */
-  def GetTagHtmlElement(index: Double): js.Object = js.native
+  def GetTagHtmlElement(index: Double): js.Any = js.native
   /**
-    * Returns the index of a tag specified by its text.
+    * Returns the index of a tag specified by its text. An integer value that is the tag index
     * @param text A string value that specifies the text of the tag.
     */
   def GetTagIndexByText(text: String): Double = js.native
   /**
-    * Returns an HTML span element that corresponds to the specified tag's remove button.
+    * Returns an HTML span element that corresponds to the specified tag's remove button. An object that is the HTML span element that corresponds to the specified tag's remove button.
     * @param index An integer value that is the tag index.
     */
-  def GetTagRemoveButtonHtmlElement(index: Double): js.Object = js.native
+  def GetTagRemoveButtonHtmlElement(index: Double): js.Any = js.native
   /**
-    * Returns an HTML span element that corresponds to the specified tag's text.
+    * Returns an HTML span element that corresponds to the specified tag's text. An object that is the HTML span element that corresponds to the specified tag's text.
     * @param index An integer value that is the tag index.
     */
-  def GetTagTextHtmlElement(index: Double): js.Object = js.native
+  def GetTagTextHtmlElement(index: Double): js.Any = js.native
   /**
-    * Returns a value that indicates if the specified tag (string) is a custom tag.
+    * Returns a value that indicates if the specified tag (string) is a custom tag. true, if the tag is not contained in the predefined BootstrapTagBox.Items collection; otherwise, false.
     * @param text A string value that is a tag.
     * @param caseSensitive true, if tags are case sensitive; otherwise, false.
     */
@@ -91,7 +93,6 @@ trait BootstrapClientTagBox extends ASPxClientTokenBox {
   def SetItemBadgeText(index: Double, text: String): Unit = js.native
   /**
     * This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.
-    * @param item 
     */
   def SetSelectedItem(item: BootstrapClientListBoxItem): Unit = js.native
   /**

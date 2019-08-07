@@ -1,21 +1,21 @@
 package typings.reactDashIntl
 
-import typings.react.reactMod.ComponentType
-import typings.reactDashIntl.ReactIntlNs.InjectedIntlProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_WrappedComponent[P] extends js.Object {
-  var WrappedComponent: ComponentType[P with InjectedIntlProps]
+trait Anon_WrappedComponent extends js.Object {
+  var WrappedComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappedComponent */ js.Any
 }
 
 object Anon_WrappedComponent {
   @scala.inline
-  def apply[P](WrappedComponent: ComponentType[P with InjectedIntlProps]): Anon_WrappedComponent[P] = {
-    val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
+  def apply(
+    WrappedComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappedComponent */ js.Any
+  ): Anon_WrappedComponent = {
+    val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent)
   
-    __obj.asInstanceOf[Anon_WrappedComponent[P]]
+    __obj.asInstanceOf[Anon_WrappedComponent]
   }
 }
 

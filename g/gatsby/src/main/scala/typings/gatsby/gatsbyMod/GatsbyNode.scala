@@ -90,6 +90,24 @@ trait GatsbyNode extends js.Object {
     ])
   ] = js.undefined
   /**
+    * Customize Gatsby’s GraphQL schema by creating type definitions, field extensions or adding third-party schemas.
+    * The createTypes, createFieldExtension and addThirdPartySchema actions are only available in this API.
+    *
+    * For details on their usage please refer to the actions documentation.
+    *
+    * This API runs immediately before schema generation. For modifications of the generated schema, e.g.
+    * to customize added third-party types, use the createResolvers API.
+    * @see https://www.gatsbyjs.org/docs/node-apis/#createSchemaCustomization
+    */
+  var createSchemaCustomization: js.UndefOr[
+    (js.Function2[/* args */ CreateSchemaCustomizationArgs, /* options */ PluginOptions, _]) with (js.Function2[/* args */ CreateSchemaCustomizationArgs, /* options */ PluginOptions, js.Promise[_]]) with (js.Function3[
+      /* args */ CreateSchemaCustomizationArgs, 
+      /* options */ PluginOptions, 
+      /* callback */ PluginCallback, 
+      Unit
+    ])
+  ] = js.undefined
+  /**
     * Let plugins extend/mutate the site's Babel configuration.
     * This API will change before 2.0 as it needs still to be converted to use
     * Redux actions.
@@ -312,6 +330,12 @@ object GatsbyNode {
       /* callback */ PluginCallback, 
       Unit
     ]) = null,
+    createSchemaCustomization: (js.Function2[/* args */ CreateSchemaCustomizationArgs, /* options */ PluginOptions, _]) with (js.Function2[/* args */ CreateSchemaCustomizationArgs, /* options */ PluginOptions, js.Promise[_]]) with (js.Function3[
+      /* args */ CreateSchemaCustomizationArgs, 
+      /* options */ PluginOptions, 
+      /* callback */ PluginCallback, 
+      Unit
+    ]) = null,
     onCreateBabelConfig: (/* args */ CreateBabelConfigArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onCreateDevServer: (/* args */ CreateDevServerArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onCreateNode: (/* args */ CreateNodeArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
@@ -346,6 +370,7 @@ object GatsbyNode {
     if (createPages != null) __obj.updateDynamic("createPages")(js.Any.fromFunction3(createPages))
     if (createPagesStatefully != null) __obj.updateDynamic("createPagesStatefully")(js.Any.fromFunction3(createPagesStatefully))
     if (createResolvers != null) __obj.updateDynamic("createResolvers")(createResolvers)
+    if (createSchemaCustomization != null) __obj.updateDynamic("createSchemaCustomization")(createSchemaCustomization)
     if (onCreateBabelConfig != null) __obj.updateDynamic("onCreateBabelConfig")(js.Any.fromFunction3(onCreateBabelConfig))
     if (onCreateDevServer != null) __obj.updateDynamic("onCreateDevServer")(js.Any.fromFunction3(onCreateDevServer))
     if (onCreateNode != null) __obj.updateDynamic("onCreateNode")(js.Any.fromFunction3(onCreateNode))

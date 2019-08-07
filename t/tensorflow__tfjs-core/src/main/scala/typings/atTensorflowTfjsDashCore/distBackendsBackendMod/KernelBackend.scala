@@ -153,6 +153,9 @@ class KernelBackend ()
     bias: Tensor[Rank],
     activation: Activation
   ): Tensor3D = js.native
+  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
+  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D): Tensor4D = js.native
+  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D, activation: Activation): Tensor4D = js.native
   def gather[T /* <: Tensor[Rank] */](x: T, indices: Tensor1D, axis: Double): T = js.native
   def gatherND(x: Tensor[Rank], indices: Tensor[Rank]): Tensor[Rank] = js.native
   def greater(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native

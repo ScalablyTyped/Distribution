@@ -1,6 +1,7 @@
 package typings.pdfmake.buildPdfmakeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pdfmake.Anon_Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,7 @@ trait TDocumentDefinitions extends js.Object {
   ] = js.undefined
   var pageMargins: js.UndefOr[Margins] = js.undefined
   var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
-  var pageSize: js.UndefOr[PageSize] = js.undefined
+  var pageSize: js.UndefOr[PageSize | Anon_Height] = js.undefined
   var styles: js.UndefOr[Style] = js.undefined
 }
 
@@ -45,7 +46,7 @@ object TDocumentDefinitions {
     pageBreakBefore: (/* currentNode */ js.UndefOr[CurrentNode], /* followingNodesOnPage */ js.UndefOr[js.Any], /* nodesOnNextPage */ js.UndefOr[js.Any], /* previousNodesOnPage */ js.UndefOr[js.Any]) => Boolean = null,
     pageMargins: Margins = null,
     pageOrientation: PageOrientation = null,
-    pageSize: PageSize = null,
+    pageSize: PageSize | Anon_Height = null,
     styles: Style = null
   ): TDocumentDefinitions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
@@ -59,7 +60,7 @@ object TDocumentDefinitions {
     if (pageBreakBefore != null) __obj.updateDynamic("pageBreakBefore")(js.Any.fromFunction4(pageBreakBefore))
     if (pageMargins != null) __obj.updateDynamic("pageMargins")(pageMargins.asInstanceOf[js.Any])
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles)
     __obj.asInstanceOf[TDocumentDefinitions]
   }

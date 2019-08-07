@@ -5,27 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BeforeDock event.
+  * Provides data for the ASPxClientDockManager.BeforeDock event.
   */
-trait ASPxClientDockManagerProcessingModeCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+@JSGlobal("ASPxClientDockManagerProcessingModeCancelEventArgs")
+@js.native
+class ASPxClientDockManagerProcessingModeCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
+  /**
+    * For internal use only.
+    */
+  def this(processOnServer: Boolean, panel: ASPxClientDockPanel, zone: ASPxClientDockZone) = this()
   /**
     * Gets the panel currently being processed.
-    * Value: An ASPxClientDockPanel object that is the processed panel.
     */
-  var panel: ASPxClientDockPanel
+  var panel: ASPxClientDockPanel = js.native
   /**
     * Gets the zone currently being processed.
-    * Value: An ASPxClientDockZone object that is the processed zone.
     */
-  var zone: ASPxClientDockZone
-}
-
-object ASPxClientDockManagerProcessingModeCancelEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, panel: ASPxClientDockPanel, processOnServer: Boolean, zone: ASPxClientDockZone): ASPxClientDockManagerProcessingModeCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, panel = panel, processOnServer = processOnServer, zone = zone)
-  
-    __obj.asInstanceOf[ASPxClientDockManagerProcessingModeCancelEventArgs]
-  }
+  var zone: ASPxClientDockZone = js.native
 }
 

@@ -7,33 +7,23 @@ import scala.scalajs.js.annotation._
 /**
   * A command to add an RTF formatted content in the selected position.
   */
+@JSGlobal("InsertRtfCommand")
 @js.native
-trait InsertRtfCommand extends CommandWithSimpleStateBase {
+class InsertRtfCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the InsertRtfCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param rtfText A string representing the RTF formatted content to insert.
-    * @param position A value specifying the position to insert in the active sub-document.
-    */
-  def execute(rtfText: String, position: Double): Boolean = js.native
-  /**
-    * Executes the InsertRtfCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param rtfText A string representing the RTF formatted content to insert.
-    * @param position A value specifying the position to insert in the specified sub-document.
-    * @param subDocumentId A value identifying the target sub-document.
-    */
-  def execute(rtfText: String, position: Double, subDocumentId: Double): Boolean = js.native
-  /**
-    * Executes the InsertRtfCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the InsertRtfCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param rtfText A string representing the RTF formatted content to insert.
     * @param position A value specifying the position to insert in the specified sub-document.
     * @param subDocumentId A value identifying the target sub-document.
     * @param callback A callback function that passes the inserted content's Interval object and the bool parameter that displays whether the RTF formatted string is valid.
     */
+  def execute(rtfText: String, position: Double): Boolean = js.native
+  def execute(rtfText: String, position: Double, subDocumentId: Double): Boolean = js.native
   def execute(
     rtfText: String,
     position: Double,
     subDocumentId: Double,
-    callback: js.Function2[/* arg1 */ Interval, /* arg2 */ Boolean, Unit]
+    callback: js.Function2[/* interval */ Interval, /* isRtfValid */ Boolean, Unit]
   ): Boolean = js.native
 }
 

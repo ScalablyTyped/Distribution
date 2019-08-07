@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Save As dialog that prompts for a file name and saves the current document in a file with the specified path.
   */
+@JSGlobal("FileSaveAsCommand")
 @js.native
-trait FileSaveAsCommand extends CommandWithSimpleStateBase {
+class FileSaveAsCommand () extends js.Object {
   /**
-    * Executes the FileSaveAsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param fileInfo A <see cref="Boolean" /> object specifying a file to save to.
-    */
-  def execute(fileInfo: RichEditFileInfo): Boolean = js.native
-  /**
-    * Executes the FileSaveAsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param path A string value specifying the path to the saving file. Note that the path should be relative to the work directory.
+    * Executes the FileSaveAsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     */
   def execute(path: String): Boolean = js.native
+  def execute(path: RichEditFileInfo): Boolean = js.native
+  /**
+    * Gets information about the command's state.
+    */
+  def getState(): SimpleCommandState = js.native
 }
 

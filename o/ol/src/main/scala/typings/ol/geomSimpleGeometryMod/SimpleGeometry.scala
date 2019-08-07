@@ -22,6 +22,7 @@ trait SimpleGeometry
   def setCoordinates(coordinates: js.Array[_]): Unit = js.native
   def setCoordinates(coordinates: js.Array[_], opt_layout: GeometryLayout): Unit = js.native
   def setFlatCoordinates(layout: GeometryLayout, flatCoordinates: js.Array[Double]): Unit = js.native
+  /* protected */ def setLayout(layout: js.UndefOr[scala.Nothing], coordinates: js.Array[_], nesting: Double): Unit = js.native
   /* protected */ def setLayout(layout: GeometryLayout, coordinates: js.Array[_], nesting: Double): Unit = js.native
 }
 

@@ -18,10 +18,6 @@ package object RuntimeNs {
     */
   type ScriptId = java.lang.String
   /**
-    * Number of milliseconds.
-    */
-  type TimeDelta = Double
-  /**
     * Number of milliseconds since epoch.
     */
   type Timestamp = Double
@@ -31,8 +27,7 @@ package object RuntimeNs {
     */
   type UniqueDebuggerId = java.lang.String
   /**
-    * Primitive value which cannot be JSON-stringified. Includes values `-0`, `NaN`, `Infinity`,
-    * `-Infinity`, and bigint literals.
+    * Primitive value which cannot be JSON-stringified.
     */
   type UnserializableValue = java.lang.String
 }

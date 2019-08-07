@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxSpinEdit control.
   */
+@JSGlobal("ASPxClientSpinEdit")
 @js.native
-trait ASPxClientSpinEdit extends ASPxClientSpinEditBase {
+class ASPxClientSpinEdit () extends ASPxClientSpinEditBase {
   /**
     * Occurs on the client side when the editor's value is altered in any way.
     */
@@ -45,5 +46,16 @@ trait ASPxClientSpinEdit extends ASPxClientSpinEditBase {
     * @param number A Decimal value specifying the control value.
     */
   def SetValue(number: Double): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientSpinEdit")
+@js.native
+object ASPxClientSpinEdit extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientSpinEdit type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientSpinEdit = js.native
 }
 

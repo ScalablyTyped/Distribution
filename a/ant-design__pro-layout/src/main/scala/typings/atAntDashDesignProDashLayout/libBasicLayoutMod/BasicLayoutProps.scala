@@ -1,6 +1,7 @@
 package typings.atAntDashDesignProDashLayout.libBasicLayoutMod
 
 import typings.antd.esBreadcrumbBreadcrumbMod.Route
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlbooleanAuthority
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
@@ -13,7 +14,10 @@ import typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuPr
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MessageDescriptor
 import typings.atAntDashDesignProDashLayout.libTypingsMod.WithFalse
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,9 +65,7 @@ import scala.scalajs.js.annotation._
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
@@ -95,12 +97,14 @@ object BasicLayoutProps {
     logo: ReactNode | WithFalse[js.Function0[ReactNode]] = null,
     menu: Anon_Locale = null,
     menuDataRender: /* menuData */ js.Array[MenuDataItem] => js.Array[MenuDataItem] = null,
+    menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuItemRender: WithFalse[
       js.Function2[/* item */ MenuDataItemisUrlbooleanAuthority, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    navTheme: MenuTheme = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
+    onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     pageTitleRender: WithFalse[
       js.Function2[/* props */ GetPageTitleProps, /* ignoreTile */ js.UndefOr[Boolean], String]
     ] = null,
@@ -127,10 +131,12 @@ object BasicLayoutProps {
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu)
     if (menuDataRender != null) __obj.updateDynamic("menuDataRender")(js.Any.fromFunction1(menuDataRender))
+    if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
     if (menuItemRender != null) __obj.updateDynamic("menuItemRender")(menuItemRender.asInstanceOf[js.Any])
     if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
+    if (onMenuHeaderClick != null) __obj.updateDynamic("onMenuHeaderClick")(js.Any.fromFunction1(onMenuHeaderClick))
     if (pageTitleRender != null) __obj.updateDynamic("pageTitleRender")(pageTitleRender.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
     if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])

@@ -15,6 +15,7 @@ trait Source
   def getState(): State = js.native
   def getWrapX(): Boolean = js.native
   def refresh(): Unit = js.native
+  def setAttributions(): Unit = js.native
   def setAttributions(attributions: AttributionLike): Unit = js.native
   /* protected */ def setState(state: State): Unit = js.native
 }

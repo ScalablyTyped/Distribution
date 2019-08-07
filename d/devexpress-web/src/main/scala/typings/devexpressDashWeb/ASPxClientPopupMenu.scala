@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxPopupMenu object.
   */
+@JSGlobal("ASPxClientPopupMenu")
 @js.native
-trait ASPxClientPopupMenu extends ASPxClientMenuBase {
+class ASPxClientPopupMenu () extends ASPxClientMenuBase {
   /**
     * Returns an object that invoked the popup menu.
     */
-  def GetCurrentPopupElement(): js.Object = js.native
+  def GetCurrentPopupElement(): js.Any = js.native
   /**
-    * Returns an index of the object that invoked the popup menu within the PopupElementID list.
+    * Returns an index of the object that invoked the popup menu within the ASPxPopupMenu.PopupElementID list.
     */
   def GetCurrentPopupElementIndex(): Double = js.native
   /**
@@ -31,19 +32,16 @@ trait ASPxClientPopupMenu extends ASPxClientMenuBase {
     */
   def SetPopupElementID(popupElementId: String): Unit = js.native
   /**
-    * Invokes the popup menu.
-    */
-  def Show(): Unit = js.native
-  /**
     * Invokes the popup menu at the popup element with the specified index.
     * @param popupElementIndex An integer value specifying the zero-based index of the popup element.
     */
+  def Show(): Unit = js.native
   def Show(popupElementIndex: Double): Unit = js.native
   /**
     * Invokes the popup menu and displays it over the specified HTML element.
     * @param htmlElement An object specifying the HTML element relative to which position the popup menu is invoked.
     */
-  def ShowAtElement(htmlElement: js.Object): Unit = js.native
+  def ShowAtElement(htmlElement: js.Any): Unit = js.native
   /**
     * Invokes the popup menu and displays it over an HTML element specified by its unique identifier.
     * @param id A string value that specifies the hierarchically qualified identifier of an HTML element relative to which position the popup menu is invoked.
@@ -55,5 +53,16 @@ trait ASPxClientPopupMenu extends ASPxClientMenuBase {
     * @param y An integer value specifying the y-coordinate of the popup menu's display position.
     */
   def ShowAtPos(x: Double, y: Double): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientPopupMenu")
+@js.native
+object ASPxClientPopupMenu extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientPopupMenu type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientPopupMenu = js.native
 }
 

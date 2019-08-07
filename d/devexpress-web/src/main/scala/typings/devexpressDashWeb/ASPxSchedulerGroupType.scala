@@ -7,30 +7,20 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the SchedulerGroupType enumeration.
   */
-trait ASPxSchedulerGroupType extends js.Object {
+@JSGlobal("ASPxSchedulerGroupType")
+@js.native
+class ASPxSchedulerGroupType () extends js.Object {
   /**
-    * Gets a string representation equivalent of Date enumeration for use in client scripts.
-    * Value: A "Date" string value.
+    * Gets a string representation equivalent of SchedulerGroupType.Date enumeration for use in client scripts.
     */
-  var Date: String
+  var Date: String = js.native
   /**
-    * Gets a string representation equivalent of None enumeration for use in client scripts.
-    * Value: A "None" string value.
+    * Gets a string representation equivalent of SchedulerGroupType.None enumeration for use in client scripts.
     */
-  var None: String
+  var None: String = js.native
   /**
-    * Gets a string representation equivalent of Resource enumeration for use in client scripts.
-    * Value: A "Resource" string value.
+    * Gets a string representation equivalent of SchedulerGroupType.Resource enumeration for use in client scripts.
     */
-  var Resource: String
-}
-
-object ASPxSchedulerGroupType {
-  @scala.inline
-  def apply(Date: String, None: String, Resource: String): ASPxSchedulerGroupType = {
-    val __obj = js.Dynamic.literal(Date = Date, None = None, Resource = Resource)
-  
-    __obj.asInstanceOf[ASPxSchedulerGroupType]
-  }
+  var Resource: String = js.native
 }
 

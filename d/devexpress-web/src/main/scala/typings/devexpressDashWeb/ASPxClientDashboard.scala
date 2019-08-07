@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxDashboard control.
   */
+@JSGlobal("ASPxClientDashboard")
 @js.native
-trait ASPxClientDashboard extends ASPxClientControl {
+class ASPxClientDashboard () extends ASPxClientControl {
   /**
     * Occurs after the available interactivity actions have changed for the specific dashboard item.
     */
@@ -22,7 +23,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDashboard]] = js.native
   /**
-    * Fires when a round trip to the server has been initiated by a call to the client PerformDataCallback method.
+    * Fires when a round trip to the server has been initiated by a call to the client ASPxClientDashboard.PerformDataCallback method.
     */
   var CustomDataCallback: ASPxClientEvent[ASPxClientCustomDataCallbackEventHandler[ASPxClientDashboard]] = js.native
   /**
@@ -30,16 +31,23 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   var DashboardBeginUpdate: ASPxClientEvent[ASPxClientDashboardBeginUpdateEventHandler[ASPxClientDashboard]] = js.native
   /**
-    * Occurs after a new dashboard is displayed in the ASPxClientDashboard.
+    * The DashboardChanged client-side event is obsolete. Use the DashboardInitialized event instead.
     */
   var DashboardChanged: ASPxClientEvent[ASPxClientDashboardChangedEventHandler[ASPxClientDashboard]] = js.native
   /**
     * Occurs after the dashboard update is performed.
     */
   var DashboardEndUpdate: ASPxClientEvent[ASPxClientDashboardEndUpdateEventHandler[ASPxClientDashboard]] = js.native
+  /**
+    * Occurs after the dashboard displayed in the control has been initialized.
+    */
   var DashboardInitialized: ASPxClientEvent[ASPxClientDashboardInitializedEventHandler[ASPxClientDashboard]] = js.native
   /**
-    * Occurs after the state of the dashboard displayed in the ASPxClientDashboard is changed.
+    * Occurs before the dashboard displayed in the control has been initialized.
+    */
+  var DashboardInitializing: ASPxClientEvent[ASPxClientDashboardInitializingEventHandler[ASPxClientDashboard]] = js.native
+  /**
+    * Occurs after the current dashboard state in the ASPxClientDashboard is changed.
     */
   var DashboardStateChanged: ASPxClientEvent[ASPxClientDashboardStateChangedEventHandler[ASPxClientDashboard]] = js.native
   /**
@@ -106,30 +114,33 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * Allows you to access underlying UI/Data Visualization widgets.
     */
   var ItemWidgetUpdating: ASPxClientEvent[ASPxClientDashboardItemWidgetUpdatingEventHandler[ASPxClientDashboard]] = js.native
+  /**
+    * Occurs when the selected tab page is changed.
+    */
   var SelectedTabPageChanged: ASPxClientEvent[ASPxClientSelectedTabPageChangedEventHandler[ASPxClientDashboard]] = js.native
   /**
-    * Returns whether or not the specified master filter can be cleared in the current state.
+    * Returns whether the specified master filter can be cleared in the current state. true, if the specified master filter can be cleared in the current state; otherwise, false.
     * @param itemName A string that specifies the component name of the master filter item.
     */
   def CanClearMasterFilter(itemName: String): Boolean = js.native
   /**
-    * Returns whether or not drill down is possible in the current state of the specified dashboard item.
+    * Returns whether drill down is possible in the current state of the specified dashboard item. true, if drill down is possible in the current state of the specified dashboard item; otherwise, false.
     * @param itemName A string that specifies the component name of the dashboard item.
     */
   def CanPerformDrillDown(itemName: String): Boolean = js.native
   /**
-    * Returns whether or not drill up is possible in the current state of the specified dashboard item.
+    * Returns whether drill up is possible in the current state of the specified dashboard item. true, if drill up is possible in the current state of the specified dashboard item; otherwise, false.
     * @param itemName A string that specifies the component name of the dashboard item.
     */
   def CanPerformDrillUp(itemName: String): Boolean = js.native
   /**
-    * Returns whether or not master filtering  can be applied in the current state of the specified master filter item.
+    * Returns whether master filtering  can be applied in the current state of the specified master filter item. true, if master filtering can be applied in the current state of the specified master filter item; otherwise, false.
     * @param itemName A string that specifies the component name of the master filter item.
     */
   def CanSetMasterFilter(itemName: String): Boolean = js.native
   /**
     * Clears the specified master filter item.
-    * @param itemName A string that specifies the component name of the master filter item.
+    * @param itemName A String that specifies the component name of the master filter item.
     */
   def ClearMasterFilter(itemName: String): Unit = js.native
   /**
@@ -137,219 +148,112 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToExcel(itemName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to an Excel file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    */
   def ExportDashboardItemToExcel(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to an Excel file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    * @param fileName A string that specifies the name of the exported Excel file.
-    */
   def ExportDashboardItemToExcel(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to an Excel file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardExcelExportOptions object containing Excel export options.
-    */
   def ExportDashboardItemToExcel(itemName: String, options: DashboardExcelExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to an Excel file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardExcelExportOptions object containing Excel export options.
-    * @param fileName A string that specifies the name of the exported Excel file.
-    */
   def ExportDashboardItemToExcel(itemName: String, options: DashboardExcelExportOptions, fileName: String): Unit = js.native
   /**
     * Exports a dashboard item to an Image file and writes it to the Response.
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToImage(itemName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to an Image file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    */
   def ExportDashboardItemToImage(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to an Image file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    * @param fileName A string value that specifies the name of the exported file.
-    */
   def ExportDashboardItemToImage(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to an Image file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardImageExportOptions object containing image-specific export options.
-    */
   def ExportDashboardItemToImage(itemName: String, options: DashboardImageExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to an Image file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardImageExportOptions object containing image-specific export options.
-    * @param fileName A string value that specifies the name of the exported file.
-    */
   def ExportDashboardItemToImage(itemName: String, options: DashboardImageExportOptions, fileName: String): Unit = js.native
   /**
     * Exports a dashboard item to a PDF file and writes it to the Response.
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToPdf(itemName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to a PDF file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    */
   def ExportDashboardItemToPdf(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to a PDF file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options An ASPxClientDashboardExportOptions object containing export options to be applied to the exported dashboard item.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportDashboardItemToPdf(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
-  /**
-    * Exports a dashboard item to a PDF file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardPdfExportOptions object containing PDF-specific export options.
-    */
   def ExportDashboardItemToPdf(itemName: String, options: DashboardPdfExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard item to a PDF file with the specified export options and writes it to the Response.
-    * @param itemName A string that is the component name of the dashboard item to be exported.
-    * @param options A DashboardPdfExportOptions object containing PDF-specific export options.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportDashboardItemToPdf(itemName: String, options: DashboardPdfExportOptions, fileName: String): Unit = js.native
   /**
     * Exports dashboard data to the specified file in Excel format.
     */
   def ExportToExcel(): Unit = js.native
-  /**
-    * Exports dashboard data to the specified file in Excel format.
-    * @param options A DashboardExcelExportOptions object containing Excel-specific options.
-    */
   def ExportToExcel(options: DashboardExcelExportOptions): Unit = js.native
-  /**
-    * Exports dashboard data to the specified file in Excel format.
-    * @param options A DashboardExcelExportOptions object containing Excel-specific options.
-    * @param fileName A string value that specifies the name of the exported file.
-    */
   def ExportToExcel(options: DashboardExcelExportOptions, fileName: String): Unit = js.native
   /**
     * Exports a dashboard to an Image file and writes it to the Response.
     */
   def ExportToImage(): Unit = js.native
-  /**
-    * Exports a dashboard to an Image file with the specified export options and writes it to the Response.
-    * @param options A ASPxClientDashboardExportOptions object containing settings that specify parameters affecting how the dashboard is exported.
-    */
   def ExportToImage(options: ASPxClientDashboardExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard to an Image file with the specified export options and writes it to the Response.
-    * @param options A ASPxClientDashboardExportOptions object containing settings that specify parameters affecting how the dashboard is exported.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportToImage(options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
-  /**
-    * Exports a dashboard to an Image file with the specified export options and writes it to the Response.
-    * @param options A DashboardImageExportOptions object containing image-specific export options.
-    */
   def ExportToImage(options: DashboardImageExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard to an Image file with the specified export options and writes it to the Response.
-    * @param options A DashboardImageExportOptions object containing image-specific export options.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportToImage(options: DashboardImageExportOptions, fileName: String): Unit = js.native
   /**
     * Exports a dashboard to a PDF file and writes it to the Response.
     */
   def ExportToPdf(): Unit = js.native
-  /**
-    * Exports a dashboard to a PDF file with the specified export options and writes it to the Response.
-    * @param options A ASPxClientDashboardExportOptions object containing settings that specify parameters affecting how the dashboard is exported.
-    */
   def ExportToPdf(options: ASPxClientDashboardExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard to a PDF file with the specified export options and writes it to the Response.
-    * @param options A ASPxClientDashboardExportOptions object containing settings that specify parameters affecting how the dashboard is exported.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportToPdf(options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
-  /**
-    * Exports a dashboard to a PDF file with the specified export options and writes it to the Response.
-    * @param options A DashboardPdfExportOptions object containing PDF-specific export options.
-    */
   def ExportToPdf(options: DashboardPdfExportOptions): Unit = js.native
-  /**
-    * Exports a dashboard to a PDF file with the specified export options and writes it to the Response.
-    * @param options A DashboardPdfExportOptions object containing PDF-specific export options.
-    * @param fileName A string that specifies the name of the exported file.
-    */
   def ExportToPdf(options: DashboardPdfExportOptions, fileName: String): Unit = js.native
   /**
-    * Returns axis point tuples identifying elements that can be used to perform drill-down in the specified dashboard item.
+    * Returns axis point tuples identifying elements that can be used to perform drill-down in the specified dashboard item. An array of ASPxClientDashboardItemDataAxisPointTuple objects identifying elements that can be used to perform drill-down in the specified dashboard item.
     * @param itemName A String that is the component name of the dashboard item.
     */
   def GetAvailableDrillDownValues(itemName: String): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
   /**
-    * Returns axis point tuples identifying elements that can be selected in the current state of the master filter item.
+    * Returns axis point tuples identifying elements that can be selected in the current state of the master filter item. An array of ASPxClientDashboardItemDataAxisPointTuple objects identifying elements that can be selected in the current state of the master filter item.
     * @param itemName A String that is the component name of the master filter item.
     */
   def GetAvailableFilterValues(itemName: String): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
   /**
-    * Returns names of the predefined ranges available for the specified Range Filter.
+    * Returns names of the predefined ranges available for the specified Range Filter. An array of string values that are names of the available predefined ranges.
     * @param itemName A string value that specifies the component name of the Range Filter dashboard item.
     */
   def GetAvailablePredefinedRanges(itemName: String): js.Array[String] = js.native
   /**
-    * Returns the axis point tuple identifying the current drill-down state.
+    * Returns the axis point tuple identifying the current drill-down state. An ASPxClientDashboardItemDataAxisPointTuple object representing a set of axis points.
     * @param itemName A String that is the component name of the dashboard item.
     */
   def GetCurrentDrillDownValues(itemName: String): ASPxClientDashboardItemDataAxisPointTuple = js.native
   /**
-    * Returns axis point tuples identifying currently selected elements in the master filter item.
+    * Returns axis point tuples identifying currently selected elements in the master filter item. An array of ASPxClientDashboardItemDataAxisPointTuple objects identifying elements that can be selected in the current state of the master filter item.
     * @param itemName A String that is the component name of the master filter item.
     */
   def GetCurrentFilterValues(itemName: String): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
   /**
-    * Returns the name of the currently selected predefined range.
-    * @param itemName A string value that specifies the component name of the Range Filter dashboard item.
+    * Returns the name of the currently selected predefined range. A string value that is the name of the currently selected predefined range.
+    * @param itemName A string value that specifies the component name of the Range Filter or Date Filter dashboard item.
     */
   def GetCurrentPredefinedRange(itemName: String): String = js.native
   /**
-    * Returns the currently selected range in the specified Range Filter dashboard item.
-    * @param itemName A String value that specifies the component name of the Range Filter dashboard item.
+    * Returns the currently selected range in the specified Range Filter or Date Filter dashboard item. A ASPxClientDashboardRangeFilterSelection object that is the selected range.
+    * @param itemName A String value that specifies the component name of the Range Filter or Date Filter dashboard item.
     */
   def GetCurrentRange(itemName: String): ASPxClientDashboardRangeFilterSelection = js.native
   /**
-    * Returns currently selected elements in the master filter item.
+    * Returns currently selected elements in the master filter item. An array of ASPxClientDashboardItemDataAxisPointTuple objects that identify currently selected elements.
     * @param itemName A String that specifies a component name of the master filter item.
     */
   def GetCurrentSelection(itemName: String): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
-  def GetDashboardControl(): js.Object = js.native
+  /**
+    * Gets the DashboardControl object that is the client-side part of the Web Dashboard.
+    */
+  def GetDashboardControl(): js.Any = js.native
   /**
     * Gets the identifier of the dashboard that is displayed in the ASPxClientDashboard.
     */
   def GetDashboardId(): String = js.native
   /**
-    * Gets the state of the dashboard displayed in the ASPxClientDashboard.
+    * Gets the current dashboard state.
     */
   def GetDashboardState(): String = js.native
   /**
-    * Returns the visible range for the specified Range Filter dashboard item.
-    * @param itemName A String value that specifies the component name of the Range Filter dashboard item.
+    * Returns the visible range for the specified Range Filter or Date Filter dashboard item. A ASPxClientDashboardRangeFilterSelection object that is the visible range.
+    * @param itemName A String value that specifies the component name of the Range Filter or Date Filter dashboard item.
     */
   def GetEntireRange(itemName: String): ASPxClientDashboardRangeFilterSelection = js.native
   /**
     * Allows you to obtain options related to exporting a dashboard/dashboard item to the Excel format.
     */
   def GetExcelExportOptions(): DashboardExcelExportOptions = js.native
+  /** @deprecated This method is obsolete now. Use the ASPxClientDashboard.GetPdfExportOptions(), ASPxClientDashboard.GetImageExportOptions() and ASPxClientDashboard.GetExcelExportOptions() methods instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Returns settings that specify parameters affecting how the dashboard is exported.
     */
@@ -359,10 +263,13 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   def GetImageExportOptions(): DashboardImageExportOptions = js.native
   /**
-    * Returns the client data for the specified dashboard item.
+    * Returns the client data for the specified dashboard item. An ASPxClientDashboardItemData object that represents multidimensional data visualized in the dashboard item.
     * @param itemName A string that specifies the component name of the dashboard item.
     */
   def GetItemData(itemName: String): ASPxClientDashboardItemData = js.native
+  /**
+    * Returns the name of the maximized dashboard item.
+    */
   def GetMaximizedDashboardItemName(): String = js.native
   /**
     * Returns dashboard parameter settings and metadata.
@@ -373,13 +280,13 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   def GetPdfExportOptions(): DashboardPdfExportOptions = js.native
   /**
-    * 
-    * @param tabContainerName 
+    * Gets the selected page in the specified tab container. A String object that is the tab page's componentName property value.
+    * @param tabContainerName A String object that is the tab container's componentName property value.
     */
   def GetSelectedTabPage(tabContainerName: String): String = js.native
   /**
-    * 
-    * @param tabContainerName 
+    * Gets the index of the selected page in the specified tab container. A Int32 object that is the tab page's index.
+    * @param tabContainerName A String object that is the tab container's componentName property value.
     */
   def GetSelectedTabPageIndex(tabContainerName: String): Double = js.native
   /**
@@ -401,28 +308,23 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   def LoadDashboard(dashboardId: String): Unit = js.native
   /**
-    * 
-    * @param itemName 
+    * Expands the specified dashboard item to the entire dashboard size to examine data in greater detail.
+    * @param itemName A String object that is the dashboard item component name.
     */
   def MaximizeDashboardItem(itemName: String): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomDataCallback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side CustomDataCallback event.
-    * @param onCallback A ASPxClientDataCallback object that represents the JavaScript function which receives the callback data as a parameter.
+    * Sends a callback to the server and generates the server-side ASPxDashboard.CustomDataCallback event, passing it the specified argument.
+    * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxDashboard.CustomDataCallback event.
+    * @param onCallback An ASPxClientDataCallback object that represents the JavaScript function which receives the callback data as a parameter.
     */
   def PerformDataCallback(parameter: String, onCallback: ASPxClientDataCallback): Unit = js.native
-  /**
-    * Performs a drill-down into the required element.
-    * @param itemName A String that specifies the component name of the dashboard item.
-    * @param axisPointTuple A ASPxClientDashboardItemDataAxisPointTuple object representing a set of axis points.
-    */
-  def PerformDrillDown(itemName: String, axisPointTuple: ASPxClientDashboardItemDataAxisPointTuple): Unit = js.native
   /**
     * Performs a drill-down into the required element by its value.
     * @param itemName A String that species the component name of the dashboard item.
     * @param value A value that will be used to perform a drill-down for the required element.
     */
-  def PerformDrillDown(itemName: String, value: js.Object): Unit = js.native
+  def PerformDrillDown(itemName: String, value: js.Any): Unit = js.native
+  def PerformDrillDown(itemName: String, value: ASPxClientDashboardItemDataAxisPointTuple): Unit = js.native
   /**
     * Performs a drill-up for the specified dashboard item.
     * @param itemName A String that specifies the component name of the dashboard item.
@@ -432,16 +334,11 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * Refreshes an entire dashboard displayed in the Web Dashboard control.
     */
   def Refresh(): Unit = js.native
-  /**
-    * Refreshes the specific item from the dashboard displayed in the Web Dashboard control.
-    * @param itemName A string value that specifies the component name of the dashboard item to be refreshed.
-    */
   def Refresh(itemName: String): Unit = js.native
-  /**
-    * Refreshes specific items from the dashboard displayed in the Web Dashboard control.
-    * @param itemName An array of string values that specify the component names of the dashboard items to be refreshed.
-    */
   def Refresh(itemName: js.Array[String]): Unit = js.native
+  /**
+    * Reloads data in the data sources.
+    */
   def ReloadData(): Unit = js.native
   /**
     * Requests underlying data for the specified dashboard item.
@@ -454,28 +351,28 @@ trait ASPxClientDashboard extends ASPxClientControl {
     args: ASPxClientDashboardItemRequestUnderlyingDataParameters,
     onCompleted: ASPxClientDashboardItemRequestUnderlyingDataCompleted
   ): Unit = js.native
+  /**
+    * Restores the item size if an item is expanded to the entire dashboard size (maximized).
+    */
   def RestoreDashboardItem(): Unit = js.native
   /**
     * Saves a current dashboard to the dashboard storage.
     */
   def SaveDashboard(): Unit = js.native
+  def SetDashboardState(dashboardState: String): Unit = js.native
   /**
-    * Sets the state of the dashboard displayed in the ASPxClientDashboard.
-    * @param dashboardStateString A string value that specifies the state of the dashboard displayed in the ASPxClientDashboard.
-    */
-  def SetDashboardState(dashboardStateString: String): Unit = js.native
-  /**
-    * Sets the state of the dashboard displayed in the ASPxClientDashboard.
+    * Applies the dashboard state to the loaded dashboard.
     * @param dashboardState A JSON object that specifies the dashboard state.
     */
-  def SetDashboardState(dashboardState: js.Object): Unit = js.native
+  def SetDashboardState(dashboardState: js.Any): Unit = js.native
   /**
     * Allows you to specify options related to exporting a dashboard/dashboard item to the Excel format.
     * @param options A DashboardExcelExportOptions object containing options related to exporting a dashboard item to the Excel format.
     */
   def SetExcelExportOptions(options: DashboardExcelExportOptions): Unit = js.native
+  /** @deprecated This method is obsolete now. Use the ASPxClientDashboard.SetPdfExportOptions(), ASPxClientDashboard.SetImageExportOptions() and ASPxClientDashboard.SetExcelExportOptions() methods instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
-    * Specifies settings that specify parameters affecting how the dashboard is exported.
+    * Specifies settings that configures dashboard export parameters.
     * @param options A ASPxClientDashboardExportOptions object containing settings that specify parameters affecting how the dashboard is exported.
     */
   def SetExportOptions(options: ASPxClientDashboardExportOptions): Unit = js.native
@@ -489,11 +386,6 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * @param itemName A String that specifies the component name of the master filter item.
     * @param values Values that will be used to select elements in the master filter item.
     */
-  /**
-    * Selects the required elements in the specified master filter item.
-    * @param itemName A String that species the component name of the master filter item.
-    * @param axisPointTuples An array of ASPxClientDashboardItemDataAxisPointTuple objects used to identify master filter elements.
-    */
   def SetMasterFilter(
     itemName: String,
     values: js.Array[ASPxClientDashboardItemDataAxisPointTuple | js.Array[js.Object]]
@@ -504,26 +396,26 @@ trait ASPxClientDashboard extends ASPxClientControl {
     */
   def SetPdfExportOptions(options: DashboardPdfExportOptions): Unit = js.native
   /**
-    * Selects a predefined range in the Range Filter dashboard item.
-    * @param itemName A String value that specifies the component name of the Range Filter.
+    * Selects a predefined range in the Range Filter or Date Filter dashboard item.
+    * @param itemName A String value that specifies the component name of the Range Filter or Date Filter.
     * @param dateTimePeriodName A String value that specifies the predefined range name.
     */
   def SetPredefinedRange(itemName: String, dateTimePeriodName: String): Unit = js.native
   /**
-    * Selects the required range in the specified Range Filter dashboard item.
-    * @param itemName A String that specifies the component name of the Range Filter dashboard item.
+    * Selects the required range in the specified Range Filter or Date Filter dashboard item.
+    * @param itemName A String that specifies the component name of the Range Filter or Date Filter dashboard item.
     * @param range A ASPxClientDashboardRangeFilterSelection object that specifies a range to be selected.
     */
   def SetRange(itemName: String, range: ASPxClientDashboardRangeFilterSelection): Unit = js.native
   /**
-    * 
-    * @param tabPageName 
+    * Selects the specified tab page by its component name.
+    * @param tabPageName A String object that is the tab page's componentName property value.
     */
   def SetSelectedTabPage(tabPageName: String): Unit = js.native
   /**
-    * 
-    * @param tabContainerName 
-    * @param index 
+    * Selects the specified tab page by its index in the specified tab container.
+    * @param tabContainerName A String object that is the tab container's componentName property value.
+    * @param index A Int32 object that is the tab page's index.
     */
   def SetSelectedTabPageIndex(tabContainerName: String, index: Double): Unit = js.native
   /**
@@ -534,7 +426,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
   /**
     * Invokes the dialog that allows end-users to export the dashboard item to the specified format.
     * @param itemComponentName A string value that specifies the component name of the dashboard item to export.
-    * @param format A string value that specifies the format. For instance, you can use 'PDF, 'Image' or 'Excel'. Note that some items (i.e., ImageDashboardItem) do not support exporting to the 'Excel' format.
+    * @param format A string value that specifies the format. For instance, you can use 'PDF, 'Image' or 'Excel'. Note that some items (i.e., TextBoxDashboardItem or ImageDashboardItem) do not support exporting to the 'Excel' format.
     */
   def ShowExportDashboardItemDialog(itemComponentName: String, format: String): Unit = js.native
   /**
@@ -549,10 +441,13 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * Switches the ASPxClientDashboard to the viewer mode.
     */
   def SwitchToViewer(): Unit = js.native
+  /**
+    * Fires the DashboardTitleToolbarUpdated event.
+    */
   def UpdateDashboardTitleToolbar(): Unit = js.native
   /**
-    * 
-    * @param itemName 
+    * Fires the ItemCaptionToolbarUpdated event for the specified item.
+    * @param itemName A dashboard item name for which the event is fired.
     */
   def UpdateItemCaptionToolbar(itemName: String): Unit = js.native
 }

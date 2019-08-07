@@ -5,48 +5,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the Showing event.
+  * Provides data for the ASPxClientHint.Showing event.
   */
-trait ASPxClientHintShowingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientHintShowingEventArgs")
+@js.native
+class ASPxClientHintShowingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientHintShowingEventArgs class with specified settings.
+    * @param targetElement An object that is the target element of the hint.
+    * @param hintElement An object that is the hint element.
+    * @param contentElement An object that is the hint's content element.
+    * @param titleElement An object that is the hint's title element.
+    * @param cancel true, if the action that raised the event should be canceled; otherwise, false.
+    */
+  def this(
+    targetElement: js.Any,
+    hintElement: js.Any,
+    contentElement: js.Any,
+    titleElement: js.Any,
+    cancel: Boolean
+  ) = this()
   /**
     * Gets or sets a value indicating whether the event should be canceled.
-    * Value: true, if the event should be canceled; otherwise, false.
     */
-  var cancel: Boolean
+  var cancel: Boolean = js.native
   /**
     * Gets the object that is the hint's content.
-    * Value: An object representing the hint's content element related to the event.
     */
-  var contentElement: js.Object
+  var contentElement: js.Any = js.native
   /**
     * Gets the object that is the hint.
-    * Value: An object representing the hint related to the event.
     */
-  var hintElement: js.Object
+  var hintElement: js.Any = js.native
   /**
     * Gets the object that is the hint's target element.
-    * Value: An object representing the hint's target element related to the event.
     */
-  var targetElement: js.Object
+  var targetElement: js.Any = js.native
   /**
     * Gets the object that is the hint's title.
-    * Value: An object representing the hint's title element related to the event.
     */
-  var titleElement: js.Object
-}
-
-object ASPxClientHintShowingEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    contentElement: js.Object,
-    hintElement: js.Object,
-    targetElement: js.Object,
-    titleElement: js.Object
-  ): ASPxClientHintShowingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, contentElement = contentElement, hintElement = hintElement, targetElement = targetElement, titleElement = titleElement)
-  
-    __obj.asInstanceOf[ASPxClientHintShowingEventArgs]
-  }
+  var titleElement: js.Any = js.native
 }
 

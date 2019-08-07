@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle the visibility of hidden symbols.
   */
+@JSGlobal("ShowHiddenSymbolsCommand")
 @js.native
-trait ShowHiddenSymbolsCommand extends CommandWithBooleanStateBase {
+class ShowHiddenSymbolsCommand () extends CommandWithBooleanStateBase {
   /**
-    * Executes the ShowHiddenSymbolsCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ShowHiddenSymbolsCommand command. true if the command has been successfully executed; false if the command execution has failed.
+    * @param show true, to show hidden symbols; otherwise, false.
     */
   def execute(): Boolean = js.native
-  /**
-    * Executes the ShowHiddenSymbolsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param show true to display hidden symbols; otherwise, false.
-    */
   def execute(show: Boolean): Boolean = js.native
 }
 

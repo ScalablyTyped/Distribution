@@ -7,19 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle between the bulleted paragraph and normal text.
   */
-trait ToggleBulletedListCommand extends CommandWithBooleanStateBase {
+@JSGlobal("ToggleBulletedListCommand")
+@js.native
+class ToggleBulletedListCommand () extends CommandBase {
   /**
-    * Executes the ToggleBulletedListCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ToggleBulletedListCommand command.
     */
-  def execute(): Boolean
-}
-
-object ToggleBulletedListCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => js.Any): ToggleBulletedListCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ToggleBulletedListCommand]
-  }
+  def execute(): Boolean = js.native
+  /**
+    * Gets information about the command's state.
+    */
+  def getState(): CommandState[Boolean] = js.native
 }
 

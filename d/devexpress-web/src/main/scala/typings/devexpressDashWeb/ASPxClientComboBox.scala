@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Represent the client-side equivalent of the ASPxComboBox control.
+  * Represents the client-side equivalent of the ASPxComboBox control.
   */
+@JSGlobal("ASPxClientComboBox")
 @js.native
-trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
+class ASPxClientComboBox () extends ASPxClientDropDownEditBase {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -34,41 +35,17 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     */
   var SelectedIndexChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientComboBox]] = js.native
   /**
-    * Adds a new item to the editor specifying the item's display text and returns the index of the added item.
-    * @param text A string value specifying the item's display text.
+    * Adds a new item to the end of the control's items collection. An integer value representing the position at which a new item was added.
+    * @param text Specifies the item's text.
+    * @param value An object that represents the item's associated value.
+    * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
-  /**
-    * Adds a new item to the editor specifying the item's display text and associated value, and returns the index of the added item.
-    * @param text A string value specifying the item's display text.
-    * @param value An object specifying the value associated with the item.
-    */
-  def AddItem(text: String, value: js.Object): Double = js.native
-  /**
-    * Adds a new item to the editor specifying the item's display text, associated value and displayed image, and returns the index of the added item.
-    * @param text A string value specifying the item's display text.
-    * @param value An object specifying the value associated with the item.
-    * @param imageUrl A string value specifying the path to the image displayed by the item.
-    */
-  def AddItem(text: String, value: js.Object, imageUrl: String): Double = js.native
-  /**
-    * Adds a new item to the editor, specifying the item's display text, and returns the index of the added item.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
-    */
-  def AddItem(texts: js.Array[String]): Double = js.native
-  /**
-    * Adds a new item to the end of the control's items collection.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
-    * @param value An object that represents the item's associated value.
-    */
-  def AddItem(texts: js.Array[String], value: js.Object): Double = js.native
-  /**
-    * Adds a new item to the end of the control's items collection.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
-    * @param value An object that represents the item's associated value.
-    * @param imageUrl A string value specifying the path to the image displayed by the item.
-    */
-  def AddItem(texts: js.Array[String], value: js.Object, imageUrl: String): Double = js.native
+  def AddItem(text: String, value: js.Any): Double = js.native
+  def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: js.Array[String]): Double = js.native
+  def AddItem(text: js.Array[String], value: js.Any): Double = js.native
+  def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
   /**
     * Sets the CSS class for a combo box item specified by its index.
     * @param index An integer value specifying the zero-based index of the item.
@@ -83,7 +60,7 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     */
   def AddItemTextCellCssClass(itemIndex: Double, textCellIndex: Double, className: String): Unit = js.native
   /**
-    * Prevents the client combobox editor from being rendered until the EndUpdate method is called.
+    * Prevents the client combobox editor from being rendered until the ASPxClientComboBox.EndUpdate method is called.
     */
   def BeginUpdate(): Unit = js.native
   /**
@@ -91,26 +68,26 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     */
   def ClearItems(): Unit = js.native
   /**
-    * Re-enables editor render operations after a call to the BeginUpdate method and forces an immediate re-rendering.
+    * Re-enables editor render operations after a call to the ASPxClientComboBox.BeginUpdate method and forces an immediate re-rendering.
     */
   def EndUpdate(): Unit = js.native
   /**
     * Determines whether the drop-down content is loaded; if not - loads the content.
     * @param callbackFunction An object that is the JavaScript function that receives the callback data as a parameter. The function is performed after the combo box content is loaded.
     */
-  def EnsureDropDownLoaded(callbackFunction: js.Object): Unit = js.native
+  def EnsureDropDownLoaded(callbackFunction: js.Any): Unit = js.native
   /**
-    * Returns a combo box item by its text.
+    * Returns a combo box item by its text. A ASPxClientListEditItem object that represents the combo box item. null (Nothing in Visual Basic) if the item was not found.
     * @param text A string that specifies the item's text.
     */
   def FindItemByText(text: String): ASPxClientListEditItem = js.native
   /**
-    * Returns a combo box item by its value.
+    * Returns a combo box item by its value. A ASPxClientListEditItem object that represents the combo box item. null (Nothing in Visual Basic) if the item was not found.
     * @param value An object that specifies the item's value.
     */
-  def FindItemByValue(value: js.Object): ASPxClientListEditItem = js.native
+  def FindItemByValue(value: js.Any): ASPxClientListEditItem = js.native
   /**
-    * Returns an item specified by its index within the combo box editor's item collection.
+    * Returns an item specified by its index within the combo box editor's item collection. An ASPxClientListEditItem object representing the collection item found.
     * @param index An integer value specifying the zero-based index of the item to search for.
     */
   def GetItem(index: Double): ASPxClientListEditItem = js.native
@@ -127,55 +104,25 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     */
   def GetSelectedItem(): ASPxClientListEditItem = js.native
   /**
-    * Inserts a new item specified by its display text into the editor's item collection, at the position specified.
-    * @param index An integer value representing the zero-based index of the position where the item should be inserted.
-    * @param text A string value specifying the item's display text.
-    */
-  def InsertItem(index: Double, text: String): Unit = js.native
-  /**
-    * Inserts a new item specified by its display text and associated value into the editor's item collection, at the position specified.
-    * @param index An integer value representing the zero-based index of the position where the item should be inserted.
-    * @param text A string value specifying the item's display text.
-    * @param value An object specifying the value associated with the item.
-    */
-  def InsertItem(index: Double, text: String, value: js.Object): Unit = js.native
-  /**
-    * Inserts a new item specified by its display text, associated value and displayed image into the editor's item collection, at the position specified.
-    * @param index An integer value representing the zero-based index of the position where the item should be inserted.
-    * @param text A string value specifying the item's display text.
-    * @param value An object specifying the value associated with the item.
-    * @param imageUrl A string value specifying the path to the image displayed by the item.
-    */
-  def InsertItem(index: Double, text: String, value: js.Object, imageUrl: String): Unit = js.native
-  /**
     * Adds a new item to the control's items collection at the specified index.
     * @param index An integer value that represents the index position.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
-    */
-  def InsertItem(index: Double, texts: js.Array[String]): Unit = js.native
-  /**
-    * Adds a new item to the control's items collection at the specified index.
-    * @param index An integer value that represents the index position.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
-    * @param value An object that represents the item's associated value.
-    */
-  def InsertItem(index: Double, texts: js.Array[String], value: js.Object): Unit = js.native
-  /**
-    * Adds a new item to the control's items collection at the specified index.
-    * @param index An integer value that represents the index position.
-    * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
     * @param value An object that represents the item's associated value.
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
-  def InsertItem(index: Double, texts: js.Array[String], value: js.Object, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
+  def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
   /**
     * Scrolls the editor's item list, so that the specified item becomes visible.
     * @param index An integer value that specifies the item's index within the editor's client item list.
     */
   def MakeItemVisible(index: Double): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side Callback event.
+    * Sends a callback to the server and generates the server-side ASPxAutoCompleteBoxBase.Callback event, passing it the specified argument.
+    * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxAutoCompleteBoxBase.Callback event.
     */
   def PerformCallback(parameter: String): Unit = js.native
   /**
@@ -196,12 +143,14 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     * @param className A string value specifying the CSS class name.
     */
   def RemoveItemTextCellCssClass(itemIndex: Double, textCellIndex: Double, className: String): Unit = js.native
+  def SetItemAttribute(index: Double, attributeName: String, attributeValue: String): Unit = js.native
   /**
     * Defines the HTML content for the specified combo box item.
     * @param index An integer value specifying the zero-based index of the item.
     * @param html A string value that is the HTML code defining the content of the combo box item.
     */
   def SetItemHtml(index: Double, html: String): Unit = js.native
+  def SetItemTextCellAttribute(itemIndex: Double, textCellIndex: Double, attributeName: String, attributeValue: String): Unit = js.native
   /**
     * Defines the HTML content for the specified combo box item's text cell.
     * @param itemIndex An integer value specifying the zero-based index of the item.
@@ -232,11 +181,17 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     * @param item An ASPxClientListEditItem object that specifies the item to select.
     */
   def SetSelectedItem(item: ASPxClientListEditItem): Unit = js.native
-  /**
-    * Specifies the text displayed within the editor's edit box.
-    * @param text A string value specifying the editor's text.
-    * @param applyFilter true, to use the specified text as a filter and apply it to the editor, otherwise, false.
-    */
   def SetText(text: String, applyFilter: Boolean): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientComboBox")
+@js.native
+object ASPxClientComboBox extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientComboBox type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientComboBox = js.native
 }
 

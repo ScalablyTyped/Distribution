@@ -2,7 +2,7 @@ package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`1`
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`2`
-import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreUtilMod.TextureConfig
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureConfig
 import typings.atTensorflowTfjsDashCore.distTypesMod.PixelData
 import typings.atTensorflowTfjsDashCore.distTypesMod.TypedArray
 import typings.std.Float32Array
@@ -107,8 +107,6 @@ object webglNs extends js.Object {
       physicalCols: Double,
       textureConfig: TextureConfig
     ): Float32Array = js.native
-    def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = js.native
-    def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = js.native
     def uploadDenseMatrixToTexture(
       gl: WebGLRenderingContext,
       debug: Boolean,
@@ -128,8 +126,6 @@ object webglNs extends js.Object {
   @JSName("webgl_util")
   @js.native
   object webglUnderscoreUtilNs extends js.Object {
-    var MAX_TEXTURES_IN_SHADER: Double = js.native
-    var MAX_TEXTURE_SIZE: Double = js.native
     def bindCanvasToFramebuffer(gl: WebGLRenderingContext, debug: Boolean): Unit = js.native
     def bindColorTextureToFramebuffer(gl: WebGLRenderingContext, debug: Boolean, texture: WebGLTexture, framebuffer: WebGLFramebuffer): Unit = js.native
     def bindTextureToProgramUniformSampler(
@@ -175,6 +171,7 @@ object webglNs extends js.Object {
     def getWebGLDisjointQueryTimerVersion(webGLVersion: Double): Double = js.native
     def getWebGLErrorMessage(gl: WebGLRenderingContext, status: Double): String = js.native
     def getWebGLMaxTextureSize(webGLVersion: Double): Double = js.native
+    def hasExtension(gl: WebGLRenderingContext, extensionName: String): Boolean = js.native
     def isDownloadFloatTextureEnabled(webGLVersion: Double): Boolean = js.native
     def isRenderToFloatTextureEnabled(webGLVersion: Double): Boolean = js.native
     def isReshapeFree(shape1: js.Array[Double], shape2: js.Array[Double]): Boolean = js.native
@@ -184,6 +181,8 @@ object webglNs extends js.Object {
     @JSName("isWebGLVersionEnabled")
     def isWebGLVersionEnabled_2(webGLVersion: `2`): Boolean = js.native
     def linkProgram(gl: WebGLRenderingContext, debug: Boolean, program: WebGLProgram): Unit = js.native
+    def resetMaxTextureSize(): Unit = js.native
+    def resetMaxTexturesInShader(): Unit = js.native
     def unbindColorTextureFromFramebuffer(gl: WebGLRenderingContext, debug: Boolean, framebuffer: WebGLFramebuffer): Unit = js.native
     def unbindTextureUnit(gl: WebGLRenderingContext, debug: Boolean, textureUnit: Double): Unit = js.native
     def validateFramebuffer(gl: WebGLRenderingContext): Unit = js.native

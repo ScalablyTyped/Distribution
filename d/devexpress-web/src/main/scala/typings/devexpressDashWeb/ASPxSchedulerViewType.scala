@@ -7,58 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the SchedulerViewType object.
   */
-trait ASPxSchedulerViewType extends js.Object {
+@JSGlobal("ASPxSchedulerViewType")
+@js.native
+class ASPxSchedulerViewType () extends js.Object {
   /**
-    * Gets a string representation equivalent to the Agenda enumeration for use in client scripts.
-    * Value: A string "Agenda", indicating the AgendaView.
+    * Gets a string representation equivalent to the SchedulerViewType.Agenda enumeration for use in client scripts.
     */
-  var Agenda: String
+  var Agenda: String = js.native
   /**
-    * Gets a string representation equivalent of Day enumeration for use in client scripts.
-    * Value: A string "Day", indicating the DayView.
+    * Gets a string representation equivalent of SchedulerViewType.Day enumeration for use in client scripts.
     */
-  var Day: String
+  var Day: String = js.native
   /**
-    * Gets a string representation equivalent of FullWeek enumeration for use in client scripts.
-    * Value: A string "FullWeek", indicating the FullWeekView.
+    * Gets a string representation equivalent of SchedulerViewType.FullWeek enumeration for use in client scripts.
     */
-  var FullWeek: String
+  var FullWeek: String = js.native
   /**
-    * Gets a string representation equivalent of Month enumeration for use in client scripts.
-    * Value: A string "Month", indicating the MonthView.
+    * Gets a string representation equivalent of SchedulerViewType.Month enumeration for use in client scripts.
     */
-  var Month: String
+  var Month: String = js.native
   /**
-    * Gets a string representation equivalent of Timeline enumeration for use in client scripts.
-    * Value: A string "Timeline", indicating the TimelineView.
+    * Gets a string representation equivalent of SchedulerViewType.Timeline enumeration for use in client scripts.
     */
-  var Timeline: String
+  var Timeline: String = js.native
   /**
-    * Gets a string representation equivalent of Week enumeration for use in client scripts.
-    * Value: A string "Week", indicating the WeekView.
+    * Gets a string representation equivalent of SchedulerViewType.Week enumeration for use in client scripts.
     */
-  var Week: String
+  var Week: String = js.native
   /**
-    * Gets a string representation equivalent of WorkWeek enumeration for use in client scripts.
-    * Value: A string "WorkWeek", indicating the WorkWeekView.
+    * Gets a string representation equivalent of SchedulerViewType.WorkWeek enumeration for use in client scripts.
     */
-  var WorkWeek: String
-}
-
-object ASPxSchedulerViewType {
-  @scala.inline
-  def apply(
-    Agenda: String,
-    Day: String,
-    FullWeek: String,
-    Month: String,
-    Timeline: String,
-    Week: String,
-    WorkWeek: String
-  ): ASPxSchedulerViewType = {
-    val __obj = js.Dynamic.literal(Agenda = Agenda, Day = Day, FullWeek = FullWeek, Month = Month, Timeline = Timeline, Week = Week, WorkWeek = WorkWeek)
-  
-    __obj.asInstanceOf[ASPxSchedulerViewType]
-  }
+  var WorkWeek: String = js.native
 }
 

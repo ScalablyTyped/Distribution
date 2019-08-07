@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BeforePaste event.
+  * Provides data for the ASPxClientHtmlEditor.BeforePaste event.
   */
-trait ASPxClientHtmlEditorBeforePasteEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientHtmlEditorBeforePasteEventArgs")
+@js.native
+class ASPxClientHtmlEditorBeforePasteEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initialize a new instance of the ASPxClientHtmlEditorBeforePasteEventArgs class with the specified settings.
+    * @param commandName A string value identifying the command's name.
+    * @param html A string value that specifies the HTML content to paste.
+    */
+  def this(commandName: String, html: String) = this()
   /**
     * Gets the name of the processed command.
-    * Value: A string value identifying the command's name.
     */
-  var commandName: String
+  var commandName: String = js.native
   /**
     * Gets or sets the HTML markup that is about to be pasted to the ASPxHtmlEditor's content.
-    * Value: A string value that specifies the HTML content to paste.
     */
-  var html: String
-}
-
-object ASPxClientHtmlEditorBeforePasteEventArgs {
-  @scala.inline
-  def apply(commandName: String, html: String): ASPxClientHtmlEditorBeforePasteEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName, html = html)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorBeforePasteEventArgs]
-  }
+  var html: String = js.native
 }
 

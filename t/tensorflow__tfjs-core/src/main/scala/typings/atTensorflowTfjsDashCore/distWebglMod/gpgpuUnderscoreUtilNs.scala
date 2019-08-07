@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distWebglMod
 
-import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreUtilMod.TextureConfig
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureConfig
 import typings.atTensorflowTfjsDashCore.distTypesMod.PixelData
 import typings.atTensorflowTfjsDashCore.distTypesMod.TypedArray
 import typings.std.Float32Array
@@ -86,8 +86,6 @@ object gpgpuUnderscoreUtilNs extends js.Object {
     physicalCols: Double,
     textureConfig: TextureConfig
   ): Float32Array = js.native
-  def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = js.native
-  def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = js.native
   def uploadDenseMatrixToTexture(
     gl: WebGLRenderingContext,
     debug: Boolean,

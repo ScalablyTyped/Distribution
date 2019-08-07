@@ -406,6 +406,7 @@ class LayersModel protected () extends Container {
     */
   def predict(x: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def predict(x: Tensor[Rank], args: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def predictOnBatch(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Returns predictions for a single batch of samples.
     *
@@ -415,7 +416,8 @@ class LayersModel protected () extends Container {
     * });
     * model.predictOnBatch(tf.ones([8, 10])).print();
     * ```
-    * @param x: Input samples, as an Tensor
+    * @param x: Input samples, as an Tensor (for models with exactly one
+    *   input) or an array of Tensors (for models with more than one input).
     * @return Tensor(s) of predictions
     */
   /** @doc {heading: 'Models', subheading: 'Classes'} */

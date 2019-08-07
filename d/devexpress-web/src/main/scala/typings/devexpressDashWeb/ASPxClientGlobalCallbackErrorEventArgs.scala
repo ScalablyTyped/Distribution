@@ -5,22 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CallbackError event.
+  * Provides data for the ASPxClientGlobalEvents.CallbackError event.
   */
-trait ASPxClientGlobalCallbackErrorEventArgs extends ASPxClientCallbackErrorEventArgs {
+@JSGlobal("ASPxClientGlobalCallbackErrorEventArgs")
+@js.native
+class ASPxClientGlobalCallbackErrorEventArgs protected () extends ASPxClientCallbackErrorEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGlobalCallbackErrorEventArgs class.
+    * @param control An ASPxClientControl class descendant object that is the control that initiated a callback.
+    * @param message A string value that is the error message.
+    */
+  def this(control: ASPxClientControl, message: String) = this()
   /**
     * Gets an object that initiated a callback.
-    * Value: An <see cref="ASPxClientControl" /> class descendant object that is the control that initiated a callback.
     */
-  var control: ASPxClientControl
-}
-
-object ASPxClientGlobalCallbackErrorEventArgs {
-  @scala.inline
-  def apply(control: ASPxClientControl, handled: Boolean, message: String): ASPxClientGlobalCallbackErrorEventArgs = {
-    val __obj = js.Dynamic.literal(control = control, handled = handled, message = message)
-  
-    __obj.asInstanceOf[ASPxClientGlobalCallbackErrorEventArgs]
-  }
+  var control: ASPxClientControl = js.native
 }
 

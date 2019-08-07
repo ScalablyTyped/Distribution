@@ -5,32 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the AppointmentDrag event.
+  * Provides data for the ASPxClientScheduler.AppointmentDrag event.
   */
-trait ASPxClientAppointmentDragEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientAppointmentDragEventArgs")
+@js.native
+class ASPxClientAppointmentDragEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientAppointmentDragEventArgs class.
+    * @param mouseEvent A mouse event object related to the drag operation.
+    * @param dragInformation An array of ASPxClientAppointmentDragInfo objects storing information about dragged appointments.
+    */
+  def this(mouseEvent: js.Any, dragInformation: js.Array[ASPxClientAppointmentDragInfo]) = this()
   /**
     * Specifies whether or not appointments can be dropped into the intervals over which they are currently dragged.
-    * Value: true to allow dropping appointments; otherwise, false.
     */
-  var allow: Boolean
+  var allow: Boolean = js.native
   /**
     * Provides information about dragged appointments.
-    * Value: An array of ASPxClientAppointmentDragInfo objects storing information about dragged appointments.
     */
-  var dragInformation: js.Array[ASPxClientAppointmentDragInfo]
+  var dragInformation: js.Array[ASPxClientAppointmentDragInfo] = js.native
   /**
     * Gets a mouse event object related to the current drag operation.
-    * Value: An object providing event properties specific to mouse events.
     */
-  var mouseEvent: js.Object
-}
-
-object ASPxClientAppointmentDragEventArgs {
-  @scala.inline
-  def apply(allow: Boolean, dragInformation: js.Array[ASPxClientAppointmentDragInfo], mouseEvent: js.Object): ASPxClientAppointmentDragEventArgs = {
-    val __obj = js.Dynamic.literal(allow = allow, dragInformation = dragInformation, mouseEvent = mouseEvent)
-  
-    __obj.asInstanceOf[ASPxClientAppointmentDragEventArgs]
-  }
+  var mouseEvent: js.Any = js.native
 }
 

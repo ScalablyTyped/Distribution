@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A method that will handle the splitter's client events concerning manipulations with a pane.
   */
-trait ASPxClientSplitterPaneEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientSplitterPaneEventArgs")
+@js.native
+class ASPxClientSplitterPaneEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientSplitterPaneEventArgs class.
+    * @param pane A ASPxClientSplitterPane object representing a splitter pane related to the generated event.
+    */
+  def this(pane: ASPxClientSplitterPane) = this()
   /**
     * Gets the pane object related to the event.
-    * Value: An ASPxClientSplitterPane object, manipulations on which forced the event to be raised.
     */
-  var pane: ASPxClientSplitterPane
-}
-
-object ASPxClientSplitterPaneEventArgs {
-  @scala.inline
-  def apply(pane: ASPxClientSplitterPane): ASPxClientSplitterPaneEventArgs = {
-    val __obj = js.Dynamic.literal(pane = pane)
-  
-    __obj.asInstanceOf[ASPxClientSplitterPaneEventArgs]
-  }
+  var pane: ASPxClientSplitterPane = js.native
 }
 

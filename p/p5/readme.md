@@ -1,7 +1,7 @@
 
 # Scala.js typings for p5
 
-Typings are for version 0.7
+Typings are for version 0.9
 
 ## Library description:
 [![Build Status](https://travis-ci.org/processing/p5.js.svg?branch=master)](https://travis-ci.org/processing/p5.js) [![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)

@@ -5,37 +5,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditStartEditing event.
+  * Provides data for the ASPxClientGridView.BatchEditStartEditing event.
   */
-trait ASPxClientGridViewBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditStartEditingEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditStartEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditStartEditingEventArgs class.
+    * @param visibleIndex An integer value that is the row's visible index.
+    * @param focusedColumn An  object that is the focused row.
+    * @param rowValues An object that provides the row values.
+    * @param key An object that provides the row's key.
+    */
+  def this(visibleIndex: Double, focusedColumn: ASPxClientGridViewColumn, rowValues: js.Any, key: js.Any) = this()
   /**
     * Gets the grid column that owns a cell that is about to be edited.
-    * Value: An <see cref="ASPxClientGridViewColumn" /> object that is the focused grid column.
     */
-  var focusedColumn: ASPxClientGridViewColumn
+  var focusedColumn: ASPxClientGridViewColumn = js.native
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about editable cells.
-    * Value: A hashtable that stores information about editable cells.
     */
-  var rowValues: js.Object
+  var rowValues: js.Any = js.native
   /**
     * Gets the visible index of the row whose cells are about to be edited.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the row.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewBatchEditStartEditingEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    focusedColumn: ASPxClientGridViewColumn,
-    rowValues: js.Object,
-    visibleIndex: Double
-  ): ASPxClientGridViewBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, focusedColumn = focusedColumn, rowValues = rowValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditStartEditingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

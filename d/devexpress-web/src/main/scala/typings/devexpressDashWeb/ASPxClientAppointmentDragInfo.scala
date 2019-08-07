@@ -7,46 +7,43 @@ import scala.scalajs.js.annotation._
 /**
   * Stores information about an appointment drag operation.
   */
-trait ASPxClientAppointmentDragInfo extends js.Object {
+@JSGlobal("ASPxClientAppointmentDragInfo")
+@js.native
+class ASPxClientAppointmentDragInfo protected () extends js.Object {
+  /**
+    * Initializes a new instance of the ASPxClientAppointmentDragInfo class.
+    * @param appointmentId A string containing an appointment identifier.
+    * @param oldInterval An ASPxClientTimeInterval object specifying the appointment's interval before the drag operation.
+    * @param oldResources A array of strings containing identifiers of resources that were associated with the appointment before the drag operation.
+    * @param newInterval An ASPxClientTimeInterval object specifying the appointment's interval after the drag operation.
+    * @param newResources A array of strings containing identifiers of resources associated with the appointment after the drag operation.
+    */
+  def this(
+    appointmentId: String,
+    oldInterval: ASPxClientTimeInterval,
+    oldResources: js.Array[String],
+    newInterval: ASPxClientTimeInterval,
+    newResources: js.Array[String]
+  ) = this()
   /**
     * Gets the dragged appointment's identifier.
-    * Value: A string containing an appointment identifier.
     */
-  var appointmentId: String
+  var appointmentId: String = js.native
   /**
     * Gets the appointment's interval after the drag operation.
-    * Value: An <see cref="ASPxClientTimeInterval" /> object representing the interval assigned to the appointment.
     */
-  var newInterval: ASPxClientTimeInterval
+  var newInterval: ASPxClientTimeInterval = js.native
   /**
     * Gets resources associated with the appointment after the drag operation.
-    * Value: An array of strings containing resource identifiers.
     */
-  var newResources: js.Array[String]
+  var newResources: js.Array[String] = js.native
   /**
     * Gets the appointment's interval before the drag operation.
-    * Value: An <see cref="ASPxClientTimeInterval" /> object representing the interval assigned to the appointment.
     */
-  var oldInterval: ASPxClientTimeInterval
+  var oldInterval: ASPxClientTimeInterval = js.native
   /**
     * Gets resources that were associated with the appointment before the drag operation.
-    * Value: A array of strings containing resource identifiers.
     */
-  var oldResources: js.Array[String]
-}
-
-object ASPxClientAppointmentDragInfo {
-  @scala.inline
-  def apply(
-    appointmentId: String,
-    newInterval: ASPxClientTimeInterval,
-    newResources: js.Array[String],
-    oldInterval: ASPxClientTimeInterval,
-    oldResources: js.Array[String]
-  ): ASPxClientAppointmentDragInfo = {
-    val __obj = js.Dynamic.literal(appointmentId = appointmentId, newInterval = newInterval, newResources = newResources, oldInterval = oldInterval, oldResources = oldResources)
-  
-    __obj.asInstanceOf[ASPxClientAppointmentDragInfo]
-  }
+  var oldResources: js.Array[String] = js.native
 }
 

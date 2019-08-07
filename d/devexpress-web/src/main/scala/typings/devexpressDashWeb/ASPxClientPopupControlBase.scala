@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Serves as a base class for the ASPxClientPopupControl classes.
+  * Serves as a base class for the ASPxClientDockPanel and ASPxClientPopupControl classes.
   */
+@JSGlobal("ASPxClientPopupControlBase")
 @js.native
-trait ASPxClientPopupControlBase extends ASPxClientControl {
+class ASPxClientPopupControlBase () extends ASPxClientControl {
   /**
     * Occurs on the client side when window resizing completes.
     */
@@ -74,13 +75,13 @@ trait ASPxClientPopupControlBase extends ASPxClientControl {
     */
   def GetContentHtml(): String = js.native
   /**
-    * Returns an iframe object containing a web page specified via the control's SetContentUrl client method).
+    * Returns an iframe object containing a web page specified via the control's ASPxPopupControlBase.ContentUrl property (or the ASPxClientPopupControlBase.SetContentUrl client method).
     */
-  def GetContentIFrame(): js.Object = js.native
+  def GetContentIFrame(): js.Any = js.native
   /**
-    * Returns an iframe object containing a web page specified via the control's SetContentUrl client method).
+    * Returns an iframe object containing a web page specified via the control's ASPxPopupControlBase.ContentUrl property (or the ASPxClientPopupControlBase.SetContentUrl client method).
     */
-  def GetContentIFrameWindow(): js.Object = js.native
+  def GetContentIFrameWindow(): js.Any = js.native
   /**
     * Returns the URL pointing to the web page displayed within the control's window.
     */
@@ -130,8 +131,8 @@ trait ASPxClientPopupControlBase extends ASPxClientControl {
     */
   def IsVisible(): Boolean = js.native
   /**
-    * Sends a callback to the server and generates the server-side WindowCallback event, passing the specified argument to it.
-    * @param parameter A string value that is any information that needs to be sent to the server-side WindowCallback event.
+    * Sends a callback to the server and generates the server-side ASPxPopupControlBase.WindowCallback event, passing the specified argument to it.
+    * @param parameter A string value that is any information that needs to be sent to the server-side ASPxPopupControlBase.WindowCallback event.
     */
   def PerformCallback(parameter: String): Unit = js.native
   /**
@@ -179,7 +180,7 @@ trait ASPxClientPopupControlBase extends ASPxClientControl {
     */
   def SetHeaderNavigateUrl(value: String): Unit = js.native
   /**
-    * Specifies the text displayed within a window's header.
+    * Specifies the  popup window's header text.
     * @param value A string value that specifies a window's header text.
     */
   def SetHeaderText(value: String): Unit = js.native
@@ -194,19 +195,16 @@ trait ASPxClientPopupControlBase extends ASPxClientControl {
     */
   def SetPinned(value: Boolean): Unit = js.native
   /**
-    * Invokes the control's window.
-    */
-  def Show(): Unit = js.native
-  /**
     * Invokes the control's window at the popup element with the specified index.
     * @param popupElementIndex An integer value specifying the zero-based index of the popup element.
     */
+  def Show(): Unit = js.native
   def Show(popupElementIndex: Double): Unit = js.native
   /**
     * Invokes the control's window and displays it over the specified HTML element.
     * @param htmlElement An object specifying the HTML element relative to whose position the window is invoked.
     */
-  def ShowAtElement(htmlElement: js.Object): Unit = js.native
+  def ShowAtElement(htmlElement: js.Any): Unit = js.native
   /**
     * Invokes the control's window and displays it over an HTML element specified by its unique identifier.
     * @param id A string value that specifies the hierarchically qualified identifier of an HTML element relative to whose position the window is invoked.

@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
 import typings.std.Float32Array
+import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +15,8 @@ object ^ extends js.Object {
   def getMatrixSizeFromUnpackedArraySize(unpackedSize: Double, channelsPerTexture: Double): Double = js.native
   def getPackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = js.native
   def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = js.native
+  def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = js.native
+  def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = js.native
   def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = js.native
   def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = js.native
 }

@@ -7,30 +7,28 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern manipulations on items.
   */
-trait ASPxClientNavBarItemEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientNavBarItemEventArgs")
+@js.native
+class ASPxClientNavBarItemEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientNavBarItemEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param item An ASPxClientNavBarItem object that represents an item related to the event.
+    * @param htmlElement An HTML object that contains the processed navbar item.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(processOnServer: Boolean, item: ASPxClientNavBarItem, htmlElement: js.Any, htmlEvent: js.Any) = this()
   /**
     * Gets the HTML object that contains the processed navbar item.
-    * Value: An object representing a container for the navbar item related to the event.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
+  var htmlEvent: js.Any = js.native
   /**
     * Gets the item object related to the event.
-    * Value: An ASPxClientNavBarItem object, manipulations on which forced the event to be raised.
     */
-  var item: ASPxClientNavBarItem
-}
-
-object ASPxClientNavBarItemEventArgs {
-  @scala.inline
-  def apply(htmlElement: js.Object, htmlEvent: js.Object, item: ASPxClientNavBarItem, processOnServer: Boolean): ASPxClientNavBarItemEventArgs = {
-    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientNavBarItemEventArgs]
-  }
+  var item: ASPxClientNavBarItem = js.native
 }
 

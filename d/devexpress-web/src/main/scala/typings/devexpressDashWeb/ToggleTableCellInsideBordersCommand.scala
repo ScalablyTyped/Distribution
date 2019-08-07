@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle inner borders for selected cells on/off.
   */
-trait ToggleTableCellInsideBordersCommand extends CommandWithBooleanStateBase {
+@JSGlobal("ToggleTableCellInsideBordersCommand")
+@js.native
+class ToggleTableCellInsideBordersCommand () extends CommandWithBooleanStateBase {
   /**
-    * Executes the ToggleTableCellInsideBordersCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ToggleTableCellInsideBordersCommand command.
     */
-  def execute(): Boolean
-}
-
-object ToggleTableCellInsideBordersCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => js.Any): ToggleTableCellInsideBordersCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ToggleTableCellInsideBordersCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

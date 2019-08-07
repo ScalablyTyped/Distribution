@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxSpreadsheet object.
   */
+@JSGlobal("ASPxClientSpreadsheet")
 @js.native
-trait ASPxClientSpreadsheet extends ASPxClientControl {
+class ASPxClientSpreadsheet () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -84,33 +85,33 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
   /**
     * Gets the value of the currently active cell.
     */
-  def GetActiveCellValue(): js.Object = js.native
+  def GetActiveCellValue(): js.Any = js.native
   /**
     * Gets a name of the worksheet that is currently displayed within the spreadsheet.
     */
   def GetActiveSheetName(): String = js.native
   /**
-    * Gets the specified cell's bounds.
+    * Gets the specified cell's bounds. An ASPxClientSpreadsheetRectangle instance defining the rectangle with the specified position and size.
     * @param colModelIndex An integer value specifying the zero-based column index.
     * @param rowModelIndex An integer value specifying the zero-based row index.
     */
   def GetCellBounds(colModelIndex: Double, rowModelIndex: Double): ASPxClientSpreadsheetRectangle = js.native
   /**
-    * Returns the comment associated with the specified data cell.
+    * Returns the comment associated with the specified data cell. An object representing the specified cell's comment.
     * @param colModelIndex An integer value specifying the data cell's column index.
     * @param rowModelIndex An integer value specifying the data cell's row index.
     */
-  def GetCellComment(colModelIndex: Double, rowModelIndex: Double): js.Object = js.native
+  def GetCellComment(colModelIndex: Double, rowModelIndex: Double): js.Any = js.native
   /**
-    * Gets the value of the specified cell.
+    * Gets the value of the specified cell. An object representing the specified cell's value.
     * @param colModelIndex An integer value specifying the cell's column index.
     * @param rowModelIndex An integer value specifying the cell's row index.
     */
-  def GetCellValue(colModelIndex: Double, rowModelIndex: Double): js.Object = js.native
+  def GetCellValue(colModelIndex: Double, rowModelIndex: Double): js.Any = js.native
   /**
     * Returns the type of the element currently being edited in the Spreadsheet control.
     */
-  def GetEditMode(): js.Any = js.native
+  def GetEditMode(): ASPxClientSpreadsheetEditMode = js.native
   /**
     * Gets access to the client ribbon object.
     */
@@ -122,27 +123,29 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
   /**
     * Returns the control's view mode.
     */
-  def GetViewMode(): js.Any = js.native
+  def GetViewMode(): ASPxClientSpreadsheetViewMode = js.native
   /**
     * Indicates whether any unsaved changes are contained in the current document.
     */
   def HasUnsavedChanges(): Boolean = js.native
   /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side event.
-    */
-  def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
+    * Sends a callback to the server and generates the server-side ASPxSpreadsheet.Callback event, passing it the specified argument.
     * @param parameter A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(parameter: String): Unit = js.native
+  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  /** @deprecated Use the PerformCallback method instead. */
   /**
-    * Sends a callback to the server and generates the server-side DocumentCallback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side DocumentCallback event.
+    * Sends a callback to the server and generates the server-side ASPxSpreadsheet.DocumentCallback event, passing it the specified argument.
+    * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxSpreadsheet.DocumentCallback event.
     */
   def PerformDocumentCallback(parameter: String): Unit = js.native
+  /**
+    * Invokes the browser print dialog to print the sheet content.
+    * @param target The target name.
+    */
+  def Print(target: String): Unit = js.native
   /**
     * Reconnects the Spreadsheet to an external ribbon.
     */
@@ -161,6 +164,17 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
     * Specifies the control's view mode.
     * @param mode A value specifying the control's view mode.
     */
-  def SetViewMode(mode: js.Any): Unit = js.native
+  def SetViewMode(mode: ASPxClientSpreadsheetViewMode): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientSpreadsheet")
+@js.native
+object ASPxClientSpreadsheet extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientSpreadsheet type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientSpreadsheet = js.native
 }
 

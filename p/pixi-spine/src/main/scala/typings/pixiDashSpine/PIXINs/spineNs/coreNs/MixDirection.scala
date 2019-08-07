@@ -11,13 +11,13 @@ sealed trait MixDirection extends js.Object
 @js.native
 object MixDirection extends js.Object {
   @js.native
-  sealed trait in extends MixDirection
+  sealed trait mixIn extends MixDirection
   
   @js.native
-  sealed trait out extends MixDirection
+  sealed trait mixOut extends MixDirection
   
-  /* 0 */ val in: typings.pixiDashSpine.PIXINs.spineNs.coreNs.MixDirection.in with Double = js.native
-  /* 1 */ val out: typings.pixiDashSpine.PIXINs.spineNs.coreNs.MixDirection.out with Double = js.native
+  /* 0 */ val mixIn: typings.pixiDashSpine.PIXINs.spineNs.coreNs.MixDirection.mixIn with Double = js.native
+  /* 1 */ val mixOut: typings.pixiDashSpine.PIXINs.spineNs.coreNs.MixDirection.mixOut with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MixDirection with Double] = js.native
 }

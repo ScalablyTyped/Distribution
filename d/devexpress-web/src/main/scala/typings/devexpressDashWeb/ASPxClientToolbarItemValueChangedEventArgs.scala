@@ -5,27 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ItemValueChanged event.
+  * Provides data for the ReportToolbarClientSideEvents.ItemValueChanged event.
   */
-trait ASPxClientToolbarItemValueChangedEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientToolbarItemValueChangedEventArgs")
+@js.native
+class ASPxClientToolbarItemValueChangedEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * For internal use. Initializes a new instance of the ASPxClientToolbarItemValueChangedEventArgs class with the specified settings.
+    */
+  def this(processOnServer: Boolean, item: ASPxClientMenuItem, editor: ASPxClientControl) = this()
   /**
     * Provides access to the toolbar's value editor on the client.
-    * Value: An ASPxClientControl descendant.
     */
-  var editor: ASPxClientControl
+  var editor: ASPxClientControl = js.native
   /**
     * Gets the menu item object related to the event.
-    * Value: An ASPxClientMenuItem object, manipulations on which forced the event to be raised.
     */
-  var item: ASPxClientMenuItem
-}
-
-object ASPxClientToolbarItemValueChangedEventArgs {
-  @scala.inline
-  def apply(editor: ASPxClientControl, item: ASPxClientMenuItem, processOnServer: Boolean): ASPxClientToolbarItemValueChangedEventArgs = {
-    val __obj = js.Dynamic.literal(editor = editor, item = item, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientToolbarItemValueChangedEventArgs]
-  }
+  var item: ASPxClientMenuItem = js.native
 }
 

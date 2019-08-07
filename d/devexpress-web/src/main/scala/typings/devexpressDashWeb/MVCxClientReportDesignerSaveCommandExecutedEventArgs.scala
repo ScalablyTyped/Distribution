@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SaveCommandExecuted event.
+  * Provides data for the MVCxClientReportDesigner.SaveCommandExecuted event.
   */
-trait MVCxClientReportDesignerSaveCommandExecutedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("MVCxClientReportDesignerSaveCommandExecutedEventArgs")
+@js.native
+class MVCxClientReportDesignerSaveCommandExecutedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the MVCxClientReportDesignerSaveCommandExecutedEventArgs class with the specified settings.
+    * @param result A string value that represents the result of server-side processing.
+    */
+  def this(result: String) = this()
   /**
     * Returns the operation result.
-    * Value: A String value, specifying the operation result.
     */
-  var Result: String
-}
-
-object MVCxClientReportDesignerSaveCommandExecutedEventArgs {
-  @scala.inline
-  def apply(Result: String): MVCxClientReportDesignerSaveCommandExecutedEventArgs = {
-    val __obj = js.Dynamic.literal(Result = Result)
-  
-    __obj.asInstanceOf[MVCxClientReportDesignerSaveCommandExecutedEventArgs]
-  }
+  var Result: String = js.native
 }
 

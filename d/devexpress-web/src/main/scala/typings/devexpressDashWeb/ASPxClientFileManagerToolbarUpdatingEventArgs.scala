@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ToolbarUpdating event.
+  * Provides data for the ASPxClientFileManager.ToolbarUpdating event.
   */
-trait ASPxClientFileManagerToolbarUpdatingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerToolbarUpdatingEventArgs")
+@js.native
+class ASPxClientFileManagerToolbarUpdatingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerToolbarUpdatingEventArgs class with the specified setting.
+    * @param activeAreaName The active file manager area. Initializes the ASPxClientFileManagerToolbarUpdatingEventArgs.activeAreaName property.
+    */
+  def this(activeAreaName: String) = this()
   /**
     * Gets the name of the currently active file manager area.
-    * Value: A string value that identifies the active area.
     */
-  var activeAreaName: String
-}
-
-object ASPxClientFileManagerToolbarUpdatingEventArgs {
-  @scala.inline
-  def apply(activeAreaName: String): ASPxClientFileManagerToolbarUpdatingEventArgs = {
-    val __obj = js.Dynamic.literal(activeAreaName = activeAreaName)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerToolbarUpdatingEventArgs]
-  }
+  var activeAreaName: String = js.native
 }
 

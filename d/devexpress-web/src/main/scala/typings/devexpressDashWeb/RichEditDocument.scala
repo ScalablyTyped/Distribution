@@ -7,76 +7,49 @@ import scala.scalajs.js.annotation._
 /**
   * Contains a set properties providing the current information about certain document structural elements.
   */
-trait RichEditDocument extends js.Object {
+@JSGlobal("RichEditDocument")
+@js.native
+class RichEditDocument () extends js.Object {
   /**
     * Provides information about numbered paragraphs in the document.
-    * Value: An array of AbstractNumberingList objects storing the information about numbered paragraphs.
     */
-  var abstractNumberingListsInfo: js.Array[AbstractNumberingList]
+  val abstractNumberingListsInfo: js.Array[AbstractNumberingList] = js.native
   /**
     * Provides the information about the active sub-document.
-    * Value: A <see cref="SubDocument" /> object storing information about the essential document functionality.
     */
-  var activeSubDocument: SubDocument
+  val activeSubDocument: SubDocument = js.native
   /**
     * Provides information about character styles in the current document.
-    * Value: An array of CharacterStyle objects storing information about character styles.
     */
-  var characterStylesInfo: js.Array[CharacterStyle]
+  val characterStylesInfo: js.Array[CharacterStyle] = js.native
   /**
     * Provides access to the document's main sub-document.
-    * Value: A <see cref="SubDocument" /> object storing the main sub-document.
     */
-  var mainSubDocument: SubDocument
+  val mainSubDocument: SubDocument = js.native
   /**
     * Provides information about paragraph styles in the current document.
-    * Value: An array of ParagraphStyle objects storing information about paragraph styles.
     */
-  var paragraphStylesInfo: js.Array[ParagraphStyle]
+  val paragraphStylesInfo: js.Array[ParagraphStyle] = js.native
   /**
     * Provides information about sections in the current document.
-    * Value: An array of Section objects storing information about sections.
     */
-  var sectionsInfo: js.Array[Section]
+  val sectionsInfo: js.Array[Section] = js.native
   /**
     * Provides information about spell checking in the current document.
-    * Value: A <see cref="SpellingInfo" /> object.
     */
-  var spellingInfo: SpellingInfo
+  val spellingInfo: SpellingInfo = js.native
   /**
     * Provides access to the document's sub-documents.
-    * Value: An array of the <see cref="SubDocument[]" />
     */
-  var subDocuments: js.Array[SubDocument]
+  val subDocuments: js.Array[SubDocument] = js.native
   /**
     * Provides information about table styles in the current document.
-    * Value: An array of TableStyle objects storing information about table styles.
     */
-  var tableStylesInfo: js.Array[TableStyle]
+  val tableStylesInfo: js.Array[TableStyle] = js.native
   /**
-    * Returns the sub-document with the specified identifier.
+    * Returns the sub-document with the specified identifier. A SubDocument value specifying the sub-document.
     * @param subDocumentId An integer value specifying the required sub-document.
     */
-  def getSubDocumentById(subDocumentId: Double): SubDocument
-}
-
-object RichEditDocument {
-  @scala.inline
-  def apply(
-    abstractNumberingListsInfo: js.Array[AbstractNumberingList],
-    activeSubDocument: SubDocument,
-    characterStylesInfo: js.Array[CharacterStyle],
-    getSubDocumentById: Double => SubDocument,
-    mainSubDocument: SubDocument,
-    paragraphStylesInfo: js.Array[ParagraphStyle],
-    sectionsInfo: js.Array[Section],
-    spellingInfo: SpellingInfo,
-    subDocuments: js.Array[SubDocument],
-    tableStylesInfo: js.Array[TableStyle]
-  ): RichEditDocument = {
-    val __obj = js.Dynamic.literal(abstractNumberingListsInfo = abstractNumberingListsInfo, activeSubDocument = activeSubDocument, characterStylesInfo = characterStylesInfo, getSubDocumentById = js.Any.fromFunction1(getSubDocumentById), mainSubDocument = mainSubDocument, paragraphStylesInfo = paragraphStylesInfo, sectionsInfo = sectionsInfo, spellingInfo = spellingInfo, subDocuments = subDocuments, tableStylesInfo = tableStylesInfo)
-  
-    __obj.asInstanceOf[RichEditDocument]
-  }
+  def getSubDocumentById(subDocumentId: Double): SubDocument = js.native
 }
 

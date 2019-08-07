@@ -24,7 +24,13 @@ class Type[A, O, I] protected ()
   val _O: O = js.native
   /* CompleteClass */
   override val name: String = js.native
+  /**
+    * @since 1.0.0
+    */
   def asDecoder(): Decoder[I, A] = js.native
+  /**
+    * @since 1.0.0
+    */
   def asEncoder(): Encoder[A, O] = js.native
   /* CompleteClass */
   override def decode(i: I): Validation[A] = js.native
@@ -32,6 +38,9 @@ class Type[A, O, I] protected ()
   override def encode(a: A): O = js.native
   /** a custom type guard */
   def is(u: js.Any): /* is A */ Boolean = js.native
+  /**
+    * @since 1.0.0
+    */
   def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB]): Type[B, O, I] = js.native
   def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB], name: String): Type[B, O, I] = js.native
   /* CompleteClass */

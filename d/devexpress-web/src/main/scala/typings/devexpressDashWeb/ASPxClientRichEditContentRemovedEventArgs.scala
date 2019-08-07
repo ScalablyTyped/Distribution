@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ContentRemoved event.
+  * Provides data for the ASPxClientRichEdit.ContentRemoved event.
   */
-trait ASPxClientRichEditContentRemovedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditContentRemovedEventArgs")
+@js.native
+class ASPxClientRichEditContentRemovedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditContentRemovedEventArgs object. For internal use only.
+    * @param subDocumentId An identifier of a sub-document that contained the removed content.
+    * @param interval An interval object that relates to the removed content.
+    */
+  def this(subDocumentId: Double, interval: Interval) = this()
   /**
     * Gets the text buffer interval related to the removed content.
-    * Value: An object that stores the removed content's length and position.
     */
-  var interval: Interval
+  var interval: Interval = js.native
   /**
     * Gets the active sub-document's identifier.
-    * Value: An integer value specifying the sub-document's identifier
     */
-  var subDocumentId: Double
-}
-
-object ASPxClientRichEditContentRemovedEventArgs {
-  @scala.inline
-  def apply(interval: Interval, subDocumentId: Double): ASPxClientRichEditContentRemovedEventArgs = {
-    val __obj = js.Dynamic.literal(interval = interval, subDocumentId = subDocumentId)
-  
-    __obj.asInstanceOf[ASPxClientRichEditContentRemovedEventArgs]
-  }
+  var subDocumentId: Double = js.native
 }
 

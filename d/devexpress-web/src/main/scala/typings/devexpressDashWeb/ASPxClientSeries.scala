@@ -7,162 +7,107 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the Series class.
   */
-trait ASPxClientSeries extends ASPxClientWebChartElementNamed {
+@JSGlobal("ASPxClientSeries")
+@js.native
+class ASPxClientSeries () extends ASPxClientWebChartElementNamed {
   /**
     * Gets a value indicating whether a crosshair cursor is enabled.
-    * Value: true if a crosshair cursor is enabled; otherwise, false.
     */
-  var actualCrosshairEnabled: Boolean
+  var actualCrosshairEnabled: Boolean = js.native
   /**
     * Gets a value indicating whether a crosshair label should be shown for this series.
-    * Value: true if crosshair labels are visible; otherwise, false.
     */
-  var actualCrosshairLabelVisibility: Boolean
+  var actualCrosshairLabelVisibility: Boolean = js.native
   /**
     * Gets a value that specifies the scale type for the argument data of the series' data points.
-    * Value: A string object which contains the current scale type.
     */
-  var argumentScaleType: String
+  var argumentScaleType: String = js.native
   /**
     * Gets the X-Axis that is used to plot the current series on the XY-diagram.
-    * Value: A string object, which represents the X-axis name.
     */
-  var axisX: String
+  var axisX: String = js.native
   /**
     * Gets the Y-Axis that is used to plot the current series on the XY-diagram.
-    * Value: A string object, which represents the Y-axis name.
     */
-  var axisY: String
+  var axisY: String = js.native
   /**
     * Gets the color of a series.
-    * Value: A string value.
     */
-  var color: String
+  var color: String = js.native
   /**
     * Gets a string which represents the pattern specifying the text to be displayed within a crosshair label for the current Series  type.
-    * Value: A Empty.
     */
-  var crosshairLabelPattern: String
+  var crosshairLabelPattern: String = js.native
   /**
     * Returns a collection of crosshair value items.
-    * Value: An array of ASPxClientCrosshairValueItem objects.
     */
-  var crosshairValueItems: js.Array[ASPxClientCrosshairValueItem]
+  var crosshairValueItems: js.Array[ASPxClientCrosshairValueItem] = js.native
+  /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of Fibonacci Indicators.
-    * Value: An array of ASPxClientFibonacciIndicator objects, that represent the collection of Fibonacci Indicators.
     */
-  var fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator]
+  var fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator] = js.native
   /**
     * This property is intended for internal use only.
-    * Value: A String value.
     */
-  var groupedElementsPattern: String
+  var groupedElementsPattern: String = js.native
   /**
     * Gets the series' collection of indicators.
-    * Value: An array of ASPxClientIndicator objects, that belong to the series.
     */
-  var indicators: js.Array[ASPxClientIndicator]
+  var indicators: js.Array[ASPxClientIndicator] = js.native
   /**
     * Gets the settings of series labels.
-    * Value: An ASPxClientSeriesLabel object, which provides the series label settings.
     */
-  var label: ASPxClientSeriesLabel
+  var label: ASPxClientSeriesLabel = js.native
   /**
     * Gets the pane that is used to plot the current series on the XY-diagram.
-    * Value: A string object, which represents the pane's name.
     */
-  var pane: String
+  var pane: String = js.native
   /**
     * Gets the series' collection of data points.
-    * Value: An array of ASPxClientSeriesPoint objects, that represent the series' data points.
     */
-  var points: js.Array[ASPxClientSeriesPoint]
+  var points: js.Array[ASPxClientSeriesPoint] = js.native
+  /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of regression lines.
-    * Value: An array of ASPxClientRegressionLine objects which represent regression lines available for the series.
     */
-  var regressionLines: js.Array[ASPxClientRegressionLine]
+  var regressionLines: js.Array[ASPxClientRegressionLine] = js.native
   /**
     * Gets a value that defines a group for stacked series.
-    * Value: A string value.
     */
-  var stackedGroup: String
+  var stackedGroup: String = js.native
   /**
     * Provides access to the collection of series titles.
-    * Value: An array of ASPxClientSeriesTitle objects, that represent the collection of series titles.
     */
-  var titles: js.Array[ASPxClientSeriesTitle]
+  var titles: js.Array[ASPxClientSeriesTitle] = js.native
   /**
     * Gets a value that specifies whether or not a tooltip is enabled for a chart.
-    * Value: true - a tooltip is enabled for a chart; false - a tooltip is disabled.
     */
-  var toolTipEnabled: Boolean
+  var toolTipEnabled: Boolean = js.native
   /**
     * Gets an image to be displayed within series tooltips.
-    * Value: A string value.
     */
-  var toolTipImage: String
+  var toolTipImage: String = js.native
   /**
     * Gets the text to be displayed within series tooltips.
-    * Value: A string value.
     */
-  var toolTipText: String
+  var toolTipText: String = js.native
+  /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of trendlines.
-    * Value: An array of ASPxClientTrendLine objects, that represent the collection of trendlines.
     */
-  var trendLines: js.Array[ASPxClientTrendLine]
+  var trendLines: js.Array[ASPxClientTrendLine] = js.native
   /**
     * Gets a value that specifies the scale type for the value data of the series' data points.
-    * Value: A string object which contains the current scale type.
     */
-  var valueScaleType: String
+  var valueScaleType: String = js.native
   /**
     * Gets a value that specifies the view type of the series.
-    * Value: A string object which contains the current view type.
     */
-  var viewType: String
+  var viewType: String = js.native
   /**
     * Gets a value indicating whether the series is visible.
-    * Value: true if the series is visible; otherwise, false.
     */
-  var visible: Boolean
-}
-
-object ASPxClientSeries {
-  @scala.inline
-  def apply(
-    actualCrosshairEnabled: Boolean,
-    actualCrosshairLabelVisibility: Boolean,
-    argumentScaleType: String,
-    axisX: String,
-    axisY: String,
-    chart: ASPxClientWebChart,
-    color: String,
-    crosshairLabelPattern: String,
-    crosshairValueItems: js.Array[ASPxClientCrosshairValueItem],
-    fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator],
-    groupedElementsPattern: String,
-    indicators: js.Array[ASPxClientIndicator],
-    label: ASPxClientSeriesLabel,
-    name: String,
-    pane: String,
-    points: js.Array[ASPxClientSeriesPoint],
-    regressionLines: js.Array[ASPxClientRegressionLine],
-    stackedGroup: String,
-    titles: js.Array[ASPxClientSeriesTitle],
-    toolTipEnabled: Boolean,
-    toolTipImage: String,
-    toolTipText: String,
-    trendLines: js.Array[ASPxClientTrendLine],
-    valueScaleType: String,
-    viewType: String,
-    visible: Boolean
-  ): ASPxClientSeries = {
-    val __obj = js.Dynamic.literal(actualCrosshairEnabled = actualCrosshairEnabled, actualCrosshairLabelVisibility = actualCrosshairLabelVisibility, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, chart = chart, color = color, crosshairLabelPattern = crosshairLabelPattern, crosshairValueItems = crosshairValueItems, fibonacciIndicators = fibonacciIndicators, groupedElementsPattern = groupedElementsPattern, indicators = indicators, label = label, name = name, pane = pane, points = points, regressionLines = regressionLines, stackedGroup = stackedGroup, titles = titles, toolTipEnabled = toolTipEnabled, toolTipImage = toolTipImage, toolTipText = toolTipText, trendLines = trendLines, valueScaleType = valueScaleType, viewType = viewType, visible = visible)
-  
-    __obj.asInstanceOf[ASPxClientSeries]
-  }
+  var visible: Boolean = js.native
 }
 

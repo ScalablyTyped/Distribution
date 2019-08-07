@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapCallbackPanel control.
   */
+@JSGlobal("BootstrapClientCallbackPanel")
 @js.native
-trait BootstrapClientCallbackPanel extends ASPxClientControl {
+class BootstrapClientCallbackPanel () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -30,16 +31,12 @@ trait BootstrapClientCallbackPanel extends ASPxClientControl {
     */
   def GetEnabled(): Boolean = js.native
   /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side Callback event.
-    */
-  def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side Callback event.
+    * Sends a callback to the server and generates the server-side BootstrapCallbackPanel.Callback event, passing it the specified argument.
+    * @param parameter A string value that represents any information that needs to be sent to the server-side BootstrapCallbackPanel.Callback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(parameter: String): Unit = js.native
+  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Sets the HTML markup specifying the contents of the control's window.
     * @param html A string value that specifies the HTML markup.

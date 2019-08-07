@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the repository item's table border style.
   */
-trait ChangeTableBorderRepositoryItemCommand extends CommandBase {
+@JSGlobal("ChangeTableBorderRepositoryItemCommand")
+@js.native
+class ChangeTableBorderRepositoryItemCommand () extends CommandBase {
   /**
-    * Executes the ChangeTableBorderRepositoryItemCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTableBorderRepositoryItemCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TableBorderSettings object specifying the repository item's table border style.
     */
-  def execute(settings: TableBorderSettings): Boolean
+  def execute(settings: TableBorderSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTableBorderRepositoryItemCommand {
-  @scala.inline
-  def apply(execute: TableBorderSettings => Boolean, getState: () => js.Any): ChangeTableBorderRepositoryItemCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTableBorderRepositoryItemCommand]
-  }
+  def getState(): CommandState[TableBorderSettings] = js.native
 }
 

@@ -5,27 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditEndEditing event.
+  * Provides data for the ASPxClientGridView.BatchEditEndEditing event.
   */
-trait ASPxClientGridViewBatchEditEndEditingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditEndEditingEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditEndEditingEventArgs class.
+    * @param visibleIndex An integer value that specifies the visible index.
+    * @param rowValues An object that provides the row values.
+    * @param key An object that provides the row key.
+    */
+  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about editable cells.
-    * Value: A hashtable that stores information about editable cells.
     */
-  var rowValues: js.Object
+  var rowValues: js.Any = js.native
   /**
     * Gets the visible index of the row whose cells has been edited.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the row.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewBatchEditEndEditingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, rowValues: js.Object, visibleIndex: Double): ASPxClientGridViewBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, rowValues = rowValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditEndEditingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

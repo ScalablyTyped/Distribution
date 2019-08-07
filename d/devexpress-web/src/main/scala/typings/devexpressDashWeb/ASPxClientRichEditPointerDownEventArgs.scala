@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the PointerDown event.
+  * Provides data for the ASPxClientRichEdit.PointerDown event.
   */
-trait ASPxClientRichEditPointerDownEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditPointerDownEventArgs")
+@js.native
+class ASPxClientRichEditPointerDownEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditPointerDownEventArgs object. For internal use only.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    * @param handled true if the event is handled and no default processing is required; otherwise false.
+    */
+  def this(htmlEvent: js.Any, handled: Boolean) = this()
   /**
     * Gets or sets whether the event is handled manually, so no default processing is required.
-    * Value: true if the event is handled and no default processing is required; otherwise false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
-}
-
-object ASPxClientRichEditPointerDownEventArgs {
-  @scala.inline
-  def apply(handled: Boolean, htmlEvent: js.Object): ASPxClientRichEditPointerDownEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent)
-  
-    __obj.asInstanceOf[ASPxClientRichEditPointerDownEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

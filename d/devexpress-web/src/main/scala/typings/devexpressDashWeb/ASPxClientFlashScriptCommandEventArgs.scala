@@ -5,27 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the FlashScriptCommand client event.
+  * Provides data for the ASPxClientObjectContainer.FlashScriptCommand client event.
   */
-trait ASPxClientFlashScriptCommandEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFlashScriptCommandEventArgs")
+@js.native
+class ASPxClientFlashScriptCommandEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientFlashScriptCommandEventArgs type with the specified settings.
+    */
+  def this(command: String, args: String) = this()
   /**
     * Gets arguments passed via the FSCommand action of the flash object.
-    * Value: A string that represents the value of the FSCommand action's args parameter.
     */
-  var args: String
+  var args: String = js.native
   /**
     * Gets a command passed via the FSCommand action of the flash object.
-    * Value: A string that represents the value of the FSCommand action's command parameter.
     */
-  var command: String
-}
-
-object ASPxClientFlashScriptCommandEventArgs {
-  @scala.inline
-  def apply(args: String, command: String): ASPxClientFlashScriptCommandEventArgs = {
-    val __obj = js.Dynamic.literal(args = args, command = command)
-  
-    __obj.asInstanceOf[ASPxClientFlashScriptCommandEventArgs]
-  }
+  var command: String = js.native
 }
 

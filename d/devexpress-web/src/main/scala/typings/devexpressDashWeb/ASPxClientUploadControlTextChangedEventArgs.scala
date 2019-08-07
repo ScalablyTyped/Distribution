@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the TextChanged client event that allows you to respond to an end-user changing an edit box's text.
+  * Provides data for the ASPxClientUploadControl.TextChanged client event that allows you to respond to an end-user changing an edit box's text.
   */
-trait ASPxClientUploadControlTextChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientUploadControlTextChangedEventArgs")
+@js.native
+class ASPxClientUploadControlTextChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientUploadControlTextChangedEventArgs class.
+    * @param inputIndex An integer value that specifies the file input element's index within the ASPxUploadControl.UploadedFiles collection.
+    */
+  def this(inputIndex: Double) = this()
   /**
     * Gets the index of a file input element within the ASPxUploadControl.
-    * Value: An integer value that specifies the file input element's index.
     */
-  var inputIndex: Double
-}
-
-object ASPxClientUploadControlTextChangedEventArgs {
-  @scala.inline
-  def apply(inputIndex: Double): ASPxClientUploadControlTextChangedEventArgs = {
-    val __obj = js.Dynamic.literal(inputIndex = inputIndex)
-  
-    __obj.asInstanceOf[ASPxClientUploadControlTextChangedEventArgs]
-  }
+  var inputIndex: Double = js.native
 }
 

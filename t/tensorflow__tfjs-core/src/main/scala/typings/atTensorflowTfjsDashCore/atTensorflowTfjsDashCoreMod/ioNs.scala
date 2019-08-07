@@ -82,11 +82,24 @@ object ioNs extends js.Object {
   def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Anon_Data] = js.native
   def encodeWeights(tensors: NamedTensorMap): js.Promise[Anon_Data] = js.native
   def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Anon_Data] = js.native
-  def fromMemory(modelTopology: js.Object): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
   def fromMemory(
-    modelTopology: js.Object,
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer
+  ): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig

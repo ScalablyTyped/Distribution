@@ -7,33 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * A command to start the mail merge process and download the resulting document containing the merged information.
   */
+@JSGlobal("MailMergeAndDownloadCommand")
 @js.native
-trait MailMergeAndDownloadCommand extends CommandBase {
+class MailMergeAndDownloadCommand () extends js.Object {
   /**
-    * Executes the MailMergeAndDownloadCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param documentFormat One of the DocumentFormat enumeration values.
-    */
-  def execute(documentFormat: js.Any): Boolean = js.native
-  /**
-    * Executes the MailMergeAndDownloadCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param documentFormat One of the DocumentFormat enumeration values.
-    * @param settings A MailMergeSettings object specifying the mail merge settings.
-    */
-  def execute(documentFormat: js.Any, settings: MailMergeSettings): Boolean = js.native
-  /**
-    * Executes the MailMergeAndDownloadCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param fileExtension A string value specifying the file extension of the resulting document.
-    */
-  def execute(fileExtension: String): Boolean = js.native
-  /**
-    * Executes the MailMergeAndDownloadCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the MailMergeAndDownloadCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param fileExtension A string value specifying the file extension of the resulting document.
     * @param settings A MailMergeSettings object containing settings to set up mail merge operations.
     */
+  def execute(fileExtension: String): Boolean = js.native
   def execute(fileExtension: String, settings: MailMergeSettings): Boolean = js.native
+  def execute(fileExtension: DocumentFormat): Boolean = js.native
+  def execute(fileExtension: DocumentFormat, settings: MailMergeSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any = js.native
+  def getState(): CommandState[MailMergeSettings] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.node
 
-import typings.node.ttyMod.Direction
+import typings.node.readlineMod.Direction
 import typings.node.v8Mod.DoesZapCodeSpaceFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,16 +8,20 @@ import scala.scalajs.js.annotation._
 
 object nodeNumbers {
   @js.native
-  sealed trait `-1` extends Direction
+  sealed trait `-1`
+    extends Direction
+       with typings.node.ttyMod.Direction
   
   @js.native
   sealed trait `0`
     extends Direction
+       with typings.node.ttyMod.Direction
        with DoesZapCodeSpaceFlag
   
   @js.native
   sealed trait `1`
     extends Direction
+       with typings.node.ttyMod.Direction
        with DoesZapCodeSpaceFlag
   
   @js.native

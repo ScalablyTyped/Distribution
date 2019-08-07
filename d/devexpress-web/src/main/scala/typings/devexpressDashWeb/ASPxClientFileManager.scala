@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxFileManager control.
   */
+@JSGlobal("ASPxClientFileManager")
 @js.native
-trait ASPxClientFileManager extends ASPxClientControl {
+class ASPxClientFileManager () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -51,6 +52,7 @@ trait ASPxClientFileManager extends ASPxClientControl {
     * Occurs on the client side after a file has been uploaded.
     */
   var FileUploaded: ASPxClientEvent[ASPxClientFileManagerFileUploadedEventHandler[ASPxClientFileManager]] = js.native
+  /** @deprecated This event is now obsolete. Use the FilesUploading event instead. */
   /**
     * Fires on the client side before a file upload starts, and allows you to cancel the action.
     */
@@ -120,7 +122,7 @@ trait ASPxClientFileManager extends ASPxClientControl {
     */
   var ItemsDeleted: ASPxClientEvent[ASPxClientFileManagerItemsDeletedEventHandler[ASPxClientFileManager]] = js.native
   /**
-    * Occurs on the client side after all the selected items have been moved .
+    * Occurs on the client side after all the selected items have been moved.
     */
   var ItemsMoved: ASPxClientEvent[ASPxClientFileManagerItemsMovedEventHandler[ASPxClientFileManager]] = js.native
   /**
@@ -140,7 +142,7 @@ trait ASPxClientFileManager extends ASPxClientControl {
     */
   var ToolbarUpdating: ASPxClientEvent[ASPxClientFileManagerToolbarUpdatingEventHandler[ASPxClientFileManager]] = js.native
   /**
-    * Executes the specified command.
+    * Executes the specified command. true, if the specified command has been completed successfully; otherwise, false.
     * @param commandName A string value that specifies the command to perform.
     */
   def ExecuteCommand(commandName: String): Boolean = js.native
@@ -154,7 +156,7 @@ trait ASPxClientFileManager extends ASPxClientControl {
     */
   def GetAllItems(onCallback: ASPxClientFileManagerAllItemsCallback): Unit = js.native
   /**
-    * Returns a context menu item specified by its command name.
+    * Returns a context menu item specified by its command name. An ASPxClientFileManagerToolbarItem object that is the item with the specified command name.
     * @param commandName A string value specifying the command name of the item.
     */
   def GetContextMenuItemByCommandName(commandName: String): ASPxClientFileManagerToolbarItem = js.native
@@ -163,19 +165,12 @@ trait ASPxClientFileManager extends ASPxClientControl {
     */
   def GetCurrentFolderId(): String = js.native
   /**
-    * Gets the current folder's path.
-    */
-  def GetCurrentFolderPath(): String = js.native
-  /**
-    * Gets the current folder's path with the specified separator.
-    * @param separator A string value that specifies the separator between the folder's name within a path.
-    */
-  def GetCurrentFolderPath(separator: String): String = js.native
-  /**
-    * Gets the current folder's path with the specified settings.
+    * Gets the current folder's path with the specified settings. A string value that represents the path to the folder.
     * @param separator A string value that specifies the separator between the folder's name within the path.
     * @param skipRootFolder true to skip the root folder; otherwise, false.
     */
+  def GetCurrentFolderPath(): String = js.native
+  def GetCurrentFolderPath(separator: String): String = js.native
   def GetCurrentFolderPath(separator: String, skipRootFolder: Boolean): String = js.native
   /**
     * Returns a list of files that are loaded on the current page.
@@ -190,21 +185,17 @@ trait ASPxClientFileManager extends ASPxClientControl {
     */
   def GetSelectedItems(): js.Array[ASPxClientFileManagerFile] = js.native
   /**
-    * Returns a toolbar item specified by its command name.
+    * Returns a toolbar item specified by its command name. An ASPxClientFileManagerToolbarItem object that is the item with the specified command name.
     * @param commandName A string value specifying the command name of the item.
     */
   def GetToolbarItemByCommandName(commandName: String): ASPxClientFileManagerToolbarItem = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that specifies any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(args: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that specifies any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxFileManager.CustomCallback event, passing it the specified argument.
+    * @param args A string value that specifies any information that needs to be sent to the server-side ASPxFileManager.CustomCallback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(args: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(args: String): Unit = js.native
+  def PerformCallback(args: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Client-side scripting method which initiates a round trip to the server, so that the current page will be reloaded.
     */
@@ -215,5 +206,16 @@ trait ASPxClientFileManager extends ASPxClientControl {
     * @param onCallback A ASPxClientFileManagerCallback object that is the JavaScript function that receives the callback data as a parameter.
     */
   def SetCurrentFolderPath(path: String, onCallback: ASPxClientFileManagerCallback): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientFileManager")
+@js.native
+object ASPxClientFileManager extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientFileManager type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientFileManager = js.native
 }
 

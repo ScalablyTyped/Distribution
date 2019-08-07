@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CardClick event.
+  * Provides data for the ASPxClientCardView.CardClick event.
   */
-trait ASPxClientCardViewCardClickEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewCardClickEventArgs")
+@js.native
+class ASPxClientCardViewCardClickEventArgs protected () extends ASPxClientCancelEventArgs {
   /**
-    * Provides access to the parameters associated with the CardClick event.
-    * Value: An object that contains parameters associated with the event.
+    * Initializes a new instance of the ASPxClientCardViewCardClickEventArgs class.
+    * @param visibleIndex A zero-based integer index that identifies the clicked row.
+    * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientCardViewCardClickEventArgs.htmlEvent property.
     */
-  var htmlEvent: js.Object
+  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+  /**
+    * Provides access to the parameters associated with the ASPxClientCardView.CardClick event.
+    */
+  var htmlEvent: js.Any = js.native
   /**
     * Gets the processed card's visible index.
-    * Value: An integer zero-based index that identifies the processed record.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewCardClickEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Object, visibleIndex: Double): ASPxClientCardViewCardClickEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewCardClickEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

@@ -5,27 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRowRecovering event.
+  * Provides data for the ASPxClientGridView.BatchEditRowRecovering event.
   */
-trait ASPxClientGridViewBatchEditRowRecoveringEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientGridViewBatchEditRowRecoveringEventArgs")
+@js.native
+class ASPxClientGridViewBatchEditRowRecoveringEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewBatchEditRowRecoveringEventArgs class.
+    * @param visibleIndex An integer value that specifies the row's visible index.
+    * @param rowValues An object that provides row values.
+    * @param key An object that is the row's key.
+    */
+  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  /**
+    * Gets the row's key.
+    */
+  var key: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about recovered cells.
-    * Value: A hashtable that stores information about recovered cells.
     */
-  var rowValues: js.Object
+  var rowValues: js.Any = js.native
   /**
     * Gets the processed row's visible index.
-    * Value: An integer value that specifies the processed row's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientGridViewBatchEditRowRecoveringEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, rowValues: js.Object, visibleIndex: Double): ASPxClientGridViewBatchEditRowRecoveringEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, rowValues = rowValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowRecoveringEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

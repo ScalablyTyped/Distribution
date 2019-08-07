@@ -11,9 +11,6 @@ import typings.mz.mzStrings.PTR
 import typings.mz.mzStrings.SOA
 import typings.mz.mzStrings.SRV
 import typings.mz.mzStrings.TXT
-import typings.node.Anon_Address
-import typings.node.Anon_AddressFamily
-import typings.node.Anon_AddressFamilyArray
 import typings.node.Anon_Hostname
 import typings.node.NodeJSNs.ErrnoException
 import typings.node.dnsMod.AnyRecord
@@ -297,11 +294,11 @@ object dnsNs extends js.Object {
   @JSName("lookup")
   @js.native
   object lookupNs extends js.Object {
-    def __promisify__(hostname: String): js.Promise[Anon_AddressFamily] = js.native
-    def __promisify__(hostname: String, options: Double): js.Promise[Anon_AddressFamily] = js.native
-    def __promisify__(hostname: String, options: LookupAllOptions): js.Promise[Anon_Address] = js.native
-    def __promisify__(hostname: String, options: LookupOneOptions): js.Promise[Anon_AddressFamily] = js.native
-    def __promisify__(hostname: String, options: LookupOptions): js.Promise[Anon_AddressFamilyArray] = js.native
+    def __promisify__(hostname: String): js.Promise[LookupAddress] = js.native
+    def __promisify__(hostname: String, options: Double): js.Promise[LookupAddress] = js.native
+    def __promisify__(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = js.native
+    def __promisify__(hostname: String, options: LookupOneOptions): js.Promise[LookupAddress] = js.native
+    def __promisify__(hostname: String, options: LookupOptions): js.Promise[LookupAddress | js.Array[LookupAddress]] = js.native
   }
   
   @JSName("lookupService")

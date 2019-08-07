@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * A command to scale pictures in a selected range.
   */
+@JSGlobal("ChangePictureScaleCommand")
 @js.native
-trait ChangePictureScaleCommand extends CommandBase {
+class ChangePictureScaleCommand () extends CommandBase {
   /**
-    * Executes the ChangePictureScaleCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param scale A Scale object specifying scaling of the picture.
+    * Executes the ChangePictureScaleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
+    * @param scale The picture scale.
+    * @param x The picture scale object or the x-scale factor as a percent.
+    * @param y The y-scale factor as a percent.
     */
-  def execute(scale: Scale): Boolean = js.native
-  /**
-    * Executes the ChangePictureScaleCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param x An integer number specifying the scaling value for the width of the picture as a percentage.
-    * @param y An integer number specifying the scaling value for the height of the picture as a percentage.
-    */
+  def execute(x: Double): Boolean = js.native
   def execute(x: Double, y: Double): Boolean = js.native
+  def execute(x: Scale): Boolean = js.native
+  def execute(x: Scale, y: Double): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any = js.native
+  def getState(): CommandState[Scale] = js.native
 }
 

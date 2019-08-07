@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRecordRecovering event.
+  * Provides data for the ASPxClientVerticalGrid.BatchEditRecordRecovering event.
   */
-trait ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs")
+@js.native
+class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs class.
+    * @param visibleIndex An integer value specifying a record's visible index.
+    * @param recordValues An object representing record values.
+    */
+  def this(visibleIndex: Double, recordValues: js.Any) = this()
   /**
     * Gets a hashtable that maintains information about recovered cells.
-    * Value: A hashtable that stores information about recovered cells.
     */
-  var recordValues: js.Object
+  var recordValues: js.Any = js.native
   /**
     * Gets the processed record's visible index.
-    * Value: An integer value that specifies the processed record's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, recordValues: js.Object, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, recordValues = recordValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

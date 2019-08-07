@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a text box' content margins.
   */
-trait ChangeTextBoxContentMarginsCommand extends CommandBase {
+@JSGlobal("ChangeTextBoxContentMarginsCommand")
+@js.native
+class ChangeTextBoxContentMarginsCommand () extends CommandBase {
   /**
-    * Executes the ChangeTextBoxContentMarginsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTextBoxContentMarginsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A Margins object specifying margin settings.
     */
-  def execute(settings: Margins): Boolean
+  def execute(settings: Margins): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTextBoxContentMarginsCommand {
-  @scala.inline
-  def apply(execute: Margins => Boolean, getState: () => js.Any): ChangeTextBoxContentMarginsCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTextBoxContentMarginsCommand]
-  }
+  def getState(): CommandState[Margins] = js.native
 }
 

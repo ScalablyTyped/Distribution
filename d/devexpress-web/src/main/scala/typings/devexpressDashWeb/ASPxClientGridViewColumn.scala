@@ -7,40 +7,29 @@ import scala.scalajs.js.annotation._
 /**
   * A client grid column.
   */
-trait ASPxClientGridViewColumn extends ASPxClientGridColumnBase {
+@JSGlobal("ASPxClientGridViewColumn")
+@js.native
+class ASPxClientGridViewColumn () extends ASPxClientGridColumnBase {
   /**
     * Gets the name of the database field assigned to the current column.
-    * Value: A string value that specifies the name of a data field.
     */
-  var fieldName: String
+  var fieldName: String = js.native
+  /** @deprecated Use the name property instead. */
   /**
     * Gets the column's unique identifier.
-    * Value: A string value that specifies the column's unique identifier.
     */
-  var id: String
+  var id: String = js.native
   /**
     * Gets the column's position within the collection.
-    * Value: An integer zero-bazed index that specifies the column's position within the collection.
     */
-  var index: Double
+  var index: Double = js.native
   /**
     * Gets the name that uniquely identifies the column.
-    * Value: A string value assigned to the column's Name property.
     */
-  var name: String
+  var name: String = js.native
   /**
     * Gets whether the column is visible.
-    * Value: true to display the column; otherwise, false.
     */
-  var visible: Boolean
-}
-
-object ASPxClientGridViewColumn {
-  @scala.inline
-  def apply(fieldName: String, id: String, index: Double, name: String, visible: Boolean): ASPxClientGridViewColumn = {
-    val __obj = js.Dynamic.literal(fieldName = fieldName, id = id, index = index, name = name, visible = visible)
-  
-    __obj.asInstanceOf[ASPxClientGridViewColumn]
-  }
+  var visible: Boolean = js.native
 }
 

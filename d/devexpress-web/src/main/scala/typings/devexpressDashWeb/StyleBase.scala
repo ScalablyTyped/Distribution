@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as a base for objects implementing different element styles.
   */
-trait StyleBase extends js.Object {
+@JSGlobal("StyleBase")
+@js.native
+class StyleBase () extends js.Object {
   /**
     * Gets whether the specified style is marked as deleted.
-    * Value: true, if the style is deleted; otherwise, false.
     */
-  var isDeleted: Boolean
+  val isDeleted: Boolean = js.native
   /**
     * Gets or sets the name of the style.
-    * Value: A string specifying the style name.
     */
-  var name: String
-}
-
-object StyleBase {
-  @scala.inline
-  def apply(isDeleted: Boolean, name: String): StyleBase = {
-    val __obj = js.Dynamic.literal(isDeleted = isDeleted, name = name)
-  
-    __obj.asInstanceOf[StyleBase]
-  }
+  val name: String = js.native
 }
 

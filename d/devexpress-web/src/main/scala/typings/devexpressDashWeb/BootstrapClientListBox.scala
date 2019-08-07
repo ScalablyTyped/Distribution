@@ -7,15 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapListBox control.
   */
+@JSGlobal("BootstrapClientListBox")
 @js.native
-trait BootstrapClientListBox extends ASPxClientListBox {
+class BootstrapClientListBox () extends ASPxClientListBox {
   /**
-    * Gets the CSS class of the icon displayed within a List Box item badge.
+    * Gets the CSS class of the icon displayed within a List Box item badge. A String containing the name of a CSS class.
     * @param index The index of a List Box item.
     */
   def GetItemBadgeIconCssClass(index: Double): String = js.native
   /**
-    * Gets the text displayed within a List Box item badge.
+    * Gets the text displayed within a List Box item badge. A String specifying the badge text.
     * @param index The index of a List Box item.
     */
   def GetItemBadgeText(index: Double): String = js.native

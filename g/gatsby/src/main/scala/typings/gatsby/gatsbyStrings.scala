@@ -28,6 +28,9 @@ object gatsbyStrings {
   sealed trait `initial-createResolvers` extends js.Object
   
   @js.native
+  sealed trait `initial-createSchemaCustomization` extends js.Object
+  
+  @js.native
   sealed trait `initial-resolvableExtensions` extends js.Object
   
   @js.native
@@ -50,6 +53,8 @@ object gatsbyStrings {
   def `initial-createPagesStatefully`: `initial-createPagesStatefully` = "initial-createPagesStatefully".asInstanceOf[`initial-createPagesStatefully`]
   @scala.inline
   def `initial-createResolvers`: `initial-createResolvers` = "initial-createResolvers".asInstanceOf[`initial-createResolvers`]
+  @scala.inline
+  def `initial-createSchemaCustomization`: `initial-createSchemaCustomization` = "initial-createSchemaCustomization".asInstanceOf[`initial-createSchemaCustomization`]
   @scala.inline
   def `initial-resolvableExtensions`: `initial-resolvableExtensions` = "initial-resolvableExtensions".asInstanceOf[`initial-resolvableExtensions`]
   @scala.inline

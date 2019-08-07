@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapPopupMenu control.
   */
+@JSGlobal("BootstrapClientPopupMenu")
 @js.native
-trait BootstrapClientPopupMenu extends ASPxClientPopupMenu {
+class BootstrapClientPopupMenu () extends ASPxClientPopupMenu {
   /**
     * Sets the CSS selector of a web control or HTML element with which the current popup menu is associated.
     * @param selector A string value specifying the CSS selector of the web control or HTML element with which the popup menu is associated.

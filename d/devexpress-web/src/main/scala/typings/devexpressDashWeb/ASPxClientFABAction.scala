@@ -4,35 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientFABAction extends ASPxClientFABActionItemBase {
+/**
+  * A client-side equivalent of the floating action button's action object.
+  */
+@JSGlobal("ASPxClientFABAction")
+@js.native
+class ASPxClientFABAction () extends ASPxClientFABActionItemBase {
   /**
-    * 
-    * @param name 
+    * Gets the FAB action item. Specifies the FAB action item.
+    * @param index Specifies the item's index in the collection.
     */
-  def GetActionItemByName(name: String): ASPxClientFABActionItem
-  def GetContextName(): String
+  def GetActionItem(index: Double): ASPxClientFABActionItem = js.native
   /**
-    * 
-    * @param index 
+    * Returns an action item with the specified name. An ASPxClientFABActionItem that is the action item with the specified name.
+    * @param name A string value specifying the action item name.
     */
-  def GetItem(index: Double): ASPxClientFABActionItem
-  def GetItemCount(): Double
-}
-
-object ASPxClientFABAction {
-  @scala.inline
-  def apply(
-    GetActionItemByName: String => ASPxClientFABActionItem,
-    GetActionName: () => String,
-    GetContextName: () => String,
-    GetItem: Double => ASPxClientFABActionItem,
-    GetItemCount: () => Double,
-    GetText: () => String,
-    SetText: String => Unit
-  ): ASPxClientFABAction = {
-    val __obj = js.Dynamic.literal(GetActionItemByName = js.Any.fromFunction1(GetActionItemByName), GetActionName = js.Any.fromFunction0(GetActionName), GetContextName = js.Any.fromFunction0(GetContextName), GetItem = js.Any.fromFunction1(GetItem), GetItemCount = js.Any.fromFunction0(GetItemCount), GetText = js.Any.fromFunction0(GetText), SetText = js.Any.fromFunction1(SetText))
-  
-    __obj.asInstanceOf[ASPxClientFABAction]
-  }
+  def GetActionItemByName(name: String): ASPxClientFABActionItem = js.native
+  /**
+    * Returns the number of items in the action/action group.
+    */
+  def GetActionItemCount(): Double = js.native
+  /**
+    * Gets the FAB action's context name.
+    */
+  def GetContextName(): String = js.native
 }
 

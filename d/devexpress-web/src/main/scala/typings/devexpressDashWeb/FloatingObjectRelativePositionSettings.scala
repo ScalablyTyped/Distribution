@@ -7,40 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Contains relative position settings for floating objects.
   */
-trait FloatingObjectRelativePositionSettings extends js.Object {
+@JSGlobal("FloatingObjectRelativePositionSettings")
+@js.native
+class FloatingObjectRelativePositionSettings () extends js.Object {
   /**
     * Gets or sets a value specifying to what element the horizontal position of a floating object is relative.
-    * Value: One of the <see cref="FloatingObjectHorizontalPositionType" /> enumeration values.
     */
-  var horizontalPositionType: js.Any
+  var horizontalPositionType: FloatingObjectHorizontalPositionType = js.native
   /**
-    * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the horizontalRelativePosition property
-    * Value: An integer value specifying the horizontal position in twips.
+    * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the FloatingObjectRelativePositionSettings.horizontalRelativePosition property
     */
-  var horizontalRelativePosition: Double
+  var horizontalRelativePosition: Double = js.native
   /**
     * Gets or sets a value specifying to what element the vertical position of a floating object is relative.
-    * Value: One of the <see cref="FloatingObjectVerticalPositionType" /> enumeration values.
     */
-  var verticalPositionType: js.Any
+  var verticalPositionType: FloatingObjectVerticalPositionType = js.native
   /**
-    * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the verticalRelativePosition property
-    * Value: An integer value specifying the vertical position in twips.
+    * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the FloatingObjectRelativePositionSettings.verticalRelativePosition property
     */
-  var verticalRelativePosition: Double
-}
-
-object FloatingObjectRelativePositionSettings {
-  @scala.inline
-  def apply(
-    horizontalPositionType: js.Any,
-    horizontalRelativePosition: Double,
-    verticalPositionType: js.Any,
-    verticalRelativePosition: Double
-  ): FloatingObjectRelativePositionSettings = {
-    val __obj = js.Dynamic.literal(horizontalPositionType = horizontalPositionType, horizontalRelativePosition = horizontalRelativePosition, verticalPositionType = verticalPositionType, verticalRelativePosition = verticalRelativePosition)
-  
-    __obj.asInstanceOf[FloatingObjectRelativePositionSettings]
-  }
+  var verticalRelativePosition: Double = js.native
 }
 

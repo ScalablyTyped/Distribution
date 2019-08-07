@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "tslint"
-version := "5.18.0-a47c4e"
+version := "5.18.0-e3f5a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "typescript" % "3.5.3-03d384")
 publishArtifact in packageDoc := false

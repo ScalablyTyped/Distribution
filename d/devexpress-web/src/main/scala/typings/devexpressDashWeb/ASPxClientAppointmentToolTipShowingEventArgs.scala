@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the AppointmentToolTipShowing event.
+  * Provides data for the ASPxClientScheduler.AppointmentToolTipShowing event.
   */
-trait ASPxClientAppointmentToolTipShowingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientAppointmentToolTipShowingEventArgs")
+@js.native
+class ASPxClientAppointmentToolTipShowingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientAppointmentToolTipShowingEventArgs class.
+    * @param appointment An ASPxClientAppointment object representing the appointment.
+    */
+  def this(appointment: ASPxClientAppointment) = this()
   /**
     * Gets the appointment.
-    * Value: An ASPxClientAppointment object representing the appointment.
     */
-  var appointment: ASPxClientAppointment
-}
-
-object ASPxClientAppointmentToolTipShowingEventArgs {
-  @scala.inline
-  def apply(appointment: ASPxClientAppointment, cancel: Boolean): ASPxClientAppointmentToolTipShowingEventArgs = {
-    val __obj = js.Dynamic.literal(appointment = appointment, cancel = cancel)
-  
-    __obj.asInstanceOf[ASPxClientAppointmentToolTipShowingEventArgs]
-  }
+  var appointment: ASPxClientAppointment = js.native
 }
 

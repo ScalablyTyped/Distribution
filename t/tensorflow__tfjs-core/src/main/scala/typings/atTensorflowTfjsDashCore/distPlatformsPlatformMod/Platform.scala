@@ -1,5 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distPlatformsPlatformMod
 
+import typings.atTensorflowTfjsDashCore.distIoTypesMod.RequestDetails
 import typings.std.RequestInit
 import typings.std.Response
 import typings.std.Uint8Array
@@ -24,6 +25,7 @@ trait Platform extends js.Object {
     */
   def fetch(path: String): js.Promise[Response] = js.native
   def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
+  def fetch(path: String, requestInits: RequestInit, options: RequestDetails): js.Promise[Response] = js.native
   /**
     * Returns the current high-resolution time in milliseconds relative to an
     * arbitrary time in the past. It works across different platforms (node.js,

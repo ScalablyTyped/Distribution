@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MetaFalseOptions extends MetaOptions {
-  var meta: `false`
+  var meta: js.UndefOr[`false`] = js.undefined
 }
 
 object MetaFalseOptions {
   @scala.inline
-  def apply(meta: `false`): MetaFalseOptions = {
-    val __obj = js.Dynamic.literal(meta = meta)
-  
+  def apply(meta: `false` = null): MetaFalseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (meta != null) __obj.updateDynamic("meta")(meta)
     __obj.asInstanceOf[MetaFalseOptions]
   }
 }

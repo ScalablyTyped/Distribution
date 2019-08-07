@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ActiveTabChanged event.
+  * Provides data for the ASPxClientRibbon.ActiveTabChanged event.
   */
-trait ASPxClientRibbonTabEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRibbonTabEventArgs")
+@js.native
+class ASPxClientRibbonTabEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRibbonTabEventArgs class with the specified setting.
+    * @param tab An ASPxClientRibbonTab object that is a tab related to the event.
+    */
+  def this(tab: ASPxClientRibbonTab) = this()
   /**
     * Gets the tab object related to the event.
-    * Value: An <see cref="ASPxClientRibbonTab" /> object that is the tab, manipulations on which forced the ribbon control to raise the event.
     */
-  var tab: ASPxClientRibbonTab
-}
-
-object ASPxClientRibbonTabEventArgs {
-  @scala.inline
-  def apply(tab: ASPxClientRibbonTab): ASPxClientRibbonTabEventArgs = {
-    val __obj = js.Dynamic.literal(tab = tab)
-  
-    __obj.asInstanceOf[ASPxClientRibbonTabEventArgs]
-  }
+  var tab: ASPxClientRibbonTab = js.native
 }
 

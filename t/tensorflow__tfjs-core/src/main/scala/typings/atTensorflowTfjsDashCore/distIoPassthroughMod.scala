@@ -13,11 +13,24 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/io/passthrough", JSImport.Namespace)
 @js.native
 object distIoPassthroughMod extends js.Object {
-  def fromMemory(modelTopology: js.Object): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
-  def fromMemory(modelTopology: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
   def fromMemory(
-    modelTopology: js.Object,
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: ArrayBuffer
+  ): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig

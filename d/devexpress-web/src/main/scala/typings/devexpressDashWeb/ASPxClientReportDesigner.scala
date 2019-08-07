@@ -1,6 +1,7 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,9 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the Web Report Designer control.
   */
+@JSGlobal("ASPxClientReportDesigner")
 @js.native
-trait ASPxClientReportDesigner extends ASPxClientControl {
+class ASPxClientReportDesigner () extends ASPxClientControl {
   /**
     * Occurs before the Web Report Designer UI is initialized.
     */
@@ -30,6 +32,9 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     * Enables you to customize the Web Report Designer's UI elements.
     */
   var CustomizeElements: ASPxClientEvent[ASPxClientReportDesignerCustomizeElementsEventHandler[ASPxClientReportDesigner]] = js.native
+  /**
+    * Enables you to customize actions available in the Web Report Designer's Field List.
+    */
   var CustomizeFieldListActions: ASPxClientEvent[
     ASPxClientReportDesignerCustomizeFieldListActionsEventHandler[ASPxClientReportDesigner]
   ] = js.native
@@ -101,6 +106,9 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
   var PreviewCustomizeElements: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeElementsEventHandler[ASPxClientReportDesigner]
   ] = js.native
+  /**
+    * Allows you to customize available export formats and corresponding export options in a Document Viewer built into a Web Report Designer.
+    */
   var PreviewCustomizeExportOptions: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[ASPxClientReportDesigner]
   ] = js.native
@@ -158,6 +166,9 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     * Occurs when executing the Save command on the client.
     */
   var SaveCommandExecute: ASPxClientEvent[ASPxClientReportDesignerSaveCommandExecuteEventHandler[ASPxClientReportDesigner]] = js.native
+  /**
+    * Occurs when an active report tab was changed in the Web Report Designer.
+    */
   var TabChanged: ASPxClientEvent[ASPxClientReportDesignerTabChangedEventHandler[ASPxClientReportDesigner]] = js.native
   /**
     * Adds a custom parameter type to the Web End-User Report Designer.
@@ -176,36 +187,35 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     */
   def CloseCurrentTab(): Unit = js.native
   /**
-    * 
-    * @param tab 
+    * Closes the specified report tab avaialble the Web Report Designer silently or with the Save Report dialog.
+    * @param tab Specifies the Report Designer tab to close.
+    * @param force true, to silently close the tab; false to show the Save Report dialog.
     */
   def CloseTab(tab: ASPxDesignerNavigateTab): Unit = js.native
-  /**
-    * 
-    * @param tab 
-    * @param force 
-    */
   def CloseTab(tab: ASPxDesignerNavigateTab, force: Boolean): Unit = js.native
   /**
     * Returns actions performed by buttons available in the menu and toolbar of the Web Report Designer.
     */
-  def GetButtonStorage(): js.Object = js.native
+  def GetButtonStorage(): js.Any = js.native
+  /**
+    * Returns the currently active tab in the Web Report Designer.
+    */
   def GetCurrentTab(): ASPxDesignerNavigateTab = js.native
   /**
     * Provides access to a client-side model of a Web Report Designer.
     */
-  def GetDesignerModel(): js.Object = js.native
+  def GetDesignerModel(): js.Any = js.native
   /**
     * Gets a client-side model of the currently opened report serialized to Json.
     */
   def GetJsonReportModel(): String = js.native
   /**
-    * Returns a value editor associated with the specified parameter type.
+    * Returns a value editor associated with the specified parameter type. An object that stores settings of a parameter editor.
     * @param parameterType A string that specifies a parameter type.
     */
   def GetParameterEditor(parameterType: String): ASPxDesignerEditorOptions = js.native
   /**
-    * Returns an object that contains information on the specified parameter type.
+    * Returns an object that contains information on the specified parameter type. An object storing information on a parameter type.
     * @param parameterType A string that specifies a parameter type.
     */
   def GetParameterInfo(parameterType: String): ASPxDesignerParameterType = js.native
@@ -214,17 +224,15 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     */
   def GetPreviewModel(): ASPxClientSidePreviewModel = js.native
   /**
-    * Returns information about the specified property of the specified control.
-    * @param controlType A string that specifies the control type.
-    * @param path A string that specifies the path to the property.
-    */
-  def GetPropertyInfo(controlType: String, path: String): ASPxDesignerElementSerializationInfo = js.native
-  /**
-    * Returns information about the specified properties of the specified control.
+    * Returns information about the specified properties of the specified control. An object that provides property information.
     * @param controlType A string that specifies the control type.
     * @param path An array of strings that specify paths to properties.
     */
+  def GetPropertyInfo(controlType: String, path: String): ASPxDesignerElementSerializationInfo = js.native
   def GetPropertyInfo(controlType: String, path: js.Array[String]): ASPxDesignerElementSerializationInfo = js.native
+  /**
+    * Returns all available Report Designer tabs.
+    */
   def GetTabs(): js.Array[ASPxDesignerNavigateTab] = js.native
   /**
     * Indicates whether or not the current ASPxClientReportDesigner instance has been modified.
@@ -236,55 +244,51 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     */
   def OpenReport(url: String): Unit = js.native
   /**
-    * Sends a callback to the server with the specified argument.
-    * @param arg A String value, specifying the callback argument.
-    */
-  def PerformCallback(arg: String): Unit = js.native
-  /**
     * Sends a callback to the server and generates the server-side event, passing it the specified argument.
     * @param arg A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(arg: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(arg: String): Unit = js.native
+  def PerformCallback(arg: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Removes the specified parameter type from the Web End-User Report Designer.
     * @param parameterType A string that specifies a parameter type to be deleted.
     */
   def RemoveParameterType(parameterType: String): Unit = js.native
   /**
-    * Returns the report layout stored in a report storage under the specified URL.
+    * Returns the report layout stored in a report storage under the specified URL. A Deferred Promise object.
     * @param url A string that specifies the report URL.
     */
-  def ReportStorageGetData(url: String): js.Any = js.native
+  def ReportStorageGetData(url: String): JQueryPromise[_] = js.native
   /**
     * Returns the report URLs and display names existing in a report storage.
     */
-  def ReportStorageGetUrls(): js.Any = js.native
+  def ReportStorageGetUrls(): JQueryPromise[_] = js.native
   /**
-    * Stores the specified report to a report storage using the specified URL.
+    * Stores the specified report to a report storage using the specified URL. A Deferred Promise object.
     * @param reportLayout A string that specifies the report layout to be saved.
     * @param url A string that specifies the URL used to save a report.
     */
-  def ReportStorageSetData(reportLayout: String, url: String): js.Any = js.native
+  def ReportStorageSetData(reportLayout: String, url: String): JQueryPromise[_] = js.native
   /**
-    * Stores the specified report to a report storage using a new URL.
+    * Stores the specified report to a report storage using a new URL. A Deferred Promise object.
     * @param reportLayout A string that specifies the report layout to be saved.
     * @param url A string that specifies the default report URL.
     */
-  def ReportStorageSetNewData(reportLayout: String, url: String): js.Any = js.native
+  def ReportStorageSetNewData(reportLayout: String, url: String): JQueryPromise[_] = js.native
   /**
-    * Resets the value returned by the IsModified method.
+    * Resets the value returned by the ASPxClientReportDesigner.IsModified method.
     */
   def ResetIsModified(): Unit = js.native
   /**
-    * Saves the current report under a new name.
+    * Saves the current report under a new name. A Deferred Promise object.
     * @param reportName A string that specifies the report name.
     */
-  def SaveNewReport(reportName: String): js.Any = js.native
+  def SaveNewReport(reportName: String): JQueryPromise[_] = js.native
   /**
     * Saves the current report.
     */
-  def SaveReport(): js.Any = js.native
+  def SaveReport(): JQueryPromise[_] = js.native
   /**
     * Switches the Web Report Designer to the preview mode.
     */
@@ -294,5 +298,16 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     * @param localization A dictionary containing the property names, along with their localized equivalents.
     */
   def UpdateLocalization(localization: StringDictionary[String]): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientReportDesigner")
+@js.native
+object ASPxClientReportDesigner extends js.Object {
+  /**
+    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientReportDesigner object.
+    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
+    */
+  def Cast(obj: js.Any): ASPxClientReportDesigner = js.native
 }
 

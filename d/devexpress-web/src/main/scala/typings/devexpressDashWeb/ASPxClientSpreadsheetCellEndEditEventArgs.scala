@@ -5,30 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CellEndEdit event.
+  * Provides data for the ASPxClientSpreadsheet.CellEndEdit event.
   */
-trait ASPxClientSpreadsheetCellEndEditEventArgs extends ASPxClientSpreadsheetCellBeginEditEventArgs {
+@JSGlobal("ASPxClientSpreadsheetCellEndEditEventArgs")
+@js.native
+class ASPxClientSpreadsheetCellEndEditEventArgs protected () extends ASPxClientSpreadsheetCellBeginEditEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientSpreadsheetCellEndEditEventArgs object. For internal use only.
+    * @param columnIndex Gets the active cell's column index.
+    * @param rowIndex Gets the active cell's row index.
+    * @param formula Gets the active cell's formula.
+    * @param value Gets the active cell's current value.
+    * @param sheetName Gets the current worksheet's name.
+    * @param editorText Gets or sets the text stored within an active cell's editor.
+    */
+  def this(
+    columnIndex: Double,
+    rowIndex: Double,
+    formula: String,
+    value: String,
+    sheetName: String,
+    editorText: String
+  ) = this()
   /**
     * Gets or sets the text stored within the active cell's editor.
-    * Value: A string value that specifies the editor's text.
     */
-  var editorText: String
-}
-
-object ASPxClientSpreadsheetCellEndEditEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    columnIndex: Double,
-    editorText: String,
-    formula: String,
-    rowIndex: Double,
-    sheetName: String,
-    value: String
-  ): ASPxClientSpreadsheetCellEndEditEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, columnIndex = columnIndex, editorText = editorText, formula = formula, rowIndex = rowIndex, sheetName = sheetName, value = value)
-  
-    __obj.asInstanceOf[ASPxClientSpreadsheetCellEndEditEventArgs]
-  }
+  var editorText: String = js.native
 }
 

@@ -13,7 +13,7 @@ trait PropertyPreview extends js.Object {
     */
   var name: java.lang.String
   /**
-    * Object subtype hint. Specified for `object` type values only.
+    * Object subtype hint. Specified for <code>object</code> type values only.
     */
   var subtype: js.UndefOr[java.lang.String] = js.undefined
   /**

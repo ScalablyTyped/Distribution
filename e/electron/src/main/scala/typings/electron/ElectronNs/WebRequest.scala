@@ -28,7 +28,7 @@ class WebRequest () extends EventEmitter {
   /**
     * The listener will be called with listener(details, callback) when a request is
     * about to occur. The uploadData is an array of UploadData objects. The callback
-    * has to be called with an response object.
+    * has to be called with an response object. Some examples of valid urls:
     */
   def onBeforeRequest(
     filter: OnBeforeRequestFilter,
@@ -41,7 +41,7 @@ class WebRequest () extends EventEmitter {
   /**
     * The listener will be called with listener(details, callback) when a request is
     * about to occur. The uploadData is an array of UploadData objects. The callback
-    * has to be called with an response object.
+    * has to be called with an response object. Some examples of valid urls:
     */
   def onBeforeRequest(
     listener: js.Function2[

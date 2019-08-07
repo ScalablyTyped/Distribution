@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 trait FeatureFormat extends js.Object {
   var dataProjection: typings.ol.projProjectionMod.default = js.native
   var defaultFeatureProjection: typings.ol.projProjectionMod.default = js.native
+  /* protected */ def adaptOptions(): WriteOptions | ReadOptions = js.native
   /* protected */ def adaptOptions(options: ReadOptions): WriteOptions | ReadOptions = js.native
   /* protected */ def adaptOptions(options: WriteOptions): WriteOptions | ReadOptions = js.native
   def getLastExtent(): Extent = js.native

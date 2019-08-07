@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Detailed information about exception (or error) that was thrown during script compilation or
-  * execution.
+  * Detailed information about exception (or error) that was thrown during script compilation or execution.
   */
 trait ExceptionDetails extends js.Object {
   /**

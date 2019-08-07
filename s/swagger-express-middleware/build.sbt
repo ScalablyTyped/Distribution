@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "swagger-express-middleware"
-version := "1.x-dt-20190627Z-fe8770"
+version := "1.x-dt-20190627Z-82ee29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-723780",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-7c6e52",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-f87cbc",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-257a4f",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e3bdb7",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-515b96",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-364f17",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-78fca5",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "openapi-types" % "1.3.5-9f2a03",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-42b281",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-3dc604",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "swagger-parser" % "8.0.0-75e923")
+  "org.scalablytyped" %%% "swagger-parser" % "8.0.0-9656b1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

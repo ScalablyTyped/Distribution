@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as a base object implementing the client column functionality.
   */
-trait ASPxClientGridColumnBase extends js.Object
+@JSGlobal("ASPxClientGridColumnBase")
+@js.native
+class ASPxClientGridColumnBase () extends js.Object
 

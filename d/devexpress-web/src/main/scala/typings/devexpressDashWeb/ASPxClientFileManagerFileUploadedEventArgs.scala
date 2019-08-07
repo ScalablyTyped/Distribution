@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the FileUploaded event.
+  * Provides data for the ASPxClientFileManager.FileUploaded event.
   */
-trait ASPxClientFileManagerFileUploadedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerFileUploadedEventArgs")
+@js.native
+class ASPxClientFileManagerFileUploadedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerFileUploadedEventArgs object with the specified parameters.
+    * @param folder A string value specifying the uploaded file path.
+    * @param fileName A  string value that specifies the file name.
+    */
+  def this(folder: String, fileName: String) = this()
   /**
     * Gets the name of the uploaded file.
-    * Value: A string value that specifies the file name.
     */
-  var fileName: String
+  var fileName: String = js.native
   /**
     * Gets the path to the folder where a file is uploaded.
-    * Value: A string value specifying the uploaded file path.
     */
-  var folder: String
-}
-
-object ASPxClientFileManagerFileUploadedEventArgs {
-  @scala.inline
-  def apply(fileName: String, folder: String): ASPxClientFileManagerFileUploadedEventArgs = {
-    val __obj = js.Dynamic.literal(fileName = fileName, folder = folder)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerFileUploadedEventArgs]
-  }
+  var folder: String = js.native
 }
 

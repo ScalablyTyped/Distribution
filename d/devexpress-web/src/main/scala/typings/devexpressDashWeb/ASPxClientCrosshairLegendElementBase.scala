@@ -4,34 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientCrosshairLegendElementBase extends js.Object {
+/**
+  * The base class for elements the Crosshair Cursor displays in the legend.
+  */
+@JSGlobal("ASPxClientCrosshairLegendElementBase")
+@js.native
+class ASPxClientCrosshairLegendElementBase () extends js.Object {
   /**
     * Provides access to the crosshair axis label element to custom draw the crosshair.
-    * Value: An ASPxClientCrosshairAxisLabelElement object that represents the crosshair axis label element.
     */
-  var AxisLabelElement: ASPxClientCrosshairAxisLabelElement
+  var AxisLabelElement: ASPxClientCrosshairAxisLabelElement = js.native
   /**
     * Returns the Crosshair Cursor's line element to custom draw the crosshair.
-    * Value: An ASPxClientCrosshairLineElement object that represents the crosshair line element.
     */
-  var LineElement: ASPxClientCrosshairLineElement
+  var LineElement: ASPxClientCrosshairLineElement = js.native
+  /**
+    * Returns the series or indicator point for which the Crosshair Cursor creates this element.
+    */
+  var Point: ASPxClientSeriesPoint = js.native
   /**
     * Returns the value that specifies whether the crosshair legend element is visible.
-    * Value: true, if the crosshair legend element is visible; otherwise, false.
     */
-  var visible: Boolean
-}
-
-object ASPxClientCrosshairLegendElementBase {
-  @scala.inline
-  def apply(
-    AxisLabelElement: ASPxClientCrosshairAxisLabelElement,
-    LineElement: ASPxClientCrosshairLineElement,
-    visible: Boolean
-  ): ASPxClientCrosshairLegendElementBase = {
-    val __obj = js.Dynamic.literal(AxisLabelElement = AxisLabelElement, LineElement = LineElement, visible = visible)
-  
-    __obj.asInstanceOf[ASPxClientCrosshairLegendElementBase]
-  }
+  var visible: Boolean = js.native
 }
 

@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to apply a paragraph level to the selected text
   */
-trait SetParagraphLevelCommand extends CommandBase {
+@JSGlobal("SetParagraphLevelCommand")
+@js.native
+class SetParagraphLevelCommand () extends CommandBase {
   /**
-    * Executes the SetParagraphLevelCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the SetParagraphLevelCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param level An integer value specifying the applied style. The value should be in the range from 0 to 9.
     */
-  def execute(level: Double): Boolean
+  def execute(level: Double): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object SetParagraphLevelCommand {
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => js.Any): SetParagraphLevelCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[SetParagraphLevelCommand]
-  }
+  def getState(): CommandState[Double] = js.native
 }
 

@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to resize the shape to fit the text in the text box.
   */
-trait ChangeTextBoxResizeShapeToFitTextCommand extends CommandBase {
+@JSGlobal("ChangeTextBoxResizeShapeToFitTextCommand")
+@js.native
+class ChangeTextBoxResizeShapeToFitTextCommand () extends CommandBase {
   /**
-    * Executes the ChangeTextBoxResizeShapeToFitTextCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTextBoxResizeShapeToFitTextCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param resizeShapeToFitText true, to resize the shape to fit the text; otherwise, false.
     */
-  def execute(resizeShapeToFitText: Boolean): Boolean
+  def execute(resizeShapeToFitText: Boolean): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTextBoxResizeShapeToFitTextCommand {
-  @scala.inline
-  def apply(execute: Boolean => Boolean, getState: () => js.Any): ChangeTextBoxResizeShapeToFitTextCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTextBoxResizeShapeToFitTextCommand]
-  }
+  def getState(): CommandState[Boolean] = js.native
 }
 

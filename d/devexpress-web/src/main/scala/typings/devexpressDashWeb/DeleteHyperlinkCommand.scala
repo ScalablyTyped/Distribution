@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to delete the selected hyperlink.
   */
-trait DeleteHyperlinkCommand extends CommandWithSimpleStateBase {
+@JSGlobal("DeleteHyperlinkCommand")
+@js.native
+class DeleteHyperlinkCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the DeleteHyperlinkCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the DeleteHyperlinkCommand command.
     */
-  def execute(): Boolean
-}
-
-object DeleteHyperlinkCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DeleteHyperlinkCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[DeleteHyperlinkCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

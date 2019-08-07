@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "twilio-sync"
-version := "0.11.3-a30057"
+version := "0.11.3-937f48"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "loglevel" % "1.6.3-dcf9e0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "twilsock" % "0.5.10-1cc135")
+  "org.scalablytyped" %%% "twilsock" % "0.5.10-194b61")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

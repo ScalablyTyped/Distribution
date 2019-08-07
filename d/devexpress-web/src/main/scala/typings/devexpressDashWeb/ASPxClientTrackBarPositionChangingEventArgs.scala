@@ -5,61 +5,51 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the PositionChanging event.
+  * Provides data for the ASPxClientTrackBar.PositionChanging event.
   */
-trait ASPxClientTrackBarPositionChangingEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientTrackBarPositionChangingEventArgs")
+@js.native
+class ASPxClientTrackBarPositionChangingEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTrackBarPositionChangingEventArgs object with the specified setting.
+    * @param currentPositionStart A Decimal value specifying the current main drag handle position.
+    * @param currentPositionEnd A Decimal value specifying the current secondary drag handle position.
+    * @param newPositionStart A Decimal value specifying a position where the main drag handle is being moved.
+    * @param newPositionEnd A Decimal value specifying a position where the secondary drag handle is being moved.
+    */
+  def this(
+    currentPositionStart: Double,
+    currentPositionEnd: Double,
+    newPositionStart: Double,
+    newPositionEnd: Double
+  ) = this()
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    * Value: true if the action that raised the event should be canceled; otherwise, false.
     */
-  var cancel: Boolean
+  var cancel: Boolean = js.native
   /**
     * Gets the current drag handle position.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var currentPosition: Double
+  var currentPosition: Double = js.native
   /**
     * Gets the current secondary drag handle position.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var currentPositionEnd: Double
+  var currentPositionEnd: Double = js.native
   /**
     * Gets the current main drag handle position.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var currentPositionStart: Double
+  var currentPositionStart: Double = js.native
   /**
     * Gets a position where the drag handle is being moved.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var newPosition: Double
+  var newPosition: Double = js.native
   /**
     * Gets a position where the secondary drag handle is being moved.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var newPositionEnd: Double
+  var newPositionEnd: Double = js.native
   /**
     * Gets a position where the main drag handle is being moved.
-    * Value: A <see cref="Decimal" /> value that is the drag handle position.
     */
-  var newPositionStart: Double
-}
-
-object ASPxClientTrackBarPositionChangingEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    currentPosition: Double,
-    currentPositionEnd: Double,
-    currentPositionStart: Double,
-    newPosition: Double,
-    newPositionEnd: Double,
-    newPositionStart: Double,
-    processOnServer: Boolean
-  ): ASPxClientTrackBarPositionChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, currentPosition = currentPosition, currentPositionEnd = currentPositionEnd, currentPositionStart = currentPositionStart, newPosition = newPosition, newPositionEnd = newPositionEnd, newPositionStart = newPositionStart, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientTrackBarPositionChangingEventArgs]
-  }
+  var newPositionStart: Double = js.native
 }
 

@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to insert a caption for an equation.
   */
-trait InsertEquationsCaptionCommand extends CommandWithSimpleStateBase {
+@JSGlobal("InsertEquationsCaptionCommand")
+@js.native
+class InsertEquationsCaptionCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the InsertEquationsCaptionCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the InsertEquationsCaptionCommand command.
     */
-  def execute(): Boolean
-}
-
-object InsertEquationsCaptionCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertEquationsCaptionCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[InsertEquationsCaptionCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

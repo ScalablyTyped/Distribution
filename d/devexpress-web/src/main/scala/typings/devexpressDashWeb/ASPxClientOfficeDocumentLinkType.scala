@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Lists the available link types within office documents.
   */
-trait ASPxClientOfficeDocumentLinkType extends js.Object
+@JSGlobal("ASPxClientOfficeDocumentLinkType")
+@js.native
+class ASPxClientOfficeDocumentLinkType () extends js.Object
 

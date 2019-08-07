@@ -6,32 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ParseDate client-side event that parses a string entered into a date editor.
+  * Provides data for the ASPxClientDateEdit.ParseDate client-side event that parses a string entered into a date editor.
   */
-trait ASPxClientParseDateEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientParseDateEventArgs")
+@js.native
+class ASPxClientParseDateEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientParseDateEventArgs class with specified settings.
+    * @param value A string containing the value entered into the date editor.
+    */
+  def this(value: String) = this()
   /**
     * Gets or sets the edit value of the date editor.
-    * Value: A date/time value representing the edit value of the date editor.
     */
-  var date: Date
+  var date: Date = js.native
   /**
     * Gets or sets a value specifying whether the event was handled.
-    * Value: true if the event was handled and default processing should not occur; false if the event should be handled using default processing.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets the value entered into the date editor by an end user.
-    * Value: The string value entered into the date editor by an end user.
     */
-  var value: String
-}
-
-object ASPxClientParseDateEventArgs {
-  @scala.inline
-  def apply(date: Date, handled: Boolean, value: String): ASPxClientParseDateEventArgs = {
-    val __obj = js.Dynamic.literal(date = date, handled = handled, value = value)
-  
-    __obj.asInstanceOf[ASPxClientParseDateEventArgs]
-  }
+  var value: String = js.native
 }
 

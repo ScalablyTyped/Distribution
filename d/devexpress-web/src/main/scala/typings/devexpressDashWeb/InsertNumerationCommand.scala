@@ -7,18 +7,15 @@ import scala.scalajs.js.annotation._
 /**
   * A command to insert numeration to a paragraph making it a numbering list item.
   */
+@JSGlobal("InsertNumerationCommand")
 @js.native
-trait InsertNumerationCommand extends CommandWithSimpleStateBase {
+class InsertNumerationCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the InsertNumerationCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param abstractNumberingListIndex An integer value specifying index of abstract numbering list.
+    * Executes the ChangePageMarginsCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
+    * @param numberingListIndex The list index.
+    * @param isAbstractNumberingList true, for abstract lists; otherwise, false.
     */
-  def execute(abstractNumberingListIndex: Double): Boolean = js.native
-  /**
-    * Executes the InsertNumerationCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param numberingListIndex An integer value specifying an index of the numbering list.
-    * @param isAbstractNumberingList true, to insert an abstract numbering list; otherwise, false.
-    */
+  def execute(numberingListIndex: Double): Boolean = js.native
   def execute(numberingListIndex: Double, isAbstractNumberingList: Boolean): Boolean = js.native
 }
 

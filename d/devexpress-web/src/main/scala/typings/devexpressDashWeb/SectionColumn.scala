@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Defines a section column in the document.
   */
-trait SectionColumn extends js.Object {
+@JSGlobal("SectionColumn")
+@js.native
+class SectionColumn () extends js.Object {
   /**
-    * Gets or sets the amount of space between adjacent section columns.
-    * Value: An integer value specifying the spacing after a column in twips.
+    * Specifies the space between adjacent section columns.
     */
-  var spacing: Double
+  var spacing: Double = js.native
   /**
-    * Gets or sets the width of the section column.
-    * Value: An integer value specifying the section column width in twips.
+    * Specifies the width of the section column.
     */
-  var width: Double
-}
-
-object SectionColumn {
-  @scala.inline
-  def apply(spacing: Double, width: Double): SectionColumn = {
-    val __obj = js.Dynamic.literal(spacing = spacing, width = width)
-  
-    __obj.asInstanceOf[SectionColumn]
-  }
+  var width: Double = js.native
 }
 

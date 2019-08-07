@@ -7,46 +7,29 @@ import scala.scalajs.js.annotation._
 /**
   * The base class for parameters related to inserting or changing media elements in the ASPxHtmlEditor.
   */
-trait ASPxClientHtmlEditorChangeMediaElementCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+@JSGlobal("ASPxClientHtmlEditorChangeMediaElementCommandArguments")
+@js.native
+class ASPxClientHtmlEditorChangeMediaElementCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
+  protected def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
   /**
     * Determines the position of the target media element.
-    * Value: A string value indicating the position of the target media element.
     */
-  var align: String
+  var align: String = js.native
   /**
-    * Defines the <a href="http://www.w3schools.com/tags/att_global_id.asp">HTML "id"</a> attribute of the target media element.
-    * Value: A string value which is a unique identifier for the element.
+    * Defines the <a href="http://www.w3schools.com/tags/att_global_id.asp">HTML &quot;id&quot;</a> attribute of the target media element.
     */
-  var id: String
+  var id: String = js.native
   /**
     * Defines the source of the target media element.
-    * Value: A string defining the source of the target media element.
     */
-  var src: String
+  var src: String = js.native
   /**
     * Contains the style settings defining the appearance of the target media element.
-    * Value: An <see cref="ASPxClientHtmlEditorCommandStyleSettings" /> object that contains the style settings defining the appearance of the target media element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
   /**
     * Returns the name of the client-side command corresponding to the parameter.
     */
-  def GetCommandName(): String
-}
-
-object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
-  @scala.inline
-  def apply(
-    GetCommandName: () => String,
-    align: String,
-    id: String,
-    selectedElement: js.Object,
-    src: String,
-    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
-  ): ASPxClientHtmlEditorChangeMediaElementCommandArguments = {
-    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align, id = id, selectedElement = selectedElement, src = src, styleSettings = styleSettings)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorChangeMediaElementCommandArguments]
-  }
+  def GetCommandName(): String = js.native
 }
 

@@ -41,6 +41,10 @@ trait ModelArtifacts extends js.Object {
     */
   var trainingConfig: js.UndefOr[TrainingConfig] = js.undefined
   /**
+    * User-defined metadata about the model.
+    */
+  var userDefinedMetadata: js.UndefOr[js.Object] = js.undefined
+  /**
     * Binary buffer for all weight values concatenated in the order specified
     * by `weightSpecs`.
     */
@@ -61,6 +65,7 @@ object ModelArtifacts {
     generatedBy: String = null,
     modelTopology: js.Object | ArrayBuffer = null,
     trainingConfig: TrainingConfig = null,
+    userDefinedMetadata: js.Object = null,
     weightData: ArrayBuffer = null,
     weightSpecs: js.Array[WeightsManifestEntry] = null
   ): ModelArtifacts = {
@@ -70,6 +75,7 @@ object ModelArtifacts {
     if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy)
     if (modelTopology != null) __obj.updateDynamic("modelTopology")(modelTopology.asInstanceOf[js.Any])
     if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig)
+    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata)
     if (weightData != null) __obj.updateDynamic("weightData")(weightData)
     if (weightSpecs != null) __obj.updateDynamic("weightSpecs")(weightSpecs)
     __obj.asInstanceOf[ModelArtifacts]

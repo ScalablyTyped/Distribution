@@ -7,20 +7,13 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings that specify parameters affecting how the Pivot dashboard item is exported.
   */
-trait PivotExportOptions extends js.Object {
+@JSGlobal("PivotExportOptions")
+@js.native
+class PivotExportOptions () extends js.Object {
+  /** @deprecated The PivotExportOptions.PrintHeadersOnEveryPage property is obsolete now. Use the DashboardPdfExportOptions.PivotPrintHeadersOnEveryPage property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Gets or sets whether to print the column headers of the Pivot dashboard item on every page.
-    * Value: true, to print column headers on every page; otherwise, false.
     */
-  var PrintHeadersOnEveryPage: Boolean
-}
-
-object PivotExportOptions {
-  @scala.inline
-  def apply(PrintHeadersOnEveryPage: Boolean): PivotExportOptions = {
-    val __obj = js.Dynamic.literal(PrintHeadersOnEveryPage = PrintHeadersOnEveryPage)
-  
-    __obj.asInstanceOf[PivotExportOptions]
-  }
+  var PrintHeadersOnEveryPage: Boolean = js.native
 }
 

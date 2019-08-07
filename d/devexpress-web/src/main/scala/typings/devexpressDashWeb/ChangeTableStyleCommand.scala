@@ -7,21 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the selected table's style.
   */
+@JSGlobal("ChangeTableStyleCommand")
 @js.native
-trait ChangeTableStyleCommand extends CommandBase {
+class ChangeTableStyleCommand () extends CommandBase {
   /**
-    * Executes the ChangeTableStyleCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param styleName A string specifying the name of style applying to the table.
-    */
-  def execute(styleName: String): Boolean = js.native
-  /**
-    * Executes the ChangeTableStyleCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTableStyleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param style A TableStyle object specifying the style applying to the table.
     */
+  def execute(style: String): Boolean = js.native
   def execute(style: TableStyle): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any = js.native
+  def getState(): CommandState[TableStyle] = js.native
 }
 

@@ -27,6 +27,7 @@ trait Text extends js.Object {
   def setBackgroundFill(fill: typings.ol.styleFillMod.default): Unit = js.native
   def setBackgroundStroke(stroke: typings.ol.styleStrokeMod.default): Unit = js.native
   def setFill(fill: typings.ol.styleFillMod.default): Unit = js.native
+  def setFont(): Unit = js.native
   def setFont(font: String): Unit = js.native
   def setMaxAngle(maxAngle: Double): Unit = js.native
   def setOffsetX(offsetX: Double): Unit = js.native
@@ -35,11 +36,16 @@ trait Text extends js.Object {
   def setPadding(padding: js.Array[Double]): Unit = js.native
   def setPlacement(placement: String): Unit = js.native
   def setPlacement(placement: TextPlacement): Unit = js.native
+  def setRotation(): Unit = js.native
   def setRotation(rotation: Double): Unit = js.native
+  def setScale(): Unit = js.native
   def setScale(scale: Double): Unit = js.native
   def setStroke(stroke: typings.ol.styleStrokeMod.default): Unit = js.native
+  def setText(): Unit = js.native
   def setText(text: String): Unit = js.native
+  def setTextAlign(): Unit = js.native
   def setTextAlign(textAlign: String): Unit = js.native
+  def setTextBaseline(): Unit = js.native
   def setTextBaseline(textBaseline: String): Unit = js.native
 }
 

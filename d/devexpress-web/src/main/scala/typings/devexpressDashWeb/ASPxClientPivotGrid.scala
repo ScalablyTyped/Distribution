@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxPivotGrid control.
   */
+@JSGlobal("ASPxClientPivotGrid")
 @js.native
-trait ASPxClientPivotGrid extends ASPxClientControl {
+class ASPxClientPivotGrid () extends ASPxClientControl {
+  /** @deprecated Use the EndCallback event instead */
   /**
     * Fires after a callback that has been processed on the server returns back to the client.
     */
   var AfterCallback: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPivotGrid]] = js.native
+  /** @deprecated Use the BeginCallback event instead */
   /**
     * Fires before a callback is sent to the server for server-side processing.
     */
@@ -74,16 +77,12 @@ trait ASPxClientPivotGrid extends ASPxClientControl {
     */
   def IsPrefilterVisible(): Boolean = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(args: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param args A string value that represents any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxPivotGrid.CustomCallback event, passing it the specified argument.
+    * @param args A string value that represents any information that needs to be sent to the server-side ASPxPivotGrid.CustomCallback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(args: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(args: String): Unit = js.native
+  def PerformCallback(args: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Specifies the visibility of the customization form.
     * @param value true to display the customization form; false to hide the customization form.
@@ -93,5 +92,16 @@ trait ASPxClientPivotGrid extends ASPxClientControl {
     * Shows the Filter Editor.
     */
   def ShowPrefilter(): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientPivotGrid")
+@js.native
+object ASPxClientPivotGrid extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientPivotGrid type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientPivotGrid = js.native
 }
 

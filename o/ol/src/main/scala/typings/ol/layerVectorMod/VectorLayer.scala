@@ -28,7 +28,9 @@ trait VectorLayer
   def getUpdateWhileAnimating(): Boolean = js.native
   def getUpdateWhileInteracting(): Boolean = js.native
   def setDeclutter(declutter: Boolean): Unit = js.native
+  def setRenderOrder(): Unit = js.native
   def setRenderOrder(renderOrder: OrderFunction): Unit = js.native
+  def setStyle(): Unit = js.native
   def setStyle(style: js.Array[typings.ol.styleStyleMod.default]): Unit = js.native
   def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: typings.ol.styleStyleMod.default): Unit = js.native

@@ -5,22 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the DialogBoxLauncherClicked event.
+  * Provides data for the ASPxClientRibbon.DialogBoxLauncherClicked event.
   */
-trait ASPxClientRibbonDialogBoxLauncherClickedEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientRibbonDialogBoxLauncherClickedEventArgs")
+@js.native
+class ASPxClientRibbonDialogBoxLauncherClickedEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientRibbonDialogBoxLauncherClickedEventArgs type with the specified settings.
+    * @param group An ASPxClientRibbonGroup object to which the dialog box launcher belongs.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    */
+  def this(group: ASPxClientRibbonGroup, processOnServer: Boolean) = this()
   /**
     * Gets the client group object to which the clicked dialog box launcher belongs.
-    * Value: An <see cref="ASPxClientRibbonGroup" /> object to which the dialog box launcher belongs.
     */
-  var group: ASPxClientRibbonGroup
-}
-
-object ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
-  @scala.inline
-  def apply(group: ASPxClientRibbonGroup, processOnServer: Boolean): ASPxClientRibbonDialogBoxLauncherClickedEventArgs = {
-    val __obj = js.Dynamic.literal(group = group, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientRibbonDialogBoxLauncherClickedEventArgs]
-  }
+  var group: ASPxClientRibbonGroup = js.native
 }
 

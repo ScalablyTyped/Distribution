@@ -19,9 +19,11 @@ trait Style extends js.Object {
   def setGeometry(geometry: typings.ol.geomGeometryMod.default): Unit = js.native
   def setGeometry(geometry: GeometryFunction): Unit = js.native
   def setImage(image: typings.ol.styleImageMod.default): Unit = js.native
+  def setRenderer(): Unit = js.native
   def setRenderer(renderer: RenderFunction): Unit = js.native
   def setStroke(stroke: typings.ol.styleStrokeMod.default): Unit = js.native
   def setText(text: typings.ol.styleTextMod.default): Unit = js.native
+  def setZIndex(): Unit = js.native
   def setZIndex(zIndex: Double): Unit = js.native
 }
 

@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ItemRenamed event.
+  * Provides data for the ASPxClientFileManager.ItemRenamed event.
   */
-trait ASPxClientFileManagerItemRenamedEventArgs extends ASPxClientFileManagerActionEventArgsBase {
+@JSGlobal("ASPxClientFileManagerItemRenamedEventArgs")
+@js.native
+class ASPxClientFileManagerItemRenamedEventArgs protected () extends ASPxClientFileManagerActionEventArgsBase {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerItemRenamedEventArgs object with the specified parameters.
+    * @param fullName A string value that is the item's full name.
+    * @param name A string value that specifies the item's name.
+    * @param oldName A string value that specifies the item name.
+    * @param isFolder true if the processed item is a folder; false if the processed item is a file.
+    */
+  def this(fullName: String, name: String, oldName: String, isFolder: Boolean) = this()
   /**
     * Gets the previous name of the renamed item.
-    * Value: A  string value that specifies the item name.
     */
-  var oldName: String
-}
-
-object ASPxClientFileManagerItemRenamedEventArgs {
-  @scala.inline
-  def apply(fullName: String, isFolder: Boolean, name: String, oldName: String): ASPxClientFileManagerItemRenamedEventArgs = {
-    val __obj = js.Dynamic.literal(fullName = fullName, isFolder = isFolder, name = name, oldName = oldName)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerItemRenamedEventArgs]
-  }
+  var oldName: String = js.native
 }
 

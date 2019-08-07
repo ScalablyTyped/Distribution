@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CustomCommandExecuted event.
+  * Provides data for the ASPxClientRichEdit.CustomCommandExecuted event.
   */
-trait ASPxClientRichEditCustomCommandExecutedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditCustomCommandExecutedEventArgs")
+@js.native
+class ASPxClientRichEditCustomCommandExecutedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditCustomCommandExecutedEventArgs object. For internal use only.
+    * @param commandName A string value that specifies the name of the processed command.
+    * @param parameter An object that can contain command specific information needed for handling the command execution.
+    */
+  def this(commandName: String, parameter: js.Any) = this()
   /**
     * Gets the name of the processed command.
-    * Value: A string value representing the processed command's name.
     */
-  var commandName: String
+  var commandName: String = js.native
   /**
     * Gets an optional parameter that complements the processed command.
-    * Value: A string value containing additional information about the processed command.
     */
-  var parameter: js.Object
-}
-
-object ASPxClientRichEditCustomCommandExecutedEventArgs {
-  @scala.inline
-  def apply(commandName: String, parameter: js.Object): ASPxClientRichEditCustomCommandExecutedEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName, parameter = parameter)
-  
-    __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
-  }
+  var parameter: js.Any = js.native
 }
 

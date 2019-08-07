@@ -48,6 +48,14 @@ object ItemValue extends js.Object {
     values: js.Any,
     properties: js.Any
   ): Boolean = js.native
+  def runConditionsForItems(
+    items: js.Array[ItemValue],
+    filteredItems: js.Array[ItemValue],
+    runner: ConditionRunner,
+    values: js.Any,
+    properties: js.Any,
+    useItemExpression: Boolean
+  ): Boolean = js.native
   def runEnabledConditionsForItems(items: js.Array[ItemValue], runner: ConditionRunner, values: js.Any, properties: js.Any): Boolean = js.native
   def setData(items: js.Array[ItemValue], values: js.Array[_]): Unit = js.native
   def setupArray(items: js.Array[ItemValue], locOwner: ILocalizableOwner): Unit = js.native

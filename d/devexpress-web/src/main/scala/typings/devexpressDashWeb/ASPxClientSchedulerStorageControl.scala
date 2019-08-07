@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxSchedulerStorageControl control.
   */
+@JSGlobal("ASPxClientSchedulerStorageControl")
 @js.native
-trait ASPxClientSchedulerStorageControl extends ASPxClientControl {
+class ASPxClientSchedulerStorageControl () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -39,21 +40,16 @@ trait ASPxClientSchedulerStorageControl extends ASPxClientControl {
     * @param onSuccess A handler of a function which will receive and process the appointments.
     * @param appointmentId An appointment's identifier.
     */
-  def GetAppointmentById(onSuccess: js.Function1[/* arg1 */ String, Unit], appointmentId: String): Unit = js.native
-  /**
-    * Retrieves the collection of appointments that are in the specified time interval.
-    * @param onSuccess A client action to perform if the server round-trip completed successfully.
-    * @param interval An ASPxClientTimeInterval object specifying the required time interval.
-    */
-  def GetAppointments(onSuccess: js.Function1[/* arg1 */ String, Unit], interval: ASPxClientTimeInterval): Unit = js.native
+  def GetAppointmentById(onSuccess: js.Function1[/* arg */ String, Unit], appointmentId: String): Unit = js.native
   /**
     * Retrieves the collection of appointments that are in the specified time interval and are assigned to the specified resources.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     * @param interval An ASPxClientTimeInterval object specifying the required time interval.
     * @param resources An array of string values representing the resources' IDs.
     */
+  def GetAppointments(onSuccess: js.Function1[/* arg */ String, Unit], interval: ASPxClientTimeInterval): Unit = js.native
   def GetAppointments(
-    onSuccess: js.Function1[/* arg1 */ String, Unit],
+    onSuccess: js.Function1[/* arg */ String, Unit],
     interval: ASPxClientTimeInterval,
     resources: js.Array[String]
   ): Unit = js.native
@@ -62,12 +58,12 @@ trait ASPxClientSchedulerStorageControl extends ASPxClientControl {
     * @param onSuccess A handler of a function which will receive and process the properties' values.
     * @param resourceId A string value specifying the resource ID.
     */
-  def GetResourceById(onSuccess: js.Function1[/* arg1 */ String, Unit], resourceId: String): Unit = js.native
+  def GetResourceById(onSuccess: js.Function1[/* arg */ String, Unit], resourceId: String): Unit = js.native
   /**
     * Retrieves the collection of resources.
     * @param onSuccess A client action to perform if the server round-trip has completed successfully.
     */
-  def GetResources(onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def GetResources(onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Client-side scripting method to insert the specified appointment.
     * @param appointment An ASPxClientAppointment object representing the client-side appointment.

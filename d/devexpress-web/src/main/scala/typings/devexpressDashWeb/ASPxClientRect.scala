@@ -7,46 +7,40 @@ import scala.scalajs.js.annotation._
 /**
   * A client rectangle object.
   */
-trait ASPxClientRect extends js.Object {
+@JSGlobal("ASPxClientRect")
+@js.native
+class ASPxClientRect protected () extends js.Object {
+  /**
+    * Initializes a new instance of the ASPxClientRect object. For internal use only.
+    * @param x An integer value specifying the x-coordinate of the upper-left corner of the rectangle.
+    * @param y An integer value specifying the y-coordinate of the upper-left corner of the rectangle.
+    * @param width An integer value specifying the rectangle width.
+    * @param height An integer value specifying the rectangle height.
+    */
+  def this(x: Double, y: Double, width: Double, height: Double) = this()
   /**
     * Gets the Y-coordinate of the rectangle's bottom edge.
     */
-  def GetBottom(): Double
+  def GetBottom(): Double = js.native
   /**
     * Gets the rectangle's height.
     */
-  def GetHeight(): Double
+  def GetHeight(): Double = js.native
   /**
     * Gets the X-coordinate of the rectangle's left edge.
     */
-  def GetLeft(): Double
+  def GetLeft(): Double = js.native
   /**
     * Gets the X-coordinate of the rectangle's right edge.
     */
-  def GetRight(): Double
+  def GetRight(): Double = js.native
   /**
     * Gets the Y-coordinate of the rectangle's top edge.
     */
-  def GetTop(): Double
+  def GetTop(): Double = js.native
   /**
     * Gets the rectangle's width.
     */
-  def GetWidth(): Double
-}
-
-object ASPxClientRect {
-  @scala.inline
-  def apply(
-    GetBottom: () => Double,
-    GetHeight: () => Double,
-    GetLeft: () => Double,
-    GetRight: () => Double,
-    GetTop: () => Double,
-    GetWidth: () => Double
-  ): ASPxClientRect = {
-    val __obj = js.Dynamic.literal(GetBottom = js.Any.fromFunction0(GetBottom), GetHeight = js.Any.fromFunction0(GetHeight), GetLeft = js.Any.fromFunction0(GetLeft), GetRight = js.Any.fromFunction0(GetRight), GetTop = js.Any.fromFunction0(GetTop), GetWidth = js.Any.fromFunction0(GetWidth))
-  
-    __obj.asInstanceOf[ASPxClientRect]
-  }
+  def GetWidth(): Double = js.native
 }
 

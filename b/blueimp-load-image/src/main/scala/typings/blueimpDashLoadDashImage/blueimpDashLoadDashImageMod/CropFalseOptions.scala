@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CropFalseOptions extends CropOptions {
-  var crop: `false`
+  var crop: js.UndefOr[`false`] = js.undefined
 }
 
 object CropFalseOptions {
   @scala.inline
-  def apply(crop: `false`): CropFalseOptions = {
-    val __obj = js.Dynamic.literal(crop = crop)
-  
+  def apply(crop: `false` = null): CropFalseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (crop != null) __obj.updateDynamic("crop")(crop)
     __obj.asInstanceOf[CropFalseOptions]
   }
 }

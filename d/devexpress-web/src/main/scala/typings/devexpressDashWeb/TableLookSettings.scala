@@ -7,52 +7,32 @@ import scala.scalajs.js.annotation._
 /**
   * Contains the table style settings that modify the table appearance.
   */
-trait TableLookSettings extends js.Object {
+@JSGlobal("TableLookSettings")
+@js.native
+class TableLookSettings () extends js.Object {
   /**
-    * Gets or sets a value specifying whether special formatting is applied to the first column of the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether special formatting is applied to the first column of the table.
     */
-  var applyFirstColumn: Boolean
+  var applyFirstColumn: Boolean = js.native
   /**
-    * Gets or sets a value specifying whether special formatting is applied to the first row of the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether special formatting is applied to the first row of the table.
     */
-  var applyFirstRow: Boolean
+  var applyFirstRow: Boolean = js.native
   /**
-    * Gets or sets a value specifying whether special formatting is applied to the last column of the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether special formatting is applied to the last column of the table.
     */
-  var applyLastColumn: Boolean
+  var applyLastColumn: Boolean = js.native
   /**
-    * Gets or sets a value specifying whether special formatting is applied to the last row of the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether special formatting is applied to the last row of the table.
     */
-  var applyLastRow: Boolean
+  var applyLastRow: Boolean = js.native
   /**
-    * Gets or sets a value specifying whether column banding formatting is not applied to the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether column banding formatting is not applied to the table.
     */
-  var doNotApplyColumnBanding: Boolean
+  var doNotApplyColumnBanding: Boolean = js.native
   /**
-    * Gets or sets a value specifying whether row banding formatting is not applied to the table.
-    * Value: true, to apply the formatting; otherwise, false.
+    * Specifies whether row banding formatting is not applied to the table.
     */
-  var doNotApplyRowBanding: Boolean
-}
-
-object TableLookSettings {
-  @scala.inline
-  def apply(
-    applyFirstColumn: Boolean,
-    applyFirstRow: Boolean,
-    applyLastColumn: Boolean,
-    applyLastRow: Boolean,
-    doNotApplyColumnBanding: Boolean,
-    doNotApplyRowBanding: Boolean
-  ): TableLookSettings = {
-    val __obj = js.Dynamic.literal(applyFirstColumn = applyFirstColumn, applyFirstRow = applyFirstRow, applyLastColumn = applyLastColumn, applyLastRow = applyLastRow, doNotApplyColumnBanding = doNotApplyColumnBanding, doNotApplyRowBanding = doNotApplyRowBanding)
-  
-    __obj.asInstanceOf[TableLookSettings]
-  }
+  var doNotApplyRowBanding: Boolean = js.native
 }
 

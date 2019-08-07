@@ -13,6 +13,6 @@ object cssMod extends js.Object {
   val CLASS_SELECTABLE: String = js.native
   val CLASS_UNSELECTABLE: String = js.native
   val CLASS_UNSUPPORTED: String = js.native
-  def getFontFamilies(p0: String): js.Array[String] = js.native
+  def getFontFamilies(font: String): js.Array[String] = js.native
 }
 

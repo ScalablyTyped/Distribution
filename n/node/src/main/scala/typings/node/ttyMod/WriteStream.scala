@@ -14,9 +14,21 @@ class WriteStream () extends Socket {
   var rows: Double = js.native
   @JSName("addListener")
   def addListener_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
-  def clearLine(dir: Direction): Unit = js.native
-  def clearScreenDown(): Unit = js.native
-  def cursorTo(x: Double, y: Double): Unit = js.native
+  /**
+    * Clears the current line of this WriteStream in a direction identified by `dir`.
+    */
+  def clearLine(dir: Direction): Boolean = js.native
+  def clearLine(dir: Direction, callback: js.Function0[Unit]): Boolean = js.native
+  /**
+    * Clears this `WriteStream` from the current cursor down.
+    */
+  def clearScreenDown(): Boolean = js.native
+  def clearScreenDown(callback: js.Function0[Unit]): Boolean = js.native
+  /**
+    * Moves this WriteStream's cursor to the specified position.
+    */
+  def cursorTo(x: Double, y: Double): Boolean = js.native
+  def cursorTo(x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
   @JSName("emit")
   def emit_resize(event: resize): Boolean = js.native
   /**
@@ -29,6 +41,11 @@ class WriteStream () extends Socket {
   def hasColors(depth: Double): Boolean = js.native
   def hasColors(depth: Double, env: js.Object): Boolean = js.native
   def hasColors(env: js.Object): Boolean = js.native
+  /**
+    * Moves this WriteStream's cursor relative to its current position.
+    */
+  def moveCursor(dx: Double, dy: Double): Boolean = js.native
+  def moveCursor(dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = js.native
   @JSName("on")
   def on_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")

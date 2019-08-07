@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the selected table's formatting.
   */
-trait ChangeTableFormattingCommand extends CommandBase {
+@JSGlobal("ChangeTableFormattingCommand")
+@js.native
+class ChangeTableFormattingCommand () extends js.Object {
   /**
-    * Executes the ChangeTableFormattingCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTableFormattingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TableFormattingSettings object containing the settings to format a table.
     */
-  def execute(settings: TableFormattingSettings): Boolean
+  def execute(settings: TableFormattingSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTableFormattingCommand {
-  @scala.inline
-  def apply(execute: TableFormattingSettings => Boolean, getState: () => js.Any): ChangeTableFormattingCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTableFormattingCommand]
-  }
+  def getState(): CommandState[TableFormattingSettings] = js.native
 }
 

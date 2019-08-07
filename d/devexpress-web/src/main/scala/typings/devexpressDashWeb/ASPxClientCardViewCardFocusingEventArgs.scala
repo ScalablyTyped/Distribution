@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CardFocusing event.
+  * Provides data for the ASPxClientCardView.CardFocusing event.
   */
-trait ASPxClientCardViewCardFocusingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewCardFocusingEventArgs")
+@js.native
+class ASPxClientCardViewCardFocusingEventArgs protected () extends ASPxClientCancelEventArgs {
   /**
-    * Provides access to the parameters associated with the CardFocusing event.
-    * Value: An object that contains parameters associated with the event.
+    * Initializes a new instance of the ASPxClientCardViewCardFocusingEventArgs class.
+    * @param visibleIndex A integer value specifying the card visible index.
+    * @param htmlEvent An object specifying the HTML event.
     */
-  var htmlEvent: js.Object
+  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+  /**
+    * Provides access to the parameters associated with the ASPxClientCardView.CardFocusing event.
+    */
+  var htmlEvent: js.Any = js.native
   /**
     * Gets the card visible index.
-    * Value: An integer value specifying the visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewCardFocusingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Object, visibleIndex: Double): ASPxClientCardViewCardFocusingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewCardFocusingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

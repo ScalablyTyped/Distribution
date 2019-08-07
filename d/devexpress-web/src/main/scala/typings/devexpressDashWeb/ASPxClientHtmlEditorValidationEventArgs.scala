@@ -5,32 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the Validation client event.
+  * Provides data for the ASPxClientHtmlEditor.Validation client event.
   */
-trait ASPxClientHtmlEditorValidationEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientHtmlEditorValidationEventArgs")
+@js.native
+class ASPxClientHtmlEditorValidationEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorValidationEventArgs class.
+    * @param html A string value that specifies the HTML content to validate. This value is assigned to the ASPxClientHtmlEditorValidationEventArgs.html property.
+    * @param isValid true if the validation has been completed successfully; otherwise, false. This value is assigned to the ASPxClientHtmlEditorValidationEventArgs.isValid property.
+    * @param errorText A string value representing the error description. This value is assigned to the ASPxClientHtmlEditorValidationEventArgs.errorText property.
+    */
+  def this(html: String, isValid: Boolean, errorText: Boolean) = this()
   /**
     * Gets or sets the error text to be displayed within the editor's error frame if the editor's validation fails.
-    * Value: A string value specifying the error description.
     */
-  var errorText: String
+  var errorText: String = js.native
   /**
     * Gets or sets the HTML markup that is the ASPxHtmlEditor's content.
-    * Value: A string value that specifies the HTML content to validate.
     */
-  var html: String
+  var html: String = js.native
   /**
     * Gets or sets a value specifying whether the validated value is valid.
-    * Value: true if the validation has been completed successfully; otherwise, false.
     */
-  var isValid: Boolean
-}
-
-object ASPxClientHtmlEditorValidationEventArgs {
-  @scala.inline
-  def apply(errorText: String, html: String, isValid: Boolean): ASPxClientHtmlEditorValidationEventArgs = {
-    val __obj = js.Dynamic.literal(errorText = errorText, html = html, isValid = isValid)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorValidationEventArgs]
-  }
+  var isValid: Boolean = js.native
 }
 

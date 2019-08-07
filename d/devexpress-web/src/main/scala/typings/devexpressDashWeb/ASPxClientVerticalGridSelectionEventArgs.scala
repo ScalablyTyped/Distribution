@@ -5,43 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SelectionChanged event.
+  * Provides data for the ASPxClientVerticalGrid.SelectionChanged event.
   */
-trait ASPxClientVerticalGridSelectionEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientVerticalGridSelectionEventArgs")
+@js.native
+class ASPxClientVerticalGridSelectionEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridSelectionEventArgs class.
+    * @param visibleIndex An integer value that specifies the visible index of the record whose selected state has been changed. This value is assigned to the ASPxClientVerticalGridSelectionEventArgs.visibleIndex property.
+    */
+  def this(visibleIndex: Double) = this()
   /**
     * Gets whether all records displayed within a page have been selected or unselected.
-    * Value: true if all records displayed within a page have been selected or unselected; otherwise, false.
     */
-  var isAllRecordsOnPage: Boolean
+  var isAllRecordsOnPage: Boolean = js.native
   /**
     * Gets whether a selection has been changed on the server.
-    * Value: true  if a selection has been changed on the server; otherwise, false.
     */
-  var isChangedOnServer: Boolean
+  var isChangedOnServer: Boolean = js.native
   /**
     * Gets whether the record has been selected.
-    * Value: true, if the record has been selected; otherwise, false.
     */
-  var isSelected: Boolean
+  var isSelected: Boolean = js.native
   /**
     * Gets the visible index of the record whose selected state has been changed.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the record.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientVerticalGridSelectionEventArgs {
-  @scala.inline
-  def apply(
-    isAllRecordsOnPage: Boolean,
-    isChangedOnServer: Boolean,
-    isSelected: Boolean,
-    processOnServer: Boolean,
-    visibleIndex: Double
-  ): ASPxClientVerticalGridSelectionEventArgs = {
-    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridSelectionEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

@@ -5,22 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Contains settings related to the TABLECOLUMNPROPERTIES_DIALOG_COMMAND command parameter.
+  * Contains settings related to the ASPxClientCommandConsts.TABLECOLUMNPROPERTIES_DIALOG_COMMAND command parameter.
   */
-trait ASPxClientHtmlEditorTableColumnPropertiesCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+@JSGlobal("ASPxClientHtmlEditorTableColumnPropertiesCommandArguments")
+@js.native
+class ASPxClientHtmlEditorTableColumnPropertiesCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorTableColumnPropertiesCommandArguments class with specified settings.
+    * @param htmlEditor The HTML editor executing a command.
+    * @param selectedElement An object containing the currently selected element in the HTML editor.
+    */
+  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
   /**
     * Contains the style settings defining the appearance of the target column element.
-    * Value: An <see cref="ASPxClientHtmlEditorCommandStyleSettings" /> object that contains the style settings defining the appearance of the target column element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
-}
-
-object ASPxClientHtmlEditorTableColumnPropertiesCommandArguments {
-  @scala.inline
-  def apply(selectedElement: js.Object, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableColumnPropertiesCommandArguments = {
-    val __obj = js.Dynamic.literal(selectedElement = selectedElement, styleSettings = styleSettings)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesCommandArguments]
-  }
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
 }
 

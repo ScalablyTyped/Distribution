@@ -25,8 +25,7 @@ trait Profile extends js.Object {
     */
   var startTime: Double
   /**
-    * Time intervals between adjacent samples in microseconds. The first delta is relative to the
-    * profile startTime.
+    * Time intervals between adjacent samples in microseconds. The first delta is relative to the profile startTime.
     */
   var timeDeltas: js.UndefOr[js.Array[Double]] = js.undefined
 }

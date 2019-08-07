@@ -5,32 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the NodeClick event.
+  * Provides data for the ASPxClientTreeView.NodeClick event.
   */
-trait BootstrapClientTreeViewNodeClickEventArgs extends BootstrapClientTreeViewNodeProcessingModeEventArgs {
+@JSGlobal("BootstrapClientTreeViewNodeClickEventArgs")
+@js.native
+class BootstrapClientTreeViewNodeClickEventArgs protected () extends BootstrapClientTreeViewNodeProcessingModeEventArgs {
+  /**
+    * Initializes a new object of the BootstrapClientTreeViewNodeClickEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param node An BootstrapClientTreeViewNode object that represents a node related to the event.
+    * @param htmlElement An HTML object that contains the processed node.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(
+    processOnServer: Boolean,
+    node: BootstrapClientTreeViewNode,
+    htmlElement: js.Any,
+    htmlEvent: js.Any
+  ) = this()
   /**
     * Gets an HTML object that contains the processed Tree View node.
-    * Value: An HTML object.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: A DHTML event object.
     */
-  var htmlEvent: js.Object
-}
-
-object BootstrapClientTreeViewNodeClickEventArgs {
-  @scala.inline
-  def apply(
-    htmlElement: js.Object,
-    htmlEvent: js.Object,
-    node: BootstrapClientTreeViewNode,
-    processOnServer: Boolean
-  ): BootstrapClientTreeViewNodeClickEventArgs = {
-    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, node = node, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

@@ -35,11 +35,11 @@ class Skeleton protected () extends js.Object {
   def findTransformConstraint(constraintName: String): TransformConstraint = js.native
   def getAttachment(slotIndex: Double, attachmentName: String): Attachment = js.native
   def getAttachmentByName(slotName: String, attachmentName: String): Attachment = js.native
+  def getBounds(offset: Vector2, size: Vector2): Unit = js.native
   def getBounds(offset: Vector2, size: Vector2, temp: js.Array[Double]): Unit = js.native
   def getRootBone(): Bone = js.native
   def setAttachment(slotName: String, attachmentName: String): Unit = js.native
   def setBonesToSetupPose(): Unit = js.native
-  def setSkin(): Unit = js.native
   def setSkin(newSkin: Skin): Unit = js.native
   def setSkinByName(skinName: String): Unit = js.native
   def setSlotsToSetupPose(): Unit = js.native

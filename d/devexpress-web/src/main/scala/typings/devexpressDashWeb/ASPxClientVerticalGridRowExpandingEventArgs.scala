@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the RowExpandedChanging event.
+  * Provides data for the ASPxClientVerticalGrid.RowExpandedChanging event.
   */
-trait ASPxClientVerticalGridRowExpandingEventArgs extends ASPxClientVerticalGridRowExpandedEventArgs {
+@JSGlobal("ASPxClientVerticalGridRowExpandingEventArgs")
+@js.native
+class ASPxClientVerticalGridRowExpandingEventArgs protected () extends ASPxClientVerticalGridRowExpandedEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridRowExpandingEventArgs class with the specified row.
+    * @param row An ASPxClientVerticalGridRowobject that represents the row to expand.
+    */
+  def this(row: ASPxClientVerticalGridRow) = this()
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    * Value: true, if the action that raised the event should be canceled; otherwise, false.
     */
-  var cancel: Boolean
-}
-
-object ASPxClientVerticalGridRowExpandingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowExpandingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, row = row)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridRowExpandingEventArgs]
-  }
+  var cancel: Boolean = js.native
 }
 

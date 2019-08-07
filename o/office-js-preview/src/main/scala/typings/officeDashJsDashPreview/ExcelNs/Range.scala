@@ -228,8 +228,9 @@ class Range () extends ClientObject {
   var numberFormat: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Represents Excel's number format code for the given range as a string in the language of the user.
+    * Represents Excel's number format code for the given range, based on the language settings of the user.
     When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */

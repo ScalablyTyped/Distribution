@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle centered paragraph alignment on and off.
   */
-trait ToggleParagraphAlignmentCenterCommand extends CommandWithBooleanStateBase {
+@JSGlobal("ToggleParagraphAlignmentCenterCommand")
+@js.native
+class ToggleParagraphAlignmentCenterCommand () extends CommandWithBooleanStateBase {
   /**
-    * Executes the ToggleParagraphAlignmentCenterCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ToggleParagraphAlignmentCenterCommand command.
     */
-  def execute(): Boolean
-}
-
-object ToggleParagraphAlignmentCenterCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => js.Any): ToggleParagraphAlignmentCenterCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ToggleParagraphAlignmentCenterCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

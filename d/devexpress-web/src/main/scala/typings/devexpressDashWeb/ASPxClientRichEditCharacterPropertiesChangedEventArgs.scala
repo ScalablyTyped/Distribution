@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CharacterPropertiesChanged event.
+  * Provides data for the ASPxClientRichEdit.CharacterPropertiesChanged event.
   */
-trait ASPxClientRichEditCharacterPropertiesChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditCharacterPropertiesChangedEventArgs")
+@js.native
+class ASPxClientRichEditCharacterPropertiesChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditCharacterPropertiesChangedEventArgs object. For internal use only.
+    * @param subDocumentId An identifier of a sub-document containing the changed characters.
+    * @param interval An interval object that relates to the changed characters.
+    */
+  def this(subDocumentId: Double, interval: Interval) = this()
   /**
     * Gets the text buffer interval related to the changed characters.
-    * Value: An object that stores the changed character length and position.
     */
-  var interval: Interval
+  var interval: Interval = js.native
   /**
     * Gets the active sub-document's identifier.
-    * Value: An integer value specifying the sub-document's identifier.
     */
-  var subDocumentId: Double
-}
-
-object ASPxClientRichEditCharacterPropertiesChangedEventArgs {
-  @scala.inline
-  def apply(interval: Interval, subDocumentId: Double): ASPxClientRichEditCharacterPropertiesChangedEventArgs = {
-    val __obj = js.Dynamic.literal(interval = interval, subDocumentId = subDocumentId)
-  
-    __obj.asInstanceOf[ASPxClientRichEditCharacterPropertiesChangedEventArgs]
-  }
+  var subDocumentId: Double = js.native
 }
 

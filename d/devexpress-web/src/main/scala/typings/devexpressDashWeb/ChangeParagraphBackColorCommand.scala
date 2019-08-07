@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the background color of paragraphs in a selected range.
   */
-trait ChangeParagraphBackColorCommand extends CommandBase {
+@JSGlobal("ChangeParagraphBackColorCommand")
+@js.native
+class ChangeParagraphBackColorCommand () extends CommandBase {
   /**
-    * Executes the ChangeParagraphBackColorCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeParagraphBackColorCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param color A string specifying a background color of the paragraphs in a selected range. May be specified as a color name or a hex color value.
     */
-  def execute(color: String): Boolean
+  def execute(color: String): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeParagraphBackColorCommand {
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => js.Any): ChangeParagraphBackColorCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeParagraphBackColorCommand]
-  }
+  def getState(): CommandState[String] = js.native
 }
 

@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxScheduler control.
   */
+@JSGlobal("ASPxClientScheduler")
 @js.native
-trait ASPxClientScheduler extends ASPxClientControl {
+class ASPxClientScheduler () extends ASPxClientControl {
   /**
     * Client-side event. Occurs after the active view of the ASPxScheduler has been changed.
     */
@@ -114,14 +115,14 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * Returns focus to the form if the ASPxScheduler control is not visible when the reminder fires.
     * @param container A DIV object that is located in such a way that it is visible on the page in situations when the ASPxScheduler control is hidden.
     */
-  def ChangeFormContainer(container: js.Object): Unit = js.native
+  def ChangeFormContainer(container: js.Any): Unit = js.native
   /**
     * Changes the container that the ASPxScheduler pop-up menu belongs to.
     * @param container An object that serves as the new container for the pop-up menu.
     */
-  def ChangePopupMenuContainer(container: js.Object): Unit = js.native
+  def ChangePopupMenuContainer(container: js.Any): Unit = js.native
   /**
-    * Client-side method which raises the callback command to change the ClientTimeZoneId of the scheduler.
+    * Client-side method which raises the callback command to change the SchedulerOptionsBehaviorBase.ClientTimeZoneId of the scheduler.
     * @param timeZoneId A string, a time zone identifier which is valid for the System.TimeZoneInfo.Id property.
     */
   def ChangeTimeZoneId(timeZoneId: String): Unit = js.native
@@ -129,7 +130,7 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * Changes the container that the ASPxScheduler tooltip belongs to.
     * @param container An object that serves as the new container for the pop-up menu.
     */
-  def ChangeToolTipContainer(container: js.Object): Unit = js.native
+  def ChangeToolTipContainer(container: js.Any): Unit = js.native
   /**
     * Client-side scripting  method to delete the specified appointment.
     * @param apt An ASPxClientAppointment object representing the client-side appointment.
@@ -149,17 +150,20 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def GetAllDayAreaHeight(): Double = js.native
   /**
-    * Client-side function that returns an appointment with the specified ID.
+    * Client-side function that returns an appointment with the specified ID. An ASPxClientAppointment object, representing an appointment on the client.
     * @param id An appointment's identifier.
     */
   def GetAppointmentById(id: String): ASPxClientAppointment = js.native
   /**
-    * Enables obtaining appointment property values in a client-side script. Executes the callback command with the AppointmentData identifier.
+    * Enables obtaining appointment property values in a client-side script. Executes the callback command with the SchedulerCallbackCommandId.AppointmentData identifier. An array of strings containing string representations of appointment properties.
     * @param aptId A string, representing the appointment ID.
     * @param propertyNames An array of strings, representing the appointment properties to query.
     * @param onCallBack A handler of a function which will receive and process the property values.
     */
-  def GetAppointmentProperties(aptId: String, propertyNames: js.Array[String], onCallBack: js.Object): js.Array[String] = js.native
+  def GetAppointmentProperties(aptId: String, propertyNames: js.Array[String], onCallBack: js.Any): js.Array[String] = js.native
+  /**
+    * Returns the floating action button's object.
+    */
   def GetFloatingActionButton(): ASPxClientFloatingActionButton = js.native
   /**
     * Client-side function that returns the type of grouping applied to the appointments displayed in the scheduler.
@@ -190,13 +194,10 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def GetToolbarVisible(): Boolean = js.native
   /**
-    * Gets the time of day corresponding to the start of the topmost displayed time cell row.
-    */
-  def GetTopRowTime(): Double = js.native
-  /**
-    * Gets the time of the day corresponding to the start of the topmost displayed time cell row.
+    * Gets the time of the day corresponding to the start of the topmost displayed time cell row. An integer, representing the number of milliseconds passed since the start of the day.
     * @param viewType An ASPxSchedulerViewType enumeration member, representing the scheduler's View. It can be either "Day" or  "WorkWeek", otherwise the result is undefined.
     */
+  def GetTopRowTime(): Double = js.native
   def GetTopRowTime(viewType: ASPxSchedulerViewType): Double = js.native
   /**
     * Gets a collection of visible appointments.
@@ -215,7 +216,7 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def GoToDateFormCancel(): Unit = js.native
   /**
-    * Client-side scripting method which raises the GotoDate callback command.
+    * Client-side scripting method which raises the SchedulerCallbackCommandId.GotoDate callback command.
     * @param date A DateTime value specifying the destination time.
     */
   def GotoDate(date: Date): Unit = js.native
@@ -253,18 +254,15 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def NavigateForward(): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument
-    * @param parameter A string value that represents any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxSchedulerDataWebControlBase.CustomCallback event, passing it the specified argument
+    * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxSchedulerDataWebControlBase.CustomCallback event.
     */
   def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Client-side scripting method which initiates a round trip to the server so that the current page will be reloaded.
-    */
-  def Refresh(): Unit = js.native
   /**
     * Client-side scripting method which initiates a round trip to the server, so that the control will be reloaded using the specified refresh action.
     * @param refreshAction An ASPxClientSchedulerRefreshAction enumeration value, specifying the refresh action.
     */
+  def Refresh(): Unit = js.native
   def Refresh(refreshAction: ASPxClientSchedulerRefreshAction): Unit = js.native
   /**
     * Initiates a callback to retrieve and apply the values for the specified list of properties to the specified appointment, and transfer control to the specified function.
@@ -272,13 +270,13 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * @param propertyNames An array of strings, that are the names of appointment properties to query.
     * @param onCallBack A handler of a function executed after a callback.
     */
-  def RefreshClientAppointmentProperties(clientAppointment: ASPxClientAppointment, propertyNames: js.Array[String], onCallBack: js.Object): Unit = js.native
+  def RefreshClientAppointmentProperties(clientAppointment: ASPxClientAppointment, propertyNames: js.Array[String], onCallBack: js.Any): Unit = js.native
   /**
     * Client-side scripting method that closes the Reminder form.
     */
   def ReminderFormCancel(): Unit = js.native
   /**
-    * Client-side scripting method that calls the Dismiss method for the selected reminder.
+    * Client-side scripting method that calls the ReminderBase.Dismiss method for the selected reminder.
     */
   def ReminderFormDismiss(): Unit = js.native
   /**
@@ -290,15 +288,11 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def ReminderFormSnooze(): Unit = js.native
   /**
-    * Client-side function that selects an appointment with the specified ID.
-    * @param aptId An appointment's identifier.
-    */
-  def SelectAppointmentById(aptId: String): Unit = js.native
-  /**
     * Selects the appointment with the specified ID.
     * @param aptId A string value specifying the appointment ID.
     * @param scrollToSelection true, to scroll to the selected appointment; otherwise, false.
     */
+  def SelectAppointmentById(aptId: String): Unit = js.native
   def SelectAppointmentById(aptId: String, scrollToSelection: Boolean): Unit = js.native
   /**
     * Client-side scripting  method to change the ASPxScheduler's active View.
@@ -311,7 +305,7 @@ trait ASPxClientScheduler extends ASPxClientControl {
     */
   def SetAllDayAreaHeight(height: Double): Unit = js.native
   /**
-    * Client-side scripting method which raises the callback command to set the GroupType.
+    * Client-side scripting method which raises the callback command to set the ASPxScheduler.GroupType.
     * @param value An ASPxSchedulerGroupType enumeration value, which specifies how appointments are grouped.
     */
   def SetGroupType(value: ASPxSchedulerGroupType): Unit = js.native
@@ -322,21 +316,12 @@ trait ASPxClientScheduler extends ASPxClientControl {
   def SetResourceNavigatorVisible(visible: Boolean): Unit = js.native
   /**
     * Selects time cells which encompass the specified time interval on the client side.
-    * @param interval An ASPxClientTimeInterval object that specifies the time interval to select.
+    * @param interval Specifies the time interval to select.
+    * @param resourceId Specifies the resource ID to which the specified time interval belongs.
+    * @param scrollToSelection true, to scroll the scheduler content to make the selection visible; otherwise, false.
     */
   def SetSelection(interval: ASPxClientTimeInterval): Unit = js.native
-  /**
-    * Selects time cells which encompass the specified time interval on the client side.
-    * @param interval An ASPxClientTimeInterval object that specifies the time interval to select.
-    * @param resourceId An integer value specifying the ID of the resource to which the specified time interval belongs.
-    */
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String): Unit = js.native
-  /**
-    * Selects time cells which encompass the specified time interval on the client side.
-    * @param interval An ASPxClientTimeInterval object that specifies the time interval to select.
-    * @param resourceId An integer value specifying the ID of the resource to which the specified time interval belongs.
-    * @param scrollToSelection true, to scroll the scheduler's contents to make the selection visible; otherwise, false.
-    */
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String, scrollToSelection: Boolean): Unit = js.native
   /**
     * Specifies whether the toolbar is visible.
@@ -346,13 +331,9 @@ trait ASPxClientScheduler extends ASPxClientControl {
   /**
     * Sets the time of the day corresponding to the start of the topmost displayed time cell row.
     * @param duration An integer, representing the number of milliseconds passed since the start of the day.
-    */
-  def SetTopRowTime(duration: Double): Unit = js.native
-  /**
-    * Sets the time of the day corresponding to the start of the topmost displayed time cell row.
-    * @param duration An integer, representing the number of milliseconds passed since the start of the day.
     * @param viewType An ASPxSchedulerViewType enumeration member, representing the scheduler's View. It can be either 'Day' or 'WorkWeek'.
     */
+  def SetTopRowTime(duration: Double): Unit = js.native
   def SetTopRowTime(duration: Double, viewType: ASPxSchedulerViewType): Unit = js.native
   /**
     * Sets whether the resources with specified IDs are visible.
@@ -373,14 +354,9 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * Client-side method that invokes the inplace editor form to create a new appointment.
     * @param start A date object, representing the start of the new appointment.
     * @param end A date object, representing the end of the new appointment.
-    */
-  def ShowInplaceEditor(start: Date, end: Date): Unit = js.native
-  /**
-    * Client-side method that invokes the inplace editor form to create a new appointment.
-    * @param start A date object, representing the start of the new appointment.
-    * @param end A date object, representing the end of the new appointment.
     * @param resourceId An object representing the identifier of a resource associated with the new appointment.
     */
+  def ShowInplaceEditor(start: Date, end: Date): Unit = js.native
   def ShowInplaceEditor(start: Date, end: Date, resourceId: String): Unit = js.native
   /**
     * Client-side scripting method which displays the Loading Panel.
@@ -397,5 +373,16 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * @param apt An ASPxClientAppointment object representing the client-side appointment.
     */
   def UpdateAppointment(apt: ASPxClientAppointment): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientScheduler")
+@js.native
+object ASPxClientScheduler extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientScheduler type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientScheduler = js.native
 }
 

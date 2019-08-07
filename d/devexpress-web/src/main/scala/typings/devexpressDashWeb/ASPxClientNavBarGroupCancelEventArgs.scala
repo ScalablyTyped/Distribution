@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for cancellable events which concern manipulations on groups.
   */
-trait ASPxClientNavBarGroupCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+@JSGlobal("ASPxClientNavBarGroupCancelEventArgs")
+@js.native
+class ASPxClientNavBarGroupCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientNavBarGroupCancelEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param group An ASPxClientNavBarGroup object that represents a group related to the event.
+    */
+  def this(processOnServer: Boolean, group: ASPxClientNavBarGroup) = this()
   /**
     * Gets the group object related to the event.
-    * Value: An ASPxClientNavBarGroup object representing the group manipulations on which forced the navbar to raise the event.
     */
-  var group: ASPxClientNavBarGroup
-}
-
-object ASPxClientNavBarGroupCancelEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, group: ASPxClientNavBarGroup, processOnServer: Boolean): ASPxClientNavBarGroupCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, group = group, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[ASPxClientNavBarGroupCancelEventArgs]
-  }
+  var group: ASPxClientNavBarGroup = js.native
 }
 

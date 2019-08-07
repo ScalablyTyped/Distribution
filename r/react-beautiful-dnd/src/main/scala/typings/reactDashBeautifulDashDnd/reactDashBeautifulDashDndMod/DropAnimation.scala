@@ -1,6 +1,5 @@
 package typings.reactDashBeautifulDashDnd.reactDashBeautifulDashDndMod
 
-import typings.std.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

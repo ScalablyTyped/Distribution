@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout
 
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -17,9 +18,7 @@ trait MergerSettingsTypeSettings extends js.Object {
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -35,7 +34,7 @@ object MergerSettingsTypeSettings {
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    navTheme: MenuTheme = null,
     primaryColor: String = null,
     title: String = null
   ): MergerSettingsTypeSettings = {

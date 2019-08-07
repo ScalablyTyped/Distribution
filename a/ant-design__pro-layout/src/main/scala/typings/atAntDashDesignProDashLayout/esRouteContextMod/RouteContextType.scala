@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout.esRouteContextMod
 
+import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -23,9 +24,7 @@ trait RouteContextType extends js.Object {
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
   var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
-  var navTheme: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -43,7 +42,7 @@ object RouteContextType {
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
     menuData: js.Array[MenuDataItem] = null,
-    navTheme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null,
+    navTheme: MenuTheme = null,
     title: String = null
   ): RouteContextType = {
     val __obj = js.Dynamic.literal()

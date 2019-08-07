@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("PIXI.spine.core.PathConstraint")
 @js.native
-class PathConstraint protected () extends Constraint {
+class PathConstraint protected () extends Updatable {
   def this(data: PathConstraintData, skeleton: Skeleton) = this()
+  var active: Boolean = js.native
   var bones: js.Array[Bone] = js.native
   var curves: js.Array[Double] = js.native
   var data: PathConstraintData = js.native
@@ -47,7 +48,7 @@ class PathConstraint protected () extends Constraint {
     percentSpacing: Boolean
   ): js.Array[Double] = js.native
   /* CompleteClass */
-  override def getOrder(): Double = js.native
+  override def isActive(): Boolean = js.native
   /* CompleteClass */
   override def update(): Unit = js.native
 }

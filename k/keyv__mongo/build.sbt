@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "keyv__mongo"
-version := "1.0-dt-20181231Z-cfac9c"
+version := "1.0-dt-20181231Z-e1b070"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-62451e",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-3349c4",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

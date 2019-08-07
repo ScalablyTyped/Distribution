@@ -7,20 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ChartElementNamed class.
   */
-trait ASPxClientWebChartElementNamed extends ASPxClientWebChartElement {
+@JSGlobal("ASPxClientWebChartElementNamed")
+@js.native
+class ASPxClientWebChartElementNamed () extends ASPxClientWebChartRequiredElement {
   /**
     * Gets the name of the chart element.
-    * Value: A string object representing the name of the chart element.
     */
-  var name: String
-}
-
-object ASPxClientWebChartElementNamed {
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, name: String): ASPxClientWebChartElementNamed = {
-    val __obj = js.Dynamic.literal(chart = chart, name = name)
-  
-    __obj.asInstanceOf[ASPxClientWebChartElementNamed]
-  }
+  var name: String = js.native
 }
 

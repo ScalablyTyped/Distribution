@@ -7,32 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern clicking on the control's tabs.
   */
-trait ASPxClientTabControlTabClickEventArgs extends ASPxClientTabControlTabCancelEventArgs {
+@JSGlobal("ASPxClientTabControlTabClickEventArgs")
+@js.native
+class ASPxClientTabControlTabClickEventArgs protected () extends ASPxClientTabControlTabCancelEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientTabControlTabClickEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param tab An ASPxClientTab object that represents a tab related to the event.
+    * @param htmlElement An HTML object that contains the processed tab.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(processOnServer: Boolean, tab: ASPxClientTab, htmlElement: js.Any, htmlEvent: js.Any) = this()
   /**
     * Gets the HTML object that contains the processed tab.
-    * Value: An object representing a container for the tab related to the event.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
-}
-
-object ASPxClientTabControlTabClickEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    htmlElement: js.Object,
-    htmlEvent: js.Object,
-    processOnServer: Boolean,
-    reloadContentOnCallback: Boolean,
-    tab: ASPxClientTab
-  ): ASPxClientTabControlTabClickEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, tab = tab)
-  
-    __obj.asInstanceOf[ASPxClientTabControlTabClickEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

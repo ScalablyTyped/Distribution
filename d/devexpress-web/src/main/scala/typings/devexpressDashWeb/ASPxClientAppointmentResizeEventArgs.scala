@@ -5,48 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the AppointmentResize event.
+  * Provides data for the ASPxClientScheduler.AppointmentResize event.
   */
-trait ASPxClientAppointmentResizeEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientAppointmentResizeEventArgs")
+@js.native
+class ASPxClientAppointmentResizeEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientAppointmentResizeEventArgs class.
+    * @param operation An ASPxClientAppointmentOperation object providing methods to perform or cancel the resize operation.
+    * @param appointmentId A string containing an appointment identifier.
+    * @param oldInterval An  object specifying the appointment's interval before the resize operation.
+    * @param newInterval An  object specifying the appointment's interval after the resize operation.
+    */
+  def this(
+    operation: ASPxClientAppointmentOperation,
+    appointmentId: String,
+    oldInterval: ASPxClientTimeInterval,
+    newInterval: ASPxClientTimeInterval
+  ) = this()
   /**
     * Gets the resized appointment's identifier.
-    * Value: A string containing an appointment identifier.
     */
-  var appointmentId: String
+  var appointmentId: String = js.native
   /**
     * Gets or sets whether default event processing is required.
-    * Value: true to process an event using only custom code; otherwise, false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets the appointment's interval after resizing.
-    * Value: An <see cref="ASPxClientTimeInterval" /> object representing the interval assigned to the appointment.
     */
-  var newInterval: ASPxClientTimeInterval
+  var newInterval: ASPxClientTimeInterval = js.native
   /**
     * Gets the appointment's interval before resizing.
-    * Value: An <see cref="ASPxClientTimeInterval" /> object representing the interval assigned to the appointment.
     */
-  var oldInterval: ASPxClientTimeInterval
+  var oldInterval: ASPxClientTimeInterval = js.native
   /**
     * Provides access to an object that enables you to choose an operation to perform.
-    * Value: An ASPxClientAppointmentOperation object providing methods to perform the required operation.
     */
-  var operation: ASPxClientAppointmentOperation
-}
-
-object ASPxClientAppointmentResizeEventArgs {
-  @scala.inline
-  def apply(
-    appointmentId: String,
-    handled: Boolean,
-    newInterval: ASPxClientTimeInterval,
-    oldInterval: ASPxClientTimeInterval,
-    operation: ASPxClientAppointmentOperation
-  ): ASPxClientAppointmentResizeEventArgs = {
-    val __obj = js.Dynamic.literal(appointmentId = appointmentId, handled = handled, newInterval = newInterval, oldInterval = oldInterval, operation = operation)
-  
-    __obj.asInstanceOf[ASPxClientAppointmentResizeEventArgs]
-  }
+  var operation: ASPxClientAppointmentOperation = js.native
 }
 

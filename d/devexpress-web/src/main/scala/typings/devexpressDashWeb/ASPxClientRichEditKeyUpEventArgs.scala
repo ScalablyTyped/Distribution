@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the KeyUp event.
+  * Provides data for the ASPxClientRichEdit.KeyUp event.
   */
-trait ASPxClientRichEditKeyUpEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditKeyUpEventArgs")
+@js.native
+class ASPxClientRichEditKeyUpEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditKeyUpEventArgs object. For internal use only.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(htmlEvent: js.Any) = this()
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
-}
-
-object ASPxClientRichEditKeyUpEventArgs {
-  @scala.inline
-  def apply(htmlEvent: js.Object): ASPxClientRichEditKeyUpEventArgs = {
-    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent)
-  
-    __obj.asInstanceOf[ASPxClientRichEditKeyUpEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

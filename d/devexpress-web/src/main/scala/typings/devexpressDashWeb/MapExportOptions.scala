@@ -7,25 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings that specify parameters affecting how Map dashboard items are exported.
   */
-trait MapExportOptions extends js.Object {
+@JSGlobal("MapExportOptions")
+@js.native
+class MapExportOptions () extends js.Object {
+  /** @deprecated The MapExportOptions.AutomaticPageLayout property is obsolete now. Use the DashboardPdfExportOptions.MapAutomaticPageLayout property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Gets or sets whether the page orientation used to export a map dashboard item is selected automatically.
-    * Value: true, to automatically select the page orientation used to export a map dashboard item; otherwise, false.
     */
-  var AutomaticPageLayout: Boolean
+  var AutomaticPageLayout: Boolean = js.native
+  /** @deprecated The MapExportOptions.SizeMode property is obsolete now. Use the DashboardPdfExportOptions.MapSizeMode property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Gets or sets the export size mode for the map dashboard item.
-    * Value: A value returned by the MapExportSizeMode class that specifies specifies the export size mode for the map dashboard item.
     */
-  var SizeMode: String
-}
-
-object MapExportOptions {
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): MapExportOptions = {
-    val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout, SizeMode = SizeMode)
-  
-    __obj.asInstanceOf[MapExportOptions]
-  }
+  var SizeMode: String = js.native
 }
 

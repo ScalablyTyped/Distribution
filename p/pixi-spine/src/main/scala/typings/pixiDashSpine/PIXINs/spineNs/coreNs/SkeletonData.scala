@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SkeletonData () extends js.Object {
   var animations: js.Array[Animation] = js.native
+  var audioPath: String = js.native
   var bones: js.Array[BoneData] = js.native
   var defaultSkin: Skin = js.native
   var events: js.Array[EventData] = js.native
@@ -23,6 +24,8 @@ class SkeletonData () extends js.Object {
   var transformConstraints: js.Array[TransformConstraintData] = js.native
   var version: String = js.native
   var width: Double = js.native
+  var x: Double = js.native
+  var y: Double = js.native
   def findAnimation(animationName: String): Animation = js.native
   def findBone(boneName: String): BoneData = js.native
   def findBoneIndex(boneName: String): Double = js.native

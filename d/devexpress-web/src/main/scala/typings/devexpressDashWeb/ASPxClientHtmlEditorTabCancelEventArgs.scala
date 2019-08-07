@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the cancellable ActiveTabChanging event that concerns manipulations on tabs.
+  * Provides data for the cancellable ASPxClientHtmlEditor.ActiveTabChanging event that concerns manipulations on tabs.
   */
-trait ASPxClientHtmlEditorTabCancelEventArgs extends ASPxClientHtmlEditorTabEventArgs {
+@JSGlobal("ASPxClientHtmlEditorTabCancelEventArgs")
+@js.native
+class ASPxClientHtmlEditorTabCancelEventArgs protected () extends ASPxClientHtmlEditorTabEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientHtmlEditorTabCancelEventArgs type with the specified setting.
+    * @param name A string value that uniquely identifies the name of a tab related to the event.
+    */
+  def this(name: String) = this()
   /**
     * Gets or sets a value indicating whether the action which raised the event, should be canceled.
-    * Value: true, if the action that raised the event should be canceled; otherwise, false.
     */
-  var cancel: Boolean
-}
-
-object ASPxClientHtmlEditorTabCancelEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, name: String): ASPxClientHtmlEditorTabCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, name = name)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorTabCancelEventArgs]
-  }
+  var cancel: Boolean = js.native
 }
 

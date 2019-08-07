@@ -169,7 +169,9 @@ trait PluggableMap
   def render(): Unit = js.native
   def renderSync(): Unit = js.native
   def setLayerGroup(layerGroup: typings.ol.layerGroupMod.default): Unit = js.native
+  def setSize(): Unit = js.native
   def setSize(size: Size): Unit = js.native
+  def setTarget(): Unit = js.native
   def setTarget(target: String): Unit = js.native
   def setTarget(target: HTMLElement): Unit = js.native
   def setView(view: typings.ol.viewMod.default): Unit = js.native

@@ -7,40 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Contains options affecting the touch scrolling functionality.
   */
-trait ASPxClientTouchUIOptions extends js.Object {
+@JSGlobal("ASPxClientTouchUIOptions")
+@js.native
+class ASPxClientTouchUIOptions () extends js.Object {
   /**
     * Gets or sets the name of the CSS class defining the horizontal scroll bar's appearance.
-    * Value: A string value specifying the class name.
     */
-  var hScrollClassName: String
+  var hScrollClassName: String = js.native
   /**
     * Gets or sets a value that specifies whether or not the horizontal scroll bar should be displayed.
-    * Value: true to display the horizontal scroll bar; otherwise, false. The default value is true.
     */
-  var showHorizontalScrollbar: Boolean
+  var showHorizontalScrollbar: Boolean = js.native
   /**
     * Gets or sets a value that specifies whether or not the vertical scroll bar should be displayed.
-    * Value: true to display the vertical scroll bar; otherwise, false. The default value is true.
     */
-  var showVerticalScrollbar: Boolean
+  var showVerticalScrollbar: Boolean = js.native
   /**
     * Gets or sets the name of the CSS class defining the vertical scroll bar's appearance.
-    * Value: A string value specifying the class name.
     */
-  var vScrollClassName: String
-}
-
-object ASPxClientTouchUIOptions {
-  @scala.inline
-  def apply(
-    hScrollClassName: String,
-    showHorizontalScrollbar: Boolean,
-    showVerticalScrollbar: Boolean,
-    vScrollClassName: String
-  ): ASPxClientTouchUIOptions = {
-    val __obj = js.Dynamic.literal(hScrollClassName = hScrollClassName, showHorizontalScrollbar = showHorizontalScrollbar, showVerticalScrollbar = showVerticalScrollbar, vScrollClassName = vScrollClassName)
-  
-    __obj.asInstanceOf[ASPxClientTouchUIOptions]
-  }
+  var vScrollClassName: String = js.native
 }
 

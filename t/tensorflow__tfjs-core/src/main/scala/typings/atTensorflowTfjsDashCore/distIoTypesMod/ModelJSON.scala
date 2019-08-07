@@ -30,6 +30,10 @@ trait ModelJSON extends js.Object {
   /** Model training configuration. */
   var trainingConfig: js.UndefOr[TrainingConfig] = js.undefined
   /**
+    * User-defined metadata about the model.
+    */
+  var userDefinedMetadata: js.UndefOr[js.Object] = js.undefined
+  /**
     * Weights manifest.
     *
     * The weights manifest consists of an ordered list of weight-manifest
@@ -47,13 +51,15 @@ object ModelJSON {
     convertedBy: String = null,
     format: String = null,
     generatedBy: String = null,
-    trainingConfig: TrainingConfig = null
+    trainingConfig: TrainingConfig = null,
+    userDefinedMetadata: js.Object = null
   ): ModelJSON = {
     val __obj = js.Dynamic.literal(weightsManifest = weightsManifest)
     if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy)
     if (format != null) __obj.updateDynamic("format")(format)
     if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy)
     if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig)
+    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata)
     __obj.asInstanceOf[ModelJSON]
   }
 }

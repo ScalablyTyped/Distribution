@@ -5,49 +5,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Contains settings related to the INSERTLINK_COMMAND command parameter.
+  * Contains settings related to the ASPxClientCommandConsts.INSERTLINK_COMMAND command parameter.
   */
-trait ASPxClientHtmlEditorInsertLinkCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+@JSGlobal("ASPxClientHtmlEditorInsertLinkCommandArguments")
+@js.native
+class ASPxClientHtmlEditorInsertLinkCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorInsertLinkCommandArguments class.
+    * @param htmlEditor An HTML editor in which you want to insert an element.
+    * @param selectedElement An object containing the currently selected element in the HTML editor. This element will be replaced with the inserted link.
+    */
+  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
   /**
     * Contains the style settings defining the appearance of the target link element.
-    * Value: An <see cref="ASPxClientHtmlEditorCommandStyleSettings" /> object that contains the style settings defining the appearance of the target link element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
   /**
     * Determines where to open the target link.
-    * Value: A string that specifies where to open the target link <a href="http://www.w3schools.com/tags/att_a_target.asp">in any correct format</a>.
     */
-  var target: String
+  var target: String = js.native
   /**
     * Specifiies the text of the target link.
-    * Value: A string value specifying the text of the target link.
     */
-  var text: String
+  var text: String = js.native
   /**
     * Defines the title of the target link.
-    * Value: A string value defining the title of the target link.
     */
-  var title: String
+  var title: String = js.native
   /**
     * Specifies the url of the page the target link goes to.
-    * Value: A string value specifying the target link url.
     */
-  var url: String
-}
-
-object ASPxClientHtmlEditorInsertLinkCommandArguments {
-  @scala.inline
-  def apply(
-    selectedElement: js.Object,
-    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
-    target: String,
-    text: String,
-    title: String,
-    url: String
-  ): ASPxClientHtmlEditorInsertLinkCommandArguments = {
-    val __obj = js.Dynamic.literal(selectedElement = selectedElement, styleSettings = styleSettings, target = target, text = text, title = title, url = url)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
-  }
+  var url: String = js.native
 }
 

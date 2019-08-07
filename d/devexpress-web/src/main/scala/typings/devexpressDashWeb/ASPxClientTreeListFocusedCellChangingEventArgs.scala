@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the FocusedCellChanging event.
+  * Provides data for the ASPxClientTreeList.FocusedCellChanging event.
   */
-trait ASPxClientTreeListFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientTreeListFocusedCellChangingEventArgs")
+@js.native
+class ASPxClientTreeListFocusedCellChangingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTreeListFocusedCellChangingEventArgs class.
+    * @param cellInfo An ASPxClientTreeListCellInfo object providing information about the focused cell.
+    */
+  def this(cellInfo: ASPxClientTreeListCellInfo) = this()
   /**
     * Provides information on a cell currently being focused.
-    * Value: A ASPxClientTreeListCellInfo object that is the cell information.
     */
-  var cellInfo: ASPxClientTreeListCellInfo
-}
-
-object ASPxClientTreeListFocusedCellChangingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientTreeListCellInfo): ASPxClientTreeListFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo)
-  
-    __obj.asInstanceOf[ASPxClientTreeListFocusedCellChangingEventArgs]
-  }
+  var cellInfo: ASPxClientTreeListCellInfo = js.native
 }
 

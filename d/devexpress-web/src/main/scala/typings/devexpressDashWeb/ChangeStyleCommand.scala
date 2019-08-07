@@ -7,22 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the selected range's style.
   */
+@JSGlobal("ChangeStyleCommand")
 @js.native
-trait ChangeStyleCommand extends CommandBase {
+class ChangeStyleCommand () extends CommandBase {
   /**
-    * Executes the ChangeStyleCommand command by applying the specified settings.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param styleName A string specifying the applying style's name.
-    * @param isParagraphStyle true to apply the style to a paragraph, false to apply the style to a character.
+    * Executes the ChangeStyleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
+    * @param style An object that contains the style settings object, or the style name.
+    * @param isParagraphStyle true to apply style settings to a paragraph; otherwise, false.
     */
-  def execute(styleName: String, isParagraphStyle: Boolean): Boolean = js.native
-  /**
-    * Executes the ChangeStyleCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param style A StyleBase object specifying the selected range's style.
-    */
+  def execute(style: String): Boolean = js.native
+  def execute(style: String, isParagraphStyle: Boolean): Boolean = js.native
   def execute(style: StyleBase): Boolean = js.native
+  def execute(style: StyleBase, isParagraphStyle: Boolean): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any = js.native
+  def getState(): CommandState[StyleBase] = js.native
 }
 

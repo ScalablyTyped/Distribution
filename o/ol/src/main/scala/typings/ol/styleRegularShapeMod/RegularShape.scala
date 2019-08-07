@@ -18,6 +18,7 @@ trait RegularShape
   def getRadius(): Double = js.native
   def getRadius2(): Double = js.native
   def getStroke(): typings.ol.styleStrokeMod.default = js.native
+  /* protected */ def render_(): Unit = js.native
   /* protected */ def render_(atlasManager: typings.ol.styleAtlasManagerMod.default): Unit = js.native
 }
 

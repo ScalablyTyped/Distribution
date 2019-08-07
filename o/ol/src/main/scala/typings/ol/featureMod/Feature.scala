@@ -23,8 +23,10 @@ trait Feature
   def on_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def setGeometry(): Unit = js.native
   def setGeometry(geometry: typings.ol.geomGeometryMod.default): Unit = js.native
   def setGeometryName(name: String): Unit = js.native
+  def setId(): Unit = js.native
   def setId(id: String): Unit = js.native
   def setId(id: Double): Unit = js.native
   def setStyle(style: StyleLike): Unit = js.native

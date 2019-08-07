@@ -7,31 +7,28 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events related to clicking on the control's group headers.
   */
-trait BootstrapClientAccordionGroupClickEventArgs extends BootstrapClientAccordionGroupCancelEventArgs {
+@JSGlobal("BootstrapClientAccordionGroupClickEventArgs")
+@js.native
+class BootstrapClientAccordionGroupClickEventArgs protected () extends BootstrapClientAccordionGroupCancelEventArgs {
+  /**
+    * Initializes a new object of the BootstrapClientAccordionGroupClickEventArgs type with the specified settings.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * @param group An BootstrapClientAccordionGroup object that represents a group related to the event.
+    * @param htmlElement An HTML object that contains the processed accordion group.
+    */
+  def this(
+    processOnServer: Boolean,
+    group: BootstrapClientAccordionGroup,
+    htmlElement: js.Any,
+    htmlEvent: js.Any
+  ) = this()
   /**
     * Gets an HTML object that contains the processed Accordion group.
-    * Value: An HTML object.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: A DHTML event object.
     */
-  var htmlEvent: js.Object
-}
-
-object BootstrapClientAccordionGroupClickEventArgs {
-  @scala.inline
-  def apply(
-    cancel: Boolean,
-    group: BootstrapClientAccordionGroup,
-    htmlElement: js.Object,
-    htmlEvent: js.Object,
-    processOnServer: Boolean
-  ): BootstrapClientAccordionGroupClickEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, group = group, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer)
-  
-    __obj.asInstanceOf[BootstrapClientAccordionGroupClickEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

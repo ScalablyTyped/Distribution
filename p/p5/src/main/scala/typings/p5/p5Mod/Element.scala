@@ -136,13 +136,21 @@ trait Element extends js.Object {
     *   trigger the second callback once per drop, whereas
     *   the first callback will trigger for each loaded
     *   file.
-    *   @param callback callback to receive loaded file.
-    *   @param [fxn] callback triggered when files are
-    *   dropped.
+    *   @param callback callback to receive loaded file,
+    *   called for each file dropped.
+    *   @param [fxn] callback triggered once when files
+    *   are dropped with the drop event.
     *   @chainable
     */
   def drop(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def drop(callback: js.Function1[/* repeated */ js.Any, _], fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  /**
+    *   Checks if specified class already set to element
+    *   @param c class name of class to check
+    *   @return a boolean value if element has specified
+    *   class
+    */
+  def hasClass(c: String): Boolean = js.native
   /**
     *   Hides the current element. Essentially, setting
     *   display:none for the style.
@@ -178,14 +186,20 @@ trait Element extends js.Object {
   /**
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
-    *   the element.
+    *   the element. Note that only one element can have a
+    *   particular id in a page. The .class() function can
+    *   be used to identify multiple elements with the
+    *   same class name.
     *   @return the id of the element
     */
   def id(): String = js.native
   /**
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
-    *   the element.
+    *   the element. Note that only one element can have a
+    *   particular id in a page. The .class() function can
+    *   be used to identify multiple elements with the
+    *   same class name.
     *   @param id ID of the element
     *   @chainable
     */
@@ -377,18 +391,24 @@ trait Element extends js.Object {
   def show(): Element = js.native
   /**
     *   Sets the width and height of the element. AUTO can
-    *   be used to only adjust one dimension. If no
-    *   arguments given returns the width and height of
-    *   the element in an object.
+    *   be used to only adjust one dimension at a time. If
+    *   no arguments are given, it returns the width and
+    *   height of the element in an object. In case of
+    *   elements which need to be loaded, such as images,
+    *   it is recommended to call the function after the
+    *   element has finished loading.
     *   @return the width and height of the element in an
     *   object
     */
   def size(): js.Object = js.native
   /**
     *   Sets the width and height of the element. AUTO can
-    *   be used to only adjust one dimension. If no
-    *   arguments given returns the width and height of
-    *   the element in an object.
+    *   be used to only adjust one dimension at a time. If
+    *   no arguments are given, it returns the width and
+    *   height of the element in an object. In case of
+    *   elements which need to be loaded, such as images,
+    *   it is recommended to call the function after the
+    *   element has finished loading.
     *   @param w width of the element, either AUTO, or a
     *   number
     *   @param [h] height of the element, either AUTO, or
@@ -408,11 +428,7 @@ trait Element extends js.Object {
     *   value of the given property; however, if the
     *   single argument is given in css syntax
     *   ('text-align:center'), .style() sets the css
-    *   appropriatly. .style() also handles 2d and 3d css
-    *   transforms. If the 1st arg is 'rotate',
-    *   'translate', or 'position', the following
-    *   arguments accept Numbers as values. ('translate',
-    *   10, 100, 50);
+    *   appropriately.
     *   @param property property to be set
     *   @return value of property
     */
@@ -424,27 +440,20 @@ trait Element extends js.Object {
     *   value of the given property; however, if the
     *   single argument is given in css syntax
     *   ('text-align:center'), .style() sets the css
-    *   appropriatly. .style() also handles 2d and 3d css
-    *   transforms. If the 1st arg is 'rotate',
-    *   'translate', or 'position', the following
-    *   arguments accept Numbers as values. ('translate',
-    *   10, 100, 50);
+    *   appropriately.
     *   @param property property to be set
-    *   @param value value to assign to property (only
-    *   String|Number for rotate/translate)
-    *   @param [value2] position can take a 2nd value
-    *   @param [value3] translate can take a 2nd & 3rd
-    *   value
+    *   @param value value to assign to property
     *   @chainable
     */
-  def style(property: String, value: String | Double | Color): Element = js.native
-  def style(property: String, value: String | Double | Color, value2: String | Double | Color): Element = js.native
-  def style(
-    property: String,
-    value: String | Double | Color,
-    value2: String | Double | Color,
-    value3: String | Double | Color
-  ): Element = js.native
+  def style(property: String, value: String): Element = js.native
+  def style(property: String, value: Double): Element = js.native
+  def style(property: String, value: Color): Element = js.native
+  /**
+    *   Toggles element class
+    *   @param c class name to toggle
+    *   @chainable
+    */
+  def toggleClass(c: String): Element = js.native
   /**
     *   The .touchEnded() function is called once after
     *   every time a touch is registered. This can be used

@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the FileDownloading event.
+  * Provides data for the ASPxClientFileManager.FileDownloading event.
   */
-trait ASPxClientFileManagerFileDownloadingEventArgs extends ASPxClientFileManagerFileEventArgs {
+@JSGlobal("ASPxClientFileManagerFileDownloadingEventArgs")
+@js.native
+class ASPxClientFileManagerFileDownloadingEventArgs protected () extends ASPxClientFileManagerFileEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerFileDownloadingEventArgs object.
+    * @param file An ASPxClientFileManagerFile object that is the file currently being processed.
+    */
+  def this(file: ASPxClientFileManagerFile) = this()
   /**
     * Gets or sets a value indicating whether the action which raised the event, should be canceled.
-    * Value: true, if the action that raised the event should be canceled; otherwise, false.
     */
-  var cancel: Boolean
-}
-
-object ASPxClientFileManagerFileDownloadingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, file: ASPxClientFileManagerFile): ASPxClientFileManagerFileDownloadingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, file = file)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerFileDownloadingEventArgs]
-  }
+  var cancel: Boolean = js.native
 }
 

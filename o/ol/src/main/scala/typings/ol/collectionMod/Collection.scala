@@ -14,7 +14,7 @@ trait Collection[T]
   extends typings.ol.objectMod.default {
   def clear(): Unit = js.native
   def extend(arr: js.Array[T]): Collection[T] = js.native
-  def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], Unit]): Unit = js.native
+  def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], _]): Unit = js.native
   def getArray(): js.Array[T] = js.native
   def getLength(): Double = js.native
   def insertAt(index: Double, elem: T): Unit = js.native

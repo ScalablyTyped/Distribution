@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the CustomCommand event.
+  * Provides data for the ASPxClientFileManager.CustomCommand event.
   */
-trait ASPxClientFileManagerCustomCommandEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerCustomCommandEventArgs")
+@js.native
+class ASPxClientFileManagerCustomCommandEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerCustomCommandEventArgs class with the specified setting.
+    * @param commandName A string value that identifies the executed command. Initializes the ASPxClientFileManagerCustomCommandEventArgs.commandName property.
+    */
+  def this(commandName: String) = this()
   /**
     * Gets the name of the processed command.
-    * Value: A string value that is the processed command's name.
     */
-  var commandName: String
-}
-
-object ASPxClientFileManagerCustomCommandEventArgs {
-  @scala.inline
-  def apply(commandName: String): ASPxClientFileManagerCustomCommandEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerCustomCommandEventArgs]
-  }
+  var commandName: String = js.native
 }
 

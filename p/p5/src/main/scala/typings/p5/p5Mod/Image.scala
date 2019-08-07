@@ -204,25 +204,38 @@ trait Image extends js.Object {
   def filter(filterType: FILTER_TYPE, filterParam: Double): Unit = js.native
   /**
     *   Get a region of pixels from an image. If no params
-    *   are passed, those whole image is returned, if x
-    *   and y are the only params passed a single pixel is
-    *   extracted if all params are passed a rectangle
+    *   are passed, the whole image is returned. If x and
+    *   y are the only params passed a single pixel is
+    *   extracted. If all params are passed a rectangle
     *   region is extracted and a p5.Image is returned.
-    *
-    *   Returns undefined if the region is outside the
-    *   bounds of the image
-    *   @param [x] x-coordinate of the pixel
-    *   @param [y] y-coordinate of the pixel
-    *   @param [w] width
-    *   @param [h] height
-    *   @return color of pixel at x,y in array format [R,
-    *   G, B, A] or p5.Image
+    *   @return the whole p5.Image
     */
-  def get(): js.Array[Double] | Color | Image = js.native
-  def get(x: Double): js.Array[Double] | Color | Image = js.native
-  def get(x: Double, y: Double): js.Array[Double] | Color | Image = js.native
-  def get(x: Double, y: Double, w: Double): js.Array[Double] | Color | Image = js.native
-  def get(x: Double, y: Double, w: Double, h: Double): js.Array[Double] | Color | Image = js.native
+  def get(): Image = js.native
+  /**
+    *   Get a region of pixels from an image. If no params
+    *   are passed, the whole image is returned. If x and
+    *   y are the only params passed a single pixel is
+    *   extracted. If all params are passed a rectangle
+    *   region is extracted and a p5.Image is returned.
+    *   @param x x-coordinate of the pixel
+    *   @param y y-coordinate of the pixel
+    *   @return color of pixel at x,y in array format [R,
+    *   G, B, A]
+    */
+  def get(x: Double, y: Double): js.Array[Double] = js.native
+  /**
+    *   Get a region of pixels from an image. If no params
+    *   are passed, the whole image is returned. If x and
+    *   y are the only params passed a single pixel is
+    *   extracted. If all params are passed a rectangle
+    *   region is extracted and a p5.Image is returned.
+    *   @param x x-coordinate of the pixel
+    *   @param y y-coordinate of the pixel
+    *   @param w width
+    *   @param h height
+    *   @return the rectangle p5.Image
+    */
+  def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
   /**
     *   Loads the pixels data for this image into the
     *   [pixels] attribute.

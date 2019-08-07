@@ -4,37 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientCustomizeExportOptionsEventArgs extends ASPxClientEventArgs {
+/**
+  * Provides data for the ASPxClientWebDocumentViewer.CustomizeExportOptions and ASPxClientReportDesigner.PreviewCustomizeExportOptions events.
+  */
+@JSGlobal("ASPxClientCustomizeExportOptionsEventArgs")
+@js.native
+class ASPxClientCustomizeExportOptionsEventArgs protected () extends ASPxClientEventArgs {
   /**
-    * 
-    * @param format 
+    * Initializes a new instance of the ASPxClientCustomizeExportOptionsEventArgs class with the specified export options.
+    * @param options An object that stores export options.
     */
-  def GetExportOptionsModel(format: js.Object): js.Object
-  def HideExportOptionsPanel(): Unit
+  def this(options: js.Any) = this()
   /**
-    * 
-    * @param format 
+    * Returns the export options model for the specified export format. An export options model.
+    * @param format An object that specifies the export format whose model should be returned.
     */
-  def HideFormat(format: js.Object): Unit
+  def GetExportOptionsModel(format: js.Any): js.Any = js.native
   /**
-    * 
-    * @param format 
-    * @param properties 
+    * Hides the entire <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel from the Web Document Viewer.
     */
-  def HideProperties(format: js.Object, properties: js.Array[js.Object]): Unit
-}
-
-object ASPxClientCustomizeExportOptionsEventArgs {
-  @scala.inline
-  def apply(
-    GetExportOptionsModel: js.Object => js.Object,
-    HideExportOptionsPanel: () => Unit,
-    HideFormat: js.Object => Unit,
-    HideProperties: (js.Object, js.Array[js.Object]) => Unit
-  ): ASPxClientCustomizeExportOptionsEventArgs = {
-    val __obj = js.Dynamic.literal(GetExportOptionsModel = js.Any.fromFunction1(GetExportOptionsModel), HideExportOptionsPanel = js.Any.fromFunction0(HideExportOptionsPanel), HideFormat = js.Any.fromFunction1(HideFormat), HideProperties = js.Any.fromFunction2(HideProperties))
-  
-    __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
-  }
+  def HideExportOptionsPanel(): Unit = js.native
+  /**
+    * Hides the specified export format from the Export To drop-down list and the corresponding category from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel.
+    * @param format An object that specifies the export format to hide.
+    */
+  def HideFormat(format: js.Any): Unit = js.native
+  /**
+    * Hides the specified options for the specified export format from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel.
+    * @param format An object that specifies the export format whose options should be hidden.
+    * @param properties An array of properties to hide.
+    */
+  def HideProperties(format: js.Any, properties: js.Any*): Unit = js.native
 }
 

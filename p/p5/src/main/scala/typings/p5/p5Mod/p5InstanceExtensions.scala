@@ -11,12 +11,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait p5InstanceExtensions extends js.Object {
   val ADD: typings.p5.p5Mod.ADD = js.native
+  val ALT: Double = js.native
   val ARROW: typings.p5.p5Mod.ARROW = js.native
   val AUDIO: typings.p5.p5Mod.AUDIO = js.native
+  /**
+    *   AUTO allows us to automatically set the width or
+    *   height of an element (but not both), based on the
+    *   current height and width of the element. Only one
+    *   parameter can be passed to the size function as
+    *   AUTO, at a time.
+    */
   val AUTO: typings.p5.p5Mod.AUTO = js.native
   val AXES: typings.p5.p5Mod.AXES = js.native
+  val BACKSPACE: Double = js.native
   val BASELINE: typings.p5.p5Mod.BASELINE = js.native
   val BEVEL: typings.p5.p5Mod.BEVEL = js.native
+  val BEZIER: typings.p5.p5Mod.BEZIER = js.native
   val BLEND: typings.p5.p5Mod.BLEND = js.native
   val BLUR: typings.p5.p5Mod.BLUR = js.native
   val BOLD: typings.p5.p5Mod.BOLD = js.native
@@ -25,10 +35,13 @@ trait p5InstanceExtensions extends js.Object {
   val BURN: typings.p5.p5Mod.BURN = js.native
   val CENTER: typings.p5.p5Mod.CENTER = js.native
   val CHORD: typings.p5.p5Mod.CHORD = js.native
+  val CLAMP: typings.p5.p5Mod.CLAMP = js.native
   val CLOSE: typings.p5.p5Mod.CLOSE = js.native
+  val CONTROL: Double = js.native
   val CORNER: typings.p5.p5Mod.CORNER = js.native
   val CORNERS: typings.p5.p5Mod.CORNERS = js.native
   val CROSS: typings.p5.p5Mod.CROSS = js.native
+  val CURVE: typings.p5.p5Mod.CURVE = js.native
   val DARKEST: typings.p5.p5Mod.DARKEST = js.native
   /**
     *   Constant to be used with angleMode() function, to
@@ -36,11 +49,16 @@ trait p5InstanceExtensions extends js.Object {
     *   calculates angles (either DEGREES or RADIANS).
     */
   val DEGREES: typings.p5.p5Mod.DEGREES = js.native
+  val DELETE: Double = js.native
   val DIFFERENCE: typings.p5.p5Mod.DIFFERENCE = js.native
   val DILATE: typings.p5.p5Mod.DILATE = js.native
   val DODGE: typings.p5.p5Mod.DODGE = js.native
+  val DOWN_ARROW: Double = js.native
+  val ENTER: Double = js.native
   val ERODE: typings.p5.p5Mod.ERODE = js.native
+  val ESCAPE: Double = js.native
   val EXCLUSION: typings.p5.p5Mod.EXCLUSION = js.native
+  val FILL: typings.p5.p5Mod.FILL = js.native
   val GRAY: typings.p5.p5Mod.GRAY = js.native
   val GRID: typings.p5.p5Mod.GRID = js.native
   /**
@@ -55,21 +73,31 @@ trait p5InstanceExtensions extends js.Object {
   val HARD_LIGHT: typings.p5.p5Mod.HARD_LIGHT = js.native
   val HSB: typings.p5.p5Mod.HSB = js.native
   val HSL: typings.p5.p5Mod.HSL = js.native
+  val IMAGE: typings.p5.p5Mod.IMAGE = js.native
+  val IMMEDIATE: typings.p5.p5Mod.IMMEDIATE = js.native
   val INVERT: typings.p5.p5Mod.INVERT = js.native
   val ITALIC: typings.p5.p5Mod.ITALIC = js.native
   val LANDSCAPE: typings.p5.p5Mod.LANDSCAPE = js.native
   val LEFT: typings.p5.p5Mod.LEFT = js.native
+  val LEFT_ARROW: Double = js.native
   val LIGHTEST: typings.p5.p5Mod.LIGHTEST = js.native
+  val LINEAR: typings.p5.p5Mod.LINEAR = js.native
   val LINES: typings.p5.p5Mod.LINES = js.native
   val LINE_LOOP: typings.p5.p5Mod.LINE_LOOP = js.native
   val LINE_STRIP: typings.p5.p5Mod.LINE_STRIP = js.native
+  val MIRROR: typings.p5.p5Mod.MIRROR = js.native
   val MITER: typings.p5.p5Mod.MITER = js.native
   val MOVE: typings.p5.p5Mod.MOVE = js.native
   val MULTIPLY: typings.p5.p5Mod.MULTIPLY = js.native
+  val NEAREST: typings.p5.p5Mod.NEAREST = js.native
   val NORMAL: typings.p5.p5Mod.NORMAL = js.native
   val OPAQUE: typings.p5.p5Mod.OPAQUE = js.native
   val OPEN: typings.p5.p5Mod.OPEN = js.native
+  val OPTION: Double = js.native
   val OVERLAY: typings.p5.p5Mod.OVERLAY = js.native
+  /**
+    *   The default, two-dimensional renderer.
+    */
   val P2D: typings.p5.p5Mod.P2D = js.native
   /**
     *   PI is a mathematical constant with the value
@@ -84,6 +112,7 @@ trait p5InstanceExtensions extends js.Object {
   val PORTRAIT: typings.p5.p5Mod.PORTRAIT = js.native
   val POSTERIZE: typings.p5.p5Mod.POSTERIZE = js.native
   val PROJECT: typings.p5.p5Mod.PROJECT = js.native
+  val QUADRATIC: typings.p5.p5Mod.QUADRATIC = js.native
   val QUADS: typings.p5.p5Mod.QUADS = js.native
   val QUAD_STRIP: typings.p5.p5Mod.QUAD_STRIP = js.native
   /**
@@ -101,13 +130,20 @@ trait p5InstanceExtensions extends js.Object {
     */
   val RADIANS: typings.p5.p5Mod.RADIANS = js.native
   val RADIUS: typings.p5.p5Mod.RADIUS = js.native
+  val REPEAT: typings.p5.p5Mod.REPEAT = js.native
   val REPLACE: typings.p5.p5Mod.REPLACE = js.native
+  val RETURN: Double = js.native
   val RGB: typings.p5.p5Mod.RGB = js.native
   val RIGHT: typings.p5.p5Mod.RIGHT = js.native
+  val RIGHT_ARROW: Double = js.native
   val ROUND: typings.p5.p5Mod.ROUND = js.native
   val SCREEN: typings.p5.p5Mod.SCREEN = js.native
+  val SHIFT: Double = js.native
   val SOFT_LIGHT: typings.p5.p5Mod.SOFT_LIGHT = js.native
   val SQUARE: typings.p5.p5Mod.SQUARE = js.native
+  val STROKE: typings.p5.p5Mod.STROKE = js.native
+  val SUBTRACT: typings.p5.p5Mod.SUBTRACT = js.native
+  val TAB: Double = js.native
   /**
     *   TAU is an alias for TWO_PI, a mathematical
     *   constant with the value 6.28318530717958647693. It
@@ -118,6 +154,7 @@ trait p5InstanceExtensions extends js.Object {
     */
   val TAU: Double = js.native
   val TEXT: typings.p5.p5Mod.TEXT = js.native
+  val TEXTURE: typings.p5.p5Mod.TEXTURE = js.native
   val THRESHOLD: typings.p5.p5Mod.THRESHOLD = js.native
   val TOP: typings.p5.p5Mod.TOP = js.native
   val TRIANGLES: typings.p5.p5Mod.TRIANGLES = js.native
@@ -131,8 +168,14 @@ trait p5InstanceExtensions extends js.Object {
     *   functions sin() and cos().
     */
   val TWO_PI: Double = js.native
+  val UP_ARROW: Double = js.native
   val VIDEO: typings.p5.p5Mod.VIDEO = js.native
   val WAIT: typings.p5.p5Mod.WAIT = js.native
+  /**
+    *   One of the two render modes in p5.js: P2D (default
+    *   renderer) and WEBGL Enables 3D render by
+    *   introducing the third dimension: Z
+    */
   val WEBGL: typings.p5.p5Mod.WEBGL = js.native
   /**
     *   The system variable accelerationX always contains
@@ -152,6 +195,16 @@ trait p5InstanceExtensions extends js.Object {
     *   Value is represented as meters per second squared.
     */
   var accelerationZ: Double = js.native
+  /**
+    *   The system variable deltaTime contains the time
+    *   difference between the beginning of the previous
+    *   frame and the beginning of the current frame in
+    *   milliseconds.  This variable is useful for
+    *   creating time sensitive animation or physics
+    *   calculation that should stay constant regardless
+    *   of frame rate.
+    */
+  var deltaTime: Double = js.native
   /**
     *   The system variable deviceOrientation always
     *   contains the orientation of the device. The value
@@ -241,17 +294,21 @@ trait p5InstanceExtensions extends js.Object {
   /**
     *   The system variable mouseX always contains the
     *   current horizontal position of the mouse, relative
-    *   to (0, 0) of the canvas. If touch is used instead
-    *   of mouse input, mouseX will hold the x value of
-    *   the most recent touch point.
+    *   to (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. If touch is used instead of mouse
+    *   input, mouseX will hold the x value of the most
+    *   recent touch point.
     */
   var mouseX: Double = js.native
   /**
     *   The system variable mouseY always contains the
     *   current vertical position of the mouse, relative
-    *   to (0, 0) of the canvas. If touch is used instead
-    *   of mouse input, mouseY will hold the y value of
-    *   the most recent touch point.
+    *   to (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. If touch is used instead of mouse
+    *   input, mouseY will hold the y value of the most
+    *   recent touch point.
     */
   var mouseY: Double = js.native
   /**
@@ -351,18 +408,22 @@ trait p5InstanceExtensions extends js.Object {
     *   The system variable pmouseX always contains the
     *   horizontal position of the mouse or finger in the
     *   frame previous to the current frame, relative to
-    *   (0, 0) of the canvas. Note: pmouseX will be reset
-    *   to the current mouseX value at the start of each
-    *   touch event.
+    *   (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. Note: pmouseX will be reset to the
+    *   current mouseX value at the start of each touch
+    *   event.
     */
   var pmouseX: Double = js.native
   /**
     *   The system variable pmouseY always contains the
     *   vertical position of the mouse or finger in the
     *   frame previous to the current frame, relative to
-    *   (0, 0) of the canvas. Note: pmouseY will be reset
-    *   to the current mouseY value at the start of each
-    *   touch event.
+    *   (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. Note: pmouseY will be reset to the
+    *   current mouseY value at the start of each touch
+    *   event.
     */
   var pmouseY: Double = js.native
   /**
@@ -606,13 +667,14 @@ trait p5InstanceExtensions extends js.Object {
     *   an open semi-circle (OPEN) , a closed semi-circle
     *   (CHORD), or as a closed pie segment (PIE). The
     *   origin may be changed with the ellipseMode()
-    *   function. Note that drawing a full circle (ex: 0
-    *   to TWO_PI) will appear blank because 0 and TWO_PI
-    *   are the same position on the unit circle. The best
-    *   way to handle this is by using the ellipse()
-    *   function instead to create a closed ellipse, and
-    *   to use the arc() function only to draw parts of an
-    *   ellipse.
+    *   function. The arc is always drawn clockwise from
+    *   wherever start falls to wherever stop falls on the
+    *   ellipse. Adding or subtracting TWO_PI to either
+    *   angle does not change where they fall. If both
+    *   start and stop fall at the same place, a full
+    *   ellipse will be drawn. Be aware that the the
+    *   y-axis increases in the downward direction
+    *   therefore the values of PI is counter clockwise.
     *   @param x x-coordinate of the arc's ellipse
     *   @param y y-coordinate of the arc's ellipse
     *   @param w width of the arc's ellipse by default
@@ -948,8 +1010,8 @@ trait p5InstanceExtensions extends js.Object {
     *
     *   A p5.Image can also be provided to set the
     *   background image.
-    *   @param values an array containing the
-    *   red,green,blue & and alpha components of the color
+    *   @param values an array containing the red, green,
+    *   blue and alpha components of the color
     *   @chainable
     */
   def background(values: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
@@ -1274,18 +1336,27 @@ trait p5InstanceExtensions extends js.Object {
     *   and don't utilize alpha (transparency) values.
     *   - OVERLAY - mix of MULTIPLY and SCREEN .
     *   Multiplies dark values, and screens light values.
+    *   (2D)
     *   - HARD_LIGHT - SCREEN when greater than 50% gray,
-    *   MULTIPLY when lower.
+    *   MULTIPLY when lower. (2D)
     *   - SOFT_LIGHT - mix of DARKEST and LIGHTEST. Works
-    *   like OVERLAY, but not as harsh.
+    *   like OVERLAY, but not as harsh. (2D)
     *   - DODGE - lightens light tones and increases
-    *   contrast, ignores darks.
+    *   contrast, ignores darks. (2D)
     *   - BURN - darker areas are applied, increasing
-    *   contrast, ignores lights.
+    *   contrast, ignores lights. (2D)
+    *   - SUBTRACT - remainder of A and B (3D)
+    *
+    *
+    *   (2D) indicates that this blend mode only works in
+    *   the 2D renderer.
+    *
+    *   (3D) indicates that this blend mode only works in
+    *   the WEBGL renderer.
     *   @param mode blend mode to set for canvas. either
     *   BLEND, DARKEST, LIGHTEST, DIFFERENCE, MULTIPLY,
     *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
-    *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL
+    *   SOFT_LIGHT, DODGE, BURN, ADD, or SUBTRACT
     */
   def blendMode(mode: BLEND_MODE): Unit = js.native
   def blue(color: String): Double = js.native
@@ -1461,29 +1532,33 @@ trait p5InstanceExtensions extends js.Object {
     *   point, the centre. This function is a special case
     *   of the ellipse() function, where the width and
     *   height of the ellipse are the same. Height and
-    *   width of the ellipse is equal to twice the radius
-    *   of the circle.. By default, the first two
-    *   parameters set the location of the centre of the
-    *   circle, the third sets the radius of the circle.
+    *   width of the ellipse correspond to the diameter of
+    *   the circle. By default, the first two parameters
+    *   set the location of the centre of the circle, the
+    *   third sets the diameter of the circle.
     *   @param x x-coordinate of the centre of the circle.
     *   @param y y-coordinate of the centre of the circle.
-    *   @param r radius of the circle.
+    *   @param d diameter of the circle.
     *   @chainable
     */
-  def circle(x: Double, y: Double, r: Double): typings.p5.p5Mod.p5 = js.native
+  def circle(x: Double, y: Double, d: Double): typings.p5.p5Mod.p5 = js.native
   /**
     *   Clears the pixels within a buffer. This function
-    *   only works on p5.Canvas objects created with the
-    *   createCanvas() function; it won't work with the
-    *   main display window. Unlike the main graphics
-    *   context, pixels in additional graphics areas
-    *   created with createGraphics() can be entirely or
-    *   partially transparent. This function clears
-    *   everything to make all of the pixels 100%
-    *   transparent.
+    *   only clears the canvas. It will not clear objects
+    *   created by createX() methods such as createVideo()
+    *   or createDiv(). Unlike the main graphics context,
+    *   pixels in additional graphics areas created with
+    *   createGraphics() can be entirely or partially
+    *   transparent. This function clears everything to
+    *   make all of the pixels 100% transparent.
     *   @chainable
     */
   def clear(): typings.p5.p5Mod.p5 = js.native
+  /**
+    *   Clears all local storage items set with
+    *   storeItem() for the current domain.
+    */
+  def clearStorage(): Unit = js.native
   /**
     *   Creates colors for storing in variables of the
     *   color datatype. The parameters are interpreted as
@@ -1659,7 +1734,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param max2 range for the green or saturation
     *   depending on the current color mode
     *   @param max3 range for the blue or
-    *   brightness/lighntess depending on the current
+    *   brightness/lightness depending on the current
     *   color mode
     *   @param [maxA] range for the alpha
     *   @chainable
@@ -2580,7 +2655,8 @@ trait p5InstanceExtensions extends js.Object {
     */
   def displayDensity(): Double = js.native
   /**
-    *   Calculates the distance between two points.
+    *   Calculates the distance between two points, in
+    *   either two or three dimensions.
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param x2 x-coordinate of the second point
@@ -2589,7 +2665,8 @@ trait p5InstanceExtensions extends js.Object {
     */
   def dist(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
   /**
-    *   Calculates the distance between two points.
+    *   Calculates the distance between two points, in
+    *   either two or three dimensions.
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param z1 z-coordinate of the first point
@@ -2688,9 +2765,9 @@ trait p5InstanceExtensions extends js.Object {
   def ellipseMode(mode: ELLIPSE_MODE): typings.p5.p5Mod.p5 = js.native
   /**
     *   Draw an ellipsoid with given radius
-    *   @param [radiusx] xradius of circle
-    *   @param [radiusy] yradius of circle
-    *   @param [radiusz] zradius of circle
+    *   @param [radiusx] x-radius of ellipsoid
+    *   @param [radiusy] y-radius of ellipsoid
+    *   @param [radiusz] z-radius of ellipsoid
     *   @param [detailX] number of segments, the more
     *   segments the smoother geometry default is 24.
     *   Avoid detail number above 150, it may crash the
@@ -2750,17 +2827,18 @@ trait p5InstanceExtensions extends js.Object {
   def exp(n: Double): Double = js.native
   /**
     *   Sets the color used to fill shapes. For example,
-    *   if you run fill(204, 102, 0), all subsequent
-    *   shapes will be filled with orange. This color is
-    *   either specified in terms of the RGB or HSB color
-    *   depending on the current colorMode(). (The default
-    *   color space is RGB, with each value in the range
-    *   from 0 to 255). The alpha range by default is also
-    *   0 to 255.  If a single string argument is
-    *   provided, RGB, RGBA and Hex CSS color strings and
-    *   all named color strings are supported. In this
-    *   case, an alpha number value as a second argument
-    *   is not supported, the RGBA form should be used.
+    *   if you run fill(204, 102, 0), all shapes drawn
+    *   after the fill command will be filled with the
+    *   color orange. This color is either specified in
+    *   terms of the RGB or HSB color depending on the
+    *   current colorMode(). (The default color space is
+    *   RGB, with each value in the range from 0 to 255).
+    *   The alpha range by default is also 0 to 255.  If a
+    *   single string argument is provided, RGB, RGBA and
+    *   Hex CSS color strings and all named color strings
+    *   are supported. In this case, an alpha number value
+    *   as a second argument is not supported, the RGBA
+    *   form should be used.
     *
     *
     *   A p5 Color object can also be provided to set the
@@ -2771,17 +2849,18 @@ trait p5InstanceExtensions extends js.Object {
   def fill(color: Color): typings.p5.p5Mod.p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
-    *   if you run fill(204, 102, 0), all subsequent
-    *   shapes will be filled with orange. This color is
-    *   either specified in terms of the RGB or HSB color
-    *   depending on the current colorMode(). (The default
-    *   color space is RGB, with each value in the range
-    *   from 0 to 255). The alpha range by default is also
-    *   0 to 255.  If a single string argument is
-    *   provided, RGB, RGBA and Hex CSS color strings and
-    *   all named color strings are supported. In this
-    *   case, an alpha number value as a second argument
-    *   is not supported, the RGBA form should be used.
+    *   if you run fill(204, 102, 0), all shapes drawn
+    *   after the fill command will be filled with the
+    *   color orange. This color is either specified in
+    *   terms of the RGB or HSB color depending on the
+    *   current colorMode(). (The default color space is
+    *   RGB, with each value in the range from 0 to 255).
+    *   The alpha range by default is also 0 to 255.  If a
+    *   single string argument is provided, RGB, RGBA and
+    *   Hex CSS color strings and all named color strings
+    *   are supported. In this case, an alpha number value
+    *   as a second argument is not supported, the RGBA
+    *   form should be used.
     *
     *
     *   A p5 Color object can also be provided to set the
@@ -2793,17 +2872,18 @@ trait p5InstanceExtensions extends js.Object {
   def fill(gray: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
-    *   if you run fill(204, 102, 0), all subsequent
-    *   shapes will be filled with orange. This color is
-    *   either specified in terms of the RGB or HSB color
-    *   depending on the current colorMode(). (The default
-    *   color space is RGB, with each value in the range
-    *   from 0 to 255). The alpha range by default is also
-    *   0 to 255.  If a single string argument is
-    *   provided, RGB, RGBA and Hex CSS color strings and
-    *   all named color strings are supported. In this
-    *   case, an alpha number value as a second argument
-    *   is not supported, the RGBA form should be used.
+    *   if you run fill(204, 102, 0), all shapes drawn
+    *   after the fill command will be filled with the
+    *   color orange. This color is either specified in
+    *   terms of the RGB or HSB color depending on the
+    *   current colorMode(). (The default color space is
+    *   RGB, with each value in the range from 0 to 255).
+    *   The alpha range by default is also 0 to 255.  If a
+    *   single string argument is provided, RGB, RGBA and
+    *   Hex CSS color strings and all named color strings
+    *   are supported. In this case, an alpha number value
+    *   as a second argument is not supported, the RGBA
+    *   form should be used.
     *
     *
     *   A p5 Color object can also be provided to set the
@@ -2820,17 +2900,18 @@ trait p5InstanceExtensions extends js.Object {
   def fill(v1: Double, v2: Double, v3: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
-    *   if you run fill(204, 102, 0), all subsequent
-    *   shapes will be filled with orange. This color is
-    *   either specified in terms of the RGB or HSB color
-    *   depending on the current colorMode(). (The default
-    *   color space is RGB, with each value in the range
-    *   from 0 to 255). The alpha range by default is also
-    *   0 to 255.  If a single string argument is
-    *   provided, RGB, RGBA and Hex CSS color strings and
-    *   all named color strings are supported. In this
-    *   case, an alpha number value as a second argument
-    *   is not supported, the RGBA form should be used.
+    *   if you run fill(204, 102, 0), all shapes drawn
+    *   after the fill command will be filled with the
+    *   color orange. This color is either specified in
+    *   terms of the RGB or HSB color depending on the
+    *   current colorMode(). (The default color space is
+    *   RGB, with each value in the range from 0 to 255).
+    *   The alpha range by default is also 0 to 255.  If a
+    *   single string argument is provided, RGB, RGBA and
+    *   Hex CSS color strings and all named color strings
+    *   are supported. In this case, an alpha number value
+    *   as a second argument is not supported, the RGBA
+    *   form should be used.
     *
     *
     *   A p5 Color object can also be provided to set the
@@ -2841,17 +2922,18 @@ trait p5InstanceExtensions extends js.Object {
   def fill(value: String): typings.p5.p5Mod.p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
-    *   if you run fill(204, 102, 0), all subsequent
-    *   shapes will be filled with orange. This color is
-    *   either specified in terms of the RGB or HSB color
-    *   depending on the current colorMode(). (The default
-    *   color space is RGB, with each value in the range
-    *   from 0 to 255). The alpha range by default is also
-    *   0 to 255.  If a single string argument is
-    *   provided, RGB, RGBA and Hex CSS color strings and
-    *   all named color strings are supported. In this
-    *   case, an alpha number value as a second argument
-    *   is not supported, the RGBA form should be used.
+    *   if you run fill(204, 102, 0), all shapes drawn
+    *   after the fill command will be filled with the
+    *   color orange. This color is either specified in
+    *   terms of the RGB or HSB color depending on the
+    *   current colorMode(). (The default color space is
+    *   RGB, with each value in the range from 0 to 255).
+    *   The alpha range by default is also 0 to 255.  If a
+    *   single string argument is provided, RGB, RGBA and
+    *   Hex CSS color strings and all named color strings
+    *   are supported. In this case, an alpha number value
+    *   as a second argument is not supported, the RGBA
+    *   form should be used.
     *
     *
     *   A p5 Color object can also be provided to set the
@@ -3019,20 +3101,17 @@ trait p5InstanceExtensions extends js.Object {
   def fullscreen(): Boolean = js.native
   def fullscreen(`val`: Boolean): Boolean = js.native
   /**
-    *   Returns an array of [R,G,B,A] values for any pixel
-    *   or grabs a section of an image. If no parameters
-    *   are specified, the entire image is returned. Use
-    *   the x and y parameters to get the value of one
-    *   pixel. Get a section of the display window by
-    *   specifying additional w and h parameters. When
-    *   getting an image, the x and y parameters define
-    *   the coordinates for the upper-left corner of the
-    *   image, regardless of the current imageMode().  If
-    *   the pixel requested is outside of the image
-    *   window, [0,0,0,255] is returned. To get the
-    *   numbers scaled according to the current color
-    *   ranges and taking into account colorMode, use
-    *   getColor instead of get.
+    *   Get a region of pixels, or a single pixel, from
+    *   the canvas. Returns an array of [R,G,B,A] values
+    *   for any pixel or grabs a section of an image. If
+    *   no parameters are specified, the entire image is
+    *   returned. Use the x and y parameters to get the
+    *   value of one pixel. Get a section of the display
+    *   window by specifying additional w and h
+    *   parameters. When getting an image, the x and y
+    *   parameters define the coordinates for the
+    *   upper-left corner of the image, regardless of the
+    *   current imageMode().
     *
     *
     *   Getting the color of a single pixel with get(x, y)
@@ -3049,24 +3128,107 @@ trait p5InstanceExtensions extends js.Object {
     *
     *
     *
+    *
     *   See the reference for pixels[] for more
     *   information.
     *
     *   If you want to extract an array of colors or a
     *   subimage from an p5.Image object, take a look at
     *   p5.Image.get()
-    *   @param [x] x-coordinate of the pixel
-    *   @param [y] y-coordinate of the pixel
-    *   @param [w] width
-    *   @param [h] height
-    *   @return values of pixel at x,y in array format [R,
-    *   G, B, A] or p5.Image
+    *   @return the whole p5.Image
     */
-  def get(): js.Array[Double] | Image = js.native
-  def get(x: Double): js.Array[Double] | Image = js.native
-  def get(x: Double, y: Double): js.Array[Double] | Image = js.native
-  def get(x: Double, y: Double, w: Double): js.Array[Double] | Image = js.native
-  def get(x: Double, y: Double, w: Double, h: Double): js.Array[Double] | Image = js.native
+  def get(): Image = js.native
+  /**
+    *   Get a region of pixels, or a single pixel, from
+    *   the canvas. Returns an array of [R,G,B,A] values
+    *   for any pixel or grabs a section of an image. If
+    *   no parameters are specified, the entire image is
+    *   returned. Use the x and y parameters to get the
+    *   value of one pixel. Get a section of the display
+    *   window by specifying additional w and h
+    *   parameters. When getting an image, the x and y
+    *   parameters define the coordinates for the
+    *   upper-left corner of the image, regardless of the
+    *   current imageMode().
+    *
+    *
+    *   Getting the color of a single pixel with get(x, y)
+    *   is easy, but not as fast as grabbing the data
+    *   directly from pixels[]. The equivalent statement
+    *   to get(x, y) using pixels[] with pixel density d
+    *   is
+    *
+    *   let x, y, d; // set these to the coordinates let
+    *   off = (y * width + x) * d * 4; let components = [
+    *   pixels[off], pixels[off + 1], pixels[off + 2],
+    *   pixels[off + 3] ]; print(components);
+    *
+    *
+    *
+    *
+    *
+    *   See the reference for pixels[] for more
+    *   information.
+    *
+    *   If you want to extract an array of colors or a
+    *   subimage from an p5.Image object, take a look at
+    *   p5.Image.get()
+    *   @param x x-coordinate of the pixel
+    *   @param y y-coordinate of the pixel
+    *   @return color of pixel at x,y in array format [R,
+    *   G, B, A]
+    */
+  def get(x: Double, y: Double): js.Array[Double] = js.native
+  /**
+    *   Get a region of pixels, or a single pixel, from
+    *   the canvas. Returns an array of [R,G,B,A] values
+    *   for any pixel or grabs a section of an image. If
+    *   no parameters are specified, the entire image is
+    *   returned. Use the x and y parameters to get the
+    *   value of one pixel. Get a section of the display
+    *   window by specifying additional w and h
+    *   parameters. When getting an image, the x and y
+    *   parameters define the coordinates for the
+    *   upper-left corner of the image, regardless of the
+    *   current imageMode().
+    *
+    *
+    *   Getting the color of a single pixel with get(x, y)
+    *   is easy, but not as fast as grabbing the data
+    *   directly from pixels[]. The equivalent statement
+    *   to get(x, y) using pixels[] with pixel density d
+    *   is
+    *
+    *   let x, y, d; // set these to the coordinates let
+    *   off = (y * width + x) * d * 4; let components = [
+    *   pixels[off], pixels[off + 1], pixels[off + 2],
+    *   pixels[off + 3] ]; print(components);
+    *
+    *
+    *
+    *
+    *
+    *   See the reference for pixels[] for more
+    *   information.
+    *
+    *   If you want to extract an array of colors or a
+    *   subimage from an p5.Image object, take a look at
+    *   p5.Image.get()
+    *   @param x x-coordinate of the pixel
+    *   @param y y-coordinate of the pixel
+    *   @param w width
+    *   @param h height
+    *   @return the rectangle p5.Image
+    */
+  def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
+  /**
+    *   Returns the value of an item that was stored in
+    *   local storage using storeItem()
+    *   @param key name that you wish to use to store in
+    *   local storage
+    *   @return Value of stored item
+    */
+  def getItem(key: String): Double | js.Object | String | Boolean | Color = js.native
   /**
     *   Gets the current URL.
     *   @return url
@@ -3650,14 +3812,17 @@ trait p5InstanceExtensions extends js.Object {
   def keyReleased(): Unit = js.native
   /**
     *   The keyTyped() function is called once every time
-    *   a key is pressed, but action keys such as Ctrl,
-    *   Shift, and Alt are ignored. The most recent key
-    *   pressed will be stored in the key variable.
-    *   Because of how operating systems handle key
-    *   repeats, holding down a key will cause multiple
-    *   calls to keyTyped() (and keyReleased() as well).
-    *   The rate of repeat is set by the operating system
-    *   and how each computer is configured.
+    *   a key is pressed, but action keys such as
+    *   Backspace, Delete, Ctrl, Shift, and Alt are
+    *   ignored. If you are trying to detect a keyCode for
+    *   one of these keys, use the keyPressed() function
+    *   instead. The most recent key typed will be stored
+    *   in the key variable.  Because of how operating
+    *   systems handle key repeats, holding down a key
+    *   will cause multiple calls to keyTyped() (and
+    *   keyReleased() as well). The rate of repeat is set
+    *   by the operating system and how each computer is
+    *   configured.
     *
     *
     *   Browsers may have different default behaviors
@@ -3703,6 +3868,25 @@ trait p5InstanceExtensions extends js.Object {
     *   @return interpolated color
     */
   def lerpColor(c1: Color, c2: Color, amt: Double): Color = js.native
+  /**
+    *   Sets the falloff rates for point lights. It
+    *   affects only the elements which are created after
+    *   it in the code. The default value is
+    *   lightFalloff(1.0, 0.0, 0.0), and the parameters
+    *   are used to calculate the falloff with the
+    *   following equation: d = distance from light
+    *   position to vertex position
+    *
+    *   falloff = 1 / (CONSTANT + d * LINEAR + ( d * d ) *
+    *   QUADRATIC)
+    *   @param constant constant value for determining
+    *   falloff
+    *   @param linear linear value for determining falloff
+    *   @param quadratic quadratic value for determining
+    *   falloff
+    *   @chainable
+    */
+  def lightFalloff(constant: Double, linear: Double, quadratic: Double): typings.p5.p5Mod.p5 = js.native
   def lightness(color: String): Double = js.native
   def lightness(color: js.Array[Double]): Double = js.native
   /**
@@ -3713,6 +3897,18 @@ trait p5InstanceExtensions extends js.Object {
     *   @return the lightness
     */
   def lightness(color: Color): Double = js.native
+  /**
+    *   Sets the default ambient and directional light.
+    *   The defaults are ambientLight(128, 128, 128) and
+    *   directionalLight(128, 128, 128, 0, 0, -1). Lights
+    *   need to be included in the draw() to remain
+    *   persistent in a looping program. Placing them in
+    *   the setup() of a looping program will cause them
+    *   to only have an effect the first time through the
+    *   loop.
+    *   @chainable
+    */
+  def lights(): typings.p5.p5Mod.p5 = js.native
   /**
     *   Draws a line (a direct path between two points) to
     *   the screen. The version of line() with four
@@ -3919,36 +4115,44 @@ trait p5InstanceExtensions extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object | js.Array[_] = js.native
   /**
-    *   Load a 3d model from an OBJ file.  One of the
-    *   limitations of the OBJ format is that it doesn't
-    *   have a built-in sense of scale. This means that
-    *   models exported from different programs might be
-    *   very different sizes. If your model isn't
+    *   Load a 3d model from an OBJ or STL file.  One of
+    *   the limitations of the OBJ and STL format is that
+    *   it doesn't have a built-in sense of scale. This
+    *   means that models exported from different programs
+    *   might be very different sizes. If your model isn't
     *   displaying, try calling loadModel() with the
     *   normalized parameter set to true. This will resize
     *   the model to a scale appropriate for p5. You can
     *   also make additional changes to the final size of
     *   your model with the scale() function.
+    *
+    *   Also, the support for colored STL files is not
+    *   present. STL files with color will be rendered
+    *   without color properties.
     *   @param path Path of the model to be loaded
     *   @param [successCallback] Function to be called
     *   once the model is loaded. Will be passed the 3D
     *   model object.
     *   @param [failureCallback] called with event error
-    *   if the image fails to load.
+    *   if the model fails to load.
     *   @return the p5.Geometry object
     */
   def loadModel(path: String): Geometry = js.native
   /**
-    *   Load a 3d model from an OBJ file.  One of the
-    *   limitations of the OBJ format is that it doesn't
-    *   have a built-in sense of scale. This means that
-    *   models exported from different programs might be
-    *   very different sizes. If your model isn't
+    *   Load a 3d model from an OBJ or STL file.  One of
+    *   the limitations of the OBJ and STL format is that
+    *   it doesn't have a built-in sense of scale. This
+    *   means that models exported from different programs
+    *   might be very different sizes. If your model isn't
     *   displaying, try calling loadModel() with the
     *   normalized parameter set to true. This will resize
     *   the model to a scale appropriate for p5. You can
     *   also make additional changes to the final size of
     *   your model with the scale() function.
+    *
+    *   Also, the support for colored STL files is not
+    *   present. STL files with color will be rendered
+    *   without color properties.
     *   @param path Path of the model to be loaded
     *   @param normalize If true, scale the model to a
     *   standardized size when loading
@@ -3956,7 +4160,7 @@ trait p5InstanceExtensions extends js.Object {
     *   once the model is loaded. Will be passed the 3D
     *   model object.
     *   @param [failureCallback] called with event error
-    *   if the image fails to load.
+    *   if the model fails to load.
     *   @return the p5.Geometry object
     */
   def loadModel(path: String, normalize: Boolean): Geometry = js.native
@@ -3990,16 +4194,27 @@ trait p5InstanceExtensions extends js.Object {
     *   supply appropriate vertices, normals, colors, and
     *   lighting attributes if the parameters defined in
     *   the shader match the names.
-    *   @param [vertFilename] path to file containing
-    *   vertex shader source code
-    *   @param [fragFilename] path to file containing
+    *   @param vertFilename path to file containing vertex
+    *   shader source code
+    *   @param fragFilename path to file containing
     *   fragment shader source code
+    *   @param [callback] callback to be executed after
+    *   loadShader completes. On success, the Shader
+    *   object is passed as the first argument.
+    *   @param [errorCallback] callback to be executed
+    *   when an error occurs inside loadShader. On error,
+    *   the error is passed as the first argument.
     *   @return a shader object created from the provided
     *   vertex and fragment shader files.
     */
-  def loadShader(): Shader = js.native
-  def loadShader(vertFilename: String): Shader = js.native
   def loadShader(vertFilename: String, fragFilename: String): Shader = js.native
+  def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, _]): Shader = js.native
+  def loadShader(
+    vertFilename: String,
+    fragFilename: String,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): Shader = js.native
   /**
     *   Reads the contents of a file and creates a String
     *   array of its individual lines. If the name of the
@@ -4199,7 +4414,8 @@ trait p5InstanceExtensions extends js.Object {
     *   continuously, executing the code within it.
     *   However, the draw() loop may be stopped by calling
     *   noLoop(). In that case, the draw() loop can be
-    *   resumed with loop().
+    *   resumed with loop(). Avoid calling loop() from
+    *   inside setup().
     */
   def loop(): Unit = js.native
   /**
@@ -4606,9 +4822,9 @@ trait p5InstanceExtensions extends js.Object {
     *   case to align it with negative numbers which
     *   includes "-" (minus) sign. The main usecase of
     *   nfs() can be seen when one wants to align the
-    *   digits (place values) of a positive number with
-    *   some negative number (See the example to get a
-    *   clear picture). There are two versions: one for
+    *   digits (place values) of a non-negative number
+    *   with some negative number (See the example to get
+    *   a clear picture). There are two versions: one for
     *   formatting float, and one for formatting int. The
     *   values for the digits, left, and right parameters
     *   should always be positive integers. (IMP): The
@@ -4639,9 +4855,9 @@ trait p5InstanceExtensions extends js.Object {
     *   case to align it with negative numbers which
     *   includes "-" (minus) sign. The main usecase of
     *   nfs() can be seen when one wants to align the
-    *   digits (place values) of a positive number with
-    *   some negative number (See the example to get a
-    *   clear picture). There are two versions: one for
+    *   digits (place values) of a non-negative number
+    *   with some negative number (See the example to get
+    *   a clear picture). There are two versions: one for
     *   formatting float, and one for formatting int. The
     *   values for the digits, left, and right parameters
     *   should always be positive integers. (IMP): The
@@ -4825,7 +5041,7 @@ trait p5InstanceExtensions extends js.Object {
     *   low, high, 0, 1). Numbers outside of the range are
     *   not clamped to 0 and 1, because out-of-range
     *   values are often intentional and useful. (See the
-    *   second example above.)
+    *   example above.)
     *   @param value incoming value to be normalized
     *   @param start lower bound of the value's current
     *   range
@@ -5035,8 +5251,16 @@ trait p5InstanceExtensions extends js.Object {
     *   fill(), stroke(), tint(), strokeWeight(),
     *   strokeCap(), strokeJoin(), imageMode(),
     *   rectMode(), ellipseMode(), colorMode(),
-    *   textAlign(), textFont(), textMode(), textSize(),
+    *   textAlign(), textFont(), textSize(),
     *   textLeading().
+    *
+    *
+    *   In WEBGL mode additional style settings are
+    *   stored. These are controlled by the following
+    *   functions: setCamera(), ambientLight(),
+    *   directionalLight(), pointLight(), texture(),
+    *   specularMaterial(), shininess(), normalMaterial()
+    *   and shader().
     */
   def pop(): Unit = js.native
   /**
@@ -5084,8 +5308,16 @@ trait p5InstanceExtensions extends js.Object {
     *   fill(), stroke(), tint(), strokeWeight(),
     *   strokeCap(), strokeJoin(), imageMode(),
     *   rectMode(), ellipseMode(), colorMode(),
-    *   textAlign(), textFont(), textMode(), textSize(),
+    *   textAlign(), textFont(), textSize(),
     *   textLeading().
+    *
+    *
+    *   In WEBGL mode additional style settings are
+    *   stored. These are controlled by the following
+    *   functions: setCamera(), ambientLight(),
+    *   directionalLight(), pointLight(), texture(),
+    *   specularMaterial(), shininess(), normalMaterial()
+    *   and shader().
     */
   def push(): Unit = js.native
   /**
@@ -5096,6 +5328,8 @@ trait p5InstanceExtensions extends js.Object {
     *   (x1,y1) sets the first vertex and the subsequent
     *   pairs should proceed clockwise or
     *   counter-clockwise around the defined shape.
+    *   z-arguments only work when quad() is used in WEBGL
+    *   mode.
     *   @param x1 the x-coordinate of the first point
     *   @param y1 the y-coordinate of the first point
     *   @param x2 the x-coordinate of the second point
@@ -5115,6 +5349,8 @@ trait p5InstanceExtensions extends js.Object {
     *   (x1,y1) sets the first vertex and the subsequent
     *   pairs should proceed clockwise or
     *   counter-clockwise around the defined shape.
+    *   z-arguments only work when quad() is used in WEBGL
+    *   mode.
     *   @param x1 the x-coordinate of the first point
     *   @param y1 the y-coordinate of the first point
     *   @param z1 the z-coordinate of the first point
@@ -5388,11 +5624,23 @@ trait p5InstanceExtensions extends js.Object {
     */
   def removeElements(): Unit = js.native
   /**
+    *   Removes an item that was stored with storeItem()
+    */
+  def removeItem(key: String): Unit = js.native
+  /**
     *   Replaces the current matrix with the identity
     *   matrix.
     *   @chainable
     */
   def resetMatrix(): typings.p5.p5Mod.p5 = js.native
+  /**
+    *   This function restores the default shaders in
+    *   WEBGL mode. Code that runs after resetShader()
+    *   will not be affected by previously defined
+    *   shaders. Should be run after shader().
+    *   @chainable
+    */
+  def resetShader(): typings.p5.p5Mod.p5 = js.native
   /**
     *   Resizes the canvas to given width and height. The
     *   canvas will be cleared and draw will be called
@@ -5806,11 +6054,21 @@ trait p5InstanceExtensions extends js.Object {
   def set(x: Double, y: Double, c: Double): Unit = js.native
   /**
     *   Set attributes for the WebGL Drawing context. This
-    *   is a way of adjusting ways that the WebGL renderer
-    *   works to fine-tune the display and performance.
-    *   This should be put in setup(). The available
-    *   attributes are:  alpha - indicates if the canvas
-    *   contains an alpha buffer default is true
+    *   is a way of adjusting how the WebGL renderer works
+    *   to fine-tune the display and performance.  Note
+    *   that this will reinitialize the drawing context if
+    *   called after the WebGL canvas is made.
+    *
+    *
+    *   If an object is passed as the parameter, all
+    *   attributes not declared in the object will be set
+    *   to defaults.
+    *
+    *
+    *   The available attributes are:
+    *
+    *   alpha - indicates if the canvas contains an alpha
+    *   buffer default is true
     *
     *
     *   depth - indicates whether the drawing buffer has a
@@ -5846,11 +6104,21 @@ trait p5InstanceExtensions extends js.Object {
   def setAttributes(key: String, value: Boolean): Unit = js.native
   /**
     *   Set attributes for the WebGL Drawing context. This
-    *   is a way of adjusting ways that the WebGL renderer
-    *   works to fine-tune the display and performance.
-    *   This should be put in setup(). The available
-    *   attributes are:  alpha - indicates if the canvas
-    *   contains an alpha buffer default is true
+    *   is a way of adjusting how the WebGL renderer works
+    *   to fine-tune the display and performance.  Note
+    *   that this will reinitialize the drawing context if
+    *   called after the WebGL canvas is made.
+    *
+    *
+    *   If an object is passed as the parameter, all
+    *   attributes not declared in the object will be set
+    *   to defaults.
+    *
+    *
+    *   The available attributes are:
+    *
+    *   alpha - indicates if the canvas contains an alpha
+    *   buffer default is true
     *
     *
     *   depth - indicates whether the drawing buffer has a
@@ -5964,6 +6232,15 @@ trait p5InstanceExtensions extends js.Object {
     *   @chainable
     */
   def shearY(angle: Double): typings.p5.p5Mod.p5 = js.native
+  /**
+    *   Sets the amount of gloss in the surface of shapes.
+    *   Used in combination with specularMaterial() in
+    *   setting the material properties of shapes. The
+    *   default and minimum value is 1.
+    *   @param shine Degree of Shininess. Defaults to 1.
+    *   @chainable
+    */
+  def shininess(shine: Double): typings.p5.p5Mod.p5 = js.native
   /**
     *   Decreases an array by one element and returns the
     *   shortened array, maps to Array.pop().
@@ -6165,6 +6442,21 @@ trait p5InstanceExtensions extends js.Object {
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): typings.p5.p5Mod.p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): typings.p5.p5Mod.p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): typings.p5.p5Mod.p5 = js.native
+  /**
+    *   Stores a value in local storage under the key
+    *   name. Local storage is saved in the browser and
+    *   persists between browsing sessions and page
+    *   reloads. The key can be the name of the variable
+    *   but doesn't have to be. To retrieve stored items
+    *   see getItem.  Sensitive data such as passwords or
+    *   personal information should not be stored in local
+    *   storage.
+    */
+  def storeItem(key: String, value: String): Unit = js.native
+  def storeItem(key: String, value: js.Object): Unit = js.native
+  def storeItem(key: String, value: Boolean): Unit = js.native
+  def storeItem(key: String, value: Double): Unit = js.native
+  def storeItem(key: String, value: Color): Unit = js.native
   /**
     *   Converts a boolean, string or number to its string
     *   representation. When an array of values is passed
@@ -6548,6 +6840,32 @@ trait p5InstanceExtensions extends js.Object {
     *   @param mode either IMAGE or NORMAL
     */
   def textureMode(mode: TEXTURE_MODE): Unit = js.native
+  /**
+    *   Sets the global texture wrapping mode. This
+    *   controls how textures behave when their uv's go
+    *   outside of the 0 - 1 range. There are three
+    *   options: CLAMP, REPEAT, and MIRROR. CLAMP causes
+    *   the pixels at the edge of the texture to extend to
+    *   the bounds REPEAT causes the texture to tile
+    *   repeatedly until reaching the bounds MIRROR works
+    *   similarly to REPEAT but it flips the texture with
+    *   every new tile
+    *
+    *   REPEAT & MIRROR are only available if the texture
+    *   is a power of two size (128, 256, 512, 1024,
+    *   etc.).
+    *
+    *   This method will affect all textures in your
+    *   sketch until a subsequent textureWrap call is
+    *   made.
+    *
+    *   If only one argument is provided, it will be
+    *   applied to both the horizontal and vertical axes.
+    *   @param wrapX either CLAMP, REPEAT, or MIRROR
+    *   @param [wrapY] either CLAMP, REPEAT, or MIRROR
+    */
+  def textureWrap(wrapX: WRAP_X): Unit = js.native
+  def textureWrap(wrapX: WRAP_X, wrapY: WRAP_Y): Unit = js.native
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made

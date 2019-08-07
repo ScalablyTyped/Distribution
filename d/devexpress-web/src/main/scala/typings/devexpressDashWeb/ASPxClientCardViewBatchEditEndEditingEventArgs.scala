@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditEndEditing event.
+  * Provides data for the ASPxClientCardView.BatchEditEndEditing event.
   */
-trait ASPxClientCardViewBatchEditEndEditingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditEndEditingEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditEndEditingEventArgs class with the specified settings.
+    * @param visibleIndex An integer value that specifies the visible index of the card. This value is assigned to the ASPxClientCardViewBatchEditEndEditingEventArgs.visibleIndex property.
+    * @param cardValues A hashtable that stores information about editable cells. This value is assigned to the ASPxClientCardViewBatchEditEndEditingEventArgs.cardValues property.
+    */
+  def this(visibleIndex: Double, cardValues: js.Any) = this()
   /**
     * Gets a hashtable that maintains information about editable cells.
-    * Value: A hashtable that stores information about editable cells.
     */
-  var cardValues: js.Object
+  var cardValues: js.Any = js.native
   /**
     * Gets the visible index of the card whose cells have been edited.
-    * Value: An <see cref="Int32" /> value that specifies the visible index of the card.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewBatchEditEndEditingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, cardValues: js.Object, visibleIndex: Double): ASPxClientCardViewBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditEndEditingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

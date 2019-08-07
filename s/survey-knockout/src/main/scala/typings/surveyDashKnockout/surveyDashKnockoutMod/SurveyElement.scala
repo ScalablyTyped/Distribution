@@ -43,6 +43,8 @@ class SurveyElement protected ()
   val surveyImpl: ISurveyImpl = js.native
   val textProcessor: ITextProcessor = js.native
   /* protected */ def copyCssClasses(dest: js.Any, source: js.Any): Unit = js.native
+  /* CompleteClass */
+  override def delete(): js.Any = js.native
   def getElementsInDesign(): js.Array[IElement] = js.native
   def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
   /* protected */ def getPage(parent: IPanel): IPage = js.native
@@ -64,6 +66,7 @@ class SurveyElement protected ()
   /* CompleteClass */
   override def onSurveyLoad(): js.Any = js.native
   def readOnlyChangedCallback(): Unit = js.native
+  /* protected */ def removeSelfFromList(list: js.Array[_]): Unit = js.native
   /* protected */ def setPage(parent: IPanel, `val`: IPage): Unit = js.native
   /* CompleteClass */
   override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native

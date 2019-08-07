@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditCardInserting event.
+  * Provides data for the ASPxClientCardView.BatchEditCardInserting event.
   */
-trait ASPxClientCardViewBatchEditCardInsertingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditCardInsertingEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditCardInsertingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditCardInsertingEventArgs class.
+    * @param visibleIndex An integer value that specifies the processed card visible index.
+    */
+  def this(visibleIndex: Double) = this()
   /**
     * Gets the processed card visible index.
-    * Value: An integer value that specifies the processed card visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientCardViewBatchEditCardInsertingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, visibleIndex: Double): ASPxClientCardViewBatchEditCardInsertingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardInsertingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

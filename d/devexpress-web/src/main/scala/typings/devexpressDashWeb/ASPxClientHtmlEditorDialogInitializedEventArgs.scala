@@ -5,27 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the DialogInitialized client event.
+  * Provides data for the ASPxClientHtmlEditor.DialogInitialized client event.
   */
-trait ASPxClientHtmlEditorDialogInitializedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientHtmlEditorDialogInitializedEventArgs")
+@js.native
+class ASPxClientHtmlEditorDialogInitializedEventArgs () extends ASPxClientEventArgs {
   /**
     * Gets a dialog object related to the event.
-    * Value: A ASPxClientHtmlEditorDialogBase object that is the dialog.
     */
-  var dialog: ASPxClientHtmlEditorDialogBase
+  var dialog: ASPxClientHtmlEditorDialogBase = js.native
   /**
     * Gets the name of the dialog that has been initialized.
-    * Value: A string value that is the name of the initialized dialog.
     */
-  var dialogName: String
-}
-
-object ASPxClientHtmlEditorDialogInitializedEventArgs {
-  @scala.inline
-  def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: String): ASPxClientHtmlEditorDialogInitializedEventArgs = {
-    val __obj = js.Dynamic.literal(dialog = dialog, dialogName = dialogName)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorDialogInitializedEventArgs]
-  }
+  var dialogName: String = js.native
 }
 

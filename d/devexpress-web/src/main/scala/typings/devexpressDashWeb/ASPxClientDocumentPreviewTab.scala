@@ -1,46 +1,23 @@
 package typings.devexpressDashWeb
 
+import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Provides information about a tab available in the Document Viewer.
-  */
-trait ASPxClientDocumentPreviewTab extends js.Object {
-  /**
-    * Provides access to the value that specifies whether a tab is active.
-    * Value: A knockout observable object that specifies whether the tab is active.
-    */
-  var active: js.Any
-  /**
-    * Provides access to a tab model.
-    * Value: An object that specifies the tab model.
-    */
-  var model: js.Object
-  /**
-    * Provides access to the name of an HTML template used by a tab.
-    * Value: A knockout observable string that specifies the name of the HTML template used by the tab.
-    */
-  var template: String
-  /**
-    * Provides access to the tab text.
-    * Value: A string that specifies the tab text.
-    */
-  var text: String
-  /**
-    * Provides access to the value that specifies whether a tab is visible.
-    * Value: A knockout observable object that specifies whether the tab is visible.
-    */
-  var visible: js.Any
-}
-
-object ASPxClientDocumentPreviewTab {
-  @scala.inline
-  def apply(active: js.Any, model: js.Object, template: String, text: String, visible: js.Any): ASPxClientDocumentPreviewTab = {
-    val __obj = js.Dynamic.literal(active = active, model = model, template = template, text = text, visible = visible)
-  
-    __obj.asInstanceOf[ASPxClientDocumentPreviewTab]
-  }
+@JSGlobal("ASPxClientDocumentPreviewTab")
+@js.native
+class ASPxClientDocumentPreviewTab () extends js.Object {
+  @JSName("active")
+  var active_Original: KnockoutObservable[Boolean] = js.native
+  var model: js.Any = js.native
+  var template: String = js.native
+  var text: String = js.native
+  @JSName("visible")
+  var visible_Original: KnockoutObservable[Boolean] = js.native
+  def active(): Boolean = js.native
+  def active(value: Boolean): Unit = js.native
+  def visible(): Boolean = js.native
+  def visible(value: Boolean): Unit = js.native
 }
 

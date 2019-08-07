@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A command to update all fields in the selected range.
   */
+@JSGlobal("UpdateAllFieldsCommand")
 @js.native
-trait UpdateAllFieldsCommand extends CommandWithSimpleStateBase {
+class UpdateAllFieldsCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the UpdateAllFieldsCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    */
-  def execute(): Boolean = js.native
-  /**
-    * Executes the UpdateAllFieldsCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the UpdateAllFieldsCommand command. true if the command has been successfully executed; false if the command execution has failed.
     * @param callback A callback function that is performed when updating of all fields in the document is completed.
     */
-  def execute(callback: js.Function): Boolean = js.native
+  def execute(): Boolean = js.native
+  def execute(callback: js.Function0[Unit]): Boolean = js.native
 }
 

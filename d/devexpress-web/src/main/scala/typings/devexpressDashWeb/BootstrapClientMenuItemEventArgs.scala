@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events related to manipulations on menu items.
   */
-trait BootstrapClientMenuItemEventArgs extends ASPxClientEventArgs {
+@JSGlobal("BootstrapClientMenuItemEventArgs")
+@js.native
+class BootstrapClientMenuItemEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the BootstrapClientMenuItemEventArgs type with the specified value.
+    * @param item An BootstrapClientMenuItem object representing the group related to the event.
+    */
+  def this(item: BootstrapClientMenuItem) = this()
   /**
     * Gets the menu item object related to the event.
-    * Value: A BootstrapClientMenuItem object, manipulations on which forced the event to be raised.
     */
-  var item: BootstrapClientMenuItem
-}
-
-object BootstrapClientMenuItemEventArgs {
-  @scala.inline
-  def apply(item: BootstrapClientMenuItem): BootstrapClientMenuItemEventArgs = {
-    val __obj = js.Dynamic.literal(item = item)
-  
-    __obj.asInstanceOf[BootstrapClientMenuItemEventArgs]
-  }
+  var item: BootstrapClientMenuItem = js.native
 }
 

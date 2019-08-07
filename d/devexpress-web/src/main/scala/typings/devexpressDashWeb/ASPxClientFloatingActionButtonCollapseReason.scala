@@ -4,18 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ASPxClientFloatingActionButtonCollapseReason extends js.Object {
-  var API: String
-  var ActionItem: String
-  var CollapseButton: String
-}
-
-object ASPxClientFloatingActionButtonCollapseReason {
-  @scala.inline
-  def apply(API: String, ActionItem: String, CollapseButton: String): ASPxClientFloatingActionButtonCollapseReason = {
-    val __obj = js.Dynamic.literal(API = API, ActionItem = ActionItem, CollapseButton = CollapseButton)
-  
-    __obj.asInstanceOf[ASPxClientFloatingActionButtonCollapseReason]
-  }
+/**
+  * Lists values specifying whether the user action or APIs has collapsed the action group.
+  */
+@JSGlobal("ASPxClientFloatingActionButtonCollapseReason")
+@js.native
+class ASPxClientFloatingActionButtonCollapseReason () extends js.Object {
+  /**
+    * The action group is collapsed using APIs.
+    */
+  var API: String = js.native
+  /**
+    * The action group is collapsed by clicking on the action item.
+    */
+  var ActionItem: String = js.native
+  /**
+    * The action group is collapsed using the collapse button.
+    */
+  var CollapseButton: String = js.native
 }
 

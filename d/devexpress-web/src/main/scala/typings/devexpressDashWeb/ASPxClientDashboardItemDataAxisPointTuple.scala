@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a tuple of axis points.
   */
+@JSGlobal("ASPxClientDashboardItemDataAxisPointTuple")
 @js.native
-trait ASPxClientDashboardItemDataAxisPointTuple extends js.Object {
+class ASPxClientDashboardItemDataAxisPointTuple () extends js.Object {
   /**
-    * Returns the axis point belonging to the default data axis.
+    * Returns the axis point belonging to the default data axis. An ASPxClientDashboardItemDataAxisPoint object that is the axis point.
     */
   def GetAxisPoint(): ASPxClientDashboardItemDataAxisPoint = js.native
-  /**
-    * Returns the axis point belonging to the specified data axis.
-    * @param axisName A string value returned by the DashboardDataAxisNames class that specifies the name of the data axis.
-    */
   def GetAxisPoint(axisName: String): ASPxClientDashboardItemDataAxisPoint = js.native
 }
 

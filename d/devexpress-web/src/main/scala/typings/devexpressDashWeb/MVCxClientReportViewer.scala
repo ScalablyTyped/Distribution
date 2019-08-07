@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Obsolete. Use the MVCxClientDocumentViewer class instead.
   */
+@JSGlobal("MVCxClientReportViewer")
 @js.native
-trait MVCxClientReportViewer extends ASPxClientReportViewer {
+class MVCxClientReportViewer () extends ASPxClientReportViewer {
   /**
     * Occurs before performing a document export request.
     */

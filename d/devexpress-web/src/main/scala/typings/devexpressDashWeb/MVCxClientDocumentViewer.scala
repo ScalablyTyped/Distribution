@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the MVCxDocumentViewer class.
   */
+@JSGlobal("MVCxClientDocumentViewer")
 @js.native
-trait MVCxClientDocumentViewer extends ASPxClientDocumentViewer {
+class MVCxClientDocumentViewer () extends ASPxClientDocumentViewer {
   /**
     * Occurs before performing a document export request.
     */

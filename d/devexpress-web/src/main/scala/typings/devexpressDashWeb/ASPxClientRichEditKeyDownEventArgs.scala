@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the KeyDown event.
+  * Provides data for the ASPxClientRichEdit.KeyDown event.
   */
-trait ASPxClientRichEditKeyDownEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRichEditKeyDownEventArgs")
+@js.native
+class ASPxClientRichEditKeyDownEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRichEditKeyDownEventArgs object. For internal use only.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    * @param handled true if the event is handled and no default processing is required; otherwise false.
+    */
+  def this(htmlEvent: js.Any, handled: Boolean) = this()
   /**
     * Gets or sets whether the event is handled manually, so no default processing is required.
-    * Value: true if the event is handled and no default processing is required; otherwise false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
-}
-
-object ASPxClientRichEditKeyDownEventArgs {
-  @scala.inline
-  def apply(handled: Boolean, htmlEvent: js.Object): ASPxClientRichEditKeyDownEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent)
-  
-    __obj.asInstanceOf[ASPxClientRichEditKeyDownEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

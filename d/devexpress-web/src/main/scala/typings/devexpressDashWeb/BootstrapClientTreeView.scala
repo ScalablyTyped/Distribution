@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapTreeView control.
   */
+@JSGlobal("BootstrapClientTreeView")
 @js.native
-trait BootstrapClientTreeView extends ASPxClientTreeView {
+class BootstrapClientTreeView () extends ASPxClientTreeView {
   /**
     * Selects the specified node within the Tree View control on the client side.
     * @param node A BootstrapClientTreeViewNode object specifying the node to select.

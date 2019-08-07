@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the Query Builder extension.
   */
+@JSGlobal("MVCxClientQueryBuilder")
 @js.native
-trait MVCxClientQueryBuilder extends ASPxClientQueryBuilder {
+class MVCxClientQueryBuilder () extends ASPxClientQueryBuilder {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,6 +23,6 @@ trait MVCxClientQueryBuilder extends ASPxClientQueryBuilder {
     * Sends a callback to the server and generates the server-side event passing it the specified argument.
     * @param arg A string value that represents any information that needs to be sent to the server-side event.
     */
-  def PerformCallback(arg: js.Object): Unit = js.native
+  def PerformCallback(arg: js.Any): Unit = js.native
 }
 

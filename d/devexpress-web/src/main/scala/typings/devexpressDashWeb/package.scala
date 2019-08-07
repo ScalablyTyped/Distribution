@@ -5,1871 +5,2464 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object devexpressDashWeb {
-  type ANCxClientBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ANCxClientBeginCallbackEventArgs, Unit]
   /**
-    * References a method that will handle the ActionAvailabilityChanged event.
+    * References a method that handles the ASPxClientDashboard.ActionAvailabilityChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientActionAvailabilityChangedEventArgs object that contains event data.
     */
-  type ASPxClientActionAvailabilityChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientActionAvailabilityChangedEventArgs, Unit]
+  type ASPxClientActionAvailabilityChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientActionAvailabilityChangedEventArgs, Unit]
   /**
-    * Represents an object that will handle the client-side AfterCheck event.
+    * A method that will handle the ASPxClientSpellChecker.AfterCheck event.
+    * @param source The ASPxClientSpellChecker control which fires the event.
+    * @param e A ASPxClientSpellCheckerAfterCheckEventArgs object that contains event data
     */
-  type ASPxClientAfterCheckEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpellCheckerAfterCheckEventArgs, Unit]
+  type ASPxClientAfterCheckEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpellCheckerAfterCheckEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the Annotation class.
+    * A method that will handle the ASPxClientScheduler.AppointmentDeleting event.
+    * @param source The event sender (typically an ASPxClientScheduler control).
+    * @param e A ASPxClientAppointmentDeletingEventArgs object that contains event data.
     */
-  type ASPxClientAnnotation = ASPxClientWebChartElementNamed
-  type ASPxClientAppointmentDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentDeletingEventArgs, Unit]
+  type ASPxClientAppointmentDeletingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentDeletingEventArgs, Unit]
   /**
-    * A method that will handle the client AppointmentToolTipShowing event.
+    * A method that will handle the corresponding client event.
+    * @param source The event source.
+    * @param e An ASPxClientAppointmentToolTipShowingEventArgs object that contains event data.
     */
-  type ASPxClientAppointmentToolTipShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentToolTipShowingEventArgs, Unit]
+  type ASPxClientAppointmentToolTipShowingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentToolTipShowingEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the Axis3D class.
+    * A method that will handle the ASPxClientSpellChecker.BeforeCheck event.
+    * @param source The ASPxClientSpellChecker control which fires the event.
+    * @param e A ASPxClientSpellCheckerBeforeCheckEventArgs object that contains event data
     */
-  type ASPxClientAxis3D = ASPxClientAxisBase
+  type ASPxClientBeforeCheckEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpellCheckerBeforeCheckEventArgs, Unit]
   /**
-    * Represents an object that will handle the client-side BeforeCheck event.
+    * A method that will handle client BeginCallback events.
+    * @param source An object representing the event source. Identifies the web control that raised the event.
+    * @param e An ASPxClientBeginCallbackEventArgs object that contains event data.
     */
-  type ASPxClientBeforeCheckEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpellCheckerBeforeCheckEventArgs, Unit]
+  type ASPxClientBeginCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientBeginCallbackEventArgs, Unit]
   /**
-    * A method that will handle the client events related to the begining of a callback processing round trip.
+    * A method that will handle the client ASPxClientButton.Click event.
+    * @param source An object that is the event's source.
+    * @param e An ASPxClientButtonClickEventArgs object that contains event data.
     */
-  type ASPxClientBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientBeginCallbackEventArgs, Unit]
+  type ASPxClientButtonClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientButtonClickEventArgs, Unit]
   /**
-    * A method that will handle the client Click event.
+    * A method that will handle the ASPxClientButtonEditBase.ButtonClick event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientButtonEditClickEventArgs object that contains event data.
     */
-  type ASPxClientButtonClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientButtonClickEventArgs, Unit]
+  type ASPxClientButtonEditClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientButtonEditClickEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ASPxButtonEdit control.
+    * A method that will handle the ASPxClientDateEdit.CalendarCellClick event.
+    * @param source The event source.
+    * @param e A ASPxClientCalendarCellClickEventArgs object that contains event data.
     */
-  type ASPxClientButtonEdit = ASPxClientButtonEditBase
-  type ASPxClientButtonEditBaseStatic = ASPxClientTextBoxBaseStatic
+  type ASPxClientCalendarCellClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCalendarCellClickEventArgs, Unit]
   /**
-    * A method that will handle the ButtonClick event.
+    * A method that will handle the client ASPxClientCalendar.CustomDisabledDate event.
+    * @param source The event source.
+    * @param e An ASPxClientCalendarCustomDisabledDateEventArgs object that contains event data.
     */
-  type ASPxClientButtonEditClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientButtonEditClickEventArgs, Unit]
-  type ASPxClientCalendarCellClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCalendarCellClickEventArgs, Unit]
-  /**
-    * A method that will handle the client CustomDisabledDate event.
-    */
-  type ASPxClientCalendarCustomDisabledDateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCalendarCustomDisabledDateEventArgs, Unit]
+  type ASPxClientCalendarCustomDisabledDateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCalendarCustomDisabledDateEventArgs, Unit]
   /**
     * A method that will handle the client events related to completion of callback server-side processing.
+    * @param source An object representing the event source. Identifies the web control that raised the event.
+    * @param e An ASPxClientCallbackCompleteEventArgs object that contains event data.
     */
-  type ASPxClientCallbackCompleteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCallbackCompleteEventArgs, Unit]
+  type ASPxClientCallbackCompleteEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCallbackCompleteEventArgs, Unit]
   /**
-    * A method that will handle client events related to server-side errors that occured during callback processing.
+    * A method that will handle client CallbackError events.
+    * @param source An object representing the event source.
+    * @param e A ASPxClientCallbackErrorEventArgs object that contains event data.
     */
-  type ASPxClientCallbackErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCallbackErrorEventArgs, Unit]
+  type ASPxClientCallbackErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCallbackErrorEventArgs, Unit]
   /**
     * A method that will handle the cancelable events of a web control's client-side equivalent.
+    * @param source An object representing the event source. Identifies the web control that raised the event.
+    * @param e An ASPxClientCancelEventArgs object that contains event data.
     */
-  type ASPxClientCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCancelEventArgs, Unit]
+  type ASPxClientCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCancelEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditCardDeleting event.
+    * A method that will handle the ASPxClientCardView.BatchEditCardDeleting event.
+    * @param source The event source. This parameter identifies the card view object which raised the event.
+    * @param e An ASPxClientCardViewBatchEditCardDeletingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditCardDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditCardDeletingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditCardDeletingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewBatchEditCardDeletingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditCardInserting event.
+    * A method that will handle the ASPxClientCardView.BatchEditCardInserting event.
+    * @param source The event source. This parameter identifies the card view object which raised the event.
+    * @param e An ASPxClientCardViewBatchEditCardInsertingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditCardInsertingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditCardInsertingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditCardInsertingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewBatchEditCardInsertingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditCardRecovering event.
+    * A method that will handle the ASPxClientCardView.BatchEditCardRecovering event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewBatchEditCardRecoveringEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditCardRecoveringEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditCardRecoveringEventArgs, Unit]
+  type ASPxClientCardViewBatchEditCardRecoveringEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientCardViewBatchEditCardRecoveringEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client BatchEditCardValidating event.
+    * A method that will handle the ASPxClientCardView.BatchEditCardValidating event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewBatchEditCardValidatingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditCardValidatingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditCardValidatingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditCardValidatingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientCardViewBatchEditCardValidatingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditChangesCanceling event.
+    * A method that will handle the ASPxClientCardView.BatchEditChangesCanceling event.
+    * @param source The event source. This parameter identifies the card view object which raised the event.
+    * @param e An ASPxClientCardViewBatchEditChangesCancelingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditChangesCancelingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditChangesCancelingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditChangesCancelingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientCardViewBatchEditChangesCancelingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditChangesSaving event.
+    * A method that will handle the ASPxClientCardView.BatchEditChangesSaving event.
+    * @param source The event source. This parameter identifies the card view object which raised the event.
+    * @param e An ASPxClientCardViewBatchEditChangesSavingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditChangesSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditChangesSavingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditChangesSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewBatchEditChangesSavingEventArgs, Unit]
   /**
-    * Represents an object that will handle the client-side BatchEditConfirmShowing event.
+    * A method that will handle the ASPxClientCardView.BatchEditConfirmShowing client event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewBatchEditConfirmShowingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditConfirmShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditConfirmShowingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditConfirmShowingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientCardViewBatchEditConfirmShowingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client BatchEditEndEditing event.
+    * A method that will handle the ASPxClientCardView.BatchEditEndEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewBatchEditEndEditingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditEndEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditEndEditingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditEndEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewBatchEditEndEditingEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditStartEditing event.
+    * A method that will handle the ASPxClientCardView.BatchEditStartEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewBatchEditStartEditingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditStartEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewBatchEditStartEditingEventArgs, Unit]
+  type ASPxClientCardViewBatchEditStartEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewBatchEditStartEditingEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditTemplateCellFocused event.
+    * A method that will handle the ASPxClientCardView.BatchEditTemplateCellFocused event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs object that contains event data.
     */
-  type ASPxClientCardViewBatchEditTemplateCellFocusedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientCardViewBatchEditTemplateCellFocusedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the CardClick event.
+    * A method that will handle the ASPxClientCardView.CardClick event.
+    * @param source The event source. This parameter identifies the ASPxClientCardView object that raised the event.
+    * @param e An ASPxClientCardViewCardClickEventArgs object that contains event data.
     */
-  type ASPxClientCardViewCardClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewCardClickEventArgs, Unit]
+  type ASPxClientCardViewCardClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewCardClickEventArgs, Unit]
   /**
-    * A method that will handle the client CardFocusing event.
+    * Represents a method that will handle the ASPxClientCardView.CardFocusing event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewCardFocusingEventArgs object which contains event data.
     */
-  type ASPxClientCardViewCardFocusingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewCardFocusingEventArgs, Unit]
+  type ASPxClientCardViewCardFocusingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewCardFocusingEventArgs, Unit]
   /**
     * A method that will handle the cancelable events of a client ASPxCardView column.
+    * @param source The event source. This parameter identifies the ASPxClientCardView object that raised the event.
+    * @param e An ASPxClientCardViewColumnCancelEventArgs object that contains event data.
     */
-  type ASPxClientCardViewColumnCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewColumnCancelEventArgs, Unit]
+  type ASPxClientCardViewColumnCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewColumnCancelEventArgs, Unit]
   /**
-    * A method that will handle the CustomButtonClick event.
+    * A method that will handle the ASPxClientCardView.CustomButtonClick event.
+    * @param source The event source.
+  This parameter identifies the ASPxClientCardView object that raised the event.
+    * @param e An ASPxClientCardViewCustomButtonEventArgs object that contains event data.
     */
-  type ASPxClientCardViewCustomButtonEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewCustomButtonEventArgs, Unit]
+  type ASPxClientCardViewCustomButtonEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewCustomButtonEventArgs, Unit]
   /**
-    * Lists values that specify the document formats available for export from the grid.
+    * Represents a method that will handle the ASPxClientCardView.FocusedCardChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewFocusEventArgs object which contains event data.
     */
-  type ASPxClientCardViewExportFormat = ASPxClientGridExportFormat
-  type ASPxClientCardViewExportFormatStatic = ASPxClientGridExportFormatStatic
+  type ASPxClientCardViewFocusEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewFocusEventArgs, Unit]
   /**
-    * A method that will handle the client FocusedCardChanged event.
+    * A method that will handle the ASPxClientCardView.FocusedCellChanging event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewFocusedCellChangingEventArgs object that contains event data.
     */
-  type ASPxClientCardViewFocusEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewFocusEventArgs, Unit]
+  type ASPxClientCardViewFocusedCellChangingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewFocusedCellChangingEventArgs, Unit]
   /**
-    * A method that will handle the FocusedCellChanging event.
+    * A method that will handle the ASPxClientCardView.GroupRowCollapsing and ASPxClientCardView.GroupRowExpanding events.
+    * @param source The event source.
+    * @param e A ASPxClientCardViewGroupCancelEventArgs object that contains event data.
     */
-  type ASPxClientCardViewFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewFocusedCellChangingEventArgs, Unit]
-  type ASPxClientCardViewGroupCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewGroupCancelEventArgs, Unit]
+  type ASPxClientCardViewGroupCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewGroupCancelEventArgs, Unit]
   /**
-    * A method that will handle the SelectionChanged event.
+    * A method that will handle the ASPxClientCardView.SelectionChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientCardViewSelectionEventArgs object that contains event data.
     */
-  type ASPxClientCardViewSelectionEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewSelectionEventArgs, Unit]
+  type ASPxClientCardViewSelectionEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCardViewSelectionEventArgs, Unit]
   /**
-    * Represents a JavaScript function which receives the list of card values when the client GetSelectedFieldValues method is called.
+    * Represents a JavaScript function which receives the list of card values when the client ASPxClientCardView.GetCardValues, ASPxCardView.GetCurrentPageCardValues or ASPxClientCardView.GetSelectedFieldValues method is called.
+    * @param result An object that represents the list of card values received from the server.
     */
-  type ASPxClientCardViewValuesCallback = js.Function1[/* result */ js.Object, Unit]
+  type ASPxClientCardViewValuesCallback = js.Function1[/* result */ js.Any, Unit]
+  type ASPxClientChartDesignerCustomizeMenuActionsEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientChartDesignerCustomizeMenuActionsEventArgs, 
+    Unit
+  ]
+  type ASPxClientChartDesignerSaveCommandExecuteEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientChartDesignerSaveCommandExecuteEventArgs, 
+    Unit
+  ]
   /**
-    * Represents a method that will handle the CustomizeMenuActions events.
+    * A method that will handle the ASPxClientPivotGrid.CellClick or ASPxClientPivotGrid.CellDblClick event.
+    * @param source The event source.
+    * @param e An ASPxClientClickEventArgs object that contains event data.
     */
-  type ASPxClientChartDesignerCustomizeMenuActionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientChartDesignerCustomizeMenuActionsEventArgs, Unit]
+  type ASPxClientClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientClickEventArgs, Unit]
   /**
-    * A method that will handle the SaveCommandExecute  event.
+    * A method that will handle client events concerning manipulations with items.
+    * @param source The event source. This parameter identifies the cloud control object which raised the event.
+    * @param e An ASPxClientCloudControlItemEventArgs object that contains event data.
     */
-  type ASPxClientChartDesignerSaveCommandExecuteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientChartDesignerSaveCommandExecuteEventArgs, Unit]
+  type ASPxClientCloudControlItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCloudControlItemEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ChartTitle class.
+    * Represents a JavaScript function which receives the action to perform for a control when the client ASPxClientControlCollection.ForEachControl method is called.
+    * @param control An object that specifies a control.
     */
-  type ASPxClientChartTitle = ASPxClientTitleBase
-  type ASPxClientCheckListBaseStatic = ASPxClientListEditStatic
+  type ASPxClientControlAction = js.Function1[/* control */ js.Any, Unit]
   /**
-    * A method that will handle the CellDblClick event.
+    * A JavaScript function which returns a value specifying whether an object meets the criteria defined within the method specified by this delegate. true if the object meets the criteria; otherwise, false.
+    * @param control An object to compare against the criteria defined within the method.
     */
-  type ASPxClientClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientClickEventArgs, Unit]
+  type ASPxClientControlPredicate = js.Function1[/* control */ js.Any, Boolean]
   /**
-    * A method that will handle client events involving manipulations with the control's items.
+    * A method that will handle the client ASPxClientControlCollection.ControlsInitialized event.
+    * @param source An object representing the event source.
+    * @param e An ASPxClientControlsInitializedEventArgs object that contains event data.
     */
-  type ASPxClientCloudControlItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCloudControlItemEventArgs, Unit]
+  type ASPxClientControlsInitializedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientControlsInitializedEventArgs, Unit]
   /**
-    * Represents a JavaScript function which receives the action to perform for a control when the client ForEachControl method is called.
+    * A method that will handle the client CustomCallback event of some controls.
+    * @param source An object representing the event source.
+    * @param e An ASPxClientCustomDataCallbackEventHandler&lt;Sender&gt; object that contains event data.
     */
-  type ASPxClientControlAction = js.Function1[/* control */ js.Object, Unit]
+  type ASPxClientCustomDataCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomDataCallbackEventArgs, Unit]
   /**
-    * A JavaScript function which returns a value specifying whether an object meets the criteria defined within the method specified by this delegate.
+    * References a method that handles the ASPxClientDashboard.BeforeRender event.
+    * @param source The event source.
+    * @param e An ASPxClientEventArgs object that contains event data.
     */
-  type ASPxClientControlPredicate = js.Function1[/* control */ js.Object, Boolean]
+  type ASPxClientDashboardBeforeRenderEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEventArgs, Unit]
   /**
-    * A method that will handle the client ControlsInitialized event.
+    * References a method that handles the ASPxClientDashboard.DashboardBeginUpdate event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardBeginUpdateEventArgs object that contains event data.
     */
-  type ASPxClientControlsInitializedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientControlsInitializedEventArgs, Unit]
+  type ASPxClientDashboardBeginUpdateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardBeginUpdateEventArgs, Unit]
   /**
-    * The client-side equivalent of the CrosshairMousePosition class.
+    * References a method that handles the ASPxClientDashboard.DashboardChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardChangedEventArgs object that contains event data.
     */
-  type ASPxClientCrosshairMousePosition = ASPxClientCrosshairPosition
+  type ASPxClientDashboardChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardChangedEventArgs, Unit]
   /**
-    * A method that will handle a CustomCallback client event exposed by some DevExpress web controls.
+    * References a method that handles the ASPxClientDashboard.DashboardEndUpdate event.
+    * @param source The event source.
+    * @param e An ASPxClientDashboardEndUpdateEventArgs object that contains event data.
     */
-  type ASPxClientCustomDataCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomDataCallbackEventArgs, Unit]
-  type ASPxClientDailyRecurrenceControlStatic = ASPxClientRecurrenceControlBaseStatic
+  type ASPxClientDashboardEndUpdateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardEndUpdateEventArgs, Unit]
   /**
-    * References a method that will handle the ActionAvailabilityChanged event.
+    * References a method that handles the ASPxClientDashboard.DashboardInitialized event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardInitializedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardActionAvailabilityChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardActionAvailabilityChangedEventArgs, Unit]
+  type ASPxClientDashboardInitializedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardInitializedEventArgs, Unit]
   /**
-    * References a method that will handle the BeforeRender event.
+    * References a method that handles the ASPxClientDashboard.DashboardInitializing event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardInitializingEventArgs object that contains event data.
     */
-  type ASPxClientDashboardBeforeRenderEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEventArgs, Unit]
+  type ASPxClientDashboardInitializingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardInitializingEventArgs, Unit]
   /**
-    * References a method that will handle the DashboardBeginUpdate event.
+    * References a method that handles the ASPxClientDashboard.ItemBeforeWidgetDisposed event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemWidgetEventArgs object that contains event data.
     */
-  type ASPxClientDashboardBeginUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardBeginUpdateEventArgs, Unit]
+  type ASPxClientDashboardItemBeforeWidgetDisposedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
   /**
-    * References a method that will handle the DashboardChanged event.
+    * References a method that handles the ASPxClientDashboard.ItemCaptionToolbarUpdated event.
+    * @param source The event source.
+    * @param e The ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardChangedEventArgs, Unit]
+  type ASPxClientDashboardItemCaptionToolbarUpdatedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs, 
+    Unit
+  ]
   /**
-    * References a method that will handle the DataLoadingError event.
+    * References a method that handles the ASPxClientDashboard.ItemClick event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemClickEventArgs object that contains event data.
     */
-  type ASPxClientDashboardDataLoadingErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardDataLoadingErrorEventArgs, Unit]
+  type ASPxClientDashboardItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemClickEventArgs, Unit]
   /**
-    * References a method that will handle the DrillDownPerformed event.
+    * References a method that handles the ASPxClientDashboard.ItemDrillDownStateChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientDashboardItemDrillDownStateChangedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardDrillDownPerformedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardDrillDownPerformedEventArgs, Unit]
+  type ASPxClientDashboardItemDrillDownStateChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDashboardItemDrillDownStateChangedEventArgs, 
+    Unit
+  ]
   /**
-    * References a method that will handle the DrillUpPerformed event.
+    * References a method that handles the ASPxClientDashboard.ItemElementCustomColor event.
+    * @param source The event source.
+    * @param e An ASPxClientDashboardItemElementCustomColorEventArgs object that contains event data.
     */
-  type ASPxClientDashboardDrillUpPerformedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardDrillUpPerformedEventArgs, Unit]
+  type ASPxClientDashboardItemElementCustomColorEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDashboardItemElementCustomColorEventArgs, 
+    Unit
+  ]
   /**
-    * References a method that will handle the DashboardEndUpdate event.
+    * References a method that handles the ASPxClientDashboard.ItemMasterFilterStateChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientDashboardItemMasterFilterStateChangedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardEndUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardEndUpdateEventArgs, Unit]
-  type ASPxClientDashboardInitializedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardInitializedEventArgs, Unit]
-  type ASPxClientDashboardItemBeforeWidgetDisposedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemCaptionToolbarUpdated event.
-    */
-  type ASPxClientDashboardItemCaptionToolbarUpdatedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemClick events.
-    */
-  type ASPxClientDashboardItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemClickEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemDrillDownStateChanged event.
-    */
-  type ASPxClientDashboardItemDrillDownStateChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemDrillDownStateChangedEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemElementCustomColor event.
-    */
-  type ASPxClientDashboardItemElementCustomColorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemElementCustomColorEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemMasterFilterStateChanged event.
-    */
-  type ASPxClientDashboardItemMasterFilterStateChangedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientDashboardItemMasterFilterStateChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientDashboardItemMasterFilterStateChangedEventArgs, 
     Unit
   ]
   /**
     * References a method executed after an asynchronous request is complete.
+    * @param data An object that contains a list of records from the dashboard data source.
     */
   type ASPxClientDashboardItemRequestUnderlyingDataCompleted = js.Function1[/* data */ ASPxClientDashboardItemUnderlyingData, Unit]
   /**
-    * References a method that will handle the ItemSelectionChanged events.
+    * References a method that handles the ASPxClientDashboard.ItemSelectionChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemSelectionChangedEventArgs object containing event data.
     */
-  type ASPxClientDashboardItemSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemSelectionChangedEventArgs, Unit]
+  type ASPxClientDashboardItemSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemSelectionChangedEventArgs, Unit]
   /**
-    * References a method that will handle the ItemVisualInteractivity events.
+    * References a method that handles the ASPxClientDashboard.ItemVisualInteractivity event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemVisualInteractivityEventArgs object containing event data.
     */
-  type ASPxClientDashboardItemVisualInteractivityEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemVisualInteractivityEventArgs, Unit]
+  type ASPxClientDashboardItemVisualInteractivityEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDashboardItemVisualInteractivityEventArgs, 
+    Unit
+  ]
   /**
-    * References a method that will handle the ItemWidgetCreated events.
+    * References a method that handles the ASPxClientDashboard.ItemWidgetCreated event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemWidgetEventArgs object that contains event data.
     */
-  type ASPxClientDashboardItemWidgetCreatedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
+  type ASPxClientDashboardItemWidgetCreatedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
   /**
-    * References a method that will handle the ItemWidgetUpdated event.
+    * References a method that handles the ASPxClientDashboard.ItemWidgetUpdated event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemWidgetEventArgs object that contains event data.
     */
-  type ASPxClientDashboardItemWidgetUpdatedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
+  type ASPxClientDashboardItemWidgetUpdatedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
   /**
-    * References a method that will handle the ItemWidgetUpdating event.
+    * References a method that handles the ASPxClientDashboard.ItemWidgetUpdating event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardItemWidgetEventArgs object that contains event data.
     */
-  type ASPxClientDashboardItemWidgetUpdatingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
+  type ASPxClientDashboardItemWidgetUpdatingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardItemWidgetEventArgs, Unit]
   /**
-    * References a method that will handle the MasterFilterCleared event.
+    * References a method that handles the ASPxClientDashboard.DashboardStateChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardStateChangedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardMasterFilterClearedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardMasterFilterClearedEventArgs, Unit]
+  type ASPxClientDashboardStateChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardStateChangedEventArgs, Unit]
   /**
-    * References a method that will handle the MasterFilterSet event.
+    * References a method that handles the ASPxClientDashboard.DashboardTitleToolbarUpdated event.
+    * @param source The event source.
+    * @param e A ASPxClientDashboardTitleToolbarUpdatedEventArgs object that contains event data.
     */
-  type ASPxClientDashboardMasterFilterSetEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardMasterFilterSetEventArgs, Unit]
+  type ASPxClientDashboardTitleToolbarUpdatedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDashboardTitleToolbarUpdatedEventArgs, Unit]
   /**
-    * References a method that will handle the DashboardStateChanged event.
+    * A JavaScript function which receives a callback data obtained via a call to a specific client method (such as the ASPxClientHtmlEditor.PerformDataCallback).
+    * @param sender An object whose client method generated a callback.
+    * @param result A string value that represents the result of server-side callback processing.
     */
-  type ASPxClientDashboardStateChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardStateChangedEventArgs, Unit]
-  type ASPxClientDashboardStatic = ASPxClientControlStatic
+  type ASPxClientDataCallback = js.Function2[/* sender */ js.Any, /* result */ String, Unit]
   /**
-    * References a method that will handle the DashboardTitleToolbarUpdated event.
+    * A method that will handle the ASPxClientDateNavigator.DayCellCustomHighlight event.
+    * @param source The event source.
+    * @param e A ASPxClientDateNavigatorDayCellCustomHighlightEventArgs object that contains event data.
     */
-  type ASPxClientDashboardTitleToolbarUpdatedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardTitleToolbarUpdatedEventArgs, Unit]
+  type ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDateNavigatorDayCellCustomHighlightEventArgs, 
+    Unit
+  ]
   /**
-    * Represents a JavaScript function which receives callback data obtained via a call to a specific client method (such as the PerformDataCallback).
+    * A method that will handle the ASPxClientDateNavigator.SelectionChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientDateNavigatorSelectionChangedEventArgs object that contains event data.
     */
-  type ASPxClientDataCallback = js.Function2[/* sender */ js.Object, /* result */ String, Unit]
+  type ASPxClientDateNavigatorSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDateNavigatorSelectionChangedEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the DataSourceBasedErrorBars class.
+    * A method that will handle the ASPxClientDateNavigator.VisibleMonthChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientDateNavigatorVisibleMonthChangedEventArgs object that contains event data.
     */
-  type ASPxClientDataSourceBasedErrorBars = ASPxClientIndicator
-  type ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDateNavigatorDayCellCustomHighlightEventArgs, Unit]
-  type ASPxClientDateNavigatorSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDateNavigatorSelectionChangedEventArgs, Unit]
-  type ASPxClientDateNavigatorStatic = ASPxClientControlStatic
-  type ASPxClientDateNavigatorVisibleMonthChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDateNavigatorVisibleMonthChangedEventArgs, Unit]
+  type ASPxClientDateNavigatorVisibleMonthChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDateNavigatorVisibleMonthChangedEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client BeforeDock event.
+    * A method that will handle the ASPxClientDockManager.PanelClosing event.
+    * @param source The event source. This parameter identifies the dock manager object which raised the event.
+    * @param e An ASPxClientDockManagerCancelEventArgs object that contains event data.
     */
-  type ASPxClientDockManagerCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockManagerCancelEventArgs, Unit]
+  type ASPxClientDockManagerCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockManagerCancelEventArgs, Unit]
   /**
     * A method that will handle client-side events concerning manipulations with panels.
+    * @param source The event source. This parameter identifies the dock manager object which raised the event.
+    * @param e An ASPxClientDockManagerEventArgs object that contains event data.
     */
-  type ASPxClientDockManagerEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockManagerEventArgs, Unit]
+  type ASPxClientDockManagerEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockManagerEventArgs, Unit]
   /**
-    * A method that will handle the client BeforeDock event.
+    * A method that will handle the ASPxClientDockManager.BeforeDock event.
+    * @param source The event source. This parameter identifies the dock manager object which raised the event.
+    * @param e An ASPxClientDockManagerProcessingModeCancelEventArgs object that contains event data.
     */
-  type ASPxClientDockManagerProcessingModeCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockManagerProcessingModeCancelEventArgs, Unit]
+  type ASPxClientDockManagerProcessingModeCancelEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientDockManagerProcessingModeCancelEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client AfterDock event.
+    * A method that will handle the ASPxClientDockManager.AfterDock event.
+    * @param source The event source. This parameter identifies the dock manager object which raised the event.
+    * @param e An ASPxClientDockManagerProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientDockManagerProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockManagerProcessingModeEventArgs, Unit]
+  type ASPxClientDockManagerProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockManagerProcessingModeEventArgs, Unit]
   /**
-    * A method that will handle the client BeforeDock event.
+    * A method that will handle the ASPxClientDockPanel.BeforeDock event.
+    * @param source A ASPxClientDockPanel object that raised the event.
+    * @param e A ASPxClientDockPanelProcessingModeCancelEventArgs object that contains event data.
     */
-  type ASPxClientDockPanelProcessingModeCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockPanelProcessingModeCancelEventArgs, Unit]
+  type ASPxClientDockPanelProcessingModeCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockPanelProcessingModeCancelEventArgs, Unit]
   /**
-    * A method that will handle the client BeforeDock event.
+    * A method that will handle the ASPxClientDockPanel.AfterFloat event.
+    * @param source A ASPxClientDockPanel object that raised the event.
+    * @param e A ASPxClientDockPanelProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientDockPanelProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockPanelProcessingModeEventArgs, Unit]
+  type ASPxClientDockPanelProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockPanelProcessingModeEventArgs, Unit]
   /**
-    * A method that will handle the client BeforeDock event.
+    * A method that will handle the ASPxClientDockZone.BeforeDock event.
+    * @param source The event source. This parameter identifies the zone object which raised the event.
+    * @param e A ASPxClientDockZoneCancelEventArgs object that contains event data.
     */
-  type ASPxClientDockZoneCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockZoneCancelEventArgs, Unit]
+  type ASPxClientDockZoneCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockZoneCancelEventArgs, Unit]
   /**
-    * A method that will handle the client AfterDock event.
+    * A method that will handle the ASPxClientDockZone.AfterDock event.
+    * @param source The event source. This parameter identifies the zone object which raised the event.
+    * @param e An  ASPxClientDockZoneProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientDockZoneProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDockZoneProcessingModeEventArgs, Unit]
+  type ASPxClientDockZoneProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDockZoneProcessingModeEventArgs, Unit]
   /**
-    * A JavaScript function which returns a value specifying whether an object meets the criteria defined within the method specified by this delegate.
+    * A JavaScript function which returns a value specifying whether an object meets the criteria defined within the method specified by this delegate. true if the object meets the criteria; otherwise, false.
+    * @param item An object to compare against the criteria defined within the method.
     */
-  type ASPxClientDockingFilterPredicate = js.Function1[/* item */ js.Object, Boolean]
-  type ASPxClientDropDownCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDropDownCommandEventArgs, Unit]
-  type ASPxClientDropDownEditBaseStatic = ASPxClientButtonEditBaseStatic
+  type ASPxClientDockingFilterPredicate = js.Function1[/* item */ js.Any, Boolean]
   /**
-    * References a method that will handle the DynamicLookUpValuesLoaded event.
+    * A method that will handle the ASPxClientDropDownEdit.DropDownCommandButtonClick event.
+    * @param source The event source.
+    * @param e A ASPxClientDropDownCommandEventArgs object that contains event data.
     */
-  type ASPxClientDynamicLookUpValuesLoadedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDynamicLookUpValuesLoadedEventArgs, Unit]
-  type ASPxClientEditBaseStatic = ASPxClientControlStatic
+  type ASPxClientDropDownCommandEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDropDownCommandEventArgs, Unit]
+  /**
+    * References a method that handles the ASPxClientDashboard.DynamicLookUpValuesLoaded event.
+    * @param source The event source.
+    * @param e A ASPxClientDynamicLookUpValuesLoadedEventArgs object that contains event data.
+    */
+  type ASPxClientDynamicLookUpValuesLoadedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientDynamicLookUpValuesLoadedEventArgs, Unit]
   /**
     * A method that will handle client-side events which concern clicking within editors.
+    * @param source An object representing the event source. Identifies the editor that raised the event.
+    * @param e An ASPxClientEditClickEventArgs object that contains event data.
     */
-  type ASPxClientEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEditClickEventArgs, Unit]
+  type ASPxClientEditEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEditClickEventArgs, Unit]
   /**
-    * A method that will handle the client events involving a keyboard key being pressed or released.
+    * A method that will handle the client events concerning a keyboard key being pressed.
+    * @param source The event source. This parameter identifies the editor which raised the event.
+    * @param e An ASPxClientEditKeyEventArgs object that contains event data.
     */
-  type ASPxClientEditKeyEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEditKeyEventArgs, Unit]
+  type ASPxClientEditKeyEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEditKeyEventArgs, Unit]
   /**
     * A method that will handle client validation events.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientEditValidationEventArgs object that contains event data.
     */
-  type ASPxClientEditValidationEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEditValidationEventArgs, Unit]
+  type ASPxClientEditValidationEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEditValidationEventArgs, Unit]
   /**
-    * Provides data for client events related to the completion of a callback processing round trip.
+    * A method that will handle client EndCallback events.
+    * @param source An object representing the event source.
+    * @param e A MenuItemEventArgs object that contains event data.
     */
-  type ASPxClientEndCallbackEventArgs = ASPxClientEventArgs
-  /**
-    * A method that will handle the client events related to the completion of a callback processing round trip.
-    */
-  type ASPxClientEndCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEndCallbackEventArgs, Unit]
+  type ASPxClientEndCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEndCallbackEventArgs, Unit]
   /**
     * A method that will handle the client-side events of a web control's client-side equivalent.
+    * @param source An object representing the event source. Identifies the control that raised the event.
+    * @param e An ASPxClientEventArgs object that contains event data.
     */
-  type ASPxClientEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientEventArgs, Unit]
+  type ASPxClientEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientEventArgs, Unit]
   /**
-    * The client-side equivalent of the ExponentialMovingAverage class.
-    */
-  type ASPxClientExponentialMovingAverage = ASPxClientMovingAverage
-  /**
-    * Represents the client-side equivalent of the FibonacciIndicator class.
-    */
-  type ASPxClientFibonacciIndicator = ASPxClientFinancialIndicator
-  /**
-    * A JavaScript function which receives callback data obtained by a call to the client GetAllItems method.
+    * A JavaScript function which receives callback data obtained by a call to the client ASPxClientFileManager.GetAllItems method.
+    * @param items An array of ASPxClientFileManagerItem objects that are items contained in the current folder.
     */
   type ASPxClientFileManagerAllItemsCallback = js.Function1[/* items */ js.Array[ASPxClientFileManagerItem], Unit]
   /**
-    * A JavaScript function which receives callback data obtained via a call to the client SetCurrentFolderPath method.
+    * A JavaScript function that receives callback data obtained via a call to the ASPxClientFileManager.SetCurrentFolderPath method.
+    * @param result An object that contains a callback data.
     */
-  type ASPxClientFileManagerCallback = js.Function1[/* result */ js.Object, Unit]
+  type ASPxClientFileManagerCallback = js.Function1[/* result */ js.Any, Unit]
   /**
-    * A method that will handle the client CurrentFolderChanged event.
+    * A method that will handle the ASPxClientFileManager.CurrentFolderChanged event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerCurrentFolderChangedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerCurrentFolderChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerCurrentFolderChangedEventArgs, Unit]
+  type ASPxClientFileManagerCurrentFolderChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFileManagerCurrentFolderChangedEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CustomCommand event.
+    * A method that will handle the ASPxClientFileManager.CustomCommand event.
+    * @param source The event source.
+    * @param e An ASPxClientFileManagerCustomCommandEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerCustomCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerCustomCommandEventArgs, Unit]
+  type ASPxClientFileManagerCustomCommandEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerCustomCommandEventArgs, Unit]
   /**
-    * A method that will handle the client ErrorAlertDisplaying event.
+    * A method that will handle the ASPxClientFileManager.ErrorAlertDisplaying event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerErrorAlertDisplayingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerErrorAlertDisplayingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerErrorAlertDisplayingEventArgs, Unit]
+  type ASPxClientFileManagerErrorAlertDisplayingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFileManagerErrorAlertDisplayingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client ErrorOccurred event.
+    * A method that will handle the client ASPxClientFileManager.ErrorOccurred event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientFileManagerErrorEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerErrorEventArgs, Unit]
+  type ASPxClientFileManagerErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerErrorEventArgs, Unit]
   /**
-    * A method that will handle the client FileDownloading event.
+    * A method that will handle the ASPxClientFileManager.FileDownloading event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFileDownloadingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFileDownloadingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFileDownloadingEventArgs, Unit]
+  type ASPxClientFileManagerFileDownloadingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFileDownloadingEventArgs, Unit]
   /**
-    * A method that will handle the client SelectedFileOpened events.
+    * A method that will handle the ASPxClientFileManager.SelectedFileChanged and ASPxClientFileManager.SelectedFileOpened events.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientFileManagerFileEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFileEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFileEventArgs, Unit]
+  type ASPxClientFileManagerFileEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFileEventArgs, Unit]
   /**
-    * A method that will handle the client SelectedFileOpened event.
+    * A method that will handle the ASPxClientFileManager.SelectedFileOpened event.
+    * @param source The event source. This parameter identifies the file manager object which raised the event.
+    * @param e An ASPxClientFileManagerFileOpenedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFileOpenedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFileOpenedEventArgs, Unit]
+  type ASPxClientFileManagerFileOpenedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFileOpenedEventArgs, Unit]
   /**
-    * A method that will handle the client FileUploaded event.
+    * A method that will handle the ASPxClientFileManager.FileUploaded event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFileUploadedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFileUploadedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFileUploadedEventArgs, Unit]
+  type ASPxClientFileManagerFileUploadedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFileUploadedEventArgs, Unit]
   /**
-    * A method that will handle the client FileUploading event.
+    * A method that will handle the ASPxClientFileManager.FileUploading event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFileUploadingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFileUploadingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFileUploadingEventArgs, Unit]
+  type ASPxClientFileManagerFileUploadingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFileUploadingEventArgs, Unit]
   /**
-    * A method that will handle the client FilesUploaded event.
+    * A method that will handle the ASPxClientFileManager.FilesUploaded event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFilesUploadedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFilesUploadedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFilesUploadedEventArgs, Unit]
+  type ASPxClientFileManagerFilesUploadedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFilesUploadedEventArgs, Unit]
   /**
-    * A method that will handle the client FilesUploading event.
+    * A method that will handle the ASPxClientFileManager.FilesUploading event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFilesUploadingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFilesUploadingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFilesUploadingEventArgs, Unit]
+  type ASPxClientFileManagerFilesUploadingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFilesUploadingEventArgs, Unit]
   /**
-    * A method that will handle the client FocusedItemChanged event.
+    * A method that will handle the ASPxClientFileManager.FocusedItemChanged event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerFocusedItemChangedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerFocusedItemChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerFocusedItemChangedEventArgs, Unit]
+  type ASPxClientFileManagerFocusedItemChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerFocusedItemChangedEventArgs, Unit]
   /**
-    * A method that will handle the client HighlightItemTemplate event.
+    * A method that will handle the ASPxClientFileManager.HighlightItemTemplate event.
+    * @param source The event source. This parameter identifies the file manager object that raised the event.
+    * @param e An ASPxClientFileManagerHighlightItemTemplateEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerHighlightItemTemplateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerHighlightItemTemplateEventArgs, Unit]
+  type ASPxClientFileManagerHighlightItemTemplateEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFileManagerHighlightItemTemplateEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client ItemCopied event.
+    * A method that will handle the ASPxClientFileManager.ItemCopied event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemCopiedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemCopiedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemCopiedEventArgs, Unit]
+  type ASPxClientFileManagerItemCopiedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemCopiedEventArgs, Unit]
   /**
-    * Provides data for the FolderCreated event.
+    * A method that will handle the ASPxClientFileManager.FolderCreated event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemCreatedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemCreatedEventArgs = ASPxClientFileManagerActionEventArgsBase
+  type ASPxClientFileManagerItemCreatedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemCreatedEventArgs, Unit]
   /**
-    * A method that will handle the client FolderCreated event.
+    * A method that will handle the ASPxClientFileManager.ItemDeleted event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemDeletedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemCreatedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemCreatedEventArgs, Unit]
+  type ASPxClientFileManagerItemDeletedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemDeletedEventArgs, Unit]
   /**
-    * Provides data for the ItemDeleted event.
+    * A method that will handle the ASPxClientFileManager.FolderCreating, ASPxClientFileManager.ItemCopying, ASPxClientFileManager.ItemDeleting, ASPxClientFileManager.ItemMoving, and ASPxClientFileManager.ItemRenaming events.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemEditingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemDeletedEventArgs = ASPxClientFileManagerActionEventArgsBase
+  type ASPxClientFileManagerItemEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemEditingEventArgs, Unit]
   /**
-    * A method that will handle the client ItemDeleted event.
+    * A method that will handle the ASPxClientFileManager.ItemMoved event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemMovedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemDeletedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemDeletedEventArgs, Unit]
+  type ASPxClientFileManagerItemMovedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemMovedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemRenaming events.
+    * A method that will handle the ASPxClientFileManager.ItemRenamed event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemRenamedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemEditingEventArgs, Unit]
+  type ASPxClientFileManagerItemRenamedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemRenamedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemMoved event.
+    * A method that will handle the ASPxClientFileManager.ItemsCopied event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemsCopiedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemMovedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemMovedEventArgs, Unit]
+  type ASPxClientFileManagerItemsCopiedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemsCopiedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemRenamed event.
+    * A method that will handle the ASPxClientFileManager.ItemsDeleted event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemsDeletedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemRenamedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemRenamedEventArgs, Unit]
+  type ASPxClientFileManagerItemsDeletedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemsDeletedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemsCopied event.
+    * A method that will handle the ASPxClientFileManager.ItemsMoved event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerItemsMovedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemsCopiedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemsCopiedEventArgs, Unit]
+  type ASPxClientFileManagerItemsMovedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerItemsMovedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemsDeleted event.
+    * A method that will handle the ASPxClientFileManager.SelectionChanged event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientFileManagerSelectionChangedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemsDeletedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemsDeletedEventArgs, Unit]
+  type ASPxClientFileManagerSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerSelectionChangedEventArgs, Unit]
   /**
-    * A method that will handle the client ItemsMoved event.
+    * A method that will handle the ASPxClientFileManager.ToolbarUpdating event.
+    * @param source The event source.
+    * @param e An ASPxClientFileManagerToolbarUpdatingEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerItemsMovedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerItemsMovedEventArgs, Unit]
+  type ASPxClientFileManagerToolbarUpdatingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFileManagerToolbarUpdatingEventArgs, Unit]
   /**
-    * A method that will handle the client SelectionChanged event.
+    * A method that will handle the ASPxClientFilterControl.Applied event.
+    * @param source The event source.
+    * @param e An ASPxClientFilterAppliedEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerSelectionChangedEventArgs, Unit]
+  type ASPxClientFilterAppliedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFilterAppliedEventArgs, Unit]
   /**
-    * A method that will handle the ToolbarUpdating event.
+    * A method that will handle the ASPxClientObjectContainer.FlashScriptCommand event.
+    * @param source The event source.
+    * @param e A ASPxClientFlashScriptCommandEventArgs object that contains event data.
     */
-  type ASPxClientFileManagerToolbarUpdatingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFileManagerToolbarUpdatingEventArgs, Unit]
+  type ASPxClientFlashScriptCommandEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientFlashScriptCommandEventArgs, Unit]
   /**
-    * A method that will handle the Applied event.
+    * A method that will handle the ActionCollapsing event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientFilterAppliedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFilterAppliedEventArgs, Unit]
-  /**
-    * A method that will handle the FlashScriptCommand event.
-    */
-  type ASPxClientFlashScriptCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFlashScriptCommandEventArgs, Unit]
-  type ASPxClientFloatingActionButtonActionCollapsingEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientFloatingActionButtonActionCollapsingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientFloatingActionButtonActionCollapsingEventArgs, 
     Unit
   ]
-  type ASPxClientFloatingActionButtonActionExpandingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFloatingActionButtonActionExpandingEventArgs, Unit]
-  type ASPxClientFloatingActionButtonActionItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFloatingActionButtonActionItemClickEventArgs, Unit]
-  type ASPxClientFloatingActionButtonContextChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFloatingActionButtonContextChangingEventArgs, Unit]
-  type ASPxClientFloatingActionButtonStatic = ASPxClientControlStatic
   /**
-    * A method that will handle the BeginCallback event.
+    * A method that will handle the ActionExpanding event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientGlobalBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGlobalBeginCallbackEventArgs, Unit]
+  type ASPxClientFloatingActionButtonActionExpandingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFloatingActionButtonActionExpandingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CallbackError event.
+    * A method that will handle the ASPxClientFloatingActionButton.ActionItemClick event.
+    * @param source The event source.
+    * @param e A ASPxClientFloatingActionButtonActionItemClickEventArgs object that contains event data.
     */
-  type ASPxClientGlobalCallbackErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGlobalCallbackErrorEventArgs, Unit]
+  type ASPxClientFloatingActionButtonActionItemClickEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFloatingActionButtonActionItemClickEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the EndCallback event.
+    * A method that will handle the ASPxClientFloatingActionButton.ContextChanging event.
+    * @param source The event source.
+    * @param e A ASPxClientFloatingActionButtonContextChangingEventArgs object that contains event data.
     */
-  type ASPxClientGlobalEndCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGlobalEndCallbackEventArgs, Unit]
-  type ASPxClientGridBaseStatic = ASPxClientControlStatic
+  type ASPxClientFloatingActionButtonContextChangingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientFloatingActionButtonContextChangingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the ToolbarItemClick event.
+    * A method that will handle the ASPxClientGlobalEvents.BeginCallback event.
+    * @param source The event source.
+    * @param e An ASPxDataValidationEventArgs object that contains event data.
     */
-  type ASPxClientGridToolbarItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridToolbarItemClickEventArgs, Unit]
+  type ASPxClientGlobalBeginCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGlobalBeginCallbackEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditChangesCanceling event.
+    * A method that will handle the ASPxClientGlobalEvents.CallbackError event.
+    * @param source The event source.
+    * @param e An ASPxDataValidationEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditChangesCancelingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditChangesCancelingEventArgs, Unit]
+  type ASPxClientGlobalCallbackErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGlobalCallbackErrorEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditChangesSaving event.
+    * A method that will handle the ASPxClientGlobalEvents.EndCallback event.
+    * @param source The event source.
+    * @param e An ASPxDataValidationEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditChangesSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditChangesSavingEventArgs, Unit]
+  type ASPxClientGlobalEndCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGlobalEndCallbackEventArgs, Unit]
   /**
-    * Represents an object that will handle the client-side BatchEditConfirmShowing event.
+    * A method that will handle the ASPxClientGridBase.ToolbarItemClick event.
+    * @param source The event source.
+    * @param e An ASPxClientGridToolbarItemClickEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditConfirmShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditConfirmShowingEventArgs, Unit]
+  type ASPxClientGridToolbarItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridToolbarItemClickEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditEndEditing event.
+    * A method that will handle the ASPxClientGridView.BatchEditChangesCanceling event.
+    * @param source The event source. This parameter identifies the grid view object which raised the event.
+    * @param e An ASPxClientGridViewBatchEditChangesCancelingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditEndEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditEndEditingEventArgs, Unit]
+  type ASPxClientGridViewBatchEditChangesCancelingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientGridViewBatchEditChangesCancelingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditRowDeleting event.
+    * A method that will handle the ASPxClientGridView.BatchEditChangesSaving event.
+    * @param source The event source. This parameter identifies the grid view object which raised the event.
+    * @param e An ASPxClientGridViewBatchEditChangesSavingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditRowDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditRowDeletingEventArgs, Unit]
+  type ASPxClientGridViewBatchEditChangesSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditChangesSavingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditRowInserting event.
+    * A method that will handle the ASPxClientGridView.BatchEditConfirmShowing client event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewBatchEditConfirmShowingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditRowInsertingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditRowInsertingEventArgs, Unit]
+  type ASPxClientGridViewBatchEditConfirmShowingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientGridViewBatchEditConfirmShowingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditRowRecovering event.
+    * A method that will handle the ASPxClientGridView.BatchEditEndEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewBatchEditEndEditingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditRowRecoveringEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditRowRecoveringEventArgs, Unit]
+  type ASPxClientGridViewBatchEditEndEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditEndEditingEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditRowValidating event.
+    * A method that will handle the ASPxClientGridView.BatchEditRowDeleting event.
+    * @param source The event source. This parameter identifies the grid view object which raised the event.
+    * @param e An ASPxClientGridViewBatchEditRowDeletingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditRowValidatingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditRowValidatingEventArgs, Unit]
+  type ASPxClientGridViewBatchEditRowDeletingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditRowDeletingEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditStartEditing event.
+    * A method that will handle the ASPxClientGridView.BatchEditRowInserting event.
+    * @param source The event source. This parameter identifies the card view object which raised the event.
+    * @param e An ASPxClientGridViewBatchEditRowInsertingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditStartEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditStartEditingEventArgs, Unit]
+  type ASPxClientGridViewBatchEditRowInsertingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditRowInsertingEventArgs, Unit]
   /**
-    * A method that will handle the client BatchEditTemplateCellFocused event.
+    * A method that will handle the ASPxClientGridView.BatchEditRowRecovering event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewBatchEditRowRecoveringEventArgs object that contains event data.
     */
-  type ASPxClientGridViewBatchEditTemplateCellFocusedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientGridViewBatchEditRowRecoveringEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditRowRecoveringEventArgs, Unit]
+  /**
+    * A method that will handle the ASPxClientGridView.BatchEditRowValidating event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewBatchEditRowValidatingEventArgs object that contains event data.
+    */
+  type ASPxClientGridViewBatchEditRowValidatingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditRowValidatingEventArgs, Unit]
+  /**
+    * A method that will handle the ASPxClientGridView.BatchEditStartEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewBatchEditStartEditingEventArgs object that contains event data.
+    */
+  type ASPxClientGridViewBatchEditStartEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewBatchEditStartEditingEventArgs, Unit]
+  /**
+    * A method that will handle the ASPxClientGridView.BatchEditTemplateCellFocused event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs object that contains event data.
+    */
+  type ASPxClientGridViewBatchEditTemplateCellFocusedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs, 
     Unit
   ]
   /**
     * A method that will handle the cancelable events of a client ASPxGridView column.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewColumnCancelEventArgs object that contains event data.
     */
-  type ASPxClientGridViewColumnCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewColumnCancelEventArgs, Unit]
+  type ASPxClientGridViewColumnCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewColumnCancelEventArgs, Unit]
   /**
-    * A method that will handle the ColumnMoving event.
+    * A method that will handle the ASPxClientGridView.ColumnMoving event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewColumnMovingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewColumnMovingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewColumnMovingEventArgs, Unit]
+  type ASPxClientGridViewColumnMovingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewColumnMovingEventArgs, Unit]
   /**
     * A method that will handle the client events concerned with column processing.
+    * @param source The event source.
+    * @param e A ASPxClientGridViewColumnProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientGridViewColumnProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewColumnProcessingModeEventArgs, Unit]
+  type ASPxClientGridViewColumnProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewColumnProcessingModeEventArgs, Unit]
   /**
-    * A method that will handle the ContextMenu event.
+    * A method that will handle the ASPxClientGridView.ContextMenu event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewContextMenuEventArgs object that contains event data.
     */
-  type ASPxClientGridViewContextMenuEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewContextMenuEventArgs, Unit]
+  type ASPxClientGridViewContextMenuEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewContextMenuEventArgs, Unit]
   /**
-    * A method that will handle the client ContextMenuItemClick event.
+    * A method that will handle the ASPxClientGridView.ContextMenuItemClick event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewContextMenuItemClickEventArgs object that contains event data.
     */
-  type ASPxClientGridViewContextMenuItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewContextMenuItemClickEventArgs, Unit]
+  type ASPxClientGridViewContextMenuItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewContextMenuItemClickEventArgs, Unit]
   /**
-    * A method that will handle the CustomButtonClick event.
+    * A method that will handle the ASPxClientGridView.CustomButtonClick event.
+    * @param source The event source.
+  This parameter identifies the ASPxClientGridView object that raised the event.
+    * @param e An ASPxClientGridViewCustomButtonEventArgs object that contains event data.
     */
-  type ASPxClientGridViewCustomButtonEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewCustomButtonEventArgs, Unit]
+  type ASPxClientGridViewCustomButtonEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewCustomButtonEventArgs, Unit]
   /**
-    * Lists values that specify the document formats available for export from the grid.
+    * Represents a method that will handle the ASPxClientGridView.FocusedRowChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewFocusEventArgs object which contains event data.
     */
-  type ASPxClientGridViewExportFormat = ASPxClientGridExportFormat
-  type ASPxClientGridViewExportFormatStatic = ASPxClientGridExportFormatStatic
+  type ASPxClientGridViewFocusEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewFocusEventArgs, Unit]
   /**
-    * A method that will handle the client FocusedRowChanged event.
+    * A method that will handle the ASPxClientGridView.FocusedCellChanging event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewFocusedCellChangingEventArgs object that contains event data.
     */
-  type ASPxClientGridViewFocusEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewFocusEventArgs, Unit]
+  type ASPxClientGridViewFocusedCellChangingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewFocusedCellChangingEventArgs, Unit]
   /**
-    * A method that will handle the FocusedCellChanging event.
+    * A method that will handle the ASPxClientGridView.RowCollapsing and ASPxClientGridView.RowExpanding events.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewRowCancelEventArgs object that contains event data.
     */
-  type ASPxClientGridViewFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewFocusedCellChangingEventArgs, Unit]
+  type ASPxClientGridViewRowCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewRowCancelEventArgs, Unit]
   /**
-    * A method that will handle the RowExpanding events.
+    * A method that will handle the ASPxClientGridView.RowClick event.
+    * @param source The event source. This parameter identifies the ASPxClientGridView object that raised the event.
+    * @param e An ASPxClientGridViewRowClickEventArgs object that contains event data.
     */
-  type ASPxClientGridViewRowCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewRowCancelEventArgs, Unit]
+  type ASPxClientGridViewRowClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewRowClickEventArgs, Unit]
   /**
-    * A method that will handle the RowClick events.
+    * Represents a method that will handle the ASPxClientGridView.RowFocusing event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewRowFocusingEventArgs object which contains event data.
     */
-  type ASPxClientGridViewRowClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewRowClickEventArgs, Unit]
+  type ASPxClientGridViewRowFocusingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewRowFocusingEventArgs, Unit]
   /**
-    * A method that will handle the client RowFocusing event.
+    * A method that will handle the ASPxClientGridView.SelectionChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientGridViewSelectionEventArgs object that contains event data.
     */
-  type ASPxClientGridViewRowFocusingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewRowFocusingEventArgs, Unit]
+  type ASPxClientGridViewSelectionEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGridViewSelectionEventArgs, Unit]
   /**
-    * A method that will handle the SelectionChanged event.
+    * Represents a JavaScript function which receives the list of row values when the client ASPxClientGridView.GetRowValues, ASPxGridView.GetCurrentPageRowValues or ASPxClientGridView.GetSelectedFieldValues method is called.
+    * @param result An object that represents the list of row values received from the server.
     */
-  type ASPxClientGridViewSelectionEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewSelectionEventArgs, Unit]
+  type ASPxClientGridViewValuesCallback = js.Function1[/* result */ js.Any, Unit]
   /**
-    * Represents a JavaScript function which receives the list of row values when the client GetSelectedFieldValues method is called.
-    */
-  type ASPxClientGridViewValuesCallback = js.Function1[/* result */ js.Object, Unit]
-  /**
-    * A method that will handle the Hiding event.
+    * A method that will handle the ASPxClientHint.Hiding event.
+    * @param sender The event source.
+    * @param e A ASPxClientHintHidingEventArgs object that contains the required data.
     */
   type ASPxClientHintHidingEventHandler = js.Function2[/* sender */ ASPxClientHintWindow, /* e */ ASPxClientHintHidingEventArgs, Unit]
   /**
-    * A method that will handle the Showing event.
+    * A method that will handle the ASPxClientHint.Showing event.
+    * @param sender The event source.
+    * @param e A ASPxClientHintShowingEventArgs object that contains the required data.
     */
   type ASPxClientHintShowingEventHandler = js.Function2[/* sender */ ASPxClientHintWindow, /* e */ ASPxClientHintShowingEventArgs, Unit]
   /**
-    * A method that will handle the BeforePaste event.
+    * A method that will handle the ASPxClientHtmlEditor.BeforePaste event.
+    * @param source The event source. This parameter identifies the HTML editor object that raised the event.
+    * @param e An ASPxClientHtmlEditorBeforePasteEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorBeforePasteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorBeforePasteEventArgs, Unit]
+  type ASPxClientHtmlEditorBeforePasteEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorBeforePasteEventArgs, Unit]
   /**
-    * Contains settings related to the CHANGEAUDIO_COMMAND command parameter.
+    * A method that will handle the corresponding client event.
+    * @param source The event source. This parameter identifies the editor which raised the event.
+    * @param e An ASPxClientHtmlEditorCommandEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorChangeAudioCommandArguments = ASPxClientHtmlEditorInsertAudioCommandArguments
+  type ASPxClientHtmlEditorCommandEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorCommandEventArgs, Unit]
   /**
-    * Contains settings related to the CHANGEFLASH_COMMAND command parameter.
+    * A method that will handle the client ASPxClientHtmlEditor.CommandExecuted event.
+    * @param source The event's source.
+    * @param e An ASPxClientHtmlEditorCommandExecutingEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorChangeFlashCommandArguments = ASPxClientHtmlEditorInsertFlashCommandArguments
+  type ASPxClientHtmlEditorCommandExecutingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorCommandExecutingEventArgs, Unit]
   /**
-    * Contains settings related to the CHANGEIMAGE_COMMAND command parameter.
+    * A method that will handle the client ASPxClientHtmlEditor.CustomDialogClosed event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientHtmlEditorCustomDialogClosedEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorChangeImageCommandArguments = ASPxClientHtmlEditorInsertImageCommandArguments
+  type ASPxClientHtmlEditorCustomDialogClosedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorCustomDialogClosedEventArgs, Unit]
   /**
-    * Contains settings related to the CHANGEVIDEO_COMMAND command parameter.
+    * A method that will handle the client ASPxClientHtmlEditor.CustomDialogClosing event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientHtmlEditorCustomDialogClosingEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorChangeVideoCommandArguments = ASPxClientHtmlEditorInsertVideoCommandArguments
+  type ASPxClientHtmlEditorCustomDialogClosingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorCustomDialogClosingEventArgs, Unit]
   /**
-    * Contains settings related to the CHANGEYOUTUBEVIDEO_COMMAND command parameter.
+    * A method that will handle the client ASPxClientHtmlEditor.CustomDialogOpened event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientHtmlEditorCustomDialogEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments = ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments
+  type ASPxClientHtmlEditorCustomDialogEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorCustomDialogEventArgs, Unit]
   /**
-    * A method that will handle the client events related to command processing.
+    * A method that will handle the ASPxClientHtmlEditor.DialogClosed event.
+    * @param source The event source.
+    * @param e An ASPxClientHtmlEditorDialogClosedEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorCommandEventArgs, Unit]
+  type ASPxClientHtmlEditorDialogClosedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorDialogClosedEventArgs, Unit]
   /**
-    * A method that will handle the CommandExecuting event.
+    * A method that will handle the ASPxClientHtmlEditor.DialogClosing event.
+    * @param source The event source.
+    * @param e An ASPxClientHtmlEditorDialogClosingEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorCommandExecutingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorCommandExecutingEventArgs, Unit]
+  type ASPxClientHtmlEditorDialogClosingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorDialogClosingEventArgs, Unit]
   /**
-    * A method that will handle the CustomDialogClosed client event.
+    * A method that will handle the client ASPxClientHtmlEditor.DialogInitialized event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientHtmlEditorDialogInitializedEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorCustomDialogClosedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorCustomDialogClosedEventArgs, Unit]
+  type ASPxClientHtmlEditorDialogInitializedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorDialogInitializedEventArgs, Unit]
   /**
-    * A method that will handle the CustomDialogClosing client event.
+    * A method that will handle the client ASPxClientHtmlEditor.ActiveTabChanging event.
+    * @param source The event's source.
+    * @param e An ASPxClientHtmlEditorTabCancelEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorCustomDialogClosingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorCustomDialogClosingEventArgs, Unit]
+  type ASPxClientHtmlEditorTabCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorTabCancelEventArgs, Unit]
   /**
-    * A method that will handle the client events that relate to custom dialog operations.
+    * A method that will handle the client ASPxClientHtmlEditor.ActiveTabChanged event.
+    * @param source The event's source.
+    * @param e An ASPxClientHtmlEditorTabEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorCustomDialogEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorCustomDialogEventArgs, Unit]
+  type ASPxClientHtmlEditorTabEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorTabEventArgs, Unit]
   /**
-    * Provides data for the DialogClosed event.
+    * A method that will handle the client ASPxClientHtmlEditor.Validation event.
+    * @param source An object representing the event's source.
+    * @param e An ASPxClientHtmlEditorValidationEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorDialogClosedEventArgs = ASPxClientHtmlEditorDialogCloseEventArgs
+  type ASPxClientHtmlEditorValidationEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientHtmlEditorValidationEventArgs, Unit]
   /**
-    * A method that will handle the DialogClosed event.
+    * A method that will handle the ASPxClientImageGallery.FullscreenViewerShowing event.
+    * @param source The event source. Identifies the ASPxImageGallery control that raised the event.
+    * @param e An ASPxClientImageGalleryCancelEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorDialogClosedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorDialogClosedEventArgs, Unit]
+  type ASPxClientImageGalleryCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientImageGalleryCancelEventArgs, Unit]
   /**
-    * A method that will handle the DialogClosing event.
+    * A method that will handle the ASPxClientImageGallery.FullscreenViewerActiveItemIndexChanged event.
+    * @param source The event source. Identifies the ASPxImageGallery control that raised the event.
+    * @param e An ASPxClientImageGalleryFullscreenViewerEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorDialogClosingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorDialogClosingEventArgs, Unit]
+  type ASPxClientImageGalleryFullscreenViewerEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientImageGalleryFullscreenViewerEventArgs, Unit]
   /**
-    * A method that will handle the DialogInitialized client event.
+    * A method that will handle the ASPxClientImageSlider.ActiveItemChanged and ASPxClientImageSlider.ItemClick events.
+    * @param source The event source. Identifies the ASPxImageSlider control that raised the event.
+    * @param e An ASPxClientImageSliderItemEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorDialogInitializedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorDialogInitializedEventArgs, Unit]
+  type ASPxClientImageSliderItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientImageSliderItemEventArgs, Unit]
   /**
-    * Contains settings related to the INSERTAUDIO_COMMAND command parameter.
+    * References a method that handles the ASPxClientDashboard.ItemBeginUpdate event.
+    * @param source The event source.
+    * @param e A ASPxClientItemBeginUpdateEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorInsertAudioCommandArguments = ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments
+  type ASPxClientItemBeginUpdateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientItemBeginUpdateEventArgs, Unit]
   /**
-    * A method that will handle the ActiveTabChanging event.
+    * References a method that handles the ASPxClientDashboard.ItemEndUpdate event.
+    * @param source The event source.
+    * @param e A ASPxClientItemEndUpdateEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorTabCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorTabCancelEventArgs, Unit]
+  type ASPxClientItemEndUpdateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientItemEndUpdateEventArgs, Unit]
   /**
-    * A method that will handle the ActiveTabChanged event.
+    * A method that will handle the ASPxClientComboBox.CustomHighlighting and ASPxClientListBox.CustomHighlighting events.
+    * @param source The event source.
+    * @param e A ASPxClientListEditCustomHighlightingEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorTabEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorTabEventArgs, Unit]
+  type ASPxClientListEditCustomHighlightingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientListEditCustomHighlightingEventArgs, Unit]
   /**
-    * A method that will handle the Validation client event.
+    * A method that will handle the ASPxClientComboBox.ItemFiltering and ASPxClientListBox.ItemFiltering events.
+    * @param source The event source.
+    * @param e A ASPxClientListEditItemFilteringEventArgs object that contains event data.
     */
-  type ASPxClientHtmlEditorValidationEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientHtmlEditorValidationEventArgs, Unit]
+  type ASPxClientListEditItemFilteringEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientListEditItemFilteringEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ImageAnnotation class.
+    * A method that will handle the ASPxClientListBox.SelectedIndexChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientListEditItemSelectedChangedEventArgs object that contains event data.
     */
-  type ASPxClientImageAnnotation = ASPxClientAnnotation
-  type ASPxClientImageBaseStatic = ASPxClientStaticEditStatic
+  type ASPxClientListEditItemSelectedChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientListEditItemSelectedChangedEventArgs, Unit]
   /**
-    * A method that will handle the client FullscreenViewerShowing event.
+    * A method that will handle client ASPxClientMenuBase.ItemClick events.
+    * @param source An object representing the event source.
+    * @param e A MenuItemEventArgs object that contains event data.
     */
-  type ASPxClientImageGalleryCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientImageGalleryCancelEventArgs, Unit]
-  /**
-    * A method that will handle the client FullscreenViewerActiveItemIndexChanged event.
-    */
-  type ASPxClientImageGalleryFullscreenViewerEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientImageGalleryFullscreenViewerEventArgs, Unit]
-  /**
-    * A method that will handle the ItemClick events.
-    */
-  type ASPxClientImageSliderItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientImageSliderItemEventArgs, Unit]
-  /**
-    * The client-side equivalent of the ASPxImageZoomNavigator object.
-    */
-  type ASPxClientImageZoomNavigator = ASPxClientImageSlider
-  type ASPxClientImageZoomNavigatorStatic = ASPxClientImageSliderStatic
-  type ASPxClientImageZoomStatic = ASPxClientControlStatic
-  /**
-    * References a method that will handle the ItemBeginUpdate event.
-    */
-  type ASPxClientItemBeginUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientItemBeginUpdateEventArgs, Unit]
-  /**
-    * References a method that will handle the ItemEndUpdate event.
-    */
-  type ASPxClientItemEndUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientItemEndUpdateEventArgs, Unit]
-  /**
-    * A method that will handle the CustomHighlighting events.
-    */
-  type ASPxClientListEditCustomHighlightingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditCustomHighlightingEventArgs, Unit]
-  /**
-    * A method that will handle the ItemFiltering events.
-    */
-  type ASPxClientListEditItemFilteringEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditItemFilteringEventArgs, Unit]
-  /**
-    * A method that will handle the SelectedIndexChanged event.
-    */
-  type ASPxClientListEditItemSelectedChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditItemSelectedChangedEventArgs, Unit]
-  type ASPxClientListEditStatic = ASPxClientEditStatic
-  type ASPxClientMediaFileSelectorStatic = ASPxClientControlStatic
-  /**
-    * Represents the client-side equivalent of the MedianPrice class.
-    */
-  type ASPxClientMedianPrice = ASPxClientIndicator
-  /**
-    * Represents the client-side equivalent of the ASPxMemo control.
-    */
-  type ASPxClientMemo = ASPxClientTextEdit
-  /**
-    * A method that will handle client events concerning clicks on the control's items.
-    */
-  type ASPxClientMenuItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientMenuItemClickEventArgs, Unit]
+  type ASPxClientMenuItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientMenuItemClickEventArgs, Unit]
   /**
     * A method that will handle the menu's client events concerning manipulations with an item.
+    * @param source The event source. This parameter identifies the menu object which raised the event.
+    * @param e An ASPxClientMenuItemEventArgs object that contains event data.
     */
-  type ASPxClientMenuItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientMenuItemEventArgs, Unit]
+  type ASPxClientMenuItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientMenuItemEventArgs, Unit]
   /**
-    * A method that will handle client events which relate to mouse hovering (such as entering or leaving) over menu items.
+    * A method that will handle the ASPxClientMenuBase.ItemMouseOut and ASPxClientMenuBase.ItemMouseOver events.
+    * @param source An object representing the event source.
+    * @param e A MenuItemEventArgs object that contains event data.
     */
-  type ASPxClientMenuItemMouseEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientMenuItemMouseEventArgs, Unit]
-  type ASPxClientMonthlyRecurrenceControlStatic = ASPxClientRecurrenceControlBaseStatic
+  type ASPxClientMenuItemMouseEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientMenuItemMouseEventArgs, Unit]
   /**
     * A method that will handle the navbar's cancelable client events concerning manipulations with a group.
+    * @param source An object representing the event's source. Identifies the navbar object that raised the event.
+    * @param e An ASPxClientNavBarGroupCancelEventArgs object that contains event data.
     */
-  type ASPxClientNavBarGroupCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientNavBarGroupCancelEventArgs, Unit]
+  type ASPxClientNavBarGroupCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientNavBarGroupCancelEventArgs, Unit]
   /**
-    * A method that will handle client events concerning clicks on the control's group headers.
+    * A method that will handle the navbar's client events concerning clicks on groups.
+    * @param source The event source. This parameter identifies the navbar object which raised the event.
+    * @param e An ASPxClientNavBarGroupClickEventArgs object that contains event data.
     */
-  type ASPxClientNavBarGroupClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientNavBarGroupClickEventArgs, Unit]
+  type ASPxClientNavBarGroupClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientNavBarGroupClickEventArgs, Unit]
   /**
     * A method that will handle the navbar's client events concerning manipulations with a group.
+    * @param source An object representing the event's source. Identifies the navbar object that raised the event.
+    * @param e An ASPxClientNavBarGroupEventArgs object that contains event data.
     */
-  type ASPxClientNavBarGroupEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientNavBarGroupEventArgs, Unit]
+  type ASPxClientNavBarGroupEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientNavBarGroupEventArgs, Unit]
   /**
     * A method that will handle the navbar's client events concerning manipulations with an item.
+    * @param source An object representing the event's source. Identifies the navbar object that raised the event.
+    * @param e An ASPxClientNavBarItemEventArgs object that contains event data.
     */
-  type ASPxClientNavBarItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientNavBarItemEventArgs, Unit]
+  type ASPxClientNavBarItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientNavBarItemEventArgs, Unit]
   /**
-    * A method that will handle client events concerning manipulations with an item.
+    * A method that will handle the news control's client events concerning manipulations with an item.
+    * @param source An object representing the event's source. Identifies the news control object that raised the event.
+    * @param e An ASPxClientNewsControlItemEventArgs object that contains event data.
     */
-  type ASPxClientNewsControlItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientNewsControlItemEventArgs, Unit]
+  type ASPxClientNewsControlItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientNewsControlItemEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ASPxPager control.
+    * A method that will handle the ASPxClientDateEdit.ParseDate event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientParseDateEventArgs object that contains event data.
     */
-  type ASPxClientPager = ASPxClientControl
-  type ASPxClientPagerStatic = ASPxClientControlStatic
+  type ASPxClientParseDateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientParseDateEventArgs, Unit]
   /**
-    * A method that will handle the client ParseDate event, that parses a date editor's value when entered.
+    * A method that will handle the ASPxClientPivotGrid.PopupMenuItemClick event.
+    * @param source The event source.
+    * @param e An ASPxClientPivotMenuItemClickEventArgs object that contains event data.
     */
-  type ASPxClientParseDateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientParseDateEventArgs, Unit]
-  type ASPxClientPivotCustomizationStatic = ASPxClientControlStatic
+  type ASPxClientPivotMenuItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPivotMenuItemClickEventArgs, Unit]
   /**
-    * A method that will handle the PopupMenuItemClick event.
+    * A method that will handle the popup window's cancelable client events.
+    * @param source An object representing the event's source. Identifies the popup window object that raised the event.
+    * @param e An ASPxClientPopupWindowCancelEventArgs object that contains event data.
     */
-  type ASPxClientPivotMenuItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPivotMenuItemClickEventArgs, Unit]
-  type ASPxClientPopupControlBaseStatic = ASPxClientControlStatic
+  type ASPxClientPopupWindowCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPopupWindowCancelEventArgs, Unit]
   /**
-    * A method that will handle the popup window's cancellable client events, such as the Closing.
+    * A method that will handle the ASPxClientPopupControlBase.CloseUp event.
+    * @param source The event source.
+    * @param e An ASPxClientPopupWindowCloseUpEventArgs object that contains event data.
     */
-  type ASPxClientPopupWindowCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPopupWindowCancelEventArgs, Unit]
+  type ASPxClientPopupWindowCloseUpEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPopupWindowCloseUpEventArgs, Unit]
   /**
-    * A method that will handle the CloseUp event.
+    * A method that will handle the popup control's client events when a popup window is manipulated.
+    * @param source An object representing the event's source. Identifies the popup control object (ASPxClientPopupControl) that raised the event.
+    * @param e An ASPxClientPopupWindowEventArgs object that contains event data.
     */
-  type ASPxClientPopupWindowCloseUpEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPopupWindowCloseUpEventArgs, Unit]
+  type ASPxClientPopupWindowEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPopupWindowEventArgs, Unit]
   /**
-    * A method that will handle the popup control's client events invoked in response to manipulating a popup window.
+    * A method that will handle the ASPxClientPopupControlBase.PinnedChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientPopupWindowPinnedChangedEventArgs object that contains event data.
     */
-  type ASPxClientPopupWindowEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPopupWindowEventArgs, Unit]
+  type ASPxClientPopupWindowPinnedChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPopupWindowPinnedChangedEventArgs, Unit]
   /**
-    * A method that will handle the PinnedChanged event.
+    * A method that will handle the ASPxClientPopupControlBase.Resize event.
+    * @param source The event source.
+    * @param e A ASPxClientPopupWindowResizeEventArgs object that contains event data.
     */
-  type ASPxClientPopupWindowPinnedChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPopupWindowPinnedChangedEventArgs, Unit]
-  /**
-    * A method that will handle the Resize event.
-    */
-  type ASPxClientPopupWindowResizeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPopupWindowResizeEventArgs, Unit]
+  type ASPxClientPopupWindowResizeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPopupWindowResizeEventArgs, Unit]
   /**
     * A method that will handle the cancelable client-side events which allow the event's processing to be passed to the server side.
+    * @param source An object representing the event source. Identifies the web control that raised the event.
+    * @param e An ASPxClientProcessingModeCancelEventArgs object that contains event data.
     */
-  type ASPxClientProcessingModeCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientProcessingModeCancelEventArgs, Unit]
+  type ASPxClientProcessingModeCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientProcessingModeCancelEventArgs, Unit]
   /**
     * A method that will handle the client events which can't be cancelled and allow the event's processing to be passed to the server side.
+    * @param source An object representing the event source. Identifies the web control that raised the event.
+    * @param e An ASPxClientProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientProcessingModeEventArgs, Unit]
+  type ASPxClientProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientProcessingModeEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeLocalization event.
+    * A method that will handle the ASPxClientQueryBuilder.BeforeRender event.
+    * @param source The event sender.
     */
-  type ASPxClientQueryBuilderCustomizeLocalizationEventHandler[S] = js.Function1[/* source */ S, Unit]
+  type ASPxClientQueryBuilderBeforeRenderEventHandler[Sender] = js.Function2[/* source */ Sender, /* designerModel */ js.Any, Unit]
   /**
-    * A method that will handle the CustomizeToolbarActions event.
+    * A method that will handle the ASPxClientQueryBuilder.CustomizeLocalization event.
+    * @param source The event sender.
     */
-  type ASPxClientQueryBuilderCustomizeToolbarActionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
+  type ASPxClientQueryBuilderCustomizeLocalizationEventHandler[Sender] = js.Function1[/* source */ Sender, Unit]
   /**
-    * A method that will handle the SaveCommandExecute event.
+    * A method that will handle the ASPxClientQueryBuilder.CustomizeToolbarActions event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeMenuActionsEventArgs object that contains data related to the event.
     */
-  type ASPxClientQueryBuilderSaveCommandExecuteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientQueryBuilderSaveCommandExecuteEventArgs, Unit]
+  type ASPxClientQueryBuilderCustomizeToolbarActionsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the RadarAxis class.
+    * A method that will handle the ASPxClientQueryBuilder.OnServerError event.
+    * @param source The event sender.
+    * @param e An ASPxClientErrorEventArgs object that contains data related to the event.
     */
-  type ASPxClientRadarAxis = ASPxClientAxisBase
+  type ASPxClientQueryBuilderErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientErrorEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ASPxRadioButtonList control.
+    * A method that will handle the ASPxClientQueryBuilder.SaveCommandExecute event.
+    * @param source The event sender.
+    * @param e An ASPxClientQueryBuilderSaveCommandExecuteEventArgs object that contains data related to the event.
     */
-  type ASPxClientRadioButtonList = ASPxClientCheckListBase
+  type ASPxClientQueryBuilderSaveCommandExecuteEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientQueryBuilderSaveCommandExecuteEventArgs, Unit]
   /**
-    * A method that will handle the client ItemClick event.
+    * A method that will handle the client ASPxClientRatingControl.ItemClick event.
+    * @param source An object representing the event source.
+    * @param e A ASPxClientRatingControlItemClickEventArgs object that contains event data.
     */
-  type ASPxClientRatingControlItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRatingControlItemClickEventArgs, Unit]
+  type ASPxClientRatingControlItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRatingControlItemClickEventArgs, Unit]
   /**
-    * A method that will handle the rating control's ItemMouseOver and ItemMouseOut client events (such as ItemMouseOut).
+    * A method that will handle the ASPxClientRatingControl.ItemMouseOut and ASPxClientRatingControl.ItemMouseOver events.
+    * @param source The event source.
+    * @param e An ASPxClientRatingControlItemMouseEventArgs object that contains event data.
     */
-  type ASPxClientRatingControlItemMouseEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRatingControlItemMouseEventArgs, Unit]
-  type ASPxClientRecurrenceControlBaseStatic = ASPxClientControlStatic
-  type ASPxClientRecurrenceRangeControlStatic = ASPxClientControlStatic
-  type ASPxClientRecurrenceTypeEditStatic = ASPxClientRadioButtonListStatic
+  type ASPxClientRatingControlItemMouseEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRatingControlItemMouseEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the RegressionLine class.
+    * A method that will handle the ASPxClientReportDesigner.BeforeRender event.
+    * @param source The event sender.
+    * @param designerModel A client-side Report Designer model.
     */
-  type ASPxClientRegressionLine = ASPxClientSingleLevelIndicator
+  type ASPxClientReportDesignerBeforeRenderEventHandler[Sender] = js.Function2[/* source */ Sender, /* designerModel */ js.Any, Unit]
   /**
-    * A method that will handle the BeforeRender event.
+    * A method that will handle the ASPxClientReportDesigner.ComponentAdded event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerComponentAddedEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerBeforeRenderEventHandler[S] = js.Function2[/* source */ S, /* designerModel */ js.Object, Unit]
+  type ASPxClientReportDesignerComponentAddedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerComponentAddedEventArgs, Unit]
   /**
-    * A method that will handle the ComponentAdded event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeElements event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeElementsEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerComponentAddedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerComponentAddedEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeElementsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeElementsEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeElements event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeFieldListActions event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerCustomizeFieldListActionsEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeElementsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeElementsEventArgs, Unit]
-  type ASPxClientReportDesignerCustomizeFieldListActionsEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientReportDesignerCustomizeFieldListActionsEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientReportDesignerCustomizeFieldListActionsEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the CustomizeLocalization event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeLocalization event.
+    * @param source The event sender.
     */
-  type ASPxClientReportDesignerCustomizeLocalizationEventHandler[S] = js.Function1[/* source */ S, Unit]
+  type ASPxClientReportDesignerCustomizeLocalizationEventHandler[Sender] = js.Function1[/* source */ Sender, Unit]
   /**
-    * A method that will handle the CustomizeMenuActions event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeMenuActions event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeMenuActionsEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeMenuActionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeMenuActionsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeOpenDialog event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeOpenDialog event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerCustomizeOpenDialogEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeOpenDialogEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerCustomizeOpenDialogEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeOpenDialogEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientReportDesignerCustomizeOpenDialogEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CustomizeParameterEditors event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeParameterEditors event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeParameterEditorsEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeParameterEditorsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeParameterEditorsEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeParameterEditorsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeParameterEditorsEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeParameterLookUpSource event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeParameterLookUpSource event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeParameterLookUpSourceEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeParameterLookUpSourceEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeParameterLookUpSourceEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeParameterLookUpSourceEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeParameterLookUpSourceEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeSaveAsDialog event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeSaveAsDialog event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeSaveAsDialogEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeSaveAsDialogEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CustomizeSaveDialog event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeSaveDialog event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerCustomizeSaveDialogEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeSaveDialogEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerCustomizeSaveDialogEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeSaveDialogEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientReportDesignerCustomizeSaveDialogEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CustomizeToolbox event.
+    * A method that will handle the ASPxClientReportDesigner.CustomizeToolbox event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerCustomizeToolboxEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerCustomizeToolboxEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerCustomizeToolboxEventArgs, Unit]
+  type ASPxClientReportDesignerCustomizeToolboxEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerCustomizeToolboxEventArgs, Unit]
   /**
-    * A method that will handle the OnServerError event.
+    * A method that will handle the ASPxClientReportDesigner.OnServerError event.
+    * @param source The event sender.
+    * @param e An ASPxClientErrorEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerErrorEventArgs, Unit]
+  type ASPxClientReportDesignerErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientErrorEventArgs, Unit]
   /**
-    * Provides data for the ExitDesigner event.
+    * A method that will handle the ASPxClientReportDesigner.ExitDesigner event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerExitDesignerEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerExitDesignerEventArgs = ASPxClientEventArgs
+  type ASPxClientReportDesignerExitDesignerEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerExitDesignerEventArgs, Unit]
   /**
-    * A method that will handle the ExitDesigner event.
+    * A method that will handle the ASPxClientReportDesigner.ReportOpened event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerDialogEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerExitDesignerEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerExitDesignerEventArgs, Unit]
+  type ASPxClientReportDesignerReportOpenedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerDialogEventArgs, Unit]
   /**
-    * A method that will handle the ReportOpened event.
+    * A method that will handle the ASPxClientReportDesigner.ReportOpening event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerDialogCancelEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportOpenedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerDialogEventArgs, Unit]
+  type ASPxClientReportDesignerReportOpeningEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerDialogCancelEventArgs, Unit]
   /**
-    * A method that will handle the ReportOpening event.
+    * A method that will handle the ASPxClientReportDesigner.ReportSaved event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerDialogEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportOpeningEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerDialogCancelEventArgs, Unit]
+  type ASPxClientReportDesignerReportSavedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerDialogEventArgs, Unit]
   /**
-    * A method that will handle the ReportSaved event.
+    * A method that will handle the ASPxClientReportDesigner.ReportSaving event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerDialogCancelEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportSavedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerDialogEventArgs, Unit]
+  type ASPxClientReportDesignerReportSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerDialogCancelEventArgs, Unit]
   /**
-    * A method that will handle the ReportSaving event.
+    * A method that will handle the ASPxClientReportDesigner.ReportTabClosed event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerTabEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerDialogCancelEventArgs, Unit]
+  type ASPxClientReportDesignerReportTabClosedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerTabEventArgs, Unit]
   /**
-    * A method that will handle the ReportTabClosed event.
+    * A method that will handle the ASPxClientReportDesigner.ReportTabClosing event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerTabClosingEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportTabClosedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerTabEventArgs, Unit]
+  type ASPxClientReportDesignerReportTabClosingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerTabClosingEventArgs, Unit]
   /**
-    * A method that will handle the ReportTabClosing event.
+    * A method that will handle the ASPxClientReportDesigner.SaveCommandExecute event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerSaveCommandExecuteEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerReportTabClosingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerTabClosingEventArgs, Unit]
+  type ASPxClientReportDesignerSaveCommandExecuteEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientReportDesignerSaveCommandExecuteEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the SaveCommandExecute event.
+    * A method that will handle the ASPxClientReportDesigner.TabChanged event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportDesignerTabEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportDesignerSaveCommandExecuteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerSaveCommandExecuteEventArgs, Unit]
-  type ASPxClientReportDesignerTabChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerTabEventArgs, Unit]
-  type ASPxClientReportDocumentMapStatic = ASPxClientControlStatic
-  type ASPxClientReportParametersPanelStatic = ASPxClientControlStatic
+  type ASPxClientReportDesignerTabChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportDesignerTabEventArgs, Unit]
   /**
-    * A method that will handle the PageLoad events.
+    * A method that will handle the ASPxClientReportViewer.PageLoad event.
+    * @param source The event sender.
+    * @param e An ASPxClientReportViewerPageLoadEventArgs object that contains data related to the event.
     */
-  type ASPxClientReportViewerPageLoadEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportViewerPageLoadEventArgs, Unit]
+  type ASPxClientReportViewerPageLoadEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientReportViewerPageLoadEventArgs, Unit]
   /**
-    * A method that will handle the CommandExecuted event.
+    * A method that will handle the ASPxClientRibbon.CommandExecuted event.
+    * @param source The event source. Identifies the ASPxRibbon control that raised the event.
+    * @param e An ASPxClientRibbonCommandExecutedEventArgs object that contains event data.
     */
-  type ASPxClientRibbonCommandExecutedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRibbonCommandExecutedEventArgs, Unit]
+  type ASPxClientRibbonCommandExecutedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRibbonCommandExecutedEventArgs, Unit]
   /**
-    * A method that will handle the DialogBoxLauncherClicked event.
+    * A method that will handle the ASPxClientRibbon.DialogBoxLauncherClicked event.
+    * @param source The event source. This parameter identifies the ribbon object which raised the event.
+    * @param e An ASPxClientRibbonDialogBoxLauncherClickedEventArgs object that contains event data.
     */
-  type ASPxClientRibbonDialogBoxLauncherClickedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRibbonDialogBoxLauncherClickedEventArgs, Unit]
+  type ASPxClientRibbonDialogBoxLauncherClickedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRibbonDialogBoxLauncherClickedEventArgs, Unit]
   /**
-    * A method that will handle the MinimizationStateChanged event.
+    * A method that will handle the ASPxClientRibbon.MinimizationStateChanged event.
+    * @param source The event source. Identifies the ASPxRibbon control that raised the event.
+    * @param e An ASPxClientRibbonMinimizationStateEventArgs object that contains event data.
     */
-  type ASPxClientRibbonMinimizationStateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRibbonMinimizationStateEventArgs, Unit]
+  type ASPxClientRibbonMinimizationStateEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRibbonMinimizationStateEventArgs, Unit]
   /**
-    * A method that will handle the ActiveTabChanged event.
+    * A method that will handle the ASPxClientRibbon.ActiveTabChanged event.
+    * @param source The event source. Identifies the ASPxRibbon control that raised the event.
+    * @param e A ASPxClientRibbonTabEventArgs object that contains event data.
     */
-  type ASPxClientRibbonTabEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRibbonTabEventArgs, Unit]
+  type ASPxClientRibbonTabEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientRibbonTabEventArgs, Unit]
   /**
-    * A method that will handle the AutoCorrect event.
+    * A method that handles the AutoCorrect event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditAutoCorrectEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditAutoCorrectEventArgs, Unit]
+  type ASPxClientRichEditAutoCorrectEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditAutoCorrectEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the CharacterPropertiesChanged event.
+    * A method that handles the CharacterPropertiesChanged event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditCharacterPropertiesChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditCharacterPropertiesChangedEventArgs, Unit]
+  type ASPxClientRichEditCharacterPropertiesChangedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditCharacterPropertiesChangedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the ContentInserted event.
+    * A method that handles the ContentInserted event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditContentInsertedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditContentInsertedEventArgs, Unit]
+  type ASPxClientRichEditContentInsertedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditContentInsertedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the ContentRemoved event.
+    * A method that handles the ContentRemoved event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditContentRemovedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditContentRemovedEventArgs, Unit]
+  type ASPxClientRichEditContentRemovedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditContentRemovedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the CustomCommandExecuted event.
+    * A method that handles the CustomCommandExecuted event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditCustomCommandExecutedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditCustomCommandExecutedEventArgs, Unit]
+  type ASPxClientRichEditCustomCommandExecutedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditCustomCommandExecutedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the HyperlinkClick event.
+    * A method that handles the DocumentFormatted event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditHyperlinkClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditHyperlinkClickEventArgs, Unit]
+  type ASPxClientRichEditDocumentFormattedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditDocumentFormattedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the KeyDown event.
+    * A method that handles the HyperlinkClick event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditKeyDownEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditKeyDownEventArgs, Unit]
+  type ASPxClientRichEditHyperlinkClickEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditHyperlinkClickEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the KeyUp event.
+    * A method that handles the KeyDown event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditKeyUpEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditKeyUpEventArgs, Unit]
+  type ASPxClientRichEditKeyDownEventHandler = js.Function2[/* source */ ASPxClientRichEdit, /* e */ ASPxClientRichEditKeyDownEventArgs, js.Any]
   /**
-    * A method that will handle the ParagraphPropertiesChanged event.
+    * A method that handles the KeyUp event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditParagraphPropertiesChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditParagraphPropertiesChangedEventArgs, Unit]
+  type ASPxClientRichEditKeyUpEventHandler = js.Function2[/* source */ ASPxClientRichEdit, /* e */ ASPxClientRichEditKeyUpEventArgs, js.Any]
   /**
-    * A method that will handle the PointerDown event.
+    * A method that handles the ParagraphPropertiesChanged event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditPointerDownEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditPointerDownEventArgs, Unit]
+  type ASPxClientRichEditParagraphPropertiesChangedEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditParagraphPropertiesChangedEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the PointerUp event.
+    * A method that handles the PointerDown event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditPointerUpEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditPointerUpEventArgs, Unit]
+  type ASPxClientRichEditPointerDownEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditPointerDownEventArgs, 
+    js.Any
+  ]
   /**
-    * A method that will handle the PopupMenuShowing event.
+    * A method that handles the PointerUp event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientRichEditPopupMenuShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditPopupMenuShowingEventArgs, Unit]
-  type ASPxClientSchedulerStorageControlStatic = ASPxClientControlStatic
-  type ASPxClientSelectedTabPageChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSelectedTabPageChangedEventArgs, Unit]
+  type ASPxClientRichEditPointerUpEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditPointerUpEventArgs, 
+    js.Any
+  ]
   /**
-    * Represents the client-side equivalent of the SimpleDiagram class.
+    * A method that handles the PopupMenuShowing event.
+    * @param source The event source.
+    * @param e An object that contains event data.
     */
-  type ASPxClientSimpleDiagram = ASPxClientWebChartEmptyElement
+  type ASPxClientRichEditPopupMenuShowingEventHandler = js.Function2[
+    /* source */ ASPxClientRichEdit, 
+    /* e */ ASPxClientRichEditPopupMenuShowingEventArgs, 
+    js.Any
+  ]
   /**
-    * The client-side equivalent of the SimpleMovingAverage class.
+    * References a method that handles the ASPxClientDashboard.SelectedTabPageChanged event.
+    * @param source The event source.
+    * @param e A ASPxClientSelectedTabPageChangedEventArgs object that contains event data.
     */
-  type ASPxClientSimpleMovingAverage = ASPxClientMovingAverage
-  type ASPxClientSpinEditBaseStatic = ASPxClientButtonEditBaseStatic
+  type ASPxClientSelectedTabPageChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSelectedTabPageChangedEventArgs, Unit]
   /**
-    * A method that will handle a splitter control's cancelable client events concerning manipulations with a pane.
+    * A method that will handle a splitter control's cancelable client events concerning pane manipulations.
+    * @param source An object representing the event's source. Identifies the splitter control object that raised the event.
+    * @param e An ASPxClientSplitterPaneCancelEventArgs object that contains event data.
     */
-  type ASPxClientSplitterPaneCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSplitterPaneCancelEventArgs, Unit]
+  type ASPxClientSplitterPaneCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSplitterPaneCancelEventArgs, Unit]
   /**
-    * A method that will handle the splitter's client events concerning manipulations with a pane.
+    * A method that will handle the splitter's client events concerning pane manipulations.
+    * @param source An object representing the event's source. Identifies the splitter object that raised the event.
+    * @param e An ASPxClientSplitterPaneEventArgs object that contains event data.
     */
-  type ASPxClientSplitterPaneEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSplitterPaneEventArgs, Unit]
+  type ASPxClientSplitterPaneEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSplitterPaneEventArgs, Unit]
   /**
-    * A method that will handle the CellBeginEdit event.
+    * A method that will handle the ASPxClientSpreadsheet.CellBeginEdit event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetCellBeginEditEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetCellBeginEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellBeginEditEventArgs, Unit]
+  type ASPxClientSpreadsheetCellBeginEditEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetCellBeginEditEventArgs, Unit]
   /**
-    * A method that will handle the CellCancelEdit event.
+    * A method that will handle the ASPxClientSpreadsheet.CellCancelEdit event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetCellCancelEditEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetCellCancelEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellCancelEditEventArgs, Unit]
+  type ASPxClientSpreadsheetCellCancelEditEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetCellCancelEditEventArgs, Unit]
   /**
-    * A method that will handle the CellEndEdit event.
+    * A method that will handle the ASPxClientSpreadsheet.CellEndEdit event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetCellEndEditEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetCellEndEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellEndEditEventArgs, Unit]
+  type ASPxClientSpreadsheetCellEndEditEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetCellEndEditEventArgs, Unit]
   /**
-    * A method that will handle the CustomCommandExecuted event.
+    * A method that will handle the ASPxClientSpreadsheet.CustomCommandExecuted event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetCustomCommandExecutedEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetCustomCommandExecutedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCustomCommandExecutedEventArgs, Unit]
+  type ASPxClientSpreadsheetCustomCommandExecutedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientSpreadsheetCustomCommandExecutedEventArgs, 
+    Unit
+  ]
   /**
-    * Provides data for the DocumentChanged event.
+    * A method that will handle the ASPxClientSpreadsheet.DocumentChanged event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetDocumentChangedEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetDocumentChangedEventArgs = ASPxClientEventArgs
+  type ASPxClientSpreadsheetDocumentChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetDocumentChangedEventArgs, Unit]
   /**
-    * A method that will handle the DocumentChanged event.
+    * A method that will handle the ASPxClientSpreadsheet.HyperlinkClick event.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e An ASPxClientSpreadsheetHyperlinkClickEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetDocumentChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetDocumentChangedEventArgs, Unit]
+  type ASPxClientSpreadsheetHyperlinkClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetHyperlinkClickEventArgs, Unit]
   /**
-    * A method that will handle the HyperlinkClick event.
+    * A method that will handle the ASPxClientSpreadsheet.PopupMenuShowing event.
+    * @param source The event sender (typically an ASPxClientSpreadsheet object).
+    * @param e A ASPxClientSpreadsheetPopupMenuShowingEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetHyperlinkClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetHyperlinkClickEventArgs, Unit]
+  type ASPxClientSpreadsheetPopupMenuShowingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetPopupMenuShowingEventArgs, Unit]
   /**
-    * A method that will handle the PopupMenuShowing event.
+    * A method that will handle the ASPxClientSpreadsheet.SelectionChanged event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientSpreadsheetSelectionChangedEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetPopupMenuShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetPopupMenuShowingEventArgs, Unit]
+  type ASPxClientSpreadsheetSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetSelectionChangedEventArgs, Unit]
   /**
-    * A method that will handle the client SelectionChanged event.
+    * A method that will handle the ASPxClientSpreadsheet.BeginSynchronization and ASPxClientSpreadsheet.EndSynchronization events.
+    * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
+    * @param e A ASPxClientSpreadsheetSynchronizationEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetSelectionChangedEventArgs, Unit]
+  type ASPxClientSpreadsheetSynchronizationEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetSynchronizationEventArgs, Unit]
   /**
-    * Provides data for the EndSynchronization events.
+    * A method that will handle the ASPxClientSpreadsheet.ViewModeChanged event.
+    * @param source The event sender (typically an ASPxClientSpreadsheet object).
+    * @param e A ASPxClientSpreadsheetViewModeChangedEventArgs object that contains event data.
     */
-  type ASPxClientSpreadsheetSynchronizationEventArgs = ASPxClientEventArgs
-  /**
-    * A method that will handle the EndSynchronization events.
-    */
-  type ASPxClientSpreadsheetSynchronizationEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetSynchronizationEventArgs, Unit]
-  /**
-    * A method that will handle the ViewModeChanged event.
-    */
-  type ASPxClientSpreadsheetViewModeChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetViewModeChangedEventArgs, Unit]
-  /**
-    * Represents the client-side equivalent of the StandardErrorBars class.
-    */
-  type ASPxClientStandardErrorBars = ASPxClientIndicator
-  type ASPxClientStaticEditStatic = ASPxClientEditBaseStatic
-  /**
-    * Represents the client-side equivalent of the SwiftPlotDiagram class.
-    */
-  type ASPxClientSwiftPlotDiagram = ASPxClientXYDiagram2D
-  /**
-    * Represents the client-side equivalent of the SwiftPlotDiagramAxis class.
-    */
-  type ASPxClientSwiftPlotDiagramAxis = ASPxClientAxis2D
-  /**
-    * Represents a client-side equivalent of the ASPxTabControl object.
-    */
-  type ASPxClientTabControl = ASPxClientTabControlBase
-  type ASPxClientTabControlBaseStatic = ASPxClientControlStatic
+  type ASPxClientSpreadsheetViewModeChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpreadsheetViewModeChangedEventArgs, Unit]
   /**
     * A method that will handle a tab control's cancelable client events concerning manipulations with a tab.
+    * @param source An object representing the event's source. Identifies the tab control object that raised the event.
+    * @param e An ASPxClientTabControlTabCancelEventArgs object that contains event data.
     */
-  type ASPxClientTabControlTabCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTabControlTabCancelEventArgs, Unit]
+  type ASPxClientTabControlTabCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTabControlTabCancelEventArgs, Unit]
   /**
-    * A method that will handle client events concerning clicks on the control's tabs.
+    * A method that will handle client events concerning clicks on tabs.
+    * @param source The event source. This parameter identifies the tab control object which raised the event.
+    * @param e An ASPxClientTabControlTabClickEventArgs object that contains event data.
     */
-  type ASPxClientTabControlTabClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTabControlTabClickEventArgs, Unit]
+  type ASPxClientTabControlTabClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTabControlTabClickEventArgs, Unit]
   /**
     * A method that will handle a tab control's client events concerning manipulations with a tab.
+    * @param source An object representing the event's source. Identifies the tab control object that raised the event.
+    * @param e An ASPxClientTabControlTabEventArgs object that contains event data.
     */
-  type ASPxClientTabControlTabEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTabControlTabEventArgs, Unit]
+  type ASPxClientTabControlTabEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTabControlTabEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the ASPxTextBox control.
+    * A method that will handle the title index control's client events concerning manipulations with an item.
+    * @param source An object representing the event's source. Identifies the title index control object that raised the event.
+    * @param e An ASPxClientTitleIndexItemEventArgs object that contains event data.
     */
-  type ASPxClientTextBox = ASPxClientTextBoxBase
+  type ASPxClientTitleIndexItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTitleIndexItemEventArgs, Unit]
   /**
-    * Represents a base for client-side editors which are capable of displaying and editing text data in their edit regions.
+    * A method that will handle the ASPxClientDocumentViewer.ToolbarItemValueChanged event.
+    * @param source A Object that is the event source.
+    * @param e An ASPxClientToolbarItemValueChangedEventArgs object, containing the event arguments.
     */
-  type ASPxClientTextBoxBase = ASPxClientTextEdit
-  type ASPxClientTextBoxBaseStatic = ASPxClientTextEditStatic
-  type ASPxClientTextEditStatic = ASPxClientEditStatic
+  type ASPxClientToolbarItemValueChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientToolbarItemValueChangedEventArgs, Unit]
   /**
-    * A method that will handle client events concerning manipulations with an item.
+    * A method that will handle the ASPxClientTrackBar.PositionChanging event.
+    * @param source The event source. Identifies the ASPxTrackBar control that raised the event.
+    * @param e A ASPxClientTrackBarPositionChangingEventArgs object that contains event data.
     */
-  type ASPxClientTitleIndexItemEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTitleIndexItemEventArgs, Unit]
+  type ASPxClientTrackBarPositionChangingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTrackBarPositionChangingEventArgs, Unit]
   /**
-    * A method that will handle the ItemValueChanged event.
+    * A method that will handle the ASPxClientTreeList.BatchEditChangesCanceling event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditChangesCancelingEventArgs object that contains event data.
     */
-  type ASPxClientToolbarItemValueChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientToolbarItemValueChangedEventArgs, Unit]
+  type ASPxClientTreeListBatchEditChangesCancelingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientTreeListBatchEditChangesCancelingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the client PositionChanging event.
+    * A method that will handle the ASPxClientTreeList.BatchEditChangesSaving event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditChangesSavingEventArgs object that contains event data.
     */
-  type ASPxClientTrackBarPositionChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTrackBarPositionChangingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditChangesSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListBatchEditChangesSavingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditChangesCanceling event.
+    * A method that will handle the ASPxClientTreeList.BatchEditConfirmShowing event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditConfirmShowingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditChangesCancelingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditChangesCancelingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditConfirmShowingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientTreeListBatchEditConfirmShowingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditChangesSaving event.
+    * A method that will handle the ASPxClientTreeList.BatchEditEndEditing event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditEndEditingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditChangesSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditChangesSavingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditEndEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListBatchEditEndEditingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditConfirmShowing event.
+    * A method that will handle the ASPxClientTreeList.BatchEditNodeDeleting event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditNodeDeletingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditConfirmShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditConfirmShowingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditNodeDeletingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListBatchEditNodeDeletingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditEndEditing event.
+    * A method that will handle the ASPxClientTreeList.BatchEditNodeInserting event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditNodeInsertingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditEndEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditEndEditingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditNodeInsertingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListBatchEditNodeInsertingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditNodeDeleting event.
+    * A method that will handle the ASPxClientTreeList.BatchEditNodeRecovering event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListBatchEditNodeRecoveringEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditNodeDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditNodeDeletingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditNodeRecoveringEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientTreeListBatchEditNodeRecoveringEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditNodeInserting event.
+    * A method that will handle the ASPxClientTreeList.BatchEditNodeValidating event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditNodeValidatingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditNodeInsertingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditNodeInsertingEventArgs, Unit]
+  type ASPxClientTreeListBatchEditNodeValidatingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientTreeListBatchEditNodeValidatingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BatchEditNodeRecovering event.
+    * A method that will handle the ASPxClientTreeList.BatchEditStartEditing event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListBatchEditStartEditingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditNodeRecoveringEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditNodeRecoveringEventArgs, Unit]
+  type ASPxClientTreeListBatchEditStartEditingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListBatchEditStartEditingEventArgs, Unit]
   /**
-    * A method that will handle the BatchEditNodeValidating event.
+    * A method that will handle the ASPxClientTreeList.BatchEditTemplateCellFocused event.
+    * @param source The event sender.
+    * @param e A ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs object that contains event data.
     */
-  type ASPxClientTreeListBatchEditNodeValidatingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditNodeValidatingEventArgs, Unit]
-  /**
-    * A method that will handle the BatchEditStartEditing event.
-    */
-  type ASPxClientTreeListBatchEditStartEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditStartEditingEventArgs, Unit]
-  /**
-    * A method that will handle the BatchEditTemplateCellFocused event.
-    */
-  type ASPxClientTreeListBatchEditTemplateCellFocusedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientTreeListBatchEditTemplateCellFocusedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the client ColumnResized event.
+    * A method that will handle the ASPxClientTreeList.ColumnResized event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientTreeListColumnResizedEventArgs object that contains event data.
     */
-  type ASPxClientTreeListColumnResizedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListColumnResizedEventArgs, Unit]
+  type ASPxClientTreeListColumnResizedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListColumnResizedEventArgs, Unit]
   /**
-    * A method that will handle the client ColumnResizing event.
+    * A method that will handle the ASPxClientTreeList.ColumnResizing event.
+    * @param source The event source. Identifies the ASPxFileManager control that raised the event.
+    * @param e A ASPxClientTreeListColumnResizingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListColumnResizingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListColumnResizingEventArgs, Unit]
+  type ASPxClientTreeListColumnResizingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListColumnResizingEventArgs, Unit]
   /**
-    * A method that will handle the ContextMenu event.
+    * A method that will handle the ASPxClientTreeList.ContextMenu event.
+    * @param source The event sender.
+    * @param e An ASPxClientTreeListContextMenuEventArgs object that contains event data.
     */
-  type ASPxClientTreeListContextMenuEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListContextMenuEventArgs, Unit]
+  type ASPxClientTreeListContextMenuEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListContextMenuEventArgs, Unit]
   /**
-    * A method that will handle the CustomButtonClick event.
+    * A method that will handle the ASPxClientTreeList.CustomButtonClick event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListCustomButtonEventArgs object that contains event data.
     */
-  type ASPxClientTreeListCustomButtonEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListCustomButtonEventArgs, Unit]
+  type ASPxClientTreeListCustomButtonEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListCustomButtonEventArgs, Unit]
   /**
-    * A method that will handle the CustomDataCallback event.
+    * A method that will handle the ASPxClientTreeList.CustomDataCallback event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListCustomDataCallbackEventArgs object that contains event data.
     */
-  type ASPxClientTreeListCustomDataCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListCustomDataCallbackEventArgs, Unit]
+  type ASPxClientTreeListCustomDataCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListCustomDataCallbackEventArgs, Unit]
   /**
-    * A method that will handle the EndDragNode event.
+    * A method that will handle the ASPxClientTreeList.EndDragNode event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListEndDragNodeEventArgs object that contains event data.
     */
-  type ASPxClientTreeListEndDragNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListEndDragNodeEventArgs, Unit]
+  type ASPxClientTreeListEndDragNodeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListEndDragNodeEventArgs, Unit]
   /**
-    * A method that will handle the FocusedCellChanging event.
+    * A method that will handle the ASPxClientTreeList.FocusedCellChanging event.
+    * @param source The event source.
+    * @param e A ASPxClientTreeListFocusedCellChangingEventArgs object that contains event data.
     */
-  type ASPxClientTreeListFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListFocusedCellChangingEventArgs, Unit]
+  type ASPxClientTreeListFocusedCellChangingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListFocusedCellChangingEventArgs, Unit]
   /**
-    * A method that will handle the NodeDblClick event.
+    * A method that will handle the ASPxClientTreeList.NodeDblClick event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListNodeEventArgs object that contains event data.
     */
-  type ASPxClientTreeListNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListNodeEventArgs, Unit]
+  type ASPxClientTreeListNodeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListNodeEventArgs, Unit]
   /**
-    * A method that will handle the StartDragNode event.
+    * A method that will handle the ASPxClientTreeList.StartDragNode event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListStartDragNodeEventArgs object that contains event data.
     */
-  type ASPxClientTreeListStartDragNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListStartDragNodeEventArgs, Unit]
+  type ASPxClientTreeListStartDragNodeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListStartDragNodeEventArgs, Unit]
   /**
-    * A method that will handle the ToolbarItemClick event.
+    * A method that will handle the ASPxClientTreeList.ToolbarItemClick event.
+    * @param source The event source.
+    * @param e An ASPxClientTreeListToolbarItemClickEventArgs object that contains event data.
     */
-  type ASPxClientTreeListToolbarItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListToolbarItemClickEventArgs, Unit]
+  type ASPxClientTreeListToolbarItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeListToolbarItemClickEventArgs, Unit]
   /**
-    * Represents a JavaScript function which receives the list of row values when a specific client method (such as the GetSelectedNodeValues) is called.
+    * A JavaScript function which receives the list of row values when a specific client method (such as the ASPxClientTreeList.GetNodeValues or ASPxClientTreeList.GetSelectedNodeValues) is called.
+    * @param result An object that represents the list of row values received from the server.
     */
-  type ASPxClientTreeListValuesCallback = js.Function1[/* result */ js.Object, Unit]
+  type ASPxClientTreeListValuesCallback = js.Function1[/* result */ js.Any, Unit]
   /**
     * A method that will handle the ASPxTreeView's cancelable client events, concerning manipulations with nodes.
+    * @param source An object representing the event's source. Identifies the ASPxClientTreeView object that raised the event.
+    * @param e An ASPxClientTreeViewNodeCancelEventArgs object that contains event data.
     */
-  type ASPxClientTreeViewNodeCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeViewNodeCancelEventArgs, Unit]
+  type ASPxClientTreeViewNodeCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeViewNodeCancelEventArgs, Unit]
   /**
-    * A method that will handle the ASPxClientTreeView.ItemClick event.
+    * A method that will handle the ASPxClientTreeView.NodeClick event.
+    * @param source The ASPxClientTreeView control which fires the event.
+    * @param e An ASPxClientTreeViewNodeClickEventArgs object that contains event data.
     */
-  type ASPxClientTreeViewNodeClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeViewNodeClickEventArgs, Unit]
+  type ASPxClientTreeViewNodeClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeViewNodeClickEventArgs, Unit]
   /**
-    * A method that will handle the ASPxTreeView control's client events concerning manipulations with a node.
+    * A method that will handle the ASPxTreeView control's client events, concerning manipulations with a node.
+    * @param source An object representing the event's source. Identifies the ASPxClientTreeView control object that raised the event.
+    * @param e An ASPxClientTreeViewNodeEventArgs object that contains event data.
     */
-  type ASPxClientTreeViewNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeViewNodeEventArgs, Unit]
+  type ASPxClientTreeViewNodeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeViewNodeEventArgs, Unit]
   /**
     * A method that will handle the client events concerned with node processing.
+    * @param source An object representing the event source. Identifies the ASPxClientTreeView control that raised the event.
+    * @param e An ASPxClientTreeViewNodeProcessingModeEventArgs object that contains event data.
     */
-  type ASPxClientTreeViewNodeProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeViewNodeProcessingModeEventArgs, Unit]
+  type ASPxClientTreeViewNodeProcessingModeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientTreeViewNodeProcessingModeEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the TrendLine class.
+    * A method that will handle the ASPxClientUploadControl.DropZoneEnter event.
+    * @param source The event source. This parameter identifies the upload control object which raised the event.
+    * @param e An ASPxClientUploadControlDropZoneEnterEventArgs object that contains event data.
     */
-  type ASPxClientTrendLine = ASPxClientFinancialIndicator
+  type ASPxClientUploadControlDropZoneEnterEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientUploadControlDropZoneEnterEventArgs, Unit]
   /**
-    * The client-side equivalent of the TriangularMovingAverage class.
+    * A method that will handle the ASPxClientUploadControl.DropZoneLeave event.
+    * @param source The event source. Identifies the upload control object that raised the event.
+    * @param e A ASPxClientUploadControlDropZoneLeaveEventArgs object that contains event data.
     */
-  type ASPxClientTriangularMovingAverage = ASPxClientMovingAverage
+  type ASPxClientUploadControlDropZoneLeaveEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientUploadControlDropZoneLeaveEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the TripleExponentialMovingAverageTema class.
+    * A method that will handle the corresponding client event.
+    * @param source The event source. This parameter identifies the upload control which raised the event.
+    * @param e An ASPxClientUploadControlFileUploadCompleteEventArgs object that contains event data.
     */
-  type ASPxClientTripleExponentialMovingAverageTema = ASPxClientMovingAverage
+  type ASPxClientUploadControlFileUploadCompleteEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientUploadControlFileUploadCompleteEventArgs, 
+    Unit
+  ]
   /**
-    * Represents the client-side equivalent of the TypicalPrice class.
+    * A method that will handle the client ASPxClientUploadControl.FilesUploadComplete event.
+    * @param source The event source. This parameter identifies the upload control which raised the event.
+    * @param e A  object that contains event data.
     */
-  type ASPxClientTypicalPrice = ASPxClientIndicator
+  type ASPxClientUploadControlFilesUploadCompleteEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientUploadControlFilesUploadCompleteEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the DropZoneEnter event.
+    * A method that will handle the ASPxClientUploadControl.FilesUploadStart event.
+    * @param source The event source. Identifies the ASPxUploadControl control that raised the event.
+    * @param e A ASPxClientUploadControlFilesUploadStartEventArgs object that contains event data.
     */
-  type ASPxClientUploadControlDropZoneEnterEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlDropZoneEnterEventArgs, Unit]
+  type ASPxClientUploadControlFilesUploadStartEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientUploadControlFilesUploadStartEventArgs, Unit]
   /**
-    * A method that will handle the DropZoneLeave event.
+    * A method that will handle the ASPxClientUploadControl.TextChanged client event.
+    * @param source The event source. This parameter identifies the upload control which raised the event.
+    * @param e An ASPxClientUploadControlTextChangedEventArgs object that contains event data.
     */
-  type ASPxClientUploadControlDropZoneLeaveEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlDropZoneLeaveEventArgs, Unit]
+  type ASPxClientUploadControlTextChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientUploadControlTextChangedEventArgs, Unit]
   /**
-    * A method that handles the FileUploadComplete client event.
+    * A method that will handle the ASPxUploadControl's client event concerning the uploading process being changed.
+    * @param source An object representing the event's source. Identifies the ASPxUploadControl object that raised the event.
+    * @param e An ASPxClientUploadControlUploadingProgressChangedEventArgs object that contains event data.
     */
-  type ASPxClientUploadControlFileUploadCompleteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlFileUploadCompleteEventArgs, Unit]
-  /**
-    * A method that will handle the FilesUploadComplete client event.
-    */
-  type ASPxClientUploadControlFilesUploadCompleteEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlFilesUploadCompleteEventArgs, Unit]
-  /**
-    * A method that will handle the client FilesUploadStart event.
-    */
-  type ASPxClientUploadControlFilesUploadStartEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlFilesUploadStartEventArgs, Unit]
-  /**
-    * A method that will handle the TextChanged client event.
-    */
-  type ASPxClientUploadControlTextChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientUploadControlTextChangedEventArgs, Unit]
-  /**
-    * A method that will handle the ASPxUploadControl's client event, concerned with changes in upload progress.
-    */
-  type ASPxClientUploadControlUploadingProgressChangedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientUploadControlUploadingProgressChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientUploadControlUploadingProgressChangedEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the ValidationErrorOccurred client event.
+    * A method that will handle the ASPxClientUploadControl.ValidationErrorOccurred event.
+    * @param source The event source.
+    * @param e An ASPxClientUploadControlValidationErrorOccurredEventArgs object that contains event data.
     */
-  type ASPxClientUploadControlValidationErrorOccurredEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientUploadControlValidationErrorOccurredEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientUploadControlValidationErrorOccurredEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the ValidationCompleted client event.
+    * A method that will handle the ASPxClientGlobalEvents.ValidationCompleted event.
+    * @param source An object representing the event source. Identifies the ASPxClientGlobalEvents object that raised the event.
+    * @param e An ASPxClientValidationCompletedEventArgs object that contains event data.
     */
-  type ASPxClientValidationCompletedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientValidationCompletedEventArgs, Unit]
-  type ASPxClientValidationSummaryStatic = ASPxClientControlStatic
+  type ASPxClientValidationCompletedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientValidationCompletedEventArgs, Unit]
   /**
-    * A method that will handle the VisibilityChanged event.
+    * A method that will handle the ASPxClientValidationSummary.VisibilityChanged client event.
+    * @param source An object representing the event source.
+    * @param e A ASPxClientValidationSummaryVisibilityChangedEventArgs object that contains event data.
     */
-  type ASPxClientValidationSummaryVisibilityChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientValidationSummaryVisibilityChangedEventArgs, Unit]
+  type ASPxClientValidationSummaryVisibilityChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientValidationSummaryVisibilityChangedEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditChangesCanceling event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditChangesCanceling event.
+    * @param source The event source. This parameter identifies the vertical grid object which raised the event.
+    * @param e An ASPxClientVerticalGridBatchEditChangesCancelingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditChangesCancelingEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientVerticalGridBatchEditChangesCancelingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientVerticalGridBatchEditChangesCancelingEventArgs, 
     Unit
   ]
   /**
-    * Represents an object that will handle the client-side BatchEditChangesSaving event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditChangesSaving event.
+    * @param source The event source. This parameter identifies the vertical grid object which raised the event.
+    * @param e An ASPxClientVerticalGridBatchEditChangesSavingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditChangesSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridBatchEditChangesSavingEventArgs, Unit]
+  type ASPxClientVerticalGridBatchEditChangesSavingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridBatchEditChangesSavingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditConfirmShowing event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditConfirmShowing client event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridBatchEditConfirmShowingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditConfirmShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridBatchEditConfirmShowingEventArgs, Unit]
+  type ASPxClientVerticalGridBatchEditConfirmShowingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridBatchEditConfirmShowingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditEndEditing event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditEndEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridBatchEditEndEditingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditEndEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridBatchEditEndEditingEventArgs, Unit]
+  type ASPxClientVerticalGridBatchEditEndEditingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridBatchEditEndEditingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditRecordDeleting event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditRecordDeleting event.
+    * @param source The event source. This parameter identifies the vertical grid object which raised the event.
+    * @param e An ASPxClientVerticalGridBatchEditRecordDeletingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditRecordDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridBatchEditRecordDeletingEventArgs, Unit]
+  type ASPxClientVerticalGridBatchEditRecordDeletingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridBatchEditRecordDeletingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditRecordInserting event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditRecordInserting event.
+    * @param source The event source. This parameter identifies the vertical grid object which raised the event.
+    * @param e An ASPxClientVerticalGridBatchEditRecordInsertingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditRecordInsertingEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientVerticalGridBatchEditRecordInsertingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientVerticalGridBatchEditRecordInsertingEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the BatchEditRecordRecovering event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditRecordRecovering event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditRecordRecoveringEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientVerticalGridBatchEditRecordRecoveringEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs, 
     Unit
   ]
   /**
-    * Represents an object that will handle the client-side BatchEditRecordValidating event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditRecordValidating event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridBatchEditRecordValidatingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditRecordValidatingEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientVerticalGridBatchEditRecordValidatingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientVerticalGridBatchEditRecordValidatingEventArgs, 
     Unit
   ]
   /**
-    * Represents an object that will handle the client-side BatchEditStartEditing event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditStartEditing event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridBatchEditStartEditingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditStartEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridBatchEditStartEditingEventArgs, Unit]
+  type ASPxClientVerticalGridBatchEditStartEditingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridBatchEditStartEditingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents an object that will handle the client-side BatchEditTemplateCellFocused event.
+    * A method that will handle the ASPxClientVerticalGrid.BatchEditTemplateCellFocused event.
+    * @param source An object representing the event source. Identifies the button editor that raised the event.
+    * @param e An ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridBatchEditTemplateCellFocusedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientVerticalGridBatchEditTemplateCellFocusedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the CustomButtonClick event.
+    * A method that will handle the ASPxClientVerticalGrid.CustomButtonClick event.
+    * @param source The event source.
+  This parameter identifies the ASPxClientVerticalGrid object that raised the event.
+    * @param e An ASPxClientVerticalGridCustomButtonEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridCustomButtonEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridCustomButtonEventArgs, Unit]
+  type ASPxClientVerticalGridCustomButtonEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridCustomButtonEventArgs, Unit]
   /**
-    * Lists values that specify the document formats available for export from the grid.
+    * A method that will handle the ASPxClientVerticalGrid.FocusedCellChanging event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridFocusedCellChangingEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridExportFormat = ASPxClientGridExportFormat
-  type ASPxClientVerticalGridExportFormatStatic = ASPxClientGridExportFormatStatic
+  type ASPxClientVerticalGridFocusedCellChangingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientVerticalGridFocusedCellChangingEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the FocusedCellChanging event.
+    * A method that will handle the ASPxClientVerticalGrid.RecordClick event.
+    * @param source The event source. This parameter identifies the ASPxClientVerticalGrid object that raised the event.
+    * @param e An ASPxClientVerticalGridRecordClickEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridFocusedCellChangingEventArgs, Unit]
+  type ASPxClientVerticalGridRecordClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridRecordClickEventArgs, Unit]
   /**
-    * A method that will handle the RecordClick event.
+    * A method that will handle the cancelable events of a client ASPxVerticalGrid row.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridRowCancelEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridRecordClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridRecordClickEventArgs, Unit]
+  type ASPxClientVerticalGridRowCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridRowCancelEventArgs, Unit]
   /**
-    * A method that will handle the CustomButtonClick event.
+    * A method that will handle the ASPxClientVerticalGrid.RowExpandedChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridRowExpandedEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridRowCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridRowCancelEventArgs, Unit]
+  type ASPxClientVerticalGridRowExpandedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridRowExpandedEventArgs, Unit]
   /**
-    * A method that will handle the RowExpandedChanged event.
+    * A method that will handle the ASPxClientVerticalGrid.RowExpandedChanging event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridRowExpandedEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridRowExpandedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridRowExpandedEventArgs, Unit]
+  type ASPxClientVerticalGridRowExpandingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridRowExpandingEventArgs, Unit]
   /**
-    * A method that will handle the RowExpandedChanging event.
+    * A method that will handle the ASPxClientVerticalGrid.SelectionChanged event.
+    * @param source The event source.
+    * @param e An ASPxClientVerticalGridSelectionEventArgs object that contains event data.
     */
-  type ASPxClientVerticalGridRowExpandingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridRowExpandingEventArgs, Unit]
+  type ASPxClientVerticalGridSelectionEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientVerticalGridSelectionEventArgs, Unit]
   /**
-    * A method that will handle the SelectionChanged event.
+    * Represents a JavaScript function which receives the list of record values when the client ASPxClientVerticalGrid.GetRecordValues, ASPxVerticalGrid.GetCurrentPageRecordValues or ASPxClientVerticalGrid.GetSelectedFieldValues method is called.
+    * @param result An object that represents the list of record values received from the server.
     */
-  type ASPxClientVerticalGridSelectionEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientVerticalGridSelectionEventArgs, Unit]
+  type ASPxClientVerticalGridValuesCallback = js.Function1[/* result */ js.Any, Unit]
   /**
-    * Represents a JavaScript function which receives the list of record values when the client GetSelectedFieldValues method is called.
+    * A method that will handle the ASPxClientWebChartControl.CustomDrawCrosshair event.
+    * @param source The event source. This parameter identifies the ASPxClientWebChart.chartControl which raised the event.
+    * @param e An ASPxClientWebChartControlCustomDrawCrosshairEventArgs object which contains event data.
     */
-  type ASPxClientVerticalGridValuesCallback = js.Function1[/* result */ js.Object, Unit]
+  type ASPxClientWebChartControlCustomDrawCrosshairEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientWebChartControlCustomDrawCrosshairEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the CustomDrawCrosshair  event.
+    * Represents a method that will handle the ASPxClientWebChartControl.ObjectHotTracked and ASPxClientWebChartControl.ObjectSelected events.
+    * @param source The event source. This parameter identifies the ASPxClientWebChartControl which raised the event.
+    * @param e An ASPxClientWebChartControlHotTrackEventArgs object which contains event data.
     */
-  type ASPxClientWebChartControlCustomDrawCrosshairEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientWebChartControlCustomDrawCrosshairEventArgs, Unit]
+  type ASPxClientWebChartControlHotTrackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientWebChartControlHotTrackEventArgs, Unit]
   /**
-    * Represents a method that will handle the ObjectSelected events.
+    * A method that will handle the ASPxClientWebDocumentViewer.BeforeRender event.
+    * @param source The event sender.
+    * @param previewModel A client-side Document Viewer model.
     */
-  type ASPxClientWebChartControlHotTrackEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientWebChartControlHotTrackEventArgs, Unit]
+  type ASPxClientWebDocumentViewerBeforeRenderEventHandler[Sender] = js.Function2[/* source */ Sender, /* previewModel */ js.Any, Unit]
   /**
-    * Represents a base class for chart elements, which are not necessarily required to be present on the client side.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeElements or ASPxClientReportDesigner.PreviewCustomizeElements event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeElementsEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebChartEmptyElement = ASPxClientWebChartElement
+  type ASPxClientWebDocumentViewerCustomizeElementsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeElementsEventArgs, Unit]
   /**
-    * Represents a base class for chart elements, which are required to be present on the client side.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeExportOptions event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeExportOptionsEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebChartRequiredElement = ASPxClientWebChartElement
+  type ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeExportOptionsEventArgs, Unit]
   /**
-    * A method that will handle the BeforeRender event.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeLocalization event.
+    * @param source The event sender.
     */
-  type ASPxClientWebDocumentViewerBeforeRenderEventHandler[S] = js.Function2[/* source */ S, /* previewModel */ js.Object, Unit]
+  type ASPxClientWebDocumentViewerCustomizeLocalizationEventHandler[Sender] = js.Function1[/* source */ Sender, Unit]
   /**
-    * A method that will handle the CustomizeElements event.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeMenuActions event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeMenuActionsEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerCustomizeElementsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeElementsEventArgs, Unit]
-  type ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeExportOptionsEventArgs, Unit]
+  type ASPxClientWebDocumentViewerCustomizeMenuActionsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeLocalization event.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeParameterEditors event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeParameterEditorsEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerCustomizeLocalizationEventHandler[S] = js.Function1[/* source */ S, Unit]
+  type ASPxClientWebDocumentViewerCustomizeParameterEditorsEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeParameterEditorsEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeMenuActions event.
+    * A method that will handle the ASPxClientWebDocumentViewer.CustomizeParameterLookUpSource event.
+    * @param source The event sender.
+    * @param e An ASPxClientCustomizeParameterLookUpSourceEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerCustomizeMenuActionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeMenuActionsEventArgs, Unit]
+  type ASPxClientWebDocumentViewerCustomizeParameterLookUpSourceEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeParameterLookUpSourceEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeParameterEditors event.
+    * A method that will handle the ASPxClientWebDocumentViewer.DocumentReady or ASPxClientReportDesigner.PreviewDocumentReady event.
+    * @param source The event sender.
+    * @param e An ASPxClientWebDocumentViewerDocumentReadyEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerCustomizeParameterEditorsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeParameterEditorsEventArgs, Unit]
+  type ASPxClientWebDocumentViewerDocumentReadyEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientWebDocumentViewerDocumentReadyEventArgs, Unit]
   /**
-    * A method that will handle the CustomizeParameterLookUpSource event.
+    * A method that will handle the ASPxClientWebDocumentViewer.EditingFieldChanged or ASPxClientReportDesigner.PreviewEditingFieldChanged event.
+    * @param source The event sender.
+    * @param e An ASPxClientWebDocumentViewerEditingFieldChangedEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerCustomizeParameterLookUpSourceEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeParameterLookUpSourceEventArgs, Unit]
-  /**
-    * A method that will handle the DocumentReady event.
-    */
-  type ASPxClientWebDocumentViewerDocumentReadyEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientWebDocumentViewerDocumentReadyEventArgs, Unit]
-  /**
-    * A method that will handle the EditingFieldChanged event.
-    */
-  type ASPxClientWebDocumentViewerEditingFieldChangedEventHandler[S] = js.Function2[
-    /* source */ S, 
+  type ASPxClientWebDocumentViewerEditingFieldChangedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
     /* e */ ASPxClientWebDocumentViewerEditingFieldChangedEventArgs, 
     Unit
   ]
   /**
-    * A method that will handle the ParametersReset event.
+    * A method that will handle the ASPxClientWebDocumentViewer.OnServerError event.
+    * @param source The event sender.
+    * @param e An ASPxClientErrorEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerParametersResetEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientParametersResetEventArgs, Unit]
+  type ASPxClientWebDocumentViewerErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientErrorEventArgs, Unit]
   /**
-    * A method that will handle the ParametersSubmitted event.
+    * A method that will handle the ASPxClientWebDocumentViewer.ParametersReset or ASPxClientReportDesigner.PreviewParametersReset event.
+    * @param source The event sender.
+    * @param e An ASPxClientParametersResetEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerParametersSubmittedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientParametersSubmittedEventArgs, Unit]
+  type ASPxClientWebDocumentViewerParametersResetEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientParametersResetEventArgs, Unit]
   /**
-    * A method that will handle the PreviewClick event.
+    * A method that will handle the ASPxClientWebDocumentViewer.ParametersSubmitted or ASPxClientReportDesigner.PreviewParametersSubmitted event.
+    * @param source The event sender.
+    * @param e An ASPxClientParametersSubmittedEventArgs object that contains data related to the event.
     */
-  type ASPxClientWebDocumentViewerPreviewClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientPreviewClickEventArgs, Unit]
-  type ASPxClientWeekDaysCheckEditStatic = ASPxClientControlStatic
-  type ASPxClientWeeklyRecurrenceControlStatic = ASPxClientRecurrenceControlBaseStatic
+  type ASPxClientWebDocumentViewerParametersSubmittedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientParametersSubmittedEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the WeightedClose class.
+    * A method that will handle the ASPxClientWebDocumentViewer.PreviewClick or ASPxClientReportDesigner.PreviewClick event.
+    * @param source The event sender.
+    * @param e An ASPxClientPreviewClickEventArgs object that contains data related to the event.
     */
-  type ASPxClientWeightedClose = ASPxClientIndicator
+  type ASPxClientWebDocumentViewerPreviewClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientPreviewClickEventArgs, Unit]
   /**
-    * The client-side equivalent of the WeightedMovingAverage class.
+    * A method that will handle the ASPxClientSpellChecker.AfterCheck event.
+    * @param source The event source.
+    * @param e An ASPxClientSpellCheckerAfterCheckEventArgs object which contains event data.
     */
-  type ASPxClientWeightedMovingAverage = ASPxClientMovingAverage
+  type ASPxClientWordChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSpellCheckerAfterCheckEventArgs, Unit]
   /**
-    * Represents an object that will handle the client-side WordChanged event.
+    * A method that will handle the ASPxClientScheduler.ActiveViewChanging event.
+    * @param source The ASPxClientScheduler control which fires the event.
+    * @param e An ActiveViewChangingEventArgs object that contains event data
     */
-  type ASPxClientWordChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpellCheckerAfterCheckEventArgs, Unit]
+  type ActiveViewChangingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ActiveViewChangingEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the XYDiagram3D class.
+    * A method that will handle the ASPxClientScheduler.AppointmentClick event.
+    * @param source The event sender (typically an ASPxClientScheduler control).
+    * @param e A AppointmentClickEventArgs object that contains event data.
     */
-  type ASPxClientXYDiagram3D = ASPxClientXYDiagramBase
-  type ASPxClientYearlyRecurrenceControlStatic = ASPxClientRecurrenceControlBaseStatic
+  type AppointmentClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ AppointmentClickEventArgs, Unit]
   /**
-    * A method that will handle the ActiveViewChanging event.
+    * A method that will handle the ASPxClientScheduler.AppointmentDrag event.
+    * @param source The event sender (typically an ASPxClientScheduler object).
+    * @param e A ASPxClientAppointmentDragEventArgs object that contains event data.
     */
-  type ActiveViewChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ActiveViewChangingEventArgs, Unit]
-  type AppointmentClickEventHandler[S] = js.Function2[/* source */ S, /* e */ AppointmentClickEventArgs, Unit]
+  type AppointmentDragEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentDragEventArgs, Unit]
   /**
-    * A method that will handle the AppointmentDrag event.
+    * A method that will handle the ASPxClientScheduler.AppointmentDrop event.
+    * @param source The event sender (typically an ASPxClientScheduler object).
+    * @param e A ASPxClientAppointmentDropEventArgs object that contains event data.
     */
-  type AppointmentDragEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentDragEventArgs, Unit]
+  type AppointmentDropEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentDropEventArgs, Unit]
   /**
-    * A method that will handle the AppointmentDrop event.
+    * A method that will handle the ASPxClientScheduler.AppointmentResize event.
+    * @param source The event sender (typically an ASPxClientScheduler control).
+    * @param e A ASPxClientAppointmentResizeEventArgs object that contains event data.
     */
-  type AppointmentDropEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentDropEventArgs, Unit]
-  type AppointmentResizeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentResizeEventArgs, Unit]
+  type AppointmentResizeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentResizeEventArgs, Unit]
   /**
-    * A method that will handle the AppointmentResizing event.
+    * A method that will handle the ASPxClientScheduler.AppointmentResizing event.
+    * @param source The event sender (typically an ASPxClientScheduler object).
+    * @param e A ASPxClientAppointmentResizingEventArgs object that contains event data.
     */
-  type AppointmentResizingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientAppointmentResizingEventArgs, Unit]
+  type AppointmentResizingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientAppointmentResizingEventArgs, Unit]
   /**
-    * A method that will handle the AppointmentsSelectionChanged event.
+    * A method that will handle the ASPxClientScheduler.AppointmentsSelectionChanged event.
+    * @param source The ASPxScheduler control which fires the event.
+    * @param e A AppointmentsSelectionEventArgs object that contains event data.
     */
-  type AppointmentsSelectionEventHandler[S] = js.Function2[/* source */ S, /* e */ AppointmentsSelectionEventArgs, Unit]
+  type AppointmentsSelectionEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ AppointmentsSelectionEventArgs, Unit]
   /**
     * A method that will handle the Accordion control's cancelable client events concerning manipulations with a group.
+    * @param source An object representing the event source. Identifies the BootstrapClientAccordion control that raised the event.
+    * @param e An BootstrapClientAccordionGroupCancelEventArgs object that contains event data.
     */
-  type BootstrapClientAccordionGroupCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientAccordionGroupCancelEventArgs, Unit]
+  type BootstrapClientAccordionGroupCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientAccordionGroupCancelEventArgs, Unit]
   /**
     * A method that will handle the Accordion control's client events concerning clicks on groups.
+    * @param source An object representing the event source. Identifies the BootstrapClientAccordion control that raised the event.
+    * @param e An BootstrapClientAccordionGroupClickEventArgs object that contains event data.
     */
-  type BootstrapClientAccordionGroupClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientAccordionGroupClickEventArgs, Unit]
+  type BootstrapClientAccordionGroupClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientAccordionGroupClickEventArgs, Unit]
   /**
     * A method that will handle the Accordion control's client events concerning manipulations with a group.
+    * @param source An object representing the event source. Identifies the BootstrapClientAccordion control that raised the event.
+    * @param e An BootstrapClientAccordionGroupEventArgs object that contains event data.
     */
-  type BootstrapClientAccordionGroupEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientAccordionGroupEventArgs, Unit]
+  type BootstrapClientAccordionGroupEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientAccordionGroupEventArgs, Unit]
   /**
     * A method that will handle the Accordion control's client events concerning manipulations with an item.
+    * @param source An object representing the event source. Identifies the BootstrapClientAccordion control that raised the event.
+    * @param e An BootstrapClientAccordionItemEventArgs object that contains event data.
     */
-  type BootstrapClientAccordionItemEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientAccordionItemEventArgs, Unit]
-  type BootstrapClientAccordionStatic = ASPxClientNavBarStatic
+  type BootstrapClientAccordionItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientAccordionItemEventArgs, Unit]
   /**
-    * Represents the client-side equivalent of the BootstrapBinaryImage control.
+    * A method that will handle the BootstrapClientChartBase.Done event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapClientBinaryImage = ASPxClientHyperLink
-  type BootstrapClientBinaryImageStatic = ASPxClientHyperLinkStatic
+  type BootstrapClientChartBaseDoneEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * Represents a client-side equivalent of the BootstrapButtonEdit control.
+    * A method that will handle the BootstrapClientChartBase.LegendClick event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
     */
-  type BootstrapClientButtonEdit = ASPxClientButtonEdit
-  type BootstrapClientButtonEditStatic = ASPxClientButtonEditStatic
-  type BootstrapClientButtonStatic = ASPxClientButtonStatic
+  type BootstrapClientChartBaseLegendClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * Represents a client-side equivalent of the BootstrapCalendar control.
+    * A method that will handle the BootstrapClientChartBase.PointClick event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
     */
-  type BootstrapClientCalendar = ASPxClientCalendar
-  type BootstrapClientCalendarStatic = ASPxClientCalendarStatic
-  type BootstrapClientCallbackPanelStatic = ASPxClientControlStatic
+  type BootstrapClientChartBasePointClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * Represents the client BootstrapCardView.
+    * A method that will handle the BootstrapClientChartBase.PointHoverChanged event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientCardView = ASPxClientCardView
-  type BootstrapClientCardViewStatic = ASPxClientCardViewStatic
+  type BootstrapClientChartBasePointHoverChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Done event.
+    * A method that will handle the BootstrapClientChartBase.PointSelectionChanged event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientChartBaseDoneEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
+  type BootstrapClientChartBasePointSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the LegendClick event.
+    * A method that will handle the BootstrapClientChartBase.TooltipHidden event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientChartBaseLegendClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementClickEventArgs, Unit]
+  type BootstrapClientChartBaseTooltipHiddenEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the PointClick event.
+    * A method that will handle the BootstrapClientChartBase.TooltipShown event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientChartBasePointClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementClickEventArgs, Unit]
+  type BootstrapClientChartBaseTooltipShownEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the PointHoverChanged event.
+    * A method that will handle the BootstrapClientChart.ZoomEnd event.
+    * @param source The event source.
+    * @param e A BootstrapClientChartZoomEndEventArgs object that contains event data.
     */
-  type BootstrapClientChartBasePointHoverChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
+  type BootstrapClientChartZoomEndEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the PointSelectionChanged event.
+    * A method that will handle the BootstrapClientChart.ZoomStart event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapClientChartBasePointSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
-  type BootstrapClientChartBaseStatic = BootstrapUIWidgetBaseStatic
-  /**
-    * A method that will handle the TooltipHidden event.
-    */
-  type BootstrapClientChartBaseTooltipHiddenEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
-  /**
-    * A method that will handle the TooltipShown event.
-    */
-  type BootstrapClientChartBaseTooltipShownEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
-  type BootstrapClientChartStatic = BootstrapClientChartBaseStatic
-  /**
-    * A method that will handle the ZoomEnd event.
-    */
-  type BootstrapClientChartZoomEndEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientChartZoomEndEventArgs, Unit]
-  /**
-    * A method that will handle the ZoomStart event.
-    */
-  type BootstrapClientChartZoomStartEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
-  /**
-    * Represents a client-side equivalent of the BootstrapCheckBoxList control.
-    */
-  type BootstrapClientCheckBoxList = ASPxClientCheckBoxList
-  type BootstrapClientCheckBoxListStatic = ASPxClientCheckBoxListStatic
-  type BootstrapClientCheckBoxStatic = ASPxClientEditStatic
-  type BootstrapClientComboBoxStatic = ASPxClientComboBoxStatic
+  type BootstrapClientChartZoomStartEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the Invoke event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
     */
-  type BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementClickEventArgs, Unit]
+  type BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the SeriesClick event.
+    * A method that will handle the BootstrapClientChartBase.SeriesClick event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
     */
-  type BootstrapClientCoordinateSystemChartSeriesClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementClickEventArgs, Unit]
+  type BootstrapClientCoordinateSystemChartSeriesClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the SeriesHoverChanged event.
+    * A method that will handle the BootstrapClientChartBase.SeriesHoverChanged event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientCoordinateSystemChartSeriesHoverChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
+  type BootstrapClientCoordinateSystemChartSeriesHoverChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the SeriesSelectionChanged event.
+    * A method that will handle the BootstrapClientChartBase.SeriesSelectionChanged event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
     */
-  type BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, Unit]
-  type BootstrapClientDateEditStatic = ASPxClientDateEditStatic
+  type BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
+  type BootstrapClientFloatingActionButtonContextChangingEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ BootstrapClientFloatingActionButtonContextChangingEventArgs, 
+    Unit
+  ]
   /**
-    * Represents a client-side equivalent of the BootstrapDropDownEdit control.
+    * A method that will handle client ASPxClientMenuBase.ItemClick events.
+    * @param source An object representing the event source. Identifies the BootstrapMenu control that raised the event.
+    * @param e An BootstrapClientMenuItemClickEventArgs object that contains event data.
     */
-  type BootstrapClientDropDownEdit = ASPxClientDropDownEdit
-  type BootstrapClientDropDownEditStatic = ASPxClientDropDownEditStatic
-  type BootstrapClientFileManager = ASPxClientFileManager
-  type BootstrapClientFileManagerStatic = ASPxClientFileManagerStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapFormLayout control.
-    */
-  type BootstrapClientFormLayout = ASPxClientFormLayout
-  type BootstrapClientFormLayoutStatic = ASPxClientFormLayoutStatic
-  /**
-    * Represents the client BootstrapGridView.
-    */
-  type BootstrapClientGridView = ASPxClientGridView
-  type BootstrapClientGridViewStatic = ASPxClientGridViewStatic
-  type BootstrapClientHyperLinkStatic = ASPxClientHyperLinkStatic
-  /**
-    * Represents the client-side equivalent of the BootstrapImage control.
-    */
-  type BootstrapClientImage = ASPxClientImage
-  type BootstrapClientImageStatic = ASPxClientImageStatic
-  type BootstrapClientListBoxStatic = ASPxClientListBoxStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapMemo control.
-    */
-  type BootstrapClientMemo = ASPxClientMemo
-  type BootstrapClientMemoStatic = ASPxClientMemoStatic
-  /**
-    * A method that will handle client ItemClick events.
-    */
-  type BootstrapClientMenuItemClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientMenuItemClickEventArgs, Unit]
+  type BootstrapClientMenuItemClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientMenuItemClickEventArgs, Unit]
   /**
     * A method that will handle the menu's client events concerning manipulations with an item.
+    * @param source An object representing the event source. Identifies the BootstrapMenu control that raised the event.
+    * @param e An BootstrapClientMenuItemEventArgs object that contains event data.
     */
-  type BootstrapClientMenuItemEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientMenuItemEventArgs, Unit]
+  type BootstrapClientMenuItemEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientMenuItemEventArgs, Unit]
   /**
-    * Provides data for client events related to mouse hovering over menu items.
+    * A method that will handle the ASPxClientMenuBase.ItemMouseOut and ASPxClientMenuBase.ItemMouseOver events.
+    * @param source An object representing the event source. Identifies the BootstrapMenu control that raised the event.
+    * @param e An BootstrapClientMenuItemMouseEventArgs object that contains event data.
     */
-  type BootstrapClientMenuItemMouseEventArgs = BootstrapClientMenuItemEventArgs
+  type BootstrapClientMenuItemMouseEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientMenuItemMouseEventArgs, Unit]
   /**
-    * A method that will handle the ItemMouseOver events.
+    * A method that will handle the BootstrapClientRangeSelector.ValueChanged event.
+    * @param source The event source.
+    * @param e A BootstrapClientRangeSelectorValueChangedEventArgs object that contains event data.
     */
-  type BootstrapClientMenuItemMouseEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientMenuItemMouseEventArgs, Unit]
-  type BootstrapClientMenuStatic = ASPxClientMenuStatic
-  type BootstrapClientPageControlStatic = ASPxClientPageControlStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapPager control.
-    */
-  type BootstrapClientPager = ASPxClientPager
-  type BootstrapClientPagerStatic = ASPxClientPagerStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapPieChart control.
-    */
-  type BootstrapClientPieChart = BootstrapClientChartBase
-  type BootstrapClientPieChartStatic = BootstrapClientChartBaseStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapPolarChart control.
-    */
-  type BootstrapClientPolarChart = BootstrapClientChartBase
-  type BootstrapClientPolarChartStatic = BootstrapClientChartBaseStatic
-  type BootstrapClientPopupControlStatic = ASPxClientPopupControlStatic
-  type BootstrapClientPopupMenuStatic = ASPxClientPopupMenuStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapProgressBar control.
-    */
-  type BootstrapClientProgressBar = ASPxClientProgressBar
-  type BootstrapClientProgressBarStatic = ASPxClientProgressBarStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapRadioButton control.
-    */
-  type BootstrapClientRadioButton = BootstrapClientCheckBox
-  /**
-    * Represents a client-side equivalent of the BootstrapRadioButtonList control.
-    */
-  type BootstrapClientRadioButtonList = ASPxClientRadioButtonList
-  type BootstrapClientRadioButtonListStatic = ASPxClientRadioButtonListStatic
-  type BootstrapClientRadioButtonStatic = BootstrapClientCheckBoxStatic
-  type BootstrapClientRangeSelectorStatic = BootstrapUIWidgetBaseStatic
-  /**
-    * A method that will handle the ValueChanged event.
-    */
-  type BootstrapClientRangeSelectorValueChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientRangeSelectorValueChangedEventArgs, Unit]
-  type BootstrapClientRibbonStatic = ASPxClientRibbonStatic
-  type BootstrapClientRichEdit = ASPxClientRichEdit
-  type BootstrapClientRichEditStatic = ASPxClientRichEditStatic
-  type BootstrapClientSparklineOptionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetOptionChangedEventArgs, Unit]
-  type BootstrapClientSparklineStatic = BootstrapUIWidgetBaseStatic
-  type BootstrapClientSparklineTooltipHiddenEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
-  type BootstrapClientSparklineTooltipShownEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
-  /**
-    * Represents a client-side equivalent of the BootstrapSpinEdit control.
-    */
-  type BootstrapClientSpinEdit = ASPxClientSpinEdit
-  type BootstrapClientSpinEditStatic = ASPxClientSpinEditStatic
-  type BootstrapClientTabControlStatic = ASPxClientTabControlStatic
+  type BootstrapClientRangeSelectorValueChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
+  type BootstrapClientSparklineTooltipHiddenEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
+  type BootstrapClientSparklineTooltipShownEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle a tab control's cancelable client events concerning manipulations with a tab.
+    * @param source An object representing the event source. Identifies the BootstrapTabControl that raised the event.
+    * @param e An BootstrapClientTabControlTabCancelEventArgs object that contains event data.
     */
-  type BootstrapClientTabControlTabCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTabControlTabCancelEventArgs, Unit]
+  type BootstrapClientTabControlTabCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTabControlTabCancelEventArgs, Unit]
   /**
     * A method that will handle client events concerning clicks on tabs.
+    * @param source An object representing the event source. Identifies the BootstrapTabControl that raised the event.
+    * @param e An BootstrapClientTabControlTabClickEventArgs object that contains event data.
     */
-  type BootstrapClientTabControlTabClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTabControlTabClickEventArgs, Unit]
+  type BootstrapClientTabControlTabClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTabControlTabClickEventArgs, Unit]
   /**
     * A method that will handle a tab control's client events concerning manipulations with a tab.
+    * @param source An object representing the event source. Identifies the BootstrapClientTabControl that raised the event.
+    * @param e An BootstrapClientTabControlTabEventArgs object that contains event data.
     */
-  type BootstrapClientTabControlTabEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTabControlTabEventArgs, Unit]
-  type BootstrapClientTagBoxStatic = ASPxClientTokenBoxStatic
-  /**
-    * Represents a client-side equivalent of the BootstrapTextBox control.
-    */
-  type BootstrapClientTextBox = ASPxClientTextBox
-  type BootstrapClientTextBoxStatic = ASPxClientTextBoxStatic
-  /**
-    * Represents the client-side equivalent of the BootstrapClientTimeEdit control.
-    */
-  type BootstrapClientTimeEdit = ASPxClientTimeEdit
-  type BootstrapClientTimeEditStatic = ASPxClientTimeEditStatic
-  /**
-    * Represents the client-side equivalent of the BootstrapToolbar control.
-    */
-  type BootstrapClientToolbar = BootstrapClientMenu
-  type BootstrapClientToolbarStatic = BootstrapClientMenuStatic
+  type BootstrapClientTabControlTabEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTabControlTabEventArgs, Unit]
   /**
     * A method that will handle the Tree View's cancelable client events, concerning manipulations with nodes.
+    * @param source An object representing the event source. Identifies the BootstrapClientTreeView control that raised the event.
+    * @param e An BootstrapClientTreeViewNodeCancelEventArgs object that contains event data.
     */
-  type BootstrapClientTreeViewNodeCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTreeViewNodeCancelEventArgs, Unit]
+  type BootstrapClientTreeViewNodeCancelEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTreeViewNodeCancelEventArgs, Unit]
   /**
-    * A method that will handle the NodeClick event.
+    * A method that will handle the ASPxClientTreeView.NodeClick event.
+    * @param source An object representing the event source. Identifies the BootstrapClientTreeView control that raised the event.
+    * @param e An BootstrapClientTreeViewNodeClickEventArgs object that contains event data.
     */
-  type BootstrapClientTreeViewNodeClickEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTreeViewNodeClickEventArgs, Unit]
+  type BootstrapClientTreeViewNodeClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTreeViewNodeClickEventArgs, Unit]
   /**
     * A method that will handle the Tree View control's client events, concerning manipulations with a node.
+    * @param source An object representing the event source. Identifies the BootstrapClientTreeView control that raised the event.
+    * @param e An BootstrapClientTreeViewNodeEventArgs object that contains event data.
     */
-  type BootstrapClientTreeViewNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTreeViewNodeEventArgs, Unit]
+  type BootstrapClientTreeViewNodeEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ BootstrapClientTreeViewNodeEventArgs, Unit]
   /**
     * A method that will handle the client events concerned with node processing.
+    * @param source An object representing the event source. Identifies the BootstrapClientTreeView control that raised the event.
+    * @param e An BootstrapClientTreeViewNodeProcessingModeEventArgs object that contains event data.
     */
-  type BootstrapClientTreeViewNodeProcessingModeEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientTreeViewNodeProcessingModeEventArgs, Unit]
-  type BootstrapClientTreeViewStatic = ASPxClientTreeViewStatic
+  type BootstrapClientTreeViewNodeProcessingModeEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ BootstrapClientTreeViewNodeProcessingModeEventArgs, 
+    Unit
+  ]
   /**
-    * Represents a client-side equivalent of the BootstrapUploadControl.
+    * A method that will handle the BootstrapUIWidgetBase.Disposing event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapClientUploadControl = ASPxClientUploadControl
-  type BootstrapClientUploadControlStatic = ASPxClientUploadControlStatic
-  type BootstrapUIWidgetBaseStatic = ASPxClientControlStatic
+  type BootstrapUIWidgetDisposingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Disposing event.
+    * A method that will handle the BootstrapUIWidgetBase.Drawn event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapUIWidgetDisposingEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
+  type BootstrapUIWidgetDrawnEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Drawn event.
+    * A method that will handle the BootstrapUIWidgetBase.IncidentOccurred event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetErrorEventArgs object that contains event data.
     */
-  type BootstrapUIWidgetDrawnEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
+  type BootstrapUIWidgetErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the IncidentOccurred event.
+    * A method that will handle the BootstrapUIWidgetBase.Exported event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapUIWidgetErrorEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetErrorEventArgs, Unit]
+  type BootstrapUIWidgetExportedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Exported event.
+    * A method that will handle the BootstrapUIWidgetBase.Exporting event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetExportEventArgs object that contains event data.
     */
-  type BootstrapUIWidgetExportedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
+  type BootstrapUIWidgetExportingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Exporting event.
+    * A method that will handle the BootstrapUIWidgetBase.FileSaving event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetExportEventArgs object that contains event data.
     */
-  type BootstrapUIWidgetExportingEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetExportEventArgs, Unit]
+  type BootstrapUIWidgetFileSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the FileSaving event.
+    * A method that will handle the BootstrapUIWidgetBase.Init event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
     */
-  type BootstrapUIWidgetFileSavingEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetExportEventArgs, Unit]
+  type BootstrapUIWidgetInitializedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the Init event.
+    * A method that will handle the BootstrapUIWidgetBase.OptionChanged event.
+    * @param source The event source.
+    * @param e A BootstrapUIWidgetOptionChangedEventArgs object that contains event data.
     */
-  type BootstrapUIWidgetInitializedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, Unit]
+  type BootstrapUIWidgetOptionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
-    * A method that will handle the OptionChanged event.
+    * A method that will handle the ASPxClientScheduler.CellClick event.
+    * @param source The event source.
+    * @param e A ASPxClientSchedulerCellClickEventArgs object that contains event data
     */
-  type BootstrapUIWidgetOptionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetOptionChangedEventArgs, Unit]
+  type CellClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSchedulerCellClickEventArgs, Unit]
   /**
-    * A method that will handle the CellDoubleClick events.
+    * A method that will handle the MVCxClientReportViewer.BeforeExportRequest event.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientBeforeExportRequestEventArgs object that contains event data.
     */
-  type CellClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSchedulerCellClickEventArgs, Unit]
-  /**
-    * Contains floating pictures settings.
-    */
-  type FloatingPictureInfo = FloatingObjectInfo
-  /**
-    * A method that will handle the BeforeExportRequest event.
-    */
-  type MVCxClientBeforeExportRequestEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientBeforeExportRequestEventArgs, Unit]
+  type MVCxClientBeforeExportRequestEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MVCxClientBeforeExportRequestEventArgs, Unit]
   /**
     * A method that will handle client BeginCallback events.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientBeginCallbackEventArgs object that contains event data.
     */
-  type MVCxClientBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientBeginCallbackEventArgs, Unit]
+  type MVCxClientBeginCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MVCxClientBeginCallbackEventArgs, Unit]
   /**
-    * A client-side counterpart of the DashboardViewer extension.
+    * A method that will handle the ASPxClientGlobalEvents.BeginCallback event.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientGlobalBeginCallbackEventArgs object that contains event data.
     */
-  type MVCxClientDashboardViewer = ASPxClientDashboardViewer
-  type MVCxClientDashboardViewerStatic = ASPxClientDashboardViewerStatic
+  type MVCxClientGlobalBeginCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MVCxClientGlobalBeginCallbackEventArgs, Unit]
   /**
-    * A client-side counterpart of the DateEdit extension.
+    * A method that will handle the MVCxClientQueryBuilder.SaveCommandExecuted event.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientQueryBuilderSaveCommandExecutedEventArgs object that contains event data.
     */
-  type MVCxClientDateEdit = ASPxClientDateEdit
-  type MVCxClientDocumentViewerStatic = ASPxClientDocumentViewerStatic
+  type MVCxClientQueryBuilderSaveCommandExecutedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ MVCxClientQueryBuilderSaveCommandExecutedEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the BeginCallback event.
+    * A method that will handle the MVCxReportDesignerClientSideEvents.SaveCommandExecuted event.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientBeforeExportRequestEventArgs object that contains event data.
     */
-  type MVCxClientGlobalBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientGlobalBeginCallbackEventArgs, Unit]
+  type MVCxClientReportDesignerSaveCommandExecutedEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ MVCxClientReportDesignerSaveCommandExecutedEventArgs, 
+    Unit
+  ]
   /**
-    * A method that will handle the SaveCommandExecuted event.
+    * A method that will handle the MVCxSchedulerClientSideEvents.ToolTipDisplaying event.
+    * @param source An object which is the event source. Identifies the client object that raised the event.
+    * @param e A MVCxClientSchedulerToolTipDisplayingEventArgs object that contains the related arguments.
     */
-  type MVCxClientQueryBuilderSaveCommandExecutedEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientQueryBuilderSaveCommandExecutedEventArgs, Unit]
-  type MVCxClientQueryBuilderStatic = ASPxClientQueryBuilderStatic
+  type MVCxClientSchedulerToolTipDisplayingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MVCxClientSchedulerToolTipDisplayingEventArgs, Unit]
   /**
-    * A method that will handle the SaveCommandExecuted event.
+    * A method that will handle the ASPxClientScheduler.MenuItemClicked event.
+    * @param source The ASPxClientScheduler control which fires the event.
+    * @param e A MenuItemClickedEventArgs object that contains event data.
     */
-  type MVCxClientReportDesignerSaveCommandExecutedEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientReportDesignerSaveCommandExecutedEventArgs, Unit]
-  type MVCxClientReportDesignerStatic = ASPxClientReportDesignerStatic
-  type MVCxClientReportViewerStatic = ASPxClientReportViewerStatic
+  type MenuItemClickedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MenuItemClickedEventArgs, Unit]
   /**
-    * A delegate method that enables you to adjust the tooltip content before displaying.
+    * A method that will handle ASPxClientScheduler.MoreButtonClicked event.
+    * @param source The ASPxClientScheduler control which fires the event.
+    * @param e A MoreButtonClickedEventArgs object that contains event data.
     */
-  type MVCxClientSchedulerToolTipDisplayingEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientSchedulerToolTipDisplayingEventArgs, Unit]
+  type MoreButtonClickedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ MoreButtonClickedEventArgs, Unit]
   /**
-    * A client-side counterpart of the UploadControl extension.
+    * A method that will handle the ASPxClientSchedulerStorageControl.ReminderAlert event.
+    * @param source The event source.
+    * @param e An ASPxClientSchedulerStorageControl object that contains event data.
     */
-  type MVCxClientUploadControl = ASPxClientUploadControl
+  type ReminderAlertEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientSchedulerStorageReminderAlertEventArgs, Unit]
   /**
-    * A client-side equivalent of the MVCxWebDocumentViewer class.
+    * A method that will handle the ASPxClientScheduler.Shortcut event.
+    * @param source The event sender (typically an ASPxClientScheduler control).
+    * @param e A ShortcutEventArgs object that contains event data.
     */
-  type MVCxClientWebDocumentViewer = ASPxClientWebDocumentViewer
-  type MVCxClientWebDocumentViewerStatic = ASPxClientWebDocumentViewerStatic
-  /**
-    * A method that will handle the MenuItemClicked event.
-    */
-  type MenuItemClickedEventHandler[S] = js.Function2[/* source */ S, /* e */ MenuItemClickedEventArgs, Unit]
-  /**
-    * A method that will handle the MoreButtonClicked event.
-    */
-  type MoreButtonClickedEventHandler[S] = js.Function2[/* source */ S, /* e */ MoreButtonClickedEventArgs, Unit]
-  /**
-    * A method that will handle the ReminderAlert event.
-    */
-  type ReminderAlertEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSchedulerStorageReminderAlertEventArgs, Unit]
-  /**
-    * A method that will handle the Shortcut event.
-    */
-  type ShortcutEventHandler[S] = js.Function2[/* source */ S, /* e */ ShortcutEventArgs, Unit]
+  type ShortcutEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ShortcutEventArgs, Unit]
 }

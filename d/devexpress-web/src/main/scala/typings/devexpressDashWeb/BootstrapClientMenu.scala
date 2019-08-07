@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapMenu control.
   */
+@JSGlobal("BootstrapClientMenu")
 @js.native
-trait BootstrapClientMenu extends ASPxClientMenu {
+class BootstrapClientMenu () extends ASPxClientMenu {
   /**
     * Selects the specified menu item within the Menu control on the client side.
     * @param item A BootstrapClientMenuItem object specifying the menu item to select.

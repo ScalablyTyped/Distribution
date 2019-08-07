@@ -138,9 +138,6 @@ object nodeStrings {
   sealed trait DebuggerDOTsetBreakpointByUrl extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBreakpointOnFunctionCall extends js.Object
-  
-  @js.native
   sealed trait DebuggerDOTsetBreakpointsActive extends js.Object
   
   @js.native
@@ -243,6 +240,12 @@ object nodeStrings {
   sealed trait NS extends js.Object
   
   @js.native
+  sealed trait NodeRuntimeDOTnotifyWhenWaitingForDisconnect extends js.Object
+  
+  @js.native
+  sealed trait NodeRuntimeDOTwaitingForDisconnect extends js.Object
+  
+  @js.native
   sealed trait NodeTracingDOTdataCollected extends js.Object
   
   @js.native
@@ -259,6 +262,9 @@ object nodeStrings {
   
   @js.native
   sealed trait NodeWorkerDOTattachedToWorker extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTdetach extends js.Object
   
   @js.native
   sealed trait NodeWorkerDOTdetachedFromWorker extends js.Object
@@ -327,13 +333,7 @@ object nodeStrings {
   sealed trait ProfilerDOTtakeTypeProfile extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTaddBinding extends js.Object
-  
-  @js.native
   sealed trait RuntimeDOTawaitPromise extends js.Object
-  
-  @js.native
-  sealed trait RuntimeDOTbindingCalled extends js.Object
   
   @js.native
   sealed trait RuntimeDOTcallFunctionOn extends js.Object
@@ -372,12 +372,6 @@ object nodeStrings {
   sealed trait RuntimeDOTexecutionContextsCleared extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTgetHeapUsage extends js.Object
-  
-  @js.native
-  sealed trait RuntimeDOTgetIsolateId extends js.Object
-  
-  @js.native
   sealed trait RuntimeDOTgetProperties extends js.Object
   
   @js.native
@@ -396,25 +390,13 @@ object nodeStrings {
   sealed trait RuntimeDOTreleaseObjectGroup extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTremoveBinding extends js.Object
-  
-  @js.native
   sealed trait RuntimeDOTrunIfWaitingForDebugger extends js.Object
   
   @js.native
   sealed trait RuntimeDOTrunScript extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTsetAsyncCallStackDepth extends js.Object
-  
-  @js.native
   sealed trait RuntimeDOTsetCustomObjectFormatterEnabled extends js.Object
-  
-  @js.native
-  sealed trait RuntimeDOTsetMaxCallStackSizeToCapture extends js.Object
-  
-  @js.native
-  sealed trait RuntimeDOTterminateExecution extends js.Object
   
   @js.native
   sealed trait SIGABRT extends Signals
@@ -550,6 +532,9 @@ object nodeStrings {
   
   @js.native
   sealed trait TXT extends js.Object
+  
+  @js.native
+  sealed trait abort extends js.Object
   
   @js.native
   sealed trait aborted extends js.Object
@@ -704,6 +689,9 @@ object nodeStrings {
   sealed trait ignore extends _StdioOptions
   
   @js.native
+  sealed trait information extends js.Object
+  
+  @js.native
   sealed trait inherit extends _StdioOptions
   
   @js.native
@@ -855,6 +843,9 @@ object nodeStrings {
   sealed trait setup extends js.Object
   
   @js.native
+  sealed trait socket extends js.Object
+  
+  @js.native
   sealed trait spki extends js.Object
   
   @js.native
@@ -903,6 +894,9 @@ object nodeStrings {
   
   @js.native
   sealed trait unpipe extends js.Object
+  
+  @js.native
+  sealed trait upgrade extends js.Object
   
   @js.native
   sealed trait `utf-8` extends BufferEncoding
@@ -1005,8 +999,6 @@ object nodeStrings {
   @scala.inline
   def DebuggerDOTsetBreakpointByUrl: DebuggerDOTsetBreakpointByUrl = "Debugger.setBreakpointByUrl".asInstanceOf[DebuggerDOTsetBreakpointByUrl]
   @scala.inline
-  def DebuggerDOTsetBreakpointOnFunctionCall: DebuggerDOTsetBreakpointOnFunctionCall = "Debugger.setBreakpointOnFunctionCall".asInstanceOf[DebuggerDOTsetBreakpointOnFunctionCall]
-  @scala.inline
   def DebuggerDOTsetBreakpointsActive: DebuggerDOTsetBreakpointsActive = "Debugger.setBreakpointsActive".asInstanceOf[DebuggerDOTsetBreakpointsActive]
   @scala.inline
   def DebuggerDOTsetPauseOnExceptions: DebuggerDOTsetPauseOnExceptions = "Debugger.setPauseOnExceptions".asInstanceOf[DebuggerDOTsetPauseOnExceptions]
@@ -1075,6 +1067,10 @@ object nodeStrings {
   @scala.inline
   def NS: NS = "NS".asInstanceOf[NS]
   @scala.inline
+  def NodeRuntimeDOTnotifyWhenWaitingForDisconnect: NodeRuntimeDOTnotifyWhenWaitingForDisconnect = "NodeRuntime.notifyWhenWaitingForDisconnect".asInstanceOf[NodeRuntimeDOTnotifyWhenWaitingForDisconnect]
+  @scala.inline
+  def NodeRuntimeDOTwaitingForDisconnect: NodeRuntimeDOTwaitingForDisconnect = "NodeRuntime.waitingForDisconnect".asInstanceOf[NodeRuntimeDOTwaitingForDisconnect]
+  @scala.inline
   def NodeTracingDOTdataCollected: NodeTracingDOTdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDOTdataCollected]
   @scala.inline
   def NodeTracingDOTgetCategories: NodeTracingDOTgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDOTgetCategories]
@@ -1086,6 +1082,8 @@ object nodeStrings {
   def NodeTracingDOTtracingComplete: NodeTracingDOTtracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDOTtracingComplete]
   @scala.inline
   def NodeWorkerDOTattachedToWorker: NodeWorkerDOTattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDOTattachedToWorker]
+  @scala.inline
+  def NodeWorkerDOTdetach: NodeWorkerDOTdetach = "NodeWorker.detach".asInstanceOf[NodeWorkerDOTdetach]
   @scala.inline
   def NodeWorkerDOTdetachedFromWorker: NodeWorkerDOTdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDOTdetachedFromWorker]
   @scala.inline
@@ -1131,11 +1129,7 @@ object nodeStrings {
   @scala.inline
   def ProfilerDOTtakeTypeProfile: ProfilerDOTtakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDOTtakeTypeProfile]
   @scala.inline
-  def RuntimeDOTaddBinding: RuntimeDOTaddBinding = "Runtime.addBinding".asInstanceOf[RuntimeDOTaddBinding]
-  @scala.inline
   def RuntimeDOTawaitPromise: RuntimeDOTawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDOTawaitPromise]
-  @scala.inline
-  def RuntimeDOTbindingCalled: RuntimeDOTbindingCalled = "Runtime.bindingCalled".asInstanceOf[RuntimeDOTbindingCalled]
   @scala.inline
   def RuntimeDOTcallFunctionOn: RuntimeDOTcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDOTcallFunctionOn]
   @scala.inline
@@ -1161,10 +1155,6 @@ object nodeStrings {
   @scala.inline
   def RuntimeDOTexecutionContextsCleared: RuntimeDOTexecutionContextsCleared = "Runtime.executionContextsCleared".asInstanceOf[RuntimeDOTexecutionContextsCleared]
   @scala.inline
-  def RuntimeDOTgetHeapUsage: RuntimeDOTgetHeapUsage = "Runtime.getHeapUsage".asInstanceOf[RuntimeDOTgetHeapUsage]
-  @scala.inline
-  def RuntimeDOTgetIsolateId: RuntimeDOTgetIsolateId = "Runtime.getIsolateId".asInstanceOf[RuntimeDOTgetIsolateId]
-  @scala.inline
   def RuntimeDOTgetProperties: RuntimeDOTgetProperties = "Runtime.getProperties".asInstanceOf[RuntimeDOTgetProperties]
   @scala.inline
   def RuntimeDOTglobalLexicalScopeNames: RuntimeDOTglobalLexicalScopeNames = "Runtime.globalLexicalScopeNames".asInstanceOf[RuntimeDOTglobalLexicalScopeNames]
@@ -1177,19 +1167,11 @@ object nodeStrings {
   @scala.inline
   def RuntimeDOTreleaseObjectGroup: RuntimeDOTreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDOTreleaseObjectGroup]
   @scala.inline
-  def RuntimeDOTremoveBinding: RuntimeDOTremoveBinding = "Runtime.removeBinding".asInstanceOf[RuntimeDOTremoveBinding]
-  @scala.inline
   def RuntimeDOTrunIfWaitingForDebugger: RuntimeDOTrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDOTrunIfWaitingForDebugger]
   @scala.inline
   def RuntimeDOTrunScript: RuntimeDOTrunScript = "Runtime.runScript".asInstanceOf[RuntimeDOTrunScript]
   @scala.inline
-  def RuntimeDOTsetAsyncCallStackDepth: RuntimeDOTsetAsyncCallStackDepth = "Runtime.setAsyncCallStackDepth".asInstanceOf[RuntimeDOTsetAsyncCallStackDepth]
-  @scala.inline
   def RuntimeDOTsetCustomObjectFormatterEnabled: RuntimeDOTsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDOTsetCustomObjectFormatterEnabled]
-  @scala.inline
-  def RuntimeDOTsetMaxCallStackSizeToCapture: RuntimeDOTsetMaxCallStackSizeToCapture = "Runtime.setMaxCallStackSizeToCapture".asInstanceOf[RuntimeDOTsetMaxCallStackSizeToCapture]
-  @scala.inline
-  def RuntimeDOTterminateExecution: RuntimeDOTterminateExecution = "Runtime.terminateExecution".asInstanceOf[RuntimeDOTterminateExecution]
   @scala.inline
   def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
   @scala.inline
@@ -1280,6 +1262,8 @@ object nodeStrings {
   def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
   @scala.inline
   def TXT: TXT = "TXT".asInstanceOf[TXT]
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
@@ -1372,6 +1356,8 @@ object nodeStrings {
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
+  def information: information = "information".asInstanceOf[information]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
@@ -1471,6 +1457,8 @@ object nodeStrings {
   @scala.inline
   def setup: setup = "setup".asInstanceOf[setup]
   @scala.inline
+  def socket: socket = "socket".asInstanceOf[socket]
+  @scala.inline
   def spki: spki = "spki".asInstanceOf[spki]
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
@@ -1502,6 +1490,8 @@ object nodeStrings {
   def unknownProtocol: unknownProtocol = "unknownProtocol".asInstanceOf[unknownProtocol]
   @scala.inline
   def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  @scala.inline
+  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   @scala.inline
   def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   @scala.inline

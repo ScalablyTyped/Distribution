@@ -7,20 +7,13 @@ import scala.scalajs.js.annotation._
 /**
   * An object providing access to an ASPxClientYearlyRecurrenceControl's editor values.
   */
-trait YearlyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
-
-object YearlyRecurrenceValuesAccessor {
-  @scala.inline
-  def apply(
-    GetDayNumber: () => Double,
-    GetMonth: () => Double,
-    GetPeriodicity: () => Double,
-    GetWeekDays: () => ASPxClientWeekDays,
-    GetWeekOfMonth: () => ASPxClientWeekOfMonth
-  ): YearlyRecurrenceValuesAccessor = {
-    val __obj = js.Dynamic.literal(GetDayNumber = js.Any.fromFunction0(GetDayNumber), GetMonth = js.Any.fromFunction0(GetMonth), GetPeriodicity = js.Any.fromFunction0(GetPeriodicity), GetWeekDays = js.Any.fromFunction0(GetWeekDays), GetWeekOfMonth = js.Any.fromFunction0(GetWeekOfMonth))
-  
-    __obj.asInstanceOf[YearlyRecurrenceValuesAccessor]
-  }
+@JSGlobal("YearlyRecurrenceValuesAccessor")
+@js.native
+class YearlyRecurrenceValuesAccessor protected () extends DefaultRecurrenceRuleValuesAccessor {
+  /**
+    * Initializes a new instance of the YearlyRecurrenceValuesAccessor object. For internal use only.
+    * @param recurrenceControl A ASPxClientRecurrenceControlBase object specifying the required recurrence control.
+    */
+  def this(recurrenceControl: ASPxClientRecurrenceControlBase) = this()
 }
 

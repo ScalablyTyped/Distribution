@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "intl-relativeformat"
-version := "6.4.3-2fecbb"
+version := "6.4.3-8f6c5f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "2.5.2-86738f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

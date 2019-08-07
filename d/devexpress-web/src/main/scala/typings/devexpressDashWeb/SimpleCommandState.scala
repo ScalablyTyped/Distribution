@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Defines a simple state common to most of the client commands.
   */
-trait SimpleCommandState extends js.Object {
+@JSGlobal("SimpleCommandState")
+@js.native
+class SimpleCommandState () extends js.Object {
   /**
-    * Gets a value indicating whether the command's UI element is enabled (within the ribbon and context menu).
-    * Value: true, if the command's related UI element is enabled; otherwise, false.
+    * Specifies a command availability.
     */
-  var enabled: Boolean
+  var enabled: Boolean = js.native
   /**
-    * Gets a value indicating whether the command's UI element is visible.
-    * Value: true, if the command's related UI element is visible; otherwise, false.
+    * Specifies a command visibility.
     */
-  var visible: Boolean
-}
-
-object SimpleCommandState {
-  @scala.inline
-  def apply(enabled: Boolean, visible: Boolean): SimpleCommandState = {
-    val __obj = js.Dynamic.literal(enabled = enabled, visible = visible)
-  
-    __obj.asInstanceOf[SimpleCommandState]
-  }
+  var visible: Boolean = js.native
 }
 

@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * If `debuggerId` is set stack trace comes from another debugger and can be resolved there. This
-  * allows to track cross-debugger calls. See `Runtime.StackTrace` and `Debugger.paused` for usages.
+  * If <code>debuggerId</code> is set stack trace comes from another debugger and can be resolved there. This allows to track cross-debugger calls. See <code>Runtime.StackTrace</code> and <code>Debugger.paused</code> for usages.
   * @experimental
   */
 trait StackTraceId extends js.Object {

@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the underline formatting of characters in a selected range.
   */
+@JSGlobal("ChangeFontUnderlineCommand")
 @js.native
-trait ChangeFontUnderlineCommand extends CommandWithBooleanStateBase {
+class ChangeFontUnderlineCommand () extends CommandWithBooleanStateBase {
   /**
-    * Executes the ChangeFontUnderlineCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    */
-  def execute(): Boolean = js.native
-  /**
-    * Executes the ChangeFontUnderlineCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeFontUnderlineCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param fontUnderline true to apply underline formatting to the text, false to remove underline formatting.
     */
+  def execute(): Boolean = js.native
   def execute(fontUnderline: Boolean): Boolean = js.native
 }
 

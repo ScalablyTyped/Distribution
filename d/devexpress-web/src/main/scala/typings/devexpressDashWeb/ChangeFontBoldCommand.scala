@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the bold formatting of characters in a selected range.
   */
+@JSGlobal("ChangeFontBoldCommand")
 @js.native
-trait ChangeFontBoldCommand extends CommandWithBooleanStateBase {
+class ChangeFontBoldCommand () extends CommandWithBooleanStateBase {
   /**
-    * Executes the ChangeFontBoldCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    */
-  def execute(): Boolean = js.native
-  /**
-    * Executes the ChangeFontBoldCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeFontBoldCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param fontBold true to apply bold formatting to the text, false to remove bold formatting.
     */
+  def execute(): Boolean = js.native
   def execute(fontBold: Boolean): Boolean = js.native
 }
 

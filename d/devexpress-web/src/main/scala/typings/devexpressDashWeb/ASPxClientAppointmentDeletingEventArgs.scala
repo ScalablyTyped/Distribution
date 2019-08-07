@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the AppointmentDeleting event.
+  * Provides data for the ASPxClientScheduler.AppointmentDeleting event.
   */
-trait ASPxClientAppointmentDeletingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientAppointmentDeletingEventArgs")
+@js.native
+class ASPxClientAppointmentDeletingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Creates an ASPxClientAppointmentDeletingEventArgs instance with the specified client appointments.
+    * @param appointments An array of ASPxClientAppointment objects.
+    */
+  def this(appointments: js.Array[ASPxClientAppointment]) = this()
   /**
     * Gets client IDs of the appointments to be removed.
-    * Value: An array of client appointment identifiers, representing appointments passed for deletion.
     */
-  var appointmentIds: js.Array[String]
-}
-
-object ASPxClientAppointmentDeletingEventArgs {
-  @scala.inline
-  def apply(appointmentIds: js.Array[String], cancel: Boolean): ASPxClientAppointmentDeletingEventArgs = {
-    val __obj = js.Dynamic.literal(appointmentIds = appointmentIds, cancel = cancel)
-  
-    __obj.asInstanceOf[ASPxClientAppointmentDeletingEventArgs]
-  }
+  var appointmentIds: js.Array[String] = js.native
 }
 

@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change paragraph tab stops.
   */
-trait ChangeTabsCommand extends CommandBase {
+@JSGlobal("ChangeTabsCommand")
+@js.native
+class ChangeTabsCommand () extends js.Object {
   /**
-    * Executes the ChangeTabsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeTabsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TabsSettings object maintaining the information about tab stops.
     */
-  def execute(settings: TabsSettings): Boolean
+  def execute(settings: TabsSettings): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeTabsCommand {
-  @scala.inline
-  def apply(execute: TabsSettings => Boolean, getState: () => js.Any): ChangeTabsCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeTabsCommand]
-  }
+  def getState(): CommandState[TabsSettings] = js.native
 }
 

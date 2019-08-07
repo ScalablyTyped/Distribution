@@ -5,27 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditTemplateCellFocused event.
+  * Provides data for the ASPxClientVerticalGrid.BatchEditTemplateCellFocused event.
   */
-trait ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs")
+@js.native
+class ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs class with the specified row.
+    * @param row An ASPxClientVerticalGridRow object that is the processed grid row. This value is assigned to the ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs.row property.
+    */
+  def this(row: ASPxClientVerticalGridRow) = this()
   /**
     * Gets or sets a value specifying whether the event was handled.
-    * Value: true if the event was handled and default processing should not occur; false if the event should be handled using default processing.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets the currently processed row.
-    * Value: A <see cref="ASPxClientVerticalGridRow" /> object that is the client-side row object.
     */
-  var row: ASPxClientVerticalGridRow
-}
-
-object ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs {
-  @scala.inline
-  def apply(handled: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, row = row)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs]
-  }
+  var row: ASPxClientVerticalGridRow = js.native
 }
 

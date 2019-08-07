@@ -51,6 +51,7 @@ trait MarkerOptions extends js.Object {
     * though it were an {@link Icon} with the `string` as {@link Icon#url url}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerOptions.icon Maps JavaScript API}
     */
+  // tslint:disable-next-line:no-unnecessary-qualifier
   var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
   /**
     * Adds a label to the marker. The label can either be a `string`, or a

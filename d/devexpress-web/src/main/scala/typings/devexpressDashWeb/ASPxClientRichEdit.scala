@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxRichEdit object.
   */
+@JSGlobal("ASPxClientRichEdit")
 @js.native
-trait ASPxClientRichEdit extends ASPxClientControl {
+class ASPxClientRichEdit () extends ASPxClientControl {
   /**
     * Occurs when the active sub-document is substituted with another sub-document.
     */
@@ -16,7 +17,7 @@ trait ASPxClientRichEdit extends ASPxClientControl {
   /**
     * Fires when text is typed in the control.
     */
-  var AutoCorrect: ASPxClientEvent[ASPxClientRichEditAutoCorrectEventHandler[ASPxClientRichEdit]] = js.native
+  var AutoCorrect: ASPxClientEvent[ASPxClientRichEditAutoCorrectEventHandler] = js.native
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -32,23 +33,27 @@ trait ASPxClientRichEdit extends ASPxClientControl {
   /**
     * Occurs when the characters' formatting is changed.
     */
-  var CharacterPropertiesChanged: ASPxClientEvent[ASPxClientRichEditCharacterPropertiesChangedEventHandler[ASPxClientRichEdit]] = js.native
+  var CharacterPropertiesChanged: ASPxClientEvent[ASPxClientRichEditCharacterPropertiesChangedEventHandler] = js.native
   /**
     * Occurs when content is inserted into the document.
     */
-  var ContentInserted: ASPxClientEvent[ASPxClientRichEditContentInsertedEventHandler[ASPxClientRichEdit]] = js.native
+  var ContentInserted: ASPxClientEvent[ASPxClientRichEditContentInsertedEventHandler] = js.native
   /**
-    * Occurs when content is removed from the document
+    * Occurs when content is removed from the document.
     */
-  var ContentRemoved: ASPxClientEvent[ASPxClientRichEditContentRemovedEventHandler[ASPxClientRichEdit]] = js.native
+  var ContentRemoved: ASPxClientEvent[ASPxClientRichEditContentRemovedEventHandler] = js.native
   /**
     * Occurs after a custom command has been executed on the client side.
     */
-  var CustomCommandExecuted: ASPxClientEvent[ASPxClientRichEditCustomCommandExecutedEventHandler[ASPxClientRichEdit]] = js.native
+  var CustomCommandExecuted: ASPxClientEvent[ASPxClientRichEditCustomCommandExecutedEventHandler] = js.native
   /**
     * Fires if any change is made to the RichEdit's document on the client.
     */
   var DocumentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRichEdit]] = js.native
+  /**
+    * Occurs on the client side when a document layout is formatted.
+    */
+  var DocumentFormatted: ASPxClientEvent[ASPxClientRichEditDocumentFormattedEventHandler] = js.native
   /**
     * Occurs on the client side when a document model is loaded into the control.
     */
@@ -68,15 +73,15 @@ trait ASPxClientRichEdit extends ASPxClientControl {
   /**
     * Occurs when a hyperlink is activated within the document.
     */
-  var HyperlinkClick: ASPxClientEvent[ASPxClientRichEditHyperlinkClickEventHandler[ASPxClientRichEdit]] = js.native
+  var HyperlinkClick: ASPxClientEvent[ASPxClientRichEditHyperlinkClickEventHandler] = js.native
   /**
     * Occurs when a key is pressed while the ASPxRichEdit's document has focus.
     */
-  var KeyDown: ASPxClientEvent[ASPxClientRichEditKeyDownEventHandler[ASPxClientRichEdit]] = js.native
+  var KeyDown: ASPxClientEvent[ASPxClientRichEditKeyDownEventHandler] = js.native
   /**
     * Occurs when a key is released while the ASPxRichEdit's document has focus.
     */
-  var KeyUp: ASPxClientEvent[ASPxClientRichEditKeyUpEventHandler[ASPxClientRichEdit]] = js.native
+  var KeyUp: ASPxClientEvent[ASPxClientRichEditKeyUpEventHandler] = js.native
   /**
     * Occurs when the control loses focus.
     */
@@ -84,41 +89,41 @@ trait ASPxClientRichEdit extends ASPxClientControl {
   /**
     * Occurs when a paragraph's formatting is changed.
     */
-  var ParagraphPropertiesChanged: ASPxClientEvent[ASPxClientRichEditParagraphPropertiesChangedEventHandler[ASPxClientRichEdit]] = js.native
+  var ParagraphPropertiesChanged: ASPxClientEvent[ASPxClientRichEditParagraphPropertiesChangedEventHandler] = js.native
   /**
     * Occurs when the mouse pointer is over the RichEdit's document and a mouse button is pressed.
     */
-  var PointerDown: ASPxClientEvent[ASPxClientRichEditPointerDownEventHandler[ASPxClientRichEdit]] = js.native
+  var PointerDown: ASPxClientEvent[ASPxClientRichEditPointerDownEventHandler] = js.native
   /**
     * Occurs when the mouse button is released if it was pressed within the RichEdit's document.
     */
-  var PointerUp: ASPxClientEvent[ASPxClientRichEditPointerUpEventHandler[ASPxClientRichEdit]] = js.native
+  var PointerUp: ASPxClientEvent[ASPxClientRichEditPointerUpEventHandler] = js.native
   /**
     * Occurs when a pop-up menu is about to be shown.
     */
-  var PopupMenuShowing: ASPxClientEvent[ASPxClientRichEditPopupMenuShowingEventHandler[ASPxClientRichEdit]] = js.native
+  var PopupMenuShowing: ASPxClientEvent[ASPxClientRichEditPopupMenuShowingEventHandler] = js.native
   /**
     * Occurs when the selection is changed within the document.
     */
   var SelectionChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRichEdit]] = js.native
   /**
     * Provides access to the RichEdit's client-side commands.
-    * Value: A <see cref="RichEditCommands" /> object that lists the RichEdit's client-side commands.
     */
   var commands: RichEditCommands = js.native
   /**
     * Provides access to document structural elements.
-    * Value: A <see cref="RichEditDocument" /> object that lists a RichEdit document's structural elements.
     */
   var document: RichEditDocument = js.native
   /**
+    * Provides access to request settings.
+    */
+  var requestSettings: RequestSettings = js.native
+  /**
     * Provides access to the client methods that change the selection.
-    * Value: A <see cref="RichEditSelection" /> object that lists methods to work with the selection.
     */
   var selection: RichEditSelection = js.native
   /**
     * Gets a unit converter.
-    * Value: A <see cref="RichEditUnitConverter" /> object representing a unit converter.
     */
   var unitConverter: RichEditUnitConverter = js.native
   /**
@@ -134,16 +139,12 @@ trait ASPxClientRichEdit extends ASPxClientControl {
     */
   def HasUnsavedChanges(): Boolean = js.native
   /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side event.
-    */
-  def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side Callback event, passing it the specified argument.
+    * Sends a callback to the server and generates the server-side ASPxRichEdit.Callback event, passing it the specified argument.
     * @param parameter A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(parameter: String): Unit = js.native
+  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Reconnects the RichEdit to an external ribbon.
     */
@@ -153,5 +154,16 @@ trait ASPxClientRichEdit extends ASPxClientControl {
     * @param fullscreen true to activate full-screen mode; false to deactivate full-screen mode.
     */
   def SetFullscreenMode(fullscreen: Boolean): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientRichEdit")
+@js.native
+object ASPxClientRichEdit extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientRichEdit type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientRichEdit = js.native
 }
 

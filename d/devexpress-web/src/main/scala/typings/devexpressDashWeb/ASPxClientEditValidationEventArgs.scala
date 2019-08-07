@@ -5,32 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the client events that are related to data validation (see Validate).
+  * Provides data for the client events that are related to data validation (see ASPxClientEdit.Validate).
   */
-trait ASPxClientEditValidationEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientEditValidationEventArgs")
+@js.native
+class ASPxClientEditValidationEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientEditValidationEventArgs class with the specified settings.
+    * @param value An object that represents the validated value.
+    * @param errorText A string representing the error description.
+    * @param isValid true if the validated value is valid; otherwise, false.
+    */
+  def this(value: String, errorText: String, isValid: Boolean) = this()
   /**
     * Gets or sets the error description.
-    * Value: A string representing the error description.
     */
-  var errorText: String
+  var errorText: String = js.native
   /**
     * Gets or sets a value specifying whether the validated value is valid.
-    * Value: true if the value is valid; otherwise, false.
     */
-  var isValid: Boolean
+  var isValid: Boolean = js.native
   /**
     * Gets or sets the editor's value being validated.
-    * Value: An object that represents the validated value.
     */
-  var value: String
-}
-
-object ASPxClientEditValidationEventArgs {
-  @scala.inline
-  def apply(errorText: String, isValid: Boolean, value: String): ASPxClientEditValidationEventArgs = {
-    val __obj = js.Dynamic.literal(errorText = errorText, isValid = isValid, value = value)
-  
-    __obj.asInstanceOf[ASPxClientEditValidationEventArgs]
-  }
+  var value: String = js.native
 }
 

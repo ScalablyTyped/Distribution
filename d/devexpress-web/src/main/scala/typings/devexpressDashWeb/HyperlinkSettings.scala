@@ -5,37 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Contains settings to define hyperlinks.
+  * Contains settings to define a hyperlink.
   */
-trait HyperlinkSettings extends js.Object {
+@JSGlobal("HyperlinkSettings")
+@js.native
+/**
+  * Initializes a new instance of the HyperlinkSettings object.
+  * @param url A hyperlink URL.
+  * @param bookmark A bookmark name.
+  * @param tooltip A tooltip text.
+  * @param text A hyperlink text.
+  */
+class HyperlinkSettings () extends js.Object {
+  def this(url: String) = this()
+  def this(url: String, bookmark: String) = this()
+  def this(url: String, bookmark: String, tooltip: String) = this()
+  def this(url: String, bookmark: String, tooltip: String, text: String) = this()
   /**
-    * Gets or sets the associated bookmark.
-    * Value: A string value specifying the bookmark name.
+    * Specifies a hyperlink's bookmark.
     */
-  var bookmark: String
+  var bookmark: String = js.native
   /**
-    * Gets or sets a text displayed for a hyperlink.
-    * Value: A string value specifying the hyperlink display text.
+    * Specifies a hyperlink text.
     */
-  var text: String
+  var text: String = js.native
   /**
-    * Gets or sets a text for the tooltip displayed when the mouse hovers over a hyperlink.
-    * Value: A string containing the tooltip text.
+    * Specifies a tooltip text.
     */
-  var tooltip: String
+  var tooltip: String = js.native
   /**
-    * Gets or sets the hyperlink destination.
-    * Value: A string value that specifies the destination to which a hyperlink refers.
+    * Specifies a hyperlink's destination.
     */
-  var url: String
-}
-
-object HyperlinkSettings {
-  @scala.inline
-  def apply(bookmark: String, text: String, tooltip: String, url: String): HyperlinkSettings = {
-    val __obj = js.Dynamic.literal(bookmark = bookmark, text = text, tooltip = tooltip, url = url)
-  
-    __obj.asInstanceOf[HyperlinkSettings]
-  }
+  var url: String = js.native
 }
 

@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRecordInserting event.
+  * Provides data for the ASPxClientVerticalGrid.BatchEditRecordInserting event.
   */
-trait ASPxClientVerticalGridBatchEditRecordInsertingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientVerticalGridBatchEditRecordInsertingEventArgs")
+@js.native
+class ASPxClientVerticalGridBatchEditRecordInsertingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditRecordInsertingEventArgs class.
+    * @param visibleIndex An integer value that specifies the processed record's visible index.
+    */
+  def this(visibleIndex: Double) = this()
   /**
     * Gets the processed record's visible index.
-    * Value: An integer value that specifies the processed record's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientVerticalGridBatchEditRecordInsertingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordInsertingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordInsertingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

@@ -1872,6 +1872,7 @@
 | [format-number](./f/format-number) | Formats numbers with separators every 3 digits and | - |
 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function. | string, format, formatunicorn, stackexchange |
 | [format-util](./f/format-util) | Lightweight util.format() for the browser. | util, format, string |
+| [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings. | intl, i18n, relative, time, moment, format, date |
 | [formidable](./f/formidable) | A node.js module for parsing form data, especially | - |
 | [formik](./f/formik) | Forms in React, without tears | formik, react, react-dom, form, validation, forms, higher order component, hoc |
 | [forms](./f/forms) | An easy way to create, parse, and validate forms | - |
@@ -3879,6 +3880,7 @@
 | [mapbox__s3urls](./m/mapbox__s3urls) | Create S3 urls from bucket/key or extract bucket/k | - |
 | [mapbox__shelf-pack](./m/mapbox__shelf-pack) | A 2D rectangular bin packing data structure that u | bin packing, sprite |
 | [mapbox__sphericalmercator](./m/mapbox__sphericalmercator) | Transformations between the Web Mercator projectio | map, projection, transformations |
+| [mapbox__tile-cover](./m/mapbox__tile-cover) | generate the minimum number of tiles to cover a ge | tile, cover, geojson, index |
 | [mapnik](./m/mapnik) | Tile rendering library for node | map, graphics, canvas, tile, mapnik, carto |
 | [mapsjs](./m/mapsjs) | - | - |
 | [maquette](./m/maquette) | Minimalistic Virtual DOM implementation with suppo | virtual, dom, animation, transitions |
@@ -5062,7 +5064,6 @@
 | [radius](./r/radius) | RADIUS packet encoding/decoding | radius |
 | [radix64](./r/radix64) | radix64, library to convert Unsigned Interger into | - |
 | [raf](./r/raf) | requestAnimationFrame polyfill for node and the br | requestAnimationFrame, polyfill |
-| [ramda](./r/ramda) | A practical functional library for JavaScript prog | ramda, functional, utils, utilities, toolkit, fp, tacit, point-free, curried, pure, fantasy-land |
 | [random](./r/random) | Seedable random number generator supporting many c | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
 | [random-boolean](./r/random-boolean) | Get a random boolean | random, bool, boolean, true, false |
 | [random-float](./r/random-float) | Generate a random float | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |

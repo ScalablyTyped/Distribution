@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events concerning client manipulations on popup windows.
   */
-trait ASPxClientPopupWindowEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientPopupWindowEventArgs")
+@js.native
+class ASPxClientPopupWindowEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientPopupWindowEventArgs class.
+    * @param window A ASPxClientPopupWindow object representing the popup window related to the generated event.
+    */
+  def this(window: ASPxClientPopupWindow) = this()
   /**
     * Gets the popup window object related to the event.
-    * Value: An ASPxClientPopupWindow object representing the popup window that was manipulated, causing the popup control to raise the event.
     */
-  var window: ASPxClientPopupWindow
-}
-
-object ASPxClientPopupWindowEventArgs {
-  @scala.inline
-  def apply(window: ASPxClientPopupWindow): ASPxClientPopupWindowEventArgs = {
-    val __obj = js.Dynamic.literal(window = window)
-  
-    __obj.asInstanceOf[ASPxClientPopupWindowEventArgs]
-  }
+  var window: ASPxClientPopupWindow = js.native
 }
 

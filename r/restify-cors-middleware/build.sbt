@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "restify-cors-middleware"
-version := "1.0-dt-20180214Z-229c12"
+version := "1.0-dt-20180214Z-2ed06b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-7db378",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190801Z-3c70c3",
-  "org.scalablytyped" %%% "restify" % "7.2-dt-20190716Z-9069b6",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-acdae6",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-3b0c07",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
+  "org.scalablytyped" %%% "restify" % "7.2-dt-20190716Z-47c813",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-12a28a",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

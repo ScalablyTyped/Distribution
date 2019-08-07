@@ -7,25 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings that specify parameters affecting how Chart dashboard items are exported.
   */
-trait ChartExportOptions extends js.Object {
+@JSGlobal("ChartExportOptions")
+@js.native
+class ChartExportOptions () extends js.Object {
+  /** @deprecated The ChartExportOptions.AutomaticPageLayout property is obsolete now. Use the DashboardPdfExportOptions.ChartAutomaticPageLayout property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Gets or sets whether the page orientation used to export a Chart dashboard item is selected automatically.
-    * Value: true, to automatically select the page orientation used to export a Chart dashboard item; otherwise, false.
     */
-  var AutomaticPageLayout: Boolean
+  var AutomaticPageLayout: Boolean = js.native
+  /** @deprecated The ChartExportOptions.SizeMode property is obsolete now. Use the DashboardPdfExportOptions.ChartSizeMode property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
     * Gets or sets the export size mode for the Chart dashboard item.
-    * Value: A value returned by the ChartExportSizeMode class that specifies the export size mode for the Chart dashboard item.
     */
-  var SizeMode: String
-}
-
-object ChartExportOptions {
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): ChartExportOptions = {
-    val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout, SizeMode = SizeMode)
-  
-    __obj.asInstanceOf[ChartExportOptions]
-  }
+  var SizeMode: String = js.native
 }
 

@@ -1,27 +1,66 @@
 package typings.reactDashIntl
 
+import typings.intlDashMessageformat.libFormattersMod.PrimitiveType
 import typings.react.reactMod.ComponentType
-import typings.reactDashIntl.ReactIntlNs.FormattedDateNs.Props
+import typings.reactDashIntl.distComponentsMessageMod.Props
+import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
+import typings.reactDashIntl.distTypesMod.IntlShape
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashIntlComponents extends reactDashIntlProps {
   @scala.inline
-  def FormattedDate: ComponentType[Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedDate].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedDateNs.Props]]
+  def FormattedDate: ComponentType[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number | Date | undefined,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any
+  ] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedDate].asInstanceOf[typings.react.reactMod.ComponentType[
+  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number | Date | undefined,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any]]
   @scala.inline
-  def FormattedHTMLMessage: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedHTMLMessage].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props]]
+  def FormattedHTMLMessage: ComponentType[Props[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedHTMLMessage].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashIntl.distComponentsMessageMod.Props[
+    typings.std.Record[java.lang.String, typings.intlDashMessageformat.libFormattersMod.PrimitiveType]
+  ]]]
   @scala.inline
-  def FormattedMessage: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedMessage].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props]]
+  def FormattedMessage[V /* <: Record[String, _] */]: ComponentType[Props[V]] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedMessage[V]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsMessageMod.Props[V]]]
   @scala.inline
-  def FormattedNumber: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedNumberNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedNumber].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedNumberNs.Props]]
+  def FormattedNumber: ComponentType[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.NumberFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any
+  ] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedNumber].asInstanceOf[typings.react.reactMod.ComponentType[
+  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.NumberFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any]]
   @scala.inline
-  def FormattedPlural: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedPluralNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedPlural].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedPluralNs.Props]]
+  def FormattedPlural: ComponentType[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Props> */ js.Any
+  ] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedPlural].asInstanceOf[typings.react.reactMod.ComponentType[
+  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Props> */ js.Any]]
   @scala.inline
-  def FormattedRelative: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedRelativeNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedRelative].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedRelativeNs.Props]]
+  def FormattedRelativeTime: ComponentType[typings.reactDashIntl.distComponentsRelativeMod.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedRelativeTime].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsRelativeMod.Props]]
   @scala.inline
-  def FormattedTime: ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedTimeNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedTime].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.FormattedTimeNs.Props]]
+  def FormattedTime: ComponentType[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number | Date | undefined,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any
+  ] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedTime].asInstanceOf[typings.react.reactMod.ComponentType[
+  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & {  value  :number | Date | undefined,   intl  :imported_react-intl/dist/types.IntlShape}> */ js.Any]]
   @scala.inline
-  def IntlProvider: ComponentType[typings.reactDashIntl.ReactIntlNs.IntlProviderNs.Props] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.IntlProvider].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.ReactIntlNs.IntlProviderNs.Props]]
+  def HtmlDashMessage: ComponentType[Props[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactDashIntl.distComponentsHtmlDashMessageMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashIntl.distComponentsMessageMod.Props[
+    typings.std.Record[java.lang.String, typings.intlDashMessageformat.libFormattersMod.PrimitiveType]
+  ]]]
+  @scala.inline
+  def IntlProvider: ComponentType[OptionalIntlConfig] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.IntlProvider].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig]]
+  @scala.inline
+  def Message[V /* <: Record[String, _] */]: ComponentType[Props[V]] = js.constructorOf[typings.reactDashIntl.distComponentsMessageMod.default[V]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsMessageMod.Props[V]]]
+  @scala.inline
+  def Plural: ComponentType[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Props> */ js.Any
+  ] = js.constructorOf[typings.reactDashIntl.distComponentsPluralMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Props> */ js.Any]]
+  @scala.inline
+  def Provider: ComponentType[typings.react.reactMod.ProviderProps[IntlShape]] = typings.reactDashIntl.distComponentsInjectIntlMod.^.Provider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.react.reactMod.ProviderProps[typings.reactDashIntl.distTypesMod.IntlShape]]]
+  @scala.inline
+  def RawIntlProvider: ComponentType[typings.react.reactMod.ProviderProps[IntlShape]] = typings.reactDashIntl.reactDashIntlMod.^.RawIntlProvider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.react.reactMod.ProviderProps[typings.reactDashIntl.distTypesMod.IntlShape]]]
+  @scala.inline
+  def Relative: ComponentType[typings.reactDashIntl.distComponentsRelativeMod.Props] = js.constructorOf[typings.reactDashIntl.distComponentsRelativeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsRelativeMod.Props]]
 }
 

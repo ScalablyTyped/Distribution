@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Paper tab of the Page Setup dialog.
   */
-trait OpenPagePaperSizeDialogCommand extends CommandWithSimpleStateBase {
+@JSGlobal("OpenPagePaperSizeDialogCommand")
+@js.native
+class OpenPagePaperSizeDialogCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the OpenPagePaperSizeDialogCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the OpenPagePaperSizeDialogCommand command.
     */
-  def execute(): Boolean
-}
-
-object OpenPagePaperSizeDialogCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenPagePaperSizeDialogCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[OpenPagePaperSizeDialogCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

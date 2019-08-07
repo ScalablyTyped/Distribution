@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the MinimizationStateChanged event.
+  * Provides data for the ASPxClientRibbon.MinimizationStateChanged event.
   */
-trait ASPxClientRibbonMinimizationStateEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientRibbonMinimizationStateEventArgs")
+@js.native
+class ASPxClientRibbonMinimizationStateEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientRibbonMinimizationStateEventArgs class with the specified setting.
+    * @param ribbonState The integer value indicating the new ribbon minimization state.
+    */
+  def this(ribbonState: Double) = this()
   /**
     * Returns the value indicating the new ribbon state.
-    * Value: The integer value indicating the ribbon minimization state.
     */
-  var ribbonState: Double
-}
-
-object ASPxClientRibbonMinimizationStateEventArgs {
-  @scala.inline
-  def apply(ribbonState: Double): ASPxClientRibbonMinimizationStateEventArgs = {
-    val __obj = js.Dynamic.literal(ribbonState = ribbonState)
-  
-    __obj.asInstanceOf[ASPxClientRibbonMinimizationStateEventArgs]
-  }
+  var ribbonState: Double = js.native
 }
 

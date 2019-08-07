@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditRecordValidating event.
+  * Provides data for the ASPxClientVerticalGrid.BatchEditRecordValidating event.
   */
-trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientVerticalGridBatchEditRecordValidatingEventArgs")
+@js.native
+class ASPxClientVerticalGridBatchEditRecordValidatingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditRecordValidatingEventArgs class.
+    * @param visibleIndex An integer value that specifies the processed record's visible index.
+    * @param validationInfo An object containing validation information.
+    */
+  def this(visibleIndex: Double, validationInfo: js.Any) = this()
   /**
     * Provides validation information on the record currently being validated.
-    * Value: An object that is a hashtable containing validation information.
     */
-  var validationInfo: js.Object
+  var validationInfo: js.Any = js.native
   /**
     * Gets the processed record's visible index.
-    * Value: An integer value that specifies the processed record's visible index.
     */
-  var visibleIndex: Double
-}
-
-object ASPxClientVerticalGridBatchEditRecordValidatingEventArgs {
-  @scala.inline
-  def apply(validationInfo: js.Object, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordValidatingEventArgs = {
-    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordValidatingEventArgs]
-  }
+  var visibleIndex: Double = js.native
 }
 

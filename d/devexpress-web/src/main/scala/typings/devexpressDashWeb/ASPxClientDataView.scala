@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxDataView object.
   */
+@JSGlobal("ASPxClientDataView")
 @js.native
-trait ASPxClientDataView extends ASPxClientControl {
+class ASPxClientDataView () extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -51,16 +52,12 @@ trait ASPxClientDataView extends ASPxClientControl {
     */
   def NextPage(): Unit = js.native
   /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side CustomCallback event.
-    */
-  def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side CustomCallback event, passing it the specified argument.
-    * @param parameter A string value that represents any information that needs to be sent to the server-side CustomCallback event.
+    * Sends a callback to the server and generates the server-side ASPxDataViewBase.CustomCallback event, passing it the specified argument.
+    * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxDataViewBase.CustomCallback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(parameter: String): Unit = js.native
+  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Activates the previous page.
     */
@@ -70,5 +67,16 @@ trait ASPxClientDataView extends ASPxClientControl {
     * @param pageSize An integer value that specifies the page size.
     */
   def SetPageSize(pageSize: Double): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientDataView")
+@js.native
+object ASPxClientDataView extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientDataView type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientDataView = js.native
 }
 

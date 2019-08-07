@@ -40,6 +40,8 @@ class AnimationState protected () extends js.Object {
   def clearListeners(): Unit = js.native
   def clearTrack(trackIndex: Double): Unit = js.native
   def clearTracks(): Unit = js.native
+  def computeHold(entry: TrackEntry): Unit = js.native
+  def computeNotLast(entry: TrackEntry): Unit = js.native
   def disposeNext(entry: TrackEntry): Unit = js.native
   def expandToIndex(index: Double): TrackEntry = js.native
   def getCurrent(trackIndex: Double): TrackEntry = js.native
@@ -58,7 +60,6 @@ class AnimationState protected () extends js.Object {
   def setCurrent(index: Double, current: TrackEntry, interrupt: Boolean): Unit = js.native
   def setEmptyAnimation(trackIndex: Double, mixDuration: Double): TrackEntry = js.native
   def setEmptyAnimations(mixDuration: Double): Unit = js.native
-  def setTimelineModes(entry: TrackEntry): Unit = js.native
   def trackEntry(trackIndex: Double, animation: Animation, loop: Boolean, last: TrackEntry): TrackEntry = js.native
   def update(delta: Double): Unit = js.native
   def updateMixingFrom(to: TrackEntry, delta: Double): Boolean = js.native
@@ -71,6 +72,7 @@ object AnimationState extends js.Object {
   var FIRST: Double = js.native
   var HOLD: Double = js.native
   var HOLD_MIX: Double = js.native
+  var NOT_LAST: Double = js.native
   var SUBSEQUENT: Double = js.native
   var deprecatedWarning1: js.Any = js.native
   var deprecatedWarning2: js.Any = js.native

@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to fit the specified table to a document's window.
   */
-trait ToggleTableAutoFitWindowCommand extends CommandWithSimpleStateBase {
+@JSGlobal("ToggleTableAutoFitWindowCommand")
+@js.native
+class ToggleTableAutoFitWindowCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the ToggleTableAutoFitWindowCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ToggleTableAutoFitWindowCommand command.
     */
-  def execute(): Boolean
-}
-
-object ToggleTableAutoFitWindowCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTableAutoFitWindowCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ToggleTableAutoFitWindowCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

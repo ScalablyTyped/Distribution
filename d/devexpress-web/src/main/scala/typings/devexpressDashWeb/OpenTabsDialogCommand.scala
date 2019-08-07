@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Tabs paragraph dialog.
   */
-trait OpenTabsDialogCommand extends CommandWithSimpleStateBase {
+@JSGlobal("OpenTabsDialogCommand")
+@js.native
+class OpenTabsDialogCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the OpenTabsDialogCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the OpenTabsDialogCommand command.
     */
-  def execute(): Boolean
-}
-
-object OpenTabsDialogCommand {
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenTabsDialogCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[OpenTabsDialogCommand]
-  }
+  def execute(): Boolean = js.native
 }
 

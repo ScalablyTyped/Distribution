@@ -7,25 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the client-side events which concern clicking within editors.
   */
-trait ASPxClientEditClickEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientEditClickEventArgs")
+@js.native
+class ASPxClientEditClickEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new object of the ASPxClientEditClickEventArgs type with the specified settings.
+    * @param htmlElement An HTML object.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    */
+  def this(htmlElement: js.Any, htmlEvent: js.Any) = this()
   /**
     * Gets the HTML element related to the event.
-    * Value: An object that represents the clicked HTML element.
     */
-  var htmlElement: js.Object
+  var htmlElement: js.Any = js.native
   /**
     * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
     */
-  var htmlEvent: js.Object
-}
-
-object ASPxClientEditClickEventArgs {
-  @scala.inline
-  def apply(htmlElement: js.Object, htmlEvent: js.Object): ASPxClientEditClickEventArgs = {
-    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent)
-  
-    __obj.asInstanceOf[ASPxClientEditClickEventArgs]
-  }
+  var htmlEvent: js.Any = js.native
 }
 

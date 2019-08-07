@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the Applied event.
+  * Provides data for the ASPxClientFilterControl.Applied event.
   */
-trait ASPxClientFilterAppliedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFilterAppliedEventArgs")
+@js.native
+class ASPxClientFilterAppliedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFilterAppliedEventArgs class.
+    * @param filterExpression A string value that specifies the filter expression currently being applied. This value is assigned to the ASPxClientFilterAppliedEventArgs.filterExpression property.
+    */
+  def this(filterExpression: String) = this()
   /**
     * Gets the filter expression currently being applied.
-    * Value: A string value that specifies the filter expression currently being applied.
     */
-  var filterExpression: String
-}
-
-object ASPxClientFilterAppliedEventArgs {
-  @scala.inline
-  def apply(filterExpression: String): ASPxClientFilterAppliedEventArgs = {
-    val __obj = js.Dynamic.literal(filterExpression = filterExpression)
-  
-    __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
-  }
+  var filterExpression: String = js.native
 }
 

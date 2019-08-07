@@ -5,31 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Contains settings related to the TABLECELLPROPERTIES_DIALOG_COMMAND command parameter.
+  * Contains settings related to the ASPxClientCommandConsts.TABLECELLPROPERTIES_DIALOG_COMMAND command parameter.
   */
-trait ASPxClientHtmlEditorTableCellPropertiesCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+@JSGlobal("ASPxClientHtmlEditorTableCellPropertiesCommandArguments")
+@js.native
+class ASPxClientHtmlEditorTableCellPropertiesCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
+  /**
+    * Initializes a new instance of the ASPxClientHtmlEditorTableCellPropertiesCommandArguments class with specified settings.
+    * @param htmlEditor The HTML editor executing a command.
+    * @param selectedElement An object containing the currently selected element in the HTML editor.
+    */
+  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
   /**
     * Gets or sets a value that indicates whether the cell settings should be applied to all cells in the table.
-    * Value: true, if the cell settings should be applied to all cells in the table; otherwise, false.
     */
-  var applyForAll: Boolean
+  var applyForAll: Boolean = js.native
   /**
     * Contains the style settings defining the appearance of the target cell element.
-    * Value: An <see cref="ASPxClientHtmlEditorCommandStyleSettings" /> object that contains the style settings defining the appearance of the target cell element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
-}
-
-object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
-  @scala.inline
-  def apply(
-    applyForAll: Boolean,
-    selectedElement: js.Object,
-    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
-  ): ASPxClientHtmlEditorTableCellPropertiesCommandArguments = {
-    val __obj = js.Dynamic.literal(applyForAll = applyForAll, selectedElement = selectedElement, styleSettings = styleSettings)
-  
-    __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
-  }
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
 }
 

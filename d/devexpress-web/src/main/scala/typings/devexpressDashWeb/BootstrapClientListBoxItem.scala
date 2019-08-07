@@ -7,22 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the BootstrapListEditItem object.
   */
+@JSGlobal("BootstrapClientListBoxItem")
 @js.native
-trait BootstrapClientListBoxItem extends ASPxClientListEditItem {
+class BootstrapClientListBoxItem () extends ASPxClientListEditItem {
   /**
     * Gets the CSS class of the icon displayed by the list box item.
-    * Value: A string containing the name of a CSS class.
     */
   var iconCssClass: String = js.native
+  def GetFieldText(fieldIndex: String): String = js.native
   /**
-    * Returns the list item's text value that corresponds to a data field specified by its index.
+    * Returns the list item's text value that corresponds to a data field specified by its index. A string value representing the list item's text value that corresponds to the specified data field.
     * @param fieldIndex An integer value that specifies the field's index within the editor's Fields collection.
     */
   def GetFieldText(fieldIndex: Double): String = js.native
-  /**
-    * Returns the list item's text value that corresponds to a data field specified by its name.
-    * @param fieldName A string value that specifies the data field's name defined via a FieldName property.
-    */
-  def GetFieldText(fieldName: String): String = js.native
 }
 

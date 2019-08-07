@@ -21,6 +21,8 @@ object Utils extends js.Object {
     destStart: Double,
     numElements: Double
   ): Unit = js.native
+  def contains[T](array: js.Array[T], element: T): Boolean = js.native
+  def contains[T](array: js.Array[T], element: T, identity: Boolean): Boolean = js.native
   def ensureArrayCapacity[T](array: js.Array[T], size: Double): js.Array[T] = js.native
   def ensureArrayCapacity[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = js.native
   def newArray[T](size: Double, defaultValue: T): js.Array[T] = js.native

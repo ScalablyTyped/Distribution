@@ -2,6 +2,7 @@ package typings.reactDashPdf.distDocumentMod
 
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
 import typings.reactDashPdf.Anon_PageNumber
 import typings.reactDashPdf.reactDashPdfStrings._blank
 import typings.reactDashPdf.reactDashPdfStrings._parent
@@ -17,6 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
+  var children: js.UndefOr[ReactNode] = js.undefined
   /**
     * Defines custom class name(s), that will be added to rendered element.
     * @default 'react-pdf__Document'
@@ -110,6 +112,7 @@ object Props {
   @scala.inline
   def apply(
     file: js.Any,
+    children: ReactNode = null,
     className: String | js.Array[String] = null,
     error: String | ReactElement | RenderFunction = null,
     externalLinkTarget: _self | _blank | _parent | _top = null,
@@ -127,6 +130,7 @@ object Props {
     rotate: Int | Double = null
   ): Props = {
     val __obj = js.Dynamic.literal(file = file)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (externalLinkTarget != null) __obj.updateDynamic("externalLinkTarget")(externalLinkTarget.asInstanceOf[js.Any])

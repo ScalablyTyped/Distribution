@@ -280,6 +280,25 @@ object distOpsConvMod extends js.Object {
   }
   
   @js.native
+  object conv2dDerInput extends js.Object {
+    def apply(
+      xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+      dy: Tensor[R3 | R4],
+      filter: Tensor4D,
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid
+    ): Tensor[R3] = js.native
+    def apply(
+      xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+      dy: Tensor[R3 | R4],
+      filter: Tensor4D,
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid,
+      dimRoundingMode: ceil | floor | round
+    ): Tensor[R3] = js.native
+  }
+  
+  @js.native
   object conv2dTranspose extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](
       x: T | TensorLike,

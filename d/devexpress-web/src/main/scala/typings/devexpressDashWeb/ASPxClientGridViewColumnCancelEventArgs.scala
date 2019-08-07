@@ -7,20 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the cancelable events of a client ASPxGridView column.
   */
-trait ASPxClientGridViewColumnCancelEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientGridViewColumnCancelEventArgs")
+@js.native
+class ASPxClientGridViewColumnCancelEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new isntance of the ASPxClientGridViewColumnCancelEventArgs class.
+    * @param column An ASPxClientGridViewColumn object that represents the processed column.
+    */
+  def this(column: ASPxClientGridViewColumn) = this()
   /**
     * Gets the processed client column.
-    * Value: An ASPxClientGridViewColumn object that represents the processed column.
     */
-  var column: ASPxClientGridViewColumn
-}
-
-object ASPxClientGridViewColumnCancelEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, column: ASPxClientGridViewColumn): ASPxClientGridViewColumnCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, column = column)
-  
-    __obj.asInstanceOf[ASPxClientGridViewColumnCancelEventArgs]
-  }
+  var column: ASPxClientGridViewColumn = js.native
 }
 

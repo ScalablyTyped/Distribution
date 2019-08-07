@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * A point on the data axis.
   */
+@JSGlobal("ASPxClientDashboardItemDataAxisPoint")
 @js.native
-trait ASPxClientDashboardItemDataAxisPoint extends js.Object {
+class ASPxClientDashboardItemDataAxisPoint () extends js.Object {
   /**
     * Gets the name of the axis to which the current axis point belongs.
     */
@@ -22,13 +23,9 @@ trait ASPxClientDashboardItemDataAxisPoint extends js.Object {
     */
   def GetDimension(): ASPxClientDashboardItemDataDimension = js.native
   /**
-    * Gets the dimension values at the specified axis point.
+    * Gets the dimension values at the specified axis point. A ASPxClientDashboardItemDataDimensionValue object that contains the dimension values at the specified axis point.
     */
   def GetDimensionValue(): ASPxClientDashboardItemDataDimensionValue = js.native
-  /**
-    * Gets the dimension value at the current axis point.
-    * @param dimensionId A String value that specifies the dimension identifier.
-    */
   def GetDimensionValue(dimensionId: String): ASPxClientDashboardItemDataDimensionValue = js.native
   /**
     * Gets the collection of dimensions used to create a hierarchy of axis points from the root point to the current axis point.
@@ -45,10 +42,10 @@ trait ASPxClientDashboardItemDataAxisPoint extends js.Object {
   /**
     * Gets the unique value corresponding to the current axis point.
     */
-  def GetUniqueValue(): js.Object = js.native
+  def GetUniqueValue(): js.Any = js.native
   /**
     * Gets the value corresponding to the current axis point.
     */
-  def GetValue(): js.Object = js.native
+  def GetValue(): js.Any = js.native
 }
 

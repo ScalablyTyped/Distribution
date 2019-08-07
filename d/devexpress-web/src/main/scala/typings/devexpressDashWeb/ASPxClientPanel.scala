@@ -7,70 +7,47 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxPanel control.
   */
-trait ASPxClientPanel extends ASPxClientPanelBase {
+@JSGlobal("ASPxClientPanel")
+@js.native
+class ASPxClientPanel () extends ASPxClientPanelBase {
   /**
     * Occurs when the expanded panel is closed.
     */
-  var Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]
+  var Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]] = js.native
   /**
     * Occurs when an end-user opens the expand panel.
     */
-  var Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]
+  var Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]] = js.native
   /**
     * Collapses the expanded panel.
     */
-  def Collapse(): Unit
+  def Collapse(): Unit = js.native
   /**
     * Expands the collapsed panel.
     */
-  def Expand(): Unit
+  def Expand(): Unit = js.native
   /**
     * Returns a value specifying whether the panel can be expanded.
     */
-  def IsExpandable(): Boolean
+  def IsExpandable(): Boolean = js.native
   /**
     * Returns a value specifying whether the panel is expanded.
     */
-  def IsExpanded(): Boolean
+  def IsExpanded(): Boolean = js.native
   /**
     * Expands or collapses the client panel.
     */
-  def Toggle(): Unit
+  def Toggle(): Unit = js.native
 }
 
-object ASPxClientPanel {
-  @scala.inline
-  def apply(
-    AdjustControl: () => Unit,
-    Collapse: () => Unit,
-    Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]],
-    Expand: () => Unit,
-    Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]],
-    GetClientVisible: () => Boolean,
-    GetContentHtml: () => String,
-    GetEnabled: () => Boolean,
-    GetHeight: () => Double,
-    GetMainElement: () => js.Object,
-    GetParentControl: () => js.Object,
-    GetVisible: () => Boolean,
-    GetWidth: () => Double,
-    InCallback: () => Boolean,
-    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    IsExpandable: () => Boolean,
-    IsExpanded: () => Boolean,
-    SendMessageToAssistiveTechnology: String => Unit,
-    SetClientVisible: Boolean => Unit,
-    SetContentHtml: String => Unit,
-    SetEnabled: Boolean => Unit,
-    SetHeight: Double => Unit,
-    SetVisible: Boolean => Unit,
-    SetWidth: Double => Unit,
-    Toggle: () => Unit,
-    name: String
-  ): ASPxClientPanel = {
-    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Collapse = js.Any.fromFunction0(Collapse), Collapsed = Collapsed, Expand = js.Any.fromFunction0(Expand), Expanded = Expanded, GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetContentHtml = js.Any.fromFunction0(GetContentHtml), GetEnabled = js.Any.fromFunction0(GetEnabled), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, IsExpandable = js.Any.fromFunction0(IsExpandable), IsExpanded = js.Any.fromFunction0(IsExpanded), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetContentHtml = js.Any.fromFunction1(SetContentHtml), SetEnabled = js.Any.fromFunction1(SetEnabled), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), Toggle = js.Any.fromFunction0(Toggle), name = name)
-  
-    __obj.asInstanceOf[ASPxClientPanel]
-  }
+/* static members */
+@JSGlobal("ASPxClientPanel")
+@js.native
+object ASPxClientPanel extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientPanel type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientPanel = js.native
 }
 

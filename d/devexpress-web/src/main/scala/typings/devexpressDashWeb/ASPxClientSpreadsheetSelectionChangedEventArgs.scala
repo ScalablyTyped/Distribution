@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the SelectionChanged event.
+  * Provides data for the ASPxClientSpreadsheet.SelectionChanged event.
   */
-trait ASPxClientSpreadsheetSelectionChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientSpreadsheetSelectionChangedEventArgs")
+@js.native
+class ASPxClientSpreadsheetSelectionChangedEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientSpreadsheetSelectionChangedEventArgs within the specified setting.
+    * @param selection An ASPxClientSpreadsheetSelection object defining the selection in the Spreadsheet.
+    */
+  def this(selection: ASPxClientSpreadsheetSelection) = this()
   /**
     * Gets an object that determines the currently selected region within the Spreadsheet.
-    * Value: A <see cref="ASPxClientSpreadsheetSelection" /> object defining the current selection.
     */
-  var selection: ASPxClientSpreadsheetSelection
-}
-
-object ASPxClientSpreadsheetSelectionChangedEventArgs {
-  @scala.inline
-  def apply(selection: ASPxClientSpreadsheetSelection): ASPxClientSpreadsheetSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(selection = selection)
-  
-    __obj.asInstanceOf[ASPxClientSpreadsheetSelectionChangedEventArgs]
-  }
+  var selection: ASPxClientSpreadsheetSelection = js.native
 }
 

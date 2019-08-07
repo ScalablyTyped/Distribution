@@ -1,60 +1,28 @@
 package typings.devexpressDashWeb
 
+import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Provides functionality to an undo/redo engine in the Web Report Designer.
-  */
-trait ASPxDesignerUndoEngine extends js.Object {
-  /**
-    * Provides access to a value that specifies whether or not a report has been changed.
-    * Value: A knockout observable boolean object, whose value is true if the report has been modified, and false otherwise.
-    */
-  var isDirty: js.Any
-  /**
-    * Provides access to a value that specifies whether or not the redo action can currently be performed.
-    * Value: A knockout observable boolean object, whose value is true if the redo action can be performed, and false otherwise.
-    */
-  var redoEnabled: js.Any
-  /**
-    * Provides access to a value that specifies whether or not the undo action can currently be performed.
-    * Value: A knockout observable boolean object, whose value is true if the undo action can be performed, and false otherwise.
-    */
-  var undoEnabled: js.Any
-  /**
-    * Clears information about edit operations made to a report, so they cannot not be undone.
-    */
-  def clearHistory(): Unit
-  /**
-    * Reverses the results of the last undo action.
-    */
-  def redo(): Unit
-  /**
-    * Undoes the last edit action in a report.
-    */
-  def undo(): Unit
-  /**
-    * Undoes all changes made to a report.
-    */
-  def undoAll(): Unit
-}
-
-object ASPxDesignerUndoEngine {
-  @scala.inline
-  def apply(
-    clearHistory: () => Unit,
-    isDirty: js.Any,
-    redo: () => Unit,
-    redoEnabled: js.Any,
-    undo: () => Unit,
-    undoAll: () => Unit,
-    undoEnabled: js.Any
-  ): ASPxDesignerUndoEngine = {
-    val __obj = js.Dynamic.literal(clearHistory = js.Any.fromFunction0(clearHistory), isDirty = isDirty, redo = js.Any.fromFunction0(redo), redoEnabled = redoEnabled, undo = js.Any.fromFunction0(undo), undoAll = js.Any.fromFunction0(undoAll), undoEnabled = undoEnabled)
-  
-    __obj.asInstanceOf[ASPxDesignerUndoEngine]
-  }
+@JSGlobal("ASPxDesignerUndoEngine")
+@js.native
+class ASPxDesignerUndoEngine () extends js.Object {
+  @JSName("isDirty")
+  var isDirty_Original: KnockoutObservable[Boolean] = js.native
+  @JSName("redoEnabled")
+  var redoEnabled_Original: KnockoutObservable[Boolean] = js.native
+  @JSName("undoEnabled")
+  var undoEnabled_Original: KnockoutObservable[Boolean] = js.native
+  def clearHistory(): Unit = js.native
+  def isDirty(): Boolean = js.native
+  def isDirty(value: Boolean): Unit = js.native
+  def redo(): Unit = js.native
+  def redoEnabled(): Boolean = js.native
+  def redoEnabled(value: Boolean): Unit = js.native
+  def undo(): Unit = js.native
+  def undoAll(): Unit = js.native
+  def undoEnabled(): Boolean = js.native
+  def undoEnabled(value: Boolean): Unit = js.native
 }
 

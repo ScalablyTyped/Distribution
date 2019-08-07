@@ -14,6 +14,9 @@ object AttachmentType extends js.Object {
   sealed trait BoundingBox extends AttachmentType
   
   @js.native
+  sealed trait Clipping extends AttachmentType
+  
+  @js.native
   sealed trait LinkedMesh extends AttachmentType
   
   @js.native
@@ -29,6 +32,7 @@ object AttachmentType extends js.Object {
   sealed trait Region extends AttachmentType
   
   /* 1 */ val BoundingBox: typings.pixiDashSpine.PIXINs.spineNs.coreNs.AttachmentType.BoundingBox with Double = js.native
+  /* 6 */ val Clipping: typings.pixiDashSpine.PIXINs.spineNs.coreNs.AttachmentType.Clipping with Double = js.native
   /* 3 */ val LinkedMesh: typings.pixiDashSpine.PIXINs.spineNs.coreNs.AttachmentType.LinkedMesh with Double = js.native
   /* 2 */ val Mesh: typings.pixiDashSpine.PIXINs.spineNs.coreNs.AttachmentType.Mesh with Double = js.native
   /* 4 */ val Path: typings.pixiDashSpine.PIXINs.spineNs.coreNs.AttachmentType.Path with Double = js.native

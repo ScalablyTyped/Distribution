@@ -7,76 +7,48 @@ import scala.scalajs.js.annotation._
 /**
   * Contains days and groups of days for use in recurrence patterns.
   */
-trait ASPxClientWeekDays extends js.Object {
+@JSGlobal("ASPxClientWeekDays")
+@js.native
+class ASPxClientWeekDays () extends js.Object {
   /**
     * Specifies every day of the week.
-    * Value: The integer 127 value.
     */
-  var EveryDay: Double
+  var EveryDay: Double = js.native
   /**
     * Specifies Friday.
-    * Value: The integer 32 value.
     */
-  var Friday: Double
+  var Friday: Double = js.native
   /**
     * Specifies Monday.
-    * Value: The integer 2 value.
     */
-  var Monday: Double
+  var Monday: Double = js.native
   /**
     * Specifies Saturday.
-    * Value: The integer 64 value.
     */
-  var Saturday: Double
+  var Saturday: Double = js.native
   /**
     * Specifies Sunday.
-    * Value: The integer 1 value.
     */
-  var Sunday: Double
+  var Sunday: Double = js.native
   /**
     * Specifies Thursday.
-    * Value: The integer 16 value.
     */
-  var Thursday: Double
+  var Thursday: Double = js.native
   /**
     * Specifies Tuesday.
-    * Value: The integer 4 value.
     */
-  var Tuesday: Double
+  var Tuesday: Double = js.native
   /**
     * Specifies Wednesday.
-    * Value: The integer 8 value.
     */
-  var Wednesday: Double
+  var Wednesday: Double = js.native
   /**
     * Specifies Saturday and Sunday.
-    * Value: The integer 65 value.
     */
-  var WeekendDays: Double
+  var WeekendDays: Double = js.native
   /**
     * Specifies work days (Monday, Tuesday, Wednesday, Thursday and Friday).
-    * Value: The integer 62 value.
     */
-  var WorkDays: Double
-}
-
-object ASPxClientWeekDays {
-  @scala.inline
-  def apply(
-    EveryDay: Double,
-    Friday: Double,
-    Monday: Double,
-    Saturday: Double,
-    Sunday: Double,
-    Thursday: Double,
-    Tuesday: Double,
-    Wednesday: Double,
-    WeekendDays: Double,
-    WorkDays: Double
-  ): ASPxClientWeekDays = {
-    val __obj = js.Dynamic.literal(EveryDay = EveryDay, Friday = Friday, Monday = Monday, Saturday = Saturday, Sunday = Sunday, Thursday = Thursday, Tuesday = Tuesday, Wednesday = Wednesday, WeekendDays = WeekendDays, WorkDays = WorkDays)
-  
-    __obj.asInstanceOf[ASPxClientWeekDays]
-  }
+  var WorkDays: Double = js.native
 }
 

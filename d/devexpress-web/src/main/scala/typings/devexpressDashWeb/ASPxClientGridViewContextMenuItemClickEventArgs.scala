@@ -5,49 +5,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ContextMenuItemClick event.
+  * Provides data for the ASPxClientGridView.ContextMenuItemClick event.
   */
-trait ASPxClientGridViewContextMenuItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+@JSGlobal("ASPxClientGridViewContextMenuItemClickEventArgs")
+@js.native
+class ASPxClientGridViewContextMenuItemClickEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientGridViewContextMenuItemClickEventArgs class with the specified settings.
+    * @param item An ASPxClientMenuItem object specifying an item that has been right clicked by the user.
+    * @param objectType A string specifying a grid element that has been right clicked by the user.
+    * @param elementIndex A zero-based integer index that identifies the grid element being right clicked by the user.
+    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    */
+  def this(item: ASPxClientMenuItem, objectType: String, elementIndex: Double, processOnServer: Boolean) = this()
   /**
     * Returns the processed element index.
-    * Value: An integer value that specifies the processed element index.
     */
-  var elementIndex: Double
+  var elementIndex: Double = js.native
   /**
     * Specifies whether default context menu item click is handled manually, so no default processing is required.
-    * Value: true if no default processing is required; otherwise false.
     */
-  var handled: Boolean
+  var handled: Boolean = js.native
   /**
     * Gets the clicked context menu item.
-    * Value: An <see cref="ASPxClientMenuItem" /> object, manipulations on which forced the event to be raised.
     */
-  var item: ASPxClientMenuItem
+  var item: ASPxClientMenuItem = js.native
   /**
     * Gets which grid element has been right clicked by the user.
-    * Value: A String value that specifies the grid element.
     */
-  var objectType: String
+  var objectType: String = js.native
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
-    * Value: true to perform the round trip to the server side via postback; false to perform the round trip to the server side via callback.
     */
-  var usePostBack: Boolean
-}
-
-object ASPxClientGridViewContextMenuItemClickEventArgs {
-  @scala.inline
-  def apply(
-    elementIndex: Double,
-    handled: Boolean,
-    item: ASPxClientMenuItem,
-    objectType: String,
-    processOnServer: Boolean,
-    usePostBack: Boolean
-  ): ASPxClientGridViewContextMenuItemClickEventArgs = {
-    val __obj = js.Dynamic.literal(elementIndex = elementIndex, handled = handled, item = item, objectType = objectType, processOnServer = processOnServer, usePostBack = usePostBack)
-  
-    __obj.asInstanceOf[ASPxClientGridViewContextMenuItemClickEventArgs]
-  }
+  var usePostBack: Boolean = js.native
 }
 

@@ -29,15 +29,10 @@ class ^ protected ()
     *   @param sketch a closure that can set optional
     *   preload(), setup(), and/or draw() properties on
     *   the given p5 instance
-    *   @param [node] element to attach canvas to, if a
-    *   boolean is passed in use it as sync
-    *   @param [sync] start synchronously (optional)
+    *   @param [node] element to attach canvas to
     *   @return a p5 instance
     */
   def this(sketch: js.Function1[/* repeated */ js.Any, _]) = this()
-  def this(sketch: js.Function1[/* repeated */ js.Any, _], node: Boolean) = this()
   def this(sketch: js.Function1[/* repeated */ js.Any, _], node: HTMLElement) = this()
-  def this(sketch: js.Function1[/* repeated */ js.Any, _], node: Boolean, sync: Boolean) = this()
-  def this(sketch: js.Function1[/* repeated */ js.Any, _], node: HTMLElement, sync: Boolean) = this()
 }
 

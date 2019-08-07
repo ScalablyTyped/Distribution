@@ -14,7 +14,7 @@ trait ObjectPreview extends js.Object {
     */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * List of the entries. Specified for `map` and `set` subtype values only.
+    * List of the entries. Specified for <code>map</code> and <code>set</code> subtype values only.
     */
   var entries: js.UndefOr[js.Array[EntryPreview]] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait ObjectPreview extends js.Object {
     */
   var properties: js.Array[PropertyPreview]
   /**
-    * Object subtype hint. Specified for `object` type values only.
+    * Object subtype hint. Specified for <code>object</code> type values only.
     */
   var subtype: js.UndefOr[java.lang.String] = js.undefined
   /**

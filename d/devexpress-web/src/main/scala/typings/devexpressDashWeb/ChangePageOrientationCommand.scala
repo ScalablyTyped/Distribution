@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the page orientation.
   */
-trait ChangePageOrientationCommand extends CommandBase {
+@JSGlobal("ChangePageOrientationCommand")
+@js.native
+class ChangePageOrientationCommand () extends CommandBase {
   /**
-    * Executes the ChangePageOrientationCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    * @param isPortrait One of the Orientation enumeration values.
+    * Executes the ChangePageOrientationCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
+    * @param orientation The page orientation.
     */
-  def execute(isPortrait: js.Any): Boolean
+  def execute(orientation: Orientation): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangePageOrientationCommand {
-  @scala.inline
-  def apply(execute: js.Any => Boolean, getState: () => js.Any): ChangePageOrientationCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangePageOrientationCommand]
-  }
+  def getState(): CommandState[Orientation] = js.native
 }
 

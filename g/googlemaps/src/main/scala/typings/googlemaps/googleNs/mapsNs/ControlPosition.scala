@@ -62,10 +62,7 @@ object ControlPosition extends js.Object {
   @js.native
   sealed trait RIGHT_CENTER extends ControlPosition
   
-  /**
-    Elements are positioned on the right, below top-right elements, and flow
-    downwards.
-    */
+  /** Elements are positioned on the right, below top-right elements, and flow downwards. */
   @js.native
   sealed trait RIGHT_TOP extends ControlPosition
   

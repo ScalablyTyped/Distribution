@@ -50,10 +50,11 @@ trait Vector extends js.Object {
   /**
     *   Calculates and returns the angle (in radians)
     *   between two vectors.
-    *   @param the x, y, and z components of a p5.Vector
+    *   @param value the x, y, and z components of a
+    *   p5.Vector
     *   @return the angle between (in radians)
     */
-  def angleBetween(the: Vector): Double = js.native
+  def angleBetween(value: Vector): Double = js.native
   /**
     *   Return a representation of this vector as a float
     *   array. This is only for temporary use. If used in

@@ -7,24 +7,17 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the settings of individual section columns.
   */
-trait ChangeSectionColumnsCommand extends CommandBase {
+@JSGlobal("ChangeSectionColumnsCommand")
+@js.native
+class ChangeSectionColumnsCommand () extends js.Object {
   /**
-    * Executes the ChangeSectionColumnsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ChangeSectionColumnsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param columns An array of SectionColumn objects.
     */
-  def execute(columns: js.Array[SectionColumn]): Boolean
+  def execute(columns: js.Array[SectionColumn]): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeSectionColumnsCommand {
-  @scala.inline
-  def apply(execute: js.Array[SectionColumn] => Boolean, getState: () => js.Any): ChangeSectionColumnsCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeSectionColumnsCommand]
-  }
+  def getState(): CommandState[js.Array[SectionColumn]] = js.native
 }
 

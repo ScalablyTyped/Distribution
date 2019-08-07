@@ -7,24 +7,21 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the font name of characters in a selected range.
   */
-trait ChangeFontNameCommand extends CommandBase {
+@JSGlobal("ChangeFontNameCommand")
+@js.native
+class ChangeFontNameCommand () extends CommandBase {
   /**
-    * Executes the ChangeFontNameCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Lists names of fonts available in the control.
+    */
+  val fontNames: js.Array[String] = js.native
+  /**
+    * Executes the ChangeFontNameCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param fontName A string specifying the font name.
     */
-  def execute(fontName: String): Boolean
+  def execute(fontName: String): Boolean = js.native
   /**
-    * Gets information about the command state.
+    * Gets information about the command's state.
     */
-  def getState(): js.Any
-}
-
-object ChangeFontNameCommand {
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => js.Any): ChangeFontNameCommand = {
-    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
-  
-    __obj.asInstanceOf[ChangeFontNameCommand]
-  }
+  def getState(): CommandState[String] = js.native
 }
 

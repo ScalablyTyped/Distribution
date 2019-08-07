@@ -15,10 +15,7 @@ sealed trait MapTypeId extends js.Object
 @JSGlobal("google.maps.MapTypeId")
 @js.native
 object MapTypeId extends js.Object {
-  /**
-    This map type displays a transparent layer of major streets on satellite
-    images.
-    */
+  /** This map type displays a transparent layer of major streets on satellite images. */
   @js.native
   sealed trait HYBRID extends MapTypeId
   
@@ -30,10 +27,7 @@ object MapTypeId extends js.Object {
   @js.native
   sealed trait SATELLITE extends MapTypeId
   
-  /**
-    This map type displays maps with physical features such as terrain and
-    vegetation.
-    */
+  /** This map type displays maps with physical features such as terrain and vegetation. */
   @js.native
   sealed trait TERRAIN extends MapTypeId
   

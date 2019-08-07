@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditConfirmShowing event.
+  * Provides data for the ASPxClientCardView.BatchEditConfirmShowing event.
   */
-trait ASPxClientCardViewBatchEditConfirmShowingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientCardViewBatchEditConfirmShowingEventArgs")
+@js.native
+class ASPxClientCardViewBatchEditConfirmShowingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientCardViewBatchEditConfirmShowingEventArgs class.
+    * @param requestTriggerID A string value specifying the client identifier of an object that initiates a request.
+    */
+  def this(requestTriggerID: String) = this()
   /**
     * Gets the client identifier of an object that initiates a send request.
-    * Value: A string value that specifies the object client identifier.
     */
-  var requestTriggerID: String
-}
-
-object ASPxClientCardViewBatchEditConfirmShowingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, requestTriggerID: String): ASPxClientCardViewBatchEditConfirmShowingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, requestTriggerID = requestTriggerID)
-  
-    __obj.asInstanceOf[ASPxClientCardViewBatchEditConfirmShowingEventArgs]
-  }
+  var requestTriggerID: String = js.native
 }
 

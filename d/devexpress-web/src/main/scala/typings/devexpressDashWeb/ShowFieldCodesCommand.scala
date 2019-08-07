@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A command to display the selected field's field codes.
   */
+@JSGlobal("ShowFieldCodesCommand")
 @js.native
-trait ShowFieldCodesCommand extends CommandWithSimpleStateBase {
+class ShowFieldCodesCommand () extends CommandWithSimpleStateBase {
   /**
-    * Executes the ShowFieldCodesCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-    */
-  def execute(): Boolean = js.native
-  /**
-    * Executes the ShowFieldCodesCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * Executes the ShowFieldCodesCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param showFieldCodes true to display field codes, false to hide field codes.
     */
+  def execute(): Boolean = js.native
   def execute(showFieldCodes: Boolean): Boolean = js.native
 }
 

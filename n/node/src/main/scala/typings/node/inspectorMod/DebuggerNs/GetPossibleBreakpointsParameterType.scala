@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetPossibleBreakpointsParameterType extends js.Object {
   /**
-    * End of range to search possible breakpoint locations in (excluding). When not specified, end
-    * of scripts is used as end of range.
+    * End of range to search possible breakpoint locations in (excluding). When not specified, end of scripts is used as end of range.
     */
   var end: js.UndefOr[Location] = js.undefined
   /**

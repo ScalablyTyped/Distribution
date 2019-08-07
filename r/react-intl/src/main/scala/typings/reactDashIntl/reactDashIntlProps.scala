@@ -1,34 +1,37 @@
 package typings.reactDashIntl
 
-import typings.reactDashIntl.ReactIntlNs.FormattedDateNs.Props
+import typings.reactDashIntl.distComponentsMessageMod.Props
+import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashIntlProps {
   @scala.inline
-  def FormattedDateProps: Props.type = typings.reactDashIntl.ReactIntlNs.FormattedDateNs.Props
-  type FormattedDateProps = Props
+  def FormattedHTMLMessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
+  type FormattedHTMLMessageProps[V /* <: Record[String, _] */] = Props[V]
   @scala.inline
-  def FormattedHTMLMessageProps: typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props
-  type FormattedHTMLMessageProps = typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props
+  def FormattedMessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
+  type FormattedMessageProps[V /* <: Record[String, _] */] = Props[V]
   @scala.inline
-  def FormattedMessageProps: typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props
-  type FormattedMessageProps = typings.reactDashIntl.ReactIntlNs.FormattedMessageNs.Props
+  def FormattedRelativeTimeProps: typings.reactDashIntl.distComponentsRelativeMod.Props.type = typings.reactDashIntl.distComponentsRelativeMod.Props
+  type FormattedRelativeTimeProps = typings.reactDashIntl.distComponentsRelativeMod.Props
   @scala.inline
-  def FormattedNumberProps: typings.reactDashIntl.ReactIntlNs.FormattedNumberNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedNumberNs.Props
-  type FormattedNumberProps = typings.reactDashIntl.ReactIntlNs.FormattedNumberNs.Props
+  def HtmlDashMessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
+  type HtmlDashMessageProps[V /* <: Record[String, _] */] = Props[V]
+  type IntlProviderProps = OptionalIntlConfig
   @scala.inline
-  def FormattedPluralProps: typings.reactDashIntl.ReactIntlNs.FormattedPluralNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedPluralNs.Props
-  type FormattedPluralProps = typings.reactDashIntl.ReactIntlNs.FormattedPluralNs.Props
+  def MessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
+  type MessageProps[V /* <: Record[String, _] */] = Props[V]
   @scala.inline
-  def FormattedRelativeProps: typings.reactDashIntl.ReactIntlNs.FormattedRelativeNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedRelativeNs.Props
-  type FormattedRelativeProps = typings.reactDashIntl.ReactIntlNs.FormattedRelativeNs.Props
+  def ProviderProps: typings.react.reactMod.ProviderProps.type = typings.react.reactMod.ProviderProps
+  type ProviderProps[T] = typings.react.reactMod.ProviderProps[T]
   @scala.inline
-  def FormattedTimeProps: typings.reactDashIntl.ReactIntlNs.FormattedTimeNs.Props.type = typings.reactDashIntl.ReactIntlNs.FormattedTimeNs.Props
-  type FormattedTimeProps = typings.reactDashIntl.ReactIntlNs.FormattedTimeNs.Props
+  def RawIntlProviderProps: typings.react.reactMod.ProviderProps.type = typings.react.reactMod.ProviderProps
+  type RawIntlProviderProps[T] = typings.react.reactMod.ProviderProps[T]
   @scala.inline
-  def IntlProviderProps: typings.reactDashIntl.ReactIntlNs.IntlProviderNs.Props.type = typings.reactDashIntl.ReactIntlNs.IntlProviderNs.Props
-  type IntlProviderProps = typings.reactDashIntl.ReactIntlNs.IntlProviderNs.Props
+  def RelativeProps: typings.reactDashIntl.distComponentsRelativeMod.Props.type = typings.reactDashIntl.distComponentsRelativeMod.Props
+  type RelativeProps = typings.reactDashIntl.distComponentsRelativeMod.Props
 }
 

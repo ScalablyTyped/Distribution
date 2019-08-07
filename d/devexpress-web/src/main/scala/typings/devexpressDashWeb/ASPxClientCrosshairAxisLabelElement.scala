@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the CrosshairAxisLabelElement class.
   */
-trait ASPxClientCrosshairAxisLabelElement extends js.Object
+@JSGlobal("ASPxClientCrosshairAxisLabelElement")
+@js.native
+class ASPxClientCrosshairAxisLabelElement () extends js.Object
 

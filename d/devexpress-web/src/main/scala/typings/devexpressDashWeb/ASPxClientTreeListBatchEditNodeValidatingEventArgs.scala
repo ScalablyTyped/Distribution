@@ -5,27 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditNodeValidating event.
+  * Provides data for the ASPxClientTreeList.BatchEditNodeValidating event.
   */
-trait ASPxClientTreeListBatchEditNodeValidatingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientTreeListBatchEditNodeValidatingEventArgs")
+@js.native
+class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientTreeListBatchEditNodeValidatingEventArgs class.
+    * @param nodeKey A String value that identifies the processed node.
+    * @param validationInfo An object containing validation information.
+    */
+  def this(nodeKey: String, validationInfo: js.Any) = this()
   /**
     * Gets the node's key value.
-    * Value: A String value that identifies the processed node.
     */
-  var nodeKey: String
+  var nodeKey: String = js.native
   /**
     * Provides validation information of a validated node.
-    * Value: An object that is a hashtable containing validation information.
     */
-  var validationInfo: js.Object
-}
-
-object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
-  @scala.inline
-  def apply(nodeKey: String, validationInfo: js.Object): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
-    val __obj = js.Dynamic.literal(nodeKey = nodeKey, validationInfo = validationInfo)
-  
-    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeValidatingEventArgs]
-  }
+  var validationInfo: js.Any = js.native
 }
 

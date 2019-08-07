@@ -5,42 +5,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the HyperlinkClick event.
+  * Provides data for the ASPxClientSpreadsheet.HyperlinkClick event.
   */
-trait ASPxClientSpreadsheetHyperlinkClickEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientSpreadsheetHyperlinkClickEventArgs")
+@js.native
+class ASPxClientSpreadsheetHyperlinkClickEventArgs protected () extends ASPxClientEventArgs {
   /**
-    * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
-    * Value: true, if if the event is completely handled by custom code and no default processing is required; otherwise, false.
+    * Initializes a new instance of the ASPxClientSpreadsheetHyperlinkClickEventArgs object. For internal use only.
+    * @param htmlEvent A DHTML event object that relates to the processed event.
+    * @param handled true if the event is handled and no default processing is required; otherwise false.
+    * @param hyperlinkType One of the ASPxClientOfficeDocumentLinkType values.
+    * @param targetUri A sting value specifying the link's URI.
     */
-  var handled: Boolean
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    * Value: An object that maintains DHTML event-specific information.
-    */
-  var htmlEvent: js.Object
-  /**
-    * Gets a value identifying the clicked hyperlink type.
-    * Value: One of the <see cref="ASPxClientOfficeDocumentLinkType" /> values.
-    */
-  var hyperlinkType: ASPxClientOfficeDocumentLinkType
-  /**
-    * Gets the clicked link's URI.
-    * Value: A sting value specifying the link's URI.
-    */
-  var targetUri: String
-}
-
-object ASPxClientSpreadsheetHyperlinkClickEventArgs {
-  @scala.inline
-  def apply(
+  def this(
+    htmlEvent: js.Any,
     handled: Boolean,
-    htmlEvent: js.Object,
     hyperlinkType: ASPxClientOfficeDocumentLinkType,
     targetUri: String
-  ): ASPxClientSpreadsheetHyperlinkClickEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent, hyperlinkType = hyperlinkType, targetUri = targetUri)
-  
-    __obj.asInstanceOf[ASPxClientSpreadsheetHyperlinkClickEventArgs]
-  }
+  ) = this()
+  /**
+    * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
+    */
+  var handled: Boolean = js.native
+  /**
+    * Gets a DHTML event object that relates to the processed event.
+    */
+  var htmlEvent: js.Any = js.native
+  /**
+    * Gets a value identifying the clicked hyperlink type.
+    */
+  var hyperlinkType: ASPxClientOfficeDocumentLinkType = js.native
+  /**
+    * Gets the clicked link's URI.
+    */
+  var targetUri: String = js.native
 }
 

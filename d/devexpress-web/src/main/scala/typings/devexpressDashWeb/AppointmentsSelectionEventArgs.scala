@@ -5,22 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the AppointmentsSelectionChanged event.
+  * Provides data for the ASPxClientScheduler.AppointmentsSelectionChanged event.
   */
-trait AppointmentsSelectionEventArgs extends ASPxClientEventArgs {
+@JSGlobal("AppointmentsSelectionEventArgs")
+@js.native
+class AppointmentsSelectionEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the class.
+    * @param appointmentIds Represents an array of appointments' IDs.
+    */
+  def this(appointmentIds: js.Array[String]) = this()
   /**
     * Gets identifiers of the selected appointments.
-    * Value: A comma separated list of string values, representing appointment IDs.
     */
-  var appointmentIds: js.Array[String]
-}
-
-object AppointmentsSelectionEventArgs {
-  @scala.inline
-  def apply(appointmentIds: js.Array[String]): AppointmentsSelectionEventArgs = {
-    val __obj = js.Dynamic.literal(appointmentIds = appointmentIds)
-  
-    __obj.asInstanceOf[AppointmentsSelectionEventArgs]
-  }
+  var appointmentIds: js.Array[String] = js.native
 }
 

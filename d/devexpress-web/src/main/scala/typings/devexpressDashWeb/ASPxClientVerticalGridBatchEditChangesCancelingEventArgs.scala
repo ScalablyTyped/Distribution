@@ -5,32 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the BatchEditChangesCanceling event.
+  * Provides data for the ASPxClientVerticalGrid.BatchEditChangesCanceling event.
   */
-trait ASPxClientVerticalGridBatchEditChangesCancelingEventArgs extends ASPxClientCancelEventArgs {
+@JSGlobal("ASPxClientVerticalGridBatchEditChangesCancelingEventArgs")
+@js.native
+class ASPxClientVerticalGridBatchEditChangesCancelingEventArgs protected () extends ASPxClientCancelEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditChangesCancelingEventArgs class.
+    * @param insertedValues A hashtable that stores information about inserted cells.
+    * @param deletedValues A hashtable that stores information about deleted cells.
+    * @param updatedValues A hashtable that stores information about updated cells.
+    */
+  def this(insertedValues: js.Any, deletedValues: js.Any, updatedValues: js.Any) = this()
   /**
     * Gets a hashtable that maintains information about deleted cells.
-    * Value: A hashtable that stores information about deleted cells.
     */
-  var deletedValues: js.Object
+  var deletedValues: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about inserted cells.
-    * Value: A hashtable that stores information about inserted cells.
     */
-  var insertedValues: js.Object
+  var insertedValues: js.Any = js.native
   /**
     * Gets a hashtable that maintains information about updated cells.
-    * Value: A hashtable that stores information about updated cells.
     */
-  var updatedValues: js.Object
-}
-
-object ASPxClientVerticalGridBatchEditChangesCancelingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, deletedValues: js.Object, insertedValues: js.Object, updatedValues: js.Object): ASPxClientVerticalGridBatchEditChangesCancelingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, updatedValues = updatedValues)
-  
-    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditChangesCancelingEventArgs]
-  }
+  var updatedValues: js.Any = js.native
 }
 

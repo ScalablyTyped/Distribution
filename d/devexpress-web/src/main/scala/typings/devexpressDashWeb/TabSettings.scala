@@ -7,35 +7,24 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings of a tab stop.
   */
-trait TabSettings extends js.Object {
+@JSGlobal("TabSettings")
+@js.native
+class TabSettings () extends js.Object {
   /**
-    * Gets or sets the alignment type, specifying how any text after the tab will be lined up.
-    * Value: One of the <see cref="TabAlign" /> values.
+    * Specifies the tab alignment type.
     */
-  var alignment: js.Any
+  var alignment: TabAlign = js.native
   /**
-    * Gets or sets whether the individual tab stop is in effect.
-    * Value: true to switch off this tab stop; otherwise, false.
+    * Specifies whether the individual tab stop is in effect.
     */
-  var deleted: Boolean
+  var deleted: Boolean = js.native
   /**
-    * Gets or sets the tab leader style, i.e., the symbol used as a tab leader.
-    * Value: One of the <see cref="TabLeaderType" /> values.
+    * Specifies the tab leader symbol.
     */
-  var leader: js.Any
+  var leader: TabLeaderType = js.native
   /**
-    * Gets or sets the position of the tab stop.
-    * Value: A number representing the distance from the left edge of the text area.
+    * Specifies the position of the tab stop.
     */
-  var position: Double
-}
-
-object TabSettings {
-  @scala.inline
-  def apply(alignment: js.Any, deleted: Boolean, leader: js.Any, position: Double): TabSettings = {
-    val __obj = js.Dynamic.literal(alignment = alignment, deleted = deleted, leader = leader, position = position)
-  
-    __obj.asInstanceOf[TabSettings]
-  }
+  var position: Double = js.native
 }
 

@@ -5,22 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the DynamicLookUpValuesLoaded event.
+  * Provides data for the ASPxClientDashboard.DynamicLookUpValuesLoaded event.
   */
-trait ASPxClientDynamicLookUpValuesLoadedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientDynamicLookUpValuesLoadedEventArgs")
+@js.native
+class ASPxClientDynamicLookUpValuesLoadedEventArgs () extends ASPxClientEventArgs {
   /**
     * Gets the dashboard parameter name whose values have been loaded.
-    * Value: A string value that is the dashboard parameter name whose values have been loaded.
     */
-  var ParameterName: String
-}
-
-object ASPxClientDynamicLookUpValuesLoadedEventArgs {
-  @scala.inline
-  def apply(ParameterName: String): ASPxClientDynamicLookUpValuesLoadedEventArgs = {
-    val __obj = js.Dynamic.literal(ParameterName = ParameterName)
-  
-    __obj.asInstanceOf[ASPxClientDynamicLookUpValuesLoadedEventArgs]
-  }
+  var ParameterName: String = js.native
 }
 

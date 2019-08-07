@@ -5,26 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ItemSelectionChanged events.
+  * Provides data for the ASPxClientDashboard.ItemSelectionChanged event.
   */
-trait ASPxClientDashboardItemSelectionChangedEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientDashboardItemSelectionChangedEventArgs")
+@js.native
+class ASPxClientDashboardItemSelectionChangedEventArgs () extends ASPxClientEventArgs {
   /**
     * Gets the component name of the dashboard item for which the event was raised.
-    * Value: A string that is the component name of the dashboard item.
     */
-  var ItemName: String
+  var ItemName: String = js.native
   /**
     * Gets currently selected elements.
     */
-  def GetCurrentSelection(): js.Array[ASPxClientDashboardItemDataAxisPointTuple]
-}
-
-object ASPxClientDashboardItemSelectionChangedEventArgs {
-  @scala.inline
-  def apply(GetCurrentSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple], ItemName: String): ASPxClientDashboardItemSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(GetCurrentSelection = js.Any.fromFunction0(GetCurrentSelection), ItemName = ItemName)
-  
-    __obj.asInstanceOf[ASPxClientDashboardItemSelectionChangedEventArgs]
-  }
+  def GetCurrentSelection(): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
 }
 

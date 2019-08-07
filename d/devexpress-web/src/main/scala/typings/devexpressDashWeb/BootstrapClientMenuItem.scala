@@ -7,75 +7,40 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the menu's BootstrapMenuItem object.
   */
-trait BootstrapClientMenuItem extends ASPxClientMenuItem {
+@JSGlobal("BootstrapClientMenuItem")
+@js.native
+class BootstrapClientMenuItem () extends ASPxClientMenuItem {
   /**
     * Gets the immediate parent item to which the current item belongs.
-    * Value: A BootstrapClientMenuItem object representing the item's immediate parent.
     */
   @JSName("parent")
-  var parent_BootstrapClientMenuItem: BootstrapClientMenuItem
+  var parent_BootstrapClientMenuItem: BootstrapClientMenuItem = js.native
   /**
     * Gets the CSS class of the icon displayed within the menu item badge.
     */
-  def GetBadgeIconCssClass(): String
+  def GetBadgeIconCssClass(): String = js.native
   /**
     * Gets the text displayed within the menu item badge.
     */
-  def GetBadgeText(): String
+  def GetBadgeText(): String = js.native
   /**
     * Gets the CSS class of the icon displayed by the menu item.
     */
-  def GetIconCssClass(): String
+  def GetIconCssClass(): String = js.native
   /**
     * Sets the CSS class of the icon displayed within the menu item badge.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetBadgeIconCssClass(cssClass: String): Unit
+  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
   /**
     * Sets the text displayed within the menu item badge.
     * @param text A String specifying the badge text.
     */
-  def SetBadgeText(text: String): Unit
+  def SetBadgeText(text: String): Unit = js.native
   /**
     * Sets the CSS class of the icon displayed by the menu item.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetIconCssClass(cssClass: String): Unit
-}
-
-object BootstrapClientMenuItem {
-  @scala.inline
-  def apply(
-    GetBadgeIconCssClass: () => String,
-    GetBadgeText: () => String,
-    GetChecked: () => Boolean,
-    GetEnabled: () => Boolean,
-    GetIconCssClass: () => String,
-    GetImageUrl: () => String,
-    GetItem: Double => BootstrapClientMenuItem,
-    GetItemByName: String => BootstrapClientMenuItem,
-    GetItemCount: () => Double,
-    GetNavigateUrl: () => String,
-    GetText: () => String,
-    GetVisible: () => Boolean,
-    SetBadgeIconCssClass: String => Unit,
-    SetBadgeText: String => Unit,
-    SetChecked: Boolean => Unit,
-    SetEnabled: Boolean => Unit,
-    SetIconCssClass: String => Unit,
-    SetImageUrl: String => Unit,
-    SetNavigateUrl: String => Unit,
-    SetText: String => Unit,
-    SetVisible: Boolean => Unit,
-    index: Double,
-    indexPath: String,
-    menu: ASPxClientMenuBase,
-    name: String,
-    parent: BootstrapClientMenuItem
-  ): BootstrapClientMenuItem = {
-    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = js.Any.fromFunction0(GetBadgeIconCssClass), GetBadgeText = js.Any.fromFunction0(GetBadgeText), GetChecked = js.Any.fromFunction0(GetChecked), GetEnabled = js.Any.fromFunction0(GetEnabled), GetIconCssClass = js.Any.fromFunction0(GetIconCssClass), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetBadgeIconCssClass = js.Any.fromFunction1(SetBadgeIconCssClass), SetBadgeText = js.Any.fromFunction1(SetBadgeText), SetChecked = js.Any.fromFunction1(SetChecked), SetEnabled = js.Any.fromFunction1(SetEnabled), SetIconCssClass = js.Any.fromFunction1(SetIconCssClass), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
-  
-    __obj.asInstanceOf[BootstrapClientMenuItem]
-  }
+  def SetIconCssClass(cssClass: String): Unit = js.native
 }
 

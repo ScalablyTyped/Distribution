@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait PausedEventDataType extends js.Object {
   /**
-    * Just scheduled async call will have this stack trace as parent stack during async execution.
-    * This field is available only after `Debugger.stepInto` call with `breakOnAsynCall` flag.
+    * Just scheduled async call will have this stack trace as parent stack during async execution. This field is available only after <code>Debugger.stepInto</code> call with <code>breakOnAsynCall</code> flag.
     * @experimental
     */
   var asyncCallStackTraceId: js.UndefOr[StackTraceId] = js.undefined

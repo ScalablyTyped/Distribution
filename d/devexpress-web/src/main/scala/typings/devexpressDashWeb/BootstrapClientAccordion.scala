@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapAccordion control.
   */
+@JSGlobal("BootstrapClientAccordion")
 @js.native
-trait BootstrapClientAccordion extends ASPxClientNavBar {
+class BootstrapClientAccordion () extends ASPxClientNavBar {
   /**
     * Makes the specified group active.
     * @param group A BootstrapClientAccordionGroup object that specifies the active group.

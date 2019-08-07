@@ -9,18 +9,15 @@ import scala.scalajs.js.annotation._
   */
 trait PropertyDescriptor extends js.Object {
   /**
-    * True if the type of this property descriptor may be changed and if the property may be
-    * deleted from the corresponding object.
+    * True if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
     */
   var configurable: Boolean
   /**
-    * True if this property shows up during enumeration of the properties on the corresponding
-    * object.
+    * True if this property shows up during enumeration of the properties on the corresponding object.
     */
   var enumerable: Boolean
   /**
-    * A function which serves as a getter for the property, or `undefined` if there is no getter
-    * (accessor descriptors only).
+    * A function which serves as a getter for the property, or <code>undefined</code> if there is no getter (accessor descriptors only).
     */
   var get: js.UndefOr[RemoteObject] = js.undefined
   /**
@@ -32,12 +29,11 @@ trait PropertyDescriptor extends js.Object {
     */
   var name: java.lang.String
   /**
-    * A function which serves as a setter for the property, or `undefined` if there is no setter
-    * (accessor descriptors only).
+    * A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).
     */
   var set: js.UndefOr[RemoteObject] = js.undefined
   /**
-    * Property symbol object, if the property is of the `symbol` type.
+    * Property symbol object, if the property is of the <code>symbol</code> type.
     */
   var symbol: js.UndefOr[RemoteObject] = js.undefined
   /**

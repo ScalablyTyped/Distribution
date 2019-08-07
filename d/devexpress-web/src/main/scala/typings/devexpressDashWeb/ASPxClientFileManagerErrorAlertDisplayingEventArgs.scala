@@ -5,32 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides data for the ErrorAlertDisplaying event.
+  * Provides data for the ASPxClientFileManager.ErrorAlertDisplaying event.
   */
-trait ASPxClientFileManagerErrorAlertDisplayingEventArgs extends ASPxClientEventArgs {
+@JSGlobal("ASPxClientFileManagerErrorAlertDisplayingEventArgs")
+@js.native
+class ASPxClientFileManagerErrorAlertDisplayingEventArgs protected () extends ASPxClientEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientFileManagerErrorAlertDisplayingEventArgs class with the specified settings.
+    * @param commandName A String value that specifies the name of the processed command. Initializes the ASPxClientFileManagerErrorAlertDisplayingEventArgs.commandName property.
+    * @param errorText A String value that specifies the error text. This value is assigned to the ASPxClientFileManagerErrorAlertDisplayingEventArgs.errorText property.
+    */
+  def this(commandName: String, errorText: String) = this()
   /**
     * Gets the name of the processed command.
-    * Value: A string value that is the processed command's name.
     */
-  var commandName: String
+  var commandName: String = js.native
   /**
     * Gets or sets the errors description.
-    * Value: A string that is the errors description.
     */
-  var errorText: String
+  var errorText: String = js.native
   /**
     * Gets or sets a value specifying whether an alert message is displayed when the event fires.
-    * Value: true to display an alert message; otherwise, false.
     */
-  var showAlert: Boolean
-}
-
-object ASPxClientFileManagerErrorAlertDisplayingEventArgs {
-  @scala.inline
-  def apply(commandName: String, errorText: String, showAlert: Boolean): ASPxClientFileManagerErrorAlertDisplayingEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName, errorText = errorText, showAlert = showAlert)
-  
-    __obj.asInstanceOf[ASPxClientFileManagerErrorAlertDisplayingEventArgs]
-  }
+  var showAlert: Boolean = js.native
 }
 

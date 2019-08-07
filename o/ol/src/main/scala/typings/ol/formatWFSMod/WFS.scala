@@ -23,6 +23,7 @@ trait WFS
   def readTransactionResponse(source: Element): TransactionResponse = js.native
   def readTransactionResponseFromDocument(doc: Document): TransactionResponse = js.native
   def readTransactionResponseFromNode(node: Element): TransactionResponse = js.native
+  def setFeatureType(): Unit = js.native
   def setFeatureType(featureType: String): Unit = js.native
   def setFeatureType(featureType: js.Array[String]): Unit = js.native
   def writeGetFeature(options: WriteGetFeatureOptions): Node = js.native

@@ -20,6 +20,12 @@ class default protected ()
     `type`: GeometryType,
     flatCoordinates: js.Array[Double],
     ends: js.Array[js.Array[Double] | Double],
+    properties: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    `type`: GeometryType,
+    flatCoordinates: js.Array[Double],
+    ends: js.Array[js.Array[Double] | Double],
     properties: StringDictionary[js.Any],
     id: String
   ) = this()

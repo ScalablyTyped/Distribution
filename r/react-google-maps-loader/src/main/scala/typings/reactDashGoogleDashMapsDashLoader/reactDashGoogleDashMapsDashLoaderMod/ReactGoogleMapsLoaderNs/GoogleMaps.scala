@@ -41,10 +41,10 @@ import typings.googlemaps.googleNs.mapsNs.StyledMapType
 import typings.googlemaps.googleNs.mapsNs.TrafficLayer
 import typings.googlemaps.googleNs.mapsNs.TransitLayer
 import typings.reactDashGoogleDashMapsDashLoader.TypeofClassMarker
-import typings.reactDashGoogleDashMapsDashLoader.TypeofClassevent
 import typings.reactDashGoogleDashMapsDashLoader.TypeofData
 import typings.reactDashGoogleDashMapsDashLoader.Typeofadsense
 import typings.reactDashGoogleDashMapsDashLoader.Typeofdrawing
+import typings.reactDashGoogleDashMapsDashLoader.Typeofevent
 import typings.reactDashGoogleDashMapsDashLoader.Typeofgeometry
 import typings.reactDashGoogleDashMapsDashLoader.Typeofplaces
 import typings.reactDashGoogleDashMapsDashLoader.Typeofvisualization
@@ -145,7 +145,7 @@ trait GoogleMaps extends js.Object {
   val adsenseNs: Typeofadsense
   /***** Drawing Library *****/
   val drawingNs: Typeofdrawing
-  var event: TypeofClassevent
+  val eventNs: Typeofevent
   /***** Geometry Library *****/
   val geometryNs: Typeofgeometry
   /***** Places Library *****/
@@ -195,12 +195,12 @@ object GoogleMaps {
     TransitLayer: Instantiable0[TransitLayer],
     adsenseNs: Typeofadsense,
     drawingNs: Typeofdrawing,
-    event: TypeofClassevent,
+    eventNs: Typeofevent,
     geometryNs: Typeofgeometry,
     placesNs: Typeofplaces,
     visualizationNs: Typeofvisualization
   ): GoogleMaps = {
-    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DataNs = DataNs, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsenseNs = adsenseNs, drawingNs = drawingNs, event = event, geometryNs = geometryNs, placesNs = placesNs, visualizationNs = visualizationNs)
+    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DataNs = DataNs, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsenseNs = adsenseNs, drawingNs = drawingNs, eventNs = eventNs, geometryNs = geometryNs, placesNs = placesNs, visualizationNs = visualizationNs)
   
     __obj.asInstanceOf[GoogleMaps]
   }

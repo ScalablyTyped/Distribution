@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ExceptionRevokedEventDataType extends js.Object {
   /**
-    * The id of revoked exception, as reported in `exceptionThrown`.
+    * The id of revoked exception, as reported in <code>exceptionThrown</code>.
     */
   var exceptionId: Double
   /**

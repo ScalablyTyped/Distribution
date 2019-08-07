@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxRoundPanel control.
   */
+@JSGlobal("ASPxClientRoundPanel")
 @js.native
-trait ASPxClientRoundPanel extends ASPxClientPanelBase {
+class ASPxClientRoundPanel () extends ASPxClientPanelBase {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -38,16 +39,12 @@ trait ASPxClientRoundPanel extends ASPxClientPanelBase {
     */
   def GetHeaderText(): String = js.native
   /**
-    * Sends a callback to the server and generates the server-side ContentCallback event, passing it the specified argument.
-    * @param parameter A string value that is any information that needs to be sent to the server-side ContentCallback event.
-    */
-  def PerformCallback(parameter: String): Unit = js.native
-  /**
-    * Sends a callback to the server and generates the server-side ContentCallback event, passing it the specified argument.
-    * @param parameter A string value that is any information that needs to be sent to the server-side ContentCallback event.
+    * Sends a callback to the server and generates the server-side ASPxRoundPanel.ContentCallback event, passing it the specified argument.
+    * @param parameter A string value that is any information that needs to be sent to the server-side ASPxRoundPanel.ContentCallback event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg1 */ String, Unit]): Unit = js.native
+  def PerformCallback(parameter: String): Unit = js.native
+  def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   /**
     * Sets a value indicating whether the panel is collapsed.
     * @param collapsed true, to collapse the panel; otherwise, false.
@@ -58,5 +55,16 @@ trait ASPxClientRoundPanel extends ASPxClientPanelBase {
     * @param text A string value that specifies the panel header's text.
     */
   def SetHeaderText(text: String): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("ASPxClientRoundPanel")
+@js.native
+object ASPxClientRoundPanel extends js.Object {
+  /**
+    * Converts the specified object to the ASPxClientRoundPanel type. The converted client object specified by the obj parameter.
+    * @param obj The client object to be type cast.
+    */
+  def Cast(obj: js.Any): ASPxClientRoundPanel = js.native
 }
 
