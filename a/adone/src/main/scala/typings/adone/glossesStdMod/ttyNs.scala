@@ -1,5 +1,6 @@
 package typings.adone.glossesStdMod
 
+import typings.node.netMod.SocketConstructorOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ttyNs extends js.Object {
   @js.native
-  class ReadStream ()
-    extends typings.node.ttyMod.ReadStream
+  class ReadStream protected ()
+    extends typings.node.ttyMod.ReadStream {
+    def this(fd: Double) = this()
+    def this(fd: Double, options: SocketConstructorOpts) = this()
+  }
   
   @js.native
-  class WriteStream ()
-    extends typings.node.ttyMod.WriteStream
+  class WriteStream protected ()
+    extends typings.node.ttyMod.WriteStream {
+    def this(fd: Double) = this()
+  }
   
   def isatty(fd: Double): Boolean = js.native
 }

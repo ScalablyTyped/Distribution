@@ -26,7 +26,7 @@ trait ContainerProperties extends js.Object {
     */
   var jobRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * Linux-specific modifications that are applied to the container, such as Linux kernel capabilities.
+    * Linux-specific modifications that are applied to the container, such as details for device mappings.
     */
   var linuxParameters: js.UndefOr[LinuxParameters] = js.undefined
   /**

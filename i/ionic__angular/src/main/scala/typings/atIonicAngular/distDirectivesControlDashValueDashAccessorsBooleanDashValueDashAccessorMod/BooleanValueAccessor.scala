@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BooleanValueAccessor protected () extends ValueAccessor {
   def this(el: ElementRef[_]) = this()
-  def _handleIonChange(value: js.Any): Unit = js.native
+  def _handleIonChange(el: js.Any): Unit = js.native
 }
 

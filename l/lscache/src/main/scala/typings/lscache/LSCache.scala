@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LSCache extends js.Object {
   /**
-    * Enable/Disable warning if set fails
-    * @param {boolean} enabled
+    * Sets whether to display warnings when an item is removed from the cache or not.
     */
   def enableWarnings(enabled: Boolean): Unit = js.native
   /**
@@ -26,6 +25,11 @@ trait LSCache extends js.Object {
     */
   def get(key: String): js.Any = js.native
   /**
+    * @returns {number} The currently set number of milliseconds each time unit represents in
+    *   the set() function's "time" argument.
+    */
+  def getExpiryMilliseconds(): Double = js.native
+  /**
     * Removes a value from localStorage.
     * Equivalent to 'delete' in memcache, but that's a keyword in JS.
     * @param {string} key
@@ -40,17 +44,30 @@ trait LSCache extends js.Object {
     * @param {string} key
     * @param {Object|string} value
     * @param {number} time
+    * @return true if the value was inserted successfully
     */
-  def set(key: String, value: js.Any): Unit = js.native
-  def set(key: String, value: js.Any, time: Double): Unit = js.native
+  def set(key: String, value: js.Any): Boolean = js.native
+  def set(key: String, value: js.Any, time: Double): Boolean = js.native
   /**
     * Appends CACHE_PREFIX so lscache will partition data in to different buckets.
     * @param {string} bucket
     */
   def setBucket(bucket: String): Unit = js.native
   /**
-    * Test if the current browser supports localStorage
-    * @return {boolean} true if supported else false
+    * Sets the number of milliseconds each time unit represents in the set() function's
+    *   "time" argument.
+    * Sample values:
+    *  1: each time unit = 1 millisecond
+    *  1000: each time unit = 1 second
+    *  60000: each time unit = 1 minute (Default value)
+    *  360000: each time unit = 1 hour
+    * @param {number} milliseconds
+    */
+  def setExpiryMilliseconds(milliseconds: Double): Unit = js.native
+  /**
+    * Returns whether local storage is supported.
+    * Currently exposed for testing purposes.
+    * @return {boolean}
     */
   def supported(): Boolean = js.native
 }

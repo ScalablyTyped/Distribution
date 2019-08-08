@@ -2,6 +2,7 @@ package typings.atIonicAngular.distDirectivesControlDashValueDashAccessorsValueD
 
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularForms.atAngularFormsMod.ControlValueAccessor
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +15,8 @@ class ValueAccessor protected () extends ControlValueAccessor {
   var lastValue: js.Any = js.native
   var onChange: js.Any = js.native
   var onTouched: js.Any = js.native
-  def _handleBlurEvent(): Unit = js.native
-  def handleChangeEvent(value: js.Any): Unit = js.native
+  def _handleBlurEvent(el: js.Any): Unit = js.native
+  def handleChangeEvent(el: HTMLElement, value: js.Any): Unit = js.native
   /**
     * @description
     * Registers a callback function that is called when the control's value

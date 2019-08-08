@@ -59,23 +59,6 @@ trait AppointmentRead extends ItemRead {
     */
   var end: Date = js.native
   /**
-    * Gets the locations of an appointment.
-    *
-    * The enhancedLocation property returns an {@link Office.EnhancedLocation} object that allows you to get the set of locations (each represented by 
-    * an {@link Office.LocationDetails} object) associated with the appointment.
-    * 
-    * [Api set: Mailbox Preview]
-    * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
-    * 
-    * @beta
-    */
-  var enhancedLocation: EnhancedLocation = js.native
-  /**
     * Gets the location of an appointment.
     *
     * The location property returns a string that contains the location of the appointment.

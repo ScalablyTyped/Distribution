@@ -43,11 +43,14 @@ object ^ extends js.Object {
   def shutdown(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
   def shutdown(options: Anon_CollectPendingData): Unit = js.native
   def shutdown(options: Anon_CollectPendingData, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  def startBackgroundTransaction(name: String, group: String, handle: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
-  def startBackgroundTransaction(name: String, handle: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def startBackgroundTransaction[T](name: String, group: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def startBackgroundTransaction[T](name: String, group: String, handle: js.Promise[T]): js.Promise[T] = js.native
+  def startBackgroundTransaction[T](name: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def startBackgroundTransaction[T](name: String, handle: js.Promise[T]): js.Promise[T] = js.native
   def startSegment[T /* <: js.Thenable[_] */](name: String, record: Boolean, handler: T): T = js.native
   def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, _] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = js.native
   def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, _] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T], callback: C): T = js.native
-  def startWebTransaction(url: String, handle: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def startWebTransaction[T](url: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def startWebTransaction[T](url: String, handle: js.Promise[T]): js.Promise[T] = js.native
 }
 

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__rendermime-extension"
-version := "1.0.2-d291e9"
+version := "1.0.2-86d2bd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.0.2-035641",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.2-99b593",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.0.2-1e9805",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.2-05cd2a",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-27e5f7",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-689d92",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.2-ee809c",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.2-58d072",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.3.0-ec800b",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.0.2-80af18",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.3-016a04",
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.3-e0bcde",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.8.1-3b432d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

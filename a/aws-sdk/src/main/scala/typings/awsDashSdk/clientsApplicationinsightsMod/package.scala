@@ -44,10 +44,13 @@ package object clientsApplicationinsightsMod {
   type NewComponentName = String
   type ObservationId = String
   type ObservationList = js.Array[Observation]
+  type OpsCenterEnabled = Boolean
+  type OpsItemSNSTopicArn = String
   type PaginationToken = String
   type ProblemId = String
   type ProblemList = js.Array[Problem]
   type Remarks = String
+  type RemoveSNSTopic = Boolean
   type ResourceARN = String
   type ResourceGroupName = String
   type ResourceList = js.Array[ResourceARN]

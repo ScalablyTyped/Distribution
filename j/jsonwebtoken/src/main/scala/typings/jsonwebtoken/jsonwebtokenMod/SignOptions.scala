@@ -27,6 +27,7 @@ trait SignOptions extends js.Object {
   var issuer: js.UndefOr[String] = js.undefined
   var jwtid: js.UndefOr[String] = js.undefined
   var keyid: js.UndefOr[String] = js.undefined
+  var mutatePayload: js.UndefOr[Boolean] = js.undefined
   var noTimestamp: js.UndefOr[Boolean] = js.undefined
   /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
   var notBefore: js.UndefOr[String | Double] = js.undefined
@@ -44,6 +45,7 @@ object SignOptions {
     issuer: String = null,
     jwtid: String = null,
     keyid: String = null,
+    mutatePayload: js.UndefOr[Boolean] = js.undefined,
     noTimestamp: js.UndefOr[Boolean] = js.undefined,
     notBefore: String | Double = null,
     subject: String = null
@@ -57,6 +59,7 @@ object SignOptions {
     if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid)
     if (keyid != null) __obj.updateDynamic("keyid")(keyid)
+    if (!js.isUndefined(mutatePayload)) __obj.updateDynamic("mutatePayload")(mutatePayload)
     if (!js.isUndefined(noTimestamp)) __obj.updateDynamic("noTimestamp")(noTimestamp)
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject)

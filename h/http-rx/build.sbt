@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "http-rx"
-version := "2.0-dt-20190113Z-c8f2d9"
+version := "2.0-dt-20190113Z-4a7d50"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-cecd06",
-  "org.scalablytyped" %%% "form-data" % "2.5.0-218d3e",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190713Z-488a00",
+  "org.scalablytyped" %%% "form-data" % "2.5.0-4469c0",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190713Z-92f52a",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-2c5a54")

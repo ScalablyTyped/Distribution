@@ -209,6 +209,19 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListProblemsResponse, scala.Unit]
   ): Request[ListProblemsResponse, AWSError] = js.native
   /**
+    * Updates the application.
+    */
+  def updateApplication(): Request[UpdateApplicationResponse, AWSError] = js.native
+  def updateApplication(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResponse, scala.Unit]): Request[UpdateApplicationResponse, AWSError] = js.native
+  /**
+    * Updates the application.
+    */
+  def updateApplication(params: UpdateApplicationRequest): Request[UpdateApplicationResponse, AWSError] = js.native
+  def updateApplication(
+    params: UpdateApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResponse, scala.Unit]
+  ): Request[UpdateApplicationResponse, AWSError] = js.native
+  /**
     * Updates the custom component name and/or the list of resources that make up the component.
     */
   def updateComponent(): Request[UpdateComponentResponse, AWSError] = js.native

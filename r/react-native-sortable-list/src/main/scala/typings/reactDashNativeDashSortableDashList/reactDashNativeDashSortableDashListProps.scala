@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 trait reactDashNativeDashSortableDashListProps {
   @scala.inline
   def ReactDashNativeDashSortableDashListProps: SortableListProps.type = typings.reactDashNativeDashSortableDashList.reactDashNativeDashSortableDashListMod.SortableListProps
-  type ReactDashNativeDashSortableDashListProps = SortableListProps
-  @scala.inline
-  def defaultClsProps: SortableListProps.type = typings.reactDashNativeDashSortableDashList.reactDashNativeDashSortableDashListMod.SortableListProps
-  type defaultClsProps = SortableListProps
+  type ReactDashNativeDashSortableDashListProps[T, K] = SortableListProps[T, K]
 }
 

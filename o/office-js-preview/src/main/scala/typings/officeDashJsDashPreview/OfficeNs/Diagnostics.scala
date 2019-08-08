@@ -51,6 +51,8 @@ trait Diagnostics extends js.Object {
     *
     * A string that can be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
     *
+    * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+    *
     * [Api set: Mailbox 1.0]
     *
     * @remarks
@@ -61,10 +63,10 @@ trait Diagnostics extends js.Object {
     */
   var hostName: String
   /**
-    * Gets a string that represents the version of either the host application or the Exchange Server.
+    * Gets a string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
     *
-    * If the mail add-in is running in Outlook client on the desktop or iOS, the hostVersion property returns the version of the host 
-    * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server. An example is the string "15.0.468.0".
+    * If the mail add-in is running in Outlook on a desktop or mobile client, the hostVersion property returns the version of the host 
+    * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
     *
     * [Api set: Mailbox 1.0]
     *

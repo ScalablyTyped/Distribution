@@ -2937,6 +2937,7 @@
 | 0.674507126245822 | [node-zopfli-es](./n/node-zopfli-es) | Bindings for Zopfli compressing lib. Compress gzip
 | 0.674471561433575 | [dom-loaded](./d/dom-loaded) | Check when the DOM is loaded like DOMContentLoaded
 | 0.6743559090031955 | [rollup-plugin-commonjs](./r/rollup-plugin-commonjs) | Convert CommonJS modules to ES2015
+| 0.6743064459583188 | [react-inspector](./r/react-inspector) | Power of Browser DevTools inspectors right inside 
 | 0.6742751515435512 | [purdy](./p/purdy) | Pretty print objects in real purdy colors. Allows 
 | 0.6742568410573604 | [lossless-json](./l/lossless-json) | Parse JSON without risk of losing numeric informat
 | 0.6742494042275298 | [to-semver](./t/to-semver) | Get an array of valid, sorted, and cleaned semver 
@@ -3661,6 +3662,7 @@
 | 0.6391572718849292 | [glob-to-regexp](./g/glob-to-regexp) | Convert globs to regular expressions
 | 0.6391447754106294 | [xstream](./x/xstream) | An extremely intuitive, small, and fast functional
 | 0.6390735161067322 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with
+| 0.6390572863072447 | [conductor-animate](./c/conductor-animate) | Orchestrating complex page layout animations with 
 | 0.6390563169823132 | [pubsub-js](./p/pubsub-js) | Dependency free publish/subscribe library
 | 0.6389204510514352 | [inversify-devtools](./i/inversify-devtools) | inversify-devtools
 | 0.6388689949107165 | [env-editor](./e/env-editor) | Get metadata on the default editor or a specific e
@@ -5261,6 +5263,7 @@
 | 0.43072893977141546 | [es6-collections](./e/es6-collections) | ES6 Harmony like collections such Map, WeakMap, an
 | 0.43045896113319837 | [scroller](./s/scroller) | Accelerated panning and zooming for HTML and Canva
 | 0.4303790207612379 | [tween_dot_js](./t/tween_dot_js) | Super simple, fast and easy to use tweening engine
+| 0.43021012163500477 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier
 | 0.4301663941391358 | [phonon](./p/phonon) | Phonon is a lightweight & scalable Javascript/CSS3
 | 0.4299803898700855 | [knockout_dot_validation](./k/knockout_dot_validation) | A KnockoutJS Plugin for model and property validat
 | 0.4299421766138531 | [mock-aws-s3](./m/mock-aws-s3) | Mock AWS S3 SDK for Node.js

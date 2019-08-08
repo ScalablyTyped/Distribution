@@ -48,11 +48,31 @@ object ^ extends js.Object {
   def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T]): SpyObj[T] = js.native
   @JSName("createSpyObj")
   def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]]): SpyObj[T] = js.native
+  /**
+    * That will succeed if the actual value being compared is empty.
+    * @since 3.1.0
+    */
+  def empty(): Empty = js.native
+  /**
+    * That will succeed if the actual value being compared is  `null`, `undefined`, `0`, `false` or anything falsey.
+    * @since 3.1.0
+    */
+  def falsy(): Falsy = js.native
   def formatErrorMsg(domain: String, usage: String): js.Function1[/* msg */ String, String] = js.native
   def getEnv(): Env = js.native
+  /**
+    * That will succeed if the actual value being compared is not empty.
+    * @since 3.1.0
+    */
+  def notEmpty(): NotEmpty = js.native
   def objectContaining[T](sample: Partial[T]): ObjectContaining[T] = js.native
   def pp(value: js.Any): String = js.native
   def stringMatching(str: String): Any = js.native
   def stringMatching(str: RegExp): Any = js.native
+  /**
+    * That will succeed if the actual value being compared is `true` or anything truthy.
+    * @since 3.1.0
+    */
+  def truthy(): Truthy = js.native
 }
 

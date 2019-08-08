@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-material-ui-form-validator"
-version := "2.0-dt-20190710Z-5011df"
+version := "2.0-dt-20190710Z-51d43c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "material-ui" % "0.21-dt-20190717Z-f74eca",
+  "org.scalablytyped" %%% "material-ui" % "0.21-dt-20190717Z-5aee51",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,6 +1,9 @@
 package typings.mongodb
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mongodb.Anon_IdAny
+import typings.mongodb.Omit
+import typings.mongodb.mongodbStrings._id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +22,7 @@ package object mongodbMod {
   type GridFSBucketWriteStreamId = String | scala.Double | js.Object | typings.bson.bsonMod.ObjectID
   type IteratorCallback[T] = js.Function1[/* doc */ T, Unit]
   type MongoCallback[T] = js.Function2[/* error */ MongoError, /* result */ T, Unit]
+  type OptionalId[TSchema] = (Omit[TSchema, _id]) with Anon_IdAny
   type WithTransactionCallback[T] = js.Function1[/* session */ ClientSession, js.Promise[T]]
   type log = js.Function2[/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState], Unit]
 }

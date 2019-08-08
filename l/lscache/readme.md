@@ -1,7 +1,7 @@
 
 # Scala.js typings for lscache
 
-Typings are for version v1.0.7
+Typings are for version 1.3
 
 ## Library description:
 A simple library that emulates memcache functions using HTML5 localStorage

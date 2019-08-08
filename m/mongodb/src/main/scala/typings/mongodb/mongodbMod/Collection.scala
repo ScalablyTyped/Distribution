@@ -821,32 +821,32 @@ trait Collection[TSchema] extends js.Object {
   def initializeUnorderedBulkOp(): UnorderedBulkOperation = js.native
   def initializeUnorderedBulkOp(options: CommonOptions): UnorderedBulkOperation = js.native
   /** @deprecated Use insertOne, insertMany or bulkWrite */
-  def insert(docs: TSchema): js.Promise[InsertOneWriteOpResult] = js.native
+  def insert(docs: OptionalId[TSchema]): js.Promise[InsertOneWriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#insertOne */
   /** @deprecated Use insertOne, insertMany or bulkWrite */
-  def insert(docs: TSchema, callback: MongoCallback[InsertOneWriteOpResult]): Unit = js.native
-  def insert(docs: TSchema, options: CollectionInsertOneOptions): js.Promise[InsertOneWriteOpResult] = js.native
+  def insert(docs: OptionalId[TSchema], callback: MongoCallback[InsertOneWriteOpResult]): Unit = js.native
+  def insert(docs: OptionalId[TSchema], options: CollectionInsertOneOptions): js.Promise[InsertOneWriteOpResult] = js.native
   /** @deprecated Use insertOne, insertMany or bulkWrite */
   def insert(
-    docs: TSchema,
+    docs: OptionalId[TSchema],
     options: CollectionInsertOneOptions,
     callback: MongoCallback[InsertOneWriteOpResult]
   ): Unit = js.native
-  def insertMany(docs: js.Array[TSchema]): js.Promise[InsertWriteOpResult] = js.native
+  def insertMany(docs: js.Array[OptionalId[TSchema]]): js.Promise[InsertWriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#insertMany */
-  def insertMany(docs: js.Array[TSchema], callback: MongoCallback[InsertWriteOpResult]): Unit = js.native
-  def insertMany(docs: js.Array[TSchema], options: CollectionInsertManyOptions): js.Promise[InsertWriteOpResult] = js.native
+  def insertMany(docs: js.Array[OptionalId[TSchema]], callback: MongoCallback[InsertWriteOpResult]): Unit = js.native
+  def insertMany(docs: js.Array[OptionalId[TSchema]], options: CollectionInsertManyOptions): js.Promise[InsertWriteOpResult] = js.native
   def insertMany(
-    docs: js.Array[TSchema],
+    docs: js.Array[OptionalId[TSchema]],
     options: CollectionInsertManyOptions,
     callback: MongoCallback[InsertWriteOpResult]
   ): Unit = js.native
-  def insertOne(docs: TSchema): js.Promise[InsertOneWriteOpResult] = js.native
+  def insertOne(docs: OptionalId[TSchema]): js.Promise[InsertOneWriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#insertOne */
-  def insertOne(docs: TSchema, callback: MongoCallback[InsertOneWriteOpResult]): Unit = js.native
-  def insertOne(docs: TSchema, options: CollectionInsertOneOptions): js.Promise[InsertOneWriteOpResult] = js.native
+  def insertOne(docs: OptionalId[TSchema], callback: MongoCallback[InsertOneWriteOpResult]): Unit = js.native
+  def insertOne(docs: OptionalId[TSchema], options: CollectionInsertOneOptions): js.Promise[InsertOneWriteOpResult] = js.native
   def insertOne(
-    docs: TSchema,
+    docs: OptionalId[TSchema],
     options: CollectionInsertOneOptions,
     callback: MongoCallback[InsertOneWriteOpResult]
   ): Unit = js.native

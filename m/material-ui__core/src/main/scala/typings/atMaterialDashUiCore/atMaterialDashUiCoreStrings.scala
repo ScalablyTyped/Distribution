@@ -660,9 +660,6 @@ object atMaterialDashUiCoreStrings {
        with TypographyClassKey
   
   @js.native
-  sealed trait div extends js.Object
-  
-  @js.native
   sealed trait divider extends ListItemClassKey
   
   @js.native
@@ -2284,8 +2281,6 @@ object atMaterialDashUiCoreStrings {
   def display3: display3 = "display3".asInstanceOf[display3]
   @scala.inline
   def display4: display4 = "display4".asInstanceOf[display4]
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
   @scala.inline
   def divider: divider = "divider".asInstanceOf[divider]
   @scala.inline

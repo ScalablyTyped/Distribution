@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextValueAccessor protected () extends ValueAccessor {
   def this(el: ElementRef[_]) = this()
-  def _handleInputEvent(value: js.Any): Unit = js.native
+  def _handleInputEvent(el: js.Any): Unit = js.native
 }
 

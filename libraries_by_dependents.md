@@ -2219,6 +2219,7 @@
 | 58 | [murmurhash](./m/murmurhash) | A Node.js module for the optimized JavaScript impl
 | 58 | [node-cleanup](./n/node-cleanup) | installs custom cleanup handlers that run on exiti
 | 58 | [parse-glob](./p/parse-glob) | Parse a glob pattern into an object of tokens.
+| 58 | [react-inspector](./r/react-inspector) | Power of Browser DevTools inspectors right inside 
 | 58 | [react-native-swiper](./r/react-native-swiper) | Swiper component for React Native.
 | 58 | [react-tether](./r/react-tether) | Drop content anywhere on the page.
 | 58 | [swagger-jsdoc](./s/swagger-jsdoc) | Generates swagger doc based on JSDoc
@@ -5171,6 +5172,7 @@
 | 3 | [await-timeout](./a/await-timeout) | A Promise-based API for setTimeout / clearTimeout
 | 3 | [b64-lite](./b/b64-lite) | isomorphic base64 library in 152 bytes
 | 3 | [bang88__react-native-draw](./b/bang88__react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
+| 3 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier
 | 3 | [bind-ponyfill](./b/bind-ponyfill) | Binds a function to a specified context and argume
 | 3 | [blow-http-statuses](./b/blow-http-statuses) | Helper for HTTP Statuses
 | 3 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with
@@ -6304,6 +6306,7 @@
 | 0 | [commons-validator-js](./c/commons-validator-js) | JavaScript port of Apache Commons Validator
 | 0 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0 | [complex](./c/complex) | Do calculations with Complex numbers
+| 0 | [conductor-animate](./c/conductor-animate) | Orchestrating complex page layout animations with 
 | 0 | [confirmdialog](./c/confirmdialog) | -
 | 0 | [connect-history-api-fallb](./c/connect-history-api-fallback-exclusions) | Provides a fallback for non-existing directories s
 | 0 | [connect-trim-body](./c/connect-trim-body) | Connect/Express middleware to trim all parameters 

@@ -1,32 +1,42 @@
 package typings.reactDashNativeDashSortableDashList.reactDashNativeDashSortableDashListMod
 
-import typings.reactDashNativeDashSortableDashList.DataValue
+import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNative.reactDashNativeMod.PanResponderGestureState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RowProps extends js.Object {
+trait RowProps[T, K] extends js.Object {
   var active: Boolean
-  var data: DataValue
+  var data: T
   var disabled: js.UndefOr[Boolean] = js.undefined
   var index: js.UndefOr[Double] = js.undefined
-  var key: js.UndefOr[DataKey] = js.undefined
+  var key: js.UndefOr[K] = js.undefined
+  var toggleRowActive: js.UndefOr[
+    js.Function2[
+      /* event */ GestureResponderEvent, 
+      /* gestureState */ js.UndefOr[PanResponderGestureState], 
+      Unit
+    ]
+  ] = js.undefined
 }
 
 object RowProps {
   @scala.inline
-  def apply(
+  def apply[T, K](
     active: Boolean,
-    data: DataValue,
+    data: T,
     disabled: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
-    key: DataKey = null
-  ): RowProps = {
-    val __obj = js.Dynamic.literal(active = active, data = data)
+    key: K = null,
+    toggleRowActive: (/* event */ GestureResponderEvent, /* gestureState */ js.UndefOr[PanResponderGestureState]) => Unit = null
+  ): RowProps[T, K] = {
+    val __obj = js.Dynamic.literal(active = active, data = data.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RowProps]
+    if (toggleRowActive != null) __obj.updateDynamic("toggleRowActive")(js.Any.fromFunction2(toggleRowActive))
+    __obj.asInstanceOf[RowProps[T, K]]
   }
 }
 

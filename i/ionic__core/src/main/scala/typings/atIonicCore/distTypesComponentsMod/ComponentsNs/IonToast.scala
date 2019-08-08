@@ -24,7 +24,7 @@ trait IonToast extends js.Object {
     */
   var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
   /**
-    * Text to display in the close button.
+    * @deprecated Use `buttons` instead. Text to display in the close button.
     */
   var closeButtonText: js.UndefOr[String] = js.native
   /**
@@ -69,7 +69,7 @@ trait IonToast extends js.Object {
     */
   var position: top | bottom | middle = js.native
   /**
-    * If `true`, the close button will be displayed.
+    * @deprecated Use `buttons` instead. If `true`, the close button will be displayed.
     */
   var showCloseButton: Boolean = js.native
   /**

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Device extends js.Object {
   /**
-    * The path inside the container at which to expose the host device.
+    * The path inside the container at which to expose the host device. By default the hostPath value is used.
     */
   var containerPath: js.UndefOr[String] = js.undefined
   /**

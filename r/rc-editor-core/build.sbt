@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rc-editor-core"
-version := "0.8.10-455ec7"
+version := "0.8.10-d455c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190626Z-1c7942",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190626Z-38fbdc",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-3acc33",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

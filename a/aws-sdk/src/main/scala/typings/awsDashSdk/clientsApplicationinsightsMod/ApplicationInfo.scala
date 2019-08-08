@@ -10,7 +10,15 @@ trait ApplicationInfo extends js.Object {
     */
   var LifeCycle: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.LifeCycle] = js.undefined
   /**
-    * The issues on the user side that are blocking Application Insights from fully monitoring the application.
+    *  Indicates whether Application Insights will create opsItems for any problem detected by Application Insights for an application. 
+    */
+  var OpsCenterEnabled: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.OpsCenterEnabled] = js.undefined
+  /**
+    *  The SNS topic provided to Application Insights that is associated to the created opsItems to receive SNS notifications for opsItem updates. 
+    */
+  var OpsItemSNSTopicArn: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.OpsItemSNSTopicArn] = js.undefined
+  /**
+    * The issues on the user side that block Application Insights from successfully monitoring an application.
     */
   var Remarks: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Remarks] = js.undefined
   /**
@@ -21,9 +29,17 @@ trait ApplicationInfo extends js.Object {
 
 object ApplicationInfo {
   @scala.inline
-  def apply(LifeCycle: LifeCycle = null, Remarks: Remarks = null, ResourceGroupName: ResourceGroupName = null): ApplicationInfo = {
+  def apply(
+    LifeCycle: LifeCycle = null,
+    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
+    OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
+    Remarks: Remarks = null,
+    ResourceGroupName: ResourceGroupName = null
+  ): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
     if (LifeCycle != null) __obj.updateDynamic("LifeCycle")(LifeCycle)
+    if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled)
+    if (OpsItemSNSTopicArn != null) __obj.updateDynamic("OpsItemSNSTopicArn")(OpsItemSNSTopicArn)
     if (Remarks != null) __obj.updateDynamic("Remarks")(Remarks)
     if (ResourceGroupName != null) __obj.updateDynamic("ResourceGroupName")(ResourceGroupName)
     __obj.asInstanceOf[ApplicationInfo]

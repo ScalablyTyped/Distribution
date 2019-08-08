@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-native-modal"
-version := "11.3.1-89892a"
+version := "11.3.1-18e658"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190802Z-48f8ad",
-  "org.scalablytyped" %%% "react-native-animatable" % "1.3.2-50a10a",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190802Z-2d1529",
+  "org.scalablytyped" %%% "react-native-animatable" % "1.3.2-b1a6b4",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,6 +1,10 @@
 package typings.jasmine
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jasmine.jasmineStrings.`<jasmineDOTempty>`
+import typings.jasmine.jasmineStrings.`<jasmineDOTfalsy>`
+import typings.jasmine.jasmineStrings.`<jasmineDOTnotEmpty>`
+import typings.jasmine.jasmineStrings.`<jasmineDOTtruthy>`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,30 +17,25 @@ package object jasmineNs {
     /* customEqualityTesters */ js.Array[CustomEqualityTester], 
     CustomMatcher
   ]
+  type Empty = AsymmetricMatcher[`<jasmineDOTempty>`]
   /* Rewritten from type alias, can be one of: 
     - T
     - typings.jasmine.jasmineNs.ObjectContaining[T]
-    - typings.jasmine.jasmineNs.AsymmetricMatcher
+    - typings.jasmine.jasmineNs.AsymmetricMatcher[java.lang.String]
     - typings.jasmine.jasmineNs.Any
     - typings.jasmine.jasmineNs.Spy
     - / * import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     * / typings.jasmine.jasmineStrings.Expected with T
   */
-  type Expected[T] = _Expected[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type Expected[T] = _Expected[T] | AsymmetricMatcher[String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ typings.jasmine.jasmineStrings.Expected with T) | T
-  /* Rewritten from type alias, can be one of: 
-    - T
-    - typings.jasmine.jasmineNs.ObjectContaining[T]
-    - typings.jasmine.jasmineNs.AsymmetricMatcher
-    - / * import warning: ImportType.apply c Unsupported type mapping: 
+  type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: object | jasmine.jasmine.Any}
-    * / typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any
-  */
-  type ExpectedRecursive[T] = _ExpectedRecursive[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: object | jasmine.jasmine.Any}
-    */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any) | T
+    */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any)
+  type Falsy = AsymmetricMatcher[`<jasmineDOTfalsy>`]
+  type NotEmpty = AsymmetricMatcher[`<jasmineDOTnotEmpty>`]
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], Unit]
   type SpyObj[T] = T with typings.jasmine.jasmineStrings.SpyObj with js.Any
@@ -44,4 +43,5 @@ package object jasmineNs {
   {[ P in keyof T ]:? std.ReturnType<T[P] extends (args : ...any): any? T[P] : any>}
     */ typings.jasmine.jasmineStrings.SpyObjMethodNames with js.Any) | StringDictionary[js.Any]
   type StringPrettyPrinter = PrettyPrinter
+  type Truthy = AsymmetricMatcher[`<jasmineDOTtruthy>`]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scc-broker-client"
-version := "6.1-dt-20181218Z-4a23cf"
+version := "6.1-dt-20181218Z-d8a3d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,18 +9,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "component-emitter" % "v1.2.1-dt-20190322Z-30c89b",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-8a7b5d",
   "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-e4dffb",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-f6cb46",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190806Z-18826b",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-87e284",
-  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-9bdd63",
-  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20190415Z-a1a48a",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-0af296",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-092de7",
+  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-ee2c9b",
+  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20190415Z-5d815f",
   "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-187eec",
   "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20190513Z-ff536a",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-d2cbec",
-  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190513Z-4d5471",
-  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-4a4a13",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-bb5b80",
+  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190513Z-7f2fc3",
+  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-9cd374",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20190805Z-d36fdb")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190805Z-7c34fc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tty", "WriteStream")
 @js.native
-class WriteStream () extends Socket {
+class WriteStream protected () extends Socket {
+  def this(fd: Double) = this()
   var columns: Double = js.native
   var isTTY: Boolean = js.native
   var rows: Double = js.native

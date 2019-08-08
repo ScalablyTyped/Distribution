@@ -32,21 +32,6 @@ trait AppointmentCompose extends ItemCompose {
     */
   var end: Time = js.native
   /**
-    * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation} object that 
-    * provides methods to get, remove, or add locations on an item.
-    * 
-    * [Api set: Mailbox Preview]
-    * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
-    * @beta
-    */
-  var enhancedLocation: EnhancedLocation = js.native
-  /**
     * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
     * used to get and set the location of the appointment.
     *

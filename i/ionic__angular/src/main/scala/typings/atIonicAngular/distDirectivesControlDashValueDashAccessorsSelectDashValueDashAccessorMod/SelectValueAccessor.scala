@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SelectValueAccessor protected () extends ValueAccessor {
   def this(el: ElementRef[_]) = this()
-  def _handleChangeEvent(value: js.Any): Unit = js.native
+  def _handleChangeEvent(el: js.Any): Unit = js.native
 }
 

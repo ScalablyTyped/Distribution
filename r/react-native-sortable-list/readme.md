@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-sortable-list
 
-Typings are for version 0.0.22
+Typings are for version 0.0
 
 ## Library description:
 React Native Sortable List component

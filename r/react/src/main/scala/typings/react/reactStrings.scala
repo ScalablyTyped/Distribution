@@ -117,6 +117,9 @@ object reactStrings {
   sealed trait both extends js.Object
   
   @js.native
+  sealed trait bottom extends js.Object
+  
+  @js.native
   sealed trait br extends js.Object
   
   @js.native
@@ -729,6 +732,9 @@ object reactStrings {
   sealed trait title extends js.Object
   
   @js.native
+  sealed trait top extends js.Object
+  
+  @js.native
   sealed trait touch extends js.Object
   
   @js.native
@@ -853,6 +859,8 @@ object reactStrings {
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
   @scala.inline
@@ -1261,6 +1269,8 @@ object reactStrings {
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   @scala.inline

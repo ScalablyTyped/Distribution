@@ -19,9 +19,11 @@ trait AsyncResult[T] extends js.Object {
     */
   var asyncContext: js.Any
   /**
-    * Gets an object that may provide additional information if an error occurred.
+    * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
     *
     * @remarks
+    * 
+    * This property returns additional information if the following errors occur with these supported APIs.
     * 
     * *Supported APIs*
     * 

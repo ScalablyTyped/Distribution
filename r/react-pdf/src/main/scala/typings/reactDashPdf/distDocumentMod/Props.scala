@@ -1,5 +1,6 @@
 package typings.reactDashPdf.distDocumentMod
 
+import typings.pdfjsDashDist.pdfjsDashDistMod.PDFDocumentProxy
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
@@ -75,7 +76,7 @@ trait Props extends js.Object {
   /**
     * Function called when the document is successfully loaded.
     */
-  var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ js.Any, Unit]] = js.undefined
+  var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ PDFDocumentProxy, Unit]] = js.undefined
   /**
     * Function called when a password-protected PDF is loaded.
     * Defaults to a function that prompts the user for password.
@@ -121,7 +122,7 @@ object Props {
     noData: String | ReactElement | RenderFunction = null,
     onItemClick: /* hasPageNumber */ Anon_PageNumber => Unit = null,
     onLoadError: /* error */ Error => Unit = null,
-    onLoadSuccess: /* pdf */ js.Any => Unit = null,
+    onLoadSuccess: /* pdf */ PDFDocumentProxy => Unit = null,
     onPassword: /* callback */ js.Function1[/* repeated */ js.Any, _] => Unit = null,
     onSourceError: /* error */ Error => Unit = null,
     onSourceSuccess: () => Unit = null,

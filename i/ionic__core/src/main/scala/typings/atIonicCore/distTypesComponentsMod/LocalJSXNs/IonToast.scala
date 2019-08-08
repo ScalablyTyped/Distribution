@@ -40,7 +40,7 @@ trait IonToast extends HTMLAttributes[HTMLIonToastElement] {
     */
   var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.undefined
   /**
-    * Text to display in the close button.
+    * @deprecated Use `buttons` instead. Text to display in the close button.
     */
   var closeButtonText: js.UndefOr[String] = js.undefined
   /**
@@ -101,7 +101,7 @@ trait IonToast extends HTMLAttributes[HTMLIonToastElement] {
     */
   var position: js.UndefOr[top | bottom | middle] = js.undefined
   /**
-    * If `true`, the close button will be displayed.
+    * @deprecated Use `buttons` instead. If `true`, the close button will be displayed.
     */
   var showCloseButton: js.UndefOr[Boolean] = js.undefined
   /**

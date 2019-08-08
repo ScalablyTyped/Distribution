@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "32.0-dt-20190502Z-07842d"
+version := "32.0-dt-20190502Z-b02358"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190503Z-91817c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190802Z-48f8ad",
-  "org.scalablytyped" %%% "react-native-maps" % "0.24-dt-20190519Z-b0adcb",
-  "org.scalablytyped" %%% "react-native-svg" % "9.6.2-9fa84f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190802Z-2d1529",
+  "org.scalablytyped" %%% "react-native-maps" % "0.24-dt-20190519Z-075386",
+  "org.scalablytyped" %%% "react-native-svg" % "9.6.2-920f26",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

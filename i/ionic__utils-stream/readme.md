@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-stream
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 Stream utils for NodeJS

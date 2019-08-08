@@ -1,7 +1,6 @@
 package typings.reactDashTransitionDashGroup
 
 import typings.react.reactMod.Component
-import typings.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionNs.SwitchTransitionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

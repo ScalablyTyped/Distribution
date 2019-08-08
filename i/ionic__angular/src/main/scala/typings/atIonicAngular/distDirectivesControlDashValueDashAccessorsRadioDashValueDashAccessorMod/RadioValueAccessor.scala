@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RadioValueAccessor protected () extends ValueAccessor {
   def this(el: ElementRef[_]) = this()
-  def _handleIonSelect(value: js.Any): Unit = js.native
+  def _handleIonSelect(el: js.Any): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fortawesome__react-fontawesome"
-version := "0.1.4-b64352"
+version := "0.1.4-102f66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fortawesome__fontawesome-common-types" % "0.2.21-a5f886",
   "org.scalablytyped" %%% "fortawesome__fontawesome-svg-core" % "1.2.21-2fd505",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190731Z-e8f22e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

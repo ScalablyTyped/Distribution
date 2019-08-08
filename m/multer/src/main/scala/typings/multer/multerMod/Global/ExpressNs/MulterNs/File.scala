@@ -16,6 +16,8 @@ trait File extends js.Object {
   var fieldname: String
   /** The name of the file within the destination (DiskStorage) */
   var filename: String
+  /** The url where to get the uploaded file (aws S3 for example) */
+  var location: String
   /** Mime type of the file */
   var mimetype: String
   /** Name of the file on the user's computer */
@@ -34,12 +36,13 @@ object File {
     encoding: String,
     fieldname: String,
     filename: String,
+    location: String,
     mimetype: String,
     originalname: String,
     path: String,
     size: Double
   ): File = {
-    val __obj = js.Dynamic.literal(buffer = buffer, destination = destination, encoding = encoding, fieldname = fieldname, filename = filename, mimetype = mimetype, originalname = originalname, path = path, size = size)
+    val __obj = js.Dynamic.literal(buffer = buffer, destination = destination, encoding = encoding, fieldname = fieldname, filename = filename, location = location, mimetype = mimetype, originalname = originalname, path = path, size = size)
   
     __obj.asInstanceOf[File]
   }

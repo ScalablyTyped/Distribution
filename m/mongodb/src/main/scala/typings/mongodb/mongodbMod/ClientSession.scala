@@ -63,7 +63,7 @@ trait ClientSession extends EventEmitter {
     *
     * IMPORTANT: This method requires the user to return a Promise, all lambdas that do not
     * return a Promise will result in undefined behavior.
-    * 
+    *
     * @param fn Function to execute with the new session.
     * @param options Optional settings for the transaction
     */

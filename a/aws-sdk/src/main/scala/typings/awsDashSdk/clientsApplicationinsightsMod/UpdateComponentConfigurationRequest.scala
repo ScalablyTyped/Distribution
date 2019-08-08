@@ -22,7 +22,7 @@ trait UpdateComponentConfigurationRequest extends js.Object {
     */
   var ResourceGroupName: typings.awsDashSdk.clientsApplicationinsightsMod.ResourceGroupName
   /**
-    * The tier of the application component. Supported tiers include DOT_NET_WORKER, DOT_NET_WEB_TIER, SQL_SERVER, and DEFAULT.
+    * The tier of the application component. Supported tiers include DOT_NET_WORKER, DOT_NET_WEB, SQL_SERVER, and DEFAULT.
     */
   var Tier: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Tier] = js.undefined
 }

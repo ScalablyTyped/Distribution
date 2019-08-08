@@ -474,6 +474,7 @@
 | [basiclightbox](./b/basiclightbox) | The lightest lightbox ever made | lightbox, popup, modal, window, dialog, gallery, photo, responsive, mobile |
 | [batch-stream](./b/batch-stream) | Transform a stream into batches | batch, stream, chunks, chunked |
 | [battery-level](./b/battery-level) | Get current battery level | app, battery, cli, cli-app, level, linux, mac, os x, osx, windows |
+| [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier | naive, bayes, classifier |
 | [bazinga-translator](./b/bazinga-translator) | A pretty nice way to use your translation messages | translation, symfony |
 | [bcrypt](./b/bcrypt) | A bcrypt library for NodeJS. | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | [bcrypt-nodejs](./b/bcrypt-nodejs) | A native JS bcrypt library for NodeJS. | bcrypt, javascript, js, hash, password, auth, authentication, encryption, crypt, crypto |
@@ -899,6 +900,7 @@
 | [concat-stream](./c/concat-stream) | writable stream that concatenates strings or binar | - |
 | [concaveman](./c/concaveman) | Fast 2D concave hull algorithm in JavaScript (gene | concave, hull, algorithm, geometry, shape, outline |
 | [condense-whitespace](./c/condense-whitespace) | Remove leading, trailing, and repeated whitespace  | whitespace, space, condense, collapse, compact, repeated, string, trim, remove, strip |
+| [conductor-animate](./c/conductor-animate) | Orchestrating complex page layout animations with  | conductor, conductor-animate, react-transition-group, spring, animate, animations, react |
 | [conf](./c/conf) | Simple config handling for your app or module | config, store, app, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save, load, read, write, cache |
 | [confidence](./c/confidence) | Configuration API | hapi, plugin, configuration, api |
 | [config](./c/config) | Configuration control for production node deployme | conf, config, configuration, node-config, config-node, env, environment |
@@ -5311,6 +5313,7 @@
 | [react-input-autosize](./r/react-input-autosize) | Auto-resizing Input Component for React | react, react-component, input, autosize |
 | [react-input-calendar](./r/react-input-calendar) | Datepicker widget react component | react, datepicker, calendar, input-datepicker, input-calendar, react-input-calendar, react-calendar, react-datepicker, react-component |
 | [react-input-mask](./r/react-input-mask) | Masked input component for React | react, input, mask, masked, react-component |
+| [react-inspector](./r/react-inspector) | Power of Browser DevTools inspectors right inside  | devtools, inspector, object, object-inspector, react, react-component, reactjs, table, table-inspector, table-view, tableview, tree, tree-view, treeview, ui, view |
 | [react-instantsearch](./r/react-instantsearch) | ⚡ Lightning-fast search for React and React Native | algolia, components, fast, instantsearch, react, react-dom, react-native, search |
 | [react-instantsearch-core](./r/react-instantsearch-core) | ⚡ Lightning-fast search for React, by Algolia | algolia, components, fast, instantsearch, react, search |
 | [react-instantsearch-dom](./r/react-instantsearch-dom) | ⚡ Lightning-fast search for React DOM, by Algolia | algolia, components, fast, instantsearch, react, react-dom, search |

@@ -3,6 +3,7 @@ package typings.atTensorflowTfjsDashNode.distNodejsUnderscoreKernelUnderscoreBac
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.DataMover
+import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
 import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
@@ -121,6 +122,23 @@ class NodeJSKernelBackend protected () extends KernelBackend {
     bias: Tensor[Rank],
     activation: Activation
   ): Tensor3D = js.native
+  def fusedBatchMatMul(
+    a: Tensor3D,
+    b: Tensor3D,
+    transposeA: Boolean,
+    transposeB: Boolean,
+    bias: Tensor[Rank],
+    activation: Activation,
+    preluActivationWeights: Tensor[Rank]
+  ): Tensor3D = js.native
+  def fusedConv2d(
+    x: Tensor4D,
+    filter: Tensor4D,
+    convInfo: Conv2DInfo,
+    bias: Tensor4D,
+    activation: Activation,
+    preluActivationWeights: Tensor[Rank]
+  ): Tensor4D = js.native
   def gatherND(x: Tensor[Rank], indices: Tensor[Rank]): Tensor[Rank] = js.native
   def greater(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def greaterEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native

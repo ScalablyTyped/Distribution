@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__core
 
-Typings are for version 4.7.1
+Typings are for version 4.7.4
 
 ## Library description:
 Base components for Ionic

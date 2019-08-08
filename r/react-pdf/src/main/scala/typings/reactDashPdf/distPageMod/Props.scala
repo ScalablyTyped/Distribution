@@ -1,5 +1,6 @@
 package typings.reactDashPdf.distPageMod
 
+import typings.pdfjsDashDist.pdfjsDashDistMod.PDFPageProxy
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactElement
@@ -77,7 +78,7 @@ trait Props extends js.Object {
   /**
     * Function called when the page is successfully loaded.
     */
-  var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ js.Any, Unit]] = js.undefined
+  var onLoadSuccess: js.UndefOr[js.Function1[/* page */ PDFPageProxy, Unit]] = js.undefined
   /**
     * Function called in case of an error while rendering the page.
     */
@@ -154,7 +155,7 @@ object Props {
     onGetTextSuccess: /* items */ js.Array[TextItem] => Unit = null,
     onLoadError: /* error */ Error => Unit = null,
     onLoadProgress: /* data */ LoadingProcessData => Unit = null,
-    onLoadSuccess: /* pdf */ js.Any => Unit = null,
+    onLoadSuccess: /* page */ PDFPageProxy => Unit = null,
     onRenderError: /* error */ Error => Unit = null,
     onRenderSuccess: () => Unit = null,
     pageIndex: Int | Double = null,

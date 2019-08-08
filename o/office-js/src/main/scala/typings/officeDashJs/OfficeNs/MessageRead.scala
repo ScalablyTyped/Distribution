@@ -95,22 +95,6 @@ trait MessageRead extends Message {
     */
   var from: EmailAddressDetails = js.native
   /**
-    * Gets the internet headers of a message.
-    * 
-    * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
-    *
-    * [Api set: Mailbox Preview]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
-    * 
-    * @beta
-    */
-  var internetHeaders: InternetHeaders = js.native
-  /**
     * Gets the Internet message identifier for an email message.
     *
     * [Api set: Mailbox 1.0]

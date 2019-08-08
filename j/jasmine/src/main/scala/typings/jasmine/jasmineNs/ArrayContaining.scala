@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayContaining[T] extends AsymmetricMatcher {
+trait ArrayContaining[T] extends AsymmetricMatcher[String] {
   var `new`: js.UndefOr[js.Function1[/* sample */ ArrayLike[T], ArrayLike[T]]] = js.undefined
 }
 

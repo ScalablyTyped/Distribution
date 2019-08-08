@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "googlemaps_dot_infobubble"
-version := "3.0-dt-20190322Z-986f8f"
+version := "3.0-dt-20190322Z-902aad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190806Z-3c1ea4",
+  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190807Z-3c1ea4",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

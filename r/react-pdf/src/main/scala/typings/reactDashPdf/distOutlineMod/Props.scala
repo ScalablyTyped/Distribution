@@ -1,5 +1,6 @@
 package typings.reactDashPdf.distOutlineMod
 
+import typings.pdfjsDashDist.pdfjsDashDistMod.PDFTreeNode
 import typings.reactDashPdf.Anon_PageNumber
 import typings.std.Error
 import scala.scalajs.js
@@ -24,7 +25,7 @@ trait Props extends js.Object {
   /**
     * Function called when the outline is successfully retrieved.
     */
-  var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ js.Any, Unit]] = js.undefined
+  var onLoadSuccess: js.UndefOr[js.Function1[/* outline */ js.Array[PDFTreeNode], Unit]] = js.undefined
 }
 
 object Props {
@@ -33,7 +34,7 @@ object Props {
     className: String | js.Array[String] = null,
     onItemClick: /* hasPageNumber */ Anon_PageNumber => Unit = null,
     onLoadError: /* error */ Error => Unit = null,
-    onLoadSuccess: /* pdf */ js.Any => Unit = null
+    onLoadSuccess: /* outline */ js.Array[PDFTreeNode] => Unit = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

@@ -34,11 +34,12 @@ trait Mailbox extends js.Object {
     * Contains the following members:
     * 
     *  - hostName (string): A string that represents the name of the host application. 
-    * It be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+    * It should be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+    * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
     * 
-    *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. 
-    * If the mail add-in is running in Outlook on desktop clients or iOS, the hostVersion property returns the version of the 
-    * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
+    *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0"). 
+    * If the mail add-in is running in Outlook on desktop or mobile clients, the hostVersion property returns the version of the 
+    * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
     * 
     *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook on the web. 
     * If the host application is not Outlook on the web, then accessing this property results in undefined. 
@@ -126,7 +127,6 @@ trait Mailbox extends js.Object {
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
     * Currently, the only supported event type is `Office.EventType.ItemChanged`.
-    * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -397,9 +397,18 @@ trait Mailbox extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     *
+    * **Errors**:
+    * 
+    * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+    * 
+    * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+    * 
+    * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+    * 
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
+    *                 may provide additional information.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
@@ -437,12 +446,21 @@ trait Mailbox extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
+    * **Errors**:
+    * 
+    * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+    * 
+    * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+    * 
+    * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+    * 
     * @param options - An object literal that contains one or more of the following properties.
     *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
     *        asyncContext: Any state data that is passed to the asynchronous method.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
+    *                 may provide additional information.
     */
   def getCallbackTokenAsync(
     options: AsyncContextOptions with Anon_IsRest,
@@ -464,10 +482,19 @@ trait Mailbox extends js.Object {
     * The getUserIdentityTokenAsync method returns a token that you can use to identify and 
     * {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
     *
+    * **Errors**:
+    * 
+    * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+    * 
+    * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+    * 
+    * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+    * 
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
+    *                 may provide additional information.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def getUserIdentityTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
@@ -542,7 +569,6 @@ trait Mailbox extends js.Object {
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
     * Currently, the only supported event type is `Office.EventType.ItemChanged`.
-    * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
     *
     * [Api set: Mailbox 1.5]
     *

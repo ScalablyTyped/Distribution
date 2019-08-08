@@ -6,7 +6,9 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.additions
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.all
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.ascending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.assertive
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.baseline
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.both
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.bottom
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.center
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.char
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
@@ -24,6 +26,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.list
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.listbox
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
@@ -39,6 +42,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.react.Anon_Html
@@ -483,6 +487,7 @@ trait TableCellBaseProps extends js.Object {
   var title: js.UndefOr[String] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
+  var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
 }
 
@@ -665,6 +670,7 @@ object TableCellBaseProps {
     title: String = null,
     typeof: String = null,
     unselectable: on | off = null,
+    valign: top | middle | bottom | baseline = null,
     vocab: String = null
   ): TableCellBaseProps = {
     val __obj = js.Dynamic.literal()
@@ -844,6 +850,7 @@ object TableCellBaseProps {
     if (title != null) __obj.updateDynamic("title")(title)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)
     __obj.asInstanceOf[TableCellBaseProps]
   }

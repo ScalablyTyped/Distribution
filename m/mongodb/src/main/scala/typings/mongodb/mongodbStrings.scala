@@ -38,6 +38,9 @@ object mongodbStrings {
   sealed trait UpdateQuery extends js.Object
   
   @js.native
+  sealed trait _id extends js.Object
+  
+  @js.native
   sealed trait all extends ProfilingLevel
   
   @js.native
@@ -99,6 +102,8 @@ object mongodbStrings {
   def `SCRAM-SHA-256`: `SCRAM-SHA-256` = "SCRAM-SHA-256".asInstanceOf[`SCRAM-SHA-256`]
   @scala.inline
   def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
+  @scala.inline
+  def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
