@@ -684,6 +684,7 @@
 | 0.7933605103613521 | [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil
 | 0.7933525691403532 | [uri-js](./u/uri-js) | An RFC 3986/3987 compliant, scheme extendable URI/
 | 0.7933357014712539 | [strict-uri-encode](./s/strict-uri-encode) | A stricter URI encode adhering to RFC 3986
+| 0.7933326493116123 | [pathval](./p/pathval) | Object value retrieval given a string path
 | 0.7932551795649276 | [firebase__firestore](./f/firebase__firestore) | This is the 
 | 0.7932463471741706 | [path-is-inside](./p/path-is-inside) | Tests whether one path is inside another path
 | 0.7932292955338132 | [just-extend](./j/just-extend) | extend an object
@@ -2742,6 +2743,7 @@
 | 0.6821291404127363 | [uirouter__angularjs](./u/uirouter__angularjs) | State-based routing for AngularJS 1.x
 | 0.6821174260904003 | [mobx-task](./m/mobx-task) | Removes boilerplate of tracking when an async func
 | 0.6821125223005279 | [p-min-delay](./p/p-min-delay) | Delay a promise a minimum amount of time
+| 0.6820774461561405 | [rollup-plugin-url](./r/rollup-plugin-url) | Inline import files as data-URIs, or copy them to 
 | 0.6820602445877072 | [element-ready](./e/element-ready) | Detect when an element is ready in the DOM
 | 0.6820309569671421 | [jpeg-autorotate](./j/jpeg-autorotate) | Rotates JPEG images based on EXIF orientation
 | 0.6819175509144525 | [pikaday-time](./p/pikaday-time) | Time support added to pikaday
@@ -3628,6 +3630,7 @@
 | 0.6406835002975229 | [ngmap](./n/ngmap) | The Simplest AngularJS Google Maps V3 Directive
 | 0.6406178044559508 | [geoip-lite](./g/geoip-lite) | A light weight native JavaScript implementation of
 | 0.6405774856788037 | [mark_dot_js](./m/mark_dot_js) | Highlight keywords using JavaScript. Intended for 
+| 0.6404977866327681 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th
 | 0.6403311594941596 | [react-broadcast](./r/react-broadcast) | Reliably communicate state changes to deeply neste
 | 0.6402082237933288 | [xmltojson](./x/xmltojson) | Configurable, lightweight XML to JSON converter.
 | 0.6401916346900354 | [sjcl](./s/sjcl) | Stanford Javascript Crypto Library
@@ -4087,6 +4090,7 @@
 | 0.6038564950642846 | [koa-ratelimit-lru](./k/koa-ratelimit-lru) | Rate limiter middleware backed by lru-cache
 | 0.6038352026381298 | [mmmagic](./m/mmmagic) | An async libmagic binding for node.js for detectin
 | 0.6035650834273439 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl
+| 0.6034865436979006 | [rollup-plugin-postcss](./r/rollup-plugin-postcss) | Seamless integration between Rollup and PostCSS
 | 0.6034036246838766 | [sw-toolbox](./s/sw-toolbox) | Service Worker Toolbox provides some simple helper
 | 0.603394816464571 | [koa-proxy](./k/koa-proxy) | Proxy middleware for koa
 | 0.603393104999618 | [dir-walker-gen](./d/dir-walker-gen) | A javascript generator pattern for directlry listi
@@ -4867,6 +4871,7 @@
 | 0.48867640354641123 | [route-recognizer](./r/route-recognizer) | A lightweight JavaScript library that matches path
 | 0.4885864612381422 | [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS
 | 0.4885346693315751 | [react-smooth-scrollbar](./r/react-smooth-scrollbar) | React implementation of smooth-scrollbar
+| 0.4881224164367849 | [leaflet-geosearch](./l/leaflet-geosearch) | Adds support for address lookup (a.k.a. geocoding 
 | 0.48787523351923784 | [gulp-coffeelint](./g/gulp-coffeelint) | Lint your CoffeeScript using gulp and CoffeeLint
 | 0.4877720956260396 | [cordova-plugin-file-opene](./c/cordova-plugin-file-opener2) | A File Opener Plugin for Cordova. (The Original Ve
 | 0.4876329962913192 | [storybook__components](./s/storybook__components) | Core Storybook Components
@@ -5229,6 +5234,7 @@
 | 0.43709623178568424 | [react-document-title](./r/react-document-title) | A declarative, nested, stateful document.title for
 | 0.4369723059880615 | [fortawesome__fontawesome-](./f/fortawesome__fontawesome-svg-core) | The iconic font, CSS, and SVG framework
 | 0.4369014821514169 | [soundmanager2](./s/soundmanager2) | A JavaScript Sound API supporting MP3, MPEG4 and H
+| 0.43677394193174046 | [rollup-plugin-progress](./r/rollup-plugin-progress) | Rollup Progress Plugin
 | 0.4363631606906408 | [binary-parser](./b/binary-parser) | Blazing-fast binary parser builder
 | 0.43566899659741576 | [weighted](./w/weighted) | A dead-simple module for picking a random item wit
 | 0.4356118514217572 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
@@ -5680,6 +5686,7 @@
 | 0.37610216606596825 | [idyll-document](./i/idyll-document) | The Idyll runtime, implemented as a React componen
 | 0.37597402619571363 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar
 | 0.37583400071847556 | [vue-markdown](./v/vue-markdown) | A Powerful and Highspeed Markdown Parser for Vue
+| 0.37548502714673904 | [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil
 | 0.375327762450623 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and exp
 | 0.37513694283448057 | [jsonminify](./j/jsonminify) | JSON.minify() minifies blocks of JSON-like content
 | 0.3749484310017373 | [bunyan-format](./b/bunyan-format) | Writable stream that formats bunyan records that a
@@ -6219,6 +6226,7 @@
 | 0.28939670511831933 | [react-scrollable-anchor](./r/react-scrollable-anchor) | Provide smooth scrolling anchors in React.
 | 0.2891675892307254 | [nivo__waffle](./n/nivo__waffle) | -
 | 0.28910496970902144 | [fuzzyset](./f/fuzzyset) | A fuzzy string set for JavaScript
+| 0.28902499186958425 | [ecore](./e/ecore) | Ecore (EMOF) JavaScript Implementation
 | 0.2889105655280456 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
 | 0.2888766256010207 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor
 | 0.2888238290481311 | [jasmine-matchers](./j/jasmine-matchers) | Extends the matchers jasmine provides.
@@ -6476,7 +6484,6 @@
 | 0.23156202835314407 | [satnav](./s/satnav) | A micro front-end router
 | 0.2311900942426274 | [gulp-minify-css](./g/gulp-minify-css) | Minify css with clean-css.
 | 0.23047347170836374 | [places](./p/places) | About places.
-| 0.2301234991636546 | [c3](./c/c3) | D3-based reusable chart library
 | 0.2301066213502082 | [jwt-express](./j/jwt-express) | Climb aboard the JWT Express and use JWTs in your 
 | 0.22986116503628512 | [uploadcare](./u/uploadcare) | Library for uploadcare.com.
 | 0.22968227299125674 | [jquery_dot_appear](./j/jquery_dot_appear) | jQuery plugin to call a function when an element a

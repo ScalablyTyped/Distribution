@@ -19,7 +19,6 @@ import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
 import typings.phaser.PhaserNs.Scene
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextMetrics
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextPadding
-import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle
 import typings.phaser.TextStyleWordWrapCallback
 import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
@@ -93,8 +92,20 @@ class Text protected ()
     * @param text The text this Text object will display.
     * @param style The text style configuration object.
     */
-  def this(scene: Scene, x: Double, y: Double, text: String, style: TextSyle) = this()
-  def this(scene: Scene, x: Double, y: Double, text: js.Array[String], style: TextSyle) = this()
+  def this(
+    scene: Scene,
+    x: Double,
+    y: Double,
+    text: String,
+    style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle
+  ) = this()
+  def this(
+    scene: Scene,
+    x: Double,
+    y: Double,
+    text: js.Array[String],
+    style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle
+  ) = this()
   /**
     * Whether to automatically round line positions.
     */

@@ -11,6 +11,14 @@ sealed trait DiagnosticTag extends js.Object
 @js.native
 object DiagnosticTag extends js.Object {
   /**
+  		 * Deprecated or obsolete code.
+  		 *
+  		 * Diagnostics with this tag are rendered with a strike through.
+  		 */
+  @js.native
+  sealed trait Deprecated extends DiagnosticTag
+  
+  /**
   		 * Unused or unnecessary code.
   		 *
   		 * Diagnostics with this tag are rendered faded out. The amount of fading
@@ -23,6 +31,7 @@ object DiagnosticTag extends js.Object {
   @js.native
   sealed trait Unnecessary extends DiagnosticTag
   
+  /* 2 */ val Deprecated: typings.vscode.vscodeMod.DiagnosticTag.Deprecated with Double = js.native
   /* 1 */ val Unnecessary: typings.vscode.vscodeMod.DiagnosticTag.Unnecessary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagnosticTag with Double] = js.native

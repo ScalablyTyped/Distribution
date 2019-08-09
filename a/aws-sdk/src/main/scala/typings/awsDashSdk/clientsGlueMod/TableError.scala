@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait TableError extends js.Object {
   /**
-    * Detail about the error.
+    * The details about the error.
     */
   var ErrorDetail: js.UndefOr[typings.awsDashSdk.clientsGlueMod.ErrorDetail] = js.undefined
   /**
-    * Name of the table. For Hive compatibility, this must be entirely lowercase.
+    * The name of the table. For Hive compatibility, this must be entirely lowercase.
     */
   var TableName: js.UndefOr[NameString] = js.undefined
 }

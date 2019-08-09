@@ -8,7 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions */ trait Props extends CustomFormatConfig {
+- Dropped @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions
+- Dropped {[ k in 'intl' ]: react-intl.react-intl/dist/types.IntlShape} */ trait Props extends CustomFormatConfig {
   var children: js.UndefOr[js.Function1[/* value */ String, ReactChild]] = js.undefined
   var unit: js.UndefOr[Unit] = js.undefined
   var updateIntervalInSeconds: js.UndefOr[Double] = js.undefined

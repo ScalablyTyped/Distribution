@@ -1,7 +1,7 @@
 
 # Scala.js typings for chai
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 BDD/TDD assertion library for node.js and the browser. Test framework agnostic.

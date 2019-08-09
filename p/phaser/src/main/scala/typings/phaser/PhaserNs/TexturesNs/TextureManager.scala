@@ -11,6 +11,7 @@ import typings.phaser.PhaserNs.TypesNs.TexturesNs.SpriteSheetFromAtlasConfig
 import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -167,6 +168,16 @@ class TextureManager protected () extends EventEmitter {
   def addCanvas(key: String, source: HTMLCanvasElement): CanvasTexture = js.native
   def addCanvas(key: String, source: HTMLCanvasElement, skipCache: Boolean): CanvasTexture = js.native
   /**
+    * Takes a WebGL Texture and creates a Phaser Texture from it, which is added to the Texture Manager using the given key.
+    * 
+    * This allows you to then use the Texture as a normal texture for texture based Game Objects like Sprites.
+    * 
+    * This is a WebGL only feature.
+    * @param key The unique string-based key of the Texture.
+    * @param glTexture The source Render Texture.
+    */
+  def addGLTexture(key: String, glTexture: WebGLTexture): Texture = js.native
+  /**
     * Adds a new Texture to the Texture Manager created from the given Image element.
     * @param key The unique string-based key of the Texture.
     * @param source The source Image element.
@@ -282,6 +293,10 @@ class TextureManager protected () extends EventEmitter {
     * Gets an existing texture frame and converts it into a base64 encoded image and returns the base64 data.
     * 
     * You can also provide the image type and encoder options.
+    * 
+    * This will only work with bitmap based texture frames, such as those created from Texture Atlases.
+    * It will not work with GL Texture objects, such as Shaders, or Render Textures. For those please
+    * see the WebGL Snapshot function instead.
     * @param key The unique string-based key of the Texture.
     * @param frame The string-based name, or integer based index, of the Frame to get from the Texture.
     * @param type [description] Default 'image/png'.

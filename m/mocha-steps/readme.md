@@ -1,7 +1,7 @@
 
 # Scala.js typings for mocha-steps
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Sequential scenarios for Mocha

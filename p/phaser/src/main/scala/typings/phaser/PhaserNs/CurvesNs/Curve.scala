@@ -80,11 +80,11 @@ class Curve protected () extends js.Object {
   def getEndPoint(): Vector2 = js.native
   def getEndPoint(out: Vector2): Vector2 = js.native
   /**
-    * [description]
+    * Get total curve arc length
     */
   def getLength(): Double = js.native
   /**
-    * [description]
+    * Get list of cumulative segment lengths
     * @param divisions [description]
     */
   def getLengths(): js.Array[Double] = js.native
@@ -128,7 +128,10 @@ class Curve protected () extends js.Object {
   def getTFromDistance(distance: integer): Double = js.native
   def getTFromDistance(distance: integer, divisions: integer): Double = js.native
   /**
-    * [description]
+    * Returns a unit vector tangent at t
+    * In case any sub curve does not implement its tangent derivation,
+    * 2 points a small delta apart will be used to find its gradient
+    * which seems to give a reasonable approximation
     * @param t [description]
     * @param out [description]
     */

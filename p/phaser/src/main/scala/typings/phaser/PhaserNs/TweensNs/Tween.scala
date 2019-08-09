@@ -1,5 +1,7 @@
 package typings.phaser.PhaserNs.TweensNs
 
+import typings.phaser.PhaserNs.EventsNs.EventEmitter
+import typings.phaser.PhaserNs.TypesNs.TweensNs.Event
 import typings.phaser.PhaserNs.TypesNs.TweensNs.TweenDataConfig
 import typings.phaser.integer
 import scala.scalajs.js
@@ -13,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Phaser.Tweens.Tween")
 @js.native
-class Tween protected () extends js.Object {
+class Tween protected () extends EventEmitter {
   def this(parent: Timeline, data: js.Array[TweenDataConfig], targets: js.Array[_]) = this()
   /**
     * 
@@ -27,7 +29,21 @@ class Tween protected () extends js.Object {
     */
   var calculatedOffset: Double = js.native
   /**
-    * An object containing the various Tween callback references.
+    * The context in which all callbacks are invoked.
+    */
+  var callbackScope: js.Any = js.native
+  /**
+    * An object containing the different Tween callback functions.
+    * 
+    * You can either set these in the Tween config, or by calling the `Tween.setCallback` method.
+    * 
+    * `onActive` When the Tween is moved from the pending to the active list in the Tween Manager, even if playback paused.
+    * `onStart` When the Tween starts playing after a delayed state. Will happen at the same time as `onActive` if it has no delay.
+    * `onYoyo` When a TweenData starts a yoyo. This happens _after_ the `hold` delay expires, if set.
+    * `onRepeat` When a TweenData repeats playback. This happens _after_ the `repeatDelay` expires, if set.
+    * `onComplete` When the Tween finishes playback fully or `Tween.stop` is called. Never invoked if tween is set to repeat infinitely.
+    * `onUpdate` When a TweenData updates a property on a source target during playback.
+    * `onLoop` When a Tween loops. This happens _after_ the `loopDelay` expires, if set.
     */
   var callbacks: js.Object = js.native
   /**
@@ -50,6 +66,17 @@ class Tween protected () extends js.Object {
     * Elapsed time in ms/frames of this run through the Tween.
     */
   var elapsed: Double = js.native
+  /**
+    * Has this Tween started playback yet?
+    * This boolean is toggled when the Tween leaves the 'delayed' state and starts running.
+    */
+  val hasStarted: Boolean = js.native
+  /**
+    * Is this Tween currently seeking?
+    * This boolean is toggled in the `Tween.seek` method.
+    * When a tween is seeking it will not dispatch any events or callbacks.
+    */
+  val isSeeking: Boolean = js.native
   /**
     * Loop this tween? Can be -1 for an infinite loop, or an integer.
     * When enabled it will play through ALL TweenDatas again. Use TweenData.repeat to loop a single element.
@@ -84,6 +111,11 @@ class Tween protected () extends js.Object {
     * Value between 0 and 1. The amount through the Tween, excluding loops.
     */
   var progress: Double = js.native
+  /**
+    * Time in ms/frames before the 'onStart' event fires.
+    * This is the shortest `delay` value across all of the TweenDatas of this Tween.
+    */
+  var startDelay: Double = js.native
   /**
     * The current state of the tween
     */
@@ -137,6 +169,19 @@ class Tween protected () extends js.Object {
   def complete(): this.type = js.native
   def complete(delay: Double): this.type = js.native
   /**
+    * Internal method that will emit a TweenData based Event and invoke the given callback.
+    * @param event The Event to be dispatched.
+    * @param callback The callback to be invoked. Can be `null` or `undefined` to skip invocation.
+    * @param tweenData The TweenData object that caused this event.
+    */
+  def dispatchTweenDataEvent(event: Event, callback: js.Function, tweenData: TweenDataConfig): Unit = js.native
+  /**
+    * Internal method that will emit a Tween based Event and invoke the given callback.
+    * @param event The Event to be dispatched.
+    * @param callback The callback to be invoked. Can be `null` or `undefined` to skip invocation.
+    */
+  def dispatchTweenEvent(event: Event, callback: js.Function): Unit = js.native
+  /**
     * Returns the scale of the time applied to this Tween.
     */
   def getTimeScale(): Double = js.native
@@ -162,6 +207,11 @@ class Tween protected () extends js.Object {
     * Checks if the Tween is currently active.
     */
   def isPlaying(): Boolean = js.native
+  /**
+    * Internal method that makes this Tween active within the TweenManager
+    * and emits the onActive event and callback.
+    */
+  def makeActive(): Unit = js.native
   /**
     * Internal method that advances to the next state of the Tween during playback.
     */
@@ -206,20 +256,46 @@ class Tween protected () extends js.Object {
     */
   def resume(): this.type = js.native
   /**
-    * Attempts to seek to a specific position in a Tween.
+    * Seeks to a specific point in the Tween.
+    * 
+    * **Note:** You cannot seek a Tween that repeats or loops forever, or that has an unusually long total duration.
+    * 
+    * The given position is a value between 0 and 1 which represents how far through the Tween to seek to.
+    * A value of 0.5 would seek to half-way through the Tween, where-as a value of zero would seek to the start.
+    * 
+    * Note that the seek takes the entire duration of the Tween into account, including delays, loops and repeats.
+    * For example, a Tween that lasts for 2 seconds, but that loops 3 times, would have a total duration of 6 seconds,
+    * so seeking to 0.5 would seek to 3 seconds into the Tween, as that's half-way through its _entire_ duration.
+    * 
+    * Seeking works by resetting the Tween to its initial values and then iterating through the Tween at `delta`
+    * jumps per step. The longer the Tween, the longer this can take.
     * @param toPosition A value between 0 and 1 which represents the progress point to seek to.
+    * @param delta The size of each step when seeking through the Tween. A higher value completes faster but at a cost of less precision. Default 16.6.
     */
   def seek(toPosition: Double): this.type = js.native
+  def seek(toPosition: Double, delta: Double): this.type = js.native
   /**
     * Sets an event based callback to be invoked during playback.
-    * @param type Type of the callback.
-    * @param callback Callback function.
+    * 
+    * Calling this method will replace a previously set callback for the given type, if any exists.
+    * 
+    * The types available are:
+    * 
+    * `onActive` When the Tween is moved from the pending to the active list in the Tween Manager, even if playback paused.
+    * `onStart` When the Tween starts playing after a delayed state. Will happen at the same time as `onActive` if it has no delay.
+    * `onYoyo` When a TweenData starts a yoyo. This happens _after_ the `hold` delay expires, if set.
+    * `onRepeat` When a TweenData repeats playback. This happens _after_ the `repeatDelay` expires, if set.
+    * `onComplete` When the Tween finishes playback fully or `Tween.stop` is called. Never invoked if tween is set to repeat infinitely.
+    * `onUpdate` When a TweenData updates a property on a source target during playback.
+    * `onLoop` When a Tween loops. This happens _after_ the `loopDelay` expires, if set.
+    * @param type Type of the callback to set.
+    * @param callback The function to invoke when this callback happens.
     * @param params An array of parameters for specified callbacks types.
     * @param scope The context the callback will be invoked in.
     */
   def setCallback(`type`: String, callback: js.Function): this.type = js.native
   def setCallback(`type`: String, callback: js.Function, params: js.Array[_]): this.type = js.native
-  def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Object): this.type = js.native
+  def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Any): this.type = js.native
   /**
     * Internal method used as part of the playback process that sets a tween to play in reverse.
     * @param tween The Tween to update.
@@ -266,7 +342,7 @@ class Tween protected () extends js.Object {
     * Internal method that advances the TweenData based on the time value given.
     * @param tween The Tween to update.
     * @param tweenData The TweenData property to update.
-    * @param delta Either a value in ms, or 1 if Tween.useFrames is true
+    * @param delta Either a value in ms, or 1 if Tween.useFrames is true.
     */
   def updateTweenData(tween: Tween, tweenData: TweenDataConfig, delta: Double): Boolean = js.native
 }

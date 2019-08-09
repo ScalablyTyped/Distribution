@@ -47,6 +47,11 @@ class Ellipse () extends js.Object {
     */
   var top: Double = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.ELLIPSE`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * The width of the ellipse.
     */
   var width: Double = js.native

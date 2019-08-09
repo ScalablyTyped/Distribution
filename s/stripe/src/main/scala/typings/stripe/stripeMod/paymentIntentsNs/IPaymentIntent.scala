@@ -49,14 +49,14 @@ trait IPaymentIntent extends IResourceObject {
     */
   var application_fee_amount: js.UndefOr[Double | Null] = js.undefined
   /**
-    * User-given reason for cancellation of this PaymentIntent.
-    */
-  var cancelation_reason: PaymentIntentCancelationReason | Null
-  /**
     * Populated when `status` is `canceled`, this is the time at which the PaymentIntent was canceled.
     * Measured in seconds since the Unix epoch.
     */
   var canceled_at: Double | Null
+  /**
+    * User-given reason for cancellation of this PaymentIntent.
+    */
+  var cancellation_reason: PaymentIntentCancellationReason | Null
   /**
     * Capture method of this PaymentIntent.
     */
@@ -179,8 +179,8 @@ object IPaymentIntent {
     status: requires_payment_method | requires_confirmation | requires_action | processing | requires_capture | canceled | succeeded,
     application: String | IApplication = null,
     application_fee_amount: Int | Double = null,
-    cancelation_reason: PaymentIntentCancelationReason = null,
     canceled_at: Int | Double = null,
+    cancellation_reason: PaymentIntentCancellationReason = null,
     customer: String | ICustomer = null,
     description: String = null,
     last_payment_error: IStripeError = null,
@@ -200,8 +200,8 @@ object IPaymentIntent {
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (cancelation_reason != null) __obj.updateDynamic("cancelation_reason")(cancelation_reason)
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
+    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason)
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error)

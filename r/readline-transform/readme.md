@@ -1,7 +1,7 @@
 
 # Scala.js typings for readline-transform
 
-Typings are for version 0.9
+Typings are for version 1.0
 
 ## Library description:
 Transform stream to read line-by-line and write a string

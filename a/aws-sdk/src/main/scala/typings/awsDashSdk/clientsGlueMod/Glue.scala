@@ -52,12 +52,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeletePartitionResponse, Unit]
   ): Request[BatchDeletePartitionResponse, AWSError] = js.native
   /**
-    * Deletes multiple tables at once.  After completing this operation, you will no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def batchDeleteTable(): Request[BatchDeleteTableResponse, AWSError] = js.native
   def batchDeleteTable(callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteTableResponse, Unit]): Request[BatchDeleteTableResponse, AWSError] = js.native
   /**
-    * Deletes multiple tables at once.  After completing this operation, you will no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def batchDeleteTable(params: BatchDeleteTableRequest): Request[BatchDeleteTableResponse, AWSError] = js.native
   def batchDeleteTable(
@@ -169,6 +169,19 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchStopJobRunResponse, Unit]
   ): Request[BatchStopJobRunResponse, AWSError] = js.native
   /**
+    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
+    */
+  def cancelMLTaskRun(): Request[CancelMLTaskRunResponse, AWSError] = js.native
+  def cancelMLTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ CancelMLTaskRunResponse, Unit]): Request[CancelMLTaskRunResponse, AWSError] = js.native
+  /**
+    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
+    */
+  def cancelMLTaskRun(params: CancelMLTaskRunRequest): Request[CancelMLTaskRunResponse, AWSError] = js.native
+  def cancelMLTaskRun(
+    params: CancelMLTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelMLTaskRunResponse, Unit]
+  ): Request[CancelMLTaskRunResponse, AWSError] = js.native
+  /**
     * Creates a classifier in the user's account. This can be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
     */
   def createClassifier(): Request[CreateClassifierResponse, AWSError] = js.native
@@ -246,6 +259,19 @@ trait Glue extends Service {
     params: CreateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]
   ): Request[CreateJobResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that AWS Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
+    */
+  def createMLTransform(): Request[CreateMLTransformResponse, AWSError] = js.native
+  def createMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ CreateMLTransformResponse, Unit]): Request[CreateMLTransformResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that AWS Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
+    */
+  def createMLTransform(params: CreateMLTransformRequest): Request[CreateMLTransformResponse, AWSError] = js.native
+  def createMLTransform(
+    params: CreateMLTransformRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMLTransformResponse, Unit]
+  ): Request[CreateMLTransformResponse, AWSError] = js.native
   /**
     * Creates a new partition.
     */
@@ -377,12 +403,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCrawlerResponse, Unit]
   ): Request[DeleteCrawlerResponse, AWSError] = js.native
   /**
-    * Removes a specified Database from a Data Catalog.  After completing this operation, you will no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
+    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
     */
   def deleteDatabase(): Request[DeleteDatabaseResponse, AWSError] = js.native
   def deleteDatabase(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDatabaseResponse, Unit]): Request[DeleteDatabaseResponse, AWSError] = js.native
   /**
-    * Removes a specified Database from a Data Catalog.  After completing this operation, you will no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
+    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
     */
   def deleteDatabase(params: DeleteDatabaseRequest): Request[DeleteDatabaseResponse, AWSError] = js.native
   def deleteDatabase(
@@ -415,6 +441,19 @@ trait Glue extends Service {
     params: DeleteJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobResponse, Unit]
   ): Request[DeleteJobResponse, AWSError] = js.native
+  /**
+    * Deletes an AWS Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any AWS Glue jobs that still reference the deleted transform will no longer succeed.
+    */
+  def deleteMLTransform(): Request[DeleteMLTransformResponse, AWSError] = js.native
+  def deleteMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMLTransformResponse, Unit]): Request[DeleteMLTransformResponse, AWSError] = js.native
+  /**
+    * Deletes an AWS Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any AWS Glue jobs that still reference the deleted transform will no longer succeed.
+    */
+  def deleteMLTransform(params: DeleteMLTransformRequest): Request[DeleteMLTransformResponse, AWSError] = js.native
+  def deleteMLTransform(
+    params: DeleteMLTransformRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMLTransformResponse, Unit]
+  ): Request[DeleteMLTransformResponse, AWSError] = js.native
   /**
     * Deletes a specified partition.
     */
@@ -455,12 +494,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSecurityConfigurationResponse, Unit]
   ): Request[DeleteSecurityConfigurationResponse, AWSError] = js.native
   /**
-    * Removes a table definition from the Data Catalog.  After completing this operation, you will no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def deleteTable(): Request[DeleteTableResponse, AWSError] = js.native
   def deleteTable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTableResponse, Unit]): Request[DeleteTableResponse, AWSError] = js.native
   /**
-    * Removes a table definition from the Data Catalog.  After completing this operation, you will no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def deleteTable(params: DeleteTableRequest): Request[DeleteTableResponse, AWSError] = js.native
   def deleteTable(
@@ -652,12 +691,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDatabaseResponse, Unit]
   ): Request[GetDatabaseResponse, AWSError] = js.native
   /**
-    * Retrieves all Databases defined in a given Data Catalog.
+    * Retrieves all databases defined in a given Data Catalog.
     */
   def getDatabases(): Request[GetDatabasesResponse, AWSError] = js.native
   def getDatabases(callback: js.Function2[/* err */ AWSError, /* data */ GetDatabasesResponse, Unit]): Request[GetDatabasesResponse, AWSError] = js.native
   /**
-    * Retrieves all Databases defined in a given Data Catalog.
+    * Retrieves all databases defined in a given Data Catalog.
     */
   def getDatabases(params: GetDatabasesRequest): Request[GetDatabasesResponse, AWSError] = js.native
   def getDatabases(
@@ -778,6 +817,58 @@ trait Glue extends Service {
     params: GetJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobsResponse, Unit]
   ): Request[GetJobsResponse, AWSError] = js.native
+  /**
+    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
+    */
+  def getMLTaskRun(): Request[GetMLTaskRunResponse, AWSError] = js.native
+  def getMLTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunResponse, Unit]): Request[GetMLTaskRunResponse, AWSError] = js.native
+  /**
+    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
+    */
+  def getMLTaskRun(params: GetMLTaskRunRequest): Request[GetMLTaskRunResponse, AWSError] = js.native
+  def getMLTaskRun(
+    params: GetMLTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunResponse, Unit]
+  ): Request[GetMLTaskRunResponse, AWSError] = js.native
+  /**
+    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
+    */
+  def getMLTaskRuns(): Request[GetMLTaskRunsResponse, AWSError] = js.native
+  def getMLTaskRuns(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunsResponse, Unit]): Request[GetMLTaskRunsResponse, AWSError] = js.native
+  /**
+    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
+    */
+  def getMLTaskRuns(params: GetMLTaskRunsRequest): Request[GetMLTaskRunsResponse, AWSError] = js.native
+  def getMLTaskRuns(
+    params: GetMLTaskRunsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunsResponse, Unit]
+  ): Request[GetMLTaskRunsResponse, AWSError] = js.native
+  /**
+    * Gets an AWS Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. You can retrieve their metadata by calling GetMLTransform.
+    */
+  def getMLTransform(): Request[GetMLTransformResponse, AWSError] = js.native
+  def getMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformResponse, Unit]): Request[GetMLTransformResponse, AWSError] = js.native
+  /**
+    * Gets an AWS Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. You can retrieve their metadata by calling GetMLTransform.
+    */
+  def getMLTransform(params: GetMLTransformRequest): Request[GetMLTransformResponse, AWSError] = js.native
+  def getMLTransform(
+    params: GetMLTransformRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformResponse, Unit]
+  ): Request[GetMLTransformResponse, AWSError] = js.native
+  /**
+    * Gets a sortable, filterable list of existing AWS Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue, and you can retrieve their metadata by calling GetMLTransforms.
+    */
+  def getMLTransforms(): Request[GetMLTransformsResponse, AWSError] = js.native
+  def getMLTransforms(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformsResponse, Unit]): Request[GetMLTransformsResponse, AWSError] = js.native
+  /**
+    * Gets a sortable, filterable list of existing AWS Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue, and you can retrieve their metadata by calling GetMLTransforms.
+    */
+  def getMLTransforms(params: GetMLTransformsRequest): Request[GetMLTransformsResponse, AWSError] = js.native
+  def getMLTransforms(
+    params: GetMLTransformsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformsResponse, Unit]
+  ): Request[GetMLTransformsResponse, AWSError] = js.native
   /**
     * Creates mappings.
     */
@@ -974,12 +1065,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserDefinedFunctionResponse, Unit]
   ): Request[GetUserDefinedFunctionResponse, AWSError] = js.native
   /**
-    * Retrieves a multiple function definitions from the Data Catalog.
+    * Retrieves multiple function definitions from the Data Catalog.
     */
   def getUserDefinedFunctions(): Request[GetUserDefinedFunctionsResponse, AWSError] = js.native
   def getUserDefinedFunctions(callback: js.Function2[/* err */ AWSError, /* data */ GetUserDefinedFunctionsResponse, Unit]): Request[GetUserDefinedFunctionsResponse, AWSError] = js.native
   /**
-    * Retrieves a multiple function definitions from the Data Catalog.
+    * Retrieves multiple function definitions from the Data Catalog.
     */
   def getUserDefinedFunctions(params: GetUserDefinedFunctionsRequest): Request[GetUserDefinedFunctionsResponse, AWSError] = js.native
   def getUserDefinedFunctions(
@@ -1039,12 +1130,12 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetWorkflowRunsResponse, Unit]
   ): Request[GetWorkflowRunsResponse, AWSError] = js.native
   /**
-    * Imports an existing Athena Data Catalog to AWS Glue
+    * Imports an existing Amazon Athena Data Catalog to AWS Glue
     */
   def importCatalogToGlue(): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   def importCatalogToGlue(callback: js.Function2[/* err */ AWSError, /* data */ ImportCatalogToGlueResponse, Unit]): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   /**
-    * Imports an existing Athena Data Catalog to AWS Glue
+    * Imports an existing Amazon Athena Data Catalog to AWS Glue
     */
   def importCatalogToGlue(params: ImportCatalogToGlueRequest): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   def importCatalogToGlue(
@@ -1171,6 +1262,19 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ResetJobBookmarkResponse, Unit]
   ): Request[ResetJobBookmarkResponse, AWSError] = js.native
   /**
+    * Searches a set of tables based on properties in the table metadata as well as on the parent database. You can search against text or filter conditions.  You can only get tables that you have access to based on the security policies defined in Lake Formation. You need at least a read-only access to the table for it to be returned. If you do not have access to all the columns in the table, these columns will not be searched against when returning the list of tables back to you. If you have access to the columns but not the data in the columns, those columns and the associated metadata for those columns will be included in the search. 
+    */
+  def searchTables(): Request[SearchTablesResponse, AWSError] = js.native
+  def searchTables(callback: js.Function2[/* err */ AWSError, /* data */ SearchTablesResponse, Unit]): Request[SearchTablesResponse, AWSError] = js.native
+  /**
+    * Searches a set of tables based on properties in the table metadata as well as on the parent database. You can search against text or filter conditions.  You can only get tables that you have access to based on the security policies defined in Lake Formation. You need at least a read-only access to the table for it to be returned. If you do not have access to all the columns in the table, these columns will not be searched against when returning the list of tables back to you. If you have access to the columns but not the data in the columns, those columns and the associated metadata for those columns will be included in the search. 
+    */
+  def searchTables(params: SearchTablesRequest): Request[SearchTablesResponse, AWSError] = js.native
+  def searchTables(
+    params: SearchTablesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchTablesResponse, Unit]
+  ): Request[SearchTablesResponse, AWSError] = js.native
+  /**
     * Starts a crawl using the specified crawler, regardless of what is scheduled. If the crawler is already running, returns a CrawlerRunningException.
     */
   def startCrawler(): Request[StartCrawlerResponse, AWSError] = js.native
@@ -1197,6 +1301,32 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartCrawlerScheduleResponse, Unit]
   ): Request[StartCrawlerScheduleResponse, AWSError] = js.native
   /**
+    * Begins an asynchronous task to export all labeled data for a particular transform. This task is the only label-related API call that is not part of the typical active learning workflow. You typically use StartExportLabelsTaskRun when you want to work with all of your existing labels at the same time, such as when you want to remove or change labels that were previously submitted as truth. This API operation accepts the TransformId whose labels you want to export and an Amazon Simple Storage Service (Amazon S3) path to export the labels to. The operation returns a TaskRunId. You can check on the status of your task run by calling the GetMLTaskRun API.
+    */
+  def startExportLabelsTaskRun(): Request[StartExportLabelsTaskRunResponse, AWSError] = js.native
+  def startExportLabelsTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ StartExportLabelsTaskRunResponse, Unit]): Request[StartExportLabelsTaskRunResponse, AWSError] = js.native
+  /**
+    * Begins an asynchronous task to export all labeled data for a particular transform. This task is the only label-related API call that is not part of the typical active learning workflow. You typically use StartExportLabelsTaskRun when you want to work with all of your existing labels at the same time, such as when you want to remove or change labels that were previously submitted as truth. This API operation accepts the TransformId whose labels you want to export and an Amazon Simple Storage Service (Amazon S3) path to export the labels to. The operation returns a TaskRunId. You can check on the status of your task run by calling the GetMLTaskRun API.
+    */
+  def startExportLabelsTaskRun(params: StartExportLabelsTaskRunRequest): Request[StartExportLabelsTaskRunResponse, AWSError] = js.native
+  def startExportLabelsTaskRun(
+    params: StartExportLabelsTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartExportLabelsTaskRunResponse, Unit]
+  ): Request[StartExportLabelsTaskRunResponse, AWSError] = js.native
+  /**
+    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
+    */
+  def startImportLabelsTaskRun(): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
+  def startImportLabelsTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ StartImportLabelsTaskRunResponse, Unit]): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
+  /**
+    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
+    */
+  def startImportLabelsTaskRun(params: StartImportLabelsTaskRunRequest): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
+  def startImportLabelsTaskRun(
+    params: StartImportLabelsTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartImportLabelsTaskRunResponse, Unit]
+  ): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
+  /**
     * Starts a job run using a job definition.
     */
   def startJobRun(): Request[StartJobRunResponse, AWSError] = js.native
@@ -1209,6 +1339,34 @@ trait Glue extends Service {
     params: StartJobRunRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartJobRunResponse, Unit]
   ): Request[StartJobRunResponse, AWSError] = js.native
+  /**
+    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, AWS Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
+    */
+  def startMLEvaluationTaskRun(): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
+  def startMLEvaluationTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ StartMLEvaluationTaskRunResponse, Unit]): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
+  /**
+    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, AWS Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
+    */
+  def startMLEvaluationTaskRun(params: StartMLEvaluationTaskRunRequest): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
+  def startMLEvaluationTaskRun(
+    params: StartMLEvaluationTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMLEvaluationTaskRunResponse, Unit]
+  ): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
+  /**
+    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
+    */
+  def startMLLabelingSetGenerationTaskRun(): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
+  def startMLLabelingSetGenerationTaskRun(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMLLabelingSetGenerationTaskRunResponse, Unit]
+  ): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
+  /**
+    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
+    */
+  def startMLLabelingSetGenerationTaskRun(params: StartMLLabelingSetGenerationTaskRunRequest): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
+  def startMLLabelingSetGenerationTaskRun(
+    params: StartMLLabelingSetGenerationTaskRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMLLabelingSetGenerationTaskRunResponse, Unit]
+  ): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
   /**
     * Starts an existing trigger. See Triggering Jobs for information about how different types of trigger are started.
     */
@@ -1391,6 +1549,19 @@ trait Glue extends Service {
     params: UpdateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobResponse, Unit]
   ): Request[UpdateJobResponse, AWSError] = js.native
+  /**
+    * Updates an existing machine learning transform. Call this operation to tune the algorithm parameters to achieve better results. After calling this operation, you can call the StartMLEvaluationTaskRun operation to assess how well your new parameters achieved your goals (such as improving the quality of your machine learning transform, or making it more cost-effective).
+    */
+  def updateMLTransform(): Request[UpdateMLTransformResponse, AWSError] = js.native
+  def updateMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMLTransformResponse, Unit]): Request[UpdateMLTransformResponse, AWSError] = js.native
+  /**
+    * Updates an existing machine learning transform. Call this operation to tune the algorithm parameters to achieve better results. After calling this operation, you can call the StartMLEvaluationTaskRun operation to assess how well your new parameters achieved your goals (such as improving the quality of your machine learning transform, or making it more cost-effective).
+    */
+  def updateMLTransform(params: UpdateMLTransformRequest): Request[UpdateMLTransformResponse, AWSError] = js.native
+  def updateMLTransform(
+    params: UpdateMLTransformRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMLTransformResponse, Unit]
+  ): Request[UpdateMLTransformResponse, AWSError] = js.native
   /**
     * Updates a partition.
     */

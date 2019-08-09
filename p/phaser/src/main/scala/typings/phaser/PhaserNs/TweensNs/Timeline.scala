@@ -1,6 +1,7 @@
 package typings.phaser.PhaserNs.TweensNs
 
 import typings.phaser.PhaserNs.EventsNs.EventEmitter
+import typings.phaser.PhaserNs.TypesNs.TweensNs.Event
 import typings.phaser.PhaserNs.TypesNs.TweensNs.TweenBuilderConfig
 import typings.phaser.integer
 import scala.scalajs.js
@@ -21,6 +22,22 @@ class Timeline protected () extends EventEmitter {
     * @param manager The Tween Manager which owns this Timeline.
     */
   def this(manager: TweenManager) = this()
+  /**
+    * The context in which all callbacks are invoked.
+    */
+  var callbackScope: js.Any = js.native
+  /**
+    * An object containing the different Tween callback functions.
+    * 
+    * You can either set these in the Tween config, or by calling the `Tween.setCallback` method.
+    * 
+    * `onComplete` When the Timeline finishes playback fully or `Timeline.stop` is called. Never invoked if timeline is set to repeat infinitely.
+    * `onLoop` When a Timeline loops.
+    * `onStart` When the Timeline starts playing.
+    * `onUpdate` When a Timeline updates a child Tween.
+    * `onYoyo` When a Timeline starts a yoyo.
+    */
+  var callbacks: js.Object = js.native
   /**
     * Time in ms/frames before the 'onComplete' event fires. This never fires if loop = true (as it never completes)
     */
@@ -113,6 +130,12 @@ class Timeline protected () extends EventEmitter {
     * The resulting number is stored in the timeline, not as a return value.
     */
   def calcDuration(): Unit = js.native
+  /**
+    * Internal method that will emit a Timeline based Event and invoke the given callback.
+    * @param event The Event to be dispatched.
+    * @param callback The callback to be invoked. Can be `null` or `undefined` to skip invocation.
+    */
+  def dispatchTimelineEvent(event: Event, callback: js.Function): Unit = js.native
   /**
     * Parses the relative offset value, returning a positive or negative number.
     * @param value The relative offset, in the format of '-=500', for example. The first character determines whether it will be a positive or negative number. Spacing matters here.

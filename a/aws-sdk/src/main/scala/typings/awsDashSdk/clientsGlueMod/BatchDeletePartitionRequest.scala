@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchDeletePartitionRequest extends js.Object {
   /**
-    * The ID of the Data Catalog where the partition to be deleted resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the partition to be deleted resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait BatchDeletePartitionRequest extends js.Object {
     */
   var PartitionsToDelete: BatchDeletePartitionValueList
   /**
-    * The name of the table where the partitions to be deleted is located.
+    * The name of the table that contains the partitions to be deleted.
     */
   var TableName: NameString
 }

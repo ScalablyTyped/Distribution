@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val Children: ReactChildren = js.native
   val Fragment: ExoticComponent[Anon_Children] = js.native
+  val Profiler: ExoticComponent[ProfilerProps] = js.native
   val StrictMode: ExoticComponent[Anon_Children] = js.native
   /**
     * This feature is not yet available for server-side rendering.
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
-  val unstable_Profiler: ExoticComponent[ProfilerProps] = js.native
   val version: String = js.native
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P]): FunctionComponentElement[P] = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "readline-transform"
-version := "0.9-dt-20181011Z-964e17"
+version := "1.0-dt-20190808Z-96b10c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

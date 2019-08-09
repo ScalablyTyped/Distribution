@@ -1,5 +1,6 @@
 package typings.raygun.raygunMod
 
+import typings.raygun.raygunMod.raygunNs.GroupingKey
 import typings.raygun.raygunMod.raygunNs.KeyValueObject
 import typings.raygun.raygunMod.raygunNs.OnBeforeSend
 import typings.raygun.raygunMod.raygunNs.RaygunOptions
@@ -16,6 +17,7 @@ import scala.scalajs.js.annotation._
 class Client () extends js.Object {
   def expressHandler(error: Error, request: RaygunRequest, res: js.Any, next: js.Any): Unit = js.native
   def groupingKey(groupingKey: String): Client = js.native
+  def groupingKey(groupingKey: GroupingKey): Client = js.native
   def init(options: RaygunOptions): Client = js.native
   def offline(): Client = js.native
   def onBeforeSend(callback: OnBeforeSend): Client = js.native
@@ -82,5 +84,6 @@ class Client () extends js.Object {
   ): RaygunPayload = js.native
   def setUser(user: RaygunUser): Client = js.native
   def setVersion(version: String): Client = js.native
+  def user(req: RaygunRequest): RaygunUser | String = js.native
 }
 

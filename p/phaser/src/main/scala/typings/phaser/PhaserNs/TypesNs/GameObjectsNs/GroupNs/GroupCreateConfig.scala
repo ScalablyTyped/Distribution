@@ -33,7 +33,7 @@ trait GroupCreateConfig extends js.Object {
   /**
     * The number of times each `frame` should be combined with one `key`.
     */
-  var frameQuantity: js.UndefOr[Double] = js.undefined
+  var frameQuantity: js.UndefOr[integer] = js.undefined
   /**
     * Align the new Game Objects in a grid using these settings.
     */
@@ -53,7 +53,11 @@ trait GroupCreateConfig extends js.Object {
   /**
     * The maximum number of new Game Objects to create. 0 is no maximum.
     */
-  var max: js.UndefOr[Double] = js.undefined
+  var max: js.UndefOr[integer] = js.undefined
+  /**
+    * The number of Game Objects to create. If set, this overrides the `frameQuantity` value. Use `frameQuantity` for more advanced control.
+    */
+  var quantity: js.UndefOr[integer] = js.undefined
   /**
     * Select a `frame` at random.
     */
@@ -65,7 +69,7 @@ trait GroupCreateConfig extends js.Object {
   /**
     * The number of times each `key` × `frame` combination will be *repeated* (after the first combination).
     */
-  var repeat: js.UndefOr[Double] = js.undefined
+  var repeat: js.UndefOr[integer] = js.undefined
   var setAlpha: js.UndefOr[js.Object] = js.undefined
   /**
     * Increment each Game Object's alpha from the previous by this amount, starting from `setAlpha.value`.
@@ -134,15 +138,16 @@ object GroupCreateConfig {
     active: js.UndefOr[Boolean] = js.undefined,
     classType: js.Function = null,
     frame: String | (js.Array[String | integer]) | integer = null,
-    frameQuantity: Int | Double = null,
+    frameQuantity: js.UndefOr[integer] = js.undefined,
     gridAlign: `false` | GridAlignConfig = null,
     hitArea: js.Any = null,
     hitAreaCallback: HitAreaCallback = null,
     key: String | js.Array[String] = null,
-    max: Int | Double = null,
+    max: js.UndefOr[integer] = js.undefined,
+    quantity: js.UndefOr[integer] = js.undefined,
     randomFrame: js.UndefOr[Boolean] = js.undefined,
     randomKey: js.UndefOr[Boolean] = js.undefined,
-    repeat: Int | Double = null,
+    repeat: js.UndefOr[integer] = js.undefined,
     setAlpha: js.Object = null,
     `setAlpha.step`: Int | Double = null,
     `setAlpha.value`: Int | Double = null,
@@ -166,15 +171,16 @@ object GroupCreateConfig {
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (classType != null) __obj.updateDynamic("classType")(classType)
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (frameQuantity != null) __obj.updateDynamic("frameQuantity")(frameQuantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameQuantity)) __obj.updateDynamic("frameQuantity")(frameQuantity)
     if (gridAlign != null) __obj.updateDynamic("gridAlign")(gridAlign.asInstanceOf[js.Any])
     if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)
     if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(hitAreaCallback)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max)
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity)
     if (!js.isUndefined(randomFrame)) __obj.updateDynamic("randomFrame")(randomFrame)
     if (!js.isUndefined(randomKey)) __obj.updateDynamic("randomKey")(randomKey)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
     if (setAlpha != null) __obj.updateDynamic("setAlpha")(setAlpha)
     if (`setAlpha.step` != null) __obj.updateDynamic("setAlpha.step")(`setAlpha.step`.asInstanceOf[js.Any])
     if (`setAlpha.value` != null) __obj.updateDynamic("setAlpha.value")(`setAlpha.value`.asInstanceOf[js.Any])

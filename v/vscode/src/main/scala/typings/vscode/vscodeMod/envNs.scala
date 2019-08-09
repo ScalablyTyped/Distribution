@@ -15,6 +15,7 @@ object envNs extends js.Object {
   val machineId: String = js.native
   val remoteName: js.UndefOr[String] = js.native
   val sessionId: String = js.native
+  val shell: String = js.native
   val uriScheme: String = js.native
   def openExternal(target: Uri): Thenable[Boolean] = js.native
 }

@@ -1,12 +1,14 @@
 package typings.chaiDashJsonDashSchema.chaiDashJsonDashSchemaMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("chai-json-schema", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(chai: js.Any, utils: js.Any): Unit = js.native
-}
+object ^
+  extends TopLevel[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Chai.ChaiPlugin */ js.Any
+    ]
 

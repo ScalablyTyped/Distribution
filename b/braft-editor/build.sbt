@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "braft-editor"
-version := "1.9-dt-20190626Z-f0fa66"
+version := "1.9-dt-20190626Z-07c0ef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190626Z-38fbdc",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190626Z-f4db57",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-3acc33",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

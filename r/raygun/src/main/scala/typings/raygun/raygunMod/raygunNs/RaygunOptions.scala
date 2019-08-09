@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait RaygunOptions extends js.Object {
   var apiKey: String
   var filters: js.UndefOr[js.Array[String]] = js.undefined
-  var groupingKey: js.UndefOr[String] = js.undefined
+  var groupingKey: js.UndefOr[String | GroupingKey] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var innerErrorFieldName: js.UndefOr[String] = js.undefined
   var isOffline: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +26,7 @@ object RaygunOptions {
   def apply(
     apiKey: String,
     filters: js.Array[String] = null,
-    groupingKey: String = null,
+    groupingKey: String | GroupingKey = null,
     host: String = null,
     innerErrorFieldName: String = null,
     isOffline: js.UndefOr[Boolean] = js.undefined,
@@ -41,7 +41,7 @@ object RaygunOptions {
   ): RaygunOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey)
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey)
+    if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (innerErrorFieldName != null) __obj.updateDynamic("innerErrorFieldName")(innerErrorFieldName)
     if (!js.isUndefined(isOffline)) __obj.updateDynamic("isOffline")(isOffline)

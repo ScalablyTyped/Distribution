@@ -14,7 +14,6 @@ import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.GravityWellConf
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.ParticleEmitterConfig
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.RandomZoneSource
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextMetrics
-import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle
 import typings.phaser.integer
 import typings.std.Element
 import scala.scalajs.js
@@ -1485,13 +1484,19 @@ object GameObjectsNs extends js.Object {
       * @param text The text this Text object will display.
       * @param style The text style configuration object.
       */
-    def this(scene: typings.phaser.PhaserNs.Scene, x: Double, y: Double, text: String, style: TextSyle) = this()
+    def this(
+      scene: typings.phaser.PhaserNs.Scene,
+      x: Double,
+      y: Double,
+      text: String,
+      style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle
+    ) = this()
     def this(
       scene: typings.phaser.PhaserNs.Scene,
       x: Double,
       y: Double,
       text: js.Array[String],
-      style: TextSyle
+      style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle
     ) = this()
   }
   
@@ -1510,7 +1515,10 @@ object GameObjectsNs extends js.Object {
       * @param text The Text object that this TextStyle is styling.
       * @param style The style settings to set.
       */
-    def this(text: typings.phaser.PhaserNs.GameObjectsNs.Text, style: TextSyle) = this()
+    def this(
+      text: typings.phaser.PhaserNs.GameObjectsNs.Text,
+      style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle
+    ) = this()
   }
   
   /**
@@ -1729,8 +1737,8 @@ object GameObjectsNs extends js.Object {
       /**
         * 
         * @param a The Scale X value. Default 1.
-        * @param b The Shear Y value. Default 0.
-        * @param c The Shear X value. Default 0.
+        * @param b The Skew Y value. Default 0.
+        * @param c The Skew X value. Default 0.
         * @param d The Scale Y value. Default 1.
         * @param tx The Translate X value. Default 0.
         * @param ty The Translate Y value. Default 0.

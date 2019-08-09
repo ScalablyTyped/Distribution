@@ -1484,6 +1484,7 @@
 | 120 | [react-i18next](./r/react-i18next) | Internationalization for react done right. Using t
 | 120 | [redux-promise-middleware](./r/redux-promise-middleware) | Enables simple, yet robust handling of async actio
 | 120 | [rewire](./r/rewire) | Easy dependency injection for node.js unit testing
+| 120 | [rollup-plugin-postcss](./r/rollup-plugin-postcss) | Seamless integration between Rollup and PostCSS
 | 119 | [animejs](./a/animejs) | JavaScript animation engine
 | 119 | [d3-collection](./d/d3-collection) | Handy data structures for elements keyed by string
 | 119 | [egg](./e/egg) | A web framework's framework for Node.js
@@ -1615,7 +1616,6 @@
 | 105 | [to-markdown](./t/to-markdown) | HTML-to-Markdown converter
 | 105 | [transliteration](./t/transliteration) | Unicode to ACSII transliteration / slugify module 
 | 104 | [base64-url](./b/base64-url) | Base64 encode, decode, escape and unescape for URL
-| 104 | [c3](./c/c3) | D3-based reusable chart library
 | 104 | [form-urlencoded](./f/form-urlencoded) | Return an object as an 'x-www-form-urlencoded' str
 | 104 | [git-rev-sync](./g/git-rev-sync) | Synchronously get the current git commit hash, tag
 | 104 | [io-ts](./i/io-ts) | TypeScript compatible runtime type system for IO v
@@ -2832,6 +2832,7 @@
 | 35 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js
 | 35 | [passport-auth0](./p/passport-auth0) | Auth0 platform authentication strategy for Passpor
 | 35 | [passport-github2](./p/passport-github2) | GitHub authentication strategy for Passport.
+| 35 | [pathval](./p/pathval) | Object value retrieval given a string path
 | 35 | [qunit](./q/qunit) | An easy-to-use JavaScript Unit Testing framework.
 | 35 | [react-primitives](./r/react-primitives) | Primitive React Interfaces Across Targets
 | 35 | [react-share](./r/react-share) | Social media share buttons and share counts for Re
@@ -3218,6 +3219,7 @@
 | 25 | [postman-collection](./p/postman-collection) | Enables developers to use a unified Postman Collec
 | 25 | [prosemirror-schema-basic](./p/prosemirror-schema-basic) | Basic schema elements for ProseMirror
 | 25 | [react-infinite](./r/react-infinite) | A browser-ready efficient scrolling container base
+| 25 | [rollup-plugin-url](./r/rollup-plugin-url) | Inline import files as data-URIs, or copy them to 
 | 25 | [sinon-as-promised](./s/sinon-as-promised) | Sugar methods for using sinon.js stubs with promis
 | 25 | [slimerjs](./s/slimerjs) | A scriptable browser like PhantomJS, based on Fire
 | 25 | [smart-buffer](./s/smart-buffer) | smart-buffer is a Buffer wrapper that adds automat
@@ -3488,6 +3490,7 @@
 | 20 | [react-radio-group](./r/react-radio-group) | Better radio buttons.
 | 20 | [react-ultimate-pagination](./r/react-ultimate-pagination) | React.js pagination component based on ultimate-pa
 | 20 | [rmc-calendar](./r/rmc-calendar) | React Mobile Calendar Component(web and react-nati
+| 20 | [rollup-plugin-progress](./r/rollup-plugin-progress) | Rollup Progress Plugin
 | 20 | [scroll-to-element](./s/scroll-to-element) | Smooth scrolling to an element via selector or nod
 | 20 | [shuffle-seed](./s/shuffle-seed) | Shuffle Array based on a Seed
 | 20 | [stream-events](./s/stream-events) | Get an event when you're being sent data or asked 
@@ -4539,6 +4542,7 @@
 | 7 | [just-safe-get](./j/just-safe-get) | get value at property, don't throw if parent is un
 | 7 | [knex-postgis](./k/knex-postgis) | postgis extension for knex
 | 7 | [koa-xml-body](./k/koa-xml-body) | koa middleware to parse xml request body
+| 7 | [leaflet-geosearch](./l/leaflet-geosearch) | Adds support for address lookup (a.k.a. geocoding 
 | 7 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet
 | 7 | [list_dot_js](./l/list_dot_js) | The perfect library for lists. Supports search, so
 | 7 | [local-dynamo](./l/local-dynamo) | A Node.js wrapper of AWS DynamoDB Local and utilit
@@ -5835,6 +5839,7 @@
 | 1 | [easy-jsend](./e/easy-jsend) | Adds jSend response functions to express.response 
 | 1 | [easy-x-headers](./e/easy-x-headers) | X-headers to object mapper
 | 1 | [ecol](./e/ecol) | Event Collections
+| 1 | [ecore](./e/ecore) | Ecore (EMOF) JavaScript Implementation
 | 1 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos
 | 1 | [electron-notify](./e/electron-notify) | Nice and simple notifications for Electron apps
 | 1 | [env-to-object](./e/env-to-object) | Maps environment variables to a configuration obje
@@ -6376,6 +6381,7 @@
 | 0 | [express-version-request](./e/express-version-request) | versions an incoming request to Express based on h
 | 0 | [express-version-route](./e/express-version-route) | provides middleware to load controllers based on a
 | 0 | [extended-listbox](./e/extended-listbox) | A simple to use javascript component as powerful a
+| 0 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th
 | 0 | [fast64](./f/fast64) | The fastest in-browser base64 library
 | 0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
 | 0 | [feather-route-matcher](./f/feather-route-matcher) | featherweight url to handler matching
@@ -6515,6 +6521,7 @@
 | 0 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
 | 0 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps
 | 0 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
+| 0 | [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
 | 0 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.

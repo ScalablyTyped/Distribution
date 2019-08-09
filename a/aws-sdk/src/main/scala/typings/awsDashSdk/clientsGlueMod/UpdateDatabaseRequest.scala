@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateDatabaseRequest extends js.Object {
   /**
-    * The ID of the Data Catalog in which the metadata database resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which the metadata database resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**

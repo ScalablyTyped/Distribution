@@ -40,6 +40,11 @@ class Line () extends js.Object {
     */
   var top: Double = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.LINE`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * The x coordinate of the lines starting point.
     */
   var x1: Double = js.native

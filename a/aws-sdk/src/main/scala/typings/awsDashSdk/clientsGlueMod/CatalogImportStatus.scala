@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CatalogImportStatus extends js.Object {
   /**
-    * True if the migration has completed, or False otherwise.
+    *  True if the migration has completed, or False otherwise.
     */
   var ImportCompleted: js.UndefOr[Boolean] = js.undefined
   /**

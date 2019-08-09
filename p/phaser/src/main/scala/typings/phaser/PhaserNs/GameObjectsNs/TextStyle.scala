@@ -1,7 +1,6 @@
 package typings.phaser.PhaserNs.GameObjectsNs
 
 import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextMetrics
-import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle
 import typings.phaser.TextStyleWordWrapCallback
 import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
@@ -25,7 +24,7 @@ class TextStyle protected () extends js.Object {
     * @param text The Text object that this TextStyle is styling.
     * @param style The style settings to set.
     */
-  def this(text: Text, style: TextSyle) = this()
+  def this(text: Text, style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle) = this()
   /**
     * The text alignment.
     */
@@ -273,9 +272,13 @@ class TextStyle protected () extends js.Object {
     * @param updateText Whether to update the text immediately. Default true.
     * @param setDefaults Use the default values is not set, or the local values. Default false.
     */
-  def setStyle(style: TextSyle): Text = js.native
-  def setStyle(style: TextSyle, updateText: Boolean): Text = js.native
-  def setStyle(style: TextSyle, updateText: Boolean, setDefaults: Boolean): Text = js.native
+  def setStyle(style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle): Text = js.native
+  def setStyle(style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle, updateText: Boolean): Text = js.native
+  def setStyle(
+    style: typings.phaser.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextStyle,
+    updateText: Boolean,
+    setDefaults: Boolean
+  ): Text = js.native
   /**
     * Set the test string to use when measuring the font.
     * @param string The test string to use when measuring the font.

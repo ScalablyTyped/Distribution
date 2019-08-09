@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PartitionError extends js.Object {
   /**
-    * Details about the partition error.
+    * The details about the partition error.
     */
   var ErrorDetail: js.UndefOr[typings.awsDashSdk.clientsGlueMod.ErrorDetail] = js.undefined
   /**

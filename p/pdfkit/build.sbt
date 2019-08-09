@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pdfkit"
-version := "v0.10.0-dt-20190722Z-1381d4"
+version := "v0.10.0-dt-20190808Z-a4dfdc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

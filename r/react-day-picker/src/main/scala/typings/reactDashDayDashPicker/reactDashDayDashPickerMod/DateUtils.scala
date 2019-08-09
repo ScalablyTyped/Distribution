@@ -1,0 +1,25 @@
+package typings.reactDashDayDashPicker.reactDashDayDashPickerMod
+
+import typings.reactDashDayDashPicker.typesCommonMod.RangeModifier
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-day-picker", "DateUtils")
+@js.native
+object DateUtils extends js.Object {
+  def addDayToRange(day: Date, range: RangeModifier): RangeModifier = js.native
+  def addMonths(d: Date, n: Double): Date = js.native
+  def clone(d: Date): Date = js.native
+  def isDate(d: Date): Boolean = js.native
+  def isDayAfter(day1: Date, day2: Date): Boolean = js.native
+  def isDayBefore(day1: Date, day2: Date): Boolean = js.native
+  def isDayBetween(day: Date, begin: Date, end: Date): Boolean = js.native
+  def isDayInRange(day: Date, range: RangeModifier): Boolean = js.native
+  def isFutureDay(day: Date): Boolean = js.native
+  def isPastDay(day: Date): Boolean = js.native
+  def isSameDay(day1: Date, day2: Date): Boolean = js.native
+  def isSameMonth(day1: Date, day2: Date): Boolean = js.native
+}
+

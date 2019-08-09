@@ -83,10 +83,10 @@ class Factory protected () extends js.Object {
   def circle(x: Double, y: Double, radius: Double, options: js.Object, maxSides: Double): Body = js.native
   /**
     * [description]
-    * @param bodyA [description]
-    * @param bodyB [description]
-    * @param length [description]
-    * @param stiffness [description] Default 1.
+    * @param bodyA The first possible `Body` that this constraint is attached to.
+    * @param bodyB The second possible `Body` that this constraint is attached to.
+    * @param length A Number that specifies the target resting length of the constraint. If not given it is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
+    * @param stiffness A Number that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`. A value of `1` means the constraint should be very stiff. A value of `0.2` means the constraint acts as a soft spring. Default 1.
     * @param options [description] Default {}.
     */
   def constraint(bodyA: Body, bodyB: Body): Constraint = js.native
@@ -244,12 +244,13 @@ class Factory protected () extends js.Object {
   ): Composite = js.native
   /**
     * [description]
-    * @param bodyA [description]
-    * @param bodyB [description]
-    * @param length [description]
-    * @param stiffness [description] Default 1.
+    * @param bodyA The first possible `Body` that this constraint is attached to.
+    * @param bodyB The second possible `Body` that this constraint is attached to.
+    * @param length A Number that specifies the target resting length of the constraint. If not given it is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
+    * @param stiffness A Number that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`. A value of `1` means the constraint should be very stiff. A value of `0.2` means the constraint acts as a soft spring. Default 1.
     * @param options [description] Default {}.
     */
+  def joint(bodyA: Body, bodyB: Body): Constraint = js.native
   def joint(bodyA: Body, bodyB: Body, length: Double): Constraint = js.native
   def joint(bodyA: Body, bodyB: Body, length: Double, stiffness: Double): Constraint = js.native
   def joint(bodyA: Body, bodyB: Body, length: Double, stiffness: Double, options: js.Object): Constraint = js.native
@@ -348,10 +349,11 @@ class Factory protected () extends js.Object {
     * [description]
     * @param bodyA The first possible `Body` that this constraint is attached to.
     * @param bodyB The second possible `Body` that this constraint is attached to.
-    * @param length A Number that specifies the target resting length of the constraint. It is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`
+    * @param length A Number that specifies the target resting length of the constraint. If not given it is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
     * @param stiffness A Number that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`. A value of `1` means the constraint should be very stiff. A value of `0.2` means the constraint acts as a soft spring. Default 1.
     * @param options [description] Default {}.
     */
+  def spring(bodyA: Body, bodyB: Body): Constraint = js.native
   def spring(bodyA: Body, bodyB: Body, length: Double): Constraint = js.native
   def spring(bodyA: Body, bodyB: Body, length: Double, stiffness: Double): Constraint = js.native
   def spring(bodyA: Body, bodyB: Body, length: Double, stiffness: Double, options: js.Object): Constraint = js.native
@@ -414,11 +416,12 @@ class Factory protected () extends js.Object {
   def velocity(body: Body, velocity: Vector2Like): Body = js.native
   /**
     * [description]
-    * @param bodyB [description]
-    * @param length [description]
-    * @param stiffness [description] Default 1.
+    * @param bodyB The second possible `Body` that this constraint is attached to.
+    * @param length A Number that specifies the target resting length of the constraint. If not given it is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
+    * @param stiffness A Number that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`. A value of `1` means the constraint should be very stiff. A value of `0.2` means the constraint acts as a soft spring. Default 1.
     * @param options [description] Default {}.
     */
+  def worldConstraint(bodyB: Body): Constraint = js.native
   def worldConstraint(bodyB: Body, length: Double): Constraint = js.native
   def worldConstraint(bodyB: Body, length: Double, stiffness: Double): Constraint = js.native
   def worldConstraint(bodyB: Body, length: Double, stiffness: Double, options: js.Object): Constraint = js.native

@@ -20,11 +20,13 @@ import typings.phaser.PhaserNs.Scene
 import typings.phaser.PhaserNs.TexturesNs.Frame
 import typings.phaser.PhaserNs.TexturesNs.Texture
 import typings.phaser.PhaserNs.TexturesNs.TextureManager
+import typings.phaser.PhaserNs.TypesNs.RendererNs.SnapshotNs.SnapshotCallback
 import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderingContext
+import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -151,6 +153,10 @@ class RenderTexture protected ()
     * A reference to the WebGL Rendering Context.
     */
   var gl: WebGLRenderingContext = js.native
+  /**
+    * A reference to the WebGLTexture that is being rendered to in a WebGL Context.
+    */
+  val glTexture: WebGLTexture = js.native
   /**
     * The alpha of the Render Texture when rendered.
     */
@@ -480,6 +486,76 @@ class RenderTexture protected ()
     */
   /* CompleteClass */
   override def setVisible(value: Boolean): this.type = js.native
+  /**
+    * Takes a snapshot of the whole of this Render Texture.
+    * 
+    * The snapshot is taken immediately.
+    * 
+    * To capture just a portion of the Render Texture see the `snapshotArea` method. To capture a specific pixel, see `snapshotPixel`.
+    * 
+    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer into an ArrayBufferView.
+    * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
+    * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
+    * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * @param callback The Function to invoke after the snapshot image is created.
+    * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+    * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+    */
+  def snapshot(callback: SnapshotCallback): this.type = js.native
+  def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
+  def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+  /**
+    * Takes a snapshot of the given area of this Render Texture.
+    * 
+    * The snapshot is taken immediately.
+    * 
+    * To capture the whole Render Texture see the `snapshot` method. To capture a specific pixel, see `snapshotPixel`.
+    * 
+    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer into an ArrayBufferView.
+    * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
+    * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
+    * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * @param x The x coordinate to grab from.
+    * @param y The y coordinate to grab from.
+    * @param width The width of the area to grab.
+    * @param height The height of the area to grab.
+    * @param callback The Function to invoke after the snapshot image is created.
+    * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+    * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+    */
+  def snapshotArea(x: integer, y: integer, width: integer, height: integer, callback: SnapshotCallback): this.type = js.native
+  def snapshotArea(
+    x: integer,
+    y: integer,
+    width: integer,
+    height: integer,
+    callback: SnapshotCallback,
+    `type`: String
+  ): this.type = js.native
+  def snapshotArea(
+    x: integer,
+    y: integer,
+    width: integer,
+    height: integer,
+    callback: SnapshotCallback,
+    `type`: String,
+    encoderOptions: Double
+  ): this.type = js.native
+  /**
+    * Takes a snapshot of the given pixel from this Render Texture.
+    * 
+    * The snapshot is taken immediately.
+    * 
+    * To capture the whole Render Texture see the `snapshot` method. To capture a specific portion, see `snapshotArea`.
+    * 
+    * Unlike the other two snapshot methods, this one will send your callback a `Color` object containing the color data for
+    * the requested pixel. It doesn't need to create an internal Canvas or Image object, so is a lot faster to execute,
+    * using less memory, than the other snapshot methods.
+    * @param x The x coordinate of the pixel to get.
+    * @param y The y coordinate of the pixel to get.
+    * @param callback The Function to invoke after the snapshot pixel data is extracted.
+    */
+  def snapshotPixel(x: integer, y: integer, callback: SnapshotCallback): this.type = js.native
   /**
     * Toggles the horizontal flipped state of this Game Object.
     * 

@@ -24,7 +24,7 @@ class Ellipse protected () extends Curve {
     * @param yRadius The vertical radius of ellipse. Default 0.
     * @param startAngle The start angle of the ellipse, in degrees. Default 0.
     * @param endAngle The end angle of the ellipse, in degrees. Default 360.
-    * @param clockwise Sets if the the ellipse rotation is clockwise (true) or anti-clockwise (false) Default false.
+    * @param clockwise Whether the ellipse angles are given as clockwise (`true`) or counter-clockwise (`false`). Default false.
     * @param rotation The rotation of the ellipse, in degrees. Default 0.
     */
   def this(

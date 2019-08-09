@@ -110,6 +110,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var kinesisvideoarchivedmedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod.ClientConfiguration] = js.native
   var kinesisvideomedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideomediaMod.ClientConfiguration] = js.native
   var kms: js.UndefOr[typings.awsDashSdk.clientsKmsMod.ClientConfiguration] = js.native
+  var lakeformation: js.UndefOr[typings.awsDashSdk.clientsLakeformationMod.ClientConfiguration] = js.native
   var lambda: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.ClientConfiguration] = js.native
   var lexmodelbuildingservice: js.UndefOr[typings.awsDashSdk.clientsLexmodelbuildingserviceMod.ClientConfiguration] = js.native
   var lexruntime: js.UndefOr[typings.awsDashSdk.clientsLexruntimeMod.ClientConfiguration] = js.native

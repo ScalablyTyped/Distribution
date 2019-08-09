@@ -135,6 +135,16 @@ class Pointer protected () extends js.Object {
     */
   var isDown: Boolean = js.native
   /**
+    * Is this pointer Pointer Locked?
+    * 
+    * Only a mouse pointer can be locked and it only becomes locked when requested via
+    * the browsers Pointer Lock API.
+    * 
+    * You can request this by calling the `this.input.mouse.requestPointerLock()` method from
+    * a `pointerdown` or `pointerup` event handler.
+    */
+  val locked: Boolean = js.native
+  /**
     * A reference to the Input Manager.
     */
   var manager: InputManager = js.native
@@ -197,8 +207,10 @@ class Pointer protected () extends js.Object {
   var smoothFactor: Double = js.native
   /**
     * Time when this Pointer was most recently updated by a DOM Event.
+    * This comes directly from the `event.timeStamp` property.
+    * If no event has yet taken place, it will return zero.
     */
-  var time: Double = js.native
+  val time: Double = js.native
   /**
     * The DOM element the Pointer was released on, taken from the DOM event.
     * In a default set-up this will be the Canvas that Phaser is rendering to, or the Window element.
@@ -237,10 +249,16 @@ class Pointer protected () extends js.Object {
   var wasTouch: Boolean = js.native
   /**
     * The x position of this Pointer, translated into the coordinate space of the most recent Camera it interacted with.
+    * 
+    * If you wish to use this value _outside_ of an input event handler then you should update it first by calling
+    * the `Pointer.updateWorldPoint` method.
     */
   var worldX: Double = js.native
   /**
     * The y position of this Pointer, translated into the coordinate space of the most recent Camera it interacted with.
+    * 
+    * If you wish to use this value _outside_ of an input event handler then you should update it first by calling
+    * the `Pointer.updateWorldPoint` method.
     */
   var worldY: Double = js.native
   /**
@@ -387,5 +405,14 @@ class Pointer protected () extends js.Object {
     * Checks to see if the right button was just released on this Pointer.
     */
   def rightButtonReleased(): Boolean = js.native
+  /**
+    * Takes a Camera and updates this Pointer's `worldX` and `worldY` values so they are
+    * the result of a translation through the given Camera.
+    * 
+    * Note that the values will be automatically replaced the moment the Pointer is
+    * updated by an input event, such as a mouse move, so should be used immediately.
+    * @param camera The Camera which is being tested against.
+    */
+  def updateWorldPoint(camera: Camera): this.type = js.native
 }
 

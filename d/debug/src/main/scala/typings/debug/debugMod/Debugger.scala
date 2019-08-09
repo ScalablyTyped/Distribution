@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Debugger extends js.Object {
+  var color: String = js.native
   var enabled: Boolean = js.native
   var namespace: String = js.native
   def apply(formatter: js.Any, args: js.Any*): Unit = js.native

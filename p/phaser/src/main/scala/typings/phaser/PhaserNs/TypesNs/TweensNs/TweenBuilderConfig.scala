@@ -55,6 +55,18 @@ trait TweenBuilderConfig extends js.Object {
     */
   var offset: js.UndefOr[Double | js.Function | js.Object | js.Array[_]] = js.undefined
   /**
+    * A function to call when the tween becomes active within the Tween Manager.
+    */
+  var onActive: js.UndefOr[TweenOnActiveCallback] = js.undefined
+  /**
+    * Additional parameters to pass to `onActive`.
+    */
+  var onActiveParams: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * Scope (this) for `onActive`.
+    */
+  var onActiveScope: js.UndefOr[js.Any] = js.undefined
+  /**
     * A function to call when the tween completes.
     */
   var onComplete: js.UndefOr[TweenOnCompleteCallback] = js.undefined
@@ -91,7 +103,7 @@ trait TweenBuilderConfig extends js.Object {
     */
   var onRepeatScope: js.UndefOr[js.Any] = js.undefined
   /**
-    * A function to call when the tween starts.
+    * A function to call when the tween starts playback, after any delays have expired.
     */
   var onStart: js.UndefOr[TweenOnStartCallback] = js.undefined
   /**
@@ -172,6 +184,9 @@ object TweenBuilderConfig {
     loop: Double | js.Function | js.Object | js.Array[_] = null,
     loopDelay: Double | js.Function | js.Object | js.Array[_] = null,
     offset: Double | js.Function | js.Object | js.Array[_] = null,
+    onActive: TweenOnActiveCallback = null,
+    onActiveParams: js.Array[_] = null,
+    onActiveScope: js.Any = null,
     onComplete: TweenOnCompleteCallback = null,
     onCompleteParams: js.Array[_] = null,
     onCompleteScope: js.Any = null,
@@ -210,6 +225,9 @@ object TweenBuilderConfig {
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopDelay != null) __obj.updateDynamic("loopDelay")(loopDelay.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (onActive != null) __obj.updateDynamic("onActive")(onActive)
+    if (onActiveParams != null) __obj.updateDynamic("onActiveParams")(onActiveParams)
+    if (onActiveScope != null) __obj.updateDynamic("onActiveScope")(onActiveScope)
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
     if (onCompleteParams != null) __obj.updateDynamic("onCompleteParams")(onCompleteParams)
     if (onCompleteScope != null) __obj.updateDynamic("onCompleteScope")(onCompleteScope)

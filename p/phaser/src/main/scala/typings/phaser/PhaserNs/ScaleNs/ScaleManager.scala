@@ -116,6 +116,10 @@ class ScaleManager protected () extends EventEmitter {
     */
   def this(game: Game) = this()
   /**
+    * Internal flag set when the game zoom factor is modified.
+    */
+  val _resetZoom: Boolean = js.native
+  /**
     * Automatically center the canvas within the parent? The different centering modes are:
     * 
     * 1. No centering.

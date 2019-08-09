@@ -109,6 +109,7 @@ import typings.atPulumiAws.TypeofKinesisAnalyticsV2
 import typings.atPulumiAws.TypeofKinesisVideo
 import typings.atPulumiAws.TypeofKinesisVideoArchivedMedia
 import typings.atPulumiAws.TypeofKinesisVideoMedia
+import typings.atPulumiAws.TypeofLakeFormation
 import typings.atPulumiAws.TypeofLambda
 import typings.atPulumiAws.TypeofLexModelBuildingService
 import typings.atPulumiAws.TypeofLexRuntime
@@ -460,6 +461,8 @@ object atPulumiAwsMod extends js.Object {
     var KinesisVideoMedia: Instantiable0[typings.awsDashSdk.awsDashSdkMod.KinesisVideoMedia] = js.native
     val KinesisVideoMediaNs: TypeofKinesisVideoMedia = js.native
     val KinesisVideoNs: TypeofKinesisVideo = js.native
+    var LakeFormation: Instantiable0[typings.awsDashSdk.awsDashSdkMod.LakeFormation] = js.native
+    val LakeFormationNs: TypeofLakeFormation = js.native
     var Lambda: Instantiable0[typings.awsDashSdk.awsDashSdkMod.Lambda] = js.native
     val LambdaNs: TypeofLambda = js.native
     var LexModelBuildingService: Instantiable0[typings.awsDashSdk.awsDashSdkMod.LexModelBuildingService] = js.native

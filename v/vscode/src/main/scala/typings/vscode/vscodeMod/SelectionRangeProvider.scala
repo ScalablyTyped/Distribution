@@ -8,7 +8,7 @@ trait SelectionRangeProvider extends js.Object {
   /**
   		 * Provide selection ranges for the given positions.
   		 *
-  		 * Selection ranges should be computed individually and independend for each postion. The editor will merge
+  		 * Selection ranges should be computed individually and independent for each position. The editor will merge
   		 * and deduplicate ranges but providers must return hierarchies of selection ranges so that a range
   		 * is [contained](#Range.contains) by its parent.
   		 *

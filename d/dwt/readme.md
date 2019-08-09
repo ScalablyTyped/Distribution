@@ -1,7 +1,7 @@
 
 # Scala.js typings for dwt
 
-Typings are for version 15.0
+Typings are for version 15.1
 
 ## Library description:
 Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanning SDK software specifically designed for web applications running on Windows/macOS/Linux. With just a few lines of code, you can develop robust applications to scan documents from TWAIN/ICA/SANE-compatibl

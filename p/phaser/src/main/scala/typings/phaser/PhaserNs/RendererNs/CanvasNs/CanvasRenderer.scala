@@ -102,16 +102,6 @@ class CanvasRenderer protected () extends js.Object {
     */
   def init(): Unit = js.native
   /**
-    * A NOOP method for handling lost context. Intentionally empty.
-    * @param callback Ignored parameter.
-    */
-  def onContextLost(callback: js.Function): Unit = js.native
-  /**
-    * A NOOP method for handling restored context. Intentionally empty.
-    * @param callback Ignored parameter.
-    */
-  def onContextRestored(callback: js.Function): Unit = js.native
-  /**
     * The event handler that manages the `resize` event dispatched by the Scale Manager.
     * @param gameSize The default Game Size object. This is the un-modified game dimensions.
     * @param baseSize The base Size object. The game dimensions multiplied by the resolution. The canvas width / height values match this.
@@ -218,6 +208,34 @@ class CanvasRenderer protected () extends js.Object {
     callback: SnapshotCallback,
     `type`: String,
     encoderOptions: Double
+  ): this.type = js.native
+  /**
+    * Takes a snapshot of the given area of the given canvas.
+    * 
+    * Unlike the other snapshot methods, this one is processed immediately and doesn't wait for the next render.
+    * 
+    * Snapshots work by creating an Image object from the canvas data, this is a blocking process, which gets
+    * more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * @param canvas The canvas to grab from.
+    * @param callback The Function to invoke after the snapshot image is created.
+    * @param getPixel Grab a single pixel as a Color object, or an area as an Image object? Default false.
+    * @param x The x coordinate to grab from. Default 0.
+    * @param y The y coordinate to grab from. Default 0.
+    * @param width The width of the area to grab. Default canvas.width.
+    * @param height The height of the area to grab. Default canvas.height.
+    * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+    * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+    */
+  def snapshotCanvas(
+    canvas: HTMLCanvasElement,
+    callback: SnapshotCallback,
+    getPixel: js.UndefOr[Boolean],
+    x: js.UndefOr[integer],
+    y: js.UndefOr[integer],
+    width: js.UndefOr[integer],
+    height: js.UndefOr[integer],
+    `type`: js.UndefOr[String],
+    encoderOptions: js.UndefOr[Double]
   ): this.type = js.native
   /**
     * Schedules a snapshot of the given pixel from the game viewport to be taken after the current frame is rendered.

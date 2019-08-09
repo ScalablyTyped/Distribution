@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait Database extends js.Object {
   /**
+    * Creates a set of default permissions on the table for principals. 
+    */
+  var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
+  /**
     * The time at which the metadata database was created in the catalog.
     */
   var CreateTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Description of the database.
+    * A description of the database.
     */
   var Description: js.UndefOr[DescriptionString] = js.undefined
   /**
@@ -18,7 +22,7 @@ trait Database extends js.Object {
     */
   var LocationUri: js.UndefOr[URI] = js.undefined
   /**
-    * Name of the database. For Hive compatibility, this is folded to lowercase when it is stored.
+    * The name of the database. For Hive compatibility, this is folded to lowercase when it is stored.
     */
   var Name: NameString
   /**
@@ -31,12 +35,14 @@ object Database {
   @scala.inline
   def apply(
     Name: NameString,
+    CreateTableDefaultPermissions: PrincipalPermissionsList = null,
     CreateTime: Timestamp = null,
     Description: DescriptionString = null,
     LocationUri: URI = null,
     Parameters: ParametersMap = null
   ): Database = {
     val __obj = js.Dynamic.literal(Name = Name)
+    if (CreateTableDefaultPermissions != null) __obj.updateDynamic("CreateTableDefaultPermissions")(CreateTableDefaultPermissions)
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri)

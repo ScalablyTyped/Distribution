@@ -5,6 +5,7 @@ import typings.stripeDashV3.stripeNs.HandleCardPaymentOptions
 import typings.stripeDashV3.stripeNs.HandleCardSetupOptions
 import typings.stripeDashV3.stripeNs.PaymentIntentResponse
 import typings.stripeDashV3.stripeNs.PaymentMethodResponse
+import typings.stripeDashV3.stripeNs.SetupIntentResponse
 import typings.stripeDashV3.stripeNs.paymentMethodNs.paymentMethodType
 import typings.stripeDashV3.stripeNs.paymentRequestNs.StripePaymentRequest
 import typings.stripeDashV3.stripeNs.paymentRequestNs.StripePaymentRequestOptions
@@ -23,7 +24,7 @@ trait StripeProps extends js.Object {
   def createToken(options: TokenOptions): js.Promise[PatchedTokenResponse] = js.native
   def handleCardPayment(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: String, options: HandleCardPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
-  def handleCardSetup(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
-  def handleCardSetup(clientSecret: String, data: HandleCardSetupOptions): js.Promise[PaymentIntentResponse] = js.native
+  def handleCardSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
+  def handleCardSetup(clientSecret: String, data: HandleCardSetupOptions): js.Promise[SetupIntentResponse] = js.native
 }
 

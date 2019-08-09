@@ -10,7 +10,7 @@ trait Partition extends js.Object {
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The name of the catalog database where the table in question is located.
+    * The name of the catalog database in which to create the partition.
     */
   var DatabaseName: js.UndefOr[NameString] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Partition extends js.Object {
     */
   var StorageDescriptor: js.UndefOr[typings.awsDashSdk.clientsGlueMod.StorageDescriptor] = js.undefined
   /**
-    * The name of the table in question.
+    * The name of the database table in which to create the partition.
     */
   var TableName: js.UndefOr[NameString] = js.undefined
   /**

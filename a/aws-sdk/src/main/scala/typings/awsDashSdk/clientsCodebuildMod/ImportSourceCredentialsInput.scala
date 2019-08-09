@@ -14,6 +14,10 @@ trait ImportSourceCredentialsInput extends js.Object {
     */
   var serverType: ServerType
   /**
+    *  Set to false to prevent overwriting the repository source credentials. Set to true to overwrite the repository source credentials. The default value is true. 
+    */
+  var shouldOverwrite: js.UndefOr[WrapperBoolean] = js.undefined
+  /**
     *  For GitHub or GitHub Enterprise, this is the personal access token. For Bitbucket, this is the app password. 
     */
   var token: SensitiveNonEmptyString
@@ -29,9 +33,11 @@ object ImportSourceCredentialsInput {
     authType: AuthType,
     serverType: ServerType,
     token: SensitiveNonEmptyString,
+    shouldOverwrite: js.UndefOr[WrapperBoolean] = js.undefined,
     username: NonEmptyString = null
   ): ImportSourceCredentialsInput = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], serverType = serverType.asInstanceOf[js.Any], token = token)
+    if (!js.isUndefined(shouldOverwrite)) __obj.updateDynamic("shouldOverwrite")(shouldOverwrite)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[ImportSourceCredentialsInput]
   }

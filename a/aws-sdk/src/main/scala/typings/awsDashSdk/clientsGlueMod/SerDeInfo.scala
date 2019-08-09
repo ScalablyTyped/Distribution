@@ -14,7 +14,7 @@ trait SerDeInfo extends js.Object {
     */
   var Parameters: js.UndefOr[ParametersMap] = js.undefined
   /**
-    * Usually the class that implements the SerDe. An example is: org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe.
+    * Usually the class that implements the SerDe. An example is org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe.
     */
   var SerializationLibrary: js.UndefOr[NameString] = js.undefined
 }

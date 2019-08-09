@@ -1,5 +1,6 @@
 package typings.phaser.PhaserNs.GeomNs
 
+import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,11 @@ import scala.scalajs.js.annotation._
 class Point () extends js.Object {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
+  /**
+    * The geometry constant type of this object: `GEOM_CONST.POINT`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
   /**
     * The x coordinate of this Point.
     */

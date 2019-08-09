@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait CreateSceneFromObjectConfig extends js.Object {
   /**
-    * See {@link Phaser.Scene#create}.
+    * The scene's create callback.
     */
-  var create: js.UndefOr[js.Function] = js.undefined
+  var create: js.UndefOr[SceneCreateCallback] = js.undefined
   /**
     * Any additional properties, which will be copied to the Scene after it's created (except `data` or `sys`).
     */
@@ -18,15 +18,15 @@ trait CreateSceneFromObjectConfig extends js.Object {
     */
   var `extend.data`: js.UndefOr[js.Any] = js.undefined
   /**
-    * See {@link Phaser.Scene#init}.
+    * The scene's init callback.
     */
-  var init: js.UndefOr[js.Function] = js.undefined
+  var init: js.UndefOr[SceneInitCallback] = js.undefined
   /**
-    * See See {@link Phaser.Scene#preload}.
+    * The scene's preload callback.
     */
-  var preload: js.UndefOr[js.Function] = js.undefined
+  var preload: js.UndefOr[ScenePreloadCallback] = js.undefined
   /**
-    * See {@link Phaser.Scene#update}.
+    * The scene's update callback. See {@link Phaser.Scene#update}.
     */
   var update: js.UndefOr[js.Function] = js.undefined
 }
@@ -34,11 +34,11 @@ trait CreateSceneFromObjectConfig extends js.Object {
 object CreateSceneFromObjectConfig {
   @scala.inline
   def apply(
-    create: js.Function = null,
+    create: SceneCreateCallback = null,
     extend: js.Any = null,
     `extend.data`: js.Any = null,
-    init: js.Function = null,
-    preload: js.Function = null,
+    init: SceneInitCallback = null,
+    preload: ScenePreloadCallback = null,
     update: js.Function = null
   ): CreateSceneFromObjectConfig = {
     val __obj = js.Dynamic.literal()

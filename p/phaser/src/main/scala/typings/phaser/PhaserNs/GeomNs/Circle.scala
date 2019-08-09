@@ -49,6 +49,11 @@ class Circle () extends js.Object {
     */
   var top: Double = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.CIRCLE`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * The x position of the center of the circle.
     */
   var x: Double = js.native

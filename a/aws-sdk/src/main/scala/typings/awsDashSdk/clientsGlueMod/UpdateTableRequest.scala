@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateTableRequest extends js.Object {
   /**
-    * The ID of the Data Catalog where the table resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
@@ -14,7 +14,7 @@ trait UpdateTableRequest extends js.Object {
     */
   var DatabaseName: NameString
   /**
-    * By default, UpdateTable always creates an archived version of the table before updating it. If skipArchive is set to true, however, UpdateTable does not create the archived version.
+    * By default, UpdateTable always creates an archived version of the table before updating it. However, if skipArchive is set to true, UpdateTable does not create the archived version.
     */
   var SkipArchive: js.UndefOr[BooleanNullable] = js.undefined
   /**

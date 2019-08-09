@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetDatabaseResponse extends js.Object {
   /**
-    * The definition of the specified database in the catalog.
+    * The definition of the specified database in the Data Catalog.
     */
   var Database: js.UndefOr[typings.awsDashSdk.clientsGlueMod.Database] = js.undefined
 }

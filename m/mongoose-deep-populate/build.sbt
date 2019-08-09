@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongoose-deep-populate"
-version := "2.0.3-dt-20190719Z-026eab"
+version := "2.0.3-dt-20190808Z-a23da5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

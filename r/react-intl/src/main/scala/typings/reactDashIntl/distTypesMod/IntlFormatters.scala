@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IntlFormatters extends js.Object {
+  def formatDate(value: String): String = js.native
+  def formatDate(value: String, opts: FormatDateOptions): String = js.native
   @JSName("formatDate")
   def formatDate_0(
     value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Date>[0] */ js.Any
@@ -50,21 +52,21 @@ trait IntlFormatters extends js.Object {
     value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(n : number): string>[0] */ js.Any,
     opts: FormatPluralOptions
   ): ReturnType[js.Function1[/* n */ Double, String]] = js.native
+  def formatRelativeTime(
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[1] */ js.Any
+  ): String = js.native
+  def formatRelativeTime(
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[1] */ js.Any,
+    opts: FormatRelativeTimeOptions
+  ): String = js.native
   @JSName("formatRelativeTime")
   def formatRelativeTime_0(
     value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any
   ): String = js.native
-  @JSName("formatRelativeTime")
-  def formatRelativeTime_0(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any
-  ): String = js.native
-  @JSName("formatRelativeTime")
-  def formatRelativeTime_0(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
-    opts: FormatRelativeTimeOptions
-  ): String = js.native
+  def formatTime(value: String): String = js.native
+  def formatTime(value: String, opts: FormatDateOptions): String = js.native
   @JSName("formatTime")
   def formatTime_0(
     value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Date>[0] */ js.Any

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait CreateDatabaseRequest extends js.Object {
   /**
-    * The ID of the Data Catalog in which to create the database. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which to create the database. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
-    * A DatabaseInput object defining the metadata database to create in the catalog.
+    * The metadata for the database.
     */
   var DatabaseInput: typings.awsDashSdk.clientsGlueMod.DatabaseInput
 }

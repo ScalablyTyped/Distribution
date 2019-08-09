@@ -1,6 +1,5 @@
 package typings.chai.ChaiNs
 
-import typings.chai.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +12,9 @@ trait TypeComparison extends js.Object {
   var instanceof_Original: InstanceOf = js.native
   def apply(`type`: String): Assertion = js.native
   def apply(`type`: String, message: String): Assertion = js.native
-  def instanceOf(constructor: Object): Assertion = js.native
-  def instanceOf(constructor: Object, message: String): Assertion = js.native
-  def instanceof(constructor: Object): Assertion = js.native
-  def instanceof(constructor: Object, message: String): Assertion = js.native
+  def instanceOf(constructor: js.Any): Assertion = js.native
+  def instanceOf(constructor: js.Any, message: String): Assertion = js.native
+  def instanceof(constructor: js.Any): Assertion = js.native
+  def instanceof(constructor: js.Any, message: String): Assertion = js.native
 }
 

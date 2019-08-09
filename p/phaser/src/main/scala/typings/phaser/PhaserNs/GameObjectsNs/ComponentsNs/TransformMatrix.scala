@@ -25,8 +25,8 @@ class TransformMatrix protected () extends js.Object {
   /**
     * 
     * @param a The Scale X value. Default 1.
-    * @param b The Shear Y value. Default 0.
-    * @param c The Shear X value. Default 0.
+    * @param b The Skew Y value. Default 0.
+    * @param c The Skew X value. Default 0.
     * @param d The Scale Y value. Default 1.
     * @param tx The Translate X value. Default 0.
     * @param ty The Translate Y value. Default 0.
@@ -44,11 +44,11 @@ class TransformMatrix protected () extends js.Object {
     */
   var a: Double = js.native
   /**
-    * The Shear Y value.
+    * The Skew Y value.
     */
   var b: Double = js.native
   /**
-    * The Shear X value.
+    * The Skew X value.
     */
   var c: Double = js.native
   /**
@@ -72,15 +72,20 @@ class TransformMatrix protected () extends js.Object {
     */
   var matrix: Float32Array = js.native
   /**
-    * The rotation of the Matrix.
+    * The rotation of the Matrix. Value is in radians.
     */
   val rotation: Double = js.native
   /**
-    * The horizontal scale of the Matrix.
+    * The rotation of the Matrix, normalized to be within the Phaser right-handed
+    * clockwise rotation space. Value is in radians.
+    */
+  val rotationNormalized: Double = js.native
+  /**
+    * The decomposed horizontal scale of the Matrix. This value is always positive.
     */
   val scaleX: Double = js.native
   /**
-    * The vertical scale of the Matrix.
+    * The decomposed vertical scale of the Matrix. This value is always positive.
     */
   val scaleY: Double = js.native
   /**

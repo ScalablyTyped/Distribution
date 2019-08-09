@@ -1,8 +1,10 @@
 package typings.phaser.phaserMod
 
+import typings.phaser.PhaserNs.GameObjectsNs.RenderTexture
 import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +43,7 @@ object TexturesNs extends js.Object {
       * @param height The height of the canvas.
       */
     def this(
-      manager: typings.phaser.PhaserNs.TexturesNs.CanvasTexture,
+      manager: typings.phaser.PhaserNs.TexturesNs.TextureManager,
       key: String,
       source: HTMLCanvasElement,
       width: integer,
@@ -185,6 +187,7 @@ object TexturesNs extends js.Object {
   @js.native
   class TextureSource protected ()
     extends typings.phaser.PhaserNs.TexturesNs.TextureSource {
+    def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: RenderTexture) = this()
     def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: HTMLCanvasElement) = this()
     /**
       * 
@@ -194,8 +197,17 @@ object TexturesNs extends js.Object {
       * @param height Optional height of the source image. If not given it's derived from the source itself.
       */
     def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: HTMLImageElement) = this()
+    def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: WebGLTexture) = this()
+    def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: RenderTexture, width: integer) = this()
     def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: HTMLCanvasElement, width: integer) = this()
     def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: HTMLImageElement, width: integer) = this()
+    def this(texture: typings.phaser.PhaserNs.TexturesNs.Texture, source: WebGLTexture, width: integer) = this()
+    def this(
+      texture: typings.phaser.PhaserNs.TexturesNs.Texture,
+      source: RenderTexture,
+      width: integer,
+      height: integer
+    ) = this()
     def this(
       texture: typings.phaser.PhaserNs.TexturesNs.Texture,
       source: HTMLCanvasElement,
@@ -205,6 +217,12 @@ object TexturesNs extends js.Object {
     def this(
       texture: typings.phaser.PhaserNs.TexturesNs.Texture,
       source: HTMLImageElement,
+      width: integer,
+      height: integer
+    ) = this()
+    def this(
+      texture: typings.phaser.PhaserNs.TexturesNs.Texture,
+      source: WebGLTexture,
       width: integer,
       height: integer
     ) = this()

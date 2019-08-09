@@ -181,7 +181,7 @@ class Frame protected () extends js.Object {
     */
   var y: integer = js.native
   /**
-    * Destroys this Frames references.
+    * Destroys this Frame by nulling its reference to the parent Texture and and data objects.
     */
   def destroy(): Unit = js.native
   /**

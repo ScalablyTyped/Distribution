@@ -169,6 +169,14 @@ class Texture protected () extends js.Object {
     * @param name The key of the Frame to check for.
     */
   def has(name: String): Boolean = js.native
+  /**
+    * Removes the given Frame from this Texture. The Frame is destroyed immediately.
+    * 
+    * Any Game Objects using this Frame should stop using it _before_ you remove it,
+    * as it does not happen automatically.
+    * @param name The key of the Frame to remove.
+    */
+  def remove(name: String): Boolean = js.native
   def setDataSource(data: js.Array[HTMLCanvasElement | HTMLImageElement]): Unit = js.native
   def setDataSource(data: HTMLCanvasElement): Unit = js.native
   /**

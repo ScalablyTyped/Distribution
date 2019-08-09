@@ -1,9 +1,18 @@
 package typings.pdfkit.PDFKitNs.MixinsNs
 
+import typings.pdfkit.pdfkitStrings.`svg-central`
+import typings.pdfkit.pdfkitStrings.`svg-middle`
+import typings.pdfkit.pdfkitStrings.alphabetic
+import typings.pdfkit.pdfkitStrings.bottom
 import typings.pdfkit.pdfkitStrings.center
+import typings.pdfkit.pdfkitStrings.hanging
+import typings.pdfkit.pdfkitStrings.ideographic
 import typings.pdfkit.pdfkitStrings.justify
 import typings.pdfkit.pdfkitStrings.left
+import typings.pdfkit.pdfkitStrings.mathematical
+import typings.pdfkit.pdfkitStrings.middle
 import typings.pdfkit.pdfkitStrings.right
+import typings.pdfkit.pdfkitStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +21,10 @@ trait TextOptions extends js.Object {
   /** the alignment of the text (center, justify, left, right) */
   //TODO check this
   var align: js.UndefOr[center | justify | left | right | String] = js.undefined
+  /** the vertical alignment of the text with respect to its insertion point */
+  var baseline: js.UndefOr[
+    Double | `svg-middle` | middle | `svg-central` | bottom | ideographic | alphabetic | mathematical | hanging | top
+  ] = js.undefined
   /** the amount of space between each character in the text */
   var characterSpacing: js.UndefOr[Double] = js.undefined
   /** the amount of space between each column (1/4 inch by default) */
@@ -52,6 +65,7 @@ object TextOptions {
   @scala.inline
   def apply(
     align: center | justify | left | right | String = null,
+    baseline: Double | `svg-middle` | middle | `svg-central` | bottom | ideographic | alphabetic | mathematical | hanging | top = null,
     characterSpacing: Int | Double = null,
     columnGap: Int | Double = null,
     columns: Int | Double = null,
@@ -72,6 +86,7 @@ object TextOptions {
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (characterSpacing != null) __obj.updateDynamic("characterSpacing")(characterSpacing.asInstanceOf[js.Any])
     if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])

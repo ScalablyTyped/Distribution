@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ngx-infinite-scroll"
-version := "7.2.0-199d07"
+version := "7.2.0-482170"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__core" % "8.2.0-ac4c63",
+  "org.scalablytyped" %%% "angular__core" % "8.2.1-4bd9de",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

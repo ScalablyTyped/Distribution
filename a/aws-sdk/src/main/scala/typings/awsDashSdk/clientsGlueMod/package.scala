@@ -2,6 +2,7 @@ package typings.awsDashSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsDashSdk.awsDashSdkStrings.EQUALS
+import typings.awsDashSdk.awsDashSdkStrings.FIND_MATCHES
 import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import typings.std.Date
 import scala.scalajs.js
@@ -48,10 +49,20 @@ package object clientsGlueMod {
   type CodeGenNodeArgs = js.Array[CodeGenNodeArg]
   type CodeGenNodeType = String
   type ColumnList = js.Array[Column]
+  type ColumnNameString = String
   type ColumnTypeString = String
   type ColumnValueStringList = js.Array[ColumnValuesString]
   type ColumnValuesString = String
   type CommentString = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.EQUALS
+    - typings.awsDashSdk.awsDashSdkStrings.GREATER_THAN
+    - typings.awsDashSdk.awsDashSdkStrings.LESS_THAN
+    - typings.awsDashSdk.awsDashSdkStrings.GREATER_THAN_EQUALS
+    - typings.awsDashSdk.awsDashSdkStrings.LESS_THAN_EQUALS
+    - java.lang.String
+  */
+  type Comparator = _Comparator | String
   type ConditionList = js.Array[Condition]
   type ConnectionList = js.Array[Connection]
   type ConnectionName = String
@@ -114,6 +125,7 @@ package object clientsGlueMod {
   type CustomPatterns = String
   type DagEdges = js.Array[CodeGenEdge]
   type DagNodes = js.Array[CodeGenNode]
+  type DataLakePrincipalString = String
   type DatabaseList = js.Array[Database]
   type DatabaseName = String
   /* Rewritten from type alias, can be one of: 
@@ -144,10 +156,12 @@ package object clientsGlueMod {
   type FieldType = String
   type FilterString = String
   type FormatString = String
+  type GenericBoundedDouble = Double
   type GenericMap = StringDictionary[GenericString]
   type GenericString = String
   type GetTableVersionsList = js.Array[TableVersion]
   type GlueResourceArn = String
+  type GlueTables = js.Array[GlueTable]
   type GlueVersionString = String
   type GrokPattern = String
   type HashString = String
@@ -182,6 +196,7 @@ package object clientsGlueMod {
   type JsonValue = String
   type KeyString = String
   type KmsKeyArn = String
+  type LabelCount = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PYTHON
     - typings.awsDashSdk.awsDashSdkStrings.SCALA
@@ -232,6 +247,7 @@ package object clientsGlueMod {
   type OrchestrationStringList = js.Array[GenericString]
   type OrderList = js.Array[Order]
   type PageSize = Double
+  type PaginationToken = String
   type ParametersMap = StringDictionary[ParametersMapValue]
   type ParametersMapValue = String
   type PartitionErrors = js.Array[PartitionError]
@@ -239,9 +255,24 @@ package object clientsGlueMod {
   type PartitionList = js.Array[Partition]
   type Path = String
   type PathList = js.Array[Path]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALL
+    - typings.awsDashSdk.awsDashSdkStrings.SELECT
+    - typings.awsDashSdk.awsDashSdkStrings.ALTER
+    - typings.awsDashSdk.awsDashSdkStrings.DROP
+    - typings.awsDashSdk.awsDashSdkStrings.DELETE
+    - typings.awsDashSdk.awsDashSdkStrings.INSERT
+    - typings.awsDashSdk.awsDashSdkStrings.CREATE_DATABASE
+    - typings.awsDashSdk.awsDashSdkStrings.CREATE_TABLE
+    - typings.awsDashSdk.awsDashSdkStrings.DATA_LOCATION_ACCESS
+    - java.lang.String
+  */
+  type Permission = _Permission | String
+  type PermissionList = js.Array[Permission]
   type PolicyJsonString = String
   type PredecessorList = js.Array[Predecessor]
   type PredicateString = String
+  type PrincipalPermissionsList = js.Array[PrincipalPermissions]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.USER
     - typings.awsDashSdk.awsDashSdkStrings.ROLE
@@ -252,6 +283,8 @@ package object clientsGlueMod {
   type PublicKeysList = js.Array[GenericString]
   type PythonScript = String
   type PythonVersionString = String
+  type RecordsCount = Double
+  type ReplaceBoolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.JAR
     - typings.awsDashSdk.awsDashSdkStrings.FILE
@@ -284,8 +317,22 @@ package object clientsGlueMod {
   type ScheduleState = _ScheduleState | String
   type SchemaPathString = String
   type ScriptLocationString = String
+  type SearchPropertyPredicates = js.Array[PropertyPredicate]
   type SecurityConfigurationList = js.Array[SecurityConfiguration]
   type SecurityGroupIdList = js.Array[NameString]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ASC
+    - typings.awsDashSdk.awsDashSdkStrings.DESC
+    - java.lang.String
+  */
+  type Sort = _Sort | String
+  type SortCriteria = js.Array[SortCriterion]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DESCENDING
+    - typings.awsDashSdk.awsDashSdkStrings.ASCENDING
+    - java.lang.String
+  */
+  type SortDirectionType = _SortDirectionType | String
   type StringList = js.Array[GenericString]
   type TableErrors = js.Array[TableError]
   type TableList = js.Array[Table]
@@ -297,11 +344,58 @@ package object clientsGlueMod {
   type TagKeysList = js.Array[TagKey]
   type TagValue = String
   type TagsMap = StringDictionary[TagValue]
+  type TaskRunList = js.Array[TaskRun]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.TASK_RUN_TYPE
+    - typings.awsDashSdk.awsDashSdkStrings.STATUS
+    - typings.awsDashSdk.awsDashSdkStrings.STARTED
+    - java.lang.String
+  */
+  type TaskRunSortColumnType = _TaskRunSortColumnType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.STARTING
+    - typings.awsDashSdk.awsDashSdkStrings.RUNNING
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPING
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPED
+    - typings.awsDashSdk.awsDashSdkStrings.SUCCEEDED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.TIMEOUT
+    - java.lang.String
+  */
+  type TaskStatusType = _TaskStatusType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.EVALUATION
+    - typings.awsDashSdk.awsDashSdkStrings.LABELING_SET_GENERATION
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_LABELS
+    - typings.awsDashSdk.awsDashSdkStrings.EXPORT_LABELS
+    - typings.awsDashSdk.awsDashSdkStrings.FIND_MATCHES
+    - java.lang.String
+  */
+  type TaskType = _TaskType | String
   type Timeout = Double
   type Timestamp = Date
   type TimestampValue = Date
   type Token = String
   type TotalSegmentsInteger = Double
+  type TransformList = js.Array[MLTransform]
+  type TransformSchema = js.Array[SchemaColumn]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NAME
+    - typings.awsDashSdk.awsDashSdkStrings.TRANSFORM_TYPE
+    - typings.awsDashSdk.awsDashSdkStrings.STATUS
+    - typings.awsDashSdk.awsDashSdkStrings.CREATED
+    - typings.awsDashSdk.awsDashSdkStrings.LAST_MODIFIED
+    - java.lang.String
+  */
+  type TransformSortColumnType = _TransformSortColumnType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NOT_READY
+    - typings.awsDashSdk.awsDashSdkStrings.READY
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - java.lang.String
+  */
+  type TransformStatusType = _TransformStatusType | String
+  type TransformType = FIND_MATCHES | String
   type TriggerList = js.Array[Trigger]
   type TriggerNameList = js.Array[NameString]
   /* Rewritten from type alias, can be one of: 

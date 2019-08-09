@@ -26,6 +26,10 @@ trait TweenPropConfig extends js.Object {
     */
   var flipY: js.UndefOr[Boolean] = js.undefined
   /**
+    * What the property will be set to immediately when this tween becomes active.
+    */
+  var getActive: js.UndefOr[GetActiveCallback] = js.undefined
+  /**
     * What the property will be at the END of the Tween.
     */
   var getEnd: js.UndefOr[GetEndCallback] = js.undefined
@@ -63,6 +67,7 @@ object TweenPropConfig {
     ease: String | js.Function = null,
     flipX: js.UndefOr[Boolean] = js.undefined,
     flipY: js.UndefOr[Boolean] = js.undefined,
+    getActive: GetActiveCallback = null,
     getEnd: GetEndCallback = null,
     getStart: GetStartCallback = null,
     hold: Int | Double = null,
@@ -77,6 +82,7 @@ object TweenPropConfig {
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
     if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    if (getActive != null) __obj.updateDynamic("getActive")(getActive)
     if (getEnd != null) __obj.updateDynamic("getEnd")(getEnd)
     if (getStart != null) __obj.updateDynamic("getStart")(getStart)
     if (hold != null) __obj.updateDynamic("hold")(hold.asInstanceOf[js.Any])

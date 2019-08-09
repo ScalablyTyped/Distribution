@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetDatabasesRequest extends js.Object {
   /**
-    * The ID of the Data Catalog from which to retrieve Databases. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog from which to retrieve Databases. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**

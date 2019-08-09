@@ -36,6 +36,11 @@ class Polygon () extends js.Object {
     */
   var points: js.Array[Point] = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.POLYGON`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * Calculates the area of the Polygon. This is available in the property Polygon.area
     */
   def calculateArea(): Double = js.native

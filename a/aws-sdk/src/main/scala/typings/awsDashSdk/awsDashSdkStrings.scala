@@ -81,7 +81,6 @@ import typings.awsDashSdk.clientsAppstreamMod._ImageBuilderStateChangeReasonCode
 import typings.awsDashSdk.clientsAppstreamMod._ImageState
 import typings.awsDashSdk.clientsAppstreamMod._ImageStateChangeReasonCode
 import typings.awsDashSdk.clientsAppstreamMod._MessageAction
-import typings.awsDashSdk.clientsAppstreamMod._Permission
 import typings.awsDashSdk.clientsAppstreamMod._SessionConnectionState
 import typings.awsDashSdk.clientsAppstreamMod._SessionState
 import typings.awsDashSdk.clientsAppstreamMod._StackAttribute
@@ -781,7 +780,15 @@ import typings.awsDashSdk.clientsGlueMod._Language
 import typings.awsDashSdk.clientsGlueMod._LastCrawlStatus
 import typings.awsDashSdk.clientsGlueMod._Logical
 import typings.awsDashSdk.clientsGlueMod._NodeType
+import typings.awsDashSdk.clientsGlueMod._Permission
 import typings.awsDashSdk.clientsGlueMod._S3EncryptionMode
+import typings.awsDashSdk.clientsGlueMod._Sort
+import typings.awsDashSdk.clientsGlueMod._SortDirectionType
+import typings.awsDashSdk.clientsGlueMod._TaskRunSortColumnType
+import typings.awsDashSdk.clientsGlueMod._TaskStatusType
+import typings.awsDashSdk.clientsGlueMod._TaskType
+import typings.awsDashSdk.clientsGlueMod._TransformSortColumnType
+import typings.awsDashSdk.clientsGlueMod._TransformStatusType
 import typings.awsDashSdk.clientsGlueMod._TriggerState
 import typings.awsDashSdk.clientsGlueMod._TriggerType
 import typings.awsDashSdk.clientsGlueMod._UpdateBehavior
@@ -927,6 +934,8 @@ import typings.awsDashSdk.clientsKmsMod._GrantOperation
 import typings.awsDashSdk.clientsKmsMod._KeyManagerType
 import typings.awsDashSdk.clientsKmsMod._KeyState
 import typings.awsDashSdk.clientsKmsMod._OriginType
+import typings.awsDashSdk.clientsLakeformationMod._DataLakeResourceType
+import typings.awsDashSdk.clientsLakeformationMod._FieldNameString
 import typings.awsDashSdk.clientsLambdaMod._EventSourcePosition
 import typings.awsDashSdk.clientsLambdaMod._InvocationType
 import typings.awsDashSdk.clientsLambdaMod._Runtime
@@ -2390,6 +2399,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `2017-03-31`
     extends typings.awsDashSdk.clientsGlueMod._apiVersion
+       with typings.awsDashSdk.clientsLakeformationMod._apiVersion
   
   @js.native
   sealed trait `2017-04-19`
@@ -3263,6 +3273,8 @@ object awsDashSdkStrings {
        with _JobExecutionFailureType
        with _MetricsName
        with _OrganizationFeatureSet
+       with _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
        with _ProjectionType
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
        with _RtmpCaptionData
@@ -3323,6 +3335,11 @@ object awsDashSdkStrings {
   sealed trait ALL_UPFRONT
     extends _PaymentOption
        with _ReservedElasticsearchInstancePaymentOption
+  
+  @js.native
+  sealed trait ALTER
+    extends _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait ALTERNATE_AUDIO_AUTO_SELECT
@@ -3685,6 +3702,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ASC
     extends _OrderBy
+       with _Sort
        with _SortByOrder
        with _SortOrder
        with _SortValue
@@ -3694,6 +3712,7 @@ object awsDashSdkStrings {
   sealed trait ASCENDING
     extends _Order
        with _OrderType
+       with _SortDirectionType
        with typings.awsDashSdk.clientsServicecatalogMod._SortOrder
        with _SortOrderType
   
@@ -4822,6 +4841,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BEGINS_WITH
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _InventoryFilterCondition
   
@@ -4848,6 +4868,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BETWEEN
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _FilterCondition
        with _OperatorType
@@ -5471,6 +5492,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait CAT extends _LanguageCode
+  
+  @js.native
+  sealed trait CATALOG extends _DataLakeResourceType
   
   @js.native
   sealed trait CAVLC
@@ -6110,6 +6134,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait CONTAINS
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _InventoryFilterCondition
        with _PositionalConstraint
@@ -6248,6 +6273,7 @@ object awsDashSdkStrings {
        with _EnvironmentLifecycleStatus
        with typings.awsDashSdk.clientsPinpointMod._JobStatus
        with _RecordStatus
+       with _TransformSortColumnType
        with _TriggerState
   
   @js.native
@@ -6259,6 +6285,11 @@ object awsDashSdkStrings {
        with _OTAUpdateStatus
        with typings.awsDashSdk.clientsCloudformationMod._ResourceStatus
        with _StackStatus
+  
+  @js.native
+  sealed trait CREATE_DATABASE
+    extends _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait CREATE_FAILED
@@ -6309,6 +6340,11 @@ object awsDashSdkStrings {
   sealed trait CREATE_SUCCESSFUL
     extends _MemberAccountRuleStatus
        with _OrganizationRuleStatus
+  
+  @js.native
+  sealed trait CREATE_TABLE
+    extends _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait CREATE_TIME extends _SnapshotAttributeToSortBy
@@ -6979,6 +7015,9 @@ object awsDashSdkStrings {
   sealed trait DASH_ISO_GROUP_SETTINGS extends _OutputGroupType
   
   @js.native
+  sealed trait DATABASE extends _DataLakeResourceType
+  
+  @js.native
   sealed trait DATABASE_ENGINE extends _Dimension
   
   @js.native
@@ -6986,6 +7025,14 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait DATA_ENCIPHERMENT extends _KeyUsageName
+  
+  @js.native
+  sealed trait DATA_LOCATION extends _DataLakeResourceType
+  
+  @js.native
+  sealed trait DATA_LOCATION_ACCESS
+    extends _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait DATE
@@ -7169,6 +7216,8 @@ object awsDashSdkStrings {
        with _Method
        with _MethodName
        with _OnFailure
+       with _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
        with _StackSetOperationAction
        with _StackSetOperationType
        with _UpdateActionType
@@ -7339,6 +7388,7 @@ object awsDashSdkStrings {
        with _StreamStatus
        with _TableStatus
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TableStatus
+       with _TransformStatusType
        with _TriggerState
        with _VpcLinkStatus
   
@@ -7449,6 +7499,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait DESC
     extends _OrderBy
+       with _Sort
        with _SortByOrder
        with _SortOrder
        with _SortValue
@@ -7458,6 +7509,7 @@ object awsDashSdkStrings {
   sealed trait DESCENDING
     extends _Order
        with _OrderType
+       with _SortDirectionType
        with typings.awsDashSdk.clientsServicecatalogMod._SortOrder
        with _SortOrderType
   
@@ -7657,7 +7709,7 @@ object awsDashSdkStrings {
        with _Mpeg2SlowPal
        with _Mpeg2SpatialAdaptiveQuantization
        with _Mpeg2TemporalAdaptiveQuantization
-       with _Permission
+       with typings.awsDashSdk.clientsAppstreamMod._Permission
        with _PointInTimeRecoveryStatus
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._PointInTimeRecoveryStatus
        with _ProresSlowPal
@@ -7966,7 +8018,10 @@ object awsDashSdkStrings {
   sealed trait DRIFTED extends _StackDriftStatus
   
   @js.native
-  sealed trait DROP extends _M2tsAbsentInputAudioBehavior
+  sealed trait DROP
+    extends _M2tsAbsentInputAudioBehavior
+       with _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait DROP_ALL extends _EgressFilterType
@@ -8666,7 +8721,7 @@ object awsDashSdkStrings {
        with _Mpeg2SlowPal
        with _Mpeg2SpatialAdaptiveQuantization
        with _Mpeg2TemporalAdaptiveQuantization
-       with _Permission
+       with typings.awsDashSdk.clientsAppstreamMod._Permission
        with _PointInTimeRecoveryStatus
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._PointInTimeRecoveryStatus
        with _PolicyTypeStatus
@@ -8769,6 +8824,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _FilterCondition
        with _OperatorType
@@ -8780,7 +8836,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EQUALS
-    extends _InventoryFilterCondition
+    extends typings.awsDashSdk.clientsGlueMod._Comparator
+       with _InventoryFilterCondition
        with _RuleOperator
        with _StringFilterComparison
   
@@ -8877,6 +8934,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EVALUATING_RULES extends _AssessmentRunState
+  
+  @js.native
+  sealed trait EVALUATION extends _TaskType
   
   @js.native
   sealed trait EVENT
@@ -9028,6 +9088,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EXPORT extends _JobType
+  
+  @js.native
+  sealed trait EXPORT_LABELS extends _TaskType
   
   @js.native
   sealed trait EXPRESS extends _ShippingOption
@@ -9378,6 +9441,7 @@ object awsDashSdkStrings {
        with _SystemInstanceDeploymentStatus
        with _TableRestoreStatusType
        with typings.awsDashSdk.clientsDatapipelineMod._TaskStatus
+       with _TaskStatusType
        with _TranscriptionJobStatus
        with _UpgradeStatus
        with _UploadStatus
@@ -9547,6 +9611,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait FINDING_REPORTED extends _InspectorEvent
+  
+  @js.native
+  sealed trait FIND_MATCHES extends _TaskType
   
   @js.native
   sealed trait FINISHED
@@ -10148,6 +10215,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
@@ -10325,11 +10393,16 @@ object awsDashSdkStrings {
   @js.native
   sealed trait GREATER_THAN
     extends _AssociationFilterOperatorType
+       with typings.awsDashSdk.clientsGlueMod._Comparator
        with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with typings.awsDashSdk.clientsEmrMod._ComparisonOperator
        with _ComplianceQueryOperatorType
        with _RuleOperator
        with _ThresholdComparator
+  
+  @js.native
+  sealed trait GREATER_THAN_EQUALS
+    extends typings.awsDashSdk.clientsGlueMod._Comparator
   
   @js.native
   sealed trait GREATER_THAN_OR_EQUAL
@@ -10380,6 +10453,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
@@ -11214,6 +11288,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsDiscoveryMod._ImportStatus
   
   @js.native
+  sealed trait IMPORT_LABELS extends _TaskType
+  
+  @js.native
   sealed trait IMPORT_TASK_ID extends _ImportTaskFilterName
   
   @js.native
@@ -11222,6 +11299,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IN
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _FilterCondition
@@ -11399,6 +11477,8 @@ object awsDashSdkStrings {
        with _M2tsNielsenId3
        with _M3u8NielsenId3
        with typings.awsDashSdk.clientsDynamodbstreamsMod._OperationType
+       with _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait INSIGHTS_FEEDBACK extends js.Object
@@ -12570,6 +12650,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
+  sealed trait LABELING_SET_GENERATION extends _TaskType
+  
+  @js.native
   sealed trait LAMBDA extends _MaintenanceWindowTaskType
   
   @js.native
@@ -12601,6 +12684,11 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait LAST_BEFORE_MISSING_VALUES extends _RangeMode
+  
+  @js.native
+  sealed trait LAST_MODIFIED
+    extends _FieldNameString
+       with _TransformSortColumnType
   
   @js.native
   sealed trait LAST_MODIFIED_TIME extends _ProjectSortByType
@@ -12661,6 +12749,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _OperatorType
   
@@ -12686,10 +12775,15 @@ object awsDashSdkStrings {
   @js.native
   sealed trait LESS_THAN
     extends _AssociationFilterOperatorType
+       with typings.awsDashSdk.clientsGlueMod._Comparator
        with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with typings.awsDashSdk.clientsEmrMod._ComparisonOperator
        with _ComplianceQueryOperatorType
        with _RuleOperator
+  
+  @js.native
+  sealed trait LESS_THAN_EQUALS
+    extends typings.awsDashSdk.clientsGlueMod._Comparator
   
   @js.native
   sealed trait LESS_THAN_OR_EQUAL
@@ -12947,6 +13041,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
@@ -14104,6 +14199,7 @@ object awsDashSdkStrings {
        with _ProjectSortByType
        with _QueueListBy
        with _ResourceSortType
+       with _TransformSortColumnType
        with _Uid
   
   @js.native
@@ -14158,6 +14254,7 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
        with _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
@@ -14467,6 +14564,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait NOT_CONTAINS
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
   
   @js.native
@@ -14514,6 +14612,9 @@ object awsDashSdkStrings {
     extends _ColumnNullable
        with _ComparisonOperator
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
+  
+  @js.native
+  sealed trait NOT_READY extends _TransformStatusType
   
   @js.native
   sealed trait NOT_REQUIRED extends _RequiredAttributeBehavior
@@ -16564,6 +16665,7 @@ object awsDashSdkStrings {
        with _SnapshotStatus
        with _StandardsStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._Status
+       with _TransformStatusType
        with _VocabularyState
   
   @js.native
@@ -16953,6 +17055,9 @@ object awsDashSdkStrings {
   sealed trait RESOURCES extends js.Object
   
   @js.native
+  sealed trait RESOURCE_ARN extends _FieldNameString
+  
+  @js.native
   sealed trait RESOURCE_GROUP extends _MaintenanceWindowResourceType
   
   @js.native
@@ -17102,6 +17207,9 @@ object awsDashSdkStrings {
   sealed trait ROLE
     extends typings.awsDashSdk.clientsGlueMod._PrincipalType
        with _policyOwnerEntityType
+  
+  @js.native
+  sealed trait ROLE_ARN extends _FieldNameString
   
   @js.native
   sealed trait ROLLBACK extends _OnFailure
@@ -17254,6 +17362,7 @@ object awsDashSdkStrings {
        with _StepState
        with _StreamProcessorStatus
        with _TaskStatus
+       with _TaskStatusType
        with _WorkflowRunStatus
   
   @js.native
@@ -17965,7 +18074,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._HlsOutputSelection
   
   @js.native
-  sealed trait SELECT extends js.Object
+  sealed trait SELECT
+    extends _Permission
+       with typings.awsDashSdk.clientsLakeformationMod._Permission
   
   @js.native
   sealed trait SELECTED extends _SelectionStatus
@@ -18625,7 +18736,9 @@ object awsDashSdkStrings {
        with _FollowPoint
   
   @js.native
-  sealed trait STARTED extends _ReportStateType
+  sealed trait STARTED
+    extends _ReportStateType
+       with _TaskRunSortColumnType
   
   @js.native
   sealed trait STARTER extends _Edition
@@ -18644,6 +18757,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsTransferMod._State
        with _Status
        with _StreamProcessorStatus
+       with _TaskStatusType
        with _WorkspaceState
   
   @js.native
@@ -18700,7 +18814,9 @@ object awsDashSdkStrings {
     extends _ImportTaskFilterName
        with _OperationFilterName
        with _SystemInstanceFilterName
+       with _TaskRunSortColumnType
        with _ThingConnectivityIndexingMode
+       with _TransformSortColumnType
   
   @js.native
   sealed trait STEADY_STATE extends _StabilityStatus
@@ -18744,6 +18860,7 @@ object awsDashSdkStrings {
        with _StackSetOperationStatus
        with typings.awsDashSdk.clientsCodebuildMod._StatusType
        with _StreamProcessorStatus
+       with _TaskStatusType
        with _WorkspaceState
   
   @js.native
@@ -18761,6 +18878,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsTransferMod._State
        with _Status
        with _StreamProcessorStatus
+       with _TaskStatusType
        with _WorkspaceState
   
   @js.native
@@ -18901,6 +19019,7 @@ object awsDashSdkStrings {
        with _StackSetOperationStatus
        with typings.awsDashSdk.clientsCodebuildMod._StatusType
        with _TableRestoreStatusType
+       with _TaskStatusType
        with _UpgradeStatus
        with _UploadStatus
        with typings.awsDashSdk.clientsIotthingsgraphMod._UploadStatus
@@ -19614,7 +19733,9 @@ object awsDashSdkStrings {
   sealed trait T80 extends _SnowballCapacity
   
   @js.native
-  sealed trait TABLE extends _BlockType
+  sealed trait TABLE
+    extends _BlockType
+       with _DataLakeResourceType
   
   @js.native
   sealed trait TABLES extends _FeatureType
@@ -19654,6 +19775,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait TASK_DEFINITION extends _PropagateTags
+  
+  @js.native
+  sealed trait TASK_RUN_TYPE extends _TaskRunSortColumnType
   
   @js.native
   sealed trait TAT extends _LanguageCode
@@ -19921,6 +20045,7 @@ object awsDashSdkStrings {
   sealed trait TIMEOUT
     extends _ErrorCode
        with _JobRunState
+       with _TaskStatusType
   
   @js.native
   sealed trait TIMER_CREATION_RATE_EXCEEDED extends _StartTimerFailedCause
@@ -20115,6 +20240,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait TRANSFER_OUT_DOMAIN extends _OperationType
+  
+  @js.native
+  sealed trait TRANSFORM_TYPE extends _TransformSortColumnType
   
   @js.native
   sealed trait TRANSITIONING
@@ -24802,6 +24930,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsXrayMod._apiVersion
        with typings.awsDashSdk.clientsIotMod._apiVersion
        with typings.awsDashSdk.clientsNeptuneMod._apiVersion
+       with typings.awsDashSdk.clientsLakeformationMod._apiVersion
        with typings.awsDashSdk.clientsClouddirectoryMod._apiVersion
        with typings.awsDashSdk.clientsTransferMod._apiVersion
        with typings.awsDashSdk.clientsMediapackagevodMod._apiVersion
@@ -28478,6 +28607,8 @@ object awsDashSdkStrings {
   @scala.inline
   def ALL_UPFRONT: ALL_UPFRONT = "ALL_UPFRONT".asInstanceOf[ALL_UPFRONT]
   @scala.inline
+  def ALTER: ALTER = "ALTER".asInstanceOf[ALTER]
+  @scala.inline
   def ALTERNATE_AUDIO_AUTO_SELECT: ALTERNATE_AUDIO_AUTO_SELECT = "ALTERNATE_AUDIO_AUTO_SELECT".asInstanceOf[ALTERNATE_AUDIO_AUTO_SELECT]
   @scala.inline
   def ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT: ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT = "ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT".asInstanceOf[ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT]
@@ -29544,6 +29675,8 @@ object awsDashSdkStrings {
   @scala.inline
   def CAT: CAT = "CAT".asInstanceOf[CAT]
   @scala.inline
+  def CATALOG: CATALOG = "CATALOG".asInstanceOf[CATALOG]
+  @scala.inline
   def CAVLC: CAVLC = "CAVLC".asInstanceOf[CAVLC]
   @scala.inline
   def CA_BUSINESS_ENTITY_TYPE: CA_BUSINESS_ENTITY_TYPE = "CA_BUSINESS_ENTITY_TYPE".asInstanceOf[CA_BUSINESS_ENTITY_TYPE]
@@ -29910,6 +30043,8 @@ object awsDashSdkStrings {
   @scala.inline
   def CREATE_COMPLETE: CREATE_COMPLETE = "CREATE_COMPLETE".asInstanceOf[CREATE_COMPLETE]
   @scala.inline
+  def CREATE_DATABASE: CREATE_DATABASE = "CREATE_DATABASE".asInstanceOf[CREATE_DATABASE]
+  @scala.inline
   def CREATE_FAILED: CREATE_FAILED = "CREATE_FAILED".asInstanceOf[CREATE_FAILED]
   @scala.inline
   def CREATE_IN_PROGRESS: CREATE_IN_PROGRESS = "CREATE_IN_PROGRESS".asInstanceOf[CREATE_IN_PROGRESS]
@@ -29925,6 +30060,8 @@ object awsDashSdkStrings {
   def CREATE_SUCCESS: CREATE_SUCCESS = "CREATE_SUCCESS".asInstanceOf[CREATE_SUCCESS]
   @scala.inline
   def CREATE_SUCCESSFUL: CREATE_SUCCESSFUL = "CREATE_SUCCESSFUL".asInstanceOf[CREATE_SUCCESSFUL]
+  @scala.inline
+  def CREATE_TABLE: CREATE_TABLE = "CREATE_TABLE".asInstanceOf[CREATE_TABLE]
   @scala.inline
   def CREATE_TIME: CREATE_TIME = "CREATE_TIME".asInstanceOf[CREATE_TIME]
   @scala.inline
@@ -30220,11 +30357,17 @@ object awsDashSdkStrings {
   @scala.inline
   def DASH_ISO_GROUP_SETTINGS: DASH_ISO_GROUP_SETTINGS = "DASH_ISO_GROUP_SETTINGS".asInstanceOf[DASH_ISO_GROUP_SETTINGS]
   @scala.inline
+  def DATABASE: DATABASE = "DATABASE".asInstanceOf[DATABASE]
+  @scala.inline
   def DATABASE_ENGINE: DATABASE_ENGINE = "DATABASE_ENGINE".asInstanceOf[DATABASE_ENGINE]
   @scala.inline
   def DATA_COLLECTED: DATA_COLLECTED = "DATA_COLLECTED".asInstanceOf[DATA_COLLECTED]
   @scala.inline
   def DATA_ENCIPHERMENT: DATA_ENCIPHERMENT = "DATA_ENCIPHERMENT".asInstanceOf[DATA_ENCIPHERMENT]
+  @scala.inline
+  def DATA_LOCATION: DATA_LOCATION = "DATA_LOCATION".asInstanceOf[DATA_LOCATION]
+  @scala.inline
+  def DATA_LOCATION_ACCESS: DATA_LOCATION_ACCESS = "DATA_LOCATION_ACCESS".asInstanceOf[DATA_LOCATION_ACCESS]
   @scala.inline
   def DATE: DATE = "DATE".asInstanceOf[DATE]
   @scala.inline
@@ -31014,6 +31157,8 @@ object awsDashSdkStrings {
   @scala.inline
   def EVALUATING_RULES: EVALUATING_RULES = "EVALUATING_RULES".asInstanceOf[EVALUATING_RULES]
   @scala.inline
+  def EVALUATION: EVALUATION = "EVALUATION".asInstanceOf[EVALUATION]
+  @scala.inline
   def EVENT: EVENT = "EVENT".asInstanceOf[EVENT]
   @scala.inline
   def EVENTUAL: EVENTUAL = "EVENTUAL".asInstanceOf[EVENTUAL]
@@ -31083,6 +31228,8 @@ object awsDashSdkStrings {
   def EXPLORER_SUMMARY_LOG: EXPLORER_SUMMARY_LOG = "EXPLORER_SUMMARY_LOG".asInstanceOf[EXPLORER_SUMMARY_LOG]
   @scala.inline
   def EXPORT: EXPORT = "EXPORT".asInstanceOf[EXPORT]
+  @scala.inline
+  def EXPORT_LABELS: EXPORT_LABELS = "EXPORT_LABELS".asInstanceOf[EXPORT_LABELS]
   @scala.inline
   def EXPRESS: EXPRESS = "EXPRESS".asInstanceOf[EXPRESS]
   @scala.inline
@@ -31293,6 +31440,8 @@ object awsDashSdkStrings {
   def FINDING: FINDING = "FINDING".asInstanceOf[FINDING]
   @scala.inline
   def FINDING_REPORTED: FINDING_REPORTED = "FINDING_REPORTED".asInstanceOf[FINDING_REPORTED]
+  @scala.inline
+  def FIND_MATCHES: FIND_MATCHES = "FIND_MATCHES".asInstanceOf[FIND_MATCHES]
   @scala.inline
   def FINISHED: FINISHED = "FINISHED".asInstanceOf[FINISHED]
   @scala.inline
@@ -31669,6 +31818,8 @@ object awsDashSdkStrings {
   def GRAPHQL: GRAPHQL = "GRAPHQL".asInstanceOf[GRAPHQL]
   @scala.inline
   def GREATER_THAN: GREATER_THAN = "GREATER_THAN".asInstanceOf[GREATER_THAN]
+  @scala.inline
+  def GREATER_THAN_EQUALS: GREATER_THAN_EQUALS = "GREATER_THAN_EQUALS".asInstanceOf[GREATER_THAN_EQUALS]
   @scala.inline
   def GREATER_THAN_OR_EQUAL: GREATER_THAN_OR_EQUAL = "GREATER_THAN_OR_EQUAL".asInstanceOf[GREATER_THAN_OR_EQUAL]
   @scala.inline
@@ -32101,6 +32252,8 @@ object awsDashSdkStrings {
   def IMPORT_FAILED_SERVER_LIMIT_EXCEEDED: IMPORT_FAILED_SERVER_LIMIT_EXCEEDED = "IMPORT_FAILED_SERVER_LIMIT_EXCEEDED".asInstanceOf[IMPORT_FAILED_SERVER_LIMIT_EXCEEDED]
   @scala.inline
   def IMPORT_IN_PROGRESS: IMPORT_IN_PROGRESS = "IMPORT_IN_PROGRESS".asInstanceOf[IMPORT_IN_PROGRESS]
+  @scala.inline
+  def IMPORT_LABELS: IMPORT_LABELS = "IMPORT_LABELS".asInstanceOf[IMPORT_LABELS]
   @scala.inline
   def IMPORT_TASK_ID: IMPORT_TASK_ID = "IMPORT_TASK_ID".asInstanceOf[IMPORT_TASK_ID]
   @scala.inline
@@ -32736,6 +32889,8 @@ object awsDashSdkStrings {
   @scala.inline
   def LA: LA = "LA".asInstanceOf[LA]
   @scala.inline
+  def LABELING_SET_GENERATION: LABELING_SET_GENERATION = "LABELING_SET_GENERATION".asInstanceOf[LABELING_SET_GENERATION]
+  @scala.inline
   def LAMBDA: LAMBDA = "LAMBDA".asInstanceOf[LAMBDA]
   @scala.inline
   def LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED: LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED = "LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED".asInstanceOf[LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED]
@@ -32757,6 +32912,8 @@ object awsDashSdkStrings {
   def LAST_AUTHENTICATED_TIME_DESCENDING: LAST_AUTHENTICATED_TIME_DESCENDING = "LAST_AUTHENTICATED_TIME_DESCENDING".asInstanceOf[LAST_AUTHENTICATED_TIME_DESCENDING]
   @scala.inline
   def LAST_BEFORE_MISSING_VALUES: LAST_BEFORE_MISSING_VALUES = "LAST_BEFORE_MISSING_VALUES".asInstanceOf[LAST_BEFORE_MISSING_VALUES]
+  @scala.inline
+  def LAST_MODIFIED: LAST_MODIFIED = "LAST_MODIFIED".asInstanceOf[LAST_MODIFIED]
   @scala.inline
   def LAST_MODIFIED_TIME: LAST_MODIFIED_TIME = "LAST_MODIFIED_TIME".asInstanceOf[LAST_MODIFIED_TIME]
   @scala.inline
@@ -32797,6 +32954,8 @@ object awsDashSdkStrings {
   def LEQ_A: LEQ_A = "LEQ_A".asInstanceOf[LEQ_A]
   @scala.inline
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
+  @scala.inline
+  def LESS_THAN_EQUALS: LESS_THAN_EQUALS = "LESS_THAN_EQUALS".asInstanceOf[LESS_THAN_EQUALS]
   @scala.inline
   def LESS_THAN_OR_EQUAL: LESS_THAN_OR_EQUAL = "LESS_THAN_OR_EQUAL".asInstanceOf[LESS_THAN_OR_EQUAL]
   @scala.inline
@@ -33647,6 +33806,8 @@ object awsDashSdkStrings {
   def NOT_INDICATED: NOT_INDICATED = "NOT_INDICATED".asInstanceOf[NOT_INDICATED]
   @scala.inline
   def NOT_NULL: NOT_NULL = "NOT_NULL".asInstanceOf[NOT_NULL]
+  @scala.inline
+  def NOT_READY: NOT_READY = "NOT_READY".asInstanceOf[NOT_READY]
   @scala.inline
   def NOT_REQUIRED: NOT_REQUIRED = "NOT_REQUIRED".asInstanceOf[NOT_REQUIRED]
   @scala.inline
@@ -34840,6 +35001,8 @@ object awsDashSdkStrings {
   @scala.inline
   def RESOURCES: RESOURCES = "RESOURCES".asInstanceOf[RESOURCES]
   @scala.inline
+  def RESOURCE_ARN: RESOURCE_ARN = "RESOURCE_ARN".asInstanceOf[RESOURCE_ARN]
+  @scala.inline
   def RESOURCE_GROUP: RESOURCE_GROUP = "RESOURCE_GROUP".asInstanceOf[RESOURCE_GROUP]
   @scala.inline
   def RESOURCE_ID: RESOURCE_ID = "RESOURCE_ID".asInstanceOf[RESOURCE_ID]
@@ -34925,6 +35088,8 @@ object awsDashSdkStrings {
   def ROH: ROH = "ROH".asInstanceOf[ROH]
   @scala.inline
   def ROLE: ROLE = "ROLE".asInstanceOf[ROLE]
+  @scala.inline
+  def ROLE_ARN: ROLE_ARN = "ROLE_ARN".asInstanceOf[ROLE_ARN]
   @scala.inline
   def ROLLBACK: ROLLBACK = "ROLLBACK".asInstanceOf[ROLLBACK]
   @scala.inline
@@ -36182,6 +36347,8 @@ object awsDashSdkStrings {
   @scala.inline
   def TASK_DEFINITION: TASK_DEFINITION = "TASK_DEFINITION".asInstanceOf[TASK_DEFINITION]
   @scala.inline
+  def TASK_RUN_TYPE: TASK_RUN_TYPE = "TASK_RUN_TYPE".asInstanceOf[TASK_RUN_TYPE]
+  @scala.inline
   def TAT: TAT = "TAT".asInstanceOf[TAT]
   @scala.inline
   def TC: TC = "TC".asInstanceOf[TC]
@@ -36407,6 +36574,8 @@ object awsDashSdkStrings {
   def TRANSFER_IN_DOMAIN: TRANSFER_IN_DOMAIN = "TRANSFER_IN_DOMAIN".asInstanceOf[TRANSFER_IN_DOMAIN]
   @scala.inline
   def TRANSFER_OUT_DOMAIN: TRANSFER_OUT_DOMAIN = "TRANSFER_OUT_DOMAIN".asInstanceOf[TRANSFER_OUT_DOMAIN]
+  @scala.inline
+  def TRANSFORM_TYPE: TRANSFORM_TYPE = "TRANSFORM_TYPE".asInstanceOf[TRANSFORM_TYPE]
   @scala.inline
   def TRANSITIONING: TRANSITIONING = "TRANSITIONING".asInstanceOf[TRANSITIONING]
   @scala.inline

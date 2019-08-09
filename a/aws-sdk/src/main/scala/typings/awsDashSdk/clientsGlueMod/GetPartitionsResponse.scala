@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetPartitionsResponse extends js.Object {
   /**
-    * A continuation token, if the returned list of partitions does not does not include the last one.
+    * A continuation token, if the returned list of partitions does not include the last one.
     */
   var NextToken: js.UndefOr[Token] = js.undefined
   /**

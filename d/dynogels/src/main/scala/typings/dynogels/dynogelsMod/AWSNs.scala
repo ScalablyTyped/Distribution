@@ -1091,6 +1091,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class LakeFormation ()
+    extends typings.awsDashSdk.awsDashSdkMod.LakeFormation {
+    def this(options: typings.awsDashSdk.clientsLakeformationMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Lambda ()
     extends typings.awsDashSdk.awsDashSdkMod.Lambda {
     def this(options: typings.awsDashSdk.clientsLambdaMod.ClientConfiguration) = this()

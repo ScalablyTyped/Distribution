@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Segment extends js.Object {
   /**
-    * The zero-based index number of the this segment. For example, if the total number of segments is 4, SegmentNumber values will range from zero through three.
+    * The zero-based index number of the segment. For example, if the total number of segments is 4, SegmentNumber values range from 0 through 3.
     */
   var SegmentNumber: NonNegativeInteger
   /**
-    * The total numer of segments.
+    * The total number of segments.
     */
   var TotalSegments: TotalSegmentsInteger
 }

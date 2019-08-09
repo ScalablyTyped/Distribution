@@ -18,7 +18,7 @@ trait JobBookmarkEntry extends js.Object {
     */
   var JobName: js.UndefOr[typings.awsDashSdk.clientsGlueMod.JobName] = js.undefined
   /**
-    * The unique run identifier associated with the previous job run..
+    * The unique run identifier associated with the previous job run.
     */
   var PreviousRunId: js.UndefOr[RunId] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait JobBookmarkEntry extends js.Object {
     */
   var Run: js.UndefOr[IntegerValue] = js.undefined
   /**
-    * The unique run identifier associated with this job run.
+    * The run ID number.
     */
   var RunId: js.UndefOr[typings.awsDashSdk.clientsGlueMod.RunId] = js.undefined
   /**

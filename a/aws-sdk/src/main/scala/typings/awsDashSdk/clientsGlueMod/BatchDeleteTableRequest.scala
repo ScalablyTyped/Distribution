@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait BatchDeleteTableRequest extends js.Object {
   /**
-    * The ID of the Data Catalog where the table resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
-    * The name of the catalog database where the tables to delete reside. For Hive compatibility, this name is entirely lowercase.
+    * The name of the catalog database in which the tables to delete reside. For Hive compatibility, this name is entirely lowercase.
     */
   var DatabaseName: NameString
   /**

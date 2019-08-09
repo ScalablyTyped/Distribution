@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateUserDefinedFunctionRequest extends js.Object {
   /**
-    * The ID of the Data Catalog where the function to be updated is located. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the function to be updated is located. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
@@ -14,7 +14,7 @@ trait UpdateUserDefinedFunctionRequest extends js.Object {
     */
   var DatabaseName: NameString
   /**
-    * A FunctionInput object that re-defines the function in the Data Catalog.
+    * A FunctionInput object that redefines the function in the Data Catalog.
     */
   var FunctionInput: UserDefinedFunctionInput
   /**

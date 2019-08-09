@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetDataCatalogEncryptionSettingsRequest extends js.Object {
   /**
-    * The ID of the Data Catalog for which to retrieve the security configuration. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog to retrieve the security configuration for. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
 }

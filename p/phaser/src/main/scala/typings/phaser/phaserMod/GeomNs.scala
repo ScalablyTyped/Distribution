@@ -158,6 +158,34 @@ object GeomNs extends js.Object {
     ) = this()
   }
   
+  /**
+    * A Circle Geometry object type.
+    */
+  var CIRCLE: integer = js.native
+  /**
+    * An Ellipse Geometry object type.
+    */
+  var ELLIPSE: integer = js.native
+  /**
+    * A Line Geometry object type.
+    */
+  var LINE: integer = js.native
+  /**
+    * A Point Geometry object type.
+    */
+  var POINT: integer = js.native
+  /**
+    * A Polygon Geometry object type.
+    */
+  var POLYGON: integer = js.native
+  /**
+    * A Rectangle Geometry object type.
+    */
+  var RECTANGLE: integer = js.native
+  /**
+    * A Triangle Geometry object type.
+    */
+  var TRIANGLE: integer = js.native
   /* static members */
   @js.native
   object Circle extends js.Object {
@@ -1148,7 +1176,7 @@ object GeomNs extends js.Object {
       * 
       * Unlike the `FitOutside` function, there may be some space inside the source area not covered.
       * @param target The target rectangle to adjust.
-      * @param source The source rectangle to envlope the target in.
+      * @param source The source rectangle to envelop the target in.
       */
     def FitInside[O /* <: typings.phaser.PhaserNs.GeomNs.Rectangle */](target: O, source: typings.phaser.PhaserNs.GeomNs.Rectangle): O = js.native
     /**
@@ -1208,7 +1236,8 @@ object GeomNs extends js.Object {
     def GetPoints[O /* <: js.Array[typings.phaser.PhaserNs.GeomNs.Point] */](rectangle: typings.phaser.PhaserNs.GeomNs.Rectangle, step: Double, quantity: integer): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.PhaserNs.GeomNs.Point] */](rectangle: typings.phaser.PhaserNs.GeomNs.Rectangle, step: Double, quantity: integer, out: O): O = js.native
     /**
-      * [description]
+      * The size of the Rectangle object, expressed as a Point object
+      *  with the values of the width and height properties.
       * @param rect [description]
       * @param out [description]
       */
@@ -1238,7 +1267,8 @@ object GeomNs extends js.Object {
       out: typings.phaser.PhaserNs.GeomNs.Rectangle
     ): O = js.native
     /**
-      * [description]
+      * Return an array of points from the perimeter of the rectangle
+      *  each spaced out based on the quantity or step required
       * @param rect [description]
       * @param step [description]
       * @param quantity [description]

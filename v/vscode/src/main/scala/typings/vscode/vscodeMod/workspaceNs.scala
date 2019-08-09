@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "workspace")
 @js.native
 object workspaceNs extends js.Object {
+  val fs: FileSystem = js.native
   val name: js.UndefOr[String] = js.native
   val onDidChangeConfiguration: Event[ConfigurationChangeEvent] = js.native
   val onDidChangeTextDocument: Event[TextDocumentChangeEvent] = js.native
@@ -21,6 +22,7 @@ object workspaceNs extends js.Object {
   val onWillSaveTextDocument: Event[TextDocumentWillSaveEvent] = js.native
   val rootPath: js.UndefOr[String] = js.native
   val textDocuments: js.Array[TextDocument] = js.native
+  val workspaceFile: js.UndefOr[Uri] = js.native
   val workspaceFolders: js.UndefOr[js.Array[WorkspaceFolder]] = js.native
   def applyEdit(edit: WorkspaceEdit): Thenable[Boolean] = js.native
   def asRelativePath(pathOrUri: String): String = js.native

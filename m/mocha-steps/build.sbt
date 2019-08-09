@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mocha-steps"
-version := "1.1-dt-20180315Z-3493be"
+version := "1.3-dt-20190808Z-d9a5ff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

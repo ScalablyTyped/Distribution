@@ -217,10 +217,12 @@ class GameObject protected ()
     * 
     * Please note that the data keys are case-sensitive and must be valid JavaScript Object property strings.
     * This means the keys `gold` and `Gold` are treated as two unique values within the Data Manager.
-    * @param key The key to set the value for. Or an object or key value pairs. If an object the `data` argument is ignored.
+    * @param key The key to set the value for. Or an object of key value pairs. If an object the `data` argument is ignored.
     * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
     */
+  def setData(key: String): this.type = js.native
   def setData(key: String, data: js.Any): this.type = js.native
+  def setData(key: js.Object): this.type = js.native
   def setData(key: js.Object, data: js.Any): this.type = js.native
   /**
     * Adds a Data Manager component to this Game Object.

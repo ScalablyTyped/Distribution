@@ -135,20 +135,20 @@ class Path () extends js.Object {
   def draw[G /* <: Graphics */](graphics: Graphics, pointsTotal: integer): G = js.native
   /**
     * Creates an ellipse curve positioned at the previous end point, using the given parameters.
-    * @param xRadius The horizontal radius of the ellipse.
-    * @param yRadius The vertical radius of the ellipse.
-    * @param startAngle The start angle of the ellipse, in degrees.
-    * @param endAngle The end angle of the ellipse, in degrees.
-    * @param clockwise Whether the ellipse should be rotated clockwise (`true`) or counter-clockwise (`false`).
-    * @param rotation The rotation of the ellipse, in degrees.
+    * @param xRadius The horizontal radius of ellipse. Default 0.
+    * @param yRadius The vertical radius of ellipse. Default 0.
+    * @param startAngle The start angle of the ellipse, in degrees. Default 0.
+    * @param endAngle The end angle of the ellipse, in degrees. Default 360.
+    * @param clockwise Whether the ellipse angles are given as clockwise (`true`) or counter-clockwise (`false`). Default false.
+    * @param rotation The rotation of the ellipse, in degrees. Default 0.
     */
   def ellipseTo(
-    xRadius: Double,
-    yRadius: Double,
-    startAngle: Double,
-    endAngle: Double,
-    clockwise: Boolean,
-    rotation: Double
+    xRadius: js.UndefOr[Double],
+    yRadius: js.UndefOr[Double],
+    startAngle: js.UndefOr[integer],
+    endAngle: js.UndefOr[integer],
+    clockwise: js.UndefOr[Boolean],
+    rotation: js.UndefOr[Double]
   ): Path = js.native
   /**
     * Creates a Path from a Path Configuration object.
@@ -219,7 +219,7 @@ class Path () extends js.Object {
   def getStartPoint[O /* <: Vector2 */](): O = js.native
   def getStartPoint[O /* <: Vector2 */](out: O): O = js.native
   /**
-    * [description]
+    * Creates a line curve from the previous end point to x/y
     * @param x [description]
     * @param y [description]
     */
@@ -258,7 +258,7 @@ class Path () extends js.Object {
     */
   def toJSON(): JSONPath = js.native
   /**
-    * [description]
+    * cacheLengths must be recalculated.
     */
   def updateArcLengths(): Unit = js.native
 }

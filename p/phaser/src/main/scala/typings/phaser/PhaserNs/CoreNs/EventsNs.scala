@@ -23,6 +23,22 @@ object EventsNs extends js.Object {
     */
   val BOOT: js.Any = js.native
   /**
+    * The Game Context Lost Event.
+    * 
+    * This event is dispatched by the Game if the WebGL Renderer it is using encounters a WebGL Context Lost event from the browser.
+    * 
+    * The partner event is `CONTEXT_RESTORED`.
+    */
+  val CONTEXT_LOST: js.Any = js.native
+  /**
+    * The Game Context Restored Event.
+    * 
+    * This event is dispatched by the Game if the WebGL Renderer it is using encounters a WebGL Context Restored event from the browser.
+    * 
+    * The partner event is `CONTEXT_LOST`.
+    */
+  val CONTEXT_RESTORED: js.Any = js.native
+  /**
     * The Game Destroy Event.
     * 
     * This event is dispatched when the game instance has been told to destroy itself.

@@ -2,6 +2,7 @@ package typings.phaser.PhaserNs.TypesNs.InputNs
 
 import typings.phaser.PhaserNs.CamerasNs.Scene2DNs.Camera
 import typings.phaser.PhaserNs.GameObjectsNs.GameObject
+import typings.phaser.PhaserNs.GameObjectsNs.Shape
 import typings.phaser.phaserNumbers.`0`
 import typings.phaser.phaserNumbers.`1`
 import typings.phaser.phaserNumbers.`2`
@@ -76,6 +77,10 @@ trait InteractiveObject extends js.Object {
     */
   @JSName("hitAreaCallback")
   var hitAreaCallback_Original: HitAreaCallback = js.native
+  /**
+    * If this Interactive Object has been enabled for debug, via `InputPlugin.enableDebug` then this property holds its debug shape.
+    */
+  var hitAreaDebug: Shape = js.native
   /**
     * The x coordinate that the Pointer interacted with this object on, relative to the Game Object's top-left position.
     */

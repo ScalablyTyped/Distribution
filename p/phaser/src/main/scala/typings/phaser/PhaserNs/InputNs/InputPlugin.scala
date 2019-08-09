@@ -264,6 +264,35 @@ class InputPlugin protected () extends EventEmitter {
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): InputPlugin = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): InputPlugin = js.native
   /**
+    * Creates an Input Debug Shape for the given Game Object.
+    * 
+    * The Game Object must have _already_ been enabled for input prior to calling this method.
+    * 
+    * This is intended to assist you during development and debugging.
+    * 
+    * Debug Shapes can only be created for Game Objects that are using standard Phaser Geometry for input,
+    * including: Circle, Ellipse, Line, Polygon, Rectangle and Triangle.
+    * 
+    * Game Objects that are using their automatic hit areas are using Rectangles by default, so will also work.
+    * 
+    * The Debug Shape is created and added to the display list and is then kept in sync with the Game Object
+    * it is connected with. Should you need to modify it yourself, such as to hide it, you can access it via
+    * the Game Object property: `GameObject.input.hitAreaDebug`.
+    * 
+    * Calling this method on a Game Object that already has a Debug Shape will first destroy the old shape,
+    * before creating a new one. If you wish to remove the Debug Shape entirely, you should call the
+    * method `InputPlugin.removeDebug`.
+    * 
+    * Note that the debug shape will only show the outline of the input area. If the input test is using a
+    * pixel perfect check, for example, then this is not displayed. If you are using a custom shape, that
+    * doesn't extend one of the base Phaser Geometry objects, as your hit area, then this method will not
+    * work.
+    * @param gameObject The Game Object to create the input debug shape for.
+    * @param color The outline color of the debug shape. Default 0x00ff00.
+    */
+  def enableDebug(gameObject: GameObject): InputPlugin = js.native
+  def enableDebug(gameObject: GameObject, color: Double): InputPlugin = js.native
+  /**
     * Returns the drag state of the given Pointer for this Input Plugin.
     * 
     * The state will be one of the following:
@@ -319,6 +348,13 @@ class InputPlugin protected () extends EventEmitter {
     */
   def makePixelPerfect(): js.Function = js.native
   def makePixelPerfect(alphaTolerance: integer): js.Function = js.native
+  /**
+    * Removes an Input Debug Shape from the given Game Object.
+    * 
+    * The shape is destroyed immediately and the `hitAreaDebug` property is set to `null`.
+    * @param gameObject The Game Object to remove the input debug shape from.
+    */
+  def removeDebug(gameObject: GameObject): InputPlugin = js.native
   /**
     * Tells the Input system to set a custom cursor.
     * 

@@ -396,6 +396,8 @@ trait Mailbox extends js.Object {
     * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
     * The lifetime of the callback token is 5 minutes.
     *
+    * The token is returned as a string in the `asyncResult.value` property.
+    *
     * You can pass the token and an attachment identifier or item identifier to a third-party system. 
     * The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) GetAttachment or 
     * GetItem operation to return an attachment or item. For example, you can create a remote service to get attachments from the selected item.
@@ -405,7 +407,7 @@ trait Mailbox extends js.Object {
     * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. 
     * Your app must have ReadWriteItem permissions to call the saveAsync method.
     *
-    * [Api set: Mailbox 1.3]
+    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -422,9 +424,8 @@ trait Mailbox extends js.Object {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
-    *                 may provide additional information.
+    *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
+    *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
@@ -434,6 +435,8 @@ trait Mailbox extends js.Object {
     *
     * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
     * The lifetime of the callback token is 5 minutes.
+    *
+    * The token is returned as a string in the `asyncResult.value` property.
     *
     * *REST Tokens*
     *
@@ -474,9 +477,8 @@ trait Mailbox extends js.Object {
     *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
     *        asyncContext: Any state data that is passed to the asynchronous method.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
-    *                 may provide additional information.
+    *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
+    *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     */
   def getCallbackTokenAsync(
     options: AsyncContextOptions with Anon_IsRest,
@@ -485,7 +487,7 @@ trait Mailbox extends js.Object {
   /**
     * Gets a token identifying the user and the Office Add-in.
     *
-    * The token is provided as a string in the asyncResult.value property.
+    * The token is returned as a string in the `asyncResult.value` property.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -508,9 +510,8 @@ trait Mailbox extends js.Object {
     * 
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
-    *                 The token is provided as a string in the `asyncResult.value` property.
-    *                 If there was an error, the `error` and `diagnostics` properties of the {@link Office.AsyncResult | `asyncResult`} object
-    *                 may provide additional information.
+    *                 The token is returned as a string in the `asyncResult.value` property.
+    *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def getUserIdentityTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native

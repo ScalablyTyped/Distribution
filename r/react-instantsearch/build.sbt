@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch"
-version := "5.2-dt-20190605Z-cbbd1f"
+version := "5.2-dt-20190605Z-ab5c77"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,10 +10,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
-  "org.scalablytyped" %%% "react-instantsearch-core" % "5.2-dt-20190605Z-a83548",
-  "org.scalablytyped" %%% "react-instantsearch-dom" % "5.2-dt-20190605Z-ad9cfe",
-  "org.scalablytyped" %%% "react-instantsearch-native" % "5.3-dt-20190425Z-0ad4a4",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
+  "org.scalablytyped" %%% "react-instantsearch-core" % "5.2-dt-20190605Z-cf315c",
+  "org.scalablytyped" %%% "react-instantsearch-dom" % "5.2-dt-20190605Z-e6b37f",
+  "org.scalablytyped" %%% "react-instantsearch-native" % "5.3-dt-20190425Z-233bc4",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

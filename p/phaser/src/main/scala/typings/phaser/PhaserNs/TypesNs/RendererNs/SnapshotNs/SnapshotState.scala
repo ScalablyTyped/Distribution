@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SnapshotState extends js.Object {
   /**
+    * The height of the frame buffer, if a frame buffer grab.
+    */
+  var bufferHeight: js.UndefOr[integer] = js.native
+  /**
+    * The width of the frame buffer, if a frame buffer grab.
+    */
+  var bufferWidth: js.UndefOr[integer] = js.native
+  /**
     * The function to call after the snapshot is taken.
     */
   @JSName("callback")
@@ -26,6 +34,10 @@ trait SnapshotState extends js.Object {
     * The height of the snapshot.
     */
   var height: js.UndefOr[integer] = js.native
+  /**
+    * Is this snapshot grabbing from a frame buffer or a canvas?
+    */
+  var isFramebuffer: js.UndefOr[Boolean] = js.native
   /**
     * The format of the image to create, usually `image/png` or `image/jpeg`.
     */

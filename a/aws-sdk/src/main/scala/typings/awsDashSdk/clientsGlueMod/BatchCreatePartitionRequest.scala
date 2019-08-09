@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchCreatePartitionRequest extends js.Object {
   /**
-    * The ID of the catalog in which the partion is to be created. Currently, this should be the AWS account ID.
+    * The ID of the catalog in which the partition is to be created. Currently, this should be the AWS account ID.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**

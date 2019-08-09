@@ -244,6 +244,16 @@ class PluginManager protected () extends js.Object {
   def registerGameObject(key: String, factoryCallback: js.Function): Unit = js.native
   def registerGameObject(key: String, factoryCallback: js.Function, creatorCallback: js.Function): Unit = js.native
   /**
+    * Removes a previously registered Game Object from the global Game Object Factory and / or Creator.
+    * This is usually called from within your Plugin destruction code to help clean-up after your plugin has been removed.
+    * @param key The key of the Game Object to be removed from the factories.
+    * @param removeFromFactory Should the Game Object be removed from the Game Object Factory? Default true.
+    * @param removeFromCreator Should the Game Object be removed from the Game Object Creator? Default true.
+    */
+  def removeGameObject(key: String): Unit = js.native
+  def removeGameObject(key: String, removeFromFactory: Boolean): Unit = js.native
+  def removeGameObject(key: String, removeFromFactory: Boolean, removeFromCreator: Boolean): Unit = js.native
+  /**
     * Removes a global plugin from the Plugin Manager and Plugin Cache.
     * 
     * It is up to you to remove all references to this plugin that you may hold within your game code.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait TableVersionError extends js.Object {
   /**
-    * Detail about the error.
+    * The details about the error.
     */
   var ErrorDetail: js.UndefOr[typings.awsDashSdk.clientsGlueMod.ErrorDetail] = js.undefined
   /**

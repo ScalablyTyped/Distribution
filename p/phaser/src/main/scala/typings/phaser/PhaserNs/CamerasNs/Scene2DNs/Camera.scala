@@ -492,6 +492,10 @@ class Camera protected ()
   def shake(duration: integer, intensity: Double, force: Boolean): Camera = js.native
   def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function): Camera = js.native
   def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function, context: js.Any): Camera = js.native
+  def shake(duration: integer, intensity: Vector2): Camera = js.native
+  def shake(duration: integer, intensity: Vector2, force: Boolean): Camera = js.native
+  def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function): Camera = js.native
+  def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function, context: js.Any): Camera = js.native
   def startFollow(target: js.Object): this.type = js.native
   def startFollow(target: js.Object, roundPixels: Boolean): this.type = js.native
   def startFollow(target: js.Object, roundPixels: Boolean, lerpX: Double): this.type = js.native

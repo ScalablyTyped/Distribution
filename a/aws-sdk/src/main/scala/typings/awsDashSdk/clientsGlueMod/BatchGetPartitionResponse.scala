@@ -10,7 +10,7 @@ trait BatchGetPartitionResponse extends js.Object {
     */
   var Partitions: js.UndefOr[PartitionList] = js.undefined
   /**
-    * A list of the partition values in the request for which partions were not returned.
+    * A list of the partition values in the request for which partitions were not returned.
     */
   var UnprocessedKeys: js.UndefOr[BatchGetPartitionValueList] = js.undefined
 }

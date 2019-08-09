@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdatePartitionRequest extends js.Object {
   /**
-    * The ID of the Data Catalog where the partition to be updated resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the partition to be updated resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
@@ -14,7 +14,7 @@ trait UpdatePartitionRequest extends js.Object {
     */
   var DatabaseName: NameString
   /**
-    * The new partition object to which to update the partition.
+    * The new partition object to update the partition to.
     */
   var PartitionInput: typings.awsDashSdk.clientsGlueMod.PartitionInput
   /**
@@ -22,7 +22,7 @@ trait UpdatePartitionRequest extends js.Object {
     */
   var PartitionValueList: BoundedPartitionValueList
   /**
-    * The name of the table where the partition to be updated is located.
+    * The name of the table in which the partition to be updated is located.
     */
   var TableName: NameString
 }

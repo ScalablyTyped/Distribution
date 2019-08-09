@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait DeleteDatabaseRequest extends js.Object {
   /**
-    * The ID of the Data Catalog in which the database resides. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which the database resides. If none is provided, the AWS account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   /**
-    * The name of the Database to delete. For Hive compatibility, this must be all lowercase.
+    * The name of the database to delete. For Hive compatibility, this must be all lowercase.
     */
   var Name: NameString
 }

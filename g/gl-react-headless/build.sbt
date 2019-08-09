@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gl-react-headless"
-version := "3.15-dt-20181122Z-d92c5a"
+version := "3.15-dt-20181122Z-8aa161"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-72a9d4",
+  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-418810",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

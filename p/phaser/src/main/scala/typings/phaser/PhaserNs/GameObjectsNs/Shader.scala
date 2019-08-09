@@ -14,13 +14,16 @@ import typings.phaser.PhaserNs.InputNs.Pointer
 import typings.phaser.PhaserNs.RendererNs.CanvasNs.CanvasRenderer
 import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
 import typings.phaser.PhaserNs.Scene
+import typings.phaser.PhaserNs.TexturesNs.Texture
 import typings.phaser.integer
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Uint8Array
 import typings.std.WebGLBuffer
+import typings.std.WebGLFramebuffer
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
+import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -151,9 +154,19 @@ class Shader protected ()
   /* CompleteClass */
   override var displayWidth: Double = js.native
   /**
+    * A reference to the GL Frame Buffer this Shader is drawing to.
+    * This property is only set if you have called `Shader.setRenderToTexture`.
+    */
+  var framebuffer: WebGLFramebuffer = js.native
+  /**
     * The WebGL context belonging to the renderer.
     */
   var gl: WebGLRenderingContext = js.native
+  /**
+    * A reference to the WebGLTexture this Shader is rendering to.
+    * This property is only set if you have called `Shader.setRenderToTexture`.
+    */
+  var glTexture: WebGLTexture = js.native
   /**
     * The native (un-scaled) height of this Game Object.
     * 
@@ -177,6 +190,14 @@ class Shader protected ()
     */
   val projectionMatrix: Float32Array = js.native
   /**
+    * A flag that indicates if this Shader has been set to render to a texture instead of the display list.
+    * 
+    * This property is `true` if you have called `Shader.setRenderToTexture`, otherwise it's `false`.
+    * 
+    * A Shader that is rendering to a texture _does not_ appear on the display list.
+    */
+  val renderToTexture: Boolean = js.native
+  /**
     * A reference to the current renderer.
     * Shaders only work with the WebGL Renderer.
     */
@@ -186,6 +207,12 @@ class Shader protected ()
     * Empty by default and set during a call to the `setShader` method.
     */
   var shader: BaseShader = js.native
+  /**
+    * A reference to the Phaser.Textures.Texture that has been stored in the Texture Manager for this Shader.
+    * 
+    * This property is only set if you have called `Shader.setRenderToTexture`, otherwise it is `null`.
+    */
+  var texture: Texture = js.native
   /**
     * The default uniform mappings. These can be added to (or replaced) by specifying your own uniforms when
     * creating this shader game object. The uniforms are updated automatically during the render step.
@@ -251,6 +278,7 @@ class Shader protected ()
     * for flush to be called.
     * @param matrix2D The transform matrix to use during rendering.
     */
+  def load(): Unit = js.native
   def load(matrix2D: TransformMatrix): Unit = js.native
   /**
     * Internal destroy handler, called as part of the destroy process.
@@ -339,10 +367,48 @@ class Shader protected ()
   def setPointer(): this.type = js.native
   def setPointer(pointer: Pointer): this.type = js.native
   /**
+    * Changes this Shader so instead of rendering to the display list it renders to a
+    * WebGL Framebuffer and WebGL Texture instead. This allows you to use the output
+    * of this shader as an input for another shader, by mapping a sampler2D uniform
+    * to it.
+    * 
+    * After calling this method the `Shader.framebuffer` and `Shader.glTexture` properties
+    * are populated.
+    * 
+    * Additionally, you can provide a key to this method. Doing so will create a Phaser Texture
+    * from this Shader and save it into the Texture Manager, allowing you to then use it for
+    * any texture-based Game Object, such as a Sprite or Image:
+    * 
+    * ```javascript
+    * var shader = this.add.shader('myShader', x, y, width, height);
+    * 
+    * shader.setRenderToTexture('doodle');
+    * 
+    * this.add.image(400, 300, 'doodle');
+    * ```
+    * 
+    * Note that it stores an active reference to this Shader. That means as this shader updates,
+    * so does the texture and any object using it to render with. Also, if you destroy this
+    * shader, be sure to clear any objects that may have been using it as a texture too.
+    * 
+    * You can access the Phaser Texture that is created via the `Shader.texture` property.
+    * 
+    * By default it will create a single base texture. You can add frames to the texture
+    * by using the `Texture.add` method. After doing this, you can then allow Game Objects
+    * to use a specific frame from a Render Texture.
+    * @param key The unique key to store the texture as within the global Texture Manager.
+    * @param flipY Does this texture need vertically flipping before rendering? This should usually be set to `true` if being fed from a buffer. Default false.
+    */
+  def setRenderToTexture(): this.type = js.native
+  def setRenderToTexture(key: String): this.type = js.native
+  def setRenderToTexture(key: String, flipY: Boolean): this.type = js.native
+  /**
     * Sets a sampler2D uniform on this shader.
     * 
     * The textureKey given is the key from the Texture Manager cache. You cannot use a single frame
     * from a texture, only the full image. Also, lots of shaders expect textures to be power-of-two sized.
+    * 
+    * If you wish to use another Shader as a sampler2D input for this shader, see the `Shader.setSampler2DBuffer` method.
     * @param uniformKey The key of the sampler2D uniform to be updated, i.e. `iChannel0`.
     * @param textureKey The key of the texture, as stored in the Texture Manager. Must already be loaded.
     * @param textureIndex The texture index. Default 0.
@@ -351,6 +417,41 @@ class Shader protected ()
   def setSampler2D(uniformKey: String, textureKey: String): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer, textureData: js.Any): this.type = js.native
+  /**
+    * Sets a sampler2D uniform on this shader where the source texture is a WebGLTexture.
+    * 
+    * This allows you to feed the output from one Shader into another:
+    * 
+    * ```javascript
+    * let shader1 = this.add.shader(baseShader1, 0, 0, 512, 512).setRenderToTexture();
+    * let shader2 = this.add.shader(baseShader2, 0, 0, 512, 512).setRenderToTexture('output');
+    * 
+    * shader1.setSampler2DBuffer('iChannel0', shader2.glTexture, 512, 512);
+    * shader2.setSampler2DBuffer('iChannel0', shader1.glTexture, 512, 512);
+    * ```
+    * 
+    * In the above code, the result of baseShader1 is fed into Shader2 as the `iChannel0` sampler2D uniform.
+    * The result of baseShader2 is then fed back into shader1 again, creating a feedback loop.
+    * 
+    * If you wish to use an image from the Texture Manager as a sampler2D input for this shader,
+    * see the `Shader.setSampler2D` method.
+    * @param uniformKey The key of the sampler2D uniform to be updated, i.e. `iChannel0`.
+    * @param texture A WebGLTexture reference.
+    * @param width The width of the texture.
+    * @param height The height of the texture.
+    * @param textureIndex The texture index. Default 0.
+    * @param textureData Additional texture data.
+    */
+  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer): this.type = js.native
+  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer, textureIndex: integer): this.type = js.native
+  def setSampler2DBuffer(
+    uniformKey: String,
+    texture: WebGLTexture,
+    width: integer,
+    height: integer,
+    textureIndex: integer,
+    textureData: js.Any
+  ): this.type = js.native
   /**
     * Sets the fragment and, optionally, the vertex shader source code that this Shader will use.
     * This will immediately delete the active shader program, if set, and then create a new one

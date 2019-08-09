@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait TableInput extends js.Object {
   /**
-    * Description of the table.
+    * A description of the table.
     */
   var Description: js.UndefOr[DescriptionString] = js.undefined
   /**
-    * Last time the table was accessed.
+    * The last time that the table was accessed.
     */
   var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Last time column statistics were computed for this table.
+    * The last time that column statistics were computed for this table.
     */
   var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Name of the table. For Hive compatibility, this is folded to lowercase when it is stored.
+    * The table name. For Hive compatibility, this is folded to lowercase when it is stored.
     */
   var Name: NameString
   /**
-    * Owner of the table.
+    * The table owner.
     */
   var Owner: js.UndefOr[NameString] = js.undefined
   /**
@@ -30,11 +30,11 @@ trait TableInput extends js.Object {
     */
   var Parameters: js.UndefOr[ParametersMap] = js.undefined
   /**
-    * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When creating a table used by Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
+    * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When you create a table used by Amazon Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
     */
   var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
   /**
-    * Retention time for this table.
+    * The retention time for this table.
     */
   var Retention: js.UndefOr[NonNegativeInteger] = js.undefined
   /**

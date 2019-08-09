@@ -9,10 +9,10 @@ import typings.phaser.PhaserNs.Scene
 import typings.phaser.PhaserNs.StructsNs.Size
 import typings.phaser.PhaserNs.TypesNs.RendererNs.SnapshotNs.SnapshotCallback
 import typings.phaser.PhaserNs.TypesNs.RendererNs.SnapshotNs.SnapshotState
-import typings.phaser.WebGLContextCallback
 import typings.phaser.integer
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
+import typings.std.GLenum
 import typings.std.HTMLCanvasElement
 import typings.std.Uint32Array
 import typings.std.WebGLBuffer
@@ -65,9 +65,19 @@ class WebGLRenderer protected () extends js.Object {
     */
   var config: js.Object = js.native
   /**
-    * Set to `true` if the WebGL context of the renderer is lost.
+    * This property is set to `true` if the WebGL context of the renderer is lost.
     */
   var contextLost: Boolean = js.native
+  /**
+    * The handler to invoke when the context is lost.
+    * This should not be changed and is set in the boot method.
+    */
+  var contextLostHandler: js.Function = js.native
+  /**
+    * The handler to invoke when the context is restored.
+    * This should not be changed and is set in the boot method.
+    */
+  var contextRestoredHandler: js.Function = js.native
   /**
     * Cached value for the last texture unit that was used
     */
@@ -113,6 +123,11 @@ class WebGLRenderer protected () extends js.Object {
     */
   var currentTextures: js.Array[_] = js.native
   /**
+    * The `type` of the Game Object being currently rendered.
+    * This can be used by advanced render functions for batching look-ahead.
+    */
+  var currentType: String = js.native
+  /**
     * Current WebGLBuffer (Vertex buffer) in use
     */
   var currentVertexBuffer: WebGLBuffer = js.native
@@ -151,10 +166,6 @@ class WebGLRenderer protected () extends js.Object {
     */
   var height: integer = js.native
   /**
-    * An array of functions to invoke if the WebGL context is lost.
-    */
-  var lostContextCallbacks: js.Array[WebGLContextCallback] = js.native
-  /**
     * The total number of masks currently stacked.
     */
   var maskCount: integer = js.native
@@ -167,13 +178,19 @@ class WebGLRenderer protected () extends js.Object {
     */
   var nativeTextures: js.Array[_] = js.native
   /**
+    * Is the `type` of the Game Object being currently rendered different than the
+    * type of the object before it in the display list? I.e. it's a 'new' type.
+    */
+  var newType: Boolean = js.native
+  /**
+    * Does the `type` of the next Game Object in the display list match that
+    * of the object being currently rendered?
+    */
+  var nextTypeMatch: Boolean = js.native
+  /**
     * This object will store all pipelines created through addPipeline
     */
   var pipelines: js.Object = js.native
-  /**
-    * An array of functions to invoke if the WebGL context is restored.
-    */
-  var restoredContextCallbacks: js.Array[WebGLContextCallback] = js.native
   /**
     * Stack of scissor data
     */
@@ -199,10 +216,12 @@ class WebGLRenderer protected () extends js.Object {
   var width: integer = js.native
   /**
     * Creates a new custom blend mode for the renderer.
+    * 
+    * See https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants#Blending_modes
     * @param func An array containing the WebGL functions to use for the source and the destination blending factors, respectively. See the possible constants for {@link WebGLRenderingContext#blendFunc()}.
     * @param equation The equation to use for combining the RGB and alpha components of a new pixel with a rendered one. See the possible constants for {@link WebGLRenderingContext#blendEquation()}.
     */
-  def addBlendMode(func: js.Function, equation: js.Function): integer = js.native
+  def addBlendMode(func: js.Array[GLenum], equation: GLenum): integer = js.native
   /**
     * Adds a pipeline instance into the collection of pipelines
     * @param pipelineName A unique string-based key for the pipeline.
@@ -351,18 +370,6 @@ class WebGLRenderer protected () extends js.Object {
     * @param config The configuration object for the renderer.
     */
   def init(config: js.Object): this.type = js.native
-  /**
-    * Adds a callback to be invoked when the WebGL context has been lost by the browser.
-    * @param callback The callback to be invoked on context loss.
-    * @param target The context of the callback.
-    */
-  def onContextLost(callback: WebGLContextCallback, target: js.Object): this.type = js.native
-  /**
-    * Adds a callback to be invoked when the WebGL context has been restored by the browser.
-    * @param callback The callback to be invoked on context restoration.
-    * @param target The context of the callback.
-    */
-  def onContextRestored(callback: WebGLContextCallback, target: js.Object): this.type = js.native
   /**
     * The event handler that manages the `resize` event dispatched by the Scale Manager.
     * @param gameSize The default Game Size object. This is the un-modified game dimensions.
@@ -698,6 +705,40 @@ class WebGLRenderer protected () extends js.Object {
     callback: SnapshotCallback,
     `type`: String,
     encoderOptions: Double
+  ): this.type = js.native
+  /**
+    * Takes a snapshot of the given area of the given frame buffer.
+    * 
+    * Unlike the other snapshot methods, this one is processed immediately and doesn't wait for the next render.
+    * 
+    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer into an ArrayBufferView.
+    * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
+    * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
+    * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * @param framebuffer The framebuffer to grab from.
+    * @param bufferWidth The width of the framebuffer.
+    * @param bufferHeight The height of the framebuffer.
+    * @param callback The Function to invoke after the snapshot image is created.
+    * @param getPixel Grab a single pixel as a Color object, or an area as an Image object? Default false.
+    * @param x The x coordinate to grab from. Default 0.
+    * @param y The y coordinate to grab from. Default 0.
+    * @param width The width of the area to grab. Default bufferWidth.
+    * @param height The height of the area to grab. Default bufferHeight.
+    * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+    * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+    */
+  def snapshotFramebuffer(
+    framebuffer: WebGLFramebuffer,
+    bufferWidth: integer,
+    bufferHeight: integer,
+    callback: SnapshotCallback,
+    getPixel: js.UndefOr[Boolean],
+    x: js.UndefOr[integer],
+    y: js.UndefOr[integer],
+    width: js.UndefOr[integer],
+    height: js.UndefOr[integer],
+    `type`: js.UndefOr[String],
+    encoderOptions: js.UndefOr[Double]
   ): this.type = js.native
   /**
     * Schedules a snapshot of the given pixel from the game viewport to be taken after the current frame is rendered.

@@ -27,6 +27,15 @@ class Client () extends js.Object {
   def introspect(token: String): js.Promise[IntrospectionResponse] = js.native
   def introspect(token: String, tokenTypeHint: String): js.Promise[IntrospectionResponse] = js.native
   def introspect(token: String, tokenTypeHint: String, extras: Anon_IntrospectBody): js.Promise[IntrospectionResponse] = js.native
+  /**
+    * Revokes a token at the Authorization Server's `revocation_endpoint`.
+    *
+    * @param token Token to revoke
+    * @param tokenTypeHint Hint the Authorization Server as to the token type
+    * @param extras Additional revoke options
+    */
+  def revoke(token: String, tokenTypeHint: String): js.Promise[Unit] = js.native
+  def revoke(token: String, tokenTypeHint: String, extras: RevokeRequestOptions): js.Promise[Unit] = js.native
   def userinfo(accessToken: String): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
   def userinfo(accessToken: TokenSet): js.Promise[StringDictionary[js.UndefOr[js.Object | Null]]] = js.native
 }

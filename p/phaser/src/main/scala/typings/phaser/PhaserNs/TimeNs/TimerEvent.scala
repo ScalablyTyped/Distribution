@@ -100,7 +100,7 @@ class TimerEvent protected () extends js.Object {
   def getRepeatCount(): Double = js.native
   /**
     * Forces the Timer Event to immediately expire, thus scheduling its removal in the next frame.
-    * @param dispatchCallback If `true` (by default `false`), the function of the Timer Event will be called before its removal from its Clock.
+    * @param dispatchCallback If `true`, the function of the Timer Event will be called before its removal. Default false.
     */
   def remove(): Unit = js.native
   def remove(dispatchCallback: Boolean): Unit = js.native

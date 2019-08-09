@@ -12,7 +12,9 @@ import typings.phaser.PhaserNs.RendererNs.CanvasNs.CanvasRenderer
 import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
 import typings.phaser.PhaserNs.ScaleNs.ScaleManager
 import typings.phaser.PhaserNs.ScenesNs.SceneManager
-import typings.phaser.PhaserNs.SoundNs.BaseSoundManager
+import typings.phaser.PhaserNs.SoundNs.HTML5AudioSoundManager
+import typings.phaser.PhaserNs.SoundNs.NoAudioSoundManager
+import typings.phaser.PhaserNs.SoundNs.WebAudioSoundManager
 import typings.phaser.PhaserNs.TexturesNs.TextureManager
 import typings.phaser.PhaserNs.TypesNs.CoreNs.GameConfig
 import typings.std.CanvasRenderingContext2D
@@ -159,7 +161,7 @@ class Game () extends js.Object {
     * 
     * You can disable the inclusion of the Sound Manager in your build by toggling the webpack `FEATURE_SOUND` flag.
     */
-  var sound: BaseSoundManager = js.native
+  var sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager = js.native
   /**
     * An instance of the Texture Manager.
     * 

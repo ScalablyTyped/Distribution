@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchDeletePartitionResponse extends js.Object {
   /**
-    * Errors encountered when trying to delete the requested partitions.
+    * The errors encountered when trying to delete the requested partitions.
     */
   var Errors: js.UndefOr[PartitionErrors] = js.undefined
 }

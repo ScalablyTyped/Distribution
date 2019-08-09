@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-test-renderer
 
-Typings are for version 16.8
+Typings are for version 16.9
 
 ## Library description:
 React package for snapshot testing.

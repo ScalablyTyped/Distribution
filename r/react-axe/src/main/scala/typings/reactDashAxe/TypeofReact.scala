@@ -73,6 +73,7 @@ trait TypeofReact extends js.Object {
   // tslint:disable-next-line:no-empty-interface
   var Component: TypeofClassComponent = js.native
   val Fragment: ExoticComponent[Anon_Children] = js.native
+  val Profiler: ExoticComponent[ProfilerProps] = js.native
   var PureComponent: Instantiable0[typings.react.reactMod.PureComponent[js.Object, js.Object, js.Object]] = js.native
   val StrictMode: ExoticComponent[Anon_Children] = js.native
   /**
@@ -80,7 +81,6 @@ trait TypeofReact extends js.Object {
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
-  val unstable_Profiler: ExoticComponent[ProfilerProps] = js.native
   val version: String = js.native
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P]): FunctionComponentElement[P] = js.native

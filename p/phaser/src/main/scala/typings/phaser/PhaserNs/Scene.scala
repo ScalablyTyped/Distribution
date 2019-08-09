@@ -29,6 +29,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * A base Phaser.Scene class which can be extended for your own use.
+  * 
+  * You can also define the optional methods {@link Phaser.Types.Scenes.SceneInitCallback init()}, {@link Phaser.Types.Scenes.ScenePreloadCallback preload()}, and {@link Phaser.Types.Scenes.SceneCreateCallback create()}.
   */
 @JSGlobal("Phaser.Scene")
 @js.native

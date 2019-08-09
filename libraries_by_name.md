@@ -658,7 +658,6 @@
 | [bytebuffer](./b/bytebuffer) | The swiss army knife for binary data in JavaScript | net, array, buffer, arraybuffer, typed array, bytebuffer, json, websocket, webrtc |
 | [bytes](./b/bytes) | Utility to parse a string bytes to bytes and vice- | byte, bytes, utility, parse, parser, convert, converter |
 | [bytewise](./b/bytewise) | Binary serialization which sorts bytewise for arbi | binary, sort, collation, serialization, leveldb, indexeddb |
-| [c3](./c/c3) | D3-based reusable chart library | d3, chart, graph |
 | [cache-manager](./c/cache-manager) | Cache module for Node.js | cache, redis, lru-cache, memory cache, multiple cache |
 | [cacheable-request](./c/cacheable-request) | Wrap native HTTP requests with RFC compliant cache | HTTP, HTTPS, cache, caching, layer, cacheable, RFC 7234, RFC, 7234, compliant |
 | [cached-path-relative](./c/cached-path-relative) | Memoize the results of the path.relative function | - |
@@ -1404,6 +1403,7 @@
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for  | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
 | [ecol](./e/ecol) | Event Collections | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
+| [ecore](./e/ecore) | Ecore (EMOF) JavaScript Implementation | emf, emof, model |
 | [ecurve](./e/ecurve) | Elliptic curve cryptography | cryptography, crypto, bitcoin, litecoin, elliptic, curve |
 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
@@ -1703,6 +1703,7 @@
 | [fast-list](./f/fast-list) | A fast linked list (good for queues, stacks, etc.) | - |
 | [fast-ratelimit](./f/fast-ratelimit) | Fast and efficient in-memory rate-limit for Node,  | ratelimit, rate-limit, rate, limit, attack, flood, security, dos, ddos |
 | [fast-safe-stringify](./f/fast-safe-stringify) | Safely and quickly serialize JavaScript objects | stable, stringify, JSON, JSON.stringify, safe, serialize |
+| [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th | knuth, fisher-yates, shuffle, deterministic, pure |
 | [fast-stats](./f/fast-stats) | Quickly calculate common statistics on lists of nu | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
 | [fast64](./f/fast64) | The fastest in-browser base64 library | - |
 | [fastclick](./f/fastclick) | Polyfill to remove click delays on browsers with t | fastclick, mobile, touch, tap, click, delay |
@@ -3416,6 +3417,7 @@
 | [leaflet-editable](./l/leaflet-editable) | Make geometries editable in Leaflet | leaflet, map |
 | [leaflet-fullscreen](./l/leaflet-fullscreen) | A fullscreen control for Leaflet | leaflet, maps, fullscreen, client |
 | [leaflet-geocoder-mapzen](./l/leaflet-geocoder-mapzen) | Add Mapzen Search geocoding to your Leaflet map. | leaflet, plugin, search, geocoder, pelias, mapzen |
+| [leaflet-geosearch](./l/leaflet-geosearch) | Adds support for address lookup (a.k.a. geocoding  | geolocation, geocoding, plugins, leaflet, geo, map |
 | [leaflet-gpx](./l/leaflet-gpx) | npm for https://github.com/mpetazzoni/leaflet-gpx | leaflet, gpx |
 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet | leaflet |
 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps | gis, map |
@@ -3426,6 +3428,7 @@
 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet. | - |
 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet | leaflet, routing, osrm |
 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu | leaflet, map, icons |
+| [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil | leaflet, leaflet.markercluster, plugins, maps, subgroup |
 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but | leaflet, plugins, maps, fullscreen |
 | [leaflet_dot_gridlayer_dot](./l/leaflet_dot_gridlayer_dot_googlemutant) | A plugin for LeafletJS to use Google maps basemaps | leaflet, google maps |
 | [leaflet_dot_heat](./l/leaflet_dot_heat) | A tiny and fast Leaflet heatmap plugin. | heatmap, canvas, visualization, gis, leaflet, plugin |
@@ -4701,6 +4704,7 @@
 | [path-type](./p/path-type) | Check if a path is a file, directory, or symlink | path, fs, type, is, check, directory, dir, file, filepath, symlink, symbolic, link, stat, stats, filesystem |
 | [pathfinding](./p/pathfinding) | Comprehensive pathfinding library for grid based g | pathfinding, astar, dijkstra, game, algorithm, jumppoint, depthfirst, breadthfirst |
 | [pathjs](./p/pathjs) | Routing library for 'single page' applications | ender, path, hash, pushState, routing |
+| [pathval](./p/pathval) | Object value retrieval given a string path | pathval, value retrieval, chai util |
 | [pathwatcher](./p/pathwatcher) | Watch files and directories for changes | - |
 | [pause](./p/pause) | Pause a stream's data events | - |
 | [payment](./p/payment) | A general purpose library for building credit card | payment, cc, card |
@@ -5893,7 +5897,10 @@
 | [rollup-plugin-node-builti](./r/rollup-plugin-node-builtins) | use node builtins in browser with rollup | rollup-plugin |
 | [rollup-plugin-node-global](./r/rollup-plugin-node-globals) | insert the same globals browserify does | rollup-plugin |
 | [rollup-plugin-node-resolv](./r/rollup-plugin-node-resolve) | Bundle third-party dependencies in node_modules | rollup, rollup-plugin, es2015, npm, modules |
+| [rollup-plugin-postcss](./r/rollup-plugin-postcss) | Seamless integration between Rollup and PostCSS | postcss, rollup |
+| [rollup-plugin-progress](./r/rollup-plugin-progress) | Rollup Progress Plugin | rollup, plugin, progress, progressbar |
 | [rollup-plugin-sourcemaps](./r/rollup-plugin-sourcemaps) | Rollup plugin for grabbing source maps from source | rollup, rollup-plugin, es2015, sourcemap, source-map, sourceMappingURL |
+| [rollup-plugin-url](./r/rollup-plugin-url) | Inline import files as data-URIs, or copy them to  | rollup-plugin, url, inline, copy |
 | [rollup-pluginutils](./r/rollup-pluginutils) | Functionality commonly needed by Rollup plugins | rollup, utils |
 | [rollup-typescript](./r/rollup-typescript) | Seamless integration between Rollup and TypeScript | rollup-plugin, typescript, es2015 |
 | [roman-numerals](./r/roman-numerals) | Roman numerals conversion module | roman, numerals, conversion |

@@ -49,6 +49,11 @@ class Triangle protected () extends js.Object {
     */
   var top: Double = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.TRIANGLE`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * `x` coordinate of the first point.
     */
   var x1: Double = js.native

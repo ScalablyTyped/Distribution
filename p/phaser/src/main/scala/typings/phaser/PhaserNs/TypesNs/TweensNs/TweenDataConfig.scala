@@ -1,158 +1,152 @@
 package typings.phaser.PhaserNs.TypesNs.TweensNs
 
+import typings.phaser.PhaserNs.TweensNs.Tween
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TweenDataConfig extends js.Object {
   /**
     * Ease value data.
     */
-  var current: js.UndefOr[Double] = js.undefined
+  var current: js.UndefOr[Double] = js.native
   /**
     * Time in ms/frames before tween will start.
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * Duration of the tween in ms/frames, excludes time for yoyo or repeats.
     */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * The ease function this tween uses.
     */
-  var ease: js.Function
+  var ease: js.Function = js.native
   /**
     * Delta counter
     */
-  var elapsed: js.UndefOr[Double] = js.undefined
+  var elapsed: js.UndefOr[Double] = js.native
   /**
     * Ease value data.
     */
-  var end: js.UndefOr[Double] = js.undefined
+  var end: js.UndefOr[Double] = js.native
   /**
     * Automatically call toggleFlipX when the TweenData yoyos or repeats
     */
-  var flipX: js.UndefOr[Boolean] = js.undefined
+  var flipX: js.UndefOr[Boolean] = js.native
   /**
     * Automatically call toggleFlipY when the TweenData yoyos or repeats
     */
-  var flipY: js.UndefOr[Boolean] = js.undefined
+  var flipY: js.UndefOr[Boolean] = js.native
   /**
     * LoadValue generation functions.
     */
-  var gen: js.UndefOr[TweenDataGenConfig] = js.undefined
+  var gen: js.UndefOr[TweenDataGenConfig] = js.native
+  /**
+    * If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
+    */
+  @JSName("getActiveValue")
+  var getActiveValue_Original: GetActiveCallback = js.native
   /**
     * The returned value sets what the property will be at the END of the Tween.
     */
-  var getEndValue: js.Function
+  @JSName("getEndValue")
+  var getEndValue_Original: GetEndCallback = js.native
   /**
     * The returned value sets what the property will be at the START of the Tween.
     */
-  var getStartValue: js.Function
+  @JSName("getStartValue")
+  var getStartValue_Original: GetStartCallback = js.native
   /**
     * Time in ms/frames the tween will pause before running the yoyo or starting a repeat.
     */
-  var hold: js.UndefOr[Double] = js.undefined
+  var hold: js.UndefOr[Double] = js.native
+  /**
+    * The target index within the Tween targets array.
+    */
+  var index: integer = js.native
   /**
     * The property of the target being tweened.
     */
-  var key: String
+  var key: String = js.native
   /**
     * Between 0 and 1 showing completion of this TweenData.
     */
-  var progress: js.UndefOr[Double] = js.undefined
+  var progress: js.UndefOr[Double] = js.native
   /**
     * Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of '1' will play the tween twice.
     */
-  var repeat: js.UndefOr[integer] = js.undefined
+  var repeat: js.UndefOr[integer] = js.native
   /**
     * How many repeats are left to run?
     */
-  var repeatCounter: js.UndefOr[integer] = js.undefined
+  var repeatCounter: js.UndefOr[integer] = js.native
   /**
     * Time in ms/frames before the repeat will start.
     */
-  var repeatDelay: js.UndefOr[Double] = js.undefined
+  var repeatDelay: js.UndefOr[Double] = js.native
   /**
     * Ease value data.
     */
-  var start: js.UndefOr[Double] = js.undefined
+  var start: js.UndefOr[Double] = js.native
   /**
     * TWEEN_CONST.CREATED
     */
-  var state: js.UndefOr[integer] = js.undefined
+  var state: js.UndefOr[integer] = js.native
   /**
     * Time duration 1.
     */
-  var t1: js.UndefOr[Double] = js.undefined
+  var t1: js.UndefOr[Double] = js.native
   /**
     * Time duration 2.
     */
-  var t2: js.UndefOr[Double] = js.undefined
+  var t2: js.UndefOr[Double] = js.native
   /**
     * The target to tween.
     */
-  var target: js.Any
+  var target: js.Any = js.native
   /**
     * The total calculated duration of this TweenData (based on duration, repeat, delay and yoyo)
     */
-  var totalDuration: js.UndefOr[Double] = js.undefined
+  var totalDuration: js.UndefOr[Double] = js.native
   /**
     * Cause the tween to return back to its start value after hold has expired.
     */
-  var yoyo: js.UndefOr[Boolean] = js.undefined
-}
-
-object TweenDataConfig {
-  @scala.inline
-  def apply(
-    ease: js.Function,
-    getEndValue: js.Function,
-    getStartValue: js.Function,
-    key: String,
+  var yoyo: js.UndefOr[Boolean] = js.native
+  /**
+    * If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
+    */
+  def getActiveValue(
     target: js.Any,
-    current: Int | Double = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    elapsed: Int | Double = null,
-    end: Int | Double = null,
-    flipX: js.UndefOr[Boolean] = js.undefined,
-    flipY: js.UndefOr[Boolean] = js.undefined,
-    gen: TweenDataGenConfig = null,
-    hold: Int | Double = null,
-    progress: Int | Double = null,
-    repeat: js.UndefOr[integer] = js.undefined,
-    repeatCounter: js.UndefOr[integer] = js.undefined,
-    repeatDelay: Int | Double = null,
-    start: Int | Double = null,
-    state: js.UndefOr[integer] = js.undefined,
-    t1: Int | Double = null,
-    t2: Int | Double = null,
-    totalDuration: Int | Double = null,
-    yoyo: js.UndefOr[Boolean] = js.undefined
-  ): TweenDataConfig = {
-    val __obj = js.Dynamic.literal(ease = ease, getEndValue = getEndValue, getStartValue = getStartValue, key = key, target = target)
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
-    if (gen != null) __obj.updateDynamic("gen")(gen)
-    if (hold != null) __obj.updateDynamic("hold")(hold.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
-    if (!js.isUndefined(repeatCounter)) __obj.updateDynamic("repeatCounter")(repeatCounter)
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state)
-    if (t1 != null) __obj.updateDynamic("t1")(t1.asInstanceOf[js.Any])
-    if (t2 != null) __obj.updateDynamic("t2")(t2.asInstanceOf[js.Any])
-    if (totalDuration != null) __obj.updateDynamic("totalDuration")(totalDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo)
-    __obj.asInstanceOf[TweenDataConfig]
-  }
+    key: String,
+    value: Double,
+    targetIndex: integer,
+    totalTargets: integer,
+    tween: Tween
+  ): Unit = js.native
+  /**
+    * The returned value sets what the property will be at the END of the Tween.
+    */
+  def getEndValue(
+    target: js.Any,
+    key: String,
+    value: Double,
+    targetIndex: integer,
+    totalTargets: integer,
+    tween: Tween
+  ): Unit = js.native
+  /**
+    * The returned value sets what the property will be at the START of the Tween.
+    */
+  def getStartValue(
+    target: js.Any,
+    key: String,
+    value: Double,
+    targetIndex: integer,
+    totalTargets: integer,
+    tween: Tween
+  ): Unit = js.native
 }
 

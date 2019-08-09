@@ -56,6 +56,11 @@ class Rectangle () extends js.Object {
     */
   var top: Double = js.native
   /**
+    * The geometry constant type of this object: `GEOM_CONST.RECTANGLE`.
+    * Used for fast type comparisons.
+    */
+  val `type`: integer = js.native
+  /**
     * The width of the Rectangle, i.e. the distance between its left side (defined by `x`) and its right side.
     */
   var width: Double = js.native
@@ -232,7 +237,7 @@ object Rectangle extends js.Object {
     * 
     * Unlike the `FitOutside` function, there may be some space inside the source area not covered.
     * @param target The target rectangle to adjust.
-    * @param source The source rectangle to envlope the target in.
+    * @param source The source rectangle to envelop the target in.
     */
   def FitInside[O /* <: Rectangle */](target: O, source: Rectangle): O = js.native
   /**
@@ -292,7 +297,8 @@ object Rectangle extends js.Object {
   def GetPoints[O /* <: js.Array[Point] */](rectangle: Rectangle, step: Double, quantity: integer): O = js.native
   def GetPoints[O /* <: js.Array[Point] */](rectangle: Rectangle, step: Double, quantity: integer, out: O): O = js.native
   /**
-    * [description]
+    * The size of the Rectangle object, expressed as a Point object
+    *  with the values of the width and height properties.
     * @param rect [description]
     * @param out [description]
     */
@@ -318,7 +324,8 @@ object Rectangle extends js.Object {
   def Intersection[O /* <: Rectangle */](rectA: Rectangle, rectB: Rectangle): O = js.native
   def Intersection[O /* <: Rectangle */](rectA: Rectangle, rectB: Rectangle, out: Rectangle): O = js.native
   /**
-    * [description]
+    * Return an array of points from the perimeter of the rectangle
+    *  each spaced out based on the quantity or step required
     * @param rect [description]
     * @param step [description]
     * @param quantity [description]

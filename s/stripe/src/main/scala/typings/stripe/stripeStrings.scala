@@ -4,7 +4,7 @@ import typings.stripe.stripeMod.creditNotesNs.CreditNoteReason
 import typings.stripe.stripeMod.errorsNs.RawType
 import typings.stripe.stripeMod.fileUploadsNs.IPurpose
 import typings.stripe.stripeMod.ordersNs.OrderStatus
-import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
+import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentCancellationReason
 import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentFutureUsageType
 import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentPaymentMethodType
 import typings.stripe.stripeMod.paymentMethodsNs.CardBrand
@@ -282,7 +282,7 @@ object stripeStrings {
   @js.native
   sealed trait duplicate
     extends CreditNoteReason
-       with PaymentIntentCancelationReason
+       with PaymentIntentCancellationReason
   
   @js.native
   sealed trait email extends js.Object
@@ -318,7 +318,7 @@ object stripeStrings {
   sealed trait failed extends Statuses
   
   @js.native
-  sealed trait failed_invoice extends PaymentIntentCancelationReason
+  sealed trait failed_invoice extends PaymentIntentCancellationReason
   
   @js.native
   sealed trait female extends js.Object
@@ -344,7 +344,7 @@ object stripeStrings {
   @js.native
   sealed trait fraudulent
     extends CreditNoteReason
-       with PaymentIntentCancelationReason
+       with PaymentIntentCancellationReason
   
   @js.native
   sealed trait friday extends js.Object
@@ -682,7 +682,7 @@ object stripeStrings {
   sealed trait requested extends js.Object
   
   @js.native
-  sealed trait requested_by_customer extends PaymentIntentCancelationReason
+  sealed trait requested_by_customer extends PaymentIntentCancellationReason
   
   @js.native
   sealed trait required extends js.Object

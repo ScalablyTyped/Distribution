@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__mapbox-sdk"
-version := "0.6-dt-20190731Z-feaee9"
+version := "0.6-dt-20190808Z-646108"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for microsoft__load-themed-styles
 
-Typings are for version 1.9.17
+Typings are for version 1.9.18
 
 ## Library description:
 Loads themed styles.

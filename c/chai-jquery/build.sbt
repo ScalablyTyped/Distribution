@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-jquery"
-version := "1.1.1-dt-20190322Z-69509f"
+version := "1.1.1-dt-20190808Z-69509f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait TableVersion extends js.Object {
   /**
-    * The table in question
+    * The table in question.
     */
   var Table: js.UndefOr[typings.awsDashSdk.clientsGlueMod.Table] = js.undefined
   /**

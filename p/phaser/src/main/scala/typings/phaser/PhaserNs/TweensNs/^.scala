@@ -78,13 +78,17 @@ object ^ extends js.Object {
     */
   var REPEAT_DELAY: integer = js.native
   /**
-    * Returns a TweenDataConfig object that describes the tween data for a unique property of a unique target. A single Tween consists of multiple TweenDatas, depending on how many properties are being changed by the Tween.
+    * Returns a TweenDataConfig object that describes the tween data for a unique property of a unique target.
+    * A single Tween consists of multiple TweenDatas, depending on how many properties are being changed by the Tween.
     * 
-    * This is an internal function used by the TweenBuilder and should not be accessed directly, instead, Tweens should be created using the GameObjectFactory or GameObjectCreator.
+    * This is an internal function used by the TweenBuilder and should not be accessed directly, instead,
+    * Tweens should be created using the GameObjectFactory or GameObjectCreator.
     * @param target The target to tween.
+    * @param index The target index within the Tween targets array.
     * @param key The property of the target to tween.
     * @param getEnd What the property will be at the END of the Tween.
     * @param getStart What the property will be at the START of the Tween.
+    * @param getActive If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
     * @param ease The ease function this tween uses.
     * @param delay Time in ms/frames before tween will start.
     * @param duration Duration of the tween in ms/frames.
@@ -96,10 +100,12 @@ object ^ extends js.Object {
     * @param flipY Should toggleFlipY be called when yoyo or repeat happens?
     */
   def TweenData(
-    target: js.Object,
+    target: js.Any,
+    index: integer,
     key: String,
     getEnd: js.Function,
     getStart: js.Function,
+    getActive: js.Function,
     ease: js.Function,
     delay: Double,
     duration: Double,

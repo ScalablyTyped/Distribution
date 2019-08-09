@@ -17,6 +17,7 @@ trait Tint extends js.Object {
   val isTinted: Boolean = js.native
   /**
     * The tint value being applied to the whole of the Game Object.
+    * This property is a setter-only. Use the properties `tintTopLeft` etc to read the current tint value.
     */
   var tint: integer = js.native
   /**

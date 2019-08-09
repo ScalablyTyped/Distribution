@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pouchdb"
-version := "6.4-dt-20190701Z-40165a"
+version := "6.4-dt-20190701Z-61e300"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-96b05c",
-  "org.scalablytyped" %%% "pouchdb-adapter-fruitdown" % "6.1-dt-20190212Z-18776e",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190619Z-ebb432",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-621a6e",
+  "org.scalablytyped" %%% "pouchdb-adapter-fruitdown" % "6.1-dt-20190212Z-f2f196",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190619Z-e75514",
   "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-894943",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

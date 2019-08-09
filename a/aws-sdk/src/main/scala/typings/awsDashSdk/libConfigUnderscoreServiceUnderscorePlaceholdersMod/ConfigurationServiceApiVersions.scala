@@ -108,6 +108,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var kinesisvideoarchivedmedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod.apiVersion] = js.undefined
   var kinesisvideomedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideomediaMod.apiVersion] = js.undefined
   var kms: js.UndefOr[typings.awsDashSdk.clientsKmsMod.apiVersion] = js.undefined
+  var lakeformation: js.UndefOr[typings.awsDashSdk.clientsLakeformationMod.apiVersion] = js.undefined
   var lambda: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.apiVersion] = js.undefined
   var lexmodelbuildingservice: js.UndefOr[typings.awsDashSdk.clientsLexmodelbuildingserviceMod.apiVersion] = js.undefined
   var lexruntime: js.UndefOr[typings.awsDashSdk.clientsLexruntimeMod.apiVersion] = js.undefined
@@ -299,6 +300,7 @@ object ConfigurationServiceApiVersions {
     kinesisvideoarchivedmedia: typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod.apiVersion = null,
     kinesisvideomedia: typings.awsDashSdk.clientsKinesisvideomediaMod.apiVersion = null,
     kms: typings.awsDashSdk.clientsKmsMod.apiVersion = null,
+    lakeformation: typings.awsDashSdk.clientsLakeformationMod.apiVersion = null,
     lambda: typings.awsDashSdk.clientsLambdaMod.apiVersion = null,
     lexmodelbuildingservice: typings.awsDashSdk.clientsLexmodelbuildingserviceMod.apiVersion = null,
     lexruntime: typings.awsDashSdk.clientsLexruntimeMod.apiVersion = null,
@@ -487,6 +489,7 @@ object ConfigurationServiceApiVersions {
     if (kinesisvideoarchivedmedia != null) __obj.updateDynamic("kinesisvideoarchivedmedia")(kinesisvideoarchivedmedia.asInstanceOf[js.Any])
     if (kinesisvideomedia != null) __obj.updateDynamic("kinesisvideomedia")(kinesisvideomedia.asInstanceOf[js.Any])
     if (kms != null) __obj.updateDynamic("kms")(kms.asInstanceOf[js.Any])
+    if (lakeformation != null) __obj.updateDynamic("lakeformation")(lakeformation.asInstanceOf[js.Any])
     if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     if (lexmodelbuildingservice != null) __obj.updateDynamic("lexmodelbuildingservice")(lexmodelbuildingservice.asInstanceOf[js.Any])
     if (lexruntime != null) __obj.updateDynamic("lexruntime")(lexruntime.asInstanceOf[js.Any])

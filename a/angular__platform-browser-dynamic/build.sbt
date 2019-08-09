@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular__platform-browser-dynamic"
-version := "8.2.0-44cc61"
+version := "8.2.1-2b9857"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__compiler" % "8.2.0-d825cc",
-  "org.scalablytyped" %%% "angular__core" % "8.2.0-ac4c63",
+  "org.scalablytyped" %%% "angular__compiler" % "8.2.1-d825cc",
+  "org.scalablytyped" %%% "angular__core" % "8.2.1-4bd9de",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

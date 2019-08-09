@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__documentsearch"
-version := "1.0.2-753fbf"
+version := "1.0.2-de129e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190701Z-0cec7f",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-35ffb4",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.2-05cd2a",
-  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.0.2-c4dba4",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.2-2e76a0",
+  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.0.2-961b7e",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-27e5f7",
-  "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.0.2-a457bb",
+  "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.0.2-862417",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-689d92",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.0.2-80af18",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.3-016a04",
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.3-e0bcde",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.8.1-3b432d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190807Z-04c1be",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "tern" % "0.23-dt-20190516Z-3f8325")
 publishArtifact in packageDoc := false

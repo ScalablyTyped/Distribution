@@ -910,7 +910,7 @@ class GameObjectFactory protected () extends js.Object {
   /**
     * Creates a new Tween object.
     * 
-    * Note: This method will only be available Tweens have been built into Phaser.
+    * Note: This method will only be available if Tweens have been built into Phaser.
     * @param config The Tween configuration.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native

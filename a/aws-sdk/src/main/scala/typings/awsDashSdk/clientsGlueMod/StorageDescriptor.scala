@@ -14,7 +14,7 @@ trait StorageDescriptor extends js.Object {
     */
   var Columns: js.UndefOr[ColumnList] = js.undefined
   /**
-    * True if the data in the table is compressed, or False if not.
+    *  True if the data in the table is compressed, or False if not.
     */
   var Compressed: js.UndefOr[Boolean] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait StorageDescriptor extends js.Object {
     */
   var InputFormat: js.UndefOr[FormatString] = js.undefined
   /**
-    * The physical location of the table. By default this takes the form of the warehouse location, followed by the database location in the warehouse, followed by the table name.
+    * The physical location of the table. By default, this takes the form of the warehouse location, followed by the database location in the warehouse, followed by the table name.
     */
   var Location: js.UndefOr[LocationString] = js.undefined
   /**
@@ -34,15 +34,15 @@ trait StorageDescriptor extends js.Object {
     */
   var OutputFormat: js.UndefOr[FormatString] = js.undefined
   /**
-    * User-supplied properties in key-value form.
+    * The user-supplied properties in key-value form.
     */
   var Parameters: js.UndefOr[ParametersMap] = js.undefined
   /**
-    * Serialization/deserialization (SerDe) information.
+    * The serialization/deserialization (SerDe) information.
     */
   var SerdeInfo: js.UndefOr[SerDeInfo] = js.undefined
   /**
-    * Information about values that appear very frequently in a column (skewed values).
+    * The information about values that appear frequently in a column (skewed values).
     */
   var SkewedInfo: js.UndefOr[typings.awsDashSdk.clientsGlueMod.SkewedInfo] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait StorageDescriptor extends js.Object {
     */
   var SortColumns: js.UndefOr[OrderList] = js.undefined
   /**
-    * True if the table data is stored in subdirectories, or False if not.
+    *  True if the table data is stored in subdirectories, or False if not.
     */
   var StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
 }

@@ -1,22 +1,21 @@
 package typings.jpegDashJs.jpegDashJsMod
 
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RawImageData[D /* <: Uint8Array */] extends js.Object {
-  var data: D
+trait RawImageData[T] extends js.Object {
+  var data: T
   var height: Double
   var width: Double
 }
 
 object RawImageData {
   @scala.inline
-  def apply[D /* <: Uint8Array */](data: D, height: Double, width: Double): RawImageData[D] = {
+  def apply[T](data: T, height: Double, width: Double): RawImageData[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height, width = width)
   
-    __obj.asInstanceOf[RawImageData[D]]
+    __obj.asInstanceOf[RawImageData[T]]
   }
 }
 

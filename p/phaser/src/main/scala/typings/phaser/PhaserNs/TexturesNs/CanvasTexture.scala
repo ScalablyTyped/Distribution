@@ -44,7 +44,7 @@ class CanvasTexture protected () extends Texture {
     * @param width The width of the canvas.
     * @param height The height of the canvas.
     */
-  def this(manager: CanvasTexture, key: String, source: HTMLCanvasElement, width: integer, height: integer) = this()
+  def this(manager: TextureManager, key: String, source: HTMLCanvasElement, width: integer, height: integer) = this()
   /**
     * An ArrayBuffer the same size as the context ImageData.
     */
@@ -166,11 +166,14 @@ class CanvasTexture protected () extends Texture {
     * 
     * If you have drawn anything to this CanvasTexture since it was created you must call `CanvasTexture.update` to refresh the array buffer,
     * otherwise this may return out of date color values, or worse - throw a run-time error as it tries to access an array element that doesn't exist.
-    * @param x The x coordinate of the top-left of the region. Must lay within the dimensions of this CanvasTexture and be an integer.
-    * @param y The y coordinate of the top-left of the region. Must lay within the dimensions of this CanvasTexture and be an integer.
-    * @param width The width of the region to get. Must be an integer.
+    * @param x The x coordinate of the top-left of the region. Must lay within the dimensions of this CanvasTexture and be an integer. Default 0.
+    * @param y The y coordinate of the top-left of the region. Must lay within the dimensions of this CanvasTexture and be an integer. Default 0.
+    * @param width The width of the region to get. Must be an integer. Defaults to the canvas width if not given.
     * @param height The height of the region to get. Must be an integer. If not given will be set to the `width`.
     */
+  def getPixels(): js.Array[PixelConfig] = js.native
+  def getPixels(x: integer): js.Array[PixelConfig] = js.native
+  def getPixels(x: integer, y: integer): js.Array[PixelConfig] = js.native
   def getPixels(x: integer, y: integer, width: integer): js.Array[PixelConfig] = js.native
   def getPixels(x: integer, y: integer, width: integer, height: integer): js.Array[PixelConfig] = js.native
   /**

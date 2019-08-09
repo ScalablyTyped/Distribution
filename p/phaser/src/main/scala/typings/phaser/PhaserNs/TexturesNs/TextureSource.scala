@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.Textures.TextureSource")
 @js.native
 class TextureSource protected () extends js.Object {
+  def this(texture: Texture, source: RenderTexture) = this()
   def this(texture: Texture, source: HTMLCanvasElement) = this()
   /**
     * 
@@ -30,16 +31,22 @@ class TextureSource protected () extends js.Object {
     * @param height Optional height of the source image. If not given it's derived from the source itself.
     */
   def this(texture: Texture, source: HTMLImageElement) = this()
+  def this(texture: Texture, source: WebGLTexture) = this()
+  def this(texture: Texture, source: RenderTexture, width: integer) = this()
   def this(texture: Texture, source: HTMLCanvasElement, width: integer) = this()
   def this(texture: Texture, source: HTMLImageElement, width: integer) = this()
+  def this(texture: Texture, source: WebGLTexture, width: integer) = this()
+  def this(texture: Texture, source: RenderTexture, width: integer, height: integer) = this()
   def this(texture: Texture, source: HTMLCanvasElement, width: integer, height: integer) = this()
   def this(texture: Texture, source: HTMLImageElement, width: integer, height: integer) = this()
+  def this(texture: Texture, source: WebGLTexture, width: integer, height: integer) = this()
   /**
     * Currently un-used.
     */
   var compressionAlgorithm: integer = js.native
   /**
-    * The WebGL Texture of the source image.
+    * The WebGL Texture of the source image. If this TextureSource is driven from a WebGLTexture
+    * already, then this is a reference to that WebGLTexture.
     */
   var glTexture: WebGLTexture = js.native
   /**
@@ -56,6 +63,10 @@ class TextureSource protected () extends js.Object {
     * Is the source image a Canvas Element?
     */
   var isCanvas: Boolean = js.native
+  /**
+    * Is the source image a WebGLTexture?
+    */
+  var isGLTexture: Boolean = js.native
   /**
     * Are the source image dimensions a power of two?
     */
@@ -79,9 +90,9 @@ class TextureSource protected () extends js.Object {
   var scaleMode: Double = js.native
   /**
     * The source of the image data.
-    * This is either an Image Element, a Canvas Element or a RenderTexture.
+    * This is either an Image Element, a Canvas Element, a RenderTexture or a WebGLTexture.
     */
-  var source: HTMLImageElement | HTMLCanvasElement | RenderTexture = js.native
+  var source: HTMLImageElement | HTMLCanvasElement | RenderTexture | WebGLTexture = js.native
   /**
     * The Texture this TextureSource belongs to.
     */

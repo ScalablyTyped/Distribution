@@ -1,14 +1,13 @@
 package typings.chaiDashJestDashSnapshot.chaiDashJestDashSnapshotMod
 
+import typings.chai.ChaiNs.ChaiPlugin
 import typings.mocha.MochaNs.IBeforeAndAfterContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ChaiJestSnapshot extends js.Object {
-  /** Chai bootstrapper */
-  def apply(chai: js.Any, utils: js.Any): Unit = js.native
+trait ChaiJestSnapshot extends ChaiPlugin {
   /** Add a serializer plugin */
   def addSerializer(serializer: js.Any): Unit = js.native
   /** Configure snapshot name using mocha context */
