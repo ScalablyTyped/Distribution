@@ -28,7 +28,7 @@ class ResolverRule protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+    * DNS queries for this domain name are forwarded to the IP addresses that are specified using `targetIp`.
     */
   val domainName: Output[String] = js.native
   /**
@@ -40,7 +40,7 @@ class ResolverRule protected () extends CustomResource {
     */
   val ownerId: Output[String] = js.native
   /**
-    * The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    * The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `targetIp`.
     * This argument should only be specified for `FORWARD` type rules.
     */
   val resolverEndpointId: Output[js.UndefOr[String]] = js.native

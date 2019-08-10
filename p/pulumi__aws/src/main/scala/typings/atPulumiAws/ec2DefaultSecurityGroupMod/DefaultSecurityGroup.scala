@@ -50,7 +50,7 @@ class DefaultSecurityGroup protected () extends CustomResource {
   val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The VPC ID. **Note that changing
-    * the `vpc_id` will _not_ restore any default security group rules that were
+    * the `vpcId` will _not_ restore any default security group rules that were
     * modified, added, or removed.** It will be left in its current state
     */
   val vpcId: Output[String] = js.native

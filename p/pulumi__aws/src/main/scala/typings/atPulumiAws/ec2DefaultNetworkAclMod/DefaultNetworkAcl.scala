@@ -25,7 +25,7 @@ class DefaultNetworkAcl protected () extends CustomResource {
   def this(name: String, args: DefaultNetworkAclArgs, opts: CustomResourceOptions) = this()
   /**
     * The Network ACL ID to manage. This
-    * attribute is exported from `aws_vpc`, or manually found via the AWS Console.
+    * attribute is exported from `aws.ec2.Vpc`, or manually found via the AWS Console.
     */
   val defaultNetworkAclId: Output[String] = js.native
   /**

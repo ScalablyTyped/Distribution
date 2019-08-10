@@ -25,7 +25,7 @@ class AmiFromInstance protected () extends CustomResource {
   def this(name: String, args: AmiFromInstanceArgs) = this()
   def this(name: String, args: AmiFromInstanceArgs, opts: CustomResourceOptions) = this()
   /**
-    * Machine architecture for created instances. Defaults to "x86_64".
+    * Machine architecture for created instances. Defaults to "x8664".
     */
   val architecture: Output[String] = js.native
   /**

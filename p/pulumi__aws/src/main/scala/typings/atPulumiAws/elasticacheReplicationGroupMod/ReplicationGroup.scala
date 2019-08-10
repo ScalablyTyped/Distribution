@@ -32,7 +32,7 @@ class ReplicationGroup protected () extends CustomResource {
     */
   val atRestEncryptionEnabled: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+    * The password used to access a password protected server. Can be specified only if `transitEncryptionEnabled = true`.
     */
   val authToken: Output[js.UndefOr[String]] = js.native
   /**
@@ -48,7 +48,7 @@ class ReplicationGroup protected () extends CustomResource {
     */
   val availabilityZones: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+    * Create a native redis cluster. `automaticFailoverEnabled` must be set to true. Cluster Mode documented below. Only 1 `clusterMode` block is allowed.
     */
   val clusterMode: Output[Anon_NumNodeGroups] = js.native
   /**
@@ -122,7 +122,7 @@ class ReplicationGroup protected () extends CustomResource {
     */
   val snapshotArns: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+    * The name of a snapshot from which to restore data into the new node group. Changing the `snapshotName` forces a new resource.
     */
   val snapshotName: Output[js.UndefOr[String]] = js.native
   /**
@@ -130,7 +130,7 @@ class ReplicationGroup protected () extends CustomResource {
     * retain automatic cache cluster snapshots before deleting them. For example, if you set
     * SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
     * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
-    * Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
+    * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
     */
   val snapshotRetentionLimit: Output[js.UndefOr[Double]] = js.native
   /**

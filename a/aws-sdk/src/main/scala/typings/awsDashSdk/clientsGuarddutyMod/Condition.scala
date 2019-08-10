@@ -6,9 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Condition extends js.Object {
   /**
-    * Represents the equal condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents the equal condition to be applied to a single field when querying for findings.
     */
   var Eq: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Eq] = js.undefined
+  /**
+    * Represents an equal condition to be applied to a single field when querying for findings.
+    */
   var Equals: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Equals] = js.undefined
   /**
     * Represents a greater than condition to be applied to a single field when querying for findings.
@@ -19,11 +22,11 @@ trait Condition extends js.Object {
     */
   var GreaterThanOrEqual: js.UndefOr[Long] = js.undefined
   /**
-    * Represents a greater than condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents a greater than condition to be applied to a single field when querying for findings.
     */
   var Gt: js.UndefOr[Integer] = js.undefined
   /**
-    * Represents a greater than equal condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents a greater than equal condition to be applied to a single field when querying for findings.
     */
   var Gte: js.UndefOr[Integer] = js.undefined
   /**
@@ -35,17 +38,20 @@ trait Condition extends js.Object {
     */
   var LessThanOrEqual: js.UndefOr[Long] = js.undefined
   /**
-    * Represents a less than condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents a less than condition to be applied to a single field when querying for findings.
     */
   var Lt: js.UndefOr[Integer] = js.undefined
   /**
-    * Represents a less than equal condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents a less than equal condition to be applied to a single field when querying for findings.
     */
   var Lte: js.UndefOr[Integer] = js.undefined
   /**
-    * Represents the not equal condition to be applied to a single field when querying for findings.
+    * Deprecated. Represents the not equal condition to be applied to a single field when querying for findings.
     */
   var Neq: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Neq] = js.undefined
+  /**
+    * Represents an not equal condition to be applied to a single field when querying for findings.
+    */
   var NotEquals: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.NotEquals] = js.undefined
 }
 

@@ -30,7 +30,7 @@ trait GatewayAssociationArgs extends js.Object {
     */
   val proposalId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * *Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    * *Deprecated:* Use `associatedGatewayId` instead. The ID of the VGW with which to associate the gateway.
     * Used for single account Direct Connect gateway associations.
     */
   val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined

@@ -34,7 +34,7 @@ class EventSourceMapping protected () extends CustomResource {
     */
   val eventSourceArn: Output[String] = js.native
   /**
-    * The the ARN of the Lambda function the event source mapping is sending events to. (Note: this is a computed value that differs from `function_name` above.)
+    * The the ARN of the Lambda function the event source mapping is sending events to. (Note: this is a computed value that differs from `functionName` above.)
     */
   val functionArn: Output[String] = js.native
   /**
@@ -54,7 +54,7 @@ class EventSourceMapping protected () extends CustomResource {
     */
   val startingPosition: Output[js.UndefOr[String]] = js.native
   /**
-    * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the data record which to start reading when using `starting_position` set to `AT_TIMESTAMP`. If a record with this exact timestamp does not exist, the next later record is chosen. If the timestamp is older than the current trim horizon, the oldest available record is chosen.
+    * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the data record which to start reading when using `startingPosition` set to `AT_TIMESTAMP`. If a record with this exact timestamp does not exist, the next later record is chosen. If the timestamp is older than the current trim horizon, the oldest available record is chosen.
     */
   val startingPositionTimestamp: Output[js.UndefOr[String]] = js.native
   /**

@@ -3,9 +3,9 @@ package typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.BodyResponseCallback
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.DecorateRequestOptions
 import typings.node.eventsMod.EventEmitter
-import typings.request.requestMod.Request
-import typings.request.requestMod.Response
 import typings.std.PromiseConstructor
+import typings.teenyDashRequest.teenyDashRequestMod.Request
+import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,9 +63,9 @@ class ServiceObject[T] protected () extends EventEmitter {
     * @param {?error} callback.err - An error returned while making this request.
     * @param {object} callback.apiResponse - The full API response.
     */
-  def delete(): js.Promise[js.Array[Response]] = js.native
+  def delete(): js.Promise[js.Array[Response[_]]] = js.native
   def delete(callback: DeleteCallback): Unit = js.native
-  def delete(options: DeleteOptions): js.Promise[js.Array[Response]] = js.native
+  def delete(options: DeleteOptions): js.Promise[js.Array[Response[_]]] = js.native
   def delete(options: DeleteOptions, callback: DeleteCallback): Unit = js.native
   /**
     * Check if the object exists.

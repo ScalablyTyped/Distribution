@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait GatewayState extends js.Object {
   /**
-    * Gateway activation key during resource creation. Conflicts with `gateway_ip_address`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+    * Gateway activation key during resource creation. Conflicts with `gatewayIpAddress`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val activationKey: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait GatewayState extends js.Object {
     */
   val gatewayId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+    * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val gatewayIpAddress: js.UndefOr[Input[String]] = js.undefined
   /**

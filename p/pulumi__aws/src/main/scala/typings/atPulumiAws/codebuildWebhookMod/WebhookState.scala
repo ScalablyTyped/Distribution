@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait WebhookState extends js.Object {
   /**
-    * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filter_group` over `branch_filter`.
+    * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
     */
   val branchFilter: js.UndefOr[Input[String]] = js.undefined
   /**

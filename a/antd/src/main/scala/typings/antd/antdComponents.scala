@@ -8,7 +8,6 @@ import typings.antd.esDropdownDropdownMod.DropDownProps
 import typings.antd.esLayoutLayoutMod.BasicProps
 import typings.antd.esListItemMod.ListItemProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
-import typings.antd.esTransferOperationMod.TransferOperationProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.esTreeTreeMod.AntTreeNodeProps
 import typings.antd.esTypographyBaseMod.InternalBlockProps
@@ -100,8 +99,6 @@ object antdComponents extends antdProps {
   @scala.inline
   def Divider: ComponentType[typings.antd.esDividerMod.DividerProps] = typings.antd.esDividerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDividerMod.DividerProps]]
   @scala.inline
-  def Dragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = js.constructorOf[typings.antd.esUploadDraggerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
-  @scala.inline
   def Drawer: ComponentType[typings.antd.esDrawerMod.DrawerProps] = typings.antd.esDrawerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDrawerMod.DrawerProps]]
   @scala.inline
   def Dropdown: ComponentType[DropDownProps] = js.constructorOf[typings.antd.esDropdownMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDropdownDropdownMod.DropDownProps]]
@@ -151,8 +148,6 @@ object antdComponents extends antdProps {
   def Meta: ComponentType[CardMetaProps] = typings.antd.esCardMetaMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esCardMetaMod.CardMetaProps]]
   @scala.inline
   def Modal: ComponentType[typings.antd.esModalModalMod.ModalProps] = js.constructorOf[typings.antd.esModalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esModalModalMod.ModalProps]]
-  @scala.inline
-  def Operation: ComponentType[TransferOperationProps] = js.constructorOf[typings.antd.esTransferOperationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTransferOperationMod.TransferOperationProps]]
   @scala.inline
   def OptGroup: ComponentType[typings.antd.esSelectMod.OptGroupProps] = typings.antd.esSelectMod.default.OptGroup.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esSelectMod.OptGroupProps]]
   @scala.inline

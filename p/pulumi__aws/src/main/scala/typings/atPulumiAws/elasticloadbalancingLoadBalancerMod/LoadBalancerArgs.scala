@@ -31,7 +31,7 @@ trait LoadBalancerArgs extends js.Object {
     */
   val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * A health_check block. Health Check documented below.
+    * A healthCheck block. Health Check documented below.
     */
   val healthCheck: js.UndefOr[Input[Anon_HealthyThresholdIntervalTarget]] = js.undefined
   /**

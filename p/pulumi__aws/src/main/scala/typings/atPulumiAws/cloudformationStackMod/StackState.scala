@@ -14,7 +14,7 @@ trait StackState extends js.Object {
   val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * Set to true to disable rollback of the stack if stack creation failed.
-    * Conflicts with `on_failure`.
+    * Conflicts with `onFailure`.
     */
   val disableRollback: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait StackState extends js.Object {
   val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * Action to be taken if stack creation fails. This must be
-    * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disable_rollback`.
+    * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disableRollback`.
     */
   val onFailure: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -44,12 +44,12 @@ trait StackState extends js.Object {
   val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
     * Structure containing the stack policy body.
-    * Conflicts w/ `policy_url`.
+    * Conflicts w/ `policyUrl`.
     */
   val policyBody: js.UndefOr[Input[String]] = js.undefined
   /**
     * Location of a file containing the stack policy.
-    * Conflicts w/ `policy_body`.
+    * Conflicts w/ `policyBody`.
     */
   val policyUrl: js.UndefOr[Input[String]] = js.undefined
   /**

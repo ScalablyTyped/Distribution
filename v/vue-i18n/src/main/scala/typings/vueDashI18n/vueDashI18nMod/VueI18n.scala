@@ -2,6 +2,7 @@ package typings.vueDashI18n.vueDashI18nMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import typings.std.RegExp
 import typings.vue.typesVueMod.Vue
 import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.PluralizationRulesMap
 import scala.scalajs.js
@@ -21,8 +22,8 @@ trait VueI18n extends js.Object {
   val numberFormats: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.NumberFormats = js.native
   var pluralizationRules: PluralizationRulesMap = js.native
   var preserveDirectiveContent: Boolean = js.native
-  var silentFallbackWarn: Boolean = js.native
-  var silentTranslationWarn: Boolean = js.native
+  var silentFallbackWarn: Boolean | RegExp = js.native
+  var silentTranslationWarn: Boolean | RegExp = js.native
   var warnHtmlInMessage: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel = js.native
   def d(value: Double): typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: Double, args: StringDictionary[String]): typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native

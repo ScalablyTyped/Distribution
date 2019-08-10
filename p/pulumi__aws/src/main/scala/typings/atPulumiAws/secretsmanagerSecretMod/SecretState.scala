@@ -21,7 +21,7 @@ trait SecretState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `name_prefix`.
+    * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `namePrefix`.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**

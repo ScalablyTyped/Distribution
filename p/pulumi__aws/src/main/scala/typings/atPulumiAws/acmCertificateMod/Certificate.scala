@@ -1,6 +1,7 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_CertificateTransparencyLoggingPreference
 import typings.atPulumiAws.Anon_DomainName
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -29,11 +30,16 @@ class Certificate protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
+    * ARN of an ACMPCA
+    */
+  val certificateAuthorityArn: Output[js.UndefOr[String]] = js.native
+  /**
     * The certificate's PEM-formatted public key
     */
   val certificateBody: Output[js.UndefOr[String]] = js.native
   /**
     * The certificate's PEM-formatted chain
+    * * Creating a private CA issued certificate
     */
   val certificateChain: Output[js.UndefOr[String]] = js.native
   /**
@@ -44,6 +50,7 @@ class Certificate protected () extends CustomResource {
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
   val domainValidationOptions: Output[js.Array[Anon_DomainName]] = js.native
+  val options: Output[js.UndefOr[Anon_CertificateTransparencyLoggingPreference]] = js.native
   /**
     * The certificate's PEM-formatted private key
     */

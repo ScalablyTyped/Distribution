@@ -22,7 +22,6 @@ trait Tag
   def getTagStyle(): Anon_BackgroundColor | Anon_Absolute = js.native
   def handleIconClick(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
   def isPresetColor(): Boolean = js.native
-  def isPresetColor(color: String): Boolean = js.native
   def renderCloseIcon(): Element | Null = js.native
   def renderTag(configProps: ConfigConsumerProps): Element = js.native
   def setVisible(visible: Boolean, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native

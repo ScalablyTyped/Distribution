@@ -42,7 +42,7 @@ class VpnConnection protected () extends CustomResource {
     */
   val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
-    * When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+    * When associated with an EC2 Transit Gateway (`transitGatewayId` argument), the attachment ID.
     */
   val transitGatewayAttachmentId: Output[String] = js.native
   /**

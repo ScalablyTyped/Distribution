@@ -16,7 +16,7 @@ trait TreeProps extends js.Object {
   /** 是否自动展开父节点 */
   var autoExpandParent: js.UndefOr[Boolean] = js.undefined
   var blockNode: js.UndefOr[Boolean] = js.undefined
-  /** checkable状态下节点选择完全受控（父子节点选中状态不再关联）*/
+  /** checkable状态下节点选择完全受控（父子节点选中状态不再关联） */
   var checkStrictly: js.UndefOr[Boolean] = js.undefined
   /** 是否支持选中 */
   var checkable: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ trait TreeProps extends js.Object {
   var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
   /** 是否禁用树 */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** 设置节点可拖拽（IE>8）*/
+  /** 设置节点可拖拽（IE>8） */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /** （受控）展开指定的树节点 */
   var expandedKeys: js.UndefOr[js.Array[String]] = js.undefined

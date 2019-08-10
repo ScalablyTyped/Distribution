@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetExportResult extends js.Object {
   /**
-    * The exporting_stack_id (AWS ARNs) equivalent `ExportingStackId` from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
+    * The exportingStackId (AWS ARNs) equivalent `ExportingStackId` from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
     */
   val exportingStackId: String
   /**

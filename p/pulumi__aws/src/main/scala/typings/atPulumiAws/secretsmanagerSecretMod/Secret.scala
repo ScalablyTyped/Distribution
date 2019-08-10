@@ -37,7 +37,7 @@ class Secret protected () extends CustomResource {
     */
   val kmsKeyId: Output[js.UndefOr[String]] = js.native
   /**
-    * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `name_prefix`.
+    * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `namePrefix`.
     */
   val name: Output[String] = js.native
   /**

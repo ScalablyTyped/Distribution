@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 trait Hooks[Options, Body /* <: Buffer | String | js.Object */] extends js.Object {
   var afterResponse: js.UndefOr[js.Array[AfterResponseHook[Options, Body]]] = js.undefined
+  var beforeError: js.UndefOr[js.Array[BeforeErrorHook]] = js.undefined
   var beforeRedirect: js.UndefOr[js.Array[BeforeRedirectHook[Options]]] = js.undefined
   var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook[Options]]] = js.undefined
   var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook[Options]]] = js.undefined
@@ -25,6 +26,7 @@ object Hooks {
   @scala.inline
   def apply[Options, Body /* <: Buffer | String | js.Object */](
     afterResponse: js.Array[AfterResponseHook[Options, Body]] = null,
+    beforeError: js.Array[BeforeErrorHook] = null,
     beforeRedirect: js.Array[BeforeRedirectHook[Options]] = null,
     beforeRequest: js.Array[BeforeRequestHook[Options]] = null,
     beforeRetry: js.Array[BeforeRetryHook[Options]] = null,
@@ -32,6 +34,7 @@ object Hooks {
   ): Hooks[Options, Body] = {
     val __obj = js.Dynamic.literal()
     if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse)
+    if (beforeError != null) __obj.updateDynamic("beforeError")(beforeError)
     if (beforeRedirect != null) __obj.updateDynamic("beforeRedirect")(beforeRedirect)
     if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
     if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry)

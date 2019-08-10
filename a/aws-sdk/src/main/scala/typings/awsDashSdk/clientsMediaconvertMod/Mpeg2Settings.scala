@@ -104,7 +104,7 @@ trait Mpeg2Settings extends js.Object {
     */
   var RateControlMode: js.UndefOr[Mpeg2RateControlMode] = js.undefined
   /**
-    * Scene change detection (inserts I-frames on scene changes).
+    * Enable this setting to insert I-frames at scene changes that the service automatically detects. This improves video quality and is enabled by default.
     */
   var SceneChangeDetect: js.UndefOr[Mpeg2SceneChangeDetect] = js.undefined
   /**

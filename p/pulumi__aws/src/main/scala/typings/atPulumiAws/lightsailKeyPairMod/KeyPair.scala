@@ -33,8 +33,8 @@ class KeyPair protected () extends CustomResource {
   val encryptedFingerprint: Output[String] = js.native
   /**
     * the private key material, base 64 encoded and
-    * encrypted with the given `pgp_key`. This is only populated when creating a new
-    * key and `pgp_key` is supplied
+    * encrypted with the given `pgpKey`. This is only populated when creating a new
+    * key and `pgpKey` is supplied
     */
   val encryptedPrivateKey: Output[String] = js.native
   /**
@@ -54,7 +54,7 @@ class KeyPair protected () extends CustomResource {
   val pgpKey: Output[js.UndefOr[String]] = js.native
   /**
     * the private key, base64 encoded. This is only populated
-    * when creating a new key, and when no `pgp_key` is provided
+    * when creating a new key, and when no `pgpKey` is provided
     */
   val privateKey: Output[String] = js.native
   /**

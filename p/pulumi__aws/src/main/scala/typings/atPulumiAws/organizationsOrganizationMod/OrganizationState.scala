@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait OrganizationState extends js.Object {
   /**
-    * List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+    * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
     */
   val accounts: js.UndefOr[Input[js.Array[Input[Anon_ArnEmailId]]]] = js.undefined
   /**
@@ -17,11 +17,11 @@ trait OrganizationState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+    * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `featureSet` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
     */
   val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
     */
   val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

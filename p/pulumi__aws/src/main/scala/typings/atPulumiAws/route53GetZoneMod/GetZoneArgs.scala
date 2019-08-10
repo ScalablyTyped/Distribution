@@ -21,7 +21,7 @@ trait GetZoneArgs extends js.Object {
     */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /**
-    * Used with `name` field to get a private Hosted Zone associated with the vpc_id (in this case, private_zone is not mandatory).
+    * Used with `name` field to get a private Hosted Zone associated with the vpcId (in this case, privateZone is not mandatory).
     */
   val vpcId: js.UndefOr[String] = js.undefined
   /**

@@ -49,7 +49,7 @@ class Server protected () extends CustomResource {
     */
   val identityProviderType: Output[js.UndefOr[String]] = js.native
   /**
-    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identity_provider_type` of `API_GATEWAY`.
+    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identityProviderType` of `API_GATEWAY`.
     */
   val invocationRole: Output[js.UndefOr[String]] = js.native
   /**
@@ -61,7 +61,7 @@ class Server protected () extends CustomResource {
     */
   val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
-    * - URL of the service endpoint used to authenticate users with an `identity_provider_type` of `API_GATEWAY`.
+    * - URL of the service endpoint used to authenticate users with an `identityProviderType` of `API_GATEWAY`.
     */
   val url: Output[js.UndefOr[String]] = js.native
 }

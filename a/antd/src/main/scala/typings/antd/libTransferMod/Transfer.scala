@@ -78,6 +78,6 @@ trait Transfer
   def onRightItemSelect(selectedKey: String, checked: Boolean): Unit = js.native
   def onRightItemSelectAll(selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def renderTransfer(transferLocale: TransferLocale): Element = js.native
-  def separateDataSource(props: TransferProps): Anon_LeftDataSourceRightDataSource = js.native
+  def separateDataSource(): Anon_LeftDataSourceRightDataSource = js.native
 }
 

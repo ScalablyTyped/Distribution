@@ -1,6 +1,7 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_CertificateTransparencyLoggingPreferenceInput
 import typings.atPulumiAws.Anon_DomainNameResourceRecordName
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -13,11 +14,16 @@ trait CertificateState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
+    * ARN of an ACMPCA
+    */
+  val certificateAuthorityArn: js.UndefOr[Input[String]] = js.undefined
+  /**
     * The certificate's PEM-formatted public key
     */
   val certificateBody: js.UndefOr[Input[String]] = js.undefined
   /**
     * The certificate's PEM-formatted chain
+    * * Creating a private CA issued certificate
     */
   val certificateChain: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -28,6 +34,7 @@ trait CertificateState extends js.Object {
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
   val domainValidationOptions: js.UndefOr[Input[js.Array[Input[Anon_DomainNameResourceRecordName]]]] = js.undefined
+  val options: js.UndefOr[Input[Anon_CertificateTransparencyLoggingPreferenceInput]] = js.undefined
   /**
     * The certificate's PEM-formatted private key
     */
@@ -55,10 +62,12 @@ object CertificateState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
+    certificateAuthorityArn: Input[String] = null,
     certificateBody: Input[String] = null,
     certificateChain: Input[String] = null,
     domainName: Input[String] = null,
     domainValidationOptions: Input[js.Array[Input[Anon_DomainNameResourceRecordName]]] = null,
+    options: Input[Anon_CertificateTransparencyLoggingPreferenceInput] = null,
     privateKey: Input[String] = null,
     subjectAlternativeNames: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,
@@ -67,10 +76,12 @@ object CertificateState {
   ): CertificateState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (certificateAuthorityArn != null) __obj.updateDynamic("certificateAuthorityArn")(certificateAuthorityArn.asInstanceOf[js.Any])
     if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
     if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (domainValidationOptions != null) __obj.updateDynamic("domainValidationOptions")(domainValidationOptions.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (subjectAlternativeNames != null) __obj.updateDynamic("subjectAlternativeNames")(subjectAlternativeNames.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

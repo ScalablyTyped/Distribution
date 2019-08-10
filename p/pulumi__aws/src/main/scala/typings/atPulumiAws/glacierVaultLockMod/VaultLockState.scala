@@ -11,7 +11,7 @@ trait VaultLockState extends js.Object {
     */
   val completeLock: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * Allow this provider to ignore the error returned when attempting to delete the Glacier Lock Policy. This can be used to delete or recreate the Glacier Vault via this provider, for example, if the Glacier Vault Lock policy permits that action. This should only be used in conjunction with `complete_lock` being set to `true`.
+    * Allow this provider to ignore the error returned when attempting to delete the Glacier Lock Policy. This can be used to delete or recreate the Glacier Vault via this provider, for example, if the Glacier Vault Lock policy permits that action. This should only be used in conjunction with `completeLock` being set to `true`.
     */
   val ignoreDeletionError: js.UndefOr[Input[Boolean]] = js.undefined
   /**

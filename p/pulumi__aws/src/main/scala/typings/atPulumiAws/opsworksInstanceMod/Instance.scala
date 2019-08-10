@@ -1,7 +1,7 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameIops
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSizeVolumeType
+import typings.atPulumiAws.Anon_DeleteOnTerminationIops
 import typings.atPulumiAws.Anon_DeviceName
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -33,7 +33,7 @@ class Instance protected () extends CustomResource {
     */
   val amiId: Output[String] = js.native
   /**
-    * Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+    * Machine architecture for created instances.  Can be either `"x8664"` (the default) or `"i386"`
     */
   val architecture: Output[js.UndefOr[String]] = js.native
   /**
@@ -120,7 +120,7 @@ class Instance protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevices: Output[js.Array[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType]] = js.native
+  val rootBlockDevices: Output[js.Array[Anon_DeleteOnTerminationIops]] = js.native
   /**
     * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
     */

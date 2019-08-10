@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait GetAmiResult extends js.Object {
   /**
-    * The OS architecture of the AMI (ie: `i386` or `x86_64`).
+    * The OS architecture of the AMI (ie: `i386` or `x8664`).
     */
   val architecture: String
   /**

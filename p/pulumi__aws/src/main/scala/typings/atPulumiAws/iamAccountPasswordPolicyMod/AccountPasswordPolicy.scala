@@ -28,7 +28,7 @@ class AccountPasswordPolicy protected () extends CustomResource {
   val allowUsersToChangePassword: Output[js.UndefOr[Boolean]] = js.native
   /**
     * Indicates whether passwords in the account expire.
-    * Returns `true` if `max_password_age` contains a value greater than `0`.
+    * Returns `true` if `maxPasswordAge` contains a value greater than `0`.
     * Returns `false` if it is `0` or _not present_.
     */
   val expirePasswords: Output[Boolean] = js.native

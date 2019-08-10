@@ -37,7 +37,7 @@ trait GetClusterSnapshotResult extends js.Object {
   val includePublic: js.UndefOr[Boolean] = js.undefined
   val includeShared: js.UndefOr[Boolean] = js.undefined
   /**
-    * If storage_encrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
+    * If storageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
   val kmsKeyId: String
   /**

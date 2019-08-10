@@ -43,8 +43,8 @@ class VpcPeeringConnection protected () extends CustomResource {
     */
   val peerOwnerId: Output[String] = js.native
   /**
-    * The region of the accepter VPC of the [VPC Peering Connection]. `auto_accept` must be `false`,
-    * and use the `aws_vpc_peering_connection_accepter` to manage the accepter side.
+    * The region of the accepter VPC of the [VPC Peering Connection]. `autoAccept` must be `false`,
+    * and use the `aws.ec2.VpcPeeringConnectionAccepter` to manage the accepter side.
     */
   val peerRegion: Output[String] = js.native
   /**

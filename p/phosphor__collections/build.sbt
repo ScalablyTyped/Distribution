@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "phosphor__collections"
-version := "1.1.3-cf93a6"
+version := "1.2.0-1b1d5d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.3-016a04",
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-88b58f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

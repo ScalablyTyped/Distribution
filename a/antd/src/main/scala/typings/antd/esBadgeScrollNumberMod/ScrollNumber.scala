@@ -20,7 +20,6 @@ trait ScrollNumber
   def renderCurrentNumber(prefixCls: String, num: String, i: Double): Element = js.native
   def renderCurrentNumber(prefixCls: String, num: Double, i: Double): Element = js.native
   def renderNumberElement(prefixCls: String): js.UndefOr[String | Double | js.Array[Element] | Null] = js.native
-  def renderNumberList(position: Double): js.Array[ReactElement] = js.native
   def renderScrollNumber(hasGetPrefixCls: ConfigConsumerProps): (ComponentElement[_, Component[_, _, _]]) | ReactElement = js.native
 }
 

@@ -200,6 +200,8 @@ trait Pipeline extends js.Object {
   def llen(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
   def lpop(key: KeyType): Pipeline = js.native
   def lpop(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Pipeline = js.native
+  def lpopBuffer(key: KeyType): Pipeline = js.native
+  def lpopBuffer(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Pipeline = js.native
   def lpush(key: KeyType, values: js.Any*): Pipeline = js.native
   def lpushx(key: KeyType, value: js.Any): Pipeline = js.native
   def lpushx(key: KeyType, value: js.Any, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
@@ -209,6 +211,13 @@ trait Pipeline extends js.Object {
     start: Double,
     stop: Double,
     callback: js.Function2[/* err */ Error, /* res */ js.Any, Unit]
+  ): Pipeline = js.native
+  def lrangeBuffer(key: KeyType, start: Double, stop: Double): Pipeline = js.native
+  def lrangeBuffer(
+    key: KeyType,
+    start: Double,
+    stop: Double,
+    callback: js.Function2[/* err */ Error, /* res */ js.Array[Buffer], Unit]
   ): Pipeline = js.native
   def lrem(key: KeyType, count: Double, value: js.Any): Pipeline = js.native
   def lrem(
@@ -297,6 +306,7 @@ trait Pipeline extends js.Object {
     callback: js.Function2[/* err */ Error, /* res */ String, Unit]
   ): Pipeline = js.native
   def rpush(key: KeyType, values: js.Any*): Pipeline = js.native
+  def rpushBuffer(key: String, values: Buffer*): Pipeline = js.native
   def rpushx(key: KeyType, value: js.Any): Pipeline = js.native
   def rpushx(key: KeyType, value: js.Any, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
   def sadd(key: KeyType, members: js.Any*): Pipeline = js.native

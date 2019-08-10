@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod
 
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.DecorateRequestOptions
-import typings.request.requestMod.Options
+import typings.teenyDashRequest.teenyDashRequestMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

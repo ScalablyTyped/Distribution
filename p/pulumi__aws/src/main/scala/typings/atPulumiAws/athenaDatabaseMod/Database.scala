@@ -27,7 +27,7 @@ class Database protected () extends CustomResource {
     */
   val bucket: Output[String] = js.native
   /**
-    * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryption_configuration` block is documented below.
+    * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
     */
   val encryptionConfiguration: Output[js.UndefOr[Anon_EncryptionOption]] = js.native
   /**

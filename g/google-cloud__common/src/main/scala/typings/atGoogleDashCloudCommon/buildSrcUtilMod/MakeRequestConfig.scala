@@ -1,6 +1,6 @@
 package typings.atGoogleDashCloudCommon.buildSrcUtilMod
 
-import typings.request.requestMod.Response
+import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait MakeRequestConfig extends js.Object {
     */
   var maxRetries: js.UndefOr[Double] = js.undefined
   var retries: js.UndefOr[Double] = js.undefined
-  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Boolean]] = js.undefined
+  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response[_]], Boolean]] = js.undefined
   var stream: js.UndefOr[Duplexify] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object MakeRequestConfig {
     autoRetry: js.UndefOr[Boolean] = js.undefined,
     maxRetries: Int | Double = null,
     retries: Int | Double = null,
-    shouldRetryFn: /* response */ js.UndefOr[Response] => Boolean = null,
+    shouldRetryFn: /* response */ js.UndefOr[Response[_]] => Boolean = null,
     stream: Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()

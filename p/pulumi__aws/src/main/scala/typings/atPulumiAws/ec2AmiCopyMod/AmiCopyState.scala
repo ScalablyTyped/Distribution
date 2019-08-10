@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait AmiCopyState extends js.Object {
   /**
-    * Machine architecture for created instances. Defaults to "x86_64".
+    * Machine architecture for created instances. Defaults to "x8664".
     */
   val architecture: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -66,7 +66,7 @@ trait AmiCopyState extends js.Object {
   val rootSnapshotId: js.UndefOr[Input[String]] = js.undefined
   /**
     * The id of the AMI to copy. This id must be valid in the region
-    * given by `source_ami_region`.
+    * given by `sourceAmiRegion`.
     */
   val sourceAmiId: js.UndefOr[Input[String]] = js.undefined
   /**

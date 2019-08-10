@@ -40,6 +40,7 @@ import scala.scalajs.js.annotation._
   var overlayClassName: js.UndefOr[String] = js.undefined
   var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   var placement: js.UndefOr[Placement] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
   var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
   var `type`: js.UndefOr[DropdownButtonType] = js.undefined
@@ -70,6 +71,7 @@ object DropdownButtonProps {
     prefixCls: String = null,
     size: ButtonSize = null,
     style: CSSProperties = null,
+    title: String = null,
     transitionName: String = null,
     trigger: js.Array[click | hover | contextMenu] = null,
     `type`: DropdownButtonType = null,
@@ -96,6 +98,7 @@ object DropdownButtonProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

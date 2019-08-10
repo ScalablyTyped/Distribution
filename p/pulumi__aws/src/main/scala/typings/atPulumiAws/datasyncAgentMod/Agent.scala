@@ -24,7 +24,7 @@ class Agent protected () extends CustomResource {
   def this(name: String, args: AgentArgs) = this()
   def this(name: String, args: AgentArgs, opts: CustomResourceOptions) = this()
   /**
-    * DataSync Agent activation key during resource creation. Conflicts with `ip_address`. If an `ip_address` is provided instead, the provider will retrieve the `activation_key` as part of the resource creation.
+    * DataSync Agent activation key during resource creation. Conflicts with `ipAddress`. If an `ipAddress` is provided instead, the provider will retrieve the `activationKey` as part of the resource creation.
     */
   val activationKey: Output[String] = js.native
   /**
@@ -32,7 +32,7 @@ class Agent protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. DataSync Agent must be accessible on port 80 from where the provider is running.
+    * DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. DataSync Agent must be accessible on port 80 from where the provider is running.
     */
   val ipAddress: Output[String] = js.native
   /**

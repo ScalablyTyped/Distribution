@@ -77,16 +77,16 @@ class Service protected () extends CustomResource {
     */
   val networkConfiguration: Output[js.UndefOr[Anon_AssignPublicIp]] = js.native
   /**
-    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `ordered_placement_strategy` blocks is `5`. Defined below.
+    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
   val orderedPlacementStrategies: Output[js.UndefOr[js.Array[Anon_FieldType]]] = js.native
   /**
     * rules that are taken into consideration during task placement. Maximum number of
-    * `placement_constraints` is `10`. Defined below.
+    * `placementConstraints` is `10`. Defined below.
     */
   val placementConstraints: Output[js.UndefOr[js.Array[Anon_ExpressionType]]] = js.native
   /**
-    * The platform version on which to run your service. Only applicable for `launch_type` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
+    * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
   val platformVersion: Output[String] = js.native
   /**
@@ -98,7 +98,7 @@ class Service protected () extends CustomResource {
     */
   val schedulingStrategy: Output[js.UndefOr[String]] = js.native
   /**
-    * The service discovery registries for the service. The maximum number of `service_registries` blocks is `1`.
+    * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
     */
   val serviceRegistries: Output[js.UndefOr[Anon_ContainerNameContainerPort]] = js.native
   /**

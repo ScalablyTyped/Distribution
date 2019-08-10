@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait PatchBaselineArgs extends js.Object {
   /**
-    * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approval_rule block requires the fields documented below.
+    * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
     */
   val approvalRules: js.UndefOr[Input[js.Array[Input[Anon_ApproveAfterDaysComplianceLevel]]]] = js.undefined
   /**

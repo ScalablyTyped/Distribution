@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csv-parse"
-version := "0.0-unknown-548549"
+version := "0.0-unknown-15b108"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

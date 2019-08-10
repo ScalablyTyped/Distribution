@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Master extends js.Object {
   /**
-    * Master account ID
+    * The ID of the account used as the Master account.
     */
   var AccountId: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.AccountId] = js.undefined
   /**
@@ -14,7 +14,7 @@ trait Master extends js.Object {
     */
   var InvitationId: js.UndefOr[String] = js.undefined
   /**
-    * Timestamp at which the invitation was sent
+    * Timestamp at which the invitation was sent.
     */
   var InvitedAt: js.UndefOr[String] = js.undefined
   /**

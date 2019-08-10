@@ -16,7 +16,7 @@ trait S3BucketAssociationArgs extends js.Object {
     */
   val classificationType: js.UndefOr[Input[Anon_ContinuousOneTime]] = js.undefined
   /**
-    * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.
+    * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */
   val memberAccountId: js.UndefOr[Input[String]] = js.undefined
   /**

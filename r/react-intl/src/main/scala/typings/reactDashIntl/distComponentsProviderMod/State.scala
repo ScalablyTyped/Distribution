@@ -16,17 +16,17 @@ trait State extends js.Object {
     */
   var intl: js.UndefOr[IntlShape] = js.undefined
   /**
-    * list of memoized props we care about.
+    * list of memoized config we care about.
     * This is important since creating intl is
     * very expensive
     */
-  var prevProps: OptionalIntlConfig
+  var prevConfig: OptionalIntlConfig
 }
 
 object State {
   @scala.inline
-  def apply(cache: IntlCache, prevProps: OptionalIntlConfig, intl: IntlShape = null): State = {
-    val __obj = js.Dynamic.literal(cache = cache, prevProps = prevProps)
+  def apply(cache: IntlCache, prevConfig: OptionalIntlConfig, intl: IntlShape = null): State = {
+    val __obj = js.Dynamic.literal(cache = cache, prevConfig = prevConfig)
     if (intl != null) __obj.updateDynamic("intl")(intl)
     __obj.asInstanceOf[State]
   }

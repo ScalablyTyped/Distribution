@@ -23,7 +23,7 @@ trait InstanceArgs extends js.Object {
   val bundleId: Input[String]
   /**
     * The name of your key pair. Created in the
-    * Lightsail console (cannot use `aws_key_pair` at this time)
+    * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
     */
   val keyPairName: js.UndefOr[Input[String]] = js.undefined
   /**

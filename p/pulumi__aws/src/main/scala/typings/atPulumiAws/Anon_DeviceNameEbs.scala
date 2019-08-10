@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DeviceNameEbs extends js.Object {
   var deviceName: String
-  var ebs: js.Array[Anon_DeleteOnTerminationEncrypted]
+  var ebs: js.Array[Anon_DeleteOnTerminationEncryptedIopsKmsKeyId]
   var noDevice: String
   var virtualName: String
 }
@@ -15,7 +15,7 @@ object Anon_DeviceNameEbs {
   @scala.inline
   def apply(
     deviceName: String,
-    ebs: js.Array[Anon_DeleteOnTerminationEncrypted],
+    ebs: js.Array[Anon_DeleteOnTerminationEncryptedIopsKmsKeyId],
     noDevice: String,
     virtualName: String
   ): Anon_DeviceNameEbs = {

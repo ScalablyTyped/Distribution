@@ -14,7 +14,7 @@ trait GetLayerVersionArgs extends js.Object {
     */
   val layerName: String
   /**
-    * Specific layer version. Conflicts with `compatible_runtime`. If omitted, the latest available layer version will be used.
+    * Specific layer version. Conflicts with `compatibleRuntime`. If omitted, the latest available layer version will be used.
     */
   val version: js.UndefOr[Double] = js.undefined
 }

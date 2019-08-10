@@ -19,6 +19,7 @@ trait SqlTaggedTemplateType extends js.Object {
   ): ComparisonPredicateTokenType = js.native
   def identifier(names: js.Array[String]): IdentifierTokenType = js.native
   def identifierList(identifiers: js.Array[IdentifierListMemberType]): IdentifierListTokenType = js.native
+  def json(value: SerializableValueType): JsonSqlTokenType = js.native
   def raw(rawSql: String): RawSqlTokenType = js.native
   def raw(rawSql: String, values: js.Array[PrimitiveValueExpressionType]): RawSqlTokenType = js.native
   def tuple(values: js.Array[ValueExpressionType]): TupleSqlTokenType = js.native

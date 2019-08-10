@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "catbox-redis"
-version := "4.1-dt-20181022Z-3d42ca"
+version := "4.1-dt-20181022Z-1d594a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-07848f",
-  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190708Z-c67f25",
+  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190809Z-5f9d99",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

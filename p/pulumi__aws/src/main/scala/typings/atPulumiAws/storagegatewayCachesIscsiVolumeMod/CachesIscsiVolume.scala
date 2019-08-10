@@ -50,7 +50,7 @@ class CachesIscsiVolume protected () extends CustomResource {
     */
   val snapshotId: Output[js.UndefOr[String]] = js.native
   /**
-    * The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+    * The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volumeSizeInBytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
     */
   val sourceVolumeArn: Output[js.UndefOr[String]] = js.native
   /**

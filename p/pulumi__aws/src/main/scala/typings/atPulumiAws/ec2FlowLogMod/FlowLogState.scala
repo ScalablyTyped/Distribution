@@ -23,7 +23,7 @@ trait FlowLogState extends js.Object {
     */
   val logDestinationType: js.UndefOr[Input[String]] = js.undefined
   /**
-    * *Deprecated:* Use `log_destination` instead. The name of the CloudWatch log group.
+    * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
     */
   val logGroupName: js.UndefOr[Input[String]] = js.undefined
   /**

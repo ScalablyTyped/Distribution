@@ -28,7 +28,7 @@ class Instance protected () extends CustomResource {
     */
   val address: Output[String] = js.native
   /**
-    * The allocated storage in gibibytes. If `max_allocated_storage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
+    * The allocated storage in gibibytes. If `maxAllocatedStorage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
     */
   val allocatedStorage: Output[Double] = js.native
   /**
@@ -66,7 +66,7 @@ class Instance protected () extends CustomResource {
   /**
     * The daily time range (in UTC) during which
     * automated backups are created if they are enabled. Example: "09:46-10:16". Must
-    * not overlap with `maintenance_window`.
+    * not overlap with `maintenanceWindow`.
     */
   val backupWindow: Output[String] = js.native
   /**
@@ -117,7 +117,7 @@ class Instance protected () extends CustomResource {
     */
   val endpoint: Output[String] = js.native
   /**
-    * (Required unless a `snapshot_identifier` or `replicate_source_db`
+    * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
     * is provided) The database engine to use.  For supported values, see the Engine parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
     * Note that for Amazon Aurora instances the engine must match the [DB cluster](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html)'s engine'.
     * For information on the difference between the available Aurora MySQL engines
@@ -126,7 +126,7 @@ class Instance protected () extends CustomResource {
     */
   val engine: Output[String] = js.native
   /**
-    * The engine version to use. If `auto_minor_version_upgrade`
+    * The engine version to use. If `autoMinorVersionUpgrade`
     * is enabled, you can provide a prefix of the version such as `5.7` (for `5.7.10`) and
     * this attribute will ignore differences in the patch version automatically (e.g. `5.7.17`).
     * For supported values, see the EngineVersion parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
@@ -165,7 +165,7 @@ class Instance protected () extends CustomResource {
   val instanceClass: Output[String] = js.native
   /**
     * The amount of provisioned IOPS. Setting this implies a
-    * storage_type of "io1".
+    * storageType of "io1".
     */
   val iops: Output[js.UndefOr[Double]] = js.native
   /**
@@ -187,7 +187,7 @@ class Instance protected () extends CustomResource {
     */
   val maintenanceWindow: Output[String] = js.native
   /**
-    * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocated_storage`. Must be greater than or equal to `allocated_storage` or `0` to disable Storage Autoscaling.
+    * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocatedStorage`. Must be greater than or equal to `allocatedStorage` or `0` to disable Storage Autoscaling.
     */
   val maxAllocatedStorage: Output[js.UndefOr[Double]] = js.native
   /**
@@ -223,7 +223,7 @@ class Instance protected () extends CustomResource {
     */
   val parameterGroupName: Output[String] = js.native
   /**
-    * (Required unless a `snapshot_identifier` or `replicate_source_db`
+    * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
     * is provided) Password for the master DB user. Note that this may show up in
     * logs, and it will be stored in the state file.
     */
@@ -233,11 +233,11 @@ class Instance protected () extends CustomResource {
     */
   val performanceInsightsEnabled: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true. Once KMS key is set, it can never be changed.
+    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performanceInsightsKmsKeyId`, `performanceInsightsEnabled` needs to be set to true. Once KMS key is set, it can never be changed.
     */
   val performanceInsightsKmsKeyId: Output[String] = js.native
   /**
-    * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performance_insights_retention_period`, `performance_insights_enabled` needs to be set to true. Defaults to '7'.
+    * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performanceInsightsRetentionPeriod`, `performanceInsightsEnabled` needs to be set to true. Defaults to '7'.
     */
   val performanceInsightsRetentionPeriod: Output[Double] = js.native
   /**
@@ -255,7 +255,7 @@ class Instance protected () extends CustomResource {
     * database, and to use this value as the source database. This correlates to the
     * `identifier` of another Amazon RDS Database to replicate. Note that if you are
     * creating a cross-region replica of an encrypted database you will also need to
-    * specify a `kms_key_id`. See [DB Instance Replication][1] and [Working with
+    * specify a `kmsKeyId`. See [DB Instance Replication][1] and [Working with
     * PostgreSQL and MySQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
     * for more information on using Replication.
     */
@@ -278,7 +278,7 @@ class Instance protected () extends CustomResource {
     * Determines whether a final DB snapshot is
     * created before the DB instance is deleted. If true is specified, no DBSnapshot
     * is created. If false is specified, a DB snapshot is created before the DB
-    * instance is deleted, using the value from `final_snapshot_identifier`. Default
+    * instance is deleted, using the value from `finalSnapshotIdentifier`. Default
     * is `false`.
     */
   val skipFinalSnapshot: Output[js.UndefOr[Boolean]] = js.native
@@ -295,7 +295,7 @@ class Instance protected () extends CustomResource {
   /**
     * Specifies whether the DB instance is
     * encrypted. Note that if you are creating a cross-region read replica this field
-    * is ignored and you should instead declare `kms_key_id` with a valid ARN. The
+    * is ignored and you should instead declare `kmsKeyId` with a valid ARN. The
     * default is `false` if not specified.
     */
   val storageEncrypted: Output[js.UndefOr[Boolean]] = js.native
@@ -318,7 +318,7 @@ class Instance protected () extends CustomResource {
     */
   val timezone: Output[String] = js.native
   /**
-    * (Required unless a `snapshot_identifier` or `replicate_source_db`
+    * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
     * is provided) Username for the master DB user.
     */
   val username: Output[String] = js.native

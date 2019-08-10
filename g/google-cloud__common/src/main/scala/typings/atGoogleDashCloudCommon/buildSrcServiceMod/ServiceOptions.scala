@@ -15,6 +15,7 @@ trait ServiceOptions extends GoogleAuthOptions {
   var email: js.UndefOr[String] = js.undefined
   var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.undefined
   var promise: js.UndefOr[PromiseConstructor] = js.undefined
+  var timeout: js.UndefOr[Double] = js.undefined
   var token: js.UndefOr[String] = js.undefined
 }
 
@@ -30,6 +31,7 @@ object ServiceOptions {
     projectId: String = null,
     promise: PromiseConstructor = null,
     scopes: String | js.Array[String] = null,
+    timeout: Int | Double = null,
     token: String = null
   ): ServiceOptions = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +44,7 @@ object ServiceOptions {
     if (projectId != null) __obj.updateDynamic("projectId")(projectId)
     if (promise != null) __obj.updateDynamic("promise")(promise)
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token)
     __obj.asInstanceOf[ServiceOptions]
   }

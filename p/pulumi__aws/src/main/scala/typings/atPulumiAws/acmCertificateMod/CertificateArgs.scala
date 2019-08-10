@@ -1,6 +1,7 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_CertificateTransparencyLoggingPreferenceInput
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,17 +9,23 @@ import scala.scalajs.js.annotation._
 
 trait CertificateArgs extends js.Object {
   /**
+    * ARN of an ACMPCA
+    */
+  val certificateAuthorityArn: js.UndefOr[Input[String]] = js.undefined
+  /**
     * The certificate's PEM-formatted public key
     */
   val certificateBody: js.UndefOr[Input[String]] = js.undefined
   /**
     * The certificate's PEM-formatted chain
+    * * Creating a private CA issued certificate
     */
   val certificateChain: js.UndefOr[Input[String]] = js.undefined
   /**
     * A domain name for which the certificate should be issued
     */
   val domainName: js.UndefOr[Input[String]] = js.undefined
+  val options: js.UndefOr[Input[Anon_CertificateTransparencyLoggingPreferenceInput]] = js.undefined
   /**
     * The certificate's PEM-formatted private key
     */
@@ -41,18 +48,22 @@ trait CertificateArgs extends js.Object {
 object CertificateArgs {
   @scala.inline
   def apply(
+    certificateAuthorityArn: Input[String] = null,
     certificateBody: Input[String] = null,
     certificateChain: Input[String] = null,
     domainName: Input[String] = null,
+    options: Input[Anon_CertificateTransparencyLoggingPreferenceInput] = null,
     privateKey: Input[String] = null,
     subjectAlternativeNames: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,
     validationMethod: Input[String] = null
   ): CertificateArgs = {
     val __obj = js.Dynamic.literal()
+    if (certificateAuthorityArn != null) __obj.updateDynamic("certificateAuthorityArn")(certificateAuthorityArn.asInstanceOf[js.Any])
     if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
     if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (subjectAlternativeNames != null) __obj.updateDynamic("subjectAlternativeNames")(subjectAlternativeNames.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

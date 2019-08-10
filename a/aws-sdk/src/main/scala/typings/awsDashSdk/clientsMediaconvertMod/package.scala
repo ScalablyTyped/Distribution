@@ -5,7 +5,6 @@ import typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_9_1_6
 import typings.awsDashSdk.awsDashSdkStrings.COMPLETE_MAIN
 import typings.awsDashSdk.awsDashSdkStrings.ONE_YEAR
 import typings.awsDashSdk.awsDashSdkStrings.SAMPLE_AES
-import typings.awsDashSdk.awsDashSdkStrings.STATIC_KEY
 import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import typings.std.Date
 import scala.scalajs.js
@@ -285,7 +284,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type CmafInitializationVectorInManifest = _CmafInitializationVectorInManifest | String
-  type CmafKeyProviderType = STATIC_KEY | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SPEKE
+    - typings.awsDashSdk.awsDashSdkStrings.STATIC_KEY
+    - java.lang.String
+  */
+  type CmafKeyProviderType = _CmafKeyProviderType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.GZIP
     - typings.awsDashSdk.awsDashSdkStrings.NONE
@@ -781,6 +785,7 @@ package object clientsMediaconvertMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.TRANSITION_DETECTION
     - java.lang.String
   */
   type H264SceneChangeDetect = _H264SceneChangeDetect | String
@@ -942,6 +947,7 @@ package object clientsMediaconvertMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.TRANSITION_DETECTION
     - java.lang.String
   */
   type H265SceneChangeDetect = _H265SceneChangeDetect | String
@@ -1665,6 +1671,7 @@ package object clientsMediaconvertMod {
     - typings.awsDashSdk.awsDashSdkStrings.SHARPEN
     - typings.awsDashSdk.awsDashSdkStrings.CONSERVE
     - typings.awsDashSdk.awsDashSdkStrings.SPATIAL
+    - typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
     - java.lang.String
   */
   type NoiseReducerFilter = _NoiseReducerFilter | String
@@ -1822,6 +1829,15 @@ package object clientsMediaconvertMod {
   */
   type StatusUpdateInterval = _StatusUpdateInterval | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PAGE_TYPE_INITIAL
+    - typings.awsDashSdk.awsDashSdkStrings.PAGE_TYPE_SUBTITLE
+    - typings.awsDashSdk.awsDashSdkStrings.PAGE_TYPE_ADDL_INFO
+    - typings.awsDashSdk.awsDashSdkStrings.PAGE_TYPE_PROGRAM_SCHEDULE
+    - typings.awsDashSdk.awsDashSdkStrings.PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE
+    - java.lang.String
+  */
+  type TeletextPageType = _TeletextPageType | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.TOP_CENTER
     - typings.awsDashSdk.awsDashSdkStrings.TOP_LEFT
     - typings.awsDashSdk.awsDashSdkStrings.TOP_RIGHT
@@ -1903,6 +1919,7 @@ package object clientsMediaconvertMod {
   type __integerMin0Max30 = Double
   type __integerMin0Max30000 = Double
   type __integerMin0Max3600 = Double
+  type __integerMin0Max4 = Double
   type __integerMin0Max47185920 = Double
   type __integerMin0Max500 = Double
   type __integerMin0Max50000 = Double
@@ -1952,6 +1969,7 @@ package object clientsMediaconvertMod {
   type __integerMin96Max600 = Double
   type __integerMinNegative1000Max1000 = Double
   type __integerMinNegative180Max180 = Double
+  type __integerMinNegative1Max3 = Double
   type __integerMinNegative2147483648Max2147483647 = Double
   type __integerMinNegative2Max3 = Double
   type __integerMinNegative50Max50 = Double
@@ -1978,11 +1996,13 @@ package object clientsMediaconvertMod {
   type __listOfOutputGroupDetail = js.Array[OutputGroupDetail]
   type __listOfPreset = js.Array[Preset]
   type __listOfQueue = js.Array[Queue]
+  type __listOfTeletextPageType = js.Array[TeletextPageType]
   type __listOf__integerMin1Max2147483647 = js.Array[__integerMin1Max2147483647]
   type __listOf__integerMin32Max8182 = js.Array[__integerMin32Max8182]
   type __listOf__integerMinNegative60Max6 = js.Array[__integerMinNegative60Max6]
   type __listOf__string = js.Array[__string]
   type __listOf__stringMin1 = js.Array[__stringMin1]
+  type __listOf__stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[__stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
   type __listOf__stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[__stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
   type __listOf__stringPatternS3ASSETMAPXml = js.Array[__stringPatternS3ASSETMAPXml]
   type __mapOfAudioSelector = StringDictionary[AudioSelector]
@@ -2001,6 +2021,7 @@ package object clientsMediaconvertMod {
   type __stringMin1Max256 = String
   type __stringMin24Max512PatternAZaZ0902 = String
   type __stringMin32Max32Pattern09aFAF32 = String
+  type __stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = String
   type __stringMin3Max3Pattern1809aFAF09aEAE = String
   type __stringMin3Max3PatternAZaZ3 = String
   type __stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912 = String
@@ -2014,14 +2035,15 @@ package object clientsMediaconvertMod {
   type __stringPatternArnAwsUsGovAcm = String
   type __stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = String
   type __stringPatternDD = String
-  type __stringPatternHttpHttpsS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = String
+  type __stringPatternHttpHttpsS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = String
   type __stringPatternHttps = String
   type __stringPatternIdentityAZaZ26AZaZ09163 = String
   type __stringPatternS3 = String
   type __stringPatternS3ASSETMAPXml = String
-  type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = String
+  type __stringPatternS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = String
   type __stringPatternSNManifestConfirmConditionNotificationNS = String
   type __stringPatternSNSignalProcessingNotificationNS = String
+  type __stringPatternW = String
   type __stringPatternWS = String
   type __timestampUnix = Date
   /* Rewritten from type alias, can be one of: 

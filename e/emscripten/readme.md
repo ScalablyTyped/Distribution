@@ -1,6 +1,7 @@
 
 # Scala.js typings for emscripten
 
+Typings are for version 1.38.33
 
 
 

@@ -42,8 +42,10 @@ object FixedSizeGridProps {
     outerElementType: ReactElementType = null,
     outerRef: Ref[_] = null,
     outerTagName: String = null,
+    overscanColumnCount: Int | Double = null,
     overscanColumnsCount: Int | Double = null,
     overscanCount: Int | Double = null,
+    overscanRowCount: Int | Double = null,
     overscanRowsCount: Int | Double = null,
     style: CSSProperties = null,
     useIsScrolling: js.UndefOr[Boolean] = js.undefined
@@ -63,8 +65,10 @@ object FixedSizeGridProps {
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
     if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
     if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName)
+    if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
     if (overscanColumnsCount != null) __obj.updateDynamic("overscanColumnsCount")(overscanColumnsCount.asInstanceOf[js.Any])
     if (overscanCount != null) __obj.updateDynamic("overscanCount")(overscanCount.asInstanceOf[js.Any])
+    if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (overscanRowsCount != null) __obj.updateDynamic("overscanRowsCount")(overscanRowsCount.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling)

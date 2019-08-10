@@ -10,19 +10,23 @@ trait CmafEncryptionSettings extends js.Object {
     */
   var ConstantInitializationVector: js.UndefOr[__stringMin32Max32Pattern09aFAF32] = js.undefined
   /**
-    * Encrypts the segments with the given encryption scheme. Leave blank to disable. Selecting 'Disabled' in the web interface also disables encryption.
+    * For DRM with CMAF, the encryption type is always sample AES.
     */
   var EncryptionMethod: js.UndefOr[CmafEncryptionType] = js.undefined
   /**
-    * The Initialization Vector is a 128-bit number used in conjunction with the key for encrypting blocks. If set to INCLUDE, Initialization Vector is listed in the manifest. Otherwise Initialization Vector is not in the manifest.
+    * When you use DRM with CMAF outputs, choose whether the service writes the 128-bit encryption initialization vector in the HLS and DASH manifests.
     */
   var InitializationVectorInManifest: js.UndefOr[CmafInitializationVectorInManifest] = js.undefined
+  /**
+    * Use these settings when doing DRM encryption with a SPEKE-compliant key provider, if your output group type is CMAF. If your output group type is HLS, MS Smooth, or DASH, use the SpekeKeyProvider settings instead.
+    */
+  var SpekeKeyProvider: js.UndefOr[SpekeKeyProviderCmaf] = js.undefined
   /**
     * Use these settings to set up encryption with a static key provider.
     */
   var StaticKeyProvider: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StaticKeyProvider] = js.undefined
   /**
-    * Indicates which type of key provider is used for encryption.
+    * Specify whether your DRM encryption key is static or from a key provider that follows the SPEKE standard. For more information about SPEKE, see https://docs.aws.amazon.com/speke/latest/documentation/what-is-speke.html.
     */
   var Type: js.UndefOr[CmafKeyProviderType] = js.undefined
 }
@@ -33,6 +37,7 @@ object CmafEncryptionSettings {
     ConstantInitializationVector: __stringMin32Max32Pattern09aFAF32 = null,
     EncryptionMethod: CmafEncryptionType = null,
     InitializationVectorInManifest: CmafInitializationVectorInManifest = null,
+    SpekeKeyProvider: SpekeKeyProviderCmaf = null,
     StaticKeyProvider: StaticKeyProvider = null,
     Type: CmafKeyProviderType = null
   ): CmafEncryptionSettings = {
@@ -40,6 +45,7 @@ object CmafEncryptionSettings {
     if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector)
     if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
     if (InitializationVectorInManifest != null) __obj.updateDynamic("InitializationVectorInManifest")(InitializationVectorInManifest.asInstanceOf[js.Any])
+    if (SpekeKeyProvider != null) __obj.updateDynamic("SpekeKeyProvider")(SpekeKeyProvider)
     if (StaticKeyProvider != null) __obj.updateDynamic("StaticKeyProvider")(StaticKeyProvider)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafEncryptionSettings]

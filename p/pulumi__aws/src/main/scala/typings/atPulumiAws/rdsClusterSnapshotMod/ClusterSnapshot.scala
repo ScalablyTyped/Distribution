@@ -50,7 +50,7 @@ class ClusterSnapshot protected () extends CustomResource {
     */
   val engineVersion: Output[String] = js.native
   /**
-    * If storage_encrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
+    * If storageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
   val kmsKeyId: Output[String] = js.native
   /**

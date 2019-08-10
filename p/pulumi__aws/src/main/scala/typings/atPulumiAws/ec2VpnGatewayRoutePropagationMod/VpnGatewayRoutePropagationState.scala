@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait VpnGatewayRoutePropagationState extends js.Object {
   /**
-    * The id of the `aws_route_table` to propagate routes into.
+    * The id of the `aws.ec2.RouteTable` to propagate routes into.
     */
   val routeTableId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The id of the `aws_vpn_gateway` to propagate routes from.
+    * The id of the `aws.ec2.VpnGateway` to propagate routes from.
     */
   val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
 }

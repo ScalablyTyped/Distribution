@@ -39,7 +39,7 @@ class HealthCheck protected () extends CustomResource {
     */
   val cloudwatchAlarmRegion: Output[js.UndefOr[String]] = js.native
   /**
-    * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enable_sni` defaults to `true`, when `type` is anything else `enable_sni` defaults to `false`.
+    * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enableSni` defaults to `true`, when `type` is anything else `enableSni` defaults to `false`.
     */
   val enableSni: Output[Boolean] = js.native
   /**
@@ -72,7 +72,7 @@ class HealthCheck protected () extends CustomResource {
   val port: Output[js.UndefOr[Double]] = js.native
   /**
     * This is a reference name used in Caller Reference
-    * (helpful for identifying single health_check set amongst others)
+    * (helpful for identifying single healthCheck set amongst others)
     */
   val referenceName: Output[js.UndefOr[String]] = js.native
   /**

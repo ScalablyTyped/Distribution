@@ -39,7 +39,7 @@ class Volume protected () extends CustomResource {
     */
   val iops: Output[Double] = js.native
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
     */
   val kmsKeyId: Output[String] = js.native
   /**

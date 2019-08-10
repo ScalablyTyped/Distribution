@@ -27,7 +27,7 @@ trait ClusterArgs extends js.Object {
     */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifer`.
     */
   val clusterIdentifierPrefix: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait ClusterArgs extends js.Object {
     */
   val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `storage_encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `storageEncrypted` needs to be set to true.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -85,7 +85,7 @@ trait ClusterArgs extends js.Object {
   val preferredBackupWindow: js.UndefOr[Input[String]] = js.undefined
   val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
+    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `finalSnapshotIdentifier`. Default is `false`.
     */
   val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
   /**

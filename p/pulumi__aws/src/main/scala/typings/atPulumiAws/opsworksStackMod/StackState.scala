@@ -14,7 +14,7 @@ trait StackState extends js.Object {
   val agentVersion: js.UndefOr[Input[String]] = js.undefined
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+    * If `manageBerkshelf` is enabled, the version of Berkshelf to use.
     */
   val berkshelfVersion: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait StackState extends js.Object {
     */
   val configurationManagerVersion: js.UndefOr[Input[String]] = js.undefined
   /**
-    * When `use_custom_cookbooks` is set, provide this sub-object as
+    * When `useCustomCookbooks` is set, provide this sub-object as
     * described below.
     */
   val customCookbooksSources: js.UndefOr[Input[js.Array[Input[Anon_PasswordRevisionSshKeyTypeUrl]]]] = js.undefined
@@ -40,7 +40,7 @@ trait StackState extends js.Object {
   val customJson: js.UndefOr[Input[String]] = js.undefined
   /**
     * Name of the availability zone where instances will be created
-    * by default. This is required unless you set `vpc_id`.
+    * by default. This is required unless you set `vpcId`.
     */
   val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait StackState extends js.Object {
   val defaultSshKeyName: js.UndefOr[Input[String]] = js.undefined
   /**
     * Id of the subnet in which instances will be created by default. Mandatory
-    * if `vpc_id` is set, and forbidden if it isn't.
+    * if `vpcId` is set, and forbidden if it isn't.
     */
   val defaultSubnetId: js.UndefOr[Input[String]] = js.undefined
   /**

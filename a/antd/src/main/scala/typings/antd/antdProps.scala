@@ -8,7 +8,6 @@ import typings.antd.esDropdownDropdownMod.DropDownProps
 import typings.antd.esLayoutLayoutMod.BasicProps
 import typings.antd.esListItemMod.ListItemProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
-import typings.antd.esTransferOperationMod.TransferOperationProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.esTreeTreeMod.AntTreeNodeProps
 import typings.antd.esTypographyBaseMod.InternalBlockProps
@@ -134,9 +133,6 @@ trait antdProps {
   def DividerProps: typings.antd.esDividerMod.DividerProps.type = typings.antd.esDividerMod.DividerProps
   type DividerProps = typings.antd.esDividerMod.DividerProps
   @scala.inline
-  def DraggerProps: typings.antd.esUploadDraggerMod.DraggerProps.type = typings.antd.esUploadDraggerMod.DraggerProps
-  type DraggerProps = typings.antd.esUploadDraggerMod.DraggerProps
-  @scala.inline
   def DrawerProps: typings.antd.esDrawerMod.DrawerProps.type = typings.antd.esDrawerMod.DrawerProps
   type DrawerProps = typings.antd.esDrawerMod.DrawerProps
   @scala.inline
@@ -211,9 +207,6 @@ trait antdProps {
   @scala.inline
   def ModalProps: typings.antd.esModalModalMod.ModalProps.type = typings.antd.esModalModalMod.ModalProps
   type ModalProps = typings.antd.esModalModalMod.ModalProps
-  @scala.inline
-  def OperationProps: TransferOperationProps.type = typings.antd.esTransferOperationMod.TransferOperationProps
-  type OperationProps = TransferOperationProps
   @scala.inline
   def OptGroupProps: typings.antd.esSelectMod.OptGroupProps.type = typings.antd.esSelectMod.OptGroupProps
   type OptGroupProps = typings.antd.esSelectMod.OptGroupProps

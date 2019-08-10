@@ -33,8 +33,15 @@ trait Cheerio
   def appendTo(target: Cheerio): Cheerio = js.native
   // Attributes
   def attr(): StringDictionary[String] = js.native
+  // The map's values *can* be `any` but they'll all be cast to strings
+  // regardless.
+  def attr(map: StringDictionary[js.Any]): Cheerio = js.native
   def attr(name: String): String = js.native
-  def attr(name: String, value: js.Any): Cheerio = js.native
+  // `value` *can* be `any` here but:
+  // 1. That makes type-checking the function-type useless
+  // 2. It's converted to a string anyways
+  def attr(name: String, value: String): Cheerio = js.native
+  def attr(name: String, value: AttrFunction): Cheerio = js.native
   def before(content: String, contents: js.Any*): Cheerio = js.native
   def before(content: js.Array[Document], contents: js.Any*): Cheerio = js.native
   def before(content: Cheerio, contents: js.Any*): Cheerio = js.native

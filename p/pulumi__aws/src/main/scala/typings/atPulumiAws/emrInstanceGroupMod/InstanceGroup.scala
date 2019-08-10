@@ -35,7 +35,7 @@ class InstanceGroup protected () extends CustomResource {
     */
   val clusterId: Output[String] = js.native
   /**
-    * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
+    * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
     */
   val ebsConfigs: Output[js.Array[Anon_Iops]] = js.native
   /**

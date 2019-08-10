@@ -20,7 +20,7 @@ trait InstanceGroupArgs extends js.Object {
     */
   val clusterId: Input[String]
   /**
-    * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
+    * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
     */
   val ebsConfigs: js.UndefOr[Input[js.Array[Input[Anon_IopsSize]]]] = js.undefined
   /**

@@ -32,7 +32,7 @@ class Integration protected () extends CustomResource {
     */
   val cacheNamespace: Output[String] = js.native
   /**
-    * The id of the VpcLink used for the integration. **Required** if `connection_type` is `VPC_LINK`
+    * The id of the VpcLink used for the integration. **Required** if `connectionType` is `VPC_LINK`
     */
   val connectionId: Output[js.UndefOr[String]] = js.native
   /**
@@ -61,12 +61,12 @@ class Integration protected () extends CustomResource {
     */
   val integrationHttpMethod: Output[js.UndefOr[String]] = js.native
   /**
-    * The integration passthrough behavior (`WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`).  **Required** if `request_templates` is used.
+    * The integration passthrough behavior (`WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`).  **Required** if `requestTemplates` is used.
     */
   val passthroughBehavior: Output[String] = js.native
   /**
     * A map of request query string parameters and headers that should be passed to the backend responder.
-    * For example: `request_parameters = { "integration.request.header.X-Some-Other-Header" = "method.request.header.X-Some-Header" }`
+    * For example: `requestParameters = { "integration.request.header.X-Some-Other-Header" = "method.request.header.X-Some-Header" }`
     */
   val requestParameters: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
@@ -86,7 +86,7 @@ class Integration protected () extends CustomResource {
     */
   val timeoutMilliseconds: Output[js.UndefOr[Double]] = js.native
   /**
-    * The integration input's [type](https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/). Valid values are `HTTP` (for HTTP backends), `MOCK` (not calling any real backend), `AWS` (for AWS services), `AWS_PROXY` (for Lambda proxy integration) and `HTTP_PROXY` (for HTTP proxy integration). An `HTTP` or `HTTP_PROXY` integration with a `connection_type` of `VPC_LINK` is referred to as a private integration and uses a VpcLink to connect API Gateway to a network load balancer of a VPC.
+    * The integration input's [type](https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/). Valid values are `HTTP` (for HTTP backends), `MOCK` (not calling any real backend), `AWS` (for AWS services), `AWS_PROXY` (for Lambda proxy integration) and `HTTP_PROXY` (for HTTP proxy integration). An `HTTP` or `HTTP_PROXY` integration with a `connectionType` of `VPC_LINK` is referred to as a private integration and uses a VpcLink to connect API Gateway to a network load balancer of a VPC.
     */
   val `type`: Output[String] = js.native
   /**

@@ -44,7 +44,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val availabilityZone: Output[String] = js.native
   /**
-    * The identifier of the [`aws_neptune_cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+    * The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: Output[String] = js.native
   /**
@@ -84,7 +84,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val neptuneParameterGroupName: Output[js.UndefOr[String]] = js.native
   /**
-    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws_neptune_cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptuneSubnetGroupName` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
     */
   val neptuneSubnetGroupName: Output[String] = js.native
   /**

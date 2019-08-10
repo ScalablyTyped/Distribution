@@ -24,7 +24,7 @@ trait JobDefinitionArgs extends js.Object {
   val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
-    * Maximum number of `retry_strategy` is `1`.  Defined below.
+    * Maximum number of `retryStrategy` is `1`.  Defined below.
     */
   val retryStrategy: js.UndefOr[Input[Anon_AttemptsInput]] = js.undefined
   /**

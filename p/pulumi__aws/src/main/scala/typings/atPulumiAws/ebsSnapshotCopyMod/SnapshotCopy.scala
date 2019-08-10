@@ -24,8 +24,8 @@ class SnapshotCopy protected () extends CustomResource {
   def this(name: String, args: SnapshotCopyArgs, opts: CustomResourceOptions) = this()
   /**
     * The data encryption key identifier for the snapshot.
-    * * `source_snapshot_id` The ARN of the copied snapshot.
-    * * `source_region` The region of the source snapshot.
+    * * `sourceSnapshotId` The ARN of the copied snapshot.
+    * * `sourceRegion` The region of the source snapshot.
     */
   val dataEncryptionKeyId: Output[String] = js.native
   /**
@@ -38,8 +38,8 @@ class SnapshotCopy protected () extends CustomResource {
   val encrypted: Output[js.UndefOr[Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
-    * * `source_snapshot_id` The ARN for the snapshot to be copied.
-    * * `source_region` The region of the source snapshot.
+    * * `sourceSnapshotId` The ARN for the snapshot to be copied.
+    * * `sourceRegion` The region of the source snapshot.
     */
   val kmsKeyId: Output[js.UndefOr[String]] = js.native
   /**

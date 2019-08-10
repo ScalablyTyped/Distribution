@@ -27,7 +27,7 @@ trait MemberArgs extends js.Object {
     */
   val invitationMessage: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationship_status` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
+    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationshipStatus` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
     */
   val invite: js.UndefOr[Input[Boolean]] = js.undefined
 }

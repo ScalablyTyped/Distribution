@@ -92,13 +92,22 @@ object eslintStrings {
   sealed trait global extends js.Object
   
   @js.native
+  sealed trait layout extends js.Object
+  
+  @js.native
   sealed trait module extends js.Object
   
   @js.native
   sealed trait off extends RuleLevel
   
   @js.native
+  sealed trait problem extends js.Object
+  
+  @js.native
   sealed trait script extends js.Object
+  
+  @js.native
+  sealed trait suggestion extends js.Object
   
   @js.native
   sealed trait switch extends js.Object
@@ -169,11 +178,17 @@ object eslintStrings {
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline
+  def layout: layout = "layout".asInstanceOf[layout]
+  @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
+  def problem: problem = "problem".asInstanceOf[problem]
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
+  @scala.inline
+  def suggestion: suggestion = "suggestion".asInstanceOf[suggestion]
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline

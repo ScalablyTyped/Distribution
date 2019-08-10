@@ -30,6 +30,6 @@ object IntlProvider extends js.Object {
     formats | messages | timeZone | textComponent | defaultLocale | defaultFormats | onError
   ] = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevPropsCache: State): Anon_Intl | Null = js.native
+  def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: State): Anon_Intl | Null = js.native
 }
 

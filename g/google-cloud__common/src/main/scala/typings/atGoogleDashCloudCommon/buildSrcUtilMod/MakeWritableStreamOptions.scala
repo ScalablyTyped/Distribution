@@ -2,8 +2,8 @@ package typings.atGoogleDashCloudCommon.buildSrcUtilMod
 
 import typings.atGoogleDashCloudCommon.Anon_AuthenticatedReqOpts
 import typings.atGoogleDashCloudCommon.Anon_ContentType
-import typings.request.requestMod.Options
-import typings.request.requestMod.OptionsWithUri
+import typings.teenyDashRequest.teenyDashRequestMod.Options
+import typings.teenyDashRequest.teenyDashRequestMod.OptionsWithUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ object MakeWritableStreamOptions {
     val __obj = js.Dynamic.literal(makeAuthenticatedRequest = js.Any.fromFunction2(makeAuthenticatedRequest))
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request)
     __obj.asInstanceOf[MakeWritableStreamOptions]
   }
 }

@@ -24,7 +24,7 @@ trait AccessKeyState extends js.Object {
   val pgpKey: js.UndefOr[Input[String]] = js.undefined
   /**
     * The secret access key. Note that this will be written
-    * to the state file. Please supply a `pgp_key` instead, which will prevent the
+    * to the state file. Please supply a `pgpKey` instead, which will prevent the
     * secret from being stored in plain text
     */
   val secret: js.UndefOr[Input[String]] = js.undefined

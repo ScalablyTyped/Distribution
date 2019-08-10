@@ -15,7 +15,7 @@ trait MaintenanceWindowTaskState extends js.Object {
     */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
   val loggingInfo: js.UndefOr[Input[Anon_S3BucketNameS3BucketPrefixS3Region]] = js.undefined
   /**
@@ -47,11 +47,11 @@ trait MaintenanceWindowTaskState extends js.Object {
     */
   val taskArn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+    * The parameters for task execution. This argument is conflict with `taskParameters` and `loggingInfo`.
     */
   val taskInvocationParameters: js.UndefOr[Input[Anon_AutomationParametersLambdaParameters]] = js.undefined
   /**
-    * A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+    * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
   val taskParameters: js.UndefOr[Input[js.Array[Input[Anon_NameValuesArray]]]] = js.undefined
   /**

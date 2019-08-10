@@ -217,6 +217,8 @@ trait Redis
   def llen(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def lpop(key: KeyType): js.Promise[String] = js.native
   def lpop(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native
+  def lpopBuffer(key: KeyType): js.Promise[Buffer] = js.native
+  def lpopBuffer(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Unit = js.native
   def lpush(key: KeyType, values: js.Any*): js.Any = js.native
   def lpushx(key: KeyType, value: js.Any): js.Promise[Double] = js.native
   def lpushx(key: KeyType, value: js.Any, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
@@ -226,6 +228,13 @@ trait Redis
     start: Double,
     stop: Double,
     callback: js.Function2[/* err */ Error, /* res */ js.Any, Unit]
+  ): Unit = js.native
+  def lrangeBuffer(key: KeyType, start: Double, stop: Double): js.Promise[js.Array[Buffer]] = js.native
+  def lrangeBuffer(
+    key: KeyType,
+    start: Double,
+    stop: Double,
+    callback: js.Function2[/* err */ Error, /* res */ js.Array[Buffer], Unit]
   ): Unit = js.native
   def lrem(key: KeyType, count: Double, value: js.Any): js.Promise[Double] = js.native
   def lrem(
@@ -319,6 +328,7 @@ trait Redis
     callback: js.Function2[/* err */ Error, /* res */ String, Unit]
   ): Unit = js.native
   def rpush(key: KeyType, values: js.Any*): js.Any = js.native
+  def rpushBuffer(key: String, values: Buffer*): js.Any = js.native
   def rpushx(key: KeyType, value: js.Any): js.Promise[Double] = js.native
   def rpushx(key: KeyType, value: js.Any, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def sadd(key: KeyType, members: js.Any*): js.Any = js.native

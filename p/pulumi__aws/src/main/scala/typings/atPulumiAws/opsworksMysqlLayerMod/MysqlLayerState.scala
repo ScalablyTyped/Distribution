@@ -41,7 +41,7 @@ trait MysqlLayerState extends js.Object {
     */
   val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+    * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
   val ebsVolumes: js.UndefOr[Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]]] = js.undefined
   /**

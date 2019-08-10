@@ -24,7 +24,7 @@ trait ClusterArgs extends js.Object {
     */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifier`.
     */
   val clusterIdentifierPrefix: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait ClusterArgs extends js.Object {
     */
   val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_arn`, `storage_encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyArn`, `storageEncrypted` needs to be set to true.
     */
   val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -76,7 +76,7 @@ trait ClusterArgs extends js.Object {
     */
   val replicationSourceIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Determines whether a final Neptune snapshot is created before the Neptune cluster is deleted. If true is specified, no Neptune snapshot is created. If false is specified, a Neptune snapshot is created before the Neptune cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
+    * Determines whether a final Neptune snapshot is created before the Neptune cluster is deleted. If true is specified, no Neptune snapshot is created. If false is specified, a Neptune snapshot is created before the Neptune cluster is deleted, using the value from `finalSnapshotIdentifier`. Default is `false`.
     */
   val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
   /**

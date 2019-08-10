@@ -1895,7 +1895,6 @@
 | 0.7215085981785435 | [postmark](./p/postmark) | Official Node.js client library for the Postmark H
 | 0.7214866918249999 | [svg-sprite-loader](./s/svg-sprite-loader) | Webpack loader for creating SVG sprites
 | 0.7214865069972928 | [abort-controller](./a/abort-controller) | An implementation of WHATWG AbortController interf
-| 0.7214843793496308 | [split-array-stream](./s/split-array-stream) | Safely push each item of an array to a stream
 | 0.7214667920758704 | [react-dnd](./r/react-dnd) | Drag and Drop for React
 | 0.7213943199910795 | [webpack-notifier](./w/webpack-notifier) | webpack + node-notifier = build status system noti
 | 0.7213599807433151 | [bootstrap-colorpicker](./b/bootstrap-colorpicker) | Bootstrap Colorpicker is a modular color picker pl
@@ -2639,6 +2638,7 @@
 | 0.6863350939269316 | [lokijs](./l/lokijs) | Fast document oriented javascript in-memory databa
 | 0.6863168963323577 | [csvtojson](./c/csvtojson) | A tool concentrating on converting csv data to JSO
 | 0.6863145831550631 | [backbone_dot_layoutmanage](./b/backbone_dot_layoutmanager) | A layout and template manager for Backbone.js appl
+| 0.6862284251594815 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U
 | 0.6861922532633522 | [webpack-sources](./w/webpack-sources) | Source code handling classes for webpack
 | 0.6861629925138952 | [traverson](./t/traverson) | Hypermedia API/HATEOAS client for Node.js and the 
 | 0.6861253997875498 | [mocha-steps](./m/mocha-steps) | Sequential scenarios for Mocha
@@ -5015,6 +5015,7 @@
 | 0.46513178065735894 | [oblo-util](./o/oblo-util) | Utilities module suitable for both Node.js and cli
 | 0.465089436448786 | [speakeasy](./s/speakeasy) | Two-factor authentication for Node.js. One-time pa
 | 0.46498822479147633 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open 
+| 0.4649816648634598 | [node-redmine](./n/node-redmine) | node-redmine is a nodejs library which supports 10
 | 0.4648418813968378 | [travis-fold](./t/travis-fold) | Tiny Module for emitting folding syntax for Travis
 | 0.464728755446307 | [angular-cookies](./a/angular-cookies) | AngularJS module for cookies
 | 0.46472426312703474 | [postal](./p/postal) | Pub/Sub library providing wildcard subscriptions, 

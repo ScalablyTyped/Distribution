@@ -36,7 +36,7 @@ class Table protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+    * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
     */
   val attributes: Output[js.Array[Anon_NameTypeString]] = js.native
   /**
@@ -73,7 +73,7 @@ class Table protected () extends CustomResource {
     */
   val rangeKey: Output[js.UndefOr[String]] = js.native
   /**
-    * The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val readCapacity: Output[js.UndefOr[Double]] = js.native
   /**
@@ -81,7 +81,7 @@ class Table protected () extends CustomResource {
     */
   val serverSideEncryption: Output[Anon_EnabledBoolean_1082978225] = js.native
   /**
-    * The ARN of the Table Stream. Only available when `stream_enabled = true`
+    * The ARN of the Table Stream. Only available when `streamEnabled = true`
     */
   val streamArn: Output[String] = js.native
   /**
@@ -92,7 +92,7 @@ class Table protected () extends CustomResource {
     * A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
     * a unique identifier for the stream on its own. However, the combination of AWS customer ID,
     * table name and this field is guaranteed to be unique.
-    * It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
+    * It can be used for creating CloudWatch Alarms. Only available when `streamEnabled = true`
     */
   val streamLabel: Output[String] = js.native
   /**
@@ -108,7 +108,7 @@ class Table protected () extends CustomResource {
     */
   val ttl: Output[js.UndefOr[Anon_AttributeNameEnabled]] = js.native
   /**
-    * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val writeCapacity: Output[js.UndefOr[Double]] = js.native
   /**

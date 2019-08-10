@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CascaderProps extends js.Object {
-  /** 是否支持清除*/
+  /** 是否支持清除 */
   var allowClear: js.UndefOr[Boolean] = js.undefined
   /** 当此项为 true 时，点选每级菜单选项值都会发生变化 */
   var changeOnSelect: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +16,7 @@ trait CascaderProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   /** 默认的选中项 */
   var defaultValue: js.UndefOr[js.Array[String]] = js.undefined
-  /** 禁用*/
+  /** 禁用 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** 选择后展示的渲染函数 */
   var displayRender: js.UndefOr[
@@ -50,7 +50,7 @@ trait CascaderProps extends js.Object {
   var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.undefined
   /** 可选项数据源 */
   var options: js.Array[CascaderOptionType]
-  /** 输入框占位文本*/
+  /** 输入框占位文本 */
   var placeholder: js.UndefOr[String] = js.undefined
   /** 自定义浮层类名 */
   var popupClassName: js.UndefOr[String] = js.undefined

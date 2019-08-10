@@ -1,5 +1,6 @@
 package typings.csvDashParse.libEs5Mod
 
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): Parser = js.native
   def apply(callback: Callback): Parser = js.native
-  def apply(input: String): Parser = js.native
-  def apply(input: String, callback: Callback): Parser = js.native
-  def apply(input: String, options: Options): Parser = js.native
-  def apply(input: String, options: Options, callback: Callback): Parser = js.native
+  def apply(input: Buffer | String): Parser = js.native
+  def apply(input: Buffer | String, callback: Callback): Parser = js.native
+  def apply(input: Buffer | String, options: Options): Parser = js.native
+  def apply(input: Buffer | String, options: Options, callback: Callback): Parser = js.native
   def apply(options: Options): Parser = js.native
   def apply(options: Options, callback: Callback): Parser = js.native
 }

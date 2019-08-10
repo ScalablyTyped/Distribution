@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetListenerArgs extends js.Object {
   /**
-    * The arn of the listener. Required if `load_balancer_arn` and `port` is not set.
+    * The arn of the listener. Required if `loadBalancerArn` and `port` is not set.
     */
   val arn: js.UndefOr[String] = js.undefined
   /**

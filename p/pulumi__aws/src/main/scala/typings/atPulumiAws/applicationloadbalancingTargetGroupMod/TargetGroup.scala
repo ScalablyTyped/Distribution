@@ -42,7 +42,7 @@ class TargetGroup protected () extends CustomResource {
     */
   val healthCheck: Output[Anon_EnabledHealthyThreshold] = js.native
   /**
-    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
+    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
     */
   val lambdaMultiValueHeadersEnabled: Output[js.UndefOr[Boolean]] = js.native
   /**
@@ -58,7 +58,7 @@ class TargetGroup protected () extends CustomResource {
     */
   val port: Output[js.UndefOr[Double]] = js.native
   /**
-    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `target_type` is `lambda`.
+    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `targetType` is `lambda`.
     */
   val protocol: Output[js.UndefOr[String]] = js.native
   /**
@@ -87,7 +87,7 @@ class TargetGroup protected () extends CustomResource {
     */
   val targetType: Output[js.UndefOr[String]] = js.native
   /**
-    * The identifier of the VPC in which to create the target group. Required when `target_type` is `instance` or `ip`. Does not apply when `target_type` is `lambda`.
+    * The identifier of the VPC in which to create the target group. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   val vpcId: Output[js.UndefOr[String]] = js.native
 }

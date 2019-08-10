@@ -56,7 +56,7 @@ trait ClusterState extends js.Object {
   val nodeType: js.UndefOr[Input[String]] = js.undefined
   /**
     * List of node objects including `id`, `address`, `port` and
-    * `availability_zone`. Referenceable e.g. as
+    * `availabilityZone`. Referenceable e.g. as
     * `${aws_dax_cluster.test.nodes.0.address}`
     */
   val nodes: js.UndefOr[Input[js.Array[Input[Anon_AddressAvailabilityZone]]]] = js.undefined

@@ -18,7 +18,7 @@ trait ListAttachedPoliciesRequest extends js.Object {
     */
   var recursive: js.UndefOr[Recursive] = js.undefined
   /**
-    * The group for which the policies will be listed.
+    * The group or principal for which the policies will be listed.
     */
   var target: PolicyTarget
 }

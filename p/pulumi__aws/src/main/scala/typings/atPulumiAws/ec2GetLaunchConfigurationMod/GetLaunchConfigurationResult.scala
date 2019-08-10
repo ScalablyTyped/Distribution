@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetLaunchConfigurationMod
 
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncrypted
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSize
+import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIops
 import typings.atPulumiAws.Anon_DeviceName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,7 +59,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The Root Block Device of the instance.
     */
-  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationIopsVolumeSize]
+  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIops]
   /**
     * A list of associated Security Group IDS.
     */
@@ -97,7 +97,7 @@ object GetLaunchConfigurationResult {
     keyName: String,
     name: String,
     placementTenancy: String,
-    rootBlockDevices: js.Array[Anon_DeleteOnTerminationIopsVolumeSize],
+    rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIops],
     securityGroups: js.Array[String],
     spotPrice: String,
     userData: String,

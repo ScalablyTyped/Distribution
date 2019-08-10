@@ -15,11 +15,11 @@ trait ClusterArgs extends js.Object {
     */
   val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferred_availability_zones` instead. Default: System chosen Availability Zone.
+    * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
     */
   val availabilityZone: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `num_cache_nodes` must be greater than `1`
+    * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `numCacheNodes` must be greater than `1`
     */
   val azMode: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -69,11 +69,11 @@ trait ClusterArgs extends js.Object {
     */
   val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replication_group_id`.
+    * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replicationGroupId`.
     */
   val port: js.UndefOr[Input[Double]] = js.undefined
   /**
-    * A list of the Availability Zones in which cache nodes are created. If you are creating your cluster in an Amazon VPC you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of `num_cache_nodes`. If you want all the nodes in the same Availability Zone, use `availability_zone` instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones. Detecting drift of existing node availability zone is not currently supported. Updating this argument by itself to migrate existing node availability zones is not currently supported and will show a perpetual difference.
+    * A list of the Availability Zones in which cache nodes are created. If you are creating your cluster in an Amazon VPC you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of `numCacheNodes`. If you want all the nodes in the same Availability Zone, use `availabilityZone` instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones. Detecting drift of existing node availability zone is not currently supported. Updating this argument by itself to migrate existing node availability zones is not currently supported and will show a perpetual difference.
     */
   val preferredAvailabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -97,7 +97,7 @@ trait ClusterArgs extends js.Object {
     */
   val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * The name of a snapshot from which to restore data into the new node group.  Changing the `snapshot_name` forces a new resource.
+    * The name of a snapshot from which to restore data into the new node group.  Changing the `snapshotName` forces a new resource.
     */
   val snapshotName: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -105,7 +105,7 @@ trait ClusterArgs extends js.Object {
     * retain automatic cache cluster snapshots before deleting them. For example, if you set
     * SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
     * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
-    * Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
+    * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
     */
   val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.undefined
   /**

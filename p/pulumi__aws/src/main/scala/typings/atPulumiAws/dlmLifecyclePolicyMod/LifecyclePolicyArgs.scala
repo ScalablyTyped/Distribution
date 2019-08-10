@@ -16,7 +16,7 @@ trait LifecyclePolicyArgs extends js.Object {
     */
   val executionRoleArn: Input[String]
   /**
-    * See the `policy_details` configuration block. Max of 1.
+    * See the `policyDetails` configuration block. Max of 1.
     */
   val policyDetails: Input[Anon_KeyResourceTypesSchedules]
   /**

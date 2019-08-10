@@ -37,7 +37,7 @@ class IntegrationResponse protected () extends CustomResource {
   val resourceId: Output[String] = js.native
   /**
     * A map of response parameters that can be read from the backend response.
-    * For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
+    * For example: `responseParameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
     */
   val responseParameters: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**

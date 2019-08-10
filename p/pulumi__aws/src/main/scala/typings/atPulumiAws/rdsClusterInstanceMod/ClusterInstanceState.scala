@@ -27,7 +27,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val availabilityZone: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The identifier of the [`aws_rds_cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+    * The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val dbParameterGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws_rds_cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -93,7 +93,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val performanceInsightsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performanceInsightsKmsKeyId`, `performanceInsightsEnabled` needs to be set to true.
     */
   val performanceInsightsKmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**

@@ -22,7 +22,7 @@ class SecurityGroupRule protected () extends CustomResource {
   def this(name: String, args: SecurityGroupRuleArgs) = this()
   def this(name: String, args: SecurityGroupRuleArgs, opts: CustomResourceOptions) = this()
   /**
-    * List of CIDR blocks. Cannot be specified with `source_security_group_id`.
+    * List of CIDR blocks. Cannot be specified with `sourceSecurityGroupId`.
     */
   val cidrBlocks: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -52,12 +52,12 @@ class SecurityGroupRule protected () extends CustomResource {
   val securityGroupId: Output[String] = js.native
   /**
     * If true, the security group itself will be added as
-    * a source to this ingress rule. Cannot be specified with `source_security_group_id`.
+    * a source to this ingress rule. Cannot be specified with `sourceSecurityGroupId`.
     */
   val self: Output[js.UndefOr[Boolean]] = js.native
   /**
     * The security group id to allow access to/from,
-    * depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
+    * depending on the `type`. Cannot be specified with `cidrBlocks` and `self`.
     */
   val sourceSecurityGroupId: Output[String] = js.native
   /**

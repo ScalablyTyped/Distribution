@@ -29,7 +29,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val availabilityZone: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The identifier of the [`aws_neptune_cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+    * The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -69,7 +69,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val neptuneParameterGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws_neptune_cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptuneSubnetGroupName` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
     */
   val neptuneSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
   /**

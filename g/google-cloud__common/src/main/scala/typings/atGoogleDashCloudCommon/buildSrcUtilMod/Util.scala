@@ -2,8 +2,8 @@ package typings.atGoogleDashCloudCommon.buildSrcUtilMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.atGoogleDashCloudCommon.TypeofClassApiError
-import typings.request.requestMod.Response
 import typings.std.Error
+import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,9 +34,9 @@ class Util () extends js.Object {
   def handleResp(): Unit = js.native
   def handleResp(err: Null, resp: Null, body: ResponseBody): Unit = js.native
   def handleResp(err: Null, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Null, resp: Response): Unit = js.native
-  def handleResp(err: Null, resp: Response, body: ResponseBody): Unit = js.native
-  def handleResp(err: Null, resp: Response, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Response[_]): Unit = js.native
+  def handleResp(err: Null, resp: Response[_], body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   /**
     * Uniformly process an API response.
     *
@@ -48,9 +48,9 @@ class Util () extends js.Object {
   def handleResp(err: Error): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Error, resp: Response): Unit = js.native
-  def handleResp(err: Error, resp: Response, body: ResponseBody): Unit = js.native
-  def handleResp(err: Error, resp: Response, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Response[_]): Unit = js.native
+  def handleResp(err: Error, resp: Response[_], body: ResponseBody): Unit = js.native
+  def handleResp(err: Error, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   def isCustomType(unknown: js.Any, module: String): Boolean = js.native
   /**
     * Get a function for making authenticated requests.
@@ -138,7 +138,7 @@ class Util () extends js.Object {
     * @param {?error} parsedHttpRespMessage.err - An error detected.
     * @param {object} parsedHttpRespMessage.resp - The original response object.
     */
-  def parseHttpRespMessage(httpRespMessage: Response): ParsedHttpRespMessage = js.native
+  def parseHttpRespMessage(httpRespMessage: Response[_]): ParsedHttpRespMessage = js.native
   /**
     * Returns true if the API request should be retried, given the error that was
     * given the first time the request was attempted. This is used for rate limit

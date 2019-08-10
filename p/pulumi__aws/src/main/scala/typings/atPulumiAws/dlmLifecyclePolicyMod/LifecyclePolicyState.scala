@@ -16,7 +16,7 @@ trait LifecyclePolicyState extends js.Object {
     */
   val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * See the `policy_details` configuration block. Max of 1.
+    * See the `policyDetails` configuration block. Max of 1.
     */
   val policyDetails: js.UndefOr[Input[Anon_KeyResourceTypesSchedules]] = js.undefined
   /**

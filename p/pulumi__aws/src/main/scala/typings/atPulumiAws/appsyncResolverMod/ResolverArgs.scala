@@ -24,7 +24,7 @@ trait ResolverArgs extends js.Object {
     */
   val kind: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The PipelineConfig. A `pipeline_config` block is documented below.
+    * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
   val pipelineConfig: js.UndefOr[Input[Anon_FunctionsArray]] = js.undefined
   /**

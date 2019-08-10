@@ -24,7 +24,7 @@ trait HealthCheckState extends js.Object {
     */
   val cloudwatchAlarmRegion: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enable_sni` defaults to `true`, when `type` is anything else `enable_sni` defaults to `false`.
+    * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enableSni` defaults to `true`, when `type` is anything else `enableSni` defaults to `false`.
     */
   val enableSni: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -57,7 +57,7 @@ trait HealthCheckState extends js.Object {
   val port: js.UndefOr[Input[Double]] = js.undefined
   /**
     * This is a reference name used in Caller Reference
-    * (helpful for identifying single health_check set amongst others)
+    * (helpful for identifying single healthCheck set amongst others)
     */
   val referenceName: js.UndefOr[Input[String]] = js.undefined
   /**

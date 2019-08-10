@@ -21,7 +21,7 @@ trait ClusterInstanceArgs extends js.Object {
     */
   val availabilityZone: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The identifier of the [`aws_docdb_cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
+    * The identifier of the [`aws.docdb.Cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: Input[String]
   /**

@@ -39,11 +39,11 @@ class Project protected () extends CustomResource {
     */
   val artifacts: Output[Anon_EncryptionDisabled] = js.native
   /**
-    * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
+    * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
     */
   val badgeEnabled: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * The URL of the build badge when `badge_enabled` is enabled.
+    * The URL of the build badge when `badgeEnabled` is enabled.
     */
   val badgeUrl: Output[String] = js.native
   /**

@@ -2,10 +2,13 @@ package typings.plotlyDotJs.plotlyDotJsMod
 
 import typings.plotlyDotJs.Anon_Auto
 import typings.plotlyDotJs.plotlyDotJsNumbers.`false`
+import typings.plotlyDotJs.plotlyDotJsStrings.any
 import typings.plotlyDotJs.plotlyDotJsStrings.clockwise
 import typings.plotlyDotJs.plotlyDotJsStrings.closest
 import typings.plotlyDotJs.plotlyDotJsStrings.counterclockwise
+import typings.plotlyDotJs.plotlyDotJsStrings.d
 import typings.plotlyDotJs.plotlyDotJsStrings.group
+import typings.plotlyDotJs.plotlyDotJsStrings.h
 import typings.plotlyDotJs.plotlyDotJsStrings.lasso
 import typings.plotlyDotJs.plotlyDotJsStrings.orbit
 import typings.plotlyDotJs.plotlyDotJsStrings.overlay
@@ -14,6 +17,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.relative
 import typings.plotlyDotJs.plotlyDotJsStrings.select
 import typings.plotlyDotJs.plotlyDotJsStrings.stack
 import typings.plotlyDotJs.plotlyDotJsStrings.turntable
+import typings.plotlyDotJs.plotlyDotJsStrings.v
 import typings.plotlyDotJs.plotlyDotJsStrings.x
 import typings.plotlyDotJs.plotlyDotJsStrings.y
 import typings.plotlyDotJs.plotlyDotJsStrings.zoom
@@ -46,6 +50,7 @@ trait Layout extends js.Object {
    // TODO
   var radialaxis: Partial[Axis]
   var scene: Partial[Scene]
+  var selectdirection: h | v | d | any
   var separators: String
   var shapes: js.Array[Partial[Shape]]
   var showlegend: Boolean
@@ -108,6 +113,7 @@ object Layout {
     plot_bgcolor: Color,
     radialaxis: Partial[Axis],
     scene: Partial[Scene],
+    selectdirection: h | v | d | any,
     separators: String,
     shapes: js.Array[Partial[Shape]],
     showlegend: Boolean,
@@ -144,7 +150,7 @@ object Layout {
     yaxis8: Partial[LayoutAxis],
     yaxis9: Partial[LayoutAxis]
   ): Layout = {
-    val __obj = js.Dynamic.literal(annotations = annotations, autosize = autosize, bargap = bargap, bargroupgap = bargroupgap, barmode = barmode.asInstanceOf[js.Any], calendar = calendar, direction = direction.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font, height = height, hidesources = hidesources, hoverlabel = hoverlabel, hovermode = hovermode.asInstanceOf[js.Any], images = images, legend = legend, margin = margin, orientation = orientation, paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], radialaxis = radialaxis, scene = scene, separators = separators, shapes = shapes, showlegend = showlegend, sliders = sliders, title = title.asInstanceOf[js.Any], titlefont = titlefont, width = width, xaxis = xaxis, xaxis2 = xaxis2, xaxis3 = xaxis3, xaxis4 = xaxis4, xaxis5 = xaxis5, xaxis6 = xaxis6, xaxis7 = xaxis7, xaxis8 = xaxis8, xaxis9 = xaxis9, yaxis = yaxis, yaxis2 = yaxis2, yaxis3 = yaxis3, yaxis4 = yaxis4, yaxis5 = yaxis5, yaxis6 = yaxis6, yaxis7 = yaxis7, yaxis8 = yaxis8, yaxis9 = yaxis9)
+    val __obj = js.Dynamic.literal(annotations = annotations, autosize = autosize, bargap = bargap, bargroupgap = bargroupgap, barmode = barmode.asInstanceOf[js.Any], calendar = calendar, direction = direction.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font, height = height, hidesources = hidesources, hoverlabel = hoverlabel, hovermode = hovermode.asInstanceOf[js.Any], images = images, legend = legend, margin = margin, orientation = orientation, paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], radialaxis = radialaxis, scene = scene, selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators, shapes = shapes, showlegend = showlegend, sliders = sliders, title = title.asInstanceOf[js.Any], titlefont = titlefont, width = width, xaxis = xaxis, xaxis2 = xaxis2, xaxis3 = xaxis3, xaxis4 = xaxis4, xaxis5 = xaxis5, xaxis6 = xaxis6, xaxis7 = xaxis7, xaxis8 = xaxis8, xaxis9 = xaxis9, yaxis = yaxis, yaxis2 = yaxis2, yaxis3 = yaxis3, yaxis4 = yaxis4, yaxis5 = yaxis5, yaxis6 = yaxis6, yaxis7 = yaxis7, yaxis8 = yaxis8, yaxis9 = yaxis9)
     __obj.updateDynamic("xaxis.autorange")(`xaxis.autorange`)
     __obj.updateDynamic("xaxis.range")(`xaxis.range`)
     __obj.updateDynamic("xaxis.range[0]")(`xaxis.range[0]`.asInstanceOf[js.Any])

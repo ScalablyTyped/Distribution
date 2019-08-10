@@ -28,7 +28,7 @@ trait EventSubscriptionArgs extends js.Object {
     */
   val snsTopic: Input[String]
   /**
-    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.
+    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a sourceType must also be specified.
     */
   val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

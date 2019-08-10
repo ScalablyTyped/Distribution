@@ -36,11 +36,11 @@ class DeploymentConfig protected () extends CustomResource {
     */
   val deploymentConfigName: Output[String] = js.native
   /**
-    * A minimum_healthy_hosts block. Minimum Healthy Hosts are documented below.
+    * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
     */
   val minimumHealthyHosts: Output[js.UndefOr[Anon_TypeValue]] = js.native
   /**
-    * A traffic_routing_config block. Traffic Routing Config is documented below.
+    * A trafficRoutingConfig block. Traffic Routing Config is documented below.
     */
   val trafficRoutingConfig: Output[js.UndefOr[Anon_TimeBasedCanary]] = js.native
 }

@@ -26,7 +26,7 @@ class PatchBaseline protected () extends CustomResource {
   def this(name: String, args: PatchBaselineArgs) = this()
   def this(name: String, args: PatchBaselineArgs, opts: CustomResourceOptions) = this()
   /**
-    * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approval_rule block requires the fields documented below.
+    * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
     */
   val approvalRules: Output[js.UndefOr[js.Array[Anon_ApproveAfterDays]]] = js.native
   /**

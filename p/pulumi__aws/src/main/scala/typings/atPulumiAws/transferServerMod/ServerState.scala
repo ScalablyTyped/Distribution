@@ -33,7 +33,7 @@ trait ServerState extends js.Object {
     */
   val identityProviderType: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identity_provider_type` of `API_GATEWAY`.
+    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identityProviderType` of `API_GATEWAY`.
     */
   val invocationRole: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -45,7 +45,7 @@ trait ServerState extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
-    * - URL of the service endpoint used to authenticate users with an `identity_provider_type` of `API_GATEWAY`.
+    * - URL of the service endpoint used to authenticate users with an `identityProviderType` of `API_GATEWAY`.
     */
   val url: js.UndefOr[Input[String]] = js.undefined
 }

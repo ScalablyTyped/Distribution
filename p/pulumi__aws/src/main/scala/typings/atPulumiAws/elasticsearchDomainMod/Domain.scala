@@ -77,7 +77,7 @@ class Domain protected () extends CustomResource {
   val endpoint: Output[String] = js.native
   /**
     * Domain-specific endpoint for kibana without https scheme.
-    * * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
+    * * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnetIds` were created inside.
     * * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
     */
   val kibanaEndpoint: Output[String] = js.native

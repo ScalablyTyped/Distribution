@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ResolverRuleArgs extends js.Object {
   /**
-    * DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+    * DNS queries for this domain name are forwarded to the IP addresses that are specified using `targetIp`.
     */
   val domainName: Input[String]
   /**
@@ -17,7 +17,7 @@ trait ResolverRuleArgs extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    * The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `targetIp`.
     * This argument should only be specified for `FORWARD` type rules.
     */
   val resolverEndpointId: js.UndefOr[Input[String]] = js.undefined

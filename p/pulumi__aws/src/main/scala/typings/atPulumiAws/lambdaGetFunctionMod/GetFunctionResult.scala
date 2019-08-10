@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait GetFunctionResult extends js.Object {
   /**
-    * Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
+    * Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualifiedArn`.
     */
   val arn: String
   /**

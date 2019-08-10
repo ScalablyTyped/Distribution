@@ -26,7 +26,7 @@ class VaultLock protected () extends CustomResource {
     */
   val completeLock: Output[Boolean] = js.native
   /**
-    * Allow this provider to ignore the error returned when attempting to delete the Glacier Lock Policy. This can be used to delete or recreate the Glacier Vault via this provider, for example, if the Glacier Vault Lock policy permits that action. This should only be used in conjunction with `complete_lock` being set to `true`.
+    * Allow this provider to ignore the error returned when attempting to delete the Glacier Lock Policy. This can be used to delete or recreate the Glacier Vault via this provider, for example, if the Glacier Vault Lock policy permits that action. This should only be used in conjunction with `completeLock` being set to `true`.
     */
   val ignoreDeletionError: Output[js.UndefOr[Boolean]] = js.native
   /**

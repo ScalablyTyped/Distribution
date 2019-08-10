@@ -1,6 +1,7 @@
 package typings.atPulumiAws.glueCrawlerMod
 
 import typings.atPulumiAws.Anon_ConnectionName
+import typings.atPulumiAws.Anon_DatabaseName
 import typings.atPulumiAws.Anon_DeleteBehavior
 import typings.atPulumiAws.Anon_Exclusions
 import typings.atPulumiAws.Anon_Path
@@ -29,6 +30,7 @@ class Crawler protected () extends CustomResource {
     * The ARN of the crawler
     */
   val arn: Output[String] = js.native
+  val catalogTargets: Output[js.UndefOr[js.Array[Anon_DatabaseName]]] = js.native
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
@@ -38,7 +40,7 @@ class Crawler protected () extends CustomResource {
     */
   val configuration: Output[js.UndefOr[String]] = js.native
   /**
-    * Glue database where results are written.
+    * The name of the Glue database to be synchronized.
     */
   val databaseName: Output[String] = js.native
   /**

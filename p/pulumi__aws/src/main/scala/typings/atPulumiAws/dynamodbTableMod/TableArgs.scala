@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait TableArgs extends js.Object {
   /**
-    * List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+    * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
     */
   val attributes: Input[js.Array[Input[Anon_NameTypeInput]]]
   /**
@@ -50,7 +50,7 @@ trait TableArgs extends js.Object {
     */
   val rangeKey: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val readCapacity: js.UndefOr[Input[Double]] = js.undefined
   /**
@@ -74,7 +74,7 @@ trait TableArgs extends js.Object {
     */
   val ttl: js.UndefOr[Input[Anon_AttributeNameEnabledBoolean]] = js.undefined
   /**
-    * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val writeCapacity: js.UndefOr[Input[Double]] = js.undefined
 }

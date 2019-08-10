@@ -26,7 +26,7 @@ trait TargetGroupState extends js.Object {
     */
   val healthCheck: js.UndefOr[Input[Anon_EnabledHealthyThresholdInterval]] = js.undefined
   /**
-    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
+    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
     */
   val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -42,7 +42,7 @@ trait TargetGroupState extends js.Object {
     */
   val port: js.UndefOr[Input[Double]] = js.undefined
   /**
-    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `target_type` is `lambda`.
+    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `targetType` is `lambda`.
     */
   val protocol: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait TargetGroupState extends js.Object {
     */
   val targetType: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The identifier of the VPC in which to create the target group. Required when `target_type` is `instance` or `ip`. Does not apply when `target_type` is `lambda`.
+    * The identifier of the VPC in which to create the target group. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   val vpcId: js.UndefOr[Input[String]] = js.undefined
 }

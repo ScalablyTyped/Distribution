@@ -32,7 +32,7 @@ trait StackSetState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Key-value map of input parameters for the Stack Set template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignore_changes` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignore_changes` argument.
+    * Key-value map of input parameters for the Stack Set template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignoreChanges` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignoreChanges` argument.
     */
   val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
@@ -44,11 +44,11 @@ trait StackSetState extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
-    * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `template_url`.
+    * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `templateUrl`.
     */
   val templateBody: js.UndefOr[Input[String]] = js.undefined
   /**
-    * String containing the location of a file containing the CloudFormation template body. The URL must point to a template that is located in an Amazon S3 bucket. Maximum location file size: 460,800 bytes. Conflicts with `template_body`.
+    * String containing the location of a file containing the CloudFormation template body. The URL must point to a template that is located in an Amazon S3 bucket. Maximum location file size: 460,800 bytes. Conflicts with `templateBody`.
     */
   val templateUrl: js.UndefOr[Input[String]] = js.undefined
 }

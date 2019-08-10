@@ -18,9 +18,11 @@ class default protected () extends RelativeTimeFormat {
 @JSImport("@formatjs/intl-relativetimeformat/dist/core", JSImport.Default)
 @js.native
 object default extends js.Object {
+  var __languageAliases__ : Record[String, String] = js.native
   var __localeData__ : Record[String, LocaleData] = js.native
   var polyfilled: Boolean = js.native
   def __addLocaleData(data: LocaleData*): Unit = js.native
+  def __setLanguageAliases(aliases: Record[String, String]): Unit = js.native
   def supportedLocalesOf(locales: String): js.Array[js.UndefOr[String]] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[js.UndefOr[String]] = js.native
   @JSName("supportedLocalesOf")

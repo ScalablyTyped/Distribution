@@ -7,9 +7,9 @@ import typings.atGoogleDashCloudCommon.buildSrcUtilMod.Duplexify
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.MakeAuthenticatedRequest
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.MakeAuthenticatedRequestOptions
 import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.GoogleAuth
-import typings.request.requestMod.Request
 import typings.std.Error
 import typings.std.PromiseConstructor
+import typings.teenyDashRequest.teenyDashRequestMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,6 +56,7 @@ class Service protected () extends js.Object {
     * @param {function} callback - The callback function passed to `request`.
     */
   var request_ : js.Any = js.native
+  var timeout: Double = js.native
   /**
     * Get and update the Service's project ID.
     *

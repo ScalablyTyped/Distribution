@@ -84,7 +84,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201908090530")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201908100530")
 ```
 
 ### `build.sbt`
@@ -117,7 +117,6 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we have the following facades:
-- [antd-slinky](facades/antd-slinky)
 - [react-router-native-slinky](facades/react-router-native-slinky)
 - [antd-native-slinky](facades/antd-native-slinky)
 - [react-router-dom-slinky](facades/react-router-dom-slinky)

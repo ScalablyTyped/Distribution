@@ -226,6 +226,10 @@ class File protected () extends ServiceObject[File] {
   def createResumableUpload(options: CreateResumableUploadOptions, callback: CreateResumableUploadCallback): Unit = js.native
   /**
     * @typedef {object} CreateWriteStreamOptions Configuration options for File#createWriteStream().
+    * @property {string} [configPath] **This only applies to resumable
+    *     uploads.** Where the `gcs-resumable-upload` configuration file should
+    * be stored on your system. This maps to the [configstore option by the same
+    * name](https://github.com/yeoman/configstore/tree/0df1ec950d952b1f0dfb39ce22af8e505dffc71a#configpath).
     * @property {string} [contentType] Alias for
     *     `options.metadata.contentType`. If set to `auto`, the file name is used
     *     to determine the contentType.

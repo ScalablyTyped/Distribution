@@ -122,7 +122,7 @@ class Distribution protected () extends CustomResource {
     */
   val orderedCacheBehaviors: Output[js.UndefOr[js.Array[Anon_AllowedMethodsCachedMethods]]] = js.native
   /**
-    * One or more origin_group for this
+    * One or more originGroup for this
     * distribution (multiples allowed).
     */
   val originGroups: Output[js.UndefOr[js.Array[Anon_FailoverCriteria]]] = js.native

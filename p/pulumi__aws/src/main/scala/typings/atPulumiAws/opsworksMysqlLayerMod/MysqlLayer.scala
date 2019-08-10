@@ -56,7 +56,7 @@ class MysqlLayer protected () extends CustomResource {
     */
   val drainElbOnShutdown: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+    * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
   val ebsVolumes: Output[js.UndefOr[js.Array[Anon_IopsMountPoint]]] = js.native
   /**

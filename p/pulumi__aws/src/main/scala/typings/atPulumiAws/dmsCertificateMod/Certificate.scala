@@ -30,11 +30,11 @@ class Certificate protected () extends CustomResource {
     */
   val certificateId: Output[String] = js.native
   /**
-    * The contents of the .pem X.509 certificate file for the certificate. Either `certificate_pem` or `certificate_wallet` must be set.
+    * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
     */
   val certificatePem: Output[js.UndefOr[String]] = js.native
   /**
-    * The contents of the Oracle Wallet certificate for use with SSL. Either `certificate_pem` or `certificate_wallet` must be set.
+    * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
     */
   val certificateWallet: Output[js.UndefOr[String]] = js.native
 }

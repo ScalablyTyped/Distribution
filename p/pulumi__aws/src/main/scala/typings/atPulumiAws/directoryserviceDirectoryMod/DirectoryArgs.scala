@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait DirectoryArgs extends js.Object {
   /**
-    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enable_sso`.
+    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enableSso`.
     */
   val alias: js.UndefOr[Input[String]] = js.undefined
   /**

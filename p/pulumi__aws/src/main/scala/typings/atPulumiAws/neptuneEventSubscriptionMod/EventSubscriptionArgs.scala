@@ -12,7 +12,7 @@ trait EventSubscriptionArgs extends js.Object {
     */
   val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * A list of event categories for a `source_type` that you want to subscribe to. Run `aws neptune describe-event-categories` to find all the event categories.
+    * A list of event categories for a `sourceType` that you want to subscribe to. Run `aws neptune describe-event-categories` to find all the event categories.
     */
   val eventCategories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait EventSubscriptionArgs extends js.Object {
     */
   val snsTopicArn: Input[String]
   /**
-    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a `source_type` must also be specified.
+    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a `sourceType` must also be specified.
     */
   val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

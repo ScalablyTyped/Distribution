@@ -9,7 +9,7 @@ trait Anon_Ami extends js.Object {
   var ami: String
   var associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
   var availabilityZone: String
-  var ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize]
+  var ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeSize]
   var ebsOptimized: js.UndefOr[Boolean] = js.undefined
   var ephemeralBlockDevices: js.Array[Anon_DeviceName]
   var iamInstanceProfile: js.UndefOr[String] = js.undefined
@@ -19,7 +19,7 @@ trait Anon_Ami extends js.Object {
   var monitoring: js.UndefOr[Boolean] = js.undefined
   var placementGroup: String
   var placementTenancy: js.UndefOr[String] = js.undefined
-  var rootBlockDevices: js.Array[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType]
+  var rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeSize]
   var spotPrice: js.UndefOr[String] = js.undefined
   var subnetId: String
   var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
@@ -33,12 +33,12 @@ object Anon_Ami {
   def apply(
     ami: String,
     availabilityZone: String,
-    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize],
+    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeSize],
     ephemeralBlockDevices: js.Array[Anon_DeviceName],
     instanceType: String,
     keyName: String,
     placementGroup: String,
-    rootBlockDevices: js.Array[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType],
+    rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeSize],
     subnetId: String,
     vpcSecurityGroupIds: js.Array[String],
     associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,

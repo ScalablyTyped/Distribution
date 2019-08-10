@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "chai-enzyme"
-version := "0.6.1-dt-20190808Z-6ead94"
+version := "0.6.1-dt-20190808Z-2016ef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "chai" % "4.2-dt-20190808Z-ab93cf",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-f561b2",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-7e5ae5",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-ef95d2",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-f3e700",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",

@@ -14,7 +14,7 @@ trait DirectoryState extends js.Object {
     */
   val accessUrl: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enable_sso`.
+    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enableSso`.
     */
   val alias: js.UndefOr[Input[String]] = js.undefined
   /**

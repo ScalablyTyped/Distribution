@@ -19,7 +19,23 @@ package object clientsLexruntimeMod {
   type ButtonTextStringWithLength = java.lang.String
   type ButtonValueStringWithLength = java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.None
+    - typings.awsDashSdk.awsDashSdkStrings.Confirmed
+    - typings.awsDashSdk.awsDashSdkStrings.Denied
+    - java.lang.String
+  */
+  type ConfirmationStatus = _ConfirmationStatus | java.lang.String
   type ContentType = `application/vndDOTamazonawsDOTcardDOTgeneric` | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ElicitIntent
+    - typings.awsDashSdk.awsDashSdkStrings.ConfirmIntent
+    - typings.awsDashSdk.awsDashSdkStrings.ElicitSlot
+    - typings.awsDashSdk.awsDashSdkStrings.Close
+    - typings.awsDashSdk.awsDashSdkStrings.Delegate
+    - java.lang.String
+  */
+  type DialogActionType = _DialogActionType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ElicitIntent
     - typings.awsDashSdk.awsDashSdkStrings.ConfirmIntent
@@ -30,8 +46,16 @@ package object clientsLexruntimeMod {
     - java.lang.String
   */
   type DialogState = _DialogState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Fulfilled
+    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.ReadyForFulfillment
+    - java.lang.String
+  */
+  type FulfillmentState = _FulfillmentState | java.lang.String
   type HttpContentType = java.lang.String
   type IntentName = java.lang.String
+  type IntentSummaryList = js.Array[IntentSummary]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PlainText
     - typings.awsDashSdk.awsDashSdkStrings.CustomPayload

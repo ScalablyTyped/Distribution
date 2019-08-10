@@ -12,7 +12,7 @@ trait AccountPasswordPolicyState extends js.Object {
   val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * Indicates whether passwords in the account expire.
-    * Returns `true` if `max_password_age` contains a value greater than `0`.
+    * Returns `true` if `maxPasswordAge` contains a value greater than `0`.
     * Returns `false` if it is `0` or _not present_.
     */
   val expirePasswords: js.UndefOr[Input[Boolean]] = js.undefined

@@ -28,6 +28,10 @@ class Repository protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
+    * The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
+    */
+  val imageTagMutability: Output[js.UndefOr[String]] = js.native
+  /**
     * Name of the repository.
     */
   val name: Output[String] = js.native

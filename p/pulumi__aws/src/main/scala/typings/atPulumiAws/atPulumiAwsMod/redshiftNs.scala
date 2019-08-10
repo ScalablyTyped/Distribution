@@ -14,6 +14,10 @@ import typings.atPulumiAws.redshiftSecurityGroupMod.SecurityGroupArgs
 import typings.atPulumiAws.redshiftSecurityGroupMod.SecurityGroupState
 import typings.atPulumiAws.redshiftSnapshotCopyGrantMod.SnapshotCopyGrantArgs
 import typings.atPulumiAws.redshiftSnapshotCopyGrantMod.SnapshotCopyGrantState
+import typings.atPulumiAws.redshiftSnapshotScheduleAssociationMod.SnapshotScheduleAssociationArgs
+import typings.atPulumiAws.redshiftSnapshotScheduleAssociationMod.SnapshotScheduleAssociationState
+import typings.atPulumiAws.redshiftSnapshotScheduleMod.SnapshotScheduleArgs
+import typings.atPulumiAws.redshiftSnapshotScheduleMod.SnapshotScheduleState
 import typings.atPulumiAws.redshiftSubnetGroupMod.SubnetGroupArgs
 import typings.atPulumiAws.redshiftSubnetGroupMod.SubnetGroupState
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
@@ -95,6 +99,34 @@ object redshiftNs extends js.Object {
       */
     def this(name: String, args: SnapshotCopyGrantArgs) = this()
     def this(name: String, args: SnapshotCopyGrantArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class SnapshotSchedule protected ()
+    extends typings.atPulumiAws.redshiftMod.SnapshotSchedule {
+    /**
+      * Create a SnapshotSchedule resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: SnapshotScheduleArgs) = this()
+    def this(name: String, args: SnapshotScheduleArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class SnapshotScheduleAssociation protected ()
+    extends typings.atPulumiAws.redshiftMod.SnapshotScheduleAssociation {
+    /**
+      * Create a SnapshotScheduleAssociation resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: SnapshotScheduleAssociationArgs) = this()
+    def this(name: String, args: SnapshotScheduleAssociationArgs, opts: CustomResourceOptions) = this()
   }
   
   @js.native
@@ -219,6 +251,48 @@ object redshiftNs extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object SnapshotSchedule extends js.Object {
+    /**
+      * Get an existing SnapshotSchedule resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.redshiftSnapshotScheduleMod.SnapshotSchedule = js.native
+    def get(name: String, id: Input[ID], state: SnapshotScheduleState): typings.atPulumiAws.redshiftSnapshotScheduleMod.SnapshotSchedule = js.native
+    def get(name: String, id: Input[ID], state: SnapshotScheduleState, opts: CustomResourceOptions): typings.atPulumiAws.redshiftSnapshotScheduleMod.SnapshotSchedule = js.native
+    /**
+      * Returns true if the given object is an instance of SnapshotSchedule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotSchedule.SnapshotSchedule */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object SnapshotScheduleAssociation extends js.Object {
+    /**
+      * Get an existing SnapshotScheduleAssociation resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.redshiftSnapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
+    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): typings.atPulumiAws.redshiftSnapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
+    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): typings.atPulumiAws.redshiftSnapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of SnapshotScheduleAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = js.native
   }
   
   /* static members */

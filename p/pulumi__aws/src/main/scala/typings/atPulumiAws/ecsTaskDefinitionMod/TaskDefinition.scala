@@ -39,7 +39,7 @@ class TaskDefinition protected () extends CustomResource {
     */
   val containerDefinitions: Output[String] = js.native
   /**
-    * The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+    * The number of cpu units used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
     */
   val cpu: Output[js.UndefOr[String]] = js.native
   /**
@@ -55,7 +55,7 @@ class TaskDefinition protected () extends CustomResource {
     */
   val ipcMode: Output[js.UndefOr[String]] = js.native
   /**
-    * The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+    * The amount (in MiB) of memory used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
     */
   val memory: Output[js.UndefOr[String]] = js.native
   /**
@@ -67,7 +67,7 @@ class TaskDefinition protected () extends CustomResource {
     */
   val pidMode: Output[js.UndefOr[String]] = js.native
   /**
-    * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+    * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
     */
   val placementConstraints: Output[js.UndefOr[js.Array[Anon_ExpressionType]]] = js.native
   /**

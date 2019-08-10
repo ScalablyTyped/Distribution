@@ -21,11 +21,11 @@ trait DeploymentConfigState extends js.Object {
     */
   val deploymentConfigName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A minimum_healthy_hosts block. Minimum Healthy Hosts are documented below.
+    * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
     */
   val minimumHealthyHosts: js.UndefOr[Input[Anon_TypeValueInput]] = js.undefined
   /**
-    * A traffic_routing_config block. Traffic Routing Config is documented below.
+    * A trafficRoutingConfig block. Traffic Routing Config is documented below.
     */
   val trafficRoutingConfig: js.UndefOr[Input[Anon_TimeBasedCanaryTimeBasedLinear]] = js.undefined
 }

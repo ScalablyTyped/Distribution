@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__apputils
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 JupyterLab - Application Utilities

@@ -1,5 +1,6 @@
 package typings.mobxDashReact.mobxDashReactMod
 
+import typings.mobxDashReactDashLite.distUseObserverMod.IUseObserverOptions
 import typings.react.reactMod.Component
 import typings.react.reactMod.Context
 import typings.std.Record
@@ -20,6 +21,9 @@ object ^ extends js.Object {
   def useAsObservableSource[TSource](current: TSource): TSource = js.native
   def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore]): TStore = js.native
   def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = js.native
+  def useObserver[T](fn: js.Function0[T]): T = js.native
+  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
+  def useObserver[T](fn: js.Function0[T], baseComponentName: String, options: IUseObserverOptions): T = js.native
   def useStaticRendering(value: Boolean): Unit = js.native
 }
 

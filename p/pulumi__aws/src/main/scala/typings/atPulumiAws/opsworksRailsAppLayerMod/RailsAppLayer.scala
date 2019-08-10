@@ -23,7 +23,7 @@ class RailsAppLayer protected () extends CustomResource {
   def this(name: String, args: RailsAppLayerArgs) = this()
   def this(name: String, args: RailsAppLayerArgs, opts: CustomResourceOptions) = this()
   /**
-    * Keyword for the app server to use. Defaults to "apache_passenger".
+    * Keyword for the app server to use. Defaults to "apachePassenger".
     */
   val appServer: Output[js.UndefOr[String]] = js.native
   /**
@@ -64,7 +64,7 @@ class RailsAppLayer protected () extends CustomResource {
     */
   val drainElbOnShutdown: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+    * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
   val ebsVolumes: Output[js.UndefOr[js.Array[Anon_IopsMountPoint]]] = js.native
   /**

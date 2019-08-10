@@ -30,7 +30,7 @@ class Permission protected () extends CustomResource {
     */
   val allowSudo: Output[Boolean] = js.native
   /**
-    * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iam_only`
+    * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
     */
   val level: Output[String] = js.native
   /**

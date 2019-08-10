@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteMembersResponse extends js.Object {
   /**
-    * A list of objects containing the unprocessed account and a result string explaining why it was unprocessed.
+    * The accounts that could not be processed.
     */
   var UnprocessedAccounts: typings.awsDashSdk.clientsGuarddutyMod.UnprocessedAccounts
 }

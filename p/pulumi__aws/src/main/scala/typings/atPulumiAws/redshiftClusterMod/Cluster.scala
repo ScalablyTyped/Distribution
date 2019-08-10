@@ -100,7 +100,7 @@ class Cluster protected () extends CustomResource {
     */
   val enhancedVpcRouting: Output[Boolean] = js.native
   /**
-    * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skip_final_snapshot` must be false.
+    * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skipFinalSnapshot` must be false.
     */
   val finalSnapshotIdentifier: Output[js.UndefOr[String]] = js.native
   /**
@@ -108,7 +108,7 @@ class Cluster protected () extends CustomResource {
     */
   val iamRoles: Output[js.Array[String]] = js.native
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
     */
   val kmsKeyId: Output[String] = js.native
   /**

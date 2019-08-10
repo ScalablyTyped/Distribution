@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation._
 
 object atStyledDashSystemCssStrings {
   @js.native
-  sealed trait CSSObject extends js.Object
+  sealed trait CSSPropertiesWithMultiValues extends js.Object
   
   @js.native
   sealed trait CSSPseudoSelectorProps extends js.Object
   
   @js.native
-  sealed trait ResponsiveStyleProps extends js.Object
+  sealed trait CSSPseudosForCSSObject extends js.Object
   
   @js.native
-  sealed trait boxShadow extends js.Object
+  sealed trait SystemCssProperties extends js.Object
   
   @js.native
-  sealed trait fontWeight extends js.Object
+  sealed trait Theme extends js.Object
   
   @scala.inline
-  def CSSObject: CSSObject = "CSSObject".asInstanceOf[CSSObject]
+  def CSSPropertiesWithMultiValues: CSSPropertiesWithMultiValues = "CSSPropertiesWithMultiValues".asInstanceOf[CSSPropertiesWithMultiValues]
   @scala.inline
   def CSSPseudoSelectorProps: CSSPseudoSelectorProps = "CSSPseudoSelectorProps".asInstanceOf[CSSPseudoSelectorProps]
   @scala.inline
-  def ResponsiveStyleProps: ResponsiveStyleProps = "ResponsiveStyleProps".asInstanceOf[ResponsiveStyleProps]
+  def CSSPseudosForCSSObject: CSSPseudosForCSSObject = "CSSPseudosForCSSObject".asInstanceOf[CSSPseudosForCSSObject]
   @scala.inline
-  def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
+  def SystemCssProperties: SystemCssProperties = "SystemCssProperties".asInstanceOf[SystemCssProperties]
   @scala.inline
-  def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  def Theme: Theme = "Theme".asInstanceOf[Theme]
 }
 

@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudCommon.buildSrcUtilMod
 
-import typings.request.requestMod.Response
 import typings.std.Error
+import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class PartialFailureError protected () extends Error {
   override var message: String = js.native
   /* CompleteClass */
   override var name: String = js.native
-  var response: js.UndefOr[Response] = js.native
+  var response: js.UndefOr[Response[_]] = js.native
 }
 

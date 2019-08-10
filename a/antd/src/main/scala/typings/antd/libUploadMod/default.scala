@@ -1,9 +1,10 @@
 package typings.antd.libUploadMod
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.antd.Anon_AcceptAction
 import typings.antd.Anon_FileListArray
+import typings.antd.libUploadDraggerMod.DraggerProps
 import typings.antd.libUploadInterfaceMod.UploadProps
+import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ class default protected ()
 @JSImport("antd/lib/upload", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Dragger: Instantiable0[typings.antd.libUploadDraggerMod.default] = js.native
+  var Dragger: js.Function1[/* props */ DraggerProps, Element] = js.native
   var defaultProps: Anon_AcceptAction = js.native
   def getDerivedStateFromProps(nextProps: UploadProps): Anon_FileListArray | Null = js.native
 }

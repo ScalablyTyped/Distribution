@@ -67,7 +67,7 @@ trait DistributionArgs extends js.Object {
     */
   val orderedCacheBehaviors: js.UndefOr[Input[js.Array[Input[Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]]]] = js.undefined
   /**
-    * One or more origin_group for this
+    * One or more originGroup for this
     * distribution (multiples allowed).
     */
   val originGroups: js.UndefOr[Input[js.Array[Input[Anon_FailoverCriteriaMembers]]]] = js.undefined

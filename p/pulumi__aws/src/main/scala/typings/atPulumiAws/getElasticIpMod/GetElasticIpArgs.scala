@@ -12,7 +12,7 @@ trait GetElasticIpArgs extends js.Object {
     */
   val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
   /**
-    * The allocation id of the specific VPC EIP to retrieve. If a classic EIP is required, do NOT set `id`, only set `public_ip`
+    * The allocation id of the specific VPC EIP to retrieve. If a classic EIP is required, do NOT set `id`, only set `publicIp`
     */
   val id: js.UndefOr[String] = js.undefined
   /**

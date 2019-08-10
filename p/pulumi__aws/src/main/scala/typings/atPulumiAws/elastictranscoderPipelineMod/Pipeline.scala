@@ -34,7 +34,7 @@ class Pipeline protected () extends CustomResource {
     */
   val contentConfig: Output[Anon_BucketStorageClass] = js.native
   /**
-    * The permissions for the `content_config` object. (documented below)
+    * The permissions for the `contentConfig` object. (documented below)
     */
   val contentConfigPermissions: Output[js.UndefOr[js.Array[Anon_Accesses]]] = js.native
   /**
@@ -62,7 +62,7 @@ class Pipeline protected () extends CustomResource {
     */
   val thumbnailConfig: Output[Anon_BucketStorageClass] = js.native
   /**
-    * The permissions for the `thumbnail_config` object. (documented below)
+    * The permissions for the `thumbnailConfig` object. (documented below)
     */
   val thumbnailConfigPermissions: Output[js.UndefOr[js.Array[Anon_Accesses]]] = js.native
 }

@@ -18,7 +18,7 @@ trait ClusterArgs extends js.Object {
     */
   val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next deployment. It is recommended to specify 3 AZs or use `ignore_changes` if necessary.
+    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next deployment. It is recommended to specify 3 AZs or use `ignoreChanges` if necessary.
     */
   val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait ClusterArgs extends js.Object {
     */
   val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifier`.
     */
   val clusterIdentifierPrefix: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -54,7 +54,7 @@ trait ClusterArgs extends js.Object {
     */
   val dbClusterParameterGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` specified on every [`aws_rds_cluster_instance`](https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html) in the cluster.
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` specified on every [`aws.rds.ClusterInstance`](https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html) in the cluster.
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -85,7 +85,7 @@ trait ClusterArgs extends js.Object {
     */
   val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The global cluster identifier specified on [`aws_rds_global_cluster`](https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html).
+    * The global cluster identifier specified on [`aws.rds.GlobalCluster`](https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html).
     */
   val globalClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -97,7 +97,7 @@ trait ClusterArgs extends js.Object {
     */
   val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `storage_encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `storageEncrypted` needs to be set to true.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -128,11 +128,11 @@ trait ClusterArgs extends js.Object {
   val replicationSourceIdentifier: js.UndefOr[Input[String]] = js.undefined
   val s3Import: js.UndefOr[Input[Anon_BucketNameBucketPrefixIngestionRole]] = js.undefined
   /**
-    * Nested attribute with scaling properties. Only valid when `engine_mode` is set to `serverless`. More details below.
+    * Nested attribute with scaling properties. Only valid when `engineMode` is set to `serverless`. More details below.
     */
   val scalingConfiguration: js.UndefOr[Input[Anon_AutoPauseMaxCapacity]] = js.undefined
   /**
-    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
+    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `finalSnapshotIdentifier`. Default is `false`.
     */
   val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -144,7 +144,7 @@ trait ClusterArgs extends js.Object {
     */
   val sourceRegion: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Specifies whether the DB cluster is encrypted. The default is `false` for `provisioned` `engine_mode` and `true` for `serverless` `engine_mode`.
+    * Specifies whether the DB cluster is encrypted. The default is `false` for `provisioned` `engineMode` and `true` for `serverless` `engineMode`.
     */
   val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
   /**

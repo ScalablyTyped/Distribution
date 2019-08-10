@@ -13,6 +13,7 @@ import typings.node.httpsMod.RequestOptions
 import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL
 import typings.node.urlMod.Url
+import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,6 +29,7 @@ package object gotMod {
     /* retryWithMergedOptions */ js.Function1[/* updateOptions */ Options, GotPromise[Body]], 
     Response[Body] | js.Promise[Response[Body]]
   ]
+  type BeforeErrorHook = js.Function1[/* error */ GotError, Error | js.Promise[Error]]
   /**
     * @param options Normalized request options.
     */

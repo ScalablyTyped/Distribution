@@ -60,7 +60,7 @@ class Preset protected () extends CustomResource {
   val videoCodecOptions: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
-    * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
+    * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
   val videoWatermarks: Output[js.UndefOr[js.Array[Anon_HorizontalAlign]]] = js.native
 }

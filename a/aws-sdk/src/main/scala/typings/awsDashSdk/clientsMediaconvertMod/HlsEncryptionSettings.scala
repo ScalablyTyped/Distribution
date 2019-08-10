@@ -22,7 +22,7 @@ trait HlsEncryptionSettings extends js.Object {
     */
   var OfflineEncrypted: js.UndefOr[HlsOfflineEncrypted] = js.undefined
   /**
-    * Settings for use with a SPEKE key provider
+    * Use these settings when doing DRM encryption with a SPEKE-compliant key provider, if your output group type is HLS, MS Smooth, or DASH. If your output group type is CMAF, use the SpekeKeyProviderCmaf settings instead.
     */
   var SpekeKeyProvider: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.SpekeKeyProvider] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait HlsEncryptionSettings extends js.Object {
     */
   var StaticKeyProvider: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StaticKeyProvider] = js.undefined
   /**
-    * Indicates which type of key provider is used for encryption.
+    * Specify whether your DRM encryption key is static or from a key provider that follows the SPEKE standard. For more information about SPEKE, see https://docs.aws.amazon.com/speke/latest/documentation/what-is-speke.html.
     */
   var Type: js.UndefOr[HlsKeyProviderType] = js.undefined
 }

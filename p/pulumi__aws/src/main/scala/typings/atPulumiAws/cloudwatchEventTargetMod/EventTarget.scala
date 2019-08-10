@@ -57,7 +57,7 @@ class EventTarget protected () extends CustomResource {
     */
   val kinesisTarget: Output[js.UndefOr[Anon_PartitionKeyPath]] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecs_target` is used.
+    * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
     */
   val roleArn: Output[js.UndefOr[String]] = js.native
   /**

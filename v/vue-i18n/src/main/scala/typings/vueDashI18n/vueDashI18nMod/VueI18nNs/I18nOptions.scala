@@ -1,5 +1,6 @@
 package typings.vueDashI18n.vueDashI18nMod.VueI18nNs
 
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +18,8 @@ trait I18nOptions extends js.Object {
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
   var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
   var sharedMessages: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages] = js.undefined
-  var silentFallbackWarn: js.UndefOr[Boolean] = js.undefined
-  var silentTranslationWarn: js.UndefOr[Boolean] = js.undefined
+  var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.undefined
+  var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.undefined
   var sync: js.UndefOr[Boolean] = js.undefined
   var warnHtmlInMessage: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel] = js.undefined
 }
@@ -37,8 +38,8 @@ object I18nOptions {
     pluralizationRules: PluralizationRulesMap = null,
     preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
     sharedMessages: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages = null,
-    silentFallbackWarn: js.UndefOr[Boolean] = js.undefined,
-    silentTranslationWarn: js.UndefOr[Boolean] = js.undefined,
+    silentFallbackWarn: Boolean | RegExp = null,
+    silentTranslationWarn: Boolean | RegExp = null,
     sync: js.UndefOr[Boolean] = js.undefined,
     warnHtmlInMessage: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel = null
   ): I18nOptions = {
@@ -54,8 +55,8 @@ object I18nOptions {
     if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules)
     if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent)
     if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages)
-    if (!js.isUndefined(silentFallbackWarn)) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn)
-    if (!js.isUndefined(silentTranslationWarn)) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn)
+    if (silentFallbackWarn != null) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn.asInstanceOf[js.Any])
+    if (silentTranslationWarn != null) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn.asInstanceOf[js.Any])
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
     if (warnHtmlInMessage != null) __obj.updateDynamic("warnHtmlInMessage")(warnHtmlInMessage)
     __obj.asInstanceOf[I18nOptions]

@@ -38,6 +38,10 @@ trait ClusterState extends js.Object {
     */
   val roleArn: js.UndefOr[Input[String]] = js.undefined
   /**
+    * The status of the EKS cluster. One of `CREATING`, `ACTIVE`, `DELETING`, `FAILED`.
+    */
+  val status: js.UndefOr[Input[String]] = js.undefined
+  /**
     * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
     */
   val version: js.UndefOr[Input[String]] = js.undefined
@@ -58,6 +62,7 @@ object ClusterState {
     name: Input[String] = null,
     platformVersion: Input[String] = null,
     roleArn: Input[String] = null,
+    status: Input[String] = null,
     version: Input[String] = null,
     vpcConfig: Input[Anon_EndpointPrivateAccessEndpointPublicAccess] = null
   ): ClusterState = {
@@ -70,6 +75,7 @@ object ClusterState {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]

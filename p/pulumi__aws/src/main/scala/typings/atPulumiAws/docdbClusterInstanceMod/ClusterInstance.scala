@@ -40,7 +40,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val availabilityZone: Output[String] = js.native
   /**
-    * The identifier of the [`aws_docdb_cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
+    * The identifier of the [`aws.docdb.Cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: Output[String] = js.native
   /**

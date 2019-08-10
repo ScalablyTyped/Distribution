@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait PipelineArgs extends js.Object {
   /**
-    * An artifact_store block. Artifact stores are documented below.
+    * An artifactStore block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
   val artifactStore: Input[Anon_EncryptionKeyLocation]

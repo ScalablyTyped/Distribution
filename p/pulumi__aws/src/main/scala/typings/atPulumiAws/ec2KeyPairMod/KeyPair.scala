@@ -30,7 +30,7 @@ class KeyPair protected () extends CustomResource {
     */
   val keyName: Output[String] = js.native
   /**
-    * Creates a unique name beginning with the specified prefix. Conflicts with `key_name`.
+    * Creates a unique name beginning with the specified prefix. Conflicts with `keyName`.
     */
   val keyNamePrefix: Output[js.UndefOr[String]] = js.native
   /**

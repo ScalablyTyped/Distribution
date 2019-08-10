@@ -14,7 +14,7 @@ trait ModelState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+    * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
   val containers: js.UndefOr[Input[js.Array[Input[Anon_ContainerHostnameEnvironment]]]] = js.undefined
   /**

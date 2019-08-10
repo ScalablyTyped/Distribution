@@ -1,6 +1,6 @@
 package typings.atGoogleDashCloudCommon
 
-import typings.request.requestMod.CoreOptions
+import typings.teenyDashRequest.teenyDashRequestMod.CoreOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

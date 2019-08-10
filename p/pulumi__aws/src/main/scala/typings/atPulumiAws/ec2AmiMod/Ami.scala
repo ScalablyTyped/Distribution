@@ -26,7 +26,7 @@ class Ami protected () extends CustomResource {
   def this(name: String, args: AmiArgs) = this()
   def this(name: String, args: AmiArgs, opts: CustomResourceOptions) = this()
   /**
-    * Machine architecture for created instances. Defaults to "x86_64".
+    * Machine architecture for created instances. Defaults to "x8664".
     */
   val architecture: Output[js.UndefOr[String]] = js.native
   /**

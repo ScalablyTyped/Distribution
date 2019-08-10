@@ -12,6 +12,10 @@ trait RepositoryState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
+    * The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
+    */
+  val imageTagMutability: js.UndefOr[Input[String]] = js.undefined
+  /**
     * Name of the repository.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
@@ -33,6 +37,7 @@ object RepositoryState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
+    imageTagMutability: Input[String] = null,
     name: Input[String] = null,
     registryId: Input[String] = null,
     repositoryUrl: Input[String] = null,
@@ -40,6 +45,7 @@ object RepositoryState {
   ): RepositoryState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (imageTagMutability != null) __obj.updateDynamic("imageTagMutability")(imageTagMutability.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     if (repositoryUrl != null) __obj.updateDynamic("repositoryUrl")(repositoryUrl.asInstanceOf[js.Any])

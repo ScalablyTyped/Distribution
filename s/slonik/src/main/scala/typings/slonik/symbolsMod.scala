@@ -13,6 +13,7 @@ object symbolsMod extends js.Object {
   val ComparisonPredicateTokenSymbol: js.Symbol = js.native
   val IdentifierListTokenSymbol: js.Symbol = js.native
   val IdentifierTokenSymbol: js.Symbol = js.native
+  val JsonTokenSymbol: js.Symbol = js.native
   val RawSqlTokenSymbol: js.Symbol = js.native
   val SqlTokenSymbol: js.Symbol = js.native
   val TupleListTokenSymbol: js.Symbol = js.native

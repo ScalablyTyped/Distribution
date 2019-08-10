@@ -14,7 +14,7 @@ trait PipelineState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * An artifact_store block. Artifact stores are documented below.
+    * An artifactStore block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
   val artifactStore: js.UndefOr[Input[Anon_EncryptionKeyLocation]] = js.undefined

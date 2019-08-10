@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait GetImageArgs extends js.Object {
   /**
-    * The sha256 digest of the image manifest. At least one of `image_digest` or `image_tag` must be specified.
+    * The sha256 digest of the image manifest. At least one of `imageDigest` or `imageTag` must be specified.
     */
   val imageDigest: js.UndefOr[String] = js.undefined
   /**
-    * The tag associated with this image. At least one of `image_digest` or `image_tag` must be specified.
+    * The tag associated with this image. At least one of `imageDigest` or `imageTag` must be specified.
     */
   val imageTag: js.UndefOr[String] = js.undefined
   /**

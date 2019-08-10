@@ -34,11 +34,11 @@ trait PolicyState extends js.Object {
     */
   val serviceNamespace: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Step scaling policy configuration, requires `policy_type = "StepScaling"` (default). See supported fields below.
+    * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
     */
   val stepScalingPolicyConfiguration: js.UndefOr[Input[Anon_AdjustmentTypeCooldown]] = js.undefined
   /**
-    * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
+    * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
     */
   val targetTrackingScalingPolicyConfiguration: js.UndefOr[Input[Anon_CustomizedMetricSpecificationDisableScaleIn]] = js.undefined
 }

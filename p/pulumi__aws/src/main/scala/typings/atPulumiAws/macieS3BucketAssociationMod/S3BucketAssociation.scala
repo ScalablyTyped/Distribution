@@ -31,7 +31,7 @@ class S3BucketAssociation protected () extends CustomResource {
     */
   val classificationType: Output[Anon_Continuous] = js.native
   /**
-    * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.
+    * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */
   val memberAccountId: Output[js.UndefOr[String]] = js.native
   /**

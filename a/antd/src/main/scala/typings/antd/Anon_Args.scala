@@ -23,6 +23,7 @@ trait Anon_Args extends js.Object {
   var onClick: Requireable[js.Function1[/* repeated */ _, _]]
   var shape: Requireable[round | circle | `circle-outline`]
   var size: Requireable[small | default | large]
+  var title: Requireable[String]
   var `type`: Requireable[String]
 }
 
@@ -37,9 +38,10 @@ object Anon_Args {
     onClick: Requireable[js.Function1[/* repeated */ _, _]],
     shape: Requireable[round | circle | `circle-outline`],
     size: Requireable[small | default | large],
+    title: Requireable[String],
     `type`: Requireable[String]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(block = block, className = className, htmlType = htmlType, icon = icon, loading = loading, onClick = onClick, shape = shape, size = size)
+    val __obj = js.Dynamic.literal(block = block, className = className, htmlType = htmlType, icon = icon, loading = loading, onClick = onClick, shape = shape, size = size, title = title)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Args]
   }

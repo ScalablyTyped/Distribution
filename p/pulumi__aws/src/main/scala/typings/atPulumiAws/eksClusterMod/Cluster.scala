@@ -53,6 +53,10 @@ class Cluster protected () extends CustomResource {
     */
   val roleArn: Output[String] = js.native
   /**
+    * The status of the EKS cluster. One of `CREATING`, `ACTIVE`, `DELETING`, `FAILED`.
+    */
+  val status: Output[String] = js.native
+  /**
     * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
     */
   val version: Output[String] = js.native

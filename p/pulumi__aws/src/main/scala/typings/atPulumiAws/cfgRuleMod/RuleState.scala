@@ -23,7 +23,7 @@ trait RuleState extends js.Object {
   val inputParameters: js.UndefOr[Input[String]] = js.undefined
   /**
     * The frequency that you want AWS Config to run evaluations for a rule that
-    * is triggered periodically. If specified, requires `message_type` to be `ScheduledNotification`.
+    * is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
     */
   val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
   /**

@@ -49,7 +49,7 @@ trait PermissionArgs extends js.Object {
     */
   val statementId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statement_id`.
+    * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statementId`.
     */
   val statementIdPrefix: js.UndefOr[Input[String]] = js.undefined
 }

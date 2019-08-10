@@ -47,7 +47,7 @@ class StackSet protected () extends CustomResource {
     */
   val name: Output[String] = js.native
   /**
-    * Key-value map of input parameters for the Stack Set template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignore_changes` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignore_changes` argument.
+    * Key-value map of input parameters for the Stack Set template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignoreChanges` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignoreChanges` argument.
     */
   val parameters: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
@@ -59,11 +59,11 @@ class StackSet protected () extends CustomResource {
     */
   val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `template_url`.
+    * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `templateUrl`.
     */
   val templateBody: Output[String] = js.native
   /**
-    * String containing the location of a file containing the CloudFormation template body. The URL must point to a template that is located in an Amazon S3 bucket. Maximum location file size: 460,800 bytes. Conflicts with `template_body`.
+    * String containing the location of a file containing the CloudFormation template body. The URL must point to a template that is located in an Amazon S3 bucket. Maximum location file size: 460,800 bytes. Conflicts with `templateBody`.
     */
   val templateUrl: Output[js.UndefOr[String]] = js.native
 }

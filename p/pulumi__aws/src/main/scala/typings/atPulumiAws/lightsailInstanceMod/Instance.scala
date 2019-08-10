@@ -24,11 +24,11 @@ class Instance protected () extends CustomResource {
   def this(name: String, args: InstanceArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the Lightsail instance (matches `id`).
-    * * `availability_zone`
-    * * `blueprint_id`
-    * * `bundle_id`
-    * * `key_pair_name`
-    * * `user_data`
+    * * `availabilityZone`
+    * * `blueprintId`
+    * * `bundleId`
+    * * `keyPairName`
+    * * `userData`
     */
   val arn: Output[String] = js.native
   /**
@@ -51,7 +51,7 @@ class Instance protected () extends CustomResource {
   val isStaticIp: Output[Boolean] = js.native
   /**
     * The name of your key pair. Created in the
-    * Lightsail console (cannot use `aws_key_pair` at this time)
+    * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
     */
   val keyPairName: Output[js.UndefOr[String]] = js.native
   /**

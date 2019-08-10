@@ -24,7 +24,7 @@ trait AliasState extends js.Object {
     */
   val functionVersion: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws_api_gateway_integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
     */
   val invokeArn: js.UndefOr[Input[String]] = js.undefined
   /**

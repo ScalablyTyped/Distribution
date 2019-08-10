@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean
+import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType
 import typings.atPulumiAws.Anon_DeviceNameVirtualName
 import typings.atPulumiAws.iamMod.InstanceProfile
 import typings.atPulumiPulumi.outputMod.Input
@@ -73,7 +73,7 @@ trait LaunchConfigurationArgs extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: js.UndefOr[Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]] = js.undefined
+  val rootBlockDevice: js.UndefOr[Input[Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType]] = js.undefined
   /**
     * A list of associated security group IDS.
     */
@@ -83,11 +83,11 @@ trait LaunchConfigurationArgs extends js.Object {
     */
   val spotPrice: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `userDataBase64` instead.
     */
   val userData: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+    * Can be used instead of `userData` to pass base64-encoded binary data directly. Use this instead of `userData` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
     */
   val userDataBase64: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -117,7 +117,7 @@ object LaunchConfigurationArgs {
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     placementTenancy: Input[String] = null,
-    rootBlockDevice: Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean] = null,
+    rootBlockDevice: Input[Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
     spotPrice: Input[String] = null,
     userData: Input[String] = null,

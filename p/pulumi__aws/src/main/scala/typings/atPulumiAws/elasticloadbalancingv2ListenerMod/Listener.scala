@@ -27,7 +27,7 @@ class Listener protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws_lb_listener_certificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
+    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws.lb.ListenerCertificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
     */
   val certificateArn: Output[js.UndefOr[String]] = js.native
   /**

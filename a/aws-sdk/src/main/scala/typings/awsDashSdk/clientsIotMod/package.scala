@@ -479,6 +479,7 @@ package object clientsIotMod {
   type ProcessingTargetNameList = js.Array[ProcessingTargetName]
   type PublicKey = java.lang.String
   type PublicKeyMap = StringDictionary[KeyValue]
+  type Qos = Double
   type QueryMaxResults = Double
   type QueryString = java.lang.String
   type QueryVersion = java.lang.String

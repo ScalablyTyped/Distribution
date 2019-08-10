@@ -54,7 +54,7 @@ class LoadBalancer protected () extends CustomResource {
     */
   val dnsName: Output[String] = js.native
   /**
-    * A health_check block. Health Check documented below.
+    * A healthCheck block. Health Check documented below.
     */
   val healthCheck: Output[Anon_HealthyThresholdInterval] = js.native
   /**

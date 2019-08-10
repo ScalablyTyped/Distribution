@@ -44,7 +44,7 @@ trait PresetArgs extends js.Object {
   val videoCodecOptions: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
     * Watermark parameters for the video parameters (documented below)
-    * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
+    * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
   val videoWatermarks: js.UndefOr[Input[js.Array[Input[Anon_HorizontalAlignHorizontalOffset]]]] = js.undefined
 }

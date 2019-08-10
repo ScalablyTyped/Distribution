@@ -43,7 +43,7 @@ class Resolver protected () extends CustomResource {
     */
   val kind: Output[js.UndefOr[String]] = js.native
   /**
-    * The PipelineConfig. A `pipeline_config` block is documented below.
+    * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
   val pipelineConfig: Output[js.UndefOr[Anon_Functions]] = js.native
   /**

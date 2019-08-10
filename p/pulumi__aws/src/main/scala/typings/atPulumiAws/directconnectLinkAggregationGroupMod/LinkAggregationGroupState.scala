@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait LinkAggregationGroupState extends js.Object {
   /**
     * The ARN of the LAG.
-    * * `jumbo_frame_capable` -Indicates whether jumbo frames (9001 MTU) are supported.
+    * * `jumboFrameCapable` -Indicates whether jumbo frames (9001 MTU) are supported.
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**

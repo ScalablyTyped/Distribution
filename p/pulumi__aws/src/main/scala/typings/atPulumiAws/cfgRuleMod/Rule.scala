@@ -38,7 +38,7 @@ class Rule protected () extends CustomResource {
   val inputParameters: Output[js.UndefOr[String]] = js.native
   /**
     * The frequency that you want AWS Config to run evaluations for a rule that
-    * is triggered periodically. If specified, requires `message_type` to be `ScheduledNotification`.
+    * is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
     */
   val maximumExecutionFrequency: Output[js.UndefOr[String]] = js.native
   /**

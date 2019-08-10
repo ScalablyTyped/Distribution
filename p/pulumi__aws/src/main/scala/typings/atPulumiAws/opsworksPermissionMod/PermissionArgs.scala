@@ -15,7 +15,7 @@ trait PermissionArgs extends js.Object {
     */
   val allowSudo: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iam_only`
+    * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
     */
   val level: js.UndefOr[Input[String]] = js.undefined
   /**

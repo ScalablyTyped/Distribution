@@ -15,7 +15,7 @@ trait KeyPairState extends js.Object {
     */
   val keyName: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Creates a unique name beginning with the specified prefix. Conflicts with `key_name`.
+    * Creates a unique name beginning with the specified prefix. Conflicts with `keyName`.
     */
   val keyNamePrefix: js.UndefOr[Input[String]] = js.undefined
   /**

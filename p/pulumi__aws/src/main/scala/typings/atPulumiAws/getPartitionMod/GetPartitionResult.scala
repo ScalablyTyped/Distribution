@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetPartitionResult extends js.Object {
+  val dnsSuffix: String
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -14,8 +15,8 @@ trait GetPartitionResult extends js.Object {
 
 object GetPartitionResult {
   @scala.inline
-  def apply(id: String, partition: String): GetPartitionResult = {
-    val __obj = js.Dynamic.literal(id = id, partition = partition)
+  def apply(dnsSuffix: String, id: String, partition: String): GetPartitionResult = {
+    val __obj = js.Dynamic.literal(dnsSuffix = dnsSuffix, id = id, partition = partition)
   
     __obj.asInstanceOf[GetPartitionResult]
   }

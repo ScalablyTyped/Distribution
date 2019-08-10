@@ -144,7 +144,7 @@ class LaunchTemplate protected () extends CustomResource {
   val ramDiskId: Output[js.UndefOr[String]] = js.native
   /**
     * A list of security group names to associate with. If you are creating Instances in a VPC, use
-    * `vpc_security_group_ids` instead.
+    * `vpcSecurityGroupIds` instead.
     */
   val securityGroupNames: Output[js.UndefOr[js.Array[String]]] = js.native
   /**

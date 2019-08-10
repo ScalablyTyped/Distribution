@@ -47,7 +47,7 @@ class Cluster protected () extends CustomResource {
     */
   val clusterIdentifier: Output[String] = js.native
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifer`.
     */
   val clusterIdentifierPrefix: Output[String] = js.native
   /**
@@ -94,7 +94,7 @@ class Cluster protected () extends CustomResource {
     */
   val hostedZoneId: Output[String] = js.native
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `storage_encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `storageEncrypted` needs to be set to true.
     */
   val kmsKeyId: Output[String] = js.native
   /**
@@ -121,7 +121,7 @@ class Cluster protected () extends CustomResource {
     */
   val readerEndpoint: Output[String] = js.native
   /**
-    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
+    * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `finalSnapshotIdentifier`. Default is `false`.
     */
   val skipFinalSnapshot: Output[js.UndefOr[Boolean]] = js.native
   /**

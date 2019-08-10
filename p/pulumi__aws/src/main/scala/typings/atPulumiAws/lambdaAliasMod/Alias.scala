@@ -39,7 +39,7 @@ class Alias protected () extends CustomResource {
     */
   val functionVersion: Output[String] = js.native
   /**
-    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws_api_gateway_integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
     */
   val invokeArn: Output[String] = js.native
   /**

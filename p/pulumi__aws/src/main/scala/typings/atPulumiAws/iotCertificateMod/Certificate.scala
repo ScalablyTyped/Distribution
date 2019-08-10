@@ -26,15 +26,29 @@ class Certificate protected () extends CustomResource {
     */
   val active: Output[Boolean] = js.native
   /**
-    * The ARN of the created AWS IoT certificate
+    * The ARN of the created certificate.
     */
   val arn: Output[String] = js.native
   /**
-    * The certificate signing request. Review the
-    * [IoT API Reference Guide] (http://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html)
-    * for more information on creating a certificate from a certificate signing request (CSR).
+    * The certificate data, in PEM format.
     */
-  val csr: Output[String] = js.native
+  val certificatePem: Output[String] = js.native
+  /**
+    * The certificate signing request. Review
+    * [CreateCertificateFromCsr](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html)
+    * for more information on generating a certificate from a certificate signing request (CSR).
+    * If none is specified both the certificate and keys will be generated, review [CreateKeysAndCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html)
+    * for more information on generating keys and a certificate.
+    */
+  val csr: Output[js.UndefOr[String]] = js.native
+  /**
+    * When no CSR is provided, the private key.
+    */
+  val privateKey: Output[String] = js.native
+  /**
+    * When no CSR is provided, the public key.
+    */
+  val publicKey: Output[String] = js.native
 }
 
 /* static members */

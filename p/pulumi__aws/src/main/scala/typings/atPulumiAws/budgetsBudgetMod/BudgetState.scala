@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait BudgetState extends js.Object {
   /**
-    * The ID of the target account for budget. Will use current user's account_id by default if omitted.
+    * The ID of the target account for budget. Will use current user's accountId by default if omitted.
     */
   val accountId: js.UndefOr[Input[String]] = js.undefined
   /**

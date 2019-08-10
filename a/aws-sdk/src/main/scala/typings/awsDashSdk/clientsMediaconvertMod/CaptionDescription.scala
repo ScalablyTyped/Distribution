@@ -22,7 +22,7 @@ trait CaptionDescription extends js.Object {
     */
   var LanguageCode: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.LanguageCode] = js.undefined
   /**
-    * Human readable information to indicate captions available for players (eg. English, or Spanish). Alphanumeric characters, spaces, and underscore are legal.
+    * Specify a label for this set of output captions. For example, "English", "Director commentary", or "track_2". For streaming outputs, MediaConvert passes this information into destination manifests for display on the end-viewer's player device. For outputs in other output groups, the service ignores this setting.
     */
   var LanguageDescription: js.UndefOr[__string] = js.undefined
 }

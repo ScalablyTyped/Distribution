@@ -1,7 +1,7 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameIopsSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean
+import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSize
 import typings.atPulumiAws.Anon_DeviceNameVirtualName
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait InstanceState extends js.Object {
     */
   val amiId: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+    * Machine architecture for created instances.  Can be either `"x8664"` (the default) or `"i386"`
     */
   val architecture: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -105,7 +105,7 @@ trait InstanceState extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]]]] = js.undefined
+  val rootBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSize]]]] = js.undefined
   /**
     * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
     */
@@ -180,7 +180,7 @@ object InstanceState {
     reportedOsFamily: Input[String] = null,
     reportedOsName: Input[String] = null,
     reportedOsVersion: Input[String] = null,
-    rootBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]]] = null,
+    rootBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSize]]] = null,
     rootDeviceType: Input[String] = null,
     rootDeviceVolumeId: Input[String] = null,
     securityGroupIds: Input[js.Array[Input[String]]] = null,

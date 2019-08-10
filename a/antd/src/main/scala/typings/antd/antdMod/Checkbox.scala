@@ -17,6 +17,7 @@ class Checkbox () extends default
 @js.native
 object Checkbox extends js.Object {
   var Group: TypeofClassCheckboxGroupChildContextTypes = js.native
+  var __ANT_CHECKBOX: Boolean = js.native
   var contextTypes: Anon_CheckboxGroup = js.native
   var defaultProps: Anon_Indeterminate = js.native
 }

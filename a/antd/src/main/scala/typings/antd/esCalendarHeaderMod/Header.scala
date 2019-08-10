@@ -3,7 +3,6 @@ package typings.antd.esCalendarHeaderMod
 import typings.antd.Anon_MonthReactNode
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.antd.esRadioInterfaceMod.RadioChangeEvent
-import typings.moment.momentMod.Moment
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.ReactNode
@@ -21,7 +20,6 @@ trait Header
   def getMonthYearSelections(
     getPrefixCls: js.Function2[/* suffixCls */ String, /* customizePrefixCls */ js.UndefOr[String], String]
   ): Anon_MonthReactNode = js.native
-  def getMonthsLocale(value: Moment): js.Array[_] = js.native
   def getTypeSwitch(): Element = js.native
   def getYearSelectElement(prefixCls: String, year: Double): Element = js.native
   def headerRenderCustom(headerRender: HeaderRender): ReactNode = js.native

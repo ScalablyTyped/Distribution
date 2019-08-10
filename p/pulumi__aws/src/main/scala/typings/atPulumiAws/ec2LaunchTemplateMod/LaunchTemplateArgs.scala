@@ -122,7 +122,7 @@ trait LaunchTemplateArgs extends js.Object {
   val ramDiskId: js.UndefOr[Input[String]] = js.undefined
   /**
     * A list of security group names to associate with. If you are creating Instances in a VPC, use
-    * `vpc_security_group_ids` instead.
+    * `vpcSecurityGroupIds` instead.
     */
   val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

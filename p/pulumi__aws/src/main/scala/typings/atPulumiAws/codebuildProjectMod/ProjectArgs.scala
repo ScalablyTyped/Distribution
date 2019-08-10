@@ -20,7 +20,7 @@ trait ProjectArgs extends js.Object {
     */
   val artifacts: Input[Anon_EncryptionDisabledLocationName]
   /**
-    * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
+    * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
     */
   val badgeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   /**

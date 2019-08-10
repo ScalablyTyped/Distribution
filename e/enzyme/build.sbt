@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "enzyme"
-version := "3.10-dt-20190715Z-ef95d2"
+version := "3.10-dt-20190715Z-f3e700"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190703Z-f561b2",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-7e5ae5",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",

@@ -3,6 +3,7 @@ package typings.atPhosphorAlgorithm.libArrayMod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.atPhosphorAlgorithm.Anon_Index
 import typings.atPhosphorAlgorithm.libArrayMod.ArrayExtNs.MutableArrayLike
+import typings.atPhosphorAlgorithm.libArrayMod.ArrayExtNs.sliceNs.IOptions
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -830,6 +831,69 @@ object ArrayExtNs extends js.Object {
   def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
   def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
   /**
+    * Test whether two arrays are shallowly equal.
+    *
+    * @param a - The first array-like object to compare.
+    *
+    * @param b - The second array-like object to compare.
+    *
+    * @param fn - The comparison function to apply to the elements. It
+    *   should return `true` if the elements are "equal". The default
+    *   compares elements using strict `===` equality.
+    *
+    * @returns Whether the two arrays are shallowly equal.
+    *
+    * #### Complexity
+    * Linear.
+    *
+    * #### Undefined Behavior
+    * Modifying the length of the arrays while comparing.
+    *
+    * #### Example
+    * ```typescript
+    * import { ArrayExt } from '@phosphor/algorithm';
+    *
+    * let d1 = [0, 3, 4, 7, 7, 9];
+    * let d2 = [0, 3, 4, 7, 7, 9];
+    * let d3 = [42];
+    * ArrayExt.shallowEqual(d1, d2);  // true
+    * ArrayExt.shallowEqual(d2, d3);  // false
+    * ```
+    */
+  def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T]): Boolean = js.native
+  def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
+  /**
+    * Create a slice of an array subject to an optional step.
+    *
+    * @param array - The array-like object of interest.
+    *
+    * @param options - The options for configuring the slice.
+    *
+    * @returns A new array with the specified values.
+    *
+    * @throws An exception if the slice `step` is `0`.
+    *
+    * #### Complexity
+    * Linear.
+    *
+    * #### Undefined Behavior
+    * A `start`, `stop`, or `step` which is non-integral.
+    *
+    * #### Example
+    * ```typescript
+    * import { ArrayExt } from '@phosphor/algorithm';
+    *
+    * let data = [0, 3, 4, 7, 7, 9];
+    * ArrayExt.slice(data);                         // [0, 3, 4, 7, 7, 9]
+    * ArrayExt.slice(data, { start: 2 });           // [4, 7, 7, 9]
+    * ArrayExt.slice(data, { start: 0, stop: 4 });  // [0, 3, 4, 7]
+    * ArrayExt.slice(data, { step: 2 });            // [0, 4, 7]
+    * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
+    * ```
+    */
+  def slice[T](array: ArrayLike[T]): js.Array[T] = js.native
+  def slice[T](array: ArrayLike[T], options: IOptions): js.Array[T] = js.native
+  /**
     * Find the index of the first element which compares `>` than a value.
     *
     * @param array - The sorted array-like object to search.
@@ -898,5 +962,45 @@ object ArrayExtNs extends js.Object {
     start: Double,
     stop: Double
   ): Double = js.native
+  /**
+    * The namespace for the `slice` function statics.
+    */
+  @JSName("slice")
+  @js.native
+  object sliceNs extends js.Object {
+    /**
+      * The options for the `slice` function.
+      */
+    trait IOptions extends js.Object {
+      /**
+        * The starting index of the slice, inclusive.
+        *
+        * Negative values are taken as an offset from the end
+        * of the array.
+        *
+        * The default is `0` if `step > 0` else `n - 1`.
+        */
+      var start: js.UndefOr[Double] = js.undefined
+      /**
+        * The step value for the slice.
+        *
+        * This must not be `0`.
+        *
+        * The default is `1`.
+        */
+      var step: js.UndefOr[Double] = js.undefined
+      /**
+        * The stopping index of the slice, exclusive.
+        *
+        * Negative values are taken as an offset from the end
+        * of the array.
+        *
+        * The default is `n` if `step > 0` else `-n - 1`.
+        */
+      var stop: js.UndefOr[Double] = js.undefined
+    }
+    
+  }
+  
 }
 

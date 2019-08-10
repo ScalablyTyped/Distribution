@@ -22,6 +22,10 @@ trait CreateQueueRequest extends js.Object {
     */
   var ReservationPlanSettings: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.ReservationPlanSettings] = js.undefined
   /**
+    * Initial state of the queue. If you create a paused queue, then jobs in that queue won't begin.
+    */
+  var Status: js.UndefOr[QueueStatus] = js.undefined
+  /**
     * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
     */
   var Tags: js.UndefOr[__mapOf__string] = js.undefined
@@ -34,12 +38,14 @@ object CreateQueueRequest {
     Description: __string = null,
     PricingPlan: PricingPlan = null,
     ReservationPlanSettings: ReservationPlanSettings = null,
+    Status: QueueStatus = null,
     Tags: __mapOf__string = null
   ): CreateQueueRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (PricingPlan != null) __obj.updateDynamic("PricingPlan")(PricingPlan.asInstanceOf[js.Any])
     if (ReservationPlanSettings != null) __obj.updateDynamic("ReservationPlanSettings")(ReservationPlanSettings)
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateQueueRequest]
   }

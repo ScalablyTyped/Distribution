@@ -22,7 +22,7 @@ trait MethodResponseArgs extends js.Object {
   val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
     * A map of response parameters that can be sent to the caller.
-    * For example: `response_parameters = { "method.response.header.X-Some-Header" = true }`
+    * For example: `responseParameters = { "method.response.header.X-Some-Header" = true }`
     * would define that the header `X-Some-Header` can be provided on the response.
     */
   val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined

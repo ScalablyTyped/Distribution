@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sql_dot_js"
-version := "1.0-dt-20190530Z-ac24a4"
+version := "1.0-dt-20190809Z-c79d78"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "emscripten" % "0.0-unknown-dt-20190717Z-4adb0c",
+  "org.scalablytyped" %%% "emscripten" % "1.38.33-dt-20190809Z-a4d1b5",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

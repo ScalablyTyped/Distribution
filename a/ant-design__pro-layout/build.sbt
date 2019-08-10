@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "4.5.12-459460"
+version := "4.5.12-41c4af"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-7ec80c",
-  "org.scalablytyped" %%% "antd" % "3.21.2-a4b6bf",
+  "org.scalablytyped" %%% "antd" % "3.21.4-9a9a22",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-796a7a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190708Z-370309",

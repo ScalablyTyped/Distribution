@@ -24,7 +24,7 @@ class LinkAggregationGroup protected () extends CustomResource {
   def this(name: String, args: LinkAggregationGroupArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the LAG.
-    * * `jumbo_frame_capable` -Indicates whether jumbo frames (9001 MTU) are supported.
+    * * `jumboFrameCapable` -Indicates whether jumbo frames (9001 MTU) are supported.
     */
   val arn: Output[String] = js.native
   /**

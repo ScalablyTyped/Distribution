@@ -42,7 +42,7 @@ class Member protected () extends CustomResource {
     */
   val invitationMessage: Output[js.UndefOr[String]] = js.native
   /**
-    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationship_status` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
+    * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationshipStatus` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
     */
   val invite: Output[js.UndefOr[Boolean]] = js.native
   /**

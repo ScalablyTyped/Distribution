@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait UserArgs extends js.Object {
   /**
     * When destroying this user, destroy even if it
-    * has non-this provider-managed IAM access keys, login profile or MFA devices. Without `force_destroy`
+    * has non-this provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
     * a user with non-this provider-managed access keys and login profile will fail to be destroyed.
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined

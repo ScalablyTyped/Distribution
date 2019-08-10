@@ -63,12 +63,23 @@ package object slonikMod {
   type QueryResultRowType[ColumnName /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in ColumnName ]: slonik.slonik.QueryResultRowColumnType}
     */ typings.slonik.slonikStrings.QueryResultRowType with js.Any
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - scala.Null
+    - js.Object
+    - typings.slonik.slonikMod.SerializableValueObject
+    - typings.slonik.slonikMod.SerializableValueArray
+  */
+  type SerializableValueType = _SerializableValueType | String | Double | Boolean | Null | js.Object
   type SqlSqlTokenType[T] = TaggedTemplateLiteralInvocationType[T]
   /* Rewritten from type alias, can be one of: 
     - typings.slonik.slonikMod.ArraySqlTokenType
     - typings.slonik.slonikMod.AssignmentListTokenType
     - typings.slonik.slonikMod.IdentifierTokenType
     - typings.slonik.slonikMod.IdentifierListTokenType
+    - typings.slonik.slonikMod.JsonSqlTokenType
     - typings.slonik.slonikMod.RawSqlTokenType
     - typings.slonik.slonikMod.SqlSqlTokenType[js.Any]
     - typings.slonik.slonikMod.TupleListSqlTokenType

@@ -17,8 +17,8 @@ trait SnapshotCopyArgs extends js.Object {
   val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * The ARN for the KMS encryption key.
-    * * `source_snapshot_id` The ARN for the snapshot to be copied.
-    * * `source_region` The region of the source snapshot.
+    * * `sourceSnapshotId` The ARN for the snapshot to be copied.
+    * * `sourceRegion` The region of the source snapshot.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   val sourceRegion: Input[String]

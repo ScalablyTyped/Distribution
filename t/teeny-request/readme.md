@@ -1,7 +1,7 @@
 
 # Scala.js typings for teeny-request
 
-Typings are for version 4.0.0
+Typings are for version 5.1.3
 
 ## Library description:
 Like request, but smaller.

@@ -1,6 +1,7 @@
 package typings.atPulumiAws.glueCrawlerMod
 
 import typings.atPulumiAws.Anon_ConnectionNameExclusions
+import typings.atPulumiAws.Anon_DatabaseNameTables
 import typings.atPulumiAws.Anon_DeleteBehaviorUpdateBehavior
 import typings.atPulumiAws.Anon_ExclusionsPath
 import typings.atPulumiAws.Anon_PathInput
@@ -14,6 +15,7 @@ trait CrawlerState extends js.Object {
     * The ARN of the crawler
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
+  val catalogTargets: js.UndefOr[Input[js.Array[Input[Anon_DatabaseNameTables]]]] = js.undefined
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
@@ -23,7 +25,7 @@ trait CrawlerState extends js.Object {
     */
   val configuration: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Glue database where results are written.
+    * The name of the Glue database to be synchronized.
     */
   val databaseName: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -72,6 +74,7 @@ object CrawlerState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
+    catalogTargets: Input[js.Array[Input[Anon_DatabaseNameTables]]] = null,
     classifiers: Input[js.Array[Input[String]]] = null,
     configuration: Input[String] = null,
     databaseName: Input[String] = null,
@@ -88,6 +91,7 @@ object CrawlerState {
   ): CrawlerState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (catalogTargets != null) __obj.updateDynamic("catalogTargets")(catalogTargets.asInstanceOf[js.Any])
     if (classifiers != null) __obj.updateDynamic("classifiers")(classifiers.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])

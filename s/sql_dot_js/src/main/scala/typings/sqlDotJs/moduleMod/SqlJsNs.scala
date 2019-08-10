@@ -52,7 +52,7 @@ object SqlJsNs extends js.Object {
   
   trait QueryResults extends js.Object {
     var columns: js.Array[String]
-    var values: js.Array[ValueType]
+    var values: js.Array[js.Array[ValueType]]
   }
   
   trait SqlJsStatic extends js.Object {
@@ -84,6 +84,6 @@ object SqlJsNs extends js.Object {
   type Config = Partial[EmscriptenModule]
   type ParamsCallback = js.Function1[/* obj */ ParamsObject, Unit]
   type ParamsObject = Record[String, ValueType]
-  type ValueType = Double | String | Uint8Array
+  type ValueType = Double | String | Uint8Array | Null
 }
 

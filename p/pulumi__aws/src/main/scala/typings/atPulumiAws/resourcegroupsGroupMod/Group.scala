@@ -35,7 +35,7 @@ class Group protected () extends CustomResource {
     */
   val name: Output[String] = js.native
   /**
-    * A `resource_query` block. Resource queries are documented below.
+    * A `resourceQuery` block. Resource queries are documented below.
     */
   val resourceQuery: Output[Anon_Query] = js.native
 }

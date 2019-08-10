@@ -18,7 +18,7 @@ trait PipelineArgs extends js.Object {
     */
   val contentConfig: js.UndefOr[Input[Anon_BucketStorageClassInput]] = js.undefined
   /**
-    * The permissions for the `content_config` object. (documented below)
+    * The permissions for the `contentConfig` object. (documented below)
     */
   val contentConfigPermissions: js.UndefOr[Input[js.Array[Input[Anon_AccessesGrantee]]]] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait PipelineArgs extends js.Object {
     */
   val thumbnailConfig: js.UndefOr[Input[Anon_BucketStorageClassInput]] = js.undefined
   /**
-    * The permissions for the `thumbnail_config` object. (documented below)
+    * The permissions for the `thumbnailConfig` object. (documented below)
     */
   val thumbnailConfigPermissions: js.UndefOr[Input[js.Array[Input[Anon_AccessesGrantee]]]] = js.undefined
 }

@@ -3,6 +3,9 @@ package typings.eslint.eslintMod.RuleNs
 import org.scalablytyped.runtime.StringDictionary
 import typings.eslint.Anon_Category
 import typings.eslint.eslintStrings.code
+import typings.eslint.eslintStrings.layout
+import typings.eslint.eslintStrings.problem
+import typings.eslint.eslintStrings.suggestion
 import typings.eslint.eslintStrings.whitespace
 import typings.jsonDashSchema.jsonDashSchemaMod.JSONSchema4
 import scala.scalajs.js
@@ -15,6 +18,7 @@ trait RuleMetaData extends js.Object {
   var fixable: js.UndefOr[code | whitespace] = js.undefined
   var messages: js.UndefOr[StringDictionary[String]] = js.undefined
   var schema: js.UndefOr[JSONSchema4 | js.Array[JSONSchema4]] = js.undefined
+  var `type`: js.UndefOr[problem | suggestion | layout] = js.undefined
 }
 
 object RuleMetaData {
@@ -24,7 +28,8 @@ object RuleMetaData {
     docs: Anon_Category = null,
     fixable: code | whitespace = null,
     messages: StringDictionary[String] = null,
-    schema: JSONSchema4 | js.Array[JSONSchema4] = null
+    schema: JSONSchema4 | js.Array[JSONSchema4] = null,
+    `type`: problem | suggestion | layout = null
   ): RuleMetaData = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
@@ -32,6 +37,7 @@ object RuleMetaData {
     if (fixable != null) __obj.updateDynamic("fixable")(fixable.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleMetaData]
   }
 }

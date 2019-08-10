@@ -18,7 +18,7 @@ trait FirehoseDeliveryStreamState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`, `redshift`, `elasticsearch`, and `splunk`.
+    * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extendedS3` instead), `extendedS3`, `redshift`, `elasticsearch`, and `splunk`.
     */
   val destination: js.UndefOr[Input[String]] = js.undefined
   val destinationId: js.UndefOr[Input[String]] = js.undefined
@@ -40,12 +40,12 @@ trait FirehoseDeliveryStreamState extends js.Object {
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * Configuration options if redshift is the destination.
-    * Using `redshift_configuration` requires the user to also specify a
-    * `s3_configuration` block. More details are given below.
+    * Using `redshiftConfiguration` requires the user to also specify a
+    * `s3Configuration` block. More details are given below.
     */
   val redshiftConfiguration: js.UndefOr[Input[Anon_CloudwatchLoggingOptionsClusterJdbcurl]] = js.undefined
   /**
-    * Required for non-S3 destinations. For S3 destination, use `extended_s3_configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
+    * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
   val s3Configuration: js.UndefOr[Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions]] = js.undefined

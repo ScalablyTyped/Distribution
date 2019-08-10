@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSizeVolumeType
+import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsVolumeSize
 import typings.atPulumiAws.Anon_DeviceName
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -83,7 +83,7 @@ class LaunchConfiguration protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: Output[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType] = js.native
+  val rootBlockDevice: Output[Anon_DeleteOnTerminationEncryptedIopsVolumeSize] = js.native
   /**
     * A list of associated security group IDS.
     */
@@ -93,11 +93,11 @@ class LaunchConfiguration protected () extends CustomResource {
     */
   val spotPrice: Output[js.UndefOr[String]] = js.native
   /**
-    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `userDataBase64` instead.
     */
   val userData: Output[js.UndefOr[String]] = js.native
   /**
-    * Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+    * Can be used instead of `userData` to pass base64-encoded binary data directly. Use this instead of `userData` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
     */
   val userDataBase64: Output[js.UndefOr[String]] = js.native
   /**

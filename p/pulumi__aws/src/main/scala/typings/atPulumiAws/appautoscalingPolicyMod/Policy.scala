@@ -49,11 +49,11 @@ class Policy protected () extends CustomResource {
     */
   val serviceNamespace: Output[String] = js.native
   /**
-    * Step scaling policy configuration, requires `policy_type = "StepScaling"` (default). See supported fields below.
+    * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
     */
   val stepScalingPolicyConfiguration: Output[js.UndefOr[Anon_AdjustmentType]] = js.native
   /**
-    * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
+    * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
     */
   val targetTrackingScalingPolicyConfiguration: Output[js.UndefOr[Anon_CustomizedMetricSpecification]] = js.native
 }

@@ -10,7 +10,15 @@ trait Anon_AmiAssociatePublicIpAddress extends js.Object {
   var ami: Input[String]
   var associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.undefined
   var availabilityZone: js.UndefOr[Input[String]] = js.undefined
-  var ebsBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceName]]]] = js.undefined
+  var ebsBlockDevices: js.UndefOr[
+    Input[
+      js.Array[
+        Input[
+          Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeSizeVolumeType
+        ]
+      ]
+    ]
+  ] = js.undefined
   var ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
   var ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualName]]]] = js.undefined
   var iamInstanceProfile: js.UndefOr[Input[String]] = js.undefined
@@ -20,7 +28,11 @@ trait Anon_AmiAssociatePublicIpAddress extends js.Object {
   var monitoring: js.UndefOr[Input[Boolean]] = js.undefined
   var placementGroup: js.UndefOr[Input[String]] = js.undefined
   var placementTenancy: js.UndefOr[Input[String]] = js.undefined
-  var rootBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]]]] = js.undefined
+  var rootBlockDevices: js.UndefOr[
+    Input[
+      js.Array[Input[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeSizeVolumeType]]
+    ]
+  ] = js.undefined
   var spotPrice: js.UndefOr[Input[String]] = js.undefined
   var subnetId: js.UndefOr[Input[String]] = js.undefined
   var tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
@@ -36,7 +48,13 @@ object Anon_AmiAssociatePublicIpAddress {
     instanceType: Input[String],
     associatePublicIpAddress: Input[Boolean] = null,
     availabilityZone: Input[String] = null,
-    ebsBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceName]]] = null,
+    ebsBlockDevices: Input[
+      js.Array[
+        Input[
+          Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeSizeVolumeType
+        ]
+      ]
+    ] = null,
     ebsOptimized: Input[Boolean] = null,
     ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualName]]] = null,
     iamInstanceProfile: Input[String] = null,
@@ -45,7 +63,9 @@ object Anon_AmiAssociatePublicIpAddress {
     monitoring: Input[Boolean] = null,
     placementGroup: Input[String] = null,
     placementTenancy: Input[String] = null,
-    rootBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]]] = null,
+    rootBlockDevices: Input[
+      js.Array[Input[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeSizeVolumeType]]
+    ] = null,
     spotPrice: Input[String] = null,
     subnetId: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,

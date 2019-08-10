@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-json-patch
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 Fast implementation of JSON-Patch (RFC-6902) with duplex (observe changes) capabilities

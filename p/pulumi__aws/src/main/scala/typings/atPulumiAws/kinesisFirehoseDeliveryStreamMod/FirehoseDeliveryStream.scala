@@ -33,7 +33,7 @@ class FirehoseDeliveryStream protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`, `redshift`, `elasticsearch`, and `splunk`.
+    * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extendedS3` instead), `extendedS3`, `redshift`, `elasticsearch`, and `splunk`.
     */
   val destination: Output[String] = js.native
   val destinationId: Output[String] = js.native
@@ -53,12 +53,12 @@ class FirehoseDeliveryStream protected () extends CustomResource {
   val name: Output[String] = js.native
   /**
     * Configuration options if redshift is the destination.
-    * Using `redshift_configuration` requires the user to also specify a
-    * `s3_configuration` block. More details are given below.
+    * Using `redshiftConfiguration` requires the user to also specify a
+    * `s3Configuration` block. More details are given below.
     */
   val redshiftConfiguration: Output[js.UndefOr[Anon_CloudwatchLoggingOptions]] = js.native
   /**
-    * Required for non-S3 destinations. For S3 destination, use `extended_s3_configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
+    * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
   val s3Configuration: Output[js.UndefOr[Anon_BucketArnBufferInterval]] = js.native

@@ -1,6 +1,7 @@
 package typings.atPulumiAws.efsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_TransitionToIa
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -47,11 +48,15 @@ class FileSystem protected () extends CustomResource {
     */
   val kmsKeyId: Output[String] = js.native
   /**
+    * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object (documented below).
+    */
+  val lifecyclePolicy: Output[js.UndefOr[Anon_TransitionToIa]] = js.native
+  /**
     * The file system performance mode. Can be either `"generalPurpose"` or `"maxIO"` (Default: `"generalPurpose"`).
     */
   val performanceMode: Output[String] = js.native
   /**
-    * The throughput, measured in MiB/s, that you want to provision for the file system. Only applicable with `throughput_mode` set to `provisioned`.
+    * The throughput, measured in MiB/s, that you want to provision for the file system. Only applicable with `throughputMode` set to `provisioned`.
     */
   val provisionedThroughputInMibps: Output[js.UndefOr[Double]] = js.native
   /**
@@ -59,7 +64,7 @@ class FileSystem protected () extends CustomResource {
     */
   val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
-    * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisioned_throughput_in_mibps`.
+    * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisionedThroughputInMibps`.
     */
   val throughputMode: Output[js.UndefOr[String]] = js.native
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait DefaultNetworkAclArgs extends js.Object {
   /**
     * The Network ACL ID to manage. This
-    * attribute is exported from `aws_vpc`, or manually found via the AWS Console.
+    * attribute is exported from `aws.ec2.Vpc`, or manually found via the AWS Console.
     */
   val defaultNetworkAclId: Input[String]
   /**

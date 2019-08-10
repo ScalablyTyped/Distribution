@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dev-utils"
-version := "9.0-dt-20190506Z-b68199"
+version := "9.0-dt-20190506Z-fe11f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-c6f0d6",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-4a549d",
   "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190326Z-d51a84",
-  "org.scalablytyped" %%% "eslint" % "4.16-dt-20190808Z-6eb8f7",
+  "org.scalablytyped" %%% "eslint" % "4.16-dt-20190809Z-1dd298",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-35ffb4",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-057966",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-b72682",

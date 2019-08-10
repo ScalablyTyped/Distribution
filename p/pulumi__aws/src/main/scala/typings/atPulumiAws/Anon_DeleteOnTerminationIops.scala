@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DeleteOnTerminationIops extends js.Object {
-  var deleteOnTermination: Boolean
+  var deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   var iops: Double
-  var volumeId: String
   var volumeSize: Double
   var volumeType: String
 }
@@ -15,14 +14,13 @@ trait Anon_DeleteOnTerminationIops extends js.Object {
 object Anon_DeleteOnTerminationIops {
   @scala.inline
   def apply(
-    deleteOnTermination: Boolean,
     iops: Double,
-    volumeId: String,
     volumeSize: Double,
-    volumeType: String
+    volumeType: String,
+    deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   ): Anon_DeleteOnTerminationIops = {
-    val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination, iops = iops, volumeId = volumeId, volumeSize = volumeSize, volumeType = volumeType)
-  
+    val __obj = js.Dynamic.literal(iops = iops, volumeSize = volumeSize, volumeType = volumeType)
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     __obj.asInstanceOf[Anon_DeleteOnTerminationIops]
   }
 }

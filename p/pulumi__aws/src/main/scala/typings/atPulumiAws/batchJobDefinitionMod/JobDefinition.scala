@@ -43,7 +43,7 @@ class JobDefinition protected () extends CustomResource {
   val parameters: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
-    * Maximum number of `retry_strategy` is `1`.  Defined below.
+    * Maximum number of `retryStrategy` is `1`.  Defined below.
     */
   val retryStrategy: Output[js.UndefOr[Anon_Attempts]] = js.native
   /**

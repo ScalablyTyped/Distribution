@@ -57,7 +57,7 @@ class GatewayAssociation protected () extends CustomResource {
     */
   val proposalId: Output[js.UndefOr[String]] = js.native
   /**
-    * *Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    * *Deprecated:* Use `associatedGatewayId` instead. The ID of the VGW with which to associate the gateway.
     * Used for single account Direct Connect gateway associations.
     */
   val vpnGatewayId: Output[js.UndefOr[String]] = js.native

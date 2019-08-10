@@ -62,16 +62,16 @@ trait ServiceState extends js.Object {
     */
   val networkConfiguration: js.UndefOr[Input[Anon_AssignPublicIpSecurityGroups]] = js.undefined
   /**
-    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `ordered_placement_strategy` blocks is `5`. Defined below.
+    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
   val orderedPlacementStrategies: js.UndefOr[Input[js.Array[Input[Anon_FieldTypeInput]]]] = js.undefined
   /**
     * rules that are taken into consideration during task placement. Maximum number of
-    * `placement_constraints` is `10`. Defined below.
+    * `placementConstraints` is `10`. Defined below.
     */
   val placementConstraints: js.UndefOr[Input[js.Array[Input[Anon_ExpressionTypeInput]]]] = js.undefined
   /**
-    * The platform version on which to run your service. Only applicable for `launch_type` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
+    * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
   val platformVersion: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -83,7 +83,7 @@ trait ServiceState extends js.Object {
     */
   val schedulingStrategy: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The service discovery registries for the service. The maximum number of `service_registries` blocks is `1`.
+    * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
     */
   val serviceRegistries: js.UndefOr[Input[Anon_ContainerNameContainerPortPort]] = js.undefined
   /**

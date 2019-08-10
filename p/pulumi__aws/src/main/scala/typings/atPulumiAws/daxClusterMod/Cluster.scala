@@ -71,7 +71,7 @@ class Cluster protected () extends CustomResource {
   val nodeType: Output[String] = js.native
   /**
     * List of node objects including `id`, `address`, `port` and
-    * `availability_zone`. Referenceable e.g. as
+    * `availabilityZone`. Referenceable e.g. as
     * `${aws_dax_cluster.test.nodes.0.address}`
     */
   val nodes: Output[js.Array[Anon_Address]] = js.native

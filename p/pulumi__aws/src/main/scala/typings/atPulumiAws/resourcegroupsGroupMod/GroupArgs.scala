@@ -16,7 +16,7 @@ trait GroupArgs extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A `resource_query` block. Resource queries are documented below.
+    * A `resourceQuery` block. Resource queries are documented below.
     */
   val resourceQuery: Input[Anon_QueryType]
 }

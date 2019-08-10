@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudCommon
 
-import typings.request.requestMod.Options
 import typings.std.Error
+import typings.teenyDashRequest.teenyDashRequestMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

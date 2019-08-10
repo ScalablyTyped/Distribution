@@ -40,7 +40,7 @@ trait SpotFleetRequestArgs extends js.Object {
   /**
     *
     * The number of Spot pools across which to allocate your target Spot capacity.
-    * Valid only when `allocation_strategy` is set to `lowestPrice`. Spot Fleet selects
+    * Valid only when `allocationStrategy` is set to `lowestPrice`. Spot Fleet selects
     * the cheapest Spot pools and evenly allocates your target Spot capacity across
     * the number of Spot pools that you specify.
     */
@@ -70,7 +70,7 @@ trait SpotFleetRequestArgs extends js.Object {
     */
   val targetCapacity: Input[Double]
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
+    * A list of `aws.alb.TargetGroup` ARNs, for use with Application Load Balancing.
     */
   val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

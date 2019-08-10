@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SecretVersionArgs extends js.Object {
   /**
-    * Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secret_string is not set. Needs to be encoded to base64.
+    * Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secretString is not set. Needs to be encoded to base64.
     */
   val secretBinary: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait SecretVersionArgs extends js.Object {
     */
   val secretId: Input[String]
   /**
-    * Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary is not set.
+    * Specifies text data that you want to encrypt and store in this version of the secret. This is required if secretBinary is not set.
     */
   val secretString: js.UndefOr[Input[String]] = js.undefined
   /**

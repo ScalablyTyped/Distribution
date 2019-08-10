@@ -29,7 +29,7 @@ class Directory protected () extends CustomResource {
     */
   val accessUrl: Output[String] = js.native
   /**
-    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enable_sso`.
+    * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enableSso`.
     */
   val alias: Output[String] = js.native
   /**

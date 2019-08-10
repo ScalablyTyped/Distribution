@@ -29,7 +29,7 @@ class EventSubscription protected () extends CustomResource {
     */
   val enabled: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * A list of event categories for a `source_type` that you want to subscribe to. Run `aws neptune describe-event-categories` to find all the event categories.
+    * A list of event categories for a `sourceType` that you want to subscribe to. Run `aws neptune describe-event-categories` to find all the event categories.
     */
   val eventCategories: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -45,7 +45,7 @@ class EventSubscription protected () extends CustomResource {
     */
   val snsTopicArn: Output[String] = js.native
   /**
-    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a `source_type` must also be specified.
+    * A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a `sourceType` must also be specified.
     */
   val sourceIds: Output[js.UndefOr[js.Array[String]]] = js.native
   /**

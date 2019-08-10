@@ -130,6 +130,8 @@ package object clientsGuarddutyMod {
     - java.lang.String
   */
   type ThreatIntelSetStatus = _ThreatIntelSetStatus | java.lang.String
+  type ThreatIntelligenceDetails = js.Array[ThreatIntelligenceDetail]
+  type ThreatNames = js.Array[String]
   type UnprocessedAccounts = js.Array[UnprocessedAccount]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-11-28`

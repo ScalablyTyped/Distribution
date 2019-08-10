@@ -74,7 +74,6 @@ object ^ extends js.Object {
   var SpreadsheetApp: typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.SpreadsheetApp = js.native
   var TagManager: typings.googleDashAppsDashScript.GoogleAppsScriptNs.TagManager = js.native
   var Tasks: typings.googleDashAppsDashScript.GoogleAppsScriptNs.Tasks = js.native
-  var UiApp: typings.googleDashAppsDashScript.GoogleAppsScriptNs.UINs.UiApp = js.native
   var UrlFetchApp: typings.googleDashAppsDashScript.GoogleAppsScriptNs.URLUnderscoreFetchNs.UrlFetchApp = js.native
   var UrlShortener: typings.googleDashAppsDashScript.GoogleAppsScriptNs.UrlShortener = js.native
   var UserProperties: typings.googleDashAppsDashScript.GoogleAppsScriptNs.PropertiesNs.UserProperties = js.native

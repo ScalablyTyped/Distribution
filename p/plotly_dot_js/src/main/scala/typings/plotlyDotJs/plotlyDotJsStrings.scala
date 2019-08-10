@@ -53,6 +53,9 @@ object plotlyDotJsStrings {
   sealed trait animate extends js.Object
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait applet extends js.Object
   
   @js.native
@@ -261,6 +264,9 @@ object plotlyDotJsStrings {
   
   @js.native
   sealed trait `cubic-out` extends js.Object
+  
+  @js.native
+  sealed trait d extends js.Object
   
   @js.native
   sealed trait dash extends Dash
@@ -1428,6 +1434,8 @@ object plotlyDotJsStrings {
   @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def applet: applet = "applet".asInstanceOf[applet]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
@@ -1567,6 +1575,8 @@ object plotlyDotJsStrings {
   def `cubic-in-out`: `cubic-in-out` = "cubic-in-out".asInstanceOf[`cubic-in-out`]
   @scala.inline
   def `cubic-out`: `cubic-out` = "cubic-out".asInstanceOf[`cubic-out`]
+  @scala.inline
+  def d: d = "d".asInstanceOf[d]
   @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]
   @scala.inline

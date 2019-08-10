@@ -23,7 +23,7 @@ class Gateway protected () extends CustomResource {
   def this(name: String, args: GatewayArgs) = this()
   def this(name: String, args: GatewayArgs, opts: CustomResourceOptions) = this()
   /**
-    * Gateway activation key during resource creation. Conflicts with `gateway_ip_address`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+    * Gateway activation key during resource creation. Conflicts with `gatewayIpAddress`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val activationKey: Output[String] = js.native
   /**
@@ -35,7 +35,7 @@ class Gateway protected () extends CustomResource {
     */
   val gatewayId: Output[String] = js.native
   /**
-    * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+    * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val gatewayIpAddress: Output[String] = js.native
   /**

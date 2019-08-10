@@ -10,7 +10,7 @@ trait GetSecretVersionArgs extends js.Object {
     */
   val secretId: String
   /**
-    * Specifies the unique identifier of the version of the secret that you want to retrieve. Overrides `version_stage`.
+    * Specifies the unique identifier of the version of the secret that you want to retrieve. Overrides `versionStage`.
     */
   val versionId: js.UndefOr[String] = js.undefined
   /**

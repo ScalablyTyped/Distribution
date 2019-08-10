@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait AmiFromInstanceState extends js.Object {
   /**
-    * Machine architecture for created instances. Defaults to "x86_64".
+    * Machine architecture for created instances. Defaults to "x8664".
     */
   val architecture: js.UndefOr[Input[String]] = js.undefined
   /**

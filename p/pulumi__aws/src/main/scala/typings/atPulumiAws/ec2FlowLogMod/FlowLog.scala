@@ -38,7 +38,7 @@ class FlowLog protected () extends CustomResource {
     */
   val logDestinationType: Output[js.UndefOr[String]] = js.native
   /**
-    * *Deprecated:* Use `log_destination` instead. The name of the CloudWatch log group.
+    * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
     */
   val logGroupName: Output[String] = js.native
   /**

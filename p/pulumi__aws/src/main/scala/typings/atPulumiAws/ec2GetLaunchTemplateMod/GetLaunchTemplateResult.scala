@@ -109,7 +109,7 @@ trait GetLaunchTemplateResult extends js.Object {
   val ramDiskId: String
   /**
     * A list of security group names to associate with. If you are creating Instances in a VPC, use
-    * `vpc_security_group_ids` instead.
+    * `vpcSecurityGroupIds` instead.
     */
   val securityGroupNames: js.Array[String]
   /**

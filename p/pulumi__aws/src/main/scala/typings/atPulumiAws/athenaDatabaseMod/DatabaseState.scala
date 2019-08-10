@@ -12,7 +12,7 @@ trait DatabaseState extends js.Object {
     */
   val bucket: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryption_configuration` block is documented below.
+    * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
     */
   val encryptionConfiguration: js.UndefOr[Input[Anon_EncryptionOptionKmsKey]] = js.undefined
   /**

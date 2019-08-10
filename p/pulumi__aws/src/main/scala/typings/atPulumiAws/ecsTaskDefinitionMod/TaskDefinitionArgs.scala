@@ -20,7 +20,7 @@ trait TaskDefinitionArgs extends js.Object {
     */
   val containerDefinitions: Input[String]
   /**
-    * The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+    * The number of cpu units used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
     */
   val cpu: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -36,7 +36,7 @@ trait TaskDefinitionArgs extends js.Object {
     */
   val ipcMode: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+    * The amount (in MiB) of memory used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
     */
   val memory: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait TaskDefinitionArgs extends js.Object {
     */
   val pidMode: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+    * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
     */
   val placementConstraints: js.UndefOr[Input[js.Array[Input[Anon_ExpressionTypeInput]]]] = js.undefined
   /**

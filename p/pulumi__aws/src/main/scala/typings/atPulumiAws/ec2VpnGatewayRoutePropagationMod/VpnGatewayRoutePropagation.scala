@@ -22,11 +22,11 @@ class VpnGatewayRoutePropagation protected () extends CustomResource {
   def this(name: String, args: VpnGatewayRoutePropagationArgs) = this()
   def this(name: String, args: VpnGatewayRoutePropagationArgs, opts: CustomResourceOptions) = this()
   /**
-    * The id of the `aws_route_table` to propagate routes into.
+    * The id of the `aws.ec2.RouteTable` to propagate routes into.
     */
   val routeTableId: Output[String] = js.native
   /**
-    * The id of the `aws_vpn_gateway` to propagate routes from.
+    * The id of the `aws.ec2.VpnGateway` to propagate routes from.
     */
   val vpnGatewayId: Output[String] = js.native
 }

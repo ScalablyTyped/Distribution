@@ -31,7 +31,7 @@ class LifecyclePolicy protected () extends CustomResource {
     */
   val executionRoleArn: Output[String] = js.native
   /**
-    * See the `policy_details` configuration block. Max of 1.
+    * See the `policyDetails` configuration block. Max of 1.
     */
   val policyDetails: Output[Anon_KeyResourceTypes] = js.native
   /**

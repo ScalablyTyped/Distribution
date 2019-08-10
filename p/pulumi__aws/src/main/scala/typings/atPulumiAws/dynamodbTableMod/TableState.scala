@@ -17,7 +17,7 @@ trait TableState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+    * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
     */
   val attributes: js.UndefOr[Input[js.Array[Input[Anon_NameTypeInput]]]] = js.undefined
   /**
@@ -54,7 +54,7 @@ trait TableState extends js.Object {
     */
   val rangeKey: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val readCapacity: js.UndefOr[Input[Double]] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait TableState extends js.Object {
     */
   val serverSideEncryption: js.UndefOr[Input[Anon_EnabledBooleanInput_2072549229]] = js.undefined
   /**
-    * The ARN of the Table Stream. Only available when `stream_enabled = true`
+    * The ARN of the Table Stream. Only available when `streamEnabled = true`
     */
   val streamArn: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -73,7 +73,7 @@ trait TableState extends js.Object {
     * A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
     * a unique identifier for the stream on its own. However, the combination of AWS customer ID,
     * table name and this field is guaranteed to be unique.
-    * It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
+    * It can be used for creating CloudWatch Alarms. Only available when `streamEnabled = true`
     */
   val streamLabel: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait TableState extends js.Object {
     */
   val ttl: js.UndefOr[Input[Anon_AttributeNameEnabledBoolean]] = js.undefined
   /**
-    * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+    * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */
   val writeCapacity: js.UndefOr[Input[Double]] = js.undefined
 }

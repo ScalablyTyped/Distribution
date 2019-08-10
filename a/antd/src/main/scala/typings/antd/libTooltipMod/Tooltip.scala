@@ -3,7 +3,6 @@ package typings.antd.libTooltipMod
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation._
 trait Tooltip
   extends Component[TooltipProps, js.Any, js.Any] {
   var tooltip: js.Any = js.native
-  def getDisabledCompatibleChildren(element: ReactElement): Element = js.native
   def getPlacements(): js.Any = js.native
   def getPopupDomNode(): js.Any = js.native
   def isNoTitle(): Boolean = js.native

@@ -30,7 +30,7 @@ class MaintenanceWindowTask protected () extends CustomResource {
     */
   val description: Output[js.UndefOr[String]] = js.native
   /**
-    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+    * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
   val loggingInfo: Output[js.UndefOr[Anon_S3BucketNameS3BucketPrefix]] = js.native
   /**
@@ -62,11 +62,11 @@ class MaintenanceWindowTask protected () extends CustomResource {
     */
   val taskArn: Output[String] = js.native
   /**
-    * The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+    * The parameters for task execution. This argument is conflict with `taskParameters` and `loggingInfo`.
     */
   val taskInvocationParameters: Output[js.UndefOr[Anon_AutomationParameters]] = js.native
   /**
-    * A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+    * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
   val taskParameters: Output[js.UndefOr[js.Array[Anon_NameValues]]] = js.native
   /**

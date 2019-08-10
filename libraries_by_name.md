@@ -218,7 +218,6 @@
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
-| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -4354,6 +4353,7 @@
 | [node-ral](./n/node-ral) | a rpc client for node | rpc, ral, fis |
 | [node-red](./n/node-red) | A visual tool for wiring the Internet of Things | editor, messaging, iot, flow |
 | [node-redis-pubsub](./n/node-redis-pubsub) | Redis PubSub client for Node | redis, pubsub, node, simple |
+| [node-redmine](./n/node-redmine) | node-redmine is a nodejs library which supports 10 | Redmine, nodejs, REST API |
 | [node-resque](./n/node-resque) | an opinionated implementation of resque in node | delayed, queue, resque, redis, work, worker, background, job, task |
 | [node-rsa](./n/node-rsa) | Node.js RSA library | node, rsa, crypto, assymetric, encryption, decryption, sign, verify, pkcs1, oaep, pss |
 | [node-sass](./n/node-sass) | Wrapper around libsass | css, libsass, preprocessor, sass, scss, style |
@@ -6300,7 +6300,6 @@
 | [spex](./s/spex) | Specialized Promise Extensions | promise, throttle, throttling, load balancing |
 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator | css, progress indicator, spin, spinner |
 | [split](./s/split) | split a Text Stream into a Line Stream | - |
-| [split-array-stream](./s/split-array-stream) | Safely push each item of an array to a stream | array, stream, split, push |
 | [split-at](./s/split-at) | Split a string at one or more indices | split, cut, at, string, text, index, indexes, indices |
 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given s | split, string, first, occurrence, separator, delimiter, text |
 | [split2](./s/split2) | split a Text Stream into a Line Stream, using Stre | - |
@@ -6811,6 +6810,7 @@
 | [ui-grid](./u/ui-grid) | Placeholder for Angular UI-Grid | - |
 | [ui-router-extras](./u/ui-router-extras) | UI-Router Extras: Sticky states, Future States, De | - |
 | [ui-select](./u/ui-select) | - | - |
+| [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs | random, generator, uid, safe |
 | [uid2](./u/uid2) | strong uid | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |

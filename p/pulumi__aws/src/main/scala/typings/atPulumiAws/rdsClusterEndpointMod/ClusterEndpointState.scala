@@ -27,11 +27,11 @@ trait ClusterEndpointState extends js.Object {
     */
   val endpoint: js.UndefOr[Input[String]] = js.undefined
   /**
-    * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `static_members`.
+    * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `staticMembers`.
     */
   val excludedMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excluded_members`.
+    * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excludedMembers`.
     */
   val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }

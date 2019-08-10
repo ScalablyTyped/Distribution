@@ -85,7 +85,7 @@ trait ClusterState extends js.Object {
     */
   val enhancedVpcRouting: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skip_final_snapshot` must be false.
+    * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skipFinalSnapshot` must be false.
     */
   val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -93,7 +93,7 @@ trait ClusterState extends js.Object {
     */
   val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**

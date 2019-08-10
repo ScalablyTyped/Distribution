@@ -11,11 +11,11 @@ trait CertificateArgs extends js.Object {
     */
   val certificateId: Input[String]
   /**
-    * The contents of the .pem X.509 certificate file for the certificate. Either `certificate_pem` or `certificate_wallet` must be set.
+    * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
     */
   val certificatePem: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The contents of the Oracle Wallet certificate for use with SSL. Either `certificate_pem` or `certificate_wallet` must be set.
+    * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
     */
   val certificateWallet: js.UndefOr[Input[String]] = js.undefined
 }

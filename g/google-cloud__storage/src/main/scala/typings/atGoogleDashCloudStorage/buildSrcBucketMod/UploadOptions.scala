@@ -18,6 +18,7 @@ trait UploadOptions extends CreateWriteStreamOptions {
 object UploadOptions {
   @scala.inline
   def apply(
+    configPath: String = null,
     contentType: String = null,
     destination: String | File = null,
     encryptionKey: String | Buffer = null,
@@ -35,6 +36,7 @@ object UploadOptions {
     validation: String | Boolean = null
   ): UploadOptions = {
     val __obj = js.Dynamic.literal()
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])

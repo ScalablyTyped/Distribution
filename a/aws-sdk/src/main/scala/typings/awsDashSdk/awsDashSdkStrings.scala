@@ -950,7 +950,10 @@ import typings.awsDashSdk.clientsLexmodelbuildingserviceMod._ProcessBehavior
 import typings.awsDashSdk.clientsLexmodelbuildingserviceMod._SlotConstraint
 import typings.awsDashSdk.clientsLexmodelbuildingserviceMod._SlotValueSelectionStrategy
 import typings.awsDashSdk.clientsLexmodelbuildingserviceMod._StatusType
+import typings.awsDashSdk.clientsLexruntimeMod._ConfirmationStatus
+import typings.awsDashSdk.clientsLexruntimeMod._DialogActionType
 import typings.awsDashSdk.clientsLexruntimeMod._DialogState
+import typings.awsDashSdk.clientsLexruntimeMod._FulfillmentState
 import typings.awsDashSdk.clientsLexruntimeMod._MessageFormatType
 import typings.awsDashSdk.clientsLicensemanagerMod._InventoryFilterCondition
 import typings.awsDashSdk.clientsLicensemanagerMod._LicenseConfigurationStatus
@@ -1043,6 +1046,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._CaptionSourceType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafClientCache
 import typings.awsDashSdk.clientsMediaconvertMod._CmafCodecSpecification
 import typings.awsDashSdk.clientsMediaconvertMod._CmafInitializationVectorInManifest
+import typings.awsDashSdk.clientsMediaconvertMod._CmafKeyProviderType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafManifestCompression
 import typings.awsDashSdk.clientsMediaconvertMod._CmafManifestDurationFormat
 import typings.awsDashSdk.clientsMediaconvertMod._CmafSegmentControl
@@ -1235,6 +1239,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._S3ServerSideEncryptionType
 import typings.awsDashSdk.clientsMediaconvertMod._ScalingBehavior
 import typings.awsDashSdk.clientsMediaconvertMod._SccDestinationFramerate
 import typings.awsDashSdk.clientsMediaconvertMod._StatusUpdateInterval
+import typings.awsDashSdk.clientsMediaconvertMod._TeletextPageType
 import typings.awsDashSdk.clientsMediaconvertMod._TimecodeBurninPosition
 import typings.awsDashSdk.clientsMediaconvertMod._TimecodeSource
 import typings.awsDashSdk.clientsMediaconvertMod._TimedMetadata
@@ -6673,6 +6678,9 @@ object awsDashSdkStrings {
   sealed trait ClientTLSNegotiationErrorCount extends _LoadBalancerMetricName
   
   @js.native
+  sealed trait Close extends _DialogActionType
+  
+  @js.native
   sealed trait CloseInstancePublicPorts
     extends typings.awsDashSdk.clientsLightsailMod._OperationType
   
@@ -6779,7 +6787,12 @@ object awsDashSdkStrings {
   sealed trait ConfigurationUpdate extends _HistoryItemType
   
   @js.native
-  sealed trait ConfirmIntent extends _DialogState
+  sealed trait ConfirmIntent
+    extends _DialogActionType
+       with _DialogState
+  
+  @js.native
+  sealed trait Confirmed extends _ConfirmationStatus
   
   @js.native
   sealed trait Conflict
@@ -8144,6 +8157,9 @@ object awsDashSdkStrings {
   sealed trait Delayed extends _CommandInvocationStatus
   
   @js.native
+  sealed trait Delegate extends _DialogActionType
+  
+  @js.native
   sealed trait DeleteDisk
     extends typings.awsDashSdk.clientsLightsailMod._OperationType
   
@@ -8235,6 +8251,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait Delivery
     extends typings.awsDashSdk.clientsSesMod._NotificationType
+  
+  @js.native
+  sealed trait Denied extends _ConfirmationStatus
   
   @js.native
   sealed trait Deny extends _AmbiguousRoleResolutionType
@@ -9120,10 +9139,14 @@ object awsDashSdkStrings {
   sealed trait ElbDOTRegistrationInProgress extends _TargetHealthReasonEnum
   
   @js.native
-  sealed trait ElicitIntent extends _DialogState
+  sealed trait ElicitIntent
+    extends _DialogActionType
+       with _DialogState
   
   @js.native
-  sealed trait ElicitSlot extends _DialogState
+  sealed trait ElicitSlot
+    extends _DialogActionType
+       with _DialogState
   
   @js.native
   sealed trait Email extends _NotificationTransport
@@ -10025,6 +10048,7 @@ object awsDashSdkStrings {
        with _DomainControllerStatus
        with _EmailStatus
        with _EndpointStatus
+       with _FulfillmentState
        with _HyperParameterTuningJobStatus
        with typings.awsDashSdk.clientsCodedeployMod._InstanceStatus
        with _InviteStatus
@@ -10161,7 +10185,9 @@ object awsDashSdkStrings {
   sealed trait FreeText extends _ParameterType
   
   @js.native
-  sealed trait Fulfilled extends _DialogState
+  sealed trait Fulfilled
+    extends _DialogState
+       with _FulfillmentState
   
   @js.native
   sealed trait FullProtection extends _ProtectionPolicy
@@ -14877,6 +14903,7 @@ object awsDashSdkStrings {
   sealed trait None
     extends _AssemblyType
        with typings.awsDashSdk.clientsSagemakerMod._CompressionType
+       with _ConfirmationStatus
        with _JoinSource
        with typings.awsDashSdk.clientsLambdaMod._LogType
        with _MetricUnit
@@ -15422,6 +15449,21 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait PAGE extends _BlockType
+  
+  @js.native
+  sealed trait PAGE_TYPE_ADDL_INFO extends _TeletextPageType
+  
+  @js.native
+  sealed trait PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE extends _TeletextPageType
+  
+  @js.native
+  sealed trait PAGE_TYPE_INITIAL extends _TeletextPageType
+  
+  @js.native
+  sealed trait PAGE_TYPE_PROGRAM_SCHEDULE extends _TeletextPageType
+  
+  @js.native
+  sealed trait PAGE_TYPE_SUBTITLE extends _TeletextPageType
   
   @js.native
   sealed trait PAN extends _LanguageCode
@@ -17428,7 +17470,9 @@ object awsDashSdkStrings {
        with _TargetStatus
   
   @js.native
-  sealed trait ReadyForFulfillment extends _DialogState
+  sealed trait ReadyForFulfillment
+    extends _DialogState
+       with _FulfillmentState
   
   @js.native
   sealed trait RealtimeEndpointStatus extends _MLModelFilterVariable
@@ -18587,7 +18631,9 @@ object awsDashSdkStrings {
        with _Eac3DynamicRangeCompressionRf
   
   @js.native
-  sealed trait SPEKE extends _HlsKeyProviderType
+  sealed trait SPEKE
+    extends _CmafKeyProviderType
+       with _HlsKeyProviderType
   
   @js.native
   sealed trait SPF extends _RRType
@@ -18804,7 +18850,9 @@ object awsDashSdkStrings {
        with _Mpeg2DynamicSubGop
   
   @js.native
-  sealed trait STATIC_KEY extends _HlsKeyProviderType
+  sealed trait STATIC_KEY
+    extends _CmafKeyProviderType
+       with _HlsKeyProviderType
   
   @js.native
   sealed trait STATISTICS extends _ClusterField
@@ -19822,7 +19870,7 @@ object awsDashSdkStrings {
        with _CaptionSourceType
   
   @js.native
-  sealed trait TEMPORAL extends js.Object
+  sealed trait TEMPORAL extends _NoiseReducerFilter
   
   @js.native
   sealed trait TEMPORARY_FAILURE
@@ -20247,6 +20295,11 @@ object awsDashSdkStrings {
   @js.native
   sealed trait TRANSITIONING
     extends typings.awsDashSdk.clientsGlueMod._ScheduleState
+  
+  @js.native
+  sealed trait TRANSITION_DETECTION
+    extends _H264SceneChangeDetect
+       with _H265SceneChangeDetect
   
   @js.native
   sealed trait TREATMENT_NAME extends _EntitySubType
@@ -30195,6 +30248,8 @@ object awsDashSdkStrings {
   @scala.inline
   def ClientTLSNegotiationErrorCount: ClientTLSNegotiationErrorCount = "ClientTLSNegotiationErrorCount".asInstanceOf[ClientTLSNegotiationErrorCount]
   @scala.inline
+  def Close: Close = "Close".asInstanceOf[Close]
+  @scala.inline
   def CloseInstancePublicPorts: CloseInstancePublicPorts = "CloseInstancePublicPorts".asInstanceOf[CloseInstancePublicPorts]
   @scala.inline
   def CloudFormationStackRecord: CloudFormationStackRecord = "CloudFormationStackRecord".asInstanceOf[CloudFormationStackRecord]
@@ -30242,6 +30297,8 @@ object awsDashSdkStrings {
   def ConfigurationUpdate: ConfigurationUpdate = "ConfigurationUpdate".asInstanceOf[ConfigurationUpdate]
   @scala.inline
   def ConfirmIntent: ConfirmIntent = "ConfirmIntent".asInstanceOf[ConfirmIntent]
+  @scala.inline
+  def Confirmed: Confirmed = "Confirmed".asInstanceOf[Confirmed]
   @scala.inline
   def Conflict: Conflict = "Conflict".asInstanceOf[Conflict]
   @scala.inline
@@ -30831,6 +30888,8 @@ object awsDashSdkStrings {
   @scala.inline
   def Delayed: Delayed = "Delayed".asInstanceOf[Delayed]
   @scala.inline
+  def Delegate: Delegate = "Delegate".asInstanceOf[Delegate]
+  @scala.inline
   def DeleteDisk: DeleteDisk = "DeleteDisk".asInstanceOf[DeleteDisk]
   @scala.inline
   def DeleteDiskSnapshot: DeleteDiskSnapshot = "DeleteDiskSnapshot".asInstanceOf[DeleteDiskSnapshot]
@@ -30870,6 +30929,8 @@ object awsDashSdkStrings {
   def DeletionPolicy: DeletionPolicy = "DeletionPolicy".asInstanceOf[DeletionPolicy]
   @scala.inline
   def Delivery: Delivery = "Delivery".asInstanceOf[Delivery]
+  @scala.inline
+  def Denied: Denied = "Denied".asInstanceOf[Denied]
   @scala.inline
   def Deny: Deny = "Deny".asInstanceOf[Deny]
   @scala.inline
@@ -34209,6 +34270,16 @@ object awsDashSdkStrings {
   @scala.inline
   def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
   @scala.inline
+  def PAGE_TYPE_ADDL_INFO: PAGE_TYPE_ADDL_INFO = "PAGE_TYPE_ADDL_INFO".asInstanceOf[PAGE_TYPE_ADDL_INFO]
+  @scala.inline
+  def PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE: PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE = "PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE".asInstanceOf[PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE]
+  @scala.inline
+  def PAGE_TYPE_INITIAL: PAGE_TYPE_INITIAL = "PAGE_TYPE_INITIAL".asInstanceOf[PAGE_TYPE_INITIAL]
+  @scala.inline
+  def PAGE_TYPE_PROGRAM_SCHEDULE: PAGE_TYPE_PROGRAM_SCHEDULE = "PAGE_TYPE_PROGRAM_SCHEDULE".asInstanceOf[PAGE_TYPE_PROGRAM_SCHEDULE]
+  @scala.inline
+  def PAGE_TYPE_SUBTITLE: PAGE_TYPE_SUBTITLE = "PAGE_TYPE_SUBTITLE".asInstanceOf[PAGE_TYPE_SUBTITLE]
+  @scala.inline
   def PAN: PAN = "PAN".asInstanceOf[PAN]
   @scala.inline
   def PAP: PAP = "PAP".asInstanceOf[PAP]
@@ -36578,6 +36649,8 @@ object awsDashSdkStrings {
   def TRANSFORM_TYPE: TRANSFORM_TYPE = "TRANSFORM_TYPE".asInstanceOf[TRANSFORM_TYPE]
   @scala.inline
   def TRANSITIONING: TRANSITIONING = "TRANSITIONING".asInstanceOf[TRANSITIONING]
+  @scala.inline
+  def TRANSITION_DETECTION: TRANSITION_DETECTION = "TRANSITION_DETECTION".asInstanceOf[TRANSITION_DETECTION]
   @scala.inline
   def TREATMENT_NAME: TREATMENT_NAME = "TREATMENT_NAME".asInstanceOf[TREATMENT_NAME]
   @scala.inline

@@ -23,7 +23,7 @@ class Webhook protected () extends CustomResource {
   def this(name: String, args: WebhookArgs) = this()
   def this(name: String, args: WebhookArgs, opts: CustomResourceOptions) = this()
   /**
-    * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filter_group` over `branch_filter`.
+    * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
     */
   val branchFilter: Output[js.UndefOr[String]] = js.native
   /**

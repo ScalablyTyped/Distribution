@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait InstanceState extends js.Object {
   /**
     * The ARN of the Lightsail instance (matches `id`).
-    * * `availability_zone`
-    * * `blueprint_id`
-    * * `bundle_id`
-    * * `key_pair_name`
-    * * `user_data`
+    * * `availabilityZone`
+    * * `blueprintId`
+    * * `bundleId`
+    * * `keyPairName`
+    * * `userData`
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -36,7 +36,7 @@ trait InstanceState extends js.Object {
   val isStaticIp: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * The name of your key pair. Created in the
-    * Lightsail console (cannot use `aws_key_pair` at this time)
+    * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
     */
   val keyPairName: js.UndefOr[Input[String]] = js.undefined
   /**

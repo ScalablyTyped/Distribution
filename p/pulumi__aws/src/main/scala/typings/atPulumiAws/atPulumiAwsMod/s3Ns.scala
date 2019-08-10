@@ -19,6 +19,8 @@ import typings.atPulumiAws.s3GetBucketMod.GetBucketArgs
 import typings.atPulumiAws.s3GetBucketMod.GetBucketResult
 import typings.atPulumiAws.s3GetBucketObjectMod.GetBucketObjectArgs
 import typings.atPulumiAws.s3GetBucketObjectMod.GetBucketObjectResult
+import typings.atPulumiAws.s3GetBucketObjectsMod.GetBucketObjectsArgs
+import typings.atPulumiAws.s3GetBucketObjectsMod.GetBucketObjectsResult
 import typings.atPulumiAws.s3InventoryMod.InventoryArgs
 import typings.atPulumiAws.s3InventoryMod.InventoryState
 import typings.atPulumiAws.s3S3MixinsMod.BucketEventHandler
@@ -179,6 +181,8 @@ object s3Ns extends js.Object {
   def getBucket(args: GetBucketArgs, opts: InvokeOptions): js.Promise[GetBucketResult] with GetBucketResult = js.native
   def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] with GetBucketObjectResult = js.native
   def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] with GetBucketObjectResult = js.native
+  def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] with GetBucketObjectsResult = js.native
+  def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] with GetBucketObjectsResult = js.native
   /* static members */
   @js.native
   object AccountPublicAccessBlock extends js.Object {

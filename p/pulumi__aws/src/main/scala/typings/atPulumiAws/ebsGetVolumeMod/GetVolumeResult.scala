@@ -38,7 +38,7 @@ trait GetVolumeResult extends js.Object {
     */
   val size: Double
   /**
-    * The snapshot_id the EBS volume is based off.
+    * The snapshotId the EBS volume is based off.
     */
   val snapshotId: String
   /**

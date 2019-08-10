@@ -4150,7 +4150,6 @@
 | 11 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment.
 | 11 | [slideout](./s/slideout) | A touch slideout navigation menu for your mobile w
 | 11 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster
-| 11 | [split-array-stream](./s/split-array-stream) | Safely push each item of an array to a stream
 | 11 | [sql-bricks](./s/sql-bricks) | Transparent, Schemaless SQL Generation
 | 11 | [styletron-engine-atomic](./s/styletron-engine-atomic) | Universal, high-performance JavaScript styles
 | 11 | [telebot](./t/telebot) | The easy way to write Telegram bots.
@@ -4159,6 +4158,7 @@
 | 11 | [tingle_dot_js](./t/tingle_dot_js) | A simple modal plugin written in pure JavaScript
 | 11 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 11 | [ui-router-extras](./u/ui-router-extras) | UI-Router Extras: Sticky states, Future States, De
+| 11 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U
 | 11 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS
 | 11 | [webpack-fail-plugin](./w/webpack-fail-plugin) | Webpack plugin that makes the process return an er
 | 11 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
@@ -4894,6 +4894,7 @@
 | 5 | [net-keepalive](./n/net-keepalive) | Provides high-level access to socket options like 
 | 5 | [nivo__scales](./n/nivo__scales) | -
 | 5 | [nivo__voronoi](./n/nivo__voronoi) | -
+| 5 | [node-redmine](./n/node-redmine) | node-redmine is a nodejs library which supports 10
 | 5 | [node-zopfli-es](./n/node-zopfli-es) | Bindings for Zopfli compressing lib. Compress gzip
 | 5 | [notifyjs](./n/notifyjs) | A handy wrapper for the Web Notifications API
 | 5 | [npm-list-author-packages](./n/npm-list-author-packages) | List an author's packages.

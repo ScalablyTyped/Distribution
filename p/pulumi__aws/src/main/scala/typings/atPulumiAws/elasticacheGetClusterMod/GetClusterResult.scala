@@ -13,7 +13,7 @@ trait GetClusterResult extends js.Object {
     */
   val availabilityZone: String
   /**
-    * List of node objects including `id`, `address`, `port` and `availability_zone`.
+    * List of node objects including `id`, `address`, `port` and `availabilityZone`.
     * Referenceable e.g. as `${data.aws_elasticache_cluster.bar.cache_nodes.0.address}`
     */
   val cacheNodes: js.Array[Anon_Address]

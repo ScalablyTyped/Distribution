@@ -34,7 +34,7 @@ trait ZoneState extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
-    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegation_set_id` argument in this resource and any [`aws_route53_zone_association` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
+    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
   val vpcs: js.UndefOr[Input[js.Array[Input[Anon_VpcIdVpcRegion]]]] = js.undefined
   /**

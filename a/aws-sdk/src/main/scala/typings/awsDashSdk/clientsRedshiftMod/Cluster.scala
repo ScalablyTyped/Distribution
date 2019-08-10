@@ -98,6 +98,14 @@ trait Cluster extends js.Object {
     */
   var EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined
   /**
+    * The date and time when the next snapshot is expected to be taken for clusters with a valid snapshot schedule and backups enabled. 
+    */
+  var ExpectedNextSnapshotScheduleTime: js.UndefOr[TStamp] = js.undefined
+  /**
+    *  The status of next expected snapshot for clusters having a valid snapshot schedule and backups enabled. Possible values are the following:   OnTrack - The next snapshot is expected to be taken on time.    Pending - The next snapshot is pending to be taken.   
+    */
+  var ExpectedNextSnapshotScheduleTimeStatus: js.UndefOr[String] = js.undefined
+  /**
     * A value that reports whether the Amazon Redshift cluster has finished applying any hardware security module (HSM) settings changes specified in a modify cluster command. Values: active, applying
     */
   var HsmStatus: js.UndefOr[typings.awsDashSdk.clientsRedshiftMod.HsmStatus] = js.undefined
@@ -205,6 +213,8 @@ object Cluster {
     Encrypted: js.UndefOr[Boolean] = js.undefined,
     Endpoint: Endpoint = null,
     EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined,
+    ExpectedNextSnapshotScheduleTime: TStamp = null,
+    ExpectedNextSnapshotScheduleTimeStatus: String = null,
     HsmStatus: HsmStatus = null,
     IamRoles: ClusterIamRoleList = null,
     KmsKeyId: String = null,
@@ -250,6 +260,8 @@ object Cluster {
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint)
     if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting)
+    if (ExpectedNextSnapshotScheduleTime != null) __obj.updateDynamic("ExpectedNextSnapshotScheduleTime")(ExpectedNextSnapshotScheduleTime)
+    if (ExpectedNextSnapshotScheduleTimeStatus != null) __obj.updateDynamic("ExpectedNextSnapshotScheduleTimeStatus")(ExpectedNextSnapshotScheduleTimeStatus)
     if (HsmStatus != null) __obj.updateDynamic("HsmStatus")(HsmStatus)
     if (IamRoles != null) __obj.updateDynamic("IamRoles")(IamRoles)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)

@@ -71,6 +71,9 @@ object LinkedListNs extends js.Object {
     * @param values - The iterable or array-like object of interest.
     *
     * @returns A new linked list initialized with the given values.
+    *
+    * #### Complexity
+    * Linear.
     */
   def from[T](values: IterableOrArrayLike[T]): typings.atPhosphorCollections.libLinkedlistMod.LinkedList[T] = js.native
 }

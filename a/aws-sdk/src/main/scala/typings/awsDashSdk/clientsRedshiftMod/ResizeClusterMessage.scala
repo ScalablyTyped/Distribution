@@ -18,7 +18,7 @@ trait ResizeClusterMessage extends js.Object {
     */
   var ClusterType: js.UndefOr[String] = js.undefined
   /**
-    * The new node type for the nodes you are adding.
+    * The new node type for the nodes you are adding. If not specified, the cluster's current node type is used.
     */
   var NodeType: js.UndefOr[String] = js.undefined
   /**

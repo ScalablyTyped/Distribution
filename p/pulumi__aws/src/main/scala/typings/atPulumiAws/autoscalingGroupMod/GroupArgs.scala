@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 trait GroupArgs extends js.Object {
   /**
-    * A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+    * A list of one or more availability zones for the group. This parameter should not be specified when using `vpcZoneIdentifier`.
     */
   val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait GroupArgs extends js.Object {
   val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
   /**
     * A list of metrics to collect. The allowed values are `GroupMinSize`, `GroupMaxSize`, `GroupDesiredCapacity`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupTerminatingInstances`, `GroupTotalInstances`.
-    * * `wait_for_capacity_timeout` (Default: "10m") A maximum
+    * * `waitForCapacityTimeout` (Default: "10m") A maximum
     * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
     * wait for ASG instances to be healthy before timing out.  (See also Waiting
     * for Capacity below.) Setting this to "0" causes
@@ -59,9 +59,9 @@ trait GroupArgs extends js.Object {
     * [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
     * to attach to the autoscaling group **before** instances are launched. The
     * syntax is exactly the same as the separate
-    * [`aws_autoscaling_lifecycle_hook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hooks.html)
-    * resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
-    * a new autoscaling group. For all other use-cases, please use `aws_autoscaling_lifecycle_hook` resource.
+    * [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hooks.html)
+    * resource, without the `autoscalingGroupName` attribute. Please note that this will only work when creating
+    * a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
     */
   val initialLifecycleHooks: js.UndefOr[Input[js.Array[Input[Anon_DefaultResultHeartbeatTimeout]]]] = js.undefined
   /**
@@ -74,7 +74,7 @@ trait GroupArgs extends js.Object {
   val launchTemplate: js.UndefOr[Input[Anon_IdName]] = js.undefined
   /**
     * A list of elastic load balancer names to add to the autoscaling
-    * group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
+    * group names. Only valid for classic load balancers. For ALBs, use `targetGroupArns` instead.
     */
   val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -138,7 +138,7 @@ trait GroupArgs extends js.Object {
     */
   val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[_]]]]] = js.undefined
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with Application or Network Load Balancing.
+    * A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
     */
   val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -154,7 +154,7 @@ trait GroupArgs extends js.Object {
     * Setting this will cause this provider to wait
     * for exactly this number of healthy instances from this autoscaling group in
     * all attached load balancers on both create and update operations. (Takes
-    * precedence over `min_elb_capacity` behavior.)
+    * precedence over `minElbCapacity` behavior.)
     * (See also Waiting for Capacity below.)
     */
   val waitForElbCapacity: js.UndefOr[Input[Double]] = js.undefined

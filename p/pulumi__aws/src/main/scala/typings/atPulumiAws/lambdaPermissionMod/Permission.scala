@@ -63,7 +63,7 @@ class Permission protected () extends CustomResource {
     */
   val statementId: Output[String] = js.native
   /**
-    * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statement_id`.
+    * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statementId`.
     */
   val statementIdPrefix: Output[js.UndefOr[String]] = js.native
 }

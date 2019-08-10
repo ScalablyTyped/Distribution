@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cheerio"
-version := "v0.22.0-dt-20190703Z-f561b2"
+version := "v0.22.0-dt-20190809Z-7e5ae5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

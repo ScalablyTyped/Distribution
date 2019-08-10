@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__algorithm
 
-Typings are for version 1.1.3
+Typings are for version 1.2.0
 
 ## Library description:
 PhosphorJS - Algorithms and Iterators

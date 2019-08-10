@@ -20,7 +20,7 @@ trait VolumeArgs extends js.Object {
     */
   val iops: js.UndefOr[Input[Double]] = js.undefined
   /**
-    * The ARN for the KMS encryption key. When specifying `kms_key_id`, `encrypted` needs to be set to true.
+    * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**

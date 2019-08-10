@@ -37,7 +37,7 @@ class UserPool protected () extends CustomResource {
     */
   val adminCreateUserConfig: Output[Anon_AllowAdminCreateUserOnly] = js.native
   /**
-    * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `username_attributes`.
+    * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
     */
   val aliasAttributes: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -61,11 +61,11 @@ class UserPool protected () extends CustomResource {
     */
   val emailConfiguration: Output[js.UndefOr[Anon_EmailSendingAccount]] = js.native
   /**
-    * A string representing the email verification message. Conflicts with `verification_message_template` configuration block `email_message` argument.
+    * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
     */
   val emailVerificationMessage: Output[String] = js.native
   /**
-    * A string representing the email verification subject. Conflicts with `verification_message_template` configuration block `email_subject` argument.
+    * A string representing the email verification subject. Conflicts with `verificationMessageTemplate` configuration block `emailSubject` argument.
     */
   val emailVerificationSubject: Output[String] = js.native
   /**
@@ -105,7 +105,7 @@ class UserPool protected () extends CustomResource {
     */
   val smsConfiguration: Output[js.UndefOr[Anon_ExternalId]] = js.native
   /**
-    * A string representing the SMS verification message. Conflicts with `verification_message_template` configuration block `sms_message` argument.
+    * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
   val smsVerificationMessage: Output[js.UndefOr[String]] = js.native
   /**
@@ -117,7 +117,7 @@ class UserPool protected () extends CustomResource {
     */
   val userPoolAddOns: Output[js.UndefOr[Anon_AdvancedSecurityMode]] = js.native
   /**
-    * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `alias_attributes`.
+    * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
   val usernameAttributes: Output[js.UndefOr[js.Array[String]]] = js.native
   /**

@@ -1,6 +1,7 @@
 package typings.atPulumiAws.efsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.Anon_TransitionToIaInput
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,11 +32,15 @@ trait FileSystemState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**
+    * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object (documented below).
+    */
+  val lifecyclePolicy: js.UndefOr[Input[Anon_TransitionToIaInput]] = js.undefined
+  /**
     * The file system performance mode. Can be either `"generalPurpose"` or `"maxIO"` (Default: `"generalPurpose"`).
     */
   val performanceMode: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The throughput, measured in MiB/s, that you want to provision for the file system. Only applicable with `throughput_mode` set to `provisioned`.
+    * The throughput, measured in MiB/s, that you want to provision for the file system. Only applicable with `throughputMode` set to `provisioned`.
     */
   val provisionedThroughputInMibps: js.UndefOr[Input[Double]] = js.undefined
   /**
@@ -43,7 +48,7 @@ trait FileSystemState extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
-    * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisioned_throughput_in_mibps`.
+    * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisionedThroughputInMibps`.
     */
   val throughputMode: js.UndefOr[Input[String]] = js.undefined
 }
@@ -56,6 +61,7 @@ object FileSystemState {
     dnsName: Input[String] = null,
     encrypted: Input[Boolean] = null,
     kmsKeyId: Input[String] = null,
+    lifecyclePolicy: Input[Anon_TransitionToIaInput] = null,
     performanceMode: Input[String] = null,
     provisionedThroughputInMibps: Input[Double] = null,
     tags: Input[StringDictionary[_]] = null,
@@ -67,6 +73,7 @@ object FileSystemState {
     if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (lifecyclePolicy != null) __obj.updateDynamic("lifecyclePolicy")(lifecyclePolicy.asInstanceOf[js.Any])
     if (performanceMode != null) __obj.updateDynamic("performanceMode")(performanceMode.asInstanceOf[js.Any])
     if (provisionedThroughputInMibps != null) __obj.updateDynamic("provisionedThroughputInMibps")(provisionedThroughputInMibps.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

@@ -698,7 +698,7 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotSchedulesOutputMessage, Unit]
   ): Request[DescribeSnapshotSchedulesOutputMessage, AWSError] = js.native
   /**
-    * Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.
+    * Returns the total amount of snapshot usage and provisioned storage in megabytes.
     */
   def describeStorage(): Request[CustomerStorageMessage, AWSError] = js.native
   def describeStorage(callback: js.Function2[/* err */ AWSError, /* data */ CustomerStorageMessage, Unit]): Request[CustomerStorageMessage, AWSError] = js.native

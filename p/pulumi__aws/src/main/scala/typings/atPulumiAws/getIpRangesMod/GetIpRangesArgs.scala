@@ -13,7 +13,7 @@ trait GetIpRangesArgs extends js.Object {
   val regions: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Filter IP ranges by services. Valid items are `amazon`
-    * (for amazon.com), `cloudfront`, `codebuild`, `ec2`, `route53`, `route53_healthchecks` and `S3`.
+    * (for amazon.com), `cloudfront`, `codebuild`, `ec2`, `route53`, `route53Healthchecks` and `S3`.
     */
   val services: js.Array[String]
   /**

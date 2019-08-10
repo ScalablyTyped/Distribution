@@ -25,7 +25,7 @@ class AmiCopy protected () extends CustomResource {
   def this(name: String, args: AmiCopyArgs) = this()
   def this(name: String, args: AmiCopyArgs, opts: CustomResourceOptions) = this()
   /**
-    * Machine architecture for created instances. Defaults to "x86_64".
+    * Machine architecture for created instances. Defaults to "x8664".
     */
   val architecture: Output[String] = js.native
   /**
@@ -81,7 +81,7 @@ class AmiCopy protected () extends CustomResource {
   val rootSnapshotId: Output[String] = js.native
   /**
     * The id of the AMI to copy. This id must be valid in the region
-    * given by `source_ami_region`.
+    * given by `sourceAmiRegion`.
     */
   val sourceAmiId: Output[String] = js.native
   /**

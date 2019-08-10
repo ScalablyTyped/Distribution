@@ -1,8 +1,10 @@
 package typings.emscripten.FSNs
 
-import typings.emscripten.Anon_Encoding
+import typings.emscripten.Anon_Binary
+import typings.emscripten.Anon_Flags
 import typings.emscripten.EmscriptenNs.FileSystemType
 import typings.std.ArrayBufferView
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,11 +111,18 @@ object ^ extends js.Object {
   def fchown(fd: Double, uid: Double, gid: Double): Unit = js.native
   def ftruncate(fd: Double, len: Double): Unit = js.native
   def getPath(node: FSNode): String = js.native
+  def init(): Unit = js.native
+  def init(input: js.Function0[Double | Null]): Unit = js.native
+  def init(input: js.Function0[Double | Null], output: js.Function1[/* c */ Double, _]): Unit = js.native
   def init(
-    input: js.Function0[Double],
+    input: js.Function0[Double | Null],
     output: js.Function1[/* c */ Double, _],
     error: js.Function1[/* c */ Double, _]
   ): Unit = js.native
+  def init(input: js.Function0[Double | Null], output: Null, error: js.Function1[/* c */ Double, _]): Unit = js.native
+  def init(input: Null, output: js.Function1[/* c */ Double, _]): Unit = js.native
+  def init(input: Null, output: js.Function1[/* c */ Double, _], error: js.Function1[/* c */ Double, _]): Unit = js.native
+  def init(input: Null, output: Null, error: js.Function1[/* c */ Double, _]): Unit = js.native
   def ioctl(stream: FSStream, cmd: js.Any, arg: js.Any): js.Any = js.native
   def isBlkdev(mode: Double): Boolean = js.native
   def isChrdev(mode: Double): Boolean = js.native
@@ -160,8 +169,8 @@ object ^ extends js.Object {
   def open(path: String, flags: String, mode: Double, fd_start: Double, fd_end: Double): FSStream = js.native
   def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  def readFile(path: String): js.Any = js.native
-  def readFile(path: String, opts: Anon_Encoding): js.Any = js.native
+  def readFile(path: String): String | Uint8Array = js.native
+  def readFile(path: String, opts: Anon_Binary): String | Uint8Array = js.native
   def readdir(path: String): js.Any = js.native
   def readlink(path: String): String = js.native
   def registerDevice(dev: Double, ops: js.Any): Unit = js.native
@@ -191,8 +200,8 @@ object ^ extends js.Object {
     canOwn: Boolean
   ): Double = js.native
   def writeFile(path: String, data: String): Unit = js.native
-  def writeFile(path: String, data: String, opts: Anon_Encoding): Unit = js.native
+  def writeFile(path: String, data: String, opts: Anon_Flags): Unit = js.native
   def writeFile(path: String, data: ArrayBufferView): Unit = js.native
-  def writeFile(path: String, data: ArrayBufferView, opts: Anon_Encoding): Unit = js.native
+  def writeFile(path: String, data: ArrayBufferView, opts: Anon_Flags): Unit = js.native
 }
 

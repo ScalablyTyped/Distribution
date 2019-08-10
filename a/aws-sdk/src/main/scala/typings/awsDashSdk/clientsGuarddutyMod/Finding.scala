@@ -6,63 +6,57 @@ import scala.scalajs.js.annotation._
 
 trait Finding extends js.Object {
   /**
-    * AWS account ID where the activity occurred that prompted GuardDuty to generate a finding.
+    * The ID of the account in which the finding was generated.
     */
   var AccountId: String
   /**
-    * The ARN of a finding described by the action.
+    * The ARN for the finding.
     */
   var Arn: String
   /**
-    * The confidence level of a finding.
+    * The confidence score for the finding.
     */
   var Confidence: js.UndefOr[Double] = js.undefined
   /**
-    * The time stamp at which a finding was generated.
+    * The time and date at which the finding was created.
     */
   var CreatedAt: String
   /**
-    * The description of a finding.
+    * The description of the finding.
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    * The identifier that corresponds to a finding described by the action.
+    * The ID of the finding.
     */
   var Id: String
   /**
-    * The AWS resource partition.
+    * The partition associated with the finding.
     */
   var Partition: js.UndefOr[String] = js.undefined
   /**
-    * The AWS region where the activity occurred that prompted GuardDuty to generate a finding.
+    * The Region in which the finding was generated.
     */
   var Region: String
-  /**
-    * The AWS resource associated with the activity that prompted GuardDuty to generate a finding.
-    */
   var Resource: typings.awsDashSdk.clientsGuarddutyMod.Resource
   /**
-    * Findings' schema version.
+    * The version of the schema used for the finding.
     */
   var SchemaVersion: String
-  /**
-    * Additional information assigned to the generated finding by GuardDuty.
-    */
   var Service: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Service] = js.undefined
   /**
-    * The severity of a finding.
+    * The severity of the finding.
     */
   var Severity: Double
   /**
-    * The title of a finding.
+    * The title for the finding.
     */
   var Title: js.UndefOr[String] = js.undefined
   /**
-    * The type of a finding described by the action.
+    * The type of the finding.
     */
   var Type: FindingType
   /**
-    * The time stamp at which a finding was last updated.
+    * The time and date at which the finding was laste updated.
     */
   var UpdatedAt: String
 }

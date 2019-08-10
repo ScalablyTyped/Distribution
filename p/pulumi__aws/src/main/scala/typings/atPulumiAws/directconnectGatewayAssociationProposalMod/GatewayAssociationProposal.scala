@@ -46,7 +46,7 @@ class GatewayAssociationProposal protected () extends CustomResource {
     */
   val dxGatewayOwnerAccountId: Output[String] = js.native
   /**
-    * *Deprecated:* Use `associated_gateway_id` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
+    * *Deprecated:* Use `associatedGatewayId` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
     */
   val vpnGatewayId: Output[js.UndefOr[String]] = js.native
 }

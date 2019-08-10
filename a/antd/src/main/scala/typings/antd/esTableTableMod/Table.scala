@@ -49,8 +49,6 @@ trait Table[T]
   def generatePopupContainerFunc(): js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
   def generatePopupContainerFunc(getPopupContainer: js.Function1[/* triggerNode */ HTMLElement, HTMLElement]): js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
   def getCheckboxPropsByItem(item: T, index: Double): js.Any = js.native
-  def getColumnKey(column: ColumnProps[T]): js.UndefOr[String | Double] = js.native
-  def getColumnKey(column: ColumnProps[T], index: Double): js.UndefOr[String | Double] = js.native
   def getCurrentPageData(): js.Array[T] = js.native
   def getDefaultPagination(props: TableProps[T]): js.Object = js.native
   def getDefaultSelection(): js.Array[_] = js.native
@@ -82,10 +80,6 @@ trait Table[T]
   def hasPagination(): Boolean = js.native
   def hasPagination(props: js.Any): Boolean = js.native
   def isFiltersChanged(filters: TableStateFilters): Boolean = js.native
-  def isSameColumn(): js.Any = js.native
-  def isSameColumn(a: Null, b: ColumnProps[T]): js.Any = js.native
-  def isSameColumn(a: ColumnProps[T]): js.Any = js.native
-  def isSameColumn(a: ColumnProps[T], b: ColumnProps[T]): js.Any = js.native
   def isSortColumn(column: ColumnProps[T]): Boolean = js.native
   def onRow(prefixCls: String, record: T, index: Double): Anon_Arg = js.native
   def prepareParamsArguments(state: js.Any): PrepareParamsArgumentsReturn[T] = js.native

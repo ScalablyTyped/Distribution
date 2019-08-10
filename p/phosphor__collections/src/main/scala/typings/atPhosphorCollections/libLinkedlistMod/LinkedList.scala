@@ -2,6 +2,7 @@ package typings.atPhosphorCollections.libLinkedlistMod
 
 import typings.atPhosphorAlgorithm.libIterMod.IIterable
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
+import typings.atPhosphorAlgorithm.libIterMod.IterableOrArrayLike
 import typings.atPhosphorAlgorithm.libRetroMod.IRetroable
 import typings.atPhosphorCollections.libLinkedlistMod.LinkedListNs.INode
 import scala.scalajs.js
@@ -18,7 +19,7 @@ class LinkedList[T] ()
      with IRetroable[T] {
   var _first: js.Any = js.native
   var _last: js.Any = js.native
-  var _length: js.Any = js.native
+  var _size: js.Any = js.native
   /**
     * The first value in the list.
     *
@@ -67,8 +68,23 @@ class LinkedList[T] ()
     *
     * #### Complexity
     * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `size`.
+    *
+    * This property is deprecated.
     */
   val length: Double = js.native
+  /**
+    * The size of the list.
+    *
+    * #### Complexity
+    * `O(1)`
+    *
+    * #### Notes
+    * This is equivalent to `length`.
+    */
+  val size: Double = js.native
   /**
     * Add a value to the beginning of the list.
     *
@@ -91,6 +107,15 @@ class LinkedList[T] ()
     * Constant.
     */
   def addLast(value: T): INode[T] = js.native
+  /**
+    * Assign new values to the list, replacing all current values.
+    *
+    * @param values - The values to assign to the list.
+    *
+    * #### Complexity
+    * Linear.
+    */
+  def assign(values: IterableOrArrayLike[T]): Unit = js.native
   /**
     * Remove all values from the list.
     *
@@ -157,6 +182,30 @@ class LinkedList[T] ()
     */
   def nodes(): IIterator[INode[T]] = js.native
   /**
+    * Remove and return the value at the end of the list.
+    *
+    * @returns The removed value, or `undefined` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `removeLast`.
+    */
+  def pop(): js.UndefOr[T] = js.native
+  /**
+    * Add a value to the end of the list.
+    *
+    * @param value - The value to add to the end of the list.
+    *
+    * #### Complexity
+    * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `addLast`.
+    */
+  def push(value: T): Unit = js.native
+  /**
     * Remove and return the value at the beginning of the list.
     *
     * @returns The removed value, or `undefined` if the list is empty.
@@ -202,5 +251,29 @@ class LinkedList[T] ()
     * Constant.
     */
   def retroNodes(): IIterator[INode[T]] = js.native
+  /**
+    * Add a value to the beginning of the list.
+    *
+    * @param value - The value to add to the beginning of the list.
+    *
+    * #### Complexity
+    * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `addFirst`.
+    */
+  def shift(value: T): Unit = js.native
+  /**
+    * Remove and return the value at the beginning of the list.
+    *
+    * @returns The removed value, or `undefined` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `removeFirst`.
+    */
+  def unshift(): js.UndefOr[T] = js.native
 }
 

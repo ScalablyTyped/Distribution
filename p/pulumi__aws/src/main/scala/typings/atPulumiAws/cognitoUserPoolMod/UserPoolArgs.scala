@@ -21,7 +21,7 @@ trait UserPoolArgs extends js.Object {
     */
   val adminCreateUserConfig: js.UndefOr[Input[Anon_AllowAdminCreateUserOnlyInviteMessageTemplate]] = js.undefined
   /**
-    * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `username_attributes`.
+    * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
     */
   val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -37,11 +37,11 @@ trait UserPoolArgs extends js.Object {
     */
   val emailConfiguration: js.UndefOr[Input[Anon_EmailSendingAccountReplyToEmailAddress]] = js.undefined
   /**
-    * A string representing the email verification message. Conflicts with `verification_message_template` configuration block `email_message` argument.
+    * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
     */
   val emailVerificationMessage: js.UndefOr[Input[String]] = js.undefined
   /**
-    * A string representing the email verification subject. Conflicts with `verification_message_template` configuration block `email_subject` argument.
+    * A string representing the email verification subject. Conflicts with `verificationMessageTemplate` configuration block `emailSubject` argument.
     */
   val emailVerificationSubject: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -73,7 +73,7 @@ trait UserPoolArgs extends js.Object {
     */
   val smsConfiguration: js.UndefOr[Input[Anon_ExternalIdSnsCallerArn]] = js.undefined
   /**
-    * A string representing the SMS verification message. Conflicts with `verification_message_template` configuration block `sms_message` argument.
+    * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
   val smsVerificationMessage: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -85,7 +85,7 @@ trait UserPoolArgs extends js.Object {
     */
   val userPoolAddOns: js.UndefOr[Input[Anon_AdvancedSecurityModeInput]] = js.undefined
   /**
-    * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `alias_attributes`.
+    * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
   val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

@@ -22,7 +22,7 @@ trait GetServerResult extends js.Object {
     */
   val identityProviderType: String
   /**
-    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identity_provider_type` of `API_GATEWAY`.
+    * Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an `identityProviderType` of `API_GATEWAY`.
     */
   val invocationRole: String
   /**
@@ -31,7 +31,7 @@ trait GetServerResult extends js.Object {
   val loggingRole: String
   val serverId: String
   /**
-    * URL of the service endpoint used to authenticate users with an `identity_provider_type` of `API_GATEWAY`.
+    * URL of the service endpoint used to authenticate users with an `identityProviderType` of `API_GATEWAY`.
     */
   val url: String
 }

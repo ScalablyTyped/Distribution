@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 
 trait DomainNameArgs extends js.Object {
   /**
-    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificateName`, `certificateBody`, `certificateChain`, `certificatePrivateKey`, `regionalCertificateArn`, and `regionalCertificateName`.
     */
   val certificateArn: js.UndefOr[Input[String]] = js.undefined
   /**
     * The certificate issued for the domain name
-    * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
-    * `regional_certificate_name`.
+    * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and
+    * `regionalCertificateName`.
     */
   val certificateBody: js.UndefOr[Input[String]] = js.undefined
   /**
     * The certificate for the CA that issued the
     * certificate, along with any intermediate CA certificates required to
-    * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
-    * `regional_certificate_arn`, and `regional_certificate_name`.
+    * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`,
+    * `regionalCertificateArn`, and `regionalCertificateName`.
     */
   val certificateChain: js.UndefOr[Input[String]] = js.undefined
   /**
     * The unique name to use when registering this
-    * certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
-    * `regional_certificate_name`. Required if `certificate_arn` is not set.
+    * certificate as an IAM server certificate. Conflicts with `certificateArn`, `regionalCertificateArn`, and
+    * `regionalCertificateName`. Required if `certificateArn` is not set.
     */
   val certificateName: js.UndefOr[Input[String]] = js.undefined
   /**
     * The private key associated with the
-    * domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
+    * domain certificate given in `certificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and `regionalCertificateName`.
     */
   val certificatePrivateKey: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -44,12 +44,12 @@ trait DomainNameArgs extends js.Object {
     */
   val endpointConfiguration: js.UndefOr[Input[Anon_TypesInput]] = js.undefined
   /**
-    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
     */
   val regionalCertificateArn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
-    * `certificate_private_key`.
+    * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and
+    * `certificatePrivateKey`.
     */
   val regionalCertificateName: js.UndefOr[Input[String]] = js.undefined
   /**

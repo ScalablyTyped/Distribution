@@ -37,7 +37,7 @@ class MethodResponse protected () extends CustomResource {
   val responseModels: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A map of response parameters that can be sent to the caller.
-    * For example: `response_parameters = { "method.response.header.X-Some-Header" = true }`
+    * For example: `responseParameters = { "method.response.header.X-Some-Header" = true }`
     * would define that the header `X-Some-Header` can be provided on the response.
     */
   val responseParameters: Output[js.UndefOr[StringDictionary[Boolean]]] = js.native

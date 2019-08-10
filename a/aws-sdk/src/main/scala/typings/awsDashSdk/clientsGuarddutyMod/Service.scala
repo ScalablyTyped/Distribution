@@ -30,6 +30,10 @@ trait Service extends js.Object {
     */
   var EventLastSeen: js.UndefOr[String] = js.undefined
   /**
+    * An evidence object associated with the service.
+    */
+  var Evidence: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Evidence] = js.undefined
+  /**
     * Resource role information for this finding.
     */
   var ResourceRole: js.UndefOr[String] = js.undefined
@@ -52,6 +56,7 @@ object Service {
     DetectorId: DetectorId = null,
     EventFirstSeen: String = null,
     EventLastSeen: String = null,
+    Evidence: Evidence = null,
     ResourceRole: String = null,
     ServiceName: String = null,
     UserFeedback: String = null
@@ -63,6 +68,7 @@ object Service {
     if (DetectorId != null) __obj.updateDynamic("DetectorId")(DetectorId)
     if (EventFirstSeen != null) __obj.updateDynamic("EventFirstSeen")(EventFirstSeen)
     if (EventLastSeen != null) __obj.updateDynamic("EventLastSeen")(EventLastSeen)
+    if (Evidence != null) __obj.updateDynamic("Evidence")(Evidence)
     if (ResourceRole != null) __obj.updateDynamic("ResourceRole")(ResourceRole)
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (UserFeedback != null) __obj.updateDynamic("UserFeedback")(UserFeedback)

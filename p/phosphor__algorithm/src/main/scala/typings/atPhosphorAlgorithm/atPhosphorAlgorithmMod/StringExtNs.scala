@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object StringExtNs extends js.Object {
   /**
+    * A 3-way string comparison function.
+    *
+    * @param a - The first string of interest.
+    *
+    * @param b - The second string of interest.
+    *
+    * @returns `-1` if `a < b`, else `1` if `a > b`, else `0`.
+    */
+  def cmp(a: String, b: String): Double = js.native
+  /**
     * Find the indices of characters in a source text.
     *
     * @param source - The source text which should be searched.

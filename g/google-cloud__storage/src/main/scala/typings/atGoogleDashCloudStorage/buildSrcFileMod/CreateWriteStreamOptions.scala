@@ -15,6 +15,7 @@ trait CreateWriteStreamOptions extends CreateResumableUploadOptions {
 object CreateWriteStreamOptions {
   @scala.inline
   def apply(
+    configPath: String = null,
     contentType: String = null,
     gzip: String | Boolean = null,
     metadata: Metadata = null,
@@ -29,6 +30,7 @@ object CreateWriteStreamOptions {
     validation: String | Boolean = null
   ): CreateWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

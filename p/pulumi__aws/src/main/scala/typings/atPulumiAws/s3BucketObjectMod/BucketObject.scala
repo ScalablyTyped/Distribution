@@ -32,7 +32,7 @@ class BucketObject protected () extends CustomResource {
     */
   val bucket: Output[String] = js.native
   /**
-    * Specifies caching behavior along the request/reply chain Read [w3c cache_control](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) for further details.
+    * Specifies caching behavior along the request/reply chain Read [w3c cacheControl](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) for further details.
     */
   val cacheControl: Output[js.UndefOr[String]] = js.native
   /**
@@ -44,7 +44,7 @@ class BucketObject protected () extends CustomResource {
     */
   val contentBase64: Output[js.UndefOr[String]] = js.native
   /**
-    * Specifies presentational information for the object. Read [w3c content_disposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1) for further information.
+    * Specifies presentational information for the object. Read [w3c contentDisposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1) for further information.
     */
   val contentDisposition: Output[js.UndefOr[String]] = js.native
   /**
@@ -61,7 +61,7 @@ class BucketObject protected () extends CustomResource {
   val contentType: Output[String] = js.native
   /**
     * Used to trigger updates. The only meaningful value is `${filemd5("path/to/file")}` (this provider 0.11.12 or later) or `${md5(file("path/to/file"))}` (this provider 0.11.11 or earlier).
-    * This attribute is not compatible with KMS encryption, `kms_key_id` or `server_side_encryption = "aws:kms"`.
+    * This attribute is not compatible with KMS encryption, `kmsKeyId` or `serverSideEncryption = "aws:kms"`.
     */
   val etag: Output[String] = js.native
   /**
@@ -70,9 +70,9 @@ class BucketObject protected () extends CustomResource {
   val key: Output[String] = js.native
   /**
     * Specifies the AWS KMS Key ARN to use for object encryption.
-    * This value is a fully qualified **ARN** of the KMS Key. If using `aws_kms_key`,
+    * This value is a fully qualified **ARN** of the KMS Key. If using `aws.kms.Key`,
     * use the exported `arn` attribute:
-    * `kms_key_id = "${aws_kms_key.foo.arn}"`
+    * `kmsKeyId = "${aws_kms_key.foo.arn}"`
     */
   val kmsKeyId: Output[js.UndefOr[String]] = js.native
   /**

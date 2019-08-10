@@ -56,6 +56,10 @@ class IdentityPool protected () extends CustomResource {
     * Key-Value pairs mapping provider names to provider app IDs.
     */
   val supportedLoginProviders: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
+    * A mapping of tags to assign to the Identity Pool.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

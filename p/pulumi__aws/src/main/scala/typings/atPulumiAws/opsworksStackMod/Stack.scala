@@ -29,7 +29,7 @@ class Stack protected () extends CustomResource {
   val agentVersion: Output[String] = js.native
   val arn: Output[String] = js.native
   /**
-    * If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+    * If `manageBerkshelf` is enabled, the version of Berkshelf to use.
     */
   val berkshelfVersion: Output[js.UndefOr[String]] = js.native
   /**
@@ -45,7 +45,7 @@ class Stack protected () extends CustomResource {
     */
   val configurationManagerVersion: Output[js.UndefOr[String]] = js.native
   /**
-    * When `use_custom_cookbooks` is set, provide this sub-object as
+    * When `useCustomCookbooks` is set, provide this sub-object as
     * described below.
     */
   val customCookbooksSources: Output[js.Array[Anon_PasswordRevisionSshKeyType]] = js.native
@@ -55,7 +55,7 @@ class Stack protected () extends CustomResource {
   val customJson: Output[js.UndefOr[String]] = js.native
   /**
     * Name of the availability zone where instances will be created
-    * by default. This is required unless you set `vpc_id`.
+    * by default. This is required unless you set `vpcId`.
     */
   val defaultAvailabilityZone: Output[String] = js.native
   /**
@@ -77,7 +77,7 @@ class Stack protected () extends CustomResource {
   val defaultSshKeyName: Output[js.UndefOr[String]] = js.native
   /**
     * Id of the subnet in which instances will be created by default. Mandatory
-    * if `vpc_id` is set, and forbidden if it isn't.
+    * if `vpcId` is set, and forbidden if it isn't.
     */
   val defaultSubnetId: Output[String] = js.native
   /**

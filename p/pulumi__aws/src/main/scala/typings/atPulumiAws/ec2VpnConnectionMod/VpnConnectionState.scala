@@ -27,7 +27,7 @@ trait VpnConnectionState extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
-    * When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+    * When associated with an EC2 Transit Gateway (`transitGatewayId` argument), the attachment ID.
     */
   val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
   /**

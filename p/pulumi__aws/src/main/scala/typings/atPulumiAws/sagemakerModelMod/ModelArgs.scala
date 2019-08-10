@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait ModelArgs extends js.Object {
   /**
-    * Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+    * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
   val containers: js.UndefOr[Input[js.Array[Input[Anon_ContainerHostnameEnvironment]]]] = js.undefined
   /**

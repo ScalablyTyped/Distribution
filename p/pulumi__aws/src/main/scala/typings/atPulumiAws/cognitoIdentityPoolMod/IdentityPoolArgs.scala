@@ -37,6 +37,10 @@ trait IdentityPoolArgs extends js.Object {
     * Key-Value pairs mapping provider names to provider app IDs.
     */
   val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  /**
+    * A mapping of tags to assign to the Identity Pool.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
 }
 
 object IdentityPoolArgs {
@@ -48,7 +52,8 @@ object IdentityPoolArgs {
     developerProviderName: Input[String] = null,
     openidConnectProviderArns: Input[js.Array[Input[String]]] = null,
     samlProviderArns: Input[js.Array[Input[String]]] = null,
-    supportedLoginProviders: Input[StringDictionary[Input[String]]] = null
+    supportedLoginProviders: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null
   ): IdentityPoolArgs = {
     val __obj = js.Dynamic.literal(identityPoolName = identityPoolName.asInstanceOf[js.Any])
     if (allowUnauthenticatedIdentities != null) __obj.updateDynamic("allowUnauthenticatedIdentities")(allowUnauthenticatedIdentities.asInstanceOf[js.Any])
@@ -57,6 +62,7 @@ object IdentityPoolArgs {
     if (openidConnectProviderArns != null) __obj.updateDynamic("openidConnectProviderArns")(openidConnectProviderArns.asInstanceOf[js.Any])
     if (samlProviderArns != null) __obj.updateDynamic("samlProviderArns")(samlProviderArns.asInstanceOf[js.Any])
     if (supportedLoginProviders != null) __obj.updateDynamic("supportedLoginProviders")(supportedLoginProviders.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolArgs]
   }
 }

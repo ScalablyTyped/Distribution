@@ -42,7 +42,7 @@ trait EventTargetState extends js.Object {
     */
   val kinesisTarget: js.UndefOr[Input[Anon_PartitionKeyPathInput]] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecs_target` is used.
+    * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
     */
   val roleArn: js.UndefOr[Input[String]] = js.undefined
   /**

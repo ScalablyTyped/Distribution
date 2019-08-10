@@ -41,6 +41,10 @@ trait GetClusterResult extends js.Object {
     */
   val roleArn: String
   /**
+    * The status of the EKS cluster. One of `CREATING`, `ACTIVE`, `DELETING`, `FAILED`.
+    */
+  val status: String
+  /**
     * The Kubernetes server version for the cluster.
     */
   val version: String
@@ -62,10 +66,11 @@ object GetClusterResult {
     name: String,
     platformVersion: String,
     roleArn: String,
+    status: String,
     version: String,
     vpcConfig: Anon_EndpointPrivateAccessEndpointPublicAccessSecurityGroupIds
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, enabledClusterLogTypes = enabledClusterLogTypes, endpoint = endpoint, id = id, name = name, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, enabledClusterLogTypes = enabledClusterLogTypes, endpoint = endpoint, id = id, name = name, platformVersion = platformVersion, roleArn = roleArn, status = status, version = version, vpcConfig = vpcConfig)
   
     __obj.asInstanceOf[GetClusterResult]
   }

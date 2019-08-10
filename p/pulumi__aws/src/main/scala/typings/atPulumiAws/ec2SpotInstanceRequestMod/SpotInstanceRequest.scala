@@ -3,8 +3,8 @@ package typings.atPulumiAws.ec2SpotInstanceRequestMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.Anon_CpuCreditsString
 import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceIndex
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeId
+import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotId
+import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeId
 import typings.atPulumiAws.Anon_DeviceNameNoDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -69,7 +69,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Additional EBS block devices to attach to the
     * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId]] = js.native
+  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotId]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     * Note that if this is not set on an instance type that is optimized by default then
@@ -84,7 +84,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     */
   val ephemeralBlockDevices: Output[js.Array[Anon_DeviceNameNoDevice]] = js.native
   /**
-    * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
+    * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `passwordData` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
   val getPasswordData: Output[js.UndefOr[Boolean]] = js.native
   /**
@@ -94,7 +94,7 @@ class SpotInstanceRequest protected () extends CustomResource {
   /**
     * The IAM Instance Profile to
     * launch the instance with. Specified as the name of the Instance Profile. Ensure your credentials have the correct permission to assign the instance profile according to the [EC2 documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html#roles-usingrole-ec2instance-permissions), notably `iam:PassRole`.
-    * * `ipv6_address_count`- (Optional) A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
+    * * `ipv6AddressCount`- (Optional) A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
     */
   val iamInstanceProfile: Output[js.UndefOr[String]] = js.native
   /**
@@ -119,7 +119,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     */
   val ipv6Addresses: Output[js.Array[String]] = js.native
   /**
-    * The key name of the Key Pair to use for the instance; which can be managed using the `aws_key_pair` resource.
+    * The key name of the Key Pair to use for the instance; which can be managed using the `aws.ec2.KeyPair` resource.
     */
   val keyName: Output[String] = js.native
   /**
@@ -165,7 +165,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: Output[Anon_DeleteOnTerminationIopsVolumeId] = js.native
+  val rootBlockDevice: Output[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeId] = js.native
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
     */
@@ -179,7 +179,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * The current [bid
     * status](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-bid-status.html)
     * of the Spot Instance Request.
-    * * `spot_request_state` The current [request
+    * * `spotRequestState` The current [request
     * state](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#creating-spot-request-status)
     * of the Spot Instance Request.
     */
@@ -212,11 +212,11 @@ class SpotInstanceRequest protected () extends CustomResource {
     */
   val tenancy: Output[String] = js.native
   /**
-    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+    * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `userDataBase64` instead.
     */
   val userData: Output[js.UndefOr[String]] = js.native
   /**
-    * Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+    * Can be used instead of `userData` to pass base64-encoded binary data directly. Use this instead of `userData` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
     */
   val userDataBase64: Output[js.UndefOr[String]] = js.native
   /**

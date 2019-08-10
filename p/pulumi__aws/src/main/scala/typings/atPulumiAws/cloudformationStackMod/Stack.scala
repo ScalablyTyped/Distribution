@@ -30,7 +30,7 @@ class Stack protected () extends CustomResource {
   val capabilities: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
     * Set to true to disable rollback of the stack if stack creation failed.
-    * Conflicts with `on_failure`.
+    * Conflicts with `onFailure`.
     */
   val disableRollback: Output[js.UndefOr[Boolean]] = js.native
   /**
@@ -47,7 +47,7 @@ class Stack protected () extends CustomResource {
   val notificationArns: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
     * Action to be taken if stack creation fails. This must be
-    * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disable_rollback`.
+    * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disableRollback`.
     */
   val onFailure: Output[js.UndefOr[String]] = js.native
   /**
@@ -60,12 +60,12 @@ class Stack protected () extends CustomResource {
   val parameters: Output[StringDictionary[_]] = js.native
   /**
     * Structure containing the stack policy body.
-    * Conflicts w/ `policy_url`.
+    * Conflicts w/ `policyUrl`.
     */
   val policyBody: Output[String] = js.native
   /**
     * Location of a file containing the stack policy.
-    * Conflicts w/ `policy_body`.
+    * Conflicts w/ `policyBody`.
     */
   val policyUrl: Output[js.UndefOr[String]] = js.native
   /**

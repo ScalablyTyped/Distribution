@@ -2,8 +2,8 @@ package typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod
 
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.BodyResponseCallback
 import typings.atGoogleDashCloudCommon.buildSrcUtilMod.DecorateRequestOptions
-import typings.request.requestMod.Request
 import typings.std.PromiseConstructor
+import typings.teenyDashRequest.teenyDashRequestMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

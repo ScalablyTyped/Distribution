@@ -22,11 +22,11 @@ trait Hdr10Metadata extends js.Object {
     */
   var GreenPrimaryY: js.UndefOr[__integerMin0Max50000] = js.undefined
   /**
-    * Maximum light level among all samples in the coded video sequence, in units of candelas per square meter.
+    * Maximum light level among all samples in the coded video sequence, in units of candelas per square meter.  This setting doesn't have a default value; you must specify a value that is suitable for the content.
     */
   var MaxContentLightLevel: js.UndefOr[__integerMin0Max65535] = js.undefined
   /**
-    * Maximum average light level of any frame in the coded video sequence, in units of candelas per square meter.
+    * Maximum average light level of any frame in the coded video sequence, in units of candelas per square meter. This setting doesn't have a default value; you must specify a value that is suitable for the content.
     */
   var MaxFrameAverageLightLevel: js.UndefOr[__integerMin0Max65535] = js.undefined
   /**

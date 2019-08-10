@@ -35,7 +35,7 @@ trait ClusterSnapshotState extends js.Object {
     */
   val engineVersion: js.UndefOr[Input[String]] = js.undefined
   /**
-    * If storage_encrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
+    * If storageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   /**

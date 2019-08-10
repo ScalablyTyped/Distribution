@@ -37,7 +37,7 @@ trait AmiCopyArgs extends js.Object {
   val name: js.UndefOr[Input[String]] = js.undefined
   /**
     * The id of the AMI to copy. This id must be valid in the region
-    * given by `source_ami_region`.
+    * given by `sourceAmiRegion`.
     */
   val sourceAmiId: Input[String]
   /**

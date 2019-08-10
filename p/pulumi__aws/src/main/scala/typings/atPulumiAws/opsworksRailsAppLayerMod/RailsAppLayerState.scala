@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait RailsAppLayerState extends js.Object {
   /**
-    * Keyword for the app server to use. Defaults to "apache_passenger".
+    * Keyword for the app server to use. Defaults to "apachePassenger".
     */
   val appServer: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -49,7 +49,7 @@ trait RailsAppLayerState extends js.Object {
     */
   val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+    * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
   val ebsVolumes: js.UndefOr[Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]]] = js.undefined
   /**

@@ -28,6 +28,8 @@ import typings.atPulumiAws.directconnectPrivateVirtualInterfaceMod.PrivateVirtua
 import typings.atPulumiAws.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterfaceState
 import typings.atPulumiAws.directconnectPublicVirtualInterfaceMod.PublicVirtualInterfaceArgs
 import typings.atPulumiAws.directconnectPublicVirtualInterfaceMod.PublicVirtualInterfaceState
+import typings.atPulumiAws.directconnectTransitVirtualInterfaceMod.TransitVirtualInterfaceArgs
+import typings.atPulumiAws.directconnectTransitVirtualInterfaceMod.TransitVirtualInterfaceState
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
@@ -219,6 +221,20 @@ object directconnectNs extends js.Object {
       */
     def this(name: String, args: PublicVirtualInterfaceArgs) = this()
     def this(name: String, args: PublicVirtualInterfaceArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class TransitVirtualInterface protected ()
+    extends typings.atPulumiAws.directconnectMod.TransitVirtualInterface {
+    /**
+      * Create a TransitVirtualInterface resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: TransitVirtualInterfaceArgs) = this()
+    def this(name: String, args: TransitVirtualInterfaceArgs, opts: CustomResourceOptions) = this()
   }
   
   def getGateway(args: GetGatewayArgs): js.Promise[GetGatewayResult] with GetGatewayResult = js.native
@@ -509,6 +525,27 @@ object directconnectNs extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/publicVirtualInterface.PublicVirtualInterface */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object TransitVirtualInterface extends js.Object {
+    /**
+      * Get an existing TransitVirtualInterface resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.directconnectTransitVirtualInterfaceMod.TransitVirtualInterface = js.native
+    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState): typings.atPulumiAws.directconnectTransitVirtualInterfaceMod.TransitVirtualInterface = js.native
+    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState, opts: CustomResourceOptions): typings.atPulumiAws.directconnectTransitVirtualInterfaceMod.TransitVirtualInterface = js.native
+    /**
+      * Returns true if the given object is an instance of TransitVirtualInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/transitVirtualInterface.TransitVirtualInterface */ Boolean = js.native
   }
   
 }

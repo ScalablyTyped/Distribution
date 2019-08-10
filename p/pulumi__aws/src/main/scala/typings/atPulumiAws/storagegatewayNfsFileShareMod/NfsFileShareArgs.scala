@@ -28,7 +28,7 @@ trait NfsFileShareArgs extends js.Object {
     */
   val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * Amazon Resource Name (ARN) for KMS key used for Amazon S3 server side encryption. This value can only be set when `kms_encrypted` is true.
+    * Amazon Resource Name (ARN) for KMS key used for Amazon S3 server side encryption. This value can only be set when `kmsEncrypted` is true.
     */
   val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
   /**

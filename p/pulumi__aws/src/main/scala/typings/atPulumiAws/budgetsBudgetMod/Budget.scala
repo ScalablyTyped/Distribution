@@ -25,7 +25,7 @@ class Budget protected () extends CustomResource {
   def this(name: String, args: BudgetArgs) = this()
   def this(name: String, args: BudgetArgs, opts: CustomResourceOptions) = this()
   /**
-    * The ID of the target account for budget. Will use current user's account_id by default if omitted.
+    * The ID of the target account for budget. Will use current user's accountId by default if omitted.
     */
   val accountId: Output[String] = js.native
   /**

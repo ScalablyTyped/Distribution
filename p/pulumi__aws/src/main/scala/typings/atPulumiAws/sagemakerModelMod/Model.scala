@@ -29,7 +29,7 @@ class Model protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+    * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
   val containers: Output[js.UndefOr[js.Array[Anon_ContainerHostname]]] = js.native
   /**

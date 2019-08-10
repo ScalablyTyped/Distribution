@@ -17,9 +17,11 @@ trait TypeofClassIntlRelativeTimeFormat
       /* hasLocalesOptions */ js.Tuple2[js.UndefOr[String | js.Array[String]], js.UndefOr[IntlRelativeTimeFormatOptions]], 
       default
     ] {
+  var __languageAliases__ : Record[String, String] = js.native
   var __localeData__ : Record[String, LocaleData] = js.native
   var polyfilled: Boolean = js.native
   def __addLocaleData(data: LocaleData*): Unit = js.native
+  def __setLanguageAliases(aliases: Record[String, String]): Unit = js.native
   def supportedLocalesOf(locales: String): js.Array[js.UndefOr[String]] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[js.UndefOr[String]] = js.native
   @JSName("supportedLocalesOf")

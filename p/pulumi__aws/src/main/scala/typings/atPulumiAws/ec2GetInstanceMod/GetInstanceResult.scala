@@ -2,8 +2,8 @@ package typings.atPulumiAws.ec2GetInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.Anon_CpuCredits
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationIops
+import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId
+import typings.atPulumiAws.Anon_DeleteOnTerminationEncrypted
 import typings.atPulumiAws.Anon_DeviceNameNoDevice
 import typings.atPulumiAws.Anon_NameValues
 import scala.scalajs.js
@@ -35,7 +35,7 @@ trait GetInstanceResult extends js.Object {
   /**
     * The EBS block device mappings of the Instance.
     */
-  val ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId]
+  val ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId]
   /**
     * Whether the Instance is EBS optimized or not (Boolean).
     */
@@ -84,7 +84,7 @@ trait GetInstanceResult extends js.Object {
   /**
     * Base-64 encoded encrypted password data for the instance.
     * Useful for getting the administrator password for instances running Microsoft Windows.
-    * This attribute is only exported if `get_password_data` is true.
+    * This attribute is only exported if `getPasswordData` is true.
     * See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
   val passwordData: String
@@ -108,13 +108,13 @@ trait GetInstanceResult extends js.Object {
     */
   val publicDns: String
   /**
-    * The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws_eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
+    * The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `publicIp`, as this field will change after the EIP is attached.
     */
   val publicIp: String
   /**
     * The root block device mappings of the Instance
     */
-  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationIops]
+  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncrypted]
   /**
     * The associated security groups.
     */
@@ -140,7 +140,7 @@ trait GetInstanceResult extends js.Object {
     */
   val userData: String
   /**
-    * Base64 encoded contents of User Data supplied to the Instance. Valid UTF-8 contents can be decoded with the [`base64decode` function](https://www.terraform.io/docs/configuration/functions/base64decode.html). This attribute is only exported if `get_user_data` is true.
+    * Base64 encoded contents of User Data supplied to the Instance. Valid UTF-8 contents can be decoded with the [`base64decode` function](https://www.terraform.io/docs/configuration/functions/base64decode.html). This attribute is only exported if `getUserData` is true.
     */
   val userDataBase64: String
   /**
@@ -158,7 +158,7 @@ object GetInstanceResult {
     availabilityZone: String,
     creditSpecifications: js.Array[Anon_CpuCredits],
     disableApiTermination: Boolean,
-    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId],
+    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId],
     ebsOptimized: Boolean,
     ephemeralBlockDevices: js.Array[Anon_DeviceNameNoDevice],
     hostId: String,
@@ -176,7 +176,7 @@ object GetInstanceResult {
     privateIp: String,
     publicDns: String,
     publicIp: String,
-    rootBlockDevices: js.Array[Anon_DeleteOnTerminationIops],
+    rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncrypted],
     securityGroups: js.Array[String],
     sourceDestCheck: Boolean,
     subnetId: String,

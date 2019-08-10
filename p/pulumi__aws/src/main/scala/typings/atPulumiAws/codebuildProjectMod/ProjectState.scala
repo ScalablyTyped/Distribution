@@ -24,11 +24,11 @@ trait ProjectState extends js.Object {
     */
   val artifacts: js.UndefOr[Input[Anon_EncryptionDisabledLocationName]] = js.undefined
   /**
-    * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
+    * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
     */
   val badgeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * The URL of the build badge when `badge_enabled` is enabled.
+    * The URL of the build badge when `badgeEnabled` is enabled.
     */
   val badgeUrl: js.UndefOr[Input[String]] = js.undefined
   /**
