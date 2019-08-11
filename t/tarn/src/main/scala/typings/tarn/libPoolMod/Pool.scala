@@ -3,6 +3,7 @@ package typings.tarn.libPoolMod
 import typings.node.NodeJSNs.Timer
 import typings.std.Error
 import typings.tarn.libPendingOperationMod.PendingOperation
+import typings.tarn.libPromiseInspectionMod.PromiseInspection
 import typings.tarn.libResourceMod.Resource
 import typings.tarn.tarnStrings.warn
 import scala.scalajs.js
@@ -45,9 +46,7 @@ class Pool[T] protected () extends js.Object {
   def acquire(): PendingOperation[T] = js.native
   def check(): Unit = js.native
   /* protected */ def creator(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]] = js.native
-  def destroy(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_tarn/lib/PromiseInspection.PromiseInspection<{}> */ _
-  ] = js.native
+  def destroy(): js.Promise[PromiseInspection[js.Object | Unit]] = js.native
   /* protected */ def destroyer(resource: T): js.Any = js.native
   def isEmpty(): Boolean = js.native
   @JSName("log")

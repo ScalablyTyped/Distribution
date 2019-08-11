@@ -2,6 +2,8 @@
 [info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/falcor-router/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/falcor-router),TsIdentLibrarySimple(falcor-router)),TsIdentModule(None,List(falcor-router))) [id => falcor-router, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(falcor-router)) [id => falcor-router, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(falcor-router) [id => falcor-router, phase => typescript] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(FalcorRouter), TsIdentSimple(CreatedRouter))) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(FalcorRouter), TsIdentSimple(CreatedRouter))) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof FalcorRouter.CreatedRouter [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
 [debug] PhaseRunner.scala:84 Success [id => falcor-router, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing falcor-router [id => falcor-router, phase => scala.js] 

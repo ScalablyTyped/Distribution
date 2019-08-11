@@ -70,7 +70,7 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   def Apple: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Apple].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
-  def ApppleAppStore: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.ApppleAppStore].asInstanceOf[typings.react.reactMod.ComponentType[
+  def AppleAppStore: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.AppleAppStore].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Apps: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Apps].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -305,6 +305,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Codepen: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Codepen].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def Coffee: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Coffee].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Columns: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Columns].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -700,6 +703,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   def Gamepad: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Gamepad].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
+  def Gatsbyjs: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Gatsbyjs].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
   def Gift: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Gift].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
@@ -722,6 +728,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def GoogleWallet: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.GoogleWallet].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def GraphQl: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.GraphQl].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Gremlin: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Gremlin].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -749,6 +758,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Heroku: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Heroku].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def Hide: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Hide].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def History: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.History].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -982,6 +994,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   def Next: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Next].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
+  def Node: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Node].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
   def Nodes: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Nodes].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
@@ -995,6 +1010,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Notification: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Notification].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def Npm: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Npm].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def ObjectGroup: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.ObjectGroup].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -1279,13 +1297,22 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   def Sort: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Sort].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
+  def Soundcloud: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Soundcloud].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
   def Spa: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Spa].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def Spectrum: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Spectrum].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Split: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Split].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Splits: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Splits].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
+  @scala.inline
+  def Spotify: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Spotify].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.react.SVGSVGElement]]]
   @scala.inline
   def Square: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Square].asInstanceOf[typings.react.reactMod.ComponentType[

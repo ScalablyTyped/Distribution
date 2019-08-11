@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet-icons/icons", "ApppleAppStore")
+@JSImport("grommet-icons/icons", "GraphQl")
 @js.native
-class ApppleAppStore protected ()
+class GraphQl protected ()
   extends Component[IconProps with SVGProps[SVGSVGElement], ComponentState, js.Any] {
   def this(props: IconProps with SVGProps[SVGSVGElement]) = this()
   def this(props: IconProps with SVGProps[SVGSVGElement], context: js.Any) = this()

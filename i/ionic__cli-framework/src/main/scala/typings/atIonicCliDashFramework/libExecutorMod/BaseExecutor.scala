@@ -8,6 +8,7 @@ import typings.atIonicCliDashFramework.definitionsMod.ICommand
 import typings.atIonicCliDashFramework.definitionsMod.INamespace
 import typings.atIonicCliDashFramework.definitionsMod.NamespaceLocateResult
 import typings.atIonicCliDashFramework.libColorsMod.Colors
+import typings.atIonicCliDashFramework.utilsIpcMod.RPCProcess
 import typings.node.NodeJSNs.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,20 +22,11 @@ class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, 
   val stderr: WriteStream = js.native
   val stdout: WriteStream = js.native
   @JSName("emit")
-  def emit_operationrpc(
-    event: `operation-rpc`,
-    rpc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ js.Any
-  ): Boolean = js.native
+  def emit_operationrpc(event: `operation-rpc`, rpc: RPCProcess): Boolean = js.native
   def formatHelp(location: NamespaceLocateResult[C, N, M, I, O]): js.Promise[String] = js.native
   def formatHelp(location: NamespaceLocateResult[C, N, M, I, O], hasFormat: BaseExecutorFormatHelpOptions): js.Promise[String] = js.native
   @JSName("on")
-  def on_operationrpc(
-    event: `operation-rpc`,
-    callback: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ /* rpc */ js.Any, 
-      Unit
-    ]
-  ): this.type = js.native
+  def on_operationrpc(event: `operation-rpc`, callback: js.Function1[/* rpc */ RPCProcess, Unit]): this.type = js.native
   /**
     * Initiate RPC operation.
     *

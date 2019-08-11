@@ -49,8 +49,15 @@ import typings.grommet.componentsWorldMapMod.WorldMapProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.controls
 import typings.grommet.grommetStrings.href
+import typings.grommet.grommetStrings.id
+import typings.grommet.grommetStrings.mask
+import typings.grommet.grommetStrings.name
 import typings.grommet.grommetStrings.onSelect
+import typings.grommet.grommetStrings.placeholder
+import typings.grommet.grommetStrings.plain
 import typings.grommet.grommetStrings.size
+import typings.grommet.grommetStrings.title
+import typings.grommet.grommetStrings.value
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLAnchorElement
 import typings.react.HTMLButtonElement
@@ -208,8 +215,19 @@ object grommetComponents extends grommetProps {
     typings.react.HTMLDivElement
   ])]]
   @scala.inline
-  def DropButton: ComponentType[DropButtonProps with ButtonProps] = js.constructorOf[typings.grommet.grommetMod.DropButton].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDropButtonMod.DropButtonProps with typings.grommet.componentsButtonMod.ButtonProps]]
+  def DropButton: ComponentType[
+    DropButtonProps with ButtonProps with (Omit[
+      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+      color
+    ])
+  ] = js.constructorOf[typings.grommet.grommetMod.DropButton].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommet.componentsDropButtonMod.DropButtonProps with typings.grommet.componentsButtonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
+    typings.react.reactMod.DetailedHTMLProps[
+      typings.react.reactMod.ButtonHTMLAttributes[typings.react.HTMLButtonElement], 
+      typings.react.HTMLButtonElement
+    ], 
+    typings.grommet.grommetStrings.color
+  ])]]
   @scala.inline
   def Form: ComponentType[
     FormProps with (DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement])
@@ -220,11 +238,17 @@ object grommetComponents extends grommetProps {
   ])]]
   @scala.inline
   def FormField: ComponentType[
-    FormFieldProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
+    FormFieldProps with (typings.std.Omit[
+      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+      placeholder
+    ])
   ] = js.constructorOf[typings.grommet.grommetMod.FormField].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsFormFieldMod.FormFieldProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
-    typings.react.HTMLInputElement
+  typings.grommet.componentsFormFieldMod.FormFieldProps with (typings.std.Omit[
+    typings.react.reactMod.DetailedHTMLProps[
+      typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
+      typings.react.HTMLInputElement
+    ], 
+    typings.grommet.grommetStrings.placeholder
   ])]]
   @scala.inline
   def Grid: ComponentType[
@@ -283,11 +307,17 @@ object grommetComponents extends grommetProps {
   ])]]
   @scala.inline
   def MaskedInput: ComponentType[
-    MaskedInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
+    MaskedInputProps with (typings.std.Omit[
+      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+      id | name | mask | plain | size | value
+    ])
   ] = js.constructorOf[typings.grommet.grommetMod.MaskedInput].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsMaskedInputMod.MaskedInputProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
-    typings.react.HTMLInputElement
+  typings.grommet.componentsMaskedInputMod.MaskedInputProps with (typings.std.Omit[
+    typings.react.reactMod.DetailedHTMLProps[
+      typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
+      typings.react.HTMLInputElement
+    ], 
+    typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
   ])]]
   @scala.inline
   def Menu: ComponentType[
@@ -370,11 +400,17 @@ object grommetComponents extends grommetProps {
   ])]]
   @scala.inline
   def Tab: ComponentType[
-    TabProps with (DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement])
+    TabProps with (Omit[
+      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+      title
+    ])
   ] = js.constructorOf[typings.grommet.grommetMod.Tab].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTabMod.TabProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.ButtonHTMLAttributes[typings.react.HTMLButtonElement], 
-    typings.react.HTMLButtonElement
+  typings.grommet.componentsTabMod.TabProps with (typings.grommet.utilsMod.Omit[
+    typings.react.reactMod.DetailedHTMLProps[
+      typings.react.reactMod.ButtonHTMLAttributes[typings.react.HTMLButtonElement], 
+      typings.react.HTMLButtonElement
+    ], 
+    typings.grommet.grommetStrings.title
   ])]]
   @scala.inline
   def Table: ComponentType[
@@ -455,7 +491,7 @@ object grommetComponents extends grommetProps {
   def TextInput: ComponentType[
     TextInputProps with (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      onSelect | size
+      onSelect | size | placeholder
     ])
   ] = js.constructorOf[typings.grommet.grommetMod.TextInput].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTextInputMod.TextInputProps with (typings.grommet.utilsMod.Omit[
@@ -463,7 +499,7 @@ object grommetComponents extends grommetProps {
       typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
       typings.react.HTMLInputElement
     ], 
-    typings.grommet.grommetStrings.onSelect | typings.grommet.grommetStrings.size
+    typings.grommet.grommetStrings.onSelect | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.placeholder
   ])]]
   @scala.inline
   def Video: ComponentType[

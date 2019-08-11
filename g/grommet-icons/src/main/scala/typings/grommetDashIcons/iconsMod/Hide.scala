@@ -1,6 +1,5 @@
-package typings.grommetDashIcons.grommetDashIconsMod
+package typings.grommetDashIcons.iconsMod
 
-import typings.grommetDashIcons.iconsMod.IconProps
 import typings.react.SVGSVGElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -9,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet-icons", "ApppleAppStore")
+@JSImport("grommet-icons/icons", "Hide")
 @js.native
-class ApppleAppStore protected ()
+class Hide protected ()
   extends Component[IconProps with SVGProps[SVGSVGElement], ComponentState, js.Any] {
   def this(props: IconProps with SVGProps[SVGSVGElement]) = this()
   def this(props: IconProps with SVGProps[SVGSVGElement], context: js.Any) = this()

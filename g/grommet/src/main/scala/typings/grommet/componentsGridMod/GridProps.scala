@@ -1,7 +1,6 @@
 package typings.grommet.componentsGridMod
 
 import typings.grommet.Anon_12
-import typings.grommet.Anon_Bottom
 import typings.grommet.Anon_Column
 import typings.grommet.Anon_End
 import typings.grommet.grommetStrings.`1/2`
@@ -27,17 +26,21 @@ import typings.grommet.grommetStrings.stretch
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod.A11yTitleType
+import typings.grommet.utilsMod.AlignContentType
+import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridProps extends js.Object {
-  var a11yTitle: js.UndefOr[String] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var align: js.UndefOr[start | center | end | stretch] = js.undefined
-  var alignContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
-  var alignSelf: js.UndefOr[start | center | end | stretch] = js.undefined
+  var alignContent: js.UndefOr[AlignContentType] = js.undefined
+  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var areas: js.UndefOr[js.Array[Anon_End]] = js.undefined
   var as: js.UndefOr[PolymorphicType] = js.undefined
   var columns: js.UndefOr[
@@ -47,10 +50,10 @@ trait GridProps extends js.Object {
   ] = js.undefined
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
   var gap: js.UndefOr[small | medium | large | none | Anon_Column | String] = js.undefined
-  var gridArea: js.UndefOr[String] = js.undefined
+  var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var justify: js.UndefOr[start | center | end | stretch] = js.undefined
   var justifyContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
-  var margin: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var rows: js.UndefOr[
     (js.Array[
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
@@ -62,10 +65,10 @@ trait GridProps extends js.Object {
 object GridProps {
   @scala.inline
   def apply(
-    a11yTitle: String = null,
+    a11yTitle: A11yTitleType = null,
     align: start | center | end | stretch = null,
-    alignContent: start | center | end | between | around | stretch = null,
-    alignSelf: start | center | end | stretch = null,
+    alignContent: AlignContentType = null,
+    alignSelf: AlignSelfType = null,
     areas: js.Array[Anon_End] = null,
     as: PolymorphicType = null,
     columns: (js.Array[
@@ -73,10 +76,10 @@ object GridProps {
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String = null,
     fill: horizontal | vertical | Boolean = null,
     gap: small | medium | large | none | Anon_Column | String = null,
-    gridArea: String = null,
+    gridArea: GridAreaType = null,
     justify: start | center | end | stretch = null,
     justifyContent: start | center | end | between | around | stretch = null,
-    margin: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
+    margin: MarginType = null,
     rows: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | String = null,
@@ -85,8 +88,8 @@ object GridProps {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent)
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (areas != null) __obj.updateDynamic("areas")(areas)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])

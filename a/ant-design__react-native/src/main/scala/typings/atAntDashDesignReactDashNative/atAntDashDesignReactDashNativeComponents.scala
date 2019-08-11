@@ -203,5 +203,7 @@ object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDash
   def WingDashBlank: ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps]]
   @scala.inline
   def WithTheme[T, S]: ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps[T, S]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStyleMod.WithTheme[T, S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps[T, S]]]
+  @scala.inline
+  def switch: ComponentType[AntmSwitchProps] = typings.atAntDashDesignReactDashNative.esSwitchMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps]]
 }
 

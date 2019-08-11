@@ -2,6 +2,11 @@ package typings.atStorybookApi
 
 import typings.atReachRouter.atReachRouterMod.NavigateFn
 import typings.atReachRouter.atReachRouterMod.WindowLocation
+import typings.atStorybookApi.distModulesLayoutMod.Layout
+import typings.atStorybookApi.distModulesLayoutMod.UI
+import typings.atStorybookApi.distModulesNotificationsMod.Notification
+import typings.atStorybookApi.distModulesShortcutsMod.Shortcuts
+import typings.atStorybookApi.distModulesStoriesMod.StoriesHash
 import typings.atStorybookApi.distModulesUrlMod.QueryParams
 import typings.atStorybookTheming.distTypesMod.ThemeVars
 import scala.scalajs.js
@@ -13,20 +18,18 @@ trait Anon_CustomQueryParams extends js.Object {
   var default: js.UndefOr[Boolean] = js.undefined
   var dismissedVersionNotification: String
   var lastVersionCheck: Double
-  var layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/layout.Layout */ js.Any
+  var layout: Layout
   var location: WindowLocation
   var navigate: js.UndefOr[NavigateFn] = js.undefined
-  var notifications: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/notifications.Notification */ _
-  ]
+  var notifications: js.Array[Notification]
   var path: String
   var selectedPanel: String
-  var shortcuts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/shortcuts.Shortcuts */ js.Any
+  var shortcuts: Shortcuts
   var storiesConfigured: Boolean
-  var storiesHash: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/stories.StoriesHash */ js.Any
+  var storiesHash: StoriesHash
   var storyId: String
   var theme: ThemeVars
-  var ui: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/layout.UI */ js.Any
+  var ui: UI
   var uri: js.UndefOr[String] = js.undefined
   var versions: Anon_Current
   var viewMode: String
@@ -38,19 +41,17 @@ object Anon_CustomQueryParams {
     customQueryParams: QueryParams,
     dismissedVersionNotification: String,
     lastVersionCheck: Double,
-    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/layout.Layout */ js.Any,
+    layout: Layout,
     location: WindowLocation,
-    notifications: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/notifications.Notification */ _
-    ],
+    notifications: js.Array[Notification],
     path: String,
     selectedPanel: String,
-    shortcuts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/shortcuts.Shortcuts */ js.Any,
+    shortcuts: Shortcuts,
     storiesConfigured: Boolean,
-    storiesHash: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/stories.StoriesHash */ js.Any,
+    storiesHash: StoriesHash,
     storyId: String,
     theme: ThemeVars,
-    ui: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@storybook/api/dist/modules/layout.UI */ js.Any,
+    ui: UI,
     versions: Anon_Current,
     viewMode: String,
     default: js.UndefOr[Boolean] = js.undefined,

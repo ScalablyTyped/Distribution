@@ -6,11 +6,12 @@ import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod._MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Bottom extends js.Object {
+trait Anon_Bottom extends _MarginType {
   var bottom: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
   var horizontal: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
   var left: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined

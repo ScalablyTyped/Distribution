@@ -5,6 +5,7 @@ import typings.intlDashMessageformat.Anon_Locale
 import typings.intlDashMessageformat.Fn_Input
 import typings.intlDashMessageformat.libFormattersMod.FormatXMLElementFn
 import typings.intlDashMessageformat.libFormattersMod.Formats
+import typings.intlDashMessageformat.libFormattersMod.MessageFormatPart
 import typings.intlDashMessageformat.libFormattersMod.PrimitiveType
 import typings.intlDashMessageformatDashParser.libParserMod.ParseFunction
 import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
@@ -54,12 +55,8 @@ class IntlMessageFormat protected () extends js.Object {
   val message: js.Any = js.native
   def format(): String = js.native
   def format(values: Record[String, PrimitiveType]): String = js.native
-  def formatToParts(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_intl-messageformat/lib/formatters.MessageFormatPart */ _
-  ] = js.native
-  def formatToParts(values: Record[String, _]): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_intl-messageformat/lib/formatters.MessageFormatPart */ _
-  ] = js.native
+  def formatToParts(): js.Array[MessageFormatPart] = js.native
+  def formatToParts(values: Record[String, _]): js.Array[MessageFormatPart] = js.native
   def formatXMLMessage(): js.Array[String | js.Object] = js.native
   def formatXMLMessage(
     values: Record[

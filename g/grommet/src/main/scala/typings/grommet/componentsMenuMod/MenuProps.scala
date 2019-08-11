@@ -1,6 +1,5 @@
 package typings.grommet.componentsMenuMod
 
-import typings.grommet.Anon_Bottom
 import typings.grommet.Anon_BottomLeftRight
 import typings.grommet.Anon_CloseMenu
 import typings.grommet.Anon_ColorMediumOpacity
@@ -11,32 +10,33 @@ import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
 import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod.A11yTitleType
+import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.MarginType
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenuProps extends js.Object {
-  var a11yTitle: js.UndefOr[String] = js.undefined
-  var alignSelf: js.UndefOr[start | center | end | stretch] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
+  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var dropAlign: js.UndefOr[Anon_BottomLeftRight] = js.undefined
   var dropBackground: js.UndefOr[String | Anon_ColorMediumOpacity] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
-  var gridArea: js.UndefOr[String] = js.undefined
+  var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var icon: js.UndefOr[Boolean | ReactNode] = js.undefined
   var items: js.Array[js.Object]
   var justifyContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
   var label: js.UndefOr[String | ReactNode] = js.undefined
-  var margin: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var messages: js.UndefOr[Anon_CloseMenu] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
@@ -46,25 +46,25 @@ object MenuProps {
   @scala.inline
   def apply(
     items: js.Array[js.Object],
-    a11yTitle: String = null,
-    alignSelf: start | center | end | stretch = null,
+    a11yTitle: A11yTitleType = null,
+    alignSelf: AlignSelfType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dropAlign: Anon_BottomLeftRight = null,
     dropBackground: String | Anon_ColorMediumOpacity = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,
-    gridArea: String = null,
+    gridArea: GridAreaType = null,
     icon: Boolean | ReactNode = null,
     justifyContent: start | center | end | between | around | stretch = null,
     label: String | ReactNode = null,
-    margin: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
+    margin: MarginType = null,
     messages: Anon_CloseMenu = null,
     open: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large | xlarge | String = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal(items = items)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign)
     if (dropBackground != null) __obj.updateDynamic("dropBackground")(dropBackground.asInstanceOf[js.Any])

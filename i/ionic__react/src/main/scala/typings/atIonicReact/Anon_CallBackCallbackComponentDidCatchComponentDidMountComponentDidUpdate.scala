@@ -1,6 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atIonicReact.distTypesLifecycleIonLifeCycleContextMod.IonLifeCycleContextInterface
 import typings.react.reactMod.ErrorInfo
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.ReactInstance
@@ -33,7 +34,7 @@ trait Anon_CallBackCallbackComponentDidCatchComponentDidMountComponentDidUpdate 
   var componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Any, /* nextState */ js.Any, /* nextContext */ js.Any, Unit]
   ] = js.native
-  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/react/dist/types/lifecycle/IonLifeCycleContext.IonLifeCycleContextInterface */ js.Any = js.native
+  var context: IonLifeCycleContextInterface = js.native
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Any, /* prevState */ js.Any, _]] = js.native
   val props: js.Any with Anon_ChildrenReactNode = js.native
   var refs: StringDictionary[ReactInstance] = js.native

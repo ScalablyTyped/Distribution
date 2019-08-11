@@ -14,8 +14,6 @@ abstract class Project protected () extends IProject {
   def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
   @JSName("config")
   val config_Project: ProjectConfig = js.native
-  @JSName("details")
-  val details_Project: ProjectDetailsResult = js.native
   val e: ProjectDeps = js.native
   var originalConfigFile: js.UndefOr[StringDictionary[js.Any]] = js.native
   val packageJsonPath: String = js.native

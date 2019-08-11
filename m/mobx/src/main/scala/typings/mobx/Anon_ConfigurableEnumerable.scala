@@ -1,5 +1,6 @@
 package typings.mobx
 
+import typings.mobx.libCoreActionMod.IAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait Anon_ConfigurableEnumerable extends js.Object {
   var enumerable: Boolean
   var value: js.UndefOr[scala.Nothing] = js.undefined
   var writable: Boolean
-  def initializer(): js.Function with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_mobx/lib/internal.IAction */ js.Any)
+  def initializer(): js.Function with IAction
 }
 
 object Anon_ConfigurableEnumerable {
@@ -17,7 +18,7 @@ object Anon_ConfigurableEnumerable {
   def apply(
     configurable: Boolean,
     enumerable: Boolean,
-    initializer: () => js.Function with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_mobx/lib/internal.IAction */ js.Any),
+    initializer: () => js.Function with IAction,
     writable: Boolean,
     value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ConfigurableEnumerable = {

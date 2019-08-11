@@ -33,6 +33,7 @@ import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOp
 import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerOptions
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
+import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.std.Window
 import scala.scalajs.js
@@ -88,11 +89,7 @@ object distTypesMod extends js.Object {
   
   @js.native
   object modalController extends js.Object {
-    def create(
-      options: ModalOptions[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/core/dist/types/interface.ComponentRef */ _
-        ]
-    ): js.Promise[HTMLIonModalElement] = js.native
+    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -114,11 +111,7 @@ object distTypesMod extends js.Object {
   
   @js.native
   object popoverController extends js.Object {
-    def create(
-      options: PopoverOptions[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/core/dist/types/interface.ComponentRef */ _
-        ]
-    ): js.Promise[HTMLIonPopoverElement] = js.native
+    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native

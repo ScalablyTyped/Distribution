@@ -1,6 +1,12 @@
 package typings.reactDashIntl.reactDashIntlMod
 
 import typings.react.reactMod.Component
+import typings.reactDashIntl.Anon_ValueNumber
+import typings.reactDashIntl.distComponentsInjectIntlMod.WithIntlProps
+import typings.reactDashIntl.distComponentsInjectIntlMod.WrappedComponentProps
+import typings.reactDashIntl.distTypesMod.CustomFormatConfig
+import typings.reactDashIntl.reactDashIntlStrings.intl
+import typings.std.IntlNs.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +15,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormattedNumber protected ()
   extends Component[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.NumberFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :number}> */ js.Any, 
+      WithIntlProps[
+        NumberFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_ValueNumber
+      ], 
       js.Any, 
       js.Any
     ] {
-  def this(props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.NumberFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :number}> */ js.Any) = this()
+  def this(props: WithIntlProps[
+        NumberFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_ValueNumber
+      ]) = this()
   def this(
-    props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.NumberFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :number}> */ js.Any,
+    props: WithIntlProps[
+        NumberFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_ValueNumber
+      ],
     context: js.Any
   ) = this()
 }

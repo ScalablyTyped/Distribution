@@ -1,6 +1,7 @@
 package typings.grommet.componentsTextInputMod
 
 import typings.grommet.grommetStrings.onSelect
+import typings.grommet.grommetStrings.placeholder
 import typings.grommet.grommetStrings.size
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLInputElement
@@ -18,7 +19,7 @@ object ^ extends js.Object {
   val TextInput: ComponentClass[
     TextInputProps with (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      onSelect | size
+      onSelect | size | placeholder
     ]), 
     ComponentState
   ] = js.native

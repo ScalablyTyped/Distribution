@@ -1,6 +1,9 @@
 package typings.grommet
 
 import typings.grommet.contextsAnnounceContextMod.AnnounceMode
+import typings.grommet.utilsMod.AlignContentType
+import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod._MarginType
 import typings.grommet.utilsMod._PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -116,7 +119,7 @@ object grommetStrings {
   sealed trait area extends _PolymorphicType
   
   @js.native
-  sealed trait around extends js.Object
+  sealed trait around extends AlignContentType
   
   @js.native
   sealed trait article extends _PolymorphicType
@@ -164,7 +167,7 @@ object grommetStrings {
   sealed trait below extends js.Object
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait between extends AlignContentType
   
   @js.native
   sealed trait big extends _PolymorphicType
@@ -206,7 +209,9 @@ object grommetStrings {
   sealed trait caption extends _PolymorphicType
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends AlignContentType
+       with AlignSelfType
   
   @js.native
   sealed trait circle extends _PolymorphicType
@@ -314,7 +319,9 @@ object grommetStrings {
   sealed trait embed extends _PolymorphicType
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends AlignContentType
+       with AlignSelfType
   
   @js.native
   sealed trait evenly extends js.Object
@@ -503,6 +510,9 @@ object grommetStrings {
   sealed trait i extends _PolymorphicType
   
   @js.native
+  sealed trait id extends js.Object
+  
+  @js.native
   sealed trait iframe extends _PolymorphicType
   
   @js.native
@@ -536,7 +546,7 @@ object grommetStrings {
   sealed trait label extends _PolymorphicType
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large extends _MarginType
   
   @js.native
   sealed trait last extends js.Object
@@ -578,7 +588,7 @@ object grommetStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium extends _MarginType
   
   @js.native
   sealed trait menu extends _PolymorphicType
@@ -608,6 +618,9 @@ object grommetStrings {
   sealed trait mpath extends _PolymorphicType
   
   @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
   sealed trait nav extends _PolymorphicType
   
   @js.native
@@ -617,7 +630,7 @@ object grommetStrings {
   sealed trait noindex extends _PolymorphicType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends _MarginType
   
   @js.native
   sealed trait normal extends js.Object
@@ -666,6 +679,12 @@ object grommetStrings {
   
   @js.native
   sealed trait picture extends _PolymorphicType
+  
+  @js.native
+  sealed trait placeholder extends js.Object
+  
+  @js.native
+  sealed trait plain extends js.Object
   
   @js.native
   sealed trait polite extends AnnounceMode
@@ -779,7 +798,9 @@ object grommetStrings {
   sealed trait slideUp extends js.Object
   
   @js.native
-  sealed trait small extends _PolymorphicType
+  sealed trait small
+    extends _MarginType
+       with _PolymorphicType
   
   @js.native
   sealed trait solid extends js.Object
@@ -791,13 +812,17 @@ object grommetStrings {
   sealed trait span extends _PolymorphicType
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends AlignContentType
+       with AlignSelfType
   
   @js.native
   sealed trait stop extends _PolymorphicType
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends AlignContentType
+       with AlignSelfType
   
   @js.native
   sealed trait strong extends _PolymorphicType
@@ -893,6 +918,9 @@ object grommetStrings {
   sealed trait use extends _PolymorphicType
   
   @js.native
+  sealed trait value extends js.Object
+  
+  @js.native
   sealed trait `var` extends _PolymorphicType
   
   @js.native
@@ -920,16 +948,16 @@ object grommetStrings {
   sealed trait window extends js.Object
   
   @js.native
-  sealed trait xlarge extends js.Object
+  sealed trait xlarge extends _MarginType
   
   @js.native
-  sealed trait xsmall extends js.Object
+  sealed trait xsmall extends _MarginType
   
   @js.native
   sealed trait xxlarge extends js.Object
   
   @js.native
-  sealed trait xxsmall extends js.Object
+  sealed trait xxsmall extends _MarginType
   
   @js.native
   sealed trait zoomIn extends js.Object
@@ -1268,6 +1296,8 @@ object grommetStrings {
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
@@ -1338,6 +1368,8 @@ object grommetStrings {
   @scala.inline
   def mpath: mpath = "mpath".asInstanceOf[mpath]
   @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
   def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
@@ -1377,6 +1409,10 @@ object grommetStrings {
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
+  @scala.inline
+  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
@@ -1527,6 +1563,8 @@ object grommetStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline

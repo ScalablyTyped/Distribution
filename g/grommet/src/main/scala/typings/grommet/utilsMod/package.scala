@@ -1,6 +1,9 @@
 package typings.grommet
 
+import typings.grommet.Anon_Dark
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.ReactNode
 import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js
@@ -8,15 +11,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilsMod {
+  type A11yTitleType = String
+  type ColorType = String | Anon_Dark
   type DeepFreeze = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with js.Any
+  type GridAreaType = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.none
+    - typings.grommet.grommetStrings.xxsmall
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - typings.grommet.Anon_Bottom
+    - java.lang.String
+  */
+  type MarginType = _MarginType | String
   type NonUndefined[T] = T
   type NonUndefinedProps[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
     */ typings.grommet.grommetStrings.NonUndefinedProps with T
   type Omit[T, K] = Pick[T, Exclude[String, K]]
+  type PlaceHolderType = String | Element | ReactNode
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.a
     - typings.grommet.grommetStrings.abbr

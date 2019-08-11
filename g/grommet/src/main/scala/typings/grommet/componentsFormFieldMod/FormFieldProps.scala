@@ -1,6 +1,7 @@
 package typings.grommet.componentsFormFieldMod
 
 import typings.grommet.Anon_Message
+import typings.grommet.utilsMod.PlaceHolderType
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,8 @@ trait FormFieldProps extends js.Object {
   var label: js.UndefOr[String | ReactNode] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var pad: js.UndefOr[Boolean] = js.undefined
+  // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
+  var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var validate: js.UndefOr[Anon_Message | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
 }
@@ -28,6 +31,7 @@ object FormFieldProps {
     label: String | ReactNode = null,
     name: String = null,
     pad: js.UndefOr[Boolean] = js.undefined,
+    placeholder: PlaceHolderType = null,
     required: js.UndefOr[Boolean] = js.undefined,
     validate: Anon_Message | (js.Function1[/* repeated */ js.Any, _]) = null
   ): FormFieldProps = {
@@ -39,6 +43,7 @@ object FormFieldProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormFieldProps]

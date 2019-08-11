@@ -4,6 +4,7 @@ import typings.antd.Anon_ItemUnit
 import typings.antd.Anon_LeftDataSourceRightDataSource
 import typings.antd.antdStrings.sourceSelectedKeys
 import typings.antd.antdStrings.targetSelectedKeys
+import typings.antd.libCollapseCollapseMod.ExpandIconPosition
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
@@ -26,13 +27,8 @@ trait Transfer
   ): Anon_ItemUnit = js.native
   def getSelectedKeysName(direction: TransferDirection): sourceSelectedKeys | targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[String] = js.native
-  def handleClear(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any
-  ): Unit = js.native
-  def handleFilter(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    e: ChangeEvent[HTMLInputElement]
-  ): Unit = js.native
+  def handleClear(direction: ExpandIconPosition): Unit = js.native
+  def handleFilter(direction: ExpandIconPosition, e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleLeftClear(): Unit = js.native
   def handleLeftFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleLeftScroll(e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native
@@ -43,36 +39,15 @@ trait Transfer
   def handleRightScroll(e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native
   def handleRightSelect(selectedItem: TransferItem, checked: Boolean): Unit = js.native
   def handleRightSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: Boolean): Unit = js.native
-  def handleScroll(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    e: SyntheticEvent[HTMLDivElement, Event]
-  ): Unit = js.native
-  def handleSelect(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    selectedItem: TransferItem,
-    checked: Boolean
-  ): Unit = js.native
-  def handleSelectAll(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    filteredDataSource: js.Array[TransferItem],
-    checkAll: Boolean
-  ): Unit = js.native
+  def handleScroll(direction: ExpandIconPosition, e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native
+  def handleSelect(direction: ExpandIconPosition, selectedItem: TransferItem, checked: Boolean): Unit = js.native
+  def handleSelectAll(direction: ExpandIconPosition, filteredDataSource: js.Array[TransferItem], checkAll: Boolean): Unit = js.native
   def handleSelectChange(direction: TransferDirection, holder: js.Array[String]): Unit = js.native
-  def moveTo(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any
-  ): Unit = js.native
+  def moveTo(direction: ExpandIconPosition): Unit = js.native
   def moveToLeft(): Unit = js.native
   def moveToRight(): Unit = js.native
-  def onItemSelect(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    selectedKey: String,
-    checked: Boolean
-  ): Unit = js.native
-  def onItemSelectAll(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
-    selectedKeys: js.Array[String],
-    checkAll: Boolean
-  ): Unit = js.native
+  def onItemSelect(direction: ExpandIconPosition, selectedKey: String, checked: Boolean): Unit = js.native
+  def onItemSelectAll(direction: ExpandIconPosition, selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def onLeftItemSelect(selectedKey: String, checked: Boolean): Unit = js.native
   def onLeftItemSelectAll(selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def onRightItemSelect(selectedKey: String, checked: Boolean): Unit = js.native

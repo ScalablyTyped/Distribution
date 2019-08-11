@@ -19,6 +19,7 @@ import typings.xstate.esTypesMod.SingleOrArray
 import typings.xstate.esTypesMod.StateMachine
 import typings.xstate.esTypesMod.StateSchema
 import typings.xstate.esTypesMod.StateValue
+import typings.xstate.esTypesMod.StateValueMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,10 +93,8 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
     */
   def init(): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def init(initialState: String): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  def init(
-    initialState: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/es/types.StateValueMap */ js.Any
-  ): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def init(initialState: State[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def init(initialState: StateValueMap): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Returns the next state given the interpreter's current state and the event.
     *

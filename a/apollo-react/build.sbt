@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-52a6c9"
+version := "0.7.1-e8229a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "apollo-cache" % "1.3.2-79109a",
-  "org.scalablytyped" %%% "apollo-client" % "2.6.3-a88802",
+  "org.scalablytyped" %%% "apollo-client" % "2.6.4-a88802",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-16bcb2",
   "org.scalablytyped" %%% "apollo-utilities" % "1.3.2-f46fa0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",

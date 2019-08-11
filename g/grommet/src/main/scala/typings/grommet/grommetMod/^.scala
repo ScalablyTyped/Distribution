@@ -60,8 +60,15 @@ import typings.grommet.contextsThemeContextMod.ThemeContextI
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.controls
 import typings.grommet.grommetStrings.href
+import typings.grommet.grommetStrings.id
+import typings.grommet.grommetStrings.mask
+import typings.grommet.grommetStrings.name
 import typings.grommet.grommetStrings.onSelect
+import typings.grommet.grommetStrings.placeholder
+import typings.grommet.grommetStrings.plain
 import typings.grommet.grommetStrings.size
+import typings.grommet.grommetStrings.title
+import typings.grommet.grommetStrings.value
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLAnchorElement
 import typings.react.HTMLButtonElement
@@ -163,13 +170,22 @@ object ^ extends js.Object {
     DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
-  val DropButton: ComponentClass[DropButtonProps with ButtonProps, ComponentState] = js.native
+  val DropButton: ComponentClass[
+    DropButtonProps with ButtonProps with (Omit[
+      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+      color
+    ]), 
+    ComponentState
+  ] = js.native
   val Form: ComponentClass[
     FormProps with (DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]), 
     ComponentState
   ] = js.native
   val FormField: ComponentClass[
-    FormFieldProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+    FormFieldProps with (typings.std.Omit[
+      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+      placeholder
+    ]), 
     ComponentState
   ] = js.native
   val Grid: FC[
@@ -196,7 +212,10 @@ object ^ extends js.Object {
     ComponentState
   ] = js.native
   val MaskedInput: ComponentClass[
-    MaskedInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+    MaskedInputProps with (typings.std.Omit[
+      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+      id | name | mask | plain | size | value
+    ]), 
     ComponentState
   ] = js.native
   val Menu: ComponentClass[
@@ -235,7 +254,10 @@ object ^ extends js.Object {
     ComponentState
   ] = js.native
   val Tab: ComponentClass[
-    TabProps with (DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]), 
+    TabProps with (Omit[
+      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+      title
+    ]), 
     ComponentState
   ] = js.native
   val Table: FC[
@@ -270,7 +292,7 @@ object ^ extends js.Object {
   val TextInput: ComponentClass[
     TextInputProps with (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      onSelect | size
+      onSelect | size | placeholder
     ]), 
     ComponentState
   ] = js.native

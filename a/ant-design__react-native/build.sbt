@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__react-native"
-version := "3.1.12-ec06ca"
+version := "3.1.12-17e00d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

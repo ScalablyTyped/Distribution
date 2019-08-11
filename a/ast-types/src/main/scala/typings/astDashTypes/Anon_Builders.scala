@@ -1,6 +1,7 @@
 package typings.astDashTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.astDashTypes.genNamedTypesMod.NamedTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Builders extends js.Object {
   var Type: Anon_Def = js.native
-  var builders: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/gen/builders.builders */ js.Any = js.native
+  var builders: typings.astDashTypes.genBuildersMod.builders = js.native
   var builtInTypes: Anon_Array = js.native
-  var namedTypes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/gen/namedTypes.NamedTypes */ js.Any = js.native
+  var namedTypes: NamedTypes = js.native
   def computeSupertypeLookupTable(candidates: js.Any): StringDictionary[js.Any] = js.native
   def defineMethod(name: js.Any): js.Function = js.native
   def defineMethod(name: js.Any, func: js.Function): js.Function = js.native

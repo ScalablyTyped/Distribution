@@ -1,6 +1,5 @@
 package typings.grommet.componentsRangeSelectorMod
 
-import typings.grommet.Anon_Dark
 import typings.grommet.Anon_Lower
 import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.horizontal
@@ -13,12 +12,13 @@ import typings.grommet.grommetStrings.weak
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RangeSelectorProps extends js.Object {
-  var color: js.UndefOr[String | Anon_Dark] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   var invert: js.UndefOr[Boolean] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
@@ -36,7 +36,7 @@ object RangeSelectorProps {
   @scala.inline
   def apply(
     values: js.Array[Double],
-    color: String | Anon_Dark = null,
+    color: ColorType = null,
     direction: horizontal | vertical = null,
     invert: js.UndefOr[Boolean] = js.undefined,
     max: Int | Double = null,

@@ -1,26 +1,21 @@
 package typings.grommet.componentsCalendarMod
 
-import typings.grommet.Anon_Bottom
 import typings.grommet.grommetStrings.`0`
 import typings.grommet.grommetStrings.`1`
-import typings.grommet.grommetStrings.center
-import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.start
-import typings.grommet.grommetStrings.stretch
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod.A11yTitleType
+import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CalendarProps extends js.Object {
-  var a11yTitle: js.UndefOr[String] = js.undefined
-  var alignSelf: js.UndefOr[start | center | end | stretch] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
+  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var animate: js.UndefOr[Boolean] = js.undefined
   var bounds: js.UndefOr[js.Array[String]] = js.undefined
   var date: js.UndefOr[String] = js.undefined
@@ -28,10 +23,10 @@ trait CalendarProps extends js.Object {
   var daysOfWeek: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   var firstDayOfWeek: js.UndefOr[`0` | `1`] = js.undefined
-  var gridArea: js.UndefOr[String] = js.undefined
+  var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var header: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var onReference: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
@@ -43,8 +38,8 @@ trait CalendarProps extends js.Object {
 object CalendarProps {
   @scala.inline
   def apply(
-    a11yTitle: String = null,
-    alignSelf: start | center | end | stretch = null,
+    a11yTitle: A11yTitleType = null,
+    alignSelf: AlignSelfType = null,
     animate: js.UndefOr[Boolean] = js.undefined,
     bounds: js.Array[String] = null,
     date: String = null,
@@ -52,10 +47,10 @@ object CalendarProps {
     daysOfWeek: js.UndefOr[Boolean] = js.undefined,
     disabled: js.Array[String | js.Array[String]] = null,
     firstDayOfWeek: `0` | `1` = null,
-    gridArea: String = null,
+    gridArea: GridAreaType = null,
     header: /* repeated */ js.Any => _ = null,
     locale: String = null,
-    margin: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
+    margin: MarginType = null,
     onReference: /* repeated */ js.Any => _ = null,
     onSelect: /* repeated */ js.Any => _ = null,
     range: js.UndefOr[Boolean] = js.undefined,
@@ -65,7 +60,7 @@ object CalendarProps {
   ): CalendarProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (date != null) __obj.updateDynamic("date")(date)

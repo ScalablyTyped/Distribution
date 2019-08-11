@@ -59,16 +59,21 @@ import typings.grommet.grommetStrings.xxlarge
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.grommetStrings.zoomIn
 import typings.grommet.grommetStrings.zoomOut
+import typings.grommet.utilsMod.A11yTitleType
+import typings.grommet.utilsMod.AlignContentType
+import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BoxProps extends js.Object {
-  var a11yTitle: js.UndefOr[String] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var align: js.UndefOr[start | center | end | baseline | stretch] = js.undefined
-  var alignContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
-  var alignSelf: js.UndefOr[start | center | end | stretch] = js.undefined
+  var alignContent: js.UndefOr[AlignContentType] = js.undefined
+  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var animation: js.UndefOr[
     fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Anon_Delay | (js.Array[
       fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Anon_Delay
@@ -85,10 +90,10 @@ trait BoxProps extends js.Object {
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
   var gap: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var gridArea: js.UndefOr[String] = js.undefined
+  var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
   var justify: js.UndefOr[start | center | between | around | evenly | end] = js.undefined
-  var margin: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var overflow: js.UndefOr[auto | hidden | scroll | visible | Anon_Auto | String] = js.undefined
   var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
@@ -103,10 +108,10 @@ trait BoxProps extends js.Object {
 object BoxProps {
   @scala.inline
   def apply(
-    a11yTitle: String = null,
+    a11yTitle: A11yTitleType = null,
     align: start | center | end | baseline | stretch = null,
-    alignContent: start | center | end | between | around | stretch = null,
-    alignSelf: start | center | end | stretch = null,
+    alignContent: AlignContentType = null,
+    alignSelf: AlignSelfType = null,
     animation: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Anon_Delay | (js.Array[
       fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Anon_Delay
     ]) = null,
@@ -119,10 +124,10 @@ object BoxProps {
     fill: horizontal | vertical | Boolean = null,
     flex: grow | shrink | Boolean | Anon_Grow = null,
     gap: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    gridArea: String = null,
+    gridArea: GridAreaType = null,
     height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String = null,
     justify: start | center | between | around | evenly | end = null,
-    margin: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
+    margin: MarginType = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
@@ -134,8 +139,8 @@ object BoxProps {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent)
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])

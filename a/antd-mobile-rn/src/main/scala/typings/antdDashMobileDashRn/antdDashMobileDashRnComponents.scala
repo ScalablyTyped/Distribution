@@ -172,5 +172,7 @@ object antdDashMobileDashRnComponents extends antdDashMobileDashRnProps {
   def WhiteSpace: ComponentType[typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.WhiteSpace].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps]]
   @scala.inline
   def WingBlank: ComponentType[typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.WingBlank].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps]]
+  @scala.inline
+  def `index.native`: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
 }
 

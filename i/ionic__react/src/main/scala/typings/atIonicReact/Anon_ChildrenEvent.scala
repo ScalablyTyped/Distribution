@@ -12,7 +12,7 @@ trait Anon_ChildrenEvent extends js.Object {
   var onDidDismiss: js.UndefOr[
     js.Function1[
       /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/core.OverlayEventDetail<any> */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_core.OverlayEventDetail<any> */ _
       ], 
       Unit
     ]
@@ -25,7 +25,7 @@ object Anon_ChildrenEvent {
     children: ReactNode,
     isOpen: Boolean,
     onDidDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/core.OverlayEventDetail<any> */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_core.OverlayEventDetail<any> */ _
     ] => Unit = null
   ): Anon_ChildrenEvent = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpen = isOpen)

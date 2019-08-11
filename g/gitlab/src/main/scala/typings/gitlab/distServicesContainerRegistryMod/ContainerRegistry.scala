@@ -2,6 +2,7 @@ package typings.gitlab.distServicesContainerRegistryMod
 
 import typings.gitlab.Anon_KeepN
 import typings.gitlab.distInfrastructureMod.BaseService
+import typings.gitlab.distInfrastructureMod.GetResponse
 import typings.gitlab.distInfrastructureMod.PaginatedRequestOptions
 import typings.gitlab.distInfrastructureMod.Sudo
 import typings.gitlab.distServicesMod.ProjectId
@@ -17,23 +18,11 @@ trait ContainerRegistry extends BaseService {
   def removeTag(projectId: ProjectId, repositoryId: Double, tagName: String, options: Sudo): js.Promise[js.Object] = js.native
   def removeTags(projectId: ProjectId, repositoryId: Double, tagNameRegex: String): js.Promise[js.Object] = js.native
   def removeTags(projectId: ProjectId, repositoryId: Double, tagNameRegex: String, options: Sudo with Anon_KeepN): js.Promise[js.Object] = js.native
-  def repositories(projectId: ProjectId): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
-  def repositories(projectId: ProjectId, options: PaginatedRequestOptions): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
-  def showTag(projectId: ProjectId, repositoryId: Double, tagName: String): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
-  def showTag(projectId: ProjectId, repositoryId: Double, tagName: String, options: Sudo): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
-  def tags(projectId: ProjectId, repositoryId: Double): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
-  def tags(projectId: ProjectId, repositoryId: Double, options: PaginatedRequestOptions): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
-  ] = js.native
+  def repositories(projectId: ProjectId): js.Promise[GetResponse] = js.native
+  def repositories(projectId: ProjectId, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+  def showTag(projectId: ProjectId, repositoryId: Double, tagName: String): js.Promise[GetResponse] = js.native
+  def showTag(projectId: ProjectId, repositoryId: Double, tagName: String, options: Sudo): js.Promise[GetResponse] = js.native
+  def tags(projectId: ProjectId, repositoryId: Double): js.Promise[GetResponse] = js.native
+  def tags(projectId: ProjectId, repositoryId: Double, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
 }
 

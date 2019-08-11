@@ -8,6 +8,9 @@ import typings.xstate.Fn_Event
 import typings.xstate.Fn_EventOptions
 import typings.xstate.esTypesMod.ActivityActionObject
 import typings.xstate.esTypesMod.ActivityDefinition
+import typings.xstate.esTypesMod.AssignAction
+import typings.xstate.esTypesMod.Assigner
+import typings.xstate.esTypesMod.CancelAction
 import typings.xstate.esTypesMod.DoneEventObject
 import typings.xstate.esTypesMod.Event
 import typings.xstate.esTypesMod.EventObject
@@ -42,18 +45,16 @@ object actions extends js.Object {
   def after(delayRef: String, id: String): String = js.native
   def after(delayRef: Double): String = js.native
   def after(delayRef: Double, id: String): String = js.native
-  def assign[TContext, TEvent /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/es/types.EventObject */ js.Any */](
-    assignment: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/es/types.Assigner<TContext, TEvent> */ js.Any
-  ): js.Any = js.native
-  def assign[TContext, TEvent /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/es/types.EventObject */ js.Any */](
+  def assign[TContext, TEvent /* <: EventObject */](
     assignment: Partial[
       /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof TContext ]: (context : TContext, event : TEvent): TContext[K] | TContext[K]}
     */ typings.xstate.xstateStrings.actions with js.Any
     ]
-  ): js.Any = js.native
-  def cancel(sendId: String): js.Any = js.native
-  def cancel(sendId: Double): js.Any = js.native
+  ): AssignAction[TContext, TEvent] = js.native
+  def assign[TContext, TEvent /* <: EventObject */](assignment: Assigner[TContext, TEvent]): AssignAction[TContext, TEvent] = js.native
+  def cancel(sendId: String): CancelAction = js.native
+  def cancel(sendId: Double): CancelAction = js.native
   def done(id: String): DoneEventObject = js.native
   def done(id: String, data: js.Any): DoneEventObject = js.native
   def log[TContext, TEvent /* <: EventObject */](): Anon_Ctx[TContext, TEvent] = js.native

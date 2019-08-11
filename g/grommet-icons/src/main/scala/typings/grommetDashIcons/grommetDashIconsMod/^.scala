@@ -28,7 +28,7 @@ object ^ extends js.Object {
   val Android: Icon = js.native
   val Announce: Icon = js.native
   val Apple: Icon = js.native
-  val ApppleAppStore: Icon = js.native
+  val AppleAppStore: Icon = js.native
   val Apps: Icon = js.native
   val Archive: Icon = js.native
   val Archlinux: Icon = js.native
@@ -107,6 +107,7 @@ object ^ extends js.Object {
   val Code: Icon = js.native
   val CodeSandbox: Icon = js.native
   val Codepen: Icon = js.native
+  val Coffee: Icon = js.native
   val Columns: Icon = js.native
   val Command: Icon = js.native
   val Compare: Icon = js.native
@@ -238,6 +239,7 @@ object ^ extends js.Object {
   val Freebsd: Icon = js.native
   val Gallery: Icon = js.native
   val Gamepad: Icon = js.native
+  val Gatsbyjs: Icon = js.native
   val Gift: Icon = js.native
   val Github: Icon = js.native
   val Globe: Icon = js.native
@@ -246,6 +248,7 @@ object ^ extends js.Object {
   val GooglePlay: Icon = js.native
   val GooglePlus: Icon = js.native
   val GoogleWallet: Icon = js.native
+  val GraphQl: Icon = js.native
   val Gremlin: Icon = js.native
   val Grid: Icon = js.native
   val Grommet: Icon = js.native
@@ -255,6 +258,7 @@ object ^ extends js.Object {
   val Halt: Icon = js.native
   val Help: Icon = js.native
   val Heroku: Icon = js.native
+  val Hide: Icon = js.native
   val History: Icon = js.native
   val Home: Icon = js.native
   val Horton: Icon = js.native
@@ -332,11 +336,13 @@ object ^ extends js.Object {
   val New: Icon = js.native
   val NewWindow: Icon = js.native
   val Next: Icon = js.native
+  val Node: Icon = js.native
   val Nodes: Icon = js.native
   val Norton: Icon = js.native
   val Note: Icon = js.native
   val Notes: Icon = js.native
   val Notification: Icon = js.native
+  val Npm: Icon = js.native
   val ObjectGroup: Icon = js.native
   val ObjectUngroup: Icon = js.native
   val OfflineStorage: Icon = js.native
@@ -431,9 +437,12 @@ object ^ extends js.Object {
   val Snapchat: Icon = js.native
   val Solaris: Icon = js.native
   val Sort: Icon = js.native
+  val Soundcloud: Icon = js.native
   val Spa: Icon = js.native
+  val Spectrum: Icon = js.native
   val Split: Icon = js.native
   val Splits: Icon = js.native
+  val Spotify: Icon = js.native
   val Square: Icon = js.native
   val StackOverflow: Icon = js.native
   val Stakeholder: Icon = js.native

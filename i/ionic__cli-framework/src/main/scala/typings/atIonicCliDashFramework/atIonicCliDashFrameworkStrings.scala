@@ -75,6 +75,9 @@ object atIonicCliDashFrameworkStrings {
   sealed trait failure extends js.Object
   
   @js.native
+  sealed trait help extends js.Object
+  
+  @js.native
   sealed trait hidden extends MetadataGroup
   
   @js.native
@@ -163,6 +166,8 @@ object atIonicCliDashFrameworkStrings {
   def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
+  @scala.inline
+  def help: help = "help".asInstanceOf[help]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline

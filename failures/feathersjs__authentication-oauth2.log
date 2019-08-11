@@ -4,14 +4,15 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(feathersjs),List(authentication-oauth2)) [id => @feathersjs/authentication-oauth2, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(feathersjs,Some(authentication-oauth2)) [id => @feathersjs/authentication-oauth2, phase => typescript] 
 [info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Verifier)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsTypeParam() / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(Strategy))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof Strategy [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(self)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(feathersAuthenticationOAuth2) / TsTypeIntersect() / TsTypeQuery())] 
-[error] TsTreeScope.scala:241 Circular tree detected [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeConstructor() / TsTypeFunction() / TsFunSig() / TsTypeParam() / TsTypeRef())] com.olvind.logging.Logger$LoggedException: Circular tree detected
+[error] TsTreeScope.scala:242 Circular tree detected [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeConstructor() / TsTypeFunction() / TsFunSig() / TsTypeParam() / TsTypeRef())] com.olvind.logging.Logger$LoggedException: Circular tree detected
 	at com.olvind.logging.Logger$LoggingOps$.fatal$extension(Logger.scala:172)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.<init>(TsTreeScope.scala:241)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.<init>(TsTreeScope.scala:242)
 	at com.olvind.tso.ts.TsTreeScope.$div(TsTreeScope.scala:30)
 	at com.olvind.tso.ts.TsTreeScope.$div$(TsTreeScope.scala:29)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.$div(TsTreeScope.scala:228)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.$div(TsTreeScope.scala:229)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.withTree(TreeTransformations.scala:6)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.withTree(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.TreeTransformation.visitTsTypeRef(TreeTransformation.scala:438)

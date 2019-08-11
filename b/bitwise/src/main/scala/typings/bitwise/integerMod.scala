@@ -13,12 +13,8 @@ object integerMod extends js.Object {
   def toggleBit(int32: Double, position: Double): Double = js.native
   @js.native
   object default extends js.Object {
-    def getBit(int32: Double, position: Double): js.Any = js.native
-    def setBit(
-      int32: Double,
-      position: Double,
-      value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ js.Any
-    ): js.Any = js.native
+    def getBit(int32: Double, position: Double): Bit = js.native
+    def setBit(int32: Double, position: Double, value: Bit): Bit = js.native
     def toggleBit(int32: Double, position: Double): Double = js.native
   }
   

@@ -1,6 +1,12 @@
 package typings.reactDashIntl.reactDashIntlMod
 
 import typings.react.reactMod.Component
+import typings.reactDashIntl.Anon_Value
+import typings.reactDashIntl.distComponentsInjectIntlMod.WithIntlProps
+import typings.reactDashIntl.distComponentsInjectIntlMod.WrappedComponentProps
+import typings.reactDashIntl.distTypesMod.CustomFormatConfig
+import typings.reactDashIntl.reactDashIntlStrings.intl
+import typings.std.IntlNs.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +15,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormattedTime protected ()
   extends Component[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :string | number | Date | undefined}> */ js.Any, 
+      WithIntlProps[
+        DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
+      ], 
       js.Any, 
       js.Any
     ] {
-  def this(props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :string | number | Date | undefined}> */ js.Any) = this()
+  def this(props: WithIntlProps[
+        DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
+      ]) = this()
   def this(
-    props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-intl/dist/components/injectIntl.WithIntlProps<Intl.DateTimeFormatOptions & imported_react-intl/dist/types.CustomFormatConfig & imported_react-intl/dist/components/injectIntl.WrappedComponentProps<'intl'> & {  value  :string | number | Date | undefined}> */ js.Any,
+    props: WithIntlProps[
+        DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
+      ],
     context: js.Any
   ) = this()
 }

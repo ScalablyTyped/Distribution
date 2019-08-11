@@ -218,6 +218,7 @@
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
+| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bitwise"
-version := "2.0.3-30c29d"
+version := "2.0.3-cb7580"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

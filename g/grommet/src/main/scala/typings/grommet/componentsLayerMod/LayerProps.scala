@@ -1,6 +1,5 @@
 package typings.grommet.componentsLayerMod
 
-import typings.grommet.Anon_BottomHorizontal
 import typings.grommet.grommetStrings.`bottom-left`
 import typings.grommet.grommetStrings.`bottom-right`
 import typings.grommet.grommetStrings.`top-left`
@@ -10,17 +9,13 @@ import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.fadeIn
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.horizontal
-import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.left
-import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.right
 import typings.grommet.grommetStrings.slide
-import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.top
 import typings.grommet.grommetStrings.vertical
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +24,7 @@ trait LayerProps extends js.Object {
   var animate: js.UndefOr[Boolean] = js.undefined
   var animation: js.UndefOr[none | slide | fadeIn | Boolean] = js.undefined
   var full: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
-  var margin: js.UndefOr[
-    none | xxsmall | xsmall | small | medium | large | Anon_BottomHorizontal | String
-  ] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var modal: js.UndefOr[Boolean] = js.undefined
   var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onEsc: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
@@ -48,7 +41,7 @@ object LayerProps {
     animate: js.UndefOr[Boolean] = js.undefined,
     animation: none | slide | fadeIn | Boolean = null,
     full: Boolean | vertical | horizontal = null,
-    margin: none | xxsmall | xsmall | small | medium | large | Anon_BottomHorizontal | String = null,
+    margin: MarginType = null,
     modal: js.UndefOr[Boolean] = js.undefined,
     onClickOutside: /* repeated */ js.Any => _ = null,
     onEsc: /* repeated */ js.Any => _ = null,

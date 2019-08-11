@@ -7,6 +7,7 @@ import typings.antd.TypeofClassListDefaultProps
 import typings.antd.TypeofClassSearchDefaultPropsAnonPlaceholder
 import typings.antd.libTransferMod.TransferProps
 import typings.antd.libTransferMod.default
+import typings.antd.libTransferOperationMod.TransferOperationProps
 import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +28,7 @@ object Transfer extends js.Object {
   var defaultProps: Anon_DataSourceLocale = js.native
   var propTypes: Anon_ArgsBodyClassName = js.native
   def Operation(
-    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyle: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/transfer/operation.TransferOperationProps */ js.Any
+    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyle: TransferOperationProps
   ): Element = js.native
   def getDerivedStateFromProps(nextProps: TransferProps): Anon_SourceSelectedKeys | Null = js.native
 }

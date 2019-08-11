@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/interface", "popoverController")
 @js.native
 object popoverController extends js.Object {
-  def create(
-    options: PopoverOptions[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/core/dist/types/interface.ComponentRef */ _
-    ]
-  ): js.Promise[HTMLIonPopoverElement] = js.native
+  def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
   def dismiss(): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
