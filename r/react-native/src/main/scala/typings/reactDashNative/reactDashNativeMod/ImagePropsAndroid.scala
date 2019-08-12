@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait ImagePropsAndroid extends js.Object {
   /**
-    * Duration of fade in animation.
+    * Duration of fade in animation in ms. Defaults to 300
+    *
+    * @platform android
     */
   var fadeDuration: js.UndefOr[Double] = js.undefined
   /**
