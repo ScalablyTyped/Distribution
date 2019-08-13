@@ -13,12 +13,12 @@ trait ApplicationAutoScaling extends Service {
   @JSName("config")
   var config_ApplicationAutoScaling: ConfigBase with ClientConfiguration = js.native
   /**
-    * Deletes the specified Application Auto Scaling scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the CloudWatch alarm associated with the scaling policy, even if it no longer has an associated action. To create a scaling policy or update an existing one, see PutScalingPolicy.
+    * Deletes the specified scaling policy for an Application Auto Scaling scalable target. Deleting a step scaling policy deletes the underlying alarm action, but does not delete the CloudWatch alarm associated with the scaling policy, even if it no longer has an associated action. For more information, see Delete a Step Scaling Policy and Delete a Target Tracking Scaling Policy in the Application Auto Scaling User Guide. To create a scaling policy or update an existing one, see PutScalingPolicy.
     */
   def deleteScalingPolicy(): Request[DeleteScalingPolicyResponse, AWSError] = js.native
   def deleteScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteScalingPolicyResponse, Unit]): Request[DeleteScalingPolicyResponse, AWSError] = js.native
   /**
-    * Deletes the specified Application Auto Scaling scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the CloudWatch alarm associated with the scaling policy, even if it no longer has an associated action. To create a scaling policy or update an existing one, see PutScalingPolicy.
+    * Deletes the specified scaling policy for an Application Auto Scaling scalable target. Deleting a step scaling policy deletes the underlying alarm action, but does not delete the CloudWatch alarm associated with the scaling policy, even if it no longer has an associated action. For more information, see Delete a Step Scaling Policy and Delete a Target Tracking Scaling Policy in the Application Auto Scaling User Guide. To create a scaling policy or update an existing one, see PutScalingPolicy.
     */
   def deleteScalingPolicy(params: DeleteScalingPolicyRequest): Request[DeleteScalingPolicyResponse, AWSError] = js.native
   def deleteScalingPolicy(
@@ -26,12 +26,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteScalingPolicyResponse, Unit]
   ): Request[DeleteScalingPolicyResponse, AWSError] = js.native
   /**
-    * Deletes the specified Application Auto Scaling scheduled action.
+    * Deletes the specified scheduled action for an Application Auto Scaling scalable target. For more information, see Delete a Scheduled Action in the Application Auto Scaling User Guide.
     */
   def deleteScheduledAction(): Request[DeleteScheduledActionResponse, AWSError] = js.native
   def deleteScheduledAction(callback: js.Function2[/* err */ AWSError, /* data */ DeleteScheduledActionResponse, Unit]): Request[DeleteScheduledActionResponse, AWSError] = js.native
   /**
-    * Deletes the specified Application Auto Scaling scheduled action.
+    * Deletes the specified scheduled action for an Application Auto Scaling scalable target. For more information, see Delete a Scheduled Action in the Application Auto Scaling User Guide.
     */
   def deleteScheduledAction(params: DeleteScheduledActionRequest): Request[DeleteScheduledActionResponse, AWSError] = js.native
   def deleteScheduledAction(
@@ -39,12 +39,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteScheduledActionResponse, Unit]
   ): Request[DeleteScheduledActionResponse, AWSError] = js.native
   /**
-    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
+    * Deregisters an Application Auto Scaling scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
     */
   def deregisterScalableTarget(): Request[DeregisterScalableTargetResponse, AWSError] = js.native
   def deregisterScalableTarget(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterScalableTargetResponse, Unit]): Request[DeregisterScalableTargetResponse, AWSError] = js.native
   /**
-    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
+    * Deregisters an Application Auto Scaling scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
     */
   def deregisterScalableTarget(params: DeregisterScalableTargetRequest): Request[DeregisterScalableTargetResponse, AWSError] = js.native
   def deregisterScalableTarget(
@@ -52,12 +52,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterScalableTargetResponse, Unit]
   ): Request[DeregisterScalableTargetResponse, AWSError] = js.native
   /**
-    * Gets information about the scalable targets in the specified namespace. You can filter the results using the ResourceIds and ScalableDimension parameters. To create a scalable target or update an existing one, see RegisterScalableTarget. If you are no longer using a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Gets information about the scalable targets in the specified namespace. You can filter the results using ResourceIds and ScalableDimension. To create a scalable target or update an existing one, see RegisterScalableTarget. If you are no longer using a scalable target, you can deregister it using DeregisterScalableTarget.
     */
   def describeScalableTargets(): Request[DescribeScalableTargetsResponse, AWSError] = js.native
   def describeScalableTargets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalableTargetsResponse, Unit]): Request[DescribeScalableTargetsResponse, AWSError] = js.native
   /**
-    * Gets information about the scalable targets in the specified namespace. You can filter the results using the ResourceIds and ScalableDimension parameters. To create a scalable target or update an existing one, see RegisterScalableTarget. If you are no longer using a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Gets information about the scalable targets in the specified namespace. You can filter the results using ResourceIds and ScalableDimension. To create a scalable target or update an existing one, see RegisterScalableTarget. If you are no longer using a scalable target, you can deregister it using DeregisterScalableTarget.
     */
   def describeScalableTargets(params: DescribeScalableTargetsRequest): Request[DescribeScalableTargetsResponse, AWSError] = js.native
   def describeScalableTargets(
@@ -65,12 +65,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalableTargetsResponse, Unit]
   ): Request[DescribeScalableTargetsResponse, AWSError] = js.native
   /**
-    * Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks. You can filter the results using the ResourceId and ScalableDimension parameters. Scaling activities are triggered by CloudWatch alarms that are associated with scaling policies. To view the scaling policies for a service namespace, see DescribeScalingPolicies. To create a scaling policy or update an existing one, see PutScalingPolicy.
+    * Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks. You can filter the results using ResourceId and ScalableDimension. Scaling activities are triggered by CloudWatch alarms that are associated with scaling policies. To view the scaling policies for a service namespace, see DescribeScalingPolicies. To create a scaling policy or update an existing one, see PutScalingPolicy.
     */
   def describeScalingActivities(): Request[DescribeScalingActivitiesResponse, AWSError] = js.native
   def describeScalingActivities(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalingActivitiesResponse, Unit]): Request[DescribeScalingActivitiesResponse, AWSError] = js.native
   /**
-    * Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks. You can filter the results using the ResourceId and ScalableDimension parameters. Scaling activities are triggered by CloudWatch alarms that are associated with scaling policies. To view the scaling policies for a service namespace, see DescribeScalingPolicies. To create a scaling policy or update an existing one, see PutScalingPolicy.
+    * Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks. You can filter the results using ResourceId and ScalableDimension. Scaling activities are triggered by CloudWatch alarms that are associated with scaling policies. To view the scaling policies for a service namespace, see DescribeScalingPolicies. To create a scaling policy or update an existing one, see PutScalingPolicy.
     */
   def describeScalingActivities(params: DescribeScalingActivitiesRequest): Request[DescribeScalingActivitiesResponse, AWSError] = js.native
   def describeScalingActivities(
@@ -78,12 +78,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalingActivitiesResponse, Unit]
   ): Request[DescribeScalingActivitiesResponse, AWSError] = js.native
   /**
-    * Describes the scaling policies for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and PolicyNames parameters. To create a scaling policy or update an existing one, see PutScalingPolicy. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+    * Describes the Application Auto Scaling scaling policies for the specified service namespace. You can filter the results using ResourceId, ScalableDimension, and PolicyNames. To create a scaling policy or update an existing one, see PutScalingPolicy. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
     */
   def describeScalingPolicies(): Request[DescribeScalingPoliciesResponse, AWSError] = js.native
   def describeScalingPolicies(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalingPoliciesResponse, Unit]): Request[DescribeScalingPoliciesResponse, AWSError] = js.native
   /**
-    * Describes the scaling policies for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and PolicyNames parameters. To create a scaling policy or update an existing one, see PutScalingPolicy. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+    * Describes the Application Auto Scaling scaling policies for the specified service namespace. You can filter the results using ResourceId, ScalableDimension, and PolicyNames. To create a scaling policy or update an existing one, see PutScalingPolicy. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
     */
   def describeScalingPolicies(params: DescribeScalingPoliciesRequest): Request[DescribeScalingPoliciesResponse, AWSError] = js.native
   def describeScalingPolicies(
@@ -91,12 +91,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalingPoliciesResponse, Unit]
   ): Request[DescribeScalingPoliciesResponse, AWSError] = js.native
   /**
-    * Describes the scheduled actions for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and ScheduledActionNames parameters. To create a scheduled action or update an existing one, see PutScheduledAction. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+    * Describes the Application Auto Scaling scheduled actions for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and ScheduledActionNames parameters. To create a scheduled action or update an existing one, see PutScheduledAction. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
     */
   def describeScheduledActions(): Request[DescribeScheduledActionsResponse, AWSError] = js.native
   def describeScheduledActions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledActionsResponse, Unit]): Request[DescribeScheduledActionsResponse, AWSError] = js.native
   /**
-    * Describes the scheduled actions for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and ScheduledActionNames parameters. To create a scheduled action or update an existing one, see PutScheduledAction. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+    * Describes the Application Auto Scaling scheduled actions for the specified service namespace. You can filter the results using the ResourceId, ScalableDimension, and ScheduledActionNames parameters. To create a scheduled action or update an existing one, see PutScheduledAction. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
     */
   def describeScheduledActions(params: DescribeScheduledActionsRequest): Request[DescribeScheduledActionsResponse, AWSError] = js.native
   def describeScheduledActions(
@@ -130,12 +130,12 @@ trait ApplicationAutoScaling extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutScheduledActionResponse, Unit]
   ): Request[PutScheduledActionResponse, AWSError] = js.native
   /**
-    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Scalable targets are uniquely identified by the combination of resource ID, scalable dimension, and namespace.  When you register a new scalable target, you must specify values for minimum and maximum capacity. Application Auto Scaling will not scale capacity to values that are outside of this range.  To update a scalable target, specify the parameter that you want to change as well as the following parameters that identify the scalable target: resource ID, scalable dimension, and namespace. Any parameters that you don't specify are not changed by this update request.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace by using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it by using DeregisterScalableTarget.
     */
   def registerScalableTarget(): Request[RegisterScalableTargetResponse, AWSError] = js.native
   def registerScalableTarget(callback: js.Function2[/* err */ AWSError, /* data */ RegisterScalableTargetResponse, Unit]): Request[RegisterScalableTargetResponse, AWSError] = js.native
   /**
-    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Scalable targets are uniquely identified by the combination of resource ID, scalable dimension, and namespace.  When you register a new scalable target, you must specify values for minimum and maximum capacity. Application Auto Scaling will not scale capacity to values that are outside of this range.  To update a scalable target, specify the parameter that you want to change as well as the following parameters that identify the scalable target: resource ID, scalable dimension, and namespace. Any parameters that you don't specify are not changed by this update request.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace by using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it by using DeregisterScalableTarget.
     */
   def registerScalableTarget(params: RegisterScalableTargetRequest): Request[RegisterScalableTargetResponse, AWSError] = js.native
   def registerScalableTarget(

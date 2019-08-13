@@ -21,7 +21,7 @@ package object atStyledDashSystemCssMod {
   type ResponsiveStyleValue[T] = T | (js.Array[T | Null])
   type StandardCSSProperties = PropertiesFallback[Double | String]
   type SystemCssProperties = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof @styled-system/css.@styled-system/css.SystemCSSProperties ]: @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.SystemCSSProperties[K]> | (theme : any): @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.SystemCSSProperties[K]> | @styled-system/css.@styled-system/css.SystemStyleObject}
+  {[ K in keyof @styled-system/css.@styled-system/css.AllSystemCSSProperties ]: @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | (theme : any): @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.SystemCssProperties with js.Any
   /* Rewritten from type alias, can be one of: 
     - typings.atStyledDashSystemCss.atStyledDashSystemCssMod.SystemCssProperties

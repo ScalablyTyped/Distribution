@@ -23,8 +23,10 @@ trait Agent
   def addErrorFilter(fn: FilterFn): Unit = js.native
   // Transport
   def addFilter(fn: FilterFn): Unit = js.native
-  def addPatch(name: String, handler: String): Unit = js.native
-  def addPatch(name: String, handler: PatchHandler): Unit = js.native
+  def addPatch(modules: String, handler: String): Unit = js.native
+  def addPatch(modules: String, handler: PatchHandler): Unit = js.native
+  def addPatch(modules: js.Array[String], handler: String): Unit = js.native
+  def addPatch(modules: js.Array[String], handler: PatchHandler): Unit = js.native
   def addSpanFilter(fn: FilterFn): Unit = js.native
   def addTransactionFilter(fn: FilterFn): Unit = js.native
   def captureError(err: String): Unit = js.native
@@ -40,7 +42,8 @@ trait Agent
   def captureError(err: Error, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
-  def clearPatches(name: String): Unit = js.native
+  def clearPatches(modules: String): Unit = js.native
+  def clearPatches(modules: js.Array[String]): Unit = js.native
   def destroy(): Unit = js.native
   def endTransaction(): Unit = js.native
   def endTransaction(result: String): Unit = js.native
@@ -54,8 +57,10 @@ trait Agent
   def isStarted(): Boolean = js.native
   def lambda(handler: Handler[_, _]): Handler[_, _] = js.native
   def lambda(`type`: String, handler: Handler[_, _]): Handler[_, _] = js.native
-  def removePatch(name: String, handler: String): Unit = js.native
-  def removePatch(name: String, handler: PatchHandler): Unit = js.native
+  def removePatch(modules: String, handler: String): Unit = js.native
+  def removePatch(modules: String, handler: PatchHandler): Unit = js.native
+  def removePatch(modules: js.Array[String], handler: String): Unit = js.native
+  def removePatch(modules: js.Array[String], handler: PatchHandler): Unit = js.native
   def setCustomContext(custom: js.Object): Unit = js.native
   def setFramework(options: Anon_Name): Unit = js.native
   def setTransactionName(name: String): Unit = js.native

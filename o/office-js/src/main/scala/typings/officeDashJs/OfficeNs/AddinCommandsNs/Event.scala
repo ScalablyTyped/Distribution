@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * which button was clicked and to signal the host that it has completed its processing.
   * 
   * @remarks
+  * 
   * See {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted

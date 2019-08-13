@@ -32,6 +32,7 @@ import typings.slateDashReact.Fn_Data
 import typings.slateDashReact.Fn_Depth
 import typings.slateDashReact.Fn_DepthController
 import typings.slateDashReact.Fn_Fn
+import typings.slateDashReact.Fn_FnEditor
 import typings.slateDashReact.Fn_Fragment
 import typings.slateDashReact.Fn_FragmentIndex
 import typings.slateDashReact.Fn_FragmentIndexPath
@@ -515,9 +516,9 @@ class Editor ()
   var unwrapNodeByKey: Fn_KeyController = js.native
   var unwrapNodeByPath: Fn_Path = js.native
   val value: Value = js.native
-  var withoutMerging: js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
+  var withoutMerging: Fn_FnEditor = js.native
   var withoutNormalizing: Fn_Fn = js.native
-  var withoutSaving: js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
+  var withoutSaving: Fn_FnEditor = js.native
   var wrapBlock: Fn_PropertiesBlock = js.native
   var wrapBlockAtRange: Fn_PropertiesRangeBlock = js.native
   var wrapBlockByKey: Fn_KeyPropertiesBlockProperties = js.native

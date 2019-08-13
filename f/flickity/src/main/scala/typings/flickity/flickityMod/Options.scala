@@ -101,6 +101,11 @@ trait Options extends js.Object {
     */
   var groupCells: js.UndefOr[Boolean | Double | String] = js.undefined
   /**
+    * Enables hash navigation to select slides with links and URLs.
+    * default: false
+    */
+  var hash: js.UndefOr[Boolean] = js.undefined
+  /**
     * Unloaded images have no size, which can throw off cell positions. To fix this, the imagesLoaded option re-positions cells once their images have loaded.
     *
     * default: true
@@ -198,6 +203,7 @@ object Options {
     freeScrollFriction: Int | Double = null,
     friction: Int | Double = null,
     groupCells: Boolean | Double | String = null,
+    hash: js.UndefOr[Boolean] = js.undefined,
     imagesLoaded: js.UndefOr[Boolean] = js.undefined,
     initialIndex: Int | Double = null,
     lazyLoad: Boolean | Double = null,
@@ -228,6 +234,7 @@ object Options {
     if (freeScrollFriction != null) __obj.updateDynamic("freeScrollFriction")(freeScrollFriction.asInstanceOf[js.Any])
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
     if (groupCells != null) __obj.updateDynamic("groupCells")(groupCells.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
     if (!js.isUndefined(imagesLoaded)) __obj.updateDynamic("imagesLoaded")(imagesLoaded)
     if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])

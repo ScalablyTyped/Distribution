@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val LeafletConsumer: Consumer[LeafletContext] = js.native
   val LeafletProvider: Provider[LeafletContext] = js.native
+  def useLeaflet(): LeafletContext = js.native
   def withLeaflet[T /* <: ContextProps */](WrappedComponent: ComponentType[T]): ComponentType[Omit[T, leaflet]] = js.native
 }
 

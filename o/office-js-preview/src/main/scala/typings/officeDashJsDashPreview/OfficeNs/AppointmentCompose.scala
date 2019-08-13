@@ -156,7 +156,7 @@ trait AppointmentCompose extends ItemCompose {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 
@@ -180,7 +180,7 @@ trait AppointmentCompose extends ItemCompose {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 

@@ -14,6 +14,7 @@ trait VueI18n extends js.Object {
   val availableLocales: js.Array[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale] = js.native
   val dateTimeFormats: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormats = js.native
   var fallbackLocale: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale = js.native
+  var formatFallbackMessages: Boolean = js.native
   var formatter: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Formatter = js.native
   var locale: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale = js.native
   val messages: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages = js.native

@@ -2041,6 +2041,7 @@
 | 67 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the ess
 | 67 | [color-name](./c/color-name) | A list of color names and its values
 | 67 | [common-errors](./c/common-errors) | Common error classes and utility functions
+| 67 | [dialog-polyfill](./d/dialog-polyfill) | Polyfill for the dialog element
 | 67 | [es6-weak-map](./e/es6-weak-map) | ECMAScript6 WeakMap polyfill
 | 67 | [find-package-json](./f/find-package-json) | Find package.json files in parent directories, kee
 | 67 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend
@@ -3504,6 +3505,7 @@
 | 19 | [apollo-datasource](./a/apollo-datasource) | -
 | 19 | [apollo-server-errors](./a/apollo-server-errors) | -
 | 19 | [appdmg](./a/appdmg) | Generate beautiful DMG-images for your OS X applic
+| 19 | [bchaddrjs](./b/bchaddrjs) | Bitcoin Cash general purpose address translation.
 | 19 | [blob-stream](./b/blob-stream) | A Node-style writable stream for HTML5 Blobs
 | 19 | [blocked](./b/blocked) | check if the event loop is blocked
 | 19 | [bootstrap-switch](./b/bootstrap-switch) | Turn checkboxes and radio buttons into toggle swit
@@ -3889,6 +3891,7 @@
 | 13 | [bootstrap-colorpicker](./b/bootstrap-colorpicker) | Bootstrap Colorpicker is a modular color picker pl
 | 13 | [builder-util](./b/builder-util) | Various utilities. Used by 
 | 13 | [bwip-js](./b/bwip-js) | JavaScript barcode generator supporting over 90 ty
+| 13 | [cashaddrjs](./c/cashaddrjs) | Bitcoin Cash cashaddr address format support for N
 | 13 | [chai-fs](./c/chai-fs) | Chai assertions for Node.js filesystem
 | 13 | [checkstyle-formatter](./c/checkstyle-formatter) | Simple Checkstyle data formatter
 | 13 | [chrome-trace-event](./c/chrome-trace-event) | A library to create a trace of your node app per G
@@ -3925,6 +3928,7 @@
 | 13 | [lory_dot_js](./l/lory_dot_js) | Touch enabled minimalistic slider written in vanil
 | 13 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp
 | 13 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React
+| 13 | [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin
 | 13 | [nanoajax](./n/nanoajax) | A small ajax lib
 | 13 | [nivo__axes](./n/nivo__axes) | -
 | 13 | [nodecredstash](./n/nodecredstash) | Node.js credstash implementation
@@ -5087,6 +5091,7 @@
 | 4 | [promised-temp](./p/promised-temp) | Tool for making temporary files asynchronously tha
 | 4 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p
 | 4 | [provinces](./p/provinces) | state and province lists for countries
+| 4 | [python-struct](./p/python-struct) | Packs/Unpacks/Measures structs according to Python
 | 4 | [qs-middleware](./q/qs-middleware) | Connect querystring middleware
 | 4 | [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server
 | 4 | [reach__skip-nav](./r/reach__skip-nav) | Skip navigation links for screen reader and keyboa

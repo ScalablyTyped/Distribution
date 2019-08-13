@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait StepScalingPolicyConfiguration extends js.Object {
   /**
-    * The adjustment type, which specifies how the ScalingAdjustment parameter in a StepAdjustment is interpreted.
+    * Specifies whether the ScalingAdjustment value in a StepAdjustment is an absolute number or a percentage of the current capacity. 
     */
   var AdjustmentType: js.UndefOr[typings.awsDashSdk.clientsApplicationautoscalingMod.AdjustmentType] = js.undefined
   /**

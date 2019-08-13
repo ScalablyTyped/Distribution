@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.puppeteer.puppeteerStrings.A3
   - typings.puppeteer.puppeteerStrings.A4
   - typings.puppeteer.puppeteerStrings.A5
+  - typings.puppeteer.puppeteerStrings.A6
 */
 trait PDFFormat extends js.Object
 

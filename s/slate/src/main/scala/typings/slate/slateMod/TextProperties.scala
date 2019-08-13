@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.immutableMod.Set
 import typings.slate.slateStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TextProperties extends NodeProperties {
   var key: js.UndefOr[String] = js.undefined
-  var marks: js.UndefOr[List[Mark] | js.Array[Mark]] = js.undefined
+  var marks: js.UndefOr[Set[Mark] | js.Array[Mark]] = js.undefined
   var `object`: js.UndefOr[text] = js.undefined
   var text: js.UndefOr[String] = js.undefined
 }
@@ -17,7 +17,7 @@ object TextProperties {
   @scala.inline
   def apply(
     key: String = null,
-    marks: List[Mark] | js.Array[Mark] = null,
+    marks: Set[Mark] | js.Array[Mark] = null,
     `object`: text = null,
     text: String = null
   ): TextProperties = {

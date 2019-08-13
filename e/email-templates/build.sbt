@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "email-templates"
-version := "3.5-dt-20190212Z-071731"
+version := "6.0-dt-20190812Z-519093"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

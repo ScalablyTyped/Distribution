@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Provides options for whether to select the location that is navigated to.
   *
   * @remarks
+  * 
   * The behavior caused by the {@link Office.SelectionMode | options.selectionMode} option varies by host:
   *
   * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. `Office.SelectionMode.None` for text bindings, 

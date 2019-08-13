@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "acl"
-version := "0.4-dt-20190524Z-c40c4f"
+version := "0.4-dt-20190524Z-36e522"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-057966",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-b72682",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
-  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190807Z-bff2f5",
+  "org.scalablytyped" %%% "mongodb" % "3.2-dt-20190812Z-e71b1f",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
   "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-7846a8",

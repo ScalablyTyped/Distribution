@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-hotkeys"
-version := "1.7-dt-20190212Z-b6c5c6"
+version := "1.7-dt-20190212Z-029f7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-b96846",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190812Z-b62faa",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

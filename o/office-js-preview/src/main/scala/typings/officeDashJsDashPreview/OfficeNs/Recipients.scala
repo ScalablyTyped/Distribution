@@ -34,7 +34,7 @@ trait Recipients extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
     * 
@@ -117,7 +117,7 @@ trait Recipients extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
     *
@@ -152,7 +152,7 @@ trait Recipients extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
     * 

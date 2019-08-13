@@ -29,6 +29,8 @@ Instantiable1[/* obj */ Pipe, Pipe] {
     * to a template. To make it a member of an NgModule,
     * list it in the `declarations` field of the `NgModule` metadata.
     *
+    * @see [Style Guide: Pipe Names](guide/styleguide#02-09)
+    *
     */
   def apply(obj: Pipe): TypeDecorator = js.native
 }

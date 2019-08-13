@@ -27,6 +27,7 @@ object EventType extends js.Object {
     * A Document.ActiveViewChanged event was raised.
     * 
     * @remarks 
+    * 
     * **Hosts**: PowerPoint
     */
   @js.native
@@ -46,6 +47,7 @@ object EventType extends js.Object {
     * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
     * 
     * @remarks 
+    * 
     * **Hosts**: Excel, Word
     */
   @js.native
@@ -56,6 +58,7 @@ object EventType extends js.Object {
     * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
     * 
     * @remarks 
+    * 
     * **Hosts**: Excel, Word 
     */
   @js.native
@@ -77,6 +80,7 @@ object EventType extends js.Object {
     * Triggers when a document-level selection happens.
     * 
     * @remarks 
+    * 
     * **Hosts**: Excel, Word
     */
   @js.native
@@ -134,6 +138,7 @@ object EventType extends js.Object {
     * A Settings.settingsChanged event was raised.
     * 
     * @remarks 
+    * 
     * **Hosts**: Excel, PowerPoint, Word
     */
   @js.native

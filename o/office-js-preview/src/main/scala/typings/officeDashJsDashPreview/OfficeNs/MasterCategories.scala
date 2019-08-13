@@ -39,7 +39,7 @@ trait MasterCategories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DuplicateCategory: One of the categories provided is already in the master category list.
     * 
@@ -63,7 +63,7 @@ trait MasterCategories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DuplicateCategory: One of the categories provided is already in the master category list.
     * 
@@ -137,7 +137,7 @@ trait MasterCategories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - PermissionDenied: The user does not have permission to perform this action.
     * 
@@ -159,7 +159,7 @@ trait MasterCategories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - PermissionDenied: The user does not have permission to perform this action.
     * 

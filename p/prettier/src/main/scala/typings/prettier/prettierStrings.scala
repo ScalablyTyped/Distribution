@@ -121,6 +121,9 @@ object prettierStrings {
   sealed trait `line-suffix-boundary` extends js.Object
   
   @js.native
+  sealed trait lwc extends BuiltInParserName
+  
+  @js.native
   sealed trait markdown extends BuiltInParserName
   
   @js.native
@@ -235,6 +238,8 @@ object prettierStrings {
   def `line-suffix`: `line-suffix` = "line-suffix".asInstanceOf[`line-suffix`]
   @scala.inline
   def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
+  @scala.inline
+  def lwc: lwc = "lwc".asInstanceOf[lwc]
   @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
   @scala.inline

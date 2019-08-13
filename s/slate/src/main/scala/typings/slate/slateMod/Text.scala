@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Text () extends Node {
   var key: String = js.native
+  val marks: Set[Mark] | Null = js.native
   var `object`: typings.slate.slateStrings.text = js.native
   val text: String = js.native
   def addMark(mark: String): Text = js.native

@@ -38,7 +38,7 @@ trait GetMetricStatisticsInput extends js.Object {
     */
   var Statistics: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.Statistics] = js.undefined
   /**
-    * The unit for a given metric. Metrics may be reported in multiple units. Not supplying a unit results in all units being returned. If you specify only a unit that the metric does not report, the results of the call are null.
+    * The unit for a given metric. If you omit Unit, all data that was collected with any unit is returned, along with the corresponding units that were specified when the data was reported to CloudWatch. If you specify a unit, the operation returns only data data that was collected with that unit specified. If you specify a unit that does not match the data collected, the results of the operation are null. CloudWatch does not perform unit conversions.
     */
   var Unit: js.UndefOr[StandardUnit] = js.undefined
 }

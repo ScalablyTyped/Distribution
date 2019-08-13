@@ -7,6 +7,7 @@ import typings.angular.angularMod.IRepeatScope
 import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,5 +82,6 @@ trait IScrollAdapter extends js.Object {
   def topVisibleElement(element: ArrayLike[Element]): JQLite = js.native
   def topVisibleElement(element: Document): JQLite = js.native
   def topVisibleElement(element: Element): JQLite = js.native
+  def topVisibleElement(element: Window): JQLite = js.native
 }
 

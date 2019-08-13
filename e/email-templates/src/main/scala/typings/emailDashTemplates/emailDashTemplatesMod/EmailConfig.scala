@@ -1,6 +1,5 @@
 package typings.emailDashTemplates.emailDashTemplatesMod
 
-import typings.emailDashTemplates.Anon_Locals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ trait EmailConfig extends js.Object {
   /**
     * Pass a custom render function if necessary
     */
-  var render: js.UndefOr[Anon_Locals] = js.undefined
+  var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.Any, js.Promise[_]]] = js.undefined
   /**
     *     Do you really want to send, false for test or development
     */
@@ -66,7 +65,7 @@ object EmailConfig {
     juice: js.UndefOr[Boolean] = js.undefined,
     juiceResources: js.Any = null,
     preview: js.UndefOr[Boolean] = js.undefined,
-    render: Anon_Locals = null,
+    render: (/* view */ String, /* locals */ js.Any) => js.Promise[_] = null,
     send: js.UndefOr[Boolean] = js.undefined,
     subjectPrefix: js.Any = null,
     textOnly: js.UndefOr[Boolean] = js.undefined,
@@ -79,7 +78,7 @@ object EmailConfig {
     if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice)
     if (juiceResources != null) __obj.updateDynamic("juiceResources")(juiceResources)
     if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (!js.isUndefined(send)) __obj.updateDynamic("send")(send)
     if (subjectPrefix != null) __obj.updateDynamic("subjectPrefix")(subjectPrefix)
     if (!js.isUndefined(textOnly)) __obj.updateDynamic("textOnly")(textOnly)

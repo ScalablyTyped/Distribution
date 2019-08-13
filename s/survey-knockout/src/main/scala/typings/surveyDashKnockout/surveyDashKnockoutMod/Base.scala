@@ -25,6 +25,7 @@ class Base () extends js.Object {
   /* protected */ def createNewArray(name: String, onPush: js.Any, onRemove: js.Any): js.Array[_] = js.native
   def endLoadingFromJson(): Unit = js.native
   def geValueFromHash(): js.Any = js.native
+  /* protected */ def getItemValueType(): String = js.native
   def getLocalizableString(name: String): LocalizableString = js.native
   def getLocalizableStringText(name: String): String = js.native
   def getLocalizableStringText(name: String, defaultStr: String): String = js.native
@@ -108,6 +109,7 @@ class Base () extends js.Object {
 object Base extends js.Object {
   var commentPrefix: String = js.native
   def createItemValue(item: js.Any): js.Any = js.native
+  def createItemValue(item: js.Any, `type`: String): js.Any = js.native
   def itemValueLocStrChanged(arr: js.Array[_]): Unit = js.native
 }
 

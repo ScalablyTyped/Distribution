@@ -69,9 +69,15 @@ import scala.scalajs.js.annotation._
     */
   var secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Determines whether or not to use the new url parser
+    * Determines whether or not to use the new url parser. Enables the new, spec-compliant
+    * url parser shipped in the core driver. This url parser fixes a number of problems with
+    * the original parser, and aims to outright replace that parser in the near future.
     */
   var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Enables the new unified topology layer
+    */
+  var useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
   /**
     * Validate MongoClient passed in options for correctness.
     * Default: false
@@ -140,6 +146,7 @@ object MongoClientOptions {
     sslPass: Buffer | String = null,
     sslValidate: js.UndefOr[Boolean] = js.undefined,
     useNewUrlParser: js.UndefOr[Boolean] = js.undefined,
+    useUnifiedTopology: js.UndefOr[Boolean] = js.undefined,
     validateOptions: js.Object | Boolean = null,
     w: scala.Double | majority | String = null,
     wtimeout: Int | scala.Double = null
@@ -203,6 +210,7 @@ object MongoClientOptions {
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
     if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate)
     if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser)
+    if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology)
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])

@@ -1,0 +1,23 @@
+package typings.graphqlDashUpload.graphqlDashUploadMod
+
+import typings.fsDashCapacitor.fsDashCapacitorMod.ReadStream
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FileUpload extends js.Object {
+  var encoding: String
+  var filename: String
+  var mimetype: String
+  def createReadStream(): ReadStream
+}
+
+object FileUpload {
+  @scala.inline
+  def apply(createReadStream: () => ReadStream, encoding: String, filename: String, mimetype: String): FileUpload = {
+    val __obj = js.Dynamic.literal(createReadStream = js.Any.fromFunction0(createReadStream), encoding = encoding, filename = filename, mimetype = mimetype)
+  
+    __obj.asInstanceOf[FileUpload]
+  }
+}
+

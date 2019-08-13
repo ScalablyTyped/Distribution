@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.muiDashDatatables.muiDashDatatablesStrings.checkbox
   - typings.muiDashDatatables.muiDashDatatablesStrings.multiselect
   - typings.muiDashDatatables.muiDashDatatablesStrings.textField
+  - typings.muiDashDatatables.muiDashDatatablesStrings.custom
 */
 trait FilterType extends js.Object
 

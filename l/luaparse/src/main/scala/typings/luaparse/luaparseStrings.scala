@@ -33,6 +33,9 @@ object luaparseStrings {
   sealed trait `5DOT3` extends js.Object
   
   @js.native
+  sealed trait `:` extends js.Object
+  
+  @js.native
   sealed trait `<` extends js.Object
   
   @js.native
@@ -70,6 +73,9 @@ object luaparseStrings {
   
   @js.native
   sealed trait Comment extends js.Object
+  
+  @js.native
+  sealed trait DOT extends js.Object
   
   @js.native
   sealed trait DOTDOT extends js.Object
@@ -198,6 +204,8 @@ object luaparseStrings {
   @scala.inline
   def `5DOT3`: `5DOT3` = "5.3".asInstanceOf[`5DOT3`]
   @scala.inline
+  def `:`: `:` = ":".asInstanceOf[`:`]
+  @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline
   def `<=`: `<=` = "<=".asInstanceOf[`<=`]
@@ -223,6 +231,8 @@ object luaparseStrings {
   def Chunk: Chunk = "Chunk".asInstanceOf[Chunk]
   @scala.inline
   def Comment: Comment = "Comment".asInstanceOf[Comment]
+  @scala.inline
+  def DOT: DOT = ".".asInstanceOf[DOT]
   @scala.inline
   def DOTDOT: DOTDOT = "..".asInstanceOf[DOTDOT]
   @scala.inline

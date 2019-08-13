@@ -67,7 +67,6 @@ trait Recurrence extends js.Object {
     * 
     * @remarks
     * 
-    * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -150,7 +149,7 @@ trait Recurrence extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidEndTime: The appointment end time is before its start time.
     * 

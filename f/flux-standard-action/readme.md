@@ -1,7 +1,7 @@
 
 # Scala.js typings for flux-standard-action
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 A human-friendly standard for Flux action objects

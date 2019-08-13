@@ -37,6 +37,9 @@ object puppeteerStrings {
   sealed trait A5 extends PDFFormat
   
   @js.native
+  sealed trait A6 extends PDFFormat
+  
+  @js.native
   sealed trait DELETE extends HttpMethod
   
   @js.native
@@ -413,6 +416,8 @@ object puppeteerStrings {
   def A4: A4 = "A4".asInstanceOf[A4]
   @scala.inline
   def A5: A5 = "A5".asInstanceOf[A5]
+  @scala.inline
+  def A6: A6 = "A6".asInstanceOf[A6]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline

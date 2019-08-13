@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-busboy"
-version := "6.0-dt-20180214Z-cbe452"
+version := "6.0-dt-20190812Z-cad0ff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

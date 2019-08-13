@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Provides options for how to get the data in a binding.
   *
   * @remarks
+  * 
   * If the rows option is used, the value must be "thisRow".
   */
 trait GetBindingDataOptions extends js.Object {
@@ -34,6 +35,10 @@ trait GetBindingDataOptions extends js.Object {
   var rowCount: js.UndefOr[Double] = js.undefined
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+    * 
+    * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+    * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+    * to build no-code business solutions for web and mobile devices.
     */
   var rows: js.UndefOr[String] = js.undefined
   /**

@@ -10,7 +10,7 @@ trait PutMetricDataInput extends js.Object {
     */
   var MetricData: typings.awsDashSdk.clientsCloudwatchMod.MetricData
   /**
-    * The namespace for the metric data. You cannot specify a namespace that begins with "AWS/". Namespaces that begin with "AWS/" are reserved for use by Amazon Web Services products.
+    * The namespace for the metric data. To avoid conflicts with AWS service namespaces, you should not specify a namespace that begins with AWS/ 
     */
   var Namespace: typings.awsDashSdk.clientsCloudwatchMod.Namespace
 }

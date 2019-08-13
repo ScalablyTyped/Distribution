@@ -12,7 +12,7 @@ trait ExpressBusboyOptions extends ConnectBusboyOptions {
   var mimeTypeLimit: js.UndefOr[String | js.Array[String]] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var restrictMultiple: js.UndefOr[Boolean] = js.undefined
-  var upload: js.UndefOr[Double] = js.undefined
+  var upload: js.UndefOr[Boolean] = js.undefined
 }
 
 object ExpressBusboyOptions {
@@ -29,7 +29,7 @@ object ExpressBusboyOptions {
     path: String = null,
     preservePath: js.UndefOr[Boolean] = js.undefined,
     restrictMultiple: js.UndefOr[Boolean] = js.undefined,
-    upload: Int | Double = null
+    upload: js.UndefOr[Boolean] = js.undefined
   ): ExpressBusboyOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedPath != null) __obj.updateDynamic("allowedPath")(allowedPath.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object ExpressBusboyOptions {
     if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
     if (!js.isUndefined(restrictMultiple)) __obj.updateDynamic("restrictMultiple")(restrictMultiple)
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
+    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload)
     __obj.asInstanceOf[ExpressBusboyOptions]
   }
 }

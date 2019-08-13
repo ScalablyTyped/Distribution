@@ -183,7 +183,8 @@ trait GridSettings extends Events {
   var persistentState: js.UndefOr[Boolean] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var placeholderCellClassName: js.UndefOr[String] = js.undefined
-  var preventOverflow: js.UndefOr[String | Boolean] = js.undefined
+  var preventOverflow: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
+  var preventWheel: js.UndefOr[Boolean] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var readOnlyCellClassName: js.UndefOr[String] = js.undefined
   var renderAllRows: js.UndefOr[Boolean] = js.undefined
@@ -201,7 +202,7 @@ trait GridSettings extends Events {
   var skipColumnOnPaste: js.UndefOr[Boolean] = js.undefined
   var sortByRelevance: js.UndefOr[Boolean] = js.undefined
   var source: js.UndefOr[
-    js.Array[String] | (js.ThisFunction2[
+    (js.Array[Double | String]) | (js.ThisFunction2[
       /* this */ CellProperties, 
       /* query */ String, 
       /* callback */ js.Function1[/* items */ js.Array[String], Unit], 
@@ -342,7 +343,8 @@ object GridSettings {
     persistentState: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
     placeholderCellClassName: String = null,
-    preventOverflow: String | Boolean = null,
+    preventOverflow: Boolean | vertical | horizontal = null,
+    preventWheel: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     readOnlyCellClassName: String = null,
     renderAllRows: js.UndefOr[Boolean] = js.undefined,
@@ -355,7 +357,7 @@ object GridSettings {
     selectionMode: single | range | multiple = null,
     skipColumnOnPaste: js.UndefOr[Boolean] = js.undefined,
     sortByRelevance: js.UndefOr[Boolean] = js.undefined,
-    source: js.Array[String] | (js.ThisFunction2[
+    source: (js.Array[Double | String]) | (js.ThisFunction2[
       /* this */ CellProperties, 
       /* query */ String, 
       /* callback */ js.Function1[/* items */ js.Array[String], Unit], 
@@ -473,6 +475,7 @@ object GridSettings {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (placeholderCellClassName != null) __obj.updateDynamic("placeholderCellClassName")(placeholderCellClassName)
     if (preventOverflow != null) __obj.updateDynamic("preventOverflow")(preventOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventWheel)) __obj.updateDynamic("preventWheel")(preventWheel)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (readOnlyCellClassName != null) __obj.updateDynamic("readOnlyCellClassName")(readOnlyCellClassName)
     if (!js.isUndefined(renderAllRows)) __obj.updateDynamic("renderAllRows")(renderAllRows)

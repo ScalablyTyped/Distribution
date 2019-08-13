@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait LaunchConfiguration extends js.Object {
   /**
-    * [EC2-VPC] Indicates whether to assign a public IP address to each instance.
+    * For Auto Scaling groups that are running in a VPC, specifies whether to assign a public IP address to the group's instances.  For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
   var AssociatePublicIpAddress: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.AssociatePublicIpAddress] = js.undefined
   /**
-    * A block device mapping, which specifies the block devices for the instance.
+    * A block device mapping, which specifies the block devices for the instance. For more information, see Block Device Mapping in the Amazon EC2 User Guide for Linux Instances.
     */
   var BlockDeviceMappings: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.BlockDeviceMappings] = js.undefined
   /**
-    * The ID of a ClassicLink-enabled VPC to link your EC2-Classic instances to. This parameter can only be used if you are launching EC2-Classic instances. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
+    * The ID of a ClassicLink-enabled VPC to link your EC2-Classic instances to.  For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
   var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you specify a ClassicLink-enabled VPC, and cannot be used otherwise.
+    * The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId.  For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
   var ClassicLinkVPCSecurityGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.ClassicLinkVPCSecurityGroups] = js.undefined
   /**
@@ -26,23 +26,23 @@ trait LaunchConfiguration extends js.Object {
     */
   var CreatedTime: TimestampType
   /**
-    * Controls whether the instance is optimized for EBS I/O (true) or not (false).
+    * Specifies whether the launch configuration is optimized for EBS I/O (true) or not (false).  For more information, see Amazon EBS-Optimized Instances in the Amazon EC2 User Guide for Linux Instances.
     */
   var EbsOptimized: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.EbsOptimized] = js.undefined
   /**
-    * The name or Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance.
+    * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. The instance profile contains the IAM role.  For more information, see IAM Role for Applications That Run on Amazon EC2 Instances in the Amazon EC2 Auto Scaling User Guide.
     */
   var IamInstanceProfile: js.UndefOr[XmlStringMaxLen1600] = js.undefined
   /**
-    * The ID of the Amazon Machine Image (AMI).
+    * The ID of the Amazon Machine Image (AMI) to use to launch your EC2 instances.  For more information, see Finding an AMI in the Amazon EC2 User Guide for Linux Instances.
     */
   var ImageId: XmlStringMaxLen255
   /**
-    * Controls whether instances in this group are launched with detailed (true) or basic (false) monitoring.
+    * Controls whether instances in this group are launched with detailed (true) or basic (false) monitoring.  For more information, see Configure Monitoring for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide. 
     */
   var InstanceMonitoring: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.InstanceMonitoring] = js.undefined
   /**
-    * The instance type for the instances.
+    * The instance type for the instances. For information about available instance types, see Available Instance Types in the Amazon EC2 User Guide for Linux Instances. 
     */
   var InstanceType: XmlStringMaxLen255
   /**
@@ -50,7 +50,7 @@ trait LaunchConfiguration extends js.Object {
     */
   var KernelId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The name of the key pair.
+    * The name of the key pair. For more information, see Amazon EC2 Key Pairs in the Amazon EC2 User Guide for Linux Instances.
     */
   var KeyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait LaunchConfiguration extends js.Object {
     */
   var LaunchConfigurationName: XmlStringMaxLen255
   /**
-    * The tenancy of the instance, either default or dedicated. An instance with dedicated tenancy runs in an isolated, single-tenant hardware and can only be launched into a VPC.
+    * The tenancy of the instance, either default or dedicated. An instance with dedicated tenancy runs on isolated, single-tenant hardware and can only be launched into a VPC. For more information, see Instance Placement Tenancy in the Amazon EC2 Auto Scaling User Guide.
     */
   var PlacementTenancy: js.UndefOr[XmlStringMaxLen64] = js.undefined
   /**
@@ -70,15 +70,15 @@ trait LaunchConfiguration extends js.Object {
     */
   var RamdiskId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   /**
-    * The security groups to associate with the instances.
+    * A list that contains the security groups to assign to the instances in the Auto Scaling group.  For more information, see Security Groups for Your VPC in the Amazon Virtual Private Cloud User Guide.
     */
   var SecurityGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.SecurityGroups] = js.undefined
   /**
-    * The price to bid when launching Spot Instances.
+    * The maximum hourly price to be paid for any Spot Instance launched to fulfill the request. Spot Instances are launched when the price you specify exceeds the current Spot market price.  For more information, see Launching Spot Instances in Your Auto Scaling Group in the Amazon EC2 Auto Scaling User Guide.
     */
   var SpotPrice: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.SpotPrice] = js.undefined
   /**
-    * The user data available to the instances.
+    * The Base64-encoded user data to make available to the launched EC2 instances.  For more information, see Instance Metadata and User Data in the Amazon EC2 User Guide for Linux Instances.
     */
   var UserData: js.UndefOr[XmlStringUserData] = js.undefined
 }

@@ -10,6 +10,7 @@ import typings.angular.angularMod.autoNs.IInjectorService
 import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,6 +97,7 @@ trait IAngularStatic extends js.Object {
   def element(element: ArrayLike[Element]): JQLite = js.native
   def element(element: Document): JQLite = js.native
   def element(element: Element): JQLite = js.native
+  def element(element: Window): JQLite = js.native
   def equals(value1: js.Any, value2: js.Any): Boolean = js.native
   def extend(destination: js.Any, sources: js.Any*): js.Any = js.native
   /**

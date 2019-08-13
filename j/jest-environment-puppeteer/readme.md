@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-environment-puppeteer
 
-Typings are for version 4.0
+Typings are for version 4.3
 
 ## Library description:
 Puppeteer environment for Jest.

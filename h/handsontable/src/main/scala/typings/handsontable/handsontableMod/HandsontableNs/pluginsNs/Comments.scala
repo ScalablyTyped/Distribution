@@ -16,6 +16,7 @@ trait Comments extends Base {
   var timer: js.Any = js.native
   def clearRange(): Unit = js.native
   def getComment(): String = js.native
+  def getCommentAtCell(row: Double, column: Double): js.UndefOr[String] = js.native
   def getCommentMeta(row: Double, column: Double, property: String): js.Any = js.native
   def hide(): Unit = js.native
   def refreshEditor(): Unit = js.native

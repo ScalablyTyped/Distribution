@@ -30,6 +30,7 @@ trait TableBinding extends Binding {
     * Gets the number of rows in the TableBinding, as an integer value.
     *
     * @remarks
+    * 
     * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host 
     * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
     * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
@@ -128,6 +129,7 @@ trait TableBinding extends Binding {
     * Clears formatting on the bound table.
     *
     * @remarks
+    * 
     * See {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -329,6 +331,7 @@ trait TableBinding extends Binding {
     * Updates table formatting options on the bound table.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.

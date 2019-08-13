@@ -17,6 +17,9 @@ object muiDashDatatablesStrings {
   sealed trait checkbox extends FilterType
   
   @js.native
+  sealed trait custom extends FilterType
+  
+  @js.native
   sealed trait desc extends SortDirection
   
   @js.native
@@ -56,6 +59,8 @@ object muiDashDatatablesStrings {
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline

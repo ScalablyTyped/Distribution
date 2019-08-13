@@ -18,6 +18,16 @@ trait JestPuppeteer extends js.Object {
     */
   def debug(): js.Promise[Unit]
   /**
+    * Reset global.browser
+    *
+    * ```ts
+    * beforeEach(async () => {
+    *   await jestPuppeteer.resetBrowser()
+    * })
+    * ```
+    */
+  def resetBrowser(): js.Promise[Unit]
+  /**
     * Reset global.page
     *
     * ```ts
@@ -31,8 +41,12 @@ trait JestPuppeteer extends js.Object {
 
 object JestPuppeteer {
   @scala.inline
-  def apply(debug: () => js.Promise[Unit], resetPage: () => js.Promise[Unit]): JestPuppeteer = {
-    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), resetPage = js.Any.fromFunction0(resetPage))
+  def apply(
+    debug: () => js.Promise[Unit],
+    resetBrowser: () => js.Promise[Unit],
+    resetPage: () => js.Promise[Unit]
+  ): JestPuppeteer = {
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), resetBrowser = js.Any.fromFunction0(resetBrowser), resetPage = js.Any.fromFunction0(resetPage))
   
     __obj.asInstanceOf[JestPuppeteer]
   }

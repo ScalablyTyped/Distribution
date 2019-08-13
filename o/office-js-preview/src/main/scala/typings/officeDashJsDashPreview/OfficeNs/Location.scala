@@ -75,7 +75,7 @@ trait Location extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
     */

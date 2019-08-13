@@ -268,7 +268,7 @@ trait Binding extends js.Object {
     *
     *        array of arrays: Excel and Word only
     *
-    *        `TableData`: Excel and Word only
+    *        {@link Office.TableData}: Excel and Word only
     *
     *        HTML: Word on the web and Windows only
     *

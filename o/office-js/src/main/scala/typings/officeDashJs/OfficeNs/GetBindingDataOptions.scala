@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Provides options for how to get the data in a binding.
   *
   * @remarks
+  * 
   * If the rows option is used, the value must be "thisRow".
   */
 trait GetBindingDataOptions extends js.Object {

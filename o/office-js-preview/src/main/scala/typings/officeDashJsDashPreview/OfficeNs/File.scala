@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Represents the document file associated with an Office Add-in.
   *
   * @remarks
+  * 
   * Access the File object with the AsyncResult.value property in the callback function passed to the Document.getFileAsync method.
   * 
   */
@@ -65,6 +66,7 @@ trait File extends js.Object {
     * Returns the specified slice.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
     * 
     * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following 

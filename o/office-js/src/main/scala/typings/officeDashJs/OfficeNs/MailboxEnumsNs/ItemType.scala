@@ -14,7 +14,7 @@ sealed trait ItemType extends js.Object
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.ItemType")
 @js.native

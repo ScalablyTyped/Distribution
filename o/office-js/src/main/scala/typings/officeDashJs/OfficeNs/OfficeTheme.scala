@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * task pane add-ins.
   * 
   * @remarks
+  * 
   * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
   * 
   * `OfficeTheme` is only supported in Office on Windows.

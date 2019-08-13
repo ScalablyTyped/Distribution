@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Represents a collection of CustomXmlPart objects.
   * 
   * @remarks
+  * 
   * **Hosts**: Word
   */
 @js.native

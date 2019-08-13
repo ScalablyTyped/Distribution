@@ -72,7 +72,7 @@ trait Time extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidEndTime: The appointment end time is before the appointment start time.
     * 

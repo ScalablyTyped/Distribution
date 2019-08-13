@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-leaflet
 
-Typings are for version 2.2
+Typings are for version 2.4
 
 ## Library description:
 React components for Leaflet maps

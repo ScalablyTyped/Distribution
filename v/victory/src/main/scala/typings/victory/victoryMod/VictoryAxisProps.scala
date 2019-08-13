@@ -41,6 +41,12 @@ trait VictoryAxisProps extends VictoryCommonProps {
     */
   var axisLabelComponent: js.UndefOr[ReactElement] = js.undefined
   /**
+    * The axisValue prop may be used instead of axisAngle to position the
+    * dependent axis. Ths prop is useful when dependent axes should line up
+    * with values on the independent axis.
+    */
+  var axisValue: js.UndefOr[Double | String | js.Object] = js.undefined
+  /**
     * This prop specifies whether a given axis is intended to cross another axis.
     */
   var crossAxis: js.UndefOr[Boolean] = js.undefined
@@ -213,6 +219,7 @@ object VictoryAxisProps {
     animate: AnimatePropTypeInterface = null,
     axisComponent: ReactElement = null,
     axisLabelComponent: ReactElement = null,
+    axisValue: Double | String | js.Object = null,
     containerComponent: ReactElement = null,
     crossAxis: js.UndefOr[Boolean] = js.undefined,
     dependentAxis: js.UndefOr[Boolean] = js.undefined,
@@ -247,6 +254,7 @@ object VictoryAxisProps {
     if (animate != null) __obj.updateDynamic("animate")(animate)
     if (axisComponent != null) __obj.updateDynamic("axisComponent")(axisComponent)
     if (axisLabelComponent != null) __obj.updateDynamic("axisLabelComponent")(axisLabelComponent)
+    if (axisValue != null) __obj.updateDynamic("axisValue")(axisValue.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
     if (!js.isUndefined(crossAxis)) __obj.updateDynamic("crossAxis")(crossAxis)
     if (!js.isUndefined(dependentAxis)) __obj.updateDynamic("dependentAxis")(dependentAxis)

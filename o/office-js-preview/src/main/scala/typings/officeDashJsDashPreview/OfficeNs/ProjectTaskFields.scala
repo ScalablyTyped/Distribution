@@ -11,6 +11,7 @@ sealed trait ProjectTaskFields extends js.Object
   * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
   *
   * @remarks
+  * 
   * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
   *
   * For more information about working with fields in Project, see the 

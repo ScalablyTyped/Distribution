@@ -18,11 +18,11 @@ trait InstancesDistribution extends js.Object {
     */
   var OnDemandPercentageAboveBaseCapacity: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.OnDemandPercentageAboveBaseCapacity] = js.undefined
   /**
-    * Indicates how to allocate Spot capacity across Spot pools. The only valid value is lowest-price, which is also the default value. The Auto Scaling group selects the cheapest Spot pools and evenly allocates your Spot capacity across the number of Spot pools that you specify. 
+    * Indicates how to allocate instances across Spot Instance pools.  If the allocation strategy is lowest-price, the Auto Scaling group launches instances using the Spot pools with the lowest price, and evenly allocates your instances across the number of Spot pools that you specify. If the allocation strategy is capacity-optimized, the Auto Scaling group launches instances using Spot pools that are optimally chosen based on the available Spot capacity.  The default Spot allocation strategy for calls that you make through the API, the AWS CLI, or the AWS SDKs is lowest-price. The default Spot allocation strategy for the AWS Management Console is capacity-optimized. Valid values: lowest-price | capacity-optimized 
     */
   var SpotAllocationStrategy: js.UndefOr[XmlString] = js.undefined
   /**
-    * The number of Spot pools to use to allocate your Spot capacity. The Spot pools are determined from the different instance types in the Overrides array of LaunchTemplate. The range is 1–20. The default value is 2.
+    * The number of Spot Instance pools across which to allocate your Spot Instances. The Spot pools are determined from the different instance types in the Overrides array of LaunchTemplate. The range is 1–20. The default value is 2.  Valid only when the Spot allocation strategy is lowest-price. 
     */
   var SpotInstancePools: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.SpotInstancePools] = js.undefined
   /**

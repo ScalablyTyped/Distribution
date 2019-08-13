@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
-  * 
   */
 @js.native
 trait From extends js.Object {

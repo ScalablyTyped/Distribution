@@ -476,6 +476,7 @@
 | [battery-level](./b/battery-level) | Get current battery level | app, battery, cli, cli-app, level, linux, mac, os x, osx, windows |
 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier | naive, bayes, classifier |
 | [bazinga-translator](./b/bazinga-translator) | A pretty nice way to use your translation messages | translation, symfony |
+| [bchaddrjs](./b/bchaddrjs) | Bitcoin Cash general purpose address translation. | bitcoin-cash, bitcoin, bch, cryptocurrency, address, encoding, translation, base58, bitpay, cash-address |
 | [bcrypt](./b/bcrypt) | A bcrypt library for NodeJS. | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | [bcrypt-nodejs](./b/bcrypt-nodejs) | A native JS bcrypt library for NodeJS. | bcrypt, javascript, js, hash, password, auth, authentication, encryption, crypt, crypto |
 | [bcryptjs](./b/bcryptjs) | Optimized bcrypt in plain JavaScript with zero dep | bcrypt, password, auth, authentication, encryption, crypt, crypto |
@@ -695,6 +696,7 @@
 | [case-sensitive-paths-webp](./c/case-sensitive-paths-webpack-plugin) | Enforces module path case sensitivity in Webpack | webpack, plugin, case sensitive, import, require |
 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work | headers, http, caseless |
 | [cash](./c/cash) | Cross-platform Linux commands in pure ES6. | terminal, emulator, cygwin, cli, windows, linux, unix, posix, shell, shelljs, bash, cash, $, tty, util, vorpal, vorpal.js |
+| [cashaddrjs](./c/cashaddrjs) | Bitcoin Cash cashaddr address format support for N | bitcoin, cash, cashaddr, address, format, node, browser |
 | [casperjs](./c/casperjs) | A navigation scripting & testing utility for Phant | phantomjs, slimerjs, test, testing, scraping |
 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra | cassandra, cql, cql3, connection, pool, datastax, nosql, driver, database |
 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support | cql, query, builder, cassandra, datastax, driver |
@@ -1268,6 +1270,7 @@
 | [diacritics](./d/diacritics) | remove diacritics from strings | diacritics, remove, removal, search, string |
 | [diagnostic-channel](./d/diagnostic-channel) | Provides a context-saving pub/sub channel to conne | - |
 | [diagnostic-channel-publis](./d/diagnostic-channel-publishers) | A collection of pre-built module patches that enab | - |
+| [dialog-polyfill](./d/dialog-polyfill) | Polyfill for the dialog element | - |
 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js | parser, parse, parsing, multipart, form-data, streaming |
 | [didyoumean](./d/didyoumean) | Match human-quality input to potential matches by  | didyoumean, mean, edit, distance, levenshtein |
 | [diff](./d/diff) | A javascript text diff implementation. | diff, javascript |
@@ -4124,6 +4127,7 @@
 | [mongoose](./m/mongoose) | Mongoose MongoDB ODM | mongodb, document, model, schema, database, odm, data, datastore, query, nosql, orm, db |
 | [mongoose-auto-increment](./m/mongoose-auto-increment) | This plugin allows you to auto-increment any field | mongoose, plugin, auto-increment, auto, increment, automatic, autoincrement, auto_increment, autoinc, auto-inc, auto_inc, pureautoinc, mongoose-pureautoinc |
 | [mongoose-deep-populate](./m/mongoose-deep-populate) | Mongoose plugin to enable deep population of neste | mongo, mongodb, mongoose, populate, population, deep populate, deep population, models, nested models, populate models, model population, documents, nested documents, populate documents, documents population |
+| [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin | mongoose, soft, delete, delete, remove, plugin |
 | [mongoose-geojson-schema](./m/mongoose-geojson-schema) | Schema definitions for GeoJSON types for use with  | mongo, mongoose, mongoosejs, schema, geojson, point, geometry, feature, polygon, linestring |
 | [mongoose-mock](./m/mongoose-mock) | A replacement for mongoose in tests returning mode | mongoose, test, sinon |
 | [mongoose-paginate](./m/mongoose-paginate) | Pagination plugin for Mongoose | mongoose, paginate, pagination, paging, page |
@@ -5036,6 +5040,7 @@
 | [pusher-js](./p/pusher-js) | Pusher JavaScript library for browsers, React Nati | pusher, client, websocket, http, fallback, isomorphic, events, pubsub |
 | [pvutils](./p/pvutils) | Common utilities for products from Peculiar Ventur | - |
 | [python-shell](./p/python-shell) | Run Python scripts from Node.js with simple (but e | python |
+| [python-struct](./p/python-struct) | Packs/Unpacks/Measures structs according to Python | pack, unpack, struct, cstruct, python |
 | [q](./q/q) | A library for promises (CommonJS/Promises/A,B,D) | q, promise, promises, promises-a, promises-aplus, deferred, future, async, flow control, fluent, browser, node |
 | [q-io](./q/q-io) | IO using Q promises | - |
 | [q-retry](./q/q-retry) | A shell for Q to enable retries. | q, retry, promise |

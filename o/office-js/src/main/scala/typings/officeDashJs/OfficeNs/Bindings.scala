@@ -67,6 +67,7 @@ trait Bindings extends js.Object {
     * Create a binding by prompting the user to make a selection on the document.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. 

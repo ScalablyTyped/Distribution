@@ -11,6 +11,7 @@ sealed trait ProjectResourceFields extends js.Object
   * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
   * @remarks
+  * 
   * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
   * For more information about working with fields in Project, see 

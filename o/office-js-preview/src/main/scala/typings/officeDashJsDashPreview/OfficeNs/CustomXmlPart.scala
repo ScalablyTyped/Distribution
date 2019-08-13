@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Represents a single CustomXMLPart in an {@link Office.CustomXmlParts} collection.
   * 
   * @remarks
+  * 
   * **Hosts**: Word
   */
 @js.native
@@ -28,6 +29,7 @@ trait CustomXmlPart extends js.Object {
     * Adds an event handler to the object using the specified event type.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
@@ -60,6 +62,7 @@ trait CustomXmlPart extends js.Object {
     * Deletes the Custom XML Part.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -73,6 +76,7 @@ trait CustomXmlPart extends js.Object {
     * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath An XPath expression that specifies the nodes you want returned. Required.
@@ -92,6 +96,7 @@ trait CustomXmlPart extends js.Object {
     * Asynchronously gets the XML inside this custom XML part.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -106,6 +111,7 @@ trait CustomXmlPart extends js.Object {
     * Removes an event handler for the specified event type.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "binary-search"
-version := "1.3.5-06cad8"
+version := "1.3.6-06cad8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

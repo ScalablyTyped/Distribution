@@ -22,7 +22,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   /**
-    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. The default value is 0. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you are adding an ELB health check.
+    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. The default value is 0. For more information, see Health Check Grace Period in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you are adding an ELB health check.
     */
   var HealthCheckGracePeriod: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.HealthCheckGracePeriod] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
   /**
-    * The launch template and version to use to specify the updates. If you specify LaunchTemplate in your update request, you can't specify LaunchConfigurationName or MixedInstancesPolicy.
+    * The launch template and version to use to specify the updates. If you specify LaunchTemplate in your update request, you can't specify LaunchConfigurationName or MixedInstancesPolicy. For more information, see LaunchTemplateSpecification in the Amazon EC2 Auto Scaling API Reference.
     */
   var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait UpdateAutoScalingGroupType extends js.Object {
     */
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   /**
-    * An embedded object that specifies a mixed instances policy. In your call to UpdateAutoScalingGroup, you can make changes to the policy that is specified. All optional parameters are left unchanged if not specified. For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
+    * An embedded object that specifies a mixed instances policy. In your call to UpdateAutoScalingGroup, you can make changes to the policy that is specified. All optional parameters are left unchanged if not specified. For more information, see MixedInstancesPolicy in the Amazon EC2 Auto Scaling API Reference and Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
     */
   var MixedInstancesPolicy: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.MixedInstancesPolicy] = js.undefined
   /**

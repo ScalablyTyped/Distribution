@@ -1,6 +1,5 @@
 package typings.reactDashIntl.distComponentsProviderMod
 
-import typings.reactDashIntl.Anon_Intl
 import typings.reactDashIntl.distTypesMod.IntlConfig
 import typings.reactDashIntl.reactDashIntlStrings.defaultFormats
 import typings.reactDashIntl.reactDashIntlStrings.defaultLocale
@@ -9,6 +8,7 @@ import typings.reactDashIntl.reactDashIntlStrings.messages
 import typings.reactDashIntl.reactDashIntlStrings.onError
 import typings.reactDashIntl.reactDashIntlStrings.textComponent
 import typings.reactDashIntl.reactDashIntlStrings.timeZone
+import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +27,6 @@ object default extends js.Object {
     formats | messages | timeZone | textComponent | defaultLocale | defaultFormats | onError
   ] = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: State): Anon_Intl | Null = js.native
+  def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: State): Partial[State] | Null = js.native
 }
 

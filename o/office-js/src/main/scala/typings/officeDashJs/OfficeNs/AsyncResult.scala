@@ -49,6 +49,7 @@ trait AsyncResult[T] extends js.Object {
     * Gets the payload or content of this asynchronous operation, if any.
     * 
     * @remarks
+    * 
     * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the 
     * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
     *

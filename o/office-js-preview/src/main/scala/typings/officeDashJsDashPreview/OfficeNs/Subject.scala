@@ -69,7 +69,7 @@ trait Subject extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
     * 
@@ -93,7 +93,7 @@ trait Subject extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
     *

@@ -411,6 +411,10 @@ trait Mailbox extends js.Object {
     *
     * @remarks
     *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
     * **Errors**:
     * 
     * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
@@ -419,10 +423,6 @@ trait Mailbox extends js.Object {
     * 
     * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
     *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots-puppeteer"
-version := "5.1-dt-20190802Z-e2d741"
+version := "5.1-dt-20190802Z-2398a0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jest-image-snapshot" % "2.8-dt-20190214Z-573dc0",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "puppeteer" % "1.19-dt-20190725Z-9b15a6",
+  "org.scalablytyped" %%% "puppeteer" % "1.19-dt-20190812Z-6c98fb",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "storybook__addon-storyshots" % "5.1-dt-20190802Z-2c8163",

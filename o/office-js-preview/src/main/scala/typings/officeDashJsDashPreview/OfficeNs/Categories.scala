@@ -41,7 +41,7 @@ trait Categories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidCategory: Invalid categories were provided.
     * 
@@ -64,7 +64,7 @@ trait Categories extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidCategory: Invalid categories were provided.
     * 

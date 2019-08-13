@@ -17,7 +17,7 @@ trait EnhancedLocation extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidFormatError: The format of the specified data object is not valid.
     * 

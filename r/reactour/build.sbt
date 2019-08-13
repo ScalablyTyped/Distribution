@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reactour"
-version := "1.13-dt-20190429Z-964052"
+version := "1.13-dt-20190812Z-de3bf8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

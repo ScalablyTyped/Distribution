@@ -9558,6 +9558,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsCodebuildMod._StatusType
   
   @js.native
+  sealed trait FEAR extends _EmotionName
+  
+  @js.native
   sealed trait FEEDBACK_URL extends _StackAttribute
   
   @js.native
@@ -31463,6 +31466,8 @@ object awsDashSdkStrings {
   def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
   @scala.inline
   def FAULT: FAULT = "FAULT".asInstanceOf[FAULT]
+  @scala.inline
+  def FEAR: FEAR = "FEAR".asInstanceOf[FEAR]
   @scala.inline
   def FEEDBACK_URL: FEEDBACK_URL = "FEEDBACK_URL".asInstanceOf[FEEDBACK_URL]
   @scala.inline

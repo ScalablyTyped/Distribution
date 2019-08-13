@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * An abstract class that represents the document the add-in is interacting with.
   *
   * @remarks
+  * 
   * **Hosts**: Excel, PowerPoint, Project, Word
   */
 @js.native
@@ -18,6 +19,7 @@ trait Document extends js.Object {
     * Gets an object that provides access to the bindings defined in the document.
     *
     * @remarks
+    * 
     * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
     * document or worksheet, use `Office.context.document` in your script.
     */
@@ -42,6 +44,7 @@ trait Document extends js.Object {
     * Adds an event handler for a Document object event.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
@@ -69,6 +72,7 @@ trait Document extends js.Object {
     * Returns the state of the current view of the presentation (edit or read).
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview | ActiveView}
     *
     * Can trigger an event when the view changes.
@@ -129,6 +133,7 @@ trait Document extends js.Object {
     * Gets file properties of the current document.
     *
     * @remarks
+    * 
     * **Requirement sets**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * You get the file's URL with the url property `asyncResult.value.url`.
@@ -435,6 +440,7 @@ trait Document extends js.Object {
     * Goes to the specified object or location in the document.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -478,6 +484,7 @@ trait Document extends js.Object {
     * Removes an event handler for the specified event type.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.

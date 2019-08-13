@@ -92,6 +92,7 @@ trait MUIDataTableOptions extends js.Object {
   var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
   var rowsSelected: js.UndefOr[js.Array[_]] = js.undefined
   var search: js.UndefOr[Boolean] = js.undefined
+  var searchText: js.UndefOr[String] = js.undefined
   var selectableRows: js.UndefOr[SelectableRows] = js.undefined
   var serverSide: js.UndefOr[Boolean] = js.undefined
   var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ Double, js.Object]] = js.undefined
@@ -144,6 +145,7 @@ object MUIDataTableOptions {
     rowsPerPageOptions: js.Array[Double] = null,
     rowsSelected: js.Array[_] = null,
     search: js.UndefOr[Boolean] = js.undefined,
+    searchText: String = null,
     selectableRows: SelectableRows = null,
     serverSide: js.UndefOr[Boolean] = js.undefined,
     setRowProps: (/* row */ js.Array[_], /* rowIndex */ Double) => js.Object = null,
@@ -193,6 +195,7 @@ object MUIDataTableOptions {
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions)
     if (rowsSelected != null) __obj.updateDynamic("rowsSelected")(rowsSelected)
     if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
     if (selectableRows != null) __obj.updateDynamic("selectableRows")(selectableRows)
     if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide)
     if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2(setRowProps))

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
   *
   * @remarks
+  * 
   * **Hosts**: Excel, PowerPoint, Word
   * 
   * The settings created by using the methods of the Settings object are saved per add-in and per document. 
@@ -30,6 +31,7 @@ trait Settings extends js.Object {
     * spreadsheet (coauthoring). Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
@@ -79,6 +81,7 @@ trait Settings extends js.Object {
     * Retrieves the specified setting.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     *
     * @param settingName The case-sensitive name of the setting to retrieve.
@@ -89,6 +92,7 @@ trait Settings extends js.Object {
     * Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against 
@@ -136,6 +140,7 @@ trait Settings extends js.Object {
     * call the Settings.saveAsync method.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     * 
     * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
@@ -147,6 +152,7 @@ trait Settings extends js.Object {
     * Removes an event handler for the settingsChanged event.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType 
@@ -174,6 +180,7 @@ trait Settings extends js.Object {
     * Persists the in-memory copy of the settings property bag in the document.
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     * 
     * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the 
@@ -224,6 +231,7 @@ trait Settings extends js.Object {
     * the document.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     * 
     * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name 

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
   * Represents the runtime environment of the add-in and provides access to key objects of the API. 
   * The current context exists as a property of Office. It is accessed using `Office.context`.
   *
-  * @remarks 
+  * @remarks
+  * 
   * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
   */     
 trait Context extends js.Object {
@@ -16,6 +17,7 @@ trait Context extends js.Object {
     * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
     * 
     * @remarks
+    * 
     * **Hosts**: Excel, Word
     * 
     * `commerceAllowed` is only supported in Office on iPad.
@@ -29,6 +31,7 @@ trait Context extends js.Object {
     * Gets the locale (language) specified by the user for editing the document or item.
     * 
     * @remarks
+    * 
     * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host 
     * application.
     * 
@@ -150,6 +153,7 @@ trait Context extends js.Object {
     * True if the add-in is running on a touch device, such as an iPad; false otherwise.
     * 
     * @remarks
+    * 
     * **Hosts**: Excel, PowerPoint, Word
     * 
     * `touchEnabled` is only supported in Office on iPad.

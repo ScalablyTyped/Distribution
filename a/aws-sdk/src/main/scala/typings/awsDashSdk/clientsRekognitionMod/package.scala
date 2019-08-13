@@ -50,6 +50,7 @@ package object clientsRekognitionMod {
     - typings.awsDashSdk.awsDashSdkStrings.SURPRISED
     - typings.awsDashSdk.awsDashSdkStrings.CALM
     - typings.awsDashSdk.awsDashSdkStrings.UNKNOWN
+    - typings.awsDashSdk.awsDashSdkStrings.FEAR
     - java.lang.String
   */
   type EmotionName = _EmotionName | java.lang.String

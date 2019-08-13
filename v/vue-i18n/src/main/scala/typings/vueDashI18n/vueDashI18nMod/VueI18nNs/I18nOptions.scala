@@ -10,6 +10,7 @@ trait I18nOptions extends js.Object {
   var dateTimeFormats: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormats] = js.undefined
   var fallbackLocale: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale] = js.undefined
   var fallbackRoot: js.UndefOr[Boolean] = js.undefined
+  var formatFallbackMessages: js.UndefOr[Boolean] = js.undefined
   var formatter: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Formatter] = js.undefined
   var locale: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale] = js.undefined
   var messages: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages] = js.undefined
@@ -30,6 +31,7 @@ object I18nOptions {
     dateTimeFormats: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormats = null,
     fallbackLocale: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale = null,
     fallbackRoot: js.UndefOr[Boolean] = js.undefined,
+    formatFallbackMessages: js.UndefOr[Boolean] = js.undefined,
     formatter: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Formatter = null,
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale = null,
     messages: typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages = null,
@@ -47,6 +49,7 @@ object I18nOptions {
     if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats)
     if (fallbackLocale != null) __obj.updateDynamic("fallbackLocale")(fallbackLocale)
     if (!js.isUndefined(fallbackRoot)) __obj.updateDynamic("fallbackRoot")(fallbackRoot)
+    if (!js.isUndefined(formatFallbackMessages)) __obj.updateDynamic("formatFallbackMessages")(formatFallbackMessages)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (messages != null) __obj.updateDynamic("messages")(messages)

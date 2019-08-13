@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.8.1-6c93c7"
+version := "2.8.1-1a1361"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-c6f06d",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-16bcb2",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a37b56",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.8.1-dade02",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.8.1-5b840d",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-6b077a",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.1-e7b445",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.1-dccd70",
@@ -26,11 +26,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "eventemitter3" % "4.0.0-f2f8bb",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-057966",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-b72682",
+  "org.scalablytyped" %%% "fs-capacitor" % "2.0-dt-20190509Z-6fdd97",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-fd24a4",
   "org.scalablytyped" %%% "graphql-extensions" % "0.9.1-b3f4d8",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-b0ddd6",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.5-7862ab",
-  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190513Z-9c6abc",
+  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190812Z-74b75e",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-6f6992",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-f85a2a",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",

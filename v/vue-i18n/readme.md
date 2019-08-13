@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-i18n
 
-Typings are for version 8.13.0
+Typings are for version 8.14.0
 
 ## Library description:
 Internationalization plugin for Vue.js

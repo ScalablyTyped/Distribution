@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 trait TableConstructorExpression
   extends Expression
      with Base[typings.luaparse.luaparseStrings.TableConstructorExpression] {
-  var fields: js.Array[TableKey | TableKeyString]
+  var fields: js.Array[TableKey | TableKeyString | TableValue]
 }
 
 object TableConstructorExpression {
   @scala.inline
   def apply(
-    fields: js.Array[TableKey | TableKeyString],
+    fields: js.Array[TableKey | TableKeyString | TableValue],
     `type`: typings.luaparse.luaparseStrings.TableConstructorExpression
   ): TableConstructorExpression = {
     val __obj = js.Dynamic.literal(fields = fields)

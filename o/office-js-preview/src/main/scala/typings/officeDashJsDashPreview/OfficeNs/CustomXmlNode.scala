@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Represents an XML node in a tree in a document.
   * 
   * @remarks
+  * 
   * **Hosts**: Word
   */
 @js.native
@@ -28,6 +29,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the node value.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -42,6 +44,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the nodes associated with the XPath expression.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath The XPath expression that specifies the nodes to get. Required.
@@ -61,6 +64,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the text of an XML node in a custom XML part.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -75,6 +79,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the node's XML.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -89,6 +94,7 @@ trait CustomXmlNode extends js.Object {
     * Sets the node value.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param value The value to be set on the node
@@ -107,6 +113,7 @@ trait CustomXmlNode extends js.Object {
     * Asynchronously sets the text of an XML node in a custom XML part.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param text Required. The text value of the XML node.
@@ -125,6 +132,7 @@ trait CustomXmlNode extends js.Object {
     * Sets the node XML.
     *
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to be set on the node

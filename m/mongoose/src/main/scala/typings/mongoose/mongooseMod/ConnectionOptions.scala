@@ -141,6 +141,7 @@ object ConnectionOptions {
     useFindAndModify: js.UndefOr[Boolean] = js.undefined,
     useMongoClient: js.UndefOr[Boolean] = js.undefined,
     useNewUrlParser: js.UndefOr[Boolean] = js.undefined,
+    useUnifiedTopology: js.UndefOr[Boolean] = js.undefined,
     user: String = null,
     validateOptions: js.Object | Boolean = null,
     w: Double | majority | String = null,
@@ -219,6 +220,7 @@ object ConnectionOptions {
     if (!js.isUndefined(useFindAndModify)) __obj.updateDynamic("useFindAndModify")(useFindAndModify)
     if (!js.isUndefined(useMongoClient)) __obj.updateDynamic("useMongoClient")(useMongoClient)
     if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser)
+    if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology)
     if (user != null) __obj.updateDynamic("user")(user)
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])

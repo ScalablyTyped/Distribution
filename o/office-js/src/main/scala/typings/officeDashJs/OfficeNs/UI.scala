@@ -148,6 +148,7 @@ trait UI extends js.Object {
     * Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent. 
     * 
     * @remarks
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
     * 
     * @param message Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent. 

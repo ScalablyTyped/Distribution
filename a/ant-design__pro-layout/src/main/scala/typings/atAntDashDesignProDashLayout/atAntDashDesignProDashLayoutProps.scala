@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait atAntDashDesignProDashLayoutProps {
-  @scala.inline
-  def BaseMenuProps: typings.atAntDashDesignProDashLayout.esSiderMenuBaseMenuMod.BaseMenuProps.type = typings.atAntDashDesignProDashLayout.esSiderMenuBaseMenuMod.BaseMenuProps
   type BaseMenuProps = typings.atAntDashDesignProDashLayout.esSiderMenuBaseMenuMod.BaseMenuProps
   @scala.inline
   def BasicLayoutProps: typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps

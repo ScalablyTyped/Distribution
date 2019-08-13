@@ -8,6 +8,24 @@ import scala.scalajs.js.annotation._
 
 // lifecycle: https://github.com/acdlite/recompose/blob/master/docs/API.md#lifecycle
 trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends js.Object {
+  var UNSAFE_componentWillMount: js.UndefOr[
+    js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
+  ] = js.undefined
+  var UNSAFE_componentWillReceiveProps: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* nextProps */ TProps, 
+      Unit
+    ]
+  ] = js.undefined
+  var UNSAFE_componentWillUpdate: js.UndefOr[
+    js.ThisFunction2[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* nextProps */ TProps, 
+      /* nextState */ TState, 
+      Unit
+    ]
+  ] = js.undefined
   var componentDidCatch: js.UndefOr[
     js.ThisFunction2[
       /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
@@ -61,6 +79,18 @@ trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends js.Object {
 object ReactLifeCycleFunctions {
   @scala.inline
   def apply[TProps, TState, TInstance](
+    UNSAFE_componentWillMount: js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit] = null,
+    UNSAFE_componentWillReceiveProps: js.ThisFunction1[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* nextProps */ TProps, 
+      Unit
+    ] = null,
+    UNSAFE_componentWillUpdate: js.ThisFunction2[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* nextProps */ TProps, 
+      /* nextState */ TState, 
+      Unit
+    ] = null,
     componentDidCatch: js.ThisFunction2[
       /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
       /* error */ Error, 
@@ -95,6 +125,9 @@ object ReactLifeCycleFunctions {
     ] = null
   ): ReactLifeCycleFunctions[TProps, TState, TInstance] = {
     val __obj = js.Dynamic.literal()
+    if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount)
+    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps)
+    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(UNSAFE_componentWillUpdate)
     if (componentDidCatch != null) __obj.updateDynamic("componentDidCatch")(componentDidCatch)
     if (componentDidMount != null) __obj.updateDynamic("componentDidMount")(componentDidMount)
     if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)

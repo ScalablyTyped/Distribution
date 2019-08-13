@@ -122,7 +122,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -156,7 +156,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -203,7 +203,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -237,7 +237,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -290,7 +290,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
@@ -324,7 +324,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
@@ -451,7 +451,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 
@@ -475,7 +475,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 
@@ -617,7 +617,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -645,7 +645,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -694,7 +694,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     *
@@ -731,7 +731,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     *
@@ -770,7 +770,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -809,7 +809,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -835,7 +835,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -867,7 +867,7 @@ trait MessageCompose extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 

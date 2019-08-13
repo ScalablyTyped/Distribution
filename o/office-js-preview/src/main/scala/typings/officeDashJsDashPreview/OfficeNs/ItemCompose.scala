@@ -45,7 +45,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -92,7 +92,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - AttachmentSizeExceeded: The attachment is larger than allowed.
     * 
@@ -145,7 +145,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
@@ -298,7 +298,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -347,7 +347,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     *
@@ -386,7 +386,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
@@ -412,7 +412,7 @@ trait ItemCompose extends Item {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 

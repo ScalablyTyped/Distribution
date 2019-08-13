@@ -7,8 +7,8 @@ import typings.react.reactMod.Context
 import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.ProviderExoticComponent
 import typings.react.reactMod.ProviderProps
+import typings.reactDashIntl.Anon_Intl
 import typings.reactDashIntl.Anon_IntlWrappedComponent
-import typings.reactDashIntl.Anon_IntlWrappedComponentAnonValueNumber
 import typings.reactDashIntl.Anon_Value
 import typings.reactDashIntl.Anon_ValueNumber
 import typings.reactDashIntl.Anon_WrappedComponent
@@ -41,11 +41,11 @@ object ^ extends js.Object {
       DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
     ], 
     _
-  ]) with Anon_IntlWrappedComponent) | ((FunctionComponent[
+  ]) with Anon_Intl) | ((FunctionComponent[
     WithIntlProps[
       DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
     ]
-  ]) with Anon_IntlWrappedComponent) = js.native
+  ]) with Anon_Intl) = js.native
   val FormattedHTMLMessage: ((ComponentClass[WithIntlProps[Props[Record[String, PrimitiveType]]], _]) with Anon_WrappedComponent) | ((FunctionComponent[WithIntlProps[Props[Record[String, PrimitiveType]]]]) with Anon_WrappedComponent) = js.native
   val FormattedMessage: ((ComponentClass[WithIntlProps[Props[Record[String, _]]], _]) with Anon_WrappedComponentAnyComponentType) | ((FunctionComponent[WithIntlProps[Props[Record[String, _]]]]) with Anon_WrappedComponentAnyComponentType) = js.native
   val FormattedNumber: ((ComponentClass[
@@ -53,11 +53,11 @@ object ^ extends js.Object {
       NumberFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_ValueNumber
     ], 
     _
-  ]) with Anon_IntlWrappedComponentAnonValueNumber) | ((FunctionComponent[
+  ]) with Anon_IntlWrappedComponent) | ((FunctionComponent[
     WithIntlProps[
       NumberFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_ValueNumber
     ]
-  ]) with Anon_IntlWrappedComponentAnonValueNumber) = js.native
+  ]) with Anon_IntlWrappedComponent) = js.native
   val FormattedPlural: ((ComponentClass[WithIntlProps[typings.reactDashIntl.distComponentsPluralMod.Props], _]) with Anon_WrappedComponentComponentType) | (FunctionComponent[WithIntlProps[typings.reactDashIntl.distComponentsPluralMod.Props]] with Anon_WrappedComponentComponentType) = js.native
   val FormattedRelativeTime: ((ComponentClass[WithIntlProps[typings.reactDashIntl.distComponentsRelativeMod.Props], _]) with Anon_WrappedComponentComponentTypeProps) | (FunctionComponent[WithIntlProps[typings.reactDashIntl.distComponentsRelativeMod.Props]] with Anon_WrappedComponentComponentTypeProps) = js.native
   val FormattedTime: ((ComponentClass[
@@ -65,11 +65,11 @@ object ^ extends js.Object {
       DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
     ], 
     _
-  ]) with Anon_IntlWrappedComponent) | ((FunctionComponent[
+  ]) with Anon_Intl) | ((FunctionComponent[
     WithIntlProps[
       DateTimeFormatOptions with CustomFormatConfig with WrappedComponentProps[intl] with Anon_Value
     ]
-  ]) with Anon_IntlWrappedComponent) = js.native
+  ]) with Anon_Intl) = js.native
   val IntlContext: Context[IntlShape] = js.native
   val RawIntlProvider: ProviderExoticComponent[ProviderProps[IntlShape]] = js.native
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native

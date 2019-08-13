@@ -1,5 +1,7 @@
 package typings.luaparse.libAstMod
 
+import typings.luaparse.luaparseStrings.DOT
+import typings.luaparse.luaparseStrings.`:`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ trait MemberExpression
      with Base[typings.luaparse.luaparseStrings.MemberExpression] {
   var base: Expression
   var identifier: Identifier
-  var indexer: String
+  var indexer: DOT | `:`
 }
 
 object MemberExpression {
@@ -17,10 +19,10 @@ object MemberExpression {
   def apply(
     base: Expression,
     identifier: Identifier,
-    indexer: String,
+    indexer: DOT | `:`,
     `type`: typings.luaparse.luaparseStrings.MemberExpression
   ): MemberExpression = {
-    val __obj = js.Dynamic.literal(base = base, identifier = identifier, indexer = indexer)
+    val __obj = js.Dynamic.literal(base = base, identifier = identifier, indexer = indexer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MemberExpression]
   }

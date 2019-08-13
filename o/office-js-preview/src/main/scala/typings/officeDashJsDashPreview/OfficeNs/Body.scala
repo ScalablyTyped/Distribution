@@ -97,7 +97,7 @@ trait Body extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
     * 
@@ -134,7 +134,7 @@ trait Body extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
     * 
@@ -173,7 +173,7 @@ trait Body extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Errors**: 
+    * **Errors**:
     * 
     * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
     * 

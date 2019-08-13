@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * and table-specific features, such as counting the number of rows and columns.
   *
   * @remarks
+  * 
   * **Hosts**: Excel, Word
   * 
   * **Requirement sets**: 
@@ -76,7 +77,7 @@ trait Binding extends js.Object {
     * 
     * **Requirement sets**: 
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`),
+    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
     * 
     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
     * 

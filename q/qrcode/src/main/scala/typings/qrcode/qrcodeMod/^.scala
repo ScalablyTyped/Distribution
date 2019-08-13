@@ -71,43 +71,43 @@ object ^ extends js.Object {
     options: QRCodeRenderersOptions,
     callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]
   ): Unit = js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: String): js.Promise[_] = js.native
+  def toDataURL(canvasElement: HTMLCanvasElement, text: String): js.Promise[String] = js.native
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: String,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
   ): Unit = js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: String, options: QRCodeToDataURLOptions): js.Promise[_] = js.native
+  def toDataURL(canvasElement: HTMLCanvasElement, text: String, options: QRCodeToDataURLOptions): js.Promise[String] = js.native
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: String,
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
   ): Unit = js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
+  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
   ): Unit = js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[_] = js.native
+  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = js.native
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
   ): Unit = js.native
-  def toDataURL(text: String): js.Promise[_] = js.native
+  def toDataURL(text: String): js.Promise[String] = js.native
   def toDataURL(text: String, callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = js.native
-  def toDataURL(text: String, options: QRCodeToDataURLOptions): js.Promise[_] = js.native
+  def toDataURL(text: String, options: QRCodeToDataURLOptions): js.Promise[String] = js.native
   def toDataURL(
     text: String,
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
   ): Unit = js.native
-  def toDataURL(text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
+  def toDataURL(text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
   def toDataURL(text: js.Array[QRCodeSegment], callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = js.native
-  def toDataURL(text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[_] = js.native
+  def toDataURL(text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = js.native
   def toDataURL(
     text: js.Array[QRCodeSegment],
     options: QRCodeToDataURLOptions,
@@ -149,20 +149,20 @@ object ^ extends js.Object {
     options: QRCodeToFileStreamOptions,
     callback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
-  def toString(text: String): js.Promise[_] = js.native
+  def toString(text: String): js.Promise[String] = js.native
   def toString(text: String, callback: js.Function2[/* error */ Error, /* string */ String, Unit]): Unit = js.native
-  def toString(text: String, options: QRCodeToStringOptions): js.Promise[_] = js.native
+  def toString(text: String, options: QRCodeToStringOptions): js.Promise[String] = js.native
   def toString(
     text: String,
     options: QRCodeToStringOptions,
     callback: js.Function2[/* error */ Error, /* string */ String, Unit]
   ): Unit = js.native
-  def toString(text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
+  def toString(text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
   def toString(
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* string */ String, Unit]
   ): Unit = js.native
-  def toString(text: js.Array[QRCodeSegment], options: QRCodeToStringOptions): js.Promise[_] = js.native
+  def toString(text: js.Array[QRCodeSegment], options: QRCodeToStringOptions): js.Promise[String] = js.native
   def toString(
     text: js.Array[QRCodeSegment],
     options: QRCodeToStringOptions,

@@ -35,6 +35,7 @@ trait UI extends js.Object {
     * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     *
     * @remarks
+    * 
     * **Hosts**: Word, Excel, Outlook, PowerPoint
     * 
     * **Requirement sets**: 

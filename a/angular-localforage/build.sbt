@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-localforage"
-version := "1.2.2-dt-20190322Z-774db0"
+version := "1.2.2-dt-20190322Z-293490"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-b96846",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190812Z-b62faa",
   "org.scalablytyped" %%% "localforage" % "1.7.3-87a264",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

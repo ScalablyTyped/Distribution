@@ -1,7 +1,7 @@
 
 # Scala.js typings for binary-search
 
-Typings are for version 1.3.5
+Typings are for version 1.3.6
 
 ## Library description:
 tiny binary search function with comparators

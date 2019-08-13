@@ -38,7 +38,7 @@ trait PutScheduledUpdateGroupActionType extends js.Object {
     */
   var StartTime: js.UndefOr[TimestampType] = js.undefined
   /**
-    * This parameter is deprecated.
+    * This parameter is no longer used.
     */
   var Time: js.UndefOr[TimestampType] = js.undefined
 }

@@ -120,7 +120,7 @@ trait ReactourProps extends js.Object {
     * Show/Hide _Helper_ Navigation buttons
     * @default true
     */
-  var showButton: js.UndefOr[Boolean] = js.undefined
+  var showButtons: js.UndefOr[Boolean] = js.undefined
   /**
     * Show/Hide _Helper_ Close button
     * @default true
@@ -194,7 +194,7 @@ object ReactourProps {
     rounded: Int | Double = null,
     scrollDuration: Int | Double = null,
     scrollOffset: Int | Double = null,
-    showButton: js.UndefOr[Boolean] = js.undefined,
+    showButtons: js.UndefOr[Boolean] = js.undefined,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     showNavigation: js.UndefOr[Boolean] = js.undefined,
     showNavigationNumber: js.UndefOr[Boolean] = js.undefined,
@@ -228,7 +228,7 @@ object ReactourProps {
     if (rounded != null) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
     if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton)
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
     if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
     if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation)
     if (!js.isUndefined(showNavigationNumber)) __obj.updateDynamic("showNavigationNumber")(showNavigationNumber)

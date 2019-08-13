@@ -17,7 +17,7 @@ trait FindOneOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var maxScan: js.UndefOr[scala.Double] = js.undefined
-  var maxTimeMs: js.UndefOr[scala.Double] = js.undefined
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var partial: js.UndefOr[Boolean] = js.undefined
   var projection: js.UndefOr[js.Object] = js.undefined
@@ -48,7 +48,7 @@ object FindOneOptions {
     limit: Int | scala.Double = null,
     max: Int | scala.Double = null,
     maxScan: Int | scala.Double = null,
-    maxTimeMs: Int | scala.Double = null,
+    maxTimeMS: Int | scala.Double = null,
     min: Int | scala.Double = null,
     partial: js.UndefOr[Boolean] = js.undefined,
     projection: js.Object = null,
@@ -76,7 +76,7 @@ object FindOneOptions {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxScan != null) __obj.updateDynamic("maxScan")(maxScan.asInstanceOf[js.Any])
-    if (maxTimeMs != null) __obj.updateDynamic("maxTimeMs")(maxTimeMs.asInstanceOf[js.Any])
+    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
     if (projection != null) __obj.updateDynamic("projection")(projection)

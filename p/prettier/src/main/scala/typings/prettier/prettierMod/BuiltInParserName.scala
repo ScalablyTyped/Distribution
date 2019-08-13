@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   - typings.prettier.prettierStrings.angular
   - typings.prettier.prettierStrings.mdx
   - typings.prettier.prettierStrings.yaml
+  - typings.prettier.prettierStrings.lwc
 */
 trait BuiltInParserName extends js.Object
 

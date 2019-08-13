@@ -2808,6 +2808,7 @@
 | 0.6795824130439475 | [jasmine-fixture](./j/jasmine-fixture) | Makes injecting HTML snippets into the DOM easy & 
 | 0.6795598613638794 | [html5-to-pdf](./h/html5-to-pdf) | HTML5 to PDF converter
 | 0.6795203117426214 | [rc-editor-core](./r/rc-editor-core) | editor-core ui component for react
+| 0.6794898658733234 | [bchaddrjs](./b/bchaddrjs) | Bitcoin Cash general purpose address translation.
 | 0.679483396286021 | [single-spa-react](./s/single-spa-react) | A single spa plugin for React apps
 | 0.6794790933466788 | [oja](./o/oja) | Lightweight pub/sub module with event backlog, tim
 | 0.6794420503074127 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function.
@@ -3027,6 +3028,7 @@
 | 0.6711684667588578 | [deep-equal-in-any-order](./d/deep-equal-in-any-order) | chai plugin to match objects and arrays deep equal
 | 0.6711178441755656 | [josa](./j/josa) | Handles josa selection for dynamically generated s
 | 0.6711172729057433 | [muri](./m/muri) | MongoDB URI parser
+| 0.6710919377605109 | [cashaddrjs](./c/cashaddrjs) | Bitcoin Cash cashaddr address format support for N
 | 0.6710289842475174 | [sweetalert](./s/sweetalert) | A beautiful replacement for JavaScript's "alert"
 | 0.6710115267795619 | [storybook-readme](./s/storybook-readme) | Storybook addon to show components README (for Rea
 | 0.6710079699515854 | [simple-oauth2](./s/simple-oauth2) | Node.js client for OAuth2
@@ -4467,6 +4469,7 @@
 | 0.5559260396691978 | [d3-force](./d/d3-force) | Force-directed graph layout using velocity Verlet 
 | 0.5559257817833572 | [backo2](./b/backo2) | simple backoff based on segmentio/backo
 | 0.5558143311674584 | [bunyan-seq](./b/bunyan-seq) | A Bunyan stream that sends log events to Seq
+| 0.5556267781775633 | [dialog-polyfill](./d/dialog-polyfill) | Polyfill for the dialog element
 | 0.5553375569212983 | [node-hid](./n/node-hid) | USB HID device access library
 | 0.5550802449919168 | [deep-assign](./d/deep-assign) | Recursive Object.assign()
 | 0.5549378967210588 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool
@@ -4573,6 +4576,7 @@
 | 0.5364110549283418 | [react-dotdotdot](./r/react-dotdotdot) | Multiline text ellipsis for react
 | 0.5362444899104974 | [twit](./t/twit) | Twitter API client for node (REST & Streaming)
 | 0.5360803979521552 | [webcola](./w/webcola) | WebCola =======
+| 0.5358383789864588 | [python-struct](./p/python-struct) | Packs/Unpacks/Measures structs according to Python
 | 0.5355923784964596 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG 
 | 0.5355168246472997 | [readline-sync](./r/readline-sync) | Synchronous Readline for interactively running to 
 | 0.5354686573535705 | [mobx-react-devtools](./m/mobx-react-devtools) | Dev-tools for MobX and React
@@ -4701,6 +4705,7 @@
 | 0.5188503837464978 | [humps](./h/humps) | Underscore-to-camelCase converter (and vice versa)
 | 0.518784012737751 | [restify-cookies](./r/restify-cookies) | Adds cookie parsing/setting to restify
 | 0.518672312449987 | [uuid-validate](./u/uuid-validate) | Javascript validator for UUID versions 1 through 5
+| 0.5185261789263398 | [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin
 | 0.5183744902076399 | [asn1](./a/asn1) | Contains parsers and serializers for ASN.1 (curren
 | 0.5183562436422999 | [react-lottie](./r/react-lottie) | lottie animation view for React
 | 0.5183212368811059 | [shell-quote](./s/shell-quote) | quote and parse shell commands

@@ -13,6 +13,7 @@ sealed trait EntityType extends js.Object
   * [Api set: Mailbox 1.0]
   *
   * @remarks
+  * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.EntityType")

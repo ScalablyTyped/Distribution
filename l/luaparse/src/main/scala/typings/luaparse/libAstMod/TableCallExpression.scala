@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 trait TableCallExpression
   extends Expression
      with Base[typings.luaparse.luaparseStrings.TableCallExpression] {
-  var arguments: js.Array[Expression]
+  var arguments: Expression
   var base: Expression
 }
 
 object TableCallExpression {
   @scala.inline
   def apply(
-    arguments: js.Array[Expression],
+    arguments: Expression,
     base: Expression,
     `type`: typings.luaparse.luaparseStrings.TableCallExpression
   ): TableCallExpression = {

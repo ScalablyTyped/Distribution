@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 trait Pipe extends js.Object {
   /**
     * The pipe name to use in template bindings.
-    *
+    * Typically uses [lowerCamelCase](guide/glossary#case-types)
+    * because the name cannot contain hyphens.
     */
   var name: String
   /**
@@ -32,7 +33,8 @@ class PipeCls protected () extends Pipe {
   def this(obj: Pipe) = this()
   /**
     * The pipe name to use in template bindings.
-    *
+    * Typically uses [lowerCamelCase](guide/glossary#case-types)
+    * because the name cannot contain hyphens.
     */
   /* CompleteClass */
   override var name: String = js.native
