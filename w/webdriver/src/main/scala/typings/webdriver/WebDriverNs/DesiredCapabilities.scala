@@ -46,6 +46,8 @@ trait DesiredCapabilities extends Capabilities {
   var browserAttachTimeout: js.UndefOr[Double] = js.undefined
   var browserConnectionEnabled: js.UndefOr[Boolean] = js.undefined
   var browserSideLog: js.UndefOr[Boolean] = js.undefined
+  // Browserstack w3c specific
+  var `bstack:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   // wdio-sauce-service specific
   var build: js.UndefOr[String] = js.undefined
   var bundleId: js.UndefOr[String] = js.undefined
@@ -170,6 +172,8 @@ trait DesiredCapabilities extends Capabilities {
   var safariIgnoreFraudWarning: js.UndefOr[Boolean] = js.undefined
   var safariInitialUrl: js.UndefOr[String] = js.undefined
   var safariOpenLinksInBackground: js.UndefOr[Boolean] = js.undefined
+  // Saucelabs w3c specific
+  var `sauce:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var screenshotWaitTimeout: js.UndefOr[Double] = js.undefined
   // Selenese-Backed-WebDriver specific
   var `selenium.server.url`: js.UndefOr[String] = js.undefined
@@ -187,6 +191,8 @@ trait DesiredCapabilities extends Capabilities {
   // webdriverio specific
   var specs: js.UndefOr[js.Array[String]] = js.undefined
   var systemPort: js.UndefOr[Double] = js.undefined
+  // Testingbot w3c specific
+  var `tb:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var timeoutInSeconds: js.UndefOr[Double] = js.undefined
   var trustAllSSLCertificates: js.UndefOr[Boolean] = js.undefined
   var udid: js.UndefOr[String] = js.undefined
@@ -252,6 +258,7 @@ object DesiredCapabilities {
     browserName: String = null,
     browserSideLog: js.UndefOr[Boolean] = js.undefined,
     browserVersion: String = null,
+    `bstack:options`: StringDictionary[js.Any] = null,
     build: String = null,
     bundleId: String = null,
     calendarFormat: String = null,
@@ -369,6 +376,7 @@ object DesiredCapabilities {
     safariIgnoreFraudWarning: js.UndefOr[Boolean] = js.undefined,
     safariInitialUrl: String = null,
     safariOpenLinksInBackground: js.UndefOr[Boolean] = js.undefined,
+    `sauce:options`: StringDictionary[js.Any] = null,
     screenshotWaitTimeout: Int | Double = null,
     `selenium.server.url`: String = null,
     seleniumProtocol: String = null,
@@ -384,6 +392,7 @@ object DesiredCapabilities {
     skipUnlock: js.UndefOr[Boolean] = js.undefined,
     specs: js.Array[String] = null,
     systemPort: Int | Double = null,
+    `tb:options`: StringDictionary[js.Any] = null,
     timeoutInSeconds: Int | Double = null,
     timeouts: Timeouts = null,
     trustAllSSLCertificates: js.UndefOr[Boolean] = js.undefined,
@@ -447,6 +456,7 @@ object DesiredCapabilities {
     if (browserName != null) __obj.updateDynamic("browserName")(browserName)
     if (!js.isUndefined(browserSideLog)) __obj.updateDynamic("browserSideLog")(browserSideLog)
     if (browserVersion != null) __obj.updateDynamic("browserVersion")(browserVersion)
+    if (`bstack:options` != null) __obj.updateDynamic("bstack:options")(`bstack:options`)
     if (build != null) __obj.updateDynamic("build")(build)
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
     if (calendarFormat != null) __obj.updateDynamic("calendarFormat")(calendarFormat)
@@ -564,6 +574,7 @@ object DesiredCapabilities {
     if (!js.isUndefined(safariIgnoreFraudWarning)) __obj.updateDynamic("safariIgnoreFraudWarning")(safariIgnoreFraudWarning)
     if (safariInitialUrl != null) __obj.updateDynamic("safariInitialUrl")(safariInitialUrl)
     if (!js.isUndefined(safariOpenLinksInBackground)) __obj.updateDynamic("safariOpenLinksInBackground")(safariOpenLinksInBackground)
+    if (`sauce:options` != null) __obj.updateDynamic("sauce:options")(`sauce:options`)
     if (screenshotWaitTimeout != null) __obj.updateDynamic("screenshotWaitTimeout")(screenshotWaitTimeout.asInstanceOf[js.Any])
     if (`selenium.server.url` != null) __obj.updateDynamic("selenium.server.url")(`selenium.server.url`)
     if (seleniumProtocol != null) __obj.updateDynamic("seleniumProtocol")(seleniumProtocol)
@@ -579,6 +590,7 @@ object DesiredCapabilities {
     if (!js.isUndefined(skipUnlock)) __obj.updateDynamic("skipUnlock")(skipUnlock)
     if (specs != null) __obj.updateDynamic("specs")(specs)
     if (systemPort != null) __obj.updateDynamic("systemPort")(systemPort.asInstanceOf[js.Any])
+    if (`tb:options` != null) __obj.updateDynamic("tb:options")(`tb:options`)
     if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
     if (timeouts != null) __obj.updateDynamic("timeouts")(timeouts)
     if (!js.isUndefined(trustAllSSLCertificates)) __obj.updateDynamic("trustAllSSLCertificates")(trustAllSSLCertificates)

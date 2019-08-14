@@ -68,6 +68,11 @@ trait IProduct extends IResourceObject {
     * use with Subscriptions and Plans.
     */
   var `type`: ProductType
+  /**
+    * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
+    * Only available on products of type=service.
+    */
+  var unit_label: js.UndefOr[String] = js.undefined
   var updated: Double
   /**
     * A URL of a publicly-accessible webpage for this product.
@@ -96,11 +101,13 @@ object IProduct {
     statement_descriptor: String,
     `type`: ProductType,
     updated: Double,
-    url: String
+    url: String,
+    unit_label: String = null
   ): IProduct = {
     val __obj = js.Dynamic.literal(active = active, attributes = attributes, caption = caption, created = created, deactivated_on = deactivated_on, description = description, id = id, images = images, livemode = livemode, metadata = metadata, name = name, package_dimensions = package_dimensions, shippable = shippable, skus = skus, statement_descriptor = statement_descriptor, updated = updated, url = url)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
+    if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label)
     __obj.asInstanceOf[IProduct]
   }
 }

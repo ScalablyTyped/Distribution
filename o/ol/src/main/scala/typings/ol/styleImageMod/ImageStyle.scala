@@ -27,7 +27,7 @@ trait ImageStyle extends js.Object {
   def listenImageChange[T](
     listener: js.ThisFunction1[/* this */ T, /* p0 */ typings.ol.eventsEventMod.default, Unit],
     thisArg: T
-  ): EventsKey
+  ): js.UndefOr[EventsKey]
   def load(): Unit
   def setOpacity(opacity: Double): Unit
   def setRotateWithView(rotateWithView: Boolean): Unit
@@ -57,7 +57,7 @@ object ImageStyle {
     getScale: () => Double,
     getSize: () => Size,
     getSnapToPixel: () => Boolean,
-    listenImageChange: (js.ThisFunction1[js.Any, /* p0 */ typings.ol.eventsEventMod.default, Unit], js.Any) => EventsKey,
+    listenImageChange: (js.ThisFunction1[js.Any, /* p0 */ typings.ol.eventsEventMod.default, Unit], js.Any) => js.UndefOr[EventsKey],
     load: () => Unit,
     setOpacity: Double => Unit,
     setRotateWithView: Boolean => Unit,

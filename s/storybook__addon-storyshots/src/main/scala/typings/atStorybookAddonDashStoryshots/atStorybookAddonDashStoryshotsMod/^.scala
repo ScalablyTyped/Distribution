@@ -10,7 +10,9 @@ object ^ extends js.Object {
   val renderOnly: Test = js.native
   val shallowSnapshot: Test = js.native
   val snapshot: Test = js.native
-  def default[Rendered](options: InitOptions[Rendered]): Unit = js.native
+  def default[Rendered](): Unit = js.native
+  def default[Rendered](// tslint:disable-next-line no-unnecessary-generics
+  options: InitOptions[Rendered]): Unit = js.native
   def getSnapshotFileName(context: StoryContext): String = js.native
   def multiSnapshotWithOptions(options: SnapshotOptions): Test = js.native
   def renderWithOptions(): Test = js.native

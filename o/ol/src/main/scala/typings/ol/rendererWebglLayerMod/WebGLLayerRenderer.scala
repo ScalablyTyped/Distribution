@@ -33,7 +33,7 @@ trait WebGLLayerRenderer
       T
     ],
     thisArg: S
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def getProjectionMatrix(): Transform = js.native
   def getTexCoordMatrix(): Transform = js.native
   def getTexture(): WebGLTexture = js.native

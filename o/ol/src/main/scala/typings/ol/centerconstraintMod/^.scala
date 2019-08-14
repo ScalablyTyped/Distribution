@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def createExtent(extent: Extent): Type = js.native
-  def none(): Coordinate = js.native
-  def none(center: Coordinate): Coordinate = js.native
+  def none(): js.UndefOr[Coordinate] = js.native
+  def none(center: Coordinate): js.UndefOr[Coordinate] = js.native
 }
 

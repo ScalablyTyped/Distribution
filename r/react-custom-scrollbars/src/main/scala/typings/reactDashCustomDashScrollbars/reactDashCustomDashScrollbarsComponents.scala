@@ -10,5 +10,8 @@ object reactDashCustomDashScrollbarsComponents extends reactDashCustomDashScroll
   @scala.inline
   def ReactDashCustomDashScrollbars: ComponentType[ScrollbarProps] = js.constructorOf[typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.ScrollbarProps]]
+  @scala.inline
+  def Scrollbars: ComponentType[ScrollbarProps] = js.constructorOf[typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.Scrollbars].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.ScrollbarProps]]
 }
 

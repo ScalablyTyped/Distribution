@@ -11,7 +11,7 @@ trait InvoiceItemCreationOptions extends IDataOptionsWithMetadata {
     * The integer amount in cents of the charge to be applied to the upcoming invoice. If you want to apply a credit to the customer’s
     * account, pass a negative amount.
     */
-  var amount: Double
+  var amount: js.UndefOr[Double] = js.undefined
   /**
     * 3-letter ISO code for currency.
     */
@@ -37,35 +37,49 @@ trait InvoiceItemCreationOptions extends IDataOptionsWithMetadata {
     */
   var invoice: js.UndefOr[String] = js.undefined
   /**
+    * Non-negative integer. The quantity of units for the invoice item.
+    */
+  var quantity: js.UndefOr[Double] = js.undefined
+  /**
     * The ID of a subscription to add this invoice item to. When left blank, the invoice item will be be added to the next upcoming
     * scheduled invoice. When set, scheduled invoices for subscriptions other than the specified subscription will ignore the invoice
     * item. Use this when you want to express that an invoice item has been accrued within the context of a particular subscription.
     */
   var subscription: js.UndefOr[String] = js.undefined
+  /**
+    * The integer unit amount in cents of the charge to be applied to the upcoming invoice. This unit_amount will be multiplied by
+    * the quantity to get the full amount. If you want to apply a credit to the customer’s account, pass a negative unit_amount.
+    */
+  var unit_amount: js.UndefOr[Double] = js.undefined
 }
 
 object InvoiceItemCreationOptions {
   @scala.inline
   def apply(
-    amount: Double,
     currency: String,
     customer: String,
+    amount: Int | Double = null,
     description: String = null,
     discountable: js.UndefOr[Boolean] = js.undefined,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice: String = null,
     metadata: IOptionsMetadata = null,
-    subscription: String = null
+    quantity: Int | Double = null,
+    subscription: String = null,
+    unit_amount: Int | Double = null
   ): InvoiceItemCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer)
+    val __obj = js.Dynamic.literal(currency = currency, customer = customer)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (invoice != null) __obj.updateDynamic("invoice")(invoice)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (unit_amount != null) __obj.updateDynamic("unit_amount")(unit_amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItemCreationOptions]
   }
 }

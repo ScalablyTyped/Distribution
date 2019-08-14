@@ -1,5 +1,6 @@
 package typings.mongodb
 
+import typings.mongodb.mongodbMod.BSONTypeAlias
 import typings.mongodb.mongodbMod.ProfilingLevel
 import typings.mongodb.mongodbMod.ReadConcernLevel
 import scala.scalajs.js
@@ -44,13 +45,40 @@ object mongodbStrings {
   sealed trait all extends ProfilingLevel
   
   @js.native
+  sealed trait array extends BSONTypeAlias
+  
+  @js.native
   sealed trait available extends ReadConcernLevel
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait binData extends BSONTypeAlias
+  
+  @js.native
+  sealed trait bool extends BSONTypeAlias
+  
+  @js.native
+  sealed trait date extends BSONTypeAlias
+  
+  @js.native
+  sealed trait dbPointer extends BSONTypeAlias
+  
+  @js.native
+  sealed trait decimal extends BSONTypeAlias
+  
+  @js.native
+  sealed trait double extends BSONTypeAlias
   
   @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait int extends BSONTypeAlias
+  
+  @js.native
+  sealed trait javascript extends BSONTypeAlias
+  
+  @js.native
+  sealed trait javascriptWithScope extends BSONTypeAlias
   
   @js.native
   sealed trait linearizable extends ReadConcernLevel
@@ -59,13 +87,37 @@ object mongodbStrings {
   sealed trait local extends ReadConcernLevel
   
   @js.native
+  sealed trait long extends BSONTypeAlias
+  
+  @js.native
   sealed trait majority extends ReadConcernLevel
+  
+  @js.native
+  sealed trait maxKey extends BSONTypeAlias
+  
+  @js.native
+  sealed trait minKey extends BSONTypeAlias
   
   @js.native
   sealed trait moderate extends js.Object
   
   @js.native
+  sealed trait `null` extends BSONTypeAlias
+  
+  @js.native
+  sealed trait number extends BSONTypeAlias
+  
+  @js.native
+  sealed trait `object` extends BSONTypeAlias
+  
+  @js.native
+  sealed trait objectId extends BSONTypeAlias
+  
+  @js.native
   sealed trait off extends ProfilingLevel
+  
+  @js.native
+  sealed trait regex extends BSONTypeAlias
   
   @js.native
   sealed trait slow_only extends ProfilingLevel
@@ -77,7 +129,16 @@ object mongodbStrings {
   sealed trait strict extends js.Object
   
   @js.native
-  sealed trait timestamp extends js.Object
+  sealed trait string extends BSONTypeAlias
+  
+  @js.native
+  sealed trait symbol extends BSONTypeAlias
+  
+  @js.native
+  sealed trait timestamp extends BSONTypeAlias
+  
+  @js.native
+  sealed trait undefined extends BSONTypeAlias
   
   @js.native
   sealed trait warn extends js.Object
@@ -107,21 +168,55 @@ object mongodbStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def available: available = "available".asInstanceOf[available]
+  @scala.inline
+  def binData: binData = "binData".asInstanceOf[binData]
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def dbPointer: dbPointer = "dbPointer".asInstanceOf[dbPointer]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def int: int = "int".asInstanceOf[int]
+  @scala.inline
+  def javascript: javascript = "javascript".asInstanceOf[javascript]
+  @scala.inline
+  def javascriptWithScope: javascriptWithScope = "javascriptWithScope".asInstanceOf[javascriptWithScope]
   @scala.inline
   def linearizable: linearizable = "linearizable".asInstanceOf[linearizable]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
+  def long: long = "long".asInstanceOf[long]
+  @scala.inline
   def majority: majority = "majority".asInstanceOf[majority]
+  @scala.inline
+  def maxKey: maxKey = "maxKey".asInstanceOf[maxKey]
+  @scala.inline
+  def minKey: minKey = "minKey".asInstanceOf[minKey]
   @scala.inline
   def moderate: moderate = "moderate".asInstanceOf[moderate]
   @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
+  def objectId: objectId = "objectId".asInstanceOf[objectId]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
+  def regex: regex = "regex".asInstanceOf[regex]
   @scala.inline
   def slow_only: slow_only = "slow_only".asInstanceOf[slow_only]
   @scala.inline
@@ -129,7 +224,13 @@ object mongodbStrings {
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
   @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

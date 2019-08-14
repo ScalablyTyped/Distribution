@@ -14,6 +14,6 @@ object ^ extends js.Object {
   def getDefaultStyle(): typings.ol.styleStyleMod.default = js.native
   def getDefaultStyleArray(): js.Array[typings.ol.styleStyleMod.default] = js.native
   def getDefaultTextStyle(): typings.ol.styleTextMod.default = js.native
-  def readFlatCoordinates(node: Node): js.Array[Double] = js.native
+  def readFlatCoordinates(node: Node): js.UndefOr[js.Array[Double]] = js.native
 }
 

@@ -19,6 +19,8 @@ trait Namespace extends js.Object {
   def bind_T[T](callback: Func[T], context: Context): Func[T] = js.native
    // Note: this is readonly because changing it manually will break functionality
   def createContext(): Context = js.native
+  def enter(context: Context): Unit = js.native
+  def exit(context: Context): Unit = js.native
   def get(key: String): js.Any = js.native
   def run(callback: Func[Unit]): Context = js.native
   def runAndReturn[T](callback: Func[T]): T = js.native

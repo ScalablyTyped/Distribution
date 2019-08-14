@@ -29,7 +29,7 @@ object LinearTickOptions {
     fontStyle: String = null,
     labelOffset: Int | Double = null,
     lineHeight: Int | Double = null,
-    major: NestedTickOptions | `false` = null,
+    major: MajorTickOptions | `false` = null,
     max: js.Any = null,
     maxRotation: Int | Double = null,
     maxTicksLimit: Int | Double = null,

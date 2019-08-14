@@ -61,14 +61,6 @@ class PageModel () extends PanelModelBase {
   def dragDropStart(src: IElement, target: IElement): Unit = js.native
   def dragDropStart(src: IElement, target: IElement, nestedPanelDepth: Double): Unit = js.native
   /**
-    * Call it to focus the input of the first question that has an error.
-    */
-  def focusFirstErrorQuestion(): Unit = js.native
-  /**
-    * Call it to focus the input on the first question
-    */
-  def focusFirstQuestion(): Unit = js.native
-  /**
     * Returns the list of all panels in the page
     */
   def getPanels(): js.Array[IPanel] = js.native

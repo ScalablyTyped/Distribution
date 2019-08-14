@@ -12,21 +12,21 @@ class DebugSymbol () extends js.Object {
     */
   var address: NativePointer = js.native
   /**
-    * File name owning this symbol.
+    * File name owning this symbol, or `null` if unknown.
     */
-  var fileName: String = js.native
+  var fileName: String | Null = js.native
   /**
-    * Line number in `fileName`.
+    * Line number in `fileName`, or `null` if unknown.
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double | Null = js.native
   /**
-    * Module name owning this symbol.
+    * Module name owning this symbol, or `null` if unknown.
     */
-  var moduleName: String = js.native
+  var moduleName: String | Null = js.native
   /**
-    * Name of the symbol.
+    * Name of the symbol, or `null` if unknown.
     */
-  var name: String = js.native
+  var name: String | Null = js.native
 }
 
 /* static members */

@@ -28,7 +28,7 @@ trait DeviceLanchAppConfig extends js.Object {
     * Set runtime permissions
     * Grant or deny runtime permissions for your application.
     */
-  var permissions: js.UndefOr[js.Any] = js.undefined
+  var permissions: js.UndefOr[DevicePermissions] = js.undefined
   /**
     * Launch from URL
     * Mock opening the app from URL to test your app's deep link handling mechanism.
@@ -51,7 +51,7 @@ object DeviceLanchAppConfig {
     languageAndLocale: LanguageAndLocale = null,
     launchArgs: js.Any = null,
     newInstance: js.UndefOr[Boolean] = js.undefined,
-    permissions: js.Any = null,
+    permissions: DevicePermissions = null,
     url: js.Any = null,
     userActivity: js.Any = null,
     userNotification: js.Any = null

@@ -30,12 +30,12 @@ trait Overlay
   var options: Options = js.native
   var rendered: js.Any = js.native
   var stopEvent: Boolean = js.native
-  def getElement(): HTMLElement = js.native
-  def getId(): Double | String = js.native
-  def getMap(): typings.ol.pluggableMapMod.default = js.native
+  def getElement(): js.UndefOr[HTMLElement] = js.native
+  def getId(): js.UndefOr[Double | String] = js.native
+  def getMap(): js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
   def getOffset(): js.Array[Double] = js.native
   def getOptions(): Options = js.native
-  def getPosition(): Coordinate = js.native
+  def getPosition(): js.UndefOr[Coordinate] = js.native
   def getPositioning(): OverlayPositioning = js.native
   /* protected */ def getRect(): Extent = js.native
   /* protected */ def getRect(element: js.UndefOr[scala.Nothing], size: Size): Extent = js.native

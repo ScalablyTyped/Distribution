@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TileWMS
   extends typings.ol.sourceTileImageMod.default {
-  def getGetFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): String = js.native
+  def getGetFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): js.UndefOr[String] = js.native
   def getParams(): js.Any = js.native
   def updateParams(params: js.Any): Unit = js.native
 }

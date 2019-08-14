@@ -14,11 +14,11 @@ trait Feature
   extends typings.ol.objectMod.default
      with FeatureClass
      with FeatureLike {
-  def getGeometry(): typings.ol.geomGeometryMod.default = js.native
+  def getGeometry(): js.UndefOr[typings.ol.geomGeometryMod.default] = js.native
   def getGeometryName(): String = js.native
-  def getId(): Double | String = js.native
-  def getStyle(): StyleLike = js.native
-  def getStyleFunction(): StyleFunction = js.native
+  def getId(): js.UndefOr[Double | String] = js.native
+  def getStyle(): StyleLike | Null = js.native
+  def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
   @JSName("on")
   def on_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
@@ -29,6 +29,7 @@ trait Feature
   def setId(): Unit = js.native
   def setId(id: String): Unit = js.native
   def setId(id: Double): Unit = js.native
+  def setStyle(): Unit = js.native
   def setStyle(style: StyleLike): Unit = js.native
   @JSName("un")
   def un_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native

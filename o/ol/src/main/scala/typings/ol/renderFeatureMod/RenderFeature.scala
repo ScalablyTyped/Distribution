@@ -16,12 +16,12 @@ trait RenderFeature extends js.Object {
   def getFlatMidpoint(): js.Array[Double]
   def getFlatMidpoints(): js.Array[Double]
   def getGeometry(): RenderFeature
-  def getId(): Double | String
+  def getId(): js.UndefOr[Double | String]
   def getOrientedFlatCoordinates(): js.Array[Double]
   def getProperties(): StringDictionary[js.Any]
   def getSimplifiedGeometry(squaredTolerance: Double): RenderFeature
   def getStride(): Double
-  def getStyleFunction(): js.Any
+  def getStyleFunction(): js.UndefOr[scala.Nothing]
   def getType(): GeometryType
   def transform(source: ProjectionLike, destination: ProjectionLike): Unit
 }
@@ -36,12 +36,12 @@ object RenderFeature {
     getFlatMidpoint: () => js.Array[Double],
     getFlatMidpoints: () => js.Array[Double],
     getGeometry: () => RenderFeature,
-    getId: () => Double | String,
+    getId: () => js.UndefOr[Double | String],
     getOrientedFlatCoordinates: () => js.Array[Double],
     getProperties: () => StringDictionary[js.Any],
     getSimplifiedGeometry: Double => RenderFeature,
     getStride: () => Double,
-    getStyleFunction: () => js.Any,
+    getStyleFunction: () => js.UndefOr[scala.Nothing],
     getType: () => GeometryType,
     transform: (ProjectionLike, ProjectionLike) => Unit
   ): RenderFeature = {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i18next-xhr-backend"
-version := "3.1.1-e92a00"
+version := "3.1.2-e92a00"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

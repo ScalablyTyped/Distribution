@@ -27,36 +27,51 @@ trait WebGLReplay
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ],
     oneByOne: Boolean
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def drawHitDetectionReplay[T](
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ],
     oneByOne: Boolean,
     opt_hitExtent: Extent
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def drawHitDetectionReplayAll[T](
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T]
-  ): T = js.native
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ]
+  ): js.UndefOr[T] = js.native
   /* protected */ def drawHitDetectionReplayOneByOne[T](
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T]
-  ): T = js.native
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ]
+  ): js.UndefOr[T] = js.native
   /* protected */ def drawHitDetectionReplayOneByOne[T](
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ],
     opt_hitExtent: Extent
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def drawReplay(
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,
@@ -74,9 +89,12 @@ trait WebGLReplay
     pixelRatio: Double,
     opacity: Double,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ],
     oneByOne: Boolean
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def replay[T](
     context: typings.ol.webglContextMod.default,
     center: Coordinate,
@@ -86,10 +104,13 @@ trait WebGLReplay
     pixelRatio: Double,
     opacity: Double,
     skippedFeaturesHash: StringDictionary[Boolean],
-    featureCallback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
+    featureCallback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ],
     oneByOne: Boolean,
     opt_hitExtent: Extent
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def setUpProgram(
     gl: WebGLRenderingContext,
     context: typings.ol.webglContextMod.default,

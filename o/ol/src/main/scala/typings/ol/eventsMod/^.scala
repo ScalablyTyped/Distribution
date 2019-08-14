@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def bindListener(listenerObj: EventsKey): ListenerFunction = js.native
-  def findListener(listeners: js.Array[EventsKey], listener: js.Function0[Unit]): EventsKey = js.native
-  def findListener(listeners: js.Array[EventsKey], listener: js.Function0[Unit], opt_this: js.Any): EventsKey = js.native
+  def findListener(listeners: js.Array[EventsKey], listener: js.Function0[Unit]): js.UndefOr[EventsKey] = js.native
+  def findListener(listeners: js.Array[EventsKey], listener: js.Function0[Unit], opt_this: js.Any): js.UndefOr[EventsKey] = js.native
   def findListener(
     listeners: js.Array[EventsKey],
     listener: js.Function0[Unit],
     opt_this: js.Any,
     opt_setDeleteIndex: Boolean
-  ): EventsKey = js.native
-  def getListeners(target: EventTargetLike, `type`: String): js.Array[EventsKey] = js.native
+  ): js.UndefOr[EventsKey] = js.native
+  def getListeners(target: EventTargetLike, `type`: String): js.UndefOr[js.Array[EventsKey]] = js.native
   def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = js.native
   def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = js.native
   def listen(

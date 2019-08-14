@@ -11,7 +11,7 @@ trait Icon
   @JSName("clone")
   def clone_Icon(): Icon = js.native
   def getColor(): Color = js.native
-  def getSrc(): String = js.native
+  def getSrc(): js.UndefOr[String] = js.native
   def setAnchor(anchor: js.Array[Double]): Unit = js.native
 }
 

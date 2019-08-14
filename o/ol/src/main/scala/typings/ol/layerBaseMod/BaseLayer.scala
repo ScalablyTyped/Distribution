@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseLayer
   extends typings.ol.objectMod.default {
-  def getExtent(): Extent = js.native
+  def getExtent(): js.UndefOr[Extent] = js.native
   def getLayerState(): State = js.native
   def getLayerStatesArray(): js.Array[State] = js.native
   def getLayerStatesArray(opt_states: js.Array[State]): js.Array[State] = js.native

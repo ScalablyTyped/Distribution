@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TickOptions extends NestedTickOptions {
-  var major: js.UndefOr[NestedTickOptions | `false`] = js.undefined
+  var major: js.UndefOr[MajorTickOptions | `false`] = js.undefined
   var minor: js.UndefOr[NestedTickOptions | `false`] = js.undefined
 }
 
@@ -30,7 +30,7 @@ object TickOptions {
     fontStyle: String = null,
     labelOffset: Int | Double = null,
     lineHeight: Int | Double = null,
-    major: NestedTickOptions | `false` = null,
+    major: MajorTickOptions | `false` = null,
     max: js.Any = null,
     maxRotation: Int | Double = null,
     maxTicksLimit: Int | Double = null,

@@ -23,7 +23,7 @@ trait UrlTile
   var urls: js.Array[String] = js.native
   def getTileLoadFunction(): LoadFunction = js.native
   def getTileUrlFunction(): UrlFunction = js.native
-  def getUrls(): js.Array[String] = js.native
+  def getUrls(): js.Array[String] | Null = js.native
   /* protected */ def handleTileChange(event: typings.ol.eventsEventMod.default): Unit = js.native
   @JSName("on")
   def on_tileloadend(`type`: tileloadend, listener: js.Function1[/* evt */ TileSourceEvent, Unit]): EventsKey = js.native
@@ -43,7 +43,7 @@ trait UrlTile
   def setUrl(url: String): Unit = js.native
   def setUrls(urls: js.Array[String]): Unit = js.native
   /* protected */ def tileLoadFunction(p0: Tile, p1: String): Unit = js.native
-  /* protected */ def tileUrlFunction(p0: TileCoord, p1: Double, p2: typings.ol.projProjectionMod.default): String = js.native
+  /* protected */ def tileUrlFunction(p0: TileCoord, p1: Double, p2: typings.ol.projProjectionMod.default): js.UndefOr[String] = js.native
   @JSName("un")
   def un_tileloadend(`type`: tileloadend, listener: js.Function1[/* evt */ TileSourceEvent, Unit]): Unit = js.native
   @JSName("un")

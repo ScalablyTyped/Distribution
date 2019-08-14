@@ -4,26 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Link extends js.Object {
-  var refs: js.Array[Reference]
-  def get(attribute: String, value: String): js.Array[Reference]
-  def has(attribute: String, value: String): Boolean
-  def rel(value: String): js.Array[Reference]
-  def set(ref: Reference): js.Array[Reference]
-}
-
-object Link {
-  @scala.inline
-  def apply(
-    get: (String, String) => js.Array[Reference],
-    has: (String, String) => Boolean,
-    refs: js.Array[Reference],
-    rel: String => js.Array[Reference],
-    set: Reference => js.Array[Reference]
-  ): Link = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), has = js.Any.fromFunction2(has), refs = refs, rel = js.Any.fromFunction1(rel), set = js.Any.fromFunction1(set))
-  
-    __obj.asInstanceOf[Link]
-  }
+  var refs: js.Array[Reference] = js.native
+  /**
+    * Get refs where the given attribute has a given value
+    * @param attribute Attribute name
+    * @param value Value to match
+    * @return An array of references
+    */
+  def get(attribute: String, value: String): js.Array[Reference] = js.native
+  def has(attribute: String, value: String): Boolean = js.native
+  /**
+    * Parse a link header beginning at the provided offset
+    * @param value The header to parse
+    * @param offset The offset to start at. Defaults to 0.
+    * @return The calling instance
+    */
+  def parse(value: String): Link = js.native
+  def parse(value: String, offset: Double): Link = js.native
+  /**
+    * Get refs with given relation type
+    * @param value The rel value
+    * @return An array of references
+    */
+  def rel(value: String): js.Array[Reference] = js.native
+  def set(ref: Reference): Link = js.native
 }
 

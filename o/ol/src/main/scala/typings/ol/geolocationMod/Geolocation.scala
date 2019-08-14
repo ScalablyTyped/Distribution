@@ -23,16 +23,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Geolocation
   extends typings.ol.objectMod.default {
-  def getAccuracy(): Double = js.native
+  def getAccuracy(): js.UndefOr[Double] = js.native
   def getAccuracyGeometry(): typings.ol.geomPolygonMod.default = js.native
-  def getAltitude(): Double = js.native
-  def getAltitudeAccuracy(): Double = js.native
-  def getHeading(): Double = js.native
-  def getPosition(): Coordinate = js.native
-  def getProjection(): typings.ol.projProjectionMod.default = js.native
-  def getSpeed(): Double = js.native
+  def getAltitude(): js.UndefOr[Double] = js.native
+  def getAltitudeAccuracy(): js.UndefOr[Double] = js.native
+  def getHeading(): js.UndefOr[Double] = js.native
+  def getPosition(): js.UndefOr[Coordinate] = js.native
+  def getProjection(): js.UndefOr[typings.ol.projProjectionMod.default] = js.native
+  def getSpeed(): js.UndefOr[Double] = js.native
   def getTracking(): Boolean = js.native
-  def getTrackingOptions(): PositionOptions = js.native
+  def getTrackingOptions(): js.UndefOr[PositionOptions] = js.native
   @JSName("on")
   def on_changeaccuracy(`type`: `change:accuracy`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")

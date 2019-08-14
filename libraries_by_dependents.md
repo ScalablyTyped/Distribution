@@ -1471,6 +1471,7 @@
 | 121 | [pbf](./p/pbf) | a low-level, lightweight protocol buffers implemen
 | 121 | [printf](./p/printf) | Full implementation of the printf family in pure J
 | 121 | [socket_dot_io-redis](./s/socket_dot_io-redis) | -
+| 121 | [xml-crypto](./x/xml-crypto) | Xml digital signature and encryption library for N
 | 120 | [auth0-js](./a/auth0-js) | Auth0 headless browser sdk
 | 120 | [blacklist](./b/blacklist) | Returns a shallow copy of an object without blackl
 | 120 | [d3-hierarchy](./d/d3-hierarchy) | Layout algorithms for visualizing hierarchical dat
@@ -3761,6 +3762,7 @@
 | 15 | [file-uri-to-path](./f/file-uri-to-path) | Convert a file: URI to a file path
 | 15 | [googlemaps](./g/googlemaps) | A simple way to query the Google Maps API from Nod
 | 15 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
+| 15 | [hash-it](./h/hash-it) | Hash any object based on its value
 | 15 | [hash-stream](./h/hash-stream) | Get a hash of a file or a stream
 | 15 | [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS
 | 15 | [jasminewd2](./j/jasminewd2) | WebDriverJS adapter for Jasmine2.
@@ -4918,6 +4920,7 @@
 | 5 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists.
 | 5 | [pulumi__kubernetes](./p/pulumi__kubernetes) | A Pulumi package for creating and managing Kuberne
 | 5 | [quick-hash](./q/quick-hash) | Murmur hash optimized for performance, not collisi
+| 5 | [random-bytes](./r/random-bytes) | URL and cookie safe UIDs
 | 5 | [raspi-gpio](./r/raspi-gpio) | Provides access to GPIO on the Raspberry Pi from N
 | 5 | [raspi-i2c](./r/raspi-i2c) | Provides access to I2C on the Raspberry Pi from No
 | 5 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages.
@@ -6179,6 +6182,7 @@
 | 1 | [strophejs-plugin-roster](./s/strophejs-plugin-roster) | A strophe.js plugin for Roster Versioning (XEP-023
 | 1 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components.
 | 1 | [stylenames](./s/stylenames) | Improves usage of html inline styles in javascript
+| 1 | [swagger-ui-react](./s/swagger-ui-react) | -
 | 1 | [swe-validation](./s/swe-validation) | Validation for Swedish Social Security number and 
 | 1 | [swiftclick](./s/swiftclick) | Eliminates the 300ms click event delay on touch de
 | 1 | [sxml](./s/sxml) | Simple XML
@@ -6374,6 +6378,7 @@
 | 0 | [enzyme-async-helpers](./e/enzyme-async-helpers) | Async helpers for testing React components with En
 | 0 | [epiceditor](./e/epiceditor) | An Embeddable Markdown Editor
 | 0 | [es-feature-detection](./e/es-feature-detection) | ECMAScript feature and API detection
+| 0 | [esc-pos-encoder](./e/esc-pos-encoder) | Create a set of commands that can be send to any r
 | 0 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for &
 | 0 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app
 | 0 | [expo__status-bar-height](./e/expo__status-bar-height) | Listen to status bar changes during incoming calls
@@ -6766,6 +6771,7 @@
 | 0 | [semantic-ui-visibility](./s/semantic-ui-visibility) | Single component release of visibility
 | 0 | [sequelize-cursor-paginati](./s/sequelize-cursor-pagination) | Sequelize model decorator which provides cursor ba
 | 0 | [servicenow](./s/servicenow) | Wrapper library to ServiceNow's JSON/REST plugin
+| 0 | [set-interval-async](./s/set-interval-async) | Modern version of setInterval for promises and asy
 | 0 | [sharedworker](./s/sharedworker) | SharedWorker interface which perisists URLs so it 
 | 0 | [shorten-repo-url](./s/shorten-repo-url) | Shorten GitHub URLs like GitHub shortens Issues an
 | 0 | [siesta](./s/siesta) | prototype RESTful services quickly

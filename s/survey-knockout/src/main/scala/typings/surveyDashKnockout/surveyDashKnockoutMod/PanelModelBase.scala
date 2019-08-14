@@ -168,6 +168,14 @@ class PanelModelBase ()
   def elementWidthChanged(el: IElement): Unit = js.native
   @JSName("elementWidthChanged")
   def elementWidthChanged_Any(el: IElement): js.Any = js.native
+  /**
+    * Call it to focus the input of the first question that has an error.
+    */
+  def focusFirstErrorQuestion(): Unit = js.native
+  /**
+    * Call it to focus the input on the first question
+    */
+  def focusFirstQuestion(): Unit = js.native
   def getChildrenLayoutType(): String = js.native
   /**
     * Returns question comments on the current page

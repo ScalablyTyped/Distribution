@@ -44,7 +44,7 @@ class default protected () extends ImageStyle {
   override def listenImageChange[T](
     listener: js.ThisFunction1[/* this */ T, /* p0 */ typings.ol.eventsEventMod.default, Unit],
     thisArg: T
-  ): EventsKey = js.native
+  ): js.UndefOr[EventsKey] = js.native
   /* CompleteClass */
   override def load(): Unit = js.native
   /* CompleteClass */

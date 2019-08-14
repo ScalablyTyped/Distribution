@@ -9,25 +9,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectionEvent extends js.Object {
-  var areaElement: js.Array[Element]
-  var changedElements: Anon_Added
-  var eventName: String
-  var originalEvent: MouseEvent | TouchEvent
-  var selectedElements: js.Array[Element]
-  var selection: Selection
+  var area: Element
+  var changed: Anon_Added
+  var inst: Selection
+  var oe: MouseEvent | TouchEvent
+  var selected: js.Array[Element]
 }
 
 object SelectionEvent {
   @scala.inline
   def apply(
-    areaElement: js.Array[Element],
-    changedElements: Anon_Added,
-    eventName: String,
-    originalEvent: MouseEvent | TouchEvent,
-    selectedElements: js.Array[Element],
-    selection: Selection
+    area: Element,
+    changed: Anon_Added,
+    inst: Selection,
+    oe: MouseEvent | TouchEvent,
+    selected: js.Array[Element]
   ): SelectionEvent = {
-    val __obj = js.Dynamic.literal(areaElement = areaElement, changedElements = changedElements, eventName = eventName, originalEvent = originalEvent.asInstanceOf[js.Any], selectedElements = selectedElements, selection = selection)
+    val __obj = js.Dynamic.literal(area = area, changed = changed, inst = inst, oe = oe.asInstanceOf[js.Any], selected = selected)
   
     __obj.asInstanceOf[SelectionEvent]
   }

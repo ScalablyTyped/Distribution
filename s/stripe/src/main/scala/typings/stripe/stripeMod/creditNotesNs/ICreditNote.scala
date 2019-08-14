@@ -28,7 +28,7 @@ trait ICreditNote extends IResourceObject {
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
-  var created: String
+  var created: Double
   /**
     * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
@@ -96,7 +96,7 @@ object ICreditNote {
   @scala.inline
   def apply(
     amount: Double,
-    created: String,
+    created: Double,
     currency: String,
     customer: String | ICustomer,
     customer_balance_transaction: String | IBalanceTransaction,

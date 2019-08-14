@@ -72,14 +72,14 @@ trait CanvasReplay
     transform: Transform,
     viewRotation: Double,
     skippedFeaturesHash: StringDictionary[Boolean]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def replayHitDetection[T](
     context: CanvasRenderingContext2D,
     transform: Transform,
     viewRotation: Double,
     skippedFeaturesHash: StringDictionary[Boolean],
     opt_featureCallback: js.Function0[Unit]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def replayHitDetection[T](
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -87,7 +87,7 @@ trait CanvasReplay
     skippedFeaturesHash: StringDictionary[Boolean],
     opt_featureCallback: js.Function0[Unit],
     opt_hitExtent: Extent
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def replayImage_(
     context: CanvasRenderingContext2D,
     x: Double,

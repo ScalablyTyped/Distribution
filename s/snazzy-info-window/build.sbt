@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "snazzy-info-window"
-version := "1.1-dt-20190306Z-c9a527"
+version := "1.1-dt-20190306Z-87e884"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190807Z-3c1ea4",
+  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190813Z-3c1ea4",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

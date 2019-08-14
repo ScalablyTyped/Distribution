@@ -1312,6 +1312,7 @@
 | 0.7521704496545077 | [array-tree-filter](./a/array-tree-filter) | filter in array tree
 | 0.7520503165939737 | [d3-quadtree](./d/d3-quadtree) | Two-dimensional recursive spatial subdivision.
 | 0.751942567773417 | [markdown-it-container](./m/markdown-it-container) | Plugin to create block-level custom containers for
+| 0.7518555511801603 | [random-bytes](./r/random-bytes) | URL and cookie safe UIDs
 | 0.751843907996797 | [sockjs-client](./s/sockjs-client) | SockJS-client is a browser JavaScript library that
 | 0.7517688763025322 | [gulp-sass](./g/gulp-sass) | Gulp plugin for sass
 | 0.7517607703801428 | [card-validator](./c/card-validator) | A library for validating credit card fields
@@ -3172,6 +3173,7 @@
 | 0.6649317736995417 | [loopback](./l/loopback) | LoopBack: Open Source Framework for Node.js
 | 0.6649221585845807 | [graphql-api-koa](./g/graphql-api-koa) | GraphQL API Koa middleware; the first Node.js Grap
 | 0.6649203397787358 | [redux-bootstrap](./r/redux-bootstrap) | Bootstrapping for Redux applications
+| 0.6648769487185083 | [set-interval-async](./s/set-interval-async) | Modern version of setInterval for promises and asy
 | 0.6648496442079592 | [postcss-modules-resolve-i](./p/postcss-modules-resolve-imports) | Resolves ICSS imports
 | 0.6646711491787012 | [uikit](./u/uikit) | UIkit is a lightweight and modular front-end frame
 | 0.6646473092411863 | [express-routes-versioning](./e/express-routes-versioning) | Node.js module provides versioning for expressjs r
@@ -3324,6 +3326,7 @@
 | 0.6575582119143555 | [hyper-aws4](./h/hyper-aws4) | AWS Signature Version 4 Signing Library for Hyper
 | 0.6575232187423508 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u
 | 0.6574473902778372 | [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application
+| 0.6574030872760876 | [hash-it](./h/hash-it) | Hash any object based on its value
 | 0.6573744523955221 | [d3-delaunay](./d/d3-delaunay) | Compute the Voronoi diagram of a set of two-dimens
 | 0.6573247368137317 | [react-chartjs-2](./r/react-chartjs-2) | react-chartjs-2
 | 0.6572996864995926 | [jsonabc](./j/jsonabc) | Sorts JSON object alphabetically. It supports nest
@@ -3659,6 +3662,7 @@
 | 0.6392902966406129 | [redux-persist](./r/redux-persist) | persist and rehydrate redux stores
 | 0.6392716986247216 | [use-dark-mode](./u/use-dark-mode) | A custom React Hook to help you implement a "dark 
 | 0.6392701633688016 | [lyricist](./l/lyricist) | Fetches song lyrics using the Genius.com API and w
+| 0.6392557169929305 | [xml-crypto](./x/xml-crypto) | Xml digital signature and encryption library for N
 | 0.6392510884250168 | [levenshtein](./l/levenshtein) | Javascript implementation of the L-diggity.
 | 0.6392491127861972 | [random-obj-key](./r/random-obj-key) | Get a random key from an object
 | 0.6392106678839176 | [recharts-scale](./r/recharts-scale) | Scale of Cartesian Coordinates
@@ -3863,6 +3867,7 @@
 | 0.6244949000603466 | [get-certain](./g/get-certain) | Assert a Map has a given key and return the value 
 | 0.6244356641512399 | [phosphor__disposable](./p/phosphor__disposable) | PhosphorJS - Disposable
 | 0.6243065749113597 | [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol
+| 0.6241601031110673 | [esc-pos-encoder](./e/esc-pos-encoder) | Create a set of commands that can be send to any r
 | 0.6241544081644157 | [summernote](./s/summernote) | Super simple WYSIWYG editor
 | 0.6241181225395207 | [phosphor__signaling](./p/phosphor__signaling) | PhosphorJS - Signals and Slots
 | 0.6239587067986458 | [jasmine-es6-promise-match](./j/jasmine-es6-promise-matchers) | Jasmine matchers for testing ES6 Promises
@@ -6559,6 +6564,7 @@
 | 0.20742633697472876 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native'
 | 0.20721233638426567 | [camaro](./c/camaro) | Transforming XML to JSON using Node.js binding to 
 | 0.2072021881648543 | [signalr-no-jquery](./s/signalr-no-jquery) | Javascript SignalR client without jQuery dependenc
+| 0.2064871721138427 | [swagger-ui-react](./s/swagger-ui-react) | -
 | 0.20579311683941037 | [turbostatus](./t/turbostatus) | CLI util to show status of repos in a main folder.
 | 0.2054562663354951 | [wordpress__date](./w/wordpress__date) | Date module for WordPress.
 | 0.20543769796466452 | [apollographql__graphql-pl](./a/apollographql__graphql-playground-html) | GraphQL IDE for better development workflows (Grap

@@ -11,6 +11,11 @@ trait InvoiceItemListOptions extends IListOptionsCreated {
     * The identifier of the customer whose invoice items to return. If none is provided, all invoice items will be returned.
     */
   var customer: js.UndefOr[String] = js.undefined
+  /**
+    * Set to true to only show pending invoice items, which are not yet attached to any invoices. Set to false to only show
+    * invoice items already attached to invoices. If unspecified, no filter is applied.
+    */
+  var pending: js.UndefOr[Boolean] = js.undefined
 }
 
 object InvoiceItemListOptions {
@@ -22,6 +27,7 @@ object InvoiceItemListOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     limit: Int | Double = null,
+    pending: js.UndefOr[Boolean] = js.undefined,
     starting_after: String = null
   ): InvoiceItemListOptions = {
     val __obj = js.Dynamic.literal()
@@ -31,6 +37,7 @@ object InvoiceItemListOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after)
     __obj.asInstanceOf[InvoiceItemListOptions]
   }

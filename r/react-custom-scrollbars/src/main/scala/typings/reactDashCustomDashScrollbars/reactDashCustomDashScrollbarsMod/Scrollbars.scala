@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("react-custom-scrollbars", "Scrollbars")
 @js.native
-trait Scrollbars
+class Scrollbars ()
   extends Component[ScrollbarProps, js.Object, js.Any] {
   def getClientHeight(): Double = js.native
   def getClientWidth(): Double = js.native

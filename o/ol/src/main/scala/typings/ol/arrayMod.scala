@@ -19,7 +19,7 @@ object arrayMod extends js.Object {
   def find[VALUE](
     arr: js.Array[VALUE],
     func: js.Function3[/* p0 */ VALUE, /* p1 */ Double, /* p2 */ js.Any, Boolean]
-  ): VALUE = js.native
+  ): VALUE | Null = js.native
   def findIndex(arr: js.Array[_], func: js.Function0[Unit]): Double = js.native
   def includes(arr: js.Array[_], obj: js.Any): Boolean = js.native
   def isSorted(arr: js.Array[_]): Boolean = js.native
@@ -29,6 +29,6 @@ object arrayMod extends js.Object {
   def numberSafeCompareFunction(a: js.Any, b: js.Any): Double = js.native
   def remove[VALUE](arr: js.Array[VALUE], obj: VALUE): Boolean = js.native
   def reverseSubArray(arr: js.Array[_], begin: Double, end: Double): Unit = js.native
-  def stableSort(arr: js.Array[_], compareFnc: js.Function0[Unit]): Unit = js.native
+  def stableSort(arr: js.Array[_], compareFnc: js.Function2[/* p0 */ js.Any, /* p1 */ js.Any, Double]): Unit = js.native
 }
 

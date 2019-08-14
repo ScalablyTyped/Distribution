@@ -70,6 +70,7 @@ package object fridaDashGum {
     - js.Array[js.Any]
   */
   type NativeArgumentValue = _NativeArgumentValue | js.Array[js.Any] | Double | Boolean
+  type NativeCallbackImplementation = js.ThisFunction1[/* this */ js.UndefOr[InvocationContext], /* repeated */ js.Any, js.Any]
   /* Rewritten from type alias, can be one of: 
     - typings.fridaDashGum.NativePointer
     - typings.fridaDashGum.UInt64

@@ -1,6 +1,7 @@
 package typings.stripe.stripeMod.invoicesNs
 
 import typings.stripe.stripeMod.IDataOptions
+import typings.stripe.stripeMod.subscriptionsNs.ISubscriptionUpdateItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,14 @@ trait IInvoiceUpcomingOptions extends IDataOptions {
     * will retrieve the next upcoming invoice from among the customer’s subscriptions.
     */
   var subscription: js.UndefOr[String] = js.undefined
+  /**
+    * Boolean indicating whether this subscription should cancel at the end of the current period.
+    */
+  var subscription_cancel_at_period_end: js.UndefOr[Boolean] = js.undefined
+  /**
+    * List of subscription items, each with an attached plan.
+    */
+  var subscription_items: js.UndefOr[js.Array[ISubscriptionUpdateItem]] = js.undefined
   /**
     * If set, the invoice returned will preview updating the subscription given to this plan, or creating a new subscription to this plan
     * if no subscription is given.
@@ -60,6 +69,8 @@ object IInvoiceUpcomingOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     subscription: String = null,
+    subscription_cancel_at_period_end: js.UndefOr[Boolean] = js.undefined,
+    subscription_items: js.Array[ISubscriptionUpdateItem] = null,
     subscription_plan: String = null,
     subscription_prorate: js.UndefOr[Boolean] = js.undefined,
     subscription_proration_date: Int | Double = null,
@@ -72,6 +83,8 @@ object IInvoiceUpcomingOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (!js.isUndefined(subscription_cancel_at_period_end)) __obj.updateDynamic("subscription_cancel_at_period_end")(subscription_cancel_at_period_end)
+    if (subscription_items != null) __obj.updateDynamic("subscription_items")(subscription_items)
     if (subscription_plan != null) __obj.updateDynamic("subscription_plan")(subscription_plan)
     if (!js.isUndefined(subscription_prorate)) __obj.updateDynamic("subscription_prorate")(subscription_prorate)
     if (subscription_proration_date != null) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])

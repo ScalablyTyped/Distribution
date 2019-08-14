@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fancybox"
-version := "3.5-dt-20190213Z-fb5ff8"
+version := "3.5-dt-20190813Z-fb5ff8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

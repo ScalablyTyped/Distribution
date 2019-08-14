@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 trait Stroke extends js.Object {
   def getChecksum(): String = js.native
   def getColor(): Color | ColorLike = js.native
-  def getLineCap(): String = js.native
+  def getLineCap(): js.UndefOr[String] = js.native
   def getLineDash(): js.Array[Double] = js.native
-  def getLineDashOffset(): Double = js.native
-  def getLineJoin(): String = js.native
-  def getMiterLimit(): Double = js.native
-  def getWidth(): Double = js.native
+  def getLineDashOffset(): js.UndefOr[Double] = js.native
+  def getLineJoin(): js.UndefOr[String] = js.native
+  def getMiterLimit(): js.UndefOr[Double] = js.native
+  def getWidth(): js.UndefOr[Double] = js.native
   def setColor(color: Color): Unit = js.native
   def setColor(color: ColorLike): Unit = js.native
   def setLineCap(): Unit = js.native

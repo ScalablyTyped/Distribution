@@ -192,9 +192,6 @@ object reactDashIntlStrings {
   sealed trait ins extends js.Object
   
   @js.native
-  sealed trait intl extends js.Object
-  
-  @js.native
   sealed trait kbd extends js.Object
   
   @js.native
@@ -537,8 +534,6 @@ object reactDashIntlStrings {
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
-  @scala.inline
-  def intl: intl = "intl".asInstanceOf[intl]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline

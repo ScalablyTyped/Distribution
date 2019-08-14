@@ -21,8 +21,11 @@ trait WebGLReplayGroup
     pixelRatio: Double,
     opacity: Double,
     skippedFeaturesHash: StringDictionary[Boolean],
-    callback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T]
-  ): T = js.native
+    callback: js.Function1[
+      /* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, 
+      js.UndefOr[T]
+    ]
+  ): js.UndefOr[T] = js.native
   def getDeleteResourcesFunction(context: typings.ol.webglContextMod.default): js.Function0[Unit] = js.native
   def hasFeatureAtCoordinate(
     coordinate: Coordinate,

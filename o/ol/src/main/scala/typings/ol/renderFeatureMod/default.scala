@@ -51,7 +51,7 @@ class default protected ()
   /* CompleteClass */
   override def getGeometry(): RenderFeature = js.native
   /* CompleteClass */
-  override def getId(): Double | String = js.native
+  override def getId(): js.UndefOr[Double | String] = js.native
   /* CompleteClass */
   override def getOrientedFlatCoordinates(): js.Array[Double] = js.native
   /* CompleteClass */
@@ -61,7 +61,7 @@ class default protected ()
   /* CompleteClass */
   override def getStride(): Double = js.native
   /* CompleteClass */
-  override def getStyleFunction(): js.Any = js.native
+  override def getStyleFunction(): js.UndefOr[scala.Nothing] = js.native
   /* CompleteClass */
   override def getType(): GeometryType = js.native
   /* CompleteClass */

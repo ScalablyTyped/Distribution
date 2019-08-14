@@ -16,7 +16,7 @@ object ^ extends js.Object {
   val labelCache: default[HTMLCanvasElement] = js.native
   def drawImage(
     context: CanvasRenderingContext2D,
-    transform: js.UndefOr[scala.Nothing],
+    transform: Null,
     opacity: Double,
     image: HTMLCanvasElement,
     originX: Double,
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   ): Unit = js.native
   def drawImage(
     context: CanvasRenderingContext2D,
-    transform: js.UndefOr[scala.Nothing],
+    transform: Null,
     opacity: Double,
     image: HTMLImageElement,
     originX: Double,
@@ -42,7 +42,7 @@ object ^ extends js.Object {
   ): Unit = js.native
   def drawImage(
     context: CanvasRenderingContext2D,
-    transform: js.UndefOr[scala.Nothing],
+    transform: Null,
     opacity: Double,
     image: HTMLVideoElement,
     originX: Double,

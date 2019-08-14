@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/render/canvas/ReplayGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getCircleArray(radius: Double): js.Array[js.Array[Boolean]] = js.native
+  def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = js.native
   def replayDeclutter(
     declutterReplays: StringDictionary[js.Array[_]],
     context: CanvasRenderingContext2D,

@@ -42,12 +42,12 @@ trait PluggableMap
   def forEachFeatureAtPixel[S, T](
     pixel: Pixel,
     callback: js.ThisFunction2[/* this */ S, /* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default, T]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def forEachFeatureAtPixel[S, T](
     pixel: Pixel,
     callback: js.ThisFunction2[/* this */ S, /* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default, T],
     opt_options: AtPixelOptions
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def forEachLayerAtPixel[S, T](
     pixel: Pixel,
     callback: js.ThisFunction2[
@@ -56,7 +56,7 @@ trait PluggableMap
       /* p1 */ Uint8ClampedArray | Uint8Array, 
       T
     ]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def forEachLayerAtPixel[S, T](
     pixel: Pixel,
     callback: js.ThisFunction2[
@@ -66,7 +66,7 @@ trait PluggableMap
       T
     ],
     opt_options: AtPixelOptions
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def getControls(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
   def getCoordinateFromPixel(pixel: Pixel): Coordinate = js.native
   def getEventCoordinate(event: typings.ol.eventsEventMod.default): Coordinate = js.native
@@ -84,8 +84,8 @@ trait PluggableMap
   def getOverlays(): typings.ol.collectionMod.default[typings.ol.overlayMod.default] = js.native
   def getPixelFromCoordinate(coordinate: Coordinate): Pixel = js.native
   def getRenderer(): typings.ol.rendererMapMod.default = js.native
-  def getSize(): Size = js.native
-  def getTarget(): HTMLElement | String = js.native
+  def getSize(): js.UndefOr[Size] = js.native
+  def getTarget(): js.UndefOr[HTMLElement | String] = js.native
   def getTargetElement(): HTMLElement = js.native
   def getTilePriority(
     tile: typings.ol.tileMod.default,
@@ -162,10 +162,10 @@ trait PluggableMap
   def once_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
   @JSName("once")
   def once_singleclick(`type`: singleclick, listener: js.Function1[/* evt */ typings.ol.mapBrowserEventMod.default, Unit]): EventsKey = js.native
-  def removeControl(control: typings.ol.controlControlMod.default): typings.ol.controlControlMod.default = js.native
-  def removeInteraction(interaction: typings.ol.interactionInteractionMod.default): typings.ol.interactionInteractionMod.default = js.native
-  def removeLayer(layer: typings.ol.layerBaseMod.default): typings.ol.layerBaseMod.default = js.native
-  def removeOverlay(overlay: typings.ol.overlayMod.default): typings.ol.overlayMod.default = js.native
+  def removeControl(control: typings.ol.controlControlMod.default): js.UndefOr[typings.ol.controlControlMod.default] = js.native
+  def removeInteraction(interaction: typings.ol.interactionInteractionMod.default): js.UndefOr[typings.ol.interactionInteractionMod.default] = js.native
+  def removeLayer(layer: typings.ol.layerBaseMod.default): js.UndefOr[typings.ol.layerBaseMod.default] = js.native
+  def removeOverlay(overlay: typings.ol.overlayMod.default): js.UndefOr[typings.ol.overlayMod.default] = js.native
   def render(): Unit = js.native
   def renderSync(): Unit = js.native
   def setLayerGroup(layerGroup: typings.ol.layerGroupMod.default): Unit = js.native

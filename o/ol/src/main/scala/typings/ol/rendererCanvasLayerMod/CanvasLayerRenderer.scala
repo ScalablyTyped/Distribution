@@ -31,7 +31,7 @@ trait CanvasLayerRenderer
       T
     ],
     thisArg: S
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def getTransform(frameState: FrameState, offsetX: Double): Transform = js.native
   /* protected */ def postCompose(context: CanvasRenderingContext2D, frameState: FrameState, layerState: State): Unit = js.native
   /* protected */ def postCompose(

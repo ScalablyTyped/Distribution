@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MousePosition
   extends typings.ol.controlControlMod.default {
-  def getCoordinateFormat(): CoordinateFormat = js.native
-  def getProjection(): typings.ol.projProjectionMod.default = js.native
+  def getCoordinateFormat(): js.UndefOr[CoordinateFormat] = js.native
+  def getProjection(): js.UndefOr[typings.ol.projProjectionMod.default] = js.native
   /* protected */ def handleMouseMove(event: typings.ol.eventsEventMod.default): Unit = js.native
   /* protected */ def handleMouseOut(event: typings.ol.eventsEventMod.default): Unit = js.native
   @JSName("on")

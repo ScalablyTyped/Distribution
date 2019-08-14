@@ -22,10 +22,10 @@ trait VectorSource
   /* protected */ def addFeaturesInternal(features: js.Array[typings.ol.featureMod.default]): Unit = js.native
   def clear(): Unit = js.native
   def clear(opt_fast: Boolean): Unit = js.native
-  def forEachFeature[T](callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): T = js.native
-  def forEachFeatureAtCoordinateDirect[T](coordinate: Coordinate, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): T = js.native
-  def forEachFeatureInExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): T = js.native
-  def forEachFeatureIntersectingExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): T = js.native
+  def forEachFeature[T](callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): js.UndefOr[T] = js.native
+  def forEachFeatureAtCoordinateDirect[T](coordinate: Coordinate, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): js.UndefOr[T] = js.native
+  def forEachFeatureInExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): js.UndefOr[T] = js.native
+  def forEachFeatureIntersectingExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default, T]): js.UndefOr[T] = js.native
   def getClosestFeatureToCoordinate(coordinate: Coordinate): typings.ol.featureMod.default = js.native
   def getClosestFeatureToCoordinate(coordinate: Coordinate, opt_filter: js.Function0[Unit]): typings.ol.featureMod.default = js.native
   def getExtent(): Extent = js.native
@@ -36,9 +36,9 @@ trait VectorSource
   def getFeaturesAtCoordinate(coordinate: Coordinate): js.Array[typings.ol.featureMod.default] = js.native
   def getFeaturesCollection(): typings.ol.collectionMod.default[typings.ol.featureMod.default] = js.native
   def getFeaturesInExtent(extent: Extent): js.Array[typings.ol.featureMod.default] = js.native
-  def getFormat(): typings.ol.formatFeatureMod.default = js.native
+  def getFormat(): js.UndefOr[typings.ol.formatFeatureMod.default] = js.native
   def getOverlaps(): Boolean = js.native
-  def getUrl(): String | FeatureUrlFunction = js.native
+  def getUrl(): js.UndefOr[String | FeatureUrlFunction] = js.native
   def hasFeature(feature: typings.ol.featureMod.default): Boolean = js.native
   def isEmpty(): Boolean = js.native
   def loadFeatures(extent: Extent, resolution: Double, projection: typings.ol.projProjectionMod.default): Unit = js.native

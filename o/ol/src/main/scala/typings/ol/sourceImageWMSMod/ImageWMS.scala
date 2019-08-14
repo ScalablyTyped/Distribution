@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImageWMS
   extends typings.ol.sourceImageMod.default {
-  def getGetFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): String = js.native
+  def getGetFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): js.UndefOr[String] = js.native
   def getImageLoadFunction(): LoadFunction = js.native
   def getParams(): js.Any = js.native
-  def getUrl(): String = js.native
+  def getUrl(): js.UndefOr[String] = js.native
   @JSName("on")
   def on_imageloadend(`type`: imageloadend, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): EventsKey = js.native
   @JSName("on")

@@ -23,16 +23,16 @@ import scala.scalajs.js.annotation._
   - typings.themeDashUi.themeDashUiStrings.li
   - typings.themeDashUi.themeDashUiStrings.blockquote
   - typings.themeDashUi.themeDashUiStrings.hr
-  - typings.themeDashUi.themeDashUiStrings.em
   - typings.themeDashUi.themeDashUiStrings.table
   - typings.themeDashUi.themeDashUiStrings.tr
   - typings.themeDashUi.themeDashUiStrings.th
   - typings.themeDashUi.themeDashUiStrings.td
+  - typings.themeDashUi.themeDashUiStrings.em
   - typings.themeDashUi.themeDashUiStrings.strong
+  - typings.themeDashUi.themeDashUiStrings.div
   - typings.themeDashUi.themeDashUiStrings.delete
   - typings.themeDashUi.themeDashUiStrings.inlineCode
   - typings.themeDashUi.themeDashUiStrings.thematicBreak
-  - typings.themeDashUi.themeDashUiStrings.div
   - typings.themeDashUi.themeDashUiStrings.root
 */
 trait StyledTags extends js.Object

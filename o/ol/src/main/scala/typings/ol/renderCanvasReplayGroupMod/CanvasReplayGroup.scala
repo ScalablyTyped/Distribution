@@ -23,7 +23,7 @@ trait CanvasReplayGroup
     skippedFeaturesHash: StringDictionary[Boolean],
     callback: js.Function1[/* p0 */ typings.ol.featureMod.default | typings.ol.renderFeatureMod.default, T],
     declutterReplays: StringDictionary[DeclutterGroup]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def getClipCoords(transform: Transform): js.Array[Double] = js.native
   def getReplays(): StringDictionary[typings.ol.olStrings.CanvasReplayGroup with js.Any] = js.native
   def hasReplays(replays: js.Array[ReplayType]): Boolean = js.native

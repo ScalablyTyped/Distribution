@@ -9,8 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ k in 'intl' ]: react-intl.react-intl/dist/types.IntlShape} */ trait Props[V /* <: Record[String, _] */] extends MessageDescriptor {
+trait Props[V /* <: Record[String, _] */] extends MessageDescriptor {
   var children: js.UndefOr[js.Function1[/* nodes */ ReactNodeArray, ReactNode]] = js.undefined
   var tagName: js.UndefOr[ElementType[_]] = js.undefined
   var values: js.UndefOr[V] = js.undefined

@@ -15,7 +15,7 @@ trait IconImage
   def getImage(pixelRatio: Double): HTMLImageElement | HTMLCanvasElement = js.native
   def getImageState(): ImageState = js.native
   def getSize(): Size = js.native
-  def getSrc(): String = js.native
+  def getSrc(): js.UndefOr[String] = js.native
   def load(): Unit = js.native
 }
 

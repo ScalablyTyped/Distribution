@@ -25,7 +25,7 @@ trait MapRenderer
     thisArg: S,
     layerFilter: js.ThisFunction1[/* this */ U, /* p0 */ typings.ol.layerLayerMod.default, Boolean],
     thisArg2: U
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def forEachLayerAtPixel[S, T, U](
     pixel: Pixel,
     frameState: FrameState,
@@ -39,7 +39,7 @@ trait MapRenderer
     thisArg: S,
     layerFilter: js.ThisFunction1[/* this */ U, /* p0 */ typings.ol.layerLayerMod.default, Boolean],
     thisArg2: U
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   /* protected */ def getLayerRenderer(layer: typings.ol.layerBaseMod.default): typings.ol.rendererLayerMod.default = js.native
   /* protected */ def getLayerRendererByKey(layerKey: String): typings.ol.rendererLayerMod.default = js.native
   /* protected */ def getLayerRenderers(): StringDictionary[typings.ol.rendererLayerMod.default] = js.native

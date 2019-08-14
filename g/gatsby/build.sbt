@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gatsby"
-version := "2.13.61-f1282f"
+version := "2.13.62-5b48c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "gatsby-link" % "2.2.4-1611b3",
+  "org.scalablytyped" %%% "gatsby-link" % "2.2.5-1611b3",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-796a7a",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",

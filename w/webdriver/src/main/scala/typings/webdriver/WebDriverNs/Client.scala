@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 // selenium types
 @js.native
 trait Client extends js.Object {
-  def _getWindowSize(): js.Object = js.native
+  def _getWindowSize(): ProtocolCommandResponse = js.native
   def _setWindowSize(width: Double, height: Double): Unit = js.native
   def acceptAlert(): Unit = js.native
   def activateApp(): Unit = js.native
@@ -35,7 +35,7 @@ trait Client extends js.Object {
   def clearSessionStorage(): Unit = js.native
   def closeApp(): Unit = js.native
   def closeWindow(): Unit = js.native
-  def createWindow(`type`: String): js.Object = js.native
+  def createWindow(`type`: String): WindowHandle = js.native
   def deactivateIME(): Unit = js.native
   def deleteAllCookies(): Unit = js.native
   def deleteCookie(name: String): Unit = js.native
@@ -64,7 +64,7 @@ trait Client extends js.Object {
   def fingerPrint(fingerprintId: Double): Unit = js.native
   def forward(): Unit = js.native
   def freeze(): Unit = js.native
-  def fullscreenWindow(): js.Object = js.native
+  def fullscreenWindow(): RectReturn = js.native
   def generateTestReport(message: String, group: String): Unit = js.native
   def getActiveElement(): String = js.native
   def getActiveEngine(): String = js.native
@@ -84,50 +84,50 @@ trait Client extends js.Object {
   @JSName("getElementAttribute")
   def getElementAttribute_String(elementId: String, name: String): String = js.native
   def getElementCSSValue(elementId: String, propertyName: String): String = js.native
-  def getElementLocation(elementId: String): js.Object = js.native
-  def getElementLocationInView(elementId: String): js.Object = js.native
+  def getElementLocation(elementId: String): ProtocolCommandResponse = js.native
+  def getElementLocationInView(elementId: String): ProtocolCommandResponse = js.native
   def getElementProperty(elementId: String, name: String): String = js.native
-  def getElementRect(elementId: String): js.Object = js.native
-  def getElementSize(elementId: String): js.Object = js.native
+  def getElementRect(elementId: String): RectReturn = js.native
+  def getElementSize(elementId: String): ProtocolCommandResponse = js.native
   def getElementTagName(elementId: String): String = js.native
   def getElementText(elementId: String): String = js.native
   def getElementValue(elementId: String): String | Null = js.native
-  def getGeoLocation(): js.Object = js.native
-  def getHubConfig(): js.Object = js.native
+  def getGeoLocation(): ProtocolCommandResponse = js.native
+  def getHubConfig(): ProtocolCommandResponse = js.native
   def getLocalStorage(): js.Array[String] = js.native
   def getLocalStorageItem(key: String): String = js.native
   def getLocalStorageSize(): Double = js.native
   def getLogTypes(): js.Array[String] = js.native
   def getLogs(`type`: String): js.Array[js.Object] = js.native
-  def getNamedCookie(name: String): js.Object = js.native
-  def getNetworkConditions(): js.Object = js.native
+  def getNamedCookie(name: String): Cookie = js.native
+  def getNetworkConditions(): ProtocolCommandResponse = js.native
   def getNetworkConnection(): Double = js.native
   def getOrientation(): String = js.native
   def getPageIndex(): String = js.native
-  def getPageLogs(`type`: String): js.Object = js.native
+  def getPageLogs(`type`: String): ProtocolCommandResponse = js.native
   def getPageSource(): String = js.native
   def getPerformanceData(packageName: String, dataType: String): js.Array[String] = js.native
   def getPerformanceData(packageName: String, dataType: String, dataReadTimeout: Double): js.Array[String] = js.native
   def getPerformanceDataTypes(): js.Array[String] = js.native
-  def getSession(): js.Object = js.native
+  def getSession(): ProtocolCommandResponse = js.native
   def getSessionStorage(): js.Array[String] = js.native
   def getSessionStorageItem(key: String): String = js.native
   def getSessionStorageSize(): Double = js.native
   def getSessions(): js.Array[js.Object] = js.native
-  def getSettings(): js.Object = js.native
-  def getStrings(): js.Object = js.native
-  def getStrings(language: String): js.Object = js.native
-  def getStrings(language: String, stringFile: String): js.Object = js.native
+  def getSettings(): SettingsReturn = js.native
+  def getStrings(): StringsReturn = js.native
+  def getStrings(language: String): StringsReturn = js.native
+  def getStrings(language: String, stringFile: String): StringsReturn = js.native
   def getSystemBars(): js.Array[js.Object] = js.native
-  def getTimeouts(): js.Object = js.native
+  def getTimeouts(): Timeouts = js.native
   def getTitle(): String = js.native
   def getUrl(): String = js.native
   def getWindowHandle(): String = js.native
   def getWindowHandles(): js.Array[String] = js.native
-  def getWindowPosition(): js.Object = js.native
-  def getWindowRect(): js.Object = js.native
-  def gridProxyDetails(id: String): js.Object = js.native
-  def gridTestSession(session: String): js.Object = js.native
+  def getWindowPosition(): ProtocolCommandResponse = js.native
+  def getWindowRect(): RectReturn = js.native
+  def gridProxyDetails(id: String): ProtocolCommandResponse = js.native
+  def gridTestSession(session: String): ProtocolCommandResponse = js.native
   def gsmCall(phoneNumber: String, action: String): Unit = js.native
   def gsmSignal(signalStrength: String): Unit = js.native
   def gsmSignal(signalStrength: String, signalStrengh: String): Unit = js.native
@@ -159,10 +159,10 @@ trait Client extends js.Object {
   def longPressKeyCode(keycode: Double, metastate: Double): Unit = js.native
   def longPressKeyCode(keycode: Double, metastate: Double, flags: Double): Unit = js.native
   def manageSeleniumHubLifecycle(action: String): Unit = js.native
-  def maximizeWindow(): js.Object = js.native
+  def maximizeWindow(): RectReturn = js.native
   @JSName("maximizeWindow")
   def maximizeWindow_Unit(): Unit = js.native
-  def minimizeWindow(): js.Object = js.native
+  def minimizeWindow(): RectReturn = js.native
   def moveToElement(): Unit = js.native
   def moveToElement(element: String): Unit = js.native
   def moveToElement(element: String, xoffset: Double): Unit = js.native
@@ -174,8 +174,8 @@ trait Client extends js.Object {
   def navigateTo(url: String): String = js.native
   @JSName("navigateTo")
   def navigateTo_Unit(url: String): Unit = js.native
-  def newSession(capabilities: js.Object): js.Object = js.native
-  def newSession(desiredCapabilities: js.Object, requiredCapabilities: js.Object): js.Object = js.native
+  def newSession(capabilities: js.Object): SessionReturn = js.native
+  def newSession(desiredCapabilities: js.Object, requiredCapabilities: js.Object): SessionReturn = js.native
   def openNotifications(): Unit = js.native
   def performActions(actions: js.Array[js.Object]): Unit = js.native
   def positionClick(): Unit = js.native
@@ -239,23 +239,23 @@ trait Client extends js.Object {
   def setTimeouts(`implicit`: Double, pageLoad: Double, script: Double): Unit = js.native
   def setTimeouts(`type`: String, ms: Double): Unit = js.native
   def setValueImmediate(elementId: String, value: String): Unit = js.native
-  def setWindowPosition(x: Double, y: Double): js.Object = js.native
-  def setWindowRect(): js.Object = js.native
-  def setWindowRect(x: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Double, width: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Double, width: Double, height: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Double, width: Null, height: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Null, width: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Null, width: Double, height: Double): js.Object = js.native
-  def setWindowRect(x: Double, y: Null, width: Null, height: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Double, width: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Double, width: Double, height: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Double, width: Null, height: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Null, width: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Null, width: Double, height: Double): js.Object = js.native
-  def setWindowRect(x: Null, y: Null, width: Null, height: Double): js.Object = js.native
+  def setWindowPosition(x: Double, y: Double): ProtocolCommandResponse = js.native
+  def setWindowRect(): RectReturn = js.native
+  def setWindowRect(x: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double, width: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double, width: Double, height: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double, width: Null, height: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Null, width: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Null, width: Double, height: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Null, width: Null, height: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Double, width: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Double, width: Double, height: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Double, width: Null, height: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Null, width: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Null, width: Double, height: Double): RectReturn = js.native
+  def setWindowRect(x: Null, y: Null, width: Null, height: Double): RectReturn = js.native
   def shake(): Unit = js.native
   def shutdown(): Unit = js.native
   def startActivity(
@@ -283,7 +283,7 @@ trait Client extends js.Object {
     videoSize: js.UndefOr[String],
     bugReport: js.UndefOr[String]
   ): Unit = js.native
-  def status(): js.Object = js.native
+  def status(): StatusReturn = js.native
   def stopRecordingScreen(): String = js.native
   def stopRecordingScreen(remotePath: String): String = js.native
   def stopRecordingScreen(remotePath: String, username: String): String = js.native
@@ -298,7 +298,7 @@ trait Client extends js.Object {
   def switchToWindow(handle: String): Unit = js.native
   def takeElementScreenshot(elementId: String): String = js.native
   def takeElementScreenshot(elementId: String, scroll: Boolean): String = js.native
-  def takeHeapSnapshot(): js.Object = js.native
+  def takeHeapSnapshot(): ProtocolCommandResponse = js.native
   def takeScreenshot(): String = js.native
   def terminateApp(): Unit = js.native
   def terminateApp(appId: String): Unit = js.native

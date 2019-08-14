@@ -9,5 +9,8 @@ trait reactDashCustomDashScrollbarsProps {
   @scala.inline
   def ReactDashCustomDashScrollbarsProps: ScrollbarProps.type = typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.ScrollbarProps
   type ReactDashCustomDashScrollbarsProps = ScrollbarProps
+  @scala.inline
+  def ScrollbarsProps: ScrollbarProps.type = typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod.ScrollbarProps
+  type ScrollbarsProps = ScrollbarProps
 }
 

@@ -20,6 +20,12 @@ trait Method extends js.Object {
     */
   var holder: Wrapper = js.native
   /**
+    * Implementation. Assign a new implementation to this property to
+    * replace the original implementation. Assign `null` at a future point
+    * to revert back to the original implementation.
+    */
+  var implementation: MethodImplementation | Null = js.native
+  /**
     * Name of this method.
     */
   var methodName: String = js.native
@@ -36,9 +42,5 @@ trait Method extends js.Object {
     * Queries whether the method may be invoked with a given argument list.
     */
   def canInvokeWith(args: js.Any*): Boolean = js.native
-  /**
-    * Implementation. Assign to this property to replace it.
-    */
-  def implementation(params: js.Any*): js.Any = js.native
 }
 

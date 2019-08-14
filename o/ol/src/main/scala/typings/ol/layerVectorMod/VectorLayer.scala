@@ -14,25 +14,23 @@ trait VectorLayer
   extends typings.ol.layerLayerMod.default {
   var `type`: LayerType = js.native
   def getDeclutter(): Boolean = js.native
-  def getRenderBuffer(): Double = js.native
+  def getRenderBuffer(): js.UndefOr[Double] = js.native
   def getRenderMode(): VectorRenderType | String = js.native
   def getRenderOrder(): js.Function2[
     /* p0 */ typings.ol.featureMod.default, 
     /* p1 */ typings.ol.featureMod.default, 
-    Double
+    js.UndefOr[Double | Null]
   ] = js.native
   @JSName("getSource")
   def getSource_default(): typings.ol.sourceSourceMod.default = js.native
-  def getStyle(): StyleLike = js.native
-  def getStyleFunction(): StyleFunction = js.native
+  def getStyle(): js.UndefOr[StyleLike | Null] = js.native
+  def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
   def getUpdateWhileAnimating(): Boolean = js.native
   def getUpdateWhileInteracting(): Boolean = js.native
   def setDeclutter(declutter: Boolean): Unit = js.native
   def setRenderOrder(): Unit = js.native
   def setRenderOrder(renderOrder: OrderFunction): Unit = js.native
   def setStyle(): Unit = js.native
-  def setStyle(style: js.Array[typings.ol.styleStyleMod.default]): Unit = js.native
-  def setStyle(style: StyleFunction): Unit = js.native
-  def setStyle(style: typings.ol.styleStyleMod.default): Unit = js.native
+  def setStyle(style: StyleLike): Unit = js.native
 }
 

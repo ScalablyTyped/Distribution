@@ -1532,6 +1532,7 @@
 | [es6-promisify](./e/es6-promisify) | Converts callback-based functions to ES6 Promises | promises, es6, promisify |
 | [es6-shim](./e/es6-shim) | ECMAScript 6 (Harmony) compatibility shims for leg | ecmascript, harmony, es6, shim, promise, promises, setPrototypeOf, map, set, __proto__ |
 | [es6-weak-map](./e/es6-weak-map) | ECMAScript6 WeakMap polyfill | map, weakmap, collection, es6, harmony, list, hash, gc, ponyfill |
+| [esc-pos-encoder](./e/esc-pos-encoder) | Create a set of commands that can be send to any r | pos, escpos, receipt, printer |
 | [escape-goat](./e/escape-goat) | Escape a string for use in HTML or the inverse | escape, unescape, html, entity, entities, escaping, sanitize, sanitization, utility, template, attribute, value, interpolate, xss, goat, 🐐 |
 | [escape-html](./e/escape-html) | Escape string for use in HTML | escape, html, utility |
 | [escape-latex](./e/escape-latex) | Escape LaTeX special characters with Javascript | latex, escape |
@@ -2448,6 +2449,7 @@
 | [has-emoji](./h/has-emoji) | Check whether a string has any emoji | emoji, emojis, string, text, has, contains, includes, detect, is |
 | [has-yarn](./h/has-yarn) | Check if a project is using Yarn | yarn, has, detect, is, project, app, module, package, manager, npm |
 | [hash-file](./h/hash-file) | Create a hashed file name | file, hash, name, crypto |
+| [hash-it](./h/hash-it) | Hash any object based on its value | hash, hashcode, object-hash, unique |
 | [hash-stream](./h/hash-stream) | Get a hash of a file or a stream | hash, stream |
 | [hash-sum](./h/hash-sum) | Blazing fast unique hash generator | - |
 | [hash_dot_js](./h/hash_dot_js) | Various hash functions that could be run by both b | hash, sha256, sha224, hmac |
@@ -5078,6 +5080,7 @@
 | [raf](./r/raf) | requestAnimationFrame polyfill for node and the br | requestAnimationFrame, polyfill |
 | [random](./r/random) | Seedable random number generator supporting many c | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
 | [random-boolean](./r/random-boolean) | Get a random boolean | random, bool, boolean, true, false |
+| [random-bytes](./r/random-bytes) | URL and cookie safe UIDs | bytes, generator, random, safe |
 | [random-float](./r/random-float) | Generate a random float | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |
 | [random-int](./r/random-int) | Generate a random integer | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
 | [random-item](./r/random-item) | Get a random item from an array | random, randomize, math, array, item, element, pick, select |
@@ -6114,6 +6117,7 @@
 | [servicenow-london](./s/servicenow-london) | - | - |
 | [session-file-store](./s/session-file-store) | Session file store is a provision for storing sess | session, file, store, express, connect |
 | [set-cookie-parser](./s/set-cookie-parser) | Parses set-cookie headers into objects | set-cookie, set, cookie, cookies, header, parser |
+| [set-interval-async](./s/set-interval-async) | Modern version of setInterval for promises and asy | setInterval, setTimeout, clearInterval, clearTimeout, interval, timeout, milliseconds, seconds, promise, promises, async, asynchronous, await, recurrent, concurrency, reentrancy |
 | [set-value](./s/set-value) | Create nested values and any intermediaries using  | bury, deep-get-set, deep-object, deep-property, deep-set, deep-set-in, deephas, dot-prop, dot2val, es5-dot-prop, get, getsetdeep, has, hasown, key, keys, lodash.set, nested, notation, object, object-path, object-path-set, object-set, prop, properties, property, props, set, set-deep, set-deep-prop, set-nested-prop, setvalue, value, values |
 | [setasap](./s/setasap) | setImmediate polyfill for the browser and node | setImmediate, task, setAsap, setTimeout, process.nextTick |
 | [setprototypeof](./s/setprototypeof) | A small polyfill for Object.setprototypeof | polyfill, object, setprototypeof |
@@ -6532,6 +6536,7 @@
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
 | [swagger-ui-express](./s/swagger-ui-express) | Swagger UI Express | swagger, express, ui, json, documentation |
+| [swagger-ui-react](./s/swagger-ui-react) | - | - |
 | [swaggerize-express](./s/swaggerize-express) | Design-driven apis with swagger 2.0 and express. | swagger, swagger 2.0, swagger-node, swagger-express, swagger-ui, express, node, node.js, rest, restful, service, api |
 | [swap-case](./s/swap-case) | Swap the case of a string | swap, case, reverse, switch |
 | [swe-validation](./s/swe-validation) | Validation for Swedish Social Security number and  | validate, swedish, personnummer, organisationnummer, ssn, social, security, number, social security number, corporate identity |
@@ -7242,6 +7247,7 @@
 | [xlsx](./x/xlsx) | SheetJS Spreadsheet data parser and writer | excel, xls, xlsx, xlsb, xlsm, ods, csv, dbf, dif, sylk, office, spreadsheet |
 | [xml](./x/xml) | Fast and simple xml generator. Supports attributes | xml, create, builder, json, simple |
 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t | xml |
+| [xml-crypto](./x/xml-crypto) | Xml digital signature and encryption library for N | xml, digital signature, xml encryption, x.509 certificate |
 | [xml-escape](./x/xml-escape) | Escape XML | Escape, XML, Unesacpe, encoding, xml-escape |
 | [xml-formatter](./x/xml-formatter) | Converts XML into a human readable format (pretty  | xml, pretty-print, indent, parser, formatter, xml:space, preserve |
 | [xml-js](./x/xml-js) | A convertor between XML text and Javascript object | XML, xml, js, JSON, json, cdata, CDATA, doctype, processing instruction, Javascript, js2xml, json2xml, xml2js, xml2json, transform, transformer, transforming, transformation, convert, convertor, converting, conversion, parse, parser, parsing |

@@ -1,6 +1,5 @@
 package typings.fridaDashGum.JavaNs
 
-import typings.fridaDashGum.AnyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ trait MethodSpec extends js.Object {
     * Implementation.
     */
   @JSName("implementation")
-  var implementation_Original: AnyFunction = js.native
+  var implementation_Original: MethodImplementation = js.native
   /**
     * Return type. Defaults to `void` if omitted.
     */
@@ -23,6 +22,6 @@ trait MethodSpec extends js.Object {
   /**
     * Implementation.
     */
-  def implementation(args: js.Any*): js.Any = js.native
+  def implementation(`this`: Wrapper, params: js.Any*): js.Any = js.native
 }
 

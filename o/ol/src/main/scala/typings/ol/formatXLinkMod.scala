@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/format/XLink", JSImport.Namespace)
 @js.native
 object formatXLinkMod extends js.Object {
-  def readHref(node: Element): String = js.native
+  def readHref(node: Element): js.UndefOr[String] = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.fridaDashGum.ObjCNs
 
-import typings.fridaDashGum.AnyFunction
 import typings.fridaDashGum.NativePointer
 import typings.fridaDashGum.ObjectWrapper
 import scala.scalajs.js
@@ -21,7 +20,7 @@ class ObjectMethod () extends ObjectWrapper {
     *
     * You may replace it by assigning to this property. See `ObjC.implement()` for details.
     */
-  var implementation: AnyFunction | NativePointer = js.native
+  var implementation: NativePointer = js.native
   /**
     * Return type name.
     */
