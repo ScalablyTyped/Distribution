@@ -34,6 +34,8 @@ trait ColumnComponent extends _ColumnLookup {
   def headerFilterFocus(): Unit
   /** The hide function hides the column if it is visible.*/
   def hide(): Unit
+  /**You can move a column component next to another column using the move function */
+  def move(toColumn: ColumnLookup, after: Boolean): Unit
   /** The reloadHeaderFilter function rebuilds the header filter element, updating any params passed into the editor used to generate the filter. */
   def reloadHeaderFilter(): Unit
   /** The scrollTo function will scroll the table to the column if it is visible. */
@@ -62,13 +64,14 @@ object ColumnComponent {
     getVisibility: () => Boolean,
     headerFilterFocus: () => Unit,
     hide: () => Unit,
+    move: (ColumnLookup, Boolean) => Unit,
     reloadHeaderFilter: () => Unit,
     scrollTo: () => js.Promise[Unit],
     setHeaderFilterValue: js.Any => Unit,
     show: () => Unit,
     toggle: () => Unit
   ): ColumnComponent = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), getCells = js.Any.fromFunction0(getCells), getDefinition = js.Any.fromFunction0(getDefinition), getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getNextColumn = js.Any.fromFunction0(getNextColumn), getParentColumn = js.Any.fromFunction0(getParentColumn), getPrevColumn = js.Any.fromFunction0(getPrevColumn), getSubColumns = js.Any.fromFunction0(getSubColumns), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), headerFilterFocus = js.Any.fromFunction0(headerFilterFocus), hide = js.Any.fromFunction0(hide), reloadHeaderFilter = js.Any.fromFunction0(reloadHeaderFilter), scrollTo = js.Any.fromFunction0(scrollTo), setHeaderFilterValue = js.Any.fromFunction1(setHeaderFilterValue), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), getCells = js.Any.fromFunction0(getCells), getDefinition = js.Any.fromFunction0(getDefinition), getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getNextColumn = js.Any.fromFunction0(getNextColumn), getParentColumn = js.Any.fromFunction0(getParentColumn), getPrevColumn = js.Any.fromFunction0(getPrevColumn), getSubColumns = js.Any.fromFunction0(getSubColumns), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), headerFilterFocus = js.Any.fromFunction0(headerFilterFocus), hide = js.Any.fromFunction0(hide), move = js.Any.fromFunction2(move), reloadHeaderFilter = js.Any.fromFunction0(reloadHeaderFilter), scrollTo = js.Any.fromFunction0(scrollTo), setHeaderFilterValue = js.Any.fromFunction1(setHeaderFilterValue), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[ColumnComponent]
   }

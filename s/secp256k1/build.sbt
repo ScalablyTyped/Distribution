@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "secp256k1"
-version := "3.5-dt-20180529Z-b414f5"
+version := "3.5-dt-20180529Z-c0e89f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

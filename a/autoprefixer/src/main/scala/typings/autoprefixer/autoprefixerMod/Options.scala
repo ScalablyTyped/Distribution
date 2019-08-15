@@ -17,6 +17,7 @@ trait Options extends js.Object {
   var flexbox: js.UndefOr[Boolean | `no-2009`] = js.undefined
   var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
   var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
+  var overrideBrowserslist: js.UndefOr[js.Array[String] | String] = js.undefined
   var remove: js.UndefOr[Boolean] = js.undefined
   var stats: js.UndefOr[Stats] = js.undefined
   var supports: js.UndefOr[Boolean] = js.undefined
@@ -32,6 +33,7 @@ object Options {
     flexbox: Boolean | `no-2009` = null,
     grid: `false` | autoplace | `no-autoplace` = null,
     ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined,
+    overrideBrowserslist: js.Array[String] | String = null,
     remove: js.UndefOr[Boolean] = js.undefined,
     stats: Stats = null,
     supports: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +46,7 @@ object Options {
     if (flexbox != null) __obj.updateDynamic("flexbox")(flexbox.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUnknownVersions)) __obj.updateDynamic("ignoreUnknownVersions")(ignoreUnknownVersions)
+    if (overrideBrowserslist != null) __obj.updateDynamic("overrideBrowserslist")(overrideBrowserslist.asInstanceOf[js.Any])
     if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
     if (stats != null) __obj.updateDynamic("stats")(stats)
     if (!js.isUndefined(supports)) __obj.updateDynamic("supports")(supports)

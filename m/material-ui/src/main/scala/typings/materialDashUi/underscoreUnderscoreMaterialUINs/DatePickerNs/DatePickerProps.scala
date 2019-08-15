@@ -55,6 +55,7 @@ trait DatePickerProps extends js.Object {
   var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var openToYearSelection: js.UndefOr[Boolean] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   var rowsMax: js.UndefOr[Double] = js.undefined
   var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
@@ -107,6 +108,7 @@ object DatePickerProps {
     onFocus: FocusEventHandler[js.Object] = null,
     onKeyDown: KeyboardEventHandler[js.Object] = null,
     onShow: () => Unit = null,
+    openToYearSelection: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
     rowsMax: Int | Double = null,
     shouldDisableDate: /* day */ Date => Boolean = null,
@@ -156,6 +158,7 @@ object DatePickerProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (!js.isUndefined(openToYearSelection)) __obj.updateDynamic("openToYearSelection")(openToYearSelection)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
     if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(js.Any.fromFunction1(shouldDisableDate))

@@ -23,6 +23,7 @@ trait GoogleMutantOptions extends TileLayerOptions {
 object GoogleMutantOptions {
   @scala.inline
   def apply(
+    accessToken: String = null,
     attribution: String = null,
     bounds: LatLngBoundsExpression = null,
     className: String = null,
@@ -30,6 +31,7 @@ object GoogleMutantOptions {
     crossOrigin: CrossOrigin = null,
     detectRetina: js.UndefOr[Boolean] = js.undefined,
     errorTileUrl: String = null,
+    id: String = null,
     keepBuffer: Int | Double = null,
     maxNativeZoom: Int | Double = null,
     maxZoom: Int | Double = null,
@@ -51,6 +53,7 @@ object GoogleMutantOptions {
     zoomReverse: js.UndefOr[Boolean] = js.undefined
   ): GoogleMutantOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -58,6 +61,7 @@ object GoogleMutantOptions {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorTileUrl != null) __obj.updateDynamic("errorTileUrl")(errorTileUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (keepBuffer != null) __obj.updateDynamic("keepBuffer")(keepBuffer.asInstanceOf[js.Any])
     if (maxNativeZoom != null) __obj.updateDynamic("maxNativeZoom")(maxNativeZoom.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])

@@ -8,16 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ZAxisTitleOptions extends js.Object {
+trait ZAxisTitleOptions extends AxisTitleOptions {
   /**
     * (Highcharts) Alignment of the title relative to the axis values. Possible
     * values are "low", "middle" or "high".
     */
   var align: js.UndefOr[AxisTitleAlignValue] = js.undefined
-  /**
-    * (Highcharts) Deprecated. Set the `text` to `null` to disable the title.
-    */
-  var enabled: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts) The pixel distance between the axis labels or line and the
     * title. Defaults to 0 for horizontal axes, 10 for vertical
@@ -139,7 +135,6 @@ object ZAxisTitleOptions {
   @scala.inline
   def apply(
     align: AxisTitleAlignValue = null,
-    enabled: String = null,
     margin: Int | Double = null,
     offset: Int | Double = null,
     position3d: chart | flap | offset | ortho = null,
@@ -155,7 +150,6 @@ object ZAxisTitleOptions {
   ): ZAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])

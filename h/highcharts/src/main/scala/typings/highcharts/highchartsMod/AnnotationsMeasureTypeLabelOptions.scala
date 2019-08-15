@@ -17,7 +17,7 @@ trait AnnotationsMeasureTypeLabelOptions extends js.Object {
     *
     * Available data are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var formatter: js.UndefOr[js.Function] = js.undefined
   /**

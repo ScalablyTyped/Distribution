@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesVennDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesVennDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesVennDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -94,7 +92,6 @@ trait SeriesVennDataOptions
 object SeriesVennDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesVennDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -112,7 +109,6 @@ object SeriesVennDataOptions {
     value: Int | Double = null
   ): SeriesVennDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

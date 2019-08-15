@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "slickgrid"
-version := "2.1.0-dt-20190329Z-ac6f4d"
+version := "2.1.0-dt-20190329Z-b93e69"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190805Z-186115",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-186115",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b6c899",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

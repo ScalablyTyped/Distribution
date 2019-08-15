@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsFibonacciTypeOptions extends js.Object {
   /**
-    * (Highstock) An array of background colors: Default to:(see online
+    * (Highstock) An array of background colors: Default to: (see online
     * documentation for example)
     */
   var backgroundColors: js.UndefOr[js.Any] = js.undefined

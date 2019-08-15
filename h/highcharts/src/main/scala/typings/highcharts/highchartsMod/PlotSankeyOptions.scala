@@ -56,7 +56,7 @@ trait PlotSankeyOptions extends js.Object {
     * In styled mode, the border stroke can be set with the `.highcharts-point`
     * rule.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The width of the border surrounding each
     * column or bar. Defaults to `1` when there is room for a border, but to
@@ -219,16 +219,6 @@ trait PlotSankeyOptions extends js.Object {
     */
   var events: js.UndefOr[PlotSankeyEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
     * chart width or only the zoomed area when zooming in on parts of the X
     * axis. By default, the Y axis adjusts to the min and max of the visible
@@ -288,7 +278,7 @@ trait PlotSankeyOptions extends js.Object {
   var lastVisiblePrice: js.UndefOr[PlotSankeyLastVisiblePriceOptions] = js.undefined
   /**
     * (Highcharts) Set options on specific levels. Takes precedence over series
-    * options, but not point options.
+    * options, but not node and link options.
     */
   var levels: js.UndefOr[js.Array[PlotSankeyLevelsOptions]] = js.undefined
   /**
@@ -303,13 +293,10 @@ trait PlotSankeyOptions extends js.Object {
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) The minimal height for a column or width
-    * for a bar. By default, 0 values are not shown. To visualize a 0 (or close
-    * to zero) point, set the minimal point length to a pixel value like 3\. In
-    * stacked column charts, minPointLength might not be respected for tightly
-    * packed values.
+    * (Highcharts) The minimal width for a line of a sankey. By default, 0
+    * values are not shown.
     */
-  var minPointLength: js.UndefOr[Double] = js.undefined
+  var minLinkWidth: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -416,7 +403,7 @@ object PlotSankeyOptions {
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | AnimationOptionsObject | PlotSankeyAnimationOptions = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -437,7 +424,6 @@ object PlotSankeyOptions {
     dragDrop: PlotSankeyDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotSankeyEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
@@ -448,7 +434,7 @@ object PlotSankeyOptions {
     levels: js.Array[PlotSankeyLevelsOptions] = null,
     linkOpacity: Int | Double = null,
     linkedTo: String = null,
-    minPointLength: Int | Double = null,
+    minLinkWidth: Int | Double = null,
     navigatorOptions: PlotSeriesOptions = null,
     nodePadding: Int | Double = null,
     nodeWidth: Int | Double = null,
@@ -473,7 +459,7 @@ object PlotSankeyOptions {
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -494,7 +480,6 @@ object PlotSankeyOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll)
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)
     if (joinBy != null) __obj.updateDynamic("joinBy")(joinBy.asInstanceOf[js.Any])
@@ -505,7 +490,7 @@ object PlotSankeyOptions {
     if (levels != null) __obj.updateDynamic("levels")(levels)
     if (linkOpacity != null) __obj.updateDynamic("linkOpacity")(linkOpacity.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo)
-    if (minPointLength != null) __obj.updateDynamic("minPointLength")(minPointLength.asInstanceOf[js.Any])
+    if (minLinkWidth != null) __obj.updateDynamic("minLinkWidth")(minLinkWidth.asInstanceOf[js.Any])
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions)
     if (nodePadding != null) __obj.updateDynamic("nodePadding")(nodePadding.asInstanceOf[js.Any])
     if (nodeWidth != null) __obj.updateDynamic("nodeWidth")(nodeWidth.asInstanceOf[js.Any])

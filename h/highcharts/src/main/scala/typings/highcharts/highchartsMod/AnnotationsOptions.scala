@@ -39,7 +39,7 @@ trait AnnotationsOptions extends js.Object {
     * Can be user later when removing an annotation in
     * Chart.removeAnnotation(id) method.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock) An infinity line annotation.
     */
@@ -104,7 +104,7 @@ object AnnotationsOptions {
     elliottWave: AnnotationsElliottWaveOptions = null,
     events: AnnotationsEventsOptions = null,
     fibonacci: AnnotationsFibonacciOptions = null,
-    id: String = null,
+    id: Double | String = null,
     infinityLine: AnnotationsInfinityLineOptions = null,
     labelOptions: AnnotationsLabelOptions = null,
     labels: js.Array[AnnotationsLabelsOptions] = null,
@@ -124,7 +124,7 @@ object AnnotationsOptions {
     if (elliottWave != null) __obj.updateDynamic("elliottWave")(elliottWave)
     if (events != null) __obj.updateDynamic("events")(events)
     if (fibonacci != null) __obj.updateDynamic("fibonacci")(fibonacci)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (infinityLine != null) __obj.updateDynamic("infinityLine")(infinityLine)
     if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
     if (labels != null) __obj.updateDynamic("labels")(labels)

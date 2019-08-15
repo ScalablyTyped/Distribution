@@ -9,12 +9,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined crossOrigin, detectRetina, errorTileUrl, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse */ trait TileLayerProps
+- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined accessToken, crossOrigin, detectRetina, errorTileUrl, id, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse */ trait TileLayerProps
   extends GridLayerProps
      with TileLayerEvents {
+  var accessToken: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   var detectRetina: js.UndefOr[Boolean] = js.undefined
   var errorTileUrl: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var maxNativeZoom: js.UndefOr[Double] = js.undefined
   var minNativeZoom: js.UndefOr[Double] = js.undefined
   var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -28,6 +30,7 @@ object TileLayerProps {
   @scala.inline
   def apply(
     url: String,
+    accessToken: String = null,
     attribution: String = null,
     bounds: LatLngBoundsExpression = null,
     children: Children = null,
@@ -35,6 +38,7 @@ object TileLayerProps {
     crossOrigin: CrossOrigin = null,
     detectRetina: js.UndefOr[Boolean] = js.undefined,
     errorTileUrl: String = null,
+    id: String = null,
     keepBuffer: Int | Double = null,
     leaflet: LeafletContext = null,
     maxNativeZoom: Int | Double = null,
@@ -61,6 +65,7 @@ object TileLayerProps {
     zoomReverse: js.UndefOr[Boolean] = js.undefined
   ): TileLayerProps = {
     val __obj = js.Dynamic.literal(url = url)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -68,6 +73,7 @@ object TileLayerProps {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorTileUrl != null) __obj.updateDynamic("errorTileUrl")(errorTileUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (keepBuffer != null) __obj.updateDynamic("keepBuffer")(keepBuffer.asInstanceOf[js.Any])
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (maxNativeZoom != null) __obj.updateDynamic("maxNativeZoom")(maxNativeZoom.asInstanceOf[js.Any])

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimeTicksInfoObject extends NormalizedIntervalObject {
+trait TimeTicksInfoObject extends TimeNormalizedObject {
   var higherRanks: js.Array[String]
   var totalRange: Double
 }

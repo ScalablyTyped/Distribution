@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vssln-parser"
-version := "0.1-dt-20190522Z-f89b72"
+version := "0.1-dt-20190522Z-f2cc25"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

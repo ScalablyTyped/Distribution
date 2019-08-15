@@ -82,7 +82,7 @@ trait PlotBarOptions extends js.Object {
     * In styled mode, the border stroke can be set with the `.highcharts-point`
     * rule.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The corner radius of the border
     * surrounding each column or bar.
@@ -236,7 +236,7 @@ trait PlotBarOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
     * (Highcharts) Depth of the columns in a 3D column chart. Requires
     * `highcharts-3d.js`.
@@ -279,16 +279,6 @@ trait PlotBarOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotBarEventsOptions] = js.undefined
-  /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -626,7 +616,7 @@ object PlotBarOptions {
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
@@ -644,7 +634,7 @@ object PlotBarOptions {
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotBarDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: js.Any = null,
     depth: Int | Double = null,
     description: String = null,
     dragDrop: PlotBarDragDropOptions = null,
@@ -652,7 +642,6 @@ object PlotBarOptions {
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotBarEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     groupPadding: Int | Double = null,
@@ -705,7 +694,7 @@ object PlotBarOptions {
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -723,7 +712,7 @@ object PlotBarOptions {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
@@ -731,7 +720,6 @@ object PlotBarOptions {
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll)
     if (groupPadding != null) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])

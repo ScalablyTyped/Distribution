@@ -9,6 +9,9 @@ trait CreateCapacityReservationRequest extends js.Object {
     * The Availability Zone in which to create the Capacity Reservation.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
+  /**
+    * The ID of the Availability Zone in which to create the Capacity Reservation.
+    */
   var AvailabilityZoneId: js.UndefOr[String] = js.undefined
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency. Constraint: Maximum 64 ASCII characters.

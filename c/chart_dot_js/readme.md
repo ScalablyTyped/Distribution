@@ -1,7 +1,7 @@
 
 # Scala.js typings for chart_dot_js
 
-Typings are for version 2.7
+Typings are for version 2.8
 
 ## Library description:
 Simple HTML5 charts using the canvas element.

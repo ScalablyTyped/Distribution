@@ -329,6 +329,9 @@ object tabulatorDashTablesStrings {
   sealed trait rowMoved extends HistoryAction
   
   @js.native
+  sealed trait rowSelection extends _Formatter
+  
+  @js.native
   sealed trait rownum extends _Formatter
   
   @js.native
@@ -597,6 +600,8 @@ object tabulatorDashTablesStrings {
   def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
   @scala.inline
   def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
+  @scala.inline
+  def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
   @scala.inline
   def rownum: rownum = "rownum".asInstanceOf[rownum]
   @scala.inline

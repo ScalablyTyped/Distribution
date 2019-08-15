@@ -13,8 +13,7 @@ class Color protected () extends js.Object {
     * @param input
     *        The input color in either rbga or hex format
     */
-  def this(input: ColorString) = this()
-  def this(input: GradientColorObject) = this()
+  def this(input: ColorType) = this()
   /**
     * Brighten the color instance.
     *
@@ -32,8 +31,8 @@ class Color protected () extends js.Object {
     *
     * @return This color as a string or gradient stops.
     */
-  def get(): ColorString | GradientColorObject = js.native
-  def get(format: String): ColorString | GradientColorObject = js.native
+  def get(): ColorType = js.native
+  def get(format: String): ColorType = js.native
   /**
     * Set the color's opacity to a given alpha value.
     *

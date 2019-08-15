@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyCapacityReservationResult extends js.Object {
   /**
-    * Information about the Capacity Reservation.
+    * Returns true if the request succeeds; otherwise, it returns an error.
     */
   var Return: js.UndefOr[Boolean] = js.undefined
 }

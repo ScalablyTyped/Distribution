@@ -50,6 +50,10 @@ trait OptionsColumns extends js.Object {
   var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
   /** The default placeholder text used for input elements can be set using the headerFilterPlaceholder option in the table definition */
   var headerFilterPlaceholder: js.UndefOr[String] = js.undefined
+  /** The headerSort option can now be set in the table options to affect all columns as well as in column definitions. */
+  var headerSort: js.UndefOr[Boolean] = js.undefined
+  /** The headerSortTristate option can now be set in the table options to affect all columns as well as in column definitions.*/
+  var headerSortTristate: js.UndefOr[Boolean] = js.undefined
   /**By setting the headerVisible option to false you can hide the column headers and present the table as a simple list if needed. */
   var headerVisible: js.UndefOr[Boolean] = js.undefined
   /** By default Tabulator will use the fitData layout mode, which will resize the tables columns to fit the data held in each column, unless you specify a width or minWidth in the column constructor. If the width of all columns exceeds the width of the containing element, a scroll bar will appear. */
@@ -113,6 +117,8 @@ object OptionsColumns {
     columnVisibilityChanged: (/* column */ ColumnComponent, /* visible */ Boolean) => Unit = null,
     columns: js.Array[ColumnDefinition] = null,
     headerFilterPlaceholder: String = null,
+    headerSort: js.UndefOr[Boolean] = js.undefined,
+    headerSortTristate: js.UndefOr[Boolean] = js.undefined,
     headerVisible: js.UndefOr[Boolean] = js.undefined,
     layout: fitData | fitColumns | fitDataFill = null,
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
@@ -140,6 +146,8 @@ object OptionsColumns {
     if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder)
+    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort)
+    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate)
     if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (!js.isUndefined(layoutColumnsOnNewData)) __obj.updateDynamic("layoutColumnsOnNewData")(layoutColumnsOnNewData)

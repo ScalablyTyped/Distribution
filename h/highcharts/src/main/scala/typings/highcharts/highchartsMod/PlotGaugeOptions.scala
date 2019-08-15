@@ -55,7 +55,7 @@ trait PlotGaugeOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of each map area.
     *
@@ -171,7 +171,7 @@ trait PlotGaugeOptions extends js.Object {
     * In styled mode, the dial is styled with the `.highcharts-gauge-series
     * .highcharts-dial` rule.
     */
-  var dial: js.UndefOr[PlotGaugeDialOptions] = js.undefined
+  var dial: js.UndefOr[CSSObject | PlotGaugeDialOptions] = js.undefined
   /**
     * (Highcharts) The draggable-points module allows points to be moved around
     * or modified in the chart. In addition to the options mentioned under the
@@ -193,16 +193,6 @@ trait PlotGaugeOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotGaugeEventsOptions] = js.undefined
-  /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -327,7 +317,7 @@ trait PlotGaugeOptions extends js.Object {
     * In styled mode, the pivot is styled with the `.highcharts-gauge-series
     * .highcharts-pivot` rule.
     */
-  var pivot: js.UndefOr[PlotGaugePivotOptions] = js.undefined
+  var pivot: js.UndefOr[CSSObject | PlotGaugePivotOptions] = js.undefined
   /**
     * (Highcharts) Properties for each single point.
     */
@@ -452,7 +442,7 @@ object PlotGaugeOptions {
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | AnimationOptionsObject | PlotGaugeAnimationOptions = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -467,11 +457,10 @@ object PlotGaugeOptions {
     dataGrouping: PlotGaugeDataGroupingOptions = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
-    dial: PlotGaugeDialOptions = null,
+    dial: CSSObject | PlotGaugeDialOptions = null,
     dragDrop: PlotGaugeDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotGaugeEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
@@ -486,7 +475,7 @@ object PlotGaugeOptions {
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     overshoot: Int | Double = null,
-    pivot: PlotGaugePivotOptions = null,
+    pivot: CSSObject | PlotGaugePivotOptions = null,
     point: PlotGaugePointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
@@ -511,7 +500,7 @@ object PlotGaugeOptions {
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -526,11 +515,10 @@ object PlotGaugeOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dial != null) __obj.updateDynamic("dial")(dial)
+    if (dial != null) __obj.updateDynamic("dial")(dial.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)
@@ -545,7 +533,7 @@ object PlotGaugeOptions {
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overshoot != null) __obj.updateDynamic("overshoot")(overshoot.asInstanceOf[js.Any])
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot)
+    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point)
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
     if (pointInterval != null) __obj.updateDynamic("pointInterval")(pointInterval.asInstanceOf[js.Any])

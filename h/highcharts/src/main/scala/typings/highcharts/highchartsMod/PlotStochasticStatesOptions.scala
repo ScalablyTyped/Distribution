@@ -21,7 +21,7 @@ trait PlotStochasticStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotStochasticStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Specific options for point in selected states, after being
+    * (Highstock) Specific options for point in selected states, after being
     * selected by allowPointSelect or programmatically.
     */
   var select: js.UndefOr[PlotStochasticStatesSelectOptions] = js.undefined

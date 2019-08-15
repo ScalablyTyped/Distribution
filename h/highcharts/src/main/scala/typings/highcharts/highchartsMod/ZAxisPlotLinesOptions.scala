@@ -29,7 +29,7 @@ trait ZAxisPlotLinesOptions extends AxisPlotLinesOptions {
     * plot line. Supported properties are `click`, `mouseover`, `mouseout`,
     * `mousemove`.
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[ZAxisPlotLinesEventsOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) An id used for identifying the plot line
     * in Axis.removePlotLine.
@@ -61,7 +61,7 @@ object ZAxisPlotLinesOptions {
     className: String = null,
     color: ColorString = null,
     dashStyle: DashStyleValue = null,
-    events: js.Any = null,
+    events: ZAxisPlotLinesEventsOptions = null,
     id: String = null,
     label: ZAxisPlotLinesLabelOptions = null,
     value: Int | Double = null,

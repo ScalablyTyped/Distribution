@@ -63,7 +63,7 @@ trait PlotBellcurveOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of each map area.
     *
@@ -226,16 +226,6 @@ trait PlotBellcurveOptions extends js.Object {
     */
   var events: js.UndefOr[PlotBellcurveEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts, Highstock) Fill color or gradient for the area. When `null`,
     * the series' `color` is used with the series' `fillOpacity`.
     *
@@ -366,7 +356,7 @@ trait PlotBellcurveOptions extends js.Object {
     * In styled mode, the line stroke can be set with the `.highcharts-graph`
     * class name.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
@@ -600,7 +590,7 @@ object PlotBellcurveOptions {
     animation: Boolean | AnimationOptionsObject | PlotBellcurveAnimationOptions = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -621,7 +611,6 @@ object PlotBellcurveOptions {
     dragDrop: PlotBellcurveDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotBellcurveEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     fillOpacity: Int | Double = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
@@ -635,7 +624,7 @@ object PlotBellcurveOptions {
     label: PlotBellcurveLabelOptions = null,
     lastPrice: PlotBellcurveLastPriceOptions = null,
     lastVisiblePrice: PlotBellcurveLastVisiblePriceOptions = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
@@ -675,7 +664,7 @@ object PlotBellcurveOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -696,7 +685,6 @@ object PlotBellcurveOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
@@ -710,7 +698,7 @@ object PlotBellcurveOptions {
     if (label != null) __obj.updateDynamic("label")(label)
     if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice)
     if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (linecap != null) __obj.updateDynamic("linecap")(linecap.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo)

@@ -63,11 +63,11 @@ trait Options extends js.Object {
     *
     * In Highcharts 3.x, the default colors were:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     *
     * In Highcharts 2.x, the default colors were:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var colors: js.UndefOr[js.Array[ColorString]] = js.undefined
   /**
@@ -121,20 +121,12 @@ trait Options extends js.Object {
   var exporting: js.UndefOr[ExportingOptions] = js.undefined
   var global: js.UndefOr[GlobalOptions] = js.undefined
   /**
-    * (Highcharts, Highstock) HTML labels that can be positioned anywhere in
-    * the chart area.
-    *
-    * This option is deprecated since v7.1.2. Instead, use annotations that
-    * support labels.
-    */
-  var labels: js.UndefOr[LabelsOptions] = js.undefined
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language object. The language
     * object is global and it can't be set on each chart initialization.
     * Instead, use `Highcharts.setOptions` to set it before any chart is
     * initialized.
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var lang: js.UndefOr[LangOptions] = js.undefined
   /**
@@ -249,7 +241,7 @@ trait Options extends js.Object {
     *
     * The common use case is that all charts in the same Highcharts object
     * share the same time settings, in which case the global settings are set
-    * using `setOptions`.(see online documentation for example)
+    * using `setOptions`. (see online documentation for example)
     *
     * Since v6.0.5, the time options were moved from the `global` obect to the
     * `time` object, and time options can be set on each individual chart.
@@ -306,7 +298,6 @@ object Options {
     drilldown: DrilldownOptions = null,
     exporting: ExportingOptions = null,
     global: GlobalOptions = null,
-    labels: LabelsOptions = null,
     lang: LangOptions = null,
     legend: LegendOptions = null,
     loading: LoadingOptions = null,
@@ -343,7 +334,6 @@ object Options {
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
     if (exporting != null) __obj.updateDynamic("exporting")(exporting)
     if (global != null) __obj.updateDynamic("global")(global)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (loading != null) __obj.updateDynamic("loading")(loading)

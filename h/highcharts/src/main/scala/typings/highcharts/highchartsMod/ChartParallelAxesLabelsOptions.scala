@@ -58,7 +58,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     *
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var formatter: js.UndefOr[FormatterCallbackFunction[AxisLabelsFormatterContextObject]] = js.undefined
   /**
@@ -71,13 +71,6 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * precedence over labels options.
     */
   var levels: js.UndefOr[js.Array[ChartParallelAxesLabelsLevelsOptions]] = js.undefined
-  /**
-    * (Highcharts) Horizontal axis only. When `staggerLines` is not set,
-    * `maxStaggerLines` defines how many lines the axis is allowed to add to
-    * automatically avoid overlapping X labels. Set to `1` to disable overlap
-    * detection.
-    */
-  var maxStaggerLines: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts) How to handle overflowing labels on horizontal axis. If set
     * to `"allow"`, it will not be aligned at all. By default it `"justify"`
@@ -200,7 +193,6 @@ object ChartParallelAxesLabelsOptions {
     formatter: FormatterCallbackFunction[AxisLabelsFormatterContextObject] = null,
     indentation: Int | Double = null,
     levels: js.Array[ChartParallelAxesLabelsLevelsOptions] = null,
-    maxStaggerLines: Int | Double = null,
     overflow: OptionsOverflowValue = null,
     padding: Int | Double = null,
     position3d: OptionsPosition3dValue = null,
@@ -226,7 +218,6 @@ object ChartParallelAxesLabelsOptions {
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels)
-    if (maxStaggerLines != null) __obj.updateDynamic("maxStaggerLines")(maxStaggerLines.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (position3d != null) __obj.updateDynamic("position3d")(position3d)

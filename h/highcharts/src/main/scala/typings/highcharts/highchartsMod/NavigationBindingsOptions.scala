@@ -94,6 +94,9 @@ trait NavigationBindingsOptions extends js.Object {
   var horizontalLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
   /**
     * (Highstock) Indicators bindings. Includes `init` event to show a popup.
+    *
+    * Note: In order to show base series from the chart in the popup's dropdown
+    * each series requires series.id to be defined.
     */
   var indicators: js.UndefOr[StockToolsBindingsObject] = js.undefined
   /**

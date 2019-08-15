@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesGanttDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesGanttDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesGanttDataAccessibilityOptions] = js.undefined
   /**
     * (Gantt) Whether the grid node belonging to this point should start as
@@ -93,7 +91,6 @@ trait SeriesGanttDataOptions
 object SeriesGanttDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesGanttDataAccessibilityOptions = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     completed: Double | SeriesGanttDataCompletedOptions = null,
@@ -111,7 +108,6 @@ object SeriesGanttDataOptions {
     y: Int | Double = null
   ): SeriesGanttDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])

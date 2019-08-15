@@ -5,9 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TileLayerOptions extends GridLayerOptions {
+  var accessToken: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   var detectRetina: js.UndefOr[Boolean] = js.undefined
   var errorTileUrl: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var maxNativeZoom: js.UndefOr[Double] = js.undefined
   var minNativeZoom: js.UndefOr[Double] = js.undefined
   var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -19,12 +21,14 @@ trait TileLayerOptions extends GridLayerOptions {
 object TileLayerOptions {
   @scala.inline
   def apply(
+    accessToken: String = null,
     attribution: String = null,
     bounds: LatLngBoundsExpression = null,
     className: String = null,
     crossOrigin: CrossOrigin = null,
     detectRetina: js.UndefOr[Boolean] = js.undefined,
     errorTileUrl: String = null,
+    id: String = null,
     keepBuffer: Int | Double = null,
     maxNativeZoom: Int | Double = null,
     maxZoom: Int | Double = null,
@@ -44,12 +48,14 @@ object TileLayerOptions {
     zoomReverse: js.UndefOr[Boolean] = js.undefined
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorTileUrl != null) __obj.updateDynamic("errorTileUrl")(errorTileUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (keepBuffer != null) __obj.updateDynamic("keepBuffer")(keepBuffer.asInstanceOf[js.Any])
     if (maxNativeZoom != null) __obj.updateDynamic("maxNativeZoom")(maxNativeZoom.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])

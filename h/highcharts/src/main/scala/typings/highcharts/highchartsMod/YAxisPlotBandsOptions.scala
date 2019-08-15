@@ -34,7 +34,7 @@ trait YAxisPlotBandsOptions extends AxisPlotBandsOptions {
     * plot band. Supported properties are `click`, `mouseover`, `mouseout`,
     * `mousemove`.
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[YAxisPlotBandsEventsOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The start position of the plot band in
     * axis units.
@@ -92,7 +92,7 @@ object YAxisPlotBandsOptions {
     borderWidth: Int | Double = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
-    events: js.Any = null,
+    events: YAxisPlotBandsEventsOptions = null,
     from: Int | Double = null,
     id: String = null,
     innerRadius: Double | String = null,

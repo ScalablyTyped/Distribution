@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "maker_dot_js"
-version := "0.9.33-dt-20190322Z-9b22b0"
+version := "0.9.33-dt-20190322Z-92a959"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bezier-js" % "0.0-unknown-dt-20190322Z-c00be0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "opentype_dot_js" % "0.7-dt-20190212Z-25c8a5",
-  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20190808Z-a4dfdc",
+  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20190808Z-49ce1e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -7,6 +7,7 @@ import typings.std.Error
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +27,18 @@ package object highchartsMod {
   type ChartSelectionCallbackFunction = js.ThisFunction1[/* this */ Chart, /* event */ ChartSelectionContextObject, js.UndefOr[Boolean]]
   type ClipRectElement = SVGElement
   type ColorString = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.highcharts.highchartsMod.ColorString
+    - typings.highcharts.highchartsMod.GradientColorObject
+    - typings.highcharts.highchartsMod.PatternObject
+  */
+  type ColorType = _ColorType | ColorString
   type DataBeforeParseCallbackFunction = js.Function1[/* csv */ String, String]
-  type DataCompleteCallbackFunction = js.Function1[/* chartOptions */ ChartOptions, Unit]
-  type DataLabelsFormatterCallbackFunction = js.ThisFunction0[/* this */ DataLabelsFormatterContextObject, String]
+  type DataCompleteCallbackFunction = js.Function1[/* chartOptions */ Options, Unit]
+  type DataLabelsFormatterCallbackFunction = js.ThisFunction0[/* this */ DataLabelsFormatterContextObject, js.UndefOr[Double | String | Null]]
   type DataParseDateCallbackFunction = js.Function1[/* dateValue */ String, Double]
   type DataParsedCallbackFunction = js.Function1[/* columns */ js.Array[js.Array[js.Any]], js.UndefOr[Boolean]]
+  type DataValueType = Double | String | Null
   type Dictionary[T] = StringDictionary[T]
   type DrilldownCallbackFunction = js.ThisFunction1[/* this */ Chart, /* e */ DrilldownEventObject, Unit]
   type DrillupAllCallbackFunction = js.ThisFunction1[/* this */ Chart, /* e */ DrillupAllEventObject, Unit]
@@ -54,11 +62,22 @@ package object highchartsMod {
     - java.lang.String
   */
   type PathfinderTypeValue = _PathfinderTypeValue | String
+  type PointClickCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointClickEventObject, Unit]
+  type PointDragCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointDragEventObject, Unit]
+  type PointDragStartCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointDragStartEventObject, Unit]
+  type PointDropCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointDropEventObject, Unit]
   type PointLegendItemClickCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointLegendItemClickEventObject, Unit]
+  type PointMouseOutCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointerEvent, Unit]
+  type PointMouseOverCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ Event, Unit]
+  type PointOptionsType = Double | String | PointOptionsObject | (js.Array[Double | String]) | Null
+  type PointRemoveCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ Event, Unit]
+  type PointSelectCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointInteractionEventObject, Unit]
+  type PointUnselectCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointInteractionEventObject, Unit]
+  type PointUpdateCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointUpdateEventObject, Unit]
   type RangeSelectorClickCallbackFunction = js.Function2[/* e */ Event, /* Return */ js.UndefOr[Boolean], Unit]
   type RangeSelectorParseCallbackFunction = js.Function1[/* value */ String, Double]
   type RelativeSize = Double | String
-  type ResponsiveCallbackFunction = js.Function0[Boolean]
+  type ResponsiveCallbackFunction = js.ThisFunction0[/* this */ Chart, Boolean]
   type SVGDOMElement = GlobalSVGElement
   type SVGPathArray = js.Array[Double | SVGPathCommand]
   type ScreenReaderClickCallbackFunction = js.Function1[/* evt */ MouseEvent, Unit]
@@ -75,30 +94,27 @@ package object highchartsMod {
     - java.lang.String
   */
   type SeriesLinecapValue = _SeriesLinecapValue | String
-  type SeriesMaplineDataOptions = StringDictionary[js.Any]
-  type SeriesMouseOutCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
-  type SeriesMouseOverCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
-  type SeriesNetworkDataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ DataLabelsFormatterContextObject | SeriesNetworkDataLabelsFormatterContextObject, 
+  type SeriesMouseOutCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ PointerEvent, Unit]
+  type SeriesMouseOverCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ PointerEvent, Unit]
+  type SeriesNetworkgraphDataLabelsFormatterCallbackFunction = js.ThisFunction0[
+    /* this */ DataLabelsFormatterContextObject | SeriesNetworkgraphDataLabelsFormatterContextObject, 
     String
   ]
   type SeriesPackedBubbleDataLabelsFormatterCallbackFunction = js.ThisFunction0[
     /* this */ DataLabelsFormatterContextObject | SeriesPackedBubbleDataLabelsFormatterContextObject, 
     String
   ]
-  type SeriesPointClickCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointClickEventObject, Unit]
-  type SeriesPointDragCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointDragEventObject, Unit]
-  type SeriesPointDragStartCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointDragStartEventObject, Unit]
-  type SeriesPointDropCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointDropEventObject, Unit]
-  type SeriesPointMouseOutCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ Event, Unit]
-  type SeriesPointMouseOverCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ Event, Unit]
-  type SeriesPointRemoveCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ Event, Unit]
-  type SeriesPointSelectCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointSelectEventObject, Unit]
-  type SeriesPointUnselectCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointUnselectEventObject, Unit]
-  type SeriesPointUpdateCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ SeriesPointUpdateEventObject, Unit]
+  type SeriesSankeyDataLabelsFormatterCallbackFunction = js.ThisFunction0[
+    /* this */ DataLabelsFormatterContextObject | SeriesSankeyDataLabelsFormatterContextObject, 
+    js.UndefOr[String]
+  ]
   type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
   type TimeFormatCallbackFunction = js.Function1[/* timestamp */ Double, String]
-  type TooltipFormatterCallbackFunction = js.ThisFunction0[/* this */ TooltipFormatterContextObject, `false` | String | js.Array[String]]
+  type TooltipFormatterCallbackFunction = js.ThisFunction1[
+    /* this */ TooltipFormatterContextObject, 
+    /* tooltip */ Tooltip, 
+    js.UndefOr[`false` | String | (js.Array[js.UndefOr[String | Null]]) | Null]
+  ]
   type TooltipPositionerCallbackFunction = js.Function3[
     /* labelWidth */ Double, 
     /* labelHeight */ Double, 

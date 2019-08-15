@@ -139,6 +139,8 @@ trait OptionsRows extends js.Object {
   var selectableRangeMode: js.UndefOr[click] = js.undefined
   /** By default, row selection works on a rolling basis, if you set the selectable option to a numeric value then when you select past this number of rows, the first row to be selected will be deselected. If you want to disable this behaviour and instead prevent selection of new rows once the limit is reached you can set the selectableRollingSelection option to false. */
   var selectableRollingSelection: js.UndefOr[Boolean] = js.undefined
+  /**  Allows you to specifcy the behaviour when the user tabs from the last editable cell on the last row of the table */
+  var tabEndNewRow: js.UndefOr[Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, _])] = js.undefined
 }
 
 object OptionsRows {
@@ -186,7 +188,8 @@ object OptionsRows {
     selectableCheck: /* row */ RowComponent => Boolean = null,
     selectablePersistence: js.UndefOr[Boolean] = js.undefined,
     selectableRangeMode: click = null,
-    selectableRollingSelection: js.UndefOr[Boolean] = js.undefined
+    selectableRollingSelection: js.UndefOr[Boolean] = js.undefined,
+    tabEndNewRow: Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, _]) = null
   ): OptionsRows = {
     val __obj = js.Dynamic.literal()
     if (addRowPos != null) __obj.updateDynamic("addRowPos")(addRowPos.asInstanceOf[js.Any])
@@ -232,6 +235,7 @@ object OptionsRows {
     if (!js.isUndefined(selectablePersistence)) __obj.updateDynamic("selectablePersistence")(selectablePersistence)
     if (selectableRangeMode != null) __obj.updateDynamic("selectableRangeMode")(selectableRangeMode)
     if (!js.isUndefined(selectableRollingSelection)) __obj.updateDynamic("selectableRollingSelection")(selectableRollingSelection)
+    if (tabEndNewRow != null) __obj.updateDynamic("tabEndNewRow")(tabEndNewRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsRows]
   }
 }

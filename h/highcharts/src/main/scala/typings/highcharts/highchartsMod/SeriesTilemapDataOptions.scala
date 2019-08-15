@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesTilemapDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesTilemapDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesTilemapDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -101,7 +99,6 @@ trait SeriesTilemapDataOptions
 object SeriesTilemapDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesTilemapDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -121,7 +118,6 @@ object SeriesTilemapDataOptions {
     y: Int | Double = null
   ): SeriesTilemapDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

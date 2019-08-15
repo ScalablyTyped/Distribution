@@ -27,7 +27,7 @@ trait NavigationAnnotationsOptions extends js.Object {
     * Can be user later when removing an annotation in
     * Chart.removeAnnotation(id) method.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's labels.
     * Each label inherits options from the labelOptions object. An option from
@@ -69,7 +69,7 @@ object NavigationAnnotationsOptions {
     controlPointOptions: js.Object | NavigationAnnotationsControlPointOptions = null,
     draggable: OptionsDraggableValue = null,
     events: NavigationAnnotationsEventsOptions = null,
-    id: String = null,
+    id: Double | String = null,
     labelOptions: NavigationAnnotationsLabelOptions = null,
     labels: js.Array[NavigationAnnotationsLabelsOptions] = null,
     shapeOptions: NavigationAnnotationsShapeOptions = null,
@@ -81,7 +81,7 @@ object NavigationAnnotationsOptions {
     if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
     if (labels != null) __obj.updateDynamic("labels")(labels)
     if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions)

@@ -172,6 +172,8 @@ object Options {
     groupValues: js.Array[js.Array[_]] = null,
     groupVisibilityChanged: (/* group */ GroupComponent, /* visible */ Boolean) => Unit = null,
     headerFilterPlaceholder: String = null,
+    headerSort: js.UndefOr[Boolean] = js.undefined,
+    headerSortTristate: js.UndefOr[Boolean] = js.undefined,
     headerVisible: js.UndefOr[Boolean] = js.undefined,
     height: String | Double | `false` = null,
     history: js.UndefOr[Boolean] = js.undefined,
@@ -184,6 +186,7 @@ object Options {
     initialFilter: js.Array[Filter] = null,
     initialHeaderFilter: js.Array[Pick[Filter, field | value]] = null,
     initialSort: js.Array[Sorter] = null,
+    invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,
     langs: js.Any = null,
     layout: fitData | fitColumns | fitDataFill = null,
@@ -266,6 +269,7 @@ object Options {
     selectableRangeMode: click = null,
     selectableRollingSelection: js.UndefOr[Boolean] = js.undefined,
     sortOrderReverse: js.UndefOr[Boolean] = js.undefined,
+    tabEndNewRow: Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, _]) = null,
     tableBuilding: () => Unit = null,
     tableBuilt: () => Unit = null,
     tooltipGenerationMode: load = null,
@@ -368,6 +372,8 @@ object Options {
     if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues)
     if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(js.Any.fromFunction2(groupVisibilityChanged))
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder)
+    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort)
+    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate)
     if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
@@ -380,6 +386,7 @@ object Options {
     if (initialFilter != null) __obj.updateDynamic("initialFilter")(initialFilter)
     if (initialHeaderFilter != null) __obj.updateDynamic("initialHeaderFilter")(initialHeaderFilter)
     if (initialSort != null) __obj.updateDynamic("initialSort")(initialSort)
+    if (!js.isUndefined(invalidOptionWarnings)) __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings)
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
     if (langs != null) __obj.updateDynamic("langs")(langs)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
@@ -462,6 +469,7 @@ object Options {
     if (selectableRangeMode != null) __obj.updateDynamic("selectableRangeMode")(selectableRangeMode)
     if (!js.isUndefined(selectableRollingSelection)) __obj.updateDynamic("selectableRollingSelection")(selectableRollingSelection)
     if (!js.isUndefined(sortOrderReverse)) __obj.updateDynamic("sortOrderReverse")(sortOrderReverse)
+    if (tabEndNewRow != null) __obj.updateDynamic("tabEndNewRow")(tabEndNewRow.asInstanceOf[js.Any])
     if (tableBuilding != null) __obj.updateDynamic("tableBuilding")(js.Any.fromFunction0(tableBuilding))
     if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(js.Any.fromFunction0(tableBuilt))
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode)

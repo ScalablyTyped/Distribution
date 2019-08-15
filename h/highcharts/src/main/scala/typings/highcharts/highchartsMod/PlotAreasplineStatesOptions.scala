@@ -22,8 +22,8 @@ trait PlotAreasplineStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotAreasplineStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Specific options for point in selected states, after being
-    * selected by allowPointSelect or programmatically.
+    * (Highcharts, Highstock) Specific options for point in selected states,
+    * after being selected by allowPointSelect or programmatically.
     */
   var select: js.UndefOr[PlotAreasplineStatesSelectOptions] = js.undefined
 }

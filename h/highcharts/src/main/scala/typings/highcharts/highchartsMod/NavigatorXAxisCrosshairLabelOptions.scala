@@ -19,7 +19,7 @@ trait NavigatorXAxisCrosshairLabelOptions extends js.Object {
   /**
     * (Highstock) The border color for the crosshair label
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) The border corner radius of the crosshair label.
     */
@@ -56,7 +56,7 @@ object NavigatorXAxisCrosshairLabelOptions {
   def apply(
     align: AlignValue = null,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     format: String = null,
@@ -68,7 +68,7 @@ object NavigatorXAxisCrosshairLabelOptions {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)

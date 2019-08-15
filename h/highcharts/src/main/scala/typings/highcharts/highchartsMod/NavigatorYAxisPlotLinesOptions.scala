@@ -29,7 +29,7 @@ trait NavigatorYAxisPlotLinesOptions extends js.Object {
     * plot line. Supported properties are `click`, `mouseover`, `mouseout`,
     * `mousemove`.
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[NavigatorYAxisPlotLinesEventsOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) An id used for identifying the plot line
     * in Axis.removePlotLine.
@@ -61,7 +61,7 @@ object NavigatorYAxisPlotLinesOptions {
     className: String = null,
     color: ColorString = null,
     dashStyle: DashStyleValue = null,
-    events: js.Any = null,
+    events: NavigatorYAxisPlotLinesEventsOptions = null,
     id: String = null,
     label: NavigatorYAxisPlotLinesLabelOptions = null,
     value: Int | Double = null,

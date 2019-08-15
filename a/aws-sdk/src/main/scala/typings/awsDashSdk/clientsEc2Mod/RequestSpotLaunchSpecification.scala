@@ -62,7 +62,7 @@ trait RequestSpotLaunchSpecification extends js.Object {
     */
   var SecurityGroups: js.UndefOr[ValueStringList] = js.undefined
   /**
-    * The ID of the subnet in which to launch the instance.
+    * The IDs of the subnets in which to launch the instance. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
     */
   var SubnetId: js.UndefOr[String] = js.undefined
   /**

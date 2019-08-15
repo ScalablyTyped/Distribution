@@ -31,6 +31,7 @@ trait LangAccessibilityOptions extends js.Object {
     * and one for multiple series of the same type.
     */
   var chartTypes: js.UndefOr[LangAccessibilityChartTypesOptions] = js.undefined
+  var credits: js.UndefOr[String] = js.undefined
   var defaultChartTitle: js.UndefOr[String] = js.undefined
   var drillUpButton: js.UndefOr[String] = js.undefined
   /**
@@ -93,6 +94,7 @@ object LangAccessibilityOptions {
     chartContainerLabel: String = null,
     chartHeading: String = null,
     chartTypes: LangAccessibilityChartTypesOptions = null,
+    credits: String = null,
     defaultChartTitle: String = null,
     drillUpButton: String = null,
     exporting: LangAccessibilityExportingOptions = null,
@@ -120,6 +122,7 @@ object LangAccessibilityOptions {
     if (chartContainerLabel != null) __obj.updateDynamic("chartContainerLabel")(chartContainerLabel)
     if (chartHeading != null) __obj.updateDynamic("chartHeading")(chartHeading)
     if (chartTypes != null) __obj.updateDynamic("chartTypes")(chartTypes)
+    if (credits != null) __obj.updateDynamic("credits")(credits)
     if (defaultChartTitle != null) __obj.updateDynamic("defaultChartTitle")(defaultChartTitle)
     if (drillUpButton != null) __obj.updateDynamic("drillUpButton")(drillUpButton)
     if (exporting != null) __obj.updateDynamic("exporting")(exporting)

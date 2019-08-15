@@ -43,6 +43,14 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
     */
   var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.undefined
   /**
+    * Styling for internal View for ListFooterComponent
+    */
+  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  /**
+    * Styling for internal View for ListHeaderComponent
+    */
+  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  /**
     * Optional custom style for multi-item rows generated when numColumns > 1
     */
   var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -89,7 +97,9 @@ object FlatListProps {
     ItemSeparatorComponent: ComponentType[_] = null,
     ListEmptyComponent: ComponentType[_] | ReactElement = null,
     ListFooterComponent: ComponentType[_] | ReactElement = null,
+    ListFooterComponentStyle: ViewStyle = null,
     ListHeaderComponent: ComponentType[_] | ReactElement = null,
+    ListHeaderComponentStyle: ViewStyle = null,
     accessibilityActions: js.Array[String] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
@@ -222,7 +232,9 @@ object FlatListProps {
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])
+    if (ListFooterComponentStyle != null) __obj.updateDynamic("ListFooterComponentStyle")(ListFooterComponentStyle)
     if (ListHeaderComponent != null) __obj.updateDynamic("ListHeaderComponent")(ListHeaderComponent.asInstanceOf[js.Any])
+    if (ListHeaderComponentStyle != null) __obj.updateDynamic("ListHeaderComponentStyle")(ListHeaderComponentStyle)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

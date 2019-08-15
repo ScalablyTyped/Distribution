@@ -66,7 +66,7 @@ trait PlotXrangeOptions extends js.Object {
     * In styled mode, the border stroke can be set with the `.highcharts-point`
     * rule.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The corner radius of the border
     * surrounding each column or bar.
@@ -195,7 +195,7 @@ trait PlotXrangeOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Requires the Accessibility module.
     *
@@ -224,16 +224,6 @@ trait PlotXrangeOptions extends js.Object {
     * using the `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotXrangeEventsOptions] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) By default, series are exposed to screen
-    * readers as regions. By enabling this option, the series element itself
-    * will be exposed in the same way as the data points. This is useful if the
-    * series is not used as a grouping entity in the chart, but you still want
-    * to attach a description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Padding between each value groups, in x
     * axis units.
@@ -462,7 +452,7 @@ object PlotXrangeOptions {
     animation: Boolean | AnimationOptionsObject | PlotXrangeAnimationOptions = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
@@ -478,12 +468,11 @@ object PlotXrangeOptions {
     connectors: PlotXrangeConnectorsOptions = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotXrangeDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: js.Any = null,
     description: String = null,
     dragDrop: PlotXrangeDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotXrangeEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     groupPadding: Int | Double = null,
     groupZPadding: Int | Double = null,
     grouping: js.UndefOr[Boolean] = js.undefined,
@@ -526,7 +515,7 @@ object PlotXrangeOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -542,12 +531,11 @@ object PlotXrangeOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (groupPadding != null) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])
     if (groupZPadding != null) __obj.updateDynamic("groupZPadding")(groupZPadding.asInstanceOf[js.Any])
     if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping)

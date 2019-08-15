@@ -20,6 +20,10 @@ class Message () extends js.Object {
   		 */
   def getCreationDate(): Date = js.native
   /**
+  		 * @see https://developer.knuddels.de/docs/classes/Message.html#method_getRawText
+  		 */
+  def getRawText(): java.lang.String = js.native
+  /**
   		 * @see https://developer.knuddels.de/docs/classes/Message.html#method_getText
   		 */
   def getText(): java.lang.String = js.native

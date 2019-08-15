@@ -15,7 +15,7 @@ trait NavigatorXAxisCrosshairOptions extends js.Object {
     * numeric and datetime axes, and `rgba(204,214,235,0.25)` for category
     * axes, where the crosshair by default highlights the whole category.
     */
-  var color: js.UndefOr[ColorString] = js.undefined
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The dash style for the crosshair. See series.dashStyle
     * for possible values.
@@ -49,7 +49,7 @@ object NavigatorXAxisCrosshairOptions {
   @scala.inline
   def apply(
     className: String = null,
-    color: ColorString = null,
+    color: ColorString | GradientColorObject | PatternObject = null,
     dashStyle: DashStyleValue = null,
     label: NavigatorXAxisCrosshairLabelOptions = null,
     snap: js.UndefOr[Boolean] = js.undefined,
@@ -58,7 +58,7 @@ object NavigatorXAxisCrosshairOptions {
   ): NavigatorXAxisCrosshairOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)

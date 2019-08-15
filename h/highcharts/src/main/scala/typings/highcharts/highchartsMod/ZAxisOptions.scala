@@ -35,7 +35,7 @@ trait ZAxisOptions extends AxisOptions {
     * (Highcharts) When using an alternate grid color, a band is painted across
     * the plot area between every other grid line.
     */
-  var alternateGridColor: js.UndefOr[ColorString] = js.undefined
+  var alternateGridColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
     * used instead of numbers for that axis. Since Highcharts 3.0, categories
@@ -45,7 +45,7 @@ trait ZAxisOptions extends AxisOptions {
     *
     * Example:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -73,7 +73,7 @@ trait ZAxisOptions extends AxisOptions {
     * same axis. For an overview of the replacement codes, see dateFormat.
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var dateTimeLabelFormats: js.UndefOr[ZAxisDateTimeLabelFormatsOptions] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait ZAxisOptions extends AxisOptions {
     *
     * In styled mode, the stroke is given in the `.highcharts-grid-line` class.
     */
-  var gridLineColor: js.UndefOr[ColorString] = js.undefined
+  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The dash or dot style of the grid lines. For possible
     * values, see this demonstration.
@@ -167,10 +167,6 @@ trait ZAxisOptions extends AxisOptions {
     */
   var maxRange: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock) Deprecated. Use `minRange` instead.
-    */
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  /**
     * (Highcharts) The minimum value of the axis. If `null` the min value is
     * automatically calculated.
     *
@@ -221,7 +217,7 @@ trait ZAxisOptions extends AxisOptions {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorString] = js.undefined
+  var minorGridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The dash or dot style of the minor grid lines. For possible
     * values, see this demonstration.
@@ -237,7 +233,7 @@ trait ZAxisOptions extends AxisOptions {
   /**
     * (Highcharts) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString] = js.undefined
+  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) Specific tick interval in axis units for the minor ticks. On
     * a linear axis, if `"auto"`, the minor tick interval is calculated as a
@@ -410,7 +406,7 @@ trait ZAxisOptions extends AxisOptions {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString] = js.undefined
+  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -508,7 +504,7 @@ trait ZAxisOptions extends AxisOptions {
     * an array where the first value is the time unit and the second value
     * another array of allowed multiples. Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -516,6 +512,11 @@ trait ZAxisOptions extends AxisOptions {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
+    * allows to disable zooming on an individual axis.
+    */
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object ZAxisOptions {
@@ -524,7 +525,7 @@ object ZAxisOptions {
     accessibility: js.Object | ZAxisAccessibilityOptions = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    alternateGridColor: ColorString = null,
+    alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
@@ -534,7 +535,7 @@ object ZAxisOptions {
     events: ZAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: ZAxisGridOptions = null,
-    gridLineColor: ColorString = null,
+    gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
@@ -545,15 +546,14 @@ object ZAxisOptions {
     max: Int | Double = null,
     maxPadding: Int | Double = null,
     maxRange: Int | Double = null,
-    maxZoom: Int | Double = null,
     min: Int | Double = null,
     minPadding: Int | Double = null,
     minRange: Int | Double = null,
     minTickInterval: Int | Double = null,
-    minorGridLineColor: ColorString = null,
+    minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
     minorGridLineDashStyle: DashStyleValue = null,
     minorGridLineWidth: Int | Double = null,
-    minorTickColor: ColorString = null,
+    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
     minorTickInterval: Double | String = null,
     minorTickLength: Int | Double = null,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -577,7 +577,7 @@ object ZAxisOptions {
     startOfWeek: Int | Double = null,
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     tickAmount: Int | Double = null,
-    tickColor: ColorString = null,
+    tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,
     tickLength: Int | Double = null,
     tickPixelInterval: Int | Double = null,
@@ -590,13 +590,14 @@ object ZAxisOptions {
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): ZAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks)
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
-    if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor)
+    if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -606,7 +607,7 @@ object ZAxisOptions {
     if (events != null) __obj.updateDynamic("events")(events)
     if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle)
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
@@ -617,15 +618,14 @@ object ZAxisOptions {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
     if (maxRange != null) __obj.updateDynamic("maxRange")(maxRange.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
     if (minRange != null) __obj.updateDynamic("minRange")(minRange.asInstanceOf[js.Any])
     if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
-    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor)
+    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor.asInstanceOf[js.Any])
     if (minorGridLineDashStyle != null) __obj.updateDynamic("minorGridLineDashStyle")(minorGridLineDashStyle)
     if (minorGridLineWidth != null) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.asInstanceOf[js.Any])
-    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor)
+    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
     if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
     if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
     if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition)
@@ -649,7 +649,7 @@ object ZAxisOptions {
     if (startOfWeek != null) __obj.updateDynamic("startOfWeek")(startOfWeek.asInstanceOf[js.Any])
     if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick)
     if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
     if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
@@ -663,6 +663,7 @@ object ZAxisOptions {
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames)
     if (units != null) __obj.updateDynamic("units")(units)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
     __obj.asInstanceOf[ZAxisOptions]
   }
 }

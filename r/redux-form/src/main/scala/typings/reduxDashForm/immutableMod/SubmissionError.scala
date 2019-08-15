@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form/immutable", "SubmissionError")
 @js.native
-class SubmissionError[FormData, ErrorType] ()
+class SubmissionError[FormData, ErrorType] protected ()
   extends typings.reduxDashForm.reduxDashFormMod.SubmissionError[FormData, ErrorType] {
   def this(errors: FormErrors[FormData, ErrorType]) = this()
 }

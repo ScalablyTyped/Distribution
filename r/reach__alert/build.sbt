@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reach__alert"
-version := "0.1-dt-20190516Z-396a73"
+version := "0.1-dt-20190814Z-d85d32"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

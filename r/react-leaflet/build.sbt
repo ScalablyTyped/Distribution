@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-leaflet"
-version := "2.4-dt-20190813Z-94b36b"
+version := "2.4-dt-20190813Z-5a62e0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-8b8d4c",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190726Z-14695c",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190814Z-570b7f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")

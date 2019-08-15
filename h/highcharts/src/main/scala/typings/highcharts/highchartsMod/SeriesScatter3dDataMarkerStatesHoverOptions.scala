@@ -8,9 +8,7 @@ trait SeriesScatter3dDataMarkerStatesHoverOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Animation when hovering over the marker.
     */
-  var animation: js.UndefOr[
-    Boolean | AnimationOptionsObject | SeriesScatter3dDataMarkerStatesHoverAnimationOptions
-  ] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Enable or disable the point marker.
     */
@@ -24,7 +22,7 @@ trait SeriesScatter3dDataMarkerStatesHoverOptions extends js.Object {
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's lineColor for normal state is used.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) The width of the point marker's outline. When
     * `undefined`, the series' or point's lineWidth for normal state is used.
@@ -50,10 +48,10 @@ trait SeriesScatter3dDataMarkerStatesHoverOptions extends js.Object {
 object SeriesScatter3dDataMarkerStatesHoverOptions {
   @scala.inline
   def apply(
-    animation: Boolean | AnimationOptionsObject | SeriesScatter3dDataMarkerStatesHoverAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     lineWidthPlus: Int | Double = null,
     radius: Int | Double = null,
@@ -63,7 +61,7 @@ object SeriesScatter3dDataMarkerStatesHoverOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

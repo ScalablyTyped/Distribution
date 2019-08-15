@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesNetworkgraphDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesNetworkgraphDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesNetworkgraphDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -34,7 +32,7 @@ trait SeriesNetworkgraphDataOptions
     * same as the ones for plotOptions.series.dataLabels.
     */
   var dataLabels: js.UndefOr[
-    SeriesNetworkDataLabelsOptionsObject | js.Array[SeriesNetworkDataLabelsOptionsObject]
+    SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject]
   ] = js.undefined
   /**
     * (Highcharts) A description of the point to add to the screen reader
@@ -82,21 +80,16 @@ trait SeriesNetworkgraphDataOptions
     * (Highcharts) The node that the link runs to.
     */
   var to: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The weight of the link.
-    */
-  var weight: js.UndefOr[Double] = js.undefined
 }
 
 object SeriesNetworkgraphDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesNetworkgraphDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
-    dataLabels: SeriesNetworkDataLabelsOptionsObject | js.Array[SeriesNetworkDataLabelsOptionsObject] = null,
+    dataLabels: SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject] = null,
     description: String = null,
     dragDrop: SeriesNetworkgraphDataDragDropOptions = null,
     events: SeriesNetworkgraphDataEventsOptions = null,
@@ -105,11 +98,9 @@ object SeriesNetworkgraphDataOptions {
     labelrank: Int | Double = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    to: String = null,
-    weight: Int | Double = null
+    to: String = null
   ): SeriesNetworkgraphDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -124,7 +115,6 @@ object SeriesNetworkgraphDataOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (to != null) __obj.updateDynamic("to")(to)
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesNetworkgraphDataOptions]
   }
 }

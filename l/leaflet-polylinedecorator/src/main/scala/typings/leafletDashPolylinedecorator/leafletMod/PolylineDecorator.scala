@@ -27,5 +27,29 @@ class PolylineDecorator protected ()
   ) = this()
   def this(paths: Polygon[_], options: PolylineDecoratorOptions) = this()
   def this(paths: Polyline[LineString | MultiLineString, _], options: PolylineDecoratorOptions) = this()
+  def initialize(
+    paths: js.Array[
+      js.Array[LatLngExpression] | LatLngExpression | Polygon[_] | (Polyline[LineString | MultiLineString, _])
+    ]
+  ): Unit = js.native
+  def initialize(
+    paths: js.Array[
+      js.Array[LatLngExpression] | LatLngExpression | Polygon[_] | (Polyline[LineString | MultiLineString, _])
+    ],
+    options: PolylineDecoratorOptions
+  ): Unit = js.native
+  def initialize(paths: Polygon[_]): Unit = js.native
+  def initialize(paths: Polygon[_], options: PolylineDecoratorOptions): Unit = js.native
+  def initialize(paths: Polyline[LineString | MultiLineString, _]): Unit = js.native
+  def initialize(paths: Polyline[LineString | MultiLineString, _], options: PolylineDecoratorOptions): Unit = js.native
+  def redraw(): Unit = js.native
+  def setPaths(
+    paths: js.Array[
+      js.Array[LatLngExpression] | LatLngExpression | Polygon[_] | (Polyline[LineString | MultiLineString, _])
+    ]
+  ): Unit = js.native
+  def setPaths(paths: Polygon[_]): Unit = js.native
+  def setPaths(paths: Polyline[LineString | MultiLineString, _]): Unit = js.native
+  def setPatterns(patterns: js.Array[Pattern]): Unit = js.native
 }
 

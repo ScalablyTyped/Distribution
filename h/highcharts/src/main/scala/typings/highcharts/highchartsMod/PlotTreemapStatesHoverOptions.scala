@@ -55,12 +55,6 @@ trait PlotTreemapStatesHoverOptions extends js.Object {
     */
   var lineWidthPlus: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock) In Highcharts 1.0, the appearance of all markers
-    * belonging to the hovered series. For settings on the hover state of the
-    * individual point, see marker.states.hover.
-    */
-  var marker: js.UndefOr[PlotTreemapStatesHoverMarkerOptions] = js.undefined
-  /**
     * (Highcharts) The opacity of a point in treemap. When a point has
     * children, the visibility of the children is determined by the opacity.
     */
@@ -83,7 +77,6 @@ object PlotTreemapStatesHoverOptions {
     halo: Boolean | PlotTreemapStatesHoverHaloOptions = null,
     lineWidth: Int | Double = null,
     lineWidthPlus: Int | Double = null,
-    marker: PlotTreemapStatesHoverMarkerOptions = null,
     opacity: Int | Double = null,
     shadow: js.UndefOr[Boolean] = js.undefined
   ): PlotTreemapStatesHoverOptions = {
@@ -97,7 +90,6 @@ object PlotTreemapStatesHoverOptions {
     if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
     __obj.asInstanceOf[PlotTreemapStatesHoverOptions]

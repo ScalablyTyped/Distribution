@@ -81,6 +81,8 @@ class SVGElement () extends js.Object {
     * @return Returns the SVGElement for chaining.
     */
   def animate(params: SVGAttributes): SVGElement = js.native
+  def animate(params: SVGAttributes, options: Boolean): SVGElement = js.native
+  def animate(params: SVGAttributes, options: Boolean, complete: js.Function): SVGElement = js.native
   def animate(params: SVGAttributes, options: AnimationOptionsObject): SVGElement = js.native
   def animate(params: SVGAttributes, options: AnimationOptionsObject, complete: js.Function): SVGElement = js.native
   /**
@@ -166,7 +168,7 @@ class SVGElement () extends js.Object {
     * Destroy the element and element wrapper and clear up the DOM and event
     * hooks.
     */
-  def destroy(): Unit = js.native
+  def destroy(): js.UndefOr[scala.Nothing] = js.native
   /**
     * Fade out an element by animating its opacity down to 0, and hide it on
     * complete. Used internally for the tooltip.
@@ -216,12 +218,17 @@ class SVGElement () extends js.Object {
     */
   def hasClass(className: String): Boolean = js.native
   /**
-    * Hide the element, equivalent to setting the `visibility` attribute to
+    * Hide the element, similar to setting the `visibility` attribute to
     * `hidden`.
+    *
+    * @param hideByTranslation
+    *        The flag to determine if element should be hidden by moving out of
+    *        the viewport. Used for example for dataLabels.
     *
     * @return Returns the SVGElement for chaining.
     */
   def hide(): SVGElement = js.native
+  def hide(hideByTranslation: Boolean): SVGElement = js.native
   /**
     * Initialize the SVG element. This function only exists to make the
     * initialization process overridable. It should not be called directly.

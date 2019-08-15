@@ -31,12 +31,12 @@ trait LegendOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The background color of the
     * legend.
     */
-  var backgroundColor: js.UndefOr[ColorString] = js.undefined
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the drawn border
     * around the legend.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border corner radius of the
     * legend.
@@ -128,7 +128,7 @@ trait LegendOptions extends js.Object {
     * the point object in case of pie charts. By default the series or point
     * name is printed.
     */
-  var labelFormatter: js.UndefOr[js.Any] = js.undefined
+  var labelFormatter: js.UndefOr[FormatterCallbackFunction[Point | Series]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The layout of the legend items.
     * Can be one of `horizontal` or `vertical` or `proximate`. When
@@ -137,13 +137,6 @@ trait LegendOptions extends js.Object {
     * position doesn't allow it.
     */
   var layout: js.UndefOr[OptionsLayoutValue] = js.undefined
-  /**
-    * (Highcharts, Gantt) Line height for the legend items. Deprecated as of
-    * 2.1\. Instead, the line height for each item can be set using
-    * itemStyle.lineHeight, and the padding between items using `itemMarginTop`
-    * and `itemMarginBottom`.
-    */
-  var lineHeight: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If the plot area sized is
     * calculated automatically and the legend is not floating, the legend
@@ -192,13 +185,6 @@ trait LegendOptions extends js.Object {
     * defaults to the font size of the legend items.
     */
   var squareSymbol: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts, Highstock) CSS styles for the legend area. In the 1.x
-    * versions the position of the legend area was determined by CSS. In 2.x,
-    * the position is determined by properties like `align`, `verticalAlign`,
-    * `x` and `y`, but the styles are still parsed for backwards compatibility.
-    */
-  var style: js.UndefOr[CSSObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel height of the symbol
     * for series types that use a rectangle in the legend. Defaults to the font
@@ -278,8 +264,8 @@ object LegendOptions {
     accessibility: js.Object | LegendAccessibilityOptions = null,
     align: AlignValue = null,
     alignColumns: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: ColorString = null,
-    borderColor: ColorString = null,
+    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     bubbleLegend: LegendBubbleLegendOptions = null,
@@ -294,9 +280,8 @@ object LegendOptions {
     itemStyle: CSSObject = null,
     itemWidth: Int | Double = null,
     labelFormat: String = null,
-    labelFormatter: js.Any = null,
+    labelFormatter: FormatterCallbackFunction[Point | Series] = null,
     layout: OptionsLayoutValue = null,
-    lineHeight: Int | Double = null,
     margin: Int | Double = null,
     maxHeight: Int | Double = null,
     navigation: LegendNavigationOptions = null,
@@ -305,7 +290,6 @@ object LegendOptions {
     rtl: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | CSSObject = null,
     squareSymbol: js.UndefOr[Boolean] = js.undefined,
-    style: CSSObject = null,
     symbolHeight: Int | Double = null,
     symbolPadding: Int | Double = null,
     symbolRadius: Int | Double = null,
@@ -321,8 +305,8 @@ object LegendOptions {
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(alignColumns)) __obj.updateDynamic("alignColumns")(alignColumns)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (bubbleLegend != null) __obj.updateDynamic("bubbleLegend")(bubbleLegend)
@@ -339,7 +323,6 @@ object LegendOptions {
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat)
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation)
@@ -348,7 +331,6 @@ object LegendOptions {
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (!js.isUndefined(squareSymbol)) __obj.updateDynamic("squareSymbol")(squareSymbol)
-    if (style != null) __obj.updateDynamic("style")(style)
     if (symbolHeight != null) __obj.updateDynamic("symbolHeight")(symbolHeight.asInstanceOf[js.Any])
     if (symbolPadding != null) __obj.updateDynamic("symbolPadding")(symbolPadding.asInstanceOf[js.Any])
     if (symbolRadius != null) __obj.updateDynamic("symbolRadius")(symbolRadius.asInstanceOf[js.Any])

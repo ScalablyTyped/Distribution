@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "oblo-util"
-version := "v0.6.4-dt-20190322Z-667622"
+version := "v0.6.4-dt-20190322Z-395b78"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190805Z-186115",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-186115",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b6c899",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

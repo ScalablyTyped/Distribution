@@ -41,7 +41,7 @@ trait PlotSplineDataGroupingOptions extends js.Object {
     *
     * The default formats are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     *
     * For each of these array definitions, the first item is the format used
     * when the active time span is one unit. For instance, if the current data
@@ -97,7 +97,7 @@ trait PlotSplineDataGroupingOptions extends js.Object {
     * the time unit and the second value another array of allowed multiples.
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
 }

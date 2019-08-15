@@ -39,6 +39,8 @@ trait ColumnDefinition
   /**  additional parameters you can pass to the bottomCalcFormatter function */
   var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
   var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
+  /**If you don't want to show a particular column in the clipboard output you can set the clipboard property in its column definition object to false */
+  var clipboard: js.UndefOr[Boolean] = js.undefined
   /** sets css classes on header and cells in this column. (value should be a string containing space separated class names) */
   var cssClass: js.UndefOr[String] = js.undefined
   /** show or hide column in downloaded data */
@@ -225,6 +227,7 @@ object ColumnDefinition {
     cellMouseOver: CellEventCallback = null,
     cellTap: CellEventCallback = null,
     cellTapHold: CellEventCallback = null,
+    clipboard: js.UndefOr[Boolean] = js.undefined,
     cssClass: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadTitle: String = null,
@@ -324,6 +327,7 @@ object ColumnDefinition {
     if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(cellMouseOver)
     if (cellTap != null) __obj.updateDynamic("cellTap")(cellTap)
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(cellTapHold)
+    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
     if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle)

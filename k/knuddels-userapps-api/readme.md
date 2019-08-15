@@ -1,7 +1,7 @@
 
 # Scala.js typings for knuddels-userapps-api
 
-Typings are for version 1.00111486
+Typings are for version 1.00119839
 
 
 

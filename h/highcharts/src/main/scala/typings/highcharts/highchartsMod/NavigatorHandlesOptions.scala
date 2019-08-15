@@ -13,7 +13,7 @@ trait NavigatorHandlesOptions extends js.Object {
     * (Highstock, Gantt) The stroke for the handle border and the stripes
     * inside.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) Allows to enable/disable handles.
     */
@@ -50,7 +50,7 @@ object NavigatorHandlesOptions {
   @scala.inline
   def apply(
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     lineWidth: Int | Double = null,
@@ -59,7 +59,7 @@ object NavigatorHandlesOptions {
   ): NavigatorHandlesOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])

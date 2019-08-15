@@ -53,7 +53,7 @@ trait ColorAxisLabelsOptions extends js.Object {
     *
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var formatter: js.UndefOr[FormatterCallbackFunction[AxisLabelsFormatterContextObject]] = js.undefined
   /**
@@ -61,13 +61,6 @@ trait ColorAxisLabelsOptions extends js.Object {
     * axis.
     */
   var indentation: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highmaps) Horizontal axis only. When `staggerLines` is not
-    * set, `maxStaggerLines` defines how many lines the axis is allowed to add
-    * to automatically avoid overlapping X labels. Set to `1` to disable
-    * overlap detection.
-    */
-  var maxStaggerLines: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highmaps) How to handle overflowing labels on horizontal
     * color axis. Can be undefined or "justify". If "justify", labels will not
@@ -186,7 +179,6 @@ object ColorAxisLabelsOptions {
     format: String = null,
     formatter: FormatterCallbackFunction[AxisLabelsFormatterContextObject] = null,
     indentation: Int | Double = null,
-    maxStaggerLines: Int | Double = null,
     overflow: OptionsOverflowValue = null,
     padding: Int | Double = null,
     position3d: OptionsPosition3dValue = null,
@@ -210,7 +202,6 @@ object ColorAxisLabelsOptions {
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
-    if (maxStaggerLines != null) __obj.updateDynamic("maxStaggerLines")(maxStaggerLines.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (position3d != null) __obj.updateDynamic("position3d")(position3d)

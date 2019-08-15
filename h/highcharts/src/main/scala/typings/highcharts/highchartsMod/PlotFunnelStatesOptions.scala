@@ -21,7 +21,7 @@ trait PlotFunnelStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotFunnelStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Options for a selected funnel item.
+    * (Highcharts) Options for a selected funnel item.
     */
   var select: js.UndefOr[PlotFunnelStatesSelectOptions] = js.undefined
 }

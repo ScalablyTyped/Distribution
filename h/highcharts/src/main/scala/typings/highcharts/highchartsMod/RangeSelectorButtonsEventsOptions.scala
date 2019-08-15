@@ -10,7 +10,7 @@ trait RangeSelectorButtonsEventsOptions extends js.Object {
     * parameter, event, is passed to the function, containing common event
     * information.
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     *
     * Return false to stop default button's click action.
     */

@@ -2266,6 +2266,7 @@
 | 0.7024357013993217 | [karma-jasmine](./k/karma-jasmine) | A Karma plugin - adapter for Jasmine testing frame
 | 0.7024015737191975 | [gulp-copy](./g/gulp-copy) | Plugin copying files to a new destination and usin
 | 0.7022507875466859 | [bip38](./b/bip38) | BIP38 is a standard process to encrypt Bitcoin and
+| 0.7022128210774367 | [html-validator](./h/html-validator) | Validate html using validator.w3.org/nu
 | 0.7020482033044775 | [react-datepicker](./r/react-datepicker) | A simple and reusable datepicker component for Rea
 | 0.7020414967814751 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati
 | 0.7020252870652617 | [is-reachable](./i/is-reachable) | Check if servers are reachable
@@ -5997,6 +5998,7 @@
 | 0.33510479959375145 | [bloom-filter](./b/bloom-filter) | A bloom filter suitable for use in Bitcoin Connect
 | 0.33508618313804467 | [gulp-tsd](./g/gulp-tsd) | Gulp plugin to automate TSD and TypeScript definit
 | 0.33488809731769686 | [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden
+| 0.3341325475386837 | [csp-html-webpack-plugin](./c/csp-html-webpack-plugin) | A plugin which, when combined with HTMLWebpackPlug
 | 0.33386510731231145 | [angular-deferred-bootstra](./a/angular-deferred-bootstrap) | Initialize your AngularJS app with constants loade
 | 0.3337041454778734 | [easy-api-request](./e/easy-api-request) | Request wrapper providing cookie and header forwar
 | 0.3335303096168094 | [jquery-countto](./j/jquery-countto) | A jQuery plugin that will count up (or down) to a 

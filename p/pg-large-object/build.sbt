@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pg-large-object"
-version := "2.0-dt-20180828Z-7f6f16"
+version := "2.0-dt-20180828Z-36f31e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-574f99",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-b6bf54",
   "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-5df631",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

@@ -28,7 +28,7 @@ trait ZAxisCurrentDateIndicatorOptions extends js.Object {
     * (Gantt) An object defining mouse events for the plot line. Supported
     * properties are `click`, `mouseover`, `mouseout`, `mousemove`.
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[ZAxisCurrentDateIndicatorEventsOptions] = js.undefined
   /**
     * (Gantt) An id used for identifying the plot line in Axis.removePlotLine.
     */
@@ -54,7 +54,7 @@ object ZAxisCurrentDateIndicatorOptions {
     className: String = null,
     color: ColorString = null,
     dashStyle: DashStyleValue = null,
-    events: js.Any = null,
+    events: ZAxisCurrentDateIndicatorEventsOptions = null,
     id: String = null,
     label: ZAxisCurrentDateIndicatorLabelOptions = null,
     width: Int | Double = null,

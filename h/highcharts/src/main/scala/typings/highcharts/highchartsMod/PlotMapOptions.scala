@@ -250,16 +250,6 @@ trait PlotMapOptions extends js.Object {
     */
   var events: js.UndefOr[PlotMapEventsOptions] = js.undefined
   /**
-    * (Highmaps) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highmaps) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
     * series. Defaults to `'xy'` for scatter series and `'x'` for most other
@@ -615,7 +605,6 @@ object PlotMapOptions {
     dragDrop: PlotMapDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotMapEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -689,7 +678,6 @@ object PlotMapOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)

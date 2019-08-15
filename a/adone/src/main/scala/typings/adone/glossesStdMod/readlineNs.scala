@@ -61,6 +61,7 @@ object readlineNs extends js.Object {
   /**
     * Moves this WriteStream's cursor to the specified position.
     */
+  def cursorTo(stream: WritableStream, x: Double): Boolean = js.native
   def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = js.native
   def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
   def emitKeypressEvents(stream: ReadableStream): Unit = js.native

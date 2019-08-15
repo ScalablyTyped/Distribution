@@ -12,7 +12,7 @@ trait YAxisScrollbarOptions extends js.Object {
   /**
     * (Highstock) The color of the scrollbar's border.
     */
-  var barBorderColor: js.UndefOr[ColorString] = js.undefined
+  var barBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) The border rounding radius of the bar.
     */
@@ -32,7 +32,7 @@ trait YAxisScrollbarOptions extends js.Object {
   /**
     * (Highstock) The color of the border of the scrollbar buttons.
     */
-  var buttonBorderColor: js.UndefOr[ColorString] = js.undefined
+  var buttonBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) The corner radius of the scrollbar buttons.
     */
@@ -82,7 +82,7 @@ trait YAxisScrollbarOptions extends js.Object {
   /**
     * (Highstock) The color of the border of the scrollbar track.
     */
-  var trackBorderColor: js.UndefOr[ColorString] = js.undefined
+  var trackBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) The corner radius of the border of the scrollbar track.
     */
@@ -101,12 +101,12 @@ object YAxisScrollbarOptions {
   @scala.inline
   def apply(
     barBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    barBorderColor: ColorString = null,
+    barBorderColor: ColorString | GradientColorObject | PatternObject = null,
     barBorderRadius: Int | Double = null,
     barBorderWidth: Int | Double = null,
     buttonArrowColor: ColorString | GradientColorObject | PatternObject = null,
     buttonBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    buttonBorderColor: ColorString = null,
+    buttonBorderColor: ColorString | GradientColorObject | PatternObject = null,
     buttonBorderRadius: Int | Double = null,
     buttonBorderWidth: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -118,19 +118,19 @@ object YAxisScrollbarOptions {
     size: Int | Double = null,
     step: Int | Double = null,
     trackBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    trackBorderColor: ColorString = null,
+    trackBorderColor: ColorString | GradientColorObject | PatternObject = null,
     trackBorderRadius: Int | Double = null,
     trackBorderWidth: Int | Double = null,
     zIndex: Int | Double = null
   ): YAxisScrollbarOptions = {
     val __obj = js.Dynamic.literal()
     if (barBackgroundColor != null) __obj.updateDynamic("barBackgroundColor")(barBackgroundColor.asInstanceOf[js.Any])
-    if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor)
+    if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor.asInstanceOf[js.Any])
     if (barBorderRadius != null) __obj.updateDynamic("barBorderRadius")(barBorderRadius.asInstanceOf[js.Any])
     if (barBorderWidth != null) __obj.updateDynamic("barBorderWidth")(barBorderWidth.asInstanceOf[js.Any])
     if (buttonArrowColor != null) __obj.updateDynamic("buttonArrowColor")(buttonArrowColor.asInstanceOf[js.Any])
     if (buttonBackgroundColor != null) __obj.updateDynamic("buttonBackgroundColor")(buttonBackgroundColor.asInstanceOf[js.Any])
-    if (buttonBorderColor != null) __obj.updateDynamic("buttonBorderColor")(buttonBorderColor)
+    if (buttonBorderColor != null) __obj.updateDynamic("buttonBorderColor")(buttonBorderColor.asInstanceOf[js.Any])
     if (buttonBorderRadius != null) __obj.updateDynamic("buttonBorderRadius")(buttonBorderRadius.asInstanceOf[js.Any])
     if (buttonBorderWidth != null) __obj.updateDynamic("buttonBorderWidth")(buttonBorderWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
@@ -142,7 +142,7 @@ object YAxisScrollbarOptions {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (trackBackgroundColor != null) __obj.updateDynamic("trackBackgroundColor")(trackBackgroundColor.asInstanceOf[js.Any])
-    if (trackBorderColor != null) __obj.updateDynamic("trackBorderColor")(trackBorderColor)
+    if (trackBorderColor != null) __obj.updateDynamic("trackBorderColor")(trackBorderColor.asInstanceOf[js.Any])
     if (trackBorderRadius != null) __obj.updateDynamic("trackBorderRadius")(trackBorderRadius.asInstanceOf[js.Any])
     if (trackBorderWidth != null) __obj.updateDynamic("trackBorderWidth")(trackBorderWidth.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

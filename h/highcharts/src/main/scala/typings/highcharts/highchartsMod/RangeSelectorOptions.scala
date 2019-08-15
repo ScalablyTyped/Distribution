@@ -41,7 +41,7 @@ trait RangeSelectorOptions extends js.Object {
     *
     * Defaults to
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.undefined
   /**
@@ -55,11 +55,6 @@ trait RangeSelectorOptions extends js.Object {
     */
   var floating: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock, Gantt) Deprecated. The height of the range selector.
-    * Currently it is calculated dynamically.
-    */
-  var height: js.UndefOr[Double] = js.undefined
-  /**
     * (Highstock, Gantt) The border color of the date input boxes.
     */
   var inputBoxBorderColor: js.UndefOr[ColorString] = js.undefined
@@ -67,11 +62,6 @@ trait RangeSelectorOptions extends js.Object {
     * (Highstock, Gantt) The pixel height of the date input boxes.
     */
   var inputBoxHeight: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highstock, Gantt) CSS for the container DIV holding the input boxes.
-    * Deprecated as of 1.2.5\. Use inputPosition instead.
-    */
-  var inputBoxStyle: js.UndefOr[CSSObject] = js.undefined
   /**
     * (Highstock, Gantt) The pixel width of the date input boxes.
     */
@@ -150,10 +140,8 @@ object RangeSelectorOptions {
     buttons: js.Array[RangeSelectorButtonsOptions] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
     inputBoxBorderColor: ColorString = null,
     inputBoxHeight: Int | Double = null,
-    inputBoxStyle: CSSObject = null,
     inputBoxWidth: Int | Double = null,
     inputDateFormat: String = null,
     inputDateParser: RangeSelectorParseCallbackFunction = null,
@@ -175,10 +163,8 @@ object RangeSelectorOptions {
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (inputBoxBorderColor != null) __obj.updateDynamic("inputBoxBorderColor")(inputBoxBorderColor)
     if (inputBoxHeight != null) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.asInstanceOf[js.Any])
-    if (inputBoxStyle != null) __obj.updateDynamic("inputBoxStyle")(inputBoxStyle)
     if (inputBoxWidth != null) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.asInstanceOf[js.Any])
     if (inputDateFormat != null) __obj.updateDynamic("inputDateFormat")(inputDateFormat)
     if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(inputDateParser)

@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesCandlestickDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesCandlestickDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesCandlestickDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -105,7 +103,6 @@ trait SeriesCandlestickDataOptions
 object SeriesCandlestickDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesCandlestickDataAccessibilityOptions = null,
     className: String = null,
     close: Int | Double = null,
@@ -126,7 +123,6 @@ object SeriesCandlestickDataOptions {
     x: Int | Double = null
   ): SeriesCandlestickDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])

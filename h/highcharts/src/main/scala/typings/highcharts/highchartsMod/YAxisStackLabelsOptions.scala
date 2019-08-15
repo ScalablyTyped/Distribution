@@ -17,6 +17,12 @@ trait YAxisStackLabelsOptions extends js.Object {
     */
   var allowOverlap: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts) Whether to hide stack labels that are outside the plot area.
+    * By default, the stack label is moved inside the plot area according to
+    * the overflow option.
+    */
+  var crop: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highcharts) Enable or disable the stack total labels.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +36,14 @@ trait YAxisStackLabelsOptions extends js.Object {
     * is given by `this.total`.
     */
   var formatter: js.UndefOr[FormatterCallbackFunction[StackItemObject]] = js.undefined
+  /**
+    * (Highcharts) How to handle stack total labels that flow outside the plot
+    * area. The default is set to `"justify"`, which aligns them inside the
+    * plot area. For columns and bars, this means it will be moved inside the
+    * bar. To display stack labels outside the plot area, set `crop` to `false`
+    * and `overflow` to `"allow"`.
+    */
+  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.undefined
   /**
     * (Highcharts) Rotation of the labels in degrees.
     */
@@ -80,9 +94,11 @@ object YAxisStackLabelsOptions {
   def apply(
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
+    crop: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
     formatter: FormatterCallbackFunction[StackItemObject] = null,
+    overflow: DataLabelsOverflowValue = null,
     rotation: Int | Double = null,
     style: CSSObject = null,
     textAlign: AlignValue = null,
@@ -94,9 +110,11 @@ object YAxisStackLabelsOptions {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap)
+    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow)
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)

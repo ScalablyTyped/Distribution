@@ -18,7 +18,7 @@ trait DataOptions extends js.Object {
     * cell can be a string or number. If not switchRowsAndColumns is set, the
     * columns are interpreted as series.
     */
-  var columns: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
+  var columns: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A URL to a remote JSON dataset,
     * structured as a column array. Will be fetched when the chart is created
@@ -143,7 +143,7 @@ trait DataOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The same as the columns input
     * option, but defining rows intead of columns.
     */
-  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
+  var rows: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A URL to a remote JSON dataset,
     * structured as a row array. Will be fetched when the chart is created
@@ -184,7 +184,7 @@ object DataOptions {
   @scala.inline
   def apply(
     beforeParse: DataBeforeParseCallbackFunction = null,
-    columns: js.Array[js.Array[_]] = null,
+    columns: js.Array[js.Array[DataValueType]] = null,
     columnsURL: String = null,
     complete: DataCompleteCallbackFunction = null,
     csv: String = null,
@@ -202,7 +202,7 @@ object DataOptions {
     lineDelimiter: String = null,
     parseDate: DataParseDateCallbackFunction = null,
     parsed: DataParsedCallbackFunction = null,
-    rows: js.Array[js.Array[_]] = null,
+    rows: js.Array[js.Array[DataValueType]] = null,
     rowsURL: String = null,
     seriesMapping: js.Array[Dictionary[Double]] = null,
     startColumn: Int | Double = null,

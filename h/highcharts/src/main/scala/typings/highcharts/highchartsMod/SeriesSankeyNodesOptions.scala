@@ -23,6 +23,13 @@ trait SeriesSankeyNodesOptions extends js.Object {
     */
   var column: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) Individual data label for each node. The options are the
+    * same as the ones for series.sankey.dataLabels.
+    */
+  var dataLabels: js.UndefOr[
+    SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject]
+  ] = js.undefined
+  /**
     * (Highcharts) The id of the auto-generated node, refering to the `from` or
     * `to` setting of the link.
     */
@@ -58,6 +65,7 @@ object SeriesSankeyNodesOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     column: Int | Double = null,
+    dataLabels: SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject] = null,
     id: String = null,
     level: Int | Double = null,
     name: String = null,
@@ -67,6 +75,7 @@ object SeriesSankeyNodesOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

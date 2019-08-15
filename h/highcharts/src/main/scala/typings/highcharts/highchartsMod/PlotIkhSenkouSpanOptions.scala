@@ -16,7 +16,7 @@ trait PlotIkhSenkouSpanOptions extends js.Object {
     * Span A is under Senkou Span B.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  var styles: js.UndefOr[PlotIkhSenkouSpanStylesOptions] = js.undefined
+  var styles: js.UndefOr[js.Any] = js.undefined
 }
 
 object PlotIkhSenkouSpanOptions {
@@ -24,7 +24,7 @@ object PlotIkhSenkouSpanOptions {
   def apply(
     color: ColorString | GradientColorObject | PatternObject = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
-    styles: PlotIkhSenkouSpanStylesOptions = null
+    styles: js.Any = null
   ): PlotIkhSenkouSpanOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

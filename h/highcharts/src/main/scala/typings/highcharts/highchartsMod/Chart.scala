@@ -200,21 +200,11 @@ class Chart protected () extends js.Object {
     *
     * @return The newly generated Axis object.
     */
-  def addAxis(options: XAxisOptions): Axis = js.native
-  def addAxis(options: XAxisOptions, isX: Boolean): Axis = js.native
-  def addAxis(options: XAxisOptions, isX: Boolean, redraw: Boolean): Axis = js.native
-  def addAxis(options: XAxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
-  def addAxis(options: XAxisOptions, isX: Boolean, redraw: Boolean, animation: AnimationOptionsObject): Axis = js.native
-  def addAxis(options: YAxisOptions): Axis = js.native
-  def addAxis(options: YAxisOptions, isX: Boolean): Axis = js.native
-  def addAxis(options: YAxisOptions, isX: Boolean, redraw: Boolean): Axis = js.native
-  def addAxis(options: YAxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
-  def addAxis(options: YAxisOptions, isX: Boolean, redraw: Boolean, animation: AnimationOptionsObject): Axis = js.native
-  def addAxis(options: ZAxisOptions): Axis = js.native
-  def addAxis(options: ZAxisOptions, isX: Boolean): Axis = js.native
-  def addAxis(options: ZAxisOptions, isX: Boolean, redraw: Boolean): Axis = js.native
-  def addAxis(options: ZAxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
-  def addAxis(options: ZAxisOptions, isX: Boolean, redraw: Boolean, animation: AnimationOptionsObject): Axis = js.native
+  def addAxis(options: AxisOptions): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: AnimationOptionsObject): Axis = js.native
   /**
     * Set a new credits label for the chart.
     *

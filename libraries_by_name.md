@@ -1060,6 +1060,7 @@
 | [cryptr](./c/cryptr) | a simple encrypt and decrypt module for node.js | cryptr, crypter, encrypt, decrypt, encryption, decryption, crypto, cipher, aes-256, aes256, aes-256-ctr, hashr |
 | [cson](./c/cson) | CoffeeScript-Object-Notation Parser. Same as JSON  | javascript, coffeescript, json, cson, parse, stringify |
 | [cson-parser](./c/cson-parser) | Safe parsing of CSON files | cson, parser |
+| [csp-html-webpack-plugin](./c/csp-html-webpack-plugin) | A plugin which, when combined with HTMLWebpackPlug | webpack, csp, plugin, html |
 | [csprng](./c/csprng) | Secure random numbers of any size in any base | crypto, math, random, security |
 | [csrf](./c/csrf) | primary logic behind csrf tokens | csrf, tokens |
 | [css](./c/css) | CSS parser / stringifier | css, parser, stringifier, stylesheet |
@@ -2520,6 +2521,7 @@
 | [html-tags](./h/html-tags) | List of standard HTML tags | html, html5, tags, elements, list, whatwg, w3c, void, self-closing |
 | [html-to-text](./h/html-to-text) | Advanced html to plain text converter | html, node, text, mail, plain, converter |
 | [html-truncate](./h/html-truncate) | truncate html text and keep tag safe | - |
+| [html-validator](./h/html-validator) | Validate html using validator.w3.org/nu | html-validator, validation |
 | [html-void-elements](./h/html-void-elements) | List of known void HTML elements | html, void, tag, name, element, tagname, w3c, whatwg |
 | [html-webpack-plugin](./h/html-webpack-plugin) | Simplifies creation of HTML files to serve your we | webpack, plugin, html, html-webpack-plugin |
 | [html-webpack-template](./h/html-webpack-template) | A template with more features than the default htm | webpack, template, html-webpack-plugin, index.html, index.ejs |

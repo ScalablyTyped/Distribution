@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("leaflet")
 @js.native
 object ^ extends js.Object {
+  def isCoord(c: js.Any): Boolean = js.native
+  def isCoordArray(c: js.Any): Boolean = js.native
   def polylineDecorator(
     paths: (Polyline[LineString | MultiLineString, _]) | (js.Array[Polyline[LineString | MultiLineString, _]])
   ): PolylineDecorator = js.native

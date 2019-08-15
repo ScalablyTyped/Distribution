@@ -15,6 +15,13 @@ trait SeriesNetworkgraphNodesOptions extends js.Object {
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) Individual data label for each node. The options are the
+    * same as the ones for series.networkgraph.dataLabels.
+    */
+  var dataLabels: js.UndefOr[
+    SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject]
+  ] = js.undefined
+  /**
     * (Highcharts) The id of the auto-generated node, refering to the `from` or
     * `to` setting of the link.
     */
@@ -42,6 +49,7 @@ object SeriesNetworkgraphNodesOptions {
   def apply(
     color: ColorString = null,
     colorIndex: Int | Double = null,
+    dataLabels: SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject] = null,
     id: String = null,
     mass: Int | Double = null,
     name: String = null
@@ -49,6 +57,7 @@ object SeriesNetworkgraphNodesOptions {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

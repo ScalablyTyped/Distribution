@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mapbox-gl-leaflet"
-version := "0.0-dt-20190212Z-a21510"
+version := "0.0-dt-20190212Z-b96f9d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-8b8d4c",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190726Z-14695c",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190814Z-570b7f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

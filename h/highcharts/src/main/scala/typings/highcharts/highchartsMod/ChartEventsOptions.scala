@@ -37,7 +37,7 @@ trait ChartEventsOptions extends js.Object {
     * `event.xAxis[0]` and `event.yAxis[0]`. Remember the unit of a datetime
     * axis is milliseconds since 1970-01-01 00:00:00.
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var click: js.UndefOr[ChartClickCallbackFunction] = js.undefined
   /**
@@ -108,7 +108,7 @@ trait ChartEventsOptions extends js.Object {
     * `event.yAxis[0]`. Remember the unit of a datetime axis is milliseconds
     * since 1970-01-01 00:00:00.
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var selection: js.UndefOr[ChartSelectionCallbackFunction] = js.undefined
 }

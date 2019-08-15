@@ -130,6 +130,7 @@ package object TabulatorNs {
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.buttonCross
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.rownum
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.handle
+    - typings.tabulatorDashTables.tabulatorDashTablesStrings.rowSelection
     - js.Function3[
   / * cell * / typings.tabulatorDashTables.TabulatorNs.CellComponent, 
   / * formatterParams * / js.Object, 

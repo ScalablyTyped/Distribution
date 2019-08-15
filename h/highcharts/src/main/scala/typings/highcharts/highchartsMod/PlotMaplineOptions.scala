@@ -250,19 +250,9 @@ trait PlotMaplineOptions extends js.Object {
     */
   var events: js.UndefOr[PlotMaplineEventsOptions] = js.undefined
   /**
-    * (Highmaps) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highmaps) Fill color for the map line shapes
     */
-  var fillColor: js.UndefOr[ColorString] = js.undefined
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -619,8 +609,7 @@ object PlotMaplineOptions {
     dragDrop: PlotMaplineDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotMaplineEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
-    fillColor: ColorString = null,
+    fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -694,8 +683,7 @@ object PlotMaplineOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)

@@ -97,10 +97,10 @@ trait PromiseFtp extends js.Object {
     * @param useCompression - defaults to false.
     * @returns the contents of the specified directory
     */
-  def list(): js.Array[ListingElement] = js.native
-  def list(path: String): js.Array[ListingElement] = js.native
-  def list(path: String, useCompression: Boolean): js.Array[ListingElement] = js.native
-  def list(useCompression: Boolean): js.Array[ListingElement] = js.native
+  def list(): typings.bluebird.bluebirdMod.^[js.Array[ListingElement]] = js.native
+  def list(path: String): typings.bluebird.bluebirdMod.^[js.Array[ListingElement]] = js.native
+  def list(path: String, useCompression: Boolean): typings.bluebird.bluebirdMod.^[js.Array[ListingElement]] = js.native
+  def list(useCompression: Boolean): typings.bluebird.bluebirdMod.^[js.Array[ListingElement]] = js.native
   /**
     * Optional "standard" commands (RFC 959)
     * Retrieve the directory listing of path.
@@ -116,7 +116,7 @@ trait PromiseFtp extends js.Object {
   def listSafe(): js.Array[ListingElement] = js.native
   def listSafe(path: String): js.Array[ListingElement] = js.native
   def listSafe(path: String, useCompression: Boolean): js.Array[ListingElement] = js.native
-  def listSafe(useCompression: Boolean): js.Array[ListingElement] = js.native
+  def listSafe(useCompression: Boolean): typings.bluebird.bluebirdMod.^[js.Array[ListingElement]] = js.native
   /**
     * Logout the user from the server.
     */

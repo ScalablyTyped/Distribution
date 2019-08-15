@@ -6,181 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.highchartsMod.PlotWordcloudOptions because var conflicts: zIndex. Inlined accessibility, allowExtendPlayingField, allowPointSelect, animation, animationLimit, boostBlending, borderColor, borderRadius, borderWidth, className, clip, color, colorByPoint, colorIndex, colors, compareStart, connectors, cropThreshold, cursor, description, dragDrop, edgeWidth, enableMouseTracking, events, exposeElementToA11y, includeInDataExport, keys, label, lastPrice, lastVisiblePrice, linkedTo, maxFontSize, minFontSize, opacity, placementStrategy, point, pointDescriptionFormatter, rotation, selected, showInLegend, skipKeyboardNavigation, spiral, states, stickyTracking, style, tooltip, turboThreshold, visible */ trait SeriesWordcloudOptions
-  extends SeriesOptions
+- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesWordcloudOptions
+  extends PlotWordcloudOptions
      with SeriesOptionsType {
-  /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
-    */
-  var accessibility: js.UndefOr[js.Object | PlotWordcloudAccessibilityOptions] = js.undefined
-  /**
-    * (Highcharts) If there is no space for a word on the playing field, then
-    * this option will allow the playing field to be extended to fit the word.
-    * If false then the word will be dropped from the visualization.
-    *
-    * NB! This option is currently not decided to be published in the API, and
-    * is therefore marked as private.
-    */
-  var allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) Allow this series' points to be selected by clicking on the
-    * graphic (columns, point markers, pie slices, map areas etc).
-    *
-    * The selected points can be handled by point select and unselect events,
-    * or collectively by the getSelectedPoints function.
-    *
-    * And alternative way of selecting points is through dragging.
-    */
-  var allowPointSelect: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) Enable or disable the initial animation when a series is
-    * displayed. The animation can also be set as a configuration object.
-    * Please note that this option only applies to the initial animation of the
-    * series itself. For other animations, see chart.animation and the
-    * animation parameter under the API methods. The following properties are
-    * supported:
-    *
-    * - `duration`: The duration of the animation in milliseconds.
-    *
-    * - `easing`: Can be a string reference to an easing function set on the
-    * `Math` object or a function. See the _Custom easing function_ demo below.
-    *
-    * Due to poor performance, animation is disabled in old IE browsers for
-    * several chart types.
-    */
-  var animation: js.UndefOr[PlotWordcloudAnimationOptions] = js.undefined
-  /**
-    * (Highcharts) For some series, there is a limit that shuts down initial
-    * animation by default when the total number of points in the chart is too
-    * high. For example, for a column chart and its derivatives, animation does
-    * not run if there is more than 250 points totally. To disable this cap,
-    * set `animationLimit` to `Infinity`.
-    */
-  var animationLimit: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) The color of the border surrounding each
-    * column or bar.
-    *
-    * In styled mode, the border stroke can be set with the `.highcharts-point`
-    * rule.
-    */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) The corner radius of the border
-    * surrounding each column or bar.
-    */
-  var borderRadius: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) The width of the border surrounding each
-    * column or bar. Defaults to `1` when there is room for a border, but to
-    * `0` when the columns are so dense that a border would cover the next
-    * column.
-    *
-    * In styled mode, the stroke width can be set with the `.highcharts-point`
-    * rule.
-    */
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) An additional class name to apply to the series' graphical
-    * elements. This option does not replace default class names of the
-    * graphical element.
-    */
-  var className: js.UndefOr[String] = js.undefined
-  var clip: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) The main color of the series. In line type series it applies
-    * to the line and the point markers unless otherwise specified. In bar type
-    * series it applies to the bars unless a color is specified per point. The
-    * default value is pulled from the `options.colors` array.
-    *
-    * In styled mode, the color can be defined by the colorIndex option. Also,
-    * the series color can be set with the `.highcharts-series`,
-    * `.highcharts-color-{n}`, `.highcharts-{type}-series` or
-    * `.highcharts-series-{n}` class, or individual classes given by the
-    * `className` option.
-    */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
-    * from the global colors or series-specific plotOptions.column.colors
-    * collections, this option determines whether the chart should receive one
-    * color per series or one color per point.
-    *
-    * In styled mode, the `colors` or `series.colors` arrays are not supported,
-    * and instead this option gives the points individual color class names on
-    * the form `highcharts-color-{n}`.
-    */
-  var colorByPoint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) Styled mode only. A specific color index to use for the
-    * series, so its graphic representations are given the class name
-    * `highcharts-color-{n}`.
-    */
-  var colorIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) A series specific or series type specific
-    * color set to apply instead of the global colors when colorByPoint is
-    * true.
-    */
-  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
-  /**
-    * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
-    */
-  var compareStart: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Gantt) Override Pathfinder connector options for a series. Requires
-    * Highcharts Gantt to be loaded.
-    */
-  var connectors: js.UndefOr[PlotWordcloudConnectorsOptions] = js.undefined
   /**
     * Not available
     */
   var crisp: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) When the series contains less points than
-    * the crop threshold, all points are drawn, event if the points fall
-    * outside the visible plot area at the current zoom. The advantage of
-    * drawing all points (including markers and columns), is that animation is
-    * performed on updates. On the other hand, when the series contains more
-    * points than the crop threshold, the series data is cropped to only
-    * contain points that fall within the plot area. The advantage of cropping
-    * away invisible points is to increase performance on large series.
-    */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
-  /**
     * Not available
     */
   var cropTreshold: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * (Highcharts) You can set the cursor to "pointer" if you have click events
-    * attached to the series, to signal to the user that the points and lines
-    * can be clicked.
-    *
-    * In styled mode, the series cursor can be set with the same classes as
-    * listed under series.color.
-    */
-  var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
     * (Highcharts) An array of data points for the series. For the `wordcloud`
     * series type, points can be given in the following ways:
     *
     * 1. An array of arrays with 2 values. In this case, the values correspond
-    * to `name,weight`.(see online documentation for example)
+    * to `name,weight`. (see online documentation for example)
     *
     * 2. An array of objects with named values. The following snippet shows
     * only a few settings, see the complete options set below. If the total
     * number of data points exceeds the series' turboThreshold, this option is
-    * not available.(see online documentation for example)
+    * not available. (see online documentation for example)
     */
   var data: js.UndefOr[js.Array[(js.Tuple2[String, Double]) | SeriesWordcloudDataOptions]] = js.undefined
   /**
@@ -188,51 +35,9 @@ import scala.scalajs.js.annotation._
     */
   var depth: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
-    */
-  var description: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotWordcloudDragDropOptions] = js.undefined
-  /**
     * Not available
     */
   var edgeColor: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * (Highcharts) 3D columns only. The width of the colored edges.
-    */
-  var edgeWidth: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) Enable or disable the mouse tracking for a specific series.
-    * This includes point tooltips and click events on graphs and points. For
-    * large datasets it improves performance.
-    */
-  var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) General event handlers for the series items. These event
-    * hooks can also be attached to the series at run time using the
-    * `Highcharts.addEvent` function.
-    */
-  var events: js.UndefOr[PlotWordcloudEventsOptions] = js.undefined
-  /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * Not available
     */
@@ -246,88 +51,41 @@ import scala.scalajs.js.annotation._
     */
   var grouping: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts) Export-data module required. When set to `false` will
-    * prevent the series data from being included in any form of data export.
-    *
-    * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
-    * `includeInCSVExport`.
+    * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
+    * be used after render time to get a pointer to the series object through
+    * `chart.get()`.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts) An array specifying which option maps to which key in the
-    * data point array. This makes it convenient to work with unstructured data
-    * arrays from different sources.
+    * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
+    * chart, affecting the internal index in the `chart.series` array, the
+    * visible Z index as well as the order in the legend.
     */
-  var keys: js.UndefOr[js.Array[String]] = js.undefined
+  var index: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
-    * series as possible in a natural way, seeking to avoid other series. The
-    * goal of this feature is to make the chart more easily readable, like if a
-    * human designer placed the labels in the optimal position.
-    *
-    * The series labels currently work with series types having a `graph` or an
-    * `area`.
-    *
-    * Requires the `series-label.js` module.
+    * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
+    * series in the legend.
     */
-  var label: js.UndefOr[PlotWordcloudLabelOptions] = js.undefined
+  var legendIndex: js.UndefOr[Double] = js.undefined
   /**
-    * (Highstock) The line marks the last price from all points.
+    * (Highmaps) A map data object containing a `path` definition and
+    * optionally additional properties to join in the data as per the `joinBy`
+    * option.
     */
-  var lastPrice: js.UndefOr[PlotWordcloudLastPriceOptions] = js.undefined
-  /**
-    * (Highstock) The line marks the last price from visible range of points.
-    */
-  var lastVisiblePrice: js.UndefOr[PlotWordcloudLastVisiblePriceOptions] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) The id of another series to link to.
-    * Additionally, the value can be ":previous" to link to the previous
-    * series. When two series are linked, only the first one appears in the
-    * legend. Toggling the visibility of this also toggles the linked series.
-    */
-  var linkedTo: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The word with the largest weight will have a font size equal
-    * to this value. The font size of a word is the ratio between its weight
-    * and the largest occuring weight, multiplied with the value of
-    * maxFontSize.
-    */
-  var maxFontSize: js.UndefOr[Double] = js.undefined
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   /**
     * Not available
     */
   var maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts) A threshold determining the minimum font size that can be
-    * applied to a word.
-    */
-  var minFontSize: js.UndefOr[Double] = js.undefined
-  /**
     * Not available
     */
   var minPointLength: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
-    * dataLabels.
+    * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
+    * in the legend, tooltip etc.
     */
-  var opacity: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) This option decides which algorithm is used for placement,
-    * and rotation of a word. The choice of algorith is therefore a crucial
-    * part of the resulting layout of the wordcloud. It is possible for users
-    * to add their own custom placement strategies for use in word cloud. Read
-    * more about it in our documentation
-    */
-  var placementStrategy: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) Properties for each single point.
-    */
-  var point: js.UndefOr[PlotWordcloudPointOptions] = js.undefined
-  /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
-    */
-  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /**
     * Not available
     */
@@ -337,75 +95,32 @@ import scala.scalajs.js.annotation._
     */
   var pointWidth: js.UndefOr[scala.Nothing] = js.undefined
   /**
-    * (Highcharts) Rotation options for the words in the wordcloud.
+    * (Highcharts, Highstock) This option allows grouping series in a stacked
+    * chart. The stack option can be a string or anything else, as long as the
+    * grouped series' stack options match each other after conversion into a
+    * string.
     */
-  var rotation: js.UndefOr[PlotWordcloudRotationOptions] = js.undefined
-  /**
-    * (Highcharts) Whether to select the series initially. If `showCheckbox` is
-    * true, the checkbox next to the series name in the legend will be checked
-    * for a selected series.
-    */
-  var selected: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
-    */
-  var showInLegend: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) If set to `true`, the accessibility module will skip past
-    * the points in this series for keyboard navigation.
-    */
-  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) Spiral used for placing a word after the initial position
-    * experienced a collision with either another word or the borders. It is
-    * possible for users to add their own custom spiralling algorithms for use
-    * in word cloud. Read more about it in our documentation
-    */
-  var spiral: js.UndefOr[String] = js.undefined
-  var states: js.UndefOr[PlotWordcloudStatesOptions] = js.undefined
-  /**
-    * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
-    * event on a series isn't triggered until the mouse moves over another
-    * series, or out of the plot area. When false, the `mouseOut` event on a
-    * series is triggered when the mouse leaves the area around the series'
-    * graph or markers. This also implies the tooltip when not shared. When
-    * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
-    * be hidden when moving the mouse between series. Defaults to true for line
-    * and area type series, but to false for columns, pies etc.
-    */
-  var stickyTracking: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) CSS styles for the words.
-    */
-  var style: js.UndefOr[CSSObject] = js.undefined
-  /**
-    * (Highcharts) A configuration object for the tooltip rendering of each
-    * single series. Properties are inherited from tooltip, but only the
-    * following properties can be defined on a series level.
-    */
-  var tooltip: js.UndefOr[PlotWordcloudTooltipOptions] = js.undefined
-  /**
-    * (Highcharts, Highstock, Gantt) When a series contains a data array that
-    * is longer than this, only one dimensional arrays of numbers, or two
-    * dimensional arrays with x and y values are allowed. Also, only the first
-    * point is tested, and the rest are assumed to be the same format. This
-    * saves expensive data checking and indexing in long series. Set it to `0`
-    * disable.
-    */
-  var turboThreshold: js.UndefOr[Double] = js.undefined
+  var stack: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  @JSName("type")
-  var type_SeriesWordcloudOptions: wordcloud
+  var `type`: String | wordcloud
   /**
-    * (Highcharts) Set the initial visibility of the series.
+    * (Highcharts, Highstock) When using dual or multiple x axes, this number
+    * defines which xAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the xAxis array, with 0
+    * being the first.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var xAxis: js.UndefOr[Double | String] = js.undefined
+  /**
+    * (Highcharts, Highstock) When using dual or multiple y axes, this number
+    * defines which yAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the yAxis array, with 0
+    * being the first.
+    */
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 
 object SeriesWordcloudOptions {
@@ -418,7 +133,7 @@ object SeriesWordcloudOptions {
     animation: PlotWordcloudAnimationOptions = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
@@ -441,7 +156,6 @@ object SeriesWordcloudOptions {
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotWordcloudEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     groupPadding: js.UndefOr[scala.Nothing] = js.undefined,
     groupZPadding: js.UndefOr[scala.Nothing] = js.undefined,
     grouping: js.UndefOr[scala.Nothing] = js.undefined,
@@ -454,7 +168,7 @@ object SeriesWordcloudOptions {
     lastVisiblePrice: PlotWordcloudLastVisiblePriceOptions = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
-    mapData: MapDataObject | js.Array[MapDataObject] = null,
+    mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
     maxFontSize: Int | Double = null,
     maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     minFontSize: Int | Double = null,
@@ -471,7 +185,7 @@ object SeriesWordcloudOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     spiral: String = null,
-    stack: js.Object | String = null,
+    stack: Double | String = null,
     states: PlotWordcloudStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
@@ -490,7 +204,7 @@ object SeriesWordcloudOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -513,7 +227,6 @@ object SeriesWordcloudOptions {
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (!js.isUndefined(groupPadding)) __obj.updateDynamic("groupPadding")(groupPadding)
     if (!js.isUndefined(groupZPadding)) __obj.updateDynamic("groupZPadding")(groupZPadding)
     if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping)

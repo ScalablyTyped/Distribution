@@ -213,7 +213,7 @@ trait PlotBoxplotOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
     * (Highcharts) Depth of the columns in a 3D column chart. Requires
     * `highcharts-3d.js`.
@@ -256,16 +256,6 @@ trait PlotBoxplotOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotBoxplotEventsOptions] = js.undefined
-  /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) The fill color of the box.
     *
@@ -616,7 +606,7 @@ trait PlotBoxplotOptions extends js.Object {
     * In styled mode, the whisker stroke can be set with the
     * `.highcharts-boxplot-whisker` class .
     */
-  var whiskerColor: js.UndefOr[ColorString] = js.undefined
+  var whiskerColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The length of the whiskers, the horizontal lines marking low
     * and high values. It can be a numerical pixel value, or a percentage value
@@ -677,7 +667,7 @@ object PlotBoxplotOptions {
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotBoxplotDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: js.Any = null,
     depth: Int | Double = null,
     description: String = null,
     dragDrop: PlotBoxplotDragDropOptions = null,
@@ -685,7 +675,6 @@ object PlotBoxplotOptions {
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotBoxplotEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -730,7 +719,7 @@ object PlotBoxplotOptions {
     tooltip: PlotBoxplotTooltipOptions = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    whiskerColor: ColorString = null,
+    whiskerColor: ColorString | GradientColorObject | PatternObject = null,
     whiskerLength: Double | String = null,
     whiskerWidth: Int | Double = null,
     zIndex: Int | Double = null,
@@ -760,7 +749,7 @@ object PlotBoxplotOptions {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
@@ -768,7 +757,6 @@ object PlotBoxplotOptions {
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll)
@@ -813,7 +801,7 @@ object PlotBoxplotOptions {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (whiskerColor != null) __obj.updateDynamic("whiskerColor")(whiskerColor)
+    if (whiskerColor != null) __obj.updateDynamic("whiskerColor")(whiskerColor.asInstanceOf[js.Any])
     if (whiskerLength != null) __obj.updateDynamic("whiskerLength")(whiskerLength.asInstanceOf[js.Any])
     if (whiskerWidth != null) __obj.updateDynamic("whiskerWidth")(whiskerWidth.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

@@ -26,7 +26,7 @@ trait CreateLaunchTemplateVersionRequest extends js.Object {
     */
   var LaunchTemplateName: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.LaunchTemplateName] = js.undefined
   /**
-    * The version number of the launch template version on which to base the new version. The new version inherits the same launch parameters as the source version, except for parameters that you specify in LaunchTemplateData.
+    * The version number of the launch template version on which to base the new version. The new version inherits the same launch parameters as the source version, except for parameters that you specify in LaunchTemplateData. Snapshots applied to the block device mapping are ignored when creating a new version unless they are explicitly included.
     */
   var SourceVersion: js.UndefOr[String] = js.undefined
   /**

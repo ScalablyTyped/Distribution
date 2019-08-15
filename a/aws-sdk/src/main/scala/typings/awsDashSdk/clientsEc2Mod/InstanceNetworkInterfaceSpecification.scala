@@ -54,7 +54,7 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
     */
   var SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The ID of the subnet associated with the network string. Applies only if creating a network interface when launching an instance.
+    * The ID of the subnet associated with the network interface. Applies only if creating a network interface when launching an instance.
     */
   var SubnetId: js.UndefOr[String] = js.undefined
 }

@@ -26,13 +26,6 @@ trait Chart3dFrameOptions extends js.Object {
     */
   var right: js.UndefOr[Chart3dFrameRightOptions] = js.undefined
   /**
-    * (Highcharts) Note: As of v5.0.12, `frame.left` or `frame.right` should be
-    * used instead.
-    *
-    * The side for the frame around a 3D chart.
-    */
-  var side: js.UndefOr[Chart3dFrameSideOptions] = js.undefined
-  /**
     * (Highcharts) General pixel thickness for the frame faces.
     */
   var size: js.UndefOr[Double] = js.undefined
@@ -54,7 +47,6 @@ object Chart3dFrameOptions {
     front: Chart3dFrameFrontOptions = null,
     left: Chart3dFrameLeftOptions = null,
     right: Chart3dFrameRightOptions = null,
-    side: Chart3dFrameSideOptions = null,
     size: Int | Double = null,
     top: Chart3dFrameTopOptions = null,
     visible: String = null
@@ -65,7 +57,6 @@ object Chart3dFrameOptions {
     if (front != null) __obj.updateDynamic("front")(front)
     if (left != null) __obj.updateDynamic("left")(left)
     if (right != null) __obj.updateDynamic("right")(right)
-    if (side != null) __obj.updateDynamic("side")(side)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top)
     if (visible != null) __obj.updateDynamic("visible")(visible)

@@ -81,7 +81,7 @@ trait ColorAxisOptions extends js.Object {
     * (Highcharts, Highmaps) Color of the grid lines extending from the axis
     * across the gradient.
     */
-  var gridLineColor: js.UndefOr[ColorString] = js.undefined
+  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) The dash or dot style of the grid lines. For
     * possible values, see this demonstration.
@@ -114,7 +114,7 @@ trait ColorAxisOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) If there are multiple axes on the same side of the
     * chart, the pixel margin between the axes. Defaults to 0 on vertical axes,
@@ -141,7 +141,7 @@ trait ColorAxisOptions extends js.Object {
     * If dataClasses are set, the color is based on minColor and maxColor
     * unless a color is set for each data class, or the dataClassColor is set.
     */
-  var maxColor: js.UndefOr[ColorString] = js.undefined
+  var maxColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) Padding of the max value relative to the length of
     * the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -166,7 +166,7 @@ trait ColorAxisOptions extends js.Object {
     * If dataClasses are set, the color is based on minColor and maxColor
     * unless a color is set for each data class, or the dataClassColor is set.
     */
-  var minColor: js.UndefOr[ColorString] = js.undefined
+  var minColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) Padding of the min value relative to the length of
     * the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -178,7 +178,7 @@ trait ColorAxisOptions extends js.Object {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorString] = js.undefined
+  var minorGridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) The dash or dot style of the minor grid lines. For
     * possible values, see this demonstration.
@@ -194,7 +194,7 @@ trait ColorAxisOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString] = js.undefined
+  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) Specific tick interval in axis units for the minor
     * ticks. On a linear axis, if `"auto"`, the minor tick interval is
@@ -349,7 +349,7 @@ trait ColorAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString] = js.undefined
+  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highmaps) The interval of the tick marks in axis units. When
     * `null`, the tick interval is computed to approximately follow the
@@ -422,7 +422,7 @@ trait ColorAxisOptions extends js.Object {
     * an array where the first value is the time unit and the second value
     * another array of allowed multiples. Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -430,6 +430,11 @@ trait ColorAxisOptions extends js.Object {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highmaps) Whether to zoom axis. If `chart.zoomType` is set,
+    * the option allows to disable zooming on an individual axis.
+    */
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object ColorAxisOptions {
@@ -447,26 +452,26 @@ object ColorAxisOptions {
     events: ColorAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: ColorAxisGridOptions = null,
-    gridLineColor: ColorString = null,
+    gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
     id: String = null,
     labels: ColorAxisLabelsOptions = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     margin: Int | Double = null,
     marker: ColorAxisMarkerOptions = null,
     max: Int | Double = null,
-    maxColor: ColorString = null,
+    maxColor: ColorString | GradientColorObject | PatternObject = null,
     maxPadding: Int | Double = null,
     maxRange: Int | Double = null,
     min: Int | Double = null,
-    minColor: ColorString = null,
+    minColor: ColorString | GradientColorObject | PatternObject = null,
     minPadding: Int | Double = null,
-    minorGridLineColor: ColorString = null,
+    minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
     minorGridLineDashStyle: DashStyleValue = null,
     minorGridLineWidth: Int | Double = null,
-    minorTickColor: ColorString = null,
+    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
     minorTickInterval: Double | String = null,
     minorTickLength: Int | Double = null,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -488,7 +493,7 @@ object ColorAxisOptions {
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     stops: js.Array[js.Tuple2[Double, ColorString]] = null,
     tickAmount: Int | Double = null,
-    tickColor: ColorString = null,
+    tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,
     tickLength: Int | Double = null,
     tickPixelInterval: Int | Double = null,
@@ -500,7 +505,8 @@ object ColorAxisOptions {
     `type`: ColorAxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): ColorAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -515,26 +521,26 @@ object ColorAxisOptions {
     if (events != null) __obj.updateDynamic("events")(events)
     if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle)
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor)
+    if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor.asInstanceOf[js.Any])
     if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
     if (maxRange != null) __obj.updateDynamic("maxRange")(maxRange.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minColor != null) __obj.updateDynamic("minColor")(minColor)
+    if (minColor != null) __obj.updateDynamic("minColor")(minColor.asInstanceOf[js.Any])
     if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
-    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor)
+    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor.asInstanceOf[js.Any])
     if (minorGridLineDashStyle != null) __obj.updateDynamic("minorGridLineDashStyle")(minorGridLineDashStyle)
     if (minorGridLineWidth != null) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.asInstanceOf[js.Any])
-    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor)
+    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
     if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
     if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
     if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition)
@@ -556,7 +562,7 @@ object ColorAxisOptions {
     if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick)
     if (stops != null) __obj.updateDynamic("stops")(stops)
     if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
     if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
@@ -569,6 +575,7 @@ object ColorAxisOptions {
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames)
     if (units != null) __obj.updateDynamic("units")(units)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
     __obj.asInstanceOf[ColorAxisOptions]
   }
 }

@@ -35,7 +35,7 @@ trait PlotSeriesMarkerOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the point marker's
     * outline. When `undefined`, the series' or point's color is used.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the point marker's
     * outline.
@@ -80,7 +80,7 @@ object PlotSeriesMarkerOptions {
     enabledThreshold: Int | Double = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     height: Int | Double = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     radius: Int | Double = null,
     states: PlotSeriesMarkerStatesOptions = null,
@@ -92,7 +92,7 @@ object PlotSeriesMarkerOptions {
     if (enabledThreshold != null) __obj.updateDynamic("enabledThreshold")(enabledThreshold.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states)

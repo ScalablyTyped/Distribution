@@ -40,6 +40,10 @@ trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
     */
   var invoice_prefix: js.UndefOr[String] = js.undefined
   /**
+    * Default invoice settings for this customer.
+    */
+  var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
+  /**
     * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -72,6 +76,7 @@ object ICustomerUpdateOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice_prefix: String = null,
+    invoice_settings: ICustomerInvoiceSettings = null,
     metadata: IOptionsMetadata = null,
     name: String = null,
     phone: String = null,
@@ -88,6 +93,7 @@ object ICustomerUpdateOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix)
+    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
     if (phone != null) __obj.updateDynamic("phone")(phone)

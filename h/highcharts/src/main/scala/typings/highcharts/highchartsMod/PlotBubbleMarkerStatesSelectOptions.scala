@@ -17,7 +17,7 @@ trait PlotBubbleMarkerStatesSelectOptions extends js.Object {
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's color is used.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) The width of the point marker's outline.
     */
@@ -34,14 +34,14 @@ object PlotBubbleMarkerStatesSelectOptions {
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     radius: Int | Double = null
   ): PlotBubbleMarkerStatesSelectOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBubbleMarkerStatesSelectOptions]

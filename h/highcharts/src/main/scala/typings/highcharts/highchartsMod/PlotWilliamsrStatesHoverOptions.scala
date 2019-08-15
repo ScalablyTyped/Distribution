@@ -13,7 +13,7 @@ trait PlotWilliamsrStatesHoverOptions extends js.Object {
   /**
     * (Highmaps) The border color of the point in this state.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of the point in this state
     */
@@ -54,31 +54,24 @@ trait PlotWilliamsrStatesHoverOptions extends js.Object {
     * hovered series.
     */
   var lineWidthPlus: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highstock) In Highcharts 1.0, the appearance of all markers
-    * belonging to the hovered series. For settings on the hover state of the
-    * individual point, see marker.states.hover.
-    */
-  var marker: js.UndefOr[PlotWilliamsrStatesHoverMarkerOptions] = js.undefined
 }
 
 object PlotWilliamsrStatesHoverOptions {
   @scala.inline
   def apply(
     animation: Boolean | AnimationOptionsObject | PlotWilliamsrStatesHoverAnimationOptions = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     brightness: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     halo: PlotWilliamsrStatesHoverHaloOptions = null,
     lineWidth: Int | Double = null,
-    lineWidthPlus: Int | Double = null,
-    marker: PlotWilliamsrStatesHoverMarkerOptions = null
+    lineWidthPlus: Int | Double = null
   ): PlotWilliamsrStatesHoverOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -86,7 +79,6 @@ object PlotWilliamsrStatesHoverOptions {
     if (halo != null) __obj.updateDynamic("halo")(halo)
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
     __obj.asInstanceOf[PlotWilliamsrStatesHoverOptions]
   }
 }

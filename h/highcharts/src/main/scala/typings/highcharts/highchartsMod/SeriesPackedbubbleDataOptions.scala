@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesPackedbubbleDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesPackedbubbleDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesPackedbubbleDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -79,21 +77,11 @@ trait SeriesPackedbubbleDataOptions
     * initially.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts, Highstock) The x value of the point. For datetime axes, the
-    * X value is the timestamp in milliseconds since 1970.
-    */
-  var x: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highstock) The y value of the point.
-    */
-  var y: js.UndefOr[Double | Null] = js.undefined
 }
 
 object SeriesPackedbubbleDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesPackedbubbleDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -106,12 +94,9 @@ object SeriesPackedbubbleDataOptions {
     id: String = null,
     labelrank: Int | Double = null,
     name: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    x: Int | Double = null,
-    y: Int | Double = null
+    selected: js.UndefOr[Boolean] = js.undefined
   ): SeriesPackedbubbleDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -125,8 +110,6 @@ object SeriesPackedbubbleDataOptions {
     if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPackedbubbleDataOptions]
   }
 }

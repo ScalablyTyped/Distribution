@@ -3647,6 +3647,7 @@
 | 17 | [geodesy](./g/geodesy) | Libraries of geodesy functions
 | 17 | [graphlib-dot](./g/graphlib-dot) | A DOT language parser / writer for graphlib
 | 17 | [gulp-strip-comments](./g/gulp-strip-comments) | Strip comments from code
+| 17 | [html-validator](./h/html-validator) | Validate html using validator.w3.org/nu
 | 17 | [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil
 | 17 | [icepick](./i/icepick) | Utilities for treating frozen JavaScript objects a
 | 17 | [ionic__angular](./i/ionic__angular) | Angular specific wrappers for @ionic/core
@@ -5201,6 +5202,7 @@
 | 3 | [cordova-plugin-file-opene](./c/cordova-plugin-file-opener2) | A File Opener Plugin for Cordova. (The Original Ve
 | 3 | [cordova-plugin-media](./c/cordova-plugin-media) | Cordova Media Plugin
 | 3 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node
+| 3 | [csp-html-webpack-plugin](./c/csp-html-webpack-plugin) | A plugin which, when combined with HTMLWebpackPlug
 | 3 | [csvrow](./c/csvrow) | parse a CSV row string
 | 3 | [d3-graphviz](./d/d3-graphviz) | Graphviz DOT rendering and animated transitions fo
 | 3 | [d3kit](./d/d3kit) | A kit of tools to speed D3 related project develop

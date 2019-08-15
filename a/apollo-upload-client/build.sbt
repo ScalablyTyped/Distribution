@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "apollo-upload-client"
-version := "8.1-dt-20190619Z-0904a5"
+version := "8.1-dt-20190619Z-264123"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-16bcb2",
-  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.14-d733ee",
+  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.14-94b90d",
   "org.scalablytyped" %%% "extract-files" % "3.1-dt-20180516Z-75eeb2",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-fd24a4",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "ts-invariant" % "0.4.4-c9aa6a",
+  "org.scalablytyped" %%% "ts-invariant" % "0.4.4-1b5467",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.19-871dff")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

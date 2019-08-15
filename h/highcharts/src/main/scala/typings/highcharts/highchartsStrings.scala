@@ -13,7 +13,7 @@ import typings.highcharts.highchartsMod.DataGroupingApproximationValue
 import typings.highcharts.highchartsMod.DataLabelsFilterOperatorValue
 import typings.highcharts.highchartsMod.DataLabelsOverflowValue
 import typings.highcharts.highchartsMod.ExportingMimeTypeValue
-import typings.highcharts.highchartsMod.FlagShapeValue
+import typings.highcharts.highchartsMod.FlagsShapeValue
 import typings.highcharts.highchartsMod.OptionsApproximationValue
 import typings.highcharts.highchartsMod.OptionsBoostBlendingValue
 import typings.highcharts.highchartsMod.OptionsDataClassColorValue
@@ -332,7 +332,7 @@ object highchartsStrings {
        with TooltipShapeValue
   
   @js.native
-  sealed trait circlepin extends FlagShapeValue
+  sealed trait circlepin extends FlagsShapeValue
   
   @js.native
   sealed trait close
@@ -452,7 +452,7 @@ object highchartsStrings {
   sealed trait fastAvoid extends _PathfinderTypeValue
   
   @js.native
-  sealed trait flag extends FlagShapeValue
+  sealed trait flag extends FlagsShapeValue
   
   @js.native
   sealed trait flags extends js.Object
@@ -721,6 +721,9 @@ object highchartsStrings {
        with OptionsTickPositionValue
   
   @js.native
+  sealed trait overlap extends OptionsStackingValue
+  
+  @js.native
   sealed trait packedbubble extends js.Object
   
   @js.native
@@ -902,7 +905,7 @@ object highchartsStrings {
   sealed trait `square-root` extends js.Object
   
   @js.native
-  sealed trait squarepin extends FlagShapeValue
+  sealed trait squarepin extends FlagsShapeValue
   
   @js.native
   sealed trait squarified extends OptionsLayoutAlgorithmValue
@@ -915,6 +918,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait straight extends _PathfinderTypeValue
+  
+  @js.native
+  sealed trait stream extends OptionsStackingValue
   
   @js.native
   sealed trait streamgraph extends js.Object
@@ -966,6 +972,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait treemap extends js.Object
+  
+  @js.native
+  sealed trait trendline extends js.Object
   
   @js.native
   sealed trait triangle extends SymbolKeyValue
@@ -1480,6 +1489,8 @@ object highchartsStrings {
   @scala.inline
   def outside: outside = "outside".asInstanceOf[outside]
   @scala.inline
+  def overlap: overlap = "overlap".asInstanceOf[overlap]
+  @scala.inline
   def packedbubble: packedbubble = "packedbubble".asInstanceOf[packedbubble]
   @scala.inline
   def pan: pan = "pan".asInstanceOf[pan]
@@ -1602,6 +1613,8 @@ object highchartsStrings {
   @scala.inline
   def straight: straight = "straight".asInstanceOf[straight]
   @scala.inline
+  def stream: stream = "stream".asInstanceOf[stream]
+  @scala.inline
   def streamgraph: streamgraph = "streamgraph".asInstanceOf[streamgraph]
   @scala.inline
   def strip: strip = "strip".asInstanceOf[strip]
@@ -1635,6 +1648,8 @@ object highchartsStrings {
   def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
   @scala.inline
   def treemap: treemap = "treemap".asInstanceOf[treemap]
+  @scala.inline
+  def trendline: trendline = "trendline".asInstanceOf[trendline]
   @scala.inline
   def triangle: triangle = "triangle".asInstanceOf[triangle]
   @scala.inline

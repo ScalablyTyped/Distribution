@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SankeyNodeObject extends Point {
   /**
+    * The color of the auto generated node.
+    */
+  @JSName("color")
+  var color_SankeyNodeObject: ColorString | GradientColorObject | PatternObject = js.native
+  /**
     * An optional column index of where to place the node. The default
     * behaviour is to place it next to the preceding node.
     */

@@ -62,7 +62,7 @@ trait PlotHeatmapOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width for each heat map item.
     */
@@ -207,16 +207,6 @@ trait PlotHeatmapOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotHeatmapEventsOptions] = js.undefined
-  /**
-    * (Highcharts, Highmaps) By default, series are exposed to screen readers
-    * as regions. By enabling this option, the series element itself will be
-    * exposed in the same way as the data points. This is useful if the series
-    * is not used as a grouping entity in the chart, but you still want to
-    * attach a description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -438,7 +428,7 @@ object PlotHeatmapOptions {
     animation: Boolean | PlotHeatmapAnimationOptions = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -458,7 +448,6 @@ object PlotHeatmapOptions {
     dragDrop: PlotHeatmapDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotHeatmapEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
@@ -497,7 +486,7 @@ object PlotHeatmapOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -517,7 +506,6 @@ object PlotHeatmapOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)

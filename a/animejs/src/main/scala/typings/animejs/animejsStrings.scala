@@ -11,7 +11,13 @@ object animejsStrings {
   sealed trait alternate extends DirectionOptions
   
   @js.native
+  sealed trait center extends js.Object
+  
+  @js.native
   sealed trait easeInBack extends EasingOptions
+  
+  @js.native
+  sealed trait easeInBounce extends EasingOptions
   
   @js.native
   sealed trait easeInCirc extends EasingOptions
@@ -27,6 +33,9 @@ object animejsStrings {
   
   @js.native
   sealed trait easeInOutBack extends EasingOptions
+  
+  @js.native
+  sealed trait easeInOutBounce extends EasingOptions
   
   @js.native
   sealed trait easeInOutCirc extends EasingOptions
@@ -68,6 +77,9 @@ object animejsStrings {
   sealed trait easeOutBack extends EasingOptions
   
   @js.native
+  sealed trait easeOutBounce extends EasingOptions
+  
+  @js.native
   sealed trait easeOutCirc extends EasingOptions
   
   @js.native
@@ -92,6 +104,12 @@ object animejsStrings {
   sealed trait easeOutSine extends EasingOptions
   
   @js.native
+  sealed trait first extends js.Object
+  
+  @js.native
+  sealed trait last extends js.Object
+  
+  @js.native
   sealed trait linear extends EasingOptions
   
   @js.native
@@ -100,10 +118,20 @@ object animejsStrings {
   @js.native
   sealed trait reverse extends DirectionOptions
   
+  @js.native
+  sealed trait x extends js.Object
+  
+  @js.native
+  sealed trait y extends js.Object
+  
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def easeInBack: easeInBack = "easeInBack".asInstanceOf[easeInBack]
+  @scala.inline
+  def easeInBounce: easeInBounce = "easeInBounce".asInstanceOf[easeInBounce]
   @scala.inline
   def easeInCirc: easeInCirc = "easeInCirc".asInstanceOf[easeInCirc]
   @scala.inline
@@ -114,6 +142,8 @@ object animejsStrings {
   def easeInExpo: easeInExpo = "easeInExpo".asInstanceOf[easeInExpo]
   @scala.inline
   def easeInOutBack: easeInOutBack = "easeInOutBack".asInstanceOf[easeInOutBack]
+  @scala.inline
+  def easeInOutBounce: easeInOutBounce = "easeInOutBounce".asInstanceOf[easeInOutBounce]
   @scala.inline
   def easeInOutCirc: easeInOutCirc = "easeInOutCirc".asInstanceOf[easeInOutCirc]
   @scala.inline
@@ -141,6 +171,8 @@ object animejsStrings {
   @scala.inline
   def easeOutBack: easeOutBack = "easeOutBack".asInstanceOf[easeOutBack]
   @scala.inline
+  def easeOutBounce: easeOutBounce = "easeOutBounce".asInstanceOf[easeOutBounce]
+  @scala.inline
   def easeOutCirc: easeOutCirc = "easeOutCirc".asInstanceOf[easeOutCirc]
   @scala.inline
   def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
@@ -157,10 +189,18 @@ object animejsStrings {
   @scala.inline
   def easeOutSine: easeOutSine = "easeOutSine".asInstanceOf[easeOutSine]
   @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
 }
 

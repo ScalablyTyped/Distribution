@@ -57,7 +57,7 @@ trait PlotItemOptions extends js.Object {
     * dynamic values, as the data labels move. In that case, the center should
     * be explicitly set, for example to `["50%", "50%"]`.
     */
-  var center: js.UndefOr[js.Array[Double | String | Null]] = js.undefined
+  var center: js.UndefOr[js.Tuple2[Double | String | Null, Double | String | Null]] = js.undefined
   /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
@@ -190,16 +190,6 @@ trait PlotItemOptions extends js.Object {
     */
   var events: js.UndefOr[PlotItemEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
     *
@@ -314,7 +304,7 @@ trait PlotItemOptions extends js.Object {
     * pie will try to shrink to make room for data labels in side the plot
     * area, but only to this size.
     */
-  var minSize: js.UndefOr[Double] = js.undefined
+  var minSize: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -435,7 +425,7 @@ object PlotItemOptions {
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | AnimationOptionsObject | PlotItemAnimationOptions = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    center: js.Array[Double | String | Null] = null,
+    center: js.Tuple2[Double | String | Null, Double | String | Null] = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -453,7 +443,6 @@ object PlotItemOptions {
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
     events: PlotItemEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined,
@@ -467,7 +456,7 @@ object PlotItemOptions {
     layout: String = null,
     linkedTo: String = null,
     marker: PlotItemMarkerOptions = null,
-    minSize: Int | Double = null,
+    minSize: Double | String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     point: PlotItemPointOptions = null,
@@ -512,7 +501,6 @@ object PlotItemOptions {
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (!js.isUndefined(ignoreHiddenPoint)) __obj.updateDynamic("ignoreHiddenPoint")(ignoreHiddenPoint)

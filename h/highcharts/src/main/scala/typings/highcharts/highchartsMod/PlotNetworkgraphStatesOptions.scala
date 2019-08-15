@@ -22,7 +22,7 @@ trait PlotNetworkgraphStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotNetworkgraphStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Specific options for point in selected states, after being
+    * (Highcharts) Specific options for point in selected states, after being
     * selected by allowPointSelect or programmatically.
     */
   var select: js.UndefOr[PlotNetworkgraphStatesSelectOptions] = js.undefined

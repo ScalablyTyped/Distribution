@@ -27,6 +27,7 @@ object WMSTileLayerProps {
   @scala.inline
   def apply(
     url: String,
+    accessToken: String = null,
     attribution: String = null,
     bounds: LatLngBoundsExpression = null,
     children: Children = null,
@@ -36,6 +37,7 @@ object WMSTileLayerProps {
     detectRetina: js.UndefOr[Boolean] = js.undefined,
     errorTileUrl: String = null,
     format: String = null,
+    id: String = null,
     keepBuffer: Int | Double = null,
     layers: String = null,
     leaflet: LeafletContext = null,
@@ -67,6 +69,7 @@ object WMSTileLayerProps {
     zoomReverse: js.UndefOr[Boolean] = js.undefined
   ): WMSTileLayerProps = {
     val __obj = js.Dynamic.literal(url = url)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -76,6 +79,7 @@ object WMSTileLayerProps {
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorTileUrl != null) __obj.updateDynamic("errorTileUrl")(errorTileUrl)
     if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (keepBuffer != null) __obj.updateDynamic("keepBuffer")(keepBuffer.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)

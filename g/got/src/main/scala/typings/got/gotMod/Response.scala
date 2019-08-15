@@ -18,6 +18,7 @@ trait Response[B /* <: Buffer | String | js.Object */] extends IncomingMessage {
   var statusCode_Response: Double = js.native
   @JSName("statusMessage")
   var statusMessage_Response: String = js.native
+  var timings: GotTimings = js.native
   @JSName("url")
   var url_Response: String = js.native
 }

@@ -23,7 +23,7 @@ trait PlotPyramidStatesSelectOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Enable separate styles for the hovered series to visualize
+    * (Highcharts) Enable separate styles for the hovered series to visualize
     * that the user hovers either the series itself or the legend.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined

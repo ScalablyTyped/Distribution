@@ -21,7 +21,7 @@ trait PlotPieStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotPieStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Specific options for point in selected states, after being
+    * (Highcharts) Specific options for point in selected states, after being
     * selected by allowPointSelect or programmatically.
     */
   var select: js.UndefOr[PlotPieStatesSelectOptions] = js.undefined

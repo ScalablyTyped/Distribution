@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "listr"
-version := "0.14-dt-20190730Z-44c615"
+version := "0.14-dt-20190730Z-d231b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

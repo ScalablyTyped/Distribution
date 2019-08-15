@@ -40,7 +40,7 @@ trait ChartParallelAxesOptions extends js.Object {
     *
     * Example:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * same axis. For an overview of the replacement codes, see dateFormat.
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var dateTimeLabelFormats: js.UndefOr[ChartParallelAxesDateTimeLabelFormatsOptions] = js.undefined
   /**
@@ -114,7 +114,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The width of the line marking the axis itself.
     *
@@ -162,6 +162,10 @@ trait ChartParallelAxesOptions extends js.Object {
     * the edge of the plot area. When the axis' `max` option is set or a max
     * extreme is set using `axis.setExtremes()`, the maxPadding will be
     * ignored.
+    *
+    * Also the `softThreshold` option takes precedence over `maxPadding`, so if
+    * the data is tangent to the threshold, `maxPadding` may not apply unless
+    * `softThreshold` is set to false.
     */
   var maxPadding: js.UndefOr[Double] = js.undefined
   /**
@@ -195,6 +199,10 @@ trait ChartParallelAxesOptions extends js.Object {
     * edge of the plot area. When the axis' `min` option is set or a max
     * extreme is set using `axis.setExtremes()`, the maxPadding will be
     * ignored.
+    *
+    * Also the `softThreshold` option takes precedence over `minPadding`, so if
+    * the data is tangent to the threshold, `minPadding` may not apply unless
+    * `softThreshold` is set to false.
     */
   var minPadding: js.UndefOr[Double] = js.undefined
   /**
@@ -224,7 +232,7 @@ trait ChartParallelAxesOptions extends js.Object {
   /**
     * (Highcharts) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString] = js.undefined
+  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) Specific tick interval in axis units for the minor ticks. On
     * a linear axis, if `"auto"`, the minor tick interval is calculated as a
@@ -376,7 +384,7 @@ trait ChartParallelAxesOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString] = js.undefined
+  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -497,7 +505,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * an array where the first value is the time unit and the second value
     * another array of allowed multiples. Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -505,6 +513,11 @@ trait ChartParallelAxesOptions extends js.Object {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
+    * allows to disable zooming on an individual axis.
+    */
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object ChartParallelAxesOptions {
@@ -525,7 +538,7 @@ object ChartParallelAxesOptions {
     gridZIndex: Int | Double = null,
     height: Double | String = null,
     labels: ChartParallelAxesLabelsOptions = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linkedTo: Int | Double = null,
     margin: Int | Double = null,
@@ -538,7 +551,7 @@ object ChartParallelAxesOptions {
     minPadding: Int | Double = null,
     minRange: Int | Double = null,
     minTickInterval: Int | Double = null,
-    minorTickColor: ColorString = null,
+    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
     minorTickInterval: Double | String = null,
     minorTickLength: Int | Double = null,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -560,7 +573,7 @@ object ChartParallelAxesOptions {
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     staticScale: Int | Double = null,
     tickAmount: Int | Double = null,
-    tickColor: ColorString = null,
+    tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,
     tickLength: Int | Double = null,
     tickPixelInterval: Int | Double = null,
@@ -575,7 +588,8 @@ object ChartParallelAxesOptions {
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): ChartParallelAxesOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -593,7 +607,7 @@ object ChartParallelAxesOptions {
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -606,7 +620,7 @@ object ChartParallelAxesOptions {
     if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
     if (minRange != null) __obj.updateDynamic("minRange")(minRange.asInstanceOf[js.Any])
     if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
-    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor)
+    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
     if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
     if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
     if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition)
@@ -628,7 +642,7 @@ object ChartParallelAxesOptions {
     if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick)
     if (staticScale != null) __obj.updateDynamic("staticScale")(staticScale.asInstanceOf[js.Any])
     if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
     if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
@@ -644,6 +658,7 @@ object ChartParallelAxesOptions {
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames)
     if (units != null) __obj.updateDynamic("units")(units)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
     __obj.asInstanceOf[ChartParallelAxesOptions]
   }
 }

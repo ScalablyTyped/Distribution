@@ -12,6 +12,11 @@ trait PlotSunburstTooltipOptions extends js.Object {
     */
   var changeDecimals: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) A CSS class name to apply to the tooltip's container div,
+    * allowing unique CSS styling for each chart.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
@@ -148,6 +153,7 @@ object PlotSunburstTooltipOptions {
   @scala.inline
   def apply(
     changeDecimals: Int | Double = null,
+    className: String = null,
     dateTimeLabelFormats: PlotSunburstTooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
     followPointer: js.UndefOr[Boolean] = js.undefined,
     followTouchMove: js.UndefOr[Boolean] = js.undefined,
@@ -169,6 +175,7 @@ object PlotSunburstTooltipOptions {
   ): PlotSunburstTooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (changeDecimals != null) __obj.updateDynamic("changeDecimals")(changeDecimals.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
     if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)

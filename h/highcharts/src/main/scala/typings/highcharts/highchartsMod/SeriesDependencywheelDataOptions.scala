@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesDependencywheelDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesDependencywheelDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesDependencywheelDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -28,13 +26,6 @@ trait SeriesDependencywheelDataOptions
     * name won't have a visual effect by default.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) Individual data label for each point. The options are the
-    * same as the ones for plotOptions.series.dataLabels.
-    */
-  var dataLabels: js.UndefOr[
-    SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject]
-  ] = js.undefined
   /**
     * (Highcharts) A description of the point to add to the screen reader
     * information about the point. Requires the Accessibility module.
@@ -83,12 +74,10 @@ trait SeriesDependencywheelDataOptions
 object SeriesDependencywheelDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesDependencywheelDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
-    dataLabels: SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject] = null,
     description: String = null,
     events: SeriesDependencywheelDataEventsOptions = null,
     from: String = null,
@@ -100,12 +89,10 @@ object SeriesDependencywheelDataOptions {
     weight: Int | Double = null
   ): SeriesDependencywheelDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (events != null) __obj.updateDynamic("events")(events)
     if (from != null) __obj.updateDynamic("from")(from)

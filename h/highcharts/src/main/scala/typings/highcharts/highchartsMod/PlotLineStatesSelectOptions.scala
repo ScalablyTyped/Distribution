@@ -13,7 +13,7 @@ trait PlotLineStatesSelectOptions extends js.Object {
   /**
     * (Highmaps) The border color of the point in this state.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of the point in this state
     */
@@ -23,8 +23,8 @@ trait PlotLineStatesSelectOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Enable separate styles for the hovered series to visualize
-    * that the user hovers either the series itself or the legend.
+    * (Highcharts, Highstock) Enable separate styles for the hovered series to
+    * visualize that the user hovers either the series itself or the legend.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
@@ -49,37 +49,29 @@ trait PlotLineStatesSelectOptions extends js.Object {
     * hovered series.
     */
   var lineWidthPlus: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts, Highstock) In Highcharts 1.0, the appearance of all markers
-    * belonging to the hovered series. For settings on the hover state of the
-    * individual point, see marker.states.hover.
-    */
-  var marker: js.UndefOr[PlotLineStatesSelectMarkerOptions] = js.undefined
 }
 
 object PlotLineStatesSelectOptions {
   @scala.inline
   def apply(
     animation: PlotLineStatesSelectAnimationOptions = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     halo: PlotLineStatesSelectHaloOptions = null,
     lineWidth: Int | Double = null,
-    lineWidthPlus: Int | Double = null,
-    marker: PlotLineStatesSelectMarkerOptions = null
+    lineWidthPlus: Int | Double = null
   ): PlotLineStatesSelectOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (halo != null) __obj.updateDynamic("halo")(halo)
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
     __obj.asInstanceOf[PlotLineStatesSelectOptions]
   }
 }

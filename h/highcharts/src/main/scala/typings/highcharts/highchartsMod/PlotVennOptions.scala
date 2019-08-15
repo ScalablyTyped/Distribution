@@ -231,16 +231,6 @@ trait PlotVennOptions extends js.Object {
     */
   var events: js.UndefOr[PlotVennEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
     *
@@ -445,7 +435,6 @@ object PlotVennOptions {
     dragDrop: PlotVennDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotVennEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
@@ -502,7 +491,6 @@ object PlotVennOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)

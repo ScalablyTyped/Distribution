@@ -8,7 +8,7 @@ trait PointLabelObject extends js.Object {
   /**
     * The point's current color.
     */
-  var color: ColorString | GradientColorObject | PatternObject
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * The point's current color index, used in styled mode instead of `color`.
     * The color index is inserted in class names used for styling.
@@ -17,7 +17,7 @@ trait PointLabelObject extends js.Object {
   /**
     * The name of the related point.
     */
-  var key: Double | String
+  var key: js.UndefOr[String] = js.undefined
   /**
     * The percentage for related points in a stacked series or pies.
     */
@@ -34,12 +34,12 @@ trait PointLabelObject extends js.Object {
     * The total of values in either a stack for stacked series, or a pie in a
     * pie series.
     */
-  var total: Double
+  var total: js.UndefOr[Double] = js.undefined
   /**
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
-  var x: Double | String
+  var x: js.UndefOr[Double | String] = js.undefined
   /**
     * The y value of the point.
     */
@@ -49,17 +49,21 @@ trait PointLabelObject extends js.Object {
 object PointLabelObject {
   @scala.inline
   def apply(
-    color: ColorString | GradientColorObject | PatternObject,
     colorIndex: Double,
-    key: Double | String,
     percentage: Double,
     point: Point,
     series: Series,
-    total: Double,
-    x: Double | String,
+    color: ColorString | GradientColorObject | PatternObject = null,
+    key: String = null,
+    total: Int | Double = null,
+    x: Double | String = null,
     y: Int | Double = null
   ): PointLabelObject = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colorIndex = colorIndex, key = key.asInstanceOf[js.Any], percentage = percentage, point = point, series = series, total = total, x = x.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorIndex = colorIndex, percentage = percentage, point = point, series = series)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointLabelObject]
   }

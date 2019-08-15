@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form/lib/SubmissionError", "SubmissionError")
 @js.native
-class SubmissionError[FormData, ErrorType] () extends Error {
+class SubmissionError[FormData, ErrorType] protected () extends Error {
   def this(errors: FormErrors[FormData, ErrorType]) = this()
+  var errors: FormErrors[FormData, ErrorType] = js.native
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

@@ -25,11 +25,6 @@ trait StockToolsGuiOptions extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock) Path where Highcharts will look for icons. Change this to use
-    * icons from a different server.
-    */
-  var iconsURL: js.UndefOr[String] = js.undefined
-  /**
     * (Highstock) A CSS class name to apply to the container of buttons,
     * allowing unique CSS styling for each chart.
     */
@@ -43,7 +38,6 @@ object StockToolsGuiOptions {
     className: String = null,
     definitions: js.Object | StockToolsGuiDefinitionsOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    iconsURL: String = null,
     toolbarClassName: String = null
   ): StockToolsGuiOptions = {
     val __obj = js.Dynamic.literal()
@@ -51,7 +45,6 @@ object StockToolsGuiOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL)
     if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName)
     __obj.asInstanceOf[StockToolsGuiOptions]
   }

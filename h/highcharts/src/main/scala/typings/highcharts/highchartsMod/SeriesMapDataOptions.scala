@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesMapDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesMapDataOptions extends js.Object {
   /**
     * (Highmaps) Individual color for the point. By default the color is either
     * used to denote the value, or pulled from the global `colors` array.
@@ -16,7 +14,7 @@ trait SeriesMapDataOptions
     * (Highmaps) Individual data label for each point. The options are the same
     * as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[js.Object] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
   /**
     * (Highmaps) The `id` of a series in the drilldown.series array to use for
     * a drilldown for this point.
@@ -74,9 +72,8 @@ trait SeriesMapDataOptions
 object SeriesMapDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     color: ColorString | GradientColorObject | PatternObject = null,
-    dataLabels: js.Object = null,
+    dataLabels: DataLabelsOptionsObject = null,
     drilldown: String = null,
     events: SeriesMapDataEventsOptions = null,
     id: String = null,
@@ -88,7 +85,6 @@ object SeriesMapDataOptions {
     value: Int | Double = null
   ): SeriesMapDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)

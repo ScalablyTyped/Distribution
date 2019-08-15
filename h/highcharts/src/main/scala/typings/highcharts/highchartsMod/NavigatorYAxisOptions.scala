@@ -35,7 +35,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highstock, Gantt) When using an alternate grid color, a band is painted
     * across the plot area between every other grid line.
     */
-  var alternateGridColor: js.UndefOr[ColorString] = js.undefined
+  var alternateGridColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
     * degrees, where 0 is up and 90 is right. The angle determines the position
@@ -58,7 +58,7 @@ trait NavigatorYAxisOptions extends js.Object {
     *
     * Example:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * same axis. For an overview of the replacement codes, see dateFormat.
     * Defaults to:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var dateTimeLabelFormats: js.UndefOr[NavigatorYAxisDateTimeLabelFormatsOptions] = js.undefined
   /**
@@ -116,7 +116,7 @@ trait NavigatorYAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-grid-line` class.
     */
-  var gridLineColor: js.UndefOr[ColorString] = js.undefined
+  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The dash or dot style of the grid lines. For possible
     * values, see this demonstration.
@@ -156,7 +156,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The width of the line marking the axis itself.
     *
@@ -186,7 +186,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the maximum value of the Y axis.
     */
-  var maxColor: js.UndefOr[ColorString] = js.undefined
+  var maxColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Padding of the max value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -194,6 +194,10 @@ trait NavigatorYAxisOptions extends js.Object {
     * the edge of the plot area. When the axis' `max` option is set or a max
     * extreme is set using `axis.setExtremes()`, the maxPadding will be
     * ignored.
+    *
+    * Also the `softThreshold` option takes precedence over `maxPadding`, so if
+    * the data is tangent to the threshold, `maxPadding` may not apply unless
+    * `softThreshold` is set to false.
     */
   var maxPadding: js.UndefOr[Double] = js.undefined
   /**
@@ -212,7 +216,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the minimum value of the Y axis.
     */
-  var minColor: js.UndefOr[ColorString] = js.undefined
+  var minColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Padding of the min value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -220,6 +224,10 @@ trait NavigatorYAxisOptions extends js.Object {
     * edge of the plot area. When the axis' `min` option is set or a max
     * extreme is set using `axis.setExtremes()`, the maxPadding will be
     * ignored.
+    *
+    * Also the `softThreshold` option takes precedence over `minPadding`, so if
+    * the data is tangent to the threshold, `minPadding` may not apply unless
+    * `softThreshold` is set to false.
     */
   var minPadding: js.UndefOr[Double] = js.undefined
   /**
@@ -235,7 +243,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorString] = js.undefined
+  var minorGridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The dash or dot style of the minor grid lines. For
     * possible values, see this demonstration.
@@ -251,7 +259,7 @@ trait NavigatorYAxisOptions extends js.Object {
   /**
     * (Highstock, Gantt) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString] = js.undefined
+  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) Specific tick interval in axis units for the minor
     * ticks. On a linear axis, if `"auto"`, the minor tick interval is
@@ -416,7 +424,7 @@ trait NavigatorYAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString] = js.undefined
+  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -527,6 +535,11 @@ trait NavigatorYAxisOptions extends js.Object {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highstock, Gantt) Whether to zoom axis. If `chart.zoomType` is set, the
+    * option allows to disable zooming on an individual axis.
+    */
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object NavigatorYAxisOptions {
@@ -535,7 +548,7 @@ object NavigatorYAxisOptions {
     accessibility: js.Object | NavigatorYAxisAccessibilityOptions = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    alternateGridColor: ColorString = null,
+    alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
     angle: Int | Double = null,
     breaks: js.Array[NavigatorYAxisBreaksOptions] = null,
     categories: js.Array[String] = null,
@@ -547,27 +560,27 @@ object NavigatorYAxisOptions {
     events: NavigatorYAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: NavigatorYAxisGridOptions = null,
-    gridLineColor: ColorString = null,
+    gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
     gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
     id: String = null,
     labels: NavigatorYAxisLabelsOptions = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     margin: Int | Double = null,
     max: Int | Double = null,
-    maxColor: ColorString = null,
+    maxColor: ColorString | GradientColorObject | PatternObject = null,
     maxPadding: Int | Double = null,
     min: Int | Double = null,
-    minColor: ColorString = null,
+    minColor: ColorString | GradientColorObject | PatternObject = null,
     minPadding: Int | Double = null,
     minTickInterval: Int | Double = null,
-    minorGridLineColor: ColorString = null,
+    minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
     minorGridLineDashStyle: DashStyleValue = null,
     minorGridLineWidth: Int | Double = null,
-    minorTickColor: ColorString = null,
+    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
     minorTickInterval: Double | String = null,
     minorTickLength: Int | Double = null,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -590,7 +603,7 @@ object NavigatorYAxisOptions {
     staticScale: Int | Double = null,
     stops: js.Array[js.Tuple2[Double, ColorString]] = null,
     tickAmount: Int | Double = null,
-    tickColor: ColorString = null,
+    tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,
     tickLength: Int | Double = null,
     tickPixelInterval: Int | Double = null,
@@ -603,13 +616,14 @@ object NavigatorYAxisOptions {
     tooltipValueFormat: String = null,
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): NavigatorYAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks)
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
-    if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor)
+    if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (breaks != null) __obj.updateDynamic("breaks")(breaks)
     if (categories != null) __obj.updateDynamic("categories")(categories)
@@ -621,27 +635,27 @@ object NavigatorYAxisOptions {
     if (events != null) __obj.updateDynamic("events")(events)
     if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle)
     if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation)
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor)
+    if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor.asInstanceOf[js.Any])
     if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minColor != null) __obj.updateDynamic("minColor")(minColor)
+    if (minColor != null) __obj.updateDynamic("minColor")(minColor.asInstanceOf[js.Any])
     if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
     if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
-    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor)
+    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor.asInstanceOf[js.Any])
     if (minorGridLineDashStyle != null) __obj.updateDynamic("minorGridLineDashStyle")(minorGridLineDashStyle)
     if (minorGridLineWidth != null) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.asInstanceOf[js.Any])
-    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor)
+    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
     if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
     if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
     if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition)
@@ -664,7 +678,7 @@ object NavigatorYAxisOptions {
     if (staticScale != null) __obj.updateDynamic("staticScale")(staticScale.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops)
     if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
     if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
@@ -678,6 +692,7 @@ object NavigatorYAxisOptions {
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
     __obj.asInstanceOf[NavigatorYAxisOptions]
   }
 }

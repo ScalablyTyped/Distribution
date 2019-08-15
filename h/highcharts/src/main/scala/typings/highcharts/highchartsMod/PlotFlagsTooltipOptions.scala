@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait PlotFlagsTooltipOptions extends js.Object {
   /**
+    * (Highstock) A CSS class name to apply to the tooltip's container div,
+    * allowing unique CSS styling for each chart.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
@@ -126,6 +131,7 @@ trait PlotFlagsTooltipOptions extends js.Object {
 object PlotFlagsTooltipOptions {
   @scala.inline
   def apply(
+    className: String = null,
     dateTimeLabelFormats: PlotFlagsTooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
     distance: Int | Double = null,
     followPointer: js.UndefOr[Boolean] = js.undefined,
@@ -144,6 +150,7 @@ object PlotFlagsTooltipOptions {
     xDateFormat: String = null
   ): PlotFlagsTooltipOptions = {
     val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)

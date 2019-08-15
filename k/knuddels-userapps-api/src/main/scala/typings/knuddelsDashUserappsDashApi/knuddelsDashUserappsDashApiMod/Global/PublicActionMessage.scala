@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("PublicActionMessage")
 @js.native
-class PublicActionMessage () extends Message
+class PublicActionMessage () extends Message {
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/PublicActionMessage.html#method_getFunctionName
+  		 */
+  def getFunctionName(): java.lang.String = js.native
+}
 

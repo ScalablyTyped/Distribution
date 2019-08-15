@@ -50,7 +50,7 @@ trait ClientVpnEndpoint extends js.Object {
     */
   var ServerCertificateArn: js.UndefOr[String] = js.undefined
   /**
-    * Indicates whether split-tunnel is enabled in the AWS Client VPN endpoint endpoint. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    * Indicates whether split-tunnel is enabled in the AWS Client VPN endpoint. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
     */
   var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   /**

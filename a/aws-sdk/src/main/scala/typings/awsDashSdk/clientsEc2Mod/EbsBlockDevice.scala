@@ -30,7 +30,7 @@ trait EbsBlockDevice extends js.Object {
     */
   var VolumeSize: js.UndefOr[Integer] = js.undefined
   /**
-    * The volume type. If you set the type to io1, you must also set the Iops property. Default: standard 
+    * The volume type. If you set the type to io1, you must also specify the IOPS that the volume supports. Default: gp2 
     */
   var VolumeType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.VolumeType] = js.undefined
 }

@@ -24,7 +24,7 @@ trait PlotGaugeDialOptions extends js.Object {
     * the borderWidth is 0, so this must be set in addition to a custom border
     * color.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The width of the gauge dial border in pixels.
     */
@@ -52,7 +52,7 @@ object PlotGaugeDialOptions {
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     baseLength: String = null,
     baseWidth: Int | Double = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     radius: String = null,
     rearLength: String = null,
@@ -62,7 +62,7 @@ object PlotGaugeDialOptions {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (baseLength != null) __obj.updateDynamic("baseLength")(baseLength)
     if (baseWidth != null) __obj.updateDynamic("baseWidth")(baseWidth.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius)
     if (rearLength != null) __obj.updateDynamic("rearLength")(rearLength)

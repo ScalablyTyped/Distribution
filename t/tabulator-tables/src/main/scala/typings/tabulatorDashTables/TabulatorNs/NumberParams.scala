@@ -4,7 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NumberParams extends _EditorParams {
+trait NumberParams
+  extends SharedEditorParams
+     with _EditorParams {
   var max: js.UndefOr[Double] = js.undefined
   // range,number
   var min: js.UndefOr[Double] = js.undefined
@@ -13,8 +15,14 @@ trait NumberParams extends _EditorParams {
 
 object NumberParams {
   @scala.inline
-  def apply(max: Int | Double = null, min: Int | Double = null, step: Int | Double = null): NumberParams = {
+  def apply(
+    elementAttributes: JSONRecord = null,
+    max: Int | Double = null,
+    min: Int | Double = null,
+    step: Int | Double = null
+  ): NumberParams = {
     val __obj = js.Dynamic.literal()
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

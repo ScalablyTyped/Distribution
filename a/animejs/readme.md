@@ -1,7 +1,7 @@
 
 # Scala.js typings for animejs
 
-Typings are for version 2.0
+Typings are for version 3.1
 
 ## Library description:
 JavaScript animation engine

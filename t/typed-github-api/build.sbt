@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-134458"
+version := "1.2.6-b11285"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e8e964",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-4a549d",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-057966",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-b72682",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2ae511",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-05f2a9",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cbb478",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-5afe6e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
   "org.scalablytyped" %%% "moment" % "2.24.0-a2bd8f",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c244ba",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-010b16",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "typescript-event-handler" % "1.0.0-9cc160")
 publishArtifact in packageDoc := false

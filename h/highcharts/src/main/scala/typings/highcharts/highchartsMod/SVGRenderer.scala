@@ -170,7 +170,7 @@ class SVGRenderer protected () extends js.Object {
     text: String,
     x: Double,
     y: Double,
-    callback: js.Function,
+    callback: EventCallbackFunction[SVGElement],
     normalState: js.UndefOr[SVGAttributes],
     hoverState: js.UndefOr[SVGAttributes],
     pressedState: js.UndefOr[SVGAttributes],
@@ -417,7 +417,7 @@ class SVGRenderer protected () extends js.Object {
   def label(
     str: String,
     x: Double,
-    y: Double,
+    y: js.UndefOr[Double],
     shape: js.UndefOr[String],
     anchorX: js.UndefOr[Double],
     anchorY: js.UndefOr[Double],

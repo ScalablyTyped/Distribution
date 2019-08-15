@@ -29,6 +29,7 @@ object atIonicUtilsDashArrayMod extends js.Object {
       js.Promise[U]
     ]
   ): js.Promise[js.Array[U]] = js.native
+  def move[T](array: js.Array[T], fromIndex: Double, toIndex: Double): js.Array[T] = js.native
   def reduce[T](
     array: js.Array[T],
     callback: js.Function4[

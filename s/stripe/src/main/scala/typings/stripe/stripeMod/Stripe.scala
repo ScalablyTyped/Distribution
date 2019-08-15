@@ -29,6 +29,7 @@ import typings.stripe.stripeMod.resourcesNs.RecipientCards
 import typings.stripe.stripeMod.resourcesNs.Recipients
 import typings.stripe.stripeMod.resourcesNs.Refunds
 import typings.stripe.stripeMod.resourcesNs.SKUs
+import typings.stripe.stripeMod.resourcesNs.SetupIntents
 import typings.stripe.stripeMod.resourcesNs.Sources
 import typings.stripe.stripeMod.resourcesNs.SubscriptionItems
 import typings.stripe.stripeMod.resourcesNs.Subscriptions
@@ -85,6 +86,7 @@ trait Stripe extends js.Object {
   var recipients: Recipients = js.native
   var refunds: Refunds = js.native
   var resources: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stripe.resources */ js.Any = js.native
+  var setupIntents: SetupIntents = js.native
   var skus: SKUs = js.native
   var sources: Sources = js.native
   var subscriptionItems: SubscriptionItems = js.native

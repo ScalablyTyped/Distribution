@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@reach/alert", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Alert: FC[AlertProps] = js.native
+  val default: FC[AlertProps] = js.native
 }
 

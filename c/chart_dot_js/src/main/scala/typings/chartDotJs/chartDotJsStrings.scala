@@ -6,6 +6,7 @@ import typings.chartDotJs.chartDotJsMod.InteractionMode
 import typings.chartDotJs.chartDotJsMod.PointStyle
 import typings.chartDotJs.chartDotJsMod.PositionType
 import typings.chartDotJs.chartDotJsMod.ScaleType
+import typings.chartDotJs.chartDotJsMod.TextAlignment
 import typings.chartDotJs.chartDotJsMod.TimeUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,6 +39,9 @@ object chartDotJsStrings {
   
   @js.native
   sealed trait category extends ScaleType
+  
+  @js.native
+  sealed trait center extends TextAlignment
   
   @js.native
   sealed trait circle extends PointStyle
@@ -175,7 +179,9 @@ object chartDotJsStrings {
   sealed trait labels extends js.Object
   
   @js.native
-  sealed trait left extends PositionType
+  sealed trait left
+    extends PositionType
+       with TextAlignment
   
   @js.native
   sealed trait line
@@ -239,7 +245,9 @@ object chartDotJsStrings {
   sealed trait rectRounded extends PointStyle
   
   @js.native
-  sealed trait right extends PositionType
+  sealed trait right
+    extends PositionType
+       with TextAlignment
   
   @js.native
   sealed trait round extends js.Object
@@ -307,6 +315,8 @@ object chartDotJsStrings {
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def category: category = "category".asInstanceOf[category]
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline

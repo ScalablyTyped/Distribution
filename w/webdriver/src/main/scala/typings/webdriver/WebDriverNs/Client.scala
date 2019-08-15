@@ -44,6 +44,9 @@ trait Client extends js.Object {
   def deleteSession(): Unit = js.native
   def deleteSessionStorageItem(key: String): Unit = js.native
   def dismissAlert(): Unit = js.native
+  def driverScript(script: String): ProtocolCommandResponse = js.native
+  def driverScript(script: String, `type`: String): ProtocolCommandResponse = js.native
+  def driverScript(script: String, `type`: String, timeout: Double): ProtocolCommandResponse = js.native
   def elementClear(elementId: String): Unit = js.native
   def elementClick(elementId: String): Unit = js.native
   def elementEquals(elementId: String, otherElementId: String): Boolean = js.native

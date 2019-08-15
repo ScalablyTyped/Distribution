@@ -32,7 +32,7 @@ trait ChartOptions extends js.Object {
     * ms. If used as a configuration object, the following properties are
     * supported:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
@@ -44,7 +44,7 @@ trait ChartOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the outer chart
     * border.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The corner radius of the outer
     * chart border.
@@ -68,10 +68,6 @@ trait ChartOptions extends js.Object {
     * non-styled mode is to set colors using the colors setting.
     */
   var colorCount: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) Alias of `type`.
-    */
-  var defaultSeriesType: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to display errors on the
     * chart. When `false`, the errors will be shown only in the console.
@@ -225,7 +221,7 @@ trait ChartOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the inner chart or
     * plot area border.
     */
-  var plotBorderColor: js.UndefOr[ColorString] = js.undefined
+  var plotBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the plot area
     * border.
@@ -280,7 +276,7 @@ trait ChartOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The background color of the
     * marker square when selecting (zooming in on) an area of the chart.
     */
-  var selectionMarkerFill: js.UndefOr[ColorString] = js.undefined
+  var selectionMarkerFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the outer chart area. Requires that backgroundColor be set. The shadow
@@ -377,12 +373,11 @@ object ChartOptions {
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | AnimationOptionsObject = null,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
     colorCount: Int | Double = null,
-    defaultSeriesType: String = null,
     displayErrors: js.UndefOr[Boolean] = js.undefined,
     events: ChartEventsOptions = null,
     height: Double | String = null,
@@ -403,7 +398,7 @@ object ChartOptions {
     pinchType: OptionsPinchTypeValue = null,
     plotBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
     plotBackgroundImage: String = null,
-    plotBorderColor: ColorString = null,
+    plotBorderColor: ColorString | GradientColorObject | PatternObject = null,
     plotBorderWidth: Int | Double = null,
     plotShadow: Boolean | CSSObject = null,
     polar: js.UndefOr[Boolean] = js.undefined,
@@ -411,7 +406,7 @@ object ChartOptions {
     renderTo: String | HTMLDOMElement = null,
     resetZoomButton: ChartResetZoomButtonOptions = null,
     scrollablePlotArea: ChartScrollablePlotAreaOptions = null,
-    selectionMarkerFill: ColorString = null,
+    selectionMarkerFill: ColorString | GradientColorObject | PatternObject = null,
     shadow: Boolean | CSSObject = null,
     showAxes: js.UndefOr[Boolean] = js.undefined,
     spacing: js.Array[Double] = null,
@@ -430,12 +425,11 @@ object ChartOptions {
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (colorCount != null) __obj.updateDynamic("colorCount")(colorCount.asInstanceOf[js.Any])
-    if (defaultSeriesType != null) __obj.updateDynamic("defaultSeriesType")(defaultSeriesType)
     if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors)
     if (events != null) __obj.updateDynamic("events")(events)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -456,7 +450,7 @@ object ChartOptions {
     if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType)
     if (plotBackgroundColor != null) __obj.updateDynamic("plotBackgroundColor")(plotBackgroundColor.asInstanceOf[js.Any])
     if (plotBackgroundImage != null) __obj.updateDynamic("plotBackgroundImage")(plotBackgroundImage)
-    if (plotBorderColor != null) __obj.updateDynamic("plotBorderColor")(plotBorderColor)
+    if (plotBorderColor != null) __obj.updateDynamic("plotBorderColor")(plotBorderColor.asInstanceOf[js.Any])
     if (plotBorderWidth != null) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.asInstanceOf[js.Any])
     if (plotShadow != null) __obj.updateDynamic("plotShadow")(plotShadow.asInstanceOf[js.Any])
     if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar)
@@ -464,7 +458,7 @@ object ChartOptions {
     if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
     if (resetZoomButton != null) __obj.updateDynamic("resetZoomButton")(resetZoomButton)
     if (scrollablePlotArea != null) __obj.updateDynamic("scrollablePlotArea")(scrollablePlotArea)
-    if (selectionMarkerFill != null) __obj.updateDynamic("selectionMarkerFill")(selectionMarkerFill)
+    if (selectionMarkerFill != null) __obj.updateDynamic("selectionMarkerFill")(selectionMarkerFill.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (!js.isUndefined(showAxes)) __obj.updateDynamic("showAxes")(showAxes)
     if (spacing != null) __obj.updateDynamic("spacing")(spacing)

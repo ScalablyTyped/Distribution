@@ -12,6 +12,9 @@ import typings.stripe.stripeMod.payoutsNs.PayoutMethods
 import typings.stripe.stripeMod.payoutsNs.PayoutTypes
 import typings.stripe.stripeMod.plansNs.IntervalUnit
 import typings.stripe.stripeMod.productsNs.ProductType
+import typings.stripe.stripeMod.setupIntentsNs.SetupIntentCancelationReason
+import typings.stripe.stripeMod.setupIntentsNs.SetupIntentPaymentMethodType
+import typings.stripe.stripeMod.setupIntentsNs.SetupIntentUsageType
 import typings.stripe.stripeMod.subscriptionsNs.SubscriptionBilling
 import typings.stripe.stripeMod.subscriptionsNs.SubscriptionStatus
 import typings.stripe.stripeMod.transfersNs.SourceTypes
@@ -69,6 +72,9 @@ object stripeStrings {
   
   @js.native
   sealed trait Visa extends js.Object
+  
+  @js.native
+  sealed trait abandoned extends SetupIntentCancelationReason
   
   @js.native
   sealed trait accepted extends js.Object
@@ -175,13 +181,16 @@ object stripeStrings {
   sealed trait card
     extends PaymentIntentPaymentMethodType
        with PayoutTypes
+       with SetupIntentPaymentMethodType
        with SourceTypes
   
   @js.native
   sealed trait card_error extends RawType
   
   @js.native
-  sealed trait card_present extends PaymentIntentPaymentMethodType
+  sealed trait card_present
+    extends PaymentIntentPaymentMethodType
+       with SetupIntentPaymentMethodType
   
   @js.native
   sealed trait challenge_only extends js.Object
@@ -283,6 +292,7 @@ object stripeStrings {
   sealed trait duplicate
     extends CreditNoteReason
        with PaymentIntentCancellationReason
+       with SetupIntentCancelationReason
   
   @js.native
   sealed trait email extends js.Object
@@ -536,13 +546,17 @@ object stripeStrings {
   sealed trait now extends js.Object
   
   @js.native
-  sealed trait off_session extends PaymentIntentFutureUsageType
+  sealed trait off_session
+    extends PaymentIntentFutureUsageType
+       with SetupIntentUsageType
   
   @js.native
   sealed trait offline extends js.Object
   
   @js.native
-  sealed trait on_session extends PaymentIntentFutureUsageType
+  sealed trait on_session
+    extends PaymentIntentFutureUsageType
+       with SetupIntentUsageType
   
   @js.native
   sealed trait once extends js.Object
@@ -682,7 +696,9 @@ object stripeStrings {
   sealed trait requested extends js.Object
   
   @js.native
-  sealed trait requested_by_customer extends PaymentIntentCancellationReason
+  sealed trait requested_by_customer
+    extends PaymentIntentCancellationReason
+       with SetupIntentCancelationReason
   
   @js.native
   sealed trait required extends js.Object
@@ -743,6 +759,9 @@ object stripeStrings {
   
   @js.native
   sealed trait set extends IUsageRecordAction
+  
+  @js.native
+  sealed trait setup_intent extends js.Object
   
   @js.native
   sealed trait shipping extends js.Object
@@ -959,6 +978,8 @@ object stripeStrings {
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
   def Visa: Visa = "Visa".asInstanceOf[Visa]
+  @scala.inline
+  def abandoned: abandoned = "abandoned".asInstanceOf[abandoned]
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
@@ -1399,6 +1420,8 @@ object stripeStrings {
   def service: service = "service".asInstanceOf[service]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
+  @scala.inline
+  def setup_intent: setup_intent = "setup_intent".asInstanceOf[setup_intent]
   @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
   @scala.inline

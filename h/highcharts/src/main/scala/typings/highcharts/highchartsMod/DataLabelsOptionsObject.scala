@@ -12,7 +12,7 @@ trait DataLabelsOptionsObject extends js.Object {
     * the box, as given with the inside option. Can be one of `left`, `center`
     * or `right`.
     */
-  var align: js.UndefOr[AlignValue] = js.undefined
+  var align: js.UndefOr[AlignValue | Null] = js.undefined
   /**
     * Whether to allow data labels to overlap. To make the labels less
     * sensitive for overlapping, the dataLabels.padding can be set to 0.
@@ -25,7 +25,7 @@ trait DataLabelsOptionsObject extends js.Object {
   /**
     * The border color for the data label. Defaults to `undefined`.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * The border radius in pixels for the data label.
     */
@@ -50,7 +50,7 @@ trait DataLabelsOptionsObject extends js.Object {
     * overridden by setting the `text-outline` style to `none` in the
     * `dataLabels.style` option.
     */
-  var color: js.UndefOr[ColorString] = js.undefined
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * Whether to hide data labels that are outside the plot area. By default,
     * the data label is moved inside the plot area according to the overflow
@@ -161,7 +161,7 @@ trait DataLabelsOptionsObject extends js.Object {
     * SVG-based renderer supports this option. Setting `useHTML` to true will
     * disable this option.
     */
-  var textPath: js.UndefOr[DataLabelsTextPath] = js.undefined
+  var textPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.undefined
   /**
     * Whether to use HTML to render the labels.
     */
@@ -171,7 +171,7 @@ trait DataLabelsOptionsObject extends js.Object {
     * `bottom`. The default value depends on the data, for instance in a column
     * chart, the label is above positive values and below negative values.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlignValue | Null] = js.undefined
   /**
     * The x position offset of the label relative to the point in pixels.
     */
@@ -193,11 +193,11 @@ object DataLabelsOptionsObject {
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
-    color: ColorString = null,
+    color: ColorString | GradientColorObject | PatternObject = null,
     crop: js.UndefOr[Boolean] = js.undefined,
     defer: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -213,7 +213,7 @@ object DataLabelsOptionsObject {
     shadow: Boolean | ShadowOptionsObject = null,
     shape: String = null,
     style: CSSObject = null,
-    textPath: DataLabelsTextPath = null,
+    textPath: DataLabelsTextPathOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: VerticalAlignValue = null,
     x: Int | Double = null,
@@ -224,11 +224,11 @@ object DataLabelsOptionsObject {
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop)
     if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

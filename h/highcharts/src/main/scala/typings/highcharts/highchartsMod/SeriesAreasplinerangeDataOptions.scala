@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesAreasplinerangeDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesAreasplinerangeDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesAreasplinerangeDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
@@ -97,7 +95,6 @@ trait SeriesAreasplinerangeDataOptions
 object SeriesAreasplinerangeDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesAreasplinerangeDataAccessibilityOptions = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -116,7 +113,6 @@ object SeriesAreasplinerangeDataOptions {
     x: Int | Double = null
   ): SeriesAreasplinerangeDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

@@ -9,11 +9,6 @@ import scala.scalajs.js.annotation._
 
 trait ExportingButtonsContextButtonOptions extends js.Object {
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) This option is deprecated, use
-    * titleKey instead.
-    */
-  var _titleKey: js.UndefOr[String] = js.undefined
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The class name of the context
     * button.
     */
@@ -98,7 +93,6 @@ trait ExportingButtonsContextButtonOptions extends js.Object {
 object ExportingButtonsContextButtonOptions {
   @scala.inline
   def apply(
-    _titleKey: String = null,
     className: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     menuClassName: String = null,
@@ -115,7 +109,6 @@ object ExportingButtonsContextButtonOptions {
     y: Int | Double = null
   ): ExportingButtonsContextButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (_titleKey != null) __obj.updateDynamic("_titleKey")(_titleKey)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (menuClassName != null) __obj.updateDynamic("menuClassName")(menuClassName)

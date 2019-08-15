@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesFunnel3dDataOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesFunnel3dDataOptions extends js.Object {
   var accessibility: js.UndefOr[SeriesFunnel3dDataAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The color of the border surrounding the column or
@@ -15,7 +13,7 @@ trait SeriesFunnel3dDataOptions
     * In styled mode, the border stroke can be set with the `.highcharts-point`
     * rule.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) The width of the border surrounding the column or
     * bar.
@@ -45,6 +43,14 @@ trait SeriesFunnel3dDataOptions
     * name won't have a visual effect by default.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts) A name for the dash style to use for the column or bar.
+    * Overrides dashStyle on the series.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under data.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Individual data label for each point. The
     * options are the same as the ones for plotOptions.series.dataLabels.
@@ -118,13 +124,13 @@ trait SeriesFunnel3dDataOptions
 object SeriesFunnel3dDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     accessibility: SeriesFunnel3dDataAccessibilityOptions = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
+    dashStyle: DashStyleValue = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
     dragDrop: SeriesFunnel3dDataDragDropOptions = null,
@@ -140,13 +146,13 @@ object SeriesFunnel3dDataOptions {
     y: Int | Double = null
   ): SeriesFunnel3dDataOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)

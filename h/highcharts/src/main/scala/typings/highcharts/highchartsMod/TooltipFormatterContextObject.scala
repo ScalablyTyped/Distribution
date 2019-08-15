@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TooltipFormatterContextObject extends js.Object {
-  var color: ColorString
+  var color: ColorString | GradientColorObject | PatternObject
   var colorIndex: js.UndefOr[Double] = js.undefined
   var key: Double
   var percentage: js.UndefOr[Double] = js.undefined
@@ -20,7 +20,7 @@ trait TooltipFormatterContextObject extends js.Object {
 object TooltipFormatterContextObject {
   @scala.inline
   def apply(
-    color: ColorString,
+    color: ColorString | GradientColorObject | PatternObject,
     key: Double,
     point: Point,
     series: Series,
@@ -31,7 +31,7 @@ object TooltipFormatterContextObject {
     points: js.Array[TooltipFormatterContextObject] = null,
     total: Int | Double = null
   ): TooltipFormatterContextObject = {
-    val __obj = js.Dynamic.literal(color = color, key = key, point = point, series = series, x = x, y = y)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key, point = point, series = series, x = x, y = y)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points)

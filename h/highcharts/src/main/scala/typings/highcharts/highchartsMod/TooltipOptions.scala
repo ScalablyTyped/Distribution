@@ -23,7 +23,7 @@ trait TooltipOptions extends js.Object {
     * When `undefined`, the border takes the color of the corresponding series
     * or point.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the rounded border
     * corners.
@@ -44,12 +44,10 @@ trait TooltipOptions extends js.Object {
     */
   var changeDecimals: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Since 4.1, the crosshair
-    * definitions are moved to the Axis object in order for a better separation
-    * from the tooltip. See xAxis.crosshair(see online documentation for
-    * example)
+    * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
+    * tooltip's container div, allowing unique CSS styling for each chart.
     */
-  var crosshairs: js.UndefOr[js.Any] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
@@ -112,7 +110,7 @@ trait TooltipOptions extends js.Object {
     *
     * Available data are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
   /**
@@ -209,7 +207,7 @@ trait TooltipOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the tooltip.
     */
-  var shadow: js.UndefOr[Boolean] = js.undefined
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the tooltip. Can be one of: `"callout"`, `"circle"`, or
@@ -295,11 +293,11 @@ object TooltipOptions {
   def apply(
     animation: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     changeDecimals: Int | Double = null,
-    crosshairs: js.Any = null,
+    className: String = null,
     dateTimeLabelFormats: TooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     followPointer: js.UndefOr[Boolean] = js.undefined,
@@ -316,7 +314,7 @@ object TooltipOptions {
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
     positioner: TooltipPositionerCallbackFunction = null,
-    shadow: js.UndefOr[Boolean] = js.undefined,
+    shadow: Boolean | ShadowOptionsObject = null,
     shape: TooltipShapeValue = null,
     shared: js.UndefOr[Boolean] = js.undefined,
     snap: Int | Double = null,
@@ -331,11 +329,11 @@ object TooltipOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (changeDecimals != null) __obj.updateDynamic("changeDecimals")(changeDecimals.asInstanceOf[js.Any])
-    if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs)
+    if (className != null) __obj.updateDynamic("className")(className)
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
@@ -352,7 +350,7 @@ object TooltipOptions {
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
     if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
     if (positioner != null) __obj.updateDynamic("positioner")(positioner)
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape)
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])

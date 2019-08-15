@@ -79,7 +79,7 @@ trait PlotMapbubbleOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of each map area.
     *
@@ -245,16 +245,6 @@ trait PlotMapbubbleOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotMapbubbleEventsOptions] = js.undefined
-  /**
-    * (Highmaps) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highmaps) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -630,7 +620,7 @@ object PlotMapbubbleOptions {
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -653,7 +643,6 @@ object PlotMapbubbleOptions {
     dragDrop: PlotMapbubbleDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotMapbubbleEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -711,7 +700,7 @@ object PlotMapbubbleOptions {
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -734,7 +723,6 @@ object PlotMapbubbleOptions {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)

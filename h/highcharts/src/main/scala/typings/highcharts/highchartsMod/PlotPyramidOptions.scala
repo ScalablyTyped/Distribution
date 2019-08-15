@@ -46,7 +46,7 @@ trait PlotPyramidOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The width of the border surrounding each slice.
     *
@@ -208,16 +208,6 @@ trait PlotPyramidOptions extends js.Object {
     */
   var events: js.UndefOr[PlotPyramidEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
     *
@@ -268,16 +258,6 @@ trait PlotPyramidOptions extends js.Object {
     */
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) The size of the inner diameter for the pie. A size greater
-    * than 0 renders a donut chart. Can be a percentage or pixel value.
-    * Percentages are relative to the pie size. Pixel values are given as
-    * integers.
-    *
-    * Note: in Highcharts < 4.1.2, the percentage was relative to the plot
-    * area, not the pie size.
-    */
-  var innerSize: js.UndefOr[Double | String] = js.undefined
-  /**
     * (Highmaps) What property to join the `mapData` to the value data. For
     * example, if joinBy is "code", the mapData items with a specific code is
     * merged into the data with the same code. For maps loaded from GeoJSON,
@@ -326,7 +306,7 @@ trait PlotPyramidOptions extends js.Object {
     * pie will try to shrink to make room for data labels in side the plot
     * area, but only to this size.
     */
-  var minSize: js.UndefOr[Double] = js.undefined
+  var minSize: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -465,7 +445,7 @@ object PlotPyramidOptions {
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | PlotPyramidAnimationOptions = null,
     boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     center: js.Array[Double | String] = null,
     className: String = null,
@@ -487,20 +467,18 @@ object PlotPyramidOptions {
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
     events: PlotPyramidEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     height: Double | String = null,
     ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    innerSize: Double | String = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
     lastPrice: PlotPyramidLastPriceOptions = null,
     lastVisiblePrice: PlotPyramidLastVisiblePriceOptions = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    minSize: Int | Double = null,
+    minSize: Double | String = null,
     navigatorOptions: PlotSeriesOptions = null,
     neckHeight: String = null,
     neckWidth: String = null,
@@ -531,7 +509,7 @@ object PlotPyramidOptions {
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center)
     if (className != null) __obj.updateDynamic("className")(className)
@@ -553,13 +531,11 @@ object PlotPyramidOptions {
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreHiddenPoint)) __obj.updateDynamic("ignoreHiddenPoint")(ignoreHiddenPoint)
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)
-    if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
     if (joinBy != null) __obj.updateDynamic("joinBy")(joinBy.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys)
     if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice)

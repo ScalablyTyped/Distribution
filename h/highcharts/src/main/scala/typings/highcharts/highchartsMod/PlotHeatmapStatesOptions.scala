@@ -22,8 +22,8 @@ trait PlotHeatmapStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotHeatmapStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Specific options for point in selected states, after being
-    * selected by allowPointSelect or programmatically.
+    * (Highcharts, Highmaps) Specific options for point in selected states,
+    * after being selected by allowPointSelect or programmatically.
     */
   var select: js.UndefOr[PlotHeatmapStatesSelectOptions] = js.undefined
 }

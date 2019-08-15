@@ -19,12 +19,6 @@ trait PlotTreemapOptions extends js.Object {
     */
   var allAreas: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) When enabled the user can click on a point which is a parent
-    * and zoom in on its children. Deprecated and replaced by
-    * allowTraversingTree.
-    */
-  var allowDrillToNode: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
     *
@@ -260,11 +254,6 @@ trait PlotTreemapOptions extends js.Object {
     */
   var dragDrop: js.UndefOr[PlotTreemapDragDropOptions] = js.undefined
   /**
-    * (Highcharts) Options for the button appearing when drilling down in a
-    * treemap. Deprecated and replaced by traverseUpButton.
-    */
-  var drillUpButton: js.UndefOr[PlotTreemapDrillUpButtonOptions] = js.undefined
-  /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
@@ -276,16 +265,6 @@ trait PlotTreemapOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotTreemapEventsOptions] = js.undefined
-  /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -634,7 +613,6 @@ object PlotTreemapOptions {
   def apply(
     accessibility: js.Object | PlotTreemapAccessibilityOptions = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
-    allowDrillToNode: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     allowTraversingTree: js.UndefOr[Boolean] = js.undefined,
     alternateStartingDirection: js.UndefOr[Boolean] = js.undefined,
@@ -664,10 +642,8 @@ object PlotTreemapOptions {
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
     dragDrop: PlotTreemapDragDropOptions = null,
-    drillUpButton: PlotTreemapDrillUpButtonOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotTreemapEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -719,7 +695,6 @@ object PlotTreemapOptions {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(allAreas)) __obj.updateDynamic("allAreas")(allAreas)
-    if (!js.isUndefined(allowDrillToNode)) __obj.updateDynamic("allowDrillToNode")(allowDrillToNode)
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect)
     if (!js.isUndefined(allowTraversingTree)) __obj.updateDynamic("allowTraversingTree")(allowTraversingTree)
     if (!js.isUndefined(alternateStartingDirection)) __obj.updateDynamic("alternateStartingDirection")(alternateStartingDirection)
@@ -749,10 +724,8 @@ object PlotTreemapOptions {
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
-    if (drillUpButton != null) __obj.updateDynamic("drillUpButton")(drillUpButton)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)

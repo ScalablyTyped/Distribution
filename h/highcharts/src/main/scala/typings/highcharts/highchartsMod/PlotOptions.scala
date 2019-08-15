@@ -19,8 +19,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `abands` series are defined in plotOptions.abands.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var abands: js.UndefOr[PlotAbandsOptions] = js.undefined
   /**
@@ -36,8 +36,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ad` series are defined in plotOptions.ad.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ad: js.UndefOr[PlotAdOptions] = js.undefined
   /**
@@ -54,8 +54,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ao` series are defined in plotOptions.ao.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ao: js.UndefOr[PlotAoOptions] = js.undefined
   /**
@@ -72,8 +72,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `apo` series are defined in plotOptions.apo.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var apo: js.UndefOr[PlotApoOptions] = js.undefined
   /**
@@ -88,8 +88,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `area` series are defined in plotOptions.area.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var area: js.UndefOr[PlotAreaOptions] = js.undefined
   /**
@@ -107,8 +107,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `arearange` series are defined in
     * plotOptions.arearange.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var arearange: js.UndefOr[PlotArearangeOptions] = js.undefined
   /**
@@ -125,8 +125,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `areaspline` series are defined in
     * plotOptions.areaspline.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var areaspline: js.UndefOr[PlotAreasplineOptions] = js.undefined
   /**
@@ -145,8 +145,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `areasplinerange` series are defined in
     * plotOptions.areasplinerange.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var areasplinerange: js.UndefOr[PlotAreasplinerangeOptions] = js.undefined
   /**
@@ -162,8 +162,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `aroon` series are defined in plotOptions.aroon.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var aroon: js.UndefOr[PlotAroonOptions] = js.undefined
   /**
@@ -181,8 +181,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `aroonoscillator` series are defined in
     * plotOptions.aroonoscillator.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var aroonoscillator: js.UndefOr[PlotAroonoscillatorOptions] = js.undefined
   /**
@@ -198,8 +198,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `atr` series are defined in plotOptions.atr.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var atr: js.UndefOr[PlotAtrOptions] = js.undefined
   /**
@@ -215,8 +215,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `bar` series are defined in plotOptions.bar.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var bar: js.UndefOr[PlotBarOptions] = js.undefined
   /**
@@ -233,8 +233,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `bb` series are defined in plotOptions.bb.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var bb: js.UndefOr[PlotBbOptions] = js.undefined
   /**
@@ -253,8 +253,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `bellcurve` series are defined in
     * plotOptions.bellcurve.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var bellcurve: js.UndefOr[PlotBellcurveOptions] = js.undefined
   /**
@@ -272,8 +272,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `boxplot` series are defined in plotOptions.boxplot.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var boxplot: js.UndefOr[PlotBoxplotOptions] = js.undefined
   /**
@@ -292,8 +292,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `bubble` series are defined in plotOptions.bubble.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var bubble: js.UndefOr[PlotBubbleOptions] = js.undefined
   /**
@@ -311,8 +311,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `bullet` series are defined in plotOptions.bullet.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var bullet: js.UndefOr[PlotBulletOptions] = js.undefined
   /**
@@ -329,8 +329,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `candlestick` series are defined in
     * plotOptions.candlestick.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var candlestick: js.UndefOr[PlotCandlestickOptions] = js.undefined
   /**
@@ -346,8 +346,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `cci` series are defined in plotOptions.cci.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var cci: js.UndefOr[PlotCciOptions] = js.undefined
   /**
@@ -364,8 +364,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `chaikin` series are defined in plotOptions.chaikin.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var chaikin: js.UndefOr[PlotChaikinOptions] = js.undefined
   /**
@@ -380,8 +380,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `cmf` series are defined in plotOptions.cmf.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var cmf: js.UndefOr[PlotCmfOptions] = js.undefined
   /**
@@ -397,8 +397,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `column` series are defined in plotOptions.column.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var column: js.UndefOr[PlotColumnOptions] = js.undefined
   /**
@@ -416,8 +416,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `columnpyramid` series are defined in
     * plotOptions.columnpyramid.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var columnpyramid: js.UndefOr[PlotColumnpyramidOptions] = js.undefined
   /**
@@ -435,8 +435,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `columnrange` series are defined in
     * plotOptions.columnrange.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var columnrange: js.UndefOr[PlotColumnrangeOptions] = js.undefined
   /**
@@ -452,14 +452,14 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `cylinder` series are defined in plotOptions.cylinder.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var cylinder: js.UndefOr[PlotCylinderOptions] = js.undefined
   /**
-    * (Highstock) Normalized average true range indicator (NATR). This series
-    * requires `linkedTo` option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * (Highstock) Double exponential moving average (DEMA) indicator. This
+    * series requires `linkedTo` option to be set and should be loaded after
+    * the `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -470,8 +470,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `dema` series are defined in plotOptions.dema.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var dema: js.UndefOr[PlotDemaOptions] = js.undefined
   /**
@@ -489,8 +489,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `dependencywheel` series are defined in
     * plotOptions.dependencywheel.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var dependencywheel: js.UndefOr[PlotDependencywheelOptions] = js.undefined
   /**
@@ -507,8 +507,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `dpo` series are defined in plotOptions.dpo.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var dpo: js.UndefOr[PlotDpoOptions] = js.undefined
   /**
@@ -524,8 +524,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ema` series are defined in plotOptions.ema.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ema: js.UndefOr[PlotEmaOptions] = js.undefined
   /**
@@ -542,8 +542,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `errorbar` series are defined in plotOptions.errorbar.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var errorbar: js.UndefOr[PlotErrorbarOptions] = js.undefined
   /**
@@ -559,8 +559,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `flags` series are defined in plotOptions.flags.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var flags: js.UndefOr[PlotFlagsOptions] = js.undefined
   /**
@@ -577,8 +577,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `funnel` series are defined in plotOptions.funnel.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var funnel: js.UndefOr[PlotFunnelOptions] = js.undefined
   /**
@@ -598,8 +598,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `funnel3d` series are defined in plotOptions.funnel3d.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var funnel3d: js.UndefOr[PlotFunnel3dOptions] = js.undefined
   /**
@@ -615,8 +615,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `gantt` series are defined in plotOptions.gantt.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var gantt: js.UndefOr[PlotGanttOptions] = js.undefined
   /**
@@ -632,8 +632,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `gauge` series are defined in plotOptions.gauge.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var gauge: js.UndefOr[PlotGaugeOptions] = js.undefined
   /**
@@ -650,8 +650,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `heatmap` series are defined in plotOptions.heatmap.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var heatmap: js.UndefOr[PlotHeatmapOptions] = js.undefined
   /**
@@ -669,8 +669,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `histogram` series are defined in
     * plotOptions.histogram.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var histogram: js.UndefOr[PlotHistogramOptions] = js.undefined
   /**
@@ -686,8 +686,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ikh` series are defined in plotOptions.ikh.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ikh: js.UndefOr[PlotIkhOptions] = js.undefined
   /**
@@ -709,8 +709,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `item` series are defined in plotOptions.item.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var item: js.UndefOr[PlotItemOptions] = js.undefined
   /**
@@ -729,8 +729,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `keltnerchannels` series are defined in
     * plotOptions.keltnerchannels.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var keltnerchannels: js.UndefOr[PlotKeltnerchannelsOptions] = js.undefined
   /**
@@ -746,8 +746,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `line` series are defined in plotOptions.line.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var line: js.UndefOr[PlotLineOptions] = js.undefined
   /**
@@ -764,8 +764,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `linearregression` series are defined in
     * plotOptions.linearregression.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var linearregression: js.UndefOr[PlotLinearregressionOptions] = js.undefined
   /**
@@ -782,8 +782,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `linearregressionangle` series are defined in
     * plotOptions.linearregressionangle.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var linearregressionangle: js.UndefOr[PlotLinearregressionangleOptions] = js.undefined
   /**
@@ -800,8 +800,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `linearregressionintercept` series are defined in
     * plotOptions.linearregressionintercept.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var linearregressionintercept: js.UndefOr[PlotLinearregressioninterceptOptions] = js.undefined
   /**
@@ -818,8 +818,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `linearregressionslope` series are defined in
     * plotOptions.linearregressionslope.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var linearregressionslope: js.UndefOr[PlotLinearregressionslopeOptions] = js.undefined
   /**
@@ -836,8 +836,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `macd` series are defined in plotOptions.macd.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var macd: js.UndefOr[PlotMacdOptions] = js.undefined
   /**
@@ -853,8 +853,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `map` series are defined in plotOptions.map.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var map: js.UndefOr[PlotMapOptions] = js.undefined
   /**
@@ -871,8 +871,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `mapbubble` series are defined in
     * plotOptions.mapbubble.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var mapbubble: js.UndefOr[PlotMapbubbleOptions] = js.undefined
   /**
@@ -889,8 +889,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `mapline` series are defined in plotOptions.mapline.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var mapline: js.UndefOr[PlotMaplineOptions] = js.undefined
   /**
@@ -906,8 +906,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `mappoint` series are defined in plotOptions.mappoint.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var mappoint: js.UndefOr[PlotMappointOptions] = js.undefined
   /**
@@ -924,8 +924,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `mfi` series are defined in plotOptions.mfi.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var mfi: js.UndefOr[PlotMfiOptions] = js.undefined
   /**
@@ -940,8 +940,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `momentum` series are defined in plotOptions.momentum.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var momentum: js.UndefOr[PlotMomentumOptions] = js.undefined
   /**
@@ -958,8 +958,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `natr` series are defined in plotOptions.natr.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var natr: js.UndefOr[PlotNatrOptions] = js.undefined
   /**
@@ -977,8 +977,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `networkgraph` series are defined in
     * plotOptions.networkgraph.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var networkgraph: js.UndefOr[PlotNetworkgraphOptions] = js.undefined
   /**
@@ -995,8 +995,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ohlc` series are defined in plotOptions.ohlc.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ohlc: js.UndefOr[PlotOhlcOptions] = js.undefined
   /**
@@ -1014,8 +1014,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `organization` series are defined in
     * plotOptions.organization.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var organization: js.UndefOr[PlotOrganizationOptions] = js.undefined
   /**
@@ -1034,8 +1034,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `packedbubble` series are defined in
     * plotOptions.packedbubble.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var packedbubble: js.UndefOr[PlotPackedbubbleOptions] = js.undefined
   /**
@@ -1052,8 +1052,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `pareto` series are defined in plotOptions.pareto.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pareto: js.UndefOr[PlotParetoOptions] = js.undefined
   /**
@@ -1070,8 +1070,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `pc` series are defined in plotOptions.pc.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pc: js.UndefOr[PlotPcOptions] = js.undefined
   /**
@@ -1087,8 +1087,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `pie` series are defined in plotOptions.pie.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pie: js.UndefOr[PlotPieOptions] = js.undefined
   /**
@@ -1106,8 +1106,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `pivotpoints` series are defined in
     * plotOptions.pivotpoints.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pivotpoints: js.UndefOr[PlotPivotpointsOptions] = js.undefined
   /**
@@ -1125,8 +1125,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `polygon` series are defined in plotOptions.polygon.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var polygon: js.UndefOr[PlotPolygonOptions] = js.undefined
   /**
@@ -1143,8 +1143,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `ppo` series are defined in plotOptions.ppo.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var ppo: js.UndefOr[PlotPpoOptions] = js.undefined
   /**
@@ -1162,8 +1162,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `priceenvelopes` series are defined in
     * plotOptions.priceenvelopes.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var priceenvelopes: js.UndefOr[PlotPriceenvelopesOptions] = js.undefined
   /**
@@ -1179,8 +1179,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `psar` series are defined in plotOptions.psar.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var psar: js.UndefOr[PlotPsarOptions] = js.undefined
   /**
@@ -1196,8 +1196,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `pyramid` series are defined in plotOptions.pyramid.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pyramid: js.UndefOr[PlotPyramidOptions] = js.undefined
   /**
@@ -1218,8 +1218,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `pyramid3d` series are defined in
     * plotOptions.pyramid3d.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var pyramid3d: js.UndefOr[PlotPyramid3dOptions] = js.undefined
   /**
@@ -1243,8 +1243,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `roc` series are defined in plotOptions.roc.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var roc: js.UndefOr[PlotRocOptions] = js.undefined
   /**
@@ -1261,8 +1261,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `rsi` series are defined in plotOptions.rsi.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var rsi: js.UndefOr[PlotRsiOptions] = js.undefined
   /**
@@ -1279,8 +1279,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `sankey` series are defined in plotOptions.sankey.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var sankey: js.UndefOr[PlotSankeyOptions] = js.undefined
   /**
@@ -1296,8 +1296,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `scatter` series are defined in plotOptions.scatter.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var scatter: js.UndefOr[PlotScatterOptions] = js.undefined
   /**
@@ -1314,8 +1314,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `scatter3d` series are defined in
     * plotOptions.scatter3d.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var scatter3d: js.UndefOr[PlotScatter3dOptions] = js.undefined
   /**
@@ -1331,8 +1331,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `line` series are defined in plotOptions.line.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var series: js.UndefOr[PlotSeriesOptions] = js.undefined
   /**
@@ -1348,8 +1348,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `sma` series are defined in plotOptions.sma.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var sma: js.UndefOr[PlotSmaOptions] = js.undefined
   /**
@@ -1367,8 +1367,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `solidgauge` series are defined in
     * plotOptions.solidgauge.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var solidgauge: js.UndefOr[PlotSolidgaugeOptions] = js.undefined
   /**
@@ -1384,8 +1384,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `spline` series are defined in plotOptions.spline.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var spline: js.UndefOr[PlotSplineOptions] = js.undefined
   /**
@@ -1403,8 +1403,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `stochastic` series are defined in
     * plotOptions.stochastic.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var stochastic: js.UndefOr[PlotStochasticOptions] = js.undefined
   /**
@@ -1422,8 +1422,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `streamgraph` series are defined in
     * plotOptions.streamgraph.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var streamgraph: js.UndefOr[PlotStreamgraphOptions] = js.undefined
   /**
@@ -1441,8 +1441,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `sunburst` series are defined in plotOptions.sunburst.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var sunburst: js.UndefOr[PlotSunburstOptions] = js.undefined
   /**
@@ -1460,14 +1460,14 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `supertrend` series are defined in
     * plotOptions.supertrend.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var supertrend: js.UndefOr[PlotSupertrendOptions] = js.undefined
   /**
-    * (Highstock) Normalized average true range indicator (NATR). This series
-    * requires `linkedTo` option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * (Highstock) Triple exponential moving average (TEMA) indicator. This
+    * series requires `linkedTo` option to be set and should be loaded after
+    * the `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
     *
     * Requires `https://code.highcharts.com/stock/indicators/ema.js`.
     *
@@ -1480,8 +1480,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `tema` series are defined in plotOptions.tema.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var tema: js.UndefOr[PlotTemaOptions] = js.undefined
   /**
@@ -1497,8 +1497,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `tilemap` series are defined in plotOptions.tilemap.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var tilemap: js.UndefOr[PlotTilemapOptions] = js.undefined
   /**
@@ -1514,8 +1514,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `timeline` series are defined in plotOptions.timeline.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var timeline: js.UndefOr[PlotTimelineOptions] = js.undefined
   /**
@@ -1532,12 +1532,31 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `treemap` series are defined in plotOptions.treemap.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var treemap: js.UndefOr[PlotTreemapOptions] = js.undefined
   /**
-    * (Highstock) Normalized average true range indicator (NATR). This series
+    * (Highstock) Trendline (linear regression) fits a straight line to the
+    * selected data using a method called the Sum Of Least Squares. This series
+    * requires the `linkedTo` option to be set.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `trendline` series are defined in
+    * plotOptions.trendline.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var trendline: js.UndefOr[PlotTrendlineOptions] = js.undefined
+  /**
+    * (Highstock) Triple exponential average (TRIX) oscillator. This series
     * requires `linkedTo` option to be set.
     *
     * Requires https://code.highcharts.com/stock/indicators/ema.js and
@@ -1552,8 +1571,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `trix` series are defined in plotOptions.trix.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var trix: js.UndefOr[PlotTrixOptions] = js.undefined
   /**
@@ -1573,8 +1592,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `variablepie` series are defined in
     * plotOptions.variablepie.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var variablepie: js.UndefOr[PlotVariablepieOptions] = js.undefined
   /**
@@ -1590,8 +1609,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `variwide` series are defined in plotOptions.variwide.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var variwide: js.UndefOr[PlotVariwideOptions] = js.undefined
   /**
@@ -1608,8 +1627,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `vbp` series are defined in plotOptions.vbp.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var vbp: js.UndefOr[PlotVbpOptions] = js.undefined
   /**
@@ -1626,8 +1645,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `vector` series are defined in plotOptions.vector.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var vector: js.UndefOr[PlotVectorOptions] = js.undefined
   /**
@@ -1646,8 +1665,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `venn` series are defined in plotOptions.venn.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var venn: js.UndefOr[PlotVennOptions] = js.undefined
   /**
@@ -1664,8 +1683,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `vwap` series are defined in plotOptions.vwap.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var vwap: js.UndefOr[PlotVwapOptions] = js.undefined
   /**
@@ -1682,8 +1701,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `waterfall` series are defined in
     * plotOptions.waterfall.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var waterfall: js.UndefOr[PlotWaterfallOptions] = js.undefined
   /**
@@ -1700,8 +1719,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `williamsr` series are defined in
     * plotOptions.williamsr.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var williamsr: js.UndefOr[PlotWilliamsrOptions] = js.undefined
   /**
@@ -1718,8 +1737,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `windbarb` series are defined in plotOptions.windbarb.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var windbarb: js.UndefOr[PlotWindbarbOptions] = js.undefined
   /**
@@ -1735,8 +1754,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `wma` series are defined in plotOptions.wma.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var wma: js.UndefOr[PlotWmaOptions] = js.undefined
   /**
@@ -1753,8 +1772,8 @@ trait PlotOptions extends js.Object {
     * 2. Options for all `wordcloud` series are defined in
     * plotOptions.wordcloud.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var wordcloud: js.UndefOr[PlotWordcloudOptions] = js.undefined
   /**
@@ -1770,8 +1789,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `xrange` series are defined in plotOptions.xrange.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var xrange: js.UndefOr[PlotXrangeOptions] = js.undefined
   /**
@@ -1788,8 +1807,8 @@ trait PlotOptions extends js.Object {
     *
     * 2. Options for all `zigzag` series are defined in plotOptions.zigzag.
     *
-    * 3. Options for one single series are given in the series instance
-    * array.(see online documentation for example)
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
     */
   var zigzag: js.UndefOr[PlotZigzagOptions] = js.undefined
 }
@@ -1881,6 +1900,7 @@ object PlotOptions {
     tilemap: PlotTilemapOptions = null,
     timeline: PlotTimelineOptions = null,
     treemap: PlotTreemapOptions = null,
+    trendline: PlotTrendlineOptions = null,
     trix: PlotTrixOptions = null,
     variablepie: PlotVariablepieOptions = null,
     variwide: PlotVariwideOptions = null,
@@ -1981,6 +2001,7 @@ object PlotOptions {
     if (tilemap != null) __obj.updateDynamic("tilemap")(tilemap)
     if (timeline != null) __obj.updateDynamic("timeline")(timeline)
     if (treemap != null) __obj.updateDynamic("treemap")(treemap)
+    if (trendline != null) __obj.updateDynamic("trendline")(trendline)
     if (trix != null) __obj.updateDynamic("trix")(trix)
     if (variablepie != null) __obj.updateDynamic("variablepie")(variablepie)
     if (variwide != null) __obj.updateDynamic("variwide")(variwide)

@@ -127,44 +127,6 @@ class Series protected () extends js.Object {
     * Read only. The unique yAxis object associated with the series.
     */
   var yAxis: Axis = js.native
-  def addPoint(): Unit = js.native
-  def addPoint(options: js.Array[Double | String]): Unit = js.native
-  def addPoint(options: js.Array[Double | String], redraw: Boolean): Unit = js.native
-  def addPoint(options: js.Array[Double | String], redraw: Boolean, shift: Boolean): Unit = js.native
-  def addPoint(options: js.Array[Double | String], redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
-  def addPoint(
-    options: js.Array[Double | String],
-    redraw: Boolean,
-    shift: Boolean,
-    animation: Boolean,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: js.Array[Double | String],
-    redraw: Boolean,
-    shift: Boolean,
-    animation: AnimationOptionsObject
-  ): Unit = js.native
-  def addPoint(
-    options: js.Array[Double | String],
-    redraw: Boolean,
-    shift: Boolean,
-    animation: AnimationOptionsObject,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(options: js.Object): Unit = js.native
-  def addPoint(options: js.Object, redraw: Boolean): Unit = js.native
-  def addPoint(options: js.Object, redraw: Boolean, shift: Boolean): Unit = js.native
-  def addPoint(options: js.Object, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
-  def addPoint(options: js.Object, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
-  def addPoint(options: js.Object, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def addPoint(
-    options: js.Object,
-    redraw: Boolean,
-    shift: Boolean,
-    animation: AnimationOptionsObject,
-    withEvent: Boolean
-  ): Unit = js.native
   /**
     * Add a point to the series after render time. The point can be added at
     * the end, or by giving it an X value, to the start or in the middle of the
@@ -196,26 +158,14 @@ class Series protected () extends js.Object {
     *
     * @fires Highcharts.Series#addPoint
     */
-  def addPoint(options: Double): Unit = js.native
-  def addPoint(options: Double, redraw: Boolean): Unit = js.native
-  def addPoint(options: Double, redraw: Boolean, shift: Boolean): Unit = js.native
-  def addPoint(options: Double, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
-  def addPoint(options: Double, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
-  def addPoint(options: Double, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def addPoint(options: PointOptionsType): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
   def addPoint(
-    options: Double,
-    redraw: Boolean,
-    shift: Boolean,
-    animation: AnimationOptionsObject,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(options: Null, redraw: Boolean): Unit = js.native
-  def addPoint(options: Null, redraw: Boolean, shift: Boolean): Unit = js.native
-  def addPoint(options: Null, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
-  def addPoint(options: Null, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
-  def addPoint(options: Null, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def addPoint(
-    options: Null,
+    options: PointOptionsType,
     redraw: Boolean,
     shift: Boolean,
     animation: AnimationOptionsObject,
@@ -231,6 +181,7 @@ class Series protected () extends js.Object {
     * @param init
     *        Initialize the animation.
     */
+  def animate(): Unit = js.native
   def animate(init: Boolean): Unit = js.native
   /**
     * Draw the graph. Called internally when rendering line-like series types.
@@ -414,10 +365,17 @@ class Series protected () extends js.Object {
     *        the original array is not passed by reference. Set `false` to
     *        prevent.
     */
-  def setData(data: js.Array[_]): Unit = js.native
-  def setData(data: js.Array[_], redraw: Boolean): Unit = js.native
-  def setData(data: js.Array[_], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def setData(data: js.Array[_], redraw: Boolean, animation: AnimationOptionsObject, updatePoints: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType]): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean, updatePoints: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: Boolean,
+    animation: AnimationOptionsObject,
+    updatePoints: Boolean
+  ): Unit = js.native
   /**
     * Set the state of the series. Called internally on mouse interaction
     * operations, but it can also be called directly to visually highlight a

@@ -11,7 +11,8 @@ trait PlotWordcloudRotationOptions extends js.Object {
   var from: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts) The number of possible orientations for a word, within the
-    * range of `rotation.from` and `rotation.to`.
+    * range of `rotation.from` and `rotation.to`. Must be a number larger than
+    * 0.
     */
   var orientations: js.UndefOr[Double] = js.undefined
   /**

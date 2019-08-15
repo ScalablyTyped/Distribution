@@ -23,6 +23,13 @@ trait SeriesOrganizationNodesOptions extends js.Object {
     */
   var column: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) Individual data label for each node. The options are the
+    * same as the ones for series.organization.dataLabels.
+    */
+  var dataLabels: js.UndefOr[
+    SeriesOrganizationDataLabelsOptionsObject | js.Array[SeriesOrganizationDataLabelsOptionsObject]
+  ] = js.undefined
+  /**
     * (Highcharts) The job description for the node card, will be inserted by
     * the default `dataLabel.nodeFormatter`.
     */
@@ -79,6 +86,7 @@ object SeriesOrganizationNodesOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     column: Int | Double = null,
+    dataLabels: SeriesOrganizationDataLabelsOptionsObject | js.Array[SeriesOrganizationDataLabelsOptionsObject] = null,
     description: String = null,
     id: String = null,
     image: String = null,
@@ -92,6 +100,7 @@ object SeriesOrganizationNodesOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)
     if (image != null) __obj.updateDynamic("image")(image)

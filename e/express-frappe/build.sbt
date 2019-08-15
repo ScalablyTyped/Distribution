@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "express-frappe"
-version := "2.1.3-eaa7f9"
+version := "2.1.3-49d88d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e8e964",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-4a549d",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-98c3cf",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-057966",
-  "org.scalablytyped" %%% "express-routers" % "1.0.1-702f8d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-b72682",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2ae511",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-05f2a9",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-89518a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cbb478",
+  "org.scalablytyped" %%% "express-routers" % "1.0.1-2afafa",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190717Z-5afe6e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-85a68c",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-223eff",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c244ba",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-1c49e5",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-010b16",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-2d8cfb",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

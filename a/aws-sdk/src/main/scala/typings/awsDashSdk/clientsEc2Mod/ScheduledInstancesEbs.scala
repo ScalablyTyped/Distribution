@@ -26,7 +26,7 @@ trait ScheduledInstancesEbs extends js.Object {
     */
   var VolumeSize: js.UndefOr[Integer] = js.undefined
   /**
-    * The volume type. gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, Throughput Optimized HDD for st1, Cold HDD for sc1, or standard for Magnetic. Default: standard 
+    * The volume type. gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, Throughput Optimized HDD for st1, Cold HDD for sc1, or standard for Magnetic. Default: gp2 
     */
   var VolumeType: js.UndefOr[String] = js.undefined
 }

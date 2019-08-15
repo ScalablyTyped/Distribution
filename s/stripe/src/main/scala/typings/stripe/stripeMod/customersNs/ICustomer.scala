@@ -47,6 +47,10 @@ trait ICustomer extends IResourceObject {
     */
   var discount: js.UndefOr[IDiscount] = js.undefined
   var email: js.UndefOr[String] = js.undefined
+  /**
+    * Default invoice settings for this customer.
+    */
+  var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
   var livemode: Boolean
   var metadata: IMetadata
   /**
@@ -94,6 +98,7 @@ object ICustomer {
     description: String = null,
     discount: IDiscount = null,
     email: String = null,
+    invoice_settings: ICustomerInvoiceSettings = null,
     name: String = null,
     phone: String = null,
     shipping: IShippingInformation = null,
@@ -109,6 +114,7 @@ object ICustomer {
     if (description != null) __obj.updateDynamic("description")(description)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (email != null) __obj.updateDynamic("email")(email)
+    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings)
     if (name != null) __obj.updateDynamic("name")(name)
     if (phone != null) __obj.updateDynamic("phone")(phone)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)

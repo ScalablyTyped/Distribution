@@ -222,6 +222,8 @@ class Tabulator protected () extends js.Object {
   /** You can hide a visible column at any point using the hideColumn function.  */
   def hideColumn(): Unit = js.native
   def hideColumn(column: ColumnLookup): Unit = js.native
+  /**Programmatically move a column to a new position */
+  def moveColumn(fromColumn: ColumnLookup, toColumn: ColumnLookup, after: Boolean): Unit = js.native
   /** If you want to programmatically move a row to a new position you can use the moveRow function.
     The first argument should be the row you want to move, and can be any of the standard row component look up options.
     The second argument should be the target row that you want to move to, and can be any of the standard row component look up options.

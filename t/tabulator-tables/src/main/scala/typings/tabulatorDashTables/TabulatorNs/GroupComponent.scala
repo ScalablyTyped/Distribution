@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 trait GroupComponent extends js.Object {
   /** The getElement function returns the DOM node for the group header. */
   def getElement(): HTMLElement
+  /** Returns the string of the field that all rows in this group have been grouped by. (if a function is used to group the rows rather than a field, this function will return false) */
+  def getField(): String
   /** The getKey function returns the unique key that is shared between all rows in this group. */
   def getKey(): js.Any
   /** The getParentGroup function returns the GroupComponent for the parent group of this group. if no parent exists, this function will return false */
@@ -34,6 +36,7 @@ object GroupComponent {
   @scala.inline
   def apply(
     getElement: () => HTMLElement,
+    getField: () => String,
     getKey: () => js.Any,
     getParentGroup: () => GroupComponent | `false`,
     getRows: () => js.Array[RowComponent],
@@ -44,7 +47,7 @@ object GroupComponent {
     show: () => Unit,
     toggle: () => Unit
   ): GroupComponent = {
-    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[GroupComponent]
   }

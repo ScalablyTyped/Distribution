@@ -27,5 +27,9 @@ object KnuddelTransferDisplayType extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Public
   		 */
   val Public: KnuddelTransferDisplayType = js.native
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Silent
+  		 */
+  val Silent: KnuddelTransferDisplayType = js.native
 }
 

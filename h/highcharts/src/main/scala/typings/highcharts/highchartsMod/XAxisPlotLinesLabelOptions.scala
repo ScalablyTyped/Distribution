@@ -11,6 +11,12 @@ trait XAxisPlotLinesLabelOptions extends AxisPlotLinesLabelOptions {
     */
   var align: js.UndefOr[AlignValue] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) Callback JavaScript function to format the
+    * label. Useful properties like the value of plot line or the range of plot
+    * band (`from` & `to` properties) can be found in `this.options` object.
+    */
+  var formatter: js.UndefOr[FormatterCallbackFunction[PlotLineOrBand]] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) Rotation of the text label in degrees.
     * Defaults to 0 for horizontal plot lines and 90 for vertical lines.
     */
@@ -60,6 +66,7 @@ object XAxisPlotLinesLabelOptions {
   @scala.inline
   def apply(
     align: AlignValue = null,
+    formatter: FormatterCallbackFunction[PlotLineOrBand] = null,
     rotation: Int | Double = null,
     style: CSSObject = null,
     text: String = null,
@@ -71,6 +78,7 @@ object XAxisPlotLinesLabelOptions {
   ): XAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (text != null) __obj.updateDynamic("text")(text)

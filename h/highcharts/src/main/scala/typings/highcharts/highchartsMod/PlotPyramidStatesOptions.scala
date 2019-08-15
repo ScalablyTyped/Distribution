@@ -21,7 +21,7 @@ trait PlotPyramidStatesOptions extends js.Object {
     */
   var normal: js.UndefOr[PlotPyramidStatesNormalOptions] = js.undefined
   /**
-    * (Highmaps) Options for a selected funnel item.
+    * (Highcharts) Options for a selected funnel item.
     */
   var select: js.UndefOr[PlotPyramidStatesSelectOptions] = js.undefined
 }

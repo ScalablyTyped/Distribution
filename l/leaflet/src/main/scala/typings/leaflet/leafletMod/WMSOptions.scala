@@ -17,6 +17,7 @@ trait WMSOptions extends TileLayerOptions {
 object WMSOptions {
   @scala.inline
   def apply(
+    accessToken: String = null,
     attribution: String = null,
     bounds: LatLngBoundsExpression = null,
     className: String = null,
@@ -25,6 +26,7 @@ object WMSOptions {
     detectRetina: js.UndefOr[Boolean] = js.undefined,
     errorTileUrl: String = null,
     format: String = null,
+    id: String = null,
     keepBuffer: Int | Double = null,
     layers: String = null,
     maxNativeZoom: Int | Double = null,
@@ -49,6 +51,7 @@ object WMSOptions {
     zoomReverse: js.UndefOr[Boolean] = js.undefined
   ): WMSOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -57,6 +60,7 @@ object WMSOptions {
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorTileUrl != null) __obj.updateDynamic("errorTileUrl")(errorTileUrl)
     if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (keepBuffer != null) __obj.updateDynamic("keepBuffer")(keepBuffer.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (maxNativeZoom != null) __obj.updateDynamic("maxNativeZoom")(maxNativeZoom.asInstanceOf[js.Any])

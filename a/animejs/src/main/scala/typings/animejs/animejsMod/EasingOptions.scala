@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.animejs.animejsStrings.easeInCirc
   - typings.animejs.animejsStrings.easeInBack
   - typings.animejs.animejsStrings.easeInElastic
+  - typings.animejs.animejsStrings.easeInBounce
   - typings.animejs.animejsStrings.easeOutQuad
   - typings.animejs.animejsStrings.easeOutCubic
   - typings.animejs.animejsStrings.easeOutQuart
@@ -24,6 +25,7 @@ import scala.scalajs.js.annotation._
   - typings.animejs.animejsStrings.easeOutCirc
   - typings.animejs.animejsStrings.easeOutBack
   - typings.animejs.animejsStrings.easeOutElastic
+  - typings.animejs.animejsStrings.easeOutBounce
   - typings.animejs.animejsStrings.easeInOutQuad
   - typings.animejs.animejsStrings.easeInOutCubic
   - typings.animejs.animejsStrings.easeInOutQuart
@@ -33,6 +35,7 @@ import scala.scalajs.js.annotation._
   - typings.animejs.animejsStrings.easeInOutCirc
   - typings.animejs.animejsStrings.easeInOutBack
   - typings.animejs.animejsStrings.easeInOutElastic
+  - typings.animejs.animejsStrings.easeInOutBounce
 */
 trait EasingOptions extends js.Object
 

@@ -14,7 +14,7 @@ trait SeriesNetworkgraphDataEventsOptions extends js.Object {
     * the point's click event is to toggle the point's select state. Returning
     * `false` cancels this action.
     */
-  var click: js.UndefOr[SeriesPointClickCallbackFunction] = js.undefined
+  var click: js.UndefOr[PointClickCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires while dragging a
     * point. The mouse event is passed in as parameter. The original data can
@@ -26,7 +26,7 @@ trait SeriesNetworkgraphDataEventsOptions extends js.Object {
     *
     * Requires the `draggable-points` module.
     */
-  var drag: js.UndefOr[SeriesPointDragCallbackFunction] = js.undefined
+  var drag: js.UndefOr[PointDragCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires when starting to drag
     * a point. The mouse event object is passed in as an argument. If a drag
@@ -35,7 +35,7 @@ trait SeriesNetworkgraphDataEventsOptions extends js.Object {
     *
     * Requires the `draggable-points` module.
     */
-  var dragStart: js.UndefOr[SeriesPointDragStartCallbackFunction] = js.undefined
+  var dragStart: js.UndefOr[PointDragStartCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires when the point is
     * dropped. The parameters passed are the same as for drag. To stop the
@@ -43,61 +43,61 @@ trait SeriesNetworkgraphDataEventsOptions extends js.Object {
     *
     * Requires the `draggable-points` module.
     */
-  var drop: js.UndefOr[SeriesPointDropCallbackFunction] = js.undefined
+  var drop: js.UndefOr[PointDropCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the mouse leaves the area close
     * to the point. One parameter, `event`, is passed to the function,
     * containing common event information.
     */
-  var mouseOut: js.UndefOr[SeriesPointMouseOutCallbackFunction] = js.undefined
+  var mouseOut: js.UndefOr[PointMouseOutCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the mouse enters the area close
     * to the point. One parameter, `event`, is passed to the function,
     * containing common event information.
     */
-  var mouseOver: js.UndefOr[SeriesPointMouseOverCallbackFunction] = js.undefined
+  var mouseOver: js.UndefOr[PointMouseOverCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is removed using the
     * `.remove()` method. One parameter, `event`, is passed to the function.
     * Returning `false` cancels the operation.
     */
-  var remove: js.UndefOr[SeriesPointRemoveCallbackFunction] = js.undefined
+  var remove: js.UndefOr[PointRemoveCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is selected either
     * programmatically or following a click on the point. One parameter,
     * `event`, is passed to the function. Returning `false` cancels the
     * operation.
     */
-  var select: js.UndefOr[SeriesPointSelectCallbackFunction] = js.undefined
+  var select: js.UndefOr[PointSelectCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is unselected either
     * programmatically or following a click on the point. One parameter,
     * `event`, is passed to the function. Returning `false` cancels the
     * operation.
     */
-  var unselect: js.UndefOr[SeriesPointUnselectCallbackFunction] = js.undefined
+  var unselect: js.UndefOr[PointUnselectCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is updated
     * programmatically through the `.update()` method. One parameter, `event`,
     * is passed to the function. The new point options can be accessed through
     * `event.options`. Returning `false` cancels the operation.
     */
-  var update: js.UndefOr[SeriesPointUpdateCallbackFunction] = js.undefined
+  var update: js.UndefOr[PointUpdateCallbackFunction] = js.undefined
 }
 
 object SeriesNetworkgraphDataEventsOptions {
   @scala.inline
   def apply(
-    click: SeriesPointClickCallbackFunction = null,
-    drag: SeriesPointDragCallbackFunction = null,
-    dragStart: SeriesPointDragStartCallbackFunction = null,
-    drop: SeriesPointDropCallbackFunction = null,
-    mouseOut: SeriesPointMouseOutCallbackFunction = null,
-    mouseOver: SeriesPointMouseOverCallbackFunction = null,
-    remove: SeriesPointRemoveCallbackFunction = null,
-    select: SeriesPointSelectCallbackFunction = null,
-    unselect: SeriesPointUnselectCallbackFunction = null,
-    update: SeriesPointUpdateCallbackFunction = null
+    click: PointClickCallbackFunction = null,
+    drag: PointDragCallbackFunction = null,
+    dragStart: PointDragStartCallbackFunction = null,
+    drop: PointDropCallbackFunction = null,
+    mouseOut: PointMouseOutCallbackFunction = null,
+    mouseOver: PointMouseOverCallbackFunction = null,
+    remove: PointRemoveCallbackFunction = null,
+    select: PointSelectCallbackFunction = null,
+    unselect: PointUnselectCallbackFunction = null,
+    update: PointUpdateCallbackFunction = null
   ): SeriesNetworkgraphDataEventsOptions = {
     val __obj = js.Dynamic.literal()
     if (click != null) __obj.updateDynamic("click")(click)

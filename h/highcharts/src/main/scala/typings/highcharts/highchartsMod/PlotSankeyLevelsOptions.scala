@@ -6,43 +6,44 @@ import scala.scalajs.js.annotation._
 
 trait PlotSankeyLevelsOptions extends js.Object {
   /**
-    * (Highcharts) Can set `borderColor` on all points which lies on the same
+    * (Highcharts) Can set `borderColor` on all nodes which lay on the same
     * level.
     */
   var borderColor: js.UndefOr[ColorString] = js.undefined
   /**
-    * (Highcharts) Can set `borderWidth` on all points which lies on the same
+    * (Highcharts) Can set `borderWidth` on all nodes which lay on the same
     * level.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Can set `color` on all points which lies on the same level.
+    * (Highcharts) Can set `color` on all nodes which lay on the same level.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts) Can set `colorByPoint` on all points which lies on the same
+    * (Highcharts) Can set `colorByPoint` on all nodes which lay on the same
     * level.
     */
   var colorByPoint: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Can set `dataLabels` on all points which lies on the same
+    * (Highcharts) Can set `dataLabels` on all points which lay on the same
     * level.
     */
-  var dataLabels: js.UndefOr[js.Object] = js.undefined
+  var dataLabels: js.UndefOr[SeriesSankeyDataLabelsOptionsObject] = js.undefined
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
     * levels object.
     */
   var level: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Can set `linkOpacity` on all points which lies on the same
+    * (Highcharts) Can set `linkOpacity` on all points which lay on the same
     * level.
     */
   var linkOpacity: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Can set `states` on all points which lies on the same level.
+    * (Highcharts) Can set `states` on all nodes and points which lay on the
+    * same level.
     */
-  var states: js.UndefOr[js.Object] = js.undefined
+  var states: js.UndefOr[PointStatesOptionsObject] = js.undefined
 }
 
 object PlotSankeyLevelsOptions {
@@ -52,10 +53,10 @@ object PlotSankeyLevelsOptions {
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
-    dataLabels: js.Object = null,
+    dataLabels: SeriesSankeyDataLabelsOptionsObject = null,
     level: Int | Double = null,
     linkOpacity: Int | Double = null,
-    states: js.Object = null
+    states: PointStatesOptionsObject = null
   ): PlotSankeyLevelsOptions = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)

@@ -9,7 +9,7 @@ trait LegendNavigationOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The color for the active up or
     * down arrow in the legend page navigation.
     */
-  var activeColor: js.UndefOr[ColorString] = js.undefined
+  var activeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to animate the pages when
     * navigating up or down. A value of `true` applies the default navigation
@@ -36,7 +36,7 @@ trait LegendNavigationOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the inactive up or
     * down arrow in the legend page navigation. .
     */
-  var inactiveColor: js.UndefOr[ColorString] = js.undefined
+  var inactiveColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Text styles for the legend page
     * navigation.
@@ -47,19 +47,19 @@ trait LegendNavigationOptions extends js.Object {
 object LegendNavigationOptions {
   @scala.inline
   def apply(
-    activeColor: ColorString = null,
+    activeColor: ColorString | GradientColorObject | PatternObject = null,
     animation: Boolean | AnimationOptionsObject = null,
     arrowSize: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    inactiveColor: ColorString = null,
+    inactiveColor: ColorString | GradientColorObject | PatternObject = null,
     style: CSSObject = null
   ): LegendNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor)
+    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor)
+    if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[LegendNavigationOptions]
   }

@@ -26,7 +26,7 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.
+    * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address configured on the device is used for the DNS server.
     */
   var DnsServers: js.UndefOr[ValueStringList] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     */
   var ServerCertificateArn: String
   /**
-    * Indicates whether split-tunnel is enabled on the AWS Client VPN endpoint endpoint. By default, split-tunnel on a VPN endpoint is disabled. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    * Indicates whether split-tunnel is enabled on the AWS Client VPN endpoint. By default, split-tunnel on a VPN endpoint is disabled. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
     */
   var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   /**

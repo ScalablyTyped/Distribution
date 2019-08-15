@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "staticmaps"
-version := "1.1-dt-20190805Z-6927ef"
+version := "1.1-dt-20190805Z-7951eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
-  "org.scalablytyped" %%% "sharp" % "0.22-dt-20190513Z-61b539",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
+  "org.scalablytyped" %%% "sharp" % "0.22-dt-20190513Z-bf8f16",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

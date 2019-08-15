@@ -72,6 +72,10 @@ class Axis protected () extends js.Object {
     */
   var min: Double | Null = js.native
   /**
+    * Current options for the axis after merge of defaults and user's options.
+    */
+  var options: AxisOptions = js.native
+  /**
     * Whether the axis is reversed. Based on the `axis.reversed`, option, but
     * inverted charts have reversed xAxis by default.
     */
@@ -97,6 +101,10 @@ class Axis protected () extends js.Object {
     * instead.
     */
   var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  /**
+    * User's options for this axis without defaults.
+    */
+  var userOptions: AxisOptions = js.native
   /**
     * Add a plot band after render time.
     *
@@ -352,12 +360,8 @@ class Axis protected () extends js.Object {
     * @param redraw
     *        Whether to redraw the chart after setting the title.
     */
-  def setTitle(titleOptions: XAxisTitleOptions): Unit = js.native
-  def setTitle(titleOptions: XAxisTitleOptions, redraw: Boolean): Unit = js.native
-  def setTitle(titleOptions: YAxisTitleOptions): Unit = js.native
-  def setTitle(titleOptions: YAxisTitleOptions, redraw: Boolean): Unit = js.native
-  def setTitle(titleOptions: ZAxisTitleOptions): Unit = js.native
-  def setTitle(titleOptions: ZAxisTitleOptions, redraw: Boolean): Unit = js.native
+  def setTitle(titleOptions: AxisTitleOptions): Unit = js.native
+  def setTitle(titleOptions: AxisTitleOptions, redraw: Boolean): Unit = js.native
   /**
     * Translate a value in terms of axis units into pixels within the chart.
     *
@@ -400,11 +404,7 @@ class Axis protected () extends js.Object {
     *        more operations on the chart, it is a good idea to set redraw to
     *        false and call Chart#redraw after.
     */
-  def update(options: XAxisOptions): Unit = js.native
-  def update(options: XAxisOptions, redraw: Boolean): Unit = js.native
-  def update(options: YAxisOptions): Unit = js.native
-  def update(options: YAxisOptions, redraw: Boolean): Unit = js.native
-  def update(options: ZAxisOptions): Unit = js.native
-  def update(options: ZAxisOptions, redraw: Boolean): Unit = js.native
+  def update(options: AxisOptions): Unit = js.native
+  def update(options: AxisOptions, redraw: Boolean): Unit = js.native
 }
 

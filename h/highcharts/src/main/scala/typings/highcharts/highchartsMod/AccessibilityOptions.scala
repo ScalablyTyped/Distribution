@@ -60,6 +60,11 @@ trait AccessibilityOptions extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Theme to apply to the chart when
+    * Windows High Contrast Mode is detected.
+    */
+  var highContrastTheme: js.UndefOr[js.Object] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for keyboard navigation.
     */
   var keyboardNavigation: js.UndefOr[AccessibilityKeyboardNavigationOptions] = js.undefined
@@ -118,6 +123,13 @@ trait AccessibilityOptions extends js.Object {
     */
   var pointDescriptionThreshold: js.UndefOr[Boolean | Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) When a series contains more
+    * points than this, we no longer allow keyboard navigation for it.
+    *
+    * Set to `false` to disable.
+    */
+  var pointNavigationThreshold: js.UndefOr[Boolean | Double] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Decimals to use for the values
     * in the point descriptions. Uses tooltip.valueDecimals if not defined.
     */
@@ -174,6 +186,7 @@ object AccessibilityOptions {
     describeSingleSeries: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
+    highContrastTheme: js.Object = null,
     keyboardNavigation: AccessibilityKeyboardNavigationOptions = null,
     landmarkVerbosity: OptionsLandmarkVerbosityValue = null,
     onTableAnchorClick: ScreenReaderClickCallbackFunction = null,
@@ -181,6 +194,7 @@ object AccessibilityOptions {
     pointDateFormatter: ScreenReaderFormatterCallbackFunction[Point] = null,
     pointDescriptionFormatter: ScreenReaderFormatterCallbackFunction[Point] = null,
     pointDescriptionThreshold: Boolean | Double = null,
+    pointNavigationThreshold: Boolean | Double = null,
     pointValueDecimals: String = null,
     pointValuePrefix: String = null,
     pointValueSuffix: String = null,
@@ -196,6 +210,7 @@ object AccessibilityOptions {
     if (!js.isUndefined(describeSingleSeries)) __obj.updateDynamic("describeSingleSeries")(describeSingleSeries)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (highContrastTheme != null) __obj.updateDynamic("highContrastTheme")(highContrastTheme)
     if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation)
     if (landmarkVerbosity != null) __obj.updateDynamic("landmarkVerbosity")(landmarkVerbosity)
     if (onTableAnchorClick != null) __obj.updateDynamic("onTableAnchorClick")(onTableAnchorClick)
@@ -203,6 +218,7 @@ object AccessibilityOptions {
     if (pointDateFormatter != null) __obj.updateDynamic("pointDateFormatter")(pointDateFormatter)
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
     if (pointDescriptionThreshold != null) __obj.updateDynamic("pointDescriptionThreshold")(pointDescriptionThreshold.asInstanceOf[js.Any])
+    if (pointNavigationThreshold != null) __obj.updateDynamic("pointNavigationThreshold")(pointNavigationThreshold.asInstanceOf[js.Any])
     if (pointValueDecimals != null) __obj.updateDynamic("pointValueDecimals")(pointValueDecimals)
     if (pointValuePrefix != null) __obj.updateDynamic("pointValuePrefix")(pointValuePrefix)
     if (pointValueSuffix != null) __obj.updateDynamic("pointValueSuffix")(pointValueSuffix)

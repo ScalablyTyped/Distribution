@@ -9,11 +9,17 @@ trait CapacityReservation extends js.Object {
     * The Availability Zone in which the capacity is reserved.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
+  /**
+    * The Availability Zone ID of the Capacity Reservation.
+    */
   var AvailabilityZoneId: js.UndefOr[String] = js.undefined
   /**
     * The remaining capacity. Indicates the number of instances that can be launched in the Capacity Reservation.
     */
   var AvailableInstanceCount: js.UndefOr[Integer] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the Capacity Reservation.
+    */
   var CapacityReservationArn: js.UndefOr[String] = js.undefined
   /**
     * The ID of the Capacity Reservation.
@@ -51,9 +57,12 @@ trait CapacityReservation extends js.Object {
     * The type of instance for which the Capacity Reservation reserves capacity.
     */
   var InstanceType: js.UndefOr[String] = js.undefined
+  /**
+    * The ID of the AWS account that owns the Capacity Reservation.
+    */
   var OwnerId: js.UndefOr[String] = js.undefined
   /**
-    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    cancelled - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    expired - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
+    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    expired - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    cancelled - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
     */
   var State: js.UndefOr[CapacityReservationState] = js.undefined
   /**
@@ -65,7 +74,7 @@ trait CapacityReservation extends js.Object {
     */
   var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
   /**
-    * The number of instances for which the Capacity Reservation reserves capacity.
+    * The total number of instances for which the Capacity Reservation reserves capacity.
     */
   var TotalInstanceCount: js.UndefOr[Integer] = js.undefined
 }

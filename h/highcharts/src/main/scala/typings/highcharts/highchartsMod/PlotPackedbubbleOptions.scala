@@ -79,7 +79,7 @@ trait PlotPackedbubbleOptions extends js.Object {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of each map area.
     *
@@ -250,16 +250,6 @@ trait PlotPackedbubbleOptions extends js.Object {
     */
   var events: js.UndefOr[PlotPackedbubbleEventsOptions] = js.undefined
   /**
-    * (Highcharts) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
     * series. Defaults to `'xy'` for scatter series and `'x'` for most other
@@ -386,7 +376,7 @@ trait PlotPackedbubbleOptions extends js.Object {
   var marker: js.UndefOr[PlotPackedbubbleMarkerOptions] = js.undefined
   /**
     * (Highcharts, Highstock) Maximum bubble size. Bubbles will automatically
-    * size between the `minSize` and `maxSize` to reflect the `z` value of each
+    * size between the `minSize` and `maxSize` to reflect the value of each
     * bubble. Can be either pixels (when no unit is given), or a percentage of
     * the smallest one of the plot width and height, divided by the square root
     * of total number of points.
@@ -394,7 +384,7 @@ trait PlotPackedbubbleOptions extends js.Object {
   var maxSize: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock) Minimum bubble size. Bubbles will automatically
-    * size between the `minSize` and `maxSize` to reflect the `z` value of each
+    * size between the `minSize` and `maxSize` to reflect the value of each
     * bubble. Can be either pixels (when no unit is given), or a percentage of
     * the smallest one of the plot width and height, divided by the square root
     * of total number of points.
@@ -608,7 +598,7 @@ object PlotPackedbubbleOptions {
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
@@ -630,7 +620,6 @@ object PlotPackedbubbleOptions {
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotPackedbubbleEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -684,7 +673,7 @@ object PlotPackedbubbleOptions {
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending)
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
@@ -706,7 +695,6 @@ object PlotPackedbubbleOptions {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)

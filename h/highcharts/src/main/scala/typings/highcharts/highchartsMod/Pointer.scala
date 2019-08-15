@@ -1,6 +1,7 @@
 package typings.highcharts.highchartsMod
 
-import typings.std.Event
+import typings.std.PointerEvent
+import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,7 @@ class Pointer protected () extends js.Object {
     * Destroys the Pointer object and disconnects DOM events.
     */
   def destroy(): Unit = js.native
+  def findNearestKDPoints(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
     * algorithm.
@@ -77,8 +79,10 @@ class Pointer protected () extends js.Object {
     *
     * @return A browser event with extended properties `chartX` and `chartY`.
     */
-  def normalize(e: Event): PointerEventObject = js.native
-  def normalize(e: Event, chartPosition: OffsetObject): PointerEventObject = js.native
+  def normalize(e: PointerEvent): PointerEventObject = js.native
+  def normalize(e: PointerEvent, chartPosition: OffsetObject): PointerEventObject = js.native
+  def normalize(e: TouchEvent): PointerEventObject = js.native
+  def normalize(e: TouchEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   /**
     * Reset the tracking by hiding the tooltip, the hover series state and the
     * hover point

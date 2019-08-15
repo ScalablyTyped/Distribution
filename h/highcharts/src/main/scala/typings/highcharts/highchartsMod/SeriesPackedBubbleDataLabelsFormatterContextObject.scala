@@ -4,30 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait SeriesPackedBubbleDataLabelsFormatterContextObject extends DataLabelsFormatterContextObject {
   /**
     * The color of the node.
     */
-  var color: ColorString = js.native
+  var color: ColorString
   /**
     * The ID of the node.
     */
-  var key: String = js.native
-  /**
-    * Callback to format data labels for _parentNodes_. The `parentNodeFormat`
-    * option takes precedence over the `parentNodeFormatter`.
-    */
-  @JSName("parentNodeFormatter")
-  var parentNodeFormatter_Original: FormatterCallbackFunction[DataLabelsFormatterContextObject] = js.native
-  /**
-    * Options for a _parentNode_ label text.
-    */
-  var parentNodeTextPath: SeriesPackedBubbleDataLabelsTextPath = js.native
-  /**
-    * Callback to format data labels for _parentNodes_. The `parentNodeFormat`
-    * option takes precedence over the `parentNodeFormatter`.
-    */
-  def parentNodeFormatter(`this`: DataLabelsFormatterContextObject): String = js.native
+  var key: String
+}
+
+object SeriesPackedBubbleDataLabelsFormatterContextObject {
+  @scala.inline
+  def apply(
+    color: ColorString,
+    key: String,
+    point: Point,
+    series: Series,
+    x: Double,
+    percentage: Int | Double = null,
+    total: Int | Double = null,
+    y: Int | Double = null
+  ): SeriesPackedBubbleDataLabelsFormatterContextObject = {
+    val __obj = js.Dynamic.literal(color = color, key = key, point = point, series = series, x = x)
+    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesPackedBubbleDataLabelsFormatterContextObject]
+  }
 }
 

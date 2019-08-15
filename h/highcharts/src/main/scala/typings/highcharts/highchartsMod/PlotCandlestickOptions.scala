@@ -204,7 +204,7 @@ trait PlotCandlestickOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
     * (Highcharts) Depth of the columns in a 3D column chart. Requires
     * `highcharts-3d.js`.
@@ -247,16 +247,6 @@ trait PlotCandlestickOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotCandlestickEventsOptions] = js.undefined
-  /**
-    * (Highstock) By default, series are exposed to screen readers as regions.
-    * By enabling this option, the series element itself will be exposed in the
-    * same way as the data points. This is useful if the series is not used as
-    * a grouping entity in the chart, but you still want to attach a
-    * description to the series.
-    *
-    * Requires the Accessibility module.
-    */
-  var exposeElementToA11y: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -348,7 +338,7 @@ trait PlotCandlestickOptions extends js.Object {
     * In styled mode, the line stroke can be set with the
     * `.highcharts-candlestick-series .highcahrts-point` rule.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) The pixel width of the candlestick line/border. Defaults to
     * `1`.
@@ -582,7 +572,7 @@ trait PlotCandlestickOptions extends js.Object {
     * (Highstock) The specific line color for up candle sticks. The default is
     * to inherit the general `lineColor` setting.
     */
-  var upLineColor: js.UndefOr[ColorString] = js.undefined
+  var upLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) Set the initial visibility of the series.
     */
@@ -632,7 +622,7 @@ object PlotCandlestickOptions {
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotCandlestickDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: js.Any = null,
     depth: Int | Double = null,
     description: String = null,
     dragDrop: PlotCandlestickDragDropOptions = null,
@@ -640,7 +630,6 @@ object PlotCandlestickOptions {
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotCandlestickEventsOptions = null,
-    exposeElementToA11y: js.UndefOr[Boolean] = js.undefined,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     groupPadding: Int | Double = null,
@@ -652,7 +641,7 @@ object PlotCandlestickOptions {
     label: PlotCandlestickLabelOptions = null,
     lastPrice: PlotCandlestickLastPriceOptions = null,
     lastVisiblePrice: PlotCandlestickLastVisiblePriceOptions = null,
-    lineColor: ColorString = null,
+    lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linkedTo: String = null,
     maxPointWidth: Int | Double = null,
@@ -683,7 +672,7 @@ object PlotCandlestickOptions {
     tooltip: PlotCandlestickTooltipOptions = null,
     turboThreshold: Int | Double = null,
     upColor: ColorString | GradientColorObject | PatternObject = null,
-    upLineColor: ColorString = null,
+    upLineColor: ColorString | GradientColorObject | PatternObject = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
@@ -711,7 +700,7 @@ object PlotCandlestickOptions {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
@@ -719,7 +708,6 @@ object PlotCandlestickOptions {
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(exposeElementToA11y)) __obj.updateDynamic("exposeElementToA11y")(exposeElementToA11y)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll)
     if (groupPadding != null) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])
@@ -731,7 +719,7 @@ object PlotCandlestickOptions {
     if (label != null) __obj.updateDynamic("label")(label)
     if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice)
     if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo)
     if (maxPointWidth != null) __obj.updateDynamic("maxPointWidth")(maxPointWidth.asInstanceOf[js.Any])
@@ -762,7 +750,7 @@ object PlotCandlestickOptions {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (upColor != null) __obj.updateDynamic("upColor")(upColor.asInstanceOf[js.Any])
-    if (upLineColor != null) __obj.updateDynamic("upLineColor")(upLineColor)
+    if (upLineColor != null) __obj.updateDynamic("upLineColor")(upLineColor.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     if (zoneAxis != null) __obj.updateDynamic("zoneAxis")(zoneAxis)

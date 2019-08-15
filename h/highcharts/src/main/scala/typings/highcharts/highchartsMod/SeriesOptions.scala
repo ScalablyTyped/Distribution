@@ -1,12 +1,10 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesOptions
-  extends /* key */ StringDictionary[js.Any] {
+trait SeriesOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -29,7 +27,7 @@ trait SeriesOptions
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[MapDataObject | js.Array[MapDataObject]] = js.undefined
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
@@ -41,7 +39,7 @@ trait SeriesOptions
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[js.Object | String] = js.undefined
+  var stack: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The type of series, for example
     * `line` or `column`. By default, the series type is inherited from
@@ -75,20 +73,18 @@ object SeriesOptions {
   @scala.inline
   def apply(
     `type`: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     id: String = null,
     index: Int | Double = null,
     legendIndex: Int | Double = null,
-    mapData: MapDataObject | js.Array[MapDataObject] = null,
+    mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
     name: String = null,
-    stack: js.Object | String = null,
+    stack: Double | String = null,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null
   ): SeriesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (id != null) __obj.updateDynamic("id")(id)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])

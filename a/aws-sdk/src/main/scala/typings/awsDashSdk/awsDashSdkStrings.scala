@@ -24454,6 +24454,10 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait i3enDOTmetal
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait i3enDOTxlarge
     extends typings.awsDashSdk.clientsEc2Mod._InstanceType
   
@@ -38696,6 +38700,8 @@ object awsDashSdkStrings {
   def i3enDOT6xlarge: i3enDOT6xlarge = "i3en.6xlarge".asInstanceOf[i3enDOT6xlarge]
   @scala.inline
   def i3enDOTlarge: i3enDOTlarge = "i3en.large".asInstanceOf[i3enDOTlarge]
+  @scala.inline
+  def i3enDOTmetal: i3enDOTmetal = "i3en.metal".asInstanceOf[i3enDOTmetal]
   @scala.inline
   def i3enDOTxlarge: i3enDOTxlarge = "i3en.xlarge".asInstanceOf[i3enDOTxlarge]
   @scala.inline

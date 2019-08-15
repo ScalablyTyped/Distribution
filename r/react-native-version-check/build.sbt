@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-native-version-check"
-version := "3.2-dt-20190528Z-822524"
+version := "3.2-dt-20190528Z-a99949"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190807Z-ed4b3f",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190723Z-969ffa",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190723Z-991d4f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -10,6 +10,7 @@ class PlotLineOrBand protected () extends js.Object {
   /**
     * The object wrapper for plot lines and plot bands
     */
+  def this(axis: Axis) = this()
   def this(axis: Axis, options: AxisPlotBandsOptions) = this()
   def this(axis: Axis, options: AxisPlotLinesOptions) = this()
   /**

@@ -31,6 +31,8 @@ trait OptionsGeneral extends js.Object {
   var htmlImported: js.UndefOr[EmptyCallback] = js.undefined
   /** The htmlImporting callback is triggered when Tabulator starts importing data from an HTML table. */
   var htmlImporting: js.UndefOr[EmptyCallback] = js.undefined
+  /** Setting the invalidOptionWarnings option to false will disable console warning messages for invalid properties in the table constructor and column definition object */
+  var invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined
   /** Keybinding configuration object	 */
   var keybindings: js.UndefOr[`false` | KeyBinding] = js.undefined
   /** Whenever a page has been loaded, the pageLoaded callback is called, passing the current page number as an argument. */
@@ -80,6 +82,7 @@ object OptionsGeneral {
     height: String | Double | `false` = null,
     htmlImported: EmptyCallback = null,
     htmlImporting: EmptyCallback = null,
+    invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,
     pageLoaded: /* pageno */ Double => Unit = null,
     placeholder: String | HTMLElement = null,
@@ -104,6 +107,7 @@ object OptionsGeneral {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlImported != null) __obj.updateDynamic("htmlImported")(htmlImported)
     if (htmlImporting != null) __obj.updateDynamic("htmlImporting")(htmlImporting)
+    if (!js.isUndefined(invalidOptionWarnings)) __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings)
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
     if (pageLoaded != null) __obj.updateDynamic("pageLoaded")(js.Any.fromFunction1(pageLoaded))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-polylinedecorator
 
-Typings are for version 1.1
+Typings are for version 1.6
 
 ## Library description:
 [![CDNJS](https://img.shields.io/cdnjs/v/leaflet-polylinedecorator.svg)](https://cdnjs.com/libraries/leaflet-polylinedecorator)

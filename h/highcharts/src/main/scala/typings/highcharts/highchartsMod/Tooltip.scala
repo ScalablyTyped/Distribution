@@ -1,6 +1,5 @@
 package typings.highcharts.highchartsMod
 
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +22,10 @@ class Tooltip protected () extends js.Object {
     */
   val chart: Chart = js.native
   /**
-    * Tooltips are initially hidden.
+    * Reference to the tooltip's container, when [Highcharts.Tooltip#outside]
+    * is set to true, otherwise it's undefined.
     */
-  val isHidden: Boolean = js.native
+  var container: js.UndefOr[HTMLDOMElement] = js.native
   /**
     * Used tooltip options.
     */
@@ -38,15 +38,25 @@ class Tooltip protected () extends js.Object {
     */
   val outside: Boolean = js.native
   /**
+    * Reference to the tooltip's renderer, when [Highcharts.Tooltip#outside] is
+    * set to true, otherwise it's undefined.
+    */
+  var renderer: js.UndefOr[SVGRenderer] = js.native
+  /**
     * When the tooltip is shared, the entire plot area will capture mouse
     * movement or touch events.
     */
-  val shared: Boolean = js.native
+  val shared: js.UndefOr[Boolean] = js.native
   /**
     * True, if the tooltip is splitted into one label per series, with the
     * header close to the axis.
     */
-  val split: Boolean = js.native
+  val split: js.UndefOr[Boolean] = js.native
+  /**
+    * In case no user defined formatter is given, this will be used. Note that
+    * the context here is an object holding point, series, x, y etc.
+    */
+  def defaultFormatter(tooltip: Tooltip): js.Array[String] = js.native
   /**
     * Removes and destroys the tooltip and its elements.
     */
@@ -65,12 +75,8 @@ class Tooltip protected () extends js.Object {
     */
   def hide(): Unit = js.native
   def hide(delay: Double): Unit = js.native
-  /**
-    * Moves the tooltip with a soft animation to a new position.
-    */
-  def move(x: Double, y: Double, anchorX: Double, anchorY: Double): Unit = js.native
   def refresh(pointOrPoints: js.Array[Point]): Unit = js.native
-  def refresh(pointOrPoints: js.Array[Point], mouseEvent: Event): Unit = js.native
+  def refresh(pointOrPoints: js.Array[Point], mouseEvent: PointerEventObject): Unit = js.native
   /**
     * Refresh the tooltip's text and position.
     *
@@ -82,7 +88,7 @@ class Tooltip protected () extends js.Object {
     *        used for the tooltip update.
     */
   def refresh(pointOrPoints: Point): Unit = js.native
-  def refresh(pointOrPoints: Point, mouseEvent: Event): Unit = js.native
+  def refresh(pointOrPoints: Point, mouseEvent: PointerEventObject): Unit = js.native
   /**
     * Updates the tooltip with the provided tooltip options.
     *

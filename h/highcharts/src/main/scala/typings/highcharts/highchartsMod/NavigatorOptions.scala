@@ -15,14 +15,6 @@ trait NavigatorOptions extends js.Object {
     */
   var adaptToUpdatedData: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock, Gantt) An integer identifying the index to use for the base
-    * series, or a string representing the id of the series.
-    *
-    * **Note**: As of Highcharts 5.0, this is now a deprecated option. Prefer
-    * series.showInNavigator.
-    */
-  var baseSeries: js.UndefOr[js.Any] = js.undefined
-  /**
     * (Highstock, Gantt) Enable or disable the navigator.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
@@ -59,7 +51,7 @@ trait NavigatorOptions extends js.Object {
     * (Highstock, Gantt) The color of the line marking the currently zoomed
     * area in the navigator.
     */
-  var outlineColor: js.UndefOr[ColorString] = js.undefined
+  var outlineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock, Gantt) The width of the line marking the currently zoomed
     * area in the navigator.
@@ -74,21 +66,21 @@ trait NavigatorOptions extends js.Object {
     *
     * Default series options for the navigator series are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
-  var series: js.UndefOr[NavigatorSeriesOptions] = js.undefined
+  var series: js.UndefOr[NavigatorSeriesOptions | SeriesOptionsType] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator X axis. Default series
     * options for the navigator xAxis are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var xAxis: js.UndefOr[NavigatorXAxisOptions] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator Y axis. Default series
     * options for the navigator yAxis are:
     *
-    * (see online documentation for example)
+    *  (see online documentation for example)
     */
   var yAxis: js.UndefOr[NavigatorYAxisOptions] = js.undefined
 }
@@ -97,7 +89,6 @@ object NavigatorOptions {
   @scala.inline
   def apply(
     adaptToUpdatedData: js.UndefOr[Boolean] = js.undefined,
-    baseSeries: js.Any = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     handles: NavigatorHandlesOptions = null,
     height: Int | Double = null,
@@ -105,15 +96,14 @@ object NavigatorOptions {
     maskFill: ColorString | GradientColorObject | PatternObject = null,
     maskInside: js.UndefOr[Boolean] = js.undefined,
     opposite: js.UndefOr[Boolean] = js.undefined,
-    outlineColor: ColorString = null,
+    outlineColor: ColorString | GradientColorObject | PatternObject = null,
     outlineWidth: Int | Double = null,
-    series: NavigatorSeriesOptions = null,
+    series: NavigatorSeriesOptions | SeriesOptionsType = null,
     xAxis: NavigatorXAxisOptions = null,
     yAxis: NavigatorYAxisOptions = null
   ): NavigatorOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(adaptToUpdatedData)) __obj.updateDynamic("adaptToUpdatedData")(adaptToUpdatedData)
-    if (baseSeries != null) __obj.updateDynamic("baseSeries")(baseSeries)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (handles != null) __obj.updateDynamic("handles")(handles)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -121,9 +111,9 @@ object NavigatorOptions {
     if (maskFill != null) __obj.updateDynamic("maskFill")(maskFill.asInstanceOf[js.Any])
     if (!js.isUndefined(maskInside)) __obj.updateDynamic("maskInside")(maskInside)
     if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis)
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis)
     __obj.asInstanceOf[NavigatorOptions]

@@ -9,7 +9,7 @@ trait LegendBubbleLegendOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps) The color of the ranges borders, can be
     * also defined for an individual range.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The width of the ranges borders in
     * pixels, can be also defined for an individual range.
@@ -36,7 +36,7 @@ trait LegendBubbleLegendOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps) The color of the connector, can be also
     * defined for an individual range.
     */
-  var connectorColor: js.UndefOr[ColorString] = js.undefined
+  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The length of the connectors in pixels.
     * If labels are centered, the distance is reduced to 0.
@@ -106,12 +106,12 @@ trait LegendBubbleLegendOptions extends js.Object {
 object LegendBubbleLegendOptions {
   @scala.inline
   def apply(
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     connectorClassName: String = null,
-    connectorColor: ColorString = null,
+    connectorColor: ColorString | GradientColorObject | PatternObject = null,
     connectorDistance: Int | Double = null,
     connectorWidth: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -126,12 +126,12 @@ object LegendBubbleLegendOptions {
     zThreshold: Int | Double = null
   ): LegendBubbleLegendOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (connectorClassName != null) __obj.updateDynamic("connectorClassName")(connectorClassName)
-    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor)
+    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
     if (connectorDistance != null) __obj.updateDynamic("connectorDistance")(connectorDistance.asInstanceOf[js.Any])
     if (connectorWidth != null) __obj.updateDynamic("connectorWidth")(connectorWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

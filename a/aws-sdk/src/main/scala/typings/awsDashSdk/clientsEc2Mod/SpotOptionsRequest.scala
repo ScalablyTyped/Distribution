@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait SpotOptionsRequest extends js.Object {
   /**
-    * Indicates how to allocate the target capacity across the Spot pools specified by the Spot Fleet request. The default is lowestPrice.
+    * Indicates how to allocate the target Spot Instance capacity across the Spot Instance pools specified by the EC2 Fleet. If the allocation strategy is lowestPrice, EC2 Fleet launches instances from the Spot Instance pools with the lowest price. This is the default allocation strategy. If the allocation strategy is diversified, EC2 Fleet launches instances from all the Spot Instance pools that you specify. If the allocation strategy is capacityOptimized, EC2 Fleet launches instances from Spot Instance pools that are optimally chosen based on the available Spot Instance capacity.
     */
   var AllocationStrategy: js.UndefOr[SpotAllocationStrategy] = js.undefined
   /**

@@ -14,7 +14,7 @@ trait PlotFlagsStatesHoverOptions extends js.Object {
     * (Highcharts, Gantt) A specific border color for the hovered point.
     * Defaults to inherit the normal state border color.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of the point in this state
     */
@@ -44,30 +44,30 @@ trait PlotFlagsStatesHoverOptions extends js.Object {
   /**
     * (Highstock) The color of the line/border of the flag.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
 }
 
 object PlotFlagsStatesHoverOptions {
   @scala.inline
   def apply(
     animation: Boolean | AnimationOptionsObject | PlotFlagsStatesHoverAnimationOptions = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     brightness: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
-    lineColor: ColorString = null
+    lineColor: ColorString | GradientColorObject | PatternObject = null
   ): PlotFlagsStatesHoverOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotFlagsStatesHoverOptions]
   }
 }

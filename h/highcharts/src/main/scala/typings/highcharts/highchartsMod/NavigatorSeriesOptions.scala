@@ -23,7 +23,7 @@ trait NavigatorSeriesOptions extends js.Object {
     * (Highstock, Gantt) Data label options for the navigator series. Data
     * labels are disabled by default on the navigator series.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
     * (Highstock, Gantt) The fill opacity of the navigator series.
     */
@@ -59,7 +59,7 @@ object NavigatorSeriesOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     data: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null] = null,
     dataGrouping: NavigatorSeriesDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: js.Any = null,
     fillOpacity: Int | Double = null,
     id: String = null,
     lineColor: ColorString = null,
@@ -74,7 +74,7 @@ object NavigatorSeriesOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)

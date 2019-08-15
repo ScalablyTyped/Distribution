@@ -14,7 +14,7 @@ trait PlotBarStatesSelectOptions extends js.Object {
     * (Highcharts, Highstock, Gantt) A specific border color for the selected
     * point.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highmaps) The border width of the point in this state
     */
@@ -35,14 +35,14 @@ object PlotBarStatesSelectOptions {
   @scala.inline
   def apply(
     animation: PlotBarStatesSelectAnimationOptions = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined
   ): PlotBarStatesSelectOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

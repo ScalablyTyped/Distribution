@@ -15,10 +15,6 @@ trait NavigatorYAxisTitleOptions extends js.Object {
     */
   var align: js.UndefOr[AxisTitleAlignValue] = js.undefined
   /**
-    * (Highcharts) Deprecated. Set the `text` to `null` to disable the title.
-    */
-  var enabled: js.UndefOr[String] = js.undefined
-  /**
     * (Highstock, Gantt) The pixel distance between the axis labels and the
     * title. Positive values are outside the axis line, negative are inside.
     */
@@ -141,7 +137,6 @@ object NavigatorYAxisTitleOptions {
   @scala.inline
   def apply(
     align: AxisTitleAlignValue = null,
-    enabled: String = null,
     margin: Int | Double = null,
     offset: Int | Double = null,
     position3d: chart | flap | offset | ortho = null,
@@ -157,7 +152,6 @@ object NavigatorYAxisTitleOptions {
   ): NavigatorYAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])

@@ -1,17 +1,12 @@
 package typings.highcharts.highchartsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("highcharts", "Point")
 @js.native
-class Point ()
-  extends /**
-  * Custom properties set by custom data options.
-  */
-/* property */ StringDictionary[js.Any] {
+class Point () extends js.Object {
   /**
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
@@ -20,7 +15,7 @@ class Point ()
   /**
     * The point's current color.
     */
-  var color: ColorString | GradientColorObject | PatternObject = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * The point's current color index, used in styled mode instead of `color`.
     * The color index is inserted in class names used for styling.
@@ -37,7 +32,7 @@ class Point ()
     *
     * - `dataGroup.length` is the amount of points in the group.
     */
-  var dataGroup: js.UndefOr[SVGElement] = js.native
+  var dataGroup: js.UndefOr[DataGroupingInfoObject] = js.native
   /**
     * The name of the point. The name can be given as the first position of the
     * point configuration array, or as a `name` property in the configuration:
@@ -46,8 +41,12 @@ class Point ()
   /**
     * The point's options as applied in the initial configuration, or extended
     * through `Point.update`.
+    *
+    * In TypeScript you have to extend `PointOptionsObject` via an additional
+    * interface to allow custom data options: (see online documentation for
+    * example)
     */
-  var options: js.Object = js.native
+  var options: PointOptionsObject = js.native
   /**
     * The percentage for points in a stacked series or pies.
     */
@@ -60,6 +59,10 @@ class Point ()
     * The series object associated with the point.
     */
   var series: Series = js.native
+  /**
+    * Pie series only. Whether to display a slice offset from the center.
+    */
+  var sliced: js.UndefOr[Boolean] = js.native
   /**
     * The total of values in either a stack for stacked series, or a pie in a
     * pie series.
@@ -107,12 +110,7 @@ class Point ()
     *
     * @return The path definition.
     */
-  def haloPath(size: Double): SVGPathArray = js.native
-  def init(series: Series): Point = js.native
-  def init(series: Series, options: js.Array[Double | String]): Point = js.native
-  def init(series: Series, options: js.Array[Double | String], x: Double): Point = js.native
-  def init(series: Series, options: js.Object): Point = js.native
-  def init(series: Series, options: js.Object, x: Double): Point = js.native
+  def haloPath(size: Double): SVGElement = js.native
   /**
     * Initialize the point. Called internally based on the `series.data`
     * option.
@@ -130,9 +128,8 @@ class Point ()
     *
     * @fires Highcharts.Point#afterInit
     */
-  def init(series: Series, options: Double): Point = js.native
-  def init(series: Series, options: Double, x: Double): Point = js.native
-  def init(series: Series, options: Null, x: Double): Point = js.native
+  def init(series: Series, options: PointOptionsType): Point = js.native
+  def init(series: Series, options: PointOptionsType, x: Double): Point = js.native
   /**
     * Runs on mouse out from the point. Called internally from mouse and touch
     * events.
@@ -148,8 +145,6 @@ class Point ()
     *        The event arguments.
     */
   def onMouseOver(e: PointerEventObject): Unit = js.native
-  def optionsToObject(): Dictionary[_] = js.native
-  def optionsToObject(options: js.Array[Double | String]): Dictionary[_] = js.native
   /**
     * Transform number or array configs into objects. Also called for object
     * configs. Used internally to unify the different configuration formats for
@@ -162,8 +157,7 @@ class Point ()
     *
     * @return Transformed options.
     */
-  def optionsToObject(options: Double): Dictionary[_] = js.native
-  def optionsToObject(options: Dictionary[_]): Dictionary[_] = js.native
+  def optionsToObject(options: PointOptionsType): Dictionary[_] = js.native
   /**
     * Remove a point and optionally redraw the series and if necessary the axes
     *
@@ -177,6 +171,7 @@ class Point ()
     *        Whether to apply animation, and optionally animation
     *        configuration.
     */
+  def remove(): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -241,15 +236,6 @@ class Point ()
     * @return A string to be concatenated in to the common tooltip text.
     */
   def tooltipFormatter(pointFormat: String): String = js.native
-  def update(): Unit = js.native
-  def update(options: js.Array[Double | String]): Unit = js.native
-  def update(options: js.Array[Double | String], redraw: Boolean): Unit = js.native
-  def update(options: js.Array[Double | String], redraw: Boolean, animation: Boolean): Unit = js.native
-  def update(options: js.Array[Double | String], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def update(options: js.Object): Unit = js.native
-  def update(options: js.Object, redraw: Boolean): Unit = js.native
-  def update(options: js.Object, redraw: Boolean, animation: Boolean): Unit = js.native
-  def update(options: js.Object, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
   /**
     * Update point with new options (typically x/y data) and optionally redraw
     * the series.
@@ -273,12 +259,9 @@ class Point ()
     *
     * @fires Highcharts.Point#update
     */
-  def update(options: Double): Unit = js.native
-  def update(options: Double, redraw: Boolean): Unit = js.native
-  def update(options: Double, redraw: Boolean, animation: Boolean): Unit = js.native
-  def update(options: Double, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def update(options: Null, redraw: Boolean): Unit = js.native
-  def update(options: Null, redraw: Boolean, animation: Boolean): Unit = js.native
-  def update(options: Null, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def update(options: PointOptionsType): Unit = js.native
+  def update(options: PointOptionsType, redraw: Boolean): Unit = js.native
+  def update(options: PointOptionsType, redraw: Boolean, animation: Boolean): Unit = js.native
+  def update(options: PointOptionsType, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
 }
 

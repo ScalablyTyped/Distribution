@@ -15,6 +15,7 @@ trait User[A, U] extends js.Object {
   var identities: js.UndefOr[js.Array[Identity]] = js.undefined
   var last_ip: js.UndefOr[String] = js.undefined
   var last_login: js.UndefOr[String] = js.undefined
+  var last_password_reset: js.UndefOr[String] = js.undefined
   var logins_count: js.UndefOr[Double] = js.undefined
   var multifactor: js.UndefOr[js.Array[String]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
@@ -41,6 +42,7 @@ object User {
     identities: js.Array[Identity] = null,
     last_ip: String = null,
     last_login: String = null,
+    last_password_reset: String = null,
     logins_count: Int | Double = null,
     multifactor: js.Array[String] = null,
     name: String = null,
@@ -64,6 +66,7 @@ object User {
     if (identities != null) __obj.updateDynamic("identities")(identities)
     if (last_ip != null) __obj.updateDynamic("last_ip")(last_ip)
     if (last_login != null) __obj.updateDynamic("last_login")(last_login)
+    if (last_password_reset != null) __obj.updateDynamic("last_password_reset")(last_password_reset)
     if (logins_count != null) __obj.updateDynamic("logins_count")(logins_count.asInstanceOf[js.Any])
     if (multifactor != null) __obj.updateDynamic("multifactor")(multifactor)
     if (name != null) __obj.updateDynamic("name")(name)

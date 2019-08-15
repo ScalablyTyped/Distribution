@@ -48,6 +48,11 @@ trait NavigationOptions extends js.Object {
     */
   var events: js.UndefOr[NavigationEventsOptions] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
+    * for icons. Change this to use icons from a different server.
+    */
+  var iconsURL: js.UndefOr[js.Any] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the hover state
     * of the individual items within the popup menu appearing by default when
     * the export icon is clicked. The menu items are rendered in HTML.
@@ -76,6 +81,7 @@ object NavigationOptions {
     bindingsClassName: String = null,
     buttonOptions: NavigationButtonOptions = null,
     events: NavigationEventsOptions = null,
+    iconsURL: js.Any = null,
     menuItemHoverStyle: CSSObject = null,
     menuItemStyle: CSSObject = null,
     menuStyle: CSSObject = null
@@ -86,6 +92,7 @@ object NavigationOptions {
     if (bindingsClassName != null) __obj.updateDynamic("bindingsClassName")(bindingsClassName)
     if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
     if (events != null) __obj.updateDynamic("events")(events)
+    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL)
     if (menuItemHoverStyle != null) __obj.updateDynamic("menuItemHoverStyle")(menuItemHoverStyle)
     if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle)
     if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)

@@ -23,7 +23,7 @@ trait SeriesPieDataLabelsOptionsObject extends DataLabelsOptionsObject {
     * In styled mode, the connector stroke is given in the
     * `.highcharts-data-label-connector` class.
     */
-  var connectorColor: js.UndefOr[ColorString] = js.undefined
+  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The distance from the data label to the connector. Note that
     * data labels also have a default `padding`, so in order for the connector
@@ -81,7 +81,7 @@ trait SeriesPieDataLabelsOptionsObject extends DataLabelsOptionsObject {
     * (Highcharts) Whether to render the connector as a soft arc or a line with
     * sharp break. Works only if `connectorShape` equals to `fixedOffset`.
     */
-  var softConnector: js.UndefOr[Double] = js.undefined
+  var softConnector: js.UndefOr[Boolean] = js.undefined
 }
 
 object SeriesPieDataLabelsOptionsObject {
@@ -91,12 +91,12 @@ object SeriesPieDataLabelsOptionsObject {
     alignTo: String = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     className: String = null,
-    color: ColorString = null,
-    connectorColor: ColorString = null,
+    color: ColorString | GradientColorObject | PatternObject = null,
+    connectorColor: ColorString | GradientColorObject | PatternObject = null,
     connectorPadding: Int | Double = null,
     connectorShape: String | js.Function = null,
     connectorWidth: Int | Double = null,
@@ -116,9 +116,9 @@ object SeriesPieDataLabelsOptionsObject {
     rotation: Int | Double = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: String = null,
-    softConnector: Int | Double = null,
+    softConnector: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
-    textPath: DataLabelsTextPath = null,
+    textPath: DataLabelsTextPathOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: VerticalAlignValue = null,
     x: Int | Double = null,
@@ -130,12 +130,12 @@ object SeriesPieDataLabelsOptionsObject {
     if (alignTo != null) __obj.updateDynamic("alignTo")(alignTo)
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
     if (connectorPadding != null) __obj.updateDynamic("connectorPadding")(connectorPadding.asInstanceOf[js.Any])
     if (connectorShape != null) __obj.updateDynamic("connectorShape")(connectorShape.asInstanceOf[js.Any])
     if (connectorWidth != null) __obj.updateDynamic("connectorWidth")(connectorWidth.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object SeriesPieDataLabelsOptionsObject {
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (softConnector != null) __obj.updateDynamic("softConnector")(softConnector.asInstanceOf[js.Any])
+    if (!js.isUndefined(softConnector)) __obj.updateDynamic("softConnector")(softConnector)
     if (style != null) __obj.updateDynamic("style")(style)
     if (textPath != null) __obj.updateDynamic("textPath")(textPath)
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)

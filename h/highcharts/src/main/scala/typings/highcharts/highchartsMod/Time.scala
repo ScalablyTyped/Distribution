@@ -69,10 +69,10 @@ class Time protected () extends js.Object {
     * @param max
     *        The maximum in axis values
     */
-  def getTimeTicks(normalizedInterval: NormalizedIntervalObject): TimeTicksObject = js.native
-  def getTimeTicks(normalizedInterval: NormalizedIntervalObject, min: Double): TimeTicksObject = js.native
-  def getTimeTicks(normalizedInterval: NormalizedIntervalObject, min: Double, max: Double): TimeTicksObject = js.native
-  def getTimeTicks(normalizedInterval: NormalizedIntervalObject, min: Double, max: Double, startOfWeek: Double): TimeTicksObject = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double, startOfWeek: Double): AxisTickPositionsArray = js.native
   /**
     * Get the time zone offset based on the current timezone information as set
     * in the global options.
