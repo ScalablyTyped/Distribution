@@ -22,6 +22,8 @@ trait CellData extends js.Object {
   var level: js.UndefOr[Double] = js.undefined
   var measure: js.UndefOr[MeasureObject] = js.undefined
   var member: js.UndefOr[Member] = js.undefined
+  var recordId: js.UndefOr[String | js.Array[String]] = js.undefined
+  var rowData: js.UndefOr[js.Array[CellData]] = js.undefined
   var rowIndex: js.UndefOr[Double] = js.undefined
   var rows: js.UndefOr[js.Array[js.Object]] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -51,6 +53,8 @@ object CellData {
     level: Int | Double = null,
     measure: MeasureObject = null,
     member: Member = null,
+    recordId: String | js.Array[String] = null,
+    rowData: js.Array[CellData] = null,
     rowIndex: Int | Double = null,
     rows: js.Array[js.Object] = null,
     `type`: String = null,
@@ -77,6 +81,8 @@ object CellData {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure)
     if (member != null) __obj.updateDynamic("member")(member)
+    if (recordId != null) __obj.updateDynamic("recordId")(recordId.asInstanceOf[js.Any])
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -3,91 +3,85 @@ package typings.leafletDashDraw.leafletMod.DrawOptionsNs
 import typings.leaflet.leafletMod.DivIcon
 import typings.leaflet.leafletMod.Icon
 import typings.leaflet.leafletMod.IconOptions
-import typings.leaflet.leafletMod.PathOptions
+import typings.leafletDashDraw.Anon_Clickable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PolylineOptions extends js.Object {
+trait PolylineOptions extends SimpleShapeOptions {
   /**
-  			 * Determines if line segments can cross.
-  			 *
-  			 * Default value: true
-  			 */
+    * Determines if line segments can cross.
+    *
+    * @default true
+    */
   var allowIntersection: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * Configuration options for the error that displays if an intersection is detected.
-  			 *
-  			 * Default value: See code
-  			 */
+    * Configuration options for the error that displays if an intersection is detected.
+    *
+    * @default { color: '#b00b00', timeout: 2500 }
+    */
   var drawError: js.UndefOr[DrawErrorOptions] = js.undefined
   /**
-  			 * To change distance calculation
-  			 *
-  			 * Default value: 1
-  			 */
+    * To change distance calculation
+    *
+    * @default 1
+    */
   var factor: js.UndefOr[Double] = js.undefined
   /**
-  			 * When not metric, to use feet instead of yards for display.
-  			 *
-  			 * Default value: true
-  			 */
+    * When not metric, to use feet instead of yards for display.
+    *
+    * @default true
+    */
   var feet: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * Distance in pixels between each guide dash.
-  			 *
-  			 * Default value: 20
-  			 */
+    * Distance in pixels between each guide dash.
+    *
+    * @default 20
+    */
   var guidelineDistance: js.UndefOr[Double] = js.undefined
   var icon: js.UndefOr[Icon[IconOptions] | DivIcon] = js.undefined
   /**
-  			 * The maximum length of the guide line
-  			 *
-  			 * Default value: 4000
-  			 */
+    * The maximum length of the guide line
+    *
+    * @default 4000
+    */
   var maxGuideLineLength: js.UndefOr[Double] = js.undefined
   /**
-  			 * Once this number of points are placed, finish shape
-  			 *
-  			 * Default value: 0
-  			 */
+    * Once this number of points are placed, finish shape
+    *
+    * @default 0
+    */
   var maxPoints: js.UndefOr[Double] = js.undefined
   /**
-  			 * Determines which measurement system (metric or imperial) is used.
-  			 *
-  			 * Default value: true
-  			 */
+    * Determines which measurement system (metric or imperial) is used.
+    *
+    * @default true
+    */
   var metric: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * When not metric, not feet use nautic mile for display
-  			 *
-  			 * Default value: false
-  			 */
+    * When not metric, not feet use nautic mile for display
+    *
+    * @default false
+    */
   var nautic: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * Determines if the draw tool remains enabled after drawing a shape.
-  			 *
-  			 * Default value: false
-  			 */
-  var repeatMode: js.UndefOr[Boolean] = js.undefined
+    * The options used when drawing the polyline/polygon on the map.
+    *
+    * @default { stroke: true, color: '#3388ff', weight: 4, opacity: 0.5, fill: false, clickable: true }
+    */
+  var shapeOptions: js.UndefOr[typings.leaflet.leafletMod.PolylineOptions with Anon_Clickable] = js.undefined
   /**
-  			 * The options used when drawing the polyline/polygon on the map.
-  			 *
-  			 * Default value: See code
-  			 */
-  var shapeOptions: js.UndefOr[PathOptions] = js.undefined
-  /**
-  			 * Whether to display distance in the tooltip
-  			 *
-  			 * Default value: true
-  			 */
+    * Whether to display distance in the tooltip
+    *
+    * @default true
+    */
   var showLength: js.UndefOr[Boolean] = js.undefined
   var touchIcon: js.UndefOr[Icon[IconOptions] | DivIcon] = js.undefined
   /**
-  			 * This should be a high number to ensure that you can draw over all other layers on the map.
-  			 *
-  			 * Default value: 2000
-  			 */
+    * This should be a high number to ensure that you can draw over all other layers on the map.
+    *
+    * @default 2000
+    */
   var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
 
@@ -105,7 +99,7 @@ object PolylineOptions {
     metric: js.UndefOr[Boolean] = js.undefined,
     nautic: js.UndefOr[Boolean] = js.undefined,
     repeatMode: js.UndefOr[Boolean] = js.undefined,
-    shapeOptions: PathOptions = null,
+    shapeOptions: typings.leaflet.leafletMod.PolylineOptions with Anon_Clickable = null,
     showLength: js.UndefOr[Boolean] = js.undefined,
     touchIcon: Icon[IconOptions] | DivIcon = null,
     zIndexOffset: Int | Double = null

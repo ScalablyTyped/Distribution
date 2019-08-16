@@ -10,6 +10,10 @@ trait CustomerGateway extends js.Object {
     */
   var BgpAsn: js.UndefOr[String] = js.undefined
   /**
+    * The Amazon Resource Name (ARN) for the customer gateway certificate.
+    */
+  var CertificateArn: js.UndefOr[String] = js.undefined
+  /**
     * The ID of the customer gateway.
     */
   var CustomerGatewayId: js.UndefOr[String] = js.undefined
@@ -35,6 +39,7 @@ object CustomerGateway {
   @scala.inline
   def apply(
     BgpAsn: String = null,
+    CertificateArn: String = null,
     CustomerGatewayId: String = null,
     IpAddress: String = null,
     State: String = null,
@@ -43,6 +48,7 @@ object CustomerGateway {
   ): CustomerGateway = {
     val __obj = js.Dynamic.literal()
     if (BgpAsn != null) __obj.updateDynamic("BgpAsn")(BgpAsn)
+    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn)
     if (CustomerGatewayId != null) __obj.updateDynamic("CustomerGatewayId")(CustomerGatewayId)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
     if (State != null) __obj.updateDynamic("State")(State)

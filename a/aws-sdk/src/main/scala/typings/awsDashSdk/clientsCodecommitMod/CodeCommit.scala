@@ -26,6 +26,19 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDescribeMergeConflictsOutput, Unit]
   ): Request[BatchDescribeMergeConflictsOutput, AWSError] = js.native
   /**
+    * Returns information about the contents of one or more commits in a repository.
+    */
+  def batchGetCommits(): Request[BatchGetCommitsOutput, AWSError] = js.native
+  def batchGetCommits(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCommitsOutput, Unit]): Request[BatchGetCommitsOutput, AWSError] = js.native
+  /**
+    * Returns information about the contents of one or more commits in a repository.
+    */
+  def batchGetCommits(params: BatchGetCommitsInput): Request[BatchGetCommitsOutput, AWSError] = js.native
+  def batchGetCommits(
+    params: BatchGetCommitsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCommitsOutput, Unit]
+  ): Request[BatchGetCommitsOutput, AWSError] = js.native
+  /**
     * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
   def batchGetRepositories(): Request[BatchGetRepositoriesOutput, AWSError] = js.native

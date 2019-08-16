@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DrawVertex extends Event {
   /**
-  			 * List of all layers just being added from the map.
-  			 */
+    * List of all layers just being added from the map.
+    */
   var layers: LayerGroup[_] = js.native
 }
 

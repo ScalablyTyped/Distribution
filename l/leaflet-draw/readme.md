@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-draw
 
-Typings are for version 0.4
+Typings are for version 1.0
 
 ## Library description:
 Vector drawing plugin for Leaflet

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait EditHandlerOptions extends js.Object {
   /**
-  			 * The path options for how the layers will look while in edit mode.
-  			 * If this is set to null the editable path options will not be set.
-  			 *
-  			 * Default value: See code
-  			 */
+    * The path options for how the layers will look while in edit mode.
+    * If this is set to null the editable path options will not be set.
+    *
+    * @default { dashArray: '10, 10', fill: true, fillColor: '#fe57a1', fillOpacity: 0.1, maintainColor: false }
+    */
   var selectedPathOptions: js.UndefOr[PathOptions] = js.undefined
 }
 

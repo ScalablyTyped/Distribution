@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait RectangleOptions extends SimpleShapeOptions {
   /**
-  			 * Whether to use the metric measurement system or imperial
-  			 *
-  			 * Default value: true
-  			 */
+    * Whether to use the metric measurement system or imperial
+    *
+    * @default true
+    */
   var metric: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * The options used when drawing the rectangle on the map.
-  			 *
-  			 * Default value: See code
-  			 */
+    * The options used when drawing the rectangle on the map.
+    *
+    * @default {stroke: true, weight: 4, opacity: 0.5, fill: true, fillColor: null, fillOpacity: 0.2, showArea: true, clickable: true }
+    */
   var shapeOptions: js.UndefOr[PathOptions] = js.undefined
 }
 

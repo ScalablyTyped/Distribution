@@ -104,6 +104,8 @@ object policiesNs extends js.Object {
     class ConstantReconnectionPolicyCls protected () extends ConstantReconnectionPolicy {
       def this(delay: Double) = this()
       /* CompleteClass */
+      override def getOptions(): Map[String, _] = js.native
+      /* CompleteClass */
       override def newSchedule(): Anon_Next = js.native
     }
     
@@ -113,6 +115,8 @@ object policiesNs extends js.Object {
     @js.native
     class ExponentialReconnectionPolicyCls protected () extends ExponentialReconnectionPolicy {
       def this(baseDelay: Double, maxDelay: Double, startWithNoDelay: Boolean) = this()
+      /* CompleteClass */
+      override def getOptions(): Map[String, _] = js.native
       /* CompleteClass */
       override def newSchedule(): Anon_Next = js.native
     }
@@ -126,6 +130,7 @@ object policiesNs extends js.Object {
             ]
     
     trait ReconnectionPolicy extends js.Object {
+      def getOptions(): Map[String, _]
       def newSchedule(): Anon_Next
     }
     
@@ -222,9 +227,11 @@ object policiesNs extends js.Object {
     
     @js.native
     trait SpeculativeExecutionPolicy extends js.Object {
+      def getOptions(): Map[String, _] = js.native
       def init(client: Client): Unit = js.native
       def newPlan(keyspace: String, queryInfo: String): Anon_NextExecution = js.native
       def newPlan(keyspace: String, queryInfo: js.Array[String]): Anon_NextExecution = js.native
+      def shutdown(): Unit = js.native
     }
     
     var NoSpeculativeExecutionPolicy: NoSpeculativeExecutionPolicyStatic = js.native

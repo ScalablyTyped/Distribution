@@ -22,6 +22,10 @@ trait WorkGroupConfigurationUpdates extends js.Object {
     */
   var RemoveBytesScannedCutoffPerQuery: js.UndefOr[BoxedBoolean] = js.undefined
   /**
+    * If set to true, allows members assigned to a workgroup to specify Amazon S3 Requester Pays buckets in queries. If set to false, workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false. For more information about Requester Pays buckets, see Requester Pays Buckets in the Amazon Simple Storage Service Developer Guide.
+    */
+  var RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined
+  /**
     * The result configuration information about the queries in this workgroup that will be updated. Includes the updated results location and an updated option for encrypting query results.
     */
   var ResultConfigurationUpdates: js.UndefOr[typings.awsDashSdk.clientsAthenaMod.ResultConfigurationUpdates] = js.undefined
@@ -34,6 +38,7 @@ object WorkGroupConfigurationUpdates {
     EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
     PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
     RemoveBytesScannedCutoffPerQuery: js.UndefOr[BoxedBoolean] = js.undefined,
+    RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
     ResultConfigurationUpdates: ResultConfigurationUpdates = null
   ): WorkGroupConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
@@ -41,6 +46,7 @@ object WorkGroupConfigurationUpdates {
     if (!js.isUndefined(EnforceWorkGroupConfiguration)) __obj.updateDynamic("EnforceWorkGroupConfiguration")(EnforceWorkGroupConfiguration)
     if (!js.isUndefined(PublishCloudWatchMetricsEnabled)) __obj.updateDynamic("PublishCloudWatchMetricsEnabled")(PublishCloudWatchMetricsEnabled)
     if (!js.isUndefined(RemoveBytesScannedCutoffPerQuery)) __obj.updateDynamic("RemoveBytesScannedCutoffPerQuery")(RemoveBytesScannedCutoffPerQuery)
+    if (!js.isUndefined(RequesterPaysEnabled)) __obj.updateDynamic("RequesterPaysEnabled")(RequesterPaysEnabled)
     if (ResultConfigurationUpdates != null) __obj.updateDynamic("ResultConfigurationUpdates")(ResultConfigurationUpdates)
     __obj.asInstanceOf[WorkGroupConfigurationUpdates]
   }

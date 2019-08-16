@@ -7,34 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait CircleOptions extends SimpleShapeOptions {
   /**
-  			 * When not metric, use feet instead of yards for display
-  			 *
-  			 * Default value: true
-  			 */
+    * When not metric, use feet instead of yards for display
+    *
+    * @default true
+    */
   var feet: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * Whether to use the metric measurement system or imperial
-  			 *
-  			 * Default value: true
-  			 */
+    * Whether to use the metric measurement system or imperial
+    *
+    * @default true
+    */
   var metric: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * When not metric, not feet use nautic mile for display
-  			 *
-  			 * Default value: false
-  			 */
+    * When not metric, not feet use nautic mile for display
+    *
+    * @default false
+    */
   var nautic: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * The options used when drawing the circle on the map.
-  			 *
-  			 * Default value: See code
-  			 */
+    * The options used when drawing the circle on the map.
+    *
+    * @default { stroke: true, color: '#3388ff', weight: 4, opacity: 0.5, fill: true, fillColor: null, fillOpacity: 0.2, clickable: true }
+    */
   var shapeOptions: js.UndefOr[PathOptions] = js.undefined
   /**
-  			 * Whether to show the radius in the tooltip
-  			 *
-  			 * Default value: true
-  			 */
+    * Whether to show the radius in the tooltip
+    *
+    * @default true
+    */
   var showRadius: js.UndefOr[Boolean] = js.undefined
 }
 

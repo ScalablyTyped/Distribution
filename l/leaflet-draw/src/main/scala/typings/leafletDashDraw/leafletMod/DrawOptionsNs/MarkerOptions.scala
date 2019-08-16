@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 
 trait MarkerOptions extends js.Object {
   /**
-  			 * TThe icon displayed when drawing a marker.
-  			 *
-  			 * Default value: L.Icon.Default()
-  			 */
+    * The icon displayed when drawing a marker.
+    *
+    * @default L.Icon.Default()
+    */
   var icon: js.UndefOr[Icon[IconOptions] | DivIcon] = js.undefined
   /**
-  			 * Determines if the draw tool remains enabled after drawing a shape.
-  			 *
-  			 * Default value: false
-  			 */
+    * Determines if the draw tool remains enabled after drawing a shape.
+    *
+    * @default false
+    */
   var repeatMode: js.UndefOr[Boolean] = js.undefined
   /**
-  			 * This should be a high number to ensure that you can draw over all other layers on the map.
-  			 *
-  			 * Default value: 2000
-  			 */
+    * This should be a high number to ensure that you can draw over all other layers on the map.
+    *
+    * @default 2000
+    */
   var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
 

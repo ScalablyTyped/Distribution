@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Created extends Event {
   /**
-  			 * Layer that was just created.
-  			 */
+    * Layer that was just created.
+    */
   var layer: Circle[_] | CircleMarker[_] | Marker[_] | Polygon[_] | (Polyline[LineString | MultiLineString, _]) | Rectangle[_] = js.native
   /**
-  			 * The type of layer this is. One of: polyline, polygon, rectangle, circle, marker.
-  			 */
+    * The type of layer this is. One of: polyline, polygon, rectangle, circle, marker.
+    */
   var layerType: String = js.native
 }
 

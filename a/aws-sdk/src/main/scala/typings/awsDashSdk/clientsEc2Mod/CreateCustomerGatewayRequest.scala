@@ -10,13 +10,17 @@ trait CreateCustomerGatewayRequest extends js.Object {
     */
   var BgpAsn: Integer
   /**
+    * The Amazon Resource Name (ARN) for the customer gateway certificate.
+    */
+  var CertificateArn: js.UndefOr[String] = js.undefined
+  /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
     * The Internet-routable IP address for the customer gateway's outside interface. The address must be static.
     */
-  var PublicIp: String
+  var PublicIp: js.UndefOr[String] = js.undefined
   /**
     * The type of VPN connection that this customer gateway supports (ipsec.1).
     */
@@ -25,9 +29,17 @@ trait CreateCustomerGatewayRequest extends js.Object {
 
 object CreateCustomerGatewayRequest {
   @scala.inline
-  def apply(BgpAsn: Integer, PublicIp: String, Type: GatewayType, DryRun: js.UndefOr[Boolean] = js.undefined): CreateCustomerGatewayRequest = {
-    val __obj = js.Dynamic.literal(BgpAsn = BgpAsn, PublicIp = PublicIp, Type = Type.asInstanceOf[js.Any])
+  def apply(
+    BgpAsn: Integer,
+    Type: GatewayType,
+    CertificateArn: String = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    PublicIp: String = null
+  ): CreateCustomerGatewayRequest = {
+    val __obj = js.Dynamic.literal(BgpAsn = BgpAsn, Type = Type.asInstanceOf[js.Any])
+    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
+    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp)
     __obj.asInstanceOf[CreateCustomerGatewayRequest]
   }
 }

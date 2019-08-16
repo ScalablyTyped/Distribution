@@ -6,13 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait MapOptions extends js.Object {
   var drawControl: js.UndefOr[Boolean] = js.undefined
+  var drawControlTooltips: js.UndefOr[Boolean] = js.undefined
+  var touchExtend: js.UndefOr[Boolean] = js.undefined
 }
 
 object MapOptions {
   @scala.inline
-  def apply(drawControl: js.UndefOr[Boolean] = js.undefined): MapOptions = {
+  def apply(
+    drawControl: js.UndefOr[Boolean] = js.undefined,
+    drawControlTooltips: js.UndefOr[Boolean] = js.undefined,
+    touchExtend: js.UndefOr[Boolean] = js.undefined
+  ): MapOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(drawControl)) __obj.updateDynamic("drawControl")(drawControl)
+    if (!js.isUndefined(drawControlTooltips)) __obj.updateDynamic("drawControlTooltips")(drawControlTooltips)
+    if (!js.isUndefined(touchExtend)) __obj.updateDynamic("touchExtend")(touchExtend)
     __obj.asInstanceOf[MapOptions]
   }
 }

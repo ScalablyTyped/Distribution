@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object LatLngUtilNs extends js.Object {
   /**
-  		 * Clone the latLng and return a new LatLng object.
-  		 */
+    * Clone the latLng and return a new LatLng object.
+    */
   def cloneLatLng(latlng: LatLng): LatLng = js.native
   /**
-  		 * Clone the latLng point or points or nested points and return an array with those points
-  		 */
+    * Clone the latLng point or points or nested points and return an array with those points
+    */
   def cloneLatLngs(latlngs: js.Array[LatLng]): js.Array[js.Array[LatLng]] = js.native
 }
 

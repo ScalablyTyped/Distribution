@@ -598,6 +598,7 @@
 | [brace-expansion](./b/brace-expansion) | Brace expansion as known from sh/bash | - |
 | [braces](./b/braces) | Bash-like brace expansion, implemented in JavaScri | alpha, alphabetical, bash, brace, braces, expand, expansion, filepath, fill, fs, glob, globbing, letter, match, matches, matching, number, numerical, path, range, ranges, sh |
 | [braft-editor](./b/braft-editor) | Rich Text Editor Based On Draft.js | braft, draft, draft-js, rich, text, editor, rich-text-editor, wysiwyg |
+| [brainhubeu__react-carouse](./b/brainhubeu__react-carousel) | Carousel component for React | react, carousel, react-carousel, react-component, component, image, image-gallery, image-slider, responsive, gallery, rwd |
 | [braintree](./b/braintree) | A library for integrating with Braintree. | braintree, payments |
 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the  | braintree, payments |
 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt | - |
@@ -2431,7 +2432,6 @@
 | [hapi__iron](./h/hapi__iron) | Encapsulated tokens (encrypted and mac'ed objects) | authentication, encryption, data integrity |
 | [hapi__joi](./h/hapi__joi) | Object schema validation | schema, validation |
 | [hapi__lab](./h/hapi__lab) | Test utility | test, runner |
-| [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols | utilities |
 | [hapi__mimos](./h/hapi__mimos) | Mime database interface | mime, database, content-type |
 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes | hapi, plugin, websocket |
 | [hapi__podium](./h/hapi__podium) | Node compatible event emitter with extra features | emitter, event |
@@ -3445,6 +3445,7 @@
 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet | leaflet, map, pan |
 | [leaflet_dot_pm](./l/leaflet_dot_pm) | A Leaflet Plugin For Editing Geometry Layers in Le | leaflet, polygon management, geometry editing, map data, map overlay, polygon, geojson, leaflet-draw, data-field-geojson, ui-leaflet-draw |
 | [leaflet_dot_polylinemeasu](./l/leaflet_dot_polylinemeasure) | Leaflet Plugin to measure distances of simple line | - |
+| [leaflet_dot_utm](./l/leaflet_dot_utm) | Converts LatLng to UTM WGS84 in Leaflet | Leaflet, map, geo, UTM |
 | [leakage](./l/leakage) | Memory leak testing for node. Javascript memory fo | memory leak, testing, node, javascript, v8, heap |
 | [leap-year](./l/leap-year) | Check if a year is a leap year | leap, year, date |
 | [leapmotionts](./l/leapmotionts) | - | - |
@@ -3882,6 +3883,7 @@
 | [mandrill-api](./m/mandrill-api) | The official API client for the Mandrill email as  | - |
 | [map-age-cleaner](./m/map-age-cleaner) | Automatically cleanup expired items in a Map | map, age, cleaner, maxage, expire, expiration, expiring |
 | [map-obj](./m/map-obj) | Map object keys and values into a new object | map, obj, object, key, keys, value, values, val, iterate, iterator, rename, modify, deep, recurse, recursive |
+| [map-to-obj](./m/map-to-obj) | ES2015 Map to plain object. | - |
 | [mapbox](./m/mapbox) | interface to mapbox services | mapbox, interface, api, sdk |
 | [mapbox-gl](./m/mapbox-gl) | A WebGL interactive maps library | - |
 | [mapbox-gl-leaflet](./m/mapbox-gl-leaflet) | binding from mapbox gl to the leaflet api | mapbox, gl, leaflet, leafletjs, maps |
@@ -4206,6 +4208,7 @@
 | [named-regexp-groups](./n/named-regexp-groups) | Regular expressions with named capture groups and  | backreference, capture, expression, group, named, regex, regexp, regular |
 | [named-routes](./n/named-routes) | Named routes for node.js. Works with express and i | named, routes, i18n, router, reversable, express, web |
 | [nano](./n/nano) | The official CouchDB client for Node.js | couchdb, data, request, json, nosql, micro, nano, database |
+| [nano-equal](./n/nano-equal) | Ultra fast and compact implementation of deep equa | equal, deep equal |
 | [nanoajax](./n/nanoajax) | A small ajax lib | - |
 | [nanoevents](./n/nanoevents) | Simple and tiny (101 bytes) event emitter library | EventEmitter, Events, emit, emitter, event, pub/sub, publish, reactor, subscribe |
 | [nanographql](./n/nanographql) | Tiny graphQL client library | graphql, small, nano |
@@ -5679,7 +5682,6 @@
 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and exp | css, jquery, readmore, expand, collapse |
 | [realm](./r/realm) | Realm is a mobile database: an alternative to SQLi | database, db, react, react-native, persistence, localstorage, sqlite, asyncstorage, rocksdb, leveldb, realm |
 | [reapop](./r/reapop) | A React and Redux notifications system | reapop, react, redux, notifications, notification, component |
-| [rebass](./r/rebass) | React primitive UI components built with styled-sy | components, react, react-component, ui, design-system, styled-system, styled-components, presentational, stateless, functional |
 | [rebass__grid](./r/rebass__grid) | Responsive React grid system built with styled-sys | react, styled-components, styled-system, grid, flexbox, layout, css |
 | [rebind-host](./r/rebind-host) | Express middleware to bind the correct host | - |
 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j | recaptcha, captcha, security, csrf, express |
@@ -5857,6 +5859,7 @@
 | [reveal](./r/reveal) | The HTML presentation framework | - |
 | [rewire](./r/rewire) | Easy dependency injection for node.js unit testing | dependency, injection, mock, shim, module, unit, test, leak, inspect, fake, require |
 | [rfc2047](./r/rfc2047) | Encode and decode rfc2047 (MIME encoded words) | rfc2047, mime, email, header, subject, utf-8, non-ascii, iconv |
+| [rfc4648](./r/rfc4648) | Encoding and decoding for base64, base32, base16,  | Uint8Array, base16, base32, base32hex, base64, base64url, hex |
 | [rfc6902](./r/rfc6902) | Complete implementation of RFC6902 (patch and diff | json, patch, diff, rfc6902 |
 | [rgb-hex](./r/rgb-hex) | Convert RGB(A) color to HEX | rgb, hex, color, colour, convert, conversion, converter |
 | [rgrove__parse-xml](./r/rgrove__parse-xml) | A fast, safe, compliant XML parser for Node.js and | xml, parse, parser |
@@ -6620,6 +6623,8 @@
 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR | - |
 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js | console, stdout, stderr, test, spy, test double |
 | [test-listen](./t/test-listen) | Produce URLs to test HTTP servers with ephemeral p | - |
+| [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
+| [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library | react-testing-library, dom-testing-library, react, testing |
 | [testingbot-api](./t/testingbot-api) | A wrapper around TestingBot's REST API | - |
 | [tether](./t/tether) | A client-side library to make absolutely positione | - |

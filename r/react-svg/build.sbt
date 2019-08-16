@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-svg"
-version := "10.0.17-efc903"
+version := "10.0.17-dc9bda"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc",
   "org.scalablytyped" %%% "tanem__svg-injector" % "8.0.25-b48725")
 publishArtifact in packageDoc := false

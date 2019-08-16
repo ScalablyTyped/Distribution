@@ -18,6 +18,10 @@ trait DescribeSnapshotScheduleOutput extends js.Object {
     */
   var StartAt: js.UndefOr[HourOfDay] = js.undefined
   /**
+    * A list of up to 50 tags assigned to the snapshot schedule, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
+    */
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.Tags] = js.undefined
+  /**
     * A value that indicates the time zone of the gateway.
     */
   var Timezone: js.UndefOr[GatewayTimezone] = js.undefined
@@ -33,6 +37,7 @@ object DescribeSnapshotScheduleOutput {
     Description: Description = null,
     RecurrenceInHours: js.UndefOr[RecurrenceInHours] = js.undefined,
     StartAt: js.UndefOr[HourOfDay] = js.undefined,
+    Tags: Tags = null,
     Timezone: GatewayTimezone = null,
     VolumeARN: VolumeARN = null
   ): DescribeSnapshotScheduleOutput = {
@@ -40,6 +45,7 @@ object DescribeSnapshotScheduleOutput {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(RecurrenceInHours)) __obj.updateDynamic("RecurrenceInHours")(RecurrenceInHours)
     if (!js.isUndefined(StartAt)) __obj.updateDynamic("StartAt")(StartAt)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN)
     __obj.asInstanceOf[DescribeSnapshotScheduleOutput]

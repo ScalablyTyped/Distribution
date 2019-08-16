@@ -10,6 +10,10 @@ trait VgwTelemetry extends js.Object {
     */
   var AcceptedRouteCount: js.UndefOr[Integer] = js.undefined
   /**
+    * The Amazon Resource Name (ARN) of the VPN tunnel endpoint certificate.
+    */
+  var CertificateArn: js.UndefOr[String] = js.undefined
+  /**
     * The date and time of the last change in status.
     */
   var LastStatusChange: js.UndefOr[DateTime] = js.undefined
@@ -31,6 +35,7 @@ object VgwTelemetry {
   @scala.inline
   def apply(
     AcceptedRouteCount: js.UndefOr[Integer] = js.undefined,
+    CertificateArn: String = null,
     LastStatusChange: DateTime = null,
     OutsideIpAddress: String = null,
     Status: TelemetryStatus = null,
@@ -38,6 +43,7 @@ object VgwTelemetry {
   ): VgwTelemetry = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AcceptedRouteCount)) __obj.updateDynamic("AcceptedRouteCount")(AcceptedRouteCount)
+    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn)
     if (LastStatusChange != null) __obj.updateDynamic("LastStatusChange")(LastStatusChange)
     if (OutsideIpAddress != null) __obj.updateDynamic("OutsideIpAddress")(OutsideIpAddress)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

@@ -41,7 +41,7 @@ class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
   var refs: StringDictionary[ReactInstance] = js.native
   var state: S = js.native
   def forceUpdate(): Unit = js.native
-  def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
+  def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   def render(): ReactNode = js.native
   def setState[K /* <: String */](): Unit = js.native
   def setState[K /* <: String */](state: S): Unit = js.native

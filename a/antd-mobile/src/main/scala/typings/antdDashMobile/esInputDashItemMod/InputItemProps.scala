@@ -12,6 +12,7 @@ import typings.antdDashMobile.antdDashMobileStrings.text
 import typings.antdDashMobile.antdDashMobileStrings.top
 import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputEventHandler
 import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputItemPropsType
+import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -37,6 +38,7 @@ object InputItemProps {
     clear: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    disabledKeys: js.Array[InputKey] = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,
@@ -68,6 +70,7 @@ object InputItemProps {
     if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledKeys != null) __obj.updateDynamic("disabledKeys")(disabledKeys)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])

@@ -30,6 +30,7 @@ trait DataSource extends js.Object {
   var roles: js.UndefOr[String] = js.undefined
   var subquery: js.UndefOr[String | js.Object] = js.undefined
   var thousandSeparator: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   var username: js.UndefOr[String] = js.undefined
 }
 
@@ -60,6 +61,7 @@ object DataSource {
     roles: String = null,
     subquery: String | js.Object = null,
     thousandSeparator: String = null,
+    `type`: String = null,
     username: String = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
@@ -87,6 +89,7 @@ object DataSource {
     if (roles != null) __obj.updateDynamic("roles")(roles)
     if (subquery != null) __obj.updateDynamic("subquery")(subquery.asInstanceOf[js.Any])
     if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[DataSource]
   }

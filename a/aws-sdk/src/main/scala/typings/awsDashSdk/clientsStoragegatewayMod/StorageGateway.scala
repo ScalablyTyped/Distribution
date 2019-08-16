@@ -701,12 +701,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListVolumesOutput, Unit]
   ): Request[ListVolumesOutput, AWSError] = js.native
   /**
-    * Sends you notification through CloudWatch Events when all files written to your NFS file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the NFS file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting File Upload Notification in the Storage Gateway User Guide (https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-upload-notification). 
+    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting File Upload Notification in the Storage Gateway User Guide (https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-upload-notification). 
     */
   def notifyWhenUploaded(): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   def notifyWhenUploaded(callback: js.Function2[/* err */ AWSError, /* data */ NotifyWhenUploadedOutput, Unit]): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   /**
-    * Sends you notification through CloudWatch Events when all files written to your NFS file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the NFS file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting File Upload Notification in the Storage Gateway User Guide (https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-upload-notification). 
+    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting File Upload Notification in the Storage Gateway User Guide (https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-upload-notification). 
     */
   def notifyWhenUploaded(params: NotifyWhenUploadedInput): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   def notifyWhenUploaded(
@@ -922,12 +922,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBFileShareOutput, Unit]
   ): Request[UpdateSMBFileShareOutput, AWSError] = js.native
   /**
-    * Updates the SMB security strategy on a file gateway. This action is only supported in file gateways.
+    * Updates the SMB security strategy on a file gateway. This action is only supported in file gateways.  This API is called Security level in the User Guide. A higher security level can affect performance of the gateway. 
     */
   def updateSMBSecurityStrategy(): Request[UpdateSMBSecurityStrategyOutput, AWSError] = js.native
   def updateSMBSecurityStrategy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBSecurityStrategyOutput, Unit]): Request[UpdateSMBSecurityStrategyOutput, AWSError] = js.native
   /**
-    * Updates the SMB security strategy on a file gateway. This action is only supported in file gateways.
+    * Updates the SMB security strategy on a file gateway. This action is only supported in file gateways.  This API is called Security level in the User Guide. A higher security level can affect performance of the gateway. 
     */
   def updateSMBSecurityStrategy(params: UpdateSMBSecurityStrategyInput): Request[UpdateSMBSecurityStrategyOutput, AWSError] = js.native
   def updateSMBSecurityStrategy(

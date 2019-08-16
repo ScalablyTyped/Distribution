@@ -1,7 +1,7 @@
 
 # Scala.js typings for promptly
 
-Typings are for version 1.1.1
+Typings are for version 3.0.3
 
 ## Library description:
 Simple command line prompting utility

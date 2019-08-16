@@ -30,6 +30,12 @@ object mapboxDashGlStrings {
   sealed trait `/` extends ExpressionName
   
   @js.native
+  sealed trait `2d` extends js.Object
+  
+  @js.native
+  sealed trait `3d` extends js.Object
+  
+  @js.native
   sealed trait `<` extends ExpressionName
   
   @js.native
@@ -181,6 +187,9 @@ object mapboxDashGlStrings {
   
   @js.native
   sealed trait cos extends ExpressionName
+  
+  @js.native
+  sealed trait custom extends js.Object
   
   @js.native
   sealed trait data extends js.Object
@@ -605,6 +614,10 @@ object mapboxDashGlStrings {
   @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]
   @scala.inline
+  def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  @scala.inline
+  def `3d`: `3d` = "3d".asInstanceOf[`3d`]
+  @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline
   def `<=`: `<=` = "<=".asInstanceOf[`<=`]
@@ -706,6 +719,8 @@ object mapboxDashGlStrings {
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
   def cos: cos = "cos".asInstanceOf[cos]
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline

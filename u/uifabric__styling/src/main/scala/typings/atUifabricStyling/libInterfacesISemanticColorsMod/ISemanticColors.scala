@@ -85,6 +85,10 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var disabledBackground: String
   /**
+    * The default color for border of disabled controls; e.g. disabled slider, disabled toggle border.
+    */
+  var disabledBorder: String
+  /**
     * The background for errors, if necessary, or highlighting the section of the page where the error is present.
     */
   var errorBackground: String
@@ -133,6 +137,10 @@ trait ISemanticColors extends ISemanticTextColors {
     * The color for hovered icon ; e.g. SearchBox magnifying glass in hovered state.
     */
   var inputIconHovered: String
+  /**
+    * The placeholder background color of a checked control, e.g. slider background, spinner background.
+    */
+  var inputPlaceholderBackgroundChecked: String
   /**
     * The background color for the entire list.
     */
@@ -275,6 +283,7 @@ object ISemanticColors {
     disabledBackground: String,
     disabledBodySubtext: String,
     disabledBodyText: String,
+    disabledBorder: String,
     disabledSubtext: String,
     disabledText: String,
     errorBackground: String,
@@ -290,6 +299,7 @@ object ISemanticColors {
     inputIcon: String,
     inputIconDisabled: String,
     inputIconHovered: String,
+    inputPlaceholderBackgroundChecked: String,
     inputPlaceholderText: String,
     inputText: String,
     inputTextHovered: String,
@@ -330,7 +340,7 @@ object ISemanticColors {
     warningHighlight: String,
     warningText: String
   ): ISemanticColors = {
-    val __obj = js.Dynamic.literal(accentButtonBackground = accentButtonBackground, accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, blockingBackground = blockingBackground, bodyBackground = bodyBackground, bodyDivider = bodyDivider, bodyFrameBackground = bodyFrameBackground, bodyFrameDivider = bodyFrameDivider, bodyStandoutBackground = bodyStandoutBackground, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonBackground = buttonBackground, buttonBackgroundChecked = buttonBackgroundChecked, buttonBackgroundCheckedHovered = buttonBackgroundCheckedHovered, buttonBackgroundDisabled = buttonBackgroundDisabled, buttonBackgroundHovered = buttonBackgroundHovered, buttonBackgroundPressed = buttonBackgroundPressed, buttonBorder = buttonBorder, buttonBorderDisabled = buttonBorderDisabled, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, defaultStateBackground = defaultStateBackground, disabledBackground = disabledBackground, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledSubtext = disabledSubtext, disabledText = disabledText, errorBackground = errorBackground, errorText = errorText, focusBorder = focusBorder, inputBackground = inputBackground, inputBackgroundChecked = inputBackgroundChecked, inputBackgroundCheckedHovered = inputBackgroundCheckedHovered, inputBorder = inputBorder, inputBorderHovered = inputBorderHovered, inputFocusBorderAlt = inputFocusBorderAlt, inputForegroundChecked = inputForegroundChecked, inputIcon = inputIcon, inputIconDisabled = inputIconDisabled, inputIconHovered = inputIconHovered, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listBackground = listBackground, listHeaderBackgroundHovered = listHeaderBackgroundHovered, listHeaderBackgroundPressed = listHeaderBackgroundPressed, listItemBackgroundChecked = listItemBackgroundChecked, listItemBackgroundCheckedHovered = listItemBackgroundCheckedHovered, listItemBackgroundHovered = listItemBackgroundHovered, listText = listText, listTextColor = listTextColor, menuBackground = menuBackground, menuDivider = menuDivider, menuHeader = menuHeader, menuIcon = menuIcon, menuItemBackgroundChecked = menuItemBackgroundChecked, menuItemBackgroundHovered = menuItemBackgroundHovered, menuItemBackgroundPressed = menuItemBackgroundPressed, menuItemText = menuItemText, menuItemTextHovered = menuItemTextHovered, primaryButtonBackground = primaryButtonBackground, primaryButtonBackgroundDisabled = primaryButtonBackgroundDisabled, primaryButtonBackgroundHovered = primaryButtonBackgroundHovered, primaryButtonBackgroundPressed = primaryButtonBackgroundPressed, primaryButtonBorder = primaryButtonBorder, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, smallInputBorder = smallInputBorder, successBackground = successBackground, successText = successText, variantBorder = variantBorder, variantBorderHovered = variantBorderHovered, warningBackground = warningBackground, warningHighlight = warningHighlight, warningText = warningText)
+    val __obj = js.Dynamic.literal(accentButtonBackground = accentButtonBackground, accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, blockingBackground = blockingBackground, bodyBackground = bodyBackground, bodyDivider = bodyDivider, bodyFrameBackground = bodyFrameBackground, bodyFrameDivider = bodyFrameDivider, bodyStandoutBackground = bodyStandoutBackground, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonBackground = buttonBackground, buttonBackgroundChecked = buttonBackgroundChecked, buttonBackgroundCheckedHovered = buttonBackgroundCheckedHovered, buttonBackgroundDisabled = buttonBackgroundDisabled, buttonBackgroundHovered = buttonBackgroundHovered, buttonBackgroundPressed = buttonBackgroundPressed, buttonBorder = buttonBorder, buttonBorderDisabled = buttonBorderDisabled, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, defaultStateBackground = defaultStateBackground, disabledBackground = disabledBackground, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledBorder = disabledBorder, disabledSubtext = disabledSubtext, disabledText = disabledText, errorBackground = errorBackground, errorText = errorText, focusBorder = focusBorder, inputBackground = inputBackground, inputBackgroundChecked = inputBackgroundChecked, inputBackgroundCheckedHovered = inputBackgroundCheckedHovered, inputBorder = inputBorder, inputBorderHovered = inputBorderHovered, inputFocusBorderAlt = inputFocusBorderAlt, inputForegroundChecked = inputForegroundChecked, inputIcon = inputIcon, inputIconDisabled = inputIconDisabled, inputIconHovered = inputIconHovered, inputPlaceholderBackgroundChecked = inputPlaceholderBackgroundChecked, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listBackground = listBackground, listHeaderBackgroundHovered = listHeaderBackgroundHovered, listHeaderBackgroundPressed = listHeaderBackgroundPressed, listItemBackgroundChecked = listItemBackgroundChecked, listItemBackgroundCheckedHovered = listItemBackgroundCheckedHovered, listItemBackgroundHovered = listItemBackgroundHovered, listText = listText, listTextColor = listTextColor, menuBackground = menuBackground, menuDivider = menuDivider, menuHeader = menuHeader, menuIcon = menuIcon, menuItemBackgroundChecked = menuItemBackgroundChecked, menuItemBackgroundHovered = menuItemBackgroundHovered, menuItemBackgroundPressed = menuItemBackgroundPressed, menuItemText = menuItemText, menuItemTextHovered = menuItemTextHovered, primaryButtonBackground = primaryButtonBackground, primaryButtonBackgroundDisabled = primaryButtonBackgroundDisabled, primaryButtonBackgroundHovered = primaryButtonBackgroundHovered, primaryButtonBackgroundPressed = primaryButtonBackgroundPressed, primaryButtonBorder = primaryButtonBorder, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, smallInputBorder = smallInputBorder, successBackground = successBackground, successText = successText, variantBorder = variantBorder, variantBorderHovered = variantBorderHovered, warningBackground = warningBackground, warningHighlight = warningHighlight, warningText = warningText)
   
     __obj.asInstanceOf[ISemanticColors]
   }

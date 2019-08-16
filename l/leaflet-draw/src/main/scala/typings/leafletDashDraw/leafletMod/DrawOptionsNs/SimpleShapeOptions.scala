@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait SimpleShapeOptions extends js.Object {
   /**
-  			 * Determines if the draw tool remains enabled after drawing a shape.
-  			 *
-  			 * Default value: false
-  			 */
+    * Determines if the draw tool remains enabled after drawing a shape.
+    *
+    * @default false
+    */
   var repeatMode: js.UndefOr[Boolean] = js.undefined
 }
 

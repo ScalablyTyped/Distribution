@@ -3,6 +3,7 @@ package typings.antdDashMobile.esInputDashItemCustomInputMod
 import typings.antdDashMobile.antdDashMobileStrings.left
 import typings.antdDashMobile.antdDashMobileStrings.right
 import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputEventHandler
+import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
@@ -17,6 +18,7 @@ trait NumberInputProps extends js.Object {
   var cancelKeyboardLabel: js.Any
   var confirmLabel: js.Any
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabledKeys: js.UndefOr[js.Array[InputKey] | Null] = js.undefined
   var editable: js.UndefOr[Boolean] = js.undefined
   var keyboardPrefixCls: js.UndefOr[String] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
@@ -42,6 +44,7 @@ object NumberInputProps {
     confirmLabel: js.Any,
     autoAdjustHeight: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    disabledKeys: js.Array[InputKey] = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     keyboardPrefixCls: String = null,
     maxLength: Int | Double = null,
@@ -61,6 +64,7 @@ object NumberInputProps {
     val __obj = js.Dynamic.literal(backspaceLabel = backspaceLabel, cancelKeyboardLabel = cancelKeyboardLabel, confirmLabel = confirmLabel)
     if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledKeys != null) __obj.updateDynamic("disabledKeys")(disabledKeys)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (keyboardPrefixCls != null) __obj.updateDynamic("keyboardPrefixCls")(keyboardPrefixCls)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])

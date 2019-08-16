@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait NoticeBarPropsType extends js.Object {
   var action: js.UndefOr[ReactElement] = js.undefined
-  var icon: js.UndefOr[ReactElement] = js.undefined
+  var icon: js.UndefOr[ReactElement | Null] = js.undefined
   var mode: js.UndefOr[closable | link] = js.undefined
   var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
 }

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20190806Z-036bfe"
+version := "v0.1.0-dt-20190806Z-d5ba5b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "2.6.3-9ce8f0",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-e89f7b",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-fbe1ee",
   "org.scalablytyped" %%% "intl-messageformat" % "5.4.3-0af1c1",
   "org.scalablytyped" %%% "intl-messageformat-parser" % "2.1.3-30e832",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
-  "org.scalablytyped" %%% "react-intl" % "3.1.8-75465f",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190627Z-21e9f7",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
+  "org.scalablytyped" %%% "react-intl" % "3.1.8-963b86",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190815Z-908226",
   "org.scalablytyped" %%% "redux" % "4.0.4-567508",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

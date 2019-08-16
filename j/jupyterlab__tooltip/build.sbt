@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__tooltip"
-version := "1.0.3-919f03"
+version := "1.0.3-48d3fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.3-28e002",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.3-aec5af",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-6bcff4",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-5715ac",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.3-d1752a",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.3-7eae66",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.3.0-6a1a4b",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.0.3-f86bab",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-88b58f",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-e0bcde",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.0-503993",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

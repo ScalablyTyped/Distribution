@@ -29,15 +29,10 @@ trait LoginButtonProps extends js.Object {
     */
   var onLogoutFinished: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
-    * Represents the publish permissions to request when the login
-    * button is pressed.
-    */
-  var publishPermissions: js.UndefOr[js.Array[Permissions]] = js.undefined
-  /**
-    * Represents the read permissions to request when the login button
+    * Represents the permissions to request when the login button
     * is pressed.
     */
-  var readPermissions: js.UndefOr[js.Array[Permissions]] = js.undefined
+  var permissions: js.UndefOr[js.Array[Permissions]] = js.undefined
   /**
     * View style, if any.
     */
@@ -57,8 +52,7 @@ object LoginButtonProps {
     loginBehaviorIOS: LoginBehaviorIOS = null,
     onLoginFinished: (/* error */ js.Object, /* result */ LoginResult) => Unit = null,
     onLogoutFinished: () => Unit = null,
-    publishPermissions: js.Array[Permissions] = null,
-    readPermissions: js.Array[Permissions] = null,
+    permissions: js.Array[Permissions] = null,
     style: ViewStyle = null,
     tooltipBehaviorIOS: TooltipBehaviorIOS = null
   ): LoginButtonProps = {
@@ -68,8 +62,7 @@ object LoginButtonProps {
     if (loginBehaviorIOS != null) __obj.updateDynamic("loginBehaviorIOS")(loginBehaviorIOS)
     if (onLoginFinished != null) __obj.updateDynamic("onLoginFinished")(js.Any.fromFunction2(onLoginFinished))
     if (onLogoutFinished != null) __obj.updateDynamic("onLogoutFinished")(js.Any.fromFunction0(onLogoutFinished))
-    if (publishPermissions != null) __obj.updateDynamic("publishPermissions")(publishPermissions)
-    if (readPermissions != null) __obj.updateDynamic("readPermissions")(readPermissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltipBehaviorIOS != null) __obj.updateDynamic("tooltipBehaviorIOS")(tooltipBehaviorIOS)
     __obj.asInstanceOf[LoginButtonProps]

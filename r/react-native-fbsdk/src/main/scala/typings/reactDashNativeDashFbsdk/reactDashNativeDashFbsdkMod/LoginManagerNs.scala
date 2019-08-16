@@ -16,7 +16,7 @@ object LoginManagerNs extends js.Object {
     */
   def getLoginBehavior(): js.Promise[LoginBehavior] = js.native
   /**
-    * Logs the user in with the requested read and/or publish permissions.
+    * Logs the user in with the requested permissions.
     */
   def logInWithPermissions(permissions: js.Array[Permissions]): js.Promise[LoginResult] = js.native
   /**

@@ -3,7 +3,7 @@ package typings.leafletDashDraw.leafletMod.DrawOptionsNs
 import typings.leaflet.leafletMod.DivIcon
 import typings.leaflet.leafletMod.Icon
 import typings.leaflet.leafletMod.IconOptions
-import typings.leaflet.leafletMod.PathOptions
+import typings.leafletDashDraw.Anon_Clickable
 import typings.leafletDashDraw.leafletMod.PrecisionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation._
 
 trait PolygonOptions extends PolylineOptions {
   /**
-  			 * Defines the precision for each type of unit (e.g. {km: 2, ft: 0}
-  			 *
-  			 * Default value: {}
-  			 */
+    * Defines the precision for each type of unit (e.g. {km: 2, ft: 0}
+    *
+    * @default {}
+    */
   var precision: js.UndefOr[PrecisionOptions] = js.undefined
   /**
-  			 * Show the area of the drawn polygon in m², ha or km².
-  			 * The area is only approximate and become less accurate the larger the polygon is.
-  			 *
-  			 * Default value: false
-  			 */
+    * Show the area of the drawn polygon in m², ha or km².
+    * The area is only approximate and become less accurate the larger the polygon is.
+    *
+    * @default false
+    */
   var showArea: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -40,7 +40,7 @@ object PolygonOptions {
     nautic: js.UndefOr[Boolean] = js.undefined,
     precision: PrecisionOptions = null,
     repeatMode: js.UndefOr[Boolean] = js.undefined,
-    shapeOptions: PathOptions = null,
+    shapeOptions: typings.leaflet.leafletMod.PolylineOptions with Anon_Clickable = null,
     showArea: js.UndefOr[Boolean] = js.undefined,
     showLength: js.UndefOr[Boolean] = js.undefined,
     touchIcon: Icon[IconOptions] | DivIcon = null,

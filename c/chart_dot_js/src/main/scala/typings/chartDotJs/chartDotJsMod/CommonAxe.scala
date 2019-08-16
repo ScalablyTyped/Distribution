@@ -26,6 +26,7 @@ trait CommonAxe extends js.Object {
   var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var maxBarThickness: js.UndefOr[Double] = js.undefined
+  var minBarLength: js.UndefOr[Double] = js.undefined
   var offset: js.UndefOr[Boolean] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.undefined
@@ -58,6 +59,7 @@ object CommonAxe {
     gridLines: GridLineOptions = null,
     id: String = null,
     maxBarThickness: Int | Double = null,
+    minBarLength: Int | Double = null,
     offset: js.UndefOr[Boolean] = js.undefined,
     position: String = null,
     scaleLabel: ScaleTitleOptions = null,
@@ -87,6 +89,7 @@ object CommonAxe {
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
     if (id != null) __obj.updateDynamic("id")(id)
     if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
+    if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
     if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
     if (position != null) __obj.updateDynamic("position")(position)
     if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel)

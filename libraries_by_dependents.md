@@ -2171,7 +2171,6 @@
 | 61 | [parsimmon](./p/parsimmon) | A monadic LL(infinity) parser combinator library
 | 61 | [react-native-scrollable-t](./r/react-native-scrollable-tab-view) | -
 | 61 | [react-pose](./r/react-pose) | A declarative animation library for React
-| 61 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 61 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
 | 61 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
 | 61 | [ssri](./s/ssri) | Standard Subresource Integrity library --  parses,
@@ -3056,6 +3055,7 @@
 | 29 | [react-fa](./r/react-fa) | Font Awesome icons as React components
 | 29 | [react-map-gl](./r/react-map-gl) | A React wrapper for MapboxGL-js and overlay API.
 | 29 | [resemblejs](./r/resemblejs) | Image analysis and comparison with HTML5
+| 29 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
 | 29 | [throng](./t/throng) | A simple worker-manager for clustered apps
 | 29 | [tunnel-ssh](./t/tunnel-ssh) | Easy extendable SSH tunnel
 | 29 | [twix](./t/twix) | Twix.js allows you to work with date ranges
@@ -3681,6 +3681,7 @@
 | 17 | [react-spinner](./r/react-spinner) | Zero configuration loading spinner.
 | 17 | [redux-auth-wrapper](./r/redux-auth-wrapper) | A utility library for handling authentication and 
 | 17 | [restangular](./r/restangular) | Restful Resources service for AngularJS apps
+| 17 | [rfc4648](./r/rfc4648) | Encoding and decoding for base64, base32, base16, 
 | 17 | [rgrove__parse-xml](./r/rgrove__parse-xml) | A fast, safe, compliant XML parser for Node.js and
 | 17 | [rn-fetch-blob](./r/rn-fetch-blob) | A module provides upload, download, and files acce
 | 17 | [rx-dom](./r/rx-dom) | Library for using DOM elements as well as Ajax req
@@ -3959,6 +3960,7 @@
 | 13 | [strip-bom-buf](./s/strip-bom-buf) | Strip UTF-8 byte order mark (BOM) from a buffer
 | 13 | [styletron-react](./s/styletron-react) | React bindings for Styletron
 | 13 | [svg-path-parser](./s/svg-path-parser) | A parser for SVG's path syntax
+| 13 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 13 | [transducers-js](./t/transducers-js) | A Transducers implementation for JavaScript
 | 13 | [two_dot_js](./t/two_dot_js) | A renderer agnostic two-dimensional drawing api fo
 | 13 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV
@@ -4897,6 +4899,7 @@
 | 5 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 5 | [mjml-react](./m/mjml-react) |  &middot; 
 | 5 | [mongoose-sequence](./m/mongoose-sequence) | Very generic autoincrement plugin for mongoose
+| 5 | [nano-equal](./n/nano-equal) | Ultra fast and compact implementation of deep equa
 | 5 | [negative-zero](./n/negative-zero) | Check if a number is negative zero
 | 5 | [net-keepalive](./n/net-keepalive) | Provides high-level access to socket options like 
 | 5 | [nivo__scales](./n/nivo__scales) | -
@@ -6293,6 +6296,7 @@
 | 0 | [bootstrap-growl-ifightcri](./b/bootstrap-growl-ifightcrime) | Pretty simple jQuery plugin that turns standard Bo
 | 0 | [botvs](./b/botvs) | -
 | 0 | [box2d](./b/box2d) | 2D physics engine
+| 0 | [brainhubeu__react-carouse](./b/brainhubeu__react-carousel) | Carousel component for React
 | 0 | [browser-fingerprint](./b/browser-fingerprint) | Generate a fingerprint of a browser
 | 0 | [browser-harness](./b/browser-harness) | Browser Harness ===============
 | 0 | [browser-report](./b/browser-report) | Report browser settings like whatsmybrowser.org.
@@ -6447,7 +6451,6 @@
 | 0 | [hapi__hapi](./h/hapi__hapi) | HTTP Server framework
 | 0 | [hapi__inert](./h/hapi__inert) | Static file and directory handlers plugin for hapi
 | 0 | [hapi__lab](./h/hapi__lab) | Test utility
-| 0 | [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols
 | 0 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes
 | 0 | [hapi__vision](./h/hapi__vision) | Templates rendering plugin support for hapi.js
 | 0 | [hapi__yar](./h/hapi__yar) | Cookie jar plugin for Hapi
@@ -6537,6 +6540,7 @@
 | 0 | [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
 | 0 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet
+| 0 | [leaflet_dot_utm](./l/leaflet_dot_utm) | Converts LatLng to UTM WGS84 in Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
 | 0 | [libra-core](./l/libra-core) | Library for Crypto
 | 0 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
@@ -6555,6 +6559,7 @@
 | 0 | [macrotask](./m/macrotask) | A cross browser macrotask library
 | 0 | [magic-number](./m/magic-number) | Determine a file's type from its magic number.
 | 0 | [magicsuggest](./m/magicsuggest) | MagicSuggest is a multiple selection auto suggest 
+| 0 | [map-to-obj](./m/map-to-obj) | ES2015 Map to plain object.
 | 0 | [marker-animate-unobtrusiv](./m/marker-animate-unobtrusive) | Unobtrusive Google Maps animated marker
 | 0 | [markitup](./m/markitup) | A framework agnostic Javascript library that add p
 | 0 | [maskedinput](./m/maskedinput) | Maskedinput is a javascript library which creates 

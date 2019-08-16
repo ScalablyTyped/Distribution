@@ -150,6 +150,9 @@ object reactDashResizeDashDetectorStrings {
   sealed trait header extends js.Object
   
   @js.native
+  sealed trait height extends js.Object
+  
+  @js.native
   sealed trait hgroup extends js.Object
   
   @js.native
@@ -356,6 +359,9 @@ object reactDashResizeDashDetectorStrings {
   @js.native
   sealed trait webview extends js.Object
   
+  @js.native
+  sealed trait width extends js.Object
+  
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -452,6 +458,8 @@ object reactDashResizeDashDetectorStrings {
   def head: head = "head".asInstanceOf[head]
   @scala.inline
   def header: header = "header".asInstanceOf[header]
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
@@ -590,5 +598,7 @@ object reactDashResizeDashDetectorStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
 }
 

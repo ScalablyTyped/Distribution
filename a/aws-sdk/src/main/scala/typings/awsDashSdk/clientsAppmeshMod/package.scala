@@ -13,6 +13,7 @@ package object clientsAppmeshMod {
   type AwsCloudMapInstanceAttributes = js.Array[AwsCloudMapInstanceAttribute]
   type AwsCloudMapName = java.lang.String
   type Backends = js.Array[Backend]
+  type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ALLOW_ALL
@@ -21,10 +22,32 @@ package object clientsAppmeshMod {
   */
   type EgressFilterType = _EgressFilterType | java.lang.String
   type FilePath = java.lang.String
+  type HeaderMatch = java.lang.String
+  type HeaderName = java.lang.String
   type HealthCheckIntervalMillis = Double
   type HealthCheckThreshold = Double
   type HealthCheckTimeoutMillis = Double
   type Hostname = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.connect
+    - typings.awsDashSdk.awsDashSdkStrings.delete
+    - typings.awsDashSdk.awsDashSdkStrings.get
+    - typings.awsDashSdk.awsDashSdkStrings.head
+    - typings.awsDashSdk.awsDashSdkStrings.options
+    - typings.awsDashSdk.awsDashSdkStrings.patch
+    - typings.awsDashSdk.awsDashSdkStrings.post
+    - typings.awsDashSdk.awsDashSdkStrings.put
+    - typings.awsDashSdk.awsDashSdkStrings.trace
+    - java.lang.String
+  */
+  type HttpMethod = _HttpMethod | java.lang.String
+  type HttpRouteHeaders = js.Array[HttpRouteHeader]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.http
+    - typings.awsDashSdk.awsDashSdkStrings.https
+    - java.lang.String
+  */
+  type HttpScheme = _HttpScheme | java.lang.String
   type ListMeshesLimit = Double
   type ListRoutesLimit = Double
   type ListVirtualNodesLimit = Double
@@ -50,6 +73,7 @@ package object clientsAppmeshMod {
   type PortProtocol = _PortProtocol | java.lang.String
   type ResourceName = java.lang.String
   type RouteList = js.Array[RouteRef]
+  type RoutePriority = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
     - typings.awsDashSdk.awsDashSdkStrings.DELETED

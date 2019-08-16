@@ -19,6 +19,7 @@ trait InputItemPropsType extends js.Object {
   var clear: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabledKeys: js.UndefOr[js.Array[InputKey] | Null] = js.undefined
   var editable: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var extra: js.UndefOr[ReactNode] = js.undefined
@@ -47,6 +48,7 @@ object InputItemPropsType {
     clear: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    disabledKeys: js.Array[InputKey] = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,
@@ -72,6 +74,7 @@ object InputItemPropsType {
     if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledKeys != null) __obj.updateDynamic("disabledKeys")(disabledKeys)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])

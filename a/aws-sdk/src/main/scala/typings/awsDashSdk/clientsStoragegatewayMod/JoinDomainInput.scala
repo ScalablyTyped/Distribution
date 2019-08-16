@@ -18,7 +18,7 @@ trait JoinDomainInput extends js.Object {
     */
   var GatewayARN: typings.awsDashSdk.clientsStoragegatewayMod.GatewayARN
   /**
-    * The organizational unit (OU) is a container with an Active Directory that can hold users, groups, computers, and other OUs and this parameter specifies the OU that the gateway will join within the AD domain.
+    * The organizational unit (OU) is a container in an Active Directory that can hold users, groups, computers, and other OUs and this parameter specifies the OU that the gateway will join within the AD domain.
     */
   var OrganizationalUnit: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.OrganizationalUnit] = js.undefined
   /**

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.native_only
   - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.web_only
 */
-trait LoginBehaviorAndroid extends LoginBehavior
+trait LoginBehaviorAndroid extends js.Object
 

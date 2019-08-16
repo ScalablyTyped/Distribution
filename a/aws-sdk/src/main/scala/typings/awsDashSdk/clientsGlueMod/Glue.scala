@@ -766,19 +766,6 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobBookmarkResponse, Unit]
   ): Request[GetJobBookmarkResponse, AWSError] = js.native
   /**
-    * Returns information on the job bookmark entries. The list is ordered on decreasing version numbers.
-    */
-  def getJobBookmarks(): Request[GetJobBookmarksResponse, AWSError] = js.native
-  def getJobBookmarks(callback: js.Function2[/* err */ AWSError, /* data */ GetJobBookmarksResponse, Unit]): Request[GetJobBookmarksResponse, AWSError] = js.native
-  /**
-    * Returns information on the job bookmark entries. The list is ordered on decreasing version numbers.
-    */
-  def getJobBookmarks(params: GetJobBookmarksRequest): Request[GetJobBookmarksResponse, AWSError] = js.native
-  def getJobBookmarks(
-    params: GetJobBookmarksRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ GetJobBookmarksResponse, Unit]
-  ): Request[GetJobBookmarksResponse, AWSError] = js.native
-  /**
     * Retrieves the metadata for a given job run.
     */
   def getJobRun(): Request[GetJobRunResponse, AWSError] = js.native

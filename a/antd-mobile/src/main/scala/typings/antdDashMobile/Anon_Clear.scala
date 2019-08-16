@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Clear extends js.Object {
   var clear: Boolean
   var disabled: Boolean
+  var disabledKeys: Null
   var editable: Boolean
   var error: Boolean
   var extra: String
@@ -31,6 +32,7 @@ object Anon_Clear {
   def apply(
     clear: Boolean,
     disabled: Boolean,
+    disabledKeys: Null,
     editable: Boolean,
     error: Boolean,
     extra: String,
@@ -49,7 +51,7 @@ object Anon_Clear {
     `type`: String,
     updatePlaceholder: Boolean
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal(clear = clear, disabled = disabled, editable = editable, error = error, extra = extra, labelNumber = labelNumber, moneyKeyboardAlign = moneyKeyboardAlign, moneyKeyboardHeader = moneyKeyboardHeader, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onExtraClick = js.Any.fromFunction0(onExtraClick), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder, prefixCls = prefixCls, prefixListCls = prefixListCls, updatePlaceholder = updatePlaceholder)
+    val __obj = js.Dynamic.literal(clear = clear, disabled = disabled, disabledKeys = disabledKeys, editable = editable, error = error, extra = extra, labelNumber = labelNumber, moneyKeyboardAlign = moneyKeyboardAlign, moneyKeyboardHeader = moneyKeyboardHeader, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onExtraClick = js.Any.fromFunction0(onExtraClick), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder, prefixCls = prefixCls, prefixListCls = prefixListCls, updatePlaceholder = updatePlaceholder)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Clear]
   }

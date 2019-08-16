@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EditResize extends Event {
   /**
-  			 * Layer that was just resized.
-  			 */
+    * Layer that was just resized.
+    */
   var layer: Layer = js.native
 }
 

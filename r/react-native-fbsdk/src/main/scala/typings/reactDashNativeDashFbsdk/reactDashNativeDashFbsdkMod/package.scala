@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashFbsdk
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.browser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation._
 package object reactDashNativeDashFbsdkMod {
   type GraphRequestCallback = js.Function2[/* error */ js.UndefOr[js.Object], /* result */ js.UndefOr[js.Object], Unit]
   type GraphRequestParameters = StringDictionary[js.Object]
+  type LoginBehavior = LoginBehaviorIOS | LoginBehaviorAndroid
+  type LoginBehaviorIOS = browser
   type OpenGraphProperties = StringDictionary[OpenGraphValue]
   type Params = StringDictionary[String | Double]
   /* Rewritten from type alias, can be one of: 

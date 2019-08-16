@@ -14,6 +14,7 @@ package object clientsCodecommitMod {
   type AdditionalData = String
   type Arn = String
   type BatchDescribeMergeConflictsErrors = js.Array[BatchDescribeMergeConflictsError]
+  type BatchGetCommitsErrorsList = js.Array[BatchGetCommitsError]
   type BranchName = String
   type BranchNameList = js.Array[BranchName]
   type CapitalBoolean = Boolean
@@ -33,7 +34,9 @@ package object clientsCodecommitMod {
   type CommentsForComparedCommitData = js.Array[CommentsForComparedCommit]
   type CommentsForPullRequestData = js.Array[CommentsForPullRequest]
   type CommitId = String
+  type CommitIdsInputList = js.Array[ObjectId]
   type CommitName = String
+  type CommitObjectsList = js.Array[Commit]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.FILE_LEVEL
     - typings.awsDashSdk.awsDashSdkStrings.LINE_LEVEL
@@ -56,6 +59,8 @@ package object clientsCodecommitMod {
   type Description = String
   type DifferenceList = js.Array[Difference]
   type Email = String
+  type ErrorCode = String
+  type ErrorMessage = String
   type EventDate = Date
   type ExceptionName = String
   type FileContent = Buffer | Uint8Array | Blob | String

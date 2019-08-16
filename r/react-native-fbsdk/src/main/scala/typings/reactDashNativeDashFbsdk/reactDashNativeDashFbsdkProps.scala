@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashFbsdkProps {
   @scala.inline
-  def LikeViewProps: typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LikeViewProps.type = typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LikeViewProps
-  type LikeViewProps = typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LikeViewProps
-  @scala.inline
   def LoginButtonProps: typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButtonProps.type = typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButtonProps
   type LoginButtonProps = typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButtonProps
   @scala.inline

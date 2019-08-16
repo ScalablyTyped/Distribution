@@ -506,6 +506,7 @@
 | 0.8100069001015022 | [keycode](./k/keycode) | Convert between keyboard keycodes and keynames and
 | 0.8099899377049344 | [lcid](./l/lcid) | Mapping between standard locale identifiers and Wi
 | 0.8097231983687294 | [lodash_dot_isundefined](./l/lodash_dot_isundefined) | The modern build of lodash’s _.isUndefined as a mo
+| 0.8097041680759971 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
 | 0.8096033918324286 | [lodash_dot_topath](./l/lodash_dot_topath) | The lodash method _.toPath exported as a module.
 | 0.8095971772016841 | [array-union](./a/array-union) | Create an array of unique values, in order, from t
 | 0.8095675938002977 | [lodash_dot_forown](./l/lodash_dot_forown) | The lodash method _.forOwn exported as a module.
@@ -820,6 +821,7 @@
 | 0.7830151101622317 | [move-concurrently](./m/move-concurrently) | Promises of moves of files or directories with ren
 | 0.7829203603815662 | [masonry-layout](./m/masonry-layout) | Cascading grid layout library
 | 0.7827068517732434 | [html-tags](./h/html-tags) | List of standard HTML tags
+| 0.7826917856009038 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.782656809733393 | [lodash_dot_findkey](./l/lodash_dot_findkey) | The lodash method _.findKey exported as a module.
 | 0.7826139062948954 | [touch](./t/touch) | like touch(1) in node
 | 0.7826046682651735 | [bitcoinjs-lib](./b/bitcoinjs-lib) | Client-side Bitcoin JavaScript library
@@ -1683,7 +1685,6 @@
 | 0.732687805199232 | [jsrender](./j/jsrender) | Best-of-breed templating in browser or on Node.js 
 | 0.7326783208681239 | [ps-list](./p/ps-list) | Get running processes
 | 0.7326241709603255 | [cli-table3](./c/cli-table3) | Pretty unicode tables for the command line. Based 
-| 0.7325979766248558 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 0.7325804044207684 | [concaveman](./c/concaveman) | Fast 2D concave hull algorithm in JavaScript (gene
 | 0.7325554363811366 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.7325347796157227 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly 
@@ -2769,6 +2770,7 @@
 | 0.681322863820504 | [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports 
 | 0.6812797059424929 | [react-widgets-moment](./r/react-widgets-moment) | A moment.js localizer for react-widgets
 | 0.6812748717233361 | [int64-buffer](./i/int64-buffer) | 64bit Long Integer on Buffer/Array/ArrayBuffer in 
+| 0.6812396394300837 | [brainhubeu__react-carouse](./b/brainhubeu__react-carousel) | Carousel component for React
 | 0.6812288367194916 | [create-html-element](./c/create-html-element) | Create a HTML element string
 | 0.6812277167623231 | [death](./d/death) | Gracefully cleanup when termination signals are se
 | 0.6811777527391232 | [prettier-package-json](./p/prettier-package-json) | Prettier formatter for package.json files
@@ -2795,6 +2797,7 @@
 | 0.6801703387438924 | [passport-steam](./p/passport-steam) | Steam (OpenID) authentication strategy for Passpor
 | 0.6801595570388992 | [host-validation](./h/host-validation) | Node.js middleware to validate Host and Referer he
 | 0.680145145630295 | [electron-unhandled](./e/electron-unhandled) | Catch unhandled errors and promise rejections in y
+| 0.6801300668865986 | [nano-equal](./n/nano-equal) | Ultra fast and compact implementation of deep equa
 | 0.680113569363325 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
 | 0.6800034542479293 | [connect-slashes](./c/connect-slashes) | Trailing slash redirect middleware for Connect and
 | 0.6798577984965651 | [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales
@@ -3572,6 +3575,7 @@
 | 0.6442536730006676 | [navigo](./n/navigo) | A simple vanilla JavaScript router with a fallback
 | 0.6441512349474774 | [http-rx](./h/http-rx) | A reactive http client based on Observable and Req
 | 0.6441424364642916 | [rmc-align](./r/rmc-align) | react align ui component for mobile
+| 0.6440458921367413 | [rfc4648](./r/rfc4648) | Encoding and decoding for base64, base32, base16, 
 | 0.6440094901866313 | [opentype_dot_js](./o/opentype_dot_js) | OpenType font parser
 | 0.6439470185343259 | [convict](./c/convict) | Featureful configuration management library for No
 | 0.6438722247239405 | [clone](./c/clone) | deep cloning of objects and arrays
@@ -3811,7 +3815,6 @@
 | 0.6287376313275548 | [socketcluster](./s/socketcluster) | SocketCluster - A Highly parallelized WebSocket se
 | 0.6287358955402416 | [graphql-query-complexity](./g/graphql-query-complexity) | Validation rule for GraphQL query complexity analy
 | 0.6286794770823723 | [mixpanel-browser](./m/mixpanel-browser) | The official Mixpanel JavaScript browser client li
-| 0.6286000311515848 | [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols
 | 0.6284329722824474 | [koa-router](./k/koa-router) | Router middleware for koa. Provides RESTful resour
 | 0.6284325931397711 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
 | 0.628127608585056 | [vega-lib](./v/vega-lib) | Include Vega in projects using minimal dependencie
@@ -4932,6 +4935,7 @@
 | 0.48062146365616193 | [amqp](./a/amqp) | AMQP driver for node
 | 0.4803397319171787 | [jpeg-js](./j/jpeg-js) | A pure javascript JPEG encoder and decoder
 | 0.47997345584485895 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster
+| 0.4798587078807368 | [leaflet_dot_utm](./l/leaflet_dot_utm) | Converts LatLng to UTM WGS84 in Leaflet
 | 0.47982315861183766 | [react-native-orientation](./r/react-native-orientation) | Listen to device orientation changes in React Nati
 | 0.4798091576062249 | [dotenv-expand](./d/dotenv-expand) | Expand environment variables using dotenv
 | 0.4797163757923314 | [restify-plugins](./r/restify-plugins) | A collection of core restify plugins
@@ -5267,6 +5271,7 @@
 | 0.43233069643529254 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server.
 | 0.43220201721971374 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for &
 | 0.4321660076300793 | [detect-it](./d/detect-it) | Detect if a device is mouse only, touch only, or h
+| 0.43202526905521343 | [map-to-obj](./m/map-to-obj) | ES2015 Map to plain object.
 | 0.43200739904884256 | [google-translate-api](./g/google-translate-api) | A free and unlimited API for Google Translate
 | 0.43193787562443636 | [fortawesome__free-solid-s](./f/fortawesome__free-solid-svg-icons) | The iconic font, CSS, and SVG framework
 | 0.4319227564692565 | [angular-loading-bar](./a/angular-loading-bar) | An automatic loading bar for AngularJS

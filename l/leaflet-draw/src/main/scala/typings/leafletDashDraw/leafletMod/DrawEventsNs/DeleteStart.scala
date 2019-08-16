@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteStart extends Event {
   /**
-  			 * The type of edit this is. One of: remove
-  			 */
+    * The type of edit this is. One of: remove
+    */
   var handler: String = js.native
 }
 

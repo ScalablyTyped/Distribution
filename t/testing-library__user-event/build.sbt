@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__user-event"
-version := "4.1-dt-20190626Z-9c50eb"
+version := "4.1-dt-20190815Z-351926"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

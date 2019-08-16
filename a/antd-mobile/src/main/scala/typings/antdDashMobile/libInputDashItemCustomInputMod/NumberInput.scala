@@ -2,6 +2,7 @@ package typings.antdDashMobile.libInputDashItemCustomInputMod
 
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -13,9 +14,8 @@ trait NumberInput
   extends Component[NumberInputProps, js.Any, js.Any] {
   var container: HTMLDivElement = js.native
   var inputRef: HTMLDivElement | Null = js.native
+  var keyBoard: ReactNode | Null = js.native
   def addBlurListener(): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MNumberInput(): Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MNumberInput(nextProps: NumberInputProps): Unit = js.native
   @JSName("componentWillUnmount")
@@ -31,9 +31,8 @@ trait NumberInput
   def onInputFocus(): Unit = js.native
   def onKeyboardClick(KeyboardItemValue: String): Unit = js.native
   def removeBlurListener(): Unit = js.native
-  def removeCurrentExtraKeyboard(): Unit = js.native
   def renderCustomKeyboard(): Unit = js.native
-  def renderPortal(): Element | Null = js.native
+  def renderPortal(): js.UndefOr[js.Object | Null] = js.native
   def saveRef(): Unit = js.native
   def saveRef(el: typings.antdDashMobile.libInputDashItemCustomKeyboardMod.default): Unit = js.native
   def unLinkInput(): Unit = js.native

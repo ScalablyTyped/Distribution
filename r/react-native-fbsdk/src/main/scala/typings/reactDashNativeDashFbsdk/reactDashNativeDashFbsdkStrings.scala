@@ -7,9 +7,7 @@ import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.DefaultAudie
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.GameRequestActionType
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.GameRequestFilters
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.HorizontalAlignment
-import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LikeViewStyle
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginBehaviorAndroid
-import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginBehaviorIOS
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ObjectIdActionType
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.OpenGraphValueType
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
@@ -56,18 +54,10 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait bottom extends AuxiliaryViewPosition
   
   @js.native
-  sealed trait box_count extends LikeViewStyle
-  
-  @js.native
-  sealed trait browser
-    extends LoginBehaviorIOS
-       with ShareDialogModeIOS
+  sealed trait browser extends ShareDialogModeIOS
   
   @js.native
   sealed trait business_management extends _Permissions
-  
-  @js.native
-  sealed trait button extends LikeViewStyle
   
   @js.native
   sealed trait center extends HorizontalAlignment
@@ -106,9 +96,7 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait manage_pages extends _Permissions
   
   @js.native
-  sealed trait native
-    extends LoginBehaviorIOS
-       with ShareDialogModeAndroid
+  sealed trait native extends ShareDialogModeAndroid
   
   @js.native
   sealed trait native_only extends LoginBehaviorAndroid
@@ -189,13 +177,7 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait send extends GameRequestActionType
   
   @js.native
-  sealed trait standard extends LikeViewStyle
-  
-  @js.native
   sealed trait string extends OpenGraphValueType
-  
-  @js.native
-  sealed trait system_account extends LoginBehaviorIOS
   
   @js.native
   sealed trait top extends AuxiliaryViewPosition
@@ -282,9 +264,7 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait video extends js.Object
   
   @js.native
-  sealed trait web
-    extends LoginBehaviorIOS
-       with ShareDialogModeAndroid
+  sealed trait web extends ShareDialogModeAndroid
   
   @js.native
   sealed trait web_only extends LoginBehaviorAndroid
@@ -313,13 +293,9 @@ object reactDashNativeDashFbsdkStrings {
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
-  def box_count: box_count = "box_count".asInstanceOf[box_count]
-  @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
   def business_management: business_management = "business_management".asInstanceOf[business_management]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -399,11 +375,7 @@ object reactDashNativeDashFbsdkStrings {
   @scala.inline
   def send: send = "send".asInstanceOf[send]
   @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
   def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def system_account: system_account = "system_account".asInstanceOf[system_account]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

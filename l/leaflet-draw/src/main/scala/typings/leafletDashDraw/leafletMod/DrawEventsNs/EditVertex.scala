@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EditVertex extends Event {
   /**
-  			 * List of all layers just being edited from the map.
-  			 */
+    * List of all layers just being edited from the map.
+    */
   var layers: LayerGroup[_] = js.native
   var poly: (Polyline[LineString | MultiLineString, _]) | Polygon[_] = js.native
 }

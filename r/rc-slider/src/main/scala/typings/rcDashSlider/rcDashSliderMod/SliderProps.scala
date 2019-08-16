@@ -1,6 +1,8 @@
 package typings.rcDashSlider.rcDashSliderMod
 
+import typings.react.Element
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +22,10 @@ trait SliderProps extends CommonApiProps {
     * onBeforeChange will be triggered when ontouchstart or onmousedown is triggered.
     */
   var onBeforeChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+  /**
+    * Handle blur event on the control
+    */
+  var onBlur: js.UndefOr[FocusEventHandler[Element]] = js.undefined
   /**
     * onChange will be triggered while the value of Slider changing.
     */
@@ -52,6 +58,7 @@ object SliderProps {
     min: Int | Double = null,
     onAfterChange: /* value */ Double => Unit = null,
     onBeforeChange: /* value */ Double => Unit = null,
+    onBlur: FocusEventHandler[Element] = null,
     onChange: /* value */ Double => Unit = null,
     railStyle: CSSProperties = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
@@ -79,6 +86,7 @@ object SliderProps {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)

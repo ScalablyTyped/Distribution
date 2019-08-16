@@ -170,7 +170,6 @@ package object clientsGlueMod {
   type IntegerFlag = Double
   type IntegerValue = Double
   type JdbcTargetList = js.Array[JdbcTarget]
-  type JobBookmarkEntryList = js.Array[JobBookmarkEntry]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.`CSE-KMS`

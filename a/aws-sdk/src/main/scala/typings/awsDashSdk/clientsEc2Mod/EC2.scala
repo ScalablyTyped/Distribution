@@ -4183,6 +4183,19 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionResult, Unit]
   ): Request[ModifyVpnConnectionResult, AWSError] = js.native
   /**
+    * Modifies the VPN tunnel endpoint certificate.
+    */
+  def modifyVpnTunnelCertificate(): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  def modifyVpnTunnelCertificate(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelCertificateResult, Unit]): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  /**
+    * Modifies the VPN tunnel endpoint certificate.
+    */
+  def modifyVpnTunnelCertificate(params: ModifyVpnTunnelCertificateRequest): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  def modifyVpnTunnelCertificate(
+    params: ModifyVpnTunnelCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelCertificateResult, Unit]
+  ): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  /**
     * Enables detailed monitoring for a running instance. Otherwise, basic monitoring is enabled. For more information, see Monitoring Your Instances and Volumes in the Amazon Elastic Compute Cloud User Guide. To disable detailed monitoring, see .
     */
   def monitorInstances(): Request[MonitorInstancesResult, AWSError] = js.native

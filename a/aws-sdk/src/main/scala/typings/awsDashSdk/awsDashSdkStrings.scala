@@ -65,6 +65,8 @@ import typings.awsDashSdk.clientsApplicationinsightsMod._FeedbackValue
 import typings.awsDashSdk.clientsApplicationinsightsMod._LogFilter
 import typings.awsDashSdk.clientsApplicationinsightsMod._SeverityLevel
 import typings.awsDashSdk.clientsAppmeshMod._EgressFilterType
+import typings.awsDashSdk.clientsAppmeshMod._HttpMethod
+import typings.awsDashSdk.clientsAppmeshMod._HttpScheme
 import typings.awsDashSdk.clientsAppmeshMod._MeshStatusCode
 import typings.awsDashSdk.clientsAppmeshMod._PortProtocol
 import typings.awsDashSdk.clientsAppmeshMod._RouteStatusCode
@@ -23049,6 +23051,9 @@ object awsDashSdkStrings {
   sealed trait confirming extends _VirtualInterfaceState
   
   @js.native
+  sealed trait connect extends _HttpMethod
+  
+  @js.native
   sealed trait connecting
     extends typings.awsDashSdk.clientsCloud9Mod._EnvironmentStatus
   
@@ -23450,6 +23455,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait delayed extends _DsnAction
+  
+  @js.native
+  sealed trait delete extends _HttpMethod
   
   @js.native
   sealed trait deleteReference extends _RepositoryTriggerEventEnum
@@ -24196,6 +24204,9 @@ object awsDashSdkStrings {
   sealed trait generalPurpose extends _PerformanceMode
   
   @js.native
+  sealed trait get extends _HttpMethod
+  
+  @js.native
   sealed trait git
     extends typings.awsDashSdk.clientsOpsworksMod._SourceType
   
@@ -24253,6 +24264,9 @@ object awsDashSdkStrings {
   sealed trait he extends _AnalysisSchemeLanguage
   
   @js.native
+  sealed trait head extends _HttpMethod
+  
+  @js.native
   sealed trait healthcheck extends _TagResourceType
   
   @js.native
@@ -24303,7 +24317,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait http
-    extends _PortProtocol
+    extends _HttpScheme
+       with _PortProtocol
        with typings.awsDashSdk.clientsS3Mod._Protocol
   
   @js.native
@@ -24335,7 +24350,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait https
-    extends typings.awsDashSdk.clientsS3Mod._Protocol
+    extends _HttpScheme
+       with typings.awsDashSdk.clientsS3Mod._Protocol
   
   @js.native
   sealed trait `https-only`
@@ -26059,6 +26075,9 @@ object awsDashSdkStrings {
   sealed trait optimizing extends _VolumeModificationState
   
   @js.native
+  sealed trait options extends _HttpMethod
+  
+  @js.native
   sealed trait ordering
     extends typings.awsDashSdk.clientsDirectconnectMod._ConnectionState
   
@@ -26156,6 +26175,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait passwordDataAvailable extends js.Object
+  
+  @js.native
+  sealed trait patch extends _HttpMethod
   
   @js.native
   sealed trait `payment-failed`
@@ -26282,6 +26304,9 @@ object awsDashSdkStrings {
   sealed trait policyExists extends js.Object
   
   @js.native
+  sealed trait post extends _HttpMethod
+  
+  @js.native
   sealed trait preferred_username extends _AliasAttributeType
   
   @js.native
@@ -26367,6 +26392,9 @@ object awsDashSdkStrings {
        with _ObjectACL
        with _ObjectCannedACL
        with _S3CannedAccessControlList
+  
+  @js.native
+  sealed trait put extends _HttpMethod
   
   @js.native
   sealed trait python2DOT7 extends _Runtime
@@ -27514,6 +27542,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `tr-TR`
     extends typings.awsDashSdk.clientsPollyMod._LanguageCode
+  
+  @js.native
+  sealed trait trace extends _HttpMethod
   
   @js.native
   sealed trait tracking extends _ConfigCapabilityType
@@ -38001,6 +38032,8 @@ object awsDashSdkStrings {
   @scala.inline
   def confirming: confirming = "confirming".asInstanceOf[confirming]
   @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
   def container: container = "container".asInstanceOf[container]
@@ -38232,6 +38265,8 @@ object awsDashSdkStrings {
   def `default-vpc`: `default-vpc` = "default-vpc".asInstanceOf[`default-vpc`]
   @scala.inline
   def delayed: delayed = "delayed".asInstanceOf[delayed]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def deleteReference: deleteReference = "deleteReference".asInstanceOf[deleteReference]
   @scala.inline
@@ -38565,6 +38600,8 @@ object awsDashSdkStrings {
   @scala.inline
   def generalPurpose: generalPurpose = "generalPurpose".asInstanceOf[generalPurpose]
   @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def git: git = "git".asInstanceOf[git]
   @scala.inline
   def gl: gl = "gl".asInstanceOf[gl]
@@ -38594,6 +38631,8 @@ object awsDashSdkStrings {
   def h1DOT8xlarge: h1DOT8xlarge = "h1.8xlarge".asInstanceOf[h1DOT8xlarge]
   @scala.inline
   def he: he = "he".asInstanceOf[he]
+  @scala.inline
+  def head: head = "head".asInstanceOf[head]
   @scala.inline
   def healthcheck: healthcheck = "healthcheck".asInstanceOf[healthcheck]
   @scala.inline
@@ -39431,6 +39470,8 @@ object awsDashSdkStrings {
   @scala.inline
   def optimizing: optimizing = "optimizing".asInstanceOf[optimizing]
   @scala.inline
+  def options: options = "options".asInstanceOf[options]
+  @scala.inline
   def ordering: ordering = "ordering".asInstanceOf[ordering]
   @scala.inline
   def `origin-request`: `origin-request` = "origin-request".asInstanceOf[`origin-request`]
@@ -39487,6 +39528,8 @@ object awsDashSdkStrings {
   @scala.inline
   def passwordDataAvailable: passwordDataAvailable = "passwordDataAvailable".asInstanceOf[passwordDataAvailable]
   @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def `payment-failed`: `payment-failed` = "payment-failed".asInstanceOf[`payment-failed`]
   @scala.inline
   def `payment-pending`: `payment-pending` = "payment-pending".asInstanceOf[`payment-pending`]
@@ -39541,6 +39584,8 @@ object awsDashSdkStrings {
   @scala.inline
   def policyExists: policyExists = "policyExists".asInstanceOf[policyExists]
   @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def preferred_username: preferred_username = "preferred_username".asInstanceOf[preferred_username]
   @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
@@ -39574,6 +39619,8 @@ object awsDashSdkStrings {
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
   @scala.inline
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
   @scala.inline
   def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
   @scala.inline
@@ -40202,6 +40249,8 @@ object awsDashSdkStrings {
   def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
   @scala.inline
   def tracking: tracking = "tracking".asInstanceOf[tracking]
   @scala.inline

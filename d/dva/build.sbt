@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dva"
-version := "2.4.1-658f4e"
+version := "2.4.1-2757de"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-796a7a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190809Z-2d489e",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-2b0413",
-  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20190613Z-85bcbe",
-  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-fd1d9c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
+  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-dc7032",
+  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20190613Z-d2a6b8",
+  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-5cb151",
   "org.scalablytyped" %%% "redux" % "4.0.4-567508",
   "org.scalablytyped" %%% "std" % "3.5-65dbfc")
 publishArtifact in packageDoc := false

@@ -109,6 +109,8 @@ class Map () extends Evented {
   def addImage(name: String, image: HTMLImageElement, options: Anon_PixelRatio): this.type = js.native
   def addImage(name: String, image: ImageData): this.type = js.native
   def addImage(name: String, image: ImageData, options: Anon_PixelRatio): this.type = js.native
+  def addLayer(layer: CustomLayerInterface): this.type = js.native
+  def addLayer(layer: CustomLayerInterface, before: String): this.type = js.native
   def addLayer(layer: Layer): this.type = js.native
   def addLayer(layer: Layer, before: String): this.type = js.native
   def addSource(id: String, source: AnySourceData): this.type = js.native

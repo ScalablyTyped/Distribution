@@ -199,8 +199,8 @@ class Tabulator protected () extends js.Object {
   def getRow(row: RowLookup): RowComponent = js.native
   /** You can retrieve the Row Component of a row at a given position in the table using getRowFromPosition function. By default this will return the row based in its position in all table data, including data currently filtered out of the table.
     If you want to get a row based on its position in the currently filtered/sorted data, you can pass a value of true to the optional second argument of the function. */
-  def getRowFromPosition(position: Double): Unit = js.native
-  def getRowFromPosition(position: Double, activeOnly: Boolean): Unit = js.native
+  def getRowFromPosition(position: Double): RowComponent = js.native
+  def getRowFromPosition(position: Double, activeOnly: Boolean): RowComponent = js.native
   /** Use the getRowPosition function to retrieve the numerical position of a row in the table. By default this will return the position of the row in all data, including data currently filtered out of the table.
     The first argument is the row you are looking for, it will take any of the standard row component look up options. If you want to get the position of the row in the currently filtered/sorted data, you can pass a value of true to the optional second argument of the function.
     

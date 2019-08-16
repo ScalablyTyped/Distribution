@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-system
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 Responsive, theme-based style props for building design systems with React

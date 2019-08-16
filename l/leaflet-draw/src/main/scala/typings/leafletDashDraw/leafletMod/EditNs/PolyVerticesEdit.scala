@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("leaflet.Edit.PolyVerticesEdit")
 @js.native
 class PolyVerticesEdit protected () extends Handler {
-  def this(poly: Poly, latlngs: js.Array[LatLngExpression]) = this()
-  def this(poly: Poly, latlngs: js.Array[LatLngExpression], options: EditPolyVerticesEditOptions) = this()
+  def this(poly: Polyline, latlngs: js.Array[LatLngExpression]) = this()
+  def this(poly: Polyline, latlngs: js.Array[LatLngExpression], options: EditPolyVerticesEditOptions) = this()
   def updateMarkers(): Unit = js.native
 }
 
