@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jqueryDotAjaxfile {
+  import typings.std.Error
+
   type IAjaxFileResultCallback[T] = js.Function1[/* result */ IAjaxFileResult[T], js.Any]
   /**
     * Interface for the JQuery promise/deferred callbacks

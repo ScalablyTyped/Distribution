@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "slate-html-serializer"
-version := "0.6-dt-20181217Z-5467c3"
-scalaVersion := "2.12.8"
+version := "0.6-dt-20181217Z-91ee72"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-3acc33",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
-  "org.scalablytyped" %%% "slate" % "0.47-dt-20190812Z-4f7c41",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-cb381f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "slate" % "0.47-dt-20190812Z-a7b6e0",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

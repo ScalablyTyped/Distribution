@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped 'usb' | 'nfc' | 'ble'
-- Dropped any */ @JSImport("winston-mail", "Mail")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify winston.TransportInstance * / any */ @JSImport("winston-mail", "Mail")
 @js.native
 class Mail protected () extends js.Object {
   def this(options: MailTransportOptions) = this()

@@ -1,13 +1,14 @@
 package typings.backbone
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.Fn_EventObject
-import typings.backbone.Fn_UrlParts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object backboneMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.backbone.Fn_EventObject
+  import typings.backbone.Fn_UrlParts
+
   /**
     * JavaScript events (used in the methods of the Events interface)
     */

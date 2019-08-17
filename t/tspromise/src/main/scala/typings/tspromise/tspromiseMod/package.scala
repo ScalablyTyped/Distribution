@@ -1,10 +1,11 @@
 package typings.tspromise
 
-import typings.tspromise.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tspromiseMod {
+  import typings.tspromise.Thenable
+
   type Promise[T] = Thenable[T]
 }

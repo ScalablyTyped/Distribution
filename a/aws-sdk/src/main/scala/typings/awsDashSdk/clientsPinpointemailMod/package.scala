@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsPinpointemailMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AmazonResourceName = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.USE_DEFAULT_VALUE

@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object handsontable {
+  import typings.std.Pick
+
   /**
     * @internal
     * Omit properties K from T

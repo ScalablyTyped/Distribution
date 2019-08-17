@@ -1,11 +1,12 @@
 package typings.htmlDashWebpackDashTemplate
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object htmlDashWebpackDashTemplateMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Attributes = StringDictionary[js.Any]
   /** @deprecated use Options */
   type Config = Options

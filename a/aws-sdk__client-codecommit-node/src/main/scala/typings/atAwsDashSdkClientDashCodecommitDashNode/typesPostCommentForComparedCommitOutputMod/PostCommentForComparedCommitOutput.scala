@@ -1,0 +1,70 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForComparedCommitOutputMod
+
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUnderscoreCommentMod._UnmarshalledComment
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUnderscoreLocationMod._UnmarshalledLocation
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PostCommentForComparedCommitOutput extends OutputTypesUnion {
+  /**
+    * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
+    */
+  @JSName("$metadata")
+  var $metadata: ResponseMetadata
+  /**
+    * <p>In the directionality you established, the blob ID of the 'after' blob.</p>
+    */
+  var afterBlobId: js.UndefOr[String] = js.undefined
+  /**
+    * <p>In the directionality you established, the full commit ID of the 'after' commit.</p>
+    */
+  var afterCommitId: js.UndefOr[String] = js.undefined
+  /**
+    * <p>In the directionality you established, the blob ID of the 'before' blob.</p>
+    */
+  var beforeBlobId: js.UndefOr[String] = js.undefined
+  /**
+    * <p>In the directionality you established, the full commit ID of the 'before' commit.</p>
+    */
+  var beforeCommitId: js.UndefOr[String] = js.undefined
+  /**
+    * <p>The content of the comment you posted.</p>
+    */
+  var comment: js.UndefOr[_UnmarshalledComment] = js.undefined
+  /**
+    * <p>The location of the comment in the comparison between the two commits.</p>
+    */
+  var location: js.UndefOr[_UnmarshalledLocation] = js.undefined
+  /**
+    * <p>The name of the repository where you posted a comment on the comparison between commits.</p>
+    */
+  var repositoryName: js.UndefOr[String] = js.undefined
+}
+
+object PostCommentForComparedCommitOutput {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    afterBlobId: String = null,
+    afterCommitId: String = null,
+    beforeBlobId: String = null,
+    beforeCommitId: String = null,
+    comment: _UnmarshalledComment = null,
+    location: _UnmarshalledLocation = null,
+    repositoryName: String = null
+  ): PostCommentForComparedCommitOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata)
+    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId)
+    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId)
+    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId)
+    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
+    __obj.asInstanceOf[PostCommentForComparedCommitOutput]
+  }
+}
+

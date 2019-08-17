@@ -1,18 +1,19 @@
 package typings.nock
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.nock.Fn_Body
-import typings.nock.Fn_BodyReq
-import typings.nock.Fn_HeaderValue
-import typings.nock.Fn_Uri
-import typings.node.Buffer
-import typings.node.fsMod.ReadStream
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nockMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.nock.Fn_Body
+  import typings.nock.Fn_BodyReq
+  import typings.nock.Fn_HeaderValue
+  import typings.nock.Fn_Uri
+  import typings.node.Buffer
+  import typings.node.fsMod.ReadStream
+  import typings.std.RegExp
+
   type HttpHeaders = StringDictionary[String | js.Array[String] | Fn_BodyReq]
   type InterceptFunction = js.Function3[
     /* uri */ String | RegExp | Fn_Uri, 

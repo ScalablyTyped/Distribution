@@ -1,16 +1,17 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiBoom.atHapiBoomMod.^
-import typings.atHapiHapi.atHapiHapiMod.Request
-import typings.atHapiHapi.atHapiHapiMod.ResponseToolkit
-import typings.node.Buffer
-import typings.node.streamMod.Stream
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object LifecycleNs {
+  import typings.atHapiBoom.atHapiBoomMod.^
+  import typings.atHapiHapi.atHapiHapiMod.Request
+  import typings.atHapiHapi.atHapiHapiMod.ResponseToolkit
+  import typings.node.Buffer
+  import typings.node.streamMod.Stream
+  import typings.std.Error
+
   /**
     * Various configuration options allows defining how errors are handled. For example, when invalid payload is received or malformed cookie, instead of returning an error, the framework can be
     * configured to perform another action. When supported the failAction option supports the following values:

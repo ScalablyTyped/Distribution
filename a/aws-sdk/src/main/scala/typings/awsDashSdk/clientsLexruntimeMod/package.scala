@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.`application/vndDOTamazonawsDOTcardDOTgeneric`
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsLexruntimeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.`application/vndDOTamazonawsDOTcardDOTgeneric`
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Uint8Array
+
   type Accept = java.lang.String
   type AttributesString = java.lang.String
   type BlobStream = Buffer | Uint8Array | Blob | java.lang.String | Readable

@@ -1,11 +1,12 @@
 package typings.parse5
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object parse5Mod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AttributesLocation = StringDictionary[Location]
   type ChildNode = DefaultTreeChildNode | js.Object
   type CommentNode = DefaultTreeCommentNode | js.Object

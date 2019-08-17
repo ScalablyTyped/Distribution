@@ -1,11 +1,12 @@
 package typings.puppeteer
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object puppeteerMod {
+  import typings.std.Record
+
   type EvaluateFn = String | (js.Function1[/* repeated */ js.Any, js.Any])
   type EvaluateFnReturnType[T /* <: EvaluateFn */] = js.Any
   type Headers = Record[String, String]

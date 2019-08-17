@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "com_dot_darktalker_dot_cordova_dot_screenshot"
-version := "v0.1.5-dt-20190322Z-6230b2"
-scalaVersion := "2.12.8"
+version := "v0.1.5-dt-20190322Z-88a1d5"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,28 +1,29 @@
 package typings.styledDashComponents
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.csstype.csstypeMod.Properties
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentPropsWithRef
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ForwardRefExoticComponent
-import typings.std.Exclude
-import typings.std.Extract
-import typings.std.Partial
-import typings.std.Pick
-import typings.styledDashComponents.Anon_As
-import typings.styledDashComponents.Anon_Children
-import typings.styledDashComponents.Anon_SuppressMultiMountWarning
-import typings.styledDashComponents.Anon_ThemeT
-import typings.styledDashComponents.Omit
-import typings.styledDashComponents.WithOptionalThemeComponentPropsWithRefCT
-import typings.styledDashComponents.styledDashComponentsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styledDashComponentsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.csstype.csstypeMod.Properties
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentPropsWithRef
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.ForwardRefExoticComponent
+  import typings.std.Exclude
+  import typings.std.Extract
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.styledDashComponents.Anon_As
+  import typings.styledDashComponents.Anon_Children
+  import typings.styledDashComponents.Anon_SuppressMultiMountWarning
+  import typings.styledDashComponents.Anon_ThemeT
+  import typings.styledDashComponents.Omit
+  import typings.styledDashComponents.WithOptionalThemeComponentPropsWithRefCT
+  import typings.styledDashComponents.styledDashComponentsNumbers.`false`
+
   type AnyIfEmpty[T /* <: js.Object */] = T
   type AnyStyledComponent = StyledComponent[js.Any, js.Any, js.Any, js.Any | scala.Nothing]
   type Attrs[P, A /* <: Partial[P] */, T] = (js.Function1[/* props */ ThemedStyledProps[P, T], A]) | A

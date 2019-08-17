@@ -1,10 +1,11 @@
 package typings.atPulumiAws
 
-import typings.atPulumiAws.lambdaLambdaMixinsMod.EventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dynamodbDynamodbMixinsMod {
+  import typings.atPulumiAws.lambdaLambdaMixinsMod.EventHandler
+
   type TableEventHandler = EventHandler[TableEvent, Unit]
 }

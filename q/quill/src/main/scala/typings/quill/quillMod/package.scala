@@ -1,14 +1,15 @@
 package typings.quill
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.quill.Anon_Delete
-import typings.quill.quillStrings.`selection-change`
-import typings.quill.quillStrings.`text-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object quillMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.quill.Anon_Delete
+  import typings.quill.quillStrings.`selection-change`
+  import typings.quill.quillStrings.`text-change`
+
   type DeltaOperation = Anon_Delete with OptionalAttributes
   type EditorChangeHandler = js.Function4[
     `text-change` | `selection-change`, 

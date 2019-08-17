@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs.DataNs
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.CollectionsNs.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object TextNs {
+  import typings.winrtDashUwp.WindowsNs.FoundationNs.CollectionsNs.IIterable
+
   /** Defines the signature of a function that is provided to SelectableWordsSegmenter.Tokenize . */
   type SelectableWordSegmentsTokenizingHandler = js.Function2[
     /* precedingWords */ IIterable[SelectableWordSegment], 

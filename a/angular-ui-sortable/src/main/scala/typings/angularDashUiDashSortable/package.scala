@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularDashUiDashSortable {
+  import typings.std.Pick
+
   // Diff / Omit taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-311923766
   type Omit[T, K /* <: String */] = Pick[
     T, 

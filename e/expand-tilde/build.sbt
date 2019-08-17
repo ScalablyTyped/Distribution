@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "expand-tilde"
-version := "2.0-dt-20181121Z-aed48e"
-scalaVersion := "2.12.8"
+version := "2.0-dt-20181121Z-246f51"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

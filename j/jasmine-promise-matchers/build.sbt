@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jasmine-promise-matchers"
-version := "0.0-unknown-dt-20190424Z-c9b8ca"
-scalaVersion := "2.12.8"
+version := "0.0-unknown-dt-20190424Z-291790"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.IP
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsWafMod {
+  import typings.awsDashSdk.awsDashSdkStrings.IP
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type Action = String
   type ActivatedRules = js.Array[ActivatedRule]
   type ByteMatchSetSummaries = js.Array[ByteMatchSetSummary]

@@ -1,14 +1,15 @@
 package typings.styledDashTheming
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.styledDashComponents.styledDashComponentsMod.FlattenInterpolation
-import typings.styledDashComponents.styledDashComponentsMod.ThemeProps
-import typings.styledDashComponents.styledDashComponentsMod.ThemedStyledProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styledDashThemingMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.styledDashComponents.styledDashComponentsMod.FlattenInterpolation
+  import typings.styledDashComponents.styledDashComponentsMod.ThemeProps
+  import typings.styledDashComponents.styledDashComponentsMod.ThemedStyledProps
+
   type ThemeMap = StringDictionary[ThemeValue]
   type ThemeSet = js.Function1[/* props */ js.Object, String]
   type ThemeValue = ThemeValueFn | ThemeValueResult

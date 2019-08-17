@@ -17,6 +17,9 @@ class AttachmentsResolver protected () extends IResolver {
   var _parent: js.Any = js.native
   /**
     * Get the download url for a given absolute url path.
+    *
+    * #### Notes
+    * This URL may include a query parameter.
     */
   /* CompleteClass */
   override def getDownloadUrl(url: String): js.Promise[String] = js.native

@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reflectionNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * thrown in case that a certain type name does exist, but does not meet some other criteria.
     * @since OOo 1.1.2

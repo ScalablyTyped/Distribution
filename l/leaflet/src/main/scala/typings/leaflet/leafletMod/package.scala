@@ -1,17 +1,18 @@
 package typings.leaflet
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.geojson.geojsonMod.Feature
-import typings.geojson.geojsonMod.GeometryObject
-import typings.leaflet.Anon_Active
-import typings.leaflet.leafletStrings.center
-import typings.std.Error
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object leafletMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.geojson.geojsonMod.Feature
+  import typings.geojson.geojsonMod.GeometryObject
+  import typings.leaflet.Anon_Active
+  import typings.leaflet.leafletStrings.center
+  import typings.std.Error
+  import typings.std.HTMLElement
+
   type BoundsExpression = Bounds | BoundsLiteral
   type BoundsLiteral = js.Tuple2[PointTuple, PointTuple]
   type Content = String | HTMLElement

@@ -1,13 +1,14 @@
 package typings.browserDashSync
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object browserDashSyncMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+
   type Hash[T] = StringDictionary[T]
   type MiddlewareHandler = js.Function3[
     /* req */ IncomingMessage, 

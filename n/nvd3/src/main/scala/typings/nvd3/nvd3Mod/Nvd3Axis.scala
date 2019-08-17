@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis * / any */ @js.native
 trait Nvd3Axis extends js.Object {
   def axisLabel(): String = js.native
   def axisLabel(value: String): this.type = js.native

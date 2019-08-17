@@ -1,13 +1,14 @@
 package typings
 
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yup {
+  import typings.std.Exclude
+  import typings.std.Partial
+  import typings.std.Pick
+
   type NotRequiredProps[T] = Partial[
     Pick[
       T, 

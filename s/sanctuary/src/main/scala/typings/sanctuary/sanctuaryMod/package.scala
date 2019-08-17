@@ -1,11 +1,12 @@
 package typings.sanctuary
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sanctuaryMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Alt[A] = Functor[A]
   type Applicative[A] = Apply[A]
   type Apply[A] = Functor[A]

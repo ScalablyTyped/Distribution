@@ -1,11 +1,12 @@
 package typings.steed
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object steedMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Dictionary[T] = StringDictionary[T]
   type ErrorCallback[T] = js.Function1[/* err */ js.UndefOr[T], Unit]
   type SteedFunction[T, E] = js.Function1[

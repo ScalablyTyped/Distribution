@@ -1,11 +1,12 @@
 package typings.webpack.webpackMod
 
-import typings.webpack.webpackMod.StatsNs.ToStringOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object OptionsNs {
+  import typings.webpack.webpackMod.StatsNs.ToStringOptions
+
   // tslint:disable-next-line:max-line-length
   /* Rewritten from type alias, can be one of: 
     - typings.webpack.webpackStrings.eval

@@ -1,13 +1,14 @@
 package typings.createDashEmotion
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.csstype.csstypeMod.PropertiesFallback
-import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object createDashEmotionMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.csstype.csstypeMod.PropertiesFallback
+  import typings.std.TemplateStringsArray
+
   type CSSBaseObject = PropertiesFallback[Double | String]
   type CSSPseudoObject = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in csstype.csstype.Pseudos ]:? create-emotion.create-emotion.CSSObject}

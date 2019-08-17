@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsServerlessapplicationrepositoryMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CAPABILITY_IAM
     - typings.awsDashSdk.awsDashSdkStrings.CAPABILITY_NAMED_IAM

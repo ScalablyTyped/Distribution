@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "json2md"
-version := "1.5-dt-20180214Z-5fd8eb"
-scalaVersion := "2.12.8"
+version := "1.5-dt-20180214Z-95164e"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

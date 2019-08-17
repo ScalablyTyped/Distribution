@@ -1,11 +1,12 @@
 package typings.plugapi.plugapiMod
 
-import typings.plugapi.plugapiMod.UserNs.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EventNs {
+  import typings.plugapi.plugapiMod.UserNs.User
+
   type Grab = Double
   type RoomJoin = String
   type UserJoin = User

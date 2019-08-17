@@ -58,7 +58,7 @@ trait JobFlowDetail extends js.Object {
     */
   var SupportedProducts: js.UndefOr[SupportedProductsList] = js.undefined
   /**
-    * Specifies whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to true, all IAM users of that AWS account can view and (if they have the proper policy permissions set) manage the cluster. If it is set to false, only the IAM user that created the cluster can view and manage it. This value can be changed using the SetVisibleToAllUsers action.
+    *  This member will be deprecated.  Specifies whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to true, all IAM users of that AWS account can view and (if they have the proper policy permissions set) manage the cluster. If it is set to false, only the IAM user that created the cluster can view and manage it. This value can be changed using the SetVisibleToAllUsers action.
     */
   var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
 }

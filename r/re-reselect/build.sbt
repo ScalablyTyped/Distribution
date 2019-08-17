@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "re-reselect"
-version := "3.4.0-7a45fe"
-scalaVersion := "2.12.8"
+version := "3.4.0-239588"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "reselect" % "4.0.0-42d126",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "reselect" % "4.0.0-6a7fcc",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

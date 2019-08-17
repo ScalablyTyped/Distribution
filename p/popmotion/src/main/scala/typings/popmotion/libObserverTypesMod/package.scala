@@ -1,11 +1,12 @@
 package typings.popmotion
 
-import typings.popmotion.Anon_Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libObserverTypesMod {
+  import typings.popmotion.Anon_Middleware
+
   type Complete = js.Function0[js.Any]
   type Error = js.Function1[/* err */ js.UndefOr[js.Any], js.Any]
   type Middleware = js.Function2[

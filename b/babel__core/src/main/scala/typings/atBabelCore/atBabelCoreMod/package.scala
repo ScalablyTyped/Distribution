@@ -1,14 +1,15 @@
 package typings.atBabelCore
 
-import typings.atBabelCore.atBabelCoreNumbers.`false`
-import typings.atBabelTypes.atBabelTypesMod.File
-import typings.atBabelTypes.atBabelTypesMod.Program
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atBabelCoreMod {
+  import typings.atBabelCore.atBabelCoreNumbers.`false`
+  import typings.atBabelTypes.atBabelTypesMod.File
+  import typings.atBabelTypes.atBabelTypesMod.Program
+  import typings.std.Error
+
   type ConfigFunction = js.Function1[/* api */ ConfigAPI, TransformOptions]
   type FileParseCallback = js.Function2[/* err */ Error | Null, /* result */ ParseResult | Null, js.Any]
   type FileResultCallback = js.Function2[/* err */ Error | Null, /* result */ BabelFileResult | Null, js.Any]

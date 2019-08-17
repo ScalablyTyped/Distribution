@@ -1,11 +1,12 @@
 package typings.parsimmon
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object parsimmonMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type FailureFunctionType[U] = js.Function2[/* index */ Double, /* msg */ String, Reply[U]]
   type Language = StringDictionary[Parser[js.Any]]
   type ParseFunctionType[U] = js.Function2[/* stream */ StreamType, /* index */ Double, Reply[U]]

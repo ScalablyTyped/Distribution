@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudwatchMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type ActionPrefix = String
   type ActionsEnabled = Boolean
   type AlarmArn = String

@@ -1,12 +1,13 @@
 package typings.chromeDashApps.chromeNs
 
-import typings.chromeDashApps.chromeDashAppsStrings.serviceType
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mdnsNs {
+  import typings.chromeDashApps.chromeDashAppsStrings.serviceType
+  import typings.std.Record
+
   /**
     * Dictionary
     * [key in ValidServiceTypes]: string

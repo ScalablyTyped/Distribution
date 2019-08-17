@@ -1,12 +1,13 @@
 package typings.handsontable.handsontableMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.handsontable.handsontableMod.HandsontableNs.HooksNs.Events
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object HandsontableNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.handsontable.handsontableMod.HandsontableNs.HooksNs.Events
+
   type Bucket = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof handsontable.handsontable.Handsontable.Hooks.Events ]: std.Array<handsontable.handsontable.Handsontable.Hooks.Events[P]>}
     */ typings.handsontable.handsontableStrings.Bucket with Events

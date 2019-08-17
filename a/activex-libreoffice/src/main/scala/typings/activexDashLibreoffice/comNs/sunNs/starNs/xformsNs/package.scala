@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.VetoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xformsNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.VetoException
+
   /**
     * thrown if the user triggers an {@link XForms} submission with invalid instance data
     *

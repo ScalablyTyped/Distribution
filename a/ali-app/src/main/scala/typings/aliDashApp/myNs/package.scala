@@ -1,11 +1,12 @@
 package typings.aliDashApp
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object myNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Color = String | js.Array[Double] | Double | CanvasAction
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
   //#region 网络 https://docs.alipay.com/mini/api/network

@@ -1,12 +1,13 @@
 package typings.koaDashRouter
 
-import typings.koa.koaMod.Middleware
-import typings.koa.koaMod.ParameterizedContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object koaDashRouterMod {
+  import typings.koa.koaMod.Middleware
+  import typings.koa.koaMod.ParameterizedContext
+
   type IMiddleware[StateT, CustomT] = Middleware[StateT, CustomT with (IRouterParamContext[StateT, CustomT])]
   type IParamMiddleware = js.Function3[
     /* param */ String, 

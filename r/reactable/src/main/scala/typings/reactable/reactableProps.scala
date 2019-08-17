@@ -15,11 +15,9 @@ trait reactableProps {
   @scala.inline
   def TdProps: TdProperties.type = typings.reactable.reactableMod.TdProperties
   type TdProps = TdProperties
-  type TfootProps = js.Object
   @scala.inline
   def ThProps: ThProperties.type = typings.reactable.reactableMod.ThProperties
   type ThProps = ThProperties
-  type TheadProps = js.Object
   @scala.inline
   def TrProps: TrProperties.type = typings.reactable.reactableMod.TrProperties
   type TrProps[T] = TrProperties[T]

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-mail"
-version := "3.0-dt-20190530Z-135789"
-scalaVersion := "2.12.8"
+version := "3.0-dt-20190530Z-7e597d"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

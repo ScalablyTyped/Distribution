@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsOpsworkscmMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountAttributes = js.Array[AccountAttribute]
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String

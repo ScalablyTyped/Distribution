@@ -1,0 +1,48 @@
+package typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotBaseMod
+
+import typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotTypesMod.ILayerProps
+import typings.react.reactMod.Component
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("office-ui-fabric-react/lib/components/Layer/Layer.base", "LayerBase")
+@js.native
+class LayerBase protected ()
+  extends Component[ILayerProps, ILayerBaseState, js.Any] {
+  def this(props: ILayerProps) = this()
+  /**
+    * Helper to stop events from bubbling up out of Layer.
+    */
+  var _filterEvent: js.Any = js.native
+  var _getClassNames: js.Any = js.native
+  var _getHost: js.Any = js.native
+  var _getLayerElement: js.Any = js.native
+  /**
+    * rootElement wrapper for setting virtual parent as soon as root element ref is available.
+    */
+  var _handleRootElementRef: js.Any = js.native
+  var _host: js.Any = js.native
+  var _layerElement: js.Any = js.native
+  var _removeLayerElement: js.Any = js.native
+  var _rootElement: js.Any = js.native
+  var _setVirtualParent: js.Any = js.native
+  @JSName("UNSAFE_componentWillMount")
+  def UNSAFE_componentWillMount_MLayerBase(): Unit = js.native
+  @JSName("UNSAFE_componentWillUpdate")
+  def UNSAFE_componentWillUpdate_MLayerBase(): Unit = js.native
+  @JSName("componentDidMount")
+  def componentDidMount_MLayerBase(): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MLayerBase(): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MLayerBase(): Unit = js.native
+}
+
+/* static members */
+@JSImport("office-ui-fabric-react/lib/components/Layer/Layer.base", "LayerBase")
+@js.native
+object LayerBase extends js.Object {
+  var defaultProps: ILayerProps = js.native
+}
+

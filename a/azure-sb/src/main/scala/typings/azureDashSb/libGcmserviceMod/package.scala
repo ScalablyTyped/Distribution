@@ -1,10 +1,11 @@
 package typings.azureDashSb
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libGcmserviceMod {
+  import typings.std.Partial
+
   type Template = Partial[js.Object]
 }

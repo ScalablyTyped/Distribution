@@ -1,12 +1,13 @@
 package typings.fluentDashFfmpeg
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fluentDashFfmpegMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type Codecs = StringDictionary[Codec]
   type CodecsCallback = js.Function2[/* err */ Error, /* codecs */ Codecs, Unit]
   type Encoders = StringDictionary[Encoder]

@@ -1,15 +1,16 @@
 package typings.atNivoScatterplot
 
-import typings.react.NativeMouseEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.ReactNode
-import typings.std.CanvasRenderingContext2D
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoScatterplotMod {
+  import typings.react.NativeMouseEvent
+  import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.ReactNode
+  import typings.std.CanvasRenderingContext2D
+  import typings.std.Date
+
   type CustomCanvasLayer = js.Function2[/* ctx */ CanvasRenderingContext2D, /* props */ CustomCanvasLayerProps, Unit]
   type CustomSvgLayer = js.Function1[/* props */ CustomSvgLayerProps, ReactNode]
   type CustomTooltip = js.Function1[/* hasNode */ js.Any, ReactNode]

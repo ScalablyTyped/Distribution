@@ -1,0 +1,42 @@
+package typings.atAwsDashSdkClientDashS3DashNode.commandsHeadObjectCommandMod
+
+import typings.atAwsDashSdkClientDashS3DashNode.s3ConfigurationMod.S3ResolvedConfiguration
+import typings.atAwsDashSdkClientDashS3DashNode.typesHeadObjectInputMod.HeadObjectInput
+import typings.atAwsDashSdkClientDashS3DashNode.typesHeadObjectOutputMod.HeadObjectOutput
+import typings.atAwsDashSdkClientDashS3DashNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.atAwsDashSdkMiddlewareDashStack.atAwsDashSdkMiddlewareDashStackMod.MiddlewareStack
+import typings.atAwsDashSdkTypes.buildCommandMod.Command
+import typings.atAwsDashSdkTypes.buildMiddlewareMod.Handler
+import typings.atAwsDashSdkTypes.buildProtocolMod.OperationModel
+import typings.node.streamMod.Readable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-s3-node/commands/HeadObjectCommand", "HeadObjectCommand")
+@js.native
+class HeadObjectCommand protected () extends Command[
+      InputTypesUnion, 
+      HeadObjectInput, 
+      OutputTypesUnion, 
+      HeadObjectOutput, 
+      S3ResolvedConfiguration, 
+      Readable
+    ] {
+  def this(input: HeadObjectInput) = this()
+  /* CompleteClass */
+  override val input: HeadObjectInput = js.native
+  val middlewareStack: MiddlewareStack[HeadObjectInput, HeadObjectOutput, Readable] = js.native
+  val model: OperationModel = js.native
+  def resolveMiddleware(
+    clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+    configuration: S3ResolvedConfiguration
+  ): Handler[HeadObjectInput, HeadObjectOutput] = js.native
+  /* CompleteClass */
+  override def resolveMiddleware(
+    stack: typings.atAwsDashSdkTypes.buildMiddlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+    configuration: S3ResolvedConfiguration
+  ): Handler[HeadObjectInput, HeadObjectOutput] = js.native
+}
+

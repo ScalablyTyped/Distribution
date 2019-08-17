@@ -1,13 +1,14 @@
 package typings.expressDashMung
 
-import typings.express.expressMod.Request
-import typings.express.expressMod.Response
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashMungMod {
+  import typings.express.expressMod.Request
+  import typings.express.expressMod.Response
+  import typings.node.Buffer
+
   type Transform = js.Function3[/* body */ js.Object, /* request */ Request, /* response */ Response, js.Any]
   type TransformAsync = js.Function3[
     /* body */ js.Object, 

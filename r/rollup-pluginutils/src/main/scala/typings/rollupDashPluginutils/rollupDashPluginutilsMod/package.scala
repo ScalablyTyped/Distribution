@@ -1,13 +1,14 @@
 package typings.rollupDashPluginutils
 
-import typings.estreeDashWalker.estreeDashWalkerMod.Node
-import typings.rollupDashPluginutils.Anon_False
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rollupDashPluginutilsMod {
+  import typings.estreeDashWalker.estreeDashWalkerMod.Node
+  import typings.rollupDashPluginutils.Anon_False
+  import typings.std.RegExp
+
   type AddExtension = js.Function2[/* filename */ String, /* ext */ js.UndefOr[String], String]
   type AttachScopes = js.Function2[/* ast */ Node, /* propertyName */ js.UndefOr[String], AttachedScope]
   type CreateFilter = js.Function3[

@@ -1,12 +1,13 @@
 package typings.vexdb
 
-import typings.std.RegExp
-import typings.vexdb.Anon_Prefetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vexdbMod {
+  import typings.std.RegExp
+  import typings.vexdb.Anon_Prefetch
+
   type LiveRequestObject[T] = T with Anon_Prefetch
   type NumberRequest = Double | js.Array[Double] | NumberRequestValidatorFunction
   type NumberRequestValidatorFunction = js.Function2[/* itemValue */ Double, /* item */ ResponseObject, js.Promise[Boolean] | Boolean]

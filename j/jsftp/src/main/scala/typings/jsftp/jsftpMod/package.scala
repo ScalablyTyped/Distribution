@@ -1,14 +1,15 @@
 package typings.jsftp
 
-import typings.jsftp.Anon_Code
-import typings.jsftp.Anon_Name
-import typings.node.netMod.Socket
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsftpMod {
+  import typings.jsftp.Anon_Code
+  import typings.jsftp.Anon_Name
+  import typings.node.netMod.Socket
+  import typings.std.Error
+
   type ErrorCallback = js.Function1[/* err */ Error, Unit]
   type GetCallback = js.Function2[/* err */ Error, /* socket */ Socket, Unit]
   type ListCallback = js.Function2[/* err */ Error, /* dirContents */ String, Unit]

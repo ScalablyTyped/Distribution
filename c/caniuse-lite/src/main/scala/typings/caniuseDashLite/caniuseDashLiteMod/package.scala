@@ -1,11 +1,12 @@
 package typings.caniuseDashLite
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object caniuseDashLiteMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AgentsByID = StringDictionary[js.UndefOr[Agent]]
   /* Rewritten from type alias, can be one of: 
     - typings.caniuseDashLite.caniuseDashLiteStrings.ls

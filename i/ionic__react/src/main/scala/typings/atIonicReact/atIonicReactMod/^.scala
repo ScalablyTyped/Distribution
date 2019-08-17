@@ -75,6 +75,7 @@ import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTitleElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToggleElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToolbarElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonVirtualScrollElement
+import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.atIonicReact.Anon_ChildrenRef
 import typings.atIonicReact.Anon_ChildrenRefHTMLIonAnchorElement
 import typings.atIonicReact.Anon_ChildrenRefHTMLIonAppElement
@@ -647,13 +648,7 @@ object ^ extends js.Object {
   def useIonViewDidLeave(callback: js.Function): Unit = js.native
   def useIonViewWillEnter(callback: js.Function): Unit = js.native
   def useIonViewWillLeave(callback: js.Function): Unit = js.native
-  def useIonicConfig(): js.Tuple2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicConfig */ _, 
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicConfig */ /* config */ _, 
-      Unit
-    ]
-  ] = js.native
+  def useIonicConfig(): js.Tuple2[IonicConfig, js.Function1[/* config */ IonicConfig, Unit]] = js.native
   def withIonLifeCycle(WrappedComponent: ComponentType[_]): Anon_ContextType = js.native
 }
 

@@ -1,15 +1,16 @@
 package typings.vegaDashTypings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vegaDashTypings.Anon_Source
-import typings.vegaDashTypings.Anon_Url
-import typings.vegaDashTypings.Anon_Values
-import typings.vegaDashTypings.vegaDashTypingsStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecDataMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.vegaDashTypings.Anon_Source
+  import typings.vegaDashTypings.Anon_Url
+  import typings.vegaDashTypings.Anon_Values
+  import typings.vegaDashTypings.vegaDashTypingsStrings.auto
+
   type Data = SourceData | ValuesData | UrlData | BaseData
   type Datum = js.Any
   type Parse = auto | (StringDictionary[DataType | String])

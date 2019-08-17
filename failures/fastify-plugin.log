@@ -1,5 +1,3 @@
-[warn ] Phase1ReadTypescript.scala:128 Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/fastify-plugin/tsconfig.json: io.circe.ParsingFailure: expected " got '},
-  "...' (line 8, column 3) [id => fastify-plugin, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 
 [warn ] PhaseRunner.scala:70 Failed because of, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 

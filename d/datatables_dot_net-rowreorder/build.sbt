@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-rowreorder"
-version := "1.1-dt-20190212Z-f92a5d"
-scalaVersion := "2.12.8"
+version := "1.1-dt-20190212Z-0664cf"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

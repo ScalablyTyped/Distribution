@@ -1,12 +1,13 @@
 package typings.typedDashGraphql
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object graphqlMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type GraphQLEnumValueConfigMap = StringDictionary[GraphQLEnumValueConfig]
   // error/*.js
   type GraphQLError = Error

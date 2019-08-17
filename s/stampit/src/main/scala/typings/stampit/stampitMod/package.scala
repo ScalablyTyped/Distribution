@@ -1,11 +1,12 @@
 package typings.stampit
 
-import typings.stampit.Anon_Composables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stampitMod {
+  import typings.stampit.Anon_Composables
+
   /**
     * Composer function
     */

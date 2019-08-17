@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsGreengrassMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type BulkDeploymentResults = js.Array[BulkDeploymentResult]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Initializing

@@ -1,10 +1,11 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.activexDashPowerpointNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PowerPointNs {
+  import typings.activexDashPowerpoint.activexDashPowerpointNumbers.`1`
+
   type XlDataLabelSeparator = `1`
 }

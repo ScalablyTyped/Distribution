@@ -1,13 +1,14 @@
 package typings.irc.ircMod
 
-import typings.irc.ircMod.IChannel
-import typings.irc.ircMod.IMessage
-import typings.irc.ircMod.IWhoisData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object handlersNs {
+  import typings.irc.ircMod.IChannel
+  import typings.irc.ircMod.IMessage
+  import typings.irc.ircMod.IWhoisData
+
   type IAction = js.Function4[/* from */ String, /* to */ String, /* text */ String, /* message */ IMessage, Unit]
   type IChannelList = js.Function1[/* list */ js.Array[IChannel], Unit]
   type ICtcp = js.Function5[

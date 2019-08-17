@@ -1,14 +1,15 @@
 package typings.ws
 
-import typings.node.Buffer
-import typings.node.httpMod.OutgoingHttpHeaders
-import typings.std.ArrayBuffer
-import typings.ws.Anon_Origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object wsMod {
+  import typings.node.Buffer
+  import typings.node.httpMod.OutgoingHttpHeaders
+  import typings.std.ArrayBuffer
+  import typings.ws.Anon_Origin
+
   /**
     * CertMeta represents the accepted types for certificate & key data.
     */

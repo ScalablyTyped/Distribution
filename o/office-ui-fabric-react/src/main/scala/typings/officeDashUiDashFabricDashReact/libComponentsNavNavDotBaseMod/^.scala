@@ -1,0 +1,12 @@
+package typings.officeDashUiDashFabricDashReact.libComponentsNavNavDotBaseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def isRelativeUrl(url: String): Boolean = js.native
+}
+

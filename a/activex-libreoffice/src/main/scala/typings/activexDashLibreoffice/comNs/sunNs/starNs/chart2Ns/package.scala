@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySet
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.MultiServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object chart2Ns {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySet
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.MultiServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+
   /** @since LibreOffice 4.1 */
   type CartesianCoordinateSystem2d = XCoordinateSystem
   /** @since LibreOffice 4.1 */

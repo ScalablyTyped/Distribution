@@ -1,11 +1,12 @@
 package typings.echarts.echartsNs.EChartOptionNs.TooltipNs
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PositionNs {
+  import typings.std.HTMLElement
+
   type Fn = js.Function5[
     /* point */ js.Array[Double | String], 
     /* params */ js.Object | js.Array[js.Object], 

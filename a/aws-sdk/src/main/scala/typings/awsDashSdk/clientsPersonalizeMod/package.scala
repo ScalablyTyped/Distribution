@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.SERVICE
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsPersonalizeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.SERVICE
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountId = String
   type Arn = String
   type ArnList = js.Array[Arn]

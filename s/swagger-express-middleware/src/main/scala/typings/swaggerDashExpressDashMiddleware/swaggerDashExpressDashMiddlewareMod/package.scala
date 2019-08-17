@@ -1,14 +1,15 @@
 package typings.swaggerDashExpressDashMiddleware
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.express.expressMod.Application
-import typings.express.expressMod.RequestHandler
-import typings.express.expressMod.Router
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object swaggerDashExpressDashMiddlewareMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.express.expressMod.Application
+  import typings.express.expressMod.RequestHandler
+  import typings.express.expressMod.Router
+
   type CORSSignature = js.Function0[RequestHandler]
   type DefinitionsObject = StringDictionary[SchemaObject]
   type ExampleObject = StringDictionary[js.Any]

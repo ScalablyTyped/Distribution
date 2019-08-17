@@ -1,14 +1,15 @@
 package typings.plottable
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.d3DashSelection.d3DashSelectionMod.BaseType
-import typings.d3DashSelection.d3DashSelectionMod.Selection
-import typings.plottable.buildSrcCoreDatasetMod.Dataset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcCoreInterfacesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.d3DashSelection.d3DashSelectionMod.BaseType
+  import typings.d3DashSelection.d3DashSelectionMod.Selection
+  import typings.plottable.buildSrcCoreDatasetMod.Dataset
+
   type AppliedProjector = js.Function2[/* datum */ js.Any, /* index */ Double, js.Any]
   type AttributeToAppliedProjector = StringDictionary[AppliedProjector]
   type AttributeToProjector = StringDictionary[Projector]

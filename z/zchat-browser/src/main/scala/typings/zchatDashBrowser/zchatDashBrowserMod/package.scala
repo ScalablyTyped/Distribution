@@ -1,11 +1,12 @@
 package typings.zchatDashBrowser
 
-import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.ChatEventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zchatDashBrowserMod {
+  import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.ChatEventData
+
   /* Rewritten from type alias, can be one of: 
     - typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.ChatEventData
     - typings.zchatDashBrowser.Anon_Chatqueueposition

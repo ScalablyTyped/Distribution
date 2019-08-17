@@ -1,24 +1,25 @@
 package typings.atNivoBar
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atNivoBar.Anon_Auto
-import typings.atNivoBar.Anon_Bottom
-import typings.atNivoBar.Anon_Color
-import typings.atNivoBar.Anon_Datum
-import typings.atNivoBar.Anon_OnClick
-import typings.atNivoCore.atNivoCoreMod.MotionProps
-import typings.atNivoCore.atNivoCoreMod.SvgDefsAndFill
-import typings.react.NativeMouseEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.StatelessComponent
-import typings.std.HTMLCanvasElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoBarMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atNivoBar.Anon_Auto
+  import typings.atNivoBar.Anon_Bottom
+  import typings.atNivoBar.Anon_Color
+  import typings.atNivoBar.Anon_Datum
+  import typings.atNivoBar.Anon_OnClick
+  import typings.atNivoCore.atNivoCoreMod.MotionProps
+  import typings.atNivoCore.atNivoCoreMod.SvgDefsAndFill
+  import typings.react.NativeMouseEvent
+  import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.ReactNode
+  import typings.react.reactMod.StatelessComponent
+  import typings.std.HTMLCanvasElement
+  import typings.std.Partial
+
   type AccessorFunc = js.Function1[/* datum */ BarDatum, String]
   type Axis = Partial[Anon_Bottom]
   type BarCanvasProps = Data with BarProps with Partial[Anon_OnClick]

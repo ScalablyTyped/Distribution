@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * control editing of geometries. So you can easily build your own UI with your own needs and choices.
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mixin.LeafletMixinEvents * / any */ @js.native
 trait Editable extends js.Object {
   var currentPolygon: (typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _]) | typings.leaflet.leafletMod.Polygon[_] | typings.leaflet.leafletMod.Marker[_] = js.native
   /**

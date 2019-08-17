@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait ImageProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties * / any */ trait ImageProps extends js.Object {
   /**
     * Specify a different component as the Image component.
     *

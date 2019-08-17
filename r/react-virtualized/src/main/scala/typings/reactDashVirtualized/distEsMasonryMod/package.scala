@@ -1,14 +1,15 @@
 package typings.reactDashVirtualized
 
-import typings.react.reactMod.ReactNode
-import typings.reactDashVirtualized.Anon_ClientHeight
-import typings.reactDashVirtualized.Anon_Params
-import typings.reactDashVirtualized.Anon_StartIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distEsMasonryMod {
+  import typings.react.reactMod.ReactNode
+  import typings.reactDashVirtualized.Anon_ClientHeight
+  import typings.reactDashVirtualized.Anon_Params
+  import typings.reactDashVirtualized.Anon_StartIndex
+
   type CellRenderer = js.Function1[/* props */ MasonryCellProps, ReactNode]
   type OnCellsRenderedCallback = js.Function1[/* params */ Anon_StartIndex, Unit]
   type OnScrollCallback = js.Function1[/* params */ Anon_ClientHeight, Unit]

@@ -1,11 +1,12 @@
 package typings.halogen
 
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object halogenMod {
+  import typings.react.reactMod.Component
+
   type BeatLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
   type BounceLoader = Component[SizeLoaderProps, js.Object, js.Any]
   type ClipLoader = Component[SizeLoaderProps, js.Object, js.Any]

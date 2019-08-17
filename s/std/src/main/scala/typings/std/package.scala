@@ -1,16 +1,17 @@
 package typings
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.stdStrings.FIDO_2_0
-import typings.std.stdStrings.ScopedCred
-import typings.std.stdStrings.auto
-import typings.std.stdStrings.vibration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object std {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.stdStrings.FIDO_2_0
+  import typings.std.stdStrings.ScopedCred
+  import typings.std.stdStrings.auto
+  import typings.std.stdStrings.vibration
+
   type AlgorithmIdentifier = java.lang.String | Algorithm
   type AudioWorklet = Worklet
   type AutoKeyword = auto

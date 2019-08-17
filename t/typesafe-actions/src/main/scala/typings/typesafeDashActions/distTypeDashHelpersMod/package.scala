@@ -1,12 +1,13 @@
 package typings.typesafeDashActions
 
-import typings.std.ReturnType
-import typings.typesafeDashActions.Anon_TypeTType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypeDashHelpersMod {
+  import typings.std.ReturnType
+  import typings.typesafeDashActions.Anon_TypeTType
+
   type ActionBuilderConstructor[TType /* <: TypeConstant */, TPayload /* <: js.Any */, TMeta /* <: js.Any */] = (PayloadMetaAC[TType, TPayload, TMeta]) | (PayloadAC[TType, TPayload]) | EmptyAC[TType]
   type ActionBuilderMap[TType /* <: TypeConstant */, TActionProps /* <: js.Any */, TPayloadArg /* <: js.Any */, TMetaArg /* <: js.Any */] = (js.Function2[
     /* payload */ TPayloadArg, 
@@ -20,7 +21,7 @@ package object distTypeDashHelpersMod {
   type PayloadMetaAC[TType /* <: TypeConstant */, TPayload, TMeta] = js.Function2[/* payload */ TPayload, /* meta */ TMeta, PayloadMetaAction[TType, TPayload, TMeta]]
   type Reducer[TState, TAction /* <: Action[TypeConstant] */] = js.Function2[/* state */ js.UndefOr[TState], /* action */ TAction, TState]
   type StateType[TReducerOrMap /* <: js.Any */] = (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof TReducerOrMap ]: object}
+  {[ K in keyof TReducerOrMap ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias typesafe-actions.typesafe-actions/dist/type-helpers.StateType<TReducerOrMap[K]> * / object}
     */ typings.typesafeDashActions.typesafeDashActionsStrings.StateType with js.Any) | ReturnType[TReducerOrMap]
   type TypeConstant = String
 }

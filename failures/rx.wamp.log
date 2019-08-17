@@ -1,12 +1,21 @@
 [info ] ResolveExternalReferences.scala:82 Inferred augmented module None (TsIdentModule(None,List(rx))) [file => ../types/rx.wamp/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx)), id => rx.wamp] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:170 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rx.wamp)) [id => rx.wamp, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(fromConnection) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(fromPubSubPattern) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(subscriber) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(subscribeAsObservable) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(publishAsObservable) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(registerAsObservable) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(callAsObservable) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(to) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclClass(Subscriber))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(dispose) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclClass(Subscriber))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsAugmentedModule(rx) / TsDeclInterface(ObservableStatic))] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
-[info ] InferMemberOverrides.scala:83 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(typings) / Name(rxDotWamp) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(typings) / Name(rxDotWamp) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => scala.js] 
 [warn ] Phase3Compile.scala:208 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
 [error] Phase3Compile.scala:234 [E] [E25] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:28:34
@@ -110,7 +119,6 @@
 [E]      L14: import typings.rx.rxMod.Observable
 [E]           ^^^^^^^
 [E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala: L14 [E1], L25 [E2], L30 [E3], L32 [E4], L33 [E5], L38 [E6], L46 [E7], L47 [E8], L48 [E9], L49 [E10], L55 [E11], L57 [E13], L61 [E12], L62 [E14], L63 [E15], L69 [E16], L70 [E17], L70 [E18], L71 [E19], L71 [E20], L73 [E22], L77 [E21], L79 [E23]
-[E] src/main/scala/typings/rxDotWamp/rxDotWampMod/rxMod/package.scala: L3 [E26]
 [E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala: L27 [E24], L28 [E25]
 [E] Failed to compile 'rx_dot_wamp'
  [id => rx.wamp, phase => build] 

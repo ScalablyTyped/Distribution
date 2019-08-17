@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMediapackagevodMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.SCTE35_ENHANCED

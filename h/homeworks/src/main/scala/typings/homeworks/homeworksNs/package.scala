@@ -1,12 +1,13 @@
 package typings.homeworks
 
-import typings.homeworks.homeworksStrings.move
-import typings.homeworks.homeworksStrings.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object homeworksNs {
+  import typings.homeworks.homeworksStrings.move
+  import typings.homeworks.homeworksStrings.start
+
   /**
     * @since 1.0.0
     */

@@ -1,11 +1,12 @@
 package typings.socketioDashJwtDashAuth
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object socketioDashJwtDashAuthMod {
+  import typings.std.Error
+
   type verifyFunc = js.Function2[
     /* payload */ js.Any, 
     /* done */ js.Function3[

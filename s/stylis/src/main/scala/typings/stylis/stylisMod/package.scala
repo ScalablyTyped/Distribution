@@ -1,11 +1,12 @@
 package typings.stylis
 
-import typings.stylis.Selectors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stylisMod {
+  import typings.stylis.Selectors
+
   type Plugin = js.ThisFunction9[
     /* this */ Stylis, 
     /* context */ Context, 

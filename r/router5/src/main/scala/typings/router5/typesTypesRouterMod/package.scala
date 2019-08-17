@@ -1,15 +1,16 @@
 package typings.router5
 
-import typings.routeDashNode.routeDashNodeMod.default
-import typings.router5.typesTypesBaseMod.DoneFn
-import typings.router5.typesTypesBaseMod.State
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesTypesRouterMod {
+  import typings.routeDashNode.routeDashNodeMod.default
+  import typings.router5.typesTypesBaseMod.DoneFn
+  import typings.router5.typesTypesBaseMod.State
+  import typings.std.Partial
+  import typings.std.Record
+
   type ActivationFn = js.Function3[
     /* toState */ State, 
     /* fromState */ State, 

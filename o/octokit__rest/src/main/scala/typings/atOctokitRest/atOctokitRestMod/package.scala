@@ -1,12 +1,13 @@
 package typings.atOctokitRest
 
-import typings.atOctokitRest.Anon_Documentationurl
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atOctokitRestMod {
+  import typings.atOctokitRest.Anon_Documentationurl
+  import typings.std.Error
+
   type ActivityDeleteRepoSubscriptionResponse = js.Object
   type ActivityDeleteThreadSubscriptionResponse = js.Object
   type ActivityListNotificationsForRepoResponse = js.Array[ActivityListNotificationsForRepoResponseItem]

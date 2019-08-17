@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "yoga-layout"
-version := "1.9-dt-20190312Z-f2d2ee"
-scalaVersion := "2.12.8"
+version := "1.9-dt-20190312Z-1bbca8"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

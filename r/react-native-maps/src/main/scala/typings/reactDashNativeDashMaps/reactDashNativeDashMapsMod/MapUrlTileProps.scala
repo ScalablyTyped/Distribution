@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapUrlTileProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapUrlTileProps extends js.Object {
   var maximumZ: js.UndefOr[Double] = js.undefined
   var tileSize: js.UndefOr[Double] = js.undefined
   var urlTemplate: String

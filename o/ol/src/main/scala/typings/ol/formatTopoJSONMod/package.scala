@@ -1,21 +1,22 @@
 package typings.ol
 
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.GeometryCollection
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.GeometryObject
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.LineString
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiLineString
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiPoint
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiPolygon
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Objects
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Point
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Polygon
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Properties
-import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Topology
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object formatTopoJSONMod {
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.GeometryCollection
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.GeometryObject
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.LineString
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiLineString
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiPoint
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.MultiPolygon
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Objects
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Point
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Polygon
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Properties
+  import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Topology
+
   type TopoJSON = typings.ol.formatJSONFeatureMod.default
   type TopoJSONGeometry = GeometryObject[js.Object]
   type TopoJSONGeometryCollection = GeometryCollection[js.Object]

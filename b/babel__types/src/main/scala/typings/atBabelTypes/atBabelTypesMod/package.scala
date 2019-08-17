@@ -1,11 +1,12 @@
 package typings.atBabelTypes
 
-import typings.atBabelTypes.Anon_Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atBabelTypesMod {
+  import typings.atBabelTypes.Anon_Index
+
   /* Rewritten from type alias, can be one of: 
     - typings.atBabelTypes.atBabelTypesMod.AnyTypeAnnotation
     - typings.atBabelTypes.atBabelTypesMod.ArgumentPlaceholder

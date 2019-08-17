@@ -1,12 +1,13 @@
 package typings.helmet
 
-import typings.express.expressMod.Request
-import typings.express.expressMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object helmetMod {
+  import typings.express.expressMod.Request
+  import typings.express.expressMod.Response
+
   type HelmetCspDirectiveValue = String | IHelmetContentSecurityPolicyDirectiveFunction
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

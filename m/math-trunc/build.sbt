@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "math-trunc"
-version := "1.0-dt-20190402Z-807e24"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190402Z-b683d0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

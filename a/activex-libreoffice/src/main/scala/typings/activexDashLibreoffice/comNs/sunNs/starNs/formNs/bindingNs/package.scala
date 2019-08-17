@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bindingNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * this service specifies a {@link BindableControlModel} which reflects an integer value, out of a range of permitted integer values.
     *

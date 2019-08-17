@@ -18,7 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof any, 'onChange' | 'onFocus' | 'onBlur'> ]: any[P]} */ trait InputItemProps extends InputItemPropsType {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any extends any ? std.Pick</ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any, utility-types.utility-types/dist/mapped-types.SetComplement<keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any, 'onChange' | 'onFocus' | 'onBlur'>> : never */ trait InputItemProps extends InputItemPropsType {
   var last: js.UndefOr[Boolean] = js.undefined
   var onErrorClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onExtraClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined

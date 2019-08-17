@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsResourcegroupstaggingapiMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AmazonResourceType = String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 

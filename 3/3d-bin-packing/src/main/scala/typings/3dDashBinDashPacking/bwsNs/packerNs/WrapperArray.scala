@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.WrapperArray")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<Wrapper> * / any */ @JSGlobal("bws.packer.WrapperArray")
 @js.native
 /**
   * Default Constructor.

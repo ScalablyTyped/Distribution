@@ -1,11 +1,12 @@
 package typings.zrender
 
-import typings.zrender.Anon_Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zrenderNs {
+  import typings.zrender.Anon_Color
+
   type ColorStops = js.Array[Anon_Color]
   type GlobalCoords = Boolean
   type X = Double

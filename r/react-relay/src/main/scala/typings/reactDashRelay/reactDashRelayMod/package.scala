@@ -1,23 +1,24 @@
 package typings.reactDashRelay
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentType
-import typings.reactDashRelay.Anon_CacheConfig
-import typings.reactDashRelay.Anon_ComponentRef
-import typings.reactDashRelay.reactDashRelayStrings.relay
-import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLTaggedNode
-import typings.relayDashRuntime.relayDashRuntimeMod.Observer
-import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
-import typings.relayDashRuntime.relayDashRuntimeMod.Variables
-import typings.std.Error
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRelayMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ComponentType
+  import typings.reactDashRelay.Anon_CacheConfig
+  import typings.reactDashRelay.Anon_ComponentRef
+  import typings.reactDashRelay.reactDashRelayStrings.relay
+  import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLTaggedNode
+  import typings.relayDashRuntime.relayDashRuntimeMod.Observer
+  import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
+  import typings.relayDashRuntime.relayDashRuntimeMod.Variables
+  import typings.std.Error
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type Container[Props] = ComponentType[ContainerProps[Props] with Anon_ComponentRef]
   type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[String, relay]]]
   type FragmentOrRegularProp[T] = T | js.Array[_FragmentRefs[js.Any]] | _FragmentRefs[js.Any]

@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.MAX_ZONES_BY_REUSABLE_DELEGATION_SET
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRoute53Mod {
+  import typings.awsDashSdk.awsDashSdkStrings.MAX_ZONES_BY_REUSABLE_DELEGATION_SET
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.MAX_HEALTH_CHECKS_BY_OWNER
     - typings.awsDashSdk.awsDashSdkStrings.MAX_HOSTED_ZONES_BY_OWNER

@@ -1,12 +1,13 @@
 package typings.fluentDashReact
 
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fluentDashReactMod {
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type GetProps[C] = js.Any
   type GetString = js.Function2[/* id */ String, /* args */ js.UndefOr[js.Object], String]
   type MarkupParser = js.Function1[/* str */ String, js.Array[Node]]

@@ -1,14 +1,15 @@
 package typings.graphql
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
-import typings.graphql.languageAstMod.ValueNode
-import typings.graphql.tsutilsMaybeMod.Maybe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typeDefinitionMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
+  import typings.graphql.languageAstMod.ValueNode
+  import typings.graphql.tsutilsMaybeMod.Maybe
+
   /* Rewritten from type alias, can be one of: 
     - typings.graphql.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
     - typings.graphql.typeDefinitionMod.GraphQLInterfaceType

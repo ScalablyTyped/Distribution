@@ -1,14 +1,15 @@
 package typings.atAngularRouter
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atAngularCore.atAngularCoreMod.NgModuleFactory
-import typings.atAngularCore.atAngularCoreMod.Type
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atAngularRouterMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atAngularCore.atAngularCoreMod.NgModuleFactory
+  import typings.atAngularCore.atAngularCoreMod.Type
+  import typings.rxjs.rxjsMod.Observable
+
   type Data = StringDictionary[js.Any]
   type DeprecatedLoadChildren = String
   type DetachedRouteHandle = js.Object

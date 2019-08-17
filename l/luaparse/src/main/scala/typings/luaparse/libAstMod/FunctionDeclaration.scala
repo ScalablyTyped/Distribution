@@ -11,7 +11,7 @@ trait FunctionDeclaration
   var body: js.Array[Statement]
   var identifier: Identifier | MemberExpression | Null
   var isLocal: Boolean
-  var parameters: js.Array[Identifier]
+  var parameters: js.Array[Identifier | VarargLiteral]
 }
 
 object FunctionDeclaration {
@@ -19,7 +19,7 @@ object FunctionDeclaration {
   def apply(
     body: js.Array[Statement],
     isLocal: Boolean,
-    parameters: js.Array[Identifier],
+    parameters: js.Array[Identifier | VarargLiteral],
     `type`: typings.luaparse.luaparseStrings.FunctionDeclaration,
     identifier: Identifier | MemberExpression = null
   ): FunctionDeclaration = {

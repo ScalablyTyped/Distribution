@@ -1,15 +1,16 @@
 package typings.intlDashMessageformatDashParser
 
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.argument
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.date
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.literal
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.number
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.argument
+  import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.date
+  import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.literal
+  import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.number
+  import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.time
+
   type ArgumentElement = BaseElement[argument]
   type DateElement = SimpleFormatElement[date]
   type LiteralElement = BaseElement[literal]

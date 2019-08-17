@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudwatcheventsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountId = java.lang.String
   type Action = java.lang.String
   type Arn = java.lang.String

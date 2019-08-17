@@ -1,15 +1,16 @@
 package typings.recharts
 
-import typings.d3DashShape.d3DashShapeMod.CurveFactory
-import typings.react.reactMod.ReactNode
-import typings.recharts.Anon_ErrorVal
-import typings.recharts.Anon_Height
-import typings.recharts.Anon_HeightWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rechartsMod {
+  import typings.d3DashShape.d3DashShapeMod.CurveFactory
+  import typings.react.reactMod.ReactNode
+  import typings.recharts.Anon_ErrorVal
+  import typings.recharts.Anon_Height
+  import typings.recharts.Anon_HeightWidth
+
   type AreaChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

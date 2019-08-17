@@ -1,12 +1,13 @@
 package typings.zdog
 
-import typings.std.CanvasRenderingContext2D
-import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zdogMod {
+  import typings.std.CanvasRenderingContext2D
+  import typings.std.SVGSVGElement
+
   type DragEndListener = js.ThisFunction0[/* this */ Dragger, Unit]
   type DragMoveListener = js.ThisFunction3[
     /* this */ Dragger, 

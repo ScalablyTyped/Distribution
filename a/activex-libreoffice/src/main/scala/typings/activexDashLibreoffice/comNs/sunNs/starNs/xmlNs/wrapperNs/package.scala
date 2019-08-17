@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object wrapperNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+
   /**
     * Interface of XML Element Wrapper.
     *

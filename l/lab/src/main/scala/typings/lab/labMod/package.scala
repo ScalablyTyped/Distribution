@@ -1,11 +1,12 @@
 package typings.lab
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object labMod {
+  import typings.std.Error
+
   type AsyncCallback = js.Function1[/* done */ DoneFunction, Unit]
   type AsyncPromise = js.Function0[js.Promise[js.Any]]
   type CleanupFunction = js.Function1[/* func */ js.Function1[/* next */ js.Function, Unit], Unit]

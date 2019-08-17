@@ -1,15 +1,16 @@
 package typings.mqtt
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.mqtt.Anon_Nl
-import typings.mqttDashPacket.mqttDashPacketMod.Packet
-import typings.node.Buffer
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesLibClientMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.mqtt.Anon_Nl
+  import typings.mqttDashPacket.mqttDashPacketMod.Packet
+  import typings.node.Buffer
+  import typings.std.Error
+
   type ClientSubscribeCallback = js.Function2[/* err */ Error, /* granted */ js.Array[ISubscriptionGrant], Unit]
   type CloseCallback = js.Function0[Unit]
   type ISubscriptionMap = /**

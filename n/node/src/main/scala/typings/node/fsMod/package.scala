@@ -1,13 +1,14 @@
 package typings.node
 
-import typings.node.Anon_EncodingFlagMode
-import typings.node.NodeJSNs.TypedArray
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fsMod {
+  import typings.node.Anon_EncodingFlagMode
+  import typings.node.NodeJSNs.TypedArray
+  import typings.std.DataView
+
   type BinaryData = DataView | TypedArray
   /**
     * Valid types for path values in "fs".

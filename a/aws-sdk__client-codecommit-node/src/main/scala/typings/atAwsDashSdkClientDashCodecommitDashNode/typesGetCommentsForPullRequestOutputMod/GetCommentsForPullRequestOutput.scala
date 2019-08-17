@@ -1,0 +1,39 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForPullRequestOutputMod
+
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUnderscoreCommentsForPullRequestMod._UnmarshalledCommentsForPullRequest
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetCommentsForPullRequestOutput extends OutputTypesUnion {
+  /**
+    * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
+    */
+  @JSName("$metadata")
+  var $metadata: ResponseMetadata
+  /**
+    * <p>An array of comment objects on the pull request.</p>
+    */
+  var commentsForPullRequestData: js.UndefOr[js.Array[_UnmarshalledCommentsForPullRequest]] = js.undefined
+  /**
+    * <p>An enumeration token that can be used in a request to return the next batch of the results.</p>
+    */
+  var nextToken: js.UndefOr[String] = js.undefined
+}
+
+object GetCommentsForPullRequestOutput {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    commentsForPullRequestData: js.Array[_UnmarshalledCommentsForPullRequest] = null,
+    nextToken: String = null
+  ): GetCommentsForPullRequestOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata)
+    if (commentsForPullRequestData != null) __obj.updateDynamic("commentsForPullRequestData")(commentsForPullRequestData)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    __obj.asInstanceOf[GetCommentsForPullRequestOutput]
+  }
+}
+

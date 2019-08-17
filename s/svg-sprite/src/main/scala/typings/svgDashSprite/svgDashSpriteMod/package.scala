@@ -1,15 +1,16 @@
 package typings.svgDashSprite
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.svgDashSprite.Anon_Plugins
-import typings.svgDashSprite.Fn_Callback
-import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object svgDashSpriteMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.svgDashSprite.Anon_Plugins
+  import typings.svgDashSprite.Fn_Callback
+  import typings.vinyl.vinylMod.File
+
   type CompileCallback = js.Function3[/* error */ Error, /* result */ js.Any, /* data */ js.Any, js.Any]
   /**
     * Custom callback transformation

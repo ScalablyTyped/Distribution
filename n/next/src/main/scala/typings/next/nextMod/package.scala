@@ -1,17 +1,18 @@
 package typings.next
 
-import typings.nextDashServer.routerMod.DefaultQuery
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.FunctionComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nextMod {
+  import typings.nextDashServer.routerMod.DefaultQuery
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.FunctionComponent
+  import typings.std.Partial
+
   /**
     * Next.js getInitialProps type.
     *

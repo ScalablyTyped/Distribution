@@ -1,21 +1,22 @@
 package typings.meteorDashAstronomy
 
-import typings.meteor.MongoNs.ObjectID
-import typings.meteor.MongoNs.Selector
-import typings.meteorDashAstronomy.Anon_Callback
-import typings.meteorDashAstronomy.Anon_GetIdentifier
-import typings.std.BooleanConstructor
-import typings.std.DateConstructor
-import typings.std.Exclude
-import typings.std.NumberConstructor
-import typings.std.ObjectConstructor
-import typings.std.Pick
-import typings.std.StringConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MeteorAstronomyNs {
+  import typings.meteor.MongoNs.ObjectID
+  import typings.meteor.MongoNs.Selector
+  import typings.meteorDashAstronomy.Anon_Callback
+  import typings.meteorDashAstronomy.Anon_GetIdentifier
+  import typings.std.BooleanConstructor
+  import typings.std.DateConstructor
+  import typings.std.Exclude
+  import typings.std.NumberConstructor
+  import typings.std.ObjectConstructor
+  import typings.std.Pick
+  import typings.std.StringConstructor
+
   type Enum[T] = T with Anon_GetIdentifier
   type Fields[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}

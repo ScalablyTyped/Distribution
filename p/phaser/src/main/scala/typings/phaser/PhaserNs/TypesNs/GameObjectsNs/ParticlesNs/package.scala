@@ -1,14 +1,15 @@
 package typings.phaser.PhaserNs.TypesNs.GameObjectsNs
 
-import typings.phaser.PhaserNs.GameObjectsNs.ParticlesNs.Particle
-import typings.phaser.PhaserNs.GameObjectsNs.ParticlesNs.ParticleEmitter
-import typings.phaser.PhaserNs.MathNs.Vector2
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ParticlesNs {
+  import typings.phaser.PhaserNs.GameObjectsNs.ParticlesNs.Particle
+  import typings.phaser.PhaserNs.GameObjectsNs.ParticlesNs.ParticleEmitter
+  import typings.phaser.PhaserNs.MathNs.Vector2
+  import typings.phaser.integer
+
   type DeathZoneSourceCallback = js.Function2[/* x */ Double, /* y */ Double, Unit]
   type EdgeZoneSourceCallback = js.Function2[/* quantity */ integer, /* stepRate */ js.UndefOr[Double], Unit]
   /**

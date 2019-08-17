@@ -1,14 +1,15 @@
 package typings.enzyme
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.AllHTMLAttributes
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.SVGAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object enzymeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.AllHTMLAttributes
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.SVGAttributes
+
   type ComponentType[Props] = ComponentClass[Props] | StatelessComponent[Props]
   type EnzymePropSelector = StringDictionary[js.Any]
   type EnzymeSelector = String | StatelessComponent[js.Any] | ComponentClass[js.Any] | EnzymePropSelector

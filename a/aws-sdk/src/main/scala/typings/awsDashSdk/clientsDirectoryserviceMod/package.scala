@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.ACCOUNT
-import typings.awsDashSdk.awsDashSdkStrings.Domain
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDirectoryserviceMod {
+  import typings.awsDashSdk.awsDashSdkStrings.ACCOUNT
+  import typings.awsDashSdk.awsDashSdkStrings.Domain
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccessUrl = String
   type AddedDateTime = Date
   type AliasName = String

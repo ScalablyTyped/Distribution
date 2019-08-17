@@ -1,12 +1,13 @@
 package typings.stylelint
 
-import typings.postcss.postcssMod.Result
-import typings.postcss.postcssMod.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stylelintMod {
+  import typings.postcss.postcssMod.Result
+  import typings.postcss.postcssMod.Root
+
   /* Rewritten from type alias, can be one of: 
     - typings.stylelint.stylelintStrings.json
     - typings.stylelint.stylelintStrings.string

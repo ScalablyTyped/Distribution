@@ -1,12 +1,13 @@
 package typings.swaggerDashNodeDashRunner
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object swaggerDashNodeDashRunnerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type ExpressMiddleware = ConnectMiddleware
   type SwaggerSecurityHandlers = StringDictionary[SwaggerToolsSecurityHandler]
   type SwaggerToolsMiddleware = js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, js.Any]

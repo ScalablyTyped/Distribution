@@ -1,13 +1,14 @@
 package typings.realm
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.realm.Realm
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object RealmNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.realm.Realm
+  import typings.std.Partial
+
   type CollectionChangeCallback[T] = js.Function2[/* collection */ Collection[T], /* change */ CollectionChangeSet, Unit]
   /**
     * A function which can be called to migrate a Realm from one version of the schema to another.

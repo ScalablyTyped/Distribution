@@ -1,6 +1,7 @@
 package typings.draftDashJs
 
 import typings.draftDashJs.draftDashJsMod.DraftNs.ComponentNs.BaseNs.DraftTextAlignment
+import typings.draftDashJs.draftDashJsMod.DraftNs.ComponentNs.BaseNs.DraftTextDirectionality
 import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.ComposedEntityType
 import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
 import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftDragType
@@ -35,10 +36,19 @@ object draftDashJsStrings {
   sealed trait LINK extends ComposedEntityType
   
   @js.native
+  sealed trait LTR extends DraftTextDirectionality
+  
+  @js.native
   sealed trait MUTABLE extends DraftEntityMutability
   
   @js.native
+  sealed trait NEUTRAL extends DraftTextDirectionality
+  
+  @js.native
   sealed trait PHOTO extends ComposedEntityType
+  
+  @js.native
+  sealed trait RTL extends DraftTextDirectionality
   
   @js.native
   sealed trait SEGMENTED extends DraftEntityMutability
@@ -233,9 +243,15 @@ object draftDashJsStrings {
   @scala.inline
   def LINK: LINK = "LINK".asInstanceOf[LINK]
   @scala.inline
+  def LTR: LTR = "LTR".asInstanceOf[LTR]
+  @scala.inline
   def MUTABLE: MUTABLE = "MUTABLE".asInstanceOf[MUTABLE]
   @scala.inline
+  def NEUTRAL: NEUTRAL = "NEUTRAL".asInstanceOf[NEUTRAL]
+  @scala.inline
   def PHOTO: PHOTO = "PHOTO".asInstanceOf[PHOTO]
+  @scala.inline
+  def RTL: RTL = "RTL".asInstanceOf[RTL]
   @scala.inline
   def SEGMENTED: SEGMENTED = "SEGMENTED".asInstanceOf[SEGMENTED]
   @scala.inline

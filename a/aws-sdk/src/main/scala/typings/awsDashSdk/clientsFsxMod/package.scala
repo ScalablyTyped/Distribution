@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsFsxMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AWSAccountId = String
   type ActiveDirectoryFullyQualifiedName = String
   type ArchivePath = String

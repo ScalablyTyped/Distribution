@@ -1,12 +1,13 @@
 package typings.uikit
 
-import typings.jquery.JQuery
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object UIkitNs {
+  import typings.jquery.JQuery
+  import typings.std.HTMLElement
+
   /**
     * Create a list of items, allowing each item's content to be expanded and collapsed by clicking its header.
     * Documentation {@link http://getuikit.org/docs/accordion.html}

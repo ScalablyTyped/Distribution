@@ -1,13 +1,14 @@
 package typings.atIonicCliDashFramework
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.checkbox
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.confirm
-import typings.inquirer.inquirerMod.Answers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPromptsMod {
+  import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.checkbox
+  import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.confirm
+  import typings.inquirer.inquirerMod.Answers
+
   type Inquirer = typings.inquirer.inquirerMod.Inquirer
   type PromptType = PromptTypeConfirm | PromptTypeCheckbox | PromptTypeOther
   type PromptTypeCheckbox = checkbox

@@ -1,26 +1,27 @@
 package typings
 
-import typings.cypress.JQueryNs.AjaxSettings
-import typings.cypress.JQueryNs.Callbacks
-import typings.cypress.JQueryNs.Coordinates
-import typings.cypress.JQueryNs.Deferred
-import typings.cypress.JQueryNs.EffectsOptions
-import typings.cypress.JQueryNs.EventStatic
-import typings.cypress.JQueryNs.NameValuePair
-import typings.cypress.JQueryNs.PlainObject
-import typings.cypress.JQueryNs.Promise
-import typings.cypress.JQueryNs.Thenable
-import typings.cypress.JQueryNs.TypeOrArray
-import typings.cypress.JQueryNs.jqXHR
-import typings.cypress.MochaNs.Done
-import typings.cypress.MochaNs.MochaGlobals
-import typings.std.Element
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cypress {
+  import typings.cypress.JQueryNs.AjaxSettings
+  import typings.cypress.JQueryNs.Callbacks
+  import typings.cypress.JQueryNs.Coordinates
+  import typings.cypress.JQueryNs.Deferred
+  import typings.cypress.JQueryNs.EffectsOptions
+  import typings.cypress.JQueryNs.EventStatic
+  import typings.cypress.JQueryNs.NameValuePair
+  import typings.cypress.JQueryNs.PlainObject
+  import typings.cypress.JQueryNs.Promise
+  import typings.cypress.JQueryNs.Thenable
+  import typings.cypress.JQueryNs.TypeOrArray
+  import typings.cypress.JQueryNs.jqXHR
+  import typings.cypress.MochaNs.Done
+  import typings.cypress.MochaNs.MochaGlobals
+  import typings.std.Element
+  import typings.std.Event
+
   // tslint:disable-next-line:no-empty-interface
   type JQueryAjaxSettings = AjaxSettings[js.Any]
   type JQueryAnimationOptions = EffectsOptions[Element]

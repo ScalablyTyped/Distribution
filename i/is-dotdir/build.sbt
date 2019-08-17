@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "is-dotdir"
-version := "1.0-dt-20181225Z-03006c"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20181225Z-4f3466"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

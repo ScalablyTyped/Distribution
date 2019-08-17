@@ -1,13 +1,14 @@
 package typings.prosemirrorDashTestDashBuilder
 
-import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
-import typings.prosemirrorDashTestDashBuilder.Args
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object prosemirrorDashTestDashBuilderMod {
+  import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
+  import typings.prosemirrorDashTestDashBuilder.Args
+  import typings.std.Record
+
   type Builder = js.Function2[
     /* testSchema */ Schema[String, String], 
     /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes], 

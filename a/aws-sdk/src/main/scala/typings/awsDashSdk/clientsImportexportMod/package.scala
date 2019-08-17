@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsImportexportMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type APIVersion = String
   type ArtifactList = js.Array[Artifact]
   type Carrier = String

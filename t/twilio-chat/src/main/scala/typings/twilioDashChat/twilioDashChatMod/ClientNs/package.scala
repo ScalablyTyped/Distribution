@@ -1,11 +1,12 @@
 package typings.twilioDashChat.twilioDashChatMod
 
-import typings.twilioDashNotifications.libConnectorMod.ChannelType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClientNs {
+  import typings.twilioDashNotifications.libConnectorMod.ChannelType
+
   type ConnectionState = typings.twilioDashNotifications.libClientMod.ConnectionState
   /* Rewritten from type alias, can be one of: 
     - typings.twilioDashChat.twilioDashChatStrings.trace

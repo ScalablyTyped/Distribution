@@ -1,15 +1,16 @@
 package typings.aframe
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.aframe.Anon_Detail
-import typings.std.Event
-import typings.std.Partial
-import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object aframeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.aframe.Anon_Detail
+  import typings.std.Event
+  import typings.std.Partial
+  import typings.std.ThisType
+
   type ComponentDefinition[T /* <: js.Object */] = T with (Partial[Component[_, System[_]]]) with (ThisType[T with (Component[_, System[_]])])
   type DetailEvent[D] = Event with Anon_Detail[D]
   type GeometryDefinition[T /* <: js.Object */, U] = T with Partial[Geometry[U]]

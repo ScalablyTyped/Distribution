@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "humanize-string"
-version := "2.1.0-ead94d"
-scalaVersion := "2.12.8"
+version := "2.1.0-6abe4f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

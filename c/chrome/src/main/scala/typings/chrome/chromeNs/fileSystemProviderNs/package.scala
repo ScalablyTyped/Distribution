@@ -1,12 +1,13 @@
 package typings.chrome.chromeNs
 
-import typings.chrome.chromeNs.eventsNs.Event
-import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fileSystemProviderNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+  import typings.std.ArrayBuffer
+
   type DirectoryPathRecursiveRequestedEvent = Event[
     js.Function3[
       /* options */ DirectoryPathRecursiveRequestedEventOptions, 

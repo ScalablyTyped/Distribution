@@ -1,12 +1,13 @@
 package typings.minio
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object minioMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type ItemBucketMetadata = StringDictionary[js.Any]
   type NoResultCallback = js.Function1[/* error */ Error | Null, Unit]
   /* Rewritten from type alias, can be one of: 

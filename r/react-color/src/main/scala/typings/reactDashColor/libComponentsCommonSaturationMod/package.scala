@@ -1,10 +1,11 @@
 package typings.reactDashColor
 
-import typings.reactDashColor.reactDashColorMod.CustomPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libComponentsCommonSaturationMod {
+  import typings.reactDashColor.reactDashColorMod.CustomPickerProps
+
   type SaturationProps = CustomPickerProps[Saturation]
 }

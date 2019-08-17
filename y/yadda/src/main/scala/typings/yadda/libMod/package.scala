@@ -1,12 +1,13 @@
 package typings.yadda
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type Annotations = StringDictionary[String]
   type Converter = (js.Function2[
     /* arg1 */ String, 

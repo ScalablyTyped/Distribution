@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "istanbul-reports"
-version := "1.1-dt-20190417Z-ca8f5a"
-scalaVersion := "2.12.8"
+version := "1.1-dt-20190417Z-391e94"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-f7f969",
-  "org.scalablytyped" %%% "istanbul-lib-report" % "1.1-dt-20190425Z-38ad5b",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-b7155e",
+  "org.scalablytyped" %%% "istanbul-lib-report" % "1.1-dt-20190425Z-af18d6",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

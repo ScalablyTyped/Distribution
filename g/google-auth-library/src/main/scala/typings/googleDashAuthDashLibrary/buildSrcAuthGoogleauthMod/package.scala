@@ -1,14 +1,15 @@
 package typings.googleDashAuthDashLibrary
 
-import typings.googleDashAuthDashLibrary.buildSrcAuthJwtclientMod.JWT
-import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.OAuth2Client
-import typings.googleDashAuthDashLibrary.buildSrcAuthRefreshclientMod.UserRefreshClient
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcAuthGoogleauthMod {
+  import typings.googleDashAuthDashLibrary.buildSrcAuthJwtclientMod.JWT
+  import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.OAuth2Client
+  import typings.googleDashAuthDashLibrary.buildSrcAuthRefreshclientMod.UserRefreshClient
+  import typings.std.Error
+
   type ADCCallback = js.Function3[
     /* err */ Error | Null, 
     /* credential */ js.UndefOr[OAuth2Client], 

@@ -1,12 +1,13 @@
 package typings.koaDashMorgan
 
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object koaDashMorganMod {
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+
   type FormatFn = js.Function3[/* tokens */ TokenIndexer, /* req */ IncomingMessage, /* res */ ServerResponse, String]
   type StreamOptions = typings.morgan.morganMod.StreamOptions
   type TokenCallbackFn = js.Function3[

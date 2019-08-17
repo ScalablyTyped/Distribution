@@ -1,11 +1,12 @@
 package typings.atGoogleMaps
 
-import typings.atGoogleMaps.atGoogleMapsStrings.timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atGoogleMapsMod {
+  import typings.atGoogleMaps.atGoogleMapsStrings.timeout
+
   type GoogleMapsClientEndpoint[Request, Response] = js.Function2[
     /* query */ Request, 
     /* callback */ js.UndefOr[ResponseCallback[Response]], 

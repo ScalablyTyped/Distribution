@@ -1,0 +1,16 @@
+package typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesRestoreTableFromBackupExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTableInUseExceptionMod.TableInUseException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesBackupNotFoundExceptionMod.BackupNotFoundException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesBackupInUseExceptionMod.BackupInUseException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesLimitExceededExceptionMod.LimitExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesInternalServerErrorMod.InternalServerError
+*/
+trait RestoreTableFromBackupExceptionsUnion extends js.Object
+

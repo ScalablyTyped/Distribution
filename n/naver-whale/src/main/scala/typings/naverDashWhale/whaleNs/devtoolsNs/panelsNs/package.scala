@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs.devtoolsNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object panelsNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type ButtonClickedEvent = Event[js.Function0[Unit]]
   type ExtensionSidebarPaneHiddenEvent = Event[js.Function0[Unit]]
   type ExtensionSidebarPaneShownEvent = Event[js.Function1[/* window */ typings.chrome.chromeNs.windowsNs.Window, Unit]]

@@ -2,6 +2,7 @@ package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Global.JSXNs.Element
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDropTarget
 import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
@@ -13,7 +14,7 @@ trait TreeRendererProps extends js.Object {
   var canDrop: js.UndefOr[Boolean] = js.undefined
   var children: js.Array[Element]
   // Drop target
-  var connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any
+  var connectDropTarget: ConnectDropTarget
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var isOver: Boolean
   var listIndex: Double
@@ -36,7 +37,7 @@ object TreeRendererProps {
   @scala.inline
   def apply(
     children: js.Array[Element],
-    connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any,
+    connectDropTarget: ConnectDropTarget,
     getPrevRow: () => FlatDataItem | Null,
     isOver: Boolean,
     listIndex: Double,

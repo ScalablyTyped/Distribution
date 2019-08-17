@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dialogsNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /** Base class of all {@link XExecutableDialog} related exceptions. */
   type ExecutableDialogException = Exception
   /** A {@link FolderPicker} service. */

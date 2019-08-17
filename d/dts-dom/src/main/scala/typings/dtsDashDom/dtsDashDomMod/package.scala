@@ -1,11 +1,12 @@
 package typings.dtsDashDom
 
-import typings.dtsDashDom.dtsDashDomStrings.`this`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dtsDashDomMod {
+  import typings.dtsDashDom.dtsDashDomStrings.`this`
+
   type ThisType = `this`
   /* Rewritten from type alias, can be one of: 
     - typings.dtsDashDom.dtsDashDomMod.TypeReference

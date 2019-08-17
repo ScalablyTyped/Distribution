@@ -1,11 +1,12 @@
 package typings.bootpag
 
-import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JqueryBootpagNs {
+  import typings.jquery.JQueryEventObject
+
   /**
     * Event handler on page click.
     * @param event : JQueryEventObject

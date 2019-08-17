@@ -1,25 +1,26 @@
 package typings.got
 
-import typings.got.Anon_Cancel
-import typings.got.Anon_CancelError
-import typings.got.gotStrings.delete
-import typings.got.gotStrings.get
-import typings.got.gotStrings.head
-import typings.got.gotStrings.patch
-import typings.got.gotStrings.post
-import typings.got.gotStrings.put
-import typings.node.Buffer
-import typings.node.httpsMod.RequestOptions
-import typings.node.streamMod.Duplex
-import typings.node.urlMod.URL
-import typings.node.urlMod.Url
-import typings.std.Error
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gotMod {
+  import typings.got.Anon_Cancel
+  import typings.got.Anon_CancelError
+  import typings.got.gotStrings.delete
+  import typings.got.gotStrings.get
+  import typings.got.gotStrings.head
+  import typings.got.gotStrings.patch
+  import typings.got.gotStrings.post
+  import typings.got.gotStrings.put
+  import typings.node.Buffer
+  import typings.node.httpsMod.RequestOptions
+  import typings.node.streamMod.Duplex
+  import typings.node.urlMod.URL
+  import typings.node.urlMod.Url
+  import typings.std.Error
+  import typings.std.Record
+
   /**
     * @param response Response object.
     * @param retryWithMergedOptions Retries request with the updated options.

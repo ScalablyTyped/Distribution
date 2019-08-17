@@ -1,16 +1,17 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.Point
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySet
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object drawingNs {
+  import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.Point
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySet
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
+
   /**
     * this service provides the properties to describe a background filling for a drawing page. It can be obtained by the {@link
     * com.sun.star.lang.XMultiServiceFactory} of a document and be set on draw pages that support a filled background.

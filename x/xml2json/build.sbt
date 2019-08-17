@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xml2json"
-version := "0.10-dt-20180214Z-95b896"
-scalaVersion := "2.12.8"
+version := "0.10-dt-20180214Z-fc6459"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

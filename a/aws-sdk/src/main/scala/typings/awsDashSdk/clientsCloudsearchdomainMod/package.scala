@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudsearchdomainMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Uint8Array
+
   type Adds = scala.Double
   type BucketList = js.Array[Bucket]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

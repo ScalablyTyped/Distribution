@@ -1,0 +1,57 @@
+package typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesResourceNotFoundExceptionMod
+
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDeleteIdentityPoolExceptionsUnionMod.DeleteIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDescribeIdentityExceptionsUnionMod.DescribeIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDescribeIdentityPoolExceptionsUnionMod.DescribeIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetCredentialsForIdentityExceptionsUnionMod.GetCredentialsForIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdExceptionsUnionMod.GetIdExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdentityPoolRolesExceptionsUnionMod.GetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenExceptionsUnionMod.GetOpenIdTokenExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenForDeveloperIdentityExceptionsUnionMod.GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesListIdentitiesExceptionsUnionMod.ListIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesLookupDeveloperIdentityExceptionsUnionMod.LookupDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesMergeDeveloperIdentitiesExceptionsUnionMod.MergeDeveloperIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesSetIdentityPoolRolesExceptionsUnionMod.SetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkDeveloperIdentityExceptionsUnionMod.UnlinkDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUpdateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResourceNotFoundException
+  extends ServiceException[_ResourceNotFoundExceptionDetails]
+     with DeleteIdentityPoolExceptionsUnion
+     with DescribeIdentityExceptionsUnion
+     with DescribeIdentityPoolExceptionsUnion
+     with GetCredentialsForIdentityExceptionsUnion
+     with GetIdExceptionsUnion
+     with GetIdentityPoolRolesExceptionsUnion
+     with GetOpenIdTokenExceptionsUnion
+     with GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+     with ListIdentitiesExceptionsUnion
+     with LookupDeveloperIdentityExceptionsUnion
+     with MergeDeveloperIdentitiesExceptionsUnion
+     with SetIdentityPoolRolesExceptionsUnion
+     with UnlinkDeveloperIdentityExceptionsUnion
+     with UnlinkIdentityExceptionsUnion
+     with UpdateIdentityPoolExceptionsUnion {
+  @JSName("name")
+  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceNotFoundException
+}
+
+object ResourceNotFoundException {
+  @scala.inline
+  def apply(
+    details: _ResourceNotFoundExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceNotFoundException,
+    stack: String = null
+  ): ResourceNotFoundException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResourceNotFoundException]
+  }
+}
+

@@ -369,7 +369,7 @@ object KernelMessageNs extends js.Object {
   }
   
   /**
-    * An `execute_request` message on the `
+    * An `execute_request` message on the `'shell'` channel.
     */
   trait IExecuteRequestMsg
     extends IShellMessage[execute_request]

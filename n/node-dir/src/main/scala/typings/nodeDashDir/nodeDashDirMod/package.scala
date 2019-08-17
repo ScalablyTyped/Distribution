@@ -1,12 +1,13 @@
 package typings.nodeDashDir
 
-import typings.node.Buffer
-import typings.node.fsMod.ReadStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashDirMod {
+  import typings.node.Buffer
+  import typings.node.fsMod.ReadStream
+
   type FileCallback = js.Function3[/* error */ js.Any, /* content */ String | Buffer, /* next */ js.Function0[Unit], Unit]
   type FileNamedCallback = js.Function4[
     /* error */ js.Any, 

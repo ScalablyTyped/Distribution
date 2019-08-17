@@ -1,12 +1,13 @@
 package typings.atStorybookAddonDashStoryshots
 
-import typings.atStorybookAddonDashStoryshots.Anon_Context
-import typings.atStorybookReact.atStorybookReactMod.StoryObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atStorybookAddonDashStoryshotsMod {
+  import typings.atStorybookAddonDashStoryshots.Anon_Context
+  import typings.atStorybookReact.atStorybookReactMod.StoryObject
+
   type RenderTree = js.Function3[
     /* story */ StoryObject, 
     /* context */ StoryContext, 

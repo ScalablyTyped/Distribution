@@ -1,0 +1,76 @@
+package typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ISelectableOption extends js.Object {
+  /**
+    * The aria label for the dropdown option. If not present, the `text` will be used.
+    */
+  var ariaLabel: js.UndefOr[String] = js.undefined
+  /**
+    * Data available to custom onRender functions.
+    */
+  var data: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Whether the option is disabled
+    * @defaultvalue false
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Defines whether the option is hidden or not.
+    * @defaultvalue false
+    */
+  var hidden: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Index for this option
+    */
+  var index: js.UndefOr[Double] = js.undefined
+  /**
+    * Text to render for this option
+    */
+  var itemType: js.UndefOr[SelectableOptionMenuItemType] = js.undefined
+  /**
+    * Arbitrary string associated with this option.
+    */
+  var key: String | Double
+  /** If option is selected. */
+  var selected: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Text to render for this option
+    */
+  var text: String
+  /**
+    * Title attribute (built in tooltip) for a given option.
+    */
+  var title: js.UndefOr[String] = js.undefined
+}
+
+object ISelectableOption {
+  @scala.inline
+  def apply(
+    key: String | Double,
+    text: String,
+    ariaLabel: String = null,
+    data: js.Any = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    hidden: js.UndefOr[Boolean] = js.undefined,
+    index: Int | Double = null,
+    itemType: SelectableOptionMenuItemType = null,
+    selected: js.UndefOr[Boolean] = js.undefined,
+    title: String = null
+  ): ISelectableOption = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ISelectableOption]
+  }
+}
+

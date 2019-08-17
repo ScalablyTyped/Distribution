@@ -1,10 +1,11 @@
 package typings.antd
 
-import typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libRadioInterfaceMod {
+  import typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
+
   type RadioProps = AbstractCheckboxProps[RadioChangeEvent]
 }

@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object managementNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type ManagementDisabledEvent = Event[
     js.Function1[/* info */ typings.chrome.chromeNs.managementNs.ExtensionInfo, Unit]
   ]

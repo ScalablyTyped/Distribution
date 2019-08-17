@@ -1,20 +1,21 @@
 package typings.rollup
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.estree.estreeMod.Node
-import typings.node.Buffer
-import typings.rollup.Anon_AssetFileName
-import typings.rollup.Anon_AssetReferenceId
-import typings.rollup.Anon_ChunkId
-import typings.rollup.Anon_Code
-import typings.rollup.Anon_Name
-import typings.rollup.rollupStrings.`no-external`
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rollupMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.estree.estreeMod.Node
+  import typings.node.Buffer
+  import typings.rollup.Anon_AssetFileName
+  import typings.rollup.Anon_AssetReferenceId
+  import typings.rollup.Anon_ChunkId
+  import typings.rollup.Anon_Code
+  import typings.rollup.Anon_Name
+  import typings.rollup.rollupStrings.`no-external`
+  import typings.std.Record
+
   type AddonHook = String | (js.ThisFunction0[/* this */ PluginContext, String | js.Promise[String]])
   type EmitAsset = js.Function2[/* name */ String, /* source */ js.UndefOr[String | Buffer], String]
   type EmitChunk = js.Function2[/* id */ String, /* options */ js.UndefOr[Anon_Name], String]

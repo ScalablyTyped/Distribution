@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.Packer")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.Packer")
 @js.native
 /**
   * Default Constructor.

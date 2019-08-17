@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vnu-jar"
-version := "17.11-dt-20180218Z-43c414"
-scalaVersion := "2.12.8"
+version := "17.11-dt-20180218Z-e7dcd9"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

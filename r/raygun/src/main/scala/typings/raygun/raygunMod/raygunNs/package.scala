@@ -1,11 +1,12 @@
 package typings.raygun.raygunMod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object raygunNs {
+  import typings.std.Error
+
   type GroupingKey = js.Function5[
     /* payload */ RaygunPayload, 
     /* exception */ Error, 

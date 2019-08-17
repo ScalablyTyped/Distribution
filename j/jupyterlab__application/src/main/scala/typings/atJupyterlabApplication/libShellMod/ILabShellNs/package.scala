@@ -1,11 +1,12 @@
 package typings.atJupyterlabApplication.libShellMod
 
-import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ILabShellNs {
+  import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
+
   /**
     * The restorable description of an area within the main dock panel.
     */

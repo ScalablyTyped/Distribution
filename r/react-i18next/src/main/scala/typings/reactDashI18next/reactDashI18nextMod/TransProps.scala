@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof any ]:? any[P]} */ trait TransProps extends js.Object {
+- Dropped {[ P in keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.WithT * / any ]:? / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.WithT * / any[P]} */ trait TransProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var components: js.UndefOr[js.Array[ReactNode]] = js.undefined
   var count: js.UndefOr[Double] = js.undefined

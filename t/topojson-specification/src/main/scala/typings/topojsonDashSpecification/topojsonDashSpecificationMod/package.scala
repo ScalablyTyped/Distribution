@@ -1,12 +1,13 @@
 package typings.topojsonDashSpecification
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.geojson.geojsonMod.GeoJsonProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object topojsonDashSpecificationMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.geojson.geojsonMod.GeoJsonProperties
+
   type Arc = js.Array[Positions]
   type ArcIndexes = js.Array[Double]
   type Objects[P /* <: Properties */] = StringDictionary[GeometryObject[P]]

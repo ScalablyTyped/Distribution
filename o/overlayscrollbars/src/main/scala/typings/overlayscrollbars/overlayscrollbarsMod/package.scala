@@ -1,13 +1,14 @@
 package typings.overlayscrollbars
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.HTMLElement
-import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object overlayscrollbarsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.HTMLElement
+  import typings.std.UIEvent
+
   type BasicEventCallback = js.ThisFunction0[/* this */ OverlayScrollbars, Unit]
   /* Rewritten from type alias, can be one of: 
     - typings.overlayscrollbars.Anon_X

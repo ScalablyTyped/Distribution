@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XChild
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object formNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XChild
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
+
   /**
     * is not used anymore, and superseded by {@link com.sun.star.form.runtime.FormController} and {@link com.sun.star.form.runtime.FormOperations} .
     * @deprecated Deprecated

@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.EN_US
-import typings.awsDashSdk.awsDashSdkStrings.`ec2-instance`
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsInspectorMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.EN_US
+  import typings.awsDashSdk.awsDashSdkStrings.`ec2-instance`
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AddRemoveAttributesFindingArnList = js.Array[Arn]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.HEALTHY

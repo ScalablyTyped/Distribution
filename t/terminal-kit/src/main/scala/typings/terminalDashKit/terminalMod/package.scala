@@ -1,13 +1,14 @@
 package typings.terminalDashKit
 
-import typings.nextgenDashEvents.nextgenDashEventsMod.^
-import typings.terminalDashKit.Anon_BG
-import typings.terminalDashKit.Anon_BaseDir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object terminalMod {
+  import typings.nextgenDashEvents.nextgenDashEventsMod.^
+  import typings.terminalDashKit.Anon_BG
+  import typings.terminalDashKit.Anon_BaseDir
+
   type Autocompletion = (js.Function2[
     /* inputString */ String, 
     /* callback */ Callback[String | AutocompletionArray[String]], 

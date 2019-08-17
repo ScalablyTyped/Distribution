@@ -1,15 +1,16 @@
 package typings.preact
 
-import typings.preact.Anon_Children
-import typings.std.Exclude
-import typings.std.Extract
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object preactMod {
+  import typings.preact.Anon_Children
+  import typings.std.Exclude
+  import typings.std.Extract
+  import typings.std.Partial
+  import typings.std.Pick
+
   type ComponentChild = VNode[js.Any] | js.Object | String | Double | Boolean | Null
   type ComponentChildren = js.Array[ComponentChild] | ComponentChild
   type ComponentFactory[P] = (ComponentConstructor[P, js.Object]) | FunctionalComponent[P]

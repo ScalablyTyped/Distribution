@@ -100,7 +100,6 @@ trait atBlueprintjsCoreProps {
   @scala.inline
   def EditableTextProps: IEditableTextProps.type = typings.atBlueprintjsCore.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps
   type EditableTextProps = IEditableTextProps
-  type ExpanderProps = js.Object
   @scala.inline
   def FileInputProps: IFileInputProps.type = typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod.IFileInputProps
   type FileInputProps = IFileInputProps

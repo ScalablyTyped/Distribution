@@ -1,13 +1,14 @@
 package typings.authmosphere
 
-import typings.authmosphere.libSrcTypesAuthenticationMiddlewareOptionsMod.AuthenticationMiddlewareOptions
-import typings.authmosphere.libSrcTypesScopeMiddlewareOptionsMod.ScopeMiddlewareOptions
-import typings.express.expressMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSrcExpressDashToolingMod {
+  import typings.authmosphere.libSrcTypesAuthenticationMiddlewareOptionsMod.AuthenticationMiddlewareOptions
+  import typings.authmosphere.libSrcTypesScopeMiddlewareOptionsMod.ScopeMiddlewareOptions
+  import typings.express.expressMod.RequestHandler
+
   /**
     * Returns a function (middleware) to extract and validate an access token from a request.
     * Furthermore, it attaches the scopes granted by the token to the request for further usage.

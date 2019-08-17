@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "imagemin-optipng"
-version := "5.2-dt-20180825Z-f43e21"
-scalaVersion := "2.12.8"
+version := "5.2-dt-20180825Z-7835ee"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-62e5e7",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-12970f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

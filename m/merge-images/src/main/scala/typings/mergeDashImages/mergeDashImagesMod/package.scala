@@ -1,10 +1,11 @@
 package typings.mergeDashImages
 
-import typings.mergeDashImages.Anon_Opacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mergeDashImagesMod {
+  import typings.mergeDashImages.Anon_Opacity
+
   type ImageSource = String | Anon_Opacity
 }

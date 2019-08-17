@@ -1,12 +1,13 @@
 package typings.semanticDashUiDashForm.SemanticUINs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.semanticDashUiDashForm.SemanticUINs.FormNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FormNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.semanticDashUiDashForm.SemanticUINs.FormNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type ErrorSettings = typings.semanticDashUiDashForm.SemanticUINs.FormNs.ErrorSettingsNs.Param
   type Fields = StringDictionary[String | js.Array[String]]

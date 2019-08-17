@@ -1,11 +1,12 @@
 package typings.soap
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type IHeaders = StringDictionary[js.Any]
   type IService = StringDictionary[IServicePort]
   type IServicePort = StringDictionary[ISoapServiceMethod]

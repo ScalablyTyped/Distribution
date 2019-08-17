@@ -1,11 +1,12 @@
 package typings.navermaps.naverNs
 
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapsNs {
+  import typings.std.Event
+
   type ArrayOfBounds = js.Array[LatLngBounds | PointBounds]
   type ArrayOfBoundsLiteral = js.Array[LatLngBoundsLiteral | PointBoundsLiteral]
   type ArrayOfCoords = js.Array[LatLng | Point]

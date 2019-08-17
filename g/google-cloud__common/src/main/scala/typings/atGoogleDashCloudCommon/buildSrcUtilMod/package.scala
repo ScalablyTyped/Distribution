@@ -1,12 +1,13 @@
 package typings.atGoogleDashCloudCommon
 
-import typings.std.Error
-import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcUtilMod {
+  import typings.std.Error
+  import typings.teenyDashRequest.teenyDashRequestMod.Response
+
   type AbortableDuplex = Duplexify with Abortable
   type BodyResponseCallback = js.Function3[
     /* err */ Error | ApiError | Null, 

@@ -1,15 +1,16 @@
 package typings.apolloDashUtilities
 
-import typings.graphql.languageAstMod.ArgumentNode
-import typings.graphql.languageAstMod.DirectiveNode
-import typings.graphql.languageAstMod.FragmentDefinitionNode
-import typings.graphql.languageAstMod.FragmentSpreadNode
-import typings.graphql.languageAstMod.VariableDefinitionNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTransformMod {
+  import typings.graphql.languageAstMod.ArgumentNode
+  import typings.graphql.languageAstMod.DirectiveNode
+  import typings.graphql.languageAstMod.FragmentDefinitionNode
+  import typings.graphql.languageAstMod.FragmentSpreadNode
+  import typings.graphql.languageAstMod.VariableDefinitionNode
+
   type GetDirectiveConfig = GetNodeConfig[DirectiveNode]
   type GetFragmentSpreadConfig = GetNodeConfig[FragmentSpreadNode]
   type RemoveArgumentsConfig = RemoveNodeConfig[ArgumentNode]

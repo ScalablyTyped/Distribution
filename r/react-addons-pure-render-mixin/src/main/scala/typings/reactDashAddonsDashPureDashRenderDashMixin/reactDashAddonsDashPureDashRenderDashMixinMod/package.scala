@@ -1,10 +1,11 @@
 package typings.reactDashAddonsDashPureDashRenderDashMixin
 
-import typings.react.reactMod.Mixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAddonsDashPureDashRenderDashMixinMod {
+  import typings.react.reactMod.Mixin
+
   type PureRenderMixin = Mixin[js.Any, js.Any]
 }

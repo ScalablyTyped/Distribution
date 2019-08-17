@@ -1,6 +1,7 @@
 package typings.atIonicAngular.distMod
 
 import typings.atAngularCore.atAngularCoreMod.ModuleWithProviders
+import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,6 @@ class IonicModule ()
 @js.native
 object IonicModule extends js.Object {
   def forRoot(): ModuleWithProviders[_] = js.native
-  def forRoot(
-    config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicConfig */ js.Any
-  ): ModuleWithProviders[_] = js.native
+  def forRoot(config: IonicConfig): ModuleWithProviders[_] = js.native
 }
 

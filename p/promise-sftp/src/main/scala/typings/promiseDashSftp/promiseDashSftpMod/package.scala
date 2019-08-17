@@ -1,12 +1,13 @@
 package typings.promiseDashSftp
 
-import typings.promiseDashSftp.Anon_AutoReconnect
-import typings.ssh2.ssh2Mod.ConnectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promiseDashSftpMod {
+  import typings.promiseDashSftp.Anon_AutoReconnect
+  import typings.ssh2.ssh2Mod.ConnectConfig
+
   /**
     * Options for SftpPromise#connect()
     */

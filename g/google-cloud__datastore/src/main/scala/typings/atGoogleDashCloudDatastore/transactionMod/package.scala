@@ -1,11 +1,12 @@
 package typings.atGoogleDashCloudDatastore
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transactionMod {
+  import typings.std.Error
+
   type RollbackCallback = js.Function2[/* err */ Error, /* rollbackResponse */ js.Object, Unit]
   type RollbackResult = js.Array[js.Object]
   type TransactionCallback = js.Function3[

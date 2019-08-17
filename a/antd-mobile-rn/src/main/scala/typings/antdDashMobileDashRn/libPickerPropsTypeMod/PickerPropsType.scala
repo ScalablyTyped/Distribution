@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait PickerPropsType extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IPopupPickerProps * / any */ trait PickerPropsType extends js.Object {
   var cascade: js.UndefOr[Boolean] = js.undefined
   var cols: js.UndefOr[Double] = js.undefined
   var data: js.Array[js.Array[PickerData] | PickerData]

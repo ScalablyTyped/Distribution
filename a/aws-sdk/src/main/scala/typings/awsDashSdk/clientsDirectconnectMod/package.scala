@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.`application/pdf`
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDirectconnectMod {
+  import typings.awsDashSdk.awsDashSdkStrings.`application/pdf`
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type ASN = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ipv4

@@ -22,6 +22,10 @@ object cswDashAasDashJsComponents extends cswDashAasDashJsProps {
   ] = typings.cswDashAasDashJs.distComponentsAuthorizationClientRoleMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.cswDashAasDashJs.distComponentsAuthorizationClientRoleMod.ClientRoleProps]]
   @scala.inline
+  def Login: ComponentType[js.Object] = typings.cswDashAasDashJs.distComponentsLoginMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def Logout: ComponentType[js.Object] = typings.cswDashAasDashJs.distComponentsLogoutMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
   def Provider: ComponentType[typings.react.reactMod.ProviderProps[AuthContextType]] = typings.cswDashAasDashJs.distComponentsContextAuthContextMod.^.Provider.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.ProviderProps[typings.cswDashAasDashJs.distComponentsContextAuthContextMod.AuthContextType]]]
   @scala.inline

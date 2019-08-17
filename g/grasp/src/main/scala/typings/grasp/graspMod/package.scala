@@ -1,12 +1,13 @@
 package typings.grasp
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.estree.estreeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object graspMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.estree.estreeMod.Node
+
   type GraspReplaceWithQueryEngine = (js.Function1[/* selector */ String, GraspReplaceWithSelector]) with (js.Function2[
     /* selector */ String, 
     /* replacement */ Replacement, 

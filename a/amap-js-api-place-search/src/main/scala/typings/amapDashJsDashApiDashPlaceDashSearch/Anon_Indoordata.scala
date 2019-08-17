@@ -1,0 +1,21 @@
+package typings.amapDashJsDashApiDashPlaceDashSearch
+
+import typings.amapDashJsDashApiDashPlaceDashSearch.amapDashJsDashApiDashPlaceDashSearchNumbers.`true`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Indoordata extends js.Object {
+  var indoor_data: Anon_Cpid
+  var indoor_map: `true`
+}
+
+object Anon_Indoordata {
+  @scala.inline
+  def apply(indoor_data: Anon_Cpid, indoor_map: `true`): Anon_Indoordata = {
+    val __obj = js.Dynamic.literal(indoor_data = indoor_data, indoor_map = indoor_map)
+  
+    __obj.asInstanceOf[Anon_Indoordata]
+  }
+}
+

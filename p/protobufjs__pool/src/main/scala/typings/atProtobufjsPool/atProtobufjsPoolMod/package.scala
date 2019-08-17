@@ -1,11 +1,12 @@
 package typings.atProtobufjsPool
 
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atProtobufjsPoolMod {
+  import typings.std.Uint8Array
+
   /**
     * An allocator as used by {@link util.pool}.
     * @typedef PoolAllocator

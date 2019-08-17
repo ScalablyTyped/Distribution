@@ -1,11 +1,12 @@
 package typings.semanticDashUiDashDimmer.SemanticUINs
 
-import typings.semanticDashUiDashDimmer.SemanticUINs.DimmerNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DimmerNs {
+  import typings.semanticDashUiDashDimmer.SemanticUINs.DimmerNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type DurationSettings = typings.semanticDashUiDashDimmer.SemanticUINs.DimmerNs.DurationSettingsNs.Param
   type ErrorSettings = typings.semanticDashUiDashDimmer.SemanticUINs.DimmerNs.ErrorSettingsNs.Param

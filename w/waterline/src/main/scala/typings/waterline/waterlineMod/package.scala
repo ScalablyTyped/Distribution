@@ -1,30 +1,31 @@
 package typings.waterline
 
-import typings.std.Date
-import typings.waterline.Anon_Alter
-import typings.waterline.Anon_Array
-import typings.waterline.Anon_Association
-import typings.waterline.Anon_AutoIncrement
-import typings.waterline.Anon_Binary
-import typings.waterline.Anon_Boolean
-import typings.waterline.Anon_Cb
-import typings.waterline.Anon_Collection
-import typings.waterline.Anon_CollectionDominant
-import typings.waterline.Anon_ColumnName
-import typings.waterline.Anon_Date
-import typings.waterline.Anon_Datetime
-import typings.waterline.Anon_Email
-import typings.waterline.Anon_Float
-import typings.waterline.Anon_Json
-import typings.waterline.Anon_Model
-import typings.waterline.Anon_String
-import typings.waterline.Anon_Text
-import typings.waterline.Anon_Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object waterlineMod {
+  import typings.std.Date
+  import typings.waterline.Anon_Alter
+  import typings.waterline.Anon_Array
+  import typings.waterline.Anon_Association
+  import typings.waterline.Anon_AutoIncrement
+  import typings.waterline.Anon_Binary
+  import typings.waterline.Anon_Boolean
+  import typings.waterline.Anon_Cb
+  import typings.waterline.Anon_Collection
+  import typings.waterline.Anon_CollectionDominant
+  import typings.waterline.Anon_ColumnName
+  import typings.waterline.Anon_Date
+  import typings.waterline.Anon_Datetime
+  import typings.waterline.Anon_Email
+  import typings.waterline.Anon_Float
+  import typings.waterline.Anon_Json
+  import typings.waterline.Anon_Model
+  import typings.waterline.Anon_String
+  import typings.waterline.Anon_Text
+  import typings.waterline.Anon_Time
+
   type Adapter = js.Object
   type ArrayAttribute = BaseAttribute[_] with Anon_Array
   type Attribute = String | StringAttribute | EmailAttribute | IntegerAttribute | FloatAttribute | DateAttribute | TimeAttribute | DatetimeAttribute | BooleanAttribute | BinaryAttribute | ArrayAttribute | JsonAttribute | OneToOneAttribute | OneToManyAttribute | ManyToManyAttribute | FunctionAttribute

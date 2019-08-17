@@ -1,13 +1,14 @@
 package typings.atGoogleDashCloudStorage
 
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.atGoogleDashCloudStorage.buildSrcBucketMod.Bucket
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcStorageMod {
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.atGoogleDashCloudStorage.buildSrcBucketMod.Bucket
+  import typings.std.Error
+
   type BucketCallback = js.Function3[
     /* err */ Error | Null, 
     /* bucket */ js.UndefOr[Bucket | Null], 

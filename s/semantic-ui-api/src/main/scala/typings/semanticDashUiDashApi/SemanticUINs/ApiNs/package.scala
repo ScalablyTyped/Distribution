@@ -1,11 +1,12 @@
 package typings.semanticDashUiDashApi.SemanticUINs
 
-import typings.semanticDashUiDashApi.SemanticUINs.ApiNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ApiNs {
+  import typings.semanticDashUiDashApi.SemanticUINs.ApiNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type ErrorSettings = typings.semanticDashUiDashApi.SemanticUINs.ApiNs.ErrorSettingsNs.Param
   type MetadataSettings = typings.semanticDashUiDashApi.SemanticUINs.ApiNs.MetadataSettingsNs.Param

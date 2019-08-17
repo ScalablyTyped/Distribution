@@ -1,11 +1,12 @@
 package typings.firebaseDashAdmin.adminNs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object messagingNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Interface representing an FCM legacy API data message payload. Data
     * messages let developers send up to 4KB of custom key-value pairs. The

@@ -1,11 +1,12 @@
 package typings.atElasticElasticsearch
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTransportMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ApiResponse[T, C] = RequestEvent[T, C]
   type anyObject = StringDictionary[js.Any]
   type emitFn = js.Function2[/* event */ String | js.Symbol, /* repeated */ js.Any, Boolean]

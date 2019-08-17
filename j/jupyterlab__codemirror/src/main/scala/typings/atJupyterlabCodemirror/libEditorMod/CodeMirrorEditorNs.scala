@@ -15,8 +15,8 @@ object CodeMirrorEditorNs extends js.Object {
   /**
     * The configuration options for a codemirror editor.
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait IConfig extends js.Object {
+  trait IConfig
+    extends typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IConfig {
     /**
       * When fixedGutter is on, and there is a horizontal scrollbar, by default
       * the gutter will be visible to the left of this scrollbar. If this
@@ -136,12 +136,13 @@ object CodeMirrorEditorNs extends js.Object {
   /**
     * The options used to initialize a code mirror editor.
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait IOptions extends js.Object {
+  trait IOptions
+    extends typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IOptions {
     /**
       * The configuration options for the editor.
       */
-    var config: js.UndefOr[Partial[IConfig]] = js.undefined
+    @JSName("config")
+    var config_IOptions: js.UndefOr[Partial[IConfig]] = js.undefined
   }
   
   /**

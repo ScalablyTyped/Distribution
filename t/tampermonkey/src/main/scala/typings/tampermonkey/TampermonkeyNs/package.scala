@@ -1,11 +1,12 @@
 package typings.tampermonkey
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object TampermonkeyNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type NotificationOnClick = js.ThisFunction0[/* this */ NotificationThis, Unit]
   /** `clicked` is `true` when `text` was set */
   type NotificationOnDone = js.ThisFunction1[/* this */ NotificationThis, /* clicked */ Boolean, Unit]

@@ -16,8 +16,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait expoProps {
-  type AdIconViewProps = js.Object
-  type AdMediaViewProps = js.Object
   @scala.inline
   def AdMobBannerProps: AdMobBannerProperties.type = typings.expo.expoMod.AdMobBannerProperties
   type AdMobBannerProps = AdMobBannerProperties
@@ -47,7 +45,6 @@ trait expoProps {
   @scala.inline
   def GLViewProps: typings.expo.expoMod.GLViewProps.type = typings.expo.expoMod.GLViewProps
   type GLViewProps = typings.expo.expoMod.GLViewProps
-  type KeepAwakeProps = js.Object
   @scala.inline
   def LinearGradientProps: typings.expo.expoMod.LinearGradientProps.type = typings.expo.expoMod.LinearGradientProps
   type LinearGradientProps = typings.expo.expoMod.LinearGradientProps

@@ -1,12 +1,13 @@
 package typings.builderDashUtil
 
-import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object outFsMod {
+  import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
+  import typings.node.Buffer
+
   type AfterCopyFileTransformer = js.Function1[/* file */ String, js.Promise[Unit]]
   type FileTransformer = js.Function1[
     /* file */ String, 

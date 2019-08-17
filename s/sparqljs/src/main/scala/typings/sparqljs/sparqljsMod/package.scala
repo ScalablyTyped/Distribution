@@ -1,12 +1,13 @@
 package typings.sparqljs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.sparqljs.Anon_TermBrand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sparqljsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.sparqljs.Anon_TermBrand
+
   /* Rewritten from type alias, can be one of: 
     - typings.sparqljs.sparqljsMod.OperationExpression
     - typings.sparqljs.sparqljsMod.FunctionCallExpression

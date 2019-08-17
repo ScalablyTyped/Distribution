@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapViewProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapViewProps extends js.Object {
   var cacheEnabled: js.UndefOr[Boolean] = js.undefined
   var camera: js.UndefOr[Camera] = js.undefined
   var compassOffset: js.UndefOr[Point] = js.undefined

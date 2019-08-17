@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "correlation-id"
-version := "2.1-dt-20180514Z-b2f7eb"
-scalaVersion := "2.12.8"
+version := "2.1-dt-20180514Z-dd703c"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

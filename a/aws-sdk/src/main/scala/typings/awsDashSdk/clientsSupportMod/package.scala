@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsSupportMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Uint8Array
+
   type AfterTime = java.lang.String
   type AttachmentId = java.lang.String
   type AttachmentSet = js.Array[AttachmentDetails]

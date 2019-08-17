@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.SERVICE_CONTROL_POLICY
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsOrganizationsMod {
+  import typings.awsDashSdk.awsDashSdkStrings.SERVICE_CONTROL_POLICY
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountArn = String
   type AccountId = String
   /* Rewritten from type alias, can be one of: 

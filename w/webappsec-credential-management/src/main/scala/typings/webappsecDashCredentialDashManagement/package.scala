@@ -1,13 +1,14 @@
 package typings
 
-import typings.std.FormData
-import typings.std.HTMLFormElement
-import typings.std.URLSearchParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webappsecDashCredentialDashManagement {
+  import typings.std.FormData
+  import typings.std.HTMLFormElement
+  import typings.std.URLSearchParams
+
   /**
     * @see {@link https://www.w3.org/TR/credential-management-1/#typedefdef-credentialbodytype}
     */

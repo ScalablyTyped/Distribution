@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait WithTranslation extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.WithT * / any */ trait WithTranslation extends js.Object {
   var i18n: typings.i18next.i18nextMod.i18n
   var tReady: Boolean
 }

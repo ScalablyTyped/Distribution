@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait Sublevel extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify levelup.LevelUpBase<Batch> * / any */ trait Sublevel extends js.Object {
   def pre(hook: Hook): js.Function
   def sublevel(key: String): Sublevel
 }

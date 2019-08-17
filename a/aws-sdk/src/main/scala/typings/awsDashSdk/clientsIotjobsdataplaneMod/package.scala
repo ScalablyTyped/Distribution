@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsIotjobsdataplaneMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type ApproximateSecondsBeforeTimedOut = Double
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DescribeJobExecutionJobId = String

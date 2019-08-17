@@ -1,18 +1,19 @@
 package typings.graphqlDashCompose
 
-import typings.graphql.graphqlMod.GraphQLUnionType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphqlDashCompose.Anon_GqcExtensionsGqcTypeMapGqcTypeResolvers
-import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeObjectType
-import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
-import typings.graphqlDashCompose.libTypeMapperMod.TypeDefinitionString
-import typings.graphqlDashCompose.libUtilsDefinitionsMod.MaybePromise
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libUnionTypeComposerMod {
+  import typings.graphql.graphqlMod.GraphQLUnionType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphqlDashCompose.Anon_GqcExtensionsGqcTypeMapGqcTypeResolvers
+  import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeObjectType
+  import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
+  import typings.graphqlDashCompose.libTypeMapperMod.TypeDefinitionString
+  import typings.graphqlDashCompose.libUtilsDefinitionsMod.MaybePromise
+  import typings.std.Map
+
   type ComposeUnionType = (UnionTypeComposer[js.Any, js.Any]) | GraphQLUnionType | TypeDefinitionString | TypeAsString
   type GraphQLUnionTypeExtended[TSource, TContext] = GraphQLUnionType with (Anon_GqcExtensionsGqcTypeMapGqcTypeResolvers[TSource, TContext])
   type UnionTypeComposeDefinition[TSource, TContext] = TypeAsString | (ComposeUnionTypeConfig[TSource, TContext])

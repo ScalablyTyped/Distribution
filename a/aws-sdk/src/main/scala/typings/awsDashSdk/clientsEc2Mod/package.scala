@@ -1,33 +1,34 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.ATTACHED
-import typings.awsDashSdk.awsDashSdkStrings.Hourly
-import typings.awsDashSdk.awsDashSdkStrings.Static
-import typings.awsDashSdk.awsDashSdkStrings.Topic
-import typings.awsDashSdk.awsDashSdkStrings.USD
-import typings.awsDashSdk.awsDashSdkStrings.Windows
-import typings.awsDashSdk.awsDashSdkStrings.`amazon-dns`
-import typings.awsDashSdk.awsDashSdkStrings.all
-import typings.awsDashSdk.awsDashSdkStrings.default
-import typings.awsDashSdk.awsDashSdkStrings.efa
-import typings.awsDashSdk.awsDashSdkStrings.ipsecDOT1
-import typings.awsDashSdk.awsDashSdkStrings.launchPermission
-import typings.awsDashSdk.awsDashSdkStrings.loadPermission
-import typings.awsDashSdk.awsDashSdkStrings.openvpn
-import typings.awsDashSdk.awsDashSdkStrings.ova
-import typings.awsDashSdk.awsDashSdkStrings.reachability
-import typings.awsDashSdk.awsDashSdkStrings.spot
-import typings.awsDashSdk.awsDashSdkStrings.volume
-import typings.awsDashSdk.awsDashSdkStrings.vpc
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEc2Mod {
+  import typings.awsDashSdk.awsDashSdkStrings.ATTACHED
+  import typings.awsDashSdk.awsDashSdkStrings.Hourly
+  import typings.awsDashSdk.awsDashSdkStrings.Static
+  import typings.awsDashSdk.awsDashSdkStrings.Topic
+  import typings.awsDashSdk.awsDashSdkStrings.USD
+  import typings.awsDashSdk.awsDashSdkStrings.Windows
+  import typings.awsDashSdk.awsDashSdkStrings.`amazon-dns`
+  import typings.awsDashSdk.awsDashSdkStrings.all
+  import typings.awsDashSdk.awsDashSdkStrings.default
+  import typings.awsDashSdk.awsDashSdkStrings.efa
+  import typings.awsDashSdk.awsDashSdkStrings.ipsecDOT1
+  import typings.awsDashSdk.awsDashSdkStrings.launchPermission
+  import typings.awsDashSdk.awsDashSdkStrings.loadPermission
+  import typings.awsDashSdk.awsDashSdkStrings.openvpn
+  import typings.awsDashSdk.awsDashSdkStrings.ova
+  import typings.awsDashSdk.awsDashSdkStrings.reachability
+  import typings.awsDashSdk.awsDashSdkStrings.spot
+  import typings.awsDashSdk.awsDashSdkStrings.volume
+  import typings.awsDashSdk.awsDashSdkStrings.vpc
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AccountAttributeList = js.Array[AccountAttribute]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`supported-platforms`

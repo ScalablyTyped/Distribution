@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "has-yarn"
-version := "2.1.0-73f265"
-scalaVersion := "2.12.8"
+version := "2.1.0-972a4d"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,12 +1,13 @@
 package typings.atTestingDashLibraryDom
 
-import typings.std.HTMLElement
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object matchesMod {
+  import typings.std.HTMLElement
+  import typings.std.RegExp
+
   type Match = js.Function4[
     /* textToMatch */ String, 
     /* node */ HTMLElement | Null, 

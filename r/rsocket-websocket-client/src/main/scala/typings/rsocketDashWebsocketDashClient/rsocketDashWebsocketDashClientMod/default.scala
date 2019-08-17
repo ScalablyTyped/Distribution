@@ -1,0 +1,16 @@
+package typings.rsocketDashWebsocketDashClient.rsocketDashWebsocketDashClientMod
+
+import typings.rsocketDashCore.rSocketEncodingMod.Encoders
+import typings.ws.wsMod.ClientOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("rsocket-websocket-client", JSImport.Default)
+@js.native
+class default protected ()
+  extends typings.rsocketDashWebsocketDashClient.rSocketWebSocketClientMod.default {
+  def this(options: ClientOptions) = this()
+  def this(options: ClientOptions, encoders: Encoders[_]) = this()
+}
+

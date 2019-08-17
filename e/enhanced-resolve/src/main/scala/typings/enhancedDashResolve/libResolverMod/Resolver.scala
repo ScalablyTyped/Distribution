@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Tapable * / any */ @js.native
 trait Resolver extends js.Object {
   var fileSystem: AbstractInputFileSystem = js.native
   def doResolve(`type`: String, request: ResolverRequest, message: String, callback: LoggingCallbackWrapper): js.Any = js.native

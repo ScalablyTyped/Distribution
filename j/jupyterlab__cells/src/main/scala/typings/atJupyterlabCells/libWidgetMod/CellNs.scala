@@ -6,6 +6,8 @@ import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
 import typings.atJupyterlabCells.libModelMod.ICellModel
 import typings.atJupyterlabCells.libWidgetMod.CellNs.ContentFactory
 import typings.atJupyterlabCells.libWidgetMod.CellNs.IContentFactory
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.Factory
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IConfig
 import typings.atJupyterlabOutputarea.libWidgetMod.IOutputPrompt
 import typings.atJupyterlabOutputarea.libWidgetMod.IStdin
 import typings.std.Partial
@@ -35,7 +37,7 @@ object CellNs extends js.Object {
       * to pass it around.
       */
     /* CompleteClass */
-    override val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
+    override val editorFactory: Factory = js.native
     /**
       * Create a new cell header for the parent widget.
       */
@@ -96,11 +98,7 @@ object CellNs extends js.Object {
     /**
       * The configuration options for the text editor widget.
       */
-    var editorConfig: js.UndefOr[
-        Partial[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ _
-        ]
-      ] = js.undefined
+    var editorConfig: js.UndefOr[Partial[IConfig]] = js.undefined
     /**
       * The model used by the cell.
       */
@@ -131,9 +129,7 @@ object CellNs extends js.Object {
         * If this is not passed, a default CodeMirror editor factory
         * will be used.
         */
-      var editorFactory: js.UndefOr[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
-          ] = js.undefined
+      var editorFactory: js.UndefOr[Factory] = js.undefined
     }
     
   }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-timecodes"
-version := "2.5-dt-20190628Z-d7c790"
-scalaVersion := "2.12.8"
+version := "2.5-dt-20190628Z-4745f6"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

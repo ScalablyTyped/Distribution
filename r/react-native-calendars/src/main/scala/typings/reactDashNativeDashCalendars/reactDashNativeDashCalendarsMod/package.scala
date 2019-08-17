@@ -1,14 +1,15 @@
 package typings.reactDashNativeDashCalendars
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashNative.reactDashNativeMod.TextStyle
-import typings.reactDashNative.reactDashNativeMod.ViewStyle
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashCalendarsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.reactDashNative.reactDashNativeMod.TextStyle
+  import typings.reactDashNative.reactDashNativeMod.ViewStyle
+  import typings.std.Date
+
   type AgendaItemsMap[TItem] = StringDictionary[js.Array[TItem]]
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashNativeDashCalendars.reactDashNativeDashCalendarsMod.MultiDotMarkingProps

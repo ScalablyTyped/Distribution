@@ -1,11 +1,12 @@
 package typings.vision
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object visionMod {
+  import typings.std.Error
+
   /**
     * Options passed to module when compiling template.
     * Cast your options to this interface or extend it with:

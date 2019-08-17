@@ -1,12 +1,13 @@
 package typings.mathjs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.decimalDotJs.decimalDotJsMod.Decimal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mathjsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.decimalDotJs.decimalDotJsMod.Decimal
+
   type BigNumber = Decimal
   type FactoryFunction[T] = js.Function1[/* scope */ js.Any, T]
   type ImportObject = StringDictionary[js.Any]

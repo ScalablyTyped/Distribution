@@ -1,14 +1,15 @@
 package typings.angularDashAgility
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.IAugmentedJQueryStatic
-import typings.angular.angularMod.IScope
-import typings.angular.angularMod.autoNs.IInjectorService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object aaNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.angular.angularMod.IAugmentedJQueryStatic
+  import typings.angular.angularMod.IScope
+  import typings.angular.angularMod.autoNs.IInjectorService
+
   type IFieldGroupStrategies = StringDictionary[js.Function1[/* element */ IAugmentedJQueryStatic, Unit]]
   type IGlobalSettings = StringDictionary[js.Any]
   type ILabelStrategies = StringDictionary[

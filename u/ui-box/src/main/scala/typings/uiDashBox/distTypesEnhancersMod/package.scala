@@ -1,20 +1,21 @@
 package typings.uiDashBox
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.csstype.csstypeMod.ObsoleteProperties
-import typings.csstype.csstypeMod.StandardProperties
-import typings.propDashTypes.propDashTypesMod.Validator
-import typings.std.Pick
-import typings.uiDashBox.Anon_Clearfix
-import typings.uiDashBox.uiDashBoxNumbers.`0`
-import typings.uiDashBox.uiDashBoxStrings.gridColumnGap
-import typings.uiDashBox.uiDashBoxStrings.gridGap
-import typings.uiDashBox.uiDashBoxStrings.gridRowGap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesEnhancersMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.csstype.csstypeMod.ObsoleteProperties
+  import typings.csstype.csstypeMod.StandardProperties
+  import typings.propDashTypes.propDashTypesMod.Validator
+  import typings.std.Pick
+  import typings.uiDashBox.Anon_Clearfix
+  import typings.uiDashBox.uiDashBoxNumbers.`0`
+  import typings.uiDashBox.uiDashBoxStrings.gridColumnGap
+  import typings.uiDashBox.uiDashBoxStrings.gridGap
+  import typings.uiDashBox.uiDashBoxStrings.gridRowGap
+
   type BoxCssProps[CP] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof CP ]: CP[P] | number | boolean | null | undefined}
     */ typings.uiDashBox.uiDashBoxStrings.BoxCssProps with CP

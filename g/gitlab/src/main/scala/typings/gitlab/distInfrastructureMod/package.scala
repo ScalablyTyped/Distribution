@@ -1,11 +1,12 @@
 package typings.gitlab
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distInfrastructureMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type DelResponse = js.Object
   type GetResponse = PaginationResponse | js.Object | js.Array[js.Object]
   type Mapper[T /* <: StringDictionary[Constructor] */, P /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 

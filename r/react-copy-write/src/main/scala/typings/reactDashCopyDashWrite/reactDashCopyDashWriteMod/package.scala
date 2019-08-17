@@ -1,14 +1,15 @@
 package typings.reactDashCopyDashWrite
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.reactDashCopyDashWrite.AnyDeepMemberOfState
-import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashCopyDashWriteMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.reactDashCopyDashWrite.AnyDeepMemberOfState
+  import typings.std.ReturnType
+
   type Consumer[T] = Component[ConsumerProps[T], js.Object, js.Any]
   type MutateFn[T] = js.Function2[/* draft */ T, /* state */ T, Unit]
   type Mutator[T] = js.Function1[/* mutator */ MutateFn[T], Unit]

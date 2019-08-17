@@ -18,9 +18,17 @@ trait LinuxParameters extends js.Object {
     */
   var initProcessEnabled: js.UndefOr[BoxedBoolean] = js.undefined
   /**
+    * The total amount of swap memory (in MiB) a container can use. This parameter will be translated to the --memory-swap option to docker run where the value would be the sum of the container memory plus the maxSwap value. If a maxSwap value of 0 is specified, the container will not use swap. Accepted values are 0 or any positive integer. If the maxSwap parameter is omitted, the container will use the swap configuration for the container instance it is running on. A maxSwap value must be set for the swappiness parameter to be used.  If you are using tasks that use the Fargate launch type, the maxSwap parameter is not supported. 
+    */
+  var maxSwap: js.UndefOr[BoxedInteger] = js.undefined
+  /**
     * The value for the size (in MiB) of the /dev/shm volume. This parameter maps to the --shm-size option to docker run.  If you are using tasks that use the Fargate launch type, the sharedMemorySize parameter is not supported. 
     */
   var sharedMemorySize: js.UndefOr[BoxedInteger] = js.undefined
+  /**
+    * This allows you to tune a container's memory swappiness behavior. A swappiness value of 0 will cause swapping to not happen unless absolutely necessary. A swappiness value of 100 will cause pages to be swapped very aggressively. Accepted values are whole numbers between 0 and 100. If the swappiness parameter is not specified, a default value of 60 is used. If a value is not specified for maxSwap then this parameter is ignored. This parameter maps to the --memory-swappiness option to docker run.  If you are using tasks that use the Fargate launch type, the swappiness parameter is not supported. 
+    */
+  var swappiness: js.UndefOr[BoxedInteger] = js.undefined
   /**
     * The container path, mount options, and size (in MiB) of the tmpfs mount. This parameter maps to the --tmpfs option to docker run.  If you are using tasks that use the Fargate launch type, the tmpfs parameter is not supported. 
     */
@@ -33,14 +41,18 @@ object LinuxParameters {
     capabilities: KernelCapabilities = null,
     devices: DevicesList = null,
     initProcessEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
+    maxSwap: js.UndefOr[BoxedInteger] = js.undefined,
     sharedMemorySize: js.UndefOr[BoxedInteger] = js.undefined,
+    swappiness: js.UndefOr[BoxedInteger] = js.undefined,
     tmpfs: TmpfsList = null
   ): LinuxParameters = {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
     if (devices != null) __obj.updateDynamic("devices")(devices)
     if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled)
+    if (!js.isUndefined(maxSwap)) __obj.updateDynamic("maxSwap")(maxSwap)
     if (!js.isUndefined(sharedMemorySize)) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize)
+    if (!js.isUndefined(swappiness)) __obj.updateDynamic("swappiness")(swappiness)
     if (tmpfs != null) __obj.updateDynamic("tmpfs")(tmpfs)
     __obj.asInstanceOf[LinuxParameters]
   }

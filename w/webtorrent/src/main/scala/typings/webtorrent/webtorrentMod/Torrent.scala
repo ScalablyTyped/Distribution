@@ -5,9 +5,9 @@ import typings.node.Buffer
 import typings.node.NodeJSNs.EventEmitter
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
+import typings.std.Date
 import typings.std.Error
 import typings.webtorrent.webtorrentStrings.dht
-import typings.webtorrent.webtorrentStrings.done
 import typings.webtorrent.webtorrentStrings.download
 import typings.webtorrent.webtorrentStrings.error
 import typings.webtorrent.webtorrentStrings.metadata
@@ -22,14 +22,25 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Torrent extends EventEmitter {
+  val announce: js.Array[String] = js.native
+  val comment: String = js.native
+  val created: Date = js.native
+  val createdBy: String = js.native
+  val done: Boolean = js.native
   val downloadSpeed: Double = js.native
   val downloaded: Double = js.native
   val files: js.Array[TorrentFile] = js.native
   val infoHash: String = js.native
+  val lastPieceLength: Double = js.native
+  val length: Double = js.native
   val magnetURI: String = js.native
+  val maxWebConns: Double = js.native
   val name: String = js.native
   val numPeers: Double = js.native
   val path: String = js.native
+  val paused: Boolean = js.native
+  val pieceLength: Double = js.native
+  val pieces: js.Array[TorrentPiece | Null] = js.native
   val progress: Double = js.native
   val ratio: Double = js.native
   val ready: Boolean = js.native
@@ -49,7 +60,7 @@ trait Torrent extends EventEmitter {
   def destroy(cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
   def on(event: noPeers, callback: js.Function1[/* announceType */ tracker | dht, Unit]): this.type = js.native
   @JSName("on")
-  def on_done(event: done, callback: js.Function0[Unit]): this.type = js.native
+  def on_done(event: typings.webtorrent.webtorrentStrings.done, callback: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_download(event: download, callback: js.Function1[/* bytes */ Double, Unit]): this.type = js.native
   @JSName("on")

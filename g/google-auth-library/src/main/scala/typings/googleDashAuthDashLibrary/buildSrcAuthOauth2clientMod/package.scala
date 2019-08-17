@@ -1,15 +1,16 @@
 package typings.googleDashAuthDashLibrary
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.gaxios.buildSrcCommonMod.GaxiosResponse
-import typings.gaxios.gaxiosMod.GaxiosError
-import typings.googleDashAuthDashLibrary.buildSrcAuthCredentialsMod.Credentials
-import typings.googleDashAuthDashLibrary.buildSrcCryptoCryptoMod.JwkCertificate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcAuthOauth2clientMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.gaxios.buildSrcCommonMod.GaxiosResponse
+  import typings.gaxios.gaxiosMod.GaxiosError
+  import typings.googleDashAuthDashLibrary.buildSrcAuthCredentialsMod.Credentials
+  import typings.googleDashAuthDashLibrary.buildSrcCryptoCryptoMod.JwkCertificate
+
   type Certificates = StringDictionary[String | JwkCertificate]
   type GetAccessTokenCallback = js.Function3[
     /* err */ GaxiosError[js.Any] | Null, 

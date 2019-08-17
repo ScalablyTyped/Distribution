@@ -1,11 +1,12 @@
 package typings.passportDashClientDashCert
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashClientDashCertMod {
+  import typings.express.expressMod.Request
+
   type VerifyCallback = js.Function3[
     /* error */ js.Any, 
     /* user */ js.UndefOr[js.Any], 

@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait ButtonProps extends ButtonPropsType {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TouchableHighlightProperties * / any */ trait ButtonProps extends ButtonPropsType {
   var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* _ */ js.UndefOr[js.Any], Unit]] = js.undefined
   var styles: js.UndefOr[Anon_Container] = js.undefined

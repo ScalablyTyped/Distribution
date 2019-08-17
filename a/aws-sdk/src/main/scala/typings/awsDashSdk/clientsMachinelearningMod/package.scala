@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.sgd
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMachinelearningMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.sgd
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type Algorithm = sgd | String
   type AwsUserArn = String
   /* Rewritten from type alias, can be one of: 

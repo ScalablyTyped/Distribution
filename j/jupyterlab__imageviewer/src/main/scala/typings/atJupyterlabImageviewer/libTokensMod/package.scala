@@ -1,12 +1,14 @@
 package typings.atJupyterlabImageviewer
 
-import typings.atJupyterlabApputils.libWidgettrackerMod.IWidgetTracker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTokensMod {
-  type IImageTracker = IWidgetTracker[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget<ImageViewer> */ js.Any
-  ]
+  import typings.atJupyterlabApputils.libWidgettrackerMod.IWidgetTracker
+  import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
+  import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
+  import typings.atJupyterlabImageviewer.libWidgetMod.ImageViewer
+
+  type IImageTracker = IWidgetTracker[IDocumentWidget[ImageViewer, IModel]]
 }

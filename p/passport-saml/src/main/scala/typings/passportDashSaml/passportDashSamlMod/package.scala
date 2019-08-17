@@ -1,12 +1,13 @@
 package typings.passportDashSaml
 
-import typings.express.expressMod.Request
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashSamlMod {
+  import typings.express.expressMod.Request
+  import typings.std.Error
+
   type CertCallback = js.Function1[
     /* callback */ js.Function2[/* err */ Error | Null, /* cert */ js.UndefOr[String | js.Array[String]], Unit], 
     Unit

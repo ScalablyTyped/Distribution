@@ -1,16 +1,17 @@
 package typings.yargs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.std.Exclude
-import typings.std.Extract
-import typings.yargs.Anon_
-import typings.yargs.yargsNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yargsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.std.Exclude
+  import typings.std.Extract
+  import typings.yargs.Anon_
+  import typings.yargs.yargsNumbers.`true`
+
   type Arguments[T] = T with Anon_
   type AsyncCompletionFunction = js.Function3[
     /* current */ String, 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "rtl-detect"
-version := "1.0-dt-20190401Z-2b9402"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190401Z-733f09"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

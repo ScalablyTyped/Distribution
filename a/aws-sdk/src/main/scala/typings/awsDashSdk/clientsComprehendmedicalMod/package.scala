@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsComprehendmedicalMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AttributeList = js.Array[Attribute]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SIGN

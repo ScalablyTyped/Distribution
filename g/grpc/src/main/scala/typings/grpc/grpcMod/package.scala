@@ -1,16 +1,17 @@
 package typings.grpc
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.grpc.Anon_File
-import typings.grpc.Anon_Serviceurl
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object grpcMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.grpc.Anon_File
+  import typings.grpc.Anon_Serviceurl
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Error
+
   /**
     * Any client call type
     */

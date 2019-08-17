@@ -1,13 +1,14 @@
 package typings.reactDashBigDashCalendar
 
-import typings.reactDashBigDashCalendar.Anon_Agenda
-import typings.reactDashBigDashCalendar.Anon_ClassName
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashBigDashCalendarMod {
+  import typings.reactDashBigDashCalendar.Anon_Agenda
+  import typings.reactDashBigDashCalendar.Anon_ClassName
+  import typings.std.Date
+
   type Culture = String | js.Array[String]
   type DateFormat = String | DateFormatFunction
   type DateFormatFunction = js.Function3[

@@ -1,14 +1,15 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.std.Event
-import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zepto {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.std.Event
+  import typings.std.XMLHttpRequest
+
   // Before sending the request, can be cancelled
   // event name: ajaxBeforeSend
   type ZeptoAjaxBeforeSendEvent = js.Function2[/* xhr */ XMLHttpRequest, /* options */ ZeptoAjaxSettings, Unit]

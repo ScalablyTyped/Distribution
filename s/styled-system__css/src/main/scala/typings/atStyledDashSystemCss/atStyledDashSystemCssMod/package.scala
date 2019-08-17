@@ -1,13 +1,14 @@
 package typings.atStyledDashSystemCss
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.csstype.csstypeMod.PropertiesFallback
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atStyledDashSystemCssMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.csstype.csstypeMod.PropertiesFallback
+  import typings.std.Partial
+
   type CSSInterpolation = js.UndefOr[Double | String | CSSObject]
   type CSSPropertiesWithMultiValues = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof @styled-system/css.@styled-system/css.CSSProperties ]: @styled-system/css.@styled-system/css.CSSProperties[K]}

@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.Lambda
-import typings.awsDashSdk.awsDashSdkStrings.NoEncryption
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsFirehoseMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.Lambda
+  import typings.awsDashSdk.awsDashSdkStrings.NoEncryption
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AWSKMSKeyARN = String
   type BlockSizeBytes = Double
   type BooleanObject = Boolean

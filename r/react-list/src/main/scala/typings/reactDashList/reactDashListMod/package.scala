@@ -1,11 +1,12 @@
 package typings.reactDashList
 
-import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashListMod {
+  import typings.react.reactMod.Global.JSXNs.Element
+
   type ItemRenderer = js.Function2[/* index */ Double, /* key */ Double | String, Element]
   type ItemSizeEstimator = js.Function2[/* index */ Double, /* cache */ js.Object, Double]
   type ItemSizeGetter = js.Function1[/* index */ Double, Double]

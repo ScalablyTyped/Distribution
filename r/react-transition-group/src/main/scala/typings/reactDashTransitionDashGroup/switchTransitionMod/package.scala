@@ -1,11 +1,12 @@
 package typings.reactDashTransitionDashGroup
 
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object switchTransitionMod {
+  import typings.react.reactMod.Component
+
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
     * You can use it when you want to control the render between state transitions.

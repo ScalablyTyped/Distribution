@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_9_1_6
-import typings.awsDashSdk.awsDashSdkStrings.COMPLETE_MAIN
-import typings.awsDashSdk.awsDashSdkStrings.ONE_YEAR
-import typings.awsDashSdk.awsDashSdkStrings.SAMPLE_AES
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMediaconvertMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_9_1_6
+  import typings.awsDashSdk.awsDashSdkStrings.COMPLETE_MAIN
+  import typings.awsDashSdk.awsDashSdkStrings.ONE_YEAR
+  import typings.awsDashSdk.awsDashSdkStrings.SAMPLE_AES
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.BROADCASTER_MIXED_AD
     - typings.awsDashSdk.awsDashSdkStrings.NORMAL

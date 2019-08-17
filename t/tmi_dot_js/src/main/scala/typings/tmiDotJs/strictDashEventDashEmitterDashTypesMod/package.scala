@@ -1,13 +1,14 @@
 package typings.tmiDotJs
 
-import typings.std.Exclude
-import typings.std.Pick
-import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object strictDashEventDashEmitterDashTypesMod {
+  import typings.std.Exclude
+  import typings.std.Pick
+  import typings.std.ReturnType
+
   type EEMethodReturnType[T, S /* <: String */, TValue, FValue] = FValue | (InnerEEMethodReturnType[
     /* import warning: ImportType.apply Failed type conversion: T[S] */ js.Any, 
     TValue, 

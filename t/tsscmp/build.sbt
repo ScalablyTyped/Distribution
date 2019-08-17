@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tsscmp"
-version := "1.0-dt-20190628Z-96cb85"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190628Z-e06f60"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

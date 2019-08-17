@@ -1,11 +1,12 @@
 package typings.wampy
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object wampyMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Callback = js.Function0[Unit]
   type ChallengeCallback = js.Function2[/* auth_method */ String, /* extra */ Dict, String]
   type Dict = StringDictionary[js.Any]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.Wrapper")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityDeque<Wrap> * / any */ @JSGlobal("bws.packer.Wrapper")
 @js.native
 /**
   * Default Constructor.

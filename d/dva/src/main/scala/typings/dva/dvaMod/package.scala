@@ -1,19 +1,20 @@
 package typings.dva
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.dva.Anon_History
-import typings.dva.Anon_Type
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.redux.reduxMod.Action
-import typings.redux.reduxMod.AnyAction
-import typings.redux.reduxMod.MiddlewareAPI
-import typings.redux.reduxMod.Reducer
-import typings.redux.reduxMod.ReducersMapObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dvaMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.dva.Anon_History
+  import typings.dva.Anon_Type
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.redux.reduxMod.Action
+  import typings.redux.reduxMod.AnyAction
+  import typings.redux.reduxMod.MiddlewareAPI
+  import typings.redux.reduxMod.Reducer
+  import typings.redux.reduxMod.ReducersMapObject
+
   type DvaOption = Hooks with Anon_History
   type Effect = js.Function2[/* action */ AnyAction, /* effects */ EffectsCommandMap, Unit]
   type EffectWithType = js.Tuple2[Effect, Anon_Type]

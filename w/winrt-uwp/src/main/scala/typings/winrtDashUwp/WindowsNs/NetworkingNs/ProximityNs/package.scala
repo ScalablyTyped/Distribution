@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs.NetworkingNs
 
-import typings.winrtDashUwp.WindowsNs.WinRTEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ProximityNs {
+  import typings.winrtDashUwp.WindowsNs.WinRTEvent
+
   /** Describes the method that handles the DeviceArrived event. */
   type DeviceArrivedEventHandler = js.Function1[/* ev */ WinRTEvent[ProximityDevice], Unit]
   /** Describes the method that handles the DeviceDeparted event. */

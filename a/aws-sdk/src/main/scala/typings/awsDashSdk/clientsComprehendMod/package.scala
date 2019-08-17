@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsComprehendMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AnyLengthString = java.lang.String
   type BatchItemErrorList = js.Array[BatchItemError]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

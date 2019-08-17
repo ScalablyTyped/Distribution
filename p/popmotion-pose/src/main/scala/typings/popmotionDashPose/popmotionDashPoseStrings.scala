@@ -25,6 +25,9 @@ object popmotionDashPoseStrings {
   sealed trait spring extends js.Object
   
   @js.native
+  sealed trait tween extends js.Object
+  
+  @js.native
   sealed trait x extends _Draggable
   
   @js.native
@@ -42,6 +45,8 @@ object popmotionDashPoseStrings {
   def physics: physics = "physics".asInstanceOf[physics]
   @scala.inline
   def spring: spring = "spring".asInstanceOf[spring]
+  @scala.inline
+  def tween: tween = "tween".asInstanceOf[tween]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   @scala.inline

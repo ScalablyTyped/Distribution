@@ -1,14 +1,15 @@
 package typings.fetchDashMock
 
-import typings.std.RegExp
-import typings.std.Request
-import typings.std.RequestInit
-import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fetchDashMockMod {
+  import typings.std.RegExp
+  import typings.std.Request
+  import typings.std.RequestInit
+  import typings.std.Response
+
   /**
     * Inspection filter. Can be one of the following:
     * boolean:

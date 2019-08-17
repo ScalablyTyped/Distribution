@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs.ApplicationModelNs
 
-import typings.winrtDashUwp.WindowsNs.WinRTEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object BackgroundNs {
+  import typings.winrtDashUwp.WindowsNs.WinRTEvent
+
   /** Represents a method that handles the cancellation of a background task. */
   type BackgroundTaskCanceledEventHandler = js.Function1[
     /* ev */ BackgroundTaskCancellationReason with WinRTEvent[IBackgroundTaskInstance], 

@@ -1,11 +1,12 @@
 package typings.reduxDashLittleDashRouter
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashLittleDashRouterMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type BlockCallback = js.Function2[/* location */ Location, /* action */ js.UndefOr[HistoryAction], String]
   type Href = String | Location
   type ListenCallback = js.Function2[/* location */ Location, /* action */ js.UndefOr[HistoryAction], Unit]

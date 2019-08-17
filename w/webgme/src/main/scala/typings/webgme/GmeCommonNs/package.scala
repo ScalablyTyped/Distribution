@@ -1,15 +1,16 @@
 package typings.webgme
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeStorageNs.CommitHash
-import typings.webgme.GmeStorageNs.CommitObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object GmeCommonNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.webgme.CoreNs.Node
+  import typings.webgme.GmeStorageNs.CommitHash
+  import typings.webgme.GmeStorageNs.CommitObject
+
   type ArtifactHash = String
   type Aspect = String
   type AttrMeta = js.Any

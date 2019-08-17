@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleComponentFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleComponentFactory
+
   /**
     * Multiplex events for context changes.
     *

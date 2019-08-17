@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-ionic"
-version := "0.0-unknown-dt-20190322Z-ae8c5f"
-scalaVersion := "2.12.8"
+version := "0.0-unknown-dt-20190322Z-7d36e7"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

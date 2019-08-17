@@ -1,11 +1,12 @@
 package typings.angularDashEs
 
-import typings.std.TypedPropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularDashEsMod {
+  import typings.std.TypedPropertyDescriptor
+
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | Unit]
   type MethodDecorator = js.Function3[
     /* target */ js.Object, 

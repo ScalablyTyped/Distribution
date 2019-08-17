@@ -20,7 +20,6 @@ trait reactDashLazylogProps {
   @scala.inline
   def LinePartProps: typings.reactDashLazylog.buildLinePartMod.LinePartProps.type = typings.reactDashLazylog.buildLinePartMod.LinePartProps
   type LinePartProps = typings.reactDashLazylog.buildLinePartMod.LinePartProps
-  type LoadingProps = js.Object
   @scala.inline
   def ScrollFollowProps: typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps.type = typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps
   type ScrollFollowProps = typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps

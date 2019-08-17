@@ -11,7 +11,6 @@ trait reactDashRouterDashNativeProps {
   @scala.inline
   def BackButtonProps: typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.BackButtonProps.type = typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.BackButtonProps
   type BackButtonProps = typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.BackButtonProps
-  type DeepLinkingProps = js.Object
   @scala.inline
   def LinkProps: typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.LinkProps.type = typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.LinkProps
   type LinkProps = typings.reactDashRouterDashNative.reactDashRouterDashNativeMod.LinkProps

@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object accessibilityNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * Every class has to support this service in order to be accessible.
     *

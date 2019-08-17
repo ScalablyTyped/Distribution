@@ -1,12 +1,13 @@
 package typings
 
-import typings.jquery.JQueryDeferred
-import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object durandal {
+  import typings.jquery.JQueryDeferred
+  import typings.jquery.JQueryPromise
+
   type DurandalDeferred[T] = JQueryDeferred[T]
   // By default, Durandal uses JQuery's Defer/Promise implementation, but durandal supports injecting/configuring
   // usage of different JavaScript Defer/Promise libraries (f.ex. Q or ES6 Promise polyfills).

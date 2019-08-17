@@ -1,11 +1,12 @@
 package typings.swDashPrecache
 
-import typings.node.NodeJSNs.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object swDashPrecacheMod {
+  import typings.node.NodeJSNs.ErrnoException
+
   type Generate = js.Function2[
     /* options */ js.UndefOr[Options], 
     /* callback */ js.UndefOr[js.Function2[/* error */ ErrnoException, /* serviceWorkerString */ String, Unit]], 

@@ -1,14 +1,15 @@
 package typings.reactDashInfiniteDashCalendar
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashInfiniteDashCalendarMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.std.Date
+
   type CalendarClass = ComponentClass[ReactInfiniteCalendarProps, ComponentState]
   type DateSelectFunction = js.Function1[/* date */ Date, Unit]
   type DateType = Date | String | Double

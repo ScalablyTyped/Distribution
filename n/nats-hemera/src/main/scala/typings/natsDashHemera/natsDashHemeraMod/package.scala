@@ -1,16 +1,17 @@
 package typings.natsDashHemera
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.natsDashHemera.Anon_Context
-import typings.natsDashHemera.Anon_Key
-import typings.std.Error
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object natsDashHemeraMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.natsDashHemera.Anon_Context
+  import typings.natsDashHemera.Anon_Key
+  import typings.std.Error
+  import typings.std.Partial
+  import typings.std.Record
+
   type ActHandler = js.ThisFunction2[/* this */ Hemera, /* error */ Error, /* response */ ClientResult, Unit]
   type AddHandler = js.ThisFunction2[/* this */ Hemera, /* request */ Pattern, /* reply */ js.UndefOr[js.Any], Unit]
   type AddMetaMiddleware = js.Function3[

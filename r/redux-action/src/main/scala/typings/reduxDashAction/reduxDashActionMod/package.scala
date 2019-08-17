@@ -1,12 +1,13 @@
 package typings.reduxDashAction
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.redux.reduxMod.Dispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashActionMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.redux.reduxMod.Dispatch
+
   type ActionFunction0[R] = js.Function0[R]
   type ActionFunction1[T1, R] = js.Function1[/* t1 */ T1, R]
   type ActionFunction2[T1, T2, R] = js.Function2[/* t1 */ T1, /* t2 */ T2, R]

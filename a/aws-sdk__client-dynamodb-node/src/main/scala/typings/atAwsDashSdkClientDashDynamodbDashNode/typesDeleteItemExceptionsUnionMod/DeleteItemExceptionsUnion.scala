@@ -1,0 +1,15 @@
+package typings.atAwsDashSdkClientDashDynamodbDashNode.typesDeleteItemExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashDynamodbDashNode.typesConditionalCheckFailedExceptionMod.ConditionalCheckFailedException
+  - typings.atAwsDashSdkClientDashDynamodbDashNode.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException
+  - typings.atAwsDashSdkClientDashDynamodbDashNode.typesItemCollectionSizeLimitExceededExceptionMod.ItemCollectionSizeLimitExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashNode.typesInternalServerErrorMod.InternalServerError
+*/
+trait DeleteItemExceptionsUnion extends js.Object
+

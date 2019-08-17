@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object `^Ns` extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (message : string, code : string): object */ @js.native
+  - Dropped new (message : string, code : string): / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError * / object */ @js.native
   class SqliteError protected () extends js.Object {
     def this(message: String, code: String) = this()
   }

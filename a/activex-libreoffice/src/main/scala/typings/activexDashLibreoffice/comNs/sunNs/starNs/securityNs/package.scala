@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.SecurityException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object securityNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.SecurityException
+
   /**
     * This meta service supports the {@link XAccessController} interface for checking security permissions.
     *

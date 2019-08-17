@@ -1,0 +1,85 @@
+package typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesInternalServerErrorMod
+
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesBatchGetItemExceptionsUnionMod.BatchGetItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesBatchWriteItemExceptionsUnionMod.BatchWriteItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesCreateBackupExceptionsUnionMod.CreateBackupExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesCreateGlobalTableExceptionsUnionMod.CreateGlobalTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesCreateTableExceptionsUnionMod.CreateTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDeleteBackupExceptionsUnionMod.DeleteBackupExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDeleteItemExceptionsUnionMod.DeleteItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDeleteTableExceptionsUnionMod.DeleteTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeBackupExceptionsUnionMod.DescribeBackupExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeContinuousBackupsExceptionsUnionMod.DescribeContinuousBackupsExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeGlobalTableExceptionsUnionMod.DescribeGlobalTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeGlobalTableSettingsExceptionsUnionMod.DescribeGlobalTableSettingsExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeTableExceptionsUnionMod.DescribeTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesDescribeTimeToLiveExceptionsUnionMod.DescribeTimeToLiveExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesGetItemExceptionsUnionMod.GetItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesListTagsOfResourceExceptionsUnionMod.ListTagsOfResourceExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesPutItemExceptionsUnionMod.PutItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesQueryExceptionsUnionMod.QueryExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesRestoreTableFromBackupExceptionsUnionMod.RestoreTableFromBackupExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesRestoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesScanExceptionsUnionMod.ScanExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTagResourceExceptionsUnionMod.TagResourceExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUntagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateContinuousBackupsExceptionsUnionMod.UpdateContinuousBackupsExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateGlobalTableExceptionsUnionMod.UpdateGlobalTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateGlobalTableSettingsExceptionsUnionMod.UpdateGlobalTableSettingsExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateItemExceptionsUnionMod.UpdateItemExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateTableExceptionsUnionMod.UpdateTableExceptionsUnion
+import typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesUpdateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InternalServerError
+  extends ServiceException[_InternalServerErrorDetails]
+     with BatchGetItemExceptionsUnion
+     with BatchWriteItemExceptionsUnion
+     with CreateBackupExceptionsUnion
+     with CreateGlobalTableExceptionsUnion
+     with CreateTableExceptionsUnion
+     with DeleteBackupExceptionsUnion
+     with DeleteItemExceptionsUnion
+     with DeleteTableExceptionsUnion
+     with DescribeBackupExceptionsUnion
+     with DescribeContinuousBackupsExceptionsUnion
+     with DescribeGlobalTableExceptionsUnion
+     with DescribeGlobalTableSettingsExceptionsUnion
+     with DescribeTableExceptionsUnion
+     with DescribeTimeToLiveExceptionsUnion
+     with GetItemExceptionsUnion
+     with ListTagsOfResourceExceptionsUnion
+     with PutItemExceptionsUnion
+     with QueryExceptionsUnion
+     with RestoreTableFromBackupExceptionsUnion
+     with RestoreTableToPointInTimeExceptionsUnion
+     with ScanExceptionsUnion
+     with TagResourceExceptionsUnion
+     with UntagResourceExceptionsUnion
+     with UpdateContinuousBackupsExceptionsUnion
+     with UpdateGlobalTableExceptionsUnion
+     with UpdateGlobalTableSettingsExceptionsUnion
+     with UpdateItemExceptionsUnion
+     with UpdateTableExceptionsUnion
+     with UpdateTimeToLiveExceptionsUnion {
+  @JSName("name")
+  var name_InternalServerError: typings.atAwsDashSdkClientDashDynamodbDashBrowser.atAwsDashSdkClientDashDynamodbDashBrowserStrings.InternalServerError
+}
+
+object InternalServerError {
+  @scala.inline
+  def apply(
+    details: _InternalServerErrorDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashDynamodbDashBrowser.atAwsDashSdkClientDashDynamodbDashBrowserStrings.InternalServerError,
+    stack: String = null
+  ): InternalServerError = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InternalServerError]
+  }
+}
+

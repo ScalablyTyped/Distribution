@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "chessboardjs"
-version := "0.3-dt-20190717Z-60bab4"
-scalaVersion := "2.12.8"
+version := "0.3-dt-20190717Z-5c4218"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

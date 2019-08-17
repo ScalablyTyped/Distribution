@@ -1,22 +1,23 @@
 package typings.vueDashRouter
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.vue.typesOptionsMod.AsyncComponent
-import typings.vue.typesOptionsMod.ComponentOptions
-import typings.vue.typesOptionsMod.DefaultComputed
-import typings.vue.typesOptionsMod.DefaultData
-import typings.vue.typesOptionsMod.DefaultMethods
-import typings.vue.typesOptionsMod.DefaultProps
-import typings.vue.typesOptionsMod.PropsDefinition
-import typings.vue.typesVueMod.Vue
-import typings.vue.typesVueMod.VueConstructor
-import typings.vueDashRouter.vueDashRouterNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesRouterMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.vue.typesOptionsMod.AsyncComponent
+  import typings.vue.typesOptionsMod.ComponentOptions
+  import typings.vue.typesOptionsMod.DefaultComputed
+  import typings.vue.typesOptionsMod.DefaultData
+  import typings.vue.typesOptionsMod.DefaultMethods
+  import typings.vue.typesOptionsMod.DefaultProps
+  import typings.vue.typesOptionsMod.PropsDefinition
+  import typings.vue.typesVueMod.Vue
+  import typings.vue.typesVueMod.VueConstructor
+  import typings.vueDashRouter.vueDashRouterNumbers.`false`
+
   type Component = (ComponentOptions[
     Vue, 
     DefaultData[Vue], 

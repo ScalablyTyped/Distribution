@@ -1,12 +1,13 @@
 package typings.d3DashShape
 
-import typings.d3DashPath.d3DashPathMod.Path
-import typings.d3DashShape.d3DashShapeMod.Global.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object d3DashShapeMod {
+  import typings.d3DashPath.d3DashPathMod.Path
+  import typings.d3DashShape.d3DashShapeMod.Global.CanvasRenderingContext2D
+
   type CurveFactory = /**
     * Returns a curve generator which renders to the specified context.
     *

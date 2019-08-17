@@ -1,5 +1,6 @@
 package typings.atUifabricStyling.libInterfacesIThemeMod
 
+import typings.atUifabricStyling.PinISchemeNamesIScheme
 import typings.atUifabricStyling.libInterfacesIEffectsMod.IEffects
 import typings.atUifabricStyling.libInterfacesIFontStylesMod.IFontStyles
 import typings.atUifabricStyling.libInterfacesIPaletteMod.IPalette
@@ -16,11 +17,7 @@ trait ITheme extends IScheme {
     * in conjunction with new 'schemes' prop that any component making use of Foundation can use.
     * Alternative themes that can be referred to by name.
     */
-  var schemes: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
-    */ typings.atUifabricStyling.atUifabricStylingStrings.ITheme with js.Any
-  ] = js.undefined
+  var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.undefined
 }
 
 object ITheme {
@@ -33,9 +30,7 @@ object ITheme {
     palette: IPalette,
     semanticColors: ISemanticColors,
     spacing: ISpacing,
-    schemes: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
-    */ typings.atUifabricStyling.atUifabricStylingStrings.ITheme with js.Any = null
+    schemes: PinISchemeNamesIScheme = null
   ): ITheme = {
     val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
     if (schemes != null) __obj.updateDynamic("schemes")(schemes)

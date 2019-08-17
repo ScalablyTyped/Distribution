@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "feedparser"
-version := "2.2-dt-20190703Z-bc7641"
-scalaVersion := "2.12.8"
+version := "2.2-dt-20190703Z-81f801"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "sax" % "1.2-dt-20190531Z-38fd9b",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "sax" % "1.2-dt-20190531Z-9823ac",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

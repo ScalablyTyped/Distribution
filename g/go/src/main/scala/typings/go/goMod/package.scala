@@ -1,11 +1,12 @@
 package typings.go
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object goMod {
+  import org.scalablytyped.runtime.Instantiable1
+
   /** A string in place of a Brush object is treated as a Solid Brush of that color. */
   type BrushLike = Brush | String
   /** A constructor */

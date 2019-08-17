@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.Color
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsOpsworksMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.Color
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AgentVersions = js.Array[AgentVersion]
   type AppAttributes = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 

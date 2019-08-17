@@ -1,13 +1,14 @@
 package typings.atGoogleDashCloudStorage
 
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.atGoogleDashCloudCommon.buildSrcUtilMod.ResponseBody
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcNotificationMod {
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.atGoogleDashCloudCommon.buildSrcUtilMod.ResponseBody
+  import typings.std.Error
+
   type DeleteNotificationCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
   type GetNotificationCallback = js.Function3[
     /* err */ Error | Null, 

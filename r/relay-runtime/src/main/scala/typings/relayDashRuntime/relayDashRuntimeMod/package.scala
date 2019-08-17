@@ -1,16 +1,17 @@
 package typings.relayDashRuntime
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.relayDashRuntime.Anon_FragmentReference
-import typings.std.Blob
-import typings.std.Error
-import typings.std.File
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object relayDashRuntimeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.relayDashRuntime.Anon_FragmentReference
+  import typings.std.Blob
+  import typings.std.Error
+  import typings.std.File
+  import typings.std.Record
+
   type CFragmentMap[TFragment] = StringDictionary[TFragment]
   type DataID = String
   type ExecuteFunction = js.Function4[

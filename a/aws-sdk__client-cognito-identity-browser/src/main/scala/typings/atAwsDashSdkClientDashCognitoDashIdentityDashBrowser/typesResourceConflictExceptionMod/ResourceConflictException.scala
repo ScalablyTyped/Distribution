@@ -1,0 +1,51 @@
+package typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesResourceConflictExceptionMod
+
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesCreateIdentityPoolExceptionsUnionMod.CreateIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetCredentialsForIdentityExceptionsUnionMod.GetCredentialsForIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdExceptionsUnionMod.GetIdExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdentityPoolRolesExceptionsUnionMod.GetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenExceptionsUnionMod.GetOpenIdTokenExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenForDeveloperIdentityExceptionsUnionMod.GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesLookupDeveloperIdentityExceptionsUnionMod.LookupDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesMergeDeveloperIdentitiesExceptionsUnionMod.MergeDeveloperIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesSetIdentityPoolRolesExceptionsUnionMod.SetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkDeveloperIdentityExceptionsUnionMod.UnlinkDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUpdateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResourceConflictException
+  extends ServiceException[_ResourceConflictExceptionDetails]
+     with CreateIdentityPoolExceptionsUnion
+     with GetCredentialsForIdentityExceptionsUnion
+     with GetIdExceptionsUnion
+     with GetIdentityPoolRolesExceptionsUnion
+     with GetOpenIdTokenExceptionsUnion
+     with GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+     with LookupDeveloperIdentityExceptionsUnion
+     with MergeDeveloperIdentitiesExceptionsUnion
+     with SetIdentityPoolRolesExceptionsUnion
+     with UnlinkDeveloperIdentityExceptionsUnion
+     with UnlinkIdentityExceptionsUnion
+     with UpdateIdentityPoolExceptionsUnion {
+  @JSName("name")
+  var name_ResourceConflictException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceConflictException
+}
+
+object ResourceConflictException {
+  @scala.inline
+  def apply(
+    details: _ResourceConflictExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceConflictException,
+    stack: String = null
+  ): ResourceConflictException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResourceConflictException]
+  }
+}
+

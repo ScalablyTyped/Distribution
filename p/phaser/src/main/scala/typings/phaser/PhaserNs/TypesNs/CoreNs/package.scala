@@ -1,11 +1,12 @@
 package typings.phaser.PhaserNs.TypesNs
 
-import typings.phaser.PhaserNs.Game
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CoreNs {
+  import typings.phaser.PhaserNs.Game
+
   type BootCallback = js.Function1[/* game */ Game, Unit]
   /**
     * This callback type is completely empty, a no-operation.

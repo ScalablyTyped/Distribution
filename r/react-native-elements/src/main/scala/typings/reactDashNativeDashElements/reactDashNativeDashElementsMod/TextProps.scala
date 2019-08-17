@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait TextProps extends _HeaderSubComponent {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties * / any */ trait TextProps extends _HeaderSubComponent {
   /**
     * font size 40
     */

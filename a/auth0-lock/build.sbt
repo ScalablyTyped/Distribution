@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "auth0-lock"
-version := "11.4-dt-20190418Z-4085cc"
-scalaVersion := "2.12.8"
+version := "11.4-dt-20190418Z-16f2de"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "auth0-js" % "9.10-dt-20190805Z-9a9f64",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "auth0-js" % "9.10-dt-20190805Z-907f98",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

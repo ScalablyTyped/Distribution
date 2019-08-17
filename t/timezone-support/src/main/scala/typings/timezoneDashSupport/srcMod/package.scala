@@ -1,10 +1,11 @@
 package typings.timezoneDashSupport
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcMod {
+  import typings.std.Date
+
   type DateInput = Date | Double
 }

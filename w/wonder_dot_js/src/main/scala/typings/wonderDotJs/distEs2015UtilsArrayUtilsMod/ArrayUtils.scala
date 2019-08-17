@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("wonder.js/dist/es2015/utils/ArrayUtils", "ArrayUtils")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ArrayUtils$ * / any */ @JSImport("wonder.js/dist/es2015/utils/ArrayUtils", "ArrayUtils")
 @js.native
 class ArrayUtils () extends js.Object
 

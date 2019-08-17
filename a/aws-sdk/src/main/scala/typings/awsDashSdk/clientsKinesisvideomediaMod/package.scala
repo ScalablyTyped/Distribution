@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsKinesisvideomediaMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ContentType = String
   type ContinuationToken = String

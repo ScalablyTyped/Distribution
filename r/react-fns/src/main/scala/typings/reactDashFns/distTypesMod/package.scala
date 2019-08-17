@@ -1,13 +1,14 @@
 package typings.reactDashFns
 
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesMod {
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.StatelessComponent
+
   type ComponentDecorator[TOwnProps, TMergedProps] = js.Function1[
     /* component */ CompositeComponent[TMergedProps], 
     ComponentClass[TOwnProps, ComponentState]

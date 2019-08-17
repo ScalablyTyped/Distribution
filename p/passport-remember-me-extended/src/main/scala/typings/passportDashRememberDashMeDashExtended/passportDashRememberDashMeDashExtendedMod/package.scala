@@ -1,11 +1,12 @@
 package typings.passportDashRememberDashMeDashExtended
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashRememberDashMeDashExtendedMod {
+  import typings.express.expressMod.Request
+
   type IssueFunction = js.Function2[
     /* user */ js.Any, 
     /* done */ js.Function2[/* err */ js.Any, /* token */ js.UndefOr[js.Any], Unit], 

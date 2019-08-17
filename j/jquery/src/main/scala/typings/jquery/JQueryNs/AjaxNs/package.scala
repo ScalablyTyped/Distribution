@@ -1,11 +1,12 @@
 package typings.jquery.JQueryNs
 
-import typings.jquery.JQueryNs.jqXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AjaxNs {
+  import typings.jquery.JQueryNs.jqXHR
+
   type CompleteCallback[TContext] = js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[js.Any], /* textStatus */ TextStatus, Unit]
   type ErrorCallback[TContext] = js.ThisFunction3[
     /* this */ TContext, 

@@ -1,11 +1,12 @@
 package typings.easyDashXapiDashSupertest
 
-import typings.easyDashXapiDashSupertest.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zlibMod {
+  import typings.easyDashXapiDashSupertest.streamMod.Transform
+
   type Deflate = Transform
   type DeflateRaw = Transform
   type Gunzip = Transform

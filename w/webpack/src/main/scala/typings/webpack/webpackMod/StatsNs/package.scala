@@ -1,11 +1,12 @@
 package typings.webpack.webpackMod
 
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object StatsNs {
+  import typings.std.RegExp
+
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.webpack.webpackStrings.`errors-only`

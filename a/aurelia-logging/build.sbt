@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "aurelia-logging"
-version := "1.5.2-f431c2"
-scalaVersion := "2.12.8"
+version := "1.5.2-4d079e"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

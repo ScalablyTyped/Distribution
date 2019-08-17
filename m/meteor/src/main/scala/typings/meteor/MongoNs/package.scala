@@ -1,16 +1,17 @@
 package typings.meteor
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.meteor.Anon_0
-import typings.meteor.Anon_And
-import typings.std.Number
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MongoNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.meteor.Anon_0
+  import typings.meteor.Anon_And
+  import typings.std.Number
+  import typings.std.Partial
+  import typings.std.Record
+
   type ArraysOrEach[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each  :T[P]}}
     */ typings.meteor.meteorStrings.ArraysOrEach with js.Any

@@ -1,11 +1,12 @@
 package typings.extjs.ExtNs.fxNs
 
-import typings.extjs.ExtNs.IBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object targetNs {
+  import typings.extjs.ExtNs.IBase
+
   type IComponent = ITarget
   type ICompositeElementCSS = typings.extjs.ExtNs.fxNs.targetNs.ICompositeElement
   type ICompositeSprite = ISprite

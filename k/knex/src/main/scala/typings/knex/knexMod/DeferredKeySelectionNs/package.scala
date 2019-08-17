@@ -1,19 +1,20 @@
 package typings.knex.knexMod
 
-import typings.knex.knexMod.ArrayIfAlready
-import typings.knex.knexMod.AugmentParams
-import typings.knex.knexMod.DeferredKeySelection
-import typings.knex.knexMod.MappedAliasType
-import typings.knex.knexMod.PartialOrAny
-import typings.knex.knexMod.UnknownToAny
-import typings.knex.knexMod.UnwrapArrayMember
-import typings.knex.knexNumbers.`false`
-import typings.knex.knexNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DeferredKeySelectionNs {
+  import typings.knex.knexMod.ArrayIfAlready
+  import typings.knex.knexMod.AugmentParams
+  import typings.knex.knexMod.DeferredKeySelection
+  import typings.knex.knexMod.MappedAliasType
+  import typings.knex.knexMod.PartialOrAny
+  import typings.knex.knexMod.UnknownToAny
+  import typings.knex.knexMod.UnwrapArrayMember
+  import typings.knex.knexNumbers.`false`
+  import typings.knex.knexNumbers.`true`
+
   type AddAliases[TSelection, T] = DeferredKeySelection[
     js.Any, 
     js.Any | scala.Nothing, 

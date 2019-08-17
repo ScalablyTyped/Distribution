@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait Auth0Constructor extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Auth0ClientOptions * / any */ trait Auth0Constructor extends js.Object {
   var assetsUrl: js.UndefOr[String] = js.undefined
   var cdn: js.UndefOr[String] = js.undefined
   var dict: js.UndefOr[js.Any] = js.undefined

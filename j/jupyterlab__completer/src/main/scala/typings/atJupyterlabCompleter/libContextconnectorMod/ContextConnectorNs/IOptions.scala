@@ -1,5 +1,6 @@
 package typings.atJupyterlabCompleter.libContextconnectorMod.ContextConnectorNs
 
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +12,12 @@ trait IOptions extends js.Object {
   /**
     * The session used by the context connector.
     */
-  var editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any
+  var editor: IEditor
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any
-  ): IOptions = {
+  def apply(editor: IEditor): IOptions = {
     val __obj = js.Dynamic.literal(editor = editor)
   
     __obj.asInstanceOf[IOptions]

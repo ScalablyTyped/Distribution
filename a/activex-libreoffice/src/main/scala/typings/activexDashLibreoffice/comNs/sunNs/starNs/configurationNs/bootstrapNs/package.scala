@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XComponentContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bootstrapNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XComponentContext
+
   /**
     * provides access to a component context that is enhanced with bootstrap parameters for configuration services from the associated metaconfiguration
     * mechanism.

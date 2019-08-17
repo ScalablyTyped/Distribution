@@ -1,12 +1,13 @@
 package typings.styletronDashStandard
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.styletronDashStandard.Anon_From
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styletronDashStandardMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.styletronDashStandard.Anon_From
+
   type FontFace = typings.csstype.csstypeMod.FontFace
   type KeyframesObject = KeyframesPercentageObject with Anon_From
   type KeyframesPercentageObject = StringDictionary[Properties]

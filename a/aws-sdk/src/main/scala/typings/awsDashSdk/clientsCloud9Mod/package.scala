@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloud9Mod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AutomaticStopTimeMinutes = Double
   type BoundedEnvironmentIdList = js.Array[EnvironmentId]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

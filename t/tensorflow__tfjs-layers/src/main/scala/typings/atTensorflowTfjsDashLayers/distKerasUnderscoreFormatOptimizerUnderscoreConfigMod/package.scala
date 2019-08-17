@@ -1,18 +1,19 @@
 package typings.atTensorflowTfjsDashLayers
 
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adadelta
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adagrad
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adam
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adamax
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Momentum
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.RMSProp
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.SGD
-import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTypesMod.BaseSerialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distKerasUnderscoreFormatOptimizerUnderscoreConfigMod {
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adadelta
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adagrad
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adam
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Adamax
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.Momentum
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.RMSProp
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.SGD
+  import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTypesMod.BaseSerialization
+
   type AdadeltaSerialization = BaseSerialization[Adadelta, AdadeltaOptimizerConfig]
   type AdagradSerialization = BaseSerialization[Adagrad, AdagradOptimizerConfig]
   type AdamSerialization = BaseSerialization[Adam, AdamOptimizerConfig]

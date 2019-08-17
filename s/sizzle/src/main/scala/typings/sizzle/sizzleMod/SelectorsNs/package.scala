@@ -1,15 +1,16 @@
 package typings.sizzle.sizzleMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Document
-import typings.std.Element
-import typings.std.RegExp
-import typings.std.RegExpMatchArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorsNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Document
+  import typings.std.Element
+  import typings.std.RegExp
+  import typings.std.RegExpMatchArray
+
   type AttrHandleFunction = js.Function3[/* elem */ js.Any, /* casePreservedName */ String, /* isXML */ Boolean, String]
   type AttrHandleFunctions = StringDictionary[AttrHandleFunction]
   type CreatePseudoFunction = js.Function1[/* repeated */ js.Any, PseudoFunction]

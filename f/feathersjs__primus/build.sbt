@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "feathersjs__primus"
-version := "3.0-dt-20190531Z-dca251"
-scalaVersion := "2.12.8"
+version := "3.0-dt-20190531Z-5f4e5f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

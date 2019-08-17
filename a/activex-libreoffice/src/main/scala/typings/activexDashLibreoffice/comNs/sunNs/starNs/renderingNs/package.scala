@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiComponentFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object renderingNs {
+  import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiComponentFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   type Canvas = XCanvas
   /**
     * The {@link CanvasFactory} is used to create the {@link Canvas} objects, evaluating the user's configuration preferences from

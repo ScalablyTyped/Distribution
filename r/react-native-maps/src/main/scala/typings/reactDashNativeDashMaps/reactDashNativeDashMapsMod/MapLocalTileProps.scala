@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapLocalTileProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapLocalTileProps extends js.Object {
   var pathTemplate: String
   var tileSize: js.UndefOr[Double] = js.undefined
   var zIndex: js.UndefOr[Double] = js.undefined

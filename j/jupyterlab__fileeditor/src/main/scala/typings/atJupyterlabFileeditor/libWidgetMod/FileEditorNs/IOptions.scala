@@ -1,5 +1,8 @@
 package typings.atJupyterlabFileeditor.libWidgetMod.FileEditorNs
 
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.Factory
+import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.CodeContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,24 +14,20 @@ trait IOptions extends js.Object {
   /**
     * The document context associated with the editor.
     */
-  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any
+  var context: CodeContext
   /**
     * A code editor factory.
     */
-  var factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+  var factory: Factory
   /**
     * The mime type service for the editor.
     */
-  var mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
+  var mimeTypeService: IEditorMimeTypeService
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any,
-    factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any,
-    mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
-  ): IOptions = {
+  def apply(context: CodeContext, factory: Factory, mimeTypeService: IEditorMimeTypeService): IOptions = {
     val __obj = js.Dynamic.literal(context = context, factory = factory, mimeTypeService = mimeTypeService)
   
     __obj.asInstanceOf[IOptions]

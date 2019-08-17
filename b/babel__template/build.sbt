@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "babel__template"
-version := "7.0-dt-20190213Z-3791de"
-scalaVersion := "2.12.8"
+version := "7.0-dt-20190213Z-3f1b8f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel__parser" % "7.5.5-b44c98",
-  "org.scalablytyped" %%% "babel__types" % "7.5.5-2e899f",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "babel__parser" % "7.5.5-a05bd7",
+  "org.scalablytyped" %%% "babel__types" % "7.5.5-bbad9b",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,0 +1,25 @@
+package typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreReplicationRuleAndOperatorMod
+
+import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreTagMod._UnmarshalledTag
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _UnmarshalledReplicationRuleAndOperator extends _ReplicationRuleAndOperator {
+  /**
+    * _TagSet shape
+    */
+  @JSName("Tags")
+  var Tags__UnmarshalledReplicationRuleAndOperator: js.UndefOr[js.Array[_UnmarshalledTag]] = js.undefined
+}
+
+object _UnmarshalledReplicationRuleAndOperator {
+  @scala.inline
+  def apply(Prefix: String = null, Tags: js.Array[_UnmarshalledTag] = null): _UnmarshalledReplicationRuleAndOperator = {
+    val __obj = js.Dynamic.literal()
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    __obj.asInstanceOf[_UnmarshalledReplicationRuleAndOperator]
+  }
+}
+

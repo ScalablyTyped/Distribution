@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.NONE
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEmrMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.NONE
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.TERMINATE_JOB_FLOW
     - typings.awsDashSdk.awsDashSdkStrings.TERMINATE_CLUSTER
@@ -25,6 +26,7 @@ package object clientsEmrMod {
   */
   type AdjustmentType = _AdjustmentType | java.lang.String
   type ApplicationList = js.Array[Application]
+  type ArnType = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PENDING
     - typings.awsDashSdk.awsDashSdkStrings.ATTACHING
@@ -225,6 +227,8 @@ package object clientsEmrMod {
   type MetricDimensionList = js.Array[MetricDimension]
   type NewSupportedProductsList = js.Array[SupportedProductConfig]
   type NonNegativeDouble = Double
+  type Port = Double
+  type PortRanges = js.Array[PortRange]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SECURITY
     - typings.awsDashSdk.awsDashSdkStrings.NONE

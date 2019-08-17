@@ -1,12 +1,13 @@
 package typings.atNivoRadar
 
-import typings.atNivoCore.atNivoCoreMod.MotionProps
-import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoRadarMod {
+  import typings.atNivoCore.atNivoCoreMod.MotionProps
+  import typings.react.reactMod.ReactNode
+
   type CustomDotLabel = js.Function1[/* repeated */ js.Any, ReactNode]
   type CustomDotSymbol = js.Function1[/* repeated */ js.Any, ReactNode]
   type CustomFormatter = js.Function1[/* repeated */ js.Any, ReactNode]

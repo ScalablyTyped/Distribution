@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/providers/angular-delegate", "AngularFrameworkDelegate")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate * / any */ @JSImport("@ionic/angular/dist/providers/angular-delegate", "AngularFrameworkDelegate")
 @js.native
 class AngularFrameworkDelegate protected () extends js.Object {
   def this(

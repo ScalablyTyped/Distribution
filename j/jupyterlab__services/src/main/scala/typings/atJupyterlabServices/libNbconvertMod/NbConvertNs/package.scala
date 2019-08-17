@@ -1,11 +1,12 @@
 package typings.atJupyterlabServices.libNbconvertMod
 
-import typings.atJupyterlabServices.libNbconvertMod.NbConvertManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object NbConvertNs {
+  import typings.atJupyterlabServices.libNbconvertMod.NbConvertManager
+
   /**
     * The interface for the build manager.
     */

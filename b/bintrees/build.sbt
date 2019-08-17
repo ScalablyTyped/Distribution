@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "bintrees"
-version := "1.0.1-dt-20190322Z-797be7"
-scalaVersion := "2.12.8"
+version := "1.0.1-dt-20190322Z-cb2c19"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

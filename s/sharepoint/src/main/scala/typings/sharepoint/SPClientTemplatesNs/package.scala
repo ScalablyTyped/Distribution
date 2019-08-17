@@ -1,11 +1,12 @@
 package typings.sharepoint
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SPClientTemplatesNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /** Must return null in order to fall back to a more common template or to a system default template */
   type FieldCallback = js.Function1[/* renderContext */ RenderContext, String]
   /** Must return null in order to fall back to a more common template or to a system default template */

@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs.MediaNs
 
-import typings.winrtDashUwp.WindowsNs.WinRTEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ProtectionNs {
+  import typings.winrtDashUwp.WindowsNs.WinRTEvent
+
   /** Represents the method that handles the data passed by the MediaProtectionManager when a load of binary data fails. */
   type ComponentLoadFailedEventHandler = js.Function1[
     /* ev */ ComponentLoadFailedEventArgs with WinRTEvent[MediaProtectionManager], 

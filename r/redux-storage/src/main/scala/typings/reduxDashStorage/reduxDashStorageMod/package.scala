@@ -1,12 +1,13 @@
 package typings.reduxDashStorage
 
-import typings.redux.reduxMod.AnyAction
-import typings.redux.reduxMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashStorageMod {
+  import typings.redux.reduxMod.AnyAction
+  import typings.redux.reduxMod.Store
+
   type ActionTypeCheckCallback = js.Function1[/* type */ String, Boolean]
   /**
     * Loader interface

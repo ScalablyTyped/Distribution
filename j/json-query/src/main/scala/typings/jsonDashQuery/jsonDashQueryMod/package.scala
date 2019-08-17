@@ -1,11 +1,12 @@
 package typings.jsonDashQuery
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsonDashQueryMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Context = js.Any
   type Filter = js.Function2[/* input */ Context, /* repeated */ js.Any, Context]
   type Locals = StringDictionary[Filter]

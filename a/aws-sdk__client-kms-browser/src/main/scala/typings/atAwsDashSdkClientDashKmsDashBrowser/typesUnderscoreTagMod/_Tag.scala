@@ -1,0 +1,26 @@
+package typings.atAwsDashSdkClientDashKmsDashBrowser.typesUnderscoreTagMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _Tag extends js.Object {
+  /**
+    * <p>The key of the tag.</p>
+    */
+  var TagKey: String
+  /**
+    * <p>The value of the tag.</p>
+    */
+  var TagValue: String
+}
+
+object _Tag {
+  @scala.inline
+  def apply(TagKey: String, TagValue: String): _Tag = {
+    val __obj = js.Dynamic.literal(TagKey = TagKey, TagValue = TagValue)
+  
+    __obj.asInstanceOf[_Tag]
+  }
+}
+

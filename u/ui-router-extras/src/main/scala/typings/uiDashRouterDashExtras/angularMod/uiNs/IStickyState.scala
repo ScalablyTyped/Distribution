@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Sticky state
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait IStickyState extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState * / any */ trait IStickyState extends js.Object {
   /*
     * The most-recently-activate substate of the DSR marked state is remembered.
     * When the DSR marked state is transitioned to directly, UI-Router Extras will instead redirect to the remembered state and parameters.

@@ -1,5 +1,7 @@
 package typings.atJupyterlabVdom.atJupyterlabVdomMod
 
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IContext
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IRenderer
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IRendererOptions
 import typings.atNteractTransformDashVdom.libEventDashToDashObjectMod.SerializedEvent
@@ -14,10 +16,7 @@ class RenderedVDOM protected () extends IRenderer {
     * Create a new widget for rendering DOM.
     */
   def this(options: IRendererOptions) = this()
-  def this(
-    options: IRendererOptions,
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any
-  ) = this()
+  def this(options: IRendererOptions, context: IContext[IModel]) = this()
   var _comms: js.Any = js.native
   var _mimeType: js.Any = js.native
   var _session: js.UndefOr[js.Any] = js.native

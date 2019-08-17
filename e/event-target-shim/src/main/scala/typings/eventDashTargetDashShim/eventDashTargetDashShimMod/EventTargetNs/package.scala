@@ -1,32 +1,33 @@
 package typings.eventDashTargetDashShim.eventDashTargetDashShimMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.Event
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.AT_TARGET
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.BUBBLING_PHASE
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.CAPTURING_PHASE
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.NONE
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.`type`
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.bubbles
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.cancelBubble
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.cancelable
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.composed
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.currentTarget
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.defaultPrevented
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.eventPhase
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.isTrusted
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.returnValue
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.srcElement
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.target
-import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.timeStamp
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EventTargetNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.Event
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.AT_TARGET
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.BUBBLING_PHASE
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.CAPTURING_PHASE
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.NONE
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.`type`
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.bubbles
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.cancelBubble
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.cancelable
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.composed
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.currentTarget
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.defaultPrevented
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.eventPhase
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.isTrusted
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.returnValue
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.srcElement
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.target
+  import typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.timeStamp
+  import typings.std.Exclude
+  import typings.std.Partial
+  import typings.std.Pick
+
   type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
     */ typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.EventAttributes with TEventAttributes

@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object datatransferNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * Different platforms use different types to describe data formats available during data exchange operations like clipboard or drag&drop.
     * Implementations of this service do convert system dependent data types to a {@link DataFlavor} and vice versa.

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "console-ui"
-version := "2.2-dt-20190731Z-9a53c8"
-scalaVersion := "2.12.8"
+version := "2.2-dt-20190731Z-3c42ad"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-79b630",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "rxjs" % "6.5.2-c5f4a8",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-4ea7eb")
+  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-68fc38",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "rxjs" % "6.5.2-1ca89d",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-1e1902")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

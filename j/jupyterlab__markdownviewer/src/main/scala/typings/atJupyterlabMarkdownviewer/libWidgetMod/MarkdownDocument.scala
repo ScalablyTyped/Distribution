@@ -1,13 +1,12 @@
 package typings.atJupyterlabMarkdownviewer.libWidgetMod
 
+import typings.atJupyterlabDocregistry.libMod.DocumentWidget
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@jupyterlab/markdownviewer/lib/widget", "MarkdownDocument")
+@JSImport("@jupyterlab/markdownviewer/lib/widget", "MarkdownDocument")
 @js.native
-class MarkdownDocument () extends js.Object {
-  def setFragment(fragment: String): Unit = js.native
-}
+class MarkdownDocument () extends DocumentWidget[MarkdownViewer, IModel]
 

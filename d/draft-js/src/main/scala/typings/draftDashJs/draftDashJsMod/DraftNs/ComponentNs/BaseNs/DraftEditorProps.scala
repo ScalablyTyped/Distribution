@@ -54,6 +54,9 @@ trait DraftEditorProps extends js.Object {
   // Provide a map of inline style names corresponding to CSS style objects
   // that will be rendered for matching ranges.
   var customStyleMap: js.UndefOr[DraftStyleMap] = js.undefined
+  // If using server-side rendering, this prop is required to be set to
+  // avoid client/server mismatches.
+  var editorKey: js.UndefOr[String] = js.undefined
   var editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState
   // Handle intended text insertion before the insertion occurs. This may be
   // useful in cases where the user has entered characters that you would like
@@ -149,6 +152,9 @@ trait DraftEditorProps extends js.Object {
   // Specify whether text alignment should be forced in a direction
   // regardless of input characters.
   var textAlignment: js.UndefOr[DraftTextAlignment] = js.undefined
+  // Specify whether text directionality should be forced in a direction
+  // regardless of input characters.
+  var textDirectionality: js.UndefOr[DraftTextDirectionality] = js.undefined
   var webDriverTestID: js.UndefOr[String] = js.undefined
   def onChange(editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): Unit
 }
@@ -173,6 +179,7 @@ object DraftEditorProps {
     blockStyleFn: /* block */ typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock => String = null,
     customStyleFn: (/* style */ DraftInlineStyle, /* block */ typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock) => DraftStyleMap = null,
     customStyleMap: DraftStyleMap = null,
+    editorKey: String = null,
     handleBeforeInput: (/* chars */ String, /* editorState */ typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,
     handleDrop: (/* selection */ typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, /* dataTransfer */ js.Object, /* isInternal */ DraftDragType) => DraftHandleValue = null,
     handleDroppedFiles: (/* selection */ typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, /* files */ js.Array[Blob]) => DraftHandleValue = null,
@@ -196,6 +203,7 @@ object DraftEditorProps {
     stripPastedStyles: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     textAlignment: DraftTextAlignment = null,
+    textDirectionality: DraftTextDirectionality = null,
     webDriverTestID: String = null
   ): DraftEditorProps = {
     val __obj = js.Dynamic.literal(editorState = editorState, onChange = js.Any.fromFunction1(onChange))
@@ -214,6 +222,7 @@ object DraftEditorProps {
     if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
     if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(js.Any.fromFunction2(customStyleFn))
     if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
+    if (editorKey != null) __obj.updateDynamic("editorKey")(editorKey)
     if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(js.Any.fromFunction3(handleBeforeInput))
     if (handleDrop != null) __obj.updateDynamic("handleDrop")(js.Any.fromFunction3(handleDrop))
     if (handleDroppedFiles != null) __obj.updateDynamic("handleDroppedFiles")(js.Any.fromFunction2(handleDroppedFiles))
@@ -237,6 +246,7 @@ object DraftEditorProps {
     if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment)
+    if (textDirectionality != null) __obj.updateDynamic("textDirectionality")(textDirectionality)
     if (webDriverTestID != null) __obj.updateDynamic("webDriverTestID")(webDriverTestID)
     __obj.asInstanceOf[DraftEditorProps]
   }

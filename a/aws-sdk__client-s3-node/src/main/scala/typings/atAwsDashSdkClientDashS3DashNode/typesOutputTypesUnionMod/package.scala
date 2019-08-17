@@ -1,0 +1,93 @@
+package typings.atAwsDashSdkClientDashS3DashNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object typesOutputTypesUnionMod {
+  import typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectOutputMod.GetObjectOutput
+  import typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectTorrentOutputMod.GetObjectTorrentOutput
+  import typings.node.streamMod.Readable
+
+  /* Rewritten from type alias, can be one of: 
+    - typings.atAwsDashSdkClientDashS3DashNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesCompleteMultipartUploadOutputMod.CompleteMultipartUploadOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesCopyObjectOutputMod.CopyObjectOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesCreateBucketOutputMod.CreateBucketOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesCreateMultipartUploadOutputMod.CreateMultipartUploadOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketOutputMod.DeleteBucketOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketAnalyticsConfigurationOutputMod.DeleteBucketAnalyticsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketCorsOutputMod.DeleteBucketCorsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketEncryptionOutputMod.DeleteBucketEncryptionOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketInventoryConfigurationOutputMod.DeleteBucketInventoryConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketLifecycleOutputMod.DeleteBucketLifecycleOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketMetricsConfigurationOutputMod.DeleteBucketMetricsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketPolicyOutputMod.DeleteBucketPolicyOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketReplicationOutputMod.DeleteBucketReplicationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketTaggingOutputMod.DeleteBucketTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteBucketWebsiteOutputMod.DeleteBucketWebsiteOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteObjectOutputMod.DeleteObjectOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteObjectTaggingOutputMod.DeleteObjectTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesDeleteObjectsOutputMod.DeleteObjectsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketAccelerateConfigurationOutputMod.GetBucketAccelerateConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketAclOutputMod.GetBucketAclOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketAnalyticsConfigurationOutputMod.GetBucketAnalyticsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketCorsOutputMod.GetBucketCorsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketEncryptionOutputMod.GetBucketEncryptionOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketInventoryConfigurationOutputMod.GetBucketInventoryConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketLifecycleOutputMod.GetBucketLifecycleOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketLifecycleConfigurationOutputMod.GetBucketLifecycleConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketLocationOutputMod.GetBucketLocationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketLoggingOutputMod.GetBucketLoggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketMetricsConfigurationOutputMod.GetBucketMetricsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketNotificationOutputMod.GetBucketNotificationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketNotificationConfigurationOutputMod.GetBucketNotificationConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketPolicyOutputMod.GetBucketPolicyOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketReplicationOutputMod.GetBucketReplicationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketRequestPaymentOutputMod.GetBucketRequestPaymentOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketTaggingOutputMod.GetBucketTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketVersioningOutputMod.GetBucketVersioningOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketWebsiteOutputMod.GetBucketWebsiteOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectOutputMod.GetObjectOutput[typings.node.streamMod.Readable]
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectAclOutputMod.GetObjectAclOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectTaggingOutputMod.GetObjectTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectTorrentOutputMod.GetObjectTorrentOutput[typings.node.streamMod.Readable]
+    - typings.atAwsDashSdkClientDashS3DashNode.typesHeadBucketOutputMod.HeadBucketOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesHeadObjectOutputMod.HeadObjectOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListBucketAnalyticsConfigurationsOutputMod.ListBucketAnalyticsConfigurationsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListBucketInventoryConfigurationsOutputMod.ListBucketInventoryConfigurationsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListBucketMetricsConfigurationsOutputMod.ListBucketMetricsConfigurationsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListBucketsOutputMod.ListBucketsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListMultipartUploadsOutputMod.ListMultipartUploadsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListObjectVersionsOutputMod.ListObjectVersionsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListObjectsOutputMod.ListObjectsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListObjectsV2OutputMod.ListObjectsV2Output
+    - typings.atAwsDashSdkClientDashS3DashNode.typesListPartsOutputMod.ListPartsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketAccelerateConfigurationOutputMod.PutBucketAccelerateConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketAclOutputMod.PutBucketAclOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketAnalyticsConfigurationOutputMod.PutBucketAnalyticsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketCorsOutputMod.PutBucketCorsOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketEncryptionOutputMod.PutBucketEncryptionOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketInventoryConfigurationOutputMod.PutBucketInventoryConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketLifecycleOutputMod.PutBucketLifecycleOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketLifecycleConfigurationOutputMod.PutBucketLifecycleConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketLoggingOutputMod.PutBucketLoggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketMetricsConfigurationOutputMod.PutBucketMetricsConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketNotificationOutputMod.PutBucketNotificationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketNotificationConfigurationOutputMod.PutBucketNotificationConfigurationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketPolicyOutputMod.PutBucketPolicyOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketReplicationOutputMod.PutBucketReplicationOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketRequestPaymentOutputMod.PutBucketRequestPaymentOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketTaggingOutputMod.PutBucketTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketVersioningOutputMod.PutBucketVersioningOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutBucketWebsiteOutputMod.PutBucketWebsiteOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutObjectOutputMod.PutObjectOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutObjectAclOutputMod.PutObjectAclOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesPutObjectTaggingOutputMod.PutObjectTaggingOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesRestoreObjectOutputMod.RestoreObjectOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesSelectObjectContentOutputMod.SelectObjectContentOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesUploadPartOutputMod.UploadPartOutput
+    - typings.atAwsDashSdkClientDashS3DashNode.typesUploadPartCopyOutputMod.UploadPartCopyOutput
+  */
+  type OutputTypesUnion = _OutputTypesUnion | GetObjectOutput[Readable] | GetObjectTorrentOutput[Readable]
+}

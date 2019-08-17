@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "intercom-web"
-version := "2.8-dt-20190213Z-e7124b"
-scalaVersion := "2.12.8"
+version := "2.8-dt-20190213Z-f991dc"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

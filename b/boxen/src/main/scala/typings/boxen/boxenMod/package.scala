@@ -1,11 +1,12 @@
 package typings.boxen
 
-import typings.cliDashBoxes.cliDashBoxesMod.BoxStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object boxenMod {
+  import typings.cliDashBoxes.cliDashBoxesMod.BoxStyle
+
   /**
   	Characters used for custom border.
   	@example

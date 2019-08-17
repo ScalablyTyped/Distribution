@@ -1,13 +1,14 @@
 package typings.reactDashTransitionDashGroup
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactNode
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactNode
+  import typings.std.HTMLElement
+
   type EndHandler = js.Function2[/* node */ HTMLElement, /* done */ js.Function0[Unit], Unit]
   type EnterHandler = js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Unit]
   type ExitHandler = js.Function1[/* node */ HTMLElement, Unit]

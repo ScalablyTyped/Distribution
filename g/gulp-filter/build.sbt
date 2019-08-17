@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-filter"
-version := "v3.0.1-dt-20190322Z-733737"
-scalaVersion := "2.12.8"
+version := "v3.0.1-dt-20190322Z-321d7c"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-40806c",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-e8068d")
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-c1e405",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-690d63")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

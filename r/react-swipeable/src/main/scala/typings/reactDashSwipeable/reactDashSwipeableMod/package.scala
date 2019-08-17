@@ -1,12 +1,13 @@
 package typings.reactDashSwipeable
 
-import typings.react.reactMod.TouchEvent
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSwipeableMod {
+  import typings.react.reactMod.TouchEvent
+  import typings.std.Element
+
   type OnSwipedCallback[T /* <: Element */] = js.Function5[
     /* event */ TouchEvent[T], 
     /* deltaX */ Double, 

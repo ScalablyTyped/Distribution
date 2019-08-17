@@ -1,17 +1,18 @@
 package typings.pixiDotJs.PIXINs
 
-import typings.pixiDotJs.PIXINs.Container
-import typings.pixiDotJs.PIXINs.Filter
-import typings.pixiDotJs.PIXINs.TransformBase
-import typings.pixiDotJs.PIXINs.extrasNs.AnimatedSprite
-import typings.pixiDotJs.PIXINs.loadersNs.Loader
-import typings.pixiDotJs.PIXINs.meshNs.Mesh
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object coreNs {
+  import typings.pixiDotJs.PIXINs.Container
+  import typings.pixiDotJs.PIXINs.Filter
+  import typings.pixiDotJs.PIXINs.TransformBase
+  import typings.pixiDotJs.PIXINs.extrasNs.AnimatedSprite
+  import typings.pixiDotJs.PIXINs.loadersNs.Loader
+  import typings.pixiDotJs.PIXINs.meshNs.Mesh
+  import typings.std.RegExp
+
   /**
     * @class
     * @private

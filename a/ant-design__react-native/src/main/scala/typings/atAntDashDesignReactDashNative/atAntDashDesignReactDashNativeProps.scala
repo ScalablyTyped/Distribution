@@ -156,7 +156,6 @@ trait atAntDashDesignReactDashNativeProps {
   @scala.inline
   def PortalDashHostProps: PortalHostProps.type = typings.atAntDashDesignReactDashNative.esPortalPortalDashHostMod.PortalHostProps
   type PortalDashHostProps = PortalHostProps
-  type PortalDashManagerProps = js.Object
   @scala.inline
   def ProgressProps: typings.atAntDashDesignReactDashNative.esProgressMod.ProgressProps.type = typings.atAntDashDesignReactDashNative.esProgressMod.ProgressProps
   type ProgressProps = typings.atAntDashDesignReactDashNative.esProgressMod.ProgressProps

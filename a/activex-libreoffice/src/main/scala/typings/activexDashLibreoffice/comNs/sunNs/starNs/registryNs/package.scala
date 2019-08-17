@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object registryNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * is thrown when an application tries to register a new component (implementation) using the {@link
     * XImplementationRegistration.registerImplementation()} method, but the component cannot be registered. The reason for this exception could be: ; ; the

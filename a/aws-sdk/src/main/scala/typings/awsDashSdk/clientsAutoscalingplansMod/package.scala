@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.TargetTrackingScaling
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsAutoscalingplansMod {
+  import typings.awsDashSdk.awsDashSdkStrings.TargetTrackingScaling
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ApplicationSources = js.Array[ApplicationSource]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type Cooldown = Double

@@ -1,11 +1,12 @@
 package typings.highland
 
-import typings.node.NodeJSNs.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object HighlandNs {
+  import typings.node.NodeJSNs.ReadableStream
+
   type MappingHint = Double | js.Array[String] | js.Function
   type OnFinished = js.Function2[
     /* r */ ReadableStream, 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "createjs"
-version := "0.0-unknown-dt-20190322Z-ec4e35"
-scalaVersion := "2.12.8"
+version := "0.0-unknown-dt-20190322Z-b7beae"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

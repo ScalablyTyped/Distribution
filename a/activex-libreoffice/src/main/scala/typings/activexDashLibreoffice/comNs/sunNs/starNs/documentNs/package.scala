@@ -1,20 +1,21 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexContainer
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameReplace
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.FilterOptionsDialog
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.InvalidStateException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XRefreshable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object documentNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexContainer
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameReplace
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.uiNs.dialogsNs.FilterOptionsDialog
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.InvalidStateException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XRefreshable
+
   /**
     * Is used for interaction handle to query user decision in case the document being saved was already stored by another user during the editing.
     * @since OOo 3.1

@@ -20,6 +20,9 @@ trait IResolver extends js.Object {
   var isLocal: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.undefined
   /**
     * Get the download url for a given absolute url path.
+    *
+    * #### Notes
+    * This URL may include a query parameter.
     */
   def getDownloadUrl(url: String): js.Promise[String]
   /**

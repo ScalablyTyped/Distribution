@@ -1,14 +1,15 @@
 package typings.utilityDashTypes
 
-import typings.std.Pick
-import typings.utilityDashTypes.distMappedDashTypesMod.DeepReadonly
-import typings.utilityDashTypes.distMappedDashTypesMod.SetComplement
-import typings.utilityDashTypes.utilityDashTypesStrings.DOLLARElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distUtilityDashTypesMod {
+  import typings.std.Pick
+  import typings.utilityDashTypes.distMappedDashTypesMod.DeepReadonly
+  import typings.utilityDashTypes.distMappedDashTypesMod.SetComplement
+  import typings.utilityDashTypes.utilityDashTypesStrings.DOLLARElementType
+
   type $Call[Fn /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type $Diff[T /* <: U */, U /* <: js.Object */] = Pick[T, SetComplement[String, String]]
   type $ElementType[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 

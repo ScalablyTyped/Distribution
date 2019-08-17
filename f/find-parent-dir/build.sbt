@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "find-parent-dir"
-version := "0.3-dt-20180715Z-9514f9"
-scalaVersion := "2.12.8"
+version := "0.3-dt-20180715Z-392fb0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

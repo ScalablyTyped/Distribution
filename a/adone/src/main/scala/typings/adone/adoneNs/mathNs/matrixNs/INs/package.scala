@@ -1,11 +1,12 @@
 package typings.adone.adoneNs.mathNs.matrixNs
 
-import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object INs {
+  import typings.std.Float32Array
+
   type mat2 = Float32Array
   type mat2d = Float32Array
   type mat3 = Float32Array

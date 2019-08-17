@@ -2,6 +2,8 @@ package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Global.JSXNs.Element
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
 import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
@@ -14,8 +16,8 @@ trait NodeRendererProps extends js.Object {
   var canDrag: Boolean
   var canDrop: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any
-  var connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
+  var connectDragPreview: ConnectDragPreview
+  var connectDragSource: ConnectDragSource
   var didDrop: Boolean
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var endDrag: js.Any
@@ -47,8 +49,8 @@ object NodeRendererProps {
   @scala.inline
   def apply(
     canDrag: Boolean,
-    connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any,
-    connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any,
+    connectDragPreview: ConnectDragPreview,
+    connectDragSource: ConnectDragSource,
     didDrop: Boolean,
     endDrag: js.Any,
     isDragging: Boolean,

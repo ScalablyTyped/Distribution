@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "newline-remove"
-version := "1.0-dt-20180216Z-91a160"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180216Z-a24242"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

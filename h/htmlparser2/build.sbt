@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "htmlparser2"
-version := "v3.10.x-dt-20190712Z-e8a216"
-scalaVersion := "2.12.8"
+version := "v3.10.x-dt-20190712Z-bd5978"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-f3039e",
-  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-d7b37c",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-39e06a",
+  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-58f589",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

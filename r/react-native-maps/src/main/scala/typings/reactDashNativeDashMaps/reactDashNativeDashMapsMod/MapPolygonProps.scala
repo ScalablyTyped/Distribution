@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapPolygonProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapPolygonProps extends js.Object {
   var coordinates: js.Array[LatLng]
   var fillColor: js.UndefOr[String] = js.undefined
   var geodesic: js.UndefOr[Boolean] = js.undefined

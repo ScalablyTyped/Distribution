@@ -1,0 +1,93 @@
+package typings.atAwsDashSdkClientDashGlacierDashNode.typesServiceUnavailableExceptionMod
+
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAbortMultipartUploadExceptionsUnionMod.AbortMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAbortVaultLockExceptionsUnionMod.AbortVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAddTagsToVaultExceptionsUnionMod.AddTagsToVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesCompleteMultipartUploadExceptionsUnionMod.CompleteMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesCompleteVaultLockExceptionsUnionMod.CompleteVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesCreateVaultExceptionsUnionMod.CreateVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteArchiveExceptionsUnionMod.DeleteArchiveExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultAccessPolicyExceptionsUnionMod.DeleteVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultExceptionsUnionMod.DeleteVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultNotificationsExceptionsUnionMod.DeleteVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDescribeJobExceptionsUnionMod.DescribeJobExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDescribeVaultExceptionsUnionMod.DescribeVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetDataRetrievalPolicyExceptionsUnionMod.GetDataRetrievalPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetJobOutputExceptionsUnionMod.GetJobOutputExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultAccessPolicyExceptionsUnionMod.GetVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultLockExceptionsUnionMod.GetVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultNotificationsExceptionsUnionMod.GetVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateMultipartUploadExceptionsUnionMod.InitiateMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateVaultLockExceptionsUnionMod.InitiateVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListJobsExceptionsUnionMod.ListJobsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListMultipartUploadsExceptionsUnionMod.ListMultipartUploadsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListPartsExceptionsUnionMod.ListPartsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListProvisionedCapacityExceptionsUnionMod.ListProvisionedCapacityExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListTagsForVaultExceptionsUnionMod.ListTagsForVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListVaultsExceptionsUnionMod.ListVaultsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesPurchaseProvisionedCapacityExceptionsUnionMod.PurchaseProvisionedCapacityExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesRemoveTagsFromVaultExceptionsUnionMod.RemoveTagsFromVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetDataRetrievalPolicyExceptionsUnionMod.SetDataRetrievalPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetVaultAccessPolicyExceptionsUnionMod.SetVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetVaultNotificationsExceptionsUnionMod.SetVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ServiceUnavailableException
+  extends ServiceException[_ServiceUnavailableExceptionDetails]
+     with AbortMultipartUploadExceptionsUnion
+     with AbortVaultLockExceptionsUnion
+     with AddTagsToVaultExceptionsUnion
+     with CompleteMultipartUploadExceptionsUnion
+     with CompleteVaultLockExceptionsUnion
+     with CreateVaultExceptionsUnion
+     with DeleteArchiveExceptionsUnion
+     with DeleteVaultAccessPolicyExceptionsUnion
+     with DeleteVaultExceptionsUnion
+     with DeleteVaultNotificationsExceptionsUnion
+     with DescribeJobExceptionsUnion
+     with DescribeVaultExceptionsUnion
+     with GetDataRetrievalPolicyExceptionsUnion
+     with GetJobOutputExceptionsUnion
+     with GetVaultAccessPolicyExceptionsUnion
+     with GetVaultLockExceptionsUnion
+     with GetVaultNotificationsExceptionsUnion
+     with InitiateJobExceptionsUnion
+     with InitiateMultipartUploadExceptionsUnion
+     with InitiateVaultLockExceptionsUnion
+     with ListJobsExceptionsUnion
+     with ListMultipartUploadsExceptionsUnion
+     with ListPartsExceptionsUnion
+     with ListProvisionedCapacityExceptionsUnion
+     with ListTagsForVaultExceptionsUnion
+     with ListVaultsExceptionsUnion
+     with PurchaseProvisionedCapacityExceptionsUnion
+     with RemoveTagsFromVaultExceptionsUnion
+     with SetDataRetrievalPolicyExceptionsUnion
+     with SetVaultAccessPolicyExceptionsUnion
+     with SetVaultNotificationsExceptionsUnion
+     with UploadArchiveExceptionsUnion
+     with UploadMultipartPartExceptionsUnion {
+  @JSName("name")
+  var name_ServiceUnavailableException: typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.ServiceUnavailableException
+}
+
+object ServiceUnavailableException {
+  @scala.inline
+  def apply(
+    details: _ServiceUnavailableExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.ServiceUnavailableException,
+    stack: String = null
+  ): ServiceUnavailableException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ServiceUnavailableException]
+  }
+}
+

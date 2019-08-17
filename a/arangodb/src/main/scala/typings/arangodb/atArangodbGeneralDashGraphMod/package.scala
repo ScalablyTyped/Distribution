@@ -1,12 +1,13 @@
 package typings.arangodb
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.Anon_Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atArangodbGeneralDashGraphMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.arangodb.Anon_Id
+
   type Betweenness = Eccentricity
   type Closeness = Eccentricity
   type ClosenessOptions = ShortestPathOptions

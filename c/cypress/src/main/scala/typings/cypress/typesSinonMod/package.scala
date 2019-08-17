@@ -1,11 +1,12 @@
 package typings.cypress
 
-import typings.cypress.Anon_Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSinonMod {
+  import typings.cypress.Anon_Id
+
   type SinonStatic = SinonSandbox with LegacySandbox with SinonApi
   /**
     * An instance of a stubbed object type with functions replaced by stubs.

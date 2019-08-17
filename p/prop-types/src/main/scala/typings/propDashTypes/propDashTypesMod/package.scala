@@ -1,14 +1,15 @@
 package typings.propDashTypes
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object propDashTypesMod {
+  import org.scalablytyped.runtime.Instantiable2
+  import typings.std.Exclude
+  import typings.std.Partial
+  import typings.std.Pick
+
   type InferProps[V] = (InferPropsInner[Pick[V, RequiredKeys[V]]]) with (Partial[InferPropsInner[Pick[V, OptionalKeys[V]]]])
   type InferPropsInner[V] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}

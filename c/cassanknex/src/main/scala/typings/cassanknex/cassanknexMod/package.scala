@@ -1,11 +1,12 @@
 package typings.cassanknex
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cassanknexMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AlterColumnFamilyQueryBuilder[T] = QueryBuilder with AlterableQueryBuilder[T] with FieldValueQueryBuilder[T]
   type CreateColumnFamilyQueryBuilder[T] = QueryBuilder with FieldValueQueryBuilder[T] with CreateableColumnFamilyBuilder[T]
   type CreateTypeQueryBuilder[T] = QueryBuilder with FieldValueQueryBuilder[T]

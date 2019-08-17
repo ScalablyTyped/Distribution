@@ -1,11 +1,12 @@
 package typings.falcor
 
-import typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphMod.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object falcorMod {
+  import typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphMod.Error
+
   type ModelComparator = js.Function2[/* existingValue */ js.Any, /* newValue */ js.Any, Boolean]
   type ModelErrorSelector = js.Function1[/* jsonGraphError */ js.Any, js.Any]
   type ModelOnChange = js.Function0[Unit]

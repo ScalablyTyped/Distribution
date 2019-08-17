@@ -1,11 +1,12 @@
 package typings.request
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object requestMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Cookie = typings.toughDashCookie.toughDashCookieMod.Cookie
   type Headers = StringDictionary[js.Any]
   type OptionalUriUrl = RequiredUriUrl | js.Object

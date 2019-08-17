@@ -1,12 +1,13 @@
 package typings.cosmiconfig
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.cosmiconfig.Anon_Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cosmiconfigMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.cosmiconfig.Anon_Config
+
   type AsyncLoader = js.Function2[
     /* filepath */ String, 
     /* content */ String, 

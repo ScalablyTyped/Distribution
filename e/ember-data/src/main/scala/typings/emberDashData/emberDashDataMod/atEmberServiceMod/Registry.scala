@@ -1,0 +1,20 @@
+package typings.emberDashData.emberDashDataMod.atEmberServiceMod
+
+import typings.emberDashData.emberDashDataMod.DSNs.Store
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Registry extends js.Object {
+  var store: Store
+}
+
+object Registry {
+  @scala.inline
+  def apply(store: Store): Registry = {
+    val __obj = js.Dynamic.literal(store = store)
+  
+    __obj.asInstanceOf[Registry]
+  }
+}
+

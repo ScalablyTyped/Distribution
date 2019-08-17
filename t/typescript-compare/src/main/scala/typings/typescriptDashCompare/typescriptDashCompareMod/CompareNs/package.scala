@@ -1,12 +1,13 @@
 package typings.typescriptDashCompare.typescriptDashCompareMod
 
-import typings.typescriptDashCompare.typescriptDashCompareMod.Extends
-import typings.typescriptDashLogic.typescriptDashLogicMod.If
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CompareNs {
+  import typings.typescriptDashCompare.typescriptDashCompareMod.Extends
+  import typings.typescriptDashLogic.typescriptDashLogicMod.If
+
   type Strict[A, B, Options /* <: Options */] = If[
     Extends[A, B], 
     If[

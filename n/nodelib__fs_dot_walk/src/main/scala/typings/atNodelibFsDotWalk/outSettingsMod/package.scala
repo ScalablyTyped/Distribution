@@ -1,12 +1,13 @@
 package typings.atNodelibFsDotWalk
 
-import typings.atNodelibFsDotWalk.outTypesMod.Entry
-import typings.atNodelibFsDotWalk.outTypesMod.Errno
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object outSettingsMod {
+  import typings.atNodelibFsDotWalk.outTypesMod.Entry
+  import typings.atNodelibFsDotWalk.outTypesMod.Errno
+
   type DeepFilterFunction = FilterFunction[Entry]
   type EntryFilterFunction = FilterFunction[Entry]
   type ErrorFilterFunction = FilterFunction[Errno]

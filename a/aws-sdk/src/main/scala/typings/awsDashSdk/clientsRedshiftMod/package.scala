@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRedshiftMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
   type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
   type AttributeList = js.Array[AccountAttribute]

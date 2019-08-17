@@ -1,11 +1,12 @@
 package typings.xml
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xmlMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type XmlAtom = String | Double | Boolean
   type XmlAttrs = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 

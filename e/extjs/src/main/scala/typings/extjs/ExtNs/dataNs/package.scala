@@ -1,14 +1,15 @@
 package typings.extjs.ExtNs
 
-import typings.extjs.ExtNs.IBase
-import typings.extjs.ExtNs.dataNs.proxyNs.IWebStorage
-import typings.extjs.ExtNs.utilNs.IMixedCollection
-import typings.extjs.ExtNs.utilNs.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dataNs {
+  import typings.extjs.ExtNs.IBase
+  import typings.extjs.ExtNs.dataNs.proxyNs.IWebStorage
+  import typings.extjs.ExtNs.utilNs.IMixedCollection
+  import typings.extjs.ExtNs.utilNs.IObservable
+
   type IDirectStore = IStore
   type IGroup = IObservable
   type IJsonP = IBase

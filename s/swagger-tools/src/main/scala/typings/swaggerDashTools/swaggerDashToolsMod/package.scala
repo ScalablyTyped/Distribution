@@ -1,13 +1,14 @@
 package typings.swaggerDashTools
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object swaggerDashToolsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+
   type InitializeMiddlewareCallback12 = js.Function1[/* middleware */ Middleware12, Unit]
   type InitializeMiddlewareCallback20 = js.Function1[/* middleware */ Middleware20, Unit]
   type Swagger20Security = StringDictionary[js.Any]

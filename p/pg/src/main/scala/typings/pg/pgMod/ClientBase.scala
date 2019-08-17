@@ -40,22 +40,22 @@ class ClientBase () extends EventEmitter {
   def query(
     queryConfig: QueryArrayConfig,
     callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult, Unit]
-  ): Query = js.native
+  ): Unit = js.native
   def query(queryConfig: QueryArrayConfig, values: js.Array[_]): js.Promise[QueryArrayResult] = js.native
   def query(queryConfig: QueryConfig): js.Promise[QueryResult] = js.native
   def query(queryTextOrConfig: String): js.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: String, callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]): Query = js.native
+  def query(queryTextOrConfig: String, callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]): Unit = js.native
   def query(queryTextOrConfig: String, values: js.Array[_]): js.Promise[QueryResult] = js.native
   def query(
     queryTextOrConfig: QueryConfig,
     callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
-  ): Query = js.native
+  ): Unit = js.native
   def query(queryTextOrConfig: QueryConfig, values: js.Array[_]): js.Promise[QueryResult] = js.native
   def query(
     queryText: String,
     values: js.Array[_],
     callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
-  ): Query = js.native
+  ): Unit = js.native
   def query[T /* <: Submittable */](queryStream: T): T = js.native
   def resumeDrain(): Unit = js.native
 }

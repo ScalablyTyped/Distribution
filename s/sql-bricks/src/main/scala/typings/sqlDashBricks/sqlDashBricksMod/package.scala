@@ -1,11 +1,12 @@
 package typings.sqlDashBricks
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sqlDashBricksMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type OnCriteria = StringDictionary[String]
   type TableName = String | SelectStatement
   /**

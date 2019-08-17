@@ -1,11 +1,12 @@
 package typings.jestDashInDashCase
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jestDashInDashCaseMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type TestCases[Opts] = js.Array[Opts] | StringDictionary[Opts]
   type Tester[Opts] = js.Function2[
     /* opts */ Opts, 

@@ -1,12 +1,13 @@
 package typings.webpackDashMerge
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.webpackMod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackDashMergeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.webpack.webpackMod.Configuration
+
   type ConfigurationMergeConfigFunction = js.Function1[/* customizeOptions */ CustomizeOptions, ConfigurationMergeFunction]
   type ConfigurationMergeFunction = js.Function1[/* repeated */ Configuration, Configuration]
   type CustomizeArrayFunction = js.Function3[

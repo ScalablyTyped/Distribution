@@ -1,25 +1,26 @@
 package typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.streamMod.Stream
-import typings.std.ArrayBuffer
-import typings.std.DataView
-import typings.std.Date
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DocumentClientNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.Buffer
+  import typings.node.streamMod.Stream
+  import typings.std.ArrayBuffer
+  import typings.std.DataView
+  import typings.std.Date
+  import typings.std.Float32Array
+  import typings.std.Float64Array
+  import typings.std.Int16Array
+  import typings.std.Int32Array
+  import typings.std.Int8Array
+  import typings.std.Uint16Array
+  import typings.std.Uint32Array
+  import typings.std.Uint8Array
+  import typings.std.Uint8ClampedArray
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ADD
     - typings.awsDashSdk.awsDashSdkStrings.PUT

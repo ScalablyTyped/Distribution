@@ -1,15 +1,16 @@
 package typings.reDashReselect
 
-import typings.reDashReselect.Anon_Args
-import typings.reDashReselect.Anon_ArgsCache
-import typings.reDashReselect.Anon_Dependencies
-import typings.reDashReselect.Anon_InputSelectors
-import typings.reDashReselect.Anon_InputSelectorsKeySelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reDashReselectMod {
+  import typings.reDashReselect.Anon_Args
+  import typings.reDashReselect.Anon_ArgsCache
+  import typings.reDashReselect.Anon_Dependencies
+  import typings.reDashReselect.Anon_InputSelectors
+  import typings.reDashReselect.Anon_InputSelectorsKeySelector
+
   type $Values[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   type KeySelector[S] = js.Function2[/* state */ S, /* repeated */ js.Any, js.Any]
   type KeySelectorCreator[S, C, D] = js.Function1[/* selectorInputs */ Anon_InputSelectors[D, C, S], KeySelector[S]]

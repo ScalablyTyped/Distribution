@@ -1,14 +1,15 @@
 package typings.reactDashBootstrapDashTable
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashBootstrapDashTable.Anon_Text
-import typings.reactDashBootstrapDashTable.Anon_TextValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashBootstrapDashTableMod {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.reactDashBootstrapDashTable.Anon_Text
+  import typings.reactDashBootstrapDashTable.Anon_TextValue
+
   type CustomAttrs = StringDictionary[String | Double | Boolean]
   type EditCheckboxOptionValue = String
   type EditSelectOptionValue = js.Array[Anon_TextValue | Double | String]

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait FlowableRequestOperator[T] extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> * / any */ trait FlowableRequestOperator[T] extends js.Object {
   def onComplete(): Unit
   def onError(error: Error): Unit
   def onNext(t: T): Unit

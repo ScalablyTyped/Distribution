@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "buble"
-version := "0.19-dt-20190312Z-d71593"
-scalaVersion := "2.12.8"
+version := "0.19-dt-20190312Z-a35062"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "magic-string" % "0.25.3-b087db",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "magic-string" % "0.25.3-52a698",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

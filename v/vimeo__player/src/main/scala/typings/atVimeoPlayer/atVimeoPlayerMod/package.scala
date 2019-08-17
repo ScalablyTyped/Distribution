@@ -1,11 +1,12 @@
 package typings.atVimeoPlayer
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atVimeoPlayerMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type CallbackFunction = js.Function1[/* repeated */ js.Any, js.Any]
   type EventCallback = js.Function1[/* data */ js.Any, js.Any]
   /* Rewritten from type alias, can be one of: 

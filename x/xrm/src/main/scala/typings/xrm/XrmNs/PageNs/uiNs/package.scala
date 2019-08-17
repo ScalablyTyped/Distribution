@@ -1,12 +1,13 @@
 package typings.xrm.XrmNs.PageNs
 
-import typings.xrm.XrmNs.ControlsNs.ProcessControl
-import typings.xrm.XrmNs.ControlsNs.QuickFormControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiNs {
+  import typings.xrm.XrmNs.ControlsNs.ProcessControl
+  import typings.xrm.XrmNs.ControlsNs.QuickFormControl
+
   /**
     * Display States for Xrm.ui.ProcessMonitor.setDisplayState().
     * @deprecated Use {@link Xrm.DisplayState} instead.

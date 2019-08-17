@@ -1,13 +1,14 @@
 package typings.remarkable
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.remarkable.remarkableStrings.BACKSLASHn
-import typings.remarkable.remarkableStrings.Empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.remarkable.remarkableStrings.BACKSLASHn
+  import typings.remarkable.remarkableStrings.Empty
+
   // ---------------
   // Specific Core Tokens
   // ---------------

@@ -52,6 +52,8 @@ object atBlueprintjsTableComponents extends atBlueprintjsTableProps {
   @scala.inline
   def HeaderCell: ComponentType[IInternalHeaderCellProps] = js.constructorOf[typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.HeaderCell].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.IInternalHeaderCellProps]]
   @scala.inline
+  def HorizontalCellDivider: ComponentType[js.Object] = typings.atBlueprintjsTable.atBlueprintjsTableMod.^.asInstanceOf[js.Dynamic].selectDynamic("HorizontalCellDivider").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
   def JSONFormat: ComponentType[IJSONFormatProps] = js.constructorOf[typings.atBlueprintjsTable.atBlueprintjsTableMod.JSONFormat].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmCellFormatsJsonFormatMod.IJSONFormatProps]]
   @scala.inline
   def Resizable: ComponentType[IResizableProps] = js.constructorOf[typings.atBlueprintjsTable.libEsmInteractionsResizableMod.Resizable].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmInteractionsResizableMod.IResizableProps]]

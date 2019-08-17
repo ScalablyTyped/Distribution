@@ -1,11 +1,12 @@
 package typings.validatorjs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object validatorjsMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AttributeFormatter = js.Function1[/* attribute */ js.Any, js.Any]
   type AttributeNames = StringDictionary[String]
   type RegisterAsyncCallback = js.Function4[

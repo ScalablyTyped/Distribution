@@ -1507,6 +1507,7 @@ import typings.awsDashSdk.clientsRobomakerMod._RobotSoftwareSuiteVersionType
 import typings.awsDashSdk.clientsRobomakerMod._RobotStatus
 import typings.awsDashSdk.clientsRobomakerMod._SimulationJobErrorCode
 import typings.awsDashSdk.clientsRobomakerMod._SimulationJobStatus
+import typings.awsDashSdk.clientsRobomakerMod._SimulationSoftwareSuiteType
 import typings.awsDashSdk.clientsRoute53Mod._AccountLimitType
 import typings.awsDashSdk.clientsRoute53Mod._ChangeStatus
 import typings.awsDashSdk.clientsRoute53Mod._CloudWatchRegion
@@ -5260,6 +5261,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait BadPermissionsRobotApplication extends _SimulationJobErrorCode
+  
+  @js.native
+  sealed trait BadPermissionsS3Object extends _SimulationJobErrorCode
   
   @js.native
   sealed trait BadPermissionsS3Output extends _SimulationJobErrorCode
@@ -10536,7 +10540,7 @@ object awsDashSdkStrings {
        with _VpcEndpointType
   
   @js.native
-  sealed trait Gazebo extends js.Object
+  sealed trait Gazebo extends _SimulationSoftwareSuiteType
   
   @js.native
   sealed trait GenerateDataKey extends _GrantOperation
@@ -12239,6 +12243,9 @@ object awsDashSdkStrings {
   sealed trait InvalidImageTag extends _ImageFailureCode
   
   @js.native
+  sealed trait InvalidInput extends _SimulationJobErrorCode
+  
+  @js.native
   sealed trait InvalidInstanceIDDOTMalformed extends _UnsuccessfulInstanceCreditSpecificationErrorCode
   
   @js.native
@@ -12260,6 +12267,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait InvalidRequestException
     extends typings.awsDashSdk.clientsIoteventsdataMod._ErrorCode
+  
+  @js.native
+  sealed trait InvalidS3Resource extends _SimulationJobErrorCode
   
   @js.native
   sealed trait InvalidSendingPoolName extends _BulkEmailStatus
@@ -14167,6 +14177,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
        with typings.awsDashSdk.clientsRoute53Mod._Statistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+  
+  @js.native
+  sealed trait MismatchedEtag extends _SimulationJobErrorCode
   
   @js.native
   sealed trait Missed extends _StatusType
@@ -17686,7 +17699,9 @@ object awsDashSdkStrings {
   sealed trait ResourceName extends _LookupAttributeKey
   
   @js.native
-  sealed trait ResourceNotFound extends _DeploymentJobErrorCode
+  sealed trait ResourceNotFound
+    extends _DeploymentJobErrorCode
+       with _SimulationJobErrorCode
   
   @js.native
   sealed trait ResourceNotFoundException
@@ -17799,6 +17814,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait RollingBack extends _EndpointStatus
+  
+  @js.native
+  sealed trait RosbagPlay extends _SimulationSoftwareSuiteType
   
   @js.native
   sealed trait Ruben extends _VoiceId
@@ -22005,6 +22023,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait WrongRegionRobotApplication extends _SimulationJobErrorCode
+  
+  @js.native
+  sealed trait WrongRegionS3Bucket extends _SimulationJobErrorCode
   
   @js.native
   sealed trait WrongRegionS3Output extends _SimulationJobErrorCode
@@ -29646,6 +29667,8 @@ object awsDashSdkStrings {
   @scala.inline
   def BadPermissionsRobotApplication: BadPermissionsRobotApplication = "BadPermissionsRobotApplication".asInstanceOf[BadPermissionsRobotApplication]
   @scala.inline
+  def BadPermissionsS3Object: BadPermissionsS3Object = "BadPermissionsS3Object".asInstanceOf[BadPermissionsS3Object]
+  @scala.inline
   def BadPermissionsS3Output: BadPermissionsS3Output = "BadPermissionsS3Output".asInstanceOf[BadPermissionsS3Output]
   @scala.inline
   def BadPermissionsSimulationApplication: BadPermissionsSimulationApplication = "BadPermissionsSimulationApplication".asInstanceOf[BadPermissionsSimulationApplication]
@@ -32764,6 +32787,8 @@ object awsDashSdkStrings {
   @scala.inline
   def InvalidImageTag: InvalidImageTag = "InvalidImageTag".asInstanceOf[InvalidImageTag]
   @scala.inline
+  def InvalidInput: InvalidInput = "InvalidInput".asInstanceOf[InvalidInput]
+  @scala.inline
   def InvalidInstanceIDDOTMalformed: InvalidInstanceIDDOTMalformed = "InvalidInstanceID.Malformed".asInstanceOf[InvalidInstanceIDDOTMalformed]
   @scala.inline
   def InvalidInstanceIDDOTNotFound: InvalidInstanceIDDOTNotFound = "InvalidInstanceID.NotFound".asInstanceOf[InvalidInstanceIDDOTNotFound]
@@ -32777,6 +32802,8 @@ object awsDashSdkStrings {
   def InvalidParameterValue: InvalidParameterValue = "InvalidParameterValue".asInstanceOf[InvalidParameterValue]
   @scala.inline
   def InvalidRequestException: InvalidRequestException = "InvalidRequestException".asInstanceOf[InvalidRequestException]
+  @scala.inline
+  def InvalidS3Resource: InvalidS3Resource = "InvalidS3Resource".asInstanceOf[InvalidS3Resource]
   @scala.inline
   def InvalidSendingPoolName: InvalidSendingPoolName = "InvalidSendingPoolName".asInstanceOf[InvalidSendingPoolName]
   @scala.inline
@@ -33729,6 +33756,8 @@ object awsDashSdkStrings {
   def Minimize: Minimize = "Minimize".asInstanceOf[Minimize]
   @scala.inline
   def Minimum: Minimum = "Minimum".asInstanceOf[Minimum]
+  @scala.inline
+  def MismatchedEtag: MismatchedEtag = "MismatchedEtag".asInstanceOf[MismatchedEtag]
   @scala.inline
   def Missed: Missed = "Missed".asInstanceOf[Missed]
   @scala.inline
@@ -35481,6 +35510,8 @@ object awsDashSdkStrings {
   def RollbackSuccessful: RollbackSuccessful = "RollbackSuccessful".asInstanceOf[RollbackSuccessful]
   @scala.inline
   def RollingBack: RollingBack = "RollingBack".asInstanceOf[RollingBack]
+  @scala.inline
+  def RosbagPlay: RosbagPlay = "RosbagPlay".asInstanceOf[RosbagPlay]
   @scala.inline
   def Ruben: Ruben = "Ruben".asInstanceOf[Ruben]
   @scala.inline
@@ -37535,6 +37566,8 @@ object awsDashSdkStrings {
   def WriteProvisionedThroughputExceeded: WriteProvisionedThroughputExceeded = "WriteProvisionedThroughputExceeded".asInstanceOf[WriteProvisionedThroughputExceeded]
   @scala.inline
   def WrongRegionRobotApplication: WrongRegionRobotApplication = "WrongRegionRobotApplication".asInstanceOf[WrongRegionRobotApplication]
+  @scala.inline
+  def WrongRegionS3Bucket: WrongRegionS3Bucket = "WrongRegionS3Bucket".asInstanceOf[WrongRegionS3Bucket]
   @scala.inline
   def WrongRegionS3Output: WrongRegionS3Output = "WrongRegionS3Output".asInstanceOf[WrongRegionS3Output]
   @scala.inline

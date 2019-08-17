@@ -1,11 +1,12 @@
 package typings.forgeDashDi
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object forgeDashDiMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Represents arguments to help with resolving a binding.
     */

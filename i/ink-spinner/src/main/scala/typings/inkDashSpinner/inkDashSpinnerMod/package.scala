@@ -1,18 +1,19 @@
 package typings.inkDashSpinner
 
-import typings.chalk.chalkMod.Chalk
-import typings.ink.inkMod.Component
-import typings.inkDashSpinner.ChalkColorModels
-import typings.inkDashSpinner.ChalkKeywordsAndHexes
-import typings.inkDashSpinner.Omit
-import typings.inkDashSpinner.inkDashSpinnerStrings.constructor
-import typings.inkDashSpinner.inkDashSpinnerStrings.enabled
-import typings.inkDashSpinner.inkDashSpinnerStrings.level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inkDashSpinnerMod {
+  import typings.chalk.chalkMod.Chalk
+  import typings.ink.inkMod.Component
+  import typings.inkDashSpinner.ChalkColorModels
+  import typings.inkDashSpinner.ChalkKeywordsAndHexes
+  import typings.inkDashSpinner.Omit
+  import typings.inkDashSpinner.inkDashSpinnerStrings.constructor
+  import typings.inkDashSpinner.inkDashSpinnerStrings.enabled
+  import typings.inkDashSpinner.inkDashSpinnerStrings.level
+
   type BooleansPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? boolean}
     */ typings.inkDashSpinner.inkDashSpinnerStrings.BooleansPartial with js.Any

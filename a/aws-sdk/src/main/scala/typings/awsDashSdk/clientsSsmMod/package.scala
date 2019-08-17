@@ -1,19 +1,20 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.JsonSerDe
-import typings.awsDashSdk.awsDashSdkStrings.Sha256
-import typings.awsDashSdk.awsDashSdkStrings.Share
-import typings.awsDashSdk.awsDashSdkStrings.SourceUrl
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsSsmMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.JsonSerDe
+  import typings.awsDashSdk.awsDashSdkStrings.Sha256
+  import typings.awsDashSdk.awsDashSdkStrings.Share
+  import typings.awsDashSdk.awsDashSdkStrings.SourceUrl
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type Account = java.lang.String
   type AccountId = java.lang.String
   type AccountIdList = js.Array[AccountId]

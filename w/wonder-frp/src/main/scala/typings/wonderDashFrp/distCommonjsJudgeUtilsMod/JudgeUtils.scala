@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("wonder-frp/dist/commonjs/JudgeUtils", "JudgeUtils")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JudgeUtils$ * / any */ @JSImport("wonder-frp/dist/commonjs/JudgeUtils", "JudgeUtils")
 @js.native
 class JudgeUtils () extends js.Object
 

@@ -8,6 +8,7 @@ import typings.atUifabricMergeDashStyles.libIStyleMod.IStyleBaseArray
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IConcatenatedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
+import typings.atUifabricStyling.PartialIIconOptions
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1024`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1366`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1920`
@@ -35,7 +36,6 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.IPartialTheme
 import typings.atUifabricStyling.libInterfacesIThemeMod.ISchemeNames
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricStyling.libStylesGetGlobalClassNamesMod.GlobalClassNames
-import typings.atUifabricStyling.libUtilitiesIconsMod.IIconOptions
 import typings.atUifabricStyling.libUtilitiesIconsMod.IIconRecord
 import typings.atUifabricStyling.libUtilitiesIconsMod.IIconSubset
 import typings.atUifabricUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
@@ -488,10 +488,10 @@ object ^ extends js.Object {
   def registerDefaultFontFaces(baseUrl: String): Unit = js.native
   def registerIconAlias(iconName: String, mappedToName: String): Unit = js.native
   def registerIcons(iconSubset: IIconSubset): Unit = js.native
-  def registerIcons(iconSubset: IIconSubset, options: Partial[IIconOptions]): Unit = js.native
+  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = js.native
   def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
   def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
-  def setIconOptions(options: Partial[IIconOptions]): Unit = js.native
+  def setIconOptions(options: PartialIIconOptions): Unit = js.native
   def unregisterIcons(iconNames: js.Array[String]): Unit = js.native
 }
 

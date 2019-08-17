@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.datatransferNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dndNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
+
   /**
     * This exception is thrown by various methods in the {@link datatransfer.dnd} package.
     *

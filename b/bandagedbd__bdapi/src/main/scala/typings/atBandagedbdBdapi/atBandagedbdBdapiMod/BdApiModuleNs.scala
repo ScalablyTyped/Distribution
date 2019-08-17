@@ -241,6 +241,9 @@ object BdApiModuleNs extends js.Object {
       props: ClassAttributes[T] with P,
       children: ReactNode*
     ): ReactSVGElement = js.native
+    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CElement[P, T] = js.native
+    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], children: ReactNode*): CElement[P, T] = js.native
+    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMElement[P, T] = js.native
     @JSName("createElement")
@@ -258,12 +261,6 @@ object BdApiModuleNs extends js.Object {
       props: ClassAttributes[T] with P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateWildcardC_ComponentClassPComponentState[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateWildcardC_ComponentClassPComponentState[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], children: ReactNode*): CElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateWildcardC_ComponentClassPComponentState[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement = js.native
     @JSName("createElement")
@@ -288,8 +285,7 @@ object BdApiModuleNs extends js.Object {
     // Custom components
     def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = js.native
     def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = js.native
-    @JSName("createFactory")
-    def createFactory_PT_ComponentPComponentStateWildcardC_ComponentClassPComponentState[P, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
+    def createFactory[P, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
     //
     // Top Level API
     // ----------------------------------------------------------------------

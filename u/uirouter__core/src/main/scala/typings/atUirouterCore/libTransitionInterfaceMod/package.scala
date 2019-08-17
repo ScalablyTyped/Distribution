@@ -1,17 +1,18 @@
 package typings.atUirouterCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atUirouterCore.libCommonCommonMod.PredicateBinary
-import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
-import typings.atUirouterCore.libStateStateObjectMod.StateObject
-import typings.atUirouterCore.libStateTargetStateMod.TargetState
-import typings.atUirouterCore.libTransitionHookRegistryMod.RegisteredHook
-import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTransitionInterfaceMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atUirouterCore.libCommonCommonMod.PredicateBinary
+  import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
+  import typings.atUirouterCore.libStateStateObjectMod.StateObject
+  import typings.atUirouterCore.libStateTargetStateMod.TargetState
+  import typings.atUirouterCore.libTransitionHookRegistryMod.RegisteredHook
+  import typings.atUirouterCore.libTransitionTransitionMod.Transition
+
   type HookFn = TransitionHookFn | TransitionStateHookFn | TransitionCreateHookFn
   type HookMatchCriterion = String | IStateMatch | Boolean
   type HookResult = Boolean | TargetState | Unit | (js.Promise[Boolean | TargetState | Unit])

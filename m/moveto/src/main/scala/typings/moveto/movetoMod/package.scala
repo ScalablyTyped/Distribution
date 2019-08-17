@@ -1,12 +1,13 @@
 package typings.moveto
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object movetoMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.HTMLElement
+
   /**
     * Easing Function
     * @param t Current time

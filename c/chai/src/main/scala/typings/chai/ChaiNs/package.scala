@@ -1,13 +1,14 @@
 package typings.chai
 
-import typings.chai.Object
-import typings.std.Date
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChaiNs {
+  import typings.chai.Object
+  import typings.std.Date
+  import typings.std.RegExp
+
   type AssertStatic = Assert
   // chai.Assertion.prototype.assert arguments
   type AssertionArgs = js.Tuple6[

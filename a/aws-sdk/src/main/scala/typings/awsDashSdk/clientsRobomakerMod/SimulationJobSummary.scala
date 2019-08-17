@@ -10,6 +10,10 @@ trait SimulationJobSummary extends js.Object {
     */
   var arn: js.UndefOr[Arn] = js.undefined
   /**
+    * The names of the data sources.
+    */
+  var dataSourceNames: js.UndefOr[DataSourceNames] = js.undefined
+  /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
   var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
@@ -35,6 +39,7 @@ object SimulationJobSummary {
   @scala.inline
   def apply(
     arn: Arn = null,
+    dataSourceNames: DataSourceNames = null,
     lastUpdatedAt: LastUpdatedAt = null,
     name: Name = null,
     robotApplicationNames: RobotApplicationNames = null,
@@ -43,6 +48,7 @@ object SimulationJobSummary {
   ): SimulationJobSummary = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (dataSourceNames != null) __obj.updateDynamic("dataSourceNames")(dataSourceNames)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (name != null) __obj.updateDynamic("name")(name)
     if (robotApplicationNames != null) __obj.updateDynamic("robotApplicationNames")(robotApplicationNames)

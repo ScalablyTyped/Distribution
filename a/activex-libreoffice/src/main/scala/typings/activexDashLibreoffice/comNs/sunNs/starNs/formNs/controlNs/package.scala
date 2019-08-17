@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControl
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlGroupBox
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.submissionNs.XSubmission
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object controlNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControl
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControlGroupBox
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs.submissionNs.XSubmission
+
   /**
     * describes a control which can be used for visually grouping controls
     *

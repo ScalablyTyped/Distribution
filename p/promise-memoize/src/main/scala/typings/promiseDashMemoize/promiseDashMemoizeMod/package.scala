@@ -1,11 +1,12 @@
 package typings.promiseDashMemoize
 
-import typings.promiseDashMemoize.promiseDashMemoizeStrings.json
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promiseDashMemoizeMod {
+  import typings.promiseDashMemoize.promiseDashMemoizeStrings.json
+
   /* Rewritten from type alias, can be one of: 
     - typings.promiseDashMemoize.promiseDashMemoizeStrings.simple
     - typings.promiseDashMemoize.promiseDashMemoizeStrings.json

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait Label extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEventPowered<Label> * / any */ trait Label extends js.Object {
   def close(): Unit
   def onAdd(map: Map): Unit
   def onRemove(map: Map): Unit

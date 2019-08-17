@@ -1,11 +1,12 @@
 package typings.handlebars
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object HandlebarsNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type HelperDeclareSpec = StringDictionary[HelperDelegate]
   type HelperDelegate = js.Function7[
     /* context */ js.UndefOr[js.Any], 

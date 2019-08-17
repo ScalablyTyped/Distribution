@@ -1,16 +1,17 @@
 package typings.atIonicCliDashFramework
 
-import typings.atIonicCliDashFramework.Anon_Aliases
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkNumbers.`true`
-import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMap
-import typings.std.BooleanConstructor
-import typings.std.Required
-import typings.std.StringConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object definitionsMod {
+  import typings.atIonicCliDashFramework.Anon_Aliases
+  import typings.atIonicCliDashFramework.atIonicCliDashFrameworkNumbers.`true`
+  import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMap
+  import typings.std.BooleanConstructor
+  import typings.std.Required
+  import typings.std.StringConstructor
+
   type CommandLineInputs = js.Array[String]
   type CommandMapGetter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = js.Function0[js.Promise[C]]
   type CommandOptionType = StringConstructor | BooleanConstructor

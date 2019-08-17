@@ -1,17 +1,18 @@
 package typings.cryptojs.CryptoJSNs
 
-import typings.std.ArrayBuffer
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libNs {
+  import typings.std.ArrayBuffer
+  import typings.std.Int16Array
+  import typings.std.Int32Array
+  import typings.std.Int8Array
+  import typings.std.Uint16Array
+  import typings.std.Uint32Array
+  import typings.std.Uint8Array
+
   //BlockCipher has interface same as IStreamCipher
   type BlockCipher = IStreamCipher[IBlockCipherCfg]
   type Cipher = ICipher[js.Object]

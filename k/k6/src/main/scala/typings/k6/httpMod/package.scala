@@ -1,13 +1,14 @@
 package typings.k6
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.k6.Anon_Replace
-import typings.k6.k6Mod.bytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object httpMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.k6.Anon_Replace
+  import typings.k6.k6Mod.bytes
+
   type ArrayBatchRequest = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[Params | Null]]
   type ArrayRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[RefinedParams[RT] | Null]]
   type BatchRequest = String | ArrayBatchRequest | ObjectBatchRequest

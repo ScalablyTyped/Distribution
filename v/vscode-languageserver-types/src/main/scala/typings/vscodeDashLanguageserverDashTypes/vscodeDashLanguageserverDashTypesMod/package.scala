@@ -1,11 +1,12 @@
 package typings.vscodeDashLanguageserverDashTypes
 
-import typings.vscodeDashLanguageserverDashTypes.Anon_Language
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashLanguageserverDashTypesMod {
+  import typings.vscodeDashLanguageserverDashTypes.Anon_Language
+
   type CodeActionKind = String
   type Declaration = Location | js.Array[Location]
   type DeclarationLink = LocationLink

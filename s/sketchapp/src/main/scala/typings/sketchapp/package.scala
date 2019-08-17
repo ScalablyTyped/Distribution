@@ -1,11 +1,12 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sketchapp {
+  import org.scalablytyped.runtime.StringDictionary
+
   type SketchMSEncodedBase64BinaryPlist = String
   type SketchMSNSColorArchive = SketchMSKeyValueArchive
   type SketchMSPagesAndArtboards = StringDictionary[SketchMSArtboards]

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "properties-reader"
-version := "0.0-dt-20180214Z-3175cf"
-scalaVersion := "2.12.8"
+version := "0.0-dt-20180214Z-2f169d"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

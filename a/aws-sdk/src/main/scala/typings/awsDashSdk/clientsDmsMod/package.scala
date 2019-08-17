@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.`replication-instance`
-import typings.awsDashSdk.awsDashSdkStrings.beta
-import typings.awsDashSdk.awsDashSdkStrings.json
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDmsMod {
+  import typings.awsDashSdk.awsDashSdkStrings.`replication-instance`
+  import typings.awsDashSdk.awsDashSdkStrings.beta
+  import typings.awsDashSdk.awsDashSdkStrings.json
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AccountQuotaList = js.Array[AccountQuota]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.default

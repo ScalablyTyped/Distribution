@@ -1,17 +1,18 @@
 package typings.atTensorflowTfjsDashCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
-import typings.atTensorflowTfjsDashCore.distTensorMod.Variable
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTensorUnderscoreTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
+  import typings.atTensorflowTfjsDashCore.distTensorMod.Variable
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
+  import typings.std.Float32Array
+  import typings.std.Int32Array
+  import typings.std.Uint8Array
+
   type GradSaveFunc = js.Function1[/* save */ js.Array[Tensor[Rank]], Unit]
   type NamedTensorMap = StringDictionary[Tensor[Rank]]
   type NamedVariableMap = StringDictionary[Variable[Rank]]

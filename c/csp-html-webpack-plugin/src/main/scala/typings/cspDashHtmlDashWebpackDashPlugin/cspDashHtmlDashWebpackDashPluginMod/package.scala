@@ -1,11 +1,12 @@
 package typings.cspDashHtmlDashWebpackDashPlugin
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cspDashHtmlDashWebpackDashPluginMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   // HtmlWebpackPlugin v3 and v4 use different hook interfaces. Figure out
   // which we're using and infer the generic type variable inside.
   type HtmlPluginData = js.Any

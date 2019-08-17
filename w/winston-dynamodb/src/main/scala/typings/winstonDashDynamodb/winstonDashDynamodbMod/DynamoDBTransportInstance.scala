@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransportInstance * / any */ @js.native
 trait DynamoDBTransportInstance
   extends Instantiable0[DynamoDBTransportInstance]
      with Instantiable1[/* options */ DynamoDBTransportOptions, DynamoDBTransportInstance]

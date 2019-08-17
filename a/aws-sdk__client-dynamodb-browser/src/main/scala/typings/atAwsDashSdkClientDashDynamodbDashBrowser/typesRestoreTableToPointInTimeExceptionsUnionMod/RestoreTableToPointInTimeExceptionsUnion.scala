@@ -1,0 +1,17 @@
+package typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesRestoreTableToPointInTimeExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTableNotFoundExceptionMod.TableNotFoundException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesTableInUseExceptionMod.TableInUseException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesLimitExceededExceptionMod.LimitExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesInvalidRestoreTimeExceptionMod.InvalidRestoreTimeException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesPointInTimeRecoveryUnavailableExceptionMod.PointInTimeRecoveryUnavailableException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesInternalServerErrorMod.InternalServerError
+*/
+trait RestoreTableToPointInTimeExceptionsUnion extends js.Object
+

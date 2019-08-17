@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-japgolly-facade"
-version := "201907271058-89a21e"
-scalaVersion := "2.12.8"
+version := "201907271058-7008dd"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.3.1",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
-  "org.scalablytyped" %%% "react-facade" % "201907271058-27a690",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "react-facade" % "201907271058-c7a89c",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

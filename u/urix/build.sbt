@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "urix"
-version := "0.1-dt-20190101Z-d8d3ec"
-scalaVersion := "2.12.8"
+version := "0.1-dt-20190101Z-4211dc"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,0 +1,17 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateCommentExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentNotCreatedByCallerExceptionMod.CommentNotCreatedByCallerException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommentDeletedExceptionMod.CommentDeletedException
+*/
+trait UpdateCommentExceptionsUnion extends js.Object
+

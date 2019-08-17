@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object langNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
+
   /**
     * This exception is thrown to indicate that an array has been accessed with an illegal index.
     *

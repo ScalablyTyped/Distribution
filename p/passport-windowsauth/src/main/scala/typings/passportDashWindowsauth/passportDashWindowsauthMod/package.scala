@@ -1,14 +1,15 @@
 package typings.passportDashWindowsauth
 
-import typings.express.expressMod.Request
-import typings.passport.passportMod.Profile
-import typings.passport.passportMod.Strategy
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashWindowsauthMod {
+  import typings.express.expressMod.Request
+  import typings.passport.passportMod.Profile
+  import typings.passport.passportMod.Strategy
+  import typings.std.Error
+
   type Verified = js.Function3[
     /* err */ js.UndefOr[Error | Null], 
     /* user */ js.UndefOr[js.Object], 

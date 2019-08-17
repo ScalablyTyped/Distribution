@@ -1,12 +1,13 @@
 package typings.pixiDotJs.PIXINs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.pixiDotJs.PIXINs.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object loadersNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.pixiDotJs.PIXINs.Texture
+
   type OnCompleteSignal = js.Function1[/* loader */ Loader, Unit]
   type OnErrorSignal = js.Function2[/* loader */ Loader, /* resource */ Resource, Unit]
   type OnLoadSignal = js.Function2[/* loader */ Loader, /* resource */ Resource, Unit]

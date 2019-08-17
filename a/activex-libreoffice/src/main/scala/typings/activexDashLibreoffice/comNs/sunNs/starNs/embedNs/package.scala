@@ -1,14 +1,15 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object embedNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /** @since LibreOffice 4.1 */
   type EmbeddedObjectCreator = XEmbeddedObjectCreator
   /** This is a service that allows to get access to a file system folder using storage hierarchy. */

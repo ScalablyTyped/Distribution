@@ -1,6 +1,7 @@
 package typings.atJupyterlabImageviewer.libWidgetMod
 
 import typings.atJupyterlabApputils.libPrintingMod.PrintingNs.IPrintable
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.Context
 import typings.atPhosphorMessaging.atPhosphorMessagingMod.Message
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
@@ -15,7 +16,7 @@ class ImageViewer protected ()
   /**
     * Construct a new image widget.
     */
-  def this(context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any) = this()
+  def this(context: Context) = this()
   var _colorinversion: js.Any = js.native
   var _format: js.Any = js.native
   var _img: js.Any = js.native
@@ -42,7 +43,7 @@ class ImageViewer protected ()
   /**
     * The image widget's context.
     */
-  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
+  val context: Context = js.native
   /**
     * A promise that resolves when the image viewer is ready.
     */

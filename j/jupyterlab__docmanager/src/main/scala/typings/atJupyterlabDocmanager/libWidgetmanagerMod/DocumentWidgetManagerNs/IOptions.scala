@@ -1,5 +1,6 @@
 package typings.atJupyterlabDocmanager.libWidgetmanagerMod.DocumentWidgetManagerNs
 
+import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +12,12 @@ trait IOptions extends js.Object {
   /**
     * A document registry instance.
     */
-  var registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
+  var registry: DocumentRegistry
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
-  ): IOptions = {
+  def apply(registry: DocumentRegistry): IOptions = {
     val __obj = js.Dynamic.literal(registry = registry)
   
     __obj.asInstanceOf[IOptions]

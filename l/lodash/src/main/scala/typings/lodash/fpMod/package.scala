@@ -1,68 +1,69 @@
 package typings.lodash
 
-import typings.lodash.lodashMod.AssignCustomizer
-import typings.lodash.lodashMod.Cancelable
-import typings.lodash.lodashMod.CloneDeepWithCustomizer
-import typings.lodash.lodashMod.Comparator
-import typings.lodash.lodashMod.Comparator2
-import typings.lodash.lodashMod.CondPair
-import typings.lodash.lodashMod.ConformsPredicateObject
-import typings.lodash.lodashMod.CurriedFunction1
-import typings.lodash.lodashMod.CurriedFunction2
-import typings.lodash.lodashMod.CurriedFunction3
-import typings.lodash.lodashMod.CurriedFunction4
-import typings.lodash.lodashMod.CurriedFunction5
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.Function0
-import typings.lodash.lodashMod.Function1
-import typings.lodash.lodashMod.Function2
-import typings.lodash.lodashMod.Function3
-import typings.lodash.lodashMod.Function4
-import typings.lodash.lodashMod.IsEqualCustomizer
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.ListOfRecursiveArraysOrValues
-import typings.lodash.lodashMod.LoDashStatic
-import typings.lodash.lodashMod.Many
-import typings.lodash.lodashMod.MemoIteratorCapped
-import typings.lodash.lodashMod.MemoIteratorCappedRight
-import typings.lodash.lodashMod.MemoVoidIteratorCapped
-import typings.lodash.lodashMod.MemoizedFunction
-import typings.lodash.lodashMod.MergeWithCustomizer
-import typings.lodash.lodashMod.NotVoid
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.Omit
-import typings.lodash.lodashMod.PartialDeep
-import typings.lodash.lodashMod.PartialObject
-import typings.lodash.lodashMod.PropertyName
-import typings.lodash.lodashMod.PropertyPath
-import typings.lodash.lodashMod.ReplaceFunction
-import typings.lodash.lodashMod.RightCurriedFunction1
-import typings.lodash.lodashMod.RightCurriedFunction2
-import typings.lodash.lodashMod.RightCurriedFunction3
-import typings.lodash.lodashMod.RightCurriedFunction4
-import typings.lodash.lodashMod.RightCurriedFunction5
-import typings.lodash.lodashMod.SetWithCustomizer
-import typings.lodash.lodashMod.TemplateExecutor
-import typings.lodash.lodashMod.TruncateOptions
-import typings.lodash.lodashMod.ValueIteratee
-import typings.lodash.lodashMod.ValueIterateeCustom
-import typings.lodash.lodashMod.ValueKeyIteratee
-import typings.lodash.lodashMod.isMatchWithCustomizer
-import typings.lodash.lodashNumbers.`0`
-import typings.lodash.lodashNumbers.`false`
-import typings.lodash.lodashNumbers.`true`
-import typings.lodash.lodashStrings.Empty
-import typings.lodash.lodashStrings.asc
-import typings.lodash.lodashStrings.desc
-import typings.std.Error
-import typings.std.Exclude
-import typings.std.Pick
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fpMod {
+  import typings.lodash.lodashMod.AssignCustomizer
+  import typings.lodash.lodashMod.Cancelable
+  import typings.lodash.lodashMod.CloneDeepWithCustomizer
+  import typings.lodash.lodashMod.Comparator
+  import typings.lodash.lodashMod.Comparator2
+  import typings.lodash.lodashMod.CondPair
+  import typings.lodash.lodashMod.ConformsPredicateObject
+  import typings.lodash.lodashMod.CurriedFunction1
+  import typings.lodash.lodashMod.CurriedFunction2
+  import typings.lodash.lodashMod.CurriedFunction3
+  import typings.lodash.lodashMod.CurriedFunction4
+  import typings.lodash.lodashMod.CurriedFunction5
+  import typings.lodash.lodashMod.Dictionary
+  import typings.lodash.lodashMod.Function0
+  import typings.lodash.lodashMod.Function1
+  import typings.lodash.lodashMod.Function2
+  import typings.lodash.lodashMod.Function3
+  import typings.lodash.lodashMod.Function4
+  import typings.lodash.lodashMod.IsEqualCustomizer
+  import typings.lodash.lodashMod.List
+  import typings.lodash.lodashMod.ListOfRecursiveArraysOrValues
+  import typings.lodash.lodashMod.LoDashStatic
+  import typings.lodash.lodashMod.Many
+  import typings.lodash.lodashMod.MemoIteratorCapped
+  import typings.lodash.lodashMod.MemoIteratorCappedRight
+  import typings.lodash.lodashMod.MemoVoidIteratorCapped
+  import typings.lodash.lodashMod.MemoizedFunction
+  import typings.lodash.lodashMod.MergeWithCustomizer
+  import typings.lodash.lodashMod.NotVoid
+  import typings.lodash.lodashMod.NumericDictionary
+  import typings.lodash.lodashMod.Omit
+  import typings.lodash.lodashMod.PartialDeep
+  import typings.lodash.lodashMod.PartialObject
+  import typings.lodash.lodashMod.PropertyName
+  import typings.lodash.lodashMod.PropertyPath
+  import typings.lodash.lodashMod.ReplaceFunction
+  import typings.lodash.lodashMod.RightCurriedFunction1
+  import typings.lodash.lodashMod.RightCurriedFunction2
+  import typings.lodash.lodashMod.RightCurriedFunction3
+  import typings.lodash.lodashMod.RightCurriedFunction4
+  import typings.lodash.lodashMod.RightCurriedFunction5
+  import typings.lodash.lodashMod.SetWithCustomizer
+  import typings.lodash.lodashMod.TemplateExecutor
+  import typings.lodash.lodashMod.TruncateOptions
+  import typings.lodash.lodashMod.ValueIteratee
+  import typings.lodash.lodashMod.ValueIterateeCustom
+  import typings.lodash.lodashMod.ValueKeyIteratee
+  import typings.lodash.lodashMod.isMatchWithCustomizer
+  import typings.lodash.lodashNumbers.`0`
+  import typings.lodash.lodashNumbers.`false`
+  import typings.lodash.lodashNumbers.`true`
+  import typings.lodash.lodashStrings.Empty
+  import typings.lodash.lodashStrings.asc
+  import typings.lodash.lodashStrings.desc
+  import typings.std.Error
+  import typings.std.Exclude
+  import typings.std.Pick
+  import typings.std.RegExp
+
   type LodashAdd1x1 = js.Function1[/* addend */ Double, Double]
   type LodashAdd1x2 = js.Function1[/* augend */ Double, Double]
   type LodashAfter1x1[TFunc] = js.Function1[/* n */ Double, TFunc]

@@ -1,11 +1,12 @@
 package typings
 
-import typings.minecraftDashScriptingDashTypesDashShared.IItemStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object minecraftDashScriptingDashTypesDashServer {
+  import typings.minecraftDashScriptingDashTypesDashShared.IItemStack
+
   type IArmorContainerComponent = js.Array[IItemStack]
   /**
     * This component represents the contents of an entity's hands. The component contains an array of ItemStack JS API Objects representing each slot in the hand container. NOTE: Currently items and containers are read-only. Slot 0 is main-hand Slot 1 is off-hand.

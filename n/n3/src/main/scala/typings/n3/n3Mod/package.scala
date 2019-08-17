@@ -1,12 +1,13 @@
 package typings.n3
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object n3Mod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type ErrorCallback = js.Function2[/* err */ Error, /* result */ js.Any, Unit]
   type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
   type OTerm = typings.rdfDashJs.rdfDashJsMod.Term | String | Null

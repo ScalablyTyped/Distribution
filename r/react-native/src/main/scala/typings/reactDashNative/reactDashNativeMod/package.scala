@@ -1,22 +1,23 @@
 package typings.reactDashNative
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.BaseSyntheticEvent
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ReactElement
-import typings.reactDashNative.AccessibilityChangeEvent
-import typings.reactDashNative.Anon_RegisteredStyleBrand
-import typings.reactDashNative.NodeHandle
-import typings.reactDashNative.reactDashNativeNumbers.`false`
-import typings.reactDashNative.reactDashNativeStrings.`visible-password`
-import typings.reactDashNative.reactDashNativeStrings.hardwareBackPress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.BaseSyntheticEvent
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.ReactElement
+  import typings.reactDashNative.AccessibilityChangeEvent
+  import typings.reactDashNative.Anon_RegisteredStyleBrand
+  import typings.reactDashNative.NodeHandle
+  import typings.reactDashNative.reactDashNativeNumbers.`false`
+  import typings.reactDashNative.reactDashNativeStrings.`visible-password`
+  import typings.reactDashNative.reactDashNativeStrings.hardwareBackPress
+
   type ART = ARTStatic
   type AccessibilityEvent = AccessibilityChangeEvent | AccessibilityAnnoucementFinishedEvent
   type AccessibilityInfo = AccessibilityInfoStatic

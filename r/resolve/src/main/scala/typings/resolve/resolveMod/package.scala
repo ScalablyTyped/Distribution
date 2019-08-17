@@ -1,12 +1,13 @@
 package typings.resolve
 
-import typings.node.Buffer
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object resolveMod {
+  import typings.node.Buffer
+  import typings.std.Error
+
   /**
     * Callback invoked when checking if a file exists
     *

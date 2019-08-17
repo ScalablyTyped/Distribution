@@ -1,18 +1,19 @@
 package typings.griddleDashReact
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.ColumnDefinitionProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowDefinitionProps
-import typings.immutable.immutableMod.List
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object griddleDashReactMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.griddleDashReact.griddleDashReactMod.componentsNs.ColumnDefinitionProps
+  import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowDefinitionProps
+  import typings.immutable.immutableMod.List
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.StatelessComponent
+
   type ColumnRenderProperties = ColumnDefinitionProps
   type Griddle[T] = Component[GriddleProps[T], js.Any, js.Any]
   type GriddleComponent[T] = (ComponentClass[T, ComponentState]) | StatelessComponent[T]

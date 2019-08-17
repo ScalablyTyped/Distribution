@@ -1,11 +1,12 @@
 package typings.hat
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hatMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type CreateRack = js.Function3[
     /* bits */ js.UndefOr[Double], 
     /* base */ js.UndefOr[Double], 

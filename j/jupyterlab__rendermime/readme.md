@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__rendermime
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 JupyterLab - RenderMime

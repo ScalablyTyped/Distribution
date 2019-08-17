@@ -1,12 +1,13 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object igniteDashUi {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Event
+
   type ActionExecutedEvent = js.Function2[/* event */ Event, /* ui */ ActionExecutedEventUIParam, Unit]
   type ActionExecutingEvent = js.Function2[/* event */ Event, /* ui */ ActionExecutingEventUIParam, Unit]
   type ActivatedEvent = js.Function2[/* event */ Event, /* ui */ ActivatedEventUIParam, Unit]

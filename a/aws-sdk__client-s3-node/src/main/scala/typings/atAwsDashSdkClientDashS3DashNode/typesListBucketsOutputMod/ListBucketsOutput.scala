@@ -1,0 +1,38 @@
+package typings.atAwsDashSdkClientDashS3DashNode.typesListBucketsOutputMod
+
+import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreBucketMod._UnmarshalledBucket
+import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreOwnerMod._UnmarshalledOwner
+import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ListBucketsOutput
+  extends MetadataBearer
+     with _OutputTypesUnion {
+  /**
+    * _Buckets shape
+    */
+  var Buckets: js.UndefOr[js.Array[_UnmarshalledBucket]] = js.undefined
+  /**
+    * _Owner shape
+    */
+  var Owner: js.UndefOr[_UnmarshalledOwner] = js.undefined
+}
+
+object ListBucketsOutput {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    Buckets: js.Array[_UnmarshalledBucket] = null,
+    Owner: _UnmarshalledOwner = null
+  ): ListBucketsOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata)
+    if (Buckets != null) __obj.updateDynamic("Buckets")(Buckets)
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    __obj.asInstanceOf[ListBucketsOutput]
+  }
+}
+

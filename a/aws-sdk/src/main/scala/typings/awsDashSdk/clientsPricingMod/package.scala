@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.TERM_MATCH
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsPricingMod {
+  import typings.awsDashSdk.awsDashSdkStrings.TERM_MATCH
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AttributeNameList = js.Array[String]
   type AttributeValueList = js.Array[AttributeValue]
   type BoxedInteger = Double

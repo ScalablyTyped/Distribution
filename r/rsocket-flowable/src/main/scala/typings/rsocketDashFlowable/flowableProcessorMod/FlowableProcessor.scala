@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any
-- Dropped any
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IPublisher<R> * / any
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> * / any
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscription * / any */ @js.native
 trait FlowableProcessor[T, R] extends js.Object {
   def cancel(): Unit = js.native
   def map[S](fn: js.Function1[/* a */ R, S]): js.Any = js.native

@@ -1,12 +1,13 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.auth0DashJs.auth0DashJsMod.Auth0Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object auth0DashLock {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.auth0DashJs.auth0DashJsMod.Auth0Error
+
   type Auth0LockAdditionalSignUpFieldOptionsCallback = js.Function2[
     /* error */ Auth0Error, 
     /* options */ js.Array[Auth0LockAdditionalSignUpFieldOption], 

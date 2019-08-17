@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "jsoneditor-for-react"
-version := "0.0-dt-20180803Z-fb645c"
-scalaVersion := "2.12.8"
+version := "0.0-dt-20180803Z-f9a1a0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20190322Z-5cab35",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-9447df",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "jsoneditor" % "v5.28.2-dt-20190329Z-0c368f",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20190322Z-669cd9",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-c3fb5c",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
+  "org.scalablytyped" %%% "jsoneditor" % "v5.28.2-dt-20190329Z-515aa4",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

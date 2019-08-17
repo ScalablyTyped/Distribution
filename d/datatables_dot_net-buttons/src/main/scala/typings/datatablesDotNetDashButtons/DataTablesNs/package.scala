@@ -1,12 +1,13 @@
 package typings.datatablesDotNetDashButtons
 
-import typings.datatablesDotNet.JQuery
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DataTablesNs {
+  import typings.datatablesDotNet.JQuery
+  import typings.std.Window
+
   type ButtonSelectorTypes = String | Double | JQuery
   /**
     * A function that will be executed upon creation of the buttons.

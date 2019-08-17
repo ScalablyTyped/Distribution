@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-draft-wysiwyg"
-version := "1.12-dt-20190626Z-f3a861"
-scalaVersion := "2.12.8"
+version := "1.12-dt-20190626Z-1a469f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-7e82e4",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190626Z-51bfc3",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-3acc33",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f48590",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-46401f",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190816Z-9e3817",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-cb381f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

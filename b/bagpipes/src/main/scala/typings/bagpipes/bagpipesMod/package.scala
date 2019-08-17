@@ -1,12 +1,13 @@
 package typings.bagpipes
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.bagpipes.Fn_Err
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bagpipesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.bagpipes.Fn_Err
+
   type Fitting = js.Function2[/* context */ FittingContext, /* next */ Fn_Err, Unit]
   type FittingFactory = js.Function2[/* fittingDef */ FittingDef, /* bagpipes */ js.Any, Fitting]
   /* Rewritten from type alias, can be one of: 

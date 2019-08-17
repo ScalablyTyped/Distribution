@@ -1,13 +1,14 @@
 package typings.reactDashNativeDashMaps
 
-import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
-import typings.reactDashNativeDashMaps.Anon_Coordinate
-import typings.reactDashNativeDashMaps.Anon_Markers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashMapsMod {
+  import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
+  import typings.reactDashNativeDashMaps.Anon_Coordinate
+  import typings.reactDashNativeDashMaps.Anon_Markers
+
   // =======================================================================
   //  Overlay
   // =======================================================================

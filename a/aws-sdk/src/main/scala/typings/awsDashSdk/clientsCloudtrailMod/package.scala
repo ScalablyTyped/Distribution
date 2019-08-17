@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudtrailMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type Boolean = scala.Boolean
   type ByteBuffer = Buffer | Uint8Array | Blob | java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

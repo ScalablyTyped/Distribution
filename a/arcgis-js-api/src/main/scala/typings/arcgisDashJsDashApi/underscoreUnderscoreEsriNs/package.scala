@@ -1,14 +1,15 @@
 package typings.arcgisDashJsDashApi
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.arcgisDashJsDashApi.IPromise
-import typings.std.Date
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object underscoreUnderscoreEsriNs {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.arcgisDashJsDashApi.IPromise
+  import typings.std.Date
+  import typings.std.HTMLElement
+
   type AfterInterceptorCallback = js.Function1[/* response */ RequestResponse, Unit]
   type BarCreatedFunction = js.Function2[/* index */ Double, /* element */ js.Any, Unit]
   type BaseDynamicLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewCreateErrorEvent, Unit]

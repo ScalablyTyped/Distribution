@@ -1,93 +1,94 @@
 package typings.hlsDotJs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.hlsDotJs.hlsDotJsStrings.audioTrackLoadError
-import typings.hlsDotJs.hlsDotJsStrings.audioTrackLoadTimeout
-import typings.hlsDotJs.hlsDotJsStrings.bufferAddCodecError
-import typings.hlsDotJs.hlsDotJsStrings.bufferAppendError
-import typings.hlsDotJs.hlsDotJsStrings.bufferAppendingError
-import typings.hlsDotJs.hlsDotJsStrings.bufferFullError
-import typings.hlsDotJs.hlsDotJsStrings.bufferNudgeOnStall
-import typings.hlsDotJs.hlsDotJsStrings.bufferSeekOverHole
-import typings.hlsDotJs.hlsDotJsStrings.bufferStalledError
-import typings.hlsDotJs.hlsDotJsStrings.fragDecryptError
-import typings.hlsDotJs.hlsDotJsStrings.fragLoadError
-import typings.hlsDotJs.hlsDotJsStrings.fragLoadTimeout
-import typings.hlsDotJs.hlsDotJsStrings.fragLoopLoadingError
-import typings.hlsDotJs.hlsDotJsStrings.fragParsingError
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitch
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitched
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitching
-import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTracksUpdated
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferAppended
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferAppending
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferCodecs
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferCreated
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferEOS
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferFlushed
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferFlushing
-import typings.hlsDotJs.hlsDotJsStrings.hlsBufferReset
-import typings.hlsDotJs.hlsDotJsStrings.hlsDestroying
-import typings.hlsDotJs.hlsDotJsStrings.hlsError
-import typings.hlsDotJs.hlsDotJsStrings.hlsFpsDrop
-import typings.hlsDotJs.hlsDotJsStrings.hlsFpsDropLevelCapping
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragBuffered
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragChanged
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragDecrypted
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoadEmergencyAborted
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoadProgress
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsed
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingData
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingInitSegment
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingMetadata
-import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingUserData
-import typings.hlsDotJs.hlsDotJsStrings.hlsInitPtsFound
-import typings.hlsDotJs.hlsDotJsStrings.hlsKeyLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsKeyLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelPtsUpdated
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelSwitched
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelSwitching
-import typings.hlsDotJs.hlsDotJsStrings.hlsLevelUpdated
-import typings.hlsDotJs.hlsDotJsStrings.hlsManifestLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsManifestLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsManifestParsed
-import typings.hlsDotJs.hlsDotJsStrings.hlsMediaAttached
-import typings.hlsDotJs.hlsDotJsStrings.hlsMediaAttaching
-import typings.hlsDotJs.hlsDotJsStrings.hlsMediaDetached
-import typings.hlsDotJs.hlsDotJsStrings.hlsMediaDetaching
-import typings.hlsDotJs.hlsDotJsStrings.hlsStreamStateTransition
-import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleFragProcessed
-import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackLoaded
-import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackLoading
-import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackSwitch
-import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTracksUpdated
-import typings.hlsDotJs.hlsDotJsStrings.interalException
-import typings.hlsDotJs.hlsDotJsStrings.keyLoadError
-import typings.hlsDotJs.hlsDotJsStrings.keyLoadTimeout
-import typings.hlsDotJs.hlsDotJsStrings.keySystemError
-import typings.hlsDotJs.hlsDotJsStrings.levelLoadError
-import typings.hlsDotJs.hlsDotJsStrings.levelLoadTimeout
-import typings.hlsDotJs.hlsDotJsStrings.levelSwitchError
-import typings.hlsDotJs.hlsDotJsStrings.manifestIncompatibleCodecsError
-import typings.hlsDotJs.hlsDotJsStrings.manifestLoadError
-import typings.hlsDotJs.hlsDotJsStrings.manifestLoadTimeout
-import typings.hlsDotJs.hlsDotJsStrings.manifestParsingError
-import typings.hlsDotJs.hlsDotJsStrings.mediaError
-import typings.hlsDotJs.hlsDotJsStrings.muxError
-import typings.hlsDotJs.hlsDotJsStrings.networkError
-import typings.hlsDotJs.hlsDotJsStrings.otherError
-import typings.hlsDotJs.hlsDotJsStrings.remuxAllocError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hlsDotJsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.hlsDotJs.hlsDotJsStrings.audioTrackLoadError
+  import typings.hlsDotJs.hlsDotJsStrings.audioTrackLoadTimeout
+  import typings.hlsDotJs.hlsDotJsStrings.bufferAddCodecError
+  import typings.hlsDotJs.hlsDotJsStrings.bufferAppendError
+  import typings.hlsDotJs.hlsDotJsStrings.bufferAppendingError
+  import typings.hlsDotJs.hlsDotJsStrings.bufferFullError
+  import typings.hlsDotJs.hlsDotJsStrings.bufferNudgeOnStall
+  import typings.hlsDotJs.hlsDotJsStrings.bufferSeekOverHole
+  import typings.hlsDotJs.hlsDotJsStrings.bufferStalledError
+  import typings.hlsDotJs.hlsDotJsStrings.fragDecryptError
+  import typings.hlsDotJs.hlsDotJsStrings.fragLoadError
+  import typings.hlsDotJs.hlsDotJsStrings.fragLoadTimeout
+  import typings.hlsDotJs.hlsDotJsStrings.fragLoopLoadingError
+  import typings.hlsDotJs.hlsDotJsStrings.fragParsingError
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitch
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitched
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTrackSwitching
+  import typings.hlsDotJs.hlsDotJsStrings.hlsAudioTracksUpdated
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferAppended
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferAppending
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferCodecs
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferCreated
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferEOS
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferFlushed
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferFlushing
+  import typings.hlsDotJs.hlsDotJsStrings.hlsBufferReset
+  import typings.hlsDotJs.hlsDotJsStrings.hlsDestroying
+  import typings.hlsDotJs.hlsDotJsStrings.hlsError
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFpsDrop
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFpsDropLevelCapping
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragBuffered
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragChanged
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragDecrypted
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoadEmergencyAborted
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoadProgress
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsed
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingData
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingInitSegment
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingMetadata
+  import typings.hlsDotJs.hlsDotJsStrings.hlsFragParsingUserData
+  import typings.hlsDotJs.hlsDotJsStrings.hlsInitPtsFound
+  import typings.hlsDotJs.hlsDotJsStrings.hlsKeyLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsKeyLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelPtsUpdated
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelSwitched
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelSwitching
+  import typings.hlsDotJs.hlsDotJsStrings.hlsLevelUpdated
+  import typings.hlsDotJs.hlsDotJsStrings.hlsManifestLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsManifestLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsManifestParsed
+  import typings.hlsDotJs.hlsDotJsStrings.hlsMediaAttached
+  import typings.hlsDotJs.hlsDotJsStrings.hlsMediaAttaching
+  import typings.hlsDotJs.hlsDotJsStrings.hlsMediaDetached
+  import typings.hlsDotJs.hlsDotJsStrings.hlsMediaDetaching
+  import typings.hlsDotJs.hlsDotJsStrings.hlsStreamStateTransition
+  import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleFragProcessed
+  import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackLoaded
+  import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackLoading
+  import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTrackSwitch
+  import typings.hlsDotJs.hlsDotJsStrings.hlsSubtitleTracksUpdated
+  import typings.hlsDotJs.hlsDotJsStrings.interalException
+  import typings.hlsDotJs.hlsDotJsStrings.keyLoadError
+  import typings.hlsDotJs.hlsDotJsStrings.keyLoadTimeout
+  import typings.hlsDotJs.hlsDotJsStrings.keySystemError
+  import typings.hlsDotJs.hlsDotJsStrings.levelLoadError
+  import typings.hlsDotJs.hlsDotJsStrings.levelLoadTimeout
+  import typings.hlsDotJs.hlsDotJsStrings.levelSwitchError
+  import typings.hlsDotJs.hlsDotJsStrings.manifestIncompatibleCodecsError
+  import typings.hlsDotJs.hlsDotJsStrings.manifestLoadError
+  import typings.hlsDotJs.hlsDotJsStrings.manifestLoadTimeout
+  import typings.hlsDotJs.hlsDotJsStrings.manifestParsingError
+  import typings.hlsDotJs.hlsDotJsStrings.mediaError
+  import typings.hlsDotJs.hlsDotJsStrings.muxError
+  import typings.hlsDotJs.hlsDotJsStrings.networkError
+  import typings.hlsDotJs.hlsDotJsStrings.otherError
+  import typings.hlsDotJs.hlsDotJsStrings.remuxAllocError
+
   // interface Segment {}
   // interface TimeRange {}
   // interface SubtitleTracks {}

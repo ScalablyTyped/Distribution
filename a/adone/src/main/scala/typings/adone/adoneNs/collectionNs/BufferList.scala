@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * Represents a Node.js Buffer list collector, reader and streamer with callback/promise interface support
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("adone.collection.BufferList")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify std.stream.Duplex * / any */ @JSGlobal("adone.collection.BufferList")
 @js.native
 /**
   * Creates a new buffer list

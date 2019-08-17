@@ -1,14 +1,15 @@
 package typings.workboxDashSw
 
-import typings.std.BodyInit
-import typings.std.ReadableStream
-import typings.std.Response
-import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object workboxDashSwMod {
+  import typings.std.BodyInit
+  import typings.std.ReadableStream
+  import typings.std.Response
+  import typings.std.URL
+
   /**
     * An implementation of a [cache-first]{@link https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network}
     * request strategy.

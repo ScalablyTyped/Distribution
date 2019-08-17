@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.HYPERLEDGER_FABRIC
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsManagedblockchainMod {
+  import typings.awsDashSdk.awsDashSdkStrings.HYPERLEDGER_FABRIC
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AvailabilityZoneString = java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestTokenString = java.lang.String

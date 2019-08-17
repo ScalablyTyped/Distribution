@@ -1,14 +1,15 @@
 package typings.calidation
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.calidation.calidationStrings.register
-import typings.calidation.calidationStrings.unregister
-import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object calidationMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.calidation.calidationStrings.register
+  import typings.calidation.calidationStrings.unregister
+  import typings.std.Omit
+
   type BlacklistValidator = BlacklistValidatorConfig | (js.Function1[/* context */ ValidatorContext, BlacklistValidatorConfig])
   type Dictionary[T] = StringDictionary[T]
   type Dirty = Dictionary[Boolean]

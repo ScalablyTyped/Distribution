@@ -1,0 +1,15 @@
+package typings.officeDashUiDashFabricDashReact
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod {
+  import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPickerProps
+  import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
+  import typings.officeDashUiDashFabricDashReact.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps
+  import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.IExtendedPersonaProps
+
+  type IExtendedPeoplePickerProps = IBaseExtendedPickerProps[IPersonaProps]
+  type IPeoplePickerItemProps = IPickerItemProps[IExtendedPersonaProps]
+}

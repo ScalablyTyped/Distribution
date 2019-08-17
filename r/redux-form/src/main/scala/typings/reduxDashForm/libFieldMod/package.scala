@@ -1,16 +1,17 @@
 package typings.reduxDashForm
 
-import typings.react.reactMod.InputHTMLAttributes
-import typings.react.reactMod.SelectHTMLAttributes
-import typings.react.reactMod.TextareaHTMLAttributes
-import typings.std.HTMLInputElement
-import typings.std.HTMLSelectElement
-import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libFieldMod {
+  import typings.react.reactMod.InputHTMLAttributes
+  import typings.react.reactMod.SelectHTMLAttributes
+  import typings.react.reactMod.TextareaHTMLAttributes
+  import typings.std.HTMLInputElement
+  import typings.std.HTMLSelectElement
+  import typings.std.HTMLTextAreaElement
+
   type EventHandler[Event] = js.Function2[/* event */ Event, /* name */ js.UndefOr[String], Unit]
   type EventWithDataHandler[Event] = js.Function4[
     /* event */ js.UndefOr[Event], 

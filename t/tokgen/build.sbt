@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tokgen"
-version := "1.0-dt-20180509Z-361f20"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180509Z-bc22c4"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

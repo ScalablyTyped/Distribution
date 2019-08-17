@@ -1,13 +1,14 @@
 package typings.atGoogleDashCloudStorage
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcIamMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.std.Error
+
   type GetPolicyCallback = js.Function3[
     /* err */ js.UndefOr[Error | Null], 
     /* acl */ js.UndefOr[Policy], 

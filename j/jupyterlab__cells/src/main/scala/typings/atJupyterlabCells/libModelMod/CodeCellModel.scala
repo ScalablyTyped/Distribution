@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atJupyterlabCells.libModelMod.ICodeCellModel because var conflicts: trusted. Inlined executionCount, outputs */ @JSImport("@jupyterlab/cells/lib/model", "CodeCellModel")
+- typings.atJupyterlabCells.libModelMod.ICodeCellModel because var conflicts: mimeType, mimeTypeChanged, trusted. Inlined executionCount, outputs */ @JSImport("@jupyterlab/cells/lib/model", "CodeCellModel")
 @js.native
 class CodeCellModel protected () extends CellModel {
   /**
@@ -34,9 +34,5 @@ class CodeCellModel protected () extends CellModel {
     */
   @JSName("type")
   val type_CodeCellModel: code = js.native
-  /**
-    * Dispose of the resources held by the model.
-    */
-  def dispose(): Unit = js.native
 }
 

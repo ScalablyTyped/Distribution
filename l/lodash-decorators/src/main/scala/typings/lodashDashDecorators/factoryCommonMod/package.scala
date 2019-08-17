@@ -1,12 +1,13 @@
 package typings.lodashDashDecorators
 
-import typings.std.MethodDecorator
-import typings.std.PropertyDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object factoryCommonMod {
+  import typings.std.MethodDecorator
+  import typings.std.PropertyDecorator
+
   type BiTypedDecorator = js.Function0[LodashDecorator] with LodashDecorator
   type BiTypedDecorator1[T] = (js.Function1[/* arg */ js.UndefOr[T], LodashDecorator]) with LodashDecorator
   type BiTypedDecorator2[T, T2] = (js.Function2[/* arg1 */ js.UndefOr[T], /* arg2 */ js.UndefOr[T2], LodashDecorator]) with LodashDecorator

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "restore-cursor"
-version := "3.1.0-c99313"
-scalaVersion := "2.12.8"
+version := "3.1.0-04d1c3"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

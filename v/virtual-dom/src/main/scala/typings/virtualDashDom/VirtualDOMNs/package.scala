@@ -1,11 +1,12 @@
 package typings.virtualDashDom
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object VirtualDOMNs {
+  import typings.std.Element
+
   type EventHandler = js.Function1[/* repeated */ js.Any, Unit]
   type PatchFn[T /* <: Element */] = js.Function3[
     /* rootNode */ T, 

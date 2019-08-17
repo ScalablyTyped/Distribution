@@ -1,13 +1,14 @@
 package typings.atTestingDashLibraryDom
 
-import typings.atTestingDashLibraryDom.matchesMod.Matcher
-import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object queryDashHelpersMod {
+  import typings.atTestingDashLibraryDom.matchesMod.Matcher
+  import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
+  import typings.std.HTMLElement
+
   type AllByAttribute = js.Function4[
     /* attribute */ String, 
     /* container */ HTMLElement, 

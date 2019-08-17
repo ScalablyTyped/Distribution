@@ -1,0 +1,21 @@
+package typings.atAwsDashSdkEventstreamDashMarshaller.buildMessageMod
+
+import typings.atAwsDashSdkEventstreamDashMarshaller.atAwsDashSdkEventstreamDashMarshallerStrings.boolean
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BooleanHeaderValue extends MessageHeaderValue {
+  var `type`: boolean
+  var value: Boolean
+}
+
+object BooleanHeaderValue {
+  @scala.inline
+  def apply(`type`: boolean, value: Boolean): BooleanHeaderValue = {
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BooleanHeaderValue]
+  }
+}
+

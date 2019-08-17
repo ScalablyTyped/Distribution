@@ -9,6 +9,7 @@ import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ClassType
 import typings.react.reactMod.ClassicComponent
 import typings.react.reactMod.ClassicComponentClass
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DOMAttributes
@@ -65,5 +66,8 @@ trait Fn_A extends js.Object {
     props: ClassAttributes[T] with P,
     children: ReactNode*
   ): ReactSVGElement = js.native
+  def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CElement[P, T] = js.native
+  def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], children: ReactNode*): CElement[P, T] = js.native
+  def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
 }
 

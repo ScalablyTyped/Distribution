@@ -1,14 +1,15 @@
 package typings.atTensorflowTfjsDashConverter
 
-import typings.atTensorflowTfjsDashConverter.distSrcDataTypesMod.NamedTensorsMap
-import typings.atTensorflowTfjsDashConverter.distSrcExecutorExecutionUnderscoreContextMod.ExecutionContext
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distSrcOperationsTypesMod {
+  import typings.atTensorflowTfjsDashConverter.distSrcDataTypesMod.NamedTensorsMap
+  import typings.atTensorflowTfjsDashConverter.distSrcExecutorExecutionUnderscoreContextMod.ExecutionContext
+  import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
+
   type InternalOpExecutor = js.Function3[
     /* node */ Node, 
     /* tensorMap */ NamedTensorsMap, 

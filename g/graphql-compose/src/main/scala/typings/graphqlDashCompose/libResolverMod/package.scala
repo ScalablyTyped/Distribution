@@ -1,15 +1,16 @@
 package typings.graphqlDashCompose
 
-import typings.graphql.typeDefinitionMod.GraphQLFieldConfigArgumentMap
-import typings.graphql.typeDefinitionMod.GraphQLOutputType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeFieldConfigArgumentMap
-import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeOutputType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libResolverMod {
+  import typings.graphql.typeDefinitionMod.GraphQLFieldConfigArgumentMap
+  import typings.graphql.typeDefinitionMod.GraphQLOutputType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeFieldConfigArgumentMap
+  import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeOutputType
+
   type ResolverFilterArgFn[TSource, TContext, TArgs] = js.Function3[
     /* query */ js.Any, 
     /* value */ js.Any, 

@@ -1,12 +1,13 @@
 package typings.node
 
-import typings.node.Error
-import typings.node.vmMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object replMod {
+  import typings.node.Error
+  import typings.node.vmMod.Context
+
   type REPLCommandAction = js.ThisFunction1[/* this */ REPLServer, /* text */ java.lang.String, Unit]
   type REPLEval = js.ThisFunction4[
     /* this */ REPLServer, 

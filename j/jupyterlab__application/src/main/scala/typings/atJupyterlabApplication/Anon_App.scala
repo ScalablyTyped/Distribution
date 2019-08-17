@@ -9,6 +9,8 @@ trait Anon_App extends js.Object {
   val base: String
   val hubHost: js.UndefOr[String] = js.undefined
   val hubPrefix: js.UndefOr[String] = js.undefined
+  val hubServerName: js.UndefOr[String] = js.undefined
+  val hubUser: js.UndefOr[String] = js.undefined
   val notFound: js.UndefOr[String] = js.undefined
   val settings: String
   val static: String
@@ -29,11 +31,15 @@ object Anon_App {
     workspaces: String,
     hubHost: String = null,
     hubPrefix: String = null,
+    hubServerName: String = null,
+    hubUser: String = null,
     notFound: String = null
   ): Anon_App = {
     val __obj = js.Dynamic.literal(app = app, base = base, settings = settings, static = static, themes = themes, tree = tree, workspaces = workspaces)
     if (hubHost != null) __obj.updateDynamic("hubHost")(hubHost)
     if (hubPrefix != null) __obj.updateDynamic("hubPrefix")(hubPrefix)
+    if (hubServerName != null) __obj.updateDynamic("hubServerName")(hubServerName)
+    if (hubUser != null) __obj.updateDynamic("hubUser")(hubUser)
     if (notFound != null) __obj.updateDynamic("notFound")(notFound)
     __obj.asInstanceOf[Anon_App]
   }

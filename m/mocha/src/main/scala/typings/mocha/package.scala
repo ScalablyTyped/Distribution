@@ -1,12 +1,13 @@
 package typings
 
-import typings.mocha.MochaNs.Done
-import typings.mocha.MochaNs.MochaGlobals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mocha {
+  import typings.mocha.MochaNs.Done
+  import typings.mocha.MochaNs.MochaGlobals
+
   // #endregion Browser augmentations
   // #region Deprecations
   /** @deprecated use `Mocha.Done` instead. */

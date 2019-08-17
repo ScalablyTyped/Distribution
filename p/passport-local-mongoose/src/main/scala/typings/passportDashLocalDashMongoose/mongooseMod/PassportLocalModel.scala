@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 // statics
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
 trait PassportLocalModel[T /* <: Document */] extends js.Object {
   def authenticate(): js.Function3[
     /* username */ String, 

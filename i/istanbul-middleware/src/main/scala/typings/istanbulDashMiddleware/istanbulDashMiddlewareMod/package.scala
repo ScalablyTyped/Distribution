@@ -1,11 +1,12 @@
 package typings.istanbulDashMiddleware
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object istanbulDashMiddlewareMod {
+  import typings.express.expressMod.Request
+
   type ClientMatcher = js.Function1[/* req */ Request, Boolean]
   type Matcher = js.Function1[/* file */ String, Boolean]
   type PathTransformer = js.Function1[/* req */ Request, String]

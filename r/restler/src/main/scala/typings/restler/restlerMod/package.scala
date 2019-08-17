@@ -1,11 +1,12 @@
 package typings.restler
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object restlerMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Interface for the header.
     * @interface

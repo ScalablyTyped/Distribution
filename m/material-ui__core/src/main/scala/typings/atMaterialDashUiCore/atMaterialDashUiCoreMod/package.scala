@@ -1,17 +1,18 @@
 package typings.atMaterialDashUiCore
 
-import typings.atMaterialDashUiCore.Anon_ClassName
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.classes
-import typings.atMaterialDashUiCore.stylesWithStylesMod.StyledComponentProps
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atMaterialDashUiCoreMod {
+  import typings.atMaterialDashUiCore.Anon_ClassName
+  import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.classes
+  import typings.atMaterialDashUiCore.stylesWithStylesMod.StyledComponentProps
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.ConsistentWith with js.Any

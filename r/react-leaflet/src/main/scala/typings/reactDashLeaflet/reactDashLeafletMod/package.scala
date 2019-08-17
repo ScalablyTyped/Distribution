@@ -1,19 +1,20 @@
 package typings.reactDashLeaflet
 
-import typings.leaflet.leafletMod.ControlNs.AttributionOptions
-import typings.leaflet.leafletMod.ControlNs.ScaleOptions
-import typings.leaflet.leafletMod.ControlNs.ZoomOptions
-import typings.leaflet.leafletMod.ControlOptions
-import typings.leaflet.leafletMod.Layer
-import typings.react.reactMod.ReactNode
-import typings.reactDashLeaflet.Anon_Leaflet
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashLeafletMod {
+  import typings.leaflet.leafletMod.ControlNs.AttributionOptions
+  import typings.leaflet.leafletMod.ControlNs.ScaleOptions
+  import typings.leaflet.leafletMod.ControlNs.ZoomOptions
+  import typings.leaflet.leafletMod.ControlOptions
+  import typings.leaflet.leafletMod.Layer
+  import typings.react.reactMod.ReactNode
+  import typings.reactDashLeaflet.Anon_Leaflet
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type AddLayerHandler = js.Function3[/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean], Unit]
   type AttributionControlProps = AttributionOptions with MapControlProps
   type Children = ReactNode | js.Array[ReactNode]

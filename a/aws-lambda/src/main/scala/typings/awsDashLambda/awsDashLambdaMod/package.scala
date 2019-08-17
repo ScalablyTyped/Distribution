@@ -1,18 +1,19 @@
 package typings.awsDashLambda
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashLambda.Anon_KeyValue
-import typings.awsDashLambda.Anon_NotPrincipal
-import typings.awsDashLambda.Anon_NotResource
-import typings.awsDashLambda.Anon_OriginalValue
-import typings.awsDashLambda.Anon_Principal
-import typings.awsDashLambda.Anon_Resource
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object awsDashLambdaMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashLambda.Anon_KeyValue
+  import typings.awsDashLambda.Anon_NotPrincipal
+  import typings.awsDashLambda.Anon_NotResource
+  import typings.awsDashLambda.Anon_OriginalValue
+  import typings.awsDashLambda.Anon_Principal
+  import typings.awsDashLambda.Anon_Resource
+  import typings.std.Error
+
   type ALBCallback = Callback[ALBResult]
   type ALBHandler = Handler[ALBEvent, ALBResult]
   type APIGatewayEvent = APIGatewayProxyEvent

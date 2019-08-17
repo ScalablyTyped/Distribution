@@ -1,7 +1,7 @@
 
 # Scala.js typings for antd-mobile
 
-Typings are for version 2.3.0
+Typings are for version 2.3.1
 
 ## Library description:
 基于 React 的移动设计规范实现

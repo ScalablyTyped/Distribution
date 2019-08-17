@@ -1,11 +1,12 @@
 package typings.angularDashSanitize.angularDashSanitizeMod.angularMod.sanitizeNs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object filterNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Finds links in text input and turns them into html links. Supports http/https/ftp/mailto and plain email address links.
     * @see https://code.angularjs.org/1.7.0/docs/api/ngSanitize/filter/linky

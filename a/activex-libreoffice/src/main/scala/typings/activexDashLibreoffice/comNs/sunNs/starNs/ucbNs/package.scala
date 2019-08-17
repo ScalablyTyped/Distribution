@@ -1,16 +1,17 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.activexDashLibreofficeNumbers.`0`
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySetInfo
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.SQLException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.ClassifiedInteractionRequest
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionContinuation
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ucbNs {
+  import typings.activexDashLibreoffice.activexDashLibreofficeNumbers.`0`
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.beansNs.XPropertySetInfo
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.SQLException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.ClassifiedInteractionRequest
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionContinuation
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * This exception is thrown to indicate that an attempt was made to reinitialize an object that can only be initialized once.
     * @author Kai Sommerfeld

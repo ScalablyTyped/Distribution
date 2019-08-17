@@ -17,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait SvgProps extends GProps {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ViewProperties * / any */ trait SvgProps extends GProps {
   var color: js.UndefOr[int32ARGBColor | rgbaArray | String] = js.undefined
   var height: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined

@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonTextarea")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonTextarea * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonTextarea")
 @js.native
 class IonTextarea protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

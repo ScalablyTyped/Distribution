@@ -1,13 +1,14 @@
 package typings.nodeDashPgDashMigrate
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.nodeDashPgDashMigrate.Anon_Name
-import typings.nodeDashPgDashMigrate.Anon_Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashPgDashMigrateMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.nodeDashPgDashMigrate.Anon_Name
+  import typings.nodeDashPgDashMigrate.Anon_Type
+
   type AddOptions = IfNotExistsOption
   type ColumnDefinitions = StringDictionary[ColumnDefinition | String]
   type CreatePolicyOptions = CreatePolicyOptionsEn with PolicyOptions

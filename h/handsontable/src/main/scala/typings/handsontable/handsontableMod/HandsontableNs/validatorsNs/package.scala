@@ -1,12 +1,13 @@
 package typings.handsontable.handsontableMod.HandsontableNs
 
-import typings.handsontable.handsontableMod.HandsontableNs.CellProperties
-import typings.handsontable.handsontableMod.HandsontableNs.CellValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object validatorsNs {
+  import typings.handsontable.handsontableMod.HandsontableNs.CellProperties
+  import typings.handsontable.handsontableMod.HandsontableNs.CellValue
+
   type Autocomplete = Base
   type Base = js.ThisFunction2[
     /* this */ CellProperties, 

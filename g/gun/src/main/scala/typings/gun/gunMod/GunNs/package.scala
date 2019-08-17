@@ -1,22 +1,23 @@
 package typings.gun.gunMod
 
-import typings.gun.Anon_Err
-import typings.gun.Anon_ErrOk
-import typings.gun.Anon_File
-import typings.gun.gunNumbers.`false`
-import typings.gun.gunStrings.epriv
-import typings.gun.gunStrings.epub
-import typings.gun.gunStrings.priv
-import typings.gun.gunStrings.pub
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object GunNs {
+  import typings.gun.Anon_Err
+  import typings.gun.Anon_ErrOk
+  import typings.gun.Anon_File
+  import typings.gun.gunNumbers.`false`
+  import typings.gun.gunStrings.epriv
+  import typings.gun.gunStrings.epub
+  import typings.gun.gunStrings.priv
+  import typings.gun.gunStrings.pub
+  import typings.std.Partial
+  import typings.std.Record
+
   type AccessObject[T] = T | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : object}
+  {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias gun.gun.Gun.AccessObject<T[key]> * / object}
     */ typings.gun.gunStrings.AccessObject with T)
   type AckCallback = js.Function1[/* ack */ Anon_Err | Anon_ErrOk, Unit]
   /** Gun does not accept Array value, so we need extract to make types correct */

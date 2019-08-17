@@ -1,11 +1,12 @@
 package typings.knuddelsDashUserappsDashApi
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object knuddelsDashUserappsDashApiMod {
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double

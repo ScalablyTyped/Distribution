@@ -1,13 +1,14 @@
 package typings.fineDashUploader
 
-import typings.std.Blob
-import typings.std.HTMLElement
-import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCoreMod {
+  import typings.std.Blob
+  import typings.std.HTMLElement
+  import typings.std.XMLHttpRequest
+
   type CustomResizerCallBack = js.Function1[/* resizeInfo */ ResizeInfo, PromiseOptions]
   type FormatFileNameFuncton = js.Function1[/* fileOrBlobName */ String, String]
   type OnAllComplete = js.Function2[/* succeeded */ js.Array[Double], /* failed */ js.Array[Double], Unit]

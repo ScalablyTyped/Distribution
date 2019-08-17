@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vscode-uri"
-version := "1.0.8-410f93"
-scalaVersion := "2.12.8"
+version := "1.0.8-429fc9"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

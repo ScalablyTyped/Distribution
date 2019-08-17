@@ -1,15 +1,16 @@
 package typings.atGrpcProtoDashLoader
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atGrpcProtoDashLoader.Anon_IncludeDirs
-import typings.node.Buffer
-import typings.protobufjs.protobufjsMod.IConversionOptions
-import typings.protobufjs.protobufjsMod.IParseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atGrpcProtoDashLoaderMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atGrpcProtoDashLoader.Anon_IncludeDirs
+  import typings.node.Buffer
+  import typings.protobufjs.protobufjsMod.IConversionOptions
+  import typings.protobufjs.protobufjsMod.IParseOptions
+
   /* Rewritten from type alias, can be one of: 
     - typings.atGrpcProtoDashLoader.atGrpcProtoDashLoaderMod.ServiceDefinition
     - typings.atGrpcProtoDashLoader.atGrpcProtoDashLoaderMod.MessageTypeDefinition

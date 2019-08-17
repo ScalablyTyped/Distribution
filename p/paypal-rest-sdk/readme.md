@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for paypal-rest-sdk 1.7
-// Project: https://github.com/paypal/PayPal-node-SDK
-// Definitions by: Andrew Throener <https://github.com/trainerbill>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-```
 

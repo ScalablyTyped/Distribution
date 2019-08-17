@@ -1,16 +1,17 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumerationAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNamed
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.CaptionShape
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sheetNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumerationAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNamed
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.drawingNs.CaptionShape
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * represents the shape of a cell annotation object attached to a spreadsheet cell.
     * @see com.sun.star.sheet.CellAnnotation

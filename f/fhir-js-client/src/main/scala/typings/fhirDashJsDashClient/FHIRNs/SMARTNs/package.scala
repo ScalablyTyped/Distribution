@@ -1,11 +1,12 @@
 package typings.fhirDashJsDashClient.FHIRNs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SMARTNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Indexable type used to represent Observation FHIR resources indexed based on codes.
     */

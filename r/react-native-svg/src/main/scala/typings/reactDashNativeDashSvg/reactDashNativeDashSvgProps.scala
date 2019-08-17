@@ -11,7 +11,6 @@ trait reactDashNativeDashSvgProps {
   @scala.inline
   def ClipPathProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ClipPathProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ClipPathProps
   type ClipPathProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ClipPathProps
-  type DefsProps = js.Object
   @scala.inline
   def EllipseProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.EllipseProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.EllipseProps
   type EllipseProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.EllipseProps

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait RenderOptions extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends js.Object {
   var locals: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.Any
   ] = js.undefined

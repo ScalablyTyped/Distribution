@@ -58,8 +58,16 @@ object DocumentRegistryNs extends js.Object {
   /**
     * The interface for a document model that represents code.
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait ICodeModel extends IModel
+  trait ICodeModel
+    extends IModel
+       with typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IModel {
+    /**
+      * The underlying `IModelDB` instance in which model
+      * data is stored.
+      */
+    /* InferMemberOverrides */
+    override val modelDB: IModelDB
+  }
   
   /**
     * The document context object.

@@ -1,11 +1,12 @@
 package typings.chromeDashApps.WebViewNs
 
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EventsNs {
+  import typings.std.Event
+
   /**
     * Fired when the guest window attempts to close itself.
     * The following example code navigates the webview to about:blank when the guest attempts to close itself.

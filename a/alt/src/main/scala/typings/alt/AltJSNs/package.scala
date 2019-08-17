@@ -1,12 +1,13 @@
 package typings.alt
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AltJSNs {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.StringDictionary
+
   type ActionHandler = js.Function1[/* repeated */ js.Any, js.Any]
   type Actions = StringDictionary[Action[js.Any]]
   type ActionsClassConstructor = Instantiable1[/* alt */ Alt, ActionsClass]

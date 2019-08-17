@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.COUNT_BY_SEVERITY
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsGuarddutyMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.COUNT_BY_SEVERITY
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AccountDetails = js.Array[AccountDetail]
   type AccountId = java.lang.String
   type AccountIds = js.Array[AccountId]

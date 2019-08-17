@@ -1,19 +1,20 @@
 package typings.oracledb
 
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oracledbMod {
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Record
+
   /**
     * Used with connection.execute() to associate values or JavaScript variables to a statement’s bind variables by name.
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#executebindParams
     */
-  type BindParameters = (Record[String, BindParameter | String | Double | Date | DBObject | Null]) | (js.Array[js.Any | BindParameter])
+  type BindParameters = (Record[String, BindParameter | String | Double | Date | DBObject | Buffer | Null]) | (js.Array[js.Any | BindParameter])
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.node.Buffer

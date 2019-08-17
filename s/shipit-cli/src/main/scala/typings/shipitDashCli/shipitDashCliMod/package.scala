@@ -1,13 +1,14 @@
 package typings.shipitDashCli
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.childUnderscoreProcessMod.ExecOptions
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object shipitDashCliMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.childUnderscoreProcessMod.ExecOptions
+  import typings.std.Error
+
   type EmptyCallback = js.Function0[Unit]
   type LocalOrRemoteCommand = js.Function3[
     /* command */ String, 

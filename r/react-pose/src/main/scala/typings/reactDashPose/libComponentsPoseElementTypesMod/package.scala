@@ -1,14 +1,15 @@
 package typings.reactDashPose
 
-import typings.popmotionDashPose.libTypesMod.DomPopmotionConfig
-import typings.reactDashPose.Anon_Children
-import typings.reactDashPose.Anon_ElementType
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libComponentsPoseElementTypesMod {
+  import typings.popmotionDashPose.libTypesMod.DomPopmotionConfig
+  import typings.reactDashPose.Anon_Children
+  import typings.reactDashPose.Anon_ElementType
+  import typings.std.Element
+
   type ConfigFactory = js.Function1[/* props */ PoseElementProps, DomPopmotionConfig]
   type CurrentPose = String | js.Array[String]
   type PoseElementInternalProps = PoseElementProps with Anon_ElementType

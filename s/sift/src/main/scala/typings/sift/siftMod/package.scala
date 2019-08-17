@@ -1,11 +1,12 @@
 package typings.sift
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object siftMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ElemMatch[T /* <: StringDictionary[js.Array[_]] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sift.sift.SiftQuery<T[P]>}
     */ typings.sift.siftStrings.ElemMatch with T

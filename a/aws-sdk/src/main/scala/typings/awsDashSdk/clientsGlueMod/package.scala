@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.EQUALS
-import typings.awsDashSdk.awsDashSdkStrings.FIND_MATCHES
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsGlueMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.EQUALS
+  import typings.awsDashSdk.awsDashSdkStrings.FIND_MATCHES
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ActionList = js.Array[Action]
   type AttemptCount = Double
   type BatchDeletePartitionValueList = js.Array[PartitionValueList]

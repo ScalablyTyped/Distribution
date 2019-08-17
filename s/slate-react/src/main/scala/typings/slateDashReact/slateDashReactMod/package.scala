@@ -1,12 +1,13 @@
 package typings.slateDashReact
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object slateDashReactMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Event
+
   type EditorProps = BasicEditorProps with Plugin
   type EventHook = js.Function3[
     /* event */ Event, 

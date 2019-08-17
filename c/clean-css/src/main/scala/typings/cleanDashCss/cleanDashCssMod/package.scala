@@ -1,15 +1,16 @@
 package typings.cleanDashCss
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.cleanDashCss.Anon_False
-import typings.cleanDashCss.Anon_ReturnPromise
-import typings.cleanDashCss.Anon_SourceMap
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cleanDashCssMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.cleanDashCss.Anon_False
+  import typings.cleanDashCss.Anon_ReturnPromise
+  import typings.cleanDashCss.Anon_SourceMap
+  import typings.node.Buffer
+
   /**
     * Callback type when fetch is used
     */

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "catbox-memory"
-version := "4.0-dt-20181116Z-e65409"
-scalaVersion := "2.12.8"
+version := "4.0-dt-20181116Z-91f6d5"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-07848f",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-2cac09",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

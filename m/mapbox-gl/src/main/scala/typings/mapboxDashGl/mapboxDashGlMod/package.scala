@@ -1,21 +1,22 @@
 package typings.mapboxDashGl
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.geojson.geojsonMod.Feature
-import typings.geojson.geojsonMod.GeoJsonProperties
-import typings.geojson.geojsonMod.Geometry
-import typings.mapboxDashGl.Anon_Center
-import typings.mapboxDashGl.Anon_Features
-import typings.mapboxDashGl.Anon_Key
-import typings.mapboxDashGl.mapboxDashGlStrings.bearing
-import typings.mapboxDashGl.mapboxDashGlStrings.zoom
-import typings.std.Pick
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapboxDashGlMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.geojson.geojsonMod.Feature
+  import typings.geojson.geojsonMod.GeoJsonProperties
+  import typings.geojson.geojsonMod.Geometry
+  import typings.mapboxDashGl.Anon_Center
+  import typings.mapboxDashGl.Anon_Features
+  import typings.mapboxDashGl.Anon_Key
+  import typings.mapboxDashGl.mapboxDashGlStrings.bearing
+  import typings.mapboxDashGl.mapboxDashGlStrings.zoom
+  import typings.std.Pick
+  import typings.std.Required
+
   type CameraForBoundsResult = (Required[Pick[CameraOptions, zoom | bearing]]) with Anon_Center
   type EventData = StringDictionary[js.Any]
   type Expression = js.Array[ExpressionName | js.Any]

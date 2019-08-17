@@ -1,13 +1,14 @@
 package typings.pouchdbDashUpsert
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.Document
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.IdMeta
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PouchDBNs {
+  import typings.pouchdbDashCore.PouchDBNs.CoreNs.Document
+  import typings.pouchdbDashCore.PouchDBNs.CoreNs.IdMeta
+  import typings.std.Partial
+
   /* Rewritten from type alias, can be one of: 
     - typings.pouchdbDashUpsert.pouchdbDashUpsertStrings.Empty
     - typings.pouchdbDashUpsert.pouchdbDashUpsertNumbers.`0`

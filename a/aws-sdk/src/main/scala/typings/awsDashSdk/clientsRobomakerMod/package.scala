@@ -1,16 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.Gazebo
-import typings.awsDashSdk.awsDashSdkStrings.OGRE
-import typings.awsDashSdk.awsDashSdkStrings.ROS
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRobomakerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.OGRE
+  import typings.awsDashSdk.awsDashSdkStrings.ROS
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.X86_64
     - typings.awsDashSdk.awsDashSdkStrings.ARM64
@@ -21,10 +21,14 @@ package object clientsRobomakerMod {
   type Arn = String
   type Arns = js.Array[Arn]
   type Boolean = scala.Boolean
+  type BoxedBoolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = String
   type Command = String
   type CreatedAt = Date
+  type DataSourceConfigs = js.Array[DataSourceConfig]
+  type DataSourceNames = js.Array[Name]
+  type DataSources = js.Array[DataSource]
   type DeploymentApplicationConfigs = js.Array[DeploymentApplicationConfig]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ResourceNotFound
@@ -58,6 +62,7 @@ package object clientsRobomakerMod {
     - java.lang.String
   */
   type DeploymentStatus = _DeploymentStatus | String
+  type DeploymentTimeout = Double
   type DeploymentVersion = String
   type EnvironmentVariableKey = String
   type EnvironmentVariableMap = StringDictionary[EnvironmentVariableValue]
@@ -124,6 +129,8 @@ package object clientsRobomakerMod {
   type S3Bucket = String
   type S3Etag = String
   type S3Key = String
+  type S3KeyOutputs = js.Array[S3KeyOutput]
+  type S3Keys = js.Array[S3Key]
   type SecurityGroups = js.Array[NonEmptyString]
   type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[Name]
@@ -134,6 +141,7 @@ package object clientsRobomakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.SimulationApplicationCrash
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsRobotApplication
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsSimulationApplication
+    - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsS3Object
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsS3Output
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsCloudwatchLogs
     - typings.awsDashSdk.awsDashSdkStrings.SubnetIpLimitExceeded
@@ -141,8 +149,13 @@ package object clientsRobomakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionsUserCredentials
     - typings.awsDashSdk.awsDashSdkStrings.InvalidBundleRobotApplication
     - typings.awsDashSdk.awsDashSdkStrings.InvalidBundleSimulationApplication
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidS3Resource
+    - typings.awsDashSdk.awsDashSdkStrings.MismatchedEtag
     - typings.awsDashSdk.awsDashSdkStrings.RobotApplicationVersionMismatchedEtag
     - typings.awsDashSdk.awsDashSdkStrings.SimulationApplicationVersionMismatchedEtag
+    - typings.awsDashSdk.awsDashSdkStrings.ResourceNotFound
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidInput
+    - typings.awsDashSdk.awsDashSdkStrings.WrongRegionS3Bucket
     - typings.awsDashSdk.awsDashSdkStrings.WrongRegionS3Output
     - typings.awsDashSdk.awsDashSdkStrings.WrongRegionRobotApplication
     - typings.awsDashSdk.awsDashSdkStrings.WrongRegionSimulationApplication
@@ -165,7 +178,12 @@ package object clientsRobomakerMod {
   type SimulationJobStatus = _SimulationJobStatus | String
   type SimulationJobSummaries = js.Array[SimulationJobSummary]
   type SimulationJobs = js.Array[SimulationJob]
-  type SimulationSoftwareSuiteType = Gazebo | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Gazebo
+    - typings.awsDashSdk.awsDashSdkStrings.RosbagPlay
+    - java.lang.String
+  */
+  type SimulationSoftwareSuiteType = _SimulationSoftwareSuiteType | String
   type SimulationSoftwareSuiteVersionType = String
   type SimulationTimeMillis = Double
   type SourceConfigs = js.Array[SourceConfig]

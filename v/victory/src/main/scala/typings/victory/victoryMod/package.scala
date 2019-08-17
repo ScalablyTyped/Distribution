@@ -1,16 +1,17 @@
 package typings.victory
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Exclude
-import typings.std.Pick
-import typings.victory.Anon_XYNumber
-import typings.victory.Fn_DataAnyArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object victoryMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Date
+  import typings.std.Exclude
+  import typings.std.Pick
+  import typings.victory.Anon_XYNumber
+  import typings.victory.Fn_DataAnyArray
+
   type AnimationData = AnimationStyle | js.Array[AnimationStyle]
   type AnimationStyle = StringDictionary[String | Double]
   /**

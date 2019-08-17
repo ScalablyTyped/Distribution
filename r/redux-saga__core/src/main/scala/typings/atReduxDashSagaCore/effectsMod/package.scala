@@ -1,34 +1,35 @@
 package typings.atReduxDashSagaCore
 
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreMod.FlushableChannel
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.ACTION_CHANNEL
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.ALL
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CALL
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CANCEL
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CANCELLED
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CPS
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.FLUSH
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.FORK
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.GET_CONTEXT
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.JOIN
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.PUT
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.RACE
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.SELECT
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.SET_CONTEXT
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.TAKE
-import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.`@@redux-saga/SELF_CANCELLATION`
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.CombinatorEffect
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.CombinatorEffectDescriptor
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.SimpleEffect
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.Task
-import typings.redux.reduxMod.Action
-import typings.std.Parameters
-import typings.typescriptDashTuple.libMod.Reverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object effectsMod {
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreMod.FlushableChannel
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.ACTION_CHANNEL
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.ALL
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CALL
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CANCEL
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CANCELLED
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.CPS
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.FLUSH
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.FORK
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.GET_CONTEXT
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.JOIN
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.PUT
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.RACE
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.SELECT
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.SET_CONTEXT
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.TAKE
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.`@@redux-saga/SELF_CANCELLATION`
+  import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.CombinatorEffect
+  import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.CombinatorEffectDescriptor
+  import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.SimpleEffect
+  import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.Task
+  import typings.redux.reduxMod.Action
+  import typings.std.Parameters
+  import typings.typescriptDashTuple.libMod.Reverse
+
   type ActionChannelEffect = SimpleEffect[ACTION_CHANNEL, ActionChannelEffectDescriptor]
   type AllButLast[L /* <: js.Array[_] */] = Reverse[Tail[Reverse[L]]]
   type AllEffect[T] = CombinatorEffect[ALL, T]

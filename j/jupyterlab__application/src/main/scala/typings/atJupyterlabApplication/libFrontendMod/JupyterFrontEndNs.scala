@@ -4,6 +4,8 @@ import typings.atJupyterlabApplication.Anon_App
 import typings.atJupyterlabApplication.Anon_AppSettings
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
+import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IOpenOptions
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
@@ -27,9 +29,7 @@ object JupyterFrontEndNs extends js.Object {
     /**
       * The document registry instance used by the application.
       */
-    var docRegistry: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
-      ] = js.undefined
+    var docRegistry: js.UndefOr[DocumentRegistry] = js.undefined
     /**
       * Promise that resolves when state is first restored, returning layout
       * description.
@@ -100,11 +100,7 @@ object JupyterFrontEndNs extends js.Object {
       */
     def add(widget: Widget): Unit = js.native
     def add(widget: Widget, area: String): Unit = js.native
-    def add(
-      widget: Widget,
-      area: String,
-      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
-    ): Unit = js.native
+    def add(widget: Widget, area: String, options: IOpenOptions): Unit = js.native
     /**
       * Returns an iterator for the widgets inside the application shell.
       *

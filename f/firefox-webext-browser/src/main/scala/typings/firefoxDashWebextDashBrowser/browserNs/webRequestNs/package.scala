@@ -1,14 +1,15 @@
 package typings.firefoxDashWebextDashBrowser.browserNs
 
-import typings.firefoxDashWebextDashBrowser.Anon_BinaryValue
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.cipher
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.requestHeaders
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.responseHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webRequestNs {
+  import typings.firefoxDashWebextDashBrowser.Anon_BinaryValue
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.cipher
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.requestHeaders
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.responseHeaders
+
   /**
     * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either
     * `value` or `binaryValue`.

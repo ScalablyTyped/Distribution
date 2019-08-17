@@ -1,13 +1,14 @@
 package typings.flatpickr
 
-import typings.flatpickr.distTypesInstanceMod.Instance
-import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesOptionsMod {
+  import typings.flatpickr.distTypesInstanceMod.Instance
+  import typings.std.Date
+  import typings.std.Partial
+
   type DateLimit[D] = D | DateRangeLimit[D] | (js.Function1[/* date */ Date, Boolean])
   type DateOption = Date | String | Double
   type Hook = js.Function4[

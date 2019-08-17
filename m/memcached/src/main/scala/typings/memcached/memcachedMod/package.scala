@@ -1,11 +1,12 @@
 package typings.memcached
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object memcachedMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Declaration for single server or Memcached cluster location
     *

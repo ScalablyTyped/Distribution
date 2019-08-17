@@ -1,11 +1,12 @@
 package typings.reactDashSelect
 
-import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcAsyncMod {
+  import typings.react.reactMod.ComponentType
+
   type AsyncComponentProps[T /* <: ComponentType[_] */] = SelectComponentProps[T] with AsyncProps[_]
   type ClassProps[T] = js.Any
   type FunctionProps[T] = js.Any

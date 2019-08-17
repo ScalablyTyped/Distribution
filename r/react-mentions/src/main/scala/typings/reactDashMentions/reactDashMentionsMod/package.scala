@@ -1,13 +1,14 @@
 package typings.reactDashMentions
 
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.reactDashMentions.Anon_Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashMentionsMod {
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.reactDashMentions.Anon_Target
+
   type DataFunc = js.Function2[
     /* query */ String, 
     /* callback */ js.Function1[/* data */ js.Array[SuggestionDataItem], Unit], 

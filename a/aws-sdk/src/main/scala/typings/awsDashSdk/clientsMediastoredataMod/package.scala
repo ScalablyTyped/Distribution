@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMediastoredataMod {
+  import typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ContentRangePattern = String
   type ContentType = String

@@ -1,0 +1,97 @@
+package typings.atAwsDashSdkClientDashKmsDashNode.typesKMSInternalExceptionMod
+
+import typings.atAwsDashSdkClientDashKmsDashNode.typesCancelKeyDeletionExceptionsUnionMod.CancelKeyDeletionExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesCreateAliasExceptionsUnionMod.CreateAliasExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesCreateGrantExceptionsUnionMod.CreateGrantExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesCreateKeyExceptionsUnionMod.CreateKeyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDecryptExceptionsUnionMod.DecryptExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDeleteAliasExceptionsUnionMod.DeleteAliasExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDeleteImportedKeyMaterialExceptionsUnionMod.DeleteImportedKeyMaterialExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDescribeKeyExceptionsUnionMod.DescribeKeyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDisableKeyExceptionsUnionMod.DisableKeyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesDisableKeyRotationExceptionsUnionMod.DisableKeyRotationExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesEnableKeyExceptionsUnionMod.EnableKeyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesEnableKeyRotationExceptionsUnionMod.EnableKeyRotationExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesEncryptExceptionsUnionMod.EncryptExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGenerateDataKeyExceptionsUnionMod.GenerateDataKeyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGenerateDataKeyWithoutPlaintextExceptionsUnionMod.GenerateDataKeyWithoutPlaintextExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGenerateRandomExceptionsUnionMod.GenerateRandomExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGetKeyPolicyExceptionsUnionMod.GetKeyPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGetKeyRotationStatusExceptionsUnionMod.GetKeyRotationStatusExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesGetParametersForImportExceptionsUnionMod.GetParametersForImportExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesImportKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListAliasesExceptionsUnionMod.ListAliasesExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListGrantsExceptionsUnionMod.ListGrantsExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListKeyPoliciesExceptionsUnionMod.ListKeyPoliciesExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListKeysExceptionsUnionMod.ListKeysExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListResourceTagsExceptionsUnionMod.ListResourceTagsExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesListRetirableGrantsExceptionsUnionMod.ListRetirableGrantsExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesPutKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesReEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesRetireGrantExceptionsUnionMod.RetireGrantExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesRevokeGrantExceptionsUnionMod.RevokeGrantExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesScheduleKeyDeletionExceptionsUnionMod.ScheduleKeyDeletionExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesTagResourceExceptionsUnionMod.TagResourceExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesUntagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesUpdateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
+import typings.atAwsDashSdkClientDashKmsDashNode.typesUpdateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait KMSInternalException
+  extends ServiceException[_KMSInternalExceptionDetails]
+     with CancelKeyDeletionExceptionsUnion
+     with CreateAliasExceptionsUnion
+     with CreateGrantExceptionsUnion
+     with CreateKeyExceptionsUnion
+     with DecryptExceptionsUnion
+     with DeleteAliasExceptionsUnion
+     with DeleteImportedKeyMaterialExceptionsUnion
+     with DescribeKeyExceptionsUnion
+     with DisableKeyExceptionsUnion
+     with DisableKeyRotationExceptionsUnion
+     with EnableKeyExceptionsUnion
+     with EnableKeyRotationExceptionsUnion
+     with EncryptExceptionsUnion
+     with GenerateDataKeyExceptionsUnion
+     with GenerateDataKeyWithoutPlaintextExceptionsUnion
+     with GenerateRandomExceptionsUnion
+     with GetKeyPolicyExceptionsUnion
+     with GetKeyRotationStatusExceptionsUnion
+     with GetParametersForImportExceptionsUnion
+     with ImportKeyMaterialExceptionsUnion
+     with ListAliasesExceptionsUnion
+     with ListGrantsExceptionsUnion
+     with ListKeyPoliciesExceptionsUnion
+     with ListKeysExceptionsUnion
+     with ListResourceTagsExceptionsUnion
+     with ListRetirableGrantsExceptionsUnion
+     with PutKeyPolicyExceptionsUnion
+     with ReEncryptExceptionsUnion
+     with RetireGrantExceptionsUnion
+     with RevokeGrantExceptionsUnion
+     with ScheduleKeyDeletionExceptionsUnion
+     with TagResourceExceptionsUnion
+     with UntagResourceExceptionsUnion
+     with UpdateAliasExceptionsUnion
+     with UpdateKeyDescriptionExceptionsUnion {
+  @JSName("name")
+  var name_KMSInternalException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.KMSInternalException
+}
+
+object KMSInternalException {
+  @scala.inline
+  def apply(
+    details: _KMSInternalExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.KMSInternalException,
+    stack: String = null
+  ): KMSInternalException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[KMSInternalException]
+  }
+}
+

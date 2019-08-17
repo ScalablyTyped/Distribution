@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object loginDashWithDashAmazonDashSdkDashBrowser {
+  import typings.std.Partial
+
   type AuthorizeScope = AuthorizationScopeOptions | js.Array[AuthorizationScopeOptions]
   /**
     * Type of callback invoked after `authorize` completes.

@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object notificationsNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type NotificationButtonClickedEvent = Event[js.Function2[/* notificationId */ String, /* buttonIndex */ Double, Unit]]
   type NotificationClickedEvent = Event[js.Function1[/* notificationId */ String, Unit]]
   type NotificationClosedEvent = Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]

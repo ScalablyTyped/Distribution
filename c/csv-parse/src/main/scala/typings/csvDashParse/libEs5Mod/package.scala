@@ -1,12 +1,13 @@
 package typings.csvDashParse
 
-import typings.std.Date
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEs5Mod {
+  import typings.std.Date
+  import typings.std.Error
+
   type Callback = js.Function3[/* err */ js.UndefOr[Error], /* records */ js.UndefOr[js.Any], /* info */ Info, Unit]
   type CastingDateFunction = js.Function2[/* value */ String, /* context */ CastingContext, Date]
   type CastingFunction = js.Function2[/* value */ String, /* context */ CastingContext, js.Any]

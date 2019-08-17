@@ -1,15 +1,16 @@
 package typings.senchaUnderscoreTouch
 
-import typings.senchaUnderscoreTouch.ExtNs.dataNs.IConnection
-import typings.senchaUnderscoreTouch.ExtNs.domNs.IQuery
-import typings.senchaUnderscoreTouch.ExtNs.envNs.IOS
-import typings.senchaUnderscoreTouch.ExtNs.utilNs.ICollection
-import typings.senchaUnderscoreTouch.ExtNs.viewportNs.IDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ExtNs {
+  import typings.senchaUnderscoreTouch.ExtNs.dataNs.IConnection
+  import typings.senchaUnderscoreTouch.ExtNs.domNs.IQuery
+  import typings.senchaUnderscoreTouch.ExtNs.envNs.IOS
+  import typings.senchaUnderscoreTouch.ExtNs.utilNs.ICollection
+  import typings.senchaUnderscoreTouch.ExtNs.viewportNs.IDefault
+
   type IAbstractComponent = IEvented
   type IAbstractPlugin = IBase
   type IAjax = IConnection

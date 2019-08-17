@@ -1,16 +1,17 @@
 package typings.postcss
 
-import typings.postcss.Anon_ToString
-import typings.postcss.postcssStrings.end
-import typings.postcss.postcssStrings.from
-import typings.postcss.postcssStrings.map
-import typings.postcss.postcssStrings.start
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object postcssMod {
+  import typings.postcss.Anon_ToString
+  import typings.postcss.postcssStrings.end
+  import typings.postcss.postcssStrings.from
+  import typings.postcss.postcssStrings.map
+  import typings.postcss.postcssStrings.start
+  import typings.std.Pick
+
   /* Rewritten from type alias, can be one of: 
     - typings.postcss.postcssMod.Plugin[js.Any]
     - typings.postcss.postcssMod.Transformer

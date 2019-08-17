@@ -1,19 +1,23 @@
 package typings.atJupyterlabHtmlviewer.atJupyterlabHtmlviewerMod
 
+import typings.atJupyterlabApputils.atJupyterlabApputilsMod.IFrame
+import typings.atJupyterlabDocregistry.libDefaultMod.DocumentWidgetNs.IOptionsOptionalContent
+import typings.atJupyterlabDocregistry.libMod.DocumentWidget
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
+import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any
-- Dropped any */ @JSImport("@jupyterlab/htmlviewer", "HTMLViewer")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, id, layout, parent. Inlined  */ @JSImport("@jupyterlab/htmlviewer", "HTMLViewer")
 @js.native
-class HTMLViewer protected () extends js.Object {
+class HTMLViewer protected () extends DocumentWidget[IFrame, IModel] {
   /**
     * Create a new widget for rendering HTML.
     */
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget.IOptionsOptionalContent */ js.Any) = this()
+  def this(options: IOptionsOptionalContent[Widget, IModel]) = this()
   var _monitor: js.Any = js.native
   var _objectUrl: js.Any = js.native
   var _parser: js.Any = js.native
@@ -37,10 +41,6 @@ class HTMLViewer protected () extends js.Object {
     * Emitted when the trust state of the document changes.
     */
   val trustedChanged: ISignal[this.type, Boolean] = js.native
-  /**
-    * Dispose of resources held by the html viewer.
-    */
-  def dispose(): Unit = js.native
   /**
     * Handle and update request.
     */

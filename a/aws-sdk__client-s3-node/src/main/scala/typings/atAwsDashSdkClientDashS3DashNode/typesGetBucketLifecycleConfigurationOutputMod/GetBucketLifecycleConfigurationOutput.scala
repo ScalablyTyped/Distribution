@@ -1,0 +1,28 @@
+package typings.atAwsDashSdkClientDashS3DashNode.typesGetBucketLifecycleConfigurationOutputMod
+
+import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreLifecycleRuleMod._UnmarshalledLifecycleRule
+import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetBucketLifecycleConfigurationOutput
+  extends MetadataBearer
+     with _OutputTypesUnion {
+  /**
+    * _LifecycleRules shape
+    */
+  var Rules: js.UndefOr[js.Array[_UnmarshalledLifecycleRule]] = js.undefined
+}
+
+object GetBucketLifecycleConfigurationOutput {
+  @scala.inline
+  def apply($metadata: ResponseMetadata, Rules: js.Array[_UnmarshalledLifecycleRule] = null): GetBucketLifecycleConfigurationOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata)
+    if (Rules != null) __obj.updateDynamic("Rules")(Rules)
+    __obj.asInstanceOf[GetBucketLifecycleConfigurationOutput]
+  }
+}
+

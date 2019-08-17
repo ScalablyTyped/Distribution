@@ -1,11 +1,12 @@
 package typings.nodeDashZendesk.nodeDashZendeskMod
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.ZendeskID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object UsersNs {
+  import typings.nodeDashZendesk.nodeDashZendeskMod.ZendeskID
+
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - js.Array[typings.nodeDashZendesk.nodeDashZendeskMod.ZendeskID]

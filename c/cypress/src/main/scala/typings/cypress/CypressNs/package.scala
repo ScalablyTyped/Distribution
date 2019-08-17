@@ -1,14 +1,15 @@
 package typings.cypress
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.typesSinonMod.SinonSpy
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CypressNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.cypress.typesSinonMod.SinonSpy
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type Agent[T /* <: SinonSpy */] = SinonSpyAgent[T] with T
   // Diff taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-311923766
   type Diff[T /* <: String */, U /* <: String */] = /* import warning: ImportType.apply Failed type conversion: {[ P in T ]: P} & {[ P in U ]: never} & {[x: string] : never}[T] */ js.Any

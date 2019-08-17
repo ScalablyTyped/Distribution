@@ -1,11 +1,12 @@
 package typings.braintree
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object braintreeMod {
+  import typings.std.Error
+
   type AuthenticationError = Error
   type AuthorizationError = Error
   type DownForMaintenanceError = Error

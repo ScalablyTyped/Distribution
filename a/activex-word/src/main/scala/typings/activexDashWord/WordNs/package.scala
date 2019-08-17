@@ -1,13 +1,14 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.activexDashWordNumbers.`-999999`
-import typings.activexDashWord.activexDashWordNumbers.`0`
-import typings.activexDashWord.activexDashWordNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WordNs {
+  import typings.activexDashWord.activexDashWordNumbers.`-999999`
+  import typings.activexDashWord.activexDashWordNumbers.`0`
+  import typings.activexDashWord.activexDashWordNumbers.`1`
+
   type WdBorderTypeHID = `0`
   type WdCaptionNumberStyleHID = `0`
   type WdCharacterCaseHID = `0`

@@ -1,11 +1,12 @@
 package typings.node
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object httpMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   // outgoing headers allows numbers (as they are converted internally to strings)
   type OutgoingHttpHeaders = StringDictionary[js.UndefOr[Double | java.lang.String | js.Array[java.lang.String]]]
   type RequestListener = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Unit]

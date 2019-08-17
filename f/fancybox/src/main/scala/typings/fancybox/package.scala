@@ -1,12 +1,13 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQueryNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fancybox {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.jquery.JQueryNs.Event
+
   type FancyBoxInteractionMethod = js.Function2[
     /* slide */ js.UndefOr[FancyBoxSlide], 
     /* event */ js.UndefOr[Event], 

@@ -1,11 +1,12 @@
 package typings.angularDashFormly
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AngularFormlyNs {
+  import typings.std.HTMLElement
+
   /**
   	 * see http://docs.angular-formly.com/docs/formly-expressions#expressionproperties-validators--messages
   	 */

@@ -1,12 +1,13 @@
 package typings
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object miniprogramDashWxs {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.StringDictionary
+
   type ClassDecorator = js.Function1[/* target */ Function, Function | Unit]
   /**
     * Obtain the parameters of a constructor function type in a tuple

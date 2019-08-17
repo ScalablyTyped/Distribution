@@ -1,14 +1,15 @@
 package typings.acl
 
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.redis.redisMod.RedisClient
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object aclMod {
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+  import typings.redis.redisMod.RedisClient
+  import typings.std.Error
+
   type Action = js.Function0[js.Any]
   type AllowedCallback = js.Function2[/* err */ Error, /* allowed */ Boolean, js.Any]
   type AnyCallback = js.Function2[/* err */ Error, /* obj */ js.Any, js.Any]

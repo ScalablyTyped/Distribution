@@ -121,6 +121,12 @@ trait IInvoice extends IResourceObject {
     */
   var closed: Boolean
   /**
+    * Either charge_automatically, or send_invoice. When charging automatically, Stripe will attempt to pay
+    * this invoice using the default source attached to the customer. When sending an invoice, Stripe will
+    * email this invoice to the customer with payment instructions.
+    */
+  var collection_method: js.UndefOr[charge_automatically | send_invoice] = js.undefined
+  /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
   var created: Double
@@ -359,6 +365,7 @@ object IInvoice {
     total: Double,
     webhooks_delivered_at: Double,
     charge: String | ICharge = null,
+    collection_method: charge_automatically | send_invoice = null,
     discount: IDiscount = null,
     due_date: Int | Double = null,
     ending_balance: Int | Double = null,
@@ -371,6 +378,7 @@ object IInvoice {
     val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])

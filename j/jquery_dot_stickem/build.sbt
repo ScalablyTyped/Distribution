@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_stickem"
-version := "1.4-dt-20190213Z-1893cd"
-scalaVersion := "2.12.8"
+version := "1.4-dt-20190213Z-4ec952"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

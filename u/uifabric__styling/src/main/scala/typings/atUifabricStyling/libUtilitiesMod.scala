@@ -1,9 +1,7 @@
 package typings.atUifabricStyling
 
-import typings.atUifabricStyling.libUtilitiesIconsMod.IIconOptions
 import typings.atUifabricStyling.libUtilitiesIconsMod.IIconRecord
 import typings.atUifabricStyling.libUtilitiesIconsMod.IIconSubset
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +17,8 @@ object libUtilitiesMod extends js.Object {
   def getIconClassName(name: String): String = js.native
   def registerIconAlias(iconName: String, mappedToName: String): Unit = js.native
   def registerIcons(iconSubset: IIconSubset): Unit = js.native
-  def registerIcons(iconSubset: IIconSubset, options: Partial[IIconOptions]): Unit = js.native
-  def setIconOptions(options: Partial[IIconOptions]): Unit = js.native
+  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = js.native
+  def setIconOptions(options: PartialIIconOptions): Unit = js.native
   def unregisterIcons(iconNames: js.Array[String]): Unit = js.native
 }
 

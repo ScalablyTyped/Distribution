@@ -1,13 +1,14 @@
 package typings.tstl
 
-import typings.std.Pick
-import typings.tstl.numericIComputableMod.IComputable
-import typings.tstl.tstlStrings.plus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object numericOperatorsMod {
+  import typings.std.Pick
+  import typings.tstl.numericIComputableMod.IComputable
+  import typings.tstl.tstlStrings.plus
+
   /**
     * @hidden
     */

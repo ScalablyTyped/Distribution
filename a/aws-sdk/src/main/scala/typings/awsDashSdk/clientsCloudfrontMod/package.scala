@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.URLEncoded
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudfrontMod {
+  import typings.awsDashSdk.awsDashSdkStrings.URLEncoded
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AliasICPRecordals = js.Array[AliasICPRecordal]
   type AliasList = js.Array[String]
   type AwsAccountNumberList = js.Array[String]

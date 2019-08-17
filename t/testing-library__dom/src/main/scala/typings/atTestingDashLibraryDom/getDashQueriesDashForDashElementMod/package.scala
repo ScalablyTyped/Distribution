@@ -1,13 +1,14 @@
 package typings.atTestingDashLibraryDom
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object getDashQueriesDashForDashElementMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.std.HTMLElement
+
   type BoundFunction[T] = js.Function2[/* text */ js.Any, js.UndefOr[js.Any], js.Any]
   type BoundFunctions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: @testing-library/dom.@testing-library/dom/get-queries-for-element.BoundFunction<T[P]>}

@@ -1,12 +1,13 @@
 package typings.chromeDashApps.chromeNs
 
-import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object runtimeNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import typings.std.Exclude
+
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.chromeDashApps.chromeNs.runtimeNs.AutomationDesktop

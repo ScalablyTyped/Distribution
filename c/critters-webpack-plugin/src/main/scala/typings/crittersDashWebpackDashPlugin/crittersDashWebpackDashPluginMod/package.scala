@@ -1,10 +1,11 @@
 package typings.crittersDashWebpackDashPlugin
 
-import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object crittersDashWebpackDashPluginMod {
+  import typings.webpack.webpackMod.Plugin
+
   type Critters = Plugin
 }

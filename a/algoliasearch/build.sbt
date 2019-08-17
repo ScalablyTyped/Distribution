@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "algoliasearch"
-version := "3.30.2-dt-20190806Z-504685"
-scalaVersion := "2.12.8"
+version := "3.30.2-dt-20190806Z-a1ecbb"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

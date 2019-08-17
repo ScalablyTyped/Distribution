@@ -1,11 +1,12 @@
 package typings.immutabilityDashHelper
 
-import typings.immutabilityDashHelper.Anon_NoInferenceCustomCommandsBrand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object immutabilityDashHelperMod {
+  import typings.immutabilityDashHelper.Anon_NoInferenceCustomCommandsBrand
+
   type CustomCommands[T] = T with Anon_NoInferenceCustomCommandsBrand
   /* Rewritten from type alias, can be one of: 
     - typings.immutabilityDashHelper.Anon_Toggle[T]

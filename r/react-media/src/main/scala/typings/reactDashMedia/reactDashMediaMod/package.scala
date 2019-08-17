@@ -1,12 +1,13 @@
 package typings.reactDashMedia
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashMediaMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.Component
+
   /**
     * Conditionally renders based on whether or not a media query matches.
     */

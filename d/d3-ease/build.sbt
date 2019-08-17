@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "d3-ease"
-version := "1.0-dt-20190212Z-cb61b4"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190212Z-36846f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

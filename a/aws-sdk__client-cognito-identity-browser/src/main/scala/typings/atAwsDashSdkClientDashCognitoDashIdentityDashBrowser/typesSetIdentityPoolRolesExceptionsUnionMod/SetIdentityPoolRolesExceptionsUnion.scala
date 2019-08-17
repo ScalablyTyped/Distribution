@@ -1,0 +1,17 @@
+package typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesSetIdentityPoolRolesExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesInvalidParameterExceptionMod.InvalidParameterException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesNotAuthorizedExceptionMod.NotAuthorizedException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesResourceConflictExceptionMod.ResourceConflictException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesInternalErrorExceptionMod.InternalErrorException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesConcurrentModificationExceptionMod.ConcurrentModificationException
+*/
+trait SetIdentityPoolRolesExceptionsUnion extends js.Object
+

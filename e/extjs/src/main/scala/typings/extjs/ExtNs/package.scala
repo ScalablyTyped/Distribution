@@ -1,14 +1,15 @@
 package typings.extjs
 
-import typings.extjs.ExtNs.dataNs.IConnection
-import typings.extjs.ExtNs.domNs.IHelper
-import typings.extjs.ExtNs.utilNs.IMixedCollection
-import typings.extjs.ExtNs.utilNs.ITaskRunner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ExtNs {
+  import typings.extjs.ExtNs.dataNs.IConnection
+  import typings.extjs.ExtNs.domNs.IHelper
+  import typings.extjs.ExtNs.utilNs.IMixedCollection
+  import typings.extjs.ExtNs.utilNs.ITaskRunner
+
   type IAjax = IConnection
   type IButtonToggleManager = IBase
   type IComponentManager = IAbstractManager

@@ -1,11 +1,12 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.ImageryLayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ImageryLayerNs {
+  import typings.cesium.cesiumMod.ImageryLayer
+
   type ValueFunc = js.Function5[
     /* frameState */ js.Any, 
     /* layer */ ImageryLayer, 

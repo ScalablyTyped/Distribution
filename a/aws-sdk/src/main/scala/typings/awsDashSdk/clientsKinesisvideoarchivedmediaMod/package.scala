@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsKinesisvideoarchivedmediaMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.FRAGMENTED_MP4

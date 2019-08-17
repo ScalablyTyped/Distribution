@@ -14,6 +14,10 @@ trait SimulationJob extends js.Object {
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   /**
+    * The data sources for the simulation job.
+    */
+  var dataSources: js.UndefOr[DataSources] = js.undefined
+  /**
     * The failure behavior the simulation job.  Continue  Restart the simulation job in the same host instance.  Fail  Stop the simulation job and terminate the instance.  
     */
   var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
@@ -37,6 +41,10 @@ trait SimulationJob extends js.Object {
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
   var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  /**
+    * The logging configuration.
+    */
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   /**
     * The maximum simulation job duration in seconds. The value must be 8 days (691,200 seconds) or less.
     */
@@ -80,12 +88,14 @@ object SimulationJob {
   def apply(
     arn: Arn = null,
     clientRequestToken: ClientRequestToken = null,
+    dataSources: DataSources = null,
     failureBehavior: FailureBehavior = null,
     failureCode: SimulationJobErrorCode = null,
     failureReason: GenericString = null,
     iamRole: IamRole = null,
     lastStartedAt: LastStartedAt = null,
     lastUpdatedAt: LastUpdatedAt = null,
+    loggingConfig: LoggingConfig = null,
     maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
     name: Name = null,
     outputLocation: OutputLocation = null,
@@ -99,12 +109,14 @@ object SimulationJob {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
+    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
     if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
     if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
     if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole)
     if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
     if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds)
     if (name != null) __obj.updateDynamic("name")(name)
     if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation)

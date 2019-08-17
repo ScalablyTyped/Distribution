@@ -89,6 +89,21 @@
 | [allure-js-commons](./a/allure-js-commons) | Common helper for writing plugins to allure-framew | - |
 | [almost-equal](./a/almost-equal) | Test if two floats are almost equal | float, compare, double, round, equal, almost, near, tolerance, epsilon, FLT_EPSILON, DBL_EPSILON |
 | [alt](./a/alt) | A flux implementation | alt, es6, flow, flux, react, unidirectional |
+| [amap-js-api](./a/amap-js-api) | - | - |
+| [amap-js-api-arrival-range](./a/amap-js-api-arrival-range) | - | - |
+| [amap-js-api-autocomplete](./a/amap-js-api-autocomplete) | - | - |
+| [amap-js-api-city-search](./a/amap-js-api-city-search) | - | - |
+| [amap-js-api-district-sear](./a/amap-js-api-district-search) | - | - |
+| [amap-js-api-driving](./a/amap-js-api-driving) | - | - |
+| [amap-js-api-geocoder](./a/amap-js-api-geocoder) | - | - |
+| [amap-js-api-geolocation](./a/amap-js-api-geolocation) | - | - |
+| [amap-js-api-heatmap](./a/amap-js-api-heatmap) | - | - |
+| [amap-js-api-indoor-map](./a/amap-js-api-indoor-map) | - | - |
+| [amap-js-api-line-search](./a/amap-js-api-line-search) | - | - |
+| [amap-js-api-map3d](./a/amap-js-api-map3d) | - | - |
+| [amap-js-api-place-search](./a/amap-js-api-place-search) | - | - |
+| [amap-js-api-riding](./a/amap-js-api-riding) | - | - |
+| [amap-js-api-station-searc](./a/amap-js-api-station-search) | - | - |
 | [amap-js-sdk](./a/amap-js-sdk) | - | - |
 | [amazon-cognito-auth-js](./a/amazon-cognito-auth-js) | Amazon Cognito Auth JavaScript SDK | amazon, aws, cognito, auth |
 | [amazon-connect-streams](./a/amazon-connect-streams) | - | - |
@@ -388,12 +403,133 @@
 | [avoscloud-sdk](./a/avoscloud-sdk) | AVOSCloud JavaScript SDK. | - |
 | [await-timeout](./a/await-timeout) | A Promise-based API for setTimeout / clearTimeout | timeout, promise, promise-api, promises, settimeout, cleartimeout |
 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/ | - |
+| [aws-crypto__crc32](./a/aws-crypto__crc32) | Pure JS implementation of CRC32 https://en.wikiped | - |
+| [aws-crypto__ie11-detectio](./a/aws-crypto__ie11-detection) | Provides functions and types for detecting if the  | - |
+| [aws-crypto__sha256-browse](./a/aws-crypto__sha256-browser) | SHA256 wrapper for browsers that prefers window.cr | - |
+| [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256. | - |
+| [aws-crypto__sha256-univer](./a/aws-crypto__sha256-universal) | A consistent interface for SHA256 across browsers  | - |
+| [aws-crypto__supports-web-](./a/aws-crypto__supports-web-crypto) | Provides functions for detecting if the host envir | - |
 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices | api, amazon, aws, iot, mqtt |
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones | aws, amazon, regions, availability, zones, azs, global, infrastructure |
 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript | api, amazon, aws, ec2, simpledb, s3, sqs, ses, sns, route53, rds, elasticache, cloudfront, fps, cloudformation, cloudwatch, dynamodb, iam, swf, autoscaling, cloudsearch, elb, loadbalancing, emr, mapreduce, importexport, storagegateway, workflow, ebs, vpc, beanstalk, glacier, kinesis, cloudtrail, waf |
+| [aws-sdk__abort-controller](./a/aws-sdk__abort-controller) | A simple abort controller library | - |
+| [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-browser) | - | - |
+| [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-node) | - | - |
+| [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-universal) | - | - |
+| [aws-sdk__apply-body-check](./a/aws-sdk__apply-body-checksum-middleware) | This package provides AWS SDK for JavaScript middl | - |
+| [aws-sdk__bucket-endpoint-](./a/aws-sdk__bucket-endpoint-middleware) | - | - |
+| [aws-sdk__build-types](./a/aws-sdk__build-types) | - | - |
+| [aws-sdk__chunked-blob-rea](./a/aws-sdk__chunked-blob-reader) | - | - |
+| [aws-sdk__chunked-stream-r](./a/aws-sdk__chunked-stream-reader-node) | Exports a streamReader function that accepts a rea | - |
+| [aws-sdk__client-codecommi](./a/aws-sdk__client-codecommit-node) | Node SDK for AWS CodeCommit | - |
+| [aws-sdk__client-cognito-i](./a/aws-sdk__client-cognito-identity-browser) | Browser SDK for Amazon Cognito Identity | - |
+| [aws-sdk__client-dynamodb-](./a/aws-sdk__client-dynamodb-browser) | Browser SDK for Amazon DynamoDB | - |
+| [aws-sdk__client-dynamodb-](./a/aws-sdk__client-dynamodb-node) | Node SDK for Amazon DynamoDB | - |
+| [aws-sdk__client-glacier-n](./a/aws-sdk__client-glacier-node) | Node SDK for Amazon Glacier | - |
+| [aws-sdk__client-kinesis-b](./a/aws-sdk__client-kinesis-browser) | Browser SDK for Amazon Kinesis | - |
+| [aws-sdk__client-kms-brows](./a/aws-sdk__client-kms-browser) | Browser SDK for AWS Key Management Service | - |
+| [aws-sdk__client-kms-node](./a/aws-sdk__client-kms-node) | Node SDK for AWS Key Management Service | - |
+| [aws-sdk__client-lambda-no](./a/aws-sdk__client-lambda-node) | Node SDK for AWS Lambda | - |
+| [aws-sdk__client-pinpoint-](./a/aws-sdk__client-pinpoint-browser) | Browser SDK for Amazon Pinpoint | - |
+| [aws-sdk__client-s3-browse](./a/aws-sdk__client-s3-browser) | Browser SDK for Amazon Simple Storage Service | - |
+| [aws-sdk__client-s3-node](./a/aws-sdk__client-s3-node) | Node SDK for Amazon Simple Storage Service | - |
+| [aws-sdk__client-sqs-node](./a/aws-sdk__client-sqs-node) | Node SDK for Amazon Simple Queue Service | - |
+| [aws-sdk__client-xray-node](./a/aws-sdk__client-xray-node) | Node SDK for AWS X-Ray | - |
+| [aws-sdk__config-resolver](./a/aws-sdk__config-resolver) | - | - |
+| [aws-sdk__core-handler](./a/aws-sdk__core-handler) | AWS SDK Core Handler | - |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-cognito-identity) | - | - |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-env) | AWS credential provider that sources credentials f | aws, credentials |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-imds) | AWS credential provider that sources credentials f | aws, credentials |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-ini) | AWS credential provider that sources credentials f | aws, credentials |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f | aws, credentials |
+| [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-process) | AWS credential provider that sources credential_pr | aws, credentials |
+| [aws-sdk__ec2-error-unmars](./a/aws-sdk__ec2-error-unmarshaller) | - | - |
+| [aws-sdk__eventstream-mars](./a/aws-sdk__eventstream-marshaller) | - | - |
+| [aws-sdk__fetch-http-handl](./a/aws-sdk__fetch-http-handler) | Provides a way to make requests | - |
+| [aws-sdk__hash-blob-browse](./a/aws-sdk__hash-blob-browser) | - | - |
+| [aws-sdk__hash-node](./a/aws-sdk__hash-node) | - | - |
+| [aws-sdk__hash-stream-node](./a/aws-sdk__hash-stream-node) | A utility for calculating the hash of Node.JS read | - |
+| [aws-sdk__http-headers](./a/aws-sdk__http-headers) | - | - |
+| [aws-sdk__http-serializati](./a/aws-sdk__http-serialization) | - | - |
+| [aws-sdk__is-array-buffer](./a/aws-sdk__is-array-buffer) | Provides a function for detecting if an argument i | - |
+| [aws-sdk__is-iterable](./a/aws-sdk__is-iterable) | Provides a function for detecting if input is iter | - |
+| [aws-sdk__is-node](./a/aws-sdk__is-node) | Provides a function for detecting if the host envi | - |
+| [aws-sdk__json-builder](./a/aws-sdk__json-builder) | A marshaller for the body portion of AWS's JSON an | - |
+| [aws-sdk__json-error-unmar](./a/aws-sdk__json-error-unmarshaller) | - | - |
+| [aws-sdk__json-parser](./a/aws-sdk__json-parser) | An unmarshaller for the body portion of AWS's JSON | - |
+| [aws-sdk__location-constra](./a/aws-sdk__location-constraint-middleware) | - | - |
+| [aws-sdk__logger](./a/aws-sdk__logger) | - | - |
+| [aws-sdk__md5-js](./a/aws-sdk__md5-js) | - | - |
+| [aws-sdk__md5-universal](./a/aws-sdk__md5-universal) | - | - |
+| [aws-sdk__middleware-conte](./a/aws-sdk__middleware-content-length) | - | - |
+| [aws-sdk__middleware-ec2-c](./a/aws-sdk__middleware-ec2-copysnapshot) | - | - |
+| [aws-sdk__middleware-expec](./a/aws-sdk__middleware-expect-continue) | - | - |
+| [aws-sdk__middleware-heade](./a/aws-sdk__middleware-header-default) | - | - |
+| [aws-sdk__middleware-input](./a/aws-sdk__middleware-input-default) | - | - |
+| [aws-sdk__middleware-opera](./a/aws-sdk__middleware-operation-logging) | - | - |
+| [aws-sdk__middleware-rds-p](./a/aws-sdk__middleware-rds-presignedurl) | - | - |
+| [aws-sdk__middleware-sdk-a](./a/aws-sdk__middleware-sdk-api-gateway) | - | - |
+| [aws-sdk__middleware-sdk-g](./a/aws-sdk__middleware-sdk-glacier) | - | - |
+| [aws-sdk__middleware-seria](./a/aws-sdk__middleware-serializer) | Provides the middleware serializer for the AWS SDK | - |
+| [aws-sdk__middleware-stack](./a/aws-sdk__middleware-stack) | Provides a means for composing multiple middleware | - |
+| [aws-sdk__modeled-endpoint](./a/aws-sdk__modeled-endpoint-middleware) | - | - |
+| [aws-sdk__node-http-handle](./a/aws-sdk__node-http-handler) | Provides a way to make requests | - |
+| [aws-sdk__property-provide](./a/aws-sdk__property-provider) | - | - |
+| [aws-sdk__protocol-json-rp](./a/aws-sdk__protocol-json-rpc) | Provides a marshaller and unmarshaller for the AWS | - |
+| [aws-sdk__protocol-query](./a/aws-sdk__protocol-query) | Provides a marshaller and unmarshaller for the AWS | - |
+| [aws-sdk__protocol-rest](./a/aws-sdk__protocol-rest) | Provides a marshaller and unmarshaller for the AWS | - |
+| [aws-sdk__protocol-timesta](./a/aws-sdk__protocol-timestamp) | A marshaller and unmarshaller for timestamps used  | - |
+| [aws-sdk__query-builder](./a/aws-sdk__query-builder) | A marshaller for the body portion of AWS's Query(E | - |
+| [aws-sdk__query-error-unma](./a/aws-sdk__query-error-unmarshaller) | - | - |
+| [aws-sdk__query-request-pr](./a/aws-sdk__query-request-presigner) | - | - |
+| [aws-sdk__querystring-buil](./a/aws-sdk__querystring-builder) | - | - |
+| [aws-sdk__querystring-pars](./a/aws-sdk__querystring-parser) | - | - |
+| [aws-sdk__region-provider](./a/aws-sdk__region-provider) | AWS region provider for Node.JS. Will determine th | aws, credentials |
+| [aws-sdk__remove-sensitive](./a/aws-sdk__remove-sensitive-logs) | - | - |
+| [aws-sdk__response-metadat](./a/aws-sdk__response-metadata-extractor) | Provides a function for extracting metadata from r | - |
+| [aws-sdk__retry-middleware](./a/aws-sdk__retry-middleware) | - | - |
+| [aws-sdk__route53-id-norma](./a/aws-sdk__route53-id-normalizer-middleware) | - | - |
+| [aws-sdk__s3-error-unmarsh](./a/aws-sdk__s3-error-unmarshaller) | - | - |
+| [aws-sdk__s3-request-presi](./a/aws-sdk__s3-request-presigner) | - | - |
+| [aws-sdk__service-error-cl](./a/aws-sdk__service-error-classification) | - | - |
+| [aws-sdk__service-model](./a/aws-sdk__service-model) | A service model parser and validator | - |
+| [aws-sdk__sha256-tree-hash](./a/aws-sdk__sha256-tree-hash) | - | - |
+| [aws-sdk__shared-ini-file-](./a/aws-sdk__shared-ini-file-loader) | This module provides a function that reads from AW | - |
+| [aws-sdk__signature-v4](./a/aws-sdk__signature-v4) | A standalone implementation of the AWS Signature V | - |
+| [aws-sdk__signature-v4-bro](./a/aws-sdk__signature-v4-browser) | A standalone AWS Signature V4 request signer for b | - |
+| [aws-sdk__signature-v4-nod](./a/aws-sdk__signature-v4-node) | A standalone AWS Signature V4 request signer for N | - |
+| [aws-sdk__signature-v4-uni](./a/aws-sdk__signature-v4-universal) | A standalone AWS Signature V4 request signer targe | - |
+| [aws-sdk__signing-middlewa](./a/aws-sdk__signing-middleware) | - | - |
+| [aws-sdk__ssec-middleware](./a/aws-sdk__ssec-middleware) | - | - |
+| [aws-sdk__stream-collector](./a/aws-sdk__stream-collector-browser) | Provides a way to store the contents of a stream i | - |
+| [aws-sdk__stream-collector](./a/aws-sdk__stream-collector-node) | Provides a way to store the contents of a stream i | - |
+| [aws-sdk__types](./a/aws-sdk__types) | Types for the AWS SDK | - |
+| [aws-sdk__url-parser-brows](./a/aws-sdk__url-parser-browser) | - | - |
+| [aws-sdk__url-parser-node](./a/aws-sdk__url-parser-node) | - | - |
+| [aws-sdk__url-parser-unive](./a/aws-sdk__url-parser-universal) | - | - |
+| [aws-sdk__util-base64-brow](./a/aws-sdk__util-base64-browser) | A pure JS Base64  UInt8Array converter | - |
+| [aws-sdk__util-base64-node](./a/aws-sdk__util-base64-node) | A Node.JS Base64  UInt8Array converter | - |
+| [aws-sdk__util-base64-univ](./a/aws-sdk__util-base64-universal) | A cross-platform Base64  UInt8Array converter | - |
+| [aws-sdk__util-body-length](./a/aws-sdk__util-body-length-browser) | Determines the length of a request body in browser | - |
+| [aws-sdk__util-body-length](./a/aws-sdk__util-body-length-node) | Determines the length of a request body in node.js | - |
+| [aws-sdk__util-buffer-from](./a/aws-sdk__util-buffer-from) | - | - |
+| [aws-sdk__util-create-requ](./a/aws-sdk__util-create-request) | - | - |
+| [aws-sdk__util-error-const](./a/aws-sdk__util-error-constructor) | - | - |
+| [aws-sdk__util-format-url](./a/aws-sdk__util-format-url) | - | - |
+| [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa | - |
+| [aws-sdk__util-locate-wind](./a/aws-sdk__util-locate-window) | - | - |
+| [aws-sdk__util-uri-escape](./a/aws-sdk__util-uri-escape) | - | - |
+| [aws-sdk__util-user-agent-](./a/aws-sdk__util-user-agent-browser) | - | - |
+| [aws-sdk__util-user-agent-](./a/aws-sdk__util-user-agent-node) | - | - |
+| [aws-sdk__util-utf8-browse](./a/aws-sdk__util-utf8-browser) | A browser UTF-8 string  UInt8Array converter | - |
+| [aws-sdk__util-utf8-node](./a/aws-sdk__util-utf8-node) | A Node.JS UTF-8 string  UInt8Array converter | - |
+| [aws-sdk__util-utf8-univer](./a/aws-sdk__util-utf8-universal) | A cross-platform UTF-8 string  UInt8Array converte | - |
+| [aws-sdk__xml-body-builder](./a/aws-sdk__xml-body-builder) | XML Body Builder for the AWS SDK | - |
+| [aws-sdk__xml-body-parser](./a/aws-sdk__xml-body-parser) | parse XML response of to JS object for AWS SDK | - |
+| [aws-sdk__xml-builder](./a/aws-sdk__xml-builder) | XML builder for the AWS SDK | - |
 | [aws-serverless-express](./a/aws-serverless-express) | This library enables you to utilize AWS Lambda and | aws, serverless, api, gateway, lambda, express |
 | [aws4](./a/aws4) | Signs and prepares requests using AWS Signature Ve | amazon, aws, signature, s3, ec2, autoscaling, cloudformation, elasticloadbalancing, elb, elasticbeanstalk, cloudsearch, dynamodb, kinesis, lambda, glacier, sqs, sns, iam, sts, ses, swf, storagegateway, datapipeline, directconnect, redshift, opsworks, rds, monitoring, cloudtrail, cloudfront, codedeploy, elasticache, elasticmapreduce, elastictranscoder, emr, cloudwatch, mobileanalytics, cognitoidentity, cognitosync, cognito, containerservice, ecs, appstream, keymanagementservice, kms, config, cloudhsm, route53, route53domains, logs |
 | [axe-core](./a/axe-core) | Accessibility engine for automated Web UI testing | Accessibility, a11y, testing, unit, tdd, bdd, aXe |
@@ -1465,10 +1601,30 @@
 | [email-addresses](./e/email-addresses) | An email address parser based on rfc5322 | email address, parser, rfc5322, 5322 |
 | [email-templates](./e/email-templates) | Create, preview, and send custom email templates f | consolidate, email, engine, koa, lad, lass, mailchimp, mailgun, mandrill, moonmail, nodemailer, postmark, pug, sendgrid, template, templates, transport |
 | [email-validator](./e/email-validator) | Provides a fast, pretty robust e-mail validator. O | email, validation, validator, syntax |
+| [ember](./e/ember) | A framework for creating ambitious web application | - |
+| [ember-data](./e/ember-data) | A data layer for your Ember applications. | ember-addon |
+| [ember-feature-flags](./e/ember-feature-flags) | Feature flags/toggles for Ember apps | ember-addon, feature-flag, feature-toggle, features-switch |
+| [ember-mocha](./e/ember-mocha) | Mocha helpers for testing Ember.js applications | ember-addon |
+| [ember-modal-dialog](./e/ember-modal-dialog) | An ember-cli addon for implementing modal dialogs | ember-addon |
+| [ember-qunit](./e/ember-qunit) | QUnit helpers for testing Ember.js applications | ember-addon |
+| [ember-resolver](./e/ember-resolver) | The default modules based resolver for Ember CLI. | ember-addon |
+| [ember-test-helpers](./e/ember-test-helpers) | Helpers for testing Ember.js applications | - |
 | [ember-testing-helpers](./e/ember-testing-helpers) | - | - |
+| [ember__application](./e/ember__application) | - | - |
+| [ember__array](./e/ember__array) | - | - |
+| [ember__component](./e/ember__component) | - | - |
+| [ember__controller](./e/ember__controller) | - | - |
+| [ember__debug](./e/ember__debug) | - | - |
+| [ember__engine](./e/ember__engine) | - | - |
 | [ember__error](./e/ember__error) | - | - |
+| [ember__object](./e/ember__object) | - | - |
+| [ember__polyfills](./e/ember__polyfills) | - | - |
+| [ember__routing](./e/ember__routing) | - | - |
 | [ember__runloop](./e/ember__runloop) | - | - |
+| [ember__service](./e/ember__service) | - | - |
 | [ember__string](./e/ember__string) | A set of utilities to transform strings | ember-addon |
+| [ember__test](./e/ember__test) | - | - |
+| [ember__test-helpers](./e/ember__test-helpers) | Helpers for testing Ember.js applications | ember-addon |
 | [ember__utils](./e/ember__utils) | - | - |
 | [emissary](./e/emissary) | Utility mixins for subscribing to and emitting eve | event-emitter, events, subscribe, subscriber |
 | [emittery](./e/emittery) | Simple and modern async event emitter | event, emitter, eventemitter, events, async, emit, on, once, off, listener, subscribe, unsubscribe, pubsub, tiny, addlistener, addeventlistener, dispatch, dispatcher, observer, trigger, await, promise |
@@ -3099,7 +3255,6 @@
 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets. | - |
 | [json-stable-stringify](./j/json-stable-stringify) | deterministic JSON.stringify() with custom sorting | json, stringify, deterministic, hash, sort, stable |
 | [json-stream-stringify](./j/json-stream-stringify) | JSON.Stringify as a readable stream | - |
-| [json-stringify-pretty-com](./j/json-stringify-pretty-compact) | The best of both JSON.stringify(obj) and JSON.stri | JSON, stringify, pretty, print, pretty-print, compact, indent, format, formatter |
 | [json-stringify-safe](./j/json-stringify-safe) | Like JSON.stringify, but doesn't blow up on circul | json, stringify, circular, safe |
 | [json-to-ast](./j/json-to-ast) | JSON AST parser | json-parser, parser, ast, json, tree |
 | [json2csv](./j/json2csv) | Convert JSON to CSV | json, to, csv, export, convert, parse |
@@ -3181,8 +3336,6 @@
 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
-| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search | - |
-| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |
@@ -4458,6 +4611,7 @@
 | [number-to-words](./n/number-to-words) | Contains some util methods for converting numbers  | converter, number, ordinal, string, tool, word |
 | [numbro](./n/numbro) | Format and manipulate numbers. | numeral, numbro, number, format, time, money, percentage |
 | [numeral](./n/numeral) | Format and manipulate numbers. | numeral, number, format, time, money, percentage |
+| [numeric](./n/numeric) | Numerical analysis in javascript | numeric, analysis, math |
 | [numjs](./n/numjs) | Like NumPy, in JavaScript | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape, numpy |
 | [nunjucks](./n/nunjucks) | A powerful templating engine with inheritance, asy | template, templating |
 | [nunjucks-date](./n/nunjucks-date) | Plugin for nunjucks of momentjs format date | nunjucks, date |
@@ -4504,6 +4658,7 @@
 | [office-js](./o/office-js) | Utility for office cloud services. | office, googleapps, office365, word, excel |
 | [office-js-preview](./o/office-js-preview) | - | - |
 | [office-runtime](./o/office-runtime) | - | - |
+| [office-ui-fabric-react](./o/office-ui-fabric-react) | Reusable React components for building experiences | - |
 | [offline-js](./o/offline-js) | Automatically detect when a browser is offline | - |
 | [offscreencanvas](./o/offscreencanvas) | - | - |
 | [oibackoff](./o/oibackoff) | Incremental backoff flow-control for any : fn(func | function, backoff, incremental, exponentail, linear, control flow, flow |
@@ -4721,6 +4876,7 @@
 | [pause](./p/pause) | Pause a stream's data events | - |
 | [payment](./p/payment) | A general purpose library for building credit card | payment, cc, card |
 | [paypal-cordova-plugin](./p/paypal-cordova-plugin) | - | - |
+| [paypal-rest-sdk](./p/paypal-rest-sdk) | SDK for PayPal REST APIs | paypal, rest, api, sdk |
 | [pbf](./p/pbf) | a low-level, lightweight protocol buffers implemen | protocol, buffer, pbf, protobuf, binary, format, serialization, encoder, decoder |
 | [pbkdf2](./p/pbkdf2) | This library provides the functionality of PBKDF2  | pbkdf2, kdf, salt, hash |
 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images | pdf, convert, image, imagemagick, pdf2image, pdf2img |
@@ -4810,7 +4966,9 @@
 | [pixelmatch](./p/pixelmatch) | The smallest and fastest pixel-level image compari | image, comparison, diff |
 | [pixi-spine](./p/pixi-spine) | Spine implementation for pixi v^3 and v^4 | - |
 | [pixi_dot_js](./p/pixi_dot_js) | The HTML5 Creation Engine: Create beautiful digita | - |
+| [pixl-xml](./p/pixl-xml) | A simple module for parsing and composing XML. | xml |
 | [pkcs11js](./p/pkcs11js) | A Node.js implementation of the PKCS | pkcs11, rsa, ecdsa, aes, crypto, smartcard, token, nss, softhsm2 |
+| [pkcs7-padding](./p/pkcs7-padding) | A tiny package that handles PKCS  | pkcs7, padding |
 | [pkg-conf](./p/pkg-conf) | Get namespaced config from the closest package.jso | json, read, parse, file, fs, graceful, load, pkg, package, config, conf, configuration, object, namespace, namespaced |
 | [pkg-dir](./p/pkg-dir) | Find the root directory of a Node.js project or np | package, json, root, npm, entry, find, up, find-up, findup, look-up, look, file, search, match, resolve, parent, parents, folder, directory, dir, walk, walking, path |
 | [pkg-up](./p/pkg-up) | Find the closest package.json file | pkg, package, file, find, up, find-up, findup, look-up, look, search, match, resolve, parent, parents, folder, directory, dir, walk, walking, path |
@@ -5560,7 +5718,6 @@
 | [react-router-dom-slinky-f](./r/react-router-dom-slinky-facade) | - | - |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
-| [react-router-native-slink](./r/react-router-native-slinky-facade) | - | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
 | [react-router-navigation-c](./r/react-router-navigation-core) | - | web, react-native, ios, android, router, navigation, navigator |
 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p | link-component, component, parameter, dynamic, router, react |
@@ -5866,6 +6023,7 @@
 | [rheostat](./r/rheostat) | Rheostat is a www, mobile, and accessible slider c | - |
 | [rickshaw](./r/rickshaw) | JavaScript toolkit for creating interactive real-t | charts, d3, graph, rickshaw, svg |
 | [right-align](./r/right-align) | Right-align the text in a string. | align, align-center, center, center-align, right, right-align, text, typography |
+| [rijndael-js](./r/rijndael-js) | Rijndael in Pure Javascript | - |
 | [rimraf](./r/rimraf) | A deep deletion module for node (like rm -rf) | - |
 | [ringbufferjs](./r/ringbufferjs) | a simple ring buffer data structure | ring, buffer, circular, queue, ring buffer, circular buffer, data structure |
 | [riot](./r/riot) | Simple and elegant component-based UI library | custom tags, custom elements, web components, virtual dom, shadow dom, minimal, simple, easy, dom, minimalist, client-side, framework, declarative, templating, template, data binding, mvc, model, view, controller, riotjs, riot.js |
@@ -5936,8 +6094,13 @@
 | [rrule](./r/rrule) | JavaScript library for working with recurrence rul | dates, recurrences, calendar, icalendar, rfc |
 | [rsmq](./r/rsmq) | A really simple message queue based on Redis | queue, messagequeue, jobs, message-queue, redis |
 | [rsmq-worker](./r/rsmq-worker) | RSMQ helper to simply implement a worker around th | - |
+| [rsocket-core](./r/rsocket-core) | RSocket core | - |
 | [rsocket-flowable](./r/rsocket-flowable) | ReactiveStreams for JavaScript | - |
+| [rsocket-tcp-client](./r/rsocket-tcp-client) | RSocket TCP client for use in Node.js environments | - |
+| [rsocket-tcp-server](./r/rsocket-tcp-server) | RSocket TCP server | - |
 | [rsocket-types](./r/rsocket-types) | RSocket types | - |
+| [rsocket-websocket-client](./r/rsocket-websocket-client) | RSocket WebSocket client for use in browser enviro | - |
+| [rsocket-websocket-server](./r/rsocket-websocket-server) | RSocket WebSocket server | - |
 | [rss](./r/rss) | RSS feed generator. Add RSS feeds to any project.  | rss, xml, atom, podcasts, ghost, feed, feed builder, rss feed |
 | [rsvp](./r/rsvp) | A lightweight library that provides tools for orga | promises, futures |
 | [rsync](./r/rsync) | Rsync cli wrapper | rsync, wrapper, cli, command |
@@ -6623,9 +6786,11 @@
 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR | - |
 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js | console, stdout, stderr, test, spy, test double |
 | [test-listen](./t/test-listen) | Produce URLs to test HTTP servers with ephemeral p | - |
+| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library | react-testing-library, dom-testing-library, react, testing |
+| [testing-library__vue](./t/testing-library__vue) | Simple and complete Vue DOM testing utilities that | vue.js, vue.js testing, vue, vue testing, vue.js 2, vue.js 2 testing, vue 2, vue 2 testing |
 | [testingbot-api](./t/testingbot-api) | A wrapper around TestingBot's REST API | - |
 | [tether](./t/tether) | A client-side library to make absolutely positione | - |
 | [tether-drop](./t/tether-drop) | Client-side library for creating dropdowns | - |
@@ -6741,6 +6906,7 @@
 | [triple-beam](./t/triple-beam) | Definitions of levels for logging purposes & share | winstonjs, winston, logging, logform, symbols, logs, levels |
 | [triplesec](./t/triplesec) | A CommonJS-compliant system for secure encryption  | - |
 | [trouter](./t/trouter) | 🐟 A fast, small-but-mighty, familiar ~fish~ route | route, router, routing |
+| [true-case-path](./t/true-case-path) | Given a possibly case-variant version of an existi | - |
 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider | ethereum, private key, wallet, provider, truffle provider |
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
@@ -6831,6 +6997,7 @@
 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs | random, generator, uid, safe |
 | [uid2](./u/uid2) | strong uid | - |
+| [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |
 | [uifabric__set-version](./u/uifabric__set-version) | Non-Fabric specific package version setter | - |
@@ -6958,12 +7125,6 @@
 | [vec3](./v/vec3) | 3d vector math with good unit tests | point |
 | [vectorious](./v/vectorious) | A high performance linear algebra library. | matrix, vector, linear, algebra |
 | [vega](./v/vega) | The Vega visualization grammar. | vega, visualization, interaction, dataflow, library, data, d3 |
-| [vega-embed](./v/vega-embed) | Publish Vega visualizations as embedded web compon | vega, data, visualization, component, embed |
-| [vega-lib](./v/vega-lib) | Include Vega in projects using minimal dependencie | vega, visualization, interaction, dataflow, library, data, d3 |
-| [vega-lite](./v/vega-lite) | Vega-Lite is a concise high-level language for int | - |
-| [vega-schema-url-parser](./v/vega-schema-url-parser) | A parser to get the library and version from Vega  | vega, vega-lite, schema |
-| [vega-themes](./v/vega-themes) | Themes for stylized Vega and Vega-Lite visualizati | vega, vega-lite, themes, style |
-| [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat | vega-lite, vega, tooltip |
 | [vega-typings](./v/vega-typings) | Typings for Vega. | vega, typescript, typings |
 | [vega-util](./v/vega-util) | JavaScript utilities for Vega. | vega, utilities |
 | [velocity-animate](./v/velocity-animate) | Accelerated JavaScript animation. | velocity, animation, jquery, animate, ui, velocity.js, velocityjs, javascript |

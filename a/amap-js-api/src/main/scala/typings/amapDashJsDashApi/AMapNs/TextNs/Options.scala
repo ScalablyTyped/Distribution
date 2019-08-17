@@ -1,0 +1,93 @@
+package typings.amapDashJsDashApi.AMapNs.TextNs
+
+import typings.amapDashJsDashApi.AMapNs.AnimationName
+import typings.amapDashJsDashApi.AMapNs.Icon
+import typings.amapDashJsDashApi.AMapNs.LocationValue
+import typings.amapDashJsDashApi.AMapNs.Map
+import typings.amapDashJsDashApi.AMapNs.MarkerNs.Anchor
+import typings.amapDashJsDashApi.AMapNs.MarkerNs.Label
+import typings.amapDashJsDashApi.AMapNs.MarkerShape
+import typings.amapDashJsDashApi.AMapNs.Pixel
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options
+  extends typings.amapDashJsDashApi.AMapNs.MarkerNs.Options[js.Any] {
+  /**
+    * 文本内容
+    */
+  var text: js.UndefOr[String] = js.undefined
+  /**
+    * 对齐方式
+    */
+  var textAlign: js.UndefOr[TextAlign] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlign] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    anchor: Anchor = null,
+    angle: Int | Double = null,
+    animation: AnimationName = null,
+    autoRotation: js.UndefOr[Boolean] = js.undefined,
+    bubble: js.UndefOr[Boolean] = js.undefined,
+    clickable: js.UndefOr[Boolean] = js.undefined,
+    content: String | HTMLElement = null,
+    cursor: String = null,
+    draggable: js.UndefOr[Boolean] = js.undefined,
+    extData: js.Any = null,
+    height: Int | Double = null,
+    icon: String | Icon = null,
+    label: Label = null,
+    map: Map = null,
+    offset: Pixel = null,
+    position: LocationValue = null,
+    raiseOnDrag: js.UndefOr[Boolean] = js.undefined,
+    shadow: Icon | String = null,
+    shape: MarkerShape = null,
+    text: String = null,
+    textAlign: TextAlign = null,
+    title: String = null,
+    topWhenClick: js.UndefOr[Boolean] = js.undefined,
+    topWhenMouseOver: js.UndefOr[Boolean] = js.undefined,
+    verticalAlign: VerticalAlign = null,
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zIndex: Int | Double = null,
+    zooms: js.Tuple2[Double, Double] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autoRotation)) __obj.updateDynamic("autoRotation")(autoRotation)
+    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (extData != null) __obj.updateDynamic("extData")(extData)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(topWhenClick)) __obj.updateDynamic("topWhenClick")(topWhenClick)
+    if (!js.isUndefined(topWhenMouseOver)) __obj.updateDynamic("topWhenMouseOver")(topWhenMouseOver)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    __obj.asInstanceOf[Options]
+  }
+}
+

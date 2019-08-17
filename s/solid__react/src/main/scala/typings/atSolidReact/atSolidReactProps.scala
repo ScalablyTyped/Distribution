@@ -17,8 +17,6 @@ trait atSolidReactProps {
   @scala.inline
   def LiveUpdateProps: Anon_.type = typings.atSolidReact.Anon_
   type LiveUpdateProps = Anon_
-  type LoggedInProps = js.Object
-  type LoggedOutProps = js.Object
   @scala.inline
   def LoginButtonProps: typings.atSolidReact.atSolidReactMod.LoginButtonProps.type = typings.atSolidReact.atSolidReactMod.LoginButtonProps
   type LoginButtonProps = typings.atSolidReact.atSolidReactMod.LoginButtonProps

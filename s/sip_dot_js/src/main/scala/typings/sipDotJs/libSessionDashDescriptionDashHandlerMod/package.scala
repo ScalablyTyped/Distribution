@@ -1,11 +1,12 @@
 package typings.sipDotJs
 
-import typings.std.RTCSessionDescriptionInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSessionDashDescriptionDashHandlerMod {
+  import typings.std.RTCSessionDescriptionInit
+
   type SessionDescriptionHandlerModifier = js.Function1[
     /* sessionDescription */ RTCSessionDescriptionInit, 
     js.Promise[RTCSessionDescriptionInit]

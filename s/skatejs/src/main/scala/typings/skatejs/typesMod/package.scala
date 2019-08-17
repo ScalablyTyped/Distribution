@@ -1,11 +1,12 @@
 package typings.skatejs
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
+  import org.scalablytyped.runtime.Instantiable1
+
   type ComponentProps[T, E] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: skatejs.skatejs/types.PropOptions<T[P]>}
     */ typings.skatejs.skatejsStrings.ComponentProps with T

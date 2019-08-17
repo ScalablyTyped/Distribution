@@ -1,13 +1,14 @@
 package typings.atIonicCore
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesComponentsNavNavDashInterfaceMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
+  import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
+
   type NavComponent = ComponentRef | typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController
   type Page = Instantiable1[/* args (repeated) */ js.Any, js.Any]
   type TransitionDoneFn = js.Function5[

@@ -1,10 +1,11 @@
 package typings.expressDashCluster
 
-import typings.node.clusterMod.Worker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashClusterMod {
+  import typings.node.clusterMod.Worker
+
   type WorkerFunction = js.Function1[/* worker */ Worker, Unit]
 }

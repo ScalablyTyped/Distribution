@@ -1,13 +1,14 @@
 package typings.tstl
 
-import typings.std.Partial
-import typings.tstl.baseThreadUnderscoreITimedLockableMod._ITimedLockable
-import typings.tstl.threadILockableMod.ILockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object threadUniqueLockMod {
+  import typings.std.Partial
+  import typings.tstl.baseThreadUnderscoreITimedLockableMod._ITimedLockable
+  import typings.tstl.threadILockableMod.ILockable
+
   /**
     * @hidden
     */

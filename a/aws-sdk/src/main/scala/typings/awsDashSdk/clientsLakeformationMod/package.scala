@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsLakeformationMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type BatchPermissionsFailureList = js.Array[BatchPermissionsFailureEntry]
   type BatchPermissionsRequestEntryList = js.Array[BatchPermissionsRequestEntry]
   type CatalogIdString = String

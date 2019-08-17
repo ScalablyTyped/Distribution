@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "is-image"
-version := "3.0.0-0471bb"
-scalaVersion := "2.12.8"
+version := "3.0.0-53bf7b"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

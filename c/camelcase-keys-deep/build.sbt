@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "camelcase-keys-deep"
-version := "0.1-dt-20190515Z-59c1d9"
-scalaVersion := "2.12.8"
+version := "0.1-dt-20190515Z-813ce4"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

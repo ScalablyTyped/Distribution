@@ -16,7 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait ButtonProps
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TouchableHighlightProperties * / any */ trait ButtonProps
   extends ButtonPropsType
      with WithThemeStyles[ButtonStyles] {
   var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined

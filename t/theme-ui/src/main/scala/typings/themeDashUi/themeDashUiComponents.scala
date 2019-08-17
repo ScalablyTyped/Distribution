@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 
 object themeDashUiComponents extends themeDashUiProps {
   @scala.inline
+  def apply[P /* <: js.Object */]: ComponentType[String] = typings.themeDashUi.themeDashUiMod.jsx.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[java.lang.String]]
+  @scala.inline
   def Box: ComponentType[
     (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As
   ] = js.constructorOf[typings.themeDashUi.themeDashUiMod.Box].asInstanceOf[typings.react.reactMod.ComponentType[

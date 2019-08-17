@@ -1,14 +1,15 @@
 package typings.auth0DashJs
 
-import typings.auth0DashJs.Anon_State
-import typings.auth0DashJs.auth0DashJsStrings.consent_required
-import typings.auth0DashJs.auth0DashJsStrings.interaction_required
-import typings.auth0DashJs.auth0DashJsStrings.login_required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object auth0DashJsMod {
+  import typings.auth0DashJs.Anon_State
+  import typings.auth0DashJs.auth0DashJsStrings.consent_required
+  import typings.auth0DashJs.auth0DashJsStrings.interaction_required
+  import typings.auth0DashJs.auth0DashJsStrings.login_required
+
   type Auth0Callback[T, E] = js.Function2[/* error */ Null | E, /* result */ T, Unit]
   type Auth0ParseHashError = Auth0Error with Anon_State
   type ConsentRequiredErrorCode = consent_required

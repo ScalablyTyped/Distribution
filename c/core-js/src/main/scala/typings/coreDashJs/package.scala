@@ -1,12 +1,13 @@
 package typings
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object coreDashJs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+
   // #############################################################################################
   // Dict - https://github.com/zloirock/core-js/#dict
   // Modules: core.dict

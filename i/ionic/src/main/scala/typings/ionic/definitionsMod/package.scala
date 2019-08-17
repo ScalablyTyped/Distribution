@@ -1,22 +1,23 @@
 package typings.ionic
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCliDashFramework.definitionsMod.CommandMetadataInput
-import typings.ionic.Anon_Images
-import typings.ionic.Anon_Req
-import typings.ionic.ionicStrings.`ssl-commands`
-import typings.ionic.ionicStrings.custom
-import typings.ionic.ionicStrings.guard
-import typings.ionic.ionicStrings.ionic1
-import typings.ionic.ionicStrings.max
-import typings.ionic.ionicStrings.reqgen
-import typings.ionic.ionicStrings.state
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object definitionsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atIonicCliDashFramework.definitionsMod.CommandMetadataInput
+  import typings.ionic.Anon_Images
+  import typings.ionic.Anon_Req
+  import typings.ionic.ionicStrings.`ssl-commands`
+  import typings.ionic.ionicStrings.custom
+  import typings.ionic.ionicStrings.guard
+  import typings.ionic.ionicStrings.ionic1
+  import typings.ionic.ionicStrings.max
+  import typings.ionic.ionicStrings.reqgen
+  import typings.ionic.ionicStrings.state
+  import typings.std.Pick
+
   type APIResponseData = js.Object | js.Array[js.Object] | String
   type CommandInstanceInfo = typings.atIonicCliDashFramework.definitionsMod.CommandInstanceInfo[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
   type CustomBuildOptions = BuildOptions[custom]

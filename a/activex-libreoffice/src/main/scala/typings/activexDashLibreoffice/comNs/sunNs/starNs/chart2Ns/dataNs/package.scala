@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.chart2Ns
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.XSelectionChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dataNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.viewNs.XSelectionChangeListener
+
   /**
     * a string that states in what way a {@link DataSequence} should be used. If this property is an empty string, no proposition about usage is made.
     *

@@ -1,11 +1,12 @@
 package typings.atHapiPodium
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atHapiPodiumMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Criteria = String | CriteriaObject
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

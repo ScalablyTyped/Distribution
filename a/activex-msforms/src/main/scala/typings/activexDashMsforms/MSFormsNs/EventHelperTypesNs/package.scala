@@ -1,33 +1,34 @@
 package typings.activexDashMsforms.MSFormsNs
 
-import typings.activexDashMsforms.activexDashMsformsStrings.Action
-import typings.activexDashMsforms.activexDashMsformsStrings.ActionX
-import typings.activexDashMsforms.activexDashMsformsStrings.ActionY
-import typings.activexDashMsforms.activexDashMsformsStrings.ActualDx
-import typings.activexDashMsforms.activexDashMsformsStrings.ActualDy
-import typings.activexDashMsforms.activexDashMsformsStrings.Cancel
-import typings.activexDashMsforms.activexDashMsformsStrings.CancelDisplay
-import typings.activexDashMsforms.activexDashMsformsStrings.Data
-import typings.activexDashMsforms.activexDashMsformsStrings.Description
-import typings.activexDashMsforms.activexDashMsformsStrings.DragState
-import typings.activexDashMsforms.activexDashMsformsStrings.Effect
-import typings.activexDashMsforms.activexDashMsformsStrings.HelpContext
-import typings.activexDashMsforms.activexDashMsformsStrings.HelpFile
-import typings.activexDashMsforms.activexDashMsformsStrings.Index
-import typings.activexDashMsforms.activexDashMsformsStrings.Number
-import typings.activexDashMsforms.activexDashMsformsStrings.RequestDx
-import typings.activexDashMsforms.activexDashMsformsStrings.RequestDy
-import typings.activexDashMsforms.activexDashMsformsStrings.SCode
-import typings.activexDashMsforms.activexDashMsformsStrings.Shift
-import typings.activexDashMsforms.activexDashMsformsStrings.Source
-import typings.activexDashMsforms.activexDashMsformsStrings.State
-import typings.activexDashMsforms.activexDashMsformsStrings.X
-import typings.activexDashMsforms.activexDashMsformsStrings.Y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EventHelperTypesNs {
+  import typings.activexDashMsforms.activexDashMsformsStrings.Action
+  import typings.activexDashMsforms.activexDashMsformsStrings.ActionX
+  import typings.activexDashMsforms.activexDashMsformsStrings.ActionY
+  import typings.activexDashMsforms.activexDashMsformsStrings.ActualDx
+  import typings.activexDashMsforms.activexDashMsformsStrings.ActualDy
+  import typings.activexDashMsforms.activexDashMsformsStrings.Cancel
+  import typings.activexDashMsforms.activexDashMsformsStrings.CancelDisplay
+  import typings.activexDashMsforms.activexDashMsformsStrings.Data
+  import typings.activexDashMsforms.activexDashMsformsStrings.Description
+  import typings.activexDashMsforms.activexDashMsformsStrings.DragState
+  import typings.activexDashMsforms.activexDashMsformsStrings.Effect
+  import typings.activexDashMsforms.activexDashMsformsStrings.HelpContext
+  import typings.activexDashMsforms.activexDashMsformsStrings.HelpFile
+  import typings.activexDashMsforms.activexDashMsformsStrings.Index
+  import typings.activexDashMsforms.activexDashMsformsStrings.Number
+  import typings.activexDashMsforms.activexDashMsformsStrings.RequestDx
+  import typings.activexDashMsforms.activexDashMsformsStrings.RequestDy
+  import typings.activexDashMsforms.activexDashMsformsStrings.SCode
+  import typings.activexDashMsforms.activexDashMsformsStrings.Shift
+  import typings.activexDashMsforms.activexDashMsformsStrings.Source
+  import typings.activexDashMsforms.activexDashMsformsStrings.State
+  import typings.activexDashMsforms.activexDashMsformsStrings.X
+  import typings.activexDashMsforms.activexDashMsformsStrings.Y
+
   type Container_BeforeDragOver_ArgNames = js.Tuple8[
     Cancel, 
     typings.activexDashMsforms.activexDashMsformsStrings.Control, 

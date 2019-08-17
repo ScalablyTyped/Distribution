@@ -1,11 +1,12 @@
 package typings.swaggerizeDashExpress.swaggerizeDashExpressMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SwaggerNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type DefinitionsObject = StringDictionary[SchemaObject]
   type ExampleObject = StringDictionary[js.Any]
   type HeaderObject = ItemsObject

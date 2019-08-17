@@ -16,7 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("PIXI.spine.Spine")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @JSGlobal("PIXI.spine.Spine")
 @js.native
 class Spine protected () extends js.Object {
   def this(spineData: SkeletonData) = this()

@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.ASSUME_ROLE_FAILED
-import typings.awsDashSdk.awsDashSdkStrings.CHILD_POLICY_APPLIED
-import typings.awsDashSdk.awsDashSdkStrings.OPERATION_NOT_PERMITTED
-import typings.awsDashSdk.awsDashSdkStrings.START_TO_CLOSE
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsSwfMod {
+  import typings.awsDashSdk.awsDashSdkStrings.ASSUME_ROLE_FAILED
+  import typings.awsDashSdk.awsDashSdkStrings.CHILD_POLICY_APPLIED
+  import typings.awsDashSdk.awsDashSdkStrings.OPERATION_NOT_PERMITTED
+  import typings.awsDashSdk.awsDashSdkStrings.START_TO_CLOSE
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ActivityId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.START_TO_CLOSE

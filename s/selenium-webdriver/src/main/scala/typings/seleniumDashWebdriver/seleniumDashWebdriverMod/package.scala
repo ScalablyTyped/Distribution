@@ -1,11 +1,12 @@
 package typings.seleniumDashWebdriver
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object seleniumDashWebdriverMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type IWebElementId = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
     - typings.seleniumDashWebdriver.libByMod.By

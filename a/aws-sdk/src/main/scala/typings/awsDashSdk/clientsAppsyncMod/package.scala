@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.AWS_IAM
-import typings.awsDashSdk.awsDashSdkStrings.RDS_HTTP_ENDPOINT
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsAppsyncMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.AWS_IAM
+  import typings.awsDashSdk.awsDashSdkStrings.RDS_HTTP_ENDPOINT
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Uint8Array
+
   type AdditionalAuthenticationProviders = js.Array[AdditionalAuthenticationProvider]
   type ApiKeys = js.Array[ApiKey]
   /* Rewritten from type alias, can be one of: 

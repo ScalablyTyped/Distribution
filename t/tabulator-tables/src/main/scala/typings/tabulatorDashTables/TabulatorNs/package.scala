@@ -1,17 +1,18 @@
 package typings.tabulatorDashTables
 
-import typings.std.HTMLElement
-import typings.std.Record
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
-import typings.tabulatorDashTables.tabulatorDashTablesStrings.clipboard
-import typings.tabulatorDashTables.tabulatorDashTablesStrings.data
-import typings.tabulatorDashTables.tabulatorDashTablesStrings.download
-import typings.tabulatorDashTables.tabulatorDashTablesStrings.edit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object TabulatorNs {
+  import typings.std.HTMLElement
+  import typings.std.Record
+  import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+  import typings.tabulatorDashTables.tabulatorDashTablesStrings.clipboard
+  import typings.tabulatorDashTables.tabulatorDashTablesStrings.data
+  import typings.tabulatorDashTables.tabulatorDashTablesStrings.download
+  import typings.tabulatorDashTables.tabulatorDashTablesStrings.edit
+
   type CellEditEventCallback = js.Function1[/* cell */ CellComponent, Unit]
   type CellEventCallback = js.Function2[/* e */ js.Any, /* cell */ CellComponent, Unit]
   type Color = String | js.Array[js.Any] | ValueStringCallback

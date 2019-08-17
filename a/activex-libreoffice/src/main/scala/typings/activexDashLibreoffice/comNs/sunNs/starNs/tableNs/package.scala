@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tableNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
+
   /**
     * represents a cell cursor in a table.
     *

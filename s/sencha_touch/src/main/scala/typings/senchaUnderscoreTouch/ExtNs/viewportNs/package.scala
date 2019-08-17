@@ -1,11 +1,12 @@
 package typings.senchaUnderscoreTouch.ExtNs
 
-import typings.senchaUnderscoreTouch.ExtNs.IBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object viewportNs {
+  import typings.senchaUnderscoreTouch.ExtNs.IBase
+
   type IIos = IDefault
   type IViewport = IBase
 }

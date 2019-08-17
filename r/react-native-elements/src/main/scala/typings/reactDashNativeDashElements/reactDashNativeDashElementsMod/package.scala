@@ -1,12 +1,13 @@
 package typings.reactDashNativeDashElements
 
-import typings.react.reactMod.ReactElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashElementsMod {
+  import typings.react.reactMod.ReactElement
+  import typings.std.Partial
+
   type DividerProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
   /* Rewritten from type alias, can be one of: 
     - typings.react.reactMod.ReactElement
@@ -31,7 +32,7 @@ package object reactDashNativeDashElementsMod {
   */
   type IconType = _IconType | String
   type RecursivePartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? object}
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
     */ typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.RecursivePartial with js.Any
   type SearchBarProps = SearchBarWrapper with SearchBarBase with SearchBarPlatform with SearchBarDefault with SearchBarIOS with SearchBarAndroid
   type Theme[T] = Partial[FullTheme] with T

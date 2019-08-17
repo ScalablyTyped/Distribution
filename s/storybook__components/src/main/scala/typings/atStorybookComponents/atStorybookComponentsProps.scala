@@ -27,14 +27,12 @@ trait atStorybookComponentsProps {
   @scala.inline
   def ListItemProps: typings.atStorybookComponents.distTooltipListItemMod.ListItemProps.type = typings.atStorybookComponents.distTooltipListItemMod.ListItemProps
   type ListItemProps = typings.atStorybookComponents.distTooltipListItemMod.ListItemProps
-  type PlaceholderProps = js.Object
   @scala.inline
   def ScrollAreaProps: typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps.type = typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps
   type ScrollAreaProps = typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps
   @scala.inline
   def SpacedProps: typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps.type = typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps
   type SpacedProps = typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps
-  type StorybookIconProps = js.Object
   @scala.inline
   def StorybookLogoProps: typings.atStorybookComponents.distBrandStorybookLogoMod.StorybookLogoProps.type = typings.atStorybookComponents.distBrandStorybookLogoMod.StorybookLogoProps
   type StorybookLogoProps = typings.atStorybookComponents.distBrandStorybookLogoMod.StorybookLogoProps

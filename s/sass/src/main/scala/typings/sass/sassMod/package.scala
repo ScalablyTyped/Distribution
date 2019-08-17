@@ -1,11 +1,12 @@
 package typings.sass
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sassMod {
+  import typings.std.Error
+
   type Importer = js.Function3[
     /* url */ String, 
     /* prev */ String, 

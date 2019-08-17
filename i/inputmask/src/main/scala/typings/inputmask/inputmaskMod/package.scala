@@ -1,12 +1,13 @@
 package typings.inputmask
 
-import typings.inputmask.Anon_C
-import typings.inputmask.Anon_End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inputmaskMod {
+  import typings.inputmask.Anon_C
+  import typings.inputmask.Anon_End
+
   type DefinitionValidator = js.Function5[
     /* chrs */ String, 
     /* buffer */ js.Array[String], 

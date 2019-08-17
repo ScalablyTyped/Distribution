@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gridNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
+
   /**
     * If you do not want to implement the {@link XGridColumnModel} yourself, use this service.
     * @since OOo 3.3

@@ -1,13 +1,14 @@
 package typings.koaDashRoute.koaDashRouteMod
 
-import typings.koa.koaMod.Context
-import typings.koa.koaMod.Middleware
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object KoaRouteNs {
+  import typings.koa.koaMod.Context
+  import typings.koa.koaMod.Middleware
+  import typings.std.RegExp
+
   type CreateMethod = js.Function1[/* method */ String, Method]
   type CreateRoute = js.Function1[/* routeFunc */ Handler, Middleware[js.Any, js.Object]]
   type Handler = js.ThisFunction2[/* this */ Context, /* ctx */ Context, /* repeated */ js.Any, js.Any]

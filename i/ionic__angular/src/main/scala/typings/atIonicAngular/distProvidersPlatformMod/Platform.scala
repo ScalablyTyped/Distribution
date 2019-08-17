@@ -1,6 +1,7 @@
 package typings.atIonicAngular.distProvidersPlatformMod
 
 import typings.atAngularCore.atAngularCoreMod.NgZone
+import typings.atIonicCore.distTypesUtilsPlatformMod.Platforms
 import typings.rxjs.rxjsMod.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -93,9 +94,7 @@ class Platform protected () extends js.Object {
     * | hybrid          | is a cordova or capacitor app.     |
     *
     */
-  def is(
-    platformName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platforms */ js.Any
-  ): Boolean = js.native
+  def is(platformName: Platforms): Boolean = js.native
   /**
     * Returns `true` if the app is in landscape mode.
     */

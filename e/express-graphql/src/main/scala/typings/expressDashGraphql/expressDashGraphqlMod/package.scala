@@ -1,12 +1,13 @@
 package typings.expressDashGraphql
 
-import typings.express.expressMod.Request
-import typings.express.expressMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashGraphqlMod {
+  import typings.express.expressMod.Request
+  import typings.express.expressMod.Response
+
   type Middleware = js.Function2[
     /* request */ Request, 
     /* response */ Response, 

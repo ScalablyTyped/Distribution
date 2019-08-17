@@ -1,11 +1,12 @@
 package typings.fluxDashStandardDashAction
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fluxDashStandardDashActionMod {
+  import typings.std.Error
+
   type ErrorFSA[CustomError /* <: Error */, Meta, Type /* <: String */] = ErrorFluxStandardAction[Type, CustomError, Meta]
   type ErrorFSAAuto[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionAuto[Type, CustomError, Meta]
   type ErrorFSAWithMeta[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionWithMeta[Type, CustomError, Meta]

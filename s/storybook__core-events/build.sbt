@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "storybook__core-events"
-version := "5.1.11-199933"
-scalaVersion := "2.12.8"
+version := "5.1.11-19258a"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,19 +1,20 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.BLANK_POLICY
-import typings.awsDashSdk.awsDashSdkStrings.CANCEL
-import typings.awsDashSdk.awsDashSdkStrings.DEACTIVATE
-import typings.awsDashSdk.awsDashSdkStrings.SNS
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsIotMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.BLANK_POLICY
+  import typings.awsDashSdk.awsDashSdkStrings.CANCEL
+  import typings.awsDashSdk.awsDashSdkStrings.DEACTIVATE
+  import typings.awsDashSdk.awsDashSdkStrings.SNS
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AbortAction = CANCEL | java.lang.String
   type AbortCriteriaList = js.Array[AbortCriteria]
   type AbortThresholdPercentage = Double

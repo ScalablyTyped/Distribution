@@ -1,20 +1,21 @@
 package typings.atReachMenuDashButton
 
-import typings.atReachMenuDashButton.Anon_As
-import typings.atReachMenuDashButton.Anon_Children
-import typings.atReachMenuDashButton.Anon_ChildrenReactNode
-import typings.atReachMenuDashButton.Anon_E
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.DetailedHTMLProps
-import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.HTMLProps
-import typings.std.HTMLButtonElement
-import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atReachMenuDashButtonMod {
+  import typings.atReachMenuDashButton.Anon_As
+  import typings.atReachMenuDashButton.Anon_Children
+  import typings.atReachMenuDashButton.Anon_ChildrenReactNode
+  import typings.atReachMenuDashButton.Anon_E
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.DetailedHTMLProps
+  import typings.react.reactMod.HTMLAttributes
+  import typings.react.reactMod.HTMLProps
+  import typings.std.HTMLButtonElement
+  import typings.std.HTMLDivElement
+
   type MenuButtonProps = Anon_Children with HTMLProps[HTMLButtonElement]
   type MenuItemProps = Anon_E with HTMLProps[HTMLDivElement]
   type MenuLinkProps[T /* <: SupportedMenuLinkComponent */] = ResolvedMenuLinkProps[T] with Anon_As[T]

@@ -1,11 +1,12 @@
 package typings.tv4
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tv4Mod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AsyncValidationCallback = js.Function2[/* isValid */ Boolean, /* error */ ValidationError, Unit]
   type ErrorCodes = StringDictionary[Double]
   type ErrorMap = StringDictionary[String]

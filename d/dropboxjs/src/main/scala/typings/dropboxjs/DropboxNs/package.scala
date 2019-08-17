@@ -1,14 +1,15 @@
 package typings.dropboxjs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.dropboxjs.DropboxNs.FileNs.Stat
-import typings.dropboxjs.DropboxNs.HttpNs.RangeInfo
-import typings.dropboxjs.DropboxNs.HttpNs.UploadCursor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DropboxNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.dropboxjs.DropboxNs.FileNs.Stat
+  import typings.dropboxjs.DropboxNs.HttpNs.RangeInfo
+  import typings.dropboxjs.DropboxNs.HttpNs.UploadCursor
+
   type ClientFileReadCallback = js.Function4[
     /* err */ ApiError, 
     /* fileContents */ String, 

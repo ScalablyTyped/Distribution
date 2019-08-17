@@ -1,0 +1,79 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryDoesNotExistExceptionMod
+
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesCreateBranchExceptionsUnionMod.CreateBranchExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesCreatePullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteBranchExceptionsUnionMod.DeleteBranchExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteFileExceptionsUnionMod.DeleteFileExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetBlobExceptionsUnionMod.GetBlobExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetBranchExceptionsUnionMod.GetBranchExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForComparedCommitExceptionsUnionMod.GetCommentsForComparedCommitExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForPullRequestExceptionsUnionMod.GetCommentsForPullRequestExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommitExceptionsUnionMod.GetCommitExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetDifferencesExceptionsUnionMod.GetDifferencesExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetFileExceptionsUnionMod.GetFileExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetFolderExceptionsUnionMod.GetFolderExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetMergeConflictsExceptionsUnionMod.GetMergeConflictsExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetRepositoryExceptionsUnionMod.GetRepositoryExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetRepositoryTriggersExceptionsUnionMod.GetRepositoryTriggersExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListBranchesExceptionsUnionMod.ListBranchesExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListPullRequestsExceptionsUnionMod.ListPullRequestsExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesMergePullRequestByFastForwardExceptionsUnionMod.MergePullRequestByFastForwardExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForComparedCommitExceptionsUnionMod.PostCommentForComparedCommitExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPutFileExceptionsUnionMod.PutFileExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPutRepositoryTriggersExceptionsUnionMod.PutRepositoryTriggersExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesTestRepositoryTriggersExceptionsUnionMod.TestRepositoryTriggersExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateDefaultBranchExceptionsUnionMod.UpdateDefaultBranchExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
+import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RepositoryDoesNotExistException
+  extends ServiceException[_RepositoryDoesNotExistExceptionDetails]
+     with CreateBranchExceptionsUnion
+     with CreatePullRequestExceptionsUnion
+     with DeleteBranchExceptionsUnion
+     with DeleteFileExceptionsUnion
+     with GetBlobExceptionsUnion
+     with GetBranchExceptionsUnion
+     with GetCommentsForComparedCommitExceptionsUnion
+     with GetCommentsForPullRequestExceptionsUnion
+     with GetCommitExceptionsUnion
+     with GetDifferencesExceptionsUnion
+     with GetFileExceptionsUnion
+     with GetFolderExceptionsUnion
+     with GetMergeConflictsExceptionsUnion
+     with GetRepositoryExceptionsUnion
+     with GetRepositoryTriggersExceptionsUnion
+     with ListBranchesExceptionsUnion
+     with ListPullRequestsExceptionsUnion
+     with MergePullRequestByFastForwardExceptionsUnion
+     with PostCommentForComparedCommitExceptionsUnion
+     with PostCommentForPullRequestExceptionsUnion
+     with PutFileExceptionsUnion
+     with PutRepositoryTriggersExceptionsUnion
+     with TestRepositoryTriggersExceptionsUnion
+     with UpdateDefaultBranchExceptionsUnion
+     with UpdateRepositoryDescriptionExceptionsUnion
+     with UpdateRepositoryNameExceptionsUnion {
+  @JSName("name")
+  var name_RepositoryDoesNotExistException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.RepositoryDoesNotExistException
+}
+
+object RepositoryDoesNotExistException {
+  @scala.inline
+  def apply(
+    details: _RepositoryDoesNotExistExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.RepositoryDoesNotExistException,
+    stack: String = null
+  ): RepositoryDoesNotExistException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[RepositoryDoesNotExistException]
+  }
+}
+

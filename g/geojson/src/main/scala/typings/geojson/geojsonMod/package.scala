@@ -1,11 +1,12 @@
 package typings.geojson
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object geojsonMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type BBox = (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple6[Double, Double, Double, Double, Double, Double])
   type GeoJSON = Geometry | (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties])
   type GeoJsonGeometryTypes = /* import warning: ImportType.apply Failed type conversion: geojson.geojson.Geometry['type'] */ js.Any

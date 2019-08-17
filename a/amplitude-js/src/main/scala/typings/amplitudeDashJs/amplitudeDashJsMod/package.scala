@@ -1,11 +1,12 @@
 package typings.amplitudeDashJs
 
-import typings.amplitudeDashJs.Anon_Reason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object amplitudeDashJsMod {
+  import typings.amplitudeDashJs.Anon_Reason
+
   type Callback = js.Function3[
     /* responseCode */ Double, 
     /* responseBody */ String, 

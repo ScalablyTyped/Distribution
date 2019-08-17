@@ -1,12 +1,13 @@
 package typings.documentdb
 
-import typings.documentdb.documentdbStrings.Hash
-import typings.documentdb.documentdbStrings.Javascript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object documentdbMod {
+  import typings.documentdb.documentdbStrings.Hash
+  import typings.documentdb.documentdbStrings.Javascript
+
   type DatabaseMeta = AbstractMeta
   type DocumentQuery = SqlQuerySpec | String
   type PartitionKind = Hash

@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonInfiniteScrollContent")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonInfiniteScrollContent * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonInfiniteScrollContent")
 @js.native
 class IonInfiniteScrollContent protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

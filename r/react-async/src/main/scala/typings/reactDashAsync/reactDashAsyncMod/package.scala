@@ -1,20 +1,21 @@
 package typings.reactDashAsync
 
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.reactDashAsync.Anon_Cancel
-import typings.reactDashAsync.Anon_Data
-import typings.reactDashAsync.Anon_DataError
-import typings.reactDashAsync.Anon_DataErrorFalse
-import typings.reactDashAsync.Anon_DataErrorFalseFinishedAt
-import typings.reactDashAsync.Anon_Error
-import typings.reactDashAsync.Anon_Fulfill
-import typings.reactDashAsync.Anon_Payload
-import typings.std.AbortController
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAsyncMod {
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.reactDashAsync.Anon_Cancel
+  import typings.reactDashAsync.Anon_Data
+  import typings.reactDashAsync.Anon_DataError
+  import typings.reactDashAsync.Anon_DataErrorFalse
+  import typings.reactDashAsync.Anon_DataErrorFalseFinishedAt
+  import typings.reactDashAsync.Anon_Error
+  import typings.reactDashAsync.Anon_Fulfill
+  import typings.reactDashAsync.Anon_Payload
+  import typings.std.AbortController
+
   type AsyncAction[T] = Start | Cancel | Fulfill[T] | Reject
   type AsyncChildren[T] = (js.Function1[/* state */ AsyncState[T], Element]) | Element
   type AsyncFulfilled[T] = AbstractState[T] with Anon_DataErrorFalse[T]

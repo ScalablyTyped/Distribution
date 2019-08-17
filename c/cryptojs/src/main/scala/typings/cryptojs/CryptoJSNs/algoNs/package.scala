@@ -1,13 +1,14 @@
 package typings.cryptojs.CryptoJSNs
 
-import typings.cryptojs.CryptoJSNs.libNs.Hasher
-import typings.cryptojs.CryptoJSNs.libNs.IHasher
-import typings.cryptojs.CryptoJSNs.libNs.StreamCipher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object algoNs {
+  import typings.cryptojs.CryptoJSNs.libNs.Hasher
+  import typings.cryptojs.CryptoJSNs.libNs.IHasher
+  import typings.cryptojs.CryptoJSNs.libNs.StreamCipher
+
   type AES = IBlockCipherImpl
   type DES = IBlockCipherImpl
   type MD5 = Hasher

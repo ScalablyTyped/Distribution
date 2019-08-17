@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "object-inspect"
-version := "1.4-dt-20180214Z-4d2a55"
-scalaVersion := "2.12.8"
+version := "1.4-dt-20180214Z-9987a9"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

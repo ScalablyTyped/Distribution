@@ -1,11 +1,12 @@
 package typings.atStorybookApi
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distStoreMod {
+  import typings.std.Partial
+
   type CallBack = js.Function1[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ /* s */ js.Any, 
     Unit

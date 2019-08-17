@@ -1,12 +1,13 @@
 package typings.inquirer
 
-import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.ListQuestionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPromptsListMod {
+  import typings.inquirer.inquirerMod.Answers
+  import typings.inquirer.inquirerMod.ListQuestionOptions
+
   /**
     * The question-options for the `ListPrompt<T>`.
     */

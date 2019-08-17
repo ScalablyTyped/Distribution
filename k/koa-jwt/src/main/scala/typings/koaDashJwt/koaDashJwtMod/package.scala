@@ -1,11 +1,12 @@
 package typings.koaDashJwt
 
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object koaDashJwtMod {
+  import typings.node.Buffer
+
   type SecretLoader = js.Function2[
     /* header */ js.Any, 
     /* payload */ js.Any, 

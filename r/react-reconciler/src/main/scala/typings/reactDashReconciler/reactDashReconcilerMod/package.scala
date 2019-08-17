@@ -1,13 +1,14 @@
 package typings.reactDashReconciler
 
-import typings.react.reactMod.ReactNode
-import typings.std.Map
-import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashReconcilerMod {
+  import typings.react.reactMod.ReactNode
+  import typings.std.Map
+  import typings.std.Set
+
   // react-reconciler/ReactFiberExpirationTime
   type ExpirationTime = Double
   type FiberRoot = BaseFiberRootProperties with ProfilingOnlyFiberRootProperties

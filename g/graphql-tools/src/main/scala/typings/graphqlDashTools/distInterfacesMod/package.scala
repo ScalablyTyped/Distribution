@@ -1,22 +1,23 @@
 package typings.graphqlDashTools
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.executionExecuteMod.ExecutionResult
-import typings.graphql.executionExecuteMod.ExecutionResultDataDefault
-import typings.graphql.graphqlMod.GraphQLScalarType
-import typings.graphql.languageAstMod.DocumentNode
-import typings.graphql.typeDefinitionMod.GraphQLField
-import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
-import typings.graphql.typeDefinitionMod.GraphQLNamedType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphql.typeDefinitionMod.GraphQLType
-import typings.graphqlDashTools.Anon_Extensions
-import typings.graphqlDashTools.Anon_MergeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distInterfacesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.executionExecuteMod.ExecutionResult
+  import typings.graphql.executionExecuteMod.ExecutionResultDataDefault
+  import typings.graphql.graphqlMod.GraphQLScalarType
+  import typings.graphql.languageAstMod.DocumentNode
+  import typings.graphql.typeDefinitionMod.GraphQLField
+  import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+  import typings.graphql.typeDefinitionMod.GraphQLNamedType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphql.typeDefinitionMod.GraphQLType
+  import typings.graphqlDashTools.Anon_Extensions
+  import typings.graphqlDashTools.Anon_MergeInfo
+
   type DirectiveResolverFn[TSource, TContext] = js.Function5[
     /* next */ NextResolverFn, 
     /* source */ TSource, 

@@ -1,14 +1,15 @@
 package typings.socketclusterDashServer
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.socketclusterDashServer.Anon_Channel
-import typings.socketclusterDashServer.socketclusterDashServerNumbers.`true`
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object scserverMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.socketclusterDashServer.Anon_Channel
+  import typings.socketclusterDashServer.socketclusterDashServerNumbers.`true`
+  import typings.std.Error
+
   type AuthToken = StringDictionary[js.Any]
   type badSocketAuthTokenListenerFunction = js.Function2[
     /* scSocket */ typings.socketclusterDashServer.scserversocketMod.^, 

@@ -62,7 +62,7 @@ trait Request
   var method_Request: String = js.native
   var next: js.UndefOr[NextFunction] = js.native
   var originalUrl: String = js.native
-  var params: js.Any = js.native
+  var params: Params = js.native
   /**
     * Short-hand for `url.parse(req.url).pathname`.
     */

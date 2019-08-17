@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "geopattern"
-version := "1.2-dt-20190212Z-53dae9"
-scalaVersion := "2.12.8"
+version := "1.2-dt-20190212Z-639fd6"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

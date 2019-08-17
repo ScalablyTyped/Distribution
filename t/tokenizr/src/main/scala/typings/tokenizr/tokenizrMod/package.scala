@@ -1,12 +1,13 @@
 package typings.tokenizr
 
-import typings.std.RegExpExecArray
-import typings.tokenizr.Anon_Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tokenizrMod {
+  import typings.std.RegExpExecArray
+  import typings.tokenizr.Anon_Action
+
   type Action = js.ThisFunction3[
     /* this */ ActionContext, 
     /* ctx */ ActionContext, 

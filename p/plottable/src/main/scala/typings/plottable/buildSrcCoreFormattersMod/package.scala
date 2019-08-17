@@ -1,11 +1,12 @@
 package typings.plottable
 
-import typings.plottable.buildSrcCoreDatasetMod.Dataset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcCoreFormattersMod {
+  import typings.plottable.buildSrcCoreDatasetMod.Dataset
+
   type DatumFormatter = js.Function4[
     /* value */ js.Any, 
     /* datum */ js.Any, 

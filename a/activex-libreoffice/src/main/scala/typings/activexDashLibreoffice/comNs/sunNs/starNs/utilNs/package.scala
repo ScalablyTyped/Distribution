@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilNs {
+  import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * describes a set of changes occurring as a batch transaction.
     * @see XChangesBatch

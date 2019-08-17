@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xmlNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameContainer
+
   /**
     * This service describes a container for XML attributes.
     *

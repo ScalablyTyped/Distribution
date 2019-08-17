@@ -1,11 +1,12 @@
 package typings.snabbdom
 
-import typings.snabbdom.vnodeMod.VNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hooksMod {
+  import typings.snabbdom.vnodeMod.VNode
+
   type CreateHook = js.Function2[/* emptyVNode */ VNode, /* vNode */ VNode, js.Any]
   type DestroyHook = js.Function1[/* vNode */ VNode, js.Any]
   type InitHook = js.Function1[/* vNode */ VNode, js.Any]

@@ -1,13 +1,14 @@
 package typings.reactDashMarkdown
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashMarkdownMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactElement
+
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashMarkdown.reactDashMarkdownStrings.left
     - typings.reactDashMarkdown.reactDashMarkdownStrings.right

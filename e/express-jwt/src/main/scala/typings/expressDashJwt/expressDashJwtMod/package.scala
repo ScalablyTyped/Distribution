@@ -1,12 +1,13 @@
 package typings.expressDashJwt
 
-import typings.express.expressMod.Request
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashJwtMod {
+  import typings.express.expressMod.Request
+  import typings.node.Buffer
+
   type GetTokenCallback = js.Function1[/* req */ Request, js.Any]
   type IsRevokedCallback = js.Function3[
     /* req */ Request, 

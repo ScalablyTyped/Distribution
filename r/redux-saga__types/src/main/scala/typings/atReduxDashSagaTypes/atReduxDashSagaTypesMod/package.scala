@@ -1,13 +1,14 @@
 package typings.atReduxDashSagaTypes
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.redux.reduxMod.Action
-import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atReduxDashSagaTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.redux.reduxMod.Action
+  import typings.std.IterableIterator
+
   type ActionMatchingPattern[P /* <: ActionPattern[Action[_]] */] = ActionMatchingSubPattern[
     (/* import warning: ImportType.apply Failed type conversion: P[number] */ js.Any) | P
   ]

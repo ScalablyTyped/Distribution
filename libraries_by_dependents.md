@@ -1289,6 +1289,7 @@
 | 147 | [lodash_dot_isundefined](./l/lodash_dot_isundefined) | The modern build of lodash’s _.isUndefined as a mo
 | 147 | [mapbox-gl](./m/mapbox-gl) | A WebGL interactive maps library
 | 147 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
+| 147 | [office-ui-fabric-react](./o/office-ui-fabric-react) | Reusable React components for building experiences
 | 147 | [winston-transport](./w/winston-transport) | Base stream implementations for winston@3 and up.
 | 146 | [imagemin-gifsicle](./i/imagemin-gifsicle) | Imagemin plugin for Gifsicle
 | 146 | [lazy-ass](./l/lazy-ass) | Lazy assertions without performance penalty
@@ -1572,6 +1573,7 @@
 | 109 | [java](./j/java) | Bridge API to connect with existing Java APIs.
 | 109 | [jsftp](./j/jsftp) | A sane FTP client implementation for NodeJS
 | 109 | [tsutils](./t/tsutils) | utilities for working with typescript's AST
+| 108 | [aws-sdk__types](./a/aws-sdk__types) | Types for the AWS SDK
 | 108 | [cradle](./c/cradle) | the high-level, caching, CouchDB library
 | 108 | [electron-packager](./e/electron-packager) | Customize and package your Electron app with OS-sp
 | 108 | [elegant-spinner](./e/elegant-spinner) | Elegant spinner for interactive CLI apps
@@ -1821,6 +1823,7 @@
 | 84 | [glob-watcher](./g/glob-watcher) | Watch globs and execute a function upon change, wi
 | 84 | [lodash-decorators](./l/lodash-decorators) | A collection of decorators using lodash at it's co
 | 84 | [marko](./m/marko) | UI Components + streaming, async, high performance
+| 84 | [numeric](./n/numeric) | Numerical analysis in javascript
 | 84 | [opentracing](./o/opentracing) | -
 | 84 | [p-retry](./p/p-retry) | Retry a promise-returning or async function
 | 84 | [properties-reader](./p/properties-reader) | Properties file reader for Node.js
@@ -1869,7 +1872,6 @@
 | 80 | [bech32](./b/bech32) | Bech32 encoding / decoding
 | 80 | [buffer-equal](./b/buffer-equal) | return whether two buffers are equal
 | 80 | [feathersjs__feathers](./f/feathersjs__feathers) | A REST and realtime API layer for modern applicati
-| 80 | [json-stringify-pretty-com](./j/json-stringify-pretty-compact) | The best of both JSON.stringify(obj) and JSON.stri
 | 80 | [lodash_dot_every](./l/lodash_dot_every) | The lodash method _.every exported as a module.
 | 80 | [minilog](./m/minilog) | Lightweight client & server-side logging with Stre
 | 80 | [path-parse](./p/path-parse) | Node.js path.parse() ponyfill
@@ -2652,6 +2654,7 @@
 | 41 | [mapbox__polyline](./m/mapbox__polyline) | Polyline encoding and decoding
 | 41 | [material__textfield](./m/material__textfield) | The Material Components for the web text field com
 | 41 | [npm-packlist](./n/npm-packlist) | Get a list of the files to add from a folder into 
+| 41 | [paypal-rest-sdk](./p/paypal-rest-sdk) | SDK for PayPal REST APIs
 | 41 | [prosemirror-commands](./p/prosemirror-commands) | Editing commands for ProseMirror
 | 41 | [pure-render-decorator](./p/pure-render-decorator) | Makes React components pure.
 | 41 | [react-virtualized-select](./r/react-virtualized-select) | Drop-down menu for React with windowing to support
@@ -2846,6 +2849,7 @@
 | 34 | [auth0](./a/auth0) | SDK for Auth0 API v2
 | 34 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
 | 34 | [console-log-level](./c/console-log-level) | The most simple logger imaginable
+| 34 | [ember-data](./e/ember-data) | A data layer for your Ember applications.
 | 34 | [gitconfiglocal](./g/gitconfiglocal) | parse the .git/config file into a useful data stru
 | 34 | [glob-expand](./g/glob-expand) | A sync glob / minimatch / RegExp function with a g
 | 34 | [gzip-js](./g/gzip-js) | GZIP in pure JavaScript (works in the browser)
@@ -2868,6 +2872,7 @@
 | 34 | [payment](./p/payment) | A general purpose library for building credit card
 | 34 | [peerjs](./p/peerjs) | PeerJS client
 | 34 | [pg-copy-streams](./p/pg-copy-streams) | Low-Level COPY TO and COPY FROM streams for Postgr
+| 34 | [pixl-xml](./p/pixl-xml) | A simple module for parsing and composing XML.
 | 34 | [prosemirror-history](./p/prosemirror-history) | Undo history for ProseMirror
 | 34 | [protocol-buffers-schema](./p/protocol-buffers-schema) | No nonsense protocol buffers schema parser written
 | 34 | [qrcode-generator](./q/qrcode-generator) | QR Code Generator implementation in JavaScript.
@@ -2969,6 +2974,7 @@
 | 31 | [storybook__theming](./s/storybook__theming) | Core Storybook Components
 | 31 | [strophe_dot_js](./s/strophe_dot_js) | Strophe.js is an XMPP library for JavaScript
 | 31 | [timm](./t/timm) | Immutability helpers with fast reads and acceptabl
+| 31 | [true-case-path](./t/true-case-path) | Given a possibly case-variant version of an existi
 | 31 | [typeof](./t/typeof) | Node module. typeOf('a string') == 'string', typeO
 | 31 | [viewport-mercator-project](./v/viewport-mercator-project) | Utilities for perspective-enabled Web Mercator pro
 | 31 | [wepy](./w/wepy) | -
@@ -3142,7 +3148,6 @@
 | 27 | [tilebelt](./t/tilebelt) | simple tile utilities
 | 27 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC
 | 27 | [umd](./u/umd) | Universal Module Definition for use in automated b
-| 27 | [vega-lite](./v/vega-lite) | Vega-Lite is a concise high-level language for int
 | 27 | [vega-util](./v/vega-util) | JavaScript utilities for Vega.
 | 27 | [victor](./v/victor) | A JavaScript 2D vector class with methods for comm
 | 27 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and
@@ -3323,6 +3328,7 @@
 | 23 | [yar](./y/yar) | Cookie jar plugin for Hapi
 | 22 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an
 | 22 | [auto-launch](./a/auto-launch) | Launch node applications or executables at login (
+| 22 | [aws-sdk__signature-v4](./a/aws-sdk__signature-v4) | A standalone implementation of the AWS Signature V
 | 22 | [bases](./b/bases) | Utility for converting numbers to/from different b
 | 22 | [blueprintjs__table](./b/blueprintjs__table) | Scalable interactive table component
 | 22 | [bootbox](./b/bootbox) | Wrappers for JavaScript alert(), confirm() and oth
@@ -3571,6 +3577,7 @@
 | 18 | [apollo-upload-client](./a/apollo-upload-client) | An Apollo Link for Apollo Client that allows FileL
 | 18 | [apollographql__graphql-pl](./a/apollographql__graphql-playground-html) | GraphQL IDE for better development workflows (Grap
 | 18 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/
+| 18 | [aws-sdk__middleware-heade](./a/aws-sdk__middleware-header-default) | -
 | 18 | [blueprintjs__icons](./b/blueprintjs__icons) | Components, fonts, icons, and css files for creati
 | 18 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the 
 | 18 | [builder-util-runtime](./b/builder-util-runtime) | HTTP utilities. Used by 
@@ -3627,11 +3634,11 @@
 | 18 | [upper-case-first](./u/upper-case-first) | Upper case the first character of a string
 | 18 | [uuid-parse](./u/uuid-parse) | RFC4122 UUID parser
 | 18 | [vec3](./v/vec3) | 3d vector math with good unit tests
-| 18 | [vega-embed](./v/vega-embed) | Publish Vega visualizations as embedded web compon
 | 18 | [vnu-jar](./v/vnu-jar) | Provides the Nu Html Checker «vnu.jar» file
 | 18 | [yoga-layout](./y/yoga-layout) | Yoga is a cross-platform layout engine enabling ma
 | 17 | [absolute](./a/absolute) | Test if a path (string) is absolute
 | 17 | [ant-design__icons-angular](./a/ant-design__icons-angular) |  Ant Design Icons for Angular 
+| 17 | [aws-sdk__util-utf8-browse](./a/aws-sdk__util-utf8-browser) | A browser UTF-8 string  UInt8Array converter
 | 17 | [bem-cn](./b/bem-cn) | Friendly BEM class names generator, greate for Rea
 | 17 | [chai-jquery](./c/chai-jquery) | jQuery assertions for the Chai assertion library
 | 17 | [countdown](./c/countdown) | A simple JavaScript API for producing an accurate,
@@ -3641,6 +3648,7 @@
 | 17 | [datatables_dot_net-colreo](./d/datatables_dot_net-colreorder) | ColReorder for DataTables
 | 17 | [db-migrate-base](./d/db-migrate-base) | db-migrate base driver
 | 17 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js
+| 17 | [ember-modal-dialog](./e/ember-modal-dialog) | An ember-cli addon for implementing modal dialogs
 | 17 | [ensure-posix-path](./e/ensure-posix-path) | -
 | 17 | [express-domain-middleware](./e/express-domain-middleware) | wrap express request/response with node domains
 | 17 | [falcor-json-graph](./f/falcor-json-graph) | A set of factory functions for creating JSON Graph
@@ -3699,6 +3707,13 @@
 | 17 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
 | 17 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
 | 17 | [zip-webpack-plugin](./z/zip-webpack-plugin) | Webpack plugin to zip up emitted files.
+| 16 | [aws-sdk__config-resolver](./a/aws-sdk__config-resolver) | -
+| 16 | [aws-sdk__core-handler](./a/aws-sdk__core-handler) | AWS SDK Core Handler
+| 16 | [aws-sdk__middleware-conte](./a/aws-sdk__middleware-content-length) | -
+| 16 | [aws-sdk__middleware-seria](./a/aws-sdk__middleware-serializer) | Provides the middleware serializer for the AWS SDK
+| 16 | [aws-sdk__middleware-stack](./a/aws-sdk__middleware-stack) | Provides a means for composing multiple middleware
+| 16 | [aws-sdk__retry-middleware](./a/aws-sdk__retry-middleware) | -
+| 16 | [aws-sdk__signing-middlewa](./a/aws-sdk__signing-middleware) | -
 | 16 | [backgrid](./b/backgrid) | Backgrid.js is a set of components for building se
 | 16 | [backstopjs](./b/backstopjs) | BackstopJS: Catch CSS curveballs.
 | 16 | [bezier-js](./b/bezier-js) | A javascript library for working with Bezier curve
@@ -3885,6 +3900,11 @@
 | 13 | [angular-gettext](./a/angular-gettext) | Gettext support for Angular.js
 | 13 | [apollo-env](./a/apollo-env) | -
 | 13 | [asyncblock](./a/asyncblock) | A simple and powerful abstraction of node-fibers
+| 13 | [aws-sdk__hash-node](./a/aws-sdk__hash-node) | -
+| 13 | [aws-sdk__json-builder](./a/aws-sdk__json-builder) | A marshaller for the body portion of AWS's JSON an
+| 13 | [aws-sdk__json-error-unmar](./a/aws-sdk__json-error-unmarshaller) | -
+| 13 | [aws-sdk__json-parser](./a/aws-sdk__json-parser) | An unmarshaller for the body portion of AWS's JSON
+| 13 | [aws-sdk__util-base64-brow](./a/aws-sdk__util-base64-browser) | A pure JS Base64  UInt8Array converter
 | 13 | [axel](./a/axel) | AXEL is a Node.js graphics library for drawing gra
 | 13 | [backbone_dot_paginator](./b/backbone_dot_paginator) | A pageable Backbone.Collection superset. Supports 
 | 13 | [base32-encode](./b/base32-encode) | Base32 encoder with support for multiple variants.
@@ -4061,6 +4081,10 @@
 | 11 | [ably](./a/ably) | Realtime client library for Ably.io, the realtime 
 | 11 | [angular-cookie](./a/angular-cookie) | Lightweight Angular module for access to cookies
 | 11 | [angularfire](./a/angularfire) | The officially supported AngularJS binding for Fir
+| 11 | [aws-crypto__sha256-browse](./a/aws-crypto__sha256-browser) | SHA256 wrapper for browsers that prefers window.cr
+| 11 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f
+| 11 | [aws-sdk__is-array-buffer](./a/aws-sdk__is-array-buffer) | Provides a function for detecting if an argument i
+| 11 | [aws-sdk__util-utf8-node](./a/aws-sdk__util-utf8-node) | A Node.JS UTF-8 string  UInt8Array converter
 | 11 | [backbone-relational](./b/backbone-relational) | Get and set relations (one-to-one, one-to-many, ma
 | 11 | [bootstrap-table](./b/bootstrap-table) | An extended Bootstrap table with radio, checkbox, 
 | 11 | [chai-moment](./c/chai-moment) | date assertions for chai, powered by moment
@@ -4152,6 +4176,7 @@
 | 11 | [rivets](./r/rivets) | Declarative data binding + templating solution.
 | 11 | [rocksdb](./r/rocksdb) | A Node.js RocksDB binding, a backend for LevelUP
 | 11 | [router5-transition-path](./r/router5-transition-path) | Router5 transition path helper function
+| 11 | [rsocket-core](./r/rsocket-core) | RSocket core
 | 11 | [rsocket-types](./r/rsocket-types) | RSocket types
 | 11 | [rtl-detect](./r/rtl-detect) | Library will help you to detect if the locale is r
 | 11 | [run-jxa](./r/run-jxa) | Run JXAcode and get the result
@@ -4181,6 +4206,9 @@
 | 10 | [array-foreach](./a/array-foreach) | Array
 | 10 | [array-move](./a/array-move) | Move an array item to a different position
 | 10 | [avoscloud-sdk](./a/avoscloud-sdk) | AVOSCloud JavaScript SDK.
+| 10 | [aws-sdk__region-provider](./a/aws-sdk__region-provider) | AWS region provider for Node.JS. Will determine th
+| 10 | [aws-sdk__url-parser-node](./a/aws-sdk__url-parser-node) | -
+| 10 | [aws-sdk__util-base64-node](./a/aws-sdk__util-base64-node) | A Node.JS Base64  UInt8Array converter
 | 10 | [before-after-hook](./b/before-after-hook) | asynchronous before/error/after hooks for internal
 | 10 | [bin-pack](./b/bin-pack) | A packing algorithm for 2D bin packing. Largely ba
 | 10 | [bootstrap-toggle](./b/bootstrap-toggle) | Bootstrap Toggle is a highly flexible Bootstrap pl
@@ -4196,6 +4224,7 @@
 | 10 | [dush](./d/dush) | Microscopic & functional event emitter in ~350 byt
 | 10 | [egg-core](./e/egg-core) | A core Pluggable framework based on koa
 | 10 | [electron-publish](./e/electron-publish) | Part of 
+| 10 | [ember](./e/ember) | A framework for creating ambitious web application
 | 10 | [event-lite](./e/event-lite) | Light-weight EventEmitter (less than 1KB when gzip
 | 10 | [express-paginate](./e/express-paginate) | Node.js pagination middleware and view helpers
 | 10 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in
@@ -4270,7 +4299,6 @@
 | 10 | [theo](./t/theo) | Design Tokens formatter
 | 10 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
 | 10 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider
-| 10 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
 | 10 | [virtual-keyboard](./v/virtual-keyboard) | Virtual Keyboard using jQuery UI
 | 10 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a
 | 10 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
@@ -4283,6 +4311,12 @@
 | 9 | [arcgis-js-api](./a/arcgis-js-api) | Minified, unbuilt version of the ArcGIS API for Ja
 | 9 | [audiosprite](./a/audiosprite) | Concat small audio files into single file and expo
 | 9 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
+| 9 | [aws-sdk__node-http-handle](./a/aws-sdk__node-http-handler) | Provides a way to make requests
+| 9 | [aws-sdk__protocol-json-rp](./a/aws-sdk__protocol-json-rpc) | Provides a marshaller and unmarshaller for the AWS
+| 9 | [aws-sdk__protocol-timesta](./a/aws-sdk__protocol-timestamp) | A marshaller and unmarshaller for timestamps used 
+| 9 | [aws-sdk__stream-collector](./a/aws-sdk__stream-collector-node) | Provides a way to store the contents of a stream i
+| 9 | [aws-sdk__util-body-length](./a/aws-sdk__util-body-length-node) | Determines the length of a request body in node.js
+| 9 | [aws-sdk__util-user-agent-](./a/aws-sdk__util-user-agent-node) | -
 | 9 | [base16](./b/base16) | Base16 themes as JS objects
 | 9 | [blocking-proxy](./b/blocking-proxy) | WebDriver Proxy for testing rich clients. It block
 | 9 | [bluebird-global](./b/bluebird-global) | Patches global.Promise to use bluebird and returns
@@ -4376,6 +4410,8 @@
 | 8 | [angular-storage](./a/angular-storage) | A Storage done right for AngularJS.
 | 8 | [app-path](./a/app-path) | Get the path to an app (macOS)
 | 8 | [aqb](./a/aqb) | ArangoDB AQL query builder.
+| 8 | [aws-sdk__stream-collector](./a/aws-sdk__stream-collector-browser) | Provides a way to store the contents of a stream i
+| 8 | [aws-sdk__url-parser-brows](./a/aws-sdk__url-parser-browser) | -
 | 8 | [backbone-associations](./b/backbone-associations) | Create object hierarchies with Backbone models. Re
 | 8 | [bloem](./b/bloem) | Bloom Filter using the FNV hash function
 | 8 | [breeze](./b/breeze) | Functional async flow control library
@@ -4498,6 +4534,11 @@
 | 7 | [asana](./a/asana) | Official NodeJS and BrowserJS client for the Asana
 | 7 | [atob-lite](./a/atob-lite) | Smallest/simplest possible means of using atob wit
 | 7 | [audiobuffer-to-wav](./a/audiobuffer-to-wav) | convert an AudioBuffer to .wav format
+| 7 | [aws-sdk__fetch-http-handl](./a/aws-sdk__fetch-http-handler) | Provides a way to make requests
+| 7 | [aws-sdk__property-provide](./a/aws-sdk__property-provider) | -
+| 7 | [aws-sdk__response-metadat](./a/aws-sdk__response-metadata-extractor) | Provides a function for extracting metadata from r
+| 7 | [aws-sdk__util-body-length](./a/aws-sdk__util-body-length-browser) | Determines the length of a request body in browser
+| 7 | [aws-sdk__util-user-agent-](./a/aws-sdk__util-user-agent-browser) | -
 | 7 | [bagpipes](./b/bagpipes) | Less code, more flow. Let's dance
 | 7 | [batch-stream](./b/batch-stream) | Transform a stream into batches
 | 7 | [binaryextensions](./b/binaryextensions) | A package that contains an array of every single f
@@ -4655,6 +4696,8 @@
 | 6 | [artillery](./a/artillery) | Flexible and powerful toolkit for load and functio
 | 6 | [ascii2mathml](./a/ascii2mathml) | The second AsciiMath – MathML converter
 | 6 | [async-writer](./a/async-writer) | The async-writer module makes it possible to async
+| 6 | [aws-sdk__protocol-rest](./a/aws-sdk__protocol-rest) | Provides a marshaller and unmarshaller for the AWS
+| 6 | [aws-sdk__util-error-const](./a/aws-sdk__util-error-constructor) | -
 | 6 | [axios-cancel](./a/axios-cancel) | Simplify cancellation of http requests when using 
 | 6 | [bin-version](./b/bin-version) | Get the version of a binary in semver format
 | 6 | [bittorrent-protocol](./b/bittorrent-protocol) | Simple, robust, BitTorrent peer wire protocol impl
@@ -4808,6 +4851,8 @@
 | 5 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
 | 5 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 5 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones
+| 5 | [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa
+| 5 | [aws-sdk__util-locate-wind](./a/aws-sdk__util-locate-window) | -
 | 5 | [b_](./b/b_) | BEM class name generator
 | 5 | [backbone_dot_localstorage](./b/backbone_dot_localstorage) | -
 | 5 | [bip21](./b/bip21) | A BIP21 compatible URL encoding utility library
@@ -4969,6 +5014,7 @@
 | 5 | [typescript-optional](./t/typescript-optional) | Optional (like Java) implementation in TypeScript
 | 5 | [typescript-tuple](./t/typescript-tuple) | Generics to work with tuples in TypeScript
 | 5 | [ua-string](./u/ua-string) | Get the user agent of a recent Chrome version to p
+| 5 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components.
 | 5 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node
 | 5 | [urlparser](./u/urlparser) | Url parser
 | 5 | [viewport-list](./v/viewport-list) | Return a list of devices and their viewports
@@ -4985,6 +5031,9 @@
 | 4 | [angular-load](./a/angular-load) | angular-load ============
 | 4 | [apex_dot_js](./a/apex_dot_js) | λ improves AWS Lambda's UX with promises
 | 4 | [apollo-server-plugin-base](./a/apollo-server-plugin-base) | Apollo Server plugin base classes
+| 4 | [aws-sdk__is-iterable](./a/aws-sdk__is-iterable) | Provides a function for detecting if input is iter
+| 4 | [aws-sdk__protocol-query](./a/aws-sdk__protocol-query) | Provides a marshaller and unmarshaller for the AWS
+| 4 | [aws-sdk__query-builder](./a/aws-sdk__query-builder) | A marshaller for the body portion of AWS's Query(E
 | 4 | [bigscreen](./b/bigscreen) | A simple library for using the JavaScript Fullscre
 | 4 | [boolify-string](./b/boolify-string) | Check a string whether truthy or falsy.
 | 4 | [bunyan-logentries](./b/bunyan-logentries) | Bunyan logger stream for Logentries
@@ -5012,6 +5061,7 @@
 | 4 | [egg-cookies](./e/egg-cookies) | cookies module for egg
 | 4 | [electron-notifications](./e/electron-notifications) | A node module for sending notifications in electro
 | 4 | [element-ready](./e/element-ready) | Detect when an element is ready in the DOM
+| 4 | [ember-resolver](./e/ember-resolver) | The default modules based resolver for Ember CLI.
 | 4 | [emoji-flags](./e/emoji-flags) | return emoji flag symbol for country code
 | 4 | [empty-trash](./e/empty-trash) | Empty the trash
 | 4 | [ensure-error](./e/ensure-error) | Ensures a value is a valid error by making it one 
@@ -5156,8 +5206,6 @@
 | 4 | [url-metadata](./u/url-metadata) | Request an http(s) url and scrape its metadata.
 | 4 | [utm](./u/utm) | Bidirectional UTM-WGS84 converter
 | 4 | [vectorious](./v/vectorious) | A high performance linear algebra library.
-| 4 | [vega-lib](./v/vega-lib) | Include Vega in projects using minimal dependencie
-| 4 | [vega-schema-url-parser](./v/vega-schema-url-parser) | A parser to get the library and version from Vega 
 | 4 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit
 | 4 | [weak-napi](./w/weak-napi) | Make weak references to JavaScript Objects.
 | 4 | [webdriver](./w/webdriver) | A Node.js bindings implementation for the W3C WebD
@@ -5187,6 +5235,18 @@
 | 3 | [atpl](./a/atpl) | A complete and fast template engine fully compatib
 | 3 | [auto-sni](./a/auto-sni) | Automatically generate tls credentials using letse
 | 3 | [await-timeout](./a/await-timeout) | A Promise-based API for setTimeout / clearTimeout
+| 3 | [aws-crypto__ie11-detectio](./a/aws-crypto__ie11-detection) | Provides functions and types for detecting if the 
+| 3 | [aws-crypto__supports-web-](./a/aws-crypto__supports-web-crypto) | Provides functions for detecting if the host envir
+| 3 | [aws-sdk__build-types](./a/aws-sdk__build-types) | -
+| 3 | [aws-sdk__is-node](./a/aws-sdk__is-node) | Provides a function for detecting if the host envi
+| 3 | [aws-sdk__query-error-unma](./a/aws-sdk__query-error-unmarshaller) | -
+| 3 | [aws-sdk__querystring-buil](./a/aws-sdk__querystring-builder) | -
+| 3 | [aws-sdk__querystring-pars](./a/aws-sdk__querystring-parser) | -
+| 3 | [aws-sdk__sha256-tree-hash](./a/aws-sdk__sha256-tree-hash) | -
+| 3 | [aws-sdk__shared-ini-file-](./a/aws-sdk__shared-ini-file-loader) | This module provides a function that reads from AW
+| 3 | [aws-sdk__util-buffer-from](./a/aws-sdk__util-buffer-from) | -
+| 3 | [aws-sdk__util-format-url](./a/aws-sdk__util-format-url) | -
+| 3 | [aws-sdk__xml-body-parser](./a/aws-sdk__xml-body-parser) | parse XML response of to JS object for AWS SDK
 | 3 | [b64-lite](./b/b64-lite) | isomorphic base64 library in 152 bytes
 | 3 | [bang88__react-native-draw](./b/bang88__react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
 | 3 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier
@@ -5220,6 +5280,7 @@
 | 3 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension
 | 3 | [egg-view](./e/egg-view) | Base view plugin for egg
 | 3 | [elo-rank](./e/elo-rank) | elo ranking system
+| 3 | [ember__test-helpers](./e/ember__test-helpers) | Helpers for testing Ember.js applications
 | 3 | [express-ntlm](./e/express-ntlm) | An express middleware to have simple NTLM-authenti
 | 3 | [f1](./f/f1) | A stateful ui library
 | 3 | [firebase__messaging-types](./f/firebase__messaging-types) | @firebase/messaging Types
@@ -5269,7 +5330,6 @@
 | 3 | [jsonnet](./j/jsonnet) | jsonnet wrapper for Node.js
 | 3 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC
 | 3 | [jsreport-phantom-pdf](./j/jsreport-phantom-pdf) | jsreport recipe which is rendering pdf from html u
-| 3 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 3 | [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension
 | 3 | [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget
 | 3 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
@@ -5376,6 +5436,8 @@
 | 3 | [revalidate](./r/revalidate) | Elegant and composable validations
 | 3 | [rollup-plugin-delete](./r/rollup-plugin-delete) | Delete files and folders using Rollup
 | 3 | [ronomon__crypto-async](./r/ronomon__crypto-async) | Fast, reliable cipher, hash and hmac methods execu
+| 3 | [rsocket-tcp-client](./r/rsocket-tcp-client) | RSocket TCP client for use in Node.js environments
+| 3 | [rsocket-websocket-client](./r/rsocket-websocket-client) | RSocket WebSocket client for use in browser enviro
 | 3 | [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework
 | 3 | [sammy](./s/sammy) | Sammy is a RESTful Evented JavaScript framework bu
 | 3 | [sasl-plain](./s/sasl-plain) | JavaScript implementation of PLAIN SASL mechanism.
@@ -5451,6 +5513,18 @@
 | 2 | [atlaskit__single-select](./a/atlaskit__single-select) | React component which allows selection of a single
 | 2 | [atlassian-crowd-client](./a/atlassian-crowd-client) | Atlassian Crowd API client for Node
 | 2 | [atom](./a/atom) | shared, synchronous, independent state for javascr
+| 2 | [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-node) | -
+| 2 | [aws-sdk__apply-body-check](./a/aws-sdk__apply-body-checksum-middleware) | This package provides AWS SDK for JavaScript middl
+| 2 | [aws-sdk__bucket-endpoint-](./a/aws-sdk__bucket-endpoint-middleware) | -
+| 2 | [aws-sdk__chunked-blob-rea](./a/aws-sdk__chunked-blob-reader) | -
+| 2 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-ini) | AWS credential provider that sources credentials f
+| 2 | [aws-sdk__location-constra](./a/aws-sdk__location-constraint-middleware) | -
+| 2 | [aws-sdk__md5-js](./a/aws-sdk__md5-js) | -
+| 2 | [aws-sdk__query-request-pr](./a/aws-sdk__query-request-presigner) | -
+| 2 | [aws-sdk__s3-error-unmarsh](./a/aws-sdk__s3-error-unmarshaller) | -
+| 2 | [aws-sdk__ssec-middleware](./a/aws-sdk__ssec-middleware) | -
+| 2 | [aws-sdk__util-uri-escape](./a/aws-sdk__util-uri-escape) | -
+| 2 | [aws-sdk__xml-body-builder](./a/aws-sdk__xml-body-builder) | XML Body Builder for the AWS SDK
 | 2 | [axios-token-interceptor](./a/axios-token-interceptor) | An interceptor which makes it easier to work with 
 | 2 | [b2a](./b/b2a) | btoa and atob (ie base64 encoding and decoding) su
 | 2 | [backbone_dot_layoutmanage](./b/backbone_dot_layoutmanager) | A layout and template manager for Backbone.js appl
@@ -5493,6 +5567,7 @@
 | 2 | [easeljs](./e/easeljs) | EaselJS is a library for building high-performance
 | 2 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for 
 | 2 | [electron-spellchecker](./e/electron-spellchecker) | Implement spellchecking, correctly
+| 2 | [ember-feature-flags](./e/ember-feature-flags) | Feature flags/toggles for Ember apps
 | 2 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
 | 2 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
 | 2 | [express-flash-notificatio](./e/express-flash-notification) | Express.js flash notifications that works with any
@@ -5696,10 +5771,12 @@
 | 2 | [request-as-curl](./r/request-as-curl) | Serializes http.ClientRequest as curl(1) command s
 | 2 | [resolve-protobuf-schema](./r/resolve-protobuf-schema) | Read a protobuf schema from the disk, parse it and
 | 2 | [retinajs](./r/retinajs) | -
+| 2 | [rijndael-js](./r/rijndael-js) | Rijndael in Pure Javascript
 | 2 | [roads](./r/roads) | An isomophic http framework
 | 2 | [rollup-typescript](./r/rollup-typescript) | Seamless integration between Rollup and TypeScript
 | 2 | [rot-js](./r/rot-js) | A roguelike toolkit in JavaScript
 | 2 | [route-node](./r/route-node) | A package to create a tree of named routes
+| 2 | [rsocket-websocket-server](./r/rsocket-websocket-server) | RSocket WebSocket server
 | 2 | [rx-core](./r/rx-core) | Core library for composing asynchronous and event-
 | 2 | [s3-uploader](./s/s3-uploader) | Resize, rename, and upload images to AWS S3
 | 2 | [saml20](./s/saml20) | SAML 2.0 and 1.1 token parser for Node.js
@@ -5747,7 +5824,6 @@
 | 2 | [url-safe-base64](./u/url-safe-base64) | url safe base64 en- and decoding
 | 2 | [use-persisted-state](./u/use-persisted-state) | A custom React Hook that provides a multi-instance
 | 2 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
-| 2 | [vega-themes](./v/vega-themes) | Themes for stylized Vega and Vega-Lite visualizati
 | 2 | [vssln-parser](./v/vssln-parser) | Parses Visual Studio Solution (sln) files and retu
 | 2 | [vue-chartkick](./v/vue-chartkick) | Create beautiful JavaScript charts with one line o
 | 2 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of 
@@ -5790,6 +5866,29 @@
 | 1 | [asyncblock-generators](./a/asyncblock-generators) | asyncblock without the fibers
 | 1 | [atlaskit__tree](./a/atlaskit__tree) | A React Component for displaying expandable and so
 | 1 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha
+| 1 | [aws-crypto__crc32](./a/aws-crypto__crc32) | Pure JS implementation of CRC32 https://en.wikiped
+| 1 | [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256.
+| 1 | [aws-crypto__sha256-univer](./a/aws-crypto__sha256-universal) | A consistent interface for SHA256 across browsers 
+| 1 | [aws-sdk__abort-controller](./a/aws-sdk__abort-controller) | A simple abort controller library
+| 1 | [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-browser) | -
+| 1 | [aws-sdk__chunked-stream-r](./a/aws-sdk__chunked-stream-reader-node) | Exports a streamReader function that accepts a rea
+| 1 | [aws-sdk__client-cognito-i](./a/aws-sdk__client-cognito-identity-browser) | Browser SDK for Amazon Cognito Identity
+| 1 | [aws-sdk__client-s3-node](./a/aws-sdk__client-s3-node) | Node SDK for Amazon Simple Storage Service
+| 1 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-env) | AWS credential provider that sources credentials f
+| 1 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-imds) | AWS credential provider that sources credentials f
+| 1 | [aws-sdk__eventstream-mars](./a/aws-sdk__eventstream-marshaller) | -
+| 1 | [aws-sdk__hash-blob-browse](./a/aws-sdk__hash-blob-browser) | -
+| 1 | [aws-sdk__hash-stream-node](./a/aws-sdk__hash-stream-node) | A utility for calculating the hash of Node.JS read
+| 1 | [aws-sdk__logger](./a/aws-sdk__logger) | -
+| 1 | [aws-sdk__middleware-expec](./a/aws-sdk__middleware-expect-continue) | -
+| 1 | [aws-sdk__middleware-input](./a/aws-sdk__middleware-input-default) | -
+| 1 | [aws-sdk__middleware-sdk-g](./a/aws-sdk__middleware-sdk-glacier) | -
+| 1 | [aws-sdk__remove-sensitive](./a/aws-sdk__remove-sensitive-logs) | -
+| 1 | [aws-sdk__service-error-cl](./a/aws-sdk__service-error-classification) | -
+| 1 | [aws-sdk__service-model](./a/aws-sdk__service-model) | A service model parser and validator
+| 1 | [aws-sdk__util-create-requ](./a/aws-sdk__util-create-request) | -
+| 1 | [aws-sdk__util-utf8-univer](./a/aws-sdk__util-utf8-universal) | A cross-platform UTF-8 string  UInt8Array converte
+| 1 | [aws-sdk__xml-builder](./a/aws-sdk__xml-builder) | XML builder for the AWS SDK
 | 1 | [axios-case-converter](./a/axios-case-converter) | Axios transformer/interceptor that converts snake_
 | 1 | [babel-webpack-plugin](./b/babel-webpack-plugin) | babel plugin (not loader) for webpack
 | 1 | [base64-async](./b/base64-async) | Non-blocking chunked Base64 encoding
@@ -5856,6 +5955,8 @@
 | 1 | [ecore](./e/ecore) | Ecore (EMOF) JavaScript Implementation
 | 1 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos
 | 1 | [electron-notify](./e/electron-notify) | Nice and simple notifications for Electron apps
+| 1 | [ember-mocha](./e/ember-mocha) | Mocha helpers for testing Ember.js applications
+| 1 | [ember-qunit](./e/ember-qunit) | QUnit helpers for testing Ember.js applications
 | 1 | [env-to-object](./e/env-to-object) | Maps environment variables to a configuration obje
 | 1 | [enzyme-adapter-react-15_d](./e/enzyme-adapter-react-15_dot_4) | JavaScript Testing utilities for React
 | 1 | [enzyme-redux](./e/enzyme-redux) | Test utils to simplify testing of containers in re
@@ -5963,7 +6064,6 @@
 | 1 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
 | 1 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
 | 1 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
-| 1 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
 | 1 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
 | 1 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
 | 1 | [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension
@@ -6158,6 +6258,7 @@
 | 1 | [rmc-trigger](./r/rmc-trigger) | base abstract trigger component for react mobile
 | 1 | [roads-server](./r/roads-server) | A simple web server for the roads framework
 | 1 | [rrc](./r/rrc) | React Router v4 helper components
+| 1 | [rsocket-tcp-server](./r/rsocket-tcp-server) | RSocket TCP server
 | 1 | [rx-lite-virtualtime](./r/rx-lite-virtualtime) | Lightweight library with virtual time functions fo
 | 1 | [sasl-digest-md5](./s/sasl-digest-md5) | JavaScript implementation of DIGEST-MD5 SASL mecha
 | 1 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker
@@ -6283,6 +6384,37 @@
 | 0 | [aurelia-knockout](./a/aurelia-knockout) | A Knockout plugin for Aurelia.
 | 0 | [auth0-angular](./a/auth0-angular) | Angular SDK to use with Auth0
 | 0 | [authmosphere](./a/authmosphere) | authmosphere is a library to support OAuth2 workfl
+| 0 | [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-universal) | -
+| 0 | [aws-sdk__client-codecommi](./a/aws-sdk__client-codecommit-node) | Node SDK for AWS CodeCommit
+| 0 | [aws-sdk__client-dynamodb-](./a/aws-sdk__client-dynamodb-browser) | Browser SDK for Amazon DynamoDB
+| 0 | [aws-sdk__client-dynamodb-](./a/aws-sdk__client-dynamodb-node) | Node SDK for Amazon DynamoDB
+| 0 | [aws-sdk__client-glacier-n](./a/aws-sdk__client-glacier-node) | Node SDK for Amazon Glacier
+| 0 | [aws-sdk__client-kinesis-b](./a/aws-sdk__client-kinesis-browser) | Browser SDK for Amazon Kinesis
+| 0 | [aws-sdk__client-kms-brows](./a/aws-sdk__client-kms-browser) | Browser SDK for AWS Key Management Service
+| 0 | [aws-sdk__client-kms-node](./a/aws-sdk__client-kms-node) | Node SDK for AWS Key Management Service
+| 0 | [aws-sdk__client-lambda-no](./a/aws-sdk__client-lambda-node) | Node SDK for AWS Lambda
+| 0 | [aws-sdk__client-pinpoint-](./a/aws-sdk__client-pinpoint-browser) | Browser SDK for Amazon Pinpoint
+| 0 | [aws-sdk__client-s3-browse](./a/aws-sdk__client-s3-browser) | Browser SDK for Amazon Simple Storage Service
+| 0 | [aws-sdk__client-sqs-node](./a/aws-sdk__client-sqs-node) | Node SDK for Amazon Simple Queue Service
+| 0 | [aws-sdk__client-xray-node](./a/aws-sdk__client-xray-node) | Node SDK for AWS X-Ray
+| 0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-cognito-identity) | -
+| 0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-process) | AWS credential provider that sources credential_pr
+| 0 | [aws-sdk__ec2-error-unmars](./a/aws-sdk__ec2-error-unmarshaller) | -
+| 0 | [aws-sdk__http-headers](./a/aws-sdk__http-headers) | -
+| 0 | [aws-sdk__http-serializati](./a/aws-sdk__http-serialization) | -
+| 0 | [aws-sdk__md5-universal](./a/aws-sdk__md5-universal) | -
+| 0 | [aws-sdk__middleware-ec2-c](./a/aws-sdk__middleware-ec2-copysnapshot) | -
+| 0 | [aws-sdk__middleware-opera](./a/aws-sdk__middleware-operation-logging) | -
+| 0 | [aws-sdk__middleware-rds-p](./a/aws-sdk__middleware-rds-presignedurl) | -
+| 0 | [aws-sdk__middleware-sdk-a](./a/aws-sdk__middleware-sdk-api-gateway) | -
+| 0 | [aws-sdk__modeled-endpoint](./a/aws-sdk__modeled-endpoint-middleware) | -
+| 0 | [aws-sdk__route53-id-norma](./a/aws-sdk__route53-id-normalizer-middleware) | -
+| 0 | [aws-sdk__s3-request-presi](./a/aws-sdk__s3-request-presigner) | -
+| 0 | [aws-sdk__signature-v4-bro](./a/aws-sdk__signature-v4-browser) | A standalone AWS Signature V4 request signer for b
+| 0 | [aws-sdk__signature-v4-nod](./a/aws-sdk__signature-v4-node) | A standalone AWS Signature V4 request signer for N
+| 0 | [aws-sdk__signature-v4-uni](./a/aws-sdk__signature-v4-universal) | A standalone AWS Signature V4 request signer targe
+| 0 | [aws-sdk__url-parser-unive](./a/aws-sdk__url-parser-universal) | -
+| 0 | [aws-sdk__util-base64-univ](./a/aws-sdk__util-base64-universal) | A cross-platform Base64  UInt8Array converter
 | 0 | [babel-plugin-react-pug](./b/babel-plugin-react-pug) | Convert Pug into React function calls.
 | 0 | [backbone-fetch-cache](./b/backbone-fetch-cache) | Caches calls to Backbone.
 | 0 | [backlog-js](./b/backlog-js) | Backlog API v2 client for browser and node
@@ -6379,6 +6511,7 @@
 | 0 | [electron-clipboard-extend](./e/electron-clipboard-extended) | Electron clipboard extended with event handler for
 | 0 | [electron-load-devtool](./e/electron-load-devtool) | Easily load dev-tool for electron
 | 0 | [elgamal](./e/elgamal) | ElGamal cryptosystem for JavaScript.
+| 0 | [ember-test-helpers](./e/ember-test-helpers) | Helpers for testing Ember.js applications
 | 0 | [ember__string](./e/ember__string) | A set of utilities to transform strings
 | 0 | [emscripten](./e/emscripten) | -
 | 0 | [enzyme-async-helpers](./e/enzyme-async-helpers) | Async helpers for testing React components with En
@@ -6647,6 +6780,7 @@
 | 0 | [phonon](./p/phonon) | Phonon is a lightweight & scalable Javascript/CSS3
 | 0 | [photonui](./p/photonui) | A javascript framework to create user interfaces
 | 0 | [pinata-sdk](./p/pinata-sdk) | Unofficial SDK for 
+| 0 | [pkcs7-padding](./p/pkcs7-padding) | A tiny package that handles PKCS 
 | 0 | [places](./p/places) | About places.
 | 0 | [pnpapi](./p/pnpapi) | -
 | 0 | [polygons-intersect](./p/polygons-intersect) | This script finds all points where the polygons in
@@ -6814,7 +6948,9 @@
 | 0 | [tarantool-driver](./t/tarantool-driver) | Tarantool driver for 1.7
 | 0 | [task-worklet](./t/task-worklet) | Streamlined processing of tasks in a shared thread
 | 0 | [tdweb](./t/tdweb) | Javascript interface for TDLib (telegram library)
+| 0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library
+| 0 | [testing-library__vue](./t/testing-library__vue) | Simple and complete Vue DOM testing utilities that
 | 0 | [then-eos](./t/then-eos) | Promise-based end-of-stream.
 | 0 | [three-tds-loader](./t/three-tds-loader) | NodeJS wrapper for Three.js' TDSLoader function
 | 0 | [timelinejs](./t/timelinejs) | A Storytelling Timeline built in JavaScript.

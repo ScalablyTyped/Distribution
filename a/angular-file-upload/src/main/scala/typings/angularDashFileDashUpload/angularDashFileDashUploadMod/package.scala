@@ -1,12 +1,13 @@
 package typings.angularDashFileDashUpload
 
-import typings.angular.angularMod.IDeferred
-import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularDashFileDashUploadMod {
+  import typings.angular.angularMod.IDeferred
+  import typings.std.File
+
   type AsyncFilter = js.Function3[
     /* item */ File | FileLikeObject, 
     /* options */ js.UndefOr[js.Object], 

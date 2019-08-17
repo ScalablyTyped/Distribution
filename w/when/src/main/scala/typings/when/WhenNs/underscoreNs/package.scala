@@ -1,11 +1,12 @@
 package typings.when.WhenNs
 
-import typings.when.WhenNs.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object underscoreNs {
+  import typings.when.WhenNs.Promise
+
   type Fn0[T] = js.Function0[T]
   type Fn1[A1, T] = js.Function1[/* a1 */ A1, T]
   type Fn2[A1, A2, T] = js.Function2[/* a1 */ A1, /* a2 */ A2, T]

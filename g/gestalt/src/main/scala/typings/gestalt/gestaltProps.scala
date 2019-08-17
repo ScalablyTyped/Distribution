@@ -27,7 +27,6 @@ trait gestaltProps {
   @scala.inline
   def ContainerProps: typings.gestalt.gestaltMod.ContainerProps.type = typings.gestalt.gestaltMod.ContainerProps
   type ContainerProps = typings.gestalt.gestaltMod.ContainerProps
-  type DividerProps = js.Object
   @scala.inline
   def FlyoutProps: typings.gestalt.gestaltMod.FlyoutProps.type = typings.gestalt.gestaltMod.FlyoutProps
   type FlyoutProps = typings.gestalt.gestaltMod.FlyoutProps

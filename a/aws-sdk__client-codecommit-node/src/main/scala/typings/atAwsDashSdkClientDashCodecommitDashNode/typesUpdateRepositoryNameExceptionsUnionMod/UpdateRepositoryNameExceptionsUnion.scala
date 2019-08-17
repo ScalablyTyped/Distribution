@@ -1,0 +1,14 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryNameExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryNameExistsExceptionMod.RepositoryNameExistsException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
+  - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException
+*/
+trait UpdateRepositoryNameExceptionsUnion extends js.Object
+

@@ -1,0 +1,83 @@
+package typings.atAwsDashSdkClientDashGlacierDashNode.typesResourceNotFoundExceptionMod
+
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAbortMultipartUploadExceptionsUnionMod.AbortMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAbortVaultLockExceptionsUnionMod.AbortVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesAddTagsToVaultExceptionsUnionMod.AddTagsToVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesCompleteMultipartUploadExceptionsUnionMod.CompleteMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesCompleteVaultLockExceptionsUnionMod.CompleteVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteArchiveExceptionsUnionMod.DeleteArchiveExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultAccessPolicyExceptionsUnionMod.DeleteVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultExceptionsUnionMod.DeleteVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDeleteVaultNotificationsExceptionsUnionMod.DeleteVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDescribeJobExceptionsUnionMod.DescribeJobExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesDescribeVaultExceptionsUnionMod.DescribeVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetJobOutputExceptionsUnionMod.GetJobOutputExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultAccessPolicyExceptionsUnionMod.GetVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultLockExceptionsUnionMod.GetVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesGetVaultNotificationsExceptionsUnionMod.GetVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateMultipartUploadExceptionsUnionMod.InitiateMultipartUploadExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesInitiateVaultLockExceptionsUnionMod.InitiateVaultLockExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListJobsExceptionsUnionMod.ListJobsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListMultipartUploadsExceptionsUnionMod.ListMultipartUploadsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListPartsExceptionsUnionMod.ListPartsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListTagsForVaultExceptionsUnionMod.ListTagsForVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesListVaultsExceptionsUnionMod.ListVaultsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesRemoveTagsFromVaultExceptionsUnionMod.RemoveTagsFromVaultExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetVaultAccessPolicyExceptionsUnionMod.SetVaultAccessPolicyExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetVaultNotificationsExceptionsUnionMod.SetVaultNotificationsExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
+import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResourceNotFoundException
+  extends ServiceException[_ResourceNotFoundExceptionDetails]
+     with AbortMultipartUploadExceptionsUnion
+     with AbortVaultLockExceptionsUnion
+     with AddTagsToVaultExceptionsUnion
+     with CompleteMultipartUploadExceptionsUnion
+     with CompleteVaultLockExceptionsUnion
+     with DeleteArchiveExceptionsUnion
+     with DeleteVaultAccessPolicyExceptionsUnion
+     with DeleteVaultExceptionsUnion
+     with DeleteVaultNotificationsExceptionsUnion
+     with DescribeJobExceptionsUnion
+     with DescribeVaultExceptionsUnion
+     with GetJobOutputExceptionsUnion
+     with GetVaultAccessPolicyExceptionsUnion
+     with GetVaultLockExceptionsUnion
+     with GetVaultNotificationsExceptionsUnion
+     with InitiateJobExceptionsUnion
+     with InitiateMultipartUploadExceptionsUnion
+     with InitiateVaultLockExceptionsUnion
+     with ListJobsExceptionsUnion
+     with ListMultipartUploadsExceptionsUnion
+     with ListPartsExceptionsUnion
+     with ListTagsForVaultExceptionsUnion
+     with ListVaultsExceptionsUnion
+     with RemoveTagsFromVaultExceptionsUnion
+     with SetVaultAccessPolicyExceptionsUnion
+     with SetVaultNotificationsExceptionsUnion
+     with UploadArchiveExceptionsUnion
+     with UploadMultipartPartExceptionsUnion {
+  @JSName("name")
+  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.ResourceNotFoundException
+}
+
+object ResourceNotFoundException {
+  @scala.inline
+  def apply(
+    details: _ResourceNotFoundExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.ResourceNotFoundException,
+    stack: String = null
+  ): ResourceNotFoundException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResourceNotFoundException]
+  }
+}
+

@@ -1,14 +1,15 @@
 package typings.electronDashPackager
 
-import typings.electronDashPackager.Omit
-import typings.electronDashPackager.electronDashPackagerStrings.appBundleId
-import typings.electronDashPackager.electronDashPackagerStrings.appPath
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object electronDashPackagerMod {
+  import typings.electronDashPackager.Omit
+  import typings.electronDashPackager.electronDashPackagerStrings.appBundleId
+  import typings.electronDashPackager.electronDashPackagerStrings.appPath
+  import typings.std.Error
+
   // see https://github.com/electron-userland/electron-packager/blob/92d09bba34599283a794fd6f24b88470f0cb1074/src/mac.js#L372
   type ElectronNotarizeOptions = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotarizeOptions */ js.Any, 

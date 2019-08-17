@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "phonegap-plugin-barcodescanner"
-version := "0.0-unknown-dt-20190322Z-4ba3d1"
-scalaVersion := "2.12.8"
+version := "0.0-unknown-dt-20190322Z-6a17e0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

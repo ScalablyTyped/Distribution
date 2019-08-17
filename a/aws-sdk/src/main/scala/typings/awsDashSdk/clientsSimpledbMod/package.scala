@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsSimpledbMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AttributeList = js.Array[Attribute]
   type AttributeNameList = js.Array[String]
   type Boolean = scala.Boolean

@@ -3,6 +3,7 @@ package typings.atJupyterlabCells.libInputareaMod
 import typings.atJupyterlabCells.libInputareaMod.InputAreaNs.ContentFactory
 import typings.atJupyterlabCells.libInputareaMod.InputAreaNs.IContentFactory
 import typings.atJupyterlabCells.libModelMod.ICellModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +30,7 @@ object InputAreaNs extends js.Object {
       * to pass it around.
       */
     /* CompleteClass */
-    override val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
+    override val editorFactory: Factory = js.native
     /**
       * Create an input prompt.
       */
@@ -50,7 +51,7 @@ object InputAreaNs extends js.Object {
       * This is a separate readonly attribute rather than a factory method as we need
       * to pass it around.
       */
-    val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+    val editorFactory: Factory
     /**
       * Create an input prompt.
       */
@@ -84,7 +85,7 @@ object InputAreaNs extends js.Object {
   /**
     * The default editor factory singleton based on CodeMirror.
     */
-  val defaultEditorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
+  val defaultEditorFactory: Factory = js.native
   /**
     * A namespace for the input area content factory.
     */
@@ -101,9 +102,7 @@ object InputAreaNs extends js.Object {
         * If this is not passed, a default CodeMirror editor factory
         * will be used.
         */
-      var editorFactory: js.UndefOr[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
-          ] = js.undefined
+      var editorFactory: js.UndefOr[Factory] = js.undefined
     }
     
   }

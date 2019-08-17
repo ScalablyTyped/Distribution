@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.XBridgeSupplier2
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oleautomationNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.bridgeNs.XBridgeSupplier2
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+
   /**
     * registers UNO objects as COM objects.
     *

@@ -1,26 +1,27 @@
 package typings.preact.preactMod.Global
 
-import typings.preact.preactMod.Component
-import typings.preact.preactMod.Defaultize
-import typings.preact.preactMod.VNode
-import typings.std.AnimationEvent
-import typings.std.ClipboardEvent
-import typings.std.CompositionEvent
-import typings.std.DragEvent
-import typings.std.Event
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.PointerEvent
-import typings.std.TouchEvent
-import typings.std.TransitionEvent
-import typings.std.UIEvent
-import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JSXNs {
+  import typings.preact.preactMod.Component
+  import typings.preact.preactMod.Defaultize
+  import typings.preact.preactMod.VNode
+  import typings.std.AnimationEvent
+  import typings.std.ClipboardEvent
+  import typings.std.CompositionEvent
+  import typings.std.DragEvent
+  import typings.std.Event
+  import typings.std.FocusEvent
+  import typings.std.KeyboardEvent
+  import typings.std.MouseEvent
+  import typings.std.PointerEvent
+  import typings.std.TouchEvent
+  import typings.std.TransitionEvent
+  import typings.std.UIEvent
+  import typings.std.WheelEvent
+
   type AnimationEventHandler = EventHandler[AnimationEvent]
   type ClipboardEventHandler = EventHandler[ClipboardEvent]
   type CompositionEventHandler = EventHandler[CompositionEvent]

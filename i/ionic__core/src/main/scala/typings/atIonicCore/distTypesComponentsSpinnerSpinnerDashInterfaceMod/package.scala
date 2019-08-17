@@ -1,10 +1,11 @@
 package typings.atIonicCore
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesComponentsSpinnerSpinnerDashInterfaceMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type SpinnerConfigs = StringDictionary[SpinnerConfig]
 }

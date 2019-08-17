@@ -1,0 +1,63 @@
+package typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesInternalErrorExceptionMod
+
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesCreateIdentityPoolExceptionsUnionMod.CreateIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDeleteIdentitiesExceptionsUnionMod.DeleteIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDeleteIdentityPoolExceptionsUnionMod.DeleteIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDescribeIdentityExceptionsUnionMod.DescribeIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDescribeIdentityPoolExceptionsUnionMod.DescribeIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetCredentialsForIdentityExceptionsUnionMod.GetCredentialsForIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdExceptionsUnionMod.GetIdExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetIdentityPoolRolesExceptionsUnionMod.GetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenExceptionsUnionMod.GetOpenIdTokenExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesGetOpenIdTokenForDeveloperIdentityExceptionsUnionMod.GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesListIdentitiesExceptionsUnionMod.ListIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesListIdentityPoolsExceptionsUnionMod.ListIdentityPoolsExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesLookupDeveloperIdentityExceptionsUnionMod.LookupDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesMergeDeveloperIdentitiesExceptionsUnionMod.MergeDeveloperIdentitiesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesSetIdentityPoolRolesExceptionsUnionMod.SetIdentityPoolRolesExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkDeveloperIdentityExceptionsUnionMod.UnlinkDeveloperIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
+import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUpdateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InternalErrorException
+  extends ServiceException[_InternalErrorExceptionDetails]
+     with CreateIdentityPoolExceptionsUnion
+     with DeleteIdentitiesExceptionsUnion
+     with DeleteIdentityPoolExceptionsUnion
+     with DescribeIdentityExceptionsUnion
+     with DescribeIdentityPoolExceptionsUnion
+     with GetCredentialsForIdentityExceptionsUnion
+     with GetIdExceptionsUnion
+     with GetIdentityPoolRolesExceptionsUnion
+     with GetOpenIdTokenExceptionsUnion
+     with GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+     with ListIdentitiesExceptionsUnion
+     with ListIdentityPoolsExceptionsUnion
+     with LookupDeveloperIdentityExceptionsUnion
+     with MergeDeveloperIdentitiesExceptionsUnion
+     with SetIdentityPoolRolesExceptionsUnion
+     with UnlinkDeveloperIdentityExceptionsUnion
+     with UnlinkIdentityExceptionsUnion
+     with UpdateIdentityPoolExceptionsUnion {
+  @JSName("name")
+  var name_InternalErrorException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.InternalErrorException
+}
+
+object InternalErrorException {
+  @scala.inline
+  def apply(
+    details: _InternalErrorExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.InternalErrorException,
+    stack: String = null
+  ): InternalErrorException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InternalErrorException]
+  }
+}
+

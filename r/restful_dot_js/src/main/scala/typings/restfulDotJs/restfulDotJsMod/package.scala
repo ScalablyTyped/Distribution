@@ -1,11 +1,12 @@
 package typings.restfulDotJs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object restfulDotJsMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type FullRequestInterceptor = js.Function5[
     /* params */ js.Any, 
     /* headers */ Headers, 

@@ -1,11 +1,12 @@
 package typings.urijs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uriNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type URITemplateCallback = js.Function1[/* keyName */ String, URITemplateValue]
   type URITemplateInput = (StringDictionary[URITemplateValue | URITemplateCallback]) | URITemplateCallback
   type URITemplateLiteral = String

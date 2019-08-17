@@ -1,10 +1,11 @@
 package typings.nodeDashWaves
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashWavesMod {
+  import typings.std.HTMLElement
+
   type ElementSelector = String | HTMLElement | js.Array[HTMLElement]
 }

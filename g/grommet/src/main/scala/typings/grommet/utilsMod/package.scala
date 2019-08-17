@@ -1,21 +1,22 @@
 package typings.grommet
 
-import typings.grommet.Anon_Dark
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.ReactNode
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilsMod {
+  import typings.grommet.Anon_Dark
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.ReactNode
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type A11yTitleType = String
   type ColorType = String | Anon_Dark
   type DeepFreeze = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {readonly [ K in keyof T ]: T[K] extends object? object : T[K]}
+  {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with js.Any
   type GridAreaType = String
   /* Rewritten from type alias, can be one of: 

@@ -1,13 +1,14 @@
 package typings.oauth
 
-import typings.node.Buffer
-import typings.node.httpMod.IncomingMessage
-import typings.oauth.Anon_Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oauthMod {
+  import typings.node.Buffer
+  import typings.node.httpMod.IncomingMessage
+  import typings.oauth.Anon_Data
+
   type dataCallback = js.Function3[
     /* err */ Anon_Data, 
     /* result */ js.UndefOr[String | Buffer], 

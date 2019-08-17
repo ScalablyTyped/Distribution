@@ -1,11 +1,12 @@
 package typings.zetapushDashJs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zetapushDashJsMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type AsyncMacroServicePublisher = js.Function4[
     /* method */ String, 
     /* parameters */ js.UndefOr[PublishParameters], 

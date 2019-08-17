@@ -1,12 +1,13 @@
 package typings.binaryDashParser.binaryDashParserMod
 
-import typings.binaryDashParser.binaryDashParserMod.Parser
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ParserNs {
+  import typings.binaryDashParser.binaryDashParserMod.Parser
+  import typings.node.Buffer
+
   type Data = Double | String | (js.Array[Double | Parser[js.Any]]) | Parser[js.Any] | Buffer
   type Next[O /* <: js.UndefOr[js.Object] */, N /* <: String */, T /* <: js.Any */] = Parser[
     Valid[

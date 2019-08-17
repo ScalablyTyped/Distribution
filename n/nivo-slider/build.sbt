@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nivo-slider"
-version := "3.2-dt-20190212Z-393cf3"
-scalaVersion := "2.12.8"
+version := "3.2-dt-20190212Z-8720e6"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

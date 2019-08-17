@@ -1,13 +1,14 @@
 package typings.twilio
 
-import typings.express.expressMod.NextFunction
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object twilioMod {
+  import typings.express.expressMod.NextFunction
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
+
   type AddressResource = ListMappedResource[AddressInstance]
   type AlertInstance = Resource
   type ApplicationInstance = InstanceResource

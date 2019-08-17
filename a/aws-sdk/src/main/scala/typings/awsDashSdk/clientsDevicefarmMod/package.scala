@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.MONTHLY
-import typings.awsDashSdk.awsDashSdkStrings.RECURRING
-import typings.awsDashSdk.awsDashSdkStrings.USD
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDevicefarmMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.MONTHLY
+  import typings.awsDashSdk.awsDashSdkStrings.RECURRING
+  import typings.awsDashSdk.awsDashSdkStrings.USD
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AWSAccountNumber = java.lang.String
   type AccountsCleanup = scala.Boolean
   type AmazonResourceName = java.lang.String

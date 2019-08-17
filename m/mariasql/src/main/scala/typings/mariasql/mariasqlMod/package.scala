@@ -1,12 +1,13 @@
 package typings.mariasql
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mariasqlMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type Dictionary = StringDictionary[js.Any]
   type MariaCallBackBoolean = js.Function1[/* result */ Boolean, Unit]
   type MariaCallBackError = js.Function1[/* error */ Error, Unit]

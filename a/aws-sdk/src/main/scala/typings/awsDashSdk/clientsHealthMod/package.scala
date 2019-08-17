@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsHealthMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DescribeEventDetailsFailedSet = js.Array[EventDetailsErrorItem]
   type DescribeEventDetailsSuccessfulSet = js.Array[EventDetails]

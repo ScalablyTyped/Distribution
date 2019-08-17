@@ -1,154 +1,155 @@
 package typings
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import typings.screeps.screepsNumbers.`-106`
-import typings.screeps.screepsNumbers.`-10`
-import typings.screeps.screepsNumbers.`-11`
-import typings.screeps.screepsNumbers.`-12`
-import typings.screeps.screepsNumbers.`-14`
-import typings.screeps.screepsNumbers.`-15`
-import typings.screeps.screepsNumbers.`-1`
-import typings.screeps.screepsNumbers.`-2`
-import typings.screeps.screepsNumbers.`-3`
-import typings.screeps.screepsNumbers.`-4`
-import typings.screeps.screepsNumbers.`-5`
-import typings.screeps.screepsNumbers.`-6`
-import typings.screeps.screepsNumbers.`-7`
-import typings.screeps.screepsNumbers.`-8`
-import typings.screeps.screepsNumbers.`-9`
-import typings.screeps.screepsNumbers.`0`
-import typings.screeps.screepsNumbers.`101`
-import typings.screeps.screepsNumbers.`102`
-import typings.screeps.screepsNumbers.`103`
-import typings.screeps.screepsNumbers.`104`
-import typings.screeps.screepsNumbers.`105`
-import typings.screeps.screepsNumbers.`106`
-import typings.screeps.screepsNumbers.`107`
-import typings.screeps.screepsNumbers.`108`
-import typings.screeps.screepsNumbers.`109`
-import typings.screeps.screepsNumbers.`10`
-import typings.screeps.screepsNumbers.`110`
-import typings.screeps.screepsNumbers.`111`
-import typings.screeps.screepsNumbers.`112`
-import typings.screeps.screepsNumbers.`113`
-import typings.screeps.screepsNumbers.`114`
-import typings.screeps.screepsNumbers.`115`
-import typings.screeps.screepsNumbers.`116`
-import typings.screeps.screepsNumbers.`117`
-import typings.screeps.screepsNumbers.`118`
-import typings.screeps.screepsNumbers.`119`
-import typings.screeps.screepsNumbers.`11`
-import typings.screeps.screepsNumbers.`120`
-import typings.screeps.screepsNumbers.`121`
-import typings.screeps.screepsNumbers.`12`
-import typings.screeps.screepsNumbers.`13`
-import typings.screeps.screepsNumbers.`14`
-import typings.screeps.screepsNumbers.`15`
-import typings.screeps.screepsNumbers.`16`
-import typings.screeps.screepsNumbers.`17`
-import typings.screeps.screepsNumbers.`18`
-import typings.screeps.screepsNumbers.`1`
-import typings.screeps.screepsNumbers.`2`
-import typings.screeps.screepsNumbers.`3`
-import typings.screeps.screepsNumbers.`4`
-import typings.screeps.screepsNumbers.`5`
-import typings.screeps.screepsNumbers.`6`
-import typings.screeps.screepsNumbers.`7`
-import typings.screeps.screepsNumbers.`8`
-import typings.screeps.screepsNumbers.`9`
-import typings.screeps.screepsStrings.G
-import typings.screeps.screepsStrings.GH
-import typings.screeps.screepsStrings.GH2O
-import typings.screeps.screepsStrings.GHO2
-import typings.screeps.screepsStrings.GO
-import typings.screeps.screepsStrings.H
-import typings.screeps.screepsStrings.K
-import typings.screeps.screepsStrings.KH
-import typings.screeps.screepsStrings.KH2O
-import typings.screeps.screepsStrings.KHO2
-import typings.screeps.screepsStrings.KO
-import typings.screeps.screepsStrings.L
-import typings.screeps.screepsStrings.LH
-import typings.screeps.screepsStrings.LH2O
-import typings.screeps.screepsStrings.LHO2
-import typings.screeps.screepsStrings.LO
-import typings.screeps.screepsStrings.O
-import typings.screeps.screepsStrings.OH
-import typings.screeps.screepsStrings.U
-import typings.screeps.screepsStrings.UH
-import typings.screeps.screepsStrings.UH2O
-import typings.screeps.screepsStrings.UHO2
-import typings.screeps.screepsStrings.UL
-import typings.screeps.screepsStrings.UO
-import typings.screeps.screepsStrings.X
-import typings.screeps.screepsStrings.XGH2O
-import typings.screeps.screepsStrings.XGHO2
-import typings.screeps.screepsStrings.XKH2O
-import typings.screeps.screepsStrings.XKHO2
-import typings.screeps.screepsStrings.XLH2O
-import typings.screeps.screepsStrings.XLHO2
-import typings.screeps.screepsStrings.XUH2O
-import typings.screeps.screepsStrings.XUHO2
-import typings.screeps.screepsStrings.XZH2O
-import typings.screeps.screepsStrings.XZHO2
-import typings.screeps.screepsStrings.Z
-import typings.screeps.screepsStrings.ZH
-import typings.screeps.screepsStrings.ZH2O
-import typings.screeps.screepsStrings.ZHO2
-import typings.screeps.screepsStrings.ZK
-import typings.screeps.screepsStrings.ZO
-import typings.screeps.screepsStrings.attack
-import typings.screeps.screepsStrings.carry
-import typings.screeps.screepsStrings.claim
-import typings.screeps.screepsStrings.constructedWall
-import typings.screeps.screepsStrings.constructionSite
-import typings.screeps.screepsStrings.container
-import typings.screeps.screepsStrings.controller
-import typings.screeps.screepsStrings.creep
-import typings.screeps.screepsStrings.energy
-import typings.screeps.screepsStrings.extension
-import typings.screeps.screepsStrings.extractor
-import typings.screeps.screepsStrings.flag
-import typings.screeps.screepsStrings.heal
-import typings.screeps.screepsStrings.keeperLair
-import typings.screeps.screepsStrings.lab
-import typings.screeps.screepsStrings.link
-import typings.screeps.screepsStrings.mineral
-import typings.screeps.screepsStrings.move
-import typings.screeps.screepsStrings.nuke
-import typings.screeps.screepsStrings.nuker
-import typings.screeps.screepsStrings.observer
-import typings.screeps.screepsStrings.operator
-import typings.screeps.screepsStrings.ops
-import typings.screeps.screepsStrings.portal
-import typings.screeps.screepsStrings.power
-import typings.screeps.screepsStrings.powerBank
-import typings.screeps.screepsStrings.powerCreep
-import typings.screeps.screepsStrings.powerSpawn
-import typings.screeps.screepsStrings.rampart
-import typings.screeps.screepsStrings.ranged_attack
-import typings.screeps.screepsStrings.resource
-import typings.screeps.screepsStrings.road
-import typings.screeps.screepsStrings.source
-import typings.screeps.screepsStrings.spawn
-import typings.screeps.screepsStrings.storage
-import typings.screeps.screepsStrings.structure
-import typings.screeps.screepsStrings.terminal
-import typings.screeps.screepsStrings.terrain
-import typings.screeps.screepsStrings.token
-import typings.screeps.screepsStrings.tombstone
-import typings.screeps.screepsStrings.tough
-import typings.screeps.screepsStrings.tower
-import typings.screeps.screepsStrings.work
-import typings.std.Partial
-import typings.std.Pick
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object screeps {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.screeps.screepsNumbers.`-106`
+  import typings.screeps.screepsNumbers.`-10`
+  import typings.screeps.screepsNumbers.`-11`
+  import typings.screeps.screepsNumbers.`-12`
+  import typings.screeps.screepsNumbers.`-14`
+  import typings.screeps.screepsNumbers.`-15`
+  import typings.screeps.screepsNumbers.`-1`
+  import typings.screeps.screepsNumbers.`-2`
+  import typings.screeps.screepsNumbers.`-3`
+  import typings.screeps.screepsNumbers.`-4`
+  import typings.screeps.screepsNumbers.`-5`
+  import typings.screeps.screepsNumbers.`-6`
+  import typings.screeps.screepsNumbers.`-7`
+  import typings.screeps.screepsNumbers.`-8`
+  import typings.screeps.screepsNumbers.`-9`
+  import typings.screeps.screepsNumbers.`0`
+  import typings.screeps.screepsNumbers.`101`
+  import typings.screeps.screepsNumbers.`102`
+  import typings.screeps.screepsNumbers.`103`
+  import typings.screeps.screepsNumbers.`104`
+  import typings.screeps.screepsNumbers.`105`
+  import typings.screeps.screepsNumbers.`106`
+  import typings.screeps.screepsNumbers.`107`
+  import typings.screeps.screepsNumbers.`108`
+  import typings.screeps.screepsNumbers.`109`
+  import typings.screeps.screepsNumbers.`10`
+  import typings.screeps.screepsNumbers.`110`
+  import typings.screeps.screepsNumbers.`111`
+  import typings.screeps.screepsNumbers.`112`
+  import typings.screeps.screepsNumbers.`113`
+  import typings.screeps.screepsNumbers.`114`
+  import typings.screeps.screepsNumbers.`115`
+  import typings.screeps.screepsNumbers.`116`
+  import typings.screeps.screepsNumbers.`117`
+  import typings.screeps.screepsNumbers.`118`
+  import typings.screeps.screepsNumbers.`119`
+  import typings.screeps.screepsNumbers.`11`
+  import typings.screeps.screepsNumbers.`120`
+  import typings.screeps.screepsNumbers.`121`
+  import typings.screeps.screepsNumbers.`12`
+  import typings.screeps.screepsNumbers.`13`
+  import typings.screeps.screepsNumbers.`14`
+  import typings.screeps.screepsNumbers.`15`
+  import typings.screeps.screepsNumbers.`16`
+  import typings.screeps.screepsNumbers.`17`
+  import typings.screeps.screepsNumbers.`18`
+  import typings.screeps.screepsNumbers.`1`
+  import typings.screeps.screepsNumbers.`2`
+  import typings.screeps.screepsNumbers.`3`
+  import typings.screeps.screepsNumbers.`4`
+  import typings.screeps.screepsNumbers.`5`
+  import typings.screeps.screepsNumbers.`6`
+  import typings.screeps.screepsNumbers.`7`
+  import typings.screeps.screepsNumbers.`8`
+  import typings.screeps.screepsNumbers.`9`
+  import typings.screeps.screepsStrings.G
+  import typings.screeps.screepsStrings.GH
+  import typings.screeps.screepsStrings.GH2O
+  import typings.screeps.screepsStrings.GHO2
+  import typings.screeps.screepsStrings.GO
+  import typings.screeps.screepsStrings.H
+  import typings.screeps.screepsStrings.K
+  import typings.screeps.screepsStrings.KH
+  import typings.screeps.screepsStrings.KH2O
+  import typings.screeps.screepsStrings.KHO2
+  import typings.screeps.screepsStrings.KO
+  import typings.screeps.screepsStrings.L
+  import typings.screeps.screepsStrings.LH
+  import typings.screeps.screepsStrings.LH2O
+  import typings.screeps.screepsStrings.LHO2
+  import typings.screeps.screepsStrings.LO
+  import typings.screeps.screepsStrings.O
+  import typings.screeps.screepsStrings.OH
+  import typings.screeps.screepsStrings.U
+  import typings.screeps.screepsStrings.UH
+  import typings.screeps.screepsStrings.UH2O
+  import typings.screeps.screepsStrings.UHO2
+  import typings.screeps.screepsStrings.UL
+  import typings.screeps.screepsStrings.UO
+  import typings.screeps.screepsStrings.X
+  import typings.screeps.screepsStrings.XGH2O
+  import typings.screeps.screepsStrings.XGHO2
+  import typings.screeps.screepsStrings.XKH2O
+  import typings.screeps.screepsStrings.XKHO2
+  import typings.screeps.screepsStrings.XLH2O
+  import typings.screeps.screepsStrings.XLHO2
+  import typings.screeps.screepsStrings.XUH2O
+  import typings.screeps.screepsStrings.XUHO2
+  import typings.screeps.screepsStrings.XZH2O
+  import typings.screeps.screepsStrings.XZHO2
+  import typings.screeps.screepsStrings.Z
+  import typings.screeps.screepsStrings.ZH
+  import typings.screeps.screepsStrings.ZH2O
+  import typings.screeps.screepsStrings.ZHO2
+  import typings.screeps.screepsStrings.ZK
+  import typings.screeps.screepsStrings.ZO
+  import typings.screeps.screepsStrings.attack
+  import typings.screeps.screepsStrings.carry
+  import typings.screeps.screepsStrings.claim
+  import typings.screeps.screepsStrings.constructedWall
+  import typings.screeps.screepsStrings.constructionSite
+  import typings.screeps.screepsStrings.container
+  import typings.screeps.screepsStrings.controller
+  import typings.screeps.screepsStrings.creep
+  import typings.screeps.screepsStrings.energy
+  import typings.screeps.screepsStrings.extension
+  import typings.screeps.screepsStrings.extractor
+  import typings.screeps.screepsStrings.flag
+  import typings.screeps.screepsStrings.heal
+  import typings.screeps.screepsStrings.keeperLair
+  import typings.screeps.screepsStrings.lab
+  import typings.screeps.screepsStrings.link
+  import typings.screeps.screepsStrings.mineral
+  import typings.screeps.screepsStrings.move
+  import typings.screeps.screepsStrings.nuke
+  import typings.screeps.screepsStrings.nuker
+  import typings.screeps.screepsStrings.observer
+  import typings.screeps.screepsStrings.operator
+  import typings.screeps.screepsStrings.ops
+  import typings.screeps.screepsStrings.portal
+  import typings.screeps.screepsStrings.power
+  import typings.screeps.screepsStrings.powerBank
+  import typings.screeps.screepsStrings.powerCreep
+  import typings.screeps.screepsStrings.powerSpawn
+  import typings.screeps.screepsStrings.rampart
+  import typings.screeps.screepsStrings.ranged_attack
+  import typings.screeps.screepsStrings.resource
+  import typings.screeps.screepsStrings.road
+  import typings.screeps.screepsStrings.source
+  import typings.screeps.screepsStrings.spawn
+  import typings.screeps.screepsStrings.storage
+  import typings.screeps.screepsStrings.structure
+  import typings.screeps.screepsStrings.terminal
+  import typings.screeps.screepsStrings.terrain
+  import typings.screeps.screepsStrings.token
+  import typings.screeps.screepsStrings.tombstone
+  import typings.screeps.screepsStrings.tough
+  import typings.screeps.screepsStrings.tower
+  import typings.screeps.screepsStrings.work
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.std.Record
+
   type ATTACK = attack
   type BOTTOM = `5`
   type BOTTOM_LEFT = `6`

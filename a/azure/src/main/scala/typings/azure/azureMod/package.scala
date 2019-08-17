@@ -1,13 +1,14 @@
 package typings.azure
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.azure.Anon_TableName
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object azureMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.azure.Anon_TableName
+  import typings.std.Error
+
   type CreateTableIfNotExistsCallback = js.Function3[/* error */ Error, /* created */ Boolean, /* response */ WebResponse, Unit]
   type DeleteEntityCallback = js.Function3[/* error */ Error, /* successful */ Boolean, /* response */ WebResponse, Unit]
   type DeleteTableCallback = js.Function3[/* error */ Error, /* successful */ Boolean, /* response */ WebResponse, Unit]

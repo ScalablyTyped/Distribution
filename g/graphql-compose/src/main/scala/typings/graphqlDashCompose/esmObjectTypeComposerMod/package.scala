@@ -1,29 +1,30 @@
 package typings.graphqlDashCompose
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.graphqlMod.GraphQLObjectType
-import typings.graphql.typeDefinitionMod.GraphQLFieldConfig
-import typings.graphql.typeDefinitionMod.GraphQLInputType
-import typings.graphql.typeDefinitionMod.GraphQLOutputType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphqlDashCompose.Anon_Description
-import typings.graphqlDashCompose.Anon_Projection
-import typings.graphqlDashCompose.Anon_Resolve
-import typings.graphqlDashCompose.esmEnumTypeComposerMod.EnumTypeComposer
-import typings.graphqlDashCompose.esmInputTypeComposerMod.InputTypeComposer
-import typings.graphqlDashCompose.esmInterfaceTypeComposerMod.InterfaceTypeComposer
-import typings.graphqlDashCompose.esmResolverMod.Resolver
-import typings.graphqlDashCompose.esmScalarTypeComposerMod.ScalarTypeComposer
-import typings.graphqlDashCompose.esmTypeMapperMod.TypeAsString
-import typings.graphqlDashCompose.esmTypeMapperMod.TypeDefinitionString
-import typings.graphqlDashCompose.esmUnionTypeComposerMod.UnionTypeComposer
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.ObjMap
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Thunk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esmObjectTypeComposerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.graphqlMod.GraphQLObjectType
+  import typings.graphql.typeDefinitionMod.GraphQLFieldConfig
+  import typings.graphql.typeDefinitionMod.GraphQLInputType
+  import typings.graphql.typeDefinitionMod.GraphQLOutputType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphqlDashCompose.Anon_Description
+  import typings.graphqlDashCompose.Anon_Projection
+  import typings.graphqlDashCompose.Anon_Resolve
+  import typings.graphqlDashCompose.esmEnumTypeComposerMod.EnumTypeComposer
+  import typings.graphqlDashCompose.esmInputTypeComposerMod.InputTypeComposer
+  import typings.graphqlDashCompose.esmInterfaceTypeComposerMod.InterfaceTypeComposer
+  import typings.graphqlDashCompose.esmResolverMod.Resolver
+  import typings.graphqlDashCompose.esmScalarTypeComposerMod.ScalarTypeComposer
+  import typings.graphqlDashCompose.esmTypeMapperMod.TypeAsString
+  import typings.graphqlDashCompose.esmTypeMapperMod.TypeDefinitionString
+  import typings.graphqlDashCompose.esmUnionTypeComposerMod.UnionTypeComposer
+  import typings.graphqlDashCompose.esmUtilsDefinitionsMod.ObjMap
+  import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Thunk
+
   type ArgsMap = StringDictionary[js.Any]
   type ComposeArgumentConfig = ComposeArgumentConfigAsObject | ComposeArgumentType | (js.Function0[ComposeArgumentConfigAsObject | ComposeArgumentType])
   type ComposeArgumentType = GraphQLInputType | TypeAsString | InputTypeComposer[js.Any] | EnumTypeComposer[js.Any] | ScalarTypeComposer[js.Any] | (js.Array[

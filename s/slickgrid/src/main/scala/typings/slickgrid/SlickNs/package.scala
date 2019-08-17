@@ -1,12 +1,13 @@
 package typings.slickgrid
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SlickNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+
   type CellCssStylesHash = NumberDictionary[StringDictionary[String]]
   type Formatter[T /* <: SlickData */] = js.Function5[
     /* row */ Double, 

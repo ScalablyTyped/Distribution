@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.PRODUCTION
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudhsmMod {
+  import typings.awsDashSdk.awsDashSdkStrings.PRODUCTION
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AZ = java.lang.String
   type AZList = js.Array[AZ]
   type Certificate = java.lang.String

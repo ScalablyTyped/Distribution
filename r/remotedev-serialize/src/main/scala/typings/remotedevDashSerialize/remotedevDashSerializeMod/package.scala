@@ -1,11 +1,12 @@
 package typings.remotedevDashSerialize
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object remotedevDashSerializeMod {
+  import typings.std.Record
+
   type DefaultReplacer = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
   type DefaultReviver = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
   type Options = Record[String, Boolean]

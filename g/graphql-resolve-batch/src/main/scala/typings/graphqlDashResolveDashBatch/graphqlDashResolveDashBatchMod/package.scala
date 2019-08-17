@@ -1,11 +1,12 @@
 package typings.graphqlDashResolveDashBatch
 
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object graphqlDashResolveDashBatchMod {
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+
   type BatchResolveFunction[TSource, TArgs, TContext, TReturn] = js.Function4[
     /* sources */ js.Array[TSource], 
     /* args */ TArgs, 

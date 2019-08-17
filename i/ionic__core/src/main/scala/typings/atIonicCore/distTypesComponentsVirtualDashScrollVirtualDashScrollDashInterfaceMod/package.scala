@@ -1,11 +1,12 @@
 package typings.atIonicCore
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod {
+  import typings.std.HTMLElement
+
   type DomRenderFn = js.Function1[/* dom */ js.Array[VirtualNode], Unit]
   type FooterHeightFn = js.Function2[/* item */ js.Any, /* index */ Double, Double]
   type HeaderFn = js.Function3[

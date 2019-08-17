@@ -1,13 +1,14 @@
 package typings.unistDashUtilDashIs
 
-import typings.std.Partial
-import typings.unist.unistMod.Node
-import typings.unist.unistMod.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object unistDashUtilDashIsMod {
+  import typings.std.Partial
+  import typings.unist.unistMod.Node
+  import typings.unist.unistMod.Parent
+
   type Test = TestFunction | Partial[Node] | String | Null
   /**
     * @param node Node to test

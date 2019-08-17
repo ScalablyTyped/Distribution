@@ -1,15 +1,16 @@
 package typings.atFeathersjsFeathers
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.__feathersSkipHooks
-import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.paginate
-import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.query
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atFeathersjsFeathersMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.__feathersSkipHooks
+  import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.paginate
+  import typings.atFeathersjsFeathers.atFeathersjsFeathersStrings.query
+  import typings.std.Pick
+
   type ClientSideParams = Pick[Params, query | paginate]
   // tslint:disable-next-line void-return
   type Hook = js.Function1[

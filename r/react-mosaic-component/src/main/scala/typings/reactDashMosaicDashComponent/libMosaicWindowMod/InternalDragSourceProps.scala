@@ -1,20 +1,19 @@
 package typings.reactDashMosaicDashComponent.libMosaicWindowMod
 
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InternalDragSourceProps extends js.Object {
-  var connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any
-  var connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
+  var connectDragPreview: ConnectDragPreview
+  var connectDragSource: ConnectDragSource
 }
 
 object InternalDragSourceProps {
   @scala.inline
-  def apply(
-    connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any,
-    connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
-  ): InternalDragSourceProps = {
+  def apply(connectDragPreview: ConnectDragPreview, connectDragSource: ConnectDragSource): InternalDragSourceProps = {
     val __obj = js.Dynamic.literal(connectDragPreview = connectDragPreview, connectDragSource = connectDragSource)
   
     __obj.asInstanceOf[InternalDragSourceProps]

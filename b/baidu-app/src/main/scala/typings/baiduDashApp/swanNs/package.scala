@@ -1,25 +1,26 @@
 package typings.baiduDashApp
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.baiduDashApp.Anon_Args
-import typings.baiduDashApp.Anon_Cursor
-import typings.baiduDashApp.Anon_NameValue
-import typings.baiduDashApp.baiduDashAppStrings.form
-import typings.baiduDashApp.baiduDashAppStrings.input
-import typings.baiduDashApp.baiduDashAppStrings.scroll
-import typings.baiduDashApp.baiduDashAppStrings.tap
-import typings.baiduDashApp.baiduDashAppStrings.touchcancel
-import typings.baiduDashApp.baiduDashAppStrings.touchend
-import typings.baiduDashApp.baiduDashAppStrings.touchforcechange
-import typings.baiduDashApp.baiduDashAppStrings.touchmove
-import typings.baiduDashApp.baiduDashAppStrings.touchstart
-import typings.std.Record
-import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object swanNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.baiduDashApp.Anon_Args
+  import typings.baiduDashApp.Anon_Cursor
+  import typings.baiduDashApp.Anon_NameValue
+  import typings.baiduDashApp.baiduDashAppStrings.form
+  import typings.baiduDashApp.baiduDashAppStrings.input
+  import typings.baiduDashApp.baiduDashAppStrings.scroll
+  import typings.baiduDashApp.baiduDashAppStrings.tap
+  import typings.baiduDashApp.baiduDashAppStrings.touchcancel
+  import typings.baiduDashApp.baiduDashAppStrings.touchend
+  import typings.baiduDashApp.baiduDashAppStrings.touchforcechange
+  import typings.baiduDashApp.baiduDashAppStrings.touchmove
+  import typings.baiduDashApp.baiduDashAppStrings.touchstart
+  import typings.std.Record
+  import typings.std.ThisType
+
   type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, Unit]
   type ArrayPropsDefinition[T] = js.Array[String]
   type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]

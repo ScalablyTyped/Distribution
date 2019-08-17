@@ -1,13 +1,14 @@
 package typings.coinbaseDashCommerceDashNode
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.coinbaseDashCommerceDashNode.Omit
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.pricing_type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object coinbaseDashCommerceDashNodeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.coinbaseDashCommerceDashNode.Omit
+  import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.pricing_type
+
   /**
     * Node callback
     */

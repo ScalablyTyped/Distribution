@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object packagesNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /** This exception can be thrown in case object is encrypted when it is not allowed */
   type EncryptionNotAllowedException = Exception
   /** This exception can be thrown in case object is not encrypted one as expected. */

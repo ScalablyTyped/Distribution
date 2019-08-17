@@ -1,12 +1,13 @@
 package typings.inquirer
 
-import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.NumberQuestionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPromptsNumberMod {
+  import typings.inquirer.inquirerMod.Answers
+  import typings.inquirer.inquirerMod.NumberQuestionOptions
+
   /**
     * Provides a prompt which allows the user to type a number as answer.
     *

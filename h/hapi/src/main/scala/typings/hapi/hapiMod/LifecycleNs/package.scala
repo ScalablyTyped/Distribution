@@ -1,16 +1,17 @@
 package typings.hapi.hapiMod
 
-import typings.boom.boomMod.^
-import typings.hapi.hapiMod.Request
-import typings.hapi.hapiMod.ResponseToolkit
-import typings.node.Buffer
-import typings.node.streamMod.Stream
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object LifecycleNs {
+  import typings.boom.boomMod.^
+  import typings.hapi.hapiMod.Request
+  import typings.hapi.hapiMod.ResponseToolkit
+  import typings.node.Buffer
+  import typings.node.streamMod.Stream
+  import typings.std.Error
+
   /**
     * Various configuration options allows defining how errors are handled. For example, when invalid payload is received or malformed cookie, instead of returning an error, the framework can be
     * configured to perform another action. When supported the failAction option supports the following values:

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("opentracing/lib/mock_tracer/mock_tracer", "MockTracer")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Tracer * / any */ @JSImport("opentracing/lib/mock_tracer/mock_tracer", "MockTracer")
 @js.native
 class MockTracer () extends js.Object {
   var _allocSpan: js.Any = js.native

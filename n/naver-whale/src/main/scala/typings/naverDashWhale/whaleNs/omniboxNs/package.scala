@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object omniboxNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type OmniboxInputCancelledEvent = Event[js.Function0[Unit]]
   type OmniboxInputChangedEvent = Event[
     js.Function2[

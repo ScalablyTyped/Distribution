@@ -1,11 +1,12 @@
 package typings.yandexDashMaps
 
-import typings.yandexDashMaps.yandexDashMapsMod.geometryNs.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yandexDashMapsMod {
+  import typings.yandexDashMaps.yandexDashMapsMod.geometryNs.Point
+
   type IChildOnMap = IChild[IControlParent]
   type IControl = IChildOnMap
   type ICopyrightsAccessor = ICopyrightsProvider

@@ -1,11 +1,12 @@
 package typings.nodeDashSpriteDashGenerator
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashSpriteDashGeneratorMod {
+  import typings.std.Error
+
   type LayoutFunc = js.Function3[
     /* images */ js.Array[Image], 
     /* options */ LayoutOption, 

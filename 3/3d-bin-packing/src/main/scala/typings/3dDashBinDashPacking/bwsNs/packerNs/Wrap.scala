@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.Wrap")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.Wrap")
 @js.native
 class Wrap protected () extends js.Object {
   /**

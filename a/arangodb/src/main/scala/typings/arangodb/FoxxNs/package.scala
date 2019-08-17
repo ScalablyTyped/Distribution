@@ -1,12 +1,13 @@
 package typings.arangodb
 
-import typings.arangodb.Anon_End
-import typings.arangodb.Anon_Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FoxxNs {
+  import typings.arangodb.Anon_End
+  import typings.arangodb.Anon_Type
+
   type Handler = js.Function2[/* req */ Request, /* res */ Response, Unit]
   type Middleware = SimpleMiddleware | DelegateMiddleware
   type NextFunction = js.Function0[Unit]

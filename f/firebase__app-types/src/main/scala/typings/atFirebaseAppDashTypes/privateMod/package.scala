@@ -1,12 +1,13 @@
 package typings.atFirebaseAppDashTypes
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object privateMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+
   type AppHook = js.Function2[/* event */ String, /* app */ FirebaseApp, Unit]
   type FirebaseServiceFactory = js.Function3[
     /* app */ FirebaseApp, 

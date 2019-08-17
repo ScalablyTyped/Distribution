@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MarkerClusterGroup * / any */ @js.native
 trait LayerSupport extends js.Object {
   def checkIn(layers: js.Array[Layer]): this.type = js.native
   /**

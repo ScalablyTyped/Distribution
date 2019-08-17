@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "highlightjs"
-version := "9.12-dt-20190805Z-aacf7b"
-scalaVersion := "2.12.8"
+version := "9.12-dt-20190805Z-aef0df"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

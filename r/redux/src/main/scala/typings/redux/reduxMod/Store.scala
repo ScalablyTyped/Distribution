@@ -77,7 +77,7 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     *
     * @param nextReducer The reducer for the store to use instead.
     */
-  def replaceReducer(nextReducer: Reducer[S, A]): /* import warning: ImportType.apply Failed type conversion: void[any] */ js.Any = js.native
+  def replaceReducer(nextReducer: Reducer[S, A]): /* import warning: ImportType.apply Failed type conversion: void[/ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
   /**
     * Adds a change listener. It will be called any time an action is
     * dispatched, and some part of the state tree may potentially have changed.

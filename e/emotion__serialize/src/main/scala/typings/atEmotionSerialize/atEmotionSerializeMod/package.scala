@@ -1,14 +1,15 @@
 package typings.atEmotionSerialize
 
-import typings.atEmotionSerialize.Anon_Anim
-import typings.atEmotionSerialize.typesHelperMod.Equal
-import typings.atEmotionUtils.atEmotionUtilsMod.SerializedStyles
-import typings.csstype.csstypeMod.PropertiesFallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atEmotionSerializeMod {
+  import typings.atEmotionSerialize.Anon_Anim
+  import typings.atEmotionSerialize.typesHelperMod.Equal
+  import typings.atEmotionUtils.atEmotionUtilsMod.SerializedStyles
+  import typings.csstype.csstypeMod.PropertiesFallback
+
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - `js.undefined`

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "badgen"
-version := "2.6-dt-20190123Z-ac04a1"
-scalaVersion := "2.12.8"
+version := "2.6-dt-20190123Z-1b06b1"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

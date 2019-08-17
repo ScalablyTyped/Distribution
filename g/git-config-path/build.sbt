@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "git-config-path"
-version := "2.0-dt-20181225Z-50b813"
-scalaVersion := "2.12.8"
+version := "2.0-dt-20181225Z-26700f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait reactDashWaitProps {
-  type WaiterProps = js.Object
-}
+trait reactDashWaitProps
 

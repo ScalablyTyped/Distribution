@@ -175,6 +175,9 @@ object ContentsNs extends js.Object {
       *
       * @param A promise which resolves with the absolute POSIX
       *   file path on the server.
+      *
+      * #### Notes
+      * The returned URL may include a query parameter.
       */
     def getDownloadUrl(localPath: String): js.Promise[String] = js.native
     /**
@@ -332,6 +335,9 @@ object ContentsNs extends js.Object {
       *
       * @param A promise which resolves with the absolute POSIX
       *   file path on the server.
+      *
+      * #### Notes
+      * The returned URL may include a query parameter.
       */
     def getDownloadUrl(path: String): js.Promise[String] = js.native
     /**

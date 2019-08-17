@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mongo-sanitize"
-version := "1.0-dt-20190310Z-eb19b5"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190310Z-756381"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,12 +1,13 @@
 package typings.passportDashAzureDashAd
 
-import typings.express.expressMod.Request
-import typings.passportDashAzureDashAd.commonMod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oidcDashStrategyMod {
+  import typings.express.expressMod.Request
+  import typings.passportDashAzureDashAd.commonMod.VerifyCallback
+
   type VerifyOIDCFunction = (js.Function2[/* profile */ IProfile, /* done */ VerifyCallback, Unit]) | (js.Function3[/* iss */ String, /* sub */ String, /* done */ VerifyCallback, Unit]) | (js.Function4[
     /* iss */ String, 
     /* sub */ String, 

@@ -1,16 +1,17 @@
 package typings.rrc
 
-import typings.history.historyMod.Location
-import typings.history.historyMod.LocationState
-import typings.react.reactMod.ComponentType
-import typings.reactDashRouter.reactDashRouterMod.RouteProps
-import typings.reactDashRouter.reactDashRouterMod.`match`
-import typings.rrc.Anon_Inject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rrcMod {
+  import typings.history.historyMod.Location
+  import typings.history.historyMod.LocationState
+  import typings.react.reactMod.ComponentType
+  import typings.reactDashRouter.reactDashRouterMod.RouteProps
+  import typings.reactDashRouter.reactDashRouterMod.`match`
+  import typings.rrc.Anon_Inject
+
   type ComponentConstructor[Props] = ComponentType[Props]
   type GetKeyFunction[Params] = js.Function3[
     /* match */ `match`[Params], 

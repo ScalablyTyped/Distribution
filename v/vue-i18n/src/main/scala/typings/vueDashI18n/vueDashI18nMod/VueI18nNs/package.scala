@@ -1,13 +1,14 @@
 package typings.vueDashI18n.vueDashI18nMod
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import typings.vue.typesVueMod.Vue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object VueI18nNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.vue.typesVueMod.Vue
+
   type Choice = Double
   type DateTimeFormat = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormatOptions]
   type DateTimeFormatOptions = typings.std.IntlNs.DateTimeFormatOptions | SpecificDateTimeFormatOptions

@@ -1,11 +1,12 @@
 package typings.passportDashHttpDashBearer
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashHttpDashBearerMod {
+  import typings.express.expressMod.Request
+
   type VerifyFunction = js.Function2[
     /* token */ String, 
     /* done */ js.Function3[

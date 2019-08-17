@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "apollo-server-plugin-base"
-version := "0.6.1-30f30a"
-scalaVersion := "2.12.8"
+version := "0.6.1-ba5e24"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-c6f06d",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a37b56",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-54b031",
-  "org.scalablytyped" %%% "apollo-server-types" % "0.2.1-63d76b",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-fd24a4",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-4c5b4d",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-dc2d6d",
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-595810",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-0c8051",
+  "org.scalablytyped" %%% "apollo-server-types" % "0.2.1-f95c4b",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-9b3683",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-7025bc",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

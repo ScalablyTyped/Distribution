@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MarkerProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MarkerProps extends js.Object {
   var anchor: js.UndefOr[Point] = js.undefined
   var calloutAnchor: js.UndefOr[Point] = js.undefined
   var calloutOffset: js.UndefOr[Point] = js.undefined

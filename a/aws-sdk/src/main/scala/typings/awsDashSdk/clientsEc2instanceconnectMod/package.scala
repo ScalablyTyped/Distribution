@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEc2instanceconnectMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AvailabilityZone = String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type InstanceId = String

@@ -1,12 +1,13 @@
 package typings.web3
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ethAbiMod {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+
   /* Rewritten from type alias, can be one of: 
     - typings.web3.web3Strings.uint256
     - typings.web3.web3Strings.boolean

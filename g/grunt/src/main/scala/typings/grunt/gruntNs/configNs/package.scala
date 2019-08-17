@@ -1,11 +1,12 @@
 package typings.grunt.gruntNs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object configNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * {@link http://gruntjs.com/sample-gruntfile}
     */

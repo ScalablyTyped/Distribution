@@ -1,17 +1,18 @@
 package typings.ably.ablyMod.TypesNs
 
-import typings.ably.ablyStrings.attached
-import typings.ably.ablyStrings.attaching
-import typings.ably.ablyStrings.detached
-import typings.ably.ablyStrings.detaching
-import typings.ably.ablyStrings.failed
-import typings.ably.ablyStrings.initialized
-import typings.ably.ablyStrings.suspended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChannelStateNs {
+  import typings.ably.ablyStrings.attached
+  import typings.ably.ablyStrings.attaching
+  import typings.ably.ablyStrings.detached
+  import typings.ably.ablyStrings.detaching
+  import typings.ably.ablyStrings.failed
+  import typings.ably.ablyStrings.initialized
+  import typings.ably.ablyStrings.suspended
+
   type ATTACHED = attached
   type ATTACHING = attaching
   type DETACHED = detached

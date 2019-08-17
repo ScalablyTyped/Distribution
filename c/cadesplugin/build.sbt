@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cadesplugin"
-version := "2.1-dt-20190116Z-abc860"
-scalaVersion := "2.12.8"
+version := "2.1-dt-20190116Z-afe155"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

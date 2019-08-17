@@ -1,0 +1,55 @@
+package typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUnderscoreSendUsersMessageResponseMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUnderscoreEndpointMessageResultMod._EndpointMessageResult
+import typings.std.Iterable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _SendUsersMessageResponse extends js.Object {
+  /**
+    * The unique ID of the Amazon Pinpoint project used to send the message.
+    */
+  var ApplicationId: js.UndefOr[String] = js.undefined
+  /**
+    * The unique ID assigned to the users-messages request.
+    */
+  var RequestId: js.UndefOr[String] = js.undefined
+  /**
+    * An object that shows the endpoints that were messaged for each user. The object provides a list of user IDs. For each user ID, it provides the endpoint IDs that were messaged. For each endpoint ID, it provides an EndpointMessageResult object.
+    */
+  var Result: js.UndefOr[
+    (StringDictionary[
+      StringDictionary[_EndpointMessageResult] | (Iterable[js.Tuple2[String, _EndpointMessageResult]])
+    ]) | (Iterable[
+      js.Tuple2[
+        String, 
+        StringDictionary[_EndpointMessageResult] | (Iterable[js.Tuple2[String, _EndpointMessageResult]])
+      ]
+    ])
+  ] = js.undefined
+}
+
+object _SendUsersMessageResponse {
+  @scala.inline
+  def apply(
+    ApplicationId: String = null,
+    RequestId: String = null,
+    Result: (StringDictionary[
+      StringDictionary[_EndpointMessageResult] | (Iterable[js.Tuple2[String, _EndpointMessageResult]])
+    ]) | (Iterable[
+      js.Tuple2[
+        String, 
+        StringDictionary[_EndpointMessageResult] | (Iterable[js.Tuple2[String, _EndpointMessageResult]])
+      ]
+    ]) = null
+  ): _SendUsersMessageResponse = {
+    val __obj = js.Dynamic.literal()
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
+    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
+    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_SendUsersMessageResponse]
+  }
+}
+

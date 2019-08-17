@@ -1,15 +1,16 @@
 package typings.jasmine
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.jasmine.jasmineStrings.`<jasmineDOTempty>`
-import typings.jasmine.jasmineStrings.`<jasmineDOTfalsy>`
-import typings.jasmine.jasmineStrings.`<jasmineDOTnotEmpty>`
-import typings.jasmine.jasmineStrings.`<jasmineDOTtruthy>`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jasmineNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.jasmine.jasmineStrings.`<jasmineDOTempty>`
+  import typings.jasmine.jasmineStrings.`<jasmineDOTfalsy>`
+  import typings.jasmine.jasmineStrings.`<jasmineDOTnotEmpty>`
+  import typings.jasmine.jasmineStrings.`<jasmineDOTtruthy>`
+
   type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, Boolean | Unit]
   type CustomMatcherFactories = StringDictionary[CustomMatcherFactory]
   type CustomMatcherFactory = js.Function2[
@@ -32,7 +33,7 @@ package object jasmineNs {
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ typings.jasmine.jasmineStrings.Expected with T) | T
   type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: object | jasmine.jasmine.Any}
+  {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
     */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any)
   type Falsy = AsymmetricMatcher[`<jasmineDOTfalsy>`]
   type NotEmpty = AsymmetricMatcher[`<jasmineDOTnotEmpty>`]

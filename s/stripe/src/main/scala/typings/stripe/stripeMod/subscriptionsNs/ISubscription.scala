@@ -104,7 +104,7 @@ trait ISubscription extends IResourceObject {
   /**
     * The most recent invoice this subscription has generated. [Expandable]
     */
-  var latest_invoice: Null | IInvoice
+  var latest_invoice: IInvoice | String | Null
   /**
     * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
     */
@@ -201,7 +201,7 @@ object ISubscription {
     default_payment_method: String = null,
     discount: IDiscount = null,
     ended_at: Int | Double = null,
-    latest_invoice: IInvoice = null,
+    latest_invoice: IInvoice | String = null,
     plan: IPlan = null,
     quantity: Int | Double = null,
     trial_end: Int | Double = null,
@@ -215,7 +215,7 @@ object ISubscription {
     if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])
-    if (latest_invoice != null) __obj.updateDynamic("latest_invoice")(latest_invoice)
+    if (latest_invoice != null) __obj.updateDynamic("latest_invoice")(latest_invoice.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])

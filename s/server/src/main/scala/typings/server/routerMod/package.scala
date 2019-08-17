@@ -1,12 +1,13 @@
 package typings.server
 
-import typings.server.typingsCommonMod.Middleware
-import typings.server.typingsCommonMod.Middlewares
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object routerMod {
+  import typings.server.typingsCommonMod.Middleware
+  import typings.server.typingsCommonMod.Middlewares
+
   type delType = js.Function3[
     /* path */ String, 
     /* middlewares */ Middleware | Middlewares, 

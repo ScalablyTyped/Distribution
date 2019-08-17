@@ -1,10 +1,11 @@
 package typings.firefoxDashWebextDashBrowser.browserNs
 
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.windowLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object geckoProfilerNs {
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.windowLength
+
   type Supports = windowLength
 }

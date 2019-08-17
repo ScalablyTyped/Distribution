@@ -1,11 +1,12 @@
 package typings.uniDashApp
 
-import typings.uniDashApp.AnyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AppNs {
+  import typings.uniDashApp.AnyObject
+
   type AppConstructor = js.Function1[
     /* options */ (AppInstance[AnyObject with AppInstance[js.Object]]) with AnyObject with AppInstance[js.Object], 
     Unit

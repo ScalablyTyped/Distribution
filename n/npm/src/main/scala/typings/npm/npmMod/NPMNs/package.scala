@@ -1,12 +1,13 @@
 package typings.npm.npmMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object NPMNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type CommandCallback = js.Function5[
     /* err */ js.UndefOr[Error], 
     /* result */ js.UndefOr[js.Any], 

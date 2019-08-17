@@ -1,11 +1,12 @@
 package typings.reactDashBeautifulDashDnd
 
-import typings.csstype.csstypeMod.ZIndexProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashBeautifulDashDndMod {
+  import typings.csstype.csstypeMod.ZIndexProperty
+
   type Announce = js.Function1[/* message */ String, Unit]
   type DraggableId = Id
   type DroppableId = Id

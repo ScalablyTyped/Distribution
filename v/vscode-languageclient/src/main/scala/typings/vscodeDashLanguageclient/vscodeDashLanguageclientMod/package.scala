@@ -1,13 +1,14 @@
 package typings.vscodeDashLanguageclient
 
-import typings.node.childUnderscoreProcessMod.ChildProcess
-import typings.vscodeDashJsonrpc.Thenable
-import typings.vscodeDashLanguageclient.libClientMod.MessageTransports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashLanguageclientMod {
+  import typings.node.childUnderscoreProcessMod.ChildProcess
+  import typings.vscodeDashJsonrpc.Thenable
+  import typings.vscodeDashLanguageclient.libClientMod.MessageTransports
+
   /* Rewritten from type alias, can be one of: 
     - typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.Executable
     - typings.vscodeDashLanguageclient.Anon_Debug

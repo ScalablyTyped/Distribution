@@ -1,26 +1,27 @@
 package typings.summernote.summernoteMod.Global
 
-import typings.jquery.JQueryNs.Node
-import typings.summernote.summernoteStrings.color
-import typings.summernote.summernoteStrings.float
-import typings.summernote.summernoteStrings.font
-import typings.summernote.summernoteStrings.fontsize
-import typings.summernote.summernoteStrings.height
-import typings.summernote.summernoteStrings.help
-import typings.summernote.summernoteStrings.imagesize
-import typings.summernote.summernoteStrings.insert
-import typings.summernote.summernoteStrings.link
-import typings.summernote.summernoteStrings.para
-import typings.summernote.summernoteStrings.remove
-import typings.summernote.summernoteStrings.removeMedia
-import typings.summernote.summernoteStrings.style
-import typings.summernote.summernoteStrings.table
-import typings.summernote.summernoteStrings.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SummernoteNs {
+  import typings.jquery.JQueryNs.Node
+  import typings.summernote.summernoteStrings.color
+  import typings.summernote.summernoteStrings.float
+  import typings.summernote.summernoteStrings.font
+  import typings.summernote.summernoteStrings.fontsize
+  import typings.summernote.summernoteStrings.height
+  import typings.summernote.summernoteStrings.help
+  import typings.summernote.summernoteStrings.imagesize
+  import typings.summernote.summernoteStrings.insert
+  import typings.summernote.summernoteStrings.link
+  import typings.summernote.summernoteStrings.para
+  import typings.summernote.summernoteStrings.remove
+  import typings.summernote.summernoteStrings.removeMedia
+  import typings.summernote.summernoteStrings.style
+  import typings.summernote.summernoteStrings.table
+  import typings.summernote.summernoteStrings.view
+
   type EditImageCallback = js.Function1[/* $image */ Node, Unit]
   type colorsDef = js.Array[js.Array[js.Array[String]]]
   type htmlElement = String

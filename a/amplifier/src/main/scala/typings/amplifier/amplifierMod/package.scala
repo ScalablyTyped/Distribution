@@ -1,11 +1,12 @@
 package typings.amplifier
 
-import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object amplifierMod {
+  import typings.jquery.JQueryXHR
+
   type Decoder = js.Function5[
     /* data */ js.UndefOr[js.Any], 
     /* status */ js.UndefOr[String], 

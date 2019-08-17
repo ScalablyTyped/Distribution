@@ -19,9 +19,11 @@ object Defaults {
   def apply(
     binary: js.UndefOr[Boolean] = js.undefined,
     connectionString: String = null,
+    connectionTimeoutMillis: Int | Double = null,
     database: String = null,
     host: String = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
+    keepAliveInitialDelayMillis: Int | Double = null,
     parseInt8: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     poolIdleTimeout: Int | Double = null,
@@ -35,9 +37,11 @@ object Defaults {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
+    if (connectionTimeoutMillis != null) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database)
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
     if (!js.isUndefined(parseInt8)) __obj.updateDynamic("parseInt8")(parseInt8)
     if (password != null) __obj.updateDynamic("password")(password)
     if (poolIdleTimeout != null) __obj.updateDynamic("poolIdleTimeout")(poolIdleTimeout.asInstanceOf[js.Any])

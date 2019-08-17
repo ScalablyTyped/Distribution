@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRange")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonRange * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRange")
 @js.native
 class IonRange protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

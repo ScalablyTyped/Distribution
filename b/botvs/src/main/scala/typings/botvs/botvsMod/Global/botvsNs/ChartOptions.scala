@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait ChartOptions extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Highstock.Options * / any */ trait ChartOptions extends js.Object {
   var __isStock: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
 trait PaginateModel[T /* <: Document */] extends js.Object {
   def paginate(): js.Promise[PaginateResult[T]] = js.native
   def paginate(query: js.Object): js.Promise[PaginateResult[T]] = js.native

@@ -1,6 +1,7 @@
 package typings.atJupyterlabCodemirror.libSyntaxstatusMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
 import typings.atPhosphorCommands.atPhosphorCommandsMod.CommandRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +38,7 @@ object EditorSyntaxStatusNs extends js.Object {
     /**
       * The current editor for the application editor tracker.
       */
-    var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
+    var editor: IEditor | Null = js.native
     /**
       * The current mode for the editor. If no editor is present,
       * returns the empty string.

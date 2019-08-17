@@ -1,16 +1,17 @@
 package typings.reactDashInstantsearchDashCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.reactDashInstantsearchDashCore.Anon_Args
-import typings.reactDashInstantsearchDashCore.Anon_HighlightResult
-import typings.reactDashInstantsearchDashCore.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashInstantsearchDashCoreMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.reactDashInstantsearchDashCore.Anon_Args
+  import typings.reactDashInstantsearchDashCore.Anon_HighlightResult
+  import typings.reactDashInstantsearchDashCore.Omit
+
   type AllSearchResults[TDoc] = StringDictionary[SearchResults[TDoc]] with SearchResults[TDoc]
   type BasicDoc = StringDictionary[String]
   type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = ComponentClass[(Omit[TProps, TProvidedProps]) with TExposedProps, ComponentState]

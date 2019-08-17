@@ -1,11 +1,12 @@
 package typings.autobahn
 
-import typings.when.WhenNs.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object autobahnMod {
+  import typings.when.WhenNs.Promise
+
   // Workaround to get intellisense on type unions of 'literals' | string. 
   // See https://github.com/Microsoft/TypeScript/issues/29729
   type CustomTransportType = String with js.Object

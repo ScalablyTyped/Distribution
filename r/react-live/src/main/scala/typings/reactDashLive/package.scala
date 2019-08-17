@@ -1,12 +1,13 @@
 package typings
 
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashLive {
+  import typings.std.Exclude
+  import typings.std.Pick
+
   // React Element Props
   type DivProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any
   // Helper types

@@ -1,10 +1,11 @@
 package typings.multimatch
 
-import typings.minimatch.minimatchMod.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object multimatchMod {
+  import typings.minimatch.minimatchMod.IOptions
+
   type Options = IOptions
 }

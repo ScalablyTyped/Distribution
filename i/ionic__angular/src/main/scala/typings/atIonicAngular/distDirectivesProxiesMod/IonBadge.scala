@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonBadge")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonBadge * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonBadge")
 @js.native
 class IonBadge protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

@@ -1,10 +1,11 @@
 package typings.ngDashStomp
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ngStompNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Headers = StringDictionary[js.Any]
 }

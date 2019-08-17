@@ -1,11 +1,12 @@
 package typings.videoDotJs.videoDotJsMod.videojsNs
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DomNs {
+  import typings.std.Element
+
   /**
   		 * The callback definition for toggleElClass.
   		 *

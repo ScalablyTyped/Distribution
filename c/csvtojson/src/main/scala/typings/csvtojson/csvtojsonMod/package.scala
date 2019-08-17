@@ -1,11 +1,12 @@
 package typings.csvtojson
 
-import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object csvtojsonMod {
+  import typings.node.streamMod.TransformOptions
+
   /**
     * Event handler for "csv" events.
     */

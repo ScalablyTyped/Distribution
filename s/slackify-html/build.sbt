@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "slackify-html"
-version := "v1.0.1-dt-20190322Z-ff8121"
-scalaVersion := "2.12.8"
+version := "v1.0.1-dt-20190322Z-c53021"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

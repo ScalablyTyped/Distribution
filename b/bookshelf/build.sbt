@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "bookshelf"
-version := "v0.13.0-dt-20190524Z-edfae8"
-scalaVersion := "2.12.8"
+version := "v0.13.0-dt-20190524Z-1d0e6e"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-2c5248",
-  "org.scalablytyped" %%% "create-error" % "0.3.1-dt-20190322Z-ef969c",
-  "org.scalablytyped" %%% "knex" % "0.18.4-c37266",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190708Z-370309",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-0c9c39",
+  "org.scalablytyped" %%% "create-error" % "0.3.1-dt-20190322Z-a14f77",
+  "org.scalablytyped" %%% "knex" % "0.18.4-50cb90",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190816Z-cbbb3c",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

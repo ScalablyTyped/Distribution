@@ -1,11 +1,12 @@
 package typings.xrm.XrmNs
 
-import typings.xrm.XrmNs.ProcessFlowNs.ProcessStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EventsNs {
+  import typings.xrm.XrmNs.ProcessFlowNs.ProcessStatus
+
   /**
     * Type for a context-sensitive handler.
     * @param context The context.

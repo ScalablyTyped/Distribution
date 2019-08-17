@@ -1,15 +1,16 @@
 package typings.vegaDashTypings
 
-import typings.std.Partial
-import typings.std.Record
-import typings.vegaDashTypings.Anon_Exponent
-import typings.vegaDashTypings.Anon_Test
-import typings.vegaDashTypings.typesSpecTitleMod.TitleAnchor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecEncodeMod {
+  import typings.std.Partial
+  import typings.std.Record
+  import typings.vegaDashTypings.Anon_Exponent
+  import typings.vegaDashTypings.Anon_Test
+  import typings.vegaDashTypings.typesSpecTitleMod.TitleAnchor
+
   type AlignValueRef = ScaledValueRef[Align]
   type AnchorValueRef = ScaledValueRef[TitleAnchor]
   type ArbitraryValueRef = NumericValueRef | ColorValueRef | ScaledValueRef[js.Any]

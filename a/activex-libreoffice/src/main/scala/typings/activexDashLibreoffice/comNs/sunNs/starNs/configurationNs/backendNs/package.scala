@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.configurationNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XJob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object backendNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.WrappedTargetException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XJob
+
   /**
     * Exception thrown when authentication to the underlying backend fails due to an unknown user-id or invalid credentials.
     * @since OOo 1.1.2

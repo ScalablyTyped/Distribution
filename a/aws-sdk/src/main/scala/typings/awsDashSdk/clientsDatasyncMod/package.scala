@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.SIMPLE_PATTERN
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDatasyncMod {
+  import typings.awsDashSdk.awsDashSdkStrings.SIMPLE_PATTERN
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ActivationKey = String
   type AgentArn = String
   type AgentArnList = js.Array[AgentArn]

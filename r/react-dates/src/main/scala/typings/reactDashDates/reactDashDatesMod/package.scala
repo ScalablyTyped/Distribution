@@ -1,11 +1,12 @@
 package typings.reactDashDates
 
-import typings.react.reactMod.ClassicComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashDatesMod {
+  import typings.react.reactMod.ClassicComponentClass
+
   // COMPONENTS
   //
   // components/DateRangePicker.js

@@ -1,11 +1,12 @@
 package typings.webpackDashChain
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackDashChainMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /* Rewritten from type alias, can be one of: 
     - typings.webpackDashChain.webpackDashChainStrings.eval
     - typings.webpackDashChain.webpackDashChainStrings.`inline-source-map`

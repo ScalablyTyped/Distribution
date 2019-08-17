@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tocktimer"
-version := "1.0-dt-20180214Z-58b6fd"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180214Z-edd3a0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

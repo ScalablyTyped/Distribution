@@ -1,12 +1,13 @@
 package typings.atWordpressHooks
 
-import typings.atWordpressHooks.Anon_Current
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atWordpressHooksMod {
+  import typings.atWordpressHooks.Anon_Current
+  import typings.std.Record
+
   type ActionCallback = js.Function1[/* repeated */ js.Any, Unit]
   type CurrentHook = js.Function0[String | Null]
   type DidHook = js.Function1[/* hookName */ String, Double]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait Instance extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.IEntity * / any */ trait Instance extends js.Object {
   /**
     * <p> A type, identifier of derived class. </p>
     *

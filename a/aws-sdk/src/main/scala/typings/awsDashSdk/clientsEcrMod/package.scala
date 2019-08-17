@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.EXPIRE
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEcrMod {
+  import typings.awsDashSdk.awsDashSdkStrings.EXPIRE
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type Arn = String
   type AuthorizationDataList = js.Array[AuthorizationData]
   type Base64 = String

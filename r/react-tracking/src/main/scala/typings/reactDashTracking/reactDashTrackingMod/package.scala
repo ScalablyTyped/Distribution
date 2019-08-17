@@ -1,15 +1,16 @@
 package typings.reactDashTracking
 
-import typings.react.reactMod.Context
-import typings.reactDashTracking.Anon_Tracking
-import typings.std.Partial
-import typings.std.Pick
-import typings.std.TypedPropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashTrackingMod {
+  import typings.react.reactMod.Context
+  import typings.reactDashTracking.Anon_Tracking
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.std.TypedPropertyDescriptor
+
   // Duplicated from ES6 lib to remove the `void` typing, otherwise `track` can’t be used as a HOC function that passes
   // through a JSX component that be used without casting.
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function]

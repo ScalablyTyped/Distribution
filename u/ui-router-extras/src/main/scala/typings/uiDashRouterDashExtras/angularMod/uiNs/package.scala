@@ -1,12 +1,13 @@
 package typings.uiDashRouterDashExtras.angularMod
 
-import typings.angular.angularMod.IPromise
-import typings.angular.angularMod.Injectable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiNs {
+  import typings.angular.angularMod.IPromise
+  import typings.angular.angularMod.Injectable
+
   /**
     * `StateFactory` factories convert `FutureState` into a full UI-Router `state`, or `state` tree
     */

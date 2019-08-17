@@ -1,14 +1,15 @@
 package typings.betterDashSqlite3
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.betterDashSqlite3.TypeofInteger
-import typings.integer.integerMod.IntClass
-import typings.integer.integerMod.IntLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object betterDashSqlite3Mod {
+  import org.scalablytyped.runtime.Instantiable2
+  import typings.betterDashSqlite3.TypeofInteger
+  import typings.integer.integerMod.IntClass
+  import typings.integer.integerMod.IntLike
+
   type ArgumentTypes[F /* <: VariableArgFunction */] = js.Any
   type ColumnDefinition = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.ColumnDefinition
   type Database = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.Database

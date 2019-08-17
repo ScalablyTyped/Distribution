@@ -1,11 +1,12 @@
 package typings.vscode
 
-import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeMod {
+  import typings.vscode.Thenable
+
   type CharacterPair = js.Tuple2[String, String]
   type Declaration = Location | (js.Array[Location | LocationLink])
   type Definition = Location | js.Array[Location]

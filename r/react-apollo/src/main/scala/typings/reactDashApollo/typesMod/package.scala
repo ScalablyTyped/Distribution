@@ -1,15 +1,16 @@
 package typings.reactDashApollo
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashClient.coreTypesMod.PureQueryOptions
-import typings.reactDashApollo.Anon_OwnProps
-import typings.reactDashApollo.mutationMod.MutationFn
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.apolloDashClient.coreTypesMod.PureQueryOptions
+  import typings.reactDashApollo.Anon_OwnProps
+  import typings.reactDashApollo.mutationMod.MutationFn
+  import typings.std.Partial
+
   type ChildDataProps[TProps, TData, TGraphQLVariables] = TProps with (DataProps[TData, TGraphQLVariables])
   type ChildMutateProps[TProps, TData, TGraphQLVariables] = TProps with (MutateProps[TData, TGraphQLVariables])
   type ChildProps[TProps, TData, TGraphQLVariables] = TProps with (Partial[DataProps[TData, TGraphQLVariables]]) with (Partial[MutateProps[TData, TGraphQLVariables]])

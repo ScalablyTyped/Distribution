@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object resourceNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.RuntimeException
+
   /**
     * is used to signal that a resource is missing.
     * @see XResourceBundle

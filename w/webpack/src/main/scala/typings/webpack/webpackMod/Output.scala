@@ -1,5 +1,6 @@
 package typings.webpack.webpackMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.webpackStrings.`text/javascript`
 import typings.webpack.webpackStrings.base64
 import typings.webpack.webpackStrings.hex
@@ -34,8 +35,9 @@ trait Output extends js.Object {
   /** The filename of the entry chunk as relative path inside the output.path directory. */
   var filename: js.UndefOr[String] = js.undefined
   /**
-    * Tells webpack to use the future version of asset emitting logic, which allows freeing memory of assets after emitting. It could break plugins which
-    * assume that assets are still readable after they were emitted.
+    * Use the future version of asset emitting logic, which allows freeing memory of assets after emitting.
+    * It could break plugins which assume that assets are still readable after they were emitted.
+    * @deprecated - will be removed in webpack v5.0.0 and this behaviour will become the new default.
     */
   var futureEmitAssets: js.UndefOr[Boolean] = js.undefined
   /** An expression which is used to address the global object/scope in runtime code. */
@@ -61,7 +63,7 @@ trait Output extends js.Object {
   /** Allows customization of the script type webpack injects script tags into the DOM to download async chunks. */
   var jsonpScriptType: js.UndefOr[`text/javascript` | module] = js.undefined
   /** If set, export the bundle as library. output.library is the name. */
-  var library: js.UndefOr[String | js.Array[String]] = js.undefined
+  var library: js.UndefOr[String | js.Array[String] | StringDictionary[String]] = js.undefined
   /** Configure which module or modules will be exposed via the `libraryTarget` */
   var libraryExport: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
@@ -114,7 +116,7 @@ object Output {
     hotUpdateMainFilename: String = null,
     jsonpFunction: String = null,
     jsonpScriptType: `text/javascript` | module = null,
-    library: String | js.Array[String] = null,
+    library: String | js.Array[String] | StringDictionary[String] = null,
     libraryExport: String | js.Array[String] = null,
     libraryTarget: LibraryTarget = null,
     path: String = null,

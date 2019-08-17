@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "btoa-lite"
-version := "1.0-dt-20190608Z-195032"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190608Z-6ec52c"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

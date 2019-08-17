@@ -1,11 +1,12 @@
 package typings.utility
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilityMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * ---------------0_0----------------
     * @description Defines For Array

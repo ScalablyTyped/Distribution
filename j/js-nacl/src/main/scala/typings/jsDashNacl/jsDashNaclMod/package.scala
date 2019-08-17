@@ -1,12 +1,13 @@
 package typings.jsDashNacl
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsDashNaclMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Uint8Array
+
   type BoxPublicKey = Uint8Array
   type BoxSecretKey = Uint8Array
   type CipherText = Uint8Array

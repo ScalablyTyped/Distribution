@@ -1,12 +1,13 @@
 package typings.angularDashMeteor.angularMod
 
-import typings.angular.angularMod.IPromise
-import typings.meteor.MeteorNs.LoginWithExternalServiceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object meteorNs {
+  import typings.angular.angularMod.IPromise
+  import typings.meteor.MeteorNs.LoginWithExternalServiceOptions
+
   /**
     * An object that connects a Meteor Collection to an AngularJS scope variable
     */

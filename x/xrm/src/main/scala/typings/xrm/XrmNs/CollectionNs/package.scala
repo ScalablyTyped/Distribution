@@ -1,11 +1,12 @@
 package typings.xrm.XrmNs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CollectionNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Defines collections that are index-able by string
     * @param Generic type parameter.

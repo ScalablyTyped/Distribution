@@ -1,14 +1,15 @@
 package typings.atTestingDashLibraryDom
 
-import typings.std.Document
-import typings.std.Element
-import typings.std.Event
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object eventsMod {
+  import typings.std.Document
+  import typings.std.Element
+  import typings.std.Event
+  import typings.std.Window
+
   type CreateObject = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in @testing-library/dom.@testing-library/dom/events.EventType ]: (element : std.Document | std.Element | std.Window, options? : {}): std.Event}
     */ typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.CreateObject with js.Any

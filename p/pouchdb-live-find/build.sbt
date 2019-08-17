@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pouchdb-live-find"
-version := "0.4-dt-20190429Z-a46956"
-scalaVersion := "2.12.8"
+version := "0.4-dt-20190429Z-43cb4f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-621a6e",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190619Z-e75514",
-  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-894943",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-fe112c",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190619Z-14c17b",
+  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-282ea0",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

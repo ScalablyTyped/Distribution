@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.DEVICE_MODEL_ID
-import typings.awsDashSdk.awsDashSdkStrings.FLOW_TEMPLATE_ID
-import typings.awsDashSdk.awsDashSdkStrings.GRAPHQL
-import typings.awsDashSdk.awsDashSdkStrings.VALIDATION_FAILED
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsIotthingsgraphMod {
+  import typings.awsDashSdk.awsDashSdkStrings.DEVICE_MODEL_ID
+  import typings.awsDashSdk.awsDashSdkStrings.FLOW_TEMPLATE_ID
+  import typings.awsDashSdk.awsDashSdkStrings.GRAPHQL
+  import typings.awsDashSdk.awsDashSdkStrings.VALIDATION_FAILED
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type Arn = java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DefinitionLanguage = GRAPHQL | java.lang.String

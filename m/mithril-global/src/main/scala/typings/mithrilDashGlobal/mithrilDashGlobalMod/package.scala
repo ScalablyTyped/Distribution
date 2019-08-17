@@ -1,11 +1,12 @@
 package typings.mithrilDashGlobal
 
-import typings.mithrilDashGlobal.Anon_Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mithrilDashGlobalMod {
+  import typings.mithrilDashGlobal.Anon_Stream
+
   type Attributes = typings.mithril.mithrilMod.Attributes
   type CVnode[A] = typings.mithril.mithrilMod.CVnode[A]
   type CVnodeDOM[A] = typings.mithril.mithrilMod.CVnodeDOM[A]

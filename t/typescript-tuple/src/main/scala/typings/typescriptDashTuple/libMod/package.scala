@@ -1,14 +1,15 @@
 package typings.typescriptDashTuple
 
-import typings.typescriptDashTuple.libUtilsMod._AllIndexesEqual
-import typings.typescriptDashTuple.libUtilsMod._AllIndexesSubset
-import typings.typescriptDashTuple.libUtilsMod._AllIndexesSuperset
-import typings.typescriptDashTuple.libUtilsMod._IndexesNormalize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMod {
+  import typings.typescriptDashTuple.libUtilsMod._AllIndexesEqual
+  import typings.typescriptDashTuple.libUtilsMod._AllIndexesSubset
+  import typings.typescriptDashTuple.libUtilsMod._AllIndexesSuperset
+  import typings.typescriptDashTuple.libUtilsMod._IndexesNormalize
+
   type AllIndexesEqual[Type, Tuple /* <: js.Array[_] */] = _IndexesNormalize[_AllIndexesEqual[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]]
   type AllIndexesSubset[Type, Tuple /* <: js.Array[_] */] = _IndexesNormalize[_AllIndexesSubset[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]]
   type AllIndexesSuperset[Type, Tuple /* <: js.Array[_] */] = _IndexesNormalize[_AllIndexesSuperset[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]]

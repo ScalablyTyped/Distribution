@@ -1,22 +1,23 @@
 package typings
 
-import typings.std.Omit
-import typings.std.Pick
-import typings.webdriverio.WebdriverIOAsyncNs.Element
-import typings.webdriverio.webdriverioStrings.DOLLAR
-import typings.webdriverio.webdriverioStrings.DOLLARDOLLAR
-import typings.webdriverio.webdriverioStrings.ELEMENT
-import typings.webdriverio.webdriverioStrings.`element-6066-11e4-a52e-4f735466cecf`
-import typings.webdriverio.webdriverioStrings.addCommand
-import typings.webdriverio.webdriverioStrings.elementId
-import typings.webdriverio.webdriverioStrings.options
-import typings.webdriverio.webdriverioStrings.overwriteCommand
-import typings.webdriverio.webdriverioStrings.selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webdriverio {
+  import typings.std.Omit
+  import typings.std.Pick
+  import typings.webdriverio.WebdriverIOAsyncNs.Element
+  import typings.webdriverio.webdriverioStrings.DOLLAR
+  import typings.webdriverio.webdriverioStrings.DOLLARDOLLAR
+  import typings.webdriverio.webdriverioStrings.ELEMENT
+  import typings.webdriverio.webdriverioStrings.`element-6066-11e4-a52e-4f735466cecf`
+  import typings.webdriverio.webdriverioStrings.addCommand
+  import typings.webdriverio.webdriverioStrings.elementId
+  import typings.webdriverio.webdriverioStrings.options
+  import typings.webdriverio.webdriverioStrings.overwriteCommand
+  import typings.webdriverio.webdriverioStrings.selector
+
   type $ = js.Function1[/* selector */ String | js.Function, js.Promise[Element]]
   type $$ = js.Function1[/* selector */ String | js.Function, js.Promise[js.Array[Element]]]
   // Browser commands wrapper with Promise

@@ -1,13 +1,14 @@
 package typings.adone.adoneNs.systemNs.processNs
 
-import typings.node.childUnderscoreProcessMod.ChildProcess
-import typings.node.streamMod.Stream
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object INs {
+  import typings.node.childUnderscoreProcessMod.ChildProcess
+  import typings.node.streamMod.Stream
+  import typings.std.Error
+
   type ExecChildProcess = ChildProcess with ExecChildPromise with js.Promise[ExecReturns]
   type ExecError = Error with ExecReturns
   /* Rewritten from type alias, can be one of: 

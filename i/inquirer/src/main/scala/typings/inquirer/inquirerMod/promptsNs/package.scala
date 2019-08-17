@@ -1,20 +1,21 @@
 package typings.inquirer.inquirerMod
 
-import typings.inquirer.Anon_Choices
-import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.LiteralUnion
-import typings.inquirer.inquirerMod.Question
-import typings.inquirer.inquirerStrings.answered
-import typings.inquirer.inquirerStrings.done
-import typings.inquirer.inquirerStrings.idle
-import typings.inquirer.inquirerStrings.loading
-import typings.inquirer.inquirerStrings.pending
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promptsNs {
+  import typings.inquirer.Anon_Choices
+  import typings.inquirer.inquirerMod.Answers
+  import typings.inquirer.inquirerMod.LiteralUnion
+  import typings.inquirer.inquirerMod.Question
+  import typings.inquirer.inquirerStrings.answered
+  import typings.inquirer.inquirerStrings.done
+  import typings.inquirer.inquirerStrings.idle
+  import typings.inquirer.inquirerStrings.loading
+  import typings.inquirer.inquirerStrings.pending
+  import typings.std.Record
+
   /**
     * Provides a set of prompt-constructors.
     */

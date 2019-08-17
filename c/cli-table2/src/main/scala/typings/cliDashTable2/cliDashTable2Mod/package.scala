@@ -1,11 +1,12 @@
 package typings.cliDashTable2
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cliDashTable2Mod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Cell = CellValue | CellOptions
   type CellValue = js.UndefOr[Boolean | Double | String | Null]
   type CrossTable = GenericTable[CrossTableRow]

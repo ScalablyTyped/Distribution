@@ -1,14 +1,15 @@
 package typings.atGoogleDashCloudStorage
 
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcFileMod {
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Error
+
   type CopyCallback = js.Function3[
     /* err */ Error | Null, 
     /* file */ js.UndefOr[File | Null], 

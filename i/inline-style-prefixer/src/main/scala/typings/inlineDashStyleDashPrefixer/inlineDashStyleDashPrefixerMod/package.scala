@@ -1,11 +1,12 @@
 package typings.inlineDashStyleDashPrefixer
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inlineDashStyleDashPrefixerMod {
+  import typings.std.Record
+
   type Plugin = js.Function4[
     /* property */ String, 
     /* value */ Double | String | (js.Array[Double | String]) | js.Any, 

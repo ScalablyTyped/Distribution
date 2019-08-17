@@ -17,7 +17,6 @@ trait atReachComboboxProps {
   @scala.inline
   def ComboboxOptionProps: typings.atReachCombobox.atReachComboboxMod.ComboboxOptionProps.type = typings.atReachCombobox.atReachComboboxMod.ComboboxOptionProps
   type ComboboxOptionProps = typings.atReachCombobox.atReachComboboxMod.ComboboxOptionProps
-  type ComboboxOptionTextProps = js.Object
   @scala.inline
   def ComboboxPopoverProps: typings.atReachCombobox.atReachComboboxMod.ComboboxPopoverProps.type = typings.atReachCombobox.atReachComboboxMod.ComboboxPopoverProps
   type ComboboxPopoverProps = typings.atReachCombobox.atReachComboboxMod.ComboboxPopoverProps

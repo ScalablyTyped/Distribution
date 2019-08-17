@@ -586,7 +586,7 @@ object ServerNs extends js.Object {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in any ]: stellar-sdk.stellar-sdk.Horizon.TransactionResponse[P]} */ @js.native
+  - Dropped {[ P in / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Diff<keyof T, K> * / any ]: stellar-sdk.stellar-sdk.Horizon.TransactionResponse[P]} */ @js.native
   trait TransactionRecord extends js.Object {
     @JSName("account")
     var account_Original: CallFunction[AccountRecord] = js.native

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "vega"
-version := "5.4.0-a4b654"
-scalaVersion := "2.12.8"
+version := "5.4.0-7ebaf6"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "vega-typings" % "0.7.1-e88933",
-  "org.scalablytyped" %%% "vega-util" % "1.10.0-8e79a2")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "vega-typings" % "0.7.1-b676fe",
+  "org.scalablytyped" %%% "vega-util" % "1.10.0-6526c1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,16 +1,17 @@
 package typings.angularDashMaterial.angularDashMaterialMod.angularMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.angular.JQuery
-import typings.angular.angularMod.IPromise
-import typings.angular.angularMod.IScope
-import typings.angular.angularMod.Injectable
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object materialNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.angular.JQuery
+  import typings.angular.angularMod.IPromise
+  import typings.angular.angularMod.IScope
+  import typings.angular.angularMod.Injectable
+  import typings.std.Element
+
   type IColorExpression = StringDictionary[String]
   type IIcon = js.Function1[/* id */ String, IPromise[Element]]
   type IMedia = js.Function1[/* media */ String, Boolean]

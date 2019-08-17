@@ -1,14 +1,15 @@
 package typings.reactDashVirtualized
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ReactNode
-import typings.reactDashVirtualized.Anon_ArialabelAutoHeightChildren
-import typings.reactDashVirtualized.distEsGridMod.GridCoreProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distEsTableMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.ReactNode
+  import typings.reactDashVirtualized.Anon_ArialabelAutoHeightChildren
+  import typings.reactDashVirtualized.distEsGridMod.GridCoreProps
+
   type SortDirectionMap = StringDictionary[SortDirectionType]
   type TableCellDataGetter = js.Function1[/* params */ TableCellDataGetterParams, js.Any]
   type TableCellRenderer = js.Function1[/* props */ TableCellProps, ReactNode]

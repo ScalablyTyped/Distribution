@@ -1,11 +1,12 @@
 package typings.atPhosphorVirtualdom
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atPhosphorVirtualdomMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ElementAttrs = ElementBaseAttrs with ElementEventAttrs with ElementSpecialAttrs
   type ElementBaseAttrs = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ T in @phosphor/virtualdom.@phosphor/virtualdom.ElementAttrNames ]:? string}

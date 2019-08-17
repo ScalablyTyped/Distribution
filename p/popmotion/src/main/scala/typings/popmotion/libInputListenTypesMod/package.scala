@@ -1,14 +1,15 @@
 package typings.popmotion
 
-import typings.popmotion.libActionMod.Action
-import typings.std.Document
-import typings.std.Element
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInputListenTypesMod {
+  import typings.popmotion.libActionMod.Action
+  import typings.std.Document
+  import typings.std.Element
+  import typings.std.Window
+
   type EventListener = js.Function3[
     /* type */ String, 
     /* listener */ js.Function, 

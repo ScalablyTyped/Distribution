@@ -1,0 +1,59 @@
+package typings.atAwsDashSdkClientDashKinesisDashBrowser.typesResourceInUseExceptionMod
+
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesAddTagsToStreamExceptionsUnionMod.AddTagsToStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesCreateStreamExceptionsUnionMod.CreateStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDecreaseStreamRetentionPeriodExceptionsUnionMod.DecreaseStreamRetentionPeriodExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDeleteStreamExceptionsUnionMod.DeleteStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDisableEnhancedMonitoringExceptionsUnionMod.DisableEnhancedMonitoringExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesEnableEnhancedMonitoringExceptionsUnionMod.EnableEnhancedMonitoringExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesIncreaseStreamRetentionPeriodExceptionsUnionMod.IncreaseStreamRetentionPeriodExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesListShardsExceptionsUnionMod.ListShardsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesListStreamConsumersExceptionsUnionMod.ListStreamConsumersExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesMergeShardsExceptionsUnionMod.MergeShardsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesRegisterStreamConsumerExceptionsUnionMod.RegisterStreamConsumerExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesRemoveTagsFromStreamExceptionsUnionMod.RemoveTagsFromStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesSplitShardExceptionsUnionMod.SplitShardExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStartStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesUpdateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ResourceInUseException
+  extends ServiceException[_ResourceInUseExceptionDetails]
+     with AddTagsToStreamExceptionsUnion
+     with CreateStreamExceptionsUnion
+     with DecreaseStreamRetentionPeriodExceptionsUnion
+     with DeleteStreamExceptionsUnion
+     with DisableEnhancedMonitoringExceptionsUnion
+     with EnableEnhancedMonitoringExceptionsUnion
+     with IncreaseStreamRetentionPeriodExceptionsUnion
+     with ListShardsExceptionsUnion
+     with ListStreamConsumersExceptionsUnion
+     with MergeShardsExceptionsUnion
+     with RegisterStreamConsumerExceptionsUnion
+     with RemoveTagsFromStreamExceptionsUnion
+     with SplitShardExceptionsUnion
+     with StartStreamEncryptionExceptionsUnion
+     with StopStreamEncryptionExceptionsUnion
+     with UpdateShardCountExceptionsUnion {
+  @JSName("name")
+  var name_ResourceInUseException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceInUseException
+}
+
+object ResourceInUseException {
+  @scala.inline
+  def apply(
+    details: _ResourceInUseExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceInUseException,
+    stack: String = null
+  ): ResourceInUseException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResourceInUseException]
+  }
+}
+

@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.xmlNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.EncryptionException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.SignatureException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cryptoNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.EncryptionException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.securityNs.SignatureException
+
   /** @since LibreOffice 4.0 */
   type NSSInitializer = XNSSInitializer
   /** Service of {@link SEInitializer} */

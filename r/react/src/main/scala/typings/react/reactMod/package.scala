@@ -1,33 +1,34 @@
 package typings.react
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.csstype.csstypeMod.Properties
-import typings.propDashTypes.propDashTypesMod.InferProps
-import typings.react.Anon_Children
-import typings.react.Anon_RefAny
-import typings.react.Anon_Result
-import typings.react.Anon_Type
-import typings.react.Element
-import typings.react.Event
-import typings.react.EventTarget
-import typings.react.HTMLElement
-import typings.react.NativeMouseEvent
-import typings.react.NotExactlyAnyPropertyKeys
-import typings.react.reactStrings.mount
-import typings.react.reactStrings.ref
-import typings.react.reactStrings.update
-import typings.std.Exclude
-import typings.std.Extract
-import typings.std.InstanceType
-import typings.std.Partial
-import typings.std.Pick
-import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.Instantiable2
+  import typings.csstype.csstypeMod.Properties
+  import typings.propDashTypes.propDashTypesMod.InferProps
+  import typings.react.Anon_Children
+  import typings.react.Anon_RefAny
+  import typings.react.Anon_Result
+  import typings.react.Anon_Type
+  import typings.react.Element
+  import typings.react.Event
+  import typings.react.EventTarget
+  import typings.react.HTMLElement
+  import typings.react.NativeMouseEvent
+  import typings.react.NotExactlyAnyPropertyKeys
+  import typings.react.reactStrings.mount
+  import typings.react.reactStrings.ref
+  import typings.react.reactStrings.update
+  import typings.std.Exclude
+  import typings.std.Extract
+  import typings.std.InstanceType
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.std.Set
+
   type AnimationEventHandler[T] = EventHandler[typings.react.reactMod.AnimationEvent[T]]
   // tslint:disable-next-line:no-empty-interface
   type AudioHTMLAttributes[T] = MediaHTMLAttributes[T]

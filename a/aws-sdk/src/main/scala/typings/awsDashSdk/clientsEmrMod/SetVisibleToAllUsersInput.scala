@@ -10,7 +10,7 @@ trait SetVisibleToAllUsersInput extends js.Object {
     */
   var JobFlowIds: XmlStringList
   /**
-    * Whether the specified clusters are visible to all IAM users of the AWS account associated with the cluster. If this value is set to True, all IAM users of that AWS account can view and, if they have the proper IAM policy permissions set, manage the clusters. If it is set to False, only the IAM user that created a cluster can view and manage it.
+    *  This member will be deprecated.  Whether the specified clusters are visible to all IAM users of the AWS account associated with the cluster. If this value is set to True, all IAM users of that AWS account can view and, if they have the proper IAM policy permissions set, manage the clusters. If it is set to False, only the IAM user that created a cluster can view and manage it.
     */
   var VisibleToAllUsers: Boolean
 }

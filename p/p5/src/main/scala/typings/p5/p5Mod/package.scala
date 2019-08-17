@@ -1,97 +1,98 @@
 package typings.p5
 
-import typings.p5.p5Numbers.`0x0000`
-import typings.p5.p5Numbers.`0x0001`
-import typings.p5.p5Numbers.`0x0002`
-import typings.p5.p5Numbers.`0x0003`
-import typings.p5.p5Numbers.`0x0004`
-import typings.p5.p5Numbers.`0x0005`
-import typings.p5.p5Numbers.`0x0006`
-import typings.p5.p5Strings.`color-burn`
-import typings.p5.p5Strings.`color-dodge`
-import typings.p5.p5Strings.`hard-light`
-import typings.p5.p5Strings.`soft-light`
-import typings.p5.p5Strings.`source-over`
-import typings.p5.p5Strings.alphabetic
-import typings.p5.p5Strings.arrow
-import typings.p5.p5Strings.audio
-import typings.p5.p5Strings.auto
-import typings.p5.p5Strings.axes
-import typings.p5.p5Strings.bevel
-import typings.p5.p5Strings.bezier
-import typings.p5.p5Strings.blur
-import typings.p5.p5Strings.bold
-import typings.p5.p5Strings.bolditalic
-import typings.p5.p5Strings.bottom
-import typings.p5.p5Strings.butt
-import typings.p5.p5Strings.center
-import typings.p5.p5Strings.chord
-import typings.p5.p5Strings.clamp
-import typings.p5.p5Strings.close
-import typings.p5.p5Strings.copy
-import typings.p5.p5Strings.corner
-import typings.p5.p5Strings.corners
-import typings.p5.p5Strings.cross
-import typings.p5.p5Strings.curve
-import typings.p5.p5Strings.darkest
-import typings.p5.p5Strings.degrees
-import typings.p5.p5Strings.difference
-import typings.p5.p5Strings.dilate
-import typings.p5.p5Strings.erode
-import typings.p5.p5Strings.exclusion
-import typings.p5.p5Strings.fill
-import typings.p5.p5Strings.gray
-import typings.p5.p5Strings.grid
-import typings.p5.p5Strings.hand
-import typings.p5.p5Strings.hsb
-import typings.p5.p5Strings.hsl
-import typings.p5.p5Strings.image
-import typings.p5.p5Strings.immediate
-import typings.p5.p5Strings.invert
-import typings.p5.p5Strings.italic
-import typings.p5.p5Strings.landscape
-import typings.p5.p5Strings.left
-import typings.p5.p5Strings.lighten
-import typings.p5.p5Strings.lighter
-import typings.p5.p5Strings.linear
-import typings.p5.p5Strings.mirror
-import typings.p5.p5Strings.miter
-import typings.p5.p5Strings.move
-import typings.p5.p5Strings.multiply
-import typings.p5.p5Strings.nearest
-import typings.p5.p5Strings.normal
-import typings.p5.p5Strings.opaque
-import typings.p5.p5Strings.open
-import typings.p5.p5Strings.overlay
-import typings.p5.p5Strings.p2d
-import typings.p5.p5Strings.pie
-import typings.p5.p5Strings.portrait
-import typings.p5.p5Strings.posterize
-import typings.p5.p5Strings.quad_strip
-import typings.p5.p5Strings.quadratic
-import typings.p5.p5Strings.quads
-import typings.p5.p5Strings.radians
-import typings.p5.p5Strings.radius
-import typings.p5.p5Strings.repeat
-import typings.p5.p5Strings.rgb
-import typings.p5.p5Strings.right
-import typings.p5.p5Strings.round
-import typings.p5.p5Strings.screen
-import typings.p5.p5Strings.square
-import typings.p5.p5Strings.stroke
-import typings.p5.p5Strings.subtract
-import typings.p5.p5Strings.text
-import typings.p5.p5Strings.texture
-import typings.p5.p5Strings.threshold
-import typings.p5.p5Strings.top
-import typings.p5.p5Strings.video
-import typings.p5.p5Strings.wait
-import typings.p5.p5Strings.webgl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object p5Mod {
+  import typings.p5.p5Numbers.`0x0000`
+  import typings.p5.p5Numbers.`0x0001`
+  import typings.p5.p5Numbers.`0x0002`
+  import typings.p5.p5Numbers.`0x0003`
+  import typings.p5.p5Numbers.`0x0004`
+  import typings.p5.p5Numbers.`0x0005`
+  import typings.p5.p5Numbers.`0x0006`
+  import typings.p5.p5Strings.`color-burn`
+  import typings.p5.p5Strings.`color-dodge`
+  import typings.p5.p5Strings.`hard-light`
+  import typings.p5.p5Strings.`soft-light`
+  import typings.p5.p5Strings.`source-over`
+  import typings.p5.p5Strings.alphabetic
+  import typings.p5.p5Strings.arrow
+  import typings.p5.p5Strings.audio
+  import typings.p5.p5Strings.auto
+  import typings.p5.p5Strings.axes
+  import typings.p5.p5Strings.bevel
+  import typings.p5.p5Strings.bezier
+  import typings.p5.p5Strings.blur
+  import typings.p5.p5Strings.bold
+  import typings.p5.p5Strings.bolditalic
+  import typings.p5.p5Strings.bottom
+  import typings.p5.p5Strings.butt
+  import typings.p5.p5Strings.center
+  import typings.p5.p5Strings.chord
+  import typings.p5.p5Strings.clamp
+  import typings.p5.p5Strings.close
+  import typings.p5.p5Strings.copy
+  import typings.p5.p5Strings.corner
+  import typings.p5.p5Strings.corners
+  import typings.p5.p5Strings.cross
+  import typings.p5.p5Strings.curve
+  import typings.p5.p5Strings.darkest
+  import typings.p5.p5Strings.degrees
+  import typings.p5.p5Strings.difference
+  import typings.p5.p5Strings.dilate
+  import typings.p5.p5Strings.erode
+  import typings.p5.p5Strings.exclusion
+  import typings.p5.p5Strings.fill
+  import typings.p5.p5Strings.gray
+  import typings.p5.p5Strings.grid
+  import typings.p5.p5Strings.hand
+  import typings.p5.p5Strings.hsb
+  import typings.p5.p5Strings.hsl
+  import typings.p5.p5Strings.image
+  import typings.p5.p5Strings.immediate
+  import typings.p5.p5Strings.invert
+  import typings.p5.p5Strings.italic
+  import typings.p5.p5Strings.landscape
+  import typings.p5.p5Strings.left
+  import typings.p5.p5Strings.lighten
+  import typings.p5.p5Strings.lighter
+  import typings.p5.p5Strings.linear
+  import typings.p5.p5Strings.mirror
+  import typings.p5.p5Strings.miter
+  import typings.p5.p5Strings.move
+  import typings.p5.p5Strings.multiply
+  import typings.p5.p5Strings.nearest
+  import typings.p5.p5Strings.normal
+  import typings.p5.p5Strings.opaque
+  import typings.p5.p5Strings.open
+  import typings.p5.p5Strings.overlay
+  import typings.p5.p5Strings.p2d
+  import typings.p5.p5Strings.pie
+  import typings.p5.p5Strings.portrait
+  import typings.p5.p5Strings.posterize
+  import typings.p5.p5Strings.quad_strip
+  import typings.p5.p5Strings.quadratic
+  import typings.p5.p5Strings.quads
+  import typings.p5.p5Strings.radians
+  import typings.p5.p5Strings.radius
+  import typings.p5.p5Strings.repeat
+  import typings.p5.p5Strings.rgb
+  import typings.p5.p5Strings.right
+  import typings.p5.p5Strings.round
+  import typings.p5.p5Strings.screen
+  import typings.p5.p5Strings.square
+  import typings.p5.p5Strings.stroke
+  import typings.p5.p5Strings.subtract
+  import typings.p5.p5Strings.text
+  import typings.p5.p5Strings.texture
+  import typings.p5.p5Strings.threshold
+  import typings.p5.p5Strings.top
+  import typings.p5.p5Strings.video
+  import typings.p5.p5Strings.wait
+  import typings.p5.p5Strings.webgl
+
   type ADD = lighter
   type ANGLE_MODE = RADIANS | DEGREES
   type ARC_MODE = CHORD | PIE | OPEN

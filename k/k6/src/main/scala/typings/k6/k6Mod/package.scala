@@ -1,11 +1,12 @@
 package typings.k6
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object k6Mod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Checker[VT] = js.Function1[/* val */ VT, Boolean]
   type Checkers[VT] = StringDictionary[Checker[VT]]
   /* Rewritten from type alias, can be one of: 

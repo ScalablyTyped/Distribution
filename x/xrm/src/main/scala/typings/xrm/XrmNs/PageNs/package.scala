@@ -1,11 +1,12 @@
 package typings.xrm.XrmNs
 
-import typings.xrm.XrmNs.EntitySaveMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PageNs {
+  import typings.xrm.XrmNs.EntitySaveMode
+
   /**
     * @deprecated Use {@link Xrm.Controls.AddControlNotificationOptions} instead.
     */

@@ -1,12 +1,13 @@
 package typings.mongorito
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mongoritoMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.std.Map
+
   type Class[T] = Instantiable1[/* args (repeated) */ js.Any, T]
   type ModelClass = Class[Model]
   type Plugin = js.Function1[

@@ -1,12 +1,13 @@
 package typings.uiDashGrid
 
-import typings.angular.JQueryMouseEventObject
-import typings.angular.angularMod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiDashGridMod {
+  import typings.angular.JQueryMouseEventObject
+  import typings.angular.angularMod.IScope
+
   type ICellClassGetter[TEntity] = js.Function5[
     /* grid */ js.UndefOr[IGridInstanceOf[TEntity]], 
     /* gridRow */ js.UndefOr[IGridRowOf[TEntity]], 

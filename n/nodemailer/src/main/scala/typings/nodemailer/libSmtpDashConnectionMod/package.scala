@@ -1,11 +1,12 @@
 package typings.nodemailer
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSmtpDashConnectionMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type CustomAuthenticationHandlers = StringDictionary[
     js.Function1[/* ctx */ CustomAuthenticationContext, js.Promise[Boolean] | js.Any]
   ]

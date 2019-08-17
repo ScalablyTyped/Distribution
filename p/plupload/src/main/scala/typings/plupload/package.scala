@@ -1,11 +1,12 @@
 package typings
 
-import typings.plupload.pluploadNs.Uploader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object plupload {
+  import typings.plupload.pluploadNs.Uploader
+
   type plupload_event = js.Function1[/* uploader */ Uploader, js.Any]
   type plupload_event_ChunkUploaded = js.Function3[
     /* uploader */ Uploader, 

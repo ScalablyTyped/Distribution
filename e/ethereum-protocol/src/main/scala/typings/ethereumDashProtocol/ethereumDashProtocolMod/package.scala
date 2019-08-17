@@ -1,13 +1,14 @@
 package typings.ethereumDashProtocol
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.bignumberDotJs.bignumberDotJsMod.default
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ethereumDashProtocolMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.bignumberDotJs.bignumberDotJsMod.default
+  import typings.std.Error
+
   type BlockParam = BlockParamLiteral | Double
   type ContractAbi = js.Array[AbiDefinition]
   type ContractEventArg = String | default | Double | Boolean

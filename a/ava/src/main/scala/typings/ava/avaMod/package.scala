@@ -1,12 +1,13 @@
 package typings.ava
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.ava.Anon_Args
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object avaMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.ava.Anon_Args
+
   type CbImplementation[Context] = js.Function1[/* t */ CbExecutionContext[Context], ImplementationResult]
   type CbMacro[Args /* <: js.Array[_] */, Context] = (UntitledCbMacro[Args, Context]) with Anon_Args[Args]
   type Constructor = Instantiable1[/* args (repeated) */ js.Any, js.Any]

@@ -1,13 +1,14 @@
 package typings.chance
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chance.Anon_All
-import typings.chance.Anon_Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChanceNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.chance.Anon_All
+  import typings.chance.Anon_Length
+
   type MixinDescriptor = StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
   type NameOptions = FullNameOptions with FirstNameOptions with LastNameOptions with PrefixOptions
   // A more rigorous approach might be to produce

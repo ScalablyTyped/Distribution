@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashAnimatable {
+  import typings.std.Partial
+
   type AnimatableAnimationMethods = Partial[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ k in std.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}

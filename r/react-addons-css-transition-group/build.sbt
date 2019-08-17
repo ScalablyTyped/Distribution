@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-addons-css-transition-group"
-version := "15.0-dt-20190322Z-239c8c"
-scalaVersion := "2.12.8"
+version := "15.0-dt-20190322Z-7a2579"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

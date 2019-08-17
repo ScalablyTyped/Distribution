@@ -1,11 +1,12 @@
 package typings.chrome.chromeNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bookmarksNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type BookmarkChangedEvent = Event[js.Function2[/* id */ String, /* changeInfo */ BookmarkChangeInfo, Unit]]
   type BookmarkChildrenReordered = Event[js.Function2[/* id */ String, /* reorderInfo */ BookmarkReorderInfo, Unit]]
   type BookmarkCreatedEvent = Event[js.Function2[/* id */ String, /* bookmark */ BookmarkTreeNode, Unit]]

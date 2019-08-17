@@ -1,20 +1,21 @@
 package typings.xstate
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
-import typings.std.Record
-import typings.xstate.Anon_AutoForwardDataForward
-import typings.xstate.Anon_DelayExpr
-import typings.xstate.Anon_TypeString
-import typings.xstate.libStateMod.State
-import typings.xstate.libStateNodeMod.StateNode
-import typings.xstate.xstateNumbers.`false`
-import typings.xstate.xstateStrings.xstateDOTguard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Partial
+  import typings.std.Record
+  import typings.xstate.Anon_AutoForwardDataForward
+  import typings.xstate.Anon_DelayExpr
+  import typings.xstate.Anon_TypeString
+  import typings.xstate.libStateMod.State
+  import typings.xstate.libStateNodeMod.StateNode
+  import typings.xstate.xstateNumbers.`false`
+  import typings.xstate.xstateStrings.xstateDOTguard
+
   type Action[TContext, TEvent /* <: EventObject */] = ActionType | (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent])
   type ActionFunction[TContext, TEvent /* <: EventObject */] = js.Function3[
     /* context */ TContext, 

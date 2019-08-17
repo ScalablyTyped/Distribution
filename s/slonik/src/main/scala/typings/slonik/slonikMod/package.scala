@@ -1,18 +1,19 @@
 package typings.slonik
 
-import typings.node.streamMod.Readable
-import typings.slonik.Anon_Alias
-import typings.slonik.Anon_Connect
-import typings.slonik.Anon_Database
-import typings.slonik.Anon_Handler
-import typings.slonik.Anon_HandlerSql
-import typings.std.Parameters
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object slonikMod {
+  import typings.node.streamMod.Readable
+  import typings.slonik.Anon_Alias
+  import typings.slonik.Anon_Connect
+  import typings.slonik.Anon_Database
+  import typings.slonik.Anon_Handler
+  import typings.slonik.Anon_HandlerSql
+  import typings.std.Parameters
+  import typings.std.Record
+
   type ClientUserConfigurationType = ClientConfigurationType
   type ConnectionRoutineType[T] = js.Function1[/* connection */ DatabasePoolConnectionType, js.Promise[T]]
   type DatabaseConfigurationType = String | Anon_Database

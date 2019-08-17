@@ -1,13 +1,14 @@
 package typings.webpack.webpackMod
 
-import typings.webpack.webpackMod.CompilerNs.Handler
-import typings.webpack.webpackMod.StatsNs.ToJsonOptions
-import typings.webpack.webpackMod.StatsNs.ToStringOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object compilerNs {
+  import typings.webpack.webpackMod.CompilerNs.Handler
+  import typings.webpack.webpackMod.StatsNs.ToJsonOptions
+  import typings.webpack.webpackMod.StatsNs.ToStringOptions
+
   /** @deprecated use webpack.Compiler */
   // tslint:disable-next-line:no-unnecessary-qualifier
   type Compiler = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.compiler.Compiler */ js.Object

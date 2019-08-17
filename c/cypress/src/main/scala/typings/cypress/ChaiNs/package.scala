@@ -1,12 +1,13 @@
 package typings.cypress
 
-import typings.cypress.Object
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChaiNs {
+  import typings.cypress.Object
+  import typings.std.Date
+
   type AssertStatic = Assert
   type AssertionStatic = js.Function2[/* target */ js.Any, /* message */ js.UndefOr[String], Assertion]
   type CloseTo = js.Function3[/* expected */ Double, /* delta */ Double, /* message */ js.UndefOr[String], Assertion]

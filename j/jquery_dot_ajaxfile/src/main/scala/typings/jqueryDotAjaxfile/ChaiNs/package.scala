@@ -1,11 +1,12 @@
 package typings.jqueryDotAjaxfile
 
-import typings.jqueryDotAjaxfile.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChaiNs {
+  import typings.jqueryDotAjaxfile.Object
+
   type AssertStatic = Assert
   type AssertionStatic = js.Function2[/* target */ js.Any, /* message */ js.UndefOr[String], Assertion]
   type Equal = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[String], Assertion]

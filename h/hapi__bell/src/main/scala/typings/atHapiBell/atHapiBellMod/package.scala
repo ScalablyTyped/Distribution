@@ -1,13 +1,14 @@
 package typings.atHapiBell
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atHapiHapi.atHapiHapiMod.AuthCredentials
-import typings.atHapiHapi.atHapiHapiMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atHapiBellMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atHapiHapi.atHapiHapiMod.AuthCredentials
+  import typings.atHapiHapi.atHapiHapiMod.Request
+
   type AuthedRequest = js.Function2[
     /* uri */ String, 
     /* params */ js.UndefOr[StringDictionary[String]], 

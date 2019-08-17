@@ -1,14 +1,15 @@
 package typings.flatpickr
 
-import typings.flatpickr.distTypesLocaleMod.Locale
-import typings.flatpickr.distTypesOptionsMod.ParsedOptions
-import typings.std.Date
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distUtilsFormattingMod {
+  import typings.flatpickr.distTypesLocaleMod.Locale
+  import typings.flatpickr.distTypesOptionsMod.ParsedOptions
+  import typings.std.Date
+  import typings.std.Record
+
   type Formats = Record[
     token, 
     js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]

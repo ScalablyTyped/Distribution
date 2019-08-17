@@ -1,11 +1,12 @@
 package typings.atWebscopeioReactDashTextareaDashAutocomplete
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atWebscopeioReactDashTextareaDashAutocompleteMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /* Rewritten from type alias, can be one of: 
     - typings.atWebscopeioReactDashTextareaDashAutocomplete.atWebscopeioReactDashTextareaDashAutocompleteStrings.start
     - typings.atWebscopeioReactDashTextareaDashAutocomplete.atWebscopeioReactDashTextareaDashAutocompleteStrings.end

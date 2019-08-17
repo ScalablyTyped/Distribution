@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lines-and-columns"
-version := "1.1.6-d631b0"
-scalaVersion := "2.12.8"
+version := "1.1.6-5392a2"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

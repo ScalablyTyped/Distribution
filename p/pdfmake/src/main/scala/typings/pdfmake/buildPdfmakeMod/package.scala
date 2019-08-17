@@ -1,13 +1,14 @@
 package typings.pdfmake
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.pdfmake.Anon_Height
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildPdfmakeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.pdfmake.Anon_Height
+  import typings.std.Window
+
   /* Rewritten from type alias, can be one of: 
     - typings.pdfmake.pdfmakeStrings.left
     - typings.pdfmake.pdfmakeStrings.right

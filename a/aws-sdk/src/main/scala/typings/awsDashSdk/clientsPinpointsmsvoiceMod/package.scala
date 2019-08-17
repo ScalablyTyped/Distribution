@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsPinpointsmsvoiceMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ConfigurationSets = js.Array[WordCharactersWithDelimiters]

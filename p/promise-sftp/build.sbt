@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "promise-sftp"
-version := "1.3-dt-20190717Z-c120ec"
-scalaVersion := "2.12.8"
+version := "1.3-dt-20190717Z-61f557"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-2c5248",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-317602",
-  "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-2def75",
-  "org.scalablytyped" %%% "ssh2" % "v0.5.x-dt-20190322Z-e1b556",
-  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-6561b3",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-0c9c39",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-96e173",
+  "org.scalablytyped" %%% "ssh2" % "v0.5.x-dt-20190322Z-470153",
+  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-ebbba9",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

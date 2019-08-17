@@ -1,13 +1,14 @@
 package typings.atUirouterCore
 
-import typings.atUirouterCore.libRouterMod.UIRouter
-import typings.atUirouterCore.libStateInterfaceMod.TargetStateDef
-import typings.atUirouterCore.libStateMod.TargetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libUrlInterfaceMod {
+  import typings.atUirouterCore.libRouterMod.UIRouter
+  import typings.atUirouterCore.libStateInterfaceMod.TargetStateDef
+  import typings.atUirouterCore.libStateMod.TargetState
+
   type UrlRuleHandlerFn = js.Function3[
     /* matchValue */ js.UndefOr[js.Any], 
     /* url */ js.UndefOr[UrlParts], 

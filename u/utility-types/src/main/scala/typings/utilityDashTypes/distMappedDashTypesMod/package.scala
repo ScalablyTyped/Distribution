@@ -1,11 +1,12 @@
 package typings.utilityDashTypes
 
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distMappedDashTypesMod {
+  import typings.std.Pick
+
   type Assign[T /* <: js.Object */, U /* <: js.Object */, I] = Pick[I, String]
   type DeepReadonly[T] = T | _DeepReadonlyObject[T] | (_DeepReadonlyArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
   type Diff[T /* <: js.Object */, U /* <: js.Object */] = Pick[T, SetDifference[String, String]]

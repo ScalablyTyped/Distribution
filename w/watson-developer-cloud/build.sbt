@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "watson-developer-cloud"
-version := "2.40-dt-20180214Z-020ab1"
-scalaVersion := "2.12.8"
+version := "2.40-dt-20180214Z-fe21d4"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

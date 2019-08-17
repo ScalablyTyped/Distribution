@@ -1,11 +1,12 @@
 package typings.denodeify
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object denodeifyMod {
+  import typings.std.Error
+
   type Callback[R] = js.Function2[/* err */ Error, /* result */ R, js.Any]
   type F = js.Function1[/* repeated */ js.Any, js.Any]
   type F0[R] = js.Function1[/* cb */ Callback[R], js.Any]

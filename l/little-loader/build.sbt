@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "little-loader"
-version := "0.2-dt-20190624Z-805701"
-scalaVersion := "2.12.8"
+version := "0.2-dt-20190624Z-1cde9c"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

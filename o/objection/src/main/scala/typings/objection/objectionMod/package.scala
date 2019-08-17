@@ -1,18 +1,19 @@
 package typings.objection
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.objection.Anon_DbRef
-import typings.objection.Anon_Id
-import typings.objection.Anon_Ref
-import typings.objection.TypeofClassModel
-import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object objectionMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.Buffer
+  import typings.objection.Anon_DbRef
+  import typings.objection.Anon_Id
+  import typings.objection.Anon_Ref
+  import typings.objection.TypeofClassModel
+  import typings.std.Date
+  import typings.std.Partial
+
   type As[QM /* <: Model */, RM, RV] = js.Function1[/* alias */ String, QueryBuilder[QM, RM, RV]]
   type BluebirdMapper[T, Result] = js.Function2[/* item */ T, /* index */ Double, Result]
   type ColumnRef = String | Raw | Reference | (QueryBuilder[
@@ -93,7 +94,7 @@ package object objectionMod {
   type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   type OrderBy[QM /* <: Model */, RM, RV] = js.Function2[/* column */ ColumnRef, /* direction */ js.UndefOr[String], QueryBuilder[QM, RM, RV]]
   type PartialUpdate[QM /* <: Model */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof QM ]:? QM[P] | objection.objection.Raw | objection.objection.Reference | objection.objection.QueryBuilder<any, std.Array<any>, any>}
+  {[ P in keyof QM ]:? QM[P] | objection.objection.Raw | objection.objection.Reference | objection.objection.QueryBuilder<any, std.Array<any>, / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV * / any>}
     */ typings.objection.objectionStrings.PartialUpdate with QM
   type Plugin = js.Function1[/* modelClass */ TypeofClassModel, TypeofClassModel]
   type Pojo = StringDictionary[js.Any]

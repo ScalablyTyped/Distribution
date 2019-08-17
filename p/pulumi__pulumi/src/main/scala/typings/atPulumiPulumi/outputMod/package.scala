@@ -1,11 +1,12 @@
 package typings.atPulumiPulumi
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object outputMod {
+  import typings.std.Record
+
   type Input[T] = T | js.Promise[T] | OutputInstance[T]
   type Inputs = Record[String, Input[js.Any]]
   type Lifted[T] = (LiftedObject[String | T, NonFunctionPropertyNames[String | T]]) | LiftedArray[js.Any] | js.Object

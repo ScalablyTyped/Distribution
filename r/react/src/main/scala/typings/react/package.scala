@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object react {
+  import typings.std.Exclude
+
   type AnimationEvent = Event
   type ClipboardEvent = Event
   type CompositionEvent = Event

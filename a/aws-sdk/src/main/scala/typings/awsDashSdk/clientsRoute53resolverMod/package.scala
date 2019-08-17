@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRoute53resolverMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AccountId = String
   type Arn = String
   type Boolean = scala.Boolean

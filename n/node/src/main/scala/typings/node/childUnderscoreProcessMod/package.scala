@@ -1,15 +1,16 @@
 package typings.node
 
-import typings.node.nodeStrings.ignore
-import typings.node.nodeStrings.inherit
-import typings.node.nodeStrings.ipc
-import typings.node.nodeStrings.pipe
-import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object childUnderscoreProcessMod {
+  import typings.node.nodeStrings.ignore
+  import typings.node.nodeStrings.inherit
+  import typings.node.nodeStrings.ipc
+  import typings.node.nodeStrings.pipe
+  import typings.node.streamMod.Stream
+
   /* Rewritten from type alias, can be one of: 
     - typings.node.nodeStrings.pipe
     - typings.node.nodeStrings.ignore

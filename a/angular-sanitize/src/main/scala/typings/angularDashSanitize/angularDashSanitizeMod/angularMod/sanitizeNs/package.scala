@@ -1,12 +1,13 @@
 package typings.angularDashSanitize.angularDashSanitizeMod.angularMod
 
-import typings.angularDashSanitize.angularDashSanitizeMod.angularMod.sanitizeNs.filterNs.ILinky
-import typings.angularDashSanitize.angularDashSanitizeStrings.linky
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sanitizeNs {
+  import typings.angularDashSanitize.angularDashSanitizeMod.angularMod.sanitizeNs.filterNs.ILinky
+  import typings.angularDashSanitize.angularDashSanitizeStrings.linky
+
   ///////////////////////////////////////////////////////////////////////////////
   // Extend angular $filter declarations to include filters from angular.sanitize module
   ///////////////////////////////////////////////////////////////////////////////

@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.OAUTH
-import typings.awsDashSdk.awsDashSdkStrings.SECRETS_MANAGER
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCodebuildMod {
+  import typings.awsDashSdk.awsDashSdkStrings.OAUTH
+  import typings.awsDashSdk.awsDashSdkStrings.SECRETS_MANAGER
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.BUILD_ID

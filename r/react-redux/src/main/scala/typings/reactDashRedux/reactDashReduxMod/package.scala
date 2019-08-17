@@ -1,20 +1,21 @@
 package typings.reactDashRedux
 
-import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod.NonReactStatics
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
-import typings.reactDashRedux.Anon_WrappedComponent
-import typings.redux.reduxMod.Action
-import typings.redux.reduxMod.Dispatch
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashReduxMod {
+  import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod.NonReactStatics
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.reactDashRedux.Anon_WrappedComponent
+  import typings.redux.reduxMod.Action
+  import typings.redux.reduxMod.Dispatch
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], ComponentClass[TOwnProps, ComponentState]]
   type ConnectedComponentClass[C /* <: ComponentType[_] */, P] = (ComponentClass[LibraryManagedAttributes[C, P], ComponentState]) with (NonReactStatics[C, js.Object]) with Anon_WrappedComponent[C]
   type ConnectedProps[TConnector] = js.Any

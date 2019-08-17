@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs.MediaNs
 
-import typings.winrtDashUwp.WindowsNs.WinRTEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DevicesNs {
+  import typings.winrtDashUwp.WindowsNs.WinRTEvent
+
   /** Handles the AnswerRequested and AudioTransferRequested events. */
   type CallControlEventHandler = js.Function1[/* ev */ WinRTEvent[CallControl], Unit]
   /** Handles the DialRequested event. */

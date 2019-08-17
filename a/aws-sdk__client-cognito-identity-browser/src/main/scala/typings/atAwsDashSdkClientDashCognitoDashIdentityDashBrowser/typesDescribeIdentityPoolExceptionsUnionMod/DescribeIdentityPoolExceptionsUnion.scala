@@ -1,0 +1,15 @@
+package typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesDescribeIdentityPoolExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesInvalidParameterExceptionMod.InvalidParameterException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesNotAuthorizedExceptionMod.NotAuthorizedException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException
+  - typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesInternalErrorExceptionMod.InternalErrorException
+*/
+trait DescribeIdentityPoolExceptionsUnion extends js.Object
+

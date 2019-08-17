@@ -1,14 +1,15 @@
 package typings.atGoogleDashCloudTasks
 
-import typings.std.Error
-import typings.std.Partial
-import typings.std.Pick
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atGoogleDashCloudTasksMod {
+  import typings.std.Error
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.std.Required
+
   type APICallback[T] = js.Function2[/* err */ GoogleError | Null, /* response */ js.UndefOr[T], Unit]
   type APIPaginatedCallback[T, U, V] = js.Function4[
     /* err */ GoogleError | Null, 

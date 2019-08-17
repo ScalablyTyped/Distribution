@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object awtNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+
   /**
     * Accessible list box lists are used by list boxes as container for the list items. In addition of the simple container functionality of the {@link
     * AccessibleList} service the {@link com.sun.star.accessibility.XAccessibleSelection} interface is supported.

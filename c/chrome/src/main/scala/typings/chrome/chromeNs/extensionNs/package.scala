@@ -1,12 +1,13 @@
 package typings.chrome.chromeNs
 
-import typings.chrome.chromeNs.eventsNs.Event
-import typings.chrome.chromeNs.runtimeNs.MessageSender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object extensionNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+  import typings.chrome.chromeNs.runtimeNs.MessageSender
+
   type OnRequestEvent = Event[
     (js.Function3[
       /* request */ js.Any, 

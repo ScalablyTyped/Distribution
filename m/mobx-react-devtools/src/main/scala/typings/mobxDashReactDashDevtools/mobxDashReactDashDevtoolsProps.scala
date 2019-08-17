@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait mobxDashReactDashDevtoolsProps {
-  type GraphControlProps = js.Object
-  type LogControlProps = js.Object
   @scala.inline
   def MobxDashReactDashDevtoolsProps: IDevToolProps.type = typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.IDevToolProps
   type MobxDashReactDashDevtoolsProps = IDevToolProps

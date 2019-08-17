@@ -1,14 +1,15 @@
 package typings.atPulumiPulumi
 
-import typings.atPulumiPulumi.atPulumiPulumiStrings.getProvider
-import typings.atPulumiPulumi.atPulumiPulumiStrings.urn
-import typings.atPulumiPulumi.resourceMod.Resource
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object queryableMod {
+  import typings.atPulumiPulumi.atPulumiPulumiStrings.getProvider
+  import typings.atPulumiPulumi.atPulumiPulumiStrings.urn
+  import typings.atPulumiPulumi.resourceMod.Resource
+  import typings.std.Pick
+
   type OptionalKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? P : never}[keyof T] */ js.Any
   type PulumiExclude[T, U] = T
   type PulumiOmit[T, K /* <: String */] = Pick[T, PulumiExclude[String, K]]

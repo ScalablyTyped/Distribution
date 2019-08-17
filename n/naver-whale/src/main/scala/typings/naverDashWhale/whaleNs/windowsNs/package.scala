@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object windowsNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type WindowIdEvent = Event[
     js.Function2[
       /* windowId */ Double, 

@@ -1,14 +1,15 @@
 package typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod
 
-import typings.atWordpressApiDashFetch.Anon_Raw
-import typings.atWordpressApiDashFetch.Anon_Rendered
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SchemaNs {
+  import typings.atWordpressApiDashFetch.Anon_Raw
+  import typings.atWordpressApiDashFetch.Anon_Rendered
+  import typings.std.Partial
+  import typings.std.Pick
+
   // prettier-ignore
   type Block[T /* <: Context */] = BaseBlock[T] | (Pick[
     BaseBlock[T], 

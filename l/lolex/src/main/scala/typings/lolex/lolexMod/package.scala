@@ -1,12 +1,13 @@
 package typings.lolex
 
-import typings.lolex.Anon_Callback
-import typings.lolex.Anon_Performance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object lolexMod {
+  import typings.lolex.Anon_Callback
+  import typings.lolex.Anon_Performance
+
   /**
     * Lolex clock for a browser environment.
     */

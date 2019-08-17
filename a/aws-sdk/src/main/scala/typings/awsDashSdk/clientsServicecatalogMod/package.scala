@@ -1,20 +1,21 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.ACCOUNT
-import typings.awsDashSdk.awsDashSdkStrings.CLOUDFORMATION
-import typings.awsDashSdk.awsDashSdkStrings.CopyTags
-import typings.awsDashSdk.awsDashSdkStrings.IAM
-import typings.awsDashSdk.awsDashSdkStrings.OWNER
-import typings.awsDashSdk.awsDashSdkStrings.SSM_AUTOMATION
-import typings.awsDashSdk.awsDashSdkStrings.SearchQuery
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsServicecatalogMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.ACCOUNT
+  import typings.awsDashSdk.awsDashSdkStrings.CLOUDFORMATION
+  import typings.awsDashSdk.awsDashSdkStrings.CopyTags
+  import typings.awsDashSdk.awsDashSdkStrings.IAM
+  import typings.awsDashSdk.awsDashSdkStrings.OWNER
+  import typings.awsDashSdk.awsDashSdkStrings.SSM_AUTOMATION
+  import typings.awsDashSdk.awsDashSdkStrings.SearchQuery
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AcceptLanguage = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Account

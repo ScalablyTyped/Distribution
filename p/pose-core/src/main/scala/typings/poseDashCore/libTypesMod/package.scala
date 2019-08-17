@@ -1,16 +1,17 @@
 package typings.poseDashCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.poseDashCore.poseDashCoreNumbers.`-1`
-import typings.poseDashCore.poseDashCoreNumbers.`1`
-import typings.poseDashCore.poseDashCoreNumbers.`false`
-import typings.std.Map
-import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.poseDashCore.poseDashCoreNumbers.`-1`
+  import typings.poseDashCore.poseDashCoreNumbers.`1`
+  import typings.poseDashCore.poseDashCoreNumbers.`false`
+  import typings.std.Map
+  import typings.std.Set
+
   type ActiveActions[A] = Map[String, A]
   type ActivePoses = Map[String, js.Array[String]]
   type AddTransitionDelay[A] = js.Function2[/* delay */ Double, /* transition */ A, A]

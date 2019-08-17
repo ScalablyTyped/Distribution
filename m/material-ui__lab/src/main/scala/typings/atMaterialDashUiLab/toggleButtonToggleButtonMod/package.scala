@@ -1,11 +1,12 @@
 package typings.atMaterialDashUiLab
 
-import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object toggleButtonToggleButtonMod {
+  import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
+
   /* Rewritten from type alias, can be one of: 
     - typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
     - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.label

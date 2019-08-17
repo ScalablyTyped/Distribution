@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.presentationNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object textfieldNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.textNs.TextField
+
   /**
     * specifies service of a presentation date and time text field.
     * @see com.sun.star.text.TextField

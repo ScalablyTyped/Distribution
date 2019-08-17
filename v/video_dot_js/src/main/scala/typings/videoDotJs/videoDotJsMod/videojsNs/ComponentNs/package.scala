@@ -1,11 +1,12 @@
 package typings.videoDotJs.videoDotJsMod.videojsNs
 
-import typings.videoDotJs.videoDotJsMod.videojsNs.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ComponentNs {
+  import typings.videoDotJs.videoDotJsMod.videojsNs.Component
+
   /**
   		 * A callback that has no parameters and is bound into `Component`s context.
   		 */

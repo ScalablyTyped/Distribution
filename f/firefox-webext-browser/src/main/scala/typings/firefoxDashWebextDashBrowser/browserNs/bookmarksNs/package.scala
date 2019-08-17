@@ -1,11 +1,12 @@
 package typings.firefoxDashWebextDashBrowser.browserNs
 
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.managed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bookmarksNs {
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.managed
+
   /* bookmarks types */
   /**
     * Indicates the reason why this node is unmodifiable. The `managed` value indicates that this node was configured

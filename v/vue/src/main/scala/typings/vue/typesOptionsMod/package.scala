@@ -1,20 +1,21 @@
 package typings.vue
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.HTMLElement
-import typings.std.Record
-import typings.std.ThisType
-import typings.vue.Anon_Component
-import typings.vue.Anon_Default
-import typings.vue.typesVnodeMod.VNode
-import typings.vue.typesVueMod.CombinedVueInstance
-import typings.vue.typesVueMod.Vue
-import typings.vue.typesVueMod.VueConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesOptionsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.HTMLElement
+  import typings.std.Record
+  import typings.std.ThisType
+  import typings.vue.Anon_Component
+  import typings.vue.Anon_Default
+  import typings.vue.typesVnodeMod.VNode
+  import typings.vue.typesVueMod.CombinedVueInstance
+  import typings.vue.typesVueMod.Vue
+  import typings.vue.typesVueMod.VueConstructor
+
   type Accessors[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: (): T[K] | vue.vue/types/options.ComputedOptions<T[K]>}
     */ typings.vue.vueStrings.Accessors with js.Any

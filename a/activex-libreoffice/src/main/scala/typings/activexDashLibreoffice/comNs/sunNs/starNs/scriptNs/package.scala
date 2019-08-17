@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object scriptNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /** makes it possible to generate the adapters from specific interfaces to the interface {@link XAllListener} . */
   type AllListenerAdapter = XAllListenerAdapterService
   /**

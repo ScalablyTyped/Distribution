@@ -1,12 +1,13 @@
 package typings.firefoxDashWebextDashBrowser.browserNs
 
-import org.scalablytyped.runtime.NumberDictionary
-import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`<all_urls>`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object underscoreManifestNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`<all_urls>`
+
   type ExtensionFileUrl = String
   type ExtensionID = String
   type ExtensionURL = String

@@ -1,11 +1,12 @@
 package typings.scheduler
 
-import typings.scheduler.Anon_Cancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tracingMod {
+  import typings.scheduler.Anon_Cancel
+
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
     - scala.Nothing

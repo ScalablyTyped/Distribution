@@ -1,11 +1,12 @@
 package typings.jiraDashClient.jiraDashClientMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JiraApiNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type BoardObject = StringDictionary[js.Any]
   type ComponentObject = StringDictionary[js.Any]
   type EstimateObject = StringDictionary[js.Any]

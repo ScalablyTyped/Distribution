@@ -12,7 +12,7 @@ trait CreateSimulationApplicationRequest extends js.Object {
   /**
     * The rendering engine for the simulation application.
     */
-  var renderingEngine: RenderingEngine
+  var renderingEngine: js.UndefOr[RenderingEngine] = js.undefined
   /**
     * The robot software suite of the simulation application.
     */
@@ -35,13 +35,14 @@ object CreateSimulationApplicationRequest {
   @scala.inline
   def apply(
     name: Name,
-    renderingEngine: RenderingEngine,
     robotSoftwareSuite: RobotSoftwareSuite,
     simulationSoftwareSuite: SimulationSoftwareSuite,
     sources: SourceConfigs,
+    renderingEngine: RenderingEngine = null,
     tags: TagMap = null
   ): CreateSimulationApplicationRequest = {
-    val __obj = js.Dynamic.literal(name = name, renderingEngine = renderingEngine, robotSoftwareSuite = robotSoftwareSuite, simulationSoftwareSuite = simulationSoftwareSuite, sources = sources)
+    val __obj = js.Dynamic.literal(name = name, robotSoftwareSuite = robotSoftwareSuite, simulationSoftwareSuite = simulationSoftwareSuite, sources = sources)
+    if (renderingEngine != null) __obj.updateDynamic("renderingEngine")(renderingEngine)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateSimulationApplicationRequest]
   }

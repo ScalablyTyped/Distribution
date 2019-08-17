@@ -166,6 +166,21 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStepOutput, scala.Unit]
   ): Request[DescribeStepOutput, AWSError] = js.native
   /**
+    * Returns the Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    */
+  def getBlockPublicAccessConfiguration(): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  def getBlockPublicAccessConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBlockPublicAccessConfigurationOutput, scala.Unit]
+  ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  /**
+    * Returns the Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    */
+  def getBlockPublicAccessConfiguration(params: GetBlockPublicAccessConfigurationInput): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  def getBlockPublicAccessConfiguration(
+    params: GetBlockPublicAccessConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBlockPublicAccessConfigurationOutput, scala.Unit]
+  ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  /**
     * Provides information about the bootstrap actions associated with a cluster.
     */
   def listBootstrapActions(): Request[ListBootstrapActionsOutput, AWSError] = js.native
@@ -298,6 +313,21 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutAutoScalingPolicyOutput, scala.Unit]
   ): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   /**
+    * Creates or updates an Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    */
+  def putBlockPublicAccessConfiguration(): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  def putBlockPublicAccessConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutBlockPublicAccessConfigurationOutput, scala.Unit]
+  ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  /**
+    * Creates or updates an Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    */
+  def putBlockPublicAccessConfiguration(params: PutBlockPublicAccessConfigurationInput): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  def putBlockPublicAccessConfiguration(
+    params: PutBlockPublicAccessConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutBlockPublicAccessConfigurationOutput, scala.Unit]
+  ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
+  /**
     * Removes an automatic scaling policy from a specified instance group within an EMR cluster.
     */
   def removeAutoScalingPolicy(): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
@@ -350,12 +380,12 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
+    *  This member will be deprecated.  Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
     */
   def setVisibleToAllUsers(): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
+    *  This member will be deprecated.  Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
     */
   def setVisibleToAllUsers(params: SetVisibleToAllUsersInput): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(

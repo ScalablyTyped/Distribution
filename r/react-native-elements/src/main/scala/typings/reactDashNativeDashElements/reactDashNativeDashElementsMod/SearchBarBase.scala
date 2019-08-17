@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait SearchBarBase extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any */ trait SearchBarBase extends js.Object {
   /**
     * Override the clear Icon props or use a custom component. Use null or false to hide the icon.
     */

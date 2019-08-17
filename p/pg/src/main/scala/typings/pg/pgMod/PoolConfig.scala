@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 trait PoolConfig extends ClientConfig {
   var Promise: js.UndefOr[PromiseConstructorLike] = js.undefined
   var application_name: js.UndefOr[String] = js.undefined
-  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
   var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   // properties from module 'node-pool'
   var max: js.UndefOr[Double] = js.undefined
@@ -29,6 +28,7 @@ object PoolConfig {
     host: String = null,
     idleTimeoutMillis: Int | Double = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
+    keepAliveInitialDelayMillis: Int | Double = null,
     max: Int | Double = null,
     min: Int | Double = null,
     password: String = null,
@@ -47,6 +47,7 @@ object PoolConfig {
     if (host != null) __obj.updateDynamic("host")(host)
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password)

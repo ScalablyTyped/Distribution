@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "makeup-keyboard-trap"
-version := "0.1-dt-20181022Z-0eb65f"
-scalaVersion := "2.12.8"
+version := "0.1-dt-20181022Z-8ab663"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

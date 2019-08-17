@@ -1,11 +1,12 @@
 package typings
 
-import typings.hashDotJs.hashDotJsStrings.hex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hashDotJs {
+  import typings.hashDotJs.hashDotJsStrings.hex
+
   type HmacConstructor = js.Function3[/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex], Hmac]
   type Ripemd160Constructor = js.Function0[Ripemd160]
   type Sha1Constructor = js.Function0[Sha1]

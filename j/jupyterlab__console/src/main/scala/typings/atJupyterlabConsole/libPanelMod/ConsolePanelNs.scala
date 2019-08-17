@@ -6,6 +6,8 @@ import typings.atJupyterlabCells.atJupyterlabCellsMod.RawCell
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellFooter
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellHeader
 import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.Factory
+import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
 import typings.atJupyterlabConsole.libWidgetMod.CodeConsole
 import typings.atJupyterlabConsole.libWidgetMod.CodeConsoleNs.IModelFactory
 import typings.atJupyterlabOutputarea.libWidgetMod.IOutputPrompt
@@ -35,7 +37,7 @@ object ConsolePanelNs extends js.Object {
       * to pass it around.
       */
     /* InferMemberOverrides */
-    override val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
+    override val editorFactory: Factory = js.native
     /**
       * Create a new cell header for the parent widget.
       */
@@ -114,7 +116,7 @@ object ConsolePanelNs extends js.Object {
     /**
       * The service used to look up mime types.
       */
-    var mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
+    var mimeTypeService: IEditorMimeTypeService
     /**
       * The model factory for the console widget.
       */

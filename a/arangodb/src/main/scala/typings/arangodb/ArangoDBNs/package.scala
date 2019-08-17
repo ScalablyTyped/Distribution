@@ -1,16 +1,17 @@
 package typings.arangodb
 
-import typings.arangodb.Anon_From
-import typings.arangodb.Anon_FromTo
-import typings.arangodb.arangodbNumbers.`2`
-import typings.arangodb.arangodbNumbers.`3`
-import typings.arangodb.arangodbStrings.arangosearch
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ArangoDBNs {
+  import typings.arangodb.Anon_From
+  import typings.arangodb.Anon_FromTo
+  import typings.arangodb.arangodbNumbers.`2`
+  import typings.arangodb.arangodbNumbers.`3`
+  import typings.arangodb.arangodbStrings.arangosearch
+  import typings.std.Partial
+
   type CollectionType = DocumentCollectionType | EdgeCollectionType
   type Document[T /* <: js.Object */] = Anon_From with typings.arangodb.arangodbStrings.Document with T with DocumentMetadata
   // Collection
@@ -20,7 +21,7 @@ package object ArangoDBNs {
   type Edge[T /* <: js.Object */] = Document[T] with Anon_FromTo
   type EdgeCollectionType = `3`
   type Patch[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] | object}
+  {[ K in keyof T ]:? T[K] | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias arangodb.ArangoDB.Patch<T[K]> * / object}
     */ typings.arangodb.arangodbStrings.Patch with T
   type ViewType = arangosearch
 }

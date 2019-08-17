@@ -1,15 +1,16 @@
 package typings.apolloDashLink
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashLink.Anon_Context
-import typings.graphql.executionExecuteMod.ExecutionResult
-import typings.std.Record
-import typings.zenDashObservableDashTs.libZenObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.apolloDashLink.Anon_Context
+  import typings.graphql.executionExecuteMod.ExecutionResult
+  import typings.std.Record
+  import typings.zenDashObservableDashTs.libZenObservableMod.Observable
+
   type FetchResult[TData, C, E] = ExecutionResult[TData] with (Anon_Context[E, C])
   type NextLink = js.Function1[
     /* operation */ Operation, 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapCalloutProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapCalloutProps extends js.Object {
   var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[Anon_ActionCalloutpress], Unit]] = js.undefined
   var tooltip: js.UndefOr[Boolean] = js.undefined
 }

@@ -13,6 +13,6 @@ package object Global {
   //and you will have to put the correct Type in each property to use them, what defeats the purpose. Besides, this gives  
   //RangeError: Maximum call stack size exceeded in TSC when used in all the mapping signatures. Maybe this can be used with TS 2.8 and conditional typing
   type KnockoutObservableType[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]: knockout.KnockoutObservable<object> | T[P]}
+  {[ P in keyof T ]: knockout.KnockoutObservable</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias knockout.mapping.knockout.mapping.Global.KnockoutObservableType<T[P]> * / object> | T[P]}
     */ typings.knockoutDotMapping.knockoutDotMappingStrings.KnockoutObservableType with T
 }

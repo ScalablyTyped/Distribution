@@ -1,10 +1,11 @@
 package typings.centra
 
-import typings.node.urlMod.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object centraMod {
+  import typings.node.urlMod.URL
+
   type CentraFactory = js.Function2[/* url */ URL | String, /* method */ js.UndefOr[String], Request]
 }

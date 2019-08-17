@@ -1,12 +1,13 @@
 package typings.async
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object asyncMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.IterableIterator
+
   type AsyncAutoTask[R1, R /* <: Dictionary[_] */, E] = (AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | (js.Array[String | (AsyncAutoTaskFunction[R1, R, E])])
   type AsyncAutoTaskFunction[R1, R /* <: Dictionary[_] */, E] = js.Function2[/* results */ R, /* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], Unit]
   type AsyncAutoTaskFunctionWithoutDependencies[R1, E] = js.Function1[/* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], Unit]

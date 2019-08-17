@@ -1,11 +1,12 @@
 package typings.atAngularCompiler
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcCompilerUnderscoreFacadeUnderscoreInterfaceMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ChangeDetectionStrategy = Double
   type CoreEnvironment = StringDictionary[js.Function]
   type Provider = js.Any

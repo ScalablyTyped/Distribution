@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.InstanceFormArray")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<InstanceForm> * / any */ @JSGlobal("bws.packer.InstanceFormArray")
 @js.native
 /**
   * Default Constructor.

@@ -1,12 +1,13 @@
 package typings.reduxDashForm
 
-import typings.reduxDashForm.libReduxFormMod.GetFormState
-import typings.reduxDashForm.reduxDashFormMod.FormErrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSelectorsMod {
+  import typings.reduxDashForm.libReduxFormMod.GetFormState
+  import typings.reduxDashForm.reduxDashFormMod.FormErrors
+
   type BooleanSelector[State] = js.Function2[
     /* formName */ String, 
     /* getFormState */ js.UndefOr[GetFormState], 

@@ -1,13 +1,14 @@
 package typings.ol
 
-import typings.ol.coordinateMod.Coordinate
-import typings.ol.featureMod.FeatureLike
-import typings.ol.renderMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styleStyleMod {
+  import typings.ol.coordinateMod.Coordinate
+  import typings.ol.featureMod.FeatureLike
+  import typings.ol.renderMod.State
+
   type GeometryFunction = js.Function1[
     /* p0 */ FeatureLike, 
     js.UndefOr[typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default]

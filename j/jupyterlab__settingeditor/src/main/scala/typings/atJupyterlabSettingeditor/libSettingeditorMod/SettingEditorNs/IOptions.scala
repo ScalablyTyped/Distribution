@@ -1,5 +1,6 @@
 package typings.atJupyterlabSettingeditor.libSettingeditorMod.SettingEditorNs
 
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.Factory
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
@@ -20,7 +21,7 @@ trait IOptions extends js.Object {
   /**
     * The editor factory used by the setting editor.
     */
-  var editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+  var editorFactory: Factory
   /**
     * The state database key for the editor's state management.
     */
@@ -47,7 +48,7 @@ object IOptions {
   @scala.inline
   def apply(
     commands: Anon_Registry,
-    editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any,
+    editorFactory: Factory,
     key: String,
     registry: ISettingRegistry,
     state: IStateDB[ReadonlyJSONValue],

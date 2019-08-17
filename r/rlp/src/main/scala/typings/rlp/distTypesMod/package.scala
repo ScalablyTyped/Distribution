@@ -1,13 +1,14 @@
 package typings.rlp
 
-import typings.bnDotJs.bnDotJsMod.^
-import typings.node.Buffer
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesMod {
+  import typings.bnDotJs.bnDotJsMod.^
+  import typings.node.Buffer
+  import typings.std.Uint8Array
+
   /* Rewritten from type alias, can be one of: 
     - typings.node.Buffer
     - java.lang.String

@@ -1,17 +1,18 @@
 package typings.apolloDashUtilities
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.languageAstMod.BooleanValueNode
-import typings.graphql.languageAstMod.EnumValueNode
-import typings.graphql.languageAstMod.FloatValueNode
-import typings.graphql.languageAstMod.IntValueNode
-import typings.graphql.languageAstMod.StringValueNode
-import typings.graphql.languageAstMod.VariableNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libStoreUtilsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.languageAstMod.BooleanValueNode
+  import typings.graphql.languageAstMod.EnumValueNode
+  import typings.graphql.languageAstMod.FloatValueNode
+  import typings.graphql.languageAstMod.IntValueNode
+  import typings.graphql.languageAstMod.StringValueNode
+  import typings.graphql.languageAstMod.VariableNode
+
   type Directives = StringDictionary[StringDictionary[js.Any]]
   type ListValue = js.Array[Null | IdValue]
   type NumberValue = IntValueNode | FloatValueNode

@@ -1,11 +1,12 @@
 package typings.bull
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bullMod {
+  import typings.std.Error
+
   type ActiveEventCallback[T] = js.Function2[/* job */ Job[T], /* jobPromise */ js.UndefOr[JobPromise], Unit]
   type CleanedEventCallback[T] = js.Function2[/* jobs */ js.Array[Job[T]], /* status */ JobStatusClean, Unit]
   type CompletedEventCallback[T] = js.Function2[/* job */ Job[T], /* result */ js.Any, Unit]

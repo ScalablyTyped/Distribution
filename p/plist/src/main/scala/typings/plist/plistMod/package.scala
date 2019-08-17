@@ -1,13 +1,14 @@
 package typings.plist
 
-import typings.node.Buffer
-import typings.std.Date
-import typings.xmlbuilder.xmlbuilderMod.XMLToStringOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object plistMod {
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.xmlbuilder.xmlbuilderMod.XMLToStringOptions
+
   type PlistBuildOptions = XMLToStringOptions
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

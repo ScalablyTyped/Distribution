@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRadio")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonRadio * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRadio")
 @js.native
 class IonRadio protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

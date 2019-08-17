@@ -22,7 +22,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<any> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<any>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<any>, 'classes' | never>> : never */ trait SpeedDialProps
+- Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, 'classes' | never>> : never */ trait SpeedDialProps
   extends StyledComponentProps[SpeedDialClassKey]
      with Anon_ClassName {
   var ButtonProps: js.UndefOr[PartialButtonProps] = js.undefined

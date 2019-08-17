@@ -1,24 +1,25 @@
 package typings.openlayers
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.openlayers.openlayersMod.eventsNs.Event
-import typings.openlayers.openlayersMod.geomNs.Geometry
-import typings.openlayers.openlayersMod.geomNs.SimpleGeometry
-import typings.openlayers.openlayersMod.layerNs.Layer
-import typings.openlayers.openlayersMod.olxNs.FrameState
-import typings.openlayers.openlayersMod.projNs.Projection
-import typings.openlayers.openlayersMod.styleNs.Style
-import typings.std.CanvasGradient
-import typings.std.CanvasPattern
-import typings.std.HTMLCanvasElement
-import typings.std.ImageData
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object openlayersMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.openlayers.openlayersMod.eventsNs.Event
+  import typings.openlayers.openlayersMod.geomNs.Geometry
+  import typings.openlayers.openlayersMod.geomNs.SimpleGeometry
+  import typings.openlayers.openlayersMod.layerNs.Layer
+  import typings.openlayers.openlayersMod.olxNs.FrameState
+  import typings.openlayers.openlayersMod.projNs.Projection
+  import typings.openlayers.openlayersMod.styleNs.Style
+  import typings.std.CanvasGradient
+  import typings.std.CanvasPattern
+  import typings.std.HTMLCanvasElement
+  import typings.std.ImageData
+  import typings.std.Uint8Array
+  import typings.std.Uint8ClampedArray
+
   type AttributionLike = String | (js.Array[Attribution | String]) | Attribution
   type CanvasFunctionType = js.Function5[
     /* extent */ Extent, 

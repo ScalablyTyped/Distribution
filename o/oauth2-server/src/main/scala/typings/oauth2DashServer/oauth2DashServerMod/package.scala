@@ -1,11 +1,12 @@
 package typings.oauth2DashServer
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oauth2DashServerMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Represents a generic callback structure for model callbacks
     */

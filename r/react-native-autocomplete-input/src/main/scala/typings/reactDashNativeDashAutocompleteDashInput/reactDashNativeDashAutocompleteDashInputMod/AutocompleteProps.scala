@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait AutocompleteProps[T] extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any */ trait AutocompleteProps[T] extends js.Object {
   /**
     * style
     * These styles will be applied to the container which surrounds the autocomplete component.
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation._
     * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
     */
   var renderSeparator: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: any['renderSeparator'] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any
   ] = js.undefined
   /**
     * function
@@ -101,7 +101,7 @@ object AutocompleteProps {
     listStyle: StyleProp[ViewStyle] = null,
     onShowResult: /* showResults */ Boolean => Unit = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    renderSeparator: /* import warning: ImportType.apply Failed type conversion: any['renderSeparator'] */ js.Any = null,
+    renderSeparator: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any = null,
     renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => ReactNode = null
   ): AutocompleteProps[T] = {
     val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))

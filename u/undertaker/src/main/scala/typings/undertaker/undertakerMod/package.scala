@@ -1,13 +1,14 @@
 package typings.undertaker
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.Process
-import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object undertakerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.NodeJSNs.Process
+  import typings.node.streamMod.Duplex
+
   type Task = String | TaskFunction
   type TaskFlags = StringDictionary[String]
   type TaskFunctionBase = js.Function1[

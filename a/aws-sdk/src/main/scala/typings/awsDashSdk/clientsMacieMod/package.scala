@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.FULL
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMacieMod {
+  import typings.awsDashSdk.awsDashSdkStrings.FULL
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type AWSAccountId = String
   type BucketName = String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

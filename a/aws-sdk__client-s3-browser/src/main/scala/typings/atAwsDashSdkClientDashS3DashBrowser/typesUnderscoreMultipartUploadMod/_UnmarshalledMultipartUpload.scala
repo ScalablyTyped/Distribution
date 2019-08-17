@@ -1,0 +1,52 @@
+package typings.atAwsDashSdkClientDashS3DashBrowser.typesUnderscoreMultipartUploadMod
+
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.ONEZONE_IA
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.REDUCED_REDUNDANCY
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.STANDARD
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.STANDARD_IA
+import typings.atAwsDashSdkClientDashS3DashBrowser.typesUnderscoreInitiatorMod._UnmarshalledInitiator
+import typings.atAwsDashSdkClientDashS3DashBrowser.typesUnderscoreOwnerMod._UnmarshalledOwner
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _UnmarshalledMultipartUpload extends _MultipartUpload {
+  /**
+    * <p>Date and time at which the multipart upload was initiated.</p>
+    */
+  @JSName("Initiated")
+  var Initiated__UnmarshalledMultipartUpload: js.UndefOr[Date] = js.undefined
+  /**
+    * <p>Identifies who initiated the multipart upload.</p>
+    */
+  @JSName("Initiator")
+  var Initiator__UnmarshalledMultipartUpload: js.UndefOr[_UnmarshalledInitiator] = js.undefined
+  /**
+    * _Owner shape
+    */
+  @JSName("Owner")
+  var Owner__UnmarshalledMultipartUpload: js.UndefOr[_UnmarshalledOwner] = js.undefined
+}
+
+object _UnmarshalledMultipartUpload {
+  @scala.inline
+  def apply(
+    Initiated: Date = null,
+    Initiator: _UnmarshalledInitiator = null,
+    Key: String = null,
+    Owner: _UnmarshalledOwner = null,
+    StorageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String = null,
+    UploadId: String = null
+  ): _UnmarshalledMultipartUpload = {
+    val __obj = js.Dynamic.literal()
+    if (Initiated != null) __obj.updateDynamic("Initiated")(Initiated)
+    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator)
+    if (Key != null) __obj.updateDynamic("Key")(Key)
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
+    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId)
+    __obj.asInstanceOf[_UnmarshalledMultipartUpload]
+  }
+}
+

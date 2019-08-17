@@ -1,11 +1,12 @@
 package typings.eeDashFirst
 
-import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object eeDashFirstMod {
+  import typings.node.eventsMod.EventEmitter
+
   type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
     /* err */ js.Any, 
     /* ee */ TEmitter, 

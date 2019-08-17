@@ -1,11 +1,12 @@
 package typings.chaiDashAsDashPromised
 
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ChaiNs {
+  import typings.std.RegExp
+
   type PromisedCloseTo = js.Function3[
     /* expected */ Double, 
     /* delta */ Double, 

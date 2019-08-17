@@ -1,5 +1,7 @@
 package typings.atJupyterlabMarkdownviewer.libWidgetMod
 
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IContext
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
 import typings.atJupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerNs.IConfig
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IRenderer
 import scala.scalajs.js
@@ -43,7 +45,7 @@ object MarkdownViewerNs extends js.Object {
     /**
       * Context
       */
-    var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any
+    var context: IContext[IModel]
     /**
       * The renderer instance.
       */

@@ -1,12 +1,13 @@
 package typings.node
 
-import typings.node.NodeJSNs.ErrnoException
-import typings.node.dnsMod.LookupOneOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object netMod {
+  import typings.node.NodeJSNs.ErrnoException
+  import typings.node.dnsMod.LookupOneOptions
+
   type LookupFunction = js.Function3[
     /* hostname */ java.lang.String, 
     /* options */ LookupOneOptions, 

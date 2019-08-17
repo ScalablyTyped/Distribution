@@ -1,11 +1,12 @@
 package typings.mithril
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mithrilMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type CVnode[A] = Vnode[A, ClassComponent[A]]
   type CVnodeDOM[A] = VnodeDOM[A, ClassComponent[A]]
   // Vnode children types

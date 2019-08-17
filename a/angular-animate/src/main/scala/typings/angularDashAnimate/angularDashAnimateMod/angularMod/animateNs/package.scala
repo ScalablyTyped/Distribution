@@ -1,12 +1,13 @@
 package typings.angularDashAnimate.angularDashAnimateMod.angularMod
 
-import typings.angular.JQuery
-import typings.angular.angularMod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object animateNs {
+  import typings.angular.JQuery
+  import typings.angular.angularMod.IPromise
+
   /**
     * AnimateCssService
     * see http://docs.angularjs.org/api/ngAnimate/service/$animateCss

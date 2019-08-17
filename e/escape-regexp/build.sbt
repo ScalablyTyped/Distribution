@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "escape-regexp"
-version := "0.0-dt-20180331Z-0ebe89"
-scalaVersion := "2.12.8"
+version := "0.0-dt-20180331Z-75d8bb"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

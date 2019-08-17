@@ -1,10 +1,10 @@
 package typings.webcl.WEBCLNs
 
+import typings.webcl.webclNumbers._0xFFFFFFFF
 import typings.webcl.webclNumbers.`0x1`
 import typings.webcl.webclNumbers.`0x2`
 import typings.webcl.webclNumbers.`0x4`
 import typings.webcl.webclNumbers.`0x8`
-import typings.webcl.webclNumbers.`0xFFFFFFFF`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.webcl.webclNumbers.`0x2`
   - typings.webcl.webclNumbers.`0x4`
   - typings.webcl.webclNumbers.`0x8`
-  - typings.webcl.webclNumbers.`0xFFFFFFFF`
+  - typings.webcl.webclNumbers._0xFFFFFFFF
 */
 trait DeviceTypeBits extends js.Object
 
@@ -23,7 +23,7 @@ object DeviceTypeBits {
   @scala.inline
   def DEVICE_TYPE_ACCELERATOR: `0x8` = this.cast(0x8)
   @scala.inline
-  def DEVICE_TYPE_ALL: `0xFFFFFFFF` = this.cast(0xFFFFFFFF)
+  def DEVICE_TYPE_ALL: _0xFFFFFFFF = this.cast(0xFFFFFFFF)
   @scala.inline
   def DEVICE_TYPE_CPU: `0x2` = this.cast(0x2)
   @scala.inline

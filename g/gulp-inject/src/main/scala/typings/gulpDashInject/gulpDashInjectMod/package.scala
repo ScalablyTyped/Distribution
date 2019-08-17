@@ -1,11 +1,12 @@
 package typings.gulpDashInject
 
-import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gulpDashInjectMod {
+  import typings.vinyl.vinylMod.File
+
   type ITagFunction = js.Function2[/* targetExt */ String, /* sourceExt */ String, String]
   type ITransformFunction = js.Function5[
     /* filepath */ String, 

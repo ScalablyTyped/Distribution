@@ -1,28 +1,29 @@
 package typings.atIonicCore.distTypesComponentsMod
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonActionSheetControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAlertControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAppElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAvatarElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonButtonsElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonItemGroupElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonLoadingControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonModalControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonNavPopElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPickerControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverControllerElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonReorderElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRowElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSlideElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonThumbnailElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToastControllerElement
-import typings.atIonicCore.distTypesStencilDotCoreMod.JSXBaseNs.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object LocalJSXNs {
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonActionSheetControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAlertControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAppElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAvatarElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonButtonsElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonItemGroupElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonLoadingControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonModalControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonNavPopElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPickerControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverControllerElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonReorderElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRowElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSlideElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonThumbnailElement
+  import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToastControllerElement
+  import typings.atIonicCore.distTypesStencilDotCoreMod.JSXBaseNs.HTMLAttributes
+
   type IonActionSheetController = HTMLAttributes[HTMLIonActionSheetControllerElement]
   type IonAlertController = HTMLAttributes[HTMLIonAlertControllerElement]
   type IonApp = HTMLAttributes[HTMLIonAppElement]

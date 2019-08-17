@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.EAP_TLS
-import typings.awsDashSdk.awsDashSdkStrings.VOICE
-import typings.awsDashSdk.awsDashSdkStrings.WORK
-import typings.awsDashSdk.awsDashSdkStrings.`en-US`
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsAlexaforbusinessMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.EAP_TLS
+  import typings.awsDashSdk.awsDashSdkStrings.VOICE
+  import typings.awsDashSdk.awsDashSdkStrings.WORK
+  import typings.awsDashSdk.awsDashSdkStrings.`en-US`
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type Address = String
   type AddressBookDataList = js.Array[AddressBookData]
   type AddressBookDescription = String

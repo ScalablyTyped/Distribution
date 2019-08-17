@@ -1,14 +1,15 @@
 package typings.typestubDashIpfs
 
-import typings.node.Buffer
-import typings.std.Blob
-import typings.std.BufferSource
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typestubDashIpfsMod {
+  import typings.node.Buffer
+  import typings.std.Blob
+  import typings.std.BufferSource
+  import typings.std.Error
+
   type Big = js.Any
   type CID = js.Any
   type Callback[T] = js.Function2[/* error */ Error, /* result */ js.UndefOr[T], Unit]

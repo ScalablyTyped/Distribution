@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "zopflipng-bin"
-version := "4.1-dt-20180420Z-d01640"
-scalaVersion := "2.12.8"
+version := "4.1-dt-20180420Z-74fda4"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

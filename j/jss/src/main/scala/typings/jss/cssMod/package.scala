@@ -1,13 +1,14 @@
 package typings.jss
 
-import typings.csstype.csstypeMod.Properties
-import typings.csstype.csstypeMod.PropertiesHyphen
-import typings.indefiniteDashObservable.distTypesMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cssMod {
+  import typings.csstype.csstypeMod.Properties
+  import typings.csstype.csstypeMod.PropertiesHyphen
+  import typings.indefiniteDashObservable.distTypesMod.Observable
+
   type CSSProperties = ObservableProperties[Properties[Length]] with ObservableProperties[PropertiesHyphen[Length]]
   type JssExpandArr = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ k in 'animation' | 'background' | 'border' | 'boxShadow' | 'flex' | 'font' | 'listStyle' | 'margin' | 'padding' | 'outline' | 'textShadow' | 'transition' ]:? jss.jss/css.JssExpand[k] | std.Array<jss.jss/css.JssExpand[k]>}

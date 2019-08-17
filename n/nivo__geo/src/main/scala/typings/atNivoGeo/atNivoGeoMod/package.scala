@@ -1,15 +1,16 @@
 package typings.atNivoGeo
 
-import typings.atNivoGeo.Anon_Feature
-import typings.atNivoGeo.Anon_FeatureChoroplethBoundFeature
-import typings.react.NativeMouseEvent
-import typings.react.reactMod.FunctionComponent
-import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoGeoMod {
+  import typings.atNivoGeo.Anon_Feature
+  import typings.atNivoGeo.Anon_FeatureChoroplethBoundFeature
+  import typings.react.NativeMouseEvent
+  import typings.react.reactMod.FunctionComponent
+  import typings.react.reactMod.MouseEvent
+
   type ChoroplethEventHandler = js.Function2[
     /* feature */ ChoroplethBoundFeature, 
     /* event */ MouseEvent[js.Any, NativeMouseEvent], 

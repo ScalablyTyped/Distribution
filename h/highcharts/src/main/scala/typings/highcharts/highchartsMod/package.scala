@@ -1,18 +1,19 @@
 package typings.highcharts
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.highcharts.globalsMod.GlobalSVGElement
-import typings.highcharts.highchartsNumbers.`false`
-import typings.std.Error
-import typings.std.Event
-import typings.std.HTMLElement
-import typings.std.MouseEvent
-import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object highchartsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.highcharts.globalsMod.GlobalSVGElement
+  import typings.highcharts.highchartsNumbers.`false`
+  import typings.std.Error
+  import typings.std.Event
+  import typings.std.HTMLElement
+  import typings.std.MouseEvent
+  import typings.std.PointerEvent
+
   type AnimationStepCallbackFunction = js.ThisFunction0[/* this */ SVGElement, Unit]
   type AxisEventCallbackFunction = js.ThisFunction0[/* this */ Axis, Unit]
   type AxisPointBreakEventCallbackFunction = js.ThisFunction1[/* this */ Axis, /* evt */ AxisPointBreakEventObject, Unit]

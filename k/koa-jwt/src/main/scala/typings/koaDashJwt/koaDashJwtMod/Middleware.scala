@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ @js.native
 trait Middleware extends js.Object {
   def unless(): typings.koa.koaMod.Middleware[_, js.Object] = js.native
   def unless(params: Anon_Path): typings.koa.koaMod.Middleware[_, js.Object] = js.native

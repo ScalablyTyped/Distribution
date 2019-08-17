@@ -1,14 +1,15 @@
 package typings.webrtc
 
-import typings.webrtc.ConstrainBooleanParameters
-import typings.webrtc.ConstrainNumberRange
-import typings.webrtc.ConstrainStringParameters
-import typings.webrtc.NumberRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object W3CNs {
+  import typings.webrtc.ConstrainBooleanParameters
+  import typings.webrtc.ConstrainNumberRange
+  import typings.webrtc.ConstrainStringParameters
+  import typings.webrtc.NumberRange
+
   type ConstrainBoolean = Boolean | ConstrainBooleanParameters
   type ConstrainDouble = ConstrainNumber
   type ConstrainLong = ConstrainNumber

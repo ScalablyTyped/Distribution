@@ -14,11 +14,15 @@ trait CreateSimulationJobResponse extends js.Object {
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   /**
+    * The data sources for the simulation job.
+    */
+  var dataSources: js.UndefOr[DataSources] = js.undefined
+  /**
     * the failure behavior for the simulation job.
     */
   var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
   /**
-    * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  
+    * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  WrongRegionS3Output  S3 output bucket is in a different region than AWS RoboMaker.  WrongRegionRobotApplication  RobotApplication bucket is in a different region than AWS RoboMaker.  WrongRegionSimulationApplication  SimulationApplication bucket is in a different region than AWS RoboMaker.  
     */
   var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
   /**
@@ -33,6 +37,10 @@ trait CreateSimulationJobResponse extends js.Object {
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
   var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  /**
+    * The logging configuration.
+    */
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   /**
     * The maximum simulation job duration in seconds. 
     */
@@ -72,11 +80,13 @@ object CreateSimulationJobResponse {
   def apply(
     arn: Arn = null,
     clientRequestToken: ClientRequestToken = null,
+    dataSources: DataSources = null,
     failureBehavior: FailureBehavior = null,
     failureCode: SimulationJobErrorCode = null,
     iamRole: IamRole = null,
     lastStartedAt: LastStartedAt = null,
     lastUpdatedAt: LastUpdatedAt = null,
+    loggingConfig: LoggingConfig = null,
     maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
     outputLocation: OutputLocation = null,
     robotApplications: RobotApplicationConfigs = null,
@@ -89,11 +99,13 @@ object CreateSimulationJobResponse {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
+    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
     if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
     if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
     if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole)
     if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
     if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds)
     if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation)
     if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications)

@@ -1,11 +1,12 @@
 package typings.winrtDashUwp.WindowsNs
 
-import typings.winrtDashUwp.WindowsNs.WinRTEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FoundationNs {
+  import typings.winrtDashUwp.WindowsNs.WinRTEvent
+
   /** Represents a method that handles the completed event of an asynchronous action. */
   type AsyncActionCompletedHandler = js.Function2[/* asyncInfo */ IAsyncAction, /* asyncStatus */ AsyncStatus, Unit]
   /** Represents a method that handles progress update events of an asynchronous action that provides progress updates. */

@@ -1,10 +1,11 @@
 package typings.reactDashOverlays
 
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPortalMod {
+  import typings.react.reactMod.Component
+
   type Portal = Component[PortalProps, js.Object, js.Any]
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hypertext-application-language"
-version := "6.0-dt-20190322Z-b765e4"
-scalaVersion := "2.12.8"
+version := "6.0-dt-20190322Z-01e443"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

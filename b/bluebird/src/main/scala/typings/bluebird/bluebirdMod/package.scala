@@ -1,11 +1,12 @@
 package typings.bluebird
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bluebirdMod {
+  import org.scalablytyped.runtime.Instantiable1
+
   type CatchFilter[E] = (js.Function1[/* error */ E, Boolean]) | (js.Object with E)
   type Constructor[E] = Instantiable1[/* args (repeated) */ js.Any, E]
   type IterateFunction[T, R] = js.Function3[/* item */ T, /* index */ Double, /* arrayLength */ Double, Resolvable[R]]

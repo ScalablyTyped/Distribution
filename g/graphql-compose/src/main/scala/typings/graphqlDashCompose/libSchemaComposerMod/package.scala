@@ -1,16 +1,17 @@
 package typings.graphqlDashCompose
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.typeDefinitionMod.GraphQLNamedType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphqlDashCompose.libInterfaceTypeComposerMod.InterfaceTypeComposer
-import typings.graphqlDashCompose.libObjectTypeComposerMod.ObjectTypeComposer
-import typings.graphqlDashCompose.libUnionTypeComposerMod.UnionTypeComposer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSchemaComposerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.typeDefinitionMod.GraphQLNamedType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphqlDashCompose.libInterfaceTypeComposerMod.InterfaceTypeComposer
+  import typings.graphqlDashCompose.libObjectTypeComposerMod.ObjectTypeComposer
+  import typings.graphqlDashCompose.libUnionTypeComposerMod.UnionTypeComposer
+
   /* Rewritten from type alias, can be one of: 
     - typings.graphqlDashCompose.libObjectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]
     - typings.graphqlDashCompose.libInputTypeComposerMod.InputTypeComposer[TContext]

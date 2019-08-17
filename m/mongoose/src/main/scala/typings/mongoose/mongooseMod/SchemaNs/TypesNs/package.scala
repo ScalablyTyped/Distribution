@@ -1,11 +1,12 @@
 package typings.mongoose.mongooseMod.SchemaNs
 
-import typings.mongoose.mongooseMod.SchemaType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object TypesNs {
+  import typings.mongoose.mongooseMod.SchemaType
+
   /*
     * section schema/embedded.js
     * http://mongoosejs.com/docs/api.html#schema-embedded-js

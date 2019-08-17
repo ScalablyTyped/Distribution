@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.REQUEST
-import typings.awsDashSdk.awsDashSdkStrings.WEBSOCKET
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsApigatewayv2Mod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.REQUEST
+  import typings.awsDashSdk.awsDashSdkStrings.WEBSOCKET
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type Arn = String
   type AuthorizationScopes = js.Array[StringWithLengthBetween1And64]
   /* Rewritten from type alias, can be one of: 

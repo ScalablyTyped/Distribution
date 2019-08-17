@@ -1,11 +1,12 @@
 package typings.atPhosphorDatagrid.libJsonmodelMod
 
-import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JSONModelNs {
+  import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONObject
+
   /**
     * A type alias for a data source for a JSON data model.
     *

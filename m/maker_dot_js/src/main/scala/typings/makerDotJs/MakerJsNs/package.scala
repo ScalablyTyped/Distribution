@@ -1,12 +1,13 @@
 package typings.makerDotJs
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MakerJsNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Callback to model.findChains() with resulting array of chains and unchained paths.
     */

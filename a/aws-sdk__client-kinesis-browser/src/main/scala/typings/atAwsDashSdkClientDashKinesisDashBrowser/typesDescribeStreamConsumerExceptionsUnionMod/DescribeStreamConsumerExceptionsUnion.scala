@@ -1,0 +1,13 @@
+package typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDescribeStreamConsumerExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashKinesisDashBrowser.typesLimitExceededExceptionMod.LimitExceededException
+  - typings.atAwsDashSdkClientDashKinesisDashBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException
+  - typings.atAwsDashSdkClientDashKinesisDashBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException
+*/
+trait DescribeStreamConsumerExceptionsUnion extends js.Object
+

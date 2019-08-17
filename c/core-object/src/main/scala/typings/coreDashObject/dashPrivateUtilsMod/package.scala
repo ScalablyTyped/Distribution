@@ -1,13 +1,14 @@
 package typings.coreDashObject
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dashPrivateUtilsMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type Constructor[Instance] = Instantiable1[/* args (repeated) */ js.Any, Instance]
   type MethodNames[T] = Values[
     /* import warning: ImportType.apply c Unsupported type mapping: 

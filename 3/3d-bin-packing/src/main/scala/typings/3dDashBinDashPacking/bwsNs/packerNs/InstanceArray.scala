@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSGlobal("bws.packer.InstanceArray")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityArray<Instance> * / any */ @JSGlobal("bws.packer.InstanceArray")
 @js.native
 /**
   * Default Constructor.

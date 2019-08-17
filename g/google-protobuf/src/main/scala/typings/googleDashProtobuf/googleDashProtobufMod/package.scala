@@ -1,12 +1,13 @@
 package typings.googleDashProtobuf
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object googleDashProtobufMod {
+  import typings.std.ArrayBuffer
+  import typings.std.Uint8Array
+
   type AnyFieldType = ScalarFieldType | RepeatedFieldType | Uint8Array
   type BinaryRead = js.Function2[/* msg */ js.Any, /* reader */ BinaryReadReader, Unit]
   type BinaryReadReader = js.Function2[/* msg */ js.Any, /* binaryReader */ BinaryReader, Unit]

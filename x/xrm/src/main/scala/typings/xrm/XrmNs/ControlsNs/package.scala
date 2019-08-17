@@ -1,11 +1,12 @@
 package typings.xrm.XrmNs
 
-import typings.xrm.xrmStrings.quickform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ControlsNs {
+  import typings.xrm.xrmStrings.quickform
+
   /**
     * Control type for formContext.ui.quickForms.getControlType().
     */

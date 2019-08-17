@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hapi__cryptiles"
-version := "4.2-dt-20190404Z-6306c6"
-scalaVersion := "2.12.8"
+version := "4.2-dt-20190404Z-45b29d"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

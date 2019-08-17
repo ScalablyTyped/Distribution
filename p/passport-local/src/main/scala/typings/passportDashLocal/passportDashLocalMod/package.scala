@@ -1,11 +1,12 @@
 package typings.passportDashLocal
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashLocalMod {
+  import typings.express.expressMod.Request
+
   type VerifyFunction = js.Function3[
     /* username */ String, 
     /* password */ String, 

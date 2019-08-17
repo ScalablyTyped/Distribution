@@ -1,14 +1,15 @@
 package typings.reactDashTransitionDashGroup
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactType
-import typings.reactDashTransitionDashGroup.Anon_Child
-import typings.reactDashTransitionDashGroup.reactDashTransitionDashGroupStrings.div
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionGroupMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactType
+  import typings.reactDashTransitionDashGroup.Anon_Child
+  import typings.reactDashTransitionDashGroup.reactDashTransitionDashGroupStrings.div
+
   /**
     * The `<TransitionGroup>` component manages a set of `<Transition>` components
     * in a list. Like with the `<Transition>` component, `<TransitionGroup>`, is a

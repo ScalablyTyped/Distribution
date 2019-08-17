@@ -1,16 +1,17 @@
 package typings.webpack
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Record
-import typings.std.RegExp
-import typings.webpack.webpackMod.EvalSourceMapDevToolPluginNs.Options
-import typings.webpack.webpackMod.OptionsNs.Performance
-import typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.CommentFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Record
+  import typings.std.RegExp
+  import typings.webpack.webpackMod.EvalSourceMapDevToolPluginNs.Options
+  import typings.webpack.webpackMod.OptionsNs.Performance
+  import typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.CommentFilter
+
   type AuxiliaryCommentObject = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in webpack.webpack.LibraryTarget ]: string}
     */ typings.webpack.webpackStrings.AuxiliaryCommentObject with js.Any

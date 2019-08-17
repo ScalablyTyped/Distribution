@@ -1,35 +1,36 @@
 package typings.stellarDashBase
 
-import typings.node.Buffer
-import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.credit12
-import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.credit4
-import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.native
-import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.required
-import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.revocable
-import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.rmmutable
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Hash
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.ID
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.None
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Return
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Text
-import typings.stellarDashBase.stellarDashBaseMod.OperationNs.Inflation
-import typings.stellarDashBase.stellarDashBaseMod.OperationNs.SetOptions
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.AccountMerge
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.AllowTrust
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.BumpSequence
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ChangeTrust
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.CreateAccount
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.CreatePassiveOffer
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ManageData
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ManageOffer
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.PathPayment
-import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.Payment
-import typings.stellarDashBase.stellarDashBaseStrings.ed25519
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stellarDashBaseMod {
+  import typings.node.Buffer
+  import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.credit12
+  import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.credit4
+  import typings.stellarDashBase.stellarDashBaseMod.AssetTypeNs.native
+  import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.required
+  import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.revocable
+  import typings.stellarDashBase.stellarDashBaseMod.AuthFlagNs.rmmutable
+  import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Hash
+  import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.ID
+  import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.None
+  import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Return
+  import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Text
+  import typings.stellarDashBase.stellarDashBaseMod.OperationNs.Inflation
+  import typings.stellarDashBase.stellarDashBaseMod.OperationNs.SetOptions
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.AccountMerge
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.AllowTrust
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.BumpSequence
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ChangeTrust
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.CreateAccount
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.CreatePassiveOffer
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ManageData
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.ManageOffer
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.PathPayment
+  import typings.stellarDashBase.stellarDashBaseMod.OperationTypeNs.Payment
+  import typings.stellarDashBase.stellarDashBaseStrings.ed25519
+
   type AssetType = native | credit4 | credit12
   type AuthFlag = required | revocable | rmmutable
   type KeypairType = ed25519

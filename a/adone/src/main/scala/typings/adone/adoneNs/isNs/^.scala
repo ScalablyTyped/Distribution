@@ -72,7 +72,7 @@ object ^ extends js.Object {
   def exist(obj: js.Any): Boolean = js.native
   def fastLocalMapStream(obj: js.Any): /* is adone.adone.fast.I.LocalMapStream<any> */ Boolean = js.native
   def fastLocalStream(obj: js.Any): /* is adone.adone.fast.I.LocalStream<any> */ Boolean = js.native
-  def fastStream(obj: js.Any): /* is adone.adone.fast.I.Stream<any, any> */ Boolean = js.native
+  def fastStream(obj: js.Any): /* is adone.adone.fast.I.Stream<any, / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T * / any> */ Boolean = js.native
   def finite(obj: js.Any): /* is number */ Boolean = js.native
   def float(obj: js.Any): /* is number */ Boolean = js.native
   def fqdn(obj: js.Any): /* is string */ Boolean = js.native

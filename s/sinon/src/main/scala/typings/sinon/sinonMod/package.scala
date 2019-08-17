@@ -1,11 +1,12 @@
 package typings.sinon
 
-import typings.sinon.Anon_Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sinonMod {
+  import typings.sinon.Anon_Id
+
   type SinonStatic = SinonSandbox with LegacySandbox with SinonApi
   /**
     * An instance of a stubbed object type with functions replaced by stubs.

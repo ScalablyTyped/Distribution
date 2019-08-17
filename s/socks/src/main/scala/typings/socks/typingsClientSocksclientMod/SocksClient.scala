@@ -17,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("socks/typings/client/socksclient", "SocksClient")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SocksClient * / any */ @JSImport("socks/typings/client/socksclient", "SocksClient")
 @js.native
 class SocksClient protected () extends EventEmitter {
   def this(options: SocksClientOptions) = this()

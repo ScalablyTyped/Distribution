@@ -1,11 +1,12 @@
 package typings.acmeDashClient
 
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cryptoForgeMod {
+  import typings.node.Buffer
+
   type Csr = Buffer
   type PrivateKey = Buffer
 }

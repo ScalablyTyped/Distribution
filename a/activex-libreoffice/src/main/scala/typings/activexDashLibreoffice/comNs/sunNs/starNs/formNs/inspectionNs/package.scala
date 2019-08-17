@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.formNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.XPropertyHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inspectionNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.inspectionNs.XPropertyHandler
+
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which is able to enhance the {@link
     * com.sun.star.form.component.CommandButton.ButtonType} and {@link com.sun.star.form.component.CommandButton.TargetURL} properties of a {@link

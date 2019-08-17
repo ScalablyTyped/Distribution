@@ -1,15 +1,16 @@
 package typings.redux
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
   type ActionCreatorsMapObject[A] = StringDictionary[ActionCreator[A]]
   type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] extends object? object : T[K]}
+  {[ K in keyof T ]:? T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias redux.redux.DeepPartial<T[K]> * / object : T[K]}
     */ typings.redux.reduxStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
   /* compose */

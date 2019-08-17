@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.RESOURCE_ID
-import typings.awsDashSdk.awsDashSdkStrings.SSM_DOCUMENT
-import typings.awsDashSdk.awsDashSdkStrings.awsDOTconfig
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsConfigserviceMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.RESOURCE_ID
+  import typings.awsDashSdk.awsDashSdkStrings.SSM_DOCUMENT
+  import typings.awsDashSdk.awsDashSdkStrings.awsDOTconfig
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ARN = java.lang.String
   type AccountAggregationSourceAccountList = js.Array[AccountId]
   type AccountAggregationSourceList = js.Array[AccountAggregationSource]

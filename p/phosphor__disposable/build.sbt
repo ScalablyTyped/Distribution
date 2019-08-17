@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "phosphor__disposable"
-version := "1.3.0-0d15fa"
-scalaVersion := "2.12.8"
+version := "1.3.0-3cd291"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-88b58f",
-  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.0-4cce89",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-d56d5f",
+  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.0-315994",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

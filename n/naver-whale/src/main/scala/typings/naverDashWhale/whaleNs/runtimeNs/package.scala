@@ -1,12 +1,13 @@
 package typings.naverDashWhale.whaleNs
 
-import org.scalablytyped.runtime.NumberDictionary
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object runtimeNs {
+  import org.scalablytyped.runtime.NumberDictionary
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type ExtensionConnectEvent = Event[js.Function1[/* port */ typings.chrome.chromeNs.runtimeNs.Port, Unit]]
   type ExtensionMessageEvent = Event[
     js.Function3[

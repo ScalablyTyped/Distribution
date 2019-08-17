@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "i18next-node-fs-backend"
-version := "0.0-unknown-dt-20190322Z-5922ca"
-scalaVersion := "2.12.8"
+version := "0.0-unknown-dt-20190322Z-2fced3"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

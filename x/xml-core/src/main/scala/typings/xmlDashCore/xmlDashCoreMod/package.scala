@@ -1,12 +1,13 @@
 package typings.xmlDashCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xmlDashCoreMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Node
+
   /**
     * Base type for associated arrays
     * 

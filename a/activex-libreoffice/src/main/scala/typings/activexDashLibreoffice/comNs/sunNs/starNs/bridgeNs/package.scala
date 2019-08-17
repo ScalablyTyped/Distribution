@@ -1,13 +1,14 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bridgeNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.XInterface
+
   /** Indicates, that it was tried to create a remote bridge with a name, which already existed. */
   type BridgeExistsException = Exception
   /**

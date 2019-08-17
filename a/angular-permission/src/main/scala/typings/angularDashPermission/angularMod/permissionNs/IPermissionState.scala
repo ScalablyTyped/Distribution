@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait IPermissionState extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify angular.ui.IState * / any */ trait IPermissionState extends js.Object {
   var data: js.UndefOr[js.Any | DataWithPermissions] = js.undefined
 }
 

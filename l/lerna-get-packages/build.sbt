@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "lerna-get-packages"
-version := "1.0-dt-20180529Z-afba6a"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180529Z-7d6dcb"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

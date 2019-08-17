@@ -1,12 +1,13 @@
 package typings.atFirebaseUtil
 
-import typings.std.Error
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distSrcSubscribeMod {
+  import typings.std.Error
+  import typings.std.Partial
+
   type CompleteFn = js.Function0[Unit]
   type ErrorFn = js.Function1[/* error */ Error, Unit]
   type Executor[T] = js.Function1[/* observer */ Observer[T], Unit]

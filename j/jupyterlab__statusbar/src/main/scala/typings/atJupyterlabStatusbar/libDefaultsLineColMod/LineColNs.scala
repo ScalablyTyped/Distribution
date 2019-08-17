@@ -1,6 +1,7 @@
 package typings.atJupyterlabStatusbar.libDefaultsLineColMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +30,7 @@ object LineColNs extends js.Object {
     /**
       * The current editor of the model.
       */
-    var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
+    var editor: IEditor | Null = js.native
     /**
       * The current line of the model.
       */

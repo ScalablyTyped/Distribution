@@ -1,0 +1,22 @@
+package typings.atAwsDashCryptoIe11DashDetection.buildMsWindowMod
+
+import typings.atAwsDashCryptoIe11DashDetection.buildMsSubtleCryptoMod.MsSubtleCrypto
+import typings.std.Uint8Array
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MsCrypto extends js.Object {
+  var subtle: MsSubtleCrypto
+  def getRandomValues(toFill: Uint8Array): Unit
+}
+
+object MsCrypto {
+  @scala.inline
+  def apply(getRandomValues: Uint8Array => Unit, subtle: MsSubtleCrypto): MsCrypto = {
+    val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), subtle = subtle)
+  
+    __obj.asInstanceOf[MsCrypto]
+  }
+}
+

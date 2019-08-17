@@ -1,14 +1,15 @@
 package typings.history.historyMod
 
-import typings.history.historyMod.Action
-import typings.history.historyMod.Location
-import typings.history.historyMod.LocationDescriptorObject
-import typings.history.historyNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object HistoryNs {
+  import typings.history.historyMod.Action
+  import typings.history.historyMod.Location
+  import typings.history.historyMod.LocationDescriptorObject
+  import typings.history.historyNumbers.`false`
+
   type Hash = String
   type Href = String
   type LocationDescriptor[S] = typings.history.historyMod.HistoryNs.Path | LocationDescriptorObject[S]

@@ -1,0 +1,80 @@
+package typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod
+
+import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
+import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
+import typings.atUifabricUtilities.libCreateRefMod.IRefObject
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ReactNode
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IShimmerProps extends AllHTMLAttributes[HTMLElement] {
+  /**
+    * Localized string of the status label for screen reader
+    */
+  var ariaLabel: js.UndefOr[String] = js.undefined
+  /**
+    * Optional callback to access the IShimmer interface. Use this instead of ref for accessing
+    * the public methods and properties of the component.
+    */
+  var componentRef: js.UndefOr[IRefObject[IShimmer]] = js.undefined
+  /**
+    * Custom elements when necessary to build complex placeholder skeletons.
+    */
+  var customElementsGroup: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * Controls when the shimmer is swapped with actual data through an animated transition.
+    * @defaultvalue false
+    */
+  var isDataLoaded: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Defines an object with possible colors to pass for Shimmer customization used on different backgrounds.
+    */
+  var shimmerColors: js.UndefOr[IShimmerColors] = js.undefined
+  /**
+    * Elements to render in one line of the Shimmer.
+    */
+  var shimmerElements: js.UndefOr[js.Array[IShimmerElement]] = js.undefined
+  /**
+    * Call to provide customized styling that will layer on top of the variant rules.
+    */
+  var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles]] = js.undefined
+  /**
+    * Theme provided by High-Order Component.
+    */
+  var theme: js.UndefOr[ITheme] = js.undefined
+}
+
+object IShimmerProps {
+  @scala.inline
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
+    ariaLabel: String = null,
+    className: String = null,
+    componentRef: IRefObject[IShimmer] = null,
+    customElementsGroup: ReactNode = null,
+    isDataLoaded: js.UndefOr[Boolean] = js.undefined,
+    shimmerColors: IShimmerColors = null,
+    shimmerElements: js.Array[IShimmerElement] = null,
+    styles: IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles] = null,
+    theme: ITheme = null,
+    width: Double | String = null
+  ): IShimmerProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
+    if (customElementsGroup != null) __obj.updateDynamic("customElementsGroup")(customElementsGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded)
+    if (shimmerColors != null) __obj.updateDynamic("shimmerColors")(shimmerColors)
+    if (shimmerElements != null) __obj.updateDynamic("shimmerElements")(shimmerElements)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IShimmerProps]
+  }
+}
+

@@ -1,16 +1,17 @@
 package typings.joi
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.joi.Anon_Context
-import typings.joi.Anon_Key
-import typings.std.Error
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object joiMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.joi.Anon_Context
+  import typings.joi.Anon_Key
+  import typings.std.Error
+  import typings.std.Partial
+  import typings.std.Record
+
   type DefaultsFunction = js.Function1[/* root */ Schema, Schema]
   type ExtensionBoundSchema = Schema with Anon_Context
   type LanguageOptions = String | Boolean | Null | (StringDictionary[

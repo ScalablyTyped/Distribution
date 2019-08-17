@@ -1,14 +1,15 @@
 package typings.inquirer
 
-import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.DistinctQuestion
-import typings.inquirer.inquirerMod.KeyUnion
-import typings.inquirer.inquirerMod.UnionToIntersection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libUtilsUtilsMod {
+  import typings.inquirer.inquirerMod.Answers
+  import typings.inquirer.inquirerMod.DistinctQuestion
+  import typings.inquirer.inquirerMod.KeyUnion
+  import typings.inquirer.inquirerMod.UnionToIntersection
+
   /**
     * Represents a property-name of any question-type.
     */

@@ -1,12 +1,13 @@
 package typings.fridaDashGum
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.fridaDashGum.NativePointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ObjCNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.fridaDashGum.NativePointer
+
   type ChooseSpecifier = SimpleChooseSpecifier | DetailedChooseSpecifier
   type EnumerateLoadedClassesResult = /**
     * Class names grouped by name of owner module.

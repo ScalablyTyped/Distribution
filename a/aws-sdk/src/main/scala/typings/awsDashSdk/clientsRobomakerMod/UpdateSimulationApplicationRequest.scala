@@ -16,7 +16,7 @@ trait UpdateSimulationApplicationRequest extends js.Object {
   /**
     * The rendering engine for the simulation application.
     */
-  var renderingEngine: RenderingEngine
+  var renderingEngine: js.UndefOr[RenderingEngine] = js.undefined
   /**
     * Information about the robot software suite.
     */
@@ -35,14 +35,15 @@ object UpdateSimulationApplicationRequest {
   @scala.inline
   def apply(
     application: Arn,
-    renderingEngine: RenderingEngine,
     robotSoftwareSuite: RobotSoftwareSuite,
     simulationSoftwareSuite: SimulationSoftwareSuite,
     sources: SourceConfigs,
-    currentRevisionId: RevisionId = null
+    currentRevisionId: RevisionId = null,
+    renderingEngine: RenderingEngine = null
   ): UpdateSimulationApplicationRequest = {
-    val __obj = js.Dynamic.literal(application = application, renderingEngine = renderingEngine, robotSoftwareSuite = robotSoftwareSuite, simulationSoftwareSuite = simulationSoftwareSuite, sources = sources)
+    val __obj = js.Dynamic.literal(application = application, robotSoftwareSuite = robotSoftwareSuite, simulationSoftwareSuite = simulationSoftwareSuite, sources = sources)
     if (currentRevisionId != null) __obj.updateDynamic("currentRevisionId")(currentRevisionId)
+    if (renderingEngine != null) __obj.updateDynamic("renderingEngine")(renderingEngine)
     __obj.asInstanceOf[UpdateSimulationApplicationRequest]
   }
 }

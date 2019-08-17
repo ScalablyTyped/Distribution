@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonCardContent")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonCardContent * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonCardContent")
 @js.native
 class IonCardContent protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "requestidlecallback"
-version := "0.1-dt-20190212Z-6b0e30"
-scalaVersion := "2.12.8"
+version := "0.1-dt-20190212Z-3f4fb5"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

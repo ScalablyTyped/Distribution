@@ -1,12 +1,13 @@
 package typings.makerDotJs.MakerJsNs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.makerDotJs.Anon_ScaleConversion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object exporterNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.makerDotJs.Anon_ScaleConversion
+
   /**
     * DXF rendering options.
     */

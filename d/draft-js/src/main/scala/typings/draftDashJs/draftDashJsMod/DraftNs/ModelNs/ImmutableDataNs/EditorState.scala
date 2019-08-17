@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof any ]: any} */ trait EditorState extends js.Object {
+- Dropped {[ P in keyof any ]: / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T * / any} */ trait EditorState extends js.Object {
   def getAllowUndo(): Boolean
   def getBlockTree(blockKey: String): List[_]
   def getCurrentContent(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState

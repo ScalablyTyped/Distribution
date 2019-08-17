@@ -1,13 +1,14 @@
 package typings.atTensorflowTfjsDashCore
 
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesMod {
+  import typings.std.Float32Array
+  import typings.std.Int32Array
+  import typings.std.Uint8Array
+
   type BackendValues = Float32Array | Int32Array | Uint8Array | js.Array[Uint8Array]
   type DataValues = js.Array[String] | Int32Array | Float32Array | Uint8Array
   type FlatVector = (js.Array[Boolean | Double]) | TypedArray

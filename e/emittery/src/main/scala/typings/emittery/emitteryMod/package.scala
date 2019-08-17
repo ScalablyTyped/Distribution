@@ -1,11 +1,12 @@
 package typings.emittery
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object emitteryMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
   	 * Maps event names to their emitted data type.
   	 */

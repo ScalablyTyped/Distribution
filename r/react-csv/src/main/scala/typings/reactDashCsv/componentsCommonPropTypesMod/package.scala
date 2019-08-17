@@ -1,12 +1,13 @@
 package typings.reactDashCsv
 
-import typings.react.reactMod.MouseEventHandler
-import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object componentsCommonPropTypesMod {
+  import typings.react.reactMod.MouseEventHandler
+  import typings.std.HTMLAnchorElement
+
   type AsyncClickHandler = js.Function2[
     /* event */ MouseEventHandler[HTMLAnchorElement], 
     /* done */ js.Function1[/* proceed */ js.UndefOr[Boolean], Unit], 

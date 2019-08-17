@@ -1,11 +1,12 @@
 package typings.atUirouterCore
 
-import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libStateStateBuilderMod {
+  import typings.atUirouterCore.libStateStateObjectMod.StateObject
+
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 
     /* parent */ js.UndefOr[

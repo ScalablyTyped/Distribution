@@ -3,6 +3,8 @@ package typings.atJupyterlabCells.libInputareaMod
 import typings.atJupyterlabCells.libInputareaMod.InputAreaNs.IContentFactory
 import typings.atJupyterlabCells.libInputareaMod.InputAreaNs.IOptions
 import typings.atJupyterlabCells.libModelMod.ICellModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
+import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -26,11 +28,11 @@ class InputArea protected () extends Widget {
   /**
     * Get the CodeEditor used by the cell.
     */
-  val editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = js.native
+  val editor: IEditor = js.native
   /**
     * Get the CodeEditorWrapper used by the cell.
     */
-  val editorWidget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditorWrapper */ js.Any = js.native
+  val editorWidget: CodeEditorWrapper = js.native
   /**
     * The model used by the widget.
     */

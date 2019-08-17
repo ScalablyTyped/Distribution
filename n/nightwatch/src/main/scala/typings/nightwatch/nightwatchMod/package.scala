@@ -1,12 +1,13 @@
 package typings.nightwatch
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.nightwatch.Anon_Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nightwatchMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.nightwatch.Anon_Callback
+
   type EnhancedPageObject[Commands, Elements, Sections /* <: EnhancedPageObjectSections */] = Nightwatch with SharedCommands with NightwatchCustomCommands with Commands with Anon_Callback[Sections]
   type EnhancedSectionInstance[Commands, Elements, Sections] = EnhancedPageObject[Commands, Elements, Sections]
   type NightwatchAssert = js.Function6[

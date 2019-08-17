@@ -1,19 +1,20 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.fridaDashGum.fridaDashGumStrings.`apsr-nzcvq`
-import typings.fridaDashGum.fridaDashGumStrings.block
-import typings.fridaDashGum.fridaDashGumStrings.call
-import typings.fridaDashGum.fridaDashGumStrings.compile
-import typings.fridaDashGum.fridaDashGumStrings.exec
-import typings.fridaDashGum.fridaDashGumStrings.ret
-import typings.fridaDashGum.fridaDashGumStrings.stop
-import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fridaDashGum {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.fridaDashGum.fridaDashGumStrings.`apsr-nzcvq`
+  import typings.fridaDashGum.fridaDashGumStrings.block
+  import typings.fridaDashGum.fridaDashGumStrings.call
+  import typings.fridaDashGum.fridaDashGumStrings.compile
+  import typings.fridaDashGum.fridaDashGumStrings.exec
+  import typings.fridaDashGum.fridaDashGumStrings.ret
+  import typings.fridaDashGum.fridaDashGumStrings.stop
+  import typings.std.ArrayBuffer
+
   type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
   /* Rewritten from type alias, can be one of: 
     - typings.fridaDashGum.Arm64Register

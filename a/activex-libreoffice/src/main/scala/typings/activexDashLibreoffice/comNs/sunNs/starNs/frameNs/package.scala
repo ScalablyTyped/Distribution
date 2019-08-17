@@ -1,16 +1,17 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumerationAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XStringMapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object frameNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumerationAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XSingleServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XStringMapping
+
   /** @since LibreOffice 4.2 */
   type AppDispatchProvider = XAppDispatchProvider
   /**

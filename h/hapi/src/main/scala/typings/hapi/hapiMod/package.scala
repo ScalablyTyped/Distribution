@@ -1,24 +1,25 @@
 package typings.hapi
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.catbox.catboxMod.ClientOptions
-import typings.catbox.catboxMod.EnginePrototype
-import typings.catbox.catboxMod.PolicyOptionVariants
-import typings.hapi.Anon_Cache
-import typings.hapi.Anon_Constructor
-import typings.hapi.hapiMod.LifecycleNs.Method
-import typings.hapi.hapiNumbers.`false`
-import typings.hapi.hapiNumbers.`true`
-import typings.joi.joiMod.Schema
-import typings.joi.joiMod.SchemaMap
-import typings.joi.joiMod.ValidationOptions
-import typings.node.Buffer
-import typings.podium.podiumMod.Podium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hapiMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.catbox.catboxMod.ClientOptions
+  import typings.catbox.catboxMod.EnginePrototype
+  import typings.catbox.catboxMod.PolicyOptionVariants
+  import typings.hapi.Anon_Cache
+  import typings.hapi.Anon_Constructor
+  import typings.hapi.hapiMod.LifecycleNs.Method
+  import typings.hapi.hapiNumbers.`false`
+  import typings.hapi.hapiNumbers.`true`
+  import typings.joi.joiMod.Schema
+  import typings.joi.joiMod.SchemaMap
+  import typings.joi.joiMod.ValidationOptions
+  import typings.node.Buffer
+  import typings.podium.podiumMod.Podium
+
   type CachePolicyOptions[T] = PolicyOptionVariants[T] with Anon_Cache
   type CacheProvider[T /* <: ClientOptions */] = EnginePrototype[js.Any] | Anon_Constructor[T]
   type DecorateName = String | js.Symbol

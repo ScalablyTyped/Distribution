@@ -1,15 +1,16 @@
 package typings.vis
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.moment.momentMod.Moment
-import typings.moment.momentMod.MomentFormatSpecification
-import typings.moment.momentMod.MomentInput
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object visMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.moment.momentMod.Moment
+  import typings.moment.momentMod.MomentFormatSpecification
+  import typings.moment.momentMod.MomentInput
+  import typings.std.Date
+
   type DataGroupCollectionType = js.Array[DataGroup] | DataSet[DataGroup] | DataView[DataGroup]
   type DataItemCollectionType = js.Array[DataItem] | DataSet[DataItem] | DataView[DataItem]
   type DateType = Date | Double | String

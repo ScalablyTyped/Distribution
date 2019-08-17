@@ -1,28 +1,29 @@
 package typings.sequelize
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.sequelize.Anon_
-import typings.sequelize.Anon_Adjacent
-import typings.sequelize.Anon_As
-import typings.sequelize.Anon_Through
-import typings.sequelize.sequelizeStrings.DEFERRED
-import typings.sequelize.sequelizeStrings.EXCLUSIVE
-import typings.sequelize.sequelizeStrings.IMMEDIATE
-import typings.sequelize.sequelizeStrings.SERIALIZABLE
-import typings.sequelize.sequelizeStrings.SHARE
-import typings.sequelize.sequelizeStrings.UPDATE
-import typings.sequelize.sequelizeStrings.`KEY SHARE`
-import typings.sequelize.sequelizeStrings.`NO KEY UPDATE`
-import typings.sequelize.sequelizeStrings.`READ COMMITTED`
-import typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
-import typings.sequelize.sequelizeStrings.`REPEATABLE READ`
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sequelizeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.Buffer
+  import typings.sequelize.Anon_
+  import typings.sequelize.Anon_Adjacent
+  import typings.sequelize.Anon_As
+  import typings.sequelize.Anon_Through
+  import typings.sequelize.sequelizeStrings.DEFERRED
+  import typings.sequelize.sequelizeStrings.EXCLUSIVE
+  import typings.sequelize.sequelizeStrings.IMMEDIATE
+  import typings.sequelize.sequelizeStrings.SERIALIZABLE
+  import typings.sequelize.sequelizeStrings.SHARE
+  import typings.sequelize.sequelizeStrings.UPDATE
+  import typings.sequelize.sequelizeStrings.`KEY SHARE`
+  import typings.sequelize.sequelizeStrings.`NO KEY UPDATE`
+  import typings.sequelize.sequelizeStrings.`READ COMMITTED`
+  import typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
+  import typings.sequelize.sequelizeStrings.`REPEATABLE READ`
+  import typings.std.Partial
+
   type AnyFindOptions = FindOptions[js.Any]
   /**
     * Options for Association Scope
@@ -872,6 +873,6 @@ package object sequelizeMod {
     */
   type WhereLogic = Partial[Anon_]
   type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
+  {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
     */ typings.sequelize.sequelizeStrings.WhereOptions with T
 }

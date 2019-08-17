@@ -1,22 +1,23 @@
 package typings.angular
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.angular.JQLite
-import typings.angular.JQuery
-import typings.angular.JQueryStatic
-import typings.angular.angularMod.Global.Function
-import typings.angular.angularNumbers.`-1`
-import typings.angular.angularNumbers.`0`
-import typings.angular.angularNumbers.`1`
-import typings.std.Date
-import typings.std.Element
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.angular.JQLite
+  import typings.angular.JQuery
+  import typings.angular.JQueryStatic
+  import typings.angular.angularMod.Global.Function
+  import typings.angular.angularNumbers.`-1`
+  import typings.angular.angularNumbers.`0`
+  import typings.angular.angularNumbers.`1`
+  import typings.std.Date
+  import typings.std.Element
+  import typings.std.Error
+
   type FilterFactory = js.Function1[/* repeated */ js.Any, IFilterFunction]
   type HttpHeaderType = StringDictionary[String | (js.Function1[/* config */ IRequestConfig, String])]
   type IAsyncModelValidators = StringDictionary[js.Function2[/* modelValue */ js.Any, /* viewValue */ js.Any, IPromise[js.Any]]]

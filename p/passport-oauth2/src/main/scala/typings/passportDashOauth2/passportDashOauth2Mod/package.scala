@@ -1,12 +1,13 @@
 package typings.passportDashOauth2
 
-import typings.express.expressMod.Request
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashOauth2Mod {
+  import typings.express.expressMod.Request
+  import typings.std.Error
+
   type StateStoreStoreCallback = js.Function2[/* err */ Error | Null, /* state */ js.Any, Unit]
   type StateStoreVerifyCallback = js.Function3[/* err */ Error, /* ok */ Boolean, /* state */ js.Any, Unit]
   type Strategy = OAuth2Strategy

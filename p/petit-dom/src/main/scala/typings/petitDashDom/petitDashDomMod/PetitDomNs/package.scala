@@ -1,11 +1,12 @@
 package typings.petitDashDom.petitDashDomMod
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PetitDomNs {
+  import typings.std.Element
+
   type ComponentProps = js.Object
   type Content = String | VNode
   type DOMElementProps[E /* <: Element */] = /* import warning: ImportType.apply c Unsupported type mapping: 

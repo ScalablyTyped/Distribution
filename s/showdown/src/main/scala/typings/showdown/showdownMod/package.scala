@@ -1,11 +1,12 @@
 package typings.showdown
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object showdownMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Showdown event listener.
     */

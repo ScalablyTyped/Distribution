@@ -1,14 +1,15 @@
 package typings.reduxDashFirstDashRouter
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.redux.reduxMod.Dispatch
-import typings.reduxDashFirstDashRouter.Anon_CapitalizedWords
-import typings.reduxDashFirstDashRouter.Anon_Pathname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashFirstDashRouterMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.redux.reduxMod.Dispatch
+  import typings.reduxDashFirstDashRouter.Anon_CapitalizedWords
+  import typings.reduxDashFirstDashRouter.Anon_Pathname
+
   type ConfirmLeave = js.Function2[/* state */ js.Object, /* action */ js.Object, Nullable[String]]
   type DisplayConfirmLeave = js.Function2[/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit], Unit]
   type HistoryAction = String

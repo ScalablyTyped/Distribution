@@ -1,11 +1,12 @@
 package typings.vsoDashNodeDashApi
 
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ResourceRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfacesGitInterfacesMod {
+  import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ResourceRef
+
   type AsyncRefOperationConflictNotification = AsyncRefOperationCommitLevelEventNotification
   type AsyncRefOperationGeneralFailureNotification = AsyncGitOperationNotification
   type AsyncRefOperationTimeoutNotification = AsyncGitOperationNotification

@@ -1,11 +1,12 @@
 package typings.monk
 
-import typings.monk.Anon_Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object monkMod {
+  import typings.monk.Anon_Collection
+
   type TFields = String | js.Array[String]
   type TMiddleware = js.Function1[
     /* hasCollectionMonkInstance */ Anon_Collection, 

@@ -1,12 +1,13 @@
 package typings.tensorflow
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tensorflowMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Number
+
   type SessionRunInputs = StringDictionary[Tensor | TensorValue]
   type SessionRunOutputs = String | js.Array[String]
   type SessionRunResult = Tensor | TensorMap

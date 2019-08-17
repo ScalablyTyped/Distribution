@@ -1,17 +1,18 @@
 package typings.graphqlDashCompose
 
-import typings.graphql.typeDefinitionMod.GraphQLInputType
-import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsComposeInputFieldConfigMap
-import typings.graphqlDashCompose.libEnumTypeComposerMod.EnumTypeComposer
-import typings.graphqlDashCompose.libGraphqlMod.GraphQLInputObjectType
-import typings.graphqlDashCompose.libScalarTypeComposerMod.ScalarTypeComposer
-import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
-import typings.graphqlDashCompose.libUtilsDefinitionsMod.ObjMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInputTypeComposerMod {
+  import typings.graphql.typeDefinitionMod.GraphQLInputType
+  import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsComposeInputFieldConfigMap
+  import typings.graphqlDashCompose.libEnumTypeComposerMod.EnumTypeComposer
+  import typings.graphqlDashCompose.libGraphqlMod.GraphQLInputObjectType
+  import typings.graphqlDashCompose.libScalarTypeComposerMod.ScalarTypeComposer
+  import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
+  import typings.graphqlDashCompose.libUtilsDefinitionsMod.ObjMap
+
   type ComposeInputFieldConfig = ComposeInputFieldConfigAsObject | ComposeInputType | (js.Function0[ComposeInputFieldConfigAsObject | ComposeInputType])
   type ComposeInputFieldConfigMap = ObjMap[ComposeInputFieldConfig]
   type ComposeInputType = InputTypeComposer[js.Any] | EnumTypeComposer[js.Any] | ScalarTypeComposer[js.Any] | GraphQLInputType | TypeAsString | (js.Array[

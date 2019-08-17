@@ -1,11 +1,12 @@
 package typings.adlib
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object adlibMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type TransformFunction = js.Function4[
     /* key */ String, 
     /* value */ js.Any, 

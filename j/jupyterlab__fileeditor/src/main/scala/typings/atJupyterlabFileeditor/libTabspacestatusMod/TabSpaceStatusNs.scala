@@ -1,6 +1,7 @@
 package typings.atJupyterlabFileeditor.libTabspacestatusMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IConfig
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +31,7 @@ object TabSpaceStatusNs extends js.Object {
     /**
       * The editor config from the settings system.
       */
-    var config: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ js.Any) | Null = js.native
+    var config: IConfig | Null = js.native
   }
   
 }

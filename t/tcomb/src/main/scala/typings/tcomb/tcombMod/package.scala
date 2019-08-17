@@ -1,11 +1,12 @@
 package typings.tcomb
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tcombMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Clause = Constructor[js.Any] | Function1
   type Constructor[T] = Type[T] | js.Function
   type Function1 = js.Function1[/* x */ js.Any, js.Any]

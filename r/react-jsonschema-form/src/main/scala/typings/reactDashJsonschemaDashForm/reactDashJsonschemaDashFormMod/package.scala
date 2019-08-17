@@ -1,17 +1,18 @@
 package typings.reactDashJsonschemaDashForm
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.StatelessComponent
-import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormStrings.schema
-import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashJsonschemaDashFormMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.StatelessComponent
+  import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormStrings.schema
+  import typings.std.Omit
+
   type Field = StatelessComponent[FieldProps[js.Any]] | (ComponentClass[FieldProps[js.Any], ComponentState])
   type FieldError = String
   type Form[T] = Component[FormProps[T], js.Object, js.Any]

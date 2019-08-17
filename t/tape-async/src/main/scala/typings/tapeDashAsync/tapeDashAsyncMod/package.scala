@@ -1,11 +1,12 @@
 package typings.tapeDashAsync
 
-import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tapeDashAsyncMod {
+  import typings.std.Iterator
+
   /**
   	 * Options for the createStream function.
   	 */

@@ -1,12 +1,13 @@
 package typings.csstype
 
-import typings.csstype.csstypeStrings.auto
-import typings.csstype.csstypeStrings.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object csstypeMod {
+  import typings.csstype.csstypeStrings.auto
+  import typings.csstype.csstypeStrings.normal
+
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.csstypeMod.Globals
     - typings.csstype.csstypeMod.ContentDistribution

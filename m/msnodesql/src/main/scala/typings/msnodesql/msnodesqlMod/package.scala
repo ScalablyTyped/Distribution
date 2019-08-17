@@ -1,12 +1,13 @@
 package typings.msnodesql
 
-import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object msnodesqlMod {
+  import typings.node.eventsMod.EventEmitter
+  import typings.std.Error
+
   type ErrorCallback = js.Function1[/* err */ Error, Unit]
   type OpenCallback = js.Function2[/* err */ js.UndefOr[Error], /* connection */ js.UndefOr[Connection], Unit]
   type QueryCallback[T] = js.Function3[

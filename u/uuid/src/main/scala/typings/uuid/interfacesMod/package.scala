@@ -1,12 +1,13 @@
 package typings.uuid
 
-import typings.node.Buffer
-import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfacesMod {
+  import typings.node.Buffer
+  import typings.std.ArrayLike
+
   type OutputBuffer = ArrayLike[Double] | Buffer
   type v1 = v1Buffer with v1String
   type v1Buffer = js.Function3[

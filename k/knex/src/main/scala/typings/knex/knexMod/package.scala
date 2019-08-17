@@ -1,18 +1,19 @@
 package typings.knex
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.knex.knexMod.DeferredKeySelectionNs.Resolve
-import typings.knex.knexNumbers.`false`
-import typings.knex.knexNumbers.`true`
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object knexMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.knex.knexMod.DeferredKeySelectionNs.Resolve
+  import typings.knex.knexNumbers.`false`
+  import typings.knex.knexNumbers.`true`
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Partial
+  import typings.std.Pick
+
   type AggregationQueryResult[TResult, TIntersectProps2] = ArrayIfAlready[
     TResult, 
     TIntersectProps2 | (DeferredKeySelection[

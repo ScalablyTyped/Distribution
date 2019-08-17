@@ -34,12 +34,6 @@ object atUifabricStylingStrings {
   sealed trait `@media screen and (-ms-high-contrast: white-on-black)` extends js.Object
   
   @js.native
-  sealed trait IPartialTheme extends js.Object
-  
-  @js.native
-  sealed trait ITheme extends js.Object
-  
-  @js.native
   sealed trait `Leelawadee UI Web` extends js.Object
   
   @js.native
@@ -120,10 +114,6 @@ object atUifabricStylingStrings {
   def `@media screen and (-ms-high-contrast: black-on-white)`: `@media screen and (-ms-high-contrast: black-on-white)` = "@media screen and (-ms-high-contrast: black-on-white)".asInstanceOf[`@media screen and (-ms-high-contrast: black-on-white)`]
   @scala.inline
   def `@media screen and (-ms-high-contrast: white-on-black)`: `@media screen and (-ms-high-contrast: white-on-black)` = "@media screen and (-ms-high-contrast: white-on-black)".asInstanceOf[`@media screen and (-ms-high-contrast: white-on-black)`]
-  @scala.inline
-  def IPartialTheme: IPartialTheme = "IPartialTheme".asInstanceOf[IPartialTheme]
-  @scala.inline
-  def ITheme: ITheme = "ITheme".asInstanceOf[ITheme]
   @scala.inline
   def `Leelawadee UI Web`: `Leelawadee UI Web` = "Leelawadee UI Web".asInstanceOf[`Leelawadee UI Web`]
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.mailcheck
 
-import typings.mailcheck.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MailcheckModuleNs {
+  import typings.mailcheck.JQuery
+
   type IDistanceFunction = js.Function2[/* s1 */ String, /* s2 */ String, Double]
   type IEmpty = js.Function0[Unit]
   type IJQueryEmpty = js.Function1[/* element */ JQuery, Unit]

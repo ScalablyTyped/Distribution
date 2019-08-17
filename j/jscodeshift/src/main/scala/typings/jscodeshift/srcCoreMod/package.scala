@@ -1,11 +1,12 @@
 package typings.jscodeshift
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcCoreMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ASTNode = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.ASTNode */ js.Any
   type ASTPath[N] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   type AnyTypeAnnotation = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.AnyTypeAnnotation */ js.Any

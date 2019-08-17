@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("opentracing/lib/mock_tracer/mock_span", "MockSpan")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span * / any */ @JSImport("opentracing/lib/mock_tracer/mock_span", "MockSpan")
 @js.native
 class MockSpan protected () extends js.Object {
   def this(tracer: typings.opentracing.libMockUnderscoreTracerMockUnderscoreTracerMod.default) = this()

@@ -1,12 +1,13 @@
 package typings.angularDashMocks.angularDashMocksMod
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.angularDashMocks.Anon_Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularMod {
+  import org.scalablytyped.runtime.Instantiable1
+  import typings.angularDashMocks.Anon_Key
+
   ///////////////////////////////////////////////////////////////////////////
   // ComponentControllerService
   // see https://docs.angularjs.org/api/ngMock/service/$componentController

@@ -1,0 +1,36 @@
+package typings.amapDashJsDashApi
+
+import typings.amapDashJsDashApi.AMapNs.Bounds
+import typings.amapDashJsDashApi.AMapNs.Map
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Inlined std.Partial<amap-js-api.AMap.MediaLayer.Options> */
+trait PartialOptions extends js.Object {
+  var bounds: js.UndefOr[Bounds] = js.undefined
+  var map: js.UndefOr[Map] = js.undefined
+  var opacity: js.UndefOr[Double] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.undefined
+  var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+}
+
+object PartialOptions {
+  @scala.inline
+  def apply(
+    bounds: Bounds = null,
+    map: Map = null,
+    opacity: Int | Double = null,
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zooms: js.Tuple2[Double, Double] = null
+  ): PartialOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    __obj.asInstanceOf[PartialOptions]
+  }
+}
+

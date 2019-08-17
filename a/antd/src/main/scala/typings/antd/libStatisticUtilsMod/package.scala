@@ -1,11 +1,12 @@
 package typings.antd
 
-import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libStatisticUtilsMod {
+  import typings.react.reactMod.ReactNode
+
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdNumbers.`false`
     - typings.antd.antdStrings.number

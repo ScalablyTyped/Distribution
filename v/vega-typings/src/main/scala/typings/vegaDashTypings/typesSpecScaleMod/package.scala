@@ -1,15 +1,16 @@
 package typings.vegaDashTypings
 
-import typings.vegaDashTypings.Anon_CountOp
-import typings.vegaDashTypings.Anon_FieldOp
-import typings.vegaDashTypings.Anon_Sort
-import typings.vegaDashTypings.Anon_SortUnionSortField
-import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecScaleMod {
+  import typings.vegaDashTypings.Anon_CountOp
+  import typings.vegaDashTypings.Anon_FieldOp
+  import typings.vegaDashTypings.Anon_Sort
+  import typings.vegaDashTypings.Anon_SortUnionSortField
+  import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
+
   /* Rewritten from type alias, can be one of: 
     - typings.vegaDashTypings.typesSpecScaleMod.RangeEnum
     - typings.vegaDashTypings.typesSpecScaleMod.RangeRaw

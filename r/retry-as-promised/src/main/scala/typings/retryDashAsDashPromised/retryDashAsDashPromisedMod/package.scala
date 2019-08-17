@@ -1,14 +1,15 @@
 package typings.retryDashAsDashPromised
 
-import typings.bluebird.bluebirdMod.Thenable
-import typings.retryDashAsDashPromised.Anon_Current
-import typings.std.Error
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object retryDashAsDashPromisedMod {
+  import typings.bluebird.bluebirdMod.Thenable
+  import typings.retryDashAsDashPromised.Anon_Current
+  import typings.std.Error
+  import typings.std.RegExp
+
   type MatchOption = String | RegExp | Error
   type RetryAsPromisedStatic = js.Function2[
     /* callback */ RetryCallback[js.Any], 

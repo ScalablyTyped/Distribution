@@ -1,0 +1,16 @@
+package typings.atAwsDashSdkClientDashKmsDashNode.typesListGrantsExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesNotFoundExceptionMod.NotFoundException
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesInvalidMarkerExceptionMod.InvalidMarkerException
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesInvalidArnExceptionMod.InvalidArnException
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesKMSInternalExceptionMod.KMSInternalException
+  - typings.atAwsDashSdkClientDashKmsDashNode.typesKMSInvalidStateExceptionMod.KMSInvalidStateException
+*/
+trait ListGrantsExceptionsUnion extends js.Object
+

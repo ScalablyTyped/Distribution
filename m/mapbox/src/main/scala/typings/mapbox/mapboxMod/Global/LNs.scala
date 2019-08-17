@@ -40,7 +40,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait FeatureLayer extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FeatureGroup<ILayer> * / any */ trait FeatureLayer extends js.Object {
       /**
       			 * Gets the filter function for this data layer.
       			 */
@@ -119,7 +119,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait GridControl extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Control * / any */ trait GridControl extends js.Object {
       /**
       			 * If a tooltip is currently shown by the gridControl, hide and close it.
       			 */
@@ -165,7 +165,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait InfoControl extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Control * / any */ trait InfoControl extends js.Object {
       /**
       			 * Adds an info string to infoControl.
       			 */
@@ -179,7 +179,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait LegendControl extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Control * / any */ trait LegendControl extends js.Object {
       /**
       			 * Adds a legend to the legendControl.
       			 */
@@ -205,7 +205,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait MapOptions extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Leaflet.Map.MapOptions * / any */ trait MapOptions extends js.Object {
       var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
       var gridLayer: js.UndefOr[js.Any] = js.undefined
       var infoControl: js.UndefOr[ControlOptions] = js.undefined
@@ -215,7 +215,7 @@ object LNs extends js.Object {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped any */ trait ShareControl extends js.Object {
+    - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Control * / any */ trait ShareControl extends js.Object {
       def onAdd(map: Map): js.Any
     }
     

@@ -1,21 +1,22 @@
 package typings.reduxDashSagaDashRoutines
 
-import typings.redux.reduxMod.AnyAction
-import typings.redux.reduxMod.Dispatch
-import typings.reduxDashActions.reduxDashActionsMod.Action
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunction0
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunction1
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunction2
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunction3
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunction4
-import typings.reduxDashActions.reduxDashActionsMod.ActionFunctionAny
-import typings.reduxDashActions.reduxDashActionsMod.ActionMeta
-import typings.reduxDashSagaDashRoutines.Anon_Failure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashSagaDashRoutinesMod {
+  import typings.redux.reduxMod.AnyAction
+  import typings.redux.reduxMod.Dispatch
+  import typings.reduxDashActions.reduxDashActionsMod.Action
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunction0
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunction1
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunction2
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunction3
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunction4
+  import typings.reduxDashActions.reduxDashActionsMod.ActionFunctionAny
+  import typings.reduxDashActions.reduxDashActionsMod.ActionMeta
+  import typings.reduxDashSagaDashRoutines.Anon_Failure
+
   type ActionCreatorFunction[Payload, Meta] = ActionFunctionAny[Action[Payload] | (ActionMeta[Payload, Meta])]
   type BoundPromiseCreator[TPayload] = js.Function1[/* payload */ TPayload, js.Thenable[js.Any]]
   type PromiseCreator[TPayload] = js.Function2[/* payload */ TPayload, /* dispatch */ Dispatch[AnyAction], js.Thenable[js.Any]]

@@ -1,11 +1,12 @@
 package typings.senchaUnderscoreTouch.ExtNs.eventNs
 
-import typings.senchaUnderscoreTouch.ExtNs.IBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object publisherNs {
+  import typings.senchaUnderscoreTouch.ExtNs.IBase
+
   type IComponentDelegation = IPublisher
   type IComponentPaint = IPublisher
   type IComponentSize = IPublisher

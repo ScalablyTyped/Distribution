@@ -1,11 +1,12 @@
 package typings.js2xmlparser
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libOptionsMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ITypeHandlers = /**
     * Mapping between the type of a value in an object to a function taking
     * this value and returning a replacement value.

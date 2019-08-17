@@ -1,13 +1,14 @@
 package typings.authmosphere
 
-import typings.authmosphere.Anon_Code
-import typings.authmosphere.Anon_RefreshToken
-import typings.authmosphere.Anon_TokenInfoEndpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSrcTypesOAuthConfigMod {
+  import typings.authmosphere.Anon_Code
+  import typings.authmosphere.Anon_RefreshToken
+  import typings.authmosphere.Anon_TokenInfoEndpoint
+
   type AuthorizationCodeGrantConfig = CredentialsConfig with GrantConfigBase with Anon_Code
   type ClientCredentialsGrantConfig = CredentialsConfig with GrantConfigBase
   type CredentialsPasswordConfig = CredentialsDirConfig | CredentialsUserClientConfig

@@ -1,11 +1,12 @@
 package typings.cordovaDashSqliteDashStorage
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SQLitePluginNs {
+  import typings.std.Error
+
   type DatabaseSuccessCallback = js.Function1[/* db */ Database, Unit]
   type ErrorCallback = js.Function1[/* err */ Error, Unit]
   type StatementSuccessCallback = js.Function1[/* results */ Results, Unit]

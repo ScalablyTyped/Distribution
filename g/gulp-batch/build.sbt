@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gulp-batch"
-version := "1.0-dt-20180214Z-ae55a3"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180214Z-f9c915"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

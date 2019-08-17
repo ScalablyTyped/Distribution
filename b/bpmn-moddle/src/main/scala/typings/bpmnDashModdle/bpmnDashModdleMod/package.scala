@@ -1,12 +1,13 @@
 package typings.bpmnDashModdle
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bpmnDashModdleMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   // tslint:disable-next-line:no-empty-interface
   type Artifact = BaseElement
   // tslint:disable-next-line:no-empty-interface

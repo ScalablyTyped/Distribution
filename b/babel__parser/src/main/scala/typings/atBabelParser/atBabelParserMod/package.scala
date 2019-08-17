@@ -1,13 +1,14 @@
 package typings.atBabelParser
 
-import typings.atBabelParser.atBabelParserStrings.decorators
-import typings.atBabelParser.atBabelParserStrings.flow
-import typings.atBabelParser.atBabelParserStrings.pipelineOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atBabelParserMod {
+  import typings.atBabelParser.atBabelParserStrings.decorators
+  import typings.atBabelParser.atBabelParserStrings.flow
+  import typings.atBabelParser.atBabelParserStrings.pipelineOperator
+
   /* Rewritten from type alias, can be one of: 
     - typings.atBabelParser.atBabelParserStrings.estree
     - typings.atBabelParser.atBabelParserStrings.jsx

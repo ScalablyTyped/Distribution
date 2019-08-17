@@ -1,12 +1,13 @@
 package typings.forceDashGraph.forceDashGraphMod
 
-import typings.forceDashGraph.Anon_X
-import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ForceGraphNs {
+  import typings.forceDashGraph.Anon_X
+  import typings.std.CanvasRenderingContext2D
+
   type ForceFn = js.Function1[/* node */ Anon_X, Double]
   type LinkAccessorFn[T] = js.Function1[/* link */ GraphLinkObject, T]
   type LinkCanvasCallbackFn = js.Function3[

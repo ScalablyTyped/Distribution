@@ -1,21 +1,26 @@
 package typings.popmotionDashPose
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.popmotion.libAnimationsDecayTypesMod.DecayProps
-import typings.popmotion.libAnimationsKeyframesTypesMod.KeyframesProps
-import typings.popmotion.libAnimationsPhysicsTypesMod.PhysicsProps
-import typings.popmotion.libAnimationsSpringTypesMod.SpringProps
-import typings.popmotion.popmotionMod.Action
-import typings.popmotionDashPose.Anon_Decay
-import typings.popmotionDashPose.Anon_Keyframes
-import typings.popmotionDashPose.Anon_Physics
-import typings.popmotionDashPose.Anon_Spring
-import typings.popmotionDashPose.popmotionDashPoseNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.popmotion.libAnimationsDecayTypesMod.DecayProps
+  import typings.popmotion.libAnimationsKeyframesTypesMod.KeyframesProps
+  import typings.popmotion.libAnimationsPhysicsTypesMod.PhysicsProps
+  import typings.popmotion.libAnimationsSpringTypesMod.SpringProps
+  import typings.popmotion.libAnimationsTweenTypesMod.TweenProps
+  import typings.popmotion.popmotionMod.Action
+  import typings.popmotionDashPose.Anon_Decay
+  import typings.popmotionDashPose.Anon_Ease
+  import typings.popmotionDashPose.Anon_Keyframes
+  import typings.popmotionDashPose.Anon_Physics
+  import typings.popmotionDashPose.Anon_Spring
+  import typings.popmotionDashPose.Anon_Tween
+  import typings.popmotionDashPose.popmotionDashPoseNumbers.`false`
+  import typings.tsDashEssentials.distTypesMod.Merge
+
   type AnimationDef = TransitionDefinition
   type BoundingBox = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in popmotion-pose.popmotion-pose/lib/types.BoundingBoxDimension ]: number}
@@ -41,5 +46,5 @@ package object libTypesMod {
   type Transformer = js.Function1[/* v */ js.Any, js.Any]
   type Transition = js.Function1[/* props */ ResolverProps, Action | `false`]
   type TransitionDefinition = TweenDefinition | PhysicsDefinition | SpringDefinition | DecayDefinition | KeyframesDefinition
-  type TweenDefinition = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Merge<{  type  :'tween'} & TransitionDefinitionCommonProps & TweenProps, {  ease  :TweenProps['ease'] | keyof typeof easingLookup | CubicBezierArgs}> */ js.Any
+  type TweenDefinition = Merge[Anon_Tween with TransitionDefinitionCommonProps with TweenProps, Anon_Ease]
 }

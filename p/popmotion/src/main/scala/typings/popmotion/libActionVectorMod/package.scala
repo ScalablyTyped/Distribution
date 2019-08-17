@@ -1,12 +1,13 @@
 package typings.popmotion
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.popmotion.libActionMod.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libActionVectorMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.popmotion.libActionMod.Action
+
   type ActionFactory = js.Function1[/* props */ Props, Action]
   type ActionMap = StringDictionary[Action]
   type Props = StringDictionary[js.Any]

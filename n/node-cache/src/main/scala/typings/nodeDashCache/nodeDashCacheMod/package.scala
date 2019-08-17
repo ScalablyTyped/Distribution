@@ -1,11 +1,12 @@
 package typings.nodeDashCache
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashCacheMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Callback[T] = js.Function2[/* err */ js.Any, /* data */ js.UndefOr[T], Unit]
   type Data = StringDictionary[WrappedValue[js.Any]]
   /**

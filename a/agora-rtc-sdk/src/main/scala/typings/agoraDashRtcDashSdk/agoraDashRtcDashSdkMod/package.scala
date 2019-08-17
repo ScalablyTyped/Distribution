@@ -1,11 +1,12 @@
 package typings.agoraDashRtcDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object agoraDashRtcDashSdkMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /** A list of `LocalAudioStats` objects, one per uid. */
   type LocalAudioStatsMap = StringDictionary[LocalAudioStats]
   /** A list of `LocalVideoStats` objects, one per uid. */

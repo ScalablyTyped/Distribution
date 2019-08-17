@@ -1,12 +1,13 @@
 package typings.cqrsDashDomain
 
-import typings.cqrsDashDomain.Anon_Aggregate
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cqrsDashDomainMod {
+  import typings.cqrsDashDomain.Anon_Aggregate
+  import typings.std.Error
+
   /**
     * @param changed is the new aggregate object
     * @param previous is the old aggregate object

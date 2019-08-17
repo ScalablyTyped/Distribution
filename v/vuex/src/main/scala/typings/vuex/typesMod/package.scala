@@ -1,11 +1,12 @@
 package typings.vuex
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Action[S, R] = (ActionHandler[S, R]) | (ActionObject[S, R])
   type ActionHandler[S, R] = js.ThisFunction2[
     /* this */ Store[R], 

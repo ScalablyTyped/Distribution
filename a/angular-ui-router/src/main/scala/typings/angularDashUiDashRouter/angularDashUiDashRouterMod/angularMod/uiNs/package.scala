@@ -1,10 +1,11 @@
 package typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type IStateParamsService = StringDictionary[js.Any]
 }

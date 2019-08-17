@@ -11,6 +11,5 @@ trait reactDashGatewayProps {
   @scala.inline
   def GatewayDestProps: typings.reactDashGateway.gatewayDestMod.GatewayDestProps.type = typings.reactDashGateway.gatewayDestMod.GatewayDestProps
   type GatewayDestProps = typings.reactDashGateway.gatewayDestMod.GatewayDestProps
-  type GatewayProviderProps = js.Object
 }
 

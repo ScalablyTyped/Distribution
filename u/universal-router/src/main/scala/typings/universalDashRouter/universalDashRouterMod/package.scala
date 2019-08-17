@@ -1,13 +1,14 @@
 package typings.universalDashRouter
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.universalDashRouter.Anon_Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object universalDashRouterMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+  import typings.universalDashRouter.Anon_Status
+
   type Context = StringDictionary[js.Any]
   type ErrorHandler[C /* <: Context */, R] = js.Function2[
     /* error */ Error with Anon_Status, 

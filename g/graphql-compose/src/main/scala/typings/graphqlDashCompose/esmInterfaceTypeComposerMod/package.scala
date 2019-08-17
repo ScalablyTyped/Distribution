@@ -1,20 +1,21 @@
 package typings.graphqlDashCompose
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.graphqlMod.GraphQLInterfaceType
-import typings.graphql.graphqlMod.GraphQLObjectType
-import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer
-import typings.graphqlDashCompose.esmObjectTypeComposerMod.ObjectTypeComposer
-import typings.graphqlDashCompose.esmTypeMapperMod.TypeAsString
-import typings.graphqlDashCompose.esmTypeMapperMod.TypeDefinitionString
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.MaybePromise
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esmInterfaceTypeComposerMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.graphql.graphqlMod.GraphQLInterfaceType
+  import typings.graphql.graphqlMod.GraphQLObjectType
+  import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
+  import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer
+  import typings.graphqlDashCompose.esmObjectTypeComposerMod.ObjectTypeComposer
+  import typings.graphqlDashCompose.esmTypeMapperMod.TypeAsString
+  import typings.graphqlDashCompose.esmTypeMapperMod.TypeDefinitionString
+  import typings.graphqlDashCompose.esmUtilsDefinitionsMod.MaybePromise
+  import typings.std.Map
+
   type ComposeInterfaceType = (InterfaceTypeComposer[js.Any, js.Any]) | GraphQLInterfaceType | TypeDefinitionString | TypeAsString
   type GraphQLInterfaceTypeExtended[TSource, TContext] = GraphQLInterfaceType with (Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext])
   type InterfaceTypeComposeDefinition[TSource, TContext] = TypeAsString | (ComposeInterfaceTypeConfig[TSource, TContext])

@@ -1,25 +1,26 @@
 package typings.weixinDashApp
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Record
-import typings.std.ThisType
-import typings.weixinDashApp.Anon_Args
-import typings.weixinDashApp.Anon_Cursor
-import typings.weixinDashApp.Anon_Name
-import typings.weixinDashApp.weixinDashAppStrings.form
-import typings.weixinDashApp.weixinDashAppStrings.input
-import typings.weixinDashApp.weixinDashAppStrings.scroll
-import typings.weixinDashApp.weixinDashAppStrings.tap
-import typings.weixinDashApp.weixinDashAppStrings.touchcancel
-import typings.weixinDashApp.weixinDashAppStrings.touchend
-import typings.weixinDashApp.weixinDashAppStrings.touchforcechange
-import typings.weixinDashApp.weixinDashAppStrings.touchmove
-import typings.weixinDashApp.weixinDashAppStrings.touchstart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object wxNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Record
+  import typings.std.ThisType
+  import typings.weixinDashApp.Anon_Args
+  import typings.weixinDashApp.Anon_Cursor
+  import typings.weixinDashApp.Anon_Name
+  import typings.weixinDashApp.weixinDashAppStrings.form
+  import typings.weixinDashApp.weixinDashAppStrings.input
+  import typings.weixinDashApp.weixinDashAppStrings.scroll
+  import typings.weixinDashApp.weixinDashAppStrings.tap
+  import typings.weixinDashApp.weixinDashAppStrings.touchcancel
+  import typings.weixinDashApp.weixinDashAppStrings.touchend
+  import typings.weixinDashApp.weixinDashAppStrings.touchforcechange
+  import typings.weixinDashApp.weixinDashAppStrings.touchmove
+  import typings.weixinDashApp.weixinDashAppStrings.touchstart
+
   type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, Unit]
   type AccelerometerOptions = BaseOptions[js.Any, js.Any]
   type ArrayPropsDefinition[T] = js.Array[String]

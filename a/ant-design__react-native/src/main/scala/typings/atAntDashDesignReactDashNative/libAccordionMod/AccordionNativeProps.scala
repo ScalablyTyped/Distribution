@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof any ]:? any[P]} */ trait AccordionNativeProps[T] extends WithThemeStyles[AccordionStyle] {
+- Dropped {[ P in keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccordionProps<T> * / any ]:? / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccordionProps<T> * / any[P]} */ trait AccordionNativeProps[T] extends WithThemeStyles[AccordionStyle] {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 

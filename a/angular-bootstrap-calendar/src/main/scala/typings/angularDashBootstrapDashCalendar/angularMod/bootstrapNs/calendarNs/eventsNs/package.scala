@@ -1,13 +1,14 @@
 package typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs
 
-import typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs.ICalendarCell
-import typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs.IEvent
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object eventsNs {
+  import typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs.ICalendarCell
+  import typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs.IEvent
+  import typings.std.Date
+
   type IOnDeleteEventClick = js.Function1[/* calendarEvent */ IEvent, Unit]
   type IOnEditEventClick = js.Function1[/* calendarEvent */ IEvent, Unit]
   type IOnEventClick = js.Function1[/* calendarEvent */ IEvent, Unit]

@@ -1,13 +1,14 @@
 package typings.ngDashTable
 
-import typings.ngDashTable.srcCoreDataResultsMod.DataResult
-import typings.ngDashTable.srcCoreNgTableParamsMod.NgTableParams
-import typings.ngDashTable.srcCorePagingMod.IPageButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcCoreNgTableEventsChannelMod {
+  import typings.ngDashTable.srcCoreDataResultsMod.DataResult
+  import typings.ngDashTable.srcCoreNgTableParamsMod.NgTableParams
+  import typings.ngDashTable.srcCorePagingMod.IPageButton
+
   type EventSelector[T] = NgTableParams[T] | IEventSelectorFunc
   type IAfterCreatedListener = js.Function1[/* publisher */ NgTableParams[js.Any], js.Any]
   type IAfterDataFilteredListener[T] = js.Function2[/* publisher */ NgTableParams[T], /* newData */ js.Array[DataResult[T]], js.Any]

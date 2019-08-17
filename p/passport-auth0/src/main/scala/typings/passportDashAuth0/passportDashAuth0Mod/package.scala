@@ -1,11 +1,12 @@
 package typings.passportDashAuth0
 
-import typings.express.expressMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashAuth0Mod {
+  import typings.express.expressMod.Request
+
   type VerifyFunction = js.Function5[
     /* accessToken */ String, 
     /* refreshToken */ String, 

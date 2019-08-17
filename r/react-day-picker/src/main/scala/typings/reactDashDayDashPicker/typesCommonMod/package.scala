@@ -1,11 +1,12 @@
 package typings.reactDashDayDashPicker
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesCommonMod {
+  import typings.std.Date
+
   type FunctionModifier = js.Function1[/* date */ Date, Boolean]
   /* Rewritten from type alias, can be one of: 
     - typings.std.Date

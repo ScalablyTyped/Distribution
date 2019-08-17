@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.ACTIVE
-import typings.awsDashSdk.awsDashSdkStrings.ALL
-import typings.awsDashSdk.awsDashSdkStrings.HTTPS
-import typings.awsDashSdk.awsDashSdkStrings.SHARED_WITH_ME
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsWorkdocsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.ACTIVE
+  import typings.awsDashSdk.awsDashSdkStrings.ALL
+  import typings.awsDashSdk.awsDashSdkStrings.HTTPS
+  import typings.awsDashSdk.awsDashSdkStrings.SHARED_WITH_ME
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ActivityNamesFilterType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DOCUMENT_CHECKED_IN

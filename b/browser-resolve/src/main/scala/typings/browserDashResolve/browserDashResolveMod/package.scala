@@ -1,11 +1,12 @@
 package typings.browserDashResolve
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object browserDashResolveMod {
+  import typings.std.Error
+
   /**
     * Callback invoked when resolving asynchronously
     *

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-file-transfer"
-version := "1.7.1-6d6db0"
-scalaVersion := "2.12.8"
+version := "1.7.1-c1d653"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-4ae0cf",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc")
+  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-f7f5ff",
+  "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

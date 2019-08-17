@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_isweakmap"
-version := "4.4-dt-20190214Z-657abb"
-scalaVersion := "2.12.8"
+version := "4.4-dt-20190214Z-be38c0"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

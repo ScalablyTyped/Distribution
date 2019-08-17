@@ -1,14 +1,15 @@
 package typings.yup
 
-import typings.std.Partial
-import typings.yup.Anon_Is
-import typings.yup.NotRequiredProps
-import typings.yup.RequiredProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yupMod {
+  import typings.std.Partial
+  import typings.yup.Anon_Is
+  import typings.yup.NotRequiredProps
+  import typings.yup.RequiredProps
+
   type Id[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
     */ typings.yup.yupStrings.Id with T

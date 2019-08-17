@@ -1,0 +1,15 @@
+package typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesPutItemExceptionsUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesConditionalCheckFailedExceptionMod.ConditionalCheckFailedException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesItemCollectionSizeLimitExceededExceptionMod.ItemCollectionSizeLimitExceededException
+  - typings.atAwsDashSdkClientDashDynamodbDashBrowser.typesInternalServerErrorMod.InternalServerError
+*/
+trait PutItemExceptionsUnion extends js.Object
+

@@ -1,14 +1,15 @@
 package typings.antd
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.antd.Anon_CurrentDataSource
-import typings.std.Event
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esTableInterfaceMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.antd.Anon_CurrentDataSource
+  import typings.std.Event
+  import typings.std.HTMLElement
+
   type CompareFn[T] = js.Function3[/* a */ T, /* b */ T, /* sortOrder */ js.UndefOr[SortOrder], Double]
   type GetPopupContainer = js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]
   type PrepareParamsArgumentsReturn[T] = js.Tuple4[js.Any, js.Array[String], js.Object, Anon_CurrentDataSource[T]]

@@ -1,11 +1,12 @@
 package typings
 
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webrtc {
+  import typings.std.Event
+
   // https://www.w3.org/TR/webrtc/#idl-def-rtcdatachannel
   type DataChannelEventHandler[E /* <: Event */] = (js.ThisFunction1[/* this */ RTCDataChannel, /* ev */ E, js.Any]) | Null
   // https://www.w3.org/TR/webrtc/#idl-def-rtcdtlstransport

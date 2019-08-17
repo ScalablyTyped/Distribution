@@ -1,11 +1,12 @@
 package typings.chrome.chromeNs.inputNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object imeNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type ActivateEvent = Event[js.Function2[/* engineID */ String, /* screen */ String, Unit]]
   type BlurEvent = Event[js.Function1[/* contextID */ Double, Unit]]
   type CandidateClickedEvent = Event[

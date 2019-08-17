@@ -1,6 +1,7 @@
 package typings.atJupyterlabCompleter.libWidgetMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
 import typings.atJupyterlabCompleter.libWidgetMod.CompleterNs.ICursorSpan
 import typings.atJupyterlabCompleter.libWidgetMod.CompleterNs.IItem
 import typings.atJupyterlabCompleter.libWidgetMod.CompleterNs.IModel
@@ -129,9 +130,7 @@ object CompleterNs extends js.Object {
     /**
       * The semantic parent of the completer widget, its referent editor.
       */
-    var editor: js.UndefOr[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null
-      ] = js.undefined
+    var editor: js.UndefOr[IEditor | Null] = js.undefined
     /**
       * The model for the completer widget.
       */

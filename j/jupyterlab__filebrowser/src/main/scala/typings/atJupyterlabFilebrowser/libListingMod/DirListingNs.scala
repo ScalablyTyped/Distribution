@@ -1,5 +1,6 @@
 package typings.atJupyterlabFilebrowser.libListingMod
 
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IFileType
 import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserStrings.ascending
 import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserStrings.descending
 import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserStrings.last_modified
@@ -51,11 +52,7 @@ object DirListingNs extends js.Object {
       * @returns An element to use as the drag image.
       */
     def createDragImage(node: HTMLElement, count: Double): HTMLElement = js.native
-    def createDragImage(
-      node: HTMLElement,
-      count: Double,
-      fileType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IFileType */ js.Any
-    ): HTMLElement = js.native
+    def createDragImage(node: HTMLElement, count: Double, fileType: IFileType): HTMLElement = js.native
     /**
       * Create a new item node for a dir listing.
       *
@@ -100,11 +97,7 @@ object DirListingNs extends js.Object {
       * @param fileType - The file type of the item, if applicable.
       */
     def updateItemNode(node: HTMLElement, model: IModel): Unit = js.native
-    def updateItemNode(
-      node: HTMLElement,
-      model: IModel,
-      fileType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IFileType */ js.Any
-    ): Unit = js.native
+    def updateItemNode(node: HTMLElement, model: IModel, fileType: IFileType): Unit = js.native
   }
   
   /**

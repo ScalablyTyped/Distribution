@@ -1,12 +1,13 @@
 package typings.vuex
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vue.typesVueMod.Vue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesHelpersMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.vue.typesVueMod.Vue
+
   type ActionMethod = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
   type Computed = js.Function0[js.Any]
   type CustomVue = Vue with Dictionary[_]

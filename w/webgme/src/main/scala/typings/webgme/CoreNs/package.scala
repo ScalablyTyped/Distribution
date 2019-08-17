@@ -1,11 +1,12 @@
 package typings.webgme
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CoreNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type DataObject = js.Any
   type GUID = String
   type ObjectHash = String

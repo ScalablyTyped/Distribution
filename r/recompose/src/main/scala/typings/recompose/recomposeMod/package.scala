@@ -1,19 +1,20 @@
 package typings.recompose
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ReactElement
-import typings.react.reactMod.ReactNode
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object recomposeMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ReactNode
+  import typings.std.Exclude
+  import typings.std.Partial
+  import typings.std.Pick
+
   type ComponentEnhancer[TInner, TOutter] = js.Function1[/* component */ ComponentType[TInner], ComponentClass[TOutter, ComponentState]]
   type DefaultingInferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, Partial[TInjectedProps]]
   // withHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withhandlers

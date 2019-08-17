@@ -1,12 +1,13 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.RESOURCES
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCurMod {
+  import typings.awsDashSdk.awsDashSdkStrings.RESOURCES
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`us-east-1`
     - typings.awsDashSdk.awsDashSdkStrings.`us-west-1`

@@ -1,12 +1,13 @@
 package typings.webgme
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.webgme.CoreNs.GUID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object GmeNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.webgme.CoreNs.GUID
+
   type Connection = js.Any
   type ProjectResult = js.Array[Project] | StringDictionary[Project]
   /**

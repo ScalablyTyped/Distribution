@@ -1,11 +1,12 @@
 package typings.ol
 
-import typings.ol.coordinateMod.Coordinate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interactionDrawMod {
+  import typings.ol.coordinateMod.Coordinate
+
   type GeometryFunction = js.Function2[
     /* p0 */ SketchCoordType, 
     /* p1 */ js.UndefOr[typings.ol.geomSimpleGeometryMod.default], 

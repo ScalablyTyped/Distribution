@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MapCircleProps extends js.Object {
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait MapCircleProps extends js.Object {
   var center: LatLng
   var fillColor: js.UndefOr[String] = js.undefined
   var lineCap: js.UndefOr[LineCapType] = js.undefined

@@ -1,18 +1,19 @@
 package typings.atGoogleDashCloudStorage
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atGoogleDashCloudCommon.atGoogleDashCloudCommonMod.ApiError
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.ExistsCallback
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.atGoogleDashCloudStorage.buildSrcChannelMod.Channel
-import typings.atGoogleDashCloudStorage.buildSrcFileMod.File
-import typings.atGoogleDashCloudStorage.buildSrcNotificationMod.Notification
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcBucketMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atGoogleDashCloudCommon.atGoogleDashCloudCommonMod.ApiError
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.ExistsCallback
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.atGoogleDashCloudStorage.buildSrcChannelMod.Channel
+  import typings.atGoogleDashCloudStorage.buildSrcFileMod.File
+  import typings.atGoogleDashCloudStorage.buildSrcNotificationMod.Notification
+  import typings.std.Error
+
   type BucketExistsCallback = ExistsCallback
   type BucketExistsResponse = js.Array[Boolean]
   type BucketLockCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* apiResponse */ js.UndefOr[Metadata], Unit]

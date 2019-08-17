@@ -1,11 +1,12 @@
 package typings.orientjs
 
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object orientjsMod {
+  import typings.node.Buffer
+
   type BinaryRecord = Record with Buffer
   type ODocument = Record
   /* Rewritten from type alias, can be one of: 

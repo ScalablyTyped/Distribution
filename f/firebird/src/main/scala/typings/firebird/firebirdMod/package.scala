@@ -1,11 +1,12 @@
 package typings.firebird
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object firebirdMod {
+  import typings.std.Date
+
   /**
     * @desc
     * Here is Firebird to Node data type accordance:

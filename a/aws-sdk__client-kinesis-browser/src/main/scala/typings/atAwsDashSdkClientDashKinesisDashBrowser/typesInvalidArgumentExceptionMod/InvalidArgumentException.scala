@@ -1,0 +1,71 @@
+package typings.atAwsDashSdkClientDashKinesisDashBrowser.typesInvalidArgumentExceptionMod
+
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesAddTagsToStreamExceptionsUnionMod.AddTagsToStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesCreateStreamExceptionsUnionMod.CreateStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDecreaseStreamRetentionPeriodExceptionsUnionMod.DecreaseStreamRetentionPeriodExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDeregisterStreamConsumerExceptionsUnionMod.DeregisterStreamConsumerExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDescribeStreamConsumerExceptionsUnionMod.DescribeStreamConsumerExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesDisableEnhancedMonitoringExceptionsUnionMod.DisableEnhancedMonitoringExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesEnableEnhancedMonitoringExceptionsUnionMod.EnableEnhancedMonitoringExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesGetRecordsExceptionsUnionMod.GetRecordsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesGetShardIteratorExceptionsUnionMod.GetShardIteratorExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesIncreaseStreamRetentionPeriodExceptionsUnionMod.IncreaseStreamRetentionPeriodExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesListShardsExceptionsUnionMod.ListShardsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesListStreamConsumersExceptionsUnionMod.ListStreamConsumersExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesListTagsForStreamExceptionsUnionMod.ListTagsForStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesMergeShardsExceptionsUnionMod.MergeShardsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesPutRecordExceptionsUnionMod.PutRecordExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesPutRecordsExceptionsUnionMod.PutRecordsExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesRegisterStreamConsumerExceptionsUnionMod.RegisterStreamConsumerExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesRemoveTagsFromStreamExceptionsUnionMod.RemoveTagsFromStreamExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesSplitShardExceptionsUnionMod.SplitShardExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStartStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
+import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesUpdateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
+import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InvalidArgumentException
+  extends ServiceException[_InvalidArgumentExceptionDetails]
+     with AddTagsToStreamExceptionsUnion
+     with CreateStreamExceptionsUnion
+     with DecreaseStreamRetentionPeriodExceptionsUnion
+     with DeregisterStreamConsumerExceptionsUnion
+     with DescribeStreamConsumerExceptionsUnion
+     with DisableEnhancedMonitoringExceptionsUnion
+     with EnableEnhancedMonitoringExceptionsUnion
+     with GetRecordsExceptionsUnion
+     with GetShardIteratorExceptionsUnion
+     with IncreaseStreamRetentionPeriodExceptionsUnion
+     with ListShardsExceptionsUnion
+     with ListStreamConsumersExceptionsUnion
+     with ListTagsForStreamExceptionsUnion
+     with MergeShardsExceptionsUnion
+     with PutRecordExceptionsUnion
+     with PutRecordsExceptionsUnion
+     with RegisterStreamConsumerExceptionsUnion
+     with RemoveTagsFromStreamExceptionsUnion
+     with SplitShardExceptionsUnion
+     with StartStreamEncryptionExceptionsUnion
+     with StopStreamEncryptionExceptionsUnion
+     with UpdateShardCountExceptionsUnion {
+  @JSName("name")
+  var name_InvalidArgumentException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.InvalidArgumentException
+}
+
+object InvalidArgumentException {
+  @scala.inline
+  def apply(
+    details: _InvalidArgumentExceptionDetails,
+    message: String,
+    name: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.InvalidArgumentException,
+    stack: String = null
+  ): InvalidArgumentException = {
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InvalidArgumentException]
+  }
+}
+

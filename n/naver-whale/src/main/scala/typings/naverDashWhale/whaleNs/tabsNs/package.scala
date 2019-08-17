@@ -1,11 +1,12 @@
 package typings.naverDashWhale.whaleNs
 
-import typings.chrome.chromeNs.eventsNs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tabsNs {
+  import typings.chrome.chromeNs.eventsNs.Event
+
   type TabActivatedEvent = Event[
     js.Function1[/* activeInfo */ typings.chrome.chromeNs.tabsNs.TabActiveInfo, Unit]
   ]

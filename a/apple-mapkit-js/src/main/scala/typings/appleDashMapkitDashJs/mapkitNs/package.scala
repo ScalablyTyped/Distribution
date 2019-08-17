@@ -1,11 +1,12 @@
 package typings.appleDashMapkitDashJs
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapkitNs {
+  import typings.std.Error
+
   type AutoCompleteCallback = js.Function0[Unit]
   type GeocoderLookupCallback = js.Function2[/* error */ Error, /* data */ GeocoderResponse, Unit]
   /* Rewritten from type alias, can be one of: 

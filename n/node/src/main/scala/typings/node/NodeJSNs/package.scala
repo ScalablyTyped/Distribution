@@ -1,21 +1,22 @@
 package typings.node
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Error
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object NodeJSNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.Error
+  import typings.std.Float32Array
+  import typings.std.Float64Array
+  import typings.std.Int16Array
+  import typings.std.Int32Array
+  import typings.std.Int8Array
+  import typings.std.Uint16Array
+  import typings.std.Uint32Array
+  import typings.std.Uint8Array
+  import typings.std.Uint8ClampedArray
+
   type BeforeExitListener = js.Function1[/* code */ Double, Unit]
   type DisconnectListener = js.Function0[Unit]
   type Events = EventEmitter

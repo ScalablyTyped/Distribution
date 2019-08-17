@@ -1,18 +1,19 @@
 package typings.atOracleOraclejet.ojlistviewMod
 
-import typings.atOracleOraclejet.Anon_Action
-import typings.atOracleOraclejet.Anon_ActionElement
-import typings.atOracleOraclejet.Anon_ItemKey
-import typings.atOracleOraclejet.Anon_ItemKeyPreviousItem
-import typings.atOracleOraclejet.Anon_ItemPropName
-import typings.atOracleOraclejet.Anon_ItemsPosition
-import typings.atOracleOraclejet.Anon_ItemsPropName
-import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ojListViewNs {
+  import typings.atOracleOraclejet.Anon_Action
+  import typings.atOracleOraclejet.Anon_ActionElement
+  import typings.atOracleOraclejet.Anon_ItemKey
+  import typings.atOracleOraclejet.Anon_ItemKeyPreviousItem
+  import typings.atOracleOraclejet.Anon_ItemPropName
+  import typings.atOracleOraclejet.Anon_ItemsPosition
+  import typings.atOracleOraclejet.Anon_ItemsPropName
+  import typings.std.CustomEvent
+
   type ojAnimateEnd = CustomEvent[Anon_Action]
   type ojAnimateStart = CustomEvent[Anon_ActionElement]
   type ojBeforeCollapse[K] = CustomEvent[Anon_ItemKey[K]]

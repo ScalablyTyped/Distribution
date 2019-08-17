@@ -1,17 +1,18 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControl
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FrameLoader
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XController2
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.SQLException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.XRename
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionHandler
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionHandler2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sdbNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.awtNs.UnoControl
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.FrameLoader
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XController2
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcNs.SQLException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.sdbcxNs.XRename
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionHandler
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.taskNs.XInteractionHandler2
+
   /** specifies a column descriptor control. */
   type ColumnDescriptorControl = UnoControl
   /** @since LibreOffice 4.1 */

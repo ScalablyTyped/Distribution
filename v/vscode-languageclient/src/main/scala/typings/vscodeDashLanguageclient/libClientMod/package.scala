@@ -1,45 +1,46 @@
 package typings.vscodeDashLanguageclient
 
-import typings.std.Error
-import typings.vscode.vscodeMod.CancellationToken
-import typings.vscode.vscodeMod.CodeAction
-import typings.vscode.vscodeMod.CodeActionContext
-import typings.vscode.vscodeMod.CodeLens
-import typings.vscode.vscodeMod.Command
-import typings.vscode.vscodeMod.CompletionContext
-import typings.vscode.vscodeMod.CompletionItem
-import typings.vscode.vscodeMod.CompletionList
-import typings.vscode.vscodeMod.Definition
-import typings.vscode.vscodeMod.DefinitionLink
-import typings.vscode.vscodeMod.Diagnostic
-import typings.vscode.vscodeMod.DocumentHighlight
-import typings.vscode.vscodeMod.FormattingOptions
-import typings.vscode.vscodeMod.Hover
-import typings.vscode.vscodeMod.Location
-import typings.vscode.vscodeMod.Position
-import typings.vscode.vscodeMod.ProviderResult
-import typings.vscode.vscodeMod.Range
-import typings.vscode.vscodeMod.SignatureHelp
-import typings.vscode.vscodeMod.SymbolInformation
-import typings.vscode.vscodeMod.TextDocument
-import typings.vscode.vscodeMod.TextEdit
-import typings.vscode.vscodeMod.Uri
-import typings.vscode.vscodeMod.WorkspaceEdit
-import typings.vscodeDashLanguageclient.Anon_IncludeDeclaration
-import typings.vscodeDashLanguageclient.Anon_Placeholder
-import typings.vscodeDashLanguageclient.libColorProviderMod.ColorProviderMiddleware
-import typings.vscodeDashLanguageclient.libConfigurationMod.ConfigurationWorkspaceMiddleware
-import typings.vscodeDashLanguageclient.libDeclarationMod.DeclarationMiddleware
-import typings.vscodeDashLanguageclient.libFoldingRangeMod.FoldingRangeProviderMiddleware
-import typings.vscodeDashLanguageclient.libImplementationMod.ImplementationMiddleware
-import typings.vscodeDashLanguageclient.libTypeDefinitionMod.TypeDefinitionMiddleware
-import typings.vscodeDashLanguageclient.libWorkspaceFoldersMod.WorkspaceFolderWorkspaceMiddleware
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libClientMod {
+  import typings.std.Error
+  import typings.vscode.vscodeMod.CancellationToken
+  import typings.vscode.vscodeMod.CodeAction
+  import typings.vscode.vscodeMod.CodeActionContext
+  import typings.vscode.vscodeMod.CodeLens
+  import typings.vscode.vscodeMod.Command
+  import typings.vscode.vscodeMod.CompletionContext
+  import typings.vscode.vscodeMod.CompletionItem
+  import typings.vscode.vscodeMod.CompletionList
+  import typings.vscode.vscodeMod.Definition
+  import typings.vscode.vscodeMod.DefinitionLink
+  import typings.vscode.vscodeMod.Diagnostic
+  import typings.vscode.vscodeMod.DocumentHighlight
+  import typings.vscode.vscodeMod.FormattingOptions
+  import typings.vscode.vscodeMod.Hover
+  import typings.vscode.vscodeMod.Location
+  import typings.vscode.vscodeMod.Position
+  import typings.vscode.vscodeMod.ProviderResult
+  import typings.vscode.vscodeMod.Range
+  import typings.vscode.vscodeMod.SignatureHelp
+  import typings.vscode.vscodeMod.SymbolInformation
+  import typings.vscode.vscodeMod.TextDocument
+  import typings.vscode.vscodeMod.TextEdit
+  import typings.vscode.vscodeMod.Uri
+  import typings.vscode.vscodeMod.WorkspaceEdit
+  import typings.vscodeDashLanguageclient.Anon_IncludeDeclaration
+  import typings.vscodeDashLanguageclient.Anon_Placeholder
+  import typings.vscodeDashLanguageclient.libColorProviderMod.ColorProviderMiddleware
+  import typings.vscodeDashLanguageclient.libConfigurationMod.ConfigurationWorkspaceMiddleware
+  import typings.vscodeDashLanguageclient.libDeclarationMod.DeclarationMiddleware
+  import typings.vscodeDashLanguageclient.libFoldingRangeMod.FoldingRangeProviderMiddleware
+  import typings.vscodeDashLanguageclient.libImplementationMod.ImplementationMiddleware
+  import typings.vscodeDashLanguageclient.libTypeDefinitionMod.TypeDefinitionMiddleware
+  import typings.vscodeDashLanguageclient.libWorkspaceFoldersMod.WorkspaceFolderWorkspaceMiddleware
+  import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
+
   type DidChangeConfigurationSignature = js.Function1[/* sections */ js.UndefOr[js.Array[String]], Unit]
   type HandleDiagnosticsSignature = js.Function2[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], Unit]
   type InitializationFailedHandler = js.Function1[

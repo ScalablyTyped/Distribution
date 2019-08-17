@@ -1,11 +1,12 @@
 package typings.nssm
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nssmMod {
+  import typings.std.Error
+
   type CallbackFn = js.Function2[/* error */ js.UndefOr[String], /* result */ js.UndefOr[String], Unit]
   type Nssm = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in nssm.nssm.Command ]: nssm.nssm.NssmCommandFn}

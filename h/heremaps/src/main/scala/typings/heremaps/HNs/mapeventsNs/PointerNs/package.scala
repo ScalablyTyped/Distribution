@@ -1,11 +1,12 @@
 package typings.heremaps.HNs.mapeventsNs
 
-import typings.heremaps.HNs.mathNs.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PointerNs {
+  import typings.heremaps.HNs.mathNs.BitMask
+
   /**
     * Indicates which pointer device buttons are being pressed, expressed as a bitmask. Bit values are:
     *

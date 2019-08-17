@@ -1,11 +1,12 @@
 package typings.adone.adoneNs.INs
 
-import typings.adone.adoneNs.INs.datetimeNs.unitOfTimeNs.DurationConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object datetimeNs {
+  import typings.adone.adoneNs.INs.datetimeNs.unitOfTimeNs.DurationConstructor
+
   type CalendarSpecVal = String | (js.Function2[/* m */ js.UndefOr[DatetimeInput], /* now */ js.UndefOr[Datetime], String])
   type DatetimeFormatSpecification = String | js.Array[String]
   /* Rewritten from type alias, can be one of: 

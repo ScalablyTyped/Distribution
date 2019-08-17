@@ -1,12 +1,13 @@
 package typings.uiDashGrid.uiDashGridMod
 
-import typings.angular.JQueryEventObject
-import typings.uiDashGrid.uiDashGridMod.IColumnDefOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object editNs {
+  import typings.angular.JQueryEventObject
+  import typings.uiDashGrid.uiDashGridMod.IColumnDefOf
+
   type afterCellEditHandler[TEntity] = js.Function4[
     /* rowEntity */ TEntity, 
     /* colDef */ IColumnDefOf[TEntity], 

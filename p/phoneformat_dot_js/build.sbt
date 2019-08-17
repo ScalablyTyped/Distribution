@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "phoneformat_dot_js"
-version := "1.0-dt-20190731Z-569563"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190731Z-7c742d"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,16 +1,17 @@
 package typings.petitDashDom.petitDashDomMod.Global
 
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.Component
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.ComponentProps
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.DomElements
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.IntrinsicProps
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.Props
-import typings.petitDashDom.petitDashDomMod.PetitDomNs.VNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JSXNs {
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.Component
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.ComponentProps
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.DomElements
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.IntrinsicProps
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.Props
+  import typings.petitDashDom.petitDashDomMod.PetitDomNs.VNode
+
   // tslint:disable-next-line:no-empty-interface
   type Element = VNode
   // tslint:disable-next-line:no-empty-interface

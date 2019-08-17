@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object configurationNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.langNs.XMultiServiceFactory
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /** is thrown when an application tries to create a configuration provider but the configuration can't be loaded */
   type CannotLoadConfigurationException = Exception
   /**

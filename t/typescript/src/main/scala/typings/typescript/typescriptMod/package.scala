@@ -1,31 +1,32 @@
 package typings.typescript
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.typescript.Anon_Affected
-import typings.typescript.Anon_BucketKey
-import typings.typescript.Anon_EscapedIdentifier
-import typings.typescript.Anon_Metadata
-import typings.typescript.Anon_Name
-import typings.typescript.Anon_PathBrand
-import typings.typescript.typescriptMod.SyntaxKind.AbstractKeyword
-import typings.typescript.typescriptMod.SyntaxKind.AsteriskAsteriskToken
-import typings.typescript.typescriptMod.SyntaxKind.AsyncKeyword
-import typings.typescript.typescriptMod.SyntaxKind.AwaitKeyword
-import typings.typescript.typescriptMod.SyntaxKind.CommaToken
-import typings.typescript.typescriptMod.SyntaxKind.ConstKeyword
-import typings.typescript.typescriptMod.SyntaxKind.DeclareKeyword
-import typings.typescript.typescriptMod.SyntaxKind.DefaultKeyword
-import typings.typescript.typescriptMod.SyntaxKind.ExportKeyword
-import typings.typescript.typescriptMod.SyntaxKind.PrivateKeyword
-import typings.typescript.typescriptMod.SyntaxKind.ProtectedKeyword
-import typings.typescript.typescriptMod.SyntaxKind.PublicKeyword
-import typings.typescript.typescriptMod.SyntaxKind.ReadonlyKeyword
-import typings.typescript.typescriptMod.SyntaxKind.StaticKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typescriptMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.typescript.Anon_Affected
+  import typings.typescript.Anon_BucketKey
+  import typings.typescript.Anon_EscapedIdentifier
+  import typings.typescript.Anon_Metadata
+  import typings.typescript.Anon_Name
+  import typings.typescript.Anon_PathBrand
+  import typings.typescript.typescriptMod.SyntaxKind.AbstractKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.AsteriskAsteriskToken
+  import typings.typescript.typescriptMod.SyntaxKind.AsyncKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.AwaitKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.CommaToken
+  import typings.typescript.typescriptMod.SyntaxKind.ConstKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.DeclareKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.DefaultKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.ExportKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.PrivateKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.ProtectedKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.PublicKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.ReadonlyKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.StaticKeyword
+
   type AdditiveOperatorOrHigher = MultiplicativeOperatorOrHigher | AdditiveOperator
   type AffectedFileResult[T] = js.UndefOr[Anon_Affected[T]]
   type AssignmentOperatorOrHigher = LogicalOperatorOrHigher | AssignmentOperator

@@ -1,21 +1,22 @@
 package typings.reactDashNavigation
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ReactElement
-import typings.reactDashNative.reactDashNativeMod.ViewStyle
-import typings.reactDashNavigation.Anon_Descriptors
-import typings.reactDashNavigation.Anon_NavigationOptions
-import typings.reactDashNavigation.Anon_NavigationOptionsNavigationScreenConfig
-import typings.reactDashNavigation.Anon_NavigationOptionsPath
-import typings.reactDashNavigation.Anon_NavigationOptionsRouter
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNavigationMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.ReactElement
+  import typings.reactDashNative.reactDashNativeMod.ViewStyle
+  import typings.reactDashNavigation.Anon_Descriptors
+  import typings.reactDashNavigation.Anon_NavigationOptions
+  import typings.reactDashNavigation.Anon_NavigationOptionsNavigationScreenConfig
+  import typings.reactDashNavigation.Anon_NavigationOptionsPath
+  import typings.reactDashNavigation.Anon_NavigationOptionsRouter
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type AnimatedValue = js.Any
   type InferProps[T /* <: ComponentType[_] */] = js.Any
   type NavigationAnimationSetter = js.Function3[

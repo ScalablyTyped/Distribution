@@ -1,0 +1,30 @@
+package typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteBaiduChannelOutputMod
+
+import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUnderscoreBaiduChannelResponseMod._UnmarshalledBaiduChannelResponse
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeleteBaiduChannelOutput extends OutputTypesUnion {
+  /**
+    * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
+    */
+  @JSName("$metadata")
+  var $metadata: ResponseMetadata
+  /**
+    * Baidu Cloud Messaging channel definition
+    */
+  var BaiduChannelResponse: _UnmarshalledBaiduChannelResponse
+}
+
+object DeleteBaiduChannelOutput {
+  @scala.inline
+  def apply($metadata: ResponseMetadata, BaiduChannelResponse: _UnmarshalledBaiduChannelResponse): DeleteBaiduChannelOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata, BaiduChannelResponse = BaiduChannelResponse)
+  
+    __obj.asInstanceOf[DeleteBaiduChannelOutput]
+  }
+}
+

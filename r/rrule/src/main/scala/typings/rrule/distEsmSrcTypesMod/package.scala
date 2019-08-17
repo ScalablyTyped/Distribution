@@ -1,11 +1,12 @@
 package typings.rrule
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distEsmSrcTypesMod {
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.rrule.distEsmSrcWeekdayMod.WeekdayStr
     - scala.Double

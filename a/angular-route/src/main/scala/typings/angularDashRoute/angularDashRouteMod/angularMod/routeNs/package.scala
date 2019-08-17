@@ -1,12 +1,13 @@
 package typings.angularDashRoute.angularDashRouteMod.angularMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.Global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object routeNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.angular.angularMod.Global.Function
+
   ///////////////////////////////////////////////////////////////////////////
   // RouteParamsService
   // see http://docs.angularjs.org/api/ngRoute.$routeParams

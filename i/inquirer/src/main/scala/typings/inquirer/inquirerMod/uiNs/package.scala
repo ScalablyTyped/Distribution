@@ -1,13 +1,14 @@
 package typings.inquirer.inquirerMod
 
-import typings.inquirer.Anon_ChoicesDefault
-import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.DistinctQuestion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uiNs {
+  import typings.inquirer.Anon_ChoicesDefault
+  import typings.inquirer.inquirerMod.Answers
+  import typings.inquirer.inquirerMod.DistinctQuestion
+
   /**
     * Represents a fetched answer.
     *

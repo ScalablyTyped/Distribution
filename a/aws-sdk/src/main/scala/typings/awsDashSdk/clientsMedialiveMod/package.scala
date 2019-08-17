@@ -1,16 +1,17 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.CORRECT_AUDIO
-import typings.awsDashSdk.awsDashSdkStrings.MONTHS
-import typings.awsDashSdk.awsDashSdkStrings.NO_UPFRONT
-import typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsMedialiveMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.CORRECT_AUDIO
+  import typings.awsDashSdk.awsDashSdkStrings.MONTHS
+  import typings.awsDashSdk.awsDashSdkStrings.NO_UPFRONT
+  import typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AD_RECEIVER_MIX
     - typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_1_0

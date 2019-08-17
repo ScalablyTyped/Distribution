@@ -1,15 +1,16 @@
 package typings.reactDashTable
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactElement
-import typings.react.reactMod.ReactNode
-import typings.reactDashTable.Anon_Column
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashTableMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ReactNode
+  import typings.reactDashTable.Anon_Column
+  import typings.std.Partial
+
   type Accessor[D] = String | js.Array[String] | AccessorFunction[D]
   type AccessorFunction[D] = js.Function1[/* row */ D, js.Any]
   type Aggregator = js.Function2[/* values */ js.Any, /* rows */ js.Any, js.Any]

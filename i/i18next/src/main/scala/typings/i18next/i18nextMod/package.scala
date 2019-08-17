@@ -1,11 +1,12 @@
 package typings.i18next
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object i18nextMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Callback = js.Function2[/* error */ js.Any, /* t */ TranslationFunction[js.Any, js.Object, String], Unit]
   type FallbackLng = String | js.Array[String] | FallbackLngObjList
   type FallbackLngObjList = StringDictionary[js.Array[String]]

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "create-html-element"
-version := "3.0.0-a6b31d"
-scalaVersion := "2.12.8"
+version := "3.0.0-14112f"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "stringify-attributes" % "2.0.0-df2149",
-  "org.scalablytyped" %%% "type-fest" % "0.3.1-51ba03")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "stringify-attributes" % "2.0.0-e7f016",
+  "org.scalablytyped" %%% "type-fest" % "0.3.1-1f7713")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

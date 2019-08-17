@@ -1,11 +1,12 @@
 package typings.graphqlDashSubscriptions
 
-import typings.std.AsyncIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distWithDashFilterMod {
+  import typings.std.AsyncIterator
+
   type FilterFn = js.Function4[
     /* rootValue */ js.UndefOr[js.Any], 
     /* args */ js.UndefOr[js.Any], 

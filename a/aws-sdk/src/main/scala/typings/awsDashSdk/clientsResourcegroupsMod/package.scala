@@ -1,13 +1,14 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.`resource-type`
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsResourcegroupsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.`resource-type`
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type GroupArn = String
   type GroupDescription = String

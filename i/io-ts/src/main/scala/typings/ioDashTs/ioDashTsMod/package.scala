@@ -1,12 +1,13 @@
 package typings.ioDashTs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.ioDashTs.Anon_Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ioDashTsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.ioDashTs.Anon_Props
+
   type Any = Type[js.Any, js.Any, js.Any]
   type AnyC = AnyType
   type AnyProps = StringDictionary[Any]

@@ -1,20 +1,21 @@
 package typings.cypress
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.Anon_0
-import typings.cypress.cypressNumbers.`false`
-import typings.cypress.cypressStrings.left
-import typings.cypress.cypressStrings.top
-import typings.std.Comment
-import typings.std.DocumentFragment
-import typings.std.Element
-import typings.std.Pick
-import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQueryNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.cypress.Anon_0
+  import typings.cypress.cypressNumbers.`false`
+  import typings.cypress.cypressStrings.left
+  import typings.cypress.cypressStrings.top
+  import typings.std.Comment
+  import typings.std.DocumentFragment
+  import typings.std.Element
+  import typings.std.Pick
+  import typings.std.Text
+
   type AnimationHook[TElement] = js.Function1[/* fx */ Tween[TElement], Unit]
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
   type CoordinatesPartial = (Pick[Coordinates, left | top]) | StringDictionary[scala.Nothing]

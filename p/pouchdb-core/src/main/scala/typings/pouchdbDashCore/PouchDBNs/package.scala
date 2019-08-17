@@ -1,11 +1,12 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.pouchdbDashCoreStrings.`This should be passed to PouchDBDOTplugin()`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PouchDBNs {
+  import typings.pouchdbDashCore.pouchdbDashCoreStrings.`This should be passed to PouchDBDOTplugin()`
+
   /**
     * Pass this to `PouchDB.plugin()`.
     */

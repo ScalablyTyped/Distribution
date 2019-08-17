@@ -1,15 +1,16 @@
 package typings.atTensorflowTfjsDashLayers
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
-import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+  import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
+  import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
+
   type Kwargs = StringDictionary[js.Any]
   type LossOrMetricFn = js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]]
   type RegularizerFn = js.Function0[Scalar]

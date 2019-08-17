@@ -1,12 +1,13 @@
 package typings.reactDashTooltip
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashTooltipMod {
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactNode
+
   /**
     * Adding `| string` seems strange but multiple events joined by a space are allowable, i.e. "click focus", so
     * at least using *EventMap will give developers some type hinting, but there's no way we can reliably

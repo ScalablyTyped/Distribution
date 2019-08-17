@@ -1,18 +1,19 @@
 package typings.typescriptDashCompare
 
-import typings.typescriptDashCompare.typescriptDashCompareMod.CompareNs.Options
-import typings.typescriptDashCompare.typescriptDashCompareNumbers.`0`
-import typings.typescriptDashCompare.typescriptDashCompareNumbers.`1`
-import typings.typescriptDashCompare.typescriptDashCompareNumbers.`true`
-import typings.typescriptDashLogic.typescriptDashLogicMod.And
-import typings.typescriptDashLogic.typescriptDashLogicMod.If
-import typings.typescriptDashLogic.typescriptDashLogicMod.Not
-import typings.typescriptDashLogic.typescriptDashLogicMod.Or
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typescriptDashCompareMod {
+  import typings.typescriptDashCompare.typescriptDashCompareMod.CompareNs.Options
+  import typings.typescriptDashCompare.typescriptDashCompareNumbers.`0`
+  import typings.typescriptDashCompare.typescriptDashCompareNumbers.`1`
+  import typings.typescriptDashCompare.typescriptDashCompareNumbers.`true`
+  import typings.typescriptDashLogic.typescriptDashLogicMod.And
+  import typings.typescriptDashLogic.typescriptDashLogicMod.If
+  import typings.typescriptDashLogic.typescriptDashLogicMod.Not
+  import typings.typescriptDashLogic.typescriptDashLogicMod.Or
+
   type Any[Type] = And[
     typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `0`], 
     typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `1`]

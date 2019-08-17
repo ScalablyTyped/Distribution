@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "object-merge"
-version := "2.5-dt-20180215Z-788b15"
-scalaVersion := "2.12.8"
+version := "2.5-dt-20180215Z-4bf137"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,11 +1,12 @@
 package typings.atProtobufjsCodegen
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atProtobufjsCodegenMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /**
     * Appends code to the function's body.
     * @param [formatStringOrScope] Format string or, to finish the function, an object of additional scope variables, if any

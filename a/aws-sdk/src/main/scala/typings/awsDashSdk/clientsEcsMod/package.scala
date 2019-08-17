@@ -1,20 +1,21 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.APPMESH
-import typings.awsDashSdk.awsDashSdkStrings.GPU
-import typings.awsDashSdk.awsDashSdkStrings.PERCENT
-import typings.awsDashSdk.awsDashSdkStrings.TAGS
-import typings.awsDashSdk.awsDashSdkStrings.`container-instance`
-import typings.awsDashSdk.awsDashSdkStrings.containerInsights
-import typings.awsDashSdk.awsDashSdkStrings.memberOf
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEcsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.APPMESH
+  import typings.awsDashSdk.awsDashSdkStrings.GPU
+  import typings.awsDashSdk.awsDashSdkStrings.PERCENT
+  import typings.awsDashSdk.awsDashSdkStrings.TAGS
+  import typings.awsDashSdk.awsDashSdkStrings.`container-instance`
+  import typings.awsDashSdk.awsDashSdkStrings.containerInsights
+  import typings.awsDashSdk.awsDashSdkStrings.memberOf
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PENDING
     - typings.awsDashSdk.awsDashSdkStrings.STAGING

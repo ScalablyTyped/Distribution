@@ -1,14 +1,15 @@
 package typings.protobufjs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.rpcNs.ServiceMethod
-import typings.std.Error
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object protobufjsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.protobufjs.protobufjsMod.rpcNs.ServiceMethod
+  import typings.std.Error
+  import typings.std.Uint8Array
+
   type Buffer = Uint8Array
   /**
     * Appends code to the function's body or finishes generation.

@@ -1,13 +1,14 @@
 package typings.jsonwebtoken
 
-import typings.jsonwebtoken.Anon_Key
-import typings.node.Buffer
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsonwebtokenMod {
+  import typings.jsonwebtoken.Anon_Key
+  import typings.node.Buffer
+  import typings.std.Error
+
   type GetPublicKeyOrSecret = js.Function2[/* header */ JwtHeader, /* callback */ SigningKeyCallback, Unit]
   type Secret = String | Buffer | Anon_Key
   type SignCallback = js.Function2[/* err */ Error, /* encoded */ String, Unit]

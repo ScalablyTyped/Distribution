@@ -1,11 +1,12 @@
 package typings.semanticDashUiDashSearch.SemanticUINs
 
-import typings.semanticDashUiDashSearch.SemanticUINs.SearchNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SearchNs {
+  import typings.semanticDashUiDashSearch.SemanticUINs.SearchNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type ErrorSettings = typings.semanticDashUiDashSearch.SemanticUINs.SearchNs.ErrorSettingsNs.Param
   type FieldsSettings = typings.semanticDashUiDashSearch.SemanticUINs.SearchNs.FieldsSettingsNs.Param

@@ -1,28 +1,29 @@
 package typings.reactDashBootstrapDashTypeahead
 
-import typings.react.reactMod.HTMLProps
-import typings.react.reactMod.InputHTMLAttributes
-import typings.reactDashBootstrapDashTypeahead.Anon_CustomOption
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.align
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.className
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.dropup
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.flip
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.input
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.li
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onBlur
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onChange
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onFocus
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onKeyDown
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuHide
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuShow
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuToggle
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashBootstrapDashTypeaheadMod {
+  import typings.react.reactMod.HTMLProps
+  import typings.react.reactMod.InputHTMLAttributes
+  import typings.reactDashBootstrapDashTypeahead.Anon_CustomOption
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.align
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.className
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.dropup
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.flip
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.input
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.li
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onBlur
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onChange
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onFocus
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onKeyDown
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuHide
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuShow
+  import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onMenuToggle
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type AllTypeaheadOwnAndInjectedProps[T /* <: TypeaheadModel */] = TypeaheadProps[T] with TypeaheadContainerProps[T]
   type HintedInputContext[T /* <: TypeaheadModel */] = Pick[TypeaheadContext[T], HintedInputContextKeys]
   type InputProps = Omit[InputHTMLAttributes[input], onBlur | onChange | onFocus | onKeyDown]

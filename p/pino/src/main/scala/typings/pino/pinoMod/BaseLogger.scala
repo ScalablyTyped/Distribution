@@ -1,7 +1,7 @@
 package typings.pino.pinoMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pino.Anon_KeyLevel
+import typings.pino.Anon_Key
 import typings.pino.pinoStrings.`level-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -132,7 +132,7 @@ trait BaseLogger
     * @param bindings: an object of key-value pairs to include in log lines as properties.
     * @returns a child logger instance.
     */
-  def child(bindings: Anon_KeyLevel): Logger = js.native
+  def child(bindings: Anon_Key): Logger = js.native
   /**
     * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.

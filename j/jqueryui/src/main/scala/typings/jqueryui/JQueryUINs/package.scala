@@ -1,12 +1,13 @@
 package typings.jqueryui
 
-import typings.jquery.JQueryEventObject
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQueryUINs {
+  import typings.jquery.JQueryEventObject
+  import typings.std.Event
+
   type AccordionEvent = js.Function2[/* event */ Event, /* ui */ AccordionUIParams, Unit]
   type AutocompleteEvent = js.Function2[/* event */ Event, /* ui */ AutocompleteUIParams, Unit]
   type DialogEvent = js.Function2[/* event */ Event, /* ui */ DialogUIParams, Unit]

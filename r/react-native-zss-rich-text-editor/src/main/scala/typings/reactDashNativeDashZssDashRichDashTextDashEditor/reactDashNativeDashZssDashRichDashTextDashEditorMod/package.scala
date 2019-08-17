@@ -1,17 +1,18 @@
 package typings.reactDashNativeDashZssDashRichDashTextDashEditor
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashNative.reactDashNativeMod.ImageProps
-import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
-import typings.reactDashNative.reactDashNativeMod.ImageStyle
-import typings.reactDashNative.reactDashNativeMod.StyleProp
-import typings.reactDashNative.reactDashNativeMod.TextStyle
-import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashZssDashRichDashTextDashEditorMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.reactDashNative.reactDashNativeMod.ImageProps
+  import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
+  import typings.reactDashNative.reactDashNativeMod.ImageStyle
+  import typings.reactDashNative.reactDashNativeMod.StyleProp
+  import typings.reactDashNative.reactDashNativeMod.TextStyle
+  import typings.reactDashNative.reactDashNativeMod.ViewStyle
+
   type ColorHandler = js.Function1[/* color */ String, Unit]
   type ContentGetHandler = js.Function0[js.Promise[String]]
   type ContentSetHandler = js.Function1[/* html */ String, Unit]

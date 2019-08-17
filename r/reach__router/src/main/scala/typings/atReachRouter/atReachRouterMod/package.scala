@@ -1,21 +1,22 @@
 package typings.atReachRouter
 
-import typings.atReachRouter.Anon_Default
-import typings.atReachRouter.Anon_State
-import typings.atReachRouter.atReachRouterStrings.href
-import typings.history.historyMod.LocationState
-import typings.react.reactMod.AnchorHTMLAttributes
-import typings.react.reactMod.DetailedHTMLProps
-import typings.react.reactMod.ReactNode
-import typings.std.Exclude
-import typings.std.HTMLAnchorElement
-import typings.std.Partial
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atReachRouterMod {
+  import typings.atReachRouter.Anon_Default
+  import typings.atReachRouter.Anon_State
+  import typings.atReachRouter.atReachRouterStrings.href
+  import typings.history.historyMod.LocationState
+  import typings.react.reactMod.AnchorHTMLAttributes
+  import typings.react.reactMod.DetailedHTMLProps
+  import typings.react.reactMod.ReactNode
+  import typings.std.Exclude
+  import typings.std.HTMLAnchorElement
+  import typings.std.Partial
+  import typings.std.Pick
+
   type AnchorProps = Omit[
     DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
     href

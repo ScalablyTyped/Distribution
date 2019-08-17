@@ -1,15 +1,16 @@
 package typings.atGoogleDashCloudCommon
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atGoogleDashCloudCommon.Anon_ReqOpts
-import typings.atGoogleDashCloudCommon.buildSrcUtilMod.ApiError
-import typings.std.Error
-import typings.teenyDashRequest.teenyDashRequestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcServiceDashObjectMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atGoogleDashCloudCommon.Anon_ReqOpts
+  import typings.atGoogleDashCloudCommon.buildSrcUtilMod.ApiError
+  import typings.std.Error
+  import typings.teenyDashRequest.teenyDashRequestMod.Response
+
   type CreateCallback[T] = js.Function3[
     /* err */ ApiError | Null, 
     /* instance */ js.UndefOr[T | Null], 

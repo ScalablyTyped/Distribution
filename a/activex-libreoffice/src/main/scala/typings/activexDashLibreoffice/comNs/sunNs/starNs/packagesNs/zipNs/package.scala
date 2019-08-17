@@ -1,12 +1,13 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs.packagesNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zipNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.ioNs.IOException
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.Exception
+
   /**
     * used to indicate that a ZIP exception has occurred.
     *

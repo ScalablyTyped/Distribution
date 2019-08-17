@@ -1,14 +1,15 @@
 package typings.vscodeDashJsonrpc
 
-import typings.vscodeDashJsonrpc.Thenable
-import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
-import typings.vscodeDashJsonrpc.libLinkedMapMod.LinkedMap
-import typings.vscodeDashJsonrpc.libMessagesMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashJsonrpcMod {
+  import typings.vscodeDashJsonrpc.Thenable
+  import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
+  import typings.vscodeDashJsonrpc.libLinkedMapMod.LinkedMap
+  import typings.vscodeDashJsonrpc.libMessagesMod.Message
+
   type GenericNotificationHandler = js.Function1[/* repeated */ js.Any, Unit]
   type GenericRequestHandler[R, E] = js.Function1[/* repeated */ js.Any, HandlerResult[R, E]]
   type HandlerResult[R, E] = R | typings.vscodeDashJsonrpc.libMessagesMod.ResponseError[E] | (Thenable[R | typings.vscodeDashJsonrpc.libMessagesMod.ResponseError[E]])

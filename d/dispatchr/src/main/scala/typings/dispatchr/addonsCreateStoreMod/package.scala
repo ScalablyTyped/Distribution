@@ -1,16 +1,17 @@
 package typings.dispatchr
 
-import typings.dispatchr.dispatchrMod.Store
-import typings.dispatchr.dispatchrStrings.handlers
-import typings.dispatchr.dispatchrStrings.mixins
-import typings.dispatchr.dispatchrStrings.statics
-import typings.dispatchr.dispatchrStrings.storeName
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object addonsCreateStoreMod {
+  import typings.dispatchr.dispatchrMod.Store
+  import typings.dispatchr.dispatchrStrings.handlers
+  import typings.dispatchr.dispatchrStrings.mixins
+  import typings.dispatchr.dispatchrStrings.statics
+  import typings.dispatchr.dispatchrStrings.storeName
+  import typings.std.Pick
+
   type Omit[T, K /* <: String */] = Pick[
     T, 
     /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any

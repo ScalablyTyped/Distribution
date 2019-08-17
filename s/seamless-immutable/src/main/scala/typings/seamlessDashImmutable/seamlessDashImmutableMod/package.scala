@@ -1,19 +1,20 @@
 package typings.seamlessDashImmutable
 
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Additions
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Overrides
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.ReadOnlyIndexer
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Remaining
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableNs.MakeImmutable
-import typings.std.Exclude
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object seamlessDashImmutableMod {
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Additions
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Overrides
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.ReadOnlyIndexer
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableArrayNs.Remaining
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.ImmutableNs.MakeImmutable
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? object}
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias seamless-immutable.seamless-immutable.DeepPartial<T[P]> * / object}
     */ typings.seamlessDashImmutable.seamlessDashImmutableStrings.DeepPartial with js.Any
   type Immutable[T, O /* <: js.Object */] = (MakeImmutable[T, O]) | (js.Promise[MakeImmutable[js.Any, O]])
   /** An ImmutableArray provides read-only access to the array elements, and provides functions (such as `map()`) that return immutable data structures. */

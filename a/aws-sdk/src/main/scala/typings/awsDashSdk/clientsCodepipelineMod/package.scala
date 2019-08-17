@@ -1,17 +1,18 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.FAILED_ACTIONS
-import typings.awsDashSdk.awsDashSdkStrings.KMS
-import typings.awsDashSdk.awsDashSdkStrings.S3
-import typings.awsDashSdk.awsDashSdkStrings.Schedule
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCodepipelineMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.FAILED_ACTIONS
+  import typings.awsDashSdk.awsDashSdkStrings.KMS
+  import typings.awsDashSdk.awsDashSdkStrings.S3
+  import typings.awsDashSdk.awsDashSdkStrings.Schedule
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AWSRegionName = String
   type AccessKeyId = String
   type AccountId = String

@@ -1,19 +1,20 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexReplace
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.XTableColumns
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.XTableRows
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XSortable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object textNs {
+  import typings.activexDashLibreoffice.LibreOfficeNs.SeqEquiv
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XEnumeration
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XIndexReplace
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.containerNs.XNameAccess
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.frameNs.XDispatchProvider
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.XTableColumns
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.tableNs.XTableRows
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.utilNs.XSortable
+
   /** provides access to groups of text blocks. */
   type AutoTextContainer = XAutoTextContainer2
   /** provides access to language dependent numbering types and supports formatting of those numberings. */

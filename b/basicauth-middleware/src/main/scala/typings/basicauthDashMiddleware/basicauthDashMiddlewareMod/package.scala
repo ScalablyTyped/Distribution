@@ -1,11 +1,12 @@
 package typings.basicauthDashMiddleware
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object basicauthDashMiddlewareMod {
+  import typings.std.Error
+
   type CheckFunction = checkFunctionSync | checkFunctionPromise | checkFunctionCallback
   type checkFunctionCallback = js.Function3[
     /* username */ String, 

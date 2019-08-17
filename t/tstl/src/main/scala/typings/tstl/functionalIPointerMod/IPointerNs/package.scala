@@ -1,11 +1,12 @@
 package typings.tstl.functionalIPointerMod
 
-import typings.tstl.functionalIPointerMod.IPointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object IPointerNs {
+  import typings.tstl.functionalIPointerMod.IPointer
+
   /**
     * Inference of Value Type.
     */

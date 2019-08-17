@@ -1,15 +1,16 @@
 package typings
 
-import typings.std.MouseEvent
-import typings.std.Touch
-import typings.std.TouchEvent
-import typings.std.VRDisplay
-import typings.std.VRDisplayCapabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object playcanvas {
+  import typings.std.MouseEvent
+  import typings.std.Touch
+  import typings.std.TouchEvent
+  import typings.std.VRDisplay
+  import typings.std.VRDisplayCapabilities
+
   type BrowserMouseEvent = MouseEvent
   type BrowserTouch = Touch
   type BrowserTouchEvent = TouchEvent

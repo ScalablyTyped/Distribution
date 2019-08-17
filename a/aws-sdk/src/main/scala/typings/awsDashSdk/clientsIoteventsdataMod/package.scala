@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsIoteventsdataMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
   type BatchUpdateDetectorErrorEntries = js.Array[BatchUpdateDetectorErrorEntry]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions

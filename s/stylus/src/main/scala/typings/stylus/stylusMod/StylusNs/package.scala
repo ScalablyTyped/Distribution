@@ -1,12 +1,13 @@
 package typings.stylus.stylusMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object StylusNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Error
+
   type Dictionary[T] = StringDictionary[T]
   type Middleware = js.Function3[
     /* req */ js.Any, 

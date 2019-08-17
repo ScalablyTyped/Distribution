@@ -1,11 +1,12 @@
 package typings.jsplumb
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsplumbMod {
+  import typings.std.Element
+
   type AnchorSpec = AnchorId | (js.Tuple2[AnchorId, AnchorOptions])
   type ConnectionId = String
   /* Rewritten from type alias, can be one of: 

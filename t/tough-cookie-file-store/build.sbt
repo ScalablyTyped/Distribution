@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "tough-cookie-file-store"
-version := "1.2-dt-20190402Z-dbdadd"
-scalaVersion := "2.12.8"
+version := "1.2-dt-20190402Z-c21f83"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-2c5a54")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-584a59")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

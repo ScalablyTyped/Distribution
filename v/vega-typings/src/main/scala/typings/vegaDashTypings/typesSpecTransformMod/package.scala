@@ -1,28 +1,29 @@
 package typings.vegaDashTypings
 
-import typings.vegaDashTypings.vegaDashTypingsStrings.cross
-import typings.vegaDashTypings.vegaDashTypingsStrings.crossfilter
-import typings.vegaDashTypings.vegaDashTypingsStrings.density
-import typings.vegaDashTypings.vegaDashTypingsStrings.force
-import typings.vegaDashTypings.vegaDashTypingsStrings.geopath
-import typings.vegaDashTypings.vegaDashTypingsStrings.linkpath
-import typings.vegaDashTypings.vegaDashTypingsStrings.nest
-import typings.vegaDashTypings.vegaDashTypingsStrings.pack
-import typings.vegaDashTypings.vegaDashTypingsStrings.partition
-import typings.vegaDashTypings.vegaDashTypingsStrings.pie
-import typings.vegaDashTypings.vegaDashTypingsStrings.project
-import typings.vegaDashTypings.vegaDashTypingsStrings.resolvefilter
-import typings.vegaDashTypings.vegaDashTypingsStrings.sequence
-import typings.vegaDashTypings.vegaDashTypingsStrings.stratify
-import typings.vegaDashTypings.vegaDashTypingsStrings.tree
-import typings.vegaDashTypings.vegaDashTypingsStrings.treelinks
-import typings.vegaDashTypings.vegaDashTypingsStrings.treemap
-import typings.vegaDashTypings.vegaDashTypingsStrings.voronoi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecTransformMod {
+  import typings.vegaDashTypings.vegaDashTypingsStrings.cross
+  import typings.vegaDashTypings.vegaDashTypingsStrings.crossfilter
+  import typings.vegaDashTypings.vegaDashTypingsStrings.density
+  import typings.vegaDashTypings.vegaDashTypingsStrings.force
+  import typings.vegaDashTypings.vegaDashTypingsStrings.geopath
+  import typings.vegaDashTypings.vegaDashTypingsStrings.linkpath
+  import typings.vegaDashTypings.vegaDashTypingsStrings.nest
+  import typings.vegaDashTypings.vegaDashTypingsStrings.pack
+  import typings.vegaDashTypings.vegaDashTypingsStrings.partition
+  import typings.vegaDashTypings.vegaDashTypingsStrings.pie
+  import typings.vegaDashTypings.vegaDashTypingsStrings.project
+  import typings.vegaDashTypings.vegaDashTypingsStrings.resolvefilter
+  import typings.vegaDashTypings.vegaDashTypingsStrings.sequence
+  import typings.vegaDashTypings.vegaDashTypingsStrings.stratify
+  import typings.vegaDashTypings.vegaDashTypingsStrings.tree
+  import typings.vegaDashTypings.vegaDashTypingsStrings.treelinks
+  import typings.vegaDashTypings.vegaDashTypingsStrings.treemap
+  import typings.vegaDashTypings.vegaDashTypingsStrings.voronoi
+
   /* Rewritten from type alias, can be one of: 
     - typings.vegaDashTypings.typesSpecTransformMod.AggregateTransform
     - typings.vegaDashTypings.typesSpecTransformMod.BinTransform

@@ -1,11 +1,12 @@
 package typings.sigmajs
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SigmaJsNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type GexfParser = js.Function3[
     /* target */ String, 
     /* sigma */ Sigma, 

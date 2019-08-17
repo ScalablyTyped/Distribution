@@ -1,11 +1,12 @@
 package typings.nodal
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodalMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type IAnyObject = StringDictionary[js.Any]
   type IArrInterface = StringDictionary[js.Array[String]]
   type ICalculations = StringDictionary[ICalculation]

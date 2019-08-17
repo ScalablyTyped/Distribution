@@ -1,11 +1,12 @@
 package typings.seneca
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object senecaMod {
+  import typings.std.Error
+
   type ActCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]
   type AddCallback[T] = js.Function2[
     /* msg */ MessagePayload[T], 

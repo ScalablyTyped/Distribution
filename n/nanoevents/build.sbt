@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nanoevents"
-version := "1.0-dt-20180811Z-56ab3e"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20180811Z-659863"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,13 +1,14 @@
 package typings.codemirror
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.codemirror.Anon_CodeMirrorPASS
-import typings.codemirror.codemirrorNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object codemirrorMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.codemirror.Anon_CodeMirrorPASS
+  import typings.codemirror.codemirrorNumbers.`false`
+
   /**
     * A function that calls the updateLintingCallback with any errors found during the linting process.
     */

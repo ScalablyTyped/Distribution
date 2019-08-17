@@ -1,14 +1,15 @@
 package typings.inquirer
 
-import typings.inquirer.Anon_IsFinal
-import typings.rxjs.rxjsMod.Observable
-import typings.std.Extract
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inquirerMod {
+  import typings.inquirer.Anon_IsFinal
+  import typings.rxjs.rxjsMod.Observable
+  import typings.std.Extract
+  import typings.std.Record
+
   /**
     * A set of answers.
     */

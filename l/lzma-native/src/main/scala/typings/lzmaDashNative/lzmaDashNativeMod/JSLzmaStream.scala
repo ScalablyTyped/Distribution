@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("lzma-native", "JSLzmaStream")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Stream.Transform * / any */ @JSImport("lzma-native", "JSLzmaStream")
 @js.native
 class JSLzmaStream protected () extends js.Object {
   def this(nativeStream: Stream, options: LzmaOptions) = this()

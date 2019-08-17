@@ -1,17 +1,18 @@
 package typings.downshift
 
-import typings.downshift.Anon_StateChangeTypes
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.HTMLProps
-import typings.react.reactMod.ReactNode
-import typings.std.HTMLLabelElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object downshiftMod {
+  import typings.downshift.Anon_StateChangeTypes
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.HTMLProps
+  import typings.react.reactMod.ReactNode
+  import typings.std.HTMLLabelElement
+  import typings.std.Partial
+
   type Callback = js.Function0[Unit]
   type ChildrenFunction[Item] = js.Function1[/* options */ ControllerStateAndHelpers[Item], ReactNode]
   type ControllerStateAndHelpers[Item] = DownshiftState[Item] with PropGetters[Item] with Actions[Item]

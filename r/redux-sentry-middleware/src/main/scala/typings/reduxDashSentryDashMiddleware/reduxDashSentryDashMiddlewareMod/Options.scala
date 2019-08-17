@@ -13,7 +13,7 @@ trait Options[T] extends js.Object {
   var getTags: js.UndefOr[
     js.Function1[
       /* state */ T, 
-      /* import warning: ImportType.apply Failed type conversion: any['tags'] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any
     ]
   ] = js.undefined
   var getUserContext: js.UndefOr[
@@ -32,7 +32,7 @@ object Options {
     breadcrumbCategory: String = null,
     breadcrumbDataFromAction: /* action */ Action[_] => _ = null,
     filterBreadcrumbActions: /* action */ Action[_] => Boolean = null,
-    getTags: /* state */ T => /* import warning: ImportType.apply Failed type conversion: any['tags'] */ js.Any = null,
+    getTags: /* state */ T => /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
     getUserContext: /* state */ T => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
     stateTransformer: /* state */ T => _ = null
   ): Options[T] = {

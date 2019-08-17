@@ -1,15 +1,16 @@
 package typings.mobxDashReact
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ClassicComponentClass
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mobxDashReactMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.ClassicComponentClass
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+  import typings.react.reactMod.StatelessComponent
+
   // Ideal implementation:
   // export function inject
   // (

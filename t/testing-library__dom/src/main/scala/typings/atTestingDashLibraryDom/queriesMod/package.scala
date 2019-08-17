@@ -1,15 +1,16 @@
 package typings.atTestingDashLibraryDom
 
-import typings.atTestingDashLibraryDom.matchesMod.Matcher
-import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
-import typings.atTestingDashLibraryDom.queryDashHelpersMod.SelectorMatcherOptions
-import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object queriesMod {
+  import typings.atTestingDashLibraryDom.matchesMod.Matcher
+  import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
+  import typings.atTestingDashLibraryDom.queryDashHelpersMod.SelectorMatcherOptions
+  import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
+  import typings.std.HTMLElement
+
   type AllByBoundAttribute = js.Function3[
     /* container */ HTMLElement, 
     /* id */ Matcher, 

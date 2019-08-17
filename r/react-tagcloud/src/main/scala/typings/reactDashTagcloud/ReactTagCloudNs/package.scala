@@ -1,12 +1,13 @@
 package typings.reactDashTagcloud
 
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ReactTagCloudNs {
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
+
   type RendererFunction = js.Function4[
     /* tag */ js.Any, 
     /* size */ Double, 

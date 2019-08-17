@@ -1,12 +1,13 @@
 package typings.ssh2DashStreams
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ssh2DashStreamsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.Buffer
+
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.ssh2DashStreams.ssh2DashStreamsMod.PublicKeyAuthMethodData

@@ -1,13 +1,14 @@
 package typings.vscodeDashLanguageserver
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.vscodeDashLanguageserver.libConfigurationMod.Configuration
-import typings.vscodeDashLanguageserver.libWorkspaceFoldersMod.WorkspaceFolders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashLanguageserverMod {
+  import org.scalablytyped.runtime.Instantiable0
+  import typings.vscodeDashLanguageserver.libConfigurationMod.Configuration
+  import typings.vscodeDashLanguageserver.libWorkspaceFoldersMod.WorkspaceFolders
+
   type ClientFeature[P] = Feature[RemoteClient, P]
   type ConsoleFeature[P] = Feature[RemoteConsole, P]
   type Feature[B, P] = js.Function1[/* Base */ Instantiable0[B], Instantiable0[B with P]]

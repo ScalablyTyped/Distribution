@@ -1,11 +1,12 @@
 package typings.semanticDashUiDashDropdown.SemanticUINs
 
-import typings.semanticDashUiDashDropdown.SemanticUINs.DropdownNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DropdownNs {
+  import typings.semanticDashUiDashDropdown.SemanticUINs.DropdownNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type DelaySettings = typings.semanticDashUiDashDropdown.SemanticUINs.DropdownNs.DelaySettingsNs.Param
   type ErrorSettings = typings.semanticDashUiDashDropdown.SemanticUINs.DropdownNs.ErrorSettingsNs.Param

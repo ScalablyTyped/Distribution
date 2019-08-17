@@ -1,13 +1,14 @@
 package typings.atIonicCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.CustomEvent
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesInterfaceMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.CustomEvent
+  import typings.std.HTMLElement
+
   type BackButtonEvent = CustomEvent[BackButtonEventDetail]
   type Color = PredefinedColors | String
   type ComponentProps[T] = StringDictionary[js.Any]

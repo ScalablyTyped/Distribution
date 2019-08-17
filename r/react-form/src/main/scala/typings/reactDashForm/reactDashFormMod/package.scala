@@ -1,14 +1,15 @@
 package typings.reactDashForm
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.reactDashForm.Anon_Label
-import typings.reactDashForm.reactDashFormNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashFormMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.reactDashForm.Anon_Label
+  import typings.reactDashForm.reactDashFormNumbers.`false`
+
   type FormError = js.UndefOr[String]
   type FormErrors = StringDictionary[FormError]
   type FormValue = js.Any

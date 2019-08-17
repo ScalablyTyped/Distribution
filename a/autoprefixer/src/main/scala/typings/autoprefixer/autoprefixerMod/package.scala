@@ -1,10 +1,11 @@
 package typings.autoprefixer
 
-import typings.postcss.postcssMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object autoprefixerMod {
+  import typings.postcss.postcssMod.Plugin
+
   type Autoprefixer = Plugin[Options]
 }

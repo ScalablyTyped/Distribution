@@ -1,11 +1,12 @@
 package typings.elasticDashApmDashNode.elasticDashApmDashNodeMod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AwsLambdaNs {
+  import typings.std.Error
+
   type Callback[TResult] = js.Function2[
     /* error */ js.UndefOr[Error | Null | String], 
     /* result */ js.UndefOr[TResult], 

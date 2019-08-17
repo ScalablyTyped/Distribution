@@ -1,21 +1,22 @@
 package typings.seamlessDashImmutable.seamlessDashImmutableMod
 
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.Omit
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.copyWithin
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.fill
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.pop
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.push
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.reverse
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.shift
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.sort
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.splice
-import typings.seamlessDashImmutable.seamlessDashImmutableStrings.unshift
-import typings.std.Extract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ImmutableArrayNs {
+  import typings.seamlessDashImmutable.seamlessDashImmutableMod.Omit
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.copyWithin
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.fill
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.pop
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.push
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.reverse
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.shift
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.sort
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.splice
+  import typings.seamlessDashImmutable.seamlessDashImmutableStrings.unshift
+  import typings.std.Extract
+
   /** NOTE: These methods mutate data, but seamless-immutable does not ban them. We will ban them in our type definitions. */
   type AdditionalMutatingArrayMethods = Extract[js.Array[String], copyWithin | fill]
   /** These methods are banned by seamless-immutable. */

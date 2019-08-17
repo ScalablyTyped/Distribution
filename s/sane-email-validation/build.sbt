@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "sane-email-validation"
-version := "1.1-dt-20180731Z-4401d1"
-scalaVersion := "2.12.8"
+version := "1.1-dt-20180731Z-0b6a40"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

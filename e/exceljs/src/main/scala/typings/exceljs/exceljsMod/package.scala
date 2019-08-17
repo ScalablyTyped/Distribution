@@ -1,13 +1,14 @@
 package typings.exceljs
 
-import typings.exceljs.Anon_From
-import typings.exceljs.exceljsNumbers.`1`
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object exceljsMod {
+  import typings.exceljs.Anon_From
+  import typings.exceljs.exceljsNumbers.`1`
+  import typings.std.Date
+
   type AutoFilter = String | Anon_From
   /* Rewritten from type alias, can be one of: 
     - scala.Null

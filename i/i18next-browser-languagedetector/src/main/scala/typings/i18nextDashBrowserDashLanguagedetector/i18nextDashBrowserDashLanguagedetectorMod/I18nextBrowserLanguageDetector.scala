@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.LanguageDetectorModule * / any */ @js.native
 trait I18nextBrowserLanguageDetector extends js.Object {
   var detectors: StringDictionary[js.Any] = js.native
   var i18nOptions: js.Any = js.native

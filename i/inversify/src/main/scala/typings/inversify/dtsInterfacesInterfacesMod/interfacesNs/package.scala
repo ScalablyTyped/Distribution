@@ -1,12 +1,13 @@
 package typings.inversify.dtsInterfacesInterfacesMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfacesNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Map
+
   type AsyncContainerModuleCallBack = js.Function4[
     /* bind */ Bind, 
     /* unbind */ Unbind, 

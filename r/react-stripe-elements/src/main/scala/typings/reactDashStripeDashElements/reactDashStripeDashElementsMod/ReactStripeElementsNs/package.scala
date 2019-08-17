@@ -1,14 +1,15 @@
 package typings.reactDashStripeDashElements.reactDashStripeDashElementsMod
 
-import typings.reactDashStripeDashElements.Anon_ApiKey
-import typings.reactDashStripeDashElements.Anon_Error
-import typings.reactDashStripeDashElements.Anon_Stripe
-import typings.stripeDashV3.stripeNs.elementsNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ReactStripeElementsNs {
+  import typings.reactDashStripeDashElements.Anon_ApiKey
+  import typings.reactDashStripeDashElements.Anon_Error
+  import typings.reactDashStripeDashElements.Anon_Stripe
+  import typings.stripeDashV3.stripeNs.elementsNs.Element
+
   type ElementChangeResponse = typings.stripeDashV3.stripeNs.elementsNs.ElementChangeResponse
   type ElementsOptions = typings.stripeDashV3.stripeNs.elementsNs.ElementsOptions
   type HTMLStripeElement = Element

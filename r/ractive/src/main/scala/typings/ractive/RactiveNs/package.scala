@@ -1,13 +1,14 @@
 package typings.ractive
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.ractive.Anon_Args
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object RactiveNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.ractive.Anon_Args
+  import typings.std.HTMLElement
+
   type AdaptorPlugin = js.Object
   type AdaptorPlugins = StringDictionary[AdaptorPlugin]
   type ComponentPlugin = Static

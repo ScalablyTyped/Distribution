@@ -1,12 +1,13 @@
 package typings.lasso
 
-import typings.lasso.libLassoPageResultMod.LassoPageResult
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libLassoMod {
+  import typings.lasso.libLassoPageResultMod.LassoPageResult
+  import typings.std.Error
+
   type Callback = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], js.Any]
   type LassoPage = js.Function2[
     /* options */ PageConfig, 

@@ -1,12 +1,13 @@
 package typings.sharedb
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.sharedb.sharedbNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sharedbMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.sharedb.sharedbNumbers.`true`
+
   type AddNumOp = typings.sharedb.libSharedbMod.AddNumOp
   type Doc = typings.sharedb.libSharedbMod.Doc
   type Error = typings.sharedb.libSharedbMod.Error

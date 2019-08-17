@@ -1,11 +1,12 @@
 package typings.burns
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object burnsMod {
+  import typings.std.Record
+
   /**
     * Type Alias for event handlers
     */

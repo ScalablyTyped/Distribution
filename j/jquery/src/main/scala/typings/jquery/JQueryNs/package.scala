@@ -1,25 +1,26 @@
 package typings.jquery
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.Anon_0
-import typings.jquery.jqueryStrings.get
-import typings.jquery.jqueryStrings.left
-import typings.jquery.jqueryStrings.set
-import typings.jquery.jqueryStrings.top
-import typings.std.Comment
-import typings.std.DocumentFragment
-import typings.std.Element
-import typings.std.EventTarget
-import typings.std.HTMLAllCollection
-import typings.std.HTMLElement
-import typings.std.Partial
-import typings.std.Pick
-import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQueryNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.jquery.Anon_0
+  import typings.jquery.jqueryStrings.get
+  import typings.jquery.jqueryStrings.left
+  import typings.jquery.jqueryStrings.set
+  import typings.jquery.jqueryStrings.top
+  import typings.std.Comment
+  import typings.std.DocumentFragment
+  import typings.std.Element
+  import typings.std.EventTarget
+  import typings.std.HTMLAllCollection
+  import typings.std.HTMLElement
+  import typings.std.Partial
+  import typings.std.Pick
+  import typings.std.Text
+
   /**
     * @deprecated ​ Deprecated since 1.8. Use \`{@link Tween.propHooks jQuery.Tween.propHooks}\`.
     *

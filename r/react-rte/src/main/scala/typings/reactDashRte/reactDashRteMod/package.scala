@@ -1,16 +1,17 @@
 package typings.reactDashRte
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.draftDashJs.draftDashJsMod.ContentBlock
-import typings.draftDashJs.draftDashJsMod.EditorState
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactNode
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRteMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.draftDashJs.draftDashJsMod.ContentBlock
+  import typings.draftDashJs.draftDashJsMod.EditorState
+  import typings.react.reactMod.Component
+  import typings.react.reactMod.ReactNode
+  import typings.std.Element
+
   type BlockRenderer = js.Function1[/* block */ ContentBlock, String]
   type BlockStyleFn = js.Function1[/* block */ ContentBlock, RenderConfig]
   type ChangeHandler = js.Function1[/* value */ EditorValue, js.Any]

@@ -1,12 +1,13 @@
 package typings.chromeDashApps.chromeNs
 
-import typings.chromeDashApps.chromeDashAppsStrings.declarativeContentDOTPageStateMatcher
-import typings.chromeDashApps.chromeNs.eventsNs.Rule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webViewRequestNs {
+  import typings.chromeDashApps.chromeDashAppsStrings.declarativeContentDOTPageStateMatcher
+  import typings.chromeDashApps.chromeNs.eventsNs.Rule
+
   type DeclarativeWebRequestConditionsList = declarativeContentDOTPageStateMatcher
   /**
     * Fired when a message is sent via **declarativeWebRequest.SendMessageToExtension**

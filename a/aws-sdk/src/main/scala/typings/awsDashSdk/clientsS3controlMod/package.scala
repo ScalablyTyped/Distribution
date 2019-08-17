@@ -1,15 +1,16 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.Report_CSV_20180820
-import typings.awsDashSdk.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsS3controlMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.Report_CSV_20180820
+  import typings.awsDashSdk.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type AccountId = String
   type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with UseDualstackConfigOptions with ClientApiVersions

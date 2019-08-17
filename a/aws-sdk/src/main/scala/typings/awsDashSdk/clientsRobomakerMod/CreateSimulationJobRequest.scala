@@ -10,6 +10,10 @@ trait CreateSimulationJobRequest extends js.Object {
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   /**
+    * The data sources for the simulation job.  There is a limit of 100 files and a combined size of 25GB for all DataSourceConfig objects.  
+    */
+  var dataSources: js.UndefOr[DataSourceConfigs] = js.undefined
+  /**
     * The failure behavior the simulation job.  Continue  Restart the simulation job in the same host instance.  Fail  Stop the simulation job and terminate the instance.  
     */
   var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
@@ -17,6 +21,10 @@ trait CreateSimulationJobRequest extends js.Object {
     * The IAM role name that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. 
     */
   var iamRole: IamRole
+  /**
+    * The logging configuration.
+    */
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   /**
     * The maximum simulation job duration in seconds (up to 14 days or 1,209,600 seconds. When maxJobDurationInSeconds is reached, the simulation job will status will transition to Completed.
     */
@@ -49,7 +57,9 @@ object CreateSimulationJobRequest {
     iamRole: IamRole,
     maxJobDurationInSeconds: JobDuration,
     clientRequestToken: ClientRequestToken = null,
+    dataSources: DataSourceConfigs = null,
     failureBehavior: FailureBehavior = null,
+    loggingConfig: LoggingConfig = null,
     outputLocation: OutputLocation = null,
     robotApplications: RobotApplicationConfigs = null,
     simulationApplications: SimulationApplicationConfigs = null,
@@ -58,7 +68,9 @@ object CreateSimulationJobRequest {
   ): CreateSimulationJobRequest = {
     val __obj = js.Dynamic.literal(iamRole = iamRole, maxJobDurationInSeconds = maxJobDurationInSeconds)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
+    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
     if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
     if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation)
     if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications)
     if (simulationApplications != null) __obj.updateDynamic("simulationApplications")(simulationApplications)

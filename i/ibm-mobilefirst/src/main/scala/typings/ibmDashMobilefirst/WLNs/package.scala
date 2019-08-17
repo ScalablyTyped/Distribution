@@ -1,11 +1,12 @@
 package typings.ibmDashMobilefirst
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WLNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Filter = StringDictionary[String]
   type Headers = StringDictionary[String]
   type LoggerCallback = js.Function3[

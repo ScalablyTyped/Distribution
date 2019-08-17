@@ -1,12 +1,13 @@
 package typings.qlik
 
-import typings.jquery.JQuery
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object qlikMod {
+  import typings.jquery.JQuery
+  import typings.std.HTMLElement
+
   type CustomPropertyOptions = js.Array[CustomPropertyOption] | js.Function0[js.Array[CustomPropertyOption]]
   type Global = js.Any
   type NxCellRows = js.Array[NxCell]

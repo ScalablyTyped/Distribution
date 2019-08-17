@@ -1,12 +1,13 @@
 package typings.atGoogleDashCloudStorage
 
-import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcAclMod {
+  import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
+  import typings.std.Error
+
   type AddAclCallback = js.Function3[
     /* err */ Error | Null, 
     /* acl */ js.UndefOr[AccessControlObject | Null], 

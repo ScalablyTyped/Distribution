@@ -1,12 +1,13 @@
 package typings.atPollyjsCore
 
-import typings.atPollyjsCore.atPollyjsCoreStrings.error
-import typings.atPollyjsCore.atPollyjsCoreStrings.request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atPollyjsCoreMod {
+  import typings.atPollyjsCore.atPollyjsCoreStrings.error
+  import typings.atPollyjsCore.atPollyjsCoreStrings.request
+
   type ErrorEventListener = js.Function2[/* req */ Request, /* error */ js.Any, EventListenerResponse]
   type ErrorRouteEvent = error
   type EventListenerResponse = js.Any

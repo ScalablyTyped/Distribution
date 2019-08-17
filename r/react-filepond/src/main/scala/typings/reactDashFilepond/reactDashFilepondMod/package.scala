@@ -1,13 +1,14 @@
 package typings.reactDashFilepond
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashFilepond.Anon_LastModified
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashFilepondMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.reactDashFilepond.Anon_LastModified
+  import typings.std.Blob
+
   // Note that this duplicates the JS File type declaration, but is necessary
   // to avoid duplicating the name 'File' in this module
   // see: https://developer.mozilla.org/en-US/docs/Web/API/File

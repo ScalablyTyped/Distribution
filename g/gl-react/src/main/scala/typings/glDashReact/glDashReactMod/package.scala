@@ -1,11 +1,12 @@
 package typings.glDashReact
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object glDashReactMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type ShadersSheet = StringDictionary[ShaderIdentifier]
   type Vec2 = js.Tuple2[Double, Double]
   type Vec4 = js.Tuple4[Double, Double, Double, Double]

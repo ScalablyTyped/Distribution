@@ -1,14 +1,15 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.awsDashSdkStrings.EBS_SNAPSHOT_MANAGEMENT
-import typings.awsDashSdk.awsDashSdkStrings.HOURS
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDlmMod {
+  import typings.awsDashSdk.awsDashSdkStrings.EBS_SNAPSHOT_MANAGEMENT
+  import typings.awsDashSdk.awsDashSdkStrings.HOURS
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
+
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type CopyTags = Boolean
   type Count = Double

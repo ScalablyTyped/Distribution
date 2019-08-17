@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "echarts"
-version := "4.1.0-dt-20190801Z-0c6981"
-scalaVersion := "2.12.8"
+version := "4.1.0-dt-20190801Z-67f5ec"
+scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-65dbfc",
-  "org.scalablytyped" %%% "zrender" % "4.0-dt-20181107Z-0366b3")
+  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "zrender" % "4.0-dt-20181107Z-dfc55b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

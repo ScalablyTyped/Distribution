@@ -1,17 +1,18 @@
 package typings.atTensorflowTfjsDashCore
 
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R0
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R1
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTensorMod {
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R0
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R1
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5
+  import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R6
+
   type DataId = js.Object
   type Scalar = Tensor[R0]
   type Tensor1D = Tensor[R1]

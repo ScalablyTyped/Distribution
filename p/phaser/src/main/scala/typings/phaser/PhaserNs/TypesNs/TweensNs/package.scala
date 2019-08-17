@@ -1,13 +1,14 @@
 package typings.phaser.PhaserNs.TypesNs
 
-import typings.phaser.PhaserNs.TweensNs.Timeline
-import typings.phaser.PhaserNs.TweensNs.Tween
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object TweensNs {
+  import typings.phaser.PhaserNs.TweensNs.Timeline
+  import typings.phaser.PhaserNs.TweensNs.Tween
+  import typings.phaser.integer
+
   /**
     * A Tween Event.
     */

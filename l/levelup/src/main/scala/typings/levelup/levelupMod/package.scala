@@ -1,14 +1,15 @@
 package typings.levelup
 
-import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractGetOptions
-import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractOptions
-import typings.abstractDashLeveldown.abstractDashLeveldownMod.ErrorCallback
-import typings.abstractDashLeveldown.abstractDashLeveldownMod.ErrorValueCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object levelupMod {
+  import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractGetOptions
+  import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractOptions
+  import typings.abstractDashLeveldown.abstractDashLeveldownMod.ErrorCallback
+  import typings.abstractDashLeveldown.abstractDashLeveldownMod.ErrorValueCallback
+
   type InferDBDel[DB] = LevelUpDel[js.Any, AbstractOptions | js.Any]
   type InferDBGet[DB] = LevelUpGet[js.Any, js.Any, AbstractGetOptions | js.Any]
   type InferDBPut[DB] = LevelUpPut[js.Any, js.Any, AbstractOptions | js.Any]

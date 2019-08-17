@@ -1,12 +1,13 @@
 package typings.reduxDashThunk
 
-import typings.redux.reduxMod.Action
-import typings.redux.reduxMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashThunkMod {
+  import typings.redux.reduxMod.Action
+  import typings.redux.reduxMod.Middleware
+
   type ThunkAction[R, S, E, A /* <: Action[_] */] = js.Function3[
     /* dispatch */ ThunkDispatch[S, E, A], 
     /* getState */ js.Function0[S], 

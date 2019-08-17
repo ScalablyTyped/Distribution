@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.BackendModule<BackendOptions> * / any */ @js.native
 trait I18NextXhrBackend extends js.Object {
   var options: BackendOptions = js.native
   var services: js.Any = js.native

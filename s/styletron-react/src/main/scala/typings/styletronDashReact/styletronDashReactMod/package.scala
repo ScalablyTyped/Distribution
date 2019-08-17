@@ -1,17 +1,18 @@
 package typings.styletronDashReact
 
-import typings.react.reactMod.ComponentProps
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ElementType
-import typings.react.reactMod.FC
-import typings.styletronDashReact.Anon_STYLETRON
-import typings.styletronDashStandard.styletronDashStandardMod.StandardEngine
-import typings.styletronDashStandard.styletronDashStandardMod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styletronDashReactMod {
+  import typings.react.reactMod.ComponentProps
+  import typings.react.reactMod.ComponentType
+  import typings.react.reactMod.ElementType
+  import typings.react.reactMod.FC
+  import typings.styletronDashReact.Anon_STYLETRON
+  import typings.styletronDashStandard.styletronDashStandardMod.StandardEngine
+  import typings.styletronDashStandard.styletronDashStandardMod.StyleObject
+
   type $StyleProp[P /* <: js.Object */] = StyleObject | StyleObjectFn[P]
   type CSSFn = js.Function1[/* style */ StyleObject, String]
   type Reducer = js.Function2[/* style */ StyleObject, /* props */ js.UndefOr[js.Object], StyleObject]

@@ -15,13 +15,13 @@ trait ImageProps
      with ClipProps
      with TouchableProps {
   var height: js.UndefOr[NumberProp] = js.undefined
-  var href: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any
+  var href: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any
   var opacity: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var width: js.UndefOr[NumberProp] = js.undefined
   var x: js.UndefOr[NumberProp] = js.undefined
   var xlinkHref: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any
   ] = js.undefined
   var y: js.UndefOr[NumberProp] = js.undefined
 }
@@ -29,7 +29,7 @@ trait ImageProps
 object ImageProps {
   @scala.inline
   def apply(
-    href: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any,
+    href: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any,
     clipPath: String = null,
     clipRule: FillRule = null,
     delayLongPress: Int | Double = null,
@@ -59,7 +59,7 @@ object ImageProps {
     preserveAspectRatio: String = null,
     width: NumberProp = null,
     x: NumberProp = null,
-    xlinkHref: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any = null,
+    xlinkHref: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any = null,
     y: NumberProp = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal(href = href)

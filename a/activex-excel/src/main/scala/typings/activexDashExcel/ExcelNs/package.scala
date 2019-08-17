@@ -1,13 +1,14 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.activexDashExcelNumbers.`1480803660`
-import typings.activexDashExcel.activexDashExcelNumbers.`1`
-import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ExcelNs {
+  import typings.activexDashExcel.activexDashExcelNumbers.`1480803660`
+  import typings.activexDashExcel.activexDashExcelNumbers.`1`
+  import typings.std.SafeArray
+
   type AddIns2 = AddIns
   type InternationalResult[T] = Boolean | Double | String
   type PivotFieldsResult = PivotFields with (js.Function1[/* Index */ Double | String, PivotField]) with (js.Function1[/* Indexes */ SafeArray[Double | String], PivotFields])

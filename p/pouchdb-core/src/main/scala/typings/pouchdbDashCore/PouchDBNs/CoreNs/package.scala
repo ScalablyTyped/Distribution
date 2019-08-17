@@ -1,13 +1,14 @@
 package typings.pouchdbDashCore.PouchDBNs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.pouchdbDashCore.Anon_Attachments
-import typings.pouchdbDashCore.Anon_Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CoreNs {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.pouchdbDashCore.Anon_Attachments
+  import typings.pouchdbDashCore.Anon_Id
+
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.pouchdbDashCore.Blob

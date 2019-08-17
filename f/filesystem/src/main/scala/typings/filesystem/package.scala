@@ -1,13 +1,14 @@
 package typings
 
-import typings.filewriter.FileWriter
-import typings.std.DOMError
-import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object filesystem {
+  import typings.filewriter.FileWriter
+  import typings.std.DOMError
+  import typings.std.File
+
   /**
     * This interface is the callback used to look up DirectoryEntry objects.
     */

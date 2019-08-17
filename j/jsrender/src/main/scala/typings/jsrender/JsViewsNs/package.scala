@@ -1,11 +1,12 @@
 package typings.jsrender
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JsViewsNs {
+  import org.scalablytyped.runtime.StringDictionary
+
   // Converters
   type Converter = js.Function2[/* value */ js.Any, /* repeated */ js.Any, js.Any]
   /* Generic hash of objects of type T */

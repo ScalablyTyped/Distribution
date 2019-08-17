@@ -1,27 +1,28 @@
 package typings.awsDashSdk
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.Anon_Cont
-import typings.awsDashSdk.awsDashSdkStrings.CSV
-import typings.awsDashSdk.awsDashSdkStrings.Enabled
-import typings.awsDashSdk.awsDashSdkStrings.SELECT
-import typings.awsDashSdk.awsDashSdkStrings.SQL
-import typings.awsDashSdk.awsDashSdkStrings.STANDARD
-import typings.awsDashSdk.awsDashSdkStrings.V_1
-import typings.awsDashSdk.awsDashSdkStrings.requester
-import typings.awsDashSdk.awsDashSdkStrings.url
-import typings.awsDashSdk.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions
-import typings.awsDashSdk.libEventDashStreamEventDashStreamMod.EventStream
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsS3Mod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.Anon_Cont
+  import typings.awsDashSdk.awsDashSdkStrings.CSV
+  import typings.awsDashSdk.awsDashSdkStrings.Enabled
+  import typings.awsDashSdk.awsDashSdkStrings.SELECT
+  import typings.awsDashSdk.awsDashSdkStrings.SQL
+  import typings.awsDashSdk.awsDashSdkStrings.STANDARD
+  import typings.awsDashSdk.awsDashSdkStrings.V_1
+  import typings.awsDashSdk.awsDashSdkStrings.requester
+  import typings.awsDashSdk.awsDashSdkStrings.url
+  import typings.awsDashSdk.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions
+  import typings.awsDashSdk.libEventDashStreamEventDashStreamMod.EventStream
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.node.Buffer
+  import typings.node.streamMod.Readable
+  import typings.std.Date
+  import typings.std.Uint8Array
+
   type AbortDate = Date
   type AbortRuleId = String
   type AcceptRanges = String

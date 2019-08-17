@@ -1,22 +1,39 @@
 package typings.atJupyterlabCodemirror.libEditorMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.EdgeLocation
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IPosition
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IRange
 import typings.atJupyterlabCodemirror.Anon_Bias
 import typings.atJupyterlabCodemirror.Anon_Bottom
 import typings.atJupyterlabCodemirror.Anon_From
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.autoClosingBrackets
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.bounded
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.codeFolding
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.coverGutterNextToScrollbar
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.dragDrop
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.electricChars
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.extraKeys
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.fixedGutter
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.foldGutter
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.fontFamily
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.fontSize
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.gutters
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.insertSpaces
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.keyMap
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineNumbers
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineSeparator
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineWiseCopyCut
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineWrap
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.local
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.matchBrackets
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.mode
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.off
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.on
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.page
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.readOnly
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.rulers
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.scrollPastEnd
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.scrollbarStyle
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.selectionPointer
@@ -24,11 +41,12 @@ import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.showCursorWh
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.smartIndent
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.styleActiveLine
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.styleSelectedText
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.tabSize
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.theme
 import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.window
+import typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.wordWrapColumn
 import typings.atJupyterlabCodemirror.libEditorMod.CodeMirrorEditorNs.IOptions
 import typings.atJupyterlabCodemirror.libModeMod.ModeNs.IMode
-import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.Signal
 import typings.codemirror.codemirrorMod.Doc
 import typings.codemirror.codemirrorMod.Editor
@@ -37,17 +55,15 @@ import typings.codemirror.codemirrorMod.SearchCursor
 import typings.codemirror.codemirrorMod.StyleActiveLine
 import typings.codemirror.codemirrorMod.TextMarker
 import typings.std.Event
-import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor")
+@JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor")
 @js.native
-class CodeMirrorEditor protected () extends js.Object {
+class CodeMirrorEditor protected () extends IEditor {
   /**
     * Construct a CodeMirror editor.
     */
@@ -146,76 +162,37 @@ class CodeMirrorEditor protected () extends js.Object {
   var _toTextMarkerOptions: js.Any = js.native
   var _uuid: js.Any = js.native
   /**
-    * The widget of a character in the editor in pixels.
-    */
-  val charWidth: Double = js.native
-  /**
     * Get the codemirror doc wrapped by the widget.
     */
   val doc: Doc = js.native
   /**
     * A signal emitted when either the top or bottom edge is requested.
     */
-  val edgeRequested: Signal[
-    this.type, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.EdgeLocation */ _
-  ] = js.native
+  @JSName("edgeRequested")
+  val edgeRequested_CodeMirrorEditor: Signal[this.type, EdgeLocation] = js.native
   /**
     * Get the codemirror editor wrapped by the editor.
     */
   val editor: Editor = js.native
   /**
-    * The DOM node that hosts the editor.
+    * Test whether the object has been disposed.
+    *
+    * #### Notes
+    * This property is always safe to access.
     */
-  val host: HTMLElement = js.native
-  /**
-    * Tests whether the editor is disposed.
-    */
-  val isDisposed: Boolean = js.native
-  /**
-    * Get the number of lines in the editor.
-    */
-  val lineCount: Double = js.native
-  /**
-    * The height of a line in the editor in pixels.
-    */
-  val lineHeight: Double = js.native
-  /**
-    * Returns a model for this editor.
-    */
-  val model: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IModel */ js.Any = js.native
+  /* CompleteClass */
+  override val isDisposed: Boolean = js.native
   var selectionMarkers: StringDictionary[js.UndefOr[js.Array[TextMarker]]] = js.native
-  /**
-    * The selection style of this editor.
-    */
-  var selectionStyle: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.ISelectionStyle */ js.Any = js.native
   val state: js.Any = js.native
   /**
-    * The uuid of this editor;
+    * The uuid of this selection owner.
     */
-  var uuid: String = js.native
-  /**
-    * Add a keydown handler to the editor.
-    *
-    * @param handler - A keydown handler.
-    *
-    * @returns A disposable that can be used to remove the handler.
-    */
-  def addKeydownHandler(
-    handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.KeydownHandler */ js.Any
-  ): IDisposable = js.native
+  /* CompleteClass */
+  override var uuid: String = js.native
   def addOverlay(mode: String): Unit = js.native
   def addOverlay(mode: String, options: js.Object): Unit = js.native
   def addOverlay(mode: js.Object): Unit = js.native
   def addOverlay(mode: js.Object, options: js.Object): Unit = js.native
-  /**
-    * Explicitly blur the editor.
-    */
-  def blur(): Unit = js.native
-  /**
-    * Clear the undo history.
-    */
-  def clearHistory(): Unit = js.native
   def cursorCoords(where: Boolean): Anon_Bottom = js.native
   @JSName("cursorCoords")
   def cursorCoords_local(where: Boolean, mode: local): Anon_Bottom = js.native
@@ -224,9 +201,18 @@ class CodeMirrorEditor protected () extends js.Object {
   @JSName("cursorCoords")
   def cursorCoords_window(where: Boolean, mode: window): Anon_Bottom = js.native
   /**
-    * Dispose of the resources held by the widget.
+    * Dispose of the resources held by the object.
+    *
+    * #### Notes
+    * If the object's `dispose` method is called more than once, all
+    * calls made after the first will be a no-op.
+    *
+    * #### Undefined Behavior
+    * It is undefined behavior to use any functionality of the object
+    * after it has been disposed unless otherwise explicitly noted.
     */
-  def dispose(): Unit = js.native
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
   /**
     * Execute a codemirror command on the editor.
     *
@@ -234,32 +220,17 @@ class CodeMirrorEditor protected () extends js.Object {
     */
   def execCommand(command: String): Unit = js.native
   def firstLine(): Double = js.native
-  /**
-    * Brings browser focus to this editor text.
-    */
-  def focus(): Unit = js.native
-  /**
-    * Get the window coordinates given a cursor position.
-    */
-  def getCoordinateForPosition(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
-  ): js.Any = js.native
   def getCursor(): Position = js.native
   def getCursor(start: String): Position = js.native
   /**
     * Returns the primary position of the cursor, never `null`.
     */
-  def getCursorPosition(): js.Any = js.native
-  /**
-    * Returns the content for the given line number.
-    */
-  def getLine(line: Double): js.UndefOr[String] = js.native
-  /**
-    * Find an offset for the given position.
-    */
-  def getOffsetAt(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
-  ): Double = js.native
+  /* CompleteClass */
+  override def getCursorPosition(): IPosition = js.native
+  @JSName("getOption")
+  def getOption_autoClosingBrackets(option: autoClosingBrackets): Boolean = js.native
+  @JSName("getOption")
+  def getOption_codeFolding(option: codeFolding): Boolean = js.native
   @JSName("getOption")
   def getOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): Boolean = js.native
   @JSName("getOption")
@@ -273,18 +244,36 @@ class CodeMirrorEditor protected () extends js.Object {
   @JSName("getOption")
   def getOption_foldGutter(option: foldGutter): Boolean = js.native
   @JSName("getOption")
+  def getOption_fontFamily(option: fontFamily): String | Null = js.native
+  @JSName("getOption")
+  def getOption_fontSize(option: fontSize): Double | Null = js.native
+  @JSName("getOption")
   def getOption_gutters(option: gutters): js.Array[String] = js.native
   @JSName("getOption")
+  def getOption_insertSpaces(option: insertSpaces): Boolean = js.native
+  @JSName("getOption")
   def getOption_keyMap(option: keyMap): String = js.native
+  @JSName("getOption")
+  def getOption_lineHeight(option: typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineHeight): Double | Null = js.native
+  @JSName("getOption")
+  def getOption_lineNumbers(option: lineNumbers): Boolean = js.native
   @JSName("getOption")
   def getOption_lineSeparator(option: lineSeparator): String | Null = js.native
   @JSName("getOption")
   def getOption_lineWiseCopyCut(option: lineWiseCopyCut): Boolean = js.native
+  @JSName("getOption")
+  def getOption_lineWrap(option: lineWrap): off | on | wordWrapColumn | bounded = js.native
+  @JSName("getOption")
+  def getOption_matchBrackets(option: matchBrackets): Boolean = js.native
   /**
     * Get a config option for the editor.
     */
   @JSName("getOption")
   def getOption_mode(option: mode): String | IMode = js.native
+  @JSName("getOption")
+  def getOption_readOnly(option: readOnly): Boolean = js.native
+  @JSName("getOption")
+  def getOption_rulers(option: rulers): js.Array[Double] = js.native
   @JSName("getOption")
   def getOption_scrollPastEnd(option: scrollPastEnd): Boolean = js.native
   @JSName("getOption")
@@ -300,22 +289,11 @@ class CodeMirrorEditor protected () extends js.Object {
   @JSName("getOption")
   def getOption_styleSelectedText(option: styleSelectedText): Boolean = js.native
   @JSName("getOption")
+  def getOption_tabSize(option: tabSize): Double = js.native
+  @JSName("getOption")
   def getOption_theme(option: theme): String = js.native
-  /**
-    * Find a position for the given offset.
-    */
-  def getPositionAt(offset: Double): js.Any = js.native
-  /**
-    * Get the cursor position given window coordinates.
-    *
-    * @param coordinate - The desired coordinate.
-    *
-    * @returns The position of the coordinates, or null if not
-    *   contained in the editor.
-    */
-  def getPositionForCoordinate(
-    coordinate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.ICoordinate */ js.Any
-  ): (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any) | Null = js.native
+  @JSName("getOption")
+  def getOption_wordWrapColumn(option: wordWrapColumn): Double = js.native
   def getRange(from: Position, to: Position): String = js.native
   def getRange(from: Position, to: Position, seperator: String): String = js.native
   def getSearchCursor(query: String): SearchCursor = js.native
@@ -327,25 +305,13 @@ class CodeMirrorEditor protected () extends js.Object {
   /**
     * Returns the primary selection, never `null`.
     */
-  def getSelection(): js.Any = js.native
+  /* CompleteClass */
+  override def getSelection(): IRange = js.native
   /**
     * Gets the selections for all the cursors, never `null` or empty.
     */
-  def getSelections(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.ITextSelection */ _
-  ] = js.native
-  /**
-    * Get the token at a given editor position.
-    */
-  def getTokenForPosition(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
-  ): js.Any = js.native
-  /**
-    * Get a list of tokens for the current editor text content.
-    */
-  def getTokens(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IToken */ _
-  ] = js.native
+  /* CompleteClass */
+  override def getSelections(): js.Array[IRange] = js.native
   /**
     * Handle the DOM events for the editor.
     *
@@ -357,61 +323,34 @@ class CodeMirrorEditor protected () extends js.Object {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
-  /**
-    * Test whether the editor has keyboard focus.
-    */
-  def hasFocus(): Boolean = js.native
   def lastLine(): Double = js.native
-  /**
-    * Insert a new indented line at the current cursor position.
-    */
-  def newIndentedLine(): Unit = js.native
   /**
     * Handle keydown events from the editor.
     */
   /* protected */ def onKeydown(event: KeyboardEvent): Boolean = js.native
   def operation[T](fn: js.Function0[T]): T = js.native
-  /**
-    * Redo one undone edit.
-    */
-  def redo(): Unit = js.native
-  /**
-    * Repaint editor.
-    */
-  def refresh(): Unit = js.native
   def removeOverlay(mode: String): Unit = js.native
   def removeOverlay(mode: js.Object): Unit = js.native
-  /**
-    * Refresh the editor if it is focused;
-    * otherwise postpone refreshing till focusing.
-    */
-  def resizeToFit(): Unit = js.native
-  /**
-    * Reveal the given position in the editor.
-    */
-  def revealPosition(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
-  ): Unit = js.native
-  /**
-    * Reveal the given selection in the editor.
-    */
-  def revealSelection(
-    selection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IRange */ js.Any
-  ): Unit = js.native
   def scrollIntoView(pos: Anon_From, margin: Double): Unit = js.native
   /**
     * Set the primary position of the cursor.
     *
+    * @param position - The new primary position.
+    *
     * #### Notes
     * This will remove any secondary cursors.
     */
-  def setCursorPosition(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
-  ): Unit = js.native
-  def setCursorPosition(
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any,
-    options: Anon_Bias
-  ): Unit = js.native
+  /* CompleteClass */
+  override def setCursorPosition(position: IPosition): Unit = js.native
+  def setCursorPosition(position: IPosition, options: Anon_Bias): Unit = js.native
+  def setOption(option: lineWrap, value: bounded): Unit = js.native
+  def setOption(option: lineWrap, value: off): Unit = js.native
+  def setOption(option: lineWrap, value: on): Unit = js.native
+  def setOption(option: lineWrap, value: wordWrapColumn): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoClosingBrackets(option: autoClosingBrackets, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_codeFolding(option: codeFolding, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -425,15 +364,33 @@ class CodeMirrorEditor protected () extends js.Object {
   @JSName("setOption")
   def setOption_foldGutter(option: foldGutter, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_fontFamily(option: fontFamily): Unit = js.native
+  @JSName("setOption")
+  def setOption_fontFamily(option: fontFamily, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_fontSize(option: fontSize): Unit = js.native
+  @JSName("setOption")
+  def setOption_fontSize(option: fontSize, value: Double): Unit = js.native
+  @JSName("setOption")
   def setOption_gutters(option: gutters, value: js.Array[String]): Unit = js.native
   @JSName("setOption")
+  def setOption_insertSpaces(option: insertSpaces, value: Boolean): Unit = js.native
+  @JSName("setOption")
   def setOption_keyMap(option: keyMap, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineHeight(option: typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineHeight): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineHeight(option: typings.atJupyterlabCodemirror.atJupyterlabCodemirrorStrings.lineHeight, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineNumbers(option: lineNumbers, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_lineSeparator(option: lineSeparator): Unit = js.native
   @JSName("setOption")
   def setOption_lineSeparator(option: lineSeparator, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_lineWiseCopyCut(option: lineWiseCopyCut, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets, value: Boolean): Unit = js.native
   /**
     * Set a config option for the editor.
     */
@@ -441,6 +398,10 @@ class CodeMirrorEditor protected () extends js.Object {
   def setOption_mode(option: mode, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_mode(option: mode, value: IMode): Unit = js.native
+  @JSName("setOption")
+  def setOption_readOnly(option: readOnly, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_rulers(option: rulers, value: js.Array[Double]): Unit = js.native
   @JSName("setOption")
   def setOption_scrollPastEnd(option: scrollPastEnd, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -460,33 +421,32 @@ class CodeMirrorEditor protected () extends js.Object {
   @JSName("setOption")
   def setOption_styleSelectedText(option: styleSelectedText, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_tabSize(option: tabSize, value: Double): Unit = js.native
+  @JSName("setOption")
   def setOption_theme(option: theme, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_wordWrapColumn(option: wordWrapColumn, value: Double): Unit = js.native
   /**
-    * Set the primary selection. This will remove any secondary cursors.
+    * Set the primary selection.
+    *
+    * @param selection - The desired selection range.
+    *
+    * #### Notes
+    * This will remove any secondary cursors.
     */
-  def setSelection(
-    selection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IRange */ js.Any
-  ): Unit = js.native
+  /* CompleteClass */
+  override def setSelection(selection: IRange): Unit = js.native
   /**
-    * Sets the selections for all the cursors, should not be empty.
+    * Sets the selections for all the cursors.
+    *
+    * @param selections - The new selections.
+    *
+    * #### Notes
     * Cursors will be removed or added, as necessary.
-    * Passing an empty array resets a cursor position to the start of a document.
+    * Passing an empty array resets a cursor position to the start of a
+    * document.
     */
-  def setSelections(
-    selections: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IRange */ _
-    ]
-  ): Unit = js.native
-  def setSize(): Unit = js.native
-  /**
-    * Set the size of the editor in pixels.
-    */
-  def setSize(
-    dimension: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IDimension */ js.Any
-  ): Unit = js.native
-  /**
-    * Undo one edit (if any undo events are stored).
-    */
-  def undo(): Unit = js.native
+  /* CompleteClass */
+  override def setSelections(selections: js.Array[IRange]): Unit = js.native
 }
 

@@ -1,14 +1,15 @@
 package typings
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Error
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object meteor {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Date
+  import typings.std.Error
+  import typings.std.Uint8Array
+
   type EJSON = EJSONable
   type EJSONable = StringDictionary[EJSONableProperty]
   type EJSONableProperty = js.UndefOr[

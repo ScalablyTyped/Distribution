@@ -1,0 +1,20 @@
+package typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLogoDotTypesMod
+
+import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IDocumentCardLogoStyles extends js.Object {
+  var root: IStyle
+}
+
+object IDocumentCardLogoStyles {
+  @scala.inline
+  def apply(root: IStyle): IDocumentCardLogoStyles = {
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IDocumentCardLogoStyles]
+  }
+}
+

@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonFabList")
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonFabList * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonFabList")
 @js.native
 class IonFabList protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()

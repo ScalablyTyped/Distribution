@@ -301,12 +301,12 @@ trait RoboMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSimulationJobResponse, Unit]
   ): Request[DescribeSimulationJobResponse, AWSError] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
     */
   def listDeploymentJobs(): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentJobsResponse, Unit]): Request[ListDeploymentJobsResponse, AWSError] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
     */
   def listDeploymentJobs(params: ListDeploymentJobsRequest): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(

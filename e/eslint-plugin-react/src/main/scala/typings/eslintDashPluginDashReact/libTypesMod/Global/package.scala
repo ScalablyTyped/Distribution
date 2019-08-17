@@ -1,12 +1,13 @@
 package typings.eslintDashPluginDashReact.libTypesMod
 
-import typings.eslint.eslintMod.RuleNs.RuleFixer
-import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Global {
+  import typings.eslint.eslintMod.RuleNs.RuleFixer
+  import typings.std.Set
+
   type Fixer = RuleFixer
   type JSXAttribute = ASTNode
   type JSXSpreadAttribute = ASTNode

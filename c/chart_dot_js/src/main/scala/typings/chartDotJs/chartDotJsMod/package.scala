@@ -1,13 +1,14 @@
 package typings.chartDotJs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.CanvasGradient
-import typings.std.CanvasPattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object chartDotJsMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.CanvasGradient
+  import typings.std.CanvasPattern
+
   type ChartColor = String | CanvasGradient | CanvasPattern | js.Array[String]
   // NOTE: declare plugin options as interface instead of inline '{ [plugin: string]: any }'
   // to allow module augmentation in case some plugins want to strictly type their options.

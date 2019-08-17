@@ -1,12 +1,13 @@
 package typings.qlik.qlikMod
 
-import typings.qlik.qlikStrings.`zh-CN`
-import typings.qlik.qlikStrings.`zh-TW`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object LanguageCodesNs {
+  import typings.qlik.qlikStrings.`zh-CN`
+  import typings.qlik.qlikStrings.`zh-TW`
+
   /* Rewritten from type alias, can be one of: 
     - typings.qlik.qlikMod.LanguageCodesNs.German
     - typings.qlik.qlikMod.LanguageCodesNs.English

@@ -1,0 +1,36 @@
+package typings.officeDashUiDashFabricDashReact
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object libComponentsPickersBasePickerDotTypesMod {
+  import typings.officeDashUiDashFabricDashReact.Anon_InputClassName
+  import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionsProps
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.className
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.disabled
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.forceResolveText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.loadingText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.mostRecentlyUsedHeaderText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.noResultsFoundText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.onRenderNoResultFound
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.resultsFooter
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.resultsFooterFull
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.resultsMaximumNumber
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.searchForMoreText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.searchingText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.showRemoveButtons
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.suggestionsAvailableAlertText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.suggestionsClassName
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.suggestionsContainerAriaLabel
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.suggestionsHeaderText
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.suggestionsItemClassName
+  import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.theme
+  import typings.std.Pick
+
+  type IBasePickerStyleProps = (Pick[IBasePickerProps[_], theme | className | disabled]) with Anon_InputClassName
+  type IBasePickerSuggestionsProps[T] = Pick[
+    ISuggestionsProps[T], 
+    onRenderNoResultFound | suggestionsHeaderText | mostRecentlyUsedHeaderText | noResultsFoundText | className | suggestionsClassName | suggestionsItemClassName | searchForMoreText | forceResolveText | loadingText | searchingText | resultsFooterFull | resultsFooter | resultsMaximumNumber | showRemoveButtons | suggestionsAvailableAlertText | suggestionsContainerAriaLabel
+  ]
+}

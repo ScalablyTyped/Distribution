@@ -1,11 +1,12 @@
 package typings.semanticDashUiDashProgress.SemanticUINs
 
-import typings.semanticDashUiDashProgress.SemanticUINs.ProgressNs.ClassNameSettingsNs.Param
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ProgressNs {
+  import typings.semanticDashUiDashProgress.SemanticUINs.ProgressNs.ClassNameSettingsNs.Param
+
   type ClassNameSettings = Param
   type ErrorSettings = typings.semanticDashUiDashProgress.SemanticUINs.ProgressNs.ErrorSettingsNs.Param
   type MetadataSettings = typings.semanticDashUiDashProgress.SemanticUINs.ProgressNs.MetadataSettingsNs.Param

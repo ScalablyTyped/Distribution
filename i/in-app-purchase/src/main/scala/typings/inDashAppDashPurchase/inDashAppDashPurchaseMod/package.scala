@@ -1,11 +1,12 @@
 package typings.inDashAppDashPurchase
 
-import typings.inDashAppDashPurchase.Anon_Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inDashAppDashPurchaseMod {
+  import typings.inDashAppDashPurchase.Anon_Date
+
   type AmazonReceipt = js.Object | String
   type AppleReceipt = String
   type GoogleReceipt = Anon_Date | String

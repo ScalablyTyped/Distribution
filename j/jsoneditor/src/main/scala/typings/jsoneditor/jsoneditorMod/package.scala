@@ -1,11 +1,12 @@
 package typings.jsoneditor
 
-import typings.jsoneditor.Anon_Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsoneditorMod {
+  import typings.jsoneditor.Anon_Options
+
   type AutoCompleteCompletion = Null | js.Array[String] | Anon_Options
   type AutoCompleteOptionsGetter = js.Function4[
     /* text */ String, 

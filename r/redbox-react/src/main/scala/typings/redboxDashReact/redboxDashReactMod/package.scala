@@ -1,10 +1,11 @@
 package typings.redboxDashReact
 
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object redboxDashReactMod {
+  import typings.react.reactMod.Component
+
   type RedBox = Component[RedBoxProps, js.Object, js.Any]
 }

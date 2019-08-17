@@ -1,12 +1,13 @@
 package typings.expressDashValidator
 
-import typings.expressDashValidator.Anon_ErrorMessage
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcMiddlewaresSchemaMod {
+  import typings.expressDashValidator.Anon_ErrorMessage
+  import typings.std.Record
+
   type InternalParamSchema = ValidatorsSchema with SanitizersSchema
   type ParamSchema = InternalParamSchema with Anon_ErrorMessage
   type SanitizersSchema = /* import warning: ImportType.apply c Unsupported type mapping: 

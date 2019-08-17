@@ -1,12 +1,13 @@
 package typings.node
 
-import typings.node.NodeJSNs.TypedArray
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cryptoMod {
+  import typings.node.NodeJSNs.TypedArray
+  import typings.std.DataView
+
   type Binary = TypedArray | DataView
   type BinaryLike = java.lang.String | Binary
   type CipherKey = BinaryLike | KeyObject

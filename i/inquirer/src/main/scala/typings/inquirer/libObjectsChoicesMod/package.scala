@@ -1,14 +1,15 @@
 package typings.inquirer
 
-import typings.inquirer.Anon_Separator
-import typings.inquirer.inquirerMod.KeyUnion
-import typings.inquirer.inquirerMod.UnionToIntersection
-import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libObjectsChoicesMod {
+  import typings.inquirer.Anon_Separator
+  import typings.inquirer.inquirerMod.KeyUnion
+  import typings.inquirer.inquirerMod.UnionToIntersection
+  import typings.std.Exclude
+
   /**
     * Represents a property-name of any choice-type.
     *

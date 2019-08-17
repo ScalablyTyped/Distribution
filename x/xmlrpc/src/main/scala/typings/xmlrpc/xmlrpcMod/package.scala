@@ -1,11 +1,12 @@
 package typings.xmlrpc
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xmlrpcMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   type Headers = StringDictionary[String]
   type ServerFunction = js.Function3[
     /* error */ js.Any, 

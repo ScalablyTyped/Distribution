@@ -1,12 +1,13 @@
 package typings.ngDashCommand
 
-import typings.angular.angularMod.IPromise
-import typings.angular.angularMod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ngCommandNs {
+  import typings.angular.angularMod.IPromise
+  import typings.angular.angularMod.IScope
+
   /**
   	* Command factory which creates instances of @see ICommand.
   	*/

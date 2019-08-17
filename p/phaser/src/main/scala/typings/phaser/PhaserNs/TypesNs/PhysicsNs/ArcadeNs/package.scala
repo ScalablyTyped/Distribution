@@ -1,19 +1,20 @@
 package typings.phaser.PhaserNs.TypesNs.PhysicsNs
 
-import typings.phaser.Anon_AccelerationX
-import typings.phaser.PhaserNs.GameObjectsNs.GameObject
-import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Group
-import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Image
-import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Sprite
-import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup
-import typings.phaser.PhaserNs.TilemapsNs.DynamicTilemapLayer
-import typings.phaser.PhaserNs.TilemapsNs.StaticTilemapLayer
-import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.GroupNs.GroupConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ArcadeNs {
+  import typings.phaser.Anon_AccelerationX
+  import typings.phaser.PhaserNs.GameObjectsNs.GameObject
+  import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Group
+  import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Image
+  import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.Sprite
+  import typings.phaser.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup
+  import typings.phaser.PhaserNs.TilemapsNs.DynamicTilemapLayer
+  import typings.phaser.PhaserNs.TilemapsNs.StaticTilemapLayer
+  import typings.phaser.PhaserNs.TypesNs.GameObjectsNs.GroupNs.GroupConfig
+
   /**
     * An Arcade Physics Collider Type.
     */

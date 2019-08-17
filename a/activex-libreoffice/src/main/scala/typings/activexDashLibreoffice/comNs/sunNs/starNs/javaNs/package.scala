@@ -1,11 +1,12 @@
 package typings.activexDashLibreoffice.comNs.sunNs.starNs
 
-import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.DeploymentException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object javaNs {
+  import typings.activexDashLibreoffice.comNs.sunNs.starNs.unoNs.DeploymentException
+
   /**
     * indicates a the Java settings have been modified.
     *

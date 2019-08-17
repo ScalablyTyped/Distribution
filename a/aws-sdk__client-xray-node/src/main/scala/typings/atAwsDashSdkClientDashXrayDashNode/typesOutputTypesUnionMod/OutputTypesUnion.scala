@@ -1,0 +1,24 @@
+package typings.atAwsDashSdkClientDashXrayDashNode.typesOutputTypesUnionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesBatchGetTracesOutputMod.BatchGetTracesOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesCreateSamplingRuleOutputMod.CreateSamplingRuleOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesDeleteSamplingRuleOutputMod.DeleteSamplingRuleOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetEncryptionConfigOutputMod.GetEncryptionConfigOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetSamplingRulesOutputMod.GetSamplingRulesOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetSamplingStatisticSummariesOutputMod.GetSamplingStatisticSummariesOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetSamplingTargetsOutputMod.GetSamplingTargetsOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetServiceGraphOutputMod.GetServiceGraphOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetTraceGraphOutputMod.GetTraceGraphOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesGetTraceSummariesOutputMod.GetTraceSummariesOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesPutEncryptionConfigOutputMod.PutEncryptionConfigOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesPutTelemetryRecordsOutputMod.PutTelemetryRecordsOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesPutTraceSegmentsOutputMod.PutTraceSegmentsOutput
+  - typings.atAwsDashSdkClientDashXrayDashNode.typesUpdateSamplingRuleOutputMod.UpdateSamplingRuleOutput
+*/
+trait OutputTypesUnion extends js.Object
+

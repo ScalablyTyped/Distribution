@@ -1,0 +1,30 @@
+package typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignVersionsOutputMod
+
+import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUnderscoreCampaignsResponseMod._UnmarshalledCampaignsResponse
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetCampaignVersionsOutput extends OutputTypesUnion {
+  /**
+    * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
+    */
+  @JSName("$metadata")
+  var $metadata: ResponseMetadata
+  /**
+    * List of available campaigns.
+    */
+  var CampaignsResponse: _UnmarshalledCampaignsResponse
+}
+
+object GetCampaignVersionsOutput {
+  @scala.inline
+  def apply($metadata: ResponseMetadata, CampaignsResponse: _UnmarshalledCampaignsResponse): GetCampaignVersionsOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata, CampaignsResponse = CampaignsResponse)
+  
+    __obj.asInstanceOf[GetCampaignVersionsOutput]
+  }
+}
+

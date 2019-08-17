@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsPersonalizeruntimeMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type Arn = String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type InputList = js.Array[ItemID]

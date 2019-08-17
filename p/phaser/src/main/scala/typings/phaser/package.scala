@@ -1,19 +1,20 @@
 package typings
 
-import typings.phaser.PhaserNs.GameObjectsNs.Bob
-import typings.phaser.PhaserNs.GameObjectsNs.GameObject
-import typings.phaser.PhaserNs.GameObjectsNs.Light
-import typings.phaser.PhaserNs.GameObjectsNs.Text
-import typings.phaser.PhaserNs.GeomNs.Triangle
-import typings.phaser.PhaserNs.PhysicsNs.ImpactNs.Body
-import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
-import typings.phaser.PhaserNs.TexturesNs.Texture
-import typings.phaser.PhaserNs.TilemapsNs.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object phaser {
+  import typings.phaser.PhaserNs.GameObjectsNs.Bob
+  import typings.phaser.PhaserNs.GameObjectsNs.GameObject
+  import typings.phaser.PhaserNs.GameObjectsNs.Light
+  import typings.phaser.PhaserNs.GameObjectsNs.Text
+  import typings.phaser.PhaserNs.GeomNs.Triangle
+  import typings.phaser.PhaserNs.PhysicsNs.ImpactNs.Body
+  import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
+  import typings.phaser.PhaserNs.TexturesNs.Texture
+  import typings.phaser.PhaserNs.TilemapsNs.Tile
+
   type ArcadePhysicsCallback = js.Function2[/* object1 */ GameObject, /* object2 */ GameObject, Unit]
   type CenterFunction = js.Function1[/* triangle */ Triangle, Unit]
   type CollideCallback = js.Function3[/* body */ Body, /* other */ Body, /* axis */ String, Unit]

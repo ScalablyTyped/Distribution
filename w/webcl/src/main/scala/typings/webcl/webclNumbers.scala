@@ -700,10 +700,10 @@ object webclNumbers {
        with DeviceTypeBits
   
   @js.native
-  sealed trait `0xFFFFFFFF` extends DeviceTypeBits
+  sealed trait `1` extends Bool
   
   @js.native
-  sealed trait `1` extends Bool
+  sealed trait _0xFFFFFFFF extends DeviceTypeBits
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
@@ -1130,8 +1130,8 @@ object webclNumbers {
   @scala.inline
   def `0x8`: `0x8` = 0x8.asInstanceOf[`0x8`]
   @scala.inline
-  def `0xFFFFFFFF`: `0xFFFFFFFF` = 0xFFFFFFFF.asInstanceOf[`0xFFFFFFFF`]
-  @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def _0xFFFFFFFF: _0xFFFFFFFF = _0xFFFFFFFF.asInstanceOf[_0xFFFFFFFF]
 }
 

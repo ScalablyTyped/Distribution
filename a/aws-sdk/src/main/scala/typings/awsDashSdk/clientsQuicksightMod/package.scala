@@ -1,11 +1,12 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsQuicksightMod {
+  import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+
   type Arn = java.lang.String
   type AwsAccountId = java.lang.String
   type Boolean = scala.Boolean

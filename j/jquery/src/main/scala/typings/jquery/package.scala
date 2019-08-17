@@ -1,30 +1,31 @@
 package typings
 
-import typings.jquery.JQueryNs.AjaxSettings
-import typings.jquery.JQueryNs.Callbacks
-import typings.jquery.JQueryNs.Coordinates
-import typings.jquery.JQueryNs.Deferred
-import typings.jquery.JQueryNs.EffectsOptions
-import typings.jquery.JQueryNs.EventStatic
-import typings.jquery.JQueryNs.NameValuePair
-import typings.jquery.JQueryNs.PlainObject
-import typings.jquery.JQueryNs.Promise
-import typings.jquery.JQueryNs.Thenable
-import typings.jquery.JQueryNs.TypeOrArray
-import typings.jquery.JQueryNs.jqXHR
-import typings.std.DragEvent
-import typings.std.Element
-import typings.std.Event
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.TouchEvent
-import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jquery {
+  import typings.jquery.JQueryNs.AjaxSettings
+  import typings.jquery.JQueryNs.Callbacks
+  import typings.jquery.JQueryNs.Coordinates
+  import typings.jquery.JQueryNs.Deferred
+  import typings.jquery.JQueryNs.EffectsOptions
+  import typings.jquery.JQueryNs.EventStatic
+  import typings.jquery.JQueryNs.NameValuePair
+  import typings.jquery.JQueryNs.PlainObject
+  import typings.jquery.JQueryNs.Promise
+  import typings.jquery.JQueryNs.Thenable
+  import typings.jquery.JQueryNs.TypeOrArray
+  import typings.jquery.JQueryNs.jqXHR
+  import typings.std.DragEvent
+  import typings.std.Element
+  import typings.std.Event
+  import typings.std.FocusEvent
+  import typings.std.KeyboardEvent
+  import typings.std.MouseEvent
+  import typings.std.TouchEvent
+  import typings.std.UIEvent
+
   // tslint:disable-next-line:no-empty-interface
   type JQueryAjaxSettings = AjaxSettings[js.Any]
   type JQueryAnimationOptions = EffectsOptions[Element]

@@ -1,0 +1,97 @@
+package typings.amapDashJsDashApi.AMapNs.PolylineNs
+
+import typings.amapDashJsDashApi.AMapNs.LocationValue
+import typings.amapDashJsDashApi.AMapNs.Map
+import typings.amapDashJsDashApi.AMapNs.StrokeLineCap
+import typings.amapDashJsDashApi.AMapNs.StrokeLineJoin
+import typings.amapDashJsDashApi.AMapNs.StrokeStyle
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options[ExtraData]
+  extends typings.amapDashJsDashApi.AMapNs.PathOverlayNs.Options[ExtraData] {
+  /**
+    * 描边的宽度
+    */
+  var borderWeight: js.UndefOr[Double] = js.undefined
+  /**
+    * 方向箭头颜色
+    */
+  var dirColor: js.UndefOr[String] = js.undefined
+  /**
+    * 是否绘制成大地线
+    */
+  var geodesic: js.UndefOr[Boolean] = js.undefined
+  /**
+    * 线条是否带描边
+    */
+  var isOutline: js.UndefOr[Boolean] = js.undefined
+  /**
+    * 线条描边颜色
+    */
+  var outlineColor: js.UndefOr[String] = js.undefined
+  // internal
+  /**
+    * 折线的节点数组
+    */
+  var path: js.UndefOr[js.Array[LocationValue]] = js.undefined
+  /**
+    * 是否延路径显示方向箭头
+    */
+  var showDir: js.UndefOr[Boolean] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply[ExtraData](
+    borderWeight: Int | Double = null,
+    bubble: js.UndefOr[Boolean] = js.undefined,
+    clickable: js.UndefOr[Boolean] = js.undefined,
+    cursor: String = null,
+    dirColor: String = null,
+    draggable: js.UndefOr[Boolean] = js.undefined,
+    extData: ExtraData = null,
+    geodesic: js.UndefOr[Boolean] = js.undefined,
+    isOutline: js.UndefOr[Boolean] = js.undefined,
+    lineCap: StrokeLineCap = null,
+    lineJoin: StrokeLineJoin = null,
+    map: Map = null,
+    outlineColor: String = null,
+    path: js.Array[LocationValue] = null,
+    showDir: js.UndefOr[Boolean] = js.undefined,
+    strokeColor: String = null,
+    strokeDasharray: js.Array[Double] = null,
+    strokeOpacity: Int | Double = null,
+    strokeStyle: StrokeStyle = null,
+    strokeWeight: Int | Double = null,
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zIndex: Int | Double = null
+  ): Options[ExtraData] = {
+    val __obj = js.Dynamic.literal()
+    if (borderWeight != null) __obj.updateDynamic("borderWeight")(borderWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (dirColor != null) __obj.updateDynamic("dirColor")(dirColor)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (!js.isUndefined(isOutline)) __obj.updateDynamic("isOutline")(isOutline)
+    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
+    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options[ExtraData]]
+  }
+}
+

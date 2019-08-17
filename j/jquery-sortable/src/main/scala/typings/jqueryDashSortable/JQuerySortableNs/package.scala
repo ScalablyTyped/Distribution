@@ -1,12 +1,13 @@
 package typings.jqueryDashSortable
 
-import typings.jqueryDashSortable.JQuery
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQuerySortableNs {
+  import typings.jqueryDashSortable.JQuery
+  import typings.std.Event
+
   type Dimensions = js.Array[Double]
   type GenericEventHandler = js.Function4[
     /* $item */ js.UndefOr[JQuery], 

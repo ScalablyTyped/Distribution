@@ -1,19 +1,20 @@
 package typings.atAngularCore
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.atAngularCore.Anon_NameTargetEventTarget
-import typings.atAngularCore.CssSelector
-import typings.atAngularCore.DirectiveDefList
-import typings.atAngularCore.DirectiveTypeList
-import typings.atAngularCore.PipeDefList
-import typings.atAngularCore.PipeTypeList
-import typings.atAngularCore.PropertyAliasValue
-import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atAngularCoreMod {
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.atAngularCore.Anon_NameTargetEventTarget
+  import typings.atAngularCore.CssSelector
+  import typings.atAngularCore.DirectiveDefList
+  import typings.atAngularCore.DirectiveTypeList
+  import typings.atAngularCore.PipeDefList
+  import typings.atAngularCore.PipeTypeList
+  import typings.atAngularCore.PropertyAliasValue
+  import typings.std.Iterable
+
   type CollectionChangeRecord[V] = IterableChangeRecord[V]
   type ComponentInstance = js.Object
   type ContentChild = Query

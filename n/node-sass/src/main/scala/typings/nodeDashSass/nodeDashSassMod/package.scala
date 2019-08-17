@@ -1,14 +1,15 @@
 package typings.nodeDashSass
 
-import typings.nodeDashSass.nodeDashSassMod.typesNs.ReturnValue
-import typings.nodeDashSass.nodeDashSassMod.typesNs.Value
-import typings.std.Error
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashSassMod {
+  import typings.nodeDashSass.nodeDashSassMod.typesNs.ReturnValue
+  import typings.nodeDashSass.nodeDashSassMod.typesNs.Value
+  import typings.std.Error
+  import typings.std.Record
+
   type AsyncImporter = js.ThisFunction3[
     /* this */ AsyncContext, 
     /* url */ String, 

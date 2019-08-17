@@ -1,12 +1,13 @@
 package typings.oauth2orize
 
-import typings.node.httpMod.ServerResponse
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object oauth2orizeMod {
+  import typings.node.httpMod.ServerResponse
+  import typings.std.Error
+
   type DecisionParseFunction = js.Function2[
     /* req */ MiddlewareRequest, 
     /* done */ js.Function2[/* err */ Error | Null, /* params */ js.Any, Unit], 

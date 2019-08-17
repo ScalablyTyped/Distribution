@@ -1,11 +1,12 @@
 package typings.parse5DashSerializerDashStream
 
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object parse5DashSerializerDashStreamMod {
+  import typings.node.streamMod.Readable
+
   /**
     * Streaming AST node to an HTML serializer.
     * A [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable).

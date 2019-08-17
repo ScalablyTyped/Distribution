@@ -90,8 +90,6 @@ trait primereactProps {
   @scala.inline
   def InplaceProps: typings.primereact.componentsInplaceInplaceMod.InplaceProps.type = typings.primereact.componentsInplaceInplaceMod.InplaceProps
   type InplaceProps = typings.primereact.componentsInplaceInplaceMod.InplaceProps
-  type InplaceContentProps = js.Object
-  type InplaceDisplayProps = js.Object
   @scala.inline
   def InputMaskProps: typings.primereact.componentsInputmaskInputMaskMod.InputMaskProps.type = typings.primereact.componentsInputmaskInputMaskMod.InputMaskProps
   type InputMaskProps = typings.primereact.componentsInputmaskInputMaskMod.InputMaskProps
