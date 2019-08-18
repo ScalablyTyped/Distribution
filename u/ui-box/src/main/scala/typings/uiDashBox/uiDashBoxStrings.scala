@@ -144,9 +144,6 @@ object uiDashBoxStrings {
   sealed trait display extends js.Object
   
   @js.native
-  sealed trait div extends js.Object
-  
-  @js.native
   sealed trait flex extends js.Object
   
   @js.native
@@ -247,6 +244,9 @@ object uiDashBoxStrings {
   
   @js.native
   sealed trait height extends js.Object
+  
+  @js.native
+  sealed trait innerRef extends js.Object
   
   @js.native
   sealed trait is extends js.Object
@@ -512,8 +512,6 @@ object uiDashBoxStrings {
   @scala.inline
   def display: display = "display".asInstanceOf[display]
   @scala.inline
-  def div: div = "div".asInstanceOf[div]
-  @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
   def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
@@ -581,6 +579,8 @@ object uiDashBoxStrings {
   def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
   @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
+  def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
   @scala.inline
   def is: is = "is".asInstanceOf[is]
   @scala.inline

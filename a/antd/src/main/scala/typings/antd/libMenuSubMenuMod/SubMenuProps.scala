@@ -12,6 +12,7 @@ trait SubMenuProps extends js.Object {
   var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
   var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
   var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
+  var popupClassName: js.UndefOr[String] = js.undefined
   var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   var rootPrefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -26,6 +27,7 @@ object SubMenuProps {
     onTitleClick: /* e */ TitleEventEntity => Unit = null,
     onTitleMouseEnter: /* e */ TitleEventEntity => Unit = null,
     onTitleMouseLeave: /* e */ TitleEventEntity => Unit = null,
+    popupClassName: String = null,
     popupOffset: js.Tuple2[Double, Double] = null,
     rootPrefixCls: String = null,
     style: CSSProperties = null,
@@ -37,6 +39,7 @@ object SubMenuProps {
     if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
     if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(js.Any.fromFunction1(onTitleMouseEnter))
     if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(js.Any.fromFunction1(onTitleMouseLeave))
+    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName)
     if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset)
     if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls)
     if (style != null) __obj.updateDynamic("style")(style)

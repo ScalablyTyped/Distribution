@@ -101,7 +101,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def Divider: ComponentType[typings.antd.esDividerMod.DividerProps] = typings.antd.esDividerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDividerMod.DividerProps]]
   @scala.inline
-  def Dragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = typings.antd.esUploadDraggerMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
+  def Dragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = typings.antd.esUploadDraggerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
   @scala.inline
   def Drawer: ComponentType[typings.antd.esDrawerMod.DrawerProps] = typings.antd.esDrawerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDrawerMod.DrawerProps]]
   @scala.inline

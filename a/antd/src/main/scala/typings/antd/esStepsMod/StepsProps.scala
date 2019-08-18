@@ -3,6 +3,7 @@ package typings.antd.esStepsMod
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.finish
 import typings.antd.antdStrings.horizontal
+import typings.antd.antdStrings.navigation
 import typings.antd.antdStrings.process
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.vertical
@@ -25,6 +26,7 @@ trait StepsProps extends js.Object {
   var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
   var status: js.UndefOr[wait | process | finish | error] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var `type`: js.UndefOr[typings.antd.antdStrings.default | navigation] = js.undefined
 }
 
 object StepsProps {
@@ -41,7 +43,8 @@ object StepsProps {
     progressDot: Boolean | js.Function = null,
     size: typings.antd.antdStrings.default | small = null,
     status: wait | process | finish | error = null,
-    style: CSSProperties = null
+    style: CSSProperties = null,
+    `type`: typings.antd.antdStrings.default | navigation = null
   ): StepsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
@@ -56,6 +59,7 @@ object StepsProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepsProps]
   }
 }

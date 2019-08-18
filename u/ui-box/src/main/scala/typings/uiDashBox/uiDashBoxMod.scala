@@ -10,7 +10,6 @@ import typings.uiDashBox.distTypesEnhancersMod.PropValidators
 import typings.uiDashBox.distUtilsSplitDashBoxDashPropsMod.SplitBoxProps
 import typings.uiDashBox.distUtilsSplitDashPropsMod.Dictionary
 import typings.uiDashBox.distUtilsSplitDashPropsMod.SplitProps
-import typings.uiDashBox.uiDashBoxStrings.div
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ui-box", JSImport.Namespace)
 @js.native
 object uiDashBoxMod extends js.Object {
-  val default: BoxComponent[div] = js.native
+  val default: BoxComponent = js.native
   val hydrate: js.Function1[/* newEntries */ js.Array[CacheEntry], Unit] = js.native
   val propAliases: PropAliases = js.native
   val propEnhancers: PropEnhancers = js.native

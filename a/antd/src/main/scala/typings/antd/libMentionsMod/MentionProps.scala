@@ -6,6 +6,7 @@ import typings.rcDashMentions.rcDashMentionsNumbers.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
+import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,6 +27,7 @@ object MentionProps {
       /* hasValue */ typings.rcDashMentions.libOptionMod.OptionProps, 
       Boolean
     ]) = null,
+    getPopupContainer: () => HTMLElement = null,
     loading: js.UndefOr[Boolean] = js.undefined,
     notFoundContent: ReactNode = null,
     onBlur: FocusEventHandler[HTMLTextAreaElement] = null,
@@ -47,6 +49,7 @@ object MentionProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction0(getPopupContainer))
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

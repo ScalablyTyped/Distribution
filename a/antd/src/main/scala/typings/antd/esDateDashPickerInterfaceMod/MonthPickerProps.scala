@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
 
 trait MonthPickerProps
   extends PickerProps
-     with SinglePickerProps
+     with SinglePickerProps {
+  var monthCellContentRender: js.UndefOr[js.Function2[/* date */ Moment, /* locale */ js.Any, ReactNode]] = js.undefined
+}
 
 object MonthPickerProps {
   @scala.inline
@@ -33,6 +35,7 @@ object MonthPickerProps {
     id: Double | String = null,
     inputPrefixCls: String = null,
     locale: js.Any = null,
+    monthCellContentRender: (/* date */ Moment, /* locale */ js.Any) => ReactNode = null,
     name: String = null,
     onChange: (/* date */ Moment | Null, /* dateString */ String) => Unit = null,
     onOpenChange: /* status */ Boolean => Unit = null,
@@ -61,6 +64,7 @@ object MonthPickerProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (monthCellContentRender != null) __obj.updateDynamic("monthCellContentRender")(js.Any.fromFunction2(monthCellContentRender))
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))

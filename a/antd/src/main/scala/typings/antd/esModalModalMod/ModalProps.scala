@@ -23,6 +23,7 @@ trait ModalProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   /** 是否显示右上角的关闭按钮 */
   var closable: js.UndefOr[Boolean] = js.undefined
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   /** 确定按钮 loading */
   var confirmLoading: js.UndefOr[Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
@@ -70,6 +71,7 @@ object ModalProps {
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
+    closeIcon: ReactNode = null,
     confirmLoading: js.UndefOr[Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
     footer: ReactNode = null,
@@ -103,6 +105,7 @@ object ModalProps {
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(confirmLoading)) __obj.updateDynamic("confirmLoading")(confirmLoading)
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])

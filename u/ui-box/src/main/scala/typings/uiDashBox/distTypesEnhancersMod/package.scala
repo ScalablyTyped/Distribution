@@ -12,14 +12,15 @@ package object distTypesEnhancersMod {
   import typings.std.Pick
   import typings.uiDashBox.Anon_Clearfix
   import typings.uiDashBox.uiDashBoxNumbers.`0`
+  import typings.uiDashBox.uiDashBoxNumbers.`false`
   import typings.uiDashBox.uiDashBoxStrings.gridColumnGap
   import typings.uiDashBox.uiDashBoxStrings.gridGap
   import typings.uiDashBox.uiDashBoxStrings.gridRowGap
 
   type BoxCssProps[CP] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof CP ]: CP[P] | number | boolean | null | undefined}
+  {[ P in keyof CP ]: CP[P] | number | false | null | undefined}
     */ typings.uiDashBox.uiDashBoxStrings.BoxCssProps with CP
-  type BoxPropValue = js.UndefOr[String | Double | Boolean | Null]
+  type BoxPropValue = js.UndefOr[String | Double | `false` | Null]
   type CssProps = (Pick[
     StandardProperties[String | `0`], 
     /* import warning: LimitUnionLength.enterTypeRef Was union type with length 132 */ js.Any

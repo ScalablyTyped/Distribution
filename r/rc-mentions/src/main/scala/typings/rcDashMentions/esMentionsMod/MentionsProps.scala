@@ -5,6 +5,7 @@ import typings.rcDashMentions.rcDashMentionsNumbers.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
+import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,6 +19,7 @@ import scala.scalajs.js.annotation._
   var filterOption: js.UndefOr[
     `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
   ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   var notFoundContent: js.UndefOr[ReactNode] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
@@ -41,6 +43,7 @@ object MentionsProps {
     className: String = null,
     defaultValue: String = null,
     filterOption: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean]) = null,
+    getPopupContainer: () => HTMLElement = null,
     notFoundContent: ReactNode = null,
     onBlur: FocusEventHandler[HTMLTextAreaElement] = null,
     onChange: /* text */ String => Unit = null,
@@ -61,6 +64,7 @@ object MentionsProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction0(getPopupContainer))
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

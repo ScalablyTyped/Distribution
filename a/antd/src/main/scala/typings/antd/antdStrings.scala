@@ -153,7 +153,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT21DOT4` extends js.Object
+  sealed trait `3DOT22DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -1149,6 +1149,9 @@ object antdStrings {
   sealed trait multiply extends js.Object
   
   @js.native
+  sealed trait navigation extends js.Object
+  
+  @js.native
   sealed trait next extends js.Object
   
   @js.native
@@ -2087,7 +2090,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT21DOT4`: `3DOT21DOT4` = "3.21.4".asInstanceOf[`3DOT21DOT4`]
+  def `3DOT22DOT0`: `3DOT22DOT0` = "3.22.0".asInstanceOf[`3DOT22DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2616,6 +2619,8 @@ object antdStrings {
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
+  @scala.inline
+  def navigation: navigation = "navigation".asInstanceOf[navigation]
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   @scala.inline

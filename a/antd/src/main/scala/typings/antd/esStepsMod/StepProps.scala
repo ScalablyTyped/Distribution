@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 trait StepProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[ReactNode] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   var status: js.UndefOr[wait | process | finish | error] = js.undefined
@@ -27,6 +28,7 @@ object StepProps {
   def apply(
     className: String = null,
     description: ReactNode = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
     onClick: MouseEventHandler[HTMLElement] = null,
     status: wait | process | finish | error = null,
@@ -36,6 +38,7 @@ object StepProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

@@ -10,6 +10,7 @@ trait Anon_ArgsCancelText extends js.Object {
   var cancelText: Requireable[ReactNodeLike]
   var centered: Requireable[Boolean]
   var closable: Requireable[Boolean]
+  var closeIcon: Requireable[ReactNodeLike]
   var confirmLoading: Requireable[Boolean]
   var footer: Requireable[ReactNodeLike]
   var okText: Requireable[ReactNodeLike]
@@ -27,6 +28,7 @@ object Anon_ArgsCancelText {
     cancelText: Requireable[ReactNodeLike],
     centered: Requireable[Boolean],
     closable: Requireable[Boolean],
+    closeIcon: Requireable[ReactNodeLike],
     confirmLoading: Requireable[Boolean],
     footer: Requireable[ReactNodeLike],
     okText: Requireable[ReactNodeLike],
@@ -37,7 +39,7 @@ object Anon_ArgsCancelText {
     visible: Requireable[Boolean],
     width: Requireable[String | Double]
   ): Anon_ArgsCancelText = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, centered = centered, closable = closable, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(cancelText = cancelText, centered = centered, closable = closable, closeIcon = closeIcon, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
   
     __obj.asInstanceOf[Anon_ArgsCancelText]
   }
