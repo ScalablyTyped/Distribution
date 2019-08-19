@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sticky-cluster"
-version := "0.3-dt-20180214Z-fd8d2e"
+version := "0.3-dt-20190819Z-fd8d2e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

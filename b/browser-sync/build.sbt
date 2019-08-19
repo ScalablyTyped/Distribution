@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "browser-sync"
-version := "2.26-dt-20190520Z-f2eec0"
+version := "2.26-dt-20190819Z-aa6461"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "chokidar" % "3.0.2-ecb81c",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190816Z-71409c",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-aba9aa",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-55674a",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-c4d375",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,0 +1,109 @@
+package typings.fileDashType.fileDashTypeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.fileDashType.fileDashTypeStrings.`image/jpeg`
+  - typings.fileDashType.fileDashTypeStrings.`image/png`
+  - typings.fileDashType.fileDashTypeStrings.`image/gif`
+  - typings.fileDashType.fileDashTypeStrings.`image/webp`
+  - typings.fileDashType.fileDashTypeStrings.`image/flif`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-canon-cr2`
+  - typings.fileDashType.fileDashTypeStrings.`image/tiff`
+  - typings.fileDashType.fileDashTypeStrings.`image/bmp`
+  - typings.fileDashType.fileDashTypeStrings.`image/vndDOTms-photo`
+  - typings.fileDashType.fileDashTypeStrings.`image/vndDOTadobeDOTphotoshop`
+  - typings.fileDashType.fileDashTypeStrings.`application/epub+zip`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-xpinstall`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOToasisDOTopendocumentDOTtext`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOToasisDOTopendocumentDOTspreadsheet`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOToasisDOTopendocumentDOTpresentation`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTopenxmlformats-officedocumentDOTwordprocessingmlDOTdocument`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTopenxmlformats-officedocumentDOTpresentationmlDOTpresentation`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTopenxmlformats-officedocumentDOTspreadsheetmlDOTsheet`
+  - typings.fileDashType.fileDashTypeStrings.`application/zip`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-tar`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-rar-compressed`
+  - typings.fileDashType.fileDashTypeStrings.`application/gzip`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-bzip2`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-7z-compressed`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-apple-diskimage`
+  - typings.fileDashType.fileDashTypeStrings.`video/mp4`
+  - typings.fileDashType.fileDashTypeStrings.`audio/midi`
+  - typings.fileDashType.fileDashTypeStrings.`video/x-matroska`
+  - typings.fileDashType.fileDashTypeStrings.`video/webm`
+  - typings.fileDashType.fileDashTypeStrings.`video/quicktime`
+  - typings.fileDashType.fileDashTypeStrings.`video/vndDOTavi`
+  - typings.fileDashType.fileDashTypeStrings.`audio/vndDOTwave`
+  - typings.fileDashType.fileDashTypeStrings.`audio/qcelp`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-ms-wma`
+  - typings.fileDashType.fileDashTypeStrings.`video/x-ms-asf`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTms-asf`
+  - typings.fileDashType.fileDashTypeStrings.`video/mpeg`
+  - typings.fileDashType.fileDashTypeStrings.`video/3gpp`
+  - typings.fileDashType.fileDashTypeStrings.`audio/mpeg`
+  - typings.fileDashType.fileDashTypeStrings.`audio/mp4`
+  - typings.fileDashType.fileDashTypeStrings.`audio/opus`
+  - typings.fileDashType.fileDashTypeStrings.`video/ogg`
+  - typings.fileDashType.fileDashTypeStrings.`audio/ogg`
+  - typings.fileDashType.fileDashTypeStrings.`application/ogg`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-flac`
+  - typings.fileDashType.fileDashTypeStrings.`audio/ape`
+  - typings.fileDashType.fileDashTypeStrings.`audio/wavpack`
+  - typings.fileDashType.fileDashTypeStrings.`audio/amr`
+  - typings.fileDashType.fileDashTypeStrings.`application/pdf`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-msdownload`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-shockwave-flash`
+  - typings.fileDashType.fileDashTypeStrings.`application/rtf`
+  - typings.fileDashType.fileDashTypeStrings.`application/wasm`
+  - typings.fileDashType.fileDashTypeStrings.`font/woff`
+  - typings.fileDashType.fileDashTypeStrings.`font/woff2`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTms-fontobject`
+  - typings.fileDashType.fileDashTypeStrings.`font/ttf`
+  - typings.fileDashType.fileDashTypeStrings.`font/otf`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-icon`
+  - typings.fileDashType.fileDashTypeStrings.`video/x-flv`
+  - typings.fileDashType.fileDashTypeStrings.`application/postscript`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-xz`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-sqlite3`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-nintendo-nes-rom`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-google-chrome-extension`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTms-cab-compressed`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-deb`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-unix-archive`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-rpm`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-compress`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-lzip`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-msi`
+  - typings.fileDashType.fileDashTypeStrings.`application/mxf`
+  - typings.fileDashType.fileDashTypeStrings.`video/mp2t`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-blender`
+  - typings.fileDashType.fileDashTypeStrings.`image/bpg`
+  - typings.fileDashType.fileDashTypeStrings.`image/jp2`
+  - typings.fileDashType.fileDashTypeStrings.`image/jpx`
+  - typings.fileDashType.fileDashTypeStrings.`image/jpm`
+  - typings.fileDashType.fileDashTypeStrings.`image/mj2`
+  - typings.fileDashType.fileDashTypeStrings.`audio/aiff`
+  - typings.fileDashType.fileDashTypeStrings.`application/xml`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-mobipocket-ebook`
+  - typings.fileDashType.fileDashTypeStrings.`image/heif`
+  - typings.fileDashType.fileDashTypeStrings.`image/heif-sequence`
+  - typings.fileDashType.fileDashTypeStrings.`image/heic`
+  - typings.fileDashType.fileDashTypeStrings.`image/heic-sequence`
+  - typings.fileDashType.fileDashTypeStrings.`image/ktx`
+  - typings.fileDashType.fileDashTypeStrings.`application/dicom`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-musepack`
+  - typings.fileDashType.fileDashTypeStrings.`text/calendar`
+  - typings.fileDashType.fileDashTypeStrings.`model/gltf-binary`
+  - typings.fileDashType.fileDashTypeStrings.`application/vndDOTtcpdumpDOTpcap`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-dsf`
+  - typings.fileDashType.fileDashTypeStrings.`application/xDOTmsDOTshortcut`
+  - typings.fileDashType.fileDashTypeStrings.`application/xDOTappleDOTalias`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-voc`
+  - typings.fileDashType.fileDashTypeStrings.`audio/vndDOTdolbyDOTdd-raw`
+  - typings.fileDashType.fileDashTypeStrings.`audio/x-m4a`
+*/
+trait MimeType extends js.Object
+

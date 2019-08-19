@@ -2,6 +2,7 @@ package typings.atFeathersjsExpress.atFeathersjsExpressMod
 
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.ServiceMethods
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.SetupMethod
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.PathParams
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandlerParams
@@ -16,10 +17,10 @@ import scala.scalajs.js.annotation._
 trait Application[T] extends js.Object {
   @JSName("use")
   var use_Original: FeathersApplicationRequestHandler[T] = js.native
-  def use(handlers: (RequestHandler | RequestHandlerParams)*): T = js.native
+  def use(handlers: (RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary])*): T = js.native
   def use(
     path: PathParams,
-    handlers: (RequestHandler | RequestHandlerParams | (Partial[ServiceMethods[_] with SetupMethod]) | Application[_])*
+    handlers: (RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary] | (Partial[ServiceMethods[_] with SetupMethod]) | Application[_])*
   ): T = js.native
 }
 

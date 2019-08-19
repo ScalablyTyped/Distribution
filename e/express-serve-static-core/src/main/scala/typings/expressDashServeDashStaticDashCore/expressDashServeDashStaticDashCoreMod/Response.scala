@@ -43,7 +43,7 @@ trait Response
     * After middleware.init executed, Response will contain req property
     * See: express/lib/middleware/init.js
     */
-  var req: js.UndefOr[Request] = js.native
+  var req: js.UndefOr[Request[ParamsDictionary]] = js.native
   /**
     * Send a response.
     *
@@ -64,8 +64,8 @@ trait Response
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request, res: Response): js.Any = js.native
-  def app(req: Request, res: ServerResponse): js.Any = js.native
+  def app(req: Request[ParamsDictionary], res: Response): js.Any = js.native
+  def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /**

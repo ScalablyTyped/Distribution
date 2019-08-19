@@ -10,6 +10,7 @@ import typings.express.expressMod.Request
 import typings.express.expressMod.Response
 import typings.express.expressMod.RouterOptions
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Handler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
@@ -65,14 +66,14 @@ trait Typeofexpress extends js.Object {
     * These are the exposed prototypes.
     */
   def application(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
   ): js.Any = js.native
   /**
     * These are the exposed prototypes.
     */
   def application(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: ServerResponse
   ): js.Any = js.native
   /**

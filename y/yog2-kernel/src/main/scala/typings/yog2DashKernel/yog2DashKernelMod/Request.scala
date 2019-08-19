@@ -1,5 +1,6 @@
 package typings.yog2DashKernel.yog2DashKernelMod
 
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.nodeDashRal.nodeDashRalMod.RALNs.RalRunner
 import typings.yog2DashKernel.Anon_AppendExtPath
 import typings.yog2DashKernel.Fn_Name
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Request
-  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request {
+  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary] {
   var CURRENT_APP: String = js.native
   @JSName("ralP")
   var ralP_Original: Fn_Name = js.native

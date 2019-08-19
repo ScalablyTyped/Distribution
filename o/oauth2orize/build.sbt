@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oauth2orize"
-version := "1.8-dt-20190513Z-ca7f7a"
+version := "1.8-dt-20190819Z-ca7f7a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

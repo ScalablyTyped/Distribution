@@ -5,10 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressMod {
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+
   type Application = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Application
   type CookieOptions = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.CookieOptions
   type Errback = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Errback
-  type ErrorRequestHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ErrorRequestHandler
+  type ErrorRequestHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ErrorRequestHandler[ParamsDictionary]
   type Express = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express
   type Handler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Handler
   type IRoute = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRoute
@@ -17,8 +19,8 @@ package object expressMod {
   type IRouterMatcher[T] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRouterMatcher[T]
   type MediaType = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.MediaType
   type NextFunction = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
-  type Request = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
-  type RequestHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler
+  type Request = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary]
+  type RequestHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[ParamsDictionary]
   type RequestParamHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestParamHandler
   type Response = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
   type Router = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router

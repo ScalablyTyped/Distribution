@@ -1,6 +1,7 @@
 package typings.peerDashDial.peerDashDialMod
 
 import typings.express.expressMod.Express
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.node.httpMod.IncomingMessage
@@ -29,8 +30,8 @@ trait ServerOptions extends js.Object {
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def expressApp(req: Request, res: Response): js.Any = js.native
-  def expressApp(req: Request, res: ServerResponse): js.Any = js.native
+  def expressApp(req: Request[ParamsDictionary], res: Response): js.Any = js.native
+  def expressApp(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def expressApp(req: IncomingMessage, res: Response): js.Any = js.native
   def expressApp(req: IncomingMessage, res: ServerResponse): js.Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Express extends Application {
-  var request: Request = js.native
+  var request: Request[ParamsDictionary] = js.native
   var response: Response = js.native
 }
 

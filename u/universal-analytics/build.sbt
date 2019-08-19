@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "universal-analytics"
-version := "0.4-dt-20180214Z-69cb1f"
+version := "0.4-dt-20190819Z-69cb1f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

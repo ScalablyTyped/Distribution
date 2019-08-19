@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "connect-history-api-fallback-exclusions"
-version := "1.5-dt-20190205Z-5d806c"
+version := "1.5-dt-20190819Z-8ff11a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190816Z-71409c",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-aba9aa",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")

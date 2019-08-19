@@ -1,6 +1,7 @@
 package typings.oauthDashShim.oauthDashShimMod
 
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.oauthDashShim.Anon_Cb
@@ -9,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Handler extends RequestHandler {
+trait Handler extends RequestHandler[ParamsDictionary] {
   var credentials: Anon_Cb = js.native
   @JSName("interpret")
   var interpret_Original: typings.express.expressMod.RequestHandler = js.native
@@ -21,22 +22,22 @@ trait Handler extends RequestHandler {
   var unhandled_Original: typings.express.expressMod.RequestHandler = js.native
   def init(configs: js.Array[Config]): Unit = js.native
   def interpret(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: Response,
     next: NextFunction
   ): js.Any = js.native
   def proxy(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: Response,
     next: NextFunction
   ): js.Any = js.native
   def redirect(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: Response,
     next: NextFunction
   ): js.Any = js.native
   def unhandled(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: Response,
     next: NextFunction
   ): js.Any = js.native

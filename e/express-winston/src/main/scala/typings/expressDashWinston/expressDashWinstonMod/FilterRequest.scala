@@ -1,6 +1,7 @@
 package typings.expressDashWinston.expressDashWinstonMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
 import typings.node.Anon_End
 import typings.node.NodeJSNs.WritableStream
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FilterRequest
-  extends Request
+  extends Request[ParamsDictionary]
      with /* other */ StringDictionary[js.Any] {
   /* InferMemberOverrides */
   override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -46,9 +47,7 @@ trait FilterRequest
   override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native

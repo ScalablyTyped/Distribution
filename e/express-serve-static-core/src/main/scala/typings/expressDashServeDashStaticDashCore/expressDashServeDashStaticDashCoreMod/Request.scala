@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Request
+trait Request[P /* <: Params */]
   extends IncomingMessage
      with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request {
   /**
@@ -62,7 +62,7 @@ trait Request
   var method_Request: String = js.native
   var next: js.UndefOr[NextFunction] = js.native
   var originalUrl: String = js.native
-  var params: Params = js.native
+  var params: P = js.native
   /**
     * Short-hand for `url.parse(req.url).pathname`.
     */
@@ -196,8 +196,8 @@ trait Request
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request, res: Response): js.Any = js.native
-  def app(req: Request, res: ServerResponse): js.Any = js.native
+  def app(req: Request[ParamsDictionary], res: Response): js.Any = js.native
+  def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /** Clear cookie `name`. */

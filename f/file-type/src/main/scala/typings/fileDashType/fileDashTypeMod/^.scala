@@ -12,6 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
+  	Supported file extensions.
+  	*/
+  val extensions: FileType = js.native
+  /**
+  	Supported MIME types.
+  	*/
+  val mimeTypes: MimeType = js.native
+  /**
   	The minimum amount of bytes needed to detect a file type. Currently, it's 4100 bytes, but it can change, so don't hard-code it.
   	*/
   val minimumBytes: Double = js.native

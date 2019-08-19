@@ -4,6 +4,7 @@ import typings.bodyDashParser.bodyDashParserMod.OptionsJson
 import typings.cors.corsMod.CorsOptions
 import typings.express.expressMod.Application
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
@@ -25,11 +26,11 @@ trait ServerRegistration extends js.Object {
     * third argument.
     */
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: Response
   ): js.Any = js.native
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: ServerResponse
   ): js.Any = js.native
   def app(req: IncomingMessage, res: Response): js.Any = js.native

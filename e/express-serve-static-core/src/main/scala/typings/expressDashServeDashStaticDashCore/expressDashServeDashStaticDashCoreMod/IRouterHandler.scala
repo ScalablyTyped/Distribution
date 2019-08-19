@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRouterHandler[T] extends js.Object {
-  def apply(handlers: (RequestHandler | RequestHandlerParams)*): T = js.native
+  def apply(handlers: (RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary])*): T = js.native
 }
 

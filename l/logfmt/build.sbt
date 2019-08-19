@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "logfmt"
-version := "1.2-dt-20190618Z-c31045"
+version := "1.2-dt-20190819Z-c31045"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

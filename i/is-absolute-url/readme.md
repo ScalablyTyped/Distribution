@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-absolute-url
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Check if an URL is absolute

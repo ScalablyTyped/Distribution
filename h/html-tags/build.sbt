@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-tags"
-version := "3.0.0-6b5f9d"
+version := "3.1.0-6b5f9d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

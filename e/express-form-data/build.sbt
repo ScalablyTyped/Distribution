@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-form-data"
-version := "2.0-dt-20190802Z-216935"
+version := "2.0-dt-20190819Z-216935"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

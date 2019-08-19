@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "body-parser"
-version := "1.17-dt-20180425Z-0f462b"
+version := "1.17-dt-20190819Z-0f462b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

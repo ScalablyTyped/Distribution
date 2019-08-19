@@ -1,6 +1,7 @@
 package typings.yog2DashKernel.yog2DashKernelMod
 
 import typings.express.expressMod.Express
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.lodash.lodashMod.LoDashImplicitWrapper
 import typings.lodash.lodashMod.LoDashStatic
 import typings.node.httpMod.IncomingMessage
@@ -116,11 +117,11 @@ trait Yog extends js.Object {
     * third argument.
     */
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
   ): js.Any = js.native
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
     res: ServerResponse
   ): js.Any = js.native
   def app(
