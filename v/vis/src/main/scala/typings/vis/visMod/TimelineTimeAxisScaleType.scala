@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.vis.visStrings.hour
   - typings.vis.visStrings.weekday
   - typings.vis.visStrings.day
+  - typings.vis.visStrings.week
   - typings.vis.visStrings.month
   - typings.vis.visStrings.year
 */

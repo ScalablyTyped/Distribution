@@ -4,32 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. 
-  * That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.
-  *
-  * While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered 
-  * secure storage. They can be accessed by Exchange Web Services or Extended MAPI. 
-  * They should not be used to store sensitive information such as user credentials or security tokens.
-  *
-  * The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.
-  *
-  * The RoamingSettings object is accessible via the roamingSettings property in the Office.context namespace.
-  *
-  * **Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. 
-  * For task panes, this means that it is only initialized when the task pane first opens. 
-  * If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if 
-  * your add-in has persisted changes.
-  * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
-  *
-  * [Api set: Mailbox 1.0]
-  *
-  * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
-  * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-  */
 @js.native
 trait RoamingSettings extends js.Object {
   /**

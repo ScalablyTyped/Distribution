@@ -925,6 +925,8 @@ trait JSTree extends JQuery {
     * if set to a function (receiving the current state as argument) the result of that function will be used as state
     * @trigger refresh.jstree
     */
+  def refresh(): Unit = js.native
+  def refresh(skip_loading: Boolean): Unit = js.native
   def refresh(skip_loading: Boolean, forget_state: js.Any): Unit = js.native
   /**
     * refreshes a node in the tree (reload its children) all opened nodes inside that node are reloaded with calls to `load_node`.

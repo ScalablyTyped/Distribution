@@ -1,6 +1,7 @@
 
 # Scala.js typings for i18next-node-fs-backend
 
+Typings are for version 2.1
 
 ## Library description:
 node.js backend layer for i18next using fs module to load resources from filesystem

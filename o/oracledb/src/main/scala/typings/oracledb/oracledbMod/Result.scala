@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Contains information regarding the outcome of a successful connection.execute().
   */
-trait Result extends js.Object {
+trait Result[T] extends js.Object {
   /**
     * This property will be defined if the executed statement returned Implicit Results. Depending on the value of resultSet it will either be an array,
     * each element containing an array of rows from one query, or an array of ResultSets each corresponding to a query.
@@ -15,7 +15,7 @@ trait Result extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#implicitresults
     * @since 4.0
     */
-  var implicitResults: js.UndefOr[js.Array[js.Array[Row] | ResultSet]] = js.undefined
+  var implicitResults: js.UndefOr[js.Array[js.Array[T] | ResultSet[T]]] = js.undefined
   /**
     * For SELECT statements, this contains an array of objects describing details of columns for the select list.
     * For non queries, this property is undefined.
@@ -29,7 +29,7 @@ trait Result extends js.Object {
     * then outBinds is returned as an array. If bindParams is passed as an object,
     * then outBinds is returned as an object. If there are no OUT or IN OUT binds, the value is undefined.
     */
-  var outBinds: Row
+  var outBinds: T
   /**
     * For SELECT statements when the resultSet option is true, use the resultSet object to fetch rows.
     *
@@ -39,7 +39,7 @@ trait Result extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsetclass
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsethandling
     */
-  var resultSet: ResultSet
+  var resultSet: ResultSet[T]
   /**
     * For SELECT statements using direct fetches, rows contains an array of fetched rows.
     * It will be NULL if there is an error or the SQL statement was not a SELECT statement.
@@ -50,7 +50,7 @@ trait Result extends js.Object {
     * The number of rows returned is limited by oracledb.maxRows or the maxRows option in an execute() call.
     * If maxRows is 0, then the number of rows is limited by Node.js memory constraints.
     */
-  var rows: js.Array[Row]
+  var rows: js.Array[T]
   /**
     * For DML statements (including SELECT FOR UPDATE) this contains the number of rows affected,
     * for example the number of rows inserted. For non-DML statements such as queries and PL/SQL statements,
@@ -61,17 +61,17 @@ trait Result extends js.Object {
 
 object Result {
   @scala.inline
-  def apply(
+  def apply[T](
     metaData: js.Array[Metadata],
-    outBinds: Row,
-    resultSet: ResultSet,
-    rows: js.Array[Row],
+    outBinds: T,
+    resultSet: ResultSet[T],
+    rows: js.Array[T],
     rowsAffected: Double,
-    implicitResults: js.Array[js.Array[Row] | ResultSet] = null
-  ): Result = {
+    implicitResults: js.Array[js.Array[T] | ResultSet[T]] = null
+  ): Result[T] = {
     val __obj = js.Dynamic.literal(metaData = metaData, outBinds = outBinds.asInstanceOf[js.Any], resultSet = resultSet, rows = rows, rowsAffected = rowsAffected)
     if (implicitResults != null) __obj.updateDynamic("implicitResults")(implicitResults)
-    __obj.asInstanceOf[Result]
+    __obj.asInstanceOf[Result[T]]
   }
 }
 

@@ -14,7 +14,7 @@ object ^
       Instantiable2[
         js.UndefOr[/* services */ js.Any], 
         js.UndefOr[/* options */ i18nextNodeFsBackEndOptions], 
-        BackEnd
+        Backend
       ]
     ]
 

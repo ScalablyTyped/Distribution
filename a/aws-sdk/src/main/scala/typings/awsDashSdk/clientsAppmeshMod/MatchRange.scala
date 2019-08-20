@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait MatchRange extends js.Object {
   /**
-    * End of the range value.
+    * The end of the range.
     */
   var end: Long
   /**
-    * Start of the range value.
+    * The start of the range.
     */
   var start: Long
 }

@@ -16,6 +16,12 @@ trait Server extends js.Object {
   @JSName("render")
   var render_Original: RenderMethod = js.native
   /**
+    * Returns the closest views manager to your realm (either on your realm or inherited from an ancestor realm)
+    *
+    * @see {@link https://github.com/hapijs/vision/blob/master/API.md#servergetviewsmanager}
+    */
+  def getViewsManager(): ViewManager = js.native
+  /**
     * Utilizes the server views manager to render a template
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverrendertemplate-context-options-callback}
     */

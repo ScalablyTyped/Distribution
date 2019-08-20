@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oracledb"
-version := "4.0-dt-20190816Z-c22a4b"
+version := "4.0-dt-20190819Z-24bf99"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

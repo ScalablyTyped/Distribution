@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mongoose-paginate-v2"
-version := "1.0-dt-20190719Z-21c659"
+version := "1.0-dt-20190719Z-a2c771"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-683d44",
   "org.scalablytyped" %%% "mongodb" % "3.2-dt-20190816Z-783ebd",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190807Z-42afa1",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190819Z-b15403",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

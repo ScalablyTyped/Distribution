@@ -1,0 +1,39 @@
+package typings.atReactDashNativeDashCommunityCli.atReactDashNativeDashCommunityCliMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ProjectConfigIOS extends js.Object {
+  var folder: String
+  var libraryFolder: String
+  var pbxprojPath: String
+  var plist: js.Array[_]
+  var podfile: Null
+  var podspecPath: Null | String
+  var projectName: String
+  var projectPath: String
+  var sharedLibraries: js.Array[_]
+  var sourceDir: String
+}
+
+object ProjectConfigIOS {
+  @scala.inline
+  def apply(
+    folder: String,
+    libraryFolder: String,
+    pbxprojPath: String,
+    plist: js.Array[_],
+    podfile: Null,
+    projectName: String,
+    projectPath: String,
+    sharedLibraries: js.Array[_],
+    sourceDir: String,
+    podspecPath: String = null
+  ): ProjectConfigIOS = {
+    val __obj = js.Dynamic.literal(folder = folder, libraryFolder = libraryFolder, pbxprojPath = pbxprojPath, plist = plist, podfile = podfile, projectName = projectName, projectPath = projectPath, sharedLibraries = sharedLibraries, sourceDir = sourceDir)
+    if (podspecPath != null) __obj.updateDynamic("podspecPath")(podspecPath)
+    __obj.asInstanceOf[ProjectConfigIOS]
+  }
+}
+

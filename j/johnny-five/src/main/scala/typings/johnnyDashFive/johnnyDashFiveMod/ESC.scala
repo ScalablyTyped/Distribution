@@ -12,11 +12,16 @@ class ESC protected () extends js.Object {
   def this(option: ESCOption) = this()
   var id: String = js.native
   var pin: Double | String = js.native
-  var range: js.Array[Double] = js.native
+  var pwmRange: js.Array[Double] = js.native
   val value: Double = js.native
-  def max(): Unit = js.native
-  def min(): Unit = js.native
-  def speed(value: Double): Unit = js.native
-  def stop(): Unit = js.native
+  def brake(): this.type = js.native
+  def throttle(value: Double): this.type = js.native
+}
+
+/* static members */
+@JSImport("johnny-five", "ESC")
+@js.native
+object ESC extends js.Object {
+  var Collection: ESCs = js.native
 }
 

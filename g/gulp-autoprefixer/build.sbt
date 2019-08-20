@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-autoprefixer"
-version := "0.0-unknown-dt-20190322Z-7304f8"
+version := "0.0-unknown-dt-20190819Z-0b7c10"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

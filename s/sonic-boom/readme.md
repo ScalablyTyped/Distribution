@@ -1,7 +1,7 @@
 
 # Scala.js typings for sonic-boom
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 Extremely fast utf8 only stream implementation

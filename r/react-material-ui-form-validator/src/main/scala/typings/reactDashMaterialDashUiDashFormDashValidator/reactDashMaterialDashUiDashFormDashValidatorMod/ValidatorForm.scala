@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValidatorForm ()
   extends Component[ValidatorFormProps, js.Object, js.Any] {
-  def isFormValid(dryRun: Boolean): Boolean = js.native
+  def isFormValid(dryRun: Boolean): js.Promise[Boolean] = js.native
   def resetValidations(): Unit = js.native
 }
 
@@ -18,5 +18,6 @@ class ValidatorForm ()
 @js.native
 object ValidatorForm extends js.Object {
   def addValidationRule(name: String, callback: js.Function1[/* value */ js.Any, Boolean]): Unit = js.native
+  def removeValidationRule(name: String): Unit = js.native
 }
 

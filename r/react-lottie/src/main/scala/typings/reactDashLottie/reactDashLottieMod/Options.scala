@@ -16,8 +16,9 @@ trait Options extends js.Object {
   var autoplay: js.UndefOr[Boolean] = js.undefined
   /**
     * Defines if the animation should play only once or repeatedly in an endless loop
+    * or the number of loops that should be completed before the animation ends
     */
-  var loop: js.UndefOr[Boolean] = js.undefined
+  var loop: js.UndefOr[Boolean | Double] = js.undefined
   var rendererSettings: js.UndefOr[Anon_ClassName] = js.undefined
 }
 
@@ -26,12 +27,12 @@ object Options {
   def apply(
     animationData: js.Any,
     autoplay: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
+    loop: Boolean | Double = null,
     rendererSettings: Anon_ClassName = null
   ): Options = {
     val __obj = js.Dynamic.literal(animationData = animationData)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (rendererSettings != null) __obj.updateDynamic("rendererSettings")(rendererSettings)
     __obj.asInstanceOf[Options]
   }

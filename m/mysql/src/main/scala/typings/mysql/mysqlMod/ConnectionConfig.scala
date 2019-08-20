@@ -38,7 +38,7 @@ trait ConnectionConfig extends ConnectionOptions {
   /**
     * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
     */
-  var flags: js.UndefOr[js.Array[String]] = js.undefined
+  var flags: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
     * The hostname of the database you are connecting to. (Default: localhost)
     */
@@ -121,7 +121,7 @@ object ConnectionConfig {
     database: String = null,
     dateStrings: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE]) = null,
     debug: Boolean | (js.Array[String | Types]) = null,
-    flags: js.Array[String] = null,
+    flags: String | js.Array[String] = null,
     host: String = null,
     insecureAuth: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
@@ -146,7 +146,7 @@ object ConnectionConfig {
     if (database != null) __obj.updateDynamic("database")(database)
     if (dateStrings != null) __obj.updateDynamic("dateStrings")(dateStrings.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(insecureAuth)) __obj.updateDynamic("insecureAuth")(insecureAuth)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)

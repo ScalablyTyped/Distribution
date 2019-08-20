@@ -1,18 +1,18 @@
 package typings.reactstrap.libRowMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RowProps
-  extends HTMLProps[HTMLElement]
-     with /* key */ StringDictionary[js.Any] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLElement>, 'form'> ]: react.react.HTMLProps<std.HTMLElement>[P]} */ trait RowProps
+  extends /* key */ StringDictionary[js.Any] {
+  var className: js.UndefOr[String] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
+  var form: js.UndefOr[Boolean] = js.undefined
   var noGutters: js.UndefOr[Boolean] = js.undefined
   var tag: js.UndefOr[ReactType[_]] = js.undefined
 }
@@ -20,18 +20,18 @@ trait RowProps
 object RowProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     cssModule: CSSModule = null,
+    form: js.UndefOr[Boolean] = js.undefined,
     noGutters: js.UndefOr[Boolean] = js.undefined,
     tag: ReactType[_] = null
   ): RowProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (!js.isUndefined(form)) __obj.updateDynamic("form")(form)
     if (!js.isUndefined(noGutters)) __obj.updateDynamic("noGutters")(noGutters)
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowProps]

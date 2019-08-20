@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "helmet"
-version := "0.0-unknown-dt-20190322Z-3a98ea"
+version := "0.0-unknown-dt-20190819Z-2e5119"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

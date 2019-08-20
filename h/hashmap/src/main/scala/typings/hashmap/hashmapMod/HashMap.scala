@@ -25,6 +25,20 @@ trait HashMap[TKey, TValue] extends js.Object {
     */
   def count(): Double
   /**
+    * Removes given key from hashmap.
+    *
+    * @param key Key.
+    * @return Self.
+    */
+  def delete(key: TKey): HashMap[TKey, TValue]
+  /**
+    * Returns all key-value pairs.
+    *
+    * @return List of key-value pairs.
+    * @since 2.3.0
+    */
+  def entries(): js.Array[js.Tuple2[TKey, TValue]]
+  /**
     * Iterates over hashmap.
     *
     * @param callback Function to be invoked for every hashmap entry.
@@ -63,6 +77,7 @@ trait HashMap[TKey, TValue] extends js.Object {
     *
     * @param key Key.
     * @return Self.
+    * @deprecated Since 2.3.0
     */
   def remove(key: TKey): HashMap[TKey, TValue]
   /**
@@ -95,6 +110,8 @@ object HashMap {
     clone: () => HashMap[TKey, TValue],
     copy: HashMap[TKey, TValue] => HashMap[TKey, TValue],
     count: () => Double,
+    delete: TKey => HashMap[TKey, TValue],
+    entries: () => js.Array[js.Tuple2[TKey, TValue]],
     forEach: js.Function2[/* value */ TValue, /* key */ TKey, Unit] => HashMap[TKey, TValue],
     get: TKey => TValue,
     has: TKey => Boolean,
@@ -105,7 +122,7 @@ object HashMap {
     set: (TKey, TValue) => HashMap[TKey, TValue],
     values: () => js.Array[TValue]
   ): HashMap[TKey, TValue] = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), clone = js.Any.fromFunction0(clone), copy = js.Any.fromFunction1(copy), count = js.Any.fromFunction0(count), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), multi = js.Any.fromFunction1(multi), remove = js.Any.fromFunction1(remove), search = js.Any.fromFunction1(search), set = js.Any.fromFunction2(set), values = js.Any.fromFunction0(values))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), clone = js.Any.fromFunction0(clone), copy = js.Any.fromFunction1(copy), count = js.Any.fromFunction0(count), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), multi = js.Any.fromFunction1(multi), remove = js.Any.fromFunction1(remove), search = js.Any.fromFunction1(search), set = js.Any.fromFunction2(set), values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[HashMap[TKey, TValue]]
   }

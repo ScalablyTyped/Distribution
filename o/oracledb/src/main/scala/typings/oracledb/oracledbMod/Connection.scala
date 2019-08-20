@@ -158,7 +158,7 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sqlexecution
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
-  def execute(sql: String): js.Promise[Result] = js.native
+  def execute[T](sql: String): js.Promise[Result[T]] = js.native
   /**
     * This call executes a single SQL or PL/SQL statement.
     *
@@ -168,11 +168,11 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sqlexecution
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
-  def execute(sql: String, bindParams: BindParameters): js.Promise[Result] = js.native
-  def execute(
+  def execute[T](sql: String, bindParams: BindParameters): js.Promise[Result[T]] = js.native
+  def execute[T](
     sql: String,
     bindParams: BindParameters,
-    callback: js.Function2[/* error */ DBError, /* result */ Result, Unit]
+    callback: js.Function2[/* error */ DBError, /* result */ Result[T], Unit]
   ): Unit = js.native
   /**
     * This call executes a single SQL or PL/SQL statement.
@@ -184,19 +184,19 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sqlexecution
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
-  def execute(sql: String, bindParams: BindParameters, options: ExecuteOptions): js.Promise[Result] = js.native
-  def execute(
+  def execute[T](sql: String, bindParams: BindParameters, options: ExecuteOptions): js.Promise[Result[T]] = js.native
+  def execute[T](
     sql: String,
     bindParams: BindParameters,
     options: ExecuteOptions,
-    callback: js.Function2[/* error */ DBError, /* result */ Result, Unit]
+    callback: js.Function2[/* error */ DBError, /* result */ Result[T], Unit]
   ): Unit = js.native
-  def execute(sql: String, callback: js.Function2[/* error */ DBError, /* result */ Result, Unit]): Unit = js.native
-  def executeMany(sql: String, binds: js.Array[Row]): js.Promise[Results] = js.native
-  def executeMany(
+  def execute[T](sql: String, callback: js.Function2[/* error */ DBError, /* result */ Result[T], Unit]): Unit = js.native
+  def executeMany[T](sql: String, binds: js.Array[BindParameters]): js.Promise[Results[T]] = js.native
+  def executeMany[T](
     sql: String,
-    binds: js.Array[Row],
-    callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
+    binds: js.Array[BindParameters],
+    callback: js.Function2[/* error */ DBError, /* result */ Results[T], Unit]
   ): Unit = js.native
   /**
     * This method allows sets of data values to be bound to one DML or PL/SQL statement for execution.
@@ -237,18 +237,18 @@ trait Connection extends js.Object {
     *
     * @since 2.2
     */
-  def executeMany(sql: String, binds: js.Array[Row], options: ExecuteManyOptions): js.Promise[Results] = js.native
-  def executeMany(
+  def executeMany[T](sql: String, binds: js.Array[BindParameters], options: ExecuteManyOptions): js.Promise[Results[T]] = js.native
+  def executeMany[T](
     sql: String,
-    binds: js.Array[Row],
+    binds: js.Array[BindParameters],
     options: ExecuteManyOptions,
-    callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
+    callback: js.Function2[/* error */ DBError, /* result */ Results[T], Unit]
   ): Unit = js.native
-  def executeMany(sql: String, iterations: Double): js.Promise[Results] = js.native
-  def executeMany(
+  def executeMany[T](sql: String, iterations: Double): js.Promise[Results[T]] = js.native
+  def executeMany[T](
     sql: String,
     iterations: Double,
-    callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
+    callback: js.Function2[/* error */ DBError, /* result */ Results[T], Unit]
   ): Unit = js.native
   /**
     * This method allows sets of data values to be bound to one DML or PL/SQL statement for execution.
@@ -266,12 +266,12 @@ trait Connection extends js.Object {
     * @param iterations The number of times the SQL should be executed.
     * @param options Optional parameter to control the execution.
     */
-  def executeMany(sql: String, iterations: Double, options: ExecuteManyOptions): js.Promise[Results] = js.native
-  def executeMany(
+  def executeMany[T](sql: String, iterations: Double, options: ExecuteManyOptions): js.Promise[Results[T]] = js.native
+  def executeMany[T](
     sql: String,
     iterations: Double,
     options: ExecuteManyOptions,
-    callback: js.Function2[/* error */ DBError, /* result */ Results, Unit]
+    callback: js.Function2[/* error */ DBError, /* result */ Results[T], Unit]
   ): Unit = js.native
   /**
     * Returns a DbObject prototype object representing the named Oracle Database object or collection.

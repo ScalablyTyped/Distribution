@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sonic-boom"
-version := "0.6-dt-20190212Z-f0496e"
+version := "0.7-dt-20190819Z-676f42"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

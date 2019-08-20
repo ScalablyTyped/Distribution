@@ -30,15 +30,15 @@ package object clientsAppmeshMod {
   type HealthCheckTimeoutMillis = Double
   type Hostname = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.connect
-    - typings.awsDashSdk.awsDashSdkStrings.delete
-    - typings.awsDashSdk.awsDashSdkStrings.get
-    - typings.awsDashSdk.awsDashSdkStrings.head
-    - typings.awsDashSdk.awsDashSdkStrings.options
-    - typings.awsDashSdk.awsDashSdkStrings.patch
-    - typings.awsDashSdk.awsDashSdkStrings.post
-    - typings.awsDashSdk.awsDashSdkStrings.put
-    - typings.awsDashSdk.awsDashSdkStrings.trace
+    - typings.awsDashSdk.awsDashSdkStrings.CONNECT
+    - typings.awsDashSdk.awsDashSdkStrings.DELETE
+    - typings.awsDashSdk.awsDashSdkStrings.GET
+    - typings.awsDashSdk.awsDashSdkStrings.HEAD
+    - typings.awsDashSdk.awsDashSdkStrings.OPTIONS
+    - typings.awsDashSdk.awsDashSdkStrings.PATCH
+    - typings.awsDashSdk.awsDashSdkStrings.POST
+    - typings.awsDashSdk.awsDashSdkStrings.PUT
+    - typings.awsDashSdk.awsDashSdkStrings.TRACE
     - java.lang.String
   */
   type HttpMethod = _HttpMethod | java.lang.String

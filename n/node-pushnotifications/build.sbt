@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-pushnotifications"
-version := "1.0-dt-20190515Z-afb765"
+version := "1.0-dt-20190819Z-34efdc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -84,7 +84,9 @@ object reactstrapStrings {
        with InputType
   
   @js.native
-  sealed trait range extends InputType
+  sealed trait range
+    extends CustomInputType
+       with InputType
   
   @js.native
   sealed trait reset extends InputType

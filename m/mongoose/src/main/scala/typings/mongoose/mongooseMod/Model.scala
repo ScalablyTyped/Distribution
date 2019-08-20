@@ -8,6 +8,7 @@ import typings.mongodb.mongodbMod.ChangeStream
 import typings.mongodb.mongodbMod.ChangeStreamOptions
 import typings.mongodb.mongodbMod.CollectionCreateOptions
 import typings.mongodb.mongodbMod.FindAndModifyWriteOpResultObject
+import typings.mongoose.Anon_DeletedCount
 import typings.mongoose.Anon_Lean
 import typings.mongoose.Anon_New
 import typings.mongoose.Anon_NewTrue
@@ -114,10 +115,10 @@ Instantiable0[T]
     */
   def createIndexes(): js.Promise[Unit] = js.native
   def createIndexes(cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def deleteMany(conditions: js.Any): Query[Anon_N] with QueryHelpers = js.native
-  def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): Query[Anon_N] with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any): Query[Anon_N] with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): Query[Anon_N] with QueryHelpers = js.native
+  def deleteMany(conditions: js.Any): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
   /**
     * Adds a discriminator type.
     * @param name discriminator model name
@@ -699,8 +700,8 @@ Instantiable0[T]
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
   ): js.Promise[T] = js.native
   /** Removes documents from the collection. */
-  def remove(conditions: js.Any): Query[Anon_N] with QueryHelpers = js.native
-  def remove(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): Query[Anon_N] with QueryHelpers = js.native
+  def remove(conditions: js.Any): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def remove(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
   /**
     * Same as update(), except MongoDB replace the existing document with the given document (no atomic operators like $set).
     * This function triggers the following middleware: replaceOne

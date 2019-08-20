@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promise-sftp"
-version := "1.3-dt-20190717Z-61f557"
+version := "1.3-dt-20190819Z-fa737e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

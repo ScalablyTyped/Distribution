@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.reactstrap.reactstrapStrings.radio
   - typings.reactstrap.reactstrapStrings.checkbox
   - typings.reactstrap.reactstrapStrings.switch
+  - typings.reactstrap.reactstrapStrings.range
 */
 trait CustomInputType extends js.Object
 

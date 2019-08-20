@@ -14,8 +14,7 @@ trait HeaderMatchMethod extends js.Object {
     */
   var prefix: js.UndefOr[HeaderMatch] = js.undefined
   /**
-    * The object that specifies the range of numbers within which the header value sent by the client
-    must be included.
+    * The object that specifies the range of numbers that the header value sent by the client must be included in.
     */
   var range: js.UndefOr[MatchRange] = js.undefined
   /**

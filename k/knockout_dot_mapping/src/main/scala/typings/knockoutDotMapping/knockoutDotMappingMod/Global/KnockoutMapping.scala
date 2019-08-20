@@ -13,7 +13,6 @@ trait KnockoutMapping extends js.Object {
     * Get the default mapping options
     */
   def defaultOptions(): KnockoutMappingStandardOptions = js.native
-  //fromJS could be reduced the number of declarations, but KnockoutObservableType<T> would have to use Conditional Types available only on TS v2.8
   /**
     * Creates a view model object with observable properties for each of the properties on the source. 
     * If 'target' is supplied, instead, target's observable properties are updated.
@@ -21,83 +20,45 @@ trait KnockoutMapping extends js.Object {
     * @param options Options on mapping behavior.
     * @param target View model object previosly mapped to be updated.
     */
-  def fromJS(source: String): KnockoutObservable[String] = js.native
-  def fromJS(source: String, options: KnockoutMappingOptions[String]): KnockoutObservable[String] = js.native
-  def fromJS(source: String, options: KnockoutMappingOptions[String], target: KnockoutObservable[String]): KnockoutObservable[String] = js.native
+  def fromJS[T](source: T): MappedType[T] = js.native
   /**
     * Updates target's observable properties with those of the sources.
     * @param source Plain JavaScript object to be mapped.
     * @param target View model object previosly mapped to be updated.
     */
-  def fromJS(source: String, target: KnockoutObservable[String]): KnockoutObservable[String] = js.native
+  def fromJS[T](source: T, options: KnockoutMappingOptions[T] | MappedType[T]): MappedType[T] = js.native
+  def fromJS[T](source: T, options: KnockoutMappingOptions[T], target: MappedType[T]): MappedType[T] = js.native
   /**
-    * Creates a view model object with observable properties for each of the properties on the source. 
+    * Creates an observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
     * If 'target' is supplied, instead, target's observable properties are updated.
-    * @param source Plain JavaScript object to be mapped.
+    * @param source Array to be mapped.
     * @param options Options on mapping behavior.
     * @param target View model object previosly mapped to be updated.
     */
-  def fromJS(source: Boolean): KnockoutObservable[Boolean] = js.native
-  def fromJS(source: Boolean, options: KnockoutMappingOptions[Boolean]): KnockoutObservable[Boolean] = js.native
-  def fromJS(source: Boolean, options: KnockoutMappingOptions[Boolean], target: KnockoutObservable[Boolean]): KnockoutObservable[Boolean] = js.native
-  /**
-    * Updates target's observable properties with those of the sources.
-    * @param source Plain JavaScript object to be mapped.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS(source: Boolean, target: KnockoutObservable[Boolean]): KnockoutObservable[Boolean] = js.native
-  /**
-    * Creates a view model object with observable properties for each of the properties on the source. 
-    * If 'target' is supplied, instead, target's observable properties are updated.
-    * @param source Plain JavaScript object to be mapped.
-    * @param options Options on mapping behavior.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS(source: Double): KnockoutObservable[Double] = js.native
-  def fromJS(source: Double, options: KnockoutMappingOptions[Double]): KnockoutObservable[Double] = js.native
-  def fromJS(source: Double, options: KnockoutMappingOptions[Double], target: KnockoutObservable[Double]): KnockoutObservable[Double] = js.native
-  /**
-    * Updates target's observable properties with those of the sources.
-    * @param source Plain JavaScript object to be mapped.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS(source: Double, target: KnockoutObservable[Double]): KnockoutObservable[Double] = js.native
-  /**
-    * Creates a view model object with observable properties for each of the properties on the source. 
-    * If 'target' is supplied, instead, target's observable properties are updated.
-    * @param source Plain JavaScript object to be mapped.
-    * @param options Options on mapping behavior.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS[T](source: T): js.Any = js.native
-  def fromJS[T](source: T, options: KnockoutMappingOptions[T]): js.Any = js.native
-  def fromJS[T](source: T, options: KnockoutMappingOptions[T], target: js.Any): js.Any = js.native
-  /**
-    * Updates target's observable properties with those of the sources.
-    * @param source Plain JavaScript object to be mapped.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS[T](source: T, target: js.Any): js.Any = js.native
-  /**
-    * Creates a view model object with observable properties for each of the properties on the source. 
-    * If 'target' is supplied, instead, target's observable properties are updated.
-    * @param source Plain JavaScript object to be mapped.
-    * @param options Options on mapping behavior.
-    * @param target View model object previosly mapped to be updated.
-    */
-  def fromJS[T](source: js.Array[T]): KnockoutObservableArray[_] = js.native
-  def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArray[_] = js.native
+  def fromJS[T](source: js.Array[T]): KnockoutObservableArrayType[T] = js.native
+  def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArrayType[T] = js.native
   def fromJS[T](
     source: js.Array[T],
     options: KnockoutMappingOptions[js.Array[T]],
-    target: KnockoutObservableArray[_]
-  ): KnockoutObservableArray[_] = js.native
+    target: KnockoutObservableArrayType[T]
+  ): KnockoutObservableArrayType[T] = js.native
+  def fromJS[T](
+    source: js.Array[T],
+    options: KnockoutMappingOptions[js.Array[T]],
+    target: KnockoutReadonlyObservableArrayType[T]
+  ): KnockoutReadonlyObservableArrayType[T] = js.native
   /**
     * Updates target's observable properties with those of the sources.
-    * @param source Plain JavaScript object to be mapped.
+    * @param source Array to be mapped.
     * @param target View model object previosly mapped to be updated.
     */
-  def fromJS[T](source: js.Array[T], target: KnockoutObservableArray[_]): KnockoutObservableArray[_] = js.native
+  def fromJS[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
+  /**
+    * Updates target's observable properties with those of the sources.
+    * @param source Array to be mapped.
+    * @param target View model object previosly mapped to be updated.
+    */
+  def fromJS[T](source: js.Array[T], target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
   /**
     * Creates a view model object with observable properties for each of the properties on the source. 
     * If 'target' is supplied, instead, target's observable properties are updated.
@@ -114,6 +75,17 @@ trait KnockoutMapping extends js.Object {
     * @param target View model object previosly mapped to be updated.
     */
   def fromJSON(source: String, target: js.Any): js.Any = js.native
+  /**
+    * Creates an readonly observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
+    * If 'target' is supplied, instead, target's observable properties are updated.
+    * @param source Array to be mapped.
+    * @param options Options on mapping behavior.
+    * @param target View model object previosly mapped to be updated.
+    */
+  @JSName("fromJS")
+  def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+  @JSName("fromJS")
+  def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutReadonlyObservableArrayType[T] = js.native
   /**
     * Undocumented. Custom implementation of JavaScript's typeof.
     * @param x object to check type

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-autocomplete-input"
-version := "4.0-dt-20190430Z-e4b443"
+version := "4.0-dt-20190430Z-276853"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190816Z-f2afb2",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190819Z-b760a5",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

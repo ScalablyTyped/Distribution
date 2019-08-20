@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Contains information regarding the outcome of a successful connection.executeMany().
   */
-trait Results extends js.Object {
+trait Results[T] extends js.Object {
   /**
     * An array of error objects that were reported during execution.
     *
@@ -32,7 +32,7 @@ trait Results extends js.Object {
     * the array passed as the binds parameter. It will be present only if there is at least one OUT bind
     * variable identified.
     */
-  var outBinds: js.Array[Row]
+  var outBinds: js.Array[T]
   /**
     * An integer identifying the total number of database rows affected by the processing of all records
     * of the binds parameter. It is only present if a DML statement was executed.
@@ -42,15 +42,15 @@ trait Results extends js.Object {
 
 object Results {
   @scala.inline
-  def apply(
+  def apply[T](
     batchErrors: js.Array[DBError],
     dmlRowCounts: js.Array[Double],
-    outBinds: js.Array[Row],
+    outBinds: js.Array[T],
     rowsAffected: Double
-  ): Results = {
+  ): Results[T] = {
     val __obj = js.Dynamic.literal(batchErrors = batchErrors, dmlRowCounts = dmlRowCounts, outBinds = outBinds, rowsAffected = rowsAffected)
   
-    __obj.asInstanceOf[Results]
+    __obj.asInstanceOf[Results[T]]
   }
 }
 

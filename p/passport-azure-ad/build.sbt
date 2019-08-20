@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-azure-ad"
-version := "4.0-dt-20181212Z-b29d25"
+version := "4.0-dt-20190819Z-dd1094"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

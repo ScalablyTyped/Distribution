@@ -178,10 +178,10 @@ trait PromiseSftp extends js.Object {
     * Retrieves a directory listing.
     * @param path - The path of the directory to get the listing of.
     */
-  def list(): typings.bluebird.bluebirdMod.^[DirectoryListing] = js.native
-  def list(path: String): typings.bluebird.bluebirdMod.^[DirectoryListing] = js.native
+  def list(): typings.bluebird.bluebirdMod.^[js.Array[DirectoryListing]] = js.native
+  def list(path: String): typings.bluebird.bluebirdMod.^[js.Array[DirectoryListing]] = js.native
   /** Alias to `#list()` */
-  def listSafe(path: String): typings.bluebird.bluebirdMod.^[DirectoryListing] = js.native
+  def listSafe(path: String): typings.bluebird.bluebirdMod.^[js.Array[DirectoryListing]] = js.native
   /** Alias to `#end()` */
   def logout(): typings.bluebird.bluebirdMod.^[Boolean] = js.native
   /**

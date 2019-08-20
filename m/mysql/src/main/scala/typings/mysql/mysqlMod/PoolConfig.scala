@@ -43,7 +43,7 @@ object PoolConfig {
     database: String = null,
     dateStrings: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE]) = null,
     debug: Boolean | (js.Array[String | Types]) = null,
-    flags: js.Array[String] = null,
+    flags: String | js.Array[String] = null,
     host: String = null,
     insecureAuth: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
@@ -72,7 +72,7 @@ object PoolConfig {
     if (database != null) __obj.updateDynamic("database")(database)
     if (dateStrings != null) __obj.updateDynamic("dateStrings")(dateStrings.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(insecureAuth)) __obj.updateDynamic("insecureAuth")(insecureAuth)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)

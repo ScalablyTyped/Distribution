@@ -1,0 +1,45 @@
+package typings.atReactDashNativeDashCommunityCli.atReactDashNativeDashCommunityCliMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ProjectParamsAndroid extends js.Object {
+  var assetsPath: js.UndefOr[String] = js.undefined
+  var buildGradlePath: js.UndefOr[String] = js.undefined
+  var mainFilePath: js.UndefOr[String] = js.undefined
+  var manifestPath: js.UndefOr[String] = js.undefined
+  var packageFolder: js.UndefOr[String] = js.undefined
+  var packageName: js.UndefOr[String] = js.undefined
+  var settingsGradlePath: js.UndefOr[String] = js.undefined
+  var sourceDir: js.UndefOr[String] = js.undefined
+  var stringsPath: js.UndefOr[String] = js.undefined
+}
+
+object ProjectParamsAndroid {
+  @scala.inline
+  def apply(
+    assetsPath: String = null,
+    buildGradlePath: String = null,
+    mainFilePath: String = null,
+    manifestPath: String = null,
+    packageFolder: String = null,
+    packageName: String = null,
+    settingsGradlePath: String = null,
+    sourceDir: String = null,
+    stringsPath: String = null
+  ): ProjectParamsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (assetsPath != null) __obj.updateDynamic("assetsPath")(assetsPath)
+    if (buildGradlePath != null) __obj.updateDynamic("buildGradlePath")(buildGradlePath)
+    if (mainFilePath != null) __obj.updateDynamic("mainFilePath")(mainFilePath)
+    if (manifestPath != null) __obj.updateDynamic("manifestPath")(manifestPath)
+    if (packageFolder != null) __obj.updateDynamic("packageFolder")(packageFolder)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (settingsGradlePath != null) __obj.updateDynamic("settingsGradlePath")(settingsGradlePath)
+    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir)
+    if (stringsPath != null) __obj.updateDynamic("stringsPath")(stringsPath)
+    __obj.asInstanceOf[ProjectParamsAndroid]
+  }
+}
+

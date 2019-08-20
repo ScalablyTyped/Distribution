@@ -13,6 +13,7 @@ trait IProps extends js.Object {
   var disabled: Boolean
   var max: Double
   var min: Double
+  var rtl: Boolean
   var step: Double
   var values: js.Array[Double]
   def onChange(values: js.Array[Double]): Unit
@@ -31,10 +32,11 @@ object IProps {
     onChange: js.Array[Double] => Unit,
     renderThumb: Anon_Index => ReactNode,
     renderTrack: Anon_Children => ReactNode,
+    rtl: Boolean,
     step: Double,
     values: js.Array[Double]
   ): IProps = {
-    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap, direction = direction, disabled = disabled, max = max, min = min, onChange = js.Any.fromFunction1(onChange), renderThumb = js.Any.fromFunction1(renderThumb), renderTrack = js.Any.fromFunction1(renderTrack), step = step, values = values)
+    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap, direction = direction, disabled = disabled, max = max, min = min, onChange = js.Any.fromFunction1(onChange), renderThumb = js.Any.fromFunction1(renderThumb), renderTrack = js.Any.fromFunction1(renderTrack), rtl = rtl, step = step, values = values)
   
     __obj.asInstanceOf[IProps]
   }

@@ -18,6 +18,7 @@ object ForeignKeyOptions {
     onDelete: Action = null,
     onUpdate: Action = null,
     references: Name = null,
+    referencesConstraintComment: String = null,
     referencesConstraintName: String = null
   ): ForeignKeyOptions = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
@@ -25,6 +26,7 @@ object ForeignKeyOptions {
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment)
     if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName)
     __obj.asInstanceOf[ForeignKeyOptions]
   }

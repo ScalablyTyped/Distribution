@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Options () extends Capabilities {
   /**
+    * Configures the geckodriver to start Firefox in headless mode.
+    * @return {!Options} A self reference.
+    */
+  def headless(): Options = js.native
+  /**
     * Sets the binary to use. The binary may be specified as the path to a
     * Firefox executable, or as a {@link Binary} object.
     *

@@ -284,6 +284,7 @@ trait Pipeline extends js.Object {
     callback: js.Function2[/* err */ Error, /* res */ js.Any, Unit]
   ): Pipeline = js.native
   def psubscribe(patterns: String*): Pipeline = js.native
+  def pttl(key: KeyType): Pipeline = js.native
   def pttl(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
   def publish(channel: String, message: String): Pipeline = js.native
   def publish(channel: String, message: String, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native

@@ -23,7 +23,7 @@ trait HttpRouteMatch extends js.Object {
     */
   var prefix: String
   /**
-    * The client request scheme to match on.
+    * The client request header scheme to match on.
     */
   var scheme: js.UndefOr[HttpScheme] = js.undefined
 }

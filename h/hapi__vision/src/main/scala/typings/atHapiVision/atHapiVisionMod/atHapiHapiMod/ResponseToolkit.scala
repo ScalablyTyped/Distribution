@@ -2,12 +2,19 @@ package typings.atHapiVision.atHapiVisionMod.atHapiHapiMod
 
 import typings.atHapiHapi.atHapiHapiMod.ResponseObject
 import typings.atHapiVision.atHapiVisionMod.ViewHandlerOrReplyOptions
+import typings.atHapiVision.atHapiVisionMod.ViewManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait ResponseToolkit extends js.Object {
+  /**
+    * Returns the closest views manager to your realm (either on your realm or inherited from an ancestor realm)
+    *
+    * @see {@link https://github.com/hapijs/vision/blob/master/API.md#hgetviewsmanager}
+    */
+  def getViewsManager(): ViewManager = js.native
   /**
     * Concludes the handler activity by returning control over to the router with a templatized view response
     * Returns a response object. The generated response will have the variety property set to view.

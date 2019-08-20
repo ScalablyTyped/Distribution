@@ -12,6 +12,9 @@ object luaparseStrings {
   sealed trait `%` extends js.Object
   
   @js.native
+  sealed trait `&` extends js.Object
+  
+  @js.native
   sealed trait `*` extends js.Object
   
   @js.native
@@ -22,6 +25,9 @@ object luaparseStrings {
   
   @js.native
   sealed trait `/` extends js.Object
+  
+  @js.native
+  sealed trait `//` extends js.Object
   
   @js.native
   sealed trait `5DOT1` extends js.Object
@@ -39,6 +45,9 @@ object luaparseStrings {
   sealed trait `<` extends js.Object
   
   @js.native
+  sealed trait `<<` extends js.Object
+  
+  @js.native
   sealed trait `<=` extends js.Object
   
   @js.native
@@ -49,6 +58,9 @@ object luaparseStrings {
   
   @js.native
   sealed trait `>=` extends js.Object
+  
+  @js.native
+  sealed trait `>>` extends js.Object
   
   @js.native
   sealed trait AssignmentStatement extends js.Object
@@ -183,12 +195,20 @@ object luaparseStrings {
   sealed trait or extends js.Object
   
   @js.native
+  sealed trait `|` extends js.Object
+  
+  @js.native
+  sealed trait `~` extends js.Object
+  
+  @js.native
   sealed trait `~=` extends js.Object
   
   @scala.inline
   def `#`: `#` = "#".asInstanceOf[`#`]
   @scala.inline
   def `%`: `%` = "%".asInstanceOf[`%`]
+  @scala.inline
+  def `&`: `&` = "&".asInstanceOf[`&`]
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
   @scala.inline
@@ -197,6 +217,8 @@ object luaparseStrings {
   def `-`: `-` = "-".asInstanceOf[`-`]
   @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
+  def `//`: `//` = "//".asInstanceOf[`//`]
   @scala.inline
   def `5DOT1`: `5DOT1` = "5.1".asInstanceOf[`5DOT1`]
   @scala.inline
@@ -208,6 +230,8 @@ object luaparseStrings {
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline
+  def `<<`: `<<` = "<<".asInstanceOf[`<<`]
+  @scala.inline
   def `<=`: `<=` = "<=".asInstanceOf[`<=`]
   @scala.inline
   def `==`: `==` = "==".asInstanceOf[`==`]
@@ -215,6 +239,8 @@ object luaparseStrings {
   def `>`: `>` = ">".asInstanceOf[`>`]
   @scala.inline
   def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  @scala.inline
+  def `>>`: `>>` = ">>".asInstanceOf[`>>`]
   @scala.inline
   def AssignmentStatement: AssignmentStatement = "AssignmentStatement".asInstanceOf[AssignmentStatement]
   @scala.inline
@@ -303,6 +329,10 @@ object luaparseStrings {
   def not: not = "not".asInstanceOf[not]
   @scala.inline
   def or: or = "or".asInstanceOf[or]
+  @scala.inline
+  def `|`: `|` = "|".asInstanceOf[`|`]
+  @scala.inline
+  def `~`: `~` = "~".asInstanceOf[`~`]
   @scala.inline
   def `~=`: `~=` = "~=".asInstanceOf[`~=`]
 }

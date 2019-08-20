@@ -20,7 +20,7 @@ object libUtilsMod extends js.Object {
   def checkInitialOverlap(values: js.Array[Double]): Unit = js.native
   def getMargin(element: Element): Anon_Bottom = js.native
   def getPadding(element: Element): Anon_Bottom = js.native
-  def getTrackBackground(hasValuesColorsMinMaxDirection: ITrackBackground): String = js.native
+  def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = js.native
   def isTouchEvent(event: TouchEvent with MouseEvent): Double = js.native
   def isVertical(direction: Direction): Boolean = js.native
   def normalizeValue(
@@ -36,7 +36,7 @@ object libUtilsMod extends js.Object {
   def replaceAt(values: js.Array[Double], index: Double, value: Double): js.Array[Double] = js.native
   def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = js.native
   def translate(element: Element, x: Double, y: Double): Unit = js.native
-  def translateThumbs(elements: js.Array[Element], offsets: TThumbOffsets): Unit = js.native
+  def translateThumbs(elements: js.Array[Element], offsets: TThumbOffsets, rtl: Boolean): Unit = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, separator: String): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native

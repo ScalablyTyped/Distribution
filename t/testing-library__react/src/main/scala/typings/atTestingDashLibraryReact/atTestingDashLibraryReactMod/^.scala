@@ -27,13 +27,13 @@ import typings.atTestingDashLibraryDom.queryDashHelpersMod.BuiltQueryMethods
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.GetAllBy
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.QueryByAttribute
 import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
+import typings.atTestingDashLibraryReact.Fn_Callback
 import typings.atTestingDashLibraryReact.Omit
 import typings.atTestingDashLibraryReact.Typeofqueries
 import typings.atTestingDashLibraryReact.atTestingDashLibraryReactNumbers.`false`
 import typings.atTestingDashLibraryReact.atTestingDashLibraryReactStrings.queries
 import typings.prettyDashFormat.prettyDashFormatMod.Options
 import typings.react.reactMod.ReactElement
-import typings.reactDashDom.testDashUtilsMod.DebugPromiseLike
 import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Partial
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@testing-library/react", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val act: js.Function1[/* callback */ js.Function0[js.UndefOr[Unit]], DebugPromiseLike | Unit] = js.native
+  val act: Fn_Callback | (js.Function1[/* callback */ js.Function0[Unit], Unit]) = js.native
   val createEvent: CreateObject = js.native
   val findAllByAltText: FindAllByBoundAttribute = js.native
   val findAllByDisplayValue: FindAllByBoundAttribute = js.native

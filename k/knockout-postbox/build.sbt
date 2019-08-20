@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "knockout-postbox"
-version := "0.0-unknown-dt-20190322Z-68ee98"
+version := "0.0-unknown-dt-20190322Z-e879e3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-dc86ef",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-dc86ef",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

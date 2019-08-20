@@ -1,6 +1,6 @@
 package typings.nodeDashPushnotifications.nodeDashPushnotificationsMod
 
-import typings.nodeDashPushnotifications.Anon_Sender
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait Data extends js.Object {
   var consolidationKey: js.UndefOr[String] = js.undefined
   /** gcm for android */
   var contentAvailable: js.UndefOr[Boolean | String] = js.undefined
-  var custom: js.UndefOr[Anon_Sender] = js.undefined
+  var custom: js.UndefOr[(StringDictionary[String | Double]) | String] = js.undefined
   /** gcm for android */
   var delayWhileIdle: js.UndefOr[Boolean] = js.undefined
   /** gcm for android */
@@ -97,7 +97,7 @@ object Data {
     color: String = null,
     consolidationKey: String = null,
     contentAvailable: Boolean | String = null,
-    custom: Anon_Sender = null,
+    custom: (StringDictionary[String | Double]) | String = null,
     delayWhileIdle: js.UndefOr[Boolean] = js.undefined,
     dryRun: js.UndefOr[Boolean] = js.undefined,
     duration: String = null,
@@ -133,7 +133,7 @@ object Data {
     if (color != null) __obj.updateDynamic("color")(color)
     if (consolidationKey != null) __obj.updateDynamic("consolidationKey")(consolidationKey)
     if (contentAvailable != null) __obj.updateDynamic("contentAvailable")(contentAvailable.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (!js.isUndefined(delayWhileIdle)) __obj.updateDynamic("delayWhileIdle")(delayWhileIdle)
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
     if (duration != null) __obj.updateDynamic("duration")(duration)

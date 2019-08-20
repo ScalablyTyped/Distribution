@@ -28,6 +28,13 @@ trait Typeofjest extends js.Object {
     */
   def advanceTimersByTime(msToRun: Double): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
+    * Advances all timers by the needed milliseconds so that only the next
+    * timeouts/intervals will run. Optionally, you can provide steps, so it
+    * will run steps amount of next timeouts/intervals.
+    */
+  def advanceTimersToNextTimer(): Unit = js.native
+  def advanceTimersToNextTimer(step: Double): Unit = js.native
+  /**
     * Disables automatic mocking in the module loader.
     */
   def autoMockOff(): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native

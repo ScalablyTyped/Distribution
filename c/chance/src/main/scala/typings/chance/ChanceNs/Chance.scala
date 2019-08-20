@@ -227,6 +227,7 @@ trait Chance extends Seeded {
   def pickset[T](arr: js.Array[T]): js.Array[T] = js.native
   def pickset[T](arr: js.Array[T], count: Double): js.Array[T] = js.native
   def postal(): String = js.native
+  def postcode(): String = js.native
   def prefix(): String = js.native
   def prefix(
     opts: AtLeastOneKey[

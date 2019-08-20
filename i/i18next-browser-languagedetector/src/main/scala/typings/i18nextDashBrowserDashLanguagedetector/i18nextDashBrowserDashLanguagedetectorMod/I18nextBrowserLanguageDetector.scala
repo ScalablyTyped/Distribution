@@ -1,6 +1,7 @@
 package typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18next.i18nextMod.LanguageDetectorModule
 import typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorStrings.cookie
 import typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorStrings.htmlTag
 import typings.i18nextDashBrowserDashLanguagedetector.i18nextDashBrowserDashLanguagedetectorStrings.languageDetector
@@ -11,20 +12,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.LanguageDetectorModule * / any */ @js.native
-trait I18nextBrowserLanguageDetector extends js.Object {
+@js.native
+trait I18nextBrowserLanguageDetector extends LanguageDetectorModule {
   var detectors: StringDictionary[js.Any] = js.native
   var i18nOptions: js.Any = js.native
   var services: js.Any = js.native
-  var `type`: languageDetector = js.native
+  @JSName("type")
+  var type_I18nextBrowserLanguageDetector: languageDetector = js.native
   /**
     * Adds detector.
     */
   def addDetector(detector: CustomDetector): I18nextBrowserLanguageDetector = js.native
-  def cacheUserLanguage(lng: String): Unit = js.native
   def cacheUserLanguage(lng: String, caches: js.Array[String]): Unit = js.native
-  def detect(): js.UndefOr[String] = js.native
   def detect(detectionOrder: js.Array[querystring | cookie | localStorage | navigator | htmlTag | String]): js.UndefOr[String] = js.native
   /**
     * Initializes detector.

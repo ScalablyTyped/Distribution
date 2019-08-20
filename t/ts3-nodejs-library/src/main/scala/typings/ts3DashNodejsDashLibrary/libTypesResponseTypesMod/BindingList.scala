@@ -1,0 +1,19 @@
+package typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BindingList extends js.Object {
+  var ip: String
+}
+
+object BindingList {
+  @scala.inline
+  def apply(ip: String): BindingList = {
+    val __obj = js.Dynamic.literal(ip = ip)
+  
+    __obj.asInstanceOf[BindingList]
+  }
+}
+

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OIDCStrategy protected () extends Strategy {
   def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
-  def this(options: IOIDCStrategyOption, verify: VerifyOIDCFunction) = this()
+  def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
   @JSName("name")
   var name_OIDCStrategy: String = js.native
   def authenticate(req: Request): Unit = js.native

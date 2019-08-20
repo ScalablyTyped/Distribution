@@ -11,6 +11,7 @@ trait Anon_AllowOverlap extends js.Object {
   var disabled: Boolean
   var max: Double
   var min: Double
+  var rtl: Boolean
   var step: Double
 }
 
@@ -22,9 +23,10 @@ object Anon_AllowOverlap {
     disabled: Boolean,
     max: Double,
     min: Double,
+    rtl: Boolean,
     step: Double
   ): Anon_AllowOverlap = {
-    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap, direction = direction, disabled = disabled, max = max, min = min, step = step)
+    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap, direction = direction, disabled = disabled, max = max, min = min, rtl = rtl, step = step)
   
     __obj.asInstanceOf[Anon_AllowOverlap]
   }

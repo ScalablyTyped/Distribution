@@ -10,18 +10,19 @@ import scala.scalajs.js.annotation._
   * Creates an empty hashmap.
   */
 class ^[TKey, TValue] () extends HashMap[TKey, TValue] {
+  def this(data: js.Array[js.Tuple2[TKey, TValue]]) = this()
+  /**
+    * Creates a hashmap with the key-value pairs of map or from an array of key-values.
+    *
+    * @param data A hashmap to copy from or a set or key-value pairs for the initialization.
+    */
+  def this(data: HashMap[TKey, TValue]) = this()
   /**
     * Creates a hashmap with several key-value pairs.
     *
     * @param keysAndValues key1, value1, key2, value2...
     */
   def this(keysAndValues: (TKey | TValue)*) = this()
-  /**
-    * Creates a hashmap with the key-value pairs of map.
-    *
-    * @param map
-    */
-  def this(map: HashMap[TKey, TValue]) = this()
   /**
     * Clears hashmap.
     *
@@ -44,6 +45,22 @@ class ^[TKey, TValue] () extends HashMap[TKey, TValue] {
     */
   /* CompleteClass */
   override def count(): Double = js.native
+  /**
+    * Removes given key from hashmap.
+    *
+    * @param key Key.
+    * @return Self.
+    */
+  /* CompleteClass */
+  override def delete(key: TKey): HashMap[TKey, TValue] = js.native
+  /**
+    * Returns all key-value pairs.
+    *
+    * @return List of key-value pairs.
+    * @since 2.3.0
+    */
+  /* CompleteClass */
+  override def entries(): js.Array[js.Tuple2[TKey, TValue]] = js.native
   /**
     * Iterates over hashmap.
     *
@@ -88,6 +105,7 @@ class ^[TKey, TValue] () extends HashMap[TKey, TValue] {
     *
     * @param key Key.
     * @return Self.
+    * @deprecated Since 2.3.0
     */
   /* CompleteClass */
   override def remove(key: TKey): HashMap[TKey, TValue] = js.native

@@ -334,6 +334,9 @@ object visStrings {
   sealed trait uniform extends ParametrizationInterpolationType
   
   @js.native
+  sealed trait week extends TimelineTimeAxisScaleType
+  
+  @js.native
   sealed trait weekday extends TimelineTimeAxisScaleType
   
   @js.native
@@ -546,6 +549,8 @@ object visStrings {
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   @scala.inline
   def uniform: uniform = "uniform".asInstanceOf[uniform]
+  @scala.inline
+  def week: week = "week".asInstanceOf[week]
   @scala.inline
   def weekday: weekday = "weekday".asInstanceOf[weekday]
   @scala.inline

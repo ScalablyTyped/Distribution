@@ -1,77 +1,88 @@
 package typings.i18next.i18nextMod
 
+import typings.i18next.Anon_AllowedHosts
+import typings.i18next.Anon_AltKey
 import typings.i18next.i18nextNumbers.`false`
 import typings.i18next.i18nextStrings.all
 import typings.i18next.i18nextStrings.current
 import typings.i18next.i18nextStrings.currentOnly
 import typings.i18next.i18nextStrings.fallback
 import typings.i18next.i18nextStrings.languageOnly
+import typings.i18next.i18nextStrings.v1
+import typings.i18next.i18nextStrings.v2
+import typings.i18next.i18nextStrings.v3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InitOptions extends js.Object {
   /**
-    * prefixes the namespace to the returned key when using cimode
+    * Prefixes the namespace to the returned key when using `cimode`
     * @default false
     */
   var appendNamespaceToCIMode: js.UndefOr[Boolean] = js.undefined
   /**
-    * appends namespace to missing key
+    * Appends namespace to missing key
     * @default false
     */
   var appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined
   /**
-    * options for backend - check documentation of plugin
+    * Options for backend - check documentation of plugin
     * @default undefined
     */
-  var backend: js.UndefOr[BackendPluginOptions] = js.undefined
+  var backend: js.UndefOr[js.Object] = js.undefined
   /**
-    * options for cache layer - check documentation of plugin
+    * Options for cache layer - check documentation of plugin
     * @default undefined
     */
-  var cache: js.UndefOr[CachePluginOptions] = js.undefined
+  var cache: js.UndefOr[js.Object] = js.undefined
   /**
     * Compatibility JSON version
+    * @default 'v3'
     */
-  var compatibilityJSON: js.UndefOr[String] = js.undefined
+  var compatibilityJSON: js.UndefOr[v1 | v2 | v3] = js.undefined
   /**
-    * char to split context from key
+    * Char to split context from key
     * @default '_'
     */
   var contextSeparator: js.UndefOr[String] = js.undefined
   /**
-    * logs info level to console output. Helps finding issues with loading not working.
+    * Logs info level to console output. Helps finding issues with loading not working.
     * @default false
     */
   var debug: js.UndefOr[Boolean] = js.undefined
   /**
-    * default namespace used if not passed to translation function
+    * Default namespace used if not passed to translation function
     * @default 'translation'
     */
   var defaultNS: js.UndefOr[String] = js.undefined
   /**
-    * options for language detection - check documentation of plugin
+    * Options for language detection - check documentation of plugin
     * @default undefined
     */
-  var detection: js.UndefOr[DetectionPluginOptions] = js.undefined
+  var detection: js.UndefOr[js.Object] = js.undefined
   /**
-    * language to use if translations in user language are not available.
+    * Options for https://github.com/locize/locize-editor
+    * @default undefined
+    */
+  var editor: js.UndefOr[Anon_AltKey] = js.undefined
+  /**
+    * Language to use if translations in user language are not available.
     * @default 'dev'
     */
   var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.undefined
   /**
-    * string or array of namespaces to lookup key if not found in given namespace.
+    * String or array of namespaces to lookup key if not found in given namespace.
     * @default false
     */
   var fallbackNS: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   /**
-    * options for i18n nessage format - check documentation of plugin
+    * Options for i18n message format - check documentation of plugin
     * @default undefined
     */
   var i18nFormat: js.UndefOr[js.Object] = js.undefined
   /**
-    * triggers resource loading in init function inside a setTimeout (default async behaviour).
+    * Triggers resource loading in init function inside a setTimeout (default async behaviour).
     * Set it to false if your backend loads resources sync - that way calling i18next.t after
     * init is possible without relaying on the init callback.
     * @default true
@@ -82,22 +93,22 @@ trait InitOptions extends js.Object {
     */
   var interpolation: js.UndefOr[InterpolationOptions] = js.undefined
   /**
-    * char, eg. '\n' that arrays will be joined by
+    * Char, eg. '\n' that arrays will be joined by
     * @default false
     */
   var joinArrays: js.UndefOr[`false` | String] = js.undefined
   /**
-    * char to separate keys
+    * Char to separate keys
     * @default '.'
     */
   var keySeparator: js.UndefOr[`false` | String] = js.undefined
   /**
-    * language to use (overrides language detection)
+    * Language to use (overrides language detection)
     * @default undefined
     */
   var lng: js.UndefOr[String] = js.undefined
   /**
-    * language codes to lookup, given set language is
+    * Language codes to lookup, given set language is
     * 'en-US': 'all' --> ['en-US', 'en', 'dev'],
     * 'currentOnly' --> 'en-US',
     * 'languageOnly' --> 'en'
@@ -105,15 +116,22 @@ trait InitOptions extends js.Object {
     */
   var load: js.UndefOr[all | currentOnly | languageOnly] = js.undefined
   /**
-    * language will be lowercased eg. en-US --> en-us
+    * Options for https://github.com/locize/locize-lastused
+    * @default undefined
+    */
+  var locizeLastUsed: js.UndefOr[Anon_AllowedHosts] = js.undefined
+  /**
+    * Language will be lowercased eg. en-US --> en-us
     * @default false
     */
   var lowerCaseLng: js.UndefOr[Boolean] = js.undefined
   /**
-    * gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null
+    * Gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null
     * @default noop
     */
-  var missingInterpolationHandler: js.UndefOr[js.Function2[/* text */ String, /* value */ js.Any, _]] = js.undefined
+  var missingInterpolationHandler: js.UndefOr[
+    js.Function3[/* text */ String, /* value */ js.Any, /* options */ InitOptions, _]
+  ] = js.undefined
   /**
     * Used for custom missing key handling (needs saveMissing set to true!)
     * @default false
@@ -128,27 +146,27 @@ trait InitOptions extends js.Object {
     ])
   ] = js.undefined
   /**
-    * if true will pass eg. en-US if finding en in whitelist
+    * If true will pass eg. en-US if finding en in whitelist
     * @default false
     */
   var nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined
   /**
-    * string or array of namespaces to load
+    * String or array of namespaces to load
     * @default 'translation'
     */
   var ns: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
-    * char to split namespace from key
+    * Char to split namespace from key
     * @default ':'
     */
   var nsSeparator: js.UndefOr[`false` | String] = js.undefined
   /**
-    * default: sets defaultValue
+    * Sets defaultValue
     * @default args => ({ defaultValue: args[1] })
     */
-  var overloadTranslationOptionHandler: js.UndefOr[js.Function1[/* args */ js.Array[String], TranslationOptions[js.Object]]] = js.undefined
+  var overloadTranslationOptionHandler: js.UndefOr[js.Function1[/* args */ js.Array[String], TOptions[StringMap]]] = js.undefined
   /**
-    * receives a key that was not found in `t()` and returns a value, that will be returned by `t()`
+    * Receives a key that was not found in `t()` and returns a value, that will be returned by `t()`
     * @default noop
     */
   var parseMissingKeyHandler: js.UndefOr[js.Function1[/* key */ String, _]] = js.undefined
@@ -158,42 +176,42 @@ trait InitOptions extends js.Object {
     */
   var partialBundledLanguages: js.UndefOr[Boolean] = js.undefined
   /**
-    * char to split plural from key
+    * Char to split plural from key
     * @default '_'
     */
   var pluralSeparator: js.UndefOr[String] = js.undefined
   /**
-    * string or array of postProcessors to apply per default
+    * String or array of postProcessors to apply per default
     * @default false
     */
   var postProcess: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   /**
-    * array of languages to preload. Important on serverside to assert translations are loaded before rendering views.
+    * Array of languages to preload. Important on server-side to assert translations are loaded before rendering views.
     * @default false
     */
   var preload: js.UndefOr[`false` | js.Array[String]] = js.undefined
   /**
-    * options for react - check documentation of plugin
+    * Options for react - check documentation of plugin
     * @default undefined
     */
   var react: js.UndefOr[ReactOptions] = js.undefined
   /**
-    * resources to initialize with (if not using loading or not appending using addResourceBundle)
+    * Resources to initialize with (if not using loading or not appending using addResourceBundle)
     * @default undefined
     */
   var resources: js.UndefOr[Resource] = js.undefined
   /**
-    * allows empty string as valid translation
+    * Allows empty string as valid translation
     * @default true
     */
   var returnEmptyString: js.UndefOr[Boolean] = js.undefined
   /**
-    * allows null values as valid translation
+    * Allows null values as valid translation
     * @default true
     */
   var returnNull: js.UndefOr[Boolean] = js.undefined
   /**
-    * allows objects as valid translation result
+    * Allows objects as valid translation result
     * @default false
     */
   var returnObjects: js.UndefOr[Boolean] = js.undefined
@@ -203,7 +221,7 @@ trait InitOptions extends js.Object {
     */
   var returnedObjectHandler: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* options */ js.Any, Unit]] = js.undefined
   /**
-    * calls save missing key function on backend if key not found
+    * Calls save missing key function on backend if key not found
     * @default false
     */
   var saveMissing: js.UndefOr[Boolean] = js.undefined
@@ -212,12 +230,12 @@ trait InitOptions extends js.Object {
     */
   var saveMissingTo: js.UndefOr[current | all | fallback] = js.undefined
   /**
-    * will use 'plural' as suffix for languages only having 1 plural form, setting it to false will suffix all with numbers
+    * Will use 'plural' as suffix for languages only having 1 plural form, setting it to false will suffix all with numbers
     * @default true
     */
   var simplifyPluralSuffix: js.UndefOr[Boolean] = js.undefined
   /**
-    * experimental: enable to update default values using the saveMissing
+    * Experimental: enable to update default values using the saveMissing
     * (Works only if defaultValue different from translated value.
     * Only useful on initial development or when keeping code as source of truth not changing values outside of code.
     * Only supported if backend supports it already)
@@ -225,7 +243,7 @@ trait InitOptions extends js.Object {
     */
   var updateMissing: js.UndefOr[Boolean] = js.undefined
   /**
-    * 	array of allowed languages
+    * Array of allowed languages
     * @default false
     */
   var whitelist: js.UndefOr[`false` | js.Array[String]] = js.undefined
@@ -236,13 +254,14 @@ object InitOptions {
   def apply(
     appendNamespaceToCIMode: js.UndefOr[Boolean] = js.undefined,
     appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined,
-    backend: BackendPluginOptions = null,
-    cache: CachePluginOptions = null,
-    compatibilityJSON: String = null,
+    backend: js.Object = null,
+    cache: js.Object = null,
+    compatibilityJSON: v1 | v2 | v3 = null,
     contextSeparator: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     defaultNS: String = null,
-    detection: DetectionPluginOptions = null,
+    detection: js.Object = null,
+    editor: Anon_AltKey = null,
     fallbackLng: `false` | FallbackLng = null,
     fallbackNS: `false` | String | js.Array[String] = null,
     i18nFormat: js.Object = null,
@@ -252,8 +271,9 @@ object InitOptions {
     keySeparator: `false` | String = null,
     lng: String = null,
     load: all | currentOnly | languageOnly = null,
+    locizeLastUsed: Anon_AllowedHosts = null,
     lowerCaseLng: js.UndefOr[Boolean] = js.undefined,
-    missingInterpolationHandler: (/* text */ String, /* value */ js.Any) => _ = null,
+    missingInterpolationHandler: (/* text */ String, /* value */ js.Any, /* options */ InitOptions) => _ = null,
     missingKeyHandler: `false` | (js.Function4[
       /* lngs */ js.Array[String], 
       /* ns */ String, 
@@ -264,7 +284,7 @@ object InitOptions {
     nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined,
     ns: String | js.Array[String] = null,
     nsSeparator: `false` | String = null,
-    overloadTranslationOptionHandler: /* args */ js.Array[String] => TranslationOptions[js.Object] = null,
+    overloadTranslationOptionHandler: /* args */ js.Array[String] => TOptions[StringMap] = null,
     parseMissingKeyHandler: /* key */ String => _ = null,
     partialBundledLanguages: js.UndefOr[Boolean] = js.undefined,
     pluralSeparator: String = null,
@@ -287,11 +307,12 @@ object InitOptions {
     if (!js.isUndefined(appendNamespaceToMissingKey)) __obj.updateDynamic("appendNamespaceToMissingKey")(appendNamespaceToMissingKey)
     if (backend != null) __obj.updateDynamic("backend")(backend)
     if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (compatibilityJSON != null) __obj.updateDynamic("compatibilityJSON")(compatibilityJSON)
+    if (compatibilityJSON != null) __obj.updateDynamic("compatibilityJSON")(compatibilityJSON.asInstanceOf[js.Any])
     if (contextSeparator != null) __obj.updateDynamic("contextSeparator")(contextSeparator)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (defaultNS != null) __obj.updateDynamic("defaultNS")(defaultNS)
     if (detection != null) __obj.updateDynamic("detection")(detection)
+    if (editor != null) __obj.updateDynamic("editor")(editor)
     if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
     if (fallbackNS != null) __obj.updateDynamic("fallbackNS")(fallbackNS.asInstanceOf[js.Any])
     if (i18nFormat != null) __obj.updateDynamic("i18nFormat")(i18nFormat)
@@ -301,8 +322,9 @@ object InitOptions {
     if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
     if (lng != null) __obj.updateDynamic("lng")(lng)
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (locizeLastUsed != null) __obj.updateDynamic("locizeLastUsed")(locizeLastUsed)
     if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng)
-    if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(js.Any.fromFunction2(missingInterpolationHandler))
+    if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(js.Any.fromFunction3(missingInterpolationHandler))
     if (missingKeyHandler != null) __obj.updateDynamic("missingKeyHandler")(missingKeyHandler.asInstanceOf[js.Any])
     if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist)
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])

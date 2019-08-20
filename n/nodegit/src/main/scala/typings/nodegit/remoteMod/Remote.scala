@@ -65,6 +65,7 @@ object Remote extends js.Object {
   def addPush(repo: Repository, remote: String, refspec: String): Double = js.native
   def create(repo: Repository, name: String, url: String): Remote = js.native
   def createAnonymous(repo: Repository, url: String): js.Promise[Remote] = js.native
+  def createDetached(url: String): js.Promise[Remote] = js.native
   def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[Remote] = js.native
   def delete(repo: Repository, name: String): js.Promise[Double] = js.native
   def initCallbacks(opts: RemoteCallbacks, version: Double): Double = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micromodal"
-version := "0.3-dt-20190201Z-f1ce2f"
+version := "0.3-dt-20190819Z-f6ce5a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

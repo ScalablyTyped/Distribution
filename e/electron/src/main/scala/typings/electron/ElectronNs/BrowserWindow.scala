@@ -231,9 +231,6 @@ class BrowserWindow () extends EventEmitter {
     * window.
     */
   def getTitle(): String = js.native
-  /**
-    * On Windows and Linux always returns true.
-    */
   def hasShadow(): Boolean = js.native
   /**
     * Hides the window.
@@ -815,7 +812,7 @@ class BrowserWindow () extends EventEmitter {
     */
   def setFullScreenable(fullscreenable: Boolean): Unit = js.native
   /**
-    * Sets whether the window should have a shadow. On Windows and Linux does nothing.
+    * Sets whether the window should have a shadow.
     */
   def setHasShadow(hasShadow: Boolean): Unit = js.native
   /**

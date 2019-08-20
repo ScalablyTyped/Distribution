@@ -1,6 +1,7 @@
 
 # Scala.js typings for i18next-sprintf-postprocessor
 
+Typings are for version 0.2
 
 ## Library description:
 backend layer for i18next using browsers xhr

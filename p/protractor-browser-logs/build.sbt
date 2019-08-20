@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "protractor-browser-logs"
-version := "1.0-dt-20190329Z-3d914c"
+version := "1.0-dt-20190329Z-f738f6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20190628Z-8bcb83",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20190819Z-387661",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -17,7 +17,7 @@ trait Options extends js.Object {
   var flexbox: js.UndefOr[Boolean | `no-2009`] = js.undefined
   var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
   var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
-  var overrideBrowserslist: js.UndefOr[js.Array[String] | String] = js.undefined
+  var overrideBrowserslist: js.UndefOr[BrowserslistTarget] = js.undefined
   var remove: js.UndefOr[Boolean] = js.undefined
   var stats: js.UndefOr[Stats] = js.undefined
   var supports: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +33,7 @@ object Options {
     flexbox: Boolean | `no-2009` = null,
     grid: `false` | autoplace | `no-autoplace` = null,
     ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined,
-    overrideBrowserslist: js.Array[String] | String = null,
+    overrideBrowserslist: BrowserslistTarget = null,
     remove: js.UndefOr[Boolean] = js.undefined,
     stats: Stats = null,
     supports: js.UndefOr[Boolean] = js.undefined

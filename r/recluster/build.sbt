@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recluster"
-version := "0.4-dt-20180302Z-3a6025"
+version := "0.4-dt-20190819Z-70cddc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

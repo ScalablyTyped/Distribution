@@ -1,6 +1,7 @@
 
 # Scala.js typings for i18next-express-middleware
 
+Typings are for version 1.8.0
 
 ## Library description:
 express middleware for i18next
@@ -23,7 +24,7 @@ express middleware for i18next
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

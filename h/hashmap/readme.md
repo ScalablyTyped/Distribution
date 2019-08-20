@@ -1,7 +1,7 @@
 
 # Scala.js typings for hashmap
 
-Typings are for version 2.0.3
+Typings are for version 2.3
 
 ## Library description:
 HashMap Class for JavaScript

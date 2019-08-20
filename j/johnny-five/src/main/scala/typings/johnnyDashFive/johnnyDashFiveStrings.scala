@@ -6,10 +6,25 @@ import scala.scalajs.js.annotation._
 
 object johnnyDashFiveStrings {
   @js.native
+  sealed trait DEFAULT extends js.Object
+  
+  @js.native
+  sealed trait FORWARD extends js.Object
+  
+  @js.native
+  sealed trait FORWARD_REVERSE extends js.Object
+  
+  @js.native
+  sealed trait FORWARD_REVERSE_BRAKE extends js.Object
+  
+  @js.native
   sealed trait NC extends js.Object
   
   @js.native
   sealed trait NO extends js.Object
+  
+  @js.native
+  sealed trait PCA9685 extends js.Object
   
   @js.native
   sealed trait analog extends js.Object
@@ -78,9 +93,19 @@ object johnnyDashFiveStrings {
   sealed trait up extends js.Object
   
   @scala.inline
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  @scala.inline
+  def FORWARD: FORWARD = "FORWARD".asInstanceOf[FORWARD]
+  @scala.inline
+  def FORWARD_REVERSE: FORWARD_REVERSE = "FORWARD_REVERSE".asInstanceOf[FORWARD_REVERSE]
+  @scala.inline
+  def FORWARD_REVERSE_BRAKE: FORWARD_REVERSE_BRAKE = "FORWARD_REVERSE_BRAKE".asInstanceOf[FORWARD_REVERSE_BRAKE]
+  @scala.inline
   def NC: NC = "NC".asInstanceOf[NC]
   @scala.inline
   def NO: NO = "NO".asInstanceOf[NO]
+  @scala.inline
+  def PCA9685: PCA9685 = "PCA9685".asInstanceOf[PCA9685]
   @scala.inline
   def analog: analog = "analog".asInstanceOf[analog]
   @scala.inline

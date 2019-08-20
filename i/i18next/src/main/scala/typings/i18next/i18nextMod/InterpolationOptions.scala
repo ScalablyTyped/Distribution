@@ -7,87 +7,87 @@ import scala.scalajs.js.annotation._
 
 trait InterpolationOptions extends js.Object {
   /**
-    * 	global variables to use in interpolation replacements
+    * Global variables to use in interpolation replacements
     * @default undefined
     */
   var defaultVariables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /**
-    * 	escape function
+    * Escape function
     * @default str => str
     */
   var escape: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
   /**
-    * 	escape passed in values to avoid xss injection
+    * Escape passed in values to avoid xss injection
     * @default true
     */
   var escapeValue: js.UndefOr[Boolean] = js.undefined
   /**
-    *  format function see formatting for details
+    * Format function see formatting for details
     * @default noop
     */
   var format: js.UndefOr[FormatFunction] = js.undefined
   /**
-    * 	used to separate format from interpolation value
+    * Used to separate format from interpolation value
     * @default ','
     */
   var formatSeparator: js.UndefOr[String] = js.undefined
   /**
-    * 	after how many interpolation runs to break out before throwing a stack overflow
+    * After how many interpolation runs to break out before throwing a stack overflow
     * @default 1000
     */
   var maxReplaces: js.UndefOr[Double] = js.undefined
   /**
-    * prefix for nesting
+    * Prefix for nesting
     * @default '$t('
     */
   var nestingPrefix: js.UndefOr[String] = js.undefined
   /**
-    * 	escaped prefix for nesting (regexSafe)
+    * Escaped prefix for nesting (regexSafe)
     * @default undefined
     */
   var nestingPrefixEscaped: js.UndefOr[String] = js.undefined
   /**
-    * 	suffix for nesting
+    * Suffix for nesting
     * @default ')'
     */
   var nestingSuffix: js.UndefOr[String] = js.undefined
   /**
-    * 	escaped suffix for nesting (regexSafe)
+    * Escaped suffix for nesting (regexSafe)
     * @default undefined
     */
   var nestingSuffixEscaped: js.UndefOr[String] = js.undefined
   /**
-    * 	prefix for interpolation
+    * Prefix for interpolation
     * @default '{{'
     */
   var prefix: js.UndefOr[String] = js.undefined
   /**
-    * 	escaped prefix for interpolation (regexSafe)
+    * Escaped prefix for interpolation (regexSafe)
     * @default undefined
     */
   var prefixEscaped: js.UndefOr[String] = js.undefined
   /**
-    * 	suffix for interpolation
+    * Suffix for interpolation
     * @default '}}'
     */
   var suffix: js.UndefOr[String] = js.undefined
   /**
-    * 	escaped suffix for interpolation (regexSafe)
+    * Escaped suffix for interpolation (regexSafe)
     * @default undefined
     */
   var suffixEscaped: js.UndefOr[String] = js.undefined
   /**
-    * 	prefix to unescaped mode
+    * Prefix to unescaped mode
     * @default '-'
     */
   var unescapePrefix: js.UndefOr[String] = js.undefined
   /**
-    * 	suffix to unescaped mode
+    * Suffix to unescaped mode
     * @default undefined
     */
   var unescapeSuffix: js.UndefOr[String] = js.undefined
   /**
-    * 	If true, then value passed into escape function is not casted to string, use with custom escape function that does its own type check
+    * If true, then value passed into escape function is not casted to string, use with custom escape function that does its own type check
     * @default false
     */
   var useRawValueToEscape: js.UndefOr[Boolean] = js.undefined

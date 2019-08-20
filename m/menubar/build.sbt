@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "menubar"
-version := "5.1.0-dt-20190322Z-cdb333"
+version := "5.1.0-dt-20190322Z-9f7fb2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "electron" % "5.0.9-4d1ad7",
+  "org.scalablytyped" %%% "electron" % "5.0.10-7fdc14",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

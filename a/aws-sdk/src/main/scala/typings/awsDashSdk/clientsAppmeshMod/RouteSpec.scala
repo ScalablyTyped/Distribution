@@ -10,8 +10,7 @@ trait RouteSpec extends js.Object {
     */
   var httpRoute: js.UndefOr[HttpRoute] = js.undefined
   /**
-    * The priority for the route. Routes are matched based on the specified value, where 0 is
-    the highest priority.
+    * The priority for the route. Routes are matched based on the specified value, where 0 is the highest priority.
     */
   var priority: js.UndefOr[RoutePriority] = js.undefined
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Services extends js.Object {
   var backendConnector: js.Any
   var i18nFormat: js.Any
-  var interpolator: js.Any
+  var interpolator: Interpolator
   var languageDetector: js.Any
   var languageUtils: js.Any
   var logger: js.Any
@@ -20,7 +20,7 @@ object Services {
   def apply(
     backendConnector: js.Any,
     i18nFormat: js.Any,
-    interpolator: js.Any,
+    interpolator: Interpolator,
     languageDetector: js.Any,
     languageUtils: js.Any,
     logger: js.Any,

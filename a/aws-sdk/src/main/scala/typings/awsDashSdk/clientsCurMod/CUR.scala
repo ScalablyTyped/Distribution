@@ -39,6 +39,19 @@ trait CUR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReportDefinitionsResponse, Unit]
   ): Request[DescribeReportDefinitionsResponse, AWSError] = js.native
   /**
+    * Allows you to programatically update your report preferences.
+    */
+  def modifyReportDefinition(): Request[ModifyReportDefinitionResponse, AWSError] = js.native
+  def modifyReportDefinition(callback: js.Function2[/* err */ AWSError, /* data */ ModifyReportDefinitionResponse, Unit]): Request[ModifyReportDefinitionResponse, AWSError] = js.native
+  /**
+    * Allows you to programatically update your report preferences.
+    */
+  def modifyReportDefinition(params: ModifyReportDefinitionRequest): Request[ModifyReportDefinitionResponse, AWSError] = js.native
+  def modifyReportDefinition(
+    params: ModifyReportDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyReportDefinitionResponse, Unit]
+  ): Request[ModifyReportDefinitionResponse, AWSError] = js.native
+  /**
     * Creates a new report using the description that you provide.
     */
   def putReportDefinition(): Request[PutReportDefinitionResponse, AWSError] = js.native

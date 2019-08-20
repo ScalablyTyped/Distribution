@@ -11,6 +11,7 @@ trait ReferencesOptions extends js.Object {
   var onDelete: js.UndefOr[Action] = js.undefined
   var onUpdate: js.UndefOr[Action] = js.undefined
   var references: js.UndefOr[Name] = js.undefined
+  var referencesConstraintComment: js.UndefOr[String] = js.undefined
   var referencesConstraintName: js.UndefOr[String] = js.undefined
 }
 
@@ -21,6 +22,7 @@ object ReferencesOptions {
     onDelete: Action = null,
     onUpdate: Action = null,
     references: Name = null,
+    referencesConstraintComment: String = null,
     referencesConstraintName: String = null
   ): ReferencesOptions = {
     val __obj = js.Dynamic.literal()
@@ -28,6 +30,7 @@ object ReferencesOptions {
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment)
     if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName)
     __obj.asInstanceOf[ReferencesOptions]
   }

@@ -38,6 +38,7 @@ object ColumnDefinition {
     onUpdate: Action = null,
     primaryKey: js.UndefOr[Boolean] = js.undefined,
     references: Name = null,
+    referencesConstraintComment: String = null,
     referencesConstraintName: String = null,
     unique: js.UndefOr[Boolean] = js.undefined
   ): ColumnDefinition = {
@@ -56,6 +57,7 @@ object ColumnDefinition {
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
     if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment)
     if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName)
     if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
     __obj.asInstanceOf[ColumnDefinition]

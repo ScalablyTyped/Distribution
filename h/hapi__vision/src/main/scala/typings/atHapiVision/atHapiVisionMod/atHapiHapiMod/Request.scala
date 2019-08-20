@@ -2,6 +2,7 @@ package typings.atHapiVision.atHapiVisionMod.atHapiHapiMod
 
 import typings.atHapiVision.atHapiVisionMod.RenderMethod
 import typings.atHapiVision.atHapiVisionMod.ServerViewsConfiguration
+import typings.atHapiVision.atHapiVisionMod.ViewManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,12 @@ trait Request extends js.Object {
     */
   @JSName("render")
   var render_Original: RenderMethod = js.native
+  /**
+    * Returns the closest views manager to your realm (either on your realm or inherited from an ancestor realm)
+    *
+    * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestgetviewsmanager}
+    */
+  def getViewsManager(): ViewManager = js.native
   /**
     * request.render() works the same way as server.render() but is for use inside of request handlers.
     * server.render() does not work inside request handlers when called via request.server.render() if the view manager was created by a plugin.

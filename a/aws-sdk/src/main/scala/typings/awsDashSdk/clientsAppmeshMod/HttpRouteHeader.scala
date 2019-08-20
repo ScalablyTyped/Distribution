@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait HttpRouteHeader extends js.Object {
   /**
-    * Specify True to match the opposite of the HeaderMatchMethod
-    method and value. The default value is False.
+    * Specify True to match the opposite of the HeaderMatchMethod method and value. The default value is False.
     */
   var invert: js.UndefOr[Boolean] = js.undefined
   /**

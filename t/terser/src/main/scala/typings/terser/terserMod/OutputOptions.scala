@@ -11,7 +11,7 @@ trait OutputOptions extends js.Object {
   var ascii_only: js.UndefOr[Boolean] = js.undefined
   var beautify: js.UndefOr[Boolean] = js.undefined
   var braces: js.UndefOr[Boolean] = js.undefined
-  var comments: js.UndefOr[Boolean | all | some | RegExp] = js.undefined
+  var comments: js.UndefOr[Boolean | all | some | RegExp | js.Function] = js.undefined
   var ecma: js.UndefOr[ECMA] = js.undefined
   var ie8: js.UndefOr[Boolean] = js.undefined
   var indent_level: js.UndefOr[Double] = js.undefined
@@ -38,7 +38,7 @@ object OutputOptions {
     ascii_only: js.UndefOr[Boolean] = js.undefined,
     beautify: js.UndefOr[Boolean] = js.undefined,
     braces: js.UndefOr[Boolean] = js.undefined,
-    comments: Boolean | all | some | RegExp = null,
+    comments: Boolean | all | some | RegExp | js.Function = null,
     ecma: ECMA = null,
     ie8: js.UndefOr[Boolean] = js.undefined,
     indent_level: Int | Double = null,

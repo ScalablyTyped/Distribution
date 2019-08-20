@@ -14,6 +14,7 @@ object defaultNs extends js.Object {
     * Closes the active modal
     */
   def close(): Unit = js.native
+  def close(targetModal: String): Unit = js.native
   /**
     * Binds click handlers to all modal triggers
     * @param config configuration options

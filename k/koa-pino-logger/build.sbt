@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-pino-logger"
-version := "2.1-dt-20190816Z-a62671"
+version := "2.1-dt-20190816Z-f0c1bc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,12 +15,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-8c12f5",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190816Z-416356",
-  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190816Z-bd21f3",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190816Z-0d9374",
+  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190816Z-5ebc42",
   "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-e15946",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-c4d375",
-  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-f0496e",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-676f42",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

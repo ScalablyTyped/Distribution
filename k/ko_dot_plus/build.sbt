@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ko_dot_plus"
-version := "v0.0.24-dt-20190322Z-60e708"
+version := "v0.0.24-dt-20190322Z-88bc78"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-dc86ef",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-dc86ef",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

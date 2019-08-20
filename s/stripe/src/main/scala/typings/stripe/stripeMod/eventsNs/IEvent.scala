@@ -1,5 +1,6 @@
 package typings.stripe.stripeMod.eventsNs
 
+import typings.stripe.Anon_Id
 import typings.stripe.Anon_Object
 import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeStrings.event
@@ -31,12 +32,9 @@ trait IEvent extends IResourceObject {
     */
   var pending_webhooks: Double
   /**
-    * ID of the API request that caused the event. If null, the event was
-    * automatic (e.g. Stripe’s automatic subscription handling). Request logs are
-    * available in the dashboard but currently not in the API. Note: this property
-    * is populated for events on or after April 23, 2013.
+    * Information on the API request that instigated the event.
     */
-  var request: js.UndefOr[String] = js.undefined
+  var request: Anon_Id
   /**
     * Description of the event: e.g. invoice.created, charge.refunded, etc.
     */
@@ -53,13 +51,12 @@ object IEvent {
     livemode: Boolean,
     `object`: event,
     pending_webhooks: Double,
-    `type`: String,
-    request: String = null
+    request: Anon_Id,
+    `type`: String
   ): IEvent = {
-    val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, pending_webhooks = pending_webhooks)
+    val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, pending_webhooks = pending_webhooks, request = request)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
-    if (request != null) __obj.updateDynamic("request")(request)
     __obj.asInstanceOf[IEvent]
   }
 }

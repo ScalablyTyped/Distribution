@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dom
 
-Typings are for version 16.8
+Typings are for version 16.9
 
 ## Library description:
 React package for working with the DOM.

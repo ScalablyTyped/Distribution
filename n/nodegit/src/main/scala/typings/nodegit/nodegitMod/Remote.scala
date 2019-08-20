@@ -17,6 +17,7 @@ object Remote extends js.Object {
   def addPush(repo: typings.nodegit.repositoryMod.Repository, remote: String, refspec: String): Double = js.native
   def create(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String): typings.nodegit.remoteMod.Remote = js.native
   def createAnonymous(repo: typings.nodegit.repositoryMod.Repository, url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
+  def createDetached(url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createWithFetchspec(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String, fetch: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def delete(repo: typings.nodegit.repositoryMod.Repository, name: String): js.Promise[Double] = js.native
   def initCallbacks(opts: typings.nodegit.remoteDashCallbacksMod.RemoteCallbacks, version: Double): Double = js.native

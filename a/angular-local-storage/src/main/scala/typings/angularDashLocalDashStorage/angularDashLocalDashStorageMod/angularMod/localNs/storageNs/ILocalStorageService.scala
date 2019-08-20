@@ -72,12 +72,16 @@ trait ILocalStorageService extends js.Object {
   def length(): Double = js.native
   def length(storageType: StorageType): Double = js.native
   /**
-    * Remove an item from local storage by key.
+    * Remove a list of items from the local storage by their given keys.
+    * The last item in the variable argument list can optionally be the StorageType.
+    * Which specifies whether to remove from the session storage or the local storage.
+    * If the last argument is not a valid storage type it is considered to be a key, 
+    * and localStorage is used by default .
     * If local storage is not supported, use cookies instead.
     * Returns: Boolean
     * @param key
     */
-  def remove(key: String): Boolean = js.native
+  def remove(args: String*): Boolean = js.native
   /**
     * Directly adds a value to local storage.
     * If local storage is not supported, use cookies instead.

@@ -13,7 +13,7 @@ object libIsMobilePhoneMod
   extends TopLevel[
       (js.Function3[
         /* str */ String, 
-        /* locale */ MobilePhoneLocale, 
+        /* locale */ js.UndefOr[MobilePhoneLocale | js.Array[MobilePhoneLocale]], 
         /* options */ js.UndefOr[IsMobilePhoneOptions], 
         Boolean
       ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isMobilePhone */ js.Any)

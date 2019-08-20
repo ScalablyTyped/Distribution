@@ -19,6 +19,7 @@ package object clientsCurMod {
     - typings.awsDashSdk.awsDashSdkStrings.`ap-northeast-1`
     - typings.awsDashSdk.awsDashSdkStrings.`eu-north-1`
     - typings.awsDashSdk.awsDashSdkStrings.`ap-northeast-3`
+    - typings.awsDashSdk.awsDashSdkStrings.`ap-east-1`
     - java.lang.String
   */
   type AWSRegion = _AWSRegion | String

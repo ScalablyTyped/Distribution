@@ -1,0 +1,285 @@
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(webpack) [id => webpack, phase => typescript, file => ../types/webpack/index.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => webpack, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/webpack/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/webpack),TsIdentLibrarySimple(webpack)),TsIdentModule(None,List(webpack))) [id => webpack, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(webpack)) [id => webpack, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(webpack) [id => webpack, phase => typescript] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Dependency)))) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsExport() / TsExporteeTree() / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyFactories) / TsTypeRef() / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Dependency)))) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsExport() / TsExporteeTree() / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyTemplates) / TsTypeRef() / TsTypeQuery())] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack))] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(and) / TsTypeRef() / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(exclude) / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(include) / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(not) / TsTypeRef() / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(or) / TsTypeRef() / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.RuleSetCondition [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject() / TsMemberProperty(test) / TsTypeRef())] 
+[info ] PreferTypeAlias.scala:168 Could not simplify webpack.webpack.RuleSetConditions to function type alias because of circular references Vector(TsQIdent(List(TsIdentLibrarySimple(webpack), TsIdentModule(None,List(webpack)), TsIdentSimple(RuleSetConditions)))) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(debug) / TsDeclClass(ProfilingPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasRuntime) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(canBeInitial) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isOnlyInitial) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasEntryModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(removeModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(setModules) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getNumberOfModules) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addGroup) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(removeGroup) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isInGroup) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getNumberOfGroups) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(compareTo) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(containsModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getModules) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getModulesIdent) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(remove) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(moveModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(integrate) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(split) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isEmpty) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(updateHash) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(canBeIntegrated) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addMultiplierAndOverhead) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(modulesSize) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(size) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(integratedSize) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sortModules) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAllAsyncChunks) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getChunkMaps) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getChunkModuleMaps) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasModuleInGraph) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toString) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getResourceIdentifier) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getReference) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getExports) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getWarnings) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getErrors) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(updateHash) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(disconnect) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(compare) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Dependency))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isChild) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getStats) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addEntry) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getPath) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(applyPlugins) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(compare) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyFactories) / TsTypeRef() / TsTypeObject())] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(compare) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyTemplates) / TsTypeRef() / TsTypeObject())] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(ICompiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(watch) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(ICompiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(Watching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(invalidate) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(Watching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(readFile) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(readFileSync) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(readlink) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(readlinkSync) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(stat) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(statSync) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(InputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(join) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mkdir) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mkdirp) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(rmdir) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(unlink) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(writeFile) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(OutputFileSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sortWith) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(SortableSet))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sort) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(SortableSet))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getFromCache) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(SortableSet))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getFromUnorderedCache) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(SortableSet))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Compiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isChild) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Compiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Compiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(watch) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Compiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Compiler) / TsDeclClass(Watching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Compiler) / TsDeclClass(Watching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(invalidate) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Compiler) / TsDeclClass(Watching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(MultiCompiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(watch) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(MultiCompiler))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(MultiWatching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(invalidate) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(MultiWatching))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(apply) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Plugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(apply) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(ResolvePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasErrors) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Stats))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasWarnings) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Stats))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toJson) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Stats))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toString) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(Stats))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(BannerPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(ContextReplacementPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(DefinePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(DllPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(DllReferencePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(EvalSourceMapDevToolPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(ExtendedAPIPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(HashedModuleIdsPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(HotModuleReplacementPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(IgnorePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(LoaderOptionsPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(NamedModulesPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(NamedChunksPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(NoEmitOnErrorsPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(NormalModuleReplacementPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(PrefetchPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(PrefetchPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(ProgressPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(EnvironmentPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(ProvidePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(SplitChunksPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(SourceMapDevToolPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(WatchIgnorePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(SingleEntryPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(AggressiveMergingPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(AggressiveSplittingPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(DedupePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(LimitChunkCountPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(MinChunkSizePlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(OccurrenceOrderPlugin))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclClass(UglifyJsPlugin))] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(Loader))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(async) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(cacheable) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(emitWarning) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(emitError) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(exec) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(loadModule) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(resolve) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(resolveSync) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addDependency) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(dependency) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addContextDependency) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(clearDependencies) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(emitFile) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(getFunctionContent) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(toIdentifier) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(toComment) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(toNormalComment) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(toPath) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(numberToIdentifer) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(indent) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(prefix) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(asString) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(getModulesArrayBounds) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(renderChunkModules) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template))] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.compiler.Compiler [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compiler) / TsDeclTypeAlias(Compiler) / TsTypeRef())] 
+[warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias webpack.webpack.compiler.Stats [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compiler) / TsDeclTypeAlias(Stats) / TsTypeRef())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Path) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclInterface(Resolve) / TsMemberProperty(cachePredicate) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_And) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclTypeAlias(RuleSetCondition) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Hash) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk) / TsMemberFunction(getChunkMaps) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_HashId) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Chunk) / TsMemberFunction(getChunkModuleMaps) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_JsonpScript) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(MainTemplate) / TsMemberProperty(hooks) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Javascript) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(moduleTemplates) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(TypeofClassDependency) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyFactories) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(TypeofClassDependency) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberProperty(dependencyTemplates) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Basename) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclClass(Compilation) / TsMemberFunction(getPath) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NormalModuleFactory) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclInterface(CompilerHooks) / TsMemberProperty(thisCompilation) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NormalModuleFactory) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(compilation) / TsDeclInterface(CompilerHooks) / TsMemberProperty(compilation) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Assets) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(ChunkGroup) / TsMemberProperty(children) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Id) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(FnModules) / TsMemberProperty(issuerPath) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Explanation) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(FnModules) / TsMemberProperty(reasons) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChunkNames) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(ToJsonOutput) / TsMemberProperty(assets) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Name) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(ToJsonOutput) / TsMemberProperty(children) / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Loc) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(ToJsonOutput) / TsMemberProperty(chunks) / TsTypeRef() / TsTypeObject() / TsMemberProperty(origins) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Stats) / TsDeclInterface(ToJsonOutput) / TsMemberProperty(chunks) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Content) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(DllReferencePlugin) / TsDeclInterface(Options) / TsMemberProperty(manifest) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Exclude) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(EvalSourceMapDevToolPlugin) / TsDeclInterface(Options) / TsMemberProperty(lineToLine) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_HashDigest) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclClass(HashedModuleIdsPlugin) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Exclude) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(SourceMapDevToolPlugin) / TsDeclInterface(Options) / TsMemberProperty(lineToLine) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cache) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(optimize) / TsDeclNamespace(UglifyJsPlugin) / TsDeclInterface(Options) / TsMemberProperty(parallel) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_IdNumber) [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(Template) / TsDeclFunction(getModulesArrayBounds) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded callback into 1 methods [id => webpack, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(webpack) / TsDeclNamespace(loader) / TsDeclInterface(LoaderContext))] 
+[debug] PhaseRunner.scala:84 Success [id => webpack, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:43 Processing webpack [id => webpack, phase => scala.js] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(watch, run) [id => webpack, phase => scala.js, this => Name(typings) / Name(webpack) / Name(webpackMod) / Name(Compiler)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(watch, run) [id => webpack, phase => scala.js, this => Name(typings) / Name(webpack) / Name(webpackMod) / Name(MultiCompiler)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(close, invalidate) [id => webpack, phase => scala.js, this => Name(typings) / Name(webpack) / Name(webpackMod) / Name(MultiWatching)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(apply) [id => webpack, phase => scala.js, this => Name(typings) / Name(webpack) / Name(webpackMod) / Name(Plugin)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(apply) [id => webpack, phase => scala.js, this => Name(typings) / Name(webpack) / Name(webpackMod) / Name(ResolvePlugin)] 
+[debug] PhaseRunner.scala:84 Success [id => webpack, phase => scala.js] 
+[error] Phase3Compile.scala:205 Couldn't resolve jar for webpack-sources IvyLayout((/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/jars/webpack-sources_sjs0.6_2.12.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/srcs/webpack-sources_sjs0.6_2.12-sources.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/ivys/ivy.xml,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/poms/webpack-sources_sjs0.6_2.12.pom,Unchanged)) [id => webpack, phase => build] com.olvind.logging.Logger$LoggedException: Couldn't resolve jar for webpack-sources IvyLayout((/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/jars/webpack-sources_sjs0.6_2.12.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/srcs/webpack-sources_sjs0.6_2.12-sources.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/ivys/ivy.xml,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/poms/webpack-sources_sjs0.6_2.12.pom,Unchanged))
+	at com.olvind.logging.Logger$LoggingOps$.fatal$extension(Logger.scala:172)
+	at com.olvind.tso.importer.Phase3Compile.$anonfun$go$4(Phase3Compile.scala:205)
+	at scala.Option.getOrElse(Option.scala:189)
+	at com.olvind.tso.importer.Phase3Compile.$anonfun$go$3(Phase3Compile.scala:205)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at com.olvind.tso.importer.Phase3Compile.go(Phase3Compile.scala:199)
+	at com.olvind.tso.importer.Phase3Compile.$anonfun$apply$11(Phase3Compile.scala:159)
+	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
+	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
+	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
+	at com.olvind.tso.importer.Phase3Compile.apply(Phase3Compile.scala:121)
+	at com.olvind.tso.importer.Phase3Compile.apply(Phase3Compile.scala:22)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
+	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
+	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:407)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$2(PhaseRunner.scala:62)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+	at scala.collection.immutable.RedBlackTree$._foreachKey(RedBlackTree.scala:111)
+	at scala.collection.immutable.RedBlackTree$.foreachKey(RedBlackTree.scala:107)
+	at scala.collection.immutable.TreeSet.foreach(TreeSet.scala:170)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+	at scala.collection.immutable.TreeSet.scala$collection$SetLike$$super$map(TreeSet.scala:53)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.immutable.TreeSet.map(TreeSet.scala:53)
+	at com.olvind.tso.phases.PhaseRunner$.calculateDeps$1(PhaseRunner.scala:63)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$6(PhaseRunner.scala:78)
+	at com.olvind.tso.importer.Phase3Compile.apply(Phase3Compile.scala:121)
+	at com.olvind.tso.importer.Phase3Compile.apply(Phase3Compile.scala:22)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
+	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
+	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:407)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:407)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:213)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at com.olvind.tso.importer.Main.run(Main.scala:213)
+	at com.olvind.tso.importer.Main$.main(Main.scala:311)
+	at com.olvind.tso.importer.Main.main(Main.scala)
+
+[error] PhaseRunner.scala:88 Failure, [webpack => com.olvind.logging.Logger$LoggedException: Couldn't resolve jar for webpack-sources IvyLayout((/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/jars/webpack-sources_sjs0.6_2.12.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/srcs/webpack-sources_sjs0.6_2.12-sources.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/ivys/ivy.xml,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/poms/webpack-sources_sjs0.6_2.12.pom,Unchanged))] [id => webpack, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [webpack => com.olvind.logging.Logger$LoggedException: Couldn't resolve jar for webpack-sources IvyLayout((/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/jars/webpack-sources_sjs0.6_2.12.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/srcs/webpack-sources_sjs0.6_2.12-sources.jar,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/ivys/ivy.xml,Unchanged),(/home/tso/.ivy2/local/org.scalablytyped/webpack-sources_sjs0.6_2.12/0.1-dt-20180625Z-ad22a0/poms/webpack-sources_sjs0.6_2.12.pom,Unchanged))] [id => webpack, phase => publish] 

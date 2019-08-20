@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ConstraintOptions extends js.Object {
   var check: js.UndefOr[String | js.Array[String]] = js.undefined
+  var comment: js.UndefOr[String] = js.undefined
   var deferrable: js.UndefOr[Boolean] = js.undefined
   var deferred: js.UndefOr[Boolean] = js.undefined
   var exclude: js.UndefOr[String] = js.undefined
@@ -18,6 +19,7 @@ object ConstraintOptions {
   @scala.inline
   def apply(
     check: String | js.Array[String] = null,
+    comment: String = null,
     deferrable: js.UndefOr[Boolean] = js.undefined,
     deferred: js.UndefOr[Boolean] = js.undefined,
     exclude: String = null,
@@ -27,6 +29,7 @@ object ConstraintOptions {
   ): ConstraintOptions = {
     val __obj = js.Dynamic.literal()
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment)
     if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
     if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)

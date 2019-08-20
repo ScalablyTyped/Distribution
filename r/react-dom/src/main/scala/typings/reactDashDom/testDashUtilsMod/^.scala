@@ -22,6 +22,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = js.native
+  @JSName("act")
+  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def createRenderer(): ShallowRenderer = js.native
   def findAllInRenderedTree(root: Component[_, js.Object, _], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = js.native
   def findRenderedComponentWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](root: Component[_, js.Object, _], `type`: ClassType[_, T, C]): T = js.native

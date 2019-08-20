@@ -21,11 +21,13 @@ object ^ extends js.Object {
   def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = js.native
   def rescheduleJob(job: Job, spec: Date): Job = js.native
   def scheduleJob(name: String, rule: String, callback: JobCallback): Job = js.native
+  def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = js.native
   def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = js.native
   def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
   def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
   def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = js.native
   def scheduleJob(rule: String, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: Double, callback: JobCallback): Job = js.native
   def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = js.native
   def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
   def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native

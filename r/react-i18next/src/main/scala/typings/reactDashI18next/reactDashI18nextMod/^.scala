@@ -1,6 +1,7 @@
 package typings.reactDashI18next.reactDashI18nextMod
 
 import typings.i18next.i18nextMod.ReactOptions
+import typings.i18next.i18nextMod.ThirdPartyModule
 import typings.i18next.i18nextMod.i18n
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentType
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val I18nContext: Context[i18n] = js.native
   val I18nextProvider: FunctionComponent[I18nextProviderProps] = js.native
-  val initReactI18next: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.ThirdPartyModule */ js.Any = js.native
+  val initReactI18next: ThirdPartyModule = js.native
   def Trans(props: TransProps): js.Any = js.native
   def Translation(props: TranslationProps): js.Any = js.native
   def addUsedNamespaces(namespaces: js.Array[Namespace]): Unit = js.native

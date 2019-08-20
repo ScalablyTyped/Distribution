@@ -22,5 +22,4 @@ package object oracledbMod {
     - typings.oracledb.Anon_Correlation
   */
   type EnqueueMessage = _EnqueueMessage | String | Buffer
-  type Row = js.Array[js.Any] | (Record[String, js.Any])
 }

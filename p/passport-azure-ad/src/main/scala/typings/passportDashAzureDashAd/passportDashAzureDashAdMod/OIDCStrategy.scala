@@ -1,7 +1,7 @@
 package typings.passportDashAzureDashAd.passportDashAzureDashAdMod
 
-import typings.passportDashAzureDashAd.oidcDashStrategyMod.IOIDCStrategyOption
 import typings.passportDashAzureDashAd.oidcDashStrategyMod.IOIDCStrategyOptionWithRequest
+import typings.passportDashAzureDashAd.oidcDashStrategyMod.IOIDCStrategyOptionWithoutRequest
 import typings.passportDashAzureDashAd.oidcDashStrategyMod.VerifyOIDCFunction
 import typings.passportDashAzureDashAd.oidcDashStrategyMod.VerifyOIDCFunctionWithReq
 import scala.scalajs.js
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 class OIDCStrategy protected ()
   extends typings.passportDashAzureDashAd.oidcDashStrategyMod.OIDCStrategy {
   def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
-  def this(options: IOIDCStrategyOption, verify: VerifyOIDCFunction) = this()
+  def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
 }
 

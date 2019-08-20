@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends Animatable {
   var active: js.UndefOr[Boolean] = js.undefined
   var content: js.UndefOr[ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]] = js.undefined
+  var contentStyle: js.UndefOr[js.Object] = js.undefined
   var coordinate: js.UndefOr[Coordinate] = js.undefined
   var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[_]] = js.undefined
   var filterNull: js.UndefOr[Boolean] = js.undefined
@@ -36,6 +37,7 @@ object TooltipProps {
     animationEasing: AnimationEasingType = null,
     animationId: Int | Double = null,
     content: ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps] = null,
+    contentStyle: js.Object = null,
     coordinate: Coordinate = null,
     cursor: Boolean | js.Object | ReactElement | StatelessComponent[_] = null,
     filterNull: js.UndefOr[Boolean] = js.undefined,
@@ -64,6 +66,7 @@ object TooltipProps {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
     if (animationId != null) __obj.updateDynamic("animationId")(animationId.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (!js.isUndefined(filterNull)) __obj.updateDynamic("filterNull")(filterNull)
