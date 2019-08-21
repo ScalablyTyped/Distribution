@@ -303,12 +303,12 @@ trait AlexaForBusiness extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeviceResponse, Unit]
   ): Request[DeleteDeviceResponse, AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device. When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
     */
   def deleteDeviceUsageData(): Request[DeleteDeviceUsageDataResponse, AWSError] = js.native
   def deleteDeviceUsageData(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeviceUsageDataResponse, Unit]): Request[DeleteDeviceUsageDataResponse, AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device. When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
     */
   def deleteDeviceUsageData(params: DeleteDeviceUsageDataRequest): Request[DeleteDeviceUsageDataResponse, AWSError] = js.native
   def deleteDeviceUsageData(

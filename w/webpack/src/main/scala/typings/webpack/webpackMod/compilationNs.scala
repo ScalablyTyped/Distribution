@@ -16,6 +16,7 @@ import typings.webpack.Anon_Basename
 import typings.webpack.Anon_Hash
 import typings.webpack.Anon_HashId
 import typings.webpack.Anon_Javascript
+import typings.webpack.Anon_JsonpScript
 import typings.webpack.Anon_NormalModuleFactory
 import typings.webpack.TypeofClassDependency
 import typings.webpack.webpackMod.compilationNs.Asset
@@ -302,7 +303,11 @@ object compilationNs extends js.Object {
   class HotUpdateChunkTemplate () extends Tapable
   
   @js.native
-  class MainTemplate () extends Tapable
+  class MainTemplate () extends Tapable {
+    var hooks: Anon_JsonpScript = js.native
+    var outputOptions: Output = js.native
+    var requireFn: String = js.native
+  }
   
   @js.native
   class Module () extends js.Object

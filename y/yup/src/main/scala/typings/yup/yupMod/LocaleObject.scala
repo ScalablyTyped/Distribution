@@ -1,74 +1,33 @@
 package typings.yup.yupMod
 
+import typings.std.Date
 import typings.yup.Anon_NotType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocaleObject extends js.Object {
-  var array: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ArraySchema<any> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var bool: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema<boolean> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var boolean: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema<boolean> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var date: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.DateSchema<std.Date> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var mixed: js.UndefOr[typings.yup.yupStrings.LocaleObject with js.Any with Anon_NotType] = js.undefined
-  var number: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.NumberSchema<number> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var `object`: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ObjectSchema<any> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
-  var string: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.StringSchema<string> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any
-  ] = js.undefined
+  var array: js.UndefOr[MappedLocaleSchema[ArraySchema[_]]] = js.undefined
+  var bool: js.UndefOr[MappedLocaleSchema[BooleanSchema[Boolean]]] = js.undefined
+  var boolean: js.UndefOr[MappedLocaleSchema[BooleanSchema[Boolean]]] = js.undefined
+  var date: js.UndefOr[MappedLocaleSchema[DateSchema[Date]]] = js.undefined
+  var mixed: js.UndefOr[MappedLocaleSchema[MixedSchema[_]] with Anon_NotType] = js.undefined
+  var number: js.UndefOr[MappedLocaleSchema[NumberSchema[Double]]] = js.undefined
+  var `object`: js.UndefOr[MappedLocaleSchema[ObjectSchema[_]]] = js.undefined
+  var string: js.UndefOr[MappedLocaleSchema[StringSchema[String]]] = js.undefined
 }
 
 object LocaleObject {
   @scala.inline
   def apply(
-    array: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ArraySchema<any> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    bool: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema<boolean> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    boolean: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema<boolean> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    date: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.DateSchema<std.Date> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    mixed: typings.yup.yupStrings.LocaleObject with js.Any with Anon_NotType = null,
-    number: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.NumberSchema<number> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ObjectSchema<any> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null,
-    string: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.StringSchema<string> ]:? string}
-    */ typings.yup.yupStrings.LocaleObject with js.Any = null
+    array: MappedLocaleSchema[ArraySchema[_]] = null,
+    bool: MappedLocaleSchema[BooleanSchema[Boolean]] = null,
+    boolean: MappedLocaleSchema[BooleanSchema[Boolean]] = null,
+    date: MappedLocaleSchema[DateSchema[Date]] = null,
+    mixed: MappedLocaleSchema[MixedSchema[_]] with Anon_NotType = null,
+    number: MappedLocaleSchema[NumberSchema[Double]] = null,
+    `object`: MappedLocaleSchema[ObjectSchema[_]] = null,
+    string: MappedLocaleSchema[StringSchema[String]] = null
   ): LocaleObject = {
     val __obj = js.Dynamic.literal()
     if (array != null) __obj.updateDynamic("array")(array)

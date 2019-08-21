@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "html-minifier"
-version := "3.5-dt-20190212Z-54da5f"
+version := "3.5-dt-20190212Z-2eb757"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-940382",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-418c06",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-8feecc",
   "org.scalablytyped" %%% "source-map" % "0.7.3-20fa05",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",

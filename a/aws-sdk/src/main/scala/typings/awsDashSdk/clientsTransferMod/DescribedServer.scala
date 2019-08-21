@@ -18,7 +18,7 @@ trait DescribedServer extends js.Object {
     */
   var EndpointType: js.UndefOr[typings.awsDashSdk.clientsTransferMod.EndpointType] = js.undefined
   /**
-    * This value contains the Message-Digest Algorithm (MD5) hash of the server's host key. This value is equivalent to the output of ssh-keygen -l -E md5 -f my-new-server-key command.
+    * This value contains the message-digest algorithm (MD5) hash of the server's host key. This value is equivalent to the output of the ssh-keygen -l -E md5 -f my-new-server-key command.
     */
   var HostKeyFingerprint: js.UndefOr[typings.awsDashSdk.clientsTransferMod.HostKeyFingerprint] = js.undefined
   /**
@@ -26,19 +26,19 @@ trait DescribedServer extends js.Object {
     */
   var IdentityProviderDetails: js.UndefOr[typings.awsDashSdk.clientsTransferMod.IdentityProviderDetails] = js.undefined
   /**
-    * This property defines the mode of authentication method enabled for this service. A value of SERVICE_MANAGED, means that you are using this Server to store and access SFTP user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.
+    * This property defines the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this server to store and access SFTP user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.
     */
   var IdentityProviderType: js.UndefOr[typings.awsDashSdk.clientsTransferMod.IdentityProviderType] = js.undefined
   /**
-    * This property is an AWS Identity and Access Management (IAM) entity that allows the server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be view in your CloudWatch logs.
+    * This property is an AWS Identity and Access Management (IAM) entity that allows the server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.
     */
   var LoggingRole: js.UndefOr[Role] = js.undefined
   /**
-    * This property is a unique system assigned identifier for the SFTP server that you instantiate.
+    * This property is a unique system-assigned identifier for the SFTP server that you instantiate.
     */
   var ServerId: js.UndefOr[typings.awsDashSdk.clientsTransferMod.ServerId] = js.undefined
   /**
-    * The condition of the SFTP server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicated that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
+    * The condition of the SFTP server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
     */
   var State: js.UndefOr[typings.awsDashSdk.clientsTransferMod.State] = js.undefined
   /**

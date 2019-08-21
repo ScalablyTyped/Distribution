@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait UpdateStackRequest extends js.Object {
   /**
+    * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
+    */
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
+  /**
     * The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
     */
   var ApplicationSettings: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.ApplicationSettings] = js.undefined
@@ -51,6 +55,7 @@ object UpdateStackRequest {
   @scala.inline
   def apply(
     Name: String,
+    AccessEndpoints: AccessEndpointList = null,
     ApplicationSettings: ApplicationSettings = null,
     AttributesToDelete: StackAttributes = null,
     DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined,
@@ -62,6 +67,7 @@ object UpdateStackRequest {
     UserSettings: UserSettingList = null
   ): UpdateStackRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
+    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints)
     if (ApplicationSettings != null) __obj.updateDynamic("ApplicationSettings")(ApplicationSettings)
     if (AttributesToDelete != null) __obj.updateDynamic("AttributesToDelete")(AttributesToDelete)
     if (!js.isUndefined(DeleteStorageConnectors)) __obj.updateDynamic("DeleteStorageConnectors")(DeleteStorageConnectors)

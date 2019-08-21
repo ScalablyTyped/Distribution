@@ -1,0 +1,20 @@
+package typings.jssip.jssipMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SessionUnmuteEvent extends js.Object {
+  var audio: Boolean
+  var video: Boolean
+}
+
+object SessionUnmuteEvent {
+  @scala.inline
+  def apply(audio: Boolean, video: Boolean): SessionUnmuteEvent = {
+    val __obj = js.Dynamic.literal(audio = audio, video = video)
+  
+    __obj.asInstanceOf[SessionUnmuteEvent]
+  }
+}
+

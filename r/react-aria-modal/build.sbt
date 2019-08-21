@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-aria-modal"
-version := "2.12-dt-20190524Z-f87935"
+version := "4.0-dt-20190820Z-4ed569"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

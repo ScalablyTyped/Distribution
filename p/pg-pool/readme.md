@@ -1,6 +1,7 @@
 
 # Scala.js typings for pg-pool
 
+Typings are for version 2.0
 
 ## Library description:
 Connection pool for node-postgres

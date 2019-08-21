@@ -10,7 +10,7 @@ trait NestedFilters extends js.Object {
     */
   var Filters: FilterList
   /**
-    * The name of the property to use in the nested filters. The value must match a listed property name, such as InputDataConfig.
+    * The name of the property to use in the nested filters. The value must match a listed property name, such as InputDataConfig .
     */
   var NestedPropertyName: ResourcePropertyName
 }

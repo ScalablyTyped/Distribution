@@ -9,7 +9,7 @@ object yupStrings {
   sealed trait Id extends js.Object
   
   @js.native
-  sealed trait LocaleObject extends js.Object
+  sealed trait MappedLocaleSchema extends js.Object
   
   @js.native
   sealed trait ObjectSchemaDefinition extends js.Object
@@ -32,7 +32,7 @@ object yupStrings {
   @scala.inline
   def Id: Id = "Id".asInstanceOf[Id]
   @scala.inline
-  def LocaleObject: LocaleObject = "LocaleObject".asInstanceOf[LocaleObject]
+  def MappedLocaleSchema: MappedLocaleSchema = "MappedLocaleSchema".asInstanceOf[MappedLocaleSchema]
   @scala.inline
   def ObjectSchemaDefinition: ObjectSchemaDefinition = "ObjectSchemaDefinition".asInstanceOf[ObjectSchemaDefinition]
   @scala.inline

@@ -15,9 +15,9 @@ class Collection[T /* <: Model[_] */] () extends CollectionBase[T] {
   def attach(ids: js.Any, options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
   def attach(ids: js.Array[_]): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
   def attach(ids: js.Array[_], options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
-  def count(): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   def create(model: StringDictionary[js.Any]): typings.bluebird.bluebirdMod.^[T] = js.native
   def create(model: StringDictionary[js.Any], options: CollectionCreateOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def detach(): typings.bluebird.bluebirdMod.^[_] = js.native

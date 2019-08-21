@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 package object clientsAppstreamMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.DAILY
+  import typings.awsDashSdk.awsDashSdkStrings.STREAMING
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
+  type AccessEndpointList = js.Array[AccessEndpoint]
+  type AccessEndpointType = STREAMING | java.lang.String
   type AccountName = java.lang.String
   type AccountPassword = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -61,6 +64,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.NETWORK_INTERFACE_LIMIT_EXCEEDED
     - typings.awsDashSdk.awsDashSdkStrings.INTERNAL_SERVICE_ERROR
     - typings.awsDashSdk.awsDashSdkStrings.IAM_SERVICE_ROLE_IS_MISSING
+    - typings.awsDashSdk.awsDashSdkStrings.STS_DISABLED_IN_REGION
     - typings.awsDashSdk.awsDashSdkStrings.SUBNET_HAS_INSUFFICIENT_IP_ADDRESSES
     - typings.awsDashSdk.awsDashSdkStrings.IAM_SERVICE_ROLE_MISSING_DESCRIBE_SUBNET_ACTION
     - typings.awsDashSdk.awsDashSdkStrings.SUBNET_NOT_FOUND
@@ -194,6 +198,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.FEEDBACK_URL
     - typings.awsDashSdk.awsDashSdkStrings.THEME_NAME
     - typings.awsDashSdk.awsDashSdkStrings.USER_SETTINGS
+    - typings.awsDashSdk.awsDashSdkStrings.ACCESS_ENDPOINTS
     - java.lang.String
   */
   type StackAttribute = _StackAttribute | java.lang.String

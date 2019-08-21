@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait CreateStackRequest extends js.Object {
   /**
+    * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
+    */
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
+  /**
     * The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
     */
   var ApplicationSettings: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.ApplicationSettings] = js.undefined
@@ -34,7 +38,7 @@ trait CreateStackRequest extends js.Object {
     */
   var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   /**
-    * The tags to associate with the stack. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+    * The tags to associate with the stack. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
   var Tags: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.Tags] = js.undefined
   /**
@@ -47,6 +51,7 @@ object CreateStackRequest {
   @scala.inline
   def apply(
     Name: Name,
+    AccessEndpoints: AccessEndpointList = null,
     ApplicationSettings: ApplicationSettings = null,
     Description: Description = null,
     DisplayName: DisplayName = null,
@@ -57,6 +62,7 @@ object CreateStackRequest {
     UserSettings: UserSettingList = null
   ): CreateStackRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
+    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints)
     if (ApplicationSettings != null) __obj.updateDynamic("ApplicationSettings")(ApplicationSettings)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)

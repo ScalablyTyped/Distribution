@@ -1,5 +1,6 @@
 package typings.luaparse.libAstMod
 
+import typings.luaparse.Anon_End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +13,14 @@ trait ReturnStatement
 
 object ReturnStatement {
   @scala.inline
-  def apply(arguments: js.Array[Expression], `type`: typings.luaparse.luaparseStrings.ReturnStatement): ReturnStatement = {
+  def apply(
+    arguments: js.Array[Expression],
+    `type`: typings.luaparse.luaparseStrings.ReturnStatement,
+    loc: Anon_End = null
+  ): ReturnStatement = {
     val __obj = js.Dynamic.literal(arguments = arguments)
     __obj.updateDynamic("type")(`type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[ReturnStatement]
   }
 }

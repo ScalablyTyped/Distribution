@@ -3354,6 +3354,12 @@ object officeDashJsStrings {
   sealed trait edit extends js.Object
   
   @js.native
+  sealed trait olkRecipientsChanged extends js.Object
+  
+  @js.native
+  sealed trait olkRecurrenceChanged extends js.Object
+  
+  @js.native
   sealed trait read extends js.Object
   
   @scala.inline
@@ -5588,6 +5594,10 @@ object officeDashJsStrings {
   def Zodiac3: Zodiac3 = "Zodiac3".asInstanceOf[Zodiac3]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
+  @scala.inline
+  def olkRecipientsChanged: olkRecipientsChanged = "olkRecipientsChanged".asInstanceOf[olkRecipientsChanged]
+  @scala.inline
+  def olkRecurrenceChanged: olkRecurrenceChanged = "olkRecurrenceChanged".asInstanceOf[olkRecurrenceChanged]
   @scala.inline
   def read: read = "read".asInstanceOf[read]
 }

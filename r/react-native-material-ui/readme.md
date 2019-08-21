@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-material-ui
 
-Typings are for version 1.31
+Typings are for version 1.32
 
 ## Library description:
 React Native Material Design Components

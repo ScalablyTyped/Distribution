@@ -18,6 +18,6 @@ trait MixedSchema[T] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): MixedSchema[T | Null] = js.native
   def required(): MixedSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
-  def required(message: TestOptionsMessage): MixedSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): MixedSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
 }
 

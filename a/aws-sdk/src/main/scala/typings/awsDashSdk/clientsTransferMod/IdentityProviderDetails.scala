@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait IdentityProviderDetails extends js.Object {
   /**
-    * The Role parameter provides the type of InvocationRole used to authenticate the user account.
+    * The InvocationRole parameter provides the type of InvocationRole used to authenticate the user account.
     */
   var InvocationRole: js.UndefOr[Role] = js.undefined
   /**
-    * The IdentityProviderDetail parameter contains the location of the service endpoint used to authenticate users.
+    * The Url parameter provides contains the location of the service endpoint used to authenticate users.
     */
   var Url: js.UndefOr[typings.awsDashSdk.clientsTransferMod.Url] = js.undefined
 }

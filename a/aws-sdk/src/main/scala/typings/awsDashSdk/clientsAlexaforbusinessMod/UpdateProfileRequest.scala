@@ -18,6 +18,10 @@ trait UpdateProfileRequest extends js.Object {
     */
   var IsDefault: js.UndefOr[Boolean] = js.undefined
   /**
+    * The updated locale for the room profile.
+    */
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
+  /**
     * The updated maximum volume limit for the room profile.
     */
   var MaxVolumeLimit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MaxVolumeLimit] = js.undefined
@@ -57,6 +61,7 @@ object UpdateProfileRequest {
     Address: Address = null,
     DistanceUnit: DistanceUnit = null,
     IsDefault: js.UndefOr[Boolean] = js.undefined,
+    Locale: DeviceLocale = null,
     MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
     PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
     ProfileArn: Arn = null,
@@ -70,6 +75,7 @@ object UpdateProfileRequest {
     if (Address != null) __obj.updateDynamic("Address")(Address)
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
     if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit)
     if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled)
     if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn)

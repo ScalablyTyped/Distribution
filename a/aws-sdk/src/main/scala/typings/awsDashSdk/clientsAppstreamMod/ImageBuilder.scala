@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait ImageBuilder extends js.Object {
   /**
+    * The list of virtual private cloud (VPC) interface endpoint objects. Administrators can connect to the image builder only through the specified endpoints.
+    */
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
+  /**
     * The version of the AppStream 2.0 agent that is currently being used by the image builder. 
     */
   var AppstreamAgentVersion: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.AppstreamAgentVersion] = js.undefined
@@ -72,6 +76,7 @@ object ImageBuilder {
   @scala.inline
   def apply(
     Name: String,
+    AccessEndpoints: AccessEndpointList = null,
     AppstreamAgentVersion: AppstreamAgentVersion = null,
     Arn: Arn = null,
     CreatedTime: Timestamp = null,
@@ -89,6 +94,7 @@ object ImageBuilder {
     VpcConfig: VpcConfig = null
   ): ImageBuilder = {
     val __obj = js.Dynamic.literal(Name = Name)
+    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints)
     if (AppstreamAgentVersion != null) __obj.updateDynamic("AppstreamAgentVersion")(AppstreamAgentVersion)
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)

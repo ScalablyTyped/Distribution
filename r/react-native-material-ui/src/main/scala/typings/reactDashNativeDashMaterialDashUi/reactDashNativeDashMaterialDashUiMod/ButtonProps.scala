@@ -15,6 +15,7 @@ trait ButtonProps extends js.Object {
   var primary: js.UndefOr[Boolean] = js.undefined
   var raised: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[Anon_ContainerText] = js.undefined
+  var testID: js.UndefOr[String] = js.undefined
   var text: String
   var upperCase: js.UndefOr[Boolean] = js.undefined
 }
@@ -31,6 +32,7 @@ object ButtonProps {
     primary: js.UndefOr[Boolean] = js.undefined,
     raised: js.UndefOr[Boolean] = js.undefined,
     style: Anon_ContainerText = null,
+    testID: String = null,
     upperCase: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {
     val __obj = js.Dynamic.literal(text = text)
@@ -42,6 +44,7 @@ object ButtonProps {
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
     if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase)
     __obj.asInstanceOf[ButtonProps]
   }

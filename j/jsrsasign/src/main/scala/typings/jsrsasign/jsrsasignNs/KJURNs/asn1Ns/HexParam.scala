@@ -1,0 +1,19 @@
+package typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HexParam extends js.Object {
+  var hex: String
+}
+
+object HexParam {
+  @scala.inline
+  def apply(hex: String): HexParam = {
+    val __obj = js.Dynamic.literal(hex = hex)
+  
+    __obj.asInstanceOf[HexParam]
+  }
+}
+

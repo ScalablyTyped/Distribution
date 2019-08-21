@@ -36,6 +36,8 @@ object EventType extends js.Object {
   /**
     * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.
+    * 
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -115,6 +117,8 @@ object EventType extends js.Object {
   /**
     * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.
+    * 
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -122,6 +126,8 @@ object EventType extends js.Object {
   
   /**
     * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+    * 
+    * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -160,8 +166,8 @@ object EventType extends js.Object {
   /* 1 */ val AppointmentTimeChanged: typings.officeDashJs.OfficeNs.EventType.AppointmentTimeChanged with Double = js.native
   /* 2 */ val BindingDataChanged: typings.officeDashJs.OfficeNs.EventType.BindingDataChanged with Double = js.native
   /* 3 */ val BindingSelectionChanged: typings.officeDashJs.OfficeNs.EventType.BindingSelectionChanged with Double = js.native
-  /* 5 */ val DialogEventReceived: typings.officeDashJs.OfficeNs.EventType.DialogEventReceived with Double = js.native
-  /* 4 */ val DialogMessageReceived: typings.officeDashJs.OfficeNs.EventType.DialogMessageReceived with Double = js.native
+  /* 4 */ val DialogEventReceived: typings.officeDashJs.OfficeNs.EventType.DialogEventReceived with Double = js.native
+  /* 5 */ val DialogMessageReceived: typings.officeDashJs.OfficeNs.EventType.DialogMessageReceived with Double = js.native
   /* 6 */ val DocumentSelectionChanged: typings.officeDashJs.OfficeNs.EventType.DocumentSelectionChanged with Double = js.native
   /* 7 */ val ItemChanged: typings.officeDashJs.OfficeNs.EventType.ItemChanged with Double = js.native
   /* 8 */ val NodeDeleted: typings.officeDashJs.OfficeNs.EventType.NodeDeleted with Double = js.native

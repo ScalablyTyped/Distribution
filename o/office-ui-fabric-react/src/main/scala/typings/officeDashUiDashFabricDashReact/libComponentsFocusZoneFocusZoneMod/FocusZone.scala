@@ -20,6 +20,7 @@ class FocusZone protected ()
   var _disposables: js.Any = js.native
   var _evaluateFocusBeforeRender: js.Any = js.native
   var _focusAlignment: js.Any = js.native
+  var _getDocument: js.Any = js.native
   /**
     * Traverse to find first child zone.
     */

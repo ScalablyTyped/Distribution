@@ -35,6 +35,7 @@ trait PluginHooks extends js.Object {
   var transformChunk_Original: TransformChunkHook = js.native
   @JSName("transform")
   var transform_Original: TransformHook = js.native
+  def augmentChunkHash(`this`: PluginContext, chunk: PreRenderedChunk): String | Unit = js.native
   def buildEnd(`this`: PluginContext): js.Promise[Unit] | Unit = js.native
   def buildEnd(`this`: PluginContext, err: Error): js.Promise[Unit] | Unit = js.native
   def buildStart(`this`: PluginContext, options: InputOptions): js.Promise[Unit] | Unit = js.native

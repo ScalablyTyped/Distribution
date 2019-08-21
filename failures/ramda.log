@@ -1323,8 +1323,8 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter) [id => ramda, phase => scala.js, this => Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter) [id => ramda, phase => scala.js, this => Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter)] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building ramda... [id => ramda, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:2252:75
+[warn ] Phase3Compile.scala:202 Building ramda... [id => ramda, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:2252:75
 [E]      not found: type Curry
 [E]      L2252:   def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): Curry[js.Function1[/* args */ Parameters[F], js.Function0[ReturnType[F]]]] = js.native
 [E]                                                                                       ^

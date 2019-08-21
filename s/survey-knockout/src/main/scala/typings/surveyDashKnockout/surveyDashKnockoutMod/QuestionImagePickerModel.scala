@@ -32,5 +32,10 @@ class QuestionImagePickerModel protected () extends QuestionCheckboxBase {
     * Show label under the image.
     */
   var showLabel: Boolean = js.native
+  /**
+    * Returns true if item is checked
+    * @param item image picker item value
+    */
+  def isItemSelected(item: ItemValue): Boolean = js.native
 }
 

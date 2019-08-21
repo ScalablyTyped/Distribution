@@ -6,6 +6,7 @@ import typings.muiDashDatatables.Anon_DataDataIndex
 import typings.muiDashDatatables.Anon_DataIndexRowIndex
 import typings.muiDashDatatables.Anon_Filename
 import typings.react.reactMod.Component
+import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +42,7 @@ trait MUIDataTableOptions extends js.Object {
       /* handleSearch */ js.Any, 
       /* hideSearch */ js.Any, 
       /* options */ js.Any, 
-      Component[js.Object, js.Object, _]
+      (Component[js.Object, js.Object, _]) | Element
     ]
   ] = js.undefined
   var customSort: js.UndefOr[
@@ -123,7 +124,7 @@ object MUIDataTableOptions {
     customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ Double) => ReactNode = null,
     customRowRender: (/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double) => ReactNode = null,
     customSearch: (/* searchQuery */ String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => Boolean = null,
-    customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => Component[js.Object, js.Object, _] = null,
+    customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
     customToolbarSelect: (/* selectedRows */ Anon_Data, /* displayData */ js.Array[Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,

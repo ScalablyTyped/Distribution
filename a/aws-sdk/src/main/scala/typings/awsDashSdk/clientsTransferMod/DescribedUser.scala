@@ -10,7 +10,7 @@ trait DescribedUser extends js.Object {
     */
   var Arn: typings.awsDashSdk.clientsTransferMod.Arn
   /**
-    * This property specifies the landing directory (or folder) which is the location that files are written to or read from in an Amazon S3 bucket for the described user. An example would be: /bucket_name/home/username .
+    * This property specifies the landing directory (or folder), which is the location that files are written to or read from in an Amazon S3 bucket for the described user. An example is /bucket_name/home/username .
     */
   var HomeDirectory: js.UndefOr[typings.awsDashSdk.clientsTransferMod.HomeDirectory] = js.undefined
   /**

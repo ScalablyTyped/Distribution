@@ -18,6 +18,10 @@ trait ProfileData extends js.Object {
     */
   var IsDefault: js.UndefOr[Boolean] = js.undefined
   /**
+    * The locale of a room profile.
+    */
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
+  /**
     * The ARN of a room profile.
     */
   var ProfileArn: js.UndefOr[Arn] = js.undefined
@@ -45,6 +49,7 @@ object ProfileData {
     Address: Address = null,
     DistanceUnit: DistanceUnit = null,
     IsDefault: js.UndefOr[Boolean] = js.undefined,
+    Locale: DeviceLocale = null,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,
     TemperatureUnit: TemperatureUnit = null,
@@ -55,6 +60,7 @@ object ProfileData {
     if (Address != null) __obj.updateDynamic("Address")(Address)
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
     if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn)
     if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName)
     if (TemperatureUnit != null) __obj.updateDynamic("TemperatureUnit")(TemperatureUnit.asInstanceOf[js.Any])

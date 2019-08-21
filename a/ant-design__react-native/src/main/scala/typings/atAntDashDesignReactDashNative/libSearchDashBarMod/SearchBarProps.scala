@@ -4,7 +4,9 @@ import typings.atAntDashDesignReactDashNative.Anon_NativeEvent
 import typings.atAntDashDesignReactDashNative.libSearchDashBarPropsTypeMod.SearchBarPropsType
 import typings.atAntDashDesignReactDashNative.libSearchDashBarStyleMod.SearchBarStyle
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles
+import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.TextInputFocusEventData
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.std.Partial
 import scala.scalajs.js
@@ -28,12 +30,12 @@ object SearchBarProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     focused: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
-    onBlur: () => Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit = null,
     onCancel: /* value */ String => Unit = null,
     onChange: /* value */ String => Unit = null,
     onChangeText: /* text */ String => Unit = null,
     onClear: /* value */ String => Unit = null,
-    onFocus: () => Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit = null,
     onSubmit: /* value */ String => Unit = null,
     onSubmitEditing: /* event */ Anon_NativeEvent => Unit = null,
     placeholder: String = null,
@@ -49,12 +51,12 @@ object SearchBarProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction1(onClear))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

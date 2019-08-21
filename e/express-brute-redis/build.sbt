@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "express-brute-redis"
-version := "0.0-dt-20180214Z-d01b1e"
+version := "0.0-dt-20180214Z-658472"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-97c180",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-28d234",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

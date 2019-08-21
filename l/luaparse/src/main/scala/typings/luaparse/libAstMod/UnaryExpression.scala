@@ -1,5 +1,6 @@
 package typings.luaparse.libAstMod
 
+import typings.luaparse.Anon_End
 import typings.luaparse.luaparseStrings.`#`
 import typings.luaparse.luaparseStrings.`-`
 import typings.luaparse.luaparseStrings.`~`
@@ -20,10 +21,12 @@ object UnaryExpression {
   def apply(
     argument: Expression,
     operator: not | `-` | `~` | `#`,
-    `type`: typings.luaparse.luaparseStrings.UnaryExpression
+    `type`: typings.luaparse.luaparseStrings.UnaryExpression,
+    loc: Anon_End = null
   ): UnaryExpression = {
     val __obj = js.Dynamic.literal(argument = argument, operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[UnaryExpression]
   }
 }

@@ -82,8 +82,8 @@
 [debug] PhaseRunner.scala:84 Success [id => powerbi-visuals-tools, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing powerbi-visuals-tools [id => powerbi-visuals-tools, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => powerbi-visuals-tools, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building powerbi-visuals-tools... [id => powerbi-visuals-tools, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/powerbiDashVisualsDashTools/powerbiDashVisualsDashToolsMod/package.scala:15:45
+[warn ] Phase3Compile.scala:202 Building powerbi-visuals-tools... [id => powerbi-visuals-tools, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/powerbiDashVisualsDashTools/powerbiDashVisualsDashToolsMod/package.scala:15:45
 [E]      illegal cyclic reference involving type DataViewObject
 [E]      L15:   type DataViewObjectMap = StringDictionary[DataViewObject]
 [E]                                                       ^

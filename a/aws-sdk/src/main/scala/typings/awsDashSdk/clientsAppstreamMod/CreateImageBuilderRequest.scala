@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait CreateImageBuilderRequest extends js.Object {
   /**
+    * The list of virtual private cloud (VPC) interface endpoint objects. Administrators can connect to the image builder only through the specified endpoints.
+    */
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
+  /**
     * The version of the AppStream 2.0 agent to use for this image builder. To use the latest version of the AppStream 2.0 agent, specify [LATEST]. 
     */
   var AppstreamAgentVersion: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.AppstreamAgentVersion] = js.undefined
@@ -42,7 +46,7 @@ trait CreateImageBuilderRequest extends js.Object {
     */
   var Name: typings.awsDashSdk.clientsAppstreamMod.Name
   /**
-    * The tags to associate with the image builder. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ If you do not specify a value, the value is set to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+    * The tags to associate with the image builder. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ If you do not specify a value, the value is set to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
   var Tags: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.Tags] = js.undefined
   /**
@@ -56,6 +60,7 @@ object CreateImageBuilderRequest {
   def apply(
     InstanceType: String,
     Name: Name,
+    AccessEndpoints: AccessEndpointList = null,
     AppstreamAgentVersion: AppstreamAgentVersion = null,
     Description: Description = null,
     DisplayName: DisplayName = null,
@@ -67,6 +72,7 @@ object CreateImageBuilderRequest {
     VpcConfig: VpcConfig = null
   ): CreateImageBuilderRequest = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType, Name = Name)
+    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints)
     if (AppstreamAgentVersion != null) __obj.updateDynamic("AppstreamAgentVersion")(AppstreamAgentVersion)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)

@@ -47,6 +47,7 @@ package object clientsSagemakerMod {
     - java.lang.String
   */
   type BatchStrategy = _BatchStrategy | java.lang.String
+  type BillableTimeInSeconds = Double
   type Boolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.And
@@ -139,6 +140,7 @@ package object clientsSagemakerMod {
     - java.lang.String
   */
   type DirectInternetAccess = _DirectInternetAccess | java.lang.String
+  type DirectoryPath = java.lang.String
   type DisassociateAdditionalCodeRepositories = scala.Boolean
   type DisassociateDefaultCodeRepository = scala.Boolean
   type DisassociateNotebookInstanceAcceleratorTypes = scala.Boolean
@@ -345,6 +347,7 @@ package object clientsSagemakerMod {
   type MaxPercentageOfInputDatasetLabeled = Double
   type MaxResults = Double
   type MaxRuntimeInSeconds = Double
+  type MaxWaitTimeInSeconds = Double
   type MemberDefinitions = js.Array[MemberDefinition]
   type MetricDefinitionList = js.Array[MetricDefinition]
   type MetricName = java.lang.String
@@ -586,6 +589,8 @@ package object clientsSagemakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.MaxRuntimeExceeded
     - typings.awsDashSdk.awsDashSdkStrings.Completed
     - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Interrupted
+    - typings.awsDashSdk.awsDashSdkStrings.MaxWaitTimeExceeded
     - java.lang.String
   */
   type SecondaryStatus = _SecondaryStatus | java.lang.String
@@ -643,7 +648,10 @@ package object clientsSagemakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.deeplens
     - typings.awsDashSdk.awsDashSdkStrings.rk3399
     - typings.awsDashSdk.awsDashSdkStrings.rk3288
+    - typings.awsDashSdk.awsDashSdkStrings.aisage
     - typings.awsDashSdk.awsDashSdkStrings.sbe_c
+    - typings.awsDashSdk.awsDashSdkStrings.qcs605
+    - typings.awsDashSdk.awsDashSdkStrings.qcs603
     - java.lang.String
   */
   type TargetDevice = _TargetDevice | java.lang.String
@@ -723,6 +731,7 @@ package object clientsSagemakerMod {
   type TrainingJobStatus = _TrainingJobStatus | java.lang.String
   type TrainingJobStatusCounter = Double
   type TrainingJobSummaries = js.Array[TrainingJobSummary]
+  type TrainingTimeInSeconds = Double
   type TransformEnvironmentKey = java.lang.String
   type TransformEnvironmentMap = StringDictionary[TransformEnvironmentValue]
   type TransformEnvironmentValue = java.lang.String

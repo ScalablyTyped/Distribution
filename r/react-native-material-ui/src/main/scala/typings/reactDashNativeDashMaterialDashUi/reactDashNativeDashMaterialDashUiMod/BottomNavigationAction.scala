@@ -14,6 +14,7 @@ trait BottomNavigationAction extends js.Object {
   var label: js.UndefOr[String] = js.undefined
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   var style: js.UndefOr[Anon_Active] = js.undefined
+  var testID: js.UndefOr[String] = js.undefined
 }
 
 object BottomNavigationAction {
@@ -25,7 +26,8 @@ object BottomNavigationAction {
     key: String = null,
     label: String = null,
     onPress: () => Unit = null,
-    style: Anon_Active = null
+    style: Anon_Active = null,
+    testID: String = null
   ): BottomNavigationAction = {
     val __obj = js.Dynamic.literal(active = active, icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
@@ -33,6 +35,7 @@ object BottomNavigationAction {
     if (label != null) __obj.updateDynamic("label")(label)
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (style != null) __obj.updateDynamic("style")(style)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
     __obj.asInstanceOf[BottomNavigationAction]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-material-ui"
-version := "1.31-dt-20190717Z-0bb9ac"
+version := "1.32-dt-20190820Z-ef2e0c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

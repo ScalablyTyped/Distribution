@@ -17,6 +17,6 @@ trait BooleanSchema[T /* <: js.UndefOr[Boolean | Null] */] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): BooleanSchema[T | Null] = js.native
   def required(): BooleanSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
-  def required(message: TestOptionsMessage): BooleanSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): BooleanSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
 }
 

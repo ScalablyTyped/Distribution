@@ -29,8 +29,8 @@
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing node-notifier [id => node-notifier, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building node-notifier... [id => node-notifier, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/nodeDashNotifier/nodeDashNotifierMod/NodeNotifier.scala:60:7
+[warn ] Phase3Compile.scala:202 Building node-notifier... [id => node-notifier, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/nodeDashNotifier/nodeDashNotifierMod/NodeNotifier.scala:60:7
 [E]      method notify_^ is defined twice;
 [E]        the conflicting method notify_^ was defined at line 58:7
 [E]      L60:   def `notify_^`(): typings.nodeDashNotifier.notifiersGrowlMod.^ = js.native

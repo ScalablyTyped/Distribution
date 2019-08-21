@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codemirror"
-version := "1.0.4-10c7de"
+version := "1.0.5-1ecd32"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190701Z-b2d5c8",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-1859c4",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.4-43e11c",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.0.0-b07c42",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-6c8958",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.5-853de9",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.0.1-f5914e",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.1-6c8958",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-7af119",
-  "org.scalablytyped" %%% "jupyterlab__services" % "4.0.4-a5599e",
+  "org.scalablytyped" %%% "jupyterlab__services" % "4.0.5-4aa738",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-d56d5f",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.0-33b011",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-cbfd04",

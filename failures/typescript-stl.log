@@ -814,8 +814,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typings) / Name(typescriptDashStl) / Name(stdNs) / Name(MapIterator)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typings) / Name(typescriptDashStl) / Name(stdNs) / Name(SetIterator)] 
 [debug] PhaseRunner.scala:84 Success [id => typescript-stl, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building typescript-stl... [id => typescript-stl, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E3] src/main/scala/typings/typescriptDashStl/stdNs/baseNs/PairTree.scala:23:7
+[warn ] Phase3Compile.scala:202 Building typescript-stl... [id => typescript-stl, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E3] src/main/scala/typings/typescriptDashStl/stdNs/baseNs/PairTree.scala:23:7
 [E]      name clash between defined and inherited member:
 [E]      def find(val: typings.typescriptDashStl.stdNs.MapIterator[Key,T]): typings.typescriptDashStl.stdNs.baseNs.XTreeNode[typings.typescriptDashStl.stdNs.MapIterator[Key,T]] in class XTree and
 [E]      def find(key: Key): typings.typescriptDashStl.stdNs.baseNs.XTreeNode[typings.typescriptDashStl.stdNs.MapIterator[Key,T]] at line 23

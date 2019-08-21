@@ -1,0 +1,25 @@
+package typings.jsrsasign
+
+import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.ArrayParam
+import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.IntegerParam
+import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.NameParam
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Failinfo extends js.Object {
+  var failinfo: js.UndefOr[NameParam | IntegerParam] = js.undefined
+  var statstr: js.UndefOr[ArrayParam[String]] = js.undefined
+  var status: NameParam
+}
+
+object Anon_Failinfo {
+  @scala.inline
+  def apply(status: NameParam, failinfo: NameParam | IntegerParam = null, statstr: ArrayParam[String] = null): Anon_Failinfo = {
+    val __obj = js.Dynamic.literal(status = status)
+    if (failinfo != null) __obj.updateDynamic("failinfo")(failinfo.asInstanceOf[js.Any])
+    if (statstr != null) __obj.updateDynamic("statstr")(statstr)
+    __obj.asInstanceOf[Anon_Failinfo]
+  }
+}
+

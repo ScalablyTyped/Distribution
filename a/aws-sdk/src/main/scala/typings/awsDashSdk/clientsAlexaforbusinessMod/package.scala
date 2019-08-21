@@ -111,6 +111,7 @@ package object clientsAlexaforbusinessMod {
   */
   type DeviceEventType = _DeviceEventType | String
   type DeviceEventValue = String
+  type DeviceLocale = String
   type DeviceName = String
   type DeviceSerialNumber = String
   type DeviceSerialNumberForAVS = String

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait TestIdentityProviderRequest extends js.Object {
   /**
-    * A system assigned identifier for a specific server. That server's user authentication method is tested with a user name and password.
+    * A system-assigned identifier for a specific server. That server's user authentication method is tested with a user name and password.
     */
   var ServerId: typings.awsDashSdk.clientsTransferMod.ServerId
   /**
-    * This request parameter is name of the user account to be tested.
+    * This request parameter is the name of the user account to be tested.
     */
   var UserName: typings.awsDashSdk.clientsTransferMod.UserName
   /**

@@ -23,7 +23,10 @@ abstract class AbstractRule protected () extends IRule {
   /* CompleteClass */
   @JSName("apply")
   override def apply(sourceFile: SourceFile): js.Array[RuleFailure] = js.native
-  /* protected */ def applyWithFunction(sourceFile: SourceFile, walkFn: js.Function1[/* ctx */ WalkContext[Unit], Unit]): js.Array[RuleFailure] = js.native
+  /* protected */ def applyWithFunction(
+    sourceFile: SourceFile,
+    walkFn: js.Function1[/* ctx */ WalkContext[js.UndefOr[scala.Nothing]], Unit]
+  ): js.Array[RuleFailure] = js.native
   /* protected */ def applyWithFunction[T](sourceFile: SourceFile, walkFn: js.Function1[/* ctx */ WalkContext[T], Unit], options: NoInfer[T]): js.Array[RuleFailure] = js.native
   /* protected */ def applyWithFunction[T, U](
     sourceFile: SourceFile,

@@ -135,6 +135,12 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait bodyBackground extends js.Object
   
   @js.native
+  sealed trait bodyBackgroundChecked extends js.Object
+  
+  @js.native
+  sealed trait bodyBackgroundHovered extends js.Object
+  
+  @js.native
   sealed trait bodyDivider extends js.Object
   
   @js.native
@@ -833,6 +839,10 @@ object officeDashUiDashFabricDashReactStrings {
   def blueMid: blueMid = "blueMid".asInstanceOf[blueMid]
   @scala.inline
   def bodyBackground: bodyBackground = "bodyBackground".asInstanceOf[bodyBackground]
+  @scala.inline
+  def bodyBackgroundChecked: bodyBackgroundChecked = "bodyBackgroundChecked".asInstanceOf[bodyBackgroundChecked]
+  @scala.inline
+  def bodyBackgroundHovered: bodyBackgroundHovered = "bodyBackgroundHovered".asInstanceOf[bodyBackgroundHovered]
   @scala.inline
   def bodyDivider: bodyDivider = "bodyDivider".asInstanceOf[bodyDivider]
   @scala.inline

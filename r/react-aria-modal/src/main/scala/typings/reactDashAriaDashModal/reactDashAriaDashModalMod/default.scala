@@ -1,5 +1,6 @@
 package typings.reactDashAriaDashModal.reactDashAriaDashModalMod
 
+import typings.react.reactMod.ReactType
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ class default () extends AriaModal
 @JSImport("react-aria-modal", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def renderTo(node: String): Unit = js.native
-  def renderTo(node: HTMLElement): Unit = js.native
+  def renderTo(node: String): ReactType[_] = js.native
+  def renderTo(node: HTMLElement): ReactType[_] = js.native
 }
 

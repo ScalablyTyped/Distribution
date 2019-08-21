@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-intl"
-version := "3.1.9-b026e3"
+version := "3.1.11-0e9abc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "2.7.0-042355",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "2.8.1-042355",
   "org.scalablytyped" %%% "intl-messageformat" % "5.4.3-ee648c",
   "org.scalablytyped" %%% "intl-messageformat-parser" % "2.1.3-7c827c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",

@@ -18,6 +18,10 @@ trait CreateProfileRequest extends js.Object {
     */
   var DistanceUnit: typings.awsDashSdk.clientsAlexaforbusinessMod.DistanceUnit
   /**
+    * The locale of the room profile.
+    */
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
+  /**
     * The maximum volume limit for a room profile.
     */
   var MaxVolumeLimit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MaxVolumeLimit] = js.undefined
@@ -57,12 +61,14 @@ object CreateProfileRequest {
     Timezone: Timezone,
     WakeWord: WakeWord,
     ClientRequestToken: ClientRequestToken = null,
+    Locale: DeviceLocale = null,
     MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
     PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
     SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
   ): CreateProfileRequest = {
     val __obj = js.Dynamic.literal(Address = Address, DistanceUnit = DistanceUnit.asInstanceOf[js.Any], ProfileName = ProfileName, TemperatureUnit = TemperatureUnit.asInstanceOf[js.Any], Timezone = Timezone, WakeWord = WakeWord.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
     if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit)
     if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled)
     if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled)

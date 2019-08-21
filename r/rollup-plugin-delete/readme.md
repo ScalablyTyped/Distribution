@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-delete
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 Delete files and folders using Rollup

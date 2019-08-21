@@ -36,6 +36,8 @@ object EventType extends js.Object {
   /**
     * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.
+    * 
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -43,6 +45,8 @@ object EventType extends js.Object {
   
   /**
     * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+    * 
+    * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
     * 
     * [Api set: Mailbox Preview]
     * 
@@ -99,6 +103,8 @@ object EventType extends js.Object {
   /**
     * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
+    * 
     * [Api set: Mailbox Preview]
     */
   @js.native
@@ -133,6 +139,8 @@ object EventType extends js.Object {
   /**
     * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`.
+    * 
     * [Api set: Mailbox Preview]
     * 
     * @beta
@@ -143,6 +151,8 @@ object EventType extends js.Object {
   /**
     * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
     * 
+    * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.
+    * 
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -150,6 +160,8 @@ object EventType extends js.Object {
   
   /**
     * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+    * 
+    * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -189,11 +201,11 @@ object EventType extends js.Object {
   /* 2 */ val AttachmentsChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.AttachmentsChanged with Double = js.native
   /* 3 */ val BindingDataChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.BindingDataChanged with Double = js.native
   /* 4 */ val BindingSelectionChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.BindingSelectionChanged with Double = js.native
-  /* 6 */ val DialogEventReceived: typings.officeDashJsDashPreview.OfficeNs.EventType.DialogEventReceived with Double = js.native
-  /* 5 */ val DialogMessageReceived: typings.officeDashJsDashPreview.OfficeNs.EventType.DialogMessageReceived with Double = js.native
+  /* 5 */ val DialogEventReceived: typings.officeDashJsDashPreview.OfficeNs.EventType.DialogEventReceived with Double = js.native
+  /* 6 */ val DialogMessageReceived: typings.officeDashJsDashPreview.OfficeNs.EventType.DialogMessageReceived with Double = js.native
   /* 7 */ val DocumentSelectionChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.DocumentSelectionChanged with Double = js.native
-  /* 9 */ val EnhancedLocationsChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.EnhancedLocationsChanged with Double = js.native
-  /* 8 */ val ItemChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.ItemChanged with Double = js.native
+  /* 8 */ val EnhancedLocationsChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.EnhancedLocationsChanged with Double = js.native
+  /* 9 */ val ItemChanged: typings.officeDashJsDashPreview.OfficeNs.EventType.ItemChanged with Double = js.native
   /* 10 */ val NodeDeleted: typings.officeDashJsDashPreview.OfficeNs.EventType.NodeDeleted with Double = js.native
   /* 11 */ val NodeInserted: typings.officeDashJsDashPreview.OfficeNs.EventType.NodeInserted with Double = js.native
   /* 12 */ val NodeReplaced: typings.officeDashJsDashPreview.OfficeNs.EventType.NodeReplaced with Double = js.native

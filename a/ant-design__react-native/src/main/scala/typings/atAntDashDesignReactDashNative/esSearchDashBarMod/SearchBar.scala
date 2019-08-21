@@ -3,7 +3,9 @@ package typings.atAntDashDesignReactDashNative.esSearchDashBarMod
 import typings.atAntDashDesignReactDashNative.Anon_NativeEvent
 import typings.atAntDashDesignReactDashNative.esSearchDashBarPropsTypeMod.SearchBarState
 import typings.react.reactMod.Component
+import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.TextInput
+import typings.reactDashNative.reactDashNativeMod.TextInputFocusEventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +16,10 @@ trait SearchBar
   var inputRef: TextInput | Null = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MSearchBar(nextProps: SearchBarProps): Unit = js.native
-  def onBlur(): Unit = js.native
+  def onBlur(e: NativeSyntheticEvent[TextInputFocusEventData]): Unit = js.native
   def onCancel(): Unit = js.native
   def onChangeText(value: String): Unit = js.native
-  def onFocus(): Unit = js.native
+  def onFocus(e: NativeSyntheticEvent[TextInputFocusEventData]): Unit = js.native
   def onSubmit(`_`: Anon_NativeEvent): Unit = js.native
 }
 

@@ -10,7 +10,7 @@ trait CreateUserRequest extends js.Object {
     */
   var HomeDirectory: js.UndefOr[typings.awsDashSdk.clientsTransferMod.HomeDirectory] = js.undefined
   /**
-    * A scope-down policy for your user so you can use the same IAM role across multiple users. This policy scopes down user access to portions of their Amazon S3 bucket. Variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.
+    * A scope-down policy for your user so you can use the same IAM role across multiple users. This policy scopes down user access to portions of their Amazon S3 bucket. Variables that you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  For scope-down policies, AWS Transfer for SFTP stores the policy as a JSON blob, instead of the Amazon Resource Name (ARN) of the policy. You save the policy as a JSON blob and pass it in the Policy argument. For an example of a scope-down policy, see "https://docs.aws.amazon.com/transfer/latest/userguide/users.html#users-policies-scope-down"&gt;Creating a Scope-Down Policy. For more information, see "https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html" in the AWS Security Token Service API Reference. 
     */
   var Policy: js.UndefOr[typings.awsDashSdk.clientsTransferMod.Policy] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait CreateUserRequest extends js.Object {
     */
   var ServerId: typings.awsDashSdk.clientsTransferMod.ServerId
   /**
-    * The public portion of the Secure Shall (SSH) key used to authenticate the user to the SFTP server.
+    * The public portion of the Secure Shell (SSH) key used to authenticate the user to the SFTP server.
     */
   var SshPublicKeyBody: js.UndefOr[typings.awsDashSdk.clientsTransferMod.SshPublicKeyBody] = js.undefined
   /**

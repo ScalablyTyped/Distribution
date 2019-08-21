@@ -4,7 +4,6 @@ import typings.rsocketDashCore.rSocketEncodingMod.Encoders
 import typings.rsocketDashFlowable.rsocketDashFlowableMod.Flowable
 import typings.rsocketDashTypes.reactiveSocketTypesMod.ConnectionStatus
 import typings.rsocketDashTypes.reactiveSocketTypesMod.Frame
-import typings.ws.wsMod.ClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

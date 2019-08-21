@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rechoir"
-version := "0.6-dt-20190212Z-eb6120"
+version := "0.6-dt-20190212Z-a2d03f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-5510aa",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-5fe945",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

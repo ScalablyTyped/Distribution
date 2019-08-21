@@ -11,6 +11,7 @@ trait ChangeStreamOptions extends js.Object {
   var maxAwaitTimeMS: js.UndefOr[scala.Double] = js.undefined
   var readPreference: js.UndefOr[ReadPreference] = js.undefined
   var resumeAfter: js.UndefOr[js.Object] = js.undefined
+  var startAfter: js.UndefOr[js.Object] = js.undefined
 }
 
 object ChangeStreamOptions {
@@ -21,7 +22,8 @@ object ChangeStreamOptions {
     fullDocument: String = null,
     maxAwaitTimeMS: Int | scala.Double = null,
     readPreference: ReadPreference = null,
-    resumeAfter: js.Object = null
+    resumeAfter: js.Object = null,
+    startAfter: js.Object = null
   ): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
@@ -30,6 +32,7 @@ object ChangeStreamOptions {
     if (maxAwaitTimeMS != null) __obj.updateDynamic("maxAwaitTimeMS")(maxAwaitTimeMS.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter)
+    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter)
     __obj.asInstanceOf[ChangeStreamOptions]
   }
 }

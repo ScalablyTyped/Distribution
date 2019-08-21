@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "antd-native-slinky-facade"
-version := "201907271058-73173c"
+version := "201907271058-1f0a36"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "me.shadaj" %%% "slinky-native" % "0.6.2",
   "org.scalablytyped" %%% "ant-design__icons-react-native" % "1.0.2-af6cb0",
-  "org.scalablytyped" %%% "ant-design__react-native" % "3.1.13-7c4280",
+  "org.scalablytyped" %%% "ant-design__react-native" % "3.1.14-0f0ac8",
   "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-70b9b4",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",

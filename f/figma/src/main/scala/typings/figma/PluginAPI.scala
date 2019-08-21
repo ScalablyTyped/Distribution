@@ -1,0 +1,55 @@
+package typings.figma
+
+import typings.figma.figmaStrings.`1DOT0DOT0`
+import typings.std.Uint8Array
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait PluginAPI extends js.Object {
+  val apiVersion: `1DOT0DOT0` = js.native
+  val clientStorage: ClientStorageAPI = js.native
+  val command: String = js.native
+  var currentPage: PageNode = js.native
+  val hasMissingFont: Boolean = js.native
+  val mixed: js.Symbol = js.native
+  val root: DocumentNode = js.native
+  val ui: UIAPI = js.native
+  val viewport: ViewportAPI = js.native
+  def closePlugin(): Unit = js.native
+  def closePlugin(message: String): Unit = js.native
+  def createBooleanOperation(): BooleanOperationNode = js.native
+  def createComponent(): ComponentNode = js.native
+  def createEffectStyle(): EffectStyle = js.native
+  def createEllipse(): EllipseNode = js.native
+  def createFrame(): FrameNode = js.native
+  def createGridStyle(): GridStyle = js.native
+  def createImage(data: Uint8Array): Image = js.native
+  def createLine(): LineNode = js.native
+  def createNodeFromSvg(svg: String): FrameNode = js.native
+  def createPage(): PageNode = js.native
+  def createPaintStyle(): PaintStyle = js.native
+  def createPolygon(): PolygonNode = js.native
+  def createRectangle(): RectangleNode = js.native
+  def createSlice(): SliceNode = js.native
+  def createStar(): StarNode = js.native
+  def createText(): TextNode = js.native
+  def createTextStyle(): TextStyle = js.native
+  def createVector(): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode]): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): VectorNode = js.native
+  def getImageByHash(hash: String): Image = js.native
+  def getNodeById(id: String): BaseNode | Null = js.native
+  def getStyleById(id: String): BaseStyle | Null = js.native
+  def group(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): FrameNode = js.native
+  def group(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): FrameNode = js.native
+  def importComponentByKeyAsync(key: String): js.Promise[ComponentNode] = js.native
+  def importStyleByKeyAsync(key: String): js.Promise[BaseStyle] = js.native
+  def listAvailableFontsAsync(): js.Promise[js.Array[Font]] = js.native
+  def loadFontAsync(fontName: FontName): js.Promise[Unit] = js.native
+  def showUI(html: String): Unit = js.native
+  def showUI(html: String, options: ShowUIOptions): Unit = js.native
+}
+

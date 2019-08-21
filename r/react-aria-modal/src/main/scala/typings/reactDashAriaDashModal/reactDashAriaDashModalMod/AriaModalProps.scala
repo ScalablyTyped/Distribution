@@ -50,6 +50,17 @@ trait AriaModalProps extends js.Object {
     */
   var focusDialog: js.UndefOr[Boolean] = js.undefined
   /**
+    * Customize properties of the focusTrapOptions prop that is passed to the modal dialog's focus trap.
+    * For example, you can use this prop if you need better control of where focus is returned.
+    */
+  var focusTrapOptions: js.UndefOr[js.Object] = js.undefined
+  /**
+    * If true, the modal dialog's focus trap will be paused.
+    * You won't typically need to use this prop. It used to be that the typical reason for pausing a focus trap was to enable nested focus traps;
+    * but as of focus-trap v4, the pausing and unpausing of hierachical traps is handled automatically.
+    */
+  var focusTrapPaused: js.UndefOr[Boolean] = js.undefined
+  /**
     * Same as `applicationNode`, but a function that returns the node
     * instead of the node itself. This can be useful or necessary in
     * a variety of situations, one of which is server-side React
@@ -90,6 +101,10 @@ trait AriaModalProps extends js.Object {
     * doing after the modal activates.
     */
   var onEnter: js.UndefOr[js.Function0[_]] = js.undefined
+  /**
+    * If true, the modal dialog will prevent any scrolling behind the modal window.
+    */
+  var scrollDisabled: js.UndefOr[Boolean] = js.undefined
   /**
     * The `id` of the element that should be used as the modal's accessible
     * title. This value is passed to the modal's `aria-labelledby` attribute.
@@ -158,11 +173,14 @@ object AriaModalProps {
     dialogStyle: CSSProperties = null,
     escapeExits: js.UndefOr[Boolean] = js.undefined,
     focusDialog: js.UndefOr[Boolean] = js.undefined,
+    focusTrapOptions: js.Object = null,
+    focusTrapPaused: js.UndefOr[Boolean] = js.undefined,
     getApplicationNode: () => Node | Element = null,
     includeDefaultStyles: js.UndefOr[Boolean] = js.undefined,
     initialFocus: String = null,
     mounted: js.UndefOr[Boolean] = js.undefined,
     onEnter: () => _ = null,
+    scrollDisabled: js.UndefOr[Boolean] = js.undefined,
     titleId: String = null,
     titleText: String = null,
     underlayClass: String = null,
@@ -179,11 +197,14 @@ object AriaModalProps {
     if (dialogStyle != null) __obj.updateDynamic("dialogStyle")(dialogStyle)
     if (!js.isUndefined(escapeExits)) __obj.updateDynamic("escapeExits")(escapeExits)
     if (!js.isUndefined(focusDialog)) __obj.updateDynamic("focusDialog")(focusDialog)
+    if (focusTrapOptions != null) __obj.updateDynamic("focusTrapOptions")(focusTrapOptions)
+    if (!js.isUndefined(focusTrapPaused)) __obj.updateDynamic("focusTrapPaused")(focusTrapPaused)
     if (getApplicationNode != null) __obj.updateDynamic("getApplicationNode")(js.Any.fromFunction0(getApplicationNode))
     if (!js.isUndefined(includeDefaultStyles)) __obj.updateDynamic("includeDefaultStyles")(includeDefaultStyles)
     if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
     if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted)
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
+    if (!js.isUndefined(scrollDisabled)) __obj.updateDynamic("scrollDisabled")(scrollDisabled)
     if (titleId != null) __obj.updateDynamic("titleId")(titleId)
     if (titleText != null) __obj.updateDynamic("titleText")(titleText)
     if (underlayClass != null) __obj.updateDynamic("underlayClass")(underlayClass)

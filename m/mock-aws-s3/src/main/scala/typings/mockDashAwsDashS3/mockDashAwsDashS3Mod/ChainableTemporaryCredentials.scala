@@ -13,9 +13,5 @@ import scala.scalajs.js.annotation._
 class ChainableTemporaryCredentials ()
   extends typings.awsDashSdk.awsDashSdkMod.ChainableTemporaryCredentials {
   def this(options: ChainableTemporaryCredentialsOptions) = this()
-  def this(
-    options: ChainableTemporaryCredentialsOptions,
-    masterCredentials: typings.awsDashSdk.libCredentialsMod.Credentials
-  ) = this()
 }
 

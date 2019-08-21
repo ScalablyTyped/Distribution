@@ -280,8 +280,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(receiveTrailers, sendMessage, receiveMessage, receiveMetadata, sendMetadata) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcFilterDashStackMod) / Name(FilterStack)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(createFilter) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcFilterDashStackMod) / Name(FilterStackFactory)] 
 [debug] PhaseRunner.scala:84 Success [id => @grpc/grpc-js, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building grpc__grpc-js... [id => @grpc/grpc-js, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E18] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientWritableStreamImpl.scala:17:11
+[warn ] Phase3Compile.scala:202 Building grpc__grpc-js... [id => @grpc/grpc-js, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E18] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientWritableStreamImpl.scala:17:11
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Serialize[RequestType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[RequestType] found
 [E]       L17:      with ClientWritableStream[RequestType] {
 [E]                      ^

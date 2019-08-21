@@ -14,7 +14,7 @@ trait ListedServer extends js.Object {
     */
   var EndpointType: js.UndefOr[typings.awsDashSdk.clientsTransferMod.EndpointType] = js.undefined
   /**
-    * The authentication method used to validate a user for the server that was specified. listed. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.
+    * The authentication method used to validate a user for the server that was specified. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.
     */
   var IdentityProviderType: js.UndefOr[typings.awsDashSdk.clientsTransferMod.IdentityProviderType] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait ListedServer extends js.Object {
     */
   var ServerId: js.UndefOr[typings.awsDashSdk.clientsTransferMod.ServerId] = js.undefined
   /**
-    * This property describes the condition of the SFTP server for the server that was described. A value of ONLINE&gt; indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicated that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
+    * This property describes the condition of the SFTP server for the server that was described. A value of ONLINE&gt; indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
     */
   var State: js.UndefOr[typings.awsDashSdk.clientsTransferMod.State] = js.undefined
   /**

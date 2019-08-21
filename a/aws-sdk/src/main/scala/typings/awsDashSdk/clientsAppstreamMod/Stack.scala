@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Stack extends js.Object {
   /**
+    * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. 
+    */
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
+  /**
     * The persistent application settings for users of the stack.
     */
   var ApplicationSettings: js.UndefOr[ApplicationSettingsResponse] = js.undefined
@@ -55,6 +59,7 @@ object Stack {
   @scala.inline
   def apply(
     Name: String,
+    AccessEndpoints: AccessEndpointList = null,
     ApplicationSettings: ApplicationSettingsResponse = null,
     Arn: Arn = null,
     CreatedTime: Timestamp = null,
@@ -67,6 +72,7 @@ object Stack {
     UserSettings: UserSettingList = null
   ): Stack = {
     val __obj = js.Dynamic.literal(Name = Name)
+    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints)
     if (ApplicationSettings != null) __obj.updateDynamic("ApplicationSettings")(ApplicationSettings)
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)

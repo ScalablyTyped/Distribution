@@ -5,16 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RenderedChunk extends js.Object {
-  var dynamicImports: js.Array[String]
-  var exports: js.Array[String]
-  var facadeModuleId: String | Null
+trait RenderedChunk extends PreRenderedChunk {
   var fileName: String
-  var imports: js.Array[String]
-  var isDynamicEntry: Boolean
-  var isEntry: Boolean
-  var modules: StringDictionary[RenderedModule]
-  var name: String
 }
 
 object RenderedChunk {

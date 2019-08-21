@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__services"
-version := "4.0.4-a5599e"
+version := "4.0.5-4aa738"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-6c8958",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.1-6c8958",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-7af119",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-d56d5f",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.0-33b011",

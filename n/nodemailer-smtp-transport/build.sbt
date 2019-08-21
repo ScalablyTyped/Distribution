@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nodemailer-smtp-transport"
-version := "2.7-dt-20190322Z-d63515"
+version := "2.7-dt-20190322Z-e5586f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
-  "org.scalablytyped" %%% "nodemailer" % "6.2-dt-20190722Z-d9f643",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
+  "org.scalablytyped" %%% "nodemailer" % "6.2-dt-20190722Z-598058",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -10,11 +10,11 @@ trait ListTagsForResourceResponse extends js.Object {
     */
   var Arn: js.UndefOr[typings.awsDashSdk.clientsTransferMod.Arn] = js.undefined
   /**
-    * When you can get additional results from the ListTagsForResource call, a NextToken parameter is returned in the output. You can then pass in a subsequent command the NextToken parameter to continue listing additional tags.
+    * When you can get additional results from the ListTagsForResource call, a NextToken parameter is returned in the output. You can then pass in a subsequent command to the NextToken parameter to continue listing additional tags.
     */
   var NextToken: js.UndefOr[typings.awsDashSdk.clientsTransferMod.NextToken] = js.undefined
   /**
-    * Key-value pairs that are assigned to a resource, usually for the purpose of grouping and searching for items. Tags are metadata that you define that you can use for any purpose.
+    * Key-value pairs that are assigned to a resource, usually for the purpose of grouping and searching for items. Tags are metadata that you define.
     */
   var Tags: js.UndefOr[typings.awsDashSdk.clientsTransferMod.Tags] = js.undefined
 }

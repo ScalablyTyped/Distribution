@@ -3474,6 +3474,24 @@ object officeDashJsDashPreviewStrings {
   sealed trait edit extends js.Object
   
   @js.native
+  sealed trait officeThemeChanged extends js.Object
+  
+  @js.native
+  sealed trait olkAppointmentTimeChanged extends js.Object
+  
+  @js.native
+  sealed trait olkAttachmentsChanged extends js.Object
+  
+  @js.native
+  sealed trait olkEnhancedLocationsChanged extends js.Object
+  
+  @js.native
+  sealed trait olkRecipientsChanged extends js.Object
+  
+  @js.native
+  sealed trait olkRecurrenceChanged extends js.Object
+  
+  @js.native
   sealed trait read extends js.Object
   
   @scala.inline
@@ -5788,6 +5806,18 @@ object officeDashJsDashPreviewStrings {
   def Zodiac3: Zodiac3 = "Zodiac3".asInstanceOf[Zodiac3]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
+  @scala.inline
+  def officeThemeChanged: officeThemeChanged = "officeThemeChanged".asInstanceOf[officeThemeChanged]
+  @scala.inline
+  def olkAppointmentTimeChanged: olkAppointmentTimeChanged = "olkAppointmentTimeChanged".asInstanceOf[olkAppointmentTimeChanged]
+  @scala.inline
+  def olkAttachmentsChanged: olkAttachmentsChanged = "olkAttachmentsChanged".asInstanceOf[olkAttachmentsChanged]
+  @scala.inline
+  def olkEnhancedLocationsChanged: olkEnhancedLocationsChanged = "olkEnhancedLocationsChanged".asInstanceOf[olkEnhancedLocationsChanged]
+  @scala.inline
+  def olkRecipientsChanged: olkRecipientsChanged = "olkRecipientsChanged".asInstanceOf[olkRecipientsChanged]
+  @scala.inline
+  def olkRecurrenceChanged: olkRecurrenceChanged = "olkRecurrenceChanged".asInstanceOf[olkRecurrenceChanged]
   @scala.inline
   def read: read = "read".asInstanceOf[read]
 }

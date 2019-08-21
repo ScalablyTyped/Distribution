@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("survey-knockout", "Event")
 @js.native
 class Event[T /* <: js.Function */, Options] () extends js.Object {
+  var callbacks: js.Array[T] = js.native
   val isEmpty: Boolean = js.native
   def add(func: T): Unit = js.native
   def clear(): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__help-extension
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 JupyterLab - Help Extension

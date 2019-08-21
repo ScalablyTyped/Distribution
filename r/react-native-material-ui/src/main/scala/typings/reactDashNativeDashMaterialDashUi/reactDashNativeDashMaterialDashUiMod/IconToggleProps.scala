@@ -16,6 +16,7 @@ trait IconToggleProps extends js.Object {
   var percent: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[Anon_ContainerIconViewStyle] = js.undefined
+  var testID: js.UndefOr[String] = js.undefined
   var underlayColor: js.UndefOr[String] = js.undefined
 }
 
@@ -31,6 +32,7 @@ object IconToggleProps {
     percent: Int | Double = null,
     size: Int | Double = null,
     style: Anon_ContainerIconViewStyle = null,
+    testID: String = null,
     underlayColor: String = null
   ): IconToggleProps = {
     val __obj = js.Dynamic.literal(name = name)
@@ -42,6 +44,7 @@ object IconToggleProps {
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
     if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
     __obj.asInstanceOf[IconToggleProps]
   }

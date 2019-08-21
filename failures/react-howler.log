@@ -378,8 +378,8 @@
 [info ] ImportType.scala:245 Failed type conversion: infer D [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_DefaultProps) / TsMemberProperty(defaultProps) / TsTypeInfer())] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))) at Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(ClassicComponentClass) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typings), Name(reactDashHowler), Name(reactMod), Name(StaticLifecycle))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))),List(),NoComments)) [id => react-howler, phase => scala.js, this => Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(ClassicComponentClass)] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building react-howler... [id => react-howler, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E11] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala:9:58
+[warn ] Phase3Compile.scala:202 Building react-howler... [id => react-howler, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E11] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala:9:58
 [E]       illegal cyclic reference involving trait WheelEvent
 [E]       L9:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativeWheelEvent] {
 [E]                                                                    ^

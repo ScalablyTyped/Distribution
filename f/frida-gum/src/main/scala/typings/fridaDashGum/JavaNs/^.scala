@@ -1,5 +1,6 @@
 package typings.fridaDashGum.JavaNs
 
+import typings.fridaDashGum.NativePointerValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +37,8 @@ object ^ extends js.Object {
     * @param handle An existing wrapper or a JNI handle.
     * @param klass Class wrapper for type to cast to.
     */
-  def cast(handle: js.Any, klass: Wrapper): Wrapper = js.native
+  def cast(handle: Wrapper, klass: Wrapper): Wrapper = js.native
+  def cast(handle: NativePointerValue, klass: Wrapper): Wrapper = js.native
   /**
     * Enumerates live instances of the `className` class by scanning the Java
     * VM's heap.
@@ -108,6 +110,12 @@ object ^ extends js.Object {
     * @param spec Object describing the class to be created.
     */
   def registerClass(spec: ClassSpec): Wrapper = js.native
+  /**
+    * Duplicates a JavaScript wrapper for later use outside replacement method.
+    *
+    * @param handle An existing wrapper retrieved from `this` in replacement method.
+    */
+  def retain(obj: Wrapper): Wrapper = js.native
   /**
     * Runs `fn` on the main thread of the VM.
     *

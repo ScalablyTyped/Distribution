@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-navigation
 
-Typings are for version 2.26.5
+Typings are for version 2.27.0
 
 ## Library description:
 React Native Navigation - truly native navigation for iOS and Android

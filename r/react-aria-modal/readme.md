@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-aria-modal
 
-Typings are for version 2.12
+Typings are for version 4.0
 
 ## Library description:
 A fully accessible and flexible React modal built according WAI-ARIA Authoring Practices

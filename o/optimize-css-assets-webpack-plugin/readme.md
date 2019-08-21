@@ -1,7 +1,7 @@
 
 # Scala.js typings for optimize-css-assets-webpack-plugin
 
-Typings are for version 1.3
+Typings are for version 5.0
 
 ## Library description:
 A Webpack plugin to optimize \ minimize CSS assets.

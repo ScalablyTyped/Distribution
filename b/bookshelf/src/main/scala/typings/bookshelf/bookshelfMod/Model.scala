@@ -34,9 +34,9 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
     foreignKeyTarget: String,
     otherKeyTarget: String
   ): Collection[R] = js.native
-  def count(): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   def destroy(): typings.bluebird.bluebirdMod.^[T] = js.native
   def destroy(options: DestroyOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def fetch(): typings.bluebird.bluebirdMod.^[T] = js.native
@@ -113,9 +113,9 @@ object Model extends js.Object {
   def collection[T /* <: Model[_] */](): Collection[T] = js.native
   def collection[T /* <: Model[_] */](models: js.Array[T]): Collection[T] = js.native
   def collection[T /* <: Model[_] */](models: js.Array[T], options: CollectionOptions[T]): Collection[T] = js.native
-  def count(): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String): typings.bluebird.bluebirdMod.^[Double] = js.native
-  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   /** @deprecated use Typescript classes */
   def extend[T /* <: Model[_] */](): js.Function = js.native
   def extend[T /* <: Model[_] */](prototypeProperties: js.Any): js.Function = js.native

@@ -10,7 +10,7 @@ trait DescribeUserRequest extends js.Object {
     */
   var ServerId: typings.awsDashSdk.clientsTransferMod.ServerId
   /**
-    * The name of the user assigned to one or more servers. User names are part of the sign-in credentials to use the AWS Transfer service and perform file transfer tasks.
+    * The name of the user assigned to one or more servers. User names are part of the sign-in credentials to use the AWS Transfer for SFTP service and perform file transfer tasks.
     */
   var UserName: typings.awsDashSdk.clientsTransferMod.UserName
 }

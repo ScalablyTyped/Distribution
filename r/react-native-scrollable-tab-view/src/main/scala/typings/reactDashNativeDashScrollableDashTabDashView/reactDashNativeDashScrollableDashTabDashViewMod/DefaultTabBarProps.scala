@@ -11,6 +11,7 @@ trait DefaultTabBarProps extends js.Object {
   var backgroundColor: js.UndefOr[String] = js.undefined
   var inactiveTextColor: js.UndefOr[String] = js.undefined
   var renderTab: js.UndefOr[RenderTabProperties] = js.undefined
+  var style: js.UndefOr[ViewStyle] = js.undefined
   var tabStyle: js.UndefOr[ViewStyle] = js.undefined
   var textStyle: js.UndefOr[TextStyle] = js.undefined
   var underlineStyle: js.UndefOr[ViewStyle] = js.undefined
@@ -23,6 +24,7 @@ object DefaultTabBarProps {
     backgroundColor: String = null,
     inactiveTextColor: String = null,
     renderTab: RenderTabProperties = null,
+    style: ViewStyle = null,
     tabStyle: ViewStyle = null,
     textStyle: TextStyle = null,
     underlineStyle: ViewStyle = null
@@ -32,6 +34,7 @@ object DefaultTabBarProps {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (inactiveTextColor != null) __obj.updateDynamic("inactiveTextColor")(inactiveTextColor)
     if (renderTab != null) __obj.updateDynamic("renderTab")(renderTab)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle)

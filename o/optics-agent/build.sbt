@@ -1,32 +1,32 @@
 organization := "org.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20181022Z-6790a9"
+version := "1.1-dt-20181022Z-0b506e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-ae4183",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-0f462b",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-fe708f",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-234f40",
   "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-abd1a2",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-2cac09",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8e708a",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-2d0e0d",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-381ce5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-aba9aa",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8f9eda",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-a81a50",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-79dfe3",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-3d1b1f",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-9b3683",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-8fcc81",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-0b3c35",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-3bc36d",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-ecf77c",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-57592b",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-2d2be7",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-8c12f5",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-21a720",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-05dd4d",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-39cfe3",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-9ec145",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-c4d375",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-8be969",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-d5fbf2",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

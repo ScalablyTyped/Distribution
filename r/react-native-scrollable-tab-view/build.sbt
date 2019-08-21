@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-scrollable-tab-view"
-version := "0.10-dt-20190416Z-20e29a"
+version := "0.10-dt-20190820Z-2a1e05"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

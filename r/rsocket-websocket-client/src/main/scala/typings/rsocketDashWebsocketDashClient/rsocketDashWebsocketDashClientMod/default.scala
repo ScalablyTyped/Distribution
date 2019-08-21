@@ -1,7 +1,7 @@
 package typings.rsocketDashWebsocketDashClient.rsocketDashWebsocketDashClientMod
 
 import typings.rsocketDashCore.rSocketEncodingMod.Encoders
-import typings.ws.wsMod.ClientOptions
+import typings.rsocketDashWebsocketDashClient.rSocketWebSocketClientMod.ClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

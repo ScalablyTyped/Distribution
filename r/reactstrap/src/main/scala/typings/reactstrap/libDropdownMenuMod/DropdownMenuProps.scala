@@ -17,6 +17,7 @@ trait DropdownMenuProps
   var flip: js.UndefOr[Boolean] = js.undefined
   var modifiers: js.UndefOr[Modifiers] = js.undefined
   var persist: js.UndefOr[Boolean] = js.undefined
+  var positionFixed: js.UndefOr[Boolean] = js.undefined
   var right: js.UndefOr[Boolean] = js.undefined
   var tag: js.UndefOr[ReactType[_]] = js.undefined
 }
@@ -31,6 +32,7 @@ object DropdownMenuProps {
     flip: js.UndefOr[Boolean] = js.undefined,
     modifiers: Modifiers = null,
     persist: js.UndefOr[Boolean] = js.undefined,
+    positionFixed: js.UndefOr[Boolean] = js.undefined,
     right: js.UndefOr[Boolean] = js.undefined,
     tag: ReactType[_] = null
   ): DropdownMenuProps = {
@@ -42,6 +44,7 @@ object DropdownMenuProps {
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
     if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownMenuProps]

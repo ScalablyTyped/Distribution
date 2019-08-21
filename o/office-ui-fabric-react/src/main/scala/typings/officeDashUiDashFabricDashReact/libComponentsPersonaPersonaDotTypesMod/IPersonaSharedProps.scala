@@ -90,6 +90,10 @@ trait IPersonaSharedProps extends HTMLAttributes[PersonaBase | PersonaCoinBase |
     */
   var presence: js.UndefOr[PersonaPresence] = js.undefined
   /**
+    * Presence title to be shown as a tooltip on hover over the presence icon.
+    */
+  var presenceTitle: js.UndefOr[String] = js.undefined
+  /**
     * Primary text to display, usually the name of the person.
     * @deprecated Use `text` instead.
     */
@@ -150,6 +154,7 @@ object IPersonaSharedProps {
     onRenderPersonaCoin: IRenderFunction[IPersonaSharedProps] = null,
     optionalText: String = null,
     presence: PersonaPresence = null,
+    presenceTitle: String = null,
     primaryText: String = null,
     secondaryText: String = null,
     showInitialsUntilImageLoads: js.UndefOr[Boolean] = js.undefined,
@@ -179,6 +184,7 @@ object IPersonaSharedProps {
     if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(onRenderPersonaCoin)
     if (optionalText != null) __obj.updateDynamic("optionalText")(optionalText)
     if (presence != null) __obj.updateDynamic("presence")(presence)
+    if (presenceTitle != null) __obj.updateDynamic("presenceTitle")(presenceTitle)
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText)
     if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
     if (!js.isUndefined(showInitialsUntilImageLoads)) __obj.updateDynamic("showInitialsUntilImageLoads")(showInitialsUntilImageLoads)

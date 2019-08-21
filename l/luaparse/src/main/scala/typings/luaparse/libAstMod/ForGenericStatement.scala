@@ -1,5 +1,6 @@
 package typings.luaparse.libAstMod
 
+import typings.luaparse.Anon_End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,10 +19,12 @@ object ForGenericStatement {
     body: js.Array[Statement],
     iterators: js.Array[Expression],
     `type`: typings.luaparse.luaparseStrings.ForGenericStatement,
-    variables: js.Array[Identifier]
+    variables: js.Array[Identifier],
+    loc: Anon_End = null
   ): ForGenericStatement = {
     val __obj = js.Dynamic.literal(body = body, iterators = iterators, variables = variables)
     __obj.updateDynamic("type")(`type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[ForGenericStatement]
   }
 }

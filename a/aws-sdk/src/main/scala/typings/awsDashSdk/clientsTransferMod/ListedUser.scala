@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListedUser extends js.Object {
   /**
-    * This property is the unique Amazon Resource Name (ARN) for the user that you wish to learn about.
+    * This property is the unique Amazon Resource Name (ARN) for the user that you want to learn about.
     */
   var Arn: typings.awsDashSdk.clientsTransferMod.Arn
   /**
@@ -14,7 +14,7 @@ trait ListedUser extends js.Object {
     */
   var HomeDirectory: js.UndefOr[typings.awsDashSdk.clientsTransferMod.HomeDirectory] = js.undefined
   /**
-    * The role in use by this user. A role is an AWS Identity and Access Management (IAM) entity that in this case allows the SFTP server to act on a user's behalf. It allows the server to inherit the trust relationship that enables that user to perform file operations to their Amazon S3 bucket.
+    * The role in use by this user. A role is an AWS Identity and Access Management (IAM) entity that, in this case, allows the SFTP server to act on a user's behalf. It allows the server to inherit the trust relationship that enables that user to perform file operations to their Amazon S3 bucket.
     */
   var Role: js.UndefOr[typings.awsDashSdk.clientsTransferMod.Role] = js.undefined
   /**

@@ -10,11 +10,11 @@ trait ListUsersRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsDashSdk.clientsTransferMod.MaxResults] = js.undefined
   /**
-    * When you can get additional results from the ListUsers call, a NextToken parameter is returned in the output. You can then pass in a subsequent command the NextToken parameter to continue listing additional users.
+    * When you can get additional results from the ListUsers call, a NextToken parameter is returned in the output. You can then pass in a subsequent command to the NextToken parameter to continue listing additional users.
     */
   var NextToken: js.UndefOr[typings.awsDashSdk.clientsTransferMod.NextToken] = js.undefined
   /**
-    * A system-assigned unique identifier for a Secure File Transfer Protocol (SFTP) server that has users are assigned to it.
+    * A system-assigned unique identifier for a Secure File Transfer Protocol (SFTP) server that has users assigned to it.
     */
   var ServerId: typings.awsDashSdk.clientsTransferMod.ServerId
 }

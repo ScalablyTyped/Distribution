@@ -47,8 +47,8 @@
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing vuelidate [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building vuelidate... [id => vuelidate, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/vuelidate/typesOptionsMod/RuleDecl.scala:8:93
+[warn ] Phase3Compile.scala:202 Building vuelidate... [id => vuelidate, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/vuelidate/typesOptionsMod/RuleDecl.scala:8:93
 [E]      illegal cyclic reference involving trait RuleDecl
 [E]      L8: trait RuleDecl extends /* rule */ StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
 [E]                                                                                                      ^

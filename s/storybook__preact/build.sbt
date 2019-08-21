@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "storybook__preact"
-version := "5.2-dt-20190805Z-f6d395"
+version := "5.2-dt-20190805Z-0c6bf3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "preact" % "8.5.2-151fab",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

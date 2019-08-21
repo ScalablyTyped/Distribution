@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 trait Options
   extends typings.del.delMod.Options {
   /**
+    * Rollup hook the plugin should use.
+    * @default 'buildStart'
+    */
+  val hook: js.UndefOr[String] = js.undefined
+  /**
     * Patterns of files and folders to be deleted.
     * @default []
     */
@@ -41,6 +46,7 @@ object Options {
     fs: Partial[FileSystemAdapter] = null,
     gitignore: js.UndefOr[Boolean] = js.undefined,
     globstar: js.UndefOr[Boolean] = js.undefined,
+    hook: String = null,
     ignore: js.Array[Pattern] = null,
     markDirectories: js.UndefOr[Boolean] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
@@ -70,6 +76,7 @@ object Options {
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore)
     if (!js.isUndefined(globstar)) __obj.updateDynamic("globstar")(globstar)
+    if (hook != null) __obj.updateDynamic("hook")(hook)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (!js.isUndefined(markDirectories)) __obj.updateDynamic("markDirectories")(markDirectories)
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)

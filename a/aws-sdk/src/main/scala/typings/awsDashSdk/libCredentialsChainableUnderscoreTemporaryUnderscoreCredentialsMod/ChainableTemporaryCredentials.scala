@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   */
 class ChainableTemporaryCredentials () extends Credentials {
   def this(options: ChainableTemporaryCredentialsOptions) = this()
-  def this(options: ChainableTemporaryCredentialsOptions, masterCredentials: Credentials) = this()
   /**
     * The STS service instance used to get and refresh temporary credentials from AWS STS.
     */

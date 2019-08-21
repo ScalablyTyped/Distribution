@@ -10,7 +10,7 @@ trait TransformResources extends js.Object {
     */
   var InstanceCount: TransformInstanceCount
   /**
-    * The ML compute instance type for the transform job. If you are using built-in algorithms to transform moderately sized datasets, we recommend using ml.m4.xlarge or ml.m5.largeinstance types.
+    * The ML compute instance type for the transform job. If you are using built-in algorithms to transform moderately sized datasets, we recommend using ml.m4.xlarge or ml.m5.large instance types.
     */
   var InstanceType: TransformInstanceType
   /**

@@ -20,6 +20,7 @@ class FocusTrapZone protected ()
   var _focusAsync: js.Any = js.native
   var _forceClickInTrap: js.Any = js.native
   var _forceFocusInTrap: js.Any = js.native
+  var _getDocument: js.Any = js.native
   var _hasFocus: js.Any = js.native
   var _isBumper: js.Any = js.native
   var _lastBumper: js.Any = js.native

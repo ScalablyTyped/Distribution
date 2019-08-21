@@ -1666,8 +1666,8 @@
 [info ] ImportType.scala:245 Failed type conversion: rbx.rbx/base/helpers/variables.Variables['displays'] [id => rbx, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_Displays) / TsMemberProperty(value) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: rbx.rbx/grid/columns/column-group.ColumnGroupVariables['gapSizes'] [id => rbx, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(rbx/grid/columns/column-group) / TsDeclInterface(ColumnGroupBreakpointOptions) / TsMemberProperty(gapSize) / TsTypeLookup())] 
 [debug] PhaseRunner.scala:84 Success [id => rbx, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building rbx... [id => rbx, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E11] src/main/scala/typings/rbx/rbxMod.scala:162:7
+[warn ] Phase3Compile.scala:202 Building rbx... [id => rbx, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E11] src/main/scala/typings/rbx/rbxMod.scala:162:7
 [E]       illegal cyclic reference involving type Pick
 [E]       L162:   def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[_] */](
 [E]                   ^

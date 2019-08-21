@@ -3,6 +3,7 @@ package typings.atAntDashDesignReactDashNative.libModalMod
 import typings.atAntDashDesignReactDashNative.Anon_AnimateAppear
 import typings.atAntDashDesignReactDashNative.Anon_AntLocale
 import typings.atAntDashDesignReactDashNative.libModalPropsTypeMod.Action
+import typings.atAntDashDesignReactDashNative.libModalPropsTypeMod.CallbackOnBackHandler
 import typings.atAntDashDesignReactDashNative.libModalPropsTypeMod.CallbackOrActions
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.TextStyle
@@ -19,22 +20,28 @@ class default ()
 @JSImport("@ant-design/react-native/lib/modal", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var alert: js.Function3[
+  var alert: js.Function4[
     /* title */ ReactNode, 
     /* content */ ReactNode, 
     /* actions */ js.UndefOr[js.Array[Action[TextStyle]]], 
+    /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
     Unit
   ] = js.native
   var contextTypes: Anon_AntLocale = js.native
   var defaultProps: Anon_AnimateAppear = js.native
-  var operation: js.Function1[/* repeated */ js.Any, Unit] = js.native
-  var prompt: js.Function6[
+  var operation: js.Function2[
+    /* actions */ js.Array[_], 
+    /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
+    Unit
+  ] = js.native
+  var prompt: js.Function7[
     /* title */ ReactNode, 
     /* message */ ReactNode, 
     /* callbackOrActions */ CallbackOrActions[TextStyle], 
     /* type */ js.UndefOr[String], 
     /* defaultValue */ js.UndefOr[String], 
     /* placeholders */ js.UndefOr[js.Array[String]], 
+    /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
     Unit
   ] = js.native
 }

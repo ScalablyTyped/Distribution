@@ -1,6 +1,6 @@
 package typings.yup.yupMod
 
-import typings.std.Partial
+import typings.yup.Anon_Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +22,14 @@ trait Schema[T] extends js.Object {
   def meta(): js.Any = js.native
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[T | Ref]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[T | Ref], message: TestOptionsMessage): this.type = js.native
+  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[Anon_Values[T], _]): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[T | Ref | Null]): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[T | Ref | Null], message: TestOptionsMessage[Anon_Values[T], _]): this.type = js.native
   def strict(isStrict: Boolean): this.type = js.native
   def strip(strip: Boolean): this.type = js.native
   def test(
     name: String,
-    message: String,
+    message: TestOptionsMessage[js.Object, _],
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
@@ -38,7 +38,7 @@ trait Schema[T] extends js.Object {
   ): this.type = js.native
   def test(
     name: String,
-    message: String,
+    message: TestOptionsMessage[js.Object, _],
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
@@ -46,29 +46,11 @@ trait Schema[T] extends js.Object {
     ],
     callbackStyleAsync: Boolean
   ): this.type = js.native
-  def test(
-    name: String,
-    message: js.Function1[/* params */ js.Object with Partial[TestMessageParams], String],
-    test: js.ThisFunction1[
-      /* this */ TestContext, 
-      /* value */ js.UndefOr[js.Any], 
-      Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
-    ]
-  ): this.type = js.native
-  def test(
-    name: String,
-    message: js.Function1[/* params */ js.Object with Partial[TestMessageParams], String],
-    test: js.ThisFunction1[
-      /* this */ TestContext, 
-      /* value */ js.UndefOr[js.Any], 
-      Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
-    ],
-    callbackStyleAsync: Boolean
-  ): this.type = js.native
-  def test(options: TestOptions): this.type = js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  def test[P](options: TestOptions[P, _]): this.type = js.native
   def transform(fn: TransformFunction[this.type]): this.type = js.native
   def typeError(): this.type = js.native
-  def typeError(message: TestOptionsMessage): this.type = js.native
+  def typeError(message: TestOptionsMessage[js.Object, _]): this.type = js.native
   def validate(value: js.Any): js.Promise[T] = js.native
   def validate(value: js.Any, options: ValidateOptions): js.Promise[T] = js.native
   def validateAt(path: String, value: T): js.Promise[T] = js.native

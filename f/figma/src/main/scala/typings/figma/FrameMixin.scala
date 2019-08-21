@@ -1,0 +1,31 @@
+package typings.figma
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FrameMixin extends js.Object {
+  var backgroundStyleId: String
+  var backgrounds: js.Array[Paint]
+  var clipsContent: Boolean
+  var gridStyleId: String
+  var guides: js.Array[Guide]
+  var layoutGrids: js.Array[LayoutGrid]
+}
+
+object FrameMixin {
+  @scala.inline
+  def apply(
+    backgroundStyleId: String,
+    backgrounds: js.Array[Paint],
+    clipsContent: Boolean,
+    gridStyleId: String,
+    guides: js.Array[Guide],
+    layoutGrids: js.Array[LayoutGrid]
+  ): FrameMixin = {
+    val __obj = js.Dynamic.literal(backgroundStyleId = backgroundStyleId, backgrounds = backgrounds, clipsContent = clipsContent, gridStyleId = gridStyleId, guides = guides, layoutGrids = layoutGrids)
+  
+    __obj.asInstanceOf[FrameMixin]
+  }
+}
+

@@ -1,5 +1,6 @@
 package typings.atAntDashDesignReactDashNative
 
+import typings.atAntDashDesignReactDashNative.libModalPropsTypeMod.CallbackOnBackHandler
 import typings.atAntDashDesignReactDashNative.libModalPropsTypeMod.CallbackOrActions
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.TextStyle
@@ -31,6 +32,15 @@ object libModalPromptMod extends js.Object {
     `type`: String,
     defaultValue: String,
     placeholders: js.Array[String]
+  ): Unit = js.native
+  def default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[TextStyle],
+    `type`: String,
+    defaultValue: String,
+    placeholders: js.Array[String],
+    onBackHandler: CallbackOnBackHandler
   ): Unit = js.native
 }
 

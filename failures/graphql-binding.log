@@ -148,8 +148,8 @@
 [debug] PhaseRunner.scala:84 Success [id => graphql-binding, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing graphql-binding [id => graphql-binding, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => graphql-binding, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building graphql-binding... [id => graphql-binding, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E3] src/main/scala/typings/graphqlDashBinding/distTypesMod/Options.scala:15:59
+[warn ] Phase3Compile.scala:202 Building graphql-binding... [id => graphql-binding, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E3] src/main/scala/typings/graphqlDashBinding/distTypesMod/Options.scala:15:59
 [E]      not found: type Transform
 [E]      L15:   def apply(context: Context = null, transforms: js.Array[Transform] = null): Options = {
 [E]                                                                     ^

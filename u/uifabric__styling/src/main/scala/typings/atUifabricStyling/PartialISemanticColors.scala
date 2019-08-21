@@ -12,6 +12,8 @@ trait PartialISemanticColors extends js.Object {
   var actionLinkHovered: js.UndefOr[String] = js.undefined
   var blockingBackground: js.UndefOr[String] = js.undefined
   var bodyBackground: js.UndefOr[String] = js.undefined
+  var bodyBackgroundChecked: js.UndefOr[String] = js.undefined
+  var bodyBackgroundHovered: js.UndefOr[String] = js.undefined
   var bodyDivider: js.UndefOr[String] = js.undefined
   var bodyFrameBackground: js.UndefOr[String] = js.undefined
   var bodyFrameDivider: js.UndefOr[String] = js.undefined
@@ -104,6 +106,8 @@ object PartialISemanticColors {
     actionLinkHovered: String = null,
     blockingBackground: String = null,
     bodyBackground: String = null,
+    bodyBackgroundChecked: String = null,
+    bodyBackgroundHovered: String = null,
     bodyDivider: String = null,
     bodyFrameBackground: String = null,
     bodyFrameDivider: String = null,
@@ -193,6 +197,8 @@ object PartialISemanticColors {
     if (actionLinkHovered != null) __obj.updateDynamic("actionLinkHovered")(actionLinkHovered)
     if (blockingBackground != null) __obj.updateDynamic("blockingBackground")(blockingBackground)
     if (bodyBackground != null) __obj.updateDynamic("bodyBackground")(bodyBackground)
+    if (bodyBackgroundChecked != null) __obj.updateDynamic("bodyBackgroundChecked")(bodyBackgroundChecked)
+    if (bodyBackgroundHovered != null) __obj.updateDynamic("bodyBackgroundHovered")(bodyBackgroundHovered)
     if (bodyDivider != null) __obj.updateDynamic("bodyDivider")(bodyDivider)
     if (bodyFrameBackground != null) __obj.updateDynamic("bodyFrameBackground")(bodyFrameBackground)
     if (bodyFrameDivider != null) __obj.updateDynamic("bodyFrameDivider")(bodyFrameDivider)

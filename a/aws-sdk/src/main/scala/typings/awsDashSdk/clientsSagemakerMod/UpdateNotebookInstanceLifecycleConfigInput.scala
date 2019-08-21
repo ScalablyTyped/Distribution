@@ -10,11 +10,11 @@ trait UpdateNotebookInstanceLifecycleConfigInput extends js.Object {
     */
   var NotebookInstanceLifecycleConfigName: typings.awsDashSdk.clientsSagemakerMod.NotebookInstanceLifecycleConfigName
   /**
-    * The shell script that runs only once, when you create a notebook instance
+    * The shell script that runs only once, when you create a notebook instance. The shell script must be a base64-encoded string.
     */
   var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
   /**
-    * The shell script that runs every time you start a notebook instance, including when you create the notebook instance.
+    * The shell script that runs every time you start a notebook instance, including when you create the notebook instance. The shell script must be a base64-encoded string.
     */
   var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
 }

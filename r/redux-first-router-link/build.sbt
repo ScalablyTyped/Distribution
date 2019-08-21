@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "redux-first-router-link"
-version := "1.4-dt-20180806Z-56f419"
+version := "1.4-dt-20180806Z-e22dc6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-404965",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190821Z-3f670d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
   "org.scalablytyped" %%% "redux" % "4.0.4-1adc8c",
-  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190730Z-02d3f2",
+  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190730Z-8ce622",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

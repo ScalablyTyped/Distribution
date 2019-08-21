@@ -15,8 +15,8 @@
 [debug] PhaseRunner.scala:84 Success [id => falcor-router, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing falcor-router [id => falcor-router, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => falcor-router, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building falcor-router... [id => falcor-router, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E9] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:17:86
+[warn ] Phase3Compile.scala:202 Building falcor-router... [id => falcor-router, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E9] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:17:86
 [E]      not found: type Observable
 [E]      L17:   def apply(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): SetRoute = {
 [E]                                                                                                ^

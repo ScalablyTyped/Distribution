@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "watchpack"
-version := "1.1-dt-20190224Z-b6e3c8"
+version := "1.1-dt-20190224Z-1079ef"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-32e21b",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-5fa606",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -33,8 +33,8 @@ object ^ extends js.Object {
   val PUSH: `ROUTER/PUSH` = js.native
   val REPLACE: `ROUTER/REPLACE` = js.native
   val routerReducer: Reducer[State, AnyAction] = js.native
-  def createBrowserHistory(): History[LocationState] = js.native
-  def createBrowserHistory(options: BrowserHistoryBuildOptions): History[LocationState] = js.native
+  def createBrowserHistory[S](): History[S] = js.native
+  def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = js.native
   def go[T /* <: Double */](index: T): goAction[T] = js.native
   def goBack(): goBackAction = js.native
   def goForward(): goForwardAction = js.native

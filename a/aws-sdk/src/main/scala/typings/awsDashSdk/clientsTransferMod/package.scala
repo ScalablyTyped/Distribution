@@ -33,6 +33,7 @@ package object clientsTransferMod {
   type NextToken = String
   type NullableRole = String
   type Policy = String
+  type Response = String
   type Role = String
   type ServerId = String
   type SshPublicKeyBody = String

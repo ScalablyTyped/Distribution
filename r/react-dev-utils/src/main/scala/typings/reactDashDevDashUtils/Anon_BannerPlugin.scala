@@ -84,6 +84,7 @@ trait Anon_BannerPlugin extends js.Object {
   var SplitChunksPlugin: Instantiable0[typings.webpack.webpackMod.SplitChunksPlugin] = js.native
   var Stats: Instantiable0[typings.webpack.webpackMod.Stats] = js.native
   val StatsNs: js.Any = js.native
+  val TemplateNs: TypeofTemplate = js.native
   var WatchIgnorePlugin: Instantiable1[
     /* paths */ js.Array[String | RegExp], 
     typings.webpack.webpackMod.WatchIgnorePlugin

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait ScrollableTabBarProps extends DefaultTabBarProps {
   var scrollOffset: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[ViewStyle] = js.undefined
   var tabsContainerStyle: js.UndefOr[ViewStyle] = js.undefined
 }
 

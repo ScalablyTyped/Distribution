@@ -14,23 +14,15 @@ package object HistoryNs {
   type Href = String
   type LocationDescriptor[S] = typings.history.historyMod.HistoryNs.Path | LocationDescriptorObject[S]
   type LocationKey = String
-  type LocationListener = js.Function2[
-    /* location */ Location[typings.history.historyMod.LocationState], 
-    /* action */ Action, 
-    Unit
-  ]
+  type LocationListener[S] = js.Function2[/* location */ Location[S], /* action */ Action, Unit]
   type LocationState = js.Any
   type Path = String
   type Pathname = String
   type Search = String
-  type TransitionHook = js.Function2[
-    /* location */ Location[typings.history.historyMod.LocationState], 
+  type TransitionHook[S] = js.Function2[
+    /* location */ Location[S], 
     /* callback */ js.Function1[/* result */ js.Any, Unit], 
     js.Any
   ]
-  type TransitionPromptHook = js.Function2[
-    /* location */ Location[typings.history.historyMod.LocationState], 
-    /* action */ Action, 
-    String | `false` | Unit
-  ]
+  type TransitionPromptHook[S] = js.Function2[/* location */ Location[S], /* action */ Action, String | `false` | Unit]
 }

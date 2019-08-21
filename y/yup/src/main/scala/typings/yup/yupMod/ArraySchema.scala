@@ -18,6 +18,6 @@ trait ArraySchema[T]
   def nullable_true(isNullable: `true`): NullableArraySchema[T] = js.native
   def of[U](`type`: Schema[U]): ArraySchema[U] = js.native
   def required(): ArraySchema[T] = js.native
-  def required(message: TestOptionsMessage): ArraySchema[T] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): ArraySchema[T] = js.native
 }
 

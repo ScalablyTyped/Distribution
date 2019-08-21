@@ -1,10 +1,11 @@
 package typings.yup.yupMod
 
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TestOptions extends js.Object {
+trait TestOptions[P /* <: Record[String, _] */, R] extends js.Object {
   /**
     * Mark the test as exclusive, meaning only one of the same can be active at once
     */
@@ -12,7 +13,7 @@ trait TestOptions extends js.Object {
   /**
     * The validation error message
     */
-  var message: js.UndefOr[TestOptionsMessage] = js.undefined
+  var message: js.UndefOr[TestOptionsMessage[P, R]] = js.undefined
   /**
     * Unique name identifying the test
     */
@@ -20,7 +21,7 @@ trait TestOptions extends js.Object {
   /**
     * Values passed to message for interpolation
     */
-  var params: js.UndefOr[js.Object] = js.undefined
+  var params: js.UndefOr[P] = js.undefined
   /**
     * Test function, determines schema validity
     */
@@ -29,19 +30,19 @@ trait TestOptions extends js.Object {
 
 object TestOptions {
   @scala.inline
-  def apply(
+  def apply[P /* <: Record[String, _] */, R](
     test: (TestContext, js.Any) => Boolean | ValidationError | (js.Promise[Boolean | ValidationError]),
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    message: TestOptionsMessage = null,
+    message: TestOptionsMessage[P, R] = null,
     name: String = null,
-    params: js.Object = null
-  ): TestOptions = {
+    params: P = null
+  ): TestOptions[P, R] = {
     val __obj = js.Dynamic.literal(test = js.Any.fromFunction2(test))
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (params != null) __obj.updateDynamic("params")(params)
-    __obj.asInstanceOf[TestOptions]
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TestOptions[P, R]]
   }
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PublicWorkforceTaskPrice extends js.Object {
   /**
-    * Defines the amount of money paid to a worker in United States dollars.
+    * Defines the amount of money paid to an Amazon Mechanical Turk worker in United States dollars.
     */
   var AmountInUsd: js.UndefOr[USD] = js.undefined
 }

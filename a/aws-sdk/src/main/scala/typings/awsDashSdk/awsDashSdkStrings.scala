@@ -2812,6 +2812,9 @@ object awsDashSdkStrings {
        with _UsageReportExecutionErrorCode
   
   @js.native
+  sealed trait ACCESS_ENDPOINTS extends _StackAttribute
+  
+  @js.native
   sealed trait ACCOUNT
     extends _AggregatedSourceType
        with _ChildType
@@ -12226,6 +12229,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsResourcegroupstaggingapiMod._ErrorCode
   
   @js.native
+  sealed trait Interrupted extends _SecondaryStatus
+  
+  @js.native
   sealed trait Invalid extends _FeedbackValueType
   
   @js.native
@@ -14071,6 +14077,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait MaxRuntimeExceeded extends _SecondaryStatus
+  
+  @js.native
+  sealed trait MaxWaitTimeExceeded extends _SecondaryStatus
   
   @js.native
   sealed trait Maxim extends _VoiceId
@@ -19032,6 +19041,9 @@ object awsDashSdkStrings {
   sealed trait STRING_LENGTH extends _RuleType
   
   @js.native
+  sealed trait STS_DISABLED_IN_REGION extends _FleetErrorCode
+  
+  @js.native
   sealed trait SUBDIRECTORY_PER_STREAM
     extends _HlsDirectoryStructure
        with typings.awsDashSdk.clientsMedialiveMod._HlsDirectoryStructure
@@ -22266,6 +22278,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait aes256 extends _Algorithm
+  
+  @js.native
+  sealed trait aisage extends _TargetDevice
   
   @js.native
   sealed trait `alarm-cleared` extends _ViolationEventType
@@ -26416,6 +26431,12 @@ object awsDashSdkStrings {
   sealed trait python3DOT7 extends _Runtime
   
   @js.native
+  sealed trait qcs603 extends _TargetDevice
+  
+  @js.native
+  sealed trait qcs605 extends _TargetDevice
+  
+  @js.native
   sealed trait r3DOT2xlarge
     extends _EC2InstanceType
        with typings.awsDashSdk.clientsEc2Mod._InstanceType
@@ -28476,6 +28497,8 @@ object awsDashSdkStrings {
   def ACCEPT_SOURCE: ACCEPT_SOURCE = "ACCEPT_SOURCE".asInstanceOf[ACCEPT_SOURCE]
   @scala.inline
   def ACCESS_DENIED: ACCESS_DENIED = "ACCESS_DENIED".asInstanceOf[ACCESS_DENIED]
+  @scala.inline
+  def ACCESS_ENDPOINTS: ACCESS_ENDPOINTS = "ACCESS_ENDPOINTS".asInstanceOf[ACCESS_ENDPOINTS]
   @scala.inline
   def ACCOUNT: ACCOUNT = "ACCOUNT".asInstanceOf[ACCOUNT]
   @scala.inline
@@ -32759,6 +32782,8 @@ object awsDashSdkStrings {
   @scala.inline
   def InternalServiceException: InternalServiceException = "InternalServiceException".asInstanceOf[InternalServiceException]
   @scala.inline
+  def Interrupted: Interrupted = "Interrupted".asInstanceOf[Interrupted]
+  @scala.inline
   def Invalid: Invalid = "Invalid".asInstanceOf[Invalid]
   @scala.inline
   def InvalidArnException: InvalidArnException = "InvalidArnException".asInstanceOf[InvalidArnException]
@@ -33688,6 +33713,8 @@ object awsDashSdkStrings {
   def Matthew: Matthew = "Matthew".asInstanceOf[Matthew]
   @scala.inline
   def MaxRuntimeExceeded: MaxRuntimeExceeded = "MaxRuntimeExceeded".asInstanceOf[MaxRuntimeExceeded]
+  @scala.inline
+  def MaxWaitTimeExceeded: MaxWaitTimeExceeded = "MaxWaitTimeExceeded".asInstanceOf[MaxWaitTimeExceeded]
   @scala.inline
   def Maxim: Maxim = "Maxim".asInstanceOf[Maxim]
   @scala.inline
@@ -36101,6 +36128,8 @@ object awsDashSdkStrings {
   @scala.inline
   def STRING_LENGTH: STRING_LENGTH = "STRING_LENGTH".asInstanceOf[STRING_LENGTH]
   @scala.inline
+  def STS_DISABLED_IN_REGION: STS_DISABLED_IN_REGION = "STS_DISABLED_IN_REGION".asInstanceOf[STS_DISABLED_IN_REGION]
+  @scala.inline
   def SUBDIRECTORY_PER_STREAM: SUBDIRECTORY_PER_STREAM = "SUBDIRECTORY_PER_STREAM".asInstanceOf[SUBDIRECTORY_PER_STREAM]
   @scala.inline
   def SUBMITTED: SUBMITTED = "SUBMITTED".asInstanceOf[SUBMITTED]
@@ -37662,6 +37691,8 @@ object awsDashSdkStrings {
   def aes192: aes192 = "aes192".asInstanceOf[aes192]
   @scala.inline
   def aes256: aes256 = "aes256".asInstanceOf[aes256]
+  @scala.inline
+  def aisage: aisage = "aisage".asInstanceOf[aisage]
   @scala.inline
   def `alarm-cleared`: `alarm-cleared` = "alarm-cleared".asInstanceOf[`alarm-cleared`]
   @scala.inline
@@ -39630,6 +39661,10 @@ object awsDashSdkStrings {
   def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
   @scala.inline
   def python3DOT7: python3DOT7 = "python3.7".asInstanceOf[python3DOT7]
+  @scala.inline
+  def qcs603: qcs603 = "qcs603".asInstanceOf[qcs603]
+  @scala.inline
+  def qcs605: qcs605 = "qcs605".asInstanceOf[qcs605]
   @scala.inline
   def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
   @scala.inline

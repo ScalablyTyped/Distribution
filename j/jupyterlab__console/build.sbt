@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__console"
-version := "1.0.4-7954f3"
+version := "1.0.5-56531f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.4-43e11c",
-  "org.scalablytyped" %%% "jupyterlab__attachments" % "1.0.4-0303bf",
-  "org.scalablytyped" %%% "jupyterlab__cells" % "1.0.4-a75708",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.0.0-b07c42",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.0-6c8958",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.0.5-853de9",
+  "org.scalablytyped" %%% "jupyterlab__attachments" % "1.0.5-c31ad9",
+  "org.scalablytyped" %%% "jupyterlab__cells" % "1.0.5-8e3c0e",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.0.1-f5914e",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.0.1-6c8958",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.2.0-7af119",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.0.4-f2197a",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.4-8922cf",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.0.5-f33904",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.0.5-6d7370",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.3.1-5acbd2",
-  "org.scalablytyped" %%% "jupyterlab__services" % "4.0.4-a5599e",
+  "org.scalablytyped" %%% "jupyterlab__services" % "4.0.5-4aa738",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-d56d5f",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.0-33b011",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-cbfd04",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-live"
-version := "2.1.2-bbe6d8"
+version := "2.2.0-ee27d4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

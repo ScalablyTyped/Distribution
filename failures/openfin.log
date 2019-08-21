@@ -904,8 +904,8 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[warn ] Phase3Compile.scala:208 Building openfin... [id => openfin, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
+[warn ] Phase3Compile.scala:202 Building openfin... [id => openfin, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
 [E]      not found: type Type
 [E]      L17:     */ typings.openfin.openfinStrings.WindowEvents with (WindowEventMapping[window, Type])
 [E]                                                                                               ^

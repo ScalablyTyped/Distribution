@@ -296,8 +296,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(selectionChanged, activeCell, activeCellChanged, currentChanged, currentWidget, restored, size, widgetAdded, widgetUpdated, isDisposed) [id => @jupyterlab/notebook, phase => scala.js, this => Name(typings) / Name(atJupyterlabNotebook) / Name(libTrackerMod) / Name(NotebookTracker)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(createMarkdownCell, createRawCell, createCodeCell) [id => @jupyterlab/notebook, phase => scala.js, this => Name(typings) / Name(atJupyterlabNotebook) / Name(libWidgetMod) / Name(StaticNotebookNs) / Name(ContentFactory)] 
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/notebook, phase => scala.js] 
-[warn ] Phase3Compile.scala:208 Building jupyterlab__notebook... [id => @jupyterlab/notebook, phase => build] 
-[error] Phase3Compile.scala:234 [E] [E1] src/main/scala/typings/atJupyterlabNotebook/libTrackerMod/NotebookTracker.scala:77:16
+[warn ] Phase3Compile.scala:202 Building jupyterlab__notebook... [id => @jupyterlab/notebook, phase => build] 
+[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/atJupyterlabNotebook/libTrackerMod/NotebookTracker.scala:77:16
 [E]      overriding value restored in class WidgetTracker of type scala.scalajs.js.Promise[scala.scalajs.js.Any] with scala.scalajs.js.Promise[Unit];
 [E]       value restored has incompatible type
 [E]      L77:   override val restored: js.Promise[Unit] = js.native

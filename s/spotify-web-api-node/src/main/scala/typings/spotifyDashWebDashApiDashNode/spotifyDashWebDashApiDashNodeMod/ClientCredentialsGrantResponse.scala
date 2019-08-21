@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Response returned when using Client Credentials authentication flow
+  * https://developer.spotify.com/documentation/general/guides/authorization-guide/#example-4
+  */
 trait ClientCredentialsGrantResponse extends js.Object {
   var access_token: String
   var expires_in: Double

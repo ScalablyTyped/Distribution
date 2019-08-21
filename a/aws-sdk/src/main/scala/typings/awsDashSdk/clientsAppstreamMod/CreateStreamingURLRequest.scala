@@ -14,7 +14,7 @@ trait CreateStreamingURLRequest extends js.Object {
     */
   var FleetName: String
   /**
-    * The session context. For more information, see Session Context in the Amazon AppStream 2.0 Developer Guide.
+    * The session context. For more information, see Session Context in the Amazon AppStream 2.0 Administration Guide.
     */
   var SessionContext: js.UndefOr[String] = js.undefined
   /**

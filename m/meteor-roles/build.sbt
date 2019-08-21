@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "meteor-roles"
-version := "1.2.14-dt-20190322Z-7aeac5"
+version := "1.2.14-dt-20190322Z-e39f82"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8e708a",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8f9eda",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190717Z-c41f74",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190815Z-2dc4df",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190717Z-dc2d7a",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",

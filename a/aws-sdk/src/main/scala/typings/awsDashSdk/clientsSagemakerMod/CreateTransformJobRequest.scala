@@ -10,7 +10,7 @@ trait CreateTransformJobRequest extends js.Object {
     */
   var BatchStrategy: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.BatchStrategy] = js.undefined
   /**
-    * The data structure used for combining the input data and inference in the output file. For more information, see Batch Transform I/O Join.
+    * The data structure used to specify the data to be used for inference in a batch transform job and to associate the data that is relevant to the prediction results in the output. The input filter provided allows you to exclude input data that is not needed for inference in a batch transform job. The output filter provided allows you to include input data relevant to interpreting the predictions in the output from the job. For more information, see Associate Prediction Results with their Corresponding Input Records.
     */
   var DataProcessing: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.DataProcessing] = js.undefined
   /**

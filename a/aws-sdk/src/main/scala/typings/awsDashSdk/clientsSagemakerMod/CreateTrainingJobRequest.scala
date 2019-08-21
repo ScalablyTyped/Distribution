@@ -10,9 +10,17 @@ trait CreateTrainingJobRequest extends js.Object {
     */
   var AlgorithmSpecification: typings.awsDashSdk.clientsSagemakerMod.AlgorithmSpecification
   /**
+    * Contains information about the output location for managed spot training checkpoint data.
+    */
+  var CheckpointConfig: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.CheckpointConfig] = js.undefined
+  /**
     * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training. For more information, see Protect Communications Between ML Compute Instances in a Distributed Training Job.
     */
   var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
+  /**
+    * To train models using managed spot training, choose True. Managed spot training provides a fully managed and scalable infrastructure for training machine learning models. this option is useful when training jobs can be interrupted and when there is flexibility when the training job is run.  The complete and intermediate results of jobs are stored in an Amazon S3 bucket, and can be used as a starting point to train models incrementally. Amazon SageMaker provides metrics and logs in CloudWatch. They can be used to see when managed spot training jobs are running, interrupted, resumed, or completed. 
+    */
+  var EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined
   /**
     * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If you enable network isolation for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
     */
@@ -64,7 +72,9 @@ object CreateTrainingJobRequest {
     RoleArn: RoleArn,
     StoppingCondition: StoppingCondition,
     TrainingJobName: TrainingJobName,
+    CheckpointConfig: CheckpointConfig = null,
     EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
     EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     HyperParameters: HyperParameters = null,
     InputDataConfig: InputDataConfig = null,
@@ -72,7 +82,9 @@ object CreateTrainingJobRequest {
     VpcConfig: VpcConfig = null
   ): CreateTrainingJobRequest = {
     val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification, OutputDataConfig = OutputDataConfig, ResourceConfig = ResourceConfig, RoleArn = RoleArn, StoppingCondition = StoppingCondition, TrainingJobName = TrainingJobName)
+    if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig)
     if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption)
+    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining)
     if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation)
     if (HyperParameters != null) __obj.updateDynamic("HyperParameters")(HyperParameters)
     if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig)

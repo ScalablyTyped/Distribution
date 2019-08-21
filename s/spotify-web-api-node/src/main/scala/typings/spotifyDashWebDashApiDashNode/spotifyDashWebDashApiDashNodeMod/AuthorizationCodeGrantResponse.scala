@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Response returned when requesting for access token
+  * https://developer.spotify.com/documentation/general/guides/authorization-guide/#2-have-your-application-request-refresh-and-access-tokens-spotify-returns-access-and-refresh-tokens
+  */
 trait AuthorizationCodeGrantResponse extends js.Object {
   var access_token: String
   var expires_in: Double

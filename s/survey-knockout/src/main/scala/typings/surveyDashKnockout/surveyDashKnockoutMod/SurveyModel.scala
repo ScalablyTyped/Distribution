@@ -141,6 +141,13 @@ class SurveyModel ()
     */
   val hasCookie: Boolean = js.native
   /**
+    * Set it to true, to ignore validation, like requried questions and others, on nextPage and completeLastPage functions.
+    * @see nextPage
+    * @see completeLastPage
+    * @see mode
+    */
+  var ignoreValidation: Boolean = js.native
+  /**
     * Returns true, if there is any error on the current page. For example, the required question is empty or a question validation is failed.
     * @see nextPage
     */
@@ -1080,6 +1087,8 @@ class SurveyModel ()
     */
   def focusFirstQuestion(): Unit = js.native
   /* CompleteClass */
+  override def focusQuestion(name: String): Boolean = js.native
+  /* CompleteClass */
   override def geSurveyData(): ISurveyData = js.native
   /**
     * Returns the list of all panels in the survey
@@ -1166,8 +1175,8 @@ class SurveyModel ()
     * @param caseInsensitive
     * @see getQuestionByValueName
     */
-  def getQuestionByName(name: String): IQuestion = js.native
-  def getQuestionByName(name: String, caseInsensitive: Boolean): IQuestion = js.native
+  def getQuestionByName(name: String): Question = js.native
+  def getQuestionByName(name: String, caseInsensitive: Boolean): Question = js.native
   /**
     * Returns a question by its value name
     * @param valueName a question name
